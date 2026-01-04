@@ -1,0 +1,1710 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Full Stack Developer SOP</title>
+    <link rel="stylesheet" href="admin-mode.css">
+    <style>
+        :root {
+            --primary: #1E3A5F;
+            --secondary: #2E5077;
+            --accent: #3D6B99;
+            --success: #2E7D32;
+            --warning: #F57C00;
+            --danger: #C62828;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --gold: #D4AF37;
+            --cyan: #0891B2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--cyan) 0%, #0E7490 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.4em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.95em;
+        }
+
+        .nav-section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            background: var(--light);
+            color: var(--primary);
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: var(--cyan);
+            color: white;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--cyan);
+        }
+
+        .section-number {
+            background: linear-gradient(135deg, var(--cyan), #0E7490);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.8em;
+        }
+
+        .section h3 {
+            color: var(--secondary);
+            font-size: 1.4em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .section h4 {
+            color: var(--accent);
+            font-size: 1.15em;
+            margin: 25px 0 12px 0;
+        }
+
+        .critical-alert {
+            background: linear-gradient(135deg, var(--cyan) 0%, #0E7490 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .critical-alert h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .critical-alert .highlight-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid white;
+        }
+
+        .story-box {
+            background: linear-gradient(135deg, #CFFAFE 0%, #A5F3FC 100%);
+            border: 2px solid var(--cyan);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .story-box::before {
+            content: "📖 REAL STORY";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--cyan);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+
+        .story-box h4 {
+            color: #0E7490;
+            margin-top: 10px;
+        }
+
+        .story-box .moral {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid var(--cyan);
+        }
+
+        .warning-story {
+            background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+            border: 2px solid #F44336;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .warning-story::before {
+            content: "⚠️ CAUTIONARY TALE";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #F44336;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+
+        .warning-story .lesson {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #F44336;
+        }
+
+        .info-box {
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .info-box.success {
+            background: #E8F5E9;
+            border-left: 5px solid var(--success);
+        }
+
+        .info-box.warning {
+            background: #FFF3E0;
+            border-left: 5px solid var(--warning);
+        }
+
+        .info-box.danger {
+            background: #FFEBEE;
+            border-left: 5px solid var(--danger);
+        }
+
+        .info-box.info {
+            background: #E3F2FD;
+            border-left: 5px solid var(--primary);
+        }
+
+        .info-box.gold {
+            background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+            border-left: 5px solid var(--gold);
+        }
+
+        .info-box.cyan {
+            background: linear-gradient(135deg, #CFFAFE 0%, #A5F3FC 100%);
+            border-left: 5px solid var(--cyan);
+        }
+
+        .styled-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .styled-list li {
+            padding: 12px 0 12px 35px;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .styled-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--cyan);
+            font-weight: bold;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: var(--success);
+        }
+
+        .cross-list li::before {
+            content: "✗";
+            color: var(--danger);
+        }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .styled-table thead {
+            background: linear-gradient(135deg, var(--cyan) 0%, #0E7490 100%);
+            color: white;
+        }
+
+        .styled-table th {
+            padding: 18px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .styled-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .styled-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .code-block {
+            background: #1E1E1E;
+            color: #D4D4D4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .code-block .comment {
+            color: #6A9955;
+        }
+
+        .code-block .keyword {
+            color: #569CD6;
+        }
+
+        .code-block .string {
+            color: #CE9178;
+        }
+
+        .code-block .function {
+            color: #DCDCAA;
+        }
+
+        .template-box {
+            background: #FAFAFA;
+            border: 2px solid #E0E0E0;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            font-family: 'Georgia', serif;
+            line-height: 1.9;
+        }
+
+        .template-box .template-header {
+            background: var(--cyan);
+            color: white;
+            padding: 12px 20px;
+            margin: -25px -25px 20px -25px;
+            border-radius: 8px 8px 0 0;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 600;
+        }
+
+        .template-box .placeholder {
+            background: #FFEB3B;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .phase-card {
+            background: white;
+            border: 2px solid #E0E0E0;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 15px 0;
+        }
+
+        .phase-card h4 {
+            color: var(--cyan);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phase-card .duration {
+            background: #E0F7FA;
+            color: var(--cyan);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .kpi-card {
+            background: white;
+            border: 2px solid #E0E0E0;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .kpi-card .metric {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--cyan);
+            margin: 10px 0;
+        }
+
+        .kpi-card .label {
+            color: #666;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .tech-card {
+            background: white;
+            border: 2px solid #E0E0E0;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .tech-card h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, var(--cyan) 0%, #0E7490 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .section {
+                padding: 25px;
+            }
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #06B6D4 0%, #0E7490 100%);
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-header h2 {
+            font-size: 1.2em;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 12px 20px;
+            margin: 0 15px 20px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .sidebar-search {
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-search input {
+            width: 100%;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 12px 20px;
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 14px;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: white;
+        }
+
+        .sidebar-section-title {
+            padding: 15px 20px 8px;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header"><span class="emoji">🖥️</span>
+            <h2>Full Stack Developer SOP</h2>
+        </div>
+        <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
+        <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
+                onkeyup="searchSOP()"></div>
+        <div class="sidebar-section-title">Quick Navigation</div>
+        <ul class="sidebar-nav">
+            <li><a href="#discovery">1️⃣ Discovery</a></li>
+            <li><a href="#planning">2️⃣ Technical Planning</a></li>
+            <li><a href="#setup">3️⃣ Project Setup</a></li>
+            <li><a href="#development">4️⃣ Development Phases</a></li>
+            <li><a href="#database">5️⃣ Database Design</a></li>
+            <li><a href="#api">6️⃣ API Development</a></li>
+            <li><a href="#frontend">7️⃣ Frontend Build</a></li>
+            <li><a href="#testing">8️⃣ Testing & QA</a></li>
+            <li><a href="#deployment">9️⃣ Deployment</a></li>
+            <li><a href="#handover">🔟 Client Handover</a></li>
+            <li><a href="#troubleshooting">🔧 Troubleshooting</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1>🖥️ Full Stack Developer SOP</h1>
+                <p class="subtitle">Custom Websites, Web Apps & API Development</p>
+                <div class="badge-row">
+                    <span class="badge">⚛️ React/Next.js</span>
+                    <span class="badge">🟢 Node.js</span>
+                    <span class="badge">🗄️ Databases</span>
+                    <span class="badge">🔐 Authentication</span>
+                </div>
+            </header>
+
+            <div id="searchResults"
+                style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
+                <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                <div id="resultsList"></div>
+                <button onclick="clearSearch()"
+                    style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                    Search</button>
+            </div>
+
+            <script>
+                function searchSOP() {
+                    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                    const sections = document.querySelectorAll('.section, .critical-alert');
+                    const resultsDiv = document.getElementById('searchResults');
+                    if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
+                    let matches = [];
+                    sections.forEach(section => {
+                        if (section.textContent.toLowerCase().includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--cyan)'; matches.push(section); }
+                        else { section.style.display = 'none'; section.style.border = 'none'; }
+                    });
+                    document.getElementById('resultCount').textContent = matches.length;
+                    resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+                }
+                function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
+            </script>
+
+            <!-- What This SOP Covers -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">❓</div>
+                    <h2>What This SOP Covers</h2>
+                </div>
+
+                <div class="info-box cyan">
+                    <h4>🖥️ Custom Full Stack Projects</h4>
+                    <p>This SOP is for projects that go beyond Shopify — custom-built websites and web applications:</p>
+                    <ul class="styled-list" style="margin-top: 15px;">
+                        <li><strong>Custom business websites</strong> — Marketing sites, portfolios, landing pages</li>
+                        <li><strong>Web applications</strong> — Dashboards, admin panels, SaaS products</li>
+                        <li><strong>E-commerce (custom)</strong> — WooCommerce, custom carts, headless commerce</li>
+                        <li><strong>API integrations</strong> — Third-party services, payment gateways, CRMs</li>
+                        <li><strong>Database-driven apps</strong> — User systems, content management, data apps</li>
+                    </ul>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>⚠️ This is Different from Shopify Projects</h4>
+                    <p>Custom projects are more complex. No pre-built themes. Everything is coded from scratch. That
+                        means:
+                    </p>
+                    <ul class="styled-list" style="margin-top: 10px;">
+                        <li>Longer timelines (4-8 weeks typical)</li>
+                        <li>Higher prices ($3,000 - $15,000+)</li>
+                        <li>More detailed planning required upfront</li>
+                        <li>More can go wrong if not managed properly</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Opening Story -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">📖</div>
+                    <h2>The $5 Lakh Project That Almost Failed</h2>
+                </div>
+
+                <div class="story-box">
+                    <h4>Why Planning Saves Projects</h4>
+                    <p>We took on a custom dashboard project. Client wanted a "simple admin panel" for their delivery
+                        business. $5 lakhs budget. Seemed straightforward.</p>
+
+                    <p><strong>Week 1-2:</strong> Started coding immediately. No detailed spec. "We'll figure it out as
+                        we
+                        go."</p>
+
+                    <p><strong>Week 3:</strong> Client says "Oh, we also need real-time GPS tracking." That changes
+                        everything.</p>
+
+                    <p><strong>Week 4:</strong> "Can drivers upload photos? And customers should get SMS updates." More
+                        scope creep.</p>
+
+                    <p><strong>Week 6:</strong> Project is 50% over budget. Team is frustrated. Client is unhappy. We're
+                        behind schedule.</p>
+
+                    <p><strong>What saved us:</strong> We stopped. Did a proper discovery session. Created a detailed
+                        technical specification. Got sign-off on exact features. Renegotiated timeline and budget.</p>
+
+                    <div class="moral">
+                        <strong>🎯 The Lesson:</strong> Custom projects REQUIRE detailed planning upfront. Every hour
+                        spent
+                        in discovery saves 10 hours in development. Never skip the planning phase.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Critical Principles -->
+            <section class="critical-alert">
+                <h2>🚨 FULL STACK PROJECT PRINCIPLES</h2>
+
+                <div class="highlight-box">
+                    <h3 style="margin-bottom: 15px;">1. SPEC BEFORE CODE</h3>
+                    <p>Never write a single line of code without a signed-off technical specification. Discovery is not
+                        optional — it's mandatory.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">2. SCOPE IS LOCKED AFTER APPROVAL</h3>
+                    <p>Once client signs off on spec, scope is frozen. New features = new quote. No exceptions. Scope
+                        creep
+                        kills projects.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">3. MILESTONE-BASED DELIVERY</h3>
+                    <p>Large projects are delivered in phases. Each phase = client approval before proceeding. No
+                        surprises
+                        at the end.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">4. CODE QUALITY IS NON-NEGOTIABLE</h3>
+                    <p>Clean code, proper comments, consistent formatting. If another developer can't understand your
+                        code,
+                        you've failed.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">5. TEST BEFORE DEPLOY</h3>
+                    <p>Every feature is tested. Edge cases are considered. Security is checked. No "it works on my
+                        machine"
+                        excuses.</p>
+                </div>
+            </section>
+
+            <!-- Discovery Phase -->
+            <section class="section" id="discovery">
+                <div class="section-header">
+                    <div class="section-number">1</div>
+                    <h2>Discovery Phase</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>💰 Discovery is a Paid Service</h4>
+                    <p>For complex projects, discovery is a separate paid engagement ($15,000 - $50,000). This ensures
+                        serious clients and protects your time. Deliverable: Technical Specification Document.</p>
+                </div>
+
+                <h3>Discovery Meeting Agenda (60-90 minutes)</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Time</th>
+                            <th>What to Capture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Business Context</strong></td>
+                            <td>15 min</td>
+                            <td>What problem are we solving? Who are the users? What's the business goal?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Feature Walkthrough</strong></td>
+                            <td>30 min</td>
+                            <td>Every feature explained. Write it ALL down. Ask "what happens when..."</td>
+                        </tr>
+                        <tr>
+                            <td><strong>User Roles</strong></td>
+                            <td>10 min</td>
+                            <td>Who uses the system? Admin, user, guest? What can each role do?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Integrations</strong></td>
+                            <td>10 min</td>
+                            <td>Payment gateway? Email service? Third-party APIs? CRM?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Design Expectations</strong></td>
+                            <td>10 min</td>
+                            <td>Reference websites, color preferences, brand guidelines</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Timeline & Budget</strong></td>
+                            <td>15 min</td>
+                            <td>Launch date? Budget range? Must-haves vs nice-to-haves?</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Questions to Ask (Never Skip These)</h3>
+
+                <ul class="styled-list">
+                    <li><strong>"What does success look like?"</strong> — Understand the real goal</li>
+                    <li><strong>"Who will use this and how?"</strong> — Understand user flows</li>
+                    <li><strong>"What happens when [edge case]?"</strong> — Find hidden complexity</li>
+                    <li><strong>"What existing systems does this need to work with?"</strong> — Find integration needs
+                    </li>
+                    <li><strong>"What's the budget range?"</strong> — Ensure alignment before work</li>
+                    <li><strong>"When do you need this live?"</strong> — Set realistic expectations</li>
+                    <li><strong>"Who approves deliverables?"</strong> — Identify decision-maker</li>
+                </ul>
+            </section>
+
+            <!-- Technical Planning -->
+            <section class="section" id="planning">
+                <div class="section-header">
+                    <div class="section-number">2</div>
+                    <h2>Technical Planning & Specification</h2>
+                </div>
+
+                <h3>Technical Specification Document (TSD)</h3>
+
+                <div class="info-box info">
+                    <h4>📄 Every Custom Project Gets a TSD</h4>
+                    <p>The TSD is your contract. It defines exactly what will be built. Client signs off before
+                        development
+                        starts.</p>
+                </div>
+
+                <h4>TSD Structure</h4>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Contents</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Project Overview</strong></td>
+                            <td>Business context, goals, success metrics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. User Roles & Permissions</strong></td>
+                            <td>Who can do what in the system</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Feature List</strong></td>
+                            <td>Every feature with detailed acceptance criteria</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. User Flows</strong></td>
+                            <td>Step-by-step flow diagrams for key processes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Database Schema</strong></td>
+                            <td>Tables, relationships, data types</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. API Endpoints</strong></td>
+                            <td>All backend routes with request/response formats</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7. Third-Party Integrations</strong></td>
+                            <td>External services, APIs, credentials needed</td>
+                        </tr>
+                        <tr>
+                            <td><strong>8. Technology Stack</strong></td>
+                            <td>Frontend, backend, database, hosting decisions</td>
+                        </tr>
+                        <tr>
+                            <td><strong>9. Timeline & Milestones</strong></td>
+                            <td>Phase breakdown with delivery dates</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10. Out of Scope</strong></td>
+                            <td>What is NOT included (very important)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Technology Stack Selection</h3>
+
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4>⚛️ Frontend</h4>
+                        <ul class="styled-list check-list">
+                            <li><strong>Next.js</strong> — Full-stack, SEO-friendly</li>
+                            <li><strong>React</strong> — Complex SPAs</li>
+                            <li><strong>Tailwind CSS</strong> — Rapid styling</li>
+                            <li><strong>TypeScript</strong> — Type safety</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h4>🟢 Backend</h4>
+                        <ul class="styled-list check-list">
+                            <li><strong>Next.js API Routes</strong> — Simple APIs</li>
+                            <li><strong>Node.js + Express</strong> — Complex backends</li>
+                            <li><strong>Prisma</strong> — Database ORM</li>
+                            <li><strong>NextAuth</strong> — Authentication</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h4>🗄️ Database</h4>
+                        <ul class="styled-list check-list">
+                            <li><strong>PostgreSQL</strong> — Relational data</li>
+                            <li><strong>MongoDB</strong> — Flexible schemas</li>
+                            <li><strong>Supabase</strong> — Backend-as-a-service</li>
+                            <li><strong>Firebase</strong> — Real-time apps</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <h4>☁️ Hosting</h4>
+                        <ul class="styled-list check-list">
+                            <li><strong>Vercel</strong> — Next.js apps</li>
+                            <li><strong>Railway</strong> — Backend + DB</li>
+                            <li><strong>AWS</strong> — Enterprise scale</li>
+                            <li><strong>DigitalOcean</strong> — VPS hosting</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Setup -->
+            <section class="section" id="setup">
+                <div class="section-header">
+                    <div class="section-number">3</div>
+                    <h2>Project Setup</h2>
+                </div>
+
+                <h3>Project Initialization Checklist</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Details</th>
+                            <th>Done</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Create GitHub Repository</strong></td>
+                            <td>Private repo, proper naming (client-project-name)</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Initialize Project</strong></td>
+                            <td>npx create-next-app@latest or appropriate starter</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Set Up Environment Variables</strong></td>
+                            <td>.env.local, .env.example (without secrets)</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Configure ESLint & Prettier</strong></td>
+                            <td>Consistent code formatting across team</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Set Up Database</strong></td>
+                            <td>Create DB, configure connection, test</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Configure Hosting</strong></td>
+                            <td>Connect to Vercel/Railway, set up preview deployments</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Set Up Branch Strategy</strong></td>
+                            <td>main (production), develop (staging), feature branches</td>
+                            <td>☐</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Folder Structure (Next.js)</h3>
+
+                <div class="code-block">
+                    <span class="comment">// Recommended folder structure</span>
+                    /src
+                    /app <span class="comment">// App router pages</span>
+                    /api <span class="comment">// API routes</span>
+                    /(auth) <span class="comment">// Auth pages (login, register)</span>
+                    /(dashboard) <span class="comment">// Protected pages</span>
+                    layout.tsx
+                    page.tsx
+                    /components <span class="comment">// Reusable UI components</span>
+                    /ui <span class="comment">// Base components (Button, Input)</span>
+                    /forms <span class="comment">// Form components</span>
+                    /layout <span class="comment">// Layout components (Header, Footer)</span>
+                    /lib <span class="comment">// Utilities, helpers</span>
+                    db.ts <span class="comment">// Database connection</span>
+                    auth.ts <span class="comment">// Auth configuration</span>
+                    utils.ts <span class="comment">// Helper functions</span>
+                    /types <span class="comment">// TypeScript types</span>
+                    /hooks <span class="comment">// Custom React hooks</span>
+                    /services <span class="comment">// API calls, external services</span>
+                    /prisma
+                    schema.prisma <span class="comment">// Database schema</span>
+                    /public <span class="comment">// Static assets</span>
+                </div>
+            </section>
+
+            <!-- Development Phases -->
+            <section class="section" id="development">
+                <div class="section-header">
+                    <div class="section-number">4</div>
+                    <h2>Development Phases</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>📅 Typical Timeline: 4-8 Weeks</h4>
+                    <p>Custom projects follow a phased approach. Each phase has clear deliverables and client approval
+                        before proceeding.</p>
+                </div>
+
+                <div class="phase-card">
+                    <h4>📋 Phase 1: Foundation <span class="duration">Week 1-2</span></h4>
+                    <ul class="styled-list check-list">
+                        <li>Project setup (repo, hosting, CI/CD)</li>
+                        <li>Database schema implementation</li>
+                        <li>Authentication system</li>
+                        <li>Base layout and navigation</li>
+                        <li>Core UI components</li>
+                    </ul>
+                    <p><strong>Deliverable:</strong> Working login/register, basic dashboard shell</p>
+                </div>
+
+                <div class="phase-card">
+                    <h4>⚙️ Phase 2: Core Features <span class="duration">Week 2-4</span></h4>
+                    <ul class="styled-list check-list">
+                        <li>Primary CRUD operations</li>
+                        <li>Main user flows implemented</li>
+                        <li>API endpoints for core features</li>
+                        <li>Form validations</li>
+                        <li>Error handling</li>
+                    </ul>
+                    <p><strong>Deliverable:</strong> All primary features functional</p>
+                </div>
+
+                <div class="phase-card">
+                    <h4>🔗 Phase 3: Integrations <span class="duration">Week 4-5</span></h4>
+                    <ul class="styled-list check-list">
+                        <li>Payment gateway integration</li>
+                        <li>Email service setup</li>
+                        <li>Third-party API connections</li>
+                        <li>Notifications system</li>
+                    </ul>
+                    <p><strong>Deliverable:</strong> All integrations working in test mode</p>
+                </div>
+
+                <div class="phase-card">
+                    <h4>🎨 Phase 4: Polish & Testing <span class="duration">Week 5-6</span></h4>
+                    <ul class="styled-list check-list">
+                        <li>UI/UX refinement</li>
+                        <li>Mobile responsiveness</li>
+                        <li>Performance optimization</li>
+                        <li>Bug fixes from testing</li>
+                        <li>Security review</li>
+                    </ul>
+                    <p><strong>Deliverable:</strong> Production-ready application</p>
+                </div>
+
+                <div class="phase-card">
+                    <h4>🚀 Phase 5: Launch <span class="duration">Week 6-7</span></h4>
+                    <ul class="styled-list check-list">
+                        <li>Production deployment</li>
+                        <li>DNS configuration</li>
+                        <li>SSL setup</li>
+                        <li>Final testing on live</li>
+                        <li>Client training</li>
+                    </ul>
+                    <p><strong>Deliverable:</strong> Live website + documentation</p>
+                </div>
+            </section>
+
+            <!-- Database Design -->
+            <section class="section" id="database">
+                <div class="section-header">
+                    <div class="section-number">5</div>
+                    <h2>Database Design</h2>
+                </div>
+
+                <h3>Database Design Principles</h3>
+
+                <ul class="styled-list">
+                    <li><strong>Normalize data</strong> — Avoid duplication, use relationships</li>
+                    <li><strong>Plan for scale</strong> — Index frequently queried columns</li>
+                    <li><strong>Use soft deletes</strong> — deletedAt timestamp, never hard delete</li>
+                    <li><strong>Timestamps on everything</strong> — createdAt, updatedAt on all tables</li>
+                    <li><strong>UUID over auto-increment</strong> — Better for distributed systems</li>
+                </ul>
+
+                <h3>Example Schema (Prisma)</h3>
+
+                <div class="code-block">
+                    <span class="comment">// User model with common fields</span>
+                    <span class="keyword">model</span> <span class="function">User</span> {
+                    id <span class="keyword">String</span> @id @default(uuid())
+                    email <span class="keyword">String</span> @unique
+                    name <span class="keyword">String</span>
+                    password <span class="keyword">String</span>
+                    role <span class="keyword">Role</span> @default(USER)
+                    createdAt <span class="keyword">DateTime</span> @default(now())
+                    updatedAt <span class="keyword">DateTime</span> @updatedAt
+                    deletedAt <span class="keyword">DateTime?</span>
+
+                    <span class="comment">// Relations</span>
+                    orders <span class="function">Order</span>[]
+                    profile <span class="function">Profile?</span>
+                    }
+
+                    <span class="keyword">enum</span> <span class="function">Role</span> {
+                    USER
+                    ADMIN
+                    SUPER_ADMIN
+                    }
+                </div>
+            </section>
+
+            <!-- API Development -->
+            <section class="section" id="api">
+                <div class="section-header">
+                    <div class="section-number">6</div>
+                    <h2>API Development</h2>
+                </div>
+
+                <h3>API Standards</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Standard</th>
+                            <th>Implementation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>RESTful naming</strong></td>
+                            <td>/api/users (not /api/getUsers)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTTP methods</strong></td>
+                            <td>GET (read), POST (create), PUT (update), DELETE (remove)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Status codes</strong></td>
+                            <td>200 (success), 201 (created), 400 (bad request), 401 (unauthorized), 404 (not found),
+                                500
+                                (server error)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Response format</strong></td>
+                            <td>{ success: true, data: {...} } or { success: false, error: "message" }</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Authentication</strong></td>
+                            <td>JWT in Authorization header or secure HTTP-only cookies</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Validation</strong></td>
+                            <td>Validate ALL inputs. Use Zod or Yup schemas</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Error Handling Template</h3>
+
+                <div class="code-block">
+                    <span class="comment">// Consistent error handling</span>
+                    <span class="keyword">try</span> {
+                    <span class="comment">// Your logic here</span>
+                    <span class="keyword">const</span> data = <span class="keyword">await</span> <span
+                        class="function">doSomething</span>();
+                    <span class="keyword">return</span> Response.<span class="function">json</span>({ success: <span
+                        class="keyword">true</span>, data });
+                    } <span class="keyword">catch</span> (error) {
+                    console.<span class="function">error</span>(<span class="string">'[API Error]'</span>, error);
+                    <span class="keyword">return</span> Response.<span class="function">json</span>(
+                    { success: <span class="keyword">false</span>, error: <span class="string">'Something went
+                        wrong'</span>
+                    },
+                    { status: 500 }
+                    );
+                    }
+                </div>
+            </section>
+
+            <!-- Testing & QA -->
+            <section class="section" id="testing">
+                <div class="section-header">
+                    <div class="section-number">7</div>
+                    <h2>Testing & QA</h2>
+                </div>
+
+                <h3>Testing Checklist</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Items to Test</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Functionality</strong></td>
+                            <td>All features work as specified. Edge cases handled.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Authentication</strong></td>
+                            <td>Login, logout, password reset, session handling, protected routes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Authorization</strong></td>
+                            <td>Role-based access works. Users can't access admin features.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Forms</strong></td>
+                            <td>Validation works, errors shown, success messages, loading states</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Responsive</strong></td>
+                            <td>Works on mobile, tablet, desktop. No horizontal scroll.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Performance</strong></td>
+                            <td>Page load < 3s. No unnecessary re-renders. Images optimized.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Security</strong></td>
+                            <td>SQL injection prevented, XSS prevented, CSRF tokens, HTTPS</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="info-box danger">
+                    <h4>🚨 Security Must-Checks</h4>
+                    <ul class="styled-list cross-list" style="margin-top: 10px;">
+                        <li>Never expose API keys in frontend code</li>
+                        <li>Never trust client-side data — always validate server-side</li>
+                        <li>Never store passwords in plain text</li>
+                        <li>Never log sensitive data (passwords, tokens, PII)</li>
+                        <li>Never disable CORS for production</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Deployment -->
+            <section class="section" id="deployment">
+                <div class="section-header">
+                    <div class="section-number">8</div>
+                    <h2>Deployment</h2>
+                </div>
+
+                <h3>Pre-Deployment Checklist</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>All environment variables set in production</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>Database migrated to production</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>SSL certificate configured</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>Domain DNS configured correctly</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>Payment gateway in live mode (not test)</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>Email service configured with production domain</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>Error monitoring set up (Sentry or similar)</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>Analytics configured</td>
+                            <td>☐</td>
+                        </tr>
+                        <tr>
+                            <td>Backup strategy in place</td>
+                            <td>☐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Client Handover -->
+            <section class="section" id="handover">
+                <div class="section-header">
+                    <div class="section-number">9</div>
+                    <h2>Client Handover</h2>
+                </div>
+
+                <h3>Handover Package Contents</h3>
+
+                <ul class="styled-list check-list">
+                    <li><strong>Admin credentials</strong> — Login details for admin panel</li>
+                    <li><strong>Documentation</strong> — How to use the system (Notion/PDF)</li>
+                    <li><strong>Training video</strong> — Loom walkthrough of key features</li>
+                    <li><strong>Technical documentation</strong> — For future developers</li>
+                    <li><strong>Environment variables list</strong> — What's configured where</li>
+                    <li><strong>Hosting access</strong> — Vercel/Railway/hosting login</li>
+                    <li><strong>Domain registrar access</strong> — DNS management</li>
+                    <li><strong>GitHub repository</strong> — Transfer ownership or add as collaborator</li>
+                    <li><strong>Support period details</strong> — What's included, how to contact</li>
+                </ul>
+
+                <div class="template-box">
+                    <div class="template-header">📝 Handover Email Template</div>
+                    <p>Hi <span class="placeholder">[Client Name]</span>!</p>
+
+                    <p>🎉 <strong>Your application is now LIVE!</strong></p>
+
+                    <p><strong>Live URL:</strong> <span class="placeholder">[https://yoursite.com]</span></p>
+
+                    <p><strong>Admin Access:</strong><br>
+                        URL: <span class="placeholder">[admin URL]</span><br>
+                        Email: <span class="placeholder">[admin email]</span><br>
+                        Password: <span class="placeholder">[temporary password - change immediately]</span></p>
+
+                    <p><strong>Resources:</strong><br>
+                        📹 Training Video: <span class="placeholder">[Loom link]</span><br>
+                        📄 Documentation: <span class="placeholder">[Notion/Doc link]</span></p>
+
+                    <p><strong>Support:</strong><br>
+                        You have <span class="placeholder">[30/60/90]</span> days of support starting today. For any
+                        issues,
+                        reply to this email or message me directly.</p>
+
+                    <p>Congratulations on your launch! 🚀</p>
+                </div>
+            </section>
+
+            <!-- KPIs -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">📊</div>
+                    <h2>Full Stack Project KPIs</h2>
+                </div>
+
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="label">On-Time Delivery</div>
+                        <div class="metric">95%+</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">Bug-Free Launch</div>
+                        <div class="metric">&lt;5 bugs</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">Client Satisfaction</div>
+                        <div class="metric">4.8★+</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">Code Review Pass</div>
+                        <div class="metric">100%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ChatGPT Prompts for Full Stack -->
+            <section class="section" id="chatgpt">
+                <div class="section-header">
+                    <div class="section-number">🤖</div>
+                    <h2>ChatGPT Prompts for Full Stack Development</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>💡 Use AI to Accelerate Development</h4>
+                    <p>Use these prompts to debug code, plan architecture, write documentation, and solve complex
+                        problems.</p>
+                </div>
+
+                <h3>Architecture & Planning</h3>
+
+                <div class="template-box">
+                    <div class="template-header">🤖 Prompt: Plan Database Schema</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        I'm building a [type of app] with these features:<br><br>
+                        - [Feature 1]<br>
+                        - [Feature 2]<br>
+                        - [Feature 3]<br><br>
+                        Tech stack: [e.g., PostgreSQL, MongoDB]<br><br>
+                        Design the database schema with:<br>
+                        1. Tables/collections needed<br>
+                        2. Fields and data types<br>
+                        3. Relationships (one-to-many, etc.)<br>
+                        4. Indexes for performance<br>
+                        5. Example SQL/query to create the schema
+                    </p>
+                </div>
+
+                <div class="template-box" style="margin-top: 20px;">
+                    <div class="template-header">🤖 Prompt: API Endpoint Design</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        I'm building an API for: [Describe the app]<br><br>
+                        Key resources: [Users, Products, Orders, etc.]<br>
+                        Auth method: [JWT, Sessions, etc.]<br><br>
+                        Design the REST API with:<br>
+                        1. Endpoint structure (routes)<br>
+                        2. HTTP methods for each<br>
+                        3. Request/response JSON examples<br>
+                        4. Authentication requirements<br>
+                        5. Error response format<br>
+                        6. Rate limiting suggestions
+                    </p>
+                </div>
+
+                <h3>Debugging & Problem Solving</h3>
+
+                <div class="template-box">
+                    <div class="template-header">🤖 Prompt: Debug API/Backend Error</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        I'm getting this error in my [Node/Python/etc.] backend:<br><br>
+                        Error: [Paste exact error message]<br>
+                        Happening when: [What triggers it]<br>
+                        My code: [Paste relevant code]<br>
+                        Environment: [Dev/Production, OS, versions]<br><br>
+                        Help me:<br>
+                        1. Understand what's causing this<br>
+                        2. Fix the code with explanation<br>
+                        3. Prevent this from happening again<br>
+                        4. Best practices I violated
+                    </p>
+                </div>
+
+                <div class="template-box" style="margin-top: 20px;">
+                    <div class="template-header">🤖 Prompt: Performance Optimization</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        My app is slow. Here's the situation:<br><br>
+                        Slow operation: [What's taking long]<br>
+                        Current time: [How long it takes now]<br>
+                        Target time: [What it should be]<br>
+                        Tech: [Database, framework, hosting]<br>
+                        Current code/query: [Paste it]<br><br>
+                        Analyze and optimize:<br>
+                        1. What's causing the slowness?<br>
+                        2. Database query improvements<br>
+                        3. Caching strategies<br>
+                        4. Code refactoring suggestions<br>
+                        5. Infrastructure recommendations
+                    </p>
+                </div>
+
+                <h3>Documentation & Handover</h3>
+
+                <div class="template-box">
+                    <div class="template-header">🤖 Prompt: Generate API Documentation</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        I need documentation for my API endpoints:<br><br>
+                        [Paste your routes or describe endpoints]<br><br>
+                        Create documentation that includes:<br>
+                        1. Endpoint URL and method<br>
+                        2. Description of what it does<br>
+                        3. Authentication required<br>
+                        4. Request parameters (query, body)<br>
+                        5. Success response example<br>
+                        6. Error response examples<br>
+                        7. Rate limits if any
+                    </p>
+                </div>
+
+                <div class="info-box success" style="margin-top: 25px;">
+                    <h4>✅ Pro Tips for Full Stack ChatGPT Use</h4>
+                    <ul class="styled-list check-list">
+                        <li><strong>Specify versions</strong> — Mention Node 18, React 18, etc. for accurate code</li>
+                        <li><strong>Test everything</strong> — AI code can have bugs, always test</li>
+                        <li><strong>Security review</strong> — Ask AI to check for vulnerabilities</li>
+                        <li><strong>Learn, don't just copy</strong> — Ask why the solution works</li>
+                        <li><strong>Break down problems</strong> — Complex issues work better in pieces</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Difficult Situations Section -->
+            <section class="section" id="difficult-situations">
+                <div class="section-header">
+                    <div class="section-number">⚠️</div>
+                    <h2>Handling Difficult Situations</h2>
+                </div>
+
+                <h3>🔴 Production Server Down</h3>
+
+                <h3>🎯 Task Priority Order (What Comes First)</h3>
+                <div class="info-box success" style="margin-bottom: 30px;">
+                    <p><strong>Handle in this order every day:</strong></p>
+                    <ol style="margin-top: 15px; line-height: 2;">
+                        <li><strong>🔴 P0 - Production Outages</strong> → Site/app down = DROP EVERYTHING. Fix
+                            immediately.</li>
+                        <li><strong>🔴 P0 - Security Vulnerabilities</strong> → Any breach or vulnerability. Patch
+                            first.</li>
+                        <li><strong>🔴 P0 - Data Issues</strong> → Database problems, data loss, corruption. Critical.
+                        </li>
+                        <li><strong>🟡 P1 - Deadline-Day Deliveries</strong> → Features/fixes due TODAY must ship.</li>
+                        <li><strong>🟡 P1 - PM/Client Questions</strong> → Respond within 1 hour. Don't block decisions.
+                        </li>
+                        <li><strong>🟢 P2 - Active Development Work</strong> → Features with upcoming deadlines.</li>
+                        <li><strong>🟢 P2 - Code Reviews & Testing</strong> → Don't block teammates, test before merge.
+                        </li>
+                        <li><strong>⚪ P3 - Technical Debt & Optimization</strong> → Refactoring, performance
+                            improvements, learning.</li>
+                    </ol>
+                    <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Production issues > Security > Data >
+                        Deadlines > Communication > Development.</p>
+                </div>
+
+                <h3>🔴 Production Server Down</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Client's application is completely inaccessible.</p>
+                    <p><strong>Response:</strong> 1) Check server status and logs immediately. 2) Communicate: "We're
+                        aware and investigating." 3) Roll back last deploy if it caused the issue. 4) Document root
+                        cause after resolution.</p>
+                    <p><strong>Rule:</strong> Availability first. Communicate early. Post-mortem after fire is out.</p>
+                </div>
+
+                <h3>🔴 Database Corruption or Data Loss</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Data is missing or corrupted.</p>
+                    <p><strong>Response:</strong> Stop all writes immediately. Check backups. Restore from last known
+                        good backup. Document what was lost. Implement better backup strategy after.</p>
+                    <p><strong>Rule:</strong> Backups save lives. Test restores regularly. Document everything.</p>
+                </div>
+
+                <h3>🔴 Security Vulnerability Discovered</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Found or reported security flaw in the application.</p>
+                    <p><strong>Response:</strong> Assess severity. If critical: Patch immediately or take affected
+                        feature offline. Inform client. Document the vulnerability and fix. Review for similar issues
+                        elsewhere.</p>
+                    <p><strong>Rule:</strong> Security issues are P0. Drop everything else. Fix first, explain later.
+                    </p>
+                </div>
+
+                <h3>🔴 Third-Party API is Down</h3>
+                <div class="info-box warning">
+                    <p><strong>Situation:</strong> External service your app depends on is not responding.</p>
+                    <p><strong>Response:</strong> Check status page. Implement graceful degradation (fallback UX).
+                        Notify client: "We're experiencing issues with [service]. Working on a workaround."</p>
+                    <p><strong>Rule:</strong> Always plan for third-party failures. Never let one API kill the whole
+                        app.</p>
+                </div>
+
+                <h3>🔴 Client Wants Feature in Unrealistic Timeline</h3>
+                <div class="info-box warning">
+                    <p><strong>Situation:</strong> Client expects complex feature in days, not weeks.</p>
+                    <p><strong>Response:</strong> "I understand the urgency. To deliver properly, this takes [X days]. I
+                        can deliver [smaller scope] by your deadline, then add the rest. Which approach works better?"
+                    </p>
+                    <p><strong>Rule:</strong> Don't promise impossible. Offer phased delivery options.</p>
+                </div>
+
+                <h3>🔴 Inherited Codebase is a Disaster</h3>
+                <div class="info-box warning">
+                    <p><strong>Situation:</strong> Taking over project with poor code quality, no documentation.</p>
+                    <p><strong>Response:</strong> Document issues found. Estimate "technical debt" cleanup time. Advise
+                        PM: "Before adding features, we should refactor [X] to prevent future bugs." Get approval before
+                        major refactors.</p>
+                    <p><strong>Rule:</strong> Don't blame previous devs. Document risks. Recommend solutions.</p>
+                </div>
+
+                <h3>🔴 Your Deployment Broke Something</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> New feature or fix caused unexpected issues.</p>
+                    <p><strong>Response:</strong> Roll back immediately if possible. Own it: "My recent deployment
+                        caused [issue]. Rolling back now." Then investigate and fix properly in staging before
+                        redeploying.</p>
+                    <p><strong>Rule:</strong> Fast rollback beats slow debugging. Always have rollback plan.</p>
+                </div>
+
+                <h3>🔴 Client Access Credentials Compromised</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Credentials were exposed or suspected breach.</p>
+                    <p><strong>Response:</strong> Rotate ALL credentials immediately. Check for unauthorized access in
+                        logs. Notify client and PM. Review access controls. Implement better credential management.</p>
+                    <p><strong>Rule:</strong> Assume worst case. Rotate first, investigate second. Never share creds in
+                        plain text.</p>
+                </div>
+            </section>
+
+            <!-- Motivation Section -->
+            <section class="section" id="motivation"
+                style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
+                <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
+                    <div class="section-number">🌟</div>
+                    <h2 style="color: white;">Your Daily Inspiration</h2>
+                </div>
+
+                <div style="text-align: center; padding: 30px 0;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">⚡</div>
+                    <blockquote
+                        style="font-size: 24px; font-style: italic; color: #06B6D4; margin-bottom: 20px; line-height: 1.6;">
+                        "Full stack means full responsibility — and full impact. You build entire worlds."
+                    </blockquote>
+                    <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                    <h3 style="color: #06B6D4; margin-bottom: 15px;">📖 Success Story: The App That Saved 40 Hours
+                        Weekly</h3>
+                    <p style="color: #E5E7EB; line-height: 1.8;">
+                        A client was manually copying orders from Shopify to their ERP — 10 hours every week. Tedious,
+                        error-prone, soul-crushing.
+                        <br><br>
+                        Our full stack dev built a custom integration in 2 weeks. Orders now sync automatically every 15
+                        minutes. Zero manual work.
+                        <br><br>
+                        <strong style="color: #10B981;">The impact?</strong> Client saved <strong
+                            style="color: #FCD34D;">40 hours monthly</strong> — that's an entire work week. They used
+                        that time to launch a new product line.
+                        <br><br>
+                        <em>The lesson: You don't just write code — you give people back their time. That's
+                            priceless.</em>
+                    </p>
+                </div>
+
+                <div style="background: rgba(6, 182, 212, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                    <h3 style="color: #67E8F9; margin-bottom: 15px;">⚡ Productivity Hacks for Full Stack Devs</h3>
+                    <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
+                        <li>🏗️ <strong>Scaffold Before Coding:</strong> Plan the architecture, then build — saves 50%
+                            rework</li>
+                        <li>🔄 <strong>Git Commit Often:</strong> Small, frequent commits = easy debugging and rollbacks
+                        </li>
+                        <li>📦 <strong>Reusable Components:</strong> Build it once, use it everywhere — compound
+                            efficiency</li>
+                        <li>🧪 <strong>Write Tests Early:</strong> Tests aren't overhead — they're insurance</li>
+                        <li>🎧 <strong>Deep Work Blocks:</strong> 3-hour coding blocks with no meetings = 10x output
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div
+                        style="background: rgba(6, 182, 212, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">🧠</div>
+                        <p style="color: #67E8F9; font-weight: 600;">"Solve the problem first, code it second."</p>
+                    </div>
+                    <div
+                        style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">📚</div>
+                        <p style="color: #A7F3D0; font-weight: 600;">"Today's learning is tomorrow's leverage."</p>
+                    </div>
+                    <div
+                        style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">🚀</div>
+                        <p style="color: #FDE68A; font-weight: 600;">"Ship it, learn from it, improve it."</p>
+                    </div>
+                </div>
+
+                <div
+                    style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                    <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
+                    <p style="font-size: 20px; color: #06B6D4; font-weight: 600;">"Today, I build systems that empower
+                        businesses. My code creates possibilities that didn't exist yesterday."</p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <h3>Digital Heroes</h3>
+                <p><strong>"Plan twice, code once."</strong></p>
+                <p style="margin-top: 20px;">Spec → Build → Test → Deploy</p>
+                <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.7;">Internal Use Only | Version 1.0 | January
+                    2026
+                </p>
+            </footer>
+        </div>
+        <script src="admin-mode.js"></script>
+</body>
+
+</html>

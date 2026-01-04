@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | SOP Hub</title>
+    <link rel="stylesheet" href="admin-mode.css">
+    <style>
+        :root {
+            --primary: #1E3A5F;
+            --secondary: #2E5077;
+            --accent: #3D6B99;
+            --success: #2E7D32;
+            --gold: #D4AF37;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0a1a2e 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 40px;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 3.5em;
+            color: white;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .header .subtitle {
+            font-size: 1.4em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .header .tagline {
+            background: linear-gradient(135deg, var(--gold), #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            flex: 1;
+            max-width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.5), transparent);
+        }
+
+        .sop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .sop-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 35px;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sop-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--card-accent, #8b5cf6), #ec4899);
+        }
+
+        .sop-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(139, 92, 246, 0.4);
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.2);
+        }
+
+        .sop-card.sales {
+            --card-accent: #10b981;
+        }
+
+        .sop-card.pm {
+            --card-accent: #3b82f6;
+        }
+
+        .sop-card.dev {
+            --card-accent: #8b5cf6;
+        }
+
+        .sop-card.designer {
+            --card-accent: #ec4899;
+        }
+
+        .sop-card.cs {
+            --card-accent: #f59e0b;
+        }
+
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            color: white;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+
+        .card-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-features li {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-features li::before {
+            content: '→';
+            color: rgba(139, 92, 246, 0.6);
+        }
+
+        .card-cta {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.2));
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            color: white;
+            font-weight: 500;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .sop-card:hover .card-cta {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(236, 72, 153, 0.4));
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--gold), #ffd700);
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .core-principles {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .principle {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .principle-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .principle-title {
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .principle-desc {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer h3 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .sop-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header (Compact) -->
+        <header class="header" style="padding: 30px 40px;">
+            <h1 style="font-size: 2.5em; margin-bottom: 5px;">🦸 Digital Heroes</h1>
+            <p class="subtitle" style="font-size: 1.1em; margin-bottom: 10px;">Standard Operating Procedures</p>
+            <div class="stats-bar" style="margin-top: 15px; gap: 25px;">
+                <div class="stat">
+                    <div class="stat-value" style="font-size: 1.8em;">2000+</div>
+                    <div class="stat-label">Brands</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" style="font-size: 1.8em;">2.5M+</div>
+                    <div class="stat-label">Subscribers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" style="font-size: 1.8em;">4.9★</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" style="font-size: 1.8em;">$1,200+</div>
+                    <div class="stat-label">Starting</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Quick Role Reference (First) -->
+        <div
+            style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.1)); border: 1px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 25px; margin-bottom: 25px;">
+            <div style="text-align: center; margin-bottom: 15px;">
+                <span style="color: white; font-size: 1.1em; font-weight: 600;">👤 Find Your Role → Follow <a
+                        href="daily-sop.html"
+                        style="background: #8B5CF6; color: white; padding: 6px 16px; border-radius: 20px; text-decoration: none; font-weight: 600;">📋
+                        Daily SOP</a> + Your Role SOP</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <a href="sales-sop.html"
+                    style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #10B981; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">💰
+                    Sales</a>
+                <a href="pm-sop.html"
+                    style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #3B82F6; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">📋
+                    PM</a>
+                <a href="developer-sop.html"
+                    style="background: rgba(139, 92, 246, 0.2); border: 1px solid rgba(139, 92, 246, 0.5); color: #8B5CF6; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">💻
+                    Developer</a>
+                <a href="fullstack-sop.html"
+                    style="background: rgba(6, 182, 212, 0.2); border: 1px solid rgba(6, 182, 212, 0.5); color: #06B6D4; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">🖥️
+                    Full Stack</a>
+                <a href="designer-sop.html"
+                    style="background: rgba(236, 72, 153, 0.2); border: 1px solid rgba(236, 72, 153, 0.5); color: #EC4899; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">🎨
+                    Designer</a>
+                <a href="cs-sop.html"
+                    style="background: rgba(217, 119, 6, 0.2); border: 1px solid rgba(217, 119, 6, 0.5); color: #D97706; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">🤝
+                    Client Success</a>
+                <a href="hr-sop.html"
+                    style="background: rgba(167, 139, 250, 0.2); border: 1px solid rgba(167, 139, 250, 0.5); color: #A78BFA; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">👥
+                    HR</a>
+                <a href="content-sop.html"
+                    style="background: rgba(251, 146, 60, 0.2); border: 1px solid rgba(251, 146, 60, 0.5); color: #FB923C; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">✍️
+                    Content</a>
+                <a href="social-media-sop.html"
+                    style="background: rgba(14, 165, 233, 0.2); border: 1px solid rgba(14, 165, 233, 0.5); color: #0EA5E9; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">📱
+                    Social Media</a>
+                <a href="finance-sop.html"
+                    style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #10B981; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.9em; font-weight: 500;">💰
+                    Finance</a>
+            </div>
+        </div>
+
+        <!-- Core Principles (8 items, 4 columns) -->
+        <div class="core-principles" style="padding: 25px; margin-bottom: 25px;">
+            <h2 class="section-title" style="font-size: 1.4em; margin-bottom: 20px;">Core Business Principles</h2>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">💰</div>
+                    <div class="principle-title" style="font-size: 0.95em;">Full Payment Upfront</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">90% require payment before work begins</div>
+                </div>
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">🚫</div>
+                    <div class="principle-title" style="font-size: 0.95em;">No Discounts Ever</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">Our value is superior. No negotiations</div>
+                </div>
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">📋</div>
+                    <div class="principle-title" style="font-size: 0.95em;">Order First, Then Talk</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">No free consulting. Order first</div>
+                </div>
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">⏱️</div>
+                    <div class="principle-title" style="font-size: 0.95em;">100% On-Time Delivery</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">Deadlines are sacred. No exceptions</div>
+                </div>
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">💬</div>
+                    <div class="principle-title" style="font-size: 0.95em;">1-Hour Response</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">Reply within 1 hour during work hours</div>
+                </div>
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">📊</div>
+                    <div class="principle-title" style="font-size: 0.95em;">Daily EOD Updates</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">Report progress every end of day</div>
+                </div>
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">🎯</div>
+                    <div class="principle-title" style="font-size: 0.95em;">Follow Your SOP</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">SOPs = standards. Follow them daily</div>
+                </div>
+                <div class="principle" style="padding: 15px;">
+                    <div class="principle-icon" style="font-size: 1.5em;">⭐</div>
+                    <div class="principle-title" style="font-size: 0.95em;">Excellence Always</div>
+                    <div class="principle-desc" style="font-size: 0.8em;">Good enough is never good enough</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core SOPs -->
+        <h2 class="section-title">Team SOPs</h2>
+
+        <div class="sop-grid">
+            <!-- Sales SOP -->
+            <a href="sales-sop.html" class="sop-card sales">
+                <span class="featured-badge">⭐ DETAILED</span>
+                <div class="card-icon">💰</div>
+                <div class="card-title">Sales & Client Acquisition</div>
+                <div class="card-subtitle">Fiverr/Upwork optimization, lead qualification, and closing techniques</div>
+                <ul class="card-features">
+                    <li>Order-First Approach</li>
+                    <li>Problem Identification Only</li>
+                    <li>No Obvious Questions</li>
+                    <li>Objection Handling Scripts</li>
+                    <li>$1,200-$1,800 Positioning</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- PM SOP -->
+            <a href="pm-sop.html" class="sop-card pm">
+                <span class="featured-badge">⭐ DETAILED</span>
+                <div class="card-icon">📋</div>
+                <div class="card-title">Project Manager</div>
+                <div class="card-subtitle">Client communication, timelines, and delivery excellence</div>
+                <ul class="card-features">
+                    <li>14-Day Build Timeline</li>
+                    <li>Client Onboarding Process</li>
+                    <li>Feedback Request Templates</li>
+                    <li>Daily Update Templates</li>
+                    <li>100% On-Time Delivery</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Developer SOP -->
+            <a href="developer-sop.html" class="sop-card dev">
+                <span class="featured-badge">⭐ DETAILED</span>
+                <div class="card-icon">💻</div>
+                <div class="card-title">Shopify Developer</div>
+                <div class="card-subtitle">Theme customization, speed optimization, and code quality</div>
+                <ul class="card-features">
+                    <li>Theme Setup Checklist</li>
+                    <li>Homepage Section Structure</li>
+                    <li>Speed Optimization (85+)</li>
+                    <li>60-Point QA Checklist</li>
+                    <li>Code Examples</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Designer SOP -->
+            <a href="designer-sop.html" class="sop-card designer">
+                <span class="featured-badge">⭐ DETAILED</span>
+                <div class="card-icon">🎨</div>
+                <div class="card-title">UI/UX Designer</div>
+                <div class="card-subtitle">Visual design, brand styling, and conversion optimization</div>
+                <ul class="card-features">
+                    <li>Premium Design Principles</li>
+                    <li>Brand Styling Process</li>
+                    <li>Typography & Color Systems</li>
+                    <li>Mobile-First Guidelines</li>
+                    <li>Trust Element Design</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Client Success SOP -->
+            <a href="cs-sop.html" class="sop-card cs">
+                <span class="featured-badge">⭐ DETAILED</span>
+                <div class="card-icon">🤝</div>
+                <div class="card-title">Client Success</div>
+                <div class="card-subtitle">Post-delivery support, reviews, and repeat business</div>
+                <ul class="card-features">
+                    <li>Delivery & Handover</li>
+                    <li>5-Star Review Scripts</li>
+                    <li>Feedback Request Templates</li>
+                    <li>Support Period Management</li>
+                    <li>Upsell Opportunities</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- HR SOP -->
+            <a href="hr-sop.html" class="sop-card" style="--card-accent: #0d9488;">
+                <span class="featured-badge">✨ NEW</span>
+                <div class="card-icon">👥</div>
+                <div class="card-title">HR & People Ops</div>
+                <div class="card-subtitle">Hiring, onboarding, culture, and team success</div>
+                <ul class="card-features">
+                    <li>4-Stage Hiring Funnel</li>
+                    <li>30-Day Onboarding</li>
+                    <li>Performance Reviews</li>
+                    <li>Exit Process</li>
+                    <li>Culture & Values</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Content Writer SOP -->
+            <a href="content-sop.html" class="sop-card" style="--card-accent: #6366f1;">
+                <span class="featured-badge">✨ NEW</span>
+                <div class="card-icon">✍️</div>
+                <div class="card-title">Content Writer</div>
+                <div class="card-subtitle">Product descriptions, website copy, and conversion writing</div>
+                <ul class="card-features">
+                    <li>AIDA Formula</li>
+                    <li>Benefits-First Writing</li>
+                    <li>SEO Basics</li>
+                    <li>AI Tool Integration</li>
+                    <li>Before/After Examples</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Finance SOP -->
+            <a href="finance-sop.html" class="sop-card" style="--card-accent: #059669;">
+                <span class="featured-badge">✨ NEW</span>
+                <div class="card-icon">💰</div>
+                <div class="card-title">Finance & Accounts</div>
+                <div class="card-subtitle">Invoicing, payments, tracking, and financial health</div>
+                <ul class="card-features">
+                    <li>Payment Policy</li>
+                    <li>Invoice Tracking</li>
+                    <li>Expense Management</li>
+                    <li>Payroll Process</li>
+                    <li>Monthly Reports</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Social Media SOP -->
+            <a href="social-media-sop.html" class="sop-card" style="--card-accent: #E11D48;">
+                <span class="featured-badge">✨ NEW</span>
+                <div class="card-icon">📱</div>
+                <div class="card-title">Social Media Manager</div>
+                <div class="card-subtitle">Content creation, scheduling, and community engagement</div>
+                <ul class="card-features">
+                    <li>Platform Strategy</li>
+                    <li>Content 80/20 Rule</li>
+                    <li>Scheduling Calendar</li>
+                    <li>Engagement Guidelines</li>
+                    <li>Analytics Tracking</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Full Stack SOP -->
+            <a href="fullstack-sop.html" class="sop-card" style="--card-accent: #0891B2;">
+                <span class="featured-badge">✨ NEW</span>
+                <div class="card-icon">🖥️</div>
+                <div class="card-title">Full Stack Developer</div>
+                <div class="card-subtitle">Custom websites, web apps, APIs & databases</div>
+                <ul class="card-features">
+                    <li>Discovery & Planning</li>
+                    <li>Database Design</li>
+                    <li>API Development</li>
+                    <li>Testing & QA</li>
+                    <li>Deployment & Handover</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Daily SOP -->
+            <a href="daily-sop.html" class="sop-card" style="--card-accent: #8B5CF6;">
+                <span class="featured-badge" style="background: linear-gradient(135deg, #8B5CF6, #A78BFA);">📋
+                    ESSENTIAL</span>
+                <div class="card-icon">🌅</div>
+                <div class="card-title">Daily SOP</div>
+                <div class="card-subtitle">Your everyday guide to working at Digital Heroes</div>
+                <ul class="card-features">
+                    <li>Work Hours & Daily Routine</li>
+                    <li>Discord 1-Hour Response Rule</li>
+                    <li>How to Use All SOPs</li>
+                    <li>EOD Reporting Format</li>
+                    <li>Time Management Tips</li>
+                </ul>
+                <div class="card-cta">Open SOP →</div>
+            </a>
+
+            <!-- Create New SOP Card -->
+            <div class="sop-card"
+                style="--card-accent: #6B7280; border: 2px dashed rgba(255,255,255,0.3); cursor: pointer;"
+                onclick="showCreateSOPModal()">
+                <div class="card-icon" style="font-size: 3em;">➕</div>
+                <div class="card-title">Create New SOP</div>
+                <div class="card-subtitle">Need an SOP for a different role? Create a custom one</div>
+                <ul class="card-features">
+                    <li>Custom Role Title</li>
+                    <li>Your Own Sections</li>
+                    <li>Add ChatGPT Prompts</li>
+                    <li>Match Team Style</li>
+                    <li>Save & Share</li>
+                </ul>
+                <div class="card-cta"
+                    style="background: rgba(107, 114, 128, 0.3); border-color: rgba(107, 114, 128, 0.5);">
+                    Create Custom
+                    SOP →</div>
+            </div>
+        </div>
+
+        <!-- Create SOP Modal -->
+        <div id="createSOPModal"
+            style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000; align-items: center; justify-content: center;">
+            <div
+                style="background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%); padding: 40px; border-radius: 20px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto;">
+                <h2 style="margin-bottom: 20px;">📝 Create New SOP</h2>
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; color: rgba(255,255,255,0.8);">SOP Title / Role
+                        Name</label>
+                    <input id="sopTitle" type="text" placeholder="e.g., SEO Specialist, VA, Operations"
+                        style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white; font-size: 16px;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; color: rgba(255,255,255,0.8);">Key
+                        Responsibilities (one per line)</label>
+                    <textarea id="sopResponsibilities"
+                        placeholder="Content writing&#10;Keyword research&#10;Link building"
+                        style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white; font-size: 14px; min-height: 120px;"></textarea>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; color: rgba(255,255,255,0.8);">Color
+                        Accent</label>
+                    <select id="sopColor"
+                        style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white; font-size: 16px;">
+                        <option value="#8B5CF6">Purple</option>
+                        <option value="#06B6D4">Cyan</option>
+                        <option value="#10B981">Green</option>
+                        <option value="#F59E0B">Orange</option>
+                        <option value="#EF4444">Red</option>
+                        <option value="#EC4899">Pink</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 15px; margin-top: 25px;">
+                    <button onclick="generateSOP()"
+                        style="flex: 1; padding: 15px; background: linear-gradient(135deg, #8B5CF6, #EC4899); border: none; border-radius: 10px; color: white; font-weight: bold; cursor: pointer;">Generate
+                        SOP Template</button>
+                    <button onclick="closeModal()"
+                        style="padding: 15px 25px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; color: white; cursor: pointer;">Cancel</button>
+                </div>
+                <p style="margin-top: 20px; font-size: 0.9em; color: rgba(255,255,255,0.5); text-align: center;">💡 Tip:
+                    Use ChatGPT with the prompt "Create an SOP for [role]" for more detailed content</p>
+            </div>
+        </div>
+
+        <script>
+            function showCreateSOPModal() {
+                document.getElementById('createSOPModal').style.display = 'flex';
+            }
+            function closeModal() {
+                document.getElementById('createSOPModal').style.display = 'none';
+            }
+            function generateSOP() {
+                const title = document.getElementById('sopTitle').value;
+                const responsibilities = document.getElementById('sopResponsibilities').value;
+                const color = document.getElementById('sopColor').value;
+                if (!title) { alert('Please enter an SOP title'); return; }
+                const chatgptPrompt = `Create a comprehensive Standard Operating Procedure (SOP) for the role of "${title}" at a digital agency. Include these sections:
+
+1. Role Overview - What this role is responsible for
+2. Core Principles - 3-5 key principles for this role
+3. Daily/Weekly Tasks - Checklist format
+4. Best Practices - Do's and Don'ts
+5. Common Scenarios - How to handle typical situations
+6. Quality Standards - What good looks like
+7. ChatGPT Prompts - 5+ prompts this person can use to improve their work
+8. KPIs - How to measure success
+
+Key responsibilities to include:
+${responsibilities}
+
+Format it in HTML with professional styling similar to a modern documentation site.`;
+
+                navigator.clipboard.writeText(chatgptPrompt).then(() => {
+                    alert('✅ ChatGPT prompt copied to clipboard!\\n\\nPaste it into ChatGPT to generate your custom SOP content.');
+                    closeModal();
+                }).catch(() => {
+                    prompt('Copy this prompt to ChatGPT:', chatgptPrompt);
+                });
+            }
+        </script>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <h3>Excellence in Every Delivery</h3>
+            <p>Our Value is Superior. Our Prices Reflect That. No Exceptions.</p>
+            <p style="margin-top: 20px; font-size: 0.85em;">Internal Use Only | Version 2.0 | January 2026</p>
+        </footer>
+    </div>
+    <script src="admin-mode.js"></script>
+</body>
+
+</html>
