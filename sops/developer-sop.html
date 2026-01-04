@@ -1460,6 +1460,140 @@
                 </div>
             </section>
 
+            <!-- Essential Shopify Apps -->
+            <section class="section" id="apps">
+                <div class="section-header">
+                    <div class="section-number">📦</div>
+                    <h2>Essential Shopify Apps</h2>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>⚠️ App Rule: Less is More</h4>
+                    <p>Every app you install slows down the store. Only install what's TRULY needed. 5-8 apps is
+                        healthy. 15+ apps = performance issues.</p>
+                </div>
+
+                <h3>📊 Recommended Apps by Category</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Best App</th>
+                            <th>Free Alternative</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Reviews</strong></td>
+                            <td>Judge.me ($15/mo) or Loox ($9.99/mo)</td>
+                            <td>Judge.me Free</td>
+                            <td>Product reviews with photos</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email Marketing</strong></td>
+                            <td>Klaviyo</td>
+                            <td>Shopify Email</td>
+                            <td>Abandoned cart, campaigns</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Upsell/Cross-sell</strong></td>
+                            <td>ReConvert, Bold Upsell</td>
+                            <td>Shopify's built-in</td>
+                            <td>Increase AOV</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pop-ups</strong></td>
+                            <td>Privy, OptiMonk</td>
+                            <td>Shopify Forms</td>
+                            <td>Email capture, offers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SEO</strong></td>
+                            <td>SEO Manager, Plug in SEO</td>
+                            <td>Manual optimization</td>
+                            <td>Meta tags, sitemaps</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Social Proof</strong></td>
+                            <td>Fomo, Sales Pop</td>
+                            <td>Theme built-in</td>
+                            <td>"X just bought" notifications</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shipping</strong></td>
+                            <td>ShipStation, Shippo</td>
+                            <td>Shopify Shipping</td>
+                            <td>Label printing, tracking</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Returns</strong></td>
+                            <td>Loop Returns, AfterShip</td>
+                            <td>Manual process</td>
+                            <td>Self-service returns portal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subscriptions</strong></td>
+                            <td>Recharge, Bold Subscriptions</td>
+                            <td>None (complex feature)</td>
+                            <td>Recurring orders</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chat/Support</strong></td>
+                            <td>Gorgias, Tidio</td>
+                            <td>Shopify Inbox</td>
+                            <td>Live chat, customer support</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🚫 Apps to AVOID (Speed Killers)</h3>
+
+                <div class="info-box danger">
+                    <ul class="styled-list cross-list">
+                        <li><strong>Multiple review apps</strong> → Pick ONE. Don't stack them.</li>
+                        <li><strong>Heavy page builders</strong> → Use theme editor instead when possible.</li>
+                        <li><strong>Too many pop-up apps</strong> → One pop-up app maximum.</li>
+                        <li><strong>Abandoned cart apps when Klaviyo exists</strong> → Duplicate functionality.</li>
+                        <li><strong>Apps that inject lots of JavaScript</strong> → Check PageSpeed after install.</li>
+                        <li><strong>Free apps with no reviews</strong> → Often inject unwanted code or malware.</li>
+                    </ul>
+                </div>
+
+                <h3>📋 App Installation Checklist</h3>
+
+                <div class="info-box success">
+                    <p><strong>Before installing ANY app:</strong></p>
+                    <ol style="margin-top: 10px; line-height: 2;">
+                        <li>Check current PageSpeed score (note it down)</li>
+                        <li>Read reviews — look for complaints about speed</li>
+                        <li>Install app</li>
+                        <li>Check PageSpeed again — did it drop significantly?</li>
+                        <li>If score dropped more than 10 points → reconsider the app</li>
+                        <li>Test functionality thoroughly</li>
+                        <li>Document which apps are installed (for future reference)</li>
+                    </ol>
+                </div>
+
+                <h3>🔧 App Removal: Clean Uninstall</h3>
+
+                <div class="code-block">
+                    <span class="comment">/* When removing an app, don't just uninstall! */</span><br><br>
+
+                    1. Go to Apps → App you want to remove<br>
+                    2. Click "Delete" or "Uninstall"<br>
+                    3. <span class="keyword">CRITICAL:</span> Check theme code for leftover snippets<br>
+                    4. Online Store → Themes → Actions → Edit code<br>
+                    5. Search for the app name in all files<br>
+                    6. Remove any leftover {% include 'app-name' %} tags<br>
+                    7. Check Layout/theme.liquid for injected scripts<br>
+                    8. Test site after cleanup<br><br>
+
+                    <span class="string">Many apps leave code behind that continues to slow your store!</span>
+                </div>
+            </section>
+
             <!-- QA Checklist -->
             <section class="section" id="qa">
                 <div class="section-header">
