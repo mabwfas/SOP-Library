@@ -513,6 +513,7 @@
         .sidebar-nav a {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 8px 15px 8px 20px;
             color: rgba(255, 255, 255, 0.95);
             text-decoration: none;
@@ -521,9 +522,22 @@
             transition: all 0.15s ease;
         }
 
+        .sidebar-nav a::after {
+            content: '›';
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.4);
+            margin-left: auto;
+            transition: all 0.15s ease;
+        }
+
         .sidebar-nav a:hover {
             background: rgba(255, 255, 255, 0.12);
             border-left-color: #FCD34D;
+        }
+
+        .sidebar-nav a:hover::after {
+            color: #FCD34D;
+            transform: translateX(3px);
         }
 
         .sidebar-section-title {
