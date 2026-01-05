@@ -590,9 +590,13 @@
         <div class="sidebar-search">
             <input type="text" id="searchInput" placeholder="🔍 Search..." onkeyup="searchSOP()">
         </div>
-        <div class="sidebar-section-title">Quick Navigation</div>
+        <div class="sidebar-section-title">Getting Started</div>
         <ul class="sidebar-nav">
             <li><a href="#standards">🚨 Code Standards</a></li>
+            <li><a href="#store-access">🔐 Store Access</a></li>
+        </ul>
+        <div class="sidebar-section-title">Build Process</div>
+        <ul class="sidebar-nav">
             <li><a href="#theme-setup">1️⃣ Theme Setup</a></li>
             <li><a href="#homepage">2️⃣ Homepage Sections</a></li>
             <li><a href="#product-page">3️⃣ Product Page</a></li>
@@ -600,11 +604,17 @@
             <li><a href="#policies">5️⃣ Policy Pages</a></li>
             <li><a href="#checkout">6️⃣ Checkout Setup</a></li>
             <li><a href="#qa">7️⃣ QA Checklist</a></li>
-            <li><a href="#troubleshooting">🔧 Troubleshooting</a></li>
         </ul>
-        <div class="sidebar-section-title">Resources</div>
+        <div class="sidebar-section-title">Apps & Tools</div>
         <ul class="sidebar-nav">
+            <li><a href="#essential-apps">📦 Essential Apps</a></li>
             <li><a href="#chatgpt">🤖 ChatGPT Guide</a></li>
+        </ul>
+        <div class="sidebar-section-title">Quick Reference</div>
+        <ul class="sidebar-nav">
+            <li><a href="#daily-reference">📋 Day-to-Day Fixes</a></li>
+            <li><a href="#troubleshooting">🔧 Troubleshooting</a></li>
+            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
         </ul>
     </aside>
 
@@ -2818,6 +2828,348 @@
                         <li>Loading too many apps (each app adds JS/CSS weight)</li>
                         <li>Ignoring browser console errors</li>
                         <li>Hardcoding text instead of using translations</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Day-to-Day Quick Reference -->
+            <section class="section" id="daily-reference">
+                <div class="section-header">
+                    <div class="section-number">📋</div>
+                    <h2>Day-to-Day Quick Reference</h2>
+                </div>
+
+                <div class="info-box info">
+                    <h4>🔧 Quick Fixes for Common Issues</h4>
+                    <p>These are problems you'll face almost every day. Know them by heart.</p>
+                </div>
+
+                <h3>🖼️ Image Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Image looks blurry</strong></td>
+                            <td>Low resolution or wrong aspect ratio</td>
+                            <td>Request 2x size from client (2000px for 1000px display). Use WebP format.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Image not loading</strong></td>
+                            <td>File too large or wrong format</td>
+                            <td>Compress with TinyPNG. Convert to WebP/JPG. Max 500KB per image.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Image stretching</strong></td>
+                            <td>Wrong aspect ratio in theme</td>
+                            <td>Check theme settings for aspect ratio. Use object-fit: cover in CSS.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Product images different sizes</strong></td>
+                            <td>Client uploaded inconsistent images</td>
+                            <td>Resize all to same ratio (1:1 or 3:4). Use Shopify's image resize URL params.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hero image not full width</strong></td>
+                            <td>Container has max-width</td>
+                            <td>Use full-width section or remove container constraints.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>📝 Text & Content Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Font not showing</strong></td>
+                            <td>Font not loaded or wrong name</td>
+                            <td>Check theme settings → Typography. Verify Google Font name is exact.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Text overlapping on mobile</strong></td>
+                            <td>Fixed width or absolute positioning</td>
+                            <td>Use responsive units (%, vw, rem). Test at 375px width.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Description shows HTML tags</strong></td>
+                            <td>Using wrong Liquid filter</td>
+                            <td>Use {{ product.description }} not {{ product.description | escape }}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Currency showing wrong</strong></td>
+                            <td>Store settings or wrong filter</td>
+                            <td>Settings → General → Currency. Use {{ price | money }} filter.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Product title cut off</strong></td>
+                            <td>Container too small</td>
+                            <td>Increase container width or use text-overflow: ellipsis with title attribute.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🛒 Cart & Checkout Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Add to Cart not working</strong></td>
+                            <td>JavaScript error or form issue</td>
+                            <td>Check console for errors. Verify product is available (not draft/out of stock).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cart drawer not opening</strong></td>
+                            <td>Theme JS broken or conflict</td>
+                            <td>Check for app conflicts. Try disabling apps one by one.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Checkout button missing</strong></td>
+                            <td>Checkout disabled or payment not set</td>
+                            <td>Settings → Payments. Ensure at least one payment method active.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Discount code not applying</strong></td>
+                            <td>Code expired or restrictions</td>
+                            <td>Check Discounts → verify dates, minimum order, customer eligibility.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shipping not calculating</strong></td>
+                            <td>Shipping zones not set</td>
+                            <td>Settings → Shipping → Add rates for customer's country.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>⚡ Performance Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Site loading slowly</strong></td>
+                            <td>Large images, too many apps</td>
+                            <td>Compress images, remove unused apps, defer non-critical JS.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PageSpeed under 50</strong></td>
+                            <td>Multiple issues</td>
+                            <td>1. Compress images 2. Remove unused apps 3. Use lazy loading 4. Minimize custom JS</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CLS issues (layout shift)</strong></td>
+                            <td>Images without dimensions</td>
+                            <td>Add width/height to img tags. Reserve space with aspect-ratio CSS.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LCP issues (slow paint)</strong></td>
+                            <td>Hero image too large</td>
+                            <td>Preload hero image. Use srcset for responsive images.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Third-party scripts slow</strong></td>
+                            <td>Apps loading synchronously</td>
+                            <td>Defer non-critical app scripts. Consider ditching slow apps.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>📱 Mobile-Specific Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Page zoomed in on mobile</strong></td>
+                            <td>Missing viewport meta</td>
+                            <td>Add: &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Horizontal scroll on mobile</strong></td>
+                            <td>Element wider than screen</td>
+                            <td>Find element with fixed width. Use max-width: 100% and overflow-x: hidden.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Buttons too small to tap</strong></td>
+                            <td>Touch target under 44px</td>
+                            <td>Minimum button size: 44px × 44px. Add padding if needed.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Menu not opening on mobile</strong></td>
+                            <td>Hamburger menu JS broken</td>
+                            <td>Check for JS errors. Verify data-attributes are correct.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sticky header covering content</strong></td>
+                            <td>No scroll padding</td>
+                            <td>Add scroll-padding-top equal to header height.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🔌 App Conflicts & Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>App widget not showing</strong></td>
+                            <td>App block not added or disabled</td>
+                            <td>Theme editor → Add app block. Or manually add app embed code.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Two apps conflicting</strong></td>
+                            <td>Both modifying same element</td>
+                            <td>Disable one, test. Contact app support. May need to choose one.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>App slowing down site</strong></td>
+                            <td>Heavy JavaScript or many requests</td>
+                            <td>Check in PageSpeed which scripts are slow. Remove or replace app.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>App leaving code after uninstall</strong></td>
+                            <td>App didn't clean up properly</td>
+                            <td>Search theme files for app name. Remove leftover snippets and includes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reviews not importing</strong></td>
+                            <td>API limits or format issues</td>
+                            <td>Check import format (CSV). Import in smaller batches. Contact app support.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🎨 Theme Editor Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Theme editor not loading</strong></td>
+                            <td>Browser cache or extension conflict</td>
+                            <td>Clear cache, try incognito mode, disable ad blockers.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Changes not saving</strong></td>
+                            <td>Session timeout or permissions</td>
+                            <td>Refresh page, log out and back in. Check you have edit permissions.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Section disappeared</strong></td>
+                            <td>Accidentally removed or template changed</td>
+                            <td>Check template selection. Use Undo or revert to previous version.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom CSS not applying</strong></td>
+                            <td>Specificity or cache</td>
+                            <td>Add !important (temporarily). Check if CSS file is loaded. Clear cache.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Preview link shows password page</strong></td>
+                            <td>Store is password protected</td>
+                            <td>Use preview link with password bypass, or temporarily disable password.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>📦 Product & Collection Issues</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Cause</th>
+                            <th>Quick Fix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Product not showing in collection</strong></td>
+                            <td>Wrong tags or manual collection</td>
+                            <td>Check collection conditions. Add correct tag or manually add product.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Variants not showing</strong></td>
+                            <td>Variant options not set up</td>
+                            <td>Products → Edit → Add variant options (Size, Color, etc.).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>"Sold Out" showing incorrectly</strong></td>
+                            <td>Inventory not tracked or zero</td>
+                            <td>Check product inventory settings. Update stock quantity.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Collection image not showing</strong></td>
+                            <td>No featured image set</td>
+                            <td>Collections → Edit → Add collection image.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Products in wrong order</strong></td>
+                            <td>Sort order not set</td>
+                            <td>Collection → Sort → Choose manual or automated sorting.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="info-box gold" style="margin-top: 30px;">
+                    <h4>⚡ Emergency Commands You Should Know</h4>
+                    <ul class="styled-list">
+                        <li><strong>Revert theme changes:</strong> Online Store → Themes → Actions → View theme versions
+                        </li>
+                        <li><strong>Disable password protection:</strong> Online Store → Preferences → Password
+                            protection</li>
+                        <li><strong>Check site status:</strong> Visit yourstore.myshopify.com/admin/online_store</li>
+                        <li><strong>Find broken pages:</strong> Check browser console (F12) for 404 errors</li>
+                        <li><strong>Quick site backup:</strong> Themes → Download theme file before major changes</li>
+                    </ul>
+                </div>
+
+                <div class="info-box success" style="margin-top: 20px;">
+                    <h4>✅ Daily Checklist Before Ending Work</h4>
+                    <ul class="styled-list check-list">
+                        <li>All changes tested on mobile (375px width)</li>
+                        <li>Browser console has no errors</li>
+                        <li>Theme backup exists before major changes</li>
+                        <li>PM/Client updated on progress</li>
+                        <li>Any blockers communicated in Slack</li>
+                        <li>Tomorrow's tasks clear in your mind</li>
                     </ul>
                 </div>
             </section>
