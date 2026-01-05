@@ -560,20 +560,33 @@
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
-        <div class="sidebar-section-title">Hiring Process</div>
+        <div class="sidebar-section-title">Hiring</div>
         <ul class="sidebar-nav">
             <li><a href="#hiring">📋 6-Step Hiring</a></li>
             <li><a href="#interviews">📝 Interview Questions</a></li>
             <li><a href="#joining-docs">📂 Joining Documents</a></li>
         </ul>
-        <div class="sidebar-section-title">New Hires</div>
+        <div class="sidebar-section-title">Onboarding</div>
         <ul class="sidebar-nav">
-            <li><a href="#onboarding">🎓 Day 1 Onboarding</a></li>
+            <li><a href="#onboarding">🎓 Day 1 Process</a></li>
+        </ul>
+        <div class="sidebar-section-title">Company Policies</div>
+        <ul class="sidebar-nav">
+            <li><a href="#attendance">⏰ Attendance</a></li>
+            <li><a href="#leave">📅 Leave Policy</a></li>
+            <li><a href="#salary">💰 Salary & Advances</a></li>
+            <li><a href="#communication">💬 Communication</a></li>
+            <li><a href="#confidentiality">🔒 Confidentiality</a></li>
+            <li><a href="#wfh">🏠 Work From Home</a></li>
+        </ul>
+        <div class="sidebar-section-title">Employee Lifecycle</div>
+        <ul class="sidebar-nav">
+            <li><a href="#performance">📊 Performance Reviews</a></li>
+            <li><a href="#offboarding">🚪 Offboarding</a></li>
         </ul>
         <div class="sidebar-section-title">Quick Reference</div>
         <ul class="sidebar-nav">
             <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
         </ul>
     </aside>
 
@@ -2574,6 +2587,346 @@
                     <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
                     <p style="font-size: 20px; color: #A78BFA; font-weight: 600;">"Today, I am building the team that
                         will build the future. Every interaction shapes our culture."</p>
+                </div>
+            </section>
+
+            <!-- Company Policies -->
+            <section class="section" id="policies">
+                <div class="section-header">
+                    <div class="section-number">📋</div>
+                    <h2>Company Policies</h2>
+                </div>
+
+                <h3 id="attendance">⏰ Attendance & Punctuality</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Policy</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Working Hours</strong></td>
+                            <td>9:00 AM - 6:00 PM (Mon-Sat), Fiverr Sales: 9 AM - 9 PM availability</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Late Arrival</strong></td>
+                            <td>After 9:15 AM = Half-day deduction. 3 late/month = verbal warning. 5+ = written warning
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Unexplained Absence</strong></td>
+                            <td>1 = written warning. 3 = 3-day salary deduction. 5+ = immediate termination</td>
+                        </tr>
+                        <tr>
+                            <td><strong>How to Report</strong></td>
+                            <td>Inform manager via WhatsApp/Discord before 9 AM. Apply in system within 24 hrs</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="leave">📅 Leave Policy</h3>
+                <div class="checklist-grid">
+                    <div class="checklist-card">
+                        <h4>Annual Leave Entitlement</h4>
+                        <ul class="styled-list">
+                            <li><strong>Casual Leave:</strong> 12 days/year</li>
+                            <li><strong>Sick Leave:</strong> 6 days/year</li>
+                            <li><strong>Earned Leave:</strong> 1 day/month after 1 year</li>
+                            <li><strong>National Holidays:</strong> ~10 days/year</li>
+                        </ul>
+                    </div>
+                    <div class="checklist-card">
+                        <h4>Leave Rules</h4>
+                        <ul class="styled-list">
+                            <li>Apply 3 days in advance (planned)</li>
+                            <li>Emergency: apply within 24 hrs</li>
+                            <li>No leave 25th-5th (month-end/start)</li>
+                            <li>No leave in first 2 months of joining</li>
+                            <li>Unused leaves don't carry forward</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 id="salary">💰 Salary & Advance Policy</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Payment Date</strong></td>
+                            <td>Last working day of month (bank transfer)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Advance Eligibility</strong></td>
+                            <td>After 3 months, max 50% of salary, genuine reason only</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recovery</strong></td>
+                            <td>Deducted equally over next 2 months</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Max Advances</strong></td>
+                            <td>2 per year</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salary Revision</strong></td>
+                            <td>Quarterly based on KPI achievement</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="communication">💬 Communication Policy</h3>
+                <div class="info-box danger">
+                    <h4>❌ CRITICAL RULE</h4>
+                    <p><strong>Ignoring messages from team/management = Immediate termination.</strong> No second
+                        chances.</p>
+                </div>
+                <table class="styled-table" style="margin-top: 15px;">
+                    <thead>
+                        <tr>
+                            <th>Message Type</th>
+                            <th>Response Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Client messages (Fiverr/WhatsApp)</td>
+                            <td>&lt;2 hours (business hours)</td>
+                        </tr>
+                        <tr>
+                            <td>Manager messages</td>
+                            <td>&lt;1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>Team member messages</td>
+                            <td>&lt;2 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency messages</td>
+                            <td>&lt;15 minutes</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="info-box warning" style="margin-top: 15px;">
+                    <h4>Poor Client Communication Penalty</h4>
+                    <ul class="styled-list">
+                        <li><strong>1st offense:</strong> ₹500 deduction + written warning</li>
+                        <li><strong>2nd offense:</strong> ₹1,000 deduction + final warning</li>
+                        <li><strong>3rd offense:</strong> Immediate termination</li>
+                    </ul>
+                </div>
+
+                <h3 id="confidentiality">🔒 Confidentiality & Data Security</h3>
+                <div class="info-box info">
+                    <h4>Confidential Information Includes:</h4>
+                    <ul class="styled-list">
+                        <li>Client data (contact info, business details, store access)</li>
+                        <li>Company financials and revenue data</li>
+                        <li>Salary information (yours and others')</li>
+                        <li>SOPs, processes, internal documents</li>
+                        <li>Upcoming launches, strategies, plans</li>
+                        <li>Source code, designs, proprietary work</li>
+                    </ul>
+                </div>
+
+                <div class="info-box danger" style="margin-top: 15px;">
+                    <h4>⚠️ Data Breach = Immediate Termination + Legal Action</h4>
+                    <ul class="styled-list">
+                        <li>No sharing client passwords outside work tools</li>
+                        <li>No discussing clients on social media</li>
+                        <li>No screenshots of internal docs without permission</li>
+                        <li>No discussing salary with other employees</li>
+                    </ul>
+                </div>
+
+                <h3 id="wfh">🏠 Work From Home Policy</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Policy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Eligibility</strong></td>
+                            <td>After completing 3-month probation + good performance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frequency</strong></td>
+                            <td>Max 2 days/week (non-consecutive), pre-approved by manager</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Requirements</strong></td>
+                            <td>Stable internet (10+ Mbps), available on Discord/Slack during hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Response Time</strong></td>
+                            <td>Must respond within 30 minutes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Not Allowed</strong></td>
+                            <td>First 2 months, peak project periods, client meetings</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Performance Reviews -->
+            <section class="section" id="performance">
+                <div class="section-header">
+                    <div class="section-number">📊</div>
+                    <h2>Performance Reviews</h2>
+                </div>
+
+                <h3>Performance Review Cycle</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Review Type</th>
+                            <th>When</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Probation Review</strong></td>
+                            <td>Month 3</td>
+                            <td>Decides confirmation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Quarterly Review</strong></td>
+                            <td>Every 3 months</td>
+                            <td>Track progress, address issues</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Annual Review</strong></td>
+                            <td>End of year</td>
+                            <td>Comprehensive + salary revision</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Evaluation Criteria</h3>
+                <div class="checklist-grid">
+                    <div class="checklist-card">
+                        <h4>📊 What We Evaluate</h4>
+                        <ul class="styled-list check-list">
+                            <li>KPI achievement</li>
+                            <li>Client satisfaction scores</li>
+                            <li>Quality of work</li>
+                            <li>Communication & collaboration</li>
+                            <li>Initiative & learning</li>
+                            <li>Attendance & punctuality</li>
+                        </ul>
+                    </div>
+                    <div class="checklist-card">
+                        <h4>⭐ Performance Ratings</h4>
+                        <ul class="styled-list">
+                            <li><strong>90-100%:</strong> 15-20% increment + bonus</li>
+                            <li><strong>75-89%:</strong> 10-15% increment</li>
+                            <li><strong>60-74%:</strong> 5-10% increment</li>
+                            <li><strong>40-59%:</strong> No increment, PIP</li>
+                            <li><strong>&lt;40%:</strong> Termination/demotion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box warning" style="margin-top: 20px;">
+                    <h4>Performance Improvement Plan (PIP)</h4>
+                    <ul class="styled-list">
+                        <li>Given if performance &lt;60%</li>
+                        <li>Duration: 30-60 days</li>
+                        <li>Weekly check-ins with manager</li>
+                        <li>Specific targets to achieve</li>
+                        <li><strong>Outcome:</strong> Improve or exit</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Offboarding -->
+            <section class="section" id="offboarding">
+                <div class="section-header">
+                    <div class="section-number">🚪</div>
+                    <h2>Resignation & Offboarding</h2>
+                </div>
+
+                <h3>Notice Period</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Employment Stage</th>
+                            <th>Notice Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>During Probation (0-3 months)</td>
+                            <td>7 days</td>
+                        </tr>
+                        <tr>
+                            <td>After Confirmation</td>
+                            <td>30 days</td>
+                        </tr>
+                        <tr>
+                            <td>Notice Buyout</td>
+                            <td>Negotiable (pay in lieu of notice)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Resignation Process</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time">Step 1: Submit Resignation</div>
+                        <p>Written resignation to manager & HR via email</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Step 2: Knowledge Transfer</div>
+                        <p>Complete handover checklist, train replacement, document processes</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Step 3: Exit Interview</div>
+                        <p>HR conducts feedback session, address any concerns</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Step 4: Asset Return</div>
+                        <p>Return laptop, phone, access cards, company property</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Step 5: Client Access Transfer</div>
+                        <p>Remove from all client accounts, transfer store access</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Step 6: Full & Final Settlement</div>
+                        <p>Processed within 30 days. Includes unpaid salary + leave encashment - deductions</p>
+                    </div>
+                </div>
+
+                <h3>Exit Documents Provided</h3>
+                <div class="info-box teal">
+                    <ul class="styled-list check-list">
+                        <li>Experience Letter</li>
+                        <li>Relieving Letter</li>
+                        <li>Service Certificate (if requested)</li>
+                        <li>Full & Final Statement</li>
+                    </ul>
+                </div>
+
+                <div class="info-box info" style="margin-top: 20px;">
+                    <h4>Post-Exit Reminders</h4>
+                    <ul class="styled-list">
+                        <li><strong>NDA continues:</strong> Confidentiality must be maintained</li>
+                        <li><strong>Non-compete:</strong> Applies for 6 months</li>
+                        <li><strong>Rehire:</strong> Possible if departure was amicable</li>
+                    </ul>
                 </div>
             </section>
 
