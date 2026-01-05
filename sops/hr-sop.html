@@ -540,6 +540,38 @@
             transform: translateX(3px);
         }
 
+        /* Two-column grid layout for compact sections */
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            padding: 5px 10px;
+            margin: 0 0 5px 0;
+        }
+
+        .sidebar-nav-grid a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 10px;
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            font-size: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            transition: all 0.15s ease;
+            border-left: none;
+        }
+
+        .sidebar-nav-grid a::after {
+            display: none;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: scale(1.02);
+        }
+
         .sidebar-section-title {
             display: flex;
             align-items: center;
@@ -595,27 +627,27 @@
             <li><a href="#step6-joining">6️⃣ Joining</a></li>
         </ul>
         <div class="sidebar-section-title">Interview Questions</div>
-        <ul class="sidebar-nav">
-            <li><a href="#int-pm">🎯 PM</a></li>
-            <li><a href="#int-dev">💻 Developer</a></li>
-            <li><a href="#int-sales">💰 Sales</a></li>
-            <li><a href="#int-designer">🎨 Designer</a></li>
-            <li><a href="#int-content">✍️ Content</a></li>
-            <li><a href="#joining-docs">📂 Joining Docs</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#int-pm">🎯 PM</a>
+            <a href="#int-dev">💻 Developer</a>
+            <a href="#int-sales">💰 Sales</a>
+            <a href="#int-designer">🎨 Designer</a>
+            <a href="#int-content">✍️ Content</a>
+            <a href="#joining-docs">📂 Joining Docs</a>
+        </div>
         <div class="sidebar-section-title">Onboarding</div>
         <ul class="sidebar-nav">
             <li><a href="#onboarding">🎓 Day 1 Process</a></li>
         </ul>
         <div class="sidebar-section-title">Company Policies</div>
-        <ul class="sidebar-nav">
-            <li><a href="#attendance">⏰ Attendance</a></li>
-            <li><a href="#leave">📅 Leave Policy</a></li>
-            <li><a href="#salary">💰 Salary & Advances</a></li>
-            <li><a href="#communication">💬 Communication</a></li>
-            <li><a href="#confidentiality">🔒 Confidentiality</a></li>
-            <li><a href="#wfh">🏠 Work From Home</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#attendance">⏰ Attendance</a>
+            <a href="#leave">📅 Leave</a>
+            <a href="#salary">💰 Salary</a>
+            <a href="#communication">💬 Comms</a>
+            <a href="#confidentiality">🔒 NDA</a>
+            <a href="#wfh">🏠 WFH</a>
+        </div>
         <div class="sidebar-section-title">Employee Lifecycle</div>
         <ul class="sidebar-nav">
             <li><a href="#performance">📊 Performance Reviews</a></li>
