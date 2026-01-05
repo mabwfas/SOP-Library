@@ -491,12 +491,12 @@
 
         .sidebar-search input {
             width: 100%;
-            padding: 8px 12px;
+            padding: 6px 10px;
             border: none;
-            border-radius: 6px;
+            border-radius: 5px;
             background: rgba(255, 255, 255, 0.2);
             color: white;
-            font-size: 12px;
+            font-size: 11px;
         }
 
         .sidebar-search input::placeholder {
@@ -506,15 +506,17 @@
         .sidebar-nav {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .sidebar-nav a {
             display: block;
-            padding: 7px 15px;
+            padding: 4px 12px;
             color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
-            font-size: 12px;
-            border-left: 3px solid transparent;
+            font-size: 11px;
+            border-left: 2px solid transparent;
+            line-height: 1.3;
         }
 
         .sidebar-nav a:hover {
@@ -523,10 +525,11 @@
         }
 
         .sidebar-section-title {
-            padding: 10px 15px 4px;
-            font-size: 10px;
+            padding: 6px 12px 2px;
+            font-size: 9px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.5);
+            margin-top: 4px;
         }
 
         .main-content {
@@ -569,10 +572,14 @@
             <li><a href="#step5-offer">5️⃣ Decision & Offer</a></li>
             <li><a href="#step6-joining">6️⃣ Joining</a></li>
         </ul>
-        <div class="sidebar-section-title">Hiring Resources</div>
+        <div class="sidebar-section-title">Interview Questions</div>
         <ul class="sidebar-nav">
-            <li><a href="#interviews">📝 Interview Questions</a></li>
-            <li><a href="#joining-docs">📂 Joining Documents</a></li>
+            <li><a href="#int-pm">🎯 PM</a></li>
+            <li><a href="#int-dev">💻 Developer</a></li>
+            <li><a href="#int-sales">💰 Sales</a></li>
+            <li><a href="#int-designer">🎨 Designer</a></li>
+            <li><a href="#int-content">✍️ Content</a></li>
+            <li><a href="#joining-docs">📂 Joining Docs</a></li>
         </ul>
         <div class="sidebar-section-title">Onboarding</div>
         <ul class="sidebar-nav">
@@ -1003,7 +1010,7 @@
                 </div>
 
                 <!-- PM Questions -->
-                <h3>🎯 Project Manager Questions</h3>
+                <h3 id="int-pm">🎯 Project Manager Questions</h3>
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -1055,7 +1062,7 @@
                 </div>
 
                 <!-- Developer Questions -->
-                <h3>💻 Developer + Client Success Questions</h3>
+                <h3 id="int-dev">💻 Developer + Client Success Questions</h3>
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -1109,7 +1116,7 @@
                 </div>
 
                 <!-- Sales Questions -->
-                <h3>💰 Fiverr Sales Executive Questions</h3>
+                <h3 id="int-sales">💰 Fiverr Sales Executive Questions</h3>
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -1160,7 +1167,7 @@
                 </div>
 
                 <!-- Designer Questions -->
-                <h3>🎨 UI/UX Designer Questions</h3>
+                <h3 id="int-designer">🎨 UI/UX Designer Questions</h3>
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -1209,7 +1216,7 @@
                 </div>
 
                 <!-- Content Writer Questions -->
-                <h3>✍️ Content Writer Questions</h3>
+                <h3 id="int-content">✍️ Content Writer Questions</h3>
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -2785,6 +2792,13 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <div class="info-box warning" style="margin-top: 15px;">
+                    <h4>⚠️ IMPORTANT: WFH is 100% Subject to Manager Approval</h4>
+                    <p><strong>WFH is NOT a right - it's a privilege.</strong> Every WFH request must be approved by
+                        your manager at least 1 day in advance. Manager can reject any WFH request without explanation.
+                        Abuse of WFH = permanent revocation of WFH privileges.</p>
+                </div>
             </section>
 
             <!-- Performance Reviews -->
