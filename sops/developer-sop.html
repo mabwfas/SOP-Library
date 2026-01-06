@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Heroes | Shopify Developer SOP</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
@@ -452,7 +454,7 @@
 
         /* SIDEBAR LAYOUT */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
             color: white;
             position: fixed;
@@ -554,11 +556,37 @@
             letter-spacing: 1px;
             color: rgba(255, 255, 255, 0.4);
             font-weight: 600;
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #FCD34D;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 8px 10px;
+        }
+
+        .sidebar-nav-grid a {
+            display: block;
+            padding: 6px 8px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(139, 92, 246, 0.3);
+            color: white;
         }
 
         .main-content {
             flex: 1;
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -591,32 +619,32 @@
         <div class="sidebar-search">
             <input type="text" id="searchInput" placeholder="🔍 Search..." onkeyup="searchSOP()">
         </div>
-        <div class="sidebar-section-title">Getting Started</div>
-        <ul class="sidebar-nav">
-            <li><a href="#standards">🚨 Code Standards</a></li>
-            <li><a href="#store-access">🔐 Store Access</a></li>
-        </ul>
-        <div class="sidebar-section-title">Build Process</div>
-        <ul class="sidebar-nav">
-            <li><a href="#theme-setup">1️⃣ Theme Setup</a></li>
-            <li><a href="#homepage">2️⃣ Homepage Sections</a></li>
-            <li><a href="#product-page">3️⃣ Product Page</a></li>
-            <li><a href="#speed">4️⃣ Speed Optimization</a></li>
-            <li><a href="#policies">5️⃣ Policy Pages</a></li>
-            <li><a href="#checkout">6️⃣ Checkout Setup</a></li>
-            <li><a href="#qa">7️⃣ QA Checklist</a></li>
-        </ul>
-        <div class="sidebar-section-title">Apps & Tools</div>
-        <ul class="sidebar-nav">
-            <li><a href="#essential-apps">📦 Essential Apps</a></li>
-            <li><a href="#chatgpt">🤖 ChatGPT Guide</a></li>
-        </ul>
-        <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#daily-reference">📋 Day-to-Day Fixes</a></li>
-            <li><a href="#troubleshooting">🔧 Troubleshooting</a></li>
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-        </ul>
+        <div class="sidebar-section-title">1️⃣ Getting Started</div>
+        <div class="sidebar-nav-grid">
+            <a href="#standards">🚨 Standards</a>
+            <a href="#store-access">🔐 Access</a>
+        </div>
+        <div class="sidebar-section-title">2️⃣ Build Process</div>
+        <div class="sidebar-nav-grid">
+            <a href="#theme-setup">🎨 Theme</a>
+            <a href="#homepage">🏠 Homepage</a>
+            <a href="#product-page">📦 Product</a>
+            <a href="#speed">⚡ Speed</a>
+            <a href="#policies">📋 Policies</a>
+            <a href="#checkout">💳 Checkout</a>
+            <a href="#qa">✅ QA Check</a>
+        </div>
+        <div class="sidebar-section-title">3️⃣ Apps & Tools</div>
+        <div class="sidebar-nav-grid">
+            <a href="#essential-apps">📦 Apps</a>
+            <a href="#chatgpt">🤖 ChatGPT</a>
+        </div>
+        <div class="sidebar-section-title">4️⃣ Quick Reference</div>
+        <div class="sidebar-nav-grid">
+            <a href="#daily-reference">📋 Fixes</a>
+            <a href="#troubleshooting">🔧 Debug</a>
+            <a href="#difficult-situations">⚠️ Difficult</a>
+        </div>
     </aside>
 
     <!-- Main Content -->
