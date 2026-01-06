@@ -451,7 +451,7 @@
 
         /* SIDEBAR */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #F59E0B 0%, #EA580C 100%);
             color: white;
             position: fixed;
@@ -536,10 +536,36 @@
             font-size: 10px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.5);
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #FCD34D;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 8px 10px;
+        }
+
+        .sidebar-nav-grid a {
+            display: block;
+            padding: 6px 8px;
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.25);
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(139, 92, 246, 0.3);
+            color: white;
         }
 
         .main-content {
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -569,27 +595,38 @@
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
-        <div class="sidebar-section-title">Delivery</div>
-        <ul class="sidebar-nav">
-            <li><a href="#delivery">1️⃣ Delivery Process</a></li>
-            <li><a href="#handover">2️⃣ Handover Checklist</a></li>
-            <li><a href="#reviews">3️⃣ Getting 5-Star Reviews</a></li>
-        </ul>
-        <div class="sidebar-section-title">Client Relations</div>
-        <ul class="sidebar-nav">
-            <li><a href="#support">4️⃣ Support Period</a></li>
-            <li><a href="#feedback">5️⃣ Client Feedback</a></li>
-            <li><a href="#upsell">6️⃣ Upsell Opportunities</a></li>
-        </ul>
-        <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
-        </ul>
-        <div class="sidebar-section-title">Resources</div>
-        <ul class="sidebar-nav">
-            <li><a href="#templates">📝 Message Templates</a></li>
-        </ul>
+        <div class="sidebar-section-title">1️⃣ Delivery & Reviews</div>
+        <div class="sidebar-nav-grid">
+            <a href="#delivery">📦 Delivery</a>
+            <a href="#reviews">⭐ Reviews</a>
+            <a href="#feedback">💬 Feedback</a>
+            <a href="#upsell">📈 Upsell</a>
+        </div>
+        <div class="sidebar-section-title">2️⃣ Client Relations</div>
+        <div class="sidebar-nav-grid">
+            <a href="#support">🛠️ Support</a>
+            <a href="#feedback">💬 Feedback</a>
+            <a href="#upsell">📈 Upsell</a>
+            <a href="#kpis">📊 KPIs</a>
+        </div>
+        <div class="sidebar-section-title">3️⃣ Scenarios</div>
+        <div class="sidebar-nav-grid">
+            <a href="#angry-client">😤 Angry</a>
+            <a href="#bad-review">⭐ Bad Review</a>
+            <a href="#cancel-mid-project">💸 Refund</a>
+            <a href="#scope-creep">🔄 Scope Creep</a>
+            <a href="#ghost-client">👻 Ghost</a>
+            <a href="#team-complaint">📢 Complaint</a>
+            <a href="#difficult-situations">😤 Difficult</a>
+            <a href="#inspiration">💪 Inspiration</a>
+        </div>
+        <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
+        <div class="sidebar-nav-grid">
+            <a href="#tools">🤖 Tools</a>
+            <a href="#troubleshooting">🐛 Issues</a>
+            <a href="#kpis">📊 KPIs</a>
+            <a href="#inspiration">💪 Inspiration</a>
+        </div>
     </aside>
 
     <div class="main-content">
@@ -1372,7 +1409,7 @@
                         messages > Proactive outreach.</p>
                 </div>
 
-                <h3>🔴 Angry Client Demanding Refund</h3>
+                <h3 id="angry-client">🔴 Angry Client Demanding Refund</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client is upset and threatening to dispute payment.</p>
                     <p><strong>Response:</strong> "I hear your frustration and I'm sorry you're experiencing this. Let
@@ -1382,7 +1419,7 @@
                         insist on refund.</p>
                 </div>
 
-                <h3>🔴 Client Complaining About Team Member</h3>
+                <h3 id="team-complaint">🔴 Client Complaining About Team Member</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client says developer/designer was rude or did bad work.</p>
                     <p><strong>Response:</strong> "I apologize for this experience. I'll investigate and ensure it
@@ -1390,7 +1427,7 @@
                     <p><strong>Rule:</strong> Never throw team under the bus. Handle internally after call.</p>
                 </div>
 
-                <h3>🔴 Client Wants Something Outside Scope for Free</h3>
+                <h3 id="scope-creep">🔴 Client Wants Something Outside Scope for Free</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client expects additional features not in original order.</p>
                     <p><strong>Response:</strong> "I'd love to help with that! That feature wasn't in our original
@@ -1398,7 +1435,7 @@
                     <p><strong>Rule:</strong> Be helpful but protect scope. Additional work = additional payment.</p>
                 </div>
 
-                <h3>🔴 Client Not Responding After Delivery</h3>
+                <h3 id="ghost-client">🔴 Client Not Responding After Delivery</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Project delivered but client isn't approving or responding.</p>
                     <p><strong>Response:</strong> Send sequence: Day 2: "Just checking in!" Day 5: "Want to make sure
@@ -1406,7 +1443,7 @@
                     <p><strong>Rule:</strong> Document all attempts. After 14 days, mark complete.</p>
                 </div>
 
-                <h3>🔴 Client Wants to Cancel Mid-Project</h3>
+                <h3 id="cancel-mid-project">🔴 Client Wants to Cancel Mid-Project</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client wants to stop work and get money back after we've started.</p>
                     <p><strong>Response:</strong> "I understand circumstances change. We've already completed [X work].
@@ -1415,7 +1452,7 @@
                     <p><strong>Rule:</strong> Offer pause option. Escalate to management for refund discussions.</p>
                 </div>
 
-                <h3>🔴 Client Leaving Negative Review</h3>
+                <h3 id="bad-review">🔴 Client Leaving Negative Review</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client threatens to or has left a bad review.</p>
                     <p><strong>Response:</strong> "I'm sorry we didn't meet your expectations. I'd like to make this
@@ -1445,7 +1482,7 @@
             </section>
 
             <!-- Motivation Section -->
-            <section class="section" id="motivation"
+            <section class="section" id="inspiration"
                 style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
                 <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
                     <div class="section-number">🌟</div>

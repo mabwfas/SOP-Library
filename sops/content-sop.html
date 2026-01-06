@@ -421,7 +421,7 @@
 
         /* SIDEBAR */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #6366F1 0%, #4F46E5 100%);
             color: white;
             position: fixed;
@@ -502,10 +502,36 @@
             font-size: 10px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.5);
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #FCD34D;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 8px 10px;
+        }
+
+        .sidebar-nav-grid a {
+            display: block;
+            padding: 6px 8px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(139, 92, 246, 0.3);
+            color: white;
         }
 
         .main-content {
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -535,24 +561,55 @@
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
-        <div class="sidebar-section-title">Core Content</div>
-        <ul class="sidebar-nav">
-            <li><a href="#fundamentals">1️⃣ Writing Fundamentals</a></li>
-            <li><a href="#product">2️⃣ Product Descriptions</a></li>
-            <li><a href="#homepage">3️⃣ Homepage Copy</a></li>
-            <li><a href="#about">4️⃣ About Us Pages</a></li>
-        </ul>
-        <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#daily-reference">📋 Day-to-Day Fixes</a></li>
-            <li><a href="#formulas">📝 Copywriting Formulas</a></li>
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-        </ul>
-        <div class="sidebar-section-title">Resources</div>
-        <ul class="sidebar-nav">
-            <li><a href="#tools">🤖 AI Tools</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
-        </ul>
+        <div class="sidebar-section-title">1️⃣ Writing Basics</div>
+        <div class="sidebar-nav-grid">
+            <a href="#fundamentals">📖 Laws</a>
+            <a href="#seo">🔍 SEO</a>
+            <a href="#seo-checklist">✅ Checklist</a>
+            <a href="#formulas">� Formulas</a>
+        </div>
+        <div class="sidebar-section-title">2️⃣ Product Writing</div>
+        <div class="sidebar-nav-grid">
+            <a href="#product">📦 Description</a>
+            <a href="#product">📝 Title</a>
+            <a href="#product">⭐ Benefits</a>
+            <a href="#product">🛒 CTA</a>
+        </div>
+        <div class="sidebar-section-title">3️⃣ Website Copy</div>
+        <div class="sidebar-nav-grid">
+            <a href="#homepage">🏠 Homepage</a>
+            <a href="#about">👥 About</a>
+        </div>
+        <div class="sidebar-section-title">4️⃣ Copywriting Formulas</div>
+        <div class="sidebar-nav-grid">
+            <a href="#formulas">📝 AIDA</a>
+            <a href="#formulas">🔥 PAS</a>
+            <a href="#formulas">🎯 FAB</a>
+            <a href="#formulas">💡 4Ps</a>
+        </div>
+        <div class="sidebar-section-title">5️⃣ Scenarios</div>
+        <div class="sidebar-nav-grid">
+            <a href="#rush-job">⏰ Rush Job</a>
+            <a href="#endless-revisions">🔄 Revisions</a>
+            <a href="#no-direction">❌ Bad Brief</a>
+            <a href="#wrong-tone">📢 Wrong Tone</a>
+            <a href="#reject-copy">🙅 Rejected</a>
+            <a href="#difficult-situations"> Difficult</a>
+            <a href="#troubleshooting">🐛 Issues</a>
+            <a href="#inspiration">💪 Inspiration</a>
+        </div>
+        <div class="sidebar-section-title">6️⃣ Tools & Resources</div>
+        <div class="sidebar-nav-grid">
+            <a href="#tools">🤖 ChatGPT</a>
+            <a href="#tools">📝 Grammarly</a>
+            <a href="#kpis">� KPIs</a>
+            <a href="#seo">� SEO</a>
+        </div>
+        <div class="sidebar-section-title">7️⃣ Quick Reference</div>
+        <div class="sidebar-nav-grid">
+            <a href="#daily-reference">📋 Day-to-Day</a>
+            <a href="#difficult-situations">⚠️ Difficult</a>
+        </div>
     </aside>
 
     <div class="main-content">
@@ -1616,7 +1673,7 @@
                         writing > Research & optimization.</p>
                 </div>
 
-                <h3>🔴 Client Rejects Your Copy</h3>
+                <h3 id="reject-copy">🔴 Client Rejects Your Copy</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client says "This doesn't sound like us."</p>
                     <p><strong>Response:</strong> "I appreciate the feedback. Can you point to specific phrases that
@@ -1625,7 +1682,7 @@
                     </p>
                 </div>
 
-                <h3>🔴 Client Provides No Direction</h3>
+                <h3 id="no-direction">🔴 Client Provides No Direction</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Brief is vague: "Just make it sound good."</p>
                     <p><strong>Response:</strong> "To write great copy, I need: Your target audience, desired tone, key
@@ -1633,7 +1690,7 @@
                     <p><strong>Rule:</strong> Never write blind. Get a proper brief or create one yourself.</p>
                 </div>
 
-                <h3>🔴 Tight Deadline, No Time for Research</h3>
+                <h3 id="rush-job">🔴 Tight Deadline, No Time for Research</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client needs copy tomorrow and you know nothing about the topic.</p>
                     <p><strong>Response:</strong> "I can meet this deadline. To ensure quality, please send: competitor
@@ -1641,7 +1698,7 @@
                     <p><strong>Rule:</strong> Set expectations. Fast and good requires client input.</p>
                 </div>
 
-                <h3>🔴 Client Wants to Use Jargon That Hurts Conversions</h3>
+                <h3 id="wrong-tone">🔴 Client Wants to Use Jargon That Hurts Conversions</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client insists on industry jargon their customers won't understand.
                     </p>
@@ -1650,7 +1707,7 @@
                     <p><strong>Rule:</strong> Educate with data. If they insist, document your recommendation.</p>
                 </div>
 
-                <h3>🔴 Endless Revision Requests</h3>
+                <h3 id="endless-revisions">🔴 Endless Revision Requests</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client keeps tweaking every sentence beyond revision rounds.</p>
                     <p><strong>Response:</strong> Route through PM: "We've completed the included revision rounds. I can
@@ -1688,7 +1745,7 @@
             </section>
 
             <!-- Motivation Section -->
-            <section class="section" id="motivation"
+            <section class="section" id="inspiration"
                 style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
                 <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
                     <div class="section-number">🌟</div>

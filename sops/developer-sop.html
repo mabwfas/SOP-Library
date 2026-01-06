@@ -623,27 +623,35 @@
         <div class="sidebar-nav-grid">
             <a href="#standards">🚨 Standards</a>
             <a href="#store-access">🔐 Access</a>
+            <a href="#theme-setup">🎨 Theme</a>
+            <a href="#qa">✅ QA</a>
         </div>
         <div class="sidebar-section-title">2️⃣ Build Process</div>
         <div class="sidebar-nav-grid">
-            <a href="#theme-setup">🎨 Theme</a>
             <a href="#homepage">🏠 Homepage</a>
             <a href="#product-page">📦 Product</a>
             <a href="#speed">⚡ Speed</a>
-            <a href="#policies">📋 Policies</a>
             <a href="#checkout">💳 Checkout</a>
-            <a href="#qa">✅ QA Check</a>
+            <a href="#policies">📋 Policies</a>
+            <a href="#apps">📦 Apps</a>
         </div>
-        <div class="sidebar-section-title">3️⃣ Apps & Tools</div>
+        <div class="sidebar-section-title">3️⃣ Scenarios</div>
         <div class="sidebar-nav-grid">
-            <a href="#essential-apps">📦 Apps</a>
+            <a href="#troubleshooting">🐌 Slow Site</a>
+            <a href="#production-bug">💥 Prod Bug</a>
+            <a href="#broken-theme">🔄 Theme Error</a>
+            <a href="#bad-assets">📷 Bad Assets</a>
+            <a href="#app-conflict">⚡ App Conflict</a>
+            <a href="#endless-revisions">🔄 Revisions</a>
+            <a href="#difficult-situations">😤 Difficult</a>
+            <a href="#inspiration">💪 Inspiration</a>
+        </div>
+        <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
+        <div class="sidebar-nav-grid">
             <a href="#chatgpt">🤖 ChatGPT</a>
-        </div>
-        <div class="sidebar-section-title">4️⃣ Quick Reference</div>
-        <div class="sidebar-nav-grid">
-            <a href="#daily-reference">📋 Fixes</a>
-            <a href="#troubleshooting">🔧 Debug</a>
-            <a href="#difficult-situations">⚠️ Difficult</a>
+            <a href="#debugging">🐛 Debug</a>
+            <a href="#snippets">📝 Snippets</a>
+            <a href="#daily-reference">📋 Day-to-Day</a>
         </div>
     </aside>
 
@@ -3235,7 +3243,7 @@
                         Communication > Deep work.</p>
                 </div>
 
-                <h3>🔴 Client's Theme is Heavily Customized/Broken</h3>
+                <h3 id="broken-theme">🔴 Client's Theme is Heavily Customized/Broken</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Previous developer left messy code, theme is unstable.</p>
                     <p><strong>Response:</strong> Document issues found, inform PM of risks. Recommend cleanup before
@@ -3244,7 +3252,7 @@
                     <p><strong>Rule:</strong> Never promise results on broken foundations. CYA with documentation.</p>
                 </div>
 
-                <h3>🔴 Feature Request is Technically Impossible</h3>
+                <h3 id="impossible-feature">🔴 Feature Request is Technically Impossible</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client wants something Shopify can't do (e.g., real-time inventory
                         across platforms).</p>
@@ -3253,7 +3261,7 @@
                     <p><strong>Rule:</strong> Always provide alternatives. Never just say "can't be done."</p>
                 </div>
 
-                <h3>🔴 Client Provides Wrong/Incomplete Assets</h3>
+                <h3 id="bad-assets">🔴 Client Provides Wrong/Incomplete Assets</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Images are low-res, logos are JPG not SVG, files are missing.</p>
                     <p><strong>Response:</strong> Create a specific asset checklist: "Please provide: Logo in SVG
@@ -3262,7 +3270,7 @@
                         received.</p>
                 </div>
 
-                <h3>🔴 Changes Broke Something in Production</h3>
+                <h3 id="production-bug">🔴 Changes Broke Something in Production</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> After deploying, something stopped working on the live site.</p>
                     <p><strong>Response:</strong> Immediately revert to backup/previous version. Document what happened.
@@ -3271,7 +3279,7 @@
                     </p>
                 </div>
 
-                <h3>🔴 Client Wants Unlimited Revisions</h3>
+                <h3 id="endless-revisions">🔴 Client Wants Unlimited Revisions</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client keeps requesting "one more small change" endlessly.</p>
                     <p><strong>Response:</strong> Route to PM: "This is outside our agreed scope. PM will discuss
@@ -3279,7 +3287,7 @@
                     <p><strong>Rule:</strong> Developers don't negotiate scope. Push to PM for scope discussions.</p>
                 </div>
 
-                <h3>🔴 Third-Party App Causing Conflicts</h3>
+                <h3 id="app-conflict">🔴 Third-Party App Causing Conflicts</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client's installed app is breaking your custom code.</p>
                     <p><strong>Response:</strong> Document the conflict with screenshots. Recommend removing the
@@ -3309,7 +3317,7 @@
             </section>
 
             <!-- Motivation Section -->
-            <section class="section" id="motivation"
+            <section class="section" id="inspiration"
                 style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
                 <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
                     <div class="section-number">🌟</div>

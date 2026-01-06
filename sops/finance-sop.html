@@ -383,7 +383,7 @@
 
         /* SIDEBAR */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #059669 0%, #047857 100%);
             color: white;
             position: fixed;
@@ -464,10 +464,36 @@
             font-size: 10px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.5);
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #FCD34D;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 8px 10px;
+        }
+
+        .sidebar-nav-grid a {
+            display: block;
+            padding: 6px 8px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(139, 92, 246, 0.3);
+            color: white;
         }
 
         .main-content {
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -497,24 +523,40 @@
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
-        <div class="sidebar-section-title">Core Processes</div>
-        <ul class="sidebar-nav">
-            <li><a href="#payment-policy">1️⃣ Payment Policy</a></li>
-            <li><a href="#invoicing">2️⃣ Invoicing</a></li>
-            <li><a href="#tracking">3️⃣ Payment Tracking</a></li>
-            <li><a href="#refunds">4️⃣ Refunds & Disputes</a></li>
-        </ul>
-        <div class="sidebar-section-title">Management</div>
-        <ul class="sidebar-nav">
-            <li><a href="#expenses">5️⃣ Expense Management</a></li>
-            <li><a href="#payroll">6️⃣ Payroll</a></li>
-            <li><a href="#reports">7️⃣ Monthly Reports</a></li>
-        </ul>
-        <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
-        </ul>
+        <div class="sidebar-section-title">1️⃣ Core Processes</div>
+        <div class="sidebar-nav-grid">
+            <a href="#payment-policy">💳 Payment</a>
+            <a href="#invoicing">📄 Invoicing</a>
+            <a href="#tracking">📊 Tracking</a>
+            <a href="#refunds">🔄 Refunds</a>
+        </div>
+        <div class="sidebar-section-title">2️⃣ Management</div>
+        <div class="sidebar-nav-grid">
+            <a href="#expenses">💸 Expenses</a>
+            <a href="#payroll">💰 Payroll</a>
+            <a href="#reports">📋 Reports</a>
+            <a href="#cashflow">📈 Cash Flow</a>
+            <a href="#reconciliation">🔄 Reconcile</a>
+            <a href="#kpis">📊 KPIs</a>
+        </div>
+        <div class="sidebar-section-title">3️⃣ Scenarios</div>
+        <div class="sidebar-nav-grid">
+            <a href="#late-pay">⏰ Late Pay</a>
+            <a href="#refund-request">🔄 Refund</a>
+            <a href="#dispute">❌ Dispute</a>
+            <a href="#cash-emergency">📉 Cash Crisis</a>
+            <a href="#discrepancy">💳 Discrepancy</a>
+            <a href="#expense-issue">🤷 Expense</a>
+            <a href="#difficult-situations">😤 Difficult</a>
+            <a href="#inspiration">💪 Inspiration</a>
+        </div>
+        <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
+        <div class="sidebar-nav-grid">
+            <a href="#tools">🤖 Tools</a>
+            <a href="#chatgpt">🤖 ChatGPT</a>
+            <a href="#troubleshooting">🐛 Issues</a>
+            <a href="#kpis">📊 KPIs</a>
+        </div>
     </aside>
 
     <div class="main-content">
@@ -1532,7 +1574,7 @@
                         (invoices) > Cash out (payments) > Reporting.</p>
                 </div>
 
-                <h3>🔴 Client Disputes Invoice</h3>
+                <h3 id="dispute">🔴 Client Disputes Invoice</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client says amount is wrong or refuses to pay.</p>
                     <p><strong>Response:</strong> "Let me pull up the project scope and payment agreements. I'll send
@@ -1540,7 +1582,7 @@
                     <p><strong>Rule:</strong> Always have documentation. Never argue — show the paperwork.</p>
                 </div>
 
-                <h3>🔴 Payment is Overdue</h3>
+                <h3 id="late-pay">🔴 Payment is Overdue</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client exceeded payment terms and hasn't paid.</p>
                     <p><strong>Response:</strong> Escalate reminders: Day 3: Friendly reminder. Day 7: Formal notice.
@@ -1548,7 +1590,7 @@
                     <p><strong>Rule:</strong> Follow the sequence. Document every outreach attempt.</p>
                 </div>
 
-                <h3>🔴 Expense Without Approval</h3>
+                <h3 id="expense-issue">🔴 Expense Without Approval</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Team member made purchase without following approval process.</p>
                     <p><strong>Response:</strong> Document the expense, inform their manager. Remind them of the
@@ -1556,7 +1598,7 @@
                     <p><strong>Rule:</strong> Process exists for a reason. Enforce it consistently.</p>
                 </div>
 
-                <h3>🔴 Client Requests Refund After Work Delivered</h3>
+                <h3 id="refund-request">🔴 Client Requests Refund After Work Delivered</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Work is complete, client wants money back.</p>
                     <p><strong>Response:</strong> "I understand you're not satisfied. Our terms state that completed
@@ -1566,7 +1608,7 @@
                         alone.</p>
                 </div>
 
-                <h3>🔴 Discrepancy in Bank Reconciliation</h3>
+                <h3 id="discrepancy">🔴 Discrepancy in Bank Reconciliation</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Records don't match bank statement.</p>
                     <p><strong>Response:</strong> Don't panic. Check: pending transactions, duplicate entries, timing
@@ -1575,7 +1617,7 @@
                     <p><strong>Rule:</strong> Investigate thoroughly. Never hide or "adjust" unexplained amounts.</p>
                 </div>
 
-                <h3>🔴 Cash Flow Emergency</h3>
+                <h3 id="cash-emergency">🔴 Cash Flow Emergency</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Not enough funds to cover upcoming expenses.</p>
                     <p><strong>Response:</strong> Alert management immediately with: Current balance, upcoming
@@ -1603,7 +1645,7 @@
             </section>
 
             <!-- Motivation Section -->
-            <section class="section" id="motivation"
+            <section class="section" id="inspiration"
                 style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
                 <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
                     <div class="section-number">🌟</div>

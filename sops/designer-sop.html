@@ -496,7 +496,7 @@
 
         /* SIDEBAR */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #EC4899 0%, #8B5CF6 100%);
             color: white;
             position: fixed;
@@ -581,10 +581,36 @@
             font-size: 10px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.5);
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #FCD34D;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 8px 10px;
+        }
+
+        .sidebar-nav-grid a {
+            display: block;
+            padding: 6px 8px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(139, 92, 246, 0.3);
+            color: white;
         }
 
         .main-content {
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -614,24 +640,38 @@
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
-        <div class="sidebar-section-title">Design Foundations</div>
-        <ul class="sidebar-nav">
-            <li><a href="#principles">🚨 Design Principles</a></li>
-            <li><a href="#brand-styling">1️⃣ Brand Styling</a></li>
-            <li><a href="#typography">2️⃣ Typography</a></li>
-            <li><a href="#colors">3️⃣ Color Systems</a></li>
-        </ul>
-        <div class="sidebar-section-title">Implementation</div>
-        <ul class="sidebar-nav">
-            <li><a href="#layout">4️⃣ Layout & Spacing</a></li>
-            <li><a href="#imagery">5️⃣ Imagery</a></li>
-            <li><a href="#mobile">6️⃣ Mobile Design</a></li>
-        </ul>
-        <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
-        </ul>
+        <div class="sidebar-section-title">1️⃣ Foundations</div>
+        <div class="sidebar-nav-grid">
+            <a href="#principles">🚨 Principles</a>
+            <a href="#brand-styling">🎨 Brand</a>
+            <a href="#typography">📝 Typography</a>
+            <a href="#color-theory">🌈 Colors</a>
+        </div>
+        <div class="sidebar-section-title">2️⃣ Design Areas</div>
+        <div class="sidebar-nav-grid">
+            <a href="#layout">📐 Layout</a>
+            <a href="#mobile">📱 Mobile</a>
+            <a href="#trust">🛡️ Trust</a>
+            <a href="#checklist">✅ Checklist</a>
+        </div>
+        <div class="sidebar-section-title">3️⃣ Scenarios</div>
+        <div class="sidebar-nav-grid">
+            <a href="#bad-brief">❌ Bad Brief</a>
+            <a href="#endless-revisions">🔄 Revisions</a>
+            <a href="#own-design">🎨 Own Design</a>
+            <a href="#wont-convert">📉 No Convert</a>
+            <a href="#too-many-cooks">👥 Many Cooks</a>
+            <a href="#all-disapprove">🙅 Not Like</a>
+            <a href="#difficult-situations">😤 Difficult</a>
+            <a href="#inspiration">💪 Inspiration</a>
+        </div>
+        <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
+        <div class="sidebar-nav-grid">
+            <a href="#figma">🎨 Figma</a>
+            <a href="#chatgpt">🤖 AI Tools</a>
+            <a href="#tools">📸 Photoshop</a>
+            <a href="#review-checklist">✅ Review</a>
+        </div>
     </aside>
 
     <div class="main-content">
@@ -1889,7 +1929,7 @@
                     designs > Personal growth.</p>
             </div>
 
-            <h3>🔴 Client Says "I'll Know It When I See It"</h3>
+            <h3 id="bad-brief">🔴 Client Says "I'll Know It When I See It"</h3>
             <div class="info-box danger">
                 <p><strong>Situation:</strong> Client can't articulate what they want, expects you to read their mind.
                 </p>
@@ -1898,7 +1938,7 @@
                 <p><strong>Rule:</strong> Always use mood boards and examples. Never design blind.</p>
             </div>
 
-            <h3>🔴 Client Wants to Use Their Own "Design"</h3>
+            <h3 id="own-design">🔴 Client Wants to Use Their Own "Design"</h3>
             <div class="info-box warning">
                 <p><strong>Situation:</strong> Client provides a terrible sketch/mockup and wants you to implement it
                     exactly.</p>
@@ -1908,7 +1948,7 @@
                 <p><strong>Rule:</strong> Educate gently, but document if they insist on bad design.</p>
             </div>
 
-            <h3>🔴 Too Many Cooks (Multiple Stakeholders)</h3>
+            <h3 id="too-many-cooks">🔴 Too Many Cooks (Multiple Stakeholders)</h3>
             <div class="info-box danger">
                 <p><strong>Situation:</strong> Client has partner/spouse/friend all giving conflicting feedback.</p>
                 <p><strong>Response:</strong> "I'm receiving different feedback from multiple people. Could you
@@ -1917,7 +1957,7 @@
                 </p>
             </div>
 
-            <h3>🔴 Client Wants Design That Won't Convert</h3>
+            <h3 id="wont-convert">🔴 Client Wants Design That Won't Convert</h3>
             <div class="info-box warning">
                 <p><strong>Situation:</strong> Client insists on busy design, hidden CTAs, or poor UX choices.</p>
                 <p><strong>Response:</strong> "I want to share some data: [stat about conversion]. Your current request
@@ -1925,7 +1965,7 @@
                 <p><strong>Rule:</strong> Advise with data. If they insist, document your recommendation.</p>
             </div>
 
-            <h3>🔴 Endless Revision Requests</h3>
+            <h3 id="endless-revisions">🔴 Endless Revision Requests</h3>
             <div class="info-box warning">
                 <p><strong>Situation:</strong> Client keeps asking for "just one more tweak" beyond revision rounds.</p>
                 <p><strong>Response:</strong> Route through PM: "We've completed the included revisions. I'll check with
@@ -1933,7 +1973,7 @@
                 <p><strong>Rule:</strong> Track revisions. Additional rounds = additional quote.</p>
             </div>
 
-            <h3>🔴 Client Disapproves of Everything</h3>
+            <h3 id="all-disapprove">🔴 Client Disapproves of Everything</h3>
             <div class="info-box danger">
                 <p><strong>Situation:</strong> Nothing you show is ever right. Client always negative.</p>
                 <p><strong>Response:</strong> "Help me understand: What specific elements aren't working? Can you show
@@ -1961,7 +2001,7 @@
         </section>
 
         <!-- Motivation Section -->
-        <section class="section" id="motivation"
+        <section class="section" id="inspiration"
             style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
             <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
                 <div class="section-number">🌟</div>

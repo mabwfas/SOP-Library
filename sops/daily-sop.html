@@ -32,7 +32,7 @@
 
         /* Sidebar */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
             color: white;
             position: fixed;
@@ -82,36 +82,36 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             opacity: 0.5;
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #FCD34D;
         }
 
-        .sidebar-nav {
-            list-style: none;
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 8px 15px;
         }
 
-        .sidebar-nav li a {
+        .sidebar-nav-grid a {
             display: block;
-            padding: 12px 20px;
+            padding: 8px 10px;
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
-            font-size: 0.9em;
-            transition: all 0.3s;
-            border-left: 3px solid transparent;
+            font-size: 0.85em;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s;
+            text-align: center;
         }
 
-        .sidebar-nav li a:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-left-color: #A78BFA;
+        .sidebar-nav-grid a:hover {
+            background: rgba(167, 139, 250, 0.3);
             color: white;
         }
 
-        .sidebar-nav li a.active {
-            background: rgba(167, 139, 250, 0.15);
-            border-left-color: #A78BFA;
-            color: #A78BFA;
-        }
-
         .main-content {
-            margin-left: 280px;
+            margin-left: 320px;
         }
 
         .container {
@@ -400,17 +400,24 @@
 
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
 
-        <div class="sidebar-section-title">Quick Navigation</div>
-        <ul class="sidebar-nav">
-            <li><a href="#overview">📖 Overview</a></li>
-            <li><a href="#daily-routine">🌅 Daily Routine</a></li>
-            <li><a href="#communication">💬 Communication Rules</a></li>
-            <li><a href="#using-sops">📚 Using SOPs</a></li>
-            <li><a href="#time-management">⏰ Time Management</a></li>
-            <li><a href="#tools">🛠️ Daily Tools</a></li>
-            <li><a href="#reporting">📊 Daily Reporting</a></li>
-            <li><a href="#motivation">🌟 Daily Motivation</a></li>
-        </ul>
+        <div class="sidebar-section-title">1️⃣ Daily Routine</div>
+        <div class="sidebar-nav-grid">
+            <a href="#overview">📖 Overview</a>
+            <a href="#daily-routine">🌅 Routine</a>
+            <a href="#communication">💬 Comms</a>
+            <a href="#role-sops">👤 Roles</a>
+        </div>
+        <div class="sidebar-section-title">2️⃣ Resources</div>
+        <div class="sidebar-nav-grid">
+            <a href="#using-sops">📚 SOPs</a>
+            <a href="#time-management">⏰ Time</a>
+            <a href="#tools">🛠️ Tools</a>
+            <a href="#reporting">📊 Reports</a>
+        </div>
+        <div class="sidebar-section-title">3️⃣ Quick Reference</div>
+        <div class="sidebar-nav-grid">
+            <a href="#inspiration">🌟 Inspiration</a>
+        </div>
     </aside>
 
     <!-- Main Content -->
@@ -1015,7 +1022,7 @@
             </section>
 
             <!-- Motivation Section -->
-            <section class="section" id="motivation"
+            <section class="section" id="inspiration"
                 style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
                 <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
                     <div class="section-number">🌟</div>
