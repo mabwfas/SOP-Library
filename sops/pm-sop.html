@@ -566,7 +566,7 @@
 
         /* SIDEBAR LAYOUT */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #1E3A5F 0%, #0F2439 100%);
             color: white;
             position: fixed;
@@ -662,21 +662,53 @@
         .sidebar-nav a:hover {
             background: rgba(255, 255, 255, 0.1);
             color: white;
-            border-left-color: var(--primary);
+            border-left-color: #FCD34D;
+        }
+
+        /* Two-column grid layout for compact sections */
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            padding: 5px 12px;
+            margin: 0 0 8px 0;
+        }
+
+        .sidebar-nav-grid a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 8px;
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            font-size: 11px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: scale(1.02);
         }
 
         .sidebar-section-title {
-            padding: 10px 15px 4px 15px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px 6px;
             font-size: 10px;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: rgba(255, 255, 255, 0.4);
-            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.95);
+            background: rgba(0, 0, 0, 0.15);
+            margin-top: 8px;
+            border-left: 3px solid #FCD34D;
         }
 
         .main-content {
             flex: 1;
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -730,33 +762,34 @@
         </div>
 
         <div class="sidebar-section-title">Getting Started</div>
-        <ul class="sidebar-nav">
-            <li><a href="#principles">🚨 Core Principles</a></li>
-            <li><a href="#onboarding">1️⃣ Client Onboarding</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#principles">🚨 Principles</a>
+            <a href="#onboarding">1️⃣ Onboarding</a>
+        </div>
 
         <div class="sidebar-section-title">Project Workflow</div>
-        <ul class="sidebar-nav">
-            <li><a href="#timeline">2️⃣ 14-Day Timeline</a></li>
-            <li><a href="#live-calls">📞 Live Revision Calls</a></li>
-            <li><a href="#communication">3️⃣ Communication</a></li>
-            <li><a href="#assets">4️⃣ Asset Collection</a></li>
-            <li><a href="#revisions">5️⃣ Revision Policy</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#timeline">📅 Timeline</a>
+            <a href="#live-calls">📞 Calls</a>
+            <a href="#communication">💬 Comms</a>
+            <a href="#assets">📂 Assets</a>
+            <a href="#revisions">🔄 Revisions</a>
+            <a href="#scenarios">🎯 Scenarios</a>
+        </div>
 
         <div class="sidebar-section-title">Completion</div>
-        <ul class="sidebar-nav">
-            <li><a href="#escalation">6️⃣ Escalation</a></li>
-            <li><a href="#handover">7️⃣ Handover</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#escalation">⬆️ Escalate</a>
+            <a href="#handover">✅ Handover</a>
+            <a href="#kpis">📊 KPIs</a>
+            <a href="#difficult-situations">⚠️ Difficult</a>
+        </div>
 
         <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#troubleshooting">🔧 Troubleshooting</a></li>
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-            <li><a href="#chatgpt">🤖 ChatGPT Prompts</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#troubleshooting">🔧 Debug</a>
+            <a href="#chatgpt">🤖 ChatGPT</a>
+        </div>
     </aside>
 
     <!-- Main Content -->
@@ -1613,6 +1646,180 @@
 
                     <p>Questions? I'm here.</p>
                 </div>
+            </section>
+
+            <!-- Specific PM Scenarios -->
+            <section class="section" id="scenarios">
+                <div class="section-header">
+                    <div class="section-number">🎯</div>
+                    <h2>Specific PM Scenarios & Scripts</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>💡 These are REAL scenarios. Use these EXACT scripts.</h4>
+                    <p>Every PM will face these situations. Having the right words ready prevents panic and maintains
+                        professionalism.</p>
+                </div>
+
+                <!-- Scenario 1 -->
+                <h3>📍 Scenario 1: Client Asks for FREE Extra Work</h3>
+                <div class="story-box">
+                    <p><strong>CLIENT SAYS:</strong> "Can you also add a blog page and integrate Mailchimp? Should be
+                        quick."</p>
+
+                    <p style="margin-top: 15px;"><strong>❌ WRONG RESPONSE:</strong> "Sure, no problem!" (Never say
+                        this!)</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
+                    <p>"Absolutely! Blog + Mailchimp integration sounds great for your business.
+
+                        Just to clarify - our current scope covers [list original scope]. Blog + Mailchimp would be
+                        additional work.
+
+                        I can get this done for you! Here are the options:
+                        1️⃣ Add to current project: +$XXX (delivery extends by 2 days)
+                        2️⃣ As a separate project after launch: $XXX (1-week turnaround)
+
+                        Which works better for you?"</p>
+
+                    <div class="moral">
+                        <strong>KEY PRINCIPLE:</strong> Never flat-out say "no". Always offer a "yes, and here's how"
+                        with clear pricing.
+                    </div>
+                </div>
+
+                <!-- Scenario 2 -->
+                <h3>📍 Scenario 2: Client is Completely Unresponsive (3+ Days)</h3>
+                <div class="story-box">
+                    <p><strong>SITUATION:</strong> You've sent messages, client hasn't replied. Project is stuck.</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ DAY 3 MESSAGE:</strong></p>
+                    <p>"Hi [Name], just checking in! Haven't heard from you since [date]. No rush - I wanted to make
+                        sure everything's okay on your end. Once you're ready, we can continue. Let me know!"</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ DAY 5 MESSAGE:</strong></p>
+                    <p>"Hi [Name], following up again. I want to keep your project on track! Is there a better time/way
+                        to reach you? I'm here whenever you're ready."</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ DAY 7 MESSAGE (Final):</strong></p>
+                    <p>"Hi [Name], I haven't been able to reach you for 7 days. As per our policy, projects paused for
+                        7+ days may need re-scheduling. Please reply when you can so we can resume. If I don't hear back
+                        by [date], I'll put the project on hold and we can restart when you're available."</p>
+
+                    <div class="moral">
+                        <strong>ESCALATION:</strong> At Day 5, inform GM. At Day 10 with no response, project goes to
+                        hold status.
+                    </div>
+                </div>
+
+                <!-- Scenario 3 -->
+                <h3>📍 Scenario 3: Client Hates the Design (Major Revision)</h3>
+                <div class="story-box">
+                    <p><strong>CLIENT SAYS:</strong> "This is not what I wanted at all. Start over."</p>
+
+                    <p style="margin-top: 15px;"><strong>❌ WRONG RESPONSE:</strong> "Okay, I'll redo everything" OR
+                        "This is what you asked for!"</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
+                    <p>"I completely understand - getting the design right is my top priority. Let me make sure I
+                        understand exactly what you're looking for.
+
+                        Can you help me with:
+                        1️⃣ What specific elements don't match your vision? (Colors, layout, style?)
+                        2️⃣ Can you share 2-3 examples of designs you love?
+                        3️⃣ What should the overall "feel" be? (Modern? Luxury? Minimalist?)
+
+                        Once I understand this, I'll create a revised concept that nails your vision."</p>
+
+                    <div class="moral">
+                        <strong>NEVER:</strong> Get defensive. <strong>ALWAYS:</strong> Ask clarifying questions to
+                        understand the real issue.
+                    </div>
+                </div>
+
+                <!-- Scenario 4 -->
+                <h3>📍 Scenario 4: Client Asks "When Will This Be Done?" Mid-Project</h3>
+                <div class="story-box">
+                    <p><strong>SITUATION:</strong> Client is anxious about timeline.</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
+                    <p>"Great question! Here's exactly where we stand:
+
+                        ✅ COMPLETED: [List completed items]
+                        🔄 IN PROGRESS: [Current work]
+                        📋 REMAINING: [What's left]
+
+                        Based on this, your store will be ready for review by [Date].
+
+                        You'll receive:
+                        - [Day X]: First draft for review
+                        - [Day Y]: Revisions implemented
+                        - [Day Z]: Final delivery
+
+                        Does this timeline work for you?"</p>
+
+                    <div class="moral">
+                        <strong>PROACTIVE TIP:</strong> Send this update WITHOUT being asked every 3 days to prevent the
+                        question.
+                    </div>
+                </div>
+
+                <!-- Scenario 5 -->
+                <h3>📍 Scenario 5: Client Wants to Talk on Call Instead of Messages</h3>
+                <div class="story-box">
+                    <p><strong>CLIENT SAYS:</strong> "Can we jump on a quick call to discuss?"</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
+                    <p>"Of course! I'm happy to connect.
+
+                        Before we schedule, could you share the main points you'd like to cover? This helps me prepare
+                        and make our call efficient.
+
+                        I'm available:
+                        - [Time slot 1]
+                        - [Time slot 2]
+
+                        Which works for you? And what's the best number to reach you?"</p>
+
+                    <p style="margin-top: 15px;"><strong>🎯 AFTER THE CALL - ALWAYS:</strong></p>
+                    <p>Send a summary message: "Great call! Just confirming what we discussed: [List all points]. Let me
+                        know if I missed anything!"</p>
+
+                    <div class="moral">
+                        <strong>GOLDEN RULE:</strong> All decisions must be documented in writing. Verbal agreements are
+                        NOT agreements.
+                    </div>
+                </div>
+
+                <!-- Scenario 6 -->
+                <h3>📍 Scenario 6: Client Compares to Competitor's Pricing</h3>
+                <div class="story-box">
+                    <p><strong>CLIENT SAYS:</strong> "Another agency quoted me $200 less for the same work."</p>
+
+                    <p style="margin-top: 15px;"><strong>❌ WRONG RESPONSE:</strong> "We can match that price" OR "Then
+                        go with them"</p>
+
+                    <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
+                    <p>"I appreciate you sharing that! You're absolutely right to compare options.
+
+                        Here's what you get with Digital Heroes that others may not include:
+                        ✅ [Speed guarantee - 14-day delivery]
+                        ✅ [Unlimited revisions within scope]
+                        ✅ [Free 1:1 training session]
+                        ✅ [30-day post-launch support]
+                        ✅ [Mobile optimization included]
+
+                        Many agencies quote lower but charge extra for these later.
+
+                        If budget is a concern, I can suggest a scaled-down version that fits your needs. Would that
+                        help?"</p>
+
+                    <div class="moral">
+                        <strong>NEVER:</strong> Discount without approval from GM. <strong>INSTEAD:</strong> Highlight
+                        value and offer alternatives.
+                    </div>
+                </div>
+
             </section>
 
             <!-- Handover -->
