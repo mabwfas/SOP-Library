@@ -404,7 +404,7 @@
 
         /* SIDEBAR */
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #E11D48 0%, #BE123C 100%);
             color: white;
             position: fixed;
@@ -477,18 +477,52 @@
 
         .sidebar-nav a:hover {
             background: rgba(255, 255, 255, 0.1);
-            border-left-color: white;
+            border-left-color: #FCD34D;
+        }
+
+        /* Two-column grid layout for compact sections */
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            padding: 5px 12px;
+            margin: 0 0 8px 0;
+        }
+
+        .sidebar-nav-grid a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 8px;
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            font-size: 11px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: scale(1.02);
         }
 
         .sidebar-section-title {
-            padding: 10px 15px 4px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px 6px;
             font-size: 10px;
+            font-weight: 700;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.95);
+            background: rgba(0, 0, 0, 0.15);
+            margin-top: 8px;
+            border-left: 3px solid #FCD34D;
         }
 
         .main-content {
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -519,27 +553,24 @@
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
         <div class="sidebar-section-title">Strategy</div>
-        <ul class="sidebar-nav">
-            <li><a href="#platforms">1️⃣ Platform Strategy</a></li>
-            <li><a href="#linkedin">🔗 LinkedIn Strategy</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#platforms">📱 Platforms</a>
+            <a href="#linkedin">🔗 LinkedIn</a>
+        </div>
         <div class="sidebar-section-title">Content & Posting</div>
-        <ul class="sidebar-nav">
-            <li><a href="#content">2️⃣ Content Creation</a></li>
-            <li><a href="#scheduling">3️⃣ Scheduling</a></li>
-            <li><a href="#engagement">4️⃣ Engagement</a></li>
-            <li><a href="#analytics">5️⃣ Analytics</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#content">✍️ Content</a>
+            <a href="#scheduling">📅 Schedule</a>
+            <a href="#engagement">💬 Engage</a>
+            <a href="#analytics">📊 Analytics</a>
+        </div>
         <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
-        </ul>
-        <div class="sidebar-section-title">Resources</div>
-        <ul class="sidebar-nav">
-            <li><a href="#tools">🛠️ Tools</a></li>
-            <li><a href="#chatgpt-prompts">🤖 ChatGPT Prompts</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#difficult-situations">⚠️ Difficult</a>
+            <a href="#kpis">📊 KPIs</a>
+            <a href="#tools">🛠️ Tools</a>
+            <a href="#chatgpt-prompts">🤖 ChatGPT</a>
+        </div>
     </aside>
 
     <div class="main-content">

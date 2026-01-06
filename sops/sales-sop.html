@@ -514,7 +514,7 @@
         }
 
         .sidebar {
-            width: 280px;
+            width: 320px;
             background: linear-gradient(180deg, #1E3A5F 0%, #0F2439 100%);
             color: white;
             position: fixed;
@@ -610,7 +610,7 @@
         .sidebar-nav a:hover {
             background: rgba(255, 255, 255, 0.1);
             color: white;
-            border-left-color: var(--green);
+            border-left-color: #FCD34D;
         }
 
         .sidebar-nav a.active {
@@ -620,18 +620,50 @@
             font-weight: 600;
         }
 
+        /* Two-column grid layout for compact sections */
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            padding: 5px 12px;
+            margin: 0 0 8px 0;
+        }
+
+        .sidebar-nav-grid a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 8px;
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            font-size: 11px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: scale(1.02);
+        }
+
         .sidebar-section-title {
-            padding: 10px 15px 4px 15px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px 6px;
             font-size: 10px;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: rgba(255, 255, 255, 0.4);
-            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.95);
+            background: rgba(0, 0, 0, 0.15);
+            margin-top: 8px;
+            border-left: 3px solid #FCD34D;
         }
 
         .main-content {
             flex: 1;
-            margin-left: 280px;
+            margin-left: 320px;
             background: #f5f7fa;
         }
 
@@ -709,30 +741,28 @@
         </div>
 
         <div class="sidebar-section-title">Sales Fundamentals</div>
-        <ul class="sidebar-nav">
-            <li><a href="#principles">🚨 Core Principles</a></li>
-            <li><a href="#client-quality">🛡️ Client Filtering</a></li>
-            <li><a href="#order-first">1️⃣ Sales Process</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#principles">🚨 Principles</a>
+            <a href="#client-quality">🛡️ Filtering</a>
+            <a href="#order-first">1️⃣ Process</a>
+            <a href="#qualification">2️⃣ Qualify</a>
+        </div>
         <div class="sidebar-section-title">Deal Closing</div>
-        <ul class="sidebar-nav">
-            <li><a href="#qualification">2️⃣ Lead Qualification</a></li>
-            <li><a href="#pricing">3️⃣ Pricing & Packages</a></li>
-            <li><a href="#problems">4️⃣ Problem Identification</a></li>
-            <li><a href="#objections">5️⃣ Objection Handling</a></li>
-            <li><a href="#price-flowchart">🔄 Price Objection Flow</a></li>
-            <li><a href="#closing">6️⃣ Closing Scripts</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#pricing">💰 Pricing</a>
+            <a href="#problems">🎯 Problems</a>
+            <a href="#objections">🗣️ Objections</a>
+            <a href="#price-flowchart">🔄 Flow</a>
+            <a href="#closing">✅ Closing</a>
+            <a href="#scripts">📝 Scripts</a>
+        </div>
         <div class="sidebar-section-title">Quick Reference</div>
-        <ul class="sidebar-nav">
-            <li><a href="#troubleshooting">🔧 Troubleshooting</a></li>
-            <li><a href="#difficult-situations">⚠️ Difficult Situations</a></li>
-            <li><a href="#kpis">📊 KPIs</a></li>
-        </ul>
-        <div class="sidebar-section-title">Resources</div>
-        <ul class="sidebar-nav">
-            <li><a href="#chatgpt">🤖 ChatGPT Prompts</a></li>
-        </ul>
+        <div class="sidebar-nav-grid">
+            <a href="#troubleshooting">🔧 Debug</a>
+            <a href="#difficult-situations">⚠️ Difficult</a>
+            <a href="#kpis">📊 KPIs</a>
+            <a href="#chatgpt">🤖 ChatGPT</a>
+        </div>
     </aside>
 
     <!-- Main Content -->
