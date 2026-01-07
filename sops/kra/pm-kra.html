@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Project Manager KRA</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link rel="stylesheet" href="../admin-mode.css">
+    <style>
+        :root {
+            --primary: #3B82F6;
+            --primary-dark: #2563EB;
+            --kra-accent: #8B5CF6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #1E3A5F 0%, #0F2439 100%);
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 2em;
+        }
+
+        .sidebar-header h2 {
+            font-size: 1em;
+            margin-top: 8px;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 10px 20px;
+            margin: 0 15px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .sidebar-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-links {
+            padding: 0 15px;
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 12px 15px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .sidebar-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .sidebar-links a.active {
+            background: var(--kra-accent);
+            color: white;
+        }
+
+        .quick-nav {
+            margin-top: 20px;
+            padding: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .quick-nav-title {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 10px;
+        }
+
+        .quick-nav a {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.8em;
+            margin: 3px;
+        }
+
+        .quick-nav a.sop {
+            background: rgba(16, 185, 129, 0.3);
+        }
+
+        .quick-nav a.kpi {
+            background: rgba(245, 158, 11, 0.3);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 40px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--kra-accent) 0%, #7C3AED 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            color: var(--kra-accent);
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .kra-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .kra-card {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(124, 58, 237, 0.05));
+            border: 2px solid rgba(139, 92, 246, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .kra-card h3 {
+            color: var(--kra-accent);
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .kra-card p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .kra-card ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .kra-card li {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .success-criteria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .criteria-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--kra-accent);
+        }
+
+        .criteria-item .metric {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--kra-accent);
+        }
+
+        .criteria-item .label {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+        @media print {
+
+            .sidebar,
+            .print-btn,
+            .admin-floating-btn,
+            .admin-banner,
+            .admin-modal-overlay,
+            .admin-history-panel,
+            .admin-find-panel,
+            .admin-toast-container {
+                display: none !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+            }
+        }
+
+        .print-btn {
+            display: block;
+            padding: 12px;
+            margin: 15px;
+            background: linear-gradient(135deg, var(--kra-accent), #7C3AED);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">📋</div>
+            <h2>Project Manager KRA</h2>
+        </div>
+        <a href="../index.html" class="sidebar-back">← Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#overview" class="active">📋 Role Overview</a>
+            <a href="#kras">🎯 Key Result Areas</a>
+            <a href="#success">✅ Success Criteria</a>
+        </div>
+        <div class="quick-nav">
+            <div class="quick-nav-title">Related Documents</div>
+            <a href="../pm-sop.html" class="sop">📖 PM SOP</a>
+            <a href="pm-kpi.html" class="kpi">📊 PM KPI</a>
+        </div>
+    </aside>
+    <div class="main-content">
+        <header class="header">
+            <h1>📋 Project Manager KRA</h1>
+            <p class="subtitle">Key Result Areas — What You're Responsible For</p>
+            <div class="badge-row">
+                <span class="badge">⏱️ On-Time Delivery</span>
+                <span class="badge">💬 Client Communication</span>
+                <span class="badge">📊 Project Tracking</span>
+            </div>
+        </header>
+        <section class="section" id="overview">
+            <h2>📋 Role Overview</h2>
+            <p style="font-size: 1.1em; color: #444; margin-bottom: 20px;">The Project Manager is responsible for
+                <strong>end-to-end project delivery</strong>, ensuring all projects are completed on time, within scope,
+                and to the highest quality standards. This role bridges sales, development, and client success teams.
+            </p>
+            <div
+                style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1)); padding: 20px; border-radius: 12px;">
+                <strong>🎯 Primary Mission:</strong> Deliver every project on time with 5-star quality and happy
+                clients.
+            </div>
+        </section>
+        <section class="section" id="kras">
+            <h2>🎯 Key Result Areas</h2>
+            <div class="kra-grid">
+                <div class="kra-card">
+                    <h3>⏱️ 1. On-Time Delivery</h3>
+                    <p>Ensure 100% of projects delivered by deadline</p>
+                    <ul>
+                        <li>14-day standard build timeline</li>
+                        <li>Daily progress tracking</li>
+                        <li>Early warning on delays</li>
+                        <li>Buffer time management</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>💬 2. Client Communication</h3>
+                    <p>Keep clients informed and satisfied</p>
+                    <ul>
+                        <li>Daily update messages</li>
+                        <li>Proactive issue notification</li>
+                        <li>Expectation management</li>
+                        <li>1-hour response time</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📋 3. Project Planning</h3>
+                    <p>Structure projects for success</p>
+                    <ul>
+                        <li>Clear milestone breakdown</li>
+                        <li>Resource allocation</li>
+                        <li>Risk identification</li>
+                        <li>Scope documentation</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🤝 4. Team Coordination</h3>
+                    <p>Align all team members on deliverables</p>
+                    <ul>
+                        <li>Developer task assignment</li>
+                        <li>Designer coordination</li>
+                        <li>Cross-functional handoffs</li>
+                        <li>Blocker resolution</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📊 5. Quality Assurance</h3>
+                    <p>Ensure deliverables meet standards</p>
+                    <ul>
+                        <li>QA checklist completion</li>
+                        <li>Client feedback integration</li>
+                        <li>Revision management</li>
+                        <li>Final approval process</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📈 6. Process Improvement</h3>
+                    <p>Continuously optimize delivery</p>
+                    <ul>
+                        <li>Identify bottlenecks</li>
+                        <li>Template creation</li>
+                        <li>Workflow optimization</li>
+                        <li>Knowledge documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="success">
+            <h2>✅ Success Criteria</h2>
+            <div class="success-criteria">
+                <div class="criteria-item">
+                    <div class="metric">100%</div>
+                    <div class="label">On-Time Delivery</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">
+                        < 1hr</div>
+                            <div class="label">Response Time</div>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="metric">5★</div>
+                        <div class="label">Client Satisfaction</div>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="metric">0</div>
+                        <div class="label">Missed Deadlines</div>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="metric">Daily</div>
+                        <div class="label">Client Updates</div>
+                    </div>
+                </div>
+        </section>
+        <footer class="footer">
+            <p>Digital Heroes | Project Manager KRA | Version 1.0</p>
+        </footer>
+    </div>
+    <script src="../admin-mode.js"></script>
+</body>
+
+</html>

@@ -7,6 +7,7 @@
     <title>Digital Heroes | Project Manager SOP</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
@@ -828,7 +829,12 @@
 
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
 
-        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
+            <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
+                Print</button>
+            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
+                Test</button>
+        </div>
 
         <div class="sidebar-search">
             <input type="text" id="searchInput" placeholder="🔍 Search..." onkeyup="searchSOP()">
@@ -2968,6 +2974,16 @@
         </div>
     </div>
     <script src="admin-mode.js"></script>
+
+    <!-- Quiz System -->
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/quizzes/pm-quiz.js"></script>
+    <script>
+        function launchQuiz() {
+            SOPQuiz.init('Project Manager', pmQuestions);
+            SOPQuiz.open();
+        }
+    </script>
 </body>
 
 </html>

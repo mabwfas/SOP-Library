@@ -457,7 +457,8 @@
             box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
         }
     </style>
-</head>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <link rel="stylesheet" href="admin-mode.css">
 
 <body>
     <!-- Sidebar -->
@@ -469,7 +470,12 @@
 
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
 
-        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
+            <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
+                Print</button>
+            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
+                Test</button>
+        </div>
 
         <div class="sidebar-section-title">1️⃣ Daily Routine</div>
         <div class="sidebar-nav-grid">
@@ -1174,6 +1180,16 @@
     </div>
 
     <script src="admin-mode.js"></script>
+
+    <!-- Quiz System -->
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/quizzes/daily-quiz.js"></script>
+    <script>
+        function launchQuiz() {
+            SOPQuiz.init('Daily SOP', dailyQuestions);
+            SOPQuiz.open();
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Content Writer KRA</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link rel="stylesheet" href="../admin-mode.css">
+    <style>
+        :root {
+            --primary: #FB923C;
+            --kra-accent: #FB923C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            background: #f5f7fa;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #1E3A5F 0%, #0F2439 100%);
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 2em;
+        }
+
+        .sidebar-header h2 {
+            font-size: 1em;
+            margin-top: 8px;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 10px 20px;
+            margin: 0 15px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .sidebar-links {
+            padding: 0 15px;
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 12px 15px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .sidebar-links a.active {
+            background: var(--kra-accent);
+        }
+
+        .quick-nav {
+            margin-top: 20px;
+            padding: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .quick-nav-title {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 10px;
+        }
+
+        .quick-nav a {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.8em;
+            margin: 3px;
+        }
+
+        .quick-nav a.sop {
+            background: rgba(16, 185, 129, 0.3);
+        }
+
+        .quick-nav a.kpi {
+            background: rgba(245, 158, 11, 0.3);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 40px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #FB923C 0%, #F59E0B 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            color: var(--kra-accent);
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        .kra-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .kra-card {
+            background: linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(245, 158, 11, 0.05));
+            border: 2px solid rgba(251, 146, 60, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .kra-card h3 {
+            color: var(--kra-accent);
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .kra-card ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .kra-card li {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .success-criteria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .criteria-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--kra-accent);
+        }
+
+        .criteria-item .metric {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--kra-accent);
+        }
+
+        .criteria-item .label {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+        @media print {
+
+            .sidebar,
+            .print-btn,
+            .admin-floating-btn,
+            .admin-banner,
+            .admin-modal-overlay,
+            .admin-history-panel,
+            .admin-find-panel,
+            .admin-toast-container {
+                display: none !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+            }
+        }
+
+        .print-btn {
+            display: block;
+            padding: 12px;
+            margin: 15px;
+            background: linear-gradient(135deg, #FB923C, #F59E0B);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">✍️</div>
+            <h2>Content Writer KRA</h2>
+        </div>
+        <a href="../index.html" class="sidebar-back">← Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#overview" class="active">📋 Role Overview</a>
+            <a href="#kras">🎯 Key Result Areas</a>
+            <a href="#success">✅ Success Criteria</a>
+        </div>
+        <div class="quick-nav">
+            <div class="quick-nav-title">Related Documents</div>
+            <a href="../content-sop.html" class="sop">📖 Content SOP</a>
+            <a href="content-kpi.html" class="kpi">📊 Content KPI</a>
+        </div>
+    </aside>
+    <div class="main-content">
+        <header class="header">
+            <h1>✍️ Content Writer KRA</h1>
+            <p class="subtitle">Key Result Areas — What You're Responsible For</p>
+            <div class="badge-row">
+                <span class="badge">✍️ Compelling Copy</span>
+                <span class="badge">🎯 Conversion Focus</span>
+                <span class="badge">🔍 SEO Optimized</span>
+            </div>
+        </header>
+        <section class="section" id="overview">
+            <h2>📋 Role Overview</h2>
+            <p style="font-size: 1.1em; color: #444; margin-bottom: 20px;">The Content Writer is responsible for
+                <strong>creating compelling, conversion-focused copy</strong> for all client projects. This role owns
+                product descriptions, website copy, and all written content.
+            </p>
+            <div
+                style="background: linear-gradient(135deg, rgba(251, 146, 60, 0.1), rgba(16, 185, 129, 0.1)); padding: 20px; border-radius: 12px;">
+                <strong>🎯 Primary Mission:</strong> Write copy that converts visitors into customers.
+            </div>
+        </section>
+        <section class="section" id="kras">
+            <h2>🎯 Key Result Areas</h2>
+            <div class="kra-grid">
+                <div class="kra-card">
+                    <h3>📝 1. Product Descriptions</h3>
+                    <ul>
+                        <li>Benefit-focused copy</li>
+                        <li>Feature-to-benefit conversion</li>
+                        <li>Scannable formatting</li>
+                        <li>SEO keywords</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🏠 2. Website Copy</h3>
+                    <ul>
+                        <li>Homepage messaging</li>
+                        <li>About page storytelling</li>
+                        <li>Collection descriptions</li>
+                        <li>Policy pages</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🎯 3. Conversion Copy</h3>
+                    <ul>
+                        <li>CTAs & buttons</li>
+                        <li>Trust-building content</li>
+                        <li>Urgency messaging</li>
+                        <li>Social proof</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🔍 4. SEO Writing</h3>
+                    <ul>
+                        <li>Keyword integration</li>
+                        <li>Meta descriptions</li>
+                        <li>Alt text</li>
+                        <li>Heading structure</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🤖 5. AI Tool Usage</h3>
+                    <ul>
+                        <li>ChatGPT prompting</li>
+                        <li>Content enhancement</li>
+                        <li>Editing & refinement</li>
+                        <li>Quality control</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📊 6. Quality Assurance</h3>
+                    <ul>
+                        <li>Grammar & spelling</li>
+                        <li>Brand voice consistency</li>
+                        <li>Fact checking</li>
+                        <li>Revision turnaround</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="success">
+            <h2>✅ Success Criteria</h2>
+            <div class="success-criteria">
+                <div class="criteria-item">
+                    <div class="metric">0</div>
+                    <div class="label">Grammar Errors</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">
+                        < 2</div>
+                            <div class="label">Revision Rounds</div>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="metric">100%</div>
+                        <div class="label">Brand Voice Match</div>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="metric">On-Time</div>
+                        <div class="label">Delivery</div>
+                    </div>
+                </div>
+        </section>
+        <footer class="footer">
+            <p>Digital Heroes | Content Writer KRA | Version 1.0</p>
+        </footer>
+    </div>
+    <script src="../admin-mode.js"></script>
+</body>
+
+</html>
