@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager - Assets & Resources</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f172a;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #1e293b;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+            z-index: 1000;
+        }
+
+        .sidebar-header {
+            padding: 25px 20px 15px 20px;
+            text-align: center;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-header h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: white;
+            font-weight: 600;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 12px 20px;
+            color: #94a3b8;
+            text-decoration: none;
+            transition: 0.2s;
+            border-radius: 8px;
+            margin: 0 10px;
+            font-size: 0.9em;
+        }
+
+        .sidebar-back:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .sidebar-section-title {
+            padding: 20px 20px 10px 20px;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #64748b;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 0 15px;
+        }
+
+        .sidebar-nav-grid a {
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.85em;
+            text-align: center;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 0;
+            min-height: 100vh;
+            width: calc(100% - 280px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 40px 100px 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            background: linear-gradient(45deg, #3B82F6, #60A5FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .video-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            border-color: #3B82F6;
+        }
+
+        .video-placeholder {
+            aspect-ratio: 16/9;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        .video-content {
+            padding: 20px;
+        }
+
+        .video-content h3 {
+            margin: 0 0 10px 0;
+            color: #60A5FA;
+        }
+
+        .video-content p {
+            margin: 0;
+            color: #9CA3AF;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: rgba(59, 130, 246, 0.2);
+            color: #93C5FD;
+            font-size: 0.8em;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span class="emoji">📅</span>
+            <h2>PM Assets</h2>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../kra/pm-kra.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">📋
+                KRA</a>
+            <a href="../kpi/pm-kpi.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
+                KPI</a>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="#" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);">📚
+                Assets</a>
+            <a href="../onboarding/pm-onboarding.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.2); border: 1px solid #EC4899;">🚀
+                Start</a>
+        </div>
+
+        <a href="../pm-sop.html" class="sidebar-back"
+            style="background: rgba(255,255,255,0.05); margin-top: 10px; text-align: center;">← Back to PM SOP</a>
+
+        <div class="sidebar-section-title">Sections</div>
+        <div class="sidebar-nav-grid">
+            <a href="#videos">📹 Videos</a>
+            <a href="#resources">📄 Resources</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
+                <h1>PM Assets & Training Library</h1>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
+                    training, scripts, and resources to help you master your role.</p>
+            </div>
+
+            <div id="videos" class="section-title"
+                style="border-left: 4px solid #3B82F6; padding-left: 15px; margin-bottom: 30px;">
+                <h2 style="margin: 0;">📹 Video Training</h2>
+            </div>
+
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            15:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Fundamentals</span>
+                        <h3>Role Overview & Expectations</h3>
+                        <p>A deep dive into the daily life of a Project Manager, core responsibilities, and key metrics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            30:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Process</span>
+                        <h3>Agile Project Management</h3>
+                        <p>How we run sprints, manage backlogs, and ensure timely delivery without burnout.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            20:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Skills</span>
+                        <h3>Communication Mastery</h3>
+                        <p>Handling difficult clients, scope creep, and keeping the team aligned.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resources" class="section-title"
+                style="border-left: 4px solid #10B981; padding-left: 15px; margin: 60px 0 30px 0;">
+                <h2 style="margin: 0;">📄 Downloadable Resources</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <a href="#"
+                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
+                    <span style="font-size: 2em; margin-right: 15px;">📄</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">Communication Templates</strong>
+                        <span style="color: #9CA3AF; font-size: 0.9em;">Standard responses for clients</span>
+                    </div>
+                </a>
+                <a href="#"
+                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
+                    <span style="font-size: 2em; margin-right: 15px;">📊</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">Project Scope Sheet</strong>
+                        <span style="color: #9CA3AF; font-size: 0.9em;">Template for defining scope</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

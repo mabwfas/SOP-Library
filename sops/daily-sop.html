@@ -477,6 +477,15 @@
                 Test</button>
         </div>
 
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="#" onclick="switchView('assets'); return false;" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">📚
+                Assets</a>
+            <a href="#" onclick="switchView('onboarding'); return false;" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.2); border: 1px solid #EC4899;">🚀
+                Start</a>
+        </div>
+
         <div class="sidebar-section-title">1️⃣ Daily Routine</div>
         <div class="sidebar-nav-grid">
             <a href="#overview">📖 Overview</a>
@@ -495,701 +504,1073 @@
         <div class="sidebar-nav-grid">
             <a href="#inspiration">🌟 Inspiration</a>
         </div>
+        </div> <!-- End sidebar-sop-links -->
+
+        <!-- ASSETS SIDEBAR LINKS -->
+        <div id="sidebar-assets-links" class="hidden">
+            <div class="sidebar-section-title">Sections</div>
+            <div class="sidebar-nav-grid">
+                <a href="#videos">📹 Videos</a>
+                <a href="#resources">📄 Resources</a>
+            </div>
+            <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+        </div>
+
+        <!-- ONBOARDING SIDEBAR LINKS -->
+        <div id="sidebar-onboarding-links" class="hidden">
+            <div class="sidebar-section-title">Timeline</div>
+            <div class="sidebar-nav-grid" style="grid-template-columns: 1fr;">
+                <a href="#step-1" style="justify-content: flex-start;">1️⃣ Master SOP</a>
+                <a href="#step-2" style="justify-content: flex-start;">2️⃣ Watch Videos</a>
+                <a href="#step-3" style="justify-content: flex-start;">3️⃣ Pass Test</a>
+                <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
+            </div>
+            <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+        </div>
     </aside>
 
     <!-- Main Content -->
     <div class="main-content">
-        <div class="container">
-            <header class="header">
-                <h1>📋 Daily SOP</h1>
-                <p class="subtitle">Your Guide to a Productive, Connected, and Excellent Workday</p>
-            </header>
+        <div id="content-sop" class="view-section">
+            <div class="container">
+                <header class="header">
+                    <h1>📋 Daily SOP</h1>
+                    <p class="subtitle">Your Guide to a Productive, Connected, and Excellent Workday</p>
+                </header>
 
-            <!-- Quick Reference: Role to SOP Mapping -->
-            <section class="section" id="role-sops"
-                style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
-                <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
-                    <div class="section-number" style="background: linear-gradient(135deg, #8B5CF6, #EC4899);">👤</div>
-                    <h2 style="color: white;">Find Your Role & SOPs</h2>
-                </div>
-
-                <div
-                    style="background: rgba(255,255,255,0.1); padding: 15px 20px; border-radius: 10px; margin-bottom: 25px;">
-                    <p style="color: rgba(255,255,255,0.9); margin: 0;">⚡ <strong>Quick Start:</strong> Find your role
-                        below. Follow <strong>Daily SOP</strong> (this page) + your <strong>Role-Specific SOP</strong>
-                        every day.</p>
-                </div>
-
-                <table style="width: 100%; border-collapse: collapse;">
-                    <thead>
-                        <tr>
-                            <th
-                                style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 15px; text-align: left; border-radius: 8px 0 0 0;">
-                                Role</th>
-                            <th
-                                style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 15px; text-align: left;">
-                                SOPs to Follow</th>
-                            <th
-                                style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 15px; text-align: center; border-radius: 0 8px 0 0;">
-                                Quick Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>💰 Sales Executive</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #10B981; font-weight: 600;">Sales SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="sales-sop.html"
-                                    style="background: #10B981; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>📋 Project Manager</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #3B82F6; font-weight: 600;">PM SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="pm-sop.html"
-                                    style="background: #3B82F6; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>💻 Shopify Developer</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #8B5CF6; font-weight: 600;">Developer SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="developer-sop.html"
-                                    style="background: #8B5CF6; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>🖥️ Full Stack Developer</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #06B6D4; font-weight: 600;">Full Stack SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="fullstack-sop.html"
-                                    style="background: #06B6D4; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>🎨 UI/UX Designer</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #EC4899; font-weight: 600;">Designer SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="designer-sop.html"
-                                    style="background: #EC4899; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>🤝 Client Success</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #D97706; font-weight: 600;">CS SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="cs-sop.html"
-                                    style="background: #D97706; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>👥 HR & People Ops</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #A78BFA; font-weight: 600;">HR SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="hr-sop.html"
-                                    style="background: #A78BFA; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>✍️ Content Writer</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #F59E0B; font-weight: 600;">Content SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="content-sop.html"
-                                    style="background: #F59E0B; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <td style="padding: 15px; color: white;"><strong>📱 Social Media Manager</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #0EA5E9; font-weight: 600;">Social Media SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="social-media-sop.html"
-                                    style="background: #0EA5E9; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 15px; color: white;"><strong>💰 Finance & Accounts</strong></td>
-                            <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
-                                    style="color: #10B981; font-weight: 600;">Finance SOP</span></td>
-                            <td style="padding: 15px; text-align: center;"><a href="finance-sop.html"
-                                    style="background: #10B981; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
-                                    →</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div
-                    style="margin-top: 25px; padding: 20px; background: rgba(139, 92, 246, 0.2); border-radius: 12px; border-left: 4px solid #8B5CF6;">
-                    <p style="margin: 0; color: white;"><strong>📌 Remember:</strong> Every team member follows
-                        <strong>2 SOPs minimum</strong>:
-                    </p>
-                    <ol style="margin: 10px 0 0 20px; color: rgba(255,255,255,0.9);">
-                        <li><strong>Daily SOP</strong> (this page) — Work hours, communication, reporting</li>
-                        <li><strong>Your Role SOP</strong> — Specific processes for your job</li>
-                    </ol>
-                </div>
-            </section>
-
-            <!-- Overview Section -->
-            <section class="section" id="overview">
-                <div class="section-header">
-                    <div class="section-number">1</div>
-                    <h2>What This SOP Is For</h2>
-                </div>
-
-                <div class="info-box primary">
-                    <h4>📖 Purpose of This Document</h4>
-                    <p>This Daily SOP is your single source of truth for <strong>how to work at Digital Heroes</strong>.
-                        It covers your daily routine, communication expectations, how to use role-specific SOPs, and
-                        what it means to be a high-performing team member.</p>
-                </div>
-
-                <h3>Why SOPs Matter</h3>
-                <ul class="styled-list">
-                    <li><strong>Consistency:</strong> Everyone follows the same standards, ensuring quality across all
-                        work</li>
-                    <li><strong>Speed:</strong> No guessing — you know exactly what to do and how to do it</li>
-                    <li><strong>Training:</strong> New team members can onboard faster and work independently</li>
-                    <li><strong>Excellence:</strong> SOPs capture our best practices — following them means doing your
-                        best work</li>
-                </ul>
-
-                <div class="info-box success">
-                    <h4>✅ Your Commitment</h4>
-                    <p>By being part of Digital Heroes, you commit to following these SOPs, staying available during
-                        work hours, and continuously improving your craft. We're building something great together.</p>
-                </div>
-            </section>
-
-            <!-- Daily Routine Section -->
-            <section class="section" id="daily-routine">
-                <div class="section-header">
-                    <div class="section-number">2</div>
-                    <h2>Your Daily Routine</h2>
-                </div>
-
-                <div class="info-box warning">
-                    <h4>⏰ Work Hours</h4>
-                    <p>Standard work hours: <strong>10:00 AM - 7:00 PM IST</strong> (flexible by role)<br>
-                        You must be <strong>online and responsive</strong> during your work hours.</p>
-                </div>
-
-                <h3>Morning Startup (First 15 Minutes)</h3>
-                <div class="checklist-card">
-                    <h4>🌅 Start of Day Checklist</h4>
-                    <ul>
-                        <li>Set your Discord status to <strong>🟢 Online</strong></li>
-                        <li>Check Discord for any overnight messages</li>
-                        <li><strong style="color: #EF4444;">🔴 CONNECT WITH YOUR MANAGER</strong> — Brief check-in call
-                            or message to get daily priorities</li>
-                        <li>Review your tasks in project management tool (Notion/Trello/ClickUp)</li>
-                        <li>Check email for client or team updates</li>
-                        <li>Read any SOPs relevant to today's work</li>
-                        <li>Plan your top 3 priorities for the day</li>
-                    </ul>
-                </div>
-
-                <h3>During Work Hours</h3>
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Activity</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="time-block">10:00 AM</span></td>
-                            <td>Go Online + Morning Check-in</td>
-                            <td>Set Discord status, review priorities</td>
-                        </tr>
-                        <tr>
-                            <td><span class="time-block">10:15 AM - 1:00 PM</span></td>
-                            <td>Deep Work Block 1</td>
-                            <td>Focus on highest-priority tasks</td>
-                        </tr>
-                        <tr>
-                            <td><span class="time-block">1:00 PM - 2:00 PM</span></td>
-                            <td>Lunch Break</td>
-                            <td>Set status to 🍽️ Lunch</td>
-                        </tr>
-                        <tr>
-                            <td><span class="time-block">2:00 PM - 4:00 PM</span></td>
-                            <td>Deep Work Block 2</td>
-                            <td>Continue priority tasks</td>
-                        </tr>
-                        <tr>
-                            <td><span class="time-block">4:00 PM - 5:00 PM</span></td>
-                            <td>Meetings / Collaboration</td>
-                            <td>Client calls, team syncs</td>
-                        </tr>
-                        <tr>
-                            <td><span class="time-block">5:00 PM - 6:30 PM</span></td>
-                            <td>Deep Work Block 3</td>
-                            <td>Finish remaining tasks</td>
-                        </tr>
-                        <tr>
-                            <td><span class="time-block">6:30 PM - 7:00 PM</span></td>
-                            <td>Wrap Up + EOD Update</td>
-                            <td>Update tasks, send EOD report</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>End of Day (Last 15 Minutes)</h3>
-                <div class="checklist-card">
-                    <h4>🌙 End of Day Checklist</h4>
-                    <ul>
-                        <li>Update all task statuses in project tool</li>
-                        <li>Send EOD update to your manager/channel</li>
-                        <li>Reply to any pending Discord messages</li>
-                        <li>Note any blockers for tomorrow</li>
-                        <li>Set Discord status to 🔴 Offline</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Communication Rules Section -->
-            <section class="section" id="communication">
-                <div class="section-header">
-                    <div class="section-number">3</div>
-                    <h2>Communication Rules</h2>
-                </div>
-
-                <div class="discord-box">
-                    <h4>💬 Discord is Our HQ</h4>
-                    <p style="margin-bottom: 15px;">Discord is our primary communication tool. Being active on Discord =
-                        being at work.</p>
-
-                    <div class="rule">
-                        <span style="font-size: 1.5em;">⏱️</span>
-                        <div>
-                            <strong>1-Hour Response Rule</strong><br>
-                            <span style="opacity: 0.9;">During work hours, reply to ALL messages within 1 hour. No
-                                exceptions.</span>
+                <!-- Quick Reference: Role to SOP Mapping -->
+                <section class="section" id="role-sops"
+                    style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
+                    <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
+                        <div class="section-number" style="background: linear-gradient(135deg, #8B5CF6, #EC4899);">👤
                         </div>
+                        <h2 style="color: white;">Find Your Role & SOPs</h2>
                     </div>
 
-                    <div class="rule">
-                        <span style="font-size: 1.5em;">🟢</span>
-                        <div>
-                            <strong>Online Status Required</strong><br>
-                            <span style="opacity: 0.9;">Keep your status set to Online during work hours. Change it when
-                                on break or unavailable.</span>
-                        </div>
+                    <div
+                        style="background: rgba(255,255,255,0.1); padding: 15px 20px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="color: rgba(255,255,255,0.9); margin: 0;">⚡ <strong>Quick Start:</strong> Find your
+                            role
+                            below. Follow <strong>Daily SOP</strong> (this page) + your <strong>Role-Specific
+                                SOP</strong>
+                            every day.</p>
                     </div>
 
-                    <div class="rule">
-                        <span style="font-size: 1.5em;">📱</span>
-                        <div>
-                            <strong>Mobile App Installed</strong><br>
-                            <span style="opacity: 0.9;">Install Discord on your phone for urgent messages when away from
-                                desk.</span>
-                        </div>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 15px; text-align: left; border-radius: 8px 0 0 0;">
+                                    Role</th>
+                                <th
+                                    style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 15px; text-align: left;">
+                                    SOPs to Follow</th>
+                                <th
+                                    style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 15px; text-align: center; border-radius: 0 8px 0 0;">
+                                    Quick Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>💰 Sales Executive</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #10B981; font-weight: 600;">Sales SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="sales-sop.html"
+                                        style="background: #10B981; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>📋 Project Manager</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #3B82F6; font-weight: 600;">PM SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="pm-sop.html"
+                                        style="background: #3B82F6; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>💻 Shopify Developer</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #8B5CF6; font-weight: 600;">Developer SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="developer-sop.html"
+                                        style="background: #8B5CF6; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>🖥️ Full Stack Developer</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #06B6D4; font-weight: 600;">Full Stack SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="fullstack-sop.html"
+                                        style="background: #06B6D4; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>🎨 UI/UX Designer</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #EC4899; font-weight: 600;">Designer SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="designer-sop.html"
+                                        style="background: #EC4899; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>🤝 Client Success</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #D97706; font-weight: 600;">CS SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="cs-sop.html"
+                                        style="background: #D97706; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>👥 HR & People Ops</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #A78BFA; font-weight: 600;">HR SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="hr-sop.html"
+                                        style="background: #A78BFA; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>✍️ Content Writer</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #F59E0B; font-weight: 600;">Content SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="content-sop.html"
+                                        style="background: #F59E0B; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <td style="padding: 15px; color: white;"><strong>📱 Social Media Manager</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #0EA5E9; font-weight: 600;">Social Media SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="social-media-sop.html"
+                                        style="background: #0EA5E9; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 15px; color: white;"><strong>💰 Finance & Accounts</strong></td>
+                                <td style="padding: 15px; color: rgba(255,255,255,0.8);">Daily SOP + <span
+                                        style="color: #10B981; font-weight: 600;">Finance SOP</span></td>
+                                <td style="padding: 15px; text-align: center;"><a href="finance-sop.html"
+                                        style="background: #10B981; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85em;">Open
+                                        →</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div
+                        style="margin-top: 25px; padding: 20px; background: rgba(139, 92, 246, 0.2); border-radius: 12px; border-left: 4px solid #8B5CF6;">
+                        <p style="margin: 0; color: white;"><strong>📌 Remember:</strong> Every team member follows
+                            <strong>2 SOPs minimum</strong>:
+                        </p>
+                        <ol style="margin: 10px 0 0 20px; color: rgba(255,255,255,0.9);">
+                            <li><strong>Daily SOP</strong> (this page) — Work hours, communication, reporting</li>
+                            <li><strong>Your Role SOP</strong> — Specific processes for your job</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Overview Section -->
+                <section class="section" id="overview">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2>What This SOP Is For</h2>
                     </div>
 
-                    <div class="rule">
-                        <span style="font-size: 1.5em;">🔔</span>
-                        <div>
-                            <strong>Notifications ON</strong><br>
-                            <span style="opacity: 0.9;">Enable notifications for mentions and DMs. Mute only
-                                non-essential channels.</span>
-                        </div>
+                    <div class="info-box primary">
+                        <h4>📖 Purpose of This Document</h4>
+                        <p>This Daily SOP is your single source of truth for <strong>how to work at Digital
+                                Heroes</strong>.
+                            It covers your daily routine, communication expectations, how to use role-specific SOPs, and
+                            what it means to be a high-performing team member.</p>
                     </div>
-                </div>
 
-                <div class="info-box danger">
-                    <h4>🚨 What Happens If You Don't Respond?</h4>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li><strong>First occurrence:</strong> Friendly reminder from manager</li>
-                        <li><strong>Repeated:</strong> Logged as communication issue</li>
-                        <li><strong>Chronic:</strong> Performance review impact</li>
-                    </ul>
-                    <p style="margin-top: 15px;">If you need to step away, <strong>update your status</strong> and
-                        inform your manager. Communication is non-negotiable.</p>
-                </div>
-
-                <h3>Response Priority Guide</h3>
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Message Type</th>
-                            <th>Response Time</th>
-                            <th>Priority</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Client emergency / Site down</td>
-                            <td>Immediately (within 15 mins)</td>
-                            <td><span class="priority-high">URGENT</span></td>
-                        </tr>
-                        <tr>
-                            <td>Manager / Team Lead DM</td>
-                            <td>Within 30 minutes</td>
-                            <td><span class="priority-high">HIGH</span></td>
-                        </tr>
-                        <tr>
-                            <td>Team channel mentions</td>
-                            <td>Within 1 hour</td>
-                            <td><span class="priority-medium">MEDIUM</span></td>
-                        </tr>
-                        <tr>
-                            <td>General channel messages</td>
-                            <td>Within 2 hours</td>
-                            <td><span class="priority-normal">NORMAL</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="info-box success">
-                    <h4>✅ Communication Best Practices</h4>
+                    <h3>Why SOPs Matter</h3>
                     <ul class="styled-list">
-                        <li>Acknowledge messages with a reaction if you need time to respond</li>
-                        <li>Use threads to keep conversations organized</li>
-                        <li>Tag the right people — don't spam @everyone unless necessary</li>
-                        <li>Keep messages clear and concise — get to the point</li>
-                        <li>Use voice channels for complex discussions</li>
+                        <li><strong>Consistency:</strong> Everyone follows the same standards, ensuring quality across
+                            all
+                            work</li>
+                        <li><strong>Speed:</strong> No guessing — you know exactly what to do and how to do it</li>
+                        <li><strong>Training:</strong> New team members can onboard faster and work independently</li>
+                        <li><strong>Excellence:</strong> SOPs capture our best practices — following them means doing
+                            your
+                            best work</li>
                     </ul>
-                </div>
-            </section>
 
-            <!-- Using SOPs Section -->
-            <section class="section" id="using-sops">
-                <div class="section-header">
-                    <div class="section-number">4</div>
-                    <h2>How to Use Your SOPs</h2>
-                </div>
+                    <div class="info-box success">
+                        <h4>✅ Your Commitment</h4>
+                        <p>By being part of Digital Heroes, you commit to following these SOPs, staying available during
+                            work hours, and continuously improving your craft. We're building something great together.
+                        </p>
+                    </div>
+                </section>
 
-                <div class="info-box purple">
-                    <h4>📚 Your Role-Specific SOP</h4>
-                    <p>Every team member has a role-specific SOP. This is your <strong>primary reference</strong> for
-                        how to do your job excellently. Read it fully on Day 1, and reference it whenever you face a new
-                        situation.</p>
-                </div>
+                <!-- Daily Routine Section -->
+                <section class="section" id="daily-routine">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2>Your Daily Routine</h2>
+                    </div>
 
-                <h3>Available SOPs</h3>
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>SOP</th>
-                            <th>For</th>
-                            <th>Key Topics</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="sales-sop.html" style="color: var(--primary); font-weight: 600;">Sales SOP</a>
-                            </td>
-                            <td>Sales Team</td>
-                            <td>Lead handling, pricing, closing, LTV</td>
-                        </tr>
-                        <tr>
-                            <td><a href="pm-sop.html" style="color: var(--primary); font-weight: 600;">PM SOP</a></td>
-                            <td>Project Managers</td>
-                            <td>Client management, timelines, handoffs</td>
-                        </tr>
-                        <tr>
-                            <td><a href="developer-sop.html" style="color: var(--primary); font-weight: 600;">Developer
-                                    SOP</a></td>
-                            <td>Shopify Developers</td>
-                            <td>Theme dev, speed, conversion</td>
-                        </tr>
-                        <tr>
-                            <td><a href="designer-sop.html" style="color: var(--primary); font-weight: 600;">Designer
-                                    SOP</a></td>
-                            <td>UI/UX Designers</td>
-                            <td>Figma workflow, review process</td>
-                        </tr>
-                        <tr>
-                            <td><a href="cs-sop.html" style="color: var(--primary); font-weight: 600;">CS SOP</a></td>
-                            <td>Client Success</td>
-                            <td>Retention, check-ins, escalations</td>
-                        </tr>
-                        <tr>
-                            <td><a href="hr-sop.html" style="color: var(--primary); font-weight: 600;">HR SOP</a></td>
-                            <td>HR Team</td>
-                            <td>Hiring, onboarding, culture</td>
-                        </tr>
-                        <tr>
-                            <td><a href="content-sop.html" style="color: var(--primary); font-weight: 600;">Content
-                                    SOP</a></td>
-                            <td>Content Writers</td>
-                            <td>SEO, writing formulas, AI use</td>
-                        </tr>
-                        <tr>
-                            <td><a href="finance-sop.html" style="color: var(--primary); font-weight: 600;">Finance
-                                    SOP</a></td>
-                            <td>Finance Team</td>
-                            <td>Invoicing, cash flow, payroll</td>
-                        </tr>
-                        <tr>
-                            <td><a href="social-media-sop.html" style="color: var(--primary); font-weight: 600;">Social
-                                    Media SOP</a></td>
-                            <td>Social Media Managers</td>
-                            <td>Content calendar, engagement, analytics</td>
-                        </tr>
-                        <tr>
-                            <td><a href="fullstack-sop.html" style="color: var(--primary); font-weight: 600;">Full Stack
-                                    SOP</a></td>
-                            <td>Full Stack Developers</td>
-                            <td>App development, APIs, integrations</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <div class="info-box warning">
+                        <h4>⏰ Work Hours</h4>
+                        <p>Standard work hours: <strong>10:00 AM - 7:00 PM IST</strong> (flexible by role)<br>
+                            You must be <strong>online and responsive</strong> during your work hours.</p>
+                    </div>
 
-                <h3>When to Use SOPs</h3>
-                <ul class="styled-list">
-                    <li><strong>Starting a new type of task:</strong> Check SOP first for best practices</li>
-                    <li><strong>Unsure how to handle a situation:</strong> SOP likely has the answer</li>
-                    <li><strong>Training someone:</strong> Use SOP as your training guide</li>
-                    <li><strong>Weekly refresh:</strong> Re-read relevant sections to stay sharp</li>
-                    <li><strong>After a mistake:</strong> Review SOP to prevent future issues</li>
-                </ul>
+                    <!-- CRITICAL: Response Time Requirements -->
+                    <div class="critical-alert" style="margin: 25px 0;">
+                        <h3>⚠️ CRITICAL: Response Time SLA</h3>
+                        <p style="font-size: 1.1em; margin-bottom: 15px;"><strong>Failure to respond during work hours =
+                                Marked ABSENT for the day</strong></p>
+                        <table class="styled-table" style="background: rgba(255,255,255,0.1);">
+                            <thead>
+                                <tr>
+                                    <th>Message From</th>
+                                    <th>Response Time</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: white;">
+                                <tr>
+                                    <td>Management/CEO</td>
+                                    <td><strong style="color: #F59E0B;">IMMEDIATE (5 minutes)</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Team Lead</td>
+                                    <td><strong>Within 10 minutes</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Colleagues</td>
+                                    <td>Within 30 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td>Clients (Fiverr)</td>
+                                    <td>Within 1 hour</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="margin-top: 15px;">✅ All assigned tasks must be acknowledged <strong>in the same
+                                message thread</strong></p>
+                    </div>
 
-                <div class="info-box warning">
-                    <h4>⚠️ SOPs Are Living Documents</h4>
-                    <p>If you find a process that could be improved, or discover something that should be in the SOP but
-                        isn't, <strong>tell your manager</strong>. We update SOPs regularly to capture new best
-                        practices.</p>
-                </div>
-            </section>
+                    <!-- Discord Notification Requirement -->
+                    <div class="info-box danger"
+                        style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%); border-left: 5px solid #EF4444;">
+                        <h4>📱 Discord Notification = MANDATORY</h4>
+                        <ul class="styled-list">
+                            <li>Turn ON Discord notifications on <strong>ALL devices</strong> during work hours</li>
+                            <li>Install Discord on your PC/laptop for instant access</li>
+                            <li>If communicated via phone call, <strong>still respond in Discord group</strong> for
+                                documentation</li>
+                            <li>Every message mentioning you requires a response — <strong>no exceptions</strong></li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>Acceptable acknowledgments:</strong> "Okay", "Yes
+                            sir/ma'am", "Working on it", "Understood", "Will do"</p>
+                    </div>
 
-            <!-- Time Management Section -->
-            <section class="section" id="time-management">
-                <div class="section-header">
-                    <div class="section-number">5</div>
-                    <h2>Time Management</h2>
-                </div>
-
-                <div class="info-box primary">
-                    <h4>⏰ The 80/20 Rule</h4>
-                    <p>80% of your results come from 20% of your tasks. Identify your high-impact work and protect time
-                        for it.</p>
-                </div>
-
-                <h3>Productivity Principles</h3>
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
-                    <div class="checklist-card">
-                        <h4>🎯 Do This</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="padding: 8px 0;">✅ Start with your hardest task</li>
-                            <li style="padding: 8px 0;">✅ Time-block deep work sessions</li>
-                            <li style="padding: 8px 0;">✅ Take regular short breaks</li>
-                            <li style="padding: 8px 0;">✅ Set daily goals (max 3 priorities)</li>
-                            <li style="padding: 8px 0;">✅ Track your time on tasks</li>
+                    <!-- Daily Start Time Posting -->
+                    <div class="info-box success" style="margin: 20px 0;">
+                        <h4>📍 Daily Start Time Posting</h4>
+                        <p style="color: #C62828; font-weight: bold;">⚠️ CRITICAL: Post BEFORE 11:00 AM every day - no
+                            exceptions</p>
+                        <ul class="styled-list">
+                            <li><strong>Format:</strong> "I'll start working from [TIME]" or "I started working at
+                                [TIME]"</li>
+                            <li>If starting late (after 12 PM), post by 10:55 AM with expected start time</li>
+                            <li>Team Lead posts consolidated list of all working members by 11:30 AM</li>
                         </ul>
                     </div>
-                    <div class="checklist-card">
-                        <h4>🚫 Avoid This</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="padding: 8px 0;">❌ Checking email/Discord constantly</li>
-                            <li style="padding: 8px 0;">❌ Multitasking on important work</li>
-                            <li style="padding: 8px 0;">❌ Skipping breaks (leads to burnout)</li>
-                            <li style="padding: 8px 0;">❌ Saying yes to everything</li>
-                            <li style="padding: 8px 0;">❌ Working without a plan</li>
+
+                    <!-- Leave Request Protocol -->
+                    <div class="info-box warning" style="margin: 20px 0;">
+                        <h4>🏖️ Leave Request Protocol</h4>
+                        <ul class="styled-list">
+                            <li>Leave request must be posted <strong>BEFORE 12:00 PM (noon)</strong> on leave day</li>
+                            <li><strong>Format:</strong> "Leave - [DATE] - Reason: [SPECIFIC REASON]"</li>
+                            <li style="color: #C62828;"><strong>⚠️ Half days DO NOT exist</strong> (except Saturday) -
+                                mark full leave</li>
+                            <li>If on leave, still check group once for urgent messages</li>
                         </ul>
                     </div>
-                </div>
 
-                <h3>If You're Falling Behind</h3>
-                <ol style="padding-left: 20px; line-height: 2;">
-                    <li><strong>Don't panic</strong> — assess what's actually urgent</li>
-                    <li><strong>Communicate early</strong> — tell your manager BEFORE deadlines are missed</li>
-                    <li><strong>Ask for help</strong> — someone might be able to assist</li>
-                    <li><strong>Prioritize ruthlessly</strong> — what can wait vs. what can't?</li>
-                    <li><strong>Learn from it</strong> — why did this happen? How to prevent it?</li>
-                </ol>
-            </section>
+                    <!-- Overcommunication Principle -->
+                    <div class="story-box" style="margin: 20px 0;">
+                        <h4>💬 Overcommunication Principle</h4>
+                        <p><strong>Fast communication is a form of RESPECT.</strong></p>
+                        <ul class="styled-list">
+                            <li>Never ignore anyone's messages — clients, teammates, superiors, or juniors</li>
+                            <li>Provide updates even when not asked</li>
+                            <li>If unable to complete task, respond with reason + alternative timeline</li>
+                        </ul>
+                    </div>
 
-            <!-- Tools Section -->
-            <section class="section" id="tools">
-                <div class="section-header">
-                    <div class="section-number">6</div>
-                    <h2>Daily Tools & Apps</h2>
-                </div>
 
-                <h3>Required Tools</h3>
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Tool</th>
-                            <th>Purpose</th>
-                            <th>Usage</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Discord</strong></td>
-                            <td>Team communication</td>
-                            <td>Open all day, respond within 1 hour</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Notion / ClickUp</strong></td>
-                            <td>Project management</td>
-                            <td>Update tasks daily</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Loom</strong></td>
-                            <td>Video messages</td>
-                            <td>For explanations and updates</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Google Meet / Zoom</strong></td>
-                            <td>Video calls</td>
-                            <td>Client and team meetings</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Google Drive</strong></td>
-                            <td>File storage</td>
-                            <td>Store all work files here</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <h3>Morning Startup (First 15 Minutes)</h3>
+                    <div class="checklist-card">
+                        <h4>🌅 Start of Day Checklist</h4>
+                        <ul>
+                            <li>Set your Discord status to <strong>🟢 Online</strong></li>
+                            <li>Check Discord for any overnight messages</li>
+                            <li><strong style="color: #EF4444;">🔴 CONNECT WITH YOUR MANAGER</strong> — Brief check-in
+                                call
+                                or message to get daily priorities</li>
+                            <li>Review your tasks in project management tool (Notion/Trello/ClickUp)</li>
+                            <li>Check email for client or team updates</li>
+                            <li>Read any SOPs relevant to today's work</li>
+                            <li>Plan your top 3 priorities for the day</li>
+                        </ul>
+                    </div>
 
-                <div class="info-box success">
-                    <h4>💡 Pro Tip: Browser Bookmarks</h4>
-                    <p>Create a bookmark folder called "Work" with:</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Your project management tool</li>
-                        <li>Discord web app</li>
-                        <li>SOP Hub (this site)</li>
-                        <li>Your email</li>
-                        <li>Time tracking tool</li>
+                    <h3>During Work Hours</h3>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Activity</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="time-block">10:00 AM</span></td>
+                                <td>Go Online + Morning Check-in</td>
+                                <td>Set Discord status, review priorities</td>
+                            </tr>
+                            <tr>
+                                <td><span class="time-block">10:15 AM - 1:00 PM</span></td>
+                                <td>Deep Work Block 1</td>
+                                <td>Focus on highest-priority tasks</td>
+                            </tr>
+                            <tr>
+                                <td><span class="time-block">1:00 PM - 2:00 PM</span></td>
+                                <td>Lunch Break</td>
+                                <td>Set status to 🍽️ Lunch</td>
+                            </tr>
+                            <tr>
+                                <td><span class="time-block">2:00 PM - 4:00 PM</span></td>
+                                <td>Deep Work Block 2</td>
+                                <td>Continue priority tasks</td>
+                            </tr>
+                            <tr>
+                                <td><span class="time-block">4:00 PM - 5:00 PM</span></td>
+                                <td>Meetings / Collaboration</td>
+                                <td>Client calls, team syncs</td>
+                            </tr>
+                            <tr>
+                                <td><span class="time-block">5:00 PM - 6:30 PM</span></td>
+                                <td>Deep Work Block 3</td>
+                                <td>Finish remaining tasks</td>
+                            </tr>
+                            <tr>
+                                <td><span class="time-block">6:30 PM - 7:00 PM</span></td>
+                                <td>Wrap Up + EOD Update</td>
+                                <td>Update tasks, send EOD report</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>End of Day (Last 15 Minutes)</h3>
+                    <div class="checklist-card">
+                        <h4>🌙 End of Day Checklist</h4>
+                        <ul>
+                            <li>Update all task statuses in project tool</li>
+                            <li>Send EOD update to your manager/channel</li>
+                            <li>Reply to any pending Discord messages</li>
+                            <li>Note any blockers for tomorrow</li>
+                            <li>Set Discord status to 🔴 Offline</li>
+                        </ul>
+                    </div>
+
+                    <!-- EOD Report Requirements - NEW -->
+                    <div class="critical-alert" style="margin: 25px 0;">
+                        <h3>📋 EOD Report - MANDATORY by 9:30 PM</h3>
+                        <p style="color: #F59E0B; font-weight: bold; margin-bottom: 15px;">⚠️ Be SPECIFIC — include
+                            exact numbers, not vague descriptions</p>
+                        <div
+                            style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; font-family: monospace; margin: 15px 0;">
+                            <p style="color: #10B981; margin-bottom: 10px;"><strong>REQUIRED FORMAT:</strong></p>
+                            <p><strong>[Full Name]</strong></p>
+                            <p>Today I worked on:</p>
+                            <p>1. [Client Name] - [Specific task] - [Number of items]</p>
+                            <p>2. [Second task if applicable]</p>
+                            <p><br>Store Link: [Full URL]</p>
+                            <p>Password: [Store password]</p>
+                            <p>Completion: [X]% | Blockers: [List or 'None']</p>
+                        </div>
+                        <h4 style="margin-top: 20px;">Specificity Requirements:</h4>
+                        <ul style="margin-top: 10px;">
+                            <li>Include <strong>exact number</strong> of products added/edited</li>
+                            <li>Include <strong>exact number</strong> of pages customized</li>
+                            <li>Include <strong>percentage completion</strong> of assigned project</li>
+                            <li>Include <strong>ETA</strong> for remaining work</li>
+                            <li>Update task tracker spreadsheet <strong>same day</strong></li>
+                        </ul>
+                        <p style="margin-top: 15px; font-size: 1.1em;"><strong>💡 Talk in NUMBERS most of the time —
+                                dates, quantities, percentages</strong></p>
+                    </div>
+                </section>
+
+                <!-- Communication Rules Section -->
+                <section class="section" id="communication">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2>Communication Rules</h2>
+                    </div>
+
+                    <div class="discord-box">
+                        <h4>💬 Discord is Our HQ</h4>
+                        <p style="margin-bottom: 15px;">Discord is our primary communication tool. Being active on
+                            Discord =
+                            being at work.</p>
+
+                        <div class="rule">
+                            <span style="font-size: 1.5em;">⏱️</span>
+                            <div>
+                                <strong>1-Hour Response Rule</strong><br>
+                                <span style="opacity: 0.9;">During work hours, reply to ALL messages within 1 hour. No
+                                    exceptions.</span>
+                            </div>
+                        </div>
+
+                        <div class="rule">
+                            <span style="font-size: 1.5em;">🟢</span>
+                            <div>
+                                <strong>Online Status Required</strong><br>
+                                <span style="opacity: 0.9;">Keep your status set to Online during work hours. Change it
+                                    when
+                                    on break or unavailable.</span>
+                            </div>
+                        </div>
+
+                        <div class="rule">
+                            <span style="font-size: 1.5em;">📱</span>
+                            <div>
+                                <strong>Mobile App Installed</strong><br>
+                                <span style="opacity: 0.9;">Install Discord on your phone for urgent messages when away
+                                    from
+                                    desk.</span>
+                            </div>
+                        </div>
+
+                        <div class="rule">
+                            <span style="font-size: 1.5em;">🔔</span>
+                            <div>
+                                <strong>Notifications ON</strong><br>
+                                <span style="opacity: 0.9;">Enable notifications for mentions and DMs. Mute only
+                                    non-essential channels.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box danger">
+                        <h4>🚨 What Happens If You Don't Respond?</h4>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li><strong>First occurrence:</strong> Friendly reminder from manager</li>
+                            <li><strong>Repeated:</strong> Logged as communication issue</li>
+                            <li><strong>Chronic:</strong> Performance review impact</li>
+                        </ul>
+                        <p style="margin-top: 15px;">If you need to step away, <strong>update your status</strong> and
+                            inform your manager. Communication is non-negotiable.</p>
+                    </div>
+
+                    <h3>Response Priority Guide</h3>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Message Type</th>
+                                <th>Response Time</th>
+                                <th>Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Client emergency / Site down</td>
+                                <td>Immediately (within 15 mins)</td>
+                                <td><span class="priority-high">URGENT</span></td>
+                            </tr>
+                            <tr>
+                                <td>Manager / Team Lead DM</td>
+                                <td>Within 30 minutes</td>
+                                <td><span class="priority-high">HIGH</span></td>
+                            </tr>
+                            <tr>
+                                <td>Team channel mentions</td>
+                                <td>Within 1 hour</td>
+                                <td><span class="priority-medium">MEDIUM</span></td>
+                            </tr>
+                            <tr>
+                                <td>General channel messages</td>
+                                <td>Within 2 hours</td>
+                                <td><span class="priority-normal">NORMAL</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box success">
+                        <h4>✅ Communication Best Practices</h4>
+                        <ul class="styled-list">
+                            <li>Acknowledge messages with a reaction if you need time to respond</li>
+                            <li>Use threads to keep conversations organized</li>
+                            <li>Tag the right people — don't spam @everyone unless necessary</li>
+                            <li>Keep messages clear and concise — get to the point</li>
+                            <li>Use voice channels for complex discussions</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Using SOPs Section -->
+                <section class="section" id="using-sops">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2>How to Use Your SOPs</h2>
+                    </div>
+
+                    <div class="info-box purple">
+                        <h4>📚 Your Role-Specific SOP</h4>
+                        <p>Every team member has a role-specific SOP. This is your <strong>primary reference</strong>
+                            for
+                            how to do your job excellently. Read it fully on Day 1, and reference it whenever you face a
+                            new
+                            situation.</p>
+                    </div>
+
+                    <h3>Available SOPs</h3>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>SOP</th>
+                                <th>For</th>
+                                <th>Key Topics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="sales-sop.html" style="color: var(--primary); font-weight: 600;">Sales
+                                        SOP</a>
+                                </td>
+                                <td>Sales Team</td>
+                                <td>Lead handling, pricing, closing, LTV</td>
+                            </tr>
+                            <tr>
+                                <td><a href="pm-sop.html" style="color: var(--primary); font-weight: 600;">PM SOP</a>
+                                </td>
+                                <td>Project Managers</td>
+                                <td>Client management, timelines, handoffs</td>
+                            </tr>
+                            <tr>
+                                <td><a href="developer-sop.html"
+                                        style="color: var(--primary); font-weight: 600;">Developer
+                                        SOP</a></td>
+                                <td>Shopify Developers</td>
+                                <td>Theme dev, speed, conversion</td>
+                            </tr>
+                            <tr>
+                                <td><a href="designer-sop.html"
+                                        style="color: var(--primary); font-weight: 600;">Designer
+                                        SOP</a></td>
+                                <td>UI/UX Designers</td>
+                                <td>Figma workflow, review process</td>
+                            </tr>
+                            <tr>
+                                <td><a href="cs-sop.html" style="color: var(--primary); font-weight: 600;">CS SOP</a>
+                                </td>
+                                <td>Client Success</td>
+                                <td>Retention, check-ins, escalations</td>
+                            </tr>
+                            <tr>
+                                <td><a href="hr-sop.html" style="color: var(--primary); font-weight: 600;">HR SOP</a>
+                                </td>
+                                <td>HR Team</td>
+                                <td>Hiring, onboarding, culture</td>
+                            </tr>
+                            <tr>
+                                <td><a href="content-sop.html" style="color: var(--primary); font-weight: 600;">Content
+                                        SOP</a></td>
+                                <td>Content Writers</td>
+                                <td>SEO, writing formulas, AI use</td>
+                            </tr>
+                            <tr>
+                                <td><a href="finance-sop.html" style="color: var(--primary); font-weight: 600;">Finance
+                                        SOP</a></td>
+                                <td>Finance Team</td>
+                                <td>Invoicing, cash flow, payroll</td>
+                            </tr>
+                            <tr>
+                                <td><a href="social-media-sop.html"
+                                        style="color: var(--primary); font-weight: 600;">Social
+                                        Media SOP</a></td>
+                                <td>Social Media Managers</td>
+                                <td>Content calendar, engagement, analytics</td>
+                            </tr>
+                            <tr>
+                                <td><a href="fullstack-sop.html" style="color: var(--primary); font-weight: 600;">Full
+                                        Stack
+                                        SOP</a></td>
+                                <td>Full Stack Developers</td>
+                                <td>App development, APIs, integrations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>When to Use SOPs</h3>
+                    <ul class="styled-list">
+                        <li><strong>Starting a new type of task:</strong> Check SOP first for best practices</li>
+                        <li><strong>Unsure how to handle a situation:</strong> SOP likely has the answer</li>
+                        <li><strong>Training someone:</strong> Use SOP as your training guide</li>
+                        <li><strong>Weekly refresh:</strong> Re-read relevant sections to stay sharp</li>
+                        <li><strong>After a mistake:</strong> Review SOP to prevent future issues</li>
                     </ul>
-                    <p style="margin-top: 10px;">Open all of these every morning with one click!</p>
-                </div>
-            </section>
 
-            <!-- Reporting Section -->
-            <section class="section" id="reporting">
-                <div class="section-header">
-                    <div class="section-number">7</div>
-                    <h2>Daily Reporting</h2>
-                </div>
-
-                <div class="info-box primary">
-                    <h4>📊 End of Day (EOD) Update</h4>
-                    <p>Every day before logging off, send a brief update to your manager or designated channel.</p>
-                </div>
-
-                <h3>EOD Update Format</h3>
-                <div
-                    style="background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 10px; padding: 20px; font-family: monospace; margin: 20px 0;">
-                    <strong>📅 EOD Update - [Your Name] - [Date]</strong><br><br>
-                    <strong>✅ Completed Today:</strong><br>
-                    • [Task 1]<br>
-                    • [Task 2]<br>
-                    • [Task 3]<br><br>
-                    <strong>🔄 In Progress:</strong><br>
-                    • [Task with % complete]<br><br>
-                    <strong>📌 Tomorrow's Priority:</strong><br>
-                    • [Main focus for tomorrow]<br><br>
-                    <strong>🚧 Blockers:</strong><br>
-                    • [Any blockers or issues] (or "None")
-                </div>
-
-                <div class="info-box warning">
-                    <h4>⚠️ EOD Updates Are Mandatory</h4>
-                    <p>Missing EOD updates will be tracked. If you need to log off early, send your EOD before leaving.
-                        No update = assumed you didn't work.</p>
-                </div>
-            </section>
-
-            <!-- Motivation Section -->
-            <section class="section" id="inspiration"
-                style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
-                <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
-                    <div class="section-number">🌟</div>
-                    <h2 style="color: white;">Your Daily Inspiration</h2>
-                </div>
-
-                <div style="text-align: center; padding: 30px 0;">
-                    <div style="font-size: 48px; margin-bottom: 20px;">🚀</div>
-                    <blockquote
-                        style="font-size: 24px; font-style: italic; color: #A78BFA; margin-bottom: 20px; line-height: 1.6;">
-                        "Excellence is not a skill, it's an attitude. Every interaction, every task, every day — be
-                        excellent."
-                    </blockquote>
-                    <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                    <h3 style="color: #A78BFA; margin-bottom: 15px;">📖 Why Your Work Matters</h3>
-                    <p style="color: #E5E7EB; line-height: 1.8;">
-                        Every client we help is a real person with real dreams. That store owner working at midnight?
-                        They're trying to build a better life for their family. The startup founder who just hired us?
-                        They bet their savings on their idea.
-                        <br><br>
-                        <strong style="color: #10B981;">When you show up on time, respond quickly, and do excellent work
-                            — you're not just completing tasks.</strong> You're helping someone's dream become reality.
-                        <br><br>
-                        <em>That's why we have SOPs. That's why we have standards. Because our clients deserve our
-                            best.</em>
-                    </p>
-                </div>
-
-                <div style="background: rgba(167, 139, 250, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                    <h3 style="color: #C4B5FD; margin-bottom: 15px;">⚡ Daily Productivity Tips</h3>
-                    <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
-                        <li>🎧 <strong>Music Focus:</strong> Lofi or instrumental music for deep work</li>
-                        <li>🍅 <strong>Pomodoro:</strong> 25 min work, 5 min break — keeps you fresh</li>
-                        <li>💧 <strong>Stay Hydrated:</strong> Dehydration kills focus — keep water nearby</li>
-                        <li>🚶 <strong>Move Every Hour:</strong> Walk, stretch, reset your brain</li>
-                        <li>📵 <strong>Phone Away:</strong> Put it in another room during deep work</li>
-                    </ul>
-                </div>
-
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                    <div
-                        style="background: rgba(167, 139, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                        <div style="font-size: 32px; margin-bottom: 10px;">⏰</div>
-                        <p style="color: #C4B5FD; font-weight: 600;">"Show up on time. Every time. No excuses."</p>
+                    <div class="info-box warning">
+                        <h4>⚠️ SOPs Are Living Documents</h4>
+                        <p>If you find a process that could be improved, or discover something that should be in the SOP
+                            but
+                            isn't, <strong>tell your manager</strong>. We update SOPs regularly to capture new best
+                            practices.</p>
                     </div>
-                    <div
-                        style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                        <div style="font-size: 32px; margin-bottom: 10px;">💬</div>
-                        <p style="color: #A7F3D0; font-weight: 600;">"Respond fast. Communicate often. Build trust."</p>
-                    </div>
-                    <div
-                        style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                        <div style="font-size: 32px; margin-bottom: 10px;">✨</div>
-                        <p style="color: #FDE68A; font-weight: 600;">"Do it right. Do it once. Do it excellently."</p>
-                    </div>
-                </div>
+                </section>
 
-                <div
-                    style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
-                    <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
-                    <p style="font-size: 20px; color: #A78BFA; font-weight: 600;">"Today, I will be present, responsive,
-                        and excellent. I am a Digital Hero."</p>
-                </div>
-            </section>
+                <!-- Time Management Section -->
+                <section class="section" id="time-management">
+                    <div class="section-header">
+                        <div class="section-number">5</div>
+                        <h2>Time Management</h2>
+                    </div>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <h3>Digital Heroes</h3>
-                <p><strong>"Show up. Speak up. Level up. Every single day."</strong></p>
-                <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">Internal Use Only | Version 1.0 | January
-                    2026</p>
-            </footer>
+                    <div class="info-box primary">
+                        <h4>⏰ The 80/20 Rule</h4>
+                        <p>80% of your results come from 20% of your tasks. Identify your high-impact work and protect
+                            time
+                            for it.</p>
+                    </div>
+
+                    <h3>Productivity Principles</h3>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
+                        <div class="checklist-card">
+                            <h4>🎯 Do This</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 8px 0;">✅ Start with your hardest task</li>
+                                <li style="padding: 8px 0;">✅ Time-block deep work sessions</li>
+                                <li style="padding: 8px 0;">✅ Take regular short breaks</li>
+                                <li style="padding: 8px 0;">✅ Set daily goals (max 3 priorities)</li>
+                                <li style="padding: 8px 0;">✅ Track your time on tasks</li>
+                            </ul>
+                        </div>
+                        <div class="checklist-card">
+                            <h4>🚫 Avoid This</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 8px 0;">❌ Checking email/Discord constantly</li>
+                                <li style="padding: 8px 0;">❌ Multitasking on important work</li>
+                                <li style="padding: 8px 0;">❌ Skipping breaks (leads to burnout)</li>
+                                <li style="padding: 8px 0;">❌ Saying yes to everything</li>
+                                <li style="padding: 8px 0;">❌ Working without a plan</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>If You're Falling Behind</h3>
+                    <ol style="padding-left: 20px; line-height: 2;">
+                        <li><strong>Don't panic</strong> — assess what's actually urgent</li>
+                        <li><strong>Communicate early</strong> — tell your manager BEFORE deadlines are missed</li>
+                        <li><strong>Ask for help</strong> — someone might be able to assist</li>
+                        <li><strong>Prioritize ruthlessly</strong> — what can wait vs. what can't?</li>
+                        <li><strong>Learn from it</strong> — why did this happen? How to prevent it?</li>
+                    </ol>
+                </section>
+
+                <!-- Tools Section -->
+                <section class="section" id="tools">
+                    <div class="section-header">
+                        <div class="section-number">6</div>
+                        <h2>Daily Tools & Apps</h2>
+                    </div>
+
+                    <h3>Required Tools</h3>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Tool</th>
+                                <th>Purpose</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Discord</strong></td>
+                                <td>Team communication</td>
+                                <td>Open all day, respond within 1 hour</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notion / ClickUp</strong></td>
+                                <td>Project management</td>
+                                <td>Update tasks daily</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Loom</strong></td>
+                                <td>Video messages</td>
+                                <td>For explanations and updates</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Meet / Zoom</strong></td>
+                                <td>Video calls</td>
+                                <td>Client and team meetings</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Drive</strong></td>
+                                <td>File storage</td>
+                                <td>Store all work files here</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box success">
+                        <h4>💡 Pro Tip: Browser Bookmarks</h4>
+                        <p>Create a bookmark folder called "Work" with:</p>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Your project management tool</li>
+                            <li>Discord web app</li>
+                            <li>SOP Hub (this site)</li>
+                            <li>Your email</li>
+                            <li>Time tracking tool</li>
+                        </ul>
+                        <p style="margin-top: 10px;">Open all of these every morning with one click!</p>
+                    </div>
+                </section>
+
+                <!-- Reporting Section -->
+                <section class="section" id="reporting">
+                    <div class="section-header">
+                        <div class="section-number">7</div>
+                        <h2>Daily Reporting</h2>
+                    </div>
+
+                    <div class="info-box primary">
+                        <h4>📊 End of Day (EOD) Update</h4>
+                        <p>Every day before logging off, send a brief update to your manager or designated channel.</p>
+                    </div>
+
+                    <h3>EOD Update Format</h3>
+                    <div
+                        style="background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 10px; padding: 20px; font-family: monospace; margin: 20px 0;">
+                        <strong>📅 EOD Update - [Your Name] - [Date]</strong><br><br>
+                        <strong>✅ Completed Today:</strong><br>
+                        • [Task 1]<br>
+                        • [Task 2]<br>
+                        • [Task 3]<br><br>
+                        <strong>🔄 In Progress:</strong><br>
+                        • [Task with % complete]<br><br>
+                        <strong>📌 Tomorrow's Priority:</strong><br>
+                        • [Main focus for tomorrow]<br><br>
+                        <strong>🚧 Blockers:</strong><br>
+                        • [Any blockers or issues] (or "None")
+                    </div>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ EOD Updates Are Mandatory</h4>
+                        <p>Missing EOD updates will be tracked. If you need to log off early, send your EOD before
+                            leaving.
+                            No update = assumed you didn't work.</p>
+                    </div>
+                </section>
+
+                <!-- Motivation Section -->
+                <section class="section" id="inspiration"
+                    style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
+                    <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
+                        <div class="section-number">🌟</div>
+                        <h2 style="color: white;">Your Daily Inspiration</h2>
+                    </div>
+
+                    <div style="text-align: center; padding: 30px 0;">
+                        <div style="font-size: 48px; margin-bottom: 20px;">🚀</div>
+                        <blockquote
+                            style="font-size: 24px; font-style: italic; color: #A78BFA; margin-bottom: 20px; line-height: 1.6;">
+                            "Excellence is not a skill, it's an attitude. Every interaction, every task, every day — be
+                            excellent."
+                        </blockquote>
+                        <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                        <h3 style="color: #A78BFA; margin-bottom: 15px;">📖 Why Your Work Matters</h3>
+                        <p style="color: #E5E7EB; line-height: 1.8;">
+                            Every client we help is a real person with real dreams. That store owner working at
+                            midnight?
+                            They're trying to build a better life for their family. The startup founder who just hired
+                            us?
+                            They bet their savings on their idea.
+                            <br><br>
+                            <strong style="color: #10B981;">When you show up on time, respond quickly, and do excellent
+                                work
+                                — you're not just completing tasks.</strong> You're helping someone's dream become
+                            reality.
+                            <br><br>
+                            <em>That's why we have SOPs. That's why we have standards. Because our clients deserve our
+                                best.</em>
+                        </p>
+                    </div>
+
+                    <div
+                        style="background: rgba(167, 139, 250, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                        <h3 style="color: #C4B5FD; margin-bottom: 15px;">⚡ Daily Productivity Tips</h3>
+                        <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
+                            <li>🎧 <strong>Music Focus:</strong> Lofi or instrumental music for deep work</li>
+                            <li>🍅 <strong>Pomodoro:</strong> 25 min work, 5 min break — keeps you fresh</li>
+                            <li>💧 <strong>Stay Hydrated:</strong> Dehydration kills focus — keep water nearby</li>
+                            <li>🚶 <strong>Move Every Hour:</strong> Walk, stretch, reset your brain</li>
+                            <li>📵 <strong>Phone Away:</strong> Put it in another room during deep work</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div
+                            style="background: rgba(167, 139, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 10px;">⏰</div>
+                            <p style="color: #C4B5FD; font-weight: 600;">"Show up on time. Every time. No excuses."</p>
+                        </div>
+                        <div
+                            style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 10px;">💬</div>
+                            <p style="color: #A7F3D0; font-weight: 600;">"Respond fast. Communicate often. Build trust."
+                            </p>
+                        </div>
+                        <div
+                            style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 10px;">✨</div>
+                            <p style="color: #FDE68A; font-weight: 600;">"Do it right. Do it once. Do it excellently."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                        <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
+                        </p>
+                        <p style="font-size: 20px; color: #A78BFA; font-weight: 600;">"Today, I will be present,
+                            responsive,
+                            and excellent. I am a Digital Hero."</p>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <h3>Digital Heroes</h3>
+                    <p><strong>"Show up. Speak up. Level up. Every single day."</strong></p>
+                    <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">Internal Use Only | Version 1.0 |
+                        January
+                        2026</p>
+                </footer>
+            </div>
+        </div>
+
+        <script src="admin-mode.js"></script>
+
+        <!-- Quiz System -->
+        <script src="assets/js/quiz.js"></script>
+        <script src="assets/js/quizzes/daily-quiz.js"></script>
+        <script>
+            function launchQuiz() {
+                SOPQuiz.init('Daily SOP', dailyQuestions);
+                SOPQuiz.open();
+            }
+        </script>
+</body>
+
+</div>
+</div>
+</div> <!-- End content-sop -->
+
+<!-- ASSETS CONTENT -->
+<div id="content-assets" class="view-section hidden" style="margin-left: 320px;">
+    <div class="container">
+        <div class="header">
+            <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
+            <h1>Daily Operations Assets</h1>
+            <p class="subtitle" style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Tools and
+                guides for daily productivity.</p>
+        </div>
+
+        <div id="videos" class="section-title"
+            style="border-left: 4px solid #3B82F6; padding-left: 15px; margin-bottom: 30px;">
+            <h2 style="margin: 0;">📹 Video Training</h2>
+        </div>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-placeholder">
+                    [YouTube Embed Placeholder]
+                    <div
+                        style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                        10:00</div>
+                </div>
+                <div class="video-content">
+                    <span class="tag">Productivity</span>
+                    <h3>Time Tracking Mastery</h3>
+                    <p>How to use our time tracking tool correctly.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="resources" class="section-title"
+            style="border-left: 4px solid #10B981; padding-left: 15px; margin: 60px 0 30px 0;">
+            <h2 style="margin: 0;">📄 Downloadable Resources</h2>
+        </div>
+
+        <div class="resource-grid">
+            <a href="#"
+                style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
+                <span style="font-size: 2em; margin-right: 20px;">📝</span>
+                <div>
+                    <strong style="display: block; font-size: 1.1em;">EOD Report Template</strong>
+                    <span style="color: #9CA3AF; font-size: 0.9em;">Daily reporting format</span>
+                </div>
+            </a>
         </div>
     </div>
+</div>
 
-    <script src="admin-mode.js"></script>
+<!-- ONBOARDING CONTENT -->
+<div id="content-onboarding" class="view-section hidden" style="margin-left: 320px;">
+    <div class="container">
+        <div class="header">
+            <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
+            <h1>Your Onboarding Journey</h1>
+            <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
+                to master our daily operations.</p>
+        </div>
 
-    <!-- Quiz System -->
-    <script src="assets/js/quiz.js"></script>
-    <script src="assets/js/quizzes/daily-quiz.js"></script>
-    <script>
-        function launchQuiz() {
-            SOPQuiz.init('Daily SOP', dailyQuestions);
-            SOPQuiz.open();
+        <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
+
+            <!-- Step 1 -->
+            <div id="step-1" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                <div class="timeline-marker"
+                    style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                    1</div>
+                <div class="card"
+                    style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
+                        understand, and internalize the Daily Operations SOP. This document outlines your daily
+                        responsibilities.</p>
+                    <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
+                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
+                        to Daily SOP</a>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div id="step-2" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                <div class="timeline-marker"
+                    style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                    2</div>
+                <div class="card"
+                    style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and watch
+                        the required training videos.</p>
+                    <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
+                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
+                        Assets Library</a>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div id="step-3" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                <div class="timeline-marker"
+                    style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                    3</div>
+                <div class="card"
+                    style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test</h3>
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by taking
+                        the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                    <div
+                        style="background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0ea5e9;">
+                        ℹ️ <strong>How to take the test:</strong> <br>Switch back to the <a href="#"
+                            onclick="switchView('sop'); return false;"
+                            style="color: #0284c7; text-decoration: underline;">Daily SOP</a> view and click the "🎓
+                        Test" button in the sidebar.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div id="step-4" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                <div class="timeline-marker"
+                    style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                    4</div>
+                <div class="card"
+                    style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
+                    <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording Task
+                    </h3>
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final verification.
+                        Record a <strong>30-minute screen sharing video</strong> walking us through your daily routine.
+                    </p>
+
+                    <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
+                        <strong>What to cover in your video:</strong>
+                        <ul style="color: #475569; line-height: 1.6; margin-top: 10px;">
+                            <li>Walk through the proper Check-In procedure.</li>
+                            <li>Demonstrate how you organize your tasks for the day.</li>
+                            <li>Show how you use the communication tools correctly.</li>
+                            <li>Walk through the EOD reporting process.</li>
+                        </ul>
+                    </div>
+
+                    <div class="success-box"
+                        style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
+                        <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
+                            Submission</strong>
+                        <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name] nailed
+                            this task:</p>
+                        <div class="video-embed"
+                            style="aspect-ratio: 16/9; background: #000; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; margin-top: 15px;">
+                            [Example Video Placeholder]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="admin-mode.js"></script>
+
+<style>
+    .hidden {
+        display: none !important;
+    }
+
+    .view-section {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
         }
-    </script>
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+<script>
+    function switchView(viewName) {
+        history.pushState(null, null, '#' + viewName);
+        const sections = ['sop', 'assets', 'onboarding'];
+        sections.forEach(section => {
+            const contentEl = document.getElementById('content-' + section);
+            const sidebarEl = document.getElementById('sidebar-' + section + '-links');
+            if (contentEl) contentEl.classList.toggle('hidden', section !== viewName);
+            if (sidebarEl) sidebarEl.classList.toggle('hidden', section !== viewName);
+        });
+    }
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash.replace('#', '');
+        if (['assets', 'onboarding'].includes(hash)) switchView(hash);
+        else switchView('sop');
+    });
+</script>
 </body>
 
 </html>

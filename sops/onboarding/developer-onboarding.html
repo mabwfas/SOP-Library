@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Developer - Onboarding Journey</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f172a;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #1e293b;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+            z-index: 1000;
+        }
+
+        .sidebar-header {
+            padding: 25px 20px 15px 20px;
+            text-align: center;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-header h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: white;
+            font-weight: 600;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 12px 20px;
+            color: #94a3b8;
+            text-decoration: none;
+            transition: 0.2s;
+            border-radius: 8px;
+            margin: 0 10px;
+            font-size: 0.9em;
+        }
+
+        .sidebar-back:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .sidebar-section-title {
+            padding: 20px 20px 10px 20px;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #64748b;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 0 15px;
+        }
+
+        .sidebar-nav-grid a {
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.85em;
+            text-align: center;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 0;
+            min-height: 100vh;
+            width: calc(100% - 280px);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 40px 100px 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            background: linear-gradient(45deg, #EC4899, #F472B6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -50px;
+            width: 32px;
+            height: 32px;
+            background: #0f172a;
+            border: 2px solid #EC4899;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #EC4899;
+            z-index: 1;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card h3 {
+            margin: 0 0 15px 0;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            color: #CBD5E1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #EC4899;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .action-btn:hover {
+            background: #DB2777;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(236, 72, 153, 0.4);
+        }
+
+        .secondary-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-left: 10px;
+        }
+
+        .secondary-btn:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .video-embed {
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span class="emoji">💻</span>
+            <h2>Developer Onboarding</h2>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../kra/developer-kra.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">📋
+                KRA</a>
+            <a href="../kpi/developer-kpi.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
+                KPI</a>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../resources/developer-assets.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">📚
+                Assets</a>
+            <a href="#" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.2); border: 1px solid #EC4899; box-shadow: 0 0 10px rgba(236, 72, 153, 0.3);">🚀
+                Start</a>
+        </div>
+
+        <a href="../developer-sop.html" class="sidebar-back"
+            style="background: rgba(255,255,255,0.05); margin-top: 10px; text-align: center;">← Back to Dev SOP</a>
+
+        <div class="sidebar-section-title">Timeline</div>
+        <div class="sidebar-nav-grid" style="grid-template-columns: 1fr;">
+            <a href="#step-1" style="justify-content: flex-start;">1️⃣ Master SOP</a>
+            <a href="#step-2" style="justify-content: flex-start;">2️⃣ Watch Videos</a>
+            <a href="#step-3" style="justify-content: flex-start;">3️⃣ Pass Test</a>
+            <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
+                <h1>Your Onboarding Journey</h1>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
+                    to become a certified Shopify Developer.</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div id="step-1" class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="card">
+                        <h3>📖 Master the SOP</h3>
+                        <p>Your first task is to read, understand, and internalize the Standard Operating Procedure.
+                            This document provides the coding standards and workflows.</p>
+                        <a href="../developer-sop.html" class="action-btn">Go to Developer SOP</a>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div id="step-2" class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="card">
+                        <h3>🎥 Watch Training Videos</h3>
+                        <p>Visit the Assets Library and watch the required training videos. These will give you visual
+                            context to the written SOPs.</p>
+                        <a href="../resources/developer-assets.html" class="action-btn">Open Assets Library</a>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div id="step-3" class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="card">
+                        <h3>🎓 Pass the Knowledge Test</h3>
+                        <p>Prove your understanding by taking the role-specific quiz. You need a score of 90% or higher
+                            to proceed.</p>
+                        <p
+                            style="font-size: 0.9em; color: #9CA3AF; background: rgba(0,0,0,0.3); padding: 10px; border-radius: 6px; display: inline-block;">
+                            ℹ️ <strong>How to take the test:</strong> Go back to the <a href="../developer-sop.html"
+                                style="color: #60A5FA;">Developer SOP</a> and click the "🎓 Test" button in the sidebar.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div id="step-4" class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="card" style="border-color: #EC4899; box-shadow: 0 0 20px rgba(236, 72, 153, 0.1);">
+                        <h3>🎙️ The 30-Minute Recording Task</h3>
+                        <p>This is your final verification. Record a <strong>30-minute screen sharing video</strong>
+                            walking us through your understanding of the role.</p>
+
+                        <div style="margin: 20px 0;">
+                            <strong>What to cover in your video:</strong>
+                            <ul style="color: #CBD5E1; line-height: 1.6;">
+                                <li>Walk through the SOP sections and explain them in your own words.</li>
+                                <li>Explain your KRA (Key Result Areas) and how you plan to achieve them.</li>
+                                <li>Explain the KPIs (Key Performance Indicators) you are measured on.</li>
+                                <li>Demonstrate how you would handle a mock coding task.</li>
+                            </ul>
+                        </div>
+
+                        <div class="success-box">
+                            <strong style="color: #34D399; display: block; margin-bottom: 10px;">🌟 Example
+                                Submission</strong>
+                            <p style="margin: 0; font-size: 0.9em; color: #D1FAE5;">Watch how [Top Performer Name]
+                                nailed this task:</p>
+                            <div class="video-embed">
+                                [Example Video Placeholder]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

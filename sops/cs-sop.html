@@ -670,6 +670,14 @@
                 style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
                 KPI</a>
         </div>
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 10px;">
+            <a href="#" onclick="switchView('assets'); return false;" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">📚
+                Assets</a>
+            <a href="#" onclick="switchView('onboarding'); return false;" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.2); border: 1px solid #EC4899;">🚀
+                Start</a>
+        </div>
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
@@ -679,988 +687,1300 @@
         </div>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
-        <div class="sidebar-section-title">1️⃣ Delivery & Reviews</div>
-        <div class="sidebar-nav-grid">
-            <a href="#delivery">📦 Delivery</a>
-            <a href="#reviews">⭐ Reviews</a>
-            <a href="#feedback">💬 Feedback</a>
-            <a href="#upsell">📈 Upsell</a>
+        <div id="sidebar-sop-links">
+            <div class="sidebar-section-title">1️⃣ Delivery & Reviews</div>
+            <div class="sidebar-nav-grid">
+                <a href="#delivery">📦 Delivery</a>
+                <a href="#reviews">⭐ Reviews</a>
+                <a href="#feedback">💬 Feedback</a>
+                <a href="#upsell">📈 Upsell</a>
+            </div>
+            <div class="sidebar-section-title">2️⃣ Client Relations</div>
+            <div class="sidebar-nav-grid">
+                <a href="#support">🛠️ Support</a>
+                <a href="#feedback">💬 Feedback</a>
+                <a href="#upsell">📈 Upsell</a>
+                <a href="#kpis">📊 KPIs</a>
+            </div>
+            <div class="sidebar-section-title">3️⃣ Scenarios</div>
+            <div class="sidebar-nav-grid">
+                <a href="#angry-client">😤 Angry</a>
+                <a href="#bad-review">⭐ Bad Review</a>
+                <a href="#cancel-mid-project">💸 Refund</a>
+                <a href="#scope-creep">🔄 Scope Creep</a>
+                <a href="#ghost-client">👻 Ghost</a>
+                <a href="#team-complaint">📢 Complaint</a>
+                <a href="#client-broke-it">🔧 Broke Site</a>
+                <a href="#competitor-compare">🏆 Competition</a>
+            </div>
+            <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
+            <div class="sidebar-nav-grid">
+                <a href="#tools">🤖 Tools</a>
+                <a href="#difficult-situations">⚠️ Difficult</a>
+                <a href="#kpis">📊 KPIs</a>
+                <a href="#inspiration">💪 Inspiration</a>
+            </div>
+        </div> <!-- End sidebar-sop-links -->
+
+        <!-- ASSETS SIDEBAR LINKS -->
+        <div id="sidebar-assets-links" class="hidden">
+            <div class="sidebar-section-title">Sections</div>
+            <div class="sidebar-nav-grid">
+                <a href="#videos">📹 Videos</a>
+                <a href="#resources">📄 Resources</a>
+            </div>
+            <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
-        <div class="sidebar-section-title">2️⃣ Client Relations</div>
-        <div class="sidebar-nav-grid">
-            <a href="#support">🛠️ Support</a>
-            <a href="#feedback">💬 Feedback</a>
-            <a href="#upsell">📈 Upsell</a>
-            <a href="#kpis">📊 KPIs</a>
-        </div>
-        <div class="sidebar-section-title">3️⃣ Scenarios</div>
-        <div class="sidebar-nav-grid">
-            <a href="#angry-client">😤 Angry</a>
-            <a href="#bad-review">⭐ Bad Review</a>
-            <a href="#cancel-mid-project">💸 Refund</a>
-            <a href="#scope-creep">🔄 Scope Creep</a>
-            <a href="#ghost-client">👻 Ghost</a>
-            <a href="#team-complaint">📢 Complaint</a>
-            <a href="#client-broke-it">🔧 Broke Site</a>
-            <a href="#competitor-compare">🏆 Competition</a>
-        </div>
-        <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
-        <div class="sidebar-nav-grid">
-            <a href="#tools">🤖 Tools</a>
-            <a href="#difficult-situations">⚠️ Difficult</a>
-            <a href="#kpis">📊 KPIs</a>
-            <a href="#inspiration">💪 Inspiration</a>
+
+        <!-- ONBOARDING SIDEBAR LINKS -->
+        <div id="sidebar-onboarding-links" class="hidden">
+            <div class="sidebar-section-title">Timeline</div>
+            <div class="sidebar-nav-grid" style="grid-template-columns: 1fr;">
+                <a href="#step-1" style="justify-content: flex-start;">1️⃣ Master SOP</a>
+                <a href="#step-2" style="justify-content: flex-start;">2️⃣ Watch Videos</a>
+                <a href="#step-3" style="justify-content: flex-start;">3️⃣ Pass Test</a>
+                <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
+            </div>
+            <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
     </aside>
 
     <div class="main-content">
-        <div class="container">
-            <header class="header">
-                <h1>🤝 Client Success SOP</h1>
-                <p class="subtitle">Delivery, Reviews, Support & Repeat Business</p>
-                <div class="badge-row">
-                    <span class="badge">⭐ 4.9★ Rating</span>
-                    <span class="badge">🔄 Repeat Clients</span>
-                    <span class="badge">💬 5-Star Reviews</span>
-                    <span class="badge">🎯 100% On-Time</span>
-                </div>
-            </header>
+        <div id="content-sop" class="view-section">
+            <div class="container">
+                <header class="header">
+                    <h1>🤝 Client Success SOP</h1>
+                    <p class="subtitle">Delivery, Reviews, Support & Repeat Business</p>
+                    <div class="badge-row">
+                        <span class="badge">⭐ 4.9★ Rating</span>
+                        <span class="badge">🔄 Repeat Clients</span>
+                        <span class="badge">💬 5-Star Reviews</span>
+                        <span class="badge">🎯 100% On-Time</span>
+                    </div>
+                </header>
 
-            <div id="searchResults"
-                style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
-                <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
-                <div id="resultsList"></div>
-                <button onclick="clearSearch()"
-                    style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
-                    Search</button>
+                <div id="searchResults"
+                    style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                    <div id="resultsList"></div>
+                    <button onclick="clearSearch()"
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                        Search</button>
+                </div>
+
+                <script>
+                    function searchSOP() {
+                        const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                        const sections = document.querySelectorAll('.section, .critical-alert');
+                        const resultsDiv = document.getElementById('searchResults');
+                        if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
+                        let matches = [];
+                        sections.forEach(section => {
+                            if (section.textContent.toLowerCase().includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--orange)'; matches.push(section); }
+                            else { section.style.display = 'none'; section.style.border = 'none'; }
+                        });
+                        document.getElementById('resultCount').textContent = matches.length;
+                        resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+                    }
+                    function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
+                </script>
+                </script>
+
+                <!-- Opening Story -->
+                <section class="section">
+                    <div class="section-header">
+                        <div class="section-number">📖</div>
+                        <h2>The Power of Post-Delivery Experience</h2>
+                    </div>
+
+                    <div class="story-box">
+                        <h4>How One 5-Star Review Brought $8 Lakhs in Business</h4>
+                        <p>In August 2024, we delivered a Shopify store to a skincare client. Project went smoothly.
+                            Store
+                            launched successfully.</p>
+
+                        <p>Most agencies would stop there. We didn't.</p>
+
+                        <p>Our PM followed up after 7 days with genuine care: <em>"How's the store performing? Any
+                                questions
+                                about managing orders?"</em></p>
+
+                        <p>The client was impressed. They left a detailed 5-star review with photos. That review got
+                            seen by
+                            their business network.</p>
+
+                        <p><strong>Result over the next 6 months:</strong></p>
+                        <ul style="margin: 15px 0 15px 20px;">
+                            <li>3 referrals from that client ($3.5 lakhs total)</li>
+                            <li>The client came back for 2 more projects ($4.5 lakhs)</li>
+                            <li>Total from ONE properly handled delivery: $8 lakhs</li>
+                        </ul>
+
+                        <div class="moral">
+                            <strong>🎯 The Lesson:</strong> The project doesn't end at delivery — that's where the REAL
+                            relationship begins. Post-delivery experience determines whether you get reviews, referrals,
+                            and
+                            repeat business. This is where 4.9★ ratings come from.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Critical Principles -->
+                <section class="critical-alert">
+                    <h2>🎯 CLIENT SUCCESS PRINCIPLES</h2>
+
+                    <div class="highlight-box">
+                        <h3 style="margin-bottom: 15px;">1. DELIVERY IS THE BEGINNING, NOT THE END</h3>
+                        <p>The sale started the relationship. Delivery STRENGTHENS it. Your goal: Turn clients into fans
+                            who
+                            refer others.</p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">2. EVERY CLIENT SHOULD LEAVE A 5-STAR REVIEW</h3>
+                        <p>If they're not leaving 5 stars, we failed somewhere. Our target is 4.9★ — that means almost
+                            ZERO
+                            bad
+                            reviews.</p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">3. SUPPORT PERIOD IS SACRED</h3>
+                        <p>30-90 day support isn't optional — it's our promise. Quick responses, genuine help, no
+                            "that's
+                            not in
+                            scope" attitude.</p>
+                    </div>
+                </section>
+
+                <!-- Delivery Process -->
+                <section class="section" id="delivery">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2>Store Delivery Process</h2>
+                    </div>
+
+                    <div class="info-box gold">
+                        <h4>💰 Payment Policy Reminder</h4>
+                        <p><strong>90% of projects:</strong> Full payment upfront before work begins (especially
+                            small-scale
+                            projects under $1.5L)</p>
+                        <p><strong>Large enterprise projects:</strong> Milestone payment — first milestone released when
+                            preview
+                            link is sent</p>
+                        <p>We do NOT do multi-stage milestones. Trust is built through our reputation, not payment
+                            protection.
+                        </p>
+                    </div>
+
+                    <h3>Pre-Delivery Checklist</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Items to Verify</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Design</strong></td>
+                                <td>All pages styled, mobile responsive, brand-consistent</td>
+                                <td>☐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Functionality</strong></td>
+                                <td>Navigation works, checkout complete, forms submit</td>
+                                <td>☐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Content</strong></td>
+                                <td>All products uploaded, policies added, no placeholders</td>
+                                <td>☐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Performance</strong></td>
+                                <td>PageSpeed 85+, test order completed, no errors</td>
+                                <td>☐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Training</strong></td>
+                                <td>Loom video recorded, documentation ready</td>
+                                <td>☐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Final Delivery Message</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>! 🎉</p>
+
+                        <p><strong>YOUR STORE IS READY!</strong></p>
+
+                        <p>🔗 Store Preview: <span class="placeholder">[Preview Link]</span></p>
+
+                        <p><strong>What's Completed:</strong></p>
+                        <p>✅ Homepage with all sections<br>
+                            ✅ Product pages optimized for conversions<br>
+                            ✅ Collection pages set up<br>
+                            ✅ All policy pages (Shipping, Returns, Privacy, Terms)<br>
+                            ✅ Contact page with form<br>
+                            ✅ Mobile optimization complete<br>
+                            ✅ Speed optimized (PageSpeed: <span class="placeholder">[Score]</span>)<br>
+                            ✅ Test order verified</p>
+
+                        <p><strong>Training Resources:</strong><br>
+                            📹 Store Management Video: <span class="placeholder">[Loom Link]</span><br>
+                            📄 Quick Reference Guide: <span class="placeholder">[PDF/Doc Link]</span></p>
+
+                        <p><strong>Your Support Period:</strong><br>
+                            You have <span class="placeholder">[30/90]</span> days of support starting today. For any
+                            issues
+                            or
+                            questions, message me directly!</p>
+
+                        <p><strong>Next Steps:</strong></p>
+                        <p>1. Review everything thoroughly<br>
+                            2. Let me know if any final adjustments needed<br>
+                            3. Once approved, we remove the password and you're LIVE! 🚀</p>
+
+                        <p>It's been an absolute pleasure building <span class="placeholder">[Brand Name]</span>. Can't
+                            wait
+                            to
+                            see your success!</p>
+                    </div>
+                </section>
+
+                <!-- Getting Reviews -->
+                <section class="section" id="reviews">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2>Getting 5-Star Reviews (Our 4.9★ Secret)</h2>
+                    </div>
+
+                    <div class="info-box danger">
+                        <h4>🚨 EVERY CLIENT SHOULD REVIEW</h4>
+                        <p>Our 4.9★ rating is our most valuable asset. Every happy client who DOESN'T leave a review is
+                            a
+                            missed
+                            opportunity. Make asking for reviews a natural part of every project close.</p>
+                    </div>
+
+                    <h3>When to Ask for Reviews</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">Moment of Delight (During Project)</div>
+                            <p>When client expresses happiness mid-project: <em>"So glad you love it! Would you be open
+                                    to
+                                    leaving a review once we're done? It really helps us grow."</em></p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">At Delivery (If Client is Happy)</div>
+                            <p>Include in delivery message: <em>"If you're happy with the work, a 5-star review would
+                                    mean
+                                    the
+                                    world to us!"</em></p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">7 Days Post-Delivery</div>
+                            <p>Follow up specifically for review if not received yet.</p>
+                        </div>
+                    </div>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Review Request (7 Days After Delivery)</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>! 👋</p>
+
+                        <p>Hope <span class="placeholder">[Brand Name]</span> is doing amazing! Just wanted to check in
+                            and
+                            see
+                            how things are going with the store.</p>
+
+                        <p>Quick favor: If you're happy with our work, would you mind leaving us a quick review? It
+                            really
+                            helps
+                            other entrepreneurs find quality help.</p>
+
+                        <p>🔗 Review Link: <span class="placeholder">[Fiverr/Upwork Review Link]</span></p>
+
+                        <p>Even just a few words about your experience would be incredible. 🙏</p>
+
+                        <p>And of course, if there's anything else you need help with, I'm just a message away!</p>
+                    </div>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Review Request (If Client Expressed Happiness)</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>!</p>
+
+                        <p>I'm so glad the store turned out exactly how you envisioned! Your feedback during the project
+                            meant a
+                            lot to us.</p>
+
+                        <p>If you have 2 minutes, a review sharing your experience would help us tremendously: <span
+                                class="placeholder">[Review Link]</span></p>
+
+                        <p>Screenshots of the store or mentioning specific things you loved would make it extra helpful
+                            for
+                            others considering working with us! 🙏</p>
+
+                        <p>Thanks again for trusting us with <span class="placeholder">[Brand Name]</span>!</p>
+                    </div>
+
+                    <div class="warning-story">
+                        <h4>The Review That Almost Didn't Happen</h4>
+                        <p>A client was thrilled with their store. Said "this is amazing!" multiple times. We delivered,
+                            they
+                            launched, everything was perfect.</p>
+                        <p>But we forgot to ask for a review. 3 weeks later, we remembered. By then, the client was busy
+                            with
+                            their launch, overwhelmed, and never got around to it.</p>
+                        <p>A 5-star review from a genuinely delighted client — lost because we didn't ask at the RIGHT
+                            moment.
+                        </p>
+                        <div class="lesson">
+                            <strong>🎯 The Lesson:</strong> Ask for reviews when clients are MOST happy — usually right
+                            at
+                            delivery when they're excited, or during the project when they express delight. Don't wait.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Client Feedback -->
+                <section class="section" id="feedback">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2>Requesting Client Feedback & Suggestions</h2>
+                    </div>
+
+                    <div class="info-box info">
+                        <h4>🎯 Why Ask for Suggestions?</h4>
+                        <p>Asking clients for improvement suggestions does TWO things:</p>
+                        <ol style="margin-left: 20px; margin-top: 10px;">
+                            <li>Makes them feel valued and heard</li>
+                            <li>Catches problems BEFORE they become negative reviews</li>
+                        </ol>
+                    </div>
+
+                    <h3>Copy-Paste Feedback Request Messages</h3>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Mid-Project Feedback Request</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>!</p>
+
+                        <p>Quick check-in as we're making good progress on your store. 🚀</p>
+
+                        <p>I wanted to ask: <strong>Is there anything we could be doing better?</strong> Any suggestions
+                            or
+                            feedback at this stage would be super valuable!</p>
+
+                        <p>We're always looking to improve, and your input helps us deliver exactly what you need.</p>
+
+                        <p>Looking forward to hearing from you!</p>
+                    </div>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Post-Delivery Feedback Request</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>!</p>
+
+                        <p>Now that your store is live, I'd love to get your honest feedback on working with us.</p>
+
+                        <p>A few quick questions (feel free to answer any that apply):</p>
+
+                        <p>1️⃣ What did you like most about working with us?<br>
+                            2️⃣ Is there anything we could have done better?<br>
+                            3️⃣ Was there anything that surprised you (good or bad)?<br>
+                            4️⃣ Would you recommend us to others? Why or why not?</p>
+
+                        <p>Your feedback helps us improve for future clients. Thanks so much! 🙏</p>
+                    </div>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Suggestions for Improvement Request</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>!</p>
+
+                        <p>We're always trying to level up our service, and who better to ask than clients like you?</p>
+
+                        <p><strong>If you could change ONE thing about your experience with us, what would it
+                                be?</strong>
+                        </p>
+
+                        <p>No wrong answers — even small suggestions help us get better. And if everything was perfect,
+                            that's
+                            great feedback too! 😊</p>
+
+                        <p>Thanks for taking the time!</p>
+                    </div>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Proactive Problem Catch (If Client Seems Quiet)</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>!</p>
+
+                        <p>Just wanted to check in — I noticed you've been a bit quiet lately. 🤔</p>
+
+                        <p><strong>Is everything okay with the store? Any concerns I should know about?</strong></p>
+
+                        <p>I'd rather hear about any issues now while I can fix them, than have you disappointed later.
+                            Your
+                            satisfaction is my priority!</p>
+
+                        <p>Let me know how I can help.</p>
+                    </div>
+                </section>
+
+                <!-- Support Period -->
+                <section class="section" id="support">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2>Support Period Management</h2>
+                    </div>
+
+                    <h3>What's Covered in Support</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>✅ INCLUDED (No Extra Charge)</th>
+                                <th>❌ NOT INCLUDED (Needs Quote)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bug fixes for our work</td>
+                                <td>New page designs</td>
+                            </tr>
+                            <tr>
+                                <td>Minor text/image updates</td>
+                                <td>Adding new features</td>
+                            </tr>
+                            <tr>
+                                <td>Questions about store management</td>
+                                <td>Third-party app troubleshooting</td>
+                            </tr>
+                            <tr>
+                                <td>Training on Shopify basics</td>
+                                <td>Issues caused by client edits</td>
+                            </tr>
+                            <tr>
+                                <td>Fixing errors we introduced</td>
+                                <td>Complete section redesigns</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Support Response Times</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Issue Type</th>
+                                <th>Response Time</th>
+                                <th>Resolution Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Critical (Site Down)</strong></td>
+                                <td>Within 1 hour</td>
+                                <td>Same day</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Important (Feature Broken)</strong></td>
+                                <td>Within 4 hours</td>
+                                <td>24 hours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Minor (Small Changes)</strong></td>
+                                <td>Within 24 hours</td>
+                                <td>48-72 hours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Questions (Training)</strong></td>
+                                <td>Within 24 hours</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Upsell Opportunities -->
+                <section class="section" id="upsell">
+                    <div class="section-header">
+                        <div class="section-number">5</div>
+                        <h2>Upsell Opportunities</h2>
+                    </div>
+
+                    <div class="info-box success">
+                        <h4>💰 The Best Clients Are Repeat Clients</h4>
+                        <p>Existing clients are 5x easier to sell to than new leads. They already trust you. Look for
+                            opportunities to add value.</p>
+                    </div>
+
+                    <h3>Natural Upsell Moments</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Client Need</th>
+                                <th>Upsell Opportunity</th>
+                                <th>Script</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>"Can you add a blog section?"</td>
+                                <td>Blog setup ($15,000)</td>
+                                <td>"Absolutely! Blog setup with 3 templates would be $15,000. Want me to add this?"
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>"I want email pop-ups"</td>
+                                <td>Email integration ($8,000-15,000)</td>
+                                <td>"Great for list building! Klaviyo/Mailchimp setup with welcome flow: $12,000."</td>
+                            </tr>
+                            <tr>
+                                <td>"Need help with SEO"</td>
+                                <td>SEO package ($20,000+)</td>
+                                <td>"Happy to help! Our SEO optimization package starts at $20,000."</td>
+                            </tr>
+                            <tr>
+                                <td>"Store needs updates"</td>
+                                <td>Monthly maintenance</td>
+                                <td>"We offer monthly maintenance at $8,000/month. Includes updates, monitoring,
+                                    priority
+                                    support."</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Proactive Upsell (30 Days Post-Launch)</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>!</p>
+
+                        <p>It's been about a month since <span class="placeholder">[Brand Name]</span> launched. How's
+                            everything going? 🚀</p>
+
+                        <p>Now that you've got some traffic and data, here are a few things that could help boost
+                            conversions:
+                        </p>
+
+                        <p>📧 <strong>Email Collection Pop-up:</strong> Capture visitors before they leave. ($8,000)<br>
+                            🔍 <strong>SEO Optimization:</strong> Get found on Google. ($20,000)<br>
+                            📱 <strong>WhatsApp Integration:</strong> Direct customer communication. ($5,000)</p>
+
+                        <p>No pressure at all — just wanted to share options if you're looking to grow!</p>
+
+                        <p>Let me know if any of these interest you or if there's something else you need. 🙌</p>
+                    </div>
+                </section>
+
+                <!-- KPIs -->
+                <section class="section" id="kpis">
+                    <div class="section-header">
+                        <div class="section-number">📊</div>
+                        <h2>Client Success KPIs</h2>
+                    </div>
+
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="label">On-Time Delivery</div>
+                            <div class="metric">100%</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Client Satisfaction</div>
+                            <div class="metric">4.9★</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Review Rate</div>
+                            <div class="metric">80%+</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Support Response</div>
+                            <div class="metric">&lt;4 hrs</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Repeat Client Rate</div>
+                            <div class="metric">30%+</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Referral Rate</div>
+                            <div class="metric">20%+</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tools & Platforms -->
+                <section class="section" id="tools">
+                    <div class="section-header">
+                        <div class="section-number">🔧</div>
+                        <h2>Tools & Platforms We Use</h2>
+                    </div>
+
+                    <div class="info-box info">
+                        <h4>📌 Know Your Tools Inside Out</h4>
+                        <p>Every tool has a purpose. Master these to deliver exceptional client experiences.</p>
+                    </div>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Tool</th>
+                                <th>Purpose</th>
+                                <th>When to Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Fiverr / Upwork</strong></td>
+                                <td>Primary client communication platform</td>
+                                <td>All client messages, order management, reviews</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Slack</strong></td>
+                                <td>Internal team communication</td>
+                                <td>Questions to team, updates, escalations</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Meet</strong></td>
+                                <td>Live revision calls with clients</td>
+                                <td>Kickoff calls, live fixes, screen share sessions</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Loom</strong></td>
+                                <td>Screen recordings for training</td>
+                                <td>Store walkthroughs, how-to videos, progress updates</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Drive</strong></td>
+                                <td>File storage & sharing</td>
+                                <td>Client assets, deliverables, documentation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notion / ClickUp</strong></td>
+                                <td>Project tracking</td>
+                                <td>Track client status, follow-ups, notes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Shopify Admin</strong></td>
+                                <td>Store management</td>
+                                <td>Verifying issues, helping clients, troubleshooting</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>📞 Communication Platform Best Practices</h3>
+
+                    <div class="checklist-grid">
+                        <div class="checklist-card">
+                            <h4>Fiverr/Upwork</h4>
+                            <ul class="styled-list check-list">
+                                <li>Respond within 1 hour during work hours</li>
+                                <li>Use professional, friendly tone</li>
+                                <li>Never share personal contact info</li>
+                                <li>Document everything in platform messages</li>
+                                <li>Ask for reviews at the right moment</li>
+                            </ul>
+                        </div>
+                        <div class="checklist-card">
+                            <h4>Google Meet</h4>
+                            <ul class="styled-list check-list">
+                                <li>Send calendar invite with agenda</li>
+                                <li>Test audio/video before call</li>
+                                <li>Have store open and ready</li>
+                                <li>Take notes during call</li>
+                                <li>Send summary after call</li>
+                            </ul>
+                        </div>
+                        <div class="checklist-card">
+                            <h4>Loom</h4>
+                            <ul class="styled-list check-list">
+                                <li>Keep videos under 5 minutes</li>
+                                <li>Speak clearly and slowly</li>
+                                <li>Show, don't just tell</li>
+                                <li>Include clickable chapters</li>
+                                <li>Share with password if sensitive</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ChatGPT Guide -->
+                <section class="section">
+                    <div class="section-header">
+                        <div class="section-number">🤖</div>
+                        <h2>Using ChatGPT for Client Success</h2>
+                    </div>
+
+                    <div class="info-box info">
+                        <h4>📚 ChatGPT Prompts</h4>
+                        <ul class="styled-list">
+                            <li>"Write a professional follow-up message asking for a 5-star review"</li>
+                            <li>"How do I ask for client feedback without seeming insecure?"</li>
+                            <li>"Create a Shopify store training outline for first-time clients"</li>
+                            <li>"Write a polite response declining an out-of-scope request"</li>
+                            <li>"How do I turn a support request into an upsell opportunity?"</li>
+                            <li>"Role-play: A client is unhappy about delivery time. How should I respond?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box success">
+                        <h4>🎯 Daily Practice</h4>
+                        <ul class="styled-list check-list">
+                            <li>Practice writing personalized follow-up messages</li>
+                            <li>Role-play difficult client scenarios</li>
+                            <li>Create template library for common situations</li>
+                            <li>Learn upselling without being pushy</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Troubleshooting Difficult Client Situations -->
+                <section class="section" id="troubleshooting">
+                    <div class="section-header">
+                        <div class="section-number">🔧</div>
+                        <h2>Troubleshooting Difficult Situations</h2>
+                    </div>
+
+                    <h3>Client Is Unhappy with Delivery</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Complaint Type</th>
+                                <th>Response Approach</th>
+                                <th>Example Script</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>"It's not what I expected"</strong></td>
+                                <td>Clarify expectations, offer revision</td>
+                                <td>"I'm sorry it's not what you envisioned. Can you share specifically what feels off?
+                                    I
+                                    want
+                                    to make this right."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>"It looks different than reference"</strong></td>
+                                <td>Show what was promised, explain differences</td>
+                                <td>"Let me walk you through the design decisions. If there are specific elements you'd
+                                    like
+                                    changed, happy to adjust."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>"I want a refund"</strong></td>
+                                <td>Understand issue, offer to fix, escalate if needed</td>
+                                <td>"Before we discuss refunds, I really want to understand what went wrong. Give me one
+                                    chance
+                                    to make it right."</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Client Threatens Bad Review</h3>
+
+                    <div class="info-box danger">
+                        <h4>🚨 IMMEDIATE ESCALATION REQUIRED</h4>
+                        <ol style="margin-left: 20px;">
+                            <li><strong>Don't panic</strong> — Stay calm and professional in all communication</li>
+                            <li><strong>Notify manager IMMEDIATELY</strong> — Don't try to handle alone</li>
+                            <li><strong>Document everything</strong> — Screenshot all messages, note timelines</li>
+                            <li><strong>Attempt resolution</strong> — Call them, understand real issue</li>
+                            <li><strong>Never threaten back</strong> — Only say things you'd be okay with being public
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3>Getting the 5-Star Review</h3>
+
+                    <div class="info-box success">
+                        <h4>✅ How to Ask for Reviews Without Being Pushy</h4>
+                        <ul class="styled-list check-list">
+                            <li><strong>Time it right:</strong> Wait until they've expressed satisfaction</li>
+                            <li><strong>Make it easy:</strong> Provide direct link to review page</li>
+                            <li><strong>Be specific:</strong> "If you're happy, a 5-star review really helps us..."</li>
+                            <li><strong>Follow up once:</strong> If no review in 3 days, one gentle reminder</li>
+                            <li><strong>Accept no:</strong> Some people don't leave reviews. That's okay.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Turning Complaints into Loyalty</h3>
+
+                    <div class="info-box gold">
+                        <h4>💡 The Complaint = Opportunity Mindset</h4>
+                        <p>Clients who complain and get their issue resolved often become your <strong>biggest
+                                advocates</strong>. They test you and you pass. That builds trust.</p>
+                        <ul class="styled-list" style="margin-top: 15px;">
+                            <li><strong>Respond faster than expected</strong> — Speed shows you care</li>
+                            <li><strong>Over-fix the problem</strong> — Give them more than they asked for</li>
+                            <li><strong>Follow up after</strong> — "How's everything working now?"</li>
+                            <li><strong>Send a small "sorry" gesture</strong> — Free add-on, extended support</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Difficult Situations Section -->
+                <section class="section" id="difficult-situations">
+                    <div class="section-header">
+                        <div class="section-number">⚠️</div>
+                        <h2>Handling Difficult Situations</h2>
+                    </div>
+
+                    <h3>🔴 Angry Client Demanding Refund</h3>
+
+                    <h3>🎯 Task Priority Order (What Comes First)</h3>
+                    <div class="info-box success" style="margin-bottom: 30px;">
+                        <p><strong>Handle in this order every day:</strong></p>
+                        <ol style="margin-top: 15px; line-height: 2;">
+                            <li><strong>🔴 P0 - Angry/Escalated Clients</strong> → Damage control. Respond within 30
+                                minutes.</li>
+                            <li><strong>🔴 P0 - Active Project Issues</strong> → Clients reporting problems with current
+                                work.</li>
+                            <li><strong>🔴 P0 - Refund/Cancellation Requests</strong> → Time-sensitive, needs fast
+                                de-escalation.</li>
+                            <li><strong>🟡 P1 - All Client Messages</strong> → Respond within 1 hour during work hours.
+                            </li>
+                            <li><strong>🟡 P1 - Delivery Follow-ups</strong> → Check if recent deliveries are
+                                satisfactory.
+                            </li>
+                            <li><strong>🟢 P2 - Client Check-ins</strong> → Proactive outreach to quiet accounts.</li>
+                            <li><strong>🟢 P2 - Feedback Collection</strong> → Reviews, testimonials, referral requests.
+                            </li>
+                            <li><strong>⚪ P3 - Process Documentation</strong> → Knowledge base, templates, FAQs.</li>
+                        </ol>
+                        <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Unhappy clients > Active issues > All
+                            messages > Proactive outreach.</p>
+                    </div>
+
+                    <h3 id="angry-client">🔴 Angry Client Demanding Refund</h3>
+                    <div class="info-box danger">
+                        <p><strong>Situation:</strong> Client is upset and threatening to dispute payment.</p>
+                        <p><strong>Response:</strong> "I hear your frustration and I'm sorry you're experiencing this.
+                            Let
+                            me understand the specific issues. Before we discuss refunds, can we try to fix this for
+                            you? I
+                            want to make this right."</p>
+                        <p><strong>Rule:</strong> Listen first, empathize, offer solutions. Escalate to management if
+                            they
+                            insist on refund.</p>
+                    </div>
+
+                    <h3 id="team-complaint">🔴 Client Complaining About Team Member</h3>
+                    <div class="info-box danger">
+                        <p><strong>Situation:</strong> Client says developer/designer was rude or did bad work.</p>
+                        <p><strong>Response:</strong> "I apologize for this experience. I'll investigate and ensure it
+                            doesn't happen again. Let me personally oversee the resolution of your project."</p>
+                        <p><strong>Rule:</strong> Never throw team under the bus. Handle internally after call.</p>
+                    </div>
+
+                    <h3 id="scope-creep">🔴 Client Wants Something Outside Scope for Free</h3>
+                    <div class="info-box warning">
+                        <p><strong>Situation:</strong> Client expects additional features not in original order.</p>
+                        <p><strong>Response:</strong> "I'd love to help with that! That feature wasn't in our original
+                            scope. Let me get you a quick quote for this addition. It's a [small/medium] enhancement."
+                        </p>
+                        <p><strong>Rule:</strong> Be helpful but protect scope. Additional work = additional payment.
+                        </p>
+                    </div>
+
+                    <h3 id="ghost-client">🔴 Client Not Responding After Delivery</h3>
+                    <div class="info-box warning">
+                        <p><strong>Situation:</strong> Project delivered but client isn't approving or responding.</p>
+                        <p><strong>Response:</strong> Send sequence: Day 2: "Just checking in!" Day 5: "Want to make
+                            sure
+                            everything works." Day 10: "I'll mark this complete unless I hear otherwise."</p>
+                        <p><strong>Rule:</strong> Document all attempts. After 14 days, mark complete.</p>
+                    </div>
+
+                    <h3 id="cancel-mid-project">🔴 Client Wants to Cancel Mid-Project</h3>
+                    <div class="info-box danger">
+                        <p><strong>Situation:</strong> Client wants to stop work and get money back after we've started.
+                        </p>
+                        <p><strong>Response:</strong> "I understand circumstances change. We've already completed [X
+                            work].
+                            Per our terms, work completed isn't refundable. Would you like to pause instead and resume
+                            later?"</p>
+                        <p><strong>Rule:</strong> Offer pause option. Escalate to management for refund discussions.</p>
+                    </div>
+
+                    <h3 id="bad-review">🔴 Client Leaving Negative Review</h3>
+                    <div class="info-box danger">
+                        <p><strong>Situation:</strong> Client threatens to or has left a bad review.</p>
+                        <p><strong>Response:</strong> "I'm sorry we didn't meet your expectations. I'd like to make this
+                            right. Could we schedule a call to resolve your concerns? I'm committed to finding a
+                            solution."
+                        </p>
+                        <p><strong>Rule:</strong> Attempt resolution first. If unreasonable, respond professionally to
+                            review.</p>
+                    </div>
+
+                    <h3 id="client-broke-it">🔴 Client Has Technical Issues They Caused</h3>
+                    <div class="info-box warning">
+                        <p><strong>Situation:</strong> Client broke something while editing their site and blames us.
+                        </p>
+                        <p><strong>Response:</strong> "Let me take a look. I can see changes were made after our
+                            delivery on
+                            [date]. I'm happy to help fix this — let me quote the repair work."</p>
+                        <p><strong>Rule:</strong> Show evidence diplomatically. Repairs after client changes = paid
+                            support.
+                        </p>
+                    </div>
+
+                    <h3 id="competitor-compare">🔴 Client Comparing Us to Competitors</h3>
+                    <div class="info-box warning">
+                        <p><strong>Situation:</strong> Client says "Other agencies would do this for free."</p>
+                        <p><strong>Response:</strong> "Every agency has different approaches. We focus on quality and
+                            results. Our 4.9-star rating and 2000+ projects reflect that. I want to ensure you get the
+                            best
+                            outcome."</p>
+                        <p><strong>Rule:</strong> Don't engage in competitor bashing. Focus on our value.</p>
+                    </div>
+                </section>
+
+                <!-- Motivation Section -->
+                <section class="section" id="inspiration"
+                    style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
+                    <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
+                        <div class="section-number">🌟</div>
+                        <h2 style="color: white;">Your Daily Inspiration</h2>
+                    </div>
+
+                    <div style="text-align: center; padding: 30px 0;">
+                        <div style="font-size: 48px; margin-bottom: 20px;">💚</div>
+                        <blockquote
+                            style="font-size: 24px; font-style: italic; color: #34D399; margin-bottom: 20px; line-height: 1.6;">
+                            "Client Success isn't a department — it's the entire company's mission. You are the voice of
+                            the
+                            customer."
+                        </blockquote>
+                        <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                        <h3 style="color: #34D399; margin-bottom: 15px;">📖 Success Story: The Angry Client Who Became
+                            Our
+                            Biggest Advocate</h3>
+                        <p style="color: #E5E7EB; line-height: 1.8;">
+                            A client was furious — their site went down during a sale. They demanded a full refund. Our
+                            CS
+                            rep listened patiently, apologized sincerely, and offered a solution: free rush support + 1
+                            month free.
+                            <br><br>
+                            But they went further — they sent a personalized Loom video explaining exactly what happened
+                            and
+                            how we'd prevent it in the future.
+                            <br><br>
+                            <strong style="color: #10B981;">The result?</strong> Not only did they stay, they referred
+                            <strong style="color: #FCD34D;">3 new clients</strong> and left our best Google review ever.
+                            <br><br>
+                            <em>The lesson: Problems are opportunities to create superfans.</em>
+                        </p>
+                    </div>
+
+                    <div
+                        style="background: rgba(52, 211, 153, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                        <h3 style="color: #6EE7B7; margin-bottom: 15px;">⚡ Productivity Hacks for Client Success</h3>
+                        <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
+                            <li>📧 <strong>Email Templates:</strong> Save 10+ hours/week with pre-written responses</li>
+                            <li>🎥 <strong>Loom Over Text:</strong> 2-min video beats 10 back-and-forth emails</li>
+                            <li>📅 <strong>Block Check-In Time:</strong> Schedule client outreach, don't just react</li>
+                            <li>🏷️ <strong>Tag & Categorize:</strong> Organize clients by status for quick reference
+                            </li>
+                            <li>⏰ <strong>Respond in 1 Hour:</strong> Speed builds trust — make it a habit</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div
+                            style="background: rgba(52, 211, 153, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 10px;">🎧</div>
+                            <p style="color: #6EE7B7; font-weight: 600;">"Listen to understand, not to respond."</p>
+                        </div>
+                        <div
+                            style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 10px;">❤️</div>
+                            <p style="color: #93C5FD; font-weight: 600;">"Treat every client like your only client."</p>
+                        </div>
+                        <div
+                            style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 32px; margin-bottom: 10px;">🌟</div>
+                            <p style="color: #FDE68A; font-weight: 600;">"Your patience today is their loyalty
+                                tomorrow."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                        <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
+                        </p>
+                        <p style="font-size: 20px; color: #34D399; font-weight: 600;">"Today, I will make every client
+                            feel
+                            heard, valued, and confident in choosing us."</p>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <h3>Digital Heroes</h3>
+                    <p><strong>"Turn clients into fans who refer others"</strong></p>
+                    <p style="margin-top: 20px;">100% On-Time | 4.9★ Rating | Relationships Over Transactions</p>
+                    <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.7;">Internal Use Only | Version 2.0 |
+                        January
+                        2026
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div> <!-- End content-sop -->
+
+    <!-- ASSETS CONTENT -->
+    <div id="content-assets" class="view-section hidden" style="margin-left: 320px;">
+        <div class="container">
+            <div class="header">
+                <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
+                <h1>CS Assets & Training Library</h1>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
+                    training, scripts, and resources to help you master your role.</p>
             </div>
 
-            <script>
-                function searchSOP() {
-                    const query = document.getElementById('searchInput').value.toLowerCase().trim();
-                    const sections = document.querySelectorAll('.section, .critical-alert');
-                    const resultsDiv = document.getElementById('searchResults');
-                    if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
-                    let matches = [];
-                    sections.forEach(section => {
-                        if (section.textContent.toLowerCase().includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--orange)'; matches.push(section); }
-                        else { section.style.display = 'none'; section.style.border = 'none'; }
-                    });
-                    document.getElementById('resultCount').textContent = matches.length;
-                    resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
-                }
-                function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
-            </script>
-            </script>
+            <div id="videos" class="section-title"
+                style="border-left: 4px solid #3B82F6; padding-left: 15px; margin-bottom: 30px;">
+                <h2 style="margin: 0;">📹 Video Training</h2>
+            </div>
 
-            <!-- Opening Story -->
-            <section class="section">
-                <div class="section-header">
-                    <div class="section-number">📖</div>
-                    <h2>The Power of Post-Delivery Experience</h2>
-                </div>
-
-                <div class="story-box">
-                    <h4>How One 5-Star Review Brought $8 Lakhs in Business</h4>
-                    <p>In August 2024, we delivered a Shopify store to a skincare client. Project went smoothly. Store
-                        launched successfully.</p>
-
-                    <p>Most agencies would stop there. We didn't.</p>
-
-                    <p>Our PM followed up after 7 days with genuine care: <em>"How's the store performing? Any questions
-                            about managing orders?"</em></p>
-
-                    <p>The client was impressed. They left a detailed 5-star review with photos. That review got seen by
-                        their business network.</p>
-
-                    <p><strong>Result over the next 6 months:</strong></p>
-                    <ul style="margin: 15px 0 15px 20px;">
-                        <li>3 referrals from that client ($3.5 lakhs total)</li>
-                        <li>The client came back for 2 more projects ($4.5 lakhs)</li>
-                        <li>Total from ONE properly handled delivery: $8 lakhs</li>
-                    </ul>
-
-                    <div class="moral">
-                        <strong>🎯 The Lesson:</strong> The project doesn't end at delivery — that's where the REAL
-                        relationship begins. Post-delivery experience determines whether you get reviews, referrals, and
-                        repeat business. This is where 4.9★ ratings come from.
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            15:00</div>
                     </div>
-                </div>
-            </section>
-
-            <!-- Critical Principles -->
-            <section class="critical-alert">
-                <h2>🎯 CLIENT SUCCESS PRINCIPLES</h2>
-
-                <div class="highlight-box">
-                    <h3 style="margin-bottom: 15px;">1. DELIVERY IS THE BEGINNING, NOT THE END</h3>
-                    <p>The sale started the relationship. Delivery STRENGTHENS it. Your goal: Turn clients into fans who
-                        refer others.</p>
-                </div>
-
-                <div class="highlight-box" style="margin-top: 20px;">
-                    <h3 style="margin-bottom: 15px;">2. EVERY CLIENT SHOULD LEAVE A 5-STAR REVIEW</h3>
-                    <p>If they're not leaving 5 stars, we failed somewhere. Our target is 4.9★ — that means almost ZERO
-                        bad
-                        reviews.</p>
-                </div>
-
-                <div class="highlight-box" style="margin-top: 20px;">
-                    <h3 style="margin-bottom: 15px;">3. SUPPORT PERIOD IS SACRED</h3>
-                    <p>30-90 day support isn't optional — it's our promise. Quick responses, genuine help, no "that's
-                        not in
-                        scope" attitude.</p>
-                </div>
-            </section>
-
-            <!-- Delivery Process -->
-            <section class="section" id="delivery">
-                <div class="section-header">
-                    <div class="section-number">1</div>
-                    <h2>Store Delivery Process</h2>
-                </div>
-
-                <div class="info-box gold">
-                    <h4>💰 Payment Policy Reminder</h4>
-                    <p><strong>90% of projects:</strong> Full payment upfront before work begins (especially small-scale
-                        projects under $1.5L)</p>
-                    <p><strong>Large enterprise projects:</strong> Milestone payment — first milestone released when
-                        preview
-                        link is sent</p>
-                    <p>We do NOT do multi-stage milestones. Trust is built through our reputation, not payment
-                        protection.
-                    </p>
-                </div>
-
-                <h3>Pre-Delivery Checklist</h3>
-
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Items to Verify</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Design</strong></td>
-                            <td>All pages styled, mobile responsive, brand-consistent</td>
-                            <td>☐</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Functionality</strong></td>
-                            <td>Navigation works, checkout complete, forms submit</td>
-                            <td>☐</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Content</strong></td>
-                            <td>All products uploaded, policies added, no placeholders</td>
-                            <td>☐</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Performance</strong></td>
-                            <td>PageSpeed 85+, test order completed, no errors</td>
-                            <td>☐</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Training</strong></td>
-                            <td>Loom video recorded, documentation ready</td>
-                            <td>☐</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="template-box">
-                    <div class="template-header">📝 Template: Final Delivery Message</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>! 🎉</p>
-
-                    <p><strong>YOUR STORE IS READY!</strong></p>
-
-                    <p>🔗 Store Preview: <span class="placeholder">[Preview Link]</span></p>
-
-                    <p><strong>What's Completed:</strong></p>
-                    <p>✅ Homepage with all sections<br>
-                        ✅ Product pages optimized for conversions<br>
-                        ✅ Collection pages set up<br>
-                        ✅ All policy pages (Shipping, Returns, Privacy, Terms)<br>
-                        ✅ Contact page with form<br>
-                        ✅ Mobile optimization complete<br>
-                        ✅ Speed optimized (PageSpeed: <span class="placeholder">[Score]</span>)<br>
-                        ✅ Test order verified</p>
-
-                    <p><strong>Training Resources:</strong><br>
-                        📹 Store Management Video: <span class="placeholder">[Loom Link]</span><br>
-                        📄 Quick Reference Guide: <span class="placeholder">[PDF/Doc Link]</span></p>
-
-                    <p><strong>Your Support Period:</strong><br>
-                        You have <span class="placeholder">[30/90]</span> days of support starting today. For any issues
-                        or
-                        questions, message me directly!</p>
-
-                    <p><strong>Next Steps:</strong></p>
-                    <p>1. Review everything thoroughly<br>
-                        2. Let me know if any final adjustments needed<br>
-                        3. Once approved, we remove the password and you're LIVE! 🚀</p>
-
-                    <p>It's been an absolute pleasure building <span class="placeholder">[Brand Name]</span>. Can't wait
-                        to
-                        see your success!</p>
-                </div>
-            </section>
-
-            <!-- Getting Reviews -->
-            <section class="section" id="reviews">
-                <div class="section-header">
-                    <div class="section-number">2</div>
-                    <h2>Getting 5-Star Reviews (Our 4.9★ Secret)</h2>
-                </div>
-
-                <div class="info-box danger">
-                    <h4>🚨 EVERY CLIENT SHOULD REVIEW</h4>
-                    <p>Our 4.9★ rating is our most valuable asset. Every happy client who DOESN'T leave a review is a
-                        missed
-                        opportunity. Make asking for reviews a natural part of every project close.</p>
-                </div>
-
-                <h3>When to Ask for Reviews</h3>
-
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="time">Moment of Delight (During Project)</div>
-                        <p>When client expresses happiness mid-project: <em>"So glad you love it! Would you be open to
-                                leaving a review once we're done? It really helps us grow."</em></p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">At Delivery (If Client is Happy)</div>
-                        <p>Include in delivery message: <em>"If you're happy with the work, a 5-star review would mean
-                                the
-                                world to us!"</em></p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">7 Days Post-Delivery</div>
-                        <p>Follow up specifically for review if not received yet.</p>
+                    <div class="video-content">
+                        <span class="tag">Fundamentals</span>
+                        <h3>Role Overview & Expectations</h3>
+                        <p>A deep dive into the daily life of a CS Manager, core responsibilities, and how to drive
+                            retention.</p>
                     </div>
                 </div>
 
-                <div class="template-box">
-                    <div class="template-header">📝 Template: Review Request (7 Days After Delivery)</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>! 👋</p>
-
-                    <p>Hope <span class="placeholder">[Brand Name]</span> is doing amazing! Just wanted to check in and
-                        see
-                        how things are going with the store.</p>
-
-                    <p>Quick favor: If you're happy with our work, would you mind leaving us a quick review? It really
-                        helps
-                        other entrepreneurs find quality help.</p>
-
-                    <p>🔗 Review Link: <span class="placeholder">[Fiverr/Upwork Review Link]</span></p>
-
-                    <p>Even just a few words about your experience would be incredible. 🙏</p>
-
-                    <p>And of course, if there's anything else you need help with, I'm just a message away!</p>
-                </div>
-
-                <div class="template-box">
-                    <div class="template-header">📝 Template: Review Request (If Client Expressed Happiness)</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>!</p>
-
-                    <p>I'm so glad the store turned out exactly how you envisioned! Your feedback during the project
-                        meant a
-                        lot to us.</p>
-
-                    <p>If you have 2 minutes, a review sharing your experience would help us tremendously: <span
-                            class="placeholder">[Review Link]</span></p>
-
-                    <p>Screenshots of the store or mentioning specific things you loved would make it extra helpful for
-                        others considering working with us! 🙏</p>
-
-                    <p>Thanks again for trusting us with <span class="placeholder">[Brand Name]</span>!</p>
-                </div>
-
-                <div class="warning-story">
-                    <h4>The Review That Almost Didn't Happen</h4>
-                    <p>A client was thrilled with their store. Said "this is amazing!" multiple times. We delivered,
-                        they
-                        launched, everything was perfect.</p>
-                    <p>But we forgot to ask for a review. 3 weeks later, we remembered. By then, the client was busy
-                        with
-                        their launch, overwhelmed, and never got around to it.</p>
-                    <p>A 5-star review from a genuinely delighted client — lost because we didn't ask at the RIGHT
-                        moment.
-                    </p>
-                    <div class="lesson">
-                        <strong>🎯 The Lesson:</strong> Ask for reviews when clients are MOST happy — usually right at
-                        delivery when they're excited, or during the project when they express delight. Don't wait.
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            25:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Communication</span>
+                        <h3>Dealing with Difficult Clients</h3>
+                        <p>How to de-escalate angry clients and turn them into raving fans.</p>
                     </div>
                 </div>
-            </section>
 
-            <!-- Client Feedback -->
-            <section class="section" id="feedback">
-                <div class="section-header">
-                    <div class="section-number">3</div>
-                    <h2>Requesting Client Feedback & Suggestions</h2>
-                </div>
-
-                <div class="info-box info">
-                    <h4>🎯 Why Ask for Suggestions?</h4>
-                    <p>Asking clients for improvement suggestions does TWO things:</p>
-                    <ol style="margin-left: 20px; margin-top: 10px;">
-                        <li>Makes them feel valued and heard</li>
-                        <li>Catches problems BEFORE they become negative reviews</li>
-                    </ol>
-                </div>
-
-                <h3>Copy-Paste Feedback Request Messages</h3>
-
-                <div class="template-box">
-                    <div class="template-header">📝 Mid-Project Feedback Request</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>!</p>
-
-                    <p>Quick check-in as we're making good progress on your store. 🚀</p>
-
-                    <p>I wanted to ask: <strong>Is there anything we could be doing better?</strong> Any suggestions or
-                        feedback at this stage would be super valuable!</p>
-
-                    <p>We're always looking to improve, and your input helps us deliver exactly what you need.</p>
-
-                    <p>Looking forward to hearing from you!</p>
-                </div>
-
-                <div class="template-box">
-                    <div class="template-header">📝 Post-Delivery Feedback Request</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>!</p>
-
-                    <p>Now that your store is live, I'd love to get your honest feedback on working with us.</p>
-
-                    <p>A few quick questions (feel free to answer any that apply):</p>
-
-                    <p>1️⃣ What did you like most about working with us?<br>
-                        2️⃣ Is there anything we could have done better?<br>
-                        3️⃣ Was there anything that surprised you (good or bad)?<br>
-                        4️⃣ Would you recommend us to others? Why or why not?</p>
-
-                    <p>Your feedback helps us improve for future clients. Thanks so much! 🙏</p>
-                </div>
-
-                <div class="template-box">
-                    <div class="template-header">📝 Suggestions for Improvement Request</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>!</p>
-
-                    <p>We're always trying to level up our service, and who better to ask than clients like you?</p>
-
-                    <p><strong>If you could change ONE thing about your experience with us, what would it be?</strong>
-                    </p>
-
-                    <p>No wrong answers — even small suggestions help us get better. And if everything was perfect,
-                        that's
-                        great feedback too! 😊</p>
-
-                    <p>Thanks for taking the time!</p>
-                </div>
-
-                <div class="template-box">
-                    <div class="template-header">📝 Proactive Problem Catch (If Client Seems Quiet)</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>!</p>
-
-                    <p>Just wanted to check in — I noticed you've been a bit quiet lately. 🤔</p>
-
-                    <p><strong>Is everything okay with the store? Any concerns I should know about?</strong></p>
-
-                    <p>I'd rather hear about any issues now while I can fix them, than have you disappointed later. Your
-                        satisfaction is my priority!</p>
-
-                    <p>Let me know how I can help.</p>
-                </div>
-            </section>
-
-            <!-- Support Period -->
-            <section class="section" id="support">
-                <div class="section-header">
-                    <div class="section-number">4</div>
-                    <h2>Support Period Management</h2>
-                </div>
-
-                <h3>What's Covered in Support</h3>
-
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>✅ INCLUDED (No Extra Charge)</th>
-                            <th>❌ NOT INCLUDED (Needs Quote)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Bug fixes for our work</td>
-                            <td>New page designs</td>
-                        </tr>
-                        <tr>
-                            <td>Minor text/image updates</td>
-                            <td>Adding new features</td>
-                        </tr>
-                        <tr>
-                            <td>Questions about store management</td>
-                            <td>Third-party app troubleshooting</td>
-                        </tr>
-                        <tr>
-                            <td>Training on Shopify basics</td>
-                            <td>Issues caused by client edits</td>
-                        </tr>
-                        <tr>
-                            <td>Fixing errors we introduced</td>
-                            <td>Complete section redesigns</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>Support Response Times</h3>
-
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Issue Type</th>
-                            <th>Response Time</th>
-                            <th>Resolution Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Critical (Site Down)</strong></td>
-                            <td>Within 1 hour</td>
-                            <td>Same day</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Important (Feature Broken)</strong></td>
-                            <td>Within 4 hours</td>
-                            <td>24 hours</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Minor (Small Changes)</strong></td>
-                            <td>Within 24 hours</td>
-                            <td>48-72 hours</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Questions (Training)</strong></td>
-                            <td>Within 24 hours</td>
-                            <td>N/A</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <!-- Upsell Opportunities -->
-            <section class="section" id="upsell">
-                <div class="section-header">
-                    <div class="section-number">5</div>
-                    <h2>Upsell Opportunities</h2>
-                </div>
-
-                <div class="info-box success">
-                    <h4>💰 The Best Clients Are Repeat Clients</h4>
-                    <p>Existing clients are 5x easier to sell to than new leads. They already trust you. Look for
-                        opportunities to add value.</p>
-                </div>
-
-                <h3>Natural Upsell Moments</h3>
-
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Client Need</th>
-                            <th>Upsell Opportunity</th>
-                            <th>Script</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>"Can you add a blog section?"</td>
-                            <td>Blog setup ($15,000)</td>
-                            <td>"Absolutely! Blog setup with 3 templates would be $15,000. Want me to add this?"</td>
-                        </tr>
-                        <tr>
-                            <td>"I want email pop-ups"</td>
-                            <td>Email integration ($8,000-15,000)</td>
-                            <td>"Great for list building! Klaviyo/Mailchimp setup with welcome flow: $12,000."</td>
-                        </tr>
-                        <tr>
-                            <td>"Need help with SEO"</td>
-                            <td>SEO package ($20,000+)</td>
-                            <td>"Happy to help! Our SEO optimization package starts at $20,000."</td>
-                        </tr>
-                        <tr>
-                            <td>"Store needs updates"</td>
-                            <td>Monthly maintenance</td>
-                            <td>"We offer monthly maintenance at $8,000/month. Includes updates, monitoring, priority
-                                support."</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="template-box">
-                    <div class="template-header">📝 Template: Proactive Upsell (30 Days Post-Launch)</div>
-                    <p>Hi <span class="placeholder">[Client Name]</span>!</p>
-
-                    <p>It's been about a month since <span class="placeholder">[Brand Name]</span> launched. How's
-                        everything going? 🚀</p>
-
-                    <p>Now that you've got some traffic and data, here are a few things that could help boost
-                        conversions:
-                    </p>
-
-                    <p>📧 <strong>Email Collection Pop-up:</strong> Capture visitors before they leave. ($8,000)<br>
-                        🔍 <strong>SEO Optimization:</strong> Get found on Google. ($20,000)<br>
-                        📱 <strong>WhatsApp Integration:</strong> Direct customer communication. ($5,000)</p>
-
-                    <p>No pressure at all — just wanted to share options if you're looking to grow!</p>
-
-                    <p>Let me know if any of these interest you or if there's something else you need. 🙌</p>
-                </div>
-            </section>
-
-            <!-- KPIs -->
-            <section class="section" id="kpis">
-                <div class="section-header">
-                    <div class="section-number">📊</div>
-                    <h2>Client Success KPIs</h2>
-                </div>
-
-                <div class="kpi-grid">
-                    <div class="kpi-card">
-                        <div class="label">On-Time Delivery</div>
-                        <div class="metric">100%</div>
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            20:00</div>
                     </div>
-                    <div class="kpi-card">
-                        <div class="label">Client Satisfaction</div>
-                        <div class="metric">4.9★</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="label">Review Rate</div>
-                        <div class="metric">80%+</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="label">Support Response</div>
-                        <div class="metric">&lt;4 hrs</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="label">Repeat Client Rate</div>
-                        <div class="metric">30%+</div>
-                    </div>
-                    <div class="kpi-card">
-                        <div class="label">Referral Rate</div>
-                        <div class="metric">20%+</div>
+                    <div class="video-content">
+                        <span class="tag">Sales</span>
+                        <h3>The Art of the Soft Upsell</h3>
+                        <p>How to identify upsell opportunities and pitch them without being pushy.</p>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Tools & Platforms -->
-            <section class="section" id="tools">
-                <div class="section-header">
-                    <div class="section-number">🔧</div>
-                    <h2>Tools & Platforms We Use</h2>
-                </div>
+            <div id="resources" class="section-title"
+                style="border-left: 4px solid #10B981; padding-left: 15px; margin: 60px 0 30px 0;">
+                <h2 style="margin: 0;">📄 Downloadable Resources</h2>
+            </div>
 
-                <div class="info-box info">
-                    <h4>📌 Know Your Tools Inside Out</h4>
-                    <p>Every tool has a purpose. Master these to deliver exceptional client experiences.</p>
-                </div>
-
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Tool</th>
-                            <th>Purpose</th>
-                            <th>When to Use</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Fiverr / Upwork</strong></td>
-                            <td>Primary client communication platform</td>
-                            <td>All client messages, order management, reviews</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Slack</strong></td>
-                            <td>Internal team communication</td>
-                            <td>Questions to team, updates, escalations</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Google Meet</strong></td>
-                            <td>Live revision calls with clients</td>
-                            <td>Kickoff calls, live fixes, screen share sessions</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Loom</strong></td>
-                            <td>Screen recordings for training</td>
-                            <td>Store walkthroughs, how-to videos, progress updates</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Google Drive</strong></td>
-                            <td>File storage & sharing</td>
-                            <td>Client assets, deliverables, documentation</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Notion / ClickUp</strong></td>
-                            <td>Project tracking</td>
-                            <td>Track client status, follow-ups, notes</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Shopify Admin</strong></td>
-                            <td>Store management</td>
-                            <td>Verifying issues, helping clients, troubleshooting</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>📞 Communication Platform Best Practices</h3>
-
-                <div class="checklist-grid">
-                    <div class="checklist-card">
-                        <h4>Fiverr/Upwork</h4>
-                        <ul class="styled-list check-list">
-                            <li>Respond within 1 hour during work hours</li>
-                            <li>Use professional, friendly tone</li>
-                            <li>Never share personal contact info</li>
-                            <li>Document everything in platform messages</li>
-                            <li>Ask for reviews at the right moment</li>
-                        </ul>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <a href="#"
+                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
+                    <span style="font-size: 2em; margin-right: 15px;">💬</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">Master Script Library</strong>
+                        <span style="color: #9CA3AF; font-size: 0.9em;">Copy-paste responses for every scenario</span>
                     </div>
-                    <div class="checklist-card">
-                        <h4>Google Meet</h4>
-                        <ul class="styled-list check-list">
-                            <li>Send calendar invite with agenda</li>
-                            <li>Test audio/video before call</li>
-                            <li>Have store open and ready</li>
-                            <li>Take notes during call</li>
-                            <li>Send summary after call</li>
-                        </ul>
+                </a>
+                <a href="#"
+                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
+                    <span style="font-size: 2em; margin-right: 15px;">📧</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">Client Onboarding Checklist</strong>
+                        <span style="color: #9CA3AF; font-size: 0.9em;">Ensure perfect kickoff every time</span>
                     </div>
-                    <div class="checklist-card">
-                        <h4>Loom</h4>
-                        <ul class="styled-list check-list">
-                            <li>Keep videos under 5 minutes</li>
-                            <li>Speak clearly and slowly</li>
-                            <li>Show, don't just tell</li>
-                            <li>Include clickable chapters</li>
-                            <li>Share with password if sensitive</li>
-                        </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ONBOARDING CONTENT -->
+    <div id="content-onboarding" class="view-section hidden" style="margin-left: 320px;">
+        <div class="container">
+            <div class="header">
+                <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
+                <h1>Your Onboarding Journey</h1>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
+                    to become a certified Customer Success Manager.</p>
+            </div>
+
+            <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
+
+                <!-- Step 1 -->
+                <div id="step-1" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        1</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
+                            understand, and internalize the Standard Operating Procedure. This document outlines how we
+                            treat every client.</p>
+                        <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
+                            to CS SOP</a>
                     </div>
                 </div>
-            </section>
 
-            <!-- ChatGPT Guide -->
-            <section class="section">
-                <div class="section-header">
-                    <div class="section-number">🤖</div>
-                    <h2>Using ChatGPT for Client Success</h2>
-                </div>
-
-                <div class="info-box info">
-                    <h4>📚 ChatGPT Prompts</h4>
-                    <ul class="styled-list">
-                        <li>"Write a professional follow-up message asking for a 5-star review"</li>
-                        <li>"How do I ask for client feedback without seeming insecure?"</li>
-                        <li>"Create a Shopify store training outline for first-time clients"</li>
-                        <li>"Write a polite response declining an out-of-scope request"</li>
-                        <li>"How do I turn a support request into an upsell opportunity?"</li>
-                        <li>"Role-play: A client is unhappy about delivery time. How should I respond?"</li>
-                    </ul>
-                </div>
-
-                <div class="info-box success">
-                    <h4>🎯 Daily Practice</h4>
-                    <ul class="styled-list check-list">
-                        <li>Practice writing personalized follow-up messages</li>
-                        <li>Role-play difficult client scenarios</li>
-                        <li>Create template library for common situations</li>
-                        <li>Learn upselling without being pushy</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Troubleshooting Difficult Client Situations -->
-            <section class="section" id="troubleshooting">
-                <div class="section-header">
-                    <div class="section-number">🔧</div>
-                    <h2>Troubleshooting Difficult Situations</h2>
-                </div>
-
-                <h3>Client Is Unhappy with Delivery</h3>
-
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Complaint Type</th>
-                            <th>Response Approach</th>
-                            <th>Example Script</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>"It's not what I expected"</strong></td>
-                            <td>Clarify expectations, offer revision</td>
-                            <td>"I'm sorry it's not what you envisioned. Can you share specifically what feels off? I
-                                want
-                                to make this right."</td>
-                        </tr>
-                        <tr>
-                            <td><strong>"It looks different than reference"</strong></td>
-                            <td>Show what was promised, explain differences</td>
-                            <td>"Let me walk you through the design decisions. If there are specific elements you'd like
-                                changed, happy to adjust."</td>
-                        </tr>
-                        <tr>
-                            <td><strong>"I want a refund"</strong></td>
-                            <td>Understand issue, offer to fix, escalate if needed</td>
-                            <td>"Before we discuss refunds, I really want to understand what went wrong. Give me one
-                                chance
-                                to make it right."</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>Client Threatens Bad Review</h3>
-
-                <div class="info-box danger">
-                    <h4>🚨 IMMEDIATE ESCALATION REQUIRED</h4>
-                    <ol style="margin-left: 20px;">
-                        <li><strong>Don't panic</strong> — Stay calm and professional in all communication</li>
-                        <li><strong>Notify manager IMMEDIATELY</strong> — Don't try to handle alone</li>
-                        <li><strong>Document everything</strong> — Screenshot all messages, note timelines</li>
-                        <li><strong>Attempt resolution</strong> — Call them, understand real issue</li>
-                        <li><strong>Never threaten back</strong> — Only say things you'd be okay with being public</li>
-                    </ol>
-                </div>
-
-                <h3>Getting the 5-Star Review</h3>
-
-                <div class="info-box success">
-                    <h4>✅ How to Ask for Reviews Without Being Pushy</h4>
-                    <ul class="styled-list check-list">
-                        <li><strong>Time it right:</strong> Wait until they've expressed satisfaction</li>
-                        <li><strong>Make it easy:</strong> Provide direct link to review page</li>
-                        <li><strong>Be specific:</strong> "If you're happy, a 5-star review really helps us..."</li>
-                        <li><strong>Follow up once:</strong> If no review in 3 days, one gentle reminder</li>
-                        <li><strong>Accept no:</strong> Some people don't leave reviews. That's okay.</li>
-                    </ul>
-                </div>
-
-                <h3>Turning Complaints into Loyalty</h3>
-
-                <div class="info-box gold">
-                    <h4>💡 The Complaint = Opportunity Mindset</h4>
-                    <p>Clients who complain and get their issue resolved often become your <strong>biggest
-                            advocates</strong>. They test you and you pass. That builds trust.</p>
-                    <ul class="styled-list" style="margin-top: 15px;">
-                        <li><strong>Respond faster than expected</strong> — Speed shows you care</li>
-                        <li><strong>Over-fix the problem</strong> — Give them more than they asked for</li>
-                        <li><strong>Follow up after</strong> — "How's everything working now?"</li>
-                        <li><strong>Send a small "sorry" gesture</strong> — Free add-on, extended support</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Difficult Situations Section -->
-            <section class="section" id="difficult-situations">
-                <div class="section-header">
-                    <div class="section-number">⚠️</div>
-                    <h2>Handling Difficult Situations</h2>
-                </div>
-
-                <h3>🔴 Angry Client Demanding Refund</h3>
-
-                <h3>🎯 Task Priority Order (What Comes First)</h3>
-                <div class="info-box success" style="margin-bottom: 30px;">
-                    <p><strong>Handle in this order every day:</strong></p>
-                    <ol style="margin-top: 15px; line-height: 2;">
-                        <li><strong>🔴 P0 - Angry/Escalated Clients</strong> → Damage control. Respond within 30
-                            minutes.</li>
-                        <li><strong>🔴 P0 - Active Project Issues</strong> → Clients reporting problems with current
-                            work.</li>
-                        <li><strong>🔴 P0 - Refund/Cancellation Requests</strong> → Time-sensitive, needs fast
-                            de-escalation.</li>
-                        <li><strong>🟡 P1 - All Client Messages</strong> → Respond within 1 hour during work hours.</li>
-                        <li><strong>🟡 P1 - Delivery Follow-ups</strong> → Check if recent deliveries are satisfactory.
-                        </li>
-                        <li><strong>🟢 P2 - Client Check-ins</strong> → Proactive outreach to quiet accounts.</li>
-                        <li><strong>🟢 P2 - Feedback Collection</strong> → Reviews, testimonials, referral requests.
-                        </li>
-                        <li><strong>⚪ P3 - Process Documentation</strong> → Knowledge base, templates, FAQs.</li>
-                    </ol>
-                    <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Unhappy clients > Active issues > All
-                        messages > Proactive outreach.</p>
-                </div>
-
-                <h3 id="angry-client">🔴 Angry Client Demanding Refund</h3>
-                <div class="info-box danger">
-                    <p><strong>Situation:</strong> Client is upset and threatening to dispute payment.</p>
-                    <p><strong>Response:</strong> "I hear your frustration and I'm sorry you're experiencing this. Let
-                        me understand the specific issues. Before we discuss refunds, can we try to fix this for you? I
-                        want to make this right."</p>
-                    <p><strong>Rule:</strong> Listen first, empathize, offer solutions. Escalate to management if they
-                        insist on refund.</p>
-                </div>
-
-                <h3 id="team-complaint">🔴 Client Complaining About Team Member</h3>
-                <div class="info-box danger">
-                    <p><strong>Situation:</strong> Client says developer/designer was rude or did bad work.</p>
-                    <p><strong>Response:</strong> "I apologize for this experience. I'll investigate and ensure it
-                        doesn't happen again. Let me personally oversee the resolution of your project."</p>
-                    <p><strong>Rule:</strong> Never throw team under the bus. Handle internally after call.</p>
-                </div>
-
-                <h3 id="scope-creep">🔴 Client Wants Something Outside Scope for Free</h3>
-                <div class="info-box warning">
-                    <p><strong>Situation:</strong> Client expects additional features not in original order.</p>
-                    <p><strong>Response:</strong> "I'd love to help with that! That feature wasn't in our original
-                        scope. Let me get you a quick quote for this addition. It's a [small/medium] enhancement."</p>
-                    <p><strong>Rule:</strong> Be helpful but protect scope. Additional work = additional payment.</p>
-                </div>
-
-                <h3 id="ghost-client">🔴 Client Not Responding After Delivery</h3>
-                <div class="info-box warning">
-                    <p><strong>Situation:</strong> Project delivered but client isn't approving or responding.</p>
-                    <p><strong>Response:</strong> Send sequence: Day 2: "Just checking in!" Day 5: "Want to make sure
-                        everything works." Day 10: "I'll mark this complete unless I hear otherwise."</p>
-                    <p><strong>Rule:</strong> Document all attempts. After 14 days, mark complete.</p>
-                </div>
-
-                <h3 id="cancel-mid-project">🔴 Client Wants to Cancel Mid-Project</h3>
-                <div class="info-box danger">
-                    <p><strong>Situation:</strong> Client wants to stop work and get money back after we've started.</p>
-                    <p><strong>Response:</strong> "I understand circumstances change. We've already completed [X work].
-                        Per our terms, work completed isn't refundable. Would you like to pause instead and resume
-                        later?"</p>
-                    <p><strong>Rule:</strong> Offer pause option. Escalate to management for refund discussions.</p>
-                </div>
-
-                <h3 id="bad-review">🔴 Client Leaving Negative Review</h3>
-                <div class="info-box danger">
-                    <p><strong>Situation:</strong> Client threatens to or has left a bad review.</p>
-                    <p><strong>Response:</strong> "I'm sorry we didn't meet your expectations. I'd like to make this
-                        right. Could we schedule a call to resolve your concerns? I'm committed to finding a solution."
-                    </p>
-                    <p><strong>Rule:</strong> Attempt resolution first. If unreasonable, respond professionally to
-                        review.</p>
-                </div>
-
-                <h3 id="client-broke-it">🔴 Client Has Technical Issues They Caused</h3>
-                <div class="info-box warning">
-                    <p><strong>Situation:</strong> Client broke something while editing their site and blames us.</p>
-                    <p><strong>Response:</strong> "Let me take a look. I can see changes were made after our delivery on
-                        [date]. I'm happy to help fix this — let me quote the repair work."</p>
-                    <p><strong>Rule:</strong> Show evidence diplomatically. Repairs after client changes = paid support.
-                    </p>
-                </div>
-
-                <h3 id="competitor-compare">🔴 Client Comparing Us to Competitors</h3>
-                <div class="info-box warning">
-                    <p><strong>Situation:</strong> Client says "Other agencies would do this for free."</p>
-                    <p><strong>Response:</strong> "Every agency has different approaches. We focus on quality and
-                        results. Our 4.9-star rating and 2000+ projects reflect that. I want to ensure you get the best
-                        outcome."</p>
-                    <p><strong>Rule:</strong> Don't engage in competitor bashing. Focus on our value.</p>
-                </div>
-            </section>
-
-            <!-- Motivation Section -->
-            <section class="section" id="inspiration"
-                style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
-                <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
-                    <div class="section-number">🌟</div>
-                    <h2 style="color: white;">Your Daily Inspiration</h2>
-                </div>
-
-                <div style="text-align: center; padding: 30px 0;">
-                    <div style="font-size: 48px; margin-bottom: 20px;">💚</div>
-                    <blockquote
-                        style="font-size: 24px; font-style: italic; color: #34D399; margin-bottom: 20px; line-height: 1.6;">
-                        "Client Success isn't a department — it's the entire company's mission. You are the voice of the
-                        customer."
-                    </blockquote>
-                    <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                    <h3 style="color: #34D399; margin-bottom: 15px;">📖 Success Story: The Angry Client Who Became Our
-                        Biggest Advocate</h3>
-                    <p style="color: #E5E7EB; line-height: 1.8;">
-                        A client was furious — their site went down during a sale. They demanded a full refund. Our CS
-                        rep listened patiently, apologized sincerely, and offered a solution: free rush support + 1
-                        month free.
-                        <br><br>
-                        But they went further — they sent a personalized Loom video explaining exactly what happened and
-                        how we'd prevent it in the future.
-                        <br><br>
-                        <strong style="color: #10B981;">The result?</strong> Not only did they stay, they referred
-                        <strong style="color: #FCD34D;">3 new clients</strong> and left our best Google review ever.
-                        <br><br>
-                        <em>The lesson: Problems are opportunities to create superfans.</em>
-                    </p>
-                </div>
-
-                <div style="background: rgba(52, 211, 153, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                    <h3 style="color: #6EE7B7; margin-bottom: 15px;">⚡ Productivity Hacks for Client Success</h3>
-                    <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
-                        <li>📧 <strong>Email Templates:</strong> Save 10+ hours/week with pre-written responses</li>
-                        <li>🎥 <strong>Loom Over Text:</strong> 2-min video beats 10 back-and-forth emails</li>
-                        <li>📅 <strong>Block Check-In Time:</strong> Schedule client outreach, don't just react</li>
-                        <li>🏷️ <strong>Tag & Categorize:</strong> Organize clients by status for quick reference</li>
-                        <li>⏰ <strong>Respond in 1 Hour:</strong> Speed builds trust — make it a habit</li>
-                    </ul>
-                </div>
-
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                    <div
-                        style="background: rgba(52, 211, 153, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                        <div style="font-size: 32px; margin-bottom: 10px;">🎧</div>
-                        <p style="color: #6EE7B7; font-weight: 600;">"Listen to understand, not to respond."</p>
+                <!-- Step 2 -->
+                <div id="step-2" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        2</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
+                            watch the required training videos. These will give you visual context to the written SOPs.
+                        </p>
+                        <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
+                            Assets Library</a>
                     </div>
-                    <div
-                        style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                        <div style="font-size: 32px; margin-bottom: 10px;">❤️</div>
-                        <p style="color: #93C5FD; font-weight: 600;">"Treat every client like your only client."</p>
-                    </div>
-                    <div
-                        style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                        <div style="font-size: 32px; margin-bottom: 10px;">🌟</div>
-                        <p style="color: #FDE68A; font-weight: 600;">"Your patience today is their loyalty tomorrow."
+                </div>
+
+                <!-- Step 3 -->
+                <div id="step-3" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        3</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
+                        </h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by
+                            taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                        <p
+                            style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
+                            ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
+                                onclick="switchView('sop'); return false;" style="color: #3B82F6;">CS SOP</a> view and
+                            click the "🎓 Test" button in the sidebar.
                         </p>
                     </div>
                 </div>
 
-                <div
-                    style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
-                    <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
-                    <p style="font-size: 20px; color: #34D399; font-weight: 600;">"Today, I will make every client feel
-                        heard, valued, and confident in choosing us."</p>
+                <!-- Step 4 -->
+                <div id="step-4" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        4</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording
+                            Task</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
+                            verification. Record a <strong>30-minute screen sharing video</strong> walking us through
+                            your understanding of the role.</p>
+
+                        <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
+                            <strong>What to cover in your video:</strong>
+                            <ul style="color: #475569; line-height: 1.6; margin-top: 10px;">
+                                <li>Walk through the SOP sections and explain them in your own words.</li>
+                                <li>Explain your KRA (Key Result Areas) and how you plan to achieve them.</li>
+                                <li>Explain the KPIs (Key Performance Indicators) you are measured on.</li>
+                                <li>Role-play how you would handle an angry client scenario.</li>
+                            </ul>
+                        </div>
+
+                        <div class="success-box"
+                            style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
+                                Submission</strong>
+                            <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
+                                nailed this task:</p>
+                            <div class="video-embed"
+                                style="aspect-ratio: 16/9; background: #000; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; margin-top: 15px;">
+                                [Example Video Placeholder]
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <h3>Digital Heroes</h3>
-                <p><strong>"Turn clients into fans who refer others"</strong></p>
-                <p style="margin-top: 20px;">100% On-Time | 4.9★ Rating | Relationships Over Transactions</p>
-                <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.7;">Internal Use Only | Version 2.0 | January
-                    2026
-                </p>
-            </footer>
+            </div>
         </div>
-        <script src="admin-mode.js"></script>
+    </div>
+    <script src="admin-mode.js"></script>
 
-        <!-- Quiz System -->
-        <script src="assets/js/quiz.js"></script>
-        <script src="assets/js/quizzes/cs-quiz.js"></script>
-        <script>
-            function launchQuiz() {
-                SOPQuiz.init('Client Success', csQuestions);
-                SOPQuiz.open();
+    <style>
+        .hidden {
+            display: none !important;
+        }
+
+        .view-section {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
             }
-        </script>
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function switchView(viewName) {
+            history.pushState(null, null, '#' + viewName);
+            const sections = ['sop', 'assets', 'onboarding'];
+            sections.forEach(section => {
+                const contentEl = document.getElementById('content-' + section);
+                const sidebarEl = document.getElementById('sidebar-' + section + '-links');
+                if (contentEl) contentEl.classList.toggle('hidden', section !== viewName);
+                if (sidebarEl) sidebarEl.classList.toggle('hidden', section !== viewName);
+            });
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (['assets', 'onboarding'].includes(hash)) switchView(hash);
+            else switchView('sop');
+        });
+    </script>
+
+    <!-- Quiz System -->
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/quizzes/cs-quiz.js"></script>
+    <script>
+        function launchQuiz() {
+            SOPQuiz.init('Client Success', csQuestions);
+            SOPQuiz.open();
+        }
+    </script>
 </body>
 
 </html>

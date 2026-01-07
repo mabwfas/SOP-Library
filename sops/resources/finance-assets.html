@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Accounts - Assets</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link rel="stylesheet" href="../../admin-mode.css">
+    <style>
+        :root {
+            --primary: #1E3A5F;
+            --secondary: #2E5077;
+            --accent: #3D6B99;
+            --success: #2E7D32;
+            --warning: #F57C00;
+            --danger: #C62828;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --gold: #D4AF37;
+            --emerald: #059669;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f7fa;
+            display: flex;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--emerald) 0%, #047857 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.4em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        /* Sidebar Styles (Cloned from Finance SOP) */
+        .sidebar {
+            width: 320px;
+            background: linear-gradient(180deg, #059669 0%, #047857 100%);
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .sidebar-header h2 {
+            font-size: 1em;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 8px 15px;
+            margin: 0 10px 10px 10px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .sidebar-back:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .sidebar-section-title {
+            padding: 10px 15px 4px;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #FCD34D;
+            margin-top: 10px;
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            padding: 8px 10px;
+        }
+
+        .sidebar-nav-grid a {
+            display: block;
+            padding: 6px 8px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(139, 92, 246, 0.3);
+            color: white;
+        }
+
+        .sidebar-search {
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-search input {
+            width: 100%;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 12px;
+        }
+
+        /* Content Area */
+        .main-content {
+            margin-left: 320px;
+            width: calc(100% - 320px);
+            min-height: 100vh;
+        }
+
+        /* Assets Specific Styles */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-placeholder {
+            aspect-ratio: 16/9;
+            background: #1f2937;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        .video-content {
+            padding: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #d1fae5;
+            color: #059669;
+            font-size: 0.8em;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .resource-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .resource-card:hover {
+            border-color: var(--emerald);
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            padding: 0 20px;
+            margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span class="emoji">💰</span>
+            <h2>Finance & Accounts SOP</h2>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../kra/finance-kra.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">📋
+                KRA</a>
+            <a href="../kpi/finance-kpi.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
+                KPI</a>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="#" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.4); border: 1px solid #3B82F6; box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);">📚
+                Assets</a>
+            <a href="../onboarding/finance-onboarding.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.2); border: 1px solid #EC4899;">🚀
+                Start</a>
+        </div>
+
+        <a href="../finance-sop.html" class="sidebar-back">← Back to Finance SOP</a>
+
+        <div class="sidebar-search">
+            <input type="text" placeholder="🔍 Search assets..." disabled style="opacity: 0.7; cursor: not-allowed;">
+        </div>
+
+        <div class="sidebar-section-title">📚 Assets Library</div>
+        <div class="sidebar-nav-grid">
+            <a href="#videos">📹 Videos</a>
+            <a href="#resources">📄 Resources</a>
+            <a href="#tools">🛠️ Tools</a>
+        </div>
+
+        <div class="sidebar-section-title">🔗 Quick Links</div>
+        <div class="sidebar-nav-grid">
+            <a href="../finance-sop.html#invoicing">📄 Invoicing</a>
+            <a href="../finance-sop.html#refunds">🔄 Refunds</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <h1>💰 Finance Assets & Training</h1>
+            <p class="subtitle">Calculators, Templates, and Process Guides.</p>
+        </header>
+
+        <div class="container">
+            <div id="videos" class="section-title">
+                <h2>📹 Video Training</h2>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            15:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Invoicing</span>
+                        <h3>Invoicing Mastery</h3>
+                        <p>How to create error-free invoices and follow up on payments.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            25:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Reporting</span>
+                        <h3>Weekly Financial Reporting</h3>
+                        <p>Step-by-step guide to generating the Friday cashflow report.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resources" class="section-title">
+                <h2>📄 Downloadable Resources</h2>
+            </div>
+
+            <div class="resource-grid">
+                <a href="#" class="resource-card">
+                    <span style="font-size: 2.5em; margin-right: 20px;">📊</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">Cashflow Forecast Sheet</strong>
+                        <span style="color: #64748b; font-size: 0.9em;">Excel Template</span>
+                    </div>
+                </a>
+                <a href="#" class="resource-card">
+                    <span style="font-size: 2.5em; margin-right: 20px;">🧾</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">Invoice Template</strong>
+                        <span style="color: #64748b; font-size: 0.9em;">Standard Company Invoice</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

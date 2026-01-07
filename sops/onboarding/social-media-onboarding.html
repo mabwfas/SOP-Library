@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Manager - Onboarding</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link rel="stylesheet" href="../../admin-mode.css">
+    <style>
+        :root {
+            --primary: #1E3A5F;
+            --secondary: #2E5077;
+            --accent: #3D6B99;
+            --success: #2E7D32;
+            --warning: #F57C00;
+            --danger: #C62828;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --gold: #D4AF37;
+            --rose: #0EA5E9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f7fa;
+            display: flex;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--rose) 0%, #BE123C 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.4em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 280px;
+            background: #1e293b;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            padding-bottom: 20px;
+            z-index: 1000;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+        }
+
+        .sidebar-header {
+            padding: 25px 20px 15px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar-header .emoji {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-header h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: white;
+            font-weight: 600;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 12px 20px;
+            color: #94a3b8;
+            text-decoration: none;
+            transition: 0.2s;
+            border-radius: 8px;
+            margin: 0 10px 10px 10px;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+
+        .sidebar-back:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .sidebar-section-title {
+            padding: 20px 20px 10px 20px;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #64748b;
+            font-weight: 600;
+            margin-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-nav-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Single column for timeline steps */
+            gap: 8px;
+            padding: 0 15px;
+        }
+
+        .sidebar-nav-grid a {
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9em;
+            text-align: left;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .sidebar-nav-grid a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Content Area */
+        .main-content {
+            margin-left: 280px;
+            width: calc(100% - 280px);
+            min-height: 100vh;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #e2e8f0;
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -50px;
+            width: 34px;
+            height: 34px;
+            background: white;
+            border: 3px solid var(--rose);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--rose);
+            z-index: 1;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--rose);
+        }
+
+        .card h3 {
+            margin: 0 0 15px 0;
+            color: var(--primary);
+            font-size: 1.5em;
+        }
+
+        .card p {
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--rose);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .action-btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            padding: 0 20px;
+            margin: 40px auto 20px auto;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span class="emoji">📱</span>
+            <h2>Social Media Manager SOP</h2>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../kra/social-media-kra.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">📋
+                KRA</a>
+            <a href="../kpi/social-media-kpi.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
+                KPI</a>
+        </div>
+
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../resources/social-media-assets.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">📚
+                Assets</a>
+            <a href="#" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.4); border: 1px solid #EC4899; box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);">🚀
+                Start</a>
+        </div>
+
+        <a href="../social-media-sop.html" class="sidebar-back">← Back to Social SOP</a>
+
+        <div class="sidebar-search">
+            <input type="text" placeholder="🔍 Search steps..." disabled
+                style="opacity: 0.7; cursor: not-allowed; background: rgba(0,0,0,0.2); color:white; border:1px solid rgba(255,255,255,0.1); width:100%; padding:10px; border-radius:6px;">
+        </div>
+
+        <div class="sidebar-section-title">🚀 Onboarding Journey</div>
+        <div class="sidebar-nav-grid">
+            <a href="#step-1">1️⃣ Master SOP</a>
+            <a href="#step-2">2️⃣ Watch Videos</a>
+            <a href="#step-3">3️⃣ Pass Test</a>
+            <a href="#step-4">4️⃣ Record Video</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <h1>🚀 Onboarding Journey</h1>
+            <p class="subtitle">Your 4-step path to becoming a certified Social Media Manager.</p>
+        </header>
+
+        <div class="container">
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div id="step-1" class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="card">
+                        <h3>📖 Master the SOP</h3>
+                        <p>Your first task is to read, understand, and internalize the Standard Operating Procedure.
+                            This document outlines our posting strategy.</p>
+                        <a href="../social-media-sop.html" class="action-btn">Go to Social SOP</a>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div id="step-2" class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="card">
+                        <h3>🎥 Watch Training Videos</h3>
+                        <p>Visit the Assets Library and watch the required training videos. These will give you visual
+                            context to the written SOPs.</p>
+                        <a href="../resources/social-media-assets.html" class="action-btn">Open Assets Library</a>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div id="step-3" class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="card">
+                        <h3>🎓 Pass the Knowledge Test</h3>
+                        <p>Prove your understanding by taking the role-specific quiz. You need a score of 90% or higher
+                            to proceed.</p>
+                        <div
+                            style="background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0ea5e9;">
+                            ℹ️ <strong>How to take the test:</strong> <br>Go back to the <a
+                                href="../social-media-sop.html"
+                                style="color: #0284c7; text-decoration: underline;">Social SOP</a> and click the "🎓
+                            Test" button in the sidebar.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div id="step-4" class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="card" style="border-left-color: #EC4899;">
+                        <h3>🎙️ The 30-Minute Recording Task</h3>
+                        <p>This is your final verification. Record a <strong>30-minute screen sharing video</strong>
+                            walking us through your understanding of the role.</p>
+
+                        <div style="margin: 20px 0; background: #f8fafc; padding: 20px; border-radius: 10px;">
+                            <strong>What to cover in your video:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px; color: #475569;">
+                                <li>Walk through the SOP sections and explain them in your own words.</li>
+                                <li>Explain your KRA (Key Result Areas) and how you plan to achieve them.</li>
+                                <li>Explain the KPIs (Key Performance Indicators) you are measured on.</li>
+                                <li>Create a sample weekly content calendar and walk us through your strategy.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="background: #ecfdf5; border: 1px solid #a7f3d0; padding: 20px; border-radius: 12px; margin-top: 20px;">
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
+                                Submission</strong>
+                            <p style="margin: 0; font-size: 0.9em; color: #065f46;">Watch how [Top Performer Name]
+                                nailed this task:</p>
+                            <div
+                                style="aspect-ratio: 16/9; background: #000; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; margin-top: 15px;">
+                                [Example Video Placeholder]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

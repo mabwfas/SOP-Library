@@ -715,6 +715,14 @@
                 style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
                 KPI</a>
         </div>
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 10px;">
+            <a href="#" onclick="switchView('assets'); return false;" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">📚
+                Assets</a>
+            <a href="#" onclick="switchView('onboarding'); return false;" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.2); border: 1px solid #EC4899;">🚀
+                Start</a>
+        </div>
         <a href="index.html" class="sidebar-back">← Back to SOP Hub</a>
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
@@ -724,56 +732,118 @@
         </div>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
-        <div class="sidebar-section-title">1️⃣ Foundations</div>
-        <div class="sidebar-nav-grid">
-            <a href="#principles">🚨 Principles</a>
-            <a href="#brand-styling">🎨 Brand</a>
-            <a href="#typography">📝 Typography</a>
-            <a href="#color-theory">🌈 Colors</a>
+        <div id="sidebar-sop-links">
+            <div class="sidebar-section-title">1️⃣ Foundations</div>
+            <div class="sidebar-nav-grid">
+                <a href="#principles">🚨 Principles</a>
+                <a href="#brand-styling">🎨 Brand</a>
+                <a href="#typography">📝 Typography</a>
+                <a href="#color-theory">🌈 Colors</a>
+            </div>
+            <div class="sidebar-section-title">2️⃣ Design Areas</div>
+            <div class="sidebar-nav-grid">
+                <a href="#layout">📐 Layout</a>
+                <a href="#mobile">📱 Mobile</a>
+                <a href="#trust">🛡️ Trust</a>
+                <a href="#checklist">✅ Checklist</a>
+            </div>
+            <div class="sidebar-section-title">3️⃣ Scenarios</div>
+            <div class="sidebar-nav-grid">
+                <a href="#bad-brief">❌ Bad Brief</a>
+                <a href="#endless-revisions">🔄 Revisions</a>
+                <a href="#own-design">🎨 Own Design</a>
+                <a href="#wont-convert">📉 No Convert</a>
+                <a href="#too-many-cooks">👥 Many Cooks</a>
+                <a href="#all-disapprove">🙅 Not Like</a>
+                <a href="#free-concept">🆓 Free Work</a>
+                <a href="#bad-assets">📷 Bad Assets</a>
+            </div>
+            <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
+            <div class="sidebar-nav-grid">
+                <a href="#figma">🎨 Figma</a>
+                <a href="#chatgpt">🤖 AI Tools</a>
+                <a href="#difficult-situations">⚠️ Difficult</a>
+                <a href="#inspiration">💪 Inspiration</a>
+            </div>
+        </div> <!-- End sidebar-sop-links -->
+
+        <!-- ASSETS SIDEBAR LINKS -->
+        <div id="sidebar-assets-links" class="hidden">
+            <div class="sidebar-section-title">Sections</div>
+            <div class="sidebar-nav-grid">
+                <a href="#videos">📹 Videos</a>
+                <a href="#resources">📄 Resources</a>
+            </div>
+            <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
-        <div class="sidebar-section-title">2️⃣ Design Areas</div>
-        <div class="sidebar-nav-grid">
-            <a href="#layout">📐 Layout</a>
-            <a href="#mobile">📱 Mobile</a>
-            <a href="#trust">🛡️ Trust</a>
-            <a href="#checklist">✅ Checklist</a>
-        </div>
-        <div class="sidebar-section-title">3️⃣ Scenarios</div>
-        <div class="sidebar-nav-grid">
-            <a href="#bad-brief">❌ Bad Brief</a>
-            <a href="#endless-revisions">🔄 Revisions</a>
-            <a href="#own-design">🎨 Own Design</a>
-            <a href="#wont-convert">📉 No Convert</a>
-            <a href="#too-many-cooks">👥 Many Cooks</a>
-            <a href="#all-disapprove">🙅 Not Like</a>
-            <a href="#free-concept">🆓 Free Work</a>
-            <a href="#bad-assets">📷 Bad Assets</a>
-        </div>
-        <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
-        <div class="sidebar-nav-grid">
-            <a href="#figma">🎨 Figma</a>
-            <a href="#chatgpt">🤖 AI Tools</a>
-            <a href="#difficult-situations">⚠️ Difficult</a>
-            <a href="#inspiration">💪 Inspiration</a>
+
+        <!-- ONBOARDING SIDEBAR LINKS -->
+        <div id="sidebar-onboarding-links" class="hidden">
+            <div class="sidebar-section-title">Timeline</div>
+            <div class="sidebar-nav-grid" style="grid-template-columns: 1fr;">
+                <a href="#step-1" style="justify-content: flex-start;">1️⃣ Master SOP</a>
+                <a href="#step-2" style="justify-content: flex-start;">2️⃣ Watch Videos</a>
+                <a href="#step-3" style="justify-content: flex-start;">3️⃣ Pass Test</a>
+                <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
+            </div>
+            <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
     </aside>
 
     <div class="main-content">
-        <div class="container">
-            <header class="header">
-                <h1>🎨 UI/UX Designer SOP</h1>
-                <p class="subtitle">Premium Design, Brand Styling & Conversion Optimization</p>
-                <div class="badge-row">
-                    <span class="badge">✨ Premium Aesthetics</span>
-                    <span class="badge">📱 Mobile-First</span>
-                    <span class="badge">🎯 Conversion-Focused</span>
-                    <span class="badge">⭐ 4.9★ Client Satisfaction</span>
+        <div id="content-sop" class="view-section">
+            <div class="container">
+                <header class="header">
+                    <h1>🎨 UI/UX Designer SOP</h1>
+                    <p class="subtitle">Premium Design, Brand Styling & Conversion Optimization</p>
+                    <div class="badge-row">
+                        <span class="badge">✨ Premium Aesthetics</span>
+                        <span class="badge">📱 Mobile-First</span>
+                        <span class="badge">🎯 Conversion-Focused</span>
+                        <span class="badge">⭐ 4.9★ Client Satisfaction</span>
+                    </div>
+                </header>
+
+                <div id="searchResults"
+                    style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                    <div id="resultsList"></div>
+                    <button onclick="clearSearch()"
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                        Search</button>
                 </div>
-            </header>
+
+                <script>
+                    function searchSOP() {
+                        const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                        const sections = document.querySelectorAll('.section, .critical-alert');
+                        const resultsDiv = document.getElementById('searchResults');
+                        if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
+                        let matches = [];
+                        sections.forEach(section => {
+                            const text = section.textContent.toLowerCase();
+                            if (text.includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--pink)'; matches.push(section); }
+                            else { section.style.display = 'none'; section.style.border = 'none'; }
+                        });
+                        document.getElementById('resultCount').textContent = matches.length;
+                        resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+                    }
+                    function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
+                </script>
+
+                <nav class="nav-section" style="display:none;">
+                    <a href="#trust">Trust Elements</a>
+                    <a href="#mobile">Mobile Design</a>
+                    <a href="#checklist">QA Checklist</a>
+                    <a href="#chatgpt">ChatGPT Guide</a>
+            </div>
+            </nav>
 
             <div id="searchResults"
-                style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
-                <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                <h3 style="margin-bottom: 15px;">🔍 Search Results (<span id="resultCount">0</span>)</h3>
                 <div id="resultsList"></div>
                 <button onclick="clearSearch()"
                     style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
@@ -785,1387 +855,1628 @@
                     const query = document.getElementById('searchInput').value.toLowerCase().trim();
                     const sections = document.querySelectorAll('.section, .critical-alert');
                     const resultsDiv = document.getElementById('searchResults');
+                    const resultsList = document.getElementById('resultsList');
+                    const resultCount = document.getElementById('resultCount');
                     if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
                     let matches = [];
                     sections.forEach(section => {
                         const text = section.textContent.toLowerCase();
-                        if (text.includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--pink)'; matches.push(section); }
+                        const header = section.querySelector('h2, h3');
+                        if (text.includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--pink)'; if (header) matches.push({ title: header.textContent.substring(0, 50), element: section }); }
                         else { section.style.display = 'none'; section.style.border = 'none'; }
                     });
-                    document.getElementById('resultCount').textContent = matches.length;
+                    resultCount.textContent = matches.length;
+                    resultsList.innerHTML = matches.map((m, i) => `<div style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 8px; cursor: pointer;" onclick="document.querySelectorAll('.section, .critical-alert')[${i}].scrollIntoView({behavior:'smooth'})">${m.title}</div>`).join('');
                     resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
                 }
-                function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
+                function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section, .critical-alert').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
             </script>
 
-            <nav class="nav-section" style="display:none;">
-                <a href="#trust">Trust Elements</a>
-                <a href="#mobile">Mobile Design</a>
-                <a href="#checklist">QA Checklist</a>
-                <a href="#chatgpt">ChatGPT Guide</a>
+            <!-- Opening Story -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">📖</div>
+                    <h2>The $50,000 Difference in Design</h2>
+                </div>
+
+                <div class="story-box">
+                    <h4>Two Stores, Same Products, Wildly Different Results</h4>
+                    <p>Two skincare brands launched in the same month. Same products. Same prices. Same marketing
+                        budget.
+                    </p>
+
+                    <p><strong>Store A:</strong> Basic template, default fonts, stock images, cluttered layout. Looked
+                        like
+                        every other store.</p>
+
+                    <p><strong>Store B:</strong> Custom color palette, premium typography, lifestyle photography,
+                        generous
+                        whitespace, trust badges strategically placed.</p>
+
+                    <p><strong>Results after 30 days:</strong></p>
+                    <ul style="margin: 15px 0 15px 20px;">
+                        <li>Store A: 0.8% conversion rate, $2,50,000 revenue</li>
+                        <li>Store B: 3.2% conversion rate, $10,50,000 revenue</li>
+                    </ul>
+
+                    <p>The ONLY difference? Design quality. Same traffic turned into 4x more revenue.</p>
+
+                    <div class="moral">
+                        <strong>🎯 The Lesson:</strong> Design isn't decoration — it's the difference between visitors
+                        leaving or buying. A "pretty" design that doesn't convert is worthless. A conversion-focused
+                        design
+                        that looks premium? That's what generates revenue.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Principles -->
+            <section class="critical-alert" id="principles">
+                <h2>🎨 THE 5 LAWS OF PREMIUM DESIGN</h2>
+
+                <div class="highlight-box">
+                    <h3 style="margin-bottom: 15px;">1. WHITESPACE = LUXURY</h3>
+                    <p>Crowded = cheap. Breathing room = premium. When in doubt, add more space.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">2. CONSISTENCY IS KING</h3>
+                    <p>Same fonts, same colors, same button styles, same spacing — EVERYWHERE. Inconsistency = amateur.
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">3. HIERARCHY GUIDES THE EYE</h3>
+                    <p>Most important = biggest and first. Guide users to what matters. Don't make them think.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">4. MOBILE FIRST, ALWAYS</h3>
+                    <p>70% of traffic is mobile. Design for 375px width FIRST, then scale up to desktop.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">5. DESIGN FOR CONVERSION, NOT AWARDS</h3>
+                    <p>A beautiful store that doesn't sell is a failure. Every design decision should answer: "Will this
+                        help visitors buy?"</p>
+                </div>
+            </section>
+
+            <!-- What Premium Looks Like -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">⭐</div>
+                    <h2>What Makes Design "Premium"</h2>
+                </div>
+
+                <div class="comparison-grid">
+                    <div class="comparison-card bad">
+                        <h4>❌ Cheap / Amateur Design</h4>
+                        <ul class="styled-list cross-list">
+                            <li>Crowded layouts with no breathing room</li>
+                            <li>Inconsistent fonts (3+ font families)</li>
+                            <li>Bright, clashing colors</li>
+                            <li>Stock images that look generic</li>
+                            <li>Tiny text that's hard to read</li>
+                            <li>Buttons that look like 2005</li>
+                            <li>No visual hierarchy</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-card good">
+                        <h4>✅ Premium Design</h4>
+                        <ul class="styled-list check-list">
+                            <li>Generous whitespace between elements</li>
+                            <li>2 font families maximum (heading + body)</li>
+                            <li>Curated, harmonious color palette</li>
+                            <li>High-quality lifestyle/product imagery</li>
+                            <li>Readable text (16px+ body minimum)</li>
+                            <li>Modern buttons with hover states</li>
+                            <li>Clear visual hierarchy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="warning-story">
+                    <h4>The Client Who Wanted "MORE"</h4>
+                    <p>A client once insisted on adding more elements to their homepage: more colors, more animations,
+                        more
+                        sections, more products. "The more content, the better!" they said.</p>
+                    <p>We explained: More isn't better. Clarity is better.</p>
+                    <p>They insisted. We compromised. The cluttered design launched.</p>
+                    <p>Result: 0.9% conversion rate. Visitors couldn't find what they wanted. Too many choices = no
+                        choice.
+                    </p>
+                    <p>We redesigned with half the elements, double the whitespace. Conversion jumped to 2.8%.</p>
+                    <div class="lesson">
+                        <strong>🎯 The Lesson:</strong> Your job is to guide the client to what WORKS, not what they
+                        "feel"
+                        like. Data beats opinions. Less almost always converts more.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brand Styling -->
+            <section class="section" id="brand-styling">
+                <div class="section-header">
+                    <div class="section-number">1</div>
+                    <h2>Brand Styling Process</h2>
+                </div>
+
+                <h3>Step 1: Gather Brand Assets</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Asset</th>
+                            <th>What to Request</th>
+                            <th>If Not Provided</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Logo</strong></td>
+                            <td>PNG with transparency, SVG if available</td>
+                            <td>Flag to PM — cannot proceed without logo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Brand Colors</strong></td>
+                            <td>Hex codes for primary, secondary, accent</td>
+                            <td>Extract from logo or create complementary palette</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fonts</strong></td>
+                            <td>Font names or brand guidelines</td>
+                            <td>Suggest Google Fonts based on brand vibe</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reference Stores</strong></td>
+                            <td>3 stores they love (and why)</td>
+                            <td>Ask what "vibe" they want (minimal, bold, playful)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Product Images</strong></td>
+                            <td>High-res, consistent style, lifestyle shots</td>
+                            <td>Use best available, recommend AI enhancement</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Step 2: Create Color Scheme</h3>
+
+                <div class="info-box pink">
+                    <h4>🎨 Color Psychology in E-commerce</h4>
+                    <ul class="styled-list">
+                        <li><strong>Black/White/Gold:</strong> Luxury, premium, high-end products</li>
+                        <li><strong>Blue:</strong> Trust, reliability, technology, healthcare</li>
+                        <li><strong>Green:</strong> Natural, organic, wellness, sustainability</li>
+                        <li><strong>Pink/Purple:</strong> Beauty, feminine, creative, wellness</li>
+                        <li><strong>Orange/Red:</strong> Energy, urgency, sales, food</li>
+                    </ul>
+                </div>
+
+                <h4>Standard Color Structure</h4>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Color Role</th>
+                            <th>Usage</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Primary</strong></td>
+                            <td>Buttons, links, key CTAs</td>
+                            <td>#1E3A5F (Deep blue)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secondary</strong></td>
+                            <td>Accents, hover states, secondary buttons</td>
+                            <td>#3D6B99 (Lighter blue)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Background</strong></td>
+                            <td>Page background, cards</td>
+                            <td>#FFFFFF or #F8F9FA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Text</strong></td>
+                            <td>Body text, headings</td>
+                            <td>#212529 (Not pure black)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Muted</strong></td>
+                            <td>Borders, dividers, disabled states</td>
+                            <td>#E0E0E0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Typography -->
+            <section class="section" id="typography">
+                <div class="section-header">
+                    <div class="section-number">2</div>
+                    <h2>Typography System</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>🔤 The 2-Font Rule</h4>
+                    <p>Maximum 2 font families per store. More = amateur, slower load times, visual chaos.</p>
+                    <p><strong>Formula:</strong> 1 distinctive heading font + 1 clean body font</p>
+                </div>
+
+                <h3>Recommended Font Pairings</h3>
+
+                <div class="font-showcase">
+                    <div class="font-example">
+                        <div class="font-name">LUXURY / HIGH-END</div>
+                        <div class="font-sample" style="font-family: Playfair Display, serif;">Playfair Display</div>
+                        <div class="font-sample" style="font-family: Lato, sans-serif; font-size: 1.1em;">+ Lato for
+                            body
+                            text</div>
+                    </div>
+
+                    <div class="font-example">
+                        <div class="font-name">MODERN / TECH</div>
+                        <div class="font-sample" style="font-family: Poppins, sans-serif;">Poppins</div>
+                        <div class="font-sample" style="font-family: Inter, sans-serif; font-size: 1.1em;">+ Inter for
+                            body
+                            text</div>
+                    </div>
+
+                    <div class="font-example">
+                        <div class="font-name">CLEAN / MINIMAL</div>
+                        <div class="font-sample" style="font-family: Outfit, sans-serif;">Outfit</div>
+                        <div class="font-sample" style="font-family: Open Sans, sans-serif; font-size: 1.1em;">+ Open
+                            Sans
+                            for body text</div>
+                    </div>
+
+                    <div class="font-example">
+                        <div class="font-name">FRIENDLY / APPROACHABLE</div>
+                        <div class="font-sample" style="font-family: Nunito, sans-serif;">Nunito</div>
+                        <div class="font-sample" style="font-family: Roboto, sans-serif; font-size: 1.1em;">+ Roboto for
+                            body text</div>
+                    </div>
+                </div>
+
+                <h3>Font Size Hierarchy</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Desktop</th>
+                            <th>Mobile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>H1 (Hero)</strong></td>
+                            <td>48-64px</td>
+                            <td>32-40px</td>
+                        </tr>
+                        <tr>
+                            <td><strong>H2 (Section)</strong></td>
+                            <td>32-40px</td>
+                            <td>24-28px</td>
+                        </tr>
+                        <tr>
+                            <td><strong>H3 (Subsection)</strong></td>
+                            <td>24-28px</td>
+                            <td>20-22px</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Body Text</strong></td>
+                            <td>16-18px</td>
+                            <td>16px (never smaller!)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Small/Caption</strong></td>
+                            <td>14px</td>
+                            <td>14px</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Layout & Spacing -->
+            <section class="section" id="layout">
+                <div class="section-header">
+                    <div class="section-number">3</div>
+                    <h2>Layout & Spacing</h2>
+                </div>
+
+                <div class="info-box pink">
+                    <h4>📐 The Spacing Multiplier System</h4>
+                    <p>Use multiples of 8 for all spacing: 8px, 16px, 24px, 32px, 48px, 64px</p>
+                    <p>This creates visual rhythm and consistency.</p>
+                </div>
+
+                <h3>Section Spacing Guidelines</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Spacing Type</th>
+                            <th>Desktop</th>
+                            <th>Mobile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Between Sections</strong></td>
+                            <td>80-120px</td>
+                            <td>48-64px</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Between Elements in Section</strong></td>
+                            <td>24-32px</td>
+                            <td>16-24px</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Card Padding</strong></td>
+                            <td>24-32px</td>
+                            <td>16-20px</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Button Padding</strong></td>
+                            <td>16px 32px</td>
+                            <td>14px 24px</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Container Widths</h3>
+
+                <ul class="styled-list check-list">
+                    <li><strong>Max content width:</strong> 1200-1400px</li>
+                    <li><strong>Text max-width:</strong> 65-75 characters per line (readable)</li>
+                    <li><strong>Card grids:</strong> 3-4 columns desktop, 2 tablet, 1 mobile</li>
+                    <li><strong>Product grids:</strong> 4-5 columns desktop, 2-3 tablet, 2 mobile</li>
+                </ul>
+            </section>
+
+            <!-- Trust Elements -->
+            <section class="section" id="trust">
+                <div class="section-header">
+                    <div class="section-number">4</div>
+                    <h2>Trust Elements Design</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>🛡️ Trust = Conversions</h4>
+                    <p>Visitors need to feel SAFE before buying. Trust elements reduce friction and increase confidence.
+                    </p>
+                </div>
+
+                <h3>Essential Trust Elements</h3>
+
+                <div class="design-grid">
+                    <div class="design-card">
+                        <h4>🚚 Free Shipping Badge</h4>
+                        <p><strong>Location:</strong> Trust bar below hero, product page near ATC</p>
+                        <p><strong>Design:</strong> Simple icon + text, match brand colors</p>
+                        <p><strong>Copy:</strong> "Free Shipping Over $50" or "Free Express Shipping"</p>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>↩️ Easy Returns Badge</h4>
+                        <p><strong>Location:</strong> Trust bar, product page, footer</p>
+                        <p><strong>Design:</strong> Return arrow icon + clear text</p>
+                        <p><strong>Copy:</strong> "30-Day Easy Returns" or "Hassle-Free Returns"</p>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>🔒 Secure Payment Badge</h4>
+                        <p><strong>Location:</strong> Near checkout button, footer</p>
+                        <p><strong>Design:</strong> Lock icon + payment logos</p>
+                        <p><strong>Copy:</strong> "Secure Checkout" + Visa/MC/PayPal icons</p>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>⭐ Customer Reviews</h4>
+                        <p><strong>Location:</strong> Homepage section, product pages</p>
+                        <p><strong>Design:</strong> Star ratings, customer photos, verified badge</p>
+                        <p><strong>Best Practice:</strong> Show real reviews with faces if possible</p>
+                    </div>
+                </div>
+
+                <h3>Trust Bar Example</h3>
+
+                <div class="info-box info">
+                    <p style="text-align: center; font-size: 1.1em;">
+                        🚚 <strong>Free Shipping</strong> Over $50 &nbsp;&nbsp;|&nbsp;&nbsp;
+                        ↩️ <strong>Easy 30-Day</strong> Returns &nbsp;&nbsp;|&nbsp;&nbsp;
+                        🔒 <strong>Secure</strong> Payment &nbsp;&nbsp;|&nbsp;&nbsp;
+                        ⭐ <strong>4.9/5</strong> Customer Rating
+                    </p>
+                </div>
+            </section>
+
+            <!-- Mobile Design -->
+            <section class="section" id="mobile">
+                <div class="section-header">
+                    <div class="section-number">5</div>
+                    <h2>Mobile-First Design</h2>
+                </div>
+
+                <div class="info-box danger">
+                    <h4>🚨 70% OF TRAFFIC IS MOBILE</h4>
+                    <p>If mobile isn't perfect, you're losing 70% of potential sales. Mobile isn't an afterthought —
+                        it's
+                        the PRIMARY experience.</p>
+                </div>
+
+                <h3>Mobile Design Checklist</h3>
+
+                <div class="design-grid">
+                    <div class="design-card">
+                        <h4>👆 Touch Targets</h4>
+                        <ul class="styled-list check-list">
+                            <li>Button minimum: 44px × 44px</li>
+                            <li>Link spacing: 8px+ between links</li>
+                            <li>Form inputs: 48px height minimum</li>
+                            <li>Tap areas don't overlap</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>📱 Layout</h4>
+                        <ul class="styled-list check-list">
+                            <li>Single column for text content</li>
+                            <li>2-column max for product grids</li>
+                            <li>Full-width CTAs</li>
+                            <li>No horizontal scrolling</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>🛒 Sticky Add to Cart</h4>
+                        <ul class="styled-list check-list">
+                            <li>Fixed at bottom on scroll</li>
+                            <li>Price + Add to Cart visible</li>
+                            <li>Variant selector if needed</li>
+                            <li>Doesn't block content</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>🔤 Typography</h4>
+                        <ul class="styled-list check-list">
+                            <li>Body text: 16px minimum</li>
+                            <li>Line height: 1.5-1.7</li>
+                            <li>Proper heading scale</li>
+                            <li>Readable without zooming</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- QA Checklist -->
+            <section class="section" id="checklist">
+                <div class="section-header">
+                    <div class="section-number">✅</div>
+                    <h2>Design QA Checklist</h2>
+                </div>
+
+                <div class="design-grid">
+                    <div class="design-card">
+                        <h4>🎨 Visual Consistency</h4>
+                        <ul class="styled-list check-list">
+                            <li>Same fonts throughout</li>
+                            <li>Brand colors applied correctly</li>
+                            <li>Consistent button styles</li>
+                            <li>Uniform spacing</li>
+                            <li>Aligned elements</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>📸 Images</h4>
+                        <ul class="styled-list check-list">
+                            <li>No pixelation</li>
+                            <li>Consistent aspect ratios</li>
+                            <li>Proper alt text</li>
+                            <li>Compressed for speed</li>
+                            <li>No broken images</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>📱 Responsive</h4>
+                        <ul class="styled-list check-list">
+                            <li>Tested on real iPhone</li>
+                            <li>Tested on real Android</li>
+                            <li>Tablet looks good</li>
+                            <li>No horizontal scroll</li>
+                            <li>Touch targets 44px+</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-card">
+                        <h4>✨ Polish</h4>
+                        <ul class="styled-list check-list">
+                            <li>Hover states work</li>
+                            <li>Smooth transitions</li>
+                            <li>No placeholder content</li>
+                            <li>No Lorem Ipsum</li>
+                            <li>Favicon set</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ChatGPT Guide -->
+            <section class="section" id="chatgpt">
+                <div class="section-header">
+                    <div class="section-number">🤖</div>
+                    <h2>Using ChatGPT for Design</h2>
+                </div>
+
+                <div class="info-box info">
+                    <h4>📚 ChatGPT Prompts for Designers</h4>
+                    <ul class="styled-list">
+                        <li>"Suggest a color palette for a luxury skincare brand"</li>
+                        <li>"What are the current ecommerce design trends for 2024?"</li>
+                        <li>"What font pairings work well for fashion ecommerce?"</li>
+                        <li>"How can I make this homepage more conversion-focused?"</li>
+                        <li>"What trust elements should every product page have?"</li>
+                        <li>"Critique this design for mobile usability: [describe layout]"</li>
+                        <li>"What makes Apple's design feel premium?"</li>
+                    </ul>
+                </div>
+
+                <div class="info-box success">
+                    <h4>🎯 Daily Learning</h4>
+                    <ul class="styled-list check-list">
+                        <li>Analyze 1 top Shopify store daily — note what makes it work</li>
+                        <li>Practice creating color palettes from brand logos</li>
+                        <li>Learn color theory: complementary, analogous, triadic</li>
+                        <li>Study conversion psychology: why users click/buy</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- KPIs -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">📊</div>
+                    <h2>Designer KPIs</h2>
+                </div>
+
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="label">On-Time Delivery</div>
+                        <div class="metric">100%</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">Client Satisfaction</div>
+                        <div class="metric">4.9★</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">First-Round Approval</div>
+                        <div class="metric">70%+</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">Mobile Responsiveness</div>
+                        <div class="metric">100%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Tools -->
+            <section class="section" id="tools">
+                <div class="section-header">
+                    <div class="section-number">🛠️</div>
+                    <h2>Essential Design Tools</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>📌 Master Your Toolkit</h4>
+                    <p>These are the core tools every Digital Heroes designer should know inside out.</p>
+                </div>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Tool</th>
+                            <th>Purpose</th>
+                            <th>When to Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Figma</strong></td>
+                            <td>UI design, mockups, prototypes</td>
+                            <td>Full page mockups, client presentations, design systems</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Canva</strong></td>
+                            <td>Quick graphics, banners, social</td>
+                            <td>Fast hero images, announcement banners, quick edits</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shopify Theme Editor</strong></td>
+                            <td>Live store design</td>
+                            <td>All theme customizations, section editing, colors/fonts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Coolors.co</strong></td>
+                            <td>Color palette generation</td>
+                            <td>Creating harmonious color schemes from brand colors</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Fonts</strong></td>
+                            <td>Typography selection</td>
+                            <td>Finding font pairings, checking web availability</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Remove.bg / PhotoRoom</strong></td>
+                            <td>Background removal</td>
+                            <td>Product photos, creating transparent PNGs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TinyPNG</strong></td>
+                            <td>Image compression</td>
+                            <td>Optimizing all images before upload</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Unsplash / Pexels</strong></td>
+                            <td>Stock photography</td>
+                            <td>Lifestyle images, placeholders (when client has none)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>📋 Daily Design Workflow</h3>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time">Morning</div>
+                        <p>Check Slack for new projects → Review client briefs → Gather assets</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Mid-Day</div>
+                        <p>Design work → Create mockups → Apply to Shopify theme</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Afternoon</div>
+                        <p>Review on mobile → Optimize images → Send previews for feedback</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">End of Day</div>
+                        <p>Respond to revision requests → Update progress in Slack → Prepare for next day</p>
+                    </div>
+                </div>
+
+                <div class="info-box success">
+                    <h4>✅ Before Sending Any Design for Review:</h4>
+                    <ul class="styled-list check-list">
+                        <li>Viewed on mobile at 375px width?</li>
+                        <li>All images compressed and optimized?</li>
+                        <li>Colors consistent throughout?</li>
+                        <li>Typography is readable (16px+ body)?</li>
+                        <li>No spelling errors in visible text?</li>
+                        <li>Preview link tested and working?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Color Theory Deep Dive -->
+            <section class="section" id="color-theory">
+                <div class="section-header">
+                    <div class="section-number">🎨</div>
+                    <h2>Color Theory for Ecommerce</h2>
+                </div>
+
+                <h3>Color Psychology by Industry</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Niche</th>
+                            <th>Primary Colors</th>
+                            <th>Emotion/Goal</th>
+                            <th>Example Brands</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Luxury/Premium</strong></td>
+                            <td>Black, Gold, Deep Purple</td>
+                            <td>Exclusivity, Sophistication</td>
+                            <td>Chanel, Rolex</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Health/Wellness</strong></td>
+                            <td>Green, White, Earth Tones</td>
+                            <td>Natural, Trust, Calm</td>
+                            <td>Whole Foods, Goop</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tech/Gadgets</strong></td>
+                            <td>Blue, Silver, Black</td>
+                            <td>Innovation, Trust</td>
+                            <td>Apple, Samsung</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fashion</strong></td>
+                            <td>Black, White, Bold Accent</td>
+                            <td>Trendy, Statement</td>
+                            <td>Nike, Zara</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kids/Toys</strong></td>
+                            <td>Bright Primary Colors</td>
+                            <td>Fun, Energy, Joy</td>
+                            <td>LEGO, Fisher-Price</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Food/Beverage</strong></td>
+                            <td>Red, Orange, Yellow</td>
+                            <td>Appetite, Warmth</td>
+                            <td>McDonald's, Coca-Cola</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>The 60-30-10 Rule</h3>
+
+                <div class="info-box gold">
+                    <h4>🎯 Perfect Color Balance Every Time</h4>
+                    <ul class="styled-list">
+                        <li><strong>60% - Dominant Color:</strong> Background, large sections (usually neutral/light)
+                        </li>
+                        <li><strong>30% - Secondary Color:</strong> Headers, cards, navigation (brand color)</li>
+                        <li><strong>10% - Accent Color:</strong> CTAs, buttons, highlights (contrasting/pop)</li>
+                    </ul>
+                </div>
+
+                <h3>Contrast for Conversions</h3>
+
+                <div class="design-grid">
+                    <div class="design-card">
+                        <h4>✅ High Contrast CTAs</h4>
+                        <ul class="styled-list check-list">
+                            <li>Add to Cart should POP</li>
+                            <li>Use brand's boldest color</li>
+                            <li>Ensure 4.5:1 contrast ratio</li>
+                            <li>White or dark text (test both)</li>
+                        </ul>
+                    </div>
+                    <div class="design-card">
+                        <h4>❌ Low Contrast Mistakes</h4>
+                        <ul class="styled-list cross-list">
+                            <li>Gray text on gray background</li>
+                            <li>Light green on white</li>
+                            <li>Blue links on blue headers</li>
+                            <li>Yellow text on white</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Troubleshooting Common Design Issues -->
+            <section class="section" id="troubleshooting">
+                <div class="section-header">
+                    <div class="section-number">🔧</div>
+                    <h2>Troubleshooting Common Issues</h2>
+                </div>
+
+                <h3>Client Feedback Handling</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Client Says</th>
+                            <th>They Actually Mean</th>
+                            <th>Your Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"It doesn't pop"</td>
+                            <td>Needs more contrast or color vibrancy</td>
+                            <td>Increase saturation, add bold accent, check contrast ratios</td>
+                        </tr>
+                        <tr>
+                            <td>"It looks too busy"</td>
+                            <td>Too many elements competing for attention</td>
+                            <td>Add white space, reduce colors, simplify sections</td>
+                        </tr>
+                        <tr>
+                            <td>"It feels cheap"</td>
+                            <td>Lacks premium visual cues</td>
+                            <td>Add spacing, upgrade typography, use high-quality images</td>
+                        </tr>
+                        <tr>
+                            <td>"Make the logo bigger"</td>
+                            <td>They want more brand presence</td>
+                            <td>Keep logo appropriate size, add brand colors/elements elsewhere</td>
+                        </tr>
+                        <tr>
+                            <td>"I don't like it"</td>
+                            <td>Need to dig deeper for specifics</td>
+                            <td>Ask: "What specifically feels off? Colors? Layout? Images?"</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Common Design Problems & Fixes</h3>
+
+                <div class="info-box warning">
+                    <h4>⚠️ Problem: Store Looks "Template-y"</h4>
+                    <p><strong>Cause:</strong> Default theme settings, stock photos, generic fonts</p>
+                    <p><strong>Fix:</strong></p>
+                    <ol style="margin-left: 20px;">
+                        <li>Customize every section with brand colors</li>
+                        <li>Use unique typography pairings</li>
+                        <li>Replace stock photos with brand imagery</li>
+                        <li>Add custom icons and micro-animations</li>
+                    </ol>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>⚠️ Problem: Mobile Layout Broken</h4>
+                    <p><strong>Cause:</strong> Fixed widths, large images, non-responsive elements</p>
+                    <p><strong>Fix:</strong></p>
+                    <ol style="margin-left: 20px;">
+                        <li>Test on real devices, not just browser resize</li>
+                        <li>Use percentage widths, not pixels</li>
+                        <li>Ensure images have max-width: 100%</li>
+                        <li>Test touch targets are 44px minimum</li>
+                    </ol>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>⚠️ Problem: Images Look Blurry</h4>
+                    <p><strong>Cause:</strong> Low resolution source, improper sizing</p>
+                    <p><strong>Fix:</strong></p>
+                    <ol style="margin-left: 20px;">
+                        <li>Request 2x resolution from client (2000px for 1000px display)</li>
+                        <li>Use Shopify's image_url with proper sizing</li>
+                        <li>Avoid upscaling small images</li>
+                        <li>Use WebP format for better quality at smaller file size</li>
+                    </ol>
+                </div>
+
+                <h3>When to Push Back on Client</h3>
+
+                <div class="info-box danger">
+                    <h4>🚨 Politely Push Back If Client Wants:</h4>
+                    <ul class="styled-list cross-list">
+                        <li><strong>Neon colors on white background</strong> — Hurts readability, looks unprofessional
+                        </li>
+                        <li><strong>Auto-playing music</strong> — Instant bounce, never do this</li>
+                        <li><strong>Flashing/blinking elements</strong> — 1998 called, they want their GeoCities back
+                        </li>
+                        <li><strong>Tiny fonts (&lt;14px)</strong> — Accessibility issue, loses customers</li>
+                        <li><strong>50+ different colors</strong> — No brand consistency</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Script:</strong> "I understand you want that, but our
+                        experience
+                        shows it can actually hurt conversions. Here's a better alternative that achieves the same
+                        goal..."
+                    </p>
+                </div>
+            </section>
+
+            <!-- ChatGPT Prompts for Designers -->
+            <section class="section" id="chatgpt">
+                <div class="section-header">
+                    <div class="section-number">🤖</div>
+                    <h2>ChatGPT Prompts for Designers</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>💡 Use AI to Speed Up Your Design Process</h4>
+                    <p>Use these prompts to get inspiration, generate copy, and solve design problems faster.</p>
+                </div>
+
+                <h3>Design Inspiration & Direction</h3>
+
+                <div class="template-box">
+                    <div class="template-header">🤖 Prompt: Get Design Direction</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        I'm designing a Shopify store for:<br><br>
+                        Industry: [e.g., fashion, skincare, tech]<br>
+                        Target audience: [e.g., women 25-35, luxury buyers]<br>
+                        Brand vibe: [e.g., minimalist, bold, playful]<br>
+                        Competitor examples: [List 1-2 competitors]<br><br>
+                        Give me:<br>
+                        1. Color palette suggestion (primary, secondary, accent)<br>
+                        2. Font pairing recommendation<br>
+                        3. Layout style (minimal grid, bold asymmetric, etc.)<br>
+                        4. Hero section approach<br>
+                        5. Trust elements I should include
+                    </p>
+                </div>
+
+                <div class="template-box" style="margin-top: 20px;">
+                    <div class="template-header">🤖 Prompt: Analyze Reference Stores</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        The client shared these reference websites: [List URLs]<br><br>
+                        Analyze what they like about them:<br>
+                        1. What design elements are common across all references?<br>
+                        2. What color schemes and typography are they using?<br>
+                        3. What layout patterns do they follow?<br>
+                        4. What should I adopt and what should I improve on?<br>
+                        5. Create a design brief based on these references
+                    </p>
+                </div>
+
+                <h3>UX & Conversion</h3>
+
+                <div class="template-box">
+                    <div class="template-header">🤖 Prompt: Review My Design for CRO</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        I'm designing a [homepage / product page / collection page] for a Shopify store.<br><br>
+                        My current design includes:<br>
+                        - [Describe hero section]<br>
+                        - [Describe navigation]<br>
+                        - [Describe product display]<br>
+                        - [Describe CTA placement]<br><br>
+                        Review for conversion optimization:<br>
+                        1. Is there a clear visual hierarchy?<br>
+                        2. Are CTAs prominent and above the fold?<br>
+                        3. What trust elements are missing?<br>
+                        4. What might cause friction or confusion?<br>
+                        5. What would increase conversions?
+                    </p>
+                </div>
+
+                <div class="template-box" style="margin-top: 20px;">
+                    <div class="template-header">🤖 Prompt: Generate Microcopy</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        I need microcopy for a [store type] Shopify store.<br><br>
+                        Brand voice: [Describe tone - friendly/luxurious/playful]<br><br>
+                        Write the following:<br>
+                        1. Hero headline (under 10 words)<br>
+                        2. Hero subheadline (1-2 sentences)<br>
+                        3. CTA button text (2-4 words)<br>
+                        4. Collection titles (5 options)<br>
+                        5. Trust bar phrases (3 short benefits)<br>
+                        6. Footer tagline
+                    </p>
+                </div>
+
+                <h3>Client Communication</h3>
+
+                <div class="template-box">
+                    <div class="template-header">🤖 Prompt: Explain Design Decision to Client</div>
+                    <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                        My client wants: [What they asked for]<br>
+                        I designed: [What you actually did instead]<br>
+                        Reason: [Why your approach is better for conversions]<br><br>
+                        Write a professional message that:<br>
+                        1. Acknowledges their request<br>
+                        2. Explains why my design choice is better<br>
+                        3. Uses data/psychology to back it up<br>
+                        4. Offers to discuss if they still prefer their way<br>
+                        5. Keeps them feeling heard
+                    </p>
+                </div>
+
+                <div class="info-box success" style="margin-top: 25px;">
+                    <h4>✅ Pro Tips for Designer ChatGPT Use</h4>
+                    <ul class="styled-list check-list">
+                        <li><strong>Share Figma frames</strong> — Describe or screenshot your layout for feedback</li>
+                        <li><strong>Build a prompt library</strong> — Save prompts that work well for reuse</li>
+                        <li><strong>Get copywriting help</strong> — Let AI draft headlines while you focus on visuals
+                        </li>
+                        <li><strong>Accessibility checks</strong> — Ask ChatGPT to review color contrast and readability
+                        </li>
+                        <li><strong>Client pitch prep</strong> — Generate talking points for design presentations</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Figma Workflow -->
+            <section class="section" id="figma">
+                <div class="section-header">
+                    <div class="section-number">🎨</div>
+                    <h2>Figma Workflow & Organization</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>💡 Consistent File Structure = Faster Handoffs</h4>
+                    <p>Follow this structure for every project. It helps developers find assets and helps you find old
+                        work.
+                    </p>
+                </div>
+
+                <h3>Figma File Structure</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Page Name</th>
+                            <th>Contents</th>
+                            <th>Who Uses It</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>📋 Cover</strong></td>
+                            <td>Project name, status, date, thumbnail</td>
+                            <td>Everyone (first impression)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>📌 Moodboard</strong></td>
+                            <td>Reference screenshots, inspiration, client examples</td>
+                            <td>Client approval</td>
+                        </tr>
+                        <tr>
+                            <td><strong>🎨 Style Guide</strong></td>
+                            <td>Colors, fonts, spacing, component library</td>
+                            <td>Developer handoff</td>
+                        </tr>
+                        <tr>
+                            <td><strong>🏠 Desktop</strong></td>
+                            <td>All desktop page designs</td>
+                            <td>Client review, Developer</td>
+                        </tr>
+                        <tr>
+                            <td><strong>📱 Mobile</strong></td>
+                            <td>All mobile page designs</td>
+                            <td>Client review, Developer</td>
+                        </tr>
+                        <tr>
+                            <td><strong>🗑️ Archive</strong></td>
+                            <td>Old versions, rejected concepts</td>
+                            <td>Internal only</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Naming Conventions</h3>
+
+                <div class="template-box" style="margin-top: 20px;">
+                    <div class="template-header">📝 How to Name Your Layers</div>
+                    <ul class="styled-list check-list" style="margin-top: 15px;">
+                        <li><strong>Frames:</strong> Page-Section (e.g., "Home-Hero", "Product-Gallery")</li>
+                        <li><strong>Components:</strong> Type/Name (e.g., "Button/Primary", "Card/Product")</li>
+                        <li><strong>Groups:</strong> Descriptive (e.g., "Trust Badges", "Navigation Items")</li>
+                        <li><strong>Images:</strong> What it is (e.g., "Hero Background", "Product 1")</li>
+                    </ul>
+                    <div class="info-box danger" style="margin-top: 15px;">
+                        <h4>🚨 Never Name Layers:</h4>
+                        <ul class="styled-list cross-list">
+                            <li>"Frame 432" or "Rectangle 17"</li>
+                            <li>"Untitled" or "Copy"</li>
+                            <li>"Final-v2-FINAL-revised"</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Review Checklist -->
+            <section class="section" id="review-checklist">
+                <div class="section-header">
+                    <div class="section-number">✅</div>
+                    <h2>Design Review Checklist</h2>
+                </div>
+
+                <h3>Before Sharing with Client</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Check</th>
+                            <th>Why It Matters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Visual</strong></td>
+                            <td>Colors match brand guidelines?</td>
+                            <td>Brand consistency</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visual</strong></td>
+                            <td>Fonts are consistent throughout?</td>
+                            <td>Professional look</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visual</strong></td>
+                            <td>Spacing is even and aligned?</td>
+                            <td>Clean, polished feel</td>
+                        </tr>
+                        <tr>
+                            <td><strong>UX</strong></td>
+                            <td>CTAs are visible and above fold?</td>
+                            <td>Conversion optimization</td>
+                        </tr>
+                        <tr>
+                            <td><strong>UX</strong></td>
+                            <td>Mobile version makes sense?</td>
+                            <td>60%+ traffic is mobile</td>
+                        </tr>
+                        <tr>
+                            <td><strong>UX</strong></td>
+                            <td>Trust elements included?</td>
+                            <td>Reduces purchase anxiety</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Technical</strong></td>
+                            <td>Images are high quality?</td>
+                            <td>Shows as intended</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Technical</strong></td>
+                            <td>No placeholder text remaining?</td>
+                            <td>Looks complete</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Client Presentation Tips</h3>
+
+                <div class="info-box success" style="margin-top: 20px;">
+                    <h4>✅ When Presenting Designs</h4>
+                    <ul class="styled-list check-list">
+                        <li><strong>Start with context:</strong> "Based on your brief, here's what I designed..."</li>
+                        <li><strong>Explain decisions:</strong> "I chose this layout because..."</li>
+                        <li><strong>Show mobile first:</strong> Most clients forget to check mobile</li>
+                        <li><strong>Ask specific questions:</strong> "Does this header feel right?" not "What do you
+                            think?"
+                        </li>
+                        <li><strong>Document feedback:</strong> Write it down during the call, send summary after</li>
+                    </ul>
+                </div>
+
+                <div class="info-box warning" style="margin-top: 20px;">
+                    <h4>⚠️ When Client Asks for Changes You Disagree With</h4>
+                    <p style="margin-top: 10px;"><strong>Script:</strong> "I understand you want [their request]. I'd
+                        like
+                        to suggest [your alternative] because [reason based on conversions/UX]. Would you like to see a
+                        mockup of both options so we can compare?"</p>
+                    <p style="margin-top: 10px;"><em>This lets you push back professionally while keeping them in
+                            control.</em></p>
+                </div>
+            </section>
+
+            <!-- Difficult Situations Section -->
+            <section class="section" id="difficult-situations">
+                <div class="section-header">
+                    <div class="section-number">⚠️</div>
+                    <h2>Handling Difficult Situations</h2>
+                </div>
+
+                <h3>🔴 Client Says "I'll Know It When I See It"</h3>
+
+                <h3>🎯 Task Priority Order (What Comes First)</h3>
+                <div class="info-box success" style="margin-bottom: 30px;">
+                    <p><strong>Handle in this order every day:</strong></p>
+                    <ol style="margin-top: 15px; line-height: 2;">
+                        <li><strong>🔴 P0 - Revision Requests from Clients</strong> → Active projects waiting on your
+                            changes.</li>
+                        <li><strong>🔴 P0 - Deadline-Day Deliveries</strong> → Designs due TODAY must be completed.</li>
+                        <li><strong>🔴 P0 - PM/Client Questions</strong> → Respond within 1 hour. Don't block decisions.
+                        </li>
+                        <li><strong>🟡 P1 - Active Design Work</strong> → Projects with deadlines in next 2-3 days.</li>
+                        <li><strong>🟡 P1 - Asset Preparation</strong> → Export finals, organize files for developers.
+                        </li>
+                        <li><strong>🟢 P2 - Design System Updates</strong> → Component library, style guide maintenance.
+                        </li>
+                        <li><strong>🟢 P2 - Mockup Refinements</strong> → Polishing work that's not urgent.</li>
+                        <li><strong>⚪ P3 - Inspiration & Learning</strong> → Dribbble, tutorials, skill development.
+                        </li>
+                    </ol>
+                    <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Client-facing revisions > Deadlines > New
+                        designs > Personal growth.</p>
+                </div>
+
+                <h3 id="bad-brief">🔴 Client Says "I'll Know It When I See It"</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Client can't articulate what they want, expects you to read their
+                        mind.
+                    </p>
+                    <p><strong>Response:</strong> "Let me show you 3 different directions. Please point to elements you
+                        like
+                        in each one. This will help me understand your vision."</p>
+                    <p><strong>Rule:</strong> Always use mood boards and examples. Never design blind.</p>
+                </div>
+
+                <h3 id="own-design">🔴 Client Wants to Use Their Own "Design"</h3>
+                <div class="info-box warning">
+                    <p><strong>Situation:</strong> Client provides a terrible sketch/mockup and wants you to implement
+                        it
+                        exactly.</p>
+                    <p><strong>Response:</strong> "Thank you for sharing your vision! I love [specific element]. I'd
+                        like to
+                        suggest some enhancements that will improve [conversion/usability/mobile experience]. Can I show
+                        you
+                        some options?"</p>
+                    <p><strong>Rule:</strong> Educate gently, but document if they insist on bad design.</p>
+                </div>
+
+                <h3 id="too-many-cooks">🔴 Too Many Cooks (Multiple Stakeholders)</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Client has partner/spouse/friend all giving conflicting feedback.</p>
+                    <p><strong>Response:</strong> "I'm receiving different feedback from multiple people. Could you
+                        consolidate into one unified feedback document? This ensures we stay on timeline."</p>
+                    <p><strong>Rule:</strong> One point of contact for design feedback. Escalate to PM if chaos
+                        continues.
+                    </p>
+                </div>
+
+                <h3 id="wont-convert">🔴 Client Wants Design That Won't Convert</h3>
+                <div class="info-box warning">
+                    <p><strong>Situation:</strong> Client insists on busy design, hidden CTAs, or poor UX choices.</p>
+                    <p><strong>Response:</strong> "I want to share some data: [stat about conversion]. Your current
+                        request
+                        may impact sales negatively. I recommend [alternative]. Would you like me to show you how?"</p>
+                    <p><strong>Rule:</strong> Advise with data. If they insist, document your recommendation.</p>
+                </div>
+
+                <h3 id="endless-revisions">🔴 Endless Revision Requests</h3>
+                <div class="info-box warning">
+                    <p><strong>Situation:</strong> Client keeps asking for "just one more tweak" beyond revision rounds.
+                    </p>
+                    <p><strong>Response:</strong> Route through PM: "We've completed the included revisions. I'll check
+                        with
+                        the PM about options for additional design work."</p>
+                    <p><strong>Rule:</strong> Track revisions. Additional rounds = additional quote.</p>
+                </div>
+
+                <h3 id="all-disapprove">🔴 Client Disapproves of Everything</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Nothing you show is ever right. Client always negative.</p>
+                    <p><strong>Response:</strong> "Help me understand: What specific elements aren't working? Can you
+                        show
+                        me examples of designs you love?" If continues, escalate to PM.</p>
+                    <p><strong>Rule:</strong> Get specifics. Vague criticism = no actionable feedback.</p>
+                </div>
+
+                <h3 id="free-concept">🔴 Client Wants Free Design Concepts Before Ordering</h3>
+                <div class="info-box danger">
+                    <p><strong>Situation:</strong> Prospect asks "Can you show me what you'd design first?"</p>
+                    <p><strong>Response:</strong> Route to Sales: "We don't create custom designs before project
+                        confirmation. Our portfolio demonstrates our quality. Once you order, you'll receive dedicated
+                        design concepts."</p>
+                    <p><strong>Rule:</strong> Never do spec work. Our portfolio speaks for itself.</p>
+                </div>
+
+                <h3 id="bad-assets">🔴 Assets Provided Are Low Quality</h3>
+                <div class="info-box warning">
+                    <p><strong>Situation:</strong> Client sends blurry images, screenshots, or low-res logos.</p>
+                    <p><strong>Response:</strong> "To achieve premium results, I need high-resolution assets: Logo in
+                        SVG/PNG (transparent), photos min 2000px wide. Current assets will look pixelated on the final
+                        design."</p>
+                    <p><strong>Rule:</strong> Don't compromise quality. Request proper assets before proceeding.</p>
+                </div>
+            </section>
+
+            <!-- Motivation Section -->
+            <section class="section" id="inspiration"
+                style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
+                <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
+                    <div class="section-number">🌟</div>
+                    <h2 style="color: white;">Your Daily Inspiration</h2>
+                </div>
+
+                <div style="text-align: center; padding: 30px 0;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">🎨</div>
+                    <blockquote
+                        style="font-size: 24px; font-style: italic; color: #F472B6; margin-bottom: 20px; line-height: 1.6;">
+                        "Design is not just what it looks like. Design is how it works. And how it CONVERTS."
+                    </blockquote>
+                    <p style="color: #9CA3AF;">— Inspired by Steve Jobs</p>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                    <h3 style="color: #F472B6; margin-bottom: 15px;">📖 Success Story: The Button That Made $10,000</h3>
+                    <p style="color: #E5E7EB; line-height: 1.8;">
+                        A client's "Add to Cart" button was the same color as the background — barely visible. Our
+                        designer
+                        made ONE change: a high-contrast, bold button with subtle animation.
+                        <br><br>
+                        <strong style="color: #10B981;">The result?</strong> Conversion rate jumped from 1.2% to 2.8%
+                        overnight. That single button change generated an extra <strong style="color: #FCD34D;">$10,000
+                            in
+                            revenue that month.</strong>
+                        <br><br>
+                        <em>The lesson: Every pixel matters. The smallest design decision can have massive business
+                            impact.</em>
+                    </p>
+                </div>
+
+                <div style="background: rgba(244, 114, 182, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                    <h3 style="color: #F9A8D4; margin-bottom: 15px;">⚡ Productivity Hacks for Designers</h3>
+                    <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
+                        <li>🎯 <strong>2-Minute Rule:</strong> If a design task takes less than 2 minutes, do it now
+                        </li>
+                        <li>📁 <strong>Template Everything:</strong> Save time with reusable Figma components</li>
+                        <li>🔄 <strong>Batch Similar Tasks:</strong> Do all wireframes, then all mockups, then all
+                            exports
+                        </li>
+                        <li>⏰ <strong>90-Minute Blocks:</strong> Deep design work in focused 90-min sessions, then break
+                        </li>
+                        <li>🚫 <strong>No Notifications:</strong> Turn off Slack during creative work</li>
+                    </ul>
+                </div>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div
+                        style="background: rgba(244, 114, 182, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">👁️</div>
+                        <p style="color: #FBCFE8; font-weight: 600;">"Simplicity is the ultimate sophistication."</p>
+                    </div>
+                    <div
+                        style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">💡</div>
+                        <p style="color: #A7F3D0; font-weight: 600;">"Good design is good business."</p>
+                    </div>
+                    <div
+                        style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 10px;">🎯</div>
+                        <p style="color: #FDE68A; font-weight: 600;">"Design for the user, not for your portfolio."</p>
+                    </div>
+                </div>
+
+                <div
+                    style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                    <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
+                    <p style="font-size: 20px; color: #F472B6; font-weight: 600;">"Today, I create experiences that
+                        delight
+                        users and drive business results. Every design decision is intentional."</p>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <h3>Digital Heroes</h3>
+                <p><strong>"Design that SELLS, not just looks pretty"</strong></p>
+                <p style="margin-top: 20px;">Premium. Consistent. Conversion-Focused.</p>
+                <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.7;">Internal Use Only | Version 2.0 | January
+                    2026
+                </p>
+            </footer>
         </div>
-        </nav>
+    </div>
+    </div>
+    </div> <!-- End content-sop -->
 
-        <div id="searchResults"
-            style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
-            <h3 style="margin-bottom: 15px;">🔍 Search Results (<span id="resultCount">0</span>)</h3>
-            <div id="resultsList"></div>
-            <button onclick="clearSearch()"
-                style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
-                Search</button>
+    <!-- ASSETS CONTENT -->
+    <div id="content-assets" class="view-section hidden" style="margin-left: 320px;">
+        <div class="container">
+            <div class="header">
+                <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
+                <h1>Designer Assets & Training Library</h1>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
+                    training, scripts, and resources to help you master your role.</p>
+            </div>
+
+            <div id="videos" class="section-title"
+                style="border-left: 4px solid #3B82F6; padding-left: 15px; margin-bottom: 30px;">
+                <h2 style="margin: 0;">📹 Video Training</h2>
+            </div>
+
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            15:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Fundamentals</span>
+                        <h3>The 5 Laws of Premium Design</h3>
+                        <p>A deep dive into our core design philosophy: whitespace, hierarchy, and consistency.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            45:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Workflow</span>
+                        <h3>Figma to Shopify Workflow</h3>
+                        <p>How to design high-fidelity mockups that developers can actually build.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        [YouTube Embed Placeholder]
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            25:00</div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag">Mobile</span>
+                        <h3>Mobile UX Masterclass</h3>
+                        <p>Designing mobile-first navigation, touch targets, and sticky CTAs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resources" class="section-title"
+                style="border-left: 4px solid #10B981; padding-left: 15px; margin: 60px 0 30px 0;">
+                <h2 style="margin: 0;">📄 Downloadable Resources</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <a href="#"
+                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
+                    <span style="font-size: 2em; margin-right: 15px;">🎨</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">Figma Design System</strong>
+                        <span style="color: #9CA3AF; font-size: 0.9em;">Our standard UI kit</span>
+                    </div>
+                </a>
+                <a href="#"
+                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
+                    <span style="font-size: 2em; margin-right: 15px;">📝</span>
+                    <div>
+                        <strong style="display: block; font-size: 1.1em;">QA Checklist PDF</strong>
+                        <span style="color: #9CA3AF; font-size: 0.9em;">Verify designs before handoff</span>
+                    </div>
+                </a>
+            </div>
         </div>
+    </div>
 
-        <script>
-            function searchSOP() {
-                const query = document.getElementById('searchInput').value.toLowerCase().trim();
-                const sections = document.querySelectorAll('.section, .critical-alert');
-                const resultsDiv = document.getElementById('searchResults');
-                const resultsList = document.getElementById('resultsList');
-                const resultCount = document.getElementById('resultCount');
-                if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
-                let matches = [];
-                sections.forEach(section => {
-                    const text = section.textContent.toLowerCase();
-                    const header = section.querySelector('h2, h3');
-                    if (text.includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--pink)'; if (header) matches.push({ title: header.textContent.substring(0, 50), element: section }); }
-                    else { section.style.display = 'none'; section.style.border = 'none'; }
-                });
-                resultCount.textContent = matches.length;
-                resultsList.innerHTML = matches.map((m, i) => `<div style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 8px; cursor: pointer;" onclick="document.querySelectorAll('.section, .critical-alert')[${i}].scrollIntoView({behavior:'smooth'})">${m.title}</div>`).join('');
-                resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
-            }
-            function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section, .critical-alert').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
-        </script>
-
-        <!-- Opening Story -->
-        <section class="section">
-            <div class="section-header">
-                <div class="section-number">📖</div>
-                <h2>The $50,000 Difference in Design</h2>
+    <!-- ONBOARDING CONTENT -->
+    <div id="content-onboarding" class="view-section hidden" style="margin-left: 320px;">
+        <div class="container">
+            <div class="header">
+                <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
+                <h1>Your Onboarding Journey</h1>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
+                    to become a certified UI/UX Designer.</p>
             </div>
 
-            <div class="story-box">
-                <h4>Two Stores, Same Products, Wildly Different Results</h4>
-                <p>Two skincare brands launched in the same month. Same products. Same prices. Same marketing budget.
-                </p>
+            <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
 
-                <p><strong>Store A:</strong> Basic template, default fonts, stock images, cluttered layout. Looked like
-                    every other store.</p>
-
-                <p><strong>Store B:</strong> Custom color palette, premium typography, lifestyle photography, generous
-                    whitespace, trust badges strategically placed.</p>
-
-                <p><strong>Results after 30 days:</strong></p>
-                <ul style="margin: 15px 0 15px 20px;">
-                    <li>Store A: 0.8% conversion rate, $2,50,000 revenue</li>
-                    <li>Store B: 3.2% conversion rate, $10,50,000 revenue</li>
-                </ul>
-
-                <p>The ONLY difference? Design quality. Same traffic turned into 4x more revenue.</p>
-
-                <div class="moral">
-                    <strong>🎯 The Lesson:</strong> Design isn't decoration — it's the difference between visitors
-                    leaving or buying. A "pretty" design that doesn't convert is worthless. A conversion-focused design
-                    that looks premium? That's what generates revenue.
-                </div>
-            </div>
-        </section>
-
-        <!-- Design Principles -->
-        <section class="critical-alert" id="principles">
-            <h2>🎨 THE 5 LAWS OF PREMIUM DESIGN</h2>
-
-            <div class="highlight-box">
-                <h3 style="margin-bottom: 15px;">1. WHITESPACE = LUXURY</h3>
-                <p>Crowded = cheap. Breathing room = premium. When in doubt, add more space.</p>
-            </div>
-
-            <div class="highlight-box" style="margin-top: 20px;">
-                <h3 style="margin-bottom: 15px;">2. CONSISTENCY IS KING</h3>
-                <p>Same fonts, same colors, same button styles, same spacing — EVERYWHERE. Inconsistency = amateur.</p>
-            </div>
-
-            <div class="highlight-box" style="margin-top: 20px;">
-                <h3 style="margin-bottom: 15px;">3. HIERARCHY GUIDES THE EYE</h3>
-                <p>Most important = biggest and first. Guide users to what matters. Don't make them think.</p>
-            </div>
-
-            <div class="highlight-box" style="margin-top: 20px;">
-                <h3 style="margin-bottom: 15px;">4. MOBILE FIRST, ALWAYS</h3>
-                <p>70% of traffic is mobile. Design for 375px width FIRST, then scale up to desktop.</p>
-            </div>
-
-            <div class="highlight-box" style="margin-top: 20px;">
-                <h3 style="margin-bottom: 15px;">5. DESIGN FOR CONVERSION, NOT AWARDS</h3>
-                <p>A beautiful store that doesn't sell is a failure. Every design decision should answer: "Will this
-                    help visitors buy?"</p>
-            </div>
-        </section>
-
-        <!-- What Premium Looks Like -->
-        <section class="section">
-            <div class="section-header">
-                <div class="section-number">⭐</div>
-                <h2>What Makes Design "Premium"</h2>
-            </div>
-
-            <div class="comparison-grid">
-                <div class="comparison-card bad">
-                    <h4>❌ Cheap / Amateur Design</h4>
-                    <ul class="styled-list cross-list">
-                        <li>Crowded layouts with no breathing room</li>
-                        <li>Inconsistent fonts (3+ font families)</li>
-                        <li>Bright, clashing colors</li>
-                        <li>Stock images that look generic</li>
-                        <li>Tiny text that's hard to read</li>
-                        <li>Buttons that look like 2005</li>
-                        <li>No visual hierarchy</li>
-                    </ul>
+                <!-- Step 1 -->
+                <div id="step-1" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        1</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
+                            understand, and internalize the Standard Operating Procedure. This document defines our
+                            design language.</p>
+                        <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
+                            to Designer SOP</a>
+                    </div>
                 </div>
 
-                <div class="comparison-card good">
-                    <h4>✅ Premium Design</h4>
-                    <ul class="styled-list check-list">
-                        <li>Generous whitespace between elements</li>
-                        <li>2 font families maximum (heading + body)</li>
-                        <li>Curated, harmonious color palette</li>
-                        <li>High-quality lifestyle/product imagery</li>
-                        <li>Readable text (16px+ body minimum)</li>
-                        <li>Modern buttons with hover states</li>
-                        <li>Clear visual hierarchy</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="warning-story">
-                <h4>The Client Who Wanted "MORE"</h4>
-                <p>A client once insisted on adding more elements to their homepage: more colors, more animations, more
-                    sections, more products. "The more content, the better!" they said.</p>
-                <p>We explained: More isn't better. Clarity is better.</p>
-                <p>They insisted. We compromised. The cluttered design launched.</p>
-                <p>Result: 0.9% conversion rate. Visitors couldn't find what they wanted. Too many choices = no choice.
-                </p>
-                <p>We redesigned with half the elements, double the whitespace. Conversion jumped to 2.8%.</p>
-                <div class="lesson">
-                    <strong>🎯 The Lesson:</strong> Your job is to guide the client to what WORKS, not what they "feel"
-                    like. Data beats opinions. Less almost always converts more.
-                </div>
-            </div>
-        </section>
-
-        <!-- Brand Styling -->
-        <section class="section" id="brand-styling">
-            <div class="section-header">
-                <div class="section-number">1</div>
-                <h2>Brand Styling Process</h2>
-            </div>
-
-            <h3>Step 1: Gather Brand Assets</h3>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Asset</th>
-                        <th>What to Request</th>
-                        <th>If Not Provided</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Logo</strong></td>
-                        <td>PNG with transparency, SVG if available</td>
-                        <td>Flag to PM — cannot proceed without logo</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Brand Colors</strong></td>
-                        <td>Hex codes for primary, secondary, accent</td>
-                        <td>Extract from logo or create complementary palette</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Fonts</strong></td>
-                        <td>Font names or brand guidelines</td>
-                        <td>Suggest Google Fonts based on brand vibe</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Reference Stores</strong></td>
-                        <td>3 stores they love (and why)</td>
-                        <td>Ask what "vibe" they want (minimal, bold, playful)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Product Images</strong></td>
-                        <td>High-res, consistent style, lifestyle shots</td>
-                        <td>Use best available, recommend AI enhancement</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Step 2: Create Color Scheme</h3>
-
-            <div class="info-box pink">
-                <h4>🎨 Color Psychology in E-commerce</h4>
-                <ul class="styled-list">
-                    <li><strong>Black/White/Gold:</strong> Luxury, premium, high-end products</li>
-                    <li><strong>Blue:</strong> Trust, reliability, technology, healthcare</li>
-                    <li><strong>Green:</strong> Natural, organic, wellness, sustainability</li>
-                    <li><strong>Pink/Purple:</strong> Beauty, feminine, creative, wellness</li>
-                    <li><strong>Orange/Red:</strong> Energy, urgency, sales, food</li>
-                </ul>
-            </div>
-
-            <h4>Standard Color Structure</h4>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Color Role</th>
-                        <th>Usage</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Primary</strong></td>
-                        <td>Buttons, links, key CTAs</td>
-                        <td>#1E3A5F (Deep blue)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Secondary</strong></td>
-                        <td>Accents, hover states, secondary buttons</td>
-                        <td>#3D6B99 (Lighter blue)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Background</strong></td>
-                        <td>Page background, cards</td>
-                        <td>#FFFFFF or #F8F9FA</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Text</strong></td>
-                        <td>Body text, headings</td>
-                        <td>#212529 (Not pure black)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Muted</strong></td>
-                        <td>Borders, dividers, disabled states</td>
-                        <td>#E0E0E0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Typography -->
-        <section class="section" id="typography">
-            <div class="section-header">
-                <div class="section-number">2</div>
-                <h2>Typography System</h2>
-            </div>
-
-            <div class="info-box gold">
-                <h4>🔤 The 2-Font Rule</h4>
-                <p>Maximum 2 font families per store. More = amateur, slower load times, visual chaos.</p>
-                <p><strong>Formula:</strong> 1 distinctive heading font + 1 clean body font</p>
-            </div>
-
-            <h3>Recommended Font Pairings</h3>
-
-            <div class="font-showcase">
-                <div class="font-example">
-                    <div class="font-name">LUXURY / HIGH-END</div>
-                    <div class="font-sample" style="font-family: Playfair Display, serif;">Playfair Display</div>
-                    <div class="font-sample" style="font-family: Lato, sans-serif; font-size: 1.1em;">+ Lato for body
-                        text</div>
+                <!-- Step 2 -->
+                <div id="step-2" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        2</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
+                            watch the required training videos. These will give you visual context to the written SOPs.
+                        </p>
+                        <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
+                            Assets Library</a>
+                    </div>
                 </div>
 
-                <div class="font-example">
-                    <div class="font-name">MODERN / TECH</div>
-                    <div class="font-sample" style="font-family: Poppins, sans-serif;">Poppins</div>
-                    <div class="font-sample" style="font-family: Inter, sans-serif; font-size: 1.1em;">+ Inter for body
-                        text</div>
+                <!-- Step 3 -->
+                <div id="step-3" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        3</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
+                        </h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by
+                            taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                        <p
+                            style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
+                            ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
+                                onclick="switchView('sop'); return false;" style="color: #3B82F6;">Designer SOP</a> view
+                            and click the "🎓 Test" button in the sidebar.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="font-example">
-                    <div class="font-name">CLEAN / MINIMAL</div>
-                    <div class="font-sample" style="font-family: Outfit, sans-serif;">Outfit</div>
-                    <div class="font-sample" style="font-family: Open Sans, sans-serif; font-size: 1.1em;">+ Open Sans
-                        for body text</div>
-                </div>
+                <!-- Step 4 -->
+                <div id="step-4" class="timeline-item" style="margin-bottom: 60px; position: relative;">
+                    <div class="timeline-marker"
+                        style="position: absolute; left: -66px; width: 32px; height: 32px; background: white; border: 3px solid #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #EC4899; z-index: 1;">
+                        4</div>
+                    <div class="card"
+                        style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording
+                            Task</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
+                            verification. Record a <strong>30-minute screen sharing video</strong> walking us through
+                            your understanding of the role.</p>
 
-                <div class="font-example">
-                    <div class="font-name">FRIENDLY / APPROACHABLE</div>
-                    <div class="font-sample" style="font-family: Nunito, sans-serif;">Nunito</div>
-                    <div class="font-sample" style="font-family: Roboto, sans-serif; font-size: 1.1em;">+ Roboto for
-                        body text</div>
-                </div>
-            </div>
+                        <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
+                            <strong>What to cover in your video:</strong>
+                            <ul style="color: #475569; line-height: 1.6; margin-top: 10px;">
+                                <li>Walk through the SOP sections and explain them in your own words.</li>
+                                <li>Explain your KRA (Key Result Areas) and how you plan to achieve them.</li>
+                                <li>Explain the KPIs (Key Performance Indicators) you are measured on.</li>
+                                <li>Walk through a past design of yours and explain how it aligns (or differs) from our
+                                    principles.</li>
+                            </ul>
+                        </div>
 
-            <h3>Font Size Hierarchy</h3>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Element</th>
-                        <th>Desktop</th>
-                        <th>Mobile</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>H1 (Hero)</strong></td>
-                        <td>48-64px</td>
-                        <td>32-40px</td>
-                    </tr>
-                    <tr>
-                        <td><strong>H2 (Section)</strong></td>
-                        <td>32-40px</td>
-                        <td>24-28px</td>
-                    </tr>
-                    <tr>
-                        <td><strong>H3 (Subsection)</strong></td>
-                        <td>24-28px</td>
-                        <td>20-22px</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Body Text</strong></td>
-                        <td>16-18px</td>
-                        <td>16px (never smaller!)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Small/Caption</strong></td>
-                        <td>14px</td>
-                        <td>14px</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Layout & Spacing -->
-        <section class="section" id="layout">
-            <div class="section-header">
-                <div class="section-number">3</div>
-                <h2>Layout & Spacing</h2>
-            </div>
-
-            <div class="info-box pink">
-                <h4>📐 The Spacing Multiplier System</h4>
-                <p>Use multiples of 8 for all spacing: 8px, 16px, 24px, 32px, 48px, 64px</p>
-                <p>This creates visual rhythm and consistency.</p>
-            </div>
-
-            <h3>Section Spacing Guidelines</h3>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Spacing Type</th>
-                        <th>Desktop</th>
-                        <th>Mobile</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Between Sections</strong></td>
-                        <td>80-120px</td>
-                        <td>48-64px</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Between Elements in Section</strong></td>
-                        <td>24-32px</td>
-                        <td>16-24px</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Card Padding</strong></td>
-                        <td>24-32px</td>
-                        <td>16-20px</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Button Padding</strong></td>
-                        <td>16px 32px</td>
-                        <td>14px 24px</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Container Widths</h3>
-
-            <ul class="styled-list check-list">
-                <li><strong>Max content width:</strong> 1200-1400px</li>
-                <li><strong>Text max-width:</strong> 65-75 characters per line (readable)</li>
-                <li><strong>Card grids:</strong> 3-4 columns desktop, 2 tablet, 1 mobile</li>
-                <li><strong>Product grids:</strong> 4-5 columns desktop, 2-3 tablet, 2 mobile</li>
-            </ul>
-        </section>
-
-        <!-- Trust Elements -->
-        <section class="section" id="trust">
-            <div class="section-header">
-                <div class="section-number">4</div>
-                <h2>Trust Elements Design</h2>
-            </div>
-
-            <div class="info-box gold">
-                <h4>🛡️ Trust = Conversions</h4>
-                <p>Visitors need to feel SAFE before buying. Trust elements reduce friction and increase confidence.</p>
-            </div>
-
-            <h3>Essential Trust Elements</h3>
-
-            <div class="design-grid">
-                <div class="design-card">
-                    <h4>🚚 Free Shipping Badge</h4>
-                    <p><strong>Location:</strong> Trust bar below hero, product page near ATC</p>
-                    <p><strong>Design:</strong> Simple icon + text, match brand colors</p>
-                    <p><strong>Copy:</strong> "Free Shipping Over $50" or "Free Express Shipping"</p>
-                </div>
-
-                <div class="design-card">
-                    <h4>↩️ Easy Returns Badge</h4>
-                    <p><strong>Location:</strong> Trust bar, product page, footer</p>
-                    <p><strong>Design:</strong> Return arrow icon + clear text</p>
-                    <p><strong>Copy:</strong> "30-Day Easy Returns" or "Hassle-Free Returns"</p>
-                </div>
-
-                <div class="design-card">
-                    <h4>🔒 Secure Payment Badge</h4>
-                    <p><strong>Location:</strong> Near checkout button, footer</p>
-                    <p><strong>Design:</strong> Lock icon + payment logos</p>
-                    <p><strong>Copy:</strong> "Secure Checkout" + Visa/MC/PayPal icons</p>
-                </div>
-
-                <div class="design-card">
-                    <h4>⭐ Customer Reviews</h4>
-                    <p><strong>Location:</strong> Homepage section, product pages</p>
-                    <p><strong>Design:</strong> Star ratings, customer photos, verified badge</p>
-                    <p><strong>Best Practice:</strong> Show real reviews with faces if possible</p>
+                        <div class="success-box"
+                            style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
+                                Submission</strong>
+                            <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
+                                nailed this task:</p>
+                            <div class="video-embed"
+                                style="aspect-ratio: 16/9; background: #000; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; margin-top: 15px;">
+                                [Example Video Placeholder]
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <h3>Trust Bar Example</h3>
-
-            <div class="info-box info">
-                <p style="text-align: center; font-size: 1.1em;">
-                    🚚 <strong>Free Shipping</strong> Over $50 &nbsp;&nbsp;|&nbsp;&nbsp;
-                    ↩️ <strong>Easy 30-Day</strong> Returns &nbsp;&nbsp;|&nbsp;&nbsp;
-                    🔒 <strong>Secure</strong> Payment &nbsp;&nbsp;|&nbsp;&nbsp;
-                    ⭐ <strong>4.9/5</strong> Customer Rating
-                </p>
-            </div>
-        </section>
-
-        <!-- Mobile Design -->
-        <section class="section" id="mobile">
-            <div class="section-header">
-                <div class="section-number">5</div>
-                <h2>Mobile-First Design</h2>
-            </div>
-
-            <div class="info-box danger">
-                <h4>🚨 70% OF TRAFFIC IS MOBILE</h4>
-                <p>If mobile isn't perfect, you're losing 70% of potential sales. Mobile isn't an afterthought — it's
-                    the PRIMARY experience.</p>
-            </div>
-
-            <h3>Mobile Design Checklist</h3>
-
-            <div class="design-grid">
-                <div class="design-card">
-                    <h4>👆 Touch Targets</h4>
-                    <ul class="styled-list check-list">
-                        <li>Button minimum: 44px × 44px</li>
-                        <li>Link spacing: 8px+ between links</li>
-                        <li>Form inputs: 48px height minimum</li>
-                        <li>Tap areas don't overlap</li>
-                    </ul>
-                </div>
-
-                <div class="design-card">
-                    <h4>📱 Layout</h4>
-                    <ul class="styled-list check-list">
-                        <li>Single column for text content</li>
-                        <li>2-column max for product grids</li>
-                        <li>Full-width CTAs</li>
-                        <li>No horizontal scrolling</li>
-                    </ul>
-                </div>
-
-                <div class="design-card">
-                    <h4>🛒 Sticky Add to Cart</h4>
-                    <ul class="styled-list check-list">
-                        <li>Fixed at bottom on scroll</li>
-                        <li>Price + Add to Cart visible</li>
-                        <li>Variant selector if needed</li>
-                        <li>Doesn't block content</li>
-                    </ul>
-                </div>
-
-                <div class="design-card">
-                    <h4>🔤 Typography</h4>
-                    <ul class="styled-list check-list">
-                        <li>Body text: 16px minimum</li>
-                        <li>Line height: 1.5-1.7</li>
-                        <li>Proper heading scale</li>
-                        <li>Readable without zooming</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- QA Checklist -->
-        <section class="section" id="checklist">
-            <div class="section-header">
-                <div class="section-number">✅</div>
-                <h2>Design QA Checklist</h2>
-            </div>
-
-            <div class="design-grid">
-                <div class="design-card">
-                    <h4>🎨 Visual Consistency</h4>
-                    <ul class="styled-list check-list">
-                        <li>Same fonts throughout</li>
-                        <li>Brand colors applied correctly</li>
-                        <li>Consistent button styles</li>
-                        <li>Uniform spacing</li>
-                        <li>Aligned elements</li>
-                    </ul>
-                </div>
-
-                <div class="design-card">
-                    <h4>📸 Images</h4>
-                    <ul class="styled-list check-list">
-                        <li>No pixelation</li>
-                        <li>Consistent aspect ratios</li>
-                        <li>Proper alt text</li>
-                        <li>Compressed for speed</li>
-                        <li>No broken images</li>
-                    </ul>
-                </div>
-
-                <div class="design-card">
-                    <h4>📱 Responsive</h4>
-                    <ul class="styled-list check-list">
-                        <li>Tested on real iPhone</li>
-                        <li>Tested on real Android</li>
-                        <li>Tablet looks good</li>
-                        <li>No horizontal scroll</li>
-                        <li>Touch targets 44px+</li>
-                    </ul>
-                </div>
-
-                <div class="design-card">
-                    <h4>✨ Polish</h4>
-                    <ul class="styled-list check-list">
-                        <li>Hover states work</li>
-                        <li>Smooth transitions</li>
-                        <li>No placeholder content</li>
-                        <li>No Lorem Ipsum</li>
-                        <li>Favicon set</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- ChatGPT Guide -->
-        <section class="section" id="chatgpt">
-            <div class="section-header">
-                <div class="section-number">🤖</div>
-                <h2>Using ChatGPT for Design</h2>
-            </div>
-
-            <div class="info-box info">
-                <h4>📚 ChatGPT Prompts for Designers</h4>
-                <ul class="styled-list">
-                    <li>"Suggest a color palette for a luxury skincare brand"</li>
-                    <li>"What are the current ecommerce design trends for 2024?"</li>
-                    <li>"What font pairings work well for fashion ecommerce?"</li>
-                    <li>"How can I make this homepage more conversion-focused?"</li>
-                    <li>"What trust elements should every product page have?"</li>
-                    <li>"Critique this design for mobile usability: [describe layout]"</li>
-                    <li>"What makes Apple's design feel premium?"</li>
-                </ul>
-            </div>
-
-            <div class="info-box success">
-                <h4>🎯 Daily Learning</h4>
-                <ul class="styled-list check-list">
-                    <li>Analyze 1 top Shopify store daily — note what makes it work</li>
-                    <li>Practice creating color palettes from brand logos</li>
-                    <li>Learn color theory: complementary, analogous, triadic</li>
-                    <li>Study conversion psychology: why users click/buy</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- KPIs -->
-        <section class="section">
-            <div class="section-header">
-                <div class="section-number">📊</div>
-                <h2>Designer KPIs</h2>
-            </div>
-
-            <div class="kpi-grid">
-                <div class="kpi-card">
-                    <div class="label">On-Time Delivery</div>
-                    <div class="metric">100%</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="label">Client Satisfaction</div>
-                    <div class="metric">4.9★</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="label">First-Round Approval</div>
-                    <div class="metric">70%+</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="label">Mobile Responsiveness</div>
-                    <div class="metric">100%</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Design Tools -->
-        <section class="section" id="tools">
-            <div class="section-header">
-                <div class="section-number">🛠️</div>
-                <h2>Essential Design Tools</h2>
-            </div>
-
-            <div class="info-box gold">
-                <h4>📌 Master Your Toolkit</h4>
-                <p>These are the core tools every Digital Heroes designer should know inside out.</p>
-            </div>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Tool</th>
-                        <th>Purpose</th>
-                        <th>When to Use</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Figma</strong></td>
-                        <td>UI design, mockups, prototypes</td>
-                        <td>Full page mockups, client presentations, design systems</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Canva</strong></td>
-                        <td>Quick graphics, banners, social</td>
-                        <td>Fast hero images, announcement banners, quick edits</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Shopify Theme Editor</strong></td>
-                        <td>Live store design</td>
-                        <td>All theme customizations, section editing, colors/fonts</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Coolors.co</strong></td>
-                        <td>Color palette generation</td>
-                        <td>Creating harmonious color schemes from brand colors</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Google Fonts</strong></td>
-                        <td>Typography selection</td>
-                        <td>Finding font pairings, checking web availability</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Remove.bg / PhotoRoom</strong></td>
-                        <td>Background removal</td>
-                        <td>Product photos, creating transparent PNGs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>TinyPNG</strong></td>
-                        <td>Image compression</td>
-                        <td>Optimizing all images before upload</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Unsplash / Pexels</strong></td>
-                        <td>Stock photography</td>
-                        <td>Lifestyle images, placeholders (when client has none)</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>📋 Daily Design Workflow</h3>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="time">Morning</div>
-                    <p>Check Slack for new projects → Review client briefs → Gather assets</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="time">Mid-Day</div>
-                    <p>Design work → Create mockups → Apply to Shopify theme</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="time">Afternoon</div>
-                    <p>Review on mobile → Optimize images → Send previews for feedback</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="time">End of Day</div>
-                    <p>Respond to revision requests → Update progress in Slack → Prepare for next day</p>
-                </div>
-            </div>
-
-            <div class="info-box success">
-                <h4>✅ Before Sending Any Design for Review:</h4>
-                <ul class="styled-list check-list">
-                    <li>Viewed on mobile at 375px width?</li>
-                    <li>All images compressed and optimized?</li>
-                    <li>Colors consistent throughout?</li>
-                    <li>Typography is readable (16px+ body)?</li>
-                    <li>No spelling errors in visible text?</li>
-                    <li>Preview link tested and working?</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Color Theory Deep Dive -->
-        <section class="section" id="color-theory">
-            <div class="section-header">
-                <div class="section-number">🎨</div>
-                <h2>Color Theory for Ecommerce</h2>
-            </div>
-
-            <h3>Color Psychology by Industry</h3>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Niche</th>
-                        <th>Primary Colors</th>
-                        <th>Emotion/Goal</th>
-                        <th>Example Brands</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Luxury/Premium</strong></td>
-                        <td>Black, Gold, Deep Purple</td>
-                        <td>Exclusivity, Sophistication</td>
-                        <td>Chanel, Rolex</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Health/Wellness</strong></td>
-                        <td>Green, White, Earth Tones</td>
-                        <td>Natural, Trust, Calm</td>
-                        <td>Whole Foods, Goop</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tech/Gadgets</strong></td>
-                        <td>Blue, Silver, Black</td>
-                        <td>Innovation, Trust</td>
-                        <td>Apple, Samsung</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Fashion</strong></td>
-                        <td>Black, White, Bold Accent</td>
-                        <td>Trendy, Statement</td>
-                        <td>Nike, Zara</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Kids/Toys</strong></td>
-                        <td>Bright Primary Colors</td>
-                        <td>Fun, Energy, Joy</td>
-                        <td>LEGO, Fisher-Price</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Food/Beverage</strong></td>
-                        <td>Red, Orange, Yellow</td>
-                        <td>Appetite, Warmth</td>
-                        <td>McDonald's, Coca-Cola</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>The 60-30-10 Rule</h3>
-
-            <div class="info-box gold">
-                <h4>🎯 Perfect Color Balance Every Time</h4>
-                <ul class="styled-list">
-                    <li><strong>60% - Dominant Color:</strong> Background, large sections (usually neutral/light)</li>
-                    <li><strong>30% - Secondary Color:</strong> Headers, cards, navigation (brand color)</li>
-                    <li><strong>10% - Accent Color:</strong> CTAs, buttons, highlights (contrasting/pop)</li>
-                </ul>
-            </div>
-
-            <h3>Contrast for Conversions</h3>
-
-            <div class="design-grid">
-                <div class="design-card">
-                    <h4>✅ High Contrast CTAs</h4>
-                    <ul class="styled-list check-list">
-                        <li>Add to Cart should POP</li>
-                        <li>Use brand's boldest color</li>
-                        <li>Ensure 4.5:1 contrast ratio</li>
-                        <li>White or dark text (test both)</li>
-                    </ul>
-                </div>
-                <div class="design-card">
-                    <h4>❌ Low Contrast Mistakes</h4>
-                    <ul class="styled-list cross-list">
-                        <li>Gray text on gray background</li>
-                        <li>Light green on white</li>
-                        <li>Blue links on blue headers</li>
-                        <li>Yellow text on white</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Troubleshooting Common Design Issues -->
-        <section class="section" id="troubleshooting">
-            <div class="section-header">
-                <div class="section-number">🔧</div>
-                <h2>Troubleshooting Common Issues</h2>
-            </div>
-
-            <h3>Client Feedback Handling</h3>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Client Says</th>
-                        <th>They Actually Mean</th>
-                        <th>Your Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>"It doesn't pop"</td>
-                        <td>Needs more contrast or color vibrancy</td>
-                        <td>Increase saturation, add bold accent, check contrast ratios</td>
-                    </tr>
-                    <tr>
-                        <td>"It looks too busy"</td>
-                        <td>Too many elements competing for attention</td>
-                        <td>Add white space, reduce colors, simplify sections</td>
-                    </tr>
-                    <tr>
-                        <td>"It feels cheap"</td>
-                        <td>Lacks premium visual cues</td>
-                        <td>Add spacing, upgrade typography, use high-quality images</td>
-                    </tr>
-                    <tr>
-                        <td>"Make the logo bigger"</td>
-                        <td>They want more brand presence</td>
-                        <td>Keep logo appropriate size, add brand colors/elements elsewhere</td>
-                    </tr>
-                    <tr>
-                        <td>"I don't like it"</td>
-                        <td>Need to dig deeper for specifics</td>
-                        <td>Ask: "What specifically feels off? Colors? Layout? Images?"</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Common Design Problems & Fixes</h3>
-
-            <div class="info-box warning">
-                <h4>⚠️ Problem: Store Looks "Template-y"</h4>
-                <p><strong>Cause:</strong> Default theme settings, stock photos, generic fonts</p>
-                <p><strong>Fix:</strong></p>
-                <ol style="margin-left: 20px;">
-                    <li>Customize every section with brand colors</li>
-                    <li>Use unique typography pairings</li>
-                    <li>Replace stock photos with brand imagery</li>
-                    <li>Add custom icons and micro-animations</li>
-                </ol>
-            </div>
-
-            <div class="info-box warning">
-                <h4>⚠️ Problem: Mobile Layout Broken</h4>
-                <p><strong>Cause:</strong> Fixed widths, large images, non-responsive elements</p>
-                <p><strong>Fix:</strong></p>
-                <ol style="margin-left: 20px;">
-                    <li>Test on real devices, not just browser resize</li>
-                    <li>Use percentage widths, not pixels</li>
-                    <li>Ensure images have max-width: 100%</li>
-                    <li>Test touch targets are 44px minimum</li>
-                </ol>
-            </div>
-
-            <div class="info-box warning">
-                <h4>⚠️ Problem: Images Look Blurry</h4>
-                <p><strong>Cause:</strong> Low resolution source, improper sizing</p>
-                <p><strong>Fix:</strong></p>
-                <ol style="margin-left: 20px;">
-                    <li>Request 2x resolution from client (2000px for 1000px display)</li>
-                    <li>Use Shopify's image_url with proper sizing</li>
-                    <li>Avoid upscaling small images</li>
-                    <li>Use WebP format for better quality at smaller file size</li>
-                </ol>
-            </div>
-
-            <h3>When to Push Back on Client</h3>
-
-            <div class="info-box danger">
-                <h4>🚨 Politely Push Back If Client Wants:</h4>
-                <ul class="styled-list cross-list">
-                    <li><strong>Neon colors on white background</strong> — Hurts readability, looks unprofessional</li>
-                    <li><strong>Auto-playing music</strong> — Instant bounce, never do this</li>
-                    <li><strong>Flashing/blinking elements</strong> — 1998 called, they want their GeoCities back</li>
-                    <li><strong>Tiny fonts (&lt;14px)</strong> — Accessibility issue, loses customers</li>
-                    <li><strong>50+ different colors</strong> — No brand consistency</li>
-                </ul>
-                <p style="margin-top: 15px;"><strong>Script:</strong> "I understand you want that, but our experience
-                    shows it can actually hurt conversions. Here's a better alternative that achieves the same goal..."
-                </p>
-            </div>
-        </section>
-
-        <!-- ChatGPT Prompts for Designers -->
-        <section class="section" id="chatgpt">
-            <div class="section-header">
-                <div class="section-number">🤖</div>
-                <h2>ChatGPT Prompts for Designers</h2>
-            </div>
-
-            <div class="info-box gold">
-                <h4>💡 Use AI to Speed Up Your Design Process</h4>
-                <p>Use these prompts to get inspiration, generate copy, and solve design problems faster.</p>
-            </div>
-
-            <h3>Design Inspiration & Direction</h3>
-
-            <div class="template-box">
-                <div class="template-header">🤖 Prompt: Get Design Direction</div>
-                <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                    I'm designing a Shopify store for:<br><br>
-                    Industry: [e.g., fashion, skincare, tech]<br>
-                    Target audience: [e.g., women 25-35, luxury buyers]<br>
-                    Brand vibe: [e.g., minimalist, bold, playful]<br>
-                    Competitor examples: [List 1-2 competitors]<br><br>
-                    Give me:<br>
-                    1. Color palette suggestion (primary, secondary, accent)<br>
-                    2. Font pairing recommendation<br>
-                    3. Layout style (minimal grid, bold asymmetric, etc.)<br>
-                    4. Hero section approach<br>
-                    5. Trust elements I should include
-                </p>
-            </div>
-
-            <div class="template-box" style="margin-top: 20px;">
-                <div class="template-header">🤖 Prompt: Analyze Reference Stores</div>
-                <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                    The client shared these reference websites: [List URLs]<br><br>
-                    Analyze what they like about them:<br>
-                    1. What design elements are common across all references?<br>
-                    2. What color schemes and typography are they using?<br>
-                    3. What layout patterns do they follow?<br>
-                    4. What should I adopt and what should I improve on?<br>
-                    5. Create a design brief based on these references
-                </p>
-            </div>
-
-            <h3>UX & Conversion</h3>
-
-            <div class="template-box">
-                <div class="template-header">🤖 Prompt: Review My Design for CRO</div>
-                <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                    I'm designing a [homepage / product page / collection page] for a Shopify store.<br><br>
-                    My current design includes:<br>
-                    - [Describe hero section]<br>
-                    - [Describe navigation]<br>
-                    - [Describe product display]<br>
-                    - [Describe CTA placement]<br><br>
-                    Review for conversion optimization:<br>
-                    1. Is there a clear visual hierarchy?<br>
-                    2. Are CTAs prominent and above the fold?<br>
-                    3. What trust elements are missing?<br>
-                    4. What might cause friction or confusion?<br>
-                    5. What would increase conversions?
-                </p>
-            </div>
-
-            <div class="template-box" style="margin-top: 20px;">
-                <div class="template-header">🤖 Prompt: Generate Microcopy</div>
-                <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                    I need microcopy for a [store type] Shopify store.<br><br>
-                    Brand voice: [Describe tone - friendly/luxurious/playful]<br><br>
-                    Write the following:<br>
-                    1. Hero headline (under 10 words)<br>
-                    2. Hero subheadline (1-2 sentences)<br>
-                    3. CTA button text (2-4 words)<br>
-                    4. Collection titles (5 options)<br>
-                    5. Trust bar phrases (3 short benefits)<br>
-                    6. Footer tagline
-                </p>
-            </div>
-
-            <h3>Client Communication</h3>
-
-            <div class="template-box">
-                <div class="template-header">🤖 Prompt: Explain Design Decision to Client</div>
-                <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                    My client wants: [What they asked for]<br>
-                    I designed: [What you actually did instead]<br>
-                    Reason: [Why your approach is better for conversions]<br><br>
-                    Write a professional message that:<br>
-                    1. Acknowledges their request<br>
-                    2. Explains why my design choice is better<br>
-                    3. Uses data/psychology to back it up<br>
-                    4. Offers to discuss if they still prefer their way<br>
-                    5. Keeps them feeling heard
-                </p>
-            </div>
-
-            <div class="info-box success" style="margin-top: 25px;">
-                <h4>✅ Pro Tips for Designer ChatGPT Use</h4>
-                <ul class="styled-list check-list">
-                    <li><strong>Share Figma frames</strong> — Describe or screenshot your layout for feedback</li>
-                    <li><strong>Build a prompt library</strong> — Save prompts that work well for reuse</li>
-                    <li><strong>Get copywriting help</strong> — Let AI draft headlines while you focus on visuals</li>
-                    <li><strong>Accessibility checks</strong> — Ask ChatGPT to review color contrast and readability
-                    </li>
-                    <li><strong>Client pitch prep</strong> — Generate talking points for design presentations</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Figma Workflow -->
-        <section class="section" id="figma">
-            <div class="section-header">
-                <div class="section-number">🎨</div>
-                <h2>Figma Workflow & Organization</h2>
-            </div>
-
-            <div class="info-box gold">
-                <h4>💡 Consistent File Structure = Faster Handoffs</h4>
-                <p>Follow this structure for every project. It helps developers find assets and helps you find old work.
-                </p>
-            </div>
-
-            <h3>Figma File Structure</h3>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Page Name</th>
-                        <th>Contents</th>
-                        <th>Who Uses It</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>📋 Cover</strong></td>
-                        <td>Project name, status, date, thumbnail</td>
-                        <td>Everyone (first impression)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📌 Moodboard</strong></td>
-                        <td>Reference screenshots, inspiration, client examples</td>
-                        <td>Client approval</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🎨 Style Guide</strong></td>
-                        <td>Colors, fonts, spacing, component library</td>
-                        <td>Developer handoff</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🏠 Desktop</strong></td>
-                        <td>All desktop page designs</td>
-                        <td>Client review, Developer</td>
-                    </tr>
-                    <tr>
-                        <td><strong>📱 Mobile</strong></td>
-                        <td>All mobile page designs</td>
-                        <td>Client review, Developer</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🗑️ Archive</strong></td>
-                        <td>Old versions, rejected concepts</td>
-                        <td>Internal only</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Naming Conventions</h3>
-
-            <div class="template-box" style="margin-top: 20px;">
-                <div class="template-header">📝 How to Name Your Layers</div>
-                <ul class="styled-list check-list" style="margin-top: 15px;">
-                    <li><strong>Frames:</strong> Page-Section (e.g., "Home-Hero", "Product-Gallery")</li>
-                    <li><strong>Components:</strong> Type/Name (e.g., "Button/Primary", "Card/Product")</li>
-                    <li><strong>Groups:</strong> Descriptive (e.g., "Trust Badges", "Navigation Items")</li>
-                    <li><strong>Images:</strong> What it is (e.g., "Hero Background", "Product 1")</li>
-                </ul>
-                <div class="info-box danger" style="margin-top: 15px;">
-                    <h4>🚨 Never Name Layers:</h4>
-                    <ul class="styled-list cross-list">
-                        <li>"Frame 432" or "Rectangle 17"</li>
-                        <li>"Untitled" or "Copy"</li>
-                        <li>"Final-v2-FINAL-revised"</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Design Review Checklist -->
-        <section class="section" id="review-checklist">
-            <div class="section-header">
-                <div class="section-number">✅</div>
-                <h2>Design Review Checklist</h2>
-            </div>
-
-            <h3>Before Sharing with Client</h3>
-
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Check</th>
-                        <th>Why It Matters</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Visual</strong></td>
-                        <td>Colors match brand guidelines?</td>
-                        <td>Brand consistency</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Visual</strong></td>
-                        <td>Fonts are consistent throughout?</td>
-                        <td>Professional look</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Visual</strong></td>
-                        <td>Spacing is even and aligned?</td>
-                        <td>Clean, polished feel</td>
-                    </tr>
-                    <tr>
-                        <td><strong>UX</strong></td>
-                        <td>CTAs are visible and above fold?</td>
-                        <td>Conversion optimization</td>
-                    </tr>
-                    <tr>
-                        <td><strong>UX</strong></td>
-                        <td>Mobile version makes sense?</td>
-                        <td>60%+ traffic is mobile</td>
-                    </tr>
-                    <tr>
-                        <td><strong>UX</strong></td>
-                        <td>Trust elements included?</td>
-                        <td>Reduces purchase anxiety</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Technical</strong></td>
-                        <td>Images are high quality?</td>
-                        <td>Shows as intended</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Technical</strong></td>
-                        <td>No placeholder text remaining?</td>
-                        <td>Looks complete</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Client Presentation Tips</h3>
-
-            <div class="info-box success" style="margin-top: 20px;">
-                <h4>✅ When Presenting Designs</h4>
-                <ul class="styled-list check-list">
-                    <li><strong>Start with context:</strong> "Based on your brief, here's what I designed..."</li>
-                    <li><strong>Explain decisions:</strong> "I chose this layout because..."</li>
-                    <li><strong>Show mobile first:</strong> Most clients forget to check mobile</li>
-                    <li><strong>Ask specific questions:</strong> "Does this header feel right?" not "What do you think?"
-                    </li>
-                    <li><strong>Document feedback:</strong> Write it down during the call, send summary after</li>
-                </ul>
-            </div>
-
-            <div class="info-box warning" style="margin-top: 20px;">
-                <h4>⚠️ When Client Asks for Changes You Disagree With</h4>
-                <p style="margin-top: 10px;"><strong>Script:</strong> "I understand you want [their request]. I'd like
-                    to suggest [your alternative] because [reason based on conversions/UX]. Would you like to see a
-                    mockup of both options so we can compare?"</p>
-                <p style="margin-top: 10px;"><em>This lets you push back professionally while keeping them in
-                        control.</em></p>
-            </div>
-        </section>
-
-        <!-- Difficult Situations Section -->
-        <section class="section" id="difficult-situations">
-            <div class="section-header">
-                <div class="section-number">⚠️</div>
-                <h2>Handling Difficult Situations</h2>
-            </div>
-
-            <h3>🔴 Client Says "I'll Know It When I See It"</h3>
-
-            <h3>🎯 Task Priority Order (What Comes First)</h3>
-            <div class="info-box success" style="margin-bottom: 30px;">
-                <p><strong>Handle in this order every day:</strong></p>
-                <ol style="margin-top: 15px; line-height: 2;">
-                    <li><strong>🔴 P0 - Revision Requests from Clients</strong> → Active projects waiting on your
-                        changes.</li>
-                    <li><strong>🔴 P0 - Deadline-Day Deliveries</strong> → Designs due TODAY must be completed.</li>
-                    <li><strong>🔴 P0 - PM/Client Questions</strong> → Respond within 1 hour. Don't block decisions.
-                    </li>
-                    <li><strong>🟡 P1 - Active Design Work</strong> → Projects with deadlines in next 2-3 days.</li>
-                    <li><strong>🟡 P1 - Asset Preparation</strong> → Export finals, organize files for developers.</li>
-                    <li><strong>🟢 P2 - Design System Updates</strong> → Component library, style guide maintenance.
-                    </li>
-                    <li><strong>🟢 P2 - Mockup Refinements</strong> → Polishing work that's not urgent.</li>
-                    <li><strong>⚪ P3 - Inspiration & Learning</strong> → Dribbble, tutorials, skill development.</li>
-                </ol>
-                <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Client-facing revisions > Deadlines > New
-                    designs > Personal growth.</p>
-            </div>
-
-            <h3 id="bad-brief">🔴 Client Says "I'll Know It When I See It"</h3>
-            <div class="info-box danger">
-                <p><strong>Situation:</strong> Client can't articulate what they want, expects you to read their mind.
-                </p>
-                <p><strong>Response:</strong> "Let me show you 3 different directions. Please point to elements you like
-                    in each one. This will help me understand your vision."</p>
-                <p><strong>Rule:</strong> Always use mood boards and examples. Never design blind.</p>
-            </div>
-
-            <h3 id="own-design">🔴 Client Wants to Use Their Own "Design"</h3>
-            <div class="info-box warning">
-                <p><strong>Situation:</strong> Client provides a terrible sketch/mockup and wants you to implement it
-                    exactly.</p>
-                <p><strong>Response:</strong> "Thank you for sharing your vision! I love [specific element]. I'd like to
-                    suggest some enhancements that will improve [conversion/usability/mobile experience]. Can I show you
-                    some options?"</p>
-                <p><strong>Rule:</strong> Educate gently, but document if they insist on bad design.</p>
-            </div>
-
-            <h3 id="too-many-cooks">🔴 Too Many Cooks (Multiple Stakeholders)</h3>
-            <div class="info-box danger">
-                <p><strong>Situation:</strong> Client has partner/spouse/friend all giving conflicting feedback.</p>
-                <p><strong>Response:</strong> "I'm receiving different feedback from multiple people. Could you
-                    consolidate into one unified feedback document? This ensures we stay on timeline."</p>
-                <p><strong>Rule:</strong> One point of contact for design feedback. Escalate to PM if chaos continues.
-                </p>
-            </div>
-
-            <h3 id="wont-convert">🔴 Client Wants Design That Won't Convert</h3>
-            <div class="info-box warning">
-                <p><strong>Situation:</strong> Client insists on busy design, hidden CTAs, or poor UX choices.</p>
-                <p><strong>Response:</strong> "I want to share some data: [stat about conversion]. Your current request
-                    may impact sales negatively. I recommend [alternative]. Would you like me to show you how?"</p>
-                <p><strong>Rule:</strong> Advise with data. If they insist, document your recommendation.</p>
-            </div>
-
-            <h3 id="endless-revisions">🔴 Endless Revision Requests</h3>
-            <div class="info-box warning">
-                <p><strong>Situation:</strong> Client keeps asking for "just one more tweak" beyond revision rounds.</p>
-                <p><strong>Response:</strong> Route through PM: "We've completed the included revisions. I'll check with
-                    the PM about options for additional design work."</p>
-                <p><strong>Rule:</strong> Track revisions. Additional rounds = additional quote.</p>
-            </div>
-
-            <h3 id="all-disapprove">🔴 Client Disapproves of Everything</h3>
-            <div class="info-box danger">
-                <p><strong>Situation:</strong> Nothing you show is ever right. Client always negative.</p>
-                <p><strong>Response:</strong> "Help me understand: What specific elements aren't working? Can you show
-                    me examples of designs you love?" If continues, escalate to PM.</p>
-                <p><strong>Rule:</strong> Get specifics. Vague criticism = no actionable feedback.</p>
-            </div>
-
-            <h3 id="free-concept">🔴 Client Wants Free Design Concepts Before Ordering</h3>
-            <div class="info-box danger">
-                <p><strong>Situation:</strong> Prospect asks "Can you show me what you'd design first?"</p>
-                <p><strong>Response:</strong> Route to Sales: "We don't create custom designs before project
-                    confirmation. Our portfolio demonstrates our quality. Once you order, you'll receive dedicated
-                    design concepts."</p>
-                <p><strong>Rule:</strong> Never do spec work. Our portfolio speaks for itself.</p>
-            </div>
-
-            <h3 id="bad-assets">🔴 Assets Provided Are Low Quality</h3>
-            <div class="info-box warning">
-                <p><strong>Situation:</strong> Client sends blurry images, screenshots, or low-res logos.</p>
-                <p><strong>Response:</strong> "To achieve premium results, I need high-resolution assets: Logo in
-                    SVG/PNG (transparent), photos min 2000px wide. Current assets will look pixelated on the final
-                    design."</p>
-                <p><strong>Rule:</strong> Don't compromise quality. Request proper assets before proceeding.</p>
-            </div>
-        </section>
-
-        <!-- Motivation Section -->
-        <section class="section" id="inspiration"
-            style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
-            <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
-                <div class="section-number">🌟</div>
-                <h2 style="color: white;">Your Daily Inspiration</h2>
-            </div>
-
-            <div style="text-align: center; padding: 30px 0;">
-                <div style="font-size: 48px; margin-bottom: 20px;">🎨</div>
-                <blockquote
-                    style="font-size: 24px; font-style: italic; color: #F472B6; margin-bottom: 20px; line-height: 1.6;">
-                    "Design is not just what it looks like. Design is how it works. And how it CONVERTS."
-                </blockquote>
-                <p style="color: #9CA3AF;">— Inspired by Steve Jobs</p>
-            </div>
-
-            <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                <h3 style="color: #F472B6; margin-bottom: 15px;">📖 Success Story: The Button That Made $10,000</h3>
-                <p style="color: #E5E7EB; line-height: 1.8;">
-                    A client's "Add to Cart" button was the same color as the background — barely visible. Our designer
-                    made ONE change: a high-contrast, bold button with subtle animation.
-                    <br><br>
-                    <strong style="color: #10B981;">The result?</strong> Conversion rate jumped from 1.2% to 2.8%
-                    overnight. That single button change generated an extra <strong style="color: #FCD34D;">$10,000 in
-                        revenue that month.</strong>
-                    <br><br>
-                    <em>The lesson: Every pixel matters. The smallest design decision can have massive business
-                        impact.</em>
-                </p>
-            </div>
-
-            <div style="background: rgba(244, 114, 182, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                <h3 style="color: #F9A8D4; margin-bottom: 15px;">⚡ Productivity Hacks for Designers</h3>
-                <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
-                    <li>🎯 <strong>2-Minute Rule:</strong> If a design task takes less than 2 minutes, do it now</li>
-                    <li>📁 <strong>Template Everything:</strong> Save time with reusable Figma components</li>
-                    <li>🔄 <strong>Batch Similar Tasks:</strong> Do all wireframes, then all mockups, then all exports
-                    </li>
-                    <li>⏰ <strong>90-Minute Blocks:</strong> Deep design work in focused 90-min sessions, then break
-                    </li>
-                    <li>🚫 <strong>No Notifications:</strong> Turn off Slack during creative work</li>
-                </ul>
-            </div>
-
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                <div
-                    style="background: rgba(244, 114, 182, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                    <div style="font-size: 32px; margin-bottom: 10px;">👁️</div>
-                    <p style="color: #FBCFE8; font-weight: 600;">"Simplicity is the ultimate sophistication."</p>
-                </div>
-                <div
-                    style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                    <div style="font-size: 32px; margin-bottom: 10px;">💡</div>
-                    <p style="color: #A7F3D0; font-weight: 600;">"Good design is good business."</p>
-                </div>
-                <div
-                    style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                    <div style="font-size: 32px; margin-bottom: 10px;">🎯</div>
-                    <p style="color: #FDE68A; font-weight: 600;">"Design for the user, not for your portfolio."</p>
-                </div>
-            </div>
-
-            <div
-                style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
-                <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
-                <p style="font-size: 20px; color: #F472B6; font-weight: 600;">"Today, I create experiences that delight
-                    users and drive business results. Every design decision is intentional."</p>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <h3>Digital Heroes</h3>
-            <p><strong>"Design that SELLS, not just looks pretty"</strong></p>
-            <p style="margin-top: 20px;">Premium. Consistent. Conversion-Focused.</p>
-            <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.7;">Internal Use Only | Version 2.0 | January 2026
-            </p>
-        </footer>
+        </div>
     </div>
     <script src="admin-mode.js"></script>
+
+    <style>
+        .hidden {
+            display: none !important;
+        }
+
+        .view-section {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function switchView(viewName) {
+            history.pushState(null, null, '#' + viewName);
+            const sections = ['sop', 'assets', 'onboarding'];
+            sections.forEach(section => {
+                const contentEl = document.getElementById('content-' + section);
+                const sidebarEl = document.getElementById('sidebar-' + section + '-links');
+                if (contentEl) contentEl.classList.toggle('hidden', section !== viewName);
+                if (sidebarEl) sidebarEl.classList.toggle('hidden', section !== viewName);
+            });
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (['assets', 'onboarding'].includes(hash)) switchView(hash);
+            else switchView('sop');
+        });
+    </script>
+
 
     <!-- Quiz System -->
     <script src="assets/js/quiz.js"></script>
