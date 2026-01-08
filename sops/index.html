@@ -1388,107 +1388,112 @@
         }
     </script>
 
-    <!-- ANIMATED HERO CURSOR -->
-    <div class="hero-cursor"></div>
-    <div class="cursor-trail"></div>
+    <!-- FIRE CURSOR EFFECT -->
+    <div id="fire-cursor"></div>
     <style>
         body,
         * {
             cursor: none !important;
         }
 
-        .hero-cursor {
-            width: 20px;
-            height: 20px;
-            background: radial-gradient(circle, #8B5CF6 0%, #6D28D9 50%, transparent 70%);
+        #fire-cursor {
+            width: 12px;
+            height: 12px;
+            background: radial-gradient(circle, #FFF 0%, #FF6B00 30%, #FF0000 60%, transparent 70%);
             border-radius: 50%;
             position: fixed;
             pointer-events: none;
             z-index: 99999;
             transform: translate(-50%, -50%);
-            box-shadow: 0 0 20px #8B5CF6, 0 0 40px #8B5CF6, 0 0 60px #6D28D9;
-            animation: cursorPulse 1.5s ease-in-out infinite;
+            box-shadow: 0 0 10px #FF6B00, 0 0 20px #FF4500, 0 0 30px #FF0000;
+            animation: fireFlicker 0.1s ease-in-out infinite alternate;
         }
 
-        .hero-cursor::before {
-            content: '⚡';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 14px;
-            filter: drop-shadow(0 0 5px #F59E0B);
-        }
-
-        .cursor-trail {
-            width: 40px;
-            height: 40px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 99998;
-            transform: translate(-50%, -50%);
-            transition: all 0.15s ease-out;
-        }
-
-        @keyframes cursorPulse {
-
-            0%,
-            100% {
+        @keyframes fireFlicker {
+            0% {
                 transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
             }
 
-            50% {
-                transform: translate(-50%, -50%) scale(1.3);
+            100% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.9;
+            }
+        }
+
+        .fire-particle {
+            position: fixed;
+            pointer-events: none;
+            border-radius: 50%;
+            z-index: 99998;
+            animation: fireRise 0.8s ease-out forwards;
+        }
+
+        @keyframes fireRise {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-50%, -100px) scale(0);
+                opacity: 0;
             }
         }
     </style>
     <script>
-        const cursor = document.querySelector('.hero-cursor');
-        const trail = document.querySelector('.cursor-trail');
-        let mouseX = 0, mouseY = 0, trailX = 0, trailY = 0;
+        const fireCursor = document.getElementById('fire-cursor');
+        let lastX = 0, lastY = 0;
+        let particleCount = 0;
 
         document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            cursor.style.left = mouseX + 'px';
-            cursor.style.top = mouseY + 'px';
+            fireCursor.style.left = e.clientX + 'px';
+            fireCursor.style.top = e.clientY + 'px';
+
+            // Create fire particles on movement
+            const dx = e.clientX - lastX;
+            const dy = e.clientY - lastY;
+            const speed = Math.sqrt(dx * dx + dy * dy);
+
+            if (speed > 5 && particleCount < 50) {
+                createFireParticle(e.clientX, e.clientY);
+            }
+
+            lastX = e.clientX;
+            lastY = e.clientY;
         });
 
-        function animateTrail() {
-            trailX += (mouseX - trailX) * 0.1;
-            trailY += (mouseY - trailY) * 0.1;
-            trail.style.left = trailX + 'px';
-            trail.style.top = trailY + 'px';
-            requestAnimationFrame(animateTrail);
+        function createFireParticle(x, y) {
+            particleCount++;
+            const particle = document.createElement('div');
+            particle.className = 'fire-particle';
+            const size = Math.random() * 8 + 4;
+            const colors = ['#FF6B00', '#FF4500', '#FF0000', '#FFD700', '#FFA500'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const offsetX = (Math.random() - 0.5) * 20;
+
+            particle.style.cssText = `
+                left: ${x + offsetX}px;
+                top: ${y}px;
+                width: ${size}px;
+                height: ${size}px;
+                background: radial-gradient(circle, ${color} 0%, transparent 70%);
+                box-shadow: 0 0 ${size}px ${color};
+            `;
+
+            document.body.appendChild(particle);
+            setTimeout(() => {
+                particle.remove();
+                particleCount--;
+            }, 800);
         }
-        animateTrail();
 
-        // Sparkle on click
+        // Fire burst on click
         document.addEventListener('click', (e) => {
-            for (let i = 0; i < 8; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.style.cssText = `
-                    position: fixed; left: ${e.clientX}px; top: ${e.clientY}px;
-                    width: 6px; height: 6px; background: #F59E0B; border-radius: 50%;
-                    pointer-events: none; z-index: 99999;
-                    animation: sparkle 0.6s ease-out forwards;
-                `;
-                sparkle.style.setProperty('--angle', (i * 45) + 'deg');
-                document.body.appendChild(sparkle);
-                setTimeout(() => sparkle.remove(), 600);
+            for (let i = 0; i < 12; i++) {
+                setTimeout(() => createFireParticle(e.clientX, e.clientY), i * 30);
             }
         });
-
-        const sparkleStyle = document.createElement('style');
-        sparkleStyle.textContent = `
-            @keyframes sparkle {
-                0% { transform: translate(-50%, -50%) rotate(var(--angle)) translateX(0) scale(1); opacity: 1; }
-                100% { transform: translate(-50%, -50%) rotate(var(--angle)) translateX(50px) scale(0); opacity: 0; }
-            }
-        `;
-        document.head.appendChild(sparkleStyle);
     </script>
 </body>
 
