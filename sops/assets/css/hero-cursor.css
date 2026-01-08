@@ -1,0 +1,15 @@
+/* Hero Cursor - Digital Heroes SOP Library */
+*,
+*::before,
+*::after {
+    cursor: url('./hero-cursor.png') 16 16, auto !important;
+}
+
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+.clickable {
+    cursor: url('./hero-cursor.png') 16 16, pointer !important;
+}
