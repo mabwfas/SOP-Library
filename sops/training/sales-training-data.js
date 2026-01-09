@@ -480,6 +480,156 @@ If you can't score 10/10 on a quiz when you have unlimited time and can review t
 </div>
 `;
 
+// Task 2 Content: Company Knowledge
+const task2Content = `
+<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
+
+<div class="content-section">
+<h3>🏢 Who is Digital Heroes?</h3>
+<p>Before you can sell for us, you need to <strong>understand who we are</strong> and why clients trust us.</p>
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(16, 185, 129, 0.2)); border: none;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; text-align: center;">
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #10B981;">2.5M+</div>
+<div style="color: #94a3b8; font-size: 0.9em;">YouTube Subscribers</div>
+</div>
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #6366F1;">40+</div>
+<div style="color: #94a3b8; font-size: 0.9em;">Expert Developers</div>
+</div>
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #F59E0B;">2000+</div>
+<div style="color: #94a3b8; font-size: 0.9em;">Stores Built</div>
+</div>
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #EC4899;">4.9★</div>
+<div style="color: #94a3b8; font-size: 0.9em;">Fiverr Rating</div>
+</div>
+</div>
+</div>
+<p style="margin-top: 15px;">Our YouTube channel <a href="https://www.youtube.com/@DigitalMarketingHeroes" target="_blank" style="color: #60A5FA;">@DigitalMarketingHeroes</a> has taught millions about web development and digital marketing. When you mention this to clients, they recognize the name and trust us immediately.</p>
+</div>
+
+<div class="content-section">
+<h3>💎 Premium Positioning</h3>
+<p>Digital Heroes is a <strong>premium agency</strong>. We are NOT the cheapest option — and that's intentional.</p>
+<div class="warning-box">
+<strong>Why Premium?</strong>
+<ul style="margin-bottom: 0;">
+<li><strong>Better clients:</strong> Price-shoppers waste time negotiating, request endless revisions, and leave bad reviews. Premium prices filter them out.</li>
+<li><strong>Quality work:</strong> Our developers earn properly, so they deliver properly.</li>
+<li><strong>Real support:</strong> We provide 30-90 days of support, not "best of luck" after delivery.</li>
+<li><strong>Credibility:</strong> Low prices signal desperation. Premium prices signal confidence.</li>
+</ul>
+</div>
+<p><strong>The $200-300 freelancer reality:</b></p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cheap Freelancer</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Template with logo swap, no speed optimization, no conversion focus, disappears after delivery</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Digital Heroes</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom conversion-focused design, speed optimization, proper support, revision guarantee, ongoing help</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🚫 Non-Negotiable Rules</h3>
+<p>These rules exist to protect both you and the company. Breaking them damages the entire team.</p>
+<div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong style="color: #EF4444;">NEVER DO THESE:</strong>
+<ul style="margin-bottom: 0;">
+<li>❌ <strong>Never give discounts:</strong> If they can't afford us, let them go elsewhere</li>
+<li>❌ <strong>Never work before payment:</strong> Full upfront payment, always</li>
+<li>❌ <strong>Never give free consulting:</strong> Our expertise has value — don't solve their problems before they pay</li>
+<li>❌ <strong>Never promise what we can't deliver:</strong> Under-promise, over-deliver</li>
+<li>❌ <strong>Never badmouth competitors:</strong> Stay professional, focus on our value</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💰 Why No Discounts? (Deep Dive)</h3>
+<p>This is so important it deserves its own section.</p>
+<div class="warning-box">
+<strong>When you offer a discount, you're saying:</strong>
+<ul style="margin-bottom: 0;">
+<li>"I wasn't confident in the original price"</li>
+<li>"My service isn't worth what I quoted"</li>
+<li>"If you push, I'll bend"</li>
+</ul>
+</div>
+<p><strong>What happens next:</strong></p>
+<ul>
+<li>They'll ask for MORE discounts on future projects</li>
+<li>They'll refer friends who also expect discounts</li>
+<li>They'll be more demanding (they "won" so they feel entitled)</li>
+<li>You've trained them that your word means nothing</li>
+</ul>
+<div class="highlight-box">
+<strong>Alternative to discounts:</strong> If budget is genuinely an issue, reduce SCOPE, not price. 
+<br><br>
+"I understand budget is tight. For $800, we could do the core store setup without the advanced features. Would that work better for you?"
+</div>
+</div>
+
+<div class="content-section">
+<h3>🎯 What We Actually Sell</h3>
+<p>You're not selling "a website" or "Shopify development." You're selling:</p>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>🚀 <strong>Revenue:</strong> CRO-optimized stores that convert visitors into customers</li>
+<li>⚡ <strong>Speed:</strong> Fast-loading sites that don't lose impatient visitors</li>
+<li>💎 <strong>Credibility:</strong> Professional design that makes their brand look trustworthy</li>
+<li>🛡️ <strong>Peace of mind:</strong> Expert team + support period = they're not alone</li>
+<li>⏰ <strong>Time:</strong> They can focus on their business while we handle the technical work</li>
+</ul>
+</div>
+<p style="margin-top: 15px;">When a client says "I want a Shopify store," what they ACTUALLY want is <strong>a successful online business</strong>. We deliver that.</p>
+</div>
+
+<div class="content-section">
+<h3>🚩 Red Flag Clients</h3>
+<p>Not every client deserves our time. Learn to spot problematic clients early:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why It's Bad</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My last 4 developers were terrible"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">The common factor in all failures is THEM</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can you match this $300 quote?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Price-shopper who will haggle forever</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'll pay after I see the final work"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Doesn't trust anyone — endless revisions, possible non-payment</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I need this in 2 days" (complex project)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unrealistic expectations, will blame you when it's not perfect</td>
+</tr>
+</table>
+<div class="warning-box">
+<strong>The 2+ Red Flags Rule:</strong> If a lead shows 2 or more red flags, politely disqualify them. Your time is better spent on quality clients.
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned about Digital Heroes' positioning, rules, and values. Now prove your understanding.</p>
+<ul>
+<li>📝 10 questions about company knowledge</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 3</li>
+</ul>
+</div>
+`;
+
 // Quiz Questions - Task 1: Mindset (10 Questions)
 const task1Quiz = [
     { q: "A trainee reads training quickly, skips sections thinking 'I already know this'. According to the training, this person is:", o: ["An efficient learner who will succeed faster", "A 'Tourist' who will likely quit when challenged", "A confident professional ready for advanced content", "Someone who should skip to the certification exam"], c: 1 },
