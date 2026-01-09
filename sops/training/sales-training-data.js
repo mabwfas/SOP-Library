@@ -208,6 +208,87 @@ Some days you'll feel unstoppable. Some days you'll feel worthless. <strong>On b
 </ul>
 <p>We train for perfection because <strong>real situations demand perfection.</strong></p>
 </div>
+
+<h2>🔥 Advanced Sales Philosophy</h2>
+
+<div class="content-section">
+<h3>Lesson 4: Sales = Conviction × Trust</h3>
+<p>The single most important sales equation:</p>
+<div class="highlight-box">
+<strong>Conviction × Trust = Sales</strong><br>
+Not scripts. Not rebuttals. Not persuasion tricks.
+</div>
+<p>If you <strong>believe</strong>, people feel it. If you don't, they smell it.</p>
+<p>That's why:</p>
+<ul>
+<li>The best salespeople are killers from week one</li>
+<li>Mediocre ones never "learn" their way into greatness</li>
+<li><strong>You can train skills. You cannot fake belief.</strong></li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>Lesson 5: Conviction is a Slider, Not a Switch</h3>
+<p>Most people think: "I believe or I don't." <strong>Wrong.</strong></p>
+<p>Conviction is a slider: 40% → 70% → 100%</p>
+<p>What increases conviction fastest? <strong>Seeing proof.</strong></p>
+<ul>
+<li>Testimonials</li>
+<li>Client wins ("This client made $40k")</li>
+<li>Case studies ("This brand hit 4.8% CVR")</li>
+<li>Results ("This ad went 12x ROAS")</li>
+</ul>
+<div class="warning-box">
+<strong>That is gasoline for your conviction.</strong> The more wins you see, the more you believe, the more you close.
+</div>
+</div>
+
+<div class="content-section">
+<h3>Lesson 6: Childlike Curiosity > Confrontation</h3>
+<p>Most sales reps argue. <strong>Elite closers ask curious questions.</strong></p>
+<p><strong>Example:</strong></p>
+<p>Client: "My husband won't approve."</p>
+<ul>
+<li>❌ Bad rep: "He's wrong."</li>
+<li>✅ Elite rep: "That's interesting — why wouldn't he?"</li>
+</ul>
+<p>Now the client is explaining to <em>themselves</em>. No pressure. No conflict. Just logic.</p>
+<div class="highlight-box">
+<strong>People convince themselves better than you ever could.</strong>
+</div>
+</div>
+
+<div class="content-section">
+<h3>Lesson 7: Emotional Control = Closing Power</h3>
+<p>Sales is like fighting. Under pressure: heart rate up, breathing fast, fight-or-flight.</p>
+<p><strong>Losers:</strong> React emotionally → Push → Get defensive</p>
+<p><strong>Winners:</strong> Slow down → Ask → Stay curious</p>
+<div class="warning-box">
+<strong>The calmest rep wins.</strong> When belief is real, your voice changes, speed changes, certainty comes through. People feel it.
+</div>
+</div>
+
+<div class="content-section">
+<h3>Lesson 8: Seasons Mindset = Psychological Freedom</h3>
+<p>Most people think commitment = prison. Elite founders use <strong>time-boxed seasons.</strong></p>
+<ul>
+<li>❌ Default thinking: "If I start this, I'm stuck forever"</li>
+<li>✅ Seasonal reframe: "I'm committing to this for THIS season"</li>
+</ul>
+<p>Just like: Winter ≠ Summer | Launch season ≠ Scaling season | Cash season ≠ Brand season</p>
+<p>This removes: Fear of wrong decisions, overthinking, perfectionism.</p>
+<div class="highlight-box">
+<strong>You don't quit — you transition seasons.</strong> This is why elite founders move fast while others freeze.
+</div>
+</div>
+
+<div class="content-section">
+<h3>The Final Truth</h3>
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.3); border-color: #10B981;">
+<h4 style="margin-top: 0; color: #10B981;">Sales is the transfer of belief through trust.</h4>
+<p style="margin-bottom: 0;">Everything else — scripts, frameworks, closes — are just tools to support that.</p>
+</div>
+</div>
 `;
 
 // Quiz Questions - Task 1: Mindset (10 Questions)
