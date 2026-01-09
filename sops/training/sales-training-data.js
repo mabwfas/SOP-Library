@@ -142,6 +142,41 @@ const task1Content = `
 </div>
 
 <div class="content-section">
+<h3>🏢 Who is Digital Heroes?</h3>
+<p>You're not joining just any company. You're joining <strong>Digital Heroes</strong> — one of the most trusted names in web development and digital marketing.</p>
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(16, 185, 129, 0.2)); border: none;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center;">
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #10B981;">2.5M+</div>
+<div style="color: #94a3b8; font-size: 0.9em;">YouTube Subscribers</div>
+</div>
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #6366F1;">40+</div>
+<div style="color: #94a3b8; font-size: 0.9em;">Expert Developers</div>
+</div>
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #F59E0B;">2000+</div>
+<div style="color: #94a3b8; font-size: 0.9em;">Brands Served</div>
+</div>
+<div>
+<div style="font-size: 2em; font-weight: 700; color: #EC4899;">$M+</div>
+<div style="color: #94a3b8; font-size: 0.9em;">Revenue Generated for Clients</div>
+</div>
+</div>
+</div>
+<p style="margin-top: 15px;"><strong>What makes us different:</strong></p>
+<ul>
+<li>🎓 <strong>Education-First:</strong> Our YouTube channel <a href="https://www.youtube.com/@DigitalMarketingHeroes" target="_blank" style="color: #60A5FA;">@DigitalMarketingHeroes</a> has taught millions about website development & digital marketing</li>
+<li>💎 <strong>Premium Quality:</strong> We build CRO-optimized websites that go on to generate millions in revenue</li>
+<li>🏆 <strong>Proven Track Record:</strong> 2000+ successful brand partnerships across industries</li>
+<li>👥 <strong>Expert Team:</strong> 40+ developers working to the highest standards</li>
+</ul>
+<div class="warning-box">
+<strong>When you sell for Digital Heroes, you're not selling a service — you're offering access to a proven system that has transformed thousands of businesses.</strong> This is why your conviction matters. This is why we train so intensively.
+</div>
+</div>
+
+<div class="content-section">
 <h3>👤 The Two Types of People</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
 <tr style="background: rgba(239, 68, 68, 0.2);">
