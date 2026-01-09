@@ -630,6 +630,475 @@ const task2Content = `
 </div>
 `;
 
+// Task 3 Content: Product Mastery
+const task3Content = `
+<h2>📚 TASK 3: PRODUCT MASTERY</h2>
+
+<div class="content-section">
+<h3>🎯 Why Product Knowledge Matters</h3>
+<p><strong>You can't sell what you don't understand.</strong></p>
+<p>When a client asks about your services and you hesitate, stumble, or sound unsure — you've already lost them. They came to an expert. If the expert doesn't know their own products, why should the client trust them?</p>
+<div class="highlight-box">
+Product mastery gives you:
+<ul style="margin-bottom: 0;">
+<li><strong>Confidence:</strong> Clients feel it when you know your stuff</li>
+<li><strong>Speed:</strong> You answer questions instantly, not after checking</li>
+<li><strong>Trust:</strong> Hesitation = doubt. Certainty = credibility</li>
+<li><strong>Control:</strong> You guide the conversation instead of reacting</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📦 Our Two Main Packages</h3>
+<p>We keep it simple: <strong>two core packages</strong> that cover 90% of client needs.</p>
+
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.2); border-color: #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">💎 PREMIUM PACKAGE — $1,200</h4>
+<p><strong>Best for:</strong> New stores, small catalogs, standard needs</p>
+<ul style="margin-bottom: 0;">
+<li>✅ 5-page custom design (Home, Collection, Product, About, Contact)</li>
+<li>✅ Up to 25 products uploaded</li>
+<li>✅ Mobile-responsive design</li>
+<li>✅ Speed optimization (85+ PageSpeed score)</li>
+<li>✅ Basic SEO setup (meta titles, descriptions)</li>
+<li>✅ Payment & shipping configuration</li>
+<li>✅ <strong>30-day support</strong></li>
+<li>✅ 1 training walkthrough session</li>
+<li>✅ Unlimited revisions within scope</li>
+</ul>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981; margin-top: 15px;">
+<h4 style="color: #10B981; margin-top: 0;">👑 ENTERPRISE PACKAGE — $1,800</h4>
+<p><strong>Best for:</strong> Established brands, large catalogs, complex needs</p>
+<ul style="margin-bottom: 0;">
+<li>✅ 10+ pages custom design</li>
+<li>✅ <strong>Unlimited products</strong> uploaded</li>
+<li>✅ Advanced animations & interactions</li>
+<li>✅ Custom functionality (filters, lookbooks, size guides)</li>
+<li>✅ Email popup & list integration</li>
+<li>✅ <strong>Priority development</strong></li>
+<li>✅ <strong>90-day support</strong></li>
+<li>✅ Multiple training sessions</li>
+<li>✅ Unlimited revisions within scope</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>⏱️ Delivery Timeline</h3>
+<p>Our <strong>standard delivery is 14 days</strong> from order confirmation.</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Delivery Type</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Timeline</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Notes</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standard</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">14 days</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Included in package price</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rush (7 days)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">7 days</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">+$200 rush fee, subject to availability</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Express (5 days)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5 days</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">+$400, only if content 100% ready</td>
+</tr>
+</table>
+<div class="warning-box">
+<strong>Critical for Rush Delivery:</strong> Client must have ALL content ready (logo, product images, descriptions, branding). Rush timeline only starts when we have everything. No exceptions.
+</div>
+</div>
+
+<div class="content-section">
+<h3>🛡️ Support Periods</h3>
+<p>Support is what separates us from cheap freelancers who disappear after delivery.</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cheap Freelancers</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">7 days or "best of luck" after delivery</td>
+</tr>
+<tr style="background: rgba(99, 102, 241, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Premium Package</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>30 days</strong> of post-delivery support</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Enterprise Package</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>90 days</strong> of post-delivery support</td>
+</tr>
+</table>
+<p><strong>What's included in support:</strong></p>
+<ul>
+<li>Bug fixes and technical issues</li>
+<li>Minor content updates</li>
+<li>Questions and training</li>
+<li>Troubleshooting integrations</li>
+</ul>
+<p><strong>NOT included in support:</strong></p>
+<ul>
+<li>Major new features (quoted separately)</li>
+<li>Redesigns or scope changes</li>
+<li>Third-party app issues</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>💰 The MVP Option (When Budget is Tight)</h3>
+<p>Sometimes a good lead genuinely can't afford our full packages. <strong>Never discount — reduce scope instead.</strong></p>
+<div class="highlight-box" style="background: rgba(245, 158, 11, 0.2); border-color: #F59E0B;">
+<h4 style="color: #F59E0B; margin-top: 0;">🚀 MVP PACKAGE — $800</h4>
+<p><strong>Best for:</strong> Startups testing the market, limited initial budget</p>
+<ul style="margin-bottom: 0;">
+<li>✅ 3-page design (Home, Collection, Contact)</li>
+<li>✅ Up to 15 products</li>
+<li>✅ Mobile-responsive</li>
+<li>✅ Basic speed optimization</li>
+<li>✅ <strong>14-day support</strong></li>
+<li>✅ Clear upgrade path to Premium later</li>
+</ul>
+</div>
+<div class="warning-box" style="margin-top: 15px;">
+<strong>Important:</strong> MVP is offered ONLY to qualified leads who pass M.T.N.D. but genuinely have budget constraints. It's NOT a discount — it's less scope for less money. Pathway to expand later is always mentioned.
+</div>
+</div>
+
+<div class="content-section">
+<h3>🎯 How to Present Packages</h3>
+<p>The way you present options matters more than the options themselves.</p>
+
+<h4>The Good-Better-Best Technique</h4>
+<p>Human psychology: Most people choose the middle option. Position your target package in the middle.</p>
+<div class="highlight-box">
+<strong>Example Presentation:</strong><br><br>
+"Based on what you've described, I'd recommend our <strong>Premium package at $1,200</strong> — it covers everything you need for launch. If you want the full premium experience with 90-day support and unlimited products, our <strong>Enterprise at $1,800</strong> is the way to go. And if you're testing the waters first, we have an <strong>MVP option at $800</strong> with fewer pages that you can expand later."
+</div>
+
+<h4>The Price Sandwich</h4>
+<p>Never state price alone. Wrap it in value:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Wrong</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Our price is $1,200."</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Right</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"For a complete 5-page custom store with speed optimization, SEO setup, mobile-first design, and 30 days of support — $1,200."</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>📋 What We Include (That Cheap Freelancers Don't)</h3>
+<p>When clients compare us to $300-500 options, here's what they're missing:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Feature</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Digital Heroes</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cheap Freelancer</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Design Approach</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom CRO-focused</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Template with logo swap</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Speed Score</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">85+ guaranteed</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Not measured</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO Setup</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meta titles, descriptions, structure</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Not included</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile Design</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile-first priority</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"It works on mobile"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Training</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full walkthrough session</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">None</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Support</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-90 days included</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">7 days or nothing</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revisions</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unlimited within scope</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-2 rounds max</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>💸 Post-Project Upsells</h3>
+<p>After the initial project, there are recurring revenue opportunities:</p>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li><strong>Monthly Maintenance:</strong> $100-300/month — ongoing updates, monitoring, support</li>
+<li><strong>Additional Pages:</strong> $100-200 per page</li>
+<li><strong>Product Uploads:</strong> $2-5 per product for bulk additions</li>
+<li><strong>Custom Features:</strong> Quoted per project</li>
+<li><strong>Speed Optimization:</strong> $200 for existing stores</li>
+<li><strong>SEO Enhancement:</strong> $300-500 for advanced setup</li>
+</ul>
+</div>
+<p style="margin-top: 15px;">Always mention future services during closing: <em>"After support period ends, we offer monthly maintenance if you want ongoing help."</em></p>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>You now know every package, price, timeline, and feature. Prove your mastery.</p>
+<ul>
+<li>📝 10 questions about products and pricing</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 4</li>
+</ul>
+</div>
+`;
+
+// Task 4 Content: Lead Qualification
+const task4Content = `
+<h2>📚 TASK 4: LEAD QUALIFICATION</h2>
+
+<div class="content-section">
+<h3>🎯 Why Qualification Matters</h3>
+<p>Not every person who messages you deserves your time. In fact, <strong>most don't.</strong></p>
+<p>A single bad client can cost you:</p>
+<ul>
+<li>20+ hours of wasted communication</li>
+<li>Endless revision requests</li>
+<li>Mental stress and frustration</li>
+<li>Potential negative review</li>
+<li>Time you could've spent on 3+ good clients</li>
+</ul>
+<div class="warning-box">
+<strong>The Math of Bad Clients:</strong><br>
+1 nightmare client at $1,200 who takes 40 hours of drama = $30/hour<br>
+3 good clients at $1,200 each who take 10 hours each = $120/hour<br><br>
+<strong>20% of your leads will cause 80% of your problems.</strong> Qualification helps you focus on the other 80%.
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 The M.T.N.D. Framework</h3>
+<p>Every lead gets scored on four criteria:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.3);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center;"><strong style="font-size: 1.5em;">M</strong><br>Money</td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center;"><strong style="font-size: 1.5em;">T</strong><br>Timeline</td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center;"><strong style="font-size: 1.5em;">N</strong><br>Need</td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center;"><strong style="font-size: 1.5em;">D</strong><br>Decision-Maker</td>
+</tr>
+</table>
+
+<h4 style="color: #10B981;">💰 M — Money</h4>
+<p><em>"Do they have budget for our services?"</em></p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Budget isn't an issue for quality work"</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'm looking in the $1,000-2,000 range"</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What's your cheapest option?"</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I found someone for $300, can you match?"</td>
+</tr>
+</table>
+
+<h4 style="color: #6366F1;">⏱️ T — Timeline</h4>
+<p><em>"When do they actually need this?"</em></p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Ready to start this week"</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Launch planned for next month"</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Need it by tomorrow" (for complex project)</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Just exploring for someday"</td>
+</tr>
+</table>
+
+<h4 style="color: #F59E0B;">🎯 N — Need</h4>
+<p><em>"Is there a real problem to solve?"</em></p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Launching my brand, need professional store"</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Current store isn't converting, need redesign"</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Just curious about prices"</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Thinking about maybe starting a business"</td>
+</tr>
+</table>
+
+<h4 style="color: #EC4899;">👤 D — Decision-Maker</h4>
+<p><em>"Can this person say YES?"</em></p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'm the owner, I make all decisions"</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Green Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"It's my business, I can decide today"</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Need to check with my partner/team/spouse"</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'm researching for someone else"</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>❓ The 5 Quick Qualification Questions</h3>
+<p>Ask these within your first few messages:</p>
+<div class="highlight-box">
+<ol style="margin-bottom: 0;">
+<li><strong>"What's your budget range for this project?"</strong> → Tests Money</li>
+<li><strong>"When do you need this completed?"</strong> → Tests Timeline</li>
+<li><strong>"Have you worked with developers before?"</strong> → Reveals expectations & history</li>
+<li><strong>"Are you the decision-maker on this?"</strong> → Tests Decision-Maker</li>
+<li><strong>"What does success look like for you?"</strong> → Reveals Need + expectations</li>
+</ol>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚩 The Complete Red Flag List</h3>
+<p>Watch for these warning signs:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>What It Really Means</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 "What's cheapest?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Price-shopper, will never see value</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 "Need it in 2-3 days"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unrealistic, will blame you for rushed quality</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 "My last 3 developers failed"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Common factor is THEM, not bad luck</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 "Pay after I see result"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Trust issues, risk of non-payment</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 "It's just a simple site"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scope creep coming, will expect more for less</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 "Approve every small step"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Micromanager, triple the communication time</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 Rude/condescending tone</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Will get worse under stress of project</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚩 "Just exploring options"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No real need, wasting your time</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>📊 The 2+ Red Flags Rule</h3>
+<p>Here's how to interpret your qualification:</p>
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>0-1 Red Flags:</strong> ✅ PROCEED — Engage normally
+</div>
+<div class="highlight-box" style="background: rgba(245, 158, 11, 0.2); border-color: #F59E0B; margin-top: 10px;">
+<strong>2 Red Flags:</strong> ⚠️ CAUTION — Proceed with higher standards, be ready to walk
+</div>
+<div class="highlight-box" style="background: rgba(239, 68, 68, 0.2); border-color: #EF4444; margin-top: 10px;">
+<strong>3+ Red Flags:</strong> 🚫 DISQUALIFY — Politely decline and move on
+</div>
+</div>
+
+<div class="content-section">
+<h3>🗣️ Polite Disqualification Scripts</h3>
+<p>When you need to decline, do it professionally:</p>
+<div class="highlight-box">
+<strong>For Price-Shoppers:</strong><br>
+"Based on what you're describing, it sounds like you're looking for something more budget-friendly. We specialize in premium development for businesses ready to invest $1,200+. I'd recommend checking [Fiverr / freelancer platforms] for options in your range. Best of luck!"
+</div>
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>For Unrealistic Timelines:</strong><br>
+"For the quality we deliver, we need at least 10-14 days. Rush delivery in 3 days wouldn't give you the results either of us would be proud of. If your timeline is flexible, we'd love to help!"
+</div>
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>For Multiple Red Flags:</strong><br>
+"After reviewing your requirements, I don't think we're the right fit for this project. We specialize in [specific niche] and want to make sure you find the best match for your needs. Wishing you success!"
+</div>
+</div>
+
+<div class="content-section">
+<h3>💡 The Golden Rule of Qualification</h3>
+<div class="warning-box">
+<strong>"If you feel uncomfortable in the first conversation, it will only get worse during the project. Trust your gut."</strong>
+</div>
+<p style="margin-top: 15px;">One bad client at $2,000 can cost more than 10 good clients in:</p>
+<ul>
+<li>Time spent on revisions and complaints</li>
+<li>Mental energy and stress</li>
+<li>Potential bad review</li>
+<li>Missed opportunities with good clients</li>
+</ul>
+<p><strong>It's better to say NO to a bad $2,000 project than suffer through a nightmare.</strong></p>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>You now know how to qualify leads and protect your time. Prove your understanding.</p>
+<ul>
+<li>📝 10 questions about lead qualification</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 5</li>
+</ul>
+</div>
+`;
+
 // Quiz Questions - Task 1: Mindset (10 Questions)
 const task1Quiz = [
     { q: "A trainee reads training quickly, skips sections thinking 'I already know this'. According to the training, this person is:", o: ["An efficient learner who will succeed faster", "A 'Tourist' who will likely quit when challenged", "A confident professional ready for advanced content", "Someone who should skip to the certification exam"], c: 1 },
