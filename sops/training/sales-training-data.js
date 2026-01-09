@@ -6,6 +6,7 @@ const trainingTasks = [
         description: "Why sales matters, success psychology",
         contentFirst: true,
         studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
             "📖 Read the content below completely before taking the quiz",
             "🔍 YouTube: Search 'sales mindset for beginners'",
             "🤖 ChatGPT: Ask 'What mindset do top salespeople have?'"
@@ -17,6 +18,7 @@ const trainingTasks = [
         description: "Digital Heroes, values, premium positioning",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 20-30 minutes",
             "📖 Read SOP: sales-sop.html - All sections about Digital Heroes",
             "📖 Study 'Non-Negotiable Sales Rules' section completely",
             "🔍 YouTube: Watch Digital Marketing Heroes channel videos"
@@ -28,9 +30,10 @@ const trainingTasks = [
         description: "Packages, pricing, portfolio",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
             "📖 Read SOP: 'Pricing & Packages' section completely",
             "📖 Study all package details: Premium, Enterprise",
-            "🔍 YouTube: Search 'Shopify store packages pricing'"
+            "🔍 YouTube: Search 'web development packages pricing'"
         ]
     },
     {
@@ -39,6 +42,7 @@ const trainingTasks = [
         description: "M.T.N.D framework, red flags",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 20-25 minutes",
             "📖 Read SOP: 'Lead Qualification (M.T.N.D Framework)' section",
             "📖 Study 'Client Quality Filtering' and all Red Flags",
             "🔍 YouTube: Search 'BANT sales qualification'"
@@ -50,6 +54,7 @@ const trainingTasks = [
         description: "4 response types, timing",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
             "📖 Read SOP: 'Inquiry Response & Initial Qualification'",
             "📖 Study all 4 Response Template types",
             "📖 Study 'Follow-up Sequence' section"
@@ -61,6 +66,7 @@ const trainingTasks = [
         description: "10 techniques, 80/20 rule",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 25-30 minutes",
             "📖 Read SOP: 'Sales Psychology Playbook' section COMPLETELY",
             "📖 Study all 10 psychological techniques",
             "🔍 YouTube: Search 'sales psychology techniques'"
@@ -72,6 +78,7 @@ const trainingTasks = [
         description: "6 core objections, scripts",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 20-25 minutes",
             "📖 Read SOP: 'Objection Handling' section COMPLETELY",
             "📖 Study all 6 core objection scripts word-by-word",
             "📖 Study 'Price Objection Flowchart'"
@@ -83,6 +90,7 @@ const trainingTasks = [
         description: "Advanced closes, negotiation",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 20-25 minutes",
             "📖 Read SOP: 'Advanced Closing Techniques' section",
             "📖 Study 'Negotiation & Pricing Mastery'",
             "🔍 YouTube: Search 'sales closing techniques'"
@@ -94,6 +102,7 @@ const trainingTasks = [
         description: "Full conversation simulations",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 30-40 minutes",
             "📖 Review ALL previous tasks",
             "📖 Study 'Handling Difficult Situations' section",
             "🤖 ChatGPT: 'Give me a difficult sales scenario to solve'"
@@ -105,6 +114,7 @@ const trainingTasks = [
         description: "Comprehensive exam + video",
         contentFirst: false,
         studyGuide: [
+            "⏱️ Estimated Time: 45-60 minutes",
             "📖 Full SOP Review: Re-read entire sales-sop.html",
             "✅ Complete Tasks 1-9 with 10/10 on all quizzes",
             "🎥 Prepare 30-minute video walkthrough"
@@ -154,7 +164,7 @@ const task1Content = `
 <ul>
 <li>A doctor doesn't "convince" you to take medicine. They diagnose and prescribe.</li>
 <li>A lawyer doesn't "convince" you to hire them. They understand and offer expertise.</li>
-<li><strong>You are the Shopify doctor.</strong> Clients come with sick stores. Your job is to diagnose and cure.</li>
+<li><strong>You are the web development doctor.</strong> Clients come with broken websites, slow stores, and conversion problems. Your job is to diagnose and cure.</li>
 </ul>
 </div>
 
@@ -180,7 +190,7 @@ const task1Content = `
 <div class="warning-box">
 Some days you'll feel unstoppable. Some days you'll feel worthless. <strong>On both days, the ACTIONS are the same:</strong>
 <ul>
-<li>Respond to inquiries within 1 hour</li>
+<li>Respond to inquiries within 5 minutes</li>
 <li>Qualify leads properly</li>
 <li>Send professional proposals</li>
 <li>Follow up systematically</li>
@@ -258,7 +268,7 @@ const task4Quiz = [
 
 // Quiz Questions - Task 5: Response Templates (10 Questions)
 const task5Quiz = [
-    { q: "MAXIMUM response time for Fiverr inquiry during business hours:", o: ["1 hour (ideally under 30 minutes)", "24 hours", "4 hours", "Same day is acceptable"], c: 0 },
+    { q: "MAXIMUM response time for Fiverr inquiry during business hours:", o: ["Under 5 minutes", "1 hour", "30 minutes", "Same day is acceptable"], c: 0 },
     { q: "General inquiry: 'Need Shopify store for clothing brand.' First response should include:", o: ["Just send price list and wait", "Thank them, ask 5 qualifying questions, share relevant portfolio, mention stats", "Ask 'What's your budget?' as only question", "Send 2-page company history document"], c: 1 },
     { q: "First message: 'How much do you charge?' What response template:", o: ["General Inquiry template", "Urgent Timeline template", "Just send '$1,200' and wait", "Price-Focused — don't give exact price, ask qualifying questions first"], c: 3 },
     { q: "'Need this launched in 5 days, can you help?' Correct approach:", o: ["Say 'yes' immediately to win deal", "Say 'no, we can't do rush jobs'", "Confirm you can help, list what YOU need from THEM, ask if ready", "Charge triple without explaining"], c: 2 },
@@ -332,7 +342,7 @@ const task10Quiz = [
     { q: "80/20 rule in sales:", o: ["80% revenue from 20% clients", "80% prospecting, 20% closing", "Listen 80%, talk 20% — let client reveal needs", "Work 80%, rest 20%"], c: 2 },
     { q: "M.T.N.D. stands for:", o: ["Marketing, Technology, Networking, Design", "Money, Timeline, Need, Decision-maker", "Motivation, Trust, Negotiation, Delivery", "Management, Timing, Necessity, Documentation"], c: 1 },
     { q: "How many red flags trigger disqualification:", o: ["1 red flag", "2 or more red flags", "5 or more", "Red flags irrelevant if paying"], c: 1 },
-    { q: "Maximum Fiverr response time during business hours:", o: ["Same day", "4 hours", "24 hours", "1 hour (ideally under 30 min)"], c: 3 },
+    { q: "Maximum Fiverr response time during business hours:", o: ["Same day", "Under 5 minutes", "30 minutes", "1 hour"], c: 1 },
     { q: "'How much charge?' without context — respond with:", o: ["Exact price immediately", "Say 'It depends' and wait", "Ask qualifying questions first, then present ranges", "Send gig description link"], c: 2 },
     { q: "Scope Reduction technique:", o: ["Lowering price to match budget", "Reducing scope to match budget — never reducing price for same work", "Asking them to reduce requirements", "Removing features without telling"], c: 1 },
     { q: "Silence Technique after stating price:", o: ["Offer discount immediately", "Explain worth for 5 minutes", "Stay silent, wait for response — first to speak loses leverage", "Ask if too expensive"], c: 2 },
