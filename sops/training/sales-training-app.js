@@ -80,8 +80,9 @@ function openTask(index) {
     if (task.contentFirst && index === 0) {
         html += task1Content;
         html += `
-            <div style="text-align: center; margin-top: 30px;">
+            <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (10/10 Required)</button>
+                <button class="back-btn" onclick="devSkipTask(${index})" style="background: rgba(245, 158, 11, 0.3); border-color: #F59E0B;">⏩ Skip (Dev Mode)</button>
             </div>
         `;
     } else {
@@ -91,13 +92,33 @@ function openTask(index) {
                 <p>This task uses the <strong>Quiz First</strong> approach. Study the SOP materials listed above, then prove your knowledge by scoring <strong>10/10</strong> on the quiz.</p>
                 <p>Questions test <strong>understanding</strong>, not memorization. You need to grasp the concepts to pass.</p>
             </div>
-            <div style="text-align: center; margin-top: 30px;">
+            <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
+                <button class="back-btn" onclick="devSkipTask(${index})" style="background: rgba(245, 158, 11, 0.3); border-color: #F59E0B;">⏩ Skip (Dev Mode)</button>
             </div>
         `;
     }
 
     container.innerHTML = html;
+}
+
+// DEV MODE: Skip task without quiz (REMOVE THIS FOR PRODUCTION)
+function devSkipTask(taskIndex) {
+    const task = trainingTasks[taskIndex];
+
+    // Mark task complete
+    if (!progress.completedTasks.includes(task.id)) {
+        progress.completedTasks.push(task.id);
+    }
+    if (task.id < 10) {
+        progress.currentTask = task.id + 1;
+    }
+    localStorage.setItem('salesTrainingProgress', JSON.stringify(progress));
+
+    // Return to tasks list
+    closeTask();
+    renderTasksList();
+    updateProgressBar();
 }
 
 // Close Task

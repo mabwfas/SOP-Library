@@ -122,121 +122,202 @@ const trainingTasks = [
     }
 ];
 
-// Task 1 Content (Content-First)
+// Task 1 Content (Content-First) - REORGANIZED & ENHANCED
 const task1Content = `
-<h2>🧠 Why Are You Here?</h2>
+<h2>📚 PART 1: THE FOUNDATION</h2>
+
 <div class="content-section">
-<h3>The Truth About This Opportunity</h3>
-<p>You're about to learn a skill that can change your entire financial future. Sales is not just a job — it's the <strong>highest-paid profession in the world</strong> that requires no degree, no connections, and no starting capital.</p>
+<h3>🎯 Why Are You Here?</h3>
+<p>You're about to learn a skill that can change your entire financial future. Sales is not just a job — it's the <strong>highest-paid profession in the world</strong> that requires:</p>
+<ul>
+<li>❌ No degree</li>
+<li>❌ No connections</li>
+<li>❌ No starting capital</li>
+<li>✅ Only your mind, discipline, and willingness to learn</li>
+</ul>
 <div class="warning-box">
-<strong>But here's what nobody tells you:</strong><br>
-95% of people who start sales training never finish it. Not because it's too hard. Because they don't have the right mindset.
+<strong>⚠️ The Uncomfortable Truth:</strong><br>
+95% of people who start sales training never finish it. Not because it's too hard. Because they don't have the right mindset. You're reading this because someone saw potential in you. The question is: <strong>Do you see it in yourself?</strong>
 </div>
 </div>
 
 <div class="content-section">
-<h3>The Two Types of People</h3>
-<p><strong>Type 1: The Tourist</strong></p>
-<ul>
-<li>Reads quickly, skims sections</li>
-<li>Thinks "I already know this"</li>
-<li>Quits when it gets hard</li>
-<li>Blames external factors for failure</li>
-<li><em>Will NOT finish this training</em></li>
-</ul>
-<p><strong>Type 2: The Student</strong></p>
-<ul>
-<li>Reads carefully, takes notes</li>
-<li>Thinks "What can I learn here?"</li>
-<li>Pushes through when it gets hard</li>
-<li>Takes responsibility for results</li>
-<li><em>Will become a top performer</em></li>
-</ul>
+<h3>👤 The Two Types of People</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚶 Type 1: The Tourist</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">
+• Reads quickly, skims sections<br>
+• Thinks "I already know this"<br>
+• Quits when it gets hard<br>
+• Blames external factors<br>
+<em style="color: #EF4444;">Will NOT finish this training ❌</em>
+</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🎓 Type 2: The Student</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">
+• Reads carefully, takes notes<br>
+• Thinks "What can I learn here?"<br>
+• Pushes through when it gets hard<br>
+• Takes responsibility for results<br>
+<em style="color: #10B981;">Will become a top performer ✅</em>
+</td>
+</tr>
+</table>
 <div class="highlight-box">
-<strong>Which one are you?</strong> The answer isn't what you say. It's what you DO in the next few hours.
+<strong>Which one are you?</strong> The answer isn't what you say. It's what you <strong>DO</strong> in the next few hours.
 </div>
 </div>
 
+<h2>📚 PART 2: CORE MINDSET LESSONS</h2>
+
 <div class="content-section">
-<h3>Lesson 1: You Are Not Selling — You Are Solving</h3>
+<h3>💡 Lesson 1: You Are Not Selling — You Are Solving</h3>
 <p>The biggest mistake new salespeople make is thinking their job is to "convince" people to buy. <strong>Wrong.</strong></p>
-<p>Your job is to <strong>find people with problems and offer them solutions.</strong></p>
+<div class="highlight-box">
+<strong>Your Real Job:</strong> Find people with problems and offer them solutions.
+</div>
+<p>Think about it:</p>
 <ul>
-<li>A doctor doesn't "convince" you to take medicine. They diagnose and prescribe.</li>
-<li>A lawyer doesn't "convince" you to hire them. They understand and offer expertise.</li>
-<li><strong>You are the web development doctor.</strong> Clients come with broken websites, slow stores, and conversion problems. Your job is to diagnose and cure.</li>
+<li>🩺 A <strong>doctor</strong> doesn't "convince" you to take medicine. They diagnose and prescribe.</li>
+<li>⚖️ A <strong>lawyer</strong> doesn't "convince" you to hire them. They understand and offer expertise.</li>
+<li>💻 <strong>You are the web development doctor.</strong> Clients come with broken websites, slow stores, and conversion problems. Your job is to diagnose and cure.</li>
+</ul>
+<p style="margin-top: 15px;">When you see yourself as a <strong>problem-solver</strong> instead of a salesperson:</p>
+<ul>
+<li>You stop begging for orders</li>
+<li>You start qualifying who deserves your help</li>
+<li>Clients respect you more</li>
+<li>You close more deals</li>
 </ul>
 </div>
 
 <div class="content-section">
-<h3>Lesson 2: Rejection is Information, Not Insult</h3>
-<p><strong>When someone says "no," they're not rejecting YOU. They're rejecting the OFFER — at THIS moment — for THEIR reasons.</strong></p>
+<h3>💡 Lesson 2: Rejection is Information, Not Insult</h3>
+<div class="highlight-box">
+<strong>Here's a truth that will free you:</strong><br>
+When someone says "no," they're not rejecting <strong>YOU</strong>. They're rejecting the <strong>OFFER</strong> — at <strong>THIS moment</strong> — for <strong>THEIR reasons</strong>.
+</div>
 <p>The rejection might mean:</p>
 <ul>
-<li>They don't have budget <em>right now</em></li>
-<li>They're not ready to decide</li>
-<li>They don't trust online services yet</li>
-<li>They had a bad experience before</li>
+<li>💰 They don't have budget <em>right now</em> (not "you're too expensive")</li>
+<li>⏳ They're not ready to decide (not "you're not convincing")</li>
+<li>🔒 They don't trust online services yet (not "you're untrustworthy")</li>
+<li>😤 They had a bad experience before (not your fault at all)</li>
 </ul>
-<div class="highlight-box">
-<strong>The Math:</strong> Salesperson A talks to 10 people, gets 2 "yes". Salesperson B talks to 100 people, gets 15 "yes" (lower %). Who makes more money? <strong>Salesperson B.</strong>
-</div>
-</div>
-
-<div class="content-section">
-<h3>Lesson 3: Discipline Beats Motivation</h3>
-<p><strong>Motivation is a lie.</strong> It comes and goes like weather. You can't build a career on weather.</p>
-<p><strong>Discipline</strong> is doing what needs to be done, whether you feel like it or not.</p>
 <div class="warning-box">
-Some days you'll feel unstoppable. Some days you'll feel worthless. <strong>On both days, the ACTIONS are the same:</strong>
-<ul>
-<li>Respond to inquiries within 5 minutes</li>
-<li>Qualify leads properly</li>
-<li>Send professional proposals</li>
-<li>Follow up systematically</li>
-</ul>
+<strong>📊 The Math That Matters:</strong><br>
+• Salesperson A talks to 10 people, gets 2 "yes" = 20% conversion<br>
+• Salesperson B talks to 100 people, gets 15 "yes" = 15% conversion<br><br>
+<strong>Who makes more money?</strong> Salesperson B — even with a LOWER conversion rate!<br>
+<em>The game isn't about avoiding rejection. It's about collecting rejections on your way to success.</em>
 </div>
 </div>
 
 <div class="content-section">
-<h3>Why 10/10 is Required</h3>
-<p><strong>In sales, there is no 80%.</strong></p>
-<ul>
-<li>When a client asks about pricing, you can't give an "80% correct" answer.</li>
-<li>When a client objects, you can't give an "80% correct" response.</li>
-<li>When a client is ready to close, you can't do an "80% correct" close.</li>
-</ul>
-<p>We train for perfection because <strong>real situations demand perfection.</strong></p>
-</div>
-
-<h2>🔥 Advanced Sales Philosophy</h2>
-
-<div class="content-section">
-<h3>Lesson 4: Sales = Conviction × Trust</h3>
-<p>The single most important sales equation:</p>
+<h3>💡 Lesson 3: Discipline Beats Motivation</h3>
+<p><strong>Motivation is a lie.</strong> Not completely — but mostly.</p>
+<p>Motivation is an <em>emotion</em>. It comes and goes like weather. You can't build a career on weather.</p>
 <div class="highlight-box">
-<strong>Conviction × Trust = Sales</strong><br>
-Not scripts. Not rebuttals. Not persuasion tricks.
+<strong>Discipline</strong> is doing what needs to be done, whether you feel like it or not.
 </div>
+<p>Here's the brutal truth about your future in sales:</p>
+<ul>
+<li>☀️ Some days you'll feel unstoppable. You'll close 3 deals before lunch.</li>
+<li>🌧️ Some days you'll feel worthless. Every client will reject you.</li>
+</ul>
+<div class="warning-box">
+<strong>On BOTH days, the ACTIONS are the same:</strong>
+<ul style="margin-bottom: 0;">
+<li>⚡ Respond to inquiries within 5 minutes</li>
+<li>🔍 Qualify leads properly</li>
+<li>📝 Send professional proposals</li>
+<li>📞 Follow up systematically</li>
+</ul>
+</div>
+<p style="margin-top: 15px;"><strong>The professional does the work regardless of feelings. The amateur waits until they "feel like it."</strong></p>
+</div>
+
+<div class="content-section">
+<h3>💡 Lesson 4: The 10,000 Hour Reality</h3>
+<p>Malcolm Gladwell popularized the "10,000 hour rule" — mastery requires 10,000 hours of practice.</p>
+<div class="warning-box">
+<strong>But here's what most people miss:</strong><br>
+It's not 10,000 hours of <em>doing</em>. It's 10,000 hours of <strong>IMPROVING</strong>.
+</div>
+<p>You can spend 10 years doing sales badly and never get better. Or you can spend 1 year with intense focus and become exceptional.</p>
+<p><strong>Deliberate practice means:</strong></p>
+<ul>
+<li>📝 <strong>Reviewing every conversation:</strong> "What worked? What didn't?"</li>
+<li>🗣️ <strong>Asking for feedback:</strong> "What could I have done better?"</li>
+<li>👀 <strong>Studying top performers:</strong> "What do they do differently?"</li>
+<li>💪 <strong>Pushing past comfort:</strong> "Let me try that technique I'm afraid of"</li>
+</ul>
+<div class="highlight-box">
+Your first 100 conversations will be terrible. Accept it. Embrace it. Learn from every single one. <strong>The people who become great are not the most talented. They're the ones who refuse to stay bad.</strong>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💡 Lesson 5: Your Income is the Average of Your Skills</h3>
+<p>There's a famous quote: "Your income is the average of the five people you spend the most time with."</p>
+<div class="highlight-box">
+<strong>But there's a more accurate version:</strong><br>
+Your income is the average of your five most valuable skills.
+</div>
+<p><strong>Right now, you might have skills like:</strong></p>
+<ul>
+<li>Basic computer usage</li>
+<li>Communication in your language</li>
+<li>Some understanding of websites</li>
+</ul>
+<p>These skills might earn you ₹15,000-25,000/month in a regular job.</p>
+<p><strong>But what if you added:</strong></p>
+<ul>
+<li>✅ Professional sales communication</li>
+<li>✅ Client psychology understanding</li>
+<li>✅ Objection handling mastery</li>
+<li>✅ Premium positioning expertise</li>
+<li>✅ Conversion optimization knowledge</li>
+</ul>
+<p>Now you have skills worth <strong>₹50,000-100,000/month. Or more.</strong></p>
+<div class="warning-box">
+<strong>This training is adding skills to your stack.</strong> Every module you complete is increasing your market value. But only if you actually LEARN it. Not just read it.
+</div>
+</div>
+
+<h2>📚 PART 3: ADVANCED SALES PHILOSOPHY</h2>
+
+<div class="content-section">
+<h3>🔥 Lesson 6: The Ultimate Sales Equation</h3>
+<div class="highlight-box" style="text-align: center; font-size: 1.2em;">
+<strong>Conviction × Trust = Sales</strong>
+</div>
+<p style="text-align: center; margin-top: 10px;">Not scripts. Not rebuttals. Not persuasion tricks.</p>
 <p>If you <strong>believe</strong>, people feel it. If you don't, they smell it.</p>
 <p>That's why:</p>
 <ul>
-<li>The best salespeople are killers from week one</li>
-<li>Mediocre ones never "learn" their way into greatness</li>
+<li>🏆 The best salespeople are killers from week one</li>
+<li>📉 Mediocre ones never "learn" their way into greatness</li>
 <li><strong>You can train skills. You cannot fake belief.</strong></li>
 </ul>
 </div>
 
 <div class="content-section">
-<h3>Lesson 5: Conviction is a Slider, Not a Switch</h3>
+<h3>🔥 Lesson 7: Conviction is a Slider, Not a Switch</h3>
 <p>Most people think: "I believe or I don't." <strong>Wrong.</strong></p>
-<p>Conviction is a slider: 40% → 70% → 100%</p>
-<p>What increases conviction fastest? <strong>Seeing proof.</strong></p>
+<div style="display: flex; align-items: center; gap: 10px; margin: 15px 0; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
+<span style="color: #EF4444;">40%</span>
+<div style="flex: 1; height: 10px; background: linear-gradient(90deg, #EF4444, #F59E0B, #10B981); border-radius: 5px;"></div>
+<span style="color: #10B981;">100%</span>
+</div>
+<p><strong>What increases conviction fastest?</strong> Seeing proof:</p>
 <ul>
-<li>Testimonials</li>
-<li>Client wins ("This client made $40k")</li>
-<li>Case studies ("This brand hit 4.8% CVR")</li>
-<li>Results ("This ad went 12x ROAS")</li>
+<li>⭐ Testimonials from happy clients</li>
+<li>💰 Client wins: "This client made $40k revenue"</li>
+<li>📈 Case studies: "This brand hit 4.8% CVR"</li>
+<li>🚀 Results: "This ad campaign went 12x ROAS"</li>
 </ul>
 <div class="warning-box">
 <strong>That is gasoline for your conviction.</strong> The more wins you see, the more you believe, the more you close.
@@ -244,14 +325,21 @@ Not scripts. Not rebuttals. Not persuasion tricks.
 </div>
 
 <div class="content-section">
-<h3>Lesson 6: Childlike Curiosity > Confrontation</h3>
+<h3>🔥 Lesson 8: Childlike Curiosity > Confrontation</h3>
 <p>Most sales reps argue. <strong>Elite closers ask curious questions.</strong></p>
-<p><strong>Example:</strong></p>
-<p>Client: "My husband won't approve."</p>
-<ul>
-<li>❌ Bad rep: "He's wrong."</li>
-<li>✅ Elite rep: "That's interesting — why wouldn't he?"</li>
-</ul>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr>
+<td style="padding: 15px; background: rgba(239, 68, 68, 0.15); border-radius: 10px 10px 0 0;">
+<strong>Client:</strong> "My husband won't approve."<br><br>
+<strong style="color: #EF4444;">❌ Bad rep:</strong> "He's wrong."
+</td>
+</tr>
+<tr>
+<td style="padding: 15px; background: rgba(16, 185, 129, 0.15); border-radius: 0 0 10px 10px;">
+<strong style="color: #10B981;">✅ Elite rep:</strong> "That's interesting — why wouldn't he?"
+</td>
+</tr>
+</table>
 <p>Now the client is explaining to <em>themselves</em>. No pressure. No conflict. Just logic.</p>
 <div class="highlight-box">
 <strong>People convince themselves better than you ever could.</strong>
@@ -259,35 +347,101 @@ Not scripts. Not rebuttals. Not persuasion tricks.
 </div>
 
 <div class="content-section">
-<h3>Lesson 7: Emotional Control = Closing Power</h3>
-<p>Sales is like fighting. Under pressure: heart rate up, breathing fast, fight-or-flight.</p>
-<p><strong>Losers:</strong> React emotionally → Push → Get defensive</p>
-<p><strong>Winners:</strong> Slow down → Ask → Stay curious</p>
+<h3>🔥 Lesson 9: Emotional Control = Closing Power</h3>
+<p>Sales is like fighting. Under pressure:</p>
+<ul>
+<li>❤️ Heart rate up</li>
+<li>💨 Breathing fast</li>
+<li>⚡ Fight-or-flight kicks in</li>
+</ul>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🏳️ Losers</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">React emotionally → Push → Get defensive</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🏆 Winners</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Slow down → Ask → Stay curious</td>
+</tr>
+</table>
 <div class="warning-box">
 <strong>The calmest rep wins.</strong> When belief is real, your voice changes, speed changes, certainty comes through. People feel it.
 </div>
 </div>
 
 <div class="content-section">
-<h3>Lesson 8: Seasons Mindset = Psychological Freedom</h3>
+<h3>🔥 Lesson 10: Seasons Mindset = Psychological Freedom</h3>
 <p>Most people think commitment = prison. Elite founders use <strong>time-boxed seasons.</strong></p>
-<ul>
-<li>❌ Default thinking: "If I start this, I'm stuck forever"</li>
-<li>✅ Seasonal reframe: "I'm committing to this for THIS season"</li>
-</ul>
-<p>Just like: Winter ≠ Summer | Launch season ≠ Scaling season | Cash season ≠ Brand season</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Default thinking</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"If I start this, I'm stuck forever"</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Seasonal reframe</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'm committing to this for THIS season"</td>
+</tr>
+</table>
+<p>Just like: <strong>Winter ≠ Summer</strong> | <strong>Launch season ≠ Scaling season</strong> | <strong>Cash season ≠ Brand season</strong></p>
 <p>This removes: Fear of wrong decisions, overthinking, perfectionism.</p>
 <div class="highlight-box">
 <strong>You don't quit — you transition seasons.</strong> This is why elite founders move fast while others freeze.
 </div>
 </div>
 
+<h2>📚 PART 4: YOUR COMMITMENT & STANDARDS</h2>
+
 <div class="content-section">
-<h3>The Final Truth</h3>
-<div class="highlight-box" style="background: rgba(16, 185, 129, 0.3); border-color: #10B981;">
-<h4 style="margin-top: 0; color: #10B981;">Sales is the transfer of belief through trust.</h4>
-<p style="margin-bottom: 0;">Everything else — scripts, frameworks, closes — are just tools to support that.</p>
+<h3>📜 The Commitment Contract</h3>
+<p>By continuing this training, you're making a commitment. Not to us — <strong>to yourself.</strong></p>
+<div class="warning-box">
+<strong>You're committing to:</strong>
+<ul style="margin-bottom: 0;">
+<li>✅ <strong>Complete every task</strong> — No skipping, no shortcuts</li>
+<li>✅ <strong>Score 10/10 on every quiz</strong> — Perfection is the standard</li>
+<li>✅ <strong>Apply what you learn</strong> — Knowledge without action is useless</li>
+<li>✅ <strong>Push through difficulty</strong> — The hard parts are where growth happens</li>
+<li>✅ <strong>Take responsibility</strong> — Your success or failure is YOUR doing</li>
+</ul>
 </div>
+</div>
+
+<div class="content-section">
+<h3>🎯 Why 10/10 is Required</h3>
+<p>You might wonder: "Why do I need 100% on every quiz? Isn't 80% good enough?"</p>
+<div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong style="color: #EF4444;">No. Here's why:</strong>
+</div>
+<p><strong>In sales, there is no 80%.</strong></p>
+<ul>
+<li>When a client asks about pricing, you can't give an "80% correct" answer. You either handle it right or you lose the deal.</li>
+<li>When a client objects, you can't give an "80% correct" response. You either overcome it or you lose the deal.</li>
+<li>When a client is ready to close, you can't do an "80% correct" close. You either get the order or you don't.</li>
+</ul>
+<p>We train for perfection because <strong>real situations demand perfection.</strong></p>
+<div class="warning-box">
+If you can't score 10/10 on a quiz when you have unlimited time and can review the material, how will you perform in a live conversation when you have 10 seconds to respond?
+</div>
+</div>
+
+<div class="content-section">
+<h3>🎯 The Final Truth</h3>
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.3); border-color: #10B981; text-align: center; padding: 25px;">
+<h4 style="margin-top: 0; color: #10B981; font-size: 1.3em;">Sales is the transfer of belief through trust.</h4>
+<p style="margin-bottom: 0; font-size: 1.1em;">Everything else — scripts, frameworks, closes — are just tools to support that.</p>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned 10 powerful lessons about the mindset of successful salespeople. Now it's time to prove you understood them.</p>
+<p><strong>Remember:</strong></p>
+<ul>
+<li>📝 10 questions based on what you just read</li>
+<li>🎯 You need <strong>10/10</strong> to proceed to Task 2</li>
+<li>🔄 If you fail, you can retry immediately</li>
+<li>💡 Questions test <strong>understanding</strong>, not memorization</li>
+</ul>
 </div>
 `;
 
