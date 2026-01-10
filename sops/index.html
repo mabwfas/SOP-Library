@@ -571,7 +571,51 @@
 
             .header {
                 flex-direction: column;
+                gap: 12px;
+                padding: 12px;
+            }
+
+            .header-left {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            .header h1 {
+                font-size: 1.1em;
+            }
+
+            .header-right {
+                flex-direction: column;
                 gap: 10px;
+                width: 100%;
+            }
+
+            .stats {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                width: 100%;
+            }
+
+            .stat {
+                text-align: center;
+                padding: 6px;
+                background: rgba(255, 255, 255, 0.03);
+                border-radius: 6px;
+            }
+
+            .stat-value {
+                font-size: 0.9em;
+            }
+
+            .stat-label {
+                font-size: 0.6em;
+            }
+
+            .admin-inline-btn {
+                width: 100%;
+                justify-content: center;
             }
 
             .guides-section {
