@@ -46,6 +46,12 @@ function updateProgressBar() {
     const percent = progress.completedTasks.length * 10;
     document.getElementById('progressPercent').textContent = `${percent}%`;
     document.getElementById('progressFill').style.width = `${percent}%`;
+
+    // Show/hide certificate button based on completion
+    const certBtn = document.getElementById('certificateBtn');
+    if (certBtn) {
+        certBtn.style.display = progress.completedTasks.length === 10 ? 'block' : 'none';
+    }
 }
 
 // Open Task
