@@ -295,6 +295,7 @@ function showResults() {
                     <h2>🏆 CERTIFIED</h2>
                     <p>You've passed all 10 tasks!</p>
                     <p style="margin-top: 20px; color: #94a3b8;">Next Step: Record your 30-minute video walkthrough</p>
+                    <button class="nav-btn" style="margin-top: 20px;" onclick="showCertificate()">🎓 View Certificate</button>
                 </div>
             `;
         } else {
@@ -317,4 +318,250 @@ function showResults() {
 function resetProgress() {
     localStorage.removeItem('salesTrainingProgress');
     location.reload();
+}
+
+// Show Certificate Modal
+function showCertificate() {
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    // Create certificate modal overlay
+    const modal = document.createElement('div');
+    modal.id = 'certificateModal';
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    `;
+
+    modal.innerHTML = `
+        <div id="certificateContent" style="
+            width: 900px;
+            max-width: 100%;
+            background: linear-gradient(145deg, #0f172a, #1e293b);
+            border: 3px solid #2DD4BF;
+            border-radius: 20px;
+            padding: 60px;
+            position: relative;
+            box-shadow: 0 0 60px rgba(45, 212, 191, 0.3), inset 0 0 60px rgba(45, 212, 191, 0.05);
+        ">
+            <!-- Close Button -->
+            <button onclick="closeCertificate()" style="
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: transparent;
+                border: none;
+                color: #94A3B8;
+                font-size: 24px;
+                cursor: pointer;
+            " class="no-print">✕</button>
+            
+            <!-- Certificate Header -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <div style="font-size: 3em; margin-bottom: 10px;">🎓</div>
+                <h1 style="
+                    font-size: 2.5em;
+                    font-weight: 800;
+                    background: linear-gradient(135deg, #2DD4BF, #06B6D4);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin: 0;
+                    letter-spacing: 0.05em;
+                ">DIGITAL HEROES</h1>
+                <div style="
+                    color: #94A3B8;
+                    font-size: 0.9em;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                ">Certification Program</div>
+            </div>
+            
+            <!-- Certificate Body -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="
+                    font-size: 2em;
+                    font-weight: 300;
+                    color: #F8FAFC;
+                    margin-bottom: 30px;
+                    letter-spacing: 0.1em;
+                ">CERTIFICATE OF COMPLETION</h2>
+                
+                <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 10px;">This is to certify that</p>
+                
+                <div id="recipientName" style="
+                    font-size: 2.2em;
+                    font-weight: 700;
+                    color: #F8FAFC;
+                    border-bottom: 2px solid rgba(45, 212, 191, 0.4);
+                    padding: 10px 40px;
+                    display: inline-block;
+                    margin: 15px 0 25px 0;
+                    min-width: 300px;
+                " contenteditable="true" class="no-print-edit">
+                    [Enter Your Name]
+                </div>
+                
+                <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 25px;">
+                    has successfully completed the
+                </p>
+                
+                <h3 style="
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    color: #2DD4BF;
+                    margin-bottom: 25px;
+                ">Technical Sales Executive Training</h3>
+                
+                <p style="color: #CBD5E1; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+                    Demonstrating proficiency in sales mindset, company knowledge, product mastery, 
+                    lead qualification, response templates, sales psychology, objection handling, 
+                    closing techniques, and practice scenarios.
+                </p>
+            </div>
+            
+            <!-- Certificate Footer -->
+            <div style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-top: 50px;
+                padding-top: 30px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+            ">
+                <div style="text-align: center;">
+                    <div style="
+                        width: 180px;
+                        border-bottom: 2px solid rgba(45, 212, 191, 0.4);
+                        padding-bottom: 8px;
+                        margin-bottom: 8px;
+                        color: #F8FAFC;
+                        font-weight: 600;
+                    ">Digital Heroes</div>
+                    <div style="color: #94A3B8; font-size: 0.85em;">Authorized Signature</div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="
+                        font-size: 2.5em;
+                        color: rgba(45, 212, 191, 0.3);
+                    ">🏆</div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="
+                        width: 180px;
+                        border-bottom: 2px solid rgba(45, 212, 191, 0.4);
+                        padding-bottom: 8px;
+                        margin-bottom: 8px;
+                        color: #F8FAFC;
+                        font-weight: 600;
+                    ">${formattedDate}</div>
+                    <div style="color: #94A3B8; font-size: 0.85em;">Date of Completion</div>
+                </div>
+            </div>
+            
+            <!-- Print Button -->
+            <div style="text-align: center; margin-top: 40px;" class="no-print">
+                <button onclick="printCertificate()" style="
+                    background: linear-gradient(135deg, #2DD4BF, #06B6D4);
+                    color: #000;
+                    font-weight: 700;
+                    padding: 16px 40px;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1.1em;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(45, 212, 191, 0.4)';"
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                    🖨️ Print Certificate
+                </button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    // Add print styles
+    if (!document.getElementById('printStyles')) {
+        const printStyles = document.createElement('style');
+        printStyles.id = 'printStyles';
+        printStyles.innerHTML = `
+            @media print {
+                body * {
+                    visibility: hidden;
+                }
+                #certificateModal, #certificateModal * {
+                    visibility: visible;
+                }
+                #certificateModal {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    background: white !important;
+                    padding: 0 !important;
+                }
+                #certificateContent {
+                    background: white !important;
+                    color: black !important;
+                    border: 3px solid #2DD4BF !important;
+                    box-shadow: none !important;
+                    max-width: 100% !important;
+                    width: 100% !important;
+                }
+                #certificateContent h1,
+                #certificateContent h2,
+                #certificateContent h3,
+                #certificateContent div,
+                #certificateContent p {
+                    color: #1e293b !important;
+                    -webkit-text-fill-color: #1e293b !important;
+                }
+                #certificateContent h1 {
+                    background: none !important;
+                    -webkit-text-fill-color: #2DD4BF !important;
+                }
+                #certificateContent h3 {
+                    color: #2DD4BF !important;
+                    -webkit-text-fill-color: #2DD4BF !important;
+                }
+                .no-print {
+                    display: none !important;
+                }
+                [contenteditable] {
+                    border-bottom-color: #2DD4BF !important;
+                }
+            }
+        `;
+        document.head.appendChild(printStyles);
+    }
+}
+
+// Close Certificate Modal
+function closeCertificate() {
+    const modal = document.getElementById('certificateModal');
+    if (modal) {
+        modal.remove();
+    }
+}
+
+// Print Certificate
+function printCertificate() {
+    window.print();
 }
