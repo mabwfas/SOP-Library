@@ -128,6 +128,10 @@ const task1Content = `
 
 <div class="content-section">
 <h3>🎯 Why Are You Here?</h3>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DsK_904V2Pg" title="Sales Mindset" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Sales Mindset</strong></div>
+</div>
 <p>You're about to learn a skill that can change your entire financial future. Sales is not just a job — it's the <strong>highest-paid profession in the world</strong> that requires:</p>
 <ul>
 <li>❌ No degree</li>
@@ -141,43 +145,11 @@ const task1Content = `
 </div>
 </div>
 
-<div class="content-section">
-<h3>🏢 Who is Digital Heroes?</h3>
-<p>You're not joining just any company. You're joining <strong>Digital Heroes</strong> — one of the most trusted names in web development and digital marketing.</p>
-<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(16, 185, 129, 0.2)); border: none;">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center;">
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #10B981;">2.5M+</div>
-<div style="color: #94a3b8; font-size: 0.9em;">YouTube Subscribers</div>
-</div>
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #6366F1;">40+</div>
-<div style="color: #94a3b8; font-size: 0.9em;">Expert Developers</div>
-</div>
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #F59E0B;">2000+</div>
-<div style="color: #94a3b8; font-size: 0.9em;">Brands Served</div>
-</div>
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #EC4899;">$M+</div>
-<div style="color: #94a3b8; font-size: 0.9em;">Revenue Generated for Clients</div>
-</div>
-</div>
-</div>
-<p style="margin-top: 15px;"><strong>What makes us different:</strong></p>
-<ul>
-<li>🎓 <strong>Education-First:</strong> Our YouTube channel <a href="https://www.youtube.com/@DigitalMarketingHeroes" target="_blank" style="color: #60A5FA;">@DigitalMarketingHeroes</a> has taught millions about website development & digital marketing</li>
-<li>💎 <strong>Premium Quality:</strong> We build CRO-optimized websites that go on to generate millions in revenue</li>
-<li>🏆 <strong>Proven Track Record:</strong> 2000+ successful brand partnerships across industries</li>
-<li>👥 <strong>Expert Team:</strong> 40+ developers working to the highest standards</li>
-</ul>
-<div class="warning-box">
-<strong>When you sell for Digital Heroes, you're not selling a service — you're offering access to a proven system that has transformed thousands of businesses.</strong> This is why your conviction matters. This is why we train so intensively.
-</div>
-</div>
+
 
 <div class="content-section">
 <h3>👤 The Two Types of People</h3>
+<img src="/sales_training_mindset_paths_1768034224092.png" alt="Tourist vs Student Mindset" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
 <tr style="background: rgba(239, 68, 68, 0.2);">
 <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚶 Type 1: The Tourist</strong></td>
@@ -209,6 +181,7 @@ const task1Content = `
 
 <div class="content-section">
 <h3>💡 Lesson 1: You Are Not Selling — You Are Solving</h3>
+<img src="/sales_training_doctor_analogy_1768034244326.png" alt="Selling is Solving" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <p>The biggest mistake new salespeople make is thinking their job is to "convince" people to buy. <strong>Wrong.</strong></p>
 <div class="highlight-box">
 <strong>Your Real Job:</strong> Find people with problems and offer them solutions.
@@ -481,111 +454,136 @@ If you can't score 10/10 on a quiz when you have unlimited time and can review t
 `;
 
 // Task 2 Content: Company Knowledge
+// Task 2 Content: Company Knowledge - THE DIGITAL HEROES ECOSYSTEM
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
+<h2>📚 TASK 2: THE DIGITAL HEROES ECOSYSTEM</h2>
 
 <div class="content-section">
-<h3>🏢 Who is Digital Heroes?</h3>
-<p>Before you can sell for us, you need to <strong>understand who we are</strong> and why clients trust us.</p>
-<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(16, 185, 129, 0.2)); border: none;">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; text-align: center;">
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #10B981;">2.5M+</div>
-<div style="color: #94a3b8; font-size: 0.9em;">YouTube Subscribers</div>
+<h3>🚀 Our Origin Story</h3>
+<img src="/sales_training_origin_timeline_1768034412075.png" alt="Origin Timeline" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
+<p>Digital Heroes didn't start as an agency. It started as a mission.</p>
+<div class="story-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h4 style="color: #10B981; margin-top: 0;">From Freelancer to Empire (2018-Present)</h4>
+    <p>In 2018, we were just exhausted freelancers tired of seeing clients get ripped off by "agencies" who charged $5,000 for $50 template websites.</p>
+    <p>We decided to do something radical: <strong>teach the secrets for free.</strong></p>
+    <p>We launched the <strong style="color: #F8FAFC;">Digital Marketing Heroes</strong> YouTube channel. We revealed everything — how to code, how to design, how to market.</p>
+    <p><strong>The Result?</strong></p>
+    <ul>
+        <li>Millions watched our videos.</li>
+        <li>Thousands learned to code.</li>
+        <li><strong>But business owners said:</strong> "We love your honesty. We don't want to learn. We just want YOU to build it."</li>
+    </ul>
+    <p>That's how our agency was born. Built on trust, education, and radical transparency.</p>
 </div>
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #6366F1;">40+</div>
-<div style="color: #94a3b8; font-size: 0.9em;">Expert Developers</div>
-</div>
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #F59E0B;">2000+</div>
-<div style="color: #94a3b8; font-size: 0.9em;">Stores Built</div>
-</div>
-<div>
-<div style="font-size: 2em; font-weight: 700; color: #EC4899;">4.9★</div>
-<div style="color: #94a3b8; font-size: 0.9em;">Fiverr Rating</div>
-</div>
-</div>
-</div>
-<p style="margin-top: 15px;">Our YouTube channel <a href="https://www.youtube.com/@DigitalMarketingHeroes" target="_blank" style="color: #60A5FA;">@DigitalMarketingHeroes</a> has taught millions about web development and digital marketing. When you mention this to clients, they recognize the name and trust us immediately.</p>
 </div>
 
 <div class="content-section">
-<h3>💎 Premium Positioning</h3>
-<p>Digital Heroes is a <strong>premium agency</strong>. We are NOT the cheapest option — and that's intentional.</p>
-<div class="warning-box">
-<strong>Why Premium?</strong>
-<ul style="margin-bottom: 0;">
-<li><strong>Better clients:</strong> Price-shoppers waste time negotiating, request endless revisions, and leave bad reviews. Premium prices filter them out.</li>
-<li><strong>Quality work:</strong> Our developers earn properly, so they deliver properly.</li>
-<li><strong>Real support:</strong> We provide 30-90 days of support, not "best of luck" after delivery.</li>
-<li><strong>Credibility:</strong> Low prices signal desperation. Premium prices signal confidence.</li>
-</ul>
+<h3>🌍 The Ecosystem</h3>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/WK5xbqnhV2M" title="Sales SOP Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Sales SOP Overview</strong></div>
 </div>
-<p><strong>The $200-300 freelancer reality:</b></p>
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(239, 68, 68, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cheap Freelancer</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Template with logo swap, no speed optimization, no conversion focus, disappears after delivery</td>
-</tr>
-<tr style="background: rgba(16, 185, 129, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Digital Heroes</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom conversion-focused design, speed optimization, proper support, revision guarantee, ongoing help</td>
-</tr>
+<img src="/sales_training_ecosystem_diagram_1768034440322.png" alt="Digital Heroes Ecosystem" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
+<p>We are not just a service provider. We are a vertically integrated ecosystem:</p>
+<div class="highlight-box" style="background: transparent; border: none; padding: 0;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2em; margin-bottom: 10px;">📺</div>
+            <h4 style="color: #F8FAFC; margin: 0 0 10px 0;">The Media Arm</h4>
+            <p style="font-size: 0.9em; color: #94A3B8;">2.5M+ Subscribers. This is our lead magnet. Clients trust us before they even speak to you because they've watched 10 hours of our content.</p>
+        </div>
+        <div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2em; margin-bottom: 10px;">🛠️</div>
+            <h4 style="color: #F8FAFC; margin: 0 0 10px 0;">The Agency Arm</h4>
+            <p style="font-size: 0.9em; color: #94A3B8;">Premium high-ticket execution. Where you come in. We serve the top 1% of clients who want the best.</p>
+        </div>
+        <div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2em; margin-bottom: 10px;">👥</div>
+            <h4 style="color: #F8FAFC; margin: 0 0 10px 0;">The Talent Pool</h4>
+            <p style="font-size: 0.9em; color: #94A3B8;">40+ Full-time developers. We don't outsource to randoms. We hire the best students from our own community.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💰 Your Commission Structure</h3>
+<p>We believe in sharing the wealth. This is high-ticket sales, and you are paid for closing high-ticket deals.</p>
+
+<div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div>
+            <h3 style="color: #10B981; border: none; margin: 0;">5% Commission</h3>
+            <p style="margin: 5px 0 0 0; color: #CBD5E1;">On all projects above $5,000</p>
+        </div>
+        <div style="text-align: right;">
+            <div style="font-size: 1.5em; font-weight: 700; color: #FFF;">Passive Income</div>
+            <div style="color: #94A3B8; font-size: 0.9em;">(Paid on Milestone Completion)</div>
+        </div>
+    </div>
+</div>
+
+<table style="width: 100%; margin: 25px 0; border-collapse: separate; border-spacing: 0 10px;">
+    <thead>
+        <tr style="color: #94A3B8; text-align: left;">
+            <th style="padding: 10px;">Project Value</th>
+            <th style="padding: 10px;">Your Commission</th>
+            <th style="padding: 10px;">Example Check</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background: rgba(255,255,255,0.03);">
+            <td style="padding: 15px; border-radius: 8px 0 0 8px;"><strong>Under $5,000</strong></td>
+            <td style="padding: 15px;">0% (Base Salary Only)</td>
+            <td style="padding: 15px; border-radius: 0 8px 8px 0; color: #94A3B8;">$0</td>
+        </tr>
+        <tr style="background: rgba(16, 185, 129, 0.1);">
+            <td style="padding: 15px; border-radius: 8px 0 0 8px;"><strong>$6,000 Project</strong></td>
+            <td style="padding: 15px; color: #10B981; font-weight: bold;">5% Flat</td>
+            <td style="padding: 15px; border-radius: 0 8px 8px 0; color: #10B981; font-weight: bold;">$300</td>
+        </tr>
+        <tr style="background: rgba(16, 185, 129, 0.2);">
+            <td style="padding: 15px; border-radius: 8px 0 0 8px;"><strong>$10,000 Project</strong></td>
+            <td style="padding: 15px; color: #10B981; font-weight: bold;">5% Flat</td>
+            <td style="padding: 15px; border-radius: 0 8px 8px 0; color: #10B981; font-weight: bold;">$500</td>
+        </tr>
+    </tbody>
 </table>
+<p style="font-size: 0.9em; opacity: 0.7;">*Note: Commission is paid 7 days after the client's final payment clears. No commission on "MVP" or discounted packages (which we shouldn't be selling anyway).</p>
 </div>
 
 <div class="content-section">
-<h3>🚫 Non-Negotiable Rules</h3>
-<p>These rules exist to protect both you and the company. Breaking them damages the entire team.</p>
-<div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
-<strong style="color: #EF4444;">NEVER DO THESE:</strong>
-<ul style="margin-bottom: 0;">
-<li>❌ <strong>Never give discounts:</strong> If they can't afford us, let them go elsewhere</li>
-<li>❌ <strong>Never work before payment:</strong> Full upfront payment, always</li>
-<li>❌ <strong>Never give free consulting:</strong> Our expertise has value — don't solve their problems before they pay</li>
-<li>❌ <strong>Never promise what we can't deliver:</strong> Under-promise, over-deliver</li>
-<li>❌ <strong>Never badmouth competitors:</strong> Stay professional, focus on our value</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>💰 Why No Discounts? (Deep Dive)</h3>
-<p>This is so important it deserves its own section.</p>
-<div class="warning-box">
-<strong>When you offer a discount, you're saying:</strong>
-<ul style="margin-bottom: 0;">
-<li>"I wasn't confident in the original price"</li>
-<li>"My service isn't worth what I quoted"</li>
-<li>"If you push, I'll bend"</li>
-</ul>
-</div>
-<p><strong>What happens next:</strong></p>
-<ul>
-<li>They'll ask for MORE discounts on future projects</li>
-<li>They'll refer friends who also expect discounts</li>
-<li>They'll be more demanding (they "won" so they feel entitled)</li>
-<li>You've trained them that your word means nothing</li>
-</ul>
+<h3>🚫 The "No Discount" Philosophy</h3>
+<p>You will be tempted to give discounts. <strong>Don't.</strong></p>
 <div class="highlight-box">
-<strong>Alternative to discounts:</strong> If budget is genuinely an issue, reduce SCOPE, not price. 
-<br><br>
-"I understand budget is tight. For $800, we could do the core store setup without the advanced features. Would that work better for you?"
+    <strong>Why we never discount:</strong>
+    <ol style="margin-top: 10px; line-height: 1.8;">
+        <li><strong>It insults existing clients:</strong> Why should Client B pay less than Client A for the same work?</li>
+        <li><strong>It attracts nightmares:</strong> Clients who fight for $100 off will fight for every pixel.</li>
+        <li><strong>It signals weakness:</strong> "If your price is flexible, your value is fake."</li>
+    </ol>
+</div>
+<p><strong>What to say instead:</strong></p>
+<div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; border-left: 3px solid #F59E0B; margin-top: 15px;">
+    "I totally understand the budget constraints. I can't lower the price because I can't ask my team to lower their quality. However, we could <strong>remove the blog migration</strong> and bringing the cost down to [Price]. Would that help?"
 </div>
 </div>
 
 <div class="content-section">
 <h3>🎯 What We Actually Sell</h3>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0D_TJw7OOBk" title="What We Sell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>What We Sell</strong></div>
+</div>
 <p>You're not selling "a website" or "Shopify development." You're selling:</p>
 <div class="highlight-box">
-<ul style="margin-bottom: 0;">
-<li>🚀 <strong>Revenue:</strong> CRO-optimized stores that convert visitors into customers</li>
-<li>⚡ <strong>Speed:</strong> Fast-loading sites that don't lose impatient visitors</li>
-<li>💎 <strong>Credibility:</strong> Professional design that makes their brand look trustworthy</li>
-<li>🛡️ <strong>Peace of mind:</strong> Expert team + support period = they're not alone</li>
-<li>⏰ <strong>Time:</strong> They can focus on their business while we handle the technical work</li>
-</ul>
+    <ul style="margin-bottom: 0;">
+        <li>🚀 <strong>Revenue:</strong> CRO-optimized stores that convert visitors into customers</li>
+        <li>⚡ <strong>Speed:</strong> Fast-loading sites that don't lose impatient visitors</li>
+        <li>💎 <strong>Credibility:</strong> Professional design that makes their brand look trustworthy</li>
+        <li>🛡️ <strong>Peace of mind:</strong> Expert team + support period = they're not alone</li>
+        <li>⏰ <strong>Time:</strong> They can focus on their business while we handle the technical work</li>
+    </ul>
 </div>
 <p style="margin-top: 15px;">When a client says "I want a Shopify store," what they ACTUALLY want is <strong>a successful online business</strong>. We deliver that.</p>
 </div>
@@ -594,29 +592,29 @@ const task2Content = `
 <h3>🚩 Red Flag Clients</h3>
 <p>Not every client deserves our time. Learn to spot problematic clients early:</p>
 <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(239, 68, 68, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why It's Bad</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My last 4 developers were terrible"</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">The common factor in all failures is THEM</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can you match this $300 quote?"</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Price-shopper who will haggle forever</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'll pay after I see the final work"</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Doesn't trust anyone — endless revisions, possible non-payment</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I need this in 2 days" (complex project)</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unrealistic expectations, will blame you when it's not perfect</td>
-</tr>
+    <tr style="background: rgba(239, 68, 68, 0.15);">
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why It's Bad</strong></td>
+    </tr>
+    <tr style="background: rgba(239, 68, 68, 0.05);">
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My last 4 developers were terrible"</td>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">The common factor in all failures is THEM</td>
+    </tr>
+    <tr>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can you match this $300 quote?"</td>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Price-shopper who will haggle forever</td>
+    </tr>
+    <tr>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'll pay after I see the final work"</td>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Doesn't trust anyone — endless revisions, possible non-payment</td>
+    </tr>
+    <tr>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I need this in 2 days" (complex project)</td>
+        <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unrealistic expectations, will blame you when it's not perfect</td>
+    </tr>
 </table>
 <div class="warning-box">
-<strong>The 2+ Red Flags Rule:</strong> If a lead shows 2 or more red flags, politely disqualify them. Your time is better spent on quality clients.
+    <strong>The 2+ Red Flags Rule:</strong> If a lead shows 2 or more red flags, politely disqualify them. Your time is better spent on quality clients.
 </div>
 </div>
 
@@ -624,8 +622,8 @@ const task2Content = `
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You've learned about Digital Heroes' positioning, rules, and values. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about company knowledge</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 3</li>
+    <li>📝 10 questions about company knowledge</li>
+    <li>🎯 Score <strong>10/10</strong> to proceed to Task 3</li>
 </ul>
 </div>
 `;
@@ -672,6 +670,11 @@ Product mastery gives you:
 
 <div class="content-section">
 <h3>📦 Our Two Main Packages</h3>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0jcOsGHeo0o" title="Bonus: E-commerce Workflow (Winning Product + Store + Marketing)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Bonus: E-commerce Workflow (Winning Product + Store + Marketing)</strong></div>
+</div>
+<img src="/sales_training_packages_comparison.png" alt="Premium vs Enterprise" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <p>We keep it simple: <strong>two core packages</strong> that cover 90% of client needs.</p>
 
 <div class="highlight-box" style="background: rgba(99, 102, 241, 0.2); border-color: #6366F1;">
@@ -890,6 +893,10 @@ Product mastery gives you:
 // Task 4 Content: Lead Qualification
 const task4Content = `
 <h2>📚 TASK 4: LEAD QUALIFICATION</h2>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hx39swDdyx0" title="Types of Customers + Brief Handling + Market Research" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Types of Customers + Brief Handling + Market Research</strong></div>
+</div>
 
 <div class="content-section">
 <h3>📊 The M.T.N.D. Logic Flow</h3>
@@ -1146,10 +1153,14 @@ graph TD
 // Task 5 Content: Response Templates
 const task5Content = `
 <h2>📚 TASK 5: RESPONSE TEMPLATES</h2>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/w2KCPqb_3A4" title="Client Centric Research for Effective Sales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Client Centric Research for Effective Sales</strong></div>
+</div>
 
 <div class="content-section">
 <h3>⚡ Impact of Speed on Sales</h3>
-<p>The probability of qualifying a lead drops by <strong>400%</strong> if you wait just 10 minutes vs 5 minutes.</p>
+<p>The probability of qualifying a lead drops by <strong>400%</strong> if you wait just 10 minutes vs 1 minute.</p>
 <div class="mermaid">
 pie title Conversion Probability by Response Time
     "0-30 Mins (High)" : 65
@@ -1170,10 +1181,10 @@ pie title Conversion Probability by Response Time
 <div class="warning-box">
 <strong>Response Time Standards:</strong>
 <ul style="margin-bottom: 0;">
-<li>🎯 <strong>Ideal:</strong> Under 30 minutes</li>
-<li>✅ <strong>Acceptable:</strong> Under 1 hour</li>
-<li>⚠️ <strong>Risky:</strong> 1-4 hours (they may have ordered elsewhere)</li>
-<li>❌ <strong>Dead:</strong> 24+ hours (they've definitely moved on)</li>
+<li>🎯 <strong>Ideal:</strong> Under 5 minutes</li>
+<li>✅ <strong>Acceptable:</strong> Under 15 minutes</li>
+<li>⚠️ <strong>Risky:</strong> 30+ minutes (they have likely ordered elsewhere)</li>
+<li>❌ <strong>Dead:</strong> 1+ hour (they've definitely moved on)</li>
 </ul>
 </div>
 </div>
