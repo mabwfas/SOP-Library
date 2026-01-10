@@ -82,15 +82,17 @@ function openTask(index) {
         </div>
     `;
 
-    // Study Guide
-    html += `
-        <div class="study-guide">
-            <h4>📚 Before You Begin</h4>
-            <ul>
-                ${task.studyGuide.map(item => `<li>${item}</li>`).join('')}
-            </ul>
-        </div>
-    `;
+    // Study Guide (only if defined in data)
+    if (task.studyGuide && task.studyGuide.length > 0) {
+        html += `
+            <div class="study-guide">
+                <h4>📚 Before You Begin</h4>
+                <ul>
+                    ${task.studyGuide.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
 
     // Content First (Task 1 only)
     if (task.contentFirst && index === 0) {
