@@ -129,7 +129,7 @@ const task1Content = `
 <div class="content-section">
 <h3>🎯 Why Are You Here?</h3>
 <div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DsK_904V2Pg" title="Sales Mindset" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DsK_904V2Pg?rel=0&modestbranding=1" title="Sales Mindset" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Sales Mindset</strong></div>
 </div>
 <p>You're about to learn a skill that can change your entire financial future. Sales is not just a job — it's the <strong>highest-paid profession in the world</strong> that requires:</p>
@@ -480,7 +480,7 @@ const task2Content = `
 <div class="content-section">
 <h3>🌍 The Ecosystem</h3>
 <div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/WK5xbqnhV2M" title="Sales SOP Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/WK5xbqnhV2M?rel=0&modestbranding=1" title="Sales SOP Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Sales SOP Overview</strong></div>
 </div>
 <img src="images/sales_training_ecosystem_diagram_1768034440322.png" alt="Digital Heroes Ecosystem" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
@@ -572,7 +572,7 @@ const task2Content = `
 <div class="content-section">
 <h3>🎯 What We Actually Sell</h3>
 <div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0D_TJw7OOBk" title="What We Sell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0D_TJw7OOBk?rel=0&modestbranding=1" title="What We Sell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>What We Sell</strong></div>
 </div>
 <p>You're not selling "a website" or "Shopify development." You're selling:</p>
@@ -671,7 +671,7 @@ Product mastery gives you:
 <div class="content-section">
 <h3>📦 Our Two Main Packages</h3>
 <div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0jcOsGHeo0o" title="Bonus: E-commerce Workflow (Winning Product + Store + Marketing)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0jcOsGHeo0o?rel=0&modestbranding=1" title="Bonus: E-commerce Workflow (Winning Product + Store + Marketing)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Bonus: E-commerce Workflow (Winning Product + Store + Marketing)</strong></div>
 </div>
 <img src="images/sales_training_packages_comparison_1768034618922.png" alt="Premium vs Enterprise" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
@@ -894,7 +894,7 @@ Product mastery gives you:
 const task4Content = `
 <h2>📚 TASK 4: LEAD QUALIFICATION</h2>
 <div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hx39swDdyx0" title="Types of Customers + Brief Handling + Market Research" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hx39swDdyx0?rel=0&modestbranding=1" title="Types of Customers + Brief Handling + Market Research" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Types of Customers + Brief Handling + Market Research</strong></div>
 </div>
 
@@ -1154,7 +1154,7 @@ graph TD
 const task5Content = `
 <h2>📚 TASK 5: RESPONSE TEMPLATES</h2>
 <div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/w2KCPqb_3A4" title="Client Centric Research for Effective Sales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/w2KCPqb_3A4?rel=0&modestbranding=1" title="Client Centric Research for Effective Sales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Client Centric Research for Effective Sales</strong></div>
 </div>
 
