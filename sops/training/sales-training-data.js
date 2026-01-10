@@ -149,7 +149,7 @@ const task1Content = `
 
 <div class="content-section">
 <h3>👤 The Two Types of People</h3>
-<img src="/sales_training_mindset_paths_1768034224092.png" alt="Tourist vs Student Mindset" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
+<img src="images/sales_training_mindset_paths_1768034224092.png" alt="Tourist vs Student Mindset" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
 <tr style="background: rgba(239, 68, 68, 0.2);">
 <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚶 Type 1: The Tourist</strong></td>
@@ -181,7 +181,7 @@ const task1Content = `
 
 <div class="content-section">
 <h3>💡 Lesson 1: You Are Not Selling — You Are Solving</h3>
-<img src="/sales_training_doctor_analogy_1768034244326.png" alt="Selling is Solving" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
+<img src="images/sales_training_doctor_analogy_1768034244326.png" alt="Selling is Solving" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <p>The biggest mistake new salespeople make is thinking their job is to "convince" people to buy. <strong>Wrong.</strong></p>
 <div class="highlight-box">
 <strong>Your Real Job:</strong> Find people with problems and offer them solutions.
@@ -460,7 +460,7 @@ const task2Content = `
 
 <div class="content-section">
 <h3>🚀 Our Origin Story</h3>
-<img src="/sales_training_origin_timeline_1768034412075.png" alt="Origin Timeline" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
+<img src="images/sales_training_origin_timeline_1768034412075.png" alt="Origin Timeline" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <p>Digital Heroes didn't start as an agency. It started as a mission.</p>
 <div class="story-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
     <h4 style="color: #10B981; margin-top: 0;">From Freelancer to Empire (2018-Present)</h4>
@@ -483,7 +483,7 @@ const task2Content = `
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/WK5xbqnhV2M" title="Sales SOP Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Sales SOP Overview</strong></div>
 </div>
-<img src="/sales_training_ecosystem_diagram_1768034440322.png" alt="Digital Heroes Ecosystem" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
+<img src="images/sales_training_ecosystem_diagram_1768034440322.png" alt="Digital Heroes Ecosystem" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <p>We are not just a service provider. We are a vertically integrated ecosystem:</p>
 <div class="highlight-box" style="background: transparent; border: none; padding: 0;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
@@ -674,7 +674,7 @@ Product mastery gives you:
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/0jcOsGHeo0o" title="Bonus: E-commerce Workflow (Winning Product + Store + Marketing)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Bonus: E-commerce Workflow (Winning Product + Store + Marketing)</strong></div>
 </div>
-<img src="/sales_training_packages_comparison.png" alt="Premium vs Enterprise" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
+<img src="images/sales_training_packages_comparison_1768034618922.png" alt="Premium vs Enterprise" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1);">
 <p>We keep it simple: <strong>two core packages</strong> that cover 90% of client needs.</p>
 
 <div class="highlight-box" style="background: rgba(99, 102, 241, 0.2); border-color: #6366F1;">
