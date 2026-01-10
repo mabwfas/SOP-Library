@@ -371,13 +371,21 @@ function showCertificate() {
         ">
             <!-- Close Button -->
             <button onclick="closeCertificate()" style="
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                background: transparent;
-                border: none;
-                color: #94A3B8;
-                font-size: 24px;
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                background: rgba(0,0,0,0.8);
+                border: 1px solid rgba(255,255,255,0.2);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                color: #F8FAFC;
+                font-size: 20px;
+                cursor: pointer;
+                z-index: 1001;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 cursor: pointer;
             " class="no-print">✕</button>
             
