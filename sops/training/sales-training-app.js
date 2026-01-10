@@ -531,6 +531,16 @@ function showCertificate() {
         printStyles.id = 'printStyles';
         printStyles.innerHTML = `
             @media print {
+                @page {
+                    size: A4 portrait;
+                    margin: 0.5in;
+                }
+                html, body {
+                    height: auto !important;
+                    overflow: visible !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
                 body * {
                     visibility: hidden;
                 }
@@ -538,12 +548,14 @@ function showCertificate() {
                     visibility: visible;
                 }
                 #certificateModal {
-                    position: absolute;
+                    position: fixed;
                     left: 0;
                     top: 0;
                     width: 100%;
+                    height: auto;
                     background: white !important;
                     padding: 0 !important;
+                    overflow: visible !important;
                 }
                 #certificateContent {
                     background: white !important;
@@ -552,28 +564,36 @@ function showCertificate() {
                     box-shadow: none !important;
                     max-width: 100% !important;
                     width: 100% !important;
+                    padding: 30px !important;
+                    border-radius: 0 !important;
+                    page-break-inside: avoid !important;
+                    break-inside: avoid !important;
                 }
                 #certificateContent h1,
                 #certificateContent h2,
                 #certificateContent h3,
                 #certificateContent div,
-                #certificateContent p {
+                #certificateContent p,
+                #certificateContent span {
                     color: #1e293b !important;
                     -webkit-text-fill-color: #1e293b !important;
                 }
                 #certificateContent h1 {
                     background: none !important;
+                    color: #2DD4BF !important;
                     -webkit-text-fill-color: #2DD4BF !important;
+                    font-size: 2em !important;
+                }
+                #certificateContent h2 {
+                    font-size: 1.5em !important;
                 }
                 #certificateContent h3 {
                     color: #2DD4BF !important;
                     -webkit-text-fill-color: #2DD4BF !important;
+                    font-size: 1.2em !important;
                 }
                 .no-print {
                     display: none !important;
-                }
-                [contenteditable] {
-                    border-bottom-color: #2DD4BF !important;
                 }
             }
         `;
