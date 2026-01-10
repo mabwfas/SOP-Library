@@ -5,11 +5,17 @@ let currentTask = 0;
 let currentQuestion = 0;
 let userAnswers = [];
 let progress = JSON.parse(localStorage.getItem('salesTrainingProgress')) || { completedTasks: [], currentTask: 1 };
+let traineeName = localStorage.getItem('salesTraineeName') || '';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     renderTasksList();
     updateProgressBar();
+
+    // Show name prompt if not set
+    if (!traineeName) {
+        showNamePrompt();
+    }
 });
 
 // Render Tasks List
@@ -418,8 +424,8 @@ function showCertificate() {
                     display: inline-block;
                     margin: 15px 0 25px 0;
                     min-width: 300px;
-                " contenteditable="true" class="no-print-edit">
-                    [Enter Your Name]
+                ">
+                    ${traineeName || 'Sales Executive'}
                 </div>
                 
                 <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 25px;">
@@ -451,14 +457,14 @@ function showCertificate() {
             ">
                 <div style="text-align: center;">
                     <div style="
-                        width: 180px;
+                        width: 200px;
                         border-bottom: 2px solid rgba(45, 212, 191, 0.4);
                         padding-bottom: 8px;
                         margin-bottom: 8px;
                         color: #F8FAFC;
                         font-weight: 600;
-                    ">Digital Heroes</div>
-                    <div style="color: #94A3B8; font-size: 0.85em;">Authorized Signature</div>
+                    ">Anurag Singh</div>
+                    <div style="color: #94A3B8; font-size: 0.85em;">Operations Head, Digital Heroes</div>
                 </div>
                 
                 <div style="text-align: center;">
@@ -478,6 +484,22 @@ function showCertificate() {
                         font-weight: 600;
                     ">${formattedDate}</div>
                     <div style="color: #94A3B8; font-size: 0.85em;">Date of Completion</div>
+                </div>
+            </div>
+            
+            <!-- Certificate Code -->
+            <div style="text-align: center; margin-top: 30px;">
+                <div style="
+                    display: inline-block;
+                    background: rgba(45, 212, 191, 0.1);
+                    border: 1px solid rgba(45, 212, 191, 0.3);
+                    border-radius: 8px;
+                    padding: 12px 25px;
+                ">
+                    <span style="color: #94A3B8; font-size: 0.85em;">Certificate ID: </span>
+                    <span style="color: #2DD4BF; font-weight: 700; font-family: monospace; letter-spacing: 0.1em;">
+                        DH-SALES-${Date.now().toString(36).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}
+                    </span>
                 </div>
             </div>
             
@@ -570,4 +592,107 @@ function closeCertificate() {
 // Print Certificate
 function printCertificate() {
     window.print();
+}
+
+// Show Name Prompt Modal
+function showNamePrompt() {
+    const modal = document.createElement('div');
+    modal.id = 'namePromptModal';
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    `;
+
+    modal.innerHTML = `
+        <div style="
+            width: 500px;
+            max-width: 100%;
+            background: linear-gradient(145deg, #0f172a, #1e293b);
+            border: 2px solid #2DD4BF;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 0 60px rgba(45, 212, 191, 0.3);
+        ">
+            <div style="font-size: 4em; margin-bottom: 20px;">🎓</div>
+            <h1 style="
+                font-size: 1.8em;
+                color: #F8FAFC;
+                margin-bottom: 10px;
+            ">Welcome to Sales Training</h1>
+            <p style="color: #94A3B8; margin-bottom: 30px;">
+                Digital Heroes Certification Program
+            </p>
+            
+            <div style="text-align: left; margin-bottom: 25px;">
+                <label style="color: #94A3B8; font-size: 0.9em; display: block; margin-bottom: 8px;">
+                    Enter Your Full Name
+                </label>
+                <input type="text" id="traineeNameInput" placeholder="e.g. John Smith" style="
+                    width: 100%;
+                    padding: 15px 20px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(45, 212, 191, 0.3);
+                    border-radius: 10px;
+                    color: #F8FAFC;
+                    font-size: 1.1em;
+                    outline: none;
+                " onfocus="this.style.borderColor='#2DD4BF'" onblur="this.style.borderColor='rgba(45, 212, 191, 0.3)'">
+            </div>
+            
+            <button onclick="saveTraineeName()" style="
+                background: linear-gradient(135deg, #2DD4BF, #06B6D4);
+                color: #000;
+                font-weight: 700;
+                padding: 16px 40px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                font-size: 1.1em;
+                width: 100%;
+            ">
+                🚀 Start Training
+            </button>
+            
+            <p style="color: #64748B; font-size: 0.8em; margin-top: 20px;">
+                Your name will appear on your completion certificate
+            </p>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    // Focus input after a small delay
+    setTimeout(() => {
+        document.getElementById('traineeNameInput').focus();
+    }, 100);
+}
+
+// Save Trainee Name
+function saveTraineeName() {
+    const input = document.getElementById('traineeNameInput');
+    const name = input.value.trim();
+
+    if (name.length < 2) {
+        input.style.borderColor = '#EF4444';
+        input.placeholder = 'Please enter your name';
+        return;
+    }
+
+    traineeName = name;
+    localStorage.setItem('salesTraineeName', name);
+
+    const modal = document.getElementById('namePromptModal');
+    if (modal) {
+        modal.remove();
+    }
 }
