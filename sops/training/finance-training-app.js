@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTasksList();
     updateProgressBar();
 
+    // Auto-load current task
+    if (typeof progress !== 'undefined' && progress.currentTask > 0) {
+        // Ensure functions are defined
+        if (typeof openTask === 'function') {
+            openTask(progress.currentTask - 1);
+        }
+    }
+
     // Show name prompt if not set
     if (!traineeName) {
         showNamePrompt();
@@ -278,6 +286,10 @@ function showResults() {
     });
 
     const passed = correct === totalQuestions;
+    
+    if (passed && window.confetti) {
+        window.confetti.burst(window.innerWidth / 2, window.innerHeight / 2);
+    }
 
     let html = `
         <div class="task-view-header">
@@ -336,6 +348,11 @@ function resetProgress() {
 
 // Show Certificate Modal
 function showCertificate() {
+    if (window.confetti) {
+        window.confetti.burst(window.innerWidth / 2, window.innerHeight / 2);
+        setTimeout(() => window.confetti.burst(window.innerWidth / 4, window.innerHeight / 2), 500);
+        setTimeout(() => window.confetti.burst(3 * window.innerWidth / 4, window.innerHeight / 2), 1000);
+    }
     const today = new Date();
     const formattedDate = today.toLocaleDateString('en-US', {
         year: 'numeric',

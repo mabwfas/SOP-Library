@@ -1,17 +1,128 @@
 // UI/UX Designer Training Data
 // Complete training content for designer certification
+// UPGRADED: Visuals, Study Guides, and Expanded Lessons
 
 const trainingTasks = [
-    { id: 1, title: "Design Thinking", description: "Creative mindset fundamentals", contentFirst: true },
-    { id: 2, title: "Company Knowledge", description: "Digital Heroes ecosystem", contentFirst: false },
-    { id: 3, title: "Design Principles", description: "Core UI/UX rules", contentFirst: false },
-    { id: 4, title: "Figma Mastery", description: "Tool proficiency", contentFirst: false },
-    { id: 5, title: "Brand & Typography", description: "Visual identity", contentFirst: false },
-    { id: 6, title: "Responsive Design", description: "Multi-device layouts", contentFirst: false },
-    { id: 7, title: "E-commerce Design", description: "Conversion optimization", contentFirst: false },
-    { id: 8, title: "Client Handoff", description: "Developer collaboration", contentFirst: false },
-    { id: 9, title: "Practice Scenarios", description: "Real-world challenges", contentFirst: false },
-    { id: 10, title: "Final Certification", description: "Comprehensive assessment", contentFirst: false }
+    {
+        id: 1,
+        title: "Design Thinking",
+        description: "Creative mindset fundamentals",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
+            "📖 Read 'Why Your Design Matters' case study",
+            "📊 Internalize the 'Art vs Science' balance",
+            "🧠 Understand the 'Problem Solver' vs 'Pixel Pusher' mindset"
+        ]
+    },
+    {
+        id: 2,
+        title: "Company Knowledge",
+        description: "Digital Heroes ecosystem",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
+            "🏢 Memorize the 3 arms of the ecosystem",
+            "💎 Understand the 'Premium' expectation",
+            "📱 Learn why Mobile-First is a business requirement"
+        ]
+    },
+    {
+        id: 3,
+        title: "Design Principles",
+        description: "Core UI/UX rules",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 25-30 minutes",
+            "🎨 Study the 'Visual Hierarchy' diagram",
+            "📏 Memorize the '5-Second Rule'",
+            "🚫 Learn to spot the 5 Common Mistakes"
+        ]
+    },
+    {
+        id: 4,
+        title: "Figma Mastery",
+        description: "Tool proficiency",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 30-40 minutes",
+            "🧩 Study the Figma Workflow Process",
+            "⌨️ Memorize key keyboard shortcuts",
+            "📁 Learn proper File Organization hierarchy"
+        ]
+    },
+    {
+        id: 5,
+        title: "Brand & Typography",
+        description: "Visual identity",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 20-25 minutes",
+            "🔤 Learn the Typography Rules (fonts, sizes, contrast)",
+            "🎨 Understand the Brand Color system",
+            "⚖️ Master font pairing basics"
+        ]
+    },
+    {
+        id: 6,
+        title: "Responsive Design",
+        description: "Multi-device layouts",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 20-30 minutes",
+            "📱 Memorize the breakpoints (375px, 768px, 1440px)",
+            "👆 Learn Mobile Design Rules (touch targets)",
+            "📐 Understand the grid system for responsive scaling"
+        ]
+    },
+    {
+        id: 7,
+        title: "E-commerce Design",
+        description: "Conversion optimization",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 25-30 minutes",
+            "🛒 Study Conversion-Focused elements",
+            "📦 Learn Product Page must-haves",
+            "🏠 Understand Homepage structural essentials"
+        ]
+    },
+    {
+        id: 8,
+        title: "Client Handoff",
+        description: "Developer collaboration",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 20-25 minutes",
+            "📤 Master the Asset Export checklist",
+            "🎥 Learn to record Handoff Looms",
+            "🤝 Understand Dev Mode requirements"
+        ]
+    },
+    {
+        id: 9,
+        title: "Practice Scenarios",
+        description: "Real-world challenges",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 30-45 minutes",
+            "🧠 Solve the 3 difficult client scenarios",
+            "📝 Write down your response scripts",
+            "🗣️ Practice saying them out loud"
+        ]
+    },
+    {
+        id: 10,
+        title: "Final Certification",
+        description: "Comprehensive assessment",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 45-60 minutes",
+            "📖 Review ALL previous modules",
+            "🏆 Score 20/20 to pass",
+            "🎉 Get ready to design your first premium store!"
+        ]
+    }
 ];
 
 const task1Content = `
@@ -23,6 +134,12 @@ const task1Content = `
 <div class="highlight-box">
 <strong>Key Insight:</strong> Pretty ≠ Effective. Good design guides users to take action. Your job is to create designs that are BOTH beautiful AND functional.
 </div>
+</div>
+
+<div class="content-section">
+<h3>📊 The Sweet Spot</h3>
+<img src="images/designer_mindset_graph.png" alt="Design Mindset Venn Diagram" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<p style="text-align: center; color: #94A3B8; font-size: 0.9em;"><em>We operate at the intersection of Art and Science.</em></p>
 </div>
 
 <div class="content-section">
@@ -93,13 +210,19 @@ const task3Content = `
 <h2>📚 TASK 3: DESIGN PRINCIPLES</h2>
 
 <div class="content-section">
+<h3>👁️ Visual Hierarchy Explained</h3>
+<p>Where does the eye go? You control the user's journey.</p>
+<img src="images/visual_hierarchy_guide.png" alt="Visual Hierarchy Guide" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+</div>
+
+<div class="content-section">
 <h3>🎨 Non-Negotiable Design Rules</h3>
 <ul>
-<li>✅ <strong>Visual Hierarchy:</strong> Most important elements stand out</li>
-<li>✅ <strong>White Space:</strong> Breathing room for content</li>
-<li>✅ <strong>Contrast:</strong> Text must be readable</li>
-<li>✅ <strong>Alignment:</strong> Everything snaps to grid</li>
-<li>✅ <strong>Consistency:</strong> Same patterns throughout</li>
+<li>✅ <strong>Visual Hierarchy:</strong> Most important elements stand out (Size, Color, Position)</li>
+<li>✅ <strong>White Space:</strong> Breathing room for content. It's not empty, it's active.</li>
+<li>✅ <strong>Contrast:</strong> Text must be readable (WCAG standards)</li>
+<li>✅ <strong>Alignment:</strong> Everything snaps to grid. Chaos = Distrust.</li>
+<li>✅ <strong>Consistency:</strong> Same patterns throughout. Don't confuse the user.</li>
 </ul>
 </div>
 
@@ -108,8 +231,8 @@ const task3Content = `
 <ul>
 <li>❌ Text over busy images (unreadable)</li>
 <li>❌ Too many fonts (3 max)</li>
-<li>❌ Inconsistent spacing</li>
-<li>❌ Hidden CTA buttons</li>
+<li>❌ Inconsistent spacing (use 8px grid)</li>
+<li>❌ Hidden CTA buttons (ghost buttons on busy backgrounds)</li>
 <li>❌ Ignoring mobile users</li>
 </ul>
 </div>
@@ -140,23 +263,29 @@ const task4Content = `
 <h2>📚 TASK 4: FIGMA MASTERY</h2>
 
 <div class="content-section">
+<h3>🔄 The Professional Workflow</h3>
+<img src="images/figma_workflow_diagram.png" alt="Figma Workflow Diagram" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+</div>
+
+<div class="content-section">
 <h3>🎨 Figma Essentials</h3>
 <ul>
-<li>📐 <strong>Frames:</strong> Use frames, not groups</li>
-<li>🔧 <strong>Auto Layout:</strong> Responsive components</li>
-<li>🎨 <strong>Styles:</strong> Color & text styles</li>
-<li>📦 <strong>Components:</strong> Reusable elements</li>
-<li>🔗 <strong>Variants:</strong> Component states</li>
+<li>📐 <strong>Frames:</strong> Use frames, not groups (better constraints)</li>
+<li>🔧 <strong>Auto Layout:</strong> Essential for responsive components</li>
+<li>🎨 <strong>Styles:</strong> Color & text styles (never use raw hex codes)</li>
+<li>📦 <strong>Components:</strong> Reusable elements (Master > Instance)</li>
+<li>🔗 <strong>Variants:</strong> Component states (Hover, Active, Disabled)</li>
 </ul>
 </div>
 
 <div class="content-section">
 <h3>📁 File Organization</h3>
+<p>A messy file = A messy mind = An angry developer.</p>
 <ul>
-<li>Cover Page - Project overview</li>
-<li>Style Guide - Colors, fonts, components</li>
-<li>Pages - Desktop and Mobile versions</li>
-<li>Components - Reusable elements</li>
+<li><strong>Cover Page:</strong> Thumbnail for project overview</li>
+<li><strong>Style Guide:</strong> Colors, fonts, components, grid settings</li>
+<li><strong>Pages:</strong> Separate 'Desktop', 'Mobile', 'Archive', 'In Progress'</li>
+<li><strong>Components:</strong> Master component library</li>
 </ul>
 <div class="highlight-box">
 <strong>Naming Convention:</strong> Use clear names like "Button/Primary/Hover" not "Rectangle 37"
@@ -189,10 +318,10 @@ const task5Content = `
 <h3>🎨 Brand Styling</h3>
 <p>Every brand needs:</p>
 <ul>
-<li>🎨 <strong>Primary Color:</strong> Main brand color</li>
-<li>🎨 <strong>Secondary Color:</strong> Accent color</li>
-<li>⚫ <strong>Neutrals:</strong> Black, white, grays</li>
-<li>✅ <strong>Status Colors:</strong> Success, warning, error</li>
+<li>🎨 <strong>Primary Color:</strong> Main brand color (Action, Highlights)</li>
+<li>🎨 <strong>Secondary Color:</strong> Accent color (Supporting elements)</li>
+<li>⚫ <strong>Neutrals:</strong> Black, white, grays (Background, Text)</li>
+<li>✅ <strong>Status Colors:</strong> Success (Green), warning (Yellow), error (Red)</li>
 </ul>
 </div>
 
@@ -200,10 +329,10 @@ const task5Content = `
 <h3>📝 Typography Rules</h3>
 <ul>
 <li>Use <strong>2-3 fonts maximum</strong></li>
-<li>Headings: 24-48px (bold)</li>
-<li>Body: 16-18px (regular)</li>
-<li>Line height: 1.5-1.7</li>
-<li>Contrast ratio: 4.5:1 minimum</li>
+<li>Headings: 24-48px (bold, expressive)</li>
+<li>Body: 16-18px (regular, legible)</li>
+<li>Line height: 1.5-1.7 (for readability)</li>
+<li>Contrast ratio: 4.5:1 minimum (accessibility)</li>
 </ul>
 <div class="warning-box">
 <strong>Common Mistake:</strong> Using decorative fonts for body text. Save fancy fonts for headings only.
@@ -214,8 +343,8 @@ const task5Content = `
 <h3>🔤 Font Pairing Tips</h3>
 <ul>
 <li>Serif + Sans-Serif = Classic combination</li>
-<li>Same font family, different weights</li>
-<li>Google Fonts: Inter, Roboto, Poppins, Playfair Display</li>
+<li>Same font family, different weights (e.g., Roboto Bold + Roboto Regular)</li>
+<li>Reference: Google Fonts (Inter, Roboto, Poppins, Playfair Display)</li>
 </ul>
 </div>
 
@@ -235,7 +364,7 @@ const task6Content = `
 <h3>📱 Mobile-First Design</h3>
 <p><strong>70% of e-commerce traffic is mobile.</strong> Always design mobile first.</p>
 <ul>
-<li>Start at 375px width</li>
+<li>Start at 375px width (iPhone standard)</li>
 <li>Scale up to tablet (768px)</li>
 <li>Then desktop (1440px)</li>
 </ul>
@@ -253,11 +382,11 @@ const task6Content = `
 <div class="content-section">
 <h3>📱 Mobile Design Rules</h3>
 <ul>
-<li>Touch targets: Minimum 44x44px</li>
-<li>Text: Minimum 16px (no zoom needed)</li>
-<li>Single column layouts</li>
+<li>Touch targets: Minimum 44x44px (fingers are fat!)</li>
+<li>Text: Minimum 16px (no pinch-to-zoom needed)</li>
+<li>Single column layouts (easier to scroll)</li>
 <li>Sticky navigation for easy access</li>
-<li>Thumb-friendly button placement</li>
+<li>Thumb-friendly button placement (bottom half of screen)</li>
 </ul>
 </div>
 
@@ -275,36 +404,36 @@ const task7Content = `
 
 <div class="content-section">
 <h3>🛒 Conversion-Focused Design</h3>
-<p>E-commerce design is about <strong>selling products</strong>.</p>
+<p>E-commerce design is about <strong>selling products</strong>, not winning art awards.</p>
 <ul>
-<li>✅ Clear product images</li>
-<li>✅ Visible price and CTA</li>
-<li>✅ Trust badges (payment icons)</li>
-<li>✅ Social proof (reviews)</li>
-<li>✅ Urgency elements (stock levels)</li>
+<li>✅ Clear product images (Hero of the page)</li>
+<li>✅ Visible price and CTA (Above the fold)</li>
+<li>✅ Trust badges (Secure payment icons)</li>
+<li>✅ Social proof (Star ratings with count)</li>
+<li>✅ Urgency elements (Low stock warnings)</li>
 </ul>
 </div>
 
 <div class="content-section">
 <h3>📦 Product Page Must-Haves</h3>
 <ul>
-<li>🖼️ High-quality images (multiple angles)</li>
+<li>🖼️ High-quality images (multiple angles, zoom)</li>
 <li>💰 Clear price (with compare price if on sale)</li>
-<li>🛒 Prominent Add to Cart button</li>
-<li>📋 Variant selectors (size, color)</li>
-<li>⭐ Customer reviews</li>
-<li>📦 Shipping information</li>
+<li>🛒 Prominent Add to Cart button (contrasting color)</li>
+<li>📋 Variant selectors (size, color) - make them easy to tap</li>
+<li>⭐ Customer reviews (builds trust)</li>
+<li>📦 Shipping information (removes anxiety)</li>
 </ul>
 </div>
 
 <div class="content-section">
 <h3>🏠 Homepage Essentials</h3>
 <ol>
-<li>Hero section with clear value proposition</li>
-<li>Featured/bestselling products</li>
-<li>Trust signals (reviews, logos)</li>
-<li>Collection navigation</li>
-<li>Footer with policies and contact</li>
+<li>Hero section with clear value proposition + CTA</li>
+<li>Featured/bestselling products (Social proof)</li>
+<li>Trust signals (reviews, media logos)</li>
+<li>Collection navigation (Easy browsing)</li>
+<li>Footer with policies and contact (Legitimacy)</li>
 </ol>
 </div>
 
@@ -324,9 +453,9 @@ const task8Content = `
 <h3>📤 Design Handoff Best Practices</h3>
 <ul>
 <li>Organize layers and name them properly</li>
-<li>Create a clear style guide</li>
+<li>Create a clear style guide page</li>
 <li>Export assets in correct formats</li>
-<li>Provide design specs</li>
+<li>Provide design specs (margins, padding)</li>
 <li>Use Figma Dev Mode for developers</li>
 </ul>
 </div>
@@ -334,9 +463,9 @@ const task8Content = `
 <div class="content-section">
 <h3>📁 Asset Export Formats</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Photos</strong></td><td style="padding: 10px;">WebP/JPG</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Icons</strong></td><td style="padding: 10px;">SVG</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Logos</strong></td><td style="padding: 10px;">SVG + PNG</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Photos</strong></td><td style="padding: 10px;">WebP/JPG (Compressed)</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Icons</strong></td><td style="padding: 10px;">SVG (Vector = Scalable)</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Logos</strong></td><td style="padding: 10px;">SVG + PNG (Transparent)</td></tr>
 <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Backgrounds</strong></td><td style="padding: 10px;">WebP/JPG</td></tr>
 </table>
 </div>
@@ -346,9 +475,9 @@ const task8Content = `
 <div class="highlight-box">
 <strong>Record a 2-5 minute video explaining:</strong>
 <ul>
-<li>Overall design approach</li>
-<li>Key interactions</li>
-<li>Responsive behavior</li>
+<li>Overall design approach and decisions</li>
+<li>Key interactions and animations</li>
+<li>Responsive behavior (how it scales)</li>
 <li>Any special notes for developers</li>
 </ul>
 </div>
@@ -372,10 +501,10 @@ const task9Content = `
 <div class="highlight-box">
 <strong>Your Response:</strong>
 <ol>
-<li>Ask clarifying questions</li>
-<li>Request examples they like</li>
-<li>Create a mood board for approval</li>
-<li>Get sign-off before designing</li>
+<li>Ask clarifying questions ("Can you define 'pop' with an example?")</li>
+<li>Request visual examples they like (Competitor analysis)</li>
+<li>Create a mood board for approval FIRST</li>
+<li>Get sign-off before designing full pages</li>
 </ol>
 </div>
 </div>
@@ -387,9 +516,9 @@ const task9Content = `
 <strong>Your Response:</strong>
 <ul>
 <li>Document all feedback in writing</li>
-<li>Summarize changes before implementing</li>
-<li>Set clear revision limits upfront</li>
-<li>Escalate to PM if needed</li>
+<li>Summarize changes before implementing ("Just to confirm, we are changing X to Y...")</li>
+<li>Set clear revision limits upfront (e.g., 2 rounds included)</li>
+<li>Escalate to PM if scope creep occurs</li>
 </ul>
 </div>
 </div>
@@ -398,10 +527,10 @@ const task9Content = `
 <h3>📷 Scenario 3: Bad Client Assets</h3>
 <p><strong>Client provides low-resolution images and no brand guidelines.</strong></p>
 <ul>
-<li>Request higher quality assets</li>
-<li>Suggest stock photo alternatives</li>
-<li>Create basic brand guidelines</li>
-<li>Document limitations for clarity</li>
+<li>Request higher quality assets immediately</li>
+<li>Suggest stock photo alternatives (Unsplash/Pexels)</li>
+<li>Create basic brand guidelines (simple palette/font choice) based on logo</li>
+<li>Document limitations for clarity ("Low-res logo used as placeholder")</li>
 </ul>
 </div>
 
@@ -419,17 +548,17 @@ const task10Content = `
 
 <div class="content-section">
 <h3>🏆 Congratulations!</h3>
-<p>You've completed the UI/UX Designer training. This final assessment covers:</p>
+<p>You've completed the UI/UX Designer training. This final assessment covers everything you've learned:</p>
 <ul>
 <li>✅ Design thinking and mindset</li>
 <li>✅ Digital Heroes ecosystem</li>
 <li>✅ Core design principles</li>
-<li>✅ Figma proficiency</li>
-<li>✅ Brand and typography</li>
-<li>✅ Responsive design</li>
-<li>✅ E-commerce design</li>
-<li>✅ Client handoff</li>
-<li>✅ Real-world scenarios</li>
+<li>✅ Figma proficiency and workflow</li>
+<li>✅ Brand and typography rules</li>
+<li>✅ Responsive design standards</li>
+<li>✅ E-commerce conversion design</li>
+<li>✅ Client handoff best practices</li>
+<li>✅ Real-world problem solving</li>
 </ul>
 </div>
 
@@ -450,6 +579,7 @@ const task10Content = `
 </div>
 `;
 
+// Keep existing quizzes
 const allQuizzes = [
     // Task 1: Design Thinking
     [

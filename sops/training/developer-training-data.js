@@ -1,17 +1,128 @@
 // Shopify Developer Training Data
 // Complete training content for developer certification
+// UPGRADED: Visuals, Study Guides, and Expanded Lessons
 
 const trainingTasks = [
-    { id: 1, title: "Developer Mindset", description: "Code quality fundamentals", contentFirst: true },
-    { id: 2, title: "Company Knowledge", description: "Digital Heroes ecosystem", contentFirst: false },
-    { id: 3, title: "Non-Negotiable Standards", description: "Critical code rules", contentFirst: false },
-    { id: 4, title: "Theme Development", description: "Shopify Liquid basics", contentFirst: false },
-    { id: 5, title: "Speed Optimization", description: "PageSpeed mastery", contentFirst: false },
-    { id: 6, title: "Quality Assurance", description: "Testing protocols", contentFirst: false },
-    { id: 7, title: "Debugging & Fixes", description: "Problem-solving skills", contentFirst: false },
-    { id: 8, title: "Client Delivery", description: "Handoff best practices", contentFirst: false },
-    { id: 9, title: "Practice Scenarios", description: "Real-world challenges", contentFirst: false },
-    { id: 10, title: "Final Certification", description: "Comprehensive assessment", contentFirst: false }
+    {
+        id: 1,
+        title: "Developer Mindset",
+        description: "Code quality fundamentals",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
+            "📖 Read 'The Store That Lost $50k/Day' case study",
+            "📊 Study the Revenue Impact Graph carefully",
+            "🧠 Internalize the 'Revenue Engineer' concept"
+        ]
+    },
+    {
+        id: 2,
+        title: "Company Knowledge",
+        description: "Digital Heroes ecosystem",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
+            "🏢 Understand the 3 arms of Digital Heroes",
+            "💎 Memorize Premium vs Enterprise package details",
+            "🔍 Watch the 'About Us' video on the main channel (optional)"
+        ]
+    },
+    {
+        id: 3,
+        title: "Non-Negotiable Standards",
+        description: "Critical code rules",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 20-25 minutes",
+            "🚨 Memorize the 4 Rules of Development",
+            "📱 Understand Mobile-First hierarchy (375px → 768px → 1440px)",
+            "⚡ Learn why Speed is non-negotiable"
+        ]
+    },
+    {
+        id: 4,
+        title: "Theme Development",
+        description: "Shopify Liquid basics",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 25-30 minutes",
+            "🎨 Study the Theme Architecture Diagram",
+            "💧 Review Liquid cheat sheet basics",
+            "📂 Memorize folder purposes (sections vs snippets)"
+        ]
+    },
+    {
+        id: 5,
+        title: "Speed Optimization",
+        description: "PageSpeed mastery",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 20-25 minutes",
+            "⚡ Learn the '1 Second = 7% Loss' rule",
+            "🖼️ Master Image Optimization techniques",
+            "🚫 Understand App impact on performance"
+        ]
+    },
+    {
+        id: 6,
+        title: "Quality Assurance",
+        description: "Testing protocols",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
+            "✅ Memorize the Pre-Submission Checklist",
+            "👀 Commit to the 'Fresh Eyes' rule",
+            "⚖️ Understand the Zero Tolerance Policy"
+        ]
+    },
+    {
+        id: 7,
+        title: "Debugging & Fixes",
+        description: "Problem-solving skills",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 20-30 minutes",
+            "🐛 Study the Debugging Workflow flowchart",
+            "🔧 Learn the 'Testing Trifecta'",
+            "💻 Practice using Browser Console (F12)"
+        ]
+    },
+    {
+        id: 8,
+        title: "Client Delivery",
+        description: "Handoff best practices",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 15-20 minutes",
+            "🎥 Learn how to record a Loom walkthrough",
+            "💾 Understand Version Control practices",
+            "🤔 Apply the 'Client Perspective Check'"
+        ]
+    },
+    {
+        id: 9,
+        title: "Practice Scenarios",
+        description: "Real-world challenges",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 30-45 minutes",
+            "🧠 Solve all 3 scenarios mentally first",
+            "📝 Write down your step-by-step plans",
+            "🔄 Compare with provided checklists"
+        ]
+    },
+    {
+        id: 10,
+        title: "Final Certification",
+        description: "Comprehensive assessment",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 45-60 minutes",
+            "📖 Review ALL previous tasks",
+            "🏆 Score 20/20 to pass",
+            "🎉 Get ready to build your first store!"
+        ]
+    }
 ];
 
 // Task 1: Developer Mindset
@@ -32,6 +143,12 @@ const task1Content = `
 <div class="highlight-box">
 <strong>🎯 The Lesson:</strong> Your code doesn't just need to "work." It needs to SELL. A 1-second delay in load time = 7% loss in conversions. Your job isn't just development — it's revenue generation through technical excellence.
 </div>
+</div>
+
+<div class="content-section">
+<h3>📊 Visualizing Impact</h3>
+<img src="images/developer_mindset_graph.png" alt="Developer Revenue Impact Graph" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<p style="text-align: center; color: #94A3B8; font-size: 0.9em;"><em>The exponential difference between an average coder and a Digital Hero.</em></p>
 </div>
 
 <div class="content-section">
@@ -174,7 +291,9 @@ const task4Content = `
 
 <div class="content-section">
 <h3>🎨 Shopify Theme Architecture</h3>
-<p>Every Shopify theme follows this structure:</p>
+<p>Understanding the folder structure is crucial for efficient development.</p>
+<img src="images/shopify_theme_architecture.png" alt="Shopify Theme Structure Diagram" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+
 <div class="highlight-box">
 <pre style="font-family: monospace; margin: 0;">
 /layout/          → Base templates (theme.liquid)
@@ -363,6 +482,11 @@ const task6Content = `
 // Task 7: Debugging & Fixes
 const task7Content = `
 <h2>📚 TASK 7: DEBUGGING & PROBLEM SOLVING</h2>
+
+<div class="content-section">
+<h3>🧠 The Debugging Protocol</h3>
+<img src="images/debugging_workflow.png" alt="Debugging Protocol Flowchart" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+</div>
 
 <div class="content-section">
 <h3>🐌 Scenario: Site is Slow</h3>
@@ -601,7 +725,7 @@ const task10Content = `
 </div>
 `;
 
-// Quiz Questions for all tasks
+// Quiz Questions (Keep existing quizzes as they are extensive and accurate)
 const allQuizzes = [
     // Task 1: Developer Mindset
     [
@@ -700,7 +824,7 @@ const allQuizzes = [
         { q: "Loom walkthrough reduces back-and-forth by:", o: ["20%", "50%", "80%", "100%"], c: 2 },
         { q: "Before submitting, ask yourself:", o: ["Is it fast enough?", "Would I be happy if I paid for this?", "Is the code clean?", "Will client understand?"], c: 1 },
         { q: "Version control means:", o: ["Deleting old versions", "Always saving versions (v1, v2, v3)", "Only keeping latest", "Using Git only"], c: 1 },
-        { q: "Before major changes, you should:", o: ["Just make changes", "Know how to undo in 5 minutes", "Inform client", "Wait for approval"], c: 1 },
+        { q: "Before major changes, you should:", o: ["Just make changes", "Know how to undo in 5 minutes", "Inform client", "Wait a day"], c: 1 },
         { q: "'It works on my machine' is:", o: ["Acceptable", "NOT acceptable", "A valid excuse", "Technical truth"], c: 1 },
         { q: "Theme backups should be made:", o: ["Monthly", "Weekly", "Before major changes", "Never"], c: 2 },
         { q: "For every major delivery, record a:", o: ["30-second clip", "2-minute Loom", "10-minute tutorial", "Audio message"], c: 1 },
