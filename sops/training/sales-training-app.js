@@ -53,15 +53,19 @@ function openTask(index) {
     currentTask = index;
     const task = trainingTasks[index];
     const container = document.getElementById('taskView');
-    const tasksList = document.getElementById('tasksList');
 
-    tasksList.style.display = 'none';
-    container.classList.add('active');
+    // UI Switching
+    document.getElementById('welcomeScreen').style.display = 'none';
+    container.style.display = 'block';
+
+    // Highlight in sidebar - Update visual state without re-rendering list
+    const cards = document.querySelectorAll('.task-card');
+    cards.forEach(card => card.classList.remove('current'));
+    if (cards[index]) cards[index].classList.add('current');
 
     // Render task content
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="closeTask()">← Back to Tasks</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
     `;
@@ -129,6 +133,11 @@ function openTask(index) {
     }
 
     container.innerHTML = html;
+
+    // Render diagrams if any
+    if (window.renderMermaid) {
+        window.renderMermaid();
+    }
 }
 
 // DEV MODE: Skip task without quiz (REMOVE THIS FOR PRODUCTION)
@@ -150,10 +159,10 @@ function devSkipTask(taskIndex) {
     updateProgressBar();
 }
 
-// Close Task
+// Close Task (Reset to Welcome Screen)
 function closeTask() {
-    document.getElementById('taskView').classList.remove('active');
-    document.getElementById('tasksList').style.display = 'grid';
+    document.getElementById('taskView').style.display = 'none';
+    document.getElementById('welcomeScreen').style.display = 'flex';
 }
 
 // Start Quiz
@@ -185,7 +194,7 @@ function renderQuestion() {
 
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="closeTask()">← Exit Quiz</button>
+            <button class="back-btn" onclick="openTask(currentTask)">← Exit Quiz</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
         <div class="quiz-section">
@@ -258,7 +267,7 @@ function showResults() {
 
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="closeTask()">← Back to Tasks</button>
+            <button class="back-btn" onclick="openTask(currentTask)">← content</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
         <div class="quiz-results">
@@ -289,7 +298,7 @@ function showResults() {
                 </div>
             `;
         } else {
-            html += `<button class="nav-btn" onclick="closeTask(); renderTasksList(); updateProgressBar();">Continue to Task ${task.id + 1} →</button>`;
+            html += `<button class="nav-btn" onclick="openTask(${task.id}); renderTasksList(); updateProgressBar();">Continue to Task ${task.id + 1} →</button>`;
         }
     } else {
         html += `

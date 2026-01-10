@@ -635,6 +635,27 @@ const task3Content = `
 <h2>📚 TASK 3: PRODUCT MASTERY</h2>
 
 <div class="content-section">
+<h3>🎯 How to Choose the Right Package</h3>
+<p>Use this decision tree to determine the best package for your client:</p>
+<div class="mermaid">
+graph TD
+    Start[Start: Client Needs Analysis] --> Budget{Budget > $1,500?}
+    Budget -- Yes --> Complex{Complex Needs?}
+    Complex -- Yes --> Ent[👑 ENTERPRISE ($1,800)]
+    Complex -- No --> Prem[💎 PREMIUM ($1,200)]
+    Budget -- No --> Budget2{Budget > $1,000?}
+    Budget2 -- Yes --> Prem
+    Budget2 -- No --> Qual{Passes M.T.N.D.?}
+    Qual -- Yes --> MVP[🚀 MVP OPTION ($800)]
+    Qual -- No --> Disq[🚫 DISQUALIFY]
+    style Ent fill:#10B981,stroke:#059669
+    style Prem fill:#6366F1,stroke:#4F46E5
+    style MVP fill:#F59E0B,stroke:#D97706
+    style Disq fill:#EF4444,stroke:#DC2626
+</div>
+</div>
+
+<div class="content-section">
 <h3>🎯 Why Product Knowledge Matters</h3>
 <p><strong>You can't sell what you don't understand.</strong></p>
 <p>When a client asks about your services and you hesitate, stumble, or sound unsure — you've already lost them. They came to an expert. If the expert doesn't know their own products, why should the client trust them?</p>
@@ -871,6 +892,29 @@ const task4Content = `
 <h2>📚 TASK 4: LEAD QUALIFICATION</h2>
 
 <div class="content-section">
+<h3>📊 The M.T.N.D. Logic Flow</h3>
+<p>Follow this flow to qualify every single lead:</p>
+<div class="mermaid">
+graph TD
+    Lead[New Lead] --> Money{M: Money?}
+    Money -- Yes --> Time{T: Timeline?}
+    Money -- No --> Red1[🚩 Red Flag]
+    Time -- Yes --> Need{N: Need?}
+    Time -- No --> Red1
+    Need -- Yes --> Dec{D: Decision Maker?}
+    Need -- No --> Red1
+    Dec -- Yes --> Green[✅ QUALIFIED LEAD]
+    Dec -- No --> Red1
+    Red1 --> Count{Red Flags > 1?}
+    Count -- Yes --> Stop[🚫 DISQUALIFY]
+    Count -- No --> Caution[⚠️ CAUTION]
+    style Green fill:#10B981,stroke:#059669
+    style Stop fill:#EF4444,stroke:#DC2626
+    style Caution fill:#F59E0B,stroke:#D97706
+</div>
+</div>
+
+<div class="content-section">
 <h3>🎯 Why Qualification Matters</h3>
 <p>Not every person who messages you deserves your time. In fact, <strong>most don't.</strong></p>
 <p>A single bad client can cost you:</p>
@@ -1104,6 +1148,18 @@ const task5Content = `
 <h2>📚 TASK 5: RESPONSE TEMPLATES</h2>
 
 <div class="content-section">
+<h3>⚡ Impact of Speed on Sales</h3>
+<p>The probability of qualifying a lead drops by <strong>400%</strong> if you wait just 10 minutes vs 5 minutes.</p>
+<div class="mermaid">
+pie title Conversion Probability by Response Time
+    "0-30 Mins (High)" : 65
+    "30-60 Mins (Medium)" : 25
+    "1-4 Hours (Low)" : 8
+    "24+ Hours (Zero)" : 2
+</div>
+</div>
+
+<div class="content-section">
 <h3>⚡ Speed Wins Deals</h3>
 <p>On Fiverr and freelance platforms, <strong>first to respond wins 40% more conversions.</strong></p>
 <p>Why? Two reasons:</p>
@@ -1237,6 +1293,16 @@ What matters most to YOU in choosing a developer?"
 // Task 6 Content: Sales Psychology
 const task6Content = `
 <h2>📚 TASK 6: SALES PSYCHOLOGY</h2>
+
+<div class="content-section">
+<h3>🧠 The Golden Ratio of Sales</h3>
+<p>This is the single most violated rule in sales. Visualized:</p>
+<div class="mermaid">
+pie title Who Should Be Talking?
+    "Client (Listening Phase)" : 80
+    "You (Asking/Closing)" : 20
+</div>
+</div>
 
 <div class="content-section">
 <h3>🧠 The Foundation: 80/20 Rule</h3>
@@ -1383,6 +1449,29 @@ Your job: Make the <strong>pain of NOT buying</strong> greater than the <strong>
 // Task 7 Content: Objection Handling
 const task7Content = `
 <h2>📚 TASK 7: OBJECTION HANDLING</h2>
+
+<div class="content-section">
+<h3>🔄 The Objection Loop</h3>
+<p>Visualize objection handling not as a fight, but as a loop to bring them back to value:</p>
+<div class="mermaid">
+graph LR
+    Obj[Objection] --> Listen[👂 Listen 80/20]
+    Listen --> Identify{Identify Type}
+    Identify --> Price[Price]
+    Identify --> Trust[Trust]
+    Identify --> Timing[Timing]
+    Price --> ROI[Show ROI]
+    Trust --> Proof[Social Proof]
+    Timing --> Urgency[Urgency]
+    ROI --> Resolve{Resolved?}
+    Proof --> Resolve
+    Urgency --> Resolve
+    Resolve -- Yes --> Close[💰 Close]
+    Resolve -- No --> Loop[Loop Back]
+    style Obj fill:#EF4444,stroke:#DC2626
+    style Close fill:#10B981,stroke:#059669
+</div>
+</div>
 
 <div class="content-section">
 <h3>🎯 The Truth About Objections</h3>
@@ -1638,6 +1727,41 @@ Many salespeople lose deals by continuing to talk after the close. Don't explain
 // Task 9 Content: Practice Scenarios
 const task9Content = `
 <h2>📚 TASK 9: PRACTICE SCENARIOS</h2>
+
+<div class="content-section">
+<h3>📊 The Complete Sales Ecosystem</h3>
+<p>This is how every single interaction should flow, from first message to delivery:</p>
+<div class="mermaid">
+sequenceDiagram
+    participant C as Client
+    participant S as You (Sales)
+    participant T as Dev Team
+    
+    C->>S: 1. Inquiry (Msg)
+    S->>S: 2. Qualify (M.T.N.D.)
+    
+    alt Disqualified
+        S-->>C: Polite Decline
+    else Qualified
+        S->>C: 3. Response & Questions
+        C->>S: Answers
+        S->>C: 4. Presentation (Package)
+        
+        opt Objections
+            C-->>S: "Too expensive"
+            S->>C: 5. Handle Objection
+        end
+        
+        S->>C: 6. Close (Assumptive)
+        C->>S: "Yes, let's do it"
+        S->>C: Invoice & Onboarding
+        C->>S: Payment
+        S->>T: 7. Handoff (Docs)
+        T->>C: Delivery (14 Days)
+        S->>C: 8. Post-Sale Check-in
+    end
+</div>
+</div>
 
 <div class="content-section">
 <h3>🎯 Putting It All Together</h3>

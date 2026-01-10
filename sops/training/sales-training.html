@@ -42,6 +42,7 @@
             margin: 0 0 10px 0;
             background: linear-gradient(135deg, #10B981, #06B6D4);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -51,376 +52,128 @@
             margin: 0;
         }
 
-        /* Progress Bar */
-        .progress-container {
+        /* Split Layout */
+        .layout-container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
+        .sidebar {
+            width: 350px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 20px;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+            padding-right: 10px;
+            /* Space for scrollbar */
+        }
+
+        /* Custom Scrollbar for Sidebar */
+        .sidebar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        .main-content {
+            flex: 1;
             background: var(--card-bg);
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
+            border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .progress-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-        }
-
-        .progress-header span {
-            font-weight: 600;
-        }
-
-        .progress-bar {
-            height: 25px;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
+            min-height: 600px;
+            padding: 0;
+            /* Padding handled by internal views */
             overflow: hidden;
+            position: relative;
         }
 
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #10B981, #06B6D4);
-            border-radius: 15px;
-            transition: width 0.5s ease;
+        /* Sidebar Task List Styles */
+        .tasks-list {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 0.85em;
-        }
-
-        /* Task Grid */
-        .tasks-grid {
-            display: grid;
+            flex-direction: column;
             gap: 15px;
         }
 
-        .task-card {
-            background: var(--card-bg);
-            border-radius: 15px;
-            padding: 20px 25px;
-            display: flex;
+        .sidebar .task-card {
+            padding: 15px 20px;
+            flex-direction: row;
+            /* Keep row for icon + text */
             align-items: center;
-            gap: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            cursor: pointer;
-            transition: all 0.3s ease;
         }
 
-        .task-card:hover:not(.locked) {
-            border-color: var(--primary);
-            transform: translateX(5px);
-        }
-
-        .task-card.locked {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .task-card.completed {
-            border-color: var(--primary);
-            background: rgba(16, 185, 129, 0.1);
-        }
-
-        .task-card.current {
-            border-color: #F59E0B;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
-            }
-
-            50% {
-                box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
-            }
-        }
-
-        .task-number {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3em;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .task-card.completed .task-number {
-            background: var(--primary);
-        }
-
-        .task-info {
-            flex: 1;
-        }
-
-        .task-info h3 {
-            margin: 0 0 5px 0;
+        .sidebar .task-number {
+            width: 40px;
+            height: 40px;
             font-size: 1.1em;
         }
 
-        .task-info p {
-            margin: 0;
-            color: #94a3b8;
-            font-size: 0.9em;
+        .sidebar .task-info h3 {
+            font-size: 1em;
+            margin-bottom: 2px;
         }
 
-        .task-status {
-            font-size: 1.5em;
+        .sidebar .task-info p {
+            font-size: 0.85em;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
-        /* Task View */
+        /* Adjust Task View within Main Content */
         .task-view {
-            display: none;
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .task-view.active {
             display: block;
-        }
-
-        .task-view-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .back-btn {
-            background: rgba(255, 255, 255, 0.1);
+            /* Always visible in split view if active */
+            background: transparent;
             border: none;
-            color: #e2e8f0;
-            padding: 10px 20px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 0.95em;
-        }
-
-        .back-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Content Sections */
-        .content-section {
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 20px;
-        }
-
-        .content-section h3 {
-            color: var(--primary);
-            margin-top: 0;
-        }
-
-        .content-section p {
-            line-height: 1.8;
-        }
-
-        .highlight-box {
-            background: rgba(16, 185, 129, 0.15);
-            border-left: 4px solid var(--primary);
-            padding: 15px 20px;
-            border-radius: 0 10px 10px 0;
-            margin: 15px 0;
-        }
-
-        .warning-box {
-            background: rgba(245, 158, 11, 0.15);
-            border-left: 4px solid #F59E0B;
-            padding: 15px 20px;
-            border-radius: 0 10px 10px 0;
-            margin: 15px 0;
-        }
-
-        /* Quiz Section */
-        .quiz-section {
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-            padding: 30px;
-        }
-
-        .quiz-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .quiz-header h3 {
-            color: var(--primary);
-            margin: 0 0 10px 0;
-        }
-
-        .quiz-progress {
-            color: #94a3b8;
-        }
-
-        .question-container {
-            margin-bottom: 25px;
-        }
-
-        .question-text {
-            font-size: 1.1em;
-            font-weight: 600;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .options-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .option-btn {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            color: #e2e8f0;
-            padding: 15px 20px;
-            border-radius: 12px;
-            cursor: pointer;
-            text-align: left;
-            font-size: 1em;
-            transition: all 0.2s ease;
-        }
-
-        .option-btn:hover {
-            border-color: var(--primary);
-            background: rgba(16, 185, 129, 0.1);
-        }
-
-        .option-btn.selected {
-            border-color: var(--primary);
-            background: rgba(16, 185, 129, 0.2);
-        }
-
-        .option-btn.correct {
-            border-color: #10B981;
-            background: rgba(16, 185, 129, 0.3);
-        }
-
-        .option-btn.incorrect {
-            border-color: #EF4444;
-            background: rgba(239, 68, 68, 0.3);
-        }
-
-        .quiz-nav {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 25px;
-        }
-
-        .nav-btn {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border: none;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: 600;
-        }
-
-        .nav-btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .nav-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        /* Results */
-        .quiz-results {
-            text-align: center;
             padding: 40px;
         }
 
-        .results-score {
-            font-size: 4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .results-score.passed {
-            color: var(--primary);
-        }
-
-        .results-score.failed {
-            color: #EF4444;
-        }
-
-        .results-message {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-        }
-
-        /* Study Guide */
-        .study-guide {
-            background: rgba(99, 102, 241, 0.15);
-            border: 1px solid rgba(99, 102, 241, 0.3);
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 25px;
-        }
-
-        .study-guide h4 {
-            color: #818CF8;
-            margin: 0 0 15px 0;
-        }
-
-        .study-guide ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        .study-guide li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .study-guide a {
-            color: #60A5FA;
-        }
-
-        /* Certified Badge */
-        .certified-badge {
+        .welcome-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            min-height: 500px;
             text-align: center;
-            padding: 50px;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(6, 182, 212, 0.2));
-            border-radius: 20px;
-            border: 2px solid var(--primary);
+            padding: 40px;
+            color: #94a3b8;
         }
 
-        .certified-badge h2 {
-            font-size: 2.5em;
-            margin: 0;
-            color: var(--primary);
+        .welcome-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            opacity: 0.5;
         }
 
-        @media (max-width: 600px) {
-            .training-header h1 {
-                font-size: 1.8em;
+        /* Responsive Breakpoint */
+        @media (max-width: 900px) {
+            .layout-container {
+                flex-direction: column;
             }
 
-            .task-card {
-                flex-direction: column;
-                text-align: center;
+            .sidebar {
+                width: 100%;
+                position: static;
+                max-height: none;
+                margin-bottom: 30px;
             }
 
-            .quiz-nav {
-                flex-direction: column;
-                gap: 10px;
+            .main-content {
+                width: 100%;
             }
         }
     </style>
@@ -434,27 +187,63 @@
             <p>Digital Heroes Certification Program</p>
         </div>
 
-        <!-- Progress Bar -->
-        <div class="progress-container">
-            <div class="progress-header">
-                <span>Your Progress</span>
-                <span id="progressPercent">0%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
-            </div>
+        <!-- Split Layout -->
+        <div class="layout-container">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span>Your Progress</span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Vertical Task List -->
+                <div class="tasks-list" id="tasksList"></div>
+            </aside>
+
+            <!-- Right Content Area -->
+            <main class="main-content" id="mainContent">
+                <!-- Initial Welcome Screen -->
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon">👈</div>
+                    <h2>Select a Module</h2>
+                    <p>Choose a task from the sidebar to begin your training session.</p>
+                </div>
+
+                <!-- Helper container for renders -->
+                <div id="taskView" style="display: none;"></div>
+            </main>
         </div>
-
-        <!-- Tasks List -->
-        <div class="tasks-grid" id="tasksList"></div>
-
-        <!-- Task View Container -->
-        <div class="task-view" id="taskView"></div>
     </div>
 
     <!-- Quiz Data Script -->
     <script src="sales-training-data.js"></script>
     <script src="sales-training-app.js"></script>
+
+    <!-- Mermaid.js for Diagrams -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: 'dark',
+            securityLevel: 'loose',
+            fontFamily: 'Inter, sans-serif'
+        });
+        window.renderMermaid = async () => {
+            try {
+                await mermaid.run({
+                    querySelector: '.mermaid'
+                });
+            } catch (e) {
+                console.error('Mermaid rendering error:', e);
+            }
+        };
+    </script>
 </body>
 
 </html>
