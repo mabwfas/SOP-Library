@@ -1,113 +1,136 @@
 // UI/UX Designer Training Data
-// Auto-generated training content
+// Complete training content for designer certification
 
 const trainingTasks = [
-    { id: 1, title: "Design Thinking", description: "Creative mindset", contentFirst: true },
+    { id: 1, title: "Design Thinking", description: "Creative mindset fundamentals", contentFirst: true },
     { id: 2, title: "Company Knowledge", description: "Digital Heroes ecosystem", contentFirst: false },
-    { id: 3, title: "UI/UX Fundamentals", description: "Design principles", contentFirst: false },
+    { id: 3, title: "Design Principles", description: "Core UI/UX rules", contentFirst: false },
     { id: 4, title: "Figma Mastery", description: "Tool proficiency", contentFirst: false },
-    { id: 5, title: "Design Systems", description: "Components & tokens", contentFirst: false },
-    { id: 6, title: "Client Communication", description: "Feedback handling", contentFirst: false },
-    { id: 7, title: "Responsive Design", description: "Multi-device layouts", contentFirst: false },
-    { id: 8, title: "Animation & Motion", description: "Micro-interactions", contentFirst: false },
-    { id: 9, title: "Design Handoff", description: "Developer collaboration", contentFirst: false },
-    { id: 10, title: "Final Certification", description: "Designer assessment", contentFirst: false }
+    { id: 5, title: "Brand & Typography", description: "Visual identity", contentFirst: false },
+    { id: 6, title: "Responsive Design", description: "Multi-device layouts", contentFirst: false },
+    { id: 7, title: "E-commerce Design", description: "Conversion optimization", contentFirst: false },
+    { id: 8, title: "Client Handoff", description: "Developer collaboration", contentFirst: false },
+    { id: 9, title: "Practice Scenarios", description: "Real-world challenges", contentFirst: false },
+    { id: 10, title: "Final Certification", description: "Comprehensive assessment", contentFirst: false }
 ];
 
-// Task 1 Content: Mindset & Role Overview
 const task1Content = `
-<h2>📚 PART 1: THE FOUNDATION</h2>
+<h2>📚 PART 1: DESIGN THINKING</h2>
 
 <div class="content-section">
-<h3>🎯 Welcome to UI/UX Designer Training</h3>
-<p>You're about to master the skills needed to become a world-class UI/UX Designer at Digital Heroes.</p>
+<h3>🎯 Why Your Design Matters</h3>
+<p>A client's website had beautiful visuals but a 0.5% conversion rate. Why? Users couldn't find the "Add to Cart" button.</p>
 <div class="highlight-box">
-<strong>What You'll Learn:</strong>
-<ul style="margin-bottom: 0;">
-<li>Core ui/ux designer principles and best practices</li>
-<li>Digital Heroes workflow and standards</li>
-<li>Tools and systems we use daily</li>
-<li>How to deliver exceptional quality</li>
-</ul>
+<strong>Key Insight:</strong> Pretty ≠ Effective. Good design guides users to take action. Your job is to create designs that are BOTH beautiful AND functional.
 </div>
 </div>
 
 <div class="content-section">
-<h3>💡 Why This Role Matters</h3>
-<p>As a UI/UX Designer, you are a critical part of the Digital Heroes ecosystem. Your work directly impacts:</p>
+<h3>💡 Design is Problem-Solving</h3>
+<p>At Digital Heroes, designers are not just "pixel pushers." You are:</p>
 <ul>
-<li>✅ Client satisfaction and retention</li>
-<li>✅ Project quality and delivery timelines</li>
-<li>✅ Team collaboration and efficiency</li>
-<li>✅ Company reputation and growth</li>
+<li>🎯 <strong>Problem Solvers:</strong> Every design addresses a user need</li>
+<li>💰 <strong>Conversion Architects:</strong> Designs drive sales</li>
+<li>🎨 <strong>Brand Storytellers:</strong> Visuals communicate identity</li>
+<li>📱 <strong>Experience Creators:</strong> Users feel emotions through design</li>
 </ul>
+</div>
+
+<div class="content-section">
+<h3>🔑 The 3 Pillars of Great Design</h3>
+<ol>
+<li><strong>Clarity:</strong> Users know exactly what to do</li>
+<li><strong>Consistency:</strong> Elements behave predictably</li>
+<li><strong>Conversion:</strong> Design leads to action</li>
+</ol>
+<div class="warning-box">
+<strong>Remember:</strong> If users are confused, the design failed—no matter how beautiful it looks.
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
-<p>Test your understanding of the ui/ux designer role foundations.</p>
 <ul>
-<li>📝 10 questions about role fundamentals</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
+<li>📝 10 questions about design thinking</li>
+<li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
 `;
 
-// Task 2 Content: Company Knowledge
 const task2Content = `
 <h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
 
 <div class="content-section">
-<h3>🏢 About Digital Heroes</h3>
-<p>Digital Heroes is a premium digital agency specializing in Shopify development, design, and marketing services.</p>
-<div class="highlight-box">
-<strong>Our Core Values:</strong>
-<ul style="margin-bottom: 0;">
-<li>🎯 Excellence in every project</li>
-<li>💎 Quality over quantity</li>
-<li>🤝 Client-first approach</li>
-<li>📈 Continuous improvement</li>
+<h3>🏢 The Digital Heroes Ecosystem</h3>
+<ul>
+<li>📺 <strong>Media Arm:</strong> 2.5M+ YouTube subscribers</li>
+<li>🛠️ <strong>Agency Arm:</strong> Premium Shopify services</li>
+<li>👥 <strong>Talent Pool:</strong> 40+ full-time professionals</li>
 </ul>
-</div>
+<p>Clients arrive pre-educated and expect premium quality.</p>
 </div>
 
 <div class="content-section">
-<h3>🌍 The Ecosystem</h3>
-<p>We are a vertically integrated ecosystem with:</p>
+<h3>🎨 What Designers Deliver</h3>
 <ul>
-<li>📺 <strong>Media Arm:</strong> 2.5M+ YouTube subscribers</li>
-<li>🛠️ <strong>Agency Arm:</strong> Premium high-ticket services</li>
-<li>👥 <strong>Talent Pool:</strong> 40+ full-time professionals</li>
+<li>💎 <strong>Premium Look:</strong> $1,200-$1,800 quality designs</li>
+<li>📱 <strong>Mobile-First:</strong> 70% of traffic is mobile</li>
+<li>⚡ <strong>Conversion Focus:</strong> Beautiful AND functional</li>
+<li>🎯 <strong>Brand Alignment:</strong> Consistent visual identity</li>
 </ul>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
-<p>Prove your understanding of Digital Heroes.</p>
 <ul>
 <li>📝 10 questions about company knowledge</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 3</li>
+<li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
 `;
 
-// Task 3-10 Content (Placeholder)
 const task3Content = `
-<h2>📚 TASK 3: UI/UX FUNDAMENTALS</h2>
+<h2>📚 TASK 3: DESIGN PRINCIPLES</h2>
 
 <div class="content-section">
-<h3>📖 UI/UX Fundamentals</h3>
-<p>This module covers essential ui/ux fundamentals skills for UI/UX Designers.</p>
-<div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
+<h3>🎨 Non-Negotiable Design Rules</h3>
+<ul>
+<li>✅ <strong>Visual Hierarchy:</strong> Most important elements stand out</li>
+<li>✅ <strong>White Space:</strong> Breathing room for content</li>
+<li>✅ <strong>Contrast:</strong> Text must be readable</li>
+<li>✅ <strong>Alignment:</strong> Everything snaps to grid</li>
+<li>✅ <strong>Consistency:</strong> Same patterns throughout</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>❌ Common Design Mistakes</h3>
+<ul>
+<li>❌ Text over busy images (unreadable)</li>
+<li>❌ Too many fonts (3 max)</li>
+<li>❌ Inconsistent spacing</li>
+<li>❌ Hidden CTA buttons</li>
+<li>❌ Ignoring mobile users</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>🎯 The 5-Second Rule</h3>
+<div class="highlight-box">
+<strong>Test:</strong> Show a design for 5 seconds. Can users identify:
+<ol>
+<li>What the site sells?</li>
+<li>Where to click next?</li>
+<li>Why they should trust it?</li>
+</ol>
+If no, redesign.
 </div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about ui/ux fundamentals</li>
+<li>📝 10 questions about design principles</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
@@ -117,75 +140,125 @@ const task4Content = `
 <h2>📚 TASK 4: FIGMA MASTERY</h2>
 
 <div class="content-section">
-<h3>📖 Figma Mastery</h3>
-<p>This module covers essential figma mastery skills for UI/UX Designers.</p>
-<div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
+<h3>🎨 Figma Essentials</h3>
+<ul>
+<li>📐 <strong>Frames:</strong> Use frames, not groups</li>
+<li>🔧 <strong>Auto Layout:</strong> Responsive components</li>
+<li>🎨 <strong>Styles:</strong> Color & text styles</li>
+<li>📦 <strong>Components:</strong> Reusable elements</li>
+<li>🔗 <strong>Variants:</strong> Component states</li>
+</ul>
 </div>
+
+<div class="content-section">
+<h3>📁 File Organization</h3>
+<ul>
+<li>Cover Page - Project overview</li>
+<li>Style Guide - Colors, fonts, components</li>
+<li>Pages - Desktop and Mobile versions</li>
+<li>Components - Reusable elements</li>
+</ul>
+<div class="highlight-box">
+<strong>Naming Convention:</strong> Use clear names like "Button/Primary/Hover" not "Rectangle 37"
+</div>
+</div>
+
+<div class="content-section">
+<h3>⚡ Figma Shortcuts to Know</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Shift + A</code></td><td style="padding: 10px;">Auto Layout</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Ctrl/Cmd + D</code></td><td style="padding: 10px;">Duplicate</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Alt + Drag</code></td><td style="padding: 10px;">Copy element</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Ctrl/Cmd + G</code></td><td style="padding: 10px;">Group</td></tr>
+</table>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about figma mastery</li>
+<li>📝 10 questions about Figma</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
 `;
 
 const task5Content = `
-<h2>📚 TASK 5: DESIGN SYSTEMS</h2>
+<h2>📚 TASK 5: BRAND & TYPOGRAPHY</h2>
 
 <div class="content-section">
-<h3>📖 Design Systems</h3>
-<p>This module covers essential design systems skills for UI/UX Designers.</p>
-<div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
+<h3>🎨 Brand Styling</h3>
+<p>Every brand needs:</p>
+<ul>
+<li>🎨 <strong>Primary Color:</strong> Main brand color</li>
+<li>🎨 <strong>Secondary Color:</strong> Accent color</li>
+<li>⚫ <strong>Neutrals:</strong> Black, white, grays</li>
+<li>✅ <strong>Status Colors:</strong> Success, warning, error</li>
+</ul>
 </div>
+
+<div class="content-section">
+<h3>📝 Typography Rules</h3>
+<ul>
+<li>Use <strong>2-3 fonts maximum</strong></li>
+<li>Headings: 24-48px (bold)</li>
+<li>Body: 16-18px (regular)</li>
+<li>Line height: 1.5-1.7</li>
+<li>Contrast ratio: 4.5:1 minimum</li>
+</ul>
+<div class="warning-box">
+<strong>Common Mistake:</strong> Using decorative fonts for body text. Save fancy fonts for headings only.
+</div>
+</div>
+
+<div class="content-section">
+<h3>🔤 Font Pairing Tips</h3>
+<ul>
+<li>Serif + Sans-Serif = Classic combination</li>
+<li>Same font family, different weights</li>
+<li>Google Fonts: Inter, Roboto, Poppins, Playfair Display</li>
+</ul>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about design systems</li>
+<li>📝 10 questions about brand & typography</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
 `;
 
 const task6Content = `
-<h2>📚 TASK 6: CLIENT COMMUNICATION</h2>
+<h2>📚 TASK 6: RESPONSIVE DESIGN</h2>
 
 <div class="content-section">
-<h3>📖 Client Communication</h3>
-<p>This module covers essential client communication skills for UI/UX Designers.</p>
-<div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
+<h3>📱 Mobile-First Design</h3>
+<p><strong>70% of e-commerce traffic is mobile.</strong> Always design mobile first.</p>
 <ul>
-<li>📝 10 questions about client communication</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>Start at 375px width</li>
+<li>Scale up to tablet (768px)</li>
+<li>Then desktop (1440px)</li>
 </ul>
 </div>
-`;
-
-const task7Content = `
-<h2>📚 TASK 7: RESPONSIVE DESIGN</h2>
 
 <div class="content-section">
-<h3>📖 Responsive Design</h3>
-<p>This module covers essential responsive design skills for UI/UX Designers.</p>
-<div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
+<h3>📐 Breakpoints</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile</strong></td><td style="padding: 10px;">375px - 767px</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Tablet</strong></td><td style="padding: 10px;">768px - 1023px</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Desktop</strong></td><td style="padding: 10px;">1024px+</td></tr>
+</table>
 </div>
+
+<div class="content-section">
+<h3>📱 Mobile Design Rules</h3>
+<ul>
+<li>Touch targets: Minimum 44x44px</li>
+<li>Text: Minimum 16px (no zoom needed)</li>
+<li>Single column layouts</li>
+<li>Sticky navigation for easy access</li>
+<li>Thumb-friendly button placement</li>
+</ul>
 </div>
 
 <div class="content-section">
@@ -197,43 +270,145 @@ Detailed training content for this module is coming soon. Study the concepts fro
 </div>
 `;
 
-const task8Content = `
-<h2>📚 TASK 8: ANIMATION & MOTION</h2>
+const task7Content = `
+<h2>📚 TASK 7: E-COMMERCE DESIGN</h2>
 
 <div class="content-section">
-<h3>📖 Animation & Motion</h3>
-<p>This module covers essential animation & motion skills for UI/UX Designers.</p>
-<div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
+<h3>🛒 Conversion-Focused Design</h3>
+<p>E-commerce design is about <strong>selling products</strong>.</p>
+<ul>
+<li>✅ Clear product images</li>
+<li>✅ Visible price and CTA</li>
+<li>✅ Trust badges (payment icons)</li>
+<li>✅ Social proof (reviews)</li>
+<li>✅ Urgency elements (stock levels)</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>📦 Product Page Must-Haves</h3>
+<ul>
+<li>🖼️ High-quality images (multiple angles)</li>
+<li>💰 Clear price (with compare price if on sale)</li>
+<li>🛒 Prominent Add to Cart button</li>
+<li>📋 Variant selectors (size, color)</li>
+<li>⭐ Customer reviews</li>
+<li>📦 Shipping information</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>🏠 Homepage Essentials</h3>
+<ol>
+<li>Hero section with clear value proposition</li>
+<li>Featured/bestselling products</li>
+<li>Trust signals (reviews, logos)</li>
+<li>Collection navigation</li>
+<li>Footer with policies and contact</li>
+</ol>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<ul>
+<li>📝 10 questions about e-commerce design</li>
+<li>🎯 Score <strong>10/10</strong> to proceed</li>
+</ul>
+</div>
+`;
+
+const task8Content = `
+<h2>📚 TASK 8: CLIENT HANDOFF</h2>
+
+<div class="content-section">
+<h3>📤 Design Handoff Best Practices</h3>
+<ul>
+<li>Organize layers and name them properly</li>
+<li>Create a clear style guide</li>
+<li>Export assets in correct formats</li>
+<li>Provide design specs</li>
+<li>Use Figma Dev Mode for developers</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>📁 Asset Export Formats</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Photos</strong></td><td style="padding: 10px;">WebP/JPG</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Icons</strong></td><td style="padding: 10px;">SVG</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Logos</strong></td><td style="padding: 10px;">SVG + PNG</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Backgrounds</strong></td><td style="padding: 10px;">WebP/JPG</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🎥 Loom Walkthrough</h3>
+<div class="highlight-box">
+<strong>Record a 2-5 minute video explaining:</strong>
+<ul>
+<li>Overall design approach</li>
+<li>Key interactions</li>
+<li>Responsive behavior</li>
+<li>Any special notes for developers</li>
+</ul>
 </div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about animation & motion</li>
+<li>📝 10 questions about handoff</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
 `;
 
 const task9Content = `
-<h2>📚 TASK 9: DESIGN HANDOFF</h2>
+<h2>📚 TASK 9: PRACTICE SCENARIOS</h2>
 
 <div class="content-section">
-<h3>📖 Design Handoff</h3>
-<p>This module covers essential design handoff skills for UI/UX Designers.</p>
-<div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
+<h3>🎯 Scenario 1: Bad Brief</h3>
+<p><strong>Client says:</strong> "Make it pop" or "I'll know it when I see it"</p>
+<div class="highlight-box">
+<strong>Your Response:</strong>
+<ol>
+<li>Ask clarifying questions</li>
+<li>Request examples they like</li>
+<li>Create a mood board for approval</li>
+<li>Get sign-off before designing</li>
+</ol>
 </div>
+</div>
+
+<div class="content-section">
+<h3>🔄 Scenario 2: Endless Revisions</h3>
+<p><strong>Client keeps asking for changes that contradict previous feedback.</strong></p>
+<div class="warning-box">
+<strong>Your Response:</strong>
+<ul>
+<li>Document all feedback in writing</li>
+<li>Summarize changes before implementing</li>
+<li>Set clear revision limits upfront</li>
+<li>Escalate to PM if needed</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📷 Scenario 3: Bad Client Assets</h3>
+<p><strong>Client provides low-resolution images and no brand guidelines.</strong></p>
+<ul>
+<li>Request higher quality assets</li>
+<li>Suggest stock photo alternatives</li>
+<li>Create basic brand guidelines</li>
+<li>Document limitations for clarity</li>
+</ul>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about design handoff</li>
+<li>📝 10 questions about scenarios</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
@@ -243,153 +418,177 @@ const task10Content = `
 <h2>📚 TASK 10: FINAL CERTIFICATION</h2>
 
 <div class="content-section">
-<h3>📖 Final Certification</h3>
-<p>This module covers essential final certification skills for UI/UX Designers.</p>
+<h3>🏆 Congratulations!</h3>
+<p>You've completed the UI/UX Designer training. This final assessment covers:</p>
+<ul>
+<li>✅ Design thinking and mindset</li>
+<li>✅ Digital Heroes ecosystem</li>
+<li>✅ Core design principles</li>
+<li>✅ Figma proficiency</li>
+<li>✅ Brand and typography</li>
+<li>✅ Responsive design</li>
+<li>✅ E-commerce design</li>
+<li>✅ Client handoff</li>
+<li>✅ Real-world scenarios</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>📝 Final Assessment</h3>
 <div class="warning-box">
-<strong>⚠️ Content Being Developed</strong><br>
-Detailed training content for this module is coming soon. Study the concepts from your SOP guide.
+<strong>20 questions covering all topics.</strong>
+<p>Score 20/20 to receive your Designer Certification.</p>
 </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
+<h3>🚀 Ready for the Final Quiz?</h3>
 <ul>
-<li>📝 20 questions about final certification</li>
-<li>🎯 Score <strong>20/20</strong> to complete certification</li>
+<li>📝 20 questions covering all training modules</li>
+<li>🎯 Score <strong>20/20</strong> to receive certification</li>
 </ul>
 </div>
 `;
 
-// Quiz Questions (10 per task)
 const allQuizzes = [
-    // Task 1 Quiz
+    // Task 1: Design Thinking
     [
-        { q: "Sample question 1 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 1?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Good design is:", o: ["Pretty but confusing", "Ugly but functional", "Beautiful AND functional", "Complex and detailed"], c: 2 },
+        { q: "At Digital Heroes, designers are considered:", o: ["Pixel pushers", "Problem solvers", "Artists only", "Decorators"], c: 1 },
+        { q: "The 3 pillars of great design are:", o: ["Color, Font, Image", "Clarity, Consistency, Conversion", "Speed, Beauty, Complexity", "Mobile, Desktop, Tablet"], c: 1 },
+        { q: "If users are confused by a design:", o: ["They'll figure it out", "Add more instructions", "The design failed", "Blame the user"], c: 2 },
+        { q: "A low conversion rate despite beautiful design means:", o: ["Users don't appreciate art", "Pretty ≠ Effective", "Add more colors", "It's the developer's fault"], c: 1 },
+        { q: "Design is primarily about:", o: ["Making things look good", "Problem-solving", "Following trends", "Personal expression"], c: 1 },
+        { q: "Designers at Digital Heroes are:", o: ["Conversion architects", "Just visual creators", "Only decorators", "IT support"], c: 0 },
+        { q: "What should design guide users to do?", o: ["Look at visuals", "Take action", "Scroll endlessly", "Nothing specific"], c: 1 },
+        { q: "Brand storytelling through design means:", o: ["Writing blog posts", "Visuals communicate identity", "Adding more text", "Using animations"], c: 1 },
+        { q: "Experience creators shape:", o: ["Only visuals", "User emotions", "Code quality", "Server speed"], c: 1 }
     ],
-    // Task 2 Quiz
+    // Task 2: Company Knowledge
     [
-        { q: "Sample question 1 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 2?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Digital Heroes YouTube subscribers:", o: ["500K+", "1M+", "2.5M+", "5M+"], c: 2 },
+        { q: "Premium package price range:", o: ["$500-$800", "$800-$1,000", "$1,200-$1,800", "$2,000-$3,000"], c: 2 },
+        { q: "Mobile traffic percentage in e-commerce:", o: ["30%", "50%", "70%", "90%"], c: 2 },
+        { q: "Clients arrive at Digital Heroes:", o: ["Uneducated", "Pre-educated via YouTube", "Through cold calling", "Randomly"], c: 1 },
+        { q: "Full-time professionals at Digital Heroes:", o: ["10+", "20+", "40+", "100+"], c: 2 },
+        { q: "Designers must deliver:", o: ["Quick drafts", "Premium quality", "Basic designs", "Templates only"], c: 1 },
+        { q: "Primary design approach:", o: ["Desktop-first", "Mobile-first", "Tablet-first", "Print-first"], c: 1 },
+        { q: "Visual identity must be:", o: ["Different each page", "Consistent", "Experimental", "Changing"], c: 1 },
+        { q: "The agency arm provides:", o: ["Free services", "Premium Shopify services", "Only consulting", "Hardware sales"], c: 1 },
+        { q: "Design quality expectation:", o: ["Basic", "Moderate", "$1,200-$1,800 quality", "Free tier"], c: 2 }
     ],
-    // Task 3 Quiz
+    // Task 3: Design Principles
     [
-        { q: "Sample question 1 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 3?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Visual hierarchy means:", o: ["All equal importance", "Most important elements stand out", "Random placement", "Hidden elements"], c: 1 },
+        { q: "Maximum recommended fonts:", o: ["1", "2-3", "5-6", "Unlimited"], c: 1 },
+        { q: "The 5-second test checks if users can identify:", o: ["Colors used", "Font names", "What site sells, where to click, trust signals", "Designer name"], c: 2 },
+        { q: "White space is:", o: ["Wasted space", "Breathing room for content", "A mistake", "Cheap design"], c: 1 },
+        { q: "Text over busy images is:", o: ["Professional", "Unreadable", "Trendy", "Recommended"], c: 1 },
+        { q: "CTA buttons should be:", o: ["Hidden", "Small", "Prominent", "Same color as background"], c: 2 },
+        { q: "Consistency in design means:", o: ["Same patterns throughout", "Different for each page", "Experimental", "Random choices"], c: 0 },
+        { q: "Contrast is important for:", o: ["Aesthetics only", "Readability", "Confusion", "Decoration"], c: 1 },
+        { q: "If the 5-second test fails, you should:", o: ["Ignore it", "Redesign", "Add more content", "Change colors"], c: 1 },
+        { q: "Alignment means elements:", o: ["Are placed randomly", "Snap to grid", "Overlap", "Float freely"], c: 1 }
     ],
-    // Task 4 Quiz
+    // Task 4: Figma
     [
-        { q: "Sample question 1 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 4?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Auto Layout shortcut:", o: ["Ctrl+A", "Shift+A", "Alt+A", "Cmd+A"], c: 1 },
+        { q: "Use frames instead of:", o: ["Shapes", "Groups", "Lines", "Text"], c: 1 },
+        { q: "Component states are managed through:", o: ["Layers", "Variants", "Groups", "Pages"], c: 1 },
+        { q: "Naming like 'Rectangle 37' is:", o: ["Acceptable", "Recommended", "Bad practice", "Required"], c: 2 },
+        { q: "Good naming convention example:", o: ["Rectangle 37", "Button/Primary/Hover", "New Layer", "Copy 5"], c: 1 },
+        { q: "Duplicate shortcut:", o: ["Ctrl+A", "Ctrl+D", "Ctrl+C", "Ctrl+V"], c: 1 },
+        { q: "File organization should include:", o: ["Random pages", "Cover, Style Guide, Pages, Components", "One page only", "No structure"], c: 1 },
+        { q: "Styles in Figma are for:", o: ["Decoration", "Color & text consistency", "Animation", "Prototyping"], c: 1 },
+        { q: "Reusable elements should be:", o: ["Grouped", "Made into Components", "Flattened", "Deleted"], c: 1 },
+        { q: "Alt + Drag does:", o: ["Delete", "Copy element", "Rotate", "Scale"], c: 1 }
     ],
-    // Task 5 Quiz
+    // Task 5: Brand & Typography
     [
-        { q: "Sample question 1 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 5?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Maximum fonts recommended:", o: ["1", "2-3", "5", "10"], c: 1 },
+        { q: "Body text size range:", o: ["10-12px", "14-15px", "16-18px", "20-24px"], c: 2 },
+        { q: "Line height should be:", o: ["1.0", "1.2", "1.5-1.7", "2.0+"], c: 2 },
+        { q: "Minimum contrast ratio:", o: ["2:1", "3:1", "4.5:1", "10:1"], c: 2 },
+        { q: "Decorative fonts should be used for:", o: ["Body text", "Headings only", "Everything", "Never"], c: 1 },
+        { q: "Brand colors include:", o: ["One color only", "Primary, Secondary, Neutrals", "Rainbow", "Black only"], c: 1 },
+        { q: "Status colors are for:", o: ["Decoration", "Success, warning, error states", "Brand identity", "Backgrounds"], c: 1 },
+        { q: "Classic font pairing:", o: ["Two decorative fonts", "Serif + Sans-Serif", "Comic Sans only", "Random fonts"], c: 1 },
+        { q: "Heading text size range:", o: ["12-16px", "16-20px", "24-48px", "60-80px"], c: 2 },
+        { q: "Google Fonts examples:", o: ["Arial, Times", "Inter, Roboto, Poppins", "Comic Sans", "Wingdings"], c: 1 }
     ],
-    // Task 6 Quiz
+    // Task 6: Responsive Design
     [
-        { q: "Sample question 1 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 6?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Mobile traffic percentage:", o: ["30%", "50%", "70%", "90%"], c: 2 },
+        { q: "Mobile-first means starting at:", o: ["1440px", "1024px", "768px", "375px"], c: 3 },
+        { q: "Mobile breakpoint range:", o: ["0-374px", "375px-767px", "768px-1023px", "1024px+"], c: 1 },
+        { q: "Minimum touch target size:", o: ["24x24px", "32x32px", "44x44px", "60x60px"], c: 2 },
+        { q: "Minimum mobile text size:", o: ["10px", "12px", "14px", "16px"], c: 3 },
+        { q: "Desktop breakpoint starts at:", o: ["768px", "960px", "1024px", "1440px"], c: 2 },
+        { q: "Mobile layouts should be:", o: ["Multi-column", "Single column", "Grid-based", "Complex"], c: 1 },
+        { q: "Thumb-friendly means buttons are:", o: ["At top of screen", "Easy to reach with thumb", "Very small", "Hidden"], c: 1 },
+        { q: "Tablet breakpoint:", o: ["375px-500px", "500px-767px", "768px-1023px", "1024px+"], c: 2 },
+        { q: "Sticky navigation helps with:", o: ["Aesthetics", "Easy access", "Loading speed", "SEO"], c: 1 }
     ],
-    // Task 7 Quiz
+    // Task 7: E-commerce Design
     [
-        { q: "Sample question 1 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 7?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "E-commerce design is primarily about:", o: ["Art", "Selling products", "Personal style", "Complexity"], c: 1 },
+        { q: "Product page must have:", o: ["Only images", "Image, price, CTA, reviews", "Just text", "Animation"], c: 1 },
+        { q: "Trust badge examples:", o: ["Social links", "Payment icons, security badges", "Animations", "Large fonts"], c: 1 },
+        { q: "Social proof includes:", o: ["Brand colors", "Customer reviews", "Footer links", "Header text"], c: 1 },
+        { q: "Urgency elements show:", o: ["Brand story", "Stock levels, time limits", "Company history", "Team photos"], c: 1 },
+        { q: "Hero section should have:", o: ["Just an image", "Clear value proposition", "Many paragraphs", "Small text"], c: 1 },
+        { q: "CTA button on product page:", o: ["Should be hidden", "Prominent Add to Cart", "Same as background", "At bottom only"], c: 1 },
+        { q: "Product images should be:", o: ["Single angle", "Multiple angles, high quality", "Low resolution", "Text only"], c: 1 },
+        { q: "Shipping info placement:", o: ["Hidden", "On product page", "Footer only", "Checkout only"], c: 1 },
+        { q: "Homepage should include:", o: ["Just hero", "Hero, products, trust, navigation", "Only text", "Animation only"], c: 1 }
     ],
-    // Task 8 Quiz
+    // Task 8: Client Handoff
     [
-        { q: "Sample question 1 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 8?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Layers should be:", o: ["Randomly named", "Properly named and organized", "Unnamed", "Deleted"], c: 1 },
+        { q: "Photos should be exported as:", o: ["SVG", "WebP/JPG", "PDF", "AI"], c: 1 },
+        { q: "Icons should be exported as:", o: ["JPG", "PNG only", "SVG", "GIF"], c: 2 },
+        { q: "Style guide includes:", o: ["Random notes", "Colors, fonts, components", "Only wireframes", "Sketches"], c: 1 },
+        { q: "Loom video length:", o: ["30 seconds", "2-5 minutes", "30 minutes", "1 hour"], c: 1 },
+        { q: "Figma Dev Mode is for:", o: ["Designers only", "Developers", "Clients", "Marketing"], c: 1 },
+        { q: "Walkthrough video should explain:", o: ["Personal opinions", "Design approach, interactions, responsive behavior", "Salary expectations", "Personal life"], c: 1 },
+        { q: "Logos should be exported as:", o: ["JPG only", "SVG + PNG", "GIF", "BMP"], c: 1 },
+        { q: "Design specs are:", o: ["Optional", "Required for developers", "Only for print", "Not needed"], c: 1 },
+        { q: "Asset organization matters because:", o: ["It looks nice", "Saves developer time", "Not important", "Only for large projects"], c: 1 }
     ],
-    // Task 9 Quiz
+    // Task 9: Practice Scenarios
     [
-        { q: "Sample question 1 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 9?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "When client says 'make it pop', you should:", o: ["Just guess", "Ask clarifying questions", "Ignore them", "Refuse the project"], c: 1 },
+        { q: "Endless revisions should be handled by:", o: ["Accepting everything", "Documenting feedback, setting limits", "Quitting", "Ignoring client"], c: 1 },
+        { q: "Bad client assets require:", o: ["Using them anyway", "Request better quality or suggest alternatives", "Refusing project", "Complaining"], c: 1 },
+        { q: "Mood board should be created:", o: ["After final design", "Before designing for approval", "Never", "Only for print"], c: 1 },
+        { q: "Contradicting feedback should be:", o: ["Ignored", "Documented in writing", "Accepted without question", "Argued about"], c: 1 },
+        { q: "Revision limits should be set:", o: ["Never", "Upfront", "After completion", "When annoyed"], c: 1 },
+        { q: "Low-resolution images need:", o: ["To be used anyway", "Higher quality alternatives", "More filters", "Stretching"], c: 1 },
+        { q: "Missing brand guidelines means:", o: ["Skip branding", "Create basic guidelines", "Use random colors", "Refuse project"], c: 1 },
+        { q: "PM escalation is needed when:", o: ["Never", "Problems persist", "Always", "First day"], c: 1 },
+        { q: "Clarifying questions help:", o: ["Waste time", "Get clear direction", "Annoy client", "Delay project"], c: 1 }
     ],
-    // Task 10 Quiz
+    // Task 10: Final Certification (20 questions)
     [
-        { q: "Sample question 1 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 2 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 3 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 4 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 5 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 6 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 7 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 8 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 9 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 },
-        { q: "Sample question 10 for Task 10?", o: ["Option A", "Option B", "Option C", "Option D"], c: 0 }
+        { q: "Good design is:", o: ["Pretty only", "Functional only", "Beautiful AND functional", "Complex"], c: 2 },
+        { q: "Mobile traffic percentage:", o: ["30%", "50%", "70%", "90%"], c: 2 },
+        { q: "Maximum fonts:", o: ["1", "2-3", "5", "10"], c: 1 },
+        { q: "Mobile-first starts at:", o: ["1440px", "768px", "375px", "320px"], c: 2 },
+        { q: "Minimum touch target:", o: ["24px", "32px", "44px", "60px"], c: 2 },
+        { q: "5-second test checks:", o: ["Speed", "What sells, where to click, trust", "Colors", "Fonts"], c: 1 },
+        { q: "Auto Layout shortcut:", o: ["Ctrl+A", "Shift+A", "Alt+A", "Tab"], c: 1 },
+        { q: "Icons export format:", o: ["JPG", "PNG", "SVG", "GIF"], c: 2 },
+        { q: "Digital Heroes subscribers:", o: ["1M", "2.5M+", "5M", "10M"], c: 1 },
+        { q: "CTA buttons should be:", o: ["Hidden", "Small", "Prominent", "Same as background"], c: 2 },
+        { q: "Line height:", o: ["1.0", "1.2", "1.5-1.7", "2.5"], c: 2 },
+        { q: "Contrast ratio minimum:", o: ["2:1", "3:1", "4.5:1", "10:1"], c: 2 },
+        { q: "Loom video length:", o: ["30 sec", "2-5 min", "30 min", "1 hour"], c: 1 },
+        { q: "Visual hierarchy means:", o: ["All equal", "Important stands out", "Random", "Hidden"], c: 1 },
+        { q: "E-commerce design is about:", o: ["Art", "Selling", "Complexity", "Decoration"], c: 1 },
+        { q: "White space is:", o: ["Wasted", "Breathing room", "Mistake", "Bad"], c: 1 },
+        { q: "When brief is unclear:", o: ["Guess", "Ask questions", "Refuse", "Start anyway"], c: 1 },
+        { q: "Components in Figma are:", o: ["One-time use", "Reusable elements", "Layers", "Pages"], c: 1 },
+        { q: "Premium price range:", o: ["$500", "$800", "$1,200-$1,800", "$3,000"], c: 2 },
+        { q: "Mobile text minimum:", o: ["10px", "12px", "14px", "16px"], c: 3 }
     ]
 ];
