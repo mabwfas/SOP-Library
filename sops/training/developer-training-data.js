@@ -814,3 +814,151 @@ trainingTasks[6].content = task7Content;
 trainingTasks[7].content = task8Content;
 trainingTasks[8].content = task9Content;
 trainingTasks[9].content = task10Content;
+
+// ===============================================
+// QUIZ QUESTIONS - 120 Total (10 per task + 20 final)
+// ===============================================
+
+const task1Quiz = [
+    { q: "Before making ANY changes to a theme, you MUST:", o: ["Ask the client for permission", "Duplicate the theme first — NEVER work on live theme", "Test on your personal device", "Write a backup plan"], c: 1 },
+    { q: "What percentage of ecommerce traffic is mobile?", o: ["30%", "50%", "70%", "90%"], c: 2 },
+    { q: "Target Mobile PageSpeed score is:", o: ["50+", "70+", "85+", "95+"], c: 2 },
+    { q: "A 1-second delay in load time causes what conversion loss?", o: ["2%", "5%", "7%", "10%"], c: 2 },
+    { q: "FIRST thing to check when creating store for US clients:", o: ["Theme selection", "Currency is NOT set to INR — change to USD", "Logo upload", "Product count"], c: 1 },
+    { q: "How many times should you review EVERY element before submission?", o: ["Once", "Twice", "3-5 times (MANDATORY)", "Optional review"], c: 2 },
+    { q: "'It works on my machine' is:", o: ["Acceptable explanation", "NOT acceptable — if doesn't work for client, it's broken", "Good enough for delivery", "Developer's defense"], c: 1 },
+    { q: "After 15 days of onboarding, ONE careless mistake can result in:", o: ["A warning", "Extra training", "Potential removal", "Nothing serious"], c: 2 },
+    { q: "The Testing Trifecta means testing:", o: ["Three different devices", "Happy path, error path, and edge cases", "Three different browsers", "Three times in a row"], c: 1 },
+    { q: "P0 (highest priority) tasks are:", o: ["Learning and optimization", "Code reviews", "Production bugs, security issues, deadline-day tasks", "PM questions"], c: 2 }
+];
+
+const task2Quiz = [
+    { q: "The secure way to access a client's Shopify store is:", o: ["Client shares login credentials", "Collaborator access with 4-digit code", "Access through their email", "Any method works"], c: 1 },
+    { q: "Where does the client find their collaborator request code?", o: ["Products page", "Settings → Users and permissions → Collaborators", "Online Store → Themes", "Apps section"], c: 1 },
+    { q: "For a full store build, what permission level is needed?", o: ["Products only", "Themes only", "Full access (all permissions)", "Settings only"], c: 2 },
+    { q: "Which free Shopify theme has the highest speed score (90+)?", o: ["Prestige", "Dawn", "Impulse", "Symmetry"], c: 1 },
+    { q: "Before customizing a theme, you MUST:", o: ["Ask client permission", "Click 'Duplicate' to create a backup", "Test on mobile", "Check PageSpeed"], c: 1 },
+    { q: "Maximum number of font families to use:", o: ["1", "2", "4", "Unlimited"], c: 1 },
+    { q: "Logo file format should be:", o: ["JPG only", "PNG with transparency, 200-400px wide", "Any format", "SVG only"], c: 1 },
+    { q: "If client's store is on trial plan, collaborator access:", o: ["Works normally", "Is not available — trial stores don't have this", "Requires extra steps", "Works with password"], c: 1 },
+    { q: "Client wants to share login instead of collaborator access. You should:", o: ["Accept it", "Politely decline — collaborator access is more secure", "Use both", "Report them"], c: 1 },
+    { q: "Favicon size should be:", o: ["500x500 PNG", "32x32 or 64x64 PNG", "Any size", "1000x1000 PNG"], c: 1 }
+];
+
+const task3Quiz = [
+    { q: "Hero section headline should be maximum:", o: ["3 words", "7 words", "15 words", "Unlimited"], c: 1 },
+    { q: "The purpose of the Trust Bar section is to:", o: ["Show products", "Build confidence (free shipping, returns, secure payment)", "Display testimonials", "Capture emails"], c: 1 },
+    { q: "Featured Products section should show:", o: ["1-2 products", "4-8 products", "20+ products", "All products"], c: 1 },
+    { q: "Standard header menu MUST include:", o: ["Only Home and Catalog", "Home, Catalog, Collections, About Us, Contact Us, FAQ, Track Order", "Only product pages", "No specific requirements"], c: 1 },
+    { q: "Order tracking is set up using:", o: ["Custom code only", "17Track / i7 Track app", "Shopify's built-in feature", "External website"], c: 1 },
+    { q: "Every homepage section should:", o: ["Just look pretty", "Have a PURPOSE — build trust, showcase products, or drive action", "Be colorful", "Have animations"], c: 1 },
+    { q: "Testimonials section should have:", o: ["1 review", "3-6 reviews with photos if possible", "50+ reviews", "No photos needed"], c: 1 },
+    { q: "Newsletter section should include:", o: ["Just email input", "Email input + incentive (like 10% off)", "Phone number only", "Nothing specific"], c: 1 },
+    { q: "FAQ section should have:", o: ["1-2 questions", "5-8 common questions", "50+ questions", "No FAQ needed"], c: 1 },
+    { q: "Footer should include all EXCEPT:", o: ["Navigation links", "Policy pages", "Client's personal phone number", "Payment icons"], c: 2 }
+];
+
+const task4Quiz = [
+    { q: "Minimum number of product images:", o: ["1", "3-5", "10+", "No minimum"], c: 1 },
+    { q: "Product description should lead with:", o: ["Technical features", "Benefits FIRST, Features SECOND", "Ingredients only", "Price comparison"], c: 1 },
+    { q: "What is the #1 conversion driver after price?", o: ["Product images", "Customer reviews", "Product title", "Page speed"], c: 1 },
+    { q: "Size guide reduces returns by:", o: ["5%", "15%", "30%+", "50%"], c: 2 },
+    { q: "Related Products section can increase AOV by:", o: ["1-5%", "15-30%", "50-60%", "100%"], c: 1 },
+    { q: "Minimum touch target size for mobile buttons:", o: ["20x20px", "44x44px", "100x100px", "No minimum"], c: 1 },
+    { q: "'Only 3 left!' is an example of which trigger?", o: ["Trust", "Urgency", "Social proof", "Value"], c: 1 },
+    { q: "Star ratings and review counts are examples of:", o: ["Trust", "Urgency", "Social proof", "Ease"], c: 2 },
+    { q: "Above the fold means:", o: ["Top of page after scrolling", "Visible WITHOUT scrolling", "Footer area", "Mobile only"], c: 1 },
+    { q: "Sticky Add to Cart on mobile should be:", o: ["Hidden", "Always visible on scroll", "Only at top", "Optional"], c: 1 }
+];
+
+const task5Quiz = [
+    { q: "Target Mobile PageSpeed score:", o: ["50+", "70+", "85+", "95+"], c: 2 },
+    { q: "Maximum image file size:", o: ["100KB", "500KB", "2MB", "No limit"], c: 1 },
+    { q: "Maximum number of apps recommended:", o: ["5", "10-12", "20", "Unlimited"], c: 1 },
+    { q: "LCP (Largest Contentful Paint) issues are usually caused by:", o: ["Too many products", "Hero image too large", "Too many pages", "Wrong colors"], c: 1 },
+    { q: "CLS (Cumulative Layout Shift) is fixed by:", o: ["Compressing images", "Adding width/height to all images", "Removing apps", "Changing fonts"], c: 1 },
+    { q: "After installing a new app, you should:", o: ["Do nothing", "Check PageSpeed — did it drop significantly?", "Install another app", "Remove old theme"], c: 1 },
+    { q: "Primary tool for speed score:", o: ["GTmetrix only", "Google PageSpeed Insights", "Shopify analytics", "Browser console"], c: 1 },
+    { q: "TBT (Total Blocking Time) issues indicate:", o: ["Slow images", "Too much JavaScript", "Missing content", "Wrong fonts"], c: 1 },
+    { q: "Maximum font families to use:", o: ["1", "2", "4", "Unlimited"], c: 1 },
+    { q: "Every 1-second delay in load time causes what conversion loss?", o: ["2%", "5%", "7%", "10%"], c: 2 }
+];
+
+const task6Quiz = [
+    { q: "Healthy number of apps for a store:", o: ["1-2", "5-8", "15-20", "30+"], c: 1 },
+    { q: "If PageSpeed drops more than 10 points after installing an app:", o: ["Keep the app anyway", "Reconsider the app", "Install another app", "Ignore it"], c: 1 },
+    { q: "When uninstalling an app, you must also:", o: ["Restart Shopify", "Check theme code for leftover snippets and remove them", "Delete all products", "Contact Shopify support"], c: 1 },
+    { q: "Test credit card number for Shopify:", o: ["1234 1234 1234 1234", "4242 4242 4242 4242", "0000 0000 0000 0000", "Any random number"], c: 1 },
+    { q: "After completing test order, you MUST:", o: ["Leave test mode on", "Disable test mode before launch", "Delete test products", "Change theme"], c: 1 },
+    { q: "Shop Pay is enabled when you activate:", o: ["PayPal", "Shopify Payments", "Manual payments", "Gift cards"], c: 1 },
+    { q: "Policy pages are set up in:", o: ["Products section", "Settings → Policies", "Theme editor", "Apps section"], c: 1 },
+    { q: "Multiple review apps should be:", o: ["Used together for more reviews", "Avoided — pick ONE only", "Installed but disabled", "Used on different pages"], c: 1 },
+    { q: "Free apps with no reviews are risky because:", o: ["They're too simple", "They often inject unwanted code or malware", "They don't work", "They're too complex"], c: 1 },
+    { q: "Which payment gateway has the lowest fees?", o: ["PayPal", "Shopify Payments", "Manual payments", "All same"], c: 1 }
+];
+
+const task7Quiz = [
+    { q: "Total points in the QA checklist:", o: ["40", "50", "60", "100"], c: 2 },
+    { q: "Mobile PageSpeed target in QA:", o: ["50+", "70+", "85+", "95+"], c: 2 },
+    { q: "Desktop PageSpeed target:", o: ["70+", "80+", "90+", "95+"], c: 2 },
+    { q: "Minimum touch target size for mobile buttons:", o: ["20px", "44px", "60px", "100px"], c: 1 },
+    { q: "How many times should you review every element before submission?", o: ["Once", "Twice", "3-5 times", "10+ times"], c: 2 },
+    { q: "The 5-Minute Audit includes checking on:", o: ["Desktop only", "Mobile, incognito mode, different browser", "One device only", "Theme editor only"], c: 1 },
+    { q: "Console errors should be:", o: ["Ignored", "Fixed before delivery — zero console errors", "Documented but not fixed", "Hidden"], c: 1 },
+    { q: "Who catches issues — you or the client?", o: ["Client catches issues", "YOU catch all issues before delivery", "PM catches issues", "No one checks"], c: 1 },
+    { q: "Peer review is:", o: ["Criticism", "Teamwork — fresh eyes catch issues you miss", "Optional", "Only for senior developers"], c: 1 },
+    { q: "Alt text should be on:", o: ["Only hero images", "ALL images", "Only product images", "No images needed"], c: 1 }
+];
+
+const task8Quiz = [
+    { q: "First step in debugging is:", o: ["Ask for help", "Open DevTools → Console tab for errors", "Delete all code", "Reinstall theme"], c: 1 },
+    { q: "Hard refresh (Ctrl+Shift+R) solves what percentage of 'not updating' issues?", o: ["10%", "25%", "40%", "80%"], c: 2 },
+    { q: "'expected block close' error means:", o: ["Server is down", "Missing {% endif %} or {% endfor %}", "Wrong password", "Theme is broken"], c: 1 },
+    { q: "If changes broke production, FIRST action is:", o: ["Debug on live site", "Immediately revert to backup/previous version", "Wait for client to notice", "Delete the store"], c: 1 },
+    { q: "Client provides low-res images. You should:", o: ["Use them anyway", "Pause timeline and request correct assets", "Upscale with software", "Skip those sections"], c: 1 },
+    { q: "When feature is technically impossible, you should:", o: ["Just say 'can't be done'", "Provide alternatives: 'We have option A or B'", "Try anyway", "Ignore the request"], c: 1 },
+    { q: "Client edited theme and broke things. This is:", o: ["Your responsibility to fix for free", "New scope — additional work", "PM's problem", "Ignored"], c: 1 },
+    { q: "Escalate to senior developer after debugging for:", o: ["1 minute", "15 minutes with no progress", "2 hours", "Never escalate"], c: 1 },
+    { q: "To isolate a bug, you should:", o: ["Delete everything", "Comment out sections until error goes", "Ask the client", "Ignore it"], c: 1 },
+    { q: "'It works on my machine' is:", o: ["Acceptable", "NOT acceptable — if doesn't work for client, it's broken", "Good enough", "Developer's right"], c: 1 }
+];
+
+const task9Quiz = [
+    { q: "AI (ChatGPT/Claude) can help with:", o: ["Only writing emails", "Creating custom sections, debugging, code review", "Nothing related to code", "Only design work"], c: 1 },
+    { q: "Before adding AI-generated code to theme, you should:", o: ["Use it directly on live theme", "Test on duplicate theme first", "Skip testing", "Ask client to test"], c: 1 },
+    { q: "Custom section files are placed in:", o: ["Assets folder", "Sections folder", "Layout folder", "Config folder"], c: 1 },
+    { q: "When prompting AI for a custom section, include:", o: ["Just the section name", "Description, editable fields, Shopify 2.0, responsive requirements", "Nothing specific", "Only colors"], c: 1 },
+    { q: "The 7-Figure Designer prompt is used to:", o: ["Create sections", "Analyze store design and get improvement suggestions", "Fix bugs", "Write product descriptions"], c: 1 },
+    { q: "After AI generates code, you must:", o: ["Use it immediately", "Test on duplicate theme, check mobile, verify no console errors", "Trust it completely", "Ignore errors"], c: 1 },
+    { q: "To debug with AI, you should provide:", o: ["Just 'it's broken'", "Exact error message, file location, code snippet", "Store URL only", "Nothing specific"], c: 1 },
+    { q: "Schema in Shopify sections allows:", o: ["Nothing", "Editing from theme customizer without touching code", "Faster loading", "More products"], c: 1 },
+    { q: "Official Shopify Liquid documentation is at:", o: ["google.com", "shopify.dev/docs/api/liquid", "wordpress.org", "github.com"], c: 1 },
+    { q: "Learning path should start with:", o: ["Advanced JavaScript", "Master theme customizer first (no code)", "Custom apps", "Backend development"], c: 1 }
+];
+
+const task10Quiz = [
+    { q: "Before making ANY theme changes:", o: ["Work on live", "Duplicate theme first", "Ask PM", "Skip backup"], c: 1 },
+    { q: "Mobile traffic percentage:", o: ["30%", "50%", "70%", "90%"], c: 2 },
+    { q: "Target Mobile PageSpeed:", o: ["50+", "70+", "85+", "95+"], c: 2 },
+    { q: "1-second delay = conversion loss of:", o: ["2%", "5%", "7%", "10%"], c: 2 },
+    { q: "FIRST check for US client store:", o: ["Theme", "Currency is USD, not INR", "Logo", "Products"], c: 1 },
+    { q: "Collaborator access code is found in:", o: ["Products", "Settings → Users → Collaborators", "Theme", "Apps"], c: 1 },
+    { q: "Hero headline max words:", o: ["3", "7", "15", "Unlimited"], c: 1 },
+    { q: "Product page #1 conversion driver (after price):", o: ["Images", "Customer reviews", "Title", "Speed"], c: 1 },
+    { q: "Maximum apps for healthy store:", o: ["5", "10-12", "20", "30+"], c: 1 },
+    { q: "Test credit card number:", o: ["1234...", "4242 4242 4242 4242", "0000...", "Random"], c: 1 },
+    { q: "QA checklist total points:", o: ["40", "50", "60", "100"], c: 2 },
+    { q: "Desktop PageSpeed target:", o: ["70+", "80+", "90+", "95+"], c: 2 },
+    { q: "Minimum touch target size:", o: ["20px", "44px", "60px", "100px"], c: 1 },
+    { q: "Hard refresh solves what % of issues:", o: ["10%", "25%", "40%", "80%"], c: 2 },
+    { q: "'expected block close' means:", o: ["Server down", "Missing {% endif %} or {% endfor %}", "Wrong password", "Theme broken"], c: 1 },
+    { q: "Custom sections go in which folder:", o: ["Assets", "Sections", "Layout", "Config"], c: 1 },
+    { q: "After AI generates code:", o: ["Use directly", "Test on duplicate theme first", "Skip testing", "Trust completely"], c: 1 },
+    { q: "P0 priority tasks are:", o: ["Learning", "Code reviews", "Production bugs, security, deadlines", "PM questions"], c: 2 },
+    { q: "'It works on my machine' is:", o: ["Acceptable", "NOT acceptable", "Good enough", "Developer's right"], c: 1 },
+    { q: "Size guide reduces returns by:", o: ["5%", "15%", "30%+", "50%"], c: 2 }
+];
+
+// Export all quizzes
+const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+
