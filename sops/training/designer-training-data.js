@@ -683,151 +683,152 @@ trainingTasks[6].content = task7Content;
 trainingTasks[7].content = task8Content;
 trainingTasks[8].content = task9Content;
 trainingTasks[9].content = task10Content;
-
 // ===============================================
 // QUIZ QUESTIONS - 120 Total (10 per task + 20 final)
+// Answer positions randomized for equal A/B/C/D distribution
 // ===============================================
 
 const task1Quiz = [
-    { q: "WHITESPACE = LUXURY means:", o: ["Add as many elements as possible", "Crowded = cheap, Breathing room = premium", "White backgrounds only", "No images allowed"], c: 1 },
-    { q: "What percentage of ecommerce traffic is mobile?", o: ["30%", "50%", "70%", "90%"], c: 2 },
-    { q: "CONSISTENCY IS KING means:", o: ["Use the same design for every client", "Same fonts, colors, button styles, spacing — EVERYWHERE", "Never change designs", "Copy competitor designs"], c: 1 },
-    { q: "Every design decision should answer:", o: ["Is this award-winning?", "Will this help visitors buy?", "Is this my favorite color?", "Will this impress other designers?"], c: 1 },
-    { q: "After 15 days of onboarding, ONE careless mistake can result in:", o: ["A warning", "Extra training", "Potential removal from client work", "Nothing serious"], c: 2 },
-    { q: "Maximum font families per store:", o: ["1", "2", "5", "Unlimited"], c: 1 },
-    { q: "Premium design includes all EXCEPT:", o: ["Generous whitespace", "Clear visual hierarchy", "Crowded layouts with many elements", "High-quality imagery"], c: 2 },
-    { q: "P0 (highest priority) tasks for designers are:", o: ["Learning and inspiration", "Revision requests, deadline deliveries, PM questions", "Design system updates", "Mockup refinements"], c: 1 },
-    { q: "Peer review before delivery is:", o: ["Optional", "Recommended — fresh eyes catch what you missed", "Only for juniors", "Not needed"], c: 1 },
-    { q: "A beautiful store that doesn't sell is:", o: ["A success", "A failure", "Good enough", "Award-worthy"], c: 1 }
+    { q: "WHITESPACE = LUXURY means:", o: ["No images allowed", "White backgrounds only", "Add as many elements as possible", "Crowded = cheap, Breathing room = premium"], c: 3 },
+    { q: "What percentage of ecommerce traffic is mobile?", o: ["70%", "30%", "50%", "90%"], c: 0 },
+    { q: "CONSISTENCY IS KING means:", o: ["Copy competitor designs", "Same fonts, colors, button styles, spacing — EVERYWHERE", "Use the same design for every client", "Never change designs"], c: 1 },
+    { q: "Every design decision should answer:", o: ["Is this my favorite color?", "Is this award-winning?", "Will this help visitors buy?", "Will this impress other designers?"], c: 2 },
+    { q: "After 15 days of onboarding, ONE careless mistake can result in:", o: ["Potential removal from client work", "Extra training", "A warning", "Nothing serious"], c: 0 },
+    { q: "Maximum font families per store:", o: ["Unlimited", "5", "2", "1"], c: 2 },
+    { q: "Premium design includes all EXCEPT:", o: ["Generous whitespace", "High-quality imagery", "Crowded layouts with many elements", "Clear visual hierarchy"], c: 2 },
+    { q: "P0 (highest priority) tasks for designers are:", o: ["Design system updates", "Mockup refinements", "Learning and inspiration", "Revision requests, deadline deliveries, PM questions"], c: 3 },
+    { q: "Peer review before delivery is:", o: ["Recommended — fresh eyes catch what you missed", "Not needed", "Optional", "Only for juniors"], c: 0 },
+    { q: "A beautiful store that doesn't sell is:", o: ["Good enough", "A failure", "Award-worthy", "A success"], c: 1 }
 ];
 
 const task2Quiz = [
-    { q: "The 60-30-10 rule means:", o: ["60 colors, 30 fonts, 10 images", "60% dominant, 30% secondary, 10% accent color", "60 pages, 30 sections, 10 products", "Random color distribution"], c: 1 },
-    { q: "Blue color psychology represents:", o: ["Energy and urgency", "Trust, reliability, technology", "Luxury and sophistication", "Natural and organic"], c: 1 },
-    { q: "Black/Gold colors are best for:", o: ["Kids products", "Food and beverage", "Luxury and premium brands", "Health and wellness"], c: 2 },
-    { q: "Add to Cart button should:", o: ["Blend with background", "POP with high contrast", "Be the same color as text", "Be hidden"], c: 1 },
-    { q: "If client doesn't provide brand colors, you should:", o: ["Use random colors", "Extract from logo or create complementary palette", "Skip color entirely", "Use default theme colors"], c: 1 },
-    { q: "Orange/Red colors create:", o: ["Calm and trust", "Energy, urgency, appetite", "Luxury feel", "Natural vibe"], c: 1 },
-    { q: "Minimum contrast ratio for CTAs:", o: ["2:1", "3:1", "4.5:1", "No minimum"], c: 2 },
-    { q: "Green colors work best for:", o: ["Tech/Gadgets", "Health, wellness, sustainability", "Luxury brands", "Fashion"], c: 1 },
-    { q: "Primary color is used for:", o: ["Backgrounds only", "Buttons, links, key CTAs", "Borders and dividers", "Text only"], c: 1 },
-    { q: "The 60% (dominant color) is usually:", o: ["The brightest color", "Background, large sections (neutral/light)", "CTA buttons", "Accent highlights"], c: 1 }
+    { q: "The 60-30-10 rule means:", o: ["60% dominant, 30% secondary, 10% accent color", "Random color distribution", "60 colors, 30 fonts, 10 images", "60 pages, 30 sections, 10 products"], c: 0 },
+    { q: "Blue color psychology represents:", o: ["Natural and organic", "Trust, reliability, technology", "Energy and urgency", "Luxury and sophistication"], c: 1 },
+    { q: "Black/Gold colors are best for:", o: ["Health and wellness", "Kids products", "Luxury and premium brands", "Food and beverage"], c: 2 },
+    { q: "Add to Cart button should:", o: ["Be the same color as text", "Be hidden", "Blend with background", "POP with high contrast"], c: 3 },
+    { q: "If client doesn't provide brand colors, you should:", o: ["Extract from logo or create complementary palette", "Skip color entirely", "Use random colors", "Use default theme colors"], c: 0 },
+    { q: "Orange/Red colors create:", o: ["Natural vibe", "Energy, urgency, appetite", "Calm and trust", "Luxury feel"], c: 1 },
+    { q: "Minimum contrast ratio for CTAs:", o: ["2:1", "No minimum", "4.5:1", "3:1"], c: 2 },
+    { q: "Green colors work best for:", o: ["Fashion", "Luxury brands", "Tech/Gadgets", "Health, wellness, sustainability"], c: 3 },
+    { q: "Primary color is used for:", o: ["Buttons, links, key CTAs", "Borders and dividers", "Backgrounds only", "Text only"], c: 0 },
+    { q: "The 60% (dominant color) is usually:", o: ["CTA buttons", "Background, large sections (neutral/light)", "The brightest color", "Accent highlights"], c: 1 }
 ];
 
 const task3Quiz = [
-    { q: "Maximum font families per store:", o: ["1", "2", "4", "Unlimited"], c: 1 },
-    { q: "The 2-Font Rule formula is:", o: ["2 body fonts", "1 distinctive heading font + 1 clean body font", "2 heading fonts", "Any 2 fonts"], c: 1 },
-    { q: "Minimum body text size:", o: ["10px", "12px", "16px (never smaller!)", "20px"], c: 2 },
-    { q: "Desktop H1 (Hero) size range:", o: ["16-24px", "24-32px", "48-64px", "100-120px"], c: 2 },
-    { q: "For luxury/high-end stores, recommended heading font:", o: ["Comic Sans", "Playfair Display", "Arial", "Impact"], c: 1 },
-    { q: "Mobile H1 size range:", o: ["16-20px", "32-40px", "48-64px", "80-100px"], c: 1 },
-    { q: "Body text line height should be:", o: ["1.0", "1.5-1.7", "3.0", "No line height needed"], c: 1 },
-    { q: "For modern/tech stores, recommended font pair:", o: ["Playfair Display + Lato", "Poppins + Inter", "Comic Sans + Arial", "Times New Roman + Georgia"], c: 1 },
-    { q: "More than 2 fonts creates:", o: ["Better design", "Visual chaos, slower load times, amateur look", "Premium feel", "No difference"], c: 1 },
-    { q: "Small/Caption text size:", o: ["8px", "14px", "20px", "24px"], c: 1 }
+    { q: "Maximum font families per store:", o: ["4", "Unlimited", "2", "1"], c: 2 },
+    { q: "The 2-Font Rule formula is:", o: ["Any 2 fonts", "2 heading fonts", "2 body fonts", "1 distinctive heading font + 1 clean body font"], c: 3 },
+    { q: "Minimum body text size:", o: ["16px (never smaller!)", "20px", "10px", "12px"], c: 0 },
+    { q: "Desktop H1 (Hero) size range:", o: ["24-32px", "48-64px", "16-24px", "100-120px"], c: 1 },
+    { q: "For luxury/high-end stores, recommended heading font:", o: ["Impact", "Playfair Display", "Comic Sans", "Arial"], c: 1 },
+    { q: "Mobile H1 size range:", o: ["80-100px", "48-64px", "32-40px", "16-20px"], c: 2 },
+    { q: "Body text line height should be:", o: ["No line height needed", "3.0", "1.0", "1.5-1.7"], c: 3 },
+    { q: "For modern/tech stores, recommended font pair:", o: ["Poppins + Inter", "Times New Roman + Georgia", "Comic Sans + Arial", "Playfair Display + Lato"], c: 0 },
+    { q: "More than 2 fonts creates:", o: ["Premium feel", "Visual chaos, slower load times, amateur look", "No difference", "Better design"], c: 1 },
+    { q: "Small/Caption text size:", o: ["20px", "24px", "14px", "8px"], c: 2 }
 ];
 
 const task4Quiz = [
-    { q: "The Spacing Multiplier System uses multiples of:", o: ["5px", "8px", "10px", "12px"], c: 1 },
-    { q: "Desktop spacing between sections:", o: ["8-16px", "24-32px", "80-120px", "200-300px"], c: 2 },
-    { q: "Max content width should be:", o: ["600-800px", "1200-1400px", "2000-2400px", "Full width always"], c: 1 },
-    { q: "Text max-width for readability:", o: ["20-30 characters per line", "65-75 characters per line", "100-150 characters per line", "No limit"], c: 1 },
-    { q: "Desktop product grids should have:", o: ["1-2 columns", "4-5 columns", "8-10 columns", "Single column only"], c: 1 },
-    { q: "Mobile product grids should have:", o: ["1 column only", "2 columns", "5 columns", "Same as desktop"], c: 1 },
-    { q: "Card padding on desktop:", o: ["4-8px", "24-32px", "100-120px", "No padding"], c: 1 },
-    { q: "Button padding format:", o: ["8px all around", "16px 32px (vertical horizontal)", "100px", "No padding needed"], c: 1 },
-    { q: "Mobile spacing between sections:", o: ["8-16px", "48-64px", "80-120px", "200px"], c: 1 },
-    { q: "Desktop grid typically uses:", o: ["4 columns", "8 columns", "12 columns", "20 columns"], c: 2 }
+    { q: "The Spacing Multiplier System uses multiples of:", o: ["10px", "12px", "5px", "8px"], c: 3 },
+    { q: "Desktop spacing between sections:", o: ["80-120px", "8-16px", "24-32px", "200-300px"], c: 0 },
+    { q: "Max content width should be:", o: ["2000-2400px", "1200-1400px", "600-800px", "Full width always"], c: 1 },
+    { q: "Text max-width for readability:", o: ["100-150 characters per line", "No limit", "65-75 characters per line", "20-30 characters per line"], c: 2 },
+    { q: "Desktop product grids should have:", o: ["Single column only", "8-10 columns", "1-2 columns", "4-5 columns"], c: 3 },
+    { q: "Mobile product grids should have:", o: ["2 columns", "5 columns", "Same as desktop", "1 column only"], c: 0 },
+    { q: "Card padding on desktop:", o: ["No padding", "24-32px", "4-8px", "100-120px"], c: 1 },
+    { q: "Button padding format:", o: ["8px all around", "100px", "16px 32px (vertical horizontal)", "No padding needed"], c: 2 },
+    { q: "Mobile spacing between sections:", o: ["48-64px", "80-120px", "200px", "8-16px"], c: 0 },
+    { q: "Desktop grid typically uses:", o: ["4 columns", "20 columns", "12 columns", "8 columns"], c: 2 }
 ];
 
 const task5Quiz = [
-    { q: "Trust elements help with:", o: ["Making design prettier", "Reducing friction and increasing buyer confidence", "Adding more content", "Slowing down the site"], c: 1 },
-    { q: "Free Shipping badge should appear:", o: ["Only in footer", "Trust bar below hero AND product page near ATC", "Only on checkout", "Nowhere visible"], c: 1 },
-    { q: "Secure Payment badge includes:", o: ["Only text", "Lock icon + payment logos (Visa/MC/PayPal)", "Just an image", "No icon needed"], c: 1 },
-    { q: "Customer reviews with photos are:", o: ["Not needed", "Powerful social proof that builds trust", "Optional", "Bad for conversions"], c: 1 },
-    { q: "Trust bar placement:", o: ["Only in footer", "Below hero section", "Hidden", "Only on mobile"], c: 1 },
-    { q: "Return policy badge copy example:", o: ["No returns", "30-Day Easy Returns", "Call us maybe", "Ask your lawyer"], c: 1 },
-    { q: "Add to Cart button should:", o: ["Blend with background", "Be high-contrast and clearly visible", "Be small and hidden", "Match text color"], c: 1 },
-    { q: "Secure payment badge location on product page:", o: ["Top of page only", "Near Add to Cart button", "Only in footer", "Not on product page"], c: 1 },
-    { q: "Reviews should show:", o: ["Only negative reviews", "Star ratings, customer photos, verified badges", "No photos", "Fake reviews"], c: 1 },
-    { q: "The button that made $10,000 was changed to:", o: ["Smaller and hidden", "High-contrast, bold with subtle animation", "Same color as background", "Removed entirely"], c: 1 }
+    { q: "Trust elements help with:", o: ["Adding more content", "Slowing down the site", "Making design prettier", "Reducing friction and increasing buyer confidence"], c: 3 },
+    { q: "Free Shipping badge should appear:", o: ["Trust bar below hero AND product page near ATC", "Only on checkout", "Nowhere visible", "Only in footer"], c: 0 },
+    { q: "Secure Payment badge includes:", o: ["No icon needed", "Lock icon + payment logos (Visa/MC/PayPal)", "Just an image", "Only text"], c: 1 },
+    { q: "Customer reviews with photos are:", o: ["Bad for conversions", "Not needed", "Powerful social proof that builds trust", "Optional"], c: 2 },
+    { q: "Trust bar placement:", o: ["Only in footer", "Only on mobile", "Hidden", "Below hero section"], c: 3 },
+    { q: "Return policy badge copy example:", o: ["30-Day Easy Returns", "Call us maybe", "No returns", "Ask your lawyer"], c: 0 },
+    { q: "Add to Cart button should:", o: ["Match text color", "Be high-contrast and clearly visible", "Blend with background", "Be small and hidden"], c: 1 },
+    { q: "Secure payment badge location on product page:", o: ["Only in footer", "Not on product page", "Near Add to Cart button", "Top of page only"], c: 2 },
+    { q: "Reviews should show:", o: ["Fake reviews", "No photos", "Only negative reviews", "Star ratings, customer photos, verified badges"], c: 3 },
+    { q: "The button that made $10,000 was changed to:", o: ["High-contrast, bold with subtle animation", "Same color as background", "Removed entirely", "Smaller and hidden"], c: 0 }
 ];
 
 const task6Quiz = [
-    { q: "What percentage of ecommerce traffic is mobile?", o: ["30%", "50%", "70%", "90%"], c: 2 },
-    { q: "Minimum touch target size:", o: ["20px × 20px", "44px × 44px", "60px × 60px", "100px × 100px"], c: 1 },
-    { q: "Primary mobile design width:", o: ["320px", "375px", "500px", "768px"], c: 1 },
-    { q: "Mobile body text minimum size:", o: ["10px", "12px", "16px", "20px"], c: 2 },
-    { q: "Mobile product grids should have:", o: ["1 column only", "2 columns maximum", "5 columns", "Same as desktop"], c: 1 },
-    { q: "Sticky Add to Cart should be:", o: ["Hidden on mobile", "Fixed at bottom on scroll", "Only at top", "Not needed"], c: 1 },
-    { q: "Horizontal scrolling on mobile is:", o: ["Good for navigation", "Never allowed — bad UX", "Recommended", "Optional"], c: 1 },
-    { q: "Mobile form input minimum height:", o: ["24px", "48px", "100px", "No minimum"], c: 1 },
-    { q: "Thumb zone design places primary actions:", o: ["At the top (hard to reach)", "At the bottom (easy to reach)", "In the middle only", "Hidden"], c: 1 },
-    { q: "Mobile-first means:", o: ["Design desktop first, then shrink", "Design for 375px FIRST, then scale up to desktop", "Mobile is optional", "Same design for all screens"], c: 1 }
+    { q: "What percentage of ecommerce traffic is mobile?", o: ["90%", "30%", "70%", "50%"], c: 2 },
+    { q: "Minimum touch target size:", o: ["100px × 100px", "20px × 20px", "60px × 60px", "44px × 44px"], c: 3 },
+    { q: "Primary mobile design width:", o: ["375px", "500px", "768px", "320px"], c: 0 },
+    { q: "Mobile body text minimum size:", o: ["20px", "16px", "10px", "12px"], c: 1 },
+    { q: "Mobile product grids should have:", o: ["Same as desktop", "5 columns", "2 columns maximum", "1 column only"], c: 2 },
+    { q: "Sticky Add to Cart should be:", o: ["Not needed", "Only at top", "Hidden on mobile", "Fixed at bottom on scroll"], c: 3 },
+    { q: "Horizontal scrolling on mobile is:", o: ["Never allowed — bad UX", "Optional", "Good for navigation", "Recommended"], c: 0 },
+    { q: "Mobile form input minimum height:", o: ["No minimum", "48px", "24px", "100px"], c: 1 },
+    { q: "Thumb zone design places primary actions:", o: ["In the middle only", "Hidden", "At the bottom (easy to reach)", "At the top (hard to reach)"], c: 2 },
+    { q: "Mobile-first means:", o: ["Same design for all screens", "Mobile is optional", "Design desktop first, then shrink", "Design for 375px FIRST, then scale up to desktop"], c: 3 }
 ];
 
 const task7Quiz = [
-    { q: "QA checklist includes checking:", o: ["Only colors", "Visual consistency, images, responsive, polish", "Only fonts", "Just the homepage"], c: 1 },
-    { q: "Placeholder text like Lorem Ipsum should be:", o: ["Left in final design", "Removed — no placeholder content allowed", "Made smaller", "Hidden"], c: 1 },
-    { q: "Before sharing with client, mobile should be tested at:", o: ["1200px width", "375px width", "Any width", "Desktop only"], c: 1 },
-    { q: "Images should be:", o: ["Any quality", "Compressed and optimized", "Maximum file size", "Blurry is fine"], c: 1 },
-    { q: "Brand colors must be:", o: ["Different on each page", "Applied consistently throughout", "Random", "Only on homepage"], c: 1 },
-    { q: "Store looks 'template-y' — fix by:", o: ["Using more default settings", "Customizing with brand colors, unique fonts, custom imagery", "Adding more stock photos", "Keeping defaults"], c: 1 },
-    { q: "Hover states should:", o: ["Be ignored", "Work properly", "Be removed", "Only work on mobile"], c: 1 },
-    { q: "Spelling errors in design are:", o: ["Acceptable", "Not allowed — must be checked before delivery", "Client's problem", "Normal"], c: 1 },
-    { q: "To fix blurry images:", o: ["Upscale them", "Request 2x resolution from client", "Make them smaller", "Add blur effect"], c: 1 },
-    { q: "CTAs should be:", o: ["Hidden", "Visible and above fold", "Only in footer", "Same color as background"], c: 1 }
+    { q: "QA checklist includes checking:", o: ["Visual consistency, images, responsive, polish", "Just the homepage", "Only colors", "Only fonts"], c: 0 },
+    { q: "Placeholder text like Lorem Ipsum should be:", o: ["Hidden", "Removed — no placeholder content allowed", "Left in final design", "Made smaller"], c: 1 },
+    { q: "Before sharing with client, mobile should be tested at:", o: ["Desktop only", "Any width", "375px width", "1200px width"], c: 2 },
+    { q: "Images should be:", o: ["Blurry is fine", "Maximum file size", "Any quality", "Compressed and optimized"], c: 3 },
+    { q: "Brand colors must be:", o: ["Applied consistently throughout", "Random", "Different on each page", "Only on homepage"], c: 0 },
+    { q: "Store looks 'template-y' — fix by:", o: ["Adding more stock photos", "Customizing with brand colors, unique fonts, custom imagery", "Keeping defaults", "Using more default settings"], c: 1 },
+    { q: "Hover states should:", o: ["Only work on mobile", "Be removed", "Work properly", "Be ignored"], c: 2 },
+    { q: "Spelling errors in design are:", o: ["Normal", "Acceptable", "Client's problem", "Not allowed — must be checked before delivery"], c: 3 },
+    { q: "To fix blurry images:", o: ["Request 2x resolution from client", "Make them smaller", "Add blur effect", "Upscale them"], c: 0 },
+    { q: "CTAs should be:", o: ["Same color as background", "Visible and above fold", "Only in footer", "Hidden"], c: 1 }
 ];
 
 const task8Quiz = [
-    { q: "Client says 'I'll know it when I see it.' You should:", o: ["Start designing randomly", "Show 3 different directions and ask which elements they like", "Give up", "Ask PM to cancel"], c: 1 },
-    { q: "Multiple stakeholders giving conflicting feedback. You should:", o: ["Try to please everyone", "Ask for consolidated feedback into one document", "Ignore all feedback", "Pick your favorite opinion"], c: 1 },
-    { q: "Client wants design that won't convert. You should:", o: ["Just do what they want", "Advise with data, document your recommendation if they insist", "Refuse to work", "Don't say anything"], c: 1 },
-    { q: "Endless revision requests beyond included rounds. You should:", o: ["Do unlimited free revisions", "Route through PM for additional quote", "Ignore the requests", "Cancel the project"], c: 1 },
-    { q: "Client wants free design concepts before ordering. You should:", o: ["Create free designs", "Route to Sales — no spec work, portfolio demonstrates quality", "Do a quick mockup", "Negotiate half payment"], c: 1 },
-    { q: "Client provides low-quality assets. You should:", o: ["Use them anyway", "Request high-resolution assets before proceeding", "Upscale and hope for best", "Skip those sections"], c: 1 },
-    { q: "Client says 'It doesn't pop' — they mean:", o: ["Remove all colors", "Needs more contrast or vibrancy", "Make it smaller", "Add more text"], c: 1 },
-    { q: "Client disapproves of everything — you should:", o: ["Keep guessing", "Ask for specific examples of designs they love", "Give up", "Do the opposite"], c: 1 },
-    { q: "Client wants auto-playing music. You should:", o: ["Add it", "Push back — it causes instant bounce, never do this", "Add it quietly", "Add loud music"], c: 1 },
-    { q: "'Make the logo bigger' usually means:", o: ["Make logo 10x bigger", "They want more brand presence — add brand colors elsewhere", "Remove the logo", "Only show logo"], c: 1 }
+    { q: "Client says 'I'll know it when I see it.' You should:", o: ["Give up", "Ask PM to cancel", "Show 3 different directions and ask which elements they like", "Start designing randomly"], c: 2 },
+    { q: "Multiple stakeholders giving conflicting feedback. You should:", o: ["Pick your favorite opinion", "Ignore all feedback", "Try to please everyone", "Ask for consolidated feedback into one document"], c: 3 },
+    { q: "Client wants design that won't convert. You should:", o: ["Advise with data, document your recommendation if they insist", "Refuse to work", "Just do what they want", "Don't say anything"], c: 0 },
+    { q: "Endless revision requests beyond included rounds. You should:", o: ["Cancel the project", "Route through PM for additional quote", "Do unlimited free revisions", "Ignore the requests"], c: 1 },
+    { q: "Client wants free design concepts before ordering. You should:", o: ["Negotiate half payment", "Do a quick mockup", "Route to Sales — no spec work, portfolio demonstrates quality", "Create free designs"], c: 2 },
+    { q: "Client provides low-quality assets. You should:", o: ["Use them anyway", "Skip those sections", "Upscale and hope for best", "Request high-resolution assets before proceeding"], c: 3 },
+    { q: "Client says 'It doesn't pop' — they mean:", o: ["Needs more contrast or vibrancy", "Add more text", "Remove all colors", "Make it smaller"], c: 0 },
+    { q: "Client disapproves of everything — you should:", o: ["Give up", "Ask for specific examples of designs they love", "Do the opposite", "Keep guessing"], c: 1 },
+    { q: "Client wants auto-playing music. You should:", o: ["Add it quietly", "Add loud music", "Push back — it causes instant bounce, never do this", "Add it"], c: 2 },
+    { q: "'Make the logo bigger' usually means:", o: ["Remove the logo", "Only show logo", "Make logo 10x bigger", "They want more brand presence — add brand colors elsewhere"], c: 3 }
 ];
 
 const task9Quiz = [
-    { q: "ChatGPT can help designers with:", o: ["Only code", "Design direction, color palettes, CRO review, microcopy", "Nothing design-related", "Only client emails"], c: 1 },
-    { q: "Figma file should include a page called:", o: ["Random stuff", "Style Guide (colors, fonts, spacing, components)", "Untitled", "Final-v2-FINAL"], c: 1 },
-    { q: "Correct layer naming for a hero section frame:", o: ["Frame 432", "Home-Hero", "Untitled", "Rectangle 17"], c: 1 },
-    { q: "Moodboard page is used for:", o: ["Final designs", "Reference screenshots and inspiration for client approval", "Code", "Deleted content"], c: 1 },
-    { q: "Tool for color palette generation:", o: ["Photoshop only", "Coolors.co", "Microsoft Word", "Excel"], c: 1 },
-    { q: "TinyPNG is used for:", o: ["Creating colors", "Image compression", "Font selection", "Background removal"], c: 1 },
-    { q: "Archive page in Figma contains:", o: ["Final approved designs", "Old versions and rejected concepts (internal only)", "Client feedback", "Live designs"], c: 1 },
-    { q: "Remove.bg is used for:", o: ["Color generation", "Background removal", "Font selection", "Compression"], c: 1 },
-    { q: "End of day design workflow includes:", o: ["Leaving work incomplete", "Respond to revisions, update Slack, prepare tomorrow", "Starting new projects", "Deleting files"], c: 1 },
-    { q: "Component naming format:", o: ["Thing 1", "Type/Name (e.g., Button/Primary)", "Random", "Final"], c: 1 }
+    { q: "ChatGPT can help designers with:", o: ["Only client emails", "Nothing design-related", "Only code", "Design direction, color palettes, CRO review, microcopy"], c: 3 },
+    { q: "Figma file should include a page called:", o: ["Style Guide (colors, fonts, spacing, components)", "Final-v2-FINAL", "Untitled", "Random stuff"], c: 0 },
+    { q: "Correct layer naming for a hero section frame:", o: ["Rectangle 17", "Home-Hero", "Untitled", "Frame 432"], c: 1 },
+    { q: "Moodboard page is used for:", o: ["Code", "Deleted content", "Reference screenshots and inspiration for client approval", "Final designs"], c: 2 },
+    { q: "Tool for color palette generation:", o: ["Microsoft Word", "Excel", "Photoshop only", "Coolors.co"], c: 3 },
+    { q: "TinyPNG is used for:", o: ["Image compression", "Background removal", "Font selection", "Creating colors"], c: 0 },
+    { q: "Archive page in Figma contains:", o: ["Live designs", "Old versions and rejected concepts (internal only)", "Final approved designs", "Client feedback"], c: 1 },
+    { q: "Remove.bg is used for:", o: ["Font selection", "Compression", "Background removal", "Color generation"], c: 2 },
+    { q: "End of day design workflow includes:", o: ["Deleting files", "Starting new projects", "Leaving work incomplete", "Respond to revisions, update Slack, prepare tomorrow"], c: 3 },
+    { q: "Component naming format:", o: ["Type/Name (e.g., Button/Primary)", "Random", "Final", "Thing 1"], c: 0 }
 ];
 
 const task10Quiz = [
-    { q: "WHITESPACE = LUXURY means:", o: ["Add more elements", "Crowded = cheap, Breathing room = premium", "White only", "No images"], c: 1 },
-    { q: "Mobile traffic percentage:", o: ["30%", "50%", "70%", "90%"], c: 2 },
-    { q: "Maximum font families:", o: ["1", "2", "5", "Unlimited"], c: 1 },
-    { q: "Minimum body text size:", o: ["10px", "12px", "16px", "20px"], c: 2 },
-    { q: "The 60-30-10 rule is for:", o: ["Font sizes", "Color balance (60% dominant, 30% secondary, 10% accent)", "Spacing", "Images"], c: 1 },
-    { q: "Minimum touch target size:", o: ["20px", "44px", "60px", "100px"], c: 1 },
-    { q: "8px Spacing Multiplier means using:", o: ["Random spacing", "Multiples of 8 (8, 16, 24, 32, 48, 64)", "Only 8px", "No spacing"], c: 1 },
-    { q: "Trust elements include:", o: ["More products", "Free shipping, easy returns, secure payment badges", "More colors", "Animations"], c: 1 },
-    { q: "Primary mobile design width:", o: ["320px", "375px", "500px", "768px"], c: 1 },
-    { q: "Blue color represents:", o: ["Energy", "Trust, reliability, technology", "Luxury", "Natural"], c: 1 },
-    { q: "Client says 'I'll know it when I see it' — you should:", o: ["Guess", "Show 3 different directions", "Cancel", "Wait"], c: 1 },
-    { q: "Multiple stakeholders with conflicting feedback:", o: ["Please everyone", "Ask for consolidated feedback", "Ignore", "Pick one"], c: 1 },
-    { q: "Endless revisions beyond included rounds:", o: ["Free revisions", "Route through PM for additional quote", "Ignore", "Cancel"], c: 1 },
-    { q: "Low-quality assets from client:", o: ["Use anyway", "Request high-resolution before proceeding", "Upscale", "Skip"], c: 1 },
-    { q: "Figma Style Guide page contains:", o: ["Deleted files", "Colors, fonts, spacing, components", "Random", "Only text"], c: 1 },
-    { q: "Correct layer naming:", o: ["Frame 432", "Home-Hero", "Untitled", "Final-v3"], c: 1 },
-    { q: "P0 priority for designers:", o: ["Learning", "Revision requests, deadline deliveries, PM questions", "Inspiration", "System updates"], c: 1 },
-    { q: "After 15 days, ONE careless mistake can result in:", o: ["Warning", "Potential removal from client work", "Nothing", "Bonus"], c: 1 },
-    { q: "Add to Cart button should:", o: ["Blend in", "Be high-contrast and clearly visible", "Be hidden", "Match text"], c: 1 },
-    { q: "Design for conversion means:", o: ["Win awards", "Every decision answers 'Will this help visitors buy?'", "Look pretty", "Use many colors"], c: 1 }
+    { q: "WHITESPACE = LUXURY means:", o: ["Add more elements", "Crowded = cheap, Breathing room = premium", "No images", "White only"], c: 1 },
+    { q: "Mobile traffic percentage:", o: ["70%", "90%", "30%", "50%"], c: 0 },
+    { q: "Maximum font families:", o: ["5", "Unlimited", "1", "2"], c: 3 },
+    { q: "Minimum body text size:", o: ["12px", "10px", "16px", "20px"], c: 2 },
+    { q: "The 60-30-10 rule is for:", o: ["Spacing", "Color balance (60% dominant, 30% secondary, 10% accent)", "Images", "Font sizes"], c: 1 },
+    { q: "Minimum touch target size:", o: ["44px", "20px", "100px", "60px"], c: 0 },
+    { q: "8px Spacing Multiplier means using:", o: ["No spacing", "Only 8px", "Random spacing", "Multiples of 8 (8, 16, 24, 32, 48, 64)"], c: 3 },
+    { q: "Trust elements include:", o: ["Animations", "More colors", "Free shipping, easy returns, secure payment badges", "More products"], c: 2 },
+    { q: "Primary mobile design width:", o: ["768px", "375px", "500px", "320px"], c: 1 },
+    { q: "Blue color represents:", o: ["Trust, reliability, technology", "Natural", "Luxury", "Energy"], c: 0 },
+    { q: "Client says 'I'll know it when I see it' — you should:", o: ["Cancel", "Wait", "Guess", "Show 3 different directions"], c: 3 },
+    { q: "Multiple stakeholders with conflicting feedback:", o: ["Ignore", "Ask for consolidated feedback", "Pick one", "Please everyone"], c: 1 },
+    { q: "Endless revisions beyond included rounds:", o: ["Route through PM for additional quote", "Cancel", "Ignore", "Free revisions"], c: 0 },
+    { q: "Low-quality assets from client:", o: ["Skip", "Upscale", "Use anyway", "Request high-resolution before proceeding"], c: 3 },
+    { q: "Figma Style Guide page contains:", o: ["Only text", "Colors, fonts, spacing, components", "Deleted files", "Random"], c: 1 },
+    { q: "Correct layer naming:", o: ["Home-Hero", "Untitled", "Frame 432", "Final-v3"], c: 0 },
+    { q: "P0 priority for designers:", o: ["System updates", "Inspiration", "Revision requests, deadline deliveries, PM questions", "Learning"], c: 2 },
+    { q: "After 15 days, ONE careless mistake can result in:", o: ["Nothing", "Bonus", "Warning", "Potential removal from client work"], c: 3 },
+    { q: "Add to Cart button should:", o: ["Match text", "Be high-contrast and clearly visible", "Be hidden", "Blend in"], c: 1 },
+    { q: "Design for conversion means:", o: ["Every decision answers 'Will this help visitors buy?'", "Look pretty", "Win awards", "Use many colors"], c: 0 }
 ];
 
 // Export all quizzes
 const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+
 
