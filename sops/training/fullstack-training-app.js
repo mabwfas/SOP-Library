@@ -481,9 +481,7 @@ function showCertificate() {
                 ">Full-Stack Developer Training</h3>
                 
                 <p style="color: #CBD5E1; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 0 auto;">
-                    Demonstrating proficiency in sales mindset, company knowledge, product mastery, 
-                    lead qualification, response templates, sales psychology, objection handling, 
-                    closing techniques, and practice scenarios.
+                    Demonstrating proficiency in full-stack development, frontend & backend integration, Shopify APIs, database management, security practices, testing, and deployment pipelines.
                 </p>
             </div>
             

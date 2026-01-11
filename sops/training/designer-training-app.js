@@ -481,9 +481,7 @@ function showCertificate() {
                 ">UI/UX Designer Training</h3>
                 
                 <p style="color: #CBD5E1; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 0 auto;">
-                    Demonstrating proficiency in sales mindset, company knowledge, product mastery, 
-                    lead qualification, response templates, sales psychology, objection handling, 
-                    closing techniques, and practice scenarios.
+                    Demonstrating proficiency in design principles, UI/UX fundamentals, brand identity, Shopify design systems, responsive design, accessibility, prototyping, and design handoff.
                 </p>
             </div>
             

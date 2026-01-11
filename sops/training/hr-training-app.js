@@ -481,9 +481,7 @@ function showCertificate() {
                 ">HR Executive Training</h3>
                 
                 <p style="color: #CBD5E1; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 0 auto;">
-                    Demonstrating proficiency in sales mindset, company knowledge, product mastery, 
-                    lead qualification, response templates, sales psychology, objection handling, 
-                    closing techniques, and practice scenarios.
+                    Demonstrating proficiency in HR processes, recruitment, onboarding, employee relations, performance management, policy compliance, documentation, and team building.
                 </p>
             </div>
             
