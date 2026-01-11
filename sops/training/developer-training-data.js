@@ -1,870 +1,816 @@
-// Shopify Developer Training Data
-// Complete training content for developer certification
-// UPGRADED: Visuals, Study Guides, and Expanded Lessons
+// Shopify Developer Training Data - COMPLETE OVERHAUL
+// Digital Heroes Shopify Developer Certification Program
+// 10 Tasks, 120 Quiz Questions, Comprehensive Content
 
 const trainingTasks = [
     {
         id: 1,
         title: "Developer Mindset",
-        description: "Code quality fundamentals",
+        description: "Non-negotiable standards & quality",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "📖 Read 'The Store That Lost $50k/Day' case study",
-            "📊 Study the Revenue Impact Graph carefully",
-            "🧠 Internalize the 'Revenue Engineer' concept"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: Developer Standards section",
+            "📖 Study: Quality Standards & Ownership",
+            "🔍 YouTube: 'Shopify development best practices'"
         ]
     },
     {
         id: 2,
-        title: "Company Knowledge",
-        description: "Digital Heroes ecosystem",
-        contentFirst: false,
+        title: "Store Access & Setup",
+        description: "Collaborator access & theme selection",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🏢 Understand the 3 arms of Digital Heroes",
-            "💎 Memorize Premium vs Enterprise package details",
-            "🔍 Watch the 'About Us' video on the main channel (optional)"
+            "⏱️ Estimated Time: 30 minutes",
+            "📖 Read SOP: Getting Store Access section",
+            "📖 Read SOP: Theme Selection & Initial Setup",
+            "🔍 YouTube: 'Shopify collaborator access'"
         ]
     },
     {
         id: 3,
-        title: "Non-Negotiable Standards",
-        description: "Critical code rules",
-        contentFirst: false,
+        title: "Homepage Structure",
+        description: "Section flow & page architecture",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "🚨 Memorize the 4 Rules of Development",
-            "📱 Understand Mobile-First hierarchy (375px → 768px → 1440px)",
-            "⚡ Learn why Speed is non-negotiable"
+            "⏱️ Estimated Time: 40 minutes",
+            "📖 Read SOP: Homepage Section Structure",
+            "📖 Read SOP: Standard Menu & Pages Structure",
+            "🔍 YouTube: 'high converting Shopify homepage'"
         ]
     },
     {
         id: 4,
-        title: "Theme Development",
-        description: "Shopify Liquid basics",
-        contentFirst: false,
+        title: "Product Page CRO",
+        description: "Conversion rate optimization",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "🎨 Study the Theme Architecture Diagram",
-            "💧 Review Liquid cheat sheet basics",
-            "📂 Memorize folder purposes (sections vs snippets)"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: Product Page Optimization",
+            "📖 Read SOP: Conversion Rate Optimization Guide",
+            "🔍 YouTube: 'high converting product page Shopify'"
         ]
     },
     {
         id: 5,
         title: "Speed Optimization",
-        description: "PageSpeed mastery",
-        contentFirst: false,
+        description: "85+ PageSpeed target",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "⚡ Learn the '1 Second = 7% Loss' rule",
-            "🖼️ Master Image Optimization techniques",
-            "🚫 Understand App impact on performance"
+            "⏱️ Estimated Time: 40 minutes",
+            "📖 Read SOP: Speed Optimization section",
+            "📖 Read SOP: Performance Debugging Flowchart",
+            "🔍 YouTube: 'Shopify speed optimization'"
         ]
     },
     {
         id: 6,
-        title: "Quality Assurance",
-        description: "Testing protocols",
-        contentFirst: false,
+        title: "Apps & Checkout",
+        description: "Essential apps & payment setup",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "✅ Memorize the Pre-Submission Checklist",
-            "👀 Commit to the 'Fresh Eyes' rule",
-            "⚖️ Understand the Zero Tolerance Policy"
+            "⏱️ Estimated Time: 35 minutes",
+            "📖 Read SOP: Essential Shopify Apps",
+            "📖 Read SOP: Checkout & Payment Setup",
+            "🤖 ChatGPT: 'Best Shopify apps for conversion'"
         ]
     },
     {
         id: 7,
-        title: "Debugging & Fixes",
-        description: "Problem-solving skills",
-        contentFirst: false,
+        title: "QA Protocol",
+        description: "60-point checklist mastery",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-30 minutes",
-            "🐛 Study the Debugging Workflow flowchart",
-            "🔧 Learn the 'Testing Trifecta'",
-            "💻 Practice using Browser Console (F12)"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: 60-Point QA Checklist",
+            "📖 Read SOP: Self QA Protocol",
+            "🔍 YouTube: 'website QA testing checklist'"
         ]
     },
     {
         id: 8,
-        title: "Client Delivery",
-        description: "Handoff best practices",
-        contentFirst: false,
+        title: "Troubleshooting",
+        description: "Debugging & difficult situations",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🎥 Learn how to record a Loom walkthrough",
-            "💾 Understand Version Control practices",
-            "🤔 Apply the 'Client Perspective Check'"
+            "⏱️ Estimated Time: 40 minutes",
+            "📖 Read SOP: Troubleshooting Common Issues",
+            "📖 Read SOP: Debugging Decision Tree",
+            "🤖 ChatGPT: 'How to debug Shopify Liquid errors'"
         ]
     },
     {
         id: 9,
-        title: "Practice Scenarios",
-        description: "Real-world challenges",
-        contentFirst: false,
+        title: "AI Development",
+        description: "ChatGPT/Claude for custom sections",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "🧠 Solve all 3 scenarios mentally first",
-            "📝 Write down your step-by-step plans",
-            "🔄 Compare with provided checklists"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: Using AI for Development",
+            "📖 Read SOP: Creating Custom Blocks & Sections",
+            "🤖 Practice: Create a custom section with AI"
         ]
     },
     {
         id: 10,
         title: "Final Certification",
-        description: "Comprehensive assessment",
-        contentFirst: false,
+        description: "Comprehensive exam (20 questions)",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Review ALL previous tasks",
-            "🏆 Score 20/20 to pass",
-            "🎉 Get ready to build your first store!"
+            "⏱️ Estimated Time: 60 minutes",
+            "📖 Review entire Developer SOP",
+            "📖 Memorize 4 Non-Negotiable Standards",
+            "📖 Know the 60-Point QA Checklist",
+            "🎥 Prepare for 30-minute video submission"
         ]
     }
 ];
 
-// Task 1: Developer Mindset
+// ===============================================
+// TASK 1: DEVELOPER MINDSET & STANDARDS
+// ===============================================
+
 const task1Content = `
-<h2>📚 PART 1: THE DEVELOPER MINDSET</h2>
-
 <div class="content-section">
-<h3>🎯 The Store That Lost $50,000/Day</h3>
-<p>A client came to us after their "cheap" developer delivered a store. It looked okay on the surface. But hidden underneath:</p>
-<ul>
-<li>❌ PageSpeed: 23 (should be 85+)</li>
-<li>❌ 4+ seconds load time on mobile</li>
-<li>❌ Checkout had JavaScript errors</li>
-<li>❌ 10% of add-to-cart clicks didn't work</li>
-</ul>
-<p>Result? For every 100 visitors, only 1 completed a purchase. Industry average is 2-3. They were losing <strong>$50,000+ per day</strong> in potential sales because of bad code.</p>
-<p>We rebuilt the store. PageSpeed hit 92. Conversion rate tripled.</p>
-<div class="highlight-box">
-<strong>🎯 The Lesson:</strong> Your code doesn't just need to "work." It needs to SELL. A 1-second delay in load time = 7% loss in conversions. Your job isn't just development — it's revenue generation through technical excellence.
-</div>
-</div>
-
-<div class="content-section">
-<h3>📊 Visualizing Impact</h3>
-<img src="images/developer_mindset_graph.png" alt="Developer Revenue Impact Graph" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-<p style="text-align: center; color: #94A3B8; font-size: 0.9em;"><em>The exponential difference between an average coder and a Digital Hero.</em></p>
+    <img src="images/dev_4_standards.png" alt="4 Non-Negotiable Developer Standards" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <h2>🎯 Core Philosophy</h2>
+    <div class="highlight-box">
+        <strong>"Your code doesn't just need to work. It needs to SELL."</strong>
+        <p>A 1-second delay in load time = 7% loss in conversions. Your job isn't just development — it's revenue generation through technical excellence.</p>
+    </div>
+    
+    <h3>📖 The Story That Defines Our Standard</h3>
+    <p>A client came to us after their "cheap" developer delivered a store. Hidden underneath:</p>
+    <ul>
+        <li>❌ PageSpeed: 23 (should be 85+)</li>
+        <li>❌ 4+ seconds load time on mobile</li>
+        <li>❌ Checkout had JavaScript errors</li>
+        <li>❌ 10% of add-to-cart clicks didn't work</li>
+    </ul>
+    <p><strong>Result:</strong> For every 100 visitors, only 1 completed a purchase. They were losing <strong style="color: #EF4444;">$50,000+ per day</strong> in potential sales.</p>
 </div>
 
 <div class="content-section">
-<h3>💡 You Are Not Just a Coder</h3>
-<p>At Digital Heroes, we don't think of ourselves as "developers." We are:</p>
-<ul>
-<li>🏗️ <strong>Store Architects:</strong> Building the foundation of our client's business</li>
-<li>💰 <strong>Revenue Engineers:</strong> Every optimization directly impacts sales</li>
-<li>🎯 <strong>Problem Solvers:</strong> Clients come with broken stores; we fix them</li>
-<li>🚀 <strong>Performance Experts:</strong> Speed is money in e-commerce</li>
-</ul>
-<div class="warning-box">
-<strong>⚠️ Mindset Check:</strong> If you see your job as "just writing code," you will fail here. Your code DIRECTLY affects real people's livelihoods. A slow site = lost customers = business failure. Take ownership of outcomes, not just tasks.
-</div>
+    <h2>🚨 THE 4 NON-NEGOTIABLE STANDARDS</h2>
+    
+    <h3>STANDARD 1: NEVER Work on Live Theme</h3>
+    <p>Always <strong>duplicate theme</strong> or work on development store. One mistake = client's live store broken.</p>
+    
+    <h3>STANDARD 2: Mobile-First ALWAYS</h3>
+    <p><strong>70% of ecommerce traffic is mobile.</strong> Build for 375px width FIRST, then scale up to desktop.</p>
+    
+    <h3>STANDARD 3: Speed is NOT Optional</h3>
+    <p>Mobile PageSpeed target: <strong>85+</strong>. Every decision — image size, app choice, custom code — must consider speed.</p>
+    
+    <h3>STANDARD 4: Test EVERYTHING</h3>
+    <p>Before marking any task complete: Test on mobile, Test on desktop, Test checkout flow, Check console errors.</p>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<p>Test your understanding of the developer mindset.</p>
-<ul>
-<li>📝 10 questions about mindset and responsibility</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
-</ul>
+    <h2>⚠️ CRITICAL: Currency Check - FIRST STEP</h2>
+    <div class="warning-box">
+        <strong>🚨 NEVER keep currency as INR for US/international clients!</strong>
+        <ul>
+            <li>Verify currency setting IMMEDIATELY after store creation</li>
+            <li>Change to USD (or client's target currency)</li>
+            <li>Double-check currency on checkout page during QA</li>
+        </ul>
+    </div>
+    
+    <h3>📋 Mandatory Store Elements</h3>
+    <ul>
+        <li>✅ Minimum 3 trending products per practice store</li>
+        <li>✅ ALL policy pages with content</li>
+        <li>✅ Live chat integration (Shopify Inbox)</li>
+        <li>✅ Track Order page - functional</li>
+        <li>✅ About Us page - real content</li>
+        <li>✅ Contact page - functional form</li>
+        <li>✅ SEO completed for ALL pages</li>
+    </ul>
+    
+    <h3>⏱️ Time Standards</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task Type</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Expected Time</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Practice store</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Maximum 2 hours</strong></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client store (full)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>1 complete store + homepage of 2nd = 1 day</strong></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom section (with AI)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-60 minutes</td>
+        </tr>
+    </table>
+    <p><em>Remember: Shopify is 2x easier than WordPress — your speed should reflect this!</em></p>
+</div>
+
+<div class="content-section">
+    <h2>🔍 SELF QA PROTOCOL - MANDATORY</h2>
+    <p><strong>Review EVERY element 3-5 times before submission</strong></p>
+    <ul>
+        <li>✅ Desktop view check: All pages, all links, all buttons</li>
+        <li>✅ Mobile responsiveness: Every section, every page</li>
+        <li>✅ Click EVERY link on the site</li>
+        <li>✅ Test complete flow: Add to Cart → Checkout</li>
+        <li>✅ Verify ALL images display correctly</li>
+        <li>✅ Spelling/grammar check on ALL text</li>
+        <li>✅ PageSpeed test - must meet 85+ benchmark</li>
+    </ul>
+    
+    <div class="warning-box">
+        <strong>⚠️ Zero Tolerance Policy</strong>
+        <p>After 15 days of onboarding: ONE careless mistake = Potential removal</p>
+        <p>Check 10 times before giving to client - each line, each design element.</p>
+    </div>
 </div>
 `;
 
-// Task 2: Company Knowledge
+// ===============================================
+// TASK 2: STORE ACCESS & THEME SETUP
+// ===============================================
+
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
-
 <div class="content-section">
-<h3>🏢 The Digital Heroes Ecosystem</h3>
-<p>We are not just a development agency. We are a vertically integrated ecosystem:</p>
-<div class="highlight-box">
-<ul style="margin: 0;">
-<li>📺 <strong>Media Arm:</strong> 2.5M+ YouTube subscribers - Digital Marketing Heroes channel</li>
-<li>🛠️ <strong>Agency Arm:</strong> Premium Shopify development services</li>
-<li>👥 <strong>Talent Pool:</strong> 40+ full-time developers worldwide</li>
-</ul>
-</div>
-<p>Clients trust us BEFORE they even speak to you because they've watched 10+ hours of our content. Your job is to deliver on that trust.</p>
-</div>
-
-<div class="content-section">
-<h3>💎 What We Actually Sell</h3>
-<p>We don't sell "Shopify development." We sell:</p>
-<ul>
-<li>🚀 <strong>Speed:</strong> 85+ PageSpeed scores that don't lose visitors</li>
-<li>💰 <strong>Revenue:</strong> Conversion-optimized stores that make money</li>
-<li>💎 <strong>Credibility:</strong> Professional designs clients can be proud of</li>
-<li>🛡️ <strong>Peace of Mind:</strong> Expert support they can rely on</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>📦 Our Packages</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr style="background: rgba(99, 102, 241, 0.2);">
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>💎 PREMIUM</strong></td>
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">$1,200 - 5 pages, 25 products, 30-day support</td>
-</tr>
-<tr style="background: rgba(16, 185, 129, 0.2);">
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>👑 ENTERPRISE</strong></td>
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">$1,800 - 10+ pages, 100+ products, 60-day support</td>
-</tr>
-</table>
+    <h2>🔐 Getting Collaborator Access</h2>
+    <div class="warning-box">
+        <strong>⚠️ NEVER Start Work Without Proper Access</strong>
+        <p>Working without official collaborator access = security risk and potential account issues.</p>
+    </div>
+    
+    <h3>📋 Step-by-Step: Getting Access</h3>
+    
+    <h4>STEP 1: Request Collaborator Code</h4>
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 15px; border-radius: 8px; border-left: 4px solid #10B981; margin: 15px 0; font-family: monospace; font-size: 0.9em;">
+        <p>"To get started, I'll need access to your Shopify store:</p>
+        <p>1. Log into your Shopify admin</p>
+        <p>2. Go to Settings → Users and permissions</p>
+        <p>3. Scroll to 'Collaborators' section</p>
+        <p>4. Share the 4-digit code with me"</p>
+    </div>
+    
+    <h4>STEP 2: Request Access Using the Code</h4>
+    <ol>
+        <li>Go to <strong>accounts.shopify.com/store-login</strong></li>
+        <li>Enter the client's store URL (.myshopify.com)</li>
+        <li>Click "Log in with collaborator request"</li>
+        <li>Enter the 4-digit code</li>
+        <li>Select permissions needed (usually "Full access")</li>
+        <li>Submit the request</li>
+    </ol>
+    
+    <h4>STEP 3: Client Approves</h4>
+    <p>Client checks: Settings → Users and permissions → Collaborators → Click 'Approve'</p>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about company knowledge</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 3</li>
-</ul>
+    <h2>🎨 Theme Selection & Setup</h2>
+    
+    <h3>Recommended Themes</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Theme</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Price</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Speed Score</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Dawn</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;"><strong>90+</strong></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Prestige</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$350</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">85-90</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Impulse</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$350</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">80-85</td>
+        </tr>
+    </table>
+    
+    <h3>Theme Setup Checklist</h3>
+    <ol>
+        <li><strong>Install Theme:</strong> Online Store → Themes → Add theme</li>
+        <li><strong>DUPLICATE before customizing</strong> (Critical!)</li>
+        <li><strong>Theme Settings:</strong> Colors, Typography (max 2 fonts), Buttons</li>
+        <li><strong>Logo & Favicon:</strong> PNG with transparency, 200-400px wide</li>
+    </ol>
 </div>
 `;
 
-// Task 3: Non-Negotiable Standards
+// ===============================================
+// TASK 3: HOMEPAGE STRUCTURE
+// ===============================================
+
 const task3Content = `
-<h2>📚 TASK 3: NON-NEGOTIABLE CODE STANDARDS</h2>
-
 <div class="content-section">
-<h3>🚨 RULE 1: NEVER WORK ON LIVE THEME</h3>
-<div class="warning-box">
-<p><strong>ALWAYS duplicate theme or work on development store.</strong></p>
-<p>One mistake = client's live store broken = lost sales = angry client = reputation damage.</p>
-</div>
-<p><strong>How to duplicate:</strong> Theme → Actions → Duplicate</p>
-</div>
-
-<div class="content-section">
-<h3>📱 RULE 2: MOBILE-FIRST ALWAYS</h3>
-<p>70% of e-commerce traffic is mobile. Build for <strong>375px width FIRST</strong>, then scale up to desktop.</p>
-<div class="highlight-box">
-<strong>Development Order:</strong>
-<ol>
-<li>Mobile (375px) - Build first</li>
-<li>Tablet (768px) - Adjust layout</li>
-<li>Desktop (1440px) - Enhance experience</li>
-</ol>
-</div>
+    <h2>🏆 The Perfect Homepage Flow</h2>
+    <img src="images/dev_homepage_flow.png" alt="Perfect Homepage Section Flow" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <div class="highlight-box">
+        <strong>Every section should have a PURPOSE</strong>
+        <p>No section exists just to look pretty — it either builds trust, showcases products, or drives action.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>⚡ RULE 3: SPEED IS NOT OPTIONAL</h3>
-<p><strong>Mobile PageSpeed target: 85+</strong></p>
-<p>Every decision — image size, app choice, custom code — must consider speed impact.</p>
-<ul>
-<li>Use WebP images (not PNG/JPG where possible)</li>
-<li>Lazy load below-the-fold content</li>
-<li>Minimize app installations</li>
-<li>Optimize Liquid code loops</li>
-</ul>
+    <h2>📋 Essential Homepage Sections</h2>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Section</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Announcement Bar</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Highlight key offer</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Header</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Navigation & branding</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Hero Banner</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">First impression (7 words max)</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Trust Bar</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Free shipping, returns, security</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Featured Products</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Best sellers (4-8 products)</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">6</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Value Props</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Why buy from us</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">7</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Collection Grid</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Shop by category</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">8</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Testimonials</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Social proof (3-6 reviews)</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">9</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">About/Story</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Brand connection</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">10</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">FAQ</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Answer objections (5-8 questions)</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">11</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Newsletter</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Capture emails + incentive</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">12</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Footer</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Links, policies, trust</td></tr>
+    </table>
 </div>
 
 <div class="content-section">
-<h3>✅ RULE 4: TEST EVERYTHING</h3>
-<p>Before marking any task complete:</p>
-<ul>
-<li>✅ Test on mobile device</li>
-<li>✅ Test on desktop browser</li>
-<li>✅ Test complete checkout flow</li>
-<li>✅ Check browser console for errors</li>
-<li>✅ Check PageSpeed Insights score</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about code standards</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 4</li>
-</ul>
+    <h2>📋 Standard Menu Structure</h2>
+    <p>Every store MUST have these menu items:</p>
+    <ul>
+        <li>🏠 <strong>Home</strong> → /</li>
+        <li>📦 <strong>Catalog</strong> → /collections/all</li>
+        <li>📂 <strong>Collections</strong> → Dropdown menu</li>
+        <li>ℹ️ <strong>About Us</strong> → /pages/about-us</li>
+        <li>📧 <strong>Contact Us</strong> → /pages/contact-us</li>
+        <li>❓ <strong>FAQ</strong> → /pages/faq</li>
+        <li>📦 <strong>Track Your Order</strong> → /apps/17track</li>
+    </ul>
 </div>
 `;
 
-// Task 4: Theme Development
+// ===============================================
+// TASK 4: PRODUCT PAGE CRO
+// ===============================================
+
 const task4Content = `
-<h2>📚 TASK 4: SHOPIFY THEME DEVELOPMENT</h2>
-
 <div class="content-section">
-<h3>🎨 Shopify Theme Architecture</h3>
-<p>Understanding the folder structure is crucial for efficient development.</p>
-<img src="images/shopify_theme_architecture.png" alt="Shopify Theme Structure Diagram" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-
-<div class="highlight-box">
-<pre style="font-family: monospace; margin: 0;">
-/layout/          → Base templates (theme.liquid)
-/templates/       → Page templates (product.json, collection.json)
-/sections/        → Reusable blocks (header, footer, product-grid)
-/snippets/        → Small reusable code pieces
-/assets/          → CSS, JS, images
-/config/          → Theme settings
-/locales/         → Translation files
-</pre>
-</div>
+    <h2>🚨 This Is Where Sales Happen</h2>
+    <div class="warning-box">
+        <strong>A beautiful homepage means nothing if the product page doesn't convert.</strong>
+        <p>90% of your conversion optimization effort should be HERE.</p>
+    </div>
+    
+    <h3>📸 Above the Fold (Without Scrolling)</h3>
+    <ul>
+        <li>✅ <strong>Product Images:</strong> 3-5 high-quality images minimum</li>
+        <li>✅ <strong>Price & Variants:</strong> Price clearly visible, variant selectors</li>
+        <li>✅ <strong>Add to Cart:</strong> Prominent button, trust badges below</li>
+        <li>✅ <strong>Trust Elements:</strong> Free shipping, returns, security</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>💧 Liquid Basics</h3>
-<p>Liquid is Shopify's templating language:</p>
-<ul>
-<li><code>{{ }}</code> - Output variables: <code>{{ product.title }}</code></li>
-<li><code>{% %}</code> - Logic tags: <code>{% if product.available %}</code></li>
-<li><code>|</code> - Filters: <code>{{ product.price | money }}</code></li>
-</ul>
-<div class="highlight-box">
-<strong>Common Liquid Objects:</strong>
-<ul style="margin: 0;">
-<li><code>product</code> - Current product data</li>
-<li><code>collection</code> - Current collection</li>
-<li><code>cart</code> - Shopping cart contents</li>
-<li><code>shop</code> - Store settings</li>
-<li><code>customer</code> - Logged-in customer data</li>
-</ul>
-</div>
+    <h2>📈 The 5 Psychological Conversion Triggers</h2>
+    
+    <h3>🛡️ 1. TRUST</h3>
+    <ul>
+        <li>Professional design, SSL certificate</li>
+        <li>Payment security badges</li>
+        <li>Customer reviews with photos</li>
+        <li>Clear return policy</li>
+    </ul>
+    
+    <h3>⚡ 2. URGENCY</h3>
+    <ul>
+        <li>"Only 3 left!" limited stock</li>
+        <li>Sale countdown timers</li>
+        <li>Shipping deadline ("Order in 2 hrs for same-day")</li>
+    </ul>
+    
+    <h3>👥 3. SOCIAL PROOF</h3>
+    <ul>
+        <li>Star ratings on products</li>
+        <li>Review count ("Based on 127 reviews")</li>
+        <li>Customer photos in reviews</li>
+    </ul>
+    
+    <h3>🎁 4. VALUE</h3>
+    <ul>
+        <li>Free shipping threshold visible</li>
+        <li>Bundle deals</li>
+        <li>Compare-at price (show savings)</li>
+    </ul>
+    
+    <h3>🚀 5. EASE</h3>
+    <ul>
+        <li>One-page checkout</li>
+        <li>Guest checkout enabled</li>
+        <li>Express checkout (Shop Pay, Apple Pay)</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>📋 Mandatory Store Elements</h3>
-<ul>
-<li>✅ Minimum 3 trending products per store</li>
-<li>✅ ALL policy pages with real content (Privacy, Shipping, Refund, Terms)</li>
-<li>✅ Live chat integration (Shopify Inbox)</li>
-<li>✅ Track Order page - functional</li>
-<li>✅ About Us page - real content, not placeholder</li>
-<li>✅ Contact page - with functional form</li>
-<li>✅ SEO completed for ALL pages and products</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about theme development</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 5</li>
-</ul>
+    <h2>📱 Mobile Conversion Optimization</h2>
+    <p><strong>70% of traffic is mobile — optimize or die</strong></p>
+    <ul>
+        <li><strong>Sticky Add to Cart:</strong> Always visible on scroll</li>
+        <li><strong>Touch targets:</strong> 44x44px minimum for buttons</li>
+        <li><strong>Fast loading:</strong> 3 seconds max or they leave</li>
+        <li><strong>Thumb-friendly:</strong> Important actions at bottom of screen</li>
+    </ul>
+    
+    <div class="highlight-box">
+        <strong>💡 Key Insight</strong>
+        <p>Size guide reduces returns by <strong>30%+</strong>. Always include measurement charts.</p>
+        <p>Related Products section increases AOV by <strong>15-30%</strong>.</p>
+    </div>
 </div>
 `;
 
-// Task 5: Speed Optimization
+// ===============================================
+// TASK 5: SPEED OPTIMIZATION
+// ===============================================
+
 const task5Content = `
-<h2>📚 TASK 5: SPEED OPTIMIZATION</h2>
-
 <div class="content-section">
-<h3>⚡ Why Speed = Money</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr style="background: rgba(239, 68, 68, 0.2);">
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">1 second delay</td>
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>7% loss</strong> in conversions</td>
-</tr>
-<tr style="background: rgba(239, 68, 68, 0.3);">
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">3 second load time</td>
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>53%</strong> of mobile users abandon</td>
-</tr>
-<tr style="background: rgba(16, 185, 129, 0.2);">
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">85+ PageSpeed</td>
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Target score</strong> for all builds</td>
-</tr>
-</table>
+    <h2>⚡ Target PageSpeed: 85+ Mobile</h2>
+    <img src="images/dev_speed_targets.png" alt="PageSpeed Targets" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <div class="warning-box">
+        <strong>Every 1-second delay = 7% conversion loss</strong>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🖼️ Image Optimization</h3>
-<ul>
-<li>Use <strong>WebP format</strong> wherever possible</li>
-<li>Compress images to under 200KB</li>
-<li>Use responsive images with srcset</li>
-<li>Lazy load images below the fold</li>
-<li>Use Shopify's CDN image resizing: <code>| image_url: width: 800</code></li>
-</ul>
+    <h2>📋 Speed Optimization Checklist</h2>
+    
+    <h3>📸 Image Optimization</h3>
+    <ul>
+        <li>Compress before upload (TinyPNG, Squoosh)</li>
+        <li><strong>Max 500KB per image</strong></li>
+        <li>Use appropriate dimensions (not 4000px)</li>
+        <li>Let Shopify serve WebP</li>
+        <li>Lazy load below-fold images</li>
+    </ul>
+    
+    <h3>📱 App Audit</h3>
+    <ul>
+        <li><strong>Maximum 10-12 apps</strong></li>
+        <li>Remove unused apps</li>
+        <li>Delete leftover app code</li>
+        <li>Check PageSpeed after each app install</li>
+    </ul>
+    
+    <h3>💻 Code Optimization</h3>
+    <ul>
+        <li>Minimize custom CSS/JS</li>
+        <li>Defer non-critical scripts</li>
+        <li>Remove unused theme features</li>
+        <li>Use system fonts when possible</li>
+    </ul>
+    
+    <h3>🔤 Font Optimization</h3>
+    <ul>
+        <li><strong>Maximum 2 font families</strong></li>
+        <li>Limit font weights loaded</li>
+        <li>Use font-display: swap</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>📦 App Management</h3>
-<div class="warning-box">
-<strong>⚠️ Apps are the #1 speed killer!</strong>
-<ul>
-<li>Each app adds JavaScript that slows the site</li>
-<li>Maximum 8-10 essential apps recommended</li>
-<li>Regularly audit and remove unused apps</li>
-<li>Check app impact with "App Performance" in Shopify admin</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>💻 Code Optimization</h3>
-<ul>
-<li>Minimize inline CSS/JS - use external files</li>
-<li>Defer non-critical JavaScript</li>
-<li>Avoid <code>document.write()</code></li>
-<li>Use efficient Liquid loops (avoid nested loops)</li>
-<li>Preload critical resources</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about speed optimization</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 6</li>
-</ul>
+    <h2>🔄 Speed Debugging Flowchart</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Issue</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cause</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fix</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">LCP high</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hero image too large</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Compress to &lt;200KB, use WebP</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">TBT high</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Too much JavaScript</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Defer non-critical JS, remove apps</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CLS issues</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Images without dimensions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add width/height to all images</td>
+        </tr>
+    </table>
 </div>
 `;
 
-// Task 6: Quality Assurance
+// ===============================================
+// TASK 6: APPS & CHECKOUT
+// ===============================================
+
 const task6Content = `
-<h2>📚 TASK 6: QUALITY ASSURANCE</h2>
-
 <div class="content-section">
-<h3>🔍 Self QA Protocol - MANDATORY</h3>
-<div class="warning-box">
-<strong>Review EVERY element 3-5 times before submission</strong>
-<p>This is MANDATORY, not optional.</p>
-</div>
-</div>
-
-<div class="content-section">
-<h3>✅ Pre-Submission Checklist</h3>
-<ul>
-<li>✅ <strong>Desktop view check:</strong> All pages, all links, all buttons</li>
-<li>✅ <strong>Mobile responsiveness:</strong> Every section, every page</li>
-<li>✅ <strong>Click EVERY link</strong> on the site - document any broken links</li>
-<li>✅ <strong>Test complete flow:</strong> Browse → Add to Cart → Checkout</li>
-<li>✅ <strong>Verify ALL images</strong> display correctly (no broken images)</li>
-<li>✅ <strong>Spelling/grammar check</strong> on ALL text content</li>
-<li>✅ <strong>Page speed test</strong> - must meet 85+ benchmark</li>
-<li>✅ <strong>Currency check</strong> - correct currency for client's market</li>
-</ul>
+    <h2>⚠️ App Rule: Less is More</h2>
+    <div class="warning-box">
+        <strong>Every app you install slows down the store.</strong>
+        <p>5-8 apps is healthy. 15+ apps = performance issues.</p>
+    </div>
+    
+    <h3>📊 Recommended Apps</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Category</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Best App</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Reviews</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Judge.me / Loox</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Photo reviews</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Email</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Klaviyo</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Abandoned cart, campaigns</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Upsell</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">ReConvert</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Increase AOV</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Chat</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Shopify Inbox</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Customer support</td></tr>
+    </table>
 </div>
 
 <div class="content-section">
-<h3>👀 The Fresh Eyes Rule</h3>
-<p>After finishing work, <strong>wait 2 hours</strong> before reviewing.</p>
-<div class="highlight-box">
-<em>"Your eyes see what they expect. Fresh eyes see what's there."</em>
-</div>
-</div>
-
-<div class="content-section">
-<h3>👥 Peer Review Process</h3>
-<ul>
-<li>Get projects checked by <strong>each other</strong> before sending to client</li>
-<li>Fresh eyes catch issues original developer might miss</li>
-<li>Peer review is teamwork - not criticism</li>
-</ul>
+    <h2>💳 Test Order Process</h2>
+    <ol>
+        <li>Enable test mode (Settings → Payments → Manage → Enable test mode)</li>
+        <li>Add product to cart → Proceed to checkout</li>
+        <li>Fill shipping info → Select shipping method</li>
+        <li>Use test card: <strong>4242 4242 4242 4242</strong></li>
+        <li>Any future date, any 3-digit CVV</li>
+        <li>Complete order → Verify confirmation email</li>
+        <li>Check order in admin → Test refund process</li>
+        <li><strong style="color: #EF4444;">REMEMBER: Disable test mode before launch!</strong></li>
+    </ol>
 </div>
 
 <div class="content-section">
-<h3>🚨 Zero Tolerance Policy</h3>
-<div class="warning-box">
-<strong>After 15 days of onboarding: ONE careless mistake = Potential removal</strong>
-<ul>
-<li>No space for making preventable mistakes in live projects</li>
-<li>Mistakes that client points out = Personal responsibility</li>
-<li>Check 10 times before giving to client</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about quality assurance</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 7</li>
-</ul>
+    <h2>📋 Required Policy Pages</h2>
+    <ul>
+        <li><strong>Shipping Policy:</strong> Processing time, methods, costs</li>
+        <li><strong>Return & Refund:</strong> Return window, condition, process</li>
+        <li><strong>Privacy Policy:</strong> Data collection, usage, cookies</li>
+        <li><strong>Terms of Service:</strong> Usage terms, liability</li>
+    </ul>
+    <p>💡 <strong>Pro Tip:</strong> Settings → Policies → "Create from template"</p>
 </div>
 `;
 
-// Task 7: Debugging & Fixes
+// ===============================================
+// TASK 7: QA PROTOCOL
+// ===============================================
+
 const task7Content = `
-<h2>📚 TASK 7: DEBUGGING & PROBLEM SOLVING</h2>
-
 <div class="content-section">
-<h3>🧠 The Debugging Protocol</h3>
-<img src="images/debugging_workflow.png" alt="Debugging Protocol Flowchart" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <h2>✅ 60-Point QA Checklist</h2>
+    <img src="images/dev_60point_qa.png" alt="60-Point QA Checklist" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <div class="warning-box">
+        <strong>🚨 NEVER deliver without completing the QA checklist</strong>
+        <p>Every issue caught before delivery = trust built. Every issue found after = trust destroyed.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🐌 Scenario: Site is Slow</h3>
-<p><strong>Steps to diagnose:</strong></p>
-<ol>
-<li>Run PageSpeed Insights - identify issues</li>
-<li>Check app list - disable unused apps</li>
-<li>Audit images - compress large files</li>
-<li>Check for render-blocking resources</li>
-<li>Review custom code for inefficiencies</li>
-</ol>
+    <h2>📋 QA Categories</h2>
+    
+    <h3>🎨 Design (15 points)</h3>
+    <ul>
+        <li>Consistent typography, Brand colors applied</li>
+        <li>No pixelated images, Proper spacing</li>
+        <li>Mobile looks as good as desktop</li>
+        <li>Logo, Favicon installed, No placeholder text</li>
+    </ul>
+    
+    <h3>⚙️ Functionality (15 points)</h3>
+    <ul>
+        <li>All navigation links work</li>
+        <li>Add to cart works on ALL products</li>
+        <li>Checkout completes successfully</li>
+        <li>Forms submit correctly</li>
+        <li>Mobile menu opens/closes</li>
+    </ul>
+    
+    <h3>⚡ Performance (10 points)</h3>
+    <ul>
+        <li>Mobile PageSpeed <strong>85+</strong></li>
+        <li>Desktop PageSpeed <strong>90+</strong></li>
+        <li>No console errors</li>
+        <li>Load time under 3 seconds</li>
+    </ul>
+    
+    <h3>🔍 SEO (10 points)</h3>
+    <ul>
+        <li>Page titles set (unique per page)</li>
+        <li>Meta descriptions written</li>
+        <li>Alt text on ALL images</li>
+        <li>URLs are SEO-friendly</li>
+    </ul>
+    
+    <h3>📱 Mobile Testing (10 points)</h3>
+    <ul>
+        <li>Test on real iPhone AND Android</li>
+        <li>Touch targets 44px+ minimum</li>
+        <li>No horizontal scroll</li>
+        <li>Text readable without zoom</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>💥 Scenario: Production Bug</h3>
-<div class="warning-box">
-<strong>BEFORE doing anything:</strong>
-<ol>
-<li>Screenshot the error</li>
-<li>Check browser console (F12)</li>
-<li>Document steps to reproduce</li>
-<li>DO NOT make changes to live theme until you understand the issue</li>
-</ol>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🔄 Scenario: Theme Update Broke Something</h3>
-<ol>
-<li>Restore from previous theme backup</li>
-<li>Compare code changes between versions</li>
-<li>Identify conflicting customizations</li>
-<li>Re-apply customizations carefully to new theme</li>
-</ol>
-</div>
-
-<div class="content-section">
-<h3>⚡ Scenario: App Conflict</h3>
-<ul>
-<li>Disable apps one by one to identify conflict</li>
-<li>Check app settings for overlap</li>
-<li>Contact app support if needed</li>
-<li>Consider alternative apps if conflict persists</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🔧 The Testing Trifecta</h3>
-<p>Test every feature 3 ways:</p>
-<ol>
-<li><strong>Happy path</strong> — as intended</li>
-<li><strong>Error path</strong> — with wrong inputs</li>
-<li><strong>Edge cases</strong> — extreme scenarios</li>
-</ol>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about debugging</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 8</li>
-</ul>
+    <h2>⏱️ The 5-Minute Audit</h2>
+    <p>After every delivery:</p>
+    <ol>
+        <li>Check on <strong>mobile</strong> — real device, not browser resize</li>
+        <li>Check in <strong>incognito mode</strong> — no cache issues</li>
+        <li>Check in <strong>different browser</strong> — Chrome AND Safari</li>
+    </ol>
 </div>
 `;
 
-// Task 8: Client Delivery
+// ===============================================
+// TASK 8: TROUBLESHOOTING
+// ===============================================
+
 const task8Content = `
-<h2>📚 TASK 8: CLIENT DELIVERY BEST PRACTICES</h2>
-
 <div class="content-section">
-<h3>📸 Show, Don't Tell</h3>
-<p>Never say "it's done." Show proof:</p>
-<ul>
-<li>📷 Screenshot of completed work</li>
-<li>🎥 Loom video walkthrough</li>
-<li>🔗 Live preview link</li>
-</ul>
-<div class="highlight-box">
-<strong>For every major delivery, record a 2-minute Loom explaining what was built.</strong>
-<p style="color: #10B981; margin-top: 10px;">Reduces back-and-forth by 80%</p>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🤔 The Client Perspective Check</h3>
-<p>Before submitting, ask yourself:</p>
-<div class="warning-box">
-<em style="font-size: 1.2em;">"Would I be happy if I paid for this?"</em>
-</div>
-</div>
-
-<div class="content-section">
-<h3>📁 Version Control</h3>
-<ul>
-<li>Never overwrite - always save versions: v1, v2, v3</li>
-<li>Keep theme backups before major changes</li>
-<li>Document what was changed in each version</li>
-</ul>
+    <h2>🔍 Debugging Decision Tree</h2>
+    <img src="images/dev_debugging_flow.png" alt="Debugging Decision Tree" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <p><strong>Before asking for help, follow this. 80% of issues are solved in first 3 steps.</strong></p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Step</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fix</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Console Check</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Red errors point to exact line</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Preview vs Live?</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Changes only in preview until published</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Cache Clear</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Hard refresh: Ctrl+Shift+R (40% of issues!)</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Syntax Check</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Missing endif, quotes?</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Object Exists?</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Wrap in {% if object %}</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">6</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Isolate Issue</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Comment out sections</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">7</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">App Conflict</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Disable apps one by one</td></tr>
+    </table>
 </div>
 
 <div class="content-section">
-<h3>🔙 The Rollback Plan</h3>
-<p>Before any major change, know how to undo it in 5 minutes.</p>
-<ul>
-<li>Duplicate theme before changes</li>
-<li>Export settings/configurations</li>
-<li>Document original state</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>⚠️ The "Works for Me" Fallacy</h3>
-<div class="warning-box">
-<strong>"It works on my machine" is NOT acceptable.</strong>
-<p>If it doesn't work for the client, it's broken. Period.</p>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about client delivery</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 9</li>
-</ul>
+    <h2>🔴 Handling Difficult Situations</h2>
+    
+    <h3>Client's Theme is Heavily Broken</h3>
+    <p><strong>Response:</strong> Document issues, inform PM, recommend cleanup before new features.</p>
+    
+    <h3>Feature is Technically Impossible</h3>
+    <p><strong>Response:</strong> "This isn't natively supported. We have two options: [A] or [B]. Here are pros/cons."</p>
+    
+    <h3>Changes Broke Production</h3>
+    <p><strong>Response:</strong> <strong style="color: #EF4444;">Immediately revert to backup.</strong> Document what happened. Fix in dev first.</p>
+    
+    <h3>Client Editing Theme and Breaking Things</h3>
+    <p><strong>Response:</strong> "Changes were made since our delivery. Fixing these would be additional work."</p>
+    
+    <div class="warning-box">
+        <strong>🚨 Escalate to Senior Developer After 15 Minutes</strong>
+        <p>If you can't debug an issue after 15 minutes of systematic troubleshooting, escalate.</p>
+    </div>
 </div>
 `;
 
-// Task 9: Practice Scenarios
+// ===============================================
+// TASK 9: AI DEVELOPMENT
+// ===============================================
+
 const task9Content = `
-<h2>📚 TASK 9: PRACTICE SCENARIOS</h2>
-
 <div class="content-section">
-<h3>🎯 Scenario 1: New Store Build</h3>
-<p><strong>Client Request:</strong> "I need a new Shopify store for my fashion brand. Budget: $1,200"</p>
-<div class="highlight-box">
-<strong>Your Checklist:</strong>
-<ul>
-<li>☐ Confirm currency settings (USD for US market)</li>
-<li>☐ Choose appropriate theme</li>
-<li>☐ Create 5 core pages</li>
-<li>☐ Add 3+ trending products</li>
-<li>☐ Complete all policy pages</li>
-<li>☐ Install essential apps only</li>
-<li>☐ Achieve 85+ PageSpeed</li>
-<li>☐ Complete full QA checklist</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>⏱️ Scenario 2: Speed Optimization</h3>
-<p><strong>Client Request:</strong> "My site loads slowly. Can you fix it?"</p>
-<div class="highlight-box">
-<strong>Your Process:</strong>
-<ol>
-<li>Run initial PageSpeed test (document score)</li>
-<li>Audit and disable unnecessary apps</li>
-<li>Compress and convert images to WebP</li>
-<li>Optimize Liquid code</li>
-<li>Enable lazy loading</li>
-<li>Run final PageSpeed test (document improvement)</li>
-</ol>
-</div>
+    <h2>🔥 SUPERPOWER: Use AI to Create ANY Custom Section</h2>
+    <div class="highlight-box">
+        <strong>You don't need to memorize Liquid syntax. AI can write it for you.</strong>
+    </div>
+    
+    <h3>📋 Step-by-Step Custom Section Creation</h3>
+    
+    <h4>STEP 1: Prompt ChatGPT/Claude</h4>
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 15px; border-radius: 8px; border-left: 4px solid #10B981; margin: 15px 0; font-family: monospace; font-size: 0.9em;">
+        <p>"I need to create a custom Shopify section for [DESCRIBE WHAT YOU NEED].</p>
+        <p>The section should be editable from the theme customizer.</p>
+        <p>Include a schema with these editable fields: [LIST FIELDS].</p>
+        <p>Use Shopify 2.0 JSON templates. Make it responsive for mobile."</p>
+    </div>
+    
+    <h4>STEP 2: AI generates the code</h4>
+    
+    <h4>STEP 3: Where to Paste</h4>
+    <ol>
+        <li>Online Store → Themes → Edit Code</li>
+        <li>Navigate to <strong>Sections/</strong> folder</li>
+        <li>Click "Add a new section" → name it</li>
+        <li>Paste AI code → Save</li>
+        <li>Customize theme → Add section → Your section appears!</li>
+    </ol>
 </div>
 
 <div class="content-section">
-<h3>🔧 Scenario 3: Bug Fix Request</h3>
-<p><strong>Client Request:</strong> "The add to cart button doesn't work on mobile"</p>
-<div class="warning-box">
-<strong>Your Process:</strong>
-<ol>
-<li>Reproduce the bug on your device</li>
-<li>Check browser console for errors</li>
-<li>Test on different devices/browsers</li>
-<li>Identify root cause</li>
-<li>Fix on duplicate theme first</li>
-<li>Test thoroughly</li>
-<li>Deploy to live only after verification</li>
-</ol>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about real-world scenarios</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Final Certification</li>
-</ul>
+    <h2>🔥 The 7-Figure Designer Prompt</h2>
+    <p>Have AI analyze your store like a $100K/year designer:</p>
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 15px; border-radius: 8px; border-left: 4px solid #8B5CF6; margin: 15px 0; font-family: monospace; font-size: 0.85em;">
+        <p>"You are a 7-figure ecommerce designer who has designed 1000+ high-converting Shopify stores.</p>
+        <p>Analyze this screenshot. Be brutally honest.</p>
+        <p>Evaluate: First impression, Visual hierarchy, Trust elements, Mobile-friendliness, Conversion blockers, Typography, Color usage.</p>
+        <p>Give me 5 specific improvements ranked by impact on sales."</p>
+    </div>
+    
+    <h3>🤖 Developer Prompts</h3>
+    <ul>
+        <li><strong>Debugging:</strong> "I'm getting this error: [error]. File: [file]. Code: [code]. Help me fix it."</li>
+        <li><strong>Code Generation:</strong> "Create a Shopify 2.0 section for [describe] with schema"</li>
+        <li><strong>Speed Optimization:</strong> "Optimize this Shopify section for speed: [code]"</li>
+        <li><strong>Code Review:</strong> "Review this code for performance, best practices, accessibility"</li>
+    </ul>
+    
+    <div class="warning-box">
+        <strong>⚠️ Always Test AI-Generated Code</strong>
+        <ul>
+            <li>Test on duplicate theme first</li>
+            <li>Check mobile responsiveness</li>
+            <li>Verify no console errors</li>
+        </ul>
+    </div>
 </div>
 `;
 
-// Task 10: Final Certification
+// ===============================================
+// TASK 10: FINAL CERTIFICATION
+// ===============================================
+
 const task10Content = `
-<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
-
 <div class="content-section">
-<h3>🏆 Congratulations!</h3>
-<p>You've completed the Shopify Developer training. This final assessment covers everything you've learned:</p>
-<ul>
-<li>✅ Developer mindset and responsibility</li>
-<li>✅ Digital Heroes ecosystem</li>
-<li>✅ Non-negotiable code standards</li>
-<li>✅ Theme development fundamentals</li>
-<li>✅ Speed optimization techniques</li>
-<li>✅ Quality assurance protocols</li>
-<li>✅ Debugging and problem-solving</li>
-<li>✅ Client delivery best practices</li>
-<li>✅ Real-world scenarios</li>
-</ul>
+    <h2>🎓 Final Certification Requirements</h2>
+    
+    <div class="highlight-box">
+        <strong>📋 Pre-Certification Checklist</strong>
+        <ul>
+            <li>✅ Complete Tasks 1-9 with 10/10 on all quizzes</li>
+            <li>✅ Review entire Developer SOP</li>
+            <li>📖 Memorize 4 Non-Negotiable Standards</li>
+            <li>📖 Know the 60-Point QA Checklist</li>
+            <li>📖 Understand Speed Optimization targets</li>
+        </ul>
+    </div>
+    
+    <h3>🎥 Video Submission (30 minutes)</h3>
+    <ol>
+        <li><strong>Introduction (2 min):</strong> Name, background, what you learned</li>
+        <li><strong>SOP Walkthrough (10 min):</strong> 4 Standards, 60-Point QA, Speed targets</li>
+        <li><strong>Mock Development (15 min):</strong> Theme setup, QA process, AI section creation</li>
+        <li><strong>Closing (3 min):</strong> Your commitment, questions</li>
+    </ol>
 </div>
 
 <div class="content-section">
-<h3>📝 Final Assessment</h3>
-<div class="warning-box">
-<strong>This quiz contains 20 questions covering all topics.</strong>
-<p>You must score 20/20 to receive your Developer Certification.</p>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🎓 After Certification</h3>
-<p><strong>Next Steps:</strong></p>
-<ol>
-<li>Record a 30-minute walkthrough video of a practice store</li>
-<li>Submit for review by your manager</li>
-<li>Begin working on real client projects</li>
-</ol>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Final Quiz?</h3>
-<ul>
-<li>📝 20 questions covering all training modules</li>
-<li>🎯 Score <strong>20/20</strong> to receive your certification</li>
-</ul>
+    <h2>🏆 Certification Complete When</h2>
+    <ul>
+        <li>✅ All 10 tasks done</li>
+        <li>✅ All quizzes passed with 10/10</li>
+        <li>✅ Final exam 20/20</li>
+        <li>✅ 30-minute video submitted</li>
+        <li>✅ Video approved by senior developer</li>
+    </ul>
+    
+    <h3>📈 Post-Certification Pathway</h3>
+    <ul>
+        <li><strong>Week 1-2:</strong> Build stores with senior review</li>
+        <li><strong>Week 3-4:</strong> Handle 1-2 projects with QA oversight</li>
+        <li><strong>Month 2:</strong> Manage multiple projects, weekly check-ins</li>
+        <li><strong>Month 3+:</strong> Full Developer — independent ownership</li>
+    </ul>
+    
+    <div class="highlight-box">
+        <strong>🎯 Your Daily Mantra</strong>
+        <p style="font-style: italic; font-size: 1.1em;">"Today, I write code that changes lives. Every optimization, every fix, every feature makes a difference."</p>
+    </div>
 </div>
 `;
 
-// Quiz Questions (Keep existing quizzes as they are extensive and accurate)
-const allQuizzes = [
-    // Task 1: Developer Mindset
-    [
-        { q: "A 1-second delay in load time results in what percentage loss in conversions?", o: ["2%", "5%", "7%", "10%"], c: 2 },
-        { q: "What was the PageSpeed score of the store that was losing $50,000/day?", o: ["23", "45", "65", "85"], c: 0 },
-        { q: "What percentage of e-commerce traffic comes from mobile devices?", o: ["40%", "50%", "60%", "70%"], c: 3 },
-        { q: "As a Digital Heroes developer, your primary job is:", o: ["Writing clean code", "Revenue generation through technical excellence", "Following instructions", "Building websites quickly"], c: 1 },
-        { q: "What mindset should you have about your code?", o: ["It just needs to work", "It needs to look good", "It needs to sell", "It needs to be complex"], c: 2 },
-        { q: "What is the target PageSpeed score for all builds?", o: ["65+", "75+", "85+", "95+"], c: 2 },
-        { q: "What happened after the store was rebuilt with PageSpeed 92?", o: ["Bounce rate increased", "Conversion rate tripled", "Traffic decreased", "Nothing changed"], c: 1 },
-        { q: "At Digital Heroes, developers are considered:", o: ["Just coders", "Revenue engineers", "Website builders", "IT support"], c: 1 },
-        { q: "Bad code in an e-commerce store affects:", o: ["Only aesthetics", "Only the developer", "Real people's livelihoods", "Only technical metrics"], c: 2 },
-        { q: "What should you take ownership of?", o: ["Only your tasks", "Only your code", "Outcomes, not just tasks", "Only deadlines"], c: 2 }
-    ],
-    // Task 2: Company Knowledge
-    [
-        { q: "How many YouTube subscribers does Digital Marketing Heroes have?", o: ["500K+", "1M+", "2.5M+", "5M+"], c: 2 },
-        { q: "What is the price of the Premium package?", o: ["$800", "$1,000", "$1,200", "$1,500"], c: 2 },
-        { q: "What is the price of the Enterprise package?", o: ["$1,200", "$1,500", "$1,800", "$2,000"], c: 2 },
-        { q: "How many full-time developers does Digital Heroes have?", o: ["20+", "30+", "40+", "50+"], c: 2 },
-        { q: "Premium package includes how many days of support?", o: ["15 days", "30 days", "45 days", "60 days"], c: 1 },
-        { q: "Enterprise package includes how many days of support?", o: ["30 days", "45 days", "60 days", "90 days"], c: 2 },
-        { q: "What we actually sell is NOT:", o: ["Speed", "Revenue", "Cheap websites", "Peace of mind"], c: 2 },
-        { q: "Why do clients trust us before speaking to us?", o: ["Good reviews", "Low prices", "They've watched our YouTube content", "Advertising"], c: 2 },
-        { q: "The Digital Heroes ecosystem includes:", o: ["Only agency services", "Media, Agency, and Talent Pool", "Only development", "Only marketing"], c: 1 },
-        { q: "Premium package includes how many products uploaded?", o: ["10", "15", "25", "50"], c: 2 }
-    ],
-    // Task 3: Non-Negotiable Standards
-    [
-        { q: "What should you NEVER do with a live theme?", o: ["View it", "Test on it", "Work directly on it", "Share it"], c: 2 },
-        { q: "Mobile-first means building for what width FIRST?", o: ["320px", "375px", "414px", "768px"], c: 1 },
-        { q: "What percentage of e-commerce traffic is mobile?", o: ["50%", "60%", "70%", "80%"], c: 2 },
-        { q: "Before marking any task complete, you must:", o: ["Just check desktop", "Only check mobile", "Test on mobile, desktop, checkout, and console", "Ask a colleague"], c: 2 },
-        { q: "How should you handle working on client sites?", o: ["Work directly on live theme", "Duplicate theme first", "Only work during off-hours", "Work without backups"], c: 1 },
-        { q: "Image format preferred for web optimization:", o: ["PNG", "JPG", "GIF", "WebP"], c: 3 },
-        { q: "What happens if you break a live store?", o: ["Nothing serious", "Lost sales and reputation damage", "Just apologize", "Client won't notice"], c: 1 },
-        { q: "Development order for responsive design:", o: ["Desktop first", "Tablet first", "Mobile first", "All at once"], c: 2 },
-        { q: "What should every decision consider?", o: ["Only aesthetics", "Speed impact", "Only client preference", "Complexity"], c: 1 },
-        { q: "Console errors should be checked:", o: ["Only when reported", "Never", "Before every delivery", "Only on desktop"], c: 2 }
-    ],
-    // Task 4: Theme Development
-    [
-        { q: "What folder contains base templates like theme.liquid?", o: ["/templates/", "/sections/", "/layout/", "/assets/"], c: 2 },
-        { q: "What syntax outputs variables in Liquid?", o: ["{% %}", "{{ }}", "[[ ]]", "(( ))"], c: 1 },
-        { q: "What syntax is used for logic in Liquid?", o: ["{{ }}", "{% %}", "[% %]", "// //"], c: 1 },
-        { q: "The pipe symbol (|) in Liquid is used for:", o: ["Comments", "Variables", "Filters", "Loops"], c: 2 },
-        { q: "Minimum number of trending products per store:", o: ["1", "2", "3", "5"], c: 2 },
-        { q: "Which pages must have REAL content (not placeholder)?", o: ["Only homepage", "All policy pages and About Us", "Only product pages", "Only contact page"], c: 1 },
-        { q: "What object contains current product data in Liquid?", o: ["item", "product", "goods", "merchandise"], c: 1 },
-        { q: "Sections folder contains:", o: ["Base templates", "Reusable blocks", "CSS files", "Translation files"], c: 1 },
-        { q: "SEO should be completed for:", o: ["Only homepage", "Only products", "ALL pages and products", "Only collections"], c: 2 },
-        { q: "Live chat integration is:", o: ["Optional", "Recommended", "Mandatory", "Not needed"], c: 2 }
-    ],
-    // Task 5: Speed Optimization
-    [
-        { q: "Target PageSpeed score for all builds:", o: ["65+", "75+", "85+", "95+"], c: 2 },
-        { q: "What percentage of mobile users abandon at 3-second load time?", o: ["23%", "33%", "43%", "53%"], c: 3 },
-        { q: "What is the #1 speed killer on Shopify stores?", o: ["Images", "Fonts", "Apps", "Videos"], c: 2 },
-        { q: "Maximum recommended number of apps:", o: ["5-6", "8-10", "12-15", "Unlimited"], c: 1 },
-        { q: "Images should be compressed to under:", o: ["100KB", "200KB", "500KB", "1MB"], c: 1 },
-        { q: "Liquid filter for image resizing:", o: ["| image_size", "| image_url: width:", "| resize_image", "| img_width"], c: 1 },
-        { q: "Content below the fold should be:", o: ["Loaded first", "Lazy loaded", "Never loaded", "Preloaded"], c: 1 },
-        { q: "Document.write() should be:", o: ["Used frequently", "Avoided", "Used for all scripts", "Required"], c: 1 },
-        { q: "Inline CSS/JS should be:", o: ["Preferred", "Minimized", "Required", "Ignored"], c: 1 },
-        { q: "App performance can be checked in:", o: ["Browser console", "PageSpeed Insights", "Shopify Admin", "Theme editor"], c: 2 }
-    ],
-    // Task 6: Quality Assurance
-    [
-        { q: "How many times should you review each element before submission?", o: ["1-2 times", "3-5 times", "Once", "No specific number"], c: 1 },
-        { q: "After finishing work, how long should you wait before reviewing?", o: ["30 minutes", "1 hour", "2 hours", "No wait needed"], c: 2 },
-        { q: "After 15 days of onboarding, how many careless mistakes are acceptable?", o: ["1-2", "3-5", "Zero", "Depends on severity"], c: 2 },
-        { q: "Peer review is:", o: ["Criticism", "Teamwork", "Optional", "Not recommended"], c: 1 },
-        { q: "When should you ask a client to check the store?", o: ["When 50% complete", "When 80% complete", "When 100% complete and self-verified", "Anytime"], c: 2 },
-        { q: "If a client points out preventable mistakes:", o: ["Blame the tools", "It's shared responsibility", "You are personally responsible", "Ask for help"], c: 2 },
-        { q: "'Fresh eyes' means:", o: ["Using eye drops", "New team member", "Reviewing after a break", "Looking closer"], c: 2 },
-        { q: "The pre-submission checklist includes:", o: ["Only mobile check", "Only desktop check", "Desktop, mobile, checkout, links, images, spelling, speed", "Only speed check"], c: 2 },
-        { q: "Currency must be checked:", o: ["Only for US clients", "For international clients", "Never", "Only if client asks"], c: 1 },
-        { q: "Self QA Protocol is:", o: ["Optional", "Recommended", "Mandatory", "Only for juniors"], c: 2 }
-    ],
-    // Task 7: Debugging
-    [
-        { q: "First step when diagnosing a slow site:", o: ["Disable all apps", "Run PageSpeed Insights", "Call client", "Rebuild everything"], c: 1 },
-        { q: "Before fixing a production bug, you should:", o: ["Make changes immediately", "Screenshot and document the error", "Ignore it", "Tell the PM"], c: 1 },
-        { q: "If theme update broke something:", o: ["Update again", "Restore from backup", "Ignore it", "Start fresh"], c: 1 },
-        { q: "To identify app conflicts:", o: ["Disable all apps permanently", "Disable apps one by one", "Remove all apps", "Contact Shopify"], c: 1 },
-        { q: "The Testing Trifecta includes:", o: ["Happy path only", "Error path only", "Happy path, error path, edge cases", "Random testing"], c: 2 },
-        { q: "Browser console can be accessed with:", o: ["F5", "F12", "F1", "Ctrl+S"], c: 1 },
-        { q: "Before making changes to live theme:", o: ["Just do it", "Understand the issue first", "Ask permission", "Wait a day"], c: 1 },
-        { q: "When comparing theme versions, you should:", o: ["Guess what changed", "Identify conflicting customizations", "Start fresh", "Use only new version"], c: 1 },
-        { q: "Edge cases in testing means:", o: ["Normal scenarios", "Expected inputs", "Extreme scenarios", "Easy tests"], c: 2 },
-        { q: "App support should be contacted:", o: ["Never", "Only as a last resort", "When conflict persists", "For every issue"], c: 2 }
-    ],
-    // Task 8: Client Delivery
-    [
-        { q: "Instead of saying 'it's done', you should:", o: ["Send email", "Show proof (screenshot/video)", "Wait for feedback", "Ask if they're happy"], c: 1 },
-        { q: "Loom walkthrough reduces back-and-forth by:", o: ["20%", "50%", "80%", "100%"], c: 2 },
-        { q: "Before submitting, ask yourself:", o: ["Is it fast enough?", "Would I be happy if I paid for this?", "Is the code clean?", "Will client understand?"], c: 1 },
-        { q: "Version control means:", o: ["Deleting old versions", "Always saving versions (v1, v2, v3)", "Only keeping latest", "Using Git only"], c: 1 },
-        { q: "Before major changes, you should:", o: ["Just make changes", "Know how to undo in 5 minutes", "Inform client", "Wait a day"], c: 1 },
-        { q: "'It works on my machine' is:", o: ["Acceptable", "NOT acceptable", "A valid excuse", "Technical truth"], c: 1 },
-        { q: "Theme backups should be made:", o: ["Monthly", "Weekly", "Before major changes", "Never"], c: 2 },
-        { q: "For every major delivery, record a:", o: ["30-second clip", "2-minute Loom", "10-minute tutorial", "Audio message"], c: 1 },
-        { q: "If something doesn't work for the client:", o: ["It's their problem", "It's still working", "It's broken. Period.", "Need more testing"], c: 2 },
-        { q: "Proof of work should include:", o: ["Just a message", "Screenshot, video, or live link", "Nothing", "Just completion date"], c: 1 }
-    ],
-    // Task 9: Practice Scenarios
-    [
-        { q: "First step for a new store build:", o: ["Add products", "Confirm currency settings", "Choose theme", "Add apps"], c: 1 },
-        { q: "Time limit for a practice store:", o: ["1 hour", "2 hours", "4 hours", "8 hours"], c: 1 },
-        { q: "For speed optimization, first step is:", o: ["Disable apps", "Run initial PageSpeed test", "Compress images", "Contact client"], c: 1 },
-        { q: "For a bug fix, first reproduction step is:", o: ["Fix immediately", "Reproduce on your device", "Ask client for details", "Escalate to manager"], c: 1 },
-        { q: "Bug fixes should be deployed to live:", o: ["Immediately", "After testing on duplicate theme", "Without testing", "Within 1 hour"], c: 1 },
-        { q: "Client store speed target (per day):", o: ["1 complete store", "1 complete + homepage of 2nd", "2 complete stores", "Half a store"], c: 1 },
-        { q: "Final PageSpeed improvement should be:", o: ["Ignored", "Documented", "Estimated", "Not measured"], c: 1 },
-        { q: "For new store, policy pages need:", o: ["Placeholder text", "Real content", "No content", "Coming soon"], c: 1 },
-        { q: "Essential apps for new store is:", o: ["All available apps", "Only essential apps", "No apps", "Free apps only"], c: 1 },
-        { q: "Full QA checklist should be done:", o: ["Before starting", "During development", "Before delivery", "After delivery"], c: 2 }
-    ],
-    // Task 10: Final Certification (20 questions)
-    [
-        { q: "Target PageSpeed score for all builds?", o: ["65+", "75+", "85+", "95+"], c: 2 },
-        { q: "Mobile-first means building for what width?", o: ["320px", "375px", "768px", "1024px"], c: 1 },
-        { q: "How many YouTube subscribers does Digital Heroes have?", o: ["1M+", "2.5M+", "5M+", "10M+"], c: 1 },
-        { q: "1-second delay causes what % conversion loss?", o: ["3%", "7%", "10%", "15%"], c: 1 },
-        { q: "What is the #1 speed killer on Shopify?", o: ["Images", "Apps", "Fonts", "Videos"], c: 1 },
-        { q: "Self QA review should happen how many times?", o: ["1-2", "3-5", "Once", "10+"], c: 1 },
-        { q: "After finishing work, wait how long to review?", o: ["30 min", "1 hour", "2 hours", "No wait"], c: 2 },
-        { q: "Premium package price?", o: ["$800", "$1,200", "$1,500", "$1,800"], c: 1 },
-        { q: "Enterprise package price?", o: ["$1,200", "$1,500", "$1,800", "$2,000"], c: 2 },
-        { q: "Minimum products per practice store?", o: ["1", "2", "3", "5"], c: 2 },
-        { q: "What indicates a variable in Liquid?", o: ["{% %}", "{{ }}", "[[ ]]", "(( ))"], c: 1 },
-        { q: "Theme sections folder contains?", o: ["Base templates", "Reusable blocks", "CSS files", "Images"], c: 1 },
-        { q: "Fresh eyes rule means?", o: ["New team member", "Review after break", "Morning review", "Eye care"], c: 1 },
-        { q: "Peer review is?", o: ["Criticism", "Competition", "Teamwork", "Optional"], c: 2 },
-        { q: "Before major changes, know how to undo in?", o: ["1 minute", "5 minutes", "30 minutes", "1 hour"], c: 1 },
-        { q: "'Works on my machine' is?", o: ["Acceptable", "NOT acceptable", "Valid excuse", "Technical issue"], c: 1 },
-        { q: "Loom reduces back-and-forth by?", o: ["20%", "50%", "80%", "100%"], c: 2 },
-        { q: "Practice store time limit?", o: ["1 hour", "2 hours", "4 hours", "8 hours"], c: 1 },
-        { q: "After 15 days, careless mistakes allowed?", o: ["1-2", "3-5", "Zero", "Unlimited"], c: 2 },
-        { q: "Live theme should NEVER be?", o: ["Viewed", "Shared", "Worked on directly", "Tested"], c: 2 }
-    ]
-];
+// Export content for each task
+trainingTasks[0].content = task1Content;
+trainingTasks[1].content = task2Content;
+trainingTasks[2].content = task3Content;
+trainingTasks[3].content = task4Content;
+trainingTasks[4].content = task5Content;
+trainingTasks[5].content = task6Content;
+trainingTasks[6].content = task7Content;
+trainingTasks[7].content = task8Content;
+trainingTasks[8].content = task9Content;
+trainingTasks[9].content = task10Content;
