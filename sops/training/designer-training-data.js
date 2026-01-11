@@ -1,724 +1,685 @@
-// UI/UX Designer Training Data
-// Complete training content for designer certification
-// UPGRADED: Visuals, Study Guides, and Expanded Lessons
+// UI/UX Designer Training Data - COMPLETE OVERHAUL
+// Digital Heroes UI/UX Designer Certification Program
+// 10 Tasks, 120 Quiz Questions, Comprehensive Content
 
 const trainingTasks = [
     {
         id: 1,
-        title: "Design Thinking",
-        description: "Creative mindset fundamentals",
+        title: "Designer Mindset",
+        description: "5 Laws of Premium Design",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "📖 Read 'Why Your Design Matters' case study",
-            "📊 Internalize the 'Art vs Science' balance",
-            "🧠 Understand the 'Problem Solver' vs 'Pixel Pusher' mindset"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: Designer Principles section",
+            "📖 Study: Creative Ownership & Quality",
+            "🔍 YouTube: 'premium ecommerce design principles'"
         ]
     },
     {
         id: 2,
-        title: "Company Knowledge",
-        description: "Digital Heroes ecosystem",
-        contentFirst: false,
+        title: "Color Theory",
+        description: "Brand styling & 60-30-10 rule",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🏢 Memorize the 3 arms of the ecosystem",
-            "💎 Understand the 'Premium' expectation",
-            "📱 Learn why Mobile-First is a business requirement"
+            "⏱️ Estimated Time: 40 minutes",
+            "📖 Read SOP: Brand Styling Process",
+            "📖 Read SOP: Color Theory for Ecommerce",
+            "🔍 YouTube: 'color psychology in ecommerce'"
         ]
     },
     {
         id: 3,
-        title: "Design Principles",
-        description: "Core UI/UX rules",
-        contentFirst: false,
+        title: "Typography System",
+        description: "Font pairing & hierarchy",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "🎨 Study the 'Visual Hierarchy' diagram",
-            "📏 Memorize the '5-Second Rule'",
-            "🚫 Learn to spot the 5 Common Mistakes"
+            "⏱️ Estimated Time: 35 minutes",
+            "📖 Read SOP: Typography System section",
+            "🔍 YouTube: 'typography for web design'",
+            "🤖 ChatGPT: 'What font pairings work for luxury ecommerce?'"
         ]
     },
     {
         id: 4,
-        title: "Figma Mastery",
-        description: "Tool proficiency",
-        contentFirst: false,
+        title: "Layout & Spacing",
+        description: "8px grid system & containers",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-40 minutes",
-            "🧩 Study the Figma Workflow Process",
-            "⌨️ Memorize key keyboard shortcuts",
-            "📁 Learn proper File Organization hierarchy"
+            "⏱️ Estimated Time: 35 minutes",
+            "📖 Read SOP: Layout & Spacing section",
+            "🔍 YouTube: 'web design spacing systems'",
+            "🤖 ChatGPT: 'What is the 8px spacing grid system?'"
         ]
     },
     {
         id: 5,
-        title: "Brand & Typography",
-        description: "Visual identity",
-        contentFirst: false,
+        title: "Trust Elements",
+        description: "Conversion rate optimization",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "🔤 Learn the Typography Rules (fonts, sizes, contrast)",
-            "🎨 Understand the Brand Color system",
-            "⚖️ Master font pairing basics"
+            "⏱️ Estimated Time: 40 minutes",
+            "📖 Read SOP: Trust Elements Design",
+            "🔍 YouTube: 'ecommerce trust badges'",
+            "🤖 ChatGPT: 'What trust elements increase conversions?'"
         ]
     },
     {
         id: 6,
-        title: "Responsive Design",
-        description: "Multi-device layouts",
-        contentFirst: false,
+        title: "Mobile-First Design",
+        description: "70% traffic, 375px width",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-30 minutes",
-            "📱 Memorize the breakpoints (375px, 768px, 1440px)",
-            "👆 Learn Mobile Design Rules (touch targets)",
-            "📐 Understand the grid system for responsive scaling"
+            "⏱️ Estimated Time: 40 minutes",
+            "📖 Read SOP: Mobile-First Design section",
+            "🔍 YouTube: 'mobile-first design principles'",
+            "🤖 ChatGPT: 'Mobile UX best practices for ecommerce'"
         ]
     },
     {
         id: 7,
-        title: "E-commerce Design",
-        description: "Conversion optimization",
-        contentFirst: false,
+        title: "Design QA Checklist",
+        description: "Visual consistency & polish",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "🛒 Study Conversion-Focused elements",
-            "📦 Learn Product Page must-haves",
-            "🏠 Understand Homepage structural essentials"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: Design QA Checklist",
+            "📖 Read SOP: Design Review Checklist",
+            "🤖 ChatGPT: 'What to check before sending design to client?'"
         ]
     },
     {
         id: 8,
-        title: "Client Handoff",
-        description: "Developer collaboration",
-        contentFirst: false,
+        title: "Design Scenarios",
+        description: "8 difficult client situations",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "📤 Master the Asset Export checklist",
-            "🎥 Learn to record Handoff Looms",
-            "🤝 Understand Dev Mode requirements"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: Handling Difficult Situations",
+            "📖 Read SOP: All 8 scenario scripts",
+            "🤖 ChatGPT: 'How to handle difficult design clients?'"
         ]
     },
     {
         id: 9,
-        title: "Practice Scenarios",
-        description: "Real-world challenges",
-        contentFirst: false,
+        title: "AI Tools & Figma",
+        description: "ChatGPT prompts & workflow",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "🧠 Solve the 3 difficult client scenarios",
-            "📝 Write down your response scripts",
-            "🗣️ Practice saying them out loud"
+            "⏱️ Estimated Time: 45 minutes",
+            "📖 Read SOP: ChatGPT Prompts for Designers",
+            "📖 Read SOP: Figma Workflow & Organization",
+            "🤖 Practice: Use AI for design direction"
         ]
     },
     {
         id: 10,
         title: "Final Certification",
-        description: "Comprehensive assessment",
-        contentFirst: false,
+        description: "Comprehensive exam (20 questions)",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Review ALL previous modules",
-            "🏆 Score 20/20 to pass",
-            "🎉 Get ready to design your first premium store!"
+            "⏱️ Estimated Time: 60 minutes",
+            "📖 Review entire Designer SOP",
+            "📖 Memorize 5 Laws of Premium Design",
+            "📖 Know all 8 scenario scripts",
+            "🎥 Prepare for 30-minute video submission"
         ]
     }
 ];
 
+// ===============================================
+// TASK 1: DESIGNER MINDSET & 5 LAWS
+// ===============================================
+
 const task1Content = `
-<h2>📚 PART 1: DESIGN THINKING</h2>
-
 <div class="content-section">
-<h3>🎯 Why Your Design Matters</h3>
-<p>A client's website had beautiful visuals but a 0.5% conversion rate. Why? Users couldn't find the "Add to Cart" button.</p>
-<div class="highlight-box">
-<strong>Key Insight:</strong> Pretty ≠ Effective. Good design guides users to take action. Your job is to create designs that are BOTH beautiful AND functional.
-</div>
-</div>
-
-<div class="content-section">
-<h3>📊 The Sweet Spot</h3>
-<img src="images/designer_mindset_graph.png" alt="Design Mindset Venn Diagram" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-<p style="text-align: center; color: #94A3B8; font-size: 0.9em;"><em>We operate at the intersection of Art and Science.</em></p>
-</div>
-
-<div class="content-section">
-<h3>💡 Design is Problem-Solving</h3>
-<p>At Digital Heroes, designers are not just "pixel pushers." You are:</p>
-<ul>
-<li>🎯 <strong>Problem Solvers:</strong> Every design addresses a user need</li>
-<li>💰 <strong>Conversion Architects:</strong> Designs drive sales</li>
-<li>🎨 <strong>Brand Storytellers:</strong> Visuals communicate identity</li>
-<li>📱 <strong>Experience Creators:</strong> Users feel emotions through design</li>
-</ul>
+    <img src="images/designer_5_laws.png" alt="5 Laws of Premium Design" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <h2>🎯 Core Philosophy</h2>
+    <div class="highlight-box">
+        <strong>"Design is not just what it looks like. Design is how it works. And how it CONVERTS."</strong>
+    </div>
+    
+    <h3>📖 The $50,000 Difference in Design</h3>
+    <p>Two skincare brands launched in the same month. Same products. Same prices. Same marketing budget.</p>
+    <p><strong>Store A:</strong> Basic template, default fonts, stock images, cluttered layout.</p>
+    <p><strong>Store B:</strong> Custom color palette, premium typography, lifestyle photography, generous whitespace.</p>
+    <p><strong style="color: #10B981;">Results after 30 days:</strong> Store A: 0.8% conversion. Store B: 3.2% conversion (<strong>4x more revenue</strong>)</p>
 </div>
 
 <div class="content-section">
-<h3>🔑 The 3 Pillars of Great Design</h3>
-<ol>
-<li><strong>Clarity:</strong> Users know exactly what to do</li>
-<li><strong>Consistency:</strong> Elements behave predictably</li>
-<li><strong>Conversion:</strong> Design leads to action</li>
-</ol>
-<div class="warning-box">
-<strong>Remember:</strong> If users are confused, the design failed—no matter how beautiful it looks.
-</div>
+    <h2>🎨 THE 5 LAWS OF PREMIUM DESIGN</h2>
+    
+    <h3>LAW 1: WHITESPACE = LUXURY</h3>
+    <p><strong>Crowded = cheap. Breathing room = premium.</strong> When in doubt, add more space. Think Apple, Chanel, Tesla.</p>
+    
+    <h3>LAW 2: CONSISTENCY IS KING</h3>
+    <p>Same fonts, same colors, same button styles, same spacing — <strong>EVERYWHERE</strong>. Inconsistency = amateur.</p>
+    
+    <h3>LAW 3: HIERARCHY GUIDES THE EYE</h3>
+    <p><strong>Most important = biggest and first.</strong> Guide users to what matters. Don't make them think.</p>
+    
+    <h3>LAW 4: MOBILE FIRST, ALWAYS</h3>
+    <p><strong>70% of traffic is mobile.</strong> Design for 375px width FIRST, then scale up to desktop.</p>
+    
+    <h3>LAW 5: DESIGN FOR CONVERSION, NOT AWARDS</h3>
+    <p>A beautiful store that doesn't sell is a <strong>failure</strong>. Every decision should answer: "Will this help visitors buy?"</p>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about design thinking</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>⭐ Creative Ownership & Quality</h2>
+    <p><strong>You own your work 100%:</strong> Colors, typography, layouts, imagery — all YOUR responsibility.</p>
+    
+    <div class="warning-box">
+        <strong>⚠️ Zero Tolerance Policy</strong>
+        <p>After 15 days of onboarding: ONE careless mistake on a live design = potential removal from client work.</p>
+        <ul>
+            <li>No typos in hero text</li>
+            <li>No broken images</li>
+            <li>No misaligned elements</li>
+            <li>Check your work <strong>10x</strong> before delivery</li>
+        </ul>
+    </div>
+    
+    <h3>🎯 Task Priority Order</h3>
+    <ul>
+        <li><strong style="color: #EF4444;">P0:</strong> Revision requests, deadline deliveries, PM/client questions</li>
+        <li><strong style="color: #F59E0B;">P1:</strong> Active design work, asset preparation</li>
+        <li><strong style="color: #10B981;">P2:</strong> Design system updates, mockup refinements</li>
+        <li><strong style="color: #94A3B8;">P3:</strong> Inspiration & learning</li>
+    </ul>
 </div>
 `;
+
+// ===============================================
+// TASK 2: COLOR THEORY & BRAND STYLING
+// ===============================================
 
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
-
 <div class="content-section">
-<h3>🏢 The Digital Heroes Ecosystem</h3>
-<ul>
-<li>📺 <strong>Media Arm:</strong> 2.5M+ YouTube subscribers</li>
-<li>🛠️ <strong>Agency Arm:</strong> Premium Shopify services</li>
-<li>👥 <strong>Talent Pool:</strong> 40+ full-time professionals</li>
-</ul>
-<p>Clients arrive pre-educated and expect premium quality.</p>
+    <h2>🎨 The 60-30-10 Color Rule</h2>
+    <img src="images/designer_60_30_10.png" alt="60-30-10 Color Rule" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <div class="highlight-box">
+        <strong>Perfect Color Balance Every Time</strong>
+        <ul>
+            <li><strong>60% - Dominant:</strong> Background, large sections (neutral/light)</li>
+            <li><strong>30% - Secondary:</strong> Headers, cards, navigation (brand color)</li>
+            <li><strong>10% - Accent:</strong> CTAs, buttons, highlights (contrasting/pop)</li>
+        </ul>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🎨 What Designers Deliver</h3>
-<ul>
-<li>💎 <strong>Premium Look:</strong> $1,200-$1,800 quality designs</li>
-<li>📱 <strong>Mobile-First:</strong> 70% of traffic is mobile</li>
-<li>⚡ <strong>Conversion Focus:</strong> Beautiful AND functional</li>
-<li>🎯 <strong>Brand Alignment:</strong> Consistent visual identity</li>
-</ul>
+    <h2>🎨 Color Psychology by Industry</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Color</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Psychology</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Best For</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Black/Gold</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Luxury, sophistication</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">High-end, premium</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Blue</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Trust, reliability</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Tech, healthcare</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Green</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Natural, wellness</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Health, sustainability</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Orange/Red</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Energy, urgency</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Sales, food</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Pink/Purple</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Beauty, creative</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Beauty, wellness</td></tr>
+    </table>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about company knowledge</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>✅ High Contrast CTAs</h2>
+    <ul>
+        <li>Add to Cart should <strong>POP</strong></li>
+        <li>Use brand's boldest color</li>
+        <li>Ensure <strong>4.5:1 contrast ratio</strong></li>
+        <li>White or dark text (test both)</li>
+    </ul>
+    
+    <h3>❌ Low Contrast Mistakes</h3>
+    <ul>
+        <li>Gray text on gray background</li>
+        <li>Light green on white</li>
+        <li>Blue links on blue headers</li>
+    </ul>
 </div>
 `;
+
+// ===============================================
+// TASK 3: TYPOGRAPHY SYSTEM
+// ===============================================
 
 const task3Content = `
-<h2>📚 TASK 3: DESIGN PRINCIPLES</h2>
-
 <div class="content-section">
-<h3>👁️ Visual Hierarchy Explained</h3>
-<p>Where does the eye go? You control the user's journey.</p>
-<img src="images/visual_hierarchy_guide.png" alt="Visual Hierarchy Guide" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <h2>🔤 Typography Hierarchy</h2>
+    <img src="images/designer_typography.png" alt="Typography Hierarchy" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <div class="highlight-box">
+        <strong>The 2-Font Rule</strong>
+        <p>Maximum 2 font families per store. More = amateur, slower load times, visual chaos.</p>
+        <p><strong>Formula:</strong> 1 distinctive heading font + 1 clean body font</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🎨 Non-Negotiable Design Rules</h3>
-<ul>
-<li>✅ <strong>Visual Hierarchy:</strong> Most important elements stand out (Size, Color, Position)</li>
-<li>✅ <strong>White Space:</strong> Breathing room for content. It's not empty, it's active.</li>
-<li>✅ <strong>Contrast:</strong> Text must be readable (WCAG standards)</li>
-<li>✅ <strong>Alignment:</strong> Everything snaps to grid. Chaos = Distrust.</li>
-<li>✅ <strong>Consistency:</strong> Same patterns throughout. Don't confuse the user.</li>
-</ul>
+    <h2>📋 Recommended Font Pairings</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Style</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Heading</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Body</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Luxury/High-End</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Playfair Display</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Lato</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Modern/Tech</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Poppins</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Inter</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Clean/Minimal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Outfit</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Open Sans</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Friendly/Approachable</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Nunito</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Roboto</td></tr>
+    </table>
 </div>
 
 <div class="content-section">
-<h3>❌ Common Design Mistakes</h3>
-<ul>
-<li>❌ Text over busy images (unreadable)</li>
-<li>❌ Too many fonts (3 max)</li>
-<li>❌ Inconsistent spacing (use 8px grid)</li>
-<li>❌ Hidden CTA buttons (ghost buttons on busy backgrounds)</li>
-<li>❌ Ignoring mobile users</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🎯 The 5-Second Rule</h3>
-<div class="highlight-box">
-<strong>Test:</strong> Show a design for 5 seconds. Can users identify:
-<ol>
-<li>What the site sells?</li>
-<li>Where to click next?</li>
-<li>Why they should trust it?</li>
-</ol>
-If no, redesign.
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about design principles</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>📏 Font Size Hierarchy</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Element</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Desktop</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">H1 (Hero)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">48-64px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">32-40px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">H2 (Section)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">32-40px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">24-28px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">H3 (Subsection)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">24-28px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">20-22px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Body Text</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">16-18px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>16px (never smaller!)</strong></td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Caption</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">14px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">14px</td></tr>
+    </table>
+    <p><strong>Line height for body:</strong> 1.5-1.7</p>
 </div>
 `;
+
+// ===============================================
+// TASK 4: LAYOUT & SPACING
+// ===============================================
 
 const task4Content = `
-<h2>📚 TASK 4: FIGMA MASTERY</h2>
-
 <div class="content-section">
-<h3>🔄 The Professional Workflow</h3>
-<img src="images/figma_workflow_diagram.png" alt="Figma Workflow Diagram" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <h2>📐 The Spacing Multiplier System</h2>
+    <div class="highlight-box">
+        <strong>Use multiples of 8 for all spacing:</strong>
+        <p style="font-size: 1.2em; margin-top: 10px;">8px → 16px → 24px → 32px → 48px → 64px</p>
+        <p>This creates visual rhythm and consistency throughout the design.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🎨 Figma Essentials</h3>
-<ul>
-<li>📐 <strong>Frames:</strong> Use frames, not groups (better constraints)</li>
-<li>🔧 <strong>Auto Layout:</strong> Essential for responsive components</li>
-<li>🎨 <strong>Styles:</strong> Color & text styles (never use raw hex codes)</li>
-<li>📦 <strong>Components:</strong> Reusable elements (Master > Instance)</li>
-<li>🔗 <strong>Variants:</strong> Component states (Hover, Active, Disabled)</li>
-</ul>
+    <h2>📋 Section Spacing Guidelines</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Spacing Type</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Desktop</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Between Sections</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">80-120px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">48-64px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Between Elements</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">24-32px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">16-24px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Card Padding</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">24-32px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">16-20px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Button Padding</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">16px 32px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">14px 24px</td></tr>
+    </table>
 </div>
 
 <div class="content-section">
-<h3>📁 File Organization</h3>
-<p>A messy file = A messy mind = An angry developer.</p>
-<ul>
-<li><strong>Cover Page:</strong> Thumbnail for project overview</li>
-<li><strong>Style Guide:</strong> Colors, fonts, components, grid settings</li>
-<li><strong>Pages:</strong> Separate 'Desktop', 'Mobile', 'Archive', 'In Progress'</li>
-<li><strong>Components:</strong> Master component library</li>
-</ul>
-<div class="highlight-box">
-<strong>Naming Convention:</strong> Use clear names like "Button/Primary/Hover" not "Rectangle 37"
-</div>
-</div>
-
-<div class="content-section">
-<h3>⚡ Figma Shortcuts to Know</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Shift + A</code></td><td style="padding: 10px;">Auto Layout</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Ctrl/Cmd + D</code></td><td style="padding: 10px;">Duplicate</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Alt + Drag</code></td><td style="padding: 10px;">Copy element</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>Ctrl/Cmd + G</code></td><td style="padding: 10px;">Group</td></tr>
-</table>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about Figma</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>📐 Grid Systems</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Screen</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Columns</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Gutter</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Desktop (1200px+)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>12 columns</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">24-32px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Tablet (768-1199px)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">8 columns</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">16-24px</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Mobile (&lt;768px)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4 columns</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">16px</td></tr>
+    </table>
+    
+    <h3>Container Widths</h3>
+    <ul>
+        <li><strong>Max content width:</strong> 1200-1400px</li>
+        <li><strong>Text max-width:</strong> 65-75 characters per line</li>
+        <li><strong>Product grids:</strong> 4-5 columns desktop, 2 mobile</li>
+    </ul>
 </div>
 `;
+
+// ===============================================
+// TASK 5: TRUST ELEMENTS & CONVERSIONS
+// ===============================================
 
 const task5Content = `
-<h2>📚 TASK 5: BRAND & TYPOGRAPHY</h2>
-
 <div class="content-section">
-<h3>🎨 Brand Styling</h3>
-<p>Every brand needs:</p>
-<ul>
-<li>🎨 <strong>Primary Color:</strong> Main brand color (Action, Highlights)</li>
-<li>🎨 <strong>Secondary Color:</strong> Accent color (Supporting elements)</li>
-<li>⚫ <strong>Neutrals:</strong> Black, white, grays (Background, Text)</li>
-<li>✅ <strong>Status Colors:</strong> Success (Green), warning (Yellow), error (Red)</li>
-</ul>
+    <h2>🛡️ Trust Elements = Conversions</h2>
+    <img src="images/designer_trust_elements.png" alt="Trust Elements for Conversions" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <div class="highlight-box">
+        <strong>Visitors need to feel SAFE before buying.</strong>
+        <p>Trust elements reduce friction and increase confidence.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>📝 Typography Rules</h3>
-<ul>
-<li>Use <strong>2-3 fonts maximum</strong></li>
-<li>Headings: 24-48px (bold, expressive)</li>
-<li>Body: 16-18px (regular, legible)</li>
-<li>Line height: 1.5-1.7 (for readability)</li>
-<li>Contrast ratio: 4.5:1 minimum (accessibility)</li>
-</ul>
-<div class="warning-box">
-<strong>Common Mistake:</strong> Using decorative fonts for body text. Save fancy fonts for headings only.
-</div>
-</div>
-
-<div class="content-section">
-<h3>🔤 Font Pairing Tips</h3>
-<ul>
-<li>Serif + Sans-Serif = Classic combination</li>
-<li>Same font family, different weights (e.g., Roboto Bold + Roboto Regular)</li>
-<li>Reference: Google Fonts (Inter, Roboto, Poppins, Playfair Display)</li>
-</ul>
+    <h2>📋 Essential Trust Elements</h2>
+    
+    <h3>🚚 Free Shipping Badge</h3>
+    <p><strong>Location:</strong> Trust bar below hero, product page near ATC</p>
+    <p><strong>Copy:</strong> "Free Shipping Over $50" or "Free Express Shipping"</p>
+    
+    <h3>↩️ Easy Returns Badge</h3>
+    <p><strong>Location:</strong> Trust bar, product page, footer</p>
+    <p><strong>Copy:</strong> "30-Day Easy Returns" or "Hassle-Free Returns"</p>
+    
+    <h3>🔒 Secure Payment Badge</h3>
+    <p><strong>Location:</strong> Near checkout button, footer</p>
+    <p><strong>Copy:</strong> "Secure Checkout" + Visa/MC/PayPal icons</p>
+    
+    <h3>⭐ Customer Reviews</h3>
+    <p><strong>Location:</strong> Homepage section, product pages</p>
+    <p><strong>Best Practice:</strong> Star ratings, customer photos, verified badges</p>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about brand & typography</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>💰 The Button That Made $10,000</h2>
+    <p>A client's "Add to Cart" button was the <strong>same color as the background</strong> — barely visible.</p>
+    <p>Our designer made ONE change: a high-contrast, bold button with subtle animation.</p>
+    <p><strong style="color: #10B981;">Result:</strong> Conversion jumped from 1.2% to 2.8% overnight. That single button generated <strong>$10,000 extra revenue that month.</strong></p>
+    
+    <div class="warning-box">
+        <strong>🎯 The Lesson</strong>
+        <p>Every pixel matters. The smallest design decision can have massive business impact.</p>
+    </div>
 </div>
 `;
+
+// ===============================================
+// TASK 6: MOBILE-FIRST DESIGN
+// ===============================================
 
 const task6Content = `
-<h2>📚 TASK 6: RESPONSIVE DESIGN</h2>
-
 <div class="content-section">
-<h3>📱 Mobile-First Design</h3>
-<p><strong>70% of e-commerce traffic is mobile.</strong> Always design mobile first.</p>
-<ul>
-<li>Start at 375px width (iPhone standard)</li>
-<li>Scale up to tablet (768px)</li>
-<li>Then desktop (1440px)</li>
-</ul>
+    <h2>📱 Mobile-First Design</h2>
+    <img src="images/designer_mobile_first.png" alt="Mobile-First Design" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
+    
+    <div class="warning-box">
+        <strong>🚨 70% OF TRAFFIC IS MOBILE</strong>
+        <p>If mobile isn't perfect, you're losing 70% of potential sales. Mobile isn't an afterthought — it's the PRIMARY experience.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>📐 Breakpoints</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile</strong></td><td style="padding: 10px;">375px - 767px</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Tablet</strong></td><td style="padding: 10px;">768px - 1023px</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Desktop</strong></td><td style="padding: 10px;">1024px+</td></tr>
-</table>
+    <h2>📋 Mobile Design Checklist</h2>
+    
+    <h3>👆 Touch Targets</h3>
+    <ul>
+        <li>Button minimum: <strong>44px × 44px</strong></li>
+        <li>Link spacing: 8px+ between links</li>
+        <li>Form inputs: 48px height minimum</li>
+    </ul>
+    
+    <h3>📱 Layout</h3>
+    <ul>
+        <li>Single column for text content</li>
+        <li><strong>2-column max</strong> for product grids</li>
+        <li>Full-width CTAs</li>
+        <li>No horizontal scrolling</li>
+    </ul>
+    
+    <h3>🛒 Sticky Add to Cart</h3>
+    <ul>
+        <li>Fixed at bottom on scroll</li>
+        <li>Price + Add to Cart visible</li>
+        <li>Doesn't block content</li>
+    </ul>
+    
+    <h3>🔤 Typography</h3>
+    <ul>
+        <li>Body text: <strong>16px minimum</strong></li>
+        <li>Line height: 1.5-1.7</li>
+        <li>Readable without zooming</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>📱 Mobile Design Rules</h3>
-<ul>
-<li>Touch targets: Minimum 44x44px (fingers are fat!)</li>
-<li>Text: Minimum 16px (no pinch-to-zoom needed)</li>
-<li>Single column layouts (easier to scroll)</li>
-<li>Sticky navigation for easy access</li>
-<li>Thumb-friendly button placement (bottom half of screen)</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about responsive design</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>📱 Mobile Width Standards</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(20, 184, 166, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Device</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Width</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Priority</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">iPhone SE</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>375px</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;">Primary design width</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">iPhone 12/13/14</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">390px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Test width</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Tablet</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">768px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Secondary</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Desktop</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1200px+</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Scale up</td></tr>
+    </table>
 </div>
 `;
+
+// ===============================================
+// TASK 7: DESIGN QA CHECKLIST
+// ===============================================
 
 const task7Content = `
-<h2>📚 TASK 7: E-COMMERCE DESIGN</h2>
-
 <div class="content-section">
-<h3>🛒 Conversion-Focused Design</h3>
-<p>E-commerce design is about <strong>selling products</strong>, not winning art awards.</p>
-<ul>
-<li>✅ Clear product images (Hero of the page)</li>
-<li>✅ Visible price and CTA (Above the fold)</li>
-<li>✅ Trust badges (Secure payment icons)</li>
-<li>✅ Social proof (Star ratings with count)</li>
-<li>✅ Urgency elements (Low stock warnings)</li>
-</ul>
+    <h2>✅ Design QA Checklist</h2>
+    
+    <h3>🎨 Visual Consistency</h3>
+    <ul>
+        <li>Same fonts throughout</li>
+        <li>Brand colors applied correctly</li>
+        <li>Consistent button styles</li>
+        <li>Uniform spacing</li>
+        <li>Aligned elements</li>
+    </ul>
+    
+    <h3>📸 Images</h3>
+    <ul>
+        <li>No pixelation</li>
+        <li>Consistent aspect ratios</li>
+        <li>Compressed for speed</li>
+        <li>No broken images</li>
+    </ul>
+    
+    <h3>📱 Responsive</h3>
+    <ul>
+        <li>Tested on real iPhone</li>
+        <li>Tested on real Android</li>
+        <li>No horizontal scroll</li>
+        <li>Touch targets 44px+</li>
+    </ul>
+    
+    <h3>✨ Polish</h3>
+    <ul>
+        <li>Hover states work</li>
+        <li>Smooth transitions</li>
+        <li><strong>No placeholder content / Lorem Ipsum</strong></li>
+        <li>Favicon set</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>📦 Product Page Must-Haves</h3>
-<ul>
-<li>🖼️ High-quality images (multiple angles, zoom)</li>
-<li>💰 Clear price (with compare price if on sale)</li>
-<li>🛒 Prominent Add to Cart button (contrasting color)</li>
-<li>📋 Variant selectors (size, color) - make them easy to tap</li>
-<li>⭐ Customer reviews (builds trust)</li>
-<li>📦 Shipping information (removes anxiety)</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🏠 Homepage Essentials</h3>
-<ol>
-<li>Hero section with clear value proposition + CTA</li>
-<li>Featured/bestselling products (Social proof)</li>
-<li>Trust signals (reviews, media logos)</li>
-<li>Collection navigation (Easy browsing)</li>
-<li>Footer with policies and contact (Legitimacy)</li>
-</ol>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about e-commerce design</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>⚠️ Common Design Problems & Fixes</h2>
+    
+    <h3>Problem: Store Looks "Template-y"</h3>
+    <p><strong>Fix:</strong> Customize every section with brand colors, use unique typography, replace stock photos.</p>
+    
+    <h3>Problem: Mobile Layout Broken</h3>
+    <p><strong>Fix:</strong> Test on real devices, use percentage widths, ensure images max-width: 100%.</p>
+    
+    <h3>Problem: Images Look Blurry</h3>
+    <p><strong>Fix:</strong> Request 2x resolution from client, avoid upscaling small images.</p>
 </div>
 `;
+
+// ===============================================
+// TASK 8: DESIGN SCENARIOS
+// ===============================================
 
 const task8Content = `
-<h2>📚 TASK 8: CLIENT HANDOFF</h2>
-
 <div class="content-section">
-<h3>📤 Design Handoff Best Practices</h3>
-<ul>
-<li>Organize layers and name them properly</li>
-<li>Create a clear style guide page</li>
-<li>Export assets in correct formats</li>
-<li>Provide design specs (margins, padding)</li>
-<li>Use Figma Dev Mode for developers</li>
-</ul>
+    <h2>🔴 8 DIFFICULT SITUATIONS WITH SCRIPTS</h2>
+    
+    <h3>SCENARIO 1: "I'll Know It When I See It"</h3>
+    <p><strong>Response:</strong> "Let me show you 3 different directions. Please point to elements you like in each. This will help me understand your vision."</p>
+    
+    <h3>SCENARIO 2: Client Wants Bad Design</h3>
+    <p><strong>Response:</strong> "Thank you for sharing your vision! I'd like to suggest some enhancements that will improve conversions. Can I show you some options?"</p>
+    
+    <h3>SCENARIO 3: Multiple Stakeholders</h3>
+    <p><strong>Response:</strong> "Could you consolidate into one unified feedback document? This ensures we stay on timeline."</p>
+    
+    <h3>SCENARIO 4: Design Won't Convert</h3>
+    <p><strong>Response:</strong> "I want to share some data: [stat]. Your current request may impact sales negatively. I recommend [alternative]."</p>
 </div>
 
 <div class="content-section">
-<h3>📁 Asset Export Formats</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Photos</strong></td><td style="padding: 10px;">WebP/JPG (Compressed)</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Icons</strong></td><td style="padding: 10px;">SVG (Vector = Scalable)</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Logos</strong></td><td style="padding: 10px;">SVG + PNG (Transparent)</td></tr>
-<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Backgrounds</strong></td><td style="padding: 10px;">WebP/JPG</td></tr>
-</table>
+    <h3>SCENARIO 5: Endless Revisions</h3>
+    <p><strong>Response:</strong> "We've completed the included revisions. I'll check with the PM about options for additional design work."</p>
+    
+    <h3>SCENARIO 6: Disapproves Everything</h3>
+    <p><strong>Response:</strong> "What specific elements aren't working? Can you show me examples of designs you love?"</p>
+    
+    <h3>SCENARIO 7: Free Concepts Before Order</h3>
+    <p><strong>Response:</strong> "We don't create custom designs before project confirmation. Our portfolio demonstrates our quality."</p>
+    
+    <h3>SCENARIO 8: Low Quality Assets</h3>
+    <p><strong>Response:</strong> "To achieve premium results, I need high-resolution assets: Logo in SVG/PNG, photos min 2000px wide."</p>
 </div>
 
 <div class="content-section">
-<h3>🎥 Loom Walkthrough</h3>
-<div class="highlight-box">
-<strong>Record a 2-5 minute video explaining:</strong>
-<ul>
-<li>Overall design approach and decisions</li>
-<li>Key interactions and animations</li>
-<li>Responsive behavior (how it scales)</li>
-<li>Any special notes for developers</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about handoff</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>🔄 Client Feedback Translation</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Says</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They Mean</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Your Action</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"It doesn't pop"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Needs more contrast</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Increase saturation, add bold accent</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"It looks too busy"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Too many elements</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add whitespace, reduce colors</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"It feels cheap"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Lacks premium cues</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add spacing, upgrade typography</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Make logo bigger"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">More brand presence</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add brand colors elsewhere</td></tr>
+    </table>
 </div>
 `;
+
+// ===============================================
+// TASK 9: AI TOOLS & FIGMA WORKFLOW
+// ===============================================
 
 const task9Content = `
-<h2>📚 TASK 9: PRACTICE SCENARIOS</h2>
-
 <div class="content-section">
-<h3>🎯 Scenario 1: Bad Brief</h3>
-<p><strong>Client says:</strong> "Make it pop" or "I'll know it when I see it"</p>
-<div class="highlight-box">
-<strong>Your Response:</strong>
-<ol>
-<li>Ask clarifying questions ("Can you define 'pop' with an example?")</li>
-<li>Request visual examples they like (Competitor analysis)</li>
-<li>Create a mood board for approval FIRST</li>
-<li>Get sign-off before designing full pages</li>
-</ol>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🔄 Scenario 2: Endless Revisions</h3>
-<p><strong>Client keeps asking for changes that contradict previous feedback.</strong></p>
-<div class="warning-box">
-<strong>Your Response:</strong>
-<ul>
-<li>Document all feedback in writing</li>
-<li>Summarize changes before implementing ("Just to confirm, we are changing X to Y...")</li>
-<li>Set clear revision limits upfront (e.g., 2 rounds included)</li>
-<li>Escalate to PM if scope creep occurs</li>
-</ul>
-</div>
+    <h2>🤖 ChatGPT Prompts for Designers</h2>
+    
+    <h3>Design Direction Prompt</h3>
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 15px; border-radius: 8px; border-left: 4px solid #8B5CF6; margin: 15px 0; font-family: monospace; font-size: 0.85em;">
+        <p>"I'm designing a Shopify store for:</p>
+        <p>Industry: [e.g., fashion]</p>
+        <p>Target audience: [e.g., women 25-35]</p>
+        <p>Brand vibe: [e.g., minimalist]</p>
+        <p>Give me: Color palette, font pairing, layout style, hero approach, trust elements."</p>
+    </div>
+    
+    <h3>CRO Review Prompt</h3>
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 15px; border-radius: 8px; border-left: 4px solid #10B981; margin: 15px 0; font-family: monospace; font-size: 0.85em;">
+        <p>"Review my [homepage/product page] for conversion optimization:</p>
+        <p>1. Is there clear visual hierarchy?</p>
+        <p>2. Are CTAs prominent and above fold?</p>
+        <p>3. What trust elements are missing?</p>
+        <p>4. What would increase conversions?"</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>📷 Scenario 3: Bad Client Assets</h3>
-<p><strong>Client provides low-resolution images and no brand guidelines.</strong></p>
-<ul>
-<li>Request higher quality assets immediately</li>
-<li>Suggest stock photo alternatives (Unsplash/Pexels)</li>
-<li>Create basic brand guidelines (simple palette/font choice) based on logo</li>
-<li>Document limitations for clarity ("Low-res logo used as placeholder")</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about scenarios</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h2>🎨 Figma File Structure</h2>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Page</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Contents</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">📋 Cover</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Project name, status, date</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">📌 Moodboard</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Reference screenshots, inspiration</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>🎨 Style Guide</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Colors, fonts, spacing, components</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">🏠 Desktop</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">All desktop page designs</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">📱 Mobile</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">All mobile page designs</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">🗑️ Archive</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Old versions, rejected concepts</td></tr>
+    </table>
+    
+    <h3>✅ Naming Conventions</h3>
+    <ul>
+        <li><strong>Frames:</strong> Page-Section (e.g., "Home-Hero")</li>
+        <li><strong>Components:</strong> Type/Name (e.g., "Button/Primary")</li>
+        <li><strong>Never:</strong> "Frame 432", "Untitled", "Final-v2-FINAL"</li>
+    </ul>
 </div>
 `;
+
+// ===============================================
+// TASK 10: FINAL CERTIFICATION
+// ===============================================
 
 const task10Content = `
-<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
-
 <div class="content-section">
-<h3>🏆 Congratulations!</h3>
-<p>You've completed the UI/UX Designer training. This final assessment covers everything you've learned:</p>
-<ul>
-<li>✅ Design thinking and mindset</li>
-<li>✅ Digital Heroes ecosystem</li>
-<li>✅ Core design principles</li>
-<li>✅ Figma proficiency and workflow</li>
-<li>✅ Brand and typography rules</li>
-<li>✅ Responsive design standards</li>
-<li>✅ E-commerce conversion design</li>
-<li>✅ Client handoff best practices</li>
-<li>✅ Real-world problem solving</li>
-</ul>
+    <h2>🎓 Final Certification Requirements</h2>
+    
+    <div class="highlight-box">
+        <strong>📋 Pre-Certification Checklist</strong>
+        <ul>
+            <li>✅ Complete Tasks 1-9 with 10/10 on all quizzes</li>
+            <li>✅ Review entire Designer SOP</li>
+            <li>📖 Memorize 5 Laws of Premium Design</li>
+            <li>📖 Know all 8 scenario scripts</li>
+            <li>📖 Understand QA checklist categories</li>
+        </ul>
+    </div>
+    
+    <h3>🎥 Video Submission (30 minutes)</h3>
+    <ol>
+        <li><strong>Introduction (2 min):</strong> Name, design background, what you learned</li>
+        <li><strong>SOP Walkthrough (10 min):</strong> 5 Laws, QA checklist, mobile-first</li>
+        <li><strong>Design Review (15 min):</strong> Review YOUR past design vs our principles</li>
+        <li><strong>Closing (3 min):</strong> Your commitment, questions</li>
+    </ol>
 </div>
 
 <div class="content-section">
-<h3>📝 Final Assessment</h3>
-<div class="warning-box">
-<strong>20 questions covering all topics.</strong>
-<p>Score 20/20 to receive your Designer Certification.</p>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Final Quiz?</h3>
-<ul>
-<li>📝 20 questions covering all training modules</li>
-<li>🎯 Score <strong>20/20</strong> to receive certification</li>
-</ul>
+    <h2>🏆 Certification Complete When</h2>
+    <ul>
+        <li>✅ All 10 tasks done</li>
+        <li>✅ All quizzes passed with 10/10</li>
+        <li>✅ Final exam 20/20</li>
+        <li>✅ 30-minute video submitted</li>
+        <li>✅ Video approved by senior designer</li>
+    </ul>
+    
+    <h3>📈 Post-Certification Pathway</h3>
+    <ul>
+        <li><strong>Week 1-2:</strong> Create designs with senior review</li>
+        <li><strong>Week 3-4:</strong> Handle 1-2 projects with QA oversight</li>
+        <li><strong>Month 2:</strong> Manage multiple projects</li>
+        <li><strong>Month 3+:</strong> Full Designer — independent ownership</li>
+    </ul>
+    
+    <div class="highlight-box">
+        <strong>🎯 Remember the 5 Laws</strong>
+        <ol>
+            <li>WHITESPACE = LUXURY</li>
+            <li>CONSISTENCY IS KING</li>
+            <li>HIERARCHY GUIDES THE EYE</li>
+            <li>MOBILE FIRST, ALWAYS (70%)</li>
+            <li>DESIGN FOR CONVERSION</li>
+        </ol>
+    </div>
 </div>
 `;
 
-// Keep existing quizzes
-const allQuizzes = [
-    // Task 1: Design Thinking
-    [
-        { q: "Good design is:", o: ["Pretty but confusing", "Ugly but functional", "Beautiful AND functional", "Complex and detailed"], c: 2 },
-        { q: "At Digital Heroes, designers are considered:", o: ["Pixel pushers", "Problem solvers", "Artists only", "Decorators"], c: 1 },
-        { q: "The 3 pillars of great design are:", o: ["Color, Font, Image", "Clarity, Consistency, Conversion", "Speed, Beauty, Complexity", "Mobile, Desktop, Tablet"], c: 1 },
-        { q: "If users are confused by a design:", o: ["They'll figure it out", "Add more instructions", "The design failed", "Blame the user"], c: 2 },
-        { q: "A low conversion rate despite beautiful design means:", o: ["Users don't appreciate art", "Pretty ≠ Effective", "Add more colors", "It's the developer's fault"], c: 1 },
-        { q: "Design is primarily about:", o: ["Making things look good", "Problem-solving", "Following trends", "Personal expression"], c: 1 },
-        { q: "Designers at Digital Heroes are:", o: ["Conversion architects", "Just visual creators", "Only decorators", "IT support"], c: 0 },
-        { q: "What should design guide users to do?", o: ["Look at visuals", "Take action", "Scroll endlessly", "Nothing specific"], c: 1 },
-        { q: "Brand storytelling through design means:", o: ["Writing blog posts", "Visuals communicate identity", "Adding more text", "Using animations"], c: 1 },
-        { q: "Experience creators shape:", o: ["Only visuals", "User emotions", "Code quality", "Server speed"], c: 1 }
-    ],
-    // Task 2: Company Knowledge
-    [
-        { q: "Digital Heroes YouTube subscribers:", o: ["500K+", "1M+", "2.5M+", "5M+"], c: 2 },
-        { q: "Premium package price range:", o: ["$500-$800", "$800-$1,000", "$1,200-$1,800", "$2,000-$3,000"], c: 2 },
-        { q: "Mobile traffic percentage in e-commerce:", o: ["30%", "50%", "70%", "90%"], c: 2 },
-        { q: "Clients arrive at Digital Heroes:", o: ["Uneducated", "Pre-educated via YouTube", "Through cold calling", "Randomly"], c: 1 },
-        { q: "Full-time professionals at Digital Heroes:", o: ["10+", "20+", "40+", "100+"], c: 2 },
-        { q: "Designers must deliver:", o: ["Quick drafts", "Premium quality", "Basic designs", "Templates only"], c: 1 },
-        { q: "Primary design approach:", o: ["Desktop-first", "Mobile-first", "Tablet-first", "Print-first"], c: 1 },
-        { q: "Visual identity must be:", o: ["Different each page", "Consistent", "Experimental", "Changing"], c: 1 },
-        { q: "The agency arm provides:", o: ["Free services", "Premium Shopify services", "Only consulting", "Hardware sales"], c: 1 },
-        { q: "Design quality expectation:", o: ["Basic", "Moderate", "$1,200-$1,800 quality", "Free tier"], c: 2 }
-    ],
-    // Task 3: Design Principles
-    [
-        { q: "Visual hierarchy means:", o: ["All equal importance", "Most important elements stand out", "Random placement", "Hidden elements"], c: 1 },
-        { q: "Maximum recommended fonts:", o: ["1", "2-3", "5-6", "Unlimited"], c: 1 },
-        { q: "The 5-second test checks if users can identify:", o: ["Colors used", "Font names", "What site sells, where to click, trust signals", "Designer name"], c: 2 },
-        { q: "White space is:", o: ["Wasted space", "Breathing room for content", "A mistake", "Cheap design"], c: 1 },
-        { q: "Text over busy images is:", o: ["Professional", "Unreadable", "Trendy", "Recommended"], c: 1 },
-        { q: "CTA buttons should be:", o: ["Hidden", "Small", "Prominent", "Same color as background"], c: 2 },
-        { q: "Consistency in design means:", o: ["Same patterns throughout", "Different for each page", "Experimental", "Random choices"], c: 0 },
-        { q: "Contrast is important for:", o: ["Aesthetics only", "Readability", "Confusion", "Decoration"], c: 1 },
-        { q: "If the 5-second test fails, you should:", o: ["Ignore it", "Redesign", "Add more content", "Change colors"], c: 1 },
-        { q: "Alignment means elements:", o: ["Are placed randomly", "Snap to grid", "Overlap", "Float freely"], c: 1 }
-    ],
-    // Task 4: Figma
-    [
-        { q: "Auto Layout shortcut:", o: ["Ctrl+A", "Shift+A", "Alt+A", "Cmd+A"], c: 1 },
-        { q: "Use frames instead of:", o: ["Shapes", "Groups", "Lines", "Text"], c: 1 },
-        { q: "Component states are managed through:", o: ["Layers", "Variants", "Groups", "Pages"], c: 1 },
-        { q: "Naming like 'Rectangle 37' is:", o: ["Acceptable", "Recommended", "Bad practice", "Required"], c: 2 },
-        { q: "Good naming convention example:", o: ["Rectangle 37", "Button/Primary/Hover", "New Layer", "Copy 5"], c: 1 },
-        { q: "Duplicate shortcut:", o: ["Ctrl+A", "Ctrl+D", "Ctrl+C", "Ctrl+V"], c: 1 },
-        { q: "File organization should include:", o: ["Random pages", "Cover, Style Guide, Pages, Components", "One page only", "No structure"], c: 1 },
-        { q: "Styles in Figma are for:", o: ["Decoration", "Color & text consistency", "Animation", "Prototyping"], c: 1 },
-        { q: "Reusable elements should be:", o: ["Grouped", "Made into Components", "Flattened", "Deleted"], c: 1 },
-        { q: "Alt + Drag does:", o: ["Delete", "Copy element", "Rotate", "Scale"], c: 1 }
-    ],
-    // Task 5: Brand & Typography
-    [
-        { q: "Maximum fonts recommended:", o: ["1", "2-3", "5", "10"], c: 1 },
-        { q: "Body text size range:", o: ["10-12px", "14-15px", "16-18px", "20-24px"], c: 2 },
-        { q: "Line height should be:", o: ["1.0", "1.2", "1.5-1.7", "2.0+"], c: 2 },
-        { q: "Minimum contrast ratio:", o: ["2:1", "3:1", "4.5:1", "10:1"], c: 2 },
-        { q: "Decorative fonts should be used for:", o: ["Body text", "Headings only", "Everything", "Never"], c: 1 },
-        { q: "Brand colors include:", o: ["One color only", "Primary, Secondary, Neutrals", "Rainbow", "Black only"], c: 1 },
-        { q: "Status colors are for:", o: ["Decoration", "Success, warning, error states", "Brand identity", "Backgrounds"], c: 1 },
-        { q: "Classic font pairing:", o: ["Two decorative fonts", "Serif + Sans-Serif", "Comic Sans only", "Random fonts"], c: 1 },
-        { q: "Heading text size range:", o: ["12-16px", "16-20px", "24-48px", "60-80px"], c: 2 },
-        { q: "Google Fonts examples:", o: ["Arial, Times", "Inter, Roboto, Poppins", "Comic Sans", "Wingdings"], c: 1 }
-    ],
-    // Task 6: Responsive Design
-    [
-        { q: "Mobile traffic percentage:", o: ["30%", "50%", "70%", "90%"], c: 2 },
-        { q: "Mobile-first means starting at:", o: ["1440px", "1024px", "768px", "375px"], c: 3 },
-        { q: "Mobile breakpoint range:", o: ["0-374px", "375px-767px", "768px-1023px", "1024px+"], c: 1 },
-        { q: "Minimum touch target size:", o: ["24x24px", "32x32px", "44x44px", "60x60px"], c: 2 },
-        { q: "Minimum mobile text size:", o: ["10px", "12px", "14px", "16px"], c: 3 },
-        { q: "Desktop breakpoint starts at:", o: ["768px", "960px", "1024px", "1440px"], c: 2 },
-        { q: "Mobile layouts should be:", o: ["Multi-column", "Single column", "Grid-based", "Complex"], c: 1 },
-        { q: "Thumb-friendly means buttons are:", o: ["At top of screen", "Easy to reach with thumb", "Very small", "Hidden"], c: 1 },
-        { q: "Tablet breakpoint:", o: ["375px-500px", "500px-767px", "768px-1023px", "1024px+"], c: 2 },
-        { q: "Sticky navigation helps with:", o: ["Aesthetics", "Easy access", "Loading speed", "SEO"], c: 1 }
-    ],
-    // Task 7: E-commerce Design
-    [
-        { q: "E-commerce design is primarily about:", o: ["Art", "Selling products", "Personal style", "Complexity"], c: 1 },
-        { q: "Product page must have:", o: ["Only images", "Image, price, CTA, reviews", "Just text", "Animation"], c: 1 },
-        { q: "Trust badge examples:", o: ["Social links", "Payment icons, security badges", "Animations", "Large fonts"], c: 1 },
-        { q: "Social proof includes:", o: ["Brand colors", "Customer reviews", "Footer links", "Header text"], c: 1 },
-        { q: "Urgency elements show:", o: ["Brand story", "Stock levels, time limits", "Company history", "Team photos"], c: 1 },
-        { q: "Hero section should have:", o: ["Just an image", "Clear value proposition", "Many paragraphs", "Small text"], c: 1 },
-        { q: "CTA button on product page:", o: ["Should be hidden", "Prominent Add to Cart", "Same as background", "At bottom only"], c: 1 },
-        { q: "Product images should be:", o: ["Single angle", "Multiple angles, high quality", "Low resolution", "Text only"], c: 1 },
-        { q: "Shipping info placement:", o: ["Hidden", "On product page", "Footer only", "Checkout only"], c: 1 },
-        { q: "Homepage should include:", o: ["Just hero", "Hero, products, trust, navigation", "Only text", "Animation only"], c: 1 }
-    ],
-    // Task 8: Client Handoff
-    [
-        { q: "Layers should be:", o: ["Randomly named", "Properly named and organized", "Unnamed", "Deleted"], c: 1 },
-        { q: "Photos should be exported as:", o: ["SVG", "WebP/JPG", "PDF", "AI"], c: 1 },
-        { q: "Icons should be exported as:", o: ["JPG", "PNG only", "SVG", "GIF"], c: 2 },
-        { q: "Style guide includes:", o: ["Random notes", "Colors, fonts, components", "Only wireframes", "Sketches"], c: 1 },
-        { q: "Loom video length:", o: ["30 seconds", "2-5 minutes", "30 minutes", "1 hour"], c: 1 },
-        { q: "Figma Dev Mode is for:", o: ["Designers only", "Developers", "Clients", "Marketing"], c: 1 },
-        { q: "Walkthrough video should explain:", o: ["Personal opinions", "Design approach, interactions, responsive behavior", "Salary expectations", "Personal life"], c: 1 },
-        { q: "Logos should be exported as:", o: ["JPG only", "SVG + PNG", "GIF", "BMP"], c: 1 },
-        { q: "Design specs are:", o: ["Optional", "Required for developers", "Only for print", "Not needed"], c: 1 },
-        { q: "Asset organization matters because:", o: ["It looks nice", "Saves developer time", "Not important", "Only for large projects"], c: 1 }
-    ],
-    // Task 9: Practice Scenarios
-    [
-        { q: "When client says 'make it pop', you should:", o: ["Just guess", "Ask clarifying questions", "Ignore them", "Refuse the project"], c: 1 },
-        { q: "Endless revisions should be handled by:", o: ["Accepting everything", "Documenting feedback, setting limits", "Quitting", "Ignoring client"], c: 1 },
-        { q: "Bad client assets require:", o: ["Using them anyway", "Request better quality or suggest alternatives", "Refusing project", "Complaining"], c: 1 },
-        { q: "Mood board should be created:", o: ["After final design", "Before designing for approval", "Never", "Only for print"], c: 1 },
-        { q: "Contradicting feedback should be:", o: ["Ignored", "Documented in writing", "Accepted without question", "Argued about"], c: 1 },
-        { q: "Revision limits should be set:", o: ["Never", "Upfront", "After completion", "When annoyed"], c: 1 },
-        { q: "Low-resolution images need:", o: ["To be used anyway", "Higher quality alternatives", "More filters", "Stretching"], c: 1 },
-        { q: "Missing brand guidelines means:", o: ["Skip branding", "Create basic guidelines", "Use random colors", "Refuse project"], c: 1 },
-        { q: "PM escalation is needed when:", o: ["Never", "Problems persist", "Always", "First day"], c: 1 },
-        { q: "Clarifying questions help:", o: ["Waste time", "Get clear direction", "Annoy client", "Delay project"], c: 1 }
-    ],
-    // Task 10: Final Certification (20 questions)
-    [
-        { q: "Good design is:", o: ["Pretty only", "Functional only", "Beautiful AND functional", "Complex"], c: 2 },
-        { q: "Mobile traffic percentage:", o: ["30%", "50%", "70%", "90%"], c: 2 },
-        { q: "Maximum fonts:", o: ["1", "2-3", "5", "10"], c: 1 },
-        { q: "Mobile-first starts at:", o: ["1440px", "768px", "375px", "320px"], c: 2 },
-        { q: "Minimum touch target:", o: ["24px", "32px", "44px", "60px"], c: 2 },
-        { q: "5-second test checks:", o: ["Speed", "What sells, where to click, trust", "Colors", "Fonts"], c: 1 },
-        { q: "Auto Layout shortcut:", o: ["Ctrl+A", "Shift+A", "Alt+A", "Tab"], c: 1 },
-        { q: "Icons export format:", o: ["JPG", "PNG", "SVG", "GIF"], c: 2 },
-        { q: "Digital Heroes subscribers:", o: ["1M", "2.5M+", "5M", "10M"], c: 1 },
-        { q: "CTA buttons should be:", o: ["Hidden", "Small", "Prominent", "Same as background"], c: 2 },
-        { q: "Line height:", o: ["1.0", "1.2", "1.5-1.7", "2.5"], c: 2 },
-        { q: "Contrast ratio minimum:", o: ["2:1", "3:1", "4.5:1", "10:1"], c: 2 },
-        { q: "Loom video length:", o: ["30 sec", "2-5 min", "30 min", "1 hour"], c: 1 },
-        { q: "Visual hierarchy means:", o: ["All equal", "Important stands out", "Random", "Hidden"], c: 1 },
-        { q: "E-commerce design is about:", o: ["Art", "Selling", "Complexity", "Decoration"], c: 1 },
-        { q: "White space is:", o: ["Wasted", "Breathing room", "Mistake", "Bad"], c: 1 },
-        { q: "When brief is unclear:", o: ["Guess", "Ask questions", "Refuse", "Start anyway"], c: 1 },
-        { q: "Components in Figma are:", o: ["One-time use", "Reusable elements", "Layers", "Pages"], c: 1 },
-        { q: "Premium price range:", o: ["$500", "$800", "$1,200-$1,800", "$3,000"], c: 2 },
-        { q: "Mobile text minimum:", o: ["10px", "12px", "14px", "16px"], c: 3 }
-    ]
-];
+// Export content
+trainingTasks[0].content = task1Content;
+trainingTasks[1].content = task2Content;
+trainingTasks[2].content = task3Content;
+trainingTasks[3].content = task4Content;
+trainingTasks[4].content = task5Content;
+trainingTasks[5].content = task6Content;
+trainingTasks[6].content = task7Content;
+trainingTasks[7].content = task8Content;
+trainingTasks[8].content = task9Content;
+trainingTasks[9].content = task10Content;
