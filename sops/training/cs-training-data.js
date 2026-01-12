@@ -126,31 +126,184 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 PART 1: SUCCESS MINDSET</h2>
+<h2>📚 PART 1: SUCCESS MINDSET - The Retention Growth Engine</h2>
 
 <div class="content-section">
-<h3>🎯 Retention is Growth</h3>
-<p>It costs 5x more to get a new client than to keep an existing one.</p>
-<ul>
-<li><strong>We are not Support:</strong> Support fixes breaks. Success prevents breaks.</li>
-<li><strong>We are Partners:</strong> We sit on the same side of the table as the client.</li>
-<li><strong>Proactive:</strong> We call them BEFORE they have a problem.</li>
-</ul>
+<h3>🎯 Why Are You Here?</h3>
+<p>Customer Success is not a support role. It's not a "nice to have." It's the <strong>single most important factor</strong> separating successful agencies from those that burn through clients.</p>
+
+<div class="warning-box">
+<strong>⚠️ The Leaky Bucket Problem:</strong><br>
+Imagine pouring water into a bucket with holes. That's what happens when you focus only on sales without CS. You acquire 10 clients, lose 8, net +2. <strong>CS plugs the holes.</strong>
+<p style="margin-top: 10px;">Companies with strong CS have <strong>5-25% higher profitability</strong> because keeping clients is cheaper than finding new ones.</p>
+</div>
 </div>
 
 <div class="content-section">
-<h3>💡 The Trust Equation</h3>
+<h3>💡 Retention is Growth</h3>
+<div class="highlight-box" style="text-align: center; font-size: 1.2em;">
+<strong>It costs 5x more to get a new client than to keep an existing one.</strong>
+</div>
+
+<p>This single statistic should shape everything you do:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Acquisition Focus</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Retention Focus</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Spend $500 to acquire 1 client</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Spend $100 to keep 1 client</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client lifetime: 6 months</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client lifetime: 3 years</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revenue focus only</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Relationships + Referrals</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>10 clients, 2 remain</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;"><strong>10 clients, 8 remain + referrals</strong></td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🔥 Support vs Success: Know the Difference</h3>
+<p>This is the most common confusion. You are NOT support.</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🛠️ Support</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚀 Customer Success</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reactive — waits for problems</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Proactive — prevents problems</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fixes breaks</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Prevents breaks</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Transaction-based</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Relationship-based</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ticket-driven</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Strategy-driven</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's the fix"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"How can we help you grow?"</strong></td>
+</tr>
+</table>
+
 <div class="highlight-box">
-<strong>Trust = (Credibility + Reliability + Intimacy) / Self-Orientation.</strong>
-<p>Focus on THEIR goals, not our revenue.</p>
+<strong>Your Role:</strong> You are a <em>Partner</em>. You sit on the same side of the table as the client, looking at their business together. You call them BEFORE they have a problem. You anticipate needs. You are a strategic ally.
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 The Trust Equation</h3>
+<p>Trust is not just a feeling — it's measurable. Use this formula to diagnose relationship health:</p>
+
+<div style="text-align: center; padding: 20px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; margin: 20px 0;">
+<strong style="font-size: 1.4em; color: #8B5CF6;">Trust = (Credibility + Reliability + Intimacy) ÷ Self-Orientation</strong>
+</div>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Credibility</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Do they believe you're competent?</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Reliability</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Do you do what you say you'll do?</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Intimacy</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Do they feel safe sharing concerns?</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Self-Orientation</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;">Are you focused on YOUR goals or THEIRS? (Lower = better)</td>
+</tr>
+</table>
+
+<div class="warning-box">
+<strong>Key Insight:</strong> The easiest way to destroy trust? High self-orientation. Focus on THEIR success, not your quota. If they sense you're selling, not helping — trust collapses.
+</div>
+</div>
+
+<div class="content-section">
+<h3>⏰ Proactive vs Reactive Model</h3>
+<p>The Proactive CS Model is what separates average from exceptional:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+<div style="padding: 25px; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border: 2px solid rgba(239, 68, 68, 0.3);">
+<h4 style="color: #EF4444; margin-top: 0;">❌ Reactive CS</h4>
+<ul style="margin: 10px 0 0 0; padding-left: 20px;">
+<li>Wait for client to report issues</li>
+<li>Respond to complaints</li>
+<li>Only talk when asked</li>
+<li>Surprised by cancellations</li>
+</ul>
+</div>
+
+<div style="padding: 25px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+<h4 style="color: #10B981; margin-top: 0;">✅ Proactive CS</h4>
+<ul style="margin: 10px 0 0 0; padding-left: 20px;">
+<li>Check in BEFORE problems arise</li>
+<li>Anticipate needs</li>
+<li>Schedule regular touchpoints</li>
+<li>Know churn signals early</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Build Your CS Foundation</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Trust Audit (5 min)</h4>
+<p>Think of a past relationship (client, friend, colleague) where trust was strong or weak. Score them on:</p>
+<ul>
+<li>Credibility (1-10)</li>
+<li>Reliability (1-10)</li>
+<li>Intimacy (1-10)</li>
+<li>Self-Orientation (1-10)</li>
+</ul>
+<p>Calculate the Trust Score. Does it match your gut feeling about that relationship?</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Proactive vs Reactive Analysis (5 min)</h4>
+<p><strong>Scenario:</strong> A client's website traffic dropped 30% last month. You noticed it, but they haven't mentioned it.</p>
+<ol>
+<li>Write the REACTIVE response (what most CSMs would do)</li>
+<li>Write the PROACTIVE response (what YOU should do)</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the CS SOP (10 min)</h4>
+<p>Open the <a href="../cs-sop.html" target="_blank" style="color: #8B5CF6;">CS SOP document</a> and read the first 2 sections. Take note of specific processes you'll follow.</p>
 </div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned the CS mindset. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about mindset</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 scenario-based questions</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
+<li>💡 Questions test JUDGMENT, not just recall</li>
 </ul>
 </div>
 `;
@@ -210,27 +363,167 @@ const task3Content = `
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: CHURN PREVENTION</h2>
+<h2>📚 TASK 4: CHURN PREVENTION - Saving Clients Before They Leave</h2>
 
 <div class="content-section">
-<h3>⚠️ Red Flags</h3>
-<ul>
-<li><strong>Ghosting:</strong> They stop replying to emails.</li>
-<li><strong>Change in POC:</strong> Their champion leaves the company. (High Risk).</li>
-<li><strong>Late Payments:</strong> Often precedes cancellation.</li>
+<h3>🎯 Why Churn Prevention Matters</h3>
+<p>Churn is silent. By the time a client says "I want to cancel," they made that decision <strong>weeks ago</strong>. Your job is to spot the warning signs BEFORE they decide to leave.</p>
+
+<div class="warning-box">
+<strong>⚠️ The Math of Churn:</strong>
+<ul style="margin-bottom: 0;">
+<li>Average client = $12,000/year revenue</li>
+<li>Average churn = 20% annually = lose 2 of every 10 clients</li>
+<li>Each churned client = 3-6 months to replace</li>
+<li><strong>Every client saved = $12,000+ protected</strong></li>
 </ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>⚠️ Red Flag Detection System</h3>
+<p>Learn to read the silent signals that predict churn:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Risk Level</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Immediate Action</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Ghosting</strong> — No reply to 3+ emails</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #F59E0B;">🟡 Medium</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Switch channels (call, Slack). "Just checking in — wanted to make sure nothing fell through the cracks."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>POC Change</strong> — Champion leaves company</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;">🔴 HIGH</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Schedule intro call with new POC ASAP. Re-sell the value. Treat as new onboarding.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Late Payments</strong> — Invoice overdue 30+ days</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;">🔴 HIGH</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check in about their business health. Payment issues often signal deeper problems.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Reduced Engagement</strong> — Stopped attending calls</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #F59E0B;">🟡 Medium</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ask directly: "I noticed we've had fewer touchpoints — is everything okay?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Competitor Mentions</strong> — "I saw Agency X..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;">🔴 HIGH</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Don't panic. Ask: "What attracted you to them? Let me make sure we're meeting that need."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>NPS Decline</strong> — Score dropped 3+ points</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #F59E0B;">🟡 Medium</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Schedule a "feedback call" — "I want to make sure we're exceeding expectations."</td>
+</tr>
+</table>
 </div>
 
 <div class="content-section">
 <h3>🔥 The Save Playbook</h3>
-<p>Client wants to cancel? Get them on a call. Listen. Offer a "Pause" or a "Pivot" instead of a cancel.</p>
+<p>When a client says "I want to cancel," follow this exact sequence:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 20px 0;">
+<div style="text-align: center; padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border: 1px solid rgba(16, 185, 129, 0.3);">
+<div style="font-size: 2em;">👂</div>
+<strong>Step 1: LISTEN</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Let them talk. Don't interrupt. Take notes.</p>
+</div>
+<div style="text-align: center; padding: 20px; background: rgba(6, 182, 212, 0.1); border-radius: 10px; border: 1px solid rgba(6, 182, 212, 0.3);">
+<div style="font-size: 2em;">⏸️</div>
+<strong>Step 2: PAUSE</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Offer to pause instead of cancel. "Let's freeze for 30 days."</p>
+</div>
+<div style="text-align: center; padding: 20px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border: 1px solid rgba(139, 92, 246, 0.3);">
+<div style="font-size: 2em;">🔄</div>
+<strong>Step 3: PIVOT</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Change scope: "What if we focused only on X?"</p>
+</div>
+</div>
+
+<div style="background: rgba(139, 92, 246, 0.1); padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 3px solid #8B5CF6;">
+<strong>📝 Save Script — The Budget Cut Scenario:</strong><br><br>
+<em>"I completely understand — businesses go through different phases. Before we process the cancellation, I have two options that might work better:</em><br><br>
+<em>1. <strong>Pause:</strong> We can freeze your engagement for 30-60 days. No charges, but when you're ready, we pick right back up.</em><br><br>
+<em>2. <strong>Pivot:</strong> What if we reduced to a maintenance-only package? You keep the relationship active and protected for a fraction of the cost.</em><br><br>
+<em>Which of these might work for your situation?"</em>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 Churn Risk Matrix</h3>
+<p>Score your clients regularly to prioritize intervention:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Factor</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Score 0 (Bad)</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Score 1 (Good)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response Time</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3+ days to reply</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Same day replies</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meeting Attendance</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Misses calls</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Always attends</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">NPS Score</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">6 or below</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">8 or above</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Payment Timing</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Late/chasing</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">On time</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>Score 0-1:</strong> Immediate intervention required<br>
+<strong>Score 2-3:</strong> Monitor closely, increase touchpoints<br>
+<strong>Score 4:</strong> Healthy — maintain rhythm
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Practice Churn Prevention</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Red Flag Audit (5 min)</h4>
+<p>Think of a real client (past or present). Score them on the Churn Risk Matrix. What's their total score (0-4)? What intervention would you recommend?</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Write a Save Script (10 min)</h4>
+<p><strong>Scenario:</strong> Client emails: "We've decided to stop all marketing spend for Q4. Please cancel our SEO retainer effective immediately."</p>
+<p>Write your response email using the Listen → Pause → Pivot framework. Make it empathetic, professional, and give them 2 alternative options.</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: POC Change Scenario (5 min)</h4>
+<p>Your primary contact at a $15,000/year client just emailed you that they're leaving the company next week. Write:</p>
+<ol>
+<li>Your reply to the outgoing POC (thanking them, asking for intro)</li>
+<li>Your intro message to the new POC</li>
+</ol>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned how to detect and prevent client churn. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about churn</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 scenario-based questions about churn prevention</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 5</li>
 </ul>
 </div>
 `;
