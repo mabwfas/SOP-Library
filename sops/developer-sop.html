@@ -674,7 +674,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
         }
-    
+
         /* Mobile Header - Fixed Collision */
         .mobile-header {
             display: none;
@@ -689,24 +689,24 @@
             align-items: center;
             justify-content: flex-start;
             gap: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         .mobile-menu-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 44px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             border-radius: 10px;
             font-size: 1.4rem;
             cursor: pointer;
             flex-shrink: 0;
         }
-        
+
         .mobile-home-btn {
             display: flex;
             align-items: center;
@@ -721,21 +721,20 @@
             border: 1px solid rgba(16, 185, 129, 0.3);
             white-space: nowrap;
         }
-        
+
         @media (max-width: 768px) {
             .mobile-header {
                 display: flex;
             }
-            
+
             .main-content {
                 padding-top: 70px !important;
             }
-            
+
             .header {
                 margin-top: 56px;
             }
         }
-
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
@@ -1108,7 +1107,8 @@
                         <p>Before submitting, ask yourself:</p>
                         <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
-                            <em>"Would I be happy if I paid for this?"</em></p>
+                            <em>"Would I be happy if I paid for this?"</em>
+                        </p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
@@ -1165,10 +1165,299 @@
                         <p style="margin-top: 5px;">Always have an escape route.</p>
                     </div>
 
-                    <div class="story-box" style="margin-top: 15px;">
-                        <h4>🔟 The 1% Better Rule 📈</h4>
-                        <p>Every day, improve one small thing in your process.</p>
-                        <p style="margin-top: 5px;"><strong>1% daily = 37x improvement in a year.</strong></p>
+                </section>
+
+                <!-- Video Training Section -->
+                <section class="section" id="video-training">
+                    <div class="section-header">
+                        <div class="section-number">🎥</div>
+                        <h2>Video Training Library</h2>
+                    </div>
+
+                    <div class="info-box success">
+                        <h4>📺 Complete Shopify Training (20 Videos)</h4>
+                        <p>Watch these tutorials to master Shopify development. Each video covers essential skills that
+                            will be evaluated during certification.</p>
+                    </div>
+
+                    <style>
+                        .video-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                            gap: 20px;
+                            margin: 20px 0;
+                        }
+
+                        .video-card {
+                            background: white;
+                            border-radius: 12px;
+                            overflow: hidden;
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.2s, box-shadow 0.2s;
+                        }
+
+                        .video-card:hover {
+                            transform: translateY(-5px);
+                            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                        }
+
+                        .video-card iframe {
+                            width: 100%;
+                            height: 180px;
+                            border: none;
+                        }
+
+                        .video-card-content {
+                            padding: 15px;
+                        }
+
+                        .video-card-content h5 {
+                            font-size: 0.95em;
+                            margin-bottom: 8px;
+                            color: #1E3A5F;
+                        }
+
+                        .video-card-content p {
+                            font-size: 0.8em;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+
+                        .video-category {
+                            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+                            color: white;
+                            padding: 15px 20px;
+                            border-radius: 10px;
+                            margin: 25px 0 15px 0;
+                            font-weight: 600;
+                        }
+                    </style>
+
+                    <!-- Beginner Foundations -->
+                    <div class="video-category">📚 Getting Started (Videos 1-2)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/YtbaxJFb9zE"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>1. Shopify Tutorial for Beginners 2026</h5>
+                                <p>Complete guide for building a Shopify store from scratch.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/fO7bb5Dfukk"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>2. Shopify Tutorial 2025 (Full Setup)</h5>
+                                <p>Step-by-step store setup including navigation, theme, pages.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Theme Customization -->
+                    <div class="video-category">🎨 Theme Customization (Videos 3-5)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/fQZntbd5QGI"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>3. Theme Customization (Sections & Blocks)</h5>
+                                <p>Use Shopify's visual editor, blocks, and sections.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/nJMqRgKkkBg"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>4. Create & Edit Shopify Pages</h5>
+                                <p>Create key store pages (About, Contact, FAQ).</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/cpGL7I2dECo"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>5. About Us & FAQ Page Tutorial</h5>
+                                <p>Build compelling About Us and FAQ pages.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEO -->
+                    <div class="video-category">🔍 SEO & Optimization (Videos 6-7)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/umTyBPD_Fjw"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>6. SEO – Preferences & Meta Setup</h5>
+                                <p>Homepage title, meta description, and SEO basics.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/LMGj7N2iW2A"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>7. SEO Optimization for Beginners</h5>
+                                <p>Practical SEO strategy — site structure, keywords.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="video-category">📦 Product Management (Videos 8-10)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/YvllH3MhPWY"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>8. How to Add Products</h5>
+                                <p>Create product listings, set prices, inventory, variants.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/B4OE1lvTBp0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>9. Product Page Customization</h5>
+                                <p>Organize and customize product templates.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/gsw2NYVrPfM"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>10. Variants & Inventory</h5>
+                                <p>Product variants, SKU logic, and stock tracking.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="video-category">🧭 Navigation & Structure (Videos 11-12)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/X8FWjKaxi-E"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>11. Navigation, Policies & Pages</h5>
+                                <p>Site structure: main menus, footer links, policies.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/Rsp_hc3ICUo"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>12. Drop-Down Menu Setup</h5>
+                                <p>Create drop-down navigation for categories.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shipping & Payments -->
+                    <div class="video-category">💳 Shipping & Payments (Videos 13-15)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/X6hBF5bnnto"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>13. Payments & Shipping Setup</h5>
+                                <p>Configure payment providers and shipping basics.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/p45DB8aY2Vc"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>14. Shipping Profiles Explained</h5>
+                                <p>Shipping profiles, rates, and zone configuration.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/OMJv0n3INJ8"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>15. Shipping Rates & Portfolios</h5>
+                                <p>Setting shipping rates and custom profiles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- International Markets -->
+                    <div class="video-category">🌍 International Markets (Videos 16-18)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/F9R7Pwkao8k"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>16. Shopify Markets Explained</h5>
+                                <p>Activate and manage Markets for international selling.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/jPQSg5lTR0g"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>17. How to Sell Internationally</h5>
+                                <p>Step-by-step Markets setup with multi-currency.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/uiBLBX9HTRA"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>18. Multi-Currency Checkout</h5>
+                                <p>Set up multi-currency pricing and checkout.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apps & Integrations -->
+                    <div class="video-category">🔌 Apps & Integrations (Videos 19-20)</div>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/-msd5yDGn34"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>19. 17TRACK Order Tracking</h5>
+                                <p>Set up real-time order tracking and notifications.</p>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/UKnpUB8RslQ"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="video-card-content">
+                                <h5>20. Klaviyo Email Marketing</h5>
+                                <p>End-to-end Klaviyo integration for email automation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box gold" style="margin-top: 25px;">
+                        <h4>🎓 Complete the Full Training Program</h4>
+                        <p>For a structured learning experience with quizzes and implementation tasks, visit the <a
+                                href="training/developer-training.html"
+                                style="color: #8B5CF6; font-weight: 600;">Developer Training Program</a>.</p>
                     </div>
                 </section>
 
