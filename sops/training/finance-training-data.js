@@ -126,31 +126,156 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 PART 1: FINANCIAL MINDSET</h2>
+<h2>📚 PART 1: FINANCIAL MINDSET - Guardian of the House</h2>
 
 <div class="content-section">
-<h3>🎯 Guardian of Profit</h3>
-<p>Revenue is vanity. Profit is sanity. Cash is king.</p>
-<ul>
-<li><strong>We don't count money:</strong> We tell the money where to go.</li>
-<li><strong>We enable speed:</strong> By ensuring resources are available when needed.</li>
-<li><strong>We protect the house:</strong> By detecting risks before they kill us.</li>
-</ul>
+<h3>🎯 Why Are You Here?</h3>
+<p>Finance is not about counting money. It's about <strong>telling money where to go</strong>. You are the guardian of the company's financial health — and in a fast-moving agency, that's a critical strategic role.</p>
+
+<div class="warning-box">
+<strong>⚠️ The Uncomfortable Truth:</strong><br>
+Most businesses don't fail because of bad products. They fail because they <strong>run out of cash</strong>. Your job is to make sure that never happens here.
+<p style="margin-top: 10px;">Revenue makes headlines. Profit pays salaries. <strong>Cash keeps the lights on.</strong></p>
+</div>
 </div>
 
 <div class="content-section">
-<h3>💡 Profit First Philosophy</h3>
+<h3>💡 The Trinity of Financial Health</h3>
+<div class="highlight-box" style="text-align: center; font-size: 1.2em;">
+<strong>Revenue is vanity. Profit is sanity. Cash is king.</strong>
+</div>
+
+<p>Understand what each means:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Metric</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>What It Tells You</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Danger Zone</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Revenue</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Total money coming in</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">High revenue + low profit = burning cash</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Profit</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Money left after expenses</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Profitable on paper but no cash = timing problem</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cash</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Money in the bank TODAY</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No cash = can't pay salaries = game over</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🛡️ Your Three Core Responsibilities</h3>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+<div style="padding: 25px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+<h4 style="color: #10B981; margin-top: 0;">💰 Direct Money</h4>
+<p>We don't just "count" money. We decide where every dollar goes. Budget allocation is strategic decision-making.</p>
+</div>
+
+<div style="padding: 25px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; border: 2px solid rgba(6, 182, 212, 0.3);">
+<h4 style="color: #06B6D4; margin-top: 0;">⚡ Enable Speed</h4>
+<p>When a team needs resources NOW, finance shouldn't be a blocker. Have the info ready so decisions happen fast.</p>
+</div>
+
+<div style="padding: 25px; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border: 2px solid rgba(239, 68, 68, 0.3);">
+<h4 style="color: #EF4444; margin-top: 0;">🚨 Protect the House</h4>
+<p>Detect risks before they become crises. See the cash crunch coming 3 months out, not 3 days.</p>
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 Profit First Philosophy</h3>
+<p>Most businesses: <strong>Revenue - Expenses = Profit</strong> (hope for leftovers)</p>
+<p>Digital Heroes: <strong>Revenue - Profit = Expenses</strong> (profit is non-negotiable)</p>
+
 <div class="highlight-box">
-<strong>Expense discipline.</strong>
-<p>Every dollar spent must have an ROI. If it doesn't bring back >$1, why spend it?</p>
+<strong>Expense Discipline Rule:</strong><br>
+Every dollar spent must have an ROI. If it doesn't bring back >$1, why are we spending it?
+<ul style="margin: 10px 0 0 0;">
+<li>❌ "We need this software" → ✅ "This software will save 10hrs/week = $400/month value"</li>
+<li>❌ "This is nice to have" → ✅ "What's the ROI? If none, it waits."</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🎯 The Financial Mindset Checklist</h3>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Non-Financial Mindset</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Financial Mindset</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We made a lot of sales this month!"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"How much PROFIT did those sales generate?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We need this tool — it's only $50/month"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What value does this tool return? Who approved it?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Client will pay eventually"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Every day AR ages, our cash position weakens"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Finance is boring paperwork"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Finance is strategic intelligence for growth"</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Build Your Financial Foundation</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: ROI Thought Exercise (5 min)</h4>
+<p>Think of a tool/expense the company uses. Calculate:</p>
+<ol>
+<li>Annual cost of the tool</li>
+<li>Hours saved per week</li>
+<li>Value of those hours (hourly rate × hours)</li>
+<li>Annual value created</li>
+<li>Is ROI positive? (Value > Cost?)</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Revenue vs Profit Analysis (5 min)</h4>
+<p><strong>Scenario:</strong> A project brought in $10,000 in revenue. But it required:</p>
+<ul>
+<li>$3,000 in developer time</li>
+<li>$500 in software/tools</li>
+<li>$1,500 in project management time</li>
+</ul>
+<p>Calculate the profit and profit margin. Is this a healthy project?</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Finance SOP (10 min)</h4>
+<p>Open the <a href="../finance-sop.html" target="_blank" style="color: #8B5CF6;">Finance SOP document</a> and read:</p>
+<ul>
+<li>Section 1: P&L Overview</li>
+<li>Section 3: Cash Flow Management</li>
+</ul>
 </div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned the finance mindset. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about mindset</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 questions about financial thinking</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
 </ul>
 </div>
 `;

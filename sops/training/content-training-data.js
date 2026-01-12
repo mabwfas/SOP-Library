@@ -126,35 +126,138 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 PART 1: WRITER MINDSET</h2>
+<h2>📚 PART 1: WRITER MINDSET - Becoming the Smart Friend</h2>
 
 <div class="content-section">
-<h3>🎯 Purpose of content</h3>
-<p>We don't write to fill space. We write to:</p>
-<ol>
-<li><strong>Educate:</strong> Solve a specific problem for the reader.</li>
-<li><strong>Entertain:</strong> Make the reading experience enjoyable.</li>
-<li><strong>Convert:</strong> Guide the reader to the next step.</li>
-</ol>
+<h3>🎯 Why Are You Here?</h3>
+<p>Content is not about filling space. It's about <strong>moving people</strong>. Every sentence you write should earn the reader's next second of attention. If your content doesn't educate, entertain, or convert — it's noise.</p>
+
+<div class="warning-box">
+<strong>⚠️ The Uncomfortable Truth:</strong><br>
+The average person encounters <strong>5,000+ marketing messages per day</strong>. If your content is forgettable, you've already lost.
+<p style="margin-top: 10px;">We don't write to publish. We write to <strong>make an impact</strong>.</p>
+</div>
 </div>
 
 <div class="content-section">
-<h3>📣 Brand Voice: "The Smart Friend"</h3>
+<h3>💡 The Three Purposes of Content</h3>
+<p>Every piece of content must accomplish at least one of these:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+<div style="padding: 25px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+<h4 style="color: #10B981; margin-top: 0;">📚 Educate</h4>
+<p>Solve a specific problem for the reader. Give them knowledge they can use immediately.</p>
+</div>
+
+<div style="padding: 25px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; border: 2px solid rgba(6, 182, 212, 0.3);">
+<h4 style="color: #06B6D4; margin-top: 0;">🎭 Entertain</h4>
+<p>Make the reading experience enjoyable. If it's boring, readers leave. Keep them hooked.</p>
+</div>
+
+<div style="padding: 25px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.3);">
+<h4 style="color: #8B5CF6; margin-top: 0;">💰 Convert</h4>
+<p>Guide the reader to the next step. Whether it's a click, signup, or purchase.</p>
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📣 The Brand Voice: "The Smart Friend"</h3>
+<p>Imagine explaining something to a friend who's smart but not an expert. That's our voice.</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Our Voice Is</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Example</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Confident but Humble</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's what works best..." (not "We're the greatest at...")</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Clear, Not Clever</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"This helps your site load faster" (not "Optimizing perceived latency")</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Empathetic</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We know how frustrating slow sales can be..." (acknowledge the struggle)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Actionable</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's exactly what to do..." (not vague advice)</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🚫 Fluff is the Enemy</h3>
+<p>Fluff = words that add no value. It makes readers leave.</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Fluffy Writing</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Tight Writing</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"In today's fast-paced digital landscape..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's what's working in 2024..."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"It goes without saying that..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">[Just delete it]</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"As a matter of fact..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">[State the fact directly]</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I believe that maybe..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"This works because..."</td>
+</tr>
+</table>
+
 <div class="highlight-box">
-<strong>Our voice is:</strong>
+<strong>The Test:</strong> Read every sentence. If removing it doesn't change the meaning → delete it.
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Find Your Voice</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Fluff Detection (5 min)</h4>
+<p>Rewrite this fluffy paragraph to be half the length while keeping the meaning:</p>
+<p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; font-style: italic;">"In today's ever-changing digital landscape, it is absolutely crucial and important for businesses of all sizes to basically understand that they need to leverage synergistic marketing strategies in order to effectively reach and engage with their target audience in a meaningful way."</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Voice Comparison (5 min)</h4>
+<p>Write the same message in two voices:</p>
 <ul>
-<li>✅ <strong>Confident but Humble:</strong> We know our stuff, but we don't brag.</li>
-<li>✅ <strong>Clear, not clever:</strong> Don't use big words to sound smart. Be understood.</li>
-<li>✅ <strong>Empathetic:</strong> We understand the struggle of e-commerce.</li>
+<li><strong>Corporate/Stiff:</strong> "Dear valued customer, we wish to inform you..."</li>
+<li><strong>Smart Friend:</strong> Write the same thing in our brand voice</li>
 </ul>
+<p>Topic: Telling a customer their order shipped</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Content Purpose Check (5 min)</h4>
+<p>Think of a recent blog post or article you read. Identify:</p>
+<ol>
+<li>Did it Educate? What did you learn?</li>
+<li>Did it Entertain? What made it engaging?</li>
+<li>Did it Convert? What action did it want you to take?</li>
+</ol>
 </div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned the content writer mindset. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about mindset</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 questions about brand voice and writing principles</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
 </ul>
 </div>
 `;
