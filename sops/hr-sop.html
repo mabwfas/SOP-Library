@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Heroes | HR & People Ops SOP</title>
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>??</text></svg>">
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
@@ -188,7 +188,7 @@
         }
 
         .story-box::before {
-            content: "?? REAL STORY";
+            content: "📖 REAL STORY";
             position: absolute;
             top: -12px;
             left: 20px;
@@ -260,7 +260,7 @@
         }
 
         .styled-list li::before {
-            content: "?";
+            content: "→";
             position: absolute;
             left: 0;
             color: var(--teal);
@@ -268,12 +268,12 @@
         }
 
         .check-list li::before {
-            content: "?";
+            content: "✓";
             color: var(--success);
         }
 
         .cross-list li::before {
-            content: "?";
+            content: "✗";
             color: var(--danger);
         }
 
@@ -525,7 +525,7 @@
         }
 
         .sidebar-nav a::after {
-            content: '�';
+            content: '›';
             font-size: 16px;
             color: rgba(255, 255, 255, 0.4);
             margin-left: auto;
@@ -746,92 +746,92 @@
 <body>
     <!-- Mobile Header -->
     <div class="mobile-header">
-        <button class="mobile-menu-btn" onclick="toggleSidebar()">?</button>
-        <a href="index.html" class="mobile-home-btn">?? Home</a>
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+        <a href="index.html" class="mobile-home-btn">🏠 Home</a>
     </div>
 
     <aside class="sidebar">
-        <div class="sidebar-header"><span class="emoji">??</span>
+        <div class="sidebar-header"><span class="emoji">👥</span>
             <h2>HR & People Ops SOP</h2>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="kra/hr-kra.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">📋
                 KRA</a>
             <a href="kpi/hr-kpi.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
                 KPI</a>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="#" onclick="switchView('assets'); return false;" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">📚
                 Assets</a>
             <a href="training/hr-training.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">🎓
                 Training</a>
         </div>
-        <a href="index.html" class="sidebar-back">? Back to Home</a>
+        <a href="index.html" class="sidebar-back">← Back to Home</a>
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
-            <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">???
+            <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
-            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">??
+            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
                 Test</button>
         </div>
         <!-- HR Docs Editor Link -->
         <a href="hr-docs-editor/dist/index.html" target="_blank"
             style="display: block; margin: 0 10px 15px 10px; padding: 12px; text-align: center; background: linear-gradient(135deg, #10B981 0%, #059669 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.9em; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); transition: all 0.2s;">
-            ?? HR Docs Editor
+            📝 HR Docs Editor
         </a>
-        <div class="sidebar-search"><input type="text" id="searchInput" placeholder="?? Search..."
+        <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
         <div id="sidebar-sop-links">
-            <div class="sidebar-section-title">1?? Hiring Pipeline</div>
+            <div class="sidebar-section-title">1️⃣ Hiring Pipeline</div>
             <div class="sidebar-nav-grid">
-                <a href="#step1-jd">?? Job Desc</a>
-                <a href="#step2-screening">?? Screening</a>
-                <a href="#step3-call">?? Call</a>
-                <a href="#step4-interview">?? Interview</a>
-                <a href="#step5-offer">? Offer</a>
-                <a href="#step6-joining">?? Joining</a>
+                <a href="#step1-jd">📋 Job Desc</a>
+                <a href="#step2-screening">🔍 Screening</a>
+                <a href="#step3-call">📞 Call</a>
+                <a href="#step4-interview">🎤 Interview</a>
+                <a href="#step5-offer">✅ Offer</a>
+                <a href="#step6-joining">📂 Joining</a>
             </div>
-            <div class="sidebar-section-title">2?? Interview Questions</div>
+            <div class="sidebar-section-title">2️⃣ Interview Questions</div>
             <div class="sidebar-nav-grid">
-                <a href="#int-pm">?? PM</a>
-                <a href="#int-dev">?? Developer</a>
-                <a href="#int-sales">?? Sales</a>
-                <a href="#int-designer">?? Designer</a>
-                <a href="#int-content">?? Content</a>
-                <a href="#joining-docs">?? Docs</a>
+                <a href="#int-pm">🎯 PM</a>
+                <a href="#int-dev">💻 Developer</a>
+                <a href="#int-sales">💰 Sales</a>
+                <a href="#int-designer">🎨 Designer</a>
+                <a href="#int-content">✍️ Content</a>
+                <a href="#joining-docs">📂 Docs</a>
             </div>
-            <div class="sidebar-section-title">3?? Onboarding</div>
+            <div class="sidebar-section-title">3️⃣ Onboarding</div>
             <div class="sidebar-nav-grid">
-                <a href="#onboarding">?? Day 1</a>
-                <a href="#contracts">?? Contracts</a>
-                <a href="#culture">?? Culture</a>
-                <a href="#tools">??? Tools</a>
+                <a href="#onboarding">🎓 Day 1</a>
+                <a href="#contracts">📝 Contracts</a>
+                <a href="#culture">🌟 Culture</a>
+                <a href="#tools">🛠️ Tools</a>
             </div>
-            <div class="sidebar-section-title">4?? Company Policies</div>
+            <div class="sidebar-section-title">4️⃣ Company Policies</div>
             <div class="sidebar-nav-grid">
-                <a href="#attendance">? Attendance</a>
-                <a href="#leave">?? Leave</a>
-                <a href="#salary">?? Salary</a>
-                <a href="#communication">?? Comms</a>
-                <a href="#confidentiality">?? NDA</a>
-                <a href="#wfh">?? WFH</a>
+                <a href="#attendance">⏰ Attendance</a>
+                <a href="#leave">📅 Leave</a>
+                <a href="#salary">💰 Salary</a>
+                <a href="#communication">💬 Comms</a>
+                <a href="#confidentiality">🔒 NDA</a>
+                <a href="#wfh">🏠 WFH</a>
             </div>
-            <div class="sidebar-section-title">5?? Employee Lifecycle</div>
+            <div class="sidebar-section-title">5️⃣ Employee Lifecycle</div>
             <div class="sidebar-nav-grid">
-                <a href="#performance">?? Reviews</a>
-                <a href="#offboarding">?? Offboard</a>
-                <a href="#kpis">?? KPIs</a>
-                <a href="#advanced-hr">? Advanced</a>
+                <a href="#performance">📊 Reviews</a>
+                <a href="#offboarding">🚪 Offboard</a>
+                <a href="#kpis">📈 KPIs</a>
+                <a href="#advanced-hr">⚡ Advanced</a>
             </div>
-            <div class="sidebar-section-title">6?? Quick Reference</div>
+            <div class="sidebar-section-title">6️⃣ Quick Reference</div>
             <div class="sidebar-nav-grid">
-                <a href="#troubleshooting">?? Debug</a>
-                <a href="#difficult-situations">?? Difficult</a>
-                <a href="#chatgpt">?? ChatGPT</a>
-                <a href="#inspiration">?? Inspire</a>
+                <a href="#troubleshooting">🔧 Debug</a>
+                <a href="#difficult-situations">⚠️ Difficult</a>
+                <a href="#chatgpt">🤖 ChatGPT</a>
+                <a href="#inspiration">🌟 Inspire</a>
             </div>
         </div> <!-- End sidebar-sop-links -->
 
@@ -839,24 +839,24 @@
         <div id="sidebar-assets-links" class="hidden">
             <div class="sidebar-section-title">Sections</div>
             <div class="sidebar-nav-grid">
-                <a href="#videos">?? Videos</a>
-                <a href="#resources">?? Resources</a>
+                <a href="#videos">📹 Videos</a>
+                <a href="#resources">📄 Resources</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">? Back to SOP</a>
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
 
         <!-- ONBOARDING SIDEBAR LINKS -->
         <div id="sidebar-onboarding-links" class="hidden">
             <div class="sidebar-section-title">Timeline</div>
             <div class="sidebar-nav-grid" style="grid-template-columns: 1fr;">
-                <a href="#step-1" style="justify-content: flex-start;">1?? Master SOP</a>
-                <a href="#step-2" style="justify-content: flex-start;">2?? Watch Videos</a>
-                <a href="#step-3" style="justify-content: flex-start;">3?? Pass Test</a>
-                <a href="#step-4" style="justify-content: flex-start;">4?? Record Video</a>
+                <a href="#step-1" style="justify-content: flex-start;">1️⃣ Master SOP</a>
+                <a href="#step-2" style="justify-content: flex-start;">2️⃣ Watch Videos</a>
+                <a href="#step-3" style="justify-content: flex-start;">3️⃣ Pass Test</a>
+                <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">? Back to SOP</a>
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
     </aside>
 
@@ -864,19 +864,19 @@
         <div id="content-sop" class="view-section">
             <div class="container">
                 <header class="header">
-                    <h1>?? HR & People Ops SOP</h1>
+                    <h1>👥 HR & People Ops SOP</h1>
                     <p class="subtitle">Hiring, Onboarding, Culture & Team Success</p>
                     <div class="badge-row">
-                        <span class="badge">?? Quality Hires</span>
-                        <span class="badge">?? Smooth Onboarding</span>
-                        <span class="badge">?? Team Culture</span>
-                        <span class="badge">? Employee Satisfaction</span>
+                        <span class="badge">🎯 Quality Hires</span>
+                        <span class="badge">📋 Smooth Onboarding</span>
+                        <span class="badge">💼 Team Culture</span>
+                        <span class="badge">⭐ Employee Satisfaction</span>
                     </div>
                 </header>
 
                 <div id="searchResults"
                     style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
-                    <h3>?? Search Results (<span id="resultCount">0</span>)</h3>
+                    <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
                     <div id="resultsList"></div>
                     <button onclick="clearSearch()"
                         style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
@@ -903,7 +903,7 @@
                 <!-- Opening Story -->
                 <section class="section">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📖</div>
                         <h2>The $2 Lakh Hiring Mistake</h2>
                     </div>
 
@@ -929,16 +929,16 @@
                         </ul>
 
                         <div class="moral">
-                            <strong>?? The Lesson:</strong> A bad hire costs 5-10x their salary. Take the time to hire
+                            <strong>🎯 The Lesson:</strong> A bad hire costs 5-10x their salary. Take the time to hire
                             right.
-                            Rush the hiring ? Rush the firing ? Rush the re-hiring. It never ends well.
+                            Rush the hiring → Rush the firing → Rush the re-hiring. It never ends well.
                         </div>
                     </div>
                 </section>
 
                 <!-- Critical Principles -->
                 <section class="critical-alert">
-                    <h2>?? HR CORE PRINCIPLES</h2>
+                    <h2>👥 HR CORE PRINCIPLES</h2>
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">1. HIRE SLOW, FIRE FAST</h3>
@@ -973,12 +973,12 @@
                 <!-- NEW: Weekly Performance Calls -->
                 <section class="section" id="performance-calls">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📞</div>
                         <h2>Weekly Performance Calls - MANDATORY</h2>
                     </div>
 
                     <div class="info-box warning">
-                        <h4>? Call Schedule</h4>
+                        <h4>⏰ Call Schedule</h4>
                         <p><strong>Every Tuesday:</strong> Conduct 1-to-1 calls with EVERY team member</p>
                         <p><strong>Duration:</strong> 15 minutes per person</p>
                         <p><strong>Documentation:</strong> Record in Performance Call spreadsheet IMMEDIATELY after call
@@ -986,8 +986,8 @@
                     </div>
 
                     <div class="critical-alert" style="margin: 20px 0;">
-                        <h3>?? Required Data Collection</h3>
-                        <p style="color: #FBBF24; margin-bottom: 15px;"><strong>?? Collect SPECIFIC data � numbers,
+                        <h3>📋 Required Data Collection</h3>
+                        <p style="color: #FBBF24; margin-bottom: 15px;"><strong>⚠️ Collect SPECIFIC data — numbers,
                                 dates, not vague statements</strong></p>
                         <table class="styled-table" style="background: rgba(255,255,255,0.1);">
                             <thead>
@@ -1011,7 +1011,7 @@
                                 </tr>
                                 <tr>
                                     <td>What specifically do you LIKE?</td>
-                                    <td>?? Neutral is NOT acceptable</td>
+                                    <td>⚠️ Neutral is NOT acceptable</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1021,11 +1021,11 @@
                     </div>
 
                     <div class="info-box success">
-                        <h4>?? Purpose</h4>
+                        <h4>📈 Purpose</h4>
                         <ul class="styled-list">
-                            <li>Find what works and what doesn't � improve accordingly</li>
+                            <li>Find what works and what doesn't — improve accordingly</li>
                             <li>Double down on what people LIKE, cut problems</li>
-                            <li>If "no problems" � document WHY they are happy specifically</li>
+                            <li>If "no problems" — document WHY they are happy specifically</li>
                             <li>Submit completed sheet to management <strong>same day</strong> as calls</li>
                         </ul>
                     </div>
@@ -1034,7 +1034,7 @@
                 <!-- NEW: Stipend & Performance Connection -->
                 <section class="critical-alert" id="stipend-performance"
                     style="background: linear-gradient(135deg, #166534 0%, #15803D 100%);">
-                    <h2>?? STIPEND-PERFORMANCE CONNECTION</h2>
+                    <h2>💰 STIPEND-PERFORMANCE CONNECTION</h2>
 
                     <div class="highlight-box">
                         <p style="font-size: 1.1em;"><strong>Stipends directly reflect quality, consistency, and
@@ -1042,14 +1042,14 @@
                         <ul style="margin-top: 15px;">
                             <li>Operations Manager tracks everyone's performance and provides feedback for stipend
                                 decisions</li>
-                            <li>Without proper daily reporting, efforts cannot be measured � <strong>affects
+                            <li>Without proper daily reporting, efforts cannot be measured — <strong>affects
                                     stipend</strong></li>
                             <li>Better performance = eligibility for bonuses and stipend increments</li>
                         </ul>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px; background: rgba(220, 38, 38, 0.3);">
-                        <h3 style="margin-bottom: 15px;">?? Stipend Deductions</h3>
+                        <h3 style="margin-bottom: 15px;">⚠️ Stipend Deductions</h3>
                         <ul>
                             <li>Unnecessary absences = Stipend deduction</li>
                             <li>Repeated late starts = Stipend deduction</li>
@@ -1058,7 +1058,7 @@
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
-                        <h3 style="margin-bottom: 15px;">?? Performance Improvement Warnings</h3>
+                        <h3 style="margin-bottom: 15px;">📉 Performance Improvement Warnings</h3>
                         <ul>
                             <li>Decline in performance + increase in holidays = <strong>Immediate warning</strong></li>
                             <li>First warning documented with specific examples</li>
@@ -1070,15 +1070,15 @@
                 <!-- NEW: Leave Policy & Certificates -->
                 <section class="section" id="leave-certificates">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📋</div>
                         <h2>Leave Policy & Certificate Guidelines</h2>
                     </div>
 
                     <div class="info-box">
-                        <h4>??? Leave Policy Clarifications</h4>
+                        <h4>🏖️ Leave Policy Clarifications</h4>
                         <ul class="styled-list">
                             <li><strong>Unpaid leaves:</strong> Can be taken anytime for any number of days</li>
-                            <li><strong>Paid leave accumulation:</strong> Not guaranteed � subject to approval at time
+                            <li><strong>Paid leave accumulation:</strong> Not guaranteed — subject to approval at time
                                 of request</li>
                             <li><strong>Training period leaves:</strong> Allowed but communication is mandatory</li>
                             <li><strong>Interns:</strong> Lenient policy but communication is mandatory</li>
@@ -1086,9 +1086,9 @@
                     </div>
 
                     <div class="info-box warning" style="margin-top: 20px;">
-                        <h4>?? Certificate & Document Policies</h4>
+                        <h4>📜 Certificate & Document Policies</h4>
                         <ul class="styled-list">
-                            <li><strong>Recommendation letters:</strong> Reserved for TOP employees ONLY � requires
+                            <li><strong>Recommendation letters:</strong> Reserved for TOP employees ONLY — requires
                                 management approval</li>
                             <li><strong>Experience certificates:</strong> Standard process for all completing tenure
                             </li>
@@ -1102,7 +1102,7 @@
                 <!-- NEW: Hierarchy & Override Authority -->
                 <section class="critical-alert" id="hierarchy"
                     style="background: linear-gradient(135deg, #581C87 0%, #7E22CE 100%);">
-                    <h2>??? TEAM HIERARCHY & OVERRIDE AUTHORITY</h2>
+                    <h2>🏛️ TEAM HIERARCHY & OVERRIDE AUTHORITY</h2>
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">Organization Chart</h3>
@@ -1133,21 +1133,21 @@
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px; background: rgba(220, 38, 38, 0.4);">
-                        <h3 style="margin-bottom: 15px;">?? Override Authority</h3>
+                        <h3 style="margin-bottom: 15px;">⚠️ Override Authority</h3>
                         <p style="font-size: 1.1em;"><strong>Higher rank ALWAYS has authority to override instructions
                                 from lower ranks.</strong></p>
                         <ul style="margin-top: 10px;">
-                            <li>This is <strong>non-negotiable</strong> � do not argue this point</li>
+                            <li>This is <strong>non-negotiable</strong> — do not argue this point</li>
                             <li>If conflicting instructions, follow higher-ranking person's direction</li>
                             <li>Report conflicts to immediate supervisor for clarification</li>
                         </ul>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
-                        <h3 style="margin-bottom: 15px;">?? Reporting Manager Responsibilities</h3>
+                        <h3 style="margin-bottom: 15px;">📣 Reporting Manager Responsibilities</h3>
                         <ul>
                             <li>Receive raw instructions from management</li>
-                            <li><strong>REFINE messages</strong> before sharing with team � make easier to understand
+                            <li><strong>REFINE messages</strong> before sharing with team — make easier to understand
                             </li>
                             <li>Add course of action recommendations</li>
                             <li>Never share raw management messages directly to team</li>
@@ -1163,7 +1163,7 @@
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? The Golden Rule</h4>
+                        <h4>🎯 The Golden Rule</h4>
                         <p>"<strong>Hire for attitude, train for skills.</strong> A person at level 6 can become 10, but
                             level 3 cannot become 6."</p>
                         <p style="margin-top: 10px;">Don't settle until you get employee exactly as per JD. Only work
@@ -1172,7 +1172,7 @@
                     </div>
 
                     <!-- STEP 1 -->
-                    <h3 id="step1-jd">?? STEP 1: Create Job Description (JD)</h3>
+                    <h3 id="step1-jd">📋 STEP 1: Create Job Description (JD)</h3>
 
                     <div class="info-box info">
                         <h4>8 Mandatory JD Elements</h4>
@@ -1225,14 +1225,14 @@
                     </table>
 
                     <!-- STEP 2 -->
-                    <h3 id="step2-screening">?? STEP 2: CV Screening (Filter 100 ? 15)</h3>
+                    <h3 id="step2-screening">🔍 STEP 2: CV Screening (Filter 100 → 15)</h3>
 
                     <table class="styled-table">
                         <thead>
                             <tr>
                                 <th>Criteria</th>
                                 <th>What to Check</th>
-                                <th>?? Red Flag</th>
+                                <th>🚩 Red Flag</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1259,7 +1259,7 @@
                             <tr>
                                 <td><strong>Job Switch Frequency</strong></td>
                                 <td>Max 1 switch per year acceptable</td>
-                                <td>?? 3+ jobs in 1 year = instant reject</td>
+                                <td>🚩 3+ jobs in 1 year = instant reject</td>
                             </tr>
                             <tr>
                                 <td><strong>Job Growth</strong></td>
@@ -1284,7 +1284,7 @@
                     </div>
 
                     <!-- STEP 3 -->
-                    <h3 id="step3-call">?? STEP 3: Confirmation Call (Filter 15 ? 5)</h3>
+                    <h3 id="step3-call">📞 STEP 3: Confirmation Call (Filter 15 → 5)</h3>
 
                     <div class="info-box info">
                         <h4>5 Things to Confirm on Call</h4>
@@ -1298,7 +1298,7 @@
                     </div>
 
                     <div class="story-box">
-                        <h4>?? Call Script</h4>
+                        <h4>📝 Call Script</h4>
                         <p>"Hi [Name], this is [Your Name] from Digital Heroes. I'm calling regarding your application
                             for
                             [Position]. Is this a good time for 5 minutes?"</p>
@@ -1315,7 +1315,7 @@
                     </div>
 
                     <!-- STEP 4 -->
-                    <h3 id="step4-interview">?? STEP 4: In-Person Interview (Filter 5 ? 1-2)</h3>
+                    <h3 id="step4-interview">🎤 STEP 4: In-Person Interview (Filter 5 → 1-2)</h3>
                     <p><strong>Duration:</strong> 45-60 minutes</p>
 
                     <h4>Section A: CV-Related Questions (10-15 min)</h4>
@@ -1351,7 +1351,7 @@
                     </table>
 
                     <div class="info-box warning" style="margin-top: 20px;">
-                        <h4>?? Red Flags in Section A</h4>
+                        <h4>🚩 Red Flags in Section A</h4>
                         <ul class="styled-list cross-list">
                             <li>Vague answers about why they left jobs</li>
                             <li>Blaming previous employers constantly</li>
@@ -1365,7 +1365,7 @@
 
                     <h4>Section C: Situational/Behavioral (15-20 min)</h4>
                     <div class="info-box danger">
-                        <h4>?? NEVER Ask:</h4>
+                        <h4>🚫 NEVER Ask:</h4>
                         <ul class="styled-list cross-list">
                             <li>"Are you a hard worker?" (they'll say yes)</li>
                             <li>"Can you handle pressure?" (they'll say yes)</li>
@@ -1374,14 +1374,14 @@
                     </div>
 
                     <div class="info-box success" style="margin-top: 15px;">
-                        <h4>? ALWAYS Ask Open-Ended with Actual Situations:</h4>
+                        <h4>✅ ALWAYS Ask Open-Ended with Actual Situations:</h4>
                         <ul class="styled-list">
-                            <li>"Tell me about a time you worked extremely hard on a project" ? What was the situation?
+                            <li>"Tell me about a time you worked extremely hard on a project" → What was the situation?
                                 What
                                 did you do specifically?</li>
-                            <li>"Describe a situation where you failed to meet a deadline" ? What happened? What did you
+                            <li>"Describe a situation where you failed to meet a deadline" → What happened? What did you
                                 learn?</li>
-                            <li>"Share example of difficult client/team member" ? How did you handle it? What was the
+                            <li>"Share example of difficult client/team member" → How did you handle it? What was the
                                 outcome?</li>
                             <li>"What would you do if junior is not supportive/slowing team?"</li>
                             <li>"What if client complains about quality after delivery?"</li>
@@ -1389,7 +1389,7 @@
                     </div>
 
                     <div class="info-box info" style="margin-top: 15px;">
-                        <h4>?? What You're Listening For:</h4>
+                        <h4>🔍 What You're Listening For:</h4>
                         <ul class="styled-list check-list">
                             <li><strong>Specificity</strong> - Vague answers = likely lying</li>
                             <li><strong>Ownership</strong> - Blame others or take responsibility?</li>
@@ -1400,11 +1400,11 @@
                     </div>
 
                     <!-- STEP 5 -->
-                    <h3 id="step5-offer">? STEP 5: Decision & Offer</h3>
+                    <h3 id="step5-offer">✅ STEP 5: Decision & Offer</h3>
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>? If You Like Them</h4>
+                            <h4>✅ If You Like Them</h4>
                             <ul class="styled-list check-list">
                                 <li>Inform within 24-48 hours</li>
                                 <li>Send offer letter</li>
@@ -1413,7 +1413,7 @@
                             </ul>
                         </div>
                         <div class="checklist-card">
-                            <h4>? If You Don't</h4>
+                            <h4>❌ If You Don't</h4>
                             <ul class="styled-list cross-list">
                                 <li>Thank them professionally</li>
                                 <li>Keep CV on file (future role possibility)</li>
@@ -1423,11 +1423,11 @@
                     </div>
 
                     <!-- STEP 6 -->
-                    <h3 id="step6-joining">?? STEP 6: Joining Formalities</h3>
+                    <h3 id="step6-joining">📋 STEP 6: Joining Formalities</h3>
                     <p>See Joining Documents section below for complete checklist.</p>
 
                     <div class="info-box gold" style="margin-top: 30px;">
-                        <h4>?? Additional Hiring Wisdom</h4>
+                        <h4>💡 Additional Hiring Wisdom</h4>
                         <p><strong>Continue Interviewing:</strong> Even with full team, interview 2 candidates/week
                             minimum.
                         </p>
@@ -1441,7 +1441,7 @@
                     </div>
 
                     <div class="info-box teal" style="margin-top: 20px;">
-                        <h4>?? The 6?10 Principle</h4>
+                        <h4>🎯 The 6→10 Principle</h4>
                         <ul class="styled-list">
                             <li>Level 6 person can be trained to level 10</li>
                             <li>Level 3 person <strong>CANNOT</strong> be trained to level 6</li>
@@ -1455,12 +1455,12 @@
                 <!-- Interview Question Banks -->
                 <section class="section" id="interviews">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📝</div>
                         <h2>Interview Question Banks</h2>
                     </div>
 
                     <!-- PM Questions -->
-                    <h3 id="int-pm">?? Project Manager Questions</h3>
+                    <h3 id="int-pm">🎯 Project Manager Questions</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -1504,7 +1504,7 @@
                     </table>
 
                     <div class="info-box info" style="margin-top: 15px;">
-                        <h4>?? PM Practical Tests</h4>
+                        <h4>✍️ PM Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Write a client update message for a project delayed by 2
                                 days
@@ -1518,7 +1518,7 @@
                     </div>
 
                     <!-- Developer Questions -->
-                    <h3 id="int-dev">?? Developer + Client Success Questions</h3>
+                    <h3 id="int-dev">💻 Developer + Client Success Questions</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -1562,7 +1562,7 @@
                     </table>
 
                     <div class="info-box info" style="margin-top: 15px;">
-                        <h4>?? Developer Practical Tests</h4>
+                        <h4>✍️ Developer Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Here's a broken Liquid code snippet [with 2-3 errors].
                                 Find
@@ -1579,7 +1579,7 @@
                     </div>
 
                     <!-- Sales Questions -->
-                    <h3 id="int-sales">?? Fiverr Sales Executive Questions</h3>
+                    <h3 id="int-sales">💰 Fiverr Sales Executive Questions</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -1617,7 +1617,7 @@
                     </table>
 
                     <div class="info-box info" style="margin-top: 15px;">
-                        <h4>?? Sales Practical Tests</h4>
+                        <h4>✍️ Sales Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Here's a real Fiverr inquiry [provide sample]. Write your
                                 complete response</li>
@@ -1633,7 +1633,7 @@
                     </div>
 
                     <!-- Designer Questions -->
-                    <h3 id="int-designer">?? UI/UX Designer Questions</h3>
+                    <h3 id="int-designer">🎨 UI/UX Designer Questions</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -1670,7 +1670,7 @@
                     </table>
 
                     <div class="info-box info" style="margin-top: 15px;">
-                        <h4>?? Designer Practical Tests</h4>
+                        <h4>✍️ Designer Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Design a product page mockup for this brand [provide
                                 brief]
@@ -1683,7 +1683,7 @@
                     </div>
 
                     <!-- Content Writer Questions -->
-                    <h3 id="int-content">?? Content Writer Questions</h3>
+                    <h3 id="int-content">✍️ Content Writer Questions</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -1721,7 +1721,7 @@
                     </table>
 
                     <div class="info-box info" style="margin-top: 15px;">
-                        <h4>?? Content Writer Practical Tests</h4>
+                        <h4>✍️ Content Writer Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Write 5 product descriptions for these items [provide
                                 images]
@@ -1736,7 +1736,7 @@
 
                     <!-- Scoring System -->
                     <div class="info-box gold" style="margin-top: 30px;">
-                        <h4>?? Interview Scoring System</h4>
+                        <h4>📊 Interview Scoring System</h4>
                         <p>Rate each section 1-10:</p>
                         <table class="styled-table" style="margin-top: 15px;">
                             <tbody>
@@ -1772,9 +1772,9 @@
                         </table>
                         <p style="margin-top: 15px;"><strong>Total: /70</strong></p>
                         <ul class="styled-list" style="margin-top: 10px;">
-                            <li><strong>60+:</strong> Strong hire ?</li>
+                            <li><strong>60+:</strong> Strong hire ✅</li>
                             <li><strong>50-59:</strong> Consider if urgent need</li>
-                            <li><strong>Below 50:</strong> Pass ?</li>
+                            <li><strong>Below 50:</strong> Pass ❌</li>
                         </ul>
                         <p style="margin-top: 15px;"><strong>Remember:</strong> Skills can be trained. Attitude cannot.
                         </p>
@@ -1784,19 +1784,19 @@
                 <!-- Joining Documents -->
                 <section class="section" id="joining-docs">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📂</div>
                         <h2>Joining Documents Checklist</h2>
                     </div>
 
                     <div class="info-box warning">
-                        <h4>?? CRITICAL: Always verify ORIGINAL documents. Many fake experience letters exist.</h4>
+                        <h4>⚠️ CRITICAL: Always verify ORIGINAL documents. Many fake experience letters exist.</h4>
                     </div>
 
-                    <h3>?? Documents to COLLECT</h3>
+                    <h3>📋 Documents to COLLECT</h3>
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>? Identity Proofs</h4>
+                            <h4>✅ Identity Proofs</h4>
                             <ul class="styled-list check-list">
                                 <li>Aadhar Card - Original seen + Copy</li>
                                 <li>PAN Card - Original seen + Copy</li>
@@ -1805,7 +1805,7 @@
                             </ul>
                         </div>
                         <div class="checklist-card">
-                            <h4>?? Educational Certificates</h4>
+                            <h4>📚 Educational Certificates</h4>
                             <ul class="styled-list check-list">
                                 <li>10th Marksheet - Original + Copy</li>
                                 <li>12th Marksheet - Original + Copy</li>
@@ -1815,7 +1815,7 @@
                             </ul>
                         </div>
                         <div class="checklist-card">
-                            <h4>?? Previous Employment</h4>
+                            <h4>💼 Previous Employment</h4>
                             <ul class="styled-list check-list">
                                 <li>Experience Letters (all employers)</li>
                                 <li>Relieving Letter from last employer</li>
@@ -1824,7 +1824,7 @@
                             </ul>
                         </div>
                         <div class="checklist-card">
-                            <h4>?? Financial Documents</h4>
+                            <h4>🏦 Financial Documents</h4>
                             <ul class="styled-list check-list">
                                 <li>Cancelled cheque OR passbook front page</li>
                                 <li>Bank account details form</li>
@@ -1833,7 +1833,7 @@
                         </div>
                     </div>
 
-                    <h3>?? Documents to GIVE</h3>
+                    <h3>📋 Documents to GIVE</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -1843,36 +1843,36 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>? Signed Offer Letter (2 copies)</td>
+                                <td>✅ Signed Offer Letter (2 copies)</td>
                                 <td>1 for employee, 1 for company</td>
                             </tr>
                             <tr>
-                                <td>? Joining/Appointment Letter</td>
+                                <td>✅ Joining/Appointment Letter</td>
                                 <td>Official joining confirmation</td>
                             </tr>
                             <tr>
-                                <td>? Employee Agreement</td>
+                                <td>✅ Employee Agreement</td>
                                 <td>Terms & conditions of employment</td>
                             </tr>
                             <tr>
-                                <td>? Non-Disclosure Agreement (NDA)</td>
+                                <td>✅ Non-Disclosure Agreement (NDA)</td>
                                 <td>Confidentiality protection</td>
                             </tr>
                             <tr>
-                                <td>? Asset Agreement</td>
+                                <td>✅ Asset Agreement</td>
                                 <td>If laptop/phone provided</td>
                             </tr>
                             <tr>
-                                <td>? Company Policy Handbook</td>
+                                <td>✅ Company Policy Handbook</td>
                                 <td>All policies in one place</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <h3>?? Employee Agreement Key Clauses</h3>
+                    <h3>📄 Employee Agreement Key Clauses</h3>
                     <div class="info-box info">
                         <ul class="styled-list">
-                            <li><strong>NDA:</strong> Cannot share client info, company processes, salary ? Breach =
+                            <li><strong>NDA:</strong> Cannot share client info, company processes, salary → Breach =
                                 legal
                                 action</li>
                             <li><strong>Non-Compete:</strong> No work for competitors, no moonlighting without approval
@@ -1884,7 +1884,7 @@
                         </ul>
                     </div>
 
-                    <h3>?? Filing System</h3>
+                    <h3>📂 Filing System</h3>
                     <div class="story-box">
                         <p><strong>Create folder for each employee:</strong> [Name] - [ID] containing all signed docs,
                             ID
@@ -1905,18 +1905,18 @@
                     </div>
 
                     <div class="info-box gold">
-                        <h4>? First 30 Days = Make or Break</h4>
+                        <h4>⚡ First 30 Days = Make or Break</h4>
                         <p>A confused new hire becomes a frustrated employee who leaves within 90 days. Invest heavily
                             in
                             the first month.</p>
                     </div>
 
                     <!-- HR Day 1 Duties -->
-                    <h3>?? HR's Day 1 Responsibilities</h3>
+                    <h3>👥 HR's Day 1 Responsibilities</h3>
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>?? Before They Arrive (Day -1)</h4>
+                            <h4>📋 Before They Arrive (Day -1)</h4>
                             <ul class="styled-list check-list">
                                 <li>Email/Slack account created</li>
                                 <li>Access to tools (Jira, Drive, SOPs) ready</li>
@@ -1928,7 +1928,7 @@
                             </ul>
                         </div>
                         <div class="checklist-card">
-                            <h4>?? When They Arrive (Day 1)</h4>
+                            <h4>🌟 When They Arrive (Day 1)</h4>
                             <ul class="styled-list check-list">
                                 <li>Greet warmly at reception/entrance</li>
                                 <li>Give office tour (washrooms, pantry, exits)</li>
@@ -1942,7 +1942,7 @@
                     </div>
 
                     <div class="story-box" style="margin-top: 20px;">
-                        <h4>?? HR Welcome Call Script (First 15 Minutes)</h4>
+                        <h4>📞 HR Welcome Call Script (First 15 Minutes)</h4>
                         <p style="margin-top: 10px;"><strong>STEP 1: Warm Welcome (2 min)</strong></p>
                         <p>"Welcome to Digital Heroes, [Name]! We're so excited to have you. How are you feeling today?"
                         </p>
@@ -1965,7 +1965,7 @@
                     </div>
 
                     <div class="info-box info" style="margin-top: 20px;">
-                        <h4>?? Team Introduction Best Practices</h4>
+                        <h4>🏢 Team Introduction Best Practices</h4>
                         <ul class="styled-list">
                             <li><strong>Go Slowly:</strong> Introduce 2-3 people at a time, not the whole team at once
                             </li>
@@ -1980,7 +1980,7 @@
                     </div>
 
                     <div class="info-box warning" style="margin-top: 20px;">
-                        <h4>? Onboarding Mistakes to AVOID</h4>
+                        <h4>❌ Onboarding Mistakes to AVOID</h4>
                         <ul class="styled-list cross-list">
                             <li>Leaving them alone at their desk on Day 1</li>
                             <li>Throwing too much information at once</li>
@@ -2056,20 +2056,20 @@
                     </table>
 
                     <div class="template-box">
-                        <div class="template-header">?? Template: Day 1 Welcome Message</div>
-                        <p>Hey <span class="placeholder">[Name]</span>! ??</p>
+                        <div class="template-header">📝 Template: Day 1 Welcome Message</div>
+                        <p>Hey <span class="placeholder">[Name]</span>! 🎉</p>
 
                         <p>Welcome to Digital Heroes! We're thrilled to have you join the team as our new <span
                                 class="placeholder">[Role]</span>.</p>
 
                         <p><strong>Here's your onboarding kit:</strong></p>
-                        <p>?? Email: <span class="placeholder">[email@company.com]</span><br>
-                            ?? Slack: You'll receive an invite shortly<br>
-                            ?? Your SOP: <span class="placeholder">[Link to role SOP]</span><br>
-                            ?? Company Handbook: <span class="placeholder">[Link]</span></p>
+                        <p>📧 Email: <span class="placeholder">[email@company.com]</span><br>
+                            💬 Slack: You'll receive an invite shortly<br>
+                            📋 Your SOP: <span class="placeholder">[Link to role SOP]</span><br>
+                            📖 Company Handbook: <span class="placeholder">[Link]</span></p>
 
                         <p><strong>Your buddy for the first week:</strong> <span class="placeholder">[Buddy Name]</span>
-                            �
+                            —
                             they'll help you get settled and answer any questions!</p>
 
                         <p><strong>Schedule today:</strong><br>
@@ -2077,9 +2077,9 @@
                             11 AM: Tools setup with <span class="placeholder">[Name]</span><br>
                             2 PM: First project briefing</p>
 
-                        <p>Questions? Just ask! There are no stupid questions in Week 1. ??</p>
+                        <p>Questions? Just ask! There are no stupid questions in Week 1. 😊</p>
 
-                        <p>Let's build something great together! ??</p>
+                        <p>Let's build something great together! 🚀</p>
                     </div>
                 </section>
 
@@ -2130,12 +2130,12 @@
                     </table>
 
                     <div class="info-box danger">
-                        <h4>?? Never Skip These</h4>
+                        <h4>🚨 Never Skip These</h4>
                         <ul class="styled-list cross-list">
                             <li>Never let anyone start work without a signed contract</li>
                             <li>Never discuss salary verbally without written confirmation</li>
                             <li>Never promise things not in the contract ("we'll review in 3 months")</li>
-                            <li>Never assume they'll remember � put it in writing</li>
+                            <li>Never assume they'll remember — put it in writing</li>
                         </ul>
                     </div>
                 </section>
@@ -2161,7 +2161,7 @@
                             <tr>
                                 <td><strong>Casual Leave</strong></td>
                                 <td>12 days</td>
-                                <td>?? <strong>Max 2 days/month by default.</strong> More than 2 days requires request
+                                <td>⚠️ <strong>Max 2 days/month by default.</strong> More than 2 days requires request
                                     from
                                     Delhi team + must have leaves remaining.</td>
                             </tr>
@@ -2186,7 +2186,7 @@
                     <h3>Leave Request Process</h3>
 
                     <div class="info-box teal">
-                        <h4>?? Leave Request Workflow</h4>
+                        <h4>📋 Leave Request Workflow</h4>
                         <ol style="margin-left: 20px;">
                             <li><strong>Employee:</strong> Submits leave request 3+ days in advance (except emergencies)
                             </li>
@@ -2243,15 +2243,15 @@
                     <h3>Performance Improvement Process</h3>
 
                     <div class="info-box warning">
-                        <h4>?? When Performance Issues Arise</h4>
+                        <h4>⚠️ When Performance Issues Arise</h4>
                         <ol style="margin-left: 20px;">
-                            <li><strong>Verbal Feedback</strong> � Immediate, specific, documented in notes</li>
-                            <li><strong>Written Warning</strong> � If no improvement in 2 weeks</li>
-                            <li><strong>Performance Improvement Plan (PIP)</strong> � 30-day formal plan with clear
+                            <li><strong>Verbal Feedback</strong> — Immediate, specific, documented in notes</li>
+                            <li><strong>Written Warning</strong> — If no improvement in 2 weeks</li>
+                            <li><strong>Performance Improvement Plan (PIP)</strong> — 30-day formal plan with clear
                                 goals
                             </li>
-                            <li><strong>Final Warning</strong> � Last chance if PIP goals not met</li>
-                            <li><strong>Termination</strong> � If no improvement after final warning</li>
+                            <li><strong>Final Warning</strong> — Last chance if PIP goals not met</li>
+                            <li><strong>Termination</strong> — If no improvement after final warning</li>
                         </ol>
                     </div>
                 </section>
@@ -2267,7 +2267,7 @@
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>?? Documentation</h4>
+                            <h4>📋 Documentation</h4>
                             <ul class="styled-list check-list">
                                 <li>Resignation letter received</li>
                                 <li>Notice period confirmed</li>
@@ -2278,7 +2278,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Access Revocation</h4>
+                            <h4>🔐 Access Revocation</h4>
                             <ul class="styled-list check-list">
                                 <li>Email access removed</li>
                                 <li>Slack deactivated</li>
@@ -2289,7 +2289,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Knowledge Transfer</h4>
+                            <h4>🤝 Knowledge Transfer</h4>
                             <ul class="styled-list check-list">
                                 <li>Ongoing projects handed over</li>
                                 <li>Documentation updated</li>
@@ -2303,7 +2303,7 @@
                     <h3>Exit Interview Questions</h3>
 
                     <div class="info-box info">
-                        <h4>??? Ask These Before They Leave</h4>
+                        <h4>🗣️ Ask These Before They Leave</h4>
                         <ul class="styled-list">
                             <li>"What did you enjoy most about working here?"</li>
                             <li>"What could we have done better?"</li>
@@ -2322,12 +2322,12 @@
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? Our Culture Values</h4>
+                        <h4>🏆 Our Culture Values</h4>
                         <ul class="styled-list">
                             <li><strong>Ownership:</strong> Take responsibility for your work, don't wait to be told
                             </li>
                             <li><strong>Transparency:</strong> Share problems early, no politics, no blame games</li>
-                            <li><strong>Excellence:</strong> Good enough isn't good enough � aim for great</li>
+                            <li><strong>Excellence:</strong> Good enough isn't good enough — aim for great</li>
                             <li><strong>Growth:</strong> Learn continuously, teach others, level up together</li>
                             <li><strong>Respect:</strong> Treat everyone with dignity, even in disagreements</li>
                         </ul>
@@ -2371,7 +2371,7 @@
                 <!-- KPIs -->
                 <section class="section" id="kpis">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📊</div>
                         <h2>HR KPIs</h2>
                     </div>
 
@@ -2398,7 +2398,7 @@
                 <!-- HR Tools & Platforms -->
                 <section class="section" id="tools">
                     <div class="section-header">
-                        <div class="section-number">???</div>
+                        <div class="section-number">🛠️</div>
                         <h2>HR Tools & Platforms</h2>
                     </div>
 
@@ -2449,29 +2449,29 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Daily HR Workflow</h3>
+                    <h3>📋 Daily HR Workflow</h3>
 
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="time">Morning (10 AM)</div>
-                            <p>Check Slack for any issues ? Review attendance ? Respond to leave requests</p>
+                            <p>Check Slack for any issues → Review attendance → Respond to leave requests</p>
                         </div>
                         <div class="timeline-item">
                             <div class="time">Midday (1 PM)</div>
-                            <p>Conduct interviews ? Onboarding tasks ? Follow up with candidates</p>
+                            <p>Conduct interviews → Onboarding tasks → Follow up with candidates</p>
                         </div>
                         <div class="timeline-item">
                             <div class="time">Afternoon (4 PM)</div>
-                            <p>Update employee tracker ? Address any HR queries ? Prepare for next day</p>
+                            <p>Update employee tracker → Address any HR queries → Prepare for next day</p>
                         </div>
                     </div>
 
                     <div class="info-box success">
-                        <h4>? HR Best Practices</h4>
+                        <h4>✅ HR Best Practices</h4>
                         <ul class="styled-list check-list">
                             <li>Always respond to employee queries within 24 hours</li>
                             <li>Keep all employee data confidential</li>
-                            <li>Document everything � verbal conversations too</li>
+                            <li>Document everything — verbal conversations too</li>
                             <li>Be fair and consistent in all decisions</li>
                             <li>Follow up on every interview and candidate</li>
                             <li>Never discuss salaries or personal info publicly</li>
@@ -2482,7 +2482,7 @@
                 <!-- Troubleshooting Difficult Situations -->
                 <section class="section" id="troubleshooting">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🔧</div>
                         <h2>Troubleshooting Difficult Situations</h2>
                     </div>
 
@@ -2523,39 +2523,39 @@
                     <h3>Scenario 2: Team Conflict</h3>
 
                     <div class="info-box info">
-                        <h4>?? Conflict Resolution Steps</h4>
+                        <h4>📋 Conflict Resolution Steps</h4>
                         <ol style="margin-left: 20px;">
-                            <li><strong>Separate meetings</strong> � Talk to each person individually first</li>
-                            <li><strong>Identify root cause</strong> � Is it personal, work-related, or
+                            <li><strong>Separate meetings</strong> — Talk to each person individually first</li>
+                            <li><strong>Identify root cause</strong> — Is it personal, work-related, or
                                 miscommunication?
                             </li>
-                            <li><strong>Joint meeting</strong> � Facilitate discussion with ground rules</li>
-                            <li><strong>Document resolution</strong> � What was agreed upon?</li>
-                            <li><strong>Follow up</strong> � Check in after 1 week, then 1 month</li>
+                            <li><strong>Joint meeting</strong> — Facilitate discussion with ground rules</li>
+                            <li><strong>Document resolution</strong> — What was agreed upon?</li>
+                            <li><strong>Follow up</strong> — Check in after 1 week, then 1 month</li>
                         </ol>
                     </div>
 
                     <h3>Scenario 3: Key Employee Wants to Quit</h3>
 
                     <div class="conversation">
-                        <h4>?? Retention Conversation</h4>
+                        <h4>💬 Retention Conversation</h4>
 
                         <div class="message client">
-                            <div class="sender">?? Employee</div>
+                            <div class="sender">👤 Employee</div>
                             "I've been offered a higher-paying role elsewhere. I'm thinking of leaving."
                         </div>
 
                         <div class="message sales" style="background: #E8F5E9;">
-                            <div class="sender">?? You (HR/Manager)</div>
-                            "Thanks for being open with me. Before we discuss anything else � how are you feeling about
+                            <div class="sender">👥 You (HR/Manager)</div>
+                            "Thanks for being open with me. Before we discuss anything else — how are you feeling about
                             your
                             work here overall?
 
                             I'd love to understand what's driving this decision beyond just the salary. Is it:
-                            � Growth opportunities?
-                            � Work-life balance?
-                            � Team dynamics?
-                            � The work itself?
+                            • Growth opportunities?
+                            • Work-life balance?
+                            • Team dynamics?
+                            • The work itself?
 
                             If it's purely compensation, let's talk about what we might be able to do. But I want to
                             make
@@ -2565,7 +2565,7 @@
                     </div>
 
                     <div class="info-box warning">
-                        <h4>?? Counter-Offer Decision Framework</h4>
+                        <h4>⚠️ Counter-Offer Decision Framework</h4>
                         <ul class="styled-list">
                             <li><strong>Counter-offer IF:</strong> Employee is high-performing, culture fit, genuinely
                                 wants
@@ -2580,14 +2580,14 @@
                     <h3>Scenario 4: Remote Work Accountability</h3>
 
                     <div class="info-box teal">
-                        <h4>?? Managing Remote Team Members</h4>
+                        <h4>📱 Managing Remote Team Members</h4>
                         <ul class="styled-list check-list">
                             <li>Set clear deliverables, not hours worked</li>
                             <li>Daily check-ins (brief, structured)</li>
                             <li>Weekly video 1:1s (camera on)</li>
                             <li>Public task tracking (Trello, Jira, etc.)</li>
-                            <li>Trust but verify � outcomes over activity</li>
-                            <li>Address issues early � don't let them fester</li>
+                            <li>Trust but verify — outcomes over activity</li>
+                            <li>Address issues early — don't let them fester</li>
                         </ul>
                     </div>
                 </section>
@@ -2595,11 +2595,11 @@
                 <!-- Advanced HR Scenarios -->
                 <section class="section" id="advanced-hr">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🎯</div>
                         <h2>Advanced Problem-Solution Guide</h2>
                     </div>
 
-                    <h3>?? Hiring Red Flags to Never Ignore</h3>
+                    <h3>🚩 Hiring Red Flags to Never Ignore</h3>
 
                     <table class="styled-table">
                         <thead>
@@ -2639,7 +2639,7 @@
                                 <td><strong>Late/Unprepared</strong></td>
                                 <td>Late to interview without notice, didn't research company</td>
                                 <td>This is their BEST behavior</td>
-                                <td>Reject � it only gets worse</td>
+                                <td>Reject — it only gets worse</td>
                             </tr>
                             <tr>
                                 <td><strong>Vague Answers</strong></td>
@@ -2650,7 +2650,7 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Interview Scoring Rubric</h3>
+                    <h3>📋 Interview Scoring Rubric</h3>
 
                     <div class="info-box"
                         style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-left: 5px solid #2E7D32;">
@@ -2702,32 +2702,32 @@
                         </p>
                     </div>
 
-                    <h3>?? Salary Negotiation Framework</h3>
+                    <h3>💰 Salary Negotiation Framework</h3>
 
                     <div class="info-box gold">
-                        <h4>?? Decision Flow: When Candidate Negotiates Salary</h4>
+                        <h4>📊 Decision Flow: When Candidate Negotiates Salary</h4>
                         <div
                             style="font-family: monospace; background: white; padding: 20px; border-radius: 10px; margin-top: 15px; line-height: 2;">
                             <strong>Candidate asks for higher salary than offered</strong><br>
-                            �<br>
-                            +-? <strong>Step 1:</strong> Check budget<br>
-                            � +-? Room to increase? ? Continue to Step 2<br>
-                            � +-? At maximum? ? "This is our best offer for this level"<br>
-                            �<br>
-                            +-? <strong>Step 2:</strong> Evaluate the ask<br>
-                            � +-? Within 10% of offer? ? <span style="color: #2E7D32;"><strong>Consider
+                            │<br>
+                            ├─► <strong>Step 1:</strong> Check budget<br>
+                            │ ├─► Room to increase? → Continue to Step 2<br>
+                            │ └─► At maximum? → "This is our best offer for this level"<br>
+                            │<br>
+                            ├─► <strong>Step 2:</strong> Evaluate the ask<br>
+                            │ ├─► Within 10% of offer? → <span style="color: #2E7D32;"><strong>Consider
                                     matching</strong></span><br>
-                            � +-? 10-20% higher? ? <span style="color: #E65100;"><strong>Meet in
+                            │ ├─► 10-20% higher? → <span style="color: #E65100;"><strong>Meet in
                                     middle</strong></span><br>
-                            � +-? 20%+ higher? ? <span style="color: #C62828;"><strong>They may be
+                            │ └─► 20%+ higher? → <span style="color: #C62828;"><strong>They may be
                                     overqualified</strong></span><br>
-                            �<br>
-                            +-? <strong>Step 3:</strong> Alternative options<br>
-                            � +-? Can't increase base? Offer signing bonus<br>
-                            � +-? Can't increase base? Offer 3-month review<br>
-                            � +-? Offer additional benefits (WFH, training budget)<br>
-                            �<br>
-                            +-? <strong>Final script:</strong><br>
+                            │<br>
+                            ├─► <strong>Step 3:</strong> Alternative options<br>
+                            │ ├─► Can't increase base? Offer signing bonus<br>
+                            │ ├─► Can't increase base? Offer 3-month review<br>
+                            │ └─► Offer additional benefits (WFH, training budget)<br>
+                            │<br>
+                            └─► <strong>Final script:</strong><br>
                             "We can offer $X (final number). This includes [benefits]. We review salaries at 6 months
                             for
                             high
@@ -2735,10 +2735,10 @@
                         </div>
                     </div>
 
-                    <h3>?? Performance Improvement Plan (PIP) Template</h3>
+                    <h3>📝 Performance Improvement Plan (PIP) Template</h3>
 
                     <div class="template-box">
-                        <div class="template-header">?? PIP Document Template</div>
+                        <div class="template-header">📝 PIP Document Template</div>
                         <p><strong>Employee:</strong> <span class="placeholder">[Name]</span></p>
                         <p><strong>Manager:</strong> <span class="placeholder">[Your Name]</span></p>
                         <p><strong>Date:</strong> <span class="placeholder">[Start Date]</span></p>
@@ -2769,31 +2769,31 @@
                         <p>Manager: _________________ Date: _____</p>
                     </div>
 
-                    <h3>?? Termination Checklist</h3>
+                    <h3>🚪 Termination Checklist</h3>
 
                     <div class="info-box danger">
-                        <h4>?? Before You Fire Anyone</h4>
+                        <h4>🚨 Before You Fire Anyone</h4>
                         <ul class="styled-list check-list">
-                            <li><strong>Documentation ready?</strong> � Verbal warnings, written warnings, PIP notes?
+                            <li><strong>Documentation ready?</strong> — Verbal warnings, written warnings, PIP notes?
                             </li>
-                            <li><strong>Legal review?</strong> � Any discrimination risks, contract clauses to check?
+                            <li><strong>Legal review?</strong> — Any discrimination risks, contract clauses to check?
                             </li>
-                            <li><strong>Final pay calculated?</strong> � Salary, pending leaves, notice period?</li>
-                            <li><strong>Access removal planned?</strong> � Email, Slack, code repos, client accounts?
+                            <li><strong>Final pay calculated?</strong> — Salary, pending leaves, notice period?</li>
+                            <li><strong>Access removal planned?</strong> — Email, Slack, code repos, client accounts?
                             </li>
-                            <li><strong>Exit meeting scheduled?</strong> � Private room, have witness present</li>
-                            <li><strong>Reference policy decided?</strong> � What will you say if asked?</li>
+                            <li><strong>Exit meeting scheduled?</strong> — Private room, have witness present</li>
+                            <li><strong>Reference policy decided?</strong> — What will you say if asked?</li>
                         </ul>
                     </div>
 
                     <div class="template-box">
-                        <div class="template-header">?? Termination Script</div>
+                        <div class="template-header">📝 Termination Script</div>
                         <p>"<span class="placeholder">[Name]</span>, thank you for meeting with me. I'll get straight to
                             the
                             point.</p>
                         <p>Unfortunately, we've decided to end your employment effective <span
                                 class="placeholder">[Date]</span>.</p>
-                        <p>This decision is based on <span class="placeholder">[brief, factual reason � performance,
+                        <p>This decision is based on <span class="placeholder">[brief, factual reason — performance,
                                 restructuring, etc.]</span></p>
                         <p>Here's what happens next:</p>
                         <ul style="margin-left: 20px;">
@@ -2805,7 +2805,7 @@
                         <p style="margin-top: 15px;">I know this is difficult. Do you have any questions?"</p>
                     </div>
 
-                    <h3>?? Employee Recognition Ideas</h3>
+                    <h3>🎉 Employee Recognition Ideas</h3>
 
                     <table class="styled-table">
                         <thead>
@@ -2849,10 +2849,10 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Reference Check Questions</h3>
+                    <h3>📞 Reference Check Questions</h3>
 
                     <div class="info-box info">
-                        <h4>?? Ask Previous Employers These Questions</h4>
+                        <h4>📋 Ask Previous Employers These Questions</h4>
                         <ol style="margin-left: 20px;">
                             <li>"How long did <span class="placeholder">[Name]</span> work with you?"</li>
                             <li>"What was their role and responsibilities?"</li>
@@ -2864,7 +2864,7 @@
                             <li>"Is there anything else I should know?"</li>
                         </ol>
                         <p style="margin-top: 15px;"><strong>Red flag:</strong> If reference hesitates on "Would you
-                            rehire?" �
+                            rehire?" —
                             dig deeper.</p>
                     </div>
                 </section>
@@ -2872,12 +2872,12 @@
                 <!-- ChatGPT Prompts for HR -->
                 <section class="section" id="chatgpt">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🤖</div>
                         <h2>ChatGPT Prompts for HR</h2>
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? Use AI to Improve HR Processes</h4>
+                        <h4>💡 Use AI to Improve HR Processes</h4>
                         <p>Use these prompts to draft policies, handle difficult conversations, and streamline your HR
                             workflow.</p>
                     </div>
@@ -2885,7 +2885,7 @@
                     <h3>Hiring & Interviews</h3>
 
                     <div class="template-box">
-                        <div class="template-header">?? Prompt: Create Interview Questions</div>
+                        <div class="template-header">🤖 Prompt: Create Interview Questions</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I'm hiring for this position:<br><br>
                             Role: [Job title]<br>
@@ -2902,7 +2902,7 @@
                     </div>
 
                     <div class="template-box" style="margin-top: 20px;">
-                        <div class="template-header">?? Prompt: Evaluate a Candidate</div>
+                        <div class="template-header">🤖 Prompt: Evaluate a Candidate</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             Help me evaluate this candidate for: [Role]<br><br>
                             Their resume highlights: [Key points]<br>
@@ -2921,7 +2921,7 @@
                     <h3>Performance & Feedback</h3>
 
                     <div class="template-box">
-                        <div class="template-header">?? Prompt: Write Performance Feedback</div>
+                        <div class="template-header">🤖 Prompt: Write Performance Feedback</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I need to give feedback to an employee:<br><br>
                             Employee: [Role]<br>
@@ -2939,7 +2939,7 @@
                     </div>
 
                     <div class="template-box" style="margin-top: 20px;">
-                        <div class="template-header">?? Prompt: Handle a Difficult Conversation</div>
+                        <div class="template-header">🤖 Prompt: Handle a Difficult Conversation</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I need to have a difficult conversation about:<br><br>
                             Issue: [Poor performance / Behavior problem / Termination / etc.]<br>
@@ -2958,7 +2958,7 @@
                     <h3>Policies & Documentation</h3>
 
                     <div class="template-box">
-                        <div class="template-header">?? Prompt: Create/Update Policy</div>
+                        <div class="template-header">🤖 Prompt: Create/Update Policy</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I need to create a policy for: [Policy topic]<br><br>
                             Company size: [Number of employees]<br>
@@ -2975,7 +2975,7 @@
                     </div>
 
                     <div class="template-box" style="margin-top: 20px;">
-                        <div class="template-header">?? Prompt: Onboarding Checklist</div>
+                        <div class="template-header">🤖 Prompt: Onboarding Checklist</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             Create an onboarding checklist for: [Role]<br><br>
                             Department: [Which team]<br>
@@ -2992,15 +2992,15 @@
                     </div>
 
                     <div class="info-box success" style="margin-top: 25px;">
-                        <h4>? Pro Tips for HR ChatGPT Use</h4>
+                        <h4>✅ Pro Tips for HR ChatGPT Use</h4>
                         <ul class="styled-list check-list">
-                            <li><strong>Keep it confidential</strong> � Don't paste employee names or sensitive details
+                            <li><strong>Keep it confidential</strong> — Don't paste employee names or sensitive details
                             </li>
-                            <li><strong>Customize for culture</strong> � Adapt outputs to match company voice</li>
-                            <li><strong>Legal review</strong> � Have policies reviewed before implementing</li>
-                            <li><strong>Practice conversations</strong> � Roleplay difficult talks before having them
+                            <li><strong>Customize for culture</strong> — Adapt outputs to match company voice</li>
+                            <li><strong>Legal review</strong> — Have policies reviewed before implementing</li>
+                            <li><strong>Practice conversations</strong> — Roleplay difficult talks before having them
                             </li>
-                            <li><strong>Templates library</strong> � Build a collection of approved templates</li>
+                            <li><strong>Templates library</strong> — Build a collection of approved templates</li>
                         </ul>
                     </div>
                 </section>
@@ -3008,31 +3008,31 @@
                 <!-- Difficult Situations Section -->
                 <section class="section" id="difficult-situations">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">⚠️</div>
                         <h2>Handling Difficult Situations</h2>
                     </div>
 
-                    <h3>?? Candidate Ghosts After Accepting Offer</h3>
+                    <h3>🔴 Candidate Ghosts After Accepting Offer</h3>
 
-                    <h3>?? Task Priority Order (What Comes First)</h3>
+                    <h3>🎯 Task Priority Order (What Comes First)</h3>
                     <div class="info-box success" style="margin-bottom: 30px;">
                         <p><strong>Handle in this order every day:</strong></p>
                         <ol style="margin-top: 15px; line-height: 2;">
-                            <li><strong>?? P0 - Employee Complaints/Issues</strong> ? Harassment, conflicts, urgent
+                            <li><strong>🔴 P0 - Employee Complaints/Issues</strong> → Harassment, conflicts, urgent
                                 matters.
                             </li>
-                            <li><strong>?? P0 - Onboarding (First Week Employees)</strong> ? New hires need attention
+                            <li><strong>🔴 P0 - Onboarding (First Week Employees)</strong> → New hires need attention
                                 and
                                 support.</li>
-                            <li><strong>?? P0 - Resignation Handling</strong> ? Time-sensitive notice periods, exits.
+                            <li><strong>🔴 P0 - Resignation Handling</strong> → Time-sensitive notice periods, exits.
                             </li>
-                            <li><strong>?? P1 - Active Interview Pipeline</strong> ? Scheduled interviews, pending
+                            <li><strong>🟡 P1 - Active Interview Pipeline</strong> → Scheduled interviews, pending
                                 decisions.</li>
-                            <li><strong>?? P1 - Manager Requests</strong> ? Hiring needs, team concerns, approvals.</li>
-                            <li><strong>?? P2 - Candidate Sourcing</strong> ? Job postings, reaching out to prospects.
+                            <li><strong>🟡 P1 - Manager Requests</strong> → Hiring needs, team concerns, approvals.</li>
+                            <li><strong>🟢 P2 - Candidate Sourcing</strong> → Job postings, reaching out to prospects.
                             </li>
-                            <li><strong>?? P2 - Documentation & Compliance</strong> ? Contracts, policies, records.</li>
-                            <li><strong>? P3 - Culture & Engagement</strong> ? Events, training, long-term initiatives.
+                            <li><strong>🟢 P2 - Documentation & Compliance</strong> → Contracts, policies, records.</li>
+                            <li><strong>⚪ P3 - Culture & Engagement</strong> → Events, training, long-term initiatives.
                             </li>
                         </ol>
                         <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Current employees > New hires >
@@ -3040,7 +3040,7 @@
                             candidates > Future planning.</p>
                     </div>
 
-                    <h3>?? Candidate Ghosts After Accepting Offer</h3>
+                    <h3>🔴 Candidate Ghosts After Accepting Offer</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Candidate accepted but doesn't show up on day 1.</p>
                         <p><strong>Response:</strong> Call immediately. If no response after 2 days, document and move
@@ -3049,7 +3049,7 @@
                         <p><strong>Rule:</strong> Always have a backup candidate. Never rely on a single accept.</p>
                     </div>
 
-                    <h3>?? Employee Requests Immediate Resignation</h3>
+                    <h3>🔴 Employee Requests Immediate Resignation</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Employee wants to leave without notice period.</p>
                         <p><strong>Response:</strong> "I understand. Per your contract, there's a [X]-day notice period.
@@ -3058,7 +3058,7 @@
                         <p><strong>Rule:</strong> Document notice period agreements. Be firm but professional.</p>
                     </div>
 
-                    <h3>?? Team Conflict Between Employees</h3>
+                    <h3>🔴 Team Conflict Between Employees</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Two employees have a dispute affecting work.</p>
                         <p><strong>Response:</strong> Meet with each individually first. Then facilitate a mediated
@@ -3066,7 +3066,7 @@
                         <p><strong>Rule:</strong> Address early. Small conflicts become big problems if ignored.</p>
                     </div>
 
-                    <h3>?? Employee Performance is Declining</h3>
+                    <h3>🔴 Employee Performance is Declining</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Previously good employee is now consistently underperforming.</p>
                         <p><strong>Response:</strong> Have a private conversation: "I've noticed [specific
@@ -3077,7 +3077,7 @@
                         <p><strong>Rule:</strong> Be curious before being corrective. There's often a reason.</p>
                     </div>
 
-                    <h3>?? Manager Requesting Immediate Termination</h3>
+                    <h3>🔴 Manager Requesting Immediate Termination</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Manager wants to fire someone right now.</p>
                         <p><strong>Response:</strong> "I understand the urgency. Before we proceed, let's ensure we have
@@ -3086,7 +3086,7 @@
                         <p><strong>Rule:</strong> Never rush terminations. Always document. Legal protection first.</p>
                     </div>
 
-                    <h3>?? Candidate Negotiating Higher Salary</h3>
+                    <h3>🔴 Candidate Negotiating Higher Salary</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Top candidate wants more than budgeted.</p>
                         <p><strong>Response:</strong> "I appreciate your transparency. Our budget for this role is [X].
@@ -3098,7 +3098,7 @@
                         </p>
                     </div>
 
-                    <h3>?? Employee Alleges Harassment/Discrimination</h3>
+                    <h3>🔴 Employee Alleges Harassment/Discrimination</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Serious complaint from an employee.</p>
                         <p><strong>Response:</strong> Take it seriously immediately. "Thank you for trusting me with
@@ -3110,7 +3110,7 @@
                         </p>
                     </div>
 
-                    <h3>?? Reference Check Reveals Concerns</h3>
+                    <h3>🔴 Reference Check Reveals Concerns</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Previous employer gives negative feedback on candidate.</p>
                         <p><strong>Response:</strong> Ask specific behavioral questions to verify. Get multiple
@@ -3124,21 +3124,21 @@
                 <section class="section" id="inspiration"
                     style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
                     <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🌟</div>
                         <h2 style="color: white;">Your Daily Inspiration</h2>
                     </div>
 
                     <div style="text-align: center; padding: 30px 0;">
-                        <div style="font-size: 48px; margin-bottom: 20px;">??</div>
+                        <div style="font-size: 48px; margin-bottom: 20px;">👥</div>
                         <blockquote
                             style="font-size: 24px; font-style: italic; color: #A78BFA; margin-bottom: 20px; line-height: 1.6;">
-                            "You don't build a business � you build people, and people build the business."
+                            "You don't build a business — you build people, and people build the business."
                         </blockquote>
-                        <p style="color: #9CA3AF;">� Zig Ziglar</p>
+                        <p style="color: #9CA3AF;">— Zig Ziglar</p>
                     </div>
 
                     <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                        <h3 style="color: #A78BFA; margin-bottom: 15px;">?? Success Story: The Hire That Changed
+                        <h3 style="color: #A78BFA; margin-bottom: 15px;">📖 Success Story: The Hire That Changed
                             Everything
                         </h3>
                         <p style="color: #E5E7EB; line-height: 1.8;">
@@ -3160,19 +3160,19 @@
 
                     <div
                         style="background: rgba(167, 139, 250, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                        <h3 style="color: #C4B5FD; margin-bottom: 15px;">? Productivity Hacks for HR Professionals</h3>
+                        <h3 style="color: #C4B5FD; margin-bottom: 15px;">⚡ Productivity Hacks for HR Professionals</h3>
                         <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
-                            <li>?? <strong>Automate Paperwork:</strong> Use templates for offer letters, contracts, and
+                            <li>📝 <strong>Automate Paperwork:</strong> Use templates for offer letters, contracts, and
                                 onboarding</li>
-                            <li>?? <strong>Weekly Pipeline Review:</strong> 15-min check on all open positions every
+                            <li>📊 <strong>Weekly Pipeline Review:</strong> 15-min check on all open positions every
                                 Monday
                             </li>
-                            <li>?? <strong>Structured Interviews:</strong> Same questions for all candidates = fair +
+                            <li>🎯 <strong>Structured Interviews:</strong> Same questions for all candidates = fair +
                                 faster
                                 decisions</li>
-                            <li>?? <strong>Batch Interviews:</strong> Schedule all interviews for one day when possible
+                            <li>📅 <strong>Batch Interviews:</strong> Schedule all interviews for one day when possible
                             </li>
-                            <li>?? <strong>Set Reminders:</strong> Probation reviews, birthdays, work anniversaries �
+                            <li>🔔 <strong>Set Reminders:</strong> Probation reviews, birthdays, work anniversaries —
                                 never
                                 miss them</li>
                         </ul>
@@ -3182,27 +3182,27 @@
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
                         <div
                             style="background: rgba(167, 139, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                            <div style="font-size: 32px; margin-bottom: 10px;">??</div>
+                            <div style="font-size: 32px; margin-bottom: 10px;">🌱</div>
                             <p style="color: #C4B5FD; font-weight: 600;">"Culture isn't a perk. It's the foundation."
                             </p>
                         </div>
                         <div
                             style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                            <div style="font-size: 32px; margin-bottom: 10px;">??</div>
+                            <div style="font-size: 32px; margin-bottom: 10px;">🤝</div>
                             <p style="color: #A7F3D0; font-weight: 600;">"Treat candidates how you'd want to be
                                 treated."
                             </p>
                         </div>
                         <div
                             style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                            <div style="font-size: 32px; margin-bottom: 10px;">??</div>
+                            <div style="font-size: 32px; margin-bottom: 10px;">💎</div>
                             <p style="color: #FDE68A; font-weight: 600;">"One great hire beats ten average ones."</p>
                         </div>
                     </div>
 
                     <div
                         style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
-                        <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">?? Start Each Day With This:
+                        <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
                         </p>
                         <p style="font-size: 20px; color: #A78BFA; font-weight: 600;">"Today, I am building the team
                             that
@@ -3213,11 +3213,11 @@
                 <!-- Company Policies -->
                 <section class="section" id="policies">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📋</div>
                         <h2>Company Policies</h2>
                     </div>
 
-                    <h3 id="attendance">? Attendance & Punctuality</h3>
+                    <h3 id="attendance">⏰ Attendance & Punctuality</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3247,12 +3247,12 @@
                         </tbody>
                     </table>
 
-                    <h3 id="leave">?? Leave Policy</h3>
+                    <h3 id="leave">📅 Leave Policy</h3>
                     <div class="checklist-grid">
                         <div class="checklist-card">
                             <h4>Annual Leave Entitlement</h4>
                             <ul class="styled-list">
-                                <li><strong>Casual Leave:</strong> 12 days/year (?? Max 2 days/month default. More than
+                                <li><strong>Casual Leave:</strong> 12 days/year (⚠️ Max 2 days/month default. More than
                                     2
                                     days requires Delhi team request + balance available)</li>
                                 <li><strong>Sick Leave:</strong> 6 days/year</li>
@@ -3272,7 +3272,7 @@
                         </div>
                     </div>
 
-                    <h3 id="salary">?? Salary & Advance Policy</h3>
+                    <h3 id="salary">💰 Salary & Advance Policy</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3304,9 +3304,9 @@
                         </tbody>
                     </table>
 
-                    <h3 id="communication">?? Communication Policy</h3>
+                    <h3 id="communication">💬 Communication Policy</h3>
                     <div class="info-box danger">
-                        <h4>? CRITICAL RULE</h4>
+                        <h4>❌ CRITICAL RULE</h4>
                         <p><strong>Ignoring messages from team/management = Immediate termination.</strong> No second
                             chances.</p>
                     </div>
@@ -3340,13 +3340,13 @@
                     <div class="info-box warning" style="margin-top: 15px;">
                         <h4>Poor Client Communication Penalty</h4>
                         <ul class="styled-list">
-                            <li><strong>1st offense:</strong> ?500 deduction + written warning</li>
-                            <li><strong>2nd offense:</strong> ?1,000 deduction + final warning</li>
+                            <li><strong>1st offense:</strong> ₹500 deduction + written warning</li>
+                            <li><strong>2nd offense:</strong> ₹1,000 deduction + final warning</li>
                             <li><strong>3rd offense:</strong> Immediate termination</li>
                         </ul>
                     </div>
 
-                    <h3 id="confidentiality">?? Confidentiality & Data Security</h3>
+                    <h3 id="confidentiality">🔒 Confidentiality & Data Security</h3>
                     <div class="info-box info">
                         <h4>Confidential Information Includes:</h4>
                         <ul class="styled-list">
@@ -3360,7 +3360,7 @@
                     </div>
 
                     <div class="info-box danger" style="margin-top: 15px;">
-                        <h4>?? Data Breach = Immediate Termination + Legal Action</h4>
+                        <h4>⚠️ Data Breach = Immediate Termination + Legal Action</h4>
                         <ul class="styled-list">
                             <li>No sharing client passwords outside work tools</li>
                             <li>No discussing clients on social media</li>
@@ -3369,7 +3369,7 @@
                         </ul>
                     </div>
 
-                    <h3 id="wfh">?? Work From Home Policy</h3>
+                    <h3 id="wfh">🏠 Work From Home Policy</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3402,7 +3402,7 @@
                     </table>
 
                     <div class="info-box warning" style="margin-top: 15px;">
-                        <h4>?? IMPORTANT: WFH is 100% Subject to Manager Approval</h4>
+                        <h4>⚠️ IMPORTANT: WFH is 100% Subject to Manager Approval</h4>
                         <p><strong>WFH is NOT a right - it's a privilege.</strong> Every WFH request must be approved by
                             your manager at least 1 day in advance. Manager can reject any WFH request without
                             explanation.
@@ -3413,7 +3413,7 @@
                 <!-- Performance Reviews -->
                 <section class="section" id="performance">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📊</div>
                         <h2>Performance Reviews</h2>
                     </div>
 
@@ -3448,7 +3448,7 @@
                     <h3>Evaluation Criteria</h3>
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>?? What We Evaluate</h4>
+                            <h4>📊 What We Evaluate</h4>
                             <ul class="styled-list check-list">
                                 <li>KPI achievement</li>
                                 <li>Client satisfaction scores</li>
@@ -3459,7 +3459,7 @@
                             </ul>
                         </div>
                         <div class="checklist-card">
-                            <h4>? Performance Ratings</h4>
+                            <h4>⭐ Performance Ratings</h4>
                             <ul class="styled-list">
                                 <li><strong>90-100%:</strong> 15-20% increment + bonus</li>
                                 <li><strong>75-89%:</strong> 10-15% increment</li>
@@ -3485,7 +3485,7 @@
                 <!-- Offboarding -->
                 <section class="section" id="offboarding">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🚪</div>
                         <h2>Resignation & Offboarding</h2>
                     </div>
 
@@ -3580,7 +3580,7 @@
     <div id="content-assets" class="view-section hidden" style="margin-left: 320px;">
         <div class="container">
             <div class="header">
-                <div style="font-size: 64px; margin-bottom: 20px;">??</div>
+                <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
                 <h1>HR Assets & Training Library</h1>
                 <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
                     training, scripts, and resources to help you master your role.</p>
@@ -3588,7 +3588,7 @@
 
             <div id="videos" class="section-title"
                 style="border-left: 4px solid #3B82F6; padding-left: 15px; margin-bottom: 30px;">
-                <h2 style="margin: 0;">?? Video Training</h2>
+                <h2 style="margin: 0;">📹 Video Training</h2>
             </div>
 
             <div class="video-grid">
@@ -3640,13 +3640,13 @@
 
             <div id="resources" class="section-title"
                 style="border-left: 4px solid #10B981; padding-left: 15px; margin: 60px 0 30px 0;">
-                <h2 style="margin: 0;">?? Downloadable Resources</h2>
+                <h2 style="margin: 0;">📄 Downloadable Resources</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
                 <a href="#"
                     style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
-                    <span style="font-size: 2em; margin-right: 15px;">??</span>
+                    <span style="font-size: 2em; margin-right: 15px;">📝</span>
                     <div>
                         <strong style="display: block; font-size: 1.1em;">Contract Templates</strong>
                         <span style="color: #9CA3AF; font-size: 0.9em;">Employment agreements & NDAs</span>
@@ -3654,7 +3654,7 @@
                 </a>
                 <a href="#"
                     style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
-                    <span style="font-size: 2em; margin-right: 15px;">??</span>
+                    <span style="font-size: 2em; margin-right: 15px;">📊</span>
                     <div>
                         <strong style="display: block; font-size: 1.1em;">Interview Scoring Sheet</strong>
                         <span style="color: #9CA3AF; font-size: 0.9em;">Standardized evaluation form</span>
@@ -3668,7 +3668,7 @@
     <div id="content-onboarding" class="view-section hidden" style="margin-left: 320px;">
         <div class="container">
             <div class="header">
-                <div style="font-size: 64px; margin-bottom: 20px;">??</div>
+                <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
                 <h1>Your Onboarding Journey</h1>
                 <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
                     to become a certified HR Manager.</p>
@@ -3683,7 +3683,7 @@
                         1</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">?? Master the SOP</h3>
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
                             understand, and internalize the Standard Operating Procedure. This document provides the
                             legal and cultural framework we operate under.</p>
@@ -3700,7 +3700,7 @@
                         2</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">?? Watch Training Videos</h3>
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
                             watch the required training videos. These will give you visual context to the written SOPs.
                         </p>
@@ -3717,15 +3717,15 @@
                         3</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">?? Pass the Knowledge Test
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
                         </h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by
                             taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
                         <p
                             style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
-                            ?? <strong>How to take the test:</strong> Switch back to the <a href="#"
+                            ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
                                 onclick="switchView('sop'); return false;" style="color: #3B82F6;">HR SOP</a> view and
-                            click the "?? Test" button in the sidebar.
+                            click the "🎓 Test" button in the sidebar.
                         </p>
                     </div>
                 </div>
@@ -3737,7 +3737,7 @@
                         4</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">??? The 30-Minute Recording
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording
                             Task</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
                             verification. Record a <strong>30-minute screen sharing video</strong> walking us through
@@ -3755,7 +3755,7 @@
 
                         <div class="success-box"
                             style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                            <strong style="color: #059669; display: block; margin-bottom: 10px;">?? Example
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
                                 Submission</strong>
                             <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
                                 nailed this task:</p>

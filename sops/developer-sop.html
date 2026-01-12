@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Heroes | Shopify Developer SOP</title>
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>??</text></svg>">
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
@@ -193,7 +193,7 @@
         }
 
         .story-box::before {
-            content: "?? REAL STORY";
+            content: "📖 REAL STORY";
             position: absolute;
             top: -12px;
             left: 20px;
@@ -227,7 +227,7 @@
         }
 
         .warning-story::before {
-            content: "?? CAUTIONARY TALE";
+            content: "⚠️ CAUTIONARY TALE";
             position: absolute;
             top: -12px;
             left: 20px;
@@ -289,7 +289,7 @@
         }
 
         .styled-list li::before {
-            content: "?";
+            content: "→";
             position: absolute;
             left: 0;
             color: var(--primary);
@@ -297,12 +297,12 @@
         }
 
         .check-list li::before {
-            content: "?";
+            content: "✓";
             color: var(--success);
         }
 
         .cross-list li::before {
-            content: "?";
+            content: "✗";
             color: var(--danger);
         }
 
@@ -742,76 +742,76 @@
 <body>
     <!-- Mobile Header -->
     <div class="mobile-header">
-        <button class="mobile-menu-btn" onclick="toggleSidebar()">?</button>
-        <a href="index.html" class="mobile-home-btn">?? Home</a>
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+        <a href="index.html" class="mobile-home-btn">🏠 Home</a>
     </div>
 
     <!-- Left Sidebar -->
     <aside class="sidebar">
         <div class="sidebar-header">
-            <span class="emoji">??</span>
+            <span class="emoji">💻</span>
             <h2>Shopify Developer SOP</h2>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="kra/developer-kra.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">📋
                 KRA</a>
             <a href="kpi/developer-kpi.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
                 KPI</a>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="#" onclick="switchView('assets'); return false;" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6;">📚
                 Assets</a>
             <a href="training/developer-training.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">??
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">🎓
                 Training</a>
         </div>
-        <a href="index.html" class="sidebar-back">? Back to Home</a>
+        <a href="index.html" class="sidebar-back">← Back to Home</a>
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
-            <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">???
+            <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
-            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">??
+            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
                 Test</button>
         </div>
         <div class="sidebar-search">
-            <input type="text" id="searchInput" placeholder="?? Search..." onkeyup="searchSOP()">
+            <input type="text" id="searchInput" placeholder="🔍 Search..." onkeyup="searchSOP()">
         </div>
         <div id="sidebar-sop-links">
-            <div class="sidebar-section-title">1?? Getting Started</div>
+            <div class="sidebar-section-title">1️⃣ Getting Started</div>
             <div class="sidebar-nav-grid">
-                <a href="#standards">?? Standards</a>
-                <a href="#store-access">?? Access</a>
-                <a href="#theme-setup">?? Theme</a>
-                <a href="#qa">? QA</a>
+                <a href="#standards">🚨 Standards</a>
+                <a href="#store-access">🔐 Access</a>
+                <a href="#theme-setup">🎨 Theme</a>
+                <a href="#qa">✅ QA</a>
             </div>
-            <div class="sidebar-section-title">2?? Build Process</div>
+            <div class="sidebar-section-title">2️⃣ Build Process</div>
             <div class="sidebar-nav-grid">
-                <a href="#homepage">?? Homepage</a>
-                <a href="#product-page">?? Product</a>
-                <a href="#speed">? Speed</a>
-                <a href="#checkout">?? Checkout</a>
-                <a href="#policies">?? Policies</a>
-                <a href="#apps">?? Apps</a>
+                <a href="#homepage">🏠 Homepage</a>
+                <a href="#product-page">📦 Product</a>
+                <a href="#speed">⚡ Speed</a>
+                <a href="#checkout">💳 Checkout</a>
+                <a href="#policies">📋 Policies</a>
+                <a href="#apps">📦 Apps</a>
             </div>
-            <div class="sidebar-section-title">3?? Scenarios</div>
+            <div class="sidebar-section-title">3️⃣ Scenarios</div>
             <div class="sidebar-nav-grid">
-                <a href="#troubleshooting">?? Slow Site</a>
-                <a href="#production-bug">?? Prod Bug</a>
-                <a href="#broken-theme">?? Theme Error</a>
-                <a href="#bad-assets">?? Bad Assets</a>
-                <a href="#app-conflict">? App Conflict</a>
-                <a href="#endless-revisions">?? Revisions</a>
-                <a href="#client-editing">?? Client Edit</a>
-                <a href="#slow-speed">?? Still Slow</a>
+                <a href="#troubleshooting">🐌 Slow Site</a>
+                <a href="#production-bug">💥 Prod Bug</a>
+                <a href="#broken-theme">🔄 Theme Error</a>
+                <a href="#bad-assets">📷 Bad Assets</a>
+                <a href="#app-conflict">⚡ App Conflict</a>
+                <a href="#endless-revisions">🔄 Revisions</a>
+                <a href="#client-editing">👤 Client Edit</a>
+                <a href="#slow-speed">⏱️ Still Slow</a>
             </div>
-            <div class="sidebar-section-title">4?? Tools & Reference</div>
+            <div class="sidebar-section-title">4️⃣ Tools & Reference</div>
             <div class="sidebar-nav-grid">
-                <a href="#chatgpt">?? ChatGPT</a>
-                <a href="#difficult-situations">?? Difficult</a>
-                <a href="#daily-reference">?? Day-to-Day</a>
-                <a href="#inspiration">?? Inspiration</a>
+                <a href="#chatgpt">🤖 ChatGPT</a>
+                <a href="#difficult-situations">⚠️ Difficult</a>
+                <a href="#daily-reference">📋 Day-to-Day</a>
+                <a href="#inspiration">💪 Inspiration</a>
             </div>
         </div> <!-- End sidebar-sop-links -->
 
@@ -819,24 +819,24 @@
         <div id="sidebar-assets-links" class="hidden">
             <div class="sidebar-section-title">Sections</div>
             <div class="sidebar-nav-grid">
-                <a href="#videos">?? Videos</a>
-                <a href="#resources">?? Resources</a>
+                <a href="#videos">📹 Videos</a>
+                <a href="#resources">📄 Resources</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">? Back to SOP</a>
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
 
         <!-- ONBOARDING SIDEBAR LINKS -->
         <div id="sidebar-onboarding-links" class="hidden">
             <div class="sidebar-section-title">Timeline</div>
             <div class="sidebar-nav-grid" style="grid-template-columns: 1fr;">
-                <a href="#step-1" style="justify-content: flex-start;">1?? Master SOP</a>
-                <a href="#step-2" style="justify-content: flex-start;">2?? Watch Videos</a>
-                <a href="#step-3" style="justify-content: flex-start;">3?? Pass Test</a>
-                <a href="#step-4" style="justify-content: flex-start;">4?? Record Video</a>
+                <a href="#step-1" style="justify-content: flex-start;">1️⃣ Master SOP</a>
+                <a href="#step-2" style="justify-content: flex-start;">2️⃣ Watch Videos</a>
+                <a href="#step-3" style="justify-content: flex-start;">3️⃣ Pass Test</a>
+                <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">? Back to SOP</a>
+                style="margin-top:20px; text-align:center;">← Back to SOP</a>
         </div>
     </aside>
 
@@ -845,19 +845,19 @@
             <div class="container">
                 <!-- Header -->
                 <header class="header">
-                    <h1>?? Shopify Developer SOP</h1>
+                    <h1>💻 Shopify Developer SOP</h1>
                     <p class="subtitle">Theme Customization, Speed Optimization & Conversion-Ready Builds</p>
                     <div class="badge-row">
-                        <span class="badge">? 85+ PageSpeed</span>
-                        <span class="badge">?? Mobile-First</span>
-                        <span class="badge">?? Pixel-Perfect</span>
-                        <span class="badge">?? Clean Code</span>
+                        <span class="badge">⚡ 85+ PageSpeed</span>
+                        <span class="badge">📱 Mobile-First</span>
+                        <span class="badge">🎨 Pixel-Perfect</span>
+                        <span class="badge">🔧 Clean Code</span>
                     </div>
                 </header>
 
                 <div id="searchResults"
                     style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
-                    <h3 style="margin-bottom: 15px;">?? Search Results (<span id="resultCount">0</span>)</h3>
+                    <h3 style="margin-bottom: 15px;">🔍 Search Results (<span id="resultCount">0</span>)</h3>
                     <div id="resultsList"></div>
                     <button onclick="clearSearch()"
                         style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
@@ -893,7 +893,7 @@
                 <!-- Opening Story -->
                 <section class="section">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📖</div>
                         <h2>Why Your Code Quality Matters</h2>
                     </div>
 
@@ -917,9 +917,9 @@
                         <p>We rebuilt the store. PageSpeed hit 92. Conversion rate tripled.</p>
 
                         <div class="moral">
-                            <strong>?? The Lesson:</strong> Your code doesn't just need to "work." It needs to SELL. A
+                            <strong>🎯 The Lesson:</strong> Your code doesn't just need to "work." It needs to SELL. A
                             1-second
-                            delay in load time = 7% loss in conversions. Your job isn't just development � it's revenue
+                            delay in load time = 7% loss in conversions. Your job isn't just development — it's revenue
                             generation through technical excellence.
                         </div>
                     </div>
@@ -927,7 +927,7 @@
 
                 <!-- Code Standards -->
                 <section class="critical-alert" id="standards">
-                    <h2>?? NON-NEGOTIABLE CODE STANDARDS</h2>
+                    <h2>🚨 NON-NEGOTIABLE CODE STANDARDS</h2>
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">1. NEVER WORK ON LIVE THEME</h3>
@@ -944,7 +944,7 @@
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">3. SPEED IS NOT OPTIONAL</h3>
-                        <p>Mobile PageSpeed target: 85+. Every decision � image size, app choice, custom code � must
+                        <p>Mobile PageSpeed target: 85+. Every decision — image size, app choice, custom code — must
                             consider
                             speed.</p>
                     </div>
@@ -959,10 +959,10 @@
 
                 <!-- NEW: Currency & Store Build Critical Rules -->
                 <section class="critical-alert" id="store-critical">
-                    <h2>?? CRITICAL: Shopify Store Build Rules</h2>
+                    <h2>⚠️ CRITICAL: Shopify Store Build Rules</h2>
 
                     <div class="highlight-box" style="background: #C62828;">
-                        <h3 style="margin-bottom: 15px;">?? CURRENCY CHECK - FIRST STEP</h3>
+                        <h3 style="margin-bottom: 15px;">🚨 CURRENCY CHECK - FIRST STEP</h3>
                         <p><strong style="font-size: 1.2em;">NEVER keep currency as INR for US/international
                                 clients!</strong></p>
                         <ul style="margin-top: 10px;">
@@ -973,7 +973,7 @@
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
-                        <h3 style="margin-bottom: 15px;">?? Mandatory Store Elements Checklist</h3>
+                        <h3 style="margin-bottom: 15px;">📋 Mandatory Store Elements Checklist</h3>
                         <ul>
                             <li>Minimum <strong>3 trending products</strong> per practice store</li>
                             <li><strong>ALL policy pages</strong> must have content: Privacy, Shipping, Refund, Terms
@@ -987,7 +987,7 @@
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
-                        <h3 style="margin-bottom: 15px;">?? Required App Integrations</h3>
+                        <h3 style="margin-bottom: 15px;">📱 Required App Integrations</h3>
                         <table class="styled-table" style="background: rgba(255,255,255,0.1);">
                             <tbody style="color: white;">
                                 <tr>
@@ -1011,7 +1011,7 @@
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
-                        <h3 style="margin-bottom: 15px;">?? Time Standards</h3>
+                        <h3 style="margin-bottom: 15px;">⏱️ Time Standards</h3>
                         <p><strong>Practice store:</strong> Maximum 2 hours per store</p>
                         <p><strong>Client store speed:</strong> 1 complete store + homepage of 2nd store = 1 day</p>
                         <p style="margin-top: 10px; opacity: 0.9;">Remember: Shopify is 2x easier than WordPress - speed
@@ -1022,27 +1022,27 @@
                 <!-- NEW: Self QA Protocol -->
                 <section class="critical-alert" id="self-qa"
                     style="background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);">
-                    <h2>?? SELF QA PROTOCOL - MANDATORY</h2>
+                    <h2>🔍 SELF QA PROTOCOL - MANDATORY</h2>
                     <p style="font-size: 1.2em; margin-bottom: 20px;"><strong>Review EVERY element 3-5 times before
-                            submission � this is MANDATORY, not optional</strong></p>
+                            submission — this is MANDATORY, not optional</strong></p>
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">Pre-Submission Checklist:</h3>
                         <ul>
-                            <li>? <strong>Desktop view check:</strong> All pages, all links, all buttons</li>
-                            <li>? <strong>Mobile responsiveness:</strong> Every section, every page</li>
-                            <li>? <strong>Click EVERY link</strong> on the site - document any broken links</li>
-                            <li>? <strong>Test complete flow:</strong> Add to Cart ? Checkout</li>
-                            <li>? <strong>Verify ALL images</strong> display correctly (no broken images)</li>
-                            <li>? <strong>Spelling/grammar check</strong> on ALL text content</li>
-                            <li>? <strong>Page speed test</strong> - must meet 85+ benchmark</li>
+                            <li>✅ <strong>Desktop view check:</strong> All pages, all links, all buttons</li>
+                            <li>✅ <strong>Mobile responsiveness:</strong> Every section, every page</li>
+                            <li>✅ <strong>Click EVERY link</strong> on the site - document any broken links</li>
+                            <li>✅ <strong>Test complete flow:</strong> Add to Cart → Checkout</li>
+                            <li>✅ <strong>Verify ALL images</strong> display correctly (no broken images)</li>
+                            <li>✅ <strong>Spelling/grammar check</strong> on ALL text content</li>
+                            <li>✅ <strong>Page speed test</strong> - must meet 85+ benchmark</li>
                         </ul>
                     </div>
 
                     <div style="background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px; margin-top: 20px;">
-                        <p style="color: #FBBF24; font-size: 1.1em;">?? <strong>NEVER ask client to check store until
+                        <p style="color: #FBBF24; font-size: 1.1em;">⚠️ <strong>NEVER ask client to check store until
                                 100% complete and self-verified</strong></p>
-                        <p style="margin-top: 10px;">?? <strong>If clients point out preventable mistakes � you are
+                        <p style="margin-top: 10px;">⚠️ <strong>If clients point out preventable mistakes — you are
                                 personally responsible</strong></p>
                     </div>
                 </section>
@@ -1050,12 +1050,12 @@
                 <!-- NEW: Quality Standards & Zero Tolerance -->
                 <section class="section" id="quality-standards">
                     <div class="section-header">
-                        <div class="section-number">?</div>
+                        <div class="section-number">⭐</div>
                         <h2>Quality Standards & Ownership</h2>
                     </div>
 
                     <div class="info-box danger">
-                        <h4>?? Creative Ownership Principle</h4>
+                        <h4>🎯 Creative Ownership Principle</h4>
                         <p>Each team member is <strong>100% responsible</strong> for their assigned work quality.</p>
                         <ul class="styled-list">
                             <li>Responsibility includes: Colors, designs, logos, product formatting, overall aesthetic
@@ -1067,7 +1067,7 @@
 
                     <div class="critical-alert"
                         style="margin: 25px 0; background: linear-gradient(135deg, #7C2D12 0%, #9A3412 100%);">
-                        <h3>?? Zero Tolerance Policy</h3>
+                        <h3>⚠️ Zero Tolerance Policy</h3>
                         <p style="font-size: 1.1em; margin-bottom: 15px;"><strong>After 15 days of onboarding: ONE
                                 careless mistake = Potential removal</strong></p>
                         <ul>
@@ -1079,7 +1079,7 @@
                     </div>
 
                     <div class="info-box success">
-                        <h4>?? Peer Review Process</h4>
+                        <h4>👥 Peer Review Process</h4>
                         <ul class="styled-list">
                             <li>Get projects checked by <strong>each other</strong> before sending to client</li>
                             <li>Fresh eyes catch issues original developer might miss</li>
@@ -1091,19 +1091,19 @@
                 <!-- QUALITY & DELIVERY BEST PRACTICES -->
                 <section class="section" id="delivery-practices">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🚀</div>
                         <h2>Quality & Delivery Best Practices</h2>
                     </div>
 
                     <div class="story-box">
-                        <h4>1?? The Fresh Eyes Rule ??</h4>
+                        <h4>1️⃣ The Fresh Eyes Rule 👀</h4>
                         <p>After finishing work, wait 2 hours before reviewing.</p>
                         <p style="margin-top: 5px;"><em>Your eyes see what they expect. Fresh eyes see what's
                                 there.</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>2?? The Client Perspective Check ??</h4>
+                        <h4>2️⃣ The Client Perspective Check 🤔</h4>
                         <p>Before submitting, ask yourself:</p>
                         <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
@@ -1112,7 +1112,7 @@
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>3?? The 5-Minute Audit ??</h4>
+                        <h4>3️⃣ The 5-Minute Audit ⏱️</h4>
                         <p>After every delivery, spend 5 minutes finding issues you might have missed:</p>
                         <ul style="margin-top: 10px;">
                             <li>Check on mobile</li>
@@ -1122,7 +1122,7 @@
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>4?? Show, Don't Tell ??</h4>
+                        <h4>4️⃣ Show, Don't Tell 📸</h4>
                         <p>Never say "it's done." Show proof:</p>
                         <ul style="margin-top: 10px;">
                             <li>Screenshot</li>
@@ -1132,35 +1132,35 @@
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>5?? The Walkthrough Video ??</h4>
+                        <h4>5️⃣ The Walkthrough Video 🎥</h4>
                         <p>For every major delivery, record a 2-minute Loom explaining what was built.</p>
                         <p style="color: #10B981; margin-top: 5px;"><strong>Reduces back-and-forth by 80%</strong></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>6?? Version Control ??</h4>
+                        <h4>6️⃣ Version Control 📁</h4>
                         <p>Never overwrite. Always save versions: v1, v2, v3, etc.</p>
-                        <p style="margin-top: 5px;">Especially for theme files � keep a backup!</p>
+                        <p style="margin-top: 5px;">Especially for theme files — keep a backup!</p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>7?? The "Works for Me" Fallacy ??</h4>
+                        <h4>7️⃣ The "Works for Me" Fallacy ⚠️</h4>
                         <p style="color: #EF4444;"><strong>"It works on my machine" is NOT acceptable.</strong></p>
                         <p style="margin-top: 5px;">If it doesn't work for the client, it's broken. Period.</p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>8?? The Testing Trifecta ?</h4>
+                        <h4>8️⃣ The Testing Trifecta ✅</h4>
                         <p>Test every feature 3 ways:</p>
                         <ol style="margin-top: 10px; margin-left: 20px;">
-                            <li><strong>Happy path</strong> � as intended</li>
-                            <li><strong>Error path</strong> � with wrong inputs</li>
-                            <li><strong>Edge cases</strong> � extreme scenarios</li>
+                            <li><strong>Happy path</strong> — as intended</li>
+                            <li><strong>Error path</strong> — with wrong inputs</li>
+                            <li><strong>Edge cases</strong> — extreme scenarios</li>
                         </ol>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
-                        <h4>9?? The Rollback Plan ??</h4>
+                        <h4>9️⃣ The Rollback Plan 🔙</h4>
                         <p>Before any major change, know how to undo it in 5 minutes.</p>
                         <p style="margin-top: 5px;">Always have an escape route.</p>
                     </div>
@@ -1170,12 +1170,12 @@
                 <!-- Video Training Section -->
                 <section class="section" id="video-training">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🎥</div>
                         <h2>Video Training Library</h2>
                     </div>
 
                     <div class="info-box success">
-                        <h4>?? Complete Shopify Training (20 Videos)</h4>
+                        <h4>📺 Complete Shopify Training (20 Videos)</h4>
                         <p>Watch these tutorials to master Shopify development. Each video covers essential skills that
                             will be evaluated during certification.</p>
                     </div>
@@ -1234,7 +1234,7 @@
                     </style>
 
                     <!-- Beginner Foundations -->
-                    <div class="video-category">?? Getting Started (Videos 1-2)</div>
+                    <div class="video-category">📚 Getting Started (Videos 1-2)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/YtbaxJFb9zE"
@@ -1257,7 +1257,7 @@
                     </div>
 
                     <!-- Theme Customization -->
-                    <div class="video-category">?? Theme Customization (Videos 3-5)</div>
+                    <div class="video-category">🎨 Theme Customization (Videos 3-5)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/fQZntbd5QGI"
@@ -1289,14 +1289,14 @@
                     </div>
 
                     <!-- SEO -->
-                    <div class="video-category">?? SEO & Optimization (Videos 6-7)</div>
+                    <div class="video-category">🔍 SEO & Optimization (Videos 6-7)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/umTyBPD_Fjw"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <div class="video-card-content">
-                                <h5>6. SEO � Preferences & Meta Setup</h5>
+                                <h5>6. SEO – Preferences & Meta Setup</h5>
                                 <p>Homepage title, meta description, and SEO basics.</p>
                             </div>
                         </div>
@@ -1306,13 +1306,13 @@
                                 allowfullscreen></iframe>
                             <div class="video-card-content">
                                 <h5>7. SEO Optimization for Beginners</h5>
-                                <p>Practical SEO strategy � site structure, keywords.</p>
+                                <p>Practical SEO strategy — site structure, keywords.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Products -->
-                    <div class="video-category">?? Product Management (Videos 8-10)</div>
+                    <div class="video-category">📦 Product Management (Videos 8-10)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/YvllH3MhPWY"
@@ -1344,7 +1344,7 @@
                     </div>
 
                     <!-- Navigation -->
-                    <div class="video-category">?? Navigation & Structure (Videos 11-12)</div>
+                    <div class="video-category">🧭 Navigation & Structure (Videos 11-12)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/X8FWjKaxi-E"
@@ -1367,7 +1367,7 @@
                     </div>
 
                     <!-- Shipping & Payments -->
-                    <div class="video-category">?? Shipping & Payments (Videos 13-15)</div>
+                    <div class="video-category">💳 Shipping & Payments (Videos 13-15)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/X6hBF5bnnto"
@@ -1399,7 +1399,7 @@
                     </div>
 
                     <!-- International Markets -->
-                    <div class="video-category">?? International Markets (Videos 16-18)</div>
+                    <div class="video-category">🌍 International Markets (Videos 16-18)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/F9R7Pwkao8k"
@@ -1431,7 +1431,7 @@
                     </div>
 
                     <!-- Apps & Integrations -->
-                    <div class="video-category">?? Apps & Integrations (Videos 19-20)</div>
+                    <div class="video-category">🔌 Apps & Integrations (Videos 19-20)</div>
                     <div class="video-grid">
                         <div class="video-card">
                             <iframe src="https://www.youtube.com/embed/-msd5yDGn34"
@@ -1454,7 +1454,7 @@
                     </div>
 
                     <div class="info-box gold" style="margin-top: 25px;">
-                        <h4>?? Complete the Full Training Program</h4>
+                        <h4>🎓 Complete the Full Training Program</h4>
                         <p>For a structured learning experience with quizzes and implementation tasks, visit the <a
                                 href="training/developer-training.html"
                                 style="color: #8B5CF6; font-weight: 600;">Developer Training Program</a>.</p>
@@ -1469,14 +1469,14 @@
                     </div>
 
                     <div class="info-box danger">
-                        <h4>?? NEVER Start Work Without Proper Access</h4>
+                        <h4>⚠️ NEVER Start Work Without Proper Access</h4>
                         <p>Before you touch ANY code or settings, you MUST have proper collaborator access to the
                             client's
                             Shopify store. Working without official access = security risk and potential account issues.
                         </p>
                     </div>
 
-                    <h3>?? Step-by-Step: Getting Collaborator Access</h3>
+                    <h3>📋 Step-by-Step: Getting Collaborator Access</h3>
 
                     <div class="code-block">
                         <span class="keyword">STEP 1: Request Collaborator Code from Client</span><br><br>
@@ -1485,7 +1485,7 @@
 
                         <span class="string">"To get started, I'll need access to your Shopify store. Here's how:<br>
                             1. Log into your Shopify admin<br>
-                            2. Go to Settings ? Users and permissions<br>
+                            2. Go to Settings → Users and permissions<br>
                             3. Scroll to 'Collaborators' section<br>
                             4. You'll see a 4-digit collaborator request code<br>
                             5. Please share that code with me<br><br>
@@ -1507,7 +1507,7 @@
 
                         Send this to client:<br>
                         <span class="string">"I've submitted my access request. Please check your Shopify admin:<br>
-                            Settings ? Users and permissions ? Collaborators<br>
+                            Settings → Users and permissions → Collaborators<br>
                             You should see my request - please click 'Approve'."</span><br><br>
 
                         <span class="keyword">STEP 4: Verify Your Access</span><br><br>
@@ -1518,7 +1518,7 @@
                         - If anything is restricted, ask client for additional permissions
                     </div>
 
-                    <h3>?? Access Permission Levels</h3>
+                    <h3>🔐 Access Permission Levels</h3>
 
                     <table class="styled-table">
                         <thead>
@@ -1558,26 +1558,26 @@
                     </table>
 
                     <div class="info-box warning">
-                        <h4>? Common Access Problems & Solutions</h4>
+                        <h4>❌ Common Access Problems & Solutions</h4>
                         <ul class="styled-list">
-                            <li><strong>"I can't find the collaborator code"</strong> ? The client needs to be on
+                            <li><strong>"I can't find the collaborator code"</strong> → The client needs to be on
                                 Shopify's
                                 paid plan. Trial stores don't have this feature.</li>
-                            <li><strong>"Client wants to share login instead"</strong> ? Politely decline. Explain
+                            <li><strong>"Client wants to share login instead"</strong> → Politely decline. Explain
                                 collaborator access is more secure and trackable.</li>
-                            <li><strong>"Access request not showing for client"</strong> ? Make sure you used the
+                            <li><strong>"Access request not showing for client"</strong> → Make sure you used the
                                 correct
                                 store URL (.myshopify.com, not custom domain).</li>
-                            <li><strong>"Some areas are restricted"</strong> ? Ask client to edit your collaborator
-                                permissions in Settings ? Users.</li>
-                            <li><strong>"Client is on Shopify Lite"</strong> ? Lite plans have limited access. May need
+                            <li><strong>"Some areas are restricted"</strong> → Ask client to edit your collaborator
+                                permissions in Settings → Users.</li>
+                            <li><strong>"Client is on Shopify Lite"</strong> → Lite plans have limited access. May need
                                 to
                                 work differently or upgrade.</li>
                         </ul>
                     </div>
 
                     <div class="info-box success">
-                        <h4>? Before Starting ANY Work, Confirm:</h4>
+                        <h4>✅ Before Starting ANY Work, Confirm:</h4>
                         <ul class="styled-list check-list">
                             <li>You have collaborator access (not shared login)</li>
                             <li>You can access the theme editor</li>
@@ -1638,7 +1638,7 @@
 
                     <div class="code-block">
                         <span class="comment">/* STEP 1: Install Theme */</span><br>
-                        - Go to Online Store ? Themes<br>
+                        - Go to Online Store → Themes<br>
                         - Add theme (from library or upload)<br>
                         - <span class="keyword">IMPORTANT:</span> Click "Duplicate" before customizing<br><br>
 
@@ -1651,7 +1651,7 @@
                         <span class="comment">/* STEP 3: Logo & Favicon */</span><br>
                         - Logo: PNG with transparency, 200-400px wide<br>
                         - Favicon: 32x32 or 64x64 PNG<br>
-                        - Check header on mobile � logo should be visible
+                        - Check header on mobile — logo should be visible
                     </div>
 
                     <div class="warning-story">
@@ -1663,7 +1663,7 @@
                             calls.
                             Lost sales. Angry client.</p>
                         <div class="lesson">
-                            <strong>?? The Lesson:</strong> ALWAYS duplicate theme before changes. Those 30 seconds to
+                            <strong>🎯 The Lesson:</strong> ALWAYS duplicate theme before changes. Those 30 seconds to
                             duplicate
                             can save hours of disaster recovery.
                         </div>
@@ -1678,8 +1678,8 @@
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? The Perfect Homepage Flow</h4>
-                        <p>Every section should have a PURPOSE. No section exists just to look pretty � it either builds
+                        <h4>🏆 The Perfect Homepage Flow</h4>
+                        <p>Every section should have a PURPOSE. No section exists just to look pretty — it either builds
                             trust,
                             showcases products, or drives action.</p>
                     </div>
@@ -1813,7 +1813,7 @@
                     </div>
 
                     <div class="info-box danger">
-                        <h4>?? This Is Where Sales Happen</h4>
+                        <h4>🚨 This Is Where Sales Happen</h4>
                         <p>A beautiful homepage means nothing if the product page doesn't convert. 90% of your
                             conversion
                             optimization effort should be here.</p>
@@ -1823,7 +1823,7 @@
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>?? Product Images</h4>
+                            <h4>📸 Product Images</h4>
                             <ul class="styled-list check-list">
                                 <li>3-5 high-quality images minimum</li>
                                 <li>First image = "hero" shot</li>
@@ -1834,7 +1834,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Price & Variants</h4>
+                            <h4>💰 Price & Variants</h4>
                             <ul class="styled-list check-list">
                                 <li>Price clearly visible</li>
                                 <li>Compare-at price for sales</li>
@@ -1845,7 +1845,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Add to Cart Area</h4>
+                            <h4>🛒 Add to Cart Area</h4>
                             <ul class="styled-list check-list">
                                 <li>ATC button is prominent</li>
                                 <li>Buy Now option (optional)</li>
@@ -1855,7 +1855,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>? Trust Elements</h4>
+                            <h4>✅ Trust Elements</h4>
                             <ul class="styled-list check-list">
                                 <li>Free shipping badge</li>
                                 <li>Return policy snippet</li>
@@ -1869,7 +1869,7 @@
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>?? Product Description</h4>
+                            <h4>📝 Product Description</h4>
                             <p><strong>Benefits FIRST, Features SECOND</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Lead with what the product DOES for them</li>
@@ -1882,7 +1882,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Size Guide / Specifications</h4>
+                            <h4>📏 Size Guide / Specifications</h4>
                             <p><strong>Reduces returns by 30%+</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Include measurement chart with CM/inches</li>
@@ -1895,7 +1895,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>? Customer Reviews</h4>
+                            <h4>⭐ Customer Reviews</h4>
                             <p><strong>#1 conversion driver after price</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Use Judge.me, Loox, or Stamped.io</li>
@@ -1908,7 +1908,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>? Product FAQ</h4>
+                            <h4>❓ Product FAQ</h4>
                             <p><strong>Answer objections before they leave</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Is this product for me?</li>
@@ -1921,7 +1921,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>??? Related Products</h4>
+                            <h4>🛍️ Related Products</h4>
                             <p><strong>Increases AOV by 15-30%</strong></p>
                             <ul class="styled-list check-list">
                                 <li>"You May Also Like" section</li>
@@ -1938,12 +1938,12 @@
                 <!-- Standard Menu Setup -->
                 <section class="section">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📋</div>
                         <h2>Standard Menu & Pages Structure</h2>
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? Every Store Must Have These Menu Items</h4>
+                        <h4>🎯 Every Store Must Have These Menu Items</h4>
                         <p>This is the standard header navigation structure. No exceptions.</p>
                     </div>
 
@@ -1995,7 +1995,7 @@
                     </table>
 
                     <div class="info-box info">
-                        <h4>?? Setting Up Order Tracking (17Track / i7 Track)</h4>
+                        <h4>📦 Setting Up Order Tracking (17Track / i7 Track)</h4>
                         <ol style="margin-left: 20px;">
                             <li>Install "17TRACK Order Tracking" or "i7 Track" from Shopify App Store (free)</li>
                             <li>Configure tracking page appearance to match brand</li>
@@ -2023,7 +2023,7 @@
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>?? Image Optimization</h4>
+                            <h4>📸 Image Optimization</h4>
                             <ul class="styled-list check-list">
                                 <li>Compress before upload (TinyPNG, Squoosh)</li>
                                 <li>Max 500KB per image</li>
@@ -2034,7 +2034,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? App Audit</h4>
+                            <h4>📱 App Audit</h4>
                             <ul class="styled-list check-list">
                                 <li>Maximum 10-12 apps</li>
                                 <li>Remove unused apps</li>
@@ -2044,7 +2044,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Code Optimization</h4>
+                            <h4>💻 Code Optimization</h4>
                             <ul class="styled-list check-list">
                                 <li>Minimize custom CSS/JS</li>
                                 <li>Defer non-critical scripts</li>
@@ -2054,7 +2054,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Font Optimization</h4>
+                            <h4>🔤 Font Optimization</h4>
                             <ul class="styled-list check-list">
                                 <li>Maximum 2 font families</li>
                                 <li>Limit font weights loaded</li>
@@ -2102,11 +2102,11 @@
                     </div>
 
                     <div class="info-box info">
-                        <h4>?? Required Policy Pages</h4>
+                        <h4>📋 Required Policy Pages</h4>
                         <p>Every Shopify store must have these pages. They're linked in checkout automatically when set
                             up
                             in
-                            Settings ? Policies.</p>
+                            Settings → Policies.</p>
                     </div>
 
                     <table class="styled-table">
@@ -2121,29 +2121,29 @@
                             <tr>
                                 <td><strong>Shipping Policy</strong></td>
                                 <td>Processing time, shipping methods, costs, delivery estimates, international</td>
-                                <td>Settings ? Policies ? Shipping Policy</td>
+                                <td>Settings → Policies → Shipping Policy</td>
                             </tr>
                             <tr>
                                 <td><strong>Return & Refund</strong></td>
                                 <td>Return window, condition requirements, process, refund timeline, exchanges</td>
-                                <td>Settings ? Policies ? Refund Policy</td>
+                                <td>Settings → Policies → Refund Policy</td>
                             </tr>
                             <tr>
                                 <td><strong>Privacy Policy</strong></td>
                                 <td>Data collection, usage, cookies, third-party, customer rights</td>
-                                <td>Settings ? Policies ? Privacy Policy</td>
+                                <td>Settings → Policies → Privacy Policy</td>
                             </tr>
                             <tr>
                                 <td><strong>Terms of Service</strong></td>
                                 <td>Usage terms, purchase terms, liability, governing law</td>
-                                <td>Settings ? Policies ? Terms of Service</td>
+                                <td>Settings → Policies → Terms of Service</td>
                             </tr>
                         </tbody>
                     </table>
 
                     <div class="info-box success">
-                        <h4>?? Pro Tip: Generate Policies</h4>
-                        <p>Shopify can auto-generate policy templates: Settings ? Policies ? "Create from template"</p>
+                        <h4>💡 Pro Tip: Generate Policies</h4>
+                        <p>Shopify can auto-generate policy templates: Settings → Policies → "Create from template"</p>
                         <p>Then customize with client's specific details (shipping times, return window, etc.)</p>
                     </div>
                 </section>
@@ -2168,12 +2168,12 @@
                         <tbody>
                             <tr>
                                 <td><strong>Shopify Payments</strong></td>
-                                <td>Settings ? Payments ? Activate Shopify Payments</td>
+                                <td>Settings → Payments → Activate Shopify Payments</td>
                                 <td>Lowest fees, enables Shop Pay, Apple Pay, Google Pay</td>
                             </tr>
                             <tr>
                                 <td><strong>PayPal</strong></td>
-                                <td>Settings ? Payments ? PayPal</td>
+                                <td>Settings → Payments → PayPal</td>
                                 <td>Trust factor, widely used</td>
                             </tr>
                             <tr>
@@ -2187,7 +2187,7 @@
                     <h3>Checkout Customization</h3>
 
                     <ul class="styled-list check-list">
-                        <li>Add logo to checkout (Settings ? Checkout ? Checkout customization)</li>
+                        <li>Add logo to checkout (Settings → Checkout → Checkout customization)</li>
                         <li>Match brand colors</li>
                         <li>Set currency correctly (USD default)</li>
                         <li>Configure tax settings</li>
@@ -2200,13 +2200,13 @@
                     <div class="code-block">
                         <span class="comment">/* TEST ORDER CHECKLIST */</span><br><br>
 
-                        1. Enable test mode (Settings ? Payments ? Manage ? Enable test mode)<br>
-                        2. Add product to cart ? Proceed to checkout<br>
-                        3. Fill shipping info ? Select shipping method<br>
+                        1. Enable test mode (Settings → Payments → Manage → Enable test mode)<br>
+                        2. Add product to cart → Proceed to checkout<br>
+                        3. Fill shipping info → Select shipping method<br>
                         4. Use test card: <span class="string">4242 4242 4242 4242</span><br>
                         5. Any future date, any 3-digit CVV<br>
-                        6. Complete order ? Verify confirmation email<br>
-                        7. Check order in admin ? Test refund process<br>
+                        6. Complete order → Verify confirmation email<br>
+                        7. Check order in admin → Test refund process<br>
                         8. <span class="keyword">REMEMBER:</span> Disable test mode before launch!
                     </div>
                 </section>
@@ -2214,17 +2214,17 @@
                 <!-- Essential Shopify Apps -->
                 <section class="section" id="apps">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📦</div>
                         <h2>Essential Shopify Apps</h2>
                     </div>
 
                     <div class="info-box warning">
-                        <h4>?? App Rule: Less is More</h4>
+                        <h4>⚠️ App Rule: Less is More</h4>
                         <p>Every app you install slows down the store. Only install what's TRULY needed. 5-8 apps is
                             healthy. 15+ apps = performance issues.</p>
                     </div>
 
-                    <h3>?? Recommended Apps by Category</h3>
+                    <h3>📊 Recommended Apps by Category</h3>
 
                     <table class="styled-table">
                         <thead>
@@ -2299,44 +2299,44 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Apps to AVOID (Speed Killers)</h3>
+                    <h3>🚫 Apps to AVOID (Speed Killers)</h3>
 
                     <div class="info-box danger">
                         <ul class="styled-list cross-list">
-                            <li><strong>Multiple review apps</strong> ? Pick ONE. Don't stack them.</li>
-                            <li><strong>Heavy page builders</strong> ? Use theme editor instead when possible.</li>
-                            <li><strong>Too many pop-up apps</strong> ? One pop-up app maximum.</li>
-                            <li><strong>Abandoned cart apps when Klaviyo exists</strong> ? Duplicate functionality.</li>
-                            <li><strong>Apps that inject lots of JavaScript</strong> ? Check PageSpeed after install.
+                            <li><strong>Multiple review apps</strong> → Pick ONE. Don't stack them.</li>
+                            <li><strong>Heavy page builders</strong> → Use theme editor instead when possible.</li>
+                            <li><strong>Too many pop-up apps</strong> → One pop-up app maximum.</li>
+                            <li><strong>Abandoned cart apps when Klaviyo exists</strong> → Duplicate functionality.</li>
+                            <li><strong>Apps that inject lots of JavaScript</strong> → Check PageSpeed after install.
                             </li>
-                            <li><strong>Free apps with no reviews</strong> ? Often inject unwanted code or malware.</li>
+                            <li><strong>Free apps with no reviews</strong> → Often inject unwanted code or malware.</li>
                         </ul>
                     </div>
 
-                    <h3>?? App Installation Checklist</h3>
+                    <h3>📋 App Installation Checklist</h3>
 
                     <div class="info-box success">
                         <p><strong>Before installing ANY app:</strong></p>
                         <ol style="margin-top: 10px; line-height: 2;">
                             <li>Check current PageSpeed score (note it down)</li>
-                            <li>Read reviews � look for complaints about speed</li>
+                            <li>Read reviews — look for complaints about speed</li>
                             <li>Install app</li>
-                            <li>Check PageSpeed again � did it drop significantly?</li>
-                            <li>If score dropped more than 10 points ? reconsider the app</li>
+                            <li>Check PageSpeed again — did it drop significantly?</li>
+                            <li>If score dropped more than 10 points → reconsider the app</li>
                             <li>Test functionality thoroughly</li>
                             <li>Document which apps are installed (for future reference)</li>
                         </ol>
                     </div>
 
-                    <h3>?? App Removal: Clean Uninstall</h3>
+                    <h3>🔧 App Removal: Clean Uninstall</h3>
 
                     <div class="code-block">
                         <span class="comment">/* When removing an app, don't just uninstall! */</span><br><br>
 
-                        1. Go to Apps ? App you want to remove<br>
+                        1. Go to Apps → App you want to remove<br>
                         2. Click "Delete" or "Uninstall"<br>
                         3. <span class="keyword">CRITICAL:</span> Check theme code for leftover snippets<br>
-                        4. Online Store ? Themes ? Actions ? Edit code<br>
+                        4. Online Store → Themes → Actions → Edit code<br>
                         5. Search for the app name in all files<br>
                         6. Remove any leftover {% include 'app-name' %} tags<br>
                         7. Check Layout/theme.liquid for injected scripts<br>
@@ -2354,14 +2354,14 @@
                     </div>
 
                     <div class="info-box danger">
-                        <h4>?? NEVER deliver without completing this checklist</h4>
+                        <h4>🚨 NEVER deliver without completing this checklist</h4>
                         <p>Every issue caught before delivery = trust built with client. Every issue found after = trust
                             destroyed.</p>
                     </div>
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>?? Design (15 points)</h4>
+                            <h4>🎨 Design (15 points)</h4>
                             <ul class="styled-list check-list">
                                 <li>Consistent typography</li>
                                 <li>Brand colors applied</li>
@@ -2372,7 +2372,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Functionality (15 points)</h4>
+                            <h4>⚙️ Functionality (15 points)</h4>
                             <ul class="styled-list check-list">
                                 <li>All navigation links work</li>
                                 <li>Search works</li>
@@ -2383,7 +2383,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>? Performance (10 points)</h4>
+                            <h4>⚡ Performance (10 points)</h4>
                             <ul class="styled-list check-list">
                                 <li>Mobile PageSpeed 85+</li>
                                 <li>Desktop PageSpeed 90+</li>
@@ -2393,7 +2393,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? SEO (10 points)</h4>
+                            <h4>🔍 SEO (10 points)</h4>
                             <ul class="styled-list check-list">
                                 <li>Page titles set</li>
                                 <li>Meta descriptions</li>
@@ -2403,7 +2403,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? Mobile Testing (10 points)</h4>
+                            <h4>📱 Mobile Testing (10 points)</h4>
                             <ul class="styled-list check-list">
                                 <li>Test on real iPhone</li>
                                 <li>Test on real Android</li>
@@ -2418,12 +2418,12 @@
                 <!-- Creating Custom Sections -->
                 <section class="section">
                     <div class="section-header">
-                        <div class="section-number">?</div>
+                        <div class="section-number">⚡</div>
                         <h2>Creating Custom Blocks & Sections</h2>
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? SUPERPOWER: Use Claude or ChatGPT to Create ANY Custom Section</h4>
+                        <h4>🔥 SUPERPOWER: Use Claude or ChatGPT to Create ANY Custom Section</h4>
                         <p>You don't need to memorize Liquid syntax. AI can write it for you. Here's the exact process:
                         </p>
                     </div>
@@ -2462,7 +2462,7 @@
                             <tr>
                                 <td>1</td>
                                 <td>Go to theme editor</td>
-                                <td>Online Store ? Themes ? [Theme] ? Edit Code</td>
+                                <td>Online Store → Themes → [Theme] → Edit Code</td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -2472,7 +2472,7 @@
                             <tr>
                                 <td>3</td>
                                 <td>Create new file</td>
-                                <td>Click "Add a new section" ? name it (e.g., custom-features.liquid)</td>
+                                <td>Click "Add a new section" → name it (e.g., custom-features.liquid)</td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -2482,13 +2482,13 @@
                             <tr>
                                 <td>5</td>
                                 <td>Add to page</td>
-                                <td>Customize theme ? Add section ? Your new section appears!</td>
+                                <td>Customize theme → Add section → Your new section appears!</td>
                             </tr>
                         </tbody>
                     </table>
 
                     <div class="info-box danger">
-                        <h4>?? Always Test New Sections</h4>
+                        <h4>⚠️ Always Test New Sections</h4>
                         <ul class="styled-list cross-list">
                             <li>Never add custom code to live theme directly</li>
                             <li>Test on duplicate theme first</li>
@@ -2500,7 +2500,7 @@
                     <h3>Free Official Shopify Learning Resources</h3>
 
                     <div class="info-box info">
-                        <h4>?? Shopify's Official Free Training (MUST Complete)</h4>
+                        <h4>📚 Shopify's Official Free Training (MUST Complete)</h4>
                         <ul class="styled-list">
                             <li><strong>Liquid Basics:</strong> <a href="https://shopify.dev/docs/api/liquid"
                                     target="_blank">shopify.dev/docs/api/liquid</a></li>
@@ -2523,12 +2523,12 @@
                 <!-- ChatGPT Guide -->
                 <section class="section" id="chatgpt">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🤖</div>
                         <h2>Using AI for Development & Design Analysis</h2>
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? CRITICAL: Screenshot Analysis as 7-Figure Designer</h4>
+                        <h4>🔥 CRITICAL: Screenshot Analysis as 7-Figure Designer</h4>
                         <p>Take a screenshot of your store and have AI analyze it like a $100K/year designer would. This
                             is
                             your
@@ -2556,16 +2556,16 @@
 
                         Give me 5 specific improvements ranked by impact on sales."<br><br>
 
-                        <span class="keyword">? Attach your screenshot and send</span>
+                        <span class="keyword">→ Attach your screenshot and send</span>
                     </div>
 
                     <h3>Developer Prompts</h3>
 
                     <div class="info-box info">
-                        <h4>?? ChatGPT/Claude Prompts for Developers</h4>
+                        <h4>📚 ChatGPT/Claude Prompts for Developers</h4>
                         <ul class="styled-list">
                             <li>"Create a Shopify 2.0 section for [describe section] with schema"</li>
-                            <li>"Debug this Liquid code: [paste code] � I'm getting [error]"</li>
+                            <li>"Debug this Liquid code: [paste code] — I'm getting [error]"</li>
                             <li>"Write CSS to make a sticky add-to-cart button on mobile that's always visible"</li>
                             <li>"Optimize this Shopify section for speed: [paste code]"</li>
                             <li>"Create a schema for a testimonial slider with image, name, text, and rating"</li>
@@ -2575,14 +2575,14 @@
                     </div>
 
                     <div class="info-box success">
-                        <h4>?? Learning Path</h4>
+                        <h4>🎯 Learning Path</h4>
                         <ol style="margin-left: 20px;">
-                            <li>Master theme customizer (no code) � 1 week</li>
-                            <li>Learn basic CSS modifications � 1 week</li>
-                            <li>Understand Liquid basics (objects, tags, filters) � 2 weeks</li>
-                            <li>Build simple custom sections with AI help � ongoing</li>
-                            <li>Learn section schemas � 1 week</li>
-                            <li>Advanced: Custom functionality with JavaScript � 1 month+</li>
+                            <li>Master theme customizer (no code) — 1 week</li>
+                            <li>Learn basic CSS modifications — 1 week</li>
+                            <li>Understand Liquid basics (objects, tags, filters) — 2 weeks</li>
+                            <li>Build simple custom sections with AI help — ongoing</li>
+                            <li>Learn section schemas — 1 week</li>
+                            <li>Advanced: Custom functionality with JavaScript — 1 month+</li>
                         </ol>
                     </div>
                 </section>
@@ -2590,7 +2590,7 @@
                 <!-- KPIs -->
                 <section class="section">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📊</div>
                         <h2>Developer KPIs</h2>
                     </div>
 
@@ -2613,7 +2613,7 @@
                         </div>
                         <div class="kpi-card">
                             <div class="label">Client Satisfaction</div>
-                            <div class="metric">4.9?</div>
+                            <div class="metric">4.9★</div>
                         </div>
                     </div>
                 </section>
@@ -2621,12 +2621,12 @@
                 <!-- CRO Guide -->
                 <section class="section">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📈</div>
                         <h2>Conversion Rate Optimization (CRO) Guide</h2>
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? Your Code MUST Sell</h4>
+                        <h4>🎯 Your Code MUST Sell</h4>
                         <p>A beautiful store that doesn't convert is a failed store. Every development decision should
                             answer:
                             <strong>"Will this help visitors buy?"</strong>
@@ -2638,7 +2638,7 @@
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>??? 1. TRUST</h4>
+                            <h4>🛡️ 1. TRUST</h4>
                             <p><strong>People buy from brands they trust</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Professional design (no amateur vibes)</li>
@@ -2652,7 +2652,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>? 2. URGENCY</h4>
+                            <h4>⚡ 2. URGENCY</h4>
                             <p><strong>Create FOMO (Fear of Missing Out)</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Limited stock indicators ("Only 3 left!")</li>
@@ -2665,7 +2665,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? 3. SOCIAL PROOF</h4>
+                            <h4>👥 3. SOCIAL PROOF</h4>
                             <p><strong>Show others are buying and loving it</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Star ratings on products</li>
@@ -2678,7 +2678,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? 4. VALUE</h4>
+                            <h4>🎁 4. VALUE</h4>
                             <p><strong>Make the deal irresistible</strong></p>
                             <ul class="styled-list check-list">
                                 <li>Free shipping threshold visible</li>
@@ -2691,7 +2691,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>?? 5. EASE</h4>
+                            <h4>🚀 5. EASE</h4>
                             <p><strong>Remove ALL friction from buying</strong></p>
                             <ul class="styled-list check-list">
                                 <li>One-page checkout</li>
@@ -2707,8 +2707,8 @@
                     <h3>Above-The-Fold Conversion Checklist</h3>
 
                     <div class="info-box danger">
-                        <h4>?? Users decide in 3-5 seconds</h4>
-                        <p>If they can't understand what you sell and why they should buy � they leave. Everything
+                        <h4>🚨 Users decide in 3-5 seconds</h4>
+                        <p>If they can't understand what you sell and why they should buy — they leave. Everything
                             important
                             must be visible WITHOUT scrolling.</p>
                     </div>
@@ -2745,7 +2745,7 @@
                             <tr>
                                 <td><strong>Social Proof</strong></td>
                                 <td>Shows others love it</td>
-                                <td>????? "Loved by 2,000+ customers"</td>
+                                <td>⭐⭐⭐⭐⭐ "Loved by 2,000+ customers"</td>
                             </tr>
                         </tbody>
                     </table>
@@ -2756,28 +2756,28 @@
                         <span class="comment">/* PRODUCT PAGE CONVERSION FORMULA */</span><br><br>
 
                         <span class="keyword">ABOVE THE FOLD:</span><br>
-                        +-- High-quality image gallery (3-5 images)<br>
-                        +-- Product title (clear, descriptive)<br>
-                        +-- Price (+ compare-at if on sale)<br>
-                        +-- Star rating + review count<br>
-                        +-- Variant selectors (size, color)<br>
-                        +-- Add to Cart button (PROMINENT)<br>
-                        +-- Trust badges (shipping, returns, secure)<br>
-                        +-- Availability ("In Stock" or urgency)<br><br>
+                        ├── High-quality image gallery (3-5 images)<br>
+                        ├── Product title (clear, descriptive)<br>
+                        ├── Price (+ compare-at if on sale)<br>
+                        ├── Star rating + review count<br>
+                        ├── Variant selectors (size, color)<br>
+                        ├── Add to Cart button (PROMINENT)<br>
+                        ├── Trust badges (shipping, returns, secure)<br>
+                        └── Availability ("In Stock" or urgency)<br><br>
 
                         <span class="keyword">BELOW THE FOLD:</span><br>
-                        +-- Benefits-focused description<br>
-                        +-- Size guide / specifications<br>
-                        +-- Customer reviews with photos<br>
-                        +-- Product FAQ (answer objections)<br>
-                        +-- "You May Also Like" products<br>
-                        +-- Recently viewed products
+                        ├── Benefits-focused description<br>
+                        ├── Size guide / specifications<br>
+                        ├── Customer reviews with photos<br>
+                        ├── Product FAQ (answer objections)<br>
+                        ├── "You May Also Like" products<br>
+                        └── Recently viewed products
                     </div>
 
                     <h3>Mobile Conversion Optimization</h3>
 
                     <div class="info-box info">
-                        <h4>?? 70% of traffic is mobile � optimize or die</h4>
+                        <h4>📱 70% of traffic is mobile — optimize or die</h4>
                         <ul class="styled-list check-list">
                             <li><strong>Sticky Add to Cart:</strong> Always visible on scroll</li>
                             <li><strong>Touch targets:</strong> 44x44px minimum for buttons</li>
@@ -2792,7 +2792,7 @@
 
                     <div class="checklist-grid">
                         <div class="checklist-card">
-                            <h4>? Trust Killers</h4>
+                            <h4>❌ Trust Killers</h4>
                             <ul class="styled-list cross-list">
                                 <li>No contact information</li>
                                 <li>Broken links or images</li>
@@ -2804,7 +2804,7 @@
                         </div>
 
                         <div class="checklist-card">
-                            <h4>? UX Killers</h4>
+                            <h4>❌ UX Killers</h4>
                             <ul class="styled-list cross-list">
                                 <li>Slow page load (>3 seconds)</li>
                                 <li>Confusing navigation</li>
@@ -2851,14 +2851,14 @@
                     </table>
 
                     <div class="info-box success">
-                        <h4>?? CRO Quick Wins (Do These First)</h4>
+                        <h4>🎯 CRO Quick Wins (Do These First)</h4>
                         <ol style="margin-left: 20px;">
-                            <li><strong>Add trust badges</strong> near Add to Cart � instant 5-10% lift</li>
-                            <li><strong>Show free shipping threshold</strong> � increases AOV</li>
-                            <li><strong>Sticky Add to Cart on mobile</strong> � reduces friction</li>
-                            <li><strong>Add customer reviews</strong> � massive trust boost</li>
-                            <li><strong>Improve page speed</strong> � 1 second faster = 7% more conversions</li>
-                            <li><strong>Clear product images</strong> � show product in use</li>
+                            <li><strong>Add trust badges</strong> near Add to Cart — instant 5-10% lift</li>
+                            <li><strong>Show free shipping threshold</strong> — increases AOV</li>
+                            <li><strong>Sticky Add to Cart on mobile</strong> — reduces friction</li>
+                            <li><strong>Add customer reviews</strong> — massive trust boost</li>
+                            <li><strong>Improve page speed</strong> — 1 second faster = 7% more conversions</li>
+                            <li><strong>Clear product images</strong> — show product in use</li>
                         </ol>
                     </div>
                 </section>
@@ -2866,53 +2866,53 @@
                 <!-- Troubleshooting Common Issues -->
                 <section class="section" id="troubleshooting">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🔧</div>
                         <h2>Troubleshooting Common Issues</h2>
                     </div>
 
-                    <h3>?? Website Performance Debugging Flowchart</h3>
+                    <h3>🔄 Website Performance Debugging Flowchart</h3>
 
                     <div class="info-box"
                         style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%); border-left: 5px solid #C62828;">
-                        <h4>?? Decision Flow: Site is Slow</h4>
+                        <h4>📊 Decision Flow: Site is Slow</h4>
                         <div
                             style="font-family: monospace; background: white; padding: 20px; border-radius: 10px; margin-top: 15px; line-height: 2;">
                             <strong>Client reports slow website</strong><br>
-                            �<br>
-                            +-? <strong>Step 1:</strong> Run PageSpeed Insights<br>
-                            � +-? Score &gt;80 ? <span style="color: #2E7D32;"><strong>ACCEPTABLE</strong></span> (minor
+                            │<br>
+                            ├─► <strong>Step 1:</strong> Run PageSpeed Insights<br>
+                            │ ├─► Score &gt;80 → <span style="color: #2E7D32;"><strong>ACCEPTABLE</strong></span> (minor
                             tweaks
                             only)<br>
-                            � +-? Score 50-80 ? <span style="color: #E65100;"><strong>OPTIMIZE</strong></span> (images,
+                            │ ├─► Score 50-80 → <span style="color: #E65100;"><strong>OPTIMIZE</strong></span> (images,
                             scripts)<br>
-                            � +-? Score &lt;50 ? <span style="color: #C62828;"><strong>CRITICAL</strong></span> (major
+                            │ └─► Score &lt;50 → <span style="color: #C62828;"><strong>CRITICAL</strong></span> (major
                             work
                             needed)<br>
-                            �<br>
-                            +-? <strong>Step 2:</strong> Identify main culprit<br>
-                            � +-? LCP high? ? Hero image or above-fold content issue<br>
-                            � +-? TBT high? ? Too much JavaScript<br>
-                            � +-? CLS high? ? Images without dimensions<br>
-                            � +-? Server slow? ? Hosting/caching issue<br>
-                            �<br>
-                            +-? <strong>Step 3:</strong> Apply fixes in order<br>
-                            � +-? 1. Compress images ? TinyPNG, WebP format<br>
-                            � +-? 2. Lazy load below-fold images<br>
-                            � +-? 3. Defer non-critical JS (add defer attribute)<br>
-                            � +-? 4. Remove unused apps/scripts<br>
-                            � +-? 5. Enable caching if not on<br>
-                            �<br>
-                            +-? <strong>Step 4:</strong> Retest after EACH change<br>
-                            +-? Improved? ? Document what worked<br>
-                            +-? No change? ? Try next fix in list
+                            │<br>
+                            ├─► <strong>Step 2:</strong> Identify main culprit<br>
+                            │ ├─► LCP high? → Hero image or above-fold content issue<br>
+                            │ ├─► TBT high? → Too much JavaScript<br>
+                            │ ├─► CLS high? → Images without dimensions<br>
+                            │ └─► Server slow? → Hosting/caching issue<br>
+                            │<br>
+                            ├─► <strong>Step 3:</strong> Apply fixes in order<br>
+                            │ ├─► 1. Compress images → TinyPNG, WebP format<br>
+                            │ ├─► 2. Lazy load below-fold images<br>
+                            │ ├─► 3. Defer non-critical JS (add defer attribute)<br>
+                            │ ├─► 4. Remove unused apps/scripts<br>
+                            │ └─► 5. Enable caching if not on<br>
+                            │<br>
+                            └─► <strong>Step 4:</strong> Retest after EACH change<br>
+                            ├─► Improved? → Document what worked<br>
+                            └─► No change? → Try next fix in list
                         </div>
                     </div>
 
-                    <h3>??? Technology Decision Guide</h3>
+                    <h3>🛠️ Technology Decision Guide</h3>
 
                     <div class="info-box"
                         style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-left: 5px solid #2E7D32;">
-                        <h4>?? Which Platform for This Project?</h4>
+                        <h4>📊 Which Platform for This Project?</h4>
                         <table class="styled-table" style="margin-top: 15px;">
                             <thead>
                                 <tr>
@@ -2957,18 +2957,18 @@
                     </div>
 
                     <div class="info-box warning">
-                        <h4>?? Platform Red Flags</h4>
+                        <h4>⚠️ Platform Red Flags</h4>
                         <ul class="styled-list cross-list">
-                            <li><strong>Client wants Shopify for a booking site</strong> ? Recommend better tools
+                            <li><strong>Client wants Shopify for a booking site</strong> → Recommend better tools
                                 (Calendly,
                                 Square)</li>
-                            <li><strong>Client wants WordPress for complex e-commerce</strong> ? WooCommerce has limits,
+                            <li><strong>Client wants WordPress for complex e-commerce</strong> → WooCommerce has limits,
                                 discuss
                             </li>
-                            <li><strong>Client wants custom code for simple landing page</strong> ? Overkill, suggest
+                            <li><strong>Client wants custom code for simple landing page</strong> → Overkill, suggest
                                 Webflow
                             </li>
-                            <li><strong>Client insists on Wix/Squarespace</strong> ? We don't work with those, politely
+                            <li><strong>Client insists on Wix/Squarespace</strong> → We don't work with those, politely
                                 decline
                             </li>
                         </ul>
@@ -3045,7 +3045,7 @@
                     <h3>Common Shopify Issues</h3>
 
                     <div class="info-box warning">
-                        <h4>?? Issue: Section Not Showing in Customizer</h4>
+                        <h4>⚠️ Issue: Section Not Showing in Customizer</h4>
                         <p><strong>Cause:</strong> Schema syntax error or missing presets</p>
                         <p><strong>Fix:</strong></p>
                         <ol style="margin-left: 20px;">
@@ -3056,22 +3056,22 @@
                     </div>
 
                     <div class="info-box warning">
-                        <h4>?? Issue: Checkout Page Not Styled</h4>
+                        <h4>⚠️ Issue: Checkout Page Not Styled</h4>
                         <p><strong>Cause:</strong> Checkout customization is limited on Shopify Basic/Standard</p>
                         <p><strong>Fix:</strong></p>
                         <ol style="margin-left: 20px;">
-                            <li>Use Settings ? Checkout to set logo, colors</li>
+                            <li>Use Settings → Checkout to set logo, colors</li>
                             <li>Full checkout.liquid editing requires Shopify Plus</li>
                             <li>Recommend apps like Checkout X for more customization</li>
                         </ol>
                     </div>
 
                     <div class="info-box warning">
-                        <h4>?? Issue: Products Not Showing in Collection</h4>
+                        <h4>⚠️ Issue: Products Not Showing in Collection</h4>
                         <p><strong>Cause:</strong> Product not added to collection or not published</p>
                         <p><strong>Fix:</strong></p>
                         <ol style="margin-left: 20px;">
-                            <li>Check Products ? [Product] ? Organization ? Collections</li>
+                            <li>Check Products → [Product] → Organization → Collections</li>
                             <li>Verify product status is Active, not Draft</li>
                             <li>Check collection's smart/manual conditions</li>
                         </ol>
@@ -3105,7 +3105,7 @@
                     <h3>When to Escalate</h3>
 
                     <div class="info-box danger">
-                        <h4>?? Escalate to Senior Developer If:</h4>
+                        <h4>🚨 Escalate to Senior Developer If:</h4>
                         <ul class="styled-list cross-list">
                             <li>Console error you don't understand after 15 minutes of debugging</li>
                             <li>Client's existing store has custom app integrations</li>
@@ -3120,12 +3120,12 @@
                 <!-- ChatGPT Prompts for Developers -->
                 <section class="section" id="chatgpt">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🤖</div>
                         <h2>ChatGPT Prompts for Developers</h2>
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? Use AI to Speed Up Development</h4>
+                        <h4>💡 Use AI to Speed Up Development</h4>
                         <p>Use these prompts to debug issues, write code faster, and improve your Shopify development
                             workflow.</p>
                     </div>
@@ -3133,7 +3133,7 @@
                     <h3>Debugging & Problem Solving</h3>
 
                     <div class="template-box">
-                        <div class="template-header">?? Prompt: Debug Shopify/Liquid Error</div>
+                        <div class="template-header">🤖 Prompt: Debug Shopify/Liquid Error</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I'm getting this error in my Shopify store:<br><br>
                             Error message: [Paste exact error]<br>
@@ -3149,7 +3149,7 @@
                     </div>
 
                     <div class="template-box" style="margin-top: 20px;">
-                        <div class="template-header">?? Prompt: Optimize PageSpeed</div>
+                        <div class="template-header">🤖 Prompt: Optimize PageSpeed</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             My Shopify store has these PageSpeed issues:<br><br>
                             Current score: [Desktop and Mobile scores]<br>
@@ -3168,7 +3168,7 @@
                     <h3>Code Generation</h3>
 
                     <div class="template-box">
-                        <div class="template-header">?? Prompt: Write Liquid Code</div>
+                        <div class="template-header">🤖 Prompt: Write Liquid Code</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I need Shopify Liquid code to: [Describe what you want]<br><br>
                             Where it will go: [Section name or file]<br>
@@ -3184,7 +3184,7 @@
                     </div>
 
                     <div class="template-box" style="margin-top: 20px;">
-                        <div class="template-header">?? Prompt: Create Custom Section</div>
+                        <div class="template-header">🤖 Prompt: Create Custom Section</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I need a custom Shopify section for:<br><br>
                             Purpose: [What the section does]<br>
@@ -3203,7 +3203,7 @@
                     <h3>Code Review & Improvement</h3>
 
                     <div class="template-box">
-                        <div class="template-header">?? Prompt: Review My Code</div>
+                        <div class="template-header">🤖 Prompt: Review My Code</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             Review this Shopify code and suggest improvements:<br><br>
                             [Paste your code here]<br><br>
@@ -3219,7 +3219,7 @@
                     </div>
 
                     <div class="template-box" style="margin-top: 20px;">
-                        <div class="template-header">?? Prompt: Explain Code</div>
+                        <div class="template-header">🤖 Prompt: Explain Code</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I found this code in a theme but don't understand it:<br><br>
                             [Paste the code]<br><br>
@@ -3233,14 +3233,14 @@
                     </div>
 
                     <div class="info-box success" style="margin-top: 25px;">
-                        <h4>? Pro Tips for Developer ChatGPT Use</h4>
+                        <h4>✅ Pro Tips for Developer ChatGPT Use</h4>
                         <ul class="styled-list check-list">
-                            <li><strong>Specify Shopify version</strong> � Mention if using 2.0 or legacy themes</li>
-                            <li><strong>Include context</strong> � Paste surrounding code, not just the problem line
+                            <li><strong>Specify Shopify version</strong> — Mention if using 2.0 or legacy themes</li>
+                            <li><strong>Include context</strong> — Paste surrounding code, not just the problem line
                             </li>
-                            <li><strong>Test before deploying</strong> � Always test AI-generated code thoroughly</li>
-                            <li><strong>Learn from fixes</strong> � Ask why the solution works</li>
-                            <li><strong>Build a snippet library</strong> � Save working solutions for reuse</li>
+                            <li><strong>Test before deploying</strong> — Always test AI-generated code thoroughly</li>
+                            <li><strong>Learn from fixes</strong> — Ask why the solution works</li>
+                            <li><strong>Build a snippet library</strong> — Save working solutions for reuse</li>
                         </ul>
                     </div>
                 </section>
@@ -3248,12 +3248,12 @@
                 <!-- Debugging Decision Tree -->
                 <section class="section" id="debugging">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🔍</div>
                         <h2>Debugging Decision Tree</h2>
                     </div>
 
                     <div class="info-box gold">
-                        <h4>?? Systematic Debugging Saves Hours</h4>
+                        <h4>💡 Systematic Debugging Saves Hours</h4>
                         <p>Before asking for help, follow this flowchart. 80% of issues are solved in the first 3 steps.
                         </p>
                     </div>
@@ -3271,7 +3271,7 @@
                         <tbody>
                             <tr>
                                 <td><strong>1. Console Check</strong></td>
-                                <td>Open browser DevTools ? Console tab</td>
+                                <td>Open browser DevTools → Console tab</td>
                                 <td>Red errors point to the exact line number</td>
                             </tr>
                             <tr>
@@ -3310,7 +3310,7 @@
                     <h3>Common Error Messages & Fixes</h3>
 
                     <div class="template-box" style="margin-top: 20px;">
-                        <div class="template-header">?? Liquid Error Translations</div>
+                        <div class="template-header">🚨 Liquid Error Translations</div>
                         <table class="styled-table" style="margin-top: 15px;">
                             <thead>
                                 <tr>
@@ -3353,12 +3353,12 @@
                 <!-- Code Snippets Library -->
                 <section class="section" id="snippets">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📝</div>
                         <h2>Reusable Code Snippets</h2>
                     </div>
 
                     <div class="info-box info">
-                        <h4>?? Copy-Paste Ready Code</h4>
+                        <h4>📋 Copy-Paste Ready Code</h4>
                         <p>These snippets are tested and optimized. Copy them directly into your projects.</p>
                     </div>
 
@@ -3423,7 +3423,7 @@
                     </div>
 
                     <div class="info-box success" style="margin-top: 25px;">
-                        <h4>? Snippet Best Practices</h4>
+                        <h4>✅ Snippet Best Practices</h4>
                         <ul class="styled-list check-list">
                             <li>Always add <code>{% if %}</code> checks before accessing objects</li>
                             <li>Use <code>| default: 'value'</code> for fallback values</li>
@@ -3437,12 +3437,12 @@
                 <!-- Developer Tools & Resources -->
                 <section class="section" id="dev-tools">
                     <div class="section-header">
-                        <div class="section-number">???</div>
+                        <div class="section-number">🛠️</div>
                         <h2>Developer Tools & Hacks</h2>
                     </div>
 
                     <div class="info-box success">
-                        <h4>? Work Smarter, Not Harder</h4>
+                        <h4>✅ Work Smarter, Not Harder</h4>
                         <p>These tools give you an edge. Know them, use them, deliver faster and better than the
                             competition.</p>
                     </div>
@@ -3528,7 +3528,7 @@
                     <h3>Productivity Hacks</h3>
 
                     <div class="info-box gold" style="margin-top: 20px;">
-                        <h4>?? Time-Saving Shortcuts</h4>
+                        <h4>💡 Time-Saving Shortcuts</h4>
                         <ul class="styled-list check-list">
                             <li><strong>Emmet:</strong> Type `div.class>ul>li*5` and hit Tab for instant HTML</li>
                             <li><strong>Multi-cursor:</strong> Ctrl+D to select multiple instances, edit all at once
@@ -3575,7 +3575,7 @@
                     </table>
 
                     <div class="info-box danger" style="margin-top: 25px;">
-                        <h4>?? Avoid These Common Mistakes</h4>
+                        <h4>🚨 Avoid These Common Mistakes</h4>
                         <ul class="styled-list cross-list">
                             <li>Editing live theme files directly (always use duplicate/dev theme)</li>
                             <li>Not testing on mobile (60%+ of traffic is mobile)</li>
@@ -3589,16 +3589,16 @@
                 <!-- Day-to-Day Quick Reference -->
                 <section class="section" id="daily-reference">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">📋</div>
                         <h2>Day-to-Day Quick Reference</h2>
                     </div>
 
                     <div class="info-box info">
-                        <h4>?? Quick Fixes for Common Issues</h4>
+                        <h4>🔧 Quick Fixes for Common Issues</h4>
                         <p>These are problems you'll face almost every day. Know them by heart.</p>
                     </div>
 
-                    <h3>??? Image Issues</h3>
+                    <h3>🖼️ Image Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3636,7 +3636,7 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Text & Content Issues</h3>
+                    <h3>📝 Text & Content Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3649,7 +3649,7 @@
                             <tr>
                                 <td><strong>Font not showing</strong></td>
                                 <td>Font not loaded or wrong name</td>
-                                <td>Check theme settings ? Typography. Verify Google Font name is exact.</td>
+                                <td>Check theme settings → Typography. Verify Google Font name is exact.</td>
                             </tr>
                             <tr>
                                 <td><strong>Text overlapping on mobile</strong></td>
@@ -3664,7 +3664,7 @@
                             <tr>
                                 <td><strong>Currency showing wrong</strong></td>
                                 <td>Store settings or wrong filter</td>
-                                <td>Settings ? General ? Currency. Use {{ price | money }} filter.</td>
+                                <td>Settings → General → Currency. Use {{ price | money }} filter.</td>
                             </tr>
                             <tr>
                                 <td><strong>Product title cut off</strong></td>
@@ -3674,7 +3674,7 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Cart & Checkout Issues</h3>
+                    <h3>🛒 Cart & Checkout Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3697,22 +3697,22 @@
                             <tr>
                                 <td><strong>Checkout button missing</strong></td>
                                 <td>Checkout disabled or payment not set</td>
-                                <td>Settings ? Payments. Ensure at least one payment method active.</td>
+                                <td>Settings → Payments. Ensure at least one payment method active.</td>
                             </tr>
                             <tr>
                                 <td><strong>Discount code not applying</strong></td>
                                 <td>Code expired or restrictions</td>
-                                <td>Check Discounts ? verify dates, minimum order, customer eligibility.</td>
+                                <td>Check Discounts → verify dates, minimum order, customer eligibility.</td>
                             </tr>
                             <tr>
                                 <td><strong>Shipping not calculating</strong></td>
                                 <td>Shipping zones not set</td>
-                                <td>Settings ? Shipping ? Add rates for customer's country.</td>
+                                <td>Settings → Shipping → Add rates for customer's country.</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <h3>? Performance Issues</h3>
+                    <h3>⚡ Performance Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3751,7 +3751,7 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Mobile-Specific Issues</h3>
+                    <h3>📱 Mobile-Specific Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3774,7 +3774,7 @@
                             <tr>
                                 <td><strong>Buttons too small to tap</strong></td>
                                 <td>Touch target under 44px</td>
-                                <td>Minimum button size: 44px � 44px. Add padding if needed.</td>
+                                <td>Minimum button size: 44px × 44px. Add padding if needed.</td>
                             </tr>
                             <tr>
                                 <td><strong>Menu not opening on mobile</strong></td>
@@ -3789,7 +3789,7 @@
                         </tbody>
                     </table>
 
-                    <h3>?? App Conflicts & Issues</h3>
+                    <h3>🔌 App Conflicts & Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3802,7 +3802,7 @@
                             <tr>
                                 <td><strong>App widget not showing</strong></td>
                                 <td>App block not added or disabled</td>
-                                <td>Theme editor ? Add app block. Or manually add app embed code.</td>
+                                <td>Theme editor → Add app block. Or manually add app embed code.</td>
                             </tr>
                             <tr>
                                 <td><strong>Two apps conflicting</strong></td>
@@ -3827,7 +3827,7 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Theme Editor Issues</h3>
+                    <h3>🎨 Theme Editor Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3865,7 +3865,7 @@
                         </tbody>
                     </table>
 
-                    <h3>?? Product & Collection Issues</h3>
+                    <h3>📦 Product & Collection Issues</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -3883,7 +3883,7 @@
                             <tr>
                                 <td><strong>Variants not showing</strong></td>
                                 <td>Variant options not set up</td>
-                                <td>Products ? Edit ? Add variant options (Size, Color, etc.).</td>
+                                <td>Products → Edit → Add variant options (Size, Color, etc.).</td>
                             </tr>
                             <tr>
                                 <td><strong>"Sold Out" showing incorrectly</strong></td>
@@ -3893,34 +3893,34 @@
                             <tr>
                                 <td><strong>Collection image not showing</strong></td>
                                 <td>No featured image set</td>
-                                <td>Collections ? Edit ? Add collection image.</td>
+                                <td>Collections → Edit → Add collection image.</td>
                             </tr>
                             <tr>
                                 <td><strong>Products in wrong order</strong></td>
                                 <td>Sort order not set</td>
-                                <td>Collection ? Sort ? Choose manual or automated sorting.</td>
+                                <td>Collection → Sort → Choose manual or automated sorting.</td>
                             </tr>
                         </tbody>
                     </table>
 
                     <div class="info-box gold" style="margin-top: 30px;">
-                        <h4>? Emergency Commands You Should Know</h4>
+                        <h4>⚡ Emergency Commands You Should Know</h4>
                         <ul class="styled-list">
-                            <li><strong>Revert theme changes:</strong> Online Store ? Themes ? Actions ? View theme
+                            <li><strong>Revert theme changes:</strong> Online Store → Themes → Actions → View theme
                                 versions
                             </li>
-                            <li><strong>Disable password protection:</strong> Online Store ? Preferences ? Password
+                            <li><strong>Disable password protection:</strong> Online Store → Preferences → Password
                                 protection</li>
                             <li><strong>Check site status:</strong> Visit yourstore.myshopify.com/admin/online_store
                             </li>
                             <li><strong>Find broken pages:</strong> Check browser console (F12) for 404 errors</li>
-                            <li><strong>Quick site backup:</strong> Themes ? Download theme file before major changes
+                            <li><strong>Quick site backup:</strong> Themes → Download theme file before major changes
                             </li>
                         </ul>
                     </div>
 
                     <div class="info-box success" style="margin-top: 20px;">
-                        <h4>? Daily Checklist Before Ending Work</h4>
+                        <h4>✅ Daily Checklist Before Ending Work</h4>
                         <ul class="styled-list check-list">
                             <li>All changes tested on mobile (375px width)</li>
                             <li>Browser console has no errors</li>
@@ -3935,33 +3935,33 @@
                 <!-- Difficult Situations Section -->
                 <section class="section" id="difficult-situations">
                     <div class="section-header">
-                        <div class="section-number">??</div>
+                        <div class="section-number">⚠️</div>
                         <h2>Handling Difficult Situations</h2>
                     </div>
 
-                    <h3>?? Client's Theme is Heavily Customized/Broken</h3>
+                    <h3>🔴 Client's Theme is Heavily Customized/Broken</h3>
 
-                    <h3>?? Task Priority Order (What Comes First)</h3>
+                    <h3>🎯 Task Priority Order (What Comes First)</h3>
                     <div class="info-box success" style="margin-bottom: 30px;">
                         <p><strong>Handle in this order every day:</strong></p>
                         <ol style="margin-top: 15px; line-height: 2;">
-                            <li><strong>?? P0 - Production Bugs/Site Down</strong> ? Live site issues are IMMEDIATE.
+                            <li><strong>🔴 P0 - Production Bugs/Site Down</strong> → Live site issues are IMMEDIATE.
                                 Drop
                                 everything.</li>
-                            <li><strong>?? P0 - Security Issues</strong> ? Any vulnerability or breach. Fix first,
+                            <li><strong>🔴 P0 - Security Issues</strong> → Any vulnerability or breach. Fix first,
                                 explain
                                 later.</li>
-                            <li><strong>?? P0 - Deadline-Day Tasks</strong> ? Work due TODAY must be completed and
+                            <li><strong>🔴 P0 - Deadline-Day Tasks</strong> → Work due TODAY must be completed and
                                 handed
                                 off.</li>
-                            <li><strong>?? P1 - PM/Client Questions</strong> ? Respond within 1 hour. Don't leave them
+                            <li><strong>🟡 P1 - PM/Client Questions</strong> → Respond within 1 hour. Don't leave them
                                 waiting.</li>
-                            <li><strong>?? P1 - Active Project Work</strong> ? Tasks with upcoming deadlines (next 2-3
+                            <li><strong>🟡 P1 - Active Project Work</strong> → Tasks with upcoming deadlines (next 2-3
                                 days).</li>
-                            <li><strong>?? P2 - Code Reviews</strong> ? Don't block teammates waiting for your review.
+                            <li><strong>🟢 P2 - Code Reviews</strong> → Don't block teammates waiting for your review.
                             </li>
-                            <li><strong>?? P2 - Testing & QA</strong> ? Test your own work before handoff.</li>
-                            <li><strong>? P3 - Learning & Optimization</strong> ? Non-urgent improvements, skill
+                            <li><strong>🟢 P2 - Testing & QA</strong> → Test your own work before handoff.</li>
+                            <li><strong>⚪ P3 - Learning & Optimization</strong> → Non-urgent improvements, skill
                                 building.
                             </li>
                         </ol>
@@ -3969,7 +3969,7 @@
                             Communication > Deep work.</p>
                     </div>
 
-                    <h3 id="broken-theme">?? Client's Theme is Heavily Customized/Broken</h3>
+                    <h3 id="broken-theme">🔴 Client's Theme is Heavily Customized/Broken</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Previous developer left messy code, theme is unstable.</p>
                         <p><strong>Response:</strong> Document issues found, inform PM of risks. Recommend cleanup
@@ -3980,7 +3980,7 @@
                         </p>
                     </div>
 
-                    <h3 id="impossible-feature">?? Feature Request is Technically Impossible</h3>
+                    <h3 id="impossible-feature">🔴 Feature Request is Technically Impossible</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Client wants something Shopify can't do (e.g., real-time
                             inventory
@@ -3990,7 +3990,7 @@
                         <p><strong>Rule:</strong> Always provide alternatives. Never just say "can't be done."</p>
                     </div>
 
-                    <h3 id="bad-assets">?? Client Provides Wrong/Incomplete Assets</h3>
+                    <h3 id="bad-assets">🔴 Client Provides Wrong/Incomplete Assets</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Images are low-res, logos are JPG not SVG, files are missing.</p>
                         <p><strong>Response:</strong> Create a specific asset checklist: "Please provide: Logo in SVG
@@ -3999,7 +3999,7 @@
                             received.</p>
                     </div>
 
-                    <h3 id="production-bug">?? Changes Broke Something in Production</h3>
+                    <h3 id="production-bug">🔴 Changes Broke Something in Production</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> After deploying, something stopped working on the live site.</p>
                         <p><strong>Response:</strong> Immediately revert to backup/previous version. Document what
@@ -4010,7 +4010,7 @@
                         </p>
                     </div>
 
-                    <h3 id="endless-revisions">?? Client Wants Unlimited Revisions</h3>
+                    <h3 id="endless-revisions">🔴 Client Wants Unlimited Revisions</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client keeps requesting "one more small change" endlessly.</p>
                         <p><strong>Response:</strong> Route to PM: "This is outside our agreed scope. PM will discuss
@@ -4019,7 +4019,7 @@
                         </p>
                     </div>
 
-                    <h3 id="app-conflict">?? Third-Party App Causing Conflicts</h3>
+                    <h3 id="app-conflict">🔴 Third-Party App Causing Conflicts</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client's installed app is breaking your custom code.</p>
                         <p><strong>Response:</strong> Document the conflict with screenshots. Recommend removing the
@@ -4027,7 +4027,7 @@
                         <p><strong>Rule:</strong> We don't support fixing other developers' or apps' broken code.</p>
                     </div>
 
-                    <h3 id="client-editing">?? Client Editing Theme and Breaking Things</h3>
+                    <h3 id="client-editing">🔴 Client Editing Theme and Breaking Things</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Client made changes in theme editor that broke your work.</p>
                         <p><strong>Response:</strong> "I see changes were made to the theme since our last delivery.
@@ -4039,7 +4039,7 @@
                             free.</p>
                     </div>
 
-                    <h3 id="slow-speed">?? Site Speed Still Slow After Optimization</h3>
+                    <h3 id="slow-speed">🔴 Site Speed Still Slow After Optimization</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client unhappy with speed even after your optimization.</p>
                         <p><strong>Response:</strong> "We've optimized all code within our scope. The remaining issues
@@ -4058,22 +4058,22 @@
                 <section class="section" id="inspiration"
                     style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 20px; color: white; padding: 40px;">
                     <div class="section-header" style="border-bottom-color: rgba(255,255,255,0.2);">
-                        <div class="section-number">??</div>
+                        <div class="section-number">🌟</div>
                         <h2 style="color: white;">Your Daily Inspiration</h2>
                     </div>
 
                     <div style="text-align: center; padding: 30px 0;">
-                        <div style="font-size: 48px; margin-bottom: 20px;">??</div>
+                        <div style="font-size: 48px; margin-bottom: 20px;">💻</div>
                         <blockquote
                             style="font-size: 24px; font-style: italic; color: #34D399; margin-bottom: 20px; line-height: 1.6;">
                             "Every line of code you write powers someone's livelihood. Behind every store is a family, a
                             dream, a future. Code with purpose."
                         </blockquote>
-                        <p style="color: #9CA3AF;">� Digital Heroes Philosophy</p>
+                        <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
                     </div>
 
                     <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                        <h3 style="color: #34D399; margin-bottom: 15px;">?? Success Story: The 3-Second Fix Worth
+                        <h3 style="color: #34D399; margin-bottom: 15px;">📖 Success Story: The 3-Second Fix Worth
                             $50,000
                         </h3>
                         <p style="color: #E5E7EB; line-height: 1.8;">
@@ -4090,9 +4090,9 @@
                             rate
                             doubled. The client made an extra <strong style="color: #FCD34D;">$50,000 that
                                 quarter</strong>
-                            � from a single optimization project.
+                            — from a single optimization project.
                             <br><br>
-                            <em>The lesson: Technical excellence isn't abstract � it's someone's rent payment, their
+                            <em>The lesson: Technical excellence isn't abstract — it's someone's rent payment, their
                                 kid's
                                 college fund, their retirement. Your work matters.</em>
                         </p>
@@ -4102,28 +4102,28 @@
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
                         <div
                             style="background: rgba(52, 211, 153, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                            <div style="font-size: 32px; margin-bottom: 10px;">??</div>
+                            <div style="font-size: 32px; margin-bottom: 10px;">🚀</div>
                             <p style="color: #6EE7B7; font-weight: 600;">"Fast code isn't a flex. It's a
                                 responsibility."
                             </p>
                         </div>
                         <div
                             style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                            <div style="font-size: 32px; margin-bottom: 10px;">??</div>
+                            <div style="font-size: 32px; margin-bottom: 10px;">🧠</div>
                             <p style="color: #93C5FD; font-weight: 600;">"The best developers aren't the fastest coders
-                                �
+                                —
                                 they're the best problem solvers."</p>
                         </div>
                         <div
                             style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
-                            <div style="font-size: 32px; margin-bottom: 10px;">?</div>
+                            <div style="font-size: 32px; margin-bottom: 10px;">✨</div>
                             <p style="color: #FDE68A; font-weight: 600;">"Your code doesn't just work. It SELLS."</p>
                         </div>
                     </div>
 
                     <div
                         style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
-                        <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">?? Start Each Day With This:
+                        <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
                         </p>
                         <p style="font-size: 20px; color: #34D399; font-weight: 600;">"Today, I write code that changes
                             lives. Every optimization, every fix, every feature makes a difference."</p>
@@ -4149,7 +4149,7 @@
     <div id="content-assets" class="view-section hidden" style="margin-left: 320px;">
         <div class="container">
             <div class="header">
-                <div style="font-size: 64px; margin-bottom: 20px;">??</div>
+                <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
                 <h1>Developer Assets & Training Library</h1>
                 <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
                     training, scripts, and resources to help you master your role.</p>
@@ -4157,7 +4157,7 @@
 
             <div id="videos" class="section-title"
                 style="border-left: 4px solid #3B82F6; padding-left: 15px; margin-bottom: 30px;">
-                <h2 style="margin: 0; color: #1E3A5F;">?? Video Training</h2>
+                <h2 style="margin: 0; color: #1E3A5F;">📹 Video Training</h2>
             </div>
 
             <div class="video-grid">
@@ -4210,13 +4210,13 @@
 
             <div id="resources" class="section-title"
                 style="border-left: 4px solid #10B981; padding-left: 15px; margin: 60px 0 30px 0;">
-                <h2 style="margin: 0; color: #1E3A5F;">?? Downloadable Resources</h2>
+                <h2 style="margin: 0; color: #1E3A5F;">📄 Downloadable Resources</h2>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
                 <a href="#"
                     style="background: white; padding: 25px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: #1E3A5F; border: 1px solid #E2E8F0; transition: all 0.2s; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                    <span style="font-size: 2em; margin-right: 15px;">??</span>
+                    <span style="font-size: 2em; margin-right: 15px;">💻</span>
                     <div>
                         <strong style="display: block; font-size: 1.1em;">VS Code Setup Guide</strong>
                         <span style="color: #64748B; font-size: 0.9em;">Extensions and settings for Shopify</span>
@@ -4224,7 +4224,7 @@
                 </a>
                 <a href="#"
                     style="background: white; padding: 25px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: #1E3A5F; border: 1px solid #E2E8F0; transition: all 0.2s; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                    <span style="font-size: 2em; margin-right: 15px;">??</span>
+                    <span style="font-size: 2em; margin-right: 15px;">📑</span>
                     <div>
                         <strong style="display: block; font-size: 1.1em;">Code Review Checklist</strong>
                         <span style="color: #9CA3AF; font-size: 0.9em;">Standard for all PRs</span>
@@ -4238,7 +4238,7 @@
     <div id="content-onboarding" class="view-section hidden" style="margin-left: 320px;">
         <div class="container">
             <div class="header">
-                <div style="font-size: 64px; margin-bottom: 20px;">??</div>
+                <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
                 <h1>Your Onboarding Journey</h1>
                 <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
                     to become a certified Shopify Developer.</p>
@@ -4253,7 +4253,7 @@
                         1</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">?? Master the SOP</h3>
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
                             understand, and internalize the Standard Operating Procedure. This document provides the
                             coding standards and workflows.</p>
@@ -4270,7 +4270,7 @@
                         2</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">?? Watch Training Videos</h3>
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
                             watch the required training videos. These will give you visual context to the written SOPs.
                         </p>
@@ -4287,15 +4287,15 @@
                         3</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">?? Pass the Knowledge Test
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
                         </h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by
                             taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
                         <p
                             style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
-                            ?? <strong>How to take the test:</strong> Switch back to the <a href="#"
+                            ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
                                 onclick="switchView('sop'); return false;" style="color: #3B82F6;">Developer SOP</a>
-                            view and click the "?? Test" button in the sidebar.
+                            view and click the "🎓 Test" button in the sidebar.
                         </p>
                     </div>
                 </div>
@@ -4307,7 +4307,7 @@
                         4</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">??? The 30-Minute Recording
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording
                             Task</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
                             verification. Record a <strong>30-minute screen sharing video</strong> walking us through
@@ -4325,7 +4325,7 @@
 
                         <div class="success-box"
                             style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                            <strong style="color: #059669; display: block; margin-bottom: 10px;">?? Example
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
                                 Submission</strong>
                             <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
                                 nailed this task:</p>
