@@ -230,6 +230,54 @@ const task1Content = `
         <p>Check 10 times before giving to client - each line, each design element.</p>
     </div>
 </div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: Developer Foundations</h2>
+    <div class="highlight-box">
+        <strong>📺 MANDATORY VIEWING: Complete Before Proceeding</strong>
+        <p>These foundational videos will be evaluated during your final certification. Complete all videos and implementation tasks. <strong>Estimated time: 4-5 hours.</strong></p>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ WHY THIS MATTERS</strong>
+        <p>Understanding Shopify fundamentals is the difference between a developer who struggles with every task and one who delivers with confidence. Without this foundation, you'll spend hours debugging issues that should take minutes. These videos give you the complete picture that will make everything else easier.</p>
+    </div>
+    
+    <h3>📚 1. Shopify Tutorial for Beginners 2026 – Complete Guide</h3>
+    <p><strong>What you'll learn:</strong> Full start-to-finish walkthrough for building a Shopify store — the best overall foundational video for new builders. This comprehensive guide covers everything from account creation to your first sale.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/YtbaxJFb9zE" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 2. Shopify Tutorial for Beginners 2025 (Full Setup)</h3>
+    <p><strong>What you'll learn:</strong> Step-by-step tutorial focused on store setup from scratch, including navigation, theme configuration, essential pages, and product management. Perfect for understanding the admin panel deeply.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/fO7bb5Dfukk" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+        <strong>✅ IMPLEMENTATION TASK (Required for Certification)</strong>
+        <p style="margin-bottom: 15px;"><strong>Your senior developer will evaluate this during your final review:</strong></p>
+        <ol>
+            <li>Create a Shopify Partner account (free at partners.shopify.com)</li>
+            <li>Create a development store</li>
+            <li>Install the Dawn theme and <strong>duplicate it immediately</strong> (NEVER work on original)</li>
+            <li>Navigate through every section of the Shopify admin panel</li>
+            <li>Find 5 trending products from AliExpress or Zendrop</li>
+            <li>Add products with proper images, titles, and descriptions</li>
+            <li>Set currency to USD (NOT INR) for all US client stores</li>
+            <li>Run a PageSpeed test and screenshot your baseline score</li>
+            <li>Record time taken — target: under 3 hours for complete setup</li>
+        </ol>
+        <p style="margin-top: 15px; font-style: italic;">📸 Take screenshots of each step. You will need these for your certification portfolio.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -304,6 +352,63 @@ const task2Content = `
         <li><strong>Logo & Favicon:</strong> PNG with transparency, 200-400px wide</li>
     </ol>
 </div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: Theme Customization & Pages</h2>
+    <div class="highlight-box">
+        <strong>📺 MANDATORY VIEWING: Master the Theme Editor</strong>
+        <p>The theme editor is where you'll spend 70% of your development time. These videos will be evaluated during certification. <strong>Estimated time: 3-4 hours.</strong></p>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ WHY THIS MATTERS</strong>
+        <p>The theme customizer is your primary tool for delivering client work. Clients pay for beautiful, functional stores — and this is where you build them. A developer who doesn't know the theme editor inside-out cannot deliver professional results. Every minute spent here saves hours later.</p>
+    </div>
+    
+    <h3>📚 3. Shopify Theme Customization Tutorial (Sections & Blocks)</h3>
+    <p><strong>What you'll learn:</strong> How to use Shopify's visual theme editor, blocks, and sections to style the storefront. This video teaches you to work with the drag-and-drop editor to create beautiful, conversion-focused layouts without code.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/fQZntbd5QGI" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 4. How to Create & Edit Shopify Pages</h3>
+    <p><strong>What you'll learn:</strong> How to create key store pages (About, Contact, FAQ) and edit text/image content. Every professional store needs these foundational pages to build trust and answer customer questions.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/nJMqRgKkkBg" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 5. Shopify About Us & FAQ Page Tutorial</h3>
+    <p><strong>What you'll learn:</strong> Demonstrates how to build compelling About Us and FAQ informational pages. These pages are essential for customer trust — stores without them see 23% lower conversion rates.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/cpGL7I2dECo" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+        <strong>✅ IMPLEMENTATION TASK (Required for Certification)</strong>
+        <p style="margin-bottom: 15px;"><strong>Your senior developer will evaluate this during your final review:</strong></p>
+        <ol>
+            <li>Customize theme colors to match the sample brand provided</li>
+            <li>Add a logo (PNG with transparency, 200-400px wide)</li>
+            <li>Add a proper favicon (32x32 or 16x16 PNG)</li>
+            <li>Configure the header navigation with correct links</li>
+            <li>Create an <strong>About Us page</strong> with brand story, team, and values</li>
+            <li>Create a <strong>Contact page</strong> with form, email, and business hours</li>
+            <li>Create an <strong>FAQ page</strong> with at least 8 common questions</li>
+            <li>Set up the footer with all essential links and social media</li>
+            <li>Test all pages on mobile to ensure proper display</li>
+        </ol>
+        <p style="margin-top: 15px; font-style: italic;">📸 Take screenshots of each completed page. Include both desktop and mobile views.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -357,6 +462,72 @@ const task3Content = `
         <li>❓ <strong>FAQ</strong> → /pages/faq</li>
         <li>📦 <strong>Track Your Order</strong> → /apps/17track</li>
     </ul>
+</div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: SEO & Navigation Setup</h2>
+    <div class="highlight-box">
+        <strong>📺 MANDATORY VIEWING: SEO & Structure Essentials</strong>
+        <p>Without proper SEO and navigation, no one finds your store and those who do get lost. These skills will be evaluated during certification. <strong>Estimated time: 4-5 hours.</strong></p>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ WHY THIS MATTERS</strong>
+        <p>A store without SEO is invisible to search engines. A store with poor navigation frustrates customers. These two elements determine whether people can find your store AND whether they can find what they want when they get there. 70% of stores fail on SEO basics — don't be one of them.</p>
+    </div>
+    
+    <h3>📚 6. Shopify SEO – Preferences & Meta Setup</h3>
+    <p><strong>What you'll learn:</strong> Walks through the Shopify Preferences section — homepage title, meta description, and SEO basics. This is the foundation for being found on Google.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/umTyBPD_Fjw" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 7. Shopify SEO Optimization for Beginners</h3>
+    <p><strong>What you'll learn:</strong> Practical SEO strategy for Shopify — site structure, keywords, and optimization techniques. Learn how to rank higher and drive organic traffic.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/LMGj7N2iW2A" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 11. How To Set Up Navigation, Policies & Pages</h3>
+    <p><strong>What you'll learn:</strong> Covers site structure: main menus, footer links, policies, and page linking. Essential for creating a professional store structure.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/X8FWjKaxi-E" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 12. Shopify Navigation – Drop-Down Menu Setup</h3>
+    <p><strong>What you'll learn:</strong> How to create drop-down navigation menus to organize categories and pages. Makes navigation intuitive for customers with many products.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/Rsp_hc3ICUo" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+        <strong>✅ IMPLEMENTATION TASK (Required for Certification)</strong>
+        <p style="margin-bottom: 15px;"><strong>Your senior developer will evaluate this during your final review:</strong></p>
+        <ol>
+            <li>Set up Homepage SEO: Title (max 60 chars), Description (max 160 chars)</li>
+            <li>Configure SEO for ALL pages (About, Contact, FAQ)</li>
+            <li>Set up SEO for ALL products with proper titles and descriptions</li>
+            <li>Create complete main navigation with all essential pages</li>
+            <li>Create drop-down menus for product categories</li>
+            <li>Set up footer navigation with policies, contact, social links</li>
+            <li>Add all required policy pages (Privacy, Terms, Shipping, Refund)</li>
+            <li>Test navigation on mobile — ensure all menus work properly</li>
+            <li>Run SEO audit and fix any issues found</li>
+        </ol>
+        <p style="margin-top: 15px; font-style: italic;">📸 Take screenshots of your navigation structure and SEO settings for each page.</p>
+    </div>
 </div>
 `;
 
@@ -437,6 +608,64 @@ const task4Content = `
         <p>Related Products section increases AOV by <strong>15-30%</strong>.</p>
     </div>
 </div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: Product Management & CRO</h2>
+    <div class="highlight-box">
+        <strong>📺 MANDATORY VIEWING: Master Product Pages</strong>
+        <p>Products are the heart of every store. These skills will be evaluated during certification. <strong>Estimated time: 4-5 hours.</strong></p>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ WHY THIS MATTERS</strong>
+        <p>A beautiful homepage means nothing if the product page doesn't convert. 90% of your conversion optimization effort should be on product pages. Every element — images, descriptions, variants, pricing — directly impacts whether customers click "Buy Now" or leave. Master this or lose sales.</p>
+    </div>
+    
+    <h3>📚 8. How to Add Products on Shopify (Beginner's Guide)</h3>
+    <p><strong>What you'll learn:</strong> How to create product listings, set prices, manage inventory, and configure variants. The foundation for every store's catalog.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/YvllH3MhPWY" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 9. Shopify Product Page Customization Tutorial</h3>
+    <p><strong>What you'll learn:</strong> How to organize and customize product page templates for higher conversion. Learn to create product pages that sell.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/B4OE1lvTBp0" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 10. Shopify Variants & Inventory Management Explained</h3>
+    <p><strong>What you'll learn:</strong> Detailed explanation of product variants, SKU logic, and stock tracking. Essential for stores with sizes, colors, and multiple options.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/gsw2NYVrPfM" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+        <strong>✅ IMPLEMENTATION TASK (Required for Certification)</strong>
+        <p style="margin-bottom: 15px;"><strong>Your senior developer will evaluate this during your final review:</strong></p>
+        <ol>
+            <li>Add at least <strong>5 products</strong> with complete information</li>
+            <li>Add 3-5 high-quality images per product (multiple angles)</li>
+            <li>Write benefit-focused descriptions (features AFTER benefits)</li>
+            <li>Set up proper variants (Size, Color, etc.) with correct pricing</li>
+            <li>Configure inventory tracking with SKU codes</li>
+            <li>Add Trust Badges below Add to Cart button</li>
+            <li>Create Size Guide for applicable products</li>
+            <li>Add FAQ section with 3-5 questions per product</li>
+            <li>Set up Related Products / "You may also like" section</li>
+            <li>Test product page on mobile — ensure images load, buttons work</li>
+        </ol>
+        <p style="margin-top: 15px; font-style: italic;">📸 Take screenshots of each product page showing all elements. Include mobile views.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -514,6 +743,57 @@ const task5Content = `
         </tr>
     </table>
 </div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: Speed Optimization Mastery</h2>
+    <div class="highlight-box">
+        <strong>📺 WATCH THESE: Achieve 85+ PageSpeed</strong>
+        <p>Complete all videos and optimize your store's speed. Estimated time: 2-3 hours.</p>
+    </div>
+    
+    <h3>📚 1. Shopify Speed Optimization Guide</h3>
+    <p>Complete tutorial on improving your store's PageSpeed score.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/z7_AZQzlHIQ" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 2. Core Web Vitals Explained</h3>
+    <p>Understanding LCP, CLS, and INP for better rankings.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/1GalWZwfkyk" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 3. Image Optimization & Compression</h3>
+    <p>Reduce image sizes without losing quality.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/OMYwhBWgJoo" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box">
+        <strong>✅ Implementation Task: Speed Optimization Challenge</strong>
+        <ol>
+            <li>Run PageSpeed Insights on your practice store - record baseline score</li>
+            <li>Compress ALL images using TinyPNG or Squoosh (max 500KB each)</li>
+            <li>Remove unused apps (keep under 10)</li>
+            <li>Check for and remove any leftover app code</li>
+            <li>Limit fonts to 2 families maximum</li>
+            <li>Lazy load below-fold images</li>
+            <li>Run PageSpeed again - must achieve 85+ mobile</li>
+            <li>Check Console for JavaScript errors - fix any found</li>
+            <li>Test load time on real mobile device (target: under 3 seconds)</li>
+            <li>Screenshot before/after PageSpeed scores</li>
+        </ol>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -565,6 +845,92 @@ const task6Content = `
         <li><strong>Terms of Service:</strong> Usage terms, liability</li>
     </ul>
     <p>💡 <strong>Pro Tip:</strong> Settings → Policies → "Create from template"</p>
+</div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: Shipping, Payments & Markets</h2>
+    <div class="highlight-box">
+        <strong>📺 MANDATORY VIEWING: Essential Store Operations</strong>
+        <p>Without proper shipping, payments, and markets setup, no one can buy from your store. These skills will be evaluated. <strong>Estimated time: 5-6 hours.</strong></p>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ WHY THIS MATTERS</strong>
+        <p>Shipping and payment errors cause 35% of cart abandonment. Wrong shipping rates lose money. Payment gateway mistakes mean refunds and chargebacks. Shopify Markets unlocks global revenue. These operational foundations must be perfect — there's no room for error.</p>
+    </div>
+    
+    <h3>📚 13. Shopify Payments & Shipping Setup Tutorial</h3>
+    <p><strong>What you'll learn:</strong> How to configure payment providers and shipping basics in Shopify. The essential setup that enables transactions.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/X6hBF5bnnto" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 14. Shopify Shipping Profiles Explained</h3>
+    <p><strong>What you'll learn:</strong> Shipping profiles, how rates are applied, and zone configuration. Critical for accurate delivery costs.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/p45DB8aY2Vc" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 15. Shopify Shipping Tutorial – Rates & Portfolios</h3>
+    <p><strong>What you'll learn:</strong> Detailed tutorial on setting shipping rates and custom profiles for products. Advanced shipping configuration.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/OMJv0n3INJ8" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 16. Shopify Markets Explained – International Sales</h3>
+    <p><strong>What you'll learn:</strong> Overview of how to activate and manage Shopify Markets for international selling. Expand your reach globally.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/F9R7Pwkao8k" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 17. Shopify Markets Setup – How to Sell Internationally</h3>
+    <p><strong>What you'll learn:</strong> Step-by-step setup of Shopify Markets including localization and multi-currency. Detailed configuration guide.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/jPQSg5lTR0g" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 18. Shopify Multi-Currency Checkout Tutorial</h3>
+    <p><strong>What you'll learn:</strong> How to set up multi-currency pricing and checkout experiences using Shopify Payments & Markets. Essential for global stores.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/uiBLBX9HTRA" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+        <strong>✅ IMPLEMENTATION TASK (Required for Certification)</strong>
+        <p style="margin-bottom: 15px;"><strong>Your senior developer will evaluate this during your final review:</strong></p>
+        <ol>
+            <li>Set up shipping zones: US, Canada, Europe, International</li>
+            <li>Configure flat-rate shipping ($5.99 domestic, $14.99 international)</li>
+            <li>Add free shipping threshold at $75</li>
+            <li>Enable Shopify Payments (or alternative payment provider)</li>
+            <li>Add PayPal Express Checkout</li>
+            <li>Enable Shop Pay, Apple Pay, Google Pay</li>
+            <li>Create at least 2 international markets (e.g., Europe EUR, UK GBP)</li>
+            <li>Set up country-specific pricing adjustments</li>
+            <li>Configure duties and import taxes display</li>
+            <li>Test complete checkout flow with test card: 4242 4242 4242 4242</li>
+            <li>Test market switcher on storefront</li>
+        </ol>
+        <p style="margin-top: 15px; font-style: italic;">📸 Take screenshots of shipping zones, payment settings, markets configuration, and test order confirmation.</p>
+    </div>
 </div>
 `;
 
@@ -637,6 +1003,57 @@ const task7Content = `
         <li>Check in <strong>different browser</strong> — Chrome AND Safari</li>
     </ol>
 </div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: QA & Testing Excellence</h2>
+    <div class="highlight-box">
+        <strong>📺 WATCH THESE: Master Quality Assurance</strong>
+        <p>Complete all videos and perform full QA on your store. Estimated time: 3-4 hours.</p>
+    </div>
+    
+    <h3>📚 1. Shopify Launch Checklist</h3>
+    <p>Everything to check before launching a store.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/tc1ou-8OTuc" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 2. How to Test Your Shopify Store</h3>
+    <p>Complete testing walkthrough for checkout and functionality.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/8M1rNIdkKAM" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 3. Pre-Launch Essentials</h3>
+    <p>Final checks before going live.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/ItO0mOLYLhY" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box">
+        <strong>✅ Implementation Task: Complete 60-Point QA</strong>
+        <ol>
+            <li>Download/create 60-point QA checklist</li>
+            <li><strong>Design (15 pts):</strong> Check typography, colors, images, spacing, mobile design</li>
+            <li><strong>Functionality (15 pts):</strong> Test ALL links, buttons, forms, checkout</li>
+            <li><strong>Performance (10 pts):</strong> Run PageSpeed, check console errors</li>
+            <li><strong>SEO (10 pts):</strong> Page titles, meta descriptions, alt text, URLs</li>
+            <li><strong>Mobile (10 pts):</strong> Test on real iPhone AND Android device</li>
+            <li>Place test order with test card: 4242 4242 4242 4242</li>
+            <li>Check confirmation email delivery</li>
+            <li>Test in incognito mode and different browsers</li>
+            <li>Screenshot your completed checklist (all 60 points marked)</li>
+        </ol>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -684,6 +1101,55 @@ const task8Content = `
     <div class="warning-box">
         <strong>🚨 Escalate to Senior Developer After 15 Minutes</strong>
         <p>If you can't debug an issue after 15 minutes of systematic troubleshooting, escalate.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: Troubleshooting & Debugging</h2>
+    <div class="highlight-box">
+        <strong>📺 WATCH THESE: Master Problem-Solving</strong>
+        <p>Complete all videos and practice debugging scenarios. Estimated time: 2-3 hours.</p>
+    </div>
+    
+    <h3>📚 1. Common Shopify Errors & Fixes</h3>
+    <p>Learn to identify and resolve the most common issues.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/OMYwhBWgJoo" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 2. Browser Developer Tools Tutorial</h3>
+    <p>Use console and inspector to debug code issues.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/7cx15NZmGO4" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 3. Why Your Store Isn't Making Sales</h3>
+    <p>Diagnose and fix conversion issues.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/Oc9zCbsN5Q4" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box">
+        <strong>✅ Implementation Task: Debug & Fix Scenarios</strong>
+        <ol>
+            <li>Open Browser DevTools (F12) and find the Console tab</li>
+            <li>Check your practice store for any red console errors</li>
+            <li>If errors exist - document and attempt to fix each one</li>
+            <li>Use "Inspect Element" on 5 different page elements</li>
+            <li>Practice clearing cache (Ctrl+Shift+R) to test changes</li>
+            <li>Intentionally break something (like a typo in Liquid) and practice fixing it</li>
+            <li>Test checkout flow - find and document any friction points</li>
+            <li>Write a troubleshooting report with all issues found and fixed</li>
+        </ol>
     </div>
 </div>
 `;
@@ -748,6 +1214,54 @@ const task9Content = `
         </ul>
     </div>
 </div>
+
+<div class="content-section">
+    <h2>🎥 Video Training: Apps & Integrations</h2>
+    <div class="highlight-box">
+        <strong>📺 MANDATORY VIEWING: Essential Store Integrations</strong>
+        <p>Order tracking and email marketing are non-negotiables for professional stores. These skills will be evaluated. <strong>Estimated time: 3-4 hours.</strong></p>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ WHY THIS MATTERS</strong>
+        <p>Order tracking reduces "Where is my order?" support tickets by 80%. Email marketing drives 30-40% of e-commerce revenue. Stores without these integrations look unprofessional and miss revenue. Master these tools to deliver complete, professional stores.</p>
+    </div>
+    
+    <h3>📚 19. 17TRACK Order Tracking on Shopify – Full Setup</h3>
+    <p><strong>What you'll learn:</strong> Sets up 17TRACK for real-time order tracking and customer notifications. Reduces customer anxiety and support requests.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/-msd5yDGn34" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 20. Klaviyo Shopify Integration & Email Marketing</h3>
+    <p><strong>What you'll learn:</strong> End-to-end Klaviyo integration with Shopify. Set up automated email flows that drive repeat purchases and recover abandoned carts.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/UKnpUB8RslQ" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+        <strong>✅ IMPLEMENTATION TASK (Required for Certification)</strong>
+        <p style="margin-bottom: 15px;"><strong>Your senior developer will evaluate this during your final review:</strong></p>
+        <ol>
+            <li>Install and configure 17TRACK app or equivalent order tracking</li>
+            <li>Set up tracking page accessible from customer account</li>
+            <li>Configure tracking notification emails</li>
+            <li>Install Klaviyo app and connect to Shopify</li>
+            <li>Create Welcome Series email flow (3 emails minimum)</li>
+            <li>Create Abandoned Cart recovery flow</li>
+            <li>Use AI to generate a custom Shopify section (testimonials, FAQ, etc.)</li>
+            <li>Add the custom section to your homepage</li>
+            <li>Test all email flows and tracking notifications</li>
+        </ol>
+        <p style="margin-top: 15px; font-style: italic;">📸 Take screenshots of tracking page, Klaviyo flows, and custom section in theme editor.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -799,6 +1313,69 @@ const task10Content = `
     <div class="highlight-box">
         <strong>🎯 Your Daily Mantra</strong>
         <p style="font-style: italic; font-size: 1.1em;">"Today, I write code that changes lives. Every optimization, every fix, every feature makes a difference."</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h2>🎥 Final Review Videos</h2>
+    <div class="highlight-box">
+        <strong>📺 WATCH BEFORE YOUR FINAL EXAM</strong>
+        <p>Review these comprehensive videos to prepare for certification. Estimated time: 4-5 hours.</p>
+    </div>
+    
+    <h3>📚 1. Complete Shopify Store Build (Full Tutorial)</h3>
+    <p>Watch a professional build a complete store from start to finish.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/7cx15NZmGO4" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 2. Shopify Tips & Tricks Every Developer Should Know</h3>
+    <p>Advanced techniques for professional-level work.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/aCav7RwkrZU" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <h3>📚 3. Shopify Store That Made $1M+ Case Study</h3>
+    <p>Learn from real successful stores.</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border-radius: 12px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/tlXHPg411zI" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+    
+    <div class="warning-box">
+        <strong>✅ Final Implementation Task: Certification Portfolio</strong>
+        <ol>
+            <li><strong>Complete Practice Store:</strong> Final polish on your store (2-3 hours)</li>
+            <li><strong>Speed Test:</strong> Achieve 85+ PageSpeed mobile score</li>
+            <li><strong>60-Point QA:</strong> Complete entire checklist with screenshots</li>
+            <li><strong>Test Order:</strong> Place and document test order flow</li>
+            <li><strong>Create Portfolio:</strong> Compile screenshots of:
+                <ul>
+                    <li>Homepage (desktop + mobile)</li>
+                    <li>Product page with all CRO elements</li>
+                    <li>PageSpeed before/after scores</li>
+                    <li>Custom section you created</li>
+                    <li>Checkout flow completion</li>
+                </ul>
+            </li>
+            <li><strong>Record Video (30 min):</strong>
+                <ul>
+                    <li>Introduction (2 min)</li>
+                    <li>SOP Walkthrough (10 min)</li>
+                    <li>Live Development Demo (15 min)</li>
+                    <li>Closing (3 min)</li>
+                </ul>
+            </li>
+            <li>Submit portfolio + video for review</li>
+        </ol>
     </div>
 </div>
 `;

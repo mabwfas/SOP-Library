@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide welcome screen immediately
     const welcomeScreen = document.getElementById('welcomeScreen');
     if (welcomeScreen) welcomeScreen.style.display = 'none';
-    
+
     renderTasksList();
     updateProgressBar();
 
@@ -178,10 +178,17 @@ function devSkipTask(taskIndex) {
     }
     localStorage.setItem('developerTrainingProgress', JSON.stringify(progress));
 
-    // Return to tasks list
-    closeTask();
+    // Update sidebar and progress
     renderTasksList();
     updateProgressBar();
+
+    // Auto-advance to next task (instead of showing welcome screen)
+    if (task.id < 10) {
+        openTask(task.id); // Open next task (0-indexed, so current task.id = next index)
+    } else {
+        // Final task completed - close to show certificate option
+        closeTask();
+    }
 }
 
 // Close Task (Reset to Welcome Screen)
@@ -289,7 +296,7 @@ function showResults() {
     });
 
     const passed = correct === totalQuestions;
-    
+
     if (passed && window.confetti) {
         window.confetti.burst(window.innerWidth / 2, window.innerHeight / 2);
     }

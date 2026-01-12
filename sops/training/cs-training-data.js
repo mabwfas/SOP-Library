@@ -386,146 +386,147 @@ const task10Content = `
 </div>
 `;
 
-// Quiz Questions
+// Quiz Questions - ENHANCED with challenging scenario-based questions
+// Testing real-world Client Success judgment and decision-making
 const allQuizzes = [
-    // Task 1: Mindset
+    // Task 1: Mindset - Scenario-Based
     [
-        { q: "Retention vs Acquisition:", o: ["Retention > Acquisition", "Acquisition > Retention", "Same", "Who cares"], c: 0 },
-        { q: "CS vs Support:", o: ["Support fixes, CS prevents", "Same thing", "CS fixes breaks", "None"], c: 0 },
-        { q: "We are:", o: ["Vendors", "Partners", "Servants", "Friends"], c: 1 },
-        { q: "Proactive means:", o: ["Calling before problem", "Waiting for email", "Ignoring", "Sleeping"], c: 0 },
-        { q: "Trust Equation denominator:", o: ["Self-Orientation", "Credibility", "Reliability", "Intimacy"], c: 0 },
-        { q: "Cost of new client:", o: ["Cheap", "5x expensive", "Free", "1x"], c: 1 },
-        { q: "Focus on:", o: ["Their goals", "Our revenue", "Lunch", "Vacation"], c: 0 },
-        { q: "CS Goal:", o: ["Make them happy/Succesful", "Sell them junk", "Ignore them", "None"], c: 0 },
-        { q: "Success is:", o: ["Ongoing", "One time", "Random", "None"], c: 0 },
-        { q: "Reactive is:", o: ["Bad/Support mode", "Good", "Standard", "None"], c: 0 }
+        { q: "Client emails you weekly for 3 months, then suddenly stops replying for 2 weeks. What's happening?", o: ["They're happy and busy", "They're probably churning — time for immediate outreach", "Give them space — they'll reach out when ready", "Wait another 2 weeks to be sure"], c: 1 },
+        { q: "Client says 'We're happy with the work' but their NPS score is 6 (Passive). What's really going on?", o: ["They're satisfied — trust the words", "Gap between politeness and loyalty — dig deeper", "NPS doesn't matter — focus on renewals", "Nothing — 6 is acceptable"], c: 1 },
+        { q: "Your colleague says 'Support fixes problems, CS just does check-in calls.' You correct them by saying:", o: ["True — we do calls and check-ins", "Wrong — CS prevents problems before they happen", "We do both equally", "Support is more important than CS"], c: 1 },
+        { q: "It costs 5x more to acquire a new client than to retain one. This means:", o: ["Focus spending on marketing", "Invest more in keeping existing clients happy", "Don't bother with new sales", "Reduce support costs"], c: 1 },
+        { q: "Client emails: 'I'm frustrated with delays.' You should respond first by:", o: ["Explaining why delays happened", "Defending the team's workload", "Acknowledging their frustration before anything else", "Offering a discount immediately"], c: 2 },
+        { q: "A $3,000/month client and a $15,000/month client both need help. You have time for one call today. What's the right approach?", o: ["$15,000 client — they pay more", "Both deserve equal attention — flip a coin", "Prioritize based on urgency and risk, not just revenue", "$3,000 client — they need more support"], c: 2 },
+        { q: "Trust Equation: Trust = (Credibility + Reliability + Intimacy) / Self-Orientation. How do you increase trust?", o: ["Focus only on Credibility — do great work", "Lower Self-Orientation — focus on THEIR goals, not our revenue", "High Intimacy — become best friends", "All three numerators — ignore denominator"], c: 1 },
+        { q: "Client says 'Just tell me what to do — I trust you.' This is:", o: ["Dangerous — make them decide", "A sign of strong partnership — but keep them informed", "An invitation to sell more services", "Proof you should take over their business"], c: 1 },
+        { q: "Proactive CS calls the client:", o: ["Only when there's a problem", "Only when they call first", "BEFORE problems happen to prevent them", "Once a year for check-in"], c: 2 },
+        { q: "You discover a bug affecting the client's site. They haven't noticed yet. What do you do?", o: ["Wait for them to report it", "Fix it silently — no need to worry them", "Tell them immediately — transparency builds trust", "Tell them only if they ask"], c: 2 }
     ],
-    // Task 2: Company Knowledge
+    // Task 2: Company Knowledge - Scenario-Based
     [
-        { q: "Shopify Dev:", o: ["Builds sites", "Cooks food", "Drives cars", "None"], c: 0 },
-        { q: "White glove:", o: ["Premium/Curated", "Dirty", "Cheap", "None"], c: 0 },
-        { q: "Over-communicate:", o: ["Annoying", "Key to trust", "Bad", "Illegal"], c: 1 },
-        { q: "Marketing services:", o: ["SEO/Ads", "Cleaning", "Plumbing", "None"], c: 0 },
-        { q: "Anticipate needs:", o: ["Wait for ask", "Guess", "Predict/Solve early", "Ignore"], c: 2 },
-        { q: "Agency arm:", o: ["High ticket service", "Media", "Software", "None"], c: 0 },
-        { q: "Surprise and delight:", o: ["Gift/Moment", "Scare", "Bill", "None"], c: 0 },
-        { q: "CS Bridges:", o: ["Sales & Delivery", "Marketing & HR", "None", "All"], c: 0 },
-        { q: "Design offers:", o: ["Branding/UI", "Code", "Accounting", "None"], c: 0 },
-        { q: "Ecosystem:", o: ["Integrated", "Separate", "Broken", "None"], c: 0 }
+        { q: "Client asks 'What services do you offer besides my Shopify project?' You should know:", o: ["Just refer them to Sales — not your job", "Design, Marketing (SEO/Ads), and Development — cross-sell opportunities", "Nothing — focus on current project only", "Only what's in their contract"], c: 1 },
+        { q: "Client pays $8,000 for a Shopify store build. 2 months later they want SEO. This opportunity is:", o: ["For the Sales team only", "An expansion opportunity you should own", "Against policy — separate engagements", "Too soon — wait 6 months"], c: 1 },
+        { q: "'White Glove' service means:", o: ["We wear gloves during work", "Premium, curated experience with over-communication", "Basic service at higher price", "Only for enterprise clients"], c: 1 },
+        { q: "Client asks 'Why should I work with Digital Heroes vs cheaper agencies?' Your answer:", o: ["We're the cheapest option", "Premium quality + proactive partnership = better ROI", "We need your business", "All agencies are the same"], c: 1 },
+        { q: "You learn the client's business is struggling financially. As CS, you should:", o: ["Ignore it — focus on deliverables", "Be proactive — offer flexible payment plans or scope adjustments", "Push harder for upsells to hit quota", "Cancel their project to avoid losses"], c: 1 },
+        { q: "Client says 'I never hear from anyone at your company.' What failed?", o: ["Client has unrealistic expectations", "We failed to over-communicate — key to trust", "Sales over-promised", "Nothing — work speaks for itself"], c: 1 },
+        { q: "Design team delivered amazing work but client seems distant. Why might this happen?", o: ["Client doesn't appreciate good design", "We forgot to communicate and involve them in the process", "Nothing is wrong", "They're just introverts"], c: 1 },
+        { q: "CS bridges Sales and Delivery. This means:", o: ["You do both jobs", "You translate client expectations to team and vice versa", "Sales and Delivery report to you", "You have three roles"], c: 1 },
+        { q: "Client's Shopify store launched. They ask about Facebook Ads. Best response:", o: ["That's not my department", "Great idea — let me connect you with our paid media team", "We don't do that", "Do it yourself"], c: 1 },
+        { q: "Client says 'I've worked with 5 agencies before, all disappointed me.' Your mindset:", o: ["Red flag — avoid this client", "Opportunity to exceed expectations and earn loyalty", "They're the problem, not agencies", "Normal client behavior"], c: 1 }
     ],
-    // Task 3: Onboarding
+    // Task 3: Onboarding - Scenario-Based
     [
-        { q: "First 90 Days:", o: ["Critical for retention", "Unimportant", "Boring", "None"], c: 0 },
-        { q: "Kickoff Call:", o: ["First alignment meeting", "Party", "Sales call", "None"], c: 0 },
-        { q: "TTV:", o: ["Time To Value", "Time To Ventilate", "TV Station", "None"], c: 0 },
-        { q: "Quick Win:", o: ["Builds momentum", "Wastes time", "Is hard", "None"], c: 0 },
-        { q: "Get Access:", o: ["Immediately", "Later", "Never", "Month 2"], c: 0 },
-        { q: "Delays in access:", o: ["Kill momentum", "Are fine", "Standard", "None"], c: 0 },
-        { q: "Expectation setting:", o: ["Early", "Never", "End", "Middle"], c: 0 },
-        { q: "Onboarding goal:", o: ["Confidence/Trust", "Confusion", "Sales", "None"], c: 0 },
-        { q: "Momentum:", o: ["Keep high", "Kill it", "Ignore", "None"], c: 0 },
-        { q: "Kickoff Agenda:", o: ["Goals/Timeline/Comms", "Jokes", "Sales pitch", "None"], c: 0 }
+        { q: "You take over a new client relationship. Their kickoff call is in 2 days but you haven't received any background. First step:", o: ["Wait for someone to send info", "Immediately request handoff docs and client history", "Wing it — you're experienced", "Reschedule the call"], c: 1 },
+        { q: "During kickoff, client says 'I expect my site to be #1 on Google in 2 weeks.' Correct response:", o: ["Promise to try your best", "Set realistic expectations NOW — SEO takes 6+ months", "Say nothing — let them discover reality later", "Over-promise to win their excitement"], c: 1 },
+        { q: "Time To Value (TTV) means:", o: ["How long before we get paid", "How fast the client sees a tangible, positive outcome", "Project timeline", "Time to invoice"], c: 1 },
+        { q: "Day 3 of new engagement: client still hasn't provided store access. What do you do?", o: ["Wait patiently — they're busy", "Escalate immediately — delays kill momentum", "Send one reminder and wait", "Start working without access"], c: 1 },
+        { q: "Kickoff call agenda should include:", o: ["Only project timeline", "Goals, timeline, communication preferences, immediate next steps", "Small talk only", "Budget discussion"], c: 1 },
+        { q: "Client says 'I'm not sure what success looks like for this project.' You should:", o: ["Define it for them and move on", "Spend time together defining measurable success criteria", "Let them figure it out", "Delay the project"], c: 1 },
+        { q: "Quick Win within first 2 weeks means:", o: ["Finishing the whole project", "Delivering one visible, positive outcome to build momentum", "Anything you can do quickly", "Cutting corners for speed"], c: 1 },
+        { q: "Client missed 3 scheduled calls in a row. Pattern suggests:", o: ["They're very busy — reschedule", "Risk signal — something is wrong with the relationship", "They trust you to handle things", "Normal behavior"], c: 1 },
+        { q: "Client's CEO joins kickoff unexpectedly. Best approach:", o: ["Ignore them — focus on your contact", "Adjust agenda to address CEO-level concerns", "Be nervous and stiff", "Ask them to leave"], c: 1 },
+        { q: "After kickoff, you should send:", o: ["Nothing — they remember the call", "Recap email with clear action items and deadlines", "Invoice immediately", "Calendar invite for next year"], c: 1 }
     ],
-    // Task 4: Churn
+    // Task 4: Churn Prevention - Scenario-Based
     [
-        { q: "Ghosting:", o: ["Red Flag", "Good", "Normal", "Fun"], c: 0 },
-        { q: "POC leaves:", o: ["High Risk", "Low Risk", "Good", "None"], c: 0 },
-        { q: "Late Payment:", o: ["Churn indicator", "Normal", "Good", "None"], c: 0 },
-        { q: "Save Playbook:", o: ["Listen/Pause/Pivot", "Argue", "Sue", "Ignore"], c: 0 },
-        { q: "Budget cuts:", o: ["Common objection", "Lie", "Truth", "Good"], c: 0 },
-        { q: "Pivot:", o: ["Change strategy", "Quit", "Refund", "None"], c: 0 },
-        { q: "Pause:", o: ["Better than cancel", "Worse than cancel", "Same", "None"], c: 0 },
-        { q: "Champion:", o: ["Main contact/Advocate", "Winner", "Loser", "None"], c: 0 },
-        { q: "Churn is:", o: ["Losing client", "Winning client", "Butter", "None"], c: 0 },
-        { q: "Prevent churn by:", o: ["Solving root issue", "Begging", "Yelling", "None"], c: 0 }
+        { q: "Client's Point of Contact (POC) just resigned. New person takes over. Risk level:", o: ["No risk — just update the contact", "High risk — new POC may not see value; needs re-onboarding", "Medium — only if they complain", "They'll figure it out"], c: 1 },
+        { q: "Client payment is 30 days late. They haven't mentioned issues. What's likely happening?", o: ["Accounting delay — normal", "Possible churn signal — cash problems or value questioning", "They forgot — send invoice again", "Nothing to worry about"], c: 1 },
+        { q: "Client emails: 'We need to talk.' Nothing else. Your first action:", o: ["Panic and prepare for the worst", "Respond immediately to schedule a call — show you care", "Wait until they explain more", "Prepare a discount offer"], c: 1 },
+        { q: "'Ghosting' client hasn't replied to 3 emails in 2 weeks. Next step:", o: ["Send a 4th email", "Call directly OR visit a different communication channel", "Remove them from your pipeline", "Send invoice as a test"], c: 1 },
+        { q: "Client says 'We're cutting our marketing budget by 50%.' Best response:", o: ["Accept the reduction and move on", "Explore a 'maintenance mode' reduced engagement to keep the relationship", "Fight for full budget with hard sell", "Cancel immediately"], c: 1 },
+        { q: "Save Playbook: Listen → Pause → Pivot. 'Pause' means:", o: ["Stop talking forever", "Offer to pause the engagement rather than cancel completely", "Take a bathroom break", "Pause the call to think"], c: 1 },
+        { q: "Client says 'I'm not seeing results.' You've been working 2 weeks. Appropriate response:", o: ["We need 3-6 months to see results — be patient", "Acknowledge their concern, explain realistic timeline, show early progress", "Results are guaranteed — wait longer", "Offer a refund"], c: 1 },
+        { q: "You detect that client's 'champion' (internal advocate) is leaving the company. Impact:", o: ["None — just update contact", "Major churn risk — rebuild relationships with remaining stakeholders", "Wait for new champion to emerge", "Pause work until they hire someone"], c: 1 },
+        { q: "Client complains: 'Your team keeps missing deadlines.' Root cause analysis first:", o: ["Apologize and promise to do better", "Investigate if it's scope creep, resource issues, or communication gap", "Blame the dev team", "Offer discount"], c: 1 },
+        { q: "Client renewal is in 30 days. NPS is 7 (Passive), no complaints but no enthusiasm. Plan:", o: ["Send renewal invoice — they'll probably renew", "Proactive outreach to understand gaps and strengthen relationship before renewal", "Nothing — if they want to leave they'll tell us", "Offer discount to lock them in"], c: 1 }
     ],
-    // Task 5: Upsell
+    // Task 5: Upselling & Expansion - Scenario-Based
     [
-        { q: "Account Expansion:", o: ["Selling more to existing", "Getting new client", "Firing", "None"], c: 0 },
-        { q: "Trusted Advisor:", o: ["Recommends solutions", "Sells junk", "Lies", "None"], c: 0 },
-        { q: "Project to Retainer:", o: ["Stable revenue", "One time", "Bad", "None"], c: 0 },
-        { q: "Upsell timing:", o: ["After success/Trust", "Day 1", "When angry", "Never"], c: 0 },
-        { q: "Logic:", o: ["Problem -> Solution", "Feature -> Benefit", "None", "All"], c: 0 },
-        { q: "Growth opportunity:", o: ["Spotting gaps", "Ignoring gaps", "Creating gaps", "None"], c: 0 },
-        { q: "Pitch focus:", o: ["The Client Value", "Our Commission", "Nothing", "None"], c: 0 },
-        { q: "Easier sale:", o: ["Existing happy client", "Cold lead", "Stranger", "Enemy"], c: 0 },
-        { q: "SEO Retainer:", o: ["Recurring", "One off", "Free", "None"], c: 0 },
-        { q: "Design to Dev:", o: ["Cross-sell", "Down-sell", "No-sell", "None"], c: 0 }
+        { q: "Client's Shopify project completed successfully. They're happy. When is the right time to discuss SEO?", o: ["Wait 6 months — don't be pushy", "During the success conversation — 'What's next for growth?'", "Never — that's Sales' job", "Day 1 before project starts"], c: 1 },
+        { q: "Client asks: 'Should we do Facebook Ads or Google Ads?' As a Trusted Advisor, you:", o: ["Sell them both to maximize revenue", "Recommend the channel that best fits their business goals", "Say you don't know", "Let them decide without input"], c: 1 },
+        { q: "'Project to Retainer' means:", o: ["Project failed so we give maintenance", "Converting one-time projects into ongoing monthly relationships", "Retainers are short projects", "They're the same thing"], c: 1 },
+        { q: "Client's revenue increased 30% after your work. How do you leverage this?", o: ["Celebrate quietly — don't be salesy", "Document ROI for case study AND discuss expanding what's working", "Ask for more money immediately", "Do nothing — let results speak"], c: 1 },
+        { q: "Expansion opportunity spotted: client needs email marketing but it's not in scope. You should:", o: ["Ignore it — stay in your lane", "Mention it as a growth opportunity; let them decide", "Add it to their invoice without asking", "Talk to their competitors about it"], c: 1 },
+        { q: "Client says 'We don't have budget for more services.' Best response:", o: ["Okay, thanks anyway", "Understand their priorities; plant seed for future when budget frees up", "Push harder — budgets can change", "Give up completely"], c: 1 },
+        { q: "Upsell should feel:", o: ["Pushy — sales is about pressure", "Natural — helping them achieve MORE of their goals", "Awkward — necessary evil", "Desperate — we need revenue"], c: 1 },
+        { q: "Client asks for a discount on additional services. Your leverage:", o: ["None — give the discount", "Proven ROI from current work justifies full price", "We need the money more", "Match competitor pricing"], c: 1 },
+        { q: "Client has 3 Shopify stores. We work on 1. Expansion opportunity:", o: ["Not our business", "Offer to manage all 3 with a multi-store package", "Wait for them to ask", "Refer to competitor"], c: 1 },
+        { q: "Cross-sell vs Upsell: 'Cross-sell' means:", o: ["Selling more of the same service", "Selling a DIFFERENT related service (Design → SEO)", "Selling to competitors", "Giving discounts"], c: 1 }
     ],
-    // Task 6: QBR
+    // Task 6: QBRs & Reviews - Scenario-Based
     [
-        { q: "QBR:", o: ["Quarterly Business Review", "Quick Business Run", "Quiz", "None"], c: 0 },
-        { q: "Review section:", o: ["Look back/ROI", "Look forward", "Sales", "None"], c: 0 },
-        { q: "Plan section:", o: ["Roadmap/Strategy", "History", "Complaints", "None"], c: 0 },
-        { q: "ROI proof:", o: ["Justifies fees", "Is optional", "Boring", "None"], c: 0 },
-        { q: "Frequency:", o: ["Quarterly", "Weekly", "Daily", "Never"], c: 0 },
-        { q: "NPS:", o: ["Net Promoter Score", "No Problem Sir", "None", "New"], c: 0 },
-        { q: "Strategic check-in:", o: ["QBR", "Daily Standup", "Email", "None"], c: 0 },
-        { q: "Deck structure:", o: ["Results -> Plan -> Feedback", "Sales -> Sales", "None", "All"], c: 0 },
-        { q: "Feedback goal:", o: ["Improvement", "Defense", "None", "Arguing"], c: 0 },
-        { q: "Roadmap:", o: ["Future value", "Past value", "None", "Cost"], c: 0 }
+        { q: "QBR stands for Quarterly Business Review. Purpose is:", o: ["Invoice review", "Strategic alignment: review results, plan ahead, strengthen relationship", "Project kickoff", "Annual celebration"], c: 1 },
+        { q: "QBR deck starts with 'Review' section. What should this contain?", o: ["Invoice history", "Results achieved: KPIs, ROI, wins from last quarter", "Team bios", "Future plans only"], c: 1 },
+        { q: "Client's CEO asks 'Is this worth the investment?' Best proof:", o: ["Your opinion that it's valuable", "Concrete ROI data showing business impact", "Industry benchmarks", "Promise of future results"], c: 1 },
+        { q: "During QBR, client reveals new company priorities that change everything. You should:", o: ["Stick to original plan — we agreed on it", "Adapt strategy to align with their new priorities", "Ignore it — QBR is about reviewing past", "Suggest they work with a different agency"], c: 1 },
+        { q: "QBR 'Plan' section should include:", o: ["Only what we want to sell them", "Roadmap for next quarter aligned to THEIR goals", "Original project scope", "Nothing — let them decide"], c: 1 },
+        { q: "Net Promoter Score (NPS) during QBR is 9. What does this mean?", o: ["Average client — nothing special", "Promoter — they'd recommend you; strong relationship", "At risk — need immediate intervention", "Perfect — no follow-up needed"], c: 1 },
+        { q: "Client mentions competitor doing similar work cheaper. QBR response:", o: ["Match the price immediately", "Reinforce unique value and ROI; cheaper isn't always better", "Dismiss their concern", "Tell them to switch"], c: 1 },
+        { q: "QBR reveals client engagement dropped 40% compared to last quarter. You should:", o: ["Ignore it — focus on positives", "Address it head-on: 'I noticed engagement dropped — what changed?'", "Hope it rebounds next quarter", "Blame their team"], c: 1 },
+        { q: "After QBR, you should send:", o: ["Nothing — they were at the meeting", "Summary email with key points, action items, and next steps", "Invoice immediately", "Thank you card"], c: 1 },
+        { q: "QBR frequency for your biggest clients should be:", o: ["Annual — too much work otherwise", "Quarterly at minimum; monthly check-ins for largest accounts", "When they complain", "Ask them what they prefer"], c: 1 }
     ],
-    // Task 7: Tools
+    // Task 7: Tools & Systems - Scenario-Based
     [
-        { q: "HubSpot:", o: ["CRM/Single Source of Truth", "Design tool", "Game", "None"], c: 0 },
-        { q: "Slack Connect:", o: ["Shared channel", "Internal only", "Banned", "None"], c: 0 },
-        { q: "Loom:", o: ["Video updates", "Text", "Audio", "None"], c: 0 },
-        { q: "Boundaries:", o: ["M-F Only", "24/7", "Never", "None"], c: 0 },
-        { q: "Log calls:", o: ["Always", "Never", "Sometimes", "Optional"], c: 0 },
-        { q: "If not in HubSpot:", o: ["It didn't happen", "It's fine", "Who cares", "None"], c: 0 },
-        { q: "Email templates:", o: ["Efficiency", "Laziness", "Bad", "None"], c: 0 },
-        { q: "Video vs Text:", o: ["Video often clearer", "Text better", "None", "Same"], c: 0 },
-        { q: "CRM:", o: ["Customer Relationship Mgmt", "Car", "Cat", "None"], c: 0 },
-        { q: "Slack etiquette:", o: ["Professional", "Casual", "Rude", "None"], c: 0 }
+        { q: "You had a great call with a client but forgot to log it in HubSpot. Risk:", o: ["No risk — you remember what happened", "Major risk — if not in CRM, it didn't happen; team lacks context", "Minor — you'll update later", "CRM is optional"], c: 1 },
+        { q: "Slack Connect channel with client is getting spammy with internal noise. Best practice:", o: ["Let it happen — they're part of the team", "Keep client channels focused; internal discussions stay internal", "Remove the client from Slack", "Ignore the noise"], c: 1 },
+        { q: "Client prefers phone calls but you prefer email. You should:", o: ["Insist on email — it's more efficient", "Adapt to their preference — meet clients where they are", "Compromise with Slack", "Stop communicating"], c: 1 },
+        { q: "Loom video updates vs text email. When is Loom better?", o: ["Never — email is faster", "When showing is clearer than telling (walkthroughs, complex updates)", "Always — it's more personal", "Only for technical people"], c: 1 },
+        { q: "Client messages you on Slack at 11PM on Saturday. Response?", o: ["Reply immediately — client is king", "Acknowledge within business hours — boundaries matter", "Ignore permanently", "Reply but be annoyed"], c: 1 },
+        { q: "New team member takes over account but HubSpot notes are empty. What's the impact?", o: ["They'll figure it out", "Lost context, poor handover, client may need to repeat themselves", "No impact — start fresh", "Blame the previous CSM"], c: 1 },
+        { q: "Email template vs custom email: when to use templates?", o: ["Always — saves time", "For repetitive communications; customize for unique situations", "Never — clients feel ignored", "Only for new clients"], c: 1 },
+        { q: "Client asks 'Can you share access to our HubSpot notes?' Your answer:", o: ["Yes — transparency always", "Depends on content; some internal notes may not be appropriate", "Never — it's confidential", "Ask your manager"], c: 1 },
+        { q: "CRM says client hasn't been contacted in 45 days. What does this indicate?", o: ["Client is self-sufficient", "Relationship at risk — proactive outreach overdue", "Account is healthy", "Normal for stable clients"], c: 1 },
+        { q: "Video calls vs audio-only calls. Research shows:", o: ["No difference", "Video builds stronger relationships — face-to-face connection matters", "Audio is better — less distracting", "Clients prefer audio"], c: 1 }
     ],
-    // Task 8: Conflict
+    // Task 8: Conflict Resolution - Scenario-Based
     [
-        { q: "LATTE:", o: ["Listen Acknowledge etc", "Coffee", "Late", "None"], c: 0 },
-        { q: "Radical Responsibility:", o: ["Own it", "Blame others", "Hide", "Run"], c: 0 },
-        { q: "De-escalate:", o: ["Calm down", "Angry up", "Fight", "None"], c: 0 },
-        { q: "Blame dev team:", o: ["Never", "Always", "Sometimes", "Okay"], c: 0 },
-        { q: "Advocate:", o: ["Happy client", "Angry client", "Neutral", "None"], c: 0 },
-        { q: "Make-good:", o: ["Compensation/Gift", "Apology only", "Nothing", "Bill"], c: 0 },
-        { q: "Listen:", o: ["First step", "Last step", "Optional", "Never"], c: 0 },
-        { q: "Explain:", o: ["After fixing/Thanking", "First", "Never", "None"], c: 0 },
-        { q: "Mistakes:", o: ["Happen/Opportunity to fix", "Fatal", "Rare", "None"], c: 0 },
-        { q: "Tone:", o: ["Calm/Professional", "Angry", "Defensive", "None"], c: 0 }
+        { q: "Client angrily emails: 'This is UNACCEPTABLE. Call me NOW.' First action:", o: ["Reply with defensive explanation", "Call immediately — urgency matters when emotions are high", "Wait for them to calm down", "Forward to your manager"], c: 1 },
+        { q: "LATTE conflict framework: L-A-T-T-E. The 'L' stands for:", o: ["Learn", "LISTEN — let them fully express their frustration first", "Lead", "Love"], c: 1 },
+        { q: "Client says 'Your developers are incompetent.' Correct response:", o: ["Agree to keep them happy", "Defend the team angrily", "Acknowledge frustration, own the issue, don't blame internally", "Apologize and fire the developer"], c: 2 },
+        { q: "'Radical Responsibility' means:", o: ["Blame others louder", "Own the problem even if it wasn't 'your fault' — the client doesn't care whose fault it is", "Responsible for everything forever", "Blame the client tactfully"], c: 1 },
+        { q: "Major bug caused client to lose $2,000 in sales. Make-good options:", o: ["Apologize only — we're not responsible", "Credit next invoice, rush fix, over-communicate until resolved", "Give $2,000 cash", "Deny the bug existed"], c: 1 },
+        { q: "Client CC's your CEO on an angry email. This signals:", o: ["Normal escalation behavior", "Severe breakdown — they've lost trust in you", "They like your CEO", "Nothing — happens all the time"], c: 1 },
+        { q: "After fixing a major issue, client is still cold and distant. What's missing?", o: ["Nothing — they got what they wanted", "Emotional repair — the relationship needs rebuilding beyond the fix", "A bigger discount", "More apologies"], c: 1 },
+        { q: "Client threatens to leave if issue isn't resolved in 24 hours. It's a 3-day fix. Strategy:", o: ["Lie about the timeline", "Explain real timeline, show progress, communicate every 4-6 hours", "Miss the deadline silently", "Let them leave"], c: 1 },
+        { q: "Team made a mistake. Client is furious. You should NOT:", o: ["Apologize sincerely", "Blame specific team members to the client", "Explain next steps", "Offer make-good"], c: 1 },
+        { q: "Conflict resolved. How do you prevent similar issues?", o: ["Hope it doesn't happen again", "Document root cause, implement process change, follow up with client", "Blame the client later", "Move on immediately"], c: 1 }
     ],
-    // Task 9: Scenarios
+    // Task 9: Practice Scenarios - Complex Real-World Cases
     [
-        { q: "Site down action:", o: ["Call immediately", "Email", "Wait", "Sleep"], c: 0 },
-        { q: "Update frequency:", o: ["Every 30 mins", "Next day", "Never", "Weekly"], c: 0 },
-        { q: "Budget cut action:", o: ["Offer Pause/Pivot", "Cancel immediately", "Scream", "None"], c: 0 },
-        { q: "Angry email channel:", o: ["Switch to Phone", "Reply All", "Ignore", "Block"], c: 0 },
-        { q: "Mock Kickoff:", o: ["Practice", "Real", "Waste", "None"], c: 0 },
-        { q: "Maintenance mode:", o: ["Keeps client (reduced)", "Loses client", "Bad", "None"], c: 0 },
-        { q: "Devs on it:", o: ["Reassurance", "Lie", "Bad", "None"], c: 0 },
-        { q: "Seeing this too:", o: ["Validation", "Denial", "None", "All"], c: 0 },
-        { q: "SEO pitch:", o: ["Value add", "Annoyance", "None", "Bad"], c: 0 },
-        { q: "Cancel email:", o: ["Call action", "Delete", "Accept", "None"], c: 0 }
+        { q: "Client's site is DOWN at 3AM. You see the alert but it's not business hours. What do you do?", o: ["Wait until morning — it's their fault", "Alert the dev team immediately; text/call client with status update", "Send an email — async is fine", "Ignore until morning"], c: 1 },
+        { q: "Client emails: 'We've decided to cancel effective immediately.' First response:", o: ["Send cancellation paperwork", "Ask for a call to understand why — every cancel is a learning opportunity", "Accept and move on", "Argue why they're wrong"], c: 1 },
+        { q: "During QBR, client reveals they're evaluating 3 competitors. Your response:", o: ["Pretend you didn't hear it", "Acknowledge it: 'What are you hoping they'll offer that we don't?'", "Match any competitor price", "Get defensive"], c: 1 },
+        { q: "Angry client sends ALL-CAPS EMAIL about minor issue. Best de-escalation:", o: ["Reply in all-caps back", "Switch to phone — tone gets lost in text", "Ignore the anger", "Reply with formal corporate language"], c: 1 },
+        { q: "New client asks 'Can you guarantee we'll get 10x ROI?' Ethical answer:", o: ["Yes — lock in the sale", "No — set realistic expectations; explain what factors drive results", "Maybe — see how it goes", "Results aren't guaranteed at all"], c: 1 },
+        { q: "Client's internal team is sabotaging your project (jealousy). Strategy:", o: ["Complain to client's CEO", "Build relationships with saboteurs; make them allies not enemies", "Ignore and push through", "Quit the account"], c: 1 },
+        { q: "Project completed. Client 'happy' but no referral or testimonial. Why might this be?", o: ["They're too busy", "They're politely satisfied but not delighted — room to exceed expectations", "Testimonials are extra work", "They're introverts"], c: 1 },
+        { q: "Client asks for service outside your expertise (legal advice). Correct action:", o: ["Give advice anyway to help", "Clearly state it's not your area; offer to connect them with someone qualified", "Ignore the request", "Google the answer"], c: 1 },
+        { q: "Your colleague left the company mid-project. New accounts landed on you. First priority:", o: ["Wait for clients to reach out", "Proactive outreach to all inherited accounts immediately", "Read old emails eventually", "Hope for the best"], c: 1 },
+        { q: "High-value client asks for scope changes that will lose money. How do you handle it?", o: ["Say yes to everything — keep them happy", "Discuss trade-offs: 'We can do X, but Y will need to shift'", "Refuse completely", "Do the work but complain internally"], c: 1 }
     ],
-    // Task 10: Final (20)
+    // Task 10: Final - 20 Challenging Scenario Questions
     [
-        { q: "TTV:", o: ["Time To Value", "TV", "None", "Time"], c: 0 },
-        { q: "Churn:", o: ["Attrition", "Growth", "None", "Sales"], c: 0 },
-        { q: "LATTE:", o: ["Conflict Framework", "Coffee", "None", "Late"], c: 0 },
-        { q: "QBR:", o: ["Quarterly Business Review", "Quiz", "None", "Quality"], c: 0 },
-        { q: "HubSpot:", o: ["CRM", "Chat", "None", "Email"], c: 0 },
-        { q: "Ghosting:", o: ["Red Flag", "Good", "None", "Fun"], c: 0 },
-        { q: "White Glove:", o: ["Premium Service", "Cleaning", "None", "Cold"], c: 0 },
-        { q: "Retention > Acquisition:", o: ["True", "False", "None", "Maybe"], c: 0 },
-        { q: "Trusted Advisor:", o: ["Partner", "Vendor", "None", "Enemy"], c: 0 },
-        { q: "Kickoff:", o: ["Start", "End", "None", "Middle"], c: 0 },
-        { q: "Upsell:", o: ["Expansion", "Downsell", "None", "Churn"], c: 0 },
-        { q: "NPS:", o: ["Net Promoter Score", "No Problem", "None", "New"], c: 0 },
-        { q: "Loom:", o: ["Video", "Text", "None", "Audio"], c: 0 },
-        { q: "Slack Boundaries:", o: ["M-F", "24/7", "None", "Never"], c: 0 },
-        { q: "Radical Responsibility:", o: ["Own it", "Blame", "None", "Hide"], c: 0 },
-        { q: "Pause:", o: ["Alternative to Cancel", "Cancel", "None", "Stop"], c: 0 },
-        { q: "POC:", o: ["Point of Contact", "Proof", "None", "Piece"], c: 0 },
-        { q: "ROI:", o: ["Return On Investment", "Radio", "None", "Run"], c: 0 },
-        { q: "Trust Equation:", o: ["Formula", "Math", "None", "Science"], c: 0 },
-        { q: "Success Mindset:", o: ["Proactive", "Reactive", "None", "Lazy"], c: 0 }
+        { q: "Client's POC resigned. No response from anyone at the company for 2 weeks. Next action:", o: ["Wait for them to contact you", "Attempt multiple channels (email, phone, LinkedIn) to find new contact", "Close the account", "Send invoice and hope"], c: 1 },
+        { q: "NPS 3 (Detractor). Client hasn't complained but score is terrible. What's likely?", o: ["Survey mistake", "Silent dissatisfaction — proactive outreach needed immediately", "They're fine — don't trust surveys", "Competitor influence"], c: 1 },
+        { q: "Client asks for 40% discount on renewal. Your annual revenue from them is $50K. Negotiation approach:", o: ["Give the discount — retention matters", "Understand WHY; propose reduced scope instead of just cheaper price", "Refuse and lose them", "Give 50% discount"], c: 1 },
+        { q: "Project delivered on time, on budget. Client gives NPS 6. Gap analysis:", o: ["They're ungrateful", "Delivery is table stakes; experience and partnership need improvement", "NPS is broken", "Nothing wrong"], c: 1 },
+        { q: "Client's CEO says your work is 'fine' but you sense something's off. Trust your gut?", o: ["No — take words at face value", "Yes — probe deeper: 'What would make this excellent instead of fine?'", "They're just busy", "It's their personality"], c: 1 },
+        { q: "You made a mistake that cost the client money. Manager says 'don't tell them.' You should:", o: ["Follow manager's advice", "Be transparent — hiding mistakes destroys trust when discovered", "Quit your job", "Tell a colleague first"], c: 1 },
+        { q: "Client says 'We love working with you, but we're shrinking budget 30%.' Best retention play:", o: ["Accept reduction and do less work", "Propose 'maintenance mode' to stay involved; protect relationship for future growth", "Push for same budget harder", "Let them go"], c: 1 },
+        { q: "Three clients at risk of churning this month. You can deeply focus on one. Prioritization:", o: ["Biggest revenue first", "Highest likelihood of saving based on signals and relationship strength", "Random selection", "Ignore all three"], c: 1 },
+        { q: "Client missed 5 calls in 3 weeks. Your interpretation:", o: ["They're very busy", "Critical churn signal — escalate to leadership and try alternative channels", "Respectful distance", "They trust you to handle things"], c: 1 },
+        { q: "Client loves you personally but hates another team member. How do you address this?", o: ["Hide the team member from all calls", "Address the concern directly; protect team while solving the issue", "Fire the team member", "Let client complain freely"], c: 1 },
+        { q: "You discover client pays 40% more than a similar account. They don't know. Ethics:", o: ["Tell them — they deserve to know", "Pricing is business confidential; ensure they're getting value for THEIR investment", "Reduce their price secretly", "Charge the other client more"], c: 1 },
+        { q: "Client's business is failing (industry news). Their contract renews in 60 days. You should:", o: ["Wait for renewal conversation", "Proactively discuss their situation; offer flexible options before they ask", "Push for early renewal lock-in", "Ghost them"], c: 1 },
+        { q: "Anonymous feedback: 'Our CSM doesn't understand our business.' Mirror moment:", o: ["Feedback is wrong — I know their business", "Honest reflection — am I truly learning their context or just executing tasks?", "Find who said it", "Ignore anonymous feedback"], c: 1 },
+        { q: "Client says 'Every agency says they're different but they're all the same.' Response:", o: ["We're truly different, trust me", "Show don't tell — let our partnership prove the difference", "All agencies are similar honestly", "Give up on differentiation"], c: 1 },
+        { q: "Major project success. Client is thrilled. You want to ask for referral. Timing:", o: ["Wait 6 months to not seem pushy", "At the peak of happiness — strike while iron is hot", "Never ask — let it happen naturally", "Only if they offer first"], c: 1 },
+        { q: "Client says competitor offered the same service for 50% less. Your analysis:", o: ["Match the price immediately", "Understand what 'same service' means; cheaper often means different", "Let them go to competitor", "Say competitor is lying"], c: 1 },
+        { q: "Internal team says client is 'impossible to work with.' Client says 'team doesn't care.' Reality:", o: ["Client is the problem", "Communication breakdown — both sides need mediation", "Team is the problem", "End the relationship"], c: 1 },
+        { q: "QBR reveals client achieved 150% of goals. They still seem unhappy. Possible reason:", o: ["They want more", "Goals were wrong — we're measuring/celebrating the wrong things", "They're greedy", "Nothing we can do"], c: 1 },
+        { q: "Client's billing contact changed. New person questions every invoice. Approach:", o: ["Defensive stance — we earned this", "Proactive relationship building; help them understand value before next invoice", "Ignore and bill anyway", "Reduce prices to avoid questions"], c: 1 },
+        { q: "Legacy client paying below market rate. Company policy: raise prices. Your relationship:", o: ["Surprise them with new pricing", "Have honest conversation: explain changes, give options, maintain trust", "Grandfather them forever", "Lose the client secretly"], c: 1 }
     ]
 ];
