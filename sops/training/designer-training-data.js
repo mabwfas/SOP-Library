@@ -188,6 +188,43 @@ const task1Content = `
         <li><strong style="color: #94A3B8;">P3:</strong> Inspiration & learning</li>
     </ul>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Apply the 5 Laws</h3>
+    <p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The 5 Laws Audit (10 min)</h4>
+        <p>Find a competitor Shopify store in any niche. Rate it 1-5 on each law:</p>
+        <ol>
+            <li>WHITESPACE = LUXURY (1=crowded, 5=generous breathing room)</li>
+            <li>CONSISTENCY IS KING (1=chaotic, 5=perfect consistency)</li>
+            <li>HIERARCHY GUIDES THE EYE (1=confusing, 5=clear priority)</li>
+            <li>MOBILE FIRST (1=broken on mobile, 5=perfect mobile experience)</li>
+            <li>DESIGN FOR CONVERSION (1=confusing CTAs, 5=clear path to buy)</li>
+        </ol>
+        <p>Write 3 specific improvements you would make.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Conversion Decision Tree (5 min)</h4>
+        <p>Write down 3 design decisions you might face. For each, ask "Will this help visitors buy?"</p>
+        <ul>
+            <li>Adding a animation to the hero → Yes/No and why?</li>
+            <li>Using 5 different fonts → Yes/No and why?</li>
+            <li>Adding more whitespace around CTA → Yes/No and why?</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Designer SOP (10 min)</h4>
+        <p>Open the <a href="../designer-sop.html" target="_blank" style="color: #8B5CF6;">Designer SOP document</a> and read:</p>
+        <ul>
+            <li>The 5 Laws section</li>
+            <li>The Zero Tolerance Policy</li>
+        </ul>
+    </div>
+</div>
 `;
 
 // ===============================================
