@@ -126,31 +126,192 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 PART 1: PEOPLE MINDSET</h2>
+<h2>📚 PART 1: PEOPLE MINDSET - The Guardian of Culture</h2>
 
 <div class="content-section">
-<h3>🎯 More Than Just "Paperwork"</h3>
+<h3>🎯 Why Are You Here?</h3>
+<p>HR is not a support function. At Digital Heroes, HR is a <strong>strategic growth engine</strong>. You are about to learn a role that directly impacts whether this company succeeds or fails.</p>
+
+<div class="warning-box">
+<strong>⚠️ The Uncomfortable Truth:</strong><br>
+Most companies fail not because of bad products or bad marketing. They fail because of <strong>bad people decisions</strong>. One toxic hire can destroy a team. One poor cultural fit can poison morale. One slow termination can cost you your best performers.
+<p style="margin-top: 10px;"><strong>Your job is to prevent all of this.</strong></p>
+</div>
+</div>
+
+<div class="content-section">
+<h3>👤 More Than Just "Paperwork"</h3>
 <p>HR at Digital Heroes is a <strong>Growth Engine</strong>.</p>
-<ul>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ What HR is NOT</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ What HR IS at Digital Heroes</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Paper pushers</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Strategic talent architects</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Policy police</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Culture enablers</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Seat fillers</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Championship team builders</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Event planners</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Employee experience owners</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>🎯 Your Core Identity:</strong>
+<ul style="margin-bottom: 0;">
 <li><strong>We don't just fill seats:</strong> We find athletes who want to win championships.</li>
 <li><strong>We don't just police policies:</strong> We enable people to do their best work.</li>
 <li><strong>We are Guardians of Culture:</strong> A toxic high-performer is fired. No exceptions.</li>
 </ul>
 </div>
+</div>
 
 <div class="content-section">
-<h3>💡 The Philosophy: Employee First</h3>
-<div class="highlight-box">
-<strong>Happy Team = Happy Clients.</strong>
-<p>Our job is to remove friction. If an employee is fighting with slow software or confusing benefits, HR has failed.</p>
+<h3>💡 The Employee First Philosophy</h3>
+<div class="highlight-box" style="text-align: center; font-size: 1.2em;">
+<strong>Happy Team = Happy Clients = Happy Business</strong>
+</div>
+
+<p>This is not just a slogan. It's the strategic foundation of everything we do:</p>
+
+<ul>
+<li>If an employee is fighting with slow software → <strong>HR has failed</strong></li>
+<li>If an employee is confused about their role → <strong>HR has failed</strong></li>
+<li>If an employee doesn't know their growth path → <strong>HR has failed</strong></li>
+<li>If an employee feels unheard → <strong>HR has failed</strong></li>
+</ul>
+
+<div class="warning-box">
+<strong>The Friction Principle:</strong><br>
+Your job is to <em>remove friction</em>. Every process, every policy, every interaction should make it <strong>easier</strong> for people to do their best work. If it adds friction, it's wrong.
+</div>
+</div>
+
+<div class="content-section">
+<h3>🔥 The Toxic High-Performer Rule</h3>
+<p>This is the single most important cultural principle at Digital Heroes:</p>
+
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong style="color: #EF4444;">❌ NO TOXIC HIGH-PERFORMERS</strong><br>
+A developer who ships 3x the code but makes 5 people want to quit is <strong>net negative</strong>. They must go.
+</div>
+
+<p><strong>Why this matters:</strong></p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>The Toxic Star</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>The Impact</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hits 150% of targets</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">+50% individual output</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">BUT... 3 people quit because of them</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">-300% team output + hiring costs</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">AND... 5 people are demotivated</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">-50% productivity across team</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>NET RESULT</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>HUGE LOSS</strong></td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>📊 The People Lifecycle</h3>
+<p>As an HR professional, you own the <strong>entire employee journey</strong>:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0;">
+<div style="text-align: center; padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; border: 1px solid rgba(16, 185, 129, 0.3);">
+<div style="font-size: 2em;">🎯</div>
+<strong>Attract</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">JD, Employer Brand</p>
+</div>
+<div style="text-align: center; padding: 20px; background: rgba(6, 182, 212, 0.1); border-radius: 10px; border: 1px solid rgba(6, 182, 212, 0.3);">
+<div style="font-size: 2em;">🔍</div>
+<strong>Screen</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Resume, Red Flags</p>
+</div>
+<div style="text-align: center; padding: 20px; background: rgba(139, 92, 246, 0.1); border-radius: 10px; border: 1px solid rgba(139, 92, 246, 0.3);">
+<div style="font-size: 2em;">🤝</div>
+<strong>Interview</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Technical, Cultural</p>
+</div>
+<div style="text-align: center; padding: 20px; background: rgba(245, 158, 11, 0.1); border-radius: 10px; border: 1px solid rgba(245, 158, 11, 0.3);">
+<div style="font-size: 2em;">📝</div>
+<strong>Hire</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Offer, Docs</p>
+</div>
+<div style="text-align: center; padding: 20px; background: rgba(34, 197, 94, 0.1); border-radius: 10px; border: 1px solid rgba(34, 197, 94, 0.3);">
+<div style="font-size: 2em;">🚀</div>
+<strong>Onboard</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Day 1, Training</p>
+</div>
+<div style="text-align: center; padding: 20px; background: rgba(236, 72, 153, 0.1); border-radius: 10px; border: 1px solid rgba(236, 72, 153, 0.3);">
+<div style="font-size: 2em;">📈</div>
+<strong>Grow</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Feedback, Promotion</p>
+</div>
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Apply What You Learned</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Self-Assessment (5 min)</h4>
+<p>Open a new document and write your answers to these questions:</p>
+<ol>
+<li>In your own words, what is the difference between "traditional HR" and "HR as a growth engine"?</li>
+<li>Describe a situation where keeping a toxic high-performer would be tempting. Why should you NOT do it?</li>
+<li>List 3 ways you could "remove friction" for employees in their first week.</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Scenario Analysis (5 min)</h4>
+<p><strong>Scenario:</strong> A senior developer has been with the company 2 years and consistently hits 120% of their targets. However, in the last 3 months, 2 junior developers have quit citing "hostile work environment" and mentioned this senior developer by name.</p>
+<p>Write your recommendation:</p>
+<ul>
+<li>What immediate action would you take?</li>
+<li>What investigation steps would you follow?</li>
+<li>What's the likely outcome if the complaints are verified?</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the HR SOP (10 min)</h4>
+<p>Open the <a href="../hr-sop.html" target="_blank" style="color: #8B5CF6;">HR SOP document</a> and read:</p>
+<ul>
+<li>Section 1: Hiring Pipeline Overview</li>
+<li>Section 2: Culture Pillars</li>
+</ul>
+<p>Take notes on any concepts you don't understand — bring them to your 1:1 with your manager.</p>
 </div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned about the HR mindset at Digital Heroes. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about mindset</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 questions about mindset and culture</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
+<li>💡 Questions test <strong>understanding</strong>, not memorization</li>
 </ul>
 </div>
 `;
@@ -212,32 +373,200 @@ const task3Content = `
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: ONBOARDING MASTERY</h2>
+<h2>📚 TASK 4: ONBOARDING MASTERY - Creating Unforgettable First Impressions</h2>
 
 <div class="content-section">
-<h3>🎁 Day 1: The "Wow" Moment</h3>
-<p>First impressions matter.</p>
-<ul>
-<li><strong>Access Ready:</strong> Email, Slack, Notion work BEFORE they log in.</li>
-<li><strong>Welcome Guide:</strong> A clear PDF/Page explaining "Who's Who".</li>
-<li><strong>The Buddy System:</strong> Assign a peer mentor for the first week.</li>
+<h3>🎯 Why Onboarding Matters</h3>
+<p>The first 90 days determine whether an employee becomes a <strong>champion or a regret</strong>. Bad onboarding is the #1 reason good hires fail.</p>
+
+<div class="warning-box">
+<strong>⚠️ The Cost of Bad Onboarding:</strong>
+<ul style="margin-bottom: 0;">
+<li>46% of new hires fail within 18 months — and most cite "poor cultural fit" or "confusion about the role"</li>
+<li>Hiring replacement costs 2-3x annual salary</li>
+<li>Poor onboarding = slow ramp-up = lost productivity for 6+ months</li>
 </ul>
+</div>
 </div>
 
 <div class="content-section">
-<h3>📅 The 30-60-90 Plan</h3>
-<ul>
-<li><strong>30 Days:</strong> Learn (Soak up info).</li>
-<li><strong>60 Days:</strong> Contribute (Start tasks).</li>
-<li><strong>90 Days:</strong> Ownership (Lead projects).</li>
+<h3>🎁 Day 1: The "Wow" Moment</h3>
+<p>First impressions are <strong>permanent impressions</strong>. Make Day 1 unforgettable.</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>⏰ Before Day 1</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Action Required</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email Access</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Created and tested BEFORE Day 1</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Slack Workspace</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Invited to all relevant channels</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Notion Access</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Added to team spaces</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Calendar</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week 1 schedule pre-booked</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Buddy Assigned</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Peer mentor introduced via email</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Welcome Message</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Personal note from manager + team</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>🚫 FAILURE MODE:</strong> Employee arrives Day 1 → Email doesn't work → Waits 2 hours for IT → First impression = chaos<br><br>
+<strong>✅ SUCCESS MODE:</strong> Employee logs in → Everything works → Welcome messages in Slack → Feels valued from minute 1
+</div>
+</div>
+
+<div class="content-section">
+<h3>👥 The Buddy System</h3>
+<p>Every new hire gets a <strong>Buddy</strong> (peer mentor) for their first 30 days.</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(139, 92, 246, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Buddy's Role</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Manager's Role</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Answer "stupid" questions</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Set expectations & goals</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Navigate culture & tools</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Assign work & give feedback</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social introductions</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Career development</td>
+</tr>
+</table>
+
+<div style="background: rgba(139, 92, 246, 0.1); padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 3px solid #8B5CF6;">
+<strong>📝 Buddy Introduction Script:</strong><br><br>
+<em>"Hey [New Hire], I'm [Buddy Name], your onboarding buddy! 👋 I've been here [X months/years] and I'm here to help you navigate the first few weeks. No question is too small — literally ask me anything from 'where's the best Slack channel for memes' to 'how do I submit expenses'. Let's grab a virtual coffee this week!"</em>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📅 The 30-60-90 Day Plan</h3>
+<p>Every new hire follows this structured ramp-up:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+<div style="padding: 25px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+<h4 style="color: #10B981; margin-top: 0;">📚 Days 1-30: LEARN</h4>
+<ul style="margin: 10px 0 0 0; padding-left: 20px;">
+<li>Complete role-specific training</li>
+<li>Shadow team members</li>
+<li>Read all SOPs</li>
+<li>Attend all team meetings</li>
+<li>Daily check-ins with buddy</li>
 </ul>
+<p style="margin: 10px 0 0 0; font-size: 0.9em; color: #64748B;"><strong>Goal:</strong> Understand how we work</p>
+</div>
+
+<div style="padding: 25px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; border: 2px solid rgba(6, 182, 212, 0.3);">
+<h4 style="color: #06B6D4; margin-top: 0;">🛠️ Days 31-60: CONTRIBUTE</h4>
+<ul style="margin: 10px 0 0 0; padding-left: 20px;">
+<li>Take on assigned tasks</li>
+<li>Ask for feedback actively</li>
+<li>Identify process improvements</li>
+<li>Weekly 1:1s with manager</li>
+<li>Start cross-team collaboration</li>
+</ul>
+<p style="margin: 10px 0 0 0; font-size: 0.9em; color: #64748B;"><strong>Goal:</strong> Add value consistently</p>
+</div>
+
+<div style="padding: 25px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.3);">
+<h4 style="color: #8B5CF6; margin-top: 0;">🚀 Days 61-90: OWN</h4>
+<ul style="margin: 10px 0 0 0; padding-left: 20px;">
+<li>Lead small projects independently</li>
+<li>Mentor newer team members</li>
+<li>Propose new initiatives</li>
+<li>Hit KPIs consistently</li>
+<li>90-day review & goal setting</li>
+</ul>
+<p style="margin: 10px 0 0 0; font-size: 0.9em; color: #64748B;"><strong>Goal:</strong> Full autonomy</p>
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚨 Onboarding Red Flags</h3>
+<p>Watch for these warning signs during onboarding:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🚩 Red Flag</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Action</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Doesn't ask questions (Week 1)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Proactively check in — they may be overwhelmed</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Misses meetings without notice</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Direct conversation about expectations</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Negative talk about previous employer</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Note for review — pattern of blame?</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Resists feedback (Week 2+)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Escalate to manager — cultural fit concern</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Create an Onboarding Plan</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Day 1 Checklist (10 min)</h4>
+<p>Create a detailed Day 1 checklist for a new <strong>Developer</strong> joining Digital Heroes:</p>
+<ol>
+<li>List all access/accounts they need</li>
+<li>List all Slack channels they should join</li>
+<li>List the people they should meet on Day 1</li>
+<li>Write the welcome message you'd send in #general</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Write a 30-60-90 Plan (10 min)</h4>
+<p>Draft a 30-60-90 day plan for a <strong>Sales Representative</strong>:</p>
+<ul>
+<li>Days 1-30: What should they learn? What training?</li>
+<li>Days 31-60: What tasks should they start? What metrics?</li>
+<li>Days 61-90: What ownership should they have?</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Buddy Introduction (5 min)</h4>
+<p>Write a personalized buddy introduction message for a new hire joining your team. Make it warm, helpful, and specific to your role.</p>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned how to create world-class onboarding experiences. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about onboarding</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 questions about onboarding best practices</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 5</li>
 </ul>
 </div>
 `;
