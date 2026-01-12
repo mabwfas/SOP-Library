@@ -759,5 +759,146 @@ trainingTasks[7].content = task8Content;
 trainingTasks[8].content = task9Content;
 trainingTasks[9].content = task10Content;
 
-// Quiz questions will be in a separate file due to size
-// See pm-training-quiz.js for all 100 questions
+// Quiz Questions for PM Training
+const allQuizzes = [
+    // Task 1: PM Mindset & Principles
+    [
+        { q: "What is the FIRST non-negotiable PM principle?", o: ["Document everything", "Client never waits for update", "Update daily", "Escalate problems"], c: 1 },
+        { q: "If a client has to ask 'Any update?' what has happened?", o: ["Normal communication", "You've already failed", "They're impatient", "Nothing wrong"], c: 1 },
+        { q: "Daily updates should be sent to:", o: ["Just the inbox", "Just the order chat", "BOTH inbox AND order chat", "Only when asked"], c: 2 },
+        { q: "When should problems be communicated?", o: ["On delivery day", "Within 2 hours of knowing", "Next week", "Only if asked"], c: 1 },
+        { q: "What happens with clients giving PTSD to the team?", o: ["Keep working", "Cancel the order", "Give discount", "Ignore it"], c: 1 },
+        { q: "If client stops responding, what do you do?", o: ["Pause the project", "Wait for response", "Keep working and deliver on time", "Cancel order"], c: 2 },
+        { q: "The 1+1+C meeting format means:", o: ["1 meeting per day", "1 PM + 1 Developer + Client", "1 hour meetings", "Client decides"], c: 1 },
+        { q: "P0 priority means:", o: ["Low priority", "Medium priority", "CRITICAL - must do now", "Optional"], c: 2 },
+        { q: "The 90% Rule states:", o: ["90% of projects succeed", "Last 10% takes 50% of time", "90% budget buffer", "Work 90% of day"], c: 1 },
+        { q: "Buffer principle says add what % to timeline?", o: ["5%", "10%", "20-30%", "50%"], c: 2 }
+    ],
+    // Task 2: Company & Process
+    [
+        { q: "Digital Heroes was founded in:", o: ["2015", "2017", "2019", "2020"], c: 1 },
+        { q: "How many stores has Digital Heroes built?", o: ["500+", "1000+", "2000+", "5000+"], c: 2 },
+        { q: "What is the Fiverr rating?", o: ["4.5★", "4.7★", "4.9★", "5.0★"], c: 2 },
+        { q: "Primary market is:", o: ["UK-based", "US-based", "India-based", "Global"], c: 1 },
+        { q: "YouTube subscribers:", o: ["500K+", "1M+", "2.5M+", "5M+"], c: 2 },
+        { q: "Who owns project from handoff to delivery?", o: ["Sales", "Project Manager", "Developer", "Client"], c: 1 },
+        { q: "Urgent message response time:", o: ["Within 1 hour", "Within 30 minutes", "Within 2 hours", "Same day"], c: 1 },
+        { q: "Standard question response:", o: ["Same day", "Within 4 hours", "Within 24 hours", "Within 48 hours"], c: 1 },
+        { q: "Revision request timeline:", o: ["Acknowledge 2hrs, complete 24-48hrs", "Same day", "1 week", "When possible"], c: 0 },
+        { q: "After hours messages (past 8PM):", o: ["Reply immediately", "Next morning by 10 AM", "Ignore until Monday", "Reply within 1 hour"], c: 1 }
+    ],
+    // Task 3: 14-Day Timeline
+    [
+        { q: "First homepage preview MUST be sent within:", o: ["1 week", "1-2 days", "3-5 days", "When ready"], c: 1 },
+        { q: "Why send early preview?", o: ["Show progress", "Get direction, avoid wasted work", "Client demanded", "Company policy"], c: 1 },
+        { q: "Days 3-5 deliverables:", o: ["Just homepage", "Full homepage, About, Contact", "Products only", "Just setup"], c: 1 },
+        { q: "When are products uploaded?", o: ["Days 1-2", "Days 3-5", "Days 6-8", "Days 9-12"], c: 2 },
+        { q: "Optimization and QA happens:", o: ["Days 1-2", "Days 6-8", "Days 9-12", "Days 13-14"], c: 2 },
+        { q: "Final delivery happens:", o: ["Day 7", "Day 10", "Day 12", "Days 13-14"], c: 3 },
+        { q: "25% milestone check (Day 2-3) asks:", o: ["Budget?", "Is design direction approved?", "Happy?", "Ready?"], c: 1 },
+        { q: "50% check (Day 7) asks:", o: ["Design approved?", "Does homepage represent brand?", "More budget?", "Timeline ok?"], c: 1 },
+        { q: "Day 1-2 preview must include all EXCEPT:", o: ["Theme with brand colors", "Header with logo", "All products uploaded", "Hero section"], c: 2 },
+        { q: "What do you send with preview?", o: ["Just link", "Email only", "Loom video + preview link", "Screenshot"], c: 2 }
+    ],
+    // Task 4: Client Onboarding  
+    [
+        { q: "Welcome message should be sent within:", o: ["1 hour", "4 hours", "24 hours", "48 hours"], c: 0 },
+        { q: "Shopify Collaborator Code request within:", o: ["1 hour", "4 hours", "24 hours", "1 week"], c: 1 },
+        { q: "Kickoff call should be scheduled within:", o: ["1 hour", "4 hours", "24 hours", "1 week"], c: 2 },
+        { q: "Before work starts, confirm:", o: ["Budget approved", "ALL assets received", "Timeline only", "Just access"], c: 1 },
+        { q: "Onboarding questionnaire should take:", o: ["30 min", "5 min", "1 hour", "2 hours"], c: 1 },
+        { q: "Reference stores question asks:", o: ["1 store", "3 you love + 1 you hate", "5 stores", "Any stores"], c: 1 },
+        { q: "What access method is used for Shopify?", o: ["Admin login", "Staff account", "Settings → Users → Add Staff", "Direct password"], c: 2 },
+        { q: "Brand assets should be shared via:", o: ["Email attachment", "Google Drive/Dropbox link", "WhatsApp", "Text"], c: 1 },
+        { q: "Standard revision rounds included:", o: ["1", "2", "3", "Unlimited"], c: 1 },
+        { q: "Expected delivery communicated is:", o: ["7 days", "10 days", "14 days from now", "When ready"], c: 2 }
+    ],
+    // Task 5: Daily Operations
+    [
+        { q: "The Communication Golden Rule:", o: ["Reply fast", "Client NEVER asks 'Any update?'", "Update weekly", "Call daily"], c: 1 },
+        { q: "Daily update template includes all EXCEPT:", o: ["Today's Progress", "Tomorrow's Plan", "Personal problems", "Preview link"], c: 2 },
+        { q: "Live Revision Calls are done on:", o: ["Phone", "Google Meet", "Zoom only", "In person"], c: 1 },
+        { q: "What takes 3 days of messages can be done in:", o: ["30 min call", "1 hour call", "2 hours", "Full day"], c: 1 },
+        { q: "Text changes should be fixed:", o: ["Later", "LIVE on call", "Next day", "When convenient"], c: 1 },
+        { q: "Custom code should be fixed:", o: ["LIVE", "LATER (not live)", "Never", "Immediately"], c: 1 },
+        { q: "If NO progress was made today, you should:", o: ["Say nothing", "Send update anyway", "Wait until tomorrow", "Apologize"], c: 1 },
+        { q: "Timeline Status in update should show:", o: ["Maybe", "On Track for [Date]", "TBD", "Unknown"], c: 1 },
+        { q: "'Need From You' section should always:", o: ["Ask for more money", "List pending items or 'Nothing needed'", "Be empty", "Complain"], c: 1 },
+        { q: "Preview in daily update is:", o: ["Optional", "Loom video or screenshot", "Text only", "Not needed"], c: 1 }
+    ],
+    // Task 6: PM Scenarios
+    [
+        { q: "Client asks for FREE extra work. Correct response:", o: ["Sure, no problem!", "Explain it's out of scope, offer quote", "Just do it", "Ignore request"], c: 1 },
+        { q: "When client is unresponsive 3+ days:", o: ["Stop work", "Send gentle check-in", "Cancel project", "Escalate immediately"], c: 1 },
+        { q: "Day 7 of no response, final message warns about:", o: ["Fees", "Project may need re-scheduling", "Cancellation", "Bad review"], c: 1 },
+        { q: "Client says 'This is not what I wanted. Start over.' You should:", o: ["Argue", "Get defensive", "Ask clarifying questions", "Start over immediately"], c: 2 },
+        { q: "When client hates design, first ask:", o: ["What's wrong with you?", "What specific elements don't match?", "Should we cancel?", "Want a refund?"], c: 1 },
+        { q: "Scope change quote should include:", o: ["Discount", "Additional cost + timeline extension", "Free work", "Nothing extra"], c: 1 },
+        { q: "NEVER do when client pushes back:", o: ["Listen", "Ask questions", "Get defensive", "Document"], c: 2 },
+        { q: "Blog + Mailchimp request response:", o: ["Sure, free!", "Out of scope, here are options", "We don't do that", "Later"], c: 1 },
+        { q: "First option for add-on should be:", o: ["Reject", "Add to current project + cost + timeline", "Free", "Ignore"], c: 1 },
+        { q: "Best way to handle 'I changed my mind' complete redesign:", o: ["Free redo", "New quote required", "Refuse", "Argue"], c: 1 }
+    ],
+    // Task 7: Revisions & Scope
+    [
+        { q: "Standard revision rounds included:", o: ["1", "2", "3", "Unlimited"], c: 1 },
+        { q: "Revisions must be submitted as:", o: ["One by one", "Consolidated list", "Verbal requests", "Whenever"], c: 1 },
+        { q: "Change button color is:", o: ["Scope change", "Revision (included)", "New project", "Extra cost"], c: 1 },
+        { q: "Add completely new page is:", o: ["Revision", "Scope Change (Extra Cost)", "Free", "Included"], c: 1 },
+        { q: "Minor scope change (<2 hrs) is:", o: ["Full quote", "Goodwill/free", "Reject", "New project"], c: 1 },
+        { q: "Medium scope change (2-8 hrs) needs:", o: ["Nothing", "Quote add-on", "New proposal", "Rejection"], c: 1 },
+        { q: "Major scope change (>8 hrs) requires:", o: ["Just do it", "New project proposal", "Free work", "Add-on"], c: 1 },
+        { q: "Before starting scope change work:", o: ["Just start", "Get written approval", "Verbal ok", "Assume yes"], c: 1 },
+        { q: "Reorder homepage sections is:", o: ["Scope change", "Revision (included)", "Extra cost", "New project"], c: 1 },
+        { q: "Add 50 more products than quoted is:", o: ["Revision", "Scope Change", "Free", "Included"], c: 1 }
+    ],
+    // Task 8: Escalation Protocol
+    [
+        { q: "Level 1 (PM) handles:", o: ["Refunds", "Minor delays 1-2 days", "Legal threats", "Reviews"], c: 1 },
+        { q: "Level 2 (GM) handles:", o: ["Minor delays", "Major delays 3+ days, unhappy signals", "Minor scope", "Text changes"], c: 1 },
+        { q: "Level 3 (Founder) handles:", o: ["Delays", "Refund requests, legal threats", "Scope questions", "Updates"], c: 1 },
+        { q: "Escalate to GM IMMEDIATELY when:", o: ["Client is happy", "Client threatens negative review", "Normal delay", "Scope question"], c: 1 },
+        { q: "Project delayed more than X days = escalate:", o: ["3 days", "5 days", "7 days", "10 days"], c: 1 },
+        { q: "Escalation message must include:", o: ["Jokes", "What I've Tried + Recommendation", "Nothing", "Blame"], c: 1 },
+        { q: "Client is abusive - escalate to:", o: ["No one", "GM immediately", "Wait", "Ignore"], c: 1 },
+        { q: "Technical issue you can't resolve:", o: ["Ignore", "Escalate", "Blame client", "Hide it"], c: 1 },
+        { q: "Escalation template needs 'Need Decision By':", o: ["No", "Yes - deadline for response", "Optional", "Never"], c: 1 },
+        { q: "Scope dispute over significant amount goes to:", o: ["PM only", "GM", "Ignore", "Client wins"], c: 1 }
+    ],
+    // Task 9: Handover & QA
+    [
+        { q: "Delivery checklist - Design Complete includes:", o: ["Just homepage", "All pages styled, mobile perfect", "Desktop only", "One page"], c: 1 },
+        { q: "Before delivery, test order must be:", o: ["Optional", "Completed", "Skipped", "Client does it"], c: 1 },
+        { q: "Mobile PageSpeed target:", o: ["50+", "70+", "85+", "95+"], c: 2 },
+        { q: "Kickoff call duration:", o: ["15 min", "30-45 min", "1 hour", "2 hours"], c: 1 },
+        { q: "Kickoff call 0-5 min covers:", o: ["Design", "Introductions & Thanks", "Timeline", "Tech"], c: 1 },
+        { q: "Kickoff call 5-15 min covers:", o: ["Intros", "Requirements Review", "Bye", "Nothing"], c: 1 },
+        { q: "Handover meeting duration:", o: ["15 min", "30 min", "1 hour", "2 hours"], c: 1 },
+        { q: "Before handover, NO placeholder text means:", o: ["Optional", "All content complete", "Some ok", "Skip check"], c: 1 },
+        { q: "Handover includes asking for:", o: ["Extra payment", "Review request", "Nothing", "Sympathy"], c: 1 },
+        { q: "All navigation links must:", o: ["Mostly work", "100% work", "Be tested later", "Optional"], c: 1 }
+    ],
+    // Task 10: Final Certification (20 questions)
+    [
+        { q: "First non-negotiable principle:", o: ["Document", "Client never waits for update", "Buffer", "Scope"], c: 1 },
+        { q: "Daily updates go to:", o: ["1 place", "BOTH inbox AND order chat", "Just client", "Team"], c: 1 },
+        { q: "First preview within:", o: ["Week", "1-2 days", "5 days", "When ready"], c: 1 },
+        { q: "Standard delivery timeline:", o: ["7 days", "10 days", "14 days", "21 days"], c: 2 },
+        { q: "Revision rounds included:", o: ["1", "2", "3", "Unlimited"], c: 1 },
+        { q: "Escalate to GM at X days delay:", o: ["3", "5", "7", "10"], c: 1 },
+        { q: "Welcome message within:", o: ["1 hour", "4 hours", "24 hours", "48 hours"], c: 0 },
+        { q: "Buffer to add to timeline:", o: ["10%", "20-30%", "50%", "100%"], c: 1 },
+        { q: "1+1+C format means:", o: ["1 call", "1 PM + 1 Dev + Client", "1 hour", "1 week"], c: 1 },
+        { q: "Client threatens bad review - escalate to:", o: ["No one", "GM", "Ignore", "Accept"], c: 1 },
+        { q: "Unresponsive client - you should:", o: ["Stop work", "Keep working, deliver on time", "Cancel", "Refund"], c: 1 },
+        { q: "Out of scope request needs:", o: ["Free work", "Quote + written approval", "Ignore", "Just do it"], c: 1 },
+        { q: "Mobile PageSpeed target:", o: ["50+", "70+", "85+", "95+"], c: 2 },
+        { q: "Problems communicated within:", o: ["24 hours", "2 hours of knowing", "1 week", "On delivery"], c: 1 },
+        { q: "P0 priority means:", o: ["Low", "Medium", "CRITICAL", "Optional"], c: 2 },
+        { q: "Toxic client policy:", o: ["Keep working", "Cancel order - we don't work with them", "Discount", "Ignore"], c: 1 },
+        { q: "Kickoff call duration:", o: ["15 min", "30-45 min", "1 hour", "2 hours"], c: 1 },
+        { q: "Video submission length:", o: ["10 min", "30 min", "1 hour", "5 min"], c: 1 },
+        { q: "Response to 'just this one thing' free request:", o: ["Sure!", "Explain scope, offer quote", "Argue", "Ignore"], c: 1 },
+        { q: "Scope is:", o: ["Flexible", "SACRED - new request = new quote", "Whatever client wants", "Optional"], c: 1 }
+    ]
+];
