@@ -330,20 +330,102 @@ const task3Content = `
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: CASH FLOW MANAGEMENT</h2>
+<h2>📚 TASK 4: CASH FLOW MANAGEMENT - The Lifeblood of the Business</h2>
 
 <div class="content-section">
 <h3>💧 Cash is Oxygen</h3>
-<p>A profitable business can die if it runs out of cash.</p>
-<ul>
-<li><strong>AR (Accounts Receivable):</strong> Money owed to us. Collect FAST.</li>
-<li><strong>AP (Accounts Payable):</strong> Money we owe. Pay ON TIME (but not early).</li>
-</ul>
+<div class="warning-box">
+<strong>⚠️ A profitable business can die if it runs out of cash.</strong>
+<p>Profit is on paper. Cash is in the bank. You can't pay salaries with invoices.</p>
+</div>
 </div>
 
 <div class="content-section">
-<h3>⚠️ The Crunch</h3>
-<p>If AR > AP for too long, we can't make payroll. This is the #1 risk.</p>
+<h3>📊 AR vs AP Management</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Metric</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>What It Is</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Goal</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>AR (Accounts Receivable)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Money clients owe us</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #22C55E;"><strong>Collect FAST</strong> (< 14 days)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>AP (Accounts Payable)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Money we owe vendors</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #F59E0B;"><strong>Pay ON TIME</strong> (not early)</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>The Golden Rule:</strong> Money should come IN faster than it goes OUT. If AR > AP for too long, you can't make payroll.
+</div>
+</div>
+
+<div class="content-section">
+<h3>📅 Weekly Cash Flow Review</h3>
+<p>Every week, check:</p>
+<ul>
+<li><strong>Opening Balance:</strong> What we started with</li>
+<li><strong>Expected Inflows:</strong> Payments due this week (from Fiverr, clients)</li>
+<li><strong>Expected Outflows:</strong> Salaries, subscriptions, bills due</li>
+<li><strong>Projected Close:</strong> What we'll end with</li>
+</ul>
+
+<div class="warning-box">
+<strong>⚠️ Cash Crunch Danger Zone:</strong>
+<p>If projected close is less than 2 weeks of payroll, escalate immediately to leadership.</p>
+</div>
+</div>
+
+<div class="content-section">
+<h3>⚡ Collection Best Practices</h3>
+<ol>
+<li><strong>Day 1:</strong> Send invoice same day as delivery</li>
+<li><strong>Day 7:</strong> Friendly reminder if not paid</li>
+<li><strong>Day 14:</strong> Second reminder, flag to PM</li>
+<li><strong>Day 21:</strong> Escalate to senior team</li>
+<li><strong>Day 30+:</strong> Consider collection actions</li>
+</ol>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Master Cash Flow Analysis</h3>
+<p><strong>Before taking the quiz, complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Cash Crunch Scenario (10 min)</h4>
+<p>Scenario: Opening balance is ₹5 lakhs. Expected inflows this week: ₹3 lakhs. Expected outflows: Payroll ₹8 lakhs, subscriptions ₹50K.</p>
+<p>Questions:</p>
+<ol>
+<li>What's the projected close?</li>
+<li>Is this a danger zone?</li>
+<li>What action would you take?</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Write a Collection Email (10 min)</h4>
+<p>Write a friendly Day 7 reminder email for an invoice that hasn't been paid. It should be:</p>
+<ul>
+<li>Professional but warm</li>
+<li>Include the invoice number and amount</li>
+<li>Provide payment options</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Finance SOP (10 min)</h4>
+<p>Open the <a href="../finance-sop.html" target="_blank" style="color: #8B5CF6;">Finance SOP document</a> and read:</p>
+<ul>
+<li>Cash Flow Management section</li>
+<li>AR Collection Procedures section</li>
+</ul>
+</div>
 </div>
 
 <div class="content-section">

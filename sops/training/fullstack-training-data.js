@@ -278,6 +278,44 @@ const task1Content = `
 <strong>Golden Rule:</strong> Production issues > Security > Data > Deadlines > Communication > Development
 </div>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Master Full Stack Principles</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Memorize the 5 Principles (5 min)</h4>
+<p>Write out all 5 Project Principles from memory:</p>
+<ol>
+<li>SPEC BEFORE ____</li>
+<li>SCOPE IS ____ AFTER APPROVAL</li>
+<li>____-BASED DELIVERY</li>
+<li>CODE QUALITY IS ____</li>
+<li>TEST BEFORE ____</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Scope Creep Response (10 min)</h4>
+<p>A client says: "Can you also add a mobile app version? It shouldn't take long."</p>
+<p>Write your professional response that:</p>
+<ul>
+<li>Acknowledges their request positively</li>
+<li>Explains why it's out of scope</li>
+<li>Offers a path forward (Phase 2 or new quote)</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Fullstack SOP (15 min)</h4>
+<p>Open the <a href="../fullstack-sop.html" target="_blank" style="color: #8B5CF6;">Full Stack SOP document</a> and read:</p>
+<ul>
+<li>The 5 Project Principles section</li>
+<li>The Quality Standards section</li>
+<li>The Technical Specification Document section</li>
+</ul>
+</div>
+</div>
 `;
 
 // =====================================================
