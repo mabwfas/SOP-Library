@@ -325,26 +325,105 @@ const task3Content = `
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: CONTENT CREATION</h2>
+<h2>📚 TASK 4: CONTENT CREATION - Making Posts That Stop the Scroll</h2>
 
 <div class="content-section">
-<h3>🪝 Anatomy of a Viral Post</h3>
-<img src="images/viral_hook_anatomy.png" alt="Viral Hook Anatomy" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<h3>🪝 The Anatomy of a Viral Post</h3>
+<div class="highlight-box">
+<strong>Every viral post has 3 elements:</strong>
+<ol>
+<li><strong>HOOK (0-3 sec):</strong> Stops the scroll. Visual or text that demands attention.</li>
+<li><strong>VALUE (3-30 sec):</strong> Delivers on the promise. Teaches, entertains, or inspires.</li>
+<li><strong>CTA (End):</strong> Tells them what to do next. Follow, comment, save, share.</li>
+</ol>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🎥 Video Rules (Reels/TikTok)</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Element</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Rule</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>First 0-3 seconds</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Must move or intrigue IMMEDIATELY</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Algorithm measures drop-off. Hook early or die.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Pacing</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cut "umms" and silence. Keep it fast.</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dead air = scroll away</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Captions</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">MANDATORY (85% watch muted)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No captions = invisible content</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trending Audio</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use it FAST (trends die in 48 hours)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Algorithm boosts trending sounds</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🛠️ Content Creation Stack</h3>
 <ul>
-<li><strong>0-3 Seconds:</strong> The Visual Hook. Must move or intrigue immediately.</li>
-<li><strong>Pacing:</strong> Cut out "umms" and silence. Keep it fast.</li>
-<li><strong>Captions:</strong> Mandatory (Most people watch mute).</li>
+<li><strong>CapCut:</strong> Quick mobile editing, auto-captions, effects</li>
+<li><strong>Canva:</strong> Static graphics, carousels, templates</li>
+<li><strong>Figma:</strong> Advanced design when Canva isn't enough</li>
+<li><strong>ChatGPT:</strong> Caption ideas, hook brainstorming, hashtags</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Create Viral-Ready Content</h3>
+<p><strong>Before taking the quiz, complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Write 5 Hooks (10 min)</h4>
+<p>Write 5 different hooks for this topic: "How to increase Shopify sales"</p>
+<p>Use these hook types:</p>
+<ol>
+<li>Curiosity Gap: "The #1 thing killing your..."</li>
+<li>Contrarian: "Why [common advice] is wrong..."</li>
+<li>Promise: "How to [result] in [time]..."</li>
+<li>Question: "Are you making this mistake?"</li>
+<li>Story: "I just helped a client..."</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Script a 30-Second Reel (10 min)</h4>
+<p>Script a Reel announcing a new feature/product. Include:</p>
+<ul>
+<li>Hook (first 3 seconds - what do they SEE and HEAR?)</li>
+<li>Value (what's the benefit?)</li>
+<li>CTA (what should they do?)</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Analyze a Viral Video (10 min)</h4>
+<p>Find a viral Reel in the ecommerce/business niche. Document:</p>
+<ul>
+<li>What was the hook? (First 3 seconds)</li>
+<li>What value did it provide?</li>
+<li>What was the CTA?</li>
+<li>Why did it work?</li>
+</ul>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about creation</li>
+<li>📝 10 questions about content creation</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
