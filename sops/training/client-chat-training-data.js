@@ -302,26 +302,99 @@ const task3Content = `
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: OBJECTION HANDLING</h2>
+<h2>📚 TASK 4: OBJECTION HANDLING - Turning No Into Yes</h2>
 
 <div class="content-section">
-<h3>⚠️ "It's too expensive"</h3>
-<p><strong>Response:</strong> "I completely understand that budget is key. When you say expensive, are you comparing price, or the ROI you expect?"</p>
+<h3>🎯 Objections Are Opportunities</h3>
+<div class="highlight-box">
+<strong>An objection is NOT a rejection.</strong>
+<p>It's a sign they're interested but need more information or reassurance. A client who says nothing and leaves is worse than one who objects.</p>
+</div>
 </div>
 
 <div class="content-section">
-<h3>🔥 Feel, Felt, Found</h3>
+<h3>💰 Top 3 Objections & Scripts</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Objection</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Response</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"It's too expensive"</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I completely understand. When you say expensive, are you comparing to other options, or is it about the ROI you expect? Let me show you what our clients typically see in terms of results..."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"I need to think about it"</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Of course! What specific aspect would you like to think over? I'm happy to provide any additional information that might help with your decision."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"I found it cheaper elsewhere"</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"That's fair! May I ask what's included in that quote? Our clients often find the comparison isn't apples-to-apples once they see our scope..."</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🔥 The Feel-Felt-Found Framework</h3>
+<p>The most powerful objection handler in sales:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+<div style="padding: 20px; background: rgba(99, 102, 241, 0.1); border-radius: 12px; border: 2px solid rgba(99, 102, 241, 0.3);">
+<div style="font-size: 1.2em; color: #6366F1;"><strong>FEEL</strong></div>
+<p>"I understand how you <strong>feel</strong>..."</p>
+<p style="font-size: 0.9em; color: #64748B;">Shows empathy. Validates their concern.</p>
+</div>
+
+<div style="padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+<div style="font-size: 1.2em; color: #10B981;"><strong>FELT</strong></div>
+<p>"Many clients <strong>felt</strong> the same way..."</p>
+<p style="font-size: 0.9em; color: #64748B;">Social proof. They're not alone.</p>
+</div>
+
+<div style="padding: 20px; background: rgba(245, 158, 11, 0.1); border-radius: 12px; border: 2px solid rgba(245, 158, 11, 0.3);">
+<div style="font-size: 1.2em; color: #F59E0B;"><strong>FOUND</strong></div>
+<p>"What they <strong>found</strong> was [benefit]..."</p>
+<p style="font-size: 0.9em; color: #64748B;">The positive outcome. The resolution.</p>
+</div>
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Master Objection Handling</h3>
+<p><strong>Before taking the quiz, complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Feel-Felt-Found Practice (10 min)</h4>
+<p>Write a Feel-Felt-Found response for this objection:</p>
+<p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>"I don't know if you guys can handle a project this big."</em></p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Price Objection Role-Play (10 min)</h4>
+<p>Practice responding to: "Your competitor quoted me 50% less."</p>
+<p>Write a response that:</p>
 <ul>
-<li>"I understand how you <strong>feel</strong>." (Empathy)</li>
-<li>"Many successful clients <strong>felt</strong> the same way initially." (Social Proof)</li>
-<li>"But what they <strong>found</strong> was [Benefit]." (Resolution)</li>
+<li>Doesn't badmouth the competitor</li>
+<li>Asks what's included in their scope</li>
+<li>Highlights your unique value</li>
 </ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Client Chat SOP (10 min)</h4>
+<p>Open the <a href="../client-chat-sop.html" target="_blank" style="color: #8B5CF6;">Client Chat SOP document</a> and read:</p>
+<ul>
+<li>Objection Handling Framework section</li>
+<li>Common Objection Scripts section</li>
+</ul>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about objections</li>
+<li>📝 10 questions about objection handling</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
