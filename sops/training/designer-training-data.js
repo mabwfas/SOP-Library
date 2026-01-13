@@ -327,6 +327,26 @@ const task3Content = `
     </table>
     <p><strong>Line height for body:</strong> 1.5-1.7</p>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master Typography</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Font Pairing Selection (10 min)</h4>
+        <p>For a luxury skincare brand, recommend:</p>
+        <ul>
+            <li>Heading font (with backup)</li>
+            <li>Body font (with backup)</li>
+            <li>Justify your choices</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Size Hierarchy Recall (5 min)</h4>
+        <p>Write from memory the desktop and mobile sizes for: H1, H2, Body text.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
