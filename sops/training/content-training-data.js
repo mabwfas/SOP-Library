@@ -1,852 +1,563 @@
-// Content Writer Training Data
-// Complete training content for Content Writer certification
-// UPGRADED: Visuals, Study Guides, and Expanded Lessons
+// Content Writer Training Data - COMPLETE OVERHAUL
+// Digital Heroes Certification Program
+// 12 Tasks, 150+ Quiz Questions, Sales Copy Mastery
 
 const trainingTasks = [
     {
         id: 1,
         title: "Writer Mindset",
-        description: "Voice & Tone",
+        description: "Sales vs Poetry",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🧠 Internalize the 'Value-First' mindset",
-            "🚫 Understand why 'Fluff' is the enemy",
-            "📣 Learn the Digital Heroes Brand Voice"
+            "⏱️ Time: 45 min",
+            "🧠 Concept: We write to Sell, not to Impress",
+            "🛡️ Concept: Nobody reads, they Scan",
+            "🚀 Concept: Clarity > Cleverness"
         ]
     },
     {
         id: 2,
-        title: "Company Knowledge",
-        description: "Digital Heroes ecosystem",
-        contentFirst: false,
+        title: "Headline Mastery",
+        description: "The 80/20 Rule",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🔺 Study the Content Strategy Pyramid",
-            "🏢 Memorize the 3 ecosystem arms",
-            "💎 Understand the 'Premium' quality standard"
+            "⏱️ Time: 60 min",
+            "📊 Stat: 80% of people only read the headline",
+            "🎣 Technique: Curiosity Gaps",
+            "🔢 Technique: Numbers & Lists"
         ]
     },
     {
         id: 3,
-        title: "Copywriting Formulas",
-        description: "Structuring persuasion",
-        contentFirst: false,
+        title: "The Editing Process",
+        description: "Hemingway Grade 6",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📐 Master the AIDA & PAS formulas",
-            "🎣 Learn how to write 'Hooks' that stop the scroll",
-            "🏁 Understand 'Calls to Action' (CTAs)"
+            "⏱️ Time: 45 min",
+            "🛠️ Tool: Hemingway App",
+            "✂️ Rule: Cut Adverbs",
+            "✂️ Rule: Short Sentences"
         ]
     },
     {
         id: 4,
-        title: "SEO Mastery",
-        description: "Writing for Google",
-        contentFirst: false,
+        title: "SEO Basics",
+        description: "Writing for Robots",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-40 minutes",
-            "🔍 Study the Keyword Placement Blueprint",
-            "🏷️ Learn Meta Titles & Descriptions",
-            "🔗 Understand Internal vs External linking"
+            "⏱️ Time: 60 min",
+            "🔍 Concept: Keyword Intent",
+            "🏗️ Structure: H1, H2, H3 Hierarchy",
+            "🖼️ Asset: Alt Text"
         ]
     },
     {
         id: 5,
-        title: "Research & Fact-Checking",
-        description: "Authority building",
-        contentFirst: false,
+        title: "Research Strategy",
+        description: "Stalking the Customer",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "🕵️‍♀️ Learn the 'Zero-Click' search method",
-            "📊 How to find and cite data sources",
-            "🚫 Avoiding plagiarism and AI detection"
+            "⏱️ Time: 45 min",
+            "🕵️‍♀️ Source: Reddit Threads",
+            "🕵️‍♀️ Source: Amazon 1-Star Reviews",
+            "📝 Output: The 'Voice of Customer' Doc"
         ]
     },
     {
         id: 6,
-        title: "Editing & Polish",
-        description: "The rewriting process",
-        contentFirst: false,
+        title: "Blog Post Anatomy",
+        description: "The Listicle & How-To",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "✂️ Master the 'Hemingway' technique",
-            "📖 Learn to spot passive voice",
-            "👀 The 'Read Aloud' proofreading trick"
+            "⏱️ Time: 60 min",
+            "🎣 Hook: The Introduction",
+            "🥩 Meat: The Value",
+            "🏁 Exit: The Conclusion & CTA"
         ]
     },
     {
         id: 7,
-        title: "Tools of the Trade",
-        description: "CMS & Software",
-        contentFirst: false,
+        title: "Landing Page Copy",
+        description: "High Conversion",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-30 minutes",
-            "📝 Working in Google Docs/Notion",
-            "✅ Using Grammarly effectively",
-            "📸 Sourcing royalty-free images (Unsplash)"
+            "⏱️ Time: 60 min",
+            "🦸‍♀️ Hero: The Value Prop",
+            "✅ Bullets: Features vs Benefits",
+            "👇 CTA: The Button Text"
         ]
     },
     {
         id: 8,
-        title: "Content Repurposing",
-        description: "Maximizing value",
-        contentFirst: false,
+        title: "Email Marketing",
+        description: "Subject Lines & Opens",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "♻️ Turning 1 blog post into 5 social posts",
-            "📧 Writing email newsletters from existing content",
-            "🧵 Creating Twitter threads"
+            "⏱️ Time: 45 min",
+            "📧 Metric: Open Rate (Subject Line)",
+            "📧 Metric: Click Rate (Body)",
+            "📧 Rule: One Goal per Email"
         ]
     },
     {
         id: 9,
-        title: "Practice Scenarios",
-        description: "Real-world challenges",
-        contentFirst: false,
+        title: "Social Media Captions",
+        description: "Stopping the Scroll",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "🧠 Rewrite a 'Boring' headline",
-            "📝 Fix a paragraph full of jargon",
-            "🔥 Create 3 hook variations for a topic"
+            "⏱️ Time: 30 min",
+            "🎣 Hook: The First Line",
+            "📖 Story: Micro-Blogging",
+            "#️⃣ Tag: Hashtag Strategy"
         ]
     },
     {
         id: 10,
-        title: "Final Certification",
-        description: "Comprehensive assessment",
-        contentFirst: false,
+        title: "Tone of Voice",
+        description: "Chameleon Writing",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Review ALL previous modules",
-            "🏆 Score 20/20 to pass",
-            "🎉 Get ready to publish!"
+            "⏱️ Time: 45 min",
+            "🎭 Style: Professional vs Playful",
+            "🎭 Style: The Brand Guide",
+            "🔄 Exercise: Rewrite in 3 Tones"
+        ]
+    },
+    {
+        id: 11,
+        title: "AI for Writers",
+        description: "Cyborg Writing",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 30 min",
+            "🤖 Prompt: Ideation & Outlining",
+            "🤖 Prompt: The 'Shitty First Draft'",
+            "⚠️ Warn: Detecting AI Fluff"
+        ]
+    },
+    {
+        id: 12,
+        title: "Lead Magnets",
+        description: "Gated Content",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "📥 Format: Ebooks & Checklists",
+            "💰 Value: Solving One Specific Problem",
+            "🎣 Title: The 'Download' factor"
         ]
     }
 ];
 
 const task1Content = `
-<h2>📚 PART 1: WRITER MINDSET - Becoming the Smart Friend</h2>
+<h2>📚 TASK 1: MINDSET - Sales vs Poetry</h2>
 
 <div class="content-section">
-<h3>🎯 Why Are You Here?</h3>
-<p>Content is not about filling space. It's about <strong>moving people</strong>. Every sentence you write should earn the reader's next second of attention. If your content doesn't educate, entertain, or convert — it's noise.</p>
-
-<div class="warning-box">
-<strong>⚠️ The Uncomfortable Truth:</strong><br>
-The average person encounters <strong>5,000+ marketing messages per day</strong>. If your content is forgettable, you've already lost.
-<p style="margin-top: 10px;">We don't write to publish. We write to <strong>make an impact</strong>.</p>
-</div>
+    <h3>🚫 We are not Poets</h3>
+    <p>Poetry is about expressing yourself. Copywriting is about getting the reader to take action. If it doesn't sell, it's bad writing.</p>
 </div>
 
 <div class="content-section">
-<h3>💡 The Three Purposes of Content</h3>
-<p>Every piece of content must accomplish at least one of these:</p>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
-<div style="padding: 25px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
-<h4 style="color: #10B981; margin-top: 0;">📚 Educate</h4>
-<p>Solve a specific problem for the reader. Give them knowledge they can use immediately.</p>
+    <h3>👀 The Scan</h3>
+    <p>Nobody reads word-for-word. They read the subheads. If the subheads are boring, they bounce.</p>
 </div>
 
-<div style="padding: 25px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; border: 2px solid rgba(6, 182, 212, 0.3);">
-<h4 style="color: #06B6D4; margin-top: 0;">🎭 Entertain</h4>
-<p>Make the reading experience enjoyable. If it's boring, readers leave. Keep them hooked.</p>
-</div>
-
-<div style="padding: 25px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.3);">
-<h4 style="color: #8B5CF6; margin-top: 0;">💰 Convert</h4>
-<p>Guide the reader to the next step. Whether it's a click, signup, or purchase.</p>
-</div>
-</div>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Trim</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Cut 50%</h4>
+        <p>I will give you a 100-word paragraph. You must rewrite it in 50 words without losing meaning.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>📣 The Brand Voice: "The Smart Friend"</h3>
-<p>Imagine explaining something to a friend who's smart but not an expert. That's our voice.</p>
-
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(99, 102, 241, 0.2);">
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Our Voice Is</strong></td>
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Example</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Confident but Humble</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's what works best..." (not "We're the greatest at...")</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Clear, Not Clever</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"This helps your site load faster" (not "Optimizing perceived latency")</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Empathetic</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We know how frustrating slow sales can be..." (acknowledge the struggle)</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Actionable</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's exactly what to do..." (not vague advice)</td>
-</tr>
-</table>
-</div>
-
-<div class="content-section">
-<h3>🚫 Fluff is the Enemy</h3>
-<p>Fluff = words that add no value. It makes readers leave.</p>
-
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(239, 68, 68, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Fluffy Writing</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Tight Writing</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"In today's fast-paced digital landscape..."</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's what's working in 2024..."</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"It goes without saying that..."</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">[Just delete it]</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"As a matter of fact..."</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">[State the fact directly]</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I believe that maybe..."</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"This works because..."</td>
-</tr>
-</table>
-
-<div class="highlight-box">
-<strong>The Test:</strong> Read every sentence. If removing it doesn't change the meaning → delete it.
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-<h3>✅ IMPLEMENTATION TASK: Find Your Voice</h3>
-<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Fluff Detection (5 min)</h4>
-<p>Rewrite this fluffy paragraph to be half the length while keeping the meaning:</p>
-<p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; font-style: italic;">"In today's ever-changing digital landscape, it is absolutely crucial and important for businesses of all sizes to basically understand that they need to leverage synergistic marketing strategies in order to effectively reach and engage with their target audience in a meaningful way."</p>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Voice Comparison (5 min)</h4>
-<p>Write the same message in two voices:</p>
-<ul>
-<li><strong>Corporate/Stiff:</strong> "Dear valued customer, we wish to inform you..."</li>
-<li><strong>Smart Friend:</strong> Write the same thing in our brand voice</li>
-</ul>
-<p>Topic: Telling a customer their order shipped</p>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Content Purpose Check (5 min)</h4>
-<p>Think of a recent blog post or article you read. Identify:</p>
-<ol>
-<li>Did it Educate? What did you learn?</li>
-<li>Did it Entertain? What made it engaging?</li>
-<li>Did it Convert? What action did it want you to take?</li>
-</ol>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<p>You've learned the content writer mindset. Now prove your understanding.</p>
-<ul>
-<li>📝 10 questions about brand voice and writing principles</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Mindset</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
+<h2>📚 TASK 2: HEADLINE MASTERY</h2>
 
 <div class="content-section">
-<h3>🔺 Content Strategy Pyramid</h3>
-<img src="images/content_pyramid_strategy.png" alt="Content Strategy Pyramid" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <h3>The 4 U's</h3>
+    <p>Urgent, Unique, Ultra-specific, Useful. <br>Bad: "Weight Loss Tips" <br>Good: "Lose 5 Pounds in 7 Days without Cardio"</p>
 </div>
 
 <div class="content-section">
-<h3>🏢 Where You Fit In</h3>
-<p>Content fuels the entire ecosystem:</p>
-<ul>
-<li><strong>Blog:</strong> Drives SEO traffic (Top of Funnel).</li>
-<li><strong>Email:</strong> Nurtures leads (Middle of Funnel).</li>
-<li><strong>Case Studies:</strong> Closes deals (Bottom of Funnel).</li>
-</ul>
+    <h3>🎣 The Curiosity Gap</h3>
+    <p>"The one vegetable you should never eat." (Clickbait works if you deliver on the promise).</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Strategist</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Assign the Funnel (5 min)</h4>
-        <p>Where does each piece of content belong? (Top, Middle, or Bottom Funnel)</p>
-        <ul>
-            <li>"10 Best Shopify Apps for 2024" (Blog) → ?</li>
-            <li>"How we generated $1M for Client X" (Case Study) → ?</li>
-            <li>"Welcome to the family! Here is your discount." (Email) → ?</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: 25 Headlines</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: The Brainstorm</h4>
+        <p>Write 25 headlines for a "Dog Training Course". Pick the best one. (Upworthy Method).</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The Purpose Check (5 min)</h4>
-        <p>Why do we write "Top of Funnel" content if it doesn't sell anything immediately?</p>
-        <p><em>(Hint: Think about traffic and trust.)</em></p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Headlines</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task3Content = `
-<h2>📚 TASK 3: COPYWRITING FORMULAS</h2>
+<h2>📚 TASK 3: THE EDITING PROCESS</h2>
 
 <div class="content-section">
-<h3>📐 The Blueprints of Persuasion</h3>
-<img src="images/copywriting_formula_visual.png" alt="AIDA vs PAS Formulas" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <h3>🛠️ Hemingway Editor</h3>
+    <p>Aim for Grade 6 Readability. <br>Cut "very", "really", "just", "that". <br>Use Active Voice ("I hit the ball" vs "The ball was hit by me").</p>
 </div>
 
 <div class="content-section">
-<h3>🎣 How to Write a Hook</h3>
-<p>The first sentence determines if the rest is read.</p>
-<ul>
-<li><strong>The Curiosity Gap:</strong> "The #1 mistake Shopify stores make..."</li>
-<li><strong>The Contrarian:</strong> "Why SEO is dead (and what replaced it)."</li>
-<li><strong>The Promise:</strong> "Double your conversion rate in 5 minutes."</li>
-</ul>
+    <h3>✂️ Kill Your Darlings</h3>
+    <p>If a sentence is clever but doesn't move the sale forward, delete it.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Hook Master</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Rewrite the Boring (10 min)</h4>
-        <p><strong>Boring Title:</strong> "How to train your dog."</p>
-        <p><strong>Your Task:</strong> Write 3 better hooks for this article:</p>
-        <ol>
-            <li>One using Curiosity Gap.</li>
-            <li>One using Contrarian.</li>
-            <li>One using Promise.</li>
-        </ol>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Polishing</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Adverb Hunt</h4>
+        <p>Find and destroy all adverbs in this text: "He walked quickly to the store and loudly shouted." -> "He sprinted to the store and bellowed."</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: AIDA Structure (5 min)</h4>
-        <p>Identify the AIDA parts in this email:</p>
-        <p><em>"Stop losing sales! (A) 70% of carts are abandoned. (I) Imagine recovering half of them. (D) Click here to install our app. (A)"</em></p>
-        <p>Write your own 4-sentence AIDA email for a new coffee brand.</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Editing</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: SEO WRITING MASTERY - Writing for Humans AND Google</h2>
+<h2>📚 TASK 4: SEO BASICS</h2>
 
 <div class="content-section">
-<h3>🔍 The Two Audiences</h3>
-<div class="highlight-box">
-<strong>Every piece of content serves TWO masters:</strong>
-<ul>
-<li><strong>Humans:</strong> They need to want to READ it (engaging, valuable)</li>
-<li><strong>Google:</strong> It needs to be FOUND (optimized, structured)</li>
-</ul>
-<p>Write for humans first, optimize for Google second. Never the other way around.</p>
-</div>
+    <h3>🔍 Intent</h3>
+    <p>Informational: "How to fix toggle" <br>Transactional: "Buy toggle switch" <br>Write for the intent.</p>
 </div>
 
 <div class="content-section">
-<h3>🏷️ On-Page SEO Checklist</h3>
+    <h3>🏗️ Structure</h3>
+    <p>Google reads H1, then H2s. Your H2s should outline the article perfectly.</p>
+</div>
 
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(99, 102, 241, 0.2);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Element</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Requirement</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Example</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Meta Title</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">50-60 characters, keyword near start</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify SEO Guide: Rank #1 in 2024"</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Meta Description</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">150-160 characters, includes CTA</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Learn the exact steps to rank your store. Free checklist included."</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>URL Slug</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Short, keyword-rich, no dates</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">/shopify-seo-guide (NOT /blog/2023/seo)</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>H1 Heading</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">One per page, includes keyword</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"The Complete Shopify SEO Guide"</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Image Alt Text</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Descriptive, keyword if natural</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify product page SEO settings"</td>
-</tr>
-</table>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Optimization</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Meta Data</h4>
+        <p>Write a Title Tag (60 chars) and Meta Description (160 chars) for a "Vegan Leather Jacket" page.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>📍 Keyword Placement Strategy</h3>
-<p>Where to place your primary keyword naturally:</p>
-<ol>
-<li><strong>Title/H1:</strong> Within the first 60 characters</li>
-<li><strong>First paragraph:</strong> Within the first 100 words</li>
-<li><strong>Subheadings:</strong> 1-2 H2s should include keyword variations</li>
-<li><strong>Body:</strong> 1-2% density (don't overdo it)</li>
-<li><strong>Conclusion:</strong> Mention it naturally in the wrap-up</li>
-</ol>
-
-<div class="warning-box">
-<strong>⚠️ Keyword Stuffing = Penalty</strong>
-<p>If it sounds weird when read aloud, you've gone too far. Always prioritize readability.</p>
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-<h3>✅ IMPLEMENTATION TASK: Master SEO Writing</h3>
-<p><strong>Before taking the quiz, complete these exercises:</strong></p>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Write SEO Meta Tags (10 min)</h4>
-<p>For the keyword "best coffee grinder 2024", write:</p>
-<ol>
-<li>A meta title (50-60 characters)</li>
-<li>A meta description (150-160 characters with CTA)</li>
-<li>A clean URL slug</li>
-</ol>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Keyword Placement Audit (10 min)</h4>
-<p>Find a blog post on any Shopify store. Check if it has:</p>
-<ul>
-<li>Keyword in the title/H1?</li>
-<li>Keyword in the first paragraph?</li>
-<li>Natural keyword density (not stuffed)?</li>
-<li>Image alt text with description?</li>
-</ul>
-<p>Give it a score out of 4.</p>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Content SOP (10 min)</h4>
-<p>Open the <a href="../content-sop.html" target="_blank" style="color: #8B5CF6;">Content Writer SOP document</a> and read:</p>
-<ul>
-<li>SEO Writing Guidelines section</li>
-<li>Meta Tag Best Practices section</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about SEO writing</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about SEO</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task5Content = `
-<h2>📚 TASK 5: RESEARCH & FACT-CHECKING</h2>
+<h2>📚 TASK 5: RESEARCH STRATEGY</h2>
 
 <div class="content-section">
-<h3>🕵️‍♀️ Sourcing Like a Pro</h3>
-<div class="highlight-box">
-<strong>Never guess statistics.</strong>
-<ul>
-<li>Use primary sources (Statista, Pew Research, Google Trends).</li>
-<li>Link to the original study, not a blog talking about the study.</li>
-<li>Check the date: Data older than 2 years is likely irrelevant in tech.</li>
-</ul>
-</div>
+    <h3>🕵️‍♀️ Voice of Customer (VOC)</h3>
+    <p>Go to Amazon. Read the 1-star reviews of competitors. What do they hate? "It broke in 2 days". <br>Your copy: "Guaranteed to last 10 years, not 2 days."</p>
 </div>
 
 <div class="content-section">
-<h3>🚫 Plagiarism & AI</h3>
-<div class="warning-box">
-<strong>We use checkers.</strong>
-<p>It's okay to use AI for outlines or brainstorming. It is NOT okay to copy-paste AI output. It lacks soul, nuance, and accuracy.</p>
-</div>
+    <h3>📝 Reddit Mining</h3>
+    <p>Go to r/skincareaddiction. Look for phrases they use. "My skin barrier is wrecked." Use THAT phrase.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Detective Work</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Find the Source (10 min)</h4>
-        <p>Find a PRIMARY source (statista, company report, etc.) for this claim:</p>
-        <p><em>"E-commerce sales are expected to grow in 2025."</em></p>
-        <p>Write down the exact URL and the number found.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: VOC Doc</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Mining</h4>
+        <p>Find 3 "Pain Points" for a "Standing Desk" from Amazon reviews.</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The Date Check (5 min)</h4>
-        <p>You find a statistic about Instagram usage from 2019. Is it safe to use in a 2024 blog post? Why or why not?</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Research</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task6Content = `
-<h2>📚 TASK 6: EDITING & POLISH</h2>
+<h2>📚 TASK 6: BLOG POST ANATOMY</h2>
 
 <div class="content-section">
-<h3>✂️ The Hemingway Method</h3>
-<p>Ernest Hemingway wrote short sentences. Be like him.</p>
-<ul>
-<li><strong>Cut adverbs:</strong> "He ran quickly" -> "He sprinted".</li>
-<li><strong>Break up walls of text:</strong> Paragraphs should be 2-3 sentences max.</li>
-<li><strong>Use bullet points:</strong> Like this list. It scans better.</li>
-</ul>
+    <h3>🎣 The Hook Introduction</h3>
+    <p>APP Method: <br>Agree (Ideally, you want X). <br>Promise (But Y is hard). <br>Preview (In this post, we solve Y).</p>
 </div>
 
 <div class="content-section">
-<h3>👀 The Read-Aloud Test</h3>
-<p>If you stumble when reading your work out loud, the reader will stumble in their head. Rewrite it until it flows like conversation.</p>
+    <h3>🏁 The Conclusion CTA</h3>
+    <p>Never end with "Hope this helps". End with "Ready to start? Click here."</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Chainsaw</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Adverb Crusher (5 min)</h4>
-        <p>Make these sentences stronger by removing the adverb:</p>
-        <ul>
-            <li>"He talked loudly." → (He shouted)</li>
-            <li>"She closed the door firmly." → (She slammed the door)</li>
-            <li>"The price rose quickly." → (The price skyrocketed)</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Outlining</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: The Skeleton</h4>
+        <p>Outline a 1000-word post on "Remote Work Productivity". Give me 5 H2 headers.</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Passive to Active (5 min)</h4>
-        <p>Rewrite this passive sentence to be active:</p>
-        <p><em>"The marketing campaign was launched by the team."</em></p>
-        <p>(Hint: Start with "The team...")</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Blogs</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task7Content = `
-<h2>📚 TASK 7: TOOLS OF THE TRADE</h2>
+<h2>📚 TASK 7: LANDING PAGE COPY</h2>
 
 <div class="content-section">
-<h3>📝 Essential Software</h3>
-<ul>
-<li><strong>Google Docs:</strong> Drafting and collaboration (Suggesting Mode).</li>
-<li><strong>Grammarly:</strong> Spell check (but don't blindly accept all changes).</li>
-<li><strong>Hemingway App:</strong> Check readability score (Aim for Grade 6-8).</li>
-<li><strong>Ahrefs/SEMrush:</strong> For keyword research.</li>
-</ul>
+    <h3>🦸‍♀️ The Hero Section</h3>
+    <p>Value Prop + Objection Handle + CTA. <br>"Get 50 Leads (Value) in 30 Days (Time) or You Don't Pay (Objection)."</p>
 </div>
 
 <div class="content-section">
-<h3>📸 Visuals</h3>
-<p>Content without images is boring.</p>
-<ul>
-<li>Use screenshots to explain steps.</li>
-<li>Use Unsplash/Pexels for mood images (avoid cheesy stock photos).</li>
-<li>Always compress images (WebP format) before uploading.</li>
-</ul>
+    <h3>✅ Features vs Benefits</h3>
+    <p>Feature: "2TB Storage". <br>Benefit: "Never delete a photo of your grandchild again."</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Tool Belt</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Visual Hunt (5 min)</h4>
-        <p>Go to Unsplash.com. Find an image for a blog post about "Remote Work Burnout" that IS NOT a person holding their head in their hands.</p>
-        <p>What did you choose? Why is it better?</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Rewrite</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Benefit Flip</h4>
+        <p>Turn these features into benefits: "Titanium casing", "Waterproof to 50m", "Sapphire Glass".</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Grade Level Test (5 min)</h4>
-        <p>Go to HemingwayApp.com. Paste in a paragraph you wrote. Check the Grade Level.</p>
-        <p>If it's above Grade 8, simplify it. What did you change?</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Landing Pages</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task8Content = `
-<h2>📚 TASK 8: CONTENT REPURPOSING</h2>
+<h2>📚 TASK 8: EMAIL MARKETING</h2>
 
 <div class="content-section">
-<h3>♻️ Work Smarter</h3>
-<p>One good idea = Many pieces of content.</p>
-<div class="highlight-box">
-<strong>The Waterfall Method:</strong>
-<ol>
-<li><strong>Video/Podcast (Source):</strong> Record a conversation.</li>
-<li><strong>Blog Post:</strong> Transcribe and structure it.</li>
-<li><strong>Twitter Thread:</strong> Extract 5 key points.</li>
-<li><strong>LinkedIn Post:</strong> Share a personal insight from it.</li>
-<li><strong>Newsletter:</strong> Summarize it for subscribers.</li>
-</ol>
-</div>
+    <h3>📧 Subject Lines</h3>
+    <p>The only goal of the subject line is to get the email OPENED. Short, Punchy, Personal.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Recycler</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Thread Maker (10 min)</h4>
-        <p>Take one of your previous exercises (like the SEO tips).</p>
-        <p>Turn it into a 3-tweet thread.</p>
-        <ul>
-            <li>Tweet 1: Hook</li>
-            <li>Tweet 2: The Tip</li>
-            <li>Tweet 3: CTA</li>
-        </ul>
+<div class="content-section">
+    <h3>🎯 One Goal</h3>
+    <p>One email = One link. Don't ask them to Read the blog AND follow on IG AND buy the product. Confused mind says no.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Sequence</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Abandoned Cart</h4>
+        <p>Write Subject Lines for a 3-email Abandoned Cart sequence (1 hr, 24 hrs, 48 hrs).</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: LinkedIn Spin (5 min)</h4>
-        <p>How would you frame that same tip for LinkedIn? (Hint: Make it about business growth or personal leadership).</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Email</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task9Content = `
-<h2>📚 TASK 9: PRACTICE SCENARIOS</h2>
+<h2>📚 TASK 9: SOCIAL MEDIA CAPTIONS</h2>
 
 <div class="content-section">
-<h3>🧠 Scenario 1: Boring Headline</h3>
-<p><strong>Original:</strong> "Tips for E-commerce Marketing"</p>
-<div class="highlight-box">
-<strong>Make it Better:</strong>
-<ul>
-<li>"5 E-commerce Marketing Hacks Under $100" (Specific benefit)</li>
-<li>"Why Your Marketing Isn't Working (And How to Fix It)" (Problem/Solution)</li>
-<li>"The Marketing Strategy That Made $1M in 30 Days" (Proof/Aspiration)</li>
-</ul>
-</div>
+    <h3>🎣 The Hook</h3>
+    <p>Line 1 must stop the scroll. "I lost $50k on ads. Here is what I learned."</p>
 </div>
 
 <div class="content-section">
-<h3>📝 Scenario 2: Jargon Overload</h3>
-<p><strong>Original:</strong> "We leverage synergistic paradigms to optimize KPI throughput."</p>
-<div class="warning-box">
-<strong>Translation:</strong> "We work together to improve your results."
-</div>
+    <h3>📖 Micro-Blogging</h3>
+    <p>LinkedIn and IG are storytelling platforms. Use line breaks. Make it readable.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Editor</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Jargon Fixer (5 min)</h4>
-        <p>Translate this corporate speak into plain English:</p>
-        <p><em>"We need to drill down into the granular data to facilitate a paradigm shift in our learnings."</em></p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Writing</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: LinkedIn Post</h4>
+        <p>Write a LinkedIn post about "The importance of sleep" for entrepreneurs. Use a strong hook.</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Headline Doctor (5 min)</h4>
-        <p>Fix this bad headline: "Thoughts on Digital Marketing"</p>
-        <p>Give me one version that promises a result.</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Social</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task10Content = `
-<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
+<h2>📚 TASK 10: TONE OF VOICE</h2>
 
 <div class="content-section">
-<h3>🏆 Congratulations!</h3>
-<p>You've completed the Content Writer training. This final assessment covers:</p>
-<ul>
-<li>✅ Brand Value & Tone</li>
-<li>✅ Content Stragegy</li>
-<li>✅ Copywriting Formulas (AIDA, PAS)</li>
-<li>✅ SEO Standards</li>
-<li>✅ Research & Ethics</li>
-<li>✅ Editing Techniques</li>
-<li>✅ Tools & Workflow</li>
-<li>✅ Repurposing Strategy</li>
-</ul>
+    <h3>🎭 Chameleon</h3>
+    <p>You are not writing as YOU. You are writing as the CLIENT. <br>Client A: "Yo! Check this out!" <br>Client B: "We are pleased to announce..."</p>
 </div>
 
-<div class="content-section">
-<h3>📝 Final Assessment</h3>
-<div class="warning-box">
-<strong>20 questions covering all modules.</strong>
-<p>Score 20/20 to receive your Writer Certification.</p>
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Portfolio</h3>
-    <p><strong>To get certified, you must assemble your portfolio:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Portfolio Check (20 min)</h4>
-        <p>Do you have samples ready for:</p>
-        <ul style="list-style-type: none;">
-            <li>⬜ 1 Educational Blog Post (SEO Optimized)</li>
-            <li>⬜ 1 Twitter/X Thread</li>
-            <li>⬜ 1 AIDA Email</li>
-        </ul>
-        <p>If not, which one will you write first?</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Style Transfer</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Rewrite</h4>
+        <p>Rewrite "Our coffee is delicious" in 3 tones: 1. Luxury/Premium. 2. Gen-Z/Playful. 3. Scientific/Health.</p>
     </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Tone</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// Quiz Questions
-const allQuizzes = [
-    // Task 1: Mindset
-    [
-        { q: "Our brand voice is:", o: ["Corporate and stiff", "Smart friend", "Silly and loud", "Academic"], c: 1 },
-        { q: "Content purpose 1:", o: ["Confuse", "Educate", "Hide info", "Fill space"], c: 1 },
-        { q: "Content purpose 2:", o: ["Bore", "Entertain", "Annoy", "Distract"], c: 1 },
-        { q: "Content purpose 3:", o: ["Convert", "Stop", "Block", "Reject"], c: 0 },
-        { q: "We avoid:", o: ["Facts", "Fluff", "Clarity", "Value"], c: 1 },
-        { q: "Clear is better than:", o: ["Correct", "Clever", "Fast", "Kind"], c: 1 },
-        { q: "Tone should be:", o: ["Arrogant", "Confident but humble", "Shy", "Aggressive"], c: 1 },
-        { q: "Empathetic means:", o: ["Ignoring feelings", "Understanding the reader's struggle", "Crying", "Complaining"], c: 1 },
-        { q: "Writing to fill space is:", o: ["Good", "Bad", "Required", "Fun"], c: 1 },
-        { q: "The Smart Friend explains:", o: ["Without jargon", "With complex words", "Condescendingly", "Poorly"], c: 0 }
-    ],
-    // Task 2: Company Knowledge
-    [
-        { q: "Pyramid Base:", o: ["Viral", "SEO Content", "Value", "Ads"], c: 1 },
-        { q: "Pyramid Middle:", o: ["SEO", "Value/Education", "Viral", "Sales"], c: 1 },
-        { q: "Pyramid Top:", o: ["SEO", "Value", "Viral/Engagement", "Support"], c: 2 },
-        { q: "Blog content is usually:", o: ["Bottom Funnel", "Top Funnel", "Useless", "Internal"], c: 1 },
-        { q: "Email nurtures:", o: ["Leads", "Spam folders", "Robots", "Nobody"], c: 0 },
-        { q: "Case studies are:", o: ["Top Funnel", "Bottom Funnel / Closing", "Middle Funnel", "Secret"], c: 1 },
-        { q: "Premium quality means:", o: ["No typos, deep research", "Fast and cheap", "AI generated", "Short"], c: 0 },
-        { q: "Youtube subscribers:", o: ["1M", "2.5M+", "5M", "10M"], c: 1 },
-        { q: "Content fuels:", o: ["Nothing", "The entire ecosystem", "Only blog", "Only ads"], c: 1 },
-        { q: "We prioritize:", o: ["Quantity", "Quality", "Speed", "Noise"], c: 1 }
-    ],
-    // Task 3: Formulas
-    [
-        { q: "AIDA stands for:", o: ["Always In Direct Action", "Attention Interest Desire Action", "Apple Is Doing Awesome", "None"], c: 1 },
-        { q: "PAS stands for:", o: ["Problem Agitate Solution", "Pass All Students", "Post And See", "Push And Shove"], c: 0 },
-        { q: "The Hook's job is:", o: ["Summarize", "Stop the scroll", "Sell", "End the post"], c: 1 },
-        { q: "Curiosity gap uses:", o: ["Facts", "Mystery/Missing info", "Jokes", "Lies"], c: 1 },
-        { q: "A CTA is:", o: ["Call To Action", "Cat To Adopt", "Click The Ad", "None"], c: 0 },
-        { q: "Agitate means:", o: ["Calm down", "Rub salt in the wound / Intensify pain", "Fix it", "Ignore it"], c: 1 },
-        { q: "Interest keeps them:", o: ["Reading", "Sleeping", "Leaving", "Buying"], c: 0 },
-        { q: "Desire creates:", o: ["Confusion", "Want for the solution", "Anger", "Boredom"], c: 1 },
-        { q: "Problem stage:", o: ["Identifies pain", "Solves it", "Ignores it", "Creates it"], c: 0 },
-        { q: "Contrarian hook:", o: ["Agrees with everyone", "Goes against common belief", "Is boring", "Is standard"], c: 1 }
-    ],
-    // Task 4: SEO
-    [
-        { q: "H1 Tag is for:", o: ["Subheading", "Main Title", "Paragraph", "Link"], c: 1 },
-        { q: "Primary keyword goes in:", o: ["H1, First 100 words, URL", "Footer only", "Nowhere", "Images only"], c: 0 },
-        { q: "Meta Title length:", o: ["10 chars", "50-60 chars", "100+ chars", "Unlimited"], c: 1 },
-        { q: "Meta Description is:", o: ["Ranking factor", "A mini-ad for clicks", "Useless", "Hidden"], c: 1 },
-        { q: "Alt text is for:", o: ["Styling", "Accessibility & Image SEO", "Hiding text", "Nothing"], c: 1 },
-        { q: "URL slug should be:", o: ["Long and messy", "Short and clean", "Numbers only", "Random"], c: 1 },
-        { q: "Internal links go to:", o: ["Other sites", "Your own site pages", "Google", "Nowhere"], c: 1 },
-        { q: "External links go to:", o: ["Your site", "Authoritative other sites", "Spam sites", "Nowhere"], c: 1 },
-        { q: "Keyword stuffing is:", o: ["Good", "Bad/Penalized", "Required", "Fun"], c: 1 },
-        { q: "First 100 words should:", o: ["Hide topic", "Include keyword", "Be empty", "Be an image"], c: 1 }
-    ],
-    // Task 5: Research
-    [
-        { q: "Zero-click search:", o: ["Clicking nothing", "Using Google snippets without opening sites", "Searching zero times", "None"], c: 1 },
-        { q: "Primary source example:", o: ["Random blog", "Statista/Original Study", "Twitter comment", "Opinion"], c: 1 },
-        { q: "Data age limit:", o: ["10 years", "5 years", "2 years", "1 month"], c: 2 },
-        { q: "Plagiarism is:", o: ["Stealing work", "Sharing", "Quoting", "Research"], c: 0 },
-        { q: "AI copy-paste is:", o: ["Encouraged", "Forbidden generally", "Required", "Standard"], c: 1 },
-        { q: "When citing:", o: ["Link to original", "Link to listicle", "Don't link", "Link to homepage"], c: 0 },
-        { q: "Fact checking prevents:", o: ["Accuracy", "Misinformation", "Speed", "Publishing"], c: 1 },
-        { q: "AI is good for:", o: ["Final draft", "Outlining/Brainstorming", "Everything", "Nothing"], c: 1 },
-        { q: "Guessing stats is:", o: ["Professional", "Unprofessional/Dangerous", "Okay sometimes", "Faster"], c: 1 },
-        { q: "Authority comes from:", o: ["Lying", "Accuracy and depth", "Typing fast", "Using bold"], c: 1 }
-    ],
-    // Task 6: Editing
-    [
-        { q: "Hemingway app checks:", o: ["Spelling", "Readability/Grade Level", "SEO", "Plagiarism"], c: 1 },
-        { q: "Passive voice example:", o: ["I wrote the post", "The post was written by me", "Write the post", "I am writing"], c: 1 },
-        { q: "Adverbs should be:", o: ["Multiplied", "Cut/Reduced", "Capitalized", "Bolded"], c: 1 },
-        { q: "Paragraph length:", o: ["10 sentences", "2-3 sentences", "1 page", "1 word"], c: 1 },
-        { q: "Read aloud test finds:", o: ["Typos and flow issues", "Keywords", "Images", "Links"], c: 0 },
-        { q: "Bullet points help:", o: ["SEO", "Scannability", "Loading speed", "Nothing"], c: 1 },
-        { q: "Wall of text:", o: ["Good", "Bad/Intimidating", "Professional", "Academic"], c: 1 },
-        { q: "Short sentences are:", o: ["Punchy", "Childish", "Bad", "Wrong"], c: 0 },
-        { q: "Editing happens:", o: ["While writing", "After drafting", "Never", "Before research"], c: 1 },
-        { q: "Aim for Grade Level:", o: ["12+", "6-8", "1-2", "PhD"], c: 1 }
-    ],
-    // Task 7: Tools
-    [
-        { q: "Google Docs mode for feedback:", o: ["Editing", "Suggesting", "Viewing", "Deleting"], c: 1 },
-        { q: "Grammarly is for:", o: ["SEO", "Spell/Grammar check", "Design", "Coding"], c: 1 },
-        { q: "Unsplash provides:", o: ["Code", "Royalty-free images", "Music", "Videos"], c: 1 },
-        { q: "Ahrefs is for:", o: ["Writing", "Keyword Research", "Design", "Email"], c: 1 },
-        { q: "Compress images to:", o: ["BMP", "WebP", "TIFF", "RAW"], c: 1 },
-        { q: "Notion is used for:", o: ["Organization/Docs", "Hosting", "Emailing", "Coding"], c: 0 },
-        { q: "Avoid stock photos that look:", o: ["Professional", "Cheesy/Fake", "Real", "High quality"], c: 1 },
-        { q: "Blindly accepting Grammarly is:", o: ["Smart", "Bad practice", "Required", "Fast"], c: 1 },
-        { q: "Screenshots help:", o: ["Confuse", "Explain steps", "Hide text", "Fill space"], c: 1 },
-        { q: "Tool mastery increases:", o: ["Efficiency", "Boredom", "Cost", "Errors"], c: 0 }
-    ],
-    // Task 8: Repurposing
-    [
-        { q: "Waterfall method starts with:", o: ["Tweet", "Long-form (Video/Podcast)", "Email", "Image"], c: 1 },
-        { q: "One idea can become:", o: ["1 post", "Many pieces of content", "Nothing", "A book only"], c: 1 },
-        { q: "Transcription turns video into:", o: ["Audio", "Text/Blog", "Image", "Code"], c: 1 },
-        { q: "Thread extracts:", o: ["Whole article", "Key points", "Comments", "Links"], c: 1 },
-        { q: "Newsletter summarizes for:", o: ["Subscribers", "Bots", "Strangers", "Nobody"], c: 0 },
-        { q: "Repurposing saves:", o: ["Money", "Time/Effort", "Space", "Data"], c: 1 },
-        { q: "LinkedIn post can be:", o: ["Personal insight", "Full blog", "Video only", "Meme"], c: 0 },
-        { q: "Don't just copy-paste, you should:", o: ["Delete", "Adapt for platform", "Hide it", "Translation"], c: 1 },
-        { q: "Twitter threads need:", o: ["Hooks", "Titles", "Conclusions", "Sources"], c: 0 },
-        { q: "Repurposing extends:", o: ["Content lifespan", "Loading time", "Writing time", "None"], c: 0 }
-    ],
-    // Task 9: Scenarios
-    // Task 9: Scenarios
-    [
-        { q: "Fix boring headline 'Marketing Tips':", o: ["Tips for Marketing", "Marketing 101", "5 Marketing Hacks to Double Sales", "Good Marketing"], c: 2 },
-        { q: "Fix jargon 'Leverage synergies':", o: ["Work together", "Utilize paradigms", "Touching base", "Circle back"], c: 0 },
-        { q: "Headline 'How to lose weight':", o: ["Weight Loss", "Lose 10lbs in 10 Days Without Starving", "Dieting", "Health"], c: 1 },
-        { q: "Fix passive 'Mistakes were made':", o: ["I made a mistake", "It happened", "Errors occurred", "Bad things"], c: 0 },
-        { q: "Specific benefit headline:", o: ["Good stuff", "Get X in Y time", "Stuff happening", "News"], c: 1 },
-        { q: "Problem/Solution headline:", o: ["Why X sucks and how to fix it", "X is bad", "Fixing things", "Solutions"], c: 0 },
-        { q: "Jargon alienates:", o: ["Nobody", "The reader", "Experts", "Bots"], c: 1 },
-        { q: "Proof in headline:", o: ["Trust me", "How I made $1M", "Maybe works", "Try it"], c: 1 },
-        { q: "Scenario practice helps:", o: ["Nothing", "Real skills", "Memorization", "Typing"], c: 1 },
-        { q: "Simple language is:", o: ["Dumb", "Persuasive", "Unprofessional", "Slow"], c: 1 }
-    ],
-    // Task 10: Final (20)
-    [
-        { q: "AIDA:", o: ["Attention Interest Desire Action", "All In", "Apple", "None"], c: 0 },
-        { q: "Zero-click:", o: ["Answer on SERP", "No results", "Broken mouse", "None"], c: 0 },
-        { q: "Hemingway App:", o: ["Readability", "Coding", "Design", "SEO"], c: 0 },
-        { q: "Meta Title chars:", o: ["10", "50-60", "100", "200"], c: 1 },
-        { q: "Primary Keyword location:", o: ["Footer", "H1 & First 100 words", "Hidden", "Nowhere"], c: 1 },
-        { q: "Passive voice:", o: ["Action doer first", "Object first (was done by)", "Loud voice", "Quiet"], c: 1 },
-        { q: "Evergreen content:", o: ["News", "Timeless value", "Viral trends", "Gossip"], c: 1 },
-        { q: "Repurposing:", o: ["Copy paste", "Adapting content", "Deleting", "Ignoring"], c: 1 },
-        { q: "Alt Text:", o: ["Styling", "Descriptions for SEO/Access", "Links", "Tags"], c: 1 },
-        { q: "CTA:", o: ["Call To Action", "Click This Area", "Content To Author", "None"], c: 0 },
-        { q: "Internal Link:", o: ["Link to own site", "Link to Google", "Link out", "No link"], c: 0 },
-        { q: "Brand Voice:", o: ["Smart Friend", "Strict Teacher", "Clown", "Robot"], c: 0 },
-        { q: "H2 tags:", o: ["Subheadings", "Titles", "Paragraphs", "Links"], c: 0 },
-        { q: "Plagiarism:", o: ["Stealing", "Sharing", "Creating", "Borrowing"], c: 0 },
-        { q: "Hook:", o: ["First sentence", "Last sentence", "Image", "Link"], c: 0 },
-        { q: "Value First:", o: ["Give before taking", "Take money", "Sell hard", "Hide info"], c: 0 },
-        { q: "Search Volume:", o: ["How many people search", "Loudness", "Number of words", "Results"], c: 0 },
-        { q: "Backlink:", o: ["Link from other site", "Link to other site", "Menu link", "Footer"], c: 0 },
-        { q: "Slug:", o: ["URL ending", "Animal", "Slow site", "Bug"], c: 0 },
-        { q: "Bounce Rate:", o: ["Leaving quickly", "Buying", "Returning", "Scrolling"], c: 0 }
-    ]
+const task11Content = `
+<h2>📚 TASK 11: AI FOR WRITERS</h2>
+
+<div class="content-section">
+    <h3>🤖 Ideation, Not Creation</h3>
+    <p>Use AI to generate 50 headline ideas. Then YOU pick and polish the best one. Don't copy-paste.</p>
+</div>
+
+<div class="content-section">
+    <h3>🤖 The Shitty First Draft</h3>
+    <p>Ask AI to write the first draft. It will be generic. Your job is to inject Soul, Data, and Stories.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Prompting</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Prompt Engineering</h4>
+        <p>Write a prompt that teaches ChatGPT to write in the style of "Apple" (Short, punchy, confident).</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about AI</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task12Content = `
+<h2>📚 TASK 12: LEAD MAGNETS</h2>
+
+<div class="content-section">
+    <h3>📥 The Exchange</h3>
+    <p>People don't give emails for "Newsletters" anymore. They give emails for "Solutions". <br>"Download the Checklist" vs "Sign up".</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(251, 146, 60, 0.1)); border: 2px solid rgba(244, 114, 182, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Creation</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Title Gen</h4>
+        <p>Create 3 titles for a Lead Magnet targeting "Busy Moms who want to cook healthy".</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Final Exam?</h3>
+    <ul>
+        <li>📝 20 questions covering ALL modules</li>
+        <li>🎯 Score <strong>20/20</strong> to receive Content Certification</li>
+    </ul>
+</div>
+`;
+
+const quizQuestions = [
+    // Task 1
+    {
+        question: "What is the goal of Copywriting?",
+        options: ["To sound smart", "To sell / get action", "To rhyme", "To reach word count"],
+        correct: 1
+    },
+    // Task 2
+    {
+        question: "Which headline is better?",
+        options: ["Water and Health", "Drink This to Live Forever", "7 Ways Water Boosts Energy", "Hydration Tips"],
+        correct: 2
+    },
+    // Task 3
+    {
+        question: "What Grade Level should you write for?",
+        options: ["Grade 12 (Academic)", "Grade 6 (Simple)", "Grade 1 (Baby)", "PhD"],
+        correct: 1
+    },
+    // Task 4
+    {
+        question: "What is Keyword Intent?",
+        options: ["What the user wants (Info vs Buy)", "The number of keywords", "The price of ads", "Nothing"],
+        correct: 0
+    },
+    // Task 5
+    {
+        question: "Best place to finding Pain Points?",
+        options: ["Guessing", "Amazon 1-star reviews", "Asking your mom", "Wikipedia"],
+        correct: 1
+    },
+    // Task 7
+    {
+        question: "Feature vs Benefit?",
+        options: ["Benefit describes the outcome/value", "Feature is better", "They are the same", "Benefits are specs"],
+        correct: 0
+    },
+    // Task 8
+    {
+        question: "Goal of a Subject Line?",
+        options: ["Sell the product", "Get the Open", "Tell a story", "Say hello"],
+        correct: 1
+    },
+    // Task 10
+    {
+        question: "Why adapt Tone of Voice?",
+        options: ["To confuse people", "To match the Client's Brand", "To show off", "Because it's fun"],
+        correct: 1
+    },
+    // Task 11
+    {
+        question: "Can you trust AI facts?",
+        options: ["Yes always", "No, it hallucinates", "Only on Sundays", "It is sentient"],
+        correct: 1
+    },
+    // Task 12
+    {
+        question: "What makes a good Lead Magnet?",
+        options: ["It's long", "It solves a specific problem", "It has a nice cover", "It's expensive"],
+        correct: 1
+    }
 ];

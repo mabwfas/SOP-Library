@@ -1,1223 +1,682 @@
-// Full-Stack Developer Training Data
-// Complete training content for full-stack certification
-// Based on comprehensive PDP: Custom Websites, Web Apps & API Development
+// Full Stack Developer Training Data - COMPLETE OVERHAUL
+// Digital Heroes Certification Program
+// 13 Tasks, 150+ Quiz Questions, Tech Stack Mastery
 
 const trainingTasks = [
     {
         id: 1,
-        title: "Full Stack Mindset & Principles",
-        description: "Project principles, quality standards",
+        title: "Full Stack Mindset",
+        description: "Zero Tolerance & Principles",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "📖 Read SOP: https://dhlibrary.vercel.app/fullstack-sop.html — Principles section",
-            "🧠 Internalize 'Spec Before Code' philosophy",
-            "🛡️ Study the Zero Tolerance quality standards",
-            "🤖 ChatGPT: Ask 'What are best practices for full stack project management?'"
+            "⏱️ Time: 45 min",
+            "🧠 Concept: The ₹5 Lakh Failure Story",
+            "🛡️ Concept: Peer Review Culture",
+            "🚀 Concept: 5 Core Principles"
         ]
     },
     {
         id: 2,
-        title: "Discovery Phase",
-        description: "Client meetings, requirements gathering",
-        contentFirst: false,
+        title: "Project Planning",
+        description: "Specs before Code",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📖 Read SOP: 'Discovery Phase' section",
-            "📝 Study the 60-90 minute meeting agenda",
-            "💬 Memorize the 7 critical questions to ask",
-            "🤖 ChatGPT: Ask 'What questions to ask in a software discovery meeting?'"
+            "⏱️ Time: 60 min",
+            "📄 Doc: Technical Spec Document (TSD)",
+            "🔎 Phase: Discovery & Paid Consulting",
+            "⚠️ Phase: Risk Identification"
         ]
     },
     {
         id: 3,
-        title: "Technical Specification Document",
-        description: "TSD creation, scope definition",
-        contentFirst: false,
+        title: "Tech Stack Mastery",
+        description: "Next.js, Node, Postgres",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-35 minutes",
-            "📖 Read SOP: 'Technical Planning & Specification' section",
-            "📄 Study all 10 TSD sections",
-            "⚠️ Understand why 'Out of Scope' is critical",
-            "🤖 ChatGPT: Ask 'What should a technical specification document include?'"
+            "⏱️ Time: 90 min",
+            "⚛️ Frontend: Next.js + Tailwind",
+            "🔙 Backend: Node.js + Express vs Server Actions",
+            "🗄️ Database: PostgreSQL + Prisma"
         ]
     },
     {
         id: 4,
-        title: "Project Setup & Architecture",
-        description: "Repo setup, folder structure, tech stack",
-        contentFirst: false,
+        title: "Setup & Architecture",
+        description: "Repository Hygiene",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📖 Read SOP: 'Project Setup' section",
-            "📁 Study the Next.js folder structure",
-            "🌿 Memorize the branch strategy (main, develop, feature)",
-            "🤖 ChatGPT: Ask 'What is the recommended Next.js folder structure?'"
+            "⏱️ Time: 45 min",
+            "📂 Structure: Feature-based Folders",
+            "🌿 Git: Branching Strategy",
+            "🔑 Env: Security Best Practices"
         ]
     },
     {
         id: 5,
-        title: "Development Phases & Milestones",
-        description: "Phase breakdown, deliverables",
-        contentFirst: false,
+        title: "Development Phases",
+        description: "The 6-Week Sprints",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📖 Read SOP: 'Development Phases' section",
-            "📅 Study the 5-phase delivery approach",
-            "✅ Learn what each phase delivers",
-            "🤖 ChatGPT: Ask 'How to structure a 6-week software development project?'"
+            "⏱️ Time: 60 min",
+            "1️⃣ Phase 1: Foundation (Auth/DB)",
+            "2️⃣ Phase 2: Core Features",
+            "3️⃣ Phase 3: Polish & Testing"
         ]
     },
     {
         id: 6,
-        title: "Database Design & API Development",
-        description: "Schema, REST standards, security",
-        contentFirst: false,
+        title: "Database Design",
+        description: "Schema & Relations",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-35 minutes",
-            "📖 Read SOP: 'Database Design' and 'API Development' sections",
-            "🗄️ Study soft deletes and timestamp standards",
-            "📡 Memorize RESTful naming and HTTP methods",
-            "🤖 ChatGPT: Ask 'What are REST API best practices?'"
+            "⏱️ Time: 60 min",
+            "📐 Design: Normalization",
+            "⚡ Perf: Indexing & Query Optimization",
+            "🔄 Tool: Prisma Migrations"
         ]
     },
     {
         id: 7,
-        title: "Testing & QA Protocol",
-        description: "Testing checklist, security must-checks",
-        contentFirst: false,
+        title: "API Development",
+        description: "REST & Typesafety",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📖 Read SOP: 'Testing & QA' section",
-            "🧪 Study all testing categories",
-            "🔒 Memorize the 5 security NEVER rules",
-            "🤖 ChatGPT: Ask 'What security checks are mandatory before deployment?'"
+            "⏱️ Time: 60 min",
+            "🌐 Standard: RESTful Best Practices",
+            "🛡️ Security: Zod Validation",
+            "📚 Docs: Swagger/OpenAPI"
         ]
     },
     {
         id: 8,
-        title: "Deployment & Client Handover",
-        description: "Pre-deploy checklist, handover package",
-        contentFirst: false,
+        title: "Security Essentials",
+        description: "OWASP Top 10",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📖 Read SOP: 'Deployment' and 'Client Handover' sections",
-            "🚀 Study the 9-point pre-deployment checklist",
-            "📦 Memorize handover package contents",
-            "🤖 ChatGPT: Ask 'What should be in a client handover package?'"
+            "⏱️ Time: 45 min",
+            "🛡️ Topic: SQL Injection Prevention",
+            "🛡️ Topic: XSS & CSRF",
+            "🔐 Topic: JWT vs Sessions"
         ]
     },
     {
         id: 9,
-        title: "Difficult Situations & Troubleshooting",
-        description: "8 scenarios with scripts",
-        contentFirst: false,
+        title: "QA & Testing",
+        description: "Automated & Manual",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-35 minutes",
-            "📖 Read SOP: 'Handling Difficult Situations' section",
-            "🔴 Study all 8 scenario responses",
-            "⚡ Learn rollback and recovery procedures",
-            "🤖 ChatGPT: Ask 'How to handle production server outages?'"
+            "⏱️ Time: 60 min",
+            "🧪 Test: Unit Testing (Jest)",
+            "🧪 Test: E2E Testing (Playwright)",
+            "✅ Check: The Pre-Merge Checklist"
         ]
     },
     {
         id: 10,
-        title: "Final Certification",
-        description: "Comprehensive exam + video submission",
-        contentFirst: false,
+        title: "Deployment & DevOps",
+        description: "CI/CD & Hosting",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Full SOP Review: Re-read entire fullstack-sop.html",
-            "✅ Complete Tasks 1-9 with 10/10 on all quizzes",
-            "🎥 Prepare 30-minute video walkthrough",
-            "🏆 Score 20/20 on final exam to pass"
+            "⏱️ Time: 45 min",
+            "☁️ Host: Vercel vs Railway vs AWS",
+            "🚀 Pipe: GitHub Actions CI/CD",
+            "📊 Monitor: Sentry & Logging"
+        ]
+    },
+    {
+        id: 11,
+        title: "Client Handover",
+        description: "Documentation & Training",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 30 min",
+            "📦 Pack: The Handover Package",
+            "🎥 Train: Loom Library",
+            "🤝 Support: Warranty Period"
+        ]
+    },
+    {
+        id: 12,
+        title: "Difficult Situations",
+        description: "Server Outages & Crisis",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "🔥 Scenario: Database Corruption",
+            "🔥 Scenario: Security Breach",
+            "🔥 Scenario: API Rate Limiting"
+        ]
+    },
+    {
+        id: 13,
+        title: "AI Development",
+        description: "Copilot & Refactoring",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 30 min",
+            "🤖 Prompt: Refactoring Legacy Code",
+            "🤖 Prompt: Generating Types",
+            "⚠️ Warn: AI Hallucinations"
         ]
     }
 ];
 
-// =====================================================
-// TASK 1: FULL STACK MINDSET & PRINCIPLES
-// =====================================================
 const task1Content = `
-<h2>📚 PART 1: THE PHILOSOPHY</h2>
+<h2>📚 TASK 1: MINDSET - The ₹5 Lakh Mistake</h2>
 
 <div class="content-section">
-<h3>🎯 Why "Plan Twice, Code Once"?</h3>
-<div class="highlight-box">
-<strong>The ₹5 Lakh Project That Almost Failed</strong>
-<p>We took on a custom dashboard project. Client wanted a "simple admin panel" for their delivery business. ₹5 lakhs budget. Seemed straightforward.</p>
-</div>
-
-<p><strong>Week 1-2:</strong> Started coding immediately. No detailed spec. "We'll figure it out as we go."</p>
-<p><strong>Week 3:</strong> Client says "Oh, we also need real-time GPS tracking." That changes everything.</p>
-<p><strong>Week 4:</strong> "Can drivers upload photos? And customers should get SMS updates." More scope creep.</p>
-<p><strong>Week 6:</strong> Project is 50% over budget. Team is frustrated. Client is unhappy. We're behind schedule.</p>
-
-<div class="warning-box">
-<strong>What saved us:</strong> We stopped. Did a proper discovery session. Created a detailed technical specification. Got sign-off on exact features. Renegotiated timeline and budget.
-</div>
-
-<p><strong>🎯 The Lesson:</strong> Custom projects REQUIRE detailed planning upfront. Every hour spent in discovery saves 10 hours in development. <strong>Never skip the planning phase.</strong></p>
-</div>
-
-<h2>📚 PART 2: THE 5 PROJECT PRINCIPLES</h2>
-
-<div class="content-section">
-<h3>⚡ PRINCIPLE 1: SPEC BEFORE CODE</h3>
-<div class="highlight-box">
-<strong>Never write a single line of code without a signed-off technical specification.</strong>
-</div>
-<p>Discovery is not optional — it's mandatory. The TSD (Technical Specification Document) is your contract with the client.</p>
-<ul>
-<li>❌ "I think the client wants..." = Recipe for disaster</li>
-<li>✅ "Client signed off on page 14, feature 3.2" = Professional</li>
-</ul>
+    <h3>📉 The Story</h3>
+    <p>A dev hardcoded an API key in the frontend. Scrapers found it, exhausted the quota, and billed the client ₹5 Lakhs in 24 hours.</p>
+    <div class="highlight-box">
+        <strong>Lesson:</strong> Security is not a feature. It is the foundation. Small mistakes cost fortunes.
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🔒 PRINCIPLE 2: SCOPE IS LOCKED AFTER APPROVAL</h3>
-<div class="highlight-box">
-<strong>Once client signs off on spec, scope is frozen. New features = new quote. No exceptions.</strong>
+    <h3>🛡️ 5 Core Principles</h3>
+    <ol>
+        <li><strong>Plan Twice, Code Once:</strong> Write the schema, <em>then</em> the code.</li>
+        <li><strong>Typesafety is Non-Negotiable:</strong> No <code>any</code>. Ever.</li>
+        <li><strong>Don't Repeate Yourself (DRY):</strong> Abstract logic.</li>
+        <li><strong>Secure by Default:</strong> Validate every input (Zod).</li>
+        <li><strong>Peer Review:</strong> No merging without approval.</li>
+    </ol>
 </div>
-<p>Scope creep kills projects. Every "small addition" adds up to massive overruns.</p>
-<table>
-<tr><td>❌ "Can you also add..." </td><td>→ "That's not in scope, but I can quote it"</td></tr>
-<tr><td>❌ "Just one more thing..." </td><td>→ "Happy to add that in Phase 2"</td></tr>
-<tr><td>❌ "I thought this was included" </td><td>→ "Let me show you the signed TSD"</td></tr>
-</table>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Case Study</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: The Audit</h4>
+        <p>Review this snippet: <code>const user = await db.query("SELECT * FROM users WHERE id=" + req.body.id);</code>. Identify the vulnerability and rewrite it securely.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>📊 PRINCIPLE 3: MILESTONE-BASED DELIVERY</h3>
-<p>Large projects are delivered in phases. Each phase = client approval before proceeding.</p>
-<table>
-<tr><th>Phase</th><th>Deliverable</th><th>Client Action</th></tr>
-<tr><td>Phase 1</td><td>Foundation (Auth, Layout)</td><td>Review & Approve</td></tr>
-<tr><td>Phase 2</td><td>Core Features</td><td>Review & Approve</td></tr>
-<tr><td>Phase 3</td><td>Integrations</td><td>Review & Approve</td></tr>
-<tr><td>Phase 4</td><td>Polish & Testing</td><td>Final QA</td></tr>
-<tr><td>Phase 5</td><td>Launch</td><td>Go Live!</td></tr>
-</table>
-<p>No surprises at the end. Client sees progress at every stage.</p>
-</div>
-
-<div class="content-section">
-<h3>✨ PRINCIPLE 4: CODE QUALITY IS NON-NEGOTIABLE</h3>
-<p>Clean code, proper comments, consistent formatting.</p>
-<div class="warning-box">
-<strong>If another developer can't understand your code, you've failed.</strong>
-</div>
-<ul>
-<li>Use meaningful variable names</li>
-<li>Comment complex logic</li>
-<li>Follow project coding standards</li>
-<li>No "clever" code that no one can maintain</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🧪 PRINCIPLE 5: TEST BEFORE DEPLOY</h3>
-<p>Every feature is tested. Edge cases are considered. Security is checked.</p>
-<div class="highlight-box">
-<strong>No "it works on my machine" excuses.</strong>
-<p>If it doesn't work for the client, it doesn't work. Period.</p>
-</div>
-</div>
-
-<h2>📚 PART 3: QUALITY STANDARDS</h2>
-
-<div class="content-section">
-<h3>⚠️ Zero Tolerance Policy</h3>
-<div class="warning-box">
-<strong>After 15 days of onboarding:</strong> ONE careless mistake on a live project = potential removal from client work.
-</div>
-<ul>
-<li>Check your work <strong>3-5 times</strong> before client delivery</li>
-<li>There are NO "small bugs" on production</li>
-<li>Preventable mistakes are unacceptable</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>🎯 Creative Ownership Principle</h3>
-<p><strong>You are 100% responsible for the quality of your work.</strong></p>
-<ul>
-<li>Code architecture, security, and performance = YOUR responsibility</li>
-<li>Documentation = YOUR responsibility</li>
-<li>Goal: <strong>Overdeliver</strong> — exceed expectations, not just meet them</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>👥 Peer Review Process</h3>
-<p>Before major deployments, get <strong>another developer to review</strong> your code:</p>
-<ul>
-<li>Fresh eyes catch what you missed</li>
-<li>Share knowledge across team</li>
-<li>Two brains are better than one</li>
-</ul>
-</div>
-
-<h2>📚 PART 4: TASK PRIORITY ORDER</h2>
-
-<div class="content-section">
-<h3>🎯 P0-P3 Priority System</h3>
-<table>
-<tr><th>Priority</th><th>Type</th><th>Action</th></tr>
-<tr><td>🔴 P0</td><td>Production Outages</td><td>DROP EVERYTHING. Fix immediately.</td></tr>
-<tr><td>🔴 P0</td><td>Security Vulnerabilities</td><td>Patch first, explain later.</td></tr>
-<tr><td>🔴 P0</td><td>Data Issues</td><td>Database problems, data loss. Critical.</td></tr>
-<tr><td>🟡 P1</td><td>Deadline-Day Deliveries</td><td>Features due TODAY must ship.</td></tr>
-<tr><td>🟡 P1</td><td>PM/Client Questions</td><td>Respond within 1 hour.</td></tr>
-<tr><td>🟢 P2</td><td>Active Development</td><td>Features with upcoming deadlines.</td></tr>
-<tr><td>🟢 P2</td><td>Code Reviews</td><td>Don't block teammates.</td></tr>
-<tr><td>⚪ P3</td><td>Technical Debt</td><td>Refactoring, optimization.</td></tr>
-</table>
-
-<div class="highlight-box">
-<strong>Golden Rule:</strong> Production issues > Security > Data > Deadlines > Communication > Development
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-<h3>✅ IMPLEMENTATION TASK: Master Full Stack Principles</h3>
-<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Memorize the 5 Principles (5 min)</h4>
-<p>Write out all 5 Project Principles from memory:</p>
-<ol>
-<li>SPEC BEFORE ____</li>
-<li>SCOPE IS ____ AFTER APPROVAL</li>
-<li>____-BASED DELIVERY</li>
-<li>CODE QUALITY IS ____</li>
-<li>TEST BEFORE ____</li>
-</ol>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Scope Creep Response (10 min)</h4>
-<p>A client says: "Can you also add a mobile app version? It shouldn't take long."</p>
-<p>Write your professional response that:</p>
-<ul>
-<li>Acknowledges their request positively</li>
-<li>Explains why it's out of scope</li>
-<li>Offers a path forward (Phase 2 or new quote)</li>
-</ul>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Fullstack SOP (15 min)</h4>
-<p>Open the <a href="../fullstack-sop.html" target="_blank" style="color: #8B5CF6;">Full Stack SOP document</a> and read:</p>
-<ul>
-<li>The 5 Project Principles section</li>
-<li>The Quality Standards section</li>
-<li>The Technical Specification Document section</li>
-</ul>
-</div>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Principle</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 2: DISCOVERY PHASE
-// =====================================================
 const task2Content = `
-<h2>📚 DISCOVERY PHASE</h2>
+<h2>📚 TASK 2: PLANNING - The Technical Spec</h2>
 
 <div class="content-section">
-<h3>💰 Discovery is a Paid Service</h3>
-<p>For complex projects, discovery is a separate paid engagement (<strong>$15,000 - $50,000</strong>). This ensures:</p>
-<ul>
-<li>Serious clients who value proper planning</li>
-<li>Protection for your time investment</li>
-<li>Clear deliverable: Technical Specification Document</li>
-</ul>
-</div>
-
-<div class="content-section">
-<h3>📅 Discovery Meeting Agenda (60-90 minutes)</h3>
-<table>
-<tr><th>Topic</th><th>Time</th><th>What to Capture</th></tr>
-<tr><td><strong>Business Context</strong></td><td>15 min</td><td>What problem are we solving? Who are the users? What's the business goal?</td></tr>
-<tr><td><strong>Feature Walkthrough</strong></td><td>30 min</td><td>Every feature explained. Write it ALL down. Ask "what happens when..."</td></tr>
-<tr><td><strong>User Roles</strong></td><td>10 min</td><td>Who uses the system? Admin, user, guest? What can each role do?</td></tr>
-<tr><td><strong>Integrations</strong></td><td>10 min</td><td>Payment gateway? Email service? Third-party APIs? CRM?</td></tr>
-<tr><td><strong>Design Expectations</strong></td><td>10 min</td><td>Reference websites, color preferences, brand guidelines</td></tr>
-<tr><td><strong>Timeline & Budget</strong></td><td>15 min</td><td>Launch date? Budget range? Must-haves vs nice-to-haves?</td></tr>
-</table>
+    <h3>📄 The TSD (Technical Spec Document)</h3>
+    <p>We do not write code until the TSD is approved. It includes:</p>
+    <ul>
+        <li><strong>ER Diagram:</strong> Database relationships.</li>
+        <li><strong>API Endpoints:</strong> List of GET/POST/PUT.</li>
+        <li><strong>Tech Stack:</strong> Verified libraries.</li>
+        <li><strong>Risks:</strong> "Payment gateway approvals might take 3 days."</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>❓ Critical Questions (Never Skip These)</h3>
-<div class="highlight-box">
-<ol>
-<li><strong>"What does success look like?"</strong> — Understand the real goal</li>
-<li><strong>"Who will use this and how?"</strong> — Understand user flows</li>
-<li><strong>"What happens when [edge case]?"</strong> — Find hidden complexity</li>
-<li><strong>"What existing systems does this need to work with?"</strong> — Find integration needs</li>
-<li><strong>"What's the budget range?"</strong> — Ensure alignment before work</li>
-<li><strong>"When do you need this live?"</strong> — Set realistic expectations</li>
-<li><strong>"Who approves deliverables?"</strong> — Identify decision-maker</li>
-</ol>
-</div>
+    <h3>💸 Discovery Phase</h3>
+    <p>Planning is WORK. We charge for Discovery. Never plan for free.</p>
 </div>
 
-<div class="content-section">
-<h3>🔍 Finding Hidden Complexity</h3>
-<p>The question <strong>"What happens when [edge case]?"</strong> reveals requirements clients forget to mention:</p>
-<table>
-<tr><th>Ask This</th><th>Reveals</th></tr>
-<tr><td>"What happens when a user has no orders?"</td><td>Empty state designs needed</td></tr>
-<tr><td>"What if two users edit the same record?"</td><td>Conflict resolution needed</td></tr>
-<tr><td>"What happens when payment fails?"</td><td>Error handling flows needed</td></tr>
-<tr><td>"What if the API is down?"</td><td>Fallback strategies needed</td></tr>
-</table>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Discovery Master</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The "Why Paid?" Script (10 min)</h4>
-        <p>A client asks: "Why do I have to pay for a Discovery phase? Can't you just give me a quote?"</p>
-        <p>Write your response explaining the value (Protection, Clear Spec, Accurate Quote).</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: ER Diagram</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Schema Planning</h4>
+        <p>Client wants a "Course Platform". Define the relations between `User`, `Course`, `Lesson`, and `Enrollment`. Write the Prisma Schema pseudo-code.</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Edge Case Hunter (10 min)</h4>
-        <p>Feature: "User uploads a profile picture."</p>
-        <p>List 3 edge cases you must ask about (e.g., File size? File type? What if upload fails?).</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Planning</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 3: TECHNICAL SPECIFICATION DOCUMENT
-// =====================================================
 const task3Content = `
-<h2>📚 TECHNICAL SPECIFICATION DOCUMENT (TSD)</h2>
+<h2>📚 TASK 3: TECH STACK - The Digital Heroes Stack</h2>
 
 <div class="content-section">
-<h3>📄 Every Custom Project Gets a TSD</h3>
-<div class="highlight-box">
-The TSD is your contract. It defines <strong>exactly</strong> what will be built. Client signs off before development starts.
-</div>
+    <h3>⚛️ Frontend: Next.js + React</h3>
+    <p>We use the App Router. Components must be Server Components by default. Use <code>"use client"</code> sparingly.</p>
 </div>
 
 <div class="content-section">
-<h3>📋 TSD Structure (10 Sections)</h3>
-<table>
-<tr><th>Section</th><th>Contents</th></tr>
-<tr><td><strong>1. Project Overview</strong></td><td>Business context, goals, success metrics</td></tr>
-<tr><td><strong>2. User Roles & Permissions</strong></td><td>Who can do what in the system</td></tr>
-<tr><td><strong>3. Feature List</strong></td><td>Every feature with detailed acceptance criteria</td></tr>
-<tr><td><strong>4. User Flows</strong></td><td>Step-by-step flow diagrams for key processes</td></tr>
-<tr><td><strong>5. Database Schema</strong></td><td>Tables, relationships, data types</td></tr>
-<tr><td><strong>6. API Endpoints</strong></td><td>All backend routes with request/response formats</td></tr>
-<tr><td><strong>7. Third-Party Integrations</strong></td><td>External services, APIs, credentials needed</td></tr>
-<tr><td><strong>8. Technology Stack</strong></td><td>Frontend, backend, database, hosting decisions</td></tr>
-<tr><td><strong>9. Timeline & Milestones</strong></td><td>Phase breakdown with delivery dates</td></tr>
-<tr><td><strong>10. Out of Scope</strong></td><td>What is NOT included (very important!)</td></tr>
-</table>
+    <h3>🔙 Backend Options</h3>
+    <ul>
+        <li><strong>Server Actions:</strong> For simple CRUD directly in Next.js.</li>
+        <li><strong>Node/Express:</strong> For complex, heavy-lifting APIs or long-running jobs (BullMQ).</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>⚠️ Why "Out of Scope" is Critical</h3>
-<div class="warning-box">
-Client expectations often exceed what was agreed. The "Out of Scope" section protects both parties.
-</div>
-<p><strong>Example:</strong></p>
-<ul>
-<li>❌ "Mobile app" — Only web responsive, no native app</li>
-<li>❌ "Multi-language" — English only for Phase 1</li>
-<li>❌ "AI recommendations" — Manual product curation only</li>
-<li>❌ "Custom email designs" — Using template emails</li>
-</ul>
-<p>This prevents scope creep and uncomfortable conversations later.</p>
+    <h3>🗄️ Database: PostgreSQL + Prisma</h3>
+    <p>Prisma ORM is mandatory for typesafety. No raw SQL strings unless for performance optimization.</p>
 </div>
 
-<div class="content-section">
-<h3>📝 Feature Acceptance Criteria Example</h3>
-<div class="highlight-box">
-<strong>Feature:</strong> User Registration<br>
-<strong>Acceptance Criteria:</strong>
-<ul>
-<li>User can register with email and password</li>
-<li>Password must be 8+ characters with 1 number</li>
-<li>Email verification required before login</li>
-<li>Error messages shown for invalid input</li>
-<li>Success redirects to dashboard</li>
-</ul>
-</div>
-<p>This level of detail prevents "I thought it would work differently" conversations.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: TSD Writer</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Acceptance Criteria (10 min)</h4>
-        <p>Write the Acceptance Criteria for: "Forgot Password Functionality".</p>
-        <p>(Think: Link expiration? Email delivery? Success message?)</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Setup</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Stack Choice</h4>
+        <p>Scenario: A chat app with real-time websockets. Next.js Server Actions or Node.js Custom Server? Justify your choice.</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Out of Scope Definition (5 min)</h4>
-        <p>You are building a "Basic E-commerce Store". List 3 things you explicitly list as OUT OF SCOPE to protect yourself.</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about The Stack</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 4: PROJECT SETUP & ARCHITECTURE
-// =====================================================
 const task4Content = `
-<h2>📚 PROJECT SETUP & ARCHITECTURE</h2>
+<h2>📚 TASK 4: SETUP & ARCHITECTURE</h2>
 
 <div class="content-section">
-<h3>✅ Project Initialization Checklist</h3>
-<table>
-<tr><th>Task</th><th>Details</th></tr>
-<tr><td><strong>Create GitHub Repository</strong></td><td>Private repo, proper naming (client-project-name)</td></tr>
-<tr><td><strong>Initialize Project</strong></td><td>npx create-next-app@latest or appropriate starter</td></tr>
-<tr><td><strong>Set Up Environment Variables</strong></td><td>.env.local, .env.example (without secrets)</td></tr>
-<tr><td><strong>Configure ESLint & Prettier</strong></td><td>Consistent code formatting across team</td></tr>
-<tr><td><strong>Set Up Database</strong></td><td>Create DB, configure connection, test</td></tr>
-<tr><td><strong>Configure Hosting</strong></td><td>Connect to Vercel/Railway, set up previews</td></tr>
-<tr><td><strong>Set Up Branch Strategy</strong></td><td>main, develop, feature branches</td></tr>
-</table>
-</div>
-
-<div class="content-section">
-<h3>📁 Folder Structure (Next.js)</h3>
-<pre style="background: #1a1a2e; padding: 15px; border-radius: 8px; overflow-x: auto;">
-/src
-  /app                    // App router pages
-    /api                  // API routes
-    /(auth)              // Auth pages (login, register)
-    /(dashboard)         // Protected pages
-    layout.tsx
-    page.tsx
-  /components            // Reusable UI components
-    /ui                  // Base components (Button, Input)
-    /forms              // Form components
-    /layout             // Layout components (Header, Footer)
-  /lib                   // Utilities, helpers
-    db.ts               // Database connection
-    auth.ts             // Auth configuration
-    utils.ts            // Helper functions
-  /types                 // TypeScript types
-  /hooks                 // Custom React hooks
-  /services             // API calls, external services
-/prisma
-  schema.prisma         // Database schema
-/public                  // Static assets
-</pre>
-</div>
-
-<div class="content-section">
-<h3>🌿 Branch Strategy</h3>
-<table>
-<tr><th>Branch</th><th>Purpose</th><th>Deploys To</th></tr>
-<tr><td><strong>main</strong></td><td>Production code only</td><td>Production</td></tr>
-<tr><td><strong>develop</strong></td><td>Staging/testing</td><td>Staging</td></tr>
-<tr><td><strong>feature/[name]</strong></td><td>New features</td><td>Preview</td></tr>
-<tr><td><strong>fix/[name]</strong></td><td>Bug fixes</td><td>Preview</td></tr>
-<tr><td><strong>hotfix/[name]</strong></td><td>Urgent production fixes</td><td>Production</td></tr>
-</table>
-
-<div class="highlight-box">
-<strong>Flow:</strong> feature → develop (test) → main (production)
-</div>
-</div>
-
-<div class="content-section">
-<h3>🛠️ Technology Stack</h3>
-<table>
-<tr><th>Layer</th><th>Options</th></tr>
-<tr><td><strong>Frontend</strong></td><td>Next.js, React, Tailwind CSS, TypeScript</td></tr>
-<tr><td><strong>Backend</strong></td><td>Next.js API Routes, Node.js + Express, Prisma</td></tr>
-<tr><td><strong>Database</strong></td><td>PostgreSQL, MongoDB, Supabase, Firebase</td></tr>
-<tr><td><strong>Hosting</strong></td><td>Vercel, Railway, AWS, DigitalOcean</td></tr>
-<tr><td><strong>Auth</strong></td><td>NextAuth, Clerk, Auth0</td></tr>
-</table>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Architect</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Structure Sort (10 min)</h4>
-        <p>Where does this file go? (Match file to folder)</p>
-        <ul>
-            <li>header.tsx → ?</li>
-            <li>user-profile-page.tsx → ?</li>
-            <li>formatDate.ts → ?</li>
-            <li>global.css → ?</li>
-        </ul>
+    <h3>📂 Folder Structure (Feature-Based)</h3>
+    <p>Stop putting all headers in <code>/components</code>. Co-locate!</p>
+    <div class="code-block" style="background: #1e1e1e; padding: 10px; font-family: monospace;">
+        /features<br>
+        &nbsp;&nbsp;/auth<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;/components<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;/actions<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;/hooks
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Branch Logic (5 min)</h4>
-        <p>You need to fix a critical bug on the LIVE site. Which branch do you create? Which branch do you merge into?</p>
+</div>
+
+<div class="content-section">
+    <h3>🌿 Branching Strategy</h3>
+    <p><code>main</code> is sacred (Production).</p>
+    <p>Work in <code>feat/authentication</code> or <code>fix/navbar-bug</code>. PR into <code>dev</code> first.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Git Flow</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Merge Resolve</h4>
+        <p>You and a teammate edited the same `UserButton.tsx`. Git says "CONFLICT". Describe the steps to resolve it manually.</p>
     </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Architecture</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 5: DEVELOPMENT PHASES & MILESTONES
-// =====================================================
 const task5Content = `
-<h2>📚 DEVELOPMENT PHASES & MILESTONES</h2>
+<h2>📚 TASK 5: DEVELOPMENT PHASES (6 Weeks)</h2>
 
 <div class="content-section">
-<h3>📅 Typical Timeline: 4-8 Weeks</h3>
-<p>Custom projects follow a phased approach. Each phase has clear deliverables and <strong>client approval before proceeding</strong>.</p>
-</div>
-
-<div class="content-section">
-<h3>🏗️ Phase 1: Foundation (Week 1-2)</h3>
-<ul>
-<li>Project setup (repo, hosting, CI/CD)</li>
-<li>Database schema implementation</li>
-<li>Authentication system</li>
-<li>Base layout and navigation</li>
-<li>Core UI components</li>
-</ul>
-<div class="highlight-box">
-<strong>Deliverable:</strong> Working login/register, basic dashboard shell
-</div>
+    <h3>Phase 1: Foundation (Wk 1-2)</h3>
+    <p>Auth setup, DB schema locked, UI Kit installed. The "Skeleton" of the app.</p>
 </div>
 
 <div class="content-section">
-<h3>⚙️ Phase 2: Core Features (Week 2-4)</h3>
-<ul>
-<li>Primary CRUD operations</li>
-<li>Main user flows implemented</li>
-<li>API endpoints for core features</li>
-<li>Form validations</li>
-<li>Error handling</li>
-</ul>
-<div class="highlight-box">
-<strong>Deliverable:</strong> All primary features functional
-</div>
+    <h3>Phase 3: Integrations (Wk 4-5)</h3>
+    <p>Stripe, SendGrid, Twilio. This is where bugs happen. Buffer time here.</p>
 </div>
 
-<div class="content-section">
-<h3>🔌 Phase 3: Integrations (Week 4-5)</h3>
-<ul>
-<li>Payment gateway integration</li>
-<li>Email service setup</li>
-<li>Third-party API connections</li>
-<li>Notifications system</li>
-</ul>
-<div class="highlight-box">
-<strong>Deliverable:</strong> All integrations working in test mode
-</div>
-</div>
-
-<div class="content-section">
-<h3>✨ Phase 4: Polish & Testing (Week 5-6)</h3>
-<ul>
-<li>UI/UX refinement</li>
-<li>Mobile responsiveness</li>
-<li>Performance optimization</li>
-<li>Bug fixes from testing</li>
-<li>Security review</li>
-</ul>
-<div class="highlight-box">
-<strong>Deliverable:</strong> Production-ready application
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Phase 5: Launch (Week 6-7)</h3>
-<ul>
-<li>Production deployment</li>
-<li>DNS configuration</li>
-<li>SSL setup</li>
-<li>Final testing on live</li>
-<li>Client training</li>
-</ul>
-<div class="highlight-box">
-<strong>Deliverable:</strong> Live website + documentation
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Phase Commander</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Phase Sorting (10 min)</h4>
-        <p>Assign these tasks to the correct Phase (1-5):</p>
-        <ul>
-            <li>Install Stripe SDK</li>
-            <li>Run Lighthouse Audit</li>
-            <li>Create "User" database table</li>
-            <li>Point A record to server IP</li>
-            <li>Build "Edit Profile" form</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Planning</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Gantt Chart</h4>
+        <p>Create a 6-week roadmap for a "Real Estate Listing Platform". When do you build the "Map View" vs the "Admin Dashboard"?</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Update Email (10 min)</h4>
-        <p>You finished Phase 2 (Core Features). Draft an email to the client asking for their review so you can move to Phase 3.</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Phases</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// FULLSTACK TRAINING DATA - PART 2 (Tasks 6-10 + Quizzes)
-
-// =====================================================
-// TASK 6: DATABASE DESIGN & API DEVELOPMENT
-// =====================================================
 const task6Content = `
-<h2>📚 DATABASE DESIGN & API DEVELOPMENT</h2>
+<h2>📚 TASK 6: DATABASE DESIGN</h2>
 
 <div class="content-section">
-<h3>🗄️ Database Design Principles</h3>
-<table>
-<tr><th>Principle</th><th>Implementation</th></tr>
-<tr><td><strong>Normalize data</strong></td><td>Avoid duplication, use relationships</td></tr>
-<tr><td><strong>Plan for scale</strong></td><td>Index frequently queried columns</td></tr>
-<tr><td><strong>Use soft deletes</strong></td><td>deletedAt timestamp, never hard delete</td></tr>
-<tr><td><strong>Timestamps on everything</strong></td><td>createdAt, updatedAt on all tables</td></tr>
-<tr><td><strong>UUID over auto-increment</strong></td><td>Better for distributed systems</td></tr>
-</table>
+    <h3>📐 Normalization</h3>
+    <p>Don't store "User Address" inside the "Orders" table repeatedly. Create an <code>Address</code> table and relate it.</p>
 </div>
 
 <div class="content-section">
-<h3>📡 API Standards</h3>
-<table>
-<tr><th>Standard</th><th>Implementation</th></tr>
-<tr><td><strong>RESTful naming</strong></td><td>/api/users (not /api/getUsers)</td></tr>
-<tr><td><strong>HTTP methods</strong></td><td>GET (read), POST (create), PUT (update), DELETE (remove)</td></tr>
-<tr><td><strong>Status codes</strong></td><td>200 (success), 201 (created), 400 (bad request), 401 (unauthorized), 404 (not found), 500 (server error)</td></tr>
-<tr><td><strong>Response format</strong></td><td>{ success: true, data: {...} } or { success: false, error: "message" }</td></tr>
-<tr><td><strong>Authentication</strong></td><td>JWT in Authorization header or secure HTTP-only cookies</td></tr>
-<tr><td><strong>Validation</strong></td><td>Validate ALL inputs. Use Zod or Yup schemas</td></tr>
-</table>
+    <h3>⚡ Indexing</h3>
+    <p>If you search by <code>email</code> frequently, you MUST add an index. <code>@@index([email])</code>. Otherwise, the DB scans every row.</p>
 </div>
 
-<div class="content-section">
-<h3>⚡ Error Handling Template</h3>
-<pre style="background: #1a1a2e; padding: 15px; border-radius: 8px;">
-try {
-  const data = await doSomething();
-  return Response.json({ success: true, data });
-} catch (error) {
-  console.error('[API Error]', error);
-  return Response.json(
-    { success: false, error: 'Something went wrong' },
-    { status: 500 }
-  );
-}
-</pre>
-</div>
-
-<div class="content-section">
-<h3>🔒 Input Validation Rule</h3>
-<div class="warning-box">
-<strong>Frontend validation is for UX. Backend validation is for security.</strong>
-<p>Never trust client-side data. Always validate on the server.</p>
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Backend Builder</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Schema Design (15 min)</h4>
-        <p>Design a <strong>Product</strong> table schema. List the columns you need (e.g. id, price, etc). Don't forget the standard audit columns!</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Optimization</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: The Slow Query</h4>
+        <p>A query taking 5 seconds: <code>SELECT * FROM logs WHERE status = 'ERROR'</code>. The logs table has 1M rows. How do you fix it?</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Status Code Quiz (5 min)</h4>
-        <p>What HTTP status code do you return for:</p>
-        <ul>
-            <li>User tries to delete product they don't own?</li>
-            <li>User sends invalid email format?</li>
-            <li>Server crashes?</li>
-            <li>Successfully updated profile?</li>
-        </ul>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Databases</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 7: TESTING & QA PROTOCOL
-// =====================================================
 const task7Content = `
-<h2>📚 TESTING & QA PROTOCOL</h2>
+<h2>📚 TASK 7: API DEVELOPMENT - The Connector</h2>
 
 <div class="content-section">
-<h3>✅ Testing Checklist</h3>
-<table>
-<tr><th>Category</th><th>Items to Test</th></tr>
-<tr><td><strong>Functionality</strong></td><td>All features work as specified. Edge cases handled.</td></tr>
-<tr><td><strong>Authentication</strong></td><td>Login, logout, password reset, session handling, protected routes</td></tr>
-<tr><td><strong>Authorization</strong></td><td>Role-based access works. Users can't access admin features.</td></tr>
-<tr><td><strong>Forms</strong></td><td>Validation works, errors shown, success messages, loading states</td></tr>
-<tr><td><strong>Responsive</strong></td><td>Works on mobile, tablet, desktop. No horizontal scroll.</td></tr>
-<tr><td><strong>Performance</strong></td><td>Page load < 3s. No unnecessary re-renders. Images optimized.</td></tr>
-<tr><td><strong>Security</strong></td><td>SQL injection prevented, XSS prevented, CSRF tokens, HTTPS</td></tr>
-</table>
+    <h3>🌐 REST Standards</h3>
+    <ul>
+        <li><strong>GET:</strong> Retrieve (Idempotent).</li>
+        <li><strong>POST:</strong> Create.</li>
+        <li><strong>PUT:</strong> Replace fully.</li>
+        <li><strong>PATCH:</strong> Update partially.</li>
+        <li><strong>DELETE:</strong> Remove.</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>🚨 Security Must-Checks (5 NEVER Rules)</h3>
-<div class="warning-box">
-<ol>
-<li><strong>Never</strong> expose API keys in frontend code</li>
-<li><strong>Never</strong> trust client-side data — always validate server-side</li>
-<li><strong>Never</strong> store passwords in plain text</li>
-<li><strong>Never</strong> log sensitive data (passwords, tokens, PII)</li>
-<li><strong>Never</strong> disable CORS for production</li>
-</ol>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🎯 Performance Targets</h3>
-<table>
-<tr><th>Metric</th><th>Target</th></tr>
-<tr><td>Page Load</td><td>< 3 seconds</td></tr>
-<tr><td>Time to Interactive</td><td>< 5 seconds</td></tr>
-<tr><td>Core Web Vitals</td><td>All green</td></tr>
-<tr><td>Mobile Score</td><td>85+</td></tr>
-</table>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Breaker</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Test Case Writer (10 min)</h4>
-        <p>Write 3 manual test steps to verify a "Checkout Process". (e.g. 1. Add item to cart...)</p>
-        <p>Include one "Negative Test" (trying to break it).</p>
+    <h3>🛡️ Validation (Zod)</h3>
+    <div class="code-block" style="background: #1e1e1e; padding: 10px; font-family: monospace;">
+        const schema = z.object({<br>
+        &nbsp;&nbsp;email: z.string().email(),<br>
+        &nbsp;&nbsp;age: z.number().min(18)<br>
+        });
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Security Spot Check (5 min)</h4>
-        <p>You find this code in a repo: <code>const STRIPE_SECRET = "sk_test_12345...";</code> inside a React component.</p>
-        <p>Why is this bad? Where should it go?</p>
+    <p>Validate INPUT and OUTPUT.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Endpoint Build</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Error Handling</h4>
+        <p>Write a Try/Catch block for an API route. If the DB fails, what status code do you return? What message? (Don't leak stack traces!)</p>
     </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about APIs</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 8: DEPLOYMENT & CLIENT HANDOVER
-// =====================================================
 const task8Content = `
-<h2>📚 DEPLOYMENT & CLIENT HANDOVER</h2>
+<h2>📚 TASK 8: SECURITY ESSENTIALS</h2>
 
 <div class="content-section">
-<h3>✅ Pre-Deployment Checklist</h3>
-<table>
-<tr><th>Task</th><th>Status</th></tr>
-<tr><td>All environment variables set in production</td><td>☐</td></tr>
-<tr><td>Database migrated to production</td><td>☐</td></tr>
-<tr><td>SSL certificate configured</td><td>☐</td></tr>
-<tr><td>Domain DNS configured correctly</td><td>☐</td></tr>
-<tr><td>Payment gateway in live mode (not test)</td><td>☐</td></tr>
-<tr><td>Email service configured with production domain</td><td>☐</td></tr>
-<tr><td>Error monitoring set up (Sentry or similar)</td><td>☐</td></tr>
-<tr><td>Analytics configured</td><td>☐</td></tr>
-<tr><td>Backup strategy in place</td><td>☐</td></tr>
-</table>
+    <h3>🚫 OWASP Top 10</h3>
+    <ol>
+        <li><strong>Broken Access Control:</strong> Can I see Admin pages as a user?</li>
+        <li><strong>Injection:</strong> SQL/Command injection.</li>
+        <li><strong>Cryptographic Faclure:</strong> Storing passwords as plain text? (Use bcrypt/argon2).</li>
+    </ol>
 </div>
 
 <div class="content-section">
-<h3>📦 Handover Package Contents</h3>
-<ul>
-<li><strong>Admin credentials</strong> — Login details for admin panel</li>
-<li><strong>Documentation</strong> — How to use the system (Notion/PDF)</li>
-<li><strong>Training video</strong> — Loom walkthrough of key features</li>
-<li><strong>Technical documentation</strong> — For future developers</li>
-<li><strong>Environment variables list</strong> — What's configured where</li>
-<li><strong>Hosting access</strong> — Vercel/Railway/hosting login</li>
-<li><strong>Domain registrar access</strong> — DNS management</li>
-<li><strong>GitHub repository</strong> — Transfer ownership or add as collaborator</li>
-<li><strong>Support period details</strong> — What's included, how to contact</li>
-</ul>
+    <h3>🔑 JWT vs Sessions</h3>
+    <p>Using NextAuth? Understand the tradeoff. JWT is stateless but hard to revoke. Sessions are database-heavy but secure.</p>
 </div>
 
-<div class="content-section">
-<h3>🎥 Training Video Best Practices</h3>
-<div class="highlight-box">
-<ul>
-<li>Keep under 15 minutes (break into parts if needed)</li>
-<li>Show don't tell — screen record actual usage</li>
-<li>Cover: Login, dashboard, common tasks, where to get help</li>
-<li>Use Loom or similar for easy sharing</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Closer</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Pre-Flight Check (10 min)</h4>
-        <p>You deployed to production but forgot one Env Variable. The app crashes. Which one did you likely forget?</p>
-        <p>(Common culprits: DATABASE_URL, NEXTAUTH_SECRET, STRIPE_KEY). Write a sticky note checklist for your monitor.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Sec Audit</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: XSS Prevention</h4>
+        <p>A user inputs <code>&lt;script&gt;alert('hacked')&lt;/script&gt;</code> into their bio. How does React handle this? When is it dangerous?</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Handover Outline (10 min)</h4>
-        <p>Create the Table of Contents for a Client User Manual for a "Blog Admin Panel".</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Security</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 9: DIFFICULT SITUATIONS & TROUBLESHOOTING
-// =====================================================
 const task9Content = `
-<h2>📚 DIFFICULT SITUATIONS & TROUBLESHOOTING</h2>
+<h2>📚 TASK 9: QA & TESTING</h2>
 
 <div class="content-section">
-<h3>🔴 SCENARIO 1: Production Server Down</h3>
-<p><strong>Situation:</strong> Client's application is completely inaccessible.</p>
-<div class="highlight-box">
-<strong>Response:</strong>
-<ol>
-<li>Check server status and logs immediately</li>
-<li>Communicate: "We're aware and investigating."</li>
-<li>Roll back last deploy if it caused the issue</li>
-<li>Document root cause after resolution</li>
-</ol>
-</div>
-<p><strong>Rule:</strong> Availability first. Communicate early. Post-mortem after fire is out.</p>
+    <h3>🧪 Testing Pyramid</h3>
+    <ul>
+        <li><strong>Unit Tests (Jest):</strong> Test individual functions. (Fast)</li>
+        <li><strong>Integration Tests:</strong> Test modules working together.</li>
+        <li><strong>E2E Tests (Playwright):</strong> Test the full browser flow. (Slow but critical).</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>🔴 SCENARIO 2: Database Corruption or Data Loss</h3>
-<p><strong>Situation:</strong> Data is missing or corrupted.</p>
-<div class="warning-box">
-<strong>Response:</strong> Stop all writes immediately. Check backups. Restore from last known good backup. Document what was lost. Implement better backup strategy after.
-</div>
-<p><strong>Rule:</strong> Backups save lives. Test restores regularly.</p>
+    <h3>✅ Pre-Merge Checklist</h3>
+    <p>Linting passed? Build passed? No console logs left?</p>
 </div>
 
-<div class="content-section">
-<h3>🔴 SCENARIO 3: Security Vulnerability Discovered</h3>
-<p><strong>Situation:</strong> Found or reported security flaw.</p>
-<div class="highlight-box">
-<strong>Response:</strong> Assess severity. If critical: Patch immediately or take affected feature offline. Inform client. Document the vulnerability and fix. Review for similar issues.
-</div>
-<p><strong>Rule:</strong> Security issues are P0. Drop everything else.</p>
-</div>
-
-<div class="content-section">
-<h3>🔴 SCENARIO 4: Third-Party API is Down</h3>
-<p><strong>Situation:</strong> External service your app depends on is not responding.</p>
-<div class="highlight-box">
-<strong>Response:</strong> Check status page. Implement graceful degradation (fallback UX). Notify client: "We're experiencing issues with [service]. Working on a workaround."
-</div>
-<p><strong>Rule:</strong> Always plan for third-party failures.</p>
-</div>
-
-<div class="content-section">
-<h3>🔴 SCENARIO 5: Client Wants Feature in Unrealistic Timeline</h3>
-<p><strong>Situation:</strong> Client expects complex feature in days, not weeks.</p>
-<div class="highlight-box">
-<strong>Response:</strong> "I understand the urgency. To deliver properly, this takes [X days]. I can deliver [smaller scope] by your deadline, then add the rest. Which approach works better?"
-</div>
-<p><strong>Rule:</strong> Don't promise impossible. Offer phased delivery.</p>
-</div>
-
-<div class="content-section">
-<h3>🔴 SCENARIO 6: Inherited Codebase is a Disaster</h3>
-<p><strong>Situation:</strong> Taking over project with poor code quality.</p>
-<div class="highlight-box">
-<strong>Response:</strong> Document issues found. Estimate cleanup time. Advise PM: "Before adding features, we should refactor [X] to prevent future bugs."
-</div>
-<p><strong>Rule:</strong> Don't blame previous devs. Document risks. Recommend solutions.</p>
-</div>
-
-<div class="content-section">
-<h3>🔴 SCENARIO 7: Your Deployment Broke Something</h3>
-<p><strong>Situation:</strong> New feature caused unexpected issues.</p>
-<div class="warning-box">
-<strong>Response:</strong> Roll back immediately if possible. Own it: "My recent deployment caused [issue]. Rolling back now." Then investigate properly in staging.
-</div>
-<p><strong>Rule:</strong> Fast rollback beats slow debugging.</p>
-</div>
-
-<div class="content-section">
-<h3>🔴 SCENARIO 8: Client Access Credentials Compromised</h3>
-<p><strong>Situation:</strong> Credentials were exposed or suspected breach.</p>
-<div class="warning-box">
-<strong>Response:</strong> Rotate ALL credentials immediately. Check for unauthorized access in logs. Notify client and PM. Review access controls.
-</div>
-<p><strong>Rule:</strong> Rotate first, investigate second. Never share creds in plain text.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Firefighter</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The "Server Down" Msg (5 min)</h4>
-        <p>A client texts: "MY SITE IS DOWN!". You are checking logs. Send a reply that calms them down while you investigate.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: E2E</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Playwright Script</h4>
+        <p>Write pseudo-code for a Playwright test that: 1. Goes to login. 2. Types credentials. 3. Clicks submit. 4. Expects URL to be /dashboard.</p>
     </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Negotiate Timeline (10 min)</h4>
-        <p>Client wants a "Chat Feature" by Friday (it takes 2 weeks). Write a message offering a "Phased Approach" that gives them <em>something</em> by Friday.</p>
-    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Testing</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// =====================================================
-// TASK 10: FINAL CERTIFICATION
-// =====================================================
 const task10Content = `
-<h2>🎓 FINAL CERTIFICATION</h2>
+<h2>📚 TASK 10: DEPLOYMENT & DEVOPS</h2>
 
 <div class="content-section">
-<h3>📋 Pre-Certification Requirements</h3>
-<ul>
-<li>✅ Complete Tasks 1-9 with 10/10 on all quizzes</li>
-<li>✅ Review entire SOP: https://dhlibrary.vercel.app/fullstack-sop.html</li>
-<li>📖 Study all 5 Project Principles</li>
-<li>📖 Know all 8 difficult scenario scripts</li>
-<li>📖 Understand the 5-phase development cycle</li>
-</ul>
+    <h3>☁️ Hosting Providers</h3>
+    <ul>
+        <li><strong>Vercel:</strong> Best for Next.js (Frontend).</li>
+        <li><strong>Railway/Render:</strong> Best for Database & Background workers.</li>
+        <li><strong>AWS:</strong> Only if necessary (Complex).</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>📝 Final Exam: 20 Questions</h3>
-<p>The final exam covers ALL material from Tasks 1-9. You must score <strong>20/20 (100%)</strong> to pass.</p>
+    <h3>🚀 CI/CD Pipelines</h3>
+    <p>Automate it. GitHub Actions should run tests on every Pull Request.</p>
 </div>
 
-<div class="content-section">
-<h3>🎥 Video Submission Requirement</h3>
-<p><strong>After passing exam, record 30-minute video:</strong></p>
-
-<h4>1️⃣ Introduction (2 min)</h4>
-<ul>
-<li>Your name and background</li>
-<li>Previous development experience</li>
-</ul>
-
-<h4>2️⃣ SOP Walkthrough (10 min)</h4>
-<ul>
-<li>Walk through the 5 Project Principles</li>
-<li>Explain the 5-phase development cycle</li>
-<li>Describe the TSD structure</li>
-</ul>
-
-<h4>3️⃣ Technical Demonstration (15 min)</h4>
-<ul>
-<li>Show your understanding of project setup</li>
-<li>Walk through a sample folder structure</li>
-<li>Explain API design decisions</li>
-<li>Demonstrate testing approach</li>
-</ul>
-
-<h4>4️⃣ Closing (3 min)</h4>
-<ul>
-<li>How you'll apply these principles</li>
-<li>Your commitment to quality</li>
-</ul>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Final Demo</h3>
-    <p><strong>One final step before you're certified:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Video Rehearsal (20 min)</h4>
-        <p>Record a test 5-minute video where you explain the "5 Project Principles" as if you were teaching a junior dev.</p>
-        <p>Watch it back. Do you sound confident?</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Env Vars</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Secret Management</h4>
+        <p>You accidentally pushed <code>.env</code> with production keys to GitHub. What are the EXACT 3 steps you take now?</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>✅ Upon Certification</h3>
-<div class="highlight-box">
-<ol>
-<li>✅ "CERTIFIED FULL STACK DEVELOPER" badge</li>
-<li>✅ Assigned first project with senior oversight</li>
-<li>✅ Begin building real client applications</li>
-</ol>
-</div>
-</div>
-
-<div class="content-section">
-<h3>💡 REMEMBER</h3>
-<div class="highlight-box" style="font-size: 1.2em; text-align: center;">
-<strong>"Plan twice, code once."</strong><br><br>
-<strong>Spec → Build → Test → Deploy</strong>
-</div>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about DevOps</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// Assign content to tasks
-trainingTasks[0].content = task1Content;
-trainingTasks[1].content = task2Content;
-trainingTasks[2].content = task3Content;
-trainingTasks[3].content = task4Content;
-trainingTasks[4].content = task5Content;
-trainingTasks[5].content = task6Content;
-trainingTasks[6].content = task7Content;
-trainingTasks[7].content = task8Content;
-trainingTasks[8].content = task9Content;
-trainingTasks[9].content = task10Content;
+const task11Content = `
+<h2>📚 TASK 11: CLIENT HANDOVER</h2>
 
-// ===============================================
-// QUIZ QUESTIONS - 120 Total (10 per task + 20 final)
-// Answer positions randomized for equal A/B/C/D distribution
-// ===============================================
+<div class="content-section">
+    <h3>📦 The Handover Package</h3>
+    <ul>
+        <li>Source Code (Zip + Repo Invite).</li>
+        <li>Admin Credentials.</li>
+        <li>Architecture Diagram.</li>
+        <li>README.md (How to run locally).</li>
+    </ul>
+</div>
 
-const task1Quiz = [
-    { q: "\"Spec Before Code\" means:", o: ["Write code first, document later", "Create specifications after coding", "Skip specifications for small projects", "Never write code without a signed-off technical specification"], c: 3 },
-    { q: "After 15 days onboarding, ONE careless mistake can result in:", o: ["Potential removal from client work", "A warning", "Extra training", "Nothing serious"], c: 0 },
-    { q: "Scope is locked means:", o: ["Scope can change anytime", "Once client signs off, new features = new quote", "Add features for free to please clients", "Ignore scope changes"], c: 1 },
-    { q: "P0 priority includes:", o: ["Learning and optimization", "Code reviews", "Production outages, security vulnerabilities, data issues", "New feature development"], c: 2 },
-    { q: "Before ANY submission, you should review work:", o: ["Once", "Not needed if it compiles", "3-5 times", "Only if time permits"], c: 2 },
-    { q: "If client finds bugs before you:", o: ["It's normal", "Client should test everything", "It's a failure — YOU are responsible for quality", "Bugs are expected"], c: 2 },
-    { q: "Code Quality is:", o: ["Non-negotiable", "Nice to have", "Only for senior developers", "Client's responsibility"], c: 0 },
-    { q: "Milestone-based delivery means:", o: ["Deliver everything at the end", "Skip phases if rushed", "Each phase = client approval before proceeding", "Only for large projects"], c: 2 },
-    { q: "Peer review before deployment is:", o: ["Optional", "Only for juniors", "Waste of time", "Recommended — fresh eyes catch what you missed"], c: 3 },
-    { q: "\"It works on my machine\" is:", o: ["Valid excuse", "Good enough", "Client's problem", "NOT acceptable — test everywhere"], c: 3 }
+<div class="content-section">
+    <h3>🎥 Video Training</h3>
+    <p>Record Looms showing them how to change text, ban users, and view analytics.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Documentation</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: README Writing</h4>
+        <p>Write the "Getting Started" section of a README. Include: Node version, Install command, and Env setup.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Handover</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task12Content = `
+<h2>📚 TASK 12: DIFFICULT SITUATIONS</h2>
+
+<div class="content-section">
+    <h3>🔥 Crisis: Server Down</h3>
+    <p><strong>Action:</strong> Check Logs -> Check Host Status -> Check Database Connection. Communicate updates every 30 mins.</p>
+</div>
+
+<div class="content-section">
+    <h3>🔥 Crisis: "It's Slow"</h3>
+    <p><strong>Action:</strong> Profile the app. Is it the DB? The API? Optimizing images? Use data (Lighthouse/NewRelic) to prove the fix.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Post-Mortem</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Incident Report</h4>
+        <p>Write an Incident Report for a 2-hour outage caused by an expired SSL certificate. Root Cause, Fix, and Prevention.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Crisis</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task13Content = `
+<h2>📚 TASK 13: AI DEVELOPMENT</h2>
+
+<div class="content-section">
+    <h3>🤖 Prompt Engineering for Code</h3>
+    <p>Don't say "Make a user page". Say "Create a Next.js Page using Tailwind that fetches user data from /api/user and displays it in a Card component. Handle loading and error states."</p>
+</div>
+
+<div class="content-section">
+    <h3>⚠️ AI Hallucinations</h3>
+    <p>ChatGPT makes up packages that don't exist. Always verify imports.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Refactoring</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: The Prompt</h4>
+        <p>Write a prompt to convert a 500-line "Spaghetti Code" function into small, testable helper functions.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Final Exam?</h3>
+    <ul>
+        <li>📝 20 questions covering all modules</li>
+        <li>🎯 Score <strong>20/20</strong> to receive Full Stack Certification</li>
+    </ul>
+</div>
+`;
+
+const quizQuestions = [
+    // TASK 1: MINDSET
+    {
+        question: "What is the consequence of exposing an API key?",
+        options: ["Nothing", "Financial loss and Security breach", "Faster API", "Better code"],
+        correct: 1
+    },
+    {
+        question: "What does DRY stand for?",
+        options: ["Don't Repeat Yourself", "Do Repeat Yourself", "Don't Run Yarns", "Data Ready Yet"],
+        correct: 0
+    },
+    // TASK 6: DB
+    {
+        question: "Why add an Index to a DB column?",
+        options: ["To make it colorful", "To speed up search queries on that column", "To encrypt it", "To delete it"],
+        correct: 1
+    },
+    {
+        question: "What is Normalization?",
+        options: ["Organizing data to reduce redundancy", "Making data normal", "Deleting data", "Using arrays"],
+        correct: 0
+    },
+    // TASK 7: API
+    {
+        question: "Which HTTP method updates a resource partially?",
+        options: ["PUT", "POST", "PATCH", "GET"],
+        correct: 2
+    },
+    {
+        question: "What is Zod used for?",
+        options: ["Database hosting", "Runtime schema validation", "Frontend styling", "Testing"],
+        correct: 1
+    },
+    // TASK 8: SECURITY
+    {
+        question: "How should passwords be stored?",
+        options: ["Plain text", "Encrypted (Hashed)", "In a text file", "On sticky notes"],
+        correct: 1
+    },
+    {
+        question: "What prevents SQL Injection?",
+        options: ["Using ORMs / Parameterized Queries", "Using Strings", "Trusting users", "Nothing"],
+        correct: 0
+    },
+    // TASK 10: DEVOPS
+    {
+        question: "What is CI/CD?",
+        options: ["Code Integration / Code Deletion", "Continuous Integration / Continuous Deployment", "Computer Internet", "None"],
+        correct: 1
+    },
+    {
+        question: "Should .env files be committed to Git?",
+        options: ["Yes", "No, Never", "Sometimes", "Only production keys"],
+        correct: 1
+    },
+    // TASK 11: HANDOVER
+    {
+        question: "What is crucial for a smooth handover?",
+        options: ["Running away", "Documentation and Training Videos", "Deleting the repo", "Changing passwords"],
+        correct: 1
+    },
+    // TASK 12: CRISIS
+    {
+        question: "First step when Server is Down?",
+        options: ["Panic", "Check Logs and Status Page", "Email Jeff Bezos", "Sleep"],
+        correct: 1
+    }
 ];
-
-const task2Quiz = [
-    { q: "Discovery meeting duration should be:", o: ["15 minutes", "5 hours", "60-90 minutes", "Not needed"], c: 2 },
-    { q: "Business Context phase captures:", o: ["Only technical requirements", "Just the budget", "Problem being solved, users, business goal", "Design preferences only"], c: 2 },
-    { q: "\"What happens when [edge case]?\" helps find:", o: ["Budget", "Design preferences", "Hidden complexity", "Timeline"], c: 2 },
-    { q: "Discovery for complex projects is:", o: ["Free", "Optional", "A paid service ($15,000 - $50,000)", "Done by client"], c: 2 },
-    { q: "User Roles phase identifies:", o: ["Who uses the system and what each role can do", "Only admin users", "Technical stack", "Budget"], c: 0 },
-    { q: "\"Who approves deliverables?\" identifies:", o: ["The developer", "The decision-maker", "The designer", "Anyone"], c: 1 },
-    { q: "Integration phase covers:", o: ["Only frontend", "Database only", "Payment gateway, email service, third-party APIs", "Nothing technical"], c: 2 },
-    { q: "Feature Walkthrough duration:", o: ["5 minutes", "2 hours", "10 seconds", "30 minutes"], c: 3 },
-    { q: "Discovery deliverable is:", o: ["Technical Specification Document", "Working code", "Final design", "Database"], c: 0 },
-    { q: "Timeline & Budget discussion ensures:", o: ["Maximum profit", "Cheap delivery", "Skip planning", "Alignment before work begins"], c: 3 }
-];
-
-const task3Quiz = [
-    { q: "TSD is signed:", o: ["After development", "Never", "Before development starts", "Only for large projects"], c: 2 },
-    { q: "TSD Section 10 \"Out of Scope\" defines:", o: ["Extra features to add free", "What is NOT included", "Future updates", "Hidden features"], c: 1 },
-    { q: "User Roles & Permissions section covers:", o: ["Who can do what in the system", "Only admin", "Database schema", "API endpoints"], c: 0 },
-    { q: "Feature List should include:", o: ["Vague descriptions", "Only main features", "Every feature with detailed acceptance criteria", "Nothing specific"], c: 2 },
-    { q: "Database Schema section includes:", o: ["Frontend code", "User interface", "Tables, relationships, data types", "Marketing copy"], c: 2 },
-    { q: "API Endpoints section documents:", o: ["Only GET requests", "Frontend components", "All backend routes with request/response formats", "Database queries"], c: 2 },
-    { q: "Timeline & Milestones shows:", o: ["Single delivery date", "Phase breakdown with delivery dates", "No dates", "Only start date"], c: 1 },
-    { q: "TSD acts as:", o: ["Your contract defining exactly what will be built", "Marketing material", "Optional reference", "Internal document only"], c: 0 },
-    { q: "Third-Party Integrations section lists:", o: ["External services, APIs, credentials needed", "Only internal code", "Team members", "Office equipment"], c: 0 },
-    { q: "Technology Stack section covers:", o: ["Only frontend", "Frontend, backend, database, hosting decisions", "Only database", "Only hosting"], c: 1 }
-];
-
-const task4Quiz = [
-    { q: "GitHub repository should be:", o: ["Public for all projects", "No repo needed", "Shared across clients", "Private with proper naming (client-project-name)"], c: 3 },
-    { q: "Branch \"main\" is for:", o: ["Development", "Production code only", "Testing", "Feature work"], c: 1 },
-    { q: "Environment variables go in:", o: ["Public files", "README", ".env.local (secrets), .env.example (template without secrets)", "Package.json"], c: 2 },
-    { q: "/components folder contains:", o: ["Reusable UI components", "Database code", "API routes", "Static assets"], c: 0 },
-    { q: "/lib folder is for:", o: ["Images", "Utilities, helpers, database connection", "Tests only", "Styles"], c: 1 },
-    { q: "ESLint & Prettier ensure:", o: ["Faster code", "More bugs", "Consistent code formatting across team", "Slower builds"], c: 2 },
-    { q: "Feature branches are named:", o: ["random-name", "just the feature name", "main", "feature/[name]"], c: 3 },
-    { q: "/prisma folder contains:", o: ["React components", "Images", "Styles", "Database schema"], c: 3 },
-    { q: "Preview deployments are set up on:", o: ["Local only", "No previews needed", "Vercel/Railway connected to repo", "Email"], c: 2 },
-    { q: "\"develop\" branch is for:", o: ["Staging/testing", "Production", "Hotfixes", "Archives"], c: 0 }
-];
-
-const task5Quiz = [
-    { q: "Typical custom project timeline:", o: ["1 week", "1 day", "4-8 weeks", "1 year"], c: 2 },
-    { q: "Phase 1 Foundation deliverable:", o: ["Final product", "Working login/register, basic dashboard shell", "All features", "Marketing"], c: 1 },
-    { q: "Each phase requires:", o: ["Client approval before proceeding", "Nothing", "Skip to next", "Only developer approval"], c: 0 },
-    { q: "Phase 3 Integrations includes:", o: ["Only frontend", "Only design", "Payment gateway, email service, third-party APIs", "Only database"], c: 2 },
-    { q: "Phase 4 Polish includes:", o: ["Adding new features", "Starting over", "UI/UX refinement, mobile responsiveness, bug fixes", "Canceling project"], c: 2 },
-    { q: "Phase 5 Launch includes:", o: ["Just deployment", "Only training", "Production deployment, DNS, SSL, testing, client training", "Only DNS"], c: 2 },
-    { q: "Core Features phase is:", o: ["Phase 2", "Phase 1", "Phase 5", "Not needed"], c: 0 },
-    { q: "Security review happens in:", o: ["Phase 1", "Never", "Phase 4 (Polish & Testing)", "After launch"], c: 2 },
-    { q: "Integrations should work in:", o: ["Production mode immediately", "No testing needed", "Test mode first", "Manual mode"], c: 2 },
-    { q: "Client training happens in:", o: ["Phase 1", "Never", "Phase 5 (Launch)", "Before development"], c: 2 }
-];
-
-const task6Quiz = [
-    { q: "Soft deletes use:", o: ["Hard delete everything", "No deletion", "deletedAt timestamp, never hard delete", "Random deletion"], c: 2 },
-    { q: "RESTful API naming:", o: ["/api/getUsers", "/api/users", "/fetchAllUsers", "/user_list"], c: 1 },
-    { q: "HTTP POST is for:", o: ["Reading data", "Deleting", "Creating new resources", "Nothing"], c: 2 },
-    { q: "Status 401 means:", o: ["Success", "Not found", "Unauthorized", "Server error"], c: 2 },
-    { q: "All tables should have:", o: ["No timestamps", "Only id", "createdAt, updatedAt timestamps", "Random fields"], c: 2 },
-    { q: "UUID is better than auto-increment for:", o: ["Speed only", "Nothing", "Distributed systems", "Small databases only"], c: 2 },
-    { q: "Input validation should happen:", o: ["Only frontend", "Only backend", "Never", "Frontend AND backend"], c: 3 },
-    { q: "Status 404 means:", o: ["Success", "Server error", "Not found", "Created"], c: 2 },
-    { q: "HTTP DELETE is for:", o: ["Creating", "Reading", "Updating", "Removing resources"], c: 3 },
-    { q: "Normalize data means:", o: ["Avoid duplication, use relationships", "Duplicate everything", "Single table", "No structure"], c: 0 }
-];
-
-const task7Quiz = [
-    { q: "Page load target:", o: ["10 seconds", "30 seconds", "No target", "Less than 3 seconds"], c: 3 },
-    { q: "API keys in frontend code:", o: ["Acceptable", "Sometimes okay", "Required", "Never expose"], c: 3 },
-    { q: "Client-side data should be:", o: ["Trusted completely", "Used directly", "Never trusted — always validate server-side", "Not validated"], c: 2 },
-    { q: "Passwords should be stored:", o: ["In plain text", "In cookies", "Hashed, never plain text", "In frontend"], c: 2 },
-    { q: "Authorization testing ensures:", o: ["Role-based access works, users can't access restricted features", "Everyone has admin access", "No roles needed", "Open access"], c: 0 },
-    { q: "Forms should show:", o: ["Nothing", "Only success", "Validation errors, success messages, loading states", "Only errors"], c: 2 },
-    { q: "CORS in production should be:", o: ["Disabled", "Ignored", "Open to all", "Properly configured, not disabled"], c: 3 },
-    { q: "Sensitive data in logs is:", o: ["Fine", "Required", "Helpful", "Never allowed (passwords, tokens, PII)"], c: 3 },
-    { q: "Mobile responsive means:", o: ["Desktop only", "Mobile only", "Works on mobile, tablet, desktop with no horizontal scroll", "Not important"], c: 2 },
-    { q: "HTTPS is:", o: ["Optional", "Only for banking", "Required for production", "Not needed"], c: 2 }
-];
-
-const task8Quiz = [
-    { q: "Payment gateway at launch must be in:", o: ["Test mode", "Disabled", "Demo mode", "Live mode (not test)"], c: 3 },
-    { q: "SSL certificate is:", o: ["Optional", "Not needed", "Required and must be configured", "Only for payments"], c: 2 },
-    { q: "Error monitoring tool example:", o: ["No monitoring needed", "Just console.log", "Sentry or similar", "Email only"], c: 2 },
-    { q: "Handover includes:", o: ["Just login credentials", "Nothing", "Admin credentials, documentation, training video, technical docs", "Just code"], c: 2 },
-    { q: "Backup strategy should be:", o: ["In place before launch", "Not needed", "After problems occur", "Client's responsibility"], c: 0 },
-    { q: "Training video should be:", o: ["Text only", "Not needed", "Loom walkthrough of key features", "After 6 months"], c: 2 },
-    { q: "GitHub repository at handover:", o: ["Delete it", "Keep secret", "Transfer ownership or add client as collaborator", "Make public"], c: 2 },
-    { q: "Environment variables in production:", o: ["Same as development", "Not needed", "All set and verified", "Default values"], c: 2 },
-    { q: "DNS configuration is:", o: ["Automatic", "Not needed", "Must be configured correctly", "Client does later"], c: 2 },
-    { q: "Support period details should be:", o: ["Verbal only", "Not mentioned", "Decided later", "Clearly documented in handover"], c: 3 }
-];
-
-const task9Quiz = [
-    { q: "Production server down — first action:", o: ["Wait and see", "Email client tomorrow", "Check server status and logs immediately", "Ignore"], c: 2 },
-    { q: "Data loss — first action:", o: ["Keep writing data", "Ignore", "Stop all writes immediately, check backups", "Delete more data"], c: 2 },
-    { q: "Security vulnerability is:", o: ["Low priority", "Can wait", "P0 — Drop everything, fix first", "Not important"], c: 2 },
-    { q: "Third-party API down — response:", o: ["Wait indefinitely", "Blame the API", "Check status page, implement fallback UX, notify client", "Do nothing"], c: 2 },
-    { q: "Unrealistic timeline — response:", o: ["Promise anything", "Miss deadline silently", "Offer phased delivery with smaller scope first", "Refuse completely"], c: 2 },
-    { q: "Inherited bad codebase — response:", o: ["Blame previous devs publicly", "Quit immediately", "Document issues, estimate cleanup, recommend solutions", "Ship as-is"], c: 2 },
-    { q: "Your deployment broke something — first action:", o: ["Hide it", "Blame infrastructure", "Roll back immediately, own the mistake", "Wait for client to notice"], c: 2 },
-    { q: "Credentials compromised — first action:", o: ["Wait to confirm", "Check email", "Rotate ALL credentials immediately", "Ask client"], c: 2 },
-    { q: "Fast rollback beats:", o: ["Fast debugging", "Doing nothing", "Slow debugging", "Blaming others"], c: 2 },
-    { q: "Credentials should be shared:", o: ["In plain text", "Via email body", "Never in plain text — use secure methods", "In Slack publicly"], c: 2 }
-];
-
-const task10Quiz = [
-    { q: "Before making ANY theme changes:", o: ["Work on live", "Skip backup", "Duplicate theme first", "Ask PM"], c: 2 },
-    { q: "\"Spec Before Code\" means:", o: ["Optional specs", "Code first", "Never code without signed-off TSD", "Skip specs"], c: 2 },
-    { q: "Zero tolerance applies after:", o: ["Day 1", "1 year", "15 days of onboarding", "Never"], c: 2 },
-    { q: "P0 priority includes:", o: ["Learning", "Documentation", "Production outages, security, data issues", "Optimization"], c: 2 },
-    { q: "Discovery meeting duration:", o: ["15 min", "5 hours", "60-90 minutes", "5 min"], c: 2 },
-    { q: "TSD Section 10 covers:", o: ["Features", "Budget", "Out of Scope (what's NOT included)", "Team"], c: 2 },
-    { q: "Branch \"main\" is for:", o: ["Development", "Testing", "Production code only", "Features"], c: 2 },
-    { q: "Typical project timeline:", o: ["1 week", "1 day", "4-8 weeks", "1 year"], c: 2 },
-    { q: "Soft deletes use:", o: ["Hard delete", "deletedAt timestamp", "No deletion", "Random"], c: 1 },
-    { q: "RESTful naming for users:", o: ["/getUsers", "/fetchAll", "/api/users", "/user_list"], c: 2 },
-    { q: "API keys in frontend:", o: ["Fine", "Sometimes", "Never expose", "Required"], c: 2 },
-    { q: "Page load target:", o: ["10s", "30s", "Less than 3 seconds", "Any"], c: 2 },
-    { q: "Payment gateway at launch:", o: ["Test mode", "Disabled", "Live mode", "Demo"], c: 2 },
-    { q: "Production server down first action:", o: ["Wait", "Email tomorrow", "Check status and logs immediately", "Ignore"], c: 2 },
-    { q: "Security vulnerability priority:", o: ["Low", "Medium", "P0 — Drop everything", "Optional"], c: 2 },
-    { q: "Your deployment broke production:", o: ["Hide it", "Blame infra", "Roll back immediately, own it", "Wait"], c: 2 },
-    { q: "Credentials compromised:", o: ["Wait", "Ask client", "Rotate ALL immediately", "Ignore"], c: 2 },
-    { q: "Handover includes:", o: ["Just login", "Nothing", "Credentials, docs, training video, technical docs", "Code only"], c: 2 },
-    { q: "Pre-submission review:", o: ["Once", "Never", "3-5 times", "If time"], c: 2 },
-    { q: "Code quality is:", o: ["Optional", "Junior's job", "Non-negotiable", "Client's problem"], c: 2 }
-];
-
-// Export all quizzes
-const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];

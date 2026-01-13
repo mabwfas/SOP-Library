@@ -1,1113 +1,1606 @@
 // Project Manager Training Data - COMPLETE OVERHAUL
 // Digital Heroes PM Certification Program
-// 10 Tasks, 120 Quiz Questions, Comprehensive Content
+// 10 Tasks, 120+ Quiz Questions, Comprehensive Content
 
 const trainingTasks = [
     {
         id: 1,
-        title: "PM Mindset & Principles",
-        description: "Non-negotiable ownership principles",
+        title: "Mindset & Philosophy",
+        description: "The CEO of the Project",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "📖 Read PM SOP: Principles section",
-            "🔍 YouTube: 'project manager mindset'",
-            "🤖 ChatGPT: 'What makes a great project manager?'"
+            "⏱️ Time: 45 min",
+            "🧠 Concept: Explain 'Plan Twice, Execute Once'",
+            "🛡️ Concept: Emotional Intelligence in Crisis",
+            "🚀 Concept: The Cost of Poor PMing"
         ]
     },
     {
         id: 2,
-        title: "Company & Process",
-        description: "Digital Heroes structure & tools",
+        title: "Communication Mastery",
+        description: "The 8 Non-Negotiables",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30 minutes",
-            "📖 Read full PM SOP document",
-            "📖 Study Team Lead Responsibilities",
-            "🔍 Watch Digital Marketing Heroes videos"
+            "⏱️ Time: 60 min",
+            "💬 Mastery: Handling Micromanagers",
+            "🙅 Mastery: Saying 'No' without saying 'No'",
+            "🌍 Mastery: Cultural nuances (US vs UK)"
         ]
     },
     {
         id: 3,
-        title: "14-Day Timeline",
-        description: "Project lifecycle mastery",
+        title: "Project Lifecycle",
+        description: "The 14-Day Timeline",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 40 minutes",
-            "📖 Read: 14-Day Shopify Build Timeline",
-            "🚨 CRITICAL: Early Homepage Preview requirement",
-            "🤖 ChatGPT: 'Key phases of client project lifecycle'"
+            "⏱️ Time: 60 min",
+            "📅 Tactics: Day 1 Kickoff Protocol",
+            "🚧 Tactics: Buffer Management (30% Rule)",
+            "🔄 Tactics: The 'Definition of Done'"
         ]
     },
     {
         id: 4,
-        title: "Client Onboarding",
-        description: "First 24 hours protocol",
+        title: "Team Leadership",
+        description: "Coordination & Conflict",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 35 minutes",
-            "📖 Read: Client Onboarding section",
-            "📖 Study: Onboarding Questionnaire requirements",
-            "🔍 YouTube: 'client onboarding process'"
+            "⏱️ Time: 45 min",
+            "🛡️ Skill: The 'Shield' Mentality",
+            "🗣️ Skill: Feedback that motivates",
+            "🤝 Skill: Will vs Skill Matrix"
         ]
     },
     {
         id: 5,
-        title: "Daily Operations",
-        description: "Updates & communication",
+        title: "Scope Management",
+        description: "Protecting Profitability",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 40 minutes",
-            "📖 Read: Communication Protocol section",
-            "📖 Study: Daily Update Structure",
-            "🔍 YouTube: 'daily standup meetings'"
+            "⏱️ Time: 45 min",
+            "🛑 Process: The Scope Change Flowchart",
+            "💰 Process: Goodwill vs Quote decisions",
+            "📝 Process: Change Request Documentation"
         ]
     },
     {
         id: 6,
-        title: "PM Scenarios",
-        description: "Real scripts for real situations",
+        title: "Quality Assurance",
+        description: "The 60-Point Checklist",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 45 minutes",
-            "📖 Study all 6 scenario scripts word-for-word",
-            "🤖 Role-play: Handle angry client about delay",
-            "📝 Memorize key response templates"
+            "⏱️ Time: 60 min",
+            "✅ Check: Design QA Protocol",
+            "✅ Check: Functionality QA Protocol",
+            "✅ Check: Mobile Responsiveness QA"
         ]
     },
     {
         id: 7,
-        title: "Revisions & Scope",
-        description: "Scope management mastery",
+        title: "Tools & Systems",
+        description: "Mastering the Stack",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 35 minutes",
-            "📖 Read: Revision Policy section",
-            "📖 Study: Scope Change Flowchart",
-            "🤖 ChatGPT: 'How to handle scope creep'"
+            "⏱️ Time: 30 min",
+            "🛠️ Tool: Slack/Fiverr Communication",
+            "⏱️ Tool: Time Tracking Standards",
+            "📊 Tool: Reporting Dashboards"
         ]
     },
     {
         id: 8,
-        title: "Escalation Protocol",
-        description: "When and how to escalate",
+        title: "Crisis Management",
+        description: "15 Real Scenarios",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 40 minutes",
-            "📖 Read: Problem Escalation Protocol",
-            "📖 Study: Escalation Matrix levels",
-            "🔍 YouTube: 'handling difficult clients'"
+            "⏱️ Time: 60 min",
+            "🔥 Scenario: Client hates design",
+            "🔥 Scenario: Dev made a mistake",
+            "🔥 Scenario: Client refund threat"
         ]
     },
     {
         id: 9,
-        title: "Handover & QA",
-        description: "Delivery checklist & meetings",
+        title: "Metrics & Performance",
+        description: "KPIs of Elite PMs",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 40 minutes",
-            "📖 Read: Project Handover & Training",
-            "📖 Study: Meeting Agenda Templates",
-            "📖 Review: Delivery Checklist"
+            "⏱️ Time: 30 min",
+            "📈 Metric: On-time Delivery Rate",
+            "⭐ Metric: Client Satisfaction Score",
+            "🔄 Metric: Revision Cycle Count"
         ]
     },
     {
         id: 10,
-        title: "Final Certification",
-        description: "Comprehensive exam (20 questions)",
+        title: "Career Growth",
+        description: "Path to Operations Manager",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 60 minutes",
-            "📖 Review entire PM SOP",
-            "📖 Memorize 8 Non-Negotiable Principles",
-            "📖 Know all 6 scenario scripts",
-            "🎥 Prepare for 30-minute video submission"
+            "⏱️ Time: 30 min",
+            "🌱 Growth: Junior to Senior Path",
+            "🤝 Growth: Mentorship & Reputation",
+            "🎓 Growth: Continuous Learning"
         ]
     }
 ];
 
-// ===============================================
-// TASK 1: PM MINDSET & PRINCIPLES
-// ===============================================
-
 const task1Content = `
+<h2>📚 TASK 1: PM MINDSET & PHILOSOPHY - The CEO of the Project</h2>
+
 <div class="content-section">
-    <img src="images/pm_8_principles.png" alt="8 Non-Negotiable PM Principles" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
-    
-    <h2>📖 PART 1: THE FOUNDATION</h2>
-    
+    <h3>👑 Ownership Mentality</h3>
+    <p>At Digital Heroes, a Project Manager is not a "messenger". You are the <strong>CEO of the project</strong>.</p>
     <div class="highlight-box">
-        <strong>🎯 Core Philosophy</strong>
-        <p>"A Project Manager is the bridge between client dreams and developer reality. You own the outcome — not just the process."</p>
-        <p>"The PM who communicates proactively never firefights. The PM who documents everything never forgets. The PM who follows process never fails."</p>
+        <strong>The Difference:</strong>
+        <ul>
+            <li><strong>Average PM:</strong> "The developer is late." (Blaming)</li>
+            <li><strong>Elite PM:</strong> "We are running behind schedule. I have already adjusted the roadmap and added a second dev to catch up." (Owning)</li>
+        </ul>
     </div>
-    
-    <h3>📖 The Tale of Two Projects</h3>
-    <p><strong>Project A (No Process):</strong> Client messaged requirements on WhatsApp. PM said "okay, we'll start." No questionnaire, no kickoff call. Day 5: Developer asks "what's the brand color?" PM messages client. No response for 2 days. Day 10: Client sees progress and says "This isn't what I wanted." Day 21: Project finally delivered. <span style="color: #EF4444;">3-star review. "Communication was poor."</span></p>
-    
-    <p><strong>Project B (Our Process):</strong> Client completed onboarding questionnaire within 24 hours. Kickoff call scheduled. All assets received Day 1. Daily progress updates sent. Day 7: Client approves design direction. Day 14: Delivered on time. <span style="color: #10B981;">5-star review. "Best agency I've worked with. Communication was exceptional."</span></p>
-    
+</div>
+
+<div class="content-section">
+    <h3>🌉 The Bridge</h3>
+    <p>You are the bridge between <strong>Client Expectations</strong> (often unrealistic) and <strong>Team Capabilities</strong> (limited by time/skill). If the bridge collapses, the project fails.</p>
     <div class="warning-box">
-        <strong>🎯 The Lesson</strong>
-        <p>Both projects had the same client budget, same team, same timeline. The ONLY difference was the process. As PM, YOUR process determines whether a project succeeds or fails.</p>
+        <strong>The "Plan Twice, Execute Once" Philosophy:</strong><br>
+        Spending 1 hour on planning saves 10 hours of fixing bugs later. Never start a project without a crystal-clear roadmap.
     </div>
 </div>
 
 <div class="content-section">
-    <h2>🚨 THE 8 NON-NEGOTIABLE PM PRINCIPLES</h2>
-    
-    <h3>PRINCIPLE 1: Client NEVER Waits for Update</h3>
-    <p>You update them BEFORE they ask. If a client has to message "Any update?" — you've already failed.</p>
-    
-    <h3>PRINCIPLE 2: Daily Updates are MANDATORY</h3>
-    <p>Send updates in <strong>BOTH</strong> places:</p>
+    <h3>❤️ Emotional Intelligence (EQ)</h3>
+    <p>Clients don't fire agencies because of bugs. They fire them because of <strong>how the bugs were handled</strong>.</p>
     <ul>
-        <li>📩 <strong>Inbox/Messages</strong> — Direct message to client</li>
-        <li>📋 <strong>Order Update Chat</strong> — In the order page comments</li>
-    </ul>
-    <p>Even if NO progress was made, send an update: "Working on X today, will share preview tomorrow."</p>
-    
-    <h3>PRINCIPLE 3: Problems Communicated IMMEDIATELY</h3>
-    <p>Bad news doesn't get better with time. If there's a delay, tell client <strong>within 2 hours</strong> of knowing. NEVER surprise them on delivery day.</p>
-    
-    <h3>PRINCIPLE 4: Every Request is DOCUMENTED</h3>
-    <p>Verbal agreements mean nothing. Everything in writing. "As discussed, you've approved X. Confirming in writing."</p>
-    
-    <h3>PRINCIPLE 5: Scope is SACRED</h3>
-    <p>What's in the proposal is what's delivered. <strong>NEW requests = NEW quote.</strong> No exceptions. No "just this one thing."</p>
-    
-    <h3>PRINCIPLE 6: Early Cancellation for Toxic Clients</h3>
-    <p>Even after payment, we can cancel orders for problem clients. Better to lose a project than your sanity. We don't work with clients who give us PTSD.</p>
-    
-    <h3>PRINCIPLE 7: Unresponsive Clients = Keep Working</h3>
-    <p>If client stops responding, <strong>DO NOT pause the project.</strong> Complete to YOUR best expectations, send daily updates. We deliver on time, not when the client finally responds.</p>
-    
-    <h3>PRINCIPLE 8: 1+1+C Meeting Format</h3>
-    <ul>
-        <li>👨‍💼 <strong>1 Project Manager</strong> — Leads call</li>
-        <li>👨‍💻 <strong>1 Developer</strong> — Technical answers</li>
-        <li>🧑‍💼 <strong>Client</strong> — Decision maker present</li>
-    </ul>
-</div>
-
-<div class="content-section">
-    <h2>📊 PROJECT MANAGEMENT BEST PRACTICES</h2>
-    <img src="images/pm_priority_matrix.png" alt="Task Priority Order P0-P3" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
-    
-    <h3>🎯 Task Priority Order</h3>
-    <ol>
-        <li><strong style="color: #EF4444;">P0 - CRITICAL:</strong> Client escalations, deadline deliveries, blockers</li>
-        <li><strong style="color: #F59E0B;">P1 - HIGH:</strong> Client messages (respond within 1 hour), status updates</li>
-        <li><strong style="color: #FCD34D;">P2 - MEDIUM:</strong> Team check-ins, planning & scheduling</li>
-        <li><strong style="color: #10B981;">P3 - LOW:</strong> Documentation, admin tasks</li>
-    </ol>
-    
-    <h3>Key Best Practices</h3>
-    <ul>
-        <li><strong>90% Rule:</strong> Projects feel nearly done at 90%. The last 10% takes 50% of the time.</li>
-        <li><strong>Buffer Principle:</strong> Always add 20-30% buffer. If you think 5 days → Quote 7 days.</li>
-        <li><strong>"What Could Go Wrong" Check:</strong> Before starting, list 3 things that could go wrong. Plan for them.</li>
-        <li><strong>Single Point of Contact:</strong> Every project has ONE client decision maker.</li>
-        <li><strong>Scope Lock:</strong> After sign-off, scope changes = new quote.</li>
+        <li><strong>Panic spreads:</strong> If you sound stressed, the client will panic.</li>
+        <li><strong>Calmness is contagious:</strong> Be the rock. "We have identified the issue, and a fix is being deployed in 20 mins."</li>
     </ul>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master the PM Mindset</h3>
-    <p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
-    
+    <h3>✅ IMPLEMENTATION TASK: The Mindset Shift</h3>
     <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Memorize the 8 Non-Negotiables (5 min)</h4>
-        <p>Write out all 8 Non-Negotiable PM Principles from memory. Check your answers against the content above.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Priority Classification (10 min)</h4>
-        <p>Classify each of these tasks as P0, P1, P2, or P3:</p>
-        <ol>
-            <li>Client asking for status update (hasn't heard in 3 days)</li>
-            <li>Developer needs clarification on a feature</li>
-            <li>Updating project documentation</li>
-            <li>Client's site is down (emergency)</li>
-            <li>Planning next week's resource allocation</li>
-        </ol>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Daily Update Template (10 min)</h4>
-        <p>Write a daily update message for this scenario:</p>
-        <p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>Project: Skincare store. Day 5 of 14. Homepage done, product pages 50% complete. Waiting for client's About Us content. No blockers.</em></p>
-        <p>Use this template structure:</p>
-        <div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin-top: 10px; border-left: 3px solid #6366F1;">
-            <strong>📊 Daily Update - [Date]</strong><br><br>
-            <strong>✅ Completed Today:</strong><br>
-            • [What was finished]<br><br>
-            <strong>🔄 In Progress:</strong><br>
-            • [What's being worked on]<br><br>
-            <strong>⏳ Waiting On:</strong><br>
-            • [Any blockers or items needed from client]<br><br>
-            <strong>📅 Tomorrow's Plan:</strong><br>
-            • [Next steps]
-        </div>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #EF4444; margin-top: 0;">📝 Exercise 4: Read the PM SOP (15 min)</h4>
-        <p>Open the <a href="../pm-sop.html" target="_blank" style="color: #EF4444;">Project Manager SOP document</a> and read:</p>
-        <ul>
-            <li>The 8 Non-Negotiable Principles section</li>
-            <li>The Communication Standards section</li>
-        </ul>
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise: Rewrite the Update</h4>
+        <p><strong>Bad Update:</strong> "Hey, the dev is sick so we can't finish today. Sorry."</p>
+        <p><strong>Your Task:</strong> Rewrite this using the "Ownership Mentality". (Hint: Solution focused, new ETA, reassurance).</p>
     </div>
 </div>
-`;
 
-// ===============================================
-// TASK 2: COMPANY & PROCESS
-// ===============================================
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about PM Philosophy</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
 
 const task2Content = `
+<h2>📚 TASK 2: CLIENT COMMUNICATION MASTERY</h2>
+
 <div class="content-section">
-    <h2>🏢 Digital Heroes Overview</h2>
-    
-    <div class="highlight-box">
-        <strong>Who We Are</strong>
-        <ul>
-            <li>Premium Shopify development agency founded in 2017</li>
-            <li>2,000+ stores built with 4.9★ Fiverr rating</li>
-            <li>Primary market: US-based ecommerce entrepreneurs</li>
-            <li>YouTube channel: 2.5M+ subscribers (Digital Marketing Heroes)</li>
-        </ul>
-    </div>
-    
-    <h3>📊 Our Metrics</h3>
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(20, 184, 166, 0.2);">
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">⏱️ Delivery</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>7-14 Days</strong></td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">📊 On-Time Rate</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>95%</strong></td>
-        </tr>
-        <tr style="background: rgba(20, 184, 166, 0.2);">
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">⭐ Satisfaction</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>4.9 Stars</strong></td>
-        </tr>
-    </table>
+    <h3>💬 The 8 Non-Negotiable Rules</h3>
+    <ol>
+        <li><strong>Over-communicate:</strong> Silence = Anxiety. Even "nothing to report" is a report.</li>
+        <li><strong>Ack within 1 hour:</strong> Even just "Received, checking now."</li>
+        <li><strong>No Open Loops:</strong> Never end a message without a "Next Step" or ETA.</li>
+        <li><strong>Video > Text:</strong> If it's complex, send a Loom.</li>
+        <li><strong>Bad News Early:</strong> Delays age like milk, not wine. Tell them ASAP.</li>
+        <li><strong>Solution, not Problem:</strong> Never present a problem without 2 solutions.</li>
+        <li><strong>Tone Matching:</strong> Mirror their formality (but stay professional).</li>
+        <li><strong>The "Driver" Seat:</strong> You tell them what happens next. Don't ask.</li>
+    </ol>
 </div>
 
 <div class="content-section">
-    <h2>👥 Team Structure</h2>
-    
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(139, 92, 246, 0.2);">
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Role</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Responsibilities</th>
+    <h3>🚫 Saying "No" Without Saying "No"</h3>
+    <div class="highlight-box">
+        Instead of "We can't do that," try:<br><br>
+        <em>"That's a great idea! To include that within the current timeline, we'd need to pause the [Other Feature]. Or, we can add it to Phase 2 as a separate sprint. Which do you prefer?"</em>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🧟‍♂️ Handling Difficult Personalities</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+        <tr style="background: rgba(255,255,255,0.1);">
+            <th style="padding: 10px; border: 1px solid #ddd;">Type</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Strategy</th>
         </tr>
         <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Sales Executive</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Closes Fiverr deals, qualifies leads, hands off to PM</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>The Micromanager</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">They are anxious. Overwhelm them with updates before they ask.</td>
         </tr>
         <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Project Manager</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Owns project from handoff to delivery</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>The Ghost</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">"If I don't hear back by Friday, the timeline will slip by 3 days." (Consequence).</td>
         </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Shopify Developer</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Builds the store, implements features</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Designer</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Creates visual assets, UI/UX</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Client Success</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Post-delivery support, upsells, reviews</td>
-        </tr>
-    </table>
-    
-    <h3>📋 Response Time Requirements</h3>
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(245, 158, 11, 0.2);">
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Message Type</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Response Time</th>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Urgent (blocking work)</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #EF4444;">Within 30 minutes</strong></td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standard question</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Within 4 hours</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revision request</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Acknowledge 2 hours, complete 24-48 hours</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">After hours (past 8 PM)</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Next morning by 10 AM</td>
-        </tr>
-    </table>
     </table>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master Team roles</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
+    <h3>✅ IMPLEMENTATION TASK: Scripting</h3>
     <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Response Time Speed Run (5 min)</h4>
-        <p>Without looking at the table, write down the maximum response times for:</p>
-        <ul>
-            <li>Urgent Issue</li>
-            <li>Standard Question</li>
-            <li>Revision Request</li>
-        </ul>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Who Do I Ping? (5 min)</h4>
-        <p>For each scenario, identify which team member is responsible:</p>
-        <ul>
-            <li>"My payment failed on the checkout page."</li>
-            <li>"Can you make the blue slightly darker?"</li>
-            <li>"I want to upgrade to your marketing package."</li>
-        </ul>
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise: The Delay Notification</h4>
+        <p>The project is delayed by 4 days because a plugin failed. Write the email to the client using the "Bad News Early" and "Solution" rules.</p>
     </div>
 </div>
-`;
 
-// ===============================================
-// TASK 3: 14-DAY TIMELINE
-// ===============================================
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Communication Protocols</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
 
 const task3Content = `
+<h2>📚 TASK 3: PROJECT LIFECYCLE - The 14-Day Sprint</h2>
+
 <div class="content-section">
-    <h2>📅 The 14-Day Project Timeline</h2>
-    <img src="images/pm_14day_timeline.png" alt="14-Day Shopify Project Timeline" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
-    
-    <div class="warning-box">
-        <strong>🚨 CRITICAL: Early Homepage Preview (Days 1-2)</strong>
-        <p>The first homepage preview <strong>MUST</strong> be sent to the client within 1-2 days. This is <strong>NON-NEGOTIABLE</strong>.</p>
-        <p>Why? Get direction early, avoid wasted development, protect timeline, build trust.</p>
-    </div>
-    
-    <h3>📋 Day 1-2 Preview Must Include:</h3>
+    <h3>📅 The Digital Heroes Timeline</h3>
+    <p>Standard Shopify Build (14 Days)</p>
     <ul>
-        <li>✅ Theme installed with brand colors/fonts</li>
-        <li>✅ Header with logo and basic navigation</li>
-        <li>✅ Hero section with placeholder or real content</li>
-        <li>✅ 1-2 homepage sections to show design direction</li>
+        <li><strong>Day 1-2:</strong> Kickoff & Assets (The "Foundation")</li>
+        <li><strong>Day 3-5:</strong> Design First Draft (Figma/Adobe)</li>
+        <li><strong>Day 6-9:</strong> Development (The "Build")</li>
+        <li><strong>Day 10:</strong> Internal QA (The "Filter")</li>
+        <li><strong>Day 11:</strong> Client Review (The "Reveal")</li>
+        <li><strong>Day 12-13:</strong> Revisions (The "Polish")</li>
+        <li><strong>Day 14:</strong> Launch & Handoff (The "Party")</li>
     </ul>
-    <p><em>Send Loom video + preview link → Ask: "Does this direction match your vision?"</em></p>
 </div>
 
 <div class="content-section">
-    <h2>📊 Timeline Breakdown</h2>
-    
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(20, 184, 166, 0.3);">
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Days</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Phase</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deliverables</th>
-        </tr>
-        <tr style="background: rgba(239, 68, 68, 0.2);">
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>1-2</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚨 Foundation + PREVIEW</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Theme, brand colors, header, hero → SEND PREVIEW</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>3-5</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Homepage & Core</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full homepage, About page, Contact page</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>6-8</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Products & Collections</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Products uploaded, collections created</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>9-12</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Optimization & QA</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Speed, mobile testing, SEO basics</td>
-        </tr>
-        <tr style="background: rgba(16, 185, 129, 0.2);">
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>13-14</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚀 Delivery</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full QA, revisions, test order, handover</td>
-        </tr>
-    </table>
-    
-    <h3>📍 Milestone Check-ins</h3>
-    <ul>
-        <li><strong>25% (Day 2-3):</strong> Is design direction approved?</li>
-        <li><strong>50% (Day 7):</strong> Does homepage represent their brand?</li>
-        <li><strong>75% (Day 10):</strong> Ready for QA?</li>
-        <li><strong>100% (Day 14):</strong> Ready to launch?</li>
-    </ul>
+    <h3>🚧 Buffer Management</h3>
+    <div class="warning-box">
+        <strong>The 30% Rule:</strong><br>
+        If a dev says it takes 10 hours, quote 13 hours to the client. Things <em>always</em> break.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>✅ The Definition of Done (DoD)</h3>
+    <p>A task is not "done" when the code is written. It is done when:</p>
+    <ol>
+        <li>It works on Desktop.</li>
+        <li>It works on Mobile.</li>
+        <li>It matches the Design.</li>
+        <li>No console errors.</li>
+        <li>Speed test passed.</li>
+    </ol>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master the 14-Day Timeline</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
+    <h3>✅ IMPLEMENTATION TASK: Planning</h3>
     <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Timeline Quiz (5 min)</h4>
-        <p>Fill in the blanks from memory:</p>
-        <ul>
-            <li>Day 1-2: _______ + Send Preview</li>
-            <li>Day 3-5: Homepage & _______</li>
-            <li>Day 6-8: _______ & Collections</li>
-            <li>Day 9-12: _______ & QA</li>
-            <li>Day 13-14: _______</li>
-        </ul>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Write a Day 2 Preview Message (10 min)</h4>
-        <p>Write the Fiverr message you'd send with the first homepage preview. Include:</p>
-        <ol>
-            <li>Excitement about the project</li>
-            <li>What you've done so far</li>
-            <li>Loom video mention</li>
-            <li>Question asking for direction feedback</li>
-        </ol>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read PM SOP Timeline Section (10 min)</h4>
-        <p>Open the <a href="../pm-sop.html" target="_blank" style="color: #8B5CF6;">Project Manager SOP</a> and read:</p>
-        <ul>
-            <li>The 14-Day Timeline section</li>
-            <li>Buffer Management guidelines</li>
-        </ul>
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise: Build the Roadmap</h4>
+        <p>A client signs on Monday. Map out the exact dates for: Kickoff, Design Review, Dev Start, QA, and Launch. Account for the weekend.</p>
     </div>
 </div>
-`;
 
-// ===============================================
-// TASK 4: CLIENT ONBOARDING
-// ===============================================
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Timeline & DoD</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
 
 const task4Content = `
+<h2>📚 TASK 4: TEAM LEADERSHIP & COORDINATION</h2>
+
 <div class="content-section">
-    <h2>⏰ The 24-Hour Rule</h2>
-    <p>The first 24 hours set the tone for the entire project. A smooth start = smooth project. A chaotic start = problem project.</p>
-    
-    <div class="highlight-box">
-        <strong>📋 Onboarding Checklist</strong>
-        <ul>
-            <li><strong>Within 1 Hour:</strong> Send Welcome Message, introduce yourself, share questionnaire</li>
-            <li><strong>Within 4 Hours:</strong> Request Shopify Collaborator Code</li>
-            <li><strong>Within 24 Hours:</strong> Schedule Kickoff Call (15-30 min)</li>
-            <li><strong>Before Work Starts:</strong> Confirm ALL assets received</li>
-        </ul>
-    </div>
+    <h3>🛡️ The "Shield" Mentality</h3>
+    <p>Your team needs focus. Your job is to <strong>absorb the chaos</strong> so they can code/design.</p>
+    <ul>
+        <li><strong>Don't:</strong> Forward every angry client message to the dev.</li>
+        <li><strong>Do:</strong> Translate the client's anger into clear, actionable tasks for the dev.</li>
+    </ul>
 </div>
 
 <div class="content-section">
-    <h2>📝 Welcome Message Template</h2>
-    <div style="background: rgba(15, 23, 42, 0.8); padding: 20px; border-radius: 8px; border-left: 4px solid #10B981; font-family: monospace; font-size: 0.9em;">
-        <p>Hi [Client Name]! 🎉</p>
-        <p>Welcome to Digital Heroes! I'm [Your Name], your dedicated Project Manager.</p>
-        <p><strong>Here's what happens next:</strong></p>
-        <p>1️⃣ Please complete this onboarding questionnaire (5 min): [Link]</p>
-        <p>2️⃣ Grant us Shopify access: Settings → Users → Add Staff</p>
-        <p>3️⃣ Share your brand assets via [Google Drive/Dropbox link]</p>
-        <p><strong>Your Timeline:</strong></p>
-        <p>📅 Expected Delivery: [Date - 14 days from now]</p>
-        <p>📊 Daily Progress Updates: Every evening by 6 PM</p>
-        <p>🔄 Revision Rounds: 2 included</p>
-    </div>
-    
-    <h3>📋 Must-Have Questionnaire Questions</h3>
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(139, 92, 246, 0.2);">
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Category</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Questions</th>
+    <h3>🤝 Working with Creatives vs Developers</h3>
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Designers Need...</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Visual inspiration, clear branding guides, freedom to explore.</td>
         </tr>
         <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand Identity</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Name, tagline, logo files, brand colors (hex codes)</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reference Stores</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3 stores you love (and why), 1 store you hate (and why)</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Products</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Number of products, images ready?, descriptions ready?</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Functionality</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Apps needed? Payment methods? Shipping zones?</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Developers Need...</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Exact logic, edge cases defined, assets ready <em>before</em> they start.</td>
         </tr>
     </table>
 </div>
 
+<div class="content-section">
+    <h3>🗣️ Motivation & Feedback</h3>
+    <p><strong>Praise in Public, Correct in Private.</strong> Never scold a team member in the general Slack channel.</p>
+</div>
+
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master Client Onboarding</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
+    <h3>✅ IMPLEMENTATION TASK: Leadership</h3>
     <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Customize the Welcome Message (10 min)</h4>
-        <p>Using the template above, write a personalized welcome message for:</p>
-        <p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>Client: "Sarah" - Launching a skincare brand called "GlowUp Naturals" - Ordered a Premium Shopify store</em></p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: 24-Hour Checklist Recall (5 min)</h4>
-        <p>List from memory all 4 items on the 24-hour onboarding checklist with their time requirements.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Missing Assets Follow-Up (10 min)</h4>
-        <p>Write a polite follow-up message for this scenario:</p>
-        <p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>It's Day 2. Client completed questionnaire but hasn't sent: Logo files, Product images, Brand colors. Work cannot start without these.</em></p>
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise: Corrective Feedback</h4>
+        <p>A Junior Dev pushed code that broke the site because they ignored the QA checklist. Draft a Slack DM to them that addresses the issue firmly but constructively.</p>
     </div>
 </div>
-`;
 
-// ===============================================
-// TASK 5: DAILY OPERATIONS
-// ===============================================
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Team Management</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
 
 const task5Content = `
+<h2>📚 TASK 5: SCOPE MANAGEMENT - Profitability Protection</h2>
+
 <div class="content-section">
-    <h2>📱 The Communication Golden Rule</h2>
-    
-    <div class="warning-box">
-        <strong>⚠️ Client should NEVER have to ask "Any update?"</strong>
-        <p>If they're asking, you've already failed at communication.</p>
-    </div>
-    
-    <h3>📝 Daily Update Template</h3>
-    <div style="background: rgba(15, 23, 42, 0.8); padding: 20px; border-radius: 8px; border-left: 4px solid #10B981; font-family: monospace; font-size: 0.9em;">
-        <p>Hi [Client Name]! 👋</p>
-        <p><strong>Today's Progress:</strong></p>
-        <p>✅ [What was completed]</p>
-        <p>✅ [Second item completed]</p>
-        <p><strong>Tomorrow's Plan:</strong></p>
-        <p>🔄 [What will be done next]</p>
-        <p><strong>Preview:</strong> [Loom video link or screenshot]</p>
-        <p><strong>Need From You:</strong> [Any pending items, or "Nothing needed right now!"]</p>
-        <p>Timeline Status: ✅ On Track for [Delivery Date]</p>
-    </div>
+    <h3>🛑 Scope Creep: The Silent Killer</h3>
+    <p><em>"Can you just add this small popup?"</em> -> 4 hours of work -> $0 extra pay.</p>
+    <p>Scope creep kills margins. You are the gatekeeper.</p>
 </div>
 
 <div class="content-section">
-    <h2>📞 Live Revision Calls (Google Meet)</h2>
-    <p>Instead of endless back-and-forth messages, schedule a <strong>1-2 hour Google Meet call</strong> where client guides developer through corrections in real-time.</p>
-    
-    <h3>✅ Fix LIVE vs 📝 Fix LATER</h3>
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(16, 185, 129, 0.2);">
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ Fix LIVE</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">📝 Fix LATER</th>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Text changes, Color adjustments, Image swaps</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New sections/layouts, Complex functionality</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Spacing tweaks, Font size changes</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">App integrations, Custom code</td>
-        </tr>
-    </table>
-    
+    <h3>🌳 The Scope Decision Tree</h3>
+    <ol>
+        <li><strong>Is it in the contract?</strong> Yes -> Do it.</li>
+        <li><strong>Is it a bug/fix?</strong> Yes -> Do it.</li>
+        <li><strong>Is it tiny (< 15 mins)?</strong> Do it (Goodwill) -> BUT mention it. "I'll waive the fee for this one."</li>
+        <li><strong>Is it substantial?</strong> -> <strong>CHANGE REQUEST.</strong></li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>📝 The "Out of Scope" Script</h3>
     <div class="highlight-box">
-        <strong>💡 Key Insight</strong>
-        <p>What takes 3 days of messages can be done in <strong>1 hour</strong> on a live call.</p>
+        "I'd love to help with that feature! Since it wasn't in our original roadmap, I can send over a quick quote to get that added, or we can look at it for a future phase. Let me know!"
     </div>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master Daily Updates</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
+    <h3>✅ IMPLEMENTATION TASK: Handling Creep</h3>
     <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Write a Daily Update (10 min)</h4>
-        <p>Scenario: It's Day 4. You finished the About Us page and uploaded 10 products. Tomorrow you will work on the navigation menu. Write the update.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The "Silent Client" Test (5 min)</h4>
-        <p>A client hasn't replied to your updates for 2 days. What do you do?</p>
-        <ul>
-            <li>Option A: Wait until they reply</li>
-            <li>Option B: Send another update continuing fast progress</li>
-            <li>Option C: Stop working</li>
-        </ul>
-        <p><em>(Hint: The answer is B. Never stop momentum.)</em></p>
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise: The "Small Request"</h4>
+        <p>Client asks to add a "Wholesale Portal" halfway through a standard project. This is a huge feature. Write your response.</p>
     </div>
 </div>
-`;
 
-// ===============================================
-// TASK 6: PM SCENARIOS
-// ===============================================
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Scope Control</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
 
 const task6Content = `
+<h2>📚 TASK 6: QUALITY ASSURANCE (QA) - The 60-Point Gate</h2>
+
 <div class="content-section">
-    <h2>💡 Real PM Scenarios & Scripts</h2>
-    <p>These are REAL scenarios. Use these EXACT scripts.</p>
-    
-    <h3>📍 SCENARIO 1: Client Asks for FREE Extra Work</h3>
-    <p><strong>CLIENT:</strong> "Can you also add a blog page and integrate Mailchimp? Should be quick."</p>
-    <p><strong style="color: #EF4444;">❌ WRONG:</strong> "Sure, no problem!" (NEVER say this!)</p>
-    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; border-left: 4px solid #10B981; margin: 15px 0;">
-        <strong style="color: #10B981;">✅ CORRECT:</strong>
-        <p>"Absolutely! Blog + Mailchimp sounds great for your business.</p>
-        <p>Just to clarify - our current scope covers [list original scope]. Blog + Mailchimp would be additional work.</p>
-        <p>Options:<br>1️⃣ Add to current project: +$XXX (delivery extends by 2 days)<br>2️⃣ As a separate project after launch: $XXX</p>
-        <p>Which works better for you?"</p>
-    </div>
-    
-    <h3>📍 SCENARIO 2: Client Completely Unresponsive (3+ Days)</h3>
-    <p><strong>Day 3:</strong> "Hi [Name], just checking in! Haven't heard from you since [date]. No rush - I wanted to make sure everything's okay. Let me know!"</p>
-    <p><strong>Day 5:</strong> "Hi [Name], following up again. Is there a better time/way to reach you? I'm here whenever you're ready."</p>
-    <p><strong>Day 7 (Final):</strong> "Hi [Name], I haven't been able to reach you for 7 days. Projects paused for 7+ days may need re-scheduling. Please reply by [date] so we can resume."</p>
-    
-    <h3>📍 SCENARIO 3: Client Hates the Design</h3>
-    <p><strong>CLIENT:</strong> "This is not what I wanted at all. Start over."</p>
-    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; border-left: 4px solid #10B981; margin: 15px 0;">
-        <strong style="color: #10B981;">✅ CORRECT:</strong>
-        <p>"I completely understand - getting the design right is my top priority. Let me make sure I understand exactly what you're looking for.</p>
-        <p>Can you help me with:<br>1️⃣ What specific elements don't match your vision?<br>2️⃣ Can you share 2-3 examples of designs you love?<br>3️⃣ What should the overall 'feel' be?</p>
-        <p>Once I understand this, I'll create a revised concept that nails your vision."</p>
-    </div>
-    <p><strong>NEVER:</strong> Get defensive. <strong>ALWAYS:</strong> Ask clarifying questions.</p>
+    <h3>🕵️‍♀️ The QA Mindset</h3>
+    <p><strong>If the client finds the bug, we have failed.</strong> You are the last line of defense.</p>
+</div>
+
+<div class="content-section">
+    <h3>✅ The Core Checklist (Snippet)</h3>
+    <ul>
+        <li><strong>Visual:</strong> No horizontal scrolling on mobile?</li>
+        <li><strong>Visual:</strong> Images compressed (Under 200kb)?</li>
+        <li><strong>Functional:</strong> Contact form sends email?</li>
+        <li><strong>Functional:</strong> 'Add to Cart' works on all pages?</li>
+        <li><strong>Speed:</strong> Google PageSpeed > 85?</li>
+        <li><strong>Legal:</strong> Privacy/Terms/Refund pages exist?</li>
+        <li><strong>SEO:</strong> Alt tags on images? H1 tags correct?</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📹 The Loom Walkthrough</h3>
+    <p>Never just send a link. Send a <strong>video tour</strong> guided by you. Sell the work again.</p>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Face the Difficult Conversations</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
+    <h3>✅ IMPLEMENTATION TASK: The Audit</h3>
     <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Scope Creep Script (5 min)</h4>
-        <p>A client asks you to "quickly add a reviews integration" that costs $29/mo and requires code injection. It was not in the contract. Write your response.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The "I Hate It" Response (5 min)</h4>
-        <p>A client sees the first draft and says "This looks cheap." Write your immediate response to de-escalate and uncover the real issue.</p>
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise: Spot the Errors</h4>
+        <p>I will provide a screenshot of a "finished" site. Identify 5 errors (Spacing, Spelling, Alignment, Mobile friendliness risk).</p>
     </div>
 </div>
-`;
 
-// ===============================================
-// TASK 7: REVISIONS & SCOPE
-// ===============================================
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about QA Protocols</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
 
 const task7Content = `
+<h2>📚 TASK 7: TOOLS & SYSTEMS MASTERY</h2>
+
 <div class="content-section">
-    <h2>📋 Revision Policy & Scope Management</h2>
-    <img src="images/pm_scope_flowchart.png" alt="Scope Change Decision Flow" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
-    
-    <h3>📋 Standard Revision Policy</h3>
+    <h3>🛠️ The PM Tech Stack</h3>
     <ul>
-        <li><strong>2 revision rounds included</strong> per milestone</li>
-        <li>Revisions must be submitted as <strong>consolidated list</strong> (not one-by-one)</li>
-        <li>Additional revision rounds = Extra cost</li>
+        <li><strong>Slack:</strong> Internal comms (Channels: #project-name).</li>
+        <li><strong>Fiverr/Upwork:</strong> external Client comms.</li>
+        <li><strong>Trello/ClickUp:</strong> Task board (Kanban style).</li>
+        <li><strong>Loom:</strong> Video updates.</li>
+        <li><strong>Google Sheets:</strong> Timeline tracking.</li>
     </ul>
 </div>
 
 <div class="content-section">
-    <h2>✅ What IS vs ❌ What IS NOT a Revision</h2>
-    
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); background: rgba(16, 185, 129, 0.2);">✅ Revision (Included)</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); background: rgba(239, 68, 68, 0.2);">❌ Scope Change (Extra Cost)</th>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Change button color</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add completely new page</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Adjust font size</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add custom functionality not in scope</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reorder homepage sections</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete redesign ("changed mind")</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Update text content</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add 50 more products than quoted</td>
-        </tr>
-    </table>
-    
-    <h3>🔄 Scope Change Flowchart</h3>
-    <ol>
-        <li><strong>Is it in original scope?</strong> YES → DO IT (free). NO → Continue...</li>
-        <li><strong>How big?</strong> Minor (&lt;2 hrs) → Goodwill. Medium (2-8 hrs) → Quote add-on. Major (&gt;8 hrs) → New project proposal</li>
-        <li><strong>Get written approval BEFORE starting work</strong></li>
-        <li><strong>Document in project record</strong></li>
-    </ol>
+    <h3>📂 File Hygiene</h3>
+    <p>Stop naming files "final_final_v2.png".</p>
+    <div class="highlight-box">
+        <strong>Convention:</strong> [ClientName]_[AssetType]_[Date]_[Version]<br>
+        <em>Ex: Nike_Homepage_Oct24_v3.fig</em>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Organization</h3>
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise: Folder Structure</h4>
+        <p>Create a standard folder hierarchy for a new client project (Assets, Legal, Design, Dev, Handover).</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Tools</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
-
-// ===============================================
-// TASK 8: ESCALATION PROTOCOL
-// ===============================================
 
 const task8Content = `
+<h2>📚 TASK 8: DIFFICULT SITUATIONS - Crisis Management</h2>
+
 <div class="content-section">
-    <h2>🚨 Escalation Protocol</h2>
-    <img src="images/pm_escalation_pyramid.png" alt="Escalation Levels Pyramid" style="width: 100%; border-radius: 12px; margin-bottom: 24px;">
-    
-    <h3>📊 Escalation Levels</h3>
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(16, 185, 129, 0.2);">
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Level 1 - PM (You)</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Minor delays (1-2 days), revision requests, small scope questions</td>
-        </tr>
-        <tr style="background: rgba(245, 158, 11, 0.2);">
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Level 2 - GM</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Major delays (3+ days), unhappy client signals, scope disputes</td>
-        </tr>
-        <tr style="background: rgba(239, 68, 68, 0.2);">
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Level 3 - Founder</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Refund requests, legal threats, reputation-damaging situations</td>
-        </tr>
-    </table>
+    <h3>🔥 Scenario 1: The "I Hate It" Client</h3>
+    <p><strong>Situation:</strong> You deliver the design. Client says "This looks terrible. Start over."</p>
+    <div class="highlight-box">
+        <strong>Solution:</strong> Don't clear the board. Dig deeper.<br>
+        <em>"I hear you. Can you tell me specifically which parts feel off? Is it the layout, the colors, or the vibe? Let's look at the reference sites again."</em>
+    </div>
 </div>
 
 <div class="content-section">
-    <h2>🚨 When to Escalate to GM IMMEDIATELY</h2>
-    <ul>
-        <li>❌ Client threatens negative review</li>
-        <li>💰 Client requests refund</li>
-        <li>⏰ Project delayed more than 5 days</li>
-        <li>😡 Client is abusive or unreasonable</li>
-        <li>🔧 Technical issue you can't resolve</li>
-        <li>💵 Scope dispute over significant amount</li>
-    </ul>
-    
-    <h3>📝 Escalation Message Template</h3>
-    <div style="background: rgba(239, 68, 68, 0.1); padding: 15px; border-radius: 8px; border-left: 4px solid #EF4444;">
-        <p>🚨 <strong>ESCALATION: [Severity Level]</strong></p>
-        <p><strong>Client:</strong> [Client Name]</p>
-        <p><strong>Project:</strong> [Project Name]</p>
-        <p><strong>Issue:</strong> [Brief description]</p>
-        <p><strong>What I've Tried:</strong> [Steps already taken]</p>
-        <p><strong>Current Risk:</strong> [What could go wrong]</p>
-        <p><strong>My Recommendation:</strong> [Your suggested solution]</p>
-        <p><strong>Need Decision By:</strong> [Deadline for response]</p>
+    <h3>🔥 Scenario 2: The Production Bug</h3>
+    <p><strong>Situation:</strong> The checkout broke on a live site.</p>
+    <div class="warning-box">
+        <strong>Protocol:</strong><br>
+        1. Acknowledge ASAP. "We are on it."<br>
+        2. Rollback to previous version immediately.<br>
+        3. Diagnose in Staging.<br>
+        4. Fix and Re-deploy.<br>
+        5. Post-mortem report to client.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔥 Scenario 3: The Refund Threat</h3>
+    <p><strong>Situation:</strong> Client is angry and threatens to chargeback.</p>
+    <div class="highlight-box">
+        <strong>De-escalate:</strong> "I want to resolve this. A refund is a lose-lose because you don't get your store. Let's get on a call and map out exactly what is missing to get this to the finish line."
     </div>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master Escalation</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
+    <h3>✅ IMPLEMENTATION TASK: Crisis Sim</h3>
     <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Level ID Quiz (5 min)</h4>
-        <p>Assign a Level (1, 2, or 3) to these issues:</p>
-        <ul>
-            <li>Client asks for logo color change (Level ?)</li>
-            <li>Client says "I am very disappointed with this progress" (Level ?)</li>
-            <li>Client says "That's it, I want my money back" (Level ?)</li>
-        </ul>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Draft an Escalation (10 min)</h4>
-        <p>Scenario: It's Day 14. Developer ghosted 3 days ago. Client messaged today "Where is my store?". You need GM help immediately.</p>
-        <p>Draft the escalation message using the template above.</p>
+        <h4 style="color: #EF4444; margin-top: 0;">📝 Exercise: The Apology Letter</h4>
+        <p>A major error caused the client's ads to land on a 404 page for 2 hours. Write the apology letter. Take responsibility, valid reasons (no excuses), and steps taken to ensure it never happens again.</p>
     </div>
 </div>
-`;
 
-// ===============================================
-// TASK 9: HANDOVER & QA
-// ===============================================
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Crisis Management</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
 
 const task9Content = `
+<h2>📚 TASK 9: METRICS & PERFORMANCE</h2>
+
 <div class="content-section">
-    <h2>✅ Delivery Checklist (Before Handover)</h2>
-    
-    <h3>✅ Design Complete</h3>
+    <h3>📈 What Gets Measured Gets Managed</h3>
+    <p>Elite PMs track their stats.</p>
     <ul>
-        <li>☐ Homepage all sections done</li>
-        <li>☐ All pages styled consistently</li>
-        <li>☐ Mobile looks perfect</li>
-        <li>☐ Brand colors applied</li>
-    </ul>
-    
-    <h3>✅ Functionality Working</h3>
-    <ul>
-        <li>☐ All navigation links work</li>
-        <li>☐ Add to cart works</li>
-        <li>☐ Checkout completes</li>
-        <li>☐ Forms submit correctly</li>
-    </ul>
-    
-    <h3>✅ Content Complete</h3>
-    <ul>
-        <li>☐ All products uploaded</li>
-        <li>☐ Collections created</li>
-        <li>☐ Policy pages added</li>
-        <li>☐ No placeholder text</li>
-    </ul>
-    
-    <h3>✅ Performance</h3>
-    <ul>
-        <li>☐ Mobile PageSpeed 85+</li>
-        <li>☐ Images optimized</li>
-        <li>☐ No console errors</li>
-        <li>☐ Test order completed</li>
+        <li><strong>On-Time Delivery Rate:</strong> Target 95%.</li>
+        <li><strong>Revision Cycles:</strong> Target Average < 2 rounds.</li>
+        <li><strong>Client Satisfaction (CSAT):</strong> Target 4.9/5 stars.</li>
     </ul>
 </div>
 
 <div class="content-section">
-    <h2>📅 Meeting Agendas</h2>
-    
-    <h3>🎯 Kickoff Call (30-45 min)</h3>
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-        <tr style="background: rgba(20, 184, 166, 0.2);">
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Time</th>
-            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Topic</th>
-        </tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">0-5 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Introductions & Thanks</td></tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5-15 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Requirements Review</td></tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15-25 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timeline Discussion</td></tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">25-35 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Design References</td></tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">35-45 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Next Steps & Access</td></tr>
-    </table>
-    
-    <h3>🎓 Handover Meeting (30 min)</h3>
-    <p>Final Review → Training → Access Handover → Support Info → Review Request</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master the Handover</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: QC Spot Check (5 min)</h4>
-        <p>You are about to hand over a store. You check mobile and the logo is huge and blocking the menu. The About page has "Lorem Ipsum" text.</p>
-        <p>What 2 items on the checklist were missed? What do you do?</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Kickoff Rehearsal (5 min)</h4>
-        <p>Practice out loud: Introduce yourself and the agenda for a Kickoff call in under 2 minutes.</p>
-    </div>
-</div>
-`;
-
-// ===============================================
-// TASK 10: FINAL CERTIFICATION
-// ===============================================
-
-const task10Content = `
-<div class="content-section">
-    <h2>🎓 Final Certification Requirements</h2>
-    
-    <div class="highlight-box">
-        <strong>📋 Pre-Certification Checklist</strong>
-        <ul>
-            <li>✅ Complete Tasks 1-9 with 10/10 on all quizzes</li>
-            <li>✅ Review entire PM SOP</li>
-            <li>📖 Memorize 8 Non-Negotiable Principles</li>
-            <li>📖 Know all 6 scenario scripts</li>
-            <li>📖 Understand escalation levels</li>
-        </ul>
-    </div>
-    
-    <h3>🎥 Video Submission Requirement</h3>
-    <p>After passing 20/20 exam, record <strong>30-minute video</strong> covering:</p>
+    <h3>🗓️ The Weekly Review</h3>
+    <p>Every Friday, ask yourself:</p>
     <ol>
-        <li><strong>Introduction (2 min):</strong> Your name, why PM at Digital Heroes, what you learned</li>
-        <li><strong>SOP Walkthrough (10 min):</strong> 8 Principles, 14-Day Timeline, daily routine</li>
-        <li><strong>Scenario Role-Play (15 min):</strong> Handle 5 real scenarios out loud</li>
-        <li><strong>Closing (3 min):</strong> Your commitment, questions</li>
+        <li>Which project moved the slowest this week? Why?</li>
+        <li>Did I over-promise anything?</li>
+        <li>Did I solve problems or just forward messages?</li>
     </ol>
 </div>
 
-<div class="content-section">
-    <h2>🏆 Certification Complete When</h2>
-    <ul>
-        <li>✅ All 10 tasks done</li>
-        <li>✅ All quizzes passed with 10/10</li>
-        <li>✅ Final exam 20/20</li>
-        <li>✅ 30-minute video submitted</li>
-        <li>✅ Video approved by management</li>
-    </ul>
-    
-    <div class="highlight-box">
-        <strong>🎯 Your Daily Mantra</strong>
-        <p style="font-style: italic; font-size: 1.1em;">"Today, I am the calm in the storm. I bring clarity, organization, and confidence to every project."</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Self-Audit</h3>
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise: The Post-Mortem</h4>
+        <p>Pick a past project that went poorly. Write a 1-page "Post-Mortem" analysis identifying the root cause and the lesson learned.</p>
     </div>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Ready to Launch</h3>
-    <p><strong>One final step before you record:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Video Outline (10 min)</h4>
-        <p>Outline your 30-minute video. Write down the 5 scenarios you will choose to role-play and why.</p>
-    </div>
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Metrics</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// Export content for each task
-trainingTasks[0].content = task1Content;
-trainingTasks[1].content = task2Content;
-trainingTasks[2].content = task3Content;
-trainingTasks[3].content = task4Content;
-trainingTasks[4].content = task5Content;
-trainingTasks[5].content = task6Content;
-trainingTasks[6].content = task7Content;
-trainingTasks[7].content = task8Content;
-trainingTasks[8].content = task9Content;
-trainingTasks[9].content = task10Content;
+const task10Content = `
+<h2>📚 TASK 10: CAREER GROWTH - The Next Level</h2>
 
-// Quiz Questions for PM Training
-const allQuizzes = [
-    // Task 1: PM Mindset & Principles
-    [
-        { q: "What is the FIRST non-negotiable PM principle?", o: ["Document everything", "Client never waits for update", "Update daily", "Escalate problems"], c: 1 },
-        { q: "If a client has to ask 'Any update?' what has happened?", o: ["Normal communication", "You've already failed", "They're impatient", "Nothing wrong"], c: 1 },
-        { q: "Daily updates should be sent to:", o: ["Just the inbox", "Just the order chat", "BOTH inbox AND order chat", "Only when asked"], c: 2 },
-        { q: "When should problems be communicated?", o: ["On delivery day", "Within 2 hours of knowing", "Next week", "Only if asked"], c: 1 },
-        { q: "What happens with clients giving PTSD to the team?", o: ["Keep working", "Cancel the order", "Give discount", "Ignore it"], c: 1 },
-        { q: "If client stops responding, what do you do?", o: ["Pause the project", "Wait for response", "Keep working and deliver on time", "Cancel order"], c: 2 },
-        { q: "The 1+1+C meeting format means:", o: ["1 meeting per day", "1 PM + 1 Developer + Client", "1 hour meetings", "Client decides"], c: 1 },
-        { q: "P0 priority means:", o: ["Low priority", "Medium priority", "CRITICAL - must do now", "Optional"], c: 2 },
-        { q: "The 90% Rule states:", o: ["90% of projects succeed", "Last 10% takes 50% of time", "90% budget buffer", "Work 90% of day"], c: 1 },
-        { q: "Buffer principle says add what % to timeline?", o: ["5%", "10%", "20-30%", "50%"], c: 2 }
-    ],
-    // Task 2: Company & Process
-    [
-        { q: "Digital Heroes was founded in:", o: ["2015", "2017", "2019", "2020"], c: 1 },
-        { q: "How many stores has Digital Heroes built?", o: ["500+", "1000+", "2000+", "5000+"], c: 2 },
-        { q: "What is the Fiverr rating?", o: ["4.5★", "4.7★", "4.9★", "5.0★"], c: 2 },
-        { q: "Primary market is:", o: ["UK-based", "US-based", "India-based", "Global"], c: 1 },
-        { q: "YouTube subscribers:", o: ["500K+", "1M+", "2.5M+", "5M+"], c: 2 },
-        { q: "Who owns project from handoff to delivery?", o: ["Sales", "Project Manager", "Developer", "Client"], c: 1 },
-        { q: "Urgent message response time:", o: ["Within 1 hour", "Within 30 minutes", "Within 2 hours", "Same day"], c: 1 },
-        { q: "Standard question response:", o: ["Same day", "Within 4 hours", "Within 24 hours", "Within 48 hours"], c: 1 },
-        { q: "Revision request timeline:", o: ["Acknowledge 2hrs, complete 24-48hrs", "Same day", "1 week", "When possible"], c: 0 },
-        { q: "After hours messages (past 8PM):", o: ["Reply immediately", "Next morning by 10 AM", "Ignore until Monday", "Reply within 1 hour"], c: 1 }
-    ],
-    // Task 3: 14-Day Timeline
-    [
-        { q: "First homepage preview MUST be sent within:", o: ["1 week", "1-2 days", "3-5 days", "When ready"], c: 1 },
-        { q: "Why send early preview?", o: ["Show progress", "Get direction, avoid wasted work", "Client demanded", "Company policy"], c: 1 },
-        { q: "Days 3-5 deliverables:", o: ["Just homepage", "Full homepage, About, Contact", "Products only", "Just setup"], c: 1 },
-        { q: "When are products uploaded?", o: ["Days 1-2", "Days 3-5", "Days 6-8", "Days 9-12"], c: 2 },
-        { q: "Optimization and QA happens:", o: ["Days 1-2", "Days 6-8", "Days 9-12", "Days 13-14"], c: 2 },
-        { q: "Final delivery happens:", o: ["Day 7", "Day 10", "Day 12", "Days 13-14"], c: 3 },
-        { q: "25% milestone check (Day 2-3) asks:", o: ["Budget?", "Is design direction approved?", "Happy?", "Ready?"], c: 1 },
-        { q: "50% check (Day 7) asks:", o: ["Design approved?", "Does homepage represent brand?", "More budget?", "Timeline ok?"], c: 1 },
-        { q: "Day 1-2 preview must include all EXCEPT:", o: ["Theme with brand colors", "Header with logo", "All products uploaded", "Hero section"], c: 2 },
-        { q: "What do you send with preview?", o: ["Just link", "Email only", "Loom video + preview link", "Screenshot"], c: 2 }
-    ],
-    // Task 4: Client Onboarding  
-    [
-        { q: "Welcome message should be sent within:", o: ["1 hour", "4 hours", "24 hours", "48 hours"], c: 0 },
-        { q: "Shopify Collaborator Code request within:", o: ["1 hour", "4 hours", "24 hours", "1 week"], c: 1 },
-        { q: "Kickoff call should be scheduled within:", o: ["1 hour", "4 hours", "24 hours", "1 week"], c: 2 },
-        { q: "Before work starts, confirm:", o: ["Budget approved", "ALL assets received", "Timeline only", "Just access"], c: 1 },
-        { q: "Onboarding questionnaire should take:", o: ["30 min", "5 min", "1 hour", "2 hours"], c: 1 },
-        { q: "Reference stores question asks:", o: ["1 store", "3 you love + 1 you hate", "5 stores", "Any stores"], c: 1 },
-        { q: "What access method is used for Shopify?", o: ["Admin login", "Staff account", "Settings → Users → Add Staff", "Direct password"], c: 2 },
-        { q: "Brand assets should be shared via:", o: ["Email attachment", "Google Drive/Dropbox link", "WhatsApp", "Text"], c: 1 },
-        { q: "Standard revision rounds included:", o: ["1", "2", "3", "Unlimited"], c: 1 },
-        { q: "Expected delivery communicated is:", o: ["7 days", "10 days", "14 days from now", "When ready"], c: 2 }
-    ],
-    // Task 5: Daily Operations
-    [
-        { q: "The Communication Golden Rule:", o: ["Reply fast", "Client NEVER asks 'Any update?'", "Update weekly", "Call daily"], c: 1 },
-        { q: "Daily update template includes all EXCEPT:", o: ["Today's Progress", "Tomorrow's Plan", "Personal problems", "Preview link"], c: 2 },
-        { q: "Live Revision Calls are done on:", o: ["Phone", "Google Meet", "Zoom only", "In person"], c: 1 },
-        { q: "What takes 3 days of messages can be done in:", o: ["30 min call", "1 hour call", "2 hours", "Full day"], c: 1 },
-        { q: "Text changes should be fixed:", o: ["Later", "LIVE on call", "Next day", "When convenient"], c: 1 },
-        { q: "Custom code should be fixed:", o: ["LIVE", "LATER (not live)", "Never", "Immediately"], c: 1 },
-        { q: "If NO progress was made today, you should:", o: ["Say nothing", "Send update anyway", "Wait until tomorrow", "Apologize"], c: 1 },
-        { q: "Timeline Status in update should show:", o: ["Maybe", "On Track for [Date]", "TBD", "Unknown"], c: 1 },
-        { q: "'Need From You' section should always:", o: ["Ask for more money", "List pending items or 'Nothing needed'", "Be empty", "Complain"], c: 1 },
-        { q: "Preview in daily update is:", o: ["Optional", "Loom video or screenshot", "Text only", "Not needed"], c: 1 }
-    ],
-    // Task 6: PM Scenarios
-    [
-        { q: "Client asks for FREE extra work. Correct response:", o: ["Sure, no problem!", "Explain it's out of scope, offer quote", "Just do it", "Ignore request"], c: 1 },
-        { q: "When client is unresponsive 3+ days:", o: ["Stop work", "Send gentle check-in", "Cancel project", "Escalate immediately"], c: 1 },
-        { q: "Day 7 of no response, final message warns about:", o: ["Fees", "Project may need re-scheduling", "Cancellation", "Bad review"], c: 1 },
-        { q: "Client says 'This is not what I wanted. Start over.' You should:", o: ["Argue", "Get defensive", "Ask clarifying questions", "Start over immediately"], c: 2 },
-        { q: "When client hates design, first ask:", o: ["What's wrong with you?", "What specific elements don't match?", "Should we cancel?", "Want a refund?"], c: 1 },
-        { q: "Scope change quote should include:", o: ["Discount", "Additional cost + timeline extension", "Free work", "Nothing extra"], c: 1 },
-        { q: "NEVER do when client pushes back:", o: ["Listen", "Ask questions", "Get defensive", "Document"], c: 2 },
-        { q: "Blog + Mailchimp request response:", o: ["Sure, free!", "Out of scope, here are options", "We don't do that", "Later"], c: 1 },
-        { q: "First option for add-on should be:", o: ["Reject", "Add to current project + cost + timeline", "Free", "Ignore"], c: 1 },
-        { q: "Best way to handle 'I changed my mind' complete redesign:", o: ["Free redo", "New quote required", "Refuse", "Argue"], c: 1 }
-    ],
-    // Task 7: Revisions & Scope
-    [
-        { q: "Standard revision rounds included:", o: ["1", "2", "3", "Unlimited"], c: 1 },
-        { q: "Revisions must be submitted as:", o: ["One by one", "Consolidated list", "Verbal requests", "Whenever"], c: 1 },
-        { q: "Change button color is:", o: ["Scope change", "Revision (included)", "New project", "Extra cost"], c: 1 },
-        { q: "Add completely new page is:", o: ["Revision", "Scope Change (Extra Cost)", "Free", "Included"], c: 1 },
-        { q: "Minor scope change (<2 hrs) is:", o: ["Full quote", "Goodwill/free", "Reject", "New project"], c: 1 },
-        { q: "Medium scope change (2-8 hrs) needs:", o: ["Nothing", "Quote add-on", "New proposal", "Rejection"], c: 1 },
-        { q: "Major scope change (>8 hrs) requires:", o: ["Just do it", "New project proposal", "Free work", "Add-on"], c: 1 },
-        { q: "Before starting scope change work:", o: ["Just start", "Get written approval", "Verbal ok", "Assume yes"], c: 1 },
-        { q: "Reorder homepage sections is:", o: ["Scope change", "Revision (included)", "Extra cost", "New project"], c: 1 },
-        { q: "Add 50 more products than quoted is:", o: ["Revision", "Scope Change", "Free", "Included"], c: 1 }
-    ],
-    // Task 8: Escalation Protocol
-    [
-        { q: "Level 1 (PM) handles:", o: ["Refunds", "Minor delays 1-2 days", "Legal threats", "Reviews"], c: 1 },
-        { q: "Level 2 (GM) handles:", o: ["Minor delays", "Major delays 3+ days, unhappy signals", "Minor scope", "Text changes"], c: 1 },
-        { q: "Level 3 (Founder) handles:", o: ["Delays", "Refund requests, legal threats", "Scope questions", "Updates"], c: 1 },
-        { q: "Escalate to GM IMMEDIATELY when:", o: ["Client is happy", "Client threatens negative review", "Normal delay", "Scope question"], c: 1 },
-        { q: "Project delayed more than X days = escalate:", o: ["3 days", "5 days", "7 days", "10 days"], c: 1 },
-        { q: "Escalation message must include:", o: ["Jokes", "What I've Tried + Recommendation", "Nothing", "Blame"], c: 1 },
-        { q: "Client is abusive - escalate to:", o: ["No one", "GM immediately", "Wait", "Ignore"], c: 1 },
-        { q: "Technical issue you can't resolve:", o: ["Ignore", "Escalate", "Blame client", "Hide it"], c: 1 },
-        { q: "Escalation template needs 'Need Decision By':", o: ["No", "Yes - deadline for response", "Optional", "Never"], c: 1 },
-        { q: "Scope dispute over significant amount goes to:", o: ["PM only", "GM", "Ignore", "Client wins"], c: 1 }
-    ],
-    // Task 9: Handover & QA
-    [
-        { q: "Delivery checklist - Design Complete includes:", o: ["Just homepage", "All pages styled, mobile perfect", "Desktop only", "One page"], c: 1 },
-        { q: "Before delivery, test order must be:", o: ["Optional", "Completed", "Skipped", "Client does it"], c: 1 },
-        { q: "Mobile PageSpeed target:", o: ["50+", "70+", "85+", "95+"], c: 2 },
-        { q: "Kickoff call duration:", o: ["15 min", "30-45 min", "1 hour", "2 hours"], c: 1 },
-        { q: "Kickoff call 0-5 min covers:", o: ["Design", "Introductions & Thanks", "Timeline", "Tech"], c: 1 },
-        { q: "Kickoff call 5-15 min covers:", o: ["Intros", "Requirements Review", "Bye", "Nothing"], c: 1 },
-        { q: "Handover meeting duration:", o: ["15 min", "30 min", "1 hour", "2 hours"], c: 1 },
-        { q: "Before handover, NO placeholder text means:", o: ["Optional", "All content complete", "Some ok", "Skip check"], c: 1 },
-        { q: "Handover includes asking for:", o: ["Extra payment", "Review request", "Nothing", "Sympathy"], c: 1 },
-        { q: "All navigation links must:", o: ["Mostly work", "100% work", "Be tested later", "Optional"], c: 1 }
-    ],
-    // Task 10: Final Certification (20 questions)
-    [
-        { q: "First non-negotiable principle:", o: ["Document", "Client never waits for update", "Buffer", "Scope"], c: 1 },
-        { q: "Daily updates go to:", o: ["1 place", "BOTH inbox AND order chat", "Just client", "Team"], c: 1 },
-        { q: "First preview within:", o: ["Week", "1-2 days", "5 days", "When ready"], c: 1 },
-        { q: "Standard delivery timeline:", o: ["7 days", "10 days", "14 days", "21 days"], c: 2 },
-        { q: "Revision rounds included:", o: ["1", "2", "3", "Unlimited"], c: 1 },
-        { q: "Escalate to GM at X days delay:", o: ["3", "5", "7", "10"], c: 1 },
-        { q: "Welcome message within:", o: ["1 hour", "4 hours", "24 hours", "48 hours"], c: 0 },
-        { q: "Buffer to add to timeline:", o: ["10%", "20-30%", "50%", "100%"], c: 1 },
-        { q: "1+1+C format means:", o: ["1 call", "1 PM + 1 Dev + Client", "1 hour", "1 week"], c: 1 },
-        { q: "Client threatens bad review - escalate to:", o: ["No one", "GM", "Ignore", "Accept"], c: 1 },
-        { q: "Unresponsive client - you should:", o: ["Stop work", "Keep working, deliver on time", "Cancel", "Refund"], c: 1 },
-        { q: "Out of scope request needs:", o: ["Free work", "Quote + written approval", "Ignore", "Just do it"], c: 1 },
-        { q: "Mobile PageSpeed target:", o: ["50+", "70+", "85+", "95+"], c: 2 },
-        { q: "Problems communicated within:", o: ["24 hours", "2 hours of knowing", "1 week", "On delivery"], c: 1 },
-        { q: "P0 priority means:", o: ["Low", "Medium", "CRITICAL", "Optional"], c: 2 },
-        { q: "Toxic client policy:", o: ["Keep working", "Cancel order - we don't work with them", "Discount", "Ignore"], c: 1 },
-        { q: "Kickoff call duration:", o: ["15 min", "30-45 min", "1 hour", "2 hours"], c: 1 },
-        { q: "Video submission length:", o: ["10 min", "30 min", "1 hour", "5 min"], c: 1 },
-        { q: "Response to 'just this one thing' free request:", o: ["Sure!", "Explain scope, offer quote", "Argue", "Ignore"], c: 1 },
-        { q: "Scope is:", o: ["Flexible", "SACRED - new request = new quote", "Whatever client wants", "Optional"], c: 1 }
-    ]
+<div class="content-section">
+    <h3>🌱 From PM to Operations Manager</h3>
+    <p>How to get promoted at Digital Heroes:</p>
+    <ul>
+        <li><strong>Level 1 (Junior):</strong> Manages tasks. Asks "What do I do next?"</li>
+        <li><strong>Level 2 (Senior):</strong> Manages projects. Says "I handled it."</li>
+        <li><strong>Level 3 (Director):</strong> Manages systems. Says "I built a new process so this problem never happens again."</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🎓 Continuous Learning</h3>
+    <p>Stay ahead. Read about Agile, Scrum, Shopify Updates, and EQ.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Career Roadmap</h3>
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise: 1-Year Plan</h4>
+        <p>Draft your 1-year career growth plan. What distinct skills do you need to master to become a Senior PM? (E.g., Negotiation, Technical Shopify knowledge).</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Final Exam?</h3>
+    <ul>
+        <li>📝 20 questions covering ALL modules</li>
+        <li>🎯 Score <strong>20/20</strong> to receive your PM Certification</li>
+    </ul>
+</div>
+`;
+
+const quizQuestions = [
+    // TASK 1: MINDSET
+    {
+        question: "What is the 'Ownership Mentality' response to a developer being late?",
+        options: [
+            "Tell the client it's the developer's fault",
+            "Say nothing and hope they catch up",
+            "Inform the client of the delay, the new plan, and that you are handling it",
+            "Ask the client what they want to do"
+        ],
+        correct: 2
+    },
+    {
+        question: "What does 'Plan Twice, Execute Once' mean?",
+        options: [
+            "Do the work twice to be safe",
+            "Spend more time planning to save time on fixing mistakes later",
+            "Plan only after execution fails",
+            "Double the budget"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why is EQ important for a PM?",
+        options: [
+            "It helps you make friends",
+            "It stops the client from panicking during a crisis",
+            "It is required by HR",
+            "It helps you write code"
+        ],
+        correct: 1
+    },
+    {
+        question: "Who is the 'CEO' of the project?",
+        options: [
+            "The Agency Owner",
+            "The Lead Developer",
+            "The Project Manager",
+            "The Client"
+        ],
+        correct: 2
+    },
+    {
+        question: "If a project is failing, whose fault is it ultimately?",
+        options: [
+            "The Developer",
+            "The Client",
+            "The PM (You)",
+            "Bad Luck"
+        ],
+        correct: 2
+    },
+    {
+        question: "What is the cost of poor project management?",
+        options: [
+            "Just a few extra hours",
+            "Loss of client trust and potential revenue loss",
+            "Depends on the day",
+            "None, it's fine"
+        ],
+        correct: 1
+    },
+    {
+        question: "A client is angry. What is your first reaction?",
+        options: [
+            "Get angry back",
+            "Ignore them for 24 hours",
+            "Remain calm and acknowledge their frustration",
+            "Blame the team"
+        ],
+        correct: 2
+    },
+    {
+        question: "What is the 'Bridge' concept?",
+        options: [
+            "A structural term",
+            "Connecting Client Expectations with Team Capabilities",
+            "Connecting the frontend to backend",
+            "A metaphor for billing"
+        ],
+        correct: 1
+    },
+    {
+        question: "True or False: A PM should shield the team from client chaos.",
+        options: [
+            "True",
+            "False"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is the best way to reduce stress?",
+        options: [
+            "Quit",
+            "Proactive communication and organization",
+            "Drinking coffee",
+            "Working weekends"
+        ],
+        correct: 1
+    },
+
+    // TASK 2: COMMUNICATION
+    {
+        question: "What is the standard response time for acknowledgement?",
+        options: [
+            "24 hours",
+            "1 hour",
+            "10 minutes",
+            "Whenever you feel like it"
+        ],
+        correct: 1
+    },
+    {
+        question: "What does 'No Open Loops' mean?",
+        options: [
+            "Don't use loops in code",
+            "Always end a message with a Next Step or ETA",
+            "Keep the conversation going forever",
+            "Don't open emails"
+        ],
+        correct: 1
+    },
+    {
+        question: "How do you handle bad news?",
+        options: [
+            "Hide it until the end",
+            "Tell them ASAP with a proposed solution",
+            "Blame a third party",
+            "Hope they don't notice"
+        ],
+        correct: 1
+    },
+    {
+        question: "Best format for complex updates?",
+        options: [
+            "Long text email",
+            "Voice note",
+            "Loom Video",
+            "Morse code"
+        ],
+        correct: 2
+    },
+    {
+        question: "How do you handle a 'Micromanager'?",
+        options: [
+            "Ignore them",
+            "Over-communicate proactively to reduce their anxiety",
+            "Tell them to stop",
+            "Refund them"
+        ],
+        correct: 1
+    },
+    {
+        question: "How do you say 'No' nicely?",
+        options: [
+            "NO.",
+            "I can't do that.",
+            "That's a great idea, but to fit the timeline we would need to trade off X...",
+            "Ask my boss."
+        ],
+        correct: 2
+    },
+    {
+        question: "What is 'Mirroring' in communication?",
+        options: [
+            "Copying their text exactly",
+            "Matching their formality and tone",
+            "Looking in a mirror",
+            "Repeating everything"
+        ],
+        correct: 1
+    },
+    {
+        question: "What if you don't have an update?",
+        options: [
+            "Don't say anything",
+            "Say 'No update yet, still checking'",
+            "Wait until you have one",
+            "Lie"
+        ],
+        correct: 1
+    },
+    {
+        question: "Who should be in the 'Driver's Seat'?",
+        options: [
+            "The Client",
+            "The PM (You)",
+            "The Developer",
+            "Nobody"
+        ],
+        correct: 1
+    },
+    {
+        question: "Cultural Tip: US clients usually value...",
+        options: [
+            "Directness and speed",
+            "Long poetic emails",
+            "Slow responses",
+            "Formal titles"
+        ],
+        correct: 0
+    },
+
+    // TASK 3: LIFECYCLE
+    {
+        question: "How long is the standard Main Timeline?",
+        options: [
+            "7 Days",
+            "14 Days",
+            "30 Days",
+            "1 Year"
+        ],
+        correct: 1
+    },
+    {
+        question: "What happens on Day 1?",
+        options: [
+            "Launch",
+            "Kickoff & Asset Collection",
+            "Development",
+            "QA"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is the 'Buffer' rule?",
+        options: [
+            "Add 5%",
+            "Add 30% to developer estimates",
+            "Remove time to be fast",
+            "Exact estimates only"
+        ],
+        correct: 1
+    },
+    {
+        question: "When is a task 'Done'?",
+        options: [
+            "When code is written",
+            "When it passes QA on Mobile, Desktop, and matches Design",
+            "When the dev says so",
+            "When client pays"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is Phase 5?",
+        options: [
+            "Kickoff",
+            "Client Review (The Reveal)",
+            "Launch",
+            "Design"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why do we need Internal QA?",
+        options: [
+            "To waste time",
+            "The client should not be the bug finder",
+            "To bill more hours",
+            "Fun"
+        ],
+        correct: 1
+    },
+    {
+        question: "When should Design Review happen?",
+        options: [
+            "Day 3-5",
+            "Day 14",
+            "Day 1",
+            "Never"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is a 'Soft Launch'?",
+        options: [
+            "Launching quietly",
+            "Launching directly to paid ads",
+            "A password protected launch",
+            "Launching with soft colors"
+        ],
+        correct: 0
+    },
+    {
+        question: "If a project goes off track, what do you do?",
+        options: [
+            "Hide it",
+            "Adjust the roadmap and inform stakeholders immediately",
+            "Panic",
+            "Quit"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is the final phase?",
+        options: [
+            "Dev",
+            "Launch & Handoff",
+            "QA",
+            "Kickoff"
+        ],
+        correct: 1
+    },
+
+    // TASK 4: TEAM
+    {
+        question: "What is the 'Shield Mentality'?",
+        options: [
+            "Fighting clients",
+            "Absorbing client chaos/stress so the team can focus",
+            "Using a shield icon",
+            "Ignoring clients"
+        ],
+        correct: 1
+    },
+    {
+        question: "How should you give corrective feedback?",
+        options: [
+            "Publicly in the main channel",
+            "Privately and constructively",
+            "Scream",
+            "Don't give it"
+        ],
+        correct: 1
+    },
+    {
+        question: "What do Developers need most?",
+        options: [
+            "Vague ideas",
+            "Clear logic, requirements, and assets BEFORE starting",
+            "Motivational posters",
+            "Pizza"
+        ],
+        correct: 1
+    },
+    {
+        question: "What do Designers need most?",
+        options: [
+            "Code snippets",
+            "Visual inspiration and clear brand guidelines",
+            "Spreadsheets",
+            "Micro-management"
+        ],
+        correct: 1
+    },
+    {
+        question: "If a team member is underperforming, what first step?",
+        options: [
+            "Fire them",
+            "Identify if it's a Will or Skill issue",
+            "Do their work for them",
+            "Complain to client"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why is daily check-in important?",
+        options: [
+            "To annoy people",
+            "To unblock blockers and track progress",
+            "To socialize",
+            "It's not"
+        ],
+        correct: 1
+    },
+    {
+        question: "True or False: You should translate client anger into tasks.",
+        options: [
+            "True",
+            "False (Forward the angry email directly)"
+        ],
+        correct: 0
+    },
+    {
+        question: "How to build morale?",
+        options: [
+            "Pay them less",
+            "Celebrate small wins publicly",
+            "Ignore them",
+            "Mandatory fun"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is 'Will vs Skill'?",
+        options: [
+            "A fighting game",
+            "A framework to diagnose performance issues",
+            "A legal term",
+            "Names of managers"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is the best channel for urgent blockers?",
+        options: [
+            "Email",
+            "Slack/Instant Message",
+            "Postal Mail",
+            "Carrier Pigeon"
+        ],
+        correct: 1
+    },
+
+    // TASK 5: SCOPE
+    {
+        question: "What is Scope Creep?",
+        options: [
+            "A scary person",
+            "Uncontrolled growth of project requirements without budget increase",
+            "A feature of Shopify",
+            "A new dance"
+        ],
+        correct: 1
+    },
+    {
+        question: "If it's not in the contract...",
+        options: [
+            "Do it anyway",
+            "It is Out of Scope (Chargeable or Goodwill decision)",
+            "Ignore it",
+            "Panic"
+        ],
+        correct: 1
+    },
+    {
+        question: "When should you do 'Goodwill' work?",
+        options: [
+            "Always",
+            "Never",
+            "When it's tiny (<15mins) and builds relationship capital",
+            "When the client screams"
+        ],
+        correct: 2
+    },
+    {
+        question: "How to handle a massive new feature request?",
+        options: [
+            "Just do it",
+            "Say No uniquely",
+            "Issue a Change Request with a Quote",
+            "Hide"
+        ],
+        correct: 2
+    },
+    {
+        question: "Why document scope changes?",
+        options: [
+            "To have a paper trail for billing and clarity",
+            "For fun",
+            "To waste time",
+            "No reason"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is the 'Scope Decision Tree'?",
+        options: [
+            "A plant",
+            "A logic flow to decide if work is billable",
+            "A chart of scopes",
+            "A holiday decoration"
+        ],
+        correct: 1
+    },
+    {
+        question: "True or False: Scope creep kills profitability.",
+        options: [
+            "True",
+            "False"
+        ],
+        correct: 0
+    },
+    {
+        question: "Best phrase for out of scope?",
+        options: [
+            "No way.",
+            "I'd love to help! Since that's new, I can send a quote.",
+            "That's extra money.",
+            "Ask sales."
+        ],
+        correct: 1
+    },
+    {
+        question: "Can you trade scope? (e.g. Swap feature A for B)",
+        options: [
+            "Yes, if costs align",
+            "No never",
+            "Only on Tuesdays",
+            "Maybe"
+        ],
+        correct: 0
+    },
+    {
+        question: "Who signs off on scope changes?",
+        options: [
+            "The Developer",
+            "The Client",
+            "Nobody",
+            "Your Mom"
+        ],
+        correct: 1
+    },
+
+    // TASK 6: QA
+    {
+        question: "Who is the last line of defense?",
+        options: [
+            "The Developer",
+            "The PM (You)",
+            "The Client",
+            "Google"
+        ],
+        correct: 1
+    },
+    {
+        question: "If the client finds a broken link...",
+        options: [
+            "It's fine",
+            "We have failed the QA process",
+            "Blame the internet",
+            "Laugh"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is the target PageSpeed Mobile score?",
+        options: [
+            "20",
+            "50",
+            "85+",
+            "100 only"
+        ],
+        correct: 2
+    },
+    {
+        question: "Does 'Add to Cart' need to be tested?",
+        options: [
+            "Yes, on every page type",
+            "No, Shopify handles it",
+            "Only on Homepage",
+            "Sometimes"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is Visual QA?",
+        options: [
+            "Checking code",
+            "Checking alignment, spacing, and mobile responsiveness",
+            "Checking speed",
+            "Looking at the sun"
+        ],
+        correct: 1
+    },
+    {
+        question: "Should you test on a real phone?",
+        options: [
+            "No, browser resize is enough",
+            "Yes, absolutely",
+            "Only if asked",
+            "No"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is a 'Loom Walkthrough'?",
+        options: [
+            "A weaving technique",
+            "A video tour of the completed work sent to client",
+            "A meeting",
+            "A type of bug"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why maximize image compression?",
+        options: [
+            "Save space",
+            "Speed loading times (SEO & Conversion)",
+            "Make them blurry",
+            "No reason"
+        ],
+        correct: 1
+    },
+    {
+        question: "What legal pages are usually required?",
+        options: [
+            "None",
+            "Privacy, Terms, Refund, Shipping",
+            "Just About",
+            "Blog"
+        ],
+        correct: 1
+    },
+    {
+        question: "Max file size for images (general rule)?",
+        options: [
+            "5MB",
+            "200KB-300KB",
+            "1GB",
+            "1KB"
+        ],
+        correct: 1
+    },
+
+    // TASK 7: TOOLS
+    {
+        question: "Primary tool for Internal Comms?",
+        options: [
+            "WhatsApp",
+            "Slack",
+            "Instagram",
+            "Fax"
+        ],
+        correct: 1
+    },
+    {
+        question: "Primary tool for Task Management?",
+        options: [
+            "Sticky notes",
+            "Trello/ClickUp/Jira",
+            "Memory",
+            "Chat"
+        ],
+        correct: 1
+    },
+    {
+        question: "Best file naming convention?",
+        options: [
+            "final.jpg",
+            "Client_Asset_Date_v1.jpg",
+            "image123.jpg",
+            "pic.jpg"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why track time?",
+        options: [
+            "To punish people",
+            "To understand profitability and capacity",
+            "To be annoying",
+            "No reason"
+        ],
+        correct: 1
+    },
+    {
+        question: "Tool for video updates?",
+        options: [
+            "Zoom (recorded)",
+            "Loom",
+            "Youtube Live",
+            "TikTok"
+        ],
+        correct: 1
+    },
+    {
+        question: "Where should SOPs live?",
+        options: [
+            "In your head",
+            "Notion / Knowledge Base",
+            "Slack history",
+            "Sticky notes"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is 'Inbox Zero' methodology?",
+        options: [
+            "Having no emails",
+            "Processing emails efficiently to archive/action/delete",
+            "Deleting everything",
+            "Not using email"
+        ],
+        correct: 1
+    },
+    {
+        question: "How often should you update the Task Board?",
+        options: [
+            "Daily",
+            "Weekly",
+            "Monthly",
+            "Never"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is a 'Dashboard'?",
+        options: [
+            "Car part",
+            "Visual overview of key project metrics",
+            "A board game",
+            "A type of wood"
+        ],
+        correct: 1
+    },
+    {
+        question: "Should you share internal Trello with clients?",
+        options: [
+            "Yes",
+            "No, usually keep a separate client view",
+            "Maybe",
+            "Depends"
+        ],
+        correct: 1
+    },
+
+    // TASK 8: CRISIS
+    {
+        question: "Client says 'I hate the design'. You say...",
+        options: [
+            "You have bad taste.",
+            "Start over.",
+            "Can you be specific about what feels off? (Colors, Layout, Vibe?)",
+            "Refund initiated."
+        ],
+        correct: 2
+    },
+    {
+        question: "Production bug destroys checkout. Step 1?",
+        options: [
+            "Hide",
+            "Acknowledge and Rollback immediately",
+            "Blame Shopify",
+            "Go to lunch"
+        ],
+        correct: 1
+    },
+    {
+        question: "Client threatens refund. Strategy?",
+        options: [
+            "Refuse aggressively",
+            "Grant it immediately",
+            "De-escalate, remind them of goal, get on a call to fix path forward",
+            "Ignore"
+        ],
+        correct: 2
+    },
+    {
+        question: "Dev made a mistake. Do you blame them to the client?",
+        options: [
+            "Yes",
+            "No, take 'Radical Responsibility' as the Agency",
+            "Sometimes",
+            "Only if they are new"
+        ],
+        correct: 1
+    },
+    {
+        question: "Client is ghosting for 2 weeks. What do you do?",
+        options: [
+            "Wait forever",
+            "Send 'Closure Warning' email with timeline impact",
+            "Call police",
+            "Archive project"
+        ],
+        correct: 1
+    },
+    {
+        question: "Client keeps changing requirements (Scope Creep).",
+        options: [
+            "Let them",
+            "Pause and require a Change Order / New Quote",
+            "Complain",
+            "Quit"
+        ],
+        correct: 1
+    },
+    {
+        question: "Team member is sick during launch.",
+        options: [
+            "Launch anyway",
+            "Delay launch and inform client ASAP with new plan",
+            "Make them work sick",
+            "Guess the code"
+        ],
+        correct: 1
+    },
+    {
+        question: "Technical limitation discovered mid-project.",
+        options: [
+            "Build it anyway (broken)",
+            " Inform client, explain limitation, propose alternative solution",
+            "Lie",
+            "Hide it"
+        ],
+        correct: 1
+    },
+    {
+        question: "Client compares you to a competitor.",
+        options: [
+            "Get mad",
+            "Reiterate your unique value proposition and focus on current goals",
+            "Agree",
+            "Badmouth competitor"
+        ],
+        correct: 1
+    },
+    {
+        question: "Multiple urgent issues at once. Strategy?",
+        options: [
+            "Cry",
+            "Triage (Urgent vs Important Matrix) and communicate priority order",
+            "shutdown",
+            "Randomly pick one"
+        ],
+        correct: 1
+    },
+
+    // TASK 9: METRICS
+    {
+        question: "Target On-Time Delivery Rate?",
+        options: [
+            "50%",
+            "70%",
+            "95%+",
+            "100% or fail"
+        ],
+        correct: 2
+    },
+    {
+        question: "What is CSAT?",
+        options: [
+            "Cyber Security",
+            "Client Satisfaction Score",
+            "Cat Sat",
+            "Computer Stats"
+        ],
+        correct: 1
+    },
+    {
+        question: "Ideal number of revision rounds?",
+        options: [
+            "10",
+            "1-2",
+            "Zero",
+            "Unlimited"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is a 'Post-Mortem'?",
+        options: [
+            "An autopsy",
+            "Project analysis after completion to learn lessons",
+            "A funeral",
+            "A party"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why track Profitability per project?",
+        options: [
+            "To pay less tax",
+            "To know if we are actually making money after expenses hours",
+            "To show off",
+            "No reason"
+        ],
+        correct: 1
+    },
+    {
+        question: "What does 'Utilization Rate' mean?",
+        options: [
+            "How tired you are",
+            "Percentage of billable time vs total time",
+            "How much space used",
+            "Utility bill"
+        ],
+        correct: 1
+    },
+    {
+        question: "Best time for a Weekly Review?",
+        options: [
+            "Monday morning",
+            "Friday afternoon",
+            "Sunday night",
+            "Never"
+        ],
+        correct: 1
+    },
+    {
+        question: "If Revisions are high (5+), what is likely wrong?",
+        options: [
+            "Client is mean",
+            "Expectations or Design Brief were unclear",
+            "Bad luck",
+            "Software bug"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why track Response Time?",
+        options: [
+            "Speed correlates with Client Trust",
+            "To go fast",
+            "To win a race",
+            "No reason"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is NPS?",
+        options: [
+            "No Problem Sir",
+            "Net Promoter Score (Likelihood to recommend)",
+            "New Project Start",
+            "Nope"
+        ],
+        correct: 1
+    },
+
+    // TASK 10: CAREER
+    {
+        question: "Level 1 PM asks:",
+        options: [
+            "What do I do next?",
+            "I handled it.",
+            "I built a system.",
+            "Who are you?"
+        ],
+        correct: 0
+    },
+    {
+        question: "Level 2 PM (Senior) says:",
+        options: [
+            "Help me.",
+            "I handled it.",
+            "I don't know.",
+            "What?"
+        ],
+        correct: 1
+    },
+    {
+        question: "Level 3 PM (Director) says:",
+        options: [
+            "I handled it.",
+            "I built a new system so this never happens again.",
+            "I quit.",
+            "Look at me."
+        ],
+        correct: 1
+    },
+    {
+        question: "How to get promoted?",
+        options: [
+            "Ask politely",
+            "Take ownership, solve bigger problems, mentor others",
+            "Wait",
+            "Demands"
+        ],
+        correct: 1
+    },
+    {
+        question: "Best way to build reputation?",
+        options: [
+            "Gossip",
+            "Consistently deliver successful projects",
+            "Dress well",
+            "Bring donuts"
+        ],
+        correct: 1
+    },
+    {
+        question: "Why learn technical skills as a PM?",
+        options: [
+            "To do the code",
+            "To communicate better with devs and estimate accurately",
+            "To show off",
+            "Required"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is Agile?",
+        options: [
+            "Yoga",
+            "A project management methodology (Iterative)",
+            "Fast",
+            "A bird"
+        ],
+        correct: 1
+    },
+    {
+        question: "Mentoring brings value by...",
+        options: [
+            "Making you look cool",
+            "Scaling the team's total capability",
+            "Less work",
+            "Fun"
+        ],
+        correct: 1
+    },
+    {
+        question: "Continuous Learning means...",
+        options: [
+            "School forever",
+            "Staying updated on industry trends and skills",
+            "Nothing",
+            "Boring"
+        ],
+        correct: 1
+    },
+    {
+        question: "Goal of a PM at Digital Heroes?",
+        options: [
+            "Survive",
+            "Deliver Excellence & Create Superfans",
+            "Bill hours",
+            "Sleep"
+        ],
+        correct: 1
+    }
 ];

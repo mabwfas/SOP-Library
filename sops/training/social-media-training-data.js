@@ -1,523 +1,307 @@
-// Social Media Manager Training Data
-// Complete training content for Social Media certification
-// UPGRADED: Visuals, Study Guides, and Expanded Lessons
+// Social Media Manager Training Data - COMPLETE OVERHAUL
+// Digital Heroes Certification Program
+// 12 Tasks, 150+ Quiz Questions, Viral Growth Mastery
 
 const trainingTasks = [
     {
         id: 1,
-        title: "Social Mindset",
-        description: "Community & Growth",
+        title: "SMM Mindset",
+        description: "Rented Land",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🧠 Internalize that 'Engagement' is the currency",
-            "🛡️ Understand we are 'Community Builders', not just posters",
-            "🚀 Learn the 'Give, Give, Ask' philosophy"
+            "⏱️ Time: 45 min",
+            "🧠 Concept: You don't own the audience (Algorithm risk)",
+            "🛡️ Concept: The goal is to move them to Email (Owned)",
+            "🚀 Concept: Consistency > Virality"
         ]
     },
     {
         id: 2,
-        title: "Company Knowledge",
-        description: "Digital Heroes ecosystem",
-        contentFirst: false,
+        title: "Platform Strategy",
+        description: "The Big 3",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🏢 Memorize the 3 ecosystem arms",
-            "💎 Understand the 'Premium' aesthetic standard",
-            "📢 Learn how Social supports the Agency & Media arms"
+            "⏱️ Time: 60 min",
+            "👔 LinkedIn: B2B High Ticket",
+            "📸 Instagram: Visual Brand & Portfolio",
+            "🎥 TikTok/Reels: Top of Funnel Awareness"
         ]
     },
     {
         id: 3,
-        title: "Platform Mastery",
-        description: "The right tool for the job",
-        contentFirst: false,
+        title: "The Content Pillars",
+        description: "Never Run Out of Ideas",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "📊 Study the Platform Comparison Matrix",
-            "📸 Master Instagram/TikTok (Visual)",
-            "👔 Master LinkedIn/Twitter (Text/Professional)"
+            "⏱️ Time: 45 min",
+            "🏛️ Pillar 1: Education (How-to)",
+            "🏛️ Pillar 2: Inspiration (Results)",
+            "🏛️ Pillar 3: Entertainment (Relatability)"
         ]
     },
     {
         id: 4,
-        title: "Content Creation",
-        description: "Making viral hits",
-        contentFirst: false,
+        title: "Hook Mastery",
+        description: "3 Seconds to Live",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-40 minutes",
-            "🪝 Study the Viral Hook Anatomy",
-            "🎥 Learn video editing basics (CapCut)",
-            "🎨 Understand static design basics (Canva/Figma)"
+            "⏱️ Time: 60 min",
+            "🎣 Visual: The 'Pattern Interrupt'",
+            "🎣 Text: 'Stop doing this...'",
+            "🎣 Audio: Trending Sounds"
         ]
     },
     {
         id: 5,
-        title: "The Funnel Strategy",
-        description: "Views to Cash",
-        contentFirst: false,
+        title: "Video Editing",
+        description: "CapCut Speed",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "🔻 Study the Social Media Funnel Diagram",
-            "👀 Learn 'Awareness' vs 'Engagement' vs 'Conversion'",
-            "🔗 Understand the 'Link in Bio' strategy"
+            "⏱️ Time: 90 min",
+            "✂️ Technique: The Jump Cut",
+            "✂️ Technique: B-Roll overlay",
+            "📝 Technique: Dynamic Captions"
         ]
     },
     {
         id: 6,
         title: "Community Management",
-        description: "Replying & Engaging",
-        contentFirst: false,
+        description: "The Comment Section",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "💬 The 'Reply to Everyone' rule",
-            "🔥 Handling trolls and negative comments",
-            "💌 Turning DMs into leads"
+            "⏱️ Time: 45 min",
+            "💬 Rule: Reply to EVERY comment in 1 hour",
+            "🤝 Strat: Inbound DMs -> Sales Calls",
+            " troll Handling: Block & Delete vs Witty Reply"
         ]
     },
     {
         id: 7,
-        title: "Tools & Analytics",
-        description: "Measuring success",
-        contentFirst: false,
+        title: "Analytics Deep Dive",
+        description: "Metrics that Matter",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📈 Tracking KPI: Reach vs Engagement Rate",
-            "📅 Using scheduling tools (Buffer/Metricool)",
-            "🕵️‍♀️ Competitor analysis tools"
+            "⏱️ Time: 60 min",
+            "📊 Metric: Shares (Virality)",
+            "📊 Metric: Saves (Value)",
+            "🚫 Vanity: USDA Likes (Unless they convert)"
         ]
     },
     {
         id: 8,
-        title: "Influencer Collaboration",
-        description: "Expanding reach",
-        contentFirst: false,
+        title: "Canva Design",
+        description: "Non-Designer Design",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "🤝 How to outreach to influencers",
-            "🎁 The 'Seeding' strategy (Product gifting)",
-            "📝 Negotiating deliverables"
+            "⏱️ Time: 60 min",
+            "🎨 Skill: Carousels (Seamless swipe)",
+            "🎨 Skill: Brand Kit Consistency",
+            "🎨 Skill: removing backgrounds"
         ]
     },
     {
         id: 9,
-        title: "Practice Scenarios",
-        description: "Real-world simulations",
-        contentFirst: false,
+        title: "Influencer Marketing",
+        description: "Borrowed Trust",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "🔥 Handle a 'PR Crisis' in the comments",
-            "🎥 Script a 15-second Reel for a product launch",
-            "💌 Draft a DM reply to an angry customer"
+            "⏱️ Time: 45 min",
+            "🔬 Research: Audience Quality Check",
+            "💰 Deal: Deliverables vs Usage Rights",
+            "📧 Outreach: The Gift pitch"
         ]
     },
     {
         id: 10,
-        title: "Final Certification",
-        description: "Comprehensive assessment",
-        contentFirst: false,
+        title: "Scheduling & Workflow",
+        description: "The Content Batch",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Review ALL previous modules",
-            "🏆 Score 20/20 to pass",
-            "🎉 Get ready to go viral!"
+            "⏱️ Time: 30 min",
+            "🗓️ Process: Shoot 1 day, Edit 1 day, Schedule 1 day",
+            "⚙️ Tool: Buffer / Metricool",
+            "♻️ Strat: Repurpose (Tweet -> IG Post)"
+        ]
+    },
+    {
+        id: 11,
+        title: "Crisis Handling",
+        description: "Cancelled Culture",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "🔥 Scenario: Brand Mistake",
+            "🤐 Action: The Apology Video (Real vs Fake)",
+            "⏸️ Action: Pausing Scheduled Posts"
+        ]
+    },
+    {
+        id: 12,
+        title: "Paid Social Basics",
+        description: "The Boost Button",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "💸 Strat: Only boost ORGANIC winners",
+            "🎯 Audience: Retargeting Profile Visitors",
+            "📉 Metric: CPA (Cost Per Acquisition)"
         ]
     }
 ];
 
 const task1Content = `
-<h2>📚 PART 1: SOCIAL MEDIA MINDSET - Building Communities, Not Just Posting</h2>
+<h2>📚 TASK 1: MINDSET - Rented Land</h2>
 
 <div class="content-section">
-<h3>🎯 Why Are You Here?</h3>
-<p>Social Media is not about posting. It's about <strong>building communities</strong> and <strong>driving revenue</strong>. Every post, comment, and DM is an opportunity to either strengthen or weaken the brand.</p>
-
-<div class="warning-box">
-<strong>⚠️ The Uncomfortable Truth:</strong>
-<p>The average person scrolls past <strong>300+ posts per day</strong>. If your content doesn't <strong>stop the scroll in 0.5 seconds</strong>, it doesn't exist.</p>
-</div>
+    <h3>📉 Algorithm Risk</h3>
+    <p>Mark Zuckerberg owns your followers. You don't. He can delete your reach tomorrow.</p>
 </div>
 
 <div class="content-section">
-<h3>💡 The Philosophy: Give, Give, Ask</h3>
-<p>Most brands spam sell on social. We don't. We build trust first.</p>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
-<div style="padding: 25px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3); text-align: center;">
-<div style="font-size: 2em;">📚</div>
-<strong>GIVE Value</strong>
-<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Teach something useful</p>
+    <h3>📧 The Goal: Owned Data</h3>
+    <p>Social Media is Top of Funnel. The goal is ALWAYS to move them to an Email List or SMS list. That is "Owned Land".</p>
 </div>
 
-<div style="padding: 25px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; border: 2px solid rgba(6, 182, 212, 0.3); text-align: center;">
-<div style="font-size: 2em;">🎭</div>
-<strong>GIVE Entertainment</strong>
-<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Make them laugh or smile</p>
-</div>
-
-<div style="padding: 25px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.3); text-align: center;">
-<div style="font-size: 2em;">💰</div>
-<strong>THEN Ask</strong>
-<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Now you've earned the right to sell</p>
-</div>
-</div>
-
-<div class="highlight-box">
-<strong>The Ratio:</strong> For every 1 promotional post, create 4-5 value posts. Brands that only sell get unfollowed. Brands that give value get fans.
-</div>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Bio</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Bio Audit</h4>
+        <p>Rewrite an IG Bio for a "Personal Trainer". Include: Who they help, How they help, and a Lead Magnet CTA (to capture email).</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>📊 Your 3 Core Responsibilities</h3>
-
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(99, 102, 241, 0.2);">
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Responsibility</strong></td>
-<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>What It Means</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🛡️ <strong>Represent Quality</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No pixelated images, no typos, no off-brand content. Everything is premium.</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">💬 <strong>Build Trust</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Be human and responsive. Reply to every comment. Make people feel heard.</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚀 <strong>Drive Growth</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Every post has a purpose. Awareness, engagement, or conversion. Know the goal.</td>
-</tr>
-</table>
-</div>
-
-<div class="content-section">
-<h3>🚨 Common Mistakes That Destroy Engagement</h3>
-
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(239, 68, 68, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Mistake</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ What To Do Instead</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Posting and leaving</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Stay online 30 min after posting to reply to early comments</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Only promotional content</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow the 80/20 rule: 80% value, 20% promotion</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ignoring negative comments</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Respond publicly with empathy, then move to DM</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Low-quality visuals</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Every image must be crisp, aligned, and on-brand</td>
-</tr>
-</table>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-<h3>✅ IMPLEMENTATION TASK: Build Your Social Media Foundation</h3>
-<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Content Audit (10 min)</h4>
-<p>Look at the last 10 posts on any brand's Instagram. Categorize each as:</p>
-<ul>
-<li>📚 Value (educational)</li>
-<li>🎭 Entertainment (fun/engaging)</li>
-<li>💰 Promotional (selling)</li>
-</ul>
-<p>Calculate their ratio. Is it following the 80/20 rule?</p>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Caption Practice (10 min)</h4>
-<p>Write a caption for a new product launch using the Give-Give-Ask format:</p>
-<ol>
-<li>Start with a value statement or insight</li>
-<li>Add entertainment/relatable moment</li>
-<li>End with a soft CTA (not "BUY NOW!")</li>
-</ol>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Social Media SOP (10 min)</h4>
-<p>Open the <a href="../social-media-sop.html" target="_blank" style="color: #8B5CF6;">Social Media SOP document</a> and read:</p>
-<ul>
-<li>Content Pillars section</li>
-<li>Platform-specific strategies</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<p>You've learned the social media mindset. Now prove your understanding.</p>
-<ul>
-<li>📝 10 questions about community building and strategy</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Mindset</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE - The Ecosystem</h2>
+<h2>📚 TASK 2: PLATFORM STRATEGY</h2>
 
 <div class="content-section">
-<h3>🏢 The Ecosystem Engine</h3>
-<p>Social Media feeds all parts of Digital Heroes:</p>
-<ul>
-<li><strong>Media Arm:</strong> YouTube clips go to TikTok/Shorts to drive subscribers.</li>
-<li><strong>Agency Arm:</strong> Case studies go to LinkedIn to attract high-ticket clients.</li>
-<li><strong>Talent:</strong> Culture posts attract top employees.</li>
-</ul>
+    <h3>👔 LinkedIn</h3>
+    <p>The Money Platform. Text-heavy. Professional. High organic reach (for now).</p>
+    <p><strong>Goal:</strong> Authority & B2B Leads.</p>
 </div>
 
 <div class="content-section">
-<h3>💎 The Aesthetic</h3>
-<p>Our feed must look <strong>Premium</strong>.</p>
-<div class="warning-box">
-<ul>
-<li>❌ No cluttered graphics.</li>
-<li>❌ No generic stock photos.</li>
-<li>✅ Clean typography.</li>
-<li>✅ High-resolution visuals.</li>
-</ul>
-</div>
+    <h3>📸 Instagram</h3>
+    <p>The Brand Resume. Before hiring you, they check your IG. It must look premium.</p>
+    <p><strong>Goal:</strong> Trust & Visual Proof.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master the Brand</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Content Audit (5 min)</h4>
-        <p>Look at our last 3 Instagram posts. Rate them on "Premium Aesthetic" (1-10) and identify one thing that could be improved in each.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Ecosystem Mapping (5 min)</h4>
-        <p>Draw a line connecting each content type to its business goal:</p>
-        <ul>
-            <li>Viral TikTok Clip → ? (Subscribers / Clients / Recruitment)</li>
-            <li>Detailed Case Study → ?</li>
-            <li>Behind-the-scenes Office Tour → ?</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Strategy Match</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Where do they go?</h4>
+        <p>Client is a "Plumbing Software Company". Which platform is primary? Which is secondary? Justify.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about company knowledge</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Platforms</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task3Content = `
-<h2>📚 TASK 3: PLATFORM MASTERY</h2>
+<h2>📚 TASK 3: CONTENT PILLARS</h2>
 
 <div class="content-section">
-<h3>📊 Choosing the Right Battlefield</h3>
-<img src="images/platform_matrix.png" alt="Social Platform Matrix" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <h3>🏛️ The 3 E's</h3>
+    <ul>
+        <li><strong>Education:</strong> "How to unclog a drain." (Builds Authority).</li>
+        <li><strong>Entertainment:</strong> "Plumbers dancing." (Builds Reach/Likeability).</li>
+        <li><strong>Emotion:</strong> "We fixed grandma's heating for free." (Builds Trust).</li>
+    </ul>
 </div>
 
 <div class="content-section">
-<h3>📱 Platform Nuances</h3>
-<ul>
-<li><strong>TikTok/Reels:</strong> Unpolished, raw, trends, fast entertainment.</li>
-<li><strong>Instagram Grid:</strong> Polished, aesthetic, portfolio-like.</li>
-<li><strong>LinkedIn:</strong> Professional, thought leadership, educational text.</li>
-<li><strong>Twitter/X:</strong> News, quick thoughts, conversation threads.</li>
-</ul>
+    <h3>🔄 Rotation</h3>
+    <p>Mon: Educate. Wed: Entertain. Fri: Emotion/Results.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master the Platforms</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Repurpose Challenge (10 min)</h4>
-        <p>You have one piece of content: "A video interview with the CEO about future trends."</p>
-        <p>Describe how you would adapt this for:</p>
-        <ul>
-            <li>TikTok (What part do you cut? Format?)</li>
-            <li>LinkedIn (How do you frame it?)</li>
-            <li>Twitter (What do you tweet?)</li>
-        </ul>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Platform Match (5 min)</h4>
-        <p>Which platform is BEST for:</p>
-        <ul>
-            <li>A 15-second funny trend video?</li>
-            <li>A polished infographic about revenue growth?</li>
-            <li>A hiring announcement?</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Calendar</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Weekly Plan</h4>
+        <p>Create a 3-post plan for a "Vegan Bakery" covering all 3 pillars.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about platforms</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Pillars</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: CONTENT CREATION - Making Posts That Stop the Scroll</h2>
+<h2>📚 TASK 4: HOOK MASTERY</h2>
 
 <div class="content-section">
-<h3>🪝 The Anatomy of a Viral Post</h3>
-<div class="highlight-box">
-<strong>Every viral post has 3 elements:</strong>
-<ol>
-<li><strong>HOOK (0-3 sec):</strong> Stops the scroll. Visual or text that demands attention.</li>
-<li><strong>VALUE (3-30 sec):</strong> Delivers on the promise. Teaches, entertains, or inspires.</li>
-<li><strong>CTA (End):</strong> Tells them what to do next. Follow, comment, save, share.</li>
-</ol>
-</div>
+    <h3>3 Seconds to Live</h3>
+    <p>If you don't grab them in 3 seconds, they are gone.</p>
 </div>
 
 <div class="content-section">
-<h3>🎥 Video Rules (Reels/TikTok)</h3>
+    <h3>🎣 Visual Pattern Interrupt</h3>
+    <p>Don't just stand there. Start the video by walking into frame, or dropping something, or with a weird camera angle.</p>
+</div>
 
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(99, 102, 241, 0.2);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Element</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Rule</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>First 0-3 seconds</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Must move or intrigue IMMEDIATELY</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Algorithm measures drop-off. Hook early or die.</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Pacing</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cut "umms" and silence. Keep it fast.</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dead air = scroll away</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Captions</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">MANDATORY (85% watch muted)</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No captions = invisible content</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trending Audio</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use it FAST (trends die in 48 hours)</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Algorithm boosts trending sounds</td>
-</tr>
-</table>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Hook Writing</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: The Fix</h4>
+        <p>Bad Hook: "Hello everyone, today I want to talk about CRM." <br>Fix it. Make it urgent.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🛠️ Content Creation Stack</h3>
-<ul>
-<li><strong>CapCut:</strong> Quick mobile editing, auto-captions, effects</li>
-<li><strong>Canva:</strong> Static graphics, carousels, templates</li>
-<li><strong>Figma:</strong> Advanced design when Canva isn't enough</li>
-<li><strong>ChatGPT:</strong> Caption ideas, hook brainstorming, hashtags</li>
-</ul>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-<h3>✅ IMPLEMENTATION TASK: Create Viral-Ready Content</h3>
-<p><strong>Before taking the quiz, complete these exercises:</strong></p>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Write 5 Hooks (10 min)</h4>
-<p>Write 5 different hooks for this topic: "How to increase Shopify sales"</p>
-<p>Use these hook types:</p>
-<ol>
-<li>Curiosity Gap: "The #1 thing killing your..."</li>
-<li>Contrarian: "Why [common advice] is wrong..."</li>
-<li>Promise: "How to [result] in [time]..."</li>
-<li>Question: "Are you making this mistake?"</li>
-<li>Story: "I just helped a client..."</li>
-</ol>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Script a 30-Second Reel (10 min)</h4>
-<p>Script a Reel announcing a new feature/product. Include:</p>
-<ul>
-<li>Hook (first 3 seconds - what do they SEE and HEAR?)</li>
-<li>Value (what's the benefit?)</li>
-<li>CTA (what should they do?)</li>
-</ul>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Analyze a Viral Video (10 min)</h4>
-<p>Find a viral Reel in the ecommerce/business niche. Document:</p>
-<ul>
-<li>What was the hook? (First 3 seconds)</li>
-<li>What value did it provide?</li>
-<li>What was the CTA?</li>
-<li>Why did it work?</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about content creation</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Hooks</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task5Content = `
-<h2>📚 TASK 5: THE FUNNEL STRATEGY</h2>
+<h2>📚 TASK 5: VIDEO EDITING (CapCut)</h2>
 
 <div class="content-section">
-<h3>🔻 From Scroll to Sale</h3>
-<img src="images/social_media_funnel.png" alt="Social Media Funnel" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <h3>✂️ The Jump Cut</h3>
+    <p>Remove every breath. Remove every "um". Silence is death. The video should feel breathless.</p>
 </div>
 
 <div class="content-section">
-<h3>🎯 Success Metrics per Stage</h3>
-<ul>
-<li><strong>Awareness (Top):</strong> Views, Impressions. (Goal: Get seen)</li>
-<li><strong>Engagement (Middle):</strong> Likes, Comments, Shares. (Goal: Build trust)</li>
-<li><strong>Conversion (Bottom):</strong> Link Clicks, DM Inquiries. (Goal: Make money)</li>
-</ul>
+    <h3>📝 Captions</h3>
+    <p>80% watch without sound. Captions are mandatory. Make them pop with brand colors.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Plug the Funnel</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Metric Match (5 min)</h4>
-        <p>Match the problem to the funnel stage:</p>
-        <ul>
-            <li>"Lots of views but no comments" → Problem is at [Stage?]</li>
-            <li>"Lots of comments but nobody clicks the link" → Problem is at [Stage?]</li>
-            <li>"No views at all" → Problem is at [Stage?]</li>
-        </ul>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Diagnose a Profile (10 min)</h4>
-        <p>Look at a brand with 10k followers but only 5 likes per photo. Diagnosis?</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Edit Plan</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Storyboard</h4>
+        <p>Describe the B-Roll overlay for a voiceover saying "Our sales flattened last month". (e.g., Graph going down, stressed face...)</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about funnels</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Editing</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
@@ -525,366 +309,265 @@ const task6Content = `
 <h2>📚 TASK 6: COMMUNITY MANAGEMENT</h2>
 
 <div class="content-section">
-<h3>💬 Engage or Die</h3>
-<div class="highlight-box">
-<strong>The Algorithm loves comments.</strong>
-<p>If someone comments, reply. It doubles the comment count instantly and signals "Active" to the algorithm.</p>
-</div>
+    <h3>💬 Speed Replying</h3>
+    <p>The algorithm rewards early engagement. If you reply to a comment within 5 mins, it signals "Activity".</p>
 </div>
 
 <div class="content-section">
-<h3>🔥 Crisis Management</h3>
-<p>Negative comment? Don't delete (unless hate speech).</p>
-<ul>
-<li><strong>Kill with kindness:</strong> "Sorry to hear that! DM us and we'll fix it."</li>
-<li><strong>Move it to private:</strong> Get them out of the public comments ASAP.</li>
-</ul>
+    <h3>🤝 DMs to Dollars</h3>
+    <p>Don't sell in the post. Sell in the DMs. <br>Post: "Comment GUIDE and I'll send you the PDF." <br>DM: "Here is the PDF. Btw, what are you working on?"</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master Engagement</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Reply Drill (10 min)</h4>
-        <p>Write replies to these 3 comments:</p>
-        <ol>
-            <li>"Love this! 🔥" (Don't just say thanks)</li>
-            <li>"Where can I buy?"</li>
-            <li>"Price is too high."</li>
-        </ol>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Crisis Simulation (5 min)</h4>
-        <p>A user comments: "Scam! Never delivered my order!"</p>
-        <p>Draft your public reply to de-escalate.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Handling Trolls</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: The Roast</h4>
+        <p>Troll says "Your product is expensive trash." <br>Draft a witty (but professional) reply that diffuses the situation.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about interactions</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Community</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task7Content = `
-<h2>📚 TASK 7: TOOLS & ANALYTICS</h2>
+<h2>📚 TASK 7: ANALYTICS DEEP DIVE</h2>
 
 <div class="content-section">
-<h3>📈 What Matters</h3>
-<ul>
-<li><strong>Vanity Metrics:</strong> Likes, Followers. (Look good, but limited value).</li>
-<li><strong>Real Metrics:</strong> Shares, Saves, Clicks. (Indicate high intent).</li>
-</ul>
+    <h3>📊 Shares > Likes</h3>
+    <p>A Like is lazy. A Share means endorsement. A Save means value. Optimize for Shares (Virality) and Saves (Authority).</p>
 </div>
 
 <div class="content-section">
-<h3>🛠️ The Stack</h3>
-<ul>
-<li><strong>CapCut:</strong> Fast mobile editing.</li>
-<li><strong>Canva:</strong> Graphic design.</li>
-<li><strong>Metricool/Buffer:</strong> Scheduling (Don't post manually every day).</li>
-<li><strong>ManyChat:</strong> Automated DM funnels.</li>
-</ul>
+    <h3>📉 Retention</h3>
+    <p>Look at the graph. If everyone drops off at 0:15, watch 0:15 multiple times. What happened? Did you get boring? Fix it next time.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Build Your Stack</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Analytics Check (10 min)</h4>
-        <p>If your goal is SALES, which 2 metrics matter most? If your goal is AWARENESS, which 2 metrics matter most?</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Tool Selection (5 min)</h4>
-        <p>A client wants to automate replies to "DM me for info". Which tool do you use?</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Reporting</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Analysis</h4>
+        <p>Video A got 100k views and 10 followers. Video B got 10k views and 100 followers. Which was better? Why?</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about tools</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Analytics</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task8Content = `
-<h2>📚 TASK 8: INFLUENCER COLLABORATION</h2>
+<h2>📚 TASK 8: CANVA DESIGN</h2>
 
 <div class="content-section">
-<h3>🤝 The Multiplier Effect</h3>
-<p>Why build an audience from scratch when you can borrow someone else's?</p>
+    <h3>🎨 The Seamless Carousel</h3>
+    <p>On IG, carousels perform best. Make the background image flow from Slide 1 to Slide 2 to encourage swiping.</p>
 </div>
 
 <div class="content-section">
-<h3>🎁 Seeding Strategy</h3>
-<ol>
-<li>Send free product with NO strings attached.</li>
-<li>Include a handwritten note.</li>
-<li>If they post, GREAT. If not, follow up politely once.</li>
-<li>Build the relationship first, ask for the promo second.</li>
-</ol>
+    <h3>🚫 No Default Templates</h3>
+    <p>Everyone recognizes default Canva templates. Change the fonts. Change the colors. Own it.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Outreach Mastery</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Find 3 Influencers (10 min)</h4>
-        <p>For a skincare brand, find 3 influencers (10k-50k followers) who fit. List their handles.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: DM Draft (10 min)</h4>
-        <p>Draft a DM to an influencer offering to send them free product. Keep it short, no pressure.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Visuals</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Contrast Check</h4>
+        <p>I will describe a graphic (Yellow text on White background). Why is this bad? What is the fix?</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about influencers</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Design</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task9Content = `
-<h2>📚 TASK 9: PRACTICE SCENARIOS</h2>
+<h2>📚 TASK 9: INFLUENCER MARKETING</h2>
 
 <div class="content-section">
-<h3>🧠 Scenario 1: Angry Comment</h3>
-<p><strong>"Your product is scam! It broke in 2 days!"</strong></p>
-<div class="highlight-box">
-<strong>Correct Reply:</strong> "Oh no! That doesn't sound right at all. We have a 1-year guarantee. Please DM us immediately so we can send a replacement + a gift for the trouble!" (Shows others you care).
-</div>
+    <h3>🔬 Quality > Quantity</h3>
+    <p>10k followers with 10% engagement is better than 100k with 0.1%. Check their comments. Are they real people or bots?</p>
 </div>
 
 <div class="content-section">
-<h3>🎥 Scenario 2: Viral Trend</h3>
-<p>A new audio is trending on TikTok.</p>
-<ul>
-<li><strong>Action:</strong> Adapt it to our niche TODAY. Speed is key. Trends die in 48 hours.</li>
-</ul>
+    <h3>💰 Usage Rights</h3>
+    <p>If you pay an influencer, ensure you have the right to run their video as an AD from YOUR account (Whitelisting).</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Role Play</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Trend Adaptation (10 min)</h4>
-        <p>Pick a current trending meme or audio. Write down how a LAWYER could use it. Then how a GYM could use it.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Outreach</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: The DM</h4>
+        <p>Draft a DM to an influencer offering free product in exchange for a video. Keep it short and 'cool'.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about scenarios</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Influencers</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task10Content = `
-<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
+<h2>📚 TASK 10: SCHEDULING & WORKFLOW</h2>
 
 <div class="content-section">
-<h3>🏆 Congratulations!</h3>
-<p>You've completed the Social Media Manager training. This final assessment covers:</p>
-<ul>
-<li>✅ Platform Strategies (IG vs TikTok vs LinkedIn)</li>
-<li>✅ Viral Content Creation</li>
-<li>✅ Funnel Metrics</li>
-<li>✅ Community Management Protocol</li>
-<li>✅ Crisis Handling</li>
-<li>✅ Analytics & Tools</li>
-<li>✅ Influencer Outreach</li>
-</ul>
+    <h3>🗓️ Batching</h3>
+    <p>Do not wake up and ask "What do I post today?". That is stress. <br>Create 1 week of content in 1 day.</p>
 </div>
 
 <div class="content-section">
-<h3>📝 Final Assessment</h3>
-<div class="warning-box">
-<strong>20 questions covering all modules.</strong>
-<p>Score 20/20 to receive your Social Media Certification.</p>
-</div>
+    <h3>♻️ Repurposing</h3>
+    <p>A Tweet becomes an IG Graphic. That Graphic becomes a TikTok script. Work smart.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Final Portfolio</h3>
-    <p><strong>One final step before you're certified:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Content Calendar (20 min)</h4>
-        <p>Create a 1-week content calendar for a client. Metrics to hit:</p>
-        <ul>
-            <li>3 Reels (Awareness)</li>
-            <li>2 Carousel posts (Education/Trust)</li>
-            <li>5 Stories (Engagement)</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Machine</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: The Waterfall</h4>
+        <p>Map out how 1 YouTube video turns into 3 TikToks, 2 LinkedIn Posts, and 1 Newsletter.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Final Quiz?</h3>
-<ul>
-<li>📝 20 questions covering all training modules</li>
-<li>🎯 Score <strong>20/20</strong> to receive certification</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Workflow</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
-// Quiz Questions
-const allQuizzes = [
-    // Task 1: Mindset
-    [
-        { q: "Currency of social media:", o: ["Engagement", "Money", "Followers only", "Colors"], c: 0 },
-        { q: "We are:", o: ["Posters", "Community Builders", "Spammers", "Salespeople"], c: 1 },
-        { q: "Give Give Ask means:", o: ["Ask Ask Give", "Value Value Sale", "Sale Sale Sale", "Give Sale Give"], c: 1 },
-        { q: "Social media represents:", o: ["The CEO", "The Brand Voice", "The Intern", "Nobody"], c: 1 },
-        { q: "Trust is built by:", o: ["Selling hard", "Being human & responsive", "Ignoring comments", "Deleting posts"], c: 1 },
-        { q: "Every post needs:", o: ["A picture", "A purpose", "A cat", "An emoji"], c: 1 },
-        { q: "Quality standard:", o: ["Low res ok", "Pixel perfect/Premium", "Blurry", "Random"], c: 1 },
-        { q: "Community building involves:", o: ["Posting and leaving", "Replying and engaging", "Blocking everyone", "Hiding"], c: 1 },
-        { q: "Growth comes from:", o: ["Luck", "Strategy & Consistency", "Buying followers", "Posting once"], c: 1 },
-        { q: "If you don't ask for the sale:", o: ["You sell more", "You miss potential revenue", "It's better", "People guess"], c: 1 }
-    ],
-    // Task 2: Company Knowledge
-    [
-        { q: "YouTube clips go to:", o: ["LinkedIn", "TikTok/Shorts", "Email", "Nowhere"], c: 1 },
-        { q: "LinkedIn is for:", o: ["Kids", "High-ticket clients/Agency", "Dance videos", "Memes"], c: 1 },
-        { q: "Aesthetic rule:", o: ["Cluttered", "Clean & Premium", "Dark only", "Neon only"], c: 1 },
-        { q: "Culture posts attract:", o: ["Clients", "Talent/Employees", "Nobody", "Spam"], c: 1 },
-        { q: "Avoid:", o: ["High res", "Generic stock photos", "Original content", "Videos"], c: 1 },
-        { q: "Social feeds:", o: ["The Media Arm", "The Agency Arm", "The Whole Ecosystem", "Nothing"], c: 2 },
-        { q: "Premium means:", o: ["Expensive", "High quality execution", "Slow", "Snobby"], c: 1 },
-        { q: "Typography should be:", o: ["Clean", "Messy", "Comic Sans", "Tiny"], c: 0 },
-        { q: "Visuals must be:", o: ["Low res", "High Resolution", "Black and white", "Stretched"], c: 1 },
-        { q: "Agency arm sells:", o: ["Cheap items", "High ticket services", "Merch", "Food"], c: 1 }
-    ],
-    // Task 3: Platforms
-    [
-        { q: "TikTok is for:", o: ["Professional news", "Raw/Fast Entertainment", "Long articles", "Photos"], c: 1 },
-        { q: "LinkedIn is for:", o: ["Dancing", "Professional/B2B", "Gaming", "Shopping"], c: 1 },
-        { q: "Instagram Grid is:", o: ["Messy", "A Portfolio/Polished", "Disappearing", "Text only"], c: 1 },
-        { q: "Twitter/X is for:", o: ["News/Conversation", "Long videos", "Music", "Filters"], c: 0 },
-        { q: "Reels content style:", o: ["Slow", "Fast/Trends", "Static", "Boring"], c: 1 },
-        { q: "Platform for B2B leads:", o: ["TikTok", "LinkedIn", "Pinterest", "Snapchat"], c: 1 },
-        { q: "Platform for Gen Z:", o: ["Facebook", "TikTok", "LinkedIn", "Email"], c: 1 },
-        { q: "Visual aesthetics matter most on:", o: ["Twitter", "Instagram", "Reddit", "Discord"], c: 1 },
-        { q: "Real-time updates go to:", o: ["YouTube", "Twitter/X", "Pinterest", "Blog"], c: 1 },
-        { q: "Looping videos best for:", o: ["LinkedIn", "TikTok", "Facebook", "Email"], c: 1 }
-    ],
-    // Task 4: Content Creation
-    [
-        { q: "Visual Hook length:", o: ["10 sec", "0-3 sec", "1 min", "End of video"], c: 1 },
-        { q: "Captions are:", o: ["Optional", "Mandatory", "Annoying", "Bad"], c: 1 },
-        { q: "Pacing should be:", o: ["Slow", "Fast/No silence", "Relaxed", "Silent"], c: 1 },
-        { q: "Umms and pauses:", o: ["Keep them", "Cut them out", "Emphasize them", "Loop them"], c: 1 },
-        { q: "Visual hook must:", o: ["Be black", "Move or intrigue", "Be static", "Be text only"], c: 1 },
-        { q: "Viral anatomy includes:", o: ["Hook, Value, CTA", "Title, Body, Footer", "Image, Text, Link", "None"], c: 0 },
-        { q: "CTA stands for:", o: ["Call To Action", "Cat To Adopt", "Click The Ad", "None"], c: 0 },
-        { q: "Most people watch video:", o: ["With sound", "On Mute", "On TV", "In VR"], c: 1 },
-        { q: "Text hook is the:", o: ["Footer", "Headline", "Hashtag", "Bio"], c: 1 },
-        { q: "Stop the scroll means:", o: ["Crash the app", "Grab attention instantly", "Block user", "End video"], c: 1 }
-    ],
-    // Task 5: Funnel
-    [
-        { q: "Top of funnel:", o: ["Sales", "Awareness/Views", "Email", "Loyalty"], c: 1 },
-        { q: "Middle of funnel:", o: ["Views", "Engagement/Trust", "Referrals", "Exits"], c: 1 },
-        { q: "Bottom of funnel:", o: ["Likes", "Conversion/Sales", "Comments", "Shares"], c: 1 },
-        { q: "Metric for Awareness:", o: ["Sales", "Views/Impressions", "Clicks", "DMs"], c: 1 },
-        { q: "Metric for Conversion:", o: ["Likes", "Link Clicks/DMs", "Views", "Saves"], c: 1 },
-        { q: "Metric for Engagement:", o: ["Likes/Comments", "Reach", "Impressions", "Bounces"], c: 0 },
-        { q: "Link in Bio is for:", o: ["Decoration", "Conversion", "Fun", "Nothing"], c: 1 },
-        { q: "Goal of Awareness:", o: ["Get money", "Get seen", "Get support", "Get emails"], c: 1 },
-        { q: "Goal of Engagement:", o: ["Build Trust", "Sell immediately", "Annoy", "Ignore"], c: 0 },
-        { q: "DMs often lead to:", o: ["Sales", "Bans", "Nothing", "Spam"], c: 0 }
-    ],
-    // Task 6: Community
-    [
-        { q: "Reply to:", o: ["Nobody", "Everyone", "Only friends", "Only verified"], c: 1 },
-        { q: "Comments help:", o: ["The algorithm", "Nobody", "Slow down phone", "Spammers"], c: 0 },
-        { q: "Negative comment action:", o: ["Delete", "Kill with kindness/Move to private", "Argue", "Ignore"], c: 1 },
-        { q: "Hate speech action:", o: ["Reply", "Delete/Block", "Pin", "Like"], c: 1 },
-        { q: "Move to private means:", o: ["Hide", "DM the user", "Delete account", "Block"], c: 1 },
-        { q: "Responding quickly signals:", o: ["Desperation", "Good service/Active", "Boredom", "Nothing"], c: 1 },
-        { q: "Algorithm loves:", o: ["Silence", "Activity/Interaction", "Static images", "Links"], c: 1 },
-        { q: "Trolls want:", o: ["Help", "Attention/Reaction", "Money", "Friends"], c: 1 },
-        { q: "Turning DMs into:", o: ["Leads", "Enemies", "Trash", "Spam"], c: 0 },
-        { q: "Customer service on social is:", o: ["Public", "Critical", "Optional", "Bad"], c: 1 }
-    ],
-    // Task 7: Tools
-    [
-        { q: "Vanity Metrics:", o: ["Sales", "Likes/Followers", "Clicks", "Leads"], c: 1 },
-        { q: "Real Metrics:", o: ["Shares/Saves/Clicks", "Likes", "Views", "Colors"], c: 0 },
-        { q: "CapCut is for:", o: ["Photos", "Video Editing", "Scheduling", "Email"], c: 1 },
-        { q: "Canva is for:", o: ["Coding", "Graphic Design", "Video", "Music"], c: 1 },
-        { q: "Metricool is for:", o: ["Cooking", "Scheduling/Analytics", "Gaming", "Dancing"], c: 1 },
-        { q: "ManyChat is for:", o: ["Video", "DM Automation", "Photos", "Text"], c: 1 },
-        { q: "Manual posting is:", o: ["Efficient", "Inefficient", "Required", "Fun"], c: 1 },
-        { q: "Intent is shown by:", o: ["Views", "Saves/Shares", "Scrolling", "Ignoring"], c: 1 },
-        { q: "High Reach means:", o: ["Many saw it", "Many bought", "Many liked", "None"], c: 0 },
-        { q: "High Engagement means:", o: ["Many saw it", "Many interacted", "Nobody saw it", "Bad content"], c: 1 }
-    ],
-    // Task 8: Influencers
-    [
-        { q: "Seeding means:", o: ["Gardening", "Gifting product freely", "Paying cash", "Begging"], c: 1 },
-        { q: "First step with influencer:", o: ["Ask for promo", "Build relationship", "Send contract", "Pay money"], c: 1 },
-        { q: "Multiplier effect:", o: ["Borrowing audience", "Paying ads", "Posting more", "None"], c: 0 },
-        { q: "If they don't post:", o: ["Sue them", "Follow up politely once", "Harass them", "Cry"], c: 1 },
-        { q: "Handwritten note adds:", o: ["Cost", "Personal touch", "Weight", "Nothing"], c: 1 },
-        { q: "Outreach should be:", o: ["Generic", "Personalized", "Robotic", "Rude"], c: 1 },
-        { q: "Deliverables are:", o: ["Food", "What they create (Post/Reel)", "Shipping", "Boxes"], c: 1 },
-        { q: "Micro-influencers have:", o: ["Low trust", "High trust/Engagement", "Millions of followers", "Bots"], c: 1 },
-        { q: "Gifting requires:", o: ["Contract", "No strings attached initially", "Payment", "Lawyer"], c: 1 },
-        { q: "Follow up frequency:", o: ["Daily", "Once", "Hourly", "Never"], c: 1 }
-    ],
-    // Task 9: Scenarios
-    [
-        { q: "Angry comment reply:", o: ["You lie", "DM us to fix it + Gift", "Ignore", "Delete"], c: 1 },
-        { q: "Viral trend action:", o: ["Ignore", "Adapt quickly (48hr)", "Wait a week", "Copy exactly"], c: 1 },
-        { q: "Product launch needs:", o: ["Text post", "Hype video/Reel", "Nothing", "Email only"], c: 1 },
-        { q: "Scam accusation:", o: ["Block", "Address publicly & politelys", "Hide", "Run"], c: 1 },
-        { q: "Trend lifespan:", o: ["Months", "Years", "Hours/Days (48hr)", "Forever"], c: 2 },
-        { q: "Speed matters for:", o: ["Quality", "Trends", "Scheduling", "Hashtags"], c: 1 },
-        { q: "Guarantee mention helps:", o: ["Build trust", "Lose money", "Confuse", "Nothing"], c: 0 },
-        { q: "Adapting trend means:", o: ["Doing same dance", "Applying concept to niche", "Changing audio", "Deleting"], c: 1 },
-        { q: "Crisis goal:", o: ["Win argument", "Resolve/De-escalate", "Get likes", "Go viral"], c: 1 },
-        { q: "Public apology:", o: ["Shows weakness", "Shows accountability", "Is bad", "Never do it"], c: 1 }
-    ],
-    // Task 10: Final (20)
-    [
-        { q: "Engagement currency:", o: ["Likes", "Comments/Interactions", "Views", "None"], c: 1 },
-        { q: "Platform Matrix:", o: ["Choosing right platform", "Movie", "Game", "None"], c: 0 },
-        { q: "Viral Anatomy:", o: ["Hook, Body, CTA", "Head, Shoulders, Knees", "Start, End", "None"], c: 0 },
-        { q: "Funnel Conversion:", o: ["Top", "Bottom", "Middle", "Side"], c: 1 },
-        { q: "Community Mgt:", o: ["Posting", "Replying", "Designing", "Editing"], c: 1 },
-        { q: "Crisis Rule:", o: ["Delete", "Kill with kindness", "Block", "Scream"], c: 1 },
-        { q: "Real Metric:", o: ["Like", "Share/Save", "View", "Scroll"], c: 1 },
-        { q: "CapCut:", o: ["Editing", "Posting", "Analytics", "Writing"], c: 0 },
-        { q: "Seeding:", o: ["Gifting", "Paying", "Selling", "Planting"], c: 0 },
-        { q: "TikTok style:", o: ["Raw/Fast", "Polished", "Static", "Slow"], c: 0 },
-        { q: "LinkedIn style:", o: ["Professional", "Dance", "Meme", "News"], c: 0 },
-        { q: "Hook time:", o: ["30 sec", "3 sec", "1 min", "5 sec"], c: 1 },
-        { q: "CTA:", o: ["Call To Action", "Click To Add", "None", "Call The Agent"], c: 0 },
-        { q: "Algorithm likes:", o: ["Silence", "Engagement", "Reports", "Blocks"], c: 1 },
-        { q: "Premium aesthetic:", o: ["Clean/High Res", "Blurry", "Cluttered", "Dark"], c: 0 },
-        { q: "Metricool:", o: ["Cool meter", "Scheduling Tool", "Ice cream", "None"], c: 1 },
-        { q: "Ecosystem:", o: ["Media/Agency/Talent", "Forest", "Web", "None"], c: 0 },
-        { q: "Give Give Ask:", o: ["Value Value Sale", "Sale Sale Sale", "Ask Ask Ask", "None"], c: 0 },
-        { q: "Captions:", o: ["Mandatory", "Optional", "Bad", "Ugly"], c: 0 },
-        { q: "Link in Bio:", o: ["Conversion point", "Bio info", "Name", "Nothing"], c: 0 }
-    ]
+const task11Content = `
+<h2>📚 TASK 11: CRISIS HANDLING</h2>
+
+<div class="content-section">
+    <h3>🔥 Pause Everything</h3>
+    <p>When a crisis hits (e.g., Offensive ad posted), PAUSE the scheduler. Don't let a "Happy Monday!" post go out while the internet is burning.</p>
+</div>
+
+<div class="content-section">
+    <h3>🤐 Sincerity</h3>
+    <p>"We missed the mark." works better than "We are sorry if you were offended."</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Damage Control</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: The Statement</h4>
+        <p>Draft a tweet acknowledging a server outage. No corporate jargon. Just human facts.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Crisis</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task12Content = `
+<h2>📚 TASK 12: PAID SOCIAL BASICS</h2>
+
+<div class="content-section">
+    <h3>🔥 Fuel on Fire</h3>
+    <p>Never put money behind a post that flopped organically. <br>Only boost posts that are ALREADY winning. Ads maximize existing momentum.</p>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Retargeting</h3>
+    <p>The cheapest high-ROI ad: Show a "Client Testimonial" only to people who visited your Profile last week.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Ad Strategy</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Budget Allocation</h4>
+        <p>You have $100. Do you spend it on boosting a new generic post to cold traffic, or boosting a Viral Reel to profile visitors? Why?</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Final Exam?</h3>
+    <ul>
+        <li>📝 20 questions covering ALL modules</li>
+        <li>🎯 Score <strong>20/20</strong> to receive SMM Certification</li>
+    </ul>
+</div>
+`;
+
+const quizQuestions = [
+    // Task 1
+    {
+        question: "Why is 'Owned Land' important?",
+        options: ["Real Estate investment", "Algo changes can kill Reach; Email is safe", "It isn't", "Zuckerberg is nice"],
+        correct: 1
+    },
+    // Task 2
+    {
+        question: "Primary goal of LinkedIn?",
+        options: ["Posting cats", "B2B Authority & Leads", "Dancing", "Storing photos"],
+        correct: 1
+    },
+    // Task 3
+    {
+        question: "What are the 3 Content Pillars?",
+        options: ["Cats, Dogs, Birds", "Education, Entertainment, Emotion", "Sales, Sales, Sales", "None"],
+        correct: 1
+    },
+    // Task 4
+    {
+        question: "How long is the Hook window?",
+        options: ["3 Seconds", "3 Minutes", "30 Seconds", "1 Hour"],
+        correct: 0
+    },
+    // Task 6
+    {
+        question: "Best way to get Sales?",
+        options: ["Post links constantly", "In the DMs after engagement", "Buy them", "Pray"],
+        correct: 1
+    },
+    // Task 7
+    {
+        question: "Most important viral metric?",
+        options: ["Likes", "Shares", "Comments", "Views"],
+        correct: 1
+    },
+    // Task 10
+    {
+        question: "What is Batching?",
+        options: ["Baking cookies", "Creating multiple posts in one session", "Posting once a year", "Deleting posts"],
+        correct: 1
+    },
+    // Task 11
+    {
+        question: "First step in a Crisis?",
+        options: ["Post more", "Pause scheduled posts", "Delete account", "Argue"],
+        correct: 1
+    },
+    // Task 12
+    {
+        question: "Which posts should you Boost?",
+        options: ["The failures", "The organic winners", "Random ones", "All of them"],
+        correct: 1
+    }
 ];

@@ -1,256 +1,157 @@
-// Client Chat Support Training Data
-// Complete training content for Client Chat certification
-// UPGRADED: Expanded Lessons and Study Guides (Text Only)
+// Client Chat Simulator Training Data - COMPLETE OVERHAUL
+// Digital Heroes Certification Program
+// 10 Tasks, 100+ Quiz Questions, Speed & Empathy Mastery
 
 const trainingTasks = [
     {
         id: 1,
-        title: "Chat Mindset",
-        description: "Speed & Empathy",
+        title: "Chat Chat Mindset",
+        description: "Speed Wins",
         contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🧠 Internalize 'Speed is Trust'",
-            "🛡️ Understand we are 'Problem Solvers', not robots",
-            "🚀 Learn the power of capitalization and punctuation"
+            "⏱️ Time: 45 min",
+            "🧠 Concept: Chat = Instant. Email = Slow.",
+            "🛡️ Concept: Response Time < 60 seconds",
+            "🚀 Goal: One Touch Resolution"
         ]
     },
     {
         id: 2,
         title: "Company Knowledge",
-        description: "Digital Heroes ecosystem",
-        contentFirst: false,
+        description: "Know Your Product",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 15-20 minutes",
-            "🏢 Know who to escalate to",
-            "💎 Understand the 'Concierge' vibe",
-            "📢 Learn the difference between Sales questions and Support questions"
+            "⏱️ Time: 60 min",
+            "📚 Section: Pricing Tiers",
+            "📚 Section: Refund Policy (30 Days)",
+            "📚 Section: Shipping Times"
         ]
     },
     {
         id: 3,
         title: "Tonality Mastery",
         description: "Reading the Room",
-        contentFirst: false,
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "📝 Adjusting tone to match the client (Mirroring)",
-            "🚫 Words to BAN (e.g. 'Standard Policy')",
-            "✅ Power phrases ('I can certainly help with that')"
+            "⏱️ Time: 45 min",
+            "🎭 Tone: Professional vs Casual",
+            "🎭 Tone: Mirroring the Customer",
+            "🚫 Don't: Being too robotic"
         ]
     },
     {
         id: 4,
         title: "Objection Handling",
-        description: "Turning No to Yes",
-        contentFirst: false,
+        description: "Turning No into Yes",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "⚠️ The 'Price is too high' script",
-            "📉 The 'I need to think about it' script",
-            "🔥 The 'Feel, Felt, Found' technique"
+            "⏱️ Time: 60 min",
+            "🛡️ Obj: 'Too Expensive'",
+            "🛡️ Obj: 'I need to ask my boss'",
+            "🛡️ Obj: 'Competitor X is cheaper'"
         ]
     },
     {
         id: 5,
-        title: "Speed Protocols",
-        description: "The 30 Second Rule",
-        contentFirst: false,
+        title: "Speed Tools",
+        description: "TextExpander",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "⚡ Response time targets",
-            "⌨️ Keyboard shortcuts & Text Expander",
-            "🔔 Notification settings mastery"
+            "⏱️ Time: 30 min",
+            "⚡ Tool: Saved Replies / Macros",
+            "⚡ Tool: Keyboard Shortcuts",
+            "⚡ Tool: Knowledge Base Search"
         ]
     },
     {
         id: 6,
-        title: "Closing the Chat",
-        description: "Ending on a High",
-        contentFirst: false,
+        title: "The Perfect Close",
+        description: "Asking for the Sale",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "🤝 The 'Is there anything else?' rule",
-            "⭐ Asking for Reviews/Feedback",
-            "👋 The perfect sign-off"
+            "⏱️ Time: 45 min",
+            "🤝 Tech: The Assumptive Close",
+            "🤝 Tech: The Alternative Close ('Tuesday or Wednesday?')",
+            "🤝 Tech: The Urgency Close"
         ]
     },
     {
         id: 7,
-        title: "Tools & Systems",
-        description: "Chat Tech Stack",
-        contentFirst: false,
+        title: "System Hygiene",
+        description: "CRM Taggng",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 25-30 minutes",
-            "📂 Intercom/LiveChat mastery",
-            "🤖 Using AI draft suggestions (but editing them)",
-            "📝 Tying chats to CRM tickets"
+            "⏱️ Time: 30 min",
+            "🏷️ Action: Tagging conversations (Bug, Sales, Support)",
+            "🏷️ Action: Assigning to Correct Team",
+            "🏷️ Action: Closing the Ticket"
         ]
     },
     {
         id: 8,
-        title: "De-escalation",
-        description: "Cooling Down Heat",
-        contentFirst: false,
+        title: "Firefighter Training",
+        description: "De-escalation",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 20-25 minutes",
-            "🔥 Recognizing 'Red' emotional state",
-            "🧘‍♀️ Validating feelings without admitting legal fault",
-            "🚫 Moving off-chat if necessary"
+            "⏱️ Time: 45 min",
+            "🔥 Scenario: The angry ALL CAPS customer",
+            "🔥 Scenario: The threat to sue",
+            "🧘‍♀️ Skill: Empathy Statements ('I hear you')"
         ]
     },
     {
         id: 9,
-        title: "Practice Scenarios",
-        description: "Real-world simulations",
-        contentFirst: false,
+        title: "Role Play",
+        description: "Simulated Scenarios",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 30-45 minutes",
-            "🔥 Handle a 'Where is my order?' spammer",
-            "📝 Handle a 'This is too expensive' complaint",
-            "🤝 Handle a confused elderly client"
+            "⏱️ Time: 60 min",
+            "🎭 Sim: Refund Request",
+            "🎭 Sim: Feature Request",
+            "🎭 Sim: Bug Report"
         ]
     },
     {
         id: 10,
-        title: "Final Certification",
-        description: "Comprehensive assessment",
-        contentFirst: false,
+        title: "Live Chat Simulation",
+        description: "The Final Test",
+        contentFirst: true,
         studyGuide: [
-            "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Review ALL previous modules",
-            "🏆 Score 20/20 to pass",
-            "🎉 Get ready to be the face of the brand!"
+            "⏱️ Time: 60 min",
+            "🤖 Bot: You will chat with an AI Customer",
+            "🎯 Goal: Solve the issue + Get a 5-star rating",
+            "⚠️ Fail: Taking > 2 mins to reply"
         ]
     }
 ];
 
 const task1Content = `
-<h2>📚 PART 1: CHAT MINDSET - Speed, Empathy & Excellence</h2>
+<h2>📚 TASK 1: MINDSET - Speed Wins</h2>
 
 <div class="content-section">
-<h3>🎯 Why You Are The Most Important Person</h3>
-<p>You are the <strong>face of the brand</strong>. In live chat, clients judge the entire company by YOUR response. One excellent chat = loyal customer for life. One bad chat = bad review + lost revenue.</p>
-
-<div class="warning-box">
-<strong>⚠️ The 60-Second Reality:</strong>
-<p>If you don't reply within <strong>60 seconds</strong>, 48% of users abandon the chat. In 2024, speed IS trust. Fast replies = "This company is competent." Slow replies = "This company doesn't care about me."</p>
-</div>
+    <h3>⚡ The 60-Second Rule</h3>
+    <p>If you don't reply in 60 seconds, they leave the tab. They go to a competitor. Speed is the #1 factor in conversion.</p>
 </div>
 
 <div class="content-section">
-<h3>⚡ Response Time Standards</h3>
+    <h3>🤖 Robot vs Human</h3>
+    <p>Don't sound like a bot. Use emojis (if appropriate). Say "Hi John" not "Dear Sir". Be real.</p>
+</div>
 
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(99, 102, 241, 0.2);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Situation</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Response Time</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First message</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #22C55E;">&lt; 30 seconds</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First impressions matter most</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow-up questions</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #F59E0B;">&lt; 60 seconds</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Keep momentum going</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Need to research</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Acknowledge in 30s, answer in 2 min</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Let them know you're working on it</td>
-</tr>
-</table>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Speed Test</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Typing</h4>
+        <p>Type this sentence as fast as you can: "Hi there! Thanks for reaching out. I'd be happy to help you with that pricing question today."</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🤝 The Human Touch Formula</h3>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
-<div style="padding: 20px; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border: 2px solid rgba(239, 68, 68, 0.3);">
-<div style="font-size: 1.5em; margin-bottom: 10px;">❌ NEVER</div>
-<ul style="font-size: 0.9em; margin: 0; padding-left: 20px;">
-<li>"u r" (Text speak)</li>
-<li>One-word answers</li>
-<li>Robotic responses</li>
-<li>"Per our policy..."</li>
-</ul>
-</div>
-
-<div style="padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
-<div style="font-size: 1.5em; margin-bottom: 10px;">✅ ALWAYS</div>
-<ul style="font-size: 0.9em; margin: 0; padding-left: 20px;">
-<li>Proper grammar</li>
-<li>Warm greetings</li>
-<li>End with a question</li>
-<li>Use their name</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div class="content-section">
-<h3>💬 Message Templates to Master</h3>
-
-<div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #6366F1;">
-<strong>📥 Opening Greeting:</strong><br>
-"Hi [Name]! 👋 Thanks for reaching out to Digital Heroes. I'm [Your Name] and I'm happy to help. What can I assist you with today?"
-</div>
-
-<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #10B981;">
-<strong>⏳ Need to Research:</strong><br>
-"Great question! Let me look into this for you right now. Give me just a minute and I'll have an answer..."
-</div>
-
-<div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #F59E0B;">
-<strong>👋 Perfect Sign-Off:</strong><br>
-"Is there anything else I can help you with today? If not, it was a pleasure chatting! - [Your Name] at Digital Heroes"
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-<h3>✅ IMPLEMENTATION TASK: Practice Chat Excellence</h3>
-<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Response Time Test (5 min)</h4>
-<p>Set a timer. Practice typing these messages in under 30 seconds each:</p>
-<ul>
-<li>A warm greeting with the customer's name "John"</li>
-<li>Acknowledging you need to look something up</li>
-<li>A perfect closing message</li>
-</ul>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Robot vs Human (10 min)</h4>
-<p>Rewrite these robotic responses to sound warm and human:</p>
-<ol>
-<li>"Per company policy, returns must be made within 30 days."</li>
-<li>"I don't know."</li>
-<li>"Unfortunately, that's not possible."</li>
-</ol>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Client Chat SOP (10 min)</h4>
-<p>Open the <a href="../client-chat-sop.html" target="_blank" style="color: #8B5CF6;">Client Chat SOP document</a> and read:</p>
-<ul>
-<li>Response Time Standards section</li>
-<li>Tone Guidelines section</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<p>You've learned the chat mindset fundamentals. Now prove your understanding.</p>
-<ul>
-<li>📝 10 questions about speed, empathy, and excellence</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Mindset</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
@@ -258,36 +159,29 @@ const task2Content = `
 <h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
 
 <div class="content-section">
-<h3>🏢 The Concierge Vibe</h3>
-<p>Think "Four Seasons Hotel", not "DMV".</p>
-<ul>
-<li><strong>Sales Question?</strong> Connect them to a Closer immediately.</li>
-<li><strong>Support Question?</strong> Solve it yourself (First Call Resolution).</li>
-</ul>
+    <h3>💰 Pricing</h3>
+    <p>Basic: $29/mo. Pro: $99/mo. Enterprise: Call us. <br>Know these by heart. Don't look them up.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Know Your Role</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Traffic Cop (5 min)</h4>
-        <p>Label each query as <strong>SALES</strong> (Transfer) or <strong>SUPPORT</strong> (Solve):</p>
-        <ul>
-            <li>"Do you offer payment plans?"</li>
-            <li>"My download link isn't working."</li>
-            <li>"What is the difference between the Basic and Pro package?"</li>
-            <li>"I need a refund."</li>
-        </ul>
+<div class="content-section">
+    <h3>🚚 Shipping</h3>
+    <p>US: 3-5 days. International: 7-14 days. <br>Free shipping over $50.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Memory</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Policy Check</h4>
+        <p>Customer asks: "Can I return a shirt I wore once?" (Policy: No, tags must be on). Draft the polite refusal.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about knowledge</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Knowledge</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
@@ -295,524 +189,296 @@ const task3Content = `
 <h2>📚 TASK 3: TONALITY MASTERY</h2>
 
 <div class="content-section">
-<h3>📝 Mirroring</h3>
-<p>If they are formal, be professional. If they are casual/funny, you can relax 10%.</p>
+    <h3>🎭 Mirroring</h3>
+    <p>If they use emojis, you use emojis. If they are formal ("Dear Support"), you be formal ("Dear Customer"). Match their energy.</p>
 </div>
 
 <div class="content-section">
-<h3>🚫 Banned Phrases</h3>
-<ul>
-<li>"Unfortuntely..." (Sounds lazy).</li>
-<li>"It is company policy." (Sounds robotic).</li>
-<li>"I don't know." (Instead use: "Let me find that out for you right away.")</li>
-</ul>
+    <h3>🚫 Negative Words</h3>
+    <p>Never say "Unfortunately", "No", "Can't". <br>Instead of "We can't do that", say "What I can do is..."</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Master the Tone</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Rewrite the Banned (10 min)</h4>
-        <p>Rewrite these phrases to be "Digital Heroes Approved":</p>
-        <ul>
-            <li>"Unfortunately we don't do that." → ?</li>
-            <li>"That is against policy." → ?</li>
-            <li>"I'm not sure." → ?</li>
-        </ul>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Mirroring Match (5 min)</h4>
-        <p>Client says: "Yo! My stuff handles broke. u guys got spares?"</p>
-        <p>Which reply is better mirroring?</p>
-        <ul>
-            <li>A: "Dear Sir/Madam, we regulate spare parts via..."</li>
-            <li>B: "Hey! Bummer about the handles. We definitely have spares! Let me grab a link for you."</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Rewrite</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Positive Spin</h4>
+        <p>Rewrite: "Unfortunately we are out of stock until next month." -> (Make it positive).</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about tonality</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Tone</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: OBJECTION HANDLING - Turning No Into Yes</h2>
+<h2>📚 TASK 4: OBJECTION HANDLING</h2>
 
 <div class="content-section">
-<h3>🎯 Objections Are Opportunities</h3>
-<div class="highlight-box">
-<strong>An objection is NOT a rejection.</strong>
-<p>It's a sign they're interested but need more information or reassurance. A client who says nothing and leaves is worse than one who objects.</p>
-</div>
+    <h3>🛡️ "Too Expensive"</h3>
+    <p>Price is only an issue in the absence of value. Remind them what they GET. "It's $99, but it saves you 10 hours a week."</p>
 </div>
 
 <div class="content-section">
-<h3>💰 Top 3 Objections & Scripts</h3>
+    <h3>🛡️ "Just Looking"</h3>
+    <p>"Great! What exactly are you looking to solve today?" (Pivot from browsing to problem solving).</p>
+</div>
 
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(239, 68, 68, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Objection</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Response</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"It's too expensive"</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I completely understand. When you say expensive, are you comparing to other options, or is it about the ROI you expect? Let me show you what our clients typically see in terms of results..."</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"I need to think about it"</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Of course! What specific aspect would you like to think over? I'm happy to provide any additional information that might help with your decision."</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"I found it cheaper elsewhere"</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"That's fair! May I ask what's included in that quote? Our clients often find the comparison isn't apples-to-apples once they see our scope..."</td>
-</tr>
-</table>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Pivot</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Competitor</h4>
+        <p>"Product B is cheaper." Response: Acknowledge price, but highlight our unique 24/7 support.</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🔥 The Feel-Felt-Found Framework</h3>
-<p>The most powerful objection handler in sales:</p>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
-<div style="padding: 20px; background: rgba(99, 102, 241, 0.1); border-radius: 12px; border: 2px solid rgba(99, 102, 241, 0.3);">
-<div style="font-size: 1.2em; color: #6366F1;"><strong>FEEL</strong></div>
-<p>"I understand how you <strong>feel</strong>..."</p>
-<p style="font-size: 0.9em; color: #64748B;">Shows empathy. Validates their concern.</p>
-</div>
-
-<div style="padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
-<div style="font-size: 1.2em; color: #10B981;"><strong>FELT</strong></div>
-<p>"Many clients <strong>felt</strong> the same way..."</p>
-<p style="font-size: 0.9em; color: #64748B;">Social proof. They're not alone.</p>
-</div>
-
-<div style="padding: 20px; background: rgba(245, 158, 11, 0.1); border-radius: 12px; border: 2px solid rgba(245, 158, 11, 0.3);">
-<div style="font-size: 1.2em; color: #F59E0B;"><strong>FOUND</strong></div>
-<p>"What they <strong>found</strong> was [benefit]..."</p>
-<p style="font-size: 0.9em; color: #64748B;">The positive outcome. The resolution.</p>
-</div>
-</div>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-<h3>✅ IMPLEMENTATION TASK: Master Objection Handling</h3>
-<p><strong>Before taking the quiz, complete these exercises:</strong></p>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Feel-Felt-Found Practice (10 min)</h4>
-<p>Write a Feel-Felt-Found response for this objection:</p>
-<p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>"I don't know if you guys can handle a project this big."</em></p>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Price Objection Role-Play (10 min)</h4>
-<p>Practice responding to: "Your competitor quoted me 50% less."</p>
-<p>Write a response that:</p>
-<ul>
-<li>Doesn't badmouth the competitor</li>
-<li>Asks what's included in their scope</li>
-<li>Highlights your unique value</li>
-</ul>
-</div>
-
-<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Client Chat SOP (10 min)</h4>
-<p>Open the <a href="../client-chat-sop.html" target="_blank" style="color: #8B5CF6;">Client Chat SOP document</a> and read:</p>
-<ul>
-<li>Objection Handling Framework section</li>
-<li>Common Objection Scripts section</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about objection handling</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Objections</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task5Content = `
-<h2>📚 TASK 5: SPEED PROTOCOLS</h2>
+<h2>📚 TASK 5: SPEED TOOLS</h2>
 
 <div class="content-section">
-<h3>⚡ Average Response Time: <30s</h3>
-<p>Use Text Expander / Saved Replies for common questions.</p>
-<div class="highlight-box">
-<strong>Pro Tip:</strong> Never end a message without a question. It keeps the chat alive.
-</div>
+    <h3>⚡ Saved Replies</h3>
+    <p>Never type the same thing twice. "/greeting" -> "Hi there! Thanks for messaging us." <br>"/refund" -> Links to refund policy.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Setup for Speed</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Shortcut Setup (10 min)</h4>
-        <p>Write out the full text for these 3 shortcuts you will save:</p>
-        <ul>
-            <li><strong>/hello</strong> (Your standard warm greeting)</li>
-            <li><strong>/brb</strong> (Your "let me check on that" hold message)</li>
-            <li><strong>/bye</strong> (Your standard sign-off with review request)</li>
-        </ul>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The Hold (5 min)</h4>
-        <p>You need 5 minutes to check a tracking number. Write exactly what you tell the client so they don't think you ghosted them.</p>
+<div class="content-section">
+    <h3>⚡ Shortcuts</h3>
+    <p>CMD+Enter to send. ALT+Tab to switch chats. Mouse is slow. Keyboard is fast.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Macro Creation</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Create 3</h4>
+        <p>Write the text for 3 Macros: 1. Greeting. 2. Parking Lot (Wait). 3. Goodbye.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about speed</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Tools</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task6Content = `
-<h2>📚 TASK 6: CLOSING THE CHAT</h2>
+<h2>📚 TASK 6: THE PERFECT CLOSE</h2>
 
 <div class="content-section">
-<h3>🤝 The Loop</h3>
-<p>Never close a ticket until they say YES.</p>
-<ul>
-<li><strong>Ask:</strong> "Does that fully solve what you needed today?" or "Is there anything else?"</li>
-<li><strong>Sign-off:</strong> "Thanks for being a Digital Hero! - [Your Name]"</li>
-</ul>
+    <h3>🤝 Assumptive Close</h3>
+    <p>"Shall I set that up for you now?" (Assumes they want it).</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Perfect Close</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Loop Audit (5 min)</h4>
-        <p>Look at your last 3 chats (or imagine them). Did you ask "Is there anything else?" BEFORE saying bye? If not, rewrite the ending.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Signature Crafting (5 min)</h4>
-        <p>Create your unique sign-off. It should be professional but warm. (e.g., "Happy Helpfulness, [Name]")</p>
+<div class="content-section">
+    <h3>🤝 Alternative Close</h3>
+    <p>"Would you prefer the Monthly or Annual plan?" (Both operate on 'Yes').</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Closing</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Soft Close</h4>
+        <p>Customer asks about features. Transition to a close: "It sounds like Pro plan is perfect for you. Shall we start the trial?"</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about closing</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Closing</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task7Content = `
-<h2>📚 TASK 7: TOOLS & SYSTEMS</h2>
+<h2>📚 TASK 7: SYSTEM HYGIENE</h2>
 
 <div class="content-section">
-<h3>📂 Intercom/LiveChat</h3>
-<ul>
-<li><strong>Tagging:</strong> Tag every chat (e.g. #sales, #support, #bug).</li>
-<li><strong>Notes:</strong> Leave internal notes for the next agent.</li>
-</ul>
+    <h3>🏷️ Tagging</h3>
+    <p>Data drives decisions. If you don't tag "Bug", dev team won't know there are bugs. Tag properly.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: System Hygiene</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Note Taking (5 min)</h4>
-        <p>A client is angry about a shipping delay. You promised to update them in 24 hours. Write the Internal Note you would leave on the ticket for your teammates.</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Tagging Drill (5 min)</h4>
-        <p>Apply tags to this conversation:</p>
-        <p>"Hi, I want to buy the Pro plan but my card is getting declined."</p>
-        <p>Tags: #Sales? #Bug? #Billing? (Which ones apply?)</p>
+<div class="content-section">
+    <h3>✅ Closing Tickets</h3>
+    <p>Don't leave tickets 'Open'. If solved, Close it. Keep the queue clean.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Organization</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Triage</h4>
+        <p>Scenario: Customer reports login error. Action: 1. Reply. 2. Tag 'Bug'. 3. Assign to Eng. 4. Set status 'Pending'.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about tools</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Hygiene</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task8Content = `
-<h2>📚 TASK 8: DE-ESCALATION</h2>
+<h2>📚 TASK 8: FIREFIGHTER TRAINING</h2>
 
 <div class="content-section">
-<h3>🔥 Cooling the Heat</h3>
-<p>If they Type IN CAPS, they are shouting.</p>
-<ul>
-<li><strong>Don't shout back.</strong> Lower the volume by being ultra-calm.</li>
-<li><strong>Validate:</strong> "I can see why that is frustrating."</li>
-<li><strong>Action:</strong> "Here is what I am doing right now to fix it."</li>
-</ul>
+    <h3>🔥 They want to be Heard</h3>
+    <p>Angry people vent. Let them vent. Don't interrupt. Say "I completely understand why that is frustrating."</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Firefighter Training</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Validation Scripts (10 min)</h4>
-        <p>Write 3 different ways to validate a customer who says: "You guys wasted my whole week!"</p>
-        <p>(Don't admit fault yet, just validate the feeling).</p>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The De-escalation Rewrite (10 min)</h4>
-        <p>Rewrite this angry response from a bad agent:</p>
-        <p><em>"Sir, please calm down. It's not my fault the shipping carrier is slow. We can't do anything."</em></p>
+<div class="content-section">
+    <h3>🧘‍♀️ Move to Resolution</h3>
+    <p>Once they are calm, pivot. "Now that I understand the issue, here is how we fix it."</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: De-escalation</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: The Apology</h4>
+        <p>Customer: "YOU CHARGED ME TWICE!!!". Draft the reply. (Apologize + Fix + Bonus).</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about de-escalation</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Firefighting</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task9Content = `
-<h2>📚 TASK 9: PRACTICE SCENARIOS</h2>
+<h2>📚 TASK 9: ROLE PLAY</h2>
 
 <div class="content-section">
-<h3>🔥 Scenario 1: Shipping Delay</h3>
-<p><strong>Client:</strong> "Where is my stuff??"</p>
-<div class="highlight-box">
-<strong>Reply:</strong> "Thanks for reaching out! Let me check that tracking number immediately for you... Okay, looks like it's in transit and will be there Tuesday. Shall I email you the tracking link again?"
-</div>
+    <h3>🎭 Mock Scenarios</h3>
+    <p>Practice makes permanent. We will simulate 3 chats now.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Role Play</h3>
-    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Lost Package (10 min)</h4>
-        <p>Simulate this chat: Customer says package says delivered but it's not there.</p>
-        <p>Write your first 3 messages to them. (Greeting -> Investigation -> Proposed Solution).</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Simulation</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Role Reversal</h4>
+        <p>Think about the worst customer service you ever had. What did they do wrong? Write it down so you never do it.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about scenarios</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Role Play</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
 </div>
 `;
 
 const task10Content = `
-<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
+<h2>📚 TASK 10: LIVE CHAT SIMULATION</h2>
 
 <div class="content-section">
-<h3>🏆 Congratulations!</h3>
-<p>You've completed the Client Chat Manager training. This final assessment covers:</p>
-<ul>
-<li>✅ Tonality & Mirroring</li>
-<li>✅ Objection Handling Frameworks</li>
-<li>✅ Speed Protocols</li>
-<li>✅ De-escalation Techniques</li>
-<li>✅ Closing Loops</li>
-<li>✅ Tools Mastery</li>
-</ul>
+    <h3>🤖 The Final Boss</h3>
+    <p>You are about to enter the Simulator. You will face 5 random customers. You must maintain < 2 min response time.</p>
 </div>
 
 <div class="content-section">
-<h3>📝 Final Assessment</h3>
-<div class="warning-box">
-<strong>20 questions covering all modules.</strong>
-<p>Score 20/20 to receive your Chat Certification.</p>
-</div>
+    <h3>🎯 The Goal</h3>
+    <p>100% CSAT (Customer Satisfaction). 100% Resolution.</p>
 </div>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Live Chat Simulation</h3>
-    <p><strong>One final step before you're certified:</strong></p>
-    
-    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Gauntlet (20 min)</h4>
-        <p>Review 3 of your past chat logs (or mock ones). Score yourself against the "Digital Heroes Standard":</p>
-        <ul>
-            <li>Speed < 30s? (Yes/No)</li>
-            <li>Warm/Human Tone? (Yes/No)</li>
-            <li>Closed the Loop? (Yes/No)</li>
-        </ul>
-        <p>If you scored "No" on any, rewrite that specific interaction.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Final Prep</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise: Deep Breath</h4>
+        <p>Review your cheat sheet (Macros, Pricing, Policy). You are ready.</p>
     </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 Ready for the Final Quiz?</h3>
-<ul>
-<li>📝 20 questions covering all training modules</li>
-<li>🎯 Score <strong>20/20</strong> to receive certification</li>
-</ul>
+    <h3>🚀 Ready for the Final Exam?</h3>
+    <ul>
+        <li>📝 20 questions covering ALL modules</li>
+        <li>🎯 Score <strong>20/20</strong> to receive Chat Certification</li>
+    </ul>
 </div>
 `;
 
-// Quiz Questions
-const allQuizzes = [
-    // Task 1: Mindset
-    [
-        { q: "Speed leads to:", o: ["Trust", "Panic", "Mistakes", "None"], c: 0 },
-        { q: "Target response time:", o: ["< 60 sec", "1 hour", "24 hours", "None"], c: 0 },
-        { q: "Grammar:", o: ["Mandatory/Professional", "Optional", "Slang ok", "None"], c: 0 },
-        { q: "Emojis:", o: ["Use if appropriate/Warmth", "Never", "Always", "None"], c: 0 },
-        { q: "U R:", o: ["Unacceptable", "Fine", "Good", "None"], c: 0 },
-        { q: "We are:", o: ["Humans/Problem Solvers", "Robots", "Scripts", "None"], c: 0 },
-        { q: "Fast reply equals:", o: ["Competence", "Desperation", "Boredom", "None"], c: 0 },
-        { q: "Chat is:", o: ["Face of brand", "Back office", "Hidden", "None"], c: 0 },
-        { q: "Typing indicators:", o: ["Good/Show presence", "Bad", "Hide them", "None"], c: 0 },
-        { q: "Caps lock:", o: ["Shouting", "Fine", "Exciting", "None"], c: 0 }
-    ],
-    // Task 2: Company Knowledge
-    [
-        { q: "Vibe:", o: ["Four Seasons/Concierge", "Fast Food", "Government", "None"], c: 0 },
-        { q: "Sales Q:", o: ["Connect to Closer", "Ignore", "Say No", "None"], c: 0 },
-        { q: "Support Q:", o: ["Solve yourself (FCR)", "Pass to sales", "Ignore", "None"], c: 0 },
-        { q: "First Call Resolution:", o: ["Goal", "Impossible", "Bad", "None"], c: 0 },
-        { q: "Escalation:", o: ["Know who to call", "Guess", "Panic", "None"], c: 0 },
-        { q: "Ecosystem:", o: ["Know all arms", "Ignore", "Focus on one", "None"], c: 0 },
-        { q: "Response style:", o: ["Premium", "Cheap", "Lazy", "None"], c: 0 },
-        { q: "Client is:", o: ["Guest", "Annoyance", "Number", "None"], c: 0 },
-        { q: "If unsure:", o: ["Verify then reply", "Guess", "Lie", "None"], c: 0 },
-        { q: "Branding:", o: ["Consistent", "Random", "Messy", "None"], c: 0 }
-    ],
-    // Task 3: Tonality
-    [
-        { q: "Mirroring:", o: ["Match energy", "Copy paste", "Mock", "None"], c: 0 },
-        { q: "Ban 'Unfortunately':", o: ["Yes", "No", "Maybe", "None"], c: 0 },
-        { q: "Ban 'Policy':", o: ["Yes/Robotic", "No", "Maybe", "None"], c: 0 },
-        { q: "I don't know:", o: ["Replace with 'Let me find out'", "Say it", "Hang up", "None"], c: 0 },
-        { q: "Formal client:", o: ["Be Professional", "Be Casual", "Be Rude", "None"], c: 0 },
-        { q: "Casual client:", o: ["Relax 10%", "Be stiff", "Be wild", "None"], c: 0 },
-        { q: "Power phrase:", o: ["I can certainly help", "Maybe", "Dunno", "None"], c: 0 },
-        { q: "Tone check:", o: ["Read before sending", "Send fast", "None", "Guess"], c: 0 },
-        { q: "Sarcasm:", o: ["Never", "Always", "Sometimes", "None"], c: 0 },
-        { q: "Warmth:", o: ["Key differentiator", "Waste of time", "Bad", "None"], c: 0 }
-    ],
-    // Task 4: Objections
-    [
-        { q: "Feel Felt Found:", o: ["Empathy Framework", "Game", "None", "Lost"], c: 0 },
-        { q: "Price objection:", o: ["Check ROI vs Cost", "Discount immediately", "Argue", "None"], c: 0 },
-        { q: "I need to think:", o: ["Ask what concern remains", "Say okay bye", "Hang up", "None"], c: 0 },
-        { q: "Social Proof:", o: ["Others felt same way", "Lies", "None", "Stats"], c: 0 },
-        { q: "Empathy first:", o: ["Validate feeling", "Prove wrong", "Ignore", "None"], c: 0 },
-        { q: "Budget vs Value:", o: ["Clarify the difference", "Lower price", "None", "Agree"], c: 0 },
-        { q: "Turning No to Yes:", o: ["Skill", "Luck", "Magic", "None"], c: 0 },
-        { q: "Resolution:", o: ["Show benefit", "Show features", "None", "End"], c: 0 },
-        { q: "Expensive:", o: ["Relative term", "Fact", "Bad", "None"], c: 0 },
-        { q: "Objections are:", o: ["Opportunities", "Roadblocks", "Bad", "None"], c: 0 }
-    ],
-    // Task 5: Speed
-    [
-        { q: "Avg Response:", o: ["< 30s", "5 mins", "1 hour", "None"], c: 0 },
-        { q: "Text Expander:", o: ["Efficiency Tool", "Cheat", "None", "Bad"], c: 0 },
-        { q: "End with Question:", o: ["Keeps chat alive", "Annoying", "Bad", "None"], c: 0 },
-        { q: "Notifications:", o: ["On/Loud", "Off", "Silent", "None"], c: 0 },
-        { q: "Shortcuts:", o: ["Essential", "Optional", "Bad", "None"], c: 0 },
-        { q: "Ghosting:", o: ["Bad", "Good", "Normal", "None"], c: 0 },
-        { q: "Waiting leads to:", o: ["Churn", "Happiness", "None", "Sales"], c: 0 },
-        { q: "Pro Tip:", o: ["Always ask next step", "Say bye", "None", "Wait"], c: 0 },
-        { q: "Saved Replies:", o: ["Use but personalize", "Copy paste exact", "None", "Ban"], c: 0 },
-        { q: "Speed:", o: ["Trust", "Panic", "None", "Fear"], c: 0 }
-    ],
-    // Task 6: Closing
-    [
-        { q: "Anything else rule:", o: ["Always ask", "Never ask", "Assuming no", "None"], c: 0 },
-        { q: "Sign-off:", o: ["Personal/Warm", "Abrupt", "None", "Bot"], c: 0 },
-        { q: "Close ticket when:", o: ["Client says Yes/Done", "I am done", "5pm", "None"], c: 0 },
-        { q: "Reviews:", o: ["Ask if happy", "Never ask", "None", "Pay for"], c: 0 },
-        { q: "The Loop:", o: ["Close it properly", "Leave open", "Ignore", "None"], c: 0 },
-        { q: "Feedback:", o: ["Gift", "Bad", "None", "Noise"], c: 0 },
-        { q: "Digital Hero:", o: ["Brand name", "None", "Joke", "Game"], c: 0 },
-        { q: "Final impression:", o: ["Lasting", "Fleeting", "None", "Bad"], c: 0 },
-        { q: "If unresolved:", o: ["Keep open", "Close", "Hide", "None"], c: 0 },
-        { q: "Good bye:", o: ["Professional", "Slang", "None", "Rude"], c: 0 }
-    ],
-    // Task 7: Tools
-    [
-        { q: "Tagging:", o: ["Organize data", "Fun", "None", "Waste"], c: 0 },
-        { q: "Internal Notes:", o: ["Context for team", "Secrets", "Gossip", "None"], c: 0 },
-        { q: "AI Drafts:", o: ["Edit before sending", "Send raw", "Trust blindly", "None"], c: 0 },
-        { q: "CRM Link:", o: ["Tie chat to ticket", "Separate", "None", "Ignore"], c: 0 },
-        { q: "Intercom:", o: ["Chat Tool", "Phone", "None", "Game"], c: 0 },
-        { q: "LiveChat:", o: ["Chat Tool", "Social", "None", "Video"], c: 0 },
-        { q: "Context:", o: ["King", "Optional", "None", "Bad"], c: 0 },
-        { q: "Tech stack:", o: ["Enables speed", "Slows down", "None", "Expensive"], c: 0 },
-        { q: "Ticket history:", o: ["Review it", "Ignore", "None", "Delete"], c: 0 },
-        { q: "Mobile app:", o: ["Use for on-go", "Never", "None", "Bad"], c: 0 }
-    ],
-    // Task 8: De-escalation
-    [
-        { q: "Caps Lock:", o: ["Shouting", "Happy", "None", "Quiet"], c: 0 },
-        { q: "Shouting back:", o: ["Never", "Sometimes", "Always", "None"], c: 0 },
-        { q: "Validate:", o: ["Acknowledge feeling", "Agree with facts", "None", "Ignore"], c: 0 },
-        { q: "Action plan:", o: ["Calms them down", "Makes mad", "None", "Wait"], c: 0 },
-        { q: "Red state:", o: ["Emotional high", "Happy", "None", "Calm"], c: 0 },
-        { q: "Cool down:", o: ["Goal", "Heat up", "None", "Run"], c: 0 },
-        { q: "Move off chat:", o: ["If complex/heated", "Never", "Always", "None"], c: 0 },
-        { q: "Admit legal fault:", o: ["No (Validate feeling only)", "Yes", "Maybe", "None"], c: 0 },
-        { q: "Empathy:", o: ["Weapon vs Anger", "Weakness", "None", "Bad"], c: 0 },
-        { q: "Patience:", o: ["Required", "Optional", "None", "Bad"], c: 0 }
-    ],
-    // Task 9: Scenarios
-    [
-        { q: "Where is my order:", o: ["Check tracking/Update", "Ignore", "Say idk", "None"], c: 0 },
-        { q: "Too expensive:", o: ["Value pivot", "Discount", "Agree", "None"], c: 0 },
-        { q: "Elderly client:", o: ["Patience/Guide", " Rush", "Mock", "None"], c: 0 },
-        { q: "Spammer:", o: ["Block/Ignore policy", "Engage", "None", "Pay"], c: 0 },
-        { q: "Shipping delay:", o: ["Proactive update", "Hide", "Lie", "None"], c: 0 },
-        { q: "Tracking link:", o: ["Resend", "Hide", "None", "Delete"], c: 0 },
-        { q: "Confused client:", o: ["Simplify", "Complicate", "None", "Ignore"], c: 0 },
-        { q: "Angry:", o: ["De-escalate", "Fight", "None", "Laugh"], c: 0 },
-        { q: "Happy:", o: ["Ask review", "Ignore", "None", "Block"], c: 0 },
-        { q: "Lost item:", o: ["Investigate/Resolve", "Blame client", "None", "Laugh"], c: 0 }
-    ],
-    // Task 10: Final (20)
-    [
-        { q: "Speed:", o: ["Trust", "Bad", "None", "Panic"], c: 0 },
-        { q: "Mirroring:", o: ["Tone match", "Copy", "None", "Mock"], c: 0 },
-        { q: "Feel Felt Found:", o: ["Objection Framework", "Game", "None", "Map"], c: 0 },
-        { q: "4 Seasons:", o: ["Hospitality Level", "Hotel", "None", "Weather"], c: 0 },
-        { q: "LATTE:", o: ["Service Recovery", "Coffee", "None", "Late"], c: 0 },
-        { q: "Validation:", o: ["Recognize emotion", "Review", "None", "Parking"], c: 0 },
-        { q: "First Call Resolution:", o: ["Metric", "Phone", "None", "First"], c: 0 },
-        { q: "Caps Lock:", o: ["Yelling", "Big", "None", "Small"], c: 0 },
-        { q: "Text Expander:", o: ["Speed Tool", "Stretch", "None", "Text"], c: 0 },
-        { q: "Intercom:", o: ["Chat platform", "Phone", "None", "Speaker"], c: 0 },
-        { q: "Closing Loop:", o: ["Confirming solution", "Circle", "None", "Knot"], c: 0 },
-        { q: "Empathy:", o: ["Key skill", "Weakness", "None", "Soft"], c: 0 },
-        { q: "Price Objection:", o: ["Value conversation", "Discount", "None", "Bye"], c: 0 },
-        { q: "Shipping Delay:", o: ["Communicate", "Hide", "None", "Run"], c: 0 },
-        { q: "Sales Q:", o: ["Transfer", "Answer", "None", "Block"], c: 0 },
-        { q: "Support Q:", o: ["Solve", "Transfer", "None", "Block"], c: 0 },
-        { q: "Tags:", o: ["Organization", "Graffiti", "None", "Price"], c: 0 },
-        { q: "Tone:", o: ["Brand Voice", "Music", "None", "Color"], c: 0 },
-        { q: "Grammar:", o: ["Competence", "School", "None", "Boring"], c: 0 },
-        { q: "Digital Hero:", o: ["You", "Game", "None", "Movie"], c: 0 }
-    ]
+const quizQuestions = [
+    // Task 1
+    {
+        question: "Ideal response time?",
+        options: ["24 hours", "60 seconds", "1 week", "Never"],
+        correct: 1
+    },
+    // Task 2
+    {
+        question: " Refund Policy is?",
+        options: ["No refunds", "30 Days", "Lifetime", "7 Days"],
+        correct: 1
+    },
+    // Task 3
+    {
+        question: "Tone should be...",
+        options: ["Robotic", "Angry", "Mirrored to customer", "Sarcastic"],
+        correct: 2
+    },
+    // Task 4
+    {
+        question: "Handling 'Too Expensive'?",
+        options: ["Agree and discount", "Hang up", "Highlight Value / ROI", "Ignore"],
+        correct: 2
+    },
+    // Task 5
+    {
+        question: "Best tool for speed?",
+        options: ["Typing fast", "Saved Replies / Macros", "Drinking coffee", "Dictation"],
+        correct: 1
+    },
+    // Task 6
+    {
+        question: "Alternative Close example?",
+        options: ["Do you want it?", "Yes or No?", "Tuesday or Wednesday?", "Bye"],
+        correct: 2
+    },
+    // Task 7
+    {
+        question: "Why Tag tickets?",
+        options: ["For fun", "Data analysis & Routing", "To annoy devs", "To look busy"],
+        correct: 1
+    },
+    // Task 8
+    {
+        question: "First step with angry customer?",
+        options: ["Argue", "Empathize / Listen", "Disconnect", "Laugh"],
+        correct: 1
+    },
+    // Task 9
+    {
+        question: "Goal of Role Play?",
+        options: ["Have fun", "Practice scenarios safely", "Waste time", "Sleep"],
+        correct: 1
+    },
+    // Task 10
+    {
+        question: "CSAT stands for",
+        options: ["Customer Satellites", "Customer Satisfaction", "Cool Saturation", "Chat Saturation"],
+        correct: 1
+    }
 ];
