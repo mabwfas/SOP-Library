@@ -211,6 +211,55 @@ const task1Content = `
         <li><strong>Scope Lock:</strong> After sign-off, scope changes = new quote.</li>
     </ul>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master the PM Mindset</h3>
+    <p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Memorize the 8 Non-Negotiables (5 min)</h4>
+        <p>Write out all 8 Non-Negotiable PM Principles from memory. Check your answers against the content above.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Priority Classification (10 min)</h4>
+        <p>Classify each of these tasks as P0, P1, P2, or P3:</p>
+        <ol>
+            <li>Client asking for status update (hasn't heard in 3 days)</li>
+            <li>Developer needs clarification on a feature</li>
+            <li>Updating project documentation</li>
+            <li>Client's site is down (emergency)</li>
+            <li>Planning next week's resource allocation</li>
+        </ol>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Daily Update Template (10 min)</h4>
+        <p>Write a daily update message for this scenario:</p>
+        <p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>Project: Skincare store. Day 5 of 14. Homepage done, product pages 50% complete. Waiting for client's About Us content. No blockers.</em></p>
+        <p>Use this template structure:</p>
+        <div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin-top: 10px; border-left: 3px solid #6366F1;">
+            <strong>📊 Daily Update - [Date]</strong><br><br>
+            <strong>✅ Completed Today:</strong><br>
+            • [What was finished]<br><br>
+            <strong>🔄 In Progress:</strong><br>
+            • [What's being worked on]<br><br>
+            <strong>⏳ Waiting On:</strong><br>
+            • [Any blockers or items needed from client]<br><br>
+            <strong>📅 Tomorrow's Plan:</strong><br>
+            • [Next steps]
+        </div>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #EF4444; margin-top: 0;">📝 Exercise 4: Read the PM SOP (15 min)</h4>
+        <p>Open the <a href="../pm-sop.html" target="_blank" style="color: #EF4444;">Project Manager SOP document</a> and read:</p>
+        <ul>
+            <li>The 8 Non-Negotiable Principles section</li>
+            <li>The Communication Standards section</li>
+        </ul>
+    </div>
+</div>
 `;
 
 // ===============================================

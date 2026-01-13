@@ -126,35 +126,138 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 PART 1: SOCIAL MINDSET</h2>
+<h2>📚 PART 1: SOCIAL MEDIA MINDSET - Building Communities, Not Just Posting</h2>
 
 <div class="content-section">
-<h3>🎯 More Than Just "Posting"</h3>
-<p>Social Media is the <strong>voice</strong> of the brand.</p>
-<ul>
-<li><strong>We represent quality:</strong> No pixelated images, no typos.</li>
-<li><strong>We build trust:</strong> By being human and responsive.</li>
-<li><strong>We drive growth:</strong> Every post has a purpose.</li>
-</ul>
+<h3>🎯 Why Are You Here?</h3>
+<p>Social Media is not about posting. It's about <strong>building communities</strong> and <strong>driving revenue</strong>. Every post, comment, and DM is an opportunity to either strengthen or weaken the brand.</p>
+
+<div class="warning-box">
+<strong>⚠️ The Uncomfortable Truth:</strong>
+<p>The average person scrolls past <strong>300+ posts per day</strong>. If your content doesn't <strong>stop the scroll in 0.5 seconds</strong>, it doesn't exist.</p>
+</div>
 </div>
 
 <div class="content-section">
 <h3>💡 The Philosophy: Give, Give, Ask</h3>
+<p>Most brands spam sell on social. We don't. We build trust first.</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+<div style="padding: 25px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3); text-align: center;">
+<div style="font-size: 2em;">📚</div>
+<strong>GIVE Value</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Teach something useful</p>
+</div>
+
+<div style="padding: 25px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; border: 2px solid rgba(6, 182, 212, 0.3); text-align: center;">
+<div style="font-size: 2em;">🎭</div>
+<strong>GIVE Entertainment</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Make them laugh or smile</p>
+</div>
+
+<div style="padding: 25px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.3); text-align: center;">
+<div style="font-size: 2em;">💰</div>
+<strong>THEN Ask</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0 0; color: #64748B;">Now you've earned the right to sell</p>
+</div>
+</div>
+
 <div class="highlight-box">
-<strong>Do not just sell.</strong>
+<strong>The Ratio:</strong> For every 1 promotional post, create 4-5 value posts. Brands that only sell get unfollowed. Brands that give value get fans.
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 Your 3 Core Responsibilities</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Responsibility</strong></td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>What It Means</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🛡️ <strong>Represent Quality</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No pixelated images, no typos, no off-brand content. Everything is premium.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">💬 <strong>Build Trust</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Be human and responsive. Reply to every comment. Make people feel heard.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🚀 <strong>Drive Growth</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Every post has a purpose. Awareness, engagement, or conversion. Know the goal.</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🚨 Common Mistakes That Destroy Engagement</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Mistake</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ What To Do Instead</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Posting and leaving</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Stay online 30 min after posting to reply to early comments</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Only promotional content</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow the 80/20 rule: 80% value, 20% promotion</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ignoring negative comments</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Respond publicly with empathy, then move to DM</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Low-quality visuals</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Every image must be crisp, aligned, and on-brand</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Build Your Social Media Foundation</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Content Audit (10 min)</h4>
+<p>Look at the last 10 posts on any brand's Instagram. Categorize each as:</p>
+<ul>
+<li>📚 Value (educational)</li>
+<li>🎭 Entertainment (fun/engaging)</li>
+<li>💰 Promotional (selling)</li>
+</ul>
+<p>Calculate their ratio. Is it following the 80/20 rule?</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Caption Practice (10 min)</h4>
+<p>Write a caption for a new product launch using the Give-Give-Ask format:</p>
 <ol>
-<li><strong>Give Value:</strong> Teach something.</li>
-<li><strong>Give Entertainment:</strong> Make them laugh/smile.</li>
-<li><strong>Ask:</strong> Then, and only then, ask for the sale.</li>
+<li>Start with a value statement or insight</li>
+<li>Add entertainment/relatable moment</li>
+<li>End with a soft CTA (not "BUY NOW!")</li>
 </ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Social Media SOP (10 min)</h4>
+<p>Open the <a href="../social-media-sop.html" target="_blank" style="color: #8B5CF6;">Social Media SOP document</a> and read:</p>
+<ul>
+<li>Content Pillars section</li>
+<li>Platform-specific strategies</li>
+</ul>
 </div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned the social media mindset. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about mindset</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 questions about community building and strategy</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
 </ul>
 </div>
 `;
