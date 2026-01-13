@@ -422,6 +422,43 @@ const task3Content = `
         <li><strong>100% (Day 14):</strong> Ready to launch?</li>
     </ul>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master the 14-Day Timeline</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Timeline Quiz (5 min)</h4>
+        <p>Fill in the blanks from memory:</p>
+        <ul>
+            <li>Day 1-2: _______ + Send Preview</li>
+            <li>Day 3-5: Homepage & _______</li>
+            <li>Day 6-8: _______ & Collections</li>
+            <li>Day 9-12: _______ & QA</li>
+            <li>Day 13-14: _______</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Write a Day 2 Preview Message (10 min)</h4>
+        <p>Write the Fiverr message you'd send with the first homepage preview. Include:</p>
+        <ol>
+            <li>Excitement about the project</li>
+            <li>What you've done so far</li>
+            <li>Loom video mention</li>
+            <li>Question asking for direction feedback</li>
+        </ol>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read PM SOP Timeline Section (10 min)</h4>
+        <p>Open the <a href="../pm-sop.html" target="_blank" style="color: #8B5CF6;">Project Manager SOP</a> and read:</p>
+        <ul>
+            <li>The 14-Day Timeline section</li>
+            <li>Buffer Management guidelines</li>
+        </ul>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -482,6 +519,28 @@ const task4Content = `
             <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Apps needed? Payment methods? Shipping zones?</td>
         </tr>
     </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master Client Onboarding</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Customize the Welcome Message (10 min)</h4>
+        <p>Using the template above, write a personalized welcome message for:</p>
+        <p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>Client: "Sarah" - Launching a skincare brand called "GlowUp Naturals" - Ordered a Premium Shopify store</em></p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: 24-Hour Checklist Recall (5 min)</h4>
+        <p>List from memory all 4 items on the 24-hour onboarding checklist with their time requirements.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Missing Assets Follow-Up (10 min)</h4>
+        <p>Write a polite follow-up message for this scenario:</p>
+        <p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>It's Day 2. Client completed questionnaire but hasn't sent: Logo files, Product images, Brand colors. Work cannot start without these.</em></p>
+    </div>
 </div>
 `;
 
