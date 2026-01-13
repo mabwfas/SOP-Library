@@ -317,23 +317,62 @@ A developer who ships 3x the code but makes 5 people want to quit is <strong>net
 `;
 
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
+<h2>📚 TASK 2: COMPANY KNOWLEDGE - Understanding Our DNA</h2>
 
 <div class="content-section">
-<h3>🏛️ The Culture Pillars</h3>
-<img src="images/culture_pillar_diagram.png" alt="Culture Pillars" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<h3>🏛️ The 4 Culture Pillars</h3>
+<p>Every decision we make, every hire we place, every policy we create is filtered through these pillars:</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
+<div style="padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3); text-align: center;">
+<div style="font-size: 2em; margin-bottom: 10px;">🎯</div>
+<strong>Excellence</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0;">We don't do "good enough"</p>
+</div>
+<div style="padding: 20px; background: rgba(99, 102, 241, 0.1); border-radius: 12px; border: 2px solid rgba(99, 102, 241, 0.3); text-align: center;">
+<div style="font-size: 2em; margin-bottom: 10px;">⚡</div>
+<strong>Ownership</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0;">Act like a founder</p>
+</div>
+<div style="padding: 20px; background: rgba(245, 158, 11, 0.1); border-radius: 12px; border: 2px solid rgba(245, 158, 11, 0.3); text-align: center;">
+<div style="font-size: 2em; margin-bottom: 10px;">📈</div>
+<strong>Growth</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0;">Always learning</p>
+</div>
+<div style="padding: 20px; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border: 2px solid rgba(239, 68, 68, 0.3); text-align: center;">
+<div style="font-size: 2em; margin-bottom: 10px;">🤝</div>
+<strong>Trust</strong>
+<p style="font-size: 0.9em; margin: 5px 0 0;">Radical transparency</p>
+</div>
+</div>
 </div>
 
 <div class="content-section">
 <h3>💎 The Premium Talent Standard</h3>
-<p>We hire the top 1%.</p>
+<p>We hire the top 1%. Here's what we screen for:</p>
 <div class="warning-box">
 <ul>
-<li>❌ No "Clock Watchers".</li>
-<li>❌ No "Job Hoppers" (without good reason).</li>
-<li>✅ Builders who have side projects.</li>
-<li>✅ Self-starters who don't need micromanaging.</li>
+<li>❌ No "Clock Watchers" - people who do minimum required</li>
+<li>❌ No "Job Hoppers" (without good reason) - every 6 months = red flag</li>
+<li>✅ Builders who have side projects, portfolio, proof of passion</li>
+<li>✅ Self-starters who don't need micromanaging</li>
 </ul>
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Master Our Culture</h3>
+<p><strong>Complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Name the 4 Pillars (5 min)</h4>
+<p>Without looking, list all 4 culture pillars and what each means in one sentence.</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Red Flag Identification (10 min)</h4>
+<p>Review this candidate profile and identify all red flags:</p>
+<p style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;"><em>"John has 4 jobs in 3 years. In the interview, he says 'my previous teams never understood my ideas' and 'I just do what I'm told.' He didn't ask any questions about our company."</em></p>
 </div>
 </div>
 
@@ -347,20 +386,82 @@ const task2Content = `
 `;
 
 const task3Content = `
-<h2>📚 TASK 3: RECRUITMENT STRATEGY</h2>
+<h2>📚 TASK 3: RECRUITMENT STRATEGY - Finding the Top 1%</h2>
 
 <div class="content-section">
 <h3>🔻 The Hiring Funnel</h3>
-<img src="images/hiring_pipeline_funnel.png" alt="Hiring Funnel" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<p>Every candidate goes through a structured pipeline:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Stage</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>What Happens</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Pass Rate</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1. Application</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Resume + Portfolio review</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">~20%</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2. Screening</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15-min culture call</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">~30%</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3. Skills Test</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Paid test project</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">~50%</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4. Final Interview</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deep dive + culture fit</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">~60%</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5. Offer</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Onboarding begins</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">100%</td>
+</tr>
+</table>
 </div>
 
 <div class="content-section">
-<h3>🕵️‍♀️ Screening for Red Flags</h3>
+<h3>🕵️‍♀️ The 3 Critical Screening Tests</h3>
 <ul>
-<li><strong>The "They" vs "We" Test:</strong> Do they blame past teams? (Bad sign).</li>
-<li><strong>Curiosity Test:</strong> Do they have questions for us? (If no questions -> Reject).</li>
-<li><strong>Spec Work:</strong> We always pay for a small test project before hiring.</li>
+<li><strong>The "They" vs "We" Test:</strong> Do they blame past teams? "They never supported me" = Red flag. "We learned to improve" = Good sign.</li>
+<li><strong>Curiosity Test:</strong> Do they have questions for us? If no questions → Reject. Questions show genuine interest.</li>
+<li><strong>Spec Work:</strong> We ALWAYS pay for a small test project before hiring. Skills reveal themselves under pressure.</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Practice Recruitment Screening</h3>
+<p><strong>Complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Funnel Stages Quiz (5 min)</h4>
+<p>List all 5 hiring funnel stages in order and what happens at each stage.</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Write 5 Screening Questions (10 min)</h4>
+<p>Write 5 interview questions that would reveal whether a candidate:</p>
+<ul>
+<li>Takes ownership vs blames others</li>
+<li>Is genuinely curious about the role</li>
+<li>Has growth mindset</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the HR SOP (10 min)</h4>
+<p>Open the <a href="../hr-sop.html" target="_blank" style="color: #8B5CF6;">HR SOP document</a> and read:</p>
+<ul>
+<li>Recruitment Process section</li>
+<li>Interview Best Practices section</li>
+</ul>
+</div>
 </div>
 
 <div class="content-section">

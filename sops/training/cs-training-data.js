@@ -309,48 +309,155 @@ Imagine pouring water into a bucket with holes. That's what happens when you foc
 `;
 
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
+<h2>📚 TASK 2: COMPANY KNOWLEDGE - Know What You're Supporting</h2>
 
 <div class="content-section">
-<h3>🏢 Service Offerings</h3>
-<p>You must know what we sell to support it.</p>
-<ul>
-<li><strong>Shopify Dev:</strong> Builds/Speed optimization.</li>
-<li><strong>Design:</strong> Branding/UI/UX.</li>
-<li><strong>Marketing:</strong> SEO/Paid Ads/Email.</li>
-</ul>
+<h3>🏢 Service Offerings at a Glance</h3>
+<p>You must know what we sell to support it. Here's the full picture:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Service</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>What We Do</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Common Support Qs</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Shopify Dev</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Builds, Speed optimization, Custom work</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timeline, revisions, scope</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Design</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Branding, UI/UX, Graphics</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">File formats, iterations</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Marketing</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO, Paid Ads, Email campaigns</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Results timeline, reporting</td>
+</tr>
+</table>
 </div>
 
 <div class="content-section">
-<h3>💎 White Glove Standard</h3>
-<p>We don't just "do the work". We curate the experience.</p>
-<ul>
-<li>Over-communicate.</li>
-<li>Anticipate needs.</li>
-<li>Surprise and delight.</li>
-</ul>
+<h3>💎 The White Glove Standard</h3>
+<p>We don't just "do the work". We <strong>curate the experience</strong>.</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 15px 0;">
+<div style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; text-align: center;">
+<div style="font-size: 1.5em;">📣</div>
+<strong>Over-communicate</strong>
+<p style="font-size: 0.85em; margin-top: 5px;">Updates before they ask</p>
+</div>
+<div style="padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px; text-align: center;">
+<div style="font-size: 1.5em;">🔮</div>
+<strong>Anticipate</strong>
+<p style="font-size: 0.85em; margin-top: 5px;">Solve before they notice</p>
+</div>
+<div style="padding: 15px; background: rgba(245, 158, 11, 0.1); border-radius: 10px; text-align: center;">
+<div style="font-size: 1.5em;">✨</div>
+<strong>Delight</strong>
+<p style="font-size: 0.85em; margin-top: 5px;">Small surprises matter</p>
+</div>
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Master Our Offerings</h3>
+<p><strong>Complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Service Quiz (5 min)</h4>
+<p>A client asks: "What's included in your Shopify development package?" Write a complete answer without looking at notes.</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: White Glove Moment (10 min)</h4>
+<p>Describe 3 specific ways you could "surprise and delight" a client who just finished their Shopify store with us.</p>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about offerings</li>
+<li>📝 10 questions about our services</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
 `;
 
 const task3Content = `
-<h2>📚 TASK 3: ONBOARDING MASTERY</h2>
+<h2>📚 TASK 3: ONBOARDING MASTERY - The First 90 Days</h2>
 
 <div class="content-section">
-<h3>🚀 The First 90 Days</h3>
-<p>This is where retention is won or lost.</p>
+<h3>🚀 Why Onboarding Matters</h3>
+<p>The first 90 days determine whether a client becomes a <strong>long-term partner or a quick churn</strong>.</p>
+
+<div class="warning-box">
+<strong>⚠️ Critical Stat:</strong> 86% of clients who churn within one year cite poor onboarding as the reason.
+</div>
+</div>
+
+<div class="content-section">
+<h3>📋 The Onboarding Trifecta</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Milestone</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Goal</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Success Metric</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Kickoff Call</strong> (Day 1-2)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Align on goals, timelines, communication</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client knows what to expect</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Quick Win</strong> (Week 1)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deliver first visible result FAST</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client sees progress</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>First Review</strong> (Day 30)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check satisfaction, gather feedback</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Any issues surfaced and addressed</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>⚡ Time to Value (TTV)</h3>
+<p><strong>The faster we deliver a "Quick Win," the stickier the client becomes.</strong></p>
 <ul>
-<li><strong>Kickoff Call:</strong> Align on goals, timelines, and communication.</li>
-<li><strong>Time to Value (TTV):</strong> How fast can we get them a "Quick Win"?</li>
-<li><strong>Access:</strong> Get logins immediately. Delays here kill momentum.</li>
+<li>For Shopify builds: Homepage preview within 48 hours</li>
+<li>For design: First concept within 3 business days</li>
+<li>For marketing: Audit + quick recommendations within 72 hours</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Practice Onboarding</h3>
+<p><strong>Complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Kickoff Call Script (10 min)</h4>
+<p>Write an agenda for a 30-minute kickoff call with a new Shopify client. Include at least 5 topics to cover.</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Quick Win Ideas (10 min)</h4>
+<p>List 3 "Quick Wins" you could deliver in Week 1 for each service:</p>
+<ul>
+<li>Shopify Development</li>
+<li>Design</li>
+<li>Marketing</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the CS SOP (10 min)</h4>
+<p>Open the <a href="../cs-sop.html" target="_blank" style="color: #8B5CF6;">Customer Success SOP</a> and read the Client Onboarding section.</p>
+</div>
 </div>
 
 <div class="content-section">
