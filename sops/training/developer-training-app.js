@@ -694,7 +694,7 @@ function showNamePrompt() {
                 font-size: 1.8em;
                 color: #F8FAFC;
                 margin-bottom: 10px;
-            ">Welcome to Sales Training</h1>
+            ">Welcome to Shopify Developer Training</h1>
             <p style="color: #94A3B8; margin-bottom: 30px;">
                 Digital Heroes Certification Program
             </p>

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide welcome screen immediately
     const welcomeScreen = document.getElementById('welcomeScreen');
     if (welcomeScreen) welcomeScreen.style.display = 'none';
-    
+
     renderTasksList();
     updateProgressBar();
 
@@ -296,7 +296,7 @@ function showResults() {
     });
 
     const passed = correct === totalQuestions;
-    
+
     if (passed && window.confetti) {
         window.confetti.burst(window.innerWidth / 2, window.innerHeight / 2);
     }
@@ -694,7 +694,7 @@ function showNamePrompt() {
                 font-size: 1.8em;
                 color: #F8FAFC;
                 margin-bottom: 10px;
-            ">Welcome to Sales Training</h1>
+            ">Welcome to Customer Success Training</h1>
             <p style="color: #94A3B8; margin-bottom: 30px;">
                 Digital Heroes Certification Program
             </p>
