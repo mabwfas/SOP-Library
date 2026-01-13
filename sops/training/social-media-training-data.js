@@ -263,7 +263,7 @@ const task1Content = `
 `;
 
 const task2Content = `
-<h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
+<h2>📚 TASK 2: COMPANY KNOWLEDGE - The Ecosystem</h2>
 
 <div class="content-section">
 <h3>🏢 The Ecosystem Engine</h3>
@@ -286,6 +286,26 @@ const task2Content = `
 <li>✅ High-resolution visuals.</li>
 </ul>
 </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master the Brand</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Content Audit (5 min)</h4>
+        <p>Look at our last 3 Instagram posts. Rate them on "Premium Aesthetic" (1-10) and identify one thing that could be improved in each.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Ecosystem Mapping (5 min)</h4>
+        <p>Draw a line connecting each content type to its business goal:</p>
+        <ul>
+            <li>Viral TikTok Clip → ? (Subscribers / Clients / Recruitment)</li>
+            <li>Detailed Case Study → ?</li>
+            <li>Behind-the-scenes Office Tour → ?</li>
+        </ul>
+    </div>
 </div>
 
 <div class="content-section">
@@ -313,6 +333,32 @@ const task3Content = `
 <li><strong>LinkedIn:</strong> Professional, thought leadership, educational text.</li>
 <li><strong>Twitter/X:</strong> News, quick thoughts, conversation threads.</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master the Platforms</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Repurpose Challenge (10 min)</h4>
+        <p>You have one piece of content: "A video interview with the CEO about future trends."</p>
+        <p>Describe how you would adapt this for:</p>
+        <ul>
+            <li>TikTok (What part do you cut? Format?)</li>
+            <li>LinkedIn (How do you frame it?)</li>
+            <li>Twitter (What do you tweet?)</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Platform Match (5 min)</h4>
+        <p>Which platform is BEST for:</p>
+        <ul>
+            <li>A 15-second funny trend video?</li>
+            <li>A polished infographic about revenue growth?</li>
+            <li>A hiring announcement?</li>
+        </ul>
+    </div>
 </div>
 
 <div class="content-section">
@@ -446,6 +492,26 @@ const task5Content = `
 </ul>
 </div>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Plug the Funnel</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Metric Match (5 min)</h4>
+        <p>Match the problem to the funnel stage:</p>
+        <ul>
+            <li>"Lots of views but no comments" → Problem is at [Stage?]</li>
+            <li>"Lots of comments but nobody clicks the link" → Problem is at [Stage?]</li>
+            <li>"No views at all" → Problem is at [Stage?]</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Diagnose a Profile (10 min)</h4>
+        <p>Look at a brand with 10k followers but only 5 likes per photo. Diagnosis?</p>
+    </div>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
@@ -473,6 +539,27 @@ const task6Content = `
 <li><strong>Kill with kindness:</strong> "Sorry to hear that! DM us and we'll fix it."</li>
 <li><strong>Move it to private:</strong> Get them out of the public comments ASAP.</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master Engagement</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Reply Drill (10 min)</h4>
+        <p>Write replies to these 3 comments:</p>
+        <ol>
+            <li>"Love this! 🔥" (Don't just say thanks)</li>
+            <li>"Where can I buy?"</li>
+            <li>"Price is too high."</li>
+        </ol>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Crisis Simulation (5 min)</h4>
+        <p>A user comments: "Scam! Never delivered my order!"</p>
+        <p>Draft your public reply to de-escalate.</p>
+    </div>
 </div>
 
 <div class="content-section">
@@ -505,6 +592,21 @@ const task7Content = `
 </ul>
 </div>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Build Your Stack</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Analytics Check (10 min)</h4>
+        <p>If your goal is SALES, which 2 metrics matter most? If your goal is AWARENESS, which 2 metrics matter most?</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Tool Selection (5 min)</h4>
+        <p>A client wants to automate replies to "DM me for info". Which tool do you use?</p>
+    </div>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
@@ -530,6 +632,21 @@ const task8Content = `
 <li>If they post, GREAT. If not, follow up politely once.</li>
 <li>Build the relationship first, ask for the promo second.</li>
 </ol>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Outreach Mastery</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Find 3 Influencers (10 min)</h4>
+        <p>For a skincare brand, find 3 influencers (10k-50k followers) who fit. List their handles.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: DM Draft (10 min)</h4>
+        <p>Draft a DM to an influencer offering to send them free product. Keep it short, no pressure.</p>
+    </div>
 </div>
 
 <div class="content-section">
@@ -558,6 +675,16 @@ const task9Content = `
 <ul>
 <li><strong>Action:</strong> Adapt it to our niche TODAY. Speed is key. Trends die in 48 hours.</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Role Play</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Trend Adaptation (10 min)</h4>
+        <p>Pick a current trending meme or audio. Write down how a LAWYER could use it. Then how a GYM could use it.</p>
+    </div>
 </div>
 
 <div class="content-section">
@@ -592,6 +719,21 @@ const task10Content = `
 <strong>20 questions covering all modules.</strong>
 <p>Score 20/20 to receive your Social Media Certification.</p>
 </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Final Portfolio</h3>
+    <p><strong>One final step before you're certified:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Content Calendar (20 min)</h4>
+        <p>Create a 1-week content calendar for a client. Metrics to hit:</p>
+        <ul>
+            <li>3 Reels (Awareness)</li>
+            <li>2 Carousel posts (Education/Trust)</li>
+            <li>5 Stories (Engagement)</li>
+        </ul>
+    </div>
 </div>
 
 <div class="content-section">
