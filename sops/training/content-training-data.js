@@ -317,26 +317,114 @@ const task3Content = `
 `;
 
 const task4Content = `
-<h2>📚 TASK 4: SEO MASTERY</h2>
+<h2>📚 TASK 4: SEO WRITING MASTERY - Writing for Humans AND Google</h2>
 
 <div class="content-section">
-<h3>🔍 Keyword Placement Blueprint</h3>
-<img src="images/seo_keyword_placement.png" alt="SEO Placement Visual" style="width: 100%; border-radius: 12px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<h3>🔍 The Two Audiences</h3>
+<div class="highlight-box">
+<strong>Every piece of content serves TWO masters:</strong>
+<ul>
+<li><strong>Humans:</strong> They need to want to READ it (engaging, valuable)</li>
+<li><strong>Google:</strong> It needs to be FOUND (optimized, structured)</li>
+</ul>
+<p>Write for humans first, optimize for Google second. Never the other way around.</p>
+</div>
 </div>
 
 <div class="content-section">
-<h3>🏷️ Meta Data</h3>
+<h3>🏷️ On-Page SEO Checklist</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Element</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Requirement</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Example</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Meta Title</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">50-60 characters, keyword near start</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify SEO Guide: Rank #1 in 2024"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Meta Description</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">150-160 characters, includes CTA</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Learn the exact steps to rank your store. Free checklist included."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>URL Slug</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Short, keyword-rich, no dates</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">/shopify-seo-guide (NOT /blog/2023/seo)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>H1 Heading</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">One per page, includes keyword</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"The Complete Shopify SEO Guide"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Image Alt Text</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Descriptive, keyword if natural</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify product page SEO settings"</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>📍 Keyword Placement Strategy</h3>
+<p>Where to place your primary keyword naturally:</p>
+<ol>
+<li><strong>Title/H1:</strong> Within the first 60 characters</li>
+<li><strong>First paragraph:</strong> Within the first 100 words</li>
+<li><strong>Subheadings:</strong> 1-2 H2s should include keyword variations</li>
+<li><strong>Body:</strong> 1-2% density (don't overdo it)</li>
+<li><strong>Conclusion:</strong> Mention it naturally in the wrap-up</li>
+</ol>
+
+<div class="warning-box">
+<strong>⚠️ Keyword Stuffing = Penalty</strong>
+<p>If it sounds weird when read aloud, you've gone too far. Always prioritize readability.</p>
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Master SEO Writing</h3>
+<p><strong>Before taking the quiz, complete these exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Write SEO Meta Tags (10 min)</h4>
+<p>For the keyword "best coffee grinder 2024", write:</p>
+<ol>
+<li>A meta title (50-60 characters)</li>
+<li>A meta description (150-160 characters with CTA)</li>
+<li>A clean URL slug</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Keyword Placement Audit (10 min)</h4>
+<p>Find a blog post on any Shopify store. Check if it has:</p>
 <ul>
-<li><strong>Meta Title:</strong> 50-60 characters. Must include primary keyword.</li>
-<li><strong>Meta Description:</strong> 150-160 characters. A "mini-ad" for the click.</li>
-<li><strong>URL Slug:</strong> Short and clean. <code>/shopify-seo-guide</code> not <code>/blog/2023/10/how-to-do-seo-final-v2</code></li>
+<li>Keyword in the title/H1?</li>
+<li>Keyword in the first paragraph?</li>
+<li>Natural keyword density (not stuffed)?</li>
+<li>Image alt text with description?</li>
 </ul>
+<p>Give it a score out of 4.</p>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Content SOP (10 min)</h4>
+<p>Open the <a href="../content-sop.html" target="_blank" style="color: #8B5CF6;">Content Writer SOP document</a> and read:</p>
+<ul>
+<li>SEO Writing Guidelines section</li>
+<li>Meta Tag Best Practices section</li>
+</ul>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
-<li>📝 10 questions about SEO</li>
+<li>📝 10 questions about SEO writing</li>
 <li>🎯 Score <strong>10/10</strong> to proceed</li>
 </ul>
 </div>
