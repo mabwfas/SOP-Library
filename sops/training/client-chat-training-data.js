@@ -126,23 +126,130 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 PART 1: CHAT MINDSET</h2>
+<h2>📚 PART 1: CHAT MINDSET - Speed, Empathy & Excellence</h2>
 
 <div class="content-section">
-<h3>🎯 Speed is Trust</h3>
-<p>In 2024, if you don't reply in 60 seconds, they leave.</p>
-<ul>
-<li><strong>We represent urgency:</strong> Fast replies = Competent brand.</li>
-<li><strong>We are Human:</strong> Use Emojis (if appropriate). Be warm.</li>
-<li><strong>Grammar matters:</strong> 'u r' is unacceptable. 'You are' is required.</li>
+<h3>🎯 Why You Are The Most Important Person</h3>
+<p>You are the <strong>face of the brand</strong>. In live chat, clients judge the entire company by YOUR response. One excellent chat = loyal customer for life. One bad chat = bad review + lost revenue.</p>
+
+<div class="warning-box">
+<strong>⚠️ The 60-Second Reality:</strong>
+<p>If you don't reply within <strong>60 seconds</strong>, 48% of users abandon the chat. In 2024, speed IS trust. Fast replies = "This company is competent." Slow replies = "This company doesn't care about me."</p>
+</div>
+</div>
+
+<div class="content-section">
+<h3>⚡ Response Time Standards</h3>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Situation</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Response Time</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First message</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #22C55E;">&lt; 30 seconds</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First impressions matter most</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow-up questions</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #F59E0B;">&lt; 60 seconds</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Keep momentum going</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Need to research</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Acknowledge in 30s, answer in 2 min</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Let them know you're working on it</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🤝 The Human Touch Formula</h3>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0;">
+<div style="padding: 20px; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border: 2px solid rgba(239, 68, 68, 0.3);">
+<div style="font-size: 1.5em; margin-bottom: 10px;">❌ NEVER</div>
+<ul style="font-size: 0.9em; margin: 0; padding-left: 20px;">
+<li>"u r" (Text speak)</li>
+<li>One-word answers</li>
+<li>Robotic responses</li>
+<li>"Per our policy..."</li>
 </ul>
+</div>
+
+<div style="padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border: 2px solid rgba(16, 185, 129, 0.3);">
+<div style="font-size: 1.5em; margin-bottom: 10px;">✅ ALWAYS</div>
+<ul style="font-size: 0.9em; margin: 0; padding-left: 20px;">
+<li>Proper grammar</li>
+<li>Warm greetings</li>
+<li>End with a question</li>
+<li>Use their name</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💬 Message Templates to Master</h3>
+
+<div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #6366F1;">
+<strong>📥 Opening Greeting:</strong><br>
+"Hi [Name]! 👋 Thanks for reaching out to Digital Heroes. I'm [Your Name] and I'm happy to help. What can I assist you with today?"
+</div>
+
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #10B981;">
+<strong>⏳ Need to Research:</strong><br>
+"Great question! Let me look into this for you right now. Give me just a minute and I'll have an answer..."
+</div>
+
+<div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #F59E0B;">
+<strong>👋 Perfect Sign-Off:</strong><br>
+"Is there anything else I can help you with today? If not, it was a pleasure chatting! - [Your Name] at Digital Heroes"
+</div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+<h3>✅ IMPLEMENTATION TASK: Practice Chat Excellence</h3>
+<p><strong>Before taking the quiz, complete these hands-on exercises:</strong></p>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Response Time Test (5 min)</h4>
+<p>Set a timer. Practice typing these messages in under 30 seconds each:</p>
+<ul>
+<li>A warm greeting with the customer's name "John"</li>
+<li>Acknowledging you need to look something up</li>
+<li>A perfect closing message</li>
+</ul>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Robot vs Human (10 min)</h4>
+<p>Rewrite these robotic responses to sound warm and human:</p>
+<ol>
+<li>"Per company policy, returns must be made within 30 days."</li>
+<li>"I don't know."</li>
+<li>"Unfortunately, that's not possible."</li>
+</ol>
+</div>
+
+<div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">📝 Exercise 3: Read the Client Chat SOP (10 min)</h4>
+<p>Open the <a href="../client-chat-sop.html" target="_blank" style="color: #8B5CF6;">Client Chat SOP document</a> and read:</p>
+<ul>
+<li>Response Time Standards section</li>
+<li>Tone Guidelines section</li>
+</ul>
+</div>
 </div>
 
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
+<p>You've learned the chat mindset fundamentals. Now prove your understanding.</p>
 <ul>
-<li>📝 10 questions about mindset</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
+<li>📝 10 questions about speed, empathy, and excellence</li>
+<li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
 </ul>
 </div>
 `;
