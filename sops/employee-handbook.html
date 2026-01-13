@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Heroes | Employee Handbook</title>
+    <title>Digital Heroes | Employee Handbook v2.0</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
-    <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
             --primary: #1E3A5F;
+            --primary-light: #2c5282;
             --secondary: #2E5077;
-            --accent: #3D6B99;
+            --accent: #EC4899;
             --success: #2E7D32;
             --warning: #F57C00;
             --danger: #C62828;
             --light: #F8F9FA;
             --dark: #212529;
-            --gold: #D4AF37;
-            --teal: #0D9488;
+            --bg-sidebar: #1a202c;
+            --text-sidebar: #e2e8f0;
+            --border: #e2e8f0;
         }
 
         * {
@@ -30,781 +31,1058 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background: #f5f7fa;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            background: linear-gradient(135deg, var(--primary) 0%, #0F2439 100%);
-            color: white;
-            padding: 60px 40px;
-            text-align: center;
-            border-radius: 0 0 30px 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .header h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
-        }
-
-        .header .subtitle {
-            font-size: 1.4em;
-            opacity: 0.9;
-            margin-bottom: 20px;
-            font-weight: 300;
-        }
-
-        .badge-row {
+            line-height: 1.6;
+            color: #2d3748;
+            background: #f7fafc;
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 25px;
-            flex-wrap: wrap;
+            min-height: 100vh;
         }
 
-        .badge {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 0.9em;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-        }
-
-        /* Navigation */
-        .nav-section {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 10px;
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 280px;
+            background: var(--bg-sidebar);
+            color: var(--text-sidebar);
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
             z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-header h2 {
+            font-size: 1.2rem;
+            color: white;
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 10px;
-            justify-content: center;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0 10px;
+            flex: 1;
+        }
+
+        .nav-item {
+            margin-bottom: 5px;
         }
 
         .nav-link {
-            background: var(--light);
-            color: var(--primary);
-            padding: 8px 15px;
-            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            color: #a0aec0;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9em;
+            border-radius: 8px;
             transition: all 0.2s;
-            border: 1px solid #e0e0e0;
+            font-size: 0.9rem;
+            gap: 10px;
         }
 
-        .nav-link:hover {
-            background: var(--primary);
+        .nav-link:hover,
+        .nav-link.active {
+            background: rgba(255, 255, 255, 0.1);
             color: white;
-            border-color: var(--primary);
-            transform: translateY(-2px);
+            transform: translateX(5px);
         }
 
-        /* Sections */
-        .section {
+        .nav-link.active {
+            background: var(--primary);
+            border-left: 4px solid var(--accent);
+        }
+
+        .nav-icon {
+            width: 20px;
+            text-align: center;
+        }
+
+        .back-link {
+            padding: 15px 20px;
+            border-top: 1px solid #2d3748;
+            margin-top: auto;
+            font-size: 0.85rem;
+            color: #718096;
+            text-align: center;
+        }
+
+        .back-link a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 40px;
+            max-width: 1200px;
+        }
+
+        .header-banner {
             background: white;
             padding: 40px;
             border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             margin-bottom: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            scroll-margin-top: 100px;
+            border-bottom: 5px solid var(--primary);
         }
 
-        .section-header {
+        .header-banner h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+            scroll-margin-top: 20px;
+        }
+
+        .section-title {
             display: flex;
             align-items: center;
             gap: 15px;
             margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid var(--primary);
+            padding-bottom: 15px;
+            border-bottom: 2px solid #edf2f7;
         }
 
-        .section-number {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
             color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(30, 58, 95, 0.3);
+            font-size: 1.2rem;
         }
 
-        .section h2 {
+        .section-title h2 {
+            font-size: 1.8rem;
             color: var(--primary);
-            font-size: 1.8em;
         }
 
-        .section h3 {
+        h3 {
             color: var(--secondary);
-            font-size: 1.4em;
-            margin: 30px 0 15px 0;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
         }
 
-        .section h4 {
-            color: var(--accent);
-            font-size: 1.15em;
-            margin: 20px 0 10px 0;
-            font-weight: 700;
+        h4 {
+            color: var(--primary-light);
+            margin: 15px 0 10px;
         }
 
-        /* Content Boxes */
-        .info-box {
-            padding: 20px;
-            border-radius: 10px;
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
             margin: 20px 0;
         }
 
-        .info-box.generic {
-            background: #E3F2FD;
-            border-left: 5px solid #2196F3;
-        }
-
-        .info-box.success {
-            background: #E8F5E9;
-            border-left: 5px solid #4CAF50;
-        }
-
-        .info-box.warning {
-            background: #FFF3E0;
-            border-left: 5px solid #FF9800;
-        }
-
-        .info-box.danger {
-            background: #FFEBEE;
-            border-left: 5px solid #F44336;
-        }
-
-        .info-box.purple {
-            background: #F3E5F5;
-            border-left: 5px solid #9C27B0;
-        }
-
-        .info-box.teal {
-            background: #E0F2F1;
-            border-left: 5px solid #009688;
-        }
-
-        /* Tables & Lists */
-        .styled-table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .styled-table thead {
-            background: var(--primary);
-            color: white;
-        }
-
-        .styled-table th,
-        .styled-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-        }
-
-        .styled-table tr:hover {
-            background-color: #f9f9f9;
-        }
-
-        .styled-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .styled-list li {
-            padding: 10px 0 10px 25px;
-            position: relative;
-            border-bottom: 1px solid #f5f5f5;
-        }
-
-        .styled-list li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-            font-weight: bold;
-        }
-
-        /* Specific Styles */
-        .value-card {
             background: white;
-            border: 1px solid #eee;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-left: 4px solid var(--accent);
-            transition: transform 0.2s;
+            border: 1px solid var(--border);
         }
 
-        .value-card:hover {
-            transform: translateX(5px);
-            border-left-color: var(--primary);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #f8fafc;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: #f7fafc;
+        }
+
+        /* Boxes */
+        .box {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid;
+        }
+
+        .box-info {
+            background: #E3F2FD;
+            border-color: #2196F3;
+        }
+
+        .box-success {
+            background: #E8F5E9;
+            border-color: #4CAF50;
+        }
+
+        .box-warning {
+            background: #FFF3E0;
+            border-color: #FF9800;
+        }
+
+        .box-danger {
+            background: #FFEBEE;
+            border-color: #F44336;
+        }
+
+        .box-purple {
+            background: #F3E5F5;
+            border-color: #9C27B0;
+        }
+
+        .box-dark {
+            background: #2d3748;
+            color: white;
+            border-color: #4a5568;
+        }
+
+        /* Rules Grid */
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
         }
 
         .rule-card {
-            background: #282c34;
-            color: #abb2bf;
-            padding: 25px;
+            background: #fff;
+            border: 1px solid var(--border);
             border-radius: 10px;
-            margin-bottom: 20px;
-            border-left: 5px solid #61afef;
+            padding: 20px;
+            border-top: 4px solid var(--primary);
+            transition: transform 0.2s;
         }
 
-        .rule-card h3 {
-            color: #61afef;
-            margin-top: 0;
-            border-bottom: 1px solid #3e4451;
+        .rule-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .rule-card strong {
-            color: white;
+        .rule-card h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
         }
 
+        /* FAQ */
         .faq-item {
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--border);
             border-radius: 8px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             overflow: hidden;
         }
 
         .faq-question {
-            background: #f8f9fa;
+            background: #f8fafc;
             padding: 15px 20px;
-            font-weight: 600;
             cursor: pointer;
+            font-weight: 600;
+            color: var(--primary);
             display: flex;
             justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-question:hover {
-            background: #e9ecef;
         }
 
         .faq-answer {
             padding: 20px;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid var(--border);
             background: white;
+            display: none;
         }
 
-        .footer {
-            background: var(--dark);
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            margin-top: 40px;
+        .faq-answer.show {
+            display: block;
         }
 
-        /* Negativity Warning */
-        .anti-negativity {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            color: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            border-left: 6px solid #ff4444;
-            margin: 30px 0;
-        }
-
-        .anti-negativity h3 {
-            color: #ff4444;
-            margin-top: 0;
-            border-bottom: 1px solid #555;
-        }
-
-        @media print {
-
-            .nav-section,
-            .print-btn,
-            .mobile-header {
-                display: none !important;
-            }
-
-            body {
-                background: white;
-            }
-
-            .section {
-                box-shadow: none;
-                border: 1px solid #ccc;
-                margin-bottom: 20px;
-                break-inside: avoid;
-            }
-        }
-
-        /* Mobile Header */
-        .mobile-header {
+        /* Mobile */
+        .mobile-toggle {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
+            top: 15px;
+            left: 15px;
+            z-index: 200;
             background: var(--primary);
-            z-index: 1000;
-            padding: 10px 20px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .mobile-home-btn {
             color: white;
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        @media (max-width: 768px) {
-            .mobile-header {
-                display: flex;
+        @media (max-width: 900px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s;
             }
 
-            body {
-                padding-top: 60px;
+            .sidebar.active {
+                transform: translateX(0);
             }
 
-            .header {
-                padding: 40px 20px;
-            }
-
-            .section {
+            .main-content {
+                margin-left: 0;
                 padding: 20px;
             }
 
-            .nav-section {
-                display: none;
+            .mobile-toggle {
+                display: block;
             }
+        }
 
-            /* Hide sticky nav on mobile, use scrolling */
+        .copy-email {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            position: relative;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="mobile-header">
-        <a href="index.html" class="mobile-home-btn">🦸 Digital Heroes Library</a>
-        <button onclick="window.print()"
-            style="background:none; border:none; color:white; font-size:1.2em;">🖨️</button>
-    </div>
+    <button class="mobile-toggle">☰ Menu</button>
 
-    <div class="container">
-        <header class="header">
-            <h1>📖 Employee Handbook</h1>
-            <p class="subtitle">Complete Guide to Work Culture, Policies & FAQ | v2.0</p>
-            <div class="badge-row">
-                <div class="badge">📅 Updated: Jan 2026</div>
-                <div class="badge">🏢 Delhi Team Certified</div>
-                <div class="badge">⭐ Official Policy</div>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>🦸 Digital Heroes</h2>
+            <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Employee Handbook</div>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#about" class="nav-link active"><span class="nav-icon">🏢</span> 1. About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#attendance" class="nav-link"><span class="nav-icon">⏰</span> 2. Attendance</a>
+            </li>
+            <li class="nav-item">
+                <a href="#leave" class="nav-link"><span class="nav-icon">🏖️</span> 3. Leave Policy</a>
+            </li>
+            <li class="nav-item">
+                <a href="#wfh" class="nav-link"><span class="nav-icon">🏠</span> 4. Work From Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#salary" class="nav-link"><span class="nav-icon">💰</span> 5. Salary</a>
+            </li>
+            <li class="nav-item">
+                <a href="#communication" class="nav-link"><span class="nav-icon">💬</span> 6. Communication</a>
+            </li>
+            <li class="nav-item">
+                <a href="#performance" class="nav-link"><span class="nav-icon">📊</span> 7. Performance</a>
+            </li>
+            <li class="nav-item">
+                <a href="#exit" class="nav-link"><span class="nav-icon">🚪</span> 8. Resignation</a>
+            </li>
+            <li class="nav-item">
+                <a href="#policies" class="nav-link"><span class="nav-icon">📜</span> 9. Policies</a>
+            </li>
+            <li class="nav-item">
+                <a href="#holidays" class="nav-link"><span class="nav-icon">📅</span> 10. Holidays</a>
+            </li>
+            <li class="nav-item">
+                <a href="#equipment" class="nav-link"><span class="nav-icon">🔧</span> 11. Equipment</a>
+            </li>
+            <li class="nav-item">
+                <a href="#rules" class="nav-link"><span class="nav-icon">📖</span> 12. The 12 Rules</a>
+            </li>
+            <li class="nav-item">
+                <a href="#faq" class="nav-link"><span class="nav-icon">❓</span> 13. FAQ</a>
+            </li>
+        </ul>
+        <div class="back-link">
+            <a href="index.html">← Back to Library</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <div class="header-banner">
+            <h1>📖 Employee Handbook v2.0</h1>
+            <p>The Complete Guide to Work Culture, Policies & Operations at Digital Heroes.</p>
+            <div class="header-info">
+                <span class="badge">📅 Jan 2026 Edition</span>
+                <span class="badge">🏢 Delhi Team Authority</span>
+                <span class="badge">⭐ Confidential</span>
             </div>
-        </header>
-
-        <nav class="nav-section">
-            <a href="#about" class="nav-link">1️⃣ About Us</a>
-            <a href="#attendance" class="nav-link">2️⃣ Attendance</a>
-            <a href="#leave" class="nav-link">3️⃣ Leave</a>
-            <a href="#wfh" class="nav-link">4️⃣ WFH</a>
-            <a href="#salary" class="nav-link">5️⃣ Salary</a>
-            <a href="#communication" class="nav-link">6️⃣ Comms</a>
-            <a href="#performance" class="nav-link">7️⃣ Performance</a>
-            <a href="#exit" class="nav-link">8️⃣ Exit</a>
-            <a href="#policies" class="nav-link">9️⃣ Policies</a>
-            <a href="#faq" class="nav-link">❓ FAQ</a>
-        </nav>
+        </div>
 
         <!-- SECTION 1: ABOUT US -->
-        <section class="section" id="about">
-            <div class="section-header">
-                <div class="section-number">1</div>
+        <section id="about" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">1</div>
                 <h2>About Digital Heroes</h2>
             </div>
 
-            <div class="info-box generic">
-                <h3>Our Mission</h3>
-                <p>"To be the most trusted premium Shopify development agency that transforms ecommerce businesses
-                    through exceptional design, development, and client experience."</p>
+            <div class="box box-info">
+                <strong>Our Mission:</strong> "To be the most trusted premium Shopify development agency that transforms
+                ecommerce businesses through exceptional design, development, and client experience."
             </div>
 
-            <h3>Team Structure & Hierarchy</h3>
-            <div class="info-box danger" style="background:#fff5f5; border-color: #ff4444;">
-                <p><strong>⚠️ IMPORTANT:</strong> The <strong>Delhi Team</strong> is the highest authority. Their
-                    reply/decision is final and takes precedence over everything else.</p>
+            <h3>1.1 The Journey</h3>
+            <ul style="border-left: 2px solid var(--border);">
+                <li><strong>2017:</strong> Founded with a vision.</li>
+                <li><strong>2020:</strong> Full-scale operations began.</li>
+                <li><strong>2023:</strong> Achieved 2000+ successful projects.</li>
+                <li><strong>2024:</strong> YouTube crossed 2.5M subscribers, Fiverr Pro status.</li>
+                <li><strong>2026 Target:</strong> Aiming for ₹40 Crores, Top 100 Digital Agency globally.</li>
+            </ul>
+
+            <h3>1.2 Team Structure & Hierarchy</h3>
+            <div class="box box-danger">
+                <strong>⚠️ SUPREME AUTHORITY CLAUSE:</strong> The <strong>Delhi Team</strong> represents the highest
+                level of command. Their decisions override ALL other instructions.
             </div>
 
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Level</th>
-                        <th>Role</th>
-                        <th>Key Persons</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="background-color: #e3f2fd; font-weight:bold;">
-                        <td>Level 1 (Top)</td>
-                        <td>CEO / Leadership</td>
-                        <td>Prasun Anand (CEO - Delhi Team)</td>
-                    </tr>
-                    <tr style="background-color: #e3f2fd; font-weight:bold;">
-                        <td>Level 2</td>
-                        <td>Operations Head</td>
-                        <td>Anurag Singh (Delhi Team)</td>
-                    </tr>
-                    <tr>
-                        <td>Level 3</td>
-                        <td>General Manager</td>
-                        <td>Parth</td>
-                    </tr>
-                    <tr>
-                        <td>Level 4</td>
-                        <td>HR Manager</td>
-                        <td>Stuti Agarwal (Delhi Team), Agrima (Ops HR)</td>
-                    </tr>
-                    <tr>
-                        <td>Level 5</td>
-                        <td>Department Heads</td>
-                        <td>Reporting Managers</td>
-                    </tr>
-                    <tr>
-                        <td>Level 6</td>
-                        <td>Team Leads</td>
-                        <td>Senior Developers / Senior Designers</td>
-                    </tr>
-                </tbody>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Role</th>
+                    <th>Key Persons</th>
+                </tr>
+                <tr style="background: #e3f2fd; font-weight: bold;">
+                    <td>Level 1 (Top)</td>
+                    <td>CEO / Leadership</td>
+                    <td>Prasun Anand (CEO - Delhi Team)</td>
+                </tr>
+                <tr style="background: #e3f2fd; font-weight: bold;">
+                    <td>Level 2</td>
+                    <td>Operations Head</td>
+                    <td>Anurag Singh (Delhi Team)</td>
+                </tr>
+                <tr style="background: #e1f5fe; font-weight: bold;">
+                    <td>Level 2 (Lucknow)</td>
+                    <td>Managing Director</td>
+                    <td>Shreyansh (Lucknow Team)</td>
+                </tr>
+                <tr>
+                    <td>Level 3</td>
+                    <td>General Manager</td>
+                    <td>Parth</td>
+                </tr>
+                <tr>
+                    <td>Level 4</td>
+                    <td>HR Manager / Project Managers</td>
+                    <td>Stuti/Agrima (HR), Navya Singh (Shopify PM)</td>
+                </tr>
+                <tr>
+                    <td>Level 5</td>
+                    <td>Team Leads & Senior Devs</td>
+                    <td>Mahira, Divyansh Singh (Senior Dev)</td>
+                </tr>
             </table>
 
-            <div class="info-box warning">
-                <h4>⚠️ Override Authority Rule</h4>
-                <p>Higher rank ALWAYS has authority to override instructions from lower ranks. This is non-negotiable.
-                </p>
-                <ol style="margin-left: 20px;">
-                    <li>Follow the higher-ranking person's direction (Delhi Team > Ops Manager > Team Lead).</li>
-                    <li>Inform the lower-ranking person respectfully.</li>
-                </ol>
-            </div>
-
-            <h3>Core Values</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-                <div class="value-card">
+            <h3>1.3 Core Values</h3>
+            <div class="rules-grid">
+                <div class="rule-card">
                     <h4>⚡ OWNERSHIP</h4>
                     <p>You are 100% responsible. No blame-shifting. If you see a problem, own solving it.</p>
                 </div>
-                <div class="value-card">
+                <div class="rule-card">
                     <h4>🎯 EXCELLENCE</h4>
                     <p>"Good enough" is never good enough. Every project should be portfolio-worthy.</p>
                 </div>
-                <div class="value-card">
+                <div class="rule-card">
                     <h4>💬 TRANSPARENCY</h4>
-                    <p>Honest communication always. Mistakes admitted immediately. No hiding.</p>
+                    <p>Honest communication always. Mistakes admitted immediately. No hiding politics.</p>
                 </div>
-                <div class="value-card">
+                <div class="rule-card">
                     <h4>🤝 RESPECT</h4>
-                    <p>Treat everyone with dignity. No ego, no attitude. Collaborate, don't compete.</p>
+                    <p>Treat everyone with dignity. No ego. Collaborate, don't compete internally.</p>
                 </div>
             </div>
         </section>
 
         <!-- SECTION 2: ATTENDANCE -->
-        <section class="section" id="attendance">
-            <div class="section-header">
-                <div class="section-number">2</div>
+        <section id="attendance" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">2</div>
                 <h2>Working Hours & Attendance</h2>
             </div>
 
-            <table class="styled-table">
+            <table>
                 <tr>
-                    <td><strong>Monday - Saturday</strong></td>
+                    <th>Day</th>
+                    <th>Working Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday - Saturday</td>
                     <td>9:00 AM - 6:00 PM (Default)</td>
                 </tr>
                 <tr>
-                    <td><strong>Sunday</strong></td>
+                    <td>Sunday</td>
                     <td>OFF</td>
                 </tr>
                 <tr>
-                    <td><strong>Lunch Break</strong></td>
-                    <td>1:00 PM - 2:00 PM</td>
+                    <td>Lunch Break</td>
+                    <td>1:00 PM - 2:00 PM (1 Hour)</td>
+                </tr>
+                <tr>
+                    <td>Sales Team</td>
+                    <td>9:00 AM - 9:00 PM (Flexible Shifts due to US Timezone)</td>
                 </tr>
             </table>
 
-            <h3>Lateness Policy</h3>
-            <div class="info-box warning">
-                <ul class="styled-list">
-                    <li><strong>Grace Period:</strong> Until 9:15 AM</li>
-                    <li><strong>After 9:15 AM:</strong> Half-day salary deduction (Automatic)</li>
+            <h3>2.1 Lateness & Absence Rules</h3>
+            <div class="box box-warning">
+                <strong>Grace Period:</strong> Until 9:15 AM.<br>
+                <strong>After 9:15 AM:</strong> Automatic HALF-DAY salary deduction.<br>
+                <strong>3 Late Arrivals:</strong> Verbal Warning.<br>
+                <strong>5+ Late Arrivals:</strong> Written Warning.
+            </div>
+
+            <div class="box box-danger">
+                <h4>🚫 Unexplained Absence</h4>
+                <p>If you are absent without informing by 9:00 AM:</p>
+                <ul>
+                    <li><strong>1st Offense:</strong> Written Warning</li>
+                    <li><strong>3rd Offense:</strong> 3-Day Salary Deduction</li>
+                    <li><strong>5+ Offenses:</strong> Immediate Termination</li>
                 </ul>
             </div>
 
-            <h3>Unexplained Absence</h3>
-            <div class="info-box danger">
-                <p><strong>If you are absent without informing by 9:00 AM:</strong></p>
-                <ul class="styled-list">
-                    <li>1st Offense: Written Warning</li>
-                    <li>3rd Offense: 3-Day Salary Deduction</li>
-                    <li>5+ Offenses: <strong>Immediate Termination</strong></li>
-                </ul>
-            </div>
+            <h3>2.2 Communication Protocol</h3>
+            <p><strong>Acceptable:</strong> WhatsApp/Discord to Manager BEFORE 9:00 AM.</p>
+            <p><strong>Not Acceptable:</strong> Informing after 9 AM, telling a colleague instead of manager.</p>
         </section>
 
         <!-- SECTION 3: LEAVE -->
-        <section class="section" id="leave">
-            <div class="section-header">
-                <div class="section-number">3</div>
+        <section id="leave" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">3</div>
                 <h2>Leave Policy</h2>
             </div>
 
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Days/Year</th>
-                        <th>Notes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Casual Leave (CL)</strong></td>
-                        <td>12</td>
-                        <td>Max 2 per month. Requires 3-day notice.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Sick Leave (SL)</strong></td>
-                        <td>6</td>
-                        <td>For medical reasons. Inform by 9 AM.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Earned Leave (EL)</strong></td>
-                        <td>15</td>
-                        <td>Available after 1 year service.</td>
-                    </tr>
-                </tbody>
+            <table>
+                <tr>
+                    <th>Leave Type</th>
+                    <th>Days/Year</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Casual Leave (CL)</td>
+                    <td>12</td>
+                    <td>Max 2 per month. Personal matters.</td>
+                </tr>
+                <tr>
+                    <td>Sick Leave (SL)</td>
+                    <td>6</td>
+                    <td>Medical reasons. Certificate for 3+ days.</td>
+                </tr>
+                <tr>
+                    <td>Earned Leave (EL)</td>
+                    <td>15</td>
+                    <td>After 1 year service. Accrues 1.25/month.</td>
+                </tr>
             </table>
 
-            <div class="info-box warning">
-                <h4>⚠️ Restrictions</h4>
-                <p>No leaves allowed during <strong>25th - 5th of the month</strong> (Critical billing/reporting period)
-                    unless emergency.</p>
+            <div class="box box-warning">
+                <strong>⚠️ The "2-Day Rule":</strong> You can take max 2 casual leaves per month by default. More than 2
+                requires Senior Management approval.
             </div>
+
+            <div class="box box-danger">
+                <strong>🚫 BLACKOUT PERIOD:</strong> No leaves allowed between <strong>25th to 5th</strong> of the month
+                (Billing/Reporting Cycle). Exceptions only for genuine emergencies.
+            </div>
+
+            <h3>3.1 Leave Application Process</h3>
+            <ol>
+                <li>Check leave balance.</li>
+                <li>Discuss with Manager.</li>
+                <li>Submit formal application on system/form.</li>
+                <li><strong>Wait for Approval.</strong> (Applying ≠ Approved).</li>
+                <li>Handover pending work.</li>
+            </ol>
         </section>
 
         <!-- SECTION 4: WFH -->
-        <section class="section" id="wfh">
-            <div class="section-header">
-                <div class="section-number">4</div>
+        <section id="wfh" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">4</div>
                 <h2>Work From Home (WFH)</h2>
             </div>
 
-            <div class="info-box teal">
-                <h4>✅ Eligibility</h4>
-                <p>Only after probation (3 months) AND with manager approval. <strong>WFH is a privilege, not a
-                        right.</strong></p>
+            <div class="box box-purple">
+                <strong>🏠 WFH is a PRIVILEGE, not a Right.</strong><br>
+                Manager can reject any request without reason. Can be permanently revoked if performance drops.
             </div>
 
-            <h3>Rules</h3>
-            <ul class="styled-list">
-                <li><strong>Max Days:</strong> 2 days per week (Must be non-consecutive).</li>
+            <h3>4.1 Eligibility</h3>
+            <ul class="tick-list">
+                <li>✅ Completed Probation (3 months).</li>
+                <li>✅ Good Performance Record.</li>
+                <li>✅ Reliable Internet (10+ Mbps) & Backup power.</li>
+            </ul>
+
+            <h3>4.2 The Rules</h3>
+            <ul>
+                <li><strong>Max Limit:</strong> 2 days per week (Must be non-consecutive).</li>
                 <li><strong>Response Time:</strong> Must respond within 30 mins during work hours.</li>
                 <li><strong>Status:</strong> Post "Online - WFH" on Discord by 9:15 AM.</li>
                 <li><strong>Camera:</strong> Must be ON for all meetings.</li>
             </ul>
 
-            <div class="info-box danger">
-                <p><strong>Revocation:</strong> If you are unresponsive or unproductive on WFH days, this privilege will
-                    be permanently revoked.</p>
+            <div class="box box-warning">
+                <strong>Revocation:</strong> One instance of being "unreachable" during WFH can lead to permanent
+                revocation of WFH privileges.
             </div>
         </section>
 
-        <!-- SECTION 9: POLICIES (Moved up) -->
-        <section class="section" id="policies">
-            <div class="section-header">
-                <div class="section-number">9</div>
-                <h2>Policies & Code of Conduct</h2>
+        <!-- SECTION 5: SALARY -->
+        <section id="salary" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">5</div>
+                <h2>Salary & Compensation</h2>
             </div>
 
-            <div class="anti-negativity">
-                <h3>🚫 ZERO TOLERANCE: Negativity & Politics</h3>
-                <p>We have an absolute <strong>Zero Tolerance Policy</strong> for office politics, gossip, or spreading
-                    negativity.</p>
-                <ul style="margin-top: 15px; line-height: 1.6;">
-                    <li>Do not complain to colleagues about management/work. Raise issues directly to HR/Management.
-                    </li>
-                    <li>Do not form "cliques" or groups that exclude others.</li>
-                    <li>Do not bad-mouth clients or teammates.</li>
-                </ul>
-                <p style="margin-top: 15px; font-weight: bold; color: #ffcccc;">Creating a toxic environment is the
-                    fastest way to get terminated, regardless of your performance.</p>
+            <p><strong>Payment Date:</strong> Last working day of the month.</p>
+
+            <h3>5.1 Stipend & Performance Connection</h3>
+            <p>Your stipend directly reflects the quality and consistency of your work. Without daily reporting, efforts
+                cannot be measured, which will affect your stipend/salary.</p>
+
+            <h3>5.2 Advance Salary Policy</h3>
+            <ul>
+                <li><strong>Eligibility:</strong> Minimum 3 months tenure.</li>
+                <li><strong>Limit:</strong> Max 50% of monthly salary.</li>
+                <li><strong>Frequency:</strong> Max 2 times per year.</li>
+                <li><strong>Recovery:</strong> Deducted in 2 equal installments.</li>
+            </ul>
+
+            <h3>5.3 Increments & Bonuses</h3>
+            <table>
+                <tr>
+                    <th>Performance Score</th>
+                    <th>Increment Range</th>
+                </tr>
+                <tr>
+                    <td>90-100%</td>
+                    <td>15-20% + Bonus</td>
+                </tr>
+                <tr>
+                    <td>75-89%</td>
+                    <td>10-15%</td>
+                </tr>
+                <tr>
+                    <td>60-74%</td>
+                    <td>5-10%</td>
+                </tr>
+                <tr>
+                    <td>Below 60%</td>
+                    <td>No Increment (PIP)</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- SECTION 6: COMMUNICATION -->
+        <section id="communication" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">6</div>
+                <h2>Communication Standards</h2>
             </div>
 
-            <div class="info-box purple">
+            <div class="box box-danger">
+                <strong>CRITICAL RULE:</strong> Ignoring messages from management = <strong>Immediate
+                    Termination</strong>. There are no second chances for going AWOL.
+            </div>
+
+            <h3>6.1 Response Time Standards</h3>
+            <ul>
+                <li><strong>Clients:</strong>
+                    < 2 Hours (Business Hours)</li>
+                <li><strong>Managers:</strong>
+                    < 1 Hour</li>
+                <li><strong>Emergency:</strong>
+                    < 15 Minutes</li>
+            </ul>
+
+            <h3>6.2 Daily Status Update Format</h3>
+            <div class="copy-email">
+                Morning (by 9:30 AM):
+                Good morning! 🌅
+                Today's priorities:
+                1. [Task 1]
+                2. [Task 2]
+
+                End of Day (by 6:00 PM):
+                EOD Update:
+                ✅ Completed: [Task 1]
+                🔄 In Progress: [Task 2] - 70%
+                ⏳ Tomorrow: [Task 3]
+                🚧 Blockers: [None/Issue]</div>
+        </section>
+
+        <!-- SECTION 7: PERFORMANCE -->
+        <section id="performance" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">7</div>
+                <h2>Performance & Growth</h2>
+            </div>
+
+            <h3>7.1 Evaluation Factors</h3>
+            <ul>
+                <li><strong>KPI Achievement:</strong> 50%</li>
+                <li><strong>Quality of Work:</strong> 20%</li>
+                <li><strong>Communication:</strong> 15%</li>
+                <li><strong>Initiative:</strong> 10%</li>
+            </ul>
+
+            <h3>7.2 Performance Improvement Plan (PIP)</h3>
+            <p>Triggers: Score < 60%, Deadlines missed, Quality issues.</p>
+                    <div class="box box-warning">
+                        <strong>PIP Process (30-60 Days):</strong><br>
+                        Strict Monitoring → Hourly Reports → 100% Quality Check.<br>
+                        <strong>Failure to improve = Termination.</strong>
+                    </div>
+        </section>
+
+        <!-- SECTION 8: EXIT -->
+        <section id="exit" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">8</div>
+                <h2>Resignation & Exit</h2>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Stage</th>
+                    <th>Notice Period</th>
+                </tr>
+                <tr>
+                    <td>Probation (0-3 Months)</td>
+                    <td>7 Days</td>
+                </tr>
+                <tr>
+                    <td>Confirmed (>3 Months)</td>
+                    <td>30 Days</td>
+                </tr>
+            </table>
+
+            <h3>8.1 Resignation Process</h3>
+            <ol>
+                <li><strong>Written Email</strong> to Manager & HR.</li>
+                <li>Knowledge Transfer & Documentation.</li>
+                <li>Exit Interview.</li>
+                <li>Asset Return.</li>
+                <li>Full & Final Settlement (30 days).</li>
+            </ol>
+
+            <div class="box box-info">
+                <strong>Note on Experience Certificates:</strong> Reserved for good performers. Poor performance or
+                unamicable exit may result in delays or basic service letters only.
+            </div>
+        </section>
+
+        <!-- SECTION 9: POLICIES -->
+        <section id="policies" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">9</div>
+                <h2>Policies & Compliance</h2>
+            </div>
+
+            <div class="box box-danger">
                 <h4>🔒 Confidentiality (NDA)</h4>
-                <p>You must not share client data, code, strategies, or salary info with anyone. Breach = Immediate
-                    Termination + Legal Action.</p>
+                <p><strong>Strictly Prohibited:</strong> Sharing client data, source code, financial data, or
+                    <strong>discussing salaries with colleagues</strong>.
+                </p>
+                <p>Breach = Immediate Termination + Legal Action.</p>
             </div>
 
-            <h3>Anti-Harassment</h3>
-            <p>We are a safe workplace. Any harassment (verbal, sexual, bullying) will result in immediate investigation
-                and potential termination. Report directly to HR or Delhi Team.</p>
+            <h3>9.1 Zero Tolerance Policies</h3>
+            <ul>
+                <li><strong>Anti-Harassment:</strong> Zero tolerance for bullying/harassment. Report to HR immediately.
+                </li>
+                <li><strong>No Politics/Gossip:</strong> Creating "vent groups" or bad-mouthing colleagues leads to
+                    termination.</li>
+                <li><strong>No Moonlighting:</strong> No freelancing or outside work during employment without written
+                    approval.</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 10: HOLIDAYS -->
+        <section id="holidays" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">10</div>
+                <h2>Holiday Calendar (2025-26)</h2>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Holiday</th>
+                </tr>
+                <tr>
+                    <td>26 Jan 2025</td>
+                    <td>Republic Day</td>
+                </tr>
+                <tr>
+                    <td>14 Mar 2025</td>
+                    <td>Holi</td>
+                </tr>
+                <tr>
+                    <td>15 Aug 2025</td>
+                    <td>Independence Day</td>
+                </tr>
+                <tr>
+                    <td>02 Oct 2025</td>
+                    <td>Gandhi Jayanti</td>
+                </tr>
+                <tr>
+                    <td>12 Nov 2025</td>
+                    <td>Diwali</td>
+                </tr>
+                <tr>
+                    <td>25 Dec 2025</td>
+                    <td>Christmas</td>
+                </tr>
+                <tr>
+                    <td>01 Jan 2026</td>
+                    <td>New Year</td>
+                </tr>
+            </table>
+            <p><em>*Check with HR for detailed regional list.</em></p>
+        </section>
+
+        <!-- SECTION 11: EQUIPMENT -->
+        <section id="equipment" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">11</div>
+                <h2>Equipment & Assets</h2>
+            </div>
+            <p><strong>Responsibility:</strong> You are responsible for any laptop/device issued to you.</p>
+            <ul>
+                <li><strong>Official Use Only:</strong> No personal files or apps.</li>
+                <li><strong>Damage:</strong> Negligent damage costs will be recovered from employee.</li>
+                <li><strong>Return:</strong> Must return in working condition to receive F&F.</li>
+            </ul>
         </section>
 
         <!-- SECTION 12: 12 RULES -->
-        <section class="section" id="culture-rules">
-            <div class="section-header">
-                <div class="section-number">12</div>
+        <section id="rules" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">12</div>
                 <h2>The 12 Rules of Work Culture</h2>
             </div>
 
-            <div class="rule-card">
-                <h3>RULE 1: ACCOUNTABILITY</h3>
-                <p><strong>Own Your Work Completely.</strong> You are 100% responsible for your tasks. No excuses.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 2: COMMUNICATION</h3>
-                <p><strong>Clear, Direct, Professional.</strong> Read messages completely. Respond within 2 hours.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 3: PUNCTUALITY</h3>
-                <p><strong>Non-Negotiable.</strong> Deadlines are final. "I forgot" is not acceptable.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 4: SELF-LEARNING</h3>
-                <p><strong>Figure It Out First.</strong> Use Google/ChatGPT before asking. We value problem solvers.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 5: QUALITY</h3>
-                <p><strong>Match Professional Level.</strong> Review before submitting. Take pride in your work.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 6: GROUNDEDNESS</h3>
-                <p><strong>Stay Humble.</strong> No ego. Results matter more than talk.</p>
-            </div>
-            <div class="rule-card" style="border-left-color: #ff4444;">
-                <h3 style="color: #ff4444;">RULE 7: ZERO POLITICS</h3>
-                <p><strong>No Drama, Period.</strong> No gossip. Address conflicts directly or escalate.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 8: TRANSPARENCY</h3>
-                <p><strong>Honesty Always.</strong> Made a mistake? Admit it. Hiding it is worse.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 9: TEAMWORK</h3>
-                <p><strong>Win Together.</strong> Share knowledge. Help colleagues.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 10: PROFESSIONALISM</h3>
-                <p><strong>Represent Well.</strong> Maintain confidentiality. Be professional with clients.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 11: GROWTH MINDSET</h3>
-                <p><strong>Always Improving.</strong> Feedback is a gift. Implement it.</p>
-            </div>
-            <div class="rule-card">
-                <h3>RULE 12: BOUNDARIES</h3>
-                <p><strong>Respect.</strong> Communicate if overwhelmed. Respect time off.</p>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h4>1. ACCOUNTABILITY</h4>
+                    <p>Own every task. No excuses.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>2. COMMUNICATION</h4>
+                    <p>Clear, direct, < 2hr response.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>3. PUNCTUALITY</h4>
+                    <p>Deadlines are sacred.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>4. SELF-LEARNING</h4>
+                    <p>Try to solve it before asking.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>5. QUALITY</h4>
+                    <p>Professional grade only.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>6. GROUNDEDNESS</h4>
+                    <p>No ego. Stay humble.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>7. ZERO POLITICS</h4>
+                    <p>No gossip. No drama.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>8. TRANSPARENCY</h4>
+                    <p>Admit mistakes instantly.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>9. TEAMWORK</h4>
+                    <p>We win together.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>10. PROFESSIONALISM</h4>
+                    <p>Represent well always.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>11. GROWTH</h4>
+                    <p>Always improving.</p>
+                </div>
+                <div class="rule-card">
+                    <h4>12. BOUNDARIES</h4>
+                    <p>Work-life respect.</p>
+                </div>
             </div>
         </section>
 
         <!-- SECTION 13: FAQ -->
-        <section class="section" id="faq">
-            <div class="section-header">
-                <div class="section-number">?</div>
+        <section id="faq" class="content-section">
+            <div class="section-title">
+                <div class="section-icon">?</div>
                 <h2>Frequently Asked Questions</h2>
             </div>
 
+            <!-- Attendance -->
+            <h4>Attendance & Timing</h4>
             <div class="faq-item">
-                <div class="faq-question"
-                    onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                    Q: What time do I need to arrive?
-                    <span>▼</span>
-                </div>
-                <div class="faq-answer" style="display: none;">
-                    By 9:00 AM. Grace period until 9:15 AM. After 9:15 AM = Half day deduction.
-                </div>
+                <div class="faq-question">Q: What happens if I am late (after 9:15)?</div>
+                <div class="faq-answer">Half-day salary deduction. No exceptions. If you have a specific reason, inform
+                    BEFORE 9 AM, but deduction usually still applies.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I leave early if work is done?</div>
+                <div class="faq-answer">No. Office hours are 9-6. If free, upskill or help teammates. Early leave
+                    requires approval.</div>
             </div>
 
+            <!-- Leave -->
+            <h4>Leaves</h4>
             <div class="faq-item">
-                <div class="faq-question"
-                    onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                    Q: Can I share my personal number with clients?
-                    <span>▼</span>
-                </div>
-                <div class="faq-answer" style="display: none;">
-                    <strong>ABSOLUTELY NOT.</strong> All communication must be via official channels. Violation =
-                    Disciplinary action.
-                </div>
+                <div class="faq-question">Q: Can I take more than 2 CL in a month?</div>
+                <div class="faq-answer">Requires Senior Management approval + 3 days advance notice.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I take leave between 25th-5th?</div>
+                <div class="faq-answer">Only for medical emergencies or own wedding. This is blackout period for
+                    billing.</div>
             </div>
 
+            <!-- WFH -->
+            <h4>Work From Home</h4>
             <div class="faq-item">
-                <div class="faq-question"
-                    onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                    Q: Who do I contact for Salary/Leave issues?
-                    <span>▼</span>
-                </div>
-                <div class="faq-answer" style="display: none;">
-                    Contact HR (Agrima/Stuti).
-                </div>
+                <div class="faq-question">Q: Can manager reject WFH without reason?</div>
+                <div class="faq-answer">Yes. WFH is a privilege. If abused or performance is low, it is denied.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: What if my internet fails on WFH?</div>
+                <div class="faq-answer">Go to office. Unstable net is not an excuse for missed work.</div>
             </div>
 
+            <!-- Salary -->
+            <h4>Salary</h4>
             <div class="faq-item">
-                <div class="faq-question"
-                    onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                    Q: What if I have a conflict with my manager?
-                    <span>▼</span>
+                <div class="faq-question">Q: Can I discuss salary with colleagues?</div>
+                <div class="faq-answer">Allowing salary discussion is grounds for immediate termination (NDA Violation).
                 </div>
-                <div class="faq-answer" style="display: none;">
-                    Try to resolve it professionally. If not possible, escalate to higher management (Delhi Team). Do
-                    not gossip about it.
-                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I get an increment?</div>
+                <div class="faq-answer">Quarterly/Annual review based on KPI. You must earn it through performance (90%+
+                    score).</div>
+            </div>
+
+            <!-- General -->
+            <h4>General</h4>
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I freelance on the side?</div>
+                <div class="faq-answer">No. Moonlighting without written approval = Termination + Legal Action.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Who do I contact for complaints?</div>
+                <div class="faq-answer">HR (Agrima) first. Then Ops Head (Anurag) if unresolved.</div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <h3>Digital Heroes Employee Handbook</h3>
-            <p>Version 2.0 | January 2026</p>
-            <p style="opacity: 0.6; margin-top: 10px;">Confidential Internal Document</p>
-        </footer>
-
-    </div>
+    </main>
 
     <script>
-        // Simple FAQ toggle logic
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+
+                // Close sidebar on mobile
+                if (window.innerWidth < 900) {
+                    document.querySelector('.sidebar').classList.remove('active');
+                }
+            });
+        });
+
+        // FAQ Toggle
         document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', event => {
+            item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
-                const arrow = item.querySelector('span');
-                if (answer.style.display === 'none') {
-                    answer.style.display = 'block';
-                    arrow.textContent = '▲';
-                } else {
-                    answer.style.display = 'none';
-                    arrow.textContent = '▼';
+                answer.classList.toggle('show');
+            });
+        });
+
+        // Mobile Toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', () => {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+
+        // Scroll Spy
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(li => {
+                li.classList.remove('active');
+                if (li.getAttribute('href').includes(current)) {
+                    li.classList.add('active');
                 }
             });
         });
