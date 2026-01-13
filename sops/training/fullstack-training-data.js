@@ -373,6 +373,23 @@ const task2Content = `
 <tr><td>"What if the API is down?"</td><td>Fallback strategies needed</td></tr>
 </table>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Discovery Master</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The "Why Paid?" Script (10 min)</h4>
+        <p>A client asks: "Why do I have to pay for a Discovery phase? Can't you just give me a quote?"</p>
+        <p>Write your response explaining the value (Protection, Clear Spec, Accurate Quote).</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Edge Case Hunter (10 min)</h4>
+        <p>Feature: "User uploads a profile picture."</p>
+        <p>List 3 edge cases you must ask about (e.g., File size? File type? What if upload fails?).</p>
+    </div>
+</div>
 `;
 
 // =====================================================
@@ -434,6 +451,22 @@ Client expectations often exceed what was agreed. The "Out of Scope" section pro
 </ul>
 </div>
 <p>This level of detail prevents "I thought it would work differently" conversations.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: TSD Writer</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Acceptance Criteria (10 min)</h4>
+        <p>Write the Acceptance Criteria for: "Forgot Password Functionality".</p>
+        <p>(Think: Link expiration? Email delivery? Success message?)</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Out of Scope Definition (5 min)</h4>
+        <p>You are building a "Basic E-commerce Store". List 3 things you explicitly list as OUT OF SCOPE to protect yourself.</p>
+    </div>
 </div>
 `;
 
@@ -510,6 +543,27 @@ const task4Content = `
 <tr><td><strong>Hosting</strong></td><td>Vercel, Railway, AWS, DigitalOcean</td></tr>
 <tr><td><strong>Auth</strong></td><td>NextAuth, Clerk, Auth0</td></tr>
 </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Architect</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Structure Sort (10 min)</h4>
+        <p>Where does this file go? (Match file to folder)</p>
+        <ul>
+            <li>header.tsx → ?</li>
+            <li>user-profile-page.tsx → ?</li>
+            <li>formatDate.ts → ?</li>
+            <li>global.css → ?</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Branch Logic (5 min)</h4>
+        <p>You need to fix a critical bug on the LIVE site. Which branch do you create? Which branch do you merge into?</p>
+    </div>
 </div>
 `;
 
@@ -592,6 +646,28 @@ const task5Content = `
 <strong>Deliverable:</strong> Live website + documentation
 </div>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Phase Commander</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Phase Sorting (10 min)</h4>
+        <p>Assign these tasks to the correct Phase (1-5):</p>
+        <ul>
+            <li>Install Stripe SDK</li>
+            <li>Run Lighthouse Audit</li>
+            <li>Create "User" database table</li>
+            <li>Point A record to server IP</li>
+            <li>Build "Edit Profile" form</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Update Email (10 min)</h4>
+        <p>You finished Phase 2 (Core Features). Draft an email to the client asking for their review so you can move to Phase 3.</p>
+    </div>
+</div>
 `;
 
 // FULLSTACK TRAINING DATA - PART 2 (Tasks 6-10 + Quizzes)
@@ -650,6 +726,27 @@ try {
 <p>Never trust client-side data. Always validate on the server.</p>
 </div>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Backend Builder</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Schema Design (15 min)</h4>
+        <p>Design a <strong>Product</strong> table schema. List the columns you need (e.g. id, price, etc). Don't forget the standard audit columns!</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Status Code Quiz (5 min)</h4>
+        <p>What HTTP status code do you return for:</p>
+        <ul>
+            <li>User tries to delete product they don't own?</li>
+            <li>User sends invalid email format?</li>
+            <li>Server crashes?</li>
+            <li>Successfully updated profile?</li>
+        </ul>
+    </div>
+</div>
 `;
 
 // =====================================================
@@ -694,6 +791,23 @@ const task7Content = `
 <tr><td>Core Web Vitals</td><td>All green</td></tr>
 <tr><td>Mobile Score</td><td>85+</td></tr>
 </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Breaker</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Test Case Writer (10 min)</h4>
+        <p>Write 3 manual test steps to verify a "Checkout Process". (e.g. 1. Add item to cart...)</p>
+        <p>Include one "Negative Test" (trying to break it).</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Security Spot Check (5 min)</h4>
+        <p>You find this code in a repo: <code>const STRIPE_SECRET = "sk_test_12345...";</code> inside a React component.</p>
+        <p>Why is this bad? Where should it go?</p>
+    </div>
 </div>
 `;
 
@@ -744,6 +858,22 @@ const task8Content = `
 <li>Use Loom or similar for easy sharing</li>
 </ul>
 </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Closer</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Pre-Flight Check (10 min)</h4>
+        <p>You deployed to production but forgot one Env Variable. The app crashes. Which one did you likely forget?</p>
+        <p>(Common culprits: DATABASE_URL, NEXTAUTH_SECRET, STRIPE_KEY). Write a sticky note checklist for your monitor.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Handover Outline (10 min)</h4>
+        <p>Create the Table of Contents for a Client User Manual for a "Blog Admin Panel".</p>
+    </div>
 </div>
 `;
 
@@ -830,6 +960,21 @@ const task9Content = `
 </div>
 <p><strong>Rule:</strong> Rotate first, investigate second. Never share creds in plain text.</p>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Firefighter</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The "Server Down" Msg (5 min)</h4>
+        <p>A client texts: "MY SITE IS DOWN!". You are checking logs. Send a reply that calms them down while you investigate.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Negotiate Timeline (10 min)</h4>
+        <p>Client wants a "Chat Feature" by Friday (it takes 2 weeks). Write a message offering a "Phased Approach" that gives them <em>something</em> by Friday.</p>
+    </div>
+</div>
 `;
 
 // =====================================================
@@ -884,6 +1029,17 @@ const task10Content = `
 <li>How you'll apply these principles</li>
 <li>Your commitment to quality</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Final Demo</h3>
+    <p><strong>One final step before you're certified:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Video Rehearsal (20 min)</h4>
+        <p>Record a test 5-minute video where you explain the "5 Project Principles" as if you were teaching a junior dev.</p>
+        <p>Watch it back. Do you sound confident?</p>
+    </div>
 </div>
 
 <div class="content-section">
