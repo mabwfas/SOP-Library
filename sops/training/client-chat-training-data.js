@@ -266,6 +266,22 @@ const task2Content = `
 </ul>
 </div>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Know Your Role</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Traffic Cop (5 min)</h4>
+        <p>Label each query as <strong>SALES</strong> (Transfer) or <strong>SUPPORT</strong> (Solve):</p>
+        <ul>
+            <li>"Do you offer payment plans?"</li>
+            <li>"My download link isn't working."</li>
+            <li>"What is the difference between the Basic and Pro package?"</li>
+            <li>"I need a refund."</li>
+        </ul>
+    </div>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
@@ -290,6 +306,31 @@ const task3Content = `
 <li>"It is company policy." (Sounds robotic).</li>
 <li>"I don't know." (Instead use: "Let me find that out for you right away.")</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master the Tone</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Rewrite the Banned (10 min)</h4>
+        <p>Rewrite these phrases to be "Digital Heroes Approved":</p>
+        <ul>
+            <li>"Unfortunately we don't do that." → ?</li>
+            <li>"That is against policy." → ?</li>
+            <li>"I'm not sure." → ?</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Mirroring Match (5 min)</h4>
+        <p>Client says: "Yo! My stuff handles broke. u guys got spares?"</p>
+        <p>Which reply is better mirroring?</p>
+        <ul>
+            <li>A: "Dear Sir/Madam, we regulate spare parts via..."</li>
+            <li>B: "Hey! Bummer about the handles. We definitely have spares! Let me grab a link for you."</li>
+        </ul>
+    </div>
 </div>
 
 <div class="content-section">
@@ -411,6 +452,26 @@ const task5Content = `
 </div>
 </div>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Setup for Speed</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Shortcut Setup (10 min)</h4>
+        <p>Write out the full text for these 3 shortcuts you will save:</p>
+        <ul>
+            <li><strong>/hello</strong> (Your standard warm greeting)</li>
+            <li><strong>/brb</strong> (Your "let me check on that" hold message)</li>
+            <li><strong>/bye</strong> (Your standard sign-off with review request)</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The Hold (5 min)</h4>
+        <p>You need 5 minutes to check a tracking number. Write exactly what you tell the client so they don't think you ghosted them.</p>
+    </div>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
@@ -432,6 +493,21 @@ const task6Content = `
 </ul>
 </div>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Perfect Close</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Loop Audit (5 min)</h4>
+        <p>Look at your last 3 chats (or imagine them). Did you ask "Is there anything else?" BEFORE saying bye? If not, rewrite the ending.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Signature Crafting (5 min)</h4>
+        <p>Create your unique sign-off. It should be professional but warm. (e.g., "Happy Helpfulness, [Name]")</p>
+    </div>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
@@ -450,6 +526,23 @@ const task7Content = `
 <li><strong>Tagging:</strong> Tag every chat (e.g. #sales, #support, #bug).</li>
 <li><strong>Notes:</strong> Leave internal notes for the next agent.</li>
 </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: System Hygiene</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Note Taking (5 min)</h4>
+        <p>A client is angry about a shipping delay. You promised to update them in 24 hours. Write the Internal Note you would leave on the ticket for your teammates.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Tagging Drill (5 min)</h4>
+        <p>Apply tags to this conversation:</p>
+        <p>"Hi, I want to buy the Pro plan but my card is getting declined."</p>
+        <p>Tags: #Sales? #Bug? #Billing? (Which ones apply?)</p>
+    </div>
 </div>
 
 <div class="content-section">
@@ -474,6 +567,23 @@ const task8Content = `
 </ul>
 </div>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Firefighter Training</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Validation Scripts (10 min)</h4>
+        <p>Write 3 different ways to validate a customer who says: "You guys wasted my whole week!"</p>
+        <p>(Don't admit fault yet, just validate the feeling).</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The De-escalation Rewrite (10 min)</h4>
+        <p>Rewrite this angry response from a bad agent:</p>
+        <p><em>"Sir, please calm down. It's not my fault the shipping carrier is slow. We can't do anything."</em></p>
+    </div>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <ul>
@@ -492,6 +602,17 @@ const task9Content = `
 <div class="highlight-box">
 <strong>Reply:</strong> "Thanks for reaching out! Let me check that tracking number immediately for you... Okay, looks like it's in transit and will be there Tuesday. Shall I email you the tracking link again?"
 </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Role Play</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Lost Package (10 min)</h4>
+        <p>Simulate this chat: Customer says package says delivered but it's not there.</p>
+        <p>Write your first 3 messages to them. (Greeting -> Investigation -> Proposed Solution).</p>
+    </div>
 </div>
 
 <div class="content-section">
@@ -525,6 +646,22 @@ const task10Content = `
 <strong>20 questions covering all modules.</strong>
 <p>Score 20/20 to receive your Chat Certification.</p>
 </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Live Chat Simulation</h3>
+    <p><strong>One final step before you're certified:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Gauntlet (20 min)</h4>
+        <p>Review 3 of your past chat logs (or mock ones). Score yourself against the "Digital Heroes Standard":</p>
+        <ul>
+            <li>Speed < 30s? (Yes/No)</li>
+            <li>Warm/Human Tone? (Yes/No)</li>
+            <li>Closed the Loop? (Yes/No)</li>
+        </ul>
+        <p>If you scored "No" on any, rewrite that specific interaction.</p>
+    </div>
 </div>
 
 <div class="content-section">
