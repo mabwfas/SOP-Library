@@ -227,12 +227,17 @@ img {
     background: var(--surface);
     border-bottom: 1px solid var(--surface-hover);
     flex-shrink: 0;
+    gap: 12px;
+    overflow: hidden;
 }
 
 .header-left {
     display: flex;
     align-items: center;
     gap: 16px;
+    min-width: 0;
+    flex: 1;
+    overflow: hidden;
 }
 
 .home-link {
@@ -248,6 +253,7 @@ img {
     border-radius: 8px;
     border: 1px solid rgba(20, 184, 166, 0.3);
     transition: all 0.2s;
+    flex-shrink: 0;
 }
 
 .home-link:hover {
@@ -259,10 +265,18 @@ img {
     font-size: 1.3rem;
     margin: 0;
     color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
 }
 
 .training-header h1::before {
     content: '🎓 ';
+}
+
+.header-right {
+    flex-shrink: 0;
 }
 
 .header-right p {
@@ -272,6 +286,7 @@ img {
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .mobile-menu-btn {
@@ -455,6 +470,17 @@ img {
 /* ==================== */
 /* RESPONSIVE / MOBILE  */
 /* ==================== */
+
+/* Medium screens - hide certification text */
+@media (max-width: 1100px) {
+    .header-right {
+        display: none;
+    }
+
+    .training-header h1 {
+        font-size: 1.1rem;
+    }
+}
 
 @media (max-width: 900px) {
     .training-header {
