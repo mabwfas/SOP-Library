@@ -278,6 +278,27 @@ const task2Content = `
         <li>Blue links on blue headers</li>
     </ul>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master Color</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Palette Builder (10 min)</h4>
+        <p>Create a 60-30-10 palette for a "Organic Baby Food" brand:</p>
+        <ul>
+            <li>60% (Dominant): ?</li>
+            <li>30% (Secondary): ?</li>
+            <li>10% (Accent): ?</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Contrast Check (5 min)</h4>
+        <p>You have a white background (#FFFFFF). You want to use a light yellow button (#FFFF00) with white text.</p>
+        <p>Is this accessible? Why or why not?</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -398,6 +419,22 @@ const task4Content = `
         <li><strong>Product grids:</strong> 4-5 columns desktop, 2 mobile</li>
     </ul>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Layout Engineer</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Grid Master (5 min)</h4>
+        <p><strong>Scenario:</strong> You are designing a product grid.</p>
+        <p>How many columns should it be on Desktop? How many on Mobile?</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Spacing Fix (5 min)</h4>
+        <p>A section feels crowded. It currently has 20px margin top/bottom. Using the 8pt system, what should you increase it to for a "breathing" layout on Desktop?</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -444,6 +481,23 @@ const task5Content = `
     <div class="warning-box">
         <strong>🎯 The Lesson</strong>
         <p>Every pixel matters. The smallest design decision can have massive business impact.</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Trust Audit</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Missing Elements (5 min)</h4>
+        <p>Look at a product page on your favorite store.</p>
+        <p>Does it have:</p>
+        <ul style="list-style-type: none;">
+            <li>⬜ Reviews nearby</li>
+            <li>⬜ Return policy link/badge</li>
+            <li>⬜ Shipping estimate</li>
+        </ul>
+        <p>What is missing?</p>
     </div>
 </div>
 `;
@@ -510,6 +564,17 @@ const task6Content = `
         <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Desktop</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1200px+</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Scale up</td></tr>
     </table>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Mobile Expert</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Thumb Zone Check (5 min)</h4>
+        <p>Pick up your phone with one hand. Try to reach the top left corner.</p>
+        <p>Is it easy? (No). Where should the "Add to Cart" or "Menu" button be for easiest access?</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -566,6 +631,23 @@ const task7Content = `
     <h3>Problem: Images Look Blurry</h3>
     <p><strong>Fix:</strong> Request 2x resolution from client, avoid upscaling small images.</p>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Inspector</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Spot the Error (5 min)</h4>
+        <p>Imagine a button that looks perfect on Desktop but is 20px wide on Mobile.</p>
+        <p>What QA rule does this violate? How do you fix it?</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Consistency Audit (5 min)</h4>
+        <p>You notice the client provided 3 different shades of blue for "Primary Color".</p>
+        <p>What do you do? (Guess? Pick one? Ask?)</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -616,6 +698,17 @@ const task8Content = `
         <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"It feels cheap"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Lacks premium cues</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add spacing, upgrade typography</td></tr>
         <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Make logo bigger"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">More brand presence</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add brand colors elsewhere</td></tr>
     </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Diplomat</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Script Practice (5 min)</h4>
+        <p>A client emails: "I hate the white space. Fill it up with more photos of people!"</p>
+        <p>Write a polite 2-sentence response explaining why whitespace is premium (refer to Law #1).</p>
+    </div>
 </div>
 `;
 
@@ -668,6 +761,17 @@ const task9Content = `
         <li><strong>Never:</strong> "Frame 432", "Untitled", "Final-v2-FINAL"</li>
     </ul>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: AI Assistant</h3>
+    <p><strong>Complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Prompt Engineering (5 min)</h4>
+        <p>You need a Hero Image for a "Sustainable Hiking Gear" store.</p>
+        <p>Write a Midjourney or ChatGPT prompt to describe/generate this image. Include lighting, mood, and subject.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -708,14 +812,6 @@ const task10Content = `
         <li>✅ Video approved by senior designer</li>
     </ul>
     
-    <h3>📈 Post-Certification Pathway</h3>
-    <ul>
-        <li><strong>Week 1-2:</strong> Create designs with senior review</li>
-        <li><strong>Week 3-4:</strong> Handle 1-2 projects with QA oversight</li>
-        <li><strong>Month 2:</strong> Manage multiple projects</li>
-        <li><strong>Month 3+:</strong> Full Designer — independent ownership</li>
-    </ul>
-    
     <div class="highlight-box">
         <strong>🎯 Remember the 5 Laws</strong>
         <ol>
@@ -725,6 +821,17 @@ const task10Content = `
             <li>MOBILE FIRST, ALWAYS (70%)</li>
             <li>DESIGN FOR CONVERSION</li>
         </ol>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Final Polish</h3>
+    <p><strong>Final check before you record your video:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Script Prep (10 min)</h4>
+        <p>Draft the bullet points for your "Design Review" section of the video.</p>
+        <p>Which specific screen will you show? Which of the 5 Laws will you highlight on it?</p>
     </div>
 </div>
 `;
