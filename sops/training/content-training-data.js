@@ -280,12 +280,25 @@ const task2Content = `
 </ul>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about company knowledge</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Strategist</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Assign the Funnel (5 min)</h4>
+        <p>Where does each piece of content belong? (Top, Middle, or Bottom Funnel)</p>
+        <ul>
+            <li>"10 Best Shopify Apps for 2024" (Blog) → ?</li>
+            <li>"How we generated $1M for Client X" (Case Study) → ?</li>
+            <li>"Welcome to the family! Here is your discount." (Email) → ?</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The Purpose Check (5 min)</h4>
+        <p>Why do we write "Top of Funnel" content if it doesn't sell anything immediately?</p>
+        <p><em>(Hint: Think about traffic and trust.)</em></p>
+    </div>
 </div>
 `;
 
@@ -307,12 +320,27 @@ const task3Content = `
 </ul>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about formulas</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Hook Master</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Rewrite the Boring (10 min)</h4>
+        <p><strong>Boring Title:</strong> "How to train your dog."</p>
+        <p><strong>Your Task:</strong> Write 3 better hooks for this article:</p>
+        <ol>
+            <li>One using Curiosity Gap.</li>
+            <li>One using Contrarian.</li>
+            <li>One using Promise.</li>
+        </ol>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: AIDA Structure (5 min)</h4>
+        <p>Identify the AIDA parts in this email:</p>
+        <p><em>"Stop losing sales! (A) 70% of carts are abandoned. (I) Imagine recovering half of them. (D) Click here to install our app. (A)"</em></p>
+        <p>Write your own 4-sentence AIDA email for a new coffee brand.</p>
+    </div>
 </div>
 `;
 
@@ -453,12 +481,21 @@ const task5Content = `
 </div>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about research</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Detective Work</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Find the Source (10 min)</h4>
+        <p>Find a PRIMARY source (statista, company report, etc.) for this claim:</p>
+        <p><em>"E-commerce sales are expected to grow in 2025."</em></p>
+        <p>Write down the exact URL and the number found.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The Date Check (5 min)</h4>
+        <p>You find a statistic about Instagram usage from 2019. Is it safe to use in a 2024 blog post? Why or why not?</p>
+    </div>
 </div>
 `;
 
@@ -480,12 +517,26 @@ const task6Content = `
 <p>If you stumble when reading your work out loud, the reader will stumble in their head. Rewrite it until it flows like conversation.</p>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about editing</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Chainsaw</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Adverb Crusher (5 min)</h4>
+        <p>Make these sentences stronger by removing the adverb:</p>
+        <ul>
+            <li>"He talked loudly." → (He shouted)</li>
+            <li>"She closed the door firmly." → (She slammed the door)</li>
+            <li>"The price rose quickly." → (The price skyrocketed)</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Passive to Active (5 min)</h4>
+        <p>Rewrite this passive sentence to be active:</p>
+        <p><em>"The marketing campaign was launched by the team."</em></p>
+        <p>(Hint: Start with "The team...")</p>
+    </div>
 </div>
 `;
 
@@ -512,12 +563,21 @@ const task7Content = `
 </ul>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about tools</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Tool Belt</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Visual Hunt (5 min)</h4>
+        <p>Go to Unsplash.com. Find an image for a blog post about "Remote Work Burnout" that IS NOT a person holding their head in their hands.</p>
+        <p>What did you choose? Why is it better?</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Grade Level Test (5 min)</h4>
+        <p>Go to HemingwayApp.com. Paste in a paragraph you wrote. Check the Grade Level.</p>
+        <p>If it's above Grade 8, simplify it. What did you change?</p>
+    </div>
 </div>
 `;
 
@@ -539,12 +599,25 @@ const task8Content = `
 </div>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about repurposing</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Recycler</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Thread Maker (10 min)</h4>
+        <p>Take one of your previous exercises (like the SEO tips).</p>
+        <p>Turn it into a 3-tweet thread.</p>
+        <ul>
+            <li>Tweet 1: Hook</li>
+            <li>Tweet 2: The Tip</li>
+            <li>Tweet 3: CTA</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: LinkedIn Spin (5 min)</h4>
+        <p>How would you frame that same tip for LinkedIn? (Hint: Make it about business growth or personal leadership).</p>
+    </div>
 </div>
 `;
 
@@ -572,12 +645,21 @@ const task9Content = `
 </div>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about scenarios</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Editor</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Jargon Fixer (5 min)</h4>
+        <p>Translate this corporate speak into plain English:</p>
+        <p><em>"We need to drill down into the granular data to facilitate a paradigm shift in our learnings."</em></p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Headline Doctor (5 min)</h4>
+        <p>Fix this bad headline: "Thoughts on Digital Marketing"</p>
+        <p>Give me one version that promises a result.</p>
+    </div>
 </div>
 `;
 
@@ -607,12 +689,20 @@ const task10Content = `
 </div>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Final Quiz?</h3>
-<ul>
-<li>📝 20 questions covering all training modules</li>
-<li>🎯 Score <strong>20/20</strong> to receive certification</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Portfolio</h3>
+    <p><strong>To get certified, you must assemble your portfolio:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Portfolio Check (20 min)</h4>
+        <p>Do you have samples ready for:</p>
+        <ul style="list-style-type: none;">
+            <li>⬜ 1 Educational Blog Post (SEO Optimized)</li>
+            <li>⬜ 1 Twitter/X Thread</li>
+            <li>⬜ 1 AIDA Email</li>
+        </ul>
+        <p>If not, which one will you write first?</p>
+    </div>
 </div>
 `;
 
