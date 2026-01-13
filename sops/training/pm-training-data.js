@@ -350,6 +350,32 @@ const task2Content = `
             <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Next morning by 10 AM</td>
         </tr>
     </table>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master Team roles</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Response Time Speed Run (5 min)</h4>
+        <p>Without looking at the table, write down the maximum response times for:</p>
+        <ul>
+            <li>Urgent Issue</li>
+            <li>Standard Question</li>
+            <li>Revision Request</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Who Do I Ping? (5 min)</h4>
+        <p>For each scenario, identify which team member is responsible:</p>
+        <ul>
+            <li>"My payment failed on the checkout page."</li>
+            <li>"Can you make the blue slightly darker?"</li>
+            <li>"I want to upgrade to your marketing package."</li>
+        </ul>
+    </div>
 </div>
 `;
 
@@ -596,6 +622,27 @@ const task5Content = `
         <p>What takes 3 days of messages can be done in <strong>1 hour</strong> on a live call.</p>
     </div>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master Daily Updates</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Write a Daily Update (10 min)</h4>
+        <p>Scenario: It's Day 4. You finished the About Us page and uploaded 10 products. Tomorrow you will work on the navigation menu. Write the update.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The "Silent Client" Test (5 min)</h4>
+        <p>A client hasn't replied to your updates for 2 days. What do you do?</p>
+        <ul>
+            <li>Option A: Wait until they reply</li>
+            <li>Option B: Send another update continuing fast progress</li>
+            <li>Option C: Stop working</li>
+        </ul>
+        <p><em>(Hint: The answer is B. Never stop momentum.)</em></p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -632,6 +679,21 @@ const task6Content = `
         <p>Once I understand this, I'll create a revised concept that nails your vision."</p>
     </div>
     <p><strong>NEVER:</strong> Get defensive. <strong>ALWAYS:</strong> Ask clarifying questions.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Face the Difficult Conversations</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The Scope Creep Script (5 min)</h4>
+        <p>A client asks you to "quickly add a reviews integration" that costs $29/mo and requires code injection. It was not in the contract. Write your response.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The "I Hate It" Response (5 min)</h4>
+        <p>A client sees the first draft and says "This looks cheap." Write your immediate response to de-escalate and uncover the real issue.</p>
+    </div>
 </div>
 `;
 
@@ -737,6 +799,27 @@ const task8Content = `
         <p><strong>Need Decision By:</strong> [Deadline for response]</p>
     </div>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master Escalation</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Level ID Quiz (5 min)</h4>
+        <p>Assign a Level (1, 2, or 3) to these issues:</p>
+        <ul>
+            <li>Client asks for logo color change (Level ?)</li>
+            <li>Client says "I am very disappointed with this progress" (Level ?)</li>
+            <li>Client says "That's it, I want my money back" (Level ?)</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Draft an Escalation (10 min)</h4>
+        <p>Scenario: It's Day 14. Developer ghosted 3 days ago. Client messaged today "Where is my store?". You need GM help immediately.</p>
+        <p>Draft the escalation message using the template above.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -799,6 +882,22 @@ const task9Content = `
     <h3>🎓 Handover Meeting (30 min)</h3>
     <p>Final Review → Training → Access Handover → Support Info → Review Request</p>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Master the Handover</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: QC Spot Check (5 min)</h4>
+        <p>You are about to hand over a store. You check mobile and the logo is huge and blocking the menu. The About page has "Lorem Ipsum" text.</p>
+        <p>What 2 items on the checklist were missed? What do you do?</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Kickoff Rehearsal (5 min)</h4>
+        <p>Practice out loud: Introduce yourself and the agenda for a Kickoff call in under 2 minutes.</p>
+    </div>
+</div>
 `;
 
 // ===============================================
@@ -844,14 +943,16 @@ const task10Content = `
         <strong>🎯 Your Daily Mantra</strong>
         <p style="font-style: italic; font-size: 1.1em;">"Today, I am the calm in the storm. I bring clarity, organization, and confidence to every project."</p>
     </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Ready to Launch</h3>
+    <p><strong>One final step before you record:</strong></p>
     
-    <h3>📈 Post-Certification Pathway</h3>
-    <ul>
-        <li><strong>Week 1-2:</strong> Shadow existing PM, handle portions with review</li>
-        <li><strong>Week 3-4:</strong> Own 1-2 projects with daily check-ins</li>
-        <li><strong>Month 2:</strong> Manage 2-3 projects, weekly check-ins</li>
-        <li><strong>Month 3+:</strong> Full PM — 3-5 projects, independent decisions</li>
-    </ul>
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Video Outline (10 min)</h4>
+        <p>Outline your 30-minute video. Write down the 5 scenarios you will choose to role-play and why.</p>
+    </div>
 </div>
 `;
 
