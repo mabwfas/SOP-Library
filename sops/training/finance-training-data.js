@@ -296,12 +296,25 @@ const task2Content = `
 <p>We charge premium prices because we deliver premium results. This allows us to pay premium salaries.</p>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about company models</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Model Master</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Margin Calculator (5 min)</h4>
+        <p><strong>Scenario:</strong> We sell a Website for $10,000.</p>
+        <ul>
+            <li>Developer Cost: $3,000</li>
+            <li>PM Cost: $1,000</li>
+            <li>Hosting: $100</li>
+        </ul>
+        <p>Calculate the <strong>Gross Profit</strong> and <strong>Gross Margin %</strong>.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Pitch the Premium (5 min)</h4>
+        <p>A new employee asks: "Why are our prices so high?" Write a 1-sentence answer explaining how Price = Value = Salaries.</p>
+    </div>
 </div>
 `;
 
@@ -320,12 +333,27 @@ const task3Content = `
 </ul>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about P&L</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: P&L Analyst</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Spot the Error (10 min)</h4>
+        <p>You review a P&L draft. You see "Office Rent" listed under COGS. Is this correct? Why or why not?</p>
+        <p><em>(Hint: Does rent change if we sell 1 more website?)</em></p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Calculate EBITDA (5 min)</h4>
+        <ul>
+            <li>Net Income: $50,000</li>
+            <li>Interest: $2,000</li>
+            <li>Taxes: $10,000</li>
+            <li>Depreciation: $5,000</li>
+            <li>Amortization: $0</li>
+        </ul>
+        <p>What is the EBITDA?</p>
+    </div>
 </div>
 `;
 
@@ -452,12 +480,22 @@ const task5Content = `
 </div>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about unit economics</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Growth Engineer</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Calculate CAC (5 min)</h4>
+        <p>We spent $5,000 on ads. We got 10 new clients.</p>
+        <p>What is our CAC?</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Analyze Ratio (5 min)</h4>
+        <p>CAC is $500. Average client pays us $1,200 total.</p>
+        <p>LTV:CAC Ratio is 2.4:1.</p>
+        <p>Is this Good, Bad, or OK? Should we scale ads?</p>
+    </div>
 </div>
 `;
 
@@ -477,12 +515,28 @@ const task6Content = `
 <p>Cash in Bank / Monthly Burn Rate = Months of Life left.</p>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about budgeting</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Forecaster</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Runway Check (5 min)</h4>
+        <p>Bank Balance: $40,000.</p>
+        <p>Monthly Expenses (Burn): $15,000.</p>
+        <p>What is our Runway? Are we in danger? (<6 months is danger).</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: The Cut (10 min)</h4>
+        <p>We need to cut burn by $2,000/month. Look at this list:</p>
+        <ul>
+            <li>Office Snacks: $300</li>
+            <li>Unused Zoom Seats: $200</li>
+            <li>Marketing Assistant (Contractor): $1,500</li>
+            <li>Production Server: $500</li>
+        </ul>
+        <p>What do you cut and why?</p>
+    </div>
 </div>
 `;
 
@@ -499,12 +553,25 @@ const task7Content = `
 </ul>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about tools</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Tool Master</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Expense Categorization (5 min)</h4>
+        <p>Match the expense to the tool:</p>
+        <ul>
+            <li>Client paid invoice → ? (Stripe/QuickBooks)</li>
+            <li>Buying team lunch → ? (Brex)</li>
+            <li>Modeling growth forecast → ? (Excel)</li>
+            <li>Generating P&L header → ? (QuickBooks)</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Excel Audit (5 min)</h4>
+        <p>Which Excel function would you use to find a client's specific payment amount from a list of 1000 transactions?</p>
+    </div>
 </div>
 `;
 
@@ -519,12 +586,20 @@ const task8Content = `
 </ul>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about compliance</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Compliance Officer</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Classification Test (5 min)</h4>
+        <p>Worker A: Works 9-5, uses company laptop, managed daily. (W2 or 1099?)</p>
+        <p>Worker B: Uses own laptop, paid per project, sets own hours. (W2 or 1099?)</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Nexus Check (5 min)</h4>
+        <p>We hired a remote employee in Texas. Do we now have "Nexus" in Texas? What does that mean for Sales Tax?</p>
+    </div>
 </div>
 `;
 
@@ -547,12 +622,21 @@ const task9Content = `
 </ul>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Quiz?</h3>
-<ul>
-<li>📝 10 questions about scenarios</li>
-<li>🎯 Score <strong>10/10</strong> to proceed</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: CFO Simulator</h3>
+    <p><strong>Before taking the quiz, complete these exercises:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: The "No" Email (10 min)</h4>
+        <p>Draft an email to the Marketing Manager rejecting their $2,000 tool request because the ROI isn't clear.</p>
+        <p>Keep it professional but firm on the "Profit First" principle.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #06B6D4; margin-top: 0;">📝 Exercise 2: Price Increase Defense (10 min)</h4>
+        <p>A client complains about a 5% inflation price increase.</p>
+        <p>Write a script explaining that this allows us to retain top talent (W2 employees) who work on their account.</p>
+    </div>
 </div>
 `;
 
@@ -580,12 +664,20 @@ const task10Content = `
 </div>
 </div>
 
-<div class="content-section">
-<h3>🚀 Ready for the Final Quiz?</h3>
-<ul>
-<li>📝 20 questions covering all training modules</li>
-<li>🎯 Score <strong>20/20</strong> to receive certification</li>
-</ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: The Final Audit</h3>
+    <p><strong>One final check before you're certified:</strong></p>
+    
+    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">📝 Exercise 1: Risk Assessment (20 min)</h4>
+        <p>Look at the company's mock dashboard (imagine one):</p>
+        <ul>
+            <li>Runway: 8 months</li>
+            <li>LTV:CAC: 2.1</li>
+            <li>AR > 60 days: $20,000</li>
+        </ul>
+        <p>Identify the BIGGEST risk here and write a 3-bullet action plan to fix it.</p>
+    </div>
 </div>
 `;
 
