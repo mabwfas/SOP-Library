@@ -38,10 +38,11 @@
         .header {
             background: linear-gradient(135deg, var(--purple) 0%, #5B21B6 100%);
             color: white;
-            padding: 60px 40px;
+            padding: 30px 40px;
+            /* Reduced from 60px */
             text-align: center;
             border-radius: 0 0 30px 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .header h1 {
@@ -525,7 +526,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
         }
-    
+
         /* Mobile Header - Fixed Collision */
         .mobile-header {
             display: none;
@@ -540,24 +541,24 @@
             align-items: center;
             justify-content: flex-start;
             gap: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         .mobile-menu-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 44px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             border-radius: 10px;
             font-size: 1.4rem;
             cursor: pointer;
             flex-shrink: 0;
         }
-        
+
         .mobile-home-btn {
             display: flex;
             align-items: center;
@@ -572,21 +573,20 @@
             border: 1px solid rgba(16, 185, 129, 0.3);
             white-space: nowrap;
         }
-        
+
         @media (max-width: 768px) {
             .mobile-header {
                 display: flex;
             }
-            
+
             .main-content {
                 padding-top: 70px !important;
             }
-            
+
             .header {
                 margin-top: 56px;
             }
         }
-
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
@@ -674,6 +674,283 @@
                     <span class="badge">🤖 20 ChatGPT Prompts</span>
                 </div>
             </header>
+
+            <!-- Growth Calendars Section (NEW) -->
+            <style>
+                .calendar-section {
+                    margin-bottom: 40px;
+                }
+
+                .calendar-grid {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    /* Vertical Stack */
+                    gap: 30px;
+                    margin-bottom: 20px;
+                }
+
+                .calendar-card {
+                    background: white;
+                    border-radius: 15px;
+                    padding: 25px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                    border: 1px solid #e2e8f0;
+                }
+
+                .calendar-header-row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    border-bottom: 2px solid #f0f0f0;
+                    padding-bottom: 15px;
+                }
+
+                .calendar-title {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    color: var(--primary);
+                    margin: 0;
+                    border: none;
+                    text-align: left;
+                    padding: 0;
+                }
+
+                .cal-month {
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    gap: 8px;
+                }
+
+                .cal-day {
+                    aspect-ratio: 1;
+                    /* Keep square */
+                    min-height: 85px;
+                    /* Ensure space for content */
+                    border: 1px solid #eee;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    position: relative;
+                    background: #f8fafc;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5px;
+                }
+
+                .cal-day.active {
+                    background: #fff;
+                    border-color: #cbd5e1;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+                }
+
+                .cal-num {
+                    align-self: flex-start;
+                    font-weight: 600;
+                    color: #94a3b8;
+                    margin-bottom: 2px;
+                }
+
+                .cal-order-tag {
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: #064E3B;
+                    background: #D1FAE5;
+                    border: 1px solid #A7F3D0;
+                    border-radius: 4px;
+                    padding: 2px 4px;
+                    margin-top: 2px;
+                    width: 100%;
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .cal-duration-text {
+                    font-size: 9px;
+                    color: #64748B;
+                    margin-top: auto;
+                    /* Push to bottom */
+                    font-weight: 600;
+                    margin-bottom: 2px;
+                }
+
+                .cal-bar {
+                    width: 100%;
+                    height: 4px;
+                    background: var(--purple);
+                    border-radius: 2px;
+                    opacity: 0.5;
+                }
+
+                .mini-random-btn {
+                    padding: 8px 16px;
+                    background: white;
+                    color: var(--primary);
+                    border: 1px solid #cbd5e1;
+                    border-radius: 6px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                    transition: all 0.2s;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                }
+
+                .mini-random-btn:hover {
+                    background: #f1f5f9;
+                    border-color: #94a3b8;
+                }
+
+                @media (max-width: 600px) {
+                    .cal-month {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                }
+            </style>
+
+            <section class="calendar-section" id="growth-calendars">
+                <div class="section-header">
+                    <div class="section-number">G</div>
+                    <h2>Growth Simulation</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <strong>💡 Simulation Controls:</strong><br>
+                    Use the <strong>Randomize</strong> button on each calendar to independently shift dates, vary
+                    amounts (+/- $50), and change delivery times (3-5 days).<br>
+                    <em>Note: Month 1 first 15 days logic prioritizes alternate spacing.</em>
+                </div>
+
+                <div class="calendar-grid">
+                    <!-- Calendar 1 -->
+                    <div class="calendar-card" id="cal1">
+                        <div class="calendar-header-row">
+                            <div class="calendar-title">Month 1: Portfolio Growth 🚀</div>
+                            <button class="mini-random-btn" onclick="randomizeMonth(1)">🎲 Randomize</button>
+                        </div>
+                        <div class="cal-month" id="month1-grid"></div>
+                    </div>
+
+                    <!-- Calendar 2 -->
+                    <div class="calendar-card" id="cal2">
+                        <div class="calendar-header-row">
+                            <div class="calendar-title">Month 2: Ongoing Maintenance 🛠️</div>
+                            <button class="mini-random-btn" onclick="randomizeMonth(2)">🎲 Randomize</button>
+                        </div>
+                        <div class="cal-month" id="month2-grid"></div>
+                    </div>
+                </div>
+
+                <script>
+                    const baseData1 = [
+                        { day: 1, val: 110 }, { day: 3, val: 330 }, { day: 5, val: 120 }, { day: 7, val: 305 },
+                        { day: 8, val: 100 }, { day: 10, val: 250 }, { day: 11, val: 320 }, { day: 13, val: 410 },
+                        { day: 15, val: 140 }, { day: 16, val: 105 }, { day: 18, val: 220 }, { day: 20, val: 320 },
+                        { day: 23, val: 420 }, { day: 26, val: 220 }, { day: 27, val: 420 },
+                        { day: 28, val: 220 }, { day: 28, val: 450 },
+                        { day: 29, val: 220 }, { day: 30, val: 450 }
+                    ];
+                    // Note: baseData1 day 28 had two entries originally. Handled via list normally but here one replaces unless we support multiples per day. 
+                    // Let's stick to list.
+
+                    const baseData2 = [
+                        { day: 1, val: 320 }, { day: 4, val: 420 }, { day: 7, val: 220 }, { day: 10, val: 420 },
+                        { day: 13, val: 390 }, { day: 17, val: 410 }, { day: 19, val: 322 }, { day: 22, val: 350 },
+                        { day: 25, val: 420 }, { day: 28, val: 390 }
+                    ];
+
+                    function renderCalendar(containerId, data) {
+                        const container = document.getElementById(containerId);
+                        container.innerHTML = '';
+                        const dayMap = {};
+                        data.forEach(item => {
+                            if (!dayMap[item.day]) dayMap[item.day] = [];
+                            dayMap[item.day].push(item);
+                        });
+
+                        for (let i = 1; i <= 30; i++) {
+                            const dayEl = document.createElement('div');
+                            dayEl.className = 'cal-day';
+
+                            const numEl = document.createElement('span');
+                            numEl.className = 'cal-num';
+                            numEl.innerText = i;
+                            dayEl.appendChild(numEl);
+
+                            if (dayMap[i]) {
+                                dayEl.classList.add('active');
+                                dayMap[i].forEach(order => {
+                                    const wrapper = document.createElement('div');
+                                    wrapper.style.width = '100%';
+                                    wrapper.style.marginBottom = '4px';
+
+                                    const tag = document.createElement('div');
+                                    tag.className = 'cal-order-tag';
+                                    tag.innerText = '$' + order.val;
+
+                                    const dur = document.createElement('div');
+                                    dur.className = 'cal-duration-text';
+                                    dur.innerText = `⏱️ ${order.duration} Days`;
+
+                                    const bar = document.createElement('div');
+                                    bar.className = 'cal-bar';
+                                    bar.style.width = (order.duration * 20) + '%';
+                                    bar.style.backgroundColor = order.duration > 4 ? '#EF4444' : '#8B5CF6';
+
+                                    wrapper.appendChild(tag);
+                                    wrapper.appendChild(dur);
+                                    wrapper.appendChild(bar);
+                                    dayEl.appendChild(wrapper);
+                                });
+                            }
+                            container.appendChild(dayEl);
+                        }
+                    }
+
+                    function randomizeMonth(monthNum) {
+                        const base = monthNum === 1 ? baseData1 : baseData2;
+                        const containerId = monthNum === 1 ? 'month1-grid' : 'month2-grid';
+
+                        const randomized = base.map(item => {
+                            let newDay = item.day;
+                            if (monthNum === 1 && item.day <= 15) {
+                                // Jitter small to keep alternate spacing
+                                const jitter = Math.floor(Math.random() * 3) - 1;
+                                newDay = item.day + jitter;
+                            } else {
+                                const jitter = Math.floor(Math.random() * 5) - 2;
+                                newDay = item.day + jitter;
+                            }
+                            if (newDay < 1) newDay = 1;
+                            if (newDay > 30) newDay = 30;
+
+                            let delta = Math.floor(Math.random() * 101) - 50;
+                            let newVal = item.val + delta;
+                            if (newVal < 50) newVal = 50;
+
+                            let newDur = Math.floor(Math.random() * 3) + 3;
+
+                            return { day: newDay, val: newVal, duration: newDur };
+                        });
+
+                        renderCalendar(containerId, randomized);
+                    }
+
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const init1 = baseData1.map(i => ({ ...i, duration: Math.floor(Math.random() * 3) + 3 }));
+                        const init2 = baseData2.map(i => ({ ...i, duration: Math.floor(Math.random() * 3) + 3 }));
+                        renderCalendar('month1-grid', init1);
+                        renderCalendar('month2-grid', init2);
+                    });
+                </script>
+            </section>
+
+
+
+
 
             <!-- Section 1: Overview -->
             <section class="section" id="overview">
@@ -982,7 +1259,8 @@
                     <p>After receiving instructions, echo them back:</p>
                     <p
                         style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
-                        <em>"Just to confirm — you want me to [repeat task]. Is that correct?"</em></p>
+                        <em>"Just to confirm — you want me to [repeat task]. Is that correct?"</em>
+                    </p>
                     <p style="margin-top: 5px;">Prevents misunderstandings.</p>
                 </div>
 
@@ -1012,7 +1290,8 @@
                     <p>Acknowledge instantly, even with just a few words:</p>
                     <p
                         style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
-                        <em>"Got it, working on it now."</em></p>
+                        <em>"Got it, working on it now."</em>
+                    </p>
                     <p style="margin-top: 5px;"><strong>Speed matters more than length.</strong></p>
                 </div>
 
@@ -1020,7 +1299,8 @@
                     <h4>6️⃣ The "As Discussed" Trail 📧</h4>
                     <p>After every call, send a written summary:</p>
                     <p style="background: white; padding: 10px; border-radius: 8px; margin-top: 10px; color: #333;">
-                        <em>"As discussed, we agreed on: [bullet points]"</em></p>
+                        <em>"As discussed, we agreed on: [bullet points]"</em>
+                    </p>
                     <p style="margin-top: 5px;">Creates paper trail, prevents disputes.</p>
                 </div>
 
@@ -1051,7 +1331,8 @@
                     <p>Every Friday, send a summary to stakeholders:</p>
                     <p
                         style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
-                        <em>"This week: [accomplishments]. Next week: [priorities]. Blockers: [if any]"</em></p>
+                        <em>"This week: [accomplishments]. Next week: [priorities]. Blockers: [if any]"</em>
+                    </p>
                 </div>
 
                 <div class="story-box" style="margin-top: 15px;">
