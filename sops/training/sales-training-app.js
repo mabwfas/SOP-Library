@@ -111,7 +111,7 @@ function openTask(index) {
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (10/10 Required)</button>
-                <button class="back-btn" onclick="devSkipTask(${index})" style="background: rgba(245, 158, 11, 0.3); border-color: #F59E0B;">⏩ Skip (Dev Mode)</button>
+                
             </div>
         `;
     } else {
@@ -136,7 +136,7 @@ function openTask(index) {
             html += `
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                     <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
-                    <button class="back-btn" onclick="devSkipTask(${index})" style="background: rgba(245, 158, 11, 0.3); border-color: #F59E0B;">⏩ Skip (Dev Mode)</button>
+                    
                 </div>
             `;
         } else {
@@ -151,7 +151,7 @@ function openTask(index) {
                 </div>
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                     <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
-                    <button class="back-btn" onclick="devSkipTask(${index})" style="background: rgba(245, 158, 11, 0.3); border-color: #F59E0B;">⏩ Skip (Dev Mode)</button>
+                    
                 </div>
             `;
         }
@@ -165,14 +165,7 @@ function openTask(index) {
     }
 }
 
-// DEV MODE: Skip task without quiz (REMOVE THIS FOR PRODUCTION)
-function devSkipTask(taskIndex) {
-    const task = trainingTasks[taskIndex];
 
-    // Mark task complete
-    if (!progress.completedTasks.includes(task.id)) {
-        progress.completedTasks.push(task.id);
-    }
     if (task.id < 10) {
         progress.currentTask = task.id + 1;
     }
@@ -758,3 +751,4 @@ function saveTraineeName() {
         modal.remove();
     }
 }
+

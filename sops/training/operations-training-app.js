@@ -1,4 +1,4 @@
-// Operations Training Application Logic
+﻿// Operations Training Application Logic
 
 // State Management
 let currentTask = 0;
@@ -133,7 +133,7 @@ function openTask(index) {
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === 11 ? '20/20' : '10/10'} Required)</button>
-                <button class="back-btn" onclick="devSkipTask(${index})" style="background: rgba(245, 158, 11, 0.3); border-color: #F59E0B;">⏩ Skip (Dev Mode)</button>
+                
             </div>
         `;
     } else {
@@ -556,3 +556,4 @@ function saveTraineeName() {
         document.getElementById('namePromptModal').remove();
     }
 }
+

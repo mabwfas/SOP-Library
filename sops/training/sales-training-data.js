@@ -1,4 +1,4 @@
-// Sales Training Data - Tasks 1-5
+﻿// Sales Training Data - Tasks 1-5
 const trainingTasks = [
     {
         id: 1,
@@ -440,6 +440,48 @@ If you can't score 10/10 on a quiz when you have unlimited time and can review t
 </div>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You've learned 10 powerful lessons about the mindset of successful salespeople. Now it's time to prove you understood them.</p>
@@ -618,6 +660,48 @@ const task2Content = `
 </div>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You've learned about Digital Heroes' positioning, rules, and values. Now prove your understanding.</p>
@@ -880,6 +964,48 @@ Product mastery gives you:
 <p style="margin-top: 15px;">Always mention future services during closing: <em>"After support period ends, we offer monthly maintenance if you want ongoing help."</em></p>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You now know every package, price, timeline, and feature. Prove your mastery.</p>
@@ -1140,6 +1266,48 @@ graph TD
 <p><strong>It's better to say NO to a bad $2,000 project than suffer through a nightmare.</strong></p>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You now know how to qualify leads and protect your time. Prove your understanding.</p>
@@ -1291,6 +1459,48 @@ What matters most to YOU in choosing a developer?"
 </div>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You know the templates and follow-up sequence. Prove it.</p>
@@ -1447,6 +1657,48 @@ Your job: Make the <strong>pain of NOT buying</strong> greater than the <strong>
 </table>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You've learned the psychology of influence. Prove you understand it.</p>
@@ -1602,6 +1854,48 @@ graph LR
 <p>By bringing up the concern yourself, you defuse it before it becomes a wall.</p>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You've learned to handle every major objection. Prove it.</p>
@@ -1725,6 +2019,48 @@ Many salespeople lose deals by continuing to talk after the close. Don't explain
 </ol>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You've learned the art of closing. Prove your mastery.</p>
@@ -1877,6 +2213,48 @@ The dev team should NOT need to ask the client for information you already discu
 </div>
 </div>
 
+
+<div class="content-section">
+<h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ MANDATORY:</strong> Watch ALL 4 videos below before taking the final quiz. These videos will make you better than 90% of salespeople in the market. Take notes. Re-watch key sections. This is your secret weapon.
+</div>
+
+<h4>📺 Video 1: The Ultimate Sales Training for 2026 [Full Course]</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/StVqS0jD7Ls?rel=0&modestbranding=1" title="The Ultimate Sales Training for 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Ultimate Sales Training for 2026 [Full Course]</strong></div>
+</div>
+
+<h4>📺 Video 2: How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JE2_7elAcxM?rel=0&modestbranding=1" title="How to Sell Better than 99%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE)</strong></div>
+</div>
+
+<h4>📺 Video 3: The Best SALES TRAINING On The Internet</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NcD2t9qt-fM?rel=0&modestbranding=1" title="The Best Sales Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - The Best SALES TRAINING On The Internet</strong></div>
+</div>
+
+<h4>📺 Video 4: My Best Sales Tactic (to Make a TON of Money)</h4>
+<div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bx48qPlaGvE?rel=0&modestbranding=1" title="My Best Sales Tactic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+    <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Alex Hormozi - My Best Sales Tactic (to Make a TON of Money)</strong></div>
+</div>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
+<strong>✅ Key Takeaways to Note:</strong>
+<ul style="margin-bottom: 0;">
+<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts - reduce scope instead</li>
+<li>Ask curious questions instead of arguing</li>
+<li>Emotional control is your superpower</li>
+<li>Volume beats perfection every time</li>
+</ul>
+</div>
+</div>
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>This quiz tests realistic scenarios combining everything you've learned.</p>
@@ -2161,3 +2539,4 @@ const task10Quiz = [
 
 // Export all quizzes
 const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+
