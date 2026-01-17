@@ -934,6 +934,7 @@
             font-weight: bold;
         }
     </style>
+    
 </head>
 
 <body>
@@ -972,50 +973,15 @@
             </div>
         </header>
 
-        <!-- Path Cards -->
-        <section class="path-section">
-            <div class="path-card kra" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
-                <div class="path-header"><span class="path-icon">📋</span><span class="path-title">KRA</span></div>
-                <div class="path-full">Key Result Areas</div>
-                <div class="path-desc">"What I'm responsible for"</div>
-                <div class="path-features">
-                    <div>Your core responsibilities</div>
-                    <div>Areas you own & manage</div>
-                    <div>What success looks like</div>
-                    <div>How you collaborate</div>
-                </div>
-            </div>
-            <div class="path-card sop" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
-                <div class="path-header"><span class="path-icon">📖</span><span class="path-title">Home</span></div>
-                <div class="path-full">Standard Operating Procedures</div>
-                <div class="path-desc">"How I do my job"</div>
-                <div class="path-features">
-                    <div>Step-by-step processes</div>
-                    <div>Templates & scripts</div>
-                    <div>Best practices & tips</div>
-                    <div>ChatGPT prompts</div>
-                </div>
-            </div>
-            <div class="path-card kpi" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
-                <div class="path-header"><span class="path-icon">📊</span><span class="path-title">KPI</span></div>
-                <div class="path-full">Key Performance Indicators</div>
-                <div class="path-desc">"How I'm measured"</div>
-                <div class="path-features">
-                    <div>Performance targets</div>
-                    <div>Metrics & benchmarks</div>
-                    <div>How you're evaluated</div>
-                    <div>Tracking frequency</div>
-                </div>
-            </div>
-        </section>
+        
 
-        <!-- Role Selection -->
-        <div class="section-header" id="roles">
-            <span>👤</span>
-            <h2>SELECT YOUR ROLE</h2>
+                <!-- Quick Access Cards -->
+        <div class="section-header" style="border-color: #EC4899;">
+            <span>⚡</span>
+            <h2>QUICK ACCESS</h2>
         </div>
 
-        <div class="role-grid">
+        <div class="role-grid" style="margin-bottom: 20px;">
             <!-- Employee Handbook Card -->
             <a href="employee-handbook.html" class="role-card" style="text-decoration: none; border-color: #EC4899;">
                 <div class="role-header">
@@ -1029,11 +995,52 @@
                     <div>• FAQ (60+ Q&A)</div>
                 </div>
                 <div class="role-links">
-                    <span class="role-link" style="background: rgba(236, 72, 153, 0.2); color: #EC4899; flex:1;">View
-                        Handbook</span>
+                    <span class="role-link" style="background: rgba(236, 72, 153, 0.2); color: #EC4899; flex:1;">View Handbook</span>
                 </div>
             </a>
 
+            <!-- Onboarding Card -->
+            <a href="onboarding.html" class="role-card" style="text-decoration: none; border-color: #3B82F6;">
+                <div class="role-header">
+                    <div class="role-icon">🚀</div>
+                    <div class="role-title">Onboarding</div>
+                </div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Day 1 Guides</div>
+                    <div style="margin-bottom: 2px;">• Role Setup</div>
+                    <div style="margin-bottom: 2px;">• Tool Access</div>
+                    <div>• First Tasks</div>
+                </div>
+                <div class="role-links">
+                    <span class="role-link" style="background: rgba(59, 130, 246, 0.2); color: #3B82F6; flex:1;">View Onboarding</span>
+                </div>
+            </a>
+
+            <!-- Training Hub Card -->
+            <a href="training-hub.html" class="role-card" style="text-decoration: none; border-color: #10B981;">
+                <div class="role-header">
+                    <div class="role-icon">🎓</div>
+                    <div class="role-title">Training Hub</div>
+                </div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• 12 Role Trainings</div>
+                    <div style="margin-bottom: 2px;">• 300+ Quiz Questions</div>
+                    <div style="margin-bottom: 2px;">• Interactive Modules</div>
+                    <div>• Certifications</div>
+                </div>
+                <div class="role-links">
+                    <span class="role-link" style="background: rgba(16, 185, 129, 0.2); color: #10B981; flex:1;">Start Training</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Role Selection -->
+        <div class="section-header" id="roles">
+            <span>👤</span>
+            <h2>SELECT YOUR ROLE</h2>
+        </div>
+
+        <div class="role-grid">
             <!-- Sales -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">💰</span><span class="role-title">Sales</span></div>
@@ -1051,8 +1058,7 @@
             </div>
             <!-- PM -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project
-                        Manager</span></div>
+                <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project  Manager</span></div>
                 <ul class="role-details">
                     <li>Timeline Tracking</li>
                     <li>Resource Allocation</li>
@@ -1229,22 +1235,59 @@
 
 
 
+        <!-- Path Cards -->
+        <section class="path-section">
+            <div class="path-card kra" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
+                <div class="path-header"><span class="path-icon">📋</span><span class="path-title">KRA</span></div>
+                <div class="path-full">Key Result Areas</div>
+                <div class="path-desc">"What I'm responsible for"</div>
+                <div class="path-features">
+                    <div>Your core responsibilities</div>
+                    <div>Areas you own & manage</div>
+                    <div>What success looks like</div>
+                    <div>How you collaborate</div>
+                </div>
+            </div>
+            <div class="path-card sop" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
+                <div class="path-header"><span class="path-icon">📖</span><span class="path-title">Home</span></div>
+                <div class="path-full">Standard Operating Procedures</div>
+                <div class="path-desc">"How I do my job"</div>
+                <div class="path-features">
+                    <div>Step-by-step processes</div>
+                    <div>Templates & scripts</div>
+                    <div>Best practices & tips</div>
+                    <div>ChatGPT prompts</div>
+                </div>
+            </div>
+            <div class="path-card kpi" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
+                <div class="path-header"><span class="path-icon">📊</span><span class="path-title">KPI</span></div>
+                <div class="path-full">Key Performance Indicators</div>
+                <div class="path-desc">"How I'm measured"</div>
+                <div class="path-features">
+                    <div>Performance targets</div>
+                    <div>Metrics & benchmarks</div>
+                    <div>How you're evaluated</div>
+                    <div>Tracking frequency</div>
+                </div>
+            </div>
+        </section>
+
         <footer class="footer">
             Digital Heroes Library | v2.0 | © 2026
         </footer>
     </div>
     <script src="admin-mode.js"></script>
     <script>
-        // Inline Admin Button Integration
-        function toggleAdminMode() {
+        // Inline Admin Button Integration 
+ function toggleAdminMode() {
             const floatingBtn = document.getElementById('adminFloatingBtn');
             if (floatingBtn) {
                 floatingBtn.click();
             }
         }
 
-        // Sync inline button state with admin mode state
-        function syncInlineButton() {
+        // Sync inline button state with admin mode state 
+ function syncInlineButton() {
             const inlineBtn = document.getElementById('adminInlineBtn');
             const isActive = document.body.classList.contains('admin-active');
             if (inlineBtn) {
@@ -1258,12 +1301,12 @@
             }
         }
 
-        // Watch for admin mode changes
-        const observer = new MutationObserver(syncInlineButton);
+        // Watch for admin mode changes 
+ const observer = new MutationObserver(syncInlineButton);
         observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
-        // Initial sync
-        document.addEventListener('DOMContentLoaded', syncInlineButton);
+        // Initial sync 
+ document.addEventListener('DOMContentLoaded', syncInlineButton);
 
         // === MATRIX RAIN EFFECT ===
         const canvas = document.getElementById('matrixRain');
@@ -1299,8 +1342,8 @@
             setInterval(draw, 50);
         }
 
-        // Initialize matrix rain
-        initMatrix();
+        // Initialize matrix rain 
+ initMatrix();
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -1308,8 +1351,8 @@
 
         // === GAMIFICATION: AUDIO & SYTEM LOG ===
 
-        // Sound Effect System
-        let audioCtx;
+        // Sound Effect System 
+ let audioCtx;
 
         function initAudio() {
             if (!audioCtx) {
@@ -1331,17 +1374,17 @@
             const now = audioCtx.currentTime;
 
             if (type === 'hover') {
-                // High pitch short blip
-                osc.type = 'sine';
+                // High pitch short blip 
+ osc.type = 'sine';
                 osc.frequency.setValueAtTime(800, now);
                 osc.frequency.exponentialRampToValueAtTime(1200, now + 0.05);
-                gain.gain.setValueAtTime(0.02, now); // Low volume
-                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+                gain.gain.setValueAtTime(0.02, now); // Low volume 
+ gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
                 osc.start(now);
                 osc.stop(now + 0.05);
             } else if (type === 'click') {
-                // Affirmative tone
-                osc.type = 'square';
+                // Affirmative tone 
+ osc.type = 'square';
                 osc.frequency.setValueAtTime(400, now);
                 osc.frequency.exponentialRampToValueAtTime(600, now + 0.1);
                 gain.gain.setValueAtTime(0.03, now);
@@ -1351,18 +1394,18 @@
             }
         }
 
-        // Initialize audio on first interaction
-        document.body.addEventListener('click', initAudio, { once: true });
+        // Initialize audio on first interaction 
+ document.body.addEventListener('click', initAudio, { once: true });
         document.body.addEventListener('itemhover', initAudio, { once: true });
 
-        // Add event listeners for sound
-        document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
+        // Add event listeners for sound 
+ document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
             el.addEventListener('mouseenter', () => playSound('hover'));
             el.addEventListener('click', () => playSound('click'));
         });
 
-        // System Log Logic
-        function log(msg, type = 'info') {
+        // System Log Logic 
+ function log(msg, type = 'info') {
             const logEl = document.getElementById('systemLog');
             if (!logEl) return;
 
@@ -1377,8 +1420,8 @@
             }
         }
 
-        // Boot Sequence Messaging
-        const bootMessages = [
+        // Boot Sequence Messaging 
+ const bootMessages = [
             "Initializing neural link...",
             "Accessing Digital Heroes database...",
             "Verifying user credentials...",
@@ -1389,43 +1432,43 @@
         ];
 
         let msgDelay = 0;
-        // Boot Sequence Messaging - Logging to console instead of UI
-
-
-        bootMessages.forEach((msg, i) => {
+        // Boot Sequence Messaging - Logging to console instead of UI 
+ bootMessages.forEach((msg, i) => {
             setTimeout(() => {
-                // Try to play sound if context is active
-                if (audioCtx && audioCtx.state === 'running') playSound('hover');
+                // Try to play sound if context is active 
+ if (audioCtx && audioCtx.state === 'running') playSound('hover');
             }, Math.random() * 400 + 400);
         });
 
         // === ADVANCED GAMIFICATION ===
 
-        // XP System
-        let xp = 0;
+        // XP System - Persistent with localStorage
+        let xp = parseInt(localStorage.getItem('digitalHeroesXP')) || 0;
         const xpEl = document.getElementById('playerXP');
+        xpEl.textContent = xp; // Display saved XP on page load
 
         function addXP(amount) {
             xp += amount;
+            localStorage.setItem('digitalHeroesXP', xp); // Save to localStorage
             xpEl.textContent = xp;
             xpEl.style.textShadow = `0 0 10px #00ff00`;
             setTimeout(() => xpEl.style.textShadow = '0 0 5px var(--kra)', 200);
 
-            // Level up check
-            if (xp % 100 === 0) {
+            // Level up check 
+ if (xp % 100 === 0) {
                 log(`LEVEL UP! Current XP: ${xp}`, 'warn');
                 playSound('levelup');
             }
         }
 
-        // Hook into interactions for XP
-        document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
+        // Hook into interactions for XP 
+ document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
             el.addEventListener('mouseenter', () => addXP(5));
             el.addEventListener('click', () => addXP(20));
         });
 
-        // Konami Code
-        const konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        // Konami Code 
+ const konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
         let kPosition = 0;
 
         document.addEventListener('keydown', (e) => {
@@ -1512,8 +1555,8 @@
             fireCursor.style.left = e.clientX + 'px';
             fireCursor.style.top = e.clientY + 'px';
 
-            // Create fire particles on movement
-            const dx = e.clientX - lastX;
+            // Create fire particles on movement 
+ const dx = e.clientX - lastX;
             const dy = e.clientY - lastY;
             const speed = Math.sqrt(dx * dx + dy * dy);
 
@@ -1550,8 +1593,8 @@
             }, 800);
         }
 
-        // Fire burst on click
-        document.addEventListener('click', (e) => {
+        // Fire burst on click 
+ document.addEventListener('click', (e) => {
             for (let i = 0; i < 12; i++) {
                 setTimeout(() => createFireParticle(e.clientX, e.clientY), i * 30);
             }
@@ -1560,3 +1603,10 @@
 </body>
 
 </html>
+
+
+
+
+
+
+

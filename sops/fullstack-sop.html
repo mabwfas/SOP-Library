@@ -7,17 +7,25 @@
     <title>Digital Heroes | Full Stack Developer SOP</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
-            --primary: #1E3A5F;
-            --secondary: #2E5077;
-            --accent: #3D6B99;
-            --success: #2E7D32;
-            --warning: #F57C00;
-            --danger: #C62828;
-            --light: #F8F9FA;
-            --dark: #212529;
+            /* HANDBOOK VARIABLES */
+            --primary: #0F172A;
+            --primary-light: #1E293B;
+            --secondary: #334155;
+            --accent: #3B82F6;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --light: #F8FAFC;
+            --dark: #020617;
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
             --gold: #D4AF37;
             --cyan: #0891B2;
         }
@@ -29,10 +37,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             line-height: 1.7;
-            color: #333;
-            background: #f5f7fa;
+            color: #334155;
+            background: #F1F5F9;
+            display: flex;
+            min-height: 100vh;
         }
 
         .container {
@@ -481,18 +491,19 @@
             }
         }
 
-        /* SIDEBAR */
+        /* REPLACED WITH HANDBOOK LAYOUT STYLES */
         .sidebar {
-            width: 320px;
-            background: linear-gradient(180deg, #06B6D4 0%, #0E7490 100%);
-            color: white;
+            width: 280px;
+            background: var(--bg-sidebar);
+            color: var(--text-sidebar);
             position: fixed;
-            top: 0;
-            left: 0;
             height: 100vh;
             overflow-y: auto;
             padding: 20px 0;
-            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            z-index: 2000;
+            border-right: 1px solid #334155;
         }
 
         .sidebar-header {
@@ -593,23 +604,60 @@
         }
 
         .main-content {
-            margin-left: 320px;
-            background: #f5f7fa;
+            margin-left: 280px;
+            flex: 1;
+            padding: 40px 60px;
+            max-width: 1400px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 200;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            .main-content {
+                padding: 30px;
+                margin-left: 280px;
+            }
+        }
+
+        @media (max-width: 900px) {
             .sidebar {
                 transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
             }
 
             .main-content {
                 margin-left: 0;
+                padding: 20px 20px 80px 20px;
+                width: 100%;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .header {
+                border-radius: 20px;
+                margin-top: 40px;
             }
         }
 
@@ -681,7 +729,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(6, 182, 212, 0.3);
         }
-    
+
         /* Mobile Header - Fixed Collision */
         .mobile-header {
             display: none;
@@ -696,24 +744,24 @@
             align-items: center;
             justify-content: flex-start;
             gap: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         .mobile-menu-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 44px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             border-radius: 10px;
             font-size: 1.4rem;
             cursor: pointer;
             flex-shrink: 0;
         }
-        
+
         .mobile-home-btn {
             display: flex;
             align-items: center;
@@ -728,35 +776,135 @@
             border: 1px solid rgba(16, 185, 129, 0.3);
             white-space: nowrap;
         }
-        
+
         @media (max-width: 768px) {
             .mobile-header {
                 display: flex;
             }
-            
+
             .main-content {
                 padding-top: 70px !important;
             }
-            
+
             .header {
                 margin-top: 56px;
             }
         }
+    
+    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
+    .mobile-header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+        z-index: 9999;
+        padding: 0 12px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .mobile-menu-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .mobile-home-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #10B981;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 10px 16px;
+        background: rgba(16, 185, 129, 0.15);
+        border-radius: 10px;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        white-space: nowrap;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-header {
+            display: flex !important;
+        }
+        .sidebar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            height: 100vh !important;
+            width: 280px !important;
+            z-index: 9999 !important;
+            transform: translateX(-100%) !important;
+            transition: transform 0.3s ease !important;
+        }
+        .sidebar.active, .sidebar.open {
+            transform: translateX(0) !important;
+        }
+        .main-content {
+            margin-left: 0 !important;
+            padding-top: 70px !important;
+            width: 100% !important;
+        }
+    }
+    /* ========== END DEFINITIVE MOBILE FIX ========== */
 
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
 
+    <link rel="stylesheet" href="assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
+</head>
 <body>
-    <!-- Mobile Header -->
-    <div class="mobile-header">
-        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-        <a href="index.html" class="mobile-home-btn">🏠 Home</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
     </div>
 
-    <aside class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-header"><span class="emoji">🖥️</span>
             <h2>Full Stack Developer SOP</h2>
+        </div>
+        <div class="back-link" style="margin-top: 0; border-top: none; padding: 0 15px 10px; text-align: left;">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 500; font-size: 0.9rem;">
+                <span>←</span> Back to Dashboard
+            </a>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="kra/fullstack-kra.html" class="sidebar-back"
@@ -774,7 +922,7 @@
                 style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">🎓
                 Training</a>
         </div>
-        <a href="index.html" class="sidebar-back">← Back to Home</a>
+
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
@@ -828,7 +976,7 @@
                 <a href="#resources">📄 Resources</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
 
         <!-- ONBOARDING SIDEBAR LINKS -->
@@ -841,9 +989,9 @@
                 <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
-    </aside>
+    </nav>
 
     <div class="main-content">
         <div id="content-sop" class="view-section">
@@ -864,8 +1012,7 @@
                     <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
                     <div id="resultsList"></div>
                     <button onclick="clearSearch()"
-                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
-                        Search</button>
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear  Search</button>
                 </div>
 
                 <script>
@@ -908,8 +1055,7 @@
 
                     <div class="info-box warning">
                         <h4>⚠️ This is Different from Shopify Projects</h4>
-                        <p>Custom projects are more complex. No pre-built themes. Everything is coded from scratch. That
-                            means:
+                        <p>Custom projects are more complex. No pre-built themes. Everything is coded from scratch. That  means:
                         </p>
                         <ul class="styled-list" style="margin-top: 10px;">
                             <li>Longer timelines (4-8 weeks typical)</li>
@@ -929,36 +1075,23 @@
 
                     <div class="story-box">
                         <h4>Why Planning Saves Projects</h4>
-                        <p>We took on a custom dashboard project. Client wanted a "simple admin panel" for their
-                            delivery
-                            business. $5 lakhs budget. Seemed straightforward.</p>
+                        <p>We took on a custom dashboard project. Client wanted a "simple admin panel" for their  delivery  business. $5 lakhs budget. Seemed straightforward.</p>
 
-                        <p><strong>Week 1-2:</strong> Started coding immediately. No detailed spec. "We'll figure it out
-                            as
-                            we
-                            go."</p>
+                        <p><strong>Week 1-2:</strong> Started coding immediately. No detailed spec. "We'll figure it out  as  we  go."</p>
 
-                        <p><strong>Week 3:</strong> Client says "Oh, we also need real-time GPS tracking." That changes
-                            everything.</p>
+                        <p><strong>Week 3:</strong> Client says "Oh, we also need real-time GPS tracking." That changes  everything.</p>
 
                         <p><strong>Week 4:</strong> "Can drivers upload photos? And customers should get SMS updates."
-                            More
-                            scope creep.</p>
+                            More  scope creep.</p>
 
                         <p><strong>Week 6:</strong> Project is 50% over budget. Team is frustrated. Client is unhappy.
-                            We're
-                            behind schedule.</p>
+                            We're  behind schedule.</p>
 
-                        <p><strong>What saved us:</strong> We stopped. Did a proper discovery session. Created a
-                            detailed
-                            technical specification. Got sign-off on exact features. Renegotiated timeline and budget.
+                        <p><strong>What saved us:</strong> We stopped. Did a proper discovery session. Created a  detailed  technical specification. Got sign-off on exact features. Renegotiated timeline and budget.
                         </p>
 
                         <div class="moral">
-                            <strong>🎯 The Lesson:</strong> Custom projects REQUIRE detailed planning upfront. Every
-                            hour
-                            spent
-                            in discovery saves 10 hours in development. Never skip the planning phase.
+                            <strong>🎯 The Lesson:</strong> Custom projects REQUIRE detailed planning upfront. Every  hour  spent  in discovery saves 10 hours in development. Never skip the planning phase.
                         </div>
                     </div>
                 </section>
@@ -969,38 +1102,29 @@
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">1. SPEC BEFORE CODE</h3>
-                        <p>Never write a single line of code without a signed-off technical specification. Discovery is
-                            not
-                            optional — it's mandatory.</p>
+                        <p>Never write a single line of code without a signed-off technical specification. Discovery is  not  optional — it's mandatory.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">2. SCOPE IS LOCKED AFTER APPROVAL</h3>
                         <p>Once client signs off on spec, scope is frozen. New features = new quote. No exceptions.
-                            Scope
-                            creep
-                            kills projects.</p>
+                            Scope  creep  kills projects.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">3. MILESTONE-BASED DELIVERY</h3>
-                        <p>Large projects are delivered in phases. Each phase = client approval before proceeding. No
-                            surprises
-                            at the end.</p>
+                        <p>Large projects are delivered in phases. Each phase = client approval before proceeding. No  surprises  at the end.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">4. CODE QUALITY IS NON-NEGOTIABLE</h3>
-                        <p>Clean code, proper comments, consistent formatting. If another developer can't understand
-                            your
-                            code,
+                        <p>Clean code, proper comments, consistent formatting. If another developer can't understand  your  code,
                             you've failed.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">5. TEST BEFORE DEPLOY</h3>
-                        <p>Every feature is tested. Edge cases are considered. Security is checked. No "it works on my
-                            machine"
+                        <p>Every feature is tested. Edge cases are considered. Security is checked. No "it works on my  machine"
                             excuses.</p>
                     </div>
                 </section>
@@ -1009,8 +1133,7 @@
                 <section class="critical-alert" id="self-qa"
                     style="background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);">
                     <h2>✅ SELF QA PROTOCOL — MANDATORY BEFORE DELIVERY</h2>
-                    <p style="font-size: 1.1em; margin-bottom: 20px;">Review your work <strong>3-5 times</strong> before
-                        ANY submission. No exceptions.</p>
+                    <p style="font-size: 1.1em; margin-bottom: 20px;">Review your work <strong>3-5 times</strong> before  ANY submission. No exceptions.</p>
 
                     <div class="highlight-box" style="background: rgba(255,255,255,0.15);">
                         <h3 style="margin-bottom: 15px;">📋 Pre-Submission Checklist</h3>
@@ -1116,9 +1239,7 @@
 
                     <div class="info-box gold">
                         <h4>💰 Discovery is a Paid Service</h4>
-                        <p>For complex projects, discovery is a separate paid engagement ($15,000 - $50,000). This
-                            ensures
-                            serious clients and protects your time. Deliverable: Technical Specification Document.</p>
+                        <p>For complex projects, discovery is a separate paid engagement ($15,000 - $50,000). This  ensures  serious clients and protects your time. Deliverable: Technical Specification Document.</p>
                     </div>
 
                     <h3>Discovery Meeting Agenda (60-90 minutes)</h3>
@@ -1171,8 +1292,7 @@
                         <li><strong>"What does success look like?"</strong> — Understand the real goal</li>
                         <li><strong>"Who will use this and how?"</strong> — Understand user flows</li>
                         <li><strong>"What happens when [edge case]?"</strong> — Find hidden complexity</li>
-                        <li><strong>"What existing systems does this need to work with?"</strong> — Find integration
-                            needs
+                        <li><strong>"What existing systems does this need to work with?"</strong> — Find integration  needs
                         </li>
                         <li><strong>"What's the budget range?"</strong> — Ensure alignment before work</li>
                         <li><strong>"When do you need this live?"</strong> — Set realistic expectations</li>
@@ -1191,9 +1311,7 @@
 
                     <div class="info-box info">
                         <h4>📄 Every Custom Project Gets a TSD</h4>
-                        <p>The TSD is your contract. It defines exactly what will be built. Client signs off before
-                            development
-                            starts.</p>
+                        <p>The TSD is your contract. It defines exactly what will be built. Client signs off before  development  starts.</p>
                     </div>
 
                     <h4>TSD Structure</h4>
@@ -1356,8 +1474,7 @@
                         /api <span class="comment">// API routes</span>
                         /(auth) <span class="comment">// Auth pages (login, register)</span>
                         /(dashboard) <span class="comment">// Protected pages</span>
-                        layout.tsx
-                        page.tsx
+                        layout.tsx  page.tsx
                         /components <span class="comment">// Reusable UI components</span>
                         /ui <span class="comment">// Base components (Button, Input)</span>
                         /forms <span class="comment">// Form components</span>
@@ -1369,8 +1486,7 @@
                         /types <span class="comment">// TypeScript types</span>
                         /hooks <span class="comment">// Custom React hooks</span>
                         /services <span class="comment">// API calls, external services</span>
-                        /prisma
-                        schema.prisma <span class="comment">// Database schema</span>
+                        /prisma  schema.prisma <span class="comment">// Database schema</span>
                         /public <span class="comment">// Static assets</span>
                     </div>
                 </section>
@@ -1384,9 +1500,7 @@
 
                     <div class="info-box gold">
                         <h4>📅 Typical Timeline: 4-8 Weeks</h4>
-                        <p>Custom projects follow a phased approach. Each phase has clear deliverables and client
-                            approval
-                            before proceeding.</p>
+                        <p>Custom projects follow a phased approach. Each phase has clear deliverables and client  approval  before proceeding.</p>
                     </div>
 
                     <div class="phase-card">
@@ -1453,10 +1567,10 @@
                 <section class="section" id="database">
                     <div class="section-header">
                         <div class="section-number">5</div>
-                        <h2>Database Design</h2>
+                        <h2>🎨 Database Design</h2>
                     </div>
 
-                    <h3>Database Design Principles</h3>
+                    <h3>🎨 Database Design Principles</h3>
 
                     <ul class="styled-list">
                         <li><strong>Normalize data</strong> — Avoid duplication, use relationships</li>
@@ -1472,13 +1586,11 @@
                         <span class="comment">// User model with common fields</span>
                         <span class="keyword">model</span> <span class="function">User</span> {
                         id <span class="keyword">String</span> @id @default(uuid())
-                        email <span class="keyword">String</span> @unique
-                        name <span class="keyword">String</span>
+                        email <span class="keyword">String</span> @unique  name <span class="keyword">String</span>
                         password <span class="keyword">String</span>
                         role <span class="keyword">Role</span> @default(USER)
                         createdAt <span class="keyword">DateTime</span> @default(now())
-                        updatedAt <span class="keyword">DateTime</span> @updatedAt
-                        deletedAt <span class="keyword">DateTime?</span>
+                        updatedAt <span class="keyword">DateTime</span> @updatedAt  deletedAt <span class="keyword">DateTime?</span>
 
                         <span class="comment">// Relations</span>
                         orders <span class="function">Order</span>[]
@@ -1486,9 +1598,7 @@
                         }
 
                         <span class="keyword">enum</span> <span class="function">Role</span> {
-                        USER
-                        ADMIN
-                        SUPER_ADMIN
+                        USER  ADMIN  SUPER_ADMIN
                         }
                     </div>
                 </section>
@@ -1520,8 +1630,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Status codes</strong></td>
-                                <td>200 (success), 201 (created), 400 (bad request), 401 (unauthorized), 404 (not
-                                    found),
+                                <td>200 (success), 201 (created), 400 (bad request), 401 (unauthorized), 404 (not  found),
                                     500
                                     (server error)</td>
                             </tr>
@@ -1546,15 +1655,12 @@
                         <span class="comment">// Consistent error handling</span>
                         <span class="keyword">try</span> {
                         <span class="comment">// Your logic here</span>
-                        <span class="keyword">const</span> data = <span class="keyword">await</span> <span
-                            class="function">doSomething</span>();
-                        <span class="keyword">return</span> Response.<span class="function">json</span>({ success: <span
-                            class="keyword">true</span>, data });
+                        <span class="keyword">const</span> data = <span class="keyword">await</span> <span  class="function">doSomething</span>();
+                        <span class="keyword">return</span> Response.<span class="function">json</span>({ success: <span  class="keyword">true</span>, data });
                         } <span class="keyword">catch</span> (error) {
                         console.<span class="function">error</span>(<span class="string">'[API Error]'</span>, error);
                         <span class="keyword">return</span> Response.<span class="function">json</span>(
-                        { success: <span class="keyword">false</span>, error: <span class="string">'Something went
-                            wrong'</span>
+                        { success: <span class="keyword">false</span>, error: <span class="string">'Something went  wrong'</span>
                         },
                         { status: 500 }
                         );
@@ -1626,10 +1732,10 @@
                 <section class="section" id="deployment">
                     <div class="section-header">
                         <div class="section-number">8</div>
-                        <h2>Deployment</h2>
+                        <h2>🚀 Deployment</h2>
                     </div>
 
-                    <h3>Pre-Deployment Checklist</h3>
+                    <h3>🚀 Pre-Deployment Checklist</h3>
 
                     <table class="styled-table">
                         <thead>
@@ -1718,8 +1824,7 @@
                             📄 Documentation: <span class="placeholder">[Notion/Doc link]</span></p>
 
                         <p><strong>Support:</strong><br>
-                            You have <span class="placeholder">[30/60/90]</span> days of support starting today. For any
-                            issues,
+                            You have <span class="placeholder">[30/60/90]</span> days of support starting today. For any  issues,
                             reply to this email or message me directly.</p>
 
                         <p>Congratulations on your launch! 🚀</p>
@@ -1762,8 +1867,7 @@
 
                     <div class="info-box gold">
                         <h4>💡 Use AI to Accelerate Development</h4>
-                        <p>Use these prompts to debug code, plan architecture, write documentation, and solve complex
-                            problems.</p>
+                        <p>Use these prompts to debug code, plan architecture, write documentation, and solve complex  problems.</p>
                     </div>
 
                     <h3>Architecture & Planning</h3>
@@ -1881,25 +1985,20 @@
                     <div class="info-box success" style="margin-bottom: 30px;">
                         <p><strong>Handle in this order every day:</strong></p>
                         <ol style="margin-top: 15px; line-height: 2;">
-                            <li><strong>🔴 P0 - Production Outages</strong> → Site/app down = DROP EVERYTHING. Fix
-                                immediately.</li>
-                            <li><strong>🔴 P0 - Security Vulnerabilities</strong> → Any breach or vulnerability. Patch
-                                first.</li>
+                            <li><strong>🔴 P0 - Production Outages</strong> → Site/app down = DROP EVERYTHING. Fix  immediately.</li>
+                            <li><strong>🔴 P0 - Security Vulnerabilities</strong> → Any breach or vulnerability. Patch  first.</li>
                             <li><strong>🔴 P0 - Data Issues</strong> → Database problems, data loss, corruption.
                                 Critical.
                             </li>
                             <li><strong>🟡 P1 - Deadline-Day Deliveries</strong> → Features/fixes due TODAY must ship.
                             </li>
-                            <li><strong>🟡 P1 - PM/Client Questions</strong> → Respond within 1 hour. Don't block
-                                decisions.
+                            <li><strong>🟡 P1 - PM/Client Questions</strong> → Respond within 1 hour. Don't block  decisions.
                             </li>
                             <li><strong>🟢 P2 - Active Development Work</strong> → Features with upcoming deadlines.
                             </li>
-                            <li><strong>🟢 P2 - Code Reviews & Testing</strong> → Don't block teammates, test before
-                                merge.
+                            <li><strong>🟢 P2 - Code Reviews & Testing</strong> → Don't block teammates, test before  merge.
                             </li>
-                            <li><strong>⚪ P3 - Technical Debt & Optimization</strong> → Refactoring, performance
-                                improvements, learning.</li>
+                            <li><strong>⚪ P3 - Technical Debt & Optimization</strong> → Refactoring, performance  improvements, learning.</li>
                         </ol>
                         <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Production issues > Security > Data >
                             Deadlines > Communication > Development.</p>
@@ -1909,9 +2008,7 @@
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Client's application is completely inaccessible.</p>
                         <p><strong>Response:</strong> 1) Check server status and logs immediately. 2) Communicate:
-                            "We're
-                            aware and investigating." 3) Roll back last deploy if it caused the issue. 4) Document root
-                            cause after resolution.</p>
+                            "We're  aware and investigating." 3) Roll back last deploy if it caused the issue. 4) Document root  cause after resolution.</p>
                         <p><strong>Rule:</strong> Availability first. Communicate early. Post-mortem after fire is out.
                         </p>
                     </div>
@@ -1919,21 +2016,15 @@
                     <h3 id="data-loss">🔴 Database Corruption or Data Loss</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Data is missing or corrupted.</p>
-                        <p><strong>Response:</strong> Stop all writes immediately. Check backups. Restore from last
-                            known
-                            good backup. Document what was lost. Implement better backup strategy after.</p>
+                        <p><strong>Response:</strong> Stop all writes immediately. Check backups. Restore from last  known  good backup. Document what was lost. Implement better backup strategy after.</p>
                         <p><strong>Rule:</strong> Backups save lives. Test restores regularly. Document everything.</p>
                     </div>
 
                     <h3 id="security-issue">🔴 Security Vulnerability Discovered</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Found or reported security flaw in the application.</p>
-                        <p><strong>Response:</strong> Assess severity. If critical: Patch immediately or take affected
-                            feature offline. Inform client. Document the vulnerability and fix. Review for similar
-                            issues
-                            elsewhere.</p>
-                        <p><strong>Rule:</strong> Security issues are P0. Drop everything else. Fix first, explain
-                            later.
+                        <p><strong>Response:</strong> Assess severity. If critical: Patch immediately or take affected  feature offline. Inform client. Document the vulnerability and fix. Review for similar  issues  elsewhere.</p>
+                        <p><strong>Rule:</strong> Security issues are P0. Drop everything else. Fix first, explain  later.
                         </p>
                     </div>
 
@@ -1942,17 +2033,13 @@
                         <p><strong>Situation:</strong> External service your app depends on is not responding.</p>
                         <p><strong>Response:</strong> Check status page. Implement graceful degradation (fallback UX).
                             Notify client: "We're experiencing issues with [service]. Working on a workaround."</p>
-                        <p><strong>Rule:</strong> Always plan for third-party failures. Never let one API kill the whole
-                            app.</p>
+                        <p><strong>Rule:</strong> Always plan for third-party failures. Never let one API kill the whole  app.</p>
                     </div>
 
                     <h3 id="rush-timeline">🔴 Client Wants Feature in Unrealistic Timeline</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client expects complex feature in days, not weeks.</p>
-                        <p><strong>Response:</strong> "I understand the urgency. To deliver properly, this takes [X
-                            days]. I
-                            can deliver [smaller scope] by your deadline, then add the rest. Which approach works
-                            better?"
+                        <p><strong>Response:</strong> "I understand the urgency. To deliver properly, this takes [X  days]. I  can deliver [smaller scope] by your deadline, then add the rest. Which approach works  better?"
                         </p>
                         <p><strong>Rule:</strong> Don't promise impossible. Offer phased delivery options.</p>
                     </div>
@@ -1961,32 +2048,23 @@
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Taking over project with poor code quality, no documentation.</p>
                         <p><strong>Response:</strong> Document issues found. Estimate "technical debt" cleanup time.
-                            Advise
-                            PM: "Before adding features, we should refactor [X] to prevent future bugs." Get approval
-                            before
-                            major refactors.</p>
+                            Advise  PM: "Before adding features, we should refactor [X] to prevent future bugs." Get approval  before  major refactors.</p>
                         <p><strong>Rule:</strong> Don't blame previous devs. Document risks. Recommend solutions.</p>
                     </div>
 
-                    <h3 id="deploy-broke">🔴 Your Deployment Broke Something</h3>
+                    <h3 id="deploy-broke">🚀 🔴 Your Deployment Broke Something</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> New feature or fix caused unexpected issues.</p>
-                        <p><strong>Response:</strong> Roll back immediately if possible. Own it: "My recent deployment
-                            caused [issue]. Rolling back now." Then investigate and fix properly in staging before
-                            redeploying.</p>
+                        <p><strong>Response:</strong> Roll back immediately if possible. Own it: "My recent deployment  caused [issue]. Rolling back now." Then investigate and fix properly in staging before  redeploying.</p>
                         <p><strong>Rule:</strong> Fast rollback beats slow debugging. Always have rollback plan.</p>
                     </div>
 
                     <h3 id="creds-breach">🔴 Client Access Credentials Compromised</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Credentials were exposed or suspected breach.</p>
-                        <p><strong>Response:</strong> Rotate ALL credentials immediately. Check for unauthorized access
-                            in
-                            logs. Notify client and PM. Review access controls. Implement better credential management.
+                        <p><strong>Response:</strong> Rotate ALL credentials immediately. Check for unauthorized access  in  logs. Notify client and PM. Review access controls. Implement better credential management.
                         </p>
-                        <p><strong>Rule:</strong> Assume worst case. Rotate first, investigate second. Never share creds
-                            in
-                            plain text.</p>
+                        <p><strong>Rule:</strong> Assume worst case. Rotate first, investigate second. Never share creds  in  plain text.</p>
                     </div>
                 </section>
 
@@ -2002,79 +2080,62 @@
 
                     <div style="text-align: center; padding: 30px 0;">
                         <div style="font-size: 48px; margin-bottom: 20px;">⚡</div>
-                        <blockquote
-                            style="font-size: 24px; font-style: italic; color: #06B6D4; margin-bottom: 20px; line-height: 1.6;">
+                        <blockquote  style="font-size: 24px; font-style: italic; color: #06B6D4; margin-bottom: 20px; line-height: 1.6;">
                             "Full stack means full responsibility — and full impact. You build entire worlds."
                         </blockquote>
                         <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
                     </div>
 
                     <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                        <h3 style="color: #06B6D4; margin-bottom: 15px;">📖 Success Story: The App That Saved 40 Hours
-                            Weekly</h3>
+                        <h3 style="color: #06B6D4; margin-bottom: 15px;">📖 Success Story: The App That Saved 40 Hours  Weekly</h3>
                         <p style="color: #E5E7EB; line-height: 1.8;">
                             A client was manually copying orders from Shopify to their ERP — 10 hours every week.
                             Tedious,
                             error-prone, soul-crushing.
                             <br><br>
-                            Our full stack dev built a custom integration in 2 weeks. Orders now sync automatically
-                            every 15
+                            Our full stack dev built a custom integration in 2 weeks. Orders now sync automatically  every 15
                             minutes. Zero manual work.
                             <br><br>
-                            <strong style="color: #10B981;">The impact?</strong> Client saved <strong
-                                style="color: #FCD34D;">40 hours monthly</strong> — that's an entire work week. They
-                            used
-                            that time to launch a new product line.
+                            <strong style="color: #10B981;">The impact?</strong> Client saved <strong  style="color: #FCD34D;">40 hours monthly</strong> — that's an entire work week. They  used  that time to launch a new product line.
                             <br><br>
-                            <em>The lesson: You don't just write code — you give people back their time. That's
-                                priceless.</em>
+                            <em>The lesson: You don't just write code — you give people back their time. That's  priceless.</em>
                         </p>
                     </div>
 
-                    <div
-                        style="background: rgba(6, 182, 212, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                    <div  style="background: rgba(6, 182, 212, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
                         <h3 style="color: #67E8F9; margin-bottom: 15px;">⚡ Productivity Hacks for Full Stack Devs</h3>
                         <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
                             <li>🏗️ <strong>Scaffold Before Coding:</strong> Plan the architecture, then build — saves
                                 50%
                                 rework</li>
-                            <li>🔄 <strong>Git Commit Often:</strong> Small, frequent commits = easy debugging and
-                                rollbacks
+                            <li>🔄 <strong>Git Commit Often:</strong> Small, frequent commits = easy debugging and  rollbacks
                             </li>
-                            <li>📦 <strong>Reusable Components:</strong> Build it once, use it everywhere — compound
-                                efficiency</li>
+                            <li>📦 <strong>Reusable Components:</strong> Build it once, use it everywhere — compound  efficiency</li>
                             <li>🧪 <strong>Write Tests Early:</strong> Tests aren't overhead — they're insurance</li>
                             <li>🎧 <strong>Deep Work Blocks:</strong> 3-hour coding blocks with no meetings = 10x output
                             </li>
                         </ul>
                     </div>
 
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                        <div
-                            style="background: rgba(6, 182, 212, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                    <div  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div  style="background: rgba(6, 182, 212, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">🧠</div>
                             <p style="color: #67E8F9; font-weight: 600;">"Solve the problem first, code it second."</p>
                         </div>
-                        <div
-                            style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div  style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">📚</div>
                             <p style="color: #A7F3D0; font-weight: 600;">"Today's learning is tomorrow's leverage."</p>
                         </div>
-                        <div
-                            style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div  style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">🚀</div>
                             <p style="color: #FDE68A; font-weight: 600;">"Ship it, learn from it, improve it."</p>
                         </div>
                     </div>
 
-                    <div
-                        style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                    <div  style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
                         <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
                         </p>
-                        <p style="font-size: 20px; color: #06B6D4; font-weight: 600;">"Today, I build systems that
-                            empower
-                            businesses. My code creates possibilities that didn't exist yesterday."</p>
+                        <p style="font-size: 20px; color: #06B6D4; font-weight: 600;">"Today, I build systems that  empower  businesses. My code creates possibilities that didn't exist yesterday."</p>
                     </div>
                 </section>
 
@@ -2098,8 +2159,7 @@
             <div class="header">
                 <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
                 <h1>Fullstack Assets & Training Library</h1>
-                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
-                    training, scripts, and resources to help you master your role.</p>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video  training, scripts, and resources to help you master your role.</p>
             </div>
 
             <div id="videos" class="section-title"
@@ -2112,13 +2172,12 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div
-                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             15:00</div>
                     </div>
                     <div class="video-content">
                         <span class="tag">Fundamentals</span>
-                        <h3>Role Overview & Expectations</h3>
+                        <h3>📝 Role Overview & Expectations</h3>
                         <p>A deep dive into the daily life of a Fullstack Developer, navigating our tech stack.</p>
                     </div>
                 </div>
@@ -2127,13 +2186,12 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div
-                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             40:00</div>
                     </div>
                     <div class="video-content">
                         <span class="tag">Architecture</span>
-                        <h3>System Architecture & Deployment</h3>
+                        <h3>🚀 System Architecture & Deployment</h3>
                         <p>Understanding our cloud infrastructure, CI/CD pipelines, and database schema.</p>
                     </div>
                 </div>
@@ -2142,8 +2200,7 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div
-                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             25:00</div>
                     </div>
                     <div class="video-content">
@@ -2186,8 +2243,7 @@
             <div class="header">
                 <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
                 <h1>Your Onboarding Journey</h1>
-                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
-                    to become a certified Fullstack Developer.</p>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps  to become a certified Fullstack Developer.</p>
             </div>
 
             <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
@@ -2201,11 +2257,9 @@
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
-                            understand, and internalize the Standard Operating Procedure. This document provides the
-                            engineering standards and workflows.</p>
+                            understand, and internalize the Standard Operating Procedure. This document provides the  engineering standards and workflows.</p>
                         <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
-                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
-                            to Fullstack SOP</a>
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go  to Fullstack SOP</a>
                     </div>
                 </div>
 
@@ -2217,12 +2271,10 @@
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
-                            watch the required training videos. These will give you visual context to the written SOPs.
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and  watch the required training videos. These will give you visual context to the written SOPs.
                         </p>
                         <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
-                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
-                            Assets Library</a>
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open  Assets Library</a>
                     </div>
                 </div>
 
@@ -2235,10 +2287,8 @@
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
                         </h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by
-                            taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
-                        <p
-                            style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by  taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                        <p  style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
                             ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
                                 onclick="switchView('sop'); return false;" style="color: #3B82F6;">Fullstack SOP</a>
                             view and click the "🎓 Test" button in the sidebar.
@@ -2253,11 +2303,8 @@
                         4</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording
-                            Task</h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
-                            verification. Record a <strong>30-minute screen sharing video</strong> walking us through
-                            your understanding of the role.</p>
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording  Task</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final  verification. Record a <strong>30-minute screen sharing video</strong> walking us through  your understanding of the role.</p>
 
                         <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
                             <strong>What to cover in your video:</strong>
@@ -2271,8 +2318,7 @@
 
                         <div class="success-box"
                             style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
-                                Submission</strong>
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example  Submission</strong>
                             <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
                                 nailed this task:</p>
                             <div class="video-embed"
@@ -2305,6 +2351,71 @@
                 opacity: 1;
             }
         }
+    
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1999;
+        }
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+    
+        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+        @media (max-width: 768px) {
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+            .header h1 {
+                font-size: 1.5em !important;
+                margin-bottom: 5px !important;
+            }
+            .header .subtitle {
+                font-size: 0.9em !important;
+                margin-bottom: 10px !important;
+            }
+            .badge-row {
+                gap: 8px !important;
+                margin-top: 12px !important;
+            }
+            .badge {
+                padding: 5px 12px !important;
+                font-size: 0.75em !important;
+            }
+            .container {
+                padding: 10px !important;
+            }
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            .section h2 {
+                font-size: 1.2em !important;
+            }
+        }
+        /* ===== END MOBILE HEADER SIZE ===== */
+
+    
+        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+            .sidebar.active, .sidebar.open {
+                transform: translateX(0) !important;
+            }
+        }
+        /* ===== END SIDEBAR CLOSED ===== */
+
     </style>
     <script>
         function switchView(viewName) {
@@ -2336,10 +2447,57 @@
     </script>
 
     <script>
-        function toggleSidebar() {
-            document.querySelector('.sidebar').classList.toggle('open');
         }
     </script>
+    <script>
+
+    </script>
+
+    <script>
+        // ===== SIDEBAR TOGGLE FUNCTIONS =====
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        // Click outside to close sidebar
+        document.addEventListener('click', function(event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            var overlay = document.querySelector('.sidebar-overlay');
+            
+            if (!sidebar || !toggleBtn) return;
+            
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+            
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+        // ===== END SIDEBAR TOGGLE =====
+    </script>
+
 </body>
 
 </html>

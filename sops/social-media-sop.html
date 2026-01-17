@@ -7,17 +7,25 @@
     <title>Digital Heroes | Social Media Manager SOP</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
-            --primary: #1E3A5F;
-            --secondary: #2E5077;
-            --accent: #3D6B99;
-            --success: #2E7D32;
-            --warning: #F57C00;
-            --danger: #C62828;
-            --light: #F8F9FA;
-            --dark: #212529;
+            /* HANDBOOK VARIABLES */
+            --primary: #0F172A;
+            --primary-light: #1E293B;
+            --secondary: #334155;
+            --accent: #3B82F6;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --light: #F8FAFC;
+            --dark: #020617;
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
             --gold: #D4AF37;
             --rose: #0EA5E9;
         }
@@ -29,10 +37,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             line-height: 1.7;
-            color: #333;
-            background: #f5f7fa;
+            color: #334155;
+            background: #F1F5F9;
+            display: flex;
+            min-height: 100vh;
         }
 
         .container {
@@ -404,128 +414,77 @@
             }
         }
 
-        /* SIDEBAR */
+        /* REPLACED WITH HANDBOOK LAYOUT STYLES */
         .sidebar {
-            width: 320px;
-            background: linear-gradient(180deg, #E11D48 0%, #BE123C 100%);
-            color: white;
+            width: 280px;
+            background: var(--bg-sidebar);
+            color: var(--text-sidebar);
             position: fixed;
-            top: 0;
-            left: 0;
             height: 100vh;
             overflow-y: auto;
             padding: 20px 0;
-            z-index: 1000;
-        }
-
-        .sidebar-header {
-            text-align: center;
-            padding: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            margin-bottom: 10px;
-        }
-
-        .sidebar-header h2 {
-            font-size: 1em;
-        }
-
-        .sidebar-header .emoji {
-            font-size: 1.5em;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .sidebar-back {
-            display: block;
-            padding: 8px 15px;
-            margin: 0 10px 10px 10px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 13px;
-        }
-
-        .sidebar-search {
-            padding: 0 10px;
-            margin-bottom: 10px;
-        }
-
-        .sidebar-search input {
-            width: 100%;
-            padding: 8px 12px;
-            border: none;
-            border-radius: 6px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            font-size: 12px;
-        }
-
-        .sidebar-nav {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar-nav a {
-            display: block;
-            padding: 7px 15px;
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            font-size: 12px;
-            border-left: 3px solid transparent;
-        }
-
-        .sidebar-nav a:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-left-color: #FCD34D;
-        }
-
-        /* Two-column grid layout for compact sections */
-        .sidebar-nav-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4px;
-            padding: 5px 12px;
-            margin: 0 0 8px 0;
-        }
-
-        .sidebar-nav-grid a {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8px 8px;
-            color: rgba(255, 255, 255, 0.95);
-            text-decoration: none;
-            font-size: 11px;
-            background: rgba(0, 0, 0, 0.25);
-            border-radius: 6px;
-            transition: all 0.15s ease;
-        }
-
-        .sidebar-nav-grid a:hover {
-            background: rgba(255, 255, 255, 0.18);
-            transform: scale(1.02);
-        }
-
-        .sidebar-section-title {
-            display: flex;
-            align-items: center;
-            padding: 10px 15px 6px;
-            font-size: 10px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: rgba(255, 255, 255, 0.95);
-            background: rgba(0, 0, 0, 0.15);
-            margin-top: 8px;
-            border-left: 3px solid #FCD34D;
+            flex-direction: column;
+            z-index: 2000;
+            border-right: 1px solid #334155;
         }
 
         .main-content {
-            margin-left: 320px;
-            background: #f5f7fa;
+            margin-left: 280px;
+            flex: 1;
+            padding: 40px 60px;
+            max-width: 1400px;
+        }
+
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 200;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                padding: 30px;
+                margin-left: 280px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 20px 20px 80px 20px;
+                width: 100%;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .header {
+                border-radius: 20px;
+                margin-top: 40px;
+            }
         }
 
         .container {
@@ -534,15 +493,7 @@
             padding: 20px;
         }
 
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%);
-            }
 
-            .main-content {
-                margin-left: 0;
-            }
-        }
 
         @media print {
 
@@ -612,7 +563,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3);
         }
-    
+
         /* Mobile Header - Fixed Collision */
         .mobile-header {
             display: none;
@@ -627,24 +578,24 @@
             align-items: center;
             justify-content: flex-start;
             gap: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         .mobile-menu-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 44px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             border-radius: 10px;
             font-size: 1.4rem;
             cursor: pointer;
             flex-shrink: 0;
         }
-        
+
         .mobile-home-btn {
             display: flex;
             align-items: center;
@@ -659,35 +610,135 @@
             border: 1px solid rgba(16, 185, 129, 0.3);
             white-space: nowrap;
         }
-        
+
         @media (max-width: 768px) {
             .mobile-header {
                 display: flex;
             }
-            
+
             .main-content {
                 padding-top: 70px !important;
             }
-            
+
             .header {
                 margin-top: 56px;
             }
         }
+    
+    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
+    .mobile-header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+        z-index: 9999;
+        padding: 0 12px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .mobile-menu-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .mobile-home-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #10B981;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 10px 16px;
+        background: rgba(16, 185, 129, 0.15);
+        border-radius: 10px;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        white-space: nowrap;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-header {
+            display: flex !important;
+        }
+        .sidebar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            height: 100vh !important;
+            width: 280px !important;
+            z-index: 9999 !important;
+            transform: translateX(-100%) !important;
+            transition: transform 0.3s ease !important;
+        }
+        .sidebar.active, .sidebar.open {
+            transform: translateX(0) !important;
+        }
+        .main-content {
+            margin-left: 0 !important;
+            padding-top: 70px !important;
+            width: 100% !important;
+        }
+    }
+    /* ========== END DEFINITIVE MOBILE FIX ========== */
 
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
 
+    <link rel="stylesheet" href="assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
+</head>
 <body>
-    <!-- Mobile Header -->
-    <div class="mobile-header">
-        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-        <a href="index.html" class="mobile-home-btn">🏠 Home</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
     </div>
 
-    <aside class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-header"><span class="emoji">📱</span>
             <h2>Social Media Manager SOP</h2>
+        </div>
+        <div class="back-link" style="margin-top: 0; border-top: none; padding: 0 15px 10px; text-align: left;">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 500; font-size: 0.9rem;">
+                <span>←</span> Back to Dashboard
+            </a>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="kra/social-media-kra.html" class="sidebar-back"
@@ -705,7 +756,7 @@
                 style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">🎓
                 Training</a>
         </div>
-        <a href="index.html" class="sidebar-back">← Back to Home</a>
+
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
@@ -735,7 +786,7 @@
                 <a href="#platforms">🎵 TikTok</a>
                 <a href="#linkedin">💼 LinkedIn</a>
                 <a href="#platforms">🐦 Twitter</a>
-                <a href="#platforms">📌 Pinterest</a>
+                <a href="#platforms">Pinterest</a>
                 <a href="#platforms">▶️ YouTube</a>
             </div>
             <div class="sidebar-section-title">4️⃣ 2026 Mastery</div>
@@ -762,7 +813,7 @@
                 <a href="#resources">📄 Resources</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
 
         <!-- ONBOARDING SIDEBAR LINKS -->
@@ -775,9 +826,9 @@
                 <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
-    </aside>
+    </nav>
 
     <div class="main-content">
         <div id="content-sop" class="view-section">
@@ -787,9 +838,9 @@
                     <p class="subtitle">Content Creation, Scheduling & Community Engagement</p>
                     <div class="badge-row">
                         <span class="badge">📈 Growth Focused</span>
-                        <span class="badge">🎯 Engagement First</span>
+                        <span class="badge">❤️ 🎯 Engagement First</span>
                         <span class="badge">📅 Consistent Posting</span>
-                        <span class="badge">⚡ Fast Response</span>
+                        <span class="badge">↩️ ⚡ Fast Response</span>
                     </div>
                 </header>
 
@@ -798,8 +849,7 @@
                     <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
                     <div id="resultsList"></div>
                     <button onclick="clearSearch()"
-                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
-                        Search</button>
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear  Search</button>
                 </div>
 
                 <script>
@@ -827,13 +877,11 @@
                     </div>
 
                     <div class="info-box rose">
-                        <h4>📱 Your Role as Social Media Manager</h4>
-                        <p>As a social media manager, you're responsible for building and engaging the brand's online
-                            community.
+                        <h4>📝 📱 Your Role as Social Media Manager</h4>
+                        <p>As a social media manager, you're responsible for building and engaging the brand's online  community.
                             Your job includes:</p>
                         <ul class="styled-list" style="margin-top: 15px;">
-                            <li><strong>Content creation</strong> — Creating posts, reels, stories that attract and
-                                engage
+                            <li><strong>Content creation</strong> — Creating posts, reels, stories that attract and  engage
                             </li>
                             <li><strong>Scheduling</strong> — Planning and posting content consistently</li>
                             <li><strong>Community management</strong> — Responding to comments, DMs, and mentions</li>
@@ -873,14 +921,10 @@
                             <li>Started Instagram Stories showing behind-the-scenes</li>
                         </ul>
 
-                        <p><strong>Result after 3 months:</strong> Followers dropped to 35K (fake ones unfollowed), but
-                            engagement hit 5%. Sales from Instagram: $2.4 lakhs.</p>
+                        <p><strong>Result after 3 months:</strong> Followers dropped to 35K (fake ones unfollowed), but  engagement hit 5%. Sales from Instagram: $2.4 lakhs.</p>
 
                         <div class="moral">
-                            <strong>🎯 The Lesson:</strong> 1,000 engaged followers > 100,000 dead followers. Your job
-                            isn't
-                            to
-                            grow vanity metrics — it's to grow SALES.
+                            <strong>🎯 The Lesson:</strong> 1,000 engaged followers > 100,000 dead followers. Your job  isn't  to  grow vanity metrics — it's to grow SALES.
                         </div>
                     </div>
                 </section>
@@ -891,29 +935,23 @@
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">1. ENGAGEMENT OVER FOLLOWERS</h3>
-                        <p>A small, engaged audience beats a large, dead audience. Focus on people who actually interact
-                            with
-                            content.</p>
+                        <p>A small, engaged audience beats a large, dead audience. Focus on people who actually interact  with  content.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">2. CONSISTENCY IS KING</h3>
-                        <p>Posting 3x/week consistently beats posting daily for a month then disappearing. Build a
-                            sustainable
-                            rhythm.</p>
+                        <p>Posting 3x/week consistently beats posting daily for a month then disappearing. Build a  sustainable  rhythm.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">3. RESPOND WITHIN 1 HOUR</h3>
-                        <p>Social media is SOCIAL. If someone comments or DMs, respond fast. Slow responses = lost
-                            sales.
+                        <p>Social media is SOCIAL. If someone comments or DMs, respond fast. Slow responses = lost  sales.
                         </p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">4. VALUE FIRST, SELL SECOND</h3>
-                        <p>80% of content should provide value (education, entertainment, inspiration). 20% can be
-                            promotional.
+                        <p>80% of content should provide value (education, entertainment, inspiration). 20% can be  promotional.
                         </p>
                     </div>
                 </section>
@@ -927,8 +965,7 @@
 
                     <div class="info-box gold">
                         <h4>💡 Platform Rule</h4>
-                        <p>Don't try to be everywhere. Master 2-3 platforms where your audience actually is before
-                            expanding.
+                        <p>Don't try to be everywhere. Master 2-3 platforms where your audience actually is before  expanding.
                         </p>
                     </div>
 
@@ -973,7 +1010,7 @@
                         </div>
 
                         <div class="platform-card">
-                            <h4>📌 Pinterest</h4>
+                            <h4>Pinterest</h4>
                             <p><strong>Best for:</strong> Home decor, fashion, DIY, food, inspiration</p>
                             <p><strong>Content mix:</strong></p>
                             <ul class="styled-list check-list">
@@ -1031,9 +1068,8 @@
                     <h3>Content Pillars (Define 4-5)</h3>
 
                     <div class="info-box info">
-                        <h4>📌 What Are Content Pillars?</h4>
-                        <p>Content pillars are the main themes you post about. They keep your content focused and
-                            on-brand.
+                        <h4>What Are Content Pillars?</h4>
+                        <p>Content pillars are the main themes you post about. They keep your content focused and  on-brand.
                         </p>
                         <p style="margin-top: 15px;"><strong>Example for a skincare brand:</strong></p>
                         <ul class="styled-list" style="margin-top: 10px;">
@@ -1052,14 +1088,12 @@
                         <p><strong>Line 1 (Hook):</strong> Stop the scroll. Ask a question or make a bold statement.</p>
                         <p>"The skincare mistake 90% of people make…"</p>
 
-                        <p style="margin-top: 20px;"><strong>Lines 2-5 (Value):</strong> Deliver the promise. Give them
-                            something useful.</p>
-                        <p>"Most people apply products in the wrong order. This is why your $2000 serum isn't
-                            working..."
+                        <p style="margin-top: 20px;"><strong>Lines 2-5 (Value):</strong> Deliver the promise. Give them  something useful.</p>
+                        <p>"Most people apply products in the wrong order. This is why your $2000 serum isn't  working..."
                         </p>
 
                         <p style="margin-top: 20px;"><strong>Last Line (CTA):</strong> Tell them what to do next.</p>
-                        <p>"Save this post 📌 | Drop a 💧 if you've been doing it wrong!"</p>
+                        <p>"Save this post | Drop a 💧 if you've been doing it wrong!"</p>
                     </div>
                 </section>
 
@@ -1106,9 +1140,7 @@
 
                     <div class="info-box warning">
                         <h4>⚠️ These Are Starting Points</h4>
-                        <p>Always check your OWN analytics. Your audience might be different. Test different times and
-                            track
-                            what works.</p>
+                        <p>Always check your OWN analytics. Your audience might be different. Test different times and  track  what works.</p>
                     </div>
 
                     <h3>Weekly Content Calendar Template</h3>
@@ -1167,17 +1199,16 @@
                 <section class="section" id="engagement">
                     <div class="section-header">
                         <div class="section-number">4</div>
-                        <h2>Community Engagement</h2>
+                        <h2>❤️ Community Engagement</h2>
                     </div>
 
                     <div class="info-box danger">
                         <h4>🚨 The 1-Hour Rule</h4>
                         <p>Respond to ALL comments and DMs within 1 hour during business hours. Social media is SOCIAL.
-                            Slow
-                            responses kill engagement and lose sales.</p>
+                            Slow  responses kill engagement and lose sales.</p>
                     </div>
 
-                    <h3>DM Response Guidelines</h3>
+                    <h3>↩️ DM Response Guidelines</h3>
 
                     <table class="styled-table">
                         <thead>
@@ -1229,10 +1260,10 @@
                 <section class="section" id="analytics">
                     <div class="section-header">
                         <div class="section-number">5</div>
-                        <h2>Analytics & Tracking</h2>
+                        <h2>🛤️ Analytics & Tracking</h2>
                     </div>
 
-                    <h3>Key Metrics to Track</h3>
+                    <h3>📊 Key Metrics to Track</h3>
 
                     <table class="styled-table">
                         <thead>
@@ -1332,8 +1363,7 @@
                     <div class="info-box gold">
                         <h4>💡 Why LinkedIn for Digital Heroes?</h4>
                         <p><strong>LinkedIn is the #1 platform for B2B clients and high-value leads.</strong>
-                            Decision-makers, business owners, and marketing managers are all on LinkedIn looking for
-                            help.
+                            Decision-makers, business owners, and marketing managers are all on LinkedIn looking for  help.
                             This is where we showcase our premium work and attract $10K+ projects.</p>
                     </div>
 
@@ -1397,9 +1427,7 @@
                     <div class="template-box" style="margin-top: 20px;">
                         <div class="template-header">📝 Example 2: Client Testimonial Post</div>
                         <p><strong>Hook:</strong> "I wish I found Digital Heroes 6 months earlier."</p>
-                        <p style="margin-top: 15px;">That's what <span class="placeholder">[Client Name]</span> told us
-                            last
-                            week.</p>
+                        <p style="margin-top: 15px;">That's what <span class="placeholder">[Client Name]</span> told us  last  week.</p>
                         <p style="margin-top: 15px;">When they came to us, their store was:</p>
                         <p>❌ Loading in 6+ seconds<br>
                             ❌ Looking "cheap" (their words)<br>
@@ -1408,9 +1436,7 @@
                         <p>✅ PageSpeed 92<br>
                             ✅ Premium design that matches their brand<br>
                             ✅ 2.8% conversion rate</p>
-                        <p style="margin-top: 15px;">Sometimes it's not about getting more traffic — it's about
-                            converting
-                            the traffic you already have.</p>
+                        <p style="margin-top: 15px;">Sometimes it's not about getting more traffic — it's about  converting  the traffic you already have.</p>
                         <p style="margin-top: 15px;">DM me "STORE" if you want the same transformation.</p>
                     </div>
 
@@ -1418,8 +1444,7 @@
                         <div class="template-header">📝 Example 3: Educational Value Post</div>
                         <p><strong>Hook:</strong> 90% of Shopify stores make this homepage mistake.</p>
                         <p style="margin-top: 15px;">I've reviewed 200+ stores this year. Here's what I keep seeing:</p>
-                        <p style="margin-top: 15px;"><strong>❌ The mistake:</strong> Putting a slideshow as the hero
-                            section.</p>
+                        <p style="margin-top: 15px;"><strong>❌ The mistake:</strong> Putting a slideshow as the hero  section.</p>
                         <p style="margin-top: 15px;">Why it kills conversions:</p>
                         <p>• Slows down page load by 2-3 seconds<br>
                             • People don't wait — they scroll past<br>
@@ -1429,7 +1454,7 @@
                             • Strong headline + subheadline<br>
                             • One CTA button (Shop Now, not "Learn More")</p>
                         <p style="margin-top: 15px;">Simple change. Massive impact.</p>
-                        <p style="margin-top: 15px;">Save this 📌 | Agree? ↓</p>
+                        <p style="margin-top: 15px;">Save this | Agree? ↓</p>
                     </div>
 
                     <h3>Complete LinkedIn Posting Process</h3>
@@ -1438,8 +1463,7 @@
                         <h4>📋 Step-by-Step: From Idea to Published Post</h4>
                         <ol style="margin-top: 15px; margin-left: 20px;">
                             <li><strong>Identify the goal</strong> — What do we want? (leads, followers, authority)</li>
-                            <li><strong>Choose content type</strong> — Portfolio, testimonial, educational, or
-                                behind-scenes
+                            <li><strong>Choose content type</strong> — Portfolio, testimonial, educational, or  behind-scenes
                             </li>
                             <li><strong>Use ChatGPT to brainstorm</strong> — (see prompts below)</li>
                             <li><strong>Write the hook</strong> — First line must stop the scroll</li>
@@ -1455,23 +1479,19 @@
                     <div class="template-box">
                         <div class="template-header">🤖 Prompt 1: Generate Portfolio Post Ideas</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                            I run a Shopify development agency called Digital Heroes. We've built [X] stores this month
-                            with
-                            impressive results.<br><br>
+                            I run a Shopify development agency called Digital Heroes. We've built [X] stores this month  with  impressive results.<br><br>
                             Project details:<br>
                             - Client: [Brand name, industry]<br>
                             - Before: [problems - slow speed, poor design, low conversion]<br>
                             - After: [improvements - PageSpeed, conversion rate, revenue]<br><br>
-                            Write 3 different LinkedIn post hooks for this case study. Make them attention-grabbing, use
-                            numbers, and create curiosity. Format: Hook only (one line each).
+                            Write 3 different LinkedIn post hooks for this case study. Make them attention-grabbing, use  numbers, and create curiosity. Format: Hook only (one line each).
                         </p>
                     </div>
 
                     <div class="template-box" style="margin-top: 20px;">
                         <div class="template-header">🤖 Prompt 2: Create Full LinkedIn Post</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                            Write a LinkedIn post for my Shopify development agency showcasing a client success
-                            story.<br><br>
+                            Write a LinkedIn post for my Shopify development agency showcasing a client success  story.<br><br>
                             Details:<br>
                             - Store niche: [e.g., skincare, fashion, tech]<br>
                             - Result: [e.g., "3x conversion rate in 60 days"]<br>
@@ -1491,8 +1511,7 @@
                         <div class="template-header">🤖 Prompt 3: Brainstorm Content Ideas</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I'm a social media manager for Digital Heroes, a Shopify development agency.<br><br>
-                            Our services: Custom Shopify stores, speed optimization, conversion rate optimization, theme
-                            customization.<br><br>
+                            Our services: Custom Shopify stores, speed optimization, conversion rate optimization, theme  customization.<br><br>
                             Target audience: D2C brand owners, ecommerce entrepreneurs, marketing managers.<br><br>
                             Generate 10 LinkedIn post ideas for this week covering:<br>
                             - 2 portfolio showcases<br>
@@ -1624,16 +1643,11 @@
                         <p><strong>Handle in this order every day:</strong></p>
                         <ol style="margin-top: 15px; line-height: 2;">
                             <li><strong>🔴 P0 - Crisis/Negative Viral Content</strong> → Damage control immediately.
-                                Respond
-                                within 30 mins.</li>
-                            <li><strong>🔴 P0 - DMs from Potential Clients</strong> → Leads in inbox = money. Respond
-                                fast.
+                                Respond  within 30 mins.</li>
+                            <li><strong>🔴 P0 - DMs from Potential Clients</strong> → Leads in inbox = money. Respond  fast.
                             </li>
-                            <li><strong>🔴 P0 - Scheduled Post Verification</strong> → Make sure today's posts are
-                                scheduled
-                                correctly.</li>
-                            <li><strong>🟡 P1 - Comment Engagement</strong> → Reply to all comments within 2 hours of
-                                posting.</li>
+                            <li><strong>🔴 P0 - Scheduled Post Verification</strong> → Make sure today's posts are  scheduled  correctly.</li>
+                            <li><strong>🟡 P1 - Comment Engagement</strong> → Reply to all comments within 2 hours of  posting.</li>
                             <li><strong>🟡 P1 - Community Engagement</strong> → Like, comment on relevant accounts.</li>
                             <li><strong>🟢 P2 - Content Creation</strong> → Create posts for upcoming schedule.</li>
                             <li><strong>🟢 P2 - Analytics Review</strong> → Check what's performing, adjust strategy.
@@ -1649,10 +1663,7 @@
                     <h3>🔴 Negative Comment Goes Viral</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Someone posts a complaint that's getting shared/liked.</p>
-                        <p><strong>Response:</strong> Respond quickly and publicly: "We're sorry to hear this. Please DM
-                            us
-                            your details so we can resolve this directly." Take the detailed conversation private. Never
-                            delete unless it's spam/abuse.</p>
+                        <p><strong>Response:</strong> Respond quickly and publicly: "We're sorry to hear this. Please DM  us  your details so we can resolve this directly." Take the detailed conversation private. Never  delete unless it's spam/abuse.</p>
                         <p><strong>Rule:</strong> Respond fast. Public acknowledgment + private resolution. Never argue.
                         </p>
                     </div>
@@ -1661,37 +1672,29 @@
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Typo, wrong image, or incorrect information went live.</p>
                         <p><strong>Response:</strong> If minor: Delete and repost. If already engaged: Edit if possible,
-                            or
-                            post correction. If major: Acknowledge it with humor if appropriate.</p>
+                            or  post correction. If major: Acknowledge it with humor if appropriate.</p>
                         <p><strong>Rule:</strong> Fix fast. Don't draw unnecessary attention to small errors.</p>
                     </div>
 
-                    <h3>🔴 Account Engagement is Dropping</h3>
+                    <h3>❤️ 🔴 Account Engagement is Dropping</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Posts aren't getting likes/comments like they used to.</p>
-                        <p><strong>Response:</strong> Analyze: posting times, content types, hashtag performance. Test
-                            new
-                            formats. Engage more in comments/DMs. Report findings to PM with improvement plan.</p>
+                        <p><strong>Response:</strong> Analyze: posting times, content types, hashtag performance. Test  new  formats. Engage more in comments/DMs. Report findings to PM with improvement plan.</p>
                         <p><strong>Rule:</strong> Data first. Don't panic. Test and iterate.</p>
                     </div>
 
                     <h3>🔴 Client Wants to Post Something Inappropriate</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client suggests controversial or off-brand content.</p>
-                        <p><strong>Response:</strong> "I love the creative thinking! However, this could attract
-                            negative
-                            attention because [reason]. Can I suggest an alternative that achieves the same goal?"</p>
-                        <p><strong>Rule:</strong> Advise against. Document if they insist. Never post anything
-                            unethical.
+                        <p><strong>Response:</strong> "I love the creative thinking! However, this could attract  negative  attention because [reason]. Can I suggest an alternative that achieves the same goal?"</p>
+                        <p><strong>Rule:</strong> Advise against. Document if they insist. Never post anything  unethical.
                         </p>
                     </div>
 
                     <h3>🔴 Competitor Copying Our Content</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Competitor is using similar content/ideas.</p>
-                        <p><strong>Response:</strong> Document with screenshots. Report to PM. Stay focused on our
-                            content
-                            being better. If it's clear plagiarism, consider platform's copyright reporting.</p>
+                        <p><strong>Response:</strong> Document with screenshots. Report to PM. Stay focused on our  content  being better. If it's clear plagiarism, consider platform's copyright reporting.</p>
                         <p><strong>Rule:</strong> Don't engage publicly. Focus on staying ahead, not fighting behind.
                         </p>
                     </div>
@@ -1699,30 +1702,24 @@
                     <h3>🔴 No Content Ideas Left</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Creative block — you're out of ideas.</p>
-                        <p><strong>Response:</strong> Review what worked before. Check competitor accounts. Ask ChatGPT
-                            for
+                        <p><strong>Response:</strong> Review what worked before. Check competitor accounts. Ask ChatGPT  for
                             20 content ideas in your niche. Repurpose old content in new formats. Take a short break.
                         </p>
-                        <p><strong>Rule:</strong> Everyone gets stuck. Use tools and templates. Batch planning prevents
-                            this.</p>
+                        <p><strong>Rule:</strong> Everyone gets stuck. Use tools and templates. Batch planning prevents  this.</p>
                     </div>
 
                     <h3>🔴 Account Was Hacked/Compromised</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Unauthorized access or strange activity on account.</p>
                         <p><strong>Response:</strong> Immediately: Change password, enable 2FA, check connected apps,
-                            remove
-                            unauthorized access. Alert management. Review what was posted/messaged. Report to platform
-                            if
-                            needed.</p>
+                            remove  unauthorized access. Alert management. Review what was posted/messaged. Report to platform  if  needed.</p>
                         <p><strong>Rule:</strong> Security first. Then damage control. Document everything.</p>
                     </div>
 
                     <h3>🔴 Client Expects Viral Results Immediately</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client wants "viral" posts after one week.</p>
-                        <p><strong>Response:</strong> "Going viral is unpredictable. What IS predictable is consistent
-                            growth through strategic content. Let's look at our week-over-week metrics instead."</p>
+                        <p><strong>Response:</strong> "Going viral is unpredictable. What IS predictable is consistent  growth through strategic content. Let's look at our week-over-week metrics instead."</p>
                         <p><strong>Rule:</strong> Set realistic expectations. Consistency beats virality long-term.</p>
                     </div>
                 </section>
@@ -1737,76 +1734,60 @@
 
                     <div style="text-align: center; padding: 30px 0;">
                         <div style="font-size: 48px; margin-bottom: 20px;">📱</div>
-                        <blockquote
-                            style="font-size: 24px; font-style: italic; color: #EC4899; margin-bottom: 20px; line-height: 1.6;">
+                        <blockquote  style="font-size: 24px; font-style: italic; color: #EC4899; margin-bottom: 20px; line-height: 1.6;">
                             "Social media is not about being everywhere. It's about being unforgettable somewhere."
                         </blockquote>
                         <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
                     </div>
 
                     <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                        <h3 style="color: #EC4899; margin-bottom: 15px;">📖 Success Story: The Reel That Went Viral</h3>
+                        <h3 style="color: #EC4899; margin-bottom: 15px;">🏆 📖 Success Story: The Reel That Went Viral</h3>
                         <p style="color: #E5E7EB; line-height: 1.8;">
-                            It was a simple behind-the-scenes video: 30 seconds of a developer fixing a Shopify bug with
-                            lofi music. Nothing fancy. Posted at 7 PM on a Tuesday.
+                            It was a simple behind-the-scenes video: 30 seconds of a developer fixing a Shopify bug with  lofi music. Nothing fancy. Posted at 7 PM on a Tuesday.
                             <br><br>
-                            <strong style="color: #FCD34D;">Result: 250,000 views. 12,000 new followers. 8 inbound
-                                leads.</strong>
+                            <strong style="color: #FCD34D;">Result: 250,000 views. 12,000 new followers. 8 inbound  leads.</strong>
                             <br><br>
-                            <strong style="color: #10B981;">The lesson?</strong> Authenticity beats perfection. People
-                            connect with real moments, not polished ads. Keep posting — you never know which post will
-                            be
-                            THE one.
+                            <strong style="color: #10B981;">The lesson?</strong> Authenticity beats perfection. People  connect with real moments, not polished ads. Keep posting — you never know which post will  be  THE one.
                             <br><br>
                             <em>Your next viral post might be the one you almost didn't share.</em>
                         </p>
                     </div>
 
-                    <div
-                        style="background: rgba(236, 72, 153, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
+                    <div  style="background: rgba(236, 72, 153, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
                         <h3 style="color: #F9A8D4; margin-bottom: 15px;">⚡ Productivity Hacks for Social Media</h3>
                         <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
-                            <li>📅 <strong>Content Calendar:</strong> Plan 2-4 weeks ahead — no more scrambling for
-                                ideas
+                            <li>📅 <strong>Content Calendar:</strong> Plan 2-4 weeks ahead — no more scrambling for  ideas
                             </li>
                             <li>⏰ <strong>Batch Creation:</strong> Create 1 week of content in one 3-hour session</li>
                             <li>🔄 <strong>Repurpose Everything:</strong> 1 blog = 5 social posts, 1 video, 1 carousel
                             </li>
-                            <li>📊 <strong>Check Analytics Weekly:</strong> 15 mins to review what worked, double down
-                                on it
+                            <li>📊 <strong>Check Analytics Weekly:</strong> 15 mins to review what worked, double down  on it
                             </li>
-                            <li>🤖 <strong>Schedule, Don't Post Live:</strong> Use scheduling tools — free up your
-                                mornings
+                            <li>🤖 <strong>Schedule, Don't Post Live:</strong> Use scheduling tools — free up your  mornings
                             </li>
                         </ul>
                     </div>
 
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                        <div
-                            style="background: rgba(236, 72, 153, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                    <div  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div  style="background: rgba(236, 72, 153, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">🔥</div>
                             <p style="color: #FBCFE8; font-weight: 600;">"Done is better than perfect. Just post."</p>
                         </div>
-                        <div
-                            style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div  style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">💬</div>
                             <p style="color: #93C5FD; font-weight: 600;">"Engagement beats followers. Build community."
                             </p>
                         </div>
-                        <div
-                            style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div  style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">📈</div>
                             <p style="color: #FDE68A; font-weight: 600;">"Consistency compounds. Show up daily."</p>
                         </div>
                     </div>
 
-                    <div
-                        style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                    <div  style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
                         <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
                         </p>
-                        <p style="font-size: 20px; color: #EC4899; font-weight: 600;">"Today, I will create content that
-                            connects, entertains, and inspires action. Every post is an opportunity."</p>
+                        <p style="font-size: 20px; color: #EC4899; font-weight: 600;">"Today, I will create content that  connects, entertains, and inspires action. Every post is an opportunity."</p>
                     </div>
                 </section>
 
@@ -1819,9 +1800,7 @@
 
                     <div class="info-box gold">
                         <h4>💡 The 2026 Social Landscape</h4>
-                        <p>Short-form video dominates, AI creates at scale, and authenticity wins over polish. Here's
-                            how to
-                            succeed.</p>
+                        <p>Short-form video dominates, AI creates at scale, and authenticity wins over polish. Here's  how to  succeed.</p>
                     </div>
 
                     <h3>🤖 AI Tools for Social Media (2026 Standards)</h3>
@@ -1871,8 +1850,7 @@
 
                         <p style="margin-top: 15px;"><strong>✅ The Hook-Value-CTA Formula:</strong></p>
                         <ol style="margin-top: 10px; line-height: 2;">
-                            <li><strong>Hook (0-3 seconds)</strong> — Stop the scroll with bold text or surprising
-                                statement
+                            <li><strong>Hook (0-3 seconds)</strong> — Stop the scroll with bold text or surprising  statement
                             </li>
                             <li><strong>Value (3-30 seconds)</strong> — Deliver ONE clear insight, tip, or entertainment
                             </li>
@@ -1880,9 +1858,7 @@
                         </ol>
 
                         <div class="moral">
-                            <strong>📊 Key Metric:</strong> If 50%+ of viewers drop off in first 3 seconds, your hook
-                            needs
-                            work.
+                            <strong>📊 Key Metric:</strong> If 50%+ of viewers drop off in first 3 seconds, your hook  needs  work.
                         </div>
                     </div>
 
@@ -1930,8 +1906,7 @@
                             <li><strong>TikTok:</strong> 7-9 AM, 12-3 PM, 7-11 PM</li>
                             <li><strong>YouTube Shorts:</strong> Friday-Sunday, 2-4 PM</li>
                         </ul>
-                        <p style="margin-top: 15px;"><strong>Pro Tip:</strong> Check YOUR analytics - your audience may
-                            differ from averages.</p>
+                        <p style="margin-top: 15px;"><strong>Pro Tip:</strong> Check YOUR analytics - your audience may  differ from averages.</p>
                     </div>
                 </section>
 
@@ -1943,7 +1918,7 @@
                     </div>
 
                     <div class="info-box warning">
-                        <h4>⚠️ The Algorithm Rewards Engagement, Not Perfection</h4>
+                        <h4>❤️ ⚠️ The Algorithm Rewards Engagement, Not Perfection</h4>
                         <p>Algorithms in 2026 prioritize watch time, saves, and shares over likes. Here's how to win:
                         </p>
                     </div>
@@ -2001,9 +1976,7 @@
                     <div class="info-box gold" style="margin-top: 25px;">
                         <h4>💡 The 30-Minute Rule</h4>
                         <p>After posting, stay active for 30 minutes. Reply to every comment, engage with your niche,
-                            and
-                            watch related content. This signals to the algorithm that you're a real creator who builds
-                            community.</p>
+                            and  watch related content. This signals to the algorithm that you're a real creator who builds  community.</p>
                     </div>
                 </section>
 
@@ -2029,11 +2002,55 @@
                 }
             </script>
 
+            <script>
+
+            </script>
+
     <script>
+        // ===== SIDEBAR TOGGLE FUNCTIONS =====
         function toggleSidebar() {
-            document.querySelector('.sidebar').classList.toggle('open');
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
         }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        // Click outside to close sidebar
+        document.addEventListener('click', function(event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            var overlay = document.querySelector('.sidebar-overlay');
+            
+            if (!sidebar || !toggleBtn) return;
+            
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+            
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+        // ===== END SIDEBAR TOGGLE =====
     </script>
+
 </body>
 
 </div>
@@ -2059,8 +2076,7 @@
             <div class="video-card">
                 <div class="video-placeholder">
                     [YouTube Embed Placeholder]
-                    <div
-                        style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                    <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                         15:00</div>
                 </div>
                 <div class="video-content">
@@ -2073,13 +2089,12 @@
             <div class="video-card">
                 <div class="video-placeholder">
                     [YouTube Embed Placeholder]
-                    <div
-                        style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                    <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                         30:00</div>
                 </div>
                 <div class="video-content">
                     <span class="tag">Design</span>
-                    <h3>Canva for Non-Designers</h3>
+                    <h3>🎨 Canva for Non-Designers</h3>
                     <p>Quick tips to make your posts look professional in minutes.</p>
                 </div>
             </div>
@@ -2087,8 +2102,7 @@
             <div class="video-card">
                 <div class="video-placeholder">
                     [YouTube Embed Placeholder]
-                    <div
-                        style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                    <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                         20:00</div>
                 </div>
                 <div class="video-content">
@@ -2139,8 +2153,7 @@
         <div class="header">
             <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
             <h1>Your Onboarding Journey</h1>
-            <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
-                to become a certified Social Media Manager.</p>
+            <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps  to become a certified Social Media Manager.</p>
         </div>
 
         <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
@@ -2154,11 +2167,9 @@
                     style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
                     <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
-                        understand, and internalize the Standard Operating Procedure. This document outlines our posting
-                        strategy.</p>
+                        understand, and internalize the Standard Operating Procedure. This document outlines our posting  strategy.</p>
                     <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
-                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
-                        to Social SOP</a>
+                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go  to Social SOP</a>
                 </div>
             </div>
 
@@ -2170,11 +2181,9 @@
                 <div class="card"
                     style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
-                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and watch
-                        the required training videos. These will give you visual context to the written SOPs.</p>
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and watch  the required training videos. These will give you visual context to the written SOPs.</p>
                     <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
-                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
-                        Assets Library</a>
+                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open  Assets Library</a>
                 </div>
             </div>
 
@@ -2186,13 +2195,10 @@
                 <div class="card"
                     style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test</h3>
-                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by taking
-                        the role-specific quiz. You need a score of 90% or higher to proceed.</p>
-                    <p
-                        style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by taking  the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                    <p  style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
                         ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
-                            onclick="switchView('sop'); return false;" style="color: #3B82F6;">Social SOP</a> view and
-                        click the "🎓 Test" button in the sidebar.
+                            onclick="switchView('sop'); return false;" style="color: #3B82F6;">Social SOP</a> view and  click the "🎓 Test" button in the sidebar.
                     </p>
                 </div>
             </div>
@@ -2207,8 +2213,7 @@
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording Task
                     </h3>
                     <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final verification.
-                        Record a <strong>30-minute screen sharing video</strong> walking us through your understanding
-                        of the role.</p>
+                        Record a <strong>30-minute screen sharing video</strong> walking us through your understanding  of the role.</p>
 
                     <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
                         <strong>What to cover in your video:</strong>
@@ -2222,10 +2227,8 @@
 
                     <div class="success-box"
                         style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                        <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
-                            Submission</strong>
-                        <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name] nailed
-                            this task:</p>
+                        <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example  Submission</strong>
+                        <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name] nailed  this task:</p>
                         <div class="video-embed"
                             style="aspect-ratio: 16/9; background: #000; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; margin-top: 15px;">
                             [Example Video Placeholder]
@@ -2256,7 +2259,72 @@
             opacity: 1;
         }
     }
-</style>
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1999;
+        }
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+    
+        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+        @media (max-width: 768px) {
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+            .header h1 {
+                font-size: 1.5em !important;
+                margin-bottom: 5px !important;
+            }
+            .header .subtitle {
+                font-size: 0.9em !important;
+                margin-bottom: 10px !important;
+            }
+            .badge-row {
+                gap: 8px !important;
+                margin-top: 12px !important;
+            }
+            .badge {
+                padding: 5px 12px !important;
+                font-size: 0.75em !important;
+            }
+            .container {
+                padding: 10px !important;
+            }
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            .section h2 {
+                font-size: 1.2em !important;
+            }
+        }
+        /* ===== END MOBILE HEADER SIZE ===== */
+
+    
+        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+            .sidebar.active, .sidebar.open {
+                transform: translateX(0) !important;
+            }
+        }
+        /* ===== END SIDEBAR CLOSED ===== */
+
+    </style>
 <script>
     function switchView(viewName) {
         history.pushState(null, null, '#' + viewName);

@@ -7,17 +7,25 @@
     <title>Digital Heroes | HR & People Ops SOP</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
-            --primary: #1E3A5F;
-            --secondary: #2E5077;
-            --accent: #3D6B99;
-            --success: #2E7D32;
-            --warning: #F57C00;
-            --danger: #C62828;
-            --light: #F8F9FA;
-            --dark: #212529;
+            /* HANDBOOK VARIABLES */
+            --primary: #0F172A;
+            --primary-light: #1E293B;
+            --secondary: #334155;
+            --accent: #3B82F6;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --light: #F8FAFC;
+            --dark: #020617;
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
             --gold: #D4AF37;
             --teal: #0D9488;
         }
@@ -29,10 +37,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             line-height: 1.7;
-            color: #333;
-            background: #f5f7fa;
+            color: #334155;
+            background: #F1F5F9;
+            display: flex;
+            min-height: 100vh;
         }
 
         .container {
@@ -442,18 +452,19 @@
             }
         }
 
-        /* SIDEBAR */
+        /* REPLACED WITH HANDBOOK LAYOUT STYLES */
         .sidebar {
-            width: 320px;
-            background: linear-gradient(180deg, #0D9488 0%, #0F766E 100%);
-            color: white;
+            width: 280px;
+            background: var(--bg-sidebar);
+            color: var(--text-sidebar);
             position: fixed;
-            top: 0;
-            left: 0;
             height: 100vh;
             overflow-y: auto;
-            padding: 15px 0;
-            z-index: 1000;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            z-index: 2000;
+            border-right: 1px solid #334155;
         }
 
         .sidebar-header {
@@ -589,96 +600,64 @@
         }
 
         .main-content {
-            margin-left: 320px;
-            background: #f5f7fa;
+            margin-left: 280px;
+            flex: 1;
+            padding: 40px 60px;
+            max-width: 1400px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 200;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            .main-content {
+                padding: 30px;
+                margin-left: 280px;
+            }
+        }
+
+        @media (max-width: 900px) {
             .sidebar {
                 transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
             }
 
             .main-content {
                 margin-left: 0;
-            }
-        }
-
-        @media print {
-
-            .sidebar,
-            .mobile-menu-btn,
-            .sidebar-search,
-            .no-print,
-            .admin-floating-btn,
-            .admin-banner,
-            .admin-modal-overlay,
-            .admin-history-panel,
-            .admin-find-panel,
-            .admin-toast-container,
-            .print-btn {
-                display: none !important;
+                padding: 20px 20px 80px 20px;
+                width: 100%;
             }
 
-            .main-content {
-                margin-left: 0 !important;
-                padding: 20px !important;
+            .mobile-toggle {
+                display: block;
             }
 
             .header {
-                border-radius: 0 !important;
-                margin-bottom: 20px !important;
-                padding: 30px 20px !important;
-            }
-
-            .section {
-                break-inside: avoid;
-                page-break-inside: avoid;
-                margin-bottom: 20px !important;
-            }
-
-            body {
-                background: white !important;
-                font-size: 12pt !important;
-            }
-
-            .info-box,
-            .critical-alert,
-            .prompt-box {
-                break-inside: avoid;
-                page-break-inside: avoid;
+                border-radius: 20px;
+                margin-top: 40px;
             }
         }
 
-        .print-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background: linear-gradient(135deg, #A78BFA, #8B5CF6);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 15px 10px;
-            cursor: pointer;
-            border: none;
-            font-size: 0.95em;
-            transition: all 0.3s ease;
-        }
-
-        .print-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(167, 139, 250, 0.3);
-        }
-    
-        /* Mobile Header - Fixed Collision */
+        /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
         .mobile-header {
             display: none;
             position: fixed;
@@ -687,29 +666,33 @@
             right: 0;
             height: 56px;
             background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-            z-index: 1002;
+            z-index: 9999;
             padding: 0 12px;
             align-items: center;
             justify-content: flex-start;
             gap: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         .mobile-menu-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 44px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
             color: white;
             border-radius: 10px;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             cursor: pointer;
             flex-shrink: 0;
         }
-        
+
+        .mobile-menu-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
         .mobile-home-btn {
             display: flex;
             align-items: center;
@@ -717,42 +700,82 @@
             color: #10B981;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 1rem;
             padding: 10px 16px;
             background: rgba(16, 185, 129, 0.15);
             border-radius: 10px;
             border: 1px solid rgba(16, 185, 129, 0.3);
             white-space: nowrap;
         }
-        
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .mobile-header {
-                display: flex;
+                display: flex !important;
             }
-            
+
+            .sidebar {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100vh !important;
+                width: 280px !important;
+                z-index: 9999 !important;
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0) !important;
+            }
+
             .main-content {
+                margin-left: 0 !important;
                 padding-top: 70px !important;
-            }
-            
-            .header {
-                margin-top: 56px;
+                width: 100% !important;
             }
         }
 
+        /* ========== END DEFINITIVE MOBILE FIX ========== */
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
 
+    <link rel="stylesheet" href="assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
+</head>
+
 <body>
-    <!-- Mobile Header -->
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
     <div class="mobile-header">
-        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-        <a href="index.html" class="mobile-home-btn">🏠 Home</a>
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
     </div>
 
-    <aside class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-header"><span class="emoji">👥</span>
             <h2>HR & People Ops SOP</h2>
+        </div>
+        <div class="back-link" style="margin-top: 0; border-top: none; padding: 0 15px 10px; text-align: left;">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 500; font-size: 0.9rem;">
+                <span>←</span> Back to Dashboard
+            </a>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="kra/hr-kra.html" class="sidebar-back"
@@ -770,7 +793,7 @@
                 style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">🎓
                 Training</a>
         </div>
-        <a href="index.html" class="sidebar-back">← Back to Home</a>
+
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
@@ -778,7 +801,7 @@
                 Test</button>
         </div>
         <!-- HR Docs Editor Link -->
-        <a href="hr-docs-editor/dist/index.html" target="_blank"
+        <a href="https://hrm.digitalheroes.co.in" target="_blank"
             style="display: block; margin: 0 10px 15px 10px; padding: 12px; text-align: center; background: linear-gradient(135deg, #10B981 0%, #059669 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.9em; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); transition: all 0.2s;">
             📝 HR Docs Editor
         </a>
@@ -787,6 +810,9 @@
         <div id="sidebar-sop-links">
             <div class="sidebar-section-title">1️⃣ Hiring Pipeline</div>
             <div class="sidebar-nav-grid">
+                <a href="#dev-hiring-guide"
+                    style="grid-column: span 2; background: #dbeafe; color: #1e40af; border: 1px solid #2563eb; font-weight: bold;">💻
+                    Dev Hiring Guide</a>
                 <a href="#step1-jd">📋 Job Desc</a>
                 <a href="#step2-screening">🔍 Screening</a>
                 <a href="#step3-call">📞 Call</a>
@@ -843,7 +869,7 @@
                 <a href="#resources">📄 Resources</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
 
         <!-- ONBOARDING SIDEBAR LINKS -->
@@ -856,9 +882,9 @@
                 <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
-    </aside>
+    </nav>
 
     <div class="main-content">
         <div id="content-sop" class="view-section">
@@ -910,8 +936,7 @@
                     <div class="story-box">
                         <h4>Why a Proper Hiring Process Matters</h4>
                         <p>We once hired a developer in a rush. Client project was urgent. Took just one interview, no
-                            skill
-                            test, no reference check. Seemed confident in the call.</p>
+                            skill test, no reference check. Seemed confident in the call.</p>
 
                         <p>Within 2 weeks:</p>
                         <ul style="margin: 15px 0 15px 20px;">
@@ -943,23 +968,19 @@
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">1. HIRE SLOW, FIRE FAST</h3>
                         <p>Take time to find the right person. But if someone isn't working out, don't drag it on for
-                            months
-                            hoping they'll improve. Quick, respectful exits protect both parties.</p>
+                            months hoping they'll improve. Quick, respectful exits protect both parties.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">2. CULTURE FIT > SKILL</h3>
                         <p>Skills can be taught. Attitude, work ethic, and values cannot. A brilliant toxic person will
-                            cost
-                            you
-                            your best people.</p>
+                            cost you your best people.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">3. DOCUMENTATION IS PROTECTION</h3>
                         <p>Every offer, contract, warning, and termination in writing. No verbal agreements. Protects
-                            the
-                            company AND the employee.</p>
+                            the company AND the employee.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
@@ -1156,6 +1177,972 @@
                 </section>
 
                 <!-- Hiring Process -->
+
+                <!-- NEW: DEVELOPER HIRING GUIDE -->
+
+                <!-- NEW: DEVELOPER HIRING GUIDE (Detailed V2) -->
+
+                <!-- NEW: DEVELOPER HIRING GUIDE (Detailed V3 - Fixed Visibility) -->
+                <section class="critical-alert" id="dev-hiring-guide"
+                    style="background: white; border: 2px solid var(--primary); padding: 0;">
+
+                    <!-- Header -->
+                    <div
+                        style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); padding: 30px; text-align: center; color: white;">
+                        <h2 style="color: white; margin: 0; font-size: 2.2em; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                            🎯 DIGITAL HEROES - HR HIRING GUIDE</h2>
+                        <h3 style="color: #bfdbfe; margin-top: 10px; font-size: 1.4em;">Simple Step-by-Step Process for
+                            Hiring Web Developers</h3>
+                        <p style="margin-top: 10px; font-weight: 500; opacity: 0.9; color: white;">Easy to Follow | Less
+                            Time Consuming | Find Tech-Savvy Gems</p>
+                    </div>
+
+                    <div style="padding: 30px;">
+
+                        <!-- IMPORTANT SECTION -->
+                        <div class="highlight-box"
+                            style="background: #fff1f2; border-left: 5px solid #e11d48; padding: 20px;">
+                            <h3 style="color: #be123c;">📌 IMPORTANT: READ THIS FIRST</h3>
+
+                            <h4 style="margin-top: 15px; color: #881337;">Who Are We Hiring?</h4>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="background: #9f1239; color: white; padding: 12px; border: 1px solid #881337; text-align: left;">
+                                            What</th>
+                                        <th
+                                            style="background: #9f1239; color: white; padding: 12px; border: 1px solid #881337; text-align: left;">
+                                            Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            <strong>Role</strong>
+                                        </td>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            Web Developer (Trainee/Intern)</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            <strong>Training</strong>
+                                        </td>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            Everyone gets same Shopify training first</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            <strong>After Training</strong>
+                                        </td>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            Assigned to: Shopify Dev / Designer / Full Stack / PM based on aptitude</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            <strong>Key Filter</strong>
+                                        </td>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            Must be <strong>TECH-SAVVY</strong> (uses computers daily, figures out tech
+                                            easily)</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            <strong>Location</strong>
+                                        </td>
+                                        <td
+                                            style="background: white; color: #881337; padding: 12px; border: 1px solid #fecdd3;">
+                                            Remote/Hybrid - Location NOT a barrier</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 style="margin-top: 20px; color: #881337;">Why Tech-Savvy Matters</h4>
+                            <div
+                                style="background: #fff; padding: 15px; border-radius: 6px; border: 1px solid #fecdd3; color: #881337; font-family: monospace; font-weight: bold;">
+                                Tech-Savvy Person → Learns fast → Solves problems → Needs less hand-holding →
+                                PRODUCTIVE<br><br>
+                                Non-Tech Person → Struggles with basics → Gets stuck → Needs constant help → BURDEN
+                            </div>
+                        </div>
+
+                        <!-- HIRING PROCESS OVERVIEW -->
+                        <div class="info-box"
+                            style="background: #eff6ff; border-left: 5px solid #2563eb; margin-top: 30px; padding: 20px;">
+                            <h3 style="color: #1e40af;">🔄 HIRING PROCESS OVERVIEW</h3>
+                            <div
+                                style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px; color: #1e3a8a; font-family: monospace; line-height: 1.6; border: 1px solid #bfdbfe;">
+                                STEP 1: Application Filter (2 min) → Reject 70%<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                                STEP 2: HR Phone Screen (10 min) → Reject 50% more<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                                STEP 3: AI App Task (2 hours) → Filter by ACTION not words<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                                STEP 4: HR Video Interview (20 min) → Only for those who completed AI App<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                                STEP 5: Shopify Trial Task (1 day) → Final filter<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                                STEP 6: Training (if passed) → Assign role
+                            </div>
+
+                            <div
+                                style="background: #dbeafe; padding: 15px; border-radius: 6px; margin-top: 15px; color: #1e40af; border: 1px solid #93c5fd;">
+                                <strong>KEY INSIGHT:</strong> We give AI App Task <strong>BEFORE</strong> interview.
+                                Why?<br>
+                                <ul style="margin-top: 5px; padding-left: 20px; color: #1e40af;">
+                                    <li>Anyone can TALK well in interview</li>
+                                    <li>AI App Task tests who can actually DO</li>
+                                    <li>No point interviewing someone who can't complete a 2-hour task</li>
+                                    <li>Saves HR time - interview only serious candidates</li>
+                                </ul>
+                                <p style="margin-top: 10px; color: #1e40af;"><strong>HR's Job:</strong> Step 1, 2, 3, 4
+                                    (filter out wrong people efficiently)</p>
+                            </div>
+                        </div>
+
+                        <!-- STEP 1: APP FILTER -->
+                        <div class="section-divider" style="border-top: 2px dashed #cbd5e1; margin: 40px 0;"></div>
+                        <h2 style="color: #0f172a;">✅ STEP 1: APPLICATION FILTER (2 min/person)</h2>
+                        <h4 style="color: #475569;">HR Checklist - Just Tick Yes/No</h4>
+
+                        <table class="styled-table"
+                            style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                            <thead>
+                                <tr>
+                                    <th
+                                        style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                        Question</th>
+                                    <th
+                                        style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                        YES = Continue</th>
+                                    <th
+                                        style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                        NO = Reject</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        Can work remotely/hybrid as needed?</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ✅</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ❌ REJECT</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        Has portfolio OR any work samples?</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ✅</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ❌ REJECT</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        Resume is complete (not half-empty)?</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ✅</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ❌ REJECT</td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        Has own laptop?</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ✅</td>
+                                    <td
+                                        style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                        ❌ REJECT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p
+                            style="background: #fee2e2; color: #991b1b; padding: 10px; border-radius: 4px; margin-top: 10px; font-weight: bold; text-align: center; border: 1px solid #fca5a5;">
+                            If ANY answer is NO → REJECT immediately. Don't waste time.</p>
+
+
+                        <!-- STEP 2: PHONE SCREEN -->
+                        <div class="section-divider" style="border-top: 2px dashed #cbd5e1; margin: 40px 0;"></div>
+                        <h2 style="color: #0f172a;">📞 STEP 2: PHONE SCREEN (10 min)</h2>
+                        <p style="color: #334155;"><strong>Purpose:</strong> Check if worth calling for interview</p>
+
+                        <div class="story-box"
+                            style="margin-top: 15px; background: #f0fdf4; border: 1px solid #86efac; color: #166534; padding: 15px;">
+                            <h4 style="color: #166534;">📝 Script for HR:</h4>
+                            <p style="color: #166534;">"Hi [Name], this is [Your Name] from Digital Heroes.<br><br>
+                                I saw your application for the Web Developer role.<br>
+                                I have a few quick questions - will take 5-10 minutes.<br>
+                                Is this a good time?"<br><br>
+                                <em>[If yes, continue. If no, schedule call.]</em>
+                            </p>
+                        </div>
+
+                        <h4 style="margin-top: 25px; color: #334155;">Questions to Ask (Exactly These):</h4>
+
+                        <!-- Phone Q1 -->
+                        <div class="info-box"
+                            style="margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px;">
+                            <strong style="color: #1e293b; font-size: 1.1em;">Q1: "Do you have your own
+                                laptop?"</strong>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Yes, I have a laptop"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ✅ Continue</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "No, but I can arrange"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ⚠️ Ask: "Within how many days?"</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "No, I'll use office computer"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ❌ REJECT (shows dependency)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Phone Q2 -->
+                        <div class="info-box"
+                            style="margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px;">
+                            <strong style="color: #1e293b; font-size: 1.1em;">Q2: "How many hours per day do you use a
+                                computer/laptop - not phone, computer?"</strong>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "4+ hours daily"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ✅ Continue</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "2-3 hours"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ⚠️ Ask what they do in that time</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Only when needed" / "Mostly use phone"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ❌ REJECT</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Phone Q3 -->
+                        <div class="info-box"
+                            style="margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px;">
+                            <strong style="color: #1e293b; font-size: 1.1em;">Q3: "What do you usually do on your
+                                laptop?"</strong>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                            Good Answers (Tech-Savvy Signs)</th>
+                                        <th
+                                            style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                            Bad Answers (Reject)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Coding, learning, projects"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Just college assignments"</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Watch tutorials, practice"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Movies, social media"</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Play games, explore software"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Nothing much"</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Freelancing, personal projects"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Only when required"</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Build websites, design"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "I prefer using phone"</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Phone Q4 -->
+                        <div class="info-box"
+                            style="margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px;">
+                            <strong style="color: #1e293b; font-size: 1.1em;">Q4: "Have you ever built anything on your
+                                own - website, app, design, anything?"</strong>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Yes" → Ask: "What? Tell me briefly"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ✅ If genuine project, continue</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "College projects only"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ⚠️ Acceptable, continue</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "No, nothing"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ❌ REJECT (no initiative)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Phone Q5 -->
+                        <div class="info-box"
+                            style="margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px;">
+                            <strong style="color: #1e293b; font-size: 1.1em;">Q5: "If your laptop has a problem - slow,
+                                hanging, virus - what do you do?"</strong>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Google it, YouTube, try to fix myself"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ✅ PERFECT - Tech-savvy</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Ask friends who know computers"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ⚠️ Acceptable</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Take to repair shop"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ❌ REJECT (not tech-minded)</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Wait for someone to help"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ❌ REJECT</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Phone Q6 -->
+                        <div class="info-box"
+                            style="margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px;">
+                            <strong style="color: #1e293b; font-size: 1.1em;">Q6: "If selected, can you start within
+                                this week?"</strong>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Yes, immediately"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ✅ Great - note it</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Yes, within a week"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ✅ Good</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Need 2 weeks notice"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ⚠️ Acceptable, note it</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Maybe after a month"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            ⚠️ Ask why, note it</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="highlight-box"
+                            style="margin-top: 20px; background: #fffbeb; border-color: #fbbf24; padding: 15px; border: 1px solid #fcd34d;">
+                            <h4 style="color: #92400e;">Phone Screen Decision:</h4>
+                            <ul class="styled-list" style="color: #92400e;">
+                                <li><strong>5-6 Good answers</strong> = ✅ Send AI App Task</li>
+                                <li><strong>3-4 Good answers</strong> = ⚠️ Send task but watch closely</li>
+                                <li><strong>0-2 Good answers</strong> = ❌ REJECT - Don't proceed</li>
+                            </ul>
+                        </div>
+
+                        <div class="story-box"
+                            style="margin-top: 20px; background: #fff; border: 1px solid #e5e7eb; padding: 20px;">
+                            <h4 style="color: #1e293b;">✅ After Phone Screen (If Passed), Say:</h4>
+                            <p style="color: #334155;">"Great! You've cleared the phone screen.<br><br>
+                                I'm going to send you a small task on WhatsApp right now.<br>
+                                It's a 2-hour challenge to test how fast you can learn.<br><br>
+                                Check WhatsApp in 5 minutes.<br>
+                                Your 2 hours will start when you confirm receipt.<br><br>
+                                Any questions before we proceed?"</p>
+                            <p
+                                style="margin-top: 10px; background: #fff7ed; padding: 10px; border-left: 3px solid #f97316; color: #9a3412;">
+                                <strong>Note:</strong> We do VIDEO CALL interview only AFTER they complete AI App Task
+                                successfully. This saves time - no point interviewing someone who can't complete a
+                                simple task.
+                            </p>
+                        </div>
+
+
+                        <!-- STEP 4: INTERVIEW -->
+                        <div class="section-divider" style="border-top: 2px dashed #cbd5e1; margin: 40px 0;"></div>
+                        <h2 style="color: #0f172a;">🎤 STEP 4: HR VIDEO INTERVIEW (20 min) - After AI App Task</h2>
+
+                        <div class="checklist-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="checklist-card"
+                                style="background: white; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px;">
+                                <h4 style="color: #1e293b;">When to Do This:</h4>
+                                <ul class="check-list" style="color: #334155;">
+                                    <li>✅ ONLY after candidate completes AI App Task</li>
+                                    <li>✅ You've reviewed their submitted app</li>
+                                    <li>✅ App quality is acceptable (Score 10+/20)</li>
+                                </ul>
+                            </div>
+                            <div class="checklist-card"
+                                style="background: white; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px;">
+                                <h4 style="color: #1e293b;">Interview Mode: Video Call</h4>
+                                <ul class="styled-list" style="color: #334155;">
+                                    <li>No need for in-person.</li>
+                                    <li>AI App Task already proved they can DO.</li>
+                                    <li>Interview is just to check personality/attitude.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box"
+                            style="margin-top: 20px; padding: 15px; border: 1px solid #e2e8f0; background: #f8fafc;">
+                            <h4 style="color: #1e293b;">Interview Structure (Total: 20 min)</h4>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                            Section</th>
+                                        <th
+                                            style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                            Time</th>
+                                        <th
+                                            style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                            What to Test</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            A. Tech Background</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            5 min</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            Are they actually tech-savvy?</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            B. Problem Solving</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            5 min</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            How do they think?</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            C. Personality Check</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            5 min</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            Attitude, honesty</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            D. Final Questions</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            5 min</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            Availability, expectations</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Section A -->
+                        <div style="margin-top: 30px;">
+                            <h3
+                                style="color: #1e3a8a; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px; display: inline-block;">
+                                SECTION A: TECH BACKGROUND (5 min)</h3>
+
+                            <div class="story-box"
+                                style="margin-top: 15px; padding: 15px; background: #fff; border: 1px solid #e2e8f0;">
+                                <strong style="color: #1e293b;">Script:</strong> <span style="color: #334155;">"Let's
+                                    start by understanding your tech background. I'll ask some simple questions."</span>
+                            </div>
+
+                            <p style="margin-top: 15px; color: #1e293b;"><strong>A1: "Since when have you been using
+                                    computers regularly?"</strong></p>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Since childhood / school"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            5</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Since college (3-4 years)"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            4</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Not regularly"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            1 → ❌ RED FLAG</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="margin-top: 15px; color: #1e293b;"><strong>A2: "Do you play any video games? Which
+                                    ones?"</strong> (Gamers = tech comfortable)</p>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            PC/Console games (any type)</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            5</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            Mobile games regularly</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            3</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "No, I don't play games"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="margin-top: 15px; color: #1e293b;"><strong>A3: "What software/tools do you know?
+                                    Just name them."</strong></p>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                            Good Signs</th>
+                                        <th
+                                            style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                            Bad Signs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            VS Code, Figma, Photoshop, Git, Coding</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "Only MS Word, Excel", "I don't know many"</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="margin-top: 15px; color: #1e293b;"><strong>A4: "Have you ever installed software,
+                                    done troubleshooting...?"</strong></p>
+                            <table class="styled-table"
+                                style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            Gives specific example</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            5</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            "No, I'm not good with such things"</td>
+                                        <td
+                                            style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                            1 → ❌ RED FLAG</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="info-box teal"
+                                style="margin-top: 10px; background: #f0fdfa; color: #0f766e; padding: 10px; border: 1px solid #ccfbf1;">
+                                <strong>Section A Score:</strong> 20-25 (Strong), 10-14 (Weak), <10 (Reject) </div>
+                            </div>
+
+
+                            <!-- Section B -->
+                            <div style="margin-top: 40px;">
+                                <h3
+                                    style="color: #1e3a8a; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px; display: inline-block;">
+                                    SECTION B: PROBLEM SOLVING (5 min)</h3>
+                                <div class="story-box"
+                                    style="margin-top: 15px; padding: 15px; background: #fff; border: 1px solid #e2e8f0;">
+                                    <strong style="color: #1e293b;">Script:</strong> <span style="color: #334155;">"Now
+                                        I'll give you some situations. Tell me what you would do."</span>
+                                </div>
+
+                                <!-- B1 -->
+                                <div class="info-box"
+                                    style="margin-top: 15px; background: #fffcf4; border: 1px solid #fde68a; padding: 15px;">
+                                    <strong style="color: #92400e;">B1: "You're given a task you've never done before.
+                                        What do you do?"</strong>
+                                    <table class="styled-table"
+                                        style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                        <thead>
+                                            <tr>
+                                                <th
+                                                    style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                                    Good Answer (Score 5)</th>
+                                                <th
+                                                    style="background: #e2e8f0; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1; text-align: left;">
+                                                    Bad Answer (Score 1-2)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td
+                                                    style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                                    "Google it, YouTube, try myself first"</td>
+                                                <td
+                                                    style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                                    "Ask someone immediately"</td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                                    "Use ChatGPT to understand, then practice"</td>
+                                                <td
+                                                    style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                                    "Tell them I don't know how"</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- B2 -->
+                                <div class="info-box"
+                                    style="margin-top: 15px; background: #fffcf4; border: 1px solid #fde68a; padding: 15px;">
+                                    <strong style="color: #92400e;">B2: "You're stuck on something for 2 hours. Nothing
+                                        is working. What's your next step?"</strong>
+                                    <table class="styled-table"
+                                        style="width: 100%; border-collapse: collapse; background: white; color: #1e293b;">
+                                        <tbody>
+                                            <tr>
+                                                <td
+                                                    style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                                    Good: "Try different approaches, Google more", "Ask a senior with
+                                                    what I've tried"</td>
+                                                <td
+                                                    style="background: #ffffff; color: #1e293b; padding: 12px; border: 1px solid #cbd5e1;">
+                                                    Bad: "Keep doing same thing", "Give up"</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <!-- Section C -->
+                            <div style="margin-top: 40px;">
+                                <h3
+                                    style="color: #1e3a8a; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px; display: inline-block;">
+                                    SECTION C: PERSONALITY CHECK (5 min)</h3>
+
+                                <p style="margin-top: 15px; color: #1e293b;"><strong>C1: "Tell me about a time you
+                                        failed at something."</strong></p>
+                                <p style="color: #334155;">Good: Admits failure, explains learning. Bad: "I never fail"
+                                    (Red Flag).</p>
+
+                                <p style="margin-top: 15px; color: #1e293b;"><strong>C2: "Why did you leave your last
+                                        job/internship?"</strong></p>
+                                <p style="color: #334155;">Good: Growth. Bad: Badmouthing boss (Red Flag).</p>
+
+                                <p style="margin-top: 15px; color: #1e293b;"><strong>C4: "Rate yourself 1-10 on web
+                                        development skills."</strong></p>
+                                <p style="color: #334155;">10/10 = Red Flag (Overconfident). 6-8 = Good/Honest.</p>
+
+                                <div class="info-box danger"
+                                    style="margin-top: 15px; background: #fef2f2; border: 1px solid #fca5a5; color: #991b1b; padding: 15px;">
+                                    <strong>C5: HONESTY TRAP - "Have you used Framer Motion for
+                                        animations?"</strong><br>
+                                    (Real tool, but advanced).<br>
+                                    If they say "Yes, use it all the time" without proof → <strong>LYING</strong>.
+                                </div>
+                            </div>
+
+                            <!-- Section D -->
+                            <div style="margin-top: 40px;">
+                                <h3
+                                    style="color: #1e3a8a; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px; display: inline-block;">
+                                    SECTION D: FINAL QUESTIONS</h3>
+                                <ul class="styled-list" style="color: #334155;">
+                                    <li>D1: "Do you have any questions? (Good candidates ask about work/growth)</li>
+                                    <li>D2: "When can you start?"</li>
+                                    <li>D3: "Expected stipend/salary?"</li>
+                                    <li>D4: "Applying elsewhere?"</li>
+                                </ul>
+                            </div>
+
+                            <div class="story-box"
+                                style="margin-top: 30px; background: #f0fdf4; border: 1px solid #16a34a; padding: 20px;">
+                                <h4 style="color: #15803d;">✅ If Candidate PASSED Interview:</h4>
+                                <p style="color: #15803d;">"Thank you! Your interview went well.<br>
+                                    You've already proven yourself with the AI App task.<br>
+                                    Now there's one final task: Shopify Store Replication.<br>
+                                    It's a 24-hour task. You'll receive details on WhatsApp shortly."</p>
+                            </div>
+
+
+                            <!-- STEP 3: AI APP TASK -->
+                            <div class="section-divider" style="border-top: 2px dashed #cbd5e1; margin: 40px 0;"></div>
+                            <h2 style="color: #0f172a;">📱 STEP 3: AI APP TASK (2 Hours) - Before Interview</h2>
+                            <p style="color: #334155;">Given RIGHT AFTER phone screen. Interview ONLY if they complete
+                                this.</p>
+
+                            <div class="info-box"
+                                style="background: #27272a; color: #fff; font-family: monospace; padding: 25px; border-radius: 8px; margin-top: 20px;">
+                                <h3 style="color: #4ade80; border-bottom: 1px solid #52525b; padding-bottom: 10px;">🚀
+                                    DIGITAL HEROES - AI APP CHALLENGE</h3>
+
+                                <p style="margin-top: 15px;"><strong>Hi [Name]! Congratulations on clearing the
+                                        interview! 🎉</strong></p>
+
+                                <p style="margin-top: 20px;"><strong>⏰ DEADLINE: 2 HOURS from now</strong></p>
+
+                                <p style="margin-top: 20px; color: #fbbf24;"><strong>📋 YOUR TASK:</strong></p>
+
+                                <p><strong>STEP 1: INSTALL FIREBASE STUDIO (30 min)</strong><br>
+                                    1. Go to: firebase.studio<br>
+                                    2. Login with Google<br>
+                                    3. Explore the AI Interface</p>
+
+                                <p style="margin-top: 15px;"><strong>STEP 2: BUILD A USEFUL APP (1.5 hours)</strong><br>
+                                    Build ANY useful app (Expense Tracker, Todo, Habit Tracker, etc.).<br>
+                                    Requirements: Must be USEFUL, GOOD DESIGN, and FUNCTIONAL.</p>
+
+                                <p style="margin-top: 15px;"><strong>STEP 3: HOST ON VERCEL</strong><br>
+                                    Deploy app to Vercel and get live link.</p>
+
+                                <p style="margin-top: 20px; color: #fbbf24;"><strong>📤 WHAT TO SUBMIT:</strong><br>
+                                    1. Vercel Link<br>
+                                    2. What app you built & why<br>
+                                    3. Screenshot</p>
+
+                                <p style="margin-top: 20px;"><strong>⏱️ Your 2 hours start NOW!</strong></p>
+                            </div>
+
+                            <div class="info-box"
+                                style="margin-top: 20px; background: #fff; border: 1px solid #e2e8f0; padding: 20px;">
+                                <h4 style="color: #1e293b;">HR Evaluation Checklist:</h4>
+                                <p style="color: #334155;"><strong>Did they submit?</strong> No = No Shopify task.<br>
+                                    <strong>App quality:</strong> Useful? Good design? Works?<br>
+                                    <strong>Decision:</strong> Submitted + Score 15+ = ✅ Send Shopify Task.
+                                </p>
+                            </div>
+
+
+                            <!-- STEP 5: SHOPIFY TASK -->
+                            <div class="section-divider" style="border-top: 2px dashed #cbd5e1; margin: 40px 0;"></div>
+                            <h2 style="color: #0f172a;">📱 STEP 5: SHOPIFY TRIAL TASK (1 Day)</h2>
+                            <p style="color: #334155;"><strong>⚠️ ONLY send to candidates who completed Al App
+                                    Task</strong></p>
+
+                            <div class="info-box"
+                                style="background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412; font-family: monospace; padding: 25px; border-radius: 8px; margin-top: 20px;">
+                                <h3 style="color: #c2410c;">🎯 DIGITAL HEROES - SHOPIFY TRIAL TASK</h3>
+                                <p><strong>⏰ DEADLINE: 24 HOURS. NO EXTENSIONS.</strong></p>
+
+                                <p style="margin-top: 15px;"><strong>📋 TASK: REPLICATE A SHOPIFY STORE</strong><br>
+                                    🔗 Reference Store: [Pick ONE: eyeamcreation.com, nutripium.com, theawwshop.com]</p>
+
+                                <p style="margin-top: 15px;"><strong>✅ WHAT TO REPLICATE:</strong><br>
+                                    Homepage (exact sections), Colors, Fonts, Header, Footer, 5 Products, Mobile Layout.
+                                </p>
+
+                                <p style="margin-top: 15px;"><strong>💡 TOOLS:</strong> Koala Inspector, Inspect
+                                    Element, ChatGPT, YouTube.</p>
+
+                                <p style="margin-top: 15px;"><strong>📤 SUBMIT:</strong> Partner Account Details, Store
+                                    Preview Link, Screenshots.</p>
+                            </div>
+
+
+                            <!-- EMAIL TEMPLATES -->
+                            <div class="section-divider" style="border-top: 2px dashed #cbd5e1; margin: 40px 0;"></div>
+                            <h2 style="color: #0f172a;">📝 EMAIL TEMPLATES FOR HR</h2>
+
+                            <div class="highlight-box"
+                                style="margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px;">
+                                <h4 style="color: #1e293b;">Rejection Email:</h4>
+                                <p style="font-family: monospace; color: #4b5563;">
+                                    "After careful consideration, we've decided to move forward with other candidates...
+                                    We appreciate your interest..."
+                                </p>
+                            </div>
+                            <div class="highlight-box"
+                                style="margin-top: 15px; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 15px;">
+                                <h4 style="color: #166534;">Hiring Confirmation:</h4>
+                                <p style="font-family: monospace; color: #166534;">
+                                    "Congratulations! You've successfully completed the trial.<br>
+                                    We're excited to have you join Digital Heroes... Start Date: [Date]."
+                                </p>
+                            </div>
+
+                            <div class="info-box success"
+                                style="margin-top: 30px; text-align: center; background: #f0fdf4; border: 2px solid #16a34a; padding: 20px;">
+                                <h3 style="color: #166534;">🏆 COMPLETE FLOW SUMMARY</h3>
+                                <p style="font-size: 1.1em; margin-top: 10px; color: #166534;">
+                                    Application (2 min) → Phone Screen (10 min) → <strong>AI App Task (2 hr)</strong> →
+                                    Video Interview (20 min) → Shopify Task (24 hr) → <strong>HIRE</strong>
+                                </p>
+                            </div>
+
+                        </div>
+                </section>
+
+
+
+
                 <section class="section" id="hiring">
                     <div class="section-header">
                         <div class="section-number">1</div>
@@ -1167,8 +2154,7 @@
                         <p>"<strong>Hire for attitude, train for skills.</strong> A person at level 6 can become 10, but
                             level 3 cannot become 6."</p>
                         <p style="margin-top: 10px;">Don't settle until you get employee exactly as per JD. Only work
-                            with
-                            good people.</p>
+                            with good people.</p>
                     </div>
 
                     <!-- STEP 1 -->
@@ -1275,12 +2261,11 @@
                     </table>
 
                     <div class="info-box teal" style="margin-top: 20px;">
-                        <h4>Role-Specific CV Checks</h4>
+                        <h4>📝 Role-Specific CV Checks</h4>
                         <p><strong>For Developers:</strong> Check portfolio links, look for live Shopify stores, GitHub
                             profile is a plus</p>
                         <p><strong>For Sales:</strong> Look for revenue numbers, Fiverr profile link, evidence of
-                            conversion
-                            rates</p>
+                            conversion rates</p>
                     </div>
 
                     <!-- STEP 3 -->
@@ -1377,8 +2362,7 @@
                         <h4>✅ ALWAYS Ask Open-Ended with Actual Situations:</h4>
                         <ul class="styled-list">
                             <li>"Tell me about a time you worked extremely hard on a project" → What was the situation?
-                                What
-                                did you do specifically?</li>
+                                What did you do specifically?</li>
                             <li>"Describe a situation where you failed to meet a deadline" → What happened? What did you
                                 learn?</li>
                             <li>"Share example of difficult client/team member" → How did you handle it? What was the
@@ -1471,8 +2455,7 @@
                         <tbody>
                             <tr>
                                 <td>Walk me through your complete process for a Shopify project from order intake to
-                                    final
-                                    delivery</td>
+                                    final delivery</td>
                                 <td>Structure, client communication, QA process</td>
                             </tr>
                             <tr>
@@ -1507,18 +2490,16 @@
                         <h4>✍️ PM Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Write a client update message for a project delayed by 2
-                                days
-                                due to developer sickness</li>
+                                days due to developer sickness</li>
                             <li><strong>PRACTICAL 2:</strong> Here's a client complaint [provide sample]. Write your
                                 response</li>
                             <li><strong>PRACTICAL 3:</strong> Create a 7-day project timeline for a 25-product Shopify
-                                store
-                                with custom features</li>
+                                store with custom features</li>
                         </ul>
                     </div>
 
                     <!-- Developer Questions -->
-                    <h3 id="int-dev">💻 Developer + Client Success Questions</h3>
+                    <h3 id="int-dev">🏆 💻 Developer + Client Success Questions</h3>
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -1544,14 +2525,12 @@
                             </tr>
                             <tr>
                                 <td>Client wants product page to show "Only 3 left in stock" dynamically. How do you
-                                    build
-                                    this?</td>
+                                    build this?</td>
                                 <td>Liquid knowledge, logic, inventory understanding</td>
                             </tr>
                             <tr>
                                 <td>Client says "Add this feature" but it's technically impossible on Shopify. How do
-                                    you
-                                    respond?</td>
+                                    you respond?</td>
                                 <td>Communication, offering alternatives, education</td>
                             </tr>
                             <tr>
@@ -1565,16 +2544,13 @@
                         <h4>✍️ Developer Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Here's a broken Liquid code snippet [with 2-3 errors].
-                                Find
-                                and fix the errors</li>
+                                Find and fix the errors</li>
                             <li><strong>PRACTICAL 2:</strong> Client wants Instagram feed on homepage. Explain 3
-                                different
-                                approaches</li>
+                                different approaches</li>
                             <li><strong>PRACTICAL 3:</strong> Write an onboarding email you'd send to a new client after
                                 order</li>
                             <li><strong>PRACTICAL 4:</strong> [Show a slow-loading store]. Tell me what's slowing it
-                                down
-                                just by inspecting</li>
+                                down just by inspecting</li>
                         </ul>
                     </div>
 
@@ -1627,8 +2603,7 @@
                                 in 2
                                 days</li>
                             <li><strong>PRACTICAL 4:</strong> Buyer objects to price. Write 3 different responses
-                                handling
-                                this objection</li>
+                                handling this objection</li>
                         </ul>
                     </div>
 
@@ -1670,7 +2645,7 @@
                     </table>
 
                     <div class="info-box info" style="margin-top: 15px;">
-                        <h4>✍️ Designer Practical Tests</h4>
+                        <h4>🎨 ✍️ Designer Practical Tests</h4>
                         <ul class="styled-list">
                             <li><strong>PRACTICAL 1:</strong> Design a product page mockup for this brand [provide
                                 brief]
@@ -1873,8 +2848,7 @@
                     <div class="info-box info">
                         <ul class="styled-list">
                             <li><strong>NDA:</strong> Cannot share client info, company processes, salary → Breach =
-                                legal
-                                action</li>
+                                legal action</li>
                             <li><strong>Non-Compete:</strong> No work for competitors, no moonlighting without approval
                             </li>
                             <li><strong>Termination:</strong> Grounds for immediate (data breach, poor performance,
@@ -1887,8 +2861,8 @@
                     <h3>📂 Filing System</h3>
                     <div class="story-box">
                         <p><strong>Create folder for each employee:</strong> [Name] - [ID] containing all signed docs,
-                            ID
-                            proofs, education certs, employment docs, bank details, emergency contact, asset agreements,
+                            ID proofs, education certs, employment docs, bank details, emergency contact, asset
+                            agreements,
                             performance reviews</p>
                         <p style="margin-top: 10px;"><strong>Storage:</strong> Physical (locked cabinet) + Digital
                             (password-protected Drive) + Monthly backup</p>
@@ -1907,8 +2881,7 @@
                     <div class="info-box gold">
                         <h4>⚡ First 30 Days = Make or Break</h4>
                         <p>A confused new hire becomes a frustrated employee who leaves within 90 days. Invest heavily
-                            in
-                            the first month.</p>
+                            in the first month.</p>
                     </div>
 
                     <!-- HR Day 1 Duties -->
@@ -1949,16 +2922,14 @@
 
                         <p style="margin-top: 10px;"><strong>STEP 2: Explain the Day (3 min)</strong></p>
                         <p>"Let me quickly walk you through what today looks like: First, we'll do a quick office tour.
-                            Then
-                            I'll introduce you to the team. After that, [Buddy Name] will help you set up your tools.
-                            We'll
-                            have team lunch at 1 PM, and your manager will brief you in the afternoon."</p>
+                            Then I'll introduce you to the team. After that, [Buddy Name] will help you set up your
+                            tools.
+                            We'll have team lunch at 1 PM, and your manager will brief you in the afternoon."</p>
 
                         <p style="margin-top: 10px;"><strong>STEP 3: Set Expectations (5 min)</strong></p>
                         <p>"The first week is all about learning. Don't stress about being productive right away. Ask as
-                            many questions as you need - there are no stupid questions here! Your buddy [Name] is your
-                            go-to
-                            person for anything."</p>
+                            many questions as you need - there are no stupid questions here! Your buddy [Name] is
+                            your go-to person for anything."</p>
 
                         <p style="margin-top: 10px;"><strong>STEP 4: Address Concerns (5 min)</strong></p>
                         <p>"Do you have any questions or concerns? Anything you need from us to feel comfortable?"</p>
@@ -1997,15 +2968,12 @@
                         <div class="timeline-item">
                             <div class="time">Day 1: Welcome & Setup</div>
                             <p>Send welcome message, share access credentials, introduce to team, assign buddy/mentor,
-                                share
-                                company handbook</p>
+                                share company handbook</p>
                         </div>
                         <div class="timeline-item">
                             <div class="time">Days 1-3: Training</div>
                             <p>Role-specific SOPs, tool training (Slack, Jira, etc.), process walkthroughs, shadow
-                                senior
-                                team
-                                member</p>
+                                senior team member</p>
                         </div>
                         <div class="timeline-item">
                             <div class="time">Days 4-7: First Tasks</div>
@@ -2162,8 +3130,7 @@
                                 <td><strong>Casual Leave</strong></td>
                                 <td>12 days</td>
                                 <td>⚠️ <strong>Max 2 days/month by default.</strong> More than 2 days requires request
-                                    from
-                                    Delhi team + must have leaves remaining.</td>
+                                    from Delhi team + must have leaves remaining.</td>
                             </tr>
                             <tr>
                                 <td><strong>Sick Leave</strong></td>
@@ -2437,7 +3404,8 @@
                                 <td>Finding candidates, posting jobs, sourcing</td>
                             </tr>
                             <tr>
-                                <td><strong>HR Docs Editor (Internal)</strong></td>
+                                <td><strong><a href="https://hrm.digitalheroes.co.in" target="_blank"
+                                            style="color: #10B981;">HR Docs Editor</a></strong></td>
                                 <td>Document generation</td>
                                 <td>Offer letters, salary slips, contracts</td>
                             </tr>
@@ -2523,7 +3491,7 @@
                     <h3>Scenario 2: Team Conflict</h3>
 
                     <div class="info-box info">
-                        <h4>📋 Conflict Resolution Steps</h4>
+                        <h4>✅ 📋 Conflict Resolution Steps</h4>
                         <ol style="margin-left: 20px;">
                             <li><strong>Separate meetings</strong> — Talk to each person individually first</li>
                             <li><strong>Identify root cause</strong> — Is it personal, work-related, or
@@ -2548,8 +3516,7 @@
                         <div class="message sales" style="background: #E8F5E9;">
                             <div class="sender">👥 You (HR/Manager)</div>
                             "Thanks for being open with me. Before we discuss anything else — how are you feeling about
-                            your
-                            work here overall?
+                            your work here overall?
 
                             I'd love to understand what's driving this decision beyond just the salary. Is it:
                             • Growth opportunities?
@@ -2558,9 +3525,7 @@
                             • The work itself?
 
                             If it's purely compensation, let's talk about what we might be able to do. But I want to
-                            make
-                            sure
-                            we address the real issue, not just put a band-aid on it."
+                            make sure we address the real issue, not just put a band-aid on it."
                         </div>
                     </div>
 
@@ -2568,12 +3533,10 @@
                         <h4>⚠️ Counter-Offer Decision Framework</h4>
                         <ul class="styled-list">
                             <li><strong>Counter-offer IF:</strong> Employee is high-performing, culture fit, genuinely
-                                wants
-                                to
-                                stay, issue is solvable</li>
+                                wants to stay, issue is solvable</li>
                             <li><strong>Don't counter IF:</strong> Employee has been looking for months, relationship is
-                                already
-                                damaged, this is 2nd+ resignation threat, you can't match what they really want</li>
+                                already damaged, this is 2nd+ resignation threat, you can't match what they really
+                                want</li>
                         </ul>
                     </div>
 
@@ -2729,9 +3692,7 @@
                             │<br>
                             └─► <strong>Final script:</strong><br>
                             "We can offer $X (final number). This includes [benefits]. We review salaries at 6 months
-                            for
-                            high
-                            performers."
+                            for high performers."
                         </div>
                     </div>
 
@@ -2789,8 +3750,7 @@
                     <div class="template-box">
                         <div class="template-header">📝 Termination Script</div>
                         <p>"<span class="placeholder">[Name]</span>, thank you for meeting with me. I'll get straight to
-                            the
-                            point.</p>
+                            the point.</p>
                         <p>Unfortunately, we've decided to end your employment effective <span
                                 class="placeholder">[Date]</span>.</p>
                         <p>This decision is based on <span class="placeholder">[brief, factual reason — performance,
@@ -3022,8 +3982,7 @@
                                 matters.
                             </li>
                             <li><strong>🔴 P0 - Onboarding (First Week Employees)</strong> → New hires need attention
-                                and
-                                support.</li>
+                                and support.</li>
                             <li><strong>🔴 P0 - Resignation Handling</strong> → Time-sensitive notice periods, exits.
                             </li>
                             <li><strong>🟡 P1 - Active Interview Pipeline</strong> → Scheduled interviews, pending
@@ -3036,16 +3995,14 @@
                             </li>
                         </ol>
                         <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Current employees > New hires >
-                            Active
-                            candidates > Future planning.</p>
+                            Active candidates > Future planning.</p>
                     </div>
 
                     <h3>🔴 Candidate Ghosts After Accepting Offer</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Candidate accepted but doesn't show up on day 1.</p>
                         <p><strong>Response:</strong> Call immediately. If no response after 2 days, document and move
-                            to
-                            backup candidate. Maintain a "warm bench" of runners-up for this reason.</p>
+                            to backup candidate. Maintain a "warm bench" of runners-up for this reason.</p>
                         <p><strong>Rule:</strong> Always have a backup candidate. Never rely on a single accept.</p>
                     </div>
 
@@ -3070,10 +4027,8 @@
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Previously good employee is now consistently underperforming.</p>
                         <p><strong>Response:</strong> Have a private conversation: "I've noticed [specific
-                            observations]. Is
-                            everything okay? How can I support you?" Document concerns and create a performance
-                            improvement
-                            plan if needed.</p>
+                            observations]. Is everything okay? How can I support you?" Document concerns and create a
+                            performance improvement plan if needed.</p>
                         <p><strong>Rule:</strong> Be curious before being corrective. There's often a reason.</p>
                     </div>
 
@@ -3081,8 +4036,8 @@
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Manager wants to fire someone right now.</p>
                         <p><strong>Response:</strong> "I understand the urgency. Before we proceed, let's ensure we have
-                            documentation of the issues, we've followed our process, and we're protected legally. Let me
-                            review this with you."</p>
+                            documentation of the issues, we've followed our process, and we're protected legally. Let
+                            me review this with you."</p>
                         <p><strong>Rule:</strong> Never rush terminations. Always document. Legal protection first.</p>
                     </div>
 
@@ -3090,10 +4045,8 @@
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Top candidate wants more than budgeted.</p>
                         <p><strong>Response:</strong> "I appreciate your transparency. Our budget for this role is [X].
-                            Let
-                            me discuss with the leadership team. If we can't meet your salary, are there other benefits
-                            that
-                            would make this work?"</p>
+                            Let me discuss with the leadership team. If we can't meet your salary, are there other
+                            benefits that would make this work?"</p>
                         <p><strong>Rule:</strong> Get approval before exceeding budget. Consider non-salary benefits.
                         </p>
                     </div>
@@ -3102,10 +4055,9 @@
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Serious complaint from an employee.</p>
                         <p><strong>Response:</strong> Take it seriously immediately. "Thank you for trusting me with
-                            this. I
-                            need to document what you're telling me. We will investigate and keep you informed."
-                            Escalate to
-                            leadership/legal if necessary.</p>
+                            this. I need to document what you're telling me. We will investigate and keep you
+                            informed."
+                            Escalate to leadership/legal if necessary.</p>
                         <p><strong>Rule:</strong> NEVER dismiss. Document everything. Follow legal protocols strictly.
                         </p>
                     </div>
@@ -3150,9 +4102,8 @@
                             code review process that reduced bugs by 60%.
                             <br><br>
                             <strong style="color: #10B981;">The lesson?</strong> <strong style="color: #FCD34D;">Hire
-                                for
-                                attitude, train for skill.</strong> The right mindset beats the perfect resume every
-                            time.
+                                for attitude, train for skill.</strong> The right mindset beats the perfect resume
+                            every time.
                             <br><br>
                             <em>Your hiring decisions today shape the company's future tomorrow.</em>
                         </p>
@@ -3168,13 +4119,11 @@
                                 Monday
                             </li>
                             <li>🎯 <strong>Structured Interviews:</strong> Same questions for all candidates = fair +
-                                faster
-                                decisions</li>
+                                faster decisions</li>
                             <li>📅 <strong>Batch Interviews:</strong> Schedule all interviews for one day when possible
                             </li>
                             <li>🔔 <strong>Set Reminders:</strong> Probation reviews, birthdays, work anniversaries —
-                                never
-                                miss them</li>
+                                never miss them</li>
                         </ul>
                     </div>
 
@@ -3205,8 +4154,7 @@
                         <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
                         </p>
                         <p style="font-size: 20px; color: #A78BFA; font-weight: 600;">"Today, I am building the team
-                            that
-                            will build the future. Every interaction shapes our culture."</p>
+                            that will build the future. Every interaction shapes our culture."</p>
                     </div>
                 </section>
 
@@ -3459,7 +4407,7 @@
                             </ul>
                         </div>
                         <div class="checklist-card">
-                            <h4>⭐ Performance Ratings</h4>
+                            <h4>⭐ ⭐ Performance Ratings</h4>
                             <ul class="styled-list">
                                 <li><strong>90-100%:</strong> 15-20% increment + bonus</li>
                                 <li><strong>75-89%:</strong> 10-15% increment</li>
@@ -3702,7 +4650,8 @@
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
-                            watch the required training videos. These will give you visual context to the written SOPs.
+                            watch the required training videos. These will give you visual context to the written
+                            SOPs.
                         </p>
                         <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
                             style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
@@ -3789,6 +4738,156 @@
                 opacity: 1;
             }
         }
+
+        /* Mobile Header - Hamburger + Home */
+        .mobile-header {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+            z-index: 3000;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex;
+            }
+
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding-top: 70px !important;
+                width: 100%;
+            }
+
+            .header {
+                margin-top: 56px;
+            }
+        }
+
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1999;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+
+        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+        @media (max-width: 768px) {
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+
+            .header h1 {
+                font-size: 1.5em !important;
+                margin-bottom: 5px !important;
+            }
+
+            .header .subtitle {
+                font-size: 0.9em !important;
+                margin-bottom: 10px !important;
+            }
+
+            .badge-row {
+                gap: 8px !important;
+                margin-top: 12px !important;
+            }
+
+            .badge {
+                padding: 5px 12px !important;
+                font-size: 0.75em !important;
+            }
+
+            .container {
+                padding: 10px !important;
+            }
+
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+
+            .section h2 {
+                font-size: 1.2em !important;
+            }
+        }
+
+        /* ===== END MOBILE HEADER SIZE ===== */
+
+
+        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0) !important;
+            }
+        }
+
+        /* ===== END SIDEBAR CLOSED ===== */
     </style>
     <script>
         function switchView(viewName) {
@@ -3820,10 +4919,57 @@
     </script>
 
     <script>
-        function toggleSidebar() {
-            document.querySelector('.sidebar').classList.toggle('open');
         }
     </script>
+    <script>
+
+    </script>
+
+    <script>
+        // ===== SIDEBAR TOGGLE FUNCTIONS =====
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        // Click outside to close sidebar
+        document.addEventListener('click', function (event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            var overlay = document.querySelector('.sidebar-overlay');
+
+            if (!sidebar || !toggleBtn) return;
+
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+        // ===== END SIDEBAR TOGGLE =====
+    </script>
+
 </body>
 
 </html>

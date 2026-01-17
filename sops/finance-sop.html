@@ -7,17 +7,25 @@
     <title>Digital Heroes | Finance & Accounts SOP</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
-            --primary: #1E3A5F;
-            --secondary: #2E5077;
-            --accent: #3D6B99;
-            --success: #2E7D32;
-            --warning: #F57C00;
-            --danger: #C62828;
-            --light: #F8F9FA;
-            --dark: #212529;
+            /* HANDBOOK VARIABLES */
+            --primary: #0F172A;
+            --primary-light: #1E293B;
+            --secondary: #334155;
+            --accent: #3B82F6;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --light: #F8FAFC;
+            --dark: #020617;
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
             --gold: #D4AF37;
             --emerald: #059669;
         }
@@ -29,10 +37,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             line-height: 1.7;
-            color: #333;
-            background: #f5f7fa;
+            color: #334155;
+            background: #F1F5F9;
+            display: flex;
+            min-height: 100vh;
         }
 
         .container {
@@ -381,18 +391,19 @@
             }
         }
 
-        /* SIDEBAR */
+        /* REPLACED WITH HANDBOOK LAYOUT STYLES */
         .sidebar {
-            width: 320px;
-            background: linear-gradient(180deg, #059669 0%, #047857 100%);
-            color: white;
+            width: 280px;
+            background: var(--bg-sidebar);
+            color: var(--text-sidebar);
             position: fixed;
-            top: 0;
-            left: 0;
             height: 100vh;
             overflow-y: auto;
             padding: 20px 0;
-            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            z-index: 2000;
+            border-right: 1px solid #334155;
         }
 
         .sidebar-header {
@@ -493,23 +504,60 @@
         }
 
         .main-content {
-            margin-left: 320px;
-            background: #f5f7fa;
+            margin-left: 280px;
+            flex: 1;
+            padding: 40px 60px;
+            max-width: 1400px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 200;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            .main-content {
+                padding: 30px;
+                margin-left: 280px;
+            }
+        }
+
+        @media (max-width: 900px) {
             .sidebar {
                 transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
             }
 
             .main-content {
                 margin-left: 0;
+                padding: 20px 20px 80px 20px;
+                width: 100%;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .header {
+                border-radius: 20px;
+                margin-top: 40px;
             }
         }
 
@@ -581,7 +629,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
         }
-    
+
         /* Mobile Header - Fixed Collision */
         .mobile-header {
             display: none;
@@ -596,24 +644,24 @@
             align-items: center;
             justify-content: flex-start;
             gap: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         .mobile-menu-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 44px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             border-radius: 10px;
             font-size: 1.4rem;
             cursor: pointer;
             flex-shrink: 0;
         }
-        
+
         .mobile-home-btn {
             display: flex;
             align-items: center;
@@ -628,35 +676,135 @@
             border: 1px solid rgba(16, 185, 129, 0.3);
             white-space: nowrap;
         }
-        
+
         @media (max-width: 768px) {
             .mobile-header {
                 display: flex;
             }
-            
+
             .main-content {
                 padding-top: 70px !important;
             }
-            
+
             .header {
                 margin-top: 56px;
             }
         }
+    
+    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
+    .mobile-header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+        z-index: 9999;
+        padding: 0 12px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .mobile-menu-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .mobile-home-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #10B981;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 10px 16px;
+        background: rgba(16, 185, 129, 0.15);
+        border-radius: 10px;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        white-space: nowrap;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-header {
+            display: flex !important;
+        }
+        .sidebar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            height: 100vh !important;
+            width: 280px !important;
+            z-index: 9999 !important;
+            transform: translateX(-100%) !important;
+            transition: transform 0.3s ease !important;
+        }
+        .sidebar.active, .sidebar.open {
+            transform: translateX(0) !important;
+        }
+        .main-content {
+            margin-left: 0 !important;
+            padding-top: 70px !important;
+            width: 100% !important;
+        }
+    }
+    /* ========== END DEFINITIVE MOBILE FIX ========== */
 
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
 
+    <link rel="stylesheet" href="assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
+</head>
 <body>
-    <!-- Mobile Header -->
-    <div class="mobile-header">
-        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-        <a href="index.html" class="mobile-home-btn">🏠 Home</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
     </div>
 
-    <aside class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-header"><span class="emoji">💰</span>
             <h2>Finance & Accounts SOP</h2>
+        </div>
+        <div class="back-link" style="margin-top: 0; border-top: none; padding: 0 15px 10px; text-align: left;">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 500; font-size: 0.9rem;">
+                <span>←</span> Back to Dashboard
+            </a>
         </div>
         <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
             <a href="kra/finance-kra.html" class="sidebar-back"
@@ -674,7 +822,7 @@
                 style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">🎓
                 Training</a>
         </div>
-        <a href="index.html" class="sidebar-back">← Back to Home</a>
+
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
@@ -688,8 +836,8 @@
             <div class="sidebar-nav-grid">
                 <a href="#payment-policy">💳 Payment</a>
                 <a href="#invoicing">📄 Invoicing</a>
-                <a href="#tracking">📊 Tracking</a>
-                <a href="#refunds">🔄 Refunds</a>
+                <a href="#tracking">🛤️ 📊 Tracking</a>
+                <a href="#refunds">💸 🔄 Refunds</a>
             </div>
             <div class="sidebar-section-title">2️⃣ Management</div>
             <div class="sidebar-nav-grid">
@@ -703,7 +851,7 @@
             <div class="sidebar-section-title">3️⃣ Scenarios</div>
             <div class="sidebar-nav-grid">
                 <a href="#late-pay">⏰ Late Pay</a>
-                <a href="#refund-request">🔄 Refund</a>
+                <a href="#refund-request">💸 🔄 Refund</a>
                 <a href="#dispute">❌ Dispute</a>
                 <a href="#cash-emergency">📉 Cash Crisis</a>
                 <a href="#discrepancy">💳 Discrepancy</a>
@@ -728,7 +876,7 @@
                 <a href="#resources">📄 Resources</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
 
         <!-- ONBOARDING SIDEBAR LINKS -->
@@ -741,9 +889,9 @@
                 <a href="#step-4" style="justify-content: flex-start;">4️⃣ Record Video</a>
             </div>
             <a href="#" onclick="switchView('sop'); return false;" class="sidebar-back"
-                style="margin-top:20px; text-align:center;">← Back to SOP</a>
+                style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
-    </aside>
+    </nav>
 
     <div class="main-content">
         <div class="container">
@@ -763,8 +911,7 @@
                 <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
                 <div id="resultsList"></div>
                 <button onclick="clearSearch()"
-                    style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
-                    Search</button>
+                    style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear  Search</button>
             </div>
 
             <script>
@@ -792,7 +939,7 @@
                 </div>
 
                 <div class="info-box emerald">
-                    <h4>💰 Your Role in Finance</h4>
+                    <h4>📝 💰 Your Role in Finance</h4>
                     <p>Finance handles the money side of the business. This includes:</p>
                     <ul class="styled-list" style="margin-top: 15px;">
                         <li><strong>Invoicing clients</strong> — Creating and sending invoices for projects</li>
@@ -823,9 +970,8 @@
                 </div>
 
                 <div class="story-box">
-                    <h4>Why Payment Tracking Is Life or Death</h4>
-                    <p>We had a great quarter — $8 lakhs in projects. Team was celebrating. But when we checked the bank
-                        account... only $2 lakhs was there.</p>
+                    <h4>🛤️ Why Payment Tracking Is Life or Death</h4>
+                    <p>We had a great quarter — $8 lakhs in projects. Team was celebrating. But when we checked the bank  account... only $2 lakhs was there.</p>
 
                     <p><strong>What happened?</strong></p>
                     <ul style="margin: 15px 0 15px 20px;">
@@ -838,9 +984,7 @@
                     <p>We had to scramble — personal loans, rushed client calls, embarrassing vendor negotiations.</p>
 
                     <div class="moral">
-                        <strong>🎯 The Lesson:</strong> Revenue means nothing if the money isn't in your bank. Track
-                        EVERY
-                        rupee. Send invoices immediately. Follow up religiously. Check bank reconciliation weekly.
+                        <strong>🎯 The Lesson:</strong> Revenue means nothing if the money isn't in your bank. Track  EVERY  rupee. Send invoices immediately. Follow up religiously. Check bank reconciliation weekly.
                     </div>
                 </div>
             </section>
@@ -851,8 +995,7 @@
 
                 <div class="highlight-box">
                     <h3 style="margin-bottom: 15px;">1. FULL PAYMENT UPFRONT (90% of Projects)</h3>
-                    <p>For projects under $1.5 lakhs, we require 100% payment BEFORE work begins. No exceptions. This
-                        protects us from scope creep, disappearing clients, and cash flow issues.</p>
+                    <p>For projects under $1.5 lakhs, we require 100% payment BEFORE work begins. No exceptions. This  protects us from scope creep, disappearing clients, and cash flow issues.</p>
                 </div>
 
                 <div class="highlight-box" style="margin-top: 20px;">
@@ -862,22 +1005,18 @@
                         <strong>50% on preview link</strong> → Before final delivery
                     </p>
                     <p style="margin-top: 10px;">NO multi-milestone payments (25% idea, 25% mockup, etc.). Too complex,
-                        too
-                        many chances for payment delays.</p>
+                        too  many chances for payment delays.</p>
                 </div>
 
                 <div class="highlight-box" style="margin-top: 20px;">
                     <h3 style="margin-bottom: 15px;">3. NO WORK WITHOUT PAYMENT</h3>
-                    <p>If payment hasn't cleared, work doesn't start. Period. "I'll pay tomorrow" means we start
-                        tomorrow.
+                    <p>If payment hasn't cleared, work doesn't start. Period. "I'll pay tomorrow" means we start  tomorrow.
                         No trust-based starts.</p>
                 </div>
 
                 <div class="highlight-box" style="margin-top: 20px;">
                     <h3 style="margin-bottom: 15px;">4. NO DISCOUNTS</h3>
-                    <p>Our prices reflect our value. Discounting trains clients to haggle. If budget is an issue, we
-                        suggest
-                        a smaller scope — not lower rates.</p>
+                    <p>Our prices reflect our value. Discounting trains clients to haggle. If budget is an issue, we  suggest  a smaller scope — not lower rates.</p>
                 </div>
             </section>
 
@@ -890,9 +1029,7 @@
 
                 <div class="info-box gold">
                     <h4>⚡ Invoice Within 24 Hours</h4>
-                    <p>The moment a client agrees to a project, send the invoice. Delays = forgotten payments. Strike
-                        while
-                        they're excited.</p>
+                    <p>The moment a client agrees to a project, send the invoice. Delays = forgotten payments. Strike  while  they're excited.</p>
                 </div>
 
                 <h3>Invoice Checklist</h3>
@@ -939,7 +1076,7 @@
                     </tbody>
                 </table>
 
-                <h3>Invoice Status Tracking</h3>
+                <h3>🛤️ Invoice Status Tracking</h3>
 
                 <table class="styled-table">
                     <thead>
@@ -978,7 +1115,7 @@
             <section class="section" id="tracking">
                 <div class="section-header">
                     <div class="section-number">2</div>
-                    <h2>Payment Tracking</h2>
+                    <h2>🛤️ Payment Tracking</h2>
                 </div>
 
                 <div class="info-box danger">
@@ -1025,12 +1162,9 @@
                     <div class="template-header">📝 Template: Friendly Payment Reminder</div>
                     <p>Hi <span class="placeholder">[Client Name]</span>! 👋</p>
 
-                    <p>Hope you're doing great! Just wanted to follow up on invoice #<span
-                            class="placeholder">[NUMBER]</span> for <span class="placeholder">[Amount]</span>.</p>
+                    <p>Hope you're doing great! Just wanted to follow up on invoice #<span  class="placeholder">[NUMBER]</span> for <span class="placeholder">[Amount]</span>.</p>
 
-                    <p>If you've already sent the payment, please ignore this — sometimes bank transfers take a day or
-                        two
-                        to reflect on our end.</p>
+                    <p>If you've already sent the payment, please ignore this — sometimes bank transfers take a day or  two  to reflect on our end.</p>
 
                     <p>If not, here are the payment details again:<br>
                         [Payment details]</p>
@@ -1043,11 +1177,11 @@
             <section class="section" id="refunds">
                 <div class="section-header">
                     <div class="section-number">3</div>
-                    <h2>Refunds & Disputes</h2>
+                    <h2>💸 Refunds & Disputes</h2>
                 </div>
 
                 <div class="info-box warning">
-                    <h4>⚠️ Refund Policy</h4>
+                    <h4>💸 ⚠️ Refund Policy</h4>
                     <p><strong>Default stance:</strong> No refunds once work has begun. Our payment structure (upfront)
                         means we commit resources immediately.</p>
                     <p style="margin-top: 10px;"><strong>Exceptions (rare, requires manager approval):</strong></p>
@@ -1058,7 +1192,7 @@
                     </ul>
                 </div>
 
-                <h3>Dispute Resolution Process</h3>
+                <h3>✅ Dispute Resolution Process</h3>
 
                 <table class="styled-table">
                     <thead>
@@ -1372,10 +1506,10 @@
             <section class="section" id="troubleshooting">
                 <div class="section-header">
                     <div class="section-number">🔧</div>
-                    <h2>Troubleshooting Common Issues</h2>
+                    <h2>⚠️ Troubleshooting Common Issues</h2>
                 </div>
 
-                <h3>Late Payment Issues</h3>
+                <h3>⚠️ Late Payment Issues</h3>
 
                 <table class="styled-table">
                     <thead>
@@ -1414,15 +1548,11 @@
                 <div class="info-box warning">
                     <h4>⚠️ When Client Questions Invoice</h4>
                     <ul class="styled-list">
-                        <li><strong>"This wasn't in scope"</strong> → Refer to original agreement, show what was
-                            promised
+                        <li><strong>"This wasn't in scope"</strong> → Refer to original agreement, show what was  promised
                         </li>
-                        <li><strong>"I thought it was cheaper"</strong> → Send original quote, show any approved change
-                            orders</li>
-                        <li><strong>"I want a discount"</strong> → "Our prices reflect our value. We don't discount work
-                            already completed."</li>
-                        <li><strong>"I won't pay until X is fixed"</strong> → "Let's address the issue together. Payment
-                            secures your support priority."</li>
+                        <li><strong>"I thought it was cheaper"</strong> → Send original quote, show any approved change  orders</li>
+                        <li><strong>"I want a discount"</strong> → "Our prices reflect our value. We don't discount work  already completed."</li>
+                        <li><strong>"I won't pay until X is fixed"</strong> → "Let's address the issue together. Payment  secures your support priority."</li>
                     </ul>
                 </div>
 
@@ -1437,8 +1567,7 @@
                         <li>Contact recipient bank if possible</li>
                         <li>Report to manager same day</li>
                     </ol>
-                    <p style="margin-top: 15px;"><strong>Prevention:</strong> Always double-check account numbers. For
-                        first-time vendors, send a small test amount first.</p>
+                    <p style="margin-top: 15px;"><strong>Prevention:</strong> Always double-check account numbers. For  first-time vendors, send a small test amount first.</p>
                 </div>
 
                 <h3>Tax & Compliance Reminders</h3>
@@ -1465,8 +1594,7 @@
 
                 <div class="info-box gold">
                     <h4>💡 Use AI to Streamline Finance Tasks</h4>
-                    <p>Use these prompts to draft professional messages, calculate scenarios, and handle tricky finance
-                        situations.</p>
+                    <p>Use these prompts to draft professional messages, calculate scenarios, and handle tricky finance  situations.</p>
                 </div>
 
                 <h3>Invoice & Payment Communications</h3>
@@ -1743,12 +1871,9 @@
                     <ol style="margin-top: 15px; line-height: 2;">
                         <li><strong>🔴 P0 - Payroll Processing</strong> → Team salaries are NEVER late. Non-negotiable.
                         </li>
-                        <li><strong>🔴 P0 - Payment Disputes/Fraud Alerts</strong> → Financial emergencies need
-                            immediate action.</li>
-                        <li><strong>🔴 P0 - Critical Vendor Payments</strong> → Subscriptions, hosting, essential
-                            services.</li>
-                        <li><strong>🟡 P1 - Invoice Processing</strong> → Send invoices within 24 hours of project
-                            completion.</li>
+                        <li><strong>🔴 P0 - Payment Disputes/Fraud Alerts</strong> → Financial emergencies need  immediate action.</li>
+                        <li><strong>🔴 P0 - Critical Vendor Payments</strong> → Subscriptions, hosting, essential  services.</li>
+                        <li><strong>🟡 P1 - Invoice Processing</strong> → Send invoices within 24 hours of project  completion.</li>
                         <li><strong>🟡 P1 - Payment Follow-ups</strong> → Chase overdue invoices per the schedule.</li>
                         <li><strong>🟢 P2 - Bank Reconciliation</strong> → Weekly reconciliation, daily if high volume.
                         </li>
@@ -1763,8 +1888,7 @@
                 <h3 id="dispute">🔴 Client Disputes Invoice</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client says amount is wrong or refuses to pay.</p>
-                    <p><strong>Response:</strong> "Let me pull up the project scope and payment agreements. I'll send
-                        you a breakdown. If there's a discrepancy, we'll resolve it together."</p>
+                    <p><strong>Response:</strong> "Let me pull up the project scope and payment agreements. I'll send  you a breakdown. If there's a discrepancy, we'll resolve it together."</p>
                     <p><strong>Rule:</strong> Always have documentation. Never argue — show the paperwork.</p>
                 </div>
 
@@ -1779,36 +1903,28 @@
                 <h3 id="expense-issue">🔴 Expense Without Approval</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Team member made purchase without following approval process.</p>
-                    <p><strong>Response:</strong> Document the expense, inform their manager. Remind them of the
-                        process: "All expenses over [X] require pre-approval. Please follow this going forward."</p>
+                    <p><strong>Response:</strong> Document the expense, inform their manager. Remind them of the  process: "All expenses over [X] require pre-approval. Please follow this going forward."</p>
                     <p><strong>Rule:</strong> Process exists for a reason. Enforce it consistently.</p>
                 </div>
 
-                <h3 id="refund-request">🔴 Client Requests Refund After Work Delivered</h3>
+                <h3 id="refund-request">💸 🔴 Client Requests Refund After Work Delivered</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Work is complete, client wants money back.</p>
-                    <p><strong>Response:</strong> "I understand you're not satisfied. Our terms state that completed
-                        work is non-refundable. Let me connect you with our CS team to discuss how we can address your
-                        concerns."</p>
-                    <p><strong>Rule:</strong> Refunds go through management. Finance doesn't make refund decisions
-                        alone.</p>
+                    <p><strong>Response:</strong> "I understand you're not satisfied. Our terms state that completed  work is non-refundable. Let me connect you with our CS team to discuss how we can address your  concerns."</p>
+                    <p><strong>Rule:</strong> Refunds go through management. Finance doesn't make refund decisions  alone.</p>
                 </div>
 
                 <h3 id="discrepancy">🔴 Discrepancy in Bank Reconciliation</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Records don't match bank statement.</p>
-                    <p><strong>Response:</strong> Don't panic. Check: pending transactions, duplicate entries, timing
-                        differences. If still unclear, flag to management immediately — do not "fix" unexplained
-                        discrepancies.</p>
+                    <p><strong>Response:</strong> Don't panic. Check: pending transactions, duplicate entries, timing  differences. If still unclear, flag to management immediately — do not "fix" unexplained  discrepancies.</p>
                     <p><strong>Rule:</strong> Investigate thoroughly. Never hide or "adjust" unexplained amounts.</p>
                 </div>
 
                 <h3 id="cash-emergency">🔴 Cash Flow Emergency</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Not enough funds to cover upcoming expenses.</p>
-                    <p><strong>Response:</strong> Alert management immediately with: Current balance, upcoming
-                        obligations, expected incoming payments, and recommended actions (delay payments, accelerate
-                        collections).</p>
+                    <p><strong>Response:</strong> Alert management immediately with: Current balance, upcoming  obligations, expected incoming payments, and recommended actions (delay payments, accelerate  collections).</p>
                     <p><strong>Rule:</strong> Early warning is critical. Never wait until payday to discover problems.
                     </p>
                 </div>
@@ -1816,16 +1932,14 @@
                 <h3 id="fraud-alert">🔴 Someone Requests Payment Details via Email</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Email asks for bank details or to change payment info.</p>
-                    <p><strong>Response:</strong> NEVER respond to payment changes via email. Always verify by phone
-                        using known numbers. Treat all such requests as potential fraud until verified.</p>
+                    <p><strong>Response:</strong> NEVER respond to payment changes via email. Always verify by phone  using known numbers. Treat all such requests as potential fraud until verified.</p>
                     <p><strong>Rule:</strong> Verify verbally. Email requests to change payment = red flag.</p>
                 </div>
 
                 <h3 id="salary-error">🔴 Salary Payment Error</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Paid wrong amount to employee.</p>
-                    <p><strong>Response:</strong> Acknowledge immediately. If underpaid: Process correction same day. If
-                        overpaid: Inform employee and arrange recovery plan. Document everything.</p>
+                    <p><strong>Response:</strong> Acknowledge immediately. If underpaid: Process correction same day. If  overpaid: Inform employee and arrange recovery plan. Document everything.</p>
                     <p><strong>Rule:</strong> Fast correction + transparent communication = maintained trust.</p>
                 </div>
             </section>
@@ -1840,8 +1954,7 @@
 
                 <div style="text-align: center; padding: 30px 0;">
                     <div style="font-size: 48px; margin-bottom: 20px;">💰</div>
-                    <blockquote
-                        style="font-size: 24px; font-style: italic; color: #10B981; margin-bottom: 20px; line-height: 1.6;">
+                    <blockquote  style="font-size: 24px; font-style: italic; color: #10B981; margin-bottom: 20px; line-height: 1.6;">
                         "The numbers tell the story. Your job is to make sure it's a success story."
                     </blockquote>
                     <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
@@ -1857,55 +1970,42 @@
                         Turns out, the client's email had changed and invoices weren't reaching them. A simple update —
                         and a genuine conversation — kept the relationship strong.
                         <br><br>
-                        <strong style="color: #10B981;">The result?</strong> The client upgraded to a <strong
-                            style="color: #FCD34D;">$3,000/month retainer</strong> because "you actually care about us."
+                        <strong style="color: #10B981;">The result?</strong> The client upgraded to a <strong  style="color: #FCD34D;">$3,000/month retainer</strong> because "you actually care about us."
                         <br><br>
-                        <em>The lesson: Finance isn't just numbers — it's relationships. Every invoice is a
-                            touchpoint.</em>
+                        <em>The lesson: Finance isn't just numbers — it's relationships. Every invoice is a  touchpoint.</em>
                     </p>
                 </div>
 
                 <div style="background: rgba(16, 185, 129, 0.15); border-radius: 15px; padding: 25px; margin: 30px 0;">
                     <h3 style="color: #6EE7B7; margin-bottom: 15px;">⚡ Productivity Hacks for Finance</h3>
                     <ul style="color: #E5E7EB; line-height: 2; list-style: none; padding: 0;">
-                        <li>📅 <strong>Weekly Money Hour:</strong> Block 1 hour every Monday for reconciliation and cash
-                            flow review</li>
+                        <li>📅 <strong>Weekly Money Hour:</strong> Block 1 hour every Monday for reconciliation and cash  flow review</li>
                         <li>🔔 <strong>Automated Reminders:</strong> Set up auto-reminders for payment due dates</li>
-                        <li>📊 <strong>Dashboard First:</strong> Check the financial dashboard before email every
-                            morning</li>
+                        <li>📊 <strong>Dashboard First:</strong> Check the financial dashboard before email every  morning</li>
                         <li>📝 <strong>Template Invoices:</strong> Pre-built templates = 0 errors, faster processing
                         </li>
-                        <li>🎯 <strong>Same-Day Processing:</strong> Process payments received within 24 hours — never
-                            let them pile up</li>
+                        <li>🎯 <strong>Same-Day Processing:</strong> Process payments received within 24 hours — never  let them pile up</li>
                     </ul>
                 </div>
 
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                    <div
-                        style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                <div  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div  style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                         <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
-                        <p style="color: #A7F3D0; font-weight: 600;">"Cash flow is the lifeblood of the business. Guard
-                            it."</p>
+                        <p style="color: #A7F3D0; font-weight: 600;">"Cash flow is the lifeblood of the business. Guard  it."</p>
                     </div>
-                    <div
-                        style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                    <div  style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                         <div style="font-size: 32px; margin-bottom: 10px;">🔒</div>
                         <p style="color: #93C5FD; font-weight: 600;">"Accuracy isn't optional. It's everything."</p>
                     </div>
-                    <div
-                        style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                    <div  style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                         <div style="font-size: 32px; margin-bottom: 10px;">⏰</div>
-                        <p style="color: #FDE68A; font-weight: 600;">"On-time payments = On-time paychecks for the
-                            team."</p>
+                        <p style="color: #FDE68A; font-weight: 600;">"On-time payments = On-time paychecks for the  team."</p>
                     </div>
                 </div>
 
-                <div
-                    style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                <div  style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
                     <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
-                    <p style="font-size: 20px; color: #10B981; font-weight: 600;">"Today, I protect the financial health
-                        of our company. My accuracy enables everyone else to do their best work."</p>
+                    <p style="font-size: 20px; color: #10B981; font-weight: 600;">"Today, I protect the financial health  of our company. My accuracy enables everyone else to do their best work."</p>
                 </div>
             </section>
 
@@ -1930,11 +2030,55 @@
             }
         </script>
 
+        <script>
+
+        </script>
+
     <script>
+        // ===== SIDEBAR TOGGLE FUNCTIONS =====
         function toggleSidebar() {
-            document.querySelector('.sidebar').classList.toggle('open');
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
         }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        // Click outside to close sidebar
+        document.addEventListener('click', function(event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            var overlay = document.querySelector('.sidebar-overlay');
+            
+            if (!sidebar || !toggleBtn) return;
+            
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+            
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+        // ===== END SIDEBAR TOGGLE =====
     </script>
+
 </body>
 
 </div>
@@ -1959,8 +2103,7 @@
             <div class="video-card">
                 <div class="video-placeholder">
                     [YouTube Embed Placeholder]
-                    <div
-                        style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                    <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                         15:00</div>
                 </div>
                 <div class="video-content">
@@ -1973,8 +2116,7 @@
             <div class="video-card">
                 <div class="video-placeholder">
                     [YouTube Embed Placeholder]
-                    <div
-                        style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                    <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                         25:00</div>
                 </div>
                 <div class="video-content">
@@ -2017,8 +2159,7 @@
         <div class="header">
             <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
             <h1>Your Onboarding Journey</h1>
-            <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
-                to become a certified Finance Manager.</p>
+            <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps  to become a certified Finance Manager.</p>
         </div>
 
         <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
@@ -2032,11 +2173,9 @@
                     style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
                     <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
-                        understand, and internalize the Finance Standard Operating Procedure. This document outlines our
-                        financial policies.</p>
+                        understand, and internalize the Finance Standard Operating Procedure. This document outlines our  financial policies.</p>
                     <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
-                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
-                        to Finance SOP</a>
+                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go  to Finance SOP</a>
                 </div>
             </div>
 
@@ -2048,11 +2187,9 @@
                 <div class="card"
                     style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
-                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and watch
-                        the required training videos. These will give you visual context to the written SOPs.</p>
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and watch  the required training videos. These will give you visual context to the written SOPs.</p>
                     <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
-                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
-                        Assets Library</a>
+                        style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open  Assets Library</a>
                 </div>
             </div>
 
@@ -2064,10 +2201,8 @@
                 <div class="card"
                     style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test</h3>
-                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by taking
-                        the role-specific quiz. You need a score of 90% or higher to proceed.</p>
-                    <div
-                        style="background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0ea5e9;">
+                    <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by taking  the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                    <div  style="background: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #0ea5e9;">
                         ℹ️ <strong>How to take the test:</strong> <br>Switch back to the <a href="#"
                             onclick="switchView('sop'); return false;"
                             style="color: #0284c7; text-decoration: underline;">Finance SOP</a> view and click the "🎓
@@ -2086,8 +2221,7 @@
                     <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording Task
                     </h3>
                     <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final verification.
-                        Record a <strong>30-minute screen sharing video</strong> walking us through your understanding
-                        of the role.</p>
+                        Record a <strong>30-minute screen sharing video</strong> walking us through your understanding  of the role.</p>
 
                     <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
                         <strong>What to cover in your video:</strong>
@@ -2101,10 +2235,8 @@
 
                     <div class="success-box"
                         style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                        <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
-                            Submission</strong>
-                        <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name] nailed
-                            this task:</p>
+                        <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example  Submission</strong>
+                        <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name] nailed  this task:</p>
                         <div class="video-embed"
                             style="aspect-ratio: 16/9; background: #000; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; margin-top: 15px;">
                             [Example Video Placeholder]
@@ -2135,7 +2267,72 @@
             opacity: 1;
         }
     }
-</style>
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1999;
+        }
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+    
+        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+        @media (max-width: 768px) {
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+            .header h1 {
+                font-size: 1.5em !important;
+                margin-bottom: 5px !important;
+            }
+            .header .subtitle {
+                font-size: 0.9em !important;
+                margin-bottom: 10px !important;
+            }
+            .badge-row {
+                gap: 8px !important;
+                margin-top: 12px !important;
+            }
+            .badge {
+                padding: 5px 12px !important;
+                font-size: 0.75em !important;
+            }
+            .container {
+                padding: 10px !important;
+            }
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            .section h2 {
+                font-size: 1.2em !important;
+            }
+        }
+        /* ===== END MOBILE HEADER SIZE ===== */
+
+    
+        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+            .sidebar.active, .sidebar.open {
+                transform: translateX(0) !important;
+            }
+        }
+        /* ===== END SIDEBAR CLOSED ===== */
+
+    </style>
 <script>
     function switchView(viewName) {
         history.pushState(null, null, '#' + viewName);
@@ -2152,6 +2349,8 @@
         if (['assets', 'onboarding'].includes(hash)) switchView(hash);
         else switchView('sop');
     });
+</script>
+<script>
 </script>
 </body>
 

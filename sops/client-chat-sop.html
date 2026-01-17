@@ -7,17 +7,24 @@
     <title>Digital Heroes | Client Chat Creation SOP</title>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
-            --primary: #1E3A5F;
-            --secondary: #2E5077;
-            --accent: #3D6B99;
-            --success: #2E7D32;
-            --warning: #F57C00;
-            --danger: #C62828;
-            --light: #F8F9FA;
-            --dark: #212529;
+            --primary: #0F172A;
+            --primary-light: #1E293B;
+            --secondary: #334155;
+            --accent: #3B82F6;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --light: #F8FAFC;
+            --dark: #020617;
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
+            /* Keep legacy colors for components */
             --gold: #D4AF37;
             --purple: #7C3AED;
         }
@@ -29,10 +36,12 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             line-height: 1.7;
-            color: #333;
-            background: #f5f7fa;
+            color: #334155;
+            background: #F1F5F9;
+            display: flex;
+            min-height: 100vh;
         }
 
         .header {
@@ -341,324 +350,292 @@
         }
 
         /* SIDEBAR LAYOUT */
-        .page-wrapper {
-            display: flex;
-            min-height: 100vh;
-        }
-
+        /* REPLACED WITH HANDBOOK LAYOUT STYLES */
         .sidebar {
-            width: 320px;
-            background: linear-gradient(180deg, #4C1D95 0%, #2E1065 100%);
-            color: white;
+            width: 280px;
+            background: var(--bg-sidebar);
+            color: var(--text-sidebar);
             position: fixed;
-            top: 0;
-            left: 0;
             height: 100vh;
             overflow-y: auto;
             padding: 20px 0;
-            z-index: 1000;
-            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            z-index: 2000;
+            border-right: 1px solid #334155;
         }
 
         .sidebar-header {
-            text-align: center;
-            padding: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 10px;
+            padding: 0 24px 10px;
+            border-bottom: 1px solid #334155;
+            margin-bottom: 20px;
         }
 
         .sidebar-header h2 {
-            font-size: 1em;
-            margin-bottom: 3px;
-        }
-
-        .sidebar-header .emoji {
-            font-size: 1.5em;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .sidebar-back {
-            display: block;
-            padding: 8px 15px;
-            margin: 0 10px 10px 10px;
-            background: rgba(255, 255, 255, 0.1);
+            font-size: 1.25rem;
             color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 13px;
-            transition: all 0.3s;
-        }
-
-        .sidebar-back:hover {
-            background: var(--purple);
-        }
-
-        .sidebar-nav-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4px;
-            padding: 5px 12px;
-            margin: 0 0 8px 0;
-        }
-
-        .sidebar-nav-grid a {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 8px 8px;
-            color: rgba(255, 255, 255, 0.95);
-            text-decoration: none;
-            font-size: 11px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 6px;
-            transition: all 0.15s ease;
+            gap: 12px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
-        .sidebar-nav-grid a:hover {
-            background: rgba(255, 255, 255, 0.18);
-            transform: scale(1.02);
+        .nav-menu {
+            list-style: none;
+            padding: 0 12px;
+            flex: 1;
         }
 
-        .sidebar-section-title {
+        .nav-item {
+            margin-bottom: 4px;
+        }
+
+        .nav-link {
             display: flex;
             align-items: center;
-            padding: 10px 15px 6px;
-            font-size: 10px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: rgba(255, 255, 255, 0.95);
-            background: rgba(0, 0, 0, 0.15);
-            margin-top: 8px;
-            border-left: 3px solid #FCD34D;
+            padding: 10px 16px;
+            color: #94A3B8;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+            font-weight: 500;
+            gap: 12px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .nav-link.active {
+            background: var(--accent);
+            box-shadow: 0 4px 12px var(--accent-glow);
         }
 
         .main-content {
+            margin-left: 280px;
             flex: 1;
-            margin-left: 320px;
-            background: #f5f7fa;
+            padding: 40px 60px;
+            max-width: 1400px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 200;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            .main-content {
+                padding: 30px;
+                margin-left: 280px;
+            }
+        }
+
+        @media (max-width: 900px) {
             .sidebar {
                 transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
             }
 
             .main-content {
                 margin-left: 0;
-            }
-        }
-
-        @media print {
-
-            .sidebar,
-            .mobile-menu-btn,
-            .sidebar-search,
-            .no-print,
-            .admin-floating-btn,
-            .admin-banner,
-            .admin-modal-overlay,
-            .admin-history-panel,
-            .admin-find-panel,
-            .admin-toast-container,
-            .print-btn {
-                display: none !important;
+                padding: 20px 20px 80px 20px;
+                width: 100%;
             }
 
-            .main-content {
-                margin-left: 0 !important;
-                padding: 20px !important;
+            .mobile-toggle {
+                display: block;
             }
 
             .header {
-                border-radius: 0 !important;
-                margin-bottom: 20px !important;
-                padding: 30px 20px !important;
-            }
-
-            .section {
-                break-inside: avoid;
-                page-break-inside: avoid;
-                margin-bottom: 20px !important;
-            }
-
-            body {
-                background: white !important;
-                font-size: 12pt !important;
-            }
-
-            .info-box,
-            .critical-alert,
-            .prompt-box {
-                break-inside: avoid;
-                page-break-inside: avoid;
+                border-radius: 20px;
+                margin-top: 40px;
             }
         }
+    
+    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
+    .mobile-header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+        z-index: 9999;
+        padding: 0 12px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
 
-        .print-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background: linear-gradient(135deg, #7C3AED, #6D28D9);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 15px 10px;
-            cursor: pointer;
-            border: none;
-            font-size: 0.95em;
-            transition: all 0.3s ease;
-        }
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
 
-        .print-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
-        }
+    .mobile-menu-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
 
-        /* Mobile Header - Fixed Collision */
+    .mobile-home-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #10B981;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 10px 16px;
+        background: rgba(16, 185, 129, 0.15);
+        border-radius: 10px;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        white-space: nowrap;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
         .mobile-header {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 56px;
-            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-            z-index: 1002;
-            padding: 0 12px;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            display: flex !important;
         }
-
-        .mobile-menu-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: white;
-            border-radius: 10px;
-            font-size: 1.4rem;
-            cursor: pointer;
-            flex-shrink: 0;
+        .sidebar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            height: 100vh !important;
+            width: 280px !important;
+            z-index: 9999 !important;
+            transform: translateX(-100%) !important;
+            transition: transform 0.3s ease !important;
         }
-
-        .mobile-home-btn {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #10B981;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            padding: 10px 16px;
-            background: rgba(16, 185, 129, 0.15);
-            border-radius: 10px;
-            border: 1px solid rgba(16, 185, 129, 0.3);
-            white-space: nowrap;
+        .sidebar.active, .sidebar.open {
+            transform: translateX(0) !important;
         }
-
-        @media (max-width: 768px) {
-            .mobile-header {
-                display: flex;
-            }
-
-            .main-content {
-                padding-top: 70px !important;
-            }
-
-            .header {
-                margin-top: 56px;
-            }
+        .main-content {
+            margin-left: 0 !important;
+            padding-top: 70px !important;
+            width: 100% !important;
         }
+    }
+    /* ========== END DEFINITIVE MOBILE FIX ========== */
+
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
 
+    <link rel="stylesheet" href="assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
+</head>
 <body>
-    <!-- Mobile Header -->
-    <div class="mobile-header">
-        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-        <a href="index.html" class="mobile-home-btn">🏠 Home</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
     </div>
 
-    <!-- Left Sidebar -->
-    <aside class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-header">
-            <span class="emoji">💬</span>
-            <h2>Client Chat SOP</h2>
+            <h2>💬 Client Chat SOP</h2>
+        </div>
+        <div class="back-link" style="margin-top: 0; border-top: none; padding: 0 24px 20px; text-align: left;">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 500; font-size: 0.9rem;">
+                <span>←</span> Back to Dashboard
+            </a>
         </div>
 
-        <a href="index.html" class="sidebar-back">← Back to Home</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <div  style="padding: 10px 16px; font-size: 0.75rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 10px;">
+                    Fundamentals</div>
+            </li>
+            <li class="nav-item"><a href="#overview" class="nav-link">📝 📋 Overview</a></li>
+            <li class="nav-item"><a href="#rules" class="nav-link">📏 Core Rules</a></li>
+            <li class="nav-item"><a href="#timing" class="nav-link">⏰ Timing</a></li>
+            <li class="nav-item"><a href="#message-count" class="nav-link">💬 Messages</a></li>
 
-        <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
-            <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
-                Print</button>
-            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
-                Test</button>
-        </div>
+            <li class="nav-item">
+                <div  style="padding: 10px 16px; font-size: 0.75rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 10px;">
+                    Tone Variations</div>
+            </li>
+            <li class="nav-item"><a href="#professional" class="nav-link">💼 Professional</a></li>
+            <li class="nav-item"><a href="#casual" class="nav-link">😊 Casual</a></li>
+            <li class="nav-item"><a href="#urgent" class="nav-link">🔥 Urgent</a></li>
+            <li class="nav-item"><a href="#demanding" class="nav-link">😤 Demanding</a></li>
 
-        <div class="sidebar-section-title">1️⃣ Fundamentals</div>
-        <div class="sidebar-nav-grid">
-            <a href="#overview">📋 Overview</a>
-            <a href="#rules">📏 Core Rules</a>
-            <a href="#timing">⏰ Timing</a>
-            <a href="#message-count">💬 Messages</a>
-        </div>
-        <div class="sidebar-section-title">2️⃣ Tone Variations</div>
-        <div class="sidebar-nav-grid">
-            <a href="#professional">💼 Professional</a>
-            <a href="#casual">😊 Casual</a>
-            <a href="#urgent">🔥 Urgent</a>
-            <a href="#demanding">😤 Demanding</a>
-        </div>
-        <div class="sidebar-section-title">3️⃣ Chat Types</div>
-        <div class="sidebar-nav-grid">
-            <a href="#inquiry">❓ Inquiry</a>
-            <a href="#order-chat">🛒 Order</a>
-            <a href="#update-chat">📦 Update</a>
-            <a href="#revision">🔄 Revision</a>
-        </div>
-        <div class="sidebar-section-title">4️⃣ ChatGPT Prompts</div>
-        <div class="sidebar-nav-grid">
-            <a href="#prompt-1">📝 P1-P5</a>
-            <a href="#prompt-6">📝 P6-P10</a>
-            <a href="#prompt-11">📝 P11-P15</a>
-            <a href="#prompt-16">📝 P16-P20</a>
-        </div>
-        <div class="sidebar-section-title">5️⃣ $100 Budget</div>
-        <div class="sidebar-nav-grid">
-            <a href="#budget-prompts">💵 P21-P30</a>
-        </div>
-        <div class="sidebar-section-title">6️⃣ Varied Buyers</div>
-        <div class="sidebar-nav-grid">
-            <a href="#varied-buyers-1">🎭 P31-P55</a>
-            <a href="#varied-buyers-2">🎭 P56-P80</a>
-        </div>
-        <div class="sidebar-section-title">7️⃣ Examples</div>
-        <div class="sidebar-nav-grid">
-            <a href="#example-pro">💼 Pro Chat</a>
-            <a href="#example-casual">😊 Casual Chat</a>
-            <a href="#example-order">🛒 Order Chat</a>
-            <a href="#example-update">📦 Update Chat</a>
-        </div>
-    </aside>
+            <li class="nav-item">
+                <div  style="padding: 10px 16px; font-size: 0.75rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 10px;">
+                    Chat Types</div>
+            </li>
+            <li class="nav-item"><a href="#inquiry" class="nav-link">❓ Inquiry</a></li>
+            <li class="nav-item"><a href="#order-chat" class="nav-link">🛒 Order</a></li>
+            <li class="nav-item"><a href="#update-chat" class="nav-link">📦 Update</a></li>
+            <li class="nav-item"><a href="#revision" class="nav-link">🔄 🔄 Revision</a></li>
+
+            <li class="nav-item">
+                <div  style="padding: 10px 16px; font-size: 0.75rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 10px;">
+                    Prompts</div>
+            </li>
+            <li class="nav-item"><a href="#prompt-1" class="nav-link">📝 P1-P5</a></li>
+            <li class="nav-item"><a href="#prompt-6" class="nav-link">📝 P6-P10</a></li>
+            <li class="nav-item"><a href="#prompt-11" class="nav-link">📝 P11-P15</a></li>
+            <li class="nav-item"><a href="#prompt-16" class="nav-link">📝 P16-P20</a></li>
+            <li class="nav-item"><a href="#budget-prompts" class="nav-link">💵 $100 Budget</a></li>
+            <li class="nav-item"><a href="#varied-buyers-1" class="nav-link">🎭 Varied Buyers</a></li>
+
+            <li class="nav-item">
+                <div  style="padding: 10px 16px; font-size: 0.75rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 10px;">
+                    Tools</div>
+            </li>
+            <li class="nav-item"><button onclick="window.print()" class="nav-link"
+                    style="background:none; border:none; width:100%; cursor:pointer;">🖨️ Print SOP</button></li>
+        </ul>
+    </nav>
 
     <!-- Main Content -->
     <div class="main-content">
@@ -809,7 +786,141 @@
                         grid-template-columns: repeat(4, 1fr);
                     }
                 }
-            </style>
+            
+        /* Mobile Header - Hamburger + Home */
+        .mobile-header {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+            z-index: 3000;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex;
+            }
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar.active, .sidebar.open {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+                padding-top: 70px !important;
+                width: 100%;
+            }
+            .header {
+                margin-top: 56px;
+            }
+        }
+
+    
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1999;
+        }
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+    
+        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+        @media (max-width: 768px) {
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+            .header h1 {
+                font-size: 1.5em !important;
+                margin-bottom: 5px !important;
+            }
+            .header .subtitle {
+                font-size: 0.9em !important;
+                margin-bottom: 10px !important;
+            }
+            .badge-row {
+                gap: 8px !important;
+                margin-top: 12px !important;
+            }
+            .badge {
+                padding: 5px 12px !important;
+                font-size: 0.75em !important;
+            }
+            .container {
+                padding: 10px !important;
+            }
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            .section h2 {
+                font-size: 1.2em !important;
+            }
+        }
+        /* ===== END MOBILE HEADER SIZE ===== */
+
+    
+        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+            .sidebar.active, .sidebar.open {
+                transform: translateX(0) !important;
+            }
+        }
+        /* ===== END SIDEBAR CLOSED ===== */
+
+    </style>
 
             <section class="calendar-section" id="growth-calendars">
                 <div class="section-header">
@@ -819,8 +930,7 @@
 
                 <div class="info-box gold">
                     <strong>💡 Simulation Controls:</strong><br>
-                    Use the <strong>Randomize</strong> button on each calendar to independently shift dates, vary
-                    amounts (+/- $50), and change delivery times (3-5 days).<br>
+                    Use the <strong>Randomize</strong> button on each calendar to independently shift dates, vary  amounts (+/- $50), and change delivery times (3-5 days).<br>
                     <em>Note: Month 1 first 15 days logic prioritizes alternate spacing.</em>
                 </div>
 
@@ -917,8 +1027,7 @@
                         const randomized = base.map(item => {
                             let newDay = item.day;
                             if (monthNum === 1 && item.day <= 15) {
-                                // Jitter small to keep alternate spacing
-                                const jitter = Math.floor(Math.random() * 3) - 1;
+                                // Jitter small to keep alternate spacing  const jitter = Math.floor(Math.random() * 3) - 1;
                                 newDay = item.day + jitter;
                             } else {
                                 const jitter = Math.floor(Math.random() * 5) - 2;
@@ -956,28 +1065,23 @@
             <section class="section" id="overview">
                 <div class="section-header">
                     <div class="section-number">1</div>
-                    <h2>Overview & Purpose</h2>
+                    <h2>📝 Overview & Purpose</h2>
                 </div>
 
                 <div class="info-box purple">
                     <h4>🎯 What This SOP Covers</h4>
-                    <p>This guide teaches you how to create <strong>authentic-looking client/seller chat
-                            conversations</strong> for Shopify store builds, custom website projects, and related
-                        services. These chats should look exactly like real buyer-seller interactions.</p>
+                    <p>This guide teaches you how to create <strong>authentic-looking client/seller chat  conversations</strong> for Shopify store builds, custom website projects, and related  services. These chats should look exactly like real buyer-seller interactions.</p>
                 </div>
 
                 <div class="info-box gold">
                     <h4>⭐ THE PURPOSE: Portfolio Building & Skill Development</h4>
                     <p><strong>This is NOT about fake reviews.</strong> This is about:</p>
                     <ul class="styled-list check-list">
-                        <li><strong>Building your portfolio:</strong> Create showcase pieces demonstrating your
-                            communication style</li>
-                        <li><strong>Practicing sales conversations:</strong> Learn how to handle different client types
-                            professionally</li>
+                        <li><strong>Building your portfolio:</strong> Create showcase pieces demonstrating your  communication style</li>
+                        <li><strong>Practicing sales conversations:</strong> Learn how to handle different client types  professionally</li>
                         <li><strong>Training new team members:</strong> Show examples of ideal buyer-seller interactions
                         </li>
-                        <li><strong>Initial momentum:</strong> Get first few genuine orders from friends/colleagues who
-                            actually need services</li>
+                        <li><strong>Initial momentum:</strong> Get first few genuine orders from friends/colleagues who  actually need services</li>
                     </ul>
                 </div>
 
@@ -985,31 +1089,22 @@
                     <h4>🚨 VVRO TEAM — DO THIS THE RIGHT WAY</h4>
                     <p><strong>We build reviews LEGITIMATELY through REAL WORK:</strong></p>
                     <ul class="styled-list cross-list">
-                        <li><strong>REAL ORDERS ONLY:</strong> Every order must involve actual work delivered — even for
-                            friends/colleagues</li>
-                        <li><strong>ACTUAL DELIVERY:</strong> Build a real store, do real customization, provide real
-                            value</li>
-                        <li><strong>HONEST REVIEWS:</strong> Reviews should reflect genuine satisfaction with work you
-                            actually did</li>
-                        <li><strong>VARIED TIMING:</strong> Don't place 10 orders in one day — space them naturally over
-                            weeks</li>
-                        <li><strong>DIFFERENT ACCOUNTS:</strong> Use real people with established accounts, not newly
-                            created fake ones</li>
-                        <li><strong>REAL COMMUNICATION:</strong> Have genuine conversations, not robotic copy-paste
-                            exchanges</li>
+                        <li><strong>REAL ORDERS ONLY:</strong> Every order must involve actual work delivered — even for  friends/colleagues</li>
+                        <li><strong>ACTUAL DELIVERY:</strong> Build a real store, do real customization, provide real  value</li>
+                        <li><strong>HONEST REVIEWS:</strong> Reviews should reflect genuine satisfaction with work you  actually did</li>
+                        <li><strong>VARIED TIMING:</strong> Don't place 10 orders in one day — space them naturally over  weeks</li>
+                        <li><strong>DIFFERENT ACCOUNTS:</strong> Use real people with established accounts, not newly  created fake ones</li>
+                        <li><strong>REAL COMMUNICATION:</strong> Have genuine conversations, not robotic copy-paste  exchanges</li>
                     </ul>
-                    <p style="margin-top: 15px;"><strong>⚠️ Platform detection is sophisticated.</strong> Fake patterns
-                        get caught. Only genuine work builds lasting success.</p>
+                    <p style="margin-top: 15px;"><strong>⚠️ Platform detection is sophisticated.</strong> Fake patterns  get caught. Only genuine work builds lasting success.</p>
                 </div>
 
                 <div class="info-box info">
                     <h4>✅ THE LEGITIMATE PROCESS</h4>
                     <ul class="styled-list check-list">
-                        <li><strong>Step 1:</strong> Find a friend/colleague who genuinely needs a Shopify store or
-                            website work</li>
+                        <li><strong>Step 1:</strong> Find a friend/colleague who genuinely needs a Shopify store or  website work</li>
                         <li><strong>Step 2:</strong> Have them message you through the platform as a real inquiry</li>
-                        <li><strong>Step 3:</strong> Have a natural conversation (use prompts as inspiration, not
-                            scripts)</li>
+                        <li><strong>Step 3:</strong> Have a natural conversation (use prompts as inspiration, not  scripts)</li>
                         <li><strong>Step 4:</strong> They place a real order, you deliver real quality work</li>
                         <li><strong>Step 5:</strong> They leave an honest review based on their genuine experience</li>
                         <li><strong>Step 6:</strong> Repeat with other people who actually need your services</li>
@@ -1035,42 +1130,33 @@
                         <li><strong>NEVER</strong> use the same buyer tone/style in every chat</li>
                         <li><strong>NEVER</strong> make every chat end perfectly — some should have realistic friction
                         </li>
-                        <li><strong>NEVER</strong> use template/robotic language — real people have typos and casual
-                            phrasing</li>
+                        <li><strong>NEVER</strong> use template/robotic language — real people have typos and casual  phrasing</li>
                     </ul>
                 </div>
 
                 <div class="info-box gold">
                     <h4>⚡ SUPER IMPORTANT GUIDELINES</h4>
                     <ul class="styled-list check-list">
-                        <li><strong>MODIFY PRICES:</strong> All prices in prompts are examples — adjust to match your
-                            actual services ($50, $100, $150, $500, etc.)</li>
-                        <li><strong>TIMING IS EVERYTHING:</strong> Message time gaps make chats look real. 1-10 minute
-                            gaps are crucial!</li>
-                        <li><strong>SELLER STAYS CONSISTENT:</strong> Seller should always be professional and helpful
-                            regardless of buyer type</li>
+                        <li><strong>MODIFY PRICES:</strong> All prices in prompts are examples — adjust to match your  actual services ($50, $100, $150, $500, etc.)</li>
+                        <li><strong>TIMING IS EVERYTHING:</strong> Message time gaps make chats look real. 1-10 minute  gaps are crucial!</li>
+                        <li><strong>SELLER STAYS CONSISTENT:</strong> Seller should always be professional and helpful  regardless of buyer type</li>
                         <li><strong>ONLY BUYERS VARY:</strong> Mix noob buyers, professional buyers, demanding buyers,
                             casual buyers — seller tone stays the same</li>
                         <li><strong>COPY-PASTE FLEXIBILITY:</strong> Sometimes you'll copy-paste prompts directly,
                             sometimes you'll modify them — both are fine!</li>
-                        <li><strong>ALL END IN ORDERS:</strong> Every chat should eventually lead to an order placement
-                            or order update</li>
-                        <li><strong>ORDER UPDATES = HAPPY CLIENTS:</strong> All order update chats must end with the
-                            client being happy with the progress — no negative endings!</li>
+                        <li><strong>ALL END IN ORDERS:</strong> Every chat should eventually lead to an order placement  or order update</li>
+                        <li><strong>ORDER UPDATES = HAPPY CLIENTS:</strong> All order update chats must end with the  client being happy with the progress — no negative endings!</li>
                     </ul>
                 </div>
 
                 <div class="info-box success">
                     <h4>🔑 KEYWORDS ARE ESSENTIAL</h4>
-                    <p>Include <strong>Shopify/website service keywords</strong> naturally in every chat to help with
-                        platform searchability:</p>
+                    <p>Include <strong>Shopify/website service keywords</strong> naturally in every chat to help with  platform searchability:</p>
                     <ul class="styled-list check-list">
                         <li><strong>Shopify keywords:</strong> Shopify store, Shopify expert, theme customization,
                             product upload, store design, conversion rate, mobile responsive, speed optimization</li>
-                        <li><strong>Custom site keywords:</strong> custom website, web development, WordPress, landing
-                            page, e-commerce website, responsive design, UI/UX design</li>
-                        <li><strong>Service keywords:</strong> store setup, brand design, logo design, SEO, checkout
-                            optimization, payment gateway, product pages</li>
+                        <li><strong>Custom site keywords:</strong> custom website, web development, WordPress, landing  page, e-commerce website, responsive design, UI/UX design</li>
+                        <li><strong>Service keywords:</strong> store setup, brand design, logo design, SEO, checkout  optimization, payment gateway, product pages</li>
                         <li><strong>Pro tip:</strong> Buyer should naturally mention what they need using these keywords
                         </li>
                     </ul>
@@ -1177,21 +1263,13 @@
                 <div class="highlight-box" style="background: rgba(255,255,255,0.15);">
                     <h3 style="margin-bottom: 15px;">✅ Acceptable Acknowledgments</h3>
                     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                        <span
-                            style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Okay"</span>
-                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Yes
-                            sir/ma'am"</span>
-                        <span
-                            style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Working
-                            on it"</span>
-                        <span
-                            style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Understood"</span>
-                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Will
-                            do"</span>
-                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Got
-                            it"</span>
-                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"On
-                            it!"</span>
+                        <span  style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Okay"</span>
+                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Yes  sir/ma'am"</span>
+                        <span  style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Working  on it"</span>
+                        <span  style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Understood"</span>
+                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Will  do"</span>
+                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"Got  it"</span>
+                        <span style="background: rgba(16, 185, 129, 0.4); padding: 8px 15px; border-radius: 20px;">"On  it!"</span>
                     </div>
                 </div>
 
@@ -1201,8 +1279,7 @@
                     <ul style="margin-top: 10px; line-height: 1.8;">
                         <li><strong>Reason</strong> why you can't complete it</li>
                         <li><strong>Alternative timeline</strong> when you CAN complete it</li>
-                        <li>Example: "I won't be able to finish today due to [reason], but I can have it ready by
-                            tomorrow 2 PM."</li>
+                        <li>Example: "I won't be able to finish today due to [reason], but I can have it ready by  tomorrow 2 PM."</li>
                     </ul>
                 </div>
             </section>
@@ -1257,8 +1334,7 @@
                 <div class="story-box" style="margin-top: 15px;">
                     <h4>2️⃣ The Echo Confirmation 🔄</h4>
                     <p>After receiving instructions, echo them back:</p>
-                    <p
-                        style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                    <p  style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                         <em>"Just to confirm — you want me to [repeat task]. Is that correct?"</em>
                     </p>
                     <p style="margin-top: 5px;">Prevents misunderstandings.</p>
@@ -1269,8 +1345,7 @@
                     <p>Never share a problem without a proposed solution:</p>
                     <div style="margin-top: 10px;">
                         <p style="color: #EF4444;">❌ "The API isn't working"</p>
-                        <p style="color: #10B981;">✅ "The API isn't working. I've tried X and Y. Trying Z now, will
-                            update in 1 hour."</p>
+                        <p style="color: #10B981;">✅ "The API isn't working. I've tried X and Y. Trying Z now, will  update in 1 hour."</p>
                     </div>
                 </div>
 
@@ -1288,8 +1363,7 @@
                 <div class="story-box" style="margin-top: 15px;">
                     <h4>5️⃣ The 5-Word Reply 💬</h4>
                     <p>Acknowledge instantly, even with just a few words:</p>
-                    <p
-                        style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                    <p  style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                         <em>"Got it, working on it now."</em>
                     </p>
                     <p style="margin-top: 5px;"><strong>Speed matters more than length.</strong></p>
@@ -1329,14 +1403,13 @@
                 <div class="story-box" style="margin-top: 15px;">
                     <h4>9️⃣ The Friday Recap 📅</h4>
                     <p>Every Friday, send a summary to stakeholders:</p>
-                    <p
-                        style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                    <p  style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                         <em>"This week: [accomplishments]. Next week: [priorities]. Blockers: [if any]"</em>
                     </p>
                 </div>
 
                 <div class="story-box" style="margin-top: 15px;">
-                    <h4>🔟 The Response Time Ladder 🪜</h4>
+                    <h4>↩️ 🔟 The Response Time Ladder 🪜</h4>
                     <p>Target response times by urgency:</p>
                     <ul style="margin-top: 10px;">
                         <li><strong>Client message:</strong> Within 5 minutes (during work hours)</li>
@@ -1356,8 +1429,7 @@
 
                 <div class="info-box gold">
                     <h4>⚡ Key Principle: Variety is Essential</h4>
-                    <p>Real clients have different personalities. Your chats should reflect this diversity. Mix
-                        professional, casual, urgent, and even difficult clients.</p>
+                    <p>Real clients have different personalities. Your chats should reflect this diversity. Mix  professional, casual, urgent, and even difficult clients.</p>
                 </div>
 
                 <h3 id="professional">💼 Professional Buyer</h3>
@@ -1370,9 +1442,7 @@
                         <li>Uses formal greetings: "Hi", "Hello", "Good morning"</li>
                         <li>Signs off professionally: "Thanks", "Best regards"</li>
                     </ul>
-                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "Hi, I'm looking for a Shopify
-                        developer for my fashion brand. We need a complete store redesign with custom sections. Our
-                        budget is around $2,500 and we're targeting launch in 4 weeks. Can you share your availability?"
+                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "Hi, I'm looking for a Shopify  developer for my fashion brand. We need a complete store redesign with custom sections. Our  budget is around $2,500 and we're targeting launch in 4 weeks. Can you share your availability?"
                     </p>
                 </div>
 
@@ -1386,9 +1456,7 @@
                         <li>Informal greetings: "Hey!", "Yo", "Hi there"</li>
                         <li>May share personal context about their business</li>
                     </ul>
-                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "hey! saw ur work on another store and
-                        loved it. i'm starting a pet supplies brand and need a shopify store. nothing too crazy just
-                        something clean and modern. what would that run me? 😊"</p>
+                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "hey! saw ur work on another store and  loved it. i'm starting a pet supplies brand and need a shopify store. nothing too crazy just  something clean and modern. what would that run me? 😊"</p>
                 </div>
 
                 <h3 id="urgent">🔥 Urgent/Rush Buyer</h3>
@@ -1401,8 +1469,7 @@
                         <li>Less small talk, straight to the point</li>
                         <li>Willing to pay more for speed</li>
                     </ul>
-                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "Hi I need a shopify store ASAP. I'm
-                        launching a product in 10 days and my previous developer disappeared. Can you do a rush job?
+                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "Hi I need a shopify store ASAP. I'm  launching a product in 10 days and my previous developer disappeared. Can you do a rush job?
                         I'll pay extra for priority."</p>
                 </div>
 
@@ -1416,9 +1483,7 @@
                         <li>May be skeptical or hesitant</li>
                         <li>Tests your patience (but you remain professional!)</li>
                     </ul>
-                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "Hi. I've been quoted $500 by others
-                        for a Shopify store. Why are your prices so much higher? What exactly do I get for the extra
-                        money? I need to understand before I commit to anything."</p>
+                    <p style="margin-top: 15px;"><strong>Example opener:</strong> "Hi. I've been quoted $500 by others  for a Shopify store. Why are your prices so much higher? What exactly do I get for the extra  money? I need to understand before I commit to anything."</p>
                 </div>
             </section>
 
@@ -1435,8 +1500,7 @@
                     <ul class="styled-list">
                         <li><strong>Flow:</strong> Question → Answer → Follow-up → Quote → Consideration</li>
                         <li><strong>Key elements:</strong> Service details, pricing questions, timeline queries</li>
-                        <li><strong>Ending options:</strong> "I'll think about it" / "Sounds good, next steps?" / "Let
-                            me check with my partner"</li>
+                        <li><strong>Ending options:</strong> "I'll think about it" / "Sounds good, next steps?" / "Let  me check with my partner"</li>
                     </ul>
                 </div>
 
@@ -1444,8 +1508,7 @@
                 <div class="info-box success">
                     <h4>Purpose: Client decides to proceed</h4>
                     <ul class="styled-list">
-                        <li><strong>Flow:</strong> Decision → Requirements gathering → Scope confirmation → Payment
-                            discussion → Order confirmation</li>
+                        <li><strong>Flow:</strong> Decision → Requirements gathering → Scope confirmation → Payment  discussion → Order confirmation</li>
                         <li><strong>Key elements:</strong> Specific requirements, deliverables list, timeline agreement,
                             payment terms</li>
                         <li><strong>Must include:</strong> Clear project scope discussed, payment/deposit mentioned</li>
@@ -1456,22 +1519,20 @@
                 <div class="info-box warning">
                     <h4>Purpose: Project progress communication</h4>
                     <ul class="styled-list">
-                        <li><strong>Flow:</strong> Update shared → Client reviews → Feedback given → Next steps
-                            discussed</li>
+                        <li><strong>Flow:</strong> Update shared → Client reviews → Feedback given → Next steps  discussed</li>
                         <li><strong>Key elements:</strong> Progress screenshots/links, timeline status, any blockers,
                             next milestone</li>
                         <li><strong>Tone:</strong> Can be quick updates or detailed reviews</li>
                     </ul>
                 </div>
 
-                <h3 id="revision">🔄 Revision Request Chat</h3>
+                <h3 id="revision">🔄 🔄 Revision Request Chat</h3>
                 <div class="info-box purple">
                     <h4>Purpose: Changes requested on delivered work</h4>
                     <ul class="styled-list">
                         <li><strong>Flow:</strong> Review → Feedback → Change requests → Clarifications → Confirmation
                         </li>
-                        <li><strong>Key elements:</strong> Specific change requests, reasonable vs. scope-creep
-                            handling, turnaround times</li>
+                        <li><strong>Key elements:</strong> Specific change requests, reasonable vs. scope-creep  handling, turnaround times</li>
                         <li><strong>Balance:</strong> Accommodate but set boundaries professionally</li>
                     </ul>
                 </div>
@@ -1486,15 +1547,13 @@
 
                 <div class="info-box gold">
                     <h4>📋 How to Use These Prompts</h4>
-                    <p>Copy any prompt below into ChatGPT. Each generates a unique, realistic conversation. Modify the
-                        specifics (product type, price, timeline) as needed.</p>
+                    <p>Copy any prompt below into ChatGPT. Each generates a unique, realistic conversation. Modify the  specifics (product type, price, timeline) as needed.</p>
                 </div>
 
                 <div class="info-box danger">
                     <h4>⚠️ ADD THIS TO EVERY PROMPT</h4>
                     <p>When using ANY prompt below, <strong>add these lines at the end</strong>:</p>
-                    <pre
-                        style="background: #1a1a2e; padding: 15px; border-radius: 8px; margin-top: 10px; color: #fff; font-size: 0.85em; overflow-x: auto;">
+                    <pre  style="background: #1a1a2e; padding: 15px; border-radius: 8px; margin-top: 10px; color: #fff; font-size: 0.85em; overflow-x: auto;">
 IMPORTANT PLATFORM REQUIREMENTS:
 - Include Shopify/website keywords naturally: "Shopify store", "custom website", "theme customization", "mobile responsive", "product pages", "conversion optimization", "e-commerce", "store design"
 - Chat must lead to buyer placing an order
@@ -1506,8 +1565,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     <div class="prompt-header">Prompt #1: Professional Shopify Store Inquiry</div>
                     Generate a realistic buyer-seller chat conversation for a Shopify store development service.
 
-                    Buyer persona: Professional business owner launching a premium skincare brand. Has clear
-                    requirements and budget of $2,500-3,000.
+                    Buyer persona: Professional business owner launching a premium skincare brand. Has clear  requirements and budget of $2,500-3,000.
 
                     Seller persona: Experienced Shopify developer, professional and knowledgeable.
 
@@ -1516,17 +1574,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Time gaps between messages (mention realistic timestamps like 2:30 PM, 2:34 PM, 2:41 PM)
                     - Buyer asks about: custom sections, mobile responsiveness, timeline, examples of past work
                     - Include pricing discussion ending with buyer agreeing to proceed
-                    - Tone: Professional and business-focused
-
-                    Generate the complete conversation with timestamps.
+                    - Tone: Professional and business-focused  Generate the complete conversation with timestamps.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #2: Casual First-Time Entrepreneur</div>
                     Generate a realistic buyer-seller chat for a Shopify store service.
 
-                    Buyer persona: First-time entrepreneur, 28 years old, starting a streetwear brand. Casual
-                    communication style with emojis, has limited budget but enthusiastic.
+                    Buyer persona: First-time entrepreneur, 28 years old, starting a streetwear brand. Casual  communication style with emojis, has limited budget but enthusiastic.
 
                     Seller persona: Friendly Shopify developer who guides beginners patiently.
 
@@ -1556,9 +1611,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Include discussion about rush fees (+30% mentioned)
                     - Seller confirms scope carefully despite urgency
                     - End with order being placed same day
-                    - Short time gaps (1-3 minutes) showing real-time urgency
-
-                    Make it feel genuinely urgent and realistic.
+                    - Short time gaps (1-3 minutes) showing real-time urgency  Make it feel genuinely urgent and realistic.
                 </div>
 
                 <div class="prompt-box">
@@ -1577,9 +1630,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Include moment where buyer starts understanding the value
                     - Buyer asks for portfolio/proof of quality
                     - End with buyer saying "let me review your portfolio and get back to you"
-                    - Professional but slightly tense initial tone that warms up
-
-                    Show realistic price objection handling.
+                    - Professional but slightly tense initial tone that warms up  Show realistic price objection handling.
                 </div>
 
                 <div class="prompt-box">
@@ -1598,9 +1649,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Discussion about timeline (4-6 weeks)
                     - Buyer mentions they need to sign off with their client first
                     - Include technical questions and professional answers
-                    - End with buyer requesting a formal proposal/quote document
-
-                    Make it feel like a real B2B conversation.
+                    - End with buyer requesting a formal proposal/quote document  Make it feel like a real B2B conversation.
                 </div>
             </section>
 
@@ -1626,9 +1675,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer has 3-4 specific feedback points (color change, font adjustment, image swap)
                     - Seller acknowledges and confirms changes
                     - Discussion about timeline for next milestone
-                    - Positive, collaborative tone throughout
-
-                    Show a healthy mid-project communication.
+                    - Positive, collaborative tone throughout  Show a healthy mid-project communication.
                 </div>
 
                 <div class="prompt-box">
@@ -1645,20 +1692,16 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller confirms which are included in revisions
                     - Clear timeline given for completing changes (24-48 hours)
                     - Buyer expresses appreciation for responsiveness
-                    - Professional, smooth interaction
-
-                    Show good revision handling process.
+                    - Professional, smooth interaction  Show good revision handling process.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #8: Scope Creep Situation</div>
                     Generate a realistic chat where a client requests changes outside original scope.
 
-                    Context: Custom Shopify store delivered. Client now wants additional features not discussed
-                    originally.
+                    Context: Custom Shopify store delivered. Client now wants additional features not discussed  originally.
 
-                    Buyer persona: Not malicious, genuinely thought features were included. Slightly disappointed when
-                    told otherwise.
+                    Buyer persona: Not malicious, genuinely thought features were included. Slightly disappointed when  told otherwise.
 
                     Seller response: Professional, explains scope, offers to add features with additional quote.
 
@@ -1669,17 +1712,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Discussion about additional costs ($300-500 for extras)
                     - Initial slight tension that resolves professionally
                     - Buyer decides to add 1-2 features with additional payment
-                    - Show how to handle scope creep gracefully
-
-                    Make the transition from disagreement to resolution feel natural.
+                    - Show how to handle scope creep gracefully  Make the transition from disagreement to resolution feel natural.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #9: Multiple Product Seller (Agency Feel)</div>
                     Generate a chat for a recurring client ordering their third project.
 
-                    Buyer persona: E-commerce brand owner who has used this seller before. Familiar, trusting
-                    relationship.
+                    Buyer persona: E-commerce brand owner who has used this seller before. Familiar, trusting  relationship.
 
                     Seller persona: Treats loyal clients well, offers returning customer discount.
 
@@ -1690,9 +1730,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Discussion about new store for sister brand
                     - Mention returning customer pricing (10% off)
                     - Casual and warm tone throughout
-                    - Quick order placement without extensive back-and-forth
-
-                    Show what repeat business conversations look like.
+                    - Quick order placement without extensive back-and-forth  Show what repeat business conversations look like.
                 </div>
 
                 <div class="prompt-box">
@@ -1729,8 +1767,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     <div class="prompt-header">Prompt #11: Late Night Inquiry (Different Timezone)</div>
                     Generate a chat that shows timezone differences in communication.
 
-                    Buyer persona: Australian entrepreneur messaging a seller in different timezone. It's 11 PM for
-                    seller, 2 PM for buyer.
+                    Buyer persona: Australian entrepreneur messaging a seller in different timezone. It's 11 PM for  seller, 2 PM for buyer.
 
                     Requirements:
                     - 6-8 messages each side
@@ -1739,17 +1776,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Include realistic timestamps across 12-14 hours
                     - Eventually sync up for real-time discussion
                     - Discussion about how async communication will work during project
-                    - Professional handling of timezone challenge
-
-                    Show realistic international client communication.
+                    - Professional handling of timezone challenge  Show realistic international client communication.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #12: Dropshipping Store Request</div>
                     Generate a chat for a dropshipping Shopify store project.
 
-                    Buyer persona: New to dropshipping, has done research, wants product import functionality, supplier
-                    integration, and conversion-optimized design.
+                    Buyer persona: New to dropshipping, has done research, wants product import functionality, supplier  integration, and conversion-optimized design.
 
                     Seller persona: Experienced with dropshipping stores, familiar with Oberlo/DSers.
 
@@ -1760,17 +1794,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Discussion about example niche (buyer considering pet products)
                     - Seller shares portfolio link with similar stores
                     - Buyer excited, asks about payment and start date
-                    - Clear order placement at the end
-
-                    Include dropshipping-specific terminology naturally.
+                    - Clear order placement at the end  Include dropshipping-specific terminology naturally.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #13: Print-on-Demand Store</div>
                     Generate a chat for a Print-on-Demand apparel Shopify store.
 
-                    Buyer persona: Artist/designer who creates original artwork, wants to sell on merchandise. Not
-                    tech-savvy.
+                    Buyer persona: Artist/designer who creates original artwork, wants to sell on merchandise. Not  tech-savvy.
 
                     Seller persona: Patient developer who explains tech simply.
 
@@ -1781,17 +1812,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller reassures about technical complexity being handled
                     - Discussion of branding and design upload process
                     - Buyer relieved that it's simpler than expected
-                    - Order placed with focus on branding needs
-
-                    Focus on translating tech to non-tech language.
+                    - Order placed with focus on branding needs  Focus on translating tech to non-tech language.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #14: Store Migration Request</div>
                     Generate a chat about migrating an existing store to Shopify.
 
-                    Buyer persona: Business owner currently on WooCommerce, frustrated with issues, wants to move to
-                    Shopify.
+                    Buyer persona: Business owner currently on WooCommerce, frustrated with issues, wants to move to  Shopify.
 
                     Seller persona: Developer experienced with migrations, explains process clearly.
 
@@ -1802,9 +1830,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller explains migration process step by step
                     - Discussion about timeline (2-3 weeks) and potential issues
                     - Buyer asks about downtime during migration
-                    - End with request for detailed migration plan/proposal
-
-                    Show expertise in migration-specific concerns.
+                    - End with request for detailed migration plan/proposal  Show expertise in migration-specific concerns.
                 </div>
 
                 <div class="prompt-box">
@@ -1824,9 +1850,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer shares conversion rate concerns
                     - Discussion about keeping SEO rankings during redesign
                     - Quote for full redesign with timeline
-                    - Buyer asks about A/B testing post-launch
-
-                    Show consultative sales approach, not just order-taking.
+                    - Buyer asks about A/B testing post-launch  Show consultative sales approach, not just order-taking.
                 </div>
             </section>
 
@@ -1841,8 +1865,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     <div class="prompt-header">Prompt #16: Enterprise/Large Business Client</div>
                     Generate a chat with a larger business with more formal requirements.
 
-                    Buyer persona: Operations manager at established company (500+ employees), needs vendor approval
-                    process, has legal requirements.
+                    Buyer persona: Operations manager at established company (500+ employees), needs vendor approval  process, has legal requirements.
 
                     Seller persona: Professional developer accustomed to corporate clients.
 
@@ -1863,8 +1886,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     <div class="prompt-header">Prompt #17: Angry Client - Complaint Handling</div>
                     Generate a chat where a client is unhappy with delivered work.
 
-                    Buyer persona: Frustrated client who received work that doesn't match expectations. Emotional but
-                    not abusive.
+                    Buyer persona: Frustrated client who received work that doesn't match expectations. Emotional but  not abusive.
 
                     Seller persona: Calm, professional, solution-focused despite criticism.
 
@@ -1876,17 +1898,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Resolution offered: immediate fixes + extra revision round
                     - Client calms down as they feel heard
                     - End with concrete action plan and timeline for fixes
-                    - Show emotion de-escalation through the conversation
-
-                    Most important: show professional complaint resolution.
+                    - Show emotion de-escalation through the conversation  Most important: show professional complaint resolution.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #18: Upsell During Project</div>
                     Generate a chat where seller identifies upsell opportunity mid-project.
 
-                    Context: Basic Shopify store project in progress. Seller notices client could benefit from
-                    additional services.
+                    Context: Basic Shopify store project in progress. Seller notices client could benefit from  additional services.
 
                     Buyer persona: Open-minded, appreciates suggestions that help their business.
 
@@ -1897,9 +1916,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Natural, helpful tone (not pushy sales)
                     - Buyer interested in one option, considers others for later
                     - Discussion of adding service to current project vs. future project
-                    - Small additional sale ($200-400) closes
-
-                    Show value-based upselling, not pushy tactics.
+                    - Small additional sale ($200-400) closes  Show value-based upselling, not pushy tactics.
                 </div>
 
                 <div class="prompt-box">
@@ -1919,17 +1936,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller explains: 30-day support included, optional maintenance package
                     - Buyer gives positive feedback/testimonial offer
                     - Discussion about store going live
-                    - Warm project conclusion
-
-                    Show complete, professional project closure.
+                    - Warm project conclusion  Show complete, professional project closure.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #20: Referral Inquiry from Happy Client's Friend</div>
                     Generate a chat from a referral lead.
 
-                    Buyer persona: Friend of a previous client who saw their store, wants similar service. Comes with
-                    trust already built.
+                    Buyer persona: Friend of a previous client who saw their store, wants similar service. Comes with  trust already built.
 
                     Seller persona: Appreciative of referral, offers referral discount.
 
@@ -1941,9 +1955,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Discussion about similar project for buyer's niche
                     - Referral discount offered (10% or $100 off)
                     - Quick quote and agreement
-                    - Buyer asks when they can start
-
-                    Show how referral conversations are warmer and faster.
+                    - Buyer asks when they can start  Show how referral conversations are warmer and faster.
                 </div>
             </section>
 
@@ -1985,8 +1997,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     <div class="prompt-header">Prompt #22: Banner/Slider Update ($50)</div>
                     Generate a chat for a simple homepage banner update request.
 
-                    Buyer persona: Small business owner who has new promotional images and needs them added to their
-                    Shopify slider. Budget: $50.
+                    Buyer persona: Small business owner who has new promotional images and needs them added to their  Shopify slider. Budget: $50.
 
                     Seller persona: Quick, helpful, gets straight to the point.
 
@@ -1997,17 +2008,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - $50 quote, same-day or next-day delivery
                     - Buyer sends files via link
                     - Quick confirmation and payment
-                    - Super casual, minimal back-and-forth
-
-                    Show a micro-task transaction.
+                    - Super casual, minimal back-and-forth  Show a micro-task transaction.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #23: Speed Optimization ($99)</div>
                     Generate a chat for a Shopify speed optimization service.
 
-                    Buyer persona: Store owner frustrated with slow load times. Saw competitor offering speed
-                    optimization. Has $100 budget.
+                    Buyer persona: Store owner frustrated with slow load times. Saw competitor offering speed  optimization. Has $100 budget.
 
                     Seller persona: Technical but explains in simple terms.
 
@@ -2015,14 +2023,11 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - 5-6 messages each side
                     - Buyer: "My store is loading so slow, customers are leaving. Can you speed it up?"
                     - Seller asks for store URL to audit
-                    - Brief diagnosis shared: "I can see some quick wins - image optimization, app cleanup, code
-                    minification"
+                    - Brief diagnosis shared: "I can see some quick wins - image optimization, app cleanup, code  minification"
                     - $99 quote for basic speed boost
                     - 2-3 day timeline
                     - Buyer agrees quickly due to frustration with current speed
-                    - End with order
-
-                    Show technical competence without overcomplicating.
+                    - End with order  Show technical competence without overcomplicating.
                 </div>
 
                 <div class="prompt-box">
@@ -2042,17 +2047,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Discussion about formatting requirements
                     - Buyer sends files, seller confirms receipt
                     - 3-4 day timeline
-                    - Quick agreement
-
-                    Show a practical, time-saving service.
+                    - Quick agreement  Show a practical, time-saving service.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #25: Fix Broken Feature ($60)</div>
                     Generate a chat for fixing a broken store feature.
 
-                    Buyer persona: Panicked store owner. Something broke on their site. "Add to cart button not
-                    working!" Needs urgent fix.
+                    Buyer persona: Panicked store owner. Something broke on their site. "Add to cart button not  working!" Needs urgent fix.
 
                     Seller persona: Calm troubleshooter.
 
@@ -2064,17 +2066,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - $60 emergency fix quote
                     - Same-day fix promised
                     - Buyer relieved and agrees immediately
-                    - Very short time gaps (1-2 minutes) showing urgency
-
-                    Show urgent support and quick resolution.
+                    - Very short time gaps (1-2 minutes) showing urgency  Show urgent support and quick resolution.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #26: Mobile Menu Customization ($85)</div>
                     Generate a chat for mobile menu styling update.
 
-                    Buyer persona: Store owner who tested their site on phone and hates how the menu looks. Wants a
-                    cleaner mobile menu.
+                    Buyer persona: Store owner who tested their site on phone and hates how the menu looks. Wants a  cleaner mobile menu.
 
                     Seller persona: Responsive design specialist.
 
@@ -2086,39 +2085,32 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - $85 quote for custom mobile menu styling
                     - 2-3 day turnaround
                     - Quick agreement
-                    - Casual tone
-
-                    Show a common mobile-focused request.
+                    - Casual tone  Show a common mobile-focused request.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #27: Install & Configure App ($45)</div>
                     Generate a chat for app installation and configuration.
 
-                    Buyer persona: Store owner who bought a Shopify app but can't figure out how to set it up. Needs
-                    help configuring it.
+                    Buyer persona: Store owner who bought a Shopify app but can't figure out how to set it up. Needs  help configuring it.
 
                     Seller persona: Helpful, patient with non-tech clients.
 
                     Requirements:
                     - 4-5 messages each side
-                    - Buyer: "I bought this reviews app but I can't figure out how to make it look right on my product
-                    pages"
+                    - Buyer: "I bought this reviews app but I can't figure out how to make it look right on my product  pages"
                     - Seller asks which app and what they want it to look like
                     - $45 quote for install + basic configuration
                     - Same-day service
                     - Buyer grateful for the help
-                    - Quick transaction
-
-                    Show helping a non-tech client.
+                    - Quick transaction  Show helping a non-tech client.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #28: Add New Page ($65)</div>
                     Generate a chat for adding a single new page to Shopify store.
 
-                    Buyer persona: Store owner who needs a "Size Guide" or "Shipping Info" page added with content
-                    they'll provide.
+                    Buyer persona: Store owner who needs a "Size Guide" or "Shipping Info" page added with content  they'll provide.
 
                     Seller persona: Efficient, gets details needed.
 
@@ -2129,9 +2121,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - $65 quote, includes adding to navigation
                     - Next-day delivery
                     - Buyer sends content
-                    - Confirmation and done
-
-                    Simple page addition request.
+                    - Confirmation and done  Simple page addition request.
                 </div>
 
                 <div class="prompt-box">
@@ -2145,23 +2135,19 @@ IMPORTANT PLATFORM REQUIREMENTS:
 
                     Requirements:
                     - 5-6 messages each side
-                    - Buyer: "I want a popup to collect emails. I have Klaviyo but don't know how to connect it to a
-                    popup"
+                    - Buyer: "I want a popup to collect emails. I have Klaviyo but don't know how to connect it to a  popup"
                     - Seller explains: can use Klaviyo's built-in form or custom popup
                     - Discussion about design (simple, matches store)
                     - $55 quote for setup and styling
                     - Same-day setup
-                    - Buyer agrees, shares Klaviyo access
-
-                    Show marketing integration service.
+                    - Buyer agrees, shares Klaviyo access  Show marketing integration service.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #30: Social Media Icons Update ($40)</div>
                     Generate a chat for updating/adding social media icons to footer.
 
-                    Buyer persona: Store owner who started new social accounts and needs links added to their store
-                    footer.
+                    Buyer persona: Store owner who started new social accounts and needs links added to their store  footer.
 
                     Seller persona: Quick, efficient for small tasks.
 
@@ -2171,9 +2157,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: "Easy! $40 and I can have it done within a few hours"
                     - Buyer provides account links
                     - Quick confirmation and payment
-                    - Super short conversation
-
-                    Smallest possible job, quick transaction.
+                    - Super short conversation  Smallest possible job, quick transaction.
                 </div>
             </section>
 
@@ -2202,8 +2186,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
 
                     Requirements:
                     - 6-8 messages each side
-                    - Buyer asks: "what do you need from me?", "how does shopify even work?", "can i sell on amazon
-                    too?"
+                    - Buyer asks: "what do you need from me?", "how does shopify even work?", "can i sell on amazon  too?"
                     - Seller guides patiently through the process
                     - Buyer eventually understands and places order
                     - Price: ~$100 for basic setup
@@ -2249,20 +2232,16 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer slowly figures out what they need with help
                     - Seller suggests a package that fits
                     - Order placed after clarity reached
-                    - Include longer gaps (5-10 minutes) showing buyer thinking
-
-                    Seller guides confused buyer to clarity and order.
+                    - Include longer gaps (5-10 minutes) showing buyer thinking  Seller guides confused buyer to clarity and order.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #34: Bargain Hunter (But Still Orders)</div>
                     Generate a chat with a price-conscious buyer who tries to negotiate.
 
-                    Buyer persona: Always looking for deals. Asks "is that your best price?", mentions competitors, asks
-                    about discounts. Not offensive, just frugal.
+                    Buyer persona: Always looking for deals. Asks "is that your best price?", mentions competitors, asks  about discounts. Not offensive, just frugal.
 
-                    Seller persona: Polite but firm. Explains value instead of dropping price. Maybe offers small bonus
-                    instead of discount.
+                    Seller persona: Polite but firm. Explains value instead of dropping price. Maybe offers small bonus  instead of discount.
 
                     Requirements:
                     - 6-8 messages each side
@@ -2270,9 +2249,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller doesn't drop price but offers: "I can add X for free"
                     - Buyer appreciates the extra value
                     - Order placed at original price with bonus
-                    - Professional handling of price objections
-
-                    Bargain hunter who orders without discount.
+                    - Professional handling of price objections  Bargain hunter who orders without discount.
                 </div>
 
                 <div class="prompt-box">
@@ -2286,8 +2263,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
 
                     Requirements:
                     - 10-12 messages each side (lots of questions)
-                    - Buyer asks about: refunds, what if I don't like it, guarantees, revisions included, support after
-                    delivery
+                    - Buyer asks about: refunds, what if I don't like it, guarantees, revisions included, support after  delivery
                     - Seller answers each patiently
                     - Buyer eventually feels comfortable
                     - Order placed after all concerns addressed
@@ -2311,17 +2287,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller gives full responses but buyer just says "ok" or "sounds good"
                     - Quick agreement, minimal discussion
                     - Order placed with "ok send payment link"
-                    - Short time gaps
-
-                    Ultra-casual buyer who orders with minimal words.
+                    - Short time gaps  Ultra-casual buyer who orders with minimal words.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #37: The Researcher</div>
                     Generate a chat with a buyer who has done extensive research before reaching out.
 
-                    Buyer persona: Already knows what Shopify is, understands themes, has specific requirements. Asks
-                    intelligent questions. Comes prepared.
+                    Buyer persona: Already knows what Shopify is, understands themes, has specific requirements. Asks  intelligent questions. Comes prepared.
 
                     Seller persona: Appreciates the prepared buyer, gets straight to specifics.
 
@@ -2331,9 +2304,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller confirms scope and quotes directly
                     - Minimal back-and-forth needed
                     - Quick order placement
-                    - Professional, efficient exchange
-
-                    Prepared buyer who orders quickly.
+                    - Professional, efficient exchange  Prepared buyer who orders quickly.
                 </div>
 
                 <div class="prompt-box">
@@ -2351,9 +2322,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller shares: portfolio link, past client reviews, explains process
                     - Buyer slowly gains confidence
                     - Order placed after trust established
-                    - Include moments of hesitation from buyer
-
-                    Build trust with nervous buyer who orders.
+                    - Include moments of hesitation from buyer  Build trust with nervous buyer who orders.
                 </div>
 
                 <div class="prompt-box">
@@ -2371,17 +2340,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller focuses on own strengths: support, quality, speed
                     - Buyer appreciates directness
                     - Order placed based on value perception
-                    - Professional comparison handling
-
-                    Buyer comparing options who chooses you.
+                    - Professional comparison handling  Buyer comparing options who chooses you.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #40: Late Night Buyer</div>
                     Generate a chat that starts at 11 PM with someone who can't sleep and is working on their business.
 
-                    Buyer persona: Apologizes for late message, excited about their business idea, might be slightly
-                    rambling due to tiredness.
+                    Buyer persona: Apologizes for late message, excited about their business idea, might be slightly  rambling due to tiredness.
 
                     Seller persona: Responds next morning (realistic), professional.
 
@@ -2391,9 +2357,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller responds at 9:15 AM next day
                     - Conversation continues normally
                     - Order placed during daytime conversation
-                    - Show realistic overnight delay
-
-                    Late night inquiry that converts next day.
+                    - Show realistic overnight delay  Late night inquiry that converts next day.
                 </div>
 
                 <div class="prompt-box">
@@ -2405,9 +2369,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     PART 1 - Order Placement:
                     - Buyer asks about service in few words
                     - Quick quote and agreement
-                    - Order placed
-
-                    PART 2 - Order Update (3 days later):
+                    - Order placed  PART 2 - Order Update (3 days later):
                     - Seller sends update message with preview
                     - Buyer: "looks good", "one change", describes change briefly
                     - Seller confirms
@@ -2420,8 +2382,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     <div class="prompt-header">Prompt #42: ESL/Non-Native English Speaker</div>
                     Generate a chat with buyer whose English isn't perfect but totally understandable.
 
-                    Buyer persona: Non-native English speaker, occasional grammar mistakes, might use wrong words but
-                    meaning is clear. Polite and eager.
+                    Buyer persona: Non-native English speaker, occasional grammar mistakes, might use wrong words but  meaning is clear. Polite and eager.
 
                     Seller persona: Professional, understands perfectly, doesn't correct them, responds naturally.
 
@@ -2431,17 +2392,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller understands and responds normally
                     - Don't make fun or point out errors
                     - Clear communication despite language
-                    - Order placed successfully
-
-                    Non-native speaker buyer who orders.
+                    - Order placed successfully  Non-native speaker buyer who orders.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #43: The Emoji User 😊🙏💕</div>
                     Generate a chat with buyer who uses lots of emojis.
 
-                    Buyer persona: Very friendly, uses 2-3 emojis per message. Expressive, warm, positive vibes. "That
-                    sounds amazing!! 🙌💕"
+                    Buyer persona: Very friendly, uses 2-3 emojis per message. Expressive, warm, positive vibes. "That  sounds amazing!! 🙌💕"
 
                     Seller persona: Professional but can use occasional emoji to match energy.
 
@@ -2451,9 +2409,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller can use 1-2 emojis in responses
                     - Positive, upbeat conversation
                     - Easy order placement
-                    - Fun, light tone throughout
-
-                    Emoji-loving buyer who happily orders.
+                    - Fun, light tone throughout  Emoji-loving buyer who happily orders.
                 </div>
 
                 <div class="prompt-box">
@@ -2471,9 +2427,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - 1-2 small suggestions (move this, change that text)
                     - Seller confirms quick adjustments
                     - Buyer appreciates the work
-                    - Positive energy throughout
-
-                    Happy mid-project update conversation.
+                    - Positive energy throughout  Happy mid-project update conversation.
                 </div>
 
                 <div class="prompt-box">
@@ -2491,9 +2445,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Mentions: need to get approval, will send invoice to accounts
                     - Seller accommodates: formal quote, invoice, etc.
                     - Order placed after "I got approval from my manager"
-                    - Professional B2B tone
-
-                    B2B buyer who orders after internal approval.
+                    - Professional B2B tone  B2B buyer who orders after internal approval.
                 </div>
 
                 <div class="prompt-box">
@@ -2510,9 +2462,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: acknowledges, asks for screenshot, offers to fix immediately
                     - Fix is done quickly
                     - Buyer grateful: "Thanks so much for the quick fix!"
-                    - Ends with buyer mentioning they'll recommend to friends
-
-                    Turn small complaint into positive outcome.
+                    - Ends with buyer mentioning they'll recommend to friends  Turn small complaint into positive outcome.
                 </div>
 
                 <div class="prompt-box">
@@ -2529,17 +2479,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer: 8:22 PM "Just saw this! Looking great"
                     - Quick exchange about next steps
                     - Buyer: "Let's chat more tomorrow"
-                    - Show realistic evening update
-
-                    Late evening progress update exchange.
+                    - Show realistic evening update  Late evening progress update exchange.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #48: Complete Newbie Asking Obvious Questions</div>
                     Generate a chat where buyer asks questions with obvious answers.
 
-                    Buyer persona: Never done this before. Asks things like "Do I need to pay?", "How do you know what I
-                    want?", "Will it work on phones?"
+                    Buyer persona: Never done this before. Asks things like "Do I need to pay?", "How do you know what I  want?", "Will it work on phones?"
 
                     Seller persona: Infinitely patient, never condescending.
 
@@ -2570,17 +2517,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer: "Great start! I have some feedback:" lists 4 items
                     - Seller confirms all changes understood
                     - Discussion about timeline for revisions
-                    - Clear next steps agreed
-
-                    Standard revision discussion, professional handling.
+                    - Clear next steps agreed  Standard revision discussion, professional handling.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #50: Typo-Heavy Buyer</div>
                     Generate a chat with buyer who types fast and makes typos.
 
-                    Buyer persona: Clearly typing on phone, lots of typos: "shopiyf", "websit", "teh". Meaning always
-                    clear despite errors.
+                    Buyer persona: Clearly typing on phone, lots of typos: "shopiyf", "websit", "teh". Meaning always  clear despite errors.
 
                     Seller persona: Never mentions typos, understands perfectly.
 
@@ -2590,17 +2534,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller responds normally to content, not typos
                     - Natural conversation despite errors
                     - Order placed normally
-                    - Don't mock the typos
-
-                    Typo-heavy buyer who orders successfully.
+                    - Don't mock the typos  Typo-heavy buyer who orders successfully.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #51: Multiple Decision Makers</div>
                     Generate a chat where buyer needs to consult partner/spouse.
 
-                    Buyer persona: Interested but "let me check with my husband/wife/partner" type. Comes back after
-                    discussion.
+                    Buyer persona: Interested but "let me check with my husband/wife/partner" type. Comes back after  discussion.
 
                     Seller persona: Understanding, patient about the delay.
 
@@ -2611,9 +2552,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - [Time gap: 4 hours or next day]
                     - Returns: "We discussed and we'd like to proceed!"
                     - Order placed
-                    - Show realistic decision gap
-
-                    Multi-person decision that converts.
+                    - Show realistic decision gap  Multi-person decision that converts.
                 </div>
 
                 <div class="prompt-box">
@@ -2631,17 +2570,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer excited: "This looks AMAZING!"
                     - Discussion about making store live
                     - Buyer asks about future support options
-                    - Ends with thanks and mention of leaving review
-
-                    Complete happy delivery conversation.
+                    - Ends with thanks and mention of leaving review  Complete happy delivery conversation.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #53: Voice Note Apology Buyer</div>
                     Generate a chat where buyer mentions they wish they could send voice note.
 
-                    Buyer persona: Prefers voice over text, mentions "I'll type it out but wish I could just send a
-                    voice message lol"
+                    Buyer persona: Prefers voice over text, mentions "I'll type it out but wish I could just send a  voice message lol"
 
                     Seller persona: Accommodating, maybe suggests a quick call if complex.
 
@@ -2651,9 +2587,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: "No problem! If easier, we could do a quick call?"
                     - Buyer continues with text anyway
                     - Normal order placement
-                    - Casual, relatable exchange
-
-                    Buyer who prefers voice but orders via text.
+                    - Casual, relatable exchange  Buyer who prefers voice but orders via text.
                 </div>
 
                 <div class="prompt-box">
@@ -2671,9 +2605,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer: "hey, finally have time to work on my store on the weekend"
                     - Normal inquiry and quote
                     - Order placed same day
-                    - Relaxed pacing
-
-                    Weekend project inquiry and order.
+                    - Relaxed pacing  Weekend project inquiry and order.
                 </div>
 
                 <div class="prompt-box">
@@ -2690,9 +2622,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer: "So excited! Can't wait to launch"
                     - Brief discussion about go-live process
                     - Seller confirms next steps
-                    - Quick, positive exchange
-
-                    Near-completion update conversation.
+                    - Quick, positive exchange  Near-completion update conversation.
                 </div>
             </section>
 
@@ -2714,8 +2644,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     <div class="prompt-header">Prompt #56: Grumpy But Orders</div>
                     Generate a chat with a no-nonsense, slightly grumpy buyer.
 
-                    Buyer persona: Doesn't do small talk. Direct, blunt, slightly rude but not aggressive. "Just tell me
-                    the price" type. Not mean, just... grumpy.
+                    Buyer persona: Doesn't do small talk. Direct, blunt, slightly rude but not aggressive. "Just tell me  the price" type. Not mean, just... grumpy.
 
                     Seller persona: Matches directness without being cold, professional.
 
@@ -2725,9 +2654,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - No pleasantries from buyer
                     - Seller stays polite but keeps answers short
                     - Quick order with no fluff
-                    - Efficient, no-nonsense transaction
-
-                    Grumpy buyer who orders quickly.
+                    - Efficient, no-nonsense transaction  Grumpy buyer who orders quickly.
                 </div>
 
                 <div class="prompt-box">
@@ -2745,17 +2672,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: "No problem at all! Yes, I'm still available"
                     - Quick recap of previous discussion
                     - Order placed this time
-                    - Show professional handling of ghosts
-
-                    Ghost who returns and buys.
+                    - Show professional handling of ghosts  Ghost who returns and buys.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #58: Mobile-Only Typer</div>
                     Generate a chat with someone clearly typing on phone during commute or lunch break.
 
-                    Buyer persona: Short messages, autocorrect errors, gaps (clearly doing other things), "sorry in a
-                    meeting will reply in 10"
+                    Buyer persona: Short messages, autocorrect errors, gaps (clearly doing other things), "sorry in a  meeting will reply in 10"
 
                     Seller persona: Patient with sporadic responses.
 
@@ -2765,17 +2689,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer: "sry in meeting", "back now", "ok thats fine" autocorrect issues
                     - Conversation fragmented but still reaches order
                     - Seller doesn't rush or pressure
-                    - Order placed despite spotty communication
-
-                    Mobile typer during busy day who orders.
+                    - Order placed despite spotty communication  Mobile typer during busy day who orders.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #59: The "My Friend Said..." Buyer</div>
                     Generate a chat where buyer was referred by a friend but misremembers details.
 
-                    Buyer persona: "My friend said you charge $50" (friend actually paid $150 for more work). Confused
-                    about what friend actually got.
+                    Buyer persona: "My friend said you charge $50" (friend actually paid $150 for more work). Confused  about what friend actually got.
 
                     Seller persona: Kindly clarifies without making them feel bad.
 
@@ -2785,9 +2706,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: "That was likely just the [basic service]. Full stores start at..."
                     - Buyer: "Oh! That makes sense"
                     - Order placed for what buyer actually needs
-                    - Handle misunderstanding gracefully
-
-                    Clarify referral confusion, close sale.
+                    - Handle misunderstanding gracefully  Clarify referral confusion, close sale.
                 </div>
 
                 <div class="prompt-box">
@@ -2804,17 +2723,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: thanks for catching it, will fix immediately
                     - Quick discussion about the issue
                     - Seller confirms fix done (or ETA)
-                    - Buyer appreciates responsiveness
-
-                    Bug report and quick resolution.
+                    - Buyer appreciates responsiveness  Bug report and quick resolution.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #61: Teen/Young Entrepreneur</div>
                     Generate a chat with a young buyer (18-20) starting their first business.
 
-                    Buyer persona: Young, enthusiastic, uses Gen-Z language, limited budget but motivated. "no cap this
-                    looks fire 🔥"
+                    Buyer persona: Young, enthusiastic, uses Gen-Z language, limited budget but motivated. "no cap this  looks fire 🔥"
 
                     Seller persona: Relatable but professional, works with their budget.
 
@@ -2824,9 +2740,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller understands without mimicking
                     - Discussion about budget-friendly options
                     - Buyer excited about their hustle
-                    - Order placed within their means
-
-                    Young entrepreneur who orders.
+                    - Order placed within their means  Young entrepreneur who orders.
                 </div>
 
                 <div class="prompt-box">
@@ -2844,17 +2758,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller responds professionally
                     - Discussion about "scope of work", "deliverables", "timelines"
                     - Formal agreement and order
-                    - Clean, professional exchange
-
-                    Corporate-speak buyer who orders.
+                    - Clean, professional exchange  Corporate-speak buyer who orders.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #63: The Skeptic Turned Believer</div>
                     Generate a chat where initially skeptical buyer becomes convinced.
 
-                    Buyer persona: Starts doubtful: "This seems too good to be true", "What's the catch?" Gradually
-                    convinced by seller's transparency.
+                    Buyer persona: Starts doubtful: "This seems too good to be true", "What's the catch?" Gradually  convinced by seller's transparency.
 
                     Seller persona: Open, honest, addresses doubts directly.
 
@@ -2864,9 +2775,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller shares: past work, reviews, process explanation
                     - Natural progression from doubt to trust
                     - Buyer: "Okay, I'm convinced. Let's do this"
-                    - Order placed after trust built
-
-                    Skeptic who becomes believer and orders.
+                    - Order placed after trust built  Skeptic who becomes believer and orders.
                 </div>
 
                 <div class="prompt-box">
@@ -2883,9 +2792,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: "Great to hear from you! What can I help with now?"
                     - Quick scope discussion (less detail needed, trust exists)
                     - Maybe mention returning customer discount
-                    - Fast order placement
-
-                    Returning happy client who orders again.
+                    - Fast order placement  Returning happy client who orders again.
                 </div>
 
                 <div class="prompt-box">
@@ -2902,9 +2809,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: "No problem at all! Easy change"
                     - Quick confirmation
                     - Buyer relieved it was easy
-                    - Shows flexibility
-
-                    Simple mid-project change request.
+                    - Shows flexibility  Simple mid-project change request.
                 </div>
 
                 <div class="prompt-box">
@@ -2921,9 +2826,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller explains: use platform order system for protection
                     - Brief platform education
                     - Buyer: "Oh that makes sense, so I click Order?"
-                    - Order placed through proper channel
-
-                    Guide confused buyer through platform.
+                    - Order placed through proper channel  Guide confused buyer through platform.
                 </div>
 
                 <div class="prompt-box">
@@ -2940,9 +2843,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller asks: What kind? Selling products? How many? Budget?
                     - Slowly extract all needed info
                     - Eventually clear scope emerges
-                    - Order placed after clarification
-
-                    Extract details from vague buyer, close sale.
+                    - Order placed after clarification  Extract details from vague buyer, close sale.
                 </div>
 
                 <div class="prompt-box">
@@ -2959,9 +2860,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: that's beyond original scope, quotes for addition
                     - Buyer agrees to additional cost
                     - Added to project
-                    - Professional scope expansion
-
-                    Add-on sale during project.
+                    - Professional scope expansion  Add-on sale during project.
                 </div>
 
                 <div class="prompt-box">
@@ -2978,9 +2877,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Through discussion, realizes needs more work
                     - Seller: "Sounds like you might benefit from a full refresh"
                     - Buyer: "You know what, you're right"
-                    - Orders full service instead of quick fix
-
-                    Quick question that becomes full order.
+                    - Orders full service instead of quick fix  Quick question that becomes full order.
                 </div>
 
                 <div class="prompt-box">
@@ -2997,9 +2894,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Show timestamps clearly
                     - Conversation reaches conclusion despite gaps
                     - Order placed eventually
-                    - Realistic varied response pattern
-
-                    Inconsistent responder who orders.
+                    - Realistic varied response pattern  Inconsistent responder who orders.
                 </div>
 
                 <div class="prompt-box">
@@ -3016,9 +2911,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: offers milestone payments, regular updates, support guarantee
                     - Buyer feels safer
                     - Order placed with discussed protections
-                    - Rebuild trust conversation
-
-                    Win over burned buyer with process.
+                    - Rebuild trust conversation  Win over burned buyer with process.
                 </div>
 
                 <div class="prompt-box">
@@ -3035,17 +2928,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Buyer asks: "Is everything SEO ready?", "What about mobile?"
                     - Seller confirms all pre-launch checks done
                     - Discussion about going live process
-                    - Green light to launch
-
-                    Pre-launch final check conversation.
+                    - Green light to launch  Pre-launch final check conversation.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #73: All Caps Excitement</div>
                     Generate a chat with buyer who types in excitement caps.
 
-                    Buyer persona: REALLY EXCITED about their business. Types in caps occasionally. "OMG I'M SO
-                    EXCITED!!" Not angry, just enthusiastic.
+                    Buyer persona: REALLY EXCITED about their business. Types in caps occasionally. "OMG I'M SO  EXCITED!!" Not angry, just enthusiastic.
 
                     Seller persona: Matches energy appropriately.
 
@@ -3055,9 +2945,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller responds warmly, maybe an emoji
                     - Fun, positive exchange
                     - Easy order placement
-                    - Show genuine enthusiasm
-
-                    Enthusiastic caps buyer who orders.
+                    - Show genuine enthusiasm  Enthusiastic caps buyer who orders.
                 </div>
 
                 <div class="prompt-box">
@@ -3074,9 +2962,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller asks clear yes/no questions
                     - Minimal but effective communication
                     - Order placed with "ok go ahead"
-                    - Ultra-efficient transaction
-
-                    Silent type who orders with minimal words.
+                    - Ultra-efficient transaction  Silent type who orders with minimal words.
                 </div>
 
                 <div class="prompt-box">
@@ -3093,17 +2979,14 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Mix of praise and minor fixes needed
                     - Seller appreciates detailed testing
                     - Timeline for addressing items
-                    - Clear action plan
-
-                    Testing feedback discussion.
+                    - Clear action plan  Testing feedback discussion.
                 </div>
 
                 <div class="prompt-box">
                     <div class="prompt-header">Prompt #76: International Buyer</div>
                     Generate a chat mentioning currency conversion.
 
-                    Buyer persona: From another country, asks about paying in their currency, concerned about conversion
-                    rates.
+                    Buyer persona: From another country, asks about paying in their currency, concerned about conversion  rates.
 
                     Seller persona: Helps navigate international payment.
 
@@ -3113,9 +2996,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller explains payment options
                     - Discussion about any international considerations
                     - Order placed with payment method sorted
-                    - Handle international logistics
-
-                    International buyer who orders.
+                    - Handle international logistics  International buyer who orders.
                 </div>
 
                 <div class="prompt-box">
@@ -3132,9 +3013,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller confirms details quickly
                     - Maybe a small change/update
                     - Fast order placement
-                    - Repeat business efficiency
-
-                    Quick reorder from returning client.
+                    - Repeat business efficiency  Quick reorder from returning client.
                 </div>
 
                 <div class="prompt-box">
@@ -3153,9 +3032,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller: "Got it! I see the circled areas..."
                     - Confirms each marked item
                     - Timeline for changes
-                    - Visual feedback handling
-
-                    Screenshot-based feedback discussion.
+                    - Visual feedback handling  Screenshot-based feedback discussion.
                 </div>
 
                 <div class="prompt-box">
@@ -3172,9 +3049,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     - Seller explains pros/cons, makes recommendations
                     - Buyer chooses based on advice
                     - Order placed with agreed features
-                    - Show consultative selling
-
-                    Help indecisive buyer choose, close sale.
+                    - Show consultative selling  Help indecisive buyer choose, close sale.
                 </div>
 
                 <div class="prompt-box">
@@ -3184,19 +3059,11 @@ IMPORTANT PLATFORM REQUIREMENTS:
                     Buyer persona: Normal buyer, goes through full project lifecycle.
 
                     PART 1 - Inquiry (few messages):
-                    - Initial question, quick scope, quote given
-
-                    PART 2 - Order Placement:
-                    - Agreement, payment discussion
-
-                    PART 3 - Update (3 days later):
-                    - Seller shares progress, buyer gives feedback
-
-                    PART 4 - Delivery (5 days later):
+                    - Initial question, quick scope, quote given  PART 2 - Order Placement:
+                    - Agreement, payment discussion  PART 3 - Update (3 days later):
+                    - Seller shares progress, buyer gives feedback  PART 4 - Delivery (5 days later):
                     - Final delivery, buyer happy
-                    - End with thanks/review mention
-
-                    Show complete project communication lifecycle.
+                    - End with thanks/review mention  Show complete project communication lifecycle.
                 </div>
             </section>
 
@@ -3212,32 +3079,25 @@ IMPORTANT PLATFORM REQUIREMENTS:
 
                     <div class="message client">
                         <div class="sender">👤 Client</div>
-                        Hi, I'm interested in having a Shopify store built for my jewelry brand. We're looking for a
-                        luxury aesthetic with custom product pages. Do you have availability in January?
+                        Hi, I'm interested in having a Shopify store built for my jewelry brand. We're looking for a  luxury aesthetic with custom product pages. Do you have availability in January?
                         <div class="time">2:30 PM</div>
                     </div>
 
                     <div class="message seller">
                         <div class="sender">💼 Seller</div>
-                        Hello! Thank you for reaching out. Yes, I have availability starting January 8th. I'd love to
-                        learn more about your brand. Could you share your website or social media so I can get a sense
-                        of your aesthetic?
+                        Hello! Thank you for reaching out. Yes, I have availability starting January 8th. I'd love to  learn more about your brand. Could you share your website or social media so I can get a sense  of your aesthetic?
                         <div class="time">2:33 PM</div>
                     </div>
 
                     <div class="message client">
                         <div class="sender">👤 Client</div>
-                        Sure, here's our Instagram: @luxejewels. We're currently selling through Instagram DMs but want
-                        a proper store. Looking for something that feels high-end and trustworthy.
+                        Sure, here's our Instagram: @luxejewels. We're currently selling through Instagram DMs but want  a proper store. Looking for something that feels high-end and trustworthy.
                         <div class="time">2:36 PM</div>
                     </div>
 
                     <div class="message seller">
                         <div class="sender">💼 Seller</div>
-                        Beautiful pieces! I can definitely create something that matches this aesthetic. For a luxury
-                        jewelry store with custom product pages, professional design, and mobile optimization, you're
-                        looking at $2,200-$2,800 depending on final features. This includes 30 days of support
-                        post-launch. Shall I outline what's included?
+                        Beautiful pieces! I can definitely create something that matches this aesthetic. For a luxury  jewelry store with custom product pages, professional design, and mobile optimization, you're  looking at $2,200-$2,800 depending on final features. This includes 30 days of support  post-launch. Shall I outline what's included?
                         <div class="time">2:41 PM</div>
                     </div>
 
@@ -3257,9 +3117,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                         • Mobile-optimized design
                         • Payment gateway setup (Stripe/PayPal)
                         • Basic SEO setup
-                        • 30-day post-launch support
-
-                        Would you need any additional features like email popup signup or product reviews?
+                        • 30-day post-launch support  Would you need any additional features like email popup signup or product reviews?
                         <div class="time">2:48 PM</div>
                     </div>
 
@@ -3271,9 +3129,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
 
                     <div class="message seller">
                         <div class="sender">💼 Seller</div>
-                        Email popup is included at no extra cost! For reviews, I can integrate Loox or Judge.me (both
-                        have free tiers that work well). The integration is included, you'd just pay the app
-                        subscription directly to them.
+                        Email popup is included at no extra cost! For reviews, I can integrate Loox or Judge.me (both  have free tiers that work well). The integration is included, you'd just pay the app  subscription directly to them.
                         <div class="time">2:55 PM</div>
                     </div>
 
@@ -3293,10 +3149,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                         3. Design begins within 2 days of receiving your responses
                         4. You get a preview at Day 7 for feedback
                         5. Final delivery + launch assistance within 2-3 weeks
-                        6. Remaining 50% upon completion
-
-                        I'll send over the order details and payment link now. Looking forward to bringing your vision
-                        to life!
+                        6. Remaining 50% upon completion  I'll send over the order details and payment link now. Looking forward to bringing your vision  to life!
                         <div class="time">3:08 PM</div>
                     </div>
                 </div>
@@ -3314,9 +3167,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
 
                     <div class="message seller">
                         <div class="sender">💼 Seller</div>
-                        Hi! Happy to share your homepage preview is ready! 🎉 Here's the link: [PREVIEW_LINK] - Take
-                        your time reviewing and let me know your thoughts. Main areas to look at: hero section, featured
-                        products, and overall color feel.
+                        Hi! Happy to share your homepage preview is ready! 🎉 Here's the link: [PREVIEW_LINK] - Take  your time reviewing and let me know your thoughts. Main areas to look at: hero section, featured  products, and overall color feel.
                         <div class="time">10:15 AM</div>
                     </div>
 
@@ -3328,15 +3179,12 @@ IMPORTANT PLATFORM REQUIREMENTS:
 
                     <div class="message client">
                         <div class="sender">👤 Client</div>
-                        Okay I looked through everything. Overall I LOVE it, the layout is exactly what I envisioned. A
-                        few notes:
+                        Okay I looked through everything. Overall I LOVE it, the layout is exactly what I envisioned. A  few notes:
 
                         1. Can the hero text be a bit larger? Hard to read on mobile preview
                         2. The gold accent color looks a bit too yellow - can we try a warmer bronze?
                         3. Love the featured products section but can we add prices visible without clicking?
-                        4. About section might need a different photo, I'll send a new one
-
-                        That's it! Really impressed with the progress 😊
+                        4. About section might need a different photo, I'll send a new one  That's it! Really impressed with the progress 😊
                         <div class="time">10:42 AM</div>
                     </div>
 
@@ -3347,16 +3195,13 @@ IMPORTANT PLATFORM REQUIREMENTS:
                         1. ✅ Hero text - will increase by 15-20% and test on mobile
                         2. ✅ Gold to bronze - I'll create 2-3 bronze variations for you to choose
                         3. ✅ Prices on hover/visible - easy adjustment, will have it on all product cards
-                        4. ⏳ New photo - just send when ready and I'll swap it in
-
-                        I should have the revised preview ready by tomorrow afternoon!
+                        4. ⏳ New photo - just send when ready and I'll swap it in  I should have the revised preview ready by tomorrow afternoon!
                         <div class="time">10:47 AM</div>
                     </div>
 
                     <div class="message client">
                         <div class="sender">👤 Client</div>
-                        Perfect! Sending the new photo now. Also quick question - when will the product pages be ready
-                        to preview?
+                        Perfect! Sending the new photo now. Also quick question - when will the product pages be ready  to preview?
                         <div class="time">10:50 AM</div>
                     </div>
 
@@ -3365,8 +3210,7 @@ IMPORTANT PLATFORM REQUIREMENTS:
                         Got the photo - looks great!
 
                         Product pages are next on the list - you'll see them with the second preview in about 3-4 days.
-                        I'm designing them to match the homepage aesthetic with those luxury high-res gallery layouts we
-                        discussed.
+                        I'm designing them to match the homepage aesthetic with those luxury high-res gallery layouts we  discussed.
 
                         You're right on schedule! 👍
                         <div class="time">10:54 AM</div>
@@ -3421,10 +3265,57 @@ IMPORTANT PLATFORM REQUIREMENTS:
     </script>
 
     <script>
-        function toggleSidebar() {
-            document.querySelector('.sidebar').classList.toggle('open');
         }
     </script>
+    <script>
+
+    </script>
+
+    <script>
+        // ===== SIDEBAR TOGGLE FUNCTIONS =====
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        // Click outside to close sidebar
+        document.addEventListener('click', function(event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            var overlay = document.querySelector('.sidebar-overlay');
+            
+            if (!sidebar || !toggleBtn) return;
+            
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+            
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+        // ===== END SIDEBAR TOGGLE =====
+    </script>
+
 </body>
 
 </html>

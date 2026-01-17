@@ -51,7 +51,7 @@
             padding: 20px 0;
             display: flex;
             flex-direction: column;
-            z-index: 100;
+            z-index: 2000;
             border-right: 1px solid #334155;
         }
 
@@ -472,7 +472,7 @@
             display: none;
             position: fixed;
             top: 20px;
-            right: 20px;
+            left: 20px;
             z-index: 200;
             background: var(--primary);
             color: white;
@@ -573,10 +573,243 @@
                 padding: 20px;
             }
         }
+    
+        /* Mobile Header - Hamburger + Home */
+        .mobile-header {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+            z-index: 3000;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex;
+            }
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar.active, .sidebar.open {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+                padding-top: 70px !important;
+                width: 100%;
+            }
+            .header {
+                margin-top: 56px;
+            }
+        }
+
+    
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1999;
+        }
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+    
+        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+        @media (max-width: 768px) {
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+            .header h1 {
+                font-size: 1.5em !important;
+                margin-bottom: 5px !important;
+            }
+            .header .subtitle {
+                font-size: 0.9em !important;
+                margin-bottom: 10px !important;
+            }
+            .badge-row {
+                gap: 8px !important;
+                margin-top: 12px !important;
+            }
+            .badge {
+                padding: 5px 12px !important;
+                font-size: 0.75em !important;
+            }
+            .container {
+                padding: 10px !important;
+            }
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            .section h2 {
+                font-size: 1.2em !important;
+            }
+        }
+        /* ===== END MOBILE HEADER SIZE ===== */
+
+    
+        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+            .sidebar.active, .sidebar.open {
+                transform: translateX(0) !important;
+            }
+        }
+        /* ===== END SIDEBAR CLOSED ===== */
+
+    
+    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
+    .mobile-header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+        z-index: 9999;
+        padding: 0 12px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .mobile-menu-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .mobile-home-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #10B981;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 10px 16px;
+        background: rgba(16, 185, 129, 0.15);
+        border-radius: 10px;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        white-space: nowrap;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-header {
+            display: flex !important;
+        }
+        .sidebar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            height: 100vh !important;
+            width: 280px !important;
+            z-index: 9999 !important;
+            transform: translateX(-100%) !important;
+            transition: transform 0.3s ease !important;
+        }
+        .sidebar.active, .sidebar.open {
+            transform: translateX(0) !important;
+        }
+        .main-content {
+            margin-left: 0 !important;
+            padding-top: 70px !important;
+            width: 100% !important;
+        }
+    }
+    /* ========== END DEFINITIVE MOBILE FIX ========== */
+
     </style>
+    <link rel="stylesheet" href="assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
 </head>
 
 <body>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
 
     <button class="mobile-toggle">☰ Menu</button>
 
@@ -584,12 +817,17 @@
         <div class="sidebar-header">
             <h2>Let's build something remarkable.</h2>
         </div>
+        <div class="back-link" style="margin-top: 0; border-top: none; padding: 0 24px 20px; text-align: left;">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 500; font-size: 0.9rem;">
+                <span>←</span> Back to Dashboard
+            </a>
+        </div>
         <ul class="nav-menu">
             <li class="nav-item"><a href="#manifesto" class="nav-link active"><span class="nav-icon">🚀</span>
                     Manifesto</a></li>
-            <li class="nav-item"><a href="#critical" class="nav-link"><span class="nav-icon">🚨</span> Critical
-                    Rules</a></li>
-            <li class="nav-item"><a href="#hierarchy" class="nav-link"><span class="nav-icon">👥</span> Team & Roles</a>
+            <li class="nav-item"><a href="#critical" class="nav-link"><span class="nav-icon">🚨</span> Critical  Rules</a></li>
+            <li class="nav-item"><a href="#hierarchy" class="nav-link">📝 <span class="nav-icon">👥</span> Team & Roles</a>
             </li>
             <li class="nav-item"><a href="#attendance" class="nav-link"><span class="nav-icon">⏰</span> Hours &
                     Attendance</a></li>
@@ -607,9 +845,7 @@
             <li class="nav-item"><a href="#exit" class="nav-link"><span class="nav-icon">🚪</span> Exit Process</a></li>
             <li class="nav-item"><a href="#faq" class="nav-link"><span class="nav-icon">❓</span> FAQ</a></li>
         </ul>
-        <div class="back-link">
-            <a href="index.html">← Back to Dashboard</a>
-        </div>
+
     </nav>
 
     <main class="main-content">
@@ -628,13 +864,11 @@
         </div>
 
         <!-- PORTFOLIO CTA -->
-        <div
-            style="background: linear-gradient(135deg, #6d28d9 0%, #4c1d95 100%); color: white; padding: 20px 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(109, 40, 217, 0.25); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+        <div  style="background: linear-gradient(135deg, #6d28d9 0%, #4c1d95 100%); color: white; padding: 20px 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(109, 40, 217, 0.25); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
             <div style="flex: 1; min-width: 250px;">
                 <h3 style="margin: 0 0 5px 0; color: white; font-size: 1.25rem; border: none; padding: 0;">🚀 Deep Dive:
                     Explore Our Work</h3>
-                <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">Learn about our company going in depths to read
-                    about it. Explore our detailed portfolio.</p>
+                <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">Learn about our company going in depths to read  about it. Explore our detailed portfolio.</p>
             </div>
             <a href="https://Portfolio.digitalheroes.co.in" target="_blank"
                 style="background: white; color: #4c1d95; padding: 10px 24px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.9rem; white-space: nowrap; transition: transform 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"
@@ -656,8 +890,7 @@
                 <div class="manifesto-item">
                     <div class="manifesto-title">⚡ Talent is Irrelevant. Volume is Everything.</div>
                     <p>Think you lack skills? Good—now you know what to do. Put in 100 hours learning. Need more? Put in
-                        500. The people you admire didn't start with talent—they started with commitment. <strong>We
-                            don't care about your degree. We care about your OUTPUT.</strong></p>
+                        500. The people you admire didn't start with talent—they started with commitment. <strong>We  don't care about your degree. We care about your OUTPUT.</strong></p>
                 </div>
 
                 <div class="manifesto-item">
@@ -668,20 +901,17 @@
 
                 <div class="manifesto-item">
                     <div class="manifesto-title">🚀 Instant Reply = Respect</div>
-                    <p>When you respond quickly, you're saying: "I respect you, I'm reliable, I care." This isn't
-                        surveillance. It's about deciding to be someone people TRUST.</p>
+                    <p>When you respond quickly, you're saying: "I respect you, I'm reliable, I care." This isn't  surveillance. It's about deciding to be someone people TRUST.</p>
                 </div>
 
                 <div class="manifesto-item">
                     <div class="manifesto-title">🛡️ Protect Your Mindset</div>
-                    <p>Stop thinking negative thoughts about yourself or the work. If you catch yourself thinking
-                        negatively, kill those habits. Build character that helps your growth.</p>
+                    <p>Stop thinking negative thoughts about yourself or the work. If you catch yourself thinking  negatively, kill those habits. Build character that helps your growth.</p>
                 </div>
 
                 <div class="manifesto-item">
                     <div class="manifesto-title">💼 Clients aren't a Burden</div>
-                    <p>They are your opportunity. When a client succeeds, it's because of YOU. That responsibility is a
-                        gift. Approach every client like you're personally invested in their success.</p>
+                    <p>They are your opportunity. When a client succeeds, it's because of YOU. That responsibility is a  gift. Approach every client like you're personally invested in their success.</p>
                 </div>
 
                 <div class="manifesto-item">
@@ -692,25 +922,21 @@
 
                 <div class="manifesto-item" style="margin-bottom:0; border-top: 1px solid #334155; padding-top: 20px;">
                     <div class="manifesto-title">Work = Highest Priority</div>
-                    <p>There is nothing better in life than meaningful work. When your actions help someone, you feel
-                        satisfied automatically. Real satisfaction comes from BUILDING something that matters.</p>
+                    <p>There is nothing better in life than meaningful work. When your actions help someone, you feel  satisfied automatically. Real satisfaction comes from BUILDING something that matters.</p>
                 </div>
             </div>
 
             <!-- SOP OBSESSION BLOCK -->
             <div class="box box-purple" style="border: 2px solid var(--purple); background: #fdfbff;">
                 <h3 style="margin-top: 0; color: var(--purple);">📘 The SOP Obsession</h3>
-                <p><strong>What is an SOP?</strong> It stands for <em>Standard Operating Procedure</em>. But here, it's
-                    not just a guideline—it is the <strong>Law</strong>. It is the best known way to do a task
-                    perfectly.</p>
+                <p><strong>What is an SOP?</strong> It stands for <em>Standard Operating Procedure</em>. But here, it's  not just a guideline—it is the <strong>Law</strong>. It is the best known way to do a task  perfectly.</p>
 
                 <ul class="tick-list" style="margin-top: 15px;">
                     <li><strong>Why use it?</strong> It removes guessing. It guarantees speed, quality, and consistency.
                         It protects you from mistakes.</li>
                     <li><strong>Your Duty:</strong> You MUST follow your Role's SOP + the <strong>Daily SOP</strong>
                         everyday.</li>
-                    <li><strong>Evolve It:</strong> SOPs are not static. Found a better way? <strong>Suggest an
-                            improvement</strong>. We want your brain, not just your hands.</li>
+                    <li><strong>Evolve It:</strong> SOPs are not static. Found a better way? <strong>Suggest an  improvement</strong>. We want your brain, not just your hands.</li>
                 </ul>
             </div>
         </section>
@@ -732,8 +958,7 @@
                 </div>
                 <div class="rule-card" style="border-top-color: var(--danger);">
                     <h4>2. Data Breach</h4>
-                    <p>Sharing client info, source code, or passwords outside the company = <strong>Termination + Legal
-                            Action</strong>. We will pursue it.</p>
+                    <p>Sharing client info, source code, or passwords outside the company = <strong>Termination + Legal  Action</strong>. We will pursue it.</p>
                 </div>
                 <div class="rule-card" style="border-top-color: var(--danger);">
                     <h4>3. Moonlighting</h4>
@@ -758,8 +983,7 @@
                 <div class="rule-card" style="border-top-color: var(--danger);">
                     <h4>7. Conspiracy & Negativity</h4>
                     <p>Problems regarding any person must be shared <strong>ONLY with HR or Delhi Team</strong>.
-                        Conspiring against team members, negative talks, or public disrespect = <strong>Direct
-                            Termination + Legal Action</strong>. We foster positivity.</p>
+                        Conspiring against team members, negative talks, or public disrespect = <strong>Direct  Termination + Legal Action</strong>. We foster positivity.</p>
                 </div>
             </div>
         </section>
@@ -774,11 +998,10 @@
 
 
             <div class="box box-info">
-                <strong>⚠️ SUPREME AUTHORITY CLAUSE:</strong> The <strong>Delhi Team</strong> represents the highest
-                level of command. Their decisions override ALL other instructions.
+                <strong>⚠️ SUPREME AUTHORITY CLAUSE:</strong> The <strong>Delhi Team</strong> represents the highest  level of command. Their decisions override ALL other instructions.
             </div>
 
-            <h3 style="margin-top: 0;">Detailed Role Breakdown</h3>
+            <h3 style="margin-top: 0;">📝 Detailed Role Breakdown</h3>
 
             <table>
                 <tr>
@@ -1022,8 +1245,7 @@
             </div>
 
             <h3>How to Earn More</h3>
-            <p><strong>Income = Happy Clients × Skill × Speed</strong>. Want more money? Deliver more successful
-                projects. It's that simple.</p>
+            <p><strong>Income = Happy Clients × Skill × Speed</strong>. Want more money? Deliver more successful  projects. It's that simple.</p>
         </section>
 
         <!-- SECTION 7: COMMUNICATION -->
@@ -1035,7 +1257,7 @@
 
             <div class="rules-grid">
                 <div class="rule-card">
-                    <h4>Response Times</h4>
+                    <h4>↩️ Response Times</h4>
                     <ul class="tick-list">
                         <li><strong>Clients:</strong>
                             < 2 Hours</li>
@@ -1062,16 +1284,14 @@
                 style="border-left-color: var(--accent); background: #f0f9ff; border-color: #0ea5e9; color: #0369a1;">
                 <strong>📢 Communication Channels Rule:</strong><br>
                 <ul style="margin-bottom: 0; padding-left: 20px; list-style-type: none;">
-                    <li style="margin-bottom: 5px;">🔒 <strong>Personal Issues:</strong> DM (Direct Message). Don't
-                        clutter groups.</li>
+                    <li style="margin-bottom: 5px;">🔒 <strong>Personal Issues:</strong> DM (Direct Message). Don't  clutter groups.</li>
                     <li>📢 <strong>Work Issues/Doubts:</strong> Group Chats. Why? Your doubt helps everyone learn.</li>
                 </ul>
             </div>
 
             <h3>Specific Scenarios: Vague vs. Specific</h3>
             <div class="box box-info" style="margin-top: 10px;">
-                <strong>The Rule of Specificity:</strong> Providing an ETA for *each* task is mandatory. Ambiguity
-                creates anxiety.
+                <strong>The Rule of Specificity:</strong> Providing an ETA for *each* task is mandatory. Ambiguity  creates anxiety.
             </div>
 
             <table>
@@ -1113,10 +1333,8 @@
             </table>
 
             <h3>Professionalism</h3>
-            <p>✅ <strong>DO:</strong> Use proper grammar, confirm understanding ("Got it, doing X by Y"), update
-                regularly.<br>
-                ❌ <strong>DON'T:</strong> Use slang, argue with clients, make promises you can't keep, leave people
-                hanging.</p>
+            <p>✅ <strong>DO:</strong> Use proper grammar, confirm understanding ("Got it, doing X by Y"), update  regularly.<br>
+                ❌ <strong>DON'T:</strong> Use slang, argue with clients, make promises you can't keep, leave people  hanging.</p>
         </section>
 
         <!-- SECTION 8: WFH -->
@@ -1152,8 +1370,7 @@
             <div class="rules-grid">
                 <div class="rule-card" style="border-top-color: #EC4899;">
                     <h4>✈️ Offsite Trips</h4>
-                    <p>Twice a year (Hill stations, Goa, etc.). Company pays for travel, stay, food. Bonds are built
-                        here.</p>
+                    <p>Twice a year (Hill stations, Goa, etc.). Company pays for travel, stay, food. Bonds are built  here.</p>
                 </div>
                 <div class="rule-card" style="border-top-color: #EC4899;">
                     <h4>💰 Outing Budget</h4>
@@ -1173,8 +1390,7 @@
                 </div>
                 <div class="rule-card" style="border-top-color: #EC4899;">
                     <h4>❤️ Support</h4>
-                    <p>Medical emergency? Financial trouble? We support our own during tough times. Flexible
-                        hours/Advance salary available.</p>
+                    <p>Medical emergency? Financial trouble? We support our own during tough times. Flexible  hours/Advance salary available.</p>
                 </div>
             </div>
 
@@ -1229,13 +1445,11 @@
 
             <div class="box box-info">
                 <strong>📧 Resignation Email Template:</strong><br>
-                <div
-                    style="background: #e2e8f0; padding: 15px; border-radius: 8px; margin-top: 10px; font-family: monospace; font-size: 0.9em; border: 1px solid #cbd5e1;">
+                <div  style="background: #e2e8f0; padding: 15px; border-radius: 8px; margin-top: 10px; font-family: monospace; font-size: 0.9em; border: 1px solid #cbd5e1;">
                     <strong>To:</strong> hr@digitalheroes.co.in<br>
                     <strong>Subject:</strong> Resignation - [Your Name]<br><br>
                     Dear HR & Management,<br><br>
-                    Please accept this email as my formal resignation from the position of [Your Role] at Digital
-                    Heroes.<br><br>
+                    Please accept this email as my formal resignation from the position of [Your Role] at Digital  Heroes.<br><br>
                     As per my employment contract, my notice period is [7 Days/30 Days], and my last working day will be
                     [Date].<br><br>
                     I am committed to ensuring a smooth handover during this period.<br><br>
@@ -1244,8 +1458,7 @@
                 </div>
             </div>
 
-            <p><strong>Experience Certificate:</strong> Provided for good standing exits. Burning bridges = No
-                certificate.</p>
+            <p><strong>Experience Certificate:</strong> Provided for good standing exits. Burning bridges = No  certificate.</p>
         </section>
 
         <!-- SECTION 12: FAQ -->
@@ -1273,8 +1486,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">3. Can I discuss my salary with my colleague?</div>
-                <div class="faq-answer"><strong>ABSOLUTELY NOT.</strong> Salary confidentiality is a zero-tolerance
-                    policy. Discussing it leads to immediate termination for both parties involved.</div>
+                <div class="faq-answer"><strong>ABSOLUTELY NOT.</strong> Salary confidentiality is a zero-tolerance  policy. Discussing it leads to immediate termination for both parties involved.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">4. How do I get a raise?</div>
@@ -1283,30 +1495,24 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">5. Do we get Diwali bonuses?</div>
-                <div class="faq-answer">Yes, festival bonuses are distributed based on company performance and your
-                    tenure/contribution. It is not a fixed entitlement but a celebration of shared success.</div>
+                <div class="faq-answer">Yes, festival bonuses are distributed based on company performance and your  tenure/contribution. It is not a fixed entitlement but a celebration of shared success.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">6. I need money urgently. Can I get an advance?</div>
-                <div class="faq-answer">Yes, if you have completed 3 months. You can request up to <strong>50% of your
-                        salary</strong> for genuine emergencies (medical/family). It will be deducted over the next 2
+                <div class="faq-answer">Yes, if you have completed 3 months. You can request up to <strong>50% of your  salary</strong> for genuine emergencies (medical/family). It will be deducted over the next 2
                     months.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">7. Will I get paid for overtime?</div>
-                <div class="faq-answer">No. We value <strong>output</strong>, not hours. If you need extra time to
-                    deliver excellence, that helps you achieve your KPIs and quarterly bonuses. We don't pay hourly; we
-                    pay for results.</div>
+                <div class="faq-answer">No. We value <strong>output</strong>, not hours. If you need extra time to  deliver excellence, that helps you achieve your KPIs and quarterly bonuses. We don't pay hourly; we  pay for results.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">8. Is my salary taxable?</div>
-                <div class="faq-answer">TDS is deducted as per government regulations if your salary exceeds the taxable
-                    bracket. You will receive Form 16 annually.</div>
+                <div class="faq-answer">TDS is deducted as per government regulations if your salary exceeds the taxable  bracket. You will receive Form 16 annually.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">9. What if there is a mistake in my salary?</div>
-                <div class="faq-answer">Contact HR (Agrima) immediately via Discord/Email. We will rectify legitimate
-                    errors within 48 hours.</div>
+                <div class="faq-answer">Contact HR (Agrima) immediately via Discord/Email. We will rectify legitimate  errors within 48 hours.</div>
             </div>
 
             <!-- GROUP 2: ATTENDANCE & LEAVES -->
@@ -1320,38 +1526,31 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">11. Can I take leave during my probation?</div>
-                <div class="faq-answer">Generally, <strong>NO</strong>. Leaves during the first 2 months are not allowed
-                    unless it is a medical emergency. Focus on learning.</div>
+                <div class="faq-answer">Generally, <strong>NO</strong>. Leaves during the first 2 months are not allowed  unless it is a medical emergency. Focus on learning.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">12. How many leaves do I get per year?</div>
-                <div class="faq-answer">12 Casual Leaves (CL), 6 Sick Leaves (SL), and ~10 National Holidays. Earned
-                    Leaves (EL) start accruing after 1 year.</div>
+                <div class="faq-answer">12 Casual Leaves (CL), 6 Sick Leaves (SL), and ~10 National Holidays. Earned  Leaves (EL) start accruing after 1 year.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">13. Can I carry forward my CLs to next year?</div>
-                <div class="faq-answer">No. Casual Leaves and Sick Leaves lapse at the end of the year. Use them for
-                    your well-being.</div>
+                <div class="faq-answer">No. Casual Leaves and Sick Leaves lapse at the end of the year. Use them for  your well-being.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">14. What if I fall sick suddenly?</div>
-                <div class="faq-answer">Inform your manager by <strong>9:00 AM</strong> via WhatsApp/Discord. If you are
-                    out for more than 2 consecutive days, you MUST submit a medical certificate.</div>
+                <div class="faq-answer">Inform your manager by <strong>9:00 AM</strong> via WhatsApp/Discord. If you are  out for more than 2 consecutive days, you MUST submit a medical certificate.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">15. Can I take a planned holiday?</div>
-                <div class="faq-answer">Yes, but you must apply at least <strong>3 days in advance</strong>. Approval
-                    depends on work coverage.</div>
+                <div class="faq-answer">Yes, but you must apply at least <strong>3 days in advance</strong>. Approval  depends on work coverage.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">16. Can I take leave between 25th and 5th of the month?</div>
-                <div class="faq-answer"><strong>Strictly NO.</strong> This is our billing and reporting cycle. Leaves
-                    are blocked during this period unless it is a severe emergency.</div>
+                <div class="faq-answer"><strong>Strictly NO.</strong> This is our billing and reporting cycle. Leaves  are blocked during this period unless it is a severe emergency.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">17. What is "Unexplained Absence"?</div>
-                <div class="faq-answer">If you don't show up and don't message by 9:00 AM, it is Unexplained. <br>1st
-                    time: Warning. <br>3rd time: 3 Days Pay Cut. <br>5th time: Termination.</div>
+                <div class="faq-answer">If you don't show up and don't message by 9:00 AM, it is Unexplained. <br>1st  time: Warning. <br>3rd time: 3 Days Pay Cut. <br>5th time: Termination.</div>
             </div>
 
             <!-- GROUP 3: WORK FROM HOME -->
@@ -1359,28 +1558,23 @@
 
             <div class="faq-item">
                 <div class="faq-question">18. Am I eligible for WFH?</div>
-                <div class="faq-answer">Only after completing <strong>3 months (Probation)</strong> AND maintaining good
-                    performance. It is a privilege, not a right.</div>
+                <div class="faq-answer">Only after completing <strong>3 months (Probation)</strong> AND maintaining good  performance. It is a privilege, not a right.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">19. How many WFH days can I take?</div>
-                <div class="faq-answer">Maximum <strong>2 days per week</strong>. They cannot be consecutive (e.g., no
-                    Monday + Tuesday).</div>
+                <div class="faq-answer">Maximum <strong>2 days per week</strong>. They cannot be consecutive (e.g., no  Monday + Tuesday).</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">20. Can I work from a cafe?</div>
-                <div class="faq-answer">Only if the internet is stable (10+ Mbps) and it's quiet enough for calls. Your
-                    environment must not hinder your productivity.</div>
+                <div class="faq-answer">Only if the internet is stable (10+ Mbps) and it's quiet enough for calls. Your  environment must not hinder your productivity.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">21. What if my internet goes down during WFH?</div>
-                <div class="faq-answer">You are expected to have a backup (mobile hotspot). If you cannot work, you must
-                    take a leave (Half day/Full day).</div>
+                <div class="faq-answer">You are expected to have a backup (mobile hotspot). If you cannot work, you must  take a leave (Half day/Full day).</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">22. Can I refuse a WFH request from my manager?</div>
-                <div class="faq-answer">We rarely force WFH, but if the office is closed (e.g., maintenance), you are
-                    expected to work remotely.</div>
+                <div class="faq-answer">We rarely force WFH, but if the office is closed (e.g., maintenance), you are  expected to work remotely.</div>
             </div>
 
             <!-- GROUP 4: ZERO TOLERANCE (RED LINES) -->
@@ -1393,23 +1587,19 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">24. Can I do freelance work on weekends?</div>
-                <div class="faq-answer"><strong>NO.</strong> While you are employed here, you are exclusive to Digital
-                    Heroes. Moonlighting is grounds for immediate termination.</div>
+                <div class="faq-answer"><strong>NO.</strong> While you are employed here, you are exclusive to Digital  Heroes. Moonlighting is grounds for immediate termination.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">25. Can I use my personal laptop for work?</div>
-                <div class="faq-answer">Only with explicit permission. Client data must NEVER be stored on personal
-                    unsecured devices.</div>
+                <div class="faq-answer">Only with explicit permission. Client data must NEVER be stored on personal  unsecured devices.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">26. What counts as a "Data Breach"?</div>
-                <div class="faq-answer">Sharing passwords, sharing client lists, downloading code to personal drives, or
-                    showing internal docs to outsiders. This leads to <strong>Legal Action</strong>.</div>
+                <div class="faq-answer">Sharing passwords, sharing client lists, downloading code to personal drives, or  showing internal docs to outsiders. This leads to <strong>Legal Action</strong>.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">27. I made a mistake. Should I hide it?</div>
-                <div class="faq-answer"><strong>NEVER.</strong> Hiding a mistake is worse than the mistake itself. Own
-                    it, report it, fix it. We forgive errors; we do not forgive cover-ups.</div>
+                <div class="faq-answer"><strong>NEVER.</strong> Hiding a mistake is worse than the mistake itself. Own  it, report it, fix it. We forgive errors; we do not forgive cover-ups.</div>
             </div>
 
             <!-- GROUP 5: CULTURE & GROWTH -->
@@ -1422,23 +1612,19 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">29. What is the "Celebration Budget"?</div>
-                <div class="faq-answer">Every team gets ₹500-1000/person monthly for fun—movies, dinners, bowling. It's
-                    your money to bond.</div>
+                <div class="faq-answer">Every team gets ₹500-1000/person monthly for fun—movies, dinners, bowling. It's  your money to bond.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">30. Can I switch departments (e.g., Sales to PM)?</div>
-                <div class="faq-answer">Yes! We love internal mobility. If you prove your skills and there is an
-                    opening, we prefer hiring from within.</div>
+                <div class="faq-answer">Yes! We love internal mobility. If you prove your skills and there is an  opening, we prefer hiring from within.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">31. Do you pay for courses?</div>
-                <div class="faq-answer">Yes, we reimburse up to ₹5,000/year for relevant courses. Approval required from
-                    your manager first.</div>
+                <div class="faq-answer">Yes, we reimburse up to ₹5,000/year for relevant courses. Approval required from  your manager first.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">32. Who is my "Buddy"?</div>
-                <div class="faq-answer">A senior team member assigned to you for your first 2 weeks. Ask them
-                    anything—where to eat, how to file reports, etc.</div>
+                <div class="faq-answer">A senior team member assigned to you for your first 2 weeks. Ask them  anything—where to eat, how to file reports, etc.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">33. What if I have a conflict with my manager?</div>
@@ -1451,28 +1637,23 @@
 
             <div class="faq-item">
                 <div class="faq-question">34. Do I have to say "Good Morning"?</div>
-                <div class="faq-answer">Yes. It's basic manners. Greet your team when you start and when you leave. It
-                    builds connection.</div>
+                <div class="faq-answer">Yes. It's basic manners. Greet your team when you start and when you leave. It  builds connection.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">35. How fast should I reply to messages?</div>
-                <div class="faq-answer"><strong>Instantly.</strong> Or validly within 15 mins. "I'm busy" is not an
-                    excuse for 4 hours of silence.</div>
+                <div class="faq-answer"><strong>Instantly.</strong> Or validly within 15 mins. "I'm busy" is not an  excuse for 4 hours of silence.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">36. Can I use headphones in the office?</div>
-                <div class="faq-answer">Yes, for deep work. But don't use them to ignore people. If someone waves, take
-                    them off.</div>
+                <div class="faq-answer">Yes, for deep work. But don't use them to ignore people. If someone waves, take  them off.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">37. Can I eat at my desk?</div>
-                <div class="faq-answer">Dry snacks/coffee? Sure. Full meals? Please use the pantry/break area. Don't
-                    make the workspace smell of curry.</div>
+                <div class="faq-answer">Dry snacks/coffee? Sure. Full meals? Please use the pantry/break area. Don't  make the workspace smell of curry.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">38. Is there a dress code?</div>
-                <div class="faq-answer">Smart Casual. No shorts, no offensive slogans. Look like a professional who
-                    respects their craft.</div>
+                <div class="faq-answer">Smart Casual. No shorts, no offensive slogans. Look like a professional who  respects their craft.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">39. Can I bring a friend to the office?</div>
@@ -1489,13 +1670,11 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">41. Can I install Spotify/Games on work laptop?</div>
-                <div class="faq-answer">Spotify? Yes. Games? No. Do not install anything that slows down the machine or
-                    poses a security risk.</div>
+                <div class="faq-answer">Spotify? Yes. Games? No. Do not install anything that slows down the machine or  poses a security risk.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">42. Why do we track time/screens?</div>
-                <div class="faq-answer">We don't micro-manage, but if performance dips, we audit activity. High
-                    performers are rarely audited.</div>
+                <div class="faq-answer">We don't micro-manage, but if performance dips, we audit activity. High  performers are rarely audited.</div>
             </div>
 
             <!-- GROUP 8: EXIT & MISC -->
@@ -1517,24 +1696,20 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">46. Can I come back after resigning?</div>
-                <div class="faq-answer">We love Boomerangs! If you left on good terms and we have a role, the door is
-                    always open.</div>
+                <div class="faq-answer">We love Boomerangs! If you left on good terms and we have a role, the door is  always open.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">47. What if I have a personal emergency during work?</div>
-                <div class="faq-answer">Family comes first. Inform your manager, hand over urgent tasks, and go. We will
-                    handle it.</div>
+                <div class="faq-answer">Family comes first. Inform your manager, hand over urgent tasks, and go. We will  handle it.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">48. Do we have medical insurance?</div>
-                <div class="faq-answer">Currently, we cover specific emergency medical aids on a case-by-case basis. We
-                    are soon planning to have comprehensive insurance implemented, which is in our late 2026 Roadmap.
+                <div class="faq-answer">Currently, we cover specific emergency medical aids on a case-by-case basis. We  are soon planning to have comprehensive insurance implemented, which is in our late 2026 Roadmap.
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">49. How can I become a Team Lead?</div>
-                <div class="faq-answer">Show ownership. Don't just do your task—help others, solve problems before they
-                    are assigned, and deliver consistently. Leaders reveal themselves.</div>
+                <div class="faq-answer">Show ownership. Don't just do your task—help others, solve problems before they  are assigned, and deliver consistently. Leaders reveal themselves.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">50. Who is the "Client"?</div>
@@ -1552,8 +1727,7 @@
     </main>
 
     <script>
-        // Smooth scroll
-        document.querySelectorAll('.nav-link').forEach(anchor => {
+        // Smooth scroll  document.querySelectorAll('.nav-link').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
@@ -1566,19 +1740,82 @@
             });
         });
 
-        // FAQ Toggle
-        document.querySelectorAll('.faq-question').forEach(item => {
+        // FAQ Toggle  document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
                 answer.classList.toggle('show');
             });
         });
 
-        // Mobile Toggle
-        document.querySelector('.mobile-toggle').addEventListener('click', () => {
+        // Mobile Toggle  document.querySelector('.mobile-toggle').addEventListener('click', () => {
             document.querySelector('.sidebar').classList.toggle('active');
         });
     </script>
+
+    <script>
+, 10);
+            } else {
+                document.removeEventListener('click', closeSidebarOutside);
+            }
+        }
+
+        function closeSidebarOutside(event) {
+            const sidebar = document.querySelector('.sidebar');
+            const toggleBtn = document.querySelector('.mobile-menu-btn');
+            if (sidebar && !sidebar.contains(event.target) && (!toggleBtn || !toggleBtn.contains(event.target))) {
+                sidebar.classList.remove('open');
+                sidebar.classList.remove('active');
+                document.removeEventListener('click', closeSidebarOutside);
+            }
+        }
+    </script>
+
+
+    <script>
+        // ===== SIDEBAR TOGGLE FUNCTIONS =====
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        // Click outside to close sidebar
+        document.addEventListener('click', function(event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            var overlay = document.querySelector('.sidebar-overlay');
+            
+            if (!sidebar || !toggleBtn) return;
+            
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+            
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+        // ===== END SIDEBAR TOGGLE =====
+    </script>
+
 </body>
 
 </html>

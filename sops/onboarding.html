@@ -1,0 +1,1138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Employee Onboarding | Digital Heroes</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
+    <style>
+        :root {
+            --primary: #3B82F6;
+            --secondary: #10B981;
+            --accent: #8B5CF6;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --bg-dark: #0F172A;
+            --bg-card: #1E293B;
+            --text: #E2E8F0;
+            --text-muted: #94A3B8;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1em;
+        }
+
+        .header .subtitle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .header .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: white;
+        }
+
+        /* Back Button */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: var(--primary);
+        }
+
+        /* Section */
+        .section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .section h2 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .section h3 {
+            font-size: 1.1em;
+            margin: 20px 0 12px;
+            color: var(--primary);
+        }
+
+        .section h4 {
+            font-size: 1em;
+            margin: 15px 0 10px;
+            color: var(--secondary);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        /* Checklists */
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0 8px 30px;
+            position: relative;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+
+        .checklist li::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9em;
+            border-left: 3px solid var(--primary);
+            overflow-x: auto;
+        }
+
+        .code-block .item {
+            padding: 4px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .code-block .checkbox {
+            color: var(--text-muted);
+        }
+
+        /* Alert boxes */
+        .alert {
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .alert-warning {
+            background: rgba(245, 158, 11, 0.15);
+            border-left: 4px solid var(--warning);
+        }
+
+        .alert-danger {
+            background: rgba(239, 68, 68, 0.15);
+            border-left: 4px solid var(--danger);
+        }
+
+        .alert-success {
+            background: rgba(16, 185, 129, 0.15);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .alert-info {
+            background: rgba(59, 130, 246, 0.15);
+            border-left: 4px solid var(--primary);
+        }
+
+        /* Value box */
+        .value-box {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            padding: 12px;
+            background: rgba(139, 92, 246, 0.1);
+            border-radius: 8px;
+            margin: 8px 0;
+        }
+
+        .value-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        /* Quiz section */
+        .quiz-question {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .quiz-question:last-child {
+            border-bottom: none;
+        }
+
+        .quiz-number {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Links section */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+        }
+
+        .link-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(59, 130, 246, 0.2);
+        }
+
+        .link-card .icon {
+            font-size: 1.8em;
+        }
+
+        .link-card .title {
+            font-weight: 600;
+            color: white;
+        }
+
+        .link-card .desc {
+            font-size: 0.8em;
+            color: var(--text-muted);
+        }
+
+        /* SOP Grid */
+        .sop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .sop-card {
+            padding: 15px;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+        }
+
+        .sop-card:hover {
+            border-color: var(--secondary);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .sop-card .emoji {
+            font-size: 1.8em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .sop-card .name {
+            font-weight: 600;
+            font-size: 0.85em;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 3px solid var(--bg-card);
+        }
+
+        .timeline-time {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Day tabs */
+        .day-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .day-tab {
+            padding: 12px 24px;
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .day-tab:hover,
+        .day-tab.active {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        /* Signature section */
+        .signature-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 2px dashed var(--secondary);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .signature-line {
+            border-bottom: 1px solid var(--text-muted);
+            padding: 10px 0;
+            margin: 15px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .value-box {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            th,
+            td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Dashboard</a>
+
+        <header class="header">
+            <h1>🎯 NEW EMPLOYEE ONBOARDING</h1>
+            <p>Your First 3 Days: Everything You Need to Do</p>
+            <div class="subtitle">
+                <span class="badge">Self-Serve Guide</span>
+                <span class="badge">Step-by-Step</span>
+                <span class="badge">No Hand-Holding Needed</span>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="section">
+            <h2>👋 WELCOME TO DIGITAL HEROES!</h2>
+            <p>Congratulations on joining the team! 🎉</p>
+            <p style="margin-top: 15px;">This guide will walk you through your first 3 days. Follow it step-by-step,
+                check off tasks as you complete them, and you'll be fully set up and ready for training.</p>
+
+            <div class="alert alert-warning" style="margin-top: 20px;">
+                <strong>⚠️ Important:</strong> This is a SELF-SERVE guide. You're expected to complete everything on
+                your own. This tests your ability to follow instructions independently - a critical skill at Digital
+                Heroes.
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="section">
+            <h2>📅 YOUR FIRST 3 DAYS OVERVIEW</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                    <th>Goal</th>
+                </tr>
+                <tr>
+                    <td><strong>Day 1</strong></td>
+                    <td>Documentation + Company Intro</td>
+                    <td>Sign papers, understand who we are</td>
+                </tr>
+                <tr>
+                    <td><strong>Day 2</strong></td>
+                    <td>Tools Setup + Team Meet</td>
+                    <td>Get all tools working, know your team</td>
+                </tr>
+                <tr>
+                    <td><strong>Day 3</strong></td>
+                    <td>Policies + Training Start</td>
+                    <td>Understand rules, begin role training</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Day Navigation -->
+        <div class="day-tabs">
+            <a href="#pre-joining" class="day-tab">Pre-Joining</a>
+            <a href="#day1" class="day-tab">Day 1</a>
+            <a href="#day2" class="day-tab">Day 2</a>
+            <a href="#day3" class="day-tab">Day 3</a>
+            <a href="#next-steps" class="day-tab">Next Steps</a>
+        </div>
+
+        <!-- Pre-Joining -->
+        <section class="section" id="pre-joining">
+            <h2>✅ BEFORE DAY 1: PRE-JOINING CHECKLIST</h2>
+            <p>Complete these BEFORE your first day:</p>
+
+            <h3>📄 Documents to Keep Ready (Originals + 2 Copies)</h3>
+            <ul class="checklist">
+                <li>Aadhar Card</li>
+                <li>PAN Card</li>
+                <li>10th Marksheet</li>
+                <li>12th Marksheet</li>
+                <li>Graduation Certificate/Marksheet</li>
+                <li>Passport Size Photos (4)</li>
+                <li>Bank Account Details (Cancelled Cheque/Passbook)</li>
+                <li>Previous Experience Letter (if any)</li>
+                <li>Address Proof</li>
+            </ul>
+
+            <h3>🎒 Personal Checklist</h3>
+            <ul class="checklist">
+                <li>Laptop fully charged</li>
+                <li>Laptop charger packed</li>
+                <li>Earphones/headphones (for calls)</li>
+                <li>Notebook and pen</li>
+                <li>Water bottle</li>
+                <li>Know the office address (Google Maps saved)</li>
+            </ul>
+
+            <h3>🧠 Mental Preparation</h3>
+            <ul class="checklist">
+                <li>Read about Digital Heroes (website, YouTube channel)</li>
+                <li>Prepare 2-3 questions to ask</li>
+                <li>Get good sleep the night before</li>
+                <li>Plan to arrive 15 minutes early</li>
+            </ul>
+        </section>
+
+        <!-- Day 1 -->
+        <section class="section" id="day1">
+            <h2>📅 DAY 1: DOCUMENTATION + COMPANY INTRO</h2>
+
+            <h3>Morning Schedule</h3>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">9:00 AM - Arrival & Welcome</div>
+                    <div class="code-block">
+                        <div class="item"><span class="checkbox">☐</span> Arrive at office 15 minutes early</div>
+                        <div class="item"><span class="checkbox">☐</span> Inform reception you're a new joiner</div>
+                        <div class="item"><span class="checkbox">☐</span> Wait to be greeted by HR</div>
+                        <div class="item"><span class="checkbox">☐</span> Get your temporary ID/access</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">9:30 AM - HR Documentation (1.5 hours)</div>
+                    <div class="code-block">
+                        <div class="item"><span class="checkbox">☐</span> Offer Letter - Read carefully, sign</div>
+                        <div class="item"><span class="checkbox">☐</span> Joining Letter - Read carefully, sign</div>
+                        <div class="item"><span class="checkbox">☐</span> Employee Agreement - Read EVERY clause, sign
+                        </div>
+                        <div class="item"><span class="checkbox">☐</span> NDA (Non-Disclosure Agreement) - Understand
+                            confidentiality, sign</div>
+                        <div class="item"><span class="checkbox">☐</span> Asset Agreement - For laptop/equipment, sign
+                        </div>
+                        <div class="item"><span class="checkbox">☐</span> Emergency Contact Form - Fill your details
+                        </div>
+                        <div class="item"><span class="checkbox">☐</span> Bank Details Form - For salary credit</div>
+                        <div class="item"><span class="checkbox">☐</span> Submit all document copies to HR</div>
+                        <div class="item"><span class="checkbox">☐</span> Get your Employee ID number</div>
+                    </div>
+                    <div class="alert alert-danger">
+                        ⚠️ <strong>IMPORTANT:</strong> Don't sign anything you don't understand. ASK HR to explain.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">11:00 AM - Company Orientation (1 hour)</div>
+                    <div class="code-block">
+                        <div class="item"><span class="checkbox">☐</span> Company History Video/Document</div>
+                        <div class="item"><span class="checkbox">☐</span> Company Vision (2025: ₹15-20Cr, 2026: ₹40Cr,
+                            2027: ₹75Cr)</div>
+                        <div class="item"><span class="checkbox">☐</span> What We Do - Premium Shopify, Speed
+                            Optimization, Design</div>
+                        <div class="item"><span class="checkbox">☐</span> Our Standards - 4.9★ Rating, 2000+ Projects,
+                            Fiverr Pro</div>
+                        <div class="item"><span class="checkbox">☐</span> Our Clients - USA, UK, Australia premium
+                            businesses</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">12:00 PM - Core Values Understanding</div>
+                    <div class="value-box">
+                        <span class="value-name">OWNERSHIP</span>
+                        <span>You're 100% responsible for your work. No excuses.</span>
+                    </div>
+                    <div class="value-box">
+                        <span class="value-name">EXCELLENCE</span>
+                        <span>"Good enough" is never good enough here.</span>
+                    </div>
+                    <div class="value-box">
+                        <span class="value-name">TRANSPARENCY</span>
+                        <span>Admit mistakes immediately. No hiding.</span>
+                    </div>
+                    <div class="value-box">
+                        <span class="value-name">GROWTH</span>
+                        <span>Learn every day. Feedback is a gift.</span>
+                    </div>
+                    <div class="value-box">
+                        <span class="value-name">RESPECT</span>
+                        <span>No ego. Help others. No politics.</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Afternoon Schedule</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">2:00 PM - Team Introduction</div>
+                    <div class="code-block">
+                        <div class="item"><span class="checkbox">☐</span> Meet your Reporting Manager</div>
+                        <div class="item"><span class="checkbox">☐</span> Meet your Team Lead (if different)</div>
+                        <div class="item"><span class="checkbox">☐</span> Meet team members you'll work with</div>
+                        <div class="item"><span class="checkbox">☐</span> Understand team structure</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">3:00 PM - Workspace Setup</div>
+                    <div class="code-block">
+                        <div class="item"><span class="checkbox">☐</span> Get your seat/desk assigned</div>
+                        <div class="item"><span class="checkbox">☐</span> Set up your laptop at desk</div>
+                        <div class="item"><span class="checkbox">☐</span> Check WiFi connectivity</div>
+                        <div class="item"><span class="checkbox">☐</span> Locate washrooms, pantry, emergency exits
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">3:30 PM - Communication Channels</div>
+                    <div class="code-block">
+                        <div class="item"><span class="checkbox">☐</span> Discord Server - Get added, set profile</div>
+                        <div class="item"><span class="checkbox">☐</span> WhatsApp Groups (if any)</div>
+                        <div class="item"><span class="checkbox">☐</span> Company Email - Set up and test</div>
+                        <div class="item"><span class="checkbox">☐</span> Other tools as applicable</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">4:30 PM - Quick Policy Overview</div>
+                    <div class="code-block">
+                        <div class="item"><span class="checkbox">☐</span> Attendance Rules - 9:00 AM, Late after 9:15
+                        </div>
+                        <div class="item"><span class="checkbox">☐</span> Communication Rules - 2 hour response time
+                        </div>
+                        <div class="item"><span class="checkbox">☐</span> Leave Policy Basics</div>
+                        <div class="item"><span class="checkbox">☐</span> First 90 Days Importance</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Day 1 Completion Checklist</h3>
+            <table>
+                <tr>
+                    <td>All documents signed</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Employee ID received</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Know company vision & values</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Met reporting manager</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Discord/Communication access</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Company email created</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Know office timings & rules</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Handbook received</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Day 2 -->
+        <section class="section" id="day2">
+            <h2>📅 DAY 2: TOOLS SETUP + DEEP DIVE</h2>
+
+            <h3>9:15 AM - Tool Setup (3 hours)</h3>
+            <p>Complete ALL tool setups yourself. Google/YouTube if stuck.</p>
+
+            <h4>🎮 DISCORD SETUP (30 min)</h4>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Download Discord desktop app</div>
+                <div class="item"><span class="checkbox">☐</span> Join Digital Heroes server</div>
+                <div class="item"><span class="checkbox">☐</span> Set display name: [Your Real Name]</div>
+                <div class="item"><span class="checkbox">☐</span> Upload professional profile photo</div>
+                <div class="item"><span class="checkbox">☐</span> Join #general, #announcements, team channel</div>
+                <div class="item"><span class="checkbox">☐</span> Turn ON notifications</div>
+                <div class="item"><span class="checkbox">☐</span> Post introduction in #general</div>
+            </div>
+
+            <h4>📧 EMAIL SETUP (20 min)</h4>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Login to company email</div>
+                <div class="item"><span class="checkbox">☐</span> Set up email signature</div>
+                <div class="item"><span class="checkbox">☐</span> Connect email to phone</div>
+                <div class="item"><span class="checkbox">☐</span> Turn ON notifications</div>
+            </div>
+
+            <h4>📁 GOOGLE WORKSPACE (20 min)</h4>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Access Google Drive (shared folders)</div>
+                <div class="item"><span class="checkbox">☐</span> Bookmark SOPs, Templates, Team folders</div>
+                <div class="item"><span class="checkbox">☐</span> Access Google Calendar</div>
+                <div class="item"><span class="checkbox">☐</span> Test Google Meet (camera + mic)</div>
+            </div>
+
+            <h4>📋 PROJECT MANAGEMENT TOOL (30 min)</h4>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Get invite to Trello/Asana/ClickUp</div>
+                <div class="item"><span class="checkbox">☐</span> Explore the interface</div>
+                <div class="item"><span class="checkbox">☐</span> Find your team's board</div>
+                <div class="item"><span class="checkbox">☐</span> Learn task basics</div>
+            </div>
+
+            <h4>🎨 FOR DESIGNERS: FIGMA (30 min)</h4>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Create/login to Figma account</div>
+                <div class="item"><span class="checkbox">☐</span> Get added to team workspace</div>
+                <div class="item"><span class="checkbox">☐</span> Explore existing design files</div>
+            </div>
+
+            <h4>💻 FOR DEVELOPERS: SHOPIFY + VS CODE (30 min)</h4>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Create Shopify Partner account</div>
+                <div class="item"><span class="checkbox">☐</span> VS Code with extensions (Liquid, Prettier, GitLens)
+                </div>
+                <div class="item"><span class="checkbox">☐</span> Familiar with basic shortcuts</div>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>💡 If any tool is NOT working:</strong><br>
+                1. Google the error → 2. YouTube the solution → 3. Ask ChatGPT → 4. ONLY THEN ask team member
+            </div>
+
+            <h3>2:00 PM - Employee Handbook Deep Dive (2 hours)</h3>
+            <p><strong>Read the FULL Employee Handbook. Not skim - READ.</strong></p>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Section 1: About Digital Heroes (15 min)</div>
+                <div class="item"><span class="checkbox">☐</span> Section 2: Working Hours & Attendance (15 min)</div>
+                <div class="item"><span class="checkbox">☐</span> Section 3: Leave Policy (15 min)</div>
+                <div class="item"><span class="checkbox">☐</span> Section 4: Work From Home Policy (10 min)</div>
+                <div class="item"><span class="checkbox">☐</span> Section 5: Salary & Compensation (10 min)</div>
+                <div class="item"><span class="checkbox">☐</span> Section 6: Communication Standards (15 min)</div>
+                <div class="item"><span class="checkbox">☐</span> Section 7-12: Performance, Exit, Rules, FAQ (30 min)
+                </div>
+            </div>
+
+            <h3>4:00 PM - Team Processes Understanding</h3>
+            <div class="code-block">
+                <div class="item"><span class="checkbox">☐</span> Understand daily workflow</div>
+                <div class="item"><span class="checkbox">☐</span> Understand communication norms</div>
+                <div class="item"><span class="checkbox">☐</span> Understand quality expectations</div>
+                <div class="item"><span class="checkbox">☐</span> Get your first week's expectations</div>
+            </div>
+
+            <h3>Day 2 Completion Checklist</h3>
+            <table>
+                <tr>
+                    <td>Discord fully set up</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Email working + signature</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Google Workspace access</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Project management tool access</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Role-specific tools ready</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Handbook FULLY read</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>Team processes understood</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+                <tr>
+                    <td>First week expectations clear</td>
+                    <td style="text-align:center;">☐</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Day 3 -->
+        <section class="section" id="day3">
+            <h2>📅 DAY 3: POLICIES QUIZ + TRAINING START</h2>
+
+            <h3>9:15 AM - Handbook Quiz (30 min)</h3>
+            <p>Take this quiz honestly. Check your answers against handbook.</p>
+
+            <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+                <h4 style="color: var(--primary); margin-bottom: 15px;">📝 QUIZ: TEST YOURSELF</h4>
+
+                <p><strong>Attendance & Timing:</strong></p>
+                <div class="quiz-question"><span class="quiz-number">1.</span> Office timing is _____ to _____</div>
+                <div class="quiz-question"><span class="quiz-number">2.</span> Late cutoff time is _____</div>
+                <div class="quiz-question"><span class="quiz-number">3.</span> Late arrival consequence: _____</div>
+
+                <p style="margin-top: 15px;"><strong>Leave Policy:</strong></p>
+                <div class="quiz-question"><span class="quiz-number">4.</span> Casual leave per year: _____ days</div>
+                <div class="quiz-question"><span class="quiz-number">5.</span> Max casual leave per month (default):
+                    _____ days</div>
+                <div class="quiz-question"><span class="quiz-number">6.</span> Leave restricted period: _____th to
+                    _____th</div>
+
+                <p style="margin-top: 15px;"><strong>Communication:</strong></p>
+                <div class="quiz-question"><span class="quiz-number">7.</span> Message response time: < _____
+                        hour(s)</div>
+                        <div class="quiz-question"><span class="quiz-number">8.</span> Consequence of ignoring messages:
+                            _____</div>
+
+                        <p style="margin-top: 15px;"><strong>Work From Home:</strong></p>
+                        <div class="quiz-question"><span class="quiz-number">9.</span> WFH eligibility: After _____
+                            months</div>
+                        <div class="quiz-question"><span class="quiz-number">10.</span> WFH is a _____ not a _____</div>
+                </div>
+
+                <div class="alert alert-success">
+                    <strong>✅ Pass Score: 18/20</strong> - If you can't answer all, RE-READ the handbook.
+                </div>
+
+                <h3>10:00 AM - 12 Rules of Work Culture</h3>
+                <div class="code-block">
+                    <div class="item"><span class="checkbox">☐</span> Rule 1: ACCOUNTABILITY - I own my work completely
+                    </div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 2: COMMUNICATION - Clear, direct,
+                        professional</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 3: PUNCTUALITY - Deadlines are non-negotiable
+                    </div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 4: SELF-LEARNING - Figure it out first</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 5: QUALITY - Match professional level</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 6: GROUNDEDNESS - No ego, stay humble</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 7: ZERO POLITICS - No drama, no gossip</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 8: TRANSPARENCY - Honesty always</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 9: TEAMWORK - Win or lose together</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 10: PROFESSIONALISM - Represent DH well</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 11: GROWTH MINDSET - Always improving</div>
+                    <div class="item"><span class="checkbox">☐</span> Rule 12: RESPECT BOUNDARIES - Work-life balance
+                    </div>
+                </div>
+
+                <h3>10:30 AM - Role Training Introduction</h3>
+                <p>Access the SOP Library and start your role-specific training.</p>
+                <div class="code-block">
+                    <div class="item"><span class="checkbox">☐</span> Open the SOP Library</div>
+                    <div class="item"><span class="checkbox">☐</span> Find YOUR role section</div>
+                    <div class="item"><span class="checkbox">☐</span> Understand KRA, SOP, KPI meanings</div>
+                    <div class="item"><span class="checkbox">☐</span> Note down your training modules</div>
+                </div>
+
+                <h3>2:00 PM - Begin Role Training (3 hours)</h3>
+                <div class="code-block">
+                    <div class="item"><span class="checkbox">☐</span> Start Module 1 of your role training</div>
+                    <div class="item"><span class="checkbox">☐</span> Take notes as you learn</div>
+                    <div class="item"><span class="checkbox">☐</span> Complete any exercises/quizzes</div>
+                    <div class="item"><span class="checkbox">☐</span> Note questions to ask your manager/lead</div>
+                </div>
+
+                <h3>Day 3 Completion Checklist</h3>
+                <table>
+                    <tr>
+                        <td>Handbook quiz passed (18+/20)</td>
+                        <td style="text-align:center;">☐</td>
+                    </tr>
+                    <tr>
+                        <td>12 Rules committed</td>
+                        <td style="text-align:center;">☐</td>
+                    </tr>
+                    <tr>
+                        <td>SOP Library accessed</td>
+                        <td style="text-align:center;">☐</td>
+                    </tr>
+                    <tr>
+                        <td>Role training started</td>
+                        <td style="text-align:center;">☐</td>
+                    </tr>
+                    <tr>
+                        <td>Module 1 in progress</td>
+                        <td style="text-align:center;">☐</td>
+                    </tr>
+                    <tr>
+                        <td>EOD update posted</td>
+                        <td style="text-align:center;">☐</td>
+                    </tr>
+                </table>
+        </section>
+
+        <!-- Next Steps -->
+        <section class="section" id="next-steps">
+            <h2>📅 WHAT'S NEXT: WEEK 1+ SCHEDULE</h2>
+            <table>
+                <tr>
+                    <th>Day/Week</th>
+                    <th>Focus</th>
+                </tr>
+                <tr>
+                    <td>Day 4</td>
+                    <td>Continue role training Module 1-2</td>
+                </tr>
+                <tr>
+                    <td>Day 5</td>
+                    <td>Complete Module 2, start Module 3</td>
+                </tr>
+                <tr>
+                    <td>Day 6</td>
+                    <td>Module 3 + first small task assignment</td>
+                </tr>
+                <tr>
+                    <td>Week 2</td>
+                    <td>Modules 3-4 + guided practice tasks</td>
+                </tr>
+                <tr>
+                    <td>Week 3</td>
+                    <td>Complete training + quiz + supervised work</td>
+                </tr>
+                <tr>
+                    <td>Week 4</td>
+                    <td>Semi-independent work + feedback</td>
+                </tr>
+            </table>
+
+            <h3>📋 Daily Habits to Build</h3>
+            <div class="alert alert-info">
+                <strong>Morning Routine (Every Day):</strong><br>
+                ☐ Arrive by 9:00 AM → ☐ Mark attendance → ☐ Check Discord/Email → ☐ Post morning update
+            </div>
+            <div class="alert alert-info">
+                <strong>End of Day Routine:</strong><br>
+                ☐ Post EOD update by 5:45 PM → ☐ Respond to pending messages → ☐ Update task status → ☐ Plan tomorrow
+            </div>
+        </section>
+
+        <!-- Onboarding Complete -->
+        <section class="section">
+            <h2>🎯 ONBOARDING COMPLETE!</h2>
+            <p>You've Finished Your 3-Day Onboarding If:</p>
+            <ul class="checklist">
+                <li>All documents signed</li>
+                <li>All tools set up and working</li>
+                <li>Employee Handbook read completely</li>
+                <li>Handbook quiz passed</li>
+                <li>12 Rules understood and committed</li>
+                <li>Team and processes understood</li>
+                <li>Role training started</li>
+            </ul>
+
+            <div class="signature-box">
+                <h3>✅ ONBOARDING COMPLETION SIGN-OFF</h3>
+                <p style="margin-top: 10px;"><strong>I confirm that:</strong></p>
+                <ul class="checklist">
+                    <li>I have completed all 3 days of onboarding</li>
+                    <li>All my tools are set up and working</li>
+                    <li>I have read the entire Employee Handbook</li>
+                    <li>I understand and commit to the 12 Work Rules</li>
+                    <li>I know who to contact for what</li>
+                    <li>I have started my role-specific training</li>
+                    <li>I understand my first 90 days are critical for confirmation</li>
+                </ul>
+                <div class="signature-line"><strong>Employee Name:</strong> ___________________________</div>
+                <div class="signature-line"><strong>Date:</strong> ___________________________</div>
+                <div class="signature-line"><strong>Employee Signature:</strong> ___________________________</div>
+            </div>
+        </section>
+
+        <!-- SOP IMPORTANCE SECTION -->
+        <section class="section"
+            style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15)); border: 2px solid var(--secondary);">
+            <h2>📚 WHY SOPs ARE YOUR SECRET WEAPON</h2>
+
+            <div class="alert alert-success">
+                <strong>🎯 99% of Mistakes Are Avoidable</strong> by simply following the SOP for your role.
+            </div>
+
+            <p style="font-size: 1.1em; margin: 20px 0;">Every error, every client complaint, every missed deadline
+                we've seen - <strong>almost all of them could have been avoided if the employee had just followed the
+                    SOP.</strong></p>
+
+            <h3>What SOPs Give You:</h3>
+            <ul class="checklist" style="margin: 15px 0;">
+                <li><strong>Step-by-step processes</strong> - No guessing, no winging it</li>
+                <li><strong>Templates & scripts</strong> - Ready-to-use, proven formats</li>
+                <li><strong>Common mistake warnings</strong> - Learn from others' errors</li>
+                <li><strong>Quality checklists</strong> - Never miss critical steps</li>
+                <li><strong>ChatGPT prompts</strong> - AI-assisted work templates</li>
+            </ul>
+
+            <div class="alert alert-warning">
+                <strong>⚠️ Before asking "How do I do this?"</strong> - Check your SOP first. 90% of your questions are
+                already answered there.
+            </div>
+
+            <h3 style="margin-top: 25px;">📖 Access Your Role SOP</h3>
+            <p>Click your role below to open your complete Standard Operating Procedure:</p>
+
+            <div class="sop-grid">
+                <a href="sales-sop.html" class="sop-card">
+                    <span class="emoji">💰</span>
+                    <span class="name">Sales</span>
+                </a>
+                <a href="pm-sop.html" class="sop-card">
+                    <span class="emoji">📋</span>
+                    <span class="name">Project Manager</span>
+                </a>
+                <a href="developer-sop.html" class="sop-card">
+                    <span class="emoji">💻</span>
+                    <span class="name">Developer</span>
+                </a>
+                <a href="fullstack-sop.html" class="sop-card">
+                    <span class="emoji">🖥️</span>
+                    <span class="name">Full Stack</span>
+                </a>
+                <a href="designer-sop.html" class="sop-card">
+                    <span class="emoji">🎨</span>
+                    <span class="name">Designer</span>
+                </a>
+                <a href="cs-sop.html" class="sop-card">
+                    <span class="emoji">🌟</span>
+                    <span class="name">Client Success</span>
+                </a>
+                <a href="hr-sop.html" class="sop-card">
+                    <span class="emoji">👥</span>
+                    <span class="name">HR & People</span>
+                </a>
+                <a href="content-sop.html" class="sop-card">
+                    <span class="emoji">✍️</span>
+                    <span class="name">Content Writer</span>
+                </a>
+                <a href="social-media-sop.html" class="sop-card">
+                    <span class="emoji">📱</span>
+                    <span class="name">Social Media</span>
+                </a>
+                <a href="finance-sop.html" class="sop-card">
+                    <span class="emoji">💵</span>
+                    <span class="name">Finance</span>
+                </a>
+                <a href="daily-sop.html" class="sop-card">
+                    <span class="emoji">☀️</span>
+                    <span class="name">Daily Routine</span>
+                </a>
+                <a href="client-chat-sop.html" class="sop-card">
+                    <span class="emoji">💬</span>
+                    <span class="name">Client Chat</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Important Links -->
+        <section class="section">
+            <h2>🔗 IMPORTANT RESOURCES</h2>
+
+            <div class="links-grid">
+                <a href="employee-handbook.html" class="link-card">
+                    <span class="icon">📖</span>
+                    <div>
+                        <div class="title">Employee Handbook</div>
+                        <div class="desc">All policies, rules & FAQ</div>
+                    </div>
+                </a>
+                <a href="training-hub.html" class="link-card">
+                    <span class="icon">🎓</span>
+                    <div>
+                        <div class="title">Training Hub</div>
+                        <div class="desc">12 role trainings, 300+ quiz questions</div>
+                    </div>
+                </a>
+                <a href="index.html" class="link-card">
+                    <span class="icon">🦸</span>
+                    <div>
+                        <div class="title">SOP Library</div>
+                        <div class="desc">All SOPs, KRAs, KPIs</div>
+                    </div>
+                </a>
+                <a href="https://digitalheroes.co.in" target="_blank" class="link-card">
+                    <span class="icon">🌐</span>
+                    <div>
+                        <div class="title">Company Website</div>
+                        <div class="desc">digitalheroes.co.in</div>
+                    </div>
+                </a>
+                <a href="https://youtube.com/@DigitalMarketingHeroes" target="_blank" class="link-card">
+                    <span class="icon">📺</span>
+                    <div>
+                        <div class="title">YouTube Channel</div>
+                        <div class="desc">2.5M+ Subscribers</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p><strong>Welcome to Digital Heroes! Your journey starts now. 🚀</strong></p>
+            <p style="margin-top: 10px;">Onboarding Guide v1.0 | January 2026</p>
+        </footer>
+    </div>
+</body>
+
+</html>
