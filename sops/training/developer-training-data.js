@@ -749,3 +749,1228 @@ const quizQuestions = [
 
 // Export all
 console.log("Enhanced Developer Training File Generated!");
+
+// =============================================================================
+// EXPANDED CONTENT: SHOPIFY DEVELOPER DEEP DIVE
+// =============================================================================
+
+// Expanded Task 2 Content - Platform Fundamentals Deep Dive
+const task2ContentExpanded = `
+<h2>📚 PART 2: PLATFORM FUNDAMENTALS - Shopify Architecture</h2>
+
+<div class="content-section">
+    <h3>🏗️ Online Store 2.0 Architecture</h3>
+    <p>Shopify's Online Store 2.0 revolutionized theme development. Understanding this architecture is <strong>non-negotiable</strong>.</p>
+    
+    <div class="highlight-box">
+        <strong>Key OS 2.0 Features:</strong>
+        <ul>
+            <li><strong>JSON Templates:</strong> No more hardcoded templates - sections everywhere</li>
+            <li><strong>Section Rendering API:</strong> Dynamic section loading for AJAX</li>
+            <li><strong>App Blocks:</strong> Apps integrate directly into theme sections</li>
+            <li><strong>Metafields Everywhere:</strong> Custom data on any resource</li>
+            <li><strong>Theme Architecture:</strong> Structured file organization</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📁 Theme File Structure</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Folder</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Examples</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>/assets</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CSS, JS, images</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">base.css, theme.js</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>/config</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Theme settings</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">settings_schema.json, settings_data.json</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>/layout</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Page wrappers</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">theme.liquid, password.liquid</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>/locales</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Translation strings</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">en.default.json, es.json</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>/sections</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reusable modules</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">header.liquid, featured-collection.liquid</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>/snippets</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Small reusable bits</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">product-card.liquid, icons.liquid</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>/templates</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Page blueprints (JSON)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">product.json, collection.json</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🛍️ Product/Variant/Metafield Hierarchy</h3>
+    <div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; font-family: monospace;">
+        <pre style="margin: 0; color: #E2E8F0;">
+PRODUCT (Parent)
+├── title, description, vendor, product_type
+├── images[] (first image = featured)
+├── tags[]
+├── metafields (custom data)
+│
+└── VARIANTS[] (Children)
+    ├── title, price, compare_at_price
+    ├── sku, barcode
+    ├── inventory_quantity
+    ├── option1, option2, option3
+    └── metafields (variant-specific data)
+        </pre>
+    </div>
+    
+    <div class="warning-box" style="margin-top: 15px;">
+        <strong>⚠️ Critical Limits:</strong>
+        <ul>
+            <li>Max 100 variants per product</li>
+            <li>Max 3 options (Size, Color, Material)</li>
+            <li>Max 250 images per product</li>
+            <li>Each variant can only have 1 image</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Metafields Mastery</h3>
+    <p>Metafields allow you to store custom data on any Shopify resource. This is <strong>essential</strong> for advanced customizations.</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Resource</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Common Metafields</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use Case</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">specifications, materials, care_instructions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product detail tabs</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Variant</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">weight_unit, dimensions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shipping calculator</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Collection</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">banner_video, collection_story</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom collection pages</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Customer</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">company_name, vip_tier</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">B2B, loyalty programs</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shop</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">announcement_bar, global_settings</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Store-wide config</td>
+        </tr>
+    </table>
+    
+    <div class="highlight-box">
+        <strong>Liquid Access:</strong>
+        <pre style="background: rgba(30, 41, 59, 0.8); padding: 15px; border-radius: 8px; overflow-x: auto;">{{ product.metafields.custom.specifications.value }}
+{{ product.metafields.custom.care_instructions | metafield_tag }}</pre>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🌍 Multi-Currency & International Setup</h3>
+    <p>Shopify Markets allows selling to multiple countries with localized experiences.</p>
+    
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #6366F1;">
+            <h4 style="color: #6366F1; margin-top: 0;">Currency</h4>
+            <ul>
+                <li>Shopify Payments enables auto-conversion</li>
+                <li>Use <code>| money</code> filter (auto-converts)</li>
+                <li><strong>Never</strong> hardcode currency symbols</li>
+            </ul>
+        </div>
+        <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">Language</h4>
+            <ul>
+                <li>Use <code>{{ 'general.button' | t }}</code> for translations</li>
+                <li>All text in locale files, never hardcoded</li>
+                <li>Test RTL languages (Arabic, Hebrew)</li>
+            </ul>
+        </div>
+        <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #F59E0B;">
+            <h4 style="color: #F59E0B; margin-top: 0;">Markets</h4>
+            <ul>
+                <li>Configure duties & import taxes</li>
+                <li>Set up local payment methods</li>
+                <li>Adjust shipping zones per market</li>
+            </ul>
+        </div>
+    </div>
+</div>
+`;
+
+// Expanded Task 4 Content - Liquid Programming Deep Dive
+const task4ContentExpanded = `
+<h2>📚 PART 4: LIQUID PROGRAMMING MASTERY</h2>
+
+<div class="content-section">
+    <h3>💧 Liquid Fundamentals</h3>
+    <p>Liquid is Shopify's templating language. Master it and you master Shopify development.</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+        <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 12px;">
+            <h4 style="color: #6366F1; margin-top: 0;">{{ Output Tags }}</h4>
+            <p>Output data to the page</p>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;">{{ product.title }}
+{{ product.price | money }}
+{{ 'now' | date: "%B %d, %Y" }}</pre>
+        </div>
+        <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px;">
+            <h4 style="color: #10B981; margin-top: 0;">{% Logic Tags %}</h4>
+            <p>Control flow, no output</p>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;">{% if product.available %}
+  In Stock
+{% endif %}
+
+{% for item in cart.items %}
+  {{ item.title }}
+{% endfor %}</pre>
+        </div>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔧 Essential Filters</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Filter</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| money</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Format price with currency</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ product.price | money }}</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| image_url</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Get sized image URL</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ img | image_url: width: 400 }}</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| t</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Translate string</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ 'products.add_to_cart' | t }}</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| append</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add to end of string</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ 'file' | append: '.css' }}</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| where</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Filter array</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ products | where: 'available', true }}</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| sort</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sort array</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ products | sort: 'price' }}</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| default</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fallback value</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ product.vendor | default: 'Digital Heroes' }}</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| json</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Convert to JSON</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">{{ product | json }}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Common Patterns</h3>
+    
+    <div class="highlight-box">
+        <strong>Pattern 1: Related Products</strong>
+        <pre style="background: rgba(30, 41, 59, 0.8); padding: 15px; border-radius: 8px; overflow-x: auto; margin-top: 10px;">
+{% assign related = product.collections.first.products | where: 'available', true %}
+{% for item in related limit: 4 %}
+  {% unless item.id == product.id %}
+    {% render 'product-card', product: item %}
+  {% endunless %}
+{% endfor %}
+        </pre>
+    </div>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Pattern 2: Color Swatches</strong>
+        <pre style="background: rgba(30, 41, 59, 0.8); padding: 15px; border-radius: 8px; overflow-x: auto; margin-top: 10px;">
+{% for option in product.options_with_values %}
+  {% if option.name == 'Color' %}
+    {% for value in option.values %}
+      <button 
+        class="swatch"
+        style="background-color: {{ value | handleize }};"
+        data-value="{{ value }}"
+      >
+        {{ value }}
+      </button>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+        </pre>
+    </div>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Pattern 3: Cart Drawer Item</strong>
+        <pre style="background: rgba(30, 41, 59, 0.8); padding: 15px; border-radius: 8px; overflow-x: auto; margin-top: 10px;">
+{% for item in cart.items %}
+  <div class="cart-item" data-key="{{ item.key }}">
+    <img src="{{ item.image | image_url: width: 100 }}" alt="{{ item.title }}">
+    <div class="cart-item__details">
+      <h4>{{ item.product.title }}</h4>
+      {% if item.variant.title != 'Default Title' %}
+        <p>{{ item.variant.title }}</p>
+      {% endif %}
+      <p>{{ item.line_price | money }}</p>
+    </div>
+    <input type="number" value="{{ item.quantity }}" min="1">
+    <button data-action="remove" data-key="{{ item.key }}">Remove</button>
+  </div>
+{% endfor %}
+        </pre>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🧱 Section Schema Deep Dive</h3>
+    <p>Sections are the building blocks of OS 2.0 themes. Every section needs a schema.</p>
+    
+    <pre style="background: rgba(30, 41, 59, 0.8); padding: 20px; border-radius: 12px; overflow-x: auto;">
+{% schema %}
+{
+  "name": "Featured Collection",
+  "tag": "section",
+  "class": "featured-collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Shop Our Best Sellers"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4,
+      "label": "Products to Show"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Desktop Columns",
+      "options": [
+        { "value": "2", "label": "2 columns" },
+        { "value": "3", "label": "3 columns" },
+        { "value": "4", "label": "4 columns" }
+      ],
+      "default": "4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Card",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_vendor",
+          "label": "Show Vendor",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection"
+    }
+  ]
+}
+{% endschema %}
+    </pre>
+    
+    <div class="warning-box" style="margin-top: 15px;">
+        <strong>⚠️ Common Schema Mistakes:</strong>
+        <ul>
+            <li>Missing comma between settings - causes entire section to break</li>
+            <li>Using 'type' instead of 'id' for referencing - they're different!</li>
+            <li>Forgetting 'presets' - section won't appear in theme editor</li>
+            <li>Invalid JSON syntax - always validate with JSON linter</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚠️ Deprecated vs Modern Tags</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ DEPRECATED</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ USE INSTEAD</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% include 'snippet' %}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% render 'snippet' %}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Render is faster, isolated scope</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| img_url: '400x'</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| image_url: width: 400</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New syntax, more options</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ product.featured_image }}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ product.featured_media }}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Media includes images, video, 3D</td>
+        </tr>
+    </table>
+</div>
+`;
+
+// Expanded Task 6 Content - Speed Optimization Deep Dive
+const task6ContentExpanded = `
+<h2>📚 PART 6: SPEED OPTIMIZATION - Core Web Vitals Mastery</h2>
+
+<div class="content-section">
+    <h3>⚡ Why Speed = Money</h3>
+    <div class="highlight-box">
+        <strong>The Speed/Revenue Connection:</strong>
+        <ul>
+            <li>Every 1 second delay = <strong>7% conversion drop</strong></li>
+            <li>Amazon: 100ms delay = 1% revenue loss</li>
+            <li>Google: 3+ second load = 53% mobile users bounce</li>
+            <li>Mobile users expect < 3 seconds to load</li>
+        </ul>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ Digital Heroes Standard:</strong><br>
+        <ul>
+            <li>Mobile PageSpeed: <strong>85+</strong> (minimum)</li>
+            <li>Desktop PageSpeed: <strong>90+</strong> (minimum)</li>
+            <li>No project launches under these thresholds</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Core Web Vitals Explained</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Name</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Good</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What It Measures</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>LCP</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Largest Contentful Paint</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">< 2.5s</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">When main content loads</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>FID</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First Input Delay</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">< 100ms</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Time to first interaction</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CLS</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cumulative Layout Shift</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">< 0.1</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Visual stability</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>INP</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Interaction to Next Paint</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">< 200ms</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Responsiveness (replaced FID)</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🖼️ Image Optimization</h3>
+    <p>Images are typically 50-80% of page weight. Optimize them or suffer.</p>
+    
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #6366F1;">
+            <h4 style="color: #6366F1; margin-top: 0;">Use image_url with width</h4>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;">{{ image | image_url: width: 400 }}
+{{ image | image_url: width: 800, height: 600, crop: 'center' }}</pre>
+        </div>
+        <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">Always use loading="lazy"</h4>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;"><img 
+  src="{{ image | image_url: width: 400 }}"
+  loading="lazy"
+  width="400"
+  height="300"
+  alt="{{ image.alt | escape }}"
+></pre>
+        </div>
+        <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #F59E0B;">
+            <h4 style="color: #F59E0B; margin-top: 0;">Use srcset for responsive</h4>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;"><img 
+  srcset="{{ image | image_url: width: 400 }} 400w,
+          {{ image | image_url: width: 800 }} 800w,
+          {{ image | image_url: width: 1200 }} 1200w"
+  sizes="(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px"
+></pre>
+        </div>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ Hero Images (LCP Killers):</strong>
+        <ul>
+            <li>Do NOT lazy load above-the-fold images</li>
+            <li>Add <code>loading="eager"</code> and <code>fetchpriority="high"</code></li>
+            <li>Use appropriate sizes (mobile: 750w max, desktop: 1500w max)</li>
+            <li>Compress before upload (TinyPNG, Squoosh)</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📜 JavaScript Optimization</h3>
+    
+    <div class="highlight-box">
+        <strong>Script Loading Strategies:</strong>
+        <pre style="background: rgba(30, 41, 59, 0.8); padding: 15px; border-radius: 8px; margin-top: 10px;">
+&lt;!-- WRONG: Blocks rendering --&gt;
+&lt;script src="file.js"&gt;&lt;/script&gt;
+
+&lt;!-- BETTER: Parse while loading --&gt;
+&lt;script src="file.js" async&gt;&lt;/script&gt;
+
+&lt;!-- BEST: Execute after DOM ready --&gt;
+&lt;script src="file.js" defer&gt;&lt;/script&gt;
+        </pre>
+    </div>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Issue</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Impact</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fix</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Too many apps</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Each adds 50-500KB JS</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Limit to 5-8 apps max</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Inline scripts</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Block rendering</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Move to external file, defer</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unused code</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Wasted bytes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clean uninstall app residue</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">jQuery dependency</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">~90KB overhead</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use vanilla JS when possible</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🔧 Speed Optimization Checklist</h3>
+    <div class="highlight-box">
+        <ul>
+            <li>☐ Run PageSpeed Insights (mobile first)</li>
+            <li>☐ Compress all images before upload</li>
+            <li>☐ Use loading="lazy" for below-fold images</li>
+            <li>☐ Use loading="eager" for hero images</li>
+            <li>☐ Add width/height attributes to prevent CLS</li>
+            <li>☐ Defer non-critical JavaScript</li>
+            <li>☐ Audit and remove unused apps</li>
+            <li>☐ Clean up leftover app code in theme</li>
+            <li>☐ Preload critical fonts</li>
+            <li>☐ Use system fonts or limit custom fonts to 2</li>
+            <li>☐ Enable browser caching</li>
+            <li>☐ Minimize render-blocking CSS</li>
+        </ul>
+    </div>
+</div>
+`;
+
+// Expanded Task 7 Content - Apps & Integrations
+const task7ContentExpanded = `
+<h2>📚 PART 7: APPS & INTEGRATIONS - The Healthy App Stack</h2>
+
+<div class="content-section">
+    <h3>🔌 The 5-8 App Rule</h3>
+    <div class="warning-box">
+        <strong>⚠️ Critical Rule:</strong> Never exceed 5-8 apps on a store. Every additional app adds:
+        <ul>
+            <li>50-500KB of JavaScript</li>
+            <li>Potential conflicts with other apps</li>
+            <li>Security vulnerabilities</li>
+            <li>Store speed degradation</li>
+            <li>Dependency on third-party uptime</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Essential App Categories</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Category</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Recommended Apps</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Notes</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reviews</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Judge.me, Loox, Yotpo</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pick ONE, never multiple</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email Marketing</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Klaviyo, Mailchimp, Omnisend</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Klaviyo preferred for Shopify</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Upsell/Cross-sell</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cart Upsell, ReConvert</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Watch for checkout conflicts</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shipping</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ShipStation, Easyship</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">International shipping complex</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Analytics</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Triple Whale, Lifetimely</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use for attribution</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Backup</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rewind</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">MANDATORY for every store</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🗑️ Clean Uninstall Protocol</h3>
+    <p>Deleting an app from Shopify admin does NOT remove its code from your theme!</p>
+    
+    <div class="highlight-box">
+        <strong>Clean Uninstall Steps:</strong>
+        <ol>
+            <li>Document what the app does (screenshot settings)</li>
+            <li>Uninstall from Apps > App Settings</li>
+            <li>Search theme files for app name/vendor</li>
+            <li>Check these files for leftover code:
+                <ul>
+                    <li><code>theme.liquid</code> (scripts, stylesheets)</li>
+                    <li><code>snippets/</code> folder</li>
+                    <li><code>assets/</code> folder (CSS/JS files)</li>
+                    <li><code>config/settings_data.json</code></li>
+                </ul>
+            </li>
+            <li>Remove all references</li>
+            <li>Test site functionality</li>
+            <li>Run PageSpeed - score should improve</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚠️ App Conflict Resolution</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Symptom</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Likely Cause</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Solution</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cart not updating</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Multiple cart apps</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use only one cart app</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">JS console errors</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">jQuery version conflict</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standardize jQuery version</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Checkout broken</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Checkout script conflict</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Disable checkout apps one by one</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Slow page load</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Too many apps</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Audit and reduce</td>
+        </tr>
+    </table>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Debug Process:</strong>
+        <ol>
+            <li>Test on fresh Dawn theme (isolate theme vs app)</li>
+            <li>Disable apps one by one</li>
+            <li>Check browser console for specific errors</li>
+            <li>Contact app support with specific error messages</li>
+        </ol>
+    </div>
+</div>
+`;
+
+// Expanded Task 9 Content - QA & Testing Deep Dive
+const task9ContentExpanded = `
+<h2>📚 PART 9: QA & TESTING - The 60-Point Quality Gate</h2>
+
+<div class="content-section">
+    <h3>🎯 The Digital Heroes QA Standard</h3>
+    <div class="warning-box">
+        <strong>⚠️ Zero Tolerance Policy:</strong><br>
+        No code goes live without passing our 60-point checklist. This is non-negotiable. Every bug on production is a reflection of YOUR professionalism.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📱 Device & Browser Testing Matrix</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Platform</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Browsers</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Priority</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">iOS (iPhone)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Safari, Chrome</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🔴 Critical (largest segment)</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Android</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chrome, Samsung Internet</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🔴 Critical</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Windows</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chrome, Edge, Firefox</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🟡 High</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">MacOS</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Safari, Chrome</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🟡 High</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">iPad/Tablet</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Safari, Chrome</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🟢 Medium</td>
+        </tr>
+    </table>
+    
+    <div class="highlight-box">
+        <strong>Testing Tools:</strong>
+        <ul>
+            <li><strong>BrowserStack/LambdaTest:</strong> Real device testing</li>
+            <li><strong>Chrome DevTools:</strong> Device emulation (not perfect)</li>
+            <li><strong>Physical Devices:</strong> Best for iOS Safari issues</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>✅ 60-Point QA Checklist</h3>
+    
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #6366F1;">
+            <h4 style="color: #6366F1; margin-top: 0;">HOMEPAGE (10 points)</h4>
+            <ul>
+                <li>☐ Hero loads under 3 seconds</li>
+                <li>☐ All images display correctly</li>
+                <li>☐ Navigation works on all devices</li>
+                <li>☐ Mobile menu opens/closes properly</li>
+                <li>☐ Newsletter signup works</li>
+                <li>☐ Footer links are correct</li>
+                <li>☐ Trust badges display</li>
+                <li>☐ Announcement bar (if any) is dismissible</li>
+                <li>☐ No horizontal scroll on mobile</li>
+                <li>☐ Page scroll is smooth</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">COLLECTION PAGES (10 points)</h4>
+            <ul>
+                <li>☐ Products display correctly</li>
+                <li>☐ Filters work (price, size, color)</li>
+                <li>☐ Sort functionality works</li>
+                <li>☐ Pagination/infinite scroll works</li>
+                <li>☐ Quick view (if applicable)</li>
+                <li>☐ Product cards have hover states</li>
+                <li>☐ Sale prices show correctly</li>
+                <li>☐ Sold out badges display</li>
+                <li>☐ Collection image/description shows</li>
+                <li>☐ Mobile grid looks good</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #F59E0B;">
+            <h4 style="color: #F59E0B; margin-top: 0;">PRODUCT PAGES (15 points)</h4>
+            <ul>
+                <li>☐ Images zoom/swipe correctly</li>
+                <li>☐ Variant selector works</li>
+                <li>☐ Price updates on variant change</li>
+                <li>☐ Image updates on variant change</li>
+                <li>☐ Add to Cart button works</li>
+                <li>☐ Buy Now button (if applicable)</li>
+                <li>☐ Quantity selector works</li>
+                <li>☐ Description/tabs content loads</li>
+                <li>☐ Reviews section works</li>
+                <li>☐ Related products show</li>
+                <li>☐ Trust elements visible</li>
+                <li>☐ Mobile CTAs sticky (if designed)</li>
+                <li>☐ Metafields display correctly</li>
+                <li>☐ Size chart opens (if applicable)</li>
+                <li>☐ Sold out variants are disabled</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(239, 68, 68, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #EF4444;">
+            <h4 style="color: #EF4444; margin-top: 0;">CART & CHECKOUT (15 points)</h4>
+            <ul>
+                <li>☐ Add to Cart shows feedback</li>
+                <li>☐ Cart drawer/page opens correctly</li>
+                <li>☐ Quantity can be changed</li>
+                <li>☐ Items can be removed</li>
+                <li>☐ Subtotal updates correctly</li>
+                <li>☐ Discount codes work</li>
+                <li>☐ Shipping calculator (if present)</li>
+                <li>☐ Checkout button works</li>
+                <li>☐ Checkout loads properly</li>
+                <li>☐ All payment methods work</li>
+                <li>☐ Express checkout buttons display</li>
+                <li>☐ Order confirmation page works</li>
+                <li>☐ Test order goes through</li>
+                <li>☐ Order confirmation email received</li>
+                <li>☐ Order appears in Shopify Admin</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(139, 92, 246, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #8B5CF6;">
+            <h4 style="color: #8B5CF6; margin-top: 0;">TECHNICAL (10 points)</h4>
+            <ul>
+                <li>☐ No console errors</li>
+                <li>☐ No broken images (404s)</li>
+                <li>☐ No broken links</li>
+                <li>☐ PageSpeed Mobile 85+</li>
+                <li>☐ PageSpeed Desktop 90+</li>
+                <li>☐ SSL certificate valid</li>
+                <li>☐ Favicon displays</li>
+                <li>☐ Meta titles/descriptions set</li>
+                <li>☐ Schema markup valid</li>
+                <li>☐ Robots.txt correct</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🐞 Console Error Interpretation</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Error</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meaning</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fix</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>Uncaught TypeError</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">JS accessing undefined</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add null checks</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>404 Not Found</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Missing file/image</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Upload or fix path</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>CORS blocked</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cross-origin request</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use proxy or server-side</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>Liquid error</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Bad Liquid syntax</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check Liquid code</td>
+        </tr>
+    </table>
+</div>
+`;
+
+// Expanded Task 11 Content - Crisis Management Deep Dive
+const task11ContentExpanded = `
+<h2>📚 PART 11: CRISIS MANAGEMENT - Handling Dev Emergencies</h2>
+
+<div class="content-section">
+    <h3>🔥 Crisis Response Protocol</h3>
+    <div class="warning-box">
+        <strong>⚠️ First Rule of Crisis:</strong><br>
+        <strong>DON'T PANIC.</strong> Every minute you spend panicking is money the client is losing. Stay calm, be methodical, communicate clearly.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚨 Scenario 1: Site Completely Down</h3>
+    <div class="highlight-box">
+        <strong>Immediate Actions (0-5 minutes):</strong>
+        <ol>
+            <li><strong>Run diagnostics:</strong>
+                <ul>
+                    <li>Check status.shopify.com - Is Shopify down?</li>
+                    <li>Test in incognito - Is it cache?</li>
+                    <li>Try different network - Is it CDN?</li>
+                </ul>
+            </li>
+            <li><strong>If theme issue:</strong>
+                <ul>
+                    <li>Go to Online Store > Themes</li>
+                    <li>Publish previous backup theme immediately</li>
+                    <li>This restores site in < 30 seconds</li>
+                </ul>
+            </li>
+            <li><strong>Communicate to PM:</strong>
+                <ul>
+                    <li>"Site issue detected at [time]. Scope: [description]. ETA to fix: [time]"</li>
+                    <li>Never say "I don't know when"</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Root Cause Analysis (after recovery):</strong>
+        <ul>
+            <li>What changed in the last 24 hours?</li>
+            <li>Was an app updated?</li>
+            <li>Was theme code edited?</li>
+            <li>Document in post-mortem</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚨 Scenario 2: Checkout Broken</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Symptom</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Likely Cause</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Immediate Fix</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Blank checkout page</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Script error</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Disable all checkout apps</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Payment declined always</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Gateway issue</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check Payments settings, enable backup</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shipping not showing</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Zone misconfigured</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check shipping zones for gaps</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Discount not applying</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Expired/conditions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check discount settings</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚨 Scenario 3: Data Loss</h3>
+    <div class="highlight-box">
+        <strong>Recovery Options:</strong>
+        <ol>
+            <li><strong>Rewind App:</strong> Restore to specific point in time (if installed)</li>
+            <li><strong>CSV Exports:</strong> Check Settings > Data > Export for recent exports</li>
+            <li><strong>Theme Backup:</strong> Download previous theme version from theme library</li>
+            <li><strong>Shopify Support:</strong> For severe cases, contact support (they have backups)</li>
+        </ol>
+    </div>
+    
+    <div class="warning-box" style="margin-top: 15px;">
+        <strong>⚠️ Prevention is Key:</strong>
+        <ul>
+            <li>ALWAYS install Rewind on every store</li>
+            <li>Never delete products/collections without backup</li>
+            <li>Test in dev theme, never live</li>
+            <li>Export CSVs before bulk operations</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💬 Crisis Communication Templates</h3>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8);">
+        <strong>Template 1: Immediate Alert to PM</strong>
+        <pre style="margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px;">
+🚨 ALERT: [Store Name] - [Issue Type]
+Time Detected: [HH:MM]
+Impact: [Brief description - e.g., "Checkout unusable"]
+Current Action: [What you're doing now]
+ETA to Resolution: [Time estimate]
+Updates: I'll update every 15 minutes until resolved.
+        </pre>
+    </div>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); margin-top: 15px;">
+        <strong>Template 2: Resolution Confirmation</strong>
+        <pre style="margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px;">
+✅ RESOLVED: [Store Name] - [Issue Type]
+Time Resolved: [HH:MM]
+Duration: [X] minutes
+Root Cause: [Brief explanation]
+Fix Applied: [What was done]
+Preventive Action: [What we'll do to prevent recurrence]
+        </pre>
+    </div>
+</div>
+`;
+
+// Expanded Task 12 Content - AI-Powered Development
+const task12ContentExpanded = `
+<h2>📚 PART 12: AI-POWERED DEVELOPMENT</h2>
+
+<div class="content-section">
+    <h3>🤖 AI as Your Coding Partner</h3>
+    <p>AI tools like ChatGPT and GitHub Copilot can 10x your productivity—if used correctly.</p>
+    
+    <div class="highlight-box">
+        <strong>When to Use AI:</strong>
+        <ul>
+            <li>✅ Boilerplate code (loops, conditions, basic patterns)</li>
+            <li>✅ Explaining complex code</li>
+            <li>✅ Generating regex patterns</li>
+            <li>✅ Writing documentation</li>
+            <li>✅ Debugging suggestions</li>
+        </ul>
+        
+        <strong>When NOT to Use AI:</strong>
+        <ul>
+            <li>❌ Security-sensitive code without review</li>
+            <li>❌ Business logic without understanding</li>
+            <li>❌ Copy-pasting without testing</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📝 Effective AI Prompts for Shopify</h3>
+    
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #6366F1;">
+            <h4 style="color: #6366F1; margin-top: 0;">Prompt 1: Section Schema</h4>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;">
+"Create a Shopify Liquid section schema for a 
+testimonial slider. Include settings for:
+- Heading text
+- Background color picker  
+- Number of testimonials (2-6 range)
+- Blocks for individual testimonials with 
+  name, role, image, and quote fields.
+Use OS 2.0 syntax. Include presets."
+            </pre>
+        </div>
+        
+        <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">Prompt 2: JavaScript Pattern</h4>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;">
+"Write vanilla JavaScript for Shopify cart 
+drawer that:
+1. Opens on Add to Cart click
+2. Fetches cart.js via AJAX
+3. Renders cart items 
+4. Handles quantity updates
+5. Handles remove item
+6. Closes on overlay click
+7. No jQuery dependency"
+            </pre>
+        </div>
+        
+        <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 12px; border-left: 4px solid #F59E0B;">
+            <h4 style="color: #F59E0B; margin-top: 0;">Prompt 3: Debugging Help</h4>
+            <pre style="background: rgba(30, 41, 59, 0.8); padding: 10px; border-radius: 8px;">
+"Shopify Liquid error on product page:
+[Paste exact error message]
+
+This is my code:
+[Paste relevant code]
+
+What's wrong and how do I fix it?
+Explain the issue clearly."
+            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚠️ AI Code Verification Checklist</h3>
+    <div class="warning-box">
+        <strong>NEVER trust AI code blindly. Always verify:</strong>
+        <ul>
+            <li>☐ Does it use <code>render</code> not <code>include</code>?</li>
+            <li>☐ Does it use <code>image_url</code> not <code>img_url</code>?</li>
+            <li>☐ Does it handle null/undefined cases?</li>
+            <li>☐ Is the JSON schema valid?</li>
+            <li>☐ Does it work on mobile?</li>
+            <li>☐ Are there any console errors?</li>
+            <li>☐ Does it follow DRY principles?</li>
+            <li>☐ Is it secure (no XSS vulnerabilities)?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔧 GitHub Copilot Best Practices</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Practice</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Write clear comments first</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Copilot uses context to generate better code</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Accept suggestion, then modify</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use as starting point, not final answer</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tab through alternatives</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First suggestion isn't always best</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Test every suggestion</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">AI makes confident mistakes</td>
+        </tr>
+    </table>
+</div>
+`;
+
+// Additional Quiz Questions for Expanded Content
+const additionalQuizQuestions = [
+    // Platform Fundamentals (15 more)
+    {question: "What file format are OS 2.0 templates stored in?", options: ["Liquid", "JSON", "YAML", "XML"], correct: 1},
+    {question: "Maximum variants per product?", options: ["50", "100", "200", "500"], correct: 1},
+    {question: "Where are translation strings stored?", options: ["/assets", "/locales", "/config", "/templates"], correct: 1},
+    {question: "What folder contains sections?", options: ["/snippets", "/sections", "/templates", "/layout"], correct: 1},
+    {question: "Settings_schema.json is in which folder?", options: ["/assets", "/config", "/layout", "/locales"], correct: 1},
+    {question: "How many options maximum per product?", options: ["2", "3", "4", "5"], correct: 1},
+    {question: "To format price correctly, use which filter?", options: ["| currency", "| money", "| price", "| format"], correct: 1},
+    {question: "Hardcoding currency symbols is:", options: ["Recommended", "Forbidden", "Optional", "Required"], correct: 1},
+    {question: "Which file wraps all pages?", options: ["header.liquid", "theme.liquid", "base.liquid", "index.liquid"], correct: 1},
+    {question: "Metafields are accessed via:", options: ["product.meta", "product.metafields", "product.custom", "product.data"], correct: 1},
+    
+    // Liquid Programming (15 more)
+    {question: "{{ }} tags are for:", options: ["Logic", "Output", "Comments", "Loops"], correct: 1},
+    {question: "{% %} tags are for:", options: ["Output", "Logic/Control", "Comments", "Variables"], correct: 1},
+    {question: "Which filter translates strings?", options: ["| translate", "| t", "| lang", "| i18n"], correct: 1},
+    {question: "To get sized image, use:", options: ["img_url", "image_url", "picture_url", "media_url"], correct: 1},
+    {question: "Correct loop syntax is:", options: ["loop x in y", "foreach x in y", "{% for x in y %}", "for(x in y)"], correct: 2},
+    {question: "Schema must be in which section of file?", options: ["Top", "Middle", "Bottom", "Anywhere"], correct: 2},
+    {question: "Missing comma in schema causes:", options: ["Warning", "Entire section breaks", "Nothing", "Slow load"], correct: 1},
+    {question: "Presets in schema enable:", options: ["Speed", "Section in theme editor", "Caching", "Analytics"], correct: 1},
+    {question: "Use 'render' instead of:", options: ["assign", "include", "capture", "section"], correct: 1},
+    {question: "Default filter provides:", options: ["Speed", "Fallback values", "Caching", "Validation"], correct: 1},
+    
+    // Speed Optimization (15 more) 
+    {question: "Every 1 second delay equals what conversion drop?", options: ["3%", "5%", "7%", "10%"], correct: 2},
+    {question: "LCP stands for:", options: ["Lazy Content Paint", "Largest Contentful Paint", "Load Complete Point", "Layout Complete Paint"], correct: 1},
+    {question: "CLS measures:", options: ["Speed", "Visual Stability", "Interactivity", "Load time"], correct: 1},
+    {question: "Good LCP is under:", options: ["1s", "2.5s", "5s", "10s"], correct: 1},
+    {question: "Good CLS is under:", options: ["0.1", "0.5", "1.0", "2.0"], correct: 0},
+    {question: "Hero images should use:", options: ["loading=lazy", "loading=eager", "loading=defer", "No loading attr"], correct: 1},
+    {question: "To prevent CLS, images need:", options: ["Alt text", "Title", "Width/Height attributes", "Lazy loading"], correct: 2},
+    {question: "Script defer means:", options: ["Load first", "Execute after DOM", "Block rendering", "Ignore"], correct: 1},
+    {question: "Images are typically what % of page weight?", options: ["10-20%", "30-40%", "50-80%", "90%+"], correct: 2},
+    {question: "WebP provides:", options: ["Better SEO", "Better compression", "Better colors", "Better fonts"], correct: 1},
+    
+    // Apps & Integration (10 more)
+    {question: "Maximum recommended apps?", options: ["3-5", "5-8", "10-15", "20+"], correct: 1},
+    {question: "Uninstalling app removes theme code?", options: ["Yes", "No - manual cleanup needed", "Sometimes", "Always"], correct: 1},
+    {question: "Each app adds how much JavaScript?", options: ["1-10KB", "50-500KB", "1-5MB", "Nothing"], correct: 1},
+    {question: "Which backup app is recommended?", options: ["Backup Pro", "Rewind", "Save It", "Theme Guard"], correct: 1},
+    {question: "Too many cart apps cause:", options: ["Speed boost", "Cart not updating", "Better UX", "Nothing"], correct: 1},
+    {question: "jQuery version conflicts cause:", options: ["Speed boost", "JS console errors", "Better UX", "Nothing"], correct: 1},
+    {question: "App residue is found in:", options: ["Only assets", "theme.liquid and snippets", "Only config", "Nowhere"], correct: 1},
+    {question: "After clean uninstall, PageSpeed should:", options: ["Stay same", "Improve", "Decrease", "Crash"], correct: 1},
+    
+    // QA & Testing (10 more)
+    {question: "Most critical testing platform?", options: ["Windows Chrome", "iOS Safari", "Firefox", "Opera"], correct: 1},
+    {question: "Digital Heroes QA standard is:", options: ["30 points", "45 points", "60 points", "100 points"], correct: 2},
+    {question: "Zero Tolerance means:", options: ["Some bugs OK", "No bugs on production", "Client decides", "Speed matters more"], correct: 1},
+    {question: "DevTools emulation is:", options: ["Perfect", "Not perfect - use real devices", "Better than real", "Useless"], correct: 1},
+    {question: "Console red errors should be:", options: ["Ignored", "Fixed immediately", "Noted for later", "Celebrated"], correct: 1},
+    {question: "Test orders should use:", options: ["Real payment", "Test mode", "Neither", "Client's card"], correct: 1},
+    {question: "Broken checkout priority is:", options: ["Low", "Medium", "Critical - immediate fix", "Not our problem"], correct: 2},
+    
+    // Crisis Management (10 more)
+    {question: "First rule of crisis is:", options: ["Panic", "Don't panic", "Blame someone", "Hide"], correct: 1},
+    {question: "Site down - first check:", options: ["Delete theme", "status.shopify.com", "Reboot computer", "Email client"], correct: 1},
+    {question: "Fastest recovery method:", options: ["Rebuild theme", "Publish backup theme", "Contact Shopify", "Wait"], correct: 1},
+    {question: "Crisis updates should be:", options: ["Never", "Every 15 minutes", "Once a day", "When fixed"], correct: 1},
+    {question: "Post-mortem answers:", options: ["Who to blame", "Root cause & prevention", "How to hide it", "Nothing"], correct: 1},
+    {question: "Rewind app is for:", options: ["Speed", "Backups & recovery", "SEO", "Analytics"], correct: 1},
+    
+    // AI Development (5 more)
+    {question: "AI code should be:", options: ["Trusted 100%", "Always verified", "Never used", "Only for CSS"], correct: 1},
+    {question: "Good AI prompt includes:", options: ["Just 'help'", "Specific requirements", "Nothing detailed", "Random words"], correct: 1},
+    {question: "Copilot uses comments for:", options: ["Nothing", "Better context", "Speed", "Storage"], correct: 1},
+    {question: "AI often uses deprecated:", options: ["render", "include", "capture", "assign"], correct: 1},
+    {question: "First suggestion is always:", options: ["Best", "Not always best - check alternatives", "Wrong", "Ignored"], correct: 1}
+];
