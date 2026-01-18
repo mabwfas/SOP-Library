@@ -887,6 +887,96 @@ const task5Content = `
     </table>
 </div>
 
+<div class="content-section">
+    <h3>🛒 Add to Cart Button Manipulation - Opening Cart Drawer</h3>
+    <p>One of the most common customizations is making the "Add to Cart" button open a cart drawer instead of redirecting to the cart page. Here's how it works:</p>
+    
+    <div class="highlight-box">
+        <strong>The Flow:</strong>
+        <ol>
+            <li>User clicks "Add to Cart" button</li>
+            <li>JavaScript intercepts the click (prevents default form submit)</li>
+            <li>AJAX call adds product to cart via Shopify Cart API</li>
+            <li>Cart drawer slides open showing the added item</li>
+            <li>User can continue shopping or proceed to checkout</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💻 JavaScript: Cart API & Drawer Toggle</h3>
+    <p>Here's the core JavaScript pattern for this functionality:</p>
+    
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0; overflow-x: auto;">
+        <span style="color: #6a9955;">// 1. Listen for Add to Cart form submit</span><br>
+        <span style="color: #569cd6;">const</span> form = document.querySelector(<span style="color: #ce9178;">'form[action*="/cart/add"]'</span>);<br><br>
+        
+        form.addEventListener(<span style="color: #ce9178;">'submit'</span>, <span style="color: #569cd6;">async</span> (e) =&gt; {<br>
+        &nbsp;&nbsp;e.preventDefault(); <span style="color: #6a9955;">// Stop normal form submission</span><br><br>
+        
+        &nbsp;&nbsp;<span style="color: #6a9955;">// 2. Get form data</span><br>
+        &nbsp;&nbsp;<span style="color: #569cd6;">const</span> formData = <span style="color: #569cd6;">new</span> FormData(form);<br><br>
+        
+        &nbsp;&nbsp;<span style="color: #6a9955;">// 3. Add to cart via AJAX</span><br>
+        &nbsp;&nbsp;<span style="color: #569cd6;">const</span> response = <span style="color: #569cd6;">await</span> fetch(<span style="color: #ce9178;">'/cart/add.js'</span>, {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;method: <span style="color: #ce9178;">'POST'</span>,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;body: formData<br>
+        &nbsp;&nbsp;});<br><br>
+        
+        &nbsp;&nbsp;<span style="color: #569cd6;">if</span> (response.ok) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955;">// 4. Open the cart drawer</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;openCartDrawer();<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955;">// 5. Update cart count in header</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;updateCartCount();<br>
+        &nbsp;&nbsp;}<br>
+        });
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ Key Points:</strong>
+        <ul>
+            <li><code>e.preventDefault()</code> - Stops the page from redirecting</li>
+            <li><code>/cart/add.js</code> - Shopify's AJAX endpoint for adding items</li>
+            <li>The drawer is usually a <code>&lt;div&gt;</code> that slides in via CSS transform</li>
+            <li>Most premium themes (Dawn, Impulse, Prestige) already have this built in</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎨 Cart Drawer CSS Pattern</h3>
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0;">
+        <span style="color: #6a9955;">/* Drawer hidden by default */</span><br>
+        .cart-drawer {<br>
+        &nbsp;&nbsp;position: fixed;<br>
+        &nbsp;&nbsp;right: -400px; <span style="color: #6a9955;">/* Hidden off-screen */</span><br>
+        &nbsp;&nbsp;width: 400px;<br>
+        &nbsp;&nbsp;height: 100vh;<br>
+        &nbsp;&nbsp;transition: right 0.3s ease;<br>
+        &nbsp;&nbsp;z-index: 1000;<br>
+        }<br><br>
+        
+        <span style="color: #6a9955;">/* Drawer visible */</span><br>
+        .cart-drawer.is-open {<br>
+        &nbsp;&nbsp;right: 0;<br>
+        }
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔧 Common Drawer Customizations</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Customization</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How To</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add upsell products</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fetch related products via AJAX and display in drawer</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Show free shipping bar</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Calculate cart total vs threshold, show progress</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add gift message field</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use cart attributes to store custom notes</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Quantity +/- buttons</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Update via /cart/change.js endpoint</td></tr>
+    </table>
+</div>
+
 <div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
     <h3>✅ PRACTICAL EXERCISE: PDP Audit</h3>
     <p>Open any Shopify store PDP and check:</p>
@@ -896,6 +986,18 @@ const task5Content = `
         <li>☐ Is there a sticky add-to-cart?</li>
         <li>☐ Are there trust badges below the button?</li>
     </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(34, 197, 94, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ PRACTICAL EXERCISE: Cart Drawer Implementation</h3>
+    <p>Using Antigravity AI or your IDE:</p>
+    <ol>
+        <li>☐ Identify the Add to Cart form in your theme's product template</li>
+        <li>☐ Find the cart drawer component (usually cart-drawer.liquid or similar)</li>
+        <li>☐ Trace the JavaScript that handles form submission</li>
+        <li>☐ Add a console.log to verify the AJAX flow</li>
+        <li>☐ Try adding a custom upsell section to the drawer</li>
+    </ol>
 </div>
 `;
 
@@ -1271,6 +1373,103 @@ const task12Content = `
             <li>☐ No hardcoded currency symbols</li>
             <li>☐ Works on mobile</li>
         </ul>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(139, 92, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>🚀 Antigravity AI: Pull Theme & Edit via Prompts</h3>
+    <p><strong>Antigravity</strong> is Google DeepMind's agentic AI coding assistant. It can pull a Shopify theme from Git/Shopify CLI and make edits based on natural language prompts.</p>
+    
+    <div class="highlight-box">
+        <strong>The Workflow:</strong>
+        <ol>
+            <li><strong>Pull Theme:</strong> Clone your theme locally or use Shopify CLI</li>
+            <li><strong>Set Workspace:</strong> Point Antigravity to the theme folder</li>
+            <li><strong>Prompt for Changes:</strong> Describe what you want in natural language</li>
+            <li><strong>AI Edits Files:</strong> Antigravity modifies Liquid/CSS/JS files</li>
+            <li><strong>Push Changes:</strong> Commit and push to your theme</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💻 Step 1: Pull Theme Locally</h3>
+    <p>Use Shopify CLI to download your theme:</p>
+    
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0;">
+        <span style="color: #6a9955;"># Install Shopify CLI (if not installed)</span><br>
+        npm install -g @shopify/cli<br><br>
+        
+        <span style="color: #6a9955;"># Login to your store</span><br>
+        shopify auth login --store your-store.myshopify.com<br><br>
+        
+        <span style="color: #6a9955;"># Pull the live theme</span><br>
+        shopify theme pull --theme-id 123456789<br><br>
+        
+        <span style="color: #6a9955;"># Or pull to a specific folder</span><br>
+        shopify theme pull --path ./my-theme
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💬 Step 2: Prompt Antigravity for Changes</h3>
+    <p>Once the theme is in your workspace, use natural language prompts:</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Prompt Example</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What Antigravity Does</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Make the Add to Cart button open a drawer instead of redirecting"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Modifies product-form.liquid and adds drawer JS</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Add a % off badge when product is on sale"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Creates snippet with compare_at_price logic</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Add a sticky add to cart bar on mobile"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Creates fixed-position bar with CSS media queries</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Create a related products section using product tags"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Builds section with schema and Liquid loop</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📤 Step 3: Push Changes Back</h3>
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0;">
+        <span style="color: #6a9955;"># Preview changes first (opens preview URL)</span><br>
+        shopify theme dev<br><br>
+        
+        <span style="color: #6a9955;"># Push to development theme</span><br>
+        shopify theme push --theme-id DEV_THEME_ID<br><br>
+        
+        <span style="color: #6a9955;"># Or push to live (be careful!)</span><br>
+        shopify theme push --live<br><br>
+        
+        <span style="color: #6a9955;"># Commit to Git</span><br>
+        git add -A && git commit -m "feat: Cart drawer + sale badge" && git push
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(34, 197, 94, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ PRACTICAL EXERCISE: AI-Powered Theme Editing</h3>
+    <p>Complete this workflow using Antigravity or your preferred AI tool:</p>
+    <ol>
+        <li>☐ Pull a test theme locally using <code>shopify theme pull</code></li>
+        <li>☐ Open the theme folder in your IDE with AI (Cursor, VS Code + Copilot)</li>
+        <li>☐ Prompt: "Add a free shipping progress bar to the cart drawer"</li>
+        <li>☐ Review the AI's changes - check for deprecated tags</li>
+        <li>☐ Test with <code>shopify theme dev</code></li>
+        <li>☐ Push to a development theme</li>
+    </ol>
+    
+    <div class="warning-box" style="margin-top: 15px;">
+        <strong>⚠️ NEVER push AI changes directly to live!</strong> Always test on dev theme first.
     </div>
 </div>
 
