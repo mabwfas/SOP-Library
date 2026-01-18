@@ -165,25 +165,6 @@ function openTask(index) {
     }
 }
 
-
-    if (task.id < 10) {
-        progress.currentTask = task.id + 1;
-    }
-    localStorage.setItem('developerTrainingProgress', JSON.stringify(progress));
-
-    // Update sidebar and progress
-    renderTasksList();
-    updateProgressBar();
-
-    // Auto-advance to next task (instead of showing welcome screen)
-    if (task.id < 10) {
-        openTask(task.id); // Open next task (0-indexed, so current task.id = next index)
-    } else {
-        // Final task completed - close to show certificate option
-        closeTask();
-    }
-}
-
 // Close Task (Reset to Welcome Screen)
 function closeTask() {
     document.getElementById('taskView').style.display = 'none';
