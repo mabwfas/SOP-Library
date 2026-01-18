@@ -524,13 +524,13 @@ function showCertificate() {
                 </div>
             </div>
             
-            <!-- Print Button -->
-            <div style="text-align: center; margin-top: 40px;" class="no-print">
+            <!-- Print & Download Buttons -->
+            <div style="text-align: center; margin-top: 40px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;" class="no-print">
                 <button onclick="printCertificate()" style="
                     background: linear-gradient(135deg, #6366F1, #06B6D4);
                     color: #000;
                     font-weight: 700;
-                    padding: 16px 40px;
+                    padding: 16px 35px;
                     border-radius: 10px;
                     border: none;
                     cursor: pointer;
@@ -539,6 +539,20 @@ function showCertificate() {
                 " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(99, 102, 241, 0.4)';"
                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
                     🖨️ Print Certificate
+                </button>
+                <button onclick="downloadCertificate()" style="
+                    background: linear-gradient(135deg, #10B981, #059669);
+                    color: #000;
+                    font-weight: 700;
+                    padding: 16px 35px;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1.1em;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(16, 185, 129, 0.4)';"
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                    📥 Download Image
                 </button>
             </div>
         </div>
@@ -633,6 +647,81 @@ function closeCertificate() {
 // Print Certificate
 function printCertificate() {
     window.print();
+}
+
+// Download Certificate as Image
+async function downloadCertificate() {
+    const certificateContent = document.getElementById('certificateContent');
+    if (!certificateContent) return;
+
+    // Hide buttons before capture
+    const buttons = certificateContent.querySelectorAll('.no-print');
+    buttons.forEach(btn => btn.style.display = 'none');
+
+    // Load html2canvas dynamically if not loaded
+    if (!window.html2canvas) {
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+        document.head.appendChild(script);
+        await new Promise(resolve => script.onload = resolve);
+    }
+
+    try {
+        // Create canvas from certificate
+        const canvas = await html2canvas(certificateContent, {
+            backgroundColor: '#0f172a',
+            scale: 2, // High resolution
+            useCORS: true,
+            logging: false
+        });
+
+        // Convert to blob and download
+        canvas.toBlob(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+
+            // Create filename with trainee name
+            const safeName = traineeName.replace(/[^a-zA-Z0-9]/g, '_') || 'Developer';
+            a.download = `Digital_Heroes_Certificate_${safeName}.png`;
+
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            // Show success message
+            showDownloadSuccess();
+        }, 'image/png', 1.0);
+    } catch (error) {
+        console.error('Error generating certificate image:', error);
+        alert('Failed to generate certificate image. Please use Print instead.');
+    }
+
+    // Show buttons again
+    buttons.forEach(btn => btn.style.display = '');
+}
+
+// Show download success message
+function showDownloadSuccess() {
+    const toast = document.createElement('div');
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, #10B981, #059669);
+        color: #000;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-weight: 600;
+        z-index: 2000;
+        animation: slideUp 0.3s ease;
+    `;
+    toast.innerHTML = '✅ Certificate downloaded successfully!';
+    document.body.appendChild(toast);
+
+    setTimeout(() => toast.remove(), 3000);
 }
 
 // Show Name Prompt Modal
