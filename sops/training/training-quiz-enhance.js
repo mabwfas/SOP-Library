@@ -36,15 +36,26 @@
         }
 
         window.selectAnswer = function (index) {
-            // Get current question data
+            // Get current question from DOM (more reliable)
+            const headerText = document.querySelector('.quiz-header h3');
+            let currentQuestionIndex = 0;
+            if (headerText) {
+                const match = headerText.textContent.match(/Question (\d+) of/);
+                if (match) currentQuestionIndex = parseInt(match[1]) - 1;
+            }
+
+            // Get quiz data
             const quiz = window.currentQuiz;
-            const currentQuestion = window.currentQuestion;
-            if (!quiz || currentQuestion === undefined) {
+            if (!quiz || !quiz[currentQuestionIndex]) {
                 return originalSelectAnswer.call(this, index);
             }
 
-            const q = quiz[currentQuestion];
+            const q = quiz[currentQuestionIndex];
             const options = window.currentOptions;
+            if (!options || !options[index]) {
+                return originalSelectAnswer.call(this, index);
+            }
+
             const selectedOriginalIndex = options[index].originalIndex;
             const isCorrect = selectedOriginalIndex === q.c;
 
@@ -55,7 +66,7 @@
                 btn.disabled = true;
 
                 // Show correct answer
-                if (options[i].originalIndex === q.c) {
+                if (options[i] && options[i].originalIndex === q.c) {
                     btn.classList.add('correct');
                 }
 
@@ -68,15 +79,8 @@
             // Show feedback
             showAnswerFeedback(isCorrect, q.e || getDefaultExplanation(q, isCorrect));
 
-            // Store answer
-            window.userAnswers = window.userAnswers || [];
-            window.userAnswers[currentQuestion] = selectedOriginalIndex;
-
-            // Enable next button after delay
-            setTimeout(() => {
-                const nextBtn = document.getElementById('nextBtn');
-                if (nextBtn) nextBtn.disabled = false;
-            }, 800);
+            // Call original to store answer
+            originalSelectAnswer.call(this, index);
         };
     }
 
