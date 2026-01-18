@@ -659,3 +659,139 @@ const quizQuestions = [
         correct: 2
     }
 ];
+
+// =============================================================================
+// QUIZ QUESTIONS FOR EACH TASK
+// =============================================================================
+
+const task1Quiz = [
+    { q: "What's the mindset difference between a basic designer and Digital Heroes Designer?", o: ["Speed", "Revenue-focused design thinking", "Tool knowledge", "Experience"], c: 1 },
+    { q: "Design affects business metrics directly:", o: ["Rarely", "Sometimes", "Always - every pixel touches revenue", "Never"], c: 2 },
+    { q: "Mobile-first design means:", o: ["Desktop priority", "Design for mobile first, enhance for desktop", "Ignore mobile", "Only mobile"], c: 1 },
+    { q: "Good design creates:", o: ["Just aesthetics", "Trust and conversions", "Complexity", "Confusion"], c: 1 },
+    { q: "First impression happens in:", o: ["1 minute", "0.05 seconds", "10 seconds", "30 seconds"], c: 1 },
+    { q: "Color psychology affects:", o: ["Nothing", "Purchase decisions", "Only aesthetics", "File size"], c: 1 },
+    { q: "Consistency in design:", o: ["Is optional", "Builds trust", "Is boring", "Should be avoided"], c: 1 },
+    { q: "Whitespace is:", o: ["Wasted space", "Essential for readability", "Lazy design", "Always bad"], c: 1 },
+    { q: "Visual hierarchy guides:", o: ["Nothing", "User attention flow", "Only color", "Only size"], c: 1 },
+    { q: "Typography choice affects:", o: ["Nothing", "Readability and brand perception", "Only file size", "Only print"], c: 1 }
+];
+
+const task2Quiz = [
+    { q: "Law of Proximity states:", o: ["Colors matter", "Elements close together appear related", "Bigger is better", "Speed is key"], c: 1 },
+    { q: "Fitts's Law relates to:", o: ["Color", "Button size and distance for clicking", "Typography", "Animation"], c: 1 },
+    { q: "Hick's Law says:", o: ["More options = better", "More choices = slower decisions", "Speed doesn't matter", "Ignore users"], c: 1 },
+    { q: "F-pattern reading applies to:", o: ["Print only", "Web content scanning", "Mobile only", "Nothing"], c: 1 },
+    { q: "Z-pattern is used for:", o: ["Long content", "Landing pages with minimal text", "Print only", "Mobile only"], c: 1 },
+    { q: "Miller's Law: magical number is:", o: ["3", "7 plus minus 2", "10", "15"], c: 1 },
+    { q: "Gestalt principles explain:", o: ["Color theory", "How humans perceive visual groups", "Typography", "Animation"], c: 1 },
+    { q: "Von Restorff Effect means:", o: ["Everything same", "Stand-out elements are remembered", "Hide everything", "Ignore contrast"], c: 1 },
+    { q: "Serial Position Effect:", o: ["Ignore lists", "First and last items remembered best", "Middle is best", "Random"], c: 1 },
+    { q: "Cognitive load should be:", o: ["Maximized", "Minimized for better UX", "Ignored", "Increased"], c: 1 }
+];
+
+const task3Quiz = [
+    { q: "Color harmony creates:", o: ["Confusion", "Visual pleasure and trust", "Complexity", "Nothing"], c: 1 },
+    { q: "60-30-10 color rule:", o: ["Random", "Primary-Secondary-Accent color ratio", "Only for print", "Ignore it"], c: 1 },
+    { q: "Complementary colors are:", o: ["Same shade", "Opposite on color wheel", "Random", "Always bad"], c: 1 },
+    { q: "Blue color evokes:", o: ["Urgency", "Trust and calm", "Danger", "Hunger"], c: 1 },
+    { q: "Red color creates:", o: ["Calm", "Urgency and excitement", "Trust", "Sadness"], c: 1 },
+    { q: "Brand color consistency:", o: ["Optional", "Critical for recognition", "Unnecessary", "Boring"], c: 1 },
+    { q: "Color contrast ratio for accessibility:", o: ["1:1", "4.5:1 minimum", "2:1", "Doesn't matter"], c: 1 },
+    { q: "Too many colors cause:", o: ["Better UX", "Visual confusion", "Trust", "Speed"], c: 1 },
+    { q: "Black in e-commerce:", o: ["Cheap", "Premium and luxury feel", "Avoid always", "Only for text"], c: 1 },
+    { q: "CTA button color should:", o: ["Match background", "Stand out from surroundings", "Be gray", "Be invisible"], c: 1 }
+];
+
+const task4Quiz = [
+    { q: "Sans-serif fonts are:", o: ["Old fashioned", "Clean and modern", "Only for print", "Hard to read"], c: 1 },
+    { q: "Maximum font families per design:", o: ["None", "2-3 maximum", "10+", "Unlimited"], c: 1 },
+    { q: "Line height for readability:", o: ["1.0", "1.5-1.8", "0.5", "3.0"], c: 1 },
+    { q: "Font size for body text:", o: ["8px", "14-16px minimum", "24px", "6px"], c: 1 },
+    { q: "Heading hierarchy uses:", o: ["Same size", "Descending sizes for structure", "Random sizes", "Only color"], c: 1 },
+    { q: "Letter spacing affects:", o: ["Nothing", "Readability and elegance", "Only print", "File size"], c: 1 },
+    { q: "Mobile typography should:", o: ["Be smaller", "Be larger for readability", "Same as desktop", "Be hidden"], c: 1 },
+    { q: "Google Fonts are:", o: ["Paid only", "Free and web-safe", "Slow", "Unavailable"], c: 1 },
+    { q: "ALL CAPS text:", o: ["Always best", "Hard to read in long text", "More readable", "Faster to read"], c: 1 },
+    { q: "Contrast between text and background:", o: ["Optional", "Critical for readability", "Not important", "Avoid high contrast"], c: 1 }
+];
+
+const task5Quiz = [
+    { q: "Grid system provides:", o: ["Nothing", "Alignment and consistency", "Complexity", "Slowness"], c: 1 },
+    { q: "12-column grid is:", o: ["Outdated", "Industry standard for flexibility", "Too complex", "Only for print"], c: 1 },
+    { q: "Responsive breakpoints:", o: ["Not needed", "Essential for different screens", "Only mobile", "Only desktop"], c: 1 },
+    { q: "Card-based layout:", o: ["Old fashioned", "Modern and scannable", "Hard to use", "Print only"], c: 1 },
+    { q: "Above-the-fold content:", o: ["Not important", "Critical first impression", "Hide important content", "Optional"], c: 1 },
+    { q: "Negative space:", o: ["Wasted space", "Gives content room to breathe", "Fill with content", "Avoid always"], c: 1 },
+    { q: "Consistent margins:", o: ["Optional", "Create visual rhythm", "Random is better", "Not important"], c: 1 },
+    { q: "Mobile layout priority:", o: ["Shrink desktop", "Design specifically for mobile", "Ignore mobile", "Same as desktop"], c: 1 },
+    { q: "Content width for readability:", o: ["Full width always", "50-75 characters per line", "10 characters", "200 characters"], c: 1 },
+    { q: "Asymmetrical layouts:", o: ["Always bad", "Can create visual interest", "Never use", "Print only"], c: 1 }
+];
+
+const task6Quiz = [
+    { q: "Trust badges should be:", o: ["Hidden", "Visible near buy button", "In footer only", "Optional"], c: 1 },
+    { q: "Social proof includes:", o: ["Nothing", "Reviews, testimonials, logos", "Only price", "Graphics only"], c: 1 },
+    { q: "Secure checkout icons:", o: ["Unnecessary", "Reduce cart abandonment", "Slow site", "Confuse users"], c: 1 },
+    { q: "Customer reviews:", o: ["Hide negative ones", "Show authentic mix", "Auto-generate", "Ignore"], c: 1 },
+    { q: "Money-back guarantee badge:", o: ["Scares customers", "Builds purchase confidence", "Unnecessary", "Legal risk"], c: 1 },
+    { q: "Payment icons should show:", o: ["One option", "All accepted payment methods", "None", "Only cash"], c: 1 },
+    { q: "Star ratings:", o: ["Meaningless", "Quick trust indicator", "Too simple", "Avoid always"], c: 1 },
+    { q: "As Seen In logos:", o: ["Fake it", "Only use real press mentions", "Always fake", "Not effective"], c: 1 },
+    { q: "Customer photo reviews:", o: ["Avoid", "Highly persuasive", "Privacy risk", "Not needed"], c: 1 },
+    { q: "Trust elements placement:", o: ["Random", "Strategic - near conversion points", "Hidden", "Footer only"], c: 1 }
+];
+
+const task7Quiz = [
+    { q: "Homepage hero section:", o: ["Optional", "Critical first impression", "Skip it", "Text only"], c: 1 },
+    { q: "Collection page layout:", o: ["Random", "Grid-based product display", "One product per page", "Text only"], c: 1 },
+    { q: "Product page above fold:", o: ["Just description", "Image, title, price, CTA", "Footer", "Navigation only"], c: 1 },
+    { q: "Cart page design:", o: ["Complex", "Clear and simple", "Hide products", "No totals"], c: 1 },
+    { q: "Checkout design priority:", o: ["Aesthetics", "Speed and simplicity", "Complexity", "Graphics"], c: 1 },
+    { q: "About page should:", o: ["Be boring", "Build brand connection", "Be hidden", "No images"], c: 1 },
+    { q: "Contact page needs:", o: ["Just email", "Multiple contact options", "Nothing", "Hide address"], c: 1 },
+    { q: "FAQ page design:", o: ["Wall of text", "Expandable accordions", "Tiny text", "Images only"], c: 1 },
+    { q: "404 page should:", o: ["Show error only", "Guide back to shopping", "Be blank", "Show ads"], c: 1 },
+    { q: "Thank you page:", o: ["Skip it", "Confirm order + next steps", "Show error", "Redirect away"], c: 1 }
+];
+
+const task8Quiz = [
+    { q: "Mobile-first means:", o: ["Design desktop first", "Start with mobile, enhance for desktop", "Ignore mobile", "Only mobile"], c: 1 },
+    { q: "Touch target size minimum:", o: ["10px", "44px minimum", "5px", "100px"], c: 1 },
+    { q: "Mobile navigation:", o: ["Same as desktop", "Hamburger menu or simplified", "No navigation", "Footer only"], c: 1 },
+    { q: "Mobile images should be:", o: ["Desktop size", "Optimized for mobile bandwidth", "Skip images", "Huge"], c: 1 },
+    { q: "Form fields on mobile:", o: ["Tiny", "Large and finger-friendly", "Hidden", "Complex"], c: 1 },
+    { q: "Mobile CTA buttons:", o: ["Small", "Full-width and prominent", "Hidden", "Text only"], c: 1 },
+    { q: "Scroll on mobile:", o: ["Avoid", "Natural and expected", "Complex patterns", "Horizontal only"], c: 1 },
+    { q: "Mobile popups:", o: ["Use many", "Minimize or avoid", "Full screen always", "Ignore"], c: 1 },
+    { q: "Mobile checkout:", o: ["Desktop version", "Streamlined single page", "Multi-page complex", "Skip checkout"], c: 1 },
+    { q: "Thumb zone design:", o: ["Ignore", "Place key actions within thumb reach", "Top of screen", "Tiny corners"], c: 1 }
+];
+
+const task9Quiz = [
+    { q: "Design QA checks for:", o: ["Nothing", "Consistency, alignment, responsiveness", "Only color", "Only text"], c: 1 },
+    { q: "Cross-device testing:", o: ["Just Chrome", "Multiple devices and browsers", "Skip it", "Only iPhone"], c: 1 },
+    { q: "Pixel-perfect means:", o: ["Close enough", "Exact match to design specs", "Random", "Approximate"], c: 1 },
+    { q: "Alignment issues:", o: ["Acceptable", "Unprofessional - fix immediately", "Ignore", "Client won't notice"], c: 1 },
+    { q: "Color accuracy:", o: ["Not important", "Hex values must match exactly", "Any shade works", "Ignore"], c: 1 },
+    { q: "Font loading issues:", o: ["Ignore", "Use fallbacks and test", "Skip testing", "Client problem"], c: 1 },
+    { q: "Image quality check:", o: ["Any quality", "Sharp, properly sized, optimized", "Blurry is fine", "Skip images"], c: 1 },
+    { q: "Responsive breakpoint testing:", o: ["One size", "Test all major breakpoints", "Skip mobile", "Desktop only"], c: 1 },
+    { q: "Hover state testing:", o: ["Not needed", "Verify all interactive elements", "Skip it", "Only buttons"], c: 1 },
+    { q: "Final design approval:", o: ["Self-approve", "Client sign-off required", "Skip approval", "Just deliver"], c: 1 }
+];
+
+const task10Quiz = [
+    { q: "Figma is used for:", o: ["Coding", "Design and prototyping", "Data analysis", "Video editing"], c: 1 },
+    { q: "Design handoff includes:", o: ["Just PSD", "Specs, assets, style guide", "Nothing", "Only fonts"], c: 1 },
+    { q: "Component libraries:", o: ["Waste of time", "Speed up consistent design", "Too complex", "Ignore"], c: 1 },
+    { q: "Auto-layout in Figma:", o: ["Avoid", "Creates responsive designs", "Slows work", "Not useful"], c: 1 },
+    { q: "Design tokens:", o: ["Programming only", "Store design values for consistency", "Not for designers", "Ignore"], c: 1 },
+    { q: "Version control in design:", o: ["Not needed", "Track changes and collaborate", "Too complex", "Single version only"], c: 1 },
+    { q: "Exporting assets:", o: ["Any format", "Optimized formats for web", "Print formats", "Skip exporting"], c: 1 },
+    { q: "Design system benefits:", o: ["None", "Consistency and speed", "Complexity", "Slows design"], c: 1 },
+    { q: "Prototype testing:", o: ["Skip it", "Catch UX issues early", "Waste of time", "After launch only"], c: 1 },
+    { q: "Collaboration in Figma:", o: ["Work alone", "Real-time team collaboration", "Not possible", "Email files"], c: 1 }
+];
+
+const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];

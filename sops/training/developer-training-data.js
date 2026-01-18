@@ -1974,3 +1974,150 @@ const additionalQuizQuestions = [
     {question: "AI often uses deprecated:", options: ["render", "include", "capture", "assign"], correct: 1},
     {question: "First suggestion is always:", options: ["Best", "Not always best - check alternatives", "Wrong", "Ignored"], correct: 1}
 ];
+
+// =============================================================================
+// QUIZ QUESTIONS FOR EACH TASK
+// =============================================================================
+
+// Task 1: Developer Mindset Quiz
+const task1Quiz = [
+    { q: "What's the difference between a 'coder' and a 'Digital Heroes Developer'?", o: ["Speed of typing", "Coder writes mechanical code; DH Dev writes revenue-driving code", "Salary difference", "No difference"], c: 1 },
+    { q: "A broken checkout for 4 hours can cost a major store:", o: ["$100", "$1,000", "$25,000+", "Nothing"], c: 2 },
+    { q: "Zero Tolerance for Bugs means:", o: ["Some bugs are okay", "We don't use clients as beta testers", "Bugs are expected", "Only fix critical bugs"], c: 1 },
+    { q: "Every 1 second of load time equals what conversion drop?", o: ["1%", "3%", "7%", "15%"], c: 2 },
+    { q: "The First Commit Discipline means:", o: ["Commit every hour", "Every commit must be tested - if it works, push it", "Push untested code", "Wait until end of project"], c: 1 },
+    { q: "Speed score target for Desktop is:", o: ["70+", "80+", "90+", "100"], c: 2 },
+    { q: "Mobile speed score target is:", o: ["70+", "85+", "90+", "100"], c: 1 },
+    { q: "What's the HARDEST mindset trait to develop?", o: ["Technical skill", "Ego management", "Typing speed", "Tool knowledge"], c: 1 },
+    { q: "Which developer type takes ownership of results?", o: ["Regular coder", "Digital Heroes Developer", "Both equally", "Neither"], c: 1 },
+    { q: "Client pays $1,500+. What quality do they expect?", o: ["Same as $300 developer", "Basic functionality", "Premium, bug-free quality", "Just good enough"], c: 2 }
+];
+
+// Task 2: Platform Fundamentals Quiz
+const task2Quiz = [
+    { q: "What file format are OS 2.0 templates stored in?", o: ["Liquid", "JSON", "YAML", "XML"], c: 1 },
+    { q: "Maximum variants per product?", o: ["50", "100", "200", "500"], c: 1 },
+    { q: "Where are translation strings stored?", o: ["/assets", "/locales", "/config", "/templates"], c: 1 },
+    { q: "What folder contains sections?", o: ["/snippets", "/sections", "/templates", "/layout"], c: 1 },
+    { q: "Settings_schema.json is in which folder?", o: ["/assets", "/config", "/layout", "/locales"], c: 1 },
+    { q: "How many options maximum per product?", o: ["2", "3", "4", "5"], c: 1 },
+    { q: "To format price correctly, use which filter?", o: ["| currency", "| money", "| price", "| format"], c: 1 },
+    { q: "Which file wraps all pages?", o: ["header.liquid", "theme.liquid", "base.liquid", "index.liquid"], c: 1 },
+    { q: "Metafields are accessed via:", o: ["product.meta", "product.metafields", "product.custom", "product.data"], c: 1 },
+    { q: "Hardcoding currency symbols is:", o: ["Recommended", "Forbidden", "Optional", "Required"], c: 1 }
+];
+
+// Task 3: Theme Architecture Quiz
+const task3Quiz = [
+    { q: "What's the golden rule before editing?", o: ["Edit live theme directly", "NEVER edit Live Theme - duplicate first", "Ask permission", "Edit on weekends"], c: 1 },
+    { q: "How many essential homepage sections are there?", o: ["5", "8", "12", "20"], c: 2 },
+    { q: "Dawn theme is:", o: ["Premium paid theme", "Free OS 2.0 reference theme", "Deprecated theme", "Third-party theme"], c: 1 },
+    { q: "Mobile-first development means:", o: ["Desktop first, then mobile", "Design for mobile first, enhance for desktop", "Ignore mobile", "Only mobile"], c: 1 },
+    { q: "Theme duplication should include:", o: ["Just files", "Files and settings", "Files, settings, and naming convention", "Nothing"], c: 2 },
+    { q: "Homepage hero section should be:", o: ["Last section", "Above the fold", "Hidden on mobile", "Optional"], c: 1 },
+    { q: "Product grid should show:", o: ["1 product per row", "2-4 products per row", "10+ products per row", "Random"], c: 1 },
+    { q: "Footer must include:", o: ["Nothing required", "Links, policies, contact", "Just logo", "Only payment icons"], c: 1 },
+    { q: "Announcement bar is used for:", o: ["Navigation", "Promotions and urgency", "Footer content", "Search"], c: 1 },
+    { q: "Theme settings are in:", o: ["/assets", "/config/settings_schema.json", "/layout", "/snippets"], c: 1 }
+];
+
+// Task 4: Liquid Programming Quiz
+const task4Quiz = [
+    { q: "{{ }} tags are for:", o: ["Logic", "Output", "Comments", "Loops"], c: 1 },
+    { q: "{% %} tags are for:", o: ["Output", "Logic/Control", "Comments", "Variables"], c: 1 },
+    { q: "Which filter translates strings?", o: ["| translate", "| t", "| lang", "| i18n"], c: 1 },
+    { q: "To get sized image, use:", o: ["img_url", "image_url", "picture_url", "media_url"], c: 1 },
+    { q: "Correct loop syntax is:", o: ["loop x in y", "foreach x in y", "{% for x in y %}", "for(x in y)"], c: 2 },
+    { q: "Schema must be in which section of file?", o: ["Top", "Middle", "Bottom", "Anywhere"], c: 2 },
+    { q: "Missing comma in schema causes:", o: ["Warning", "Entire section breaks", "Nothing", "Slow load"], c: 1 },
+    { q: "Presets in schema enable:", o: ["Speed", "Section in theme editor", "Caching", "Analytics"], c: 1 },
+    { q: "Use 'render' instead of:", o: ["assign", "include", "capture", "section"], c: 1 },
+    { q: "Default filter provides:", o: ["Speed", "Fallback values", "Caching", "Validation"], c: 1 }
+];
+
+// Task 5: Product Page Optimization Quiz  
+const task5Quiz = [
+    { q: "Above-the-fold content should include:", o: ["Just title", "Image, title, price, CTA", "Only description", "Reviews only"], c: 1 },
+    { q: "Product images should be:", o: ["Any size", "Consistent ratio, optimized", "Maximum resolution always", "Small thumbnails only"], c: 1 },
+    { q: "Add to cart button should be:", o: ["Hidden", "Below the fold", "Prominent, clear CTA", "Text only"], c: 2 },
+    { q: "Social proof includes:", o: ["Just price", "Reviews, badges, testimonials", "Only title", "Nothing"], c: 1 },
+    { q: "Variant selector should:", o: ["Be hidden", "Show all options clearly", "Only show color", "Use dropdowns always"], c: 1 },
+    { q: "Mobile product page priority:", o: ["Desktop design on mobile", "Thumb-friendly, fast-loading", "Ignore mobile users", "Same as desktop"], c: 1 },
+    { q: "Trust badges should be placed:", o: ["Hidden", "Near buy button", "Only footer", "Random"], c: 1 },
+    { q: "Product description should:", o: ["Be optional", "Highlight benefits, not just features", "Just list specs", "Be hidden"], c: 1 },
+    { q: "Related products section:", o: ["Waste of space", "Increases AOV", "Confuses customers", "Should be removed"], c: 1 },
+    { q: "Sticky add-to-cart on mobile:", o: ["Bad UX", "Improves conversions", "Not possible", "Annoying"], c: 1 }
+];
+
+// Task 6: Speed Optimization Quiz
+const task6Quiz = [
+    { q: "Every 1 second delay equals what conversion drop?", o: ["3%", "5%", "7%", "10%"], c: 2 },
+    { q: "LCP stands for:", o: ["Lazy Content Paint", "Largest Contentful Paint", "Load Complete Point", "Layout Complete Paint"], c: 1 },
+    { q: "CLS measures:", o: ["Speed", "Visual Stability", "Interactivity", "Load time"], c: 1 },
+    { q: "Good LCP is under:", o: ["1s", "2.5s", "5s", "10s"], c: 1 },
+    { q: "Good CLS is under:", o: ["0.1", "0.5", "1.0", "2.0"], c: 0 },
+    { q: "Hero images should use:", o: ["loading=lazy", "loading=eager", "loading=defer", "No loading attr"], c: 1 },
+    { q: "To prevent CLS, images need:", o: ["Alt text", "Title", "Width/Height attributes", "Lazy loading"], c: 2 },
+    { q: "Script defer means:", o: ["Load first", "Execute after DOM", "Block rendering", "Ignore"], c: 1 },
+    { q: "Images are typically what % of page weight?", o: ["10-20%", "30-40%", "50-80%", "90%+"], c: 2 },
+    { q: "WebP provides:", o: ["Better SEO", "Better compression", "Better colors", "Better fonts"], c: 1 }
+];
+
+// Task 7: Apps & Integrations Quiz
+const task7Quiz = [
+    { q: "Maximum recommended apps?", o: ["3-5", "5-8", "10-15", "20+"], c: 1 },
+    { q: "Uninstalling app removes theme code?", o: ["Yes", "No - manual cleanup needed", "Sometimes", "Always"], c: 1 },
+    { q: "Each app adds how much JavaScript?", o: ["1-10KB", "50-500KB", "1-5MB", "Nothing"], c: 1 },
+    { q: "Which backup app is recommended?", o: ["Backup Pro", "Rewind", "Save It", "Theme Guard"], c: 1 },
+    { q: "Too many cart apps cause:", o: ["Speed boost", "Cart not updating", "Better UX", "Nothing"], c: 1 },
+    { q: "jQuery version conflicts cause:", o: ["Speed boost", "JS console errors", "Better UX", "Nothing"], c: 1 },
+    { q: "App residue is found in:", o: ["Only assets", "theme.liquid and snippets", "Only config", "Nowhere"], c: 1 },
+    { q: "After clean uninstall, PageSpeed should:", o: ["Stay same", "Improve", "Decrease", "Crash"], c: 1 },
+    { q: "Essential app categories include:", o: ["Only reviews", "Reviews, email, analytics, backups", "Just SEO", "None needed"], c: 1 },
+    { q: "Before installing new app:", o: ["Just install", "Check reviews, test on duplicate", "Ask client", "Ignore impact"], c: 1 }
+];
+
+// Task 8: Checkout & Policies Quiz
+const task8Quiz = [
+    { q: "Required policy pages include:", o: ["Just privacy", "Privacy, Terms, Refund, Shipping", "Only refund", "None"], c: 1 },
+    { q: "Checkout should be:", o: ["Complex", "Simple and fast", "Hidden", "Optional"], c: 1 },
+    { q: "Payment gateways should:", o: ["Only PayPal", "Multiple options for conversion", "Cash only", "One option"], c: 1 },
+    { q: "Shipping profiles should be:", o: ["Flat rate only", "Zone-based and accurate", "Free always", "Hidden"], c: 1 },
+    { q: "Trust at checkout includes:", o: ["Nothing", "SSL, badges, clear policies", "Just logo", "Only price"], c: 1 },
+    { q: "Guest checkout should be:", o: ["Disabled", "Enabled for conversion", "Hidden", "Required login"], c: 1 },
+    { q: "Order confirmation should:", o: ["Be blank", "Include all order details", "Just say thanks", "Link to home"], c: 1 },
+    { q: "Contact information should be:", o: ["Hidden", "Visible and accessible", "Email only", "Optional"], c: 1 },
+    { q: "Tax settings should be:", o: ["Ignored", "Properly configured per region", "Manual always", "Flat rate"], c: 1 },
+    { q: "Abandoned cart recovery requires:", o: ["Nothing", "Email app integration", "Just hope", "Phone calls"], c: 1 }
+];
+
+// Task 9: QA & Testing Quiz
+const task9Quiz = [
+    { q: "Most critical testing platform?", o: ["Windows Chrome", "iOS Safari", "Firefox", "Opera"], c: 1 },
+    { q: "Digital Heroes QA standard is:", o: ["30 points", "45 points", "60 points", "100 points"], c: 2 },
+    { q: "Zero Tolerance means:", o: ["Some bugs OK", "No bugs on production", "Client decides", "Speed matters more"], c: 1 },
+    { q: "DevTools emulation is:", o: ["Perfect", "Not perfect - use real devices", "Better than real", "Useless"], c: 1 },
+    { q: "Console red errors should be:", o: ["Ignored", "Fixed immediately", "Noted for later", "Celebrated"], c: 1 },
+    { q: "Test orders should use:", o: ["Real payment", "Test mode", "Neither", "Client's card"], c: 1 },
+    { q: "Broken checkout priority is:", o: ["Low", "Medium", "Critical - immediate fix", "Not our problem"], c: 2 },
+    { q: "Cross-browser testing includes:", o: ["Just Chrome", "Chrome, Safari, Firefox, Edge", "Only mobile", "Only desktop"], c: 1 },
+    { q: "Before delivery, always:", o: ["Just send link", "Full QA checklist completion", "Quick glance", "Nothing"], c: 1 },
+    { q: "Client-reported bugs should be:", o: ["Ignored", "Fixed within 24 hours", "Blamed on client", "Added to backlog"], c: 1 }
+];
+
+// Task 10: Troubleshooting Quiz (or Final Certification)
+const task10Quiz = [
+    { q: "First debugging step:", o: ["Restart computer", "Check console errors", "Reinstall theme", "Call support"], c: 1 },
+    { q: "Theme Inspector is for:", o: ["Installing themes", "Finding which section/snippet renders element", "Deleting themes", "Speed testing"], c: 1 },
+    { q: "Console errors in red mean:", o: ["Warning", "Critical JavaScript error", "Success", "Information"], c: 1 },
+    { q: "Liquid error in storefront shows:", o: ["Nothing", "Error message visible to customer", "Just logs", "Email alert"], c: 1 },
+    { q: "To find broken CSS:", o: ["Just guess", "Use DevTools Inspector", "Reinstall theme", "Clear cache"], c: 1 },
+    { q: "Git version control helps with:", o: ["Speed", "Tracking changes and rollback", "SEO", "Sales"], c: 1 },
+    { q: "When code breaks after changes:", o: ["Panic", "Revert to last working version", "Delete everything", "Blame someone"], c: 1 },
+    { q: "To debug Liquid, use:", o: ["console.log", "{{ variable | json }}", "alert()", "print()"], c: 1 },
+    { q: "Network tab shows:", o: ["CSS", "All HTTP requests and load times", "JavaScript", "HTML only"], c: 1 },
+    { q: "First rule of crisis:", o: ["Panic", "Don't panic - assess first", "Delete the theme", "Blame the client"], c: 1 }
+];
+
+// Export all quizzes
+const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
