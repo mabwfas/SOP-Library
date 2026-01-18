@@ -12,7 +12,13 @@
         search: true,
         toc: true,
         bookmarks: true,
-        mobile: true
+        mobile: true,
+        theme: true,
+        progress: true,
+        gamification: true,
+        globalSearch: true,
+        shortcuts: true,
+        faq: true
     };
 
     // Module paths (relative to this file's location in assets/js/)
@@ -20,7 +26,13 @@
         search: 'sop-search.js',
         toc: 'sop-toc.js',
         bookmarks: 'sop-bookmarks.js',
-        mobile: 'sop-mobile.js'
+        mobile: 'sop-mobile.js',
+        theme: 'sop-theme.js',
+        progress: 'sop-progress.js',
+        gamification: 'sop-gamification.js',
+        globalSearch: 'sop-global-search.js',
+        shortcuts: 'sop-shortcuts.js',
+        faq: 'sop-faq.js'
     };
 
     // CSS paths (relative to this file's location in assets/js/)
