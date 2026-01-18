@@ -585,97 +585,794 @@ const task3Content = `
 </div>
 `;
 
-// Tasks 4-13 content (condensed for file size but following same deep pattern)
-const task4Content = `<h2>📚 TASK 4: LIQUID PROGRAMMING</h2>
-<div class="content-section"><h3>💧 The Three Pillars of Liquid</h3>
-<p><strong>Objects</strong>: Output data - <code>{{ product.title }}</code></p>
-<p><strong>Tags</strong>: Logic control - <code>{% if product.available %}</code></p>
-<p><strong>Filters</strong>: Transform output - <code>{{ product.price | money }}</code></p>
+// Tasks 4-13 content - EXPANDED WITH FULL DEPTH
+const task4Content = `
+<h2>📚 TASK 4: LIQUID PROGRAMMING - The Heart of Shopify Development</h2>
+
+<div class="content-section">
+    <h3>💧 The Three Pillars of Liquid</h3>
+    <p>Liquid is Shopify's templating language. It was created by Shopify and is used to build dynamic content. Master these three concepts:</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pillar</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Syntax</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Objects</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ }}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Output data</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ product.title }}</code></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Tags</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% %}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Logic & Control</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% if product.available %}</code></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Filters</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>|</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Transform output</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ product.price | money }}</code></td>
+        </tr>
+    </table>
 </div>
-<div class="content-section"><h3>🔄 Loops & Iteration</h3>
-<div style="background: #1e1e1e; padding: 15px; border-radius: 8px; font-family: monospace; color: #d4d4d4;">
-{% for product in collection.products limit: 4 %}<br>
-&nbsp;&nbsp;&lt;h2&gt;{{ product.title }}&lt;/h2&gt;<br>
-{% else %}<br>
-&nbsp;&nbsp;No products found.<br>
-{% endfor %}
-</div></div>
-<div class="content-section"><h3>🧱 Section Schemas</h3>
-<p>Make content editable via Theme Customizer:</p>
-<div style="background: #1e1e1e; padding: 15px; border-radius: 8px; font-family: monospace; color: #d4d4d4;">
-{% schema %}<br>
-{<br>
-&nbsp;&nbsp;"name": "Custom Banner",<br>
-&nbsp;&nbsp;"settings": [<br>
-&nbsp;&nbsp;&nbsp;&nbsp;{"type": "text", "id": "heading", "label": "Heading"}<br>
-&nbsp;&nbsp;]<br>
-}<br>
-{% endschema %}
-</div></div>`;
 
-const task5Content = `<h2>📚 TASK 5: PRODUCT PAGE (PDP) OPTIMIZATION</h2>
-<div class="content-section"><h3>🛒 Above the Fold Anatomy</h3>
-<p>On mobile, users must see WITHOUT SCROLLING:</p>
-<ol><li>Product Image (swipeable)</li><li>Title & Price</li><li>Review Stars</li><li>Variant Selector</li><li><strong>Add to Cart Button</strong></li></ol></div>
-<div class="content-section"><h3>🧩 Metafields for Product Data</h3>
-<p>Don't dump everything in description. Use metafields:</p>
-<ul><li>Ingredients / Materials</li><li>Size Guides</li><li>Care Instructions</li><li>Warranty Info</li></ul></div>`;
+<div class="content-section">
+    <h3>📦 Core Shopify Objects</h3>
+    <p>These are the data structures you'll work with daily:</p>
+    
+    <div class="highlight-box">
+        <strong>Most Used Objects:</strong>
+        <ul>
+            <li><code>product</code> - Current product (title, price, images, variants)</li>
+            <li><code>collection</code> - Group of products</li>
+            <li><code>cart</code> - Shopping cart (items, total, item_count)</li>
+            <li><code>customer</code> - Logged in customer data</li>
+            <li><code>shop</code> - Store settings (name, currency, domain)</li>
+            <li><code>settings</code> - Theme customizer values</li>
+            <li><code>section</code> - Current section settings</li>
+            <li><code>block</code> - Section blocks</li>
+        </ul>
+    </div>
+</div>
 
-const task6Content = `<h2>📚 TASK 6: SPEED OPTIMIZATION</h2>
-<div class="content-section"><h3>⚡ Core Web Vitals</h3>
-<table style="width:100%;border-collapse:collapse;">
-<tr style="background:rgba(99,102,241,0.15);"><th style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Metric</th><th style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Target</th><th style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Definition</th></tr>
-<tr><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">LCP</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">&lt; 2.5s</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Largest Content Paint</td></tr>
-<tr><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">CLS</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">&lt; 0.1</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Cumulative Layout Shift</td></tr>
-<tr><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">TBT</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">&lt; 200ms</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Total Blocking Time</td></tr>
-</table></div>`;
+<div class="content-section">
+    <h3>🔄 Loops & Iteration</h3>
+    <p>Looping through products, collections, and arrays is fundamental:</p>
+    
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0;">
+        <span style="color: #569cd6;">{% for</span> product <span style="color: #569cd6;">in</span> collection.products <span style="color: #569cd6;">limit:</span> 4 <span style="color: #569cd6;">%}</span><br>
+        &nbsp;&nbsp;<span style="color: #808080;">&lt;div class="product-card"&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #808080;">&lt;img src="</span><span style="color: #ce9178;">{{ product.featured_image | image_url: width: 400 }}</span><span style="color: #808080;">"&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #808080;">&lt;h3&gt;</span><span style="color: #ce9178;">{{ product.title }}</span><span style="color: #808080;">&lt;/h3&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #808080;">&lt;p&gt;</span><span style="color: #ce9178;">{{ product.price | money }}</span><span style="color: #808080;">&lt;/p&gt;</span><br>
+        &nbsp;&nbsp;<span style="color: #808080;">&lt;/div&gt;</span><br>
+        <span style="color: #569cd6;">{% else %}</span><br>
+        &nbsp;&nbsp;<span style="color: #808080;">&lt;p&gt;</span>No products found in this collection.<span style="color: #808080;">&lt;/p&gt;</span><br>
+        <span style="color: #569cd6;">{% endfor %}</span>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ Loop Variables:</strong><br>
+        <code>forloop.index</code> - Current iteration (1-based)<br>
+        <code>forloop.index0</code> - Current iteration (0-based)<br>
+        <code>forloop.first</code> - Boolean: is first item?<br>
+        <code>forloop.last</code> - Boolean: is last item?<br>
+        <code>forloop.length</code> - Total items
+    </div>
+</div>
 
-const task7Content = `<h2>📚 TASK 7: APPS & INTEGRATIONS</h2>
-<div class="content-section"><h3>🔌 The 5-8 App Rule</h3>
-<p>More apps = Slower site + JS Conflicts. Keep your app stack lean.</p>
-<div class="warning-box"><strong>The Clean Uninstall Protocol:</strong><br>1. Read app docs for uninstall<br>2. Delete app from admin<br>3. Check theme code for leftovers<br>4. Test site speed</div></div>`;
+<div class="content-section">
+    <h3>🔀 Conditionals</h3>
+    <p>Control flow is essential for dynamic content:</p>
+    
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0;">
+        <span style="color: #569cd6;">{% if</span> product.available <span style="color: #569cd6;">%}</span><br>
+        &nbsp;&nbsp;<span style="color: #808080;">&lt;button&gt;</span>Add to Cart<span style="color: #808080;">&lt;/button&gt;</span><br>
+        <span style="color: #569cd6;">{% elsif</span> product.selected_or_first_available_variant <span style="color: #569cd6;">%}</span><br>
+        &nbsp;&nbsp;<span style="color: #808080;">&lt;button&gt;</span>Select Options<span style="color: #808080;">&lt;/button&gt;</span><br>
+        <span style="color: #569cd6;">{% else %}</span><br>
+        &nbsp;&nbsp;<span style="color: #808080;">&lt;button disabled&gt;</span>Sold Out<span style="color: #808080;">&lt;/button&gt;</span><br>
+        <span style="color: #569cd6;">{% endif %}</span>
+    </div>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Operator</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meaning</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>==</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% if product.type == 'Shoes' %}</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Equals</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>!=</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% if product.vendor != 'Nike' %}</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Not equals</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>contains</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% if product.tags contains 'sale' %}</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">String/Array contains</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>and / or</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% if a and b %}</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Combine conditions</td></tr>
+    </table>
+</div>
 
-const task8Content = `<h2>📚 TASK 8: CHECKOUT & POLICIES</h2>
-<div class="content-section"><h3>📜 Required Legal Pages</h3>
-<p>Missing these = Ad Account Bans + Legal Risk:</p>
-<ul><li>Privacy Policy</li><li>Terms of Service</li><li>Shipping Policy</li><li>Refund Policy</li></ul></div>`;
+<div class="content-section">
+    <h3>🔧 Essential Filters</h3>
+    <p>Filters transform output. These are the ones you'll use constantly:</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Filter</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Input</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Output</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| money</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1999</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$19.99</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| money_without_trailing_zeros</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2000</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$20</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| image_url: width: 400</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Image object</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Optimized URL</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| date: '%B %d, %Y'</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Date object</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">January 19, 2026</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| truncate: 100</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Long text</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Truncated text...</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| strip_html</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>&lt;p&gt;Text&lt;/p&gt;</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Text</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| handleize</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">My Product Name</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">my-product-name</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>| default: 'N/A'</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">empty/nil</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">N/A</td></tr>
+    </table>
+</div>
 
-const task9Content = `<h2>📚 TASK 9: QA & TESTING</h2>
-<div class="content-section"><h3>✅ The 60-Point Quality Gate</h3>
-<p>Before shipping ANY work:</p>
-<ul><li>☐ Mobile Menu (Open/Close)</li><li>☐ Cart Drawer (Add/Remove)</li><li>☐ Checkout Flow (Test order)</li><li>☐ All Forms working</li><li>☐ Search Results</li><li>☐ Zero Console Errors</li></ul></div>`;
+<div class="content-section">
+    <h3>🧱 Metafields - Custom Data</h3>
+    <p>Metafields store extra data on products, collections, pages, etc:</p>
+    
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0;">
+        <span style="color: #6a9955;">// Access product metafield</span><br>
+        <span style="color: #ce9178;">{{ product.metafields.custom.ingredients }}</span><br><br>
+        <span style="color: #6a9955;">// Check if metafield exists</span><br>
+        <span style="color: #569cd6;">{% if</span> product.metafields.custom.size_guide <span style="color: #569cd6;">%}</span><br>
+        &nbsp;&nbsp;<span style="color: #ce9178;">{{ product.metafields.custom.size_guide }}</span><br>
+        <span style="color: #569cd6;">{% endif %}</span>
+    </div>
+    
+    <div class="highlight-box">
+        <strong>Common Metafield Uses:</strong>
+        <ul>
+            <li>Product ingredients/materials</li>
+            <li>Size guides (reference)</li>
+            <li>Care instructions</li>
+            <li>Warranty information</li>
+            <li>Custom tab content</li>
+            <li>Related product collections</li>
+        </ul>
+    </div>
+</div>
 
-const task10Content = `<h2>📚 TASK 10: TROUBLESHOOTING</h2>
-<div class="content-section"><h3>🐛 The 7-Step Debug Decision Tree</h3>
-<ol><li>Theme or App issue? (Test on fresh Dawn)</li><li>Cache issue? (Test Incognito)</li><li>Console Error? (Check DevTools)</li><li>Specific product/page? (Data issue)</li><li>Recent code change? (Check version history)</li><li>Shopify down? (Check status.shopify.com)</li><li>Ask ChatGPT / Community</li></ol></div>`;
+<div class="content-section">
+    <h3>📝 Section Schemas</h3>
+    <p>Schemas make your sections configurable via Theme Customizer:</p>
+    
+    <div style="background: #1e1e1e; padding: 20px; border-radius: 10px; font-family: monospace; color: #d4d4d4; margin: 15px 0;">
+        <span style="color: #569cd6;">{% schema %}</span><br>
+        {<br>
+        &nbsp;&nbsp;"name": "Featured Banner",<br>
+        &nbsp;&nbsp;"settings": [<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "image_picker",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": "background_image",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"label": "Background Image"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "text",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": "heading",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"label": "Heading",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"default": "Welcome to our store"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "url",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": "button_link",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"label": "Button Link"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;],<br>
+        &nbsp;&nbsp;"presets": [<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;{"name": "Featured Banner"}<br>
+        &nbsp;&nbsp;]<br>
+        }<br>
+        <span style="color: #569cd6;">{% endschema %}</span>
+    </div>
+</div>
 
-const task11Content = `<h2>📚 TASK 11: CRISIS MANAGEMENT</h2>
-<div class="content-section"><h3>🔥 Scenario: Site Down</h3>
-<p><strong>Protocol:</strong> Don't panic. Check status.shopify.com. If green, rollback theme. Communicate to PM immediately.</p></div>
-<div class="content-section"><h3>🔥 Scenario: Data Loss</h3>
-<p><strong>Protocol:</strong> Check for CSV exports. Use backup apps like Rewind. Prevention > Cure.</p></div>`;
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ PRACTICAL EXERCISE: Build a Related Products Section</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Your Task:</h4>
+        <p>Create a Liquid section that displays 4 related products from the same collection, excluding the current product.</p>
+        
+        <div style="background: #1e1e1e; padding: 15px; border-radius: 8px; font-family: monospace; color: #d4d4d4;">
+            <span style="color: #569cd6;">{% for</span> related <span style="color: #569cd6;">in</span> product.collections.first.products <span style="color: #569cd6;">limit:</span> 5 <span style="color: #569cd6;">%}</span><br>
+            &nbsp;&nbsp;<span style="color: #569cd6;">{% if</span> related.id != product.id <span style="color: #569cd6;">%}</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #808080;">&lt;div class="related-product"&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ce9178;">{{ related.title }}</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #808080;">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;<span style="color: #569cd6;">{% endif %}</span><br>
+            <span style="color: #569cd6;">{% endfor %}</span>
+        </div>
+    </div>
+</div>
 
-const task12Content = `<h2>📚 TASK 12: AI-POWERED DEVELOPMENT</h2>
-<div class="content-section"><h3>🤖 Using AI Copilots Effectively</h3>
-<p>AI can write Liquid faster than you. Use it for boilerplate.</p>
-<div class="highlight-box"><strong>Example Prompt:</strong><br>"Write a Liquid loop for related products. Exclude current product. Limit 4. Handle empty state."</div>
-<div class="warning-box"><strong>⚠️ Trust but Verify:</strong> AI often uses deprecated tags. Always code review AI output.</div></div>`;
+<div class="content-section">
+    <h3>⚠️ Common Liquid Mistakes</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Wrong</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ Correct</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% include 'snippet' %}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% render 'snippet' %}</code></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>$\\{product.price}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ product.price | money }}</code></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ img_url }}</code></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ image | image_url: width: 400 }}</code></td>
+        </tr>
+    </table>
+</div>
 
-const task13Content = `<h2>📚 TASK 13: CAREER GROWTH & FINAL EXAM</h2>
-<div class="content-section"><h3>🌱 The Developer Career Path</h3>
-<table style="width:100%;border-collapse:collapse;">
-<tr style="background:rgba(99,102,241,0.15);"><th style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Level</th><th style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Skills</th><th style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Salary Range</th></tr>
-<tr><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Junior</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">CSS edits, app installs</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">₹25-40k/month</td></tr>
-<tr><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Mid</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Custom sections, Liquid</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">₹50-80k/month</td></tr>
-<tr><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Senior</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Architecture, mentoring</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">₹1-1.5L/month</td></tr>
-<tr><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Lead</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">Team management, strategy</td><td style="padding:12px;border:1px solid rgba(255,255,255,0.1);">₹1.5-2.5L/month</td></tr>
-</table></div>
-<div class="content-section"><h3>🎓 Final Certification Exam</h3>
-<ul><li>📝 20 questions covering ALL modules</li><li>🎯 Score <strong>20/20</strong> to receive certification</li><li>🎥 Submit 30-min video walkthrough</li></ul></div>`;
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 15 questions about Liquid Programming</li>
+        <li>🎯 Score <strong>15/15</strong> to proceed to Task 5</li>
+        <li>💡 Contains code output questions</li>
+    </ul>
+</div>
+`;
+
+const task5Content = `
+<h2>📚 TASK 5: PRODUCT PAGE (PDP) OPTIMIZATION - Converting Visitors to Buyers</h2>
+
+<div class="content-section">
+    <h3>🛒 Above the Fold - The Critical First Screen</h3>
+    <p>On mobile, users must see these elements WITHOUT SCROLLING:</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Priority</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Element</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why Essential</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product Image (swipeable)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Visual decision driver</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Title & Price</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What am I buying, how much?</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Review Stars</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social proof (trust)</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Variant Selector</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Size/color selection</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Add to Cart Button</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">The conversion action</td></tr>
+    </table>
+    
+    <div class="warning-box">
+        <strong>⚠️ The Sticky Add to Cart:</strong><br>
+        On mobile, implement a sticky Add to Cart bar at the bottom. This keeps the CTA visible as users scroll.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📸 Image Gallery Best Practices</h3>
+    <ul>
+        <li>✅ First image: Product on white/clean background</li>
+        <li>✅ 2-4: Lifestyle shots showing product in use</li>
+        <li>✅ Close-up of texture/details</li>
+        <li>✅ Size reference (product in hand, on model)</li>
+        <li>✅ Video if available (Shopify supports embedded video)</li>
+    </ul>
+    
+    <div class="highlight-box">
+        <strong>Image Optimization:</strong>
+        <ul>
+            <li>Use <code>| image_url: width: 800</code> for main images</li>
+            <li>Use <code>| image_url: width: 100</code> for thumbnails</li>
+            <li>Always include <code>loading="lazy"</code> on below-fold images</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🧩 Metafields for Product Data</h3>
+    <p>Don't dump everything in description. Use metafields for structured data:</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metafield</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Namespace.Key</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Type</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ingredients</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.ingredients</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Multi-line text</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Size Guide</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.size_guide</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Page reference</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Care Instructions</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.care</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rich text</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Warranty</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.warranty</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Single-line text</td></tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ PRACTICAL EXERCISE: PDP Audit</h3>
+    <p>Open any Shopify store PDP and check:</p>
+    <ul>
+        <li>☐ Can you see Add to Cart without scrolling on mobile?</li>
+        <li>☐ Are images swipeable?</li>
+        <li>☐ Is there a sticky add-to-cart?</li>
+        <li>☐ Are there trust badges below the button?</li>
+    </ul>
+</div>
+`;
+
+const task6Content = `
+<h2>📚 TASK 6: SPEED OPTIMIZATION - Every Second Costs Money</h2>
+
+<div class="content-section">
+    <h3>⚡ Core Web Vitals Explained</h3>
+    <p>Google ranks sites based on these performance metrics. Know them by heart:</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What It Measures</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How to Fix</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>LCP</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;">< 2.5s</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Largest Content Paint</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Optimize hero images</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CLS</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;">< 0.1</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cumulative Layout Shift</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Set width/height on images</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>TBT</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;">< 200ms</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Total Blocking Time</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Defer non-critical JS</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>FCP</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;">< 1.8s</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First Content Paint</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reduce server time</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🖼️ Image Optimization Checklist</h3>
+    <div class="highlight-box">
+        <ul>
+            <li>✅ Use <code>image_url</code> filter (not img_url - deprecated)</li>
+            <li>✅ Specify width: <code>{{ image | image_url: width: 600 }}</code></li>
+            <li>✅ Use WebP format (Shopify auto-converts)</li>
+            <li>✅ Add <code>loading="lazy"</code> for below-fold images</li>
+            <li>✅ Set explicit width/height to prevent CLS</li>
+            <li>✅ Use srcset for responsive images</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📜 JavaScript Optimization</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Bad Practice</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ Good Practice</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Loading all scripts in head</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use <code>defer</code> or put before </body></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">10+ apps installed</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Keep to 5-8 essential apps</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Inline CSS/JS everywhere</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Consolidate into external files</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Speed Testing Tools</h3>
+    <ul>
+        <li><strong>PageSpeed Insights:</strong> pagespeed.web.dev</li>
+        <li><strong>GTmetrix:</strong> gtmetrix.com</li>
+        <li><strong>WebPageTest:</strong> webpagetest.org</li>
+        <li><strong>Shopify Theme Inspector:</strong> Chrome extension</li>
+    </ul>
+    
+    <div class="warning-box">
+        <strong>Target Scores:</strong><br>
+        Mobile: 85+ | Desktop: 90+
+    </div>
+</div>
+`;
+
+const task7Content = `
+<h2>📚 TASK 7: APPS & INTEGRATIONS - The Healthy App Stack</h2>
+
+<div class="content-section">
+    <h3>🔌 The 5-8 App Rule</h3>
+    <p>More apps = Slower site + JS Conflicts + Higher costs. Be ruthless about app selection.</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Category</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Recommended App</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reviews</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Judge.me / Loox</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social proof</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Klaviyo</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Marketing automation</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO Manager</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meta tags, sitemaps</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Upsells</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Bold / ReConvert</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">AOV increase</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🗑️ The Clean Uninstall Protocol</h3>
+    <div class="warning-box">
+        <strong>⚠️ CRITICAL:</strong> Simply deleting an app doesn't remove its code!
+        <ol>
+            <li>Read the app's uninstall documentation</li>
+            <li>Delete the app from Shopify Admin</li>
+            <li>Search theme code for leftover snippets</li>
+            <li>Check for liquid files with app name</li>
+            <li>Remove any theme settings referencing the app</li>
+            <li>Test site speed before and after</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚠️ App Conflict Diagnosis</h3>
+    <p>When two apps break each other:</p>
+    <ol>
+        <li>Open Console (F12) - look for errors</li>
+        <li>Disable apps one by one</li>
+        <li>Check for jQuery version conflicts</li>
+        <li>Contact both app support teams</li>
+    </ol>
+</div>
+`;
+
+const task8Content = `
+<h2>📚 TASK 8: CHECKOUT & POLICIES - Trust & Legal Compliance</h2>
+
+<div class="content-section">
+    <h3>📜 Required Legal Pages</h3>
+    <p>Missing these = Ad Account Bans + Legal Risk + Lost Customer Trust</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Policy Page</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What It Covers</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why Required</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Privacy Policy</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Data collection, cookies</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">GDPR, CCPA law</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Terms of Service</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rules of using site</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Legal protection</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shipping Policy</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delivery times, costs</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Customer expectations</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Refund Policy</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Returns process</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">FB/Google Ads requirement</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Contact Page</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email, phone, address</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Trust + Ad approval</td></tr>
+    </table>
+    
+    <div class="warning-box">
+        <strong>Location:</strong> Settings > Policies in Shopify Admin. These auto-link in checkout footer.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💳 Payment Gateway Setup</h3>
+    <ul>
+        <li>✅ Enable Shopify Payments (lowest fees)</li>
+        <li>✅ Add PayPal as backup</li>
+        <li>✅ Enable Apple Pay / Google Pay</li>
+        <li>✅ Test checkout in test mode before going live</li>
+    </ul>
+</div>
+`;
+
+const task9Content = `
+<h2>📚 TASK 9: QA & TESTING - The 60-Point Quality Gate</h2>
+
+<div class="content-section">
+    <h3>✅ Pre-Launch Checklist</h3>
+    <p>Before shipping ANY work, verify:</p>
+    
+    <div class="highlight-box">
+        <strong>🖥️ Desktop Testing:</strong>
+        <ul>
+            <li>☐ Chrome - Latest version</li>
+            <li>☐ Safari - Check on Mac</li>
+            <li>☐ Firefox - Check forms</li>
+            <li>☐ Edge - Windows users</li>
+        </ul>
+    </div>
+    
+    <div class="highlight-box">
+        <strong>📱 Mobile Testing:</strong>
+        <ul>
+            <li>☐ Real iPhone Safari (not Chrome DevTools)</li>
+            <li>☐ Real Android Chrome</li>
+            <li>☐ Test with slow 3G simulation</li>
+            <li>☐ Check touch targets (44x44px min)</li>
+        </ul>
+    </div>
+    
+    <div class="highlight-box">
+        <strong>🛒 Functional Testing:</strong>
+        <ul>
+            <li>☐ Mobile menu opens/closes</li>
+            <li>☐ Cart drawer add/remove items</li>
+            <li>☐ Search returns results</li>
+            <li>☐ All forms submit correctly</li>
+            <li>☐ Complete a test checkout</li>
+            <li>☐ Check email notifications</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🐛 Console Error Standard</h3>
+    <div class="warning-box">
+        <strong>Digital Heroes Standard: ZERO Console Errors</strong><br>
+        Open DevTools (F12) > Console tab. If you see ANY red errors, do not ship.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔧 BrowserStack / Real Device Testing</h3>
+    <p>Chrome DevTools is NOT enough. You need:</p>
+    <ul>
+        <li>Real iPhone (Safari has unique bugs)</li>
+        <li>Real Android device</li>
+        <li>BrowserStack for devices you don't own</li>
+    </ul>
+</div>
+`;
+
+const task10Content = `
+<h2>📚 TASK 10: TROUBLESHOOTING - The Debugging Master</h2>
+
+<div class="content-section">
+    <h3>🐛 The 7-Step Debug Decision Tree</h3>
+    <ol>
+        <li><strong>Theme or App issue?</strong> → Test on fresh Dawn theme</li>
+        <li><strong>Cache issue?</strong> → Test in Incognito window</li>
+        <li><strong>Console Error?</strong> → Open DevTools (F12), read the message</li>
+        <li><strong>Specific product/page?</strong> → It's probably data issue</li>
+        <li><strong>Recent code change?</strong> → Check theme version history</li>
+        <li><strong>Shopify down?</strong> → Check status.shopify.com</li>
+        <li><strong>Ask for help</strong> → ChatGPT, Shopify Community, PM</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>🔧 Essential Tools</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tool</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Theme Inspector Chrome Extension</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">See which file renders what</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">DevTools Elements Tab</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Inspect HTML/CSS live</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">DevTools Console</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">JavaScript errors</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">DevTools Network Tab</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">API calls, load times</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚨 Common Error Messages</h3>
+    <div class="warning-box">
+        <code>Uncaught TypeError: Cannot read property 'X' of null</code><br>
+        <strong>Meaning:</strong> Trying to access something that doesn't exist. Check if element exists before accessing.
+    </div>
+    <br>
+    <div class="warning-box">
+        <code>Liquid error: Array 'product.images' is not paginateable</code><br>
+        <strong>Meaning:</strong> Can't use paginate with this array. Use for loop instead.
+    </div>
+</div>
+`;
+
+const task11Content = `
+<h2>📚 TASK 11: CRISIS MANAGEMENT - Handling Dev Emergencies</h2>
+
+<div class="content-section">
+    <h3>🔥 Scenario 1: Site Down</h3>
+    <div class="warning-box">
+        <strong>Protocol:</strong>
+        <ol>
+            <li>DON'T PANIC</li>
+            <li>Check <a href="https://status.shopify.com" target="_blank">status.shopify.com</a></li>
+            <li>If Shopify is green → It's your code</li>
+            <li>Rollback to previous theme version immediately</li>
+            <li>Inform PM within 5 minutes</li>
+            <li>Document what happened</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔥 Scenario 2: Checkout Broken</h3>
+    <div class="warning-box">
+        <strong>This is a $$$$ emergency!</strong>
+        <ol>
+            <li>Disable any recent apps</li>
+            <li>Remove any checkout customizations</li>
+            <li>Test in Incognito</li>
+            <li>If still broken, contact Shopify Support IMMEDIATELY</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔥 Scenario 3: Angry Client</h3>
+    <ul>
+        <li>✅ Acknowledge the issue immediately</li>
+        <li>✅ Don't make excuses</li>
+        <li>✅ Give a realistic ETA for fix</li>
+        <li>✅ Over-communicate updates</li>
+        <li>✅ Loop in PM if client is escalating</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🔥 Scenario 4: Data Loss</h3>
+    <div class="highlight-box">
+        <strong>Recovery Options:</strong>
+        <ul>
+            <li>Check for CSV exports in Admin</li>
+            <li>Use Rewind or other backup apps</li>
+            <li>Contact Shopify Support (they have backups)</li>
+            <li><strong>Prevention:</strong> Always export before major changes</li>
+        </ul>
+    </div>
+</div>
+`;
+
+const task12Content = `
+<h2>📚 TASK 12: AI-POWERED DEVELOPMENT - Using AI Copilots Effectively</h2>
+
+<div class="content-section">
+    <h3>🤖 AI Tools for Shopify Development</h3>
+    <ul>
+        <li><strong>ChatGPT / Claude:</strong> Liquid code, debugging, explanations</li>
+        <li><strong>GitHub Copilot:</strong> Real-time code completion</li>
+        <li><strong>Cursor AI:</strong> IDE with AI built-in</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📝 Effective AI Prompts for Liquid</h3>
+    <div class="highlight-box">
+        <strong>Example 1: Related Products</strong><br>
+        <code>"Write a Liquid loop for related products from the same collection. Exclude current product. Limit 4. Handle empty state. Use OS 2.0 image_url filter."</code>
+    </div>
+    <br>
+    <div class="highlight-box">
+        <strong>Example 2: Sale Badge</strong><br>
+        <code>"Create a Liquid snippet that shows a 'SALE' badge when compare_at_price is higher than price. Calculate and show the percentage off."</code>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚠️ AI Code Review Checklist</h3>
+    <div class="warning-box">
+        <strong>NEVER trust AI code blindly. Always check:</strong>
+        <ul>
+            <li>☐ Uses <code>render</code> not <code>include</code> (deprecated)</li>
+            <li>☐ Uses <code>image_url</code> not <code>img_url</code> (deprecated)</li>
+            <li>☐ Money values use <code>| money</code> filter</li>
+            <li>☐ Has proper empty state handling</li>
+            <li>☐ No hardcoded currency symbols</li>
+            <li>☐ Works on mobile</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💡 When AI Saves Time vs. Wastes Time</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ Good for</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Bad for</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Boilerplate code</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complex business logic</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Simple Liquid loops</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Theme architecture decisions</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CSS tweaks</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Debugging complex issues</td>
+        </tr>
+    </table>
+</div>
+`;
+
+const task13Content = `
+<h2>📚 TASK 13: CAREER GROWTH & FINAL EXAM - Your Path to Senior Developer</h2>
+
+<div class="content-section">
+    <h3>🌱 The Developer Career Path</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Level</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Skills Required</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Salary Range</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timeframe</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Junior</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CSS edits, app installs, basic Liquid</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹25-40k/month</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">0-1 year</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mid-Level</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom sections, complex Liquid, speed optimization</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹50-80k/month</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-3 years</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Senior</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Architecture, headless, mentoring juniors</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹1-1.5L/month</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3-5 years</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lead</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Team management, strategy, client calls</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹1.5-2.5L/month</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5+ years</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📚 Continuous Learning Resources</h3>
+    <ul>
+        <li><strong>Shopify Dev Docs:</strong> shopify.dev (official, always up-to-date)</li>
+        <li><strong>Shopify Community:</strong> community.shopify.com</li>
+        <li><strong>YouTube:</strong> Code with Chris the Freelancer</li>
+        <li><strong>Twitter:</strong> Follow Shopify Partners, theme developers</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🏆 Skills to Develop Next</h3>
+    <div class="highlight-box">
+        <ul>
+            <li>Headless Shopify (Hydrogen, Next.js)</li>
+            <li>Shopify Functions (custom checkout logic)</li>
+            <li>App Development (Remix, Node.js)</li>
+            <li>Advanced JavaScript/TypeScript</li>
+            <li>GraphQL API mastery</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎓 Final Certification Requirements</h3>
+    <ul>
+        <li>📝 Complete all 13 training tasks with 100% quiz scores</li>
+        <li>🎯 Pass the 25-question Final Exam</li>
+        <li>🎥 Submit a 30-min video walkthrough of a live store</li>
+        <li>👔 Receive your Digital Heroes Developer Certificate</li>
+    </ul>
+</div>
+`;
 
 // Quiz Questions (expanded to 130+ questions)
 const quizQuestions = [
-    // Task 1: Mindset (20 questions)
+    // Task 1: Mindset (15 questions)
     { question: "A store losing sales due to slow load time is losing _______ monthly?", options: ["Thousands", "Hundreds of thousands annually", "Nothing", "Unknown"], correct: 1 },
     { question: "What is the primary goal of your code?", options: ["To be clever", "To drive revenue", "To follow tutorials", "To impress"], correct: 1 },
     { question: "A bug on production costing $50k - who is responsible?", options: ["Client", "Developer", "Shopify", "No one"], correct: 1 },
@@ -686,6 +1383,11 @@ const quizQuestions = [
     { question: "The Digital Heroes standard for console errors is?", options: ["Some allowed", "Zero errors", "Only warnings", "Ignore them"], correct: 1 },
     { question: "What percentage of traffic is mobile?", options: ["30%", "50%", "70%+", "10%"], correct: 2 },
     { question: "A $10,000/day store with 1 sec delay loses _____ annually?", options: ["$25,000", "$255,500", "$1M", "$500"], correct: 1 },
+    { question: "What browser should ALWAYS be tested for e-commerce?", options: ["Internet Explorer", "Safari on iPhone", "Netscape", "Opera Mini"], correct: 1 },
+    { question: "The Digital Heroes QA Standard requires testing on:", options: ["Just Chrome", "Chrome and Firefox only", "Chrome, Safari, Firefox, Edge + real mobile", "Only desktop"], correct: 2 },
+    { question: "What should you ALWAYS check before marking a task complete?", options: ["Email", "Console for errors", "Social media", "Weather"], correct: 1 },
+    { question: "A 'Script Kid' developer does what?", options: ["Writes systematic code", "Copy-pastes from tutorials", "Tests thoroughly", "Documents code"], correct: 1 },
+    { question: "What's the difference between a coder and a Digital Heroes Developer?", options: ["Nothing", "DH developers write code that SELLS", "Coders are better", "DH developers work less"], correct: 1 },
 
     // Task 2: Platform (15 questions)
     { question: "Shopify uses what templating language?", options: ["PHP", "Liquid", "Python", "JavaScript"], correct: 1 },
@@ -693,6 +1395,16 @@ const quizQuestions = [
     { question: "To output a currency properly, use what filter?", options: ["| currency", "| money", "| dollar", "| price"], correct: 1 },
     { question: "Online Store 2.0 uses what for page templates?", options: ["PHP", "JSON", "XML", "YAML"], correct: 1 },
     { question: "What's the correct hierarchy?", options: ["Variant > Product", "Product > Variant", "Both same level", "Collection > Variant"], correct: 1 },
+    { question: "What is a metafield namespace?", options: ["Product name", "Category for metafield like custom.ingredients", "HTML tag", "CSS class"], correct: 1 },
+    { question: "Maximum product images allowed?", options: ["50", "100", "250", "Unlimited"], correct: 2 },
+    { question: "Where is shop currency accessed?", options: ["settings.currency", "shop.currency", "cart.currency", "checkout.currency"], correct: 1 },
+    { question: "What's the limit for products in a for loop?", options: ["50", "100", "1000", "Unlimited"], correct: 2 },
+    { question: "Shopify is hosted where?", options: ["Self-hosted", "AWS", "Google Cloud", "Shopify's own infrastructure (SaaS)"], correct: 3 },
+    { question: "What does OS 2.0 stand for?", options: ["Operating System 2.0", "Online Store 2.0", "Open Source 2.0", "Old Standard 2.0"], correct: 1 },
+    { question: "Can you directly access Shopify's database?", options: ["Yes", "No - API only", "Sometimes", "With permission"], correct: 1 },
+    { question: "What is an App Block in OS 2.0?", options: ["Block for apps", "Apps can inject content into sections", "App settings", "App dashboard"], correct: 1 },
+    { question: "How do sections work in OS 2.0?", options: ["Only on homepage", "Sections everywhere - any page type", "Only on product pages", "Not supported"], correct: 1 },
+    { question: "What's the customer object in Liquid?", options: ["All customers", "Current logged-in customer", "Guest customer", "Admin"], correct: 1 },
 
     // Task 3: Theme (10 questions)
     { question: "Should you edit the live theme directly?", options: ["Yes", "No - duplicate first", "Only CSS", "If urgent"], correct: 1 },
@@ -700,6 +1412,11 @@ const quizQuestions = [
     { question: "Minimum touch target size for mobile?", options: ["20px", "44px", "60px", "100px"], correct: 1 },
     { question: "Theme duplicate naming convention?", options: ["Copy 1", "[Dev] Feature - Date", "Backup", "New Theme"], correct: 1 },
     { question: "How many essential homepage sections?", options: ["5", "8", "12", "20"], correct: 2 },
+    { question: "What section builds trust with 'As seen in...'?", options: ["Hero", "Logo Bar", "Products", "Footer"], correct: 1 },
+    { question: "First section on a homepage should be?", options: ["Footer", "Hero Banner", "FAQ", "Newsletter"], correct: 1 },
+    { question: "Mobile-first development means?", options: ["Design desktop first", "Design mobile first, then desktop", "Only mobile", "Ignore mobile"], correct: 1 },
+    { question: "What's a sticky Add to Cart?", options: ["Glue on button", "Button stays visible when scrolling", "Slow button", "Hidden button"], correct: 1 },
+    { question: "Prestige and Impulse are?", options: ["Free themes", "Premium themes we use", "Old themes", "App names"], correct: 1 },
 
     // Task 4: Liquid (20 questions)
     { question: "Which outputs data?", options: ["{% tag %}", "{{ object }}", "[[ object ]]", "( object )"], correct: 1 },
@@ -707,11 +1424,33 @@ const quizQuestions = [
     { question: "Check product availability with?", options: ["{% if product.available %}", "{{ product.stock }}", "{% check stock %}", "product.quantity > 0"], correct: 0 },
     { question: "What is a metafield?", options: ["Standard field", "Custom data on resources", "An app", "Database table"], correct: 1 },
     { question: "Deprecated tag to avoid?", options: ["render", "include", "assign", "capture"], correct: 1 },
+    { question: "What filter makes 'My Product' into 'my-product'?", options: ["| lowercase", "| handleize", "| slugify", "| url"], correct: 1 },
+    { question: "Access first item in for loop with?", options: ["forloop.first", "forloop.index == 0", "for.start", "loop.begin"], correct: 0 },
+    { question: "What's forloop.index?", options: ["0-based counter", "1-based counter", "Array length", "Loop name"], correct: 1 },
+    { question: "Combine conditions with?", options: ["and / or", "&& / ||", "plus / minus", "combine"], correct: 0 },
+    { question: "Filter to truncate text?", options: ["| shorten", "| truncate: 100", "| cut", "| limit"], correct: 1 },
+    { question: "Remove HTML from string?", options: ["| no_html", "| strip_html", "| clean", "| text_only"], correct: 1 },
+    { question: "Provide default value with?", options: ["| fallback", "| default: 'N/A'", "| or", "| else"], correct: 1 },
+    { question: "What replaces img_url in OS 2.0?", options: ["image_tag", "image_url", "picture_url", "media_url"], correct: 1 },
+    { question: "Schema goes inside what tags?", options: ["{% script %}", "{% schema %}", "{% config %}", "{% settings %}"], correct: 1 },
+    { question: "What creates a Theme Customizer option?", options: ["CSS", "Section schema settings", "JavaScript", "HTML"], correct: 1 },
+    { question: "Access section setting with?", options: ["settings.x", "section.settings.x", "block.x", "config.x"], correct: 1 },
+    { question: "What's a preset in schema?", options: ["Default values for section", "CSS preset", "Theme color", "Font preset"], correct: 0 },
+    { question: "Contains operator checks?", options: ["If number is greater", "If string/array contains value", "If file exists", "If page loaded"], correct: 1 },
+    { question: "Correct date filter syntax?", options: ["| format_date", "| date: '%B %d, %Y'", "| toDate", "| dateFormat"], correct: 1 },
+    { question: "What does capture do?", options: ["Takes screenshot", "Stores output in variable", "Captures form", "Records video"], correct: 1 },
 
     // Task 5: PDP (10 questions)
     { question: "Above the fold must include?", options: ["Footer", "Add to Cart button", "Blog link", "Map"], correct: 1 },
     { question: "Where to store product specs?", options: ["Description only", "Metafields", "Title", "Tags"], correct: 1 },
     { question: "Image gallery should be?", options: ["Static", "Swipeable on mobile", "Hidden", "Text only"], correct: 1 },
+    { question: "First product image should be?", options: ["Lifestyle shot", "Product on white/clean background", "Text only", "Video thumbnail"], correct: 1 },
+    { question: "Why use sticky Add to Cart on mobile?", options: ["Looks cool", "Keeps CTA visible while scrolling", "Saves space", "Required by Shopify"], correct: 1 },
+    { question: "Review stars provide what?", options: ["Decoration", "Social proof (trust)", "Speed boost", "SEO only"], correct: 1 },
+    { question: "Image width filter for thumbnails?", options: ["width: 800", "width: 100", "width: 1200", "width: 50"], correct: 1 },
+    { question: "loading='lazy' should be used on?", options: ["All images", "Below-fold images", "Hero images", "No images"], correct: 1 },
+    { question: "Variant selector lets user choose?", options: ["Shipping method", "Size/color", "Payment method", "Pickup location"], correct: 1 },
+    { question: "Trust badges should be placed?", options: ["In footer only", "Below Add to Cart button", "On contact page", "Hidden"], correct: 1 },
 
     // Task 6: Speed (15 questions)
     { question: "Target mobile PageSpeed score?", options: ["50", "85+", "10", "100"], correct: 1 },
@@ -719,32 +1458,100 @@ const quizQuestions = [
     { question: "What hurts speed most?", options: ["Text", "Too many apps/scripts", "Colors", "Fonts"], correct: 1 },
     { question: "Off-screen images should load how?", options: ["Eager", "Lazy", "Never", "Immediately"], correct: 1 },
     { question: "CLS target?", options: ["< 1", "< 0.1", "< 5", "< 0.5"], correct: 1 },
+    { question: "What is LCP?", options: ["Largest Content Paint", "Last Content Placed", "Loading Complete Point", "Liquid Code Parser"], correct: 0 },
+    { question: "TBT stands for?", options: ["Total Block Time", "Total Blocking Time", "Theme Build Time", "Test Browser Time"], correct: 1 },
+    { question: "TBT target?", options: ["< 500ms", "< 200ms", "< 1s", "< 50ms"], correct: 1 },
+    { question: "What causes CLS (layout shift)?", options: ["Slow server", "Images without width/height", "Too much text", "Dark colors"], correct: 1 },
+    { question: "Defer attribute does what?", options: ["Deletes script", "Loads script after HTML", "Speeds up script", "Disables script"], correct: 1 },
+    { question: "WebP format is used for?", options: ["Audio", "Optimized images", "Documents", "Videos"], correct: 1 },
+    { question: "Best tool to test speed?", options: ["Google Docs", "PageSpeed Insights", "Excel", "Photoshop"], correct: 1 },
+    { question: "Target desktop PageSpeed score?", options: ["70", "90+", "50", "100"], correct: 1 },
+    { question: "Scripts should go where?", options: ["In head tag", "Before </body> or use defer", "In footer", "In header section"], correct: 1 },
+    { question: "How to fix slow LCP?", options: ["Add more scripts", "Optimize hero images", "Use more apps", "Increase file size"], correct: 1 },
 
     // Task 7: Apps (10 questions)
     { question: "Max recommended apps?", options: ["20", "5-8", "0", "50"], correct: 1 },
     { question: "Deleting app removes code from theme?", options: ["Yes", "No - manual cleanup often needed", "Usually", "Always"], correct: 1 },
     { question: "App conflicts cause?", options: ["Better speed", "JS errors", "More sales", "Nothing"], correct: 1 },
+    { question: "First step to diagnose app conflict?", options: ["Email Shopify", "Open Console (F12)", "Delete all apps", "Ignore it"], correct: 1 },
+    { question: "Klaviyo is used for?", options: ["Reviews", "Email marketing automation", "Speed", "SEO"], correct: 1 },
+    { question: "Judge.me helps with?", options: ["Reviews/social proof", "Speed", "Email", "Shipping"], correct: 0 },
+    { question: "After uninstalling app, check theme for?", options: ["New features", "Leftover snippets/code", "Speed increase", "Nothing"], correct: 1 },
+    { question: "More apps generally means?", options: ["Faster site", "Slower site + conflicts", "Better SEO", "More sales"], correct: 1 },
+    { question: "jQuery version conflicts cause?", options: ["Better compatibility", "JS errors between apps", "Faster loading", "Nothing"], correct: 1 },
+    { question: "Before installing app, consider?", options: ["Only price", "Speed impact + alternatives", "Just install it", "Color scheme"], correct: 1 },
 
-    // Task 8: Checkout (5 questions)
+    // Task 8: Checkout (10 questions)
     { question: "Which policy page is NOT required?", options: ["Privacy", "Returns", "Blog Guidelines", "Shipping"], correct: 2 },
     { question: "Missing policies can cause?", options: ["Nothing", "Ad account bans", "More sales", "Faster site"], correct: 1 },
+    { question: "Where are policies configured?", options: ["Theme editor", "Settings > Policies", "Apps", "Code editor"], correct: 1 },
+    { question: "GDPR requires what page?", options: ["About Us", "Privacy Policy", "Blog", "FAQ"], correct: 1 },
+    { question: "Shopify Payments offers?", options: ["Highest fees", "Lowest transaction fees", "No payment support", "Only PayPal"], correct: 1 },
+    { question: "Before going live, test checkout in?", options: ["Live mode", "Test mode", "Don't test", "Production"], correct: 1 },
+    { question: "Contact page builds what?", options: ["Speed", "Trust + Ad approval", "SEO only", "Nothing"], correct: 1 },
+    { question: "Refund Policy is required for?", options: ["Nothing", "FB/Google Ads approval", "Theme installation", "App installation"], correct: 1 },
+    { question: "Apple Pay / Google Pay should be?", options: ["Disabled", "Enabled for faster checkout", "Only on desktop", "Only on mobile"], correct: 1 },
+    { question: "Policies auto-link in?", options: ["Header", "Checkout footer", "Product pages", "Cart"], correct: 1 },
 
-    // Task 9: QA (10 questions)
+    // Task 9: QA (12 questions)
     { question: "Where to test iOS issues?", options: ["Windows Chrome", "Real iPhone/BrowserStack", "DevTools only", "Don't test"], correct: 1 },
     { question: "Console red errors mean?", options: ["Ignore", "Fix them - Zero Tolerance", "It's fine", "Normal"], correct: 1 },
     { question: "Test checkout with?", options: ["Real payment", "Test mode order", "Skip it", "Trust it works"], correct: 1 },
+    { question: "Chrome DevTools is enough for mobile testing?", options: ["Yes", "No - need real devices", "Sometimes", "Always"], correct: 1 },
+    { question: "Minimum touch target size?", options: ["20px", "44x44px", "10px", "100px"], correct: 1 },
+    { question: "Which browsers must be tested?", options: ["Just Chrome", "Chrome, Safari, Firefox, Edge", "Only Safari", "None"], correct: 1 },
+    { question: "BrowserStack is used for?", options: ["Speed testing", "Testing on devices you don't own", "Email", "SEO"], correct: 1 },
+    { question: "Cart drawer should be tested for?", options: ["Add/remove items", "Just display", "Colors only", "Nothing"], correct: 0 },
+    { question: "Slow 3G simulation tests?", options: ["Desktop speed", "Site on slow connections", "Server speed", "Nothing"], correct: 1 },
+    { question: "What should work on mobile menu?", options: ["Nothing", "Open and close properly", "Only colors", "Just logo"], correct: 1 },
+    { question: "Forms should be tested for?", options: ["Colors", "Correct submission", "Font size", "Nothing"], correct: 1 },
+    { question: "Email notifications should be?", options: ["Ignored", "Tested to ensure they work", "Deleted", "Hidden"], correct: 1 },
 
     // Task 10: Debug (10 questions)
     { question: "First debug step?", options: ["Panic", "Test on fresh Dawn", "Email Shopify", "Delete code"], correct: 1 },
     { question: "Cache test method?", options: ["Reload", "Incognito window", "Wait", "Reboot"], correct: 1 },
+    { question: "Theme Inspector Chrome Extension shows?", options: ["Colors", "Which file renders what", "Speed", "SEO"], correct: 1 },
+    { question: "Network tab in DevTools shows?", options: ["Colors", "API calls and load times", "Fonts", "Nothing"], correct: 1 },
+    { question: "status.shopify.com shows?", options: ["Your store status", "Shopify platform status", "Theme status", "App status"], correct: 1 },
+    { question: "'Cannot read property of null' means?", options: ["Code works", "Trying to access something that doesn't exist", "Server error", "Network issue"], correct: 1 },
+    { question: "If bug only on one product, it's likely?", options: ["Theme issue", "Data issue", "Server issue", "Shopify bug"], correct: 1 },
+    { question: "Theme version history helps find?", options: ["Best design", "Recent changes that caused bugs", "Speed issues", "SEO problems"], correct: 1 },
+    { question: "Elements tab in DevTools inspects?", options: ["Network calls", "HTML/CSS live", "Server logs", "Database"], correct: 1 },
+    { question: "After all debugging fails, ask?", options: ["No one", "ChatGPT, Community, PM", "Random person", "Delete everything"], correct: 1 },
 
-    // Task 11: Crisis (5 questions)
+    // Task 11: Crisis (8 questions)
     { question: "Site down first action?", options: ["Panic", "Check status.shopify.com", "Delete theme", "Email client"], correct: 1 },
     { question: "Data loss recovery?", options: ["Cry", "Check backups/CSV exports", "Start over", "Blame client"], correct: 1 },
+    { question: "Checkout broken - priority level?", options: ["Low", "$$$ Emergency - highest priority", "Medium", "Ignore"], correct: 1 },
+    { question: "Angry client - first response?", options: ["Make excuses", "Acknowledge the issue immediately", "Ignore", "Blame Shopify"], correct: 1 },
+    { question: "Inform PM of site down within?", options: ["1 hour", "5 minutes", "Next day", "Never"], correct: 1 },
+    { question: "If Shopify status is green but site is down?", options: ["Wait for Shopify", "It's your code - rollback theme", "Email Shopify", "Do nothing"], correct: 1 },
+    { question: "Rewind is used for?", options: ["Speed", "Store backups", "Email", "SEO"], correct: 1 },
+    { question: "Before major changes, always?", options: ["Just do it", "Export data as backup", "Skip backup", "Ask client"], correct: 1 },
 
-    // Task 12: AI (5 questions)
+    // Task 12: AI (10 questions)
     { question: "Can you trust AI code 100%?", options: ["Yes", "No - always verify", "Mostly", "Sure"], correct: 1 },
-    { question: "AI often uses what deprecated tag?", options: ["render", "include", "capture", "assign"], correct: 1 }
+    { question: "AI often uses what deprecated tag?", options: ["render", "include", "capture", "assign"], correct: 1 },
+    { question: "ChatGPT is good for?", options: ["Final production code", "Boilerplate and explanations", "Replacing devs", "Nothing"], correct: 1 },
+    { question: "GitHub Copilot provides?", options: ["Project management", "Real-time code completion", "Hosting", "Email"], correct: 1 },
+    { question: "AI code must be checked for?", options: ["Nothing", "Deprecated tags, proper filters, mobile support", "Just syntax", "Colors"], correct: 1 },
+    { question: "AI is bad for?", options: ["Boilerplate", "Complex business logic decisions", "Simple loops", "CSS tweaks"], correct: 1 },
+    { question: "AI-generated Liquid should use?", options: ["img_url", "image_url (OS 2.0)", "picture_url", "photo_url"], correct: 1 },
+    { question: "AI code should handle?", options: ["Nothing", "Empty states", "Only success", "Just errors"], correct: 1 },
+    { question: "Best AI prompt includes?", options: ["Vague request", "Specific requirements + constraints", "Single word", "Nothing"], correct: 1 },
+    { question: "Cursor AI is?", options: ["Mouse pointer", "IDE with AI built-in", "Terminal", "Browser"], correct: 1 },
+
+    // Task 13: Career (10 questions)
+    { question: "Junior developer salary range?", options: ["₹5-10k", "₹25-40k/month", "₹1-2L/month", "₹5L/month"], correct: 1 },
+    { question: "Senior developer skills include?", options: ["Basic CSS only", "Architecture, headless, mentoring", "Just app installs", "Only frontend"], correct: 1 },
+    { question: "Time to reach Senior level?", options: ["1 month", "3-5 years", "10 years", "Never"], correct: 1 },
+    { question: "Shopify Dev Docs URL?", options: ["shopify.com", "shopify.dev", "docs.shopify", "help.shopify"], correct: 1 },
+    { question: "Lead developer does?", options: ["Only code", "Team management + strategy + client calls", "Just CSS", "Nothing"], correct: 1 },
+    { question: "To level up, learn?", options: ["Nothing new", "Headless, Hydrogen, GraphQL", "Only Liquid", "Just CSS"], correct: 1 },
+    { question: "Hydrogen is for?", options: ["Water", "Headless Shopify (React framework)", "Theme editor", "Apps"], correct: 1 },
+    { question: "GraphQL is?", options: ["Graph drawing", "API query language", "Database", "CSS framework"], correct: 1 },
+    { question: "Final certification requires?", options: ["Nothing", "100% quiz scores + video walkthrough", "Just reading", "One quiz"], correct: 1 },
+    { question: "Continuous learning is?", options: ["Optional", "Essential for career growth", "Waste of time", "Only for juniors"], correct: 1 }
 ];
 
 // Export all
