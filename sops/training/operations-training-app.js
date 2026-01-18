@@ -113,15 +113,15 @@ function openTask(index) {
     // Use full content from data file if available, otherwise show placeholder
     const taskContentVars = {
         1: typeof task1Content !== 'undefined' ? task1Content : null,
-        2: typeof task2Content !== 'undefined' ? task2Content : null,
-        3: typeof task3Content !== 'undefined' ? task3Content : null,
-        4: typeof task4Content !== 'undefined' ? task4Content : null,
-        5: typeof task5Content !== 'undefined' ? task5Content : null,
-        6: typeof task6Content !== 'undefined' ? task6Content : null,
-        7: typeof task7Content !== 'undefined' ? task7Content : null,
-        8: typeof task8Content !== 'undefined' ? task8Content : null,
-        9: typeof task9Content !== 'undefined' ? task9Content : null,
-        10: typeof task10Content !== 'undefined' ? task10Content : null,
+        2: window['task2Content'] || null,
+        3: window['task3Content'] || null,
+        4: window['task4Content'] || null,
+        5: window['task5Content'] || null,
+        6: window['task6Content'] || null,
+        7: window['task7Content'] || null,
+        8: window['task8Content'] || null,
+        9: window['task9Content'] || null,
+        10: window['task10Content'] || null,
         11: typeof task11Content !== 'undefined' ? task11Content : null,
         12: typeof task12Content !== 'undefined' ? task12Content : null
     };
@@ -556,4 +556,5 @@ function saveTraineeName() {
         document.getElementById('namePromptModal').remove();
     }
 }
+
 
