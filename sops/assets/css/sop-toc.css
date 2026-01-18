@@ -1,0 +1,221 @@
+/* SOP Floating Table of Contents Styles */
+
+/* Desktop floating TOC panel */
+.sop-toc-panel {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 220px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sop-toc-panel.collapsed {
+    transform: translateX(calc(100% + 10px));
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sop-toc-header {
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sop-toc-header .toc-icon {
+    margin-right: 8px;
+}
+
+.sop-toc-collapse-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 2px 6px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.sop-toc-collapse-btn:hover {
+    opacity: 1;
+}
+
+/* Progress bar */
+.sop-toc-progress {
+    height: 3px;
+    background: #E5E7EB;
+}
+
+.sop-toc-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #10B981, #3B82F6);
+    width: 0%;
+    transition: width 0.1s ease;
+}
+
+/* TOC content */
+.sop-toc-content {
+    overflow-y: auto;
+    flex: 1;
+    padding: 8px 0;
+}
+
+.sop-toc-item {
+    display: block;
+    padding: 8px 15px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 12px;
+    border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+    line-height: 1.4;
+}
+
+.sop-toc-item:hover {
+    background: #F1F5F9;
+    color: #1E293B;
+}
+
+.sop-toc-item.active {
+    background: #EFF6FF;
+    color: #2563EB;
+    border-left-color: #3B82F6;
+    font-weight: 600;
+}
+
+.sop-toc-item.level-3 {
+    padding-left: 25px;
+    font-size: 11px;
+    color: #64748B;
+}
+
+.sop-toc-item.level-3.active {
+    color: #3B82F6;
+}
+
+/* Percentage indicator */
+.sop-toc-percent {
+    padding: 8px 15px;
+    font-size: 11px;
+    color: #94A3B8;
+    text-align: center;
+    border-top: 1px solid #E5E7EB;
+    background: #F8FAFC;
+}
+
+/* Toggle button (when collapsed) */
+.sop-toc-toggle-btn {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.sop-toc-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+.sop-toc-toggle-btn.visible {
+    display: flex;
+}
+
+/* Mobile bottom drawer */
+@media (max-width: 1200px) {
+    .sop-toc-panel {
+        display: none;
+    }
+
+    .sop-toc-toggle-btn {
+        right: 15px;
+        top: auto;
+        bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sop-toc-panel.mobile-open {
+        display: flex;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        max-height: 60vh;
+        border-radius: 20px 20px 0 0;
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 100001;
+    }
+
+    .sop-toc-toggle-btn {
+        bottom: 70px;
+        right: 12px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Backdrop for mobile */
+.sop-toc-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100000;
+}
+
+.sop-toc-backdrop.active {
+    display: block;
+}
+
+/* Scroll indicator on sections */
+.section-in-view {
+    position: relative;
+}
+
+.section-in-view::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #3B82F6;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.section-in-view.visible::before {
+    opacity: 1;
+}
