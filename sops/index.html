@@ -934,7 +934,7 @@
             font-weight: bold;
         }
     </style>
-    
+
     <link rel="stylesheet" href="assets/css/copy-button.css">
 </head>
 
@@ -974,9 +974,9 @@
             </div>
         </header>
 
-        
 
-                <!-- Quick Access Cards -->
+
+        <!-- Quick Access Cards -->
         <div class="section-header" style="border-color: #EC4899;">
             <span>⚡</span>
             <h2>QUICK ACCESS</h2>
@@ -996,7 +996,8 @@
                     <div>• FAQ (60+ Q&A)</div>
                 </div>
                 <div class="role-links">
-                    <span class="role-link" style="background: rgba(236, 72, 153, 0.2); color: #EC4899; flex:1;">View Handbook</span>
+                    <span class="role-link" style="background: rgba(236, 72, 153, 0.2); color: #EC4899; flex:1;">View
+                        Handbook</span>
                 </div>
             </a>
 
@@ -1013,7 +1014,8 @@
                     <div>• First Tasks</div>
                 </div>
                 <div class="role-links">
-                    <span class="role-link" style="background: rgba(59, 130, 246, 0.2); color: #3B82F6; flex:1;">View Onboarding</span>
+                    <span class="role-link" style="background: rgba(59, 130, 246, 0.2); color: #3B82F6; flex:1;">View
+                        Onboarding</span>
                 </div>
             </a>
 
@@ -1030,7 +1032,8 @@
                     <div>• Certifications</div>
                 </div>
                 <div class="role-links">
-                    <span class="role-link" style="background: rgba(16, 185, 129, 0.2); color: #10B981; flex:1;">Start Training</span>
+                    <span class="role-link" style="background: rgba(16, 185, 129, 0.2); color: #10B981; flex:1;">Start
+                        Training</span>
                 </div>
             </a>
         </div>
@@ -1059,7 +1062,8 @@
             </div>
             <!-- PM -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project  Manager</span></div>
+                <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project
+                        Manager</span></div>
                 <ul class="role-details">
                     <li>Timeline Tracking</li>
                     <li>Resource Allocation</li>
@@ -1250,7 +1254,7 @@
                 </div>
             </div>
             <div class="path-card sop" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
-                <div class="path-header"><span class="path-icon">📖</span><span class="path-title">Home</span></div>
+                <div class="path-header"><span class="path-icon">📖</span><span class="path-title">SOP</span></div>
                 <div class="path-full">Standard Operating Procedures</div>
                 <div class="path-desc">"How I do my job"</div>
                 <div class="path-features">
@@ -1280,7 +1284,7 @@
     <script src="admin-mode.js"></script>
     <script>
         // Inline Admin Button Integration 
- function toggleAdminMode() {
+        function toggleAdminMode() {
             const floatingBtn = document.getElementById('adminFloatingBtn');
             if (floatingBtn) {
                 floatingBtn.click();
@@ -1288,7 +1292,7 @@
         }
 
         // Sync inline button state with admin mode state 
- function syncInlineButton() {
+        function syncInlineButton() {
             const inlineBtn = document.getElementById('adminInlineBtn');
             const isActive = document.body.classList.contains('admin-active');
             if (inlineBtn) {
@@ -1303,11 +1307,11 @@
         }
 
         // Watch for admin mode changes 
- const observer = new MutationObserver(syncInlineButton);
+        const observer = new MutationObserver(syncInlineButton);
         observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
         // Initial sync 
- document.addEventListener('DOMContentLoaded', syncInlineButton);
+        document.addEventListener('DOMContentLoaded', syncInlineButton);
 
         // === MATRIX RAIN EFFECT ===
         const canvas = document.getElementById('matrixRain');
@@ -1344,7 +1348,7 @@
         }
 
         // Initialize matrix rain 
- initMatrix();
+        initMatrix();
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -1353,7 +1357,7 @@
         // === GAMIFICATION: AUDIO & SYTEM LOG ===
 
         // Sound Effect System 
- let audioCtx;
+        let audioCtx;
 
         function initAudio() {
             if (!audioCtx) {
@@ -1376,16 +1380,16 @@
 
             if (type === 'hover') {
                 // High pitch short blip 
- osc.type = 'sine';
+                osc.type = 'sine';
                 osc.frequency.setValueAtTime(800, now);
                 osc.frequency.exponentialRampToValueAtTime(1200, now + 0.05);
                 gain.gain.setValueAtTime(0.02, now); // Low volume 
- gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
                 osc.start(now);
                 osc.stop(now + 0.05);
             } else if (type === 'click') {
                 // Affirmative tone 
- osc.type = 'square';
+                osc.type = 'square';
                 osc.frequency.setValueAtTime(400, now);
                 osc.frequency.exponentialRampToValueAtTime(600, now + 0.1);
                 gain.gain.setValueAtTime(0.03, now);
@@ -1396,17 +1400,17 @@
         }
 
         // Initialize audio on first interaction 
- document.body.addEventListener('click', initAudio, { once: true });
+        document.body.addEventListener('click', initAudio, { once: true });
         document.body.addEventListener('itemhover', initAudio, { once: true });
 
         // Add event listeners for sound 
- document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
+        document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
             el.addEventListener('mouseenter', () => playSound('hover'));
             el.addEventListener('click', () => playSound('click'));
         });
 
         // System Log Logic 
- function log(msg, type = 'info') {
+        function log(msg, type = 'info') {
             const logEl = document.getElementById('systemLog');
             if (!logEl) return;
 
@@ -1422,7 +1426,7 @@
         }
 
         // Boot Sequence Messaging 
- const bootMessages = [
+        const bootMessages = [
             "Initializing neural link...",
             "Accessing Digital Heroes database...",
             "Verifying user credentials...",
@@ -1434,10 +1438,10 @@
 
         let msgDelay = 0;
         // Boot Sequence Messaging - Logging to console instead of UI 
- bootMessages.forEach((msg, i) => {
+        bootMessages.forEach((msg, i) => {
             setTimeout(() => {
                 // Try to play sound if context is active 
- if (audioCtx && audioCtx.state === 'running') playSound('hover');
+                if (audioCtx && audioCtx.state === 'running') playSound('hover');
             }, Math.random() * 400 + 400);
         });
 
@@ -1456,20 +1460,20 @@
             setTimeout(() => xpEl.style.textShadow = '0 0 5px var(--kra)', 200);
 
             // Level up check 
- if (xp % 100 === 0) {
+            if (xp % 100 === 0) {
                 log(`LEVEL UP! Current XP: ${xp}`, 'warn');
                 playSound('levelup');
             }
         }
 
         // Hook into interactions for XP 
- document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
+        document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
             el.addEventListener('mouseenter', () => addXP(5));
             el.addEventListener('click', () => addXP(20));
         });
 
         // Konami Code 
- const konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        const konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
         let kPosition = 0;
 
         document.addEventListener('keydown', (e) => {
@@ -1557,7 +1561,7 @@
             fireCursor.style.top = e.clientY + 'px';
 
             // Create fire particles on movement 
- const dx = e.clientX - lastX;
+            const dx = e.clientX - lastX;
             const dy = e.clientY - lastY;
             const speed = Math.sqrt(dx * dx + dy * dy);
 
@@ -1595,7 +1599,7 @@
         }
 
         // Fire burst on click 
- document.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
             for (let i = 0; i < 12; i++) {
                 setTimeout(() => createFireParticle(e.clientX, e.clientY), i * 30);
             }
@@ -1605,13 +1609,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
