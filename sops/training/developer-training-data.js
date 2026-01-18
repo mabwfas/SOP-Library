@@ -453,7 +453,7 @@ const task2Content = `
     <div class="warning-box">
         <strong>The Hardcoding Trap:</strong><br>
         Never, EVER hardcode currency symbols like "$" or "£".<br><br>
-        <strong>❌ WRONG:</strong> <code>$${product.price}</code><br>
+        <strong>❌ WRONG:</strong> <code>$$\{product.price}</code><br>
         <strong>✅ RIGHT:</strong> <code>{{ product.price | money }}</code><br><br>
         A user in UK expects to see "£", not "$". The money filter handles this automatically.
     </div>
@@ -676,75 +676,75 @@ const task13Content = `<h2>📚 TASK 13: CAREER GROWTH & FINAL EXAM</h2>
 // Quiz Questions (expanded to 130+ questions)
 const quizQuestions = [
     // Task 1: Mindset (20 questions)
-    {question: "A store losing sales due to slow load time is losing _______ monthly?", options: ["Thousands", "Hundreds of thousands annually", "Nothing", "Unknown"], correct: 1},
-    {question: "What is the primary goal of your code?", options: ["To be clever", "To drive revenue", "To follow tutorials", "To impress"], correct: 1},
-    {question: "A bug on production costing $50k - who is responsible?", options: ["Client", "Developer", "Shopify", "No one"], correct: 1},
-    {question: "'Plan Twice, Code Once' prevents what?", options: ["Innovation", "Wasted hours and bugs", "Fun", "Nothing"], correct: 1},
-    {question: "Should you use clients as beta testers?", options: ["Yes", "No - Zero Tolerance for bugs", "Sometimes", "Often"], correct: 1},
-    {question: "What makes a '10x developer' effective?", options: ["Being smarter", "Being systematic", "Working alone", "Coding faster"], correct: 1},
-    {question: "Every 1 second of load time equals what conversion drop?", options: ["1%", "7%", "20%", "50%"], correct: 1},
-    {question: "The Digital Heroes standard for console errors is?", options: ["Some allowed", "Zero errors", "Only warnings", "Ignore them"], correct: 1},
-    {question: "What percentage of traffic is mobile?", options: ["30%", "50%", "70%+", "10%"], correct: 2},
-    {question: "A $10,000/day store with 1 sec delay loses _____ annually?", options: ["$25,000", "$255,500", "$1M", "$500"], correct: 1},
-    
+    { question: "A store losing sales due to slow load time is losing _______ monthly?", options: ["Thousands", "Hundreds of thousands annually", "Nothing", "Unknown"], correct: 1 },
+    { question: "What is the primary goal of your code?", options: ["To be clever", "To drive revenue", "To follow tutorials", "To impress"], correct: 1 },
+    { question: "A bug on production costing $50k - who is responsible?", options: ["Client", "Developer", "Shopify", "No one"], correct: 1 },
+    { question: "'Plan Twice, Code Once' prevents what?", options: ["Innovation", "Wasted hours and bugs", "Fun", "Nothing"], correct: 1 },
+    { question: "Should you use clients as beta testers?", options: ["Yes", "No - Zero Tolerance for bugs", "Sometimes", "Often"], correct: 1 },
+    { question: "What makes a '10x developer' effective?", options: ["Being smarter", "Being systematic", "Working alone", "Coding faster"], correct: 1 },
+    { question: "Every 1 second of load time equals what conversion drop?", options: ["1%", "7%", "20%", "50%"], correct: 1 },
+    { question: "The Digital Heroes standard for console errors is?", options: ["Some allowed", "Zero errors", "Only warnings", "Ignore them"], correct: 1 },
+    { question: "What percentage of traffic is mobile?", options: ["30%", "50%", "70%+", "10%"], correct: 2 },
+    { question: "A $10,000/day store with 1 sec delay loses _____ annually?", options: ["$25,000", "$255,500", "$1M", "$500"], correct: 1 },
+
     // Task 2: Platform (15 questions)
-    {question: "Shopify uses what templating language?", options: ["PHP", "Liquid", "Python", "JavaScript"], correct: 1},
-    {question: "Maximum variants per product?", options: ["50", "100", "200", "Unlimited"], correct: 1},
-    {question: "To output a currency properly, use what filter?", options: ["| currency", "| money", "| dollar", "| price"], correct: 1},
-    {question: "Online Store 2.0 uses what for page templates?", options: ["PHP", "JSON", "XML", "YAML"], correct: 1},
-    {question: "What's the correct hierarchy?", options: ["Variant > Product", "Product > Variant", "Both same level", "Collection > Variant"], correct: 1},
-    
+    { question: "Shopify uses what templating language?", options: ["PHP", "Liquid", "Python", "JavaScript"], correct: 1 },
+    { question: "Maximum variants per product?", options: ["50", "100", "200", "Unlimited"], correct: 1 },
+    { question: "To output a currency properly, use what filter?", options: ["| currency", "| money", "| dollar", "| price"], correct: 1 },
+    { question: "Online Store 2.0 uses what for page templates?", options: ["PHP", "JSON", "XML", "YAML"], correct: 1 },
+    { question: "What's the correct hierarchy?", options: ["Variant > Product", "Product > Variant", "Both same level", "Collection > Variant"], correct: 1 },
+
     // Task 3: Theme (10 questions)
-    {question: "Should you edit the live theme directly?", options: ["Yes", "No - duplicate first", "Only CSS", "If urgent"], correct: 1},
-    {question: "What is Dawn?", options: ["A plugin", "Shopify's OS 2.0 reference theme", "An app", "A framework"], correct: 1},
-    {question: "Minimum touch target size for mobile?", options: ["20px", "44px", "60px", "100px"], correct: 1},
-    {question: "Theme duplicate naming convention?", options: ["Copy 1", "[Dev] Feature - Date", "Backup", "New Theme"], correct: 1},
-    {question: "How many essential homepage sections?", options: ["5", "8", "12", "20"], correct: 2},
-    
+    { question: "Should you edit the live theme directly?", options: ["Yes", "No - duplicate first", "Only CSS", "If urgent"], correct: 1 },
+    { question: "What is Dawn?", options: ["A plugin", "Shopify's OS 2.0 reference theme", "An app", "A framework"], correct: 1 },
+    { question: "Minimum touch target size for mobile?", options: ["20px", "44px", "60px", "100px"], correct: 1 },
+    { question: "Theme duplicate naming convention?", options: ["Copy 1", "[Dev] Feature - Date", "Backup", "New Theme"], correct: 1 },
+    { question: "How many essential homepage sections?", options: ["5", "8", "12", "20"], correct: 2 },
+
     // Task 4: Liquid (20 questions)
-    {question: "Which outputs data?", options: ["{% tag %}", "{{ object }}", "[[ object ]]", "( object )"], correct: 1},
-    {question: "Correct loop syntax?", options: ["foreach", "{% for x in y %}", "loop x", "for x in y"], correct: 1},
-    {question: "Check product availability with?", options: ["{% if product.available %}", "{{ product.stock }}", "{% check stock %}", "product.quantity > 0"], correct: 0},
-    {question: "What is a metafield?", options: ["Standard field", "Custom data on resources", "An app", "Database table"], correct: 1},
-    {question: "Deprecated tag to avoid?", options: ["render", "include", "assign", "capture"], correct: 1},
-    
+    { question: "Which outputs data?", options: ["{% tag %}", "{{ object }}", "[[ object ]]", "( object )"], correct: 1 },
+    { question: "Correct loop syntax?", options: ["foreach", "{% for x in y %}", "loop x", "for x in y"], correct: 1 },
+    { question: "Check product availability with?", options: ["{% if product.available %}", "{{ product.stock }}", "{% check stock %}", "product.quantity > 0"], correct: 0 },
+    { question: "What is a metafield?", options: ["Standard field", "Custom data on resources", "An app", "Database table"], correct: 1 },
+    { question: "Deprecated tag to avoid?", options: ["render", "include", "assign", "capture"], correct: 1 },
+
     // Task 5: PDP (10 questions)
-    {question: "Above the fold must include?", options: ["Footer", "Add to Cart button", "Blog link", "Map"], correct: 1},
-    {question: "Where to store product specs?", options: ["Description only", "Metafields", "Title", "Tags"], correct: 1},
-    {question: "Image gallery should be?", options: ["Static", "Swipeable on mobile", "Hidden", "Text only"], correct: 1},
-    
+    { question: "Above the fold must include?", options: ["Footer", "Add to Cart button", "Blog link", "Map"], correct: 1 },
+    { question: "Where to store product specs?", options: ["Description only", "Metafields", "Title", "Tags"], correct: 1 },
+    { question: "Image gallery should be?", options: ["Static", "Swipeable on mobile", "Hidden", "Text only"], correct: 1 },
+
     // Task 6: Speed (15 questions)
-    {question: "Target mobile PageSpeed score?", options: ["50", "85+", "10", "100"], correct: 1},
-    {question: "LCP target?", options: ["< 5s", "< 2.5s", "< 10s", "< 1s"], correct: 1},
-    {question: "What hurts speed most?", options: ["Text", "Too many apps/scripts", "Colors", "Fonts"], correct: 1},
-    {question: "Off-screen images should load how?", options: ["Eager", "Lazy", "Never", "Immediately"], correct: 1},
-    {question: "CLS target?", options: ["< 1", "< 0.1", "< 5", "< 0.5"], correct: 1},
-    
+    { question: "Target mobile PageSpeed score?", options: ["50", "85+", "10", "100"], correct: 1 },
+    { question: "LCP target?", options: ["< 5s", "< 2.5s", "< 10s", "< 1s"], correct: 1 },
+    { question: "What hurts speed most?", options: ["Text", "Too many apps/scripts", "Colors", "Fonts"], correct: 1 },
+    { question: "Off-screen images should load how?", options: ["Eager", "Lazy", "Never", "Immediately"], correct: 1 },
+    { question: "CLS target?", options: ["< 1", "< 0.1", "< 5", "< 0.5"], correct: 1 },
+
     // Task 7: Apps (10 questions)
-    {question: "Max recommended apps?", options: ["20", "5-8", "0", "50"], correct: 1},
-    {question: "Deleting app removes code from theme?", options: ["Yes", "No - manual cleanup often needed", "Usually", "Always"], correct: 1},
-    {question: "App conflicts cause?", options: ["Better speed", "JS errors", "More sales", "Nothing"], correct: 1},
-    
+    { question: "Max recommended apps?", options: ["20", "5-8", "0", "50"], correct: 1 },
+    { question: "Deleting app removes code from theme?", options: ["Yes", "No - manual cleanup often needed", "Usually", "Always"], correct: 1 },
+    { question: "App conflicts cause?", options: ["Better speed", "JS errors", "More sales", "Nothing"], correct: 1 },
+
     // Task 8: Checkout (5 questions)
-    {question: "Which policy page is NOT required?", options: ["Privacy", "Returns", "Blog Guidelines", "Shipping"], correct: 2},
-    {question: "Missing policies can cause?", options: ["Nothing", "Ad account bans", "More sales", "Faster site"], correct: 1},
-    
+    { question: "Which policy page is NOT required?", options: ["Privacy", "Returns", "Blog Guidelines", "Shipping"], correct: 2 },
+    { question: "Missing policies can cause?", options: ["Nothing", "Ad account bans", "More sales", "Faster site"], correct: 1 },
+
     // Task 9: QA (10 questions)
-    {question: "Where to test iOS issues?", options: ["Windows Chrome", "Real iPhone/BrowserStack", "DevTools only", "Don't test"], correct: 1},
-    {question: "Console red errors mean?", options: ["Ignore", "Fix them - Zero Tolerance", "It's fine", "Normal"], correct: 1},
-    {question: "Test checkout with?", options: ["Real payment", "Test mode order", "Skip it", "Trust it works"], correct: 1},
-    
+    { question: "Where to test iOS issues?", options: ["Windows Chrome", "Real iPhone/BrowserStack", "DevTools only", "Don't test"], correct: 1 },
+    { question: "Console red errors mean?", options: ["Ignore", "Fix them - Zero Tolerance", "It's fine", "Normal"], correct: 1 },
+    { question: "Test checkout with?", options: ["Real payment", "Test mode order", "Skip it", "Trust it works"], correct: 1 },
+
     // Task 10: Debug (10 questions)
-    {question: "First debug step?", options: ["Panic", "Test on fresh Dawn", "Email Shopify", "Delete code"], correct: 1},
-    {question: "Cache test method?", options: ["Reload", "Incognito window", "Wait", "Reboot"], correct: 1},
-    
+    { question: "First debug step?", options: ["Panic", "Test on fresh Dawn", "Email Shopify", "Delete code"], correct: 1 },
+    { question: "Cache test method?", options: ["Reload", "Incognito window", "Wait", "Reboot"], correct: 1 },
+
     // Task 11: Crisis (5 questions)
-    {question: "Site down first action?", options: ["Panic", "Check status.shopify.com", "Delete theme", "Email client"], correct: 1},
-    {question: "Data loss recovery?", options: ["Cry", "Check backups/CSV exports", "Start over", "Blame client"], correct: 1},
-    
+    { question: "Site down first action?", options: ["Panic", "Check status.shopify.com", "Delete theme", "Email client"], correct: 1 },
+    { question: "Data loss recovery?", options: ["Cry", "Check backups/CSV exports", "Start over", "Blame client"], correct: 1 },
+
     // Task 12: AI (5 questions)
-    {question: "Can you trust AI code 100%?", options: ["Yes", "No - always verify", "Mostly", "Sure"], correct: 1},
-    {question: "AI often uses what deprecated tag?", options: ["render", "include", "capture", "assign"], correct: 1}
+    { question: "Can you trust AI code 100%?", options: ["Yes", "No - always verify", "Mostly", "Sure"], correct: 1 },
+    { question: "AI often uses what deprecated tag?", options: ["render", "include", "capture", "assign"], correct: 1 }
 ];
 
 // Export all
@@ -1905,74 +1905,74 @@ Explain the issue clearly."
 // Additional Quiz Questions for Expanded Content
 const additionalQuizQuestions = [
     // Platform Fundamentals (15 more)
-    {question: "What file format are OS 2.0 templates stored in?", options: ["Liquid", "JSON", "YAML", "XML"], correct: 1},
-    {question: "Maximum variants per product?", options: ["50", "100", "200", "500"], correct: 1},
-    {question: "Where are translation strings stored?", options: ["/assets", "/locales", "/config", "/templates"], correct: 1},
-    {question: "What folder contains sections?", options: ["/snippets", "/sections", "/templates", "/layout"], correct: 1},
-    {question: "Settings_schema.json is in which folder?", options: ["/assets", "/config", "/layout", "/locales"], correct: 1},
-    {question: "How many options maximum per product?", options: ["2", "3", "4", "5"], correct: 1},
-    {question: "To format price correctly, use which filter?", options: ["| currency", "| money", "| price", "| format"], correct: 1},
-    {question: "Hardcoding currency symbols is:", options: ["Recommended", "Forbidden", "Optional", "Required"], correct: 1},
-    {question: "Which file wraps all pages?", options: ["header.liquid", "theme.liquid", "base.liquid", "index.liquid"], correct: 1},
-    {question: "Metafields are accessed via:", options: ["product.meta", "product.metafields", "product.custom", "product.data"], correct: 1},
-    
+    { question: "What file format are OS 2.0 templates stored in?", options: ["Liquid", "JSON", "YAML", "XML"], correct: 1 },
+    { question: "Maximum variants per product?", options: ["50", "100", "200", "500"], correct: 1 },
+    { question: "Where are translation strings stored?", options: ["/assets", "/locales", "/config", "/templates"], correct: 1 },
+    { question: "What folder contains sections?", options: ["/snippets", "/sections", "/templates", "/layout"], correct: 1 },
+    { question: "Settings_schema.json is in which folder?", options: ["/assets", "/config", "/layout", "/locales"], correct: 1 },
+    { question: "How many options maximum per product?", options: ["2", "3", "4", "5"], correct: 1 },
+    { question: "To format price correctly, use which filter?", options: ["| currency", "| money", "| price", "| format"], correct: 1 },
+    { question: "Hardcoding currency symbols is:", options: ["Recommended", "Forbidden", "Optional", "Required"], correct: 1 },
+    { question: "Which file wraps all pages?", options: ["header.liquid", "theme.liquid", "base.liquid", "index.liquid"], correct: 1 },
+    { question: "Metafields are accessed via:", options: ["product.meta", "product.metafields", "product.custom", "product.data"], correct: 1 },
+
     // Liquid Programming (15 more)
-    {question: "{{ }} tags are for:", options: ["Logic", "Output", "Comments", "Loops"], correct: 1},
-    {question: "{% %} tags are for:", options: ["Output", "Logic/Control", "Comments", "Variables"], correct: 1},
-    {question: "Which filter translates strings?", options: ["| translate", "| t", "| lang", "| i18n"], correct: 1},
-    {question: "To get sized image, use:", options: ["img_url", "image_url", "picture_url", "media_url"], correct: 1},
-    {question: "Correct loop syntax is:", options: ["loop x in y", "foreach x in y", "{% for x in y %}", "for(x in y)"], correct: 2},
-    {question: "Schema must be in which section of file?", options: ["Top", "Middle", "Bottom", "Anywhere"], correct: 2},
-    {question: "Missing comma in schema causes:", options: ["Warning", "Entire section breaks", "Nothing", "Slow load"], correct: 1},
-    {question: "Presets in schema enable:", options: ["Speed", "Section in theme editor", "Caching", "Analytics"], correct: 1},
-    {question: "Use 'render' instead of:", options: ["assign", "include", "capture", "section"], correct: 1},
-    {question: "Default filter provides:", options: ["Speed", "Fallback values", "Caching", "Validation"], correct: 1},
-    
+    { question: "{{ }} tags are for:", options: ["Logic", "Output", "Comments", "Loops"], correct: 1 },
+    { question: "{% %} tags are for:", options: ["Output", "Logic/Control", "Comments", "Variables"], correct: 1 },
+    { question: "Which filter translates strings?", options: ["| translate", "| t", "| lang", "| i18n"], correct: 1 },
+    { question: "To get sized image, use:", options: ["img_url", "image_url", "picture_url", "media_url"], correct: 1 },
+    { question: "Correct loop syntax is:", options: ["loop x in y", "foreach x in y", "{% for x in y %}", "for(x in y)"], correct: 2 },
+    { question: "Schema must be in which section of file?", options: ["Top", "Middle", "Bottom", "Anywhere"], correct: 2 },
+    { question: "Missing comma in schema causes:", options: ["Warning", "Entire section breaks", "Nothing", "Slow load"], correct: 1 },
+    { question: "Presets in schema enable:", options: ["Speed", "Section in theme editor", "Caching", "Analytics"], correct: 1 },
+    { question: "Use 'render' instead of:", options: ["assign", "include", "capture", "section"], correct: 1 },
+    { question: "Default filter provides:", options: ["Speed", "Fallback values", "Caching", "Validation"], correct: 1 },
+
     // Speed Optimization (15 more) 
-    {question: "Every 1 second delay equals what conversion drop?", options: ["3%", "5%", "7%", "10%"], correct: 2},
-    {question: "LCP stands for:", options: ["Lazy Content Paint", "Largest Contentful Paint", "Load Complete Point", "Layout Complete Paint"], correct: 1},
-    {question: "CLS measures:", options: ["Speed", "Visual Stability", "Interactivity", "Load time"], correct: 1},
-    {question: "Good LCP is under:", options: ["1s", "2.5s", "5s", "10s"], correct: 1},
-    {question: "Good CLS is under:", options: ["0.1", "0.5", "1.0", "2.0"], correct: 0},
-    {question: "Hero images should use:", options: ["loading=lazy", "loading=eager", "loading=defer", "No loading attr"], correct: 1},
-    {question: "To prevent CLS, images need:", options: ["Alt text", "Title", "Width/Height attributes", "Lazy loading"], correct: 2},
-    {question: "Script defer means:", options: ["Load first", "Execute after DOM", "Block rendering", "Ignore"], correct: 1},
-    {question: "Images are typically what % of page weight?", options: ["10-20%", "30-40%", "50-80%", "90%+"], correct: 2},
-    {question: "WebP provides:", options: ["Better SEO", "Better compression", "Better colors", "Better fonts"], correct: 1},
-    
+    { question: "Every 1 second delay equals what conversion drop?", options: ["3%", "5%", "7%", "10%"], correct: 2 },
+    { question: "LCP stands for:", options: ["Lazy Content Paint", "Largest Contentful Paint", "Load Complete Point", "Layout Complete Paint"], correct: 1 },
+    { question: "CLS measures:", options: ["Speed", "Visual Stability", "Interactivity", "Load time"], correct: 1 },
+    { question: "Good LCP is under:", options: ["1s", "2.5s", "5s", "10s"], correct: 1 },
+    { question: "Good CLS is under:", options: ["0.1", "0.5", "1.0", "2.0"], correct: 0 },
+    { question: "Hero images should use:", options: ["loading=lazy", "loading=eager", "loading=defer", "No loading attr"], correct: 1 },
+    { question: "To prevent CLS, images need:", options: ["Alt text", "Title", "Width/Height attributes", "Lazy loading"], correct: 2 },
+    { question: "Script defer means:", options: ["Load first", "Execute after DOM", "Block rendering", "Ignore"], correct: 1 },
+    { question: "Images are typically what % of page weight?", options: ["10-20%", "30-40%", "50-80%", "90%+"], correct: 2 },
+    { question: "WebP provides:", options: ["Better SEO", "Better compression", "Better colors", "Better fonts"], correct: 1 },
+
     // Apps & Integration (10 more)
-    {question: "Maximum recommended apps?", options: ["3-5", "5-8", "10-15", "20+"], correct: 1},
-    {question: "Uninstalling app removes theme code?", options: ["Yes", "No - manual cleanup needed", "Sometimes", "Always"], correct: 1},
-    {question: "Each app adds how much JavaScript?", options: ["1-10KB", "50-500KB", "1-5MB", "Nothing"], correct: 1},
-    {question: "Which backup app is recommended?", options: ["Backup Pro", "Rewind", "Save It", "Theme Guard"], correct: 1},
-    {question: "Too many cart apps cause:", options: ["Speed boost", "Cart not updating", "Better UX", "Nothing"], correct: 1},
-    {question: "jQuery version conflicts cause:", options: ["Speed boost", "JS console errors", "Better UX", "Nothing"], correct: 1},
-    {question: "App residue is found in:", options: ["Only assets", "theme.liquid and snippets", "Only config", "Nowhere"], correct: 1},
-    {question: "After clean uninstall, PageSpeed should:", options: ["Stay same", "Improve", "Decrease", "Crash"], correct: 1},
-    
+    { question: "Maximum recommended apps?", options: ["3-5", "5-8", "10-15", "20+"], correct: 1 },
+    { question: "Uninstalling app removes theme code?", options: ["Yes", "No - manual cleanup needed", "Sometimes", "Always"], correct: 1 },
+    { question: "Each app adds how much JavaScript?", options: ["1-10KB", "50-500KB", "1-5MB", "Nothing"], correct: 1 },
+    { question: "Which backup app is recommended?", options: ["Backup Pro", "Rewind", "Save It", "Theme Guard"], correct: 1 },
+    { question: "Too many cart apps cause:", options: ["Speed boost", "Cart not updating", "Better UX", "Nothing"], correct: 1 },
+    { question: "jQuery version conflicts cause:", options: ["Speed boost", "JS console errors", "Better UX", "Nothing"], correct: 1 },
+    { question: "App residue is found in:", options: ["Only assets", "theme.liquid and snippets", "Only config", "Nowhere"], correct: 1 },
+    { question: "After clean uninstall, PageSpeed should:", options: ["Stay same", "Improve", "Decrease", "Crash"], correct: 1 },
+
     // QA & Testing (10 more)
-    {question: "Most critical testing platform?", options: ["Windows Chrome", "iOS Safari", "Firefox", "Opera"], correct: 1},
-    {question: "Digital Heroes QA standard is:", options: ["30 points", "45 points", "60 points", "100 points"], correct: 2},
-    {question: "Zero Tolerance means:", options: ["Some bugs OK", "No bugs on production", "Client decides", "Speed matters more"], correct: 1},
-    {question: "DevTools emulation is:", options: ["Perfect", "Not perfect - use real devices", "Better than real", "Useless"], correct: 1},
-    {question: "Console red errors should be:", options: ["Ignored", "Fixed immediately", "Noted for later", "Celebrated"], correct: 1},
-    {question: "Test orders should use:", options: ["Real payment", "Test mode", "Neither", "Client's card"], correct: 1},
-    {question: "Broken checkout priority is:", options: ["Low", "Medium", "Critical - immediate fix", "Not our problem"], correct: 2},
-    
+    { question: "Most critical testing platform?", options: ["Windows Chrome", "iOS Safari", "Firefox", "Opera"], correct: 1 },
+    { question: "Digital Heroes QA standard is:", options: ["30 points", "45 points", "60 points", "100 points"], correct: 2 },
+    { question: "Zero Tolerance means:", options: ["Some bugs OK", "No bugs on production", "Client decides", "Speed matters more"], correct: 1 },
+    { question: "DevTools emulation is:", options: ["Perfect", "Not perfect - use real devices", "Better than real", "Useless"], correct: 1 },
+    { question: "Console red errors should be:", options: ["Ignored", "Fixed immediately", "Noted for later", "Celebrated"], correct: 1 },
+    { question: "Test orders should use:", options: ["Real payment", "Test mode", "Neither", "Client's card"], correct: 1 },
+    { question: "Broken checkout priority is:", options: ["Low", "Medium", "Critical - immediate fix", "Not our problem"], correct: 2 },
+
     // Crisis Management (10 more)
-    {question: "First rule of crisis is:", options: ["Panic", "Don't panic", "Blame someone", "Hide"], correct: 1},
-    {question: "Site down - first check:", options: ["Delete theme", "status.shopify.com", "Reboot computer", "Email client"], correct: 1},
-    {question: "Fastest recovery method:", options: ["Rebuild theme", "Publish backup theme", "Contact Shopify", "Wait"], correct: 1},
-    {question: "Crisis updates should be:", options: ["Never", "Every 15 minutes", "Once a day", "When fixed"], correct: 1},
-    {question: "Post-mortem answers:", options: ["Who to blame", "Root cause & prevention", "How to hide it", "Nothing"], correct: 1},
-    {question: "Rewind app is for:", options: ["Speed", "Backups & recovery", "SEO", "Analytics"], correct: 1},
-    
+    { question: "First rule of crisis is:", options: ["Panic", "Don't panic", "Blame someone", "Hide"], correct: 1 },
+    { question: "Site down - first check:", options: ["Delete theme", "status.shopify.com", "Reboot computer", "Email client"], correct: 1 },
+    { question: "Fastest recovery method:", options: ["Rebuild theme", "Publish backup theme", "Contact Shopify", "Wait"], correct: 1 },
+    { question: "Crisis updates should be:", options: ["Never", "Every 15 minutes", "Once a day", "When fixed"], correct: 1 },
+    { question: "Post-mortem answers:", options: ["Who to blame", "Root cause & prevention", "How to hide it", "Nothing"], correct: 1 },
+    { question: "Rewind app is for:", options: ["Speed", "Backups & recovery", "SEO", "Analytics"], correct: 1 },
+
     // AI Development (5 more)
-    {question: "AI code should be:", options: ["Trusted 100%", "Always verified", "Never used", "Only for CSS"], correct: 1},
-    {question: "Good AI prompt includes:", options: ["Just 'help'", "Specific requirements", "Nothing detailed", "Random words"], correct: 1},
-    {question: "Copilot uses comments for:", options: ["Nothing", "Better context", "Speed", "Storage"], correct: 1},
-    {question: "AI often uses deprecated:", options: ["render", "include", "capture", "assign"], correct: 1},
-    {question: "First suggestion is always:", options: ["Best", "Not always best - check alternatives", "Wrong", "Ignored"], correct: 1}
+    { question: "AI code should be:", options: ["Trusted 100%", "Always verified", "Never used", "Only for CSS"], correct: 1 },
+    { question: "Good AI prompt includes:", options: ["Just 'help'", "Specific requirements", "Nothing detailed", "Random words"], correct: 1 },
+    { question: "Copilot uses comments for:", options: ["Nothing", "Better context", "Speed", "Storage"], correct: 1 },
+    { question: "AI often uses deprecated:", options: ["render", "include", "capture", "assign"], correct: 1 },
+    { question: "First suggestion is always:", options: ["Best", "Not always best - check alternatives", "Wrong", "Ignored"], correct: 1 }
 ];
 
 // =============================================================================
