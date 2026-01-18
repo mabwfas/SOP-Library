@@ -349,11 +349,23 @@ function showCertificate() {
         setTimeout(() => window.confetti.burst(window.innerWidth / 4, window.innerHeight / 2), 500);
         setTimeout(() => window.confetti.burst(3 * window.innerWidth / 4, window.innerHeight / 2), 1000);
     }
+
     const today = new Date();
     const formattedDate = today.toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
+    });
+
+    // Generate unique certificate ID
+    const certificateId = `DH-DEV-${Date.now().toString(36).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+
+    // Save certificate to localStorage for verification
+    saveCertificate({
+        id: certificateId,
+        name: traineeName || 'Developer',
+        course: 'Shopify Developer Training',
+        issueDate: today.toISOString()
     });
 
     // Create certificate modal overlay
@@ -508,7 +520,7 @@ function showCertificate() {
                 </div>
             </div>
             
-            <!-- Certificate Code -->
+            <!-- Certificate Code & Verify Link -->
             <div style="text-align: center; margin-top: 30px;">
                 <div style="
                     display: inline-block;
@@ -516,11 +528,19 @@ function showCertificate() {
                     border: 1px solid rgba(99, 102, 241, 0.3);
                     border-radius: 8px;
                     padding: 12px 25px;
+                    margin-bottom: 15px;
                 ">
                     <span style="color: #94A3B8; font-size: 0.85em;">Certificate ID: </span>
-                    <span style="color: #6366F1; font-weight: 700; font-family: monospace; letter-spacing: 0.1em;">
-                        DH-DEV-${Date.now().toString(36).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}
+                    <span id="certIdDisplay" style="color: #6366F1; font-weight: 700; font-family: monospace; letter-spacing: 0.1em;">
+                        ${certificateId}
                     </span>
+                </div>
+                <div style="margin-top: 10px;">
+                    <a href="https://library.digitalheroes.co.in/verify.html" target="_blank" style="
+                        color: #10B981;
+                        font-size: 0.85em;
+                        text-decoration: none;
+                    ">🔗 Verify at library.digitalheroes.co.in/verify</a>
                 </div>
             </div>
             
@@ -647,6 +667,24 @@ function closeCertificate() {
 // Print Certificate
 function printCertificate() {
     window.print();
+}
+
+// Save Certificate to localStorage for verification
+function saveCertificate(certData) {
+    // Get existing certificates
+    let certificates = JSON.parse(localStorage.getItem('issuedCertificates') || '[]');
+
+    // Check if this certificate already exists (by ID or name+course)
+    const exists = certificates.some(c => c.id === certData.id);
+    if (exists) return;
+
+    // Add new certificate
+    certificates.push(certData);
+
+    // Save back to localStorage
+    localStorage.setItem('issuedCertificates', JSON.stringify(certificates));
+
+    console.log('Certificate saved for verification:', certData.id);
 }
 
 // Download Certificate as Image

@@ -1,0 +1,4 @@
+{
+    "certificates": [],
+    "_note": "This file stores all issued certificates. Each certificate has: id, name, course, issueDate, verificationUrl"
+}

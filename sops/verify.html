@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Certificate | Digital Heroes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+            min-height: 100vh;
+            color: #F8FAFC;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .brand {
+            font-size: 2em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #6366F1, #06B6D4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: #94A3B8;
+            font-size: 1em;
+            margin-top: 8px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .verify-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .verify-card h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.5em;
+            color: #F8FAFC;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        .input-group label {
+            display: block;
+            color: #94A3B8;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            color: #F8FAFC;
+            font-size: 1.1em;
+            font-family: monospace;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #6366F1;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .input-group input::placeholder {
+            color: #64748B;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .verify-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #6366F1, #06B6D4);
+            color: #000;
+            font-weight: 700;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .verify-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        .verify-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .result-box {
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 12px;
+            display: none;
+        }
+
+        .result-box.valid {
+            background: rgba(16, 185, 129, 0.15);
+            border: 2px solid #10B981;
+        }
+
+        .result-box.invalid {
+            background: rgba(239, 68, 68, 0.15);
+            border: 2px solid #EF4444;
+        }
+
+        .result-box h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .result-box.valid h3 {
+            color: #10B981;
+        }
+
+        .result-box.invalid h3 {
+            color: #EF4444;
+        }
+
+        .cert-details {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .cert-detail {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cert-detail:last-child {
+            border-bottom: none;
+        }
+
+        .cert-detail .label {
+            color: #94A3B8;
+        }
+
+        .cert-detail .value {
+            color: #F8FAFC;
+            font-weight: 600;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #64748B;
+            font-size: 0.85em;
+        }
+
+        .footer a {
+            color: #6366F1;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(99, 102, 241, 0.2);
+            border-top-color: #6366F1;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .recently-issued {
+            margin-top: 50px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .recently-issued h3 {
+            color: #94A3B8;
+            font-size: 1em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .recent-cert {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .recent-cert .name {
+            font-weight: 600;
+            color: #F8FAFC;
+        }
+
+        .recent-cert .course {
+            color: #94A3B8;
+            font-size: 0.85em;
+        }
+
+        .recent-cert .date {
+            color: #64748B;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">🎓</div>
+        <div class="brand">DIGITAL HEROES</div>
+        <div class="subtitle">Certificate Verification Portal</div>
+    </div>
+
+    <div class="verify-card">
+        <h2>🔍 Verify a Certificate</h2>
+
+        <div class="input-group">
+            <label>Enter Certificate ID</label>
+            <input type="text" id="certIdInput" placeholder="e.g. DH-DEV-MKK7G2HO-A9IH" maxlength="25">
+        </div>
+
+        <button class="verify-btn" onclick="verifyCertificate()">
+            ✓ Verify Certificate
+        </button>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p style="color: #94A3B8;">Verifying certificate...</p>
+        </div>
+
+        <div class="result-box" id="resultBox">
+            <h3 id="resultTitle"></h3>
+            <p id="resultMessage"></p>
+            <div class="cert-details" id="certDetails"></div>
+        </div>
+    </div>
+
+    <div class="recently-issued" id="recentCerts">
+        <h3>📜 Recently Issued Certificates</h3>
+        <div id="recentList"></div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Digital Heroes. All rights reserved.</p>
+        <p style="margin-top: 10px;">
+            <a href="index.html">← Back to SOP Library</a> |
+            <a href="training/developer-training.html">Developer Training</a>
+        </p>
+    </div>
+
+    <script>
+        // Certificate storage (loaded from JSON)
+        let certificates = [];
+
+        // Load certificates from JSON file
+        async function loadCertificates() {
+            try {
+                const response = await fetch('training/certificates.json');
+                const data = await response.json();
+                certificates = data.certificates || [];
+                renderRecentCerts();
+            } catch (error) {
+                console.log('No certificates file found, using localStorage fallback');
+                // Fallback to localStorage
+                certificates = JSON.parse(localStorage.getItem('issuedCertificates') || '[]');
+                renderRecentCerts();
+            }
+        }
+
+        // Verify certificate
+        async function verifyCertificate() {
+            const input = document.getElementById('certIdInput');
+            const certId = input.value.trim().toUpperCase();
+
+            if (!certId) {
+                input.style.borderColor = '#EF4444';
+                return;
+            }
+
+            input.style.borderColor = 'rgba(99, 102, 241, 0.3)';
+
+            // Show loading
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('resultBox').style.display = 'none';
+
+            // Simulate network delay for realism
+            await new Promise(resolve => setTimeout(resolve, 1000));
+
+            document.getElementById('loading').classList.remove('show');
+
+            // Search for certificate
+            const cert = certificates.find(c => c.id.toUpperCase() === certId);
+
+            const resultBox = document.getElementById('resultBox');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultMessage = document.getElementById('resultMessage');
+            const certDetails = document.getElementById('certDetails');
+
+            if (cert) {
+                resultBox.className = 'result-box valid';
+                resultBox.style.display = 'block';
+                resultTitle.innerHTML = '✅ Certificate Verified!';
+                resultMessage.innerHTML = 'This is an authentic Digital Heroes certificate.';
+
+                certDetails.innerHTML = `
+                    <div class="cert-detail">
+                        <span class="label">Certificate ID</span>
+                        <span class="value">${cert.id}</span>
+                    </div>
+                    <div class="cert-detail">
+                        <span class="label">Recipient Name</span>
+                        <span class="value">${cert.name}</span>
+                    </div>
+                    <div class="cert-detail">
+                        <span class="label">Course Completed</span>
+                        <span class="value">${cert.course}</span>
+                    </div>
+                    <div class="cert-detail">
+                        <span class="label">Issue Date</span>
+                        <span class="value">${new Date(cert.issueDate).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                })}</span>
+                    </div>
+                `;
+                certDetails.style.display = 'block';
+            } else {
+                resultBox.className = 'result-box invalid';
+                resultBox.style.display = 'block';
+                resultTitle.innerHTML = '❌ Certificate Not Found';
+                resultMessage.innerHTML = 'This certificate ID does not exist in our database. Please check the ID and try again, or contact support if you believe this is an error.';
+                certDetails.style.display = 'none';
+            }
+        }
+
+        // Render recently issued certificates
+        function renderRecentCerts() {
+            const recentList = document.getElementById('recentList');
+            const recentSection = document.getElementById('recentCerts');
+
+            if (certificates.length === 0) {
+                recentSection.style.display = 'none';
+                return;
+            }
+
+            // Show last 5 certificates
+            const recent = certificates.slice(-5).reverse();
+
+            recentList.innerHTML = recent.map(cert => `
+                <div class="recent-cert">
+                    <div>
+                        <div class="name">${cert.name}</div>
+                        <div class="course">${cert.course}</div>
+                    </div>
+                    <div class="date">${new Date(cert.issueDate).toLocaleDateString()}</div>
+                </div>
+            `).join('');
+        }
+
+        // Enter key triggers verification
+        document.getElementById('certIdInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                verifyCertificate();
+            }
+        });
+
+        // Load certificates on page load
+        loadCertificates();
+    </script>
+</body>
+
+</html>
