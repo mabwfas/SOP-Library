@@ -407,7 +407,7 @@
 
         .role-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 10px;
             margin-bottom: 15px;
         }
@@ -419,20 +419,18 @@
             padding: 12px;
             transition: all 0.2s;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .role-card-body {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
+            display: grid;
+            grid-template-rows: auto 1fr;
         }
 
         .role-content {
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+        }
+
+        .role-details {
             flex: 1;
-            min-width: 0;
         }
 
         /* Corner accents for roles */
@@ -478,8 +476,9 @@
 
         .role-links {
             display: flex;
-            gap: 5px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 3px;
+            min-width: 45px;
         }
 
         .role-link.dst {
@@ -494,14 +493,13 @@
         }
 
         .role-link {
-            padding: 4px 8px;
+            padding: 4px 6px;
             border-radius: 4px;
             text-decoration: none;
             text-align: center;
             font-size: 0.6em;
             font-weight: 600;
             transition: all 0.2s;
-            min-width: 35px;
         }
 
         .role-link.kra {
@@ -1076,179 +1074,199 @@
             <!-- Sales -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">💰</span><span class="role-title">Sales</span></div>
-                <ul class="role-details">
-                    <li>Lead Generation</li>
-                    <li>Client Closing</li>
-                    <li>Revenue Targets</li>
-                    <li>CRM Management</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/sales-kra.html" class="role-link kra">KRA</a>
-                    <a href="sales-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/sales-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-sales-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Lead Generation</li>
+                        <li>Client Closing</li>
+                        <li>Revenue Targets</li>
+                        <li>CRM Management</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/sales-kra.html" class="role-link kra">KRA</a>
+                        <a href="sales-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/sales-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-sales-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- PM -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project
                         Manager</span></div>
-                <ul class="role-details">
-                    <li>Timeline Tracking</li>
-                    <li>Resource Allocation</li>
-                    <li>Client Communication</li>
-                    <li>Risk Management</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/pm-kra.html" class="role-link kra">KRA</a>
-                    <a href="pm-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/pm-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-pm-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Timeline Tracking</li>
+                        <li>Resource Allocation</li>
+                        <li>Client Communication</li>
+                        <li>Risk Management</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/pm-kra.html" class="role-link kra">KRA</a>
+                        <a href="pm-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/pm-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-pm-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- Shopify Dev -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">💻</span><span class="role-title">Shopify Dev</span>
                 </div>
-                <ul class="role-details">
-                    <li>Theme Customization</li>
-                    <li>Liquid Coding</li>
-                    <li>App Integration</li>
-                    <li>Speed Optimization</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/developer-kra.html" class="role-link kra">KRA</a>
-                    <a href="developer-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/developer-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-dev-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Theme Customization</li>
+                        <li>Liquid Coding</li>
+                        <li>App Integration</li>
+                        <li>Speed Optimization</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/developer-kra.html" class="role-link kra">KRA</a>
+                        <a href="developer-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/developer-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-dev-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- Full Stack -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">🖥️</span><span class="role-title">Full Stack</span>
                 </div>
-                <ul class="role-details">
-                    <li>Backend API Dev</li>
-                    <li>Database Design</li>
-                    <li>Frontend Logic</li>
-                    <li>Server Management</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/fullstack-kra.html" class="role-link kra">KRA</a>
-                    <a href="fullstack-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/fullstack-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-fullstack-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Backend API Dev</li>
+                        <li>Database Design</li>
+                        <li>Frontend Logic</li>
+                        <li>Server Management</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/fullstack-kra.html" class="role-link kra">KRA</a>
+                        <a href="fullstack-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/fullstack-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-fullstack-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- Designer -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">🎨</span><span class="role-title">UI/UX Designer</span>
                 </div>
-                <ul class="role-details">
-                    <li>Wireframing</li>
-                    <li>High-fi Prototypes</li>
-                    <li>User Research</li>
-                    <li>Design Systems</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/designer-kra.html" class="role-link kra">KRA</a>
-                    <a href="designer-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/designer-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-designer-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Wireframing</li>
+                        <li>High-fi Prototypes</li>
+                        <li>User Research</li>
+                        <li>Design Systems</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/designer-kra.html" class="role-link kra">KRA</a>
+                        <a href="designer-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/designer-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-designer-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- CS -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">🌟</span><span class="role-title">Client Success</span>
                 </div>
-                <ul class="role-details">
-                    <li>Onboarding</li>
-                    <li>Relationship Mgmt</li>
-                    <li>Churn Reduction</li>
-                    <li>Upselling</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/cs-kra.html" class="role-link kra">KRA</a>
-                    <a href="cs-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/cs-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-cs-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Onboarding</li>
+                        <li>Relationship Mgmt</li>
+                        <li>Churn Reduction</li>
+                        <li>Upselling</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/cs-kra.html" class="role-link kra">KRA</a>
+                        <a href="cs-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/cs-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-cs-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- HR -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">👥</span><span class="role-title">HR & People</span>
                 </div>
-                <ul class="role-details">
-                    <li>Recruitment</li>
-                    <li>Employee Relations</li>
-                    <li>Payroll Processing</li>
-                    <li>Culture Building</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/hr-kra.html" class="role-link kra">KRA</a>
-                    <a href="hr-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/hr-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-hr-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Recruitment</li>
+                        <li>Employee Relations</li>
+                        <li>Payroll Processing</li>
+                        <li>Culture Building</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/hr-kra.html" class="role-link kra">KRA</a>
+                        <a href="hr-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/hr-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-hr-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- Content -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">✍️</span><span class="role-title">Content Writer</span>
                 </div>
-                <ul class="role-details">
-                    <li>Blog Posts</li>
-                    <li>Copywriting</li>
-                    <li>SEO Optimization</li>
-                    <li>Social Captions</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/content-kra.html" class="role-link kra">KRA</a>
-                    <a href="content-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/content-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-content-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Blog Posts</li>
+                        <li>Copywriting</li>
+                        <li>SEO Optimization</li>
+                        <li>Social Captions</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/content-kra.html" class="role-link kra">KRA</a>
+                        <a href="content-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/content-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-content-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- Social Media -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">📱</span><span class="role-title">Social Media</span>
                 </div>
-                <ul class="role-details">
-                    <li>Content Calendar</li>
-                    <li>Community Mgmt</li>
-                    <li>Analytics Reporting</li>
-                    <li>Trend Tracking</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/social-media-kra.html" class="role-link kra">KRA</a>
-                    <a href="social-media-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/social-media-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-smm-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Content Calendar</li>
+                        <li>Community Mgmt</li>
+                        <li>Analytics Reporting</li>
+                        <li>Trend Tracking</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/social-media-kra.html" class="role-link kra">KRA</a>
+                        <a href="social-media-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/social-media-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-smm-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
             <!-- Finance -->
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">💵</span><span class="role-title">Finance</span></div>
-                <ul class="role-details">
-                    <li>Invoicing</li>
-                    <li>Expense Tracking</li>
-                    <li>Financial Reporting</li>
-                    <li>Tax Compliance</li>
-                </ul>
-                <div class="role-links">
-                    <a href="kra/finance-kra.html" class="role-link kra">KRA</a>
-                    <a href="finance-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/finance-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="https://docs.google.com/spreadsheets/d/your-finance-dst" target="_blank"
-                        class="role-link dst">DST</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Invoicing</li>
+                        <li>Expense Tracking</li>
+                        <li>Financial Reporting</li>
+                        <li>Tax Compliance</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="kra/finance-kra.html" class="role-link kra">KRA</a>
+                        <a href="finance-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/finance-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="https://docs.google.com/spreadsheets/d/your-finance-dst" target="_blank"
+                            class="role-link dst">DST</a>
+                    </div>
                 </div>
             </div>
 
@@ -1256,36 +1274,38 @@
             <div class="role-card">
                 <div class="role-header"><span class="role-icon">☀️</span><span class="role-title">Daily Routine</span>
                 </div>
-                <ul class="role-details">
-                    <li>Morning Checklist</li>
-                    <li>Status Rules</li>
-                    <li>EOD Reporting</li>
-                    <li>Time Mgmt</li>
-                </ul>
-                <div class="role-links">
-                    <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;">KRA</a>
-                    <a href="daily-sop.html" class="role-link sop">SOP</a>
-                    <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;">KPI</a>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Morning Checklist</li>
+                        <li>Status Rules</li>
+                        <li>EOD Reporting</li>
+                        <li>Time Mgmt</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;">KRA</a>
+                        <a href="daily-sop.html" class="role-link sop">SOP</a>
+                        <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;">KPI</a>
+                    </div>
                 </div>
             </div>
             <!-- Client Chat -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">💬</span><span class="role-title">Chat Sim</span>
-                </div>
-                <ul class="role-details">
-                    <li>Persona Creation</li>
-                    <li>Platform Rules</li>
-                    <li>Message Timing</li>
-                    <li>Tones & Styles</li>
-                </ul>
-                <div class="role-links">
-                    <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;">KRA</a>
-                    <a href="client-chat-sop.html" class="role-link sop">SOP</a>
-                    <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;">KPI</a>
+                <div class="role-header"><span class="role-icon">💬</span><span class="role-title">Chat Sim</span></div>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Persona Creation</li>
+                        <li>Platform Rules</li>
+                        <li>Message Timing</li>
+                        <li>Tones & Styles</li>
+                    </ul>
+                    <div class="role-links">
+                        <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;">KRA</a>
+                        <a href="client-chat-sop.html" class="role-link sop">SOP</a>
+                        <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;">KPI</a>
+                    </div>
                 </div>
             </div>
         </div>
-
 
 
         <!-- Business Operating System Section -->
@@ -1299,32 +1319,67 @@
             <a href="rnr.html" class="role-card" style="text-decoration: none; border-color: #8B5CF6;">
                 <div class="role-header"><span class="role-icon">👥</span><span class="role-title">Roles &
                         Responsibilities</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Clear Ownership</div>
+                    <div style="margin-bottom: 2px;">• Reporting Lines</div>
+                    <div>• Backup Persons</div>
+                </div>
             </a>
+
             <!-- Authority Matrix -->
             <a href="authority-matrix.html" class="role-card" style="text-decoration: none; border-color: #3B82F6;">
                 <div class="role-header"><span class="role-icon">🔐</span><span class="role-title">Authority
                         Matrix</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Decision Rights</div>
+                    <div style="margin-bottom: 2px;">• Approval Limits</div>
+                    <div>• Process Flows</div>
+                </div>
             </a>
+
             <!-- Escalation Matrix -->
             <a href="escalation-matrix.html" class="role-card" style="text-decoration: none; border-color: #EF4444;">
                 <div class="role-header"><span class="role-icon">🚨</span><span class="role-title">Escalation
                         Matrix</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Problem Handling</div>
+                    <div style="margin-bottom: 2px;">• Response Times</div>
+                    <div>• Escalation Paths</div>
+                </div>
             </a>
+
             <!-- Performance Review -->
             <a href="performance-review.html" class="role-card" style="text-decoration: none; border-color: #10B981;">
                 <div class="role-header"><span class="role-icon">📊</span><span class="role-title">Performance
                         Review</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Monthly Reviews</div>
+                    <div style="margin-bottom: 2px;">• Scoring System</div>
+                    <div>• Rating Outcomes</div>
+                </div>
             </a>
+
             <!-- Incentive & Penalty -->
             <a href="incentive-penalty.html" class="role-card" style="text-decoration: none; border-color: #F59E0B;">
                 <div class="role-header"><span class="role-icon">🎯</span><span class="role-title">Incentives &
                         Penalties</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Bonus Structure</div>
+                    <div style="margin-bottom: 2px;">• Consequences</div>
+                    <div>• Discipline Process</div>
+                </div>
             </a>
+
             <!-- Process Improvement Log -->
             <a href="process-improvement-log.html" class="role-card"
                 style="text-decoration: none; border-color: #EC4899;">
                 <div class="role-header"><span class="role-icon">📝</span><span class="role-title">Process
                         Improvement</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Kaizen Log</div>
+                    <div style="margin-bottom: 2px;">• Suggestion Tracking</div>
+                    <div>• Implementation</div>
+                </div>
             </a>
         </div>
 
