@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Authority Matrix</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #8B5CF6;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --info: #3B82F6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #94A3B8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(139, 92, 246, 0.2);
+            color: #A78BFA;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Purpose Box */
+        .purpose-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .purpose-box h2 {
+            color: #A78BFA;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .purpose-box p {
+            color: #E2E8F0;
+        }
+
+        /* Authority Levels Legend */
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .legend-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .legend-dot.delhi {
+            background: #EF4444;
+        }
+
+        .legend-dot.pm {
+            background: #3B82F6;
+        }
+
+        .legend-dot.lead {
+            background: #10B981;
+        }
+
+        .legend-dot.team {
+            background: #F59E0B;
+        }
+
+        .legend-text {
+            color: #E2E8F0;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Section */
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Decision Card */
+        .decision-card {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .decision-card.delhi {
+            border-left-color: #EF4444;
+        }
+
+        .decision-card.pm {
+            border-left-color: #3B82F6;
+        }
+
+        .decision-card.lead {
+            border-left-color: #10B981;
+        }
+
+        .decision-card.team {
+            border-left-color: #F59E0B;
+        }
+
+        .decision-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .decision-title {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .decision-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .decision-badge.delhi {
+            background: rgba(239, 68, 68, 0.2);
+            color: #F87171;
+        }
+
+        .decision-badge.pm {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60A5FA;
+        }
+
+        .decision-badge.lead {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34D399;
+        }
+
+        .decision-badge.team {
+            background: rgba(245, 158, 11, 0.2);
+            color: #FBBF24;
+        }
+
+        .decision-row {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .decision-label {
+            color: #94A3B8;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .decision-value {
+            color: #CBD5E1;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .decision-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Library</a>
+
+        <div class="header">
+            <h1>🔐 Authority Matrix</h1>
+            <p>Stop decision chaos. Make decisions fast. Everyone knows exactly what they can decide.</p>
+        </div>
+
+        <div class="purpose-box">
+            <h2>🎯 PURPOSE</h2>
+            <p>Stop decision chaos. Make decisions fast. Everyone knows exactly what they can and cannot decide without
+                asking.</p>
+        </div>
+
+        <!-- Authority Levels Legend -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-dot delhi"></div>
+                <span class="legend-text">🔴 DELHI TEAM ONLY</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot pm"></div>
+                <span class="legend-text">🔵 PM CAN DECIDE</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot lead"></div>
+                <span class="legend-text">🟢 LEAD CAN DECIDE</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot team"></div>
+                <span class="legend-text">🟡 TEAM CAN DECIDE</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: FINANCIAL DECISIONS -->
+        <div class="section">
+            <h2 class="section-title">💰 Section 1: Financial Decisions</h2>
+
+            <div class="decision-card delhi">
+                <div class="decision-header">
+                    <span class="decision-title">Discount on Package Price</span>
+                    <span class="decision-badge delhi">Delhi Team Only</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value"><strong>No discounts allowed. Ever.</strong> We are premium.</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Client asks for discount → Respond: "Our pricing reflects our quality
+                        and the results we deliver. We don't offer discounts but we do offer exceptional value." If
+                        client insists → Escalate to Delhi Team</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Never. This is non-negotiable.</span>
+                </div>
+            </div>
+
+            <div class="decision-card delhi">
+                <div class="decision-header">
+                    <span class="decision-title">Refund to Client</span>
+                    <span class="decision-badge delhi">Delhi Team Only</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Any amount, any situation</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">CSM documents the issue fully → PM confirms what was delivered vs
+                        promised → Both send summary to Delhi Team → Delhi Team decides within 24 hours</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Only Delhi Team can approve. No one else can promise or hint at
+                        refund.</span>
+                </div>
+            </div>
+
+            <div class="decision-card lead">
+                <div class="decision-header">
+                    <span class="decision-title">Goodwill Gesture to Client</span>
+                    <span class="decision-badge lead">CSM Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Maximum $50 equivalent value</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Identify opportunity to delight client → Offer extra revision, priority
+                        delivery, small add-on feature → Document why it was given</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Above $50 value → Get Delhi Team approval first</span>
+                </div>
+            </div>
+
+            <div class="decision-card pm">
+                <div class="decision-header">
+                    <span class="decision-title">Tool/Software Purchase</span>
+                    <span class="decision-badge pm">PM Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Up to ₹5,000 per month for team tools</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Identify need → Check if existing tool can solve it → Get 2 alternative
+                        options → Document expected ROI → Purchase if within limit</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Above ₹5,000 → Delhi Team approval required</span>
+                </div>
+            </div>
+
+            <div class="decision-card lead">
+                <div class="decision-header">
+                    <span class="decision-title">Advance Salary</span>
+                    <span class="decision-badge lead">HR Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Up to 50% of monthly salary, maximum once per quarter</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Employee submits written request → HR checks advance history → Approve
+                        or deny same day → Deduct from next salary</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Above 50% or second request in quarter → Delhi Team approval</span>
+                </div>
+            </div>
+
+            <div class="decision-card delhi">
+                <div class="decision-header">
+                    <span class="decision-title">Hiring Salary Offer</span>
+                    <span class="decision-badge delhi">Delhi Team Only</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Any position, any amount</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">HR recommends salary range based on market research → PM/Lead provides
+                        input → Delhi Team decides final offer</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Never delegated. Delhi Team always decides compensation.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: CLIENT DECISIONS -->
+        <div class="section">
+            <h2 class="section-title">🤝 Section 2: Client Decisions</h2>
+
+            <div class="decision-card pm">
+                <div class="decision-header">
+                    <span class="decision-title">Deadline Extension</span>
+                    <span class="decision-badge pm">PM Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Up to 3 days extension</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Identify delay risk early → Document reason → Inform client BEFORE
+                        original deadline → Provide new realistic timeline → Update DST</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Extension beyond 3 days → Delhi Team must approve and may need to speak
+                        with client</span>
+                </div>
+            </div>
+
+            <div class="decision-card pm">
+                <div class="decision-header">
+                    <span class="decision-title">Scope Change - Free</span>
+                    <span class="decision-badge pm">PM Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Work takes under 2 hours</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Evaluate if request is reasonable goodwill → Client must be polite and
+                        appreciative → Not a pattern of scope creep → Execute as goodwill</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Above 2 hours work → Must convert to paid change order</span>
+                </div>
+            </div>
+
+            <div class="decision-card delhi">
+                <div class="decision-header">
+                    <span class="decision-title">Fire a Client</span>
+                    <span class="decision-badge delhi">Delhi Team Only</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Any client, any reason</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Document all issues with dates and screenshots → Attempt resolution at
+                        least twice → If client remains toxic/abusive/unreasonable → PM and CSM prepare summary → Delhi
+                        Team decides</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Never delegated. Even toxic clients are Delhi Team decision.</span>
+                </div>
+            </div>
+
+            <div class="decision-card pm">
+                <div class="decision-header">
+                    <span class="decision-title">Accept Rush Order</span>
+                    <span class="decision-badge pm">PM Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Only if 50%+ rush fee applied AND team capacity allows</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Check team utilization (must be below 80%) → Quote minimum 50% rush
+                        surcharge → If client agrees → Accept and prioritize</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Team above 90% capacity → Delhi Team must approve taking rush
+                        order</span>
+                </div>
+            </div>
+
+            <div class="decision-card lead">
+                <div class="decision-header">
+                    <span class="decision-title">Post-Delivery Support</span>
+                    <span class="decision-badge lead">CSM Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Within 30-day support window</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Check if request is within support scope → Execute if covered → Quote
+                        if outside scope → Handle within 48 hours</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Outside 30 days → Quote as paid service or get Delhi Team approval for
+                        free support</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: TECHNICAL DECISIONS -->
+        <div class="section">
+            <h2 class="section-title">⚙️ Section 3: Technical Decisions</h2>
+
+            <div class="decision-card lead">
+                <div class="decision-header">
+                    <span class="decision-title">Theme Selection</span>
+                    <span class="decision-badge lead">Lead Developer Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Must be from approved theme list</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Analyze client niche and requirements → Check theme performance scores
+                        → Select best match → Recommend to PM → PM presents to client if needed</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Custom theme or new theme not on list → Delhi Team approval to
+                        purchase/use</span>
+                </div>
+            </div>
+
+            <div class="decision-card team">
+                <div class="decision-header">
+                    <span class="decision-title">App Recommendation</span>
+                    <span class="decision-badge team">Developer Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Free apps or client has approved paid app</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Identify functionality need → Check Shopify App Store → Verify
+                        compatibility → Test on development store → Document setup steps</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Paid app without prior client approval → PM must get client agreement
+                        first</span>
+                </div>
+            </div>
+
+            <div class="decision-card lead">
+                <div class="decision-header">
+                    <span class="decision-title">Custom Code Development</span>
+                    <span class="decision-badge lead">Lead Developer Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Under 8 hours of development time</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Evaluate complexity → Estimate time accurately → If under 8 hours and
+                        within project scope → Approve and assign</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Above 8 hours → PM and Delhi Team must approve, may need to quote
+                        client</span>
+                </div>
+            </div>
+
+            <div class="decision-card lead">
+                <div class="decision-header">
+                    <span class="decision-title">Bug Fix Priority</span>
+                    <span class="decision-badge lead">Lead Developer Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Classification:</span>
+                    <span class="decision-value">
+                        • <strong>CRITICAL</strong> (site down, checkout broken): Fix immediately, drop everything<br>
+                        • <strong>HIGH</strong> (major feature broken): Fix same day<br>
+                        • <strong>MEDIUM</strong> (minor feature issue): Fix within 48 hours<br>
+                        • <strong>LOW</strong> (cosmetic, edge case): Fix within 7 days
+                    </span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Critical bug affecting client revenue → Delhi Team notified
+                        immediately</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: PEOPLE DECISIONS -->
+        <div class="section">
+            <h2 class="section-title">👥 Section 4: People Decisions</h2>
+
+            <div class="decision-card delhi">
+                <div class="decision-header">
+                    <span class="decision-title">Hire New Employee</span>
+                    <span class="decision-badge delhi">Delhi Team Only</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Any position at any level</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">HR posts and screens applications → PM or Lead conducts first interview
+                        → Top 2-3 candidates presented to Delhi Team → Delhi Team conducts final interview and
+                        decides</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Never delegated.</span>
+                </div>
+            </div>
+
+            <div class="decision-card delhi">
+                <div class="decision-header">
+                    <span class="decision-title">Terminate Employee</span>
+                    <span class="decision-badge delhi">Delhi Team Only</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Any employee for any reason</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">HR and PM document all performance issues → Follow progressive
+                        discipline (warnings, PIP) unless major violation → Prepare termination summary → Delhi Team
+                        reviews and decides</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Never delegated. Immediate termination only for fraud, theft, or
+                        confidentiality breach.</span>
+                </div>
+            </div>
+
+            <div class="decision-card lead">
+                <div class="decision-header">
+                    <span class="decision-title">Approve Leave</span>
+                    <span class="decision-badge lead">HR Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Within policy limits</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Employee submits request minimum 7 days ahead for planned leave → HR
+                        checks team coverage → Approve if work can be handled → Deny if critical period</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Leave affecting client delivery → PM must confirm coverage. Extended
+                        leave beyond policy → Delhi Team approval.</span>
+                </div>
+            </div>
+
+            <div class="decision-card pm">
+                <div class="decision-header">
+                    <span class="decision-title">Work From Home</span>
+                    <span class="decision-badge pm">PM Can Decide</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Maximum 2 days per week, request 24 hours ahead</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">Employee requests with reason → PM checks workload and meeting schedule
+                        → Approve if no conflicts</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Extended WFH (more than 2 days) or during critical project phase →
+                        Delhi Team approval</span>
+                </div>
+            </div>
+
+            <div class="decision-card delhi">
+                <div class="decision-header">
+                    <span class="decision-title">Promotion/Title Change</span>
+                    <span class="decision-badge delhi">Delhi Team Only</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Limit/Condition:</span>
+                    <span class="decision-value">Any role change, title change, or level change</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Process:</span>
+                    <span class="decision-value">PM recommends based on performance data → HR prepares promotion case →
+                        Delhi Team reviews and decides → HR prepares new JD and compensation</span>
+                </div>
+                <div class="decision-row">
+                    <span class="decision-label">Exception:</span>
+                    <span class="decision-value">Never delegated.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Digital Heroes | Authority Matrix v1.0 | Last Updated: January 2026</p>
+        </div>
+    </div>
+
+    <script src="assets/js/sop-features.js"></script>
+</body>
+
+</html>

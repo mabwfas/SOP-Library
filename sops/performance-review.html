@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Performance Review System</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #0F172A; --accent: #8B5CF6; --success: #10B981; --warning: #F59E0B; --danger: #EF4444; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.7; color: #334155; background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .header { text-align: center; margin-bottom: 40px; padding: 40px; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px solid rgba(139,92,246,0.3); }
+        .header h1 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; }
+        .header p { color: #94A3B8; font-size: 1.1rem; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(139,92,246,0.2); color: #A78BFA; text-decoration: none; border-radius: 8px; margin-bottom: 20px; transition: all 0.3s; }
+        .back-btn:hover { background: var(--accent); color: #fff; }
+
+        .info-box { background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(59,130,246,0.2)); border: 1px solid rgba(139,92,246,0.4); border-radius: 16px; padding: 25px; margin-bottom: 30px; }
+        .info-box h2 { color: #A78BFA; font-size: 1.2rem; margin-bottom: 15px; }
+        .info-box p, .info-box li { color: #E2E8F0; }
+        .info-box ul { padding-left: 20px; }
+
+        .section { background: rgba(255,255,255,0.05); border: 1px solid rgba(139,92,246,0.3); border-radius: 16px; padding: 30px; margin-bottom: 30px; }
+        .section-title { color: #fff; font-size: 1.4rem; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid rgba(139,92,246,0.3); }
+
+        .score-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 30px; }
+        .score-card { padding: 15px; border-radius: 10px; text-align: center; }
+        .score-card.exceptional { background: rgba(16,185,129,0.2); border: 1px solid #10B981; }
+        .score-card.exceeds { background: rgba(59,130,246,0.2); border: 1px solid #3B82F6; }
+        .score-card.meets { background: rgba(139,92,246,0.2); border: 1px solid #8B5CF6; }
+        .score-card.below { background: rgba(245,158,11,0.2); border: 1px solid #F59E0B; }
+        .score-card.poor { background: rgba(239,68,68,0.2); border: 1px solid #EF4444; }
+        .score-range { color: #fff; font-weight: 700; font-size: 1.1rem; }
+        .score-label { color: #94A3B8; font-size: 0.75rem; text-transform: uppercase; }
+
+        .metric-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .metric-table th, .metric-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid rgba(139,92,246,0.2); }
+        .metric-table th { color: #A78BFA; font-size: 0.85rem; text-transform: uppercase; background: rgba(139,92,246,0.1); }
+        .metric-table td { color: #CBD5E1; font-size: 0.9rem; }
+        .metric-table tr:hover { background: rgba(139,92,246,0.05); }
+
+        .weight-badge { background: rgba(59,130,246,0.2); color: #60A5FA; padding: 3px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: 600; }
+
+        .outcome-card { background: rgba(30,41,59,0.5); border-radius: 12px; padding: 20px; margin-bottom: 15px; border-left: 4px solid var(--accent); }
+        .outcome-card.exceptional { border-left-color: #10B981; }
+        .outcome-card.exceeds { border-left-color: #3B82F6; }
+        .outcome-card.meets { border-left-color: #8B5CF6; }
+        .outcome-card.below { border-left-color: #F59E0B; }
+        .outcome-card.poor { border-left-color: #EF4444; }
+        .outcome-title { color: #fff; font-size: 1rem; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .outcome-details { color: #CBD5E1; font-size: 0.9rem; }
+        .outcome-details span { display: block; margin-bottom: 5px; }
+
+        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 20px; }
+        .step { background: rgba(139,92,246,0.1); border-radius: 10px; padding: 15px; text-align: center; }
+        .step-num { color: #A78BFA; font-size: 1.5rem; font-weight: 700; }
+        .step-title { color: #fff; font-size: 0.85rem; font-weight: 600; margin-top: 5px; }
+        .step-desc { color: #94A3B8; font-size: 0.75rem; margin-top: 5px; }
+
+        .footer { text-align: center; padding: 30px; color: #64748B; font-size: 0.85rem; }
+        @media (max-width: 768px) { .header h1 { font-size: 1.8rem; } .score-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Library</a>
+
+        <div class="header">
+            <h1>📊 Performance Review System</h1>
+            <p>Make promotions and warnings objective, not emotional. No favoritism.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>📅 Review Schedule</h2>
+            <ul>
+                <li><strong>When:</strong> First week of each month (covers previous month)</li>
+                <li><strong>Who Conducts:</strong> PM (for developers, designers) / Delhi Team (for PM, leads, CSM, Sales)</li>
+                <li><strong>Who Reviews Final:</strong> Delhi Team reviews all completed forms</li>
+                <li><strong>Results Communicated:</strong> By 10th of the month</li>
+            </ul>
+        </div>
+
+        <!-- Scoring System -->
+        <div class="section">
+            <h2 class="section-title">📈 Scoring System (1-10 Scale)</h2>
+            <div class="score-grid">
+                <div class="score-card exceptional">
+                    <div class="score-range">9.0 - 10.0</div>
+                    <div class="score-label">Exceptional</div>
+                </div>
+                <div class="score-card exceeds">
+                    <div class="score-range">8.0 - 8.9</div>
+                    <div class="score-label">Exceeds</div>
+                </div>
+                <div class="score-card meets">
+                    <div class="score-range">6.0 - 7.9</div>
+                    <div class="score-label">Meets</div>
+                </div>
+                <div class="score-card below">
+                    <div class="score-range">4.0 - 5.9</div>
+                    <div class="score-label">Below</div>
+                </div>
+                <div class="score-card poor">
+                    <div class="score-range">1.0 - 3.9</div>
+                    <div class="score-label">Poor</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Developer Criteria -->
+        <div class="section">
+            <h2 class="section-title">💻 Developer Review Criteria</h2>
+            <table class="metric-table">
+                <tr><th>Metric</th><th>Weight</th><th>How Measured</th></tr>
+                <tr><td>On-Time Task Completion Rate</td><td><span class="weight-badge">20%</span></td><td>Tasks completed by deadline ÷ Total tasks (from DST)</td></tr>
+                <tr><td>Bug-Free Delivery Rate</td><td><span class="weight-badge">15%</span></td><td>Projects with zero/minimal bugs at QA ÷ Total projects</td></tr>
+                <tr><td>PageSpeed Scores Achieved</td><td><span class="weight-badge">10%</span></td><td>Average mobile PageSpeed score across all delivered projects</td></tr>
+                <tr><td>Revision Count Per Project</td><td><span class="weight-badge">15%</span></td><td>Average number of revisions before client acceptance</td></tr>
+                <tr><td>Code Quality (Lead Review)</td><td><span class="weight-badge">10%</span></td><td>Lead Developer rates code cleanliness, organization, best practices</td></tr>
+                <tr><td>Daily Progress Updates</td><td><span class="weight-badge">10%</span></td><td>Days with proper updates posted ÷ Working days</td></tr>
+                <tr><td>Response to Messages</td><td><span class="weight-badge">5%</span></td><td>Average response time to PM/Lead messages during work hours</td></tr>
+                <tr><td>Proactive Problem Solving</td><td><span class="weight-badge">10%</span></td><td>Number of issues flagged BEFORE they became problems</td></tr>
+                <tr><td>Collaboration & Helping Others</td><td><span class="weight-badge">5%</span></td><td>Peer feedback, instances of helping teammates</td></tr>
+            </table>
+        </div>
+
+        <!-- Designer Criteria -->
+        <div class="section">
+            <h2 class="section-title">🎨 Designer Review Criteria</h2>
+            <table class="metric-table">
+                <tr><th>Metric</th><th>Weight</th><th>How Measured</th></tr>
+                <tr><td>On-Time Mockup Delivery</td><td><span class="weight-badge">20%</span></td><td>Mockups delivered by deadline ÷ Total mockups assigned</td></tr>
+                <tr><td>First Concept Approval Rate</td><td><span class="weight-badge">20%</span></td><td>Designs approved on first or second try ÷ Total designs</td></tr>
+                <tr><td>Revision Count Per Project</td><td><span class="weight-badge">15%</span></td><td>Average revisions before client acceptance</td></tr>
+                <tr><td>Design Quality (Lead Review)</td><td><span class="weight-badge">15%</span></td><td>Lead Designer rates creativity, CRO principles, brand consistency</td></tr>
+                <tr><td>Image Optimization</td><td><span class="weight-badge">10%</span></td><td>Images properly compressed and formatted for web</td></tr>
+                <tr><td>Daily Progress Updates</td><td><span class="weight-badge">10%</span></td><td>Days with proper updates ÷ Working days</td></tr>
+                <tr><td>Collaboration with Developers</td><td><span class="weight-badge">10%</span></td><td>Quality of design handoff, responsiveness to dev questions</td></tr>
+            </table>
+        </div>
+
+        <!-- PM Criteria -->
+        <div class="section">
+            <h2 class="section-title">📋 PM Review Criteria</h2>
+            <table class="metric-table">
+                <tr><th>Metric</th><th>Weight</th><th>How Measured</th></tr>
+                <tr><td>On-Time Project Delivery Rate</td><td><span class="weight-badge">25%</span></td><td>Projects delivered by original deadline ÷ Total projects</td></tr>
+                <tr><td>Client Satisfaction Scores</td><td><span class="weight-badge">20%</span></td><td>Average Fiverr rating, client feedback</td></tr>
+                <tr><td>Team Utilization Rate</td><td><span class="weight-badge">15%</span></td><td>Billable hours ÷ Available hours (Target: 75-85%)</td></tr>
+                <tr><td>Escalation Prevention Rate</td><td><span class="weight-badge">15%</span></td><td>Issues resolved without Delhi Team involvement ÷ Total issues</td></tr>
+                <tr><td>Daily Communication Consistency</td><td><span class="weight-badge">10%</span></td><td>Days with all client updates sent on time ÷ Working days</td></tr>
+                <tr><td>Process Improvement Contributions</td><td><span class="weight-badge">10%</span></td><td>SOPs updated, processes improved, efficiency gains</td></tr>
+                <tr><td>Team Development</td><td><span class="weight-badge">5%</span></td><td>Training conducted, feedback provided, team member growth</td></tr>
+            </table>
+        </div>
+
+        <!-- Rating Outcomes -->
+        <div class="section">
+            <h2 class="section-title">🎯 Rating Outcomes</h2>
+
+            <div class="outcome-card exceptional">
+                <div class="outcome-title">🌟 EXCEPTIONAL (9.0 - 10.0)</div>
+                <div class="outcome-details">
+                    <span>• <strong>Recognition:</strong> Public shoutout, Employee of Month consideration</span>
+                    <span>• <strong>Incentive:</strong> Full bonus (100%) + Extra incentive (25% additional)</span>
+                    <span>• <strong>Promotion:</strong> Immediately eligible for next level</span>
+                </div>
+            </div>
+
+            <div class="outcome-card exceeds">
+                <div class="outcome-title">⭐ EXCEEDS EXPECTATIONS (8.0 - 8.9)</div>
+                <div class="outcome-details">
+                    <span>• <strong>Recognition:</strong> Acknowledged in team meeting</span>
+                    <span>• <strong>Incentive:</strong> Full bonus (100%)</span>
+                    <span>• <strong>Promotion:</strong> Eligible after 2 consecutive months at this level</span>
+                </div>
+            </div>
+
+            <div class="outcome-card meets">
+                <div class="outcome-title">✅ MEETS EXPECTATIONS (6.0 - 7.9)</div>
+                <div class="outcome-details">
+                    <span>• <strong>Recognition:</strong> Private acknowledgment</span>
+                    <span>• <strong>Incentive:</strong> Standard bonus (75%)</span>
+                    <span>• <strong>Promotion:</strong> Eligible after 4 consecutive months</span>
+                </div>
+            </div>
+
+            <div class="outcome-card below">
+                <div class="outcome-title">⚠️ BELOW EXPECTATIONS (4.0 - 5.9)</div>
+                <div class="outcome-details">
+                    <span>• <strong>Action Required:</strong> Improvement plan with weekly check-ins</span>
+                    <span>• <strong>Incentive:</strong> Reduced bonus (25%)</span>
+                    <span>• <strong>Promotion:</strong> Not eligible</span>
+                </div>
+            </div>
+
+            <div class="outcome-card poor">
+                <div class="outcome-title">❌ POOR (1.0 - 3.9)</div>
+                <div class="outcome-details">
+                    <span>• <strong>Action Required:</strong> PIP (Performance Improvement Plan) - 30 days</span>
+                    <span>• <strong>Incentive:</strong> No bonus</span>
+                    <span>• <strong>Promotion:</strong> Not eligible, consider termination if no improvement</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Process -->
+        <div class="section">
+            <h2 class="section-title">📅 Monthly Review Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Data Collection</div>
+                    <div class="step-desc">Day 1-3</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Form Completion</div>
+                    <div class="step-desc">Day 4-5</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-title">1:1 Review Meetings</div>
+                    <div class="step-desc">Day 6-7</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-title">Delhi Team Review</div>
+                    <div class="step-desc">Day 8</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <div class="step-title">HR Processing</div>
+                    <div class="step-desc">Day 9</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">6</div>
+                    <div class="step-title">Team Communication</div>
+                    <div class="step-desc">Day 10</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Digital Heroes | Performance Review System v1.0 | Last Updated: January 2026</p>
+        </div>
+    </div>
+
+    <script src="assets/js/sop-features.js"></script>
+</body>
+
+</html>

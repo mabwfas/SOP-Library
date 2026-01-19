@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Incentive & Penalty Framework</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #8B5CF6;
+            --success: #10B981;
+            --danger: #EF4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #94A3B8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(139, 92, 246, 0.2);
+            color: #A78BFA;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            padding-bottom: 15px;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #8B5CF6;
+        }
+
+        .card.incentive {
+            border-left-color: #10B981;
+        }
+
+        .card.penalty {
+            border-left-color: #EF4444;
+        }
+
+        .card h4 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #CBD5E1;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge.reward {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34D399;
+        }
+
+        .badge.consequence {
+            background: rgba(239, 68, 68, 0.2);
+            color: #F87171;
+        }
+
+        .ladder {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .step {
+            background: rgba(139, 92, 246, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .step-num {
+            color: #A78BFA;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .step-title {
+            color: #fff;
+            font-size: 0.8rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Library</a>
+        <div class="header">
+            <h1>🎯 Incentive & Penalty Framework</h1>
+            <p>Clear rules, fair measurement, consistent rewards and consequences.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🏆 Incentives (Rewards)</h2>
+            <div class="card incentive">
+                <h4>Perfect On-Time Delivery Bonus <span class="badge reward">₹2,000 - ₹5,000</span></h4>
+                <p>100% of assigned tasks delivered on or before deadline for entire month</p>
+            </div>
+            <div class="card incentive">
+                <h4>KPI Achievement Bonus <span class="badge reward">10% of Base Salary</span></h4>
+                <p>Monthly performance review score of 8.5/10 or higher</p>
+            </div>
+            <div class="card incentive">
+                <h4>Zero Client Complaints Bonus <span class="badge reward">₹5,000</span></h4>
+                <p>Zero escalations to Delhi Team level for entire quarter (min 6 projects)</p>
+            </div>
+            <div class="card incentive">
+                <h4>5-Star Review Bonus <span class="badge reward">₹500 per review</span></h4>
+                <p>Client leaves 5-star review on Fiverr with written comment. CSM + Dev split 50-50</p>
+            </div>
+            <div class="card incentive">
+                <h4>Upsell Commission <span class="badge reward">10% of Upsell Value</span></h4>
+                <p>Client purchases additional service within 90 days of original project delivery</p>
+            </div>
+            <div class="card incentive">
+                <h4>Employee of the Month <span class="badge reward">Certificate + ₹5,000</span></h4>
+                <p>Highest performance review score in the month + public recognition</p>
+            </div>
+            <div class="card incentive">
+                <h4>Consistency Promotion Track <span class="badge reward">15-25% Salary Increase</span></h4>
+                <p>6 consecutive months with performance score ≥ 7.0 = role upgrade</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">⚠️ Penalties (Consequences)</h2>
+            <div class="card penalty">
+                <h4>Late to Work Without Notice <span class="badge consequence">Progressive</span></h4>
+                <p>1st: Verbal warning | 2nd: ₹200 | 3rd: ₹500 | 4th+: Full day's pay</p>
+            </div>
+            <div class="card penalty">
+                <h4>Missed Deadline Without Prior Communication <span class="badge consequence">Progressive</span></h4>
+                <p>1st: Written warning | 2nd in quarter: Bonus forfeited | 3rd: PIP initiated</p>
+            </div>
+            <div class="card penalty">
+                <h4>Unplanned Leave Without Notice <span class="badge consequence">1 Day's Salary</span></h4>
+                <p>1 day's salary deducted + written warning. Exception: Medical emergency with documentation</p>
+            </div>
+            <div class="card penalty">
+                <h4>Quality Below Standard <span class="badge consequence">Training Required</span></h4>
+                <p>Work scores below 70 in QA checklist. Must fix on own time + mandatory training</p>
+            </div>
+            <div class="card penalty">
+                <h4>Breach of Confidentiality <span class="badge consequence">IMMEDIATE TERMINATION</span></h4>
+                <p>Sharing client data, credentials, or proprietary information. Zero tolerance.</p>
+            </div>
+            <div class="card penalty">
+                <h4>Dishonesty or Fake Reporting <span class="badge consequence">IMMEDIATE TERMINATION</span></h4>
+                <p>Logging hours not worked, reporting false progress. Trust is non-negotiable.</p>
+            </div>
+            <div class="card penalty">
+                <h4>Consistent Underperformance <span class="badge consequence">Termination Risk</span></h4>
+                <p>3 consecutive months with performance score below 6.0</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📈 Progressive Discipline Ladder</h2>
+            <div class="ladder">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Verbal Coaching</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Written Warning</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-title">Final Warning</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-title">PIP (30 Days)</div>
+                </div>
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <div class="step-title">Termination</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Digital Heroes | Incentive & Penalty Framework v1.0 | Last Updated: January 2026</p>
+        </div>
+    </div>
+    <script src="assets/js/sop-features.js"></script>
+</body>
+
+</html>

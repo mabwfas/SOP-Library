@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Process Improvement Log</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #8B5CF6;
+            --success: #10B981;
+            --warning: #F59E0B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #94A3B8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(139, 92, 246, 0.2);
+            color: #A78BFA;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .info-box h2 {
+            color: #A78BFA;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .info-box p,
+        .info-box li {
+            color: #E2E8F0;
+        }
+
+        .info-box ul {
+            padding-left: 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            padding-bottom: 15px;
+        }
+
+        .template-box {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .template-box h4 {
+            color: #A78BFA;
+            margin-bottom: 10px;
+        }
+
+        .template-box p {
+            color: #CBD5E1;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .template-box code {
+            background: rgba(139, 92, 246, 0.1);
+            color: #A78BFA;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .log-entry {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #10B981;
+        }
+
+        .log-entry.pending {
+            border-left-color: #F59E0B;
+        }
+
+        .log-entry.rejected {
+            border-left-color: #EF4444;
+        }
+
+        .log-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .log-id {
+            color: #A78BFA;
+            font-weight: 600;
+        }
+
+        .log-status {
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .log-status.approved {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34D399;
+        }
+
+        .log-status.pending {
+            background: rgba(245, 158, 11, 0.2);
+            color: #FBBF24;
+        }
+
+        .log-title {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .log-meta {
+            color: #94A3B8;
+            font-size: 0.8rem;
+            margin-bottom: 8px;
+        }
+
+        .log-desc {
+            color: #CBD5E1;
+            font-size: 0.9rem;
+        }
+
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .flow-step {
+            background: rgba(139, 92, 246, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .flow-num {
+            color: #A78BFA;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .flow-title {
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .flow-desc {
+            color: #94A3B8;
+            font-size: 0.75rem;
+            margin-top: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Library</a>
+        <div class="header">
+            <h1>📝 Process Improvement Log</h1>
+            <p>If you see a problem, propose a fix. Track Kaizen thinking continuously.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>🎯 Purpose</h2>
+            <p>Capture every improvement opportunity. Track suggestions from submission to implementation. Make process
+                optimization part of everyone's job.</p>
+        </div>
+
+        <!-- How to Submit -->
+        <div class="section">
+            <h2 class="section-title">📋 How to Submit an Improvement</h2>
+            <div class="template-box">
+                <h4>Submission Template</h4>
+                <p><strong>Current Problem:</strong> [What's not working or could be better?]</p>
+                <p><strong>Proposed Solution:</strong> [Your specific idea to fix it]</p>
+                <p><strong>Expected Benefit:</strong> [Time saved, quality improved, cost reduced, etc.]</p>
+                <p><strong>Effort Required:</strong> [Low/Medium/High - how much work to implement?]</p>
+                <p><strong>Who Needs to Approve:</strong> [PM, Lead, Delhi Team based on authority matrix]</p>
+            </div>
+            <div class="template-box">
+                <h4>Where to Submit</h4>
+                <p>📌 Post in <code>#process-improvements</code> Discord channel with template filled out</p>
+                <p>📌 Tag your direct manager for initial review</p>
+                <p>📌 All submissions reviewed weekly by Delhi Team</p>
+            </div>
+        </div>
+
+        <!-- Review Process -->
+        <div class="section">
+            <h2 class="section-title">🔄 Review Process Flow</h2>
+            <div class="process-flow">
+                <div class="flow-step">
+                    <div class="flow-num">1</div>
+                    <div class="flow-title">Submit</div>
+                    <div class="flow-desc">Post in Discord</div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-num">2</div>
+                    <div class="flow-title">Initial Review</div>
+                    <div class="flow-desc">Manager (24-48h)</div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-num">3</div>
+                    <div class="flow-title">Delhi Review</div>
+                    <div class="flow-desc">Weekly meeting</div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-num">4</div>
+                    <div class="flow-title">Decision</div>
+                    <div class="flow-desc">Approve/Reject/Modify</div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-num">5</div>
+                    <div class="flow-title">Implementation</div>
+                    <div class="flow-desc">Assign & Execute</div>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-num">6</div>
+                    <div class="flow-title">Update SOPs</div>
+                    <div class="flow-desc">Document change</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sample Log Entries -->
+        <div class="section">
+            <h2 class="section-title">📊 Sample Log Entries</h2>
+
+            <div class="log-entry">
+                <div class="log-header">
+                    <span class="log-id">PIL-2026-001</span>
+                    <span class="log-status approved">✅ Implemented</span>
+                </div>
+                <div class="log-title">Add Pre-Delivery Video Walkthrough Requirement</div>
+                <div class="log-meta">Submitted by: Developer | Date: Jan 5, 2026 | Category: Quality</div>
+                <div class="log-desc"><strong>Problem:</strong> Clients asking same questions about how to use features.
+                    <strong>Solution:</strong> Record 5-min video walkthrough before every delivery.
+                    <strong>Result:</strong> Support tickets reduced 40%.</div>
+            </div>
+
+            <div class="log-entry">
+                <div class="log-header">
+                    <span class="log-id">PIL-2026-002</span>
+                    <span class="log-status approved">✅ Implemented</span>
+                </div>
+                <div class="log-title">Standardize Image Compression Workflow</div>
+                <div class="log-meta">Submitted by: Designer | Date: Jan 8, 2026 | Category: Speed</div>
+                <div class="log-desc"><strong>Problem:</strong> PageSpeed scores inconsistent due to unoptimized images.
+                    <strong>Solution:</strong> All images processed through TinyPNG before upload + added to checklist.
+                    <strong>Result:</strong> Average PageSpeed improved by 15 points.</div>
+            </div>
+
+            <div class="log-entry pending">
+                <div class="log-header">
+                    <span class="log-id">PIL-2026-003</span>
+                    <span class="log-status pending">⏳ Under Review</span>
+                </div>
+                <div class="log-title">Client Onboarding Questionnaire Update</div>
+                <div class="log-meta">Submitted by: Project Manager | Date: Jan 12, 2026 | Category: Efficiency</div>
+                <div class="log-desc"><strong>Problem:</strong> Missing key information from clients delays projects.
+                    <strong>Solution:</strong> Add 5 new required questions to onboarding form covering brand colors,
+                    logo files, and target audience.</div>
+            </div>
+
+            <div class="log-entry pending">
+                <div class="log-header">
+                    <span class="log-id">PIL-2026-004</span>
+                    <span class="log-status pending">⏳ Under Review</span>
+                </div>
+                <div class="log-title">Weekly Code Review Sessions</div>
+                <div class="log-meta">Submitted by: Lead Developer | Date: Jan 14, 2026 | Category: Training</div>
+                <div class="log-desc"><strong>Problem:</strong> Best practices not consistently followed across team.
+                    <strong>Solution:</strong> 30-min weekly code review session where we review one project together
+                    and share learnings.</div>
+            </div>
+        </div>
+
+        <!-- Recognition -->
+        <div class="section">
+            <h2 class="section-title">🏆 Recognition for Improvements</h2>
+            <div class="template-box">
+                <h4>Improvement Champion Bonus</h4>
+                <p>• <strong>₹1,000</strong> for every approved and implemented improvement</p>
+                <p>• <strong>₹5,000</strong> for improvements that save 10+ hours/month</p>
+                <p>• <strong>Recognition</strong> in monthly team meeting</p>
+                <p>• <strong>Considered</strong> in promotion decisions</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Digital Heroes | Process Improvement Log v1.0 | Last Updated: January 2026</p>
+        </div>
+    </div>
+    <script src="assets/js/sop-features.js"></script>
+</body>
+
+</html>

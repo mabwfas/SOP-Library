@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Escalation Matrix</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚨</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #8B5CF6;
+            --critical: #EF4444;
+            --high: #F97316;
+            --medium: #F59E0B;
+            --low: #10B981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #94A3B8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(239, 68, 68, 0.2);
+            color: #F87171;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--critical);
+            color: #fff;
+        }
+
+        .purpose-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(249, 115, 22, 0.2));
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .purpose-box h2 {
+            color: #F87171;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .purpose-box p {
+            color: #E2E8F0;
+        }
+
+        /* Severity Legend */
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .legend-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .legend-dot.critical {
+            background: #EF4444;
+        }
+
+        .legend-dot.high {
+            background: #F97316;
+        }
+
+        .legend-dot.medium {
+            background: #F59E0B;
+        }
+
+        .legend-dot.low {
+            background: #10B981;
+        }
+
+        .legend-text {
+            color: #E2E8F0;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+
+        /* Section */
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        /* Issue Card */
+        .issue-card {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .issue-card.critical {
+            border-left-color: #EF4444;
+        }
+
+        .issue-card.high {
+            border-left-color: #F97316;
+        }
+
+        .issue-card.medium {
+            border-left-color: #F59E0B;
+        }
+
+        .issue-card.low {
+            border-left-color: #10B981;
+        }
+
+        .issue-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .issue-title {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .severity-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .severity-badge.critical {
+            background: rgba(239, 68, 68, 0.2);
+            color: #F87171;
+        }
+
+        .severity-badge.high {
+            background: rgba(249, 115, 22, 0.2);
+            color: #FB923C;
+        }
+
+        .severity-badge.medium {
+            background: rgba(245, 158, 11, 0.2);
+            color: #FBBF24;
+        }
+
+        .severity-badge.low {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34D399;
+        }
+
+        .issue-row {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .issue-label {
+            color: #94A3B8;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .issue-value {
+            color: #CBD5E1;
+            font-size: 0.9rem;
+        }
+
+        .template-box {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .template-box h5 {
+            color: #A78BFA;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        .template-box p {
+            color: #CBD5E1;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .issue-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Library</a>
+
+        <div class="header">
+            <h1>🚨 Escalation Matrix</h1>
+            <p>Prevent small issues from becoming fires. Clear path for every problem.</p>
+        </div>
+
+        <div class="purpose-box">
+            <h2>🎯 PURPOSE</h2>
+            <p>Prevent small issues from becoming fires. Stop "I didn't know what to do" excuses. Clear path for every
+                problem.</p>
+        </div>
+
+        <!-- Severity Legend -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-dot critical"></div>
+                <span class="legend-text">🔴 CRITICAL: 30 min response. Affects revenue NOW.</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot high"></div>
+                <span class="legend-text">🟠 HIGH: 2 hour response. Will affect revenue soon.</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot medium"></div>
+                <span class="legend-text">🟡 MEDIUM: 6 hour response. Creates inefficiency.</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot low"></div>
+                <span class="legend-text">🟢 LOW: 24 hour response. Minor issue.</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: CLIENT ISSUES -->
+        <div class="section">
+            <h2 class="section-title">🤝 Section 1: Client Issues</h2>
+
+            <div class="issue-card critical">
+                <div class="issue-header">
+                    <span class="issue-title">Client Threatens Bad Review</span>
+                    <span class="severity-badge critical">🔴 Critical</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Client Success Manager within 15 minutes</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Acknowledge within 15 minutes<br>
+                        2. Express genuine concern<br>
+                        3. Ask what would make it right<br>
+                        4. Offer to hop on a call immediately<br>
+                        5. Document everything in real-time
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Escalate To:</span>
+                    <span class="issue-value">Delhi Team if client not calming down after 30 min</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">2 hours</span>
+                </div>
+                <div class="template-box">
+                    <h5>📝 Communication Template:</h5>
+                    <p>"Hi [Name], I'm truly sorry you're feeling this way. Your satisfaction matters deeply to us. I
+                        want to personally ensure we fix this right now. Can we hop on a quick 10-minute call? I'm
+                        available immediately."</p>
+                </div>
+            </div>
+
+            <div class="issue-card critical">
+                <div class="issue-header">
+                    <span class="issue-title">Client Demands Refund</span>
+                    <span class="severity-badge critical">🔴 Critical</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">CSM acknowledges → Escalate to Delhi Team within 30 min</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Do NOT say yes or no to refund<br>
+                        2. Respond calmly and professionally<br>
+                        3. Ask for specific reason in detail<br>
+                        4. Document exactly what we delivered<br>
+                        5. Forward full summary to Delhi Team within 30 min
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Final Authority:</span>
+                    <span class="issue-value">Delhi Team ONLY</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">24 hours</span>
+                </div>
+            </div>
+
+            <div class="issue-card high">
+                <div class="issue-header">
+                    <span class="issue-title">Client Angry About Quality</span>
+                    <span class="severity-badge high">🟠 High</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Project Manager within 1 hour</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Apologize for their experience<br>
+                        2. Ask for specific list of issues<br>
+                        3. Create prioritized fix plan within 2 hours<br>
+                        4. Assign senior developer to handle fixes<br>
+                        5. Provide timeline for each fix
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">48 hours for fixes to be completed</span>
+                </div>
+            </div>
+
+            <div class="issue-card medium">
+                <div class="issue-header">
+                    <span class="issue-title">Client Not Responding (3+ Days)</span>
+                    <span class="severity-badge medium">🟡 Medium</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Project Manager</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        Day 3: Send WhatsApp + Fiverr message<br>
+                        Day 4: Send email if available<br>
+                        Day 5: Send "project pausing" notice<br>
+                        Day 7: Pause project if no response
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">7 days, then pause project</span>
+                </div>
+            </div>
+
+            <div class="issue-card medium">
+                <div class="issue-header">
+                    <span class="issue-title">Client Keeps Changing Scope</span>
+                    <span class="severity-badge medium">🟡 Medium</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Project Manager</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Document original agreed scope<br>
+                        2. List all new requests with dates<br>
+                        3. Calculate additional cost/time<br>
+                        4. Present change order professionally<br>
+                        5. Get WRITTEN approval before any additional work
+                    </span>
+                </div>
+                <div class="template-box">
+                    <h5>📝 Communication Template:</h5>
+                    <p>"I love that you're excited about adding [feature]! These additions are outside our original
+                        project scope. The investment for these extras would be $[X] and would add [Y] days. Would you
+                        like me to proceed with a change order?"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: TECHNICAL ISSUES -->
+        <div class="section">
+            <h2 class="section-title">⚙️ Section 2: Technical Issues</h2>
+
+            <div class="issue-card critical">
+                <div class="issue-header">
+                    <span class="issue-title">Live Store Is Broken/Down</span>
+                    <span class="severity-badge critical">🔴 Critical</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Lead Developer within 15 minutes</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Verify the issue exists<br>
+                        2. Check what was last changed<br>
+                        3. If recent change caused it → rollback immediately<br>
+                        4. Start debugging<br>
+                        5. Inform client PROACTIVELY before they notice
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Escalate To:</span>
+                    <span class="issue-value">Delhi Team if not fixable within 2 hours, or client is Premium</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">4 hours absolute maximum</span>
+                </div>
+            </div>
+
+            <div class="issue-card critical">
+                <div class="issue-header">
+                    <span class="issue-title">Checkout Not Working</span>
+                    <span class="severity-badge critical">🔴 Critical</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Lead Developer immediately</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Test checkout with test order<br>
+                        2. Check payment gateway status<br>
+                        3. Check Shopify status page<br>
+                        4. Check recent changes to checkout/apps<br>
+                        5. Fix or rollback to working state
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">2 hours - this directly affects client revenue</span>
+                </div>
+            </div>
+
+            <div class="issue-card high">
+                <div class="issue-header">
+                    <span class="issue-title">Page Speed Below 70 (Mobile)</span>
+                    <span class="severity-badge high">🟠 High</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Developer assigned to project</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Run GTmetrix and PageSpeed tests<br>
+                        2. Screenshot current scores<br>
+                        3. Identify top 3 issues<br>
+                        4. Fix images first (usually biggest impact)<br>
+                        5. Then address code/app issues
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">24 hours</span>
+                </div>
+            </div>
+
+            <div class="issue-card high">
+                <div class="issue-header">
+                    <span class="issue-title">App Conflict/Error</span>
+                    <span class="severity-badge high">🟠 High</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Developer assigned</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Identify which apps are conflicting<br>
+                        2. Test by disabling apps one by one<br>
+                        3. Check app support documentation<br>
+                        4. Contact app support if needed<br>
+                        5. Find alternative app if conflict unfixable
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">48 hours</span>
+                </div>
+            </div>
+
+            <div class="issue-card low">
+                <div class="issue-header">
+                    <span class="issue-title">Minor Bug Reported</span>
+                    <span class="severity-badge low">🟢 Low</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Developer assigned</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Reproduce the bug<br>
+                        2. Assess impact on user experience<br>
+                        3. Add to bug fix queue<br>
+                        4. Fix within 72 hours
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">72 hours</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: INTERNAL/TEAM ISSUES -->
+        <div class="section">
+            <h2 class="section-title">👥 Section 3: Internal/Team Issues</h2>
+
+            <div class="issue-card high">
+                <div class="issue-header">
+                    <span class="issue-title">Team Member Absent Without Notice</span>
+                    <span class="severity-badge high">🟠 High</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Project Manager</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Try to contact via WhatsApp, call within 30 min<br>
+                        2. Reassign their urgent tasks<br>
+                        3. Document the absence<br>
+                        4. Issue warning when they return
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Escalate To:</span>
+                    <span class="issue-value">Delhi Team if second offense by same person</span>
+                </div>
+            </div>
+
+            <div class="issue-card high">
+                <div class="issue-header">
+                    <span class="issue-title">Missed Project Deadline</span>
+                    <span class="severity-badge high">🟠 High</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Project Manager</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Inform client BEFORE deadline passes if possible<br>
+                        2. Give new realistic timeline (add 2-day buffer)<br>
+                        3. Identify root cause of delay<br>
+                        4. Assign additional resource if needed
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Escalate To:</span>
+                    <span class="issue-value">Delhi Team if pattern of misses (3+ times) or client is angry</span>
+                </div>
+            </div>
+
+            <div class="issue-card medium">
+                <div class="issue-header">
+                    <span class="issue-title">Conflict Between Team Members</span>
+                    <span class="severity-badge medium">🟡 Medium</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">PM first → HR if needed</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Speak to each person separately<br>
+                        2. Identify root cause (often miscommunication)<br>
+                        3. Mediate a constructive conversation<br>
+                        4. Document resolution and commitments
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Max Resolution:</span>
+                    <span class="issue-value">48 hours to reach resolution</span>
+                </div>
+            </div>
+
+            <div class="issue-card medium">
+                <div class="issue-header">
+                    <span class="issue-title">Quality Consistently Low From Team Member</span>
+                    <span class="severity-badge medium">🟡 Medium</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">First Response By:</span>
+                    <span class="issue-value">Lead (Tech or Design)</span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Immediate Actions:</span>
+                    <span class="issue-value">
+                        1. Document specific quality issues with examples<br>
+                        2. Have private, constructive conversation<br>
+                        3. Create clear improvement plan with measurable targets<br>
+                        4. Monitor closely for 2 weeks with daily check-ins
+                    </span>
+                </div>
+                <div class="issue-row">
+                    <span class="issue-label">Escalate To:</span>
+                    <span class="issue-value">PM + HR for PIP if no improvement after 2 weeks</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Digital Heroes | Escalation Matrix v1.0 | Last Updated: January 2026</p>
+        </div>
+    </div>
+
+    <script src="assets/js/sop-features.js"></script>
+</body>
+
+</html>

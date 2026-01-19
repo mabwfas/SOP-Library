@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Roles & Responsibilities</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👥</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --primary-light: #1E293B;
+            --secondary: #334155;
+            --accent: #8B5CF6;
+            --accent-glow: rgba(139, 92, 246, 0.5);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --light: #F8FAFC;
+            --dark: #020617;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #334155;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .header p {
+            color: #94A3B8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(139, 92, 246, 0.2);
+            color: #A78BFA;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Purpose Box */
+        .purpose-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .purpose-box h2 {
+            color: #A78BFA;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .purpose-box p {
+            color: #E2E8F0;
+            font-size: 1rem;
+        }
+
+        /* Critical Rules */
+        .rules-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .rules-box h3 {
+            color: #F87171;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rules-box ol {
+            color: #E2E8F0;
+            padding-left: 20px;
+        }
+
+        .rules-box li {
+            margin-bottom: 10px;
+        }
+
+        /* Role Section */
+        .role-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .role-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .role-icon {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent), #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .role-title {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .role-subtitle {
+            color: #94A3B8;
+            font-size: 0.9rem;
+        }
+
+        /* Area Card */
+        .area-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .area-card h4 {
+            color: #A78BFA;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .area-card h5 {
+            color: #60A5FA;
+            font-size: 0.95rem;
+            margin: 15px 0 10px;
+        }
+
+        .area-card ul {
+            color: #CBD5E1;
+            padding-left: 20px;
+        }
+
+        .area-card li {
+            margin-bottom: 8px;
+        }
+
+        /* Meta Info */
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .meta-item {
+            background: rgba(139, 92, 246, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .meta-label {
+            color: #94A3B8;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .meta-value {
+            color: #E2E8F0;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Library</a>
+
+        <div class="header">
+            <h1>👥 Roles & Responsibilities</h1>
+            <p>Clear Ownership. No Confusion. No Finger-Pointing.</p>
+        </div>
+
+        <!-- Purpose -->
+        <div class="purpose-box">
+            <h2>🎯 PURPOSE</h2>
+            <p>Eliminate "This is not my job" syndrome. Every task has ONE clear owner. No confusion, no
+                finger-pointing.</p>
+        </div>
+
+        <!-- Critical Rules -->
+        <div class="rules-box">
+            <h3>🚨 CRITICAL OWNERSHIP RULES</h3>
+            <ol>
+                <li>If a task appears in your 'Specific Responsibilities', you own it. <strong>No excuses.</strong></li>
+                <li>If you're the 'Backup Person', you must know how to do the task 100%.</li>
+                <li>'Reports To' gets daily updates. 'Escalates To' gets urgent issues only.</li>
+                <li>When in doubt about ownership, the <strong>Project Manager</strong> owns it until clarified.</li>
+                <li>Update this document quarterly or when roles change.</li>
+            </ol>
+        </div>
+
+        <!-- PROJECT MANAGER -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">📋</span>
+                <div>
+                    <div class="role-title">PROJECT MANAGER</div>
+                    <div class="role-subtitle">Project Delivery & Resource Allocation</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>📦 Primary Area 1: Project Delivery & Timeline</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Open tickets in Discord within 30 minutes of order received</li>
+                    <li>Collect Shopify access credentials within 4 hours of order</li>
+                    <li>Assign developer and designer to project same day</li>
+                    <li>Send daily client updates via Fiverr message and WhatsApp</li>
+                    <li>Run 60-point QA checklist before any delivery</li>
+                    <li>Record and send video walkthrough for every delivery</li>
+                    <li>Track all deadlines in DST (Daily Status Tracker)</li>
+                    <li>Ensure all projects follow the 7-12 day timeline for Basic, 14-21 days for Standard, 30-45 days
+                        for Premium</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Task assignments to team members</li>
+                    <li>Deadline setting (within package time limits)</li>
+                    <li>Revision acceptance or rejection</li>
+                    <li>Communication tone and frequency with client</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Client anger, Deadline extensions beyond 3 days, Refund
+                            requests, Firing a client</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Client Success Manager</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>⚙️ Primary Area 2: Resource Allocation</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Balance workload evenly across all developers</li>
+                    <li>Maintain 75-85% team utilization rate</li>
+                    <li>Identify bottlenecks daily during standup</li>
+                    <li>Flag capacity issues to Delhi Team 48 hours before they become problems</li>
+                    <li>Coordinate cross-team dependencies between design and development</li>
+                    <li>Track individual developer velocity and adjust assignments</li>
+                    <li>Maintain project queue and priority order</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Which developer handles which store</li>
+                    <li>Priority order of tasks when conflicts arise</li>
+                    <li>When to pause or accelerate specific projects</li>
+                    <li>Resource reallocation during emergencies</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Hiring needs, Major delays, Team performance issues
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLIENT SUCCESS MANAGER -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">🌟</span>
+                <div>
+                    <div class="role-title">CLIENT SUCCESS MANAGER</div>
+                    <div class="role-subtitle">Client Communication & Retention</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>💬 Primary Area 1: Client Communication</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Respond to ALL client messages within 3 hours maximum</li>
+                    <li>Handle all post-delivery support queries first</li>
+                    <li>Manage testimonial and review collection process (ask at Day 7 and Day 14)</li>
+                    <li>Handle feedback and complaints at first level before escalating</li>
+                    <li>Run happiness check call/message 7 days post-delivery</li>
+                    <li>Schedule and conduct weekly video calls with Premium package clients</li>
+                    <li>Maintain client communication log with notes on preferences and history</li>
+                    <li>Send proactive updates when projects are on track</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Which response templates to use</li>
+                    <li>Support scope decisions (what's included vs chargeable)</li>
+                    <li>When to offer goodwill gestures (maximum $50 value without approval)</li>
+                    <li>Communication channel preferences per client</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Angry clients, Refund threats, Bad review threats,
+                            Discount/refund decisions</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Project Manager</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>📈 Primary Area 2: Upselling & Retention</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Pitch maintenance packages at the 30-day mark post-delivery</li>
+                    <li>Identify upsell opportunities (SEO, Speed Optimization, Email Marketing, Ads Setup)</li>
+                    <li>Track client lifecycle stage (New → Delivered → Support → Maintenance → Upsell)</li>
+                    <li>Send strategic re-engagement messages at 60 days and 90 days post-delivery</li>
+                    <li>Maintain client database with detailed notes</li>
+                    <li>Track upsell conversion rates and report monthly</li>
+                    <li>Create case studies from successful client stores</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Which upsell to pitch and when</li>
+                    <li>Discount on upsells (maximum 10% without approval)</li>
+                    <li>Priority order for re-engagement outreach</li>
+                    <li>Timing of follow-up messages</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Custom pricing, Partnership deals, Retainer negotiations
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEAD DEVELOPER -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">💻</span>
+                <div>
+                    <div class="role-title">LEAD DEVELOPER</div>
+                    <div class="role-subtitle">Technical Quality & Standards</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>🔧 Primary Area: Technical Quality & Standards</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Review ALL code before any delivery to client</li>
+                    <li>Ensure all stores achieve 90+ PageSpeed mobile score</li>
+                    <li>Verify all stores load in under 2 seconds</li>
+                    <li>Test all stores on mobile (iPhone, Android) and desktop (Chrome, Safari, Firefox)</li>
+                    <li>Validate all app integrations are working correctly</li>
+                    <li>Fix any bugs reported within 24 hours</li>
+                    <li>Maintain technical documentation and coding standards</li>
+                    <li>Train junior developers on best practices</li>
+                    <li>Evaluate new themes and apps for team use</li>
+                    <li>Create reusable code snippets for common customizations</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Technical approach for complex builds</li>
+                    <li>Theme selection recommendations (from approved list)</li>
+                    <li>App recommendations for specific functionality</li>
+                    <li>Bug priority classification (Critical, High, Medium, Low)</li>
+                    <li>Code review pass/fail decisions</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Project Manager</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Major technical failures, Client data security issues,
+                            New tool purchases</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Senior Developer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEVELOPERS -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">👨‍💻</span>
+                <div>
+                    <div class="role-title">DEVELOPERS</div>
+                    <div class="role-subtitle">Store Building & Development</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>🏗️ Primary Area: Store Building & Development</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Build Shopify stores according to SOP timeline (Basic: 7-10 days, Standard: 14-18 days, Premium:
+                        25-35 days)</li>
+                    <li>Post daily progress updates in Discord project channel before 6 PM</li>
+                    <li>Log time spent on each task accurately</li>
+                    <li>Flag any blockers to PM within 2 hours of encountering them</li>
+                    <li>Complete self-QA using checklist before submitting for Lead review</li>
+                    <li>Achieve maximum 2-3 revisions per project</li>
+                    <li>Follow mobile-first development approach</li>
+                    <li>Implement speed optimization on every build</li>
+                    <li>Document any custom code with comments</li>
+                    <li>Attend weekly technical training sessions</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>How to implement specific features within guidelines</li>
+                    <li>Best coding approach for customizations</li>
+                    <li>Liquid code structure and organization</li>
+                    <li>Minor UI adjustments within design specs</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Lead Developer → Project Manager</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Lead Developer for: Technical issues. PM for: Timeline concerns, Client
+                            issues</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Cross-trained developer pair</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEAD DESIGNER -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">🎨</span>
+                <div>
+                    <div class="role-title">LEAD DESIGNER</div>
+                    <div class="role-subtitle">Design Standards & Quality</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>✨ Primary Area: Design Standards & Quality</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Set design guidelines and standards for each niche (Fashion, Beauty, Electronics, Food, etc.)
+                    </li>
+                    <li>Review ALL designs before sharing with client or development</li>
+                    <li>Maintain brand consistency across all deliverables</li>
+                    <li>Approve color palettes and font choices for each project</li>
+                    <li>Create reusable design templates for common store types</li>
+                    <li>Maintain design asset library (icons, patterns, stock images)</li>
+                    <li>Train junior designers on CRO principles and best practices</li>
+                    <li>Stay updated on Shopify design trends and competitor analysis</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Design direction for stores within brand guidelines</li>
+                    <li>Font and color recommendations</li>
+                    <li>Image sourcing approach and style</li>
+                    <li>Layout patterns for different niches</li>
+                    <li>Design tool and resource selection</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Project Manager</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">PM for: Client rejecting all options, Design scope creep, Timeline
+                            impacts</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Senior Designer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESIGNERS -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">🖌️</span>
+                <div>
+                    <div class="role-title">DESIGNERS</div>
+                    <div class="role-subtitle">Visual Execution</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>🎯 Primary Area: Visual Execution</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Create homepage mockups within 48 hours of project assignment</li>
+                    <li>Design all pages per SOP (Homepage, Product Page, Collection Page, About, Contact)</li>
+                    <li>Source royalty-free images from approved sources (Unsplash, Pexels, client-provided)</li>
+                    <li>Create custom banners and graphics as needed</li>
+                    <li>Optimize all images for web (compress, resize, correct format)</li>
+                    <li>Achieve maximum 2 design revisions per project</li>
+                    <li>Follow mobile-first design approach</li>
+                    <li>Maintain organized project files with proper naming</li>
+                    <li>Document design decisions for developer handoff</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Layout arrangements within approved guidelines</li>
+                    <li>Image placement and sizing</li>
+                    <li>Spacing and visual hierarchy</li>
+                    <li>Icon and graphic style within brand</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Lead Designer → Project Manager</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Lead Designer for: Design direction, Asset issues. PM for: Client
+                            communication</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Cross-trained designer pair</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SALES EXECUTIVE -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">💰</span>
+                <div>
+                    <div class="role-title">SALES EXECUTIVE</div>
+                    <div class="role-subtitle">Lead Handling & Gig Optimization</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>🎯 Primary Area 1: Lead Handling & Conversion</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Respond to ALL Fiverr inquiries within 15 minutes during business hours (9 AM - 9 PM)</li>
+                    <li>Qualify leads using MTND framework (Money, Time, Need, Decision-maker)</li>
+                    <li>Send custom proposals within 2 hours of qualification</li>
+                    <li>Handle objections using approved objection handling sheet</li>
+                    <li>Follow up 3 times on warm leads (Day 1, Day 3, Day 7)</li>
+                    <li>Update pipeline status daily in tracking sheet</li>
+                    <li>Achieve 20-25% inquiry-to-order conversion rate</li>
+                    <li>Track and report lost deal reasons weekly</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Response content within approved templates</li>
+                    <li>Lead qualification decisions (pursue or pass)</li>
+                    <li>Follow-up timing and frequency</li>
+                    <li>Which gig package to recommend based on client needs</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Discount requests (always no), Custom pricing, Problem
+                            clients, Orders above $3000</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Delhi Team (handles overflow)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>📊 Primary Area 2: Gig Optimization & Growth</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Track conversion rates daily and report weekly</li>
+                    <li>A/B test response templates (test one variable per week)</li>
+                    <li>Analyze lost deal reasons and propose solutions</li>
+                    <li>Maintain competitor intelligence (pricing, offerings, reviews)</li>
+                    <li>Update portfolio with new work monthly</li>
+                    <li>Propose gig optimization ideas (titles, descriptions, images)</li>
+                    <li>Monitor gig ranking and performance metrics</li>
+                    <li>Identify new service opportunities from client requests</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Template variations to test</li>
+                    <li>Gig tag and keyword updates</li>
+                    <li>Portfolio piece selection</li>
+                    <li>Response timing optimization</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Pricing changes, New gig creation, Major strategy shifts
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HR MANAGER -->
+        <div class="role-section">
+            <div class="role-header">
+                <span class="role-icon">👥</span>
+                <div>
+                    <div class="role-title">HR MANAGER</div>
+                    <div class="role-subtitle">People Operations & Hiring</div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>👤 Primary Area 1: People Operations</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Track attendance daily using attendance system</li>
+                    <li>Process leave requests same day (approve/deny with reason)</li>
+                    <li>Manage advance salary requests per policy</li>
+                    <li>Maintain complete employee files with all documents</li>
+                    <li>Schedule and coordinate monthly performance review meetings</li>
+                    <li>Handle employee grievances at first level</li>
+                    <li>Ensure salary processing by 1st of each month</li>
+                    <li>Track and manage probation periods and confirmations</li>
+                    <li>Maintain employee contact and emergency information</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Leave approval within policy limits</li>
+                    <li>Advance approval within limits (up to 50% of monthly salary)</li>
+                    <li>Warning letters (after consultation with PM)</li>
+                    <li>Training schedule coordination</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Termination, Salary decisions, Policy exceptions,
+                            Serious grievances</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Backup Person</div>
+                        <div class="meta-value">Project Manager (for leave approvals only)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-card">
+                <h4>🚀 Primary Area 2: Hiring & Onboarding</h4>
+
+                <h5>Specific Responsibilities:</h5>
+                <ul>
+                    <li>Post job openings on approved channels per hiring requirement</li>
+                    <li>Screen all applications (Stage 1 filtering)</li>
+                    <li>Coordinate and assign test tasks to shortlisted candidates</li>
+                    <li>Run reference checks for final candidates</li>
+                    <li>Prepare offer letters using approved template</li>
+                    <li>Conduct Day 1 onboarding including paperwork, system access, team introductions</li>
+                    <li>Ensure all joining documents are collected and filed</li>
+                    <li>Schedule first week training and buddy assignment</li>
+                    <li>Conduct 30-day and 60-day check-ins with new hires</li>
+                </ul>
+
+                <h5>Owns Decision For:</h5>
+                <ul>
+                    <li>Which candidates pass initial screening</li>
+                    <li>Test task evaluation criteria</li>
+                    <li>Onboarding schedule and content</li>
+                    <li>Training module assignments</li>
+                </ul>
+
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Reports To</div>
+                        <div class="meta-value">Delhi Team</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Escalates To</div>
+                        <div class="meta-value">Delhi Team for: Final hiring decision, Salary offers, Role
+                            modifications, Background concerns</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Digital Heroes | Roles & Responsibilities v1.0 | Last Updated: January 2026</p>
+        </div>
+    </div>
+
+    <script src="assets/js/sop-features.js"></script>
+</body>
+
+</html>

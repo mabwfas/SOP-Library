@@ -16,6 +16,7 @@
             --kra: #8B5CF6;
             --sop: #10B981;
             --kpi: #F59E0B;
+            --dst: #EF4444;
             --text: #e0e0e0;
             --muted: rgba(255, 255, 255, 0.5);
         }
@@ -463,7 +464,19 @@
 
         .role-links {
             display: flex;
+            flex-direction: column;
             gap: 5px;
+        }
+
+        .role-link.dst {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid var(--dst);
+            color: #F87171;
+        }
+
+        .role-link.dst:hover {
+            background: var(--dst);
+            color: #fff;
         }
 
         .role-link {
@@ -1038,6 +1051,81 @@
             </a>
         </div>
 
+        <!-- Business Operating System Section -->
+        <div class="section-header" id="bos">
+            <span>⚙️</span>
+            <h2>BUSINESS OPERATING SYSTEM</h2>
+        </div>
+
+        <div class="role-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 25px;">
+            <!-- R&R -->
+            <a href="rnr.html" class="role-card" style="text-decoration: none; border-color: #8B5CF6;">
+                <div class="role-header"><span class="role-icon">👥</span><span class="role-title">Roles &
+                        Responsibilities</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Clear Ownership</div>
+                    <div style="margin-bottom: 2px;">• Reporting Lines</div>
+                    <div>• Backup Persons</div>
+                </div>
+            </a>
+
+            <!-- Authority Matrix -->
+            <a href="authority-matrix.html" class="role-card" style="text-decoration: none; border-color: #3B82F6;">
+                <div class="role-header"><span class="role-icon">🔐</span><span class="role-title">Authority
+                        Matrix</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Decision Rights</div>
+                    <div style="margin-bottom: 2px;">• Approval Limits</div>
+                    <div>• Process Flows</div>
+                </div>
+            </a>
+
+            <!-- Escalation Matrix -->
+            <a href="escalation-matrix.html" class="role-card" style="text-decoration: none; border-color: #EF4444;">
+                <div class="role-header"><span class="role-icon">🚨</span><span class="role-title">Escalation
+                        Matrix</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Problem Handling</div>
+                    <div style="margin-bottom: 2px;">• Response Times</div>
+                    <div>• Escalation Paths</div>
+                </div>
+            </a>
+
+            <!-- Performance Review -->
+            <a href="performance-review.html" class="role-card" style="text-decoration: none; border-color: #10B981;">
+                <div class="role-header"><span class="role-icon">📊</span><span class="role-title">Performance
+                        Review</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Monthly Reviews</div>
+                    <div style="margin-bottom: 2px;">• Scoring System</div>
+                    <div>• Rating Outcomes</div>
+                </div>
+            </a>
+
+            <!-- Incentive & Penalty -->
+            <a href="incentive-penalty.html" class="role-card" style="text-decoration: none; border-color: #F59E0B;">
+                <div class="role-header"><span class="role-icon">🎯</span><span class="role-title">Incentives &
+                        Penalties</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Bonus Structure</div>
+                    <div style="margin-bottom: 2px;">• Consequences</div>
+                    <div>• Discipline Process</div>
+                </div>
+            </a>
+
+            <!-- Process Improvement Log -->
+            <a href="process-improvement-log.html" class="role-card"
+                style="text-decoration: none; border-color: #EC4899;">
+                <div class="role-header"><span class="role-icon">📝</span><span class="role-title">Process
+                        Improvement</span></div>
+                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
+                    <div style="margin-bottom: 2px;">• Kaizen Log</div>
+                    <div style="margin-bottom: 2px;">• Suggestion Tracking</div>
+                    <div>• Implementation</div>
+                </div>
+            </a>
+        </div>
+
         <!-- Role Selection -->
         <div class="section-header" id="roles">
             <span>👤</span>
@@ -1058,6 +1146,8 @@
                     <a href="kra/sales-kra.html" class="role-link kra">KRA</a>
                     <a href="sales-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/sales-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-sales-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- PM -->
@@ -1074,6 +1164,8 @@
                     <a href="kra/pm-kra.html" class="role-link kra">KRA</a>
                     <a href="pm-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/pm-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-pm-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- Shopify Dev -->
@@ -1090,6 +1182,8 @@
                     <a href="kra/developer-kra.html" class="role-link kra">KRA</a>
                     <a href="developer-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/developer-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-dev-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- Full Stack -->
@@ -1106,6 +1200,8 @@
                     <a href="kra/fullstack-kra.html" class="role-link kra">KRA</a>
                     <a href="fullstack-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/fullstack-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-fullstack-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- Designer -->
@@ -1122,6 +1218,8 @@
                     <a href="kra/designer-kra.html" class="role-link kra">KRA</a>
                     <a href="designer-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/designer-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-designer-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- CS -->
@@ -1138,6 +1236,8 @@
                     <a href="kra/cs-kra.html" class="role-link kra">KRA</a>
                     <a href="cs-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/cs-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-cs-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- HR -->
@@ -1154,6 +1254,8 @@
                     <a href="kra/hr-kra.html" class="role-link kra">KRA</a>
                     <a href="hr-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/hr-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-hr-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- Content -->
@@ -1170,6 +1272,8 @@
                     <a href="kra/content-kra.html" class="role-link kra">KRA</a>
                     <a href="content-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/content-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-content-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- Social Media -->
@@ -1186,6 +1290,8 @@
                     <a href="kra/social-media-kra.html" class="role-link kra">KRA</a>
                     <a href="social-media-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/social-media-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-smm-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
             <!-- Finance -->
@@ -1201,6 +1307,8 @@
                     <a href="kra/finance-kra.html" class="role-link kra">KRA</a>
                     <a href="finance-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/finance-kpi.html" class="role-link kpi">KPI</a>
+                    <a href="https://docs.google.com/spreadsheets/d/your-finance-dst" target="_blank"
+                        class="role-link dst">DST</a>
                 </div>
             </div>
 
