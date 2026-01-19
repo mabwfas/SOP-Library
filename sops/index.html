@@ -407,7 +407,7 @@
 
         .role-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
             margin-bottom: 15px;
         }
@@ -420,7 +420,13 @@
             transition: all 0.2s;
             position: relative;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .role-card-body {
+            display: flex;
+            align-items: flex-start;
             gap: 10px;
         }
 
@@ -472,9 +478,8 @@
 
         .role-links {
             display: flex;
-            flex-direction: column;
-            gap: 3px;
-            flex-shrink: 0;
+            gap: 5px;
+            flex-wrap: wrap;
         }
 
         .role-link.dst {
