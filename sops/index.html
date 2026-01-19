@@ -419,6 +419,14 @@
             padding: 12px;
             transition: all 0.2s;
             position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .role-content {
+            flex: 1;
+            min-width: 0;
         }
 
         /* Corner accents for roles */
@@ -465,7 +473,8 @@
         .role-links {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 3px;
+            flex-shrink: 0;
         }
 
         .role-link.dst {
@@ -480,14 +489,14 @@
         }
 
         .role-link {
-            flex: 1;
-            padding: 6px 4px;
+            padding: 4px 8px;
             border-radius: 4px;
             text-decoration: none;
             text-align: center;
-            font-size: 0.65em;
+            font-size: 0.6em;
             font-weight: 600;
             transition: all 0.2s;
+            min-width: 35px;
         }
 
         .role-link.kra {
@@ -1051,80 +1060,6 @@
             </a>
         </div>
 
-        <!-- Business Operating System Section -->
-        <div class="section-header" id="bos">
-            <span>⚙️</span>
-            <h2>BUSINESS OPERATING SYSTEM</h2>
-        </div>
-
-        <div class="role-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 25px;">
-            <!-- R&R -->
-            <a href="rnr.html" class="role-card" style="text-decoration: none; border-color: #8B5CF6;">
-                <div class="role-header"><span class="role-icon">👥</span><span class="role-title">Roles &
-                        Responsibilities</span></div>
-                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">• Clear Ownership</div>
-                    <div style="margin-bottom: 2px;">• Reporting Lines</div>
-                    <div>• Backup Persons</div>
-                </div>
-            </a>
-
-            <!-- Authority Matrix -->
-            <a href="authority-matrix.html" class="role-card" style="text-decoration: none; border-color: #3B82F6;">
-                <div class="role-header"><span class="role-icon">🔐</span><span class="role-title">Authority
-                        Matrix</span></div>
-                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">• Decision Rights</div>
-                    <div style="margin-bottom: 2px;">• Approval Limits</div>
-                    <div>• Process Flows</div>
-                </div>
-            </a>
-
-            <!-- Escalation Matrix -->
-            <a href="escalation-matrix.html" class="role-card" style="text-decoration: none; border-color: #EF4444;">
-                <div class="role-header"><span class="role-icon">🚨</span><span class="role-title">Escalation
-                        Matrix</span></div>
-                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">• Problem Handling</div>
-                    <div style="margin-bottom: 2px;">• Response Times</div>
-                    <div>• Escalation Paths</div>
-                </div>
-            </a>
-
-            <!-- Performance Review -->
-            <a href="performance-review.html" class="role-card" style="text-decoration: none; border-color: #10B981;">
-                <div class="role-header"><span class="role-icon">📊</span><span class="role-title">Performance
-                        Review</span></div>
-                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">• Monthly Reviews</div>
-                    <div style="margin-bottom: 2px;">• Scoring System</div>
-                    <div>• Rating Outcomes</div>
-                </div>
-            </a>
-
-            <!-- Incentive & Penalty -->
-            <a href="incentive-penalty.html" class="role-card" style="text-decoration: none; border-color: #F59E0B;">
-                <div class="role-header"><span class="role-icon">🎯</span><span class="role-title">Incentives &
-                        Penalties</span></div>
-                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">• Bonus Structure</div>
-                    <div style="margin-bottom: 2px;">• Consequences</div>
-                    <div>• Discipline Process</div>
-                </div>
-            </a>
-
-            <!-- Process Improvement Log -->
-            <a href="process-improvement-log.html" class="role-card"
-                style="text-decoration: none; border-color: #EC4899;">
-                <div class="role-header"><span class="role-icon">📝</span><span class="role-title">Process
-                        Improvement</span></div>
-                <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">• Kaizen Log</div>
-                    <div style="margin-bottom: 2px;">• Suggestion Tracking</div>
-                    <div>• Implementation</div>
-                </div>
-            </a>
-        </div>
 
         <!-- Role Selection -->
         <div class="section-header" id="roles">
@@ -1347,6 +1282,46 @@
         </div>
 
 
+
+        <!-- Business Operating System Section -->
+        <div class="section-header" id="bos">
+            <span>⚙️</span>
+            <h2>BUSINESS OPERATING SYSTEM</h2>
+        </div>
+
+        <div class="role-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 25px;">
+            <!-- R&R -->
+            <a href="rnr.html" class="role-card" style="text-decoration: none; border-color: #8B5CF6;">
+                <div class="role-header"><span class="role-icon">👥</span><span class="role-title">Roles &
+                        Responsibilities</span></div>
+            </a>
+            <!-- Authority Matrix -->
+            <a href="authority-matrix.html" class="role-card" style="text-decoration: none; border-color: #3B82F6;">
+                <div class="role-header"><span class="role-icon">🔐</span><span class="role-title">Authority
+                        Matrix</span></div>
+            </a>
+            <!-- Escalation Matrix -->
+            <a href="escalation-matrix.html" class="role-card" style="text-decoration: none; border-color: #EF4444;">
+                <div class="role-header"><span class="role-icon">🚨</span><span class="role-title">Escalation
+                        Matrix</span></div>
+            </a>
+            <!-- Performance Review -->
+            <a href="performance-review.html" class="role-card" style="text-decoration: none; border-color: #10B981;">
+                <div class="role-header"><span class="role-icon">📊</span><span class="role-title">Performance
+                        Review</span></div>
+            </a>
+            <!-- Incentive & Penalty -->
+            <a href="incentive-penalty.html" class="role-card" style="text-decoration: none; border-color: #F59E0B;">
+                <div class="role-header"><span class="role-icon">🎯</span><span class="role-title">Incentives &
+                        Penalties</span></div>
+            </a>
+            <!-- Process Improvement Log -->
+            <a href="process-improvement-log.html" class="role-card"
+                style="text-decoration: none; border-color: #EC4899;">
+                <div class="role-header"><span class="role-icon">📝</span><span class="role-title">Process
+                        Improvement</span></div>
+            </a>
+        </div>
 
         <!-- Path Cards -->
         <section class="path-section">
