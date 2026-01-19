@@ -15,7 +15,6 @@
     function enhanceFAQSections() {
         // Find all FAQ-like elements (details/summary, collapsibles, etc.)
         const details = document.querySelectorAll('details');
-        const faqItems = document.querySelectorAll('.faq-item, .question-answer, .qa-item, [class*="faq"], [class*="question"]');
 
         // Style enhancement for details elements
         details.forEach((detail, i) => {
@@ -43,11 +42,55 @@
             });
         });
 
-        // Handle hidden answer patterns (answer in next sibling)
-        const questions = document.querySelectorAll('.question, .faq-question, h4:contains("Q:"), strong:contains("Q:")');
+        // Handle .faq-item pattern (used in employee handbook)
+        enhanceFaqItems();
 
         // Find Q&A patterns in content
         findAndEnhanceQAPairs();
+    }
+
+    function enhanceFaqItems() {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+
+            if (question && answer) {
+                // Style the item
+                item.classList.add('faq-item-enhanced');
+
+                // Hide answer by default
+                answer.style.display = 'none';
+                answer.classList.add('faq-answer-enhanced');
+
+                // Make question clickable
+                question.classList.add('faq-question-enhanced');
+                question.style.cursor = 'pointer';
+
+                // Add indicator
+                if (!question.querySelector('.faq-arrow')) {
+                    const arrow = document.createElement('span');
+                    arrow.className = 'faq-arrow';
+                    arrow.textContent = '▶ ';
+                    question.insertBefore(arrow, question.firstChild);
+                }
+
+                // Toggle on click
+                question.addEventListener('click', function () {
+                    const isHidden = answer.style.display === 'none';
+                    answer.style.display = isHidden ? 'block' : 'none';
+
+                    const arrow = question.querySelector('.faq-arrow');
+                    if (arrow) {
+                        arrow.textContent = isHidden ? '▼ ' : '▶ ';
+                    }
+
+                    // Toggle active class
+                    item.classList.toggle('faq-item-active', isHidden);
+                });
+            }
+        });
     }
 
     function findAndEnhanceQAPairs() {
@@ -142,6 +185,17 @@
         document.querySelectorAll('.faq-toggle-btn').forEach(btn => {
             btn.innerHTML = '🙈 Hide Answer';
         });
+
+        // Handle .faq-item pattern
+        document.querySelectorAll('.faq-answer-enhanced').forEach(a => {
+            a.style.display = 'block';
+        });
+        document.querySelectorAll('.faq-arrow').forEach(arrow => {
+            arrow.textContent = '▼ ';
+        });
+        document.querySelectorAll('.faq-item-enhanced').forEach(item => {
+            item.classList.add('faq-item-active');
+        });
     };
 
     window.collapseAllFAQs = function () {
@@ -157,6 +211,17 @@
 
         document.querySelectorAll('.faq-toggle-btn').forEach(btn => {
             btn.innerHTML = '👁️ Show Answer';
+        });
+
+        // Handle .faq-item pattern
+        document.querySelectorAll('.faq-answer-enhanced').forEach(a => {
+            a.style.display = 'none';
+        });
+        document.querySelectorAll('.faq-arrow').forEach(arrow => {
+            arrow.textContent = '▶ ';
+        });
+        document.querySelectorAll('.faq-item-enhanced').forEach(item => {
+            item.classList.remove('faq-item-active');
         });
     };
 
@@ -279,6 +344,69 @@
         /* Make all details open by default (per user request) */
         details.enhanced-faq {
             /* Remove this if you want collapsed by default */
+        }
+        
+        /* FAQ Item Enhancement Styles */
+        .faq-item-enhanced {
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item-enhanced:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        }
+        
+        .faq-item-active {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+        
+        .faq-question-enhanced {
+            padding: 12px 15px;
+            font-weight: 600;
+            color: #1E3A5F;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+        
+        .faq-question-enhanced:hover {
+            background: rgba(99, 102, 241, 0.1);
+        }
+        
+        .faq-arrow {
+            color: #6366F1;
+            font-size: 0.8em;
+            margin-right: 5px;
+            transition: transform 0.2s ease;
+        }
+        
+        .faq-answer-enhanced {
+            padding: 0 15px 15px 30px;
+            color: #475569;
+            animation: fadeIn 0.3s ease;
+            border-top: 1px dashed rgba(99, 102, 241, 0.2);
+            margin: 0 15px;
+            padding-top: 10px;
+        }
+        
+        /* Dark mode support */
+        .dark-mode .faq-item-enhanced {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        
+        .dark-mode .faq-question-enhanced {
+            color: #E2E8F0;
+        }
+        
+        .dark-mode .faq-answer-enhanced {
+            color: #CBD5E1;
         }
     `;
     document.head.appendChild(style);
