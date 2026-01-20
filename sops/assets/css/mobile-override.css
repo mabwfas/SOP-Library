@@ -1,5 +1,23 @@
 /* MOBILE OVERRIDE CSS - Highest priority mobile styles */
 
+/* ========== GLOBAL FAQ LEFT ALIGNMENT (ALL SCREENS) ========== */
+.faq-item,
+.faq-card,
+.faq-question,
+.faq-answer,
+details,
+summary {
+    text-align: left !important;
+}
+
+.faq-question,
+summary {
+    justify-content: flex-start !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
 /* ========== MOBILE HEADER ========== */
 .mobile-header {
     display: none !important;
@@ -374,5 +392,34 @@
     .faq-list>* {
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+
+    /* Emoji visibility fix */
+    .emoji,
+    .icon,
+    .nav-icon,
+    .section-icon,
+    .role-icon,
+    .faq-icon,
+    span[role="img"],
+    [class*="icon"],
+    [class*="emoji"] {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        font-size: inherit !important;
+        min-width: 1em !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Ensure emoji containers don't hide emojis */
+    h2::before,
+    h3::before,
+    .section-header span,
+    .manifesto-title span:first-child,
+    summary::before,
+    details summary::marker {
+        display: inline-block !important;
+        visibility: visible !important;
     }
 }
