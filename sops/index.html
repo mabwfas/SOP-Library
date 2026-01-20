@@ -626,11 +626,14 @@
 
         @media (max-width: 768px) {
 
+            /* Full width single column layout */
             .path-section,
             .role-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr !important;
+                gap: 8px;
             }
 
+            /* Header mobile layout */
             .header {
                 flex-direction: column;
                 gap: 12px;
@@ -682,6 +685,127 @@
 
             .guides-section {
                 flex-direction: column;
+            }
+
+            /* Role cards mobile - keep horizontal layout but optimize */
+            .role-card {
+                padding: 10px;
+                gap: 0 8px;
+            }
+
+            .role-icon {
+                font-size: 1.1em;
+            }
+
+            .role-title {
+                font-size: 0.75em;
+            }
+
+            .role-details {
+                font-size: 0.65em;
+            }
+
+            .role-details li {
+                line-height: 1.3;
+            }
+
+            .role-links {
+                min-width: 40px;
+            }
+
+            .role-link {
+                padding: 3px 5px;
+                font-size: 0.55em;
+            }
+
+            /* BOS cards mobile */
+            .bos-card.role-card {
+                padding: 10px;
+            }
+
+            /* Section headers mobile */
+            .section-header h2 {
+                font-size: 0.85em;
+            }
+
+            .section-header span {
+                font-size: 1em;
+            }
+
+            /* Path cards mobile */
+            .path-card {
+                padding: 12px;
+            }
+
+            .path-header {
+                margin-bottom: 6px;
+            }
+
+            .path-title {
+                font-size: 1em;
+            }
+
+            .path-full {
+                font-size: 0.75em;
+            }
+
+            .path-desc {
+                font-size: 0.65em;
+            }
+
+            .path-features {
+                font-size: 0.6em;
+            }
+
+            /* Guide cards mobile */
+            .guide-card {
+                padding: 10px;
+            }
+
+            .guide-icon {
+                font-size: 1.2em;
+            }
+
+            .guide-info h3 {
+                font-size: 0.8em;
+            }
+
+            .guide-info p {
+                font-size: 0.65em;
+            }
+
+            /* Prevent horizontal overflow */
+            body {
+                overflow-x: hidden;
+            }
+
+            .container {
+                padding: 10px;
+                overflow-x: hidden;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 400px) {
+            .role-card {
+                padding: 8px;
+            }
+
+            .role-title {
+                font-size: 0.7em;
+            }
+
+            .role-details {
+                font-size: 0.6em;
+            }
+
+            .role-link {
+                padding: 2px 4px;
+                font-size: 0.5em;
+            }
+
+            .section-header h2 {
+                font-size: 0.75em;
             }
         }
 
