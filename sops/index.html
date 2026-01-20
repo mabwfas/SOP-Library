@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Heroes | Library</title>
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>??</text></svg>">
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
@@ -374,7 +374,7 @@
         }
 
         .path-features div::before {
-            content: "�";
+            content: "›";
             position: absolute;
             left: 0;
             color: var(--kra);
@@ -483,12 +483,12 @@
 
         .role-link.dts {
             background: rgba(239, 68, 68, 0.2);
-            border: 1px solid var(--dst);
+            border: 1px solid var(--dts);
             color: #F87171;
         }
 
         .role-link.dts:hover {
-            background: var(--dst);
+            background: var(--dts);
             color: #fff;
         }
 
@@ -645,31 +645,6 @@
 
             .guides-section {
                 flex-direction: column;
-            }
-
-            /* Mobile adjustments - keep buttons on right */
-        }
-
-        @media (max-width: 480px) {
-            .role-grid {
-                gap: 8px;
-            }
-
-            .role-grid[style*="repeat(3"],
-            .role-grid[style*="repeat(2"] {
-                grid-template-columns: 1fr !important;
-            }
-
-            .path-section {
-                gap: 8px;
-            }
-
-            .container {
-                padding: 10px;
-            }
-
-            .section-header h2 {
-                font-size: 0.85em;
             }
         }
 
@@ -996,7 +971,7 @@
         <!-- Header -->
         <header class="header">
             <div class="header-left">
-                <h1>?? <span>DIGITAL HEROES</span> LIBRARY</h1>
+                <h1>🦸 <span>DIGITAL HEROES</span> LIBRARY</h1>
             </div>
             <div class="header-right">
                 <div class="stats">
@@ -1013,13 +988,13 @@
                         <div class="stat-label">Subscribers</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-value">4.9?</div>
+                        <div class="stat-value">4.9★</div>
                         <div class="stat-label">Rating</div>
                     </div>
 
                 </div>
                 <button class="admin-inline-btn" id="adminInlineBtn" onclick="toggleAdminMode()">
-                    ?? Admin Mode
+                    🔒 Admin Mode
                 </button>
             </div>
         </header>
@@ -1028,7 +1003,7 @@
 
         <!-- Quick Access Cards -->
         <div class="section-header" style="border-color: #EC4899;">
-            <span>?</span>
+            <span>⚡</span>
             <h2>QUICK ACCESS</h2>
         </div>
 
@@ -1036,14 +1011,14 @@
             <!-- Employee Handbook Card -->
             <a href="employee-handbook.html" class="role-card" style="text-decoration: none; border-color: #EC4899;">
                 <div class="role-header">
-                    <div class="role-icon">??</div>
+                    <div class="role-icon">📖</div>
                     <div class="role-title">Employee Handbook</div>
                 </div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Work Culture</div>
-                    <div style="margin-bottom: 2px;">� Leave Policies</div>
-                    <div style="margin-bottom: 2px;">� WFH Rules</div>
-                    <div>� FAQ (60+ Q&A)</div>
+                    <div style="margin-bottom: 2px;">• Work Culture</div>
+                    <div style="margin-bottom: 2px;">• Leave Policies</div>
+                    <div style="margin-bottom: 2px;">• WFH Rules</div>
+                    <div>• FAQ (60+ Q&A)</div>
                 </div>
                 <div class="role-links">
                     <span class="role-link" style="background: rgba(236, 72, 153, 0.2); color: #EC4899; flex:1;">View
@@ -1054,14 +1029,14 @@
             <!-- Onboarding Card -->
             <a href="onboarding.html" class="role-card" style="text-decoration: none; border-color: #3B82F6;">
                 <div class="role-header">
-                    <div class="role-icon">??</div>
+                    <div class="role-icon">🚀</div>
                     <div class="role-title">Onboarding</div>
                 </div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Day 1 Guides</div>
-                    <div style="margin-bottom: 2px;">� Role Setup</div>
-                    <div style="margin-bottom: 2px;">� Tool Access</div>
-                    <div>� First Tasks</div>
+                    <div style="margin-bottom: 2px;">• Day 1 Guides</div>
+                    <div style="margin-bottom: 2px;">• Role Setup</div>
+                    <div style="margin-bottom: 2px;">• Tool Access</div>
+                    <div>• First Tasks</div>
                 </div>
                 <div class="role-links">
                     <span class="role-link" style="background: rgba(59, 130, 246, 0.2); color: #3B82F6; flex:1;">View
@@ -1072,14 +1047,14 @@
             <!-- Training Hub Card -->
             <a href="training-hub.html" class="role-card" style="text-decoration: none; border-color: #10B981;">
                 <div class="role-header">
-                    <div class="role-icon">??</div>
+                    <div class="role-icon">🎓</div>
                     <div class="role-title">Training Hub</div>
                 </div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� 12 Role Trainings</div>
-                    <div style="margin-bottom: 2px;">� 300+ Quiz Questions</div>
-                    <div style="margin-bottom: 2px;">� Interactive Modules</div>
-                    <div>� Certifications</div>
+                    <div style="margin-bottom: 2px;">• 12 Role Trainings</div>
+                    <div style="margin-bottom: 2px;">• 300+ Quiz Questions</div>
+                    <div style="margin-bottom: 2px;">• Interactive Modules</div>
+                    <div>• Certifications</div>
                 </div>
                 <div class="role-links">
                     <span class="role-link" style="background: rgba(16, 185, 129, 0.2); color: #10B981; flex:1;">Start
@@ -1091,14 +1066,14 @@
 
         <!-- Role Selection -->
         <div class="section-header" id="roles">
-            <span>??</span>
+            <span>👤</span>
             <h2>SELECT YOUR ROLE</h2>
         </div>
 
         <div class="role-grid">
             <!-- Sales -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Sales</span></div>
+                <div class="role-header"><span class="role-icon">💰</span><span class="role-title">Sales</span></div>
                 <div class="role-content">
                     <ul class="role-details">
                         <li>Lead Generation</li>
@@ -1110,14 +1085,13 @@
                         <a href="kra/sales-kra.html" class="role-link kra">KRA</a>
                         <a href="sales-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/sales-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/sales-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- PM -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Project
+                <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project
                         Manager</span></div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1130,14 +1104,13 @@
                         <a href="kra/pm-kra.html" class="role-link kra">KRA</a>
                         <a href="pm-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/pm-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/pm-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- Shopify Dev -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Shopify Dev</span>
+                <div class="role-header"><span class="role-icon">💻</span><span class="role-title">Shopify Dev</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1150,14 +1123,13 @@
                         <a href="kra/developer-kra.html" class="role-link kra">KRA</a>
                         <a href="developer-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/developer-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/developer-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- Full Stack -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">???</span><span class="role-title">Full Stack</span>
+                <div class="role-header"><span class="role-icon">🖥️</span><span class="role-title">Full Stack</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1170,14 +1142,13 @@
                         <a href="kra/fullstack-kra.html" class="role-link kra">KRA</a>
                         <a href="fullstack-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/fullstack-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/fullstack-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- Designer -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">UI/UX Designer</span>
+                <div class="role-header"><span class="role-icon">🎨</span><span class="role-title">UI/UX Designer</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1190,14 +1161,13 @@
                         <a href="kra/designer-kra.html" class="role-link kra">KRA</a>
                         <a href="designer-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/designer-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/designer-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- CS -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Client Success</span>
+                <div class="role-header"><span class="role-icon">🌟</span><span class="role-title">Client Success</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1210,14 +1180,13 @@
                         <a href="kra/cs-kra.html" class="role-link kra">KRA</a>
                         <a href="cs-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/cs-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/cs-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- HR -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">HR & People</span>
+                <div class="role-header"><span class="role-icon">👥</span><span class="role-title">HR & People</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1230,14 +1199,13 @@
                         <a href="kra/hr-kra.html" class="role-link kra">KRA</a>
                         <a href="hr-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/hr-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/hr-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- Content -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Content Writer</span>
+                <div class="role-header"><span class="role-icon">✍️</span><span class="role-title">Content Writer</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1250,14 +1218,13 @@
                         <a href="kra/content-kra.html" class="role-link kra">KRA</a>
                         <a href="content-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/content-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/content-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- Social Media -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Social Media</span>
+                <div class="role-header"><span class="role-icon">📱</span><span class="role-title">Social Media</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1270,14 +1237,13 @@
                         <a href="kra/social-media-kra.html" class="role-link kra">KRA</a>
                         <a href="social-media-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/social-media-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/social-media-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
             <!-- Finance -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Finance</span></div>
+                <div class="role-header"><span class="role-icon">💵</span><span class="role-title">Finance</span></div>
                 <div class="role-content">
                     <ul class="role-details">
                         <li>Invoicing</li>
@@ -1289,15 +1255,14 @@
                         <a href="kra/finance-kra.html" class="role-link kra">KRA</a>
                         <a href="finance-sop.html" class="role-link sop">SOP</a>
                         <a href="kpi/finance-kpi.html" class="role-link kpi">KPI</a>
-                        <a href="dts/sales-dts.html" target="_blank"
-                            class="role-link dts">DTS</a>
+                        <a href="dts/finance-dts.html" class="role-link dts">DTS</a>
                     </div>
                 </div>
             </div>
 
             <!-- Daily Routine -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Daily Routine</span>
+                <div class="role-header"><span class="role-icon">☀️</span><span class="role-title">Daily Routine</span>
                 </div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1315,7 +1280,7 @@
             </div>
             <!-- Client Chat -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Chat Sim</span></div>
+                <div class="role-header"><span class="role-icon">💬</span><span class="role-title">Chat Sim</span></div>
                 <div class="role-content">
                     <ul class="role-details">
                         <li>Persona Creation</li>
@@ -1335,75 +1300,75 @@
 
         <!-- Business Operating System Section -->
         <div class="section-header" id="bos">
-            <span>??</span>
+            <span>⚙️</span>
             <h2>BUSINESS OPERATING SYSTEM</h2>
         </div>
 
         <div class="role-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 25px;">
             <!-- R&R -->
             <a href="rnr.html" class="role-card" style="text-decoration: none; border-color: #8B5CF6;">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Roles &
+                <div class="role-header"><span class="role-icon">👥</span><span class="role-title">Roles &
                         Responsibilities</span></div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Clear Ownership</div>
-                    <div style="margin-bottom: 2px;">� Reporting Lines</div>
-                    <div>� Backup Persons</div>
+                    <div style="margin-bottom: 2px;">• Clear Ownership</div>
+                    <div style="margin-bottom: 2px;">• Reporting Lines</div>
+                    <div>• Backup Persons</div>
                 </div>
             </a>
 
             <!-- Authority Matrix -->
             <a href="authority-matrix.html" class="role-card" style="text-decoration: none; border-color: #3B82F6;">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Authority
+                <div class="role-header"><span class="role-icon">🔐</span><span class="role-title">Authority
                         Matrix</span></div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Decision Rights</div>
-                    <div style="margin-bottom: 2px;">� Approval Limits</div>
-                    <div>� Process Flows</div>
+                    <div style="margin-bottom: 2px;">• Decision Rights</div>
+                    <div style="margin-bottom: 2px;">• Approval Limits</div>
+                    <div>• Process Flows</div>
                 </div>
             </a>
 
             <!-- Escalation Matrix -->
             <a href="escalation-matrix.html" class="role-card" style="text-decoration: none; border-color: #EF4444;">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Escalation
+                <div class="role-header"><span class="role-icon">🚨</span><span class="role-title">Escalation
                         Matrix</span></div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Problem Handling</div>
-                    <div style="margin-bottom: 2px;">� Response Times</div>
-                    <div>� Escalation Paths</div>
+                    <div style="margin-bottom: 2px;">• Problem Handling</div>
+                    <div style="margin-bottom: 2px;">• Response Times</div>
+                    <div>• Escalation Paths</div>
                 </div>
             </a>
 
             <!-- Performance Review -->
             <a href="performance-review.html" class="role-card" style="text-decoration: none; border-color: #10B981;">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Performance
+                <div class="role-header"><span class="role-icon">📊</span><span class="role-title">Performance
                         Review</span></div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Monthly Reviews</div>
-                    <div style="margin-bottom: 2px;">� Scoring System</div>
-                    <div>� Rating Outcomes</div>
+                    <div style="margin-bottom: 2px;">• Monthly Reviews</div>
+                    <div style="margin-bottom: 2px;">• Scoring System</div>
+                    <div>• Rating Outcomes</div>
                 </div>
             </a>
 
             <!-- Incentive & Penalty -->
             <a href="incentive-penalty.html" class="role-card" style="text-decoration: none; border-color: #F59E0B;">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Incentives &
+                <div class="role-header"><span class="role-icon">🎯</span><span class="role-title">Incentives &
                         Penalties</span></div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Bonus Structure</div>
-                    <div style="margin-bottom: 2px;">� Consequences</div>
-                    <div>� Discipline Process</div>
+                    <div style="margin-bottom: 2px;">• Bonus Structure</div>
+                    <div style="margin-bottom: 2px;">• Consequences</div>
+                    <div>• Discipline Process</div>
                 </div>
             </a>
 
             <!-- Process Improvement Log -->
             <a href="process-improvement-log.html" class="role-card"
                 style="text-decoration: none; border-color: #EC4899;">
-                <div class="role-header"><span class="role-icon">??</span><span class="role-title">Process
+                <div class="role-header"><span class="role-icon">📝</span><span class="role-title">Process
                         Improvement</span></div>
                 <div style="font-size: 0.7em; color: var(--muted); margin-bottom: 8px;">
-                    <div style="margin-bottom: 2px;">� Kaizen Log</div>
-                    <div style="margin-bottom: 2px;">� Suggestion Tracking</div>
-                    <div>� Implementation</div>
+                    <div style="margin-bottom: 2px;">• Kaizen Log</div>
+                    <div style="margin-bottom: 2px;">• Suggestion Tracking</div>
+                    <div>• Implementation</div>
                 </div>
             </a>
         </div>
@@ -1411,7 +1376,7 @@
         <!-- Path Cards -->
         <section class="path-section">
             <div class="path-card kra" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
-                <div class="path-header"><span class="path-icon">??</span><span class="path-title">KRA</span></div>
+                <div class="path-header"><span class="path-icon">📋</span><span class="path-title">KRA</span></div>
                 <div class="path-full">Key Result Areas</div>
                 <div class="path-desc">"What I'm responsible for"</div>
                 <div class="path-features">
@@ -1422,7 +1387,7 @@
                 </div>
             </div>
             <div class="path-card sop" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
-                <div class="path-header"><span class="path-icon">??</span><span class="path-title">SOP</span></div>
+                <div class="path-header"><span class="path-icon">📖</span><span class="path-title">SOP</span></div>
                 <div class="path-full">Standard Operating Procedures</div>
                 <div class="path-desc">"How I do my job"</div>
                 <div class="path-features">
@@ -1433,7 +1398,7 @@
                 </div>
             </div>
             <div class="path-card kpi" onclick="document.getElementById('roles').scrollIntoView({behavior:'smooth'})">
-                <div class="path-header"><span class="path-icon">??</span><span class="path-title">KPI</span></div>
+                <div class="path-header"><span class="path-icon">📊</span><span class="path-title">KPI</span></div>
                 <div class="path-full">Key Performance Indicators</div>
                 <div class="path-desc">"How I'm measured"</div>
                 <div class="path-features">
@@ -1446,7 +1411,7 @@
         </section>
 
         <footer class="footer">
-            Digital Heroes Library | v2.0 | � 2026
+            Digital Heroes Library | v2.0 | © 2026
         </footer>
     </div>
     <script src="admin-mode.js"></script>
@@ -1465,10 +1430,10 @@
             const isActive = document.body.classList.contains('admin-active');
             if (inlineBtn) {
                 if (isActive) {
-                    inlineBtn.innerHTML = '? Admin Active';
+                    inlineBtn.innerHTML = '✓ Admin Active';
                     inlineBtn.classList.add('active');
                 } else {
-                    inlineBtn.innerHTML = '?? Admin Mode';
+                    inlineBtn.innerHTML = '🔒 Admin Mode';
                     inlineBtn.classList.remove('active');
                 }
             }
@@ -1662,7 +1627,7 @@
             document.querySelectorAll('*').forEach(el => {
                 el.style.fontFamily = '"Courier New", monospace';
             });
-            alert('?? GOD MODE ACTIVATED! ??');
+            alert('🎮 GOD MODE ACTIVATED! 🎮');
         }
     </script>
 
