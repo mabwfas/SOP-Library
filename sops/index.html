@@ -420,17 +420,30 @@
             transition: all 0.2s;
             position: relative;
             display: grid;
-            grid-template-rows: auto 1fr;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+            align-items: start;
         }
 
         .role-content {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto;
             gap: 10px;
-            align-items: flex-start;
+            align-items: start;
         }
 
         .role-details {
             flex: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .role-links {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            min-width: 45px;
+            align-self: start;
         }
 
         /* Corner accents for roles */
