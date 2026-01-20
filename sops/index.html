@@ -420,28 +420,13 @@
             transition: all 0.2s;
             position: relative;
             display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 12px;
-            align-items: flex-start;
+            grid-template-rows: auto 1fr;
         }
 
         .role-content {
             display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .role-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 4px;
-        }
-
-        .role-details {
-            flex: 1;
-            margin: 0;
-            padding-left: 5px;
+            gap: 10px;
+            align-items: flex-start;
         }
 
         .role-details {
@@ -471,7 +456,12 @@
             box-shadow: 0 5px 15px rgba(139, 92, 246, 0.2);
         }
 
-
+        .role-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
 
         .role-icon {
             font-size: 1.3em;
@@ -1083,25 +1073,25 @@
         <div class="role-grid">
             <!-- Sales -->
             <div class="role-card">
+                <div class="role-header"><span class="role-icon">💰</span><span class="role-title">Sales</span></div>
                 <div class="role-content">
-                    <div class="role-header"><span class="role-icon">💰</span><span class="role-title">Sales</span>
-                    </div>
                     <ul class="role-details">
                         <li>Lead Generation</li>
                         <li>Client Closing</li>
                         <li>Revenue Targets</li>
                         <li>CRM Management</li>
                     </ul>
-                </div>
-                <div class="role-links">
-                    <a href="kra/sales-kra.html" class="role-link kra">KRA</a>
-                    <a href="sales-sop.html" class="role-link sop">SOP</a>
-                    <a href="kpi/sales-kpi.html" class="role-link kpi">KPI</a>
-                    <a href="dts/sales-dts.html" class="role-link dts">DTS</a>
+                    <div class="role-links">
+                        <a href="kra/sales-kra.html" class="role-link kra">KRA</a>
+                        <a href="sales-sop.html" class="role-link sop">SOP</a>
+                        <a href="kpi/sales-kpi.html" class="role-link kpi">KPI</a>
+                        <a href="dts/sales-dts.html" class="role-link dts">DTS</a>
+                    </div>
                 </div>
             </div>
             <!-- PM -->
-            <div class="role-card">`n                <div class="role-content">`n                    <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project
+            <div class="role-card">
+                <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project
                         Manager</span></div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1290,16 +1280,20 @@
             </div>
             <!-- Client Chat -->
             <div class="role-card">
-                <div class="role-header"><span class="role-icon">💬</span><span class="role-title">Chat Sim</span></div>`n                    <ul class="role-details">
+                <div class="role-header"><span class="role-icon">💬</span><span class="role-title">Chat Sim</span></div>
+                <div class="role-content">
+                    <ul class="role-details">
                         <li>Persona Creation</li>
                         <li>Platform Rules</li>
                         <li>Message Timing</li>
                         <li>Tones & Styles</li>
-                    </ul>`n                </div>`n                <div class="role-links">
+                    </ul>
+                    <div class="role-links">
                         <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;">KRA</a>
                         <a href="client-chat-sop.html" class="role-link sop">SOP</a>
                         <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;">KPI</a>
                     </div>
+                </div>
             </div>
         </div>
 
