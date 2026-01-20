@@ -319,4 +319,58 @@
     .admin-floating-btn span:not(.icon) {
         display: none !important;
     }
+
+    /* FAQ Mobile Fix - Consistent spacing */
+    .faq-item,
+    .faq-card,
+    .faq-question,
+    .faq-answer,
+    details,
+    summary {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .faq-item,
+    .faq-card,
+    details {
+        margin-bottom: 8px !important;
+        padding: 0 !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+    }
+
+    .faq-question,
+    summary {
+        padding: 12px 10px !important;
+        font-size: 0.9em !important;
+        line-height: 1.4 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    .faq-answer,
+    details[open]>div,
+    details>div {
+        padding: 10px !important;
+        font-size: 0.85em !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Remove extra margins/padding that might cause jumbled look */
+    .faq-container,
+    .faq-section,
+    .faq-list {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .faq-container>*,
+    .faq-section>*,
+    .faq-list>* {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
