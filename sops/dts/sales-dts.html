@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Daily Task Sheet | Digital Heroes</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #10B981;
+            --accent-light: rgba(16, 185, 129, 0.1);
+            --text: #334155;
+            --bg: #F8FAFC;
+            --card: #FFFFFF;
+            --border: #E2E8F0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--accent), #059669);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.2s;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .time-block {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .time-block h3 {
+            color: var(--accent);
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .task-list {
+            list-style: none;
+        }
+
+        .task-list li {
+            padding: 12px 15px;
+            background: var(--accent-light);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .task-list li::before {
+            content: '☐';
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+
+        .task-list li.priority-high {
+            border-left: 3px solid #EF4444;
+        }
+
+        .task-list li.priority-medium {
+            border-left: 3px solid #F59E0B;
+        }
+
+        .task-list li strong {
+            color: var(--primary);
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .tip-box h4 {
+            color: #92400E;
+            margin-bottom: 10px;
+        }
+
+        .tip-box p {
+            color: #78350F;
+            font-size: 0.95em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #94A3B8;
+            font-size: 0.85em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .time-block {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📋 Sales Daily Task Sheet</h1>
+            <p>Your daily checklist for consistent sales performance</p>
+            <a href="../index.html" class="back-btn">← Back to Library</a>
+        </header>
+
+        <div class="time-block">
+            <h3>🌅 Morning Block (9:00 AM - 12:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Check Fiverr/Upwork inbox</strong> - Respond to all new messages
+                    within 30 minutes</li>
+                <li class="priority-high"><strong>Review overnight leads</strong> - Qualify and categorize new inquiries
+                </li>
+                <li class="priority-medium"><strong>Follow up on pending quotes</strong> - Send reminders to prospects
+                    who haven't responded</li>
+                <li><strong>Update CRM/pipeline</strong> - Log all interactions from yesterday</li>
+                <li><strong>Review active proposals</strong> - Check status and prepare follow-ups</li>
+                <li><strong>Research 3-5 potential leads</strong> - Identify new business opportunities</li>
+            </ul>
+        </div>
+
+        <div class="time-block">
+            <h3>☀️ Afternoon Block (12:00 PM - 4:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Send new proposals</strong> - At least 2-3 customized proposals daily
+                </li>
+                <li class="priority-medium"><strong>Conduct discovery calls</strong> - Understand client requirements in
+                    depth</li>
+                <li><strong>Prepare quotes</strong> - Create detailed pricing based on client needs</li>
+                <li><strong>Update proposal templates</strong> - Improve based on recent wins/losses</li>
+                <li><strong>Cross-sell existing clients</strong> - Identify upsell opportunities</li>
+            </ul>
+        </div>
+
+        <div class="time-block">
+            <h3>🌆 Evening Block (4:00 PM - 6:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Final inbox sweep</strong> - Ensure no message left unread</li>
+                <li class="priority-medium"><strong>Handoff to PM</strong> - Brief PMs on any closed deals or
+                    requirements</li>
+                <li><strong>EOD report</strong> - Submit daily activity summary</li>
+                <li><strong>Plan tomorrow</strong> - Prioritize follow-ups and tasks for next day</li>
+                <li><strong>Update deal statuses</strong> - Move opportunities through pipeline stages</li>
+            </ul>
+        </div>
+
+        <div class="time-block">
+            <h3>📊 Weekly Tasks (Complete at least once per week)</h3>
+            <ul class="task-list">
+                <li><strong>Review win/loss analysis</strong> - Learn from closed and lost deals</li>
+                <li><strong>Optimize Fiverr/Upwork gig</strong> - Update portfolio, FAQs, pricing</li>
+                <li><strong>Competitor research</strong> - Monitor competitor offerings and pricing</li>
+                <li><strong>Review client testimonials</strong> - Request reviews from happy clients</li>
+                <li><strong>Training session</strong> - Learn new sales techniques or product knowledge</li>
+            </ul>
+        </div>
+
+        <div class="tip-box">
+            <h4>💡 Pro Tip</h4>
+            <p><strong>Response time is everything.</strong> Clients who get a response within 15 minutes are 21x more
+                likely to convert. Keep Fiverr/Upwork notifications ON and respond immediately during work hours.</p>
+        </div>
+
+        <footer class="footer">
+            <p>Digital Heroes | Sales Excellence Daily</p>
+        </footer>
+    </div>
+</body>
+
+</html>

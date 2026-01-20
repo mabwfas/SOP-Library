@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Writer Daily Task Sheet | Digital Heroes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #8B5CF6;
+            --accent-light: rgba(139, 92, 246, 0.1);
+            --text: #334155;
+            --bg: #F8FAFC;
+            --card: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--accent), #7C3AED);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .time-block {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .time-block h3 {
+            color: var(--accent);
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .task-list {
+            list-style: none;
+        }
+
+        .task-list li {
+            padding: 12px 15px;
+            background: var(--accent-light);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .task-list li.priority-high {
+            border-left: 3px solid #EF4444;
+        }
+
+        .task-list li strong {
+            color: #0F172A;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .tip-box h4 {
+            color: #5B21B6;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #94A3B8;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Content Writer Daily Task Sheet</h1>
+            <p>Your daily checklist for content excellence</p>
+            <a href="../index.html" class="back-btn">Back to Library</a>
+        </header>
+        <div class="time-block">
+            <h3>Morning Block (9:00 AM - 12:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Check content requests</strong> - Review new assignments from PM</li>
+                <li class="priority-high"><strong>Research client brand</strong> - Understand brand voice and audience
+                </li>
+                <li><strong>Outline content</strong> - Plan structure before writing</li>
+                <li><strong>Product descriptions</strong> - Write compelling product copy</li>
+                <li><strong>SEO keyword research</strong> - Identify target keywords</li>
+            </ul>
+        </div>
+        <div class="time-block">
+            <h3>Afternoon Block (12:00 PM - 4:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Content writing</strong> - Deep focus on assigned content</li>
+                <li><strong>Blog posts</strong> - Write SEO-optimized articles</li>
+                <li><strong>Email copy</strong> - Welcome sequences, promotions</li>
+                <li><strong>Website copy</strong> - Homepage, About, Collection pages</li>
+                <li><strong>Self-edit</strong> - Proofread before submission</li>
+            </ul>
+        </div>
+        <div class="time-block">
+            <h3>Evening Block (4:00 PM - 6:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Submit completed content</strong> - Send for PM review</li>
+                <li><strong>Address revisions</strong> - Implement feedback quickly</li>
+                <li><strong>EOD status report</strong> - Content metrics and progress</li>
+                <li><strong>Read and learn</strong> - Study great copywriting examples</li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h4>Pro Tip</h4>
+            <p><strong>Features tell, benefits sell.</strong> Don't just describe what a product is - explain what it
+                does for the customer and how it makes them feel.</p>
+        </div>
+        <footer class="footer">
+            <p>Digital Heroes | Content Excellence</p>
+        </footer>
+    </div>
+</body>
+
+</html>

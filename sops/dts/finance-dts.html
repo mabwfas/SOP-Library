@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Daily Task Sheet | Digital Heroes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #059669;
+            --accent-light: rgba(5, 150, 105, 0.1);
+            --text: #334155;
+            --bg: #F8FAFC;
+            --card: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--accent), #047857);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .time-block {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .time-block h3 {
+            color: var(--accent);
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .task-list {
+            list-style: none;
+        }
+
+        .task-list li {
+            padding: 12px 15px;
+            background: var(--accent-light);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .task-list li.priority-high {
+            border-left: 3px solid #EF4444;
+        }
+
+        .task-list li strong {
+            color: #0F172A;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .tip-box h4 {
+            color: #065F46;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #94A3B8;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Finance Daily Task Sheet</h1>
+            <p>Your daily checklist for financial excellence</p>
+            <a href="../index.html" class="back-btn">Back to Library</a>
+        </header>
+        <div class="time-block">
+            <h3>Morning Block (9:00 AM - 12:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Check bank accounts</strong> - Verify incoming payments</li>
+                <li class="priority-high"><strong>Reconcile Fiverr/Upwork</strong> - Match platform earnings to bank
+                </li>
+                <li><strong>Process invoices</strong> - Create and send pending invoices</li>
+                <li><strong>Expense approvals</strong> - Review and approve expense claims</li>
+                <li><strong>Cash flow check</strong> - Monitor current cash position</li>
+            </ul>
+        </div>
+        <div class="time-block">
+            <h3>Afternoon Block (12:00 PM - 4:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Payment processing</strong> - Vendor and contractor payments</li>
+                <li><strong>GST/Tax updates</strong> - Log transactions for tax compliance</li>
+                <li><strong>Payroll prep</strong> - Update salary data as needed</li>
+                <li><strong>Budget tracking</strong> - Compare actuals vs budget</li>
+                <li><strong>Vendor follow-ups</strong> - Chase pending invoices</li>
+            </ul>
+        </div>
+        <div class="time-block">
+            <h3>Evening Block (4:00 PM - 6:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Daily entries</strong> - Complete all accounting entries</li>
+                <li><strong>Report updates</strong> - Update financial dashboards</li>
+                <li><strong>EOD status</strong> - Report any cash flow concerns</li>
+                <li><strong>Plan tomorrow</strong> - Identify pending financial tasks</li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h4>Pro Tip</h4>
+            <p><strong>Reconcile daily, not monthly.</strong> Small discrepancies caught early are easy to fix.
+                Month-end surprises are nightmares.</p>
+        </div>
+        <footer class="footer">
+            <p>Digital Heroes | Financial Excellence</p>
+        </footer>
+    </div>
+</body>
+
+</html>

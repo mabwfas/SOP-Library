@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Daily Task Sheet | Digital Heroes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #EC4899;
+            --accent-light: rgba(236, 72, 153, 0.1);
+            --text: #334155;
+            --bg: #F8FAFC;
+            --card: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--accent), #DB2777);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .time-block {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .time-block h3 {
+            color: var(--accent);
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .task-list {
+            list-style: none;
+        }
+
+        .task-list li {
+            padding: 12px 15px;
+            background: var(--accent-light);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .task-list li.priority-high {
+            border-left: 3px solid #EF4444;
+        }
+
+        .task-list li strong {
+            color: #0F172A;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #FCE7F3, #FBCFE8);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .tip-box h4 {
+            color: #9D174D;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #94A3B8;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Designer Daily Task Sheet</h1>
+            <p>Your daily checklist for design excellence</p>
+            <a href="../index.html" class="back-btn">Back to Library</a>
+        </header>
+        <div class="time-block">
+            <h3>Morning Block (9:00 AM - 12:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Check design requests</strong> - Review new tasks from PM</li>
+                <li class="priority-high"><strong>Client feedback review</strong> - Address revision requests first</li>
+                <li><strong>Brand research</strong> - Study client brand for new projects</li>
+                <li><strong>Create wireframes</strong> - Start with low-fidelity layouts</li>
+                <li><strong>Organize Figma files</strong> - Keep projects structured</li>
+            </ul>
+        </div>
+        <div class="time-block">
+            <h3>Afternoon Block (12:00 PM - 4:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>High-fidelity designs</strong> - Create polished mockups</li>
+                <li><strong>Mobile responsiveness</strong> - Design mobile versions</li>
+                <li><strong>Component creation</strong> - Build reusable design components</li>
+                <li><strong>Design review prep</strong> - Prepare presentations for clients</li>
+                <li><strong>Asset export</strong> - Export icons, images for developers</li>
+            </ul>
+        </div>
+        <div class="time-block">
+            <h3>Evening Block (4:00 PM - 6:00 PM)</h3>
+            <ul class="task-list">
+                <li class="priority-high"><strong>Submit designs</strong> - Send to PM for review</li>
+                <li><strong>Developer handoff</strong> - Prepare specs and assets</li>
+                <li><strong>EOD status update</strong> - Report progress</li>
+                <li><strong>Design inspiration</strong> - Browse Dribbble, Behance for trends</li>
+            </ul>
+        </div>
+        <div class="tip-box">
+            <h4>Pro Tip</h4>
+            <p><strong>Mobile first, always.</strong> 70% of ecommerce traffic is mobile. Design for mobile first, then
+                scale up to desktop.</p>
+        </div>
+        <footer class="footer">
+            <p>Digital Heroes | Design Excellence</p>
+        </footer>
+    </div>
+</body>
+
+</html>
