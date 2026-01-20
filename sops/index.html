@@ -646,6 +646,67 @@
             .guides-section {
                 flex-direction: column;
             }
+
+            /* Mobile role card layout */
+            .role-content {
+                flex-direction: column;
+            }
+
+            .role-links {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 6px;
+                margin-top: 8px;
+            }
+
+            .role-link {
+                padding: 6px 10px;
+                font-size: 0.65em;
+            }
+
+            .role-card {
+                padding: 12px;
+            }
+
+            .role-header {
+                font-size: 0.9em;
+            }
+
+            .role-details {
+                font-size: 0.75em;
+            }
+
+            .role-details li {
+                margin-bottom: 2px;
+            }
+
+            /* BOS cards on mobile */
+            .role-grid[style*="repeat(3"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .role-grid {
+                gap: 8px;
+            }
+
+            .role-grid[style*="repeat(3"],
+            .role-grid[style*="repeat(2"] {
+                grid-template-columns: 1fr !important;
+            }
+
+            .path-section {
+                gap: 8px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .section-header h2 {
+                font-size: 0.85em;
+            }
         }
 
         /* Hide floating admin button - we use inline */
