@@ -219,4 +219,42 @@ ul {
         white-space: nowrap;
         max-width: 100%;
     }
+
+    /* ==========================================
+       DAILY INSPIRATION SECTION MOBILE FIX
+       ========================================== */
+    /* Fix grid layout in inspiration section */
+    #inspiration [style*="grid-template-columns"],
+    .section [style*="grid-template-columns: repeat(auto-fit, minmax(250px"] {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Fix inspiration quote cards */
+    #inspiration>div[style*="display: grid"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    /* Ensure blockquotes don't overflow */
+    blockquote {
+        font-size: 18px !important;
+        word-wrap: break-word;
+    }
+
+    /* Fix any inline grid that might break on mobile */
+    [style*="display: grid"][style*="minmax(250px"] {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+/* ==========================================
+   BACK BUTTON - USE HISTORY NAVIGATION
+   ========================================== */
+/* Note: This requires JS fix - CSS only for styling */
+.sidebar-back,
+.back-link a {
+    cursor: pointer;
 }
