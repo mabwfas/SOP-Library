@@ -162,40 +162,283 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 TASK 1: MINDSET - The ₹5 Lakh Mistake</h2>
+<h2>📚 TASK 1: FULL-STACK MINDSET - The ₹5 Lakh Mistake</h2>
 
 <div class="content-section">
-    <h3>📉 The Story</h3>
-    <p>A dev hardcoded an API key in the frontend. Scrapers found it, exhausted the quota, and billed the client ₹5 Lakhs in 24 hours.</p>
-    <div class="highlight-box">
-        <strong>Lesson:</strong> Security is not a feature. It is the foundation. Small mistakes cost fortunes.
+    <h3>⚠️ THE STORY THAT CHANGED EVERYTHING</h3>
+    <p>A developer at a well-funded startup hardcoded an API key in the frontend React code. The key was for a geolocation service charging $0.005 per request. Scrapers discovered the exposed key within 72 hours, automated scripts hammered the API, and within 24 hours the client received a bill for ₹5 Lakhs (~$6,000 USD).</p>
+    
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 20px; margin: 20px 0;">
+        <strong style="color: #EF4444;">🚨 THE REAL COST:</strong>
+        <ul style="margin: 10px 0;">
+            <li>₹5 Lakhs in API charges (paid by Digital Heroes)</li>
+            <li>Client relationship damaged permanently</li>
+            <li>Developer's reputation destroyed</li>
+            <li>3 weeks of emergency work to fix and migrate</li>
+            <li>Future billing disputes with the API provider</li>
+        </ul>
+        <p style="color: #F87171; font-weight: bold; margin-top: 15px;">This was not a sophisticated attack. It was a SIMPLE mistake that a 5-minute code review would have caught.</p>
     </div>
 </div>
 
 <div class="content-section">
-    <h3>🛡️ 5 Core Principles</h3>
-    <ol>
-        <li><strong>Plan Twice, Code Once:</strong> Write the schema, <em>then</em> the code.</li>
-        <li><strong>Typesafety is Non-Negotiable:</strong> No <code>any</code>. Ever.</li>
-        <li><strong>Don't Repeate Yourself (DRY):</strong> Abstract logic.</li>
-        <li><strong>Secure by Default:</strong> Validate every input (Zod).</li>
-        <li><strong>Peer Review:</strong> No merging without approval.</li>
-    </ol>
+    <h3>🧠 PART 1: THE PROFESSIONAL DEVELOPER MINDSET</h3>
+    
+    <h4>1.1 Code Runs on REAL Money</h4>
+    <p>Unlike tutorials or side projects, every line of code you write at Digital Heroes touches real revenue. Consider these scenarios:</p>
+    <ul>
+        <li><strong>E-commerce checkout:</strong> A bug in the payment flow = lost sales ($1,000s/hour)</li>
+        <li><strong>SaaS dashboard:</strong> Slow query = churned customers ($10,000s/year)</li>
+        <li><strong>Authentication:</strong> Security flaw = data breach (unlimited liability)</li>
+        <li><strong>API performance:</strong> Every 100ms delay = 1% conversion drop</li>
+    </ul>
+    
+    <h4>1.2 The Two Types of Developers</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #EF4444;">❌ The "It Works on My Machine" Developer</strong><br><br>
+                • Writes code without planning<br>
+                • Uses \`any\` in TypeScript "temporarily"<br>
+                • Skips testing because "it's obvious"<br>
+                • Hardcodes values for speed<br>
+                • Blames environment when bugs appear<br>
+                • Never reads error logs carefully<br>
+                <em style="color: #F87171;">Will be stuck at ₹30K/month forever</em>
+            </td>
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #10B981;">✅ The Digital Heroes Developer</strong><br><br>
+                • Plans architecture before touching code<br>
+                • Treats TypeScript as law, not suggestion<br>
+                • Writes tests even for "simple" functions<br>
+                • Uses environment variables religiously<br>
+                • Takes ownership when bugs appear<br>
+                • Reads every line of error messages<br>
+                <em style="color: #10B981;">Commands ₹1L+/month and builds trust</em>
+            </td>
+        </tr>
+    </table>
+    
+    <h4>1.3 Why Attitude > Skill at Entry Level</h4>
+    <p>We can teach you React, PostgreSQL, and deployment. We CANNOT teach you to care about quality. The developers who rise fastest are those who:</p>
+    <ul>
+        <li>Triple-check their own code before asking for review</li>
+        <li>Ask "what could go wrong?" for every feature</li>
+        <li>Document decisions without being asked</li>
+        <li>Communicate blockers immediately, not after 3 days</li>
+        <li>Learn from every code review comment</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🛡️ PART 2: THE 5 CORE PRINCIPLES (Memorize These)</h3>
+    
+    <h4>PRINCIPLE 1: Plan Twice, Code Once</h4>
+    <p>Before writing ANY code, you must have:</p>
+    <ul>
+        <li><strong>Database Schema:</strong> Know your tables, relationships, and indexes</li>
+        <li><strong>API Endpoints:</strong> List every route with request/response shapes</li>
+        <li><strong>Component Tree:</strong> Sketch the component hierarchy</li>
+        <li><strong>Edge Cases:</strong> What happens when data is empty? When user is offline?</li>
+    </ul>
+    <div class="code-block" style="background: #1e1e1e; padding: 15px; font-family: monospace; border-radius: 8px; margin: 15px 0;">
+        // ❌ BAD: Starting to code immediately<br>
+        const users = await fetch('/api/users') // What's the shape? Error handling?<br><br>
+        // ✅ GOOD: Planning first<br>
+        // Schema: User { id: string, email: string, createdAt: Date }<br>
+        // Endpoint: GET /api/users -> { users: User[], total: number }<br>
+        // Error: 401 -> redirect to login, 500 -> show toast<br>
+        // Edge: empty array -> show "No users yet" message
+    </div>
+    
+    <h4>PRINCIPLE 2: Typesafety is Non-Negotiable</h4>
+    <p>The \`any\` type defeats the purpose of TypeScript. It creates runtime bombs that explode in production at 3 AM.</p>
+    <div class="code-block" style="background: #1e1e1e; padding: 15px; font-family: monospace; border-radius: 8px; margin: 15px 0;">
+        // ❌ FORBIDDEN: Using 'any'<br>
+        const data: any = await res.json();<br>
+        console.log(data.user.name); // Might crash!<br><br>
+        // ✅ REQUIRED: Full typing with Zod validation<br>
+        const UserSchema = z.object({<br>
+        &nbsp;&nbsp;id: z.string().uuid(),<br>
+        &nbsp;&nbsp;name: z.string().min(1),<br>
+        &nbsp;&nbsp;email: z.string().email()<br>
+        });<br>
+        const data = UserSchema.parse(await res.json()); // Safe!
+    </div>
+    
+    <h4>PRINCIPLE 3: Don't Repeat Yourself (DRY)</h4>
+    <p>If you write the same logic twice, extract it into a function. Three times? It needs its own module.</p>
+    <ul>
+        <li><strong>Repeated API calls?</strong> Create a \`useQuery\` hook or API client class</li>
+        <li><strong>Repeated UI patterns?</strong> Create a reusable component</li>
+        <li><strong>Repeated validation?</strong> Create a Zod schema and import it</li>
+        <li><strong>Repeated error handling?</strong> Create a middleware or wrapper</li>
+    </ul>
+    
+    <h4>PRINCIPLE 4: Secure by Default</h4>
+    <p>Security is not a feature you add later. It's baked into every decision:</p>
+    <ul>
+        <li><strong>Environment Variables:</strong> ALL secrets in .env, NEVER in code</li>
+        <li><strong>Input Validation:</strong> Validate EVERY input with Zod (frontend AND backend)</li>
+        <li><strong>SQL Injection:</strong> NEVER concatenate user input into queries</li>
+        <li><strong>XSS Prevention:</strong> NEVER use dangerouslySetInnerHTML with user data</li>
+        <li><strong>CSRF Tokens:</strong> Required for all state-changing operations</li>
+        <li><strong>Rate Limiting:</strong> All public endpoints must have limits</li>
+    </ul>
+    
+    <h4>PRINCIPLE 5: Peer Review is Mandatory</h4>
+    <p>No code reaches \`main\` or \`production\` without at least ONE other developer approving it. This is not bureaucracy—it's insurance.</p>
+    <div class="highlight-box">
+        <strong>Why Reviews Work:</strong>
+        <ul>
+            <li>Fresh eyes catch what tired eyes miss</li>
+            <li>Knowledge spreads across the team</li>
+            <li>Standards stay consistent</li>
+            <li>Bugs are caught before they cost money</li>
+        </ul>
+        <p><strong>Exception Policy:</strong> There are NO exceptions. Even hotfixes get reviewed in a 5-minute sync call.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔐 PART 3: SECURITY FUNDAMENTALS (The Basics You Must Know)</h3>
+    
+    <h4>3.1 Environment Variables: The Golden Rule</h4>
+    <p>Any value that differs between environments (dev/staging/prod) OR is secret MUST be in environment variables.</p>
+    <div class="code-block" style="background: #1e1e1e; padding: 15px; font-family: monospace; border-radius: 8px; margin: 15px 0;">
+        // ❌ NEVER: Hardcoding secrets<br>
+        const stripe = new Stripe("sk_live_abc123xyz");<br>
+        const dbUrl = "postgresql://admin:password@db.com/prod";<br><br>
+        // ✅ ALWAYS: Environment variables<br>
+        const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);<br>
+        const dbUrl = process.env.DATABASE_URL;
+    </div>
+    <p><strong>Files to create:</strong></p>
+    <ul>
+        <li>\`.env.local\` - Your local development secrets (gitignored)</li>
+        <li>\`.env.example\` - Template with dummy values (committed)</li>
+        <li>Vercel/Railway dashboard - Production secrets (never in code)</li>
+    </ul>
+    
+    <h4>3.2 SQL Injection: The Classic Attack</h4>
+    <p>SQL injection is a 20-year-old vulnerability that still claims victims because developers concatenate strings.</p>
+    <div class="code-block" style="background: #1e1e1e; padding: 15px; font-family: monospace; border-radius: 8px; margin: 15px 0;">
+        // ❌ VULNERABLE: String concatenation<br>
+        const query = "SELECT * FROM users WHERE id = " + userId;<br>
+        // If userId = "1 OR 1=1" -> Returns ALL users!<br>
+        // If userId = "1; DROP TABLE users;" -> Goodbye database!<br><br>
+        // ✅ SAFE: Parameterized queries (Prisma does this automatically)<br>
+        const user = await prisma.user.findUnique({<br>
+        &nbsp;&nbsp;where: { id: userId }<br>
+        });
+    </div>
+    
+    <h4>3.3 XSS (Cross-Site Scripting): The Silent Killer</h4>
+    <p>XSS allows attackers to inject JavaScript into your pages, stealing session tokens and user data.</p>
+    <div class="code-block" style="background: #1e1e1e; padding: 15px; font-family: monospace; border-radius: 8px; margin: 15px 0;">
+        // ❌ VULNERABLE: Rendering raw HTML from user<br>
+        &lt;div dangerouslySetInnerHTML={{ __html: userBio }} /&gt;<br>
+        // If userBio = "&lt;script&gt;steal(document.cookie)&lt;/script&gt;" -> Hacked!<br><br>
+        // ✅ SAFE: React escapes by default<br>
+        &lt;div&gt;{userBio}&lt;/div&gt;  // Script tags are shown as text, not executed<br><br>
+        // ✅ If you MUST render HTML: Sanitize first<br>
+        import DOMPurify from 'dompurify';<br>
+        &lt;div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(userBio) }} /&gt;
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 PART 4: CODE QUALITY STANDARDS</h3>
+    
+    <h4>4.1 Linting & Formatting</h4>
+    <p>ESLint and Prettier run on every save. No exceptions. The configuration is shared across the team.</p>
+    <ul>
+        <li><strong>Warnings:</strong> Must be resolved before merging</li>
+        <li><strong>Errors:</strong> Build fails immediately</li>
+        <li><strong>Format on Save:</strong> Enabled in all editor configs</li>
+    </ul>
+    
+    <h4>4.2 Naming Conventions</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Type</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Convention</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Example</strong></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Components</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PascalCase</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">UserProfileCard.tsx</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Functions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">camelCase</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">getUserById()</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Constants</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SCREAMING_SNAKE</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">MAX_RETRY_COUNT</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Files</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">kebab-case</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">user-actions.ts</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Database Tables</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PascalCase (Prisma)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">UserProfile</td>
+        </tr>
+    </table>
+    
+    <h4>4.3 Comment Guidelines</h4>
+    <p>Comments explain WHY, not WHAT. Good code is self-documenting for the WHAT.</p>
+    <div class="code-block" style="background: #1e1e1e; padding: 15px; font-family: monospace; border-radius: 8px; margin: 15px 0;">
+        // ❌ BAD: Stating the obvious<br>
+        // Increment counter by 1<br>
+        counter++;<br><br>
+        // ✅ GOOD: Explaining why<br>
+        // Using retry counter to prevent infinite loops on flaky API<br>
+        // After 3 failures, we surface error to user instead of silent retry<br>
+        retryCount++;
+    </div>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Case Study</h3>
+    <h3>✅ IMPLEMENTATION TASKS</h3>
+    
     <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: The Audit</h4>
-        <p>Review this snippet: <code>const user = await db.query("SELECT * FROM users WHERE id=" + req.body.id);</code>. Identify the vulnerability and rewrite it securely.</p>
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise 1: Security Audit</h4>
+        <p>Review this vulnerable code snippet and identify ALL security issues:</p>
+        <div class="code-block" style="background: #1e1e1e; padding: 10px; font-family: monospace; border-radius: 8px;">
+            const user = await db.query("SELECT * FROM users WHERE id=" + req.body.id);<br>
+            const apiKey = "sk_live_abcd1234";<br>
+            return &lt;div dangerouslySetInnerHTML={{ __html: user.bio }} /&gt;;
+        </div>
+        <p><strong>List all vulnerabilities and write the secure version.</strong></p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise 2: Environment Setup</h4>
+        <p>Create an \`.env.example\` file for a Next.js + PostgreSQL + Stripe project. Include all necessary variables with dummy/placeholder values.</p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise 3: Type Definition</h4>
+        <p>Given this API response, write the complete TypeScript interface AND Zod schema:</p>
+        <div class="code-block" style="background: #1e1e1e; padding: 10px; font-family: monospace; border-radius: 8px;">
+            { "user": { "id": "abc123", "email": "test@example.com", "role": "admin", "createdAt": "2024-01-15T10:30:00Z" } }
+        </div>
     </div>
 </div>
 
 <div class="content-section">
     <h3>🚀 Ready for the Quiz?</h3>
     <ul>
-        <li>📝 10 questions about Principle</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+        <li>📝 <strong>15 questions</strong> testing your understanding of Full-Stack Mindset</li>
+        <li>🎯 Score <strong>15/15</strong> to proceed to Task 2</li>
+        <li>⏱️ Questions cover security, code quality, and professional standards</li>
     </ul>
 </div>
 `;

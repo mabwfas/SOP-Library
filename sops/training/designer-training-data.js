@@ -153,32 +153,224 @@ const task1Content = `
 <h2>📚 TASK 1: DESIGNER MINDSET - Design That SELLS</h2>
 
 <div class="content-section">
-    <h3>💰 The $50,000 Difference</h3>
-    <p>A "Graphic Designer" makes things look pretty. An "Ecommerce Designer" makes things sell.</p>
-    <div class="highlight-box">
-        <strong>The $10,000 Button Story:</strong>
-        <p>Moving a "Checkout" button above the fold and changing it from gray to green increased revenue by $10k/month. Design is not art; it is engineering for eyes.</p>
+    <h3>💰 THE $10,000 BUTTON STORY</h3>
+    <p>A major ecommerce brand hired a UX consultant for $50,000. After 3 weeks of analysis, his recommendation was simple: move the "Checkout" button above the fold and change it from gray to green.</p>
+    
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 20px; margin: 20px 0;">
+        <strong style="color: #10B981;">📈 THE RESULT:</strong>
+        <ul style="margin: 10px 0;">
+            <li>Revenue increased by <strong>$10,000/month</strong></li>
+            <li>Bounce rate dropped by 23%</li>
+            <li>Mobile conversions increased by 47%</li>
+            <li>Return on investment: 200x in the first year</li>
+        </ul>
+        <p style="color: #34D399; font-weight: bold; margin-top: 15px;">This is what separates a $30K/year graphic designer from a $150K/year ecommerce designer.</p>
     </div>
 </div>
 
 <div class="content-section">
-    <h3>🛡️ Zero Tolerance for Careless Mistakes</h3>
-    <p>If a button is 2px off-center, the customer subconsciously loses trust. "If they can't align a button, can they handle my credit card?"</p>
+    <h3>🧠 PART 1: THE FUNDAMENTAL DIFFERENCE</h3>
+    
+    <h4>1.1 Graphic Designer vs Ecommerce Designer</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(236, 72, 153, 0.2);">
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #F472B6;">🎨 Graphic Designer (Art Focus)</strong><br><br>
+                • "Does it look beautiful?"<br>
+                • "Is it award-worthy?"<br>
+                • "Does it express creativity?"<br>
+                • "Will it win on Dribbble?"<br>
+                • Measures success by aesthetics<br>
+                • Portfolio = pretty screenshots<br>
+                <em style="color: #F9A8D4;">Average salary: ₹3-5 LPA</em>
+            </td>
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #10B981;">💰 Ecommerce Designer (Revenue Focus)</strong><br><br>
+                • "Does it SELL?"<br>
+                • "Is the CTA visible in 0.5 seconds?"<br>
+                • "Can grandma complete checkout?"<br>
+                • "Will it convert on a $200 phone?"<br>
+                • Measures success by revenue impact<br>
+                • Portfolio = conversion case studies<br>
+                <em style="color: #6EE7B7;">Average salary: ₹12-25 LPA</em>
+            </td>
+        </tr>
+    </table>
+    
+    <h4>1.2 The Reality of Ecommerce Traffic</h4>
+    <p>These statistics should shape every design decision you make:</p>
+    <ul>
+        <li><strong>70%+ of traffic is mobile:</strong> If your design looks great on desktop but is unusable on phone, you've lost most of your audience</li>
+        <li><strong>First impression: 0.05 seconds:</strong> Users decide if they trust your site before they consciously process anything</li>
+        <li><strong>Every 100ms delay = 1% conversion loss:</strong> Heavy images and animations literally cost money</li>
+        <li><strong>53% abandon if page takes >3 seconds:</strong> "Beautiful loading animation" is an oxymoron</li>
+        <li><strong>Cart abandonment is 70%:</strong> Your checkout design determines if that drops to 50% or rises to 85%</li>
+    </ul>
+    
+    <h4>1.3 Design is Engineering for Eyes</h4>
+    <p>Every pixel you place on screen influences user behavior. This is not art—this is behavioral engineering:</p>
+    <ul>
+        <li><strong>Color creates emotion:</strong> Blue = trust, Green = action, Red = urgency</li>
+        <li><strong>Size creates hierarchy:</strong> Bigger = more important (users' eyes go there first)</li>
+        <li><strong>Spacing creates luxury:</strong> More whitespace = more premium perception</li>
+        <li><strong>Position creates flow:</strong> F-pattern reading means top-left is prime real estate</li>
+        <li><strong>Contrast creates action:</strong> CTA buttons MUST stand out from everything else</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🛡️ PART 2: ZERO TOLERANCE FOR CARELESS MISTAKES</h3>
+    
+    <h4>2.1 The Psychology of Trust</h4>
+    <p>Customers are trusting you with their credit card information. Every small mistake erodes that trust:</p>
+    
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 20px; margin: 20px 0;">
+        <strong style="color: #EF4444;">🚨 TRUST KILLERS (Small mistakes, massive impact):</strong>
+        <ul style="margin: 10px 0;">
+            <li><strong>Button 2px off-center:</strong> "If they can't align a button, can they ship my order?"</li>
+            <li><strong>Inconsistent button styles:</strong> "Is this even the same company?"</li>
+            <li><strong>Low-res images:</strong> "This looks like a scam site from 2005"</li>
+            <li><strong>Broken hover states:</strong> "Is this site even working?"</li>
+            <li><strong>Typos in CTAs:</strong> "If they can't spell 'Buy Now', can they spell my address right?"</li>
+        </ul>
+    </div>
+    
+    <h4>2.2 The 10-Foot Test</h4>
+    <p>Before submitting any design for review, step back 10 feet from your monitor (or zoom to 25%). Ask yourself:</p>
+    <ul>
+        <li>Can I identify the #1 thing the user should do?</li>
+        <li>Is the CTA button the most prominent element?</li>
+        <li>Is the product clearly visible?</li>
+        <li>Can I read the price?</li>
+    </ul>
+    <p>If any answer is "No," redesign before submitting.</p>
+    
+    <h4>2.3 The Grandma Test</h4>
+    <p>Imagine your 70-year-old grandma using your design:</p>
+    <ul>
+        <li>Can she find the "Add to Cart" button without help?</li>
+        <li>Can she read the text on her aging eyes?</li>
+        <li>Can she tap buttons on her shaky hands?</li>
+        <li>Would she understand what to do next?</li>
+    </ul>
+    <p>If grandma is confused, so are 30% of your users. Simplify.</p>
+</div>
+
+<div class="content-section">
+    <h3>📱 PART 3: MOBILE-FIRST IS NOT OPTIONAL</h3>
+    
+    <h4>3.1 Why Mobile-First Design</h4>
+    <p>70% of ecommerce traffic comes from mobile devices. Yet most designers still design on 27-inch monitors and "adapt" for mobile. This is backwards.</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Metric</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Desktop-First Approach</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile-First Approach</strong></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile Conversion</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;">1.2% (broken experience)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;">3.8% (native experience)</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Desktop Conversion</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4.1%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4.3% (enhanced desktop)</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Overall Revenue</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$100K</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;">$165K (+65%)</td>
+        </tr>
+    </table>
+    
+    <h4>3.2 Mobile Design Requirements</h4>
+    <ul>
+        <li><strong>Touch targets: 44px minimum</strong> - Fingers are not precision instruments</li>
+        <li><strong>Thumb zone awareness:</strong> Critical actions must be reachable with one thumb</li>
+        <li><strong>No hover states:</strong> Mobile has no hover—design for tap only</li>
+        <li><strong>Font size: 16px minimum:</strong> Anything smaller is unreadable and Google penalizes it</li>
+        <li><strong>Fixed image heights:</strong> Prevent layout shift when images load</li>
+        <li><strong>Sticky CTA bar:</strong> "Add to Cart" should follow the user on product pages</li>
+    </ul>
+    
+    <h4>3.3 Common Mobile Mistakes</h4>
+    <ul>
+        <li>❌ Hamburger menu with 20+ hidden links (nobody clicks these)</li>
+        <li>❌ Horizontal scrolling carousels (users don't scroll sideways)</li>
+        <li>❌ Popups that are hard to close (instant rage quit)</li>
+        <li>❌ "Desktop site" button (admission of failure)</li>
+        <li>❌ Forms with tiny input fields (typo factory)</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🎯 PART 4: THE DIGITAL HEROES DESIGN STANDARD</h3>
+    
+    <h4>4.1 Our Quality Checklist (Before Submitting ANY Design)</h4>
+    <ul>
+        <li>☐ CTA button is visible without scrolling (above the fold)</li>
+        <li>☐ Primary CTA has highest contrast on the page</li>
+        <li>☐ Mobile version tested at 375px width</li>
+        <li>☐ All font sizes ≥16px on mobile</li>
+        <li>☐ Touch targets ≥44px</li>
+        <li>☐ Color contrast meets WCAG 4.5:1 ratio</li>
+        <li>☐ Consistent spacing using 8px grid</li>
+        <li>☐ No more than 2 font families</li>
+        <li>☐ Images have defined aspect ratios</li>
+        <li>☐ Zero alignment issues (use Figma's alignment tools)</li>
+    </ul>
+    
+    <h4>4.2 What Gets You Fired (Zero Tolerance List)</h4>
+    <ul>
+        <li>🚨 Submitting designs with obvious alignment issues</li>
+        <li>🚨 Using placeholder text ("Lorem ipsum") in final deliverables</li>
+        <li>🚨 Forgetting to design mobile version</li>
+        <li>🚨 Using low-resolution images</li>
+        <li>🚨 Making CTAs hard to find</li>
+        <li>🚨 Ignoring accessibility (contrast, font size)</li>
+    </ul>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Audit</h3>
+    <h3>✅ IMPLEMENTATION TASKS</h3>
+    
     <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #F472B6; margin-top: 0;">Exercise: Spot the "Pretty but Useless"</h4>
-        <p>Look at a Dribbble shot of an ecommerce store. List 3 reasons why it might fail in production (e.g., Text too small, Contrast too low, Navigation hidden).</p>
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise 1: The Dribbble Audit</h4>
+        <p>Go to Dribbble and find an ecommerce store design that looks beautiful. List 5 reasons why it would fail in production. Consider:</p>
+        <ul>
+            <li>Is the CTA visible in 0.5 seconds?</li>
+            <li>Can you read text on a 375px screen?</li>
+            <li>Are touch targets large enough?</li>
+            <li>Is the price clearly visible?</li>
+            <li>Would grandma understand what to do?</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise 2: Mobile Conversion Analysis</h4>
+        <p>Visit 3 major ecommerce sites (Amazon, Nike, Apple) on your phone. For each, document:</p>
+        <ul>
+            <li>How many seconds to find "Add to Cart"?</li>
+            <li>Is there a sticky CTA bar?</li>
+            <li>How easy is the checkout flow?</li>
+            <li>What trust signals are visible?</li>
+        </ul>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F472B6; margin-top: 0;">Exercise 3: The 10-Foot Test</h4>
+        <p>Take any design you've made recently. Zoom out to 25%. Can you identify the primary CTA within 1 second? If not, redesign it and document what you changed.</p>
     </div>
 </div>
 
 <div class="content-section">
     <h3>🚀 Ready for the Quiz?</h3>
     <ul>
-        <li>📝 10 questions about Ecommerce Mindset</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+        <li>📝 <strong>15 challenging questions</strong> testing your understanding of Ecommerce Design Mindset</li>
+        <li>🎯 Score <strong>15/15</strong> to proceed to Task 2</li>
+        <li>⏱️ Questions cover revenue-focused design, mobile-first principles, and quality standards</li>
     </ul>
 </div>
 `;
