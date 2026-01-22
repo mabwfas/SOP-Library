@@ -665,133 +665,133 @@ const quizQuestions = [
 // =============================================================================
 
 const task1Quiz = [
-    { q: "What's the mindset difference between a basic designer and Digital Heroes Designer?", o: ["Speed", "Revenue-focused design thinking", "Tool knowledge", "Experience"], c: 1 },
-    { q: "Design affects business metrics directly:", o: ["Rarely", "Sometimes", "Always - every pixel touches revenue", "Never"], c: 2 },
-    { q: "Mobile-first design means:", o: ["Desktop priority", "Design for mobile first, enhance for desktop", "Ignore mobile", "Only mobile"], c: 1 },
-    { q: "Good design creates:", o: ["Just aesthetics", "Trust and conversions", "Complexity", "Confusion"], c: 1 },
-    { q: "First impression happens in:", o: ["1 minute", "0.05 seconds", "10 seconds", "30 seconds"], c: 1 },
-    { q: "Color psychology affects:", o: ["Nothing", "Purchase decisions", "Only aesthetics", "File size"], c: 1 },
-    { q: "Consistency in design:", o: ["Is optional", "Builds trust", "Is boring", "Should be avoided"], c: 1 },
-    { q: "Whitespace is:", o: ["Wasted space", "Essential for readability", "Lazy design", "Always bad"], c: 1 },
-    { q: "Visual hierarchy guides:", o: ["Nothing", "User attention flow", "Only color", "Only size"], c: 1 },
-    { q: "Typography choice affects:", o: ["Nothing", "Readability and brand perception", "Only file size", "Only print"], c: 1 }
+    { q: "The '$10,000 Button Story' teaches us that design is really about:", o: ["Making things look artistic and creative", "Engineering for eyes - strategic placement drives revenue", "Following the latest trends from Dribbble", "Using the most expensive fonts available"], c: 1 },
+    { q: "A customer subconsciously loses trust when they notice a button is 2px off-center. This demonstrates:", o: ["Customers are too picky these days", "Pixel-perfect execution reflects overall product quality", "You should only fix issues customers report", "Alignment doesn't affect conversions"], c: 1 },
+    { q: "In the 'Dribbble vs Production' exercise, what's the main problem with award-winning concepts?", o: ["They win too many awards", "They often fail usability tests when implemented", "They use too few colors", "They're too simple"], c: 1 },
+    { q: "According to training, what percentage of traffic now comes from mobile devices?", o: ["Around 30% so desktop is still king", "Around 70% making mobile-first essential", "Around 50% so equal priority", "Under 20% so mobile is optional"], c: 1 },
+    { q: "The difference between a 'Graphic Designer' and an 'Ecommerce Designer' is:", o: ["Years of experience in the industry", "One makes things pretty, the other makes things SELL", "The tools they use for design", "Their formal education background"], c: 1 },
+    { q: "First impressions on a website happen in approximately:", o: ["About 5 seconds of viewing", "0.05 seconds - faster than conscious thought", "30 seconds of browsing", "1 minute of exploration"], c: 1 },
+    { q: "When the training says 'every pixel touches revenue', it means:", o: ["Pixels are expensive to render", "Design decisions directly impact business outcomes", "You should count all pixels", "Higher resolution means more sales"], c: 1 },
+    { q: "A Digital Heroes Designer differs from a basic designer by focusing on:", o: ["Using more expensive software tools", "Revenue-focused design thinking over pure aesthetics", "Working faster than competitors", "Having more certifications"], c: 1 },
+    { q: "The 'Squint Test' evaluates a design by:", o: ["Checking if text is readable at small sizes", "Blurring the design to see if hierarchy is clear", "Measuring color contrast ratios", "Testing on low-quality monitors"], c: 1 },
+    { q: "Why is consistency in design so critical for ecommerce?", o: ["It saves time during development", "It builds subconscious trust that affects purchase decisions", "It makes the designer's job easier", "It reduces file sizes"], c: 2 }
 ];
 
 const task2Quiz = [
-    { q: "Law of Proximity states:", o: ["Colors matter", "Elements close together appear related", "Bigger is better", "Speed is key"], c: 1 },
-    { q: "Fitts's Law relates to:", o: ["Color", "Button size and distance for clicking", "Typography", "Animation"], c: 1 },
-    { q: "Hick's Law says:", o: ["More options = better", "More choices = slower decisions", "Speed doesn't matter", "Ignore users"], c: 1 },
-    { q: "F-pattern reading applies to:", o: ["Print only", "Web content scanning", "Mobile only", "Nothing"], c: 1 },
-    { q: "Z-pattern is used for:", o: ["Long content", "Landing pages with minimal text", "Print only", "Mobile only"], c: 1 },
-    { q: "Miller's Law: magical number is:", o: ["3", "7 plus minus 2", "10", "15"], c: 1 },
-    { q: "Gestalt principles explain:", o: ["Color theory", "How humans perceive visual groups", "Typography", "Animation"], c: 1 },
-    { q: "Von Restorff Effect means:", o: ["Everything same", "Stand-out elements are remembered", "Hide everything", "Ignore contrast"], c: 1 },
-    { q: "Serial Position Effect:", o: ["Ignore lists", "First and last items remembered best", "Middle is best", "Random"], c: 1 },
-    { q: "Cognitive load should be:", o: ["Maximized", "Minimized for better UX", "Ignored", "Increased"], c: 1 }
+    { q: "The Law of Proximity means that on a product page, you should:", o: ["Spread elements far apart for breathing room", "Group related elements (price, variants, CTA) together", "Use lots of divider lines between sections", "Place the most important element in isolation"], c: 1 },
+    { q: "According to Fitts's Law, why is a 44px touch target important?", o: ["It looks more balanced visually", "Larger targets are faster and easier to tap accurately", "It's a Figma default setting", "Apple requires this exact size"], c: 1 },
+    { q: "Hick's Law suggests that a product page with 15 variant options should:", o: ["Display all options in a large grid", "Group variants or use progressive disclosure to reduce cognitive load", "Hide all options until clicked", "Show options in random order"], c: 1 },
+    { q: "The F-pattern reading behavior suggests your homepage should:", o: ["Center all important content", "Place key messages and CTAs in the top-left horizontal area", "Put navigation at the bottom", "Use vertical text for novelty"], c: 1 },
+    { q: "The Z-pattern is ideal for:", o: ["Long-form content pages with lots of text", "Landing pages with minimal text and clear CTA placement", "Mobile-only experiences", "Footer design layouts"], c: 1 },
+    { q: "Miller's Law (7±2) means your main navigation should typically have:", o: ["As many items as possible for SEO", "5-9 items maximum for easy mental processing", "Exactly 7 items, no more and no less", "12 items to match the column grid"], c: 1 },
+    { q: "The Von Restorff Effect is why your 'Add to Cart' button should:", o: ["Match the overall color scheme", "Stand out distinctly in color/size from other elements", "Be the same style as other buttons", "Blend into the design subtly"], c: 1 },
+    { q: "Serial Position Effect explains why in a navigation menu:", o: ["Middle items get the most clicks", "First and last items are remembered and clicked most", "Random positioning works best", "Alphabetical order is ideal"], c: 1 },
+    { q: "Minimizing cognitive load in checkout means:", o: ["Adding lots of helpful information everywhere", "Removing distractions and simplifying decision points", "Using complex animations to engage users", "Showing all shipping options at once"], c: 1 },
+    { q: "Gestalt principles help designers understand why:", o: ["Colors evoke emotions", "Users perceive grouped elements as related units", "Typography affects readability", "Speed affects conversions"], c: 1 }
 ];
 
 const task3Quiz = [
-    { q: "Color harmony creates:", o: ["Confusion", "Visual pleasure and trust", "Complexity", "Nothing"], c: 1 },
-    { q: "60-30-10 color rule:", o: ["Random", "Primary-Secondary-Accent color ratio", "Only for print", "Ignore it"], c: 1 },
-    { q: "Complementary colors are:", o: ["Same shade", "Opposite on color wheel", "Random", "Always bad"], c: 1 },
-    { q: "Blue color evokes:", o: ["Urgency", "Trust and calm", "Danger", "Hunger"], c: 1 },
-    { q: "Red color creates:", o: ["Calm", "Urgency and excitement", "Trust", "Sadness"], c: 1 },
-    { q: "Brand color consistency:", o: ["Optional", "Critical for recognition", "Unnecessary", "Boring"], c: 1 },
-    { q: "Color contrast ratio for accessibility:", o: ["1:1", "4.5:1 minimum", "2:1", "Doesn't matter"], c: 1 },
-    { q: "Too many colors cause:", o: ["Better UX", "Visual confusion", "Trust", "Speed"], c: 1 },
-    { q: "Black in e-commerce:", o: ["Cheap", "Premium and luxury feel", "Avoid always", "Only for text"], c: 1 },
-    { q: "CTA button color should:", o: ["Match background", "Stand out from surroundings", "Be gray", "Be invisible"], c: 1 }
+    { q: "In the 60-30-10 color rule, the '10%' accent color should be used for:", o: ["Background elements and large areas", "Headers and graphical elements", "CTAs and buttons that need to 'pop'", "Text and body copy throughout"], c: 2 },
+    { q: "For a luxury jewelry brand, which color combination communicates premium best?", o: ["Bright red with yellow accents", "Black background with gold accents", "Multiple rainbow colors for variety", "Pure white with gray text"], c: 1 },
+    { q: "The training recommends 4.5:1 contrast ratio because:", o: ["It's a design trend for 2024", "It meets WCAG accessibility standards for readability", "It looks more professional", "It reduces file sizes"], c: 1 },
+    { q: "For an organic/natural food brand, the primary color should lean toward:", o: ["Red for appetite stimulation", "Green to communicate eco-friendly/natural", "Black for luxury positioning", "Blue for trustworthiness"], c: 1 },
+    { q: "Why should you avoid using more than 3-4 colors in most ecommerce designs?", o: ["It's harder to code more colors", "Too many colors create visual confusion and reduce trust", "Printers can't handle more colors", "It's industry standard"], c: 1 },
+    { q: "When a client provides brand colors that fail accessibility contrast tests, you should:", o: ["Use them anyway since client is always right", "Adjust shades while preserving brand feel + explain the accessibility issue", "Refuse the project entirely", "Ignore the issue and hope no one notices"], c: 1 },
+    { q: "Red and orange are best used for:", o: ["Tech company corporate websites", "Clearance sales and urgency-driving CTAs", "Organic wellness products", "Professional services firms"], c: 1 },
+    { q: "The 60% of the 60-30-10 rule is typically:", o: ["The brand's primary color", "Background color (white, off-white, or dark mode base)", "The CTA button color", "Header and navigation color"], c: 1 },
+    { q: "A gray CTA button on a product page is problematic because:", o: ["Gray is too neutral - it doesn't drive action", "Gray loads slower than other colors", "Gray uses more pixels", "Gray is outdated in 2024"], c: 0 },
+    { q: "Color psychology differs by culture. Before designing for international clients, you should:", o: ["Use only black and white to be safe", "Research color meanings in the target culture", "Avoid color entirely and use shapes", "Use AI to auto-translate colors"], c: 1 }
 ];
 
 const task4Quiz = [
-    { q: "Sans-serif fonts are:", o: ["Old fashioned", "Clean and modern", "Only for print", "Hard to read"], c: 1 },
-    { q: "Maximum font families per design:", o: ["None", "2-3 maximum", "10+", "Unlimited"], c: 1 },
-    { q: "Line height for readability:", o: ["1.0", "1.5-1.8", "0.5", "3.0"], c: 1 },
-    { q: "Font size for body text:", o: ["8px", "14-16px minimum", "24px", "6px"], c: 1 },
-    { q: "Heading hierarchy uses:", o: ["Same size", "Descending sizes for structure", "Random sizes", "Only color"], c: 1 },
-    { q: "Letter spacing affects:", o: ["Nothing", "Readability and elegance", "Only print", "File size"], c: 1 },
-    { q: "Mobile typography should:", o: ["Be smaller", "Be larger for readability", "Same as desktop", "Be hidden"], c: 1 },
-    { q: "Google Fonts are:", o: ["Paid only", "Free and web-safe", "Slow", "Unavailable"], c: 1 },
-    { q: "ALL CAPS text:", o: ["Always best", "Hard to read in long text", "More readable", "Faster to read"], c: 1 },
-    { q: "Contrast between text and background:", o: ["Optional", "Critical for readability", "Not important", "Avoid high contrast"], c: 1 }
+    { q: "The 2-Font Rule exists because:", o: ["Browsers can only load 2 fonts efficiently", "More than 2 font families creates visual chaos and slows loading", "Figma has a 2-font limit", "Google only offers 2 good fonts"], c: 1 },
+    { q: "Minimum body text size for mobile should be:", o: ["10px to fit more content on screen", "16px minimum - Google penalizes smaller text", "8px for dense information displays", "12px is the sweet spot"], c: 1 },
+    { q: "Line height for body text should be approximately:", o: ["1.0x for tight, compact text", "1.5x for comfortable reading with breathing room", "0.8x to fit more content", "2.5x for dramatic effect"], c: 1 },
+    { q: "Why is pure black (#000000) on pure white (#FFFFFF) not recommended?", o: ["It's too high contrast and causes eye strain", "Black is considered unlucky", "Browsers render it incorrectly", "It doesn't work on mobile"], c: 0 },
+    { q: "A Serif + Sans-Serif pairing (like Playfair Display + Lato) works well because:", o: ["They're both from Google Fonts", "The contrast creates visual interest while maintaining readability", "They have the same line height", "They load at the same speed"], c: 1 },
+    { q: "For a luxury watch brand, the ideal heading font would be:", o: ["Comic Sans for friendliness", "A refined Serif font (like Didot) for elegance", "Impact for boldness", "Arial for simplicity"], c: 1 },
+    { q: "ALL CAPS text should be avoided for:", o: ["Headlines and buttons", "Long paragraphs of body text (hard to read)", "Brand names only", "Mobile devices only"], c: 1 },
+    { q: "Font weight hierarchy typically means:", o: ["All text should be the same weight", "Headlines get heavier weights, body gets lighter", "Body text should be bolder than headlines", "Weight doesn't matter for hierarchy"], c: 1 },
+    { q: "When a client asks for a 'fancy' script font for their entire website:", o: ["Immediately implement their vision", "Explain that script fonts in body text destroy readability and conversions", "Tell them to find another designer", "Use it but make it very large"], c: 1 },
+    { q: "Letter-spacing (tracking) in all-caps text should be:", o: ["Tighter than default for impact", "Slightly wider to improve legibility", "Not adjusted at all", "Extremely spread out"], c: 1 }
 ];
 
 const task5Quiz = [
-    { q: "Grid system provides:", o: ["Nothing", "Alignment and consistency", "Complexity", "Slowness"], c: 1 },
-    { q: "12-column grid is:", o: ["Outdated", "Industry standard for flexibility", "Too complex", "Only for print"], c: 1 },
-    { q: "Responsive breakpoints:", o: ["Not needed", "Essential for different screens", "Only mobile", "Only desktop"], c: 1 },
-    { q: "Card-based layout:", o: ["Old fashioned", "Modern and scannable", "Hard to use", "Print only"], c: 1 },
-    { q: "Above-the-fold content:", o: ["Not important", "Critical first impression", "Hide important content", "Optional"], c: 1 },
-    { q: "Negative space:", o: ["Wasted space", "Gives content room to breathe", "Fill with content", "Avoid always"], c: 1 },
-    { q: "Consistent margins:", o: ["Optional", "Create visual rhythm", "Random is better", "Not important"], c: 1 },
-    { q: "Mobile layout priority:", o: ["Shrink desktop", "Design specifically for mobile", "Ignore mobile", "Same as desktop"], c: 1 },
-    { q: "Content width for readability:", o: ["Full width always", "50-75 characters per line", "10 characters", "200 characters"], c: 1 },
-    { q: "Asymmetrical layouts:", o: ["Always bad", "Can create visual interest", "Never use", "Print only"], c: 1 }
+    { q: "The 8px grid system creates:", o: ["Larger file sizes", "Subconscious visual rhythm and harmony", "More work for designers", "Compatibility issues"], c: 1 },
+    { q: "Random spacing values like 13px, 21px, 45px feel 'off' because:", o: ["They're odd numbers", "They break the 8px multiplier system creating visual chaos", "They're prime numbers", "Browsers round them wrong"], c: 1 },
+    { q: "The recommended desktop design canvas width is:", o: ["1920px always", "1440px or 1200px container width", "3000px for retina", "800px for compatibility"], c: 1 },
+    { q: "'Above the fold' refers to:", o: ["Newspaper printing terminology with no web relevance", "Content visible before scrolling - critical first impression", "The top navigation bar only", "Email header sections"], c: 1 },
+    { q: "Negative/white space in a design:", o: ["Is wasted real estate that should be filled", "Creates luxury perception and improves readability", "Should only be used on homepage", "Confuses users"], c: 1 },
+    { q: "The standard mobile design width to design at is:", o: ["375px (iPhone standard)", "320px (very old phones)", "500px (average)", "1000px (scaled down desktop)"], c: 0 },
+    { q: "When correcting a layout with 15px margins to the 8px system, you would change it to:", o: ["15px is fine, leave it", "16px (nearest 8px multiplier)", "8px (round down always)", "20px (round to nearest 10)"], c: 1 },
+    { q: "12-column grids are preferred because:", o: ["They match 12 months of the year", "12 is divisible by 2, 3, 4, and 6 offering layout flexibility", "CSS requires exactly 12 columns", "Mobile screens have 12 pixels across"], c: 1 },
+    { q: "Responsive breakpoints at 768px and 375px exist for:", o: ["Historical reasons only", "Targeting tablet and mobile device widths", "SEO optimization", "Animation performance"], c: 1 },
+    { q: "Content width for optimal reading is:", o: ["Full width for maximum content", "50-75 characters per line for readability", "As narrow as possible", "200+ characters per line"], c: 1 }
 ];
 
 const task6Quiz = [
-    { q: "Trust badges should be:", o: ["Hidden", "Visible near buy button", "In footer only", "Optional"], c: 1 },
-    { q: "Social proof includes:", o: ["Nothing", "Reviews, testimonials, logos", "Only price", "Graphics only"], c: 1 },
-    { q: "Secure checkout icons:", o: ["Unnecessary", "Reduce cart abandonment", "Slow site", "Confuse users"], c: 1 },
-    { q: "Customer reviews:", o: ["Hide negative ones", "Show authentic mix", "Auto-generate", "Ignore"], c: 1 },
-    { q: "Money-back guarantee badge:", o: ["Scares customers", "Builds purchase confidence", "Unnecessary", "Legal risk"], c: 1 },
-    { q: "Payment icons should show:", o: ["One option", "All accepted payment methods", "None", "Only cash"], c: 1 },
-    { q: "Star ratings:", o: ["Meaningless", "Quick trust indicator", "Too simple", "Avoid always"], c: 1 },
-    { q: "As Seen In logos:", o: ["Fake it", "Only use real press mentions", "Always fake", "Not effective"], c: 1 },
-    { q: "Customer photo reviews:", o: ["Avoid", "Highly persuasive", "Privacy risk", "Not needed"], c: 1 },
-    { q: "Trust elements placement:", o: ["Random", "Strategic - near conversion points", "Hidden", "Footer only"], c: 1 }
+    { q: "Trust badges (McAfee Secure, Money-Back Guarantee) should be placed:", o: ["Hidden in the footer only", "Strategically near the buy button and checkout", "On the About page only", "In a popup on exit"], c: 1 },
+    { q: "Social proof is most effective when it includes:", o: ["Text-only anonymous reviews", "Real photos, verified badges, and star icons", "Only 5-star reviews (hide others)", "Stock photos of happy people"], c: 1 },
+    { q: "A 'Money-Back Guarantee' badge design should:", o: ["Look cheap to emphasize savings", "Look premium and credible, not like a scam site PNG", "Be hidden until checkout", "Use flashing animations"], c: 1 },
+    { q: "Customer reviews should show:", o: ["Only perfect 5-star reviews", "An authentic mix - some imperfection builds credibility", "Only text, never photos", "Anonymous reviews only"], c: 1 },
+    { q: "'As Seen In' logos (Forbes, TechCrunch) should be used:", o: ["Freely, even if your product was never featured", "Only for legitimate press mentions (don't fake it)", "Never - they look arrogant", "Only on B2B websites"], c: 1 },
+    { q: "CTA buttons should look:", o: ["Flat and minimal to match 2024 trends", "Slightly 3D/raised to appear 'clickable' or 'lickable'", "Invisible until hovered", "The same as body text links"], c: 1 },
+    { q: "'Buy Now' vs 'Add to Cart' vs 'Get Yours' - the label matters because:", o: ["Different verbs test differently in conversion rate", "They're all exactly the same", "Google ranks different words differently", "Developers prefer certain words"], c: 0 },
+    { q: "Urgency elements (countdown timers, 'Only 3 left') should be used:", o: ["On every product regardless of truth", "When genuinely true to avoid losing customer trust", "Never, they're manipulative", "Only during Black Friday"], c: 1 },
+    { q: "Payment method icons (Visa, Mastercard, PayPal) should:", o: ["Be hidden to reduce visual clutter", "Be visible to show security and payment options", "Only appear at checkout", "Be replaced with text only"], c: 1 },
+    { q: "The best placement for customer photo reviews is:", o: ["A separate 'Reviews' page only", "Below the product on the product page for immediate social proof", "In the footer", "In email follow-ups only"], c: 1 }
 ];
 
 const task7Quiz = [
-    { q: "Homepage hero section:", o: ["Optional", "Critical first impression", "Skip it", "Text only"], c: 1 },
-    { q: "Collection page layout:", o: ["Random", "Grid-based product display", "One product per page", "Text only"], c: 1 },
-    { q: "Product page above fold:", o: ["Just description", "Image, title, price, CTA", "Footer", "Navigation only"], c: 1 },
-    { q: "Cart page design:", o: ["Complex", "Clear and simple", "Hide products", "No totals"], c: 1 },
-    { q: "Checkout design priority:", o: ["Aesthetics", "Speed and simplicity", "Complexity", "Graphics"], c: 1 },
-    { q: "About page should:", o: ["Be boring", "Build brand connection", "Be hidden", "No images"], c: 1 },
-    { q: "Contact page needs:", o: ["Just email", "Multiple contact options", "Nothing", "Hide address"], c: 1 },
-    { q: "FAQ page design:", o: ["Wall of text", "Expandable accordions", "Tiny text", "Images only"], c: 1 },
-    { q: "404 page should:", o: ["Show error only", "Guide back to shopping", "Be blank", "Show ads"], c: 1 },
-    { q: "Thank you page:", o: ["Skip it", "Confirm order + next steps", "Show error", "Redirect away"], c: 1 }
+    { q: "On a Homepage, the Hero section must have:", o: ["Multiple paragraphs of company history", "Clear headline + CTA visible above the fold", "Autoplay video only", "Just the logo"], c: 1 },
+    { q: "The 'Buy Box' on a product page includes:", o: ["Company story and values", "Price, variants, and Add to Cart as the focal point", "Footer links", "Blog post excerpts"], c: 1 },
+    { q: "A sticky 'Add to Cart' bar on mobile product pages:", o: ["Is annoying and should be avoided", "Keeps the CTA accessible while scrolling long descriptions", "Violates design principles", "Only works on iOS"], c: 1 },
+    { q: "Collection/category page filters should:", o: ["Be hidden to encourage browsing", "Be easy to use with clear sorting options", "Show all 50 filter options at once", "Require page reload for each filter"], c: 1 },
+    { q: "The Cart page should prioritize:", o: ["Maximum upselling opportunities", "Clarity - products, totals, and path to checkout", "Company policies and legal text", "Social sharing buttons"], c: 1 },
+    { q: "Checkout design should be:", o: ["Branded with lots of images and promotions", "Minimal and distraction-free for completion", "Multi-page with 7+ steps", "Identical to the product page"], c: 1 },
+    { q: "A 404 error page should:", o: ["Just show 'Page Not Found'", "Guide users back to shopping with search and popular links", "Redirect to homepage automatically", "Show technical error codes"], c: 1 },
+    { q: "The Thank You page after purchase should:", o: ["Just say 'Thanks'", "Confirm order details and suggest next steps (track order, share)", "Immediately show a popup survey", "Redirect to the homepage"], c: 1 },
+    { q: "Footer design should include:", o: ["Minimum information only", "Navigation, policies, social links, and newsletter signup", "The entire site content duplicated", "Just copyright text"], c: 1 },
+    { q: "The About page for an ecommerce brand should:", o: ["Be skipped entirely", "Build emotional brand connection and trust", "Only show legal information", "Auto-redirect to products"], c: 1 }
 ];
 
 const task8Quiz = [
-    { q: "Mobile-first means:", o: ["Design desktop first", "Start with mobile, enhance for desktop", "Ignore mobile", "Only mobile"], c: 1 },
-    { q: "Touch target size minimum:", o: ["10px", "44px minimum", "5px", "100px"], c: 1 },
-    { q: "Mobile navigation:", o: ["Same as desktop", "Hamburger menu or simplified", "No navigation", "Footer only"], c: 1 },
-    { q: "Mobile images should be:", o: ["Desktop size", "Optimized for mobile bandwidth", "Skip images", "Huge"], c: 1 },
-    { q: "Form fields on mobile:", o: ["Tiny", "Large and finger-friendly", "Hidden", "Complex"], c: 1 },
-    { q: "Mobile CTA buttons:", o: ["Small", "Full-width and prominent", "Hidden", "Text only"], c: 1 },
-    { q: "Scroll on mobile:", o: ["Avoid", "Natural and expected", "Complex patterns", "Horizontal only"], c: 1 },
-    { q: "Mobile popups:", o: ["Use many", "Minimize or avoid", "Full screen always", "Ignore"], c: 1 },
-    { q: "Mobile checkout:", o: ["Desktop version", "Streamlined single page", "Multi-page complex", "Skip checkout"], c: 1 },
-    { q: "Thumb zone design:", o: ["Ignore", "Place key actions within thumb reach", "Top of screen", "Tiny corners"], c: 1 }
+    { q: "The 'Thumb Zone' concept means that on mobile:", o: ["Users scroll with their thumbs only", "Key actions must be in the area easily reachable by thumb", "Thumbnails should be used for all images", "Users prefer smaller buttons"], c: 1 },
+    { q: "The minimum touch target size for mobile buttons is:", o: ["20px - pixels are small enough", "44px x 44px - Apple's Human Interface Guidelines", "100px - bigger is always better", "10px - precision matters"], c: 1 },
+    { q: "Mobile navigation should typically be:", o: ["Identical to desktop with smaller text", "Hamburger menu or simplified tab bar", "All 20 links visible at once", "Removed entirely - trust users to search"], c: 1 },
+    { q: "Layout shifts (content jumping while loading) are bad because:", o: ["They use more bandwidth", "They cause accidental clicks and frustrate users", "They're technically impressive", "Search engines don't notice them"], c: 1 },
+    { q: "When designing a mobile drawer menu, it should include:", o: ["Just the main links", "Links, socials, account, and highlighted CTAs like 'Shop Sale'", "The entire desktop header", "Nothing - drawers are outdated"], c: 1 },
+    { q: "Mobile images should be:", o: ["Full desktop resolution for quality", "Optimized/compressed for faster loading on mobile networks", "Removed entirely to save bandwidth", "Converted to text descriptions"], c: 1 },
+    { q: "Mobile-first design means you should:", o: ["Design desktop first, then shrink for mobile", "Design for mobile first, then enhance for larger screens", "Design only for mobile and ignore desktop", "Use the same design for all screen sizes"], c: 1 },
+    { q: "Popups on mobile should be:", o: ["Full-screen for maximum impact", "Minimized or avoided as they hurt mobile UX", "Triggered on every page load", "Used more than on desktop"], c: 1 },
+    { q: "Fixed image container heights prevent:", o: ["High-quality images from loading", "Layout shifts when images load", "Users from seeing the full image", "Fast page loading"], c: 1 },
+    { q: "Mobile checkout should be:", o: ["Identical to desktop checkout", "Streamlined, possibly single-page, with large touch targets", "Removed - redirect to desktop site", "More complex with additional verification steps"], c: 1 }
 ];
 
 const task9Quiz = [
-    { q: "Design QA checks for:", o: ["Nothing", "Consistency, alignment, responsiveness", "Only color", "Only text"], c: 1 },
-    { q: "Cross-device testing:", o: ["Just Chrome", "Multiple devices and browsers", "Skip it", "Only iPhone"], c: 1 },
-    { q: "Pixel-perfect means:", o: ["Close enough", "Exact match to design specs", "Random", "Approximate"], c: 1 },
-    { q: "Alignment issues:", o: ["Acceptable", "Unprofessional - fix immediately", "Ignore", "Client won't notice"], c: 1 },
-    { q: "Color accuracy:", o: ["Not important", "Hex values must match exactly", "Any shade works", "Ignore"], c: 1 },
-    { q: "Font loading issues:", o: ["Ignore", "Use fallbacks and test", "Skip testing", "Client problem"], c: 1 },
-    { q: "Image quality check:", o: ["Any quality", "Sharp, properly sized, optimized", "Blurry is fine", "Skip images"], c: 1 },
-    { q: "Responsive breakpoint testing:", o: ["One size", "Test all major breakpoints", "Skip mobile", "Desktop only"], c: 1 },
-    { q: "Hover state testing:", o: ["Not needed", "Verify all interactive elements", "Skip it", "Only buttons"], c: 1 },
-    { q: "Final design approval:", o: ["Self-approve", "Client sign-off required", "Skip approval", "Just deliver"], c: 1 }
+    { q: "Design QA (Quality Assurance) means:", o: ["The client checks your work", "You systematically audit designs before and after development", "Quality is optional at Digital Heroes", "Automated testing only"], c: 1 },
+    { q: "When a developer implements your design with 24px spacing but your Figma shows 32px:", o: ["It's close enough, ship it", "You should flag it - being 'annoying about details' ensures quality", "Developers know best, trust their judgment", "Spacing doesn't matter to users"], c: 1 },
+    { q: "Cross-device testing should include:", o: ["Chrome on your laptop only", "Multiple browsers, devices, and screen sizes", "Just iPhone 14 Pro", "Testing only after launch"], c: 1 },
+    { q: "Design handoff to developers should include:", o: ["Just the Figma link", "Exported assets, animation specs, and Dev Mode access for hex codes", "A verbal description of the design", "Screenshots via email"], c: 1 },
+    { q: "Assets should be exported as:", o: ["Whatever format is easiest", "SVG for icons/vectors, PNG @2x for rasters", "PDF only", "JPEG at maximum compression"], c: 1 },
+    { q: "Hover states and animations should be:", o: ["Left for developers to decide", "Documented clearly in the Figma file", "Avoided to keep things simple", "Black in without client approval"], c: 1 },
+    { q: "Color accuracy during QA means:", o: ["General approximation is fine", "Hex values must match exactly between design and implementation", "Developers choose final colors", "Monitors all look different anyway"], c: 1 },
+    { q: "Responsive breakpoint testing should verify:", o: ["That nothing breaks at exactly 768px", "Design works correctly at all major breakpoints (desktop, tablet, mobile)", "Desktop only - mobile is developer responsibility", "Only the breakpoints the client specifically mentions"], c: 1 },
+    { q: "After development is complete, the designer's job:", o: ["Is done - move to next project", "Includes visual QA audit to ensure implementation matches design", "Is only to send final invoice", "Is to start redesigning"], c: 1 },
+    { q: "Font loading issues (FOUT/FOIT) on the live site should be:", o: ["Ignored - users won't notice", "Addressed with fallback fonts and proper loading strategies", "Fixed by removing custom fonts", "Blamed on the developer"], c: 1 }
 ];
 
 const task10Quiz = [
-    { q: "Figma is used for:", o: ["Coding", "Design and prototyping", "Data analysis", "Video editing"], c: 1 },
-    { q: "Design handoff includes:", o: ["Just PSD", "Specs, assets, style guide", "Nothing", "Only fonts"], c: 1 },
-    { q: "Component libraries:", o: ["Waste of time", "Speed up consistent design", "Too complex", "Ignore"], c: 1 },
-    { q: "Auto-layout in Figma:", o: ["Avoid", "Creates responsive designs", "Slows work", "Not useful"], c: 1 },
-    { q: "Design tokens:", o: ["Programming only", "Store design values for consistency", "Not for designers", "Ignore"], c: 1 },
-    { q: "Version control in design:", o: ["Not needed", "Track changes and collaborate", "Too complex", "Single version only"], c: 1 },
-    { q: "Exporting assets:", o: ["Any format", "Optimized formats for web", "Print formats", "Skip exporting"], c: 1 },
-    { q: "Design system benefits:", o: ["None", "Consistency and speed", "Complexity", "Slows design"], c: 1 },
-    { q: "Prototype testing:", o: ["Skip it", "Catch UX issues early", "Waste of time", "After launch only"], c: 1 },
-    { q: "Collaboration in Figma:", o: ["Work alone", "Real-time team collaboration", "Not possible", "Email files"], c: 1 }
+    { q: "A professional Figma file should have these pages:", o: ["Just 'Designs' is enough", "Thinking/Inspiration, Wireframes, Style Guide, Finals, Archive", "As many pages as possible", "One page with everything"], c: 1 },
+    { q: "You should never duplicate a button 50 times. Instead:", o: ["Copy-paste is fastest", "Create a Master Component and use Instances", "Draw each button individually", "Use rectangles with text"], c: 1 },
+    { q: "Why use Components and Variants in Figma?", o: ["They look impressive to clients", "Change the Master once, all Instances update automatically", "Figma requires them", "They make files smaller"], c: 1 },
+    { q: "The Style Guide page should contain:", o: ["Random design experiments", "Colors, typography, button states, spacing rules", "Client meeting notes", "Developer instructions"], c: 1 },
+    { q: "Auto-layout in Figma is used for:", o: ["Automatic drawing", "Creating responsive components that adapt to content", "Auto-generating designs", "Reducing file size"], c: 1 },
+    { q: "When presenting designs to clients, you should:", o: ["Just send a Figma link and wait", "Walk them through the decisions and rationale", "Let them explore randomly", "Only show the final version"], c: 1 },
+    { q: "Figma Dev Mode helps developers by:", o: ["Writing code for them", "Providing exact measurements, CSS values, and asset exports", "Removing the need for designers", "Automatically deploying to production"], c: 1 },
+    { q: "Version history in Figma should be used to:", o: ["Delete old versions immediately", "Track changes and restore previous states if needed", "Show off to clients", "Slow down the file"], c: 1 },
+    { q: "Plugin usage in Figma:", o: ["Should be avoided entirely", "Can speed up workflow (Unsplash for images, Content Reel for data)", "Violates Figma terms of service", "Makes files incompatible"], c: 1 },
+    { q: "Real-time collaboration in Figma means:", o: ["Only one person can edit at a time", "Multiple team members can work simultaneously on the same file", "Work must be done offline", "Changes sync once per day"], c: 1 }
 ];
 
 const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
