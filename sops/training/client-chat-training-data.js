@@ -126,31 +126,197 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 TASK 1: MINDSET - Speed Wins</h2>
+<h2>📚 TASK 1: CLIENT CHAT MINDSET - Speed Wins</h2>
 
 <div class="content-section">
-    <h3>⚡ The 60-Second Rule</h3>
-    <p>If you don't reply in 60 seconds, they leave the tab. They go to a competitor. Speed is the #1 factor in conversion.</p>
+    <h3>⚡ THE 60-SECOND RULE</h3>
+    <p>Live chat has ONE job: convert visitors into buyers BEFORE they leave the tab. You have approximately <strong>60 seconds</strong> to respond before they're gone forever.</p>
+    
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 20px; margin: 20px 0;">
+        <strong style="color: #EF4444;">⏱️ THE BRUTAL REALITY:</strong>
+        <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+            <tr style="background: rgba(239, 68, 68, 0.15);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response > 60 seconds</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">50% leave the tab → competitor website</td>
+            </tr>
+            <tr style="background: rgba(245, 158, 11, 0.15);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response > 3 minutes</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">80% are gone → sale lost forever</td>
+            </tr>
+            <tr style="background: rgba(16, 185, 129, 0.15);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response < 30 seconds</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3x higher conversion rate → money in the bank</td>
+            </tr>
+        </table>
+        <p style="margin-top: 15px;"><strong>Every second you delay = revenue walking out the door.</strong></p>
+    </div>
 </div>
 
 <div class="content-section">
-    <h3>🤖 Robot vs Human</h3>
-    <p>Don't sound like a bot. Use emojis (if appropriate). Say "Hi John" not "Dear Sir". Be real.</p>
+    <h3>🧠 PART 1: PSYCHOLOGY OF LIVE CHAT</h3>
+    
+    <h4>1.1 Why Customers Use Chat Instead of Email</h4>
+    <p>Understanding customer psychology helps you convert more:</p>
+    <ul>
+        <li><strong>Instant gratification:</strong> They want answers NOW, not in 24 hours</li>
+        <li><strong>Low commitment:</strong> Chat feels less "official" than calling</li>
+        <li><strong>Multitasking:</strong> They're browsing at work or watching TV</li>
+        <li><strong>Final decision:</strong> They're usually 80% ready to buy, just need one question answered</li>
+    </ul>
+    
+    <div class="highlight-box">
+        <strong>💡 Key Insight:</strong> Most chat visitors are NOT just "browsing." They're at the point of purchase and have ONE specific question blocking them. Answer that question quickly = instant sale.
+    </div>
+    
+    <h4>1.2 The Two Types of Chat Visitors</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #818CF8;">🛒 Hot Lead (Ready to Buy)</strong><br><br>
+                "Does this come in blue?"<br>
+                "What's the shipping time to Mumbai?"<br>
+                "Is this compatible with iPhone 14?"<br>
+                <em style="color: #A5B4FC;">→ Answer fast + suggest purchase = SALE</em>
+            </td>
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #F59E0B;">🤔 Warm Lead (Researching)</strong><br><br>
+                "Can you tell me about your warranty?"<br>
+                "How does this compare to [competitor]?"<br>
+                "What do most customers buy?"<br>
+                <em style="color: #FCD34D;">→ Educate + build trust = FUTURE sale</em>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🤖 PART 2: ROBOT VS HUMAN</h3>
+    
+    <h4>2.1 The Robot Problem</h4>
+    <p>Nothing kills a chat conversion faster than sounding like a bot:</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #EF4444;">❌ Robot Response</strong><br><br>
+                "Dear Valued Customer,<br>
+                Thank you for contacting us. Your inquiry has been received. We will respond shortly.<br>
+                Regards, Customer Service"<br><br>
+                <em style="color: #F87171;">Feels cold, impersonal, scripted</em>
+            </td>
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 50%;">
+                <strong style="color: #10B981;">✅ Human Response</strong><br><br>
+                "Hey! 👋<br>
+                Thanks for reaching out. I'm here to help! What can I do for you today?"<br><br>
+                <em style="color: #6EE7B7;">Feels warm, personal, genuine</em>
+            </td>
+        </tr>
+    </table>
+    
+    <h4>2.2 Quick Personalization Techniques</h4>
+    <ul>
+        <li><strong>Use their name:</strong> "Hi John!" not "Dear Sir"</li>
+        <li><strong>Match their energy:</strong> If they use emojis, you can too</li>
+        <li><strong>Acknowledge their specific question:</strong> "Great question about the blue version!"</li>
+        <li><strong>Be conversational:</strong> Write like you talk</li>
+        <li><strong>Show personality:</strong> A little humor goes a long way</li>
+    </ul>
+    
+    <h4>2.3 Emoji Guidelines</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Brand Type</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Emoji Usage</strong></td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Young/Casual (Fashion, Tech)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes! 👍 😊 🎉</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Professional (Law, Finance)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Minimal or none</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Luxury (Jewelry, Premium)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sparingly ✨</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🎯 PART 3: THE CONVERSION FRAMEWORK</h3>
+    
+    <h4>3.1 The CHAT Method</h4>
+    <div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); padding: 20px; border-radius: 10px;">
+        <p style="font-size: 1.1em;"><strong>C</strong> - Connect: Greet quickly and warmly</p>
+        <p style="font-size: 1.1em;"><strong>H</strong> - Help: Answer their specific question directly</p>
+        <p style="font-size: 1.1em;"><strong>A</strong> - Add Value: Give extra helpful info they didn't ask for</p>
+        <p style="font-size: 1.1em;"><strong>T</strong> - Transition: Guide them toward purchase</p>
+    </div>
+    
+    <h4>3.2 Example in Action</h4>
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Customer:</strong> "Does this laptop bag fit a 15-inch MacBook?"</p>
+        <p><strong>C - Connect:</strong> "Hi! Great question! 👋"</p>
+        <p><strong>H - Help:</strong> "Yes, our Executive Bag fits all 15-inch laptops perfectly, including the MacBook Pro."</p>
+        <p><strong>A - Add Value:</strong> "It also has a dedicated padded sleeve + a secret anti-theft pocket for valuables."</p>
+        <p><strong>T - Transition:</strong> "Would you like me to check stock in your preferred color? We have midnight blue in stock ready for same-day shipping! 🚀"</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚡ PART 4: SPEED OPTIMIZATION</h3>
+    
+    <h4>4.1 Pre-Written Responses (Canned Responses)</h4>
+    <p>The fastest agents have 50+ canned responses ready. These aren't robotic copy-paste—they're starting points you personalize.</p>
+    
+    <div class="highlight-box">
+        <strong>Essential Canned Responses to Prepare:</strong>
+        <ul>
+            <li>Greeting (different variations)</li>
+            <li>All pricing tiers</li>
+            <li>Shipping times + costs</li>
+            <li>Return policy summary</li>
+            <li>Common product FAQs</li>
+            <li>Payment methods accepted</li>
+            <li>Warranty information</li>
+            <li>Closing + thank you messages</li>
+        </ul>
+    </div>
+    
+    <h4>4.2 Typing Speed Target</h4>
+    <p>Professional chat agents type <strong>60+ WPM</strong> (words per minute). Test yourself at typingtest.com and practice daily if below target.</p>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Speed Test</h3>
+    <h3>✅ IMPLEMENTATION TASKS</h3>
+    
     <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #F87171; margin-top: 0;">Exercise: Typing</h4>
-        <p>Type this sentence as fast as you can: "Hi there! Thanks for reaching out. I'd be happy to help you with that pricing question today."</p>
+        <h4 style="color: #F87171; margin-top: 0;">Exercise 1: Speed Test</h4>
+        <p>Type this response as fast as you can:</p>
+        <p><em>"Hi there! Thanks for reaching out. I'd be happy to help you with that pricing question today. Our Pro plan is $99/month and includes unlimited users!"</em></p>
+        <p><strong>Target: Complete in under 20 seconds</strong></p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise 2: Robot to Human</h4>
+        <p>Rewrite this robot response as a human:</p>
+        <p><em>"Dear Customer, Your query has been received. The estimated delivery time is 5-7 business days. Regards, Support Team."</em></p>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #F87171; margin-top: 0;">Exercise 3: CHAT Method Practice</h4>
+        <p>Customer asks: "Do you have any discounts for first-time buyers?"</p>
+        <p>Write a response using the CHAT method (Connect, Help, Add Value, Transition).</p>
     </div>
 </div>
 
 <div class="content-section">
     <h3>🚀 Ready for the Quiz?</h3>
     <ul>
-        <li>📝 10 questions about Mindset</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+        <li>📝 <strong>15 challenging questions</strong> testing your understanding of Chat Mindset</li>
+        <li>🎯 Score <strong>15/15</strong> to proceed to Task 2</li>
+        <li>⏱️ Questions cover speed, personalization, and conversion techniques</li>
     </ul>
 </div>
 `;
