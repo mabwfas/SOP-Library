@@ -100,29 +100,210 @@ const task2Content = `
 `;
 
 // Additional tasks would follow same pattern...
-const task3Content = `<h2>📚 TASK 3: CULTURAL FIT ASSESSMENT</h2>
-<div class="content-section"><h3>🎯 STAR Method</h3><p><strong>S</strong>ituation - <strong>T</strong>ask - <strong>A</strong>ction - <strong>R</strong>esult</p></div>`;
+const task3Content = `
+<h2>📚 TASK 3: CULTURAL FIT ASSESSMENT</h2>
 
-const task4Content = `<h2>📚 TASK 4: ONBOARDING EXCELLENCE</h2>
-<div class="content-section"><h3>📋 Day 1 Checklist</h3><ul><li>System access setup</li><li>Team introductions</li><li>First task assignment</li></ul></div>`;
+<div class="content-section">
+    <h3>🎯 The STAR Method Deep Dive</h3>
+    <p>STAR is the gold standard for behavioral interviews because past behavior predicts future behavior.</p>
+    
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Component</th>
+            <th style="padding: 12px;">What to Ask</th>
+            <th style="padding: 12px;">What to Listen For</th>
+        </tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>S</strong>ituation</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Describe the context"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clarity, relevance, honesty</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>T</strong>ask</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What was YOUR responsibility?"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ownership vs "we did"</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>A</strong>ction</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What exactly did YOU do?"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Specific steps, initiative</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>R</strong>esult</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What was the outcome?"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Measurable impact, learning</td></tr>
+    </table>
+</div>
 
-const task5Content = `<h2>📚 TASK 5: PERFORMANCE MANAGEMENT</h2>
-<div class="content-section"><h3>📊 1:1 Meeting Template</h3><ul><li>What went well?</li><li>What challenges?</li><li>What support needed?</li></ul></div>`;
+<div class="content-section">
+    <h3>🚩 Red Flags to Watch</h3>
+    <ul>
+        <li>❌ Always blaming previous employers/colleagues</li>
+        <li>❌ Vague answers without specific examples</li>
+        <li>❌ Using "we" when asked about personal contribution</li>
+        <li>❌ Badmouthing clients or industry</li>
+        <li>❌ Cannot name something they learned from failure</li>
+    </ul>
+    <div class="highlight-box">
+        <strong>Golden Question:</strong> "Tell me about a time you made a significant mistake at work. What happened and what did you learn?" 
+        <br><br>A great candidate owns the mistake fully and shows growth. A red flag deflects blame.
+    </div>
+</div>
+`;
 
-const task6Content = `<h2>📚 TASK 6: COMPENSATION</h2>
-<div class="content-section"><h3>💰 Pay Band Structure</h3><p>Transparent salary ranges by role and experience level.</p></div>`;
+const task4Content = `
+<h2>📚 TASK 4: ONBOARDING EXCELLENCE</h2>
 
-const task7Content = `<h2>📚 TASK 7: LEGAL COMPLIANCE</h2>
-<div class="content-section"><h3>📜 Required Documents</h3><ul><li>Offer Letter</li><li>Employment Contract</li><li>NDA</li><li>Policy Acknowledgments</li></ul></div>`;
+<div class="content-section">
+    <h3>📋 Day 1 Complete Checklist</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.2);"><th style="padding: 12px;">Before They Arrive</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ System accounts created (Slack, Email, Tools)</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ First task identified and documented</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ Buddy/mentor assigned and informed</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ Welcome message prepared</td></tr>
+        <tr style="background: rgba(99, 102, 241, 0.2);"><th style="padding: 12px;">First Hour</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ Welcome call (camera on)</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ Tool access verification</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ Company overview (values, mission)</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ Assign first meaningful task</td></tr>
+    </table>
+</div>
 
-const task8Content = `<h2>📚 TASK 8: EMPLOYEE RELATIONS</h2>
-<div class="content-section"><h3>🤝 Conflict Resolution Steps</h3><ol><li>Listen to both sides</li><li>Document facts</li><li>Propose solutions</li><li>Follow up</li></ol></div>`;
+<div class="content-section">
+    <h3>🎯 30-60-90 Day Plan</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.15);"><td style="padding: 15px;"><strong>Days 1-30: LEARN</strong><br>Understand the role, tools, team, and culture. Complete all training modules. Observe workflows.</td></tr>
+        <tr style="background: rgba(99, 102, 241, 0.15);"><td style="padding: 15px;"><strong>Days 31-60: CONTRIBUTE</strong><br>Start handling real work independently. Apply training knowledge. Ask fewer questions.</td></tr>
+        <tr style="background: rgba(139, 92, 246, 0.15);"><td style="padding: 15px;"><strong>Days 61-90: IMPACT</strong><br>Fully independent. Suggest improvements. Train others. Hit performance targets.</td></tr>
+    </table>
+</div>
+`;
 
-const task9Content = `<h2>📚 TASK 9: EXIT MANAGEMENT</h2>
-<div class="content-section"><h3>📋 Exit Checklist</h3><ul><li>Knowledge transfer</li><li>Asset return</li><li>Access revocation</li><li>Exit interview</li><li>Final settlement</li></ul></div>`;
+const task5Content = `
+<h2>📚 TASK 5: PERFORMANCE MANAGEMENT</h2>
 
-const task10Content = `<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
-<div class="content-section"><h3>🎓 Exam Requirements</h3><ul><li>Pass 20/20 quiz questions</li><li>Submit 30-min video walkthrough</li></ul></div>`;
+<div class="content-section">
+    <h3>📊 Weekly 1:1 Meeting Template</h3>
+    <div class="highlight-box">
+        <strong>15-30 minutes, every week, non-negotiable.</strong>
+        <ol>
+            <li><strong>Wins</strong> (3 min): "What went well this week?"</li>
+            <li><strong>Challenges</strong> (5 min): "What's blocking you?"</li>
+            <li><strong>Support</strong> (5 min): "What do you need from me?"</li>
+            <li><strong>Goals</strong> (3 min): "What's your focus next week?"</li>
+            <li><strong>Personal</strong> (2 min): "How are you doing overall?"</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💬 Difficult Conversation Script</h3>
+    <div class="warning-box">
+        <strong>When addressing performance issues:</strong>
+        <ul>
+            <li>State the specific behavior: "I noticed [specific action]"</li>
+            <li>Explain the impact: "This affects [team/client/project] because..."</li>
+            <li>Ask for their perspective: "Help me understand what happened"</li>
+            <li>Agree on solution: "What can we do differently going forward?"</li>
+            <li>Document everything: Send summary email after conversation</li>
+        </ul>
+    </div>
+</div>
+`;
+
+const task6Content = `
+<h2>📚 TASK 6: COMPENSATION</h2>
+
+<div class="content-section">
+    <h3>💰 Pay Band Structure</h3>
+    <p>Transparent salary ranges prevent awkward negotiations and ensure fairness:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);"><th style="padding: 12px;">Level</th><th style="padding: 12px;">Experience</th><th style="padding: 12px;">Range</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Entry</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">0-1 years</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹15K - ₹25K/month</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mid</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-3 years</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹25K - ₹45K/month</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Senior</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3+ years</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹45K - ₹75K/month</td></tr>
+    </table>
+    <div class="highlight-box"><strong>Rule:</strong> Salary reviews happen every 6 months based on performance, not just tenure.</div>
+</div>
+`;
+
+const task7Content = `
+<h2>📚 TASK 7: LEGAL COMPLIANCE</h2>
+
+<div class="content-section">
+    <h3>📜 Required Documents Checklist</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);"><th style="padding: 12px;">Document</th><th style="padding: 12px;">When</th><th style="padding: 12px;">Status</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offer Letter</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Before joining</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Required</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Employment Contract</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Day 1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Required</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">NDA (Non-Disclosure Agreement)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Day 1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Required</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Policy Acknowledgment</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week 1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Required</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ID Proof Copy</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week 1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Required</td></tr>
+    </table>
+</div>
+`;
+
+const task8Content = `
+<h2>📚 TASK 8: EMPLOYEE RELATIONS</h2>
+
+<div class="content-section">
+    <h3>🤝 Conflict Resolution Steps</h3>
+    <ol>
+        <li><strong>Listen to both sides</strong> - Separately, without judgment</li>
+        <li><strong>Document facts</strong> - What happened, when, who was involved</li>
+        <li><strong>Identify the root cause</strong> - Is this about work or personal friction?</li>
+        <li><strong>Propose solutions</strong> - Mediate a resolution together</li>
+        <li><strong>Follow up</strong> - Check back in 1 week to ensure resolution holds</li>
+    </ol>
+    <div class="warning-box">
+        <strong>Written Warning Process:</strong> If behavior doesn't improve, document with:<br>
+        1. Date and specific behavior<br>
+        2. Previous verbal warning reference<br>
+        3. Expected improvement<br>
+        4. Consequences if unchanged<br>
+        5. Employee signature acknowledgment
+    </div>
+</div>
+`;
+
+const task9Content = `
+<h2>📚 TASK 9: EXIT MANAGEMENT</h2>
+
+<div class="content-section">
+    <h3>📋 Exit Checklist</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.15);"><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ <strong>Knowledge transfer</strong> - Document all ongoing work</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ <strong>Asset return</strong> - Laptop, equipment, access cards</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ <strong>Access revocation</strong> - All systems within 24 hours of last day</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ <strong>Exit interview</strong> - Why leaving? Feedback on company?</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ <strong>Final settlement</strong> - Dues, PF, gratuity within 7 days</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">☐ <strong>Experience letter</strong> - Provide within 2 weeks</td></tr>
+    </table>
+    <div class="highlight-box">
+        <strong>Exit Interview Goal:</strong> Gather insights to improve retention. Ask: "What could we have done to keep you?"
+    </div>
+</div>
+`;
+
+const task10Content = `
+<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
+
+<div class="content-section">
+    <h3>🎓 Certification Requirements</h3>
+    <ul>
+        <li>✅ Score 20/20 on comprehensive quiz</li>
+        <li>✅ Submit 30-min video walkthrough covering:
+            <ul>
+                <li>Conducting a phone screen (roleplay)</li>
+                <li>Running a 1:1 meeting (roleplay)</li>
+                <li>Handling a conflict scenario</li>
+            </ul>
+        </li>
+        <li>✅ Complete sample onboarding checklist</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🏆 What You've Mastered</h3>
+    <ul>
+        <li>💰 HR Mindset: People = Revenue</li>
+        <li>📞 Tech-Savvy Hiring: Phone screen scripts</li>
+        <li>🎯 Cultural Fit: STAR method mastery</li>
+        <li>📋 Onboarding: 30-60-90 day framework</li>
+        <li>📊 Performance: 1:1 meeting excellence</li>
+        <li>💼 Compensation: Pay bands and reviews</li>
+        <li>⚖️ Legal: Required documents</li>
+        <li>🤝 Employee Relations: Conflict resolution</li>
+        <li>🚪 Exit Management: Complete offboarding</li>
+    </ul>
+</div>
+`;
 
 const quizQuestions = [
     { question: "A bad hire typically costs the company:", options: ["Half their monthly salary", "Same as their annual salary", "3x their salary or more in total impact", "Just the recruitment agency fee"], correct: 2 },
