@@ -587,64 +587,113 @@ const task10Content = `
 `;
 
 const quizQuestions = [
-    // Task 1
+    // Task 1 - Speed & Mindset
     {
-        question: "Ideal response time?",
-        options: ["24 hours", "60 seconds", "1 week", "Never"],
+        question: "A customer has been waiting 45 seconds for your response. According to the 60-second rule, what is the PRIMARY risk?",
+        options: ["They might send a follow-up message", "They're likely switching to a competitor tab right now", "They will appreciate your thorough response", "They're probably still reading your product page"],
         correct: 1
     },
-    // Task 2
     {
-        question: " Refund Policy is?",
-        options: ["No refunds", "30 Days", "Lifetime", "7 Days"],
-        correct: 1
-    },
-    // Task 3
-    {
-        question: "Tone should be...",
-        options: ["Robotic", "Angry", "Mirrored to customer", "Sarcastic"],
+        question: "Customer asks 'Does this come in red?' - they're most likely a:",
+        options: ["Cold lead just browsing for fun", "Warm lead who needs more education", "Hot lead ready to buy if you answer quickly", "Someone looking to waste your time"],
         correct: 2
     },
-    // Task 4
     {
-        question: "Handling 'Too Expensive'?",
-        options: ["Agree and discount", "Hang up", "Highlight Value / ROI", "Ignore"],
+        question: "Your response says 'Dear Valued Customer, Your inquiry has been received.' What's wrong?",
+        options: ["Nothing, this is professional", "It's too short", "It sounds robotic and impersonal - kills conversion", "It doesn't include your name"],
         correct: 2
     },
-    // Task 5
     {
-        question: "Best tool for speed?",
-        options: ["Typing fast", "Saved Replies / Macros", "Drinking coffee", "Dictation"],
-        correct: 1
-    },
-    // Task 6
-    {
-        question: "Alternative Close example?",
-        options: ["Do you want it?", "Yes or No?", "Tuesday or Wednesday?", "Bye"],
+        question: "The CHAT method's 'A' stands for:",
+        options: ["Ask questions", "Apologize always", "Add Value beyond their question", "Address concerns"],
         correct: 2
     },
-    // Task 7
     {
-        question: "Why Tag tickets?",
-        options: ["For fun", "Data analysis & Routing", "To annoy devs", "To look busy"],
+        question: "Response time under 30 seconds typically results in:",
+        options: ["Customer annoyance at being rushed", "3x higher conversion rate", "Lower quality responses", "No significant difference"],
         correct: 1
     },
-    // Task 8
+    // Task 2 - Company Knowledge
     {
-        question: "First step with angry customer?",
-        options: ["Argue", "Empathize / Listen", "Disconnect", "Laugh"],
+        question: "Customer asks 'What's your shipping time?' You don't know. Best response?",
+        options: ["'I don't know'", "'Let me check our policy page and get right back to you - one moment!'", "Ignore and change subject", "'Usually pretty fast'"],
         correct: 1
     },
-    // Task 9
     {
-        question: "Goal of Role Play?",
-        options: ["Have fun", "Practice scenarios safely", "Waste time", "Sleep"],
+        question: "When should you look up pricing during a chat?",
+        options: ["Every time - always verify", "Never - you should have it memorized", "Only for complex products", "Only when the customer seems suspicious"],
         correct: 1
     },
-    // Task 10
+    // Task 3 - Tonality
     {
-        question: "CSAT stands for",
-        options: ["Customer Satellites", "Customer Satisfaction", "Cool Saturation", "Chat Saturation"],
+        question: "Customer writes 'hey! super excited about this product 🎉' - your response should:",
+        options: ["Remain formal: 'Dear Customer, thank you for your interest'", "Match their energy with warmth and an appropriate emoji", "Be completely neutral with no personality", "Tell them to calm down"],
+        correct: 1
+    },
+    {
+        question: "For a luxury jewelry brand, emoji usage should be:",
+        options: ["Heavy use to seem friendly", "Sparingly or elegant ones like ✨ only", "Never use any", "Use the same as casual brands"],
+        correct: 1
+    },
+    // Task 4 - Objection Handling
+    {
+        question: "Customer says 'This is way too expensive.' Best approach?",
+        options: ["Immediately offer a discount", "Agree with them that it's pricey", "Highlight value and ROI - what they GET for that price", "Tell them to buy a cheaper competitor product"],
+        correct: 2
+    },
+    {
+        question: "Customer says 'I need to think about it.' This usually means:",
+        options: ["They're definitely not buying", "They have an unaddressed concern - ask what's holding them back", "You should end the chat immediately", "They want you to pressure them more"],
+        correct: 1
+    },
+    // Task 5 - Tools & Speed
+    {
+        question: "What's the most effective way to improve response speed?",
+        options: ["Type faster", "Use pre-written canned responses as templates", "Skip greetings entirely", "Keep responses to just 2 words"],
+        correct: 1
+    },
+    {
+        question: "Professional chat agents should type at minimum:",
+        options: ["20 WPM", "40 WPM", "60 WPM", "100 WPM"],
+        correct: 2
+    },
+    // Task 6 - Closing Techniques
+    {
+        question: "'Would you prefer the blue or the black one?' is an example of:",
+        options: ["Open-ended question", "Alternative close (assumes the sale)", "Pressure tactic to avoid", "Poor sales technique"],
+        correct: 1
+    },
+    // Task 7 - Ticket Hygiene
+    {
+        question: "Why is proper ticket tagging critical?",
+        options: ["To impress your manager", "For data analysis, routing, and identifying common issues", "It's not - it's busywork", "Only for billing purposes"],
+        correct: 1
+    },
+    // Task 8 - Firefighting
+    {
+        question: "Customer is typing in ALL CAPS saying 'YOU CHARGED ME TWICE!!!'. First step?",
+        options: ["Explain it wasn't your fault", "Empathize and let them vent before offering solution", "Disconnect the chat immediately", "Ask them to calm down before you'll help"],
+        correct: 1
+    },
+    {
+        question: "After resolving an angry customer's issue, what extra step creates loyalty?",
+        options: ["Nothing extra needed - just close the chat", "Offer a small bonus/discount as goodwill gesture", "Tell them not to make the mistake again", "Transfer to your manager for an apology"],
+        correct: 1
+    },
+    // Task 9 & 10 - Advanced
+    {
+        question: "A customer says 'Your competitor has 24-hour support.' Best response?",
+        options: ["'Go to them then'", "Acknowledge and pivot to YOUR unique value", "'We're cheaper though'", "Ignore and change subject"],
+        correct: 1
+    },
+    {
+        question: "CSAT scores measure:",
+        options: ["Chat Speed And Timing", "Customer Satisfaction rating", "Chat Sentiment Analysis Tracking", "Customer Service Action Time"],
+        correct: 1
+    },
+    {
+        question: "The goal of chat role-play training is to:",
+        options: ["Embarrass new agents", "Practice handling difficult scenarios in a safe environment", "Waste time between real chats", "Test who's the fastest typer"],
         correct: 1
     }
 ];
