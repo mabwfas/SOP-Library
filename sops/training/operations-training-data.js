@@ -150,7 +150,7 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 TASK 1: MINDSET - The Machine</h2>
+<h2>📚 TASK 1: OPERATIONS MINDSET - The Machine</h2>
 
 <div class="content-section">
     <h3>⚙️ You are an Operator</h3>
@@ -712,3 +712,4 @@ const task10Quiz = [
 ];
 
 const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+
