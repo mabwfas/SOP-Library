@@ -152,29 +152,199 @@ const trainingTasks = [
 const task1Content = `
 <h2>📚 TASK 1: OPERATIONS MINDSET - The Machine</h2>
 
-<div class="content-section">
-    <h3>⚙️ You are an Operator</h3>
-    <p>Creatives make chaos. Operators make order. Your job is to build the tracks so the train can run at 300mph.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+    <h3 style="color: #EF4444; margin-top: 0;">🔥 THE OPERATOR'S MISSION</h3>
+    <p style="font-size: 1.3em; font-weight: bold; text-align: center; margin: 20px 0;">
+        "Creatives make chaos. <span style="color: #10B981;">Operators make order.</span><br>
+        Your job is to build the tracks so the train can run at 300mph."
+    </p>
+    <p>Every minute you spend on a repeatable task is a minute stolen from growth. An operator's job is to <strong>eliminate friction</strong> from every process, making the impossible feel effortless.</p>
 </div>
 
 <div class="content-section">
-    <h3>📝 Write it Down</h3>
-    <p>If you solve a problem once, you solve it. If you solve it twice, write a process. Never solve the same problem 3 times.</p>
+    <h3>📊 The Operator vs. The Firefighter</h3>
+    <p>Most people confuse being busy with being productive. Here's the difference:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.95em;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Trait</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">🔥 Firefighter (Bad)</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">⚙️ Operator (Good)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Approach</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Reacts to problems</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Prevents problems</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Documentation</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">"It's in my head"</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Everything is written</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Repeating Tasks</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Does it 100 times</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Automates after 2nd time</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">When Absent</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Everything breaks</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Everything runs smoothly</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Feeling</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">"I'm so busy!"</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">"I'm building leverage"</td></tr>
+            <tr><td style="padding: 10px;">Outcome</td><td style="padding: 10px;">Burnout</td><td style="padding: 10px;">Scale</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1)); border-left: 4px solid #10B981; padding: 20px; border-radius: 8px;">
+    <h3 style="color: #10B981;">📝 THE RULE OF THREE</h3>
+    <p style="font-size: 1.1em; font-weight: bold;">If you solve a problem once, you solve it.<br>If you solve it twice, write a process.<br><span style="color: #EF4444;">Never solve the same problem 3 times.</span></p>
+    <ul>
+        <li><strong>1st time:</strong> Just fix it (you're learning)</li>
+        <li><strong>2nd time:</strong> Write down how you fixed it (SOP draft)</li>
+        <li><strong>3rd time:</strong> This should NEVER happen. Either automate it, delegate it, or eliminate the root cause.</li>
+    </ul>
+    <p><strong>Real Example:</strong> A client asks for their invoice. You email it manually (1st time). Same client asks next month (2nd time). You write an SOP: "Invoices auto-email on the 1st of each month via Zapier." Now it never happens again.</p>
+</div>
+
+<div class="content-section">
+    <h3>🎯 THE ADE FRAMEWORK</h3>
+    <p>Every task that crosses your desk should go through this filter:</p>
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(99, 102, 241, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #6366F1;">
+            <h4 style="color: #818CF8; margin-top: 0;">🤖 A = AUTOMATE</h4>
+            <p><strong>Question:</strong> Can a machine do this?</p>
+            <p><strong>Tools:</strong> Zapier, Make.com, Google Apps Script, ChatGPT, Cron jobs</p>
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>Auto-send welcome emails when a new client signs up</li>
+                <li>Auto-create Google Drive folders for new projects</li>
+                <li>Auto-post social media content at scheduled times</li>
+                <li>Auto-generate reports every Monday morning</li>
+            </ul>
+        </div>
+        <div style="background: rgba(245, 158, 11, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #F59E0B;">
+            <h4 style="color: #FBBF24; margin-top: 0;">👥 D = DELEGATE</h4>
+            <p><strong>Question:</strong> Can someone else do this (80% as well)?</p>
+            <p><strong>To Whom:</strong> VA, Intern, Junior team member, Freelancer</p>
+            <p><strong>Key Insight:</strong> 80% done by someone else is better than 100% done by you. Your time is worth more.</p>
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>Data entry → VA</li>
+                <li>Basic design edits → Junior designer</li>
+                <li>Customer follow-ups → Support team</li>
+                <li>Research → Intern</li>
+            </ul>
+        </div>
+        <div style="background: rgba(239, 68, 68, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #EF4444;">
+            <h4 style="color: #F87171; margin-top: 0;">🗑️ E = ELIMINATE</h4>
+            <p><strong>Question:</strong> Does this even need to be done?</p>
+            <p><strong>Key Insight:</strong> The most productive thing is often saying NO.</p>
+            <p><strong>Examples of things to eliminate:</strong></p>
+            <ul>
+                <li>Weekly reports nobody reads → Just stop</li>
+                <li>Meetings without agendas → Decline or cancel</li>
+                <li>Approval steps that add no value → Remove</li>
+                <li>Manual logging that could be automatic → Automate or skip</li>
+            </ul>
+        </div>
+    </div>
+    <p style="background: rgba(139, 92, 246, 0.2); padding: 15px; border-radius: 8px; text-align: center; font-weight: bold;">
+        🎯 ADE Priority: Always try to <span style="color: #EF4444;">Eliminate</span> first, then <span style="color: #6366F1;">Automate</span>, then <span style="color: #F59E0B;">Delegate</span>. Only do it yourself as a last resort.
+    </p>
+</div>
+
+<div class="content-section">
+    <h3>📚 THE PROCESS STACK</h3>
+    <p>Think of your operations as a 4-layer stack. The higher you go, the more leverage you create:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.95em;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Level</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Type</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Description</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Time Saved</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background: rgba(239, 68, 68, 0.1);"><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Level 1</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Chaos</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">You do everything manually, every time</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">0%</td></tr>
+            <tr style="background: rgba(245, 158, 11, 0.1);"><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Level 2</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Checklist</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Written step-by-step instructions</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">30%</td></tr>
+            <tr style="background: rgba(16, 185, 129, 0.1);"><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Level 3</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Template</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pre-filled documents (just modify)</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">60%</td></tr>
+            <tr style="background: rgba(99, 102, 241, 0.1);"><td style="padding: 10px;">Level 4</td><td style="padding: 10px;">Automation</td><td style="padding: 10px;">Runs without you (Zapier, scripts)</td><td style="padding: 10px;">95%</td></tr>
+        </tbody>
+    </table>
+    <p><strong>Your Goal:</strong> Move every recurring task UP the stack. Start with Level 2 (write it down), then evolve to Levels 3 and 4.</p>
+</div>
+
+<div class="content-section">
+    <h3>💡 THE 5 OPERATOR MANTRAS</h3>
+    <ol>
+        <li><strong>"If it's not written, it doesn't exist."</strong> — Document everything. Your brain is for thinking, not remembering.</li>
+        <li><strong>"Systems beat willpower."</strong> — Don't rely on discipline. Build systems that make the right action automatic.</li>
+        <li><strong>"The best process is the one that runs without you."</strong> — If you're essential to a process, you've failed as an operator.</li>
+        <li><strong>"Friction is the enemy."</strong> — Every extra click, email, or approval slows things down. Hunt friction and kill it.</li>
+        <li><strong>"Perfect is the enemy of shipped."</strong> — An 80% process today beats a 100% process next month.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>🔍 FRICTION EXAMPLES: Before vs. After</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.9em;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(239, 68, 68, 0.5);">Task</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(239, 68, 68, 0.5);">🔥 Before (Friction)</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(16, 185, 129, 0.5);">✅ After (Operator)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Client Onboarding</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Manually send 10 emails, create folder, add to CRM</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">One form triggers Zapier to do all 10 steps</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Weekly Report</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pull data from 5 tools, format in spreadsheet (2 hrs)</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Google Looker Studio auto-pulls live data</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Invoice Follow-up</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Manually check who hasn't paid, send reminder</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Freshbooks auto-sends 3 reminders before flagging you</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Meeting Notes</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Type notes during call, email to everyone after</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Otter.ai transcribes, sends auto-summary to Slack</td></tr>
+            <tr><td style="padding: 10px;">Password Sharing</td><td style="padding: 10px;">Copy-paste in Slack (security risk!)</td><td style="padding: 10px;">Share via 1Password vault link</td></tr>
+        </tbody>
+    </table>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: The Audit</h3>
+    <h3>✅ IMPLEMENTATION TASK 1: The Friction Audit</h3>
     <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
         <h4 style="color: #818CF8; margin-top: 0;">Exercise: Friction Hunt</h4>
-        <p>Identify 3 things you did this week that annoyed you or took too long. How can they be automated?</p>
+        <p>This week, keep a "Friction Log". Note every task that:</p>
+        <ul>
+            <li>Annoyed you</li>
+            <li>Took longer than it should</li>
+            <li>Required you to switch between 3+ tools</li>
+            <li>Made you think "I've done this before"</li>
+        </ul>
+        <p><strong>Deliverable:</strong> Identify your top 3 friction points and propose an ADE solution for each.</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1)); border: 2px solid rgba(245, 158, 11, 0.3); padding: 25px; border-radius: 12px; margin-top: 15px;">
+    <h3>✅ IMPLEMENTATION TASK 2: The Process Stack Assessment</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #FBBF24; margin-top: 0;">Exercise: Stack Your Processes</h4>
+        <p>List 5 recurring tasks you do weekly and rate each on the Process Stack (Level 1-4):</p>
+        <ol>
+            <li>Task: _____________ | Current Level: ___</li>
+            <li>Task: _____________ | Current Level: ___</li>
+            <li>Task: _____________ | Current Level: ___</li>
+            <li>Task: _____________ | Current Level: ___</li>
+            <li>Task: _____________ | Current Level: ___</li>
+        </ol>
+        <p><strong>Goal:</strong> Move at least 2 tasks up one level this month.</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px; margin-top: 15px;">
+    <h3>✅ IMPLEMENTATION TASK 3: The "Clone Yourself" Test</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #10B981; margin-top: 0;">Exercise: The Vacation Test</h4>
+        <p>Imagine you're going on vacation for 2 weeks with NO phone. Answer these questions:</p>
+        <ul>
+            <li>What would break while you're gone?</li>
+            <li>What do only YOU know how to do?</li>
+            <li>Who would people call instead of you?</li>
+        </ul>
+        <p><strong>Goal:</strong> Every "break point" needs an SOP or backup person BEFORE you actually go on vacation.</p>
     </div>
 </div>
 
 <div class="content-section">
     <h3>🚀 Ready for the Quiz?</h3>
     <ul>
-        <li>📝 10 questions about Mindset</li>
+        <li>📝 10 questions about the Operator Mindset</li>
         <li>🎯 Score <strong>10/10</strong> to proceed</li>
+        <li>💡 Topics: Rule of Three, ADE Framework, Process Stack, Friction identification</li>
     </ul>
 </div>
 `;
