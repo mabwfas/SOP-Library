@@ -26,7 +26,8 @@
     }
 
     /**
-     * Patch selectAnswer to show immediate feedback with explanation
+     * Patch selectAnswer to record answer silently (no immediate feedback)
+     * Score is shown only at the end with 10/10 requirement to proceed
      */
     function patchSelectAnswer() {
         const originalSelectAnswer = window.selectAnswer;
@@ -36,97 +37,20 @@
         }
 
         window.selectAnswer = function (index) {
-            // Get current question from DOM (more reliable)
-            const headerText = document.querySelector('.quiz-header h3');
-            let currentQuestionIndex = 0;
-            if (headerText) {
-                const match = headerText.textContent.match(/Question (\d+) of/);
-                if (match) currentQuestionIndex = parseInt(match[1]) - 1;
-            }
-
-            // Get quiz data
-            const quiz = window.currentQuiz;
-            if (!quiz || !quiz[currentQuestionIndex]) {
-                return originalSelectAnswer.call(this, index);
-            }
-
-            const q = quiz[currentQuestionIndex];
-            const options = window.currentOptions;
-            if (!options || !options[index]) {
-                return originalSelectAnswer.call(this, index);
-            }
-
-            const selectedOriginalIndex = options[index].originalIndex;
-            const isCorrect = selectedOriginalIndex === q.c;
-
-            // Style all buttons
+            // Just mark the selected option visually (no correct/incorrect indication)
             const buttons = document.querySelectorAll('.option-btn');
-            buttons.forEach((btn, i) => {
-                btn.classList.remove('selected', 'correct', 'incorrect');
-                btn.disabled = true;
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            buttons[index].classList.add('selected');
 
-                // Show correct answer
-                if (options[i] && options[i].originalIndex === q.c) {
-                    btn.classList.add('correct');
-                }
-
-                // Mark selected as incorrect if wrong
-                if (i === index && !isCorrect) {
-                    btn.classList.add('incorrect');
-                }
-            });
-
-            // Show feedback
-            showAnswerFeedback(isCorrect, q.e || getDefaultExplanation(q, isCorrect));
-
-            // Call original to store answer
+            // Call original to store answer and enable next button
             originalSelectAnswer.call(this, index);
         };
     }
 
-    /**
-     * Show feedback popup after answer selection
-     */
-    function showAnswerFeedback(isCorrect, explanation) {
-        // Remove existing feedback
-        const existing = document.querySelector('.answer-feedback');
-        if (existing) existing.remove();
 
-        const feedback = document.createElement('div');
-        feedback.className = `answer-feedback ${isCorrect ? 'correct' : 'incorrect'}`;
-        feedback.innerHTML = `
-            <div class="feedback-icon">${isCorrect ? '✅' : '❌'}</div>
-            <div class="feedback-text">
-                <strong>${isCorrect ? 'Correct!' : 'Incorrect'}</strong>
-                ${explanation ? `<p>${explanation}</p>` : ''}
-            </div>
-        `;
+    // Note: showAnswerFeedback and getDefaultExplanation removed
+    // Per-question feedback is disabled - total score shown only at end
 
-        const container = document.querySelector('.quiz-section') || document.querySelector('.question-container');
-        if (container) {
-            container.appendChild(feedback);
-
-            // Animate in
-            setTimeout(() => feedback.classList.add('visible'), 50);
-
-            // Auto-hide after 3 seconds for correct answers
-            if (isCorrect) {
-                setTimeout(() => feedback.classList.remove('visible'), 3000);
-            }
-        }
-    }
-
-    /**
-     * Generate default explanation if none provided
-     */
-    function getDefaultExplanation(question, isCorrect) {
-        if (isCorrect) {
-            return "Great job! You got it right.";
-        }
-        // Show the correct answer
-        const correctOption = question.o[question.c];
-        return `The correct answer is: <strong>${correctOption}</strong>`;
-    }
 
     /**
      * Add quiz enhancement styles
