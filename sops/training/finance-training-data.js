@@ -909,37 +909,382 @@ const task4Content = `
 </div>
 `;
 
-const task5Content = `<h2>📚 TASK 5: PAYROLL BASICS</h2>
-<div class="content-section">
-    <h3>👥 Payroll Components</h3>
-    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: rgba(99, 102, 241, 0.2);">
-            <th style="padding: 12px;">Component</th>
-            <th style="padding: 12px;">Description</th>
-        </tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Basic Salary</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fixed monthly amount</td></tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">HRA</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">House Rent Allowance</td></tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deductions</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PF, TDS, etc.</td></tr>
-        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Net Pay</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Take-home amount</td></tr>
-    </table>
-</div>`;
+const task5Content = `
+<h2>📚 TASK 5: PAYROLL MASTERY</h2>
 
-const task6Content = `<h2>📚 TASK 6: TAX COMPLIANCE</h2>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(109, 40, 217, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+    <h3 style="color: #A78BFA; margin-top: 0;">💰 PAYROLL: THE TRUST CONTRACT</h3>
+    <p style="font-size: 1.2em; text-align: center; margin: 20px 0;">
+        "When you pay people on time, every time, you build <span style="color: #10B981;">unshakeable trust.</span>"
+    </p>
+    <p>Payroll isn't just about moving money—it's about keeping promises. Every employee has bills, EMIs, and families depending on that salary hitting their account on time. <strong>Zero tolerance for payroll delays.</strong></p>
+</div>
+
 <div class="content-section">
-    <h3>📑 GST Basics</h3>
+    <h3>📊 Indian Salary Structure Breakdown</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Component</th>
+                <th style="padding: 12px; text-align: left;">What It Is</th>
+                <th style="padding: 12px; text-align: left;">Typical %</th>
+                <th style="padding: 12px; text-align: left;">Tax Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Basic Salary</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Fixed core salary</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">40-50%</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Fully taxable</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>HRA</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">House Rent Allowance</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">20-30%</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Partially exempt (with rent receipts)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Special Allowance</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Flexible component</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">15-25%</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Fully taxable</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Conveyance</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Travel allowance</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Fixed ₹1,600/month</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Exempt up to limit</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>Medical Allowance</strong></td>
+                <td style="padding: 10px;">Health expenses</td>
+                <td style="padding: 10px;">Fixed ₹1,250/month</td>
+                <td style="padding: 10px;">Exempt with bills</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>➖ Deductions: What Gets Taken Out</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left;">Deduction</th>
+                <th style="padding: 12px; text-align: left;">Rate</th>
+                <th style="padding: 12px; text-align: left;">Who Pays</th>
+                <th style="padding: 12px; text-align: left;">Deposit Deadline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>EPF (Employee)</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">12% of Basic</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Employee</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">15th of next month</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>EPF (Employer)</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">12% of Basic</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Company</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">15th of next month</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>ESI (Employee)</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">0.75% (if salary < ₹21K)</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Employee</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">15th of next month</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>TDS</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">As per tax slab</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Employee</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">7th of next month</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>Professional Tax</strong></td>
+                <td style="padding: 10px;">₹200/month (varies by state)</td>
+                <td style="padding: 10px;">Employee</td>
+                <td style="padding: 10px;">Monthly/Quarterly</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🧮 Salary Calculation Example</h3>
+    <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Employee: ₹50,000 CTC</h4>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background: rgba(16, 185, 129, 0.2);">
+                <td style="padding: 8px;"><strong>Earnings</strong></td>
+                <td style="padding: 8px; text-align: right;"></td>
+            </tr>
+            <tr><td style="padding: 6px;">Basic Salary (40%)</td><td style="padding: 6px; text-align: right;">₹20,000</td></tr>
+            <tr><td style="padding: 6px;">HRA (50% of Basic)</td><td style="padding: 6px; text-align: right;">₹10,000</td></tr>
+            <tr><td style="padding: 6px;">Special Allowance</td><td style="padding: 6px; text-align: right;">₹14,200</td></tr>
+            <tr><td style="padding: 6px;">Conveyance</td><td style="padding: 6px; text-align: right;">₹1,600</td></tr>
+            <tr><td style="padding: 6px;">Medical</td><td style="padding: 6px; text-align: right;">₹1,250</td></tr>
+            <tr style="background: rgba(99, 102, 241, 0.2);"><td style="padding: 8px;"><strong>Gross Salary</strong></td><td style="padding: 8px; text-align: right;"><strong>₹47,050</strong></td></tr>
+            <tr style="background: rgba(239, 68, 68, 0.2);">
+                <td style="padding: 8px;"><strong>Deductions</strong></td>
+                <td style="padding: 8px; text-align: right;"></td>
+            </tr>
+            <tr><td style="padding: 6px;">EPF (Employee 12%)</td><td style="padding: 6px; text-align: right;">-₹2,400</td></tr>
+            <tr><td style="padding: 6px;">Professional Tax</td><td style="padding: 6px; text-align: right;">-₹200</td></tr>
+            <tr><td style="padding: 6px;">TDS (estimated)</td><td style="padding: 6px; text-align: right;">-₹2,000</td></tr>
+            <tr style="background: rgba(16, 185, 129, 0.3);"><td style="padding: 10px;"><strong style="font-size: 1.1em;">NET PAY (Take Home)</strong></td><td style="padding: 10px; text-align: right;"><strong style="font-size: 1.1em; color: #10B981;">₹42,450</strong></td></tr>
+        </table>
+        <p style="margin-top: 15px; color: #94A3B8; font-size: 0.9em;">Employer also pays ₹2,400 (EPF) + ₹600 (other contributions) = ₹3,000/month extra</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📅 The Payroll Calendar</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left;">Day</th>
+                <th style="padding: 12px; text-align: left;">Task</th>
+                <th style="padding: 12px; text-align: left;">Penalty if Missed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>1st-5th</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Collect attendance, leaves, overtime data</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Late salary = unhappy team</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>5th-7th</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Process payroll, verify calculations</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Errors cause compliance issues</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>7th</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Deposit TDS to government</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Interest + penalty</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Last working day</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Credit salaries to bank accounts</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Trust damage</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>15th of next month</strong></td>
+                <td style="padding: 10px;">Deposit EPF and ESI</td>
+                <td style="padding: 10px;">Heavy penalties + interest</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>✅ Payroll Processing Checklist</h3>
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 10px;">
+        <ol>
+            <li>☐ Verify attendance data from HR/team leads</li>
+            <li>☐ Calculate leaves taken vs leaves balance</li>
+            <li>☐ Check for any overtime/additional payments</li>
+            <li>☐ Verify new joinees added with correct details</li>
+            <li>☐ Check resigned employees' final settlement</li>
+            <li>☐ Run payroll calculation</li>
+            <li>☐ Cross-verify with previous month (flag >5% variance)</li>
+            <li>☐ Get approval from management</li>
+            <li>☐ Generate bank transfer file</li>
+            <li>☐ Generate payslips</li>
+            <li>☐ Distribute payslips to employees</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Mock Payroll</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Exercise: Calculate Net Pay</h4>
+        <p>Given: Employee with ₹75,000 CTC</p>
+        <ol>
+            <li>Calculate Basic (40%), HRA (50% of Basic), Special Allowance</li>
+            <li>Calculate EPF deduction (12% of Basic)</li>
+            <li>Estimate TDS if employee is in 20% tax bracket</li>
+            <li>What is the final net pay?</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
     <ul>
-        <li><strong>CGST + SGST:</strong> Intra-state (same state)</li>
-        <li><strong>IGST:</strong> Inter-state (different states)</li>
-        <li><strong>Rate:</strong> 18% for most services</li>
-        <li><strong>Filing:</strong> Monthly returns (GSTR-1, GSTR-3B)</li>
+        <li>📝 10 questions about Payroll</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed to Task 6</li>
     </ul>
-    <h3>💼 TDS Basics</h3>
+</div>
+`;
+
+const task6Content = `
+<h2>📚 TASK 6: TAX COMPLIANCE MASTERY</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(185, 28, 28, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+    <h3 style="color: #F87171; margin-top: 0;">📑 TAXES: THE PRICE OF DOING BUSINESS</h3>
+    <p style="font-size: 1.2em; text-align: center; margin: 20px 0;">
+        "Tax compliance isn't optional—it's the <span style="color: #EF4444;">foundation of trust</span> with the government."
+    </p>
+    <p>Getting taxes wrong doesn't just cost money in penalties—it can shut down your business. At Digital Heroes, we file on time, every time, with <strong>zero tolerance for tax delays</strong>.</p>
+</div>
+
+<div class="content-section">
+    <h3>📊 GST: The Complete Breakdown</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Tax Type</th>
+                <th style="padding: 12px; text-align: left;">When It Applies</th>
+                <th style="padding: 12px; text-align: left;">Who Pays Where</th>
+                <th style="padding: 12px; text-align: left;">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>CGST + SGST</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Intra-state (within same state)</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Central + State Government</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pune → Mumbai = CGST 9% + SGST 9%</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>IGST</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Inter-state (different states)</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Central Government</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pune → Delhi = IGST 18%</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>Export</strong></td>
+                <td style="padding: 10px;">Services to foreign clients</td>
+                <td style="padding: 10px;">Zero-rated (no GST)</td>
+                <td style="padding: 10px;">India → USA = 0% GST</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>💼 GST Rates for Common Services</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left;">Service Type</th>
+                <th style="padding: 12px; text-align: left;">GST Rate</th>
+                <th style="padding: 12px; text-align: left;">SAC Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">IT Services / Software Development</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>18%</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">998314</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Web Design / Development</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>18%</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">998314</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Digital Marketing</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>18%</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">998361</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Consulting Services</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>18%</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">998311</td></tr>
+            <tr><td style="padding: 10px;">Graphic Design</td><td style="padding: 10px;"><strong>18%</strong></td><td style="padding: 10px;">998397</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📅 GST Filing Calendar</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(245, 158, 11, 0.3);">
+                <th style="padding: 12px; text-align: left;">Return</th>
+                <th style="padding: 12px; text-align: left;">What It Contains</th>
+                <th style="padding: 12px; text-align: left;">Due Date</th>
+                <th style="padding: 12px; text-align: left;">Late Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>GSTR-1</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Outward supplies (sales)</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">11th of next month</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹50/day (max ₹10,000)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>GSTR-3B</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Summary + Tax Payment</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">20th of next month</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹50/day + 18% interest</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>GSTR-9</strong></td>
+                <td style="padding: 10px;">Annual Return</td>
+                <td style="padding: 10px;">31st December</td>
+                <td style="padding: 10px;">₹200/day (max 0.25% of turnover)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>✂️ TDS: Tax Deducted at Source</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left;">Payment Type</th>
+                <th style="padding: 12px; text-align: left;">Section</th>
+                <th style="padding: 12px; text-align: left;">Rate</th>
+                <th style="padding: 12px; text-align: left;">Threshold</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Contractors / Freelancers</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">194C</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">1% (Individual) / 2% (Others)</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹30,000 single / ₹1,00,000 annual</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Professional Services</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">194J</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">10%</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹30,000 annual</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Rent</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">194I</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">10%</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹2,40,000 annual</td></tr>
+            <tr><td style="padding: 10px;">Salary</td><td style="padding: 10px;">192</td><td style="padding: 10px;">As per slab</td><td style="padding: 10px;">Basic exemption limit</td></tr>
+        </tbody>
+    </table>
+    <div class="warning-box">
+        <strong>⚠️ Critical:</strong> TDS must be deposited by 7th of the following month. Late deposit = interest at 1.5% per month + penalties.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>❌ Common Tax Mistakes (Avoid These!)</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left;">Mistake</th>
+                <th style="padding: 12px; text-align: left;">Consequence</th>
+                <th style="padding: 12px; text-align: left;">Prevention</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Wrong GST rate charged</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">ITC reversal + penalty</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Verify SAC code before invoicing</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">GSTIN mismatch on invoice</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Invoice rejected</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Verify client GSTIN before sending</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">TDS not deducted</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Disallowed expense + 30% penalty</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Check threshold before every payment</td></tr>
+            <tr><td style="padding: 10px;">Late filing</td><td style="padding: 10px;">Penalties + interest + notices</td><td style="padding: 10px;">Calendar reminders 5 days before</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Tax Compliance Check</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Exercise: Calculate GST on an Invoice</h4>
+        <p>Client in Delhi, we are in Maharashtra. Service: Website Development, Value: ₹1,00,000</p>
+        <ol>
+            <li>Is this CGST+SGST or IGST?</li>
+            <li>What is the rate?</li>
+            <li>Calculate the tax amount</li>
+            <li>What is the total invoice value?</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
     <ul>
-        <li>Deduct at source for contractor payments</li>
-        <li>Rate: Usually 10% for professionals</li>
-        <li>Deposit by 7th of next month</li>
+        <li>📝 10 questions about Tax Compliance</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed to Task 7</li>
     </ul>
-</div>`;
+</div>
+`;
 
 const task7Content = `<h2>📚 TASK 7: FINANCIAL REPORTS</h2>
 <div class="content-section">
