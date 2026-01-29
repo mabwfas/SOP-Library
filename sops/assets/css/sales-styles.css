@@ -25,6 +25,23 @@
     }
 }
 
+/* Hardware acceleration fixes for smoother performance on MacBook */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar,
+.main-content,
+.task-card,
+.nav-btn,
+.option-btn {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 * {
     box-sizing: border-box;
 }

@@ -14,134 +14,900 @@ const trainingTasks = [
 ];
 
 const task1Content = `
-<h2>📚 TASK 1: FINANCE MINDSET</h2>
+<h2>📚 PART 1: THE FINANCE FOUNDATION</h2>
 
-<div class="content-section">
-    <h3>💰 Money is Business Oxygen</h3>
-    <p>A business can survive without many things. <strong>It cannot survive without cash.</strong></p>
-    
-    <div class="highlight-box">
-        <strong>Financial Reality:</strong>
-        <ul>
-            <li>82% of businesses fail due to cash flow problems</li>
-            <li>Not lack of sales. Not bad products. <strong>Cash timing.</strong></li>
-            <li>Your job: Ensure money flows smoothly</li>
-        </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+    <h3 style="color: #EF4444; margin-top: 0;">🔥 THE UNCOMFORTABLE TRUTH ABOUT MONEY</h3>
+    <p style="font-size: 1.3em; font-weight: bold; text-align: center; margin: 20px 0;">
+        "A business can survive without many things.<br>
+        <span style="color: #10B981;">It CANNOT survive without CASH.</span>"
+    </p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin-top: 20px;">
+        <p style="font-size: 1.1em; margin: 0;"><strong>82% of businesses fail due to cash flow problems.</strong></p>
+        <p style="margin: 10px 0 0 0; color: #94A3B8;">Not lack of sales. Not bad products. Not poor marketing. <strong style="color: #EF4444;">Cash timing.</strong></p>
     </div>
 </div>
 
 <div class="content-section">
-    <h3>🎯 The Finance Professional's Role</h3>
+    <h3>🎯 Why You're Here</h3>
+    <p>You're about to learn the skill that keeps businesses alive. Finance is not just about numbers—it's about:</p>
     <ul>
-        <li>💵 <strong>Cash Flow Guardian:</strong> Ensure money comes in before it goes out</li>
-        <li>📊 <strong>Accuracy Keeper:</strong> Every rupee tracked, every number verified</li>
-        <li>⚖️ <strong>Compliance Officer:</strong> GST, TDS, all regulations met</li>
-        <li>📈 <strong>Growth Enabler:</strong> Smart spending, smart saving</li>
+        <li>💰 <strong>Oxygen Management:</strong> Cash is business oxygen. No cash = death. Simple.</li>
+        <li>📊 <strong>Decision Intelligence:</strong> Every business decision is a financial decision</li>
+        <li>🛡️ <strong>Risk Prevention:</strong> Spotting problems BEFORE they become disasters</li>
+        <li>📈 <strong>Growth Enablement:</strong> Smart money makes more money</li>
     </ul>
+    <div class="highlight-box">
+        <strong>Your Mission:</strong> Ensure money flows in BEFORE it flows out. Every. Single. Time.
+    </div>
 </div>
 
 <div class="content-section">
-    <h3>📊 Key Financial Metrics</h3>
+    <h3>👤 The Two Types of Finance People</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: rgba(99, 102, 241, 0.2);">
-            <th style="padding: 12px;">Metric</th>
-            <th style="padding: 12px;">What It Tells You</th>
-            <th style="padding: 12px;">Target</th>
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🔴 The Bookkeeper</strong></td>
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                • Just records what happened<br>
+                • Waits for problems to occur<br>
+                • Sees numbers as boring data<br>
+                • Doesn't understand business impact<br>
+                <em style="color: #EF4444;">Replaceable by software ❌</em>
+            </td>
         </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Gross Profit Margin</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revenue after direct costs</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&gt;50% for services</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Net Profit Margin</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What's left after ALL expenses</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&gt;15%</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Days Sales Outstanding</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How fast clients pay</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&lt;30 days</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cash Runway</strong></td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Months of expenses in bank</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&gt;3 months</td>
+        <tr style="background: rgba(16, 185, 129, 0.2);">
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>🟢 The Financial Guardian</strong></td>
+            <td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                • Predicts what WILL happen<br>
+                • Prevents problems before they occur<br>
+                • Sees numbers as business stories<br>
+                • Drives profitable decisions<br>
+                <em style="color: #10B981;">Irreplaceable business partner ✅</em>
+            </td>
         </tr>
     </table>
+    <div class="highlight-box">
+        <strong>Which one are you?</strong> Your answer isn't what you say—it's what you DO with the knowledge in this training.
+    </div>
+</div>
+
+<h2>📚 PART 2: THE FINANCE MINDSET</h2>
+
+<div class="content-section">
+    <h3>💡 Lesson 1: Money Has a Clock</h3>
+    <p>The biggest mistake new finance people make is thinking money is just numbers. <strong>Wrong.</strong></p>
+    <div class="highlight-box">
+        <strong>The Time-Money Truth:</strong> ₹1,00,000 today is worth MORE than ₹1,00,000 next month.
+    </div>
+    <p>Why?</p>
+    <ul>
+        <li>📈 <strong>Investment Potential:</strong> Money today can earn interest</li>
+        <li>⚠️ <strong>Risk Factor:</strong> Future money might not arrive</li>
+        <li>💸 <strong>Opportunity Cost:</strong> Waiting means missing other opportunities</li>
+        <li>📉 <strong>Inflation:</strong> Money loses value over time</li>
+    </ul>
+    <div style="background: rgba(99, 102, 241, 0.15); padding: 20px; border-radius: 10px; margin: 20px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Real Example: The Invoice Timing Game</h4>
+        <p>Client owes ₹5,00,000. You invoice on Day 30 with Net-30 terms.</p>
+        <ul>
+            <li>Invoice on Day 1 → Payment on Day 30 → Money works for 30 extra days</li>
+            <li>Invoice on Day 30 → Payment on Day 60 → Lost 30 days of cash flow</li>
+        </ul>
+        <p><strong>Over a year, with 10 clients, that's 300 days of lost cash flow potential.</strong></p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💡 Lesson 2: The Three Financial Personalities</h3>
+    <p>Every business expense falls into one of three personality types:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Type</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Behavior</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Example</th>
+                <th style="padding: 12px; text-align: left; border-bottom: 2px solid rgba(139, 92, 246, 0.5);">Your Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background: rgba(239, 68, 68, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>🔴 Vampire</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Sucks money with no return</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Unused subscriptions, penalty fees</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">ELIMINATE immediately</td>
+            </tr>
+            <tr style="background: rgba(245, 158, 11, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>🟡 Maintainer</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Keeps business running</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Rent, utilities, basic tools</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">OPTIMIZE for efficiency</td>
+            </tr>
+            <tr style="background: rgba(16, 185, 129, 0.1);">
+                <td style="padding: 10px;"><strong>🟢 Multiplier</strong></td>
+                <td style="padding: 10px;">Returns more than spent</td>
+                <td style="padding: 10px;">Profitable ads, skill training</td>
+                <td style="padding: 10px;">INVEST more when proven</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="warning-box">
+        <strong>⚠️ Critical Question:</strong> For every expense, ask: "Is this a Vampire, Maintainer, or Multiplier?" If you can't answer, you shouldn't approve it.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💡 Lesson 3: The 50/30/20 Cash Allocation Rule</h3>
+    <p>Before spending a single rupee, know where it should go:</p>
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(99, 102, 241, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #6366F1;">
+            <h4 style="color: #818CF8; margin-top: 0;">50% → Operations</h4>
+            <p>Salaries, rent, tools, subscriptions—the cost of running the machine</p>
+        </div>
+        <div style="background: rgba(16, 185, 129, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">30% → Growth</h4>
+            <p>Marketing, ads, hiring, expansion—investing in tomorrow</p>
+        </div>
+        <div style="background: rgba(245, 158, 11, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #F59E0B;">
+            <h4 style="color: #FBBF24; margin-top: 0;">20% → Reserve</h4>
+            <p>Emergency fund, taxes, buffer—protection against surprises</p>
+        </div>
+    </div>
+    <p style="background: rgba(139, 92, 246, 0.2); padding: 15px; border-radius: 8px; text-align: center; font-weight: bold;">
+        🎯 Never allocate the last 20%. It's not "unused"—it's INSURANCE.
+    </p>
+</div>
+
+<div class="content-section">
+    <h3>💡 Lesson 4: The Revenue Recognition Trap</h3>
+    <p>Many businesses confuse <strong>revenue</strong> with <strong>cash</strong>. This is deadly.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left;">Concept</th>
+                <th style="padding: 12px; text-align: left;">What It Means</th>
+                <th style="padding: 12px; text-align: left;">Can You Spend It?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Revenue</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">You EARNED it (invoice sent)</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">❌ No</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Receivables</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Client OWES you</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">❌ No</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>Cash</strong></td>
+                <td style="padding: 10px;">Money IN YOUR BANK</td>
+                <td style="padding: 10px;">✅ Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="warning-box">
+        <strong>⚠️ Real Danger:</strong> A company can show ₹50L in revenue and still be unable to pay ₹2L in salaries. Revenue ≠ Cash. Never forget this.
+    </div>
+</div>
+
+<h2>📚 PART 3: KEY FINANCIAL METRICS</h2>
+
+<div class="content-section">
+    <h3>📊 The 6 Numbers You Must Know Daily</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.95em;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Metric</th>
+                <th style="padding: 12px; text-align: left;">Formula</th>
+                <th style="padding: 12px; text-align: left;">What It Tells You</th>
+                <th style="padding: 12px; text-align: left;">Healthy Target</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Gross Profit Margin</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">(Revenue - Direct Costs) / Revenue × 100</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Profitability per project</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">&gt;50% for services</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Net Profit Margin</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Net Profit / Revenue × 100</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">What's left after ALL costs</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">&gt;15%</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Days Sales Outstanding (DSO)</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">(Receivables / Revenue) × Days</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">How fast clients pay</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">&lt;30 days</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Cash Runway</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Cash Balance / Monthly Burn</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Months of survival</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">&gt;3 months</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Current Ratio</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Current Assets / Current Liabilities</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Short-term financial health</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">&gt;1.5</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>Burn Rate</strong></td>
+                <td style="padding: 10px;">Total Monthly Expenses</td>
+                <td style="padding: 10px;">How fast you spend</td>
+                <td style="padding: 10px;">Less than revenue</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🔢 Real-World Calculation Examples</h3>
+    <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Example 1: Gross Profit Margin</h4>
+        <p><strong>Scenario:</strong> Web project billed at ₹2,00,000</p>
+        <ul>
+            <li>Developer cost: ₹60,000</li>
+            <li>Designer cost: ₹30,000</li>
+            <li>Tools/hosting: ₹10,000</li>
+            <li><strong>Total Direct Costs: ₹1,00,000</strong></li>
+        </ul>
+        <p><strong>Calculation:</strong> (₹2,00,000 - ₹1,00,000) / ₹2,00,000 × 100 = <span style="color: #10B981; font-weight: bold;">50% GPM ✅</span></p>
+    </div>
+    <div style="background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #FBBF24; margin-top: 0;">Example 2: Cash Runway</h4>
+        <p><strong>Scenario:</strong></p>
+        <ul>
+            <li>Bank balance: ₹15,00,000</li>
+            <li>Monthly expenses: ₹5,00,000</li>
+        </ul>
+        <p><strong>Calculation:</strong> ₹15,00,000 / ₹5,00,000 = <span style="color: #10B981; font-weight: bold;">3 months runway ✅</span></p>
+        <p style="color: #94A3B8;">If monthly expenses were ₹6,00,000, runway would be 2.5 months ⚠️</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Financial Health Check</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Exercise: Calculate These Right Now</h4>
+        <p>For your company (or a hypothetical ₹10L/month revenue company):</p>
+        <ol>
+            <li>What is the current Cash Runway?</li>
+            <li>What is the DSO (Days Sales Outstanding)?</li>
+            <li>List 3 "Vampire" expenses that could be eliminated</li>
+            <li>Is the 50/30/20 rule being followed?</li>
+        </ol>
+        <p><strong>Write your answers before taking the quiz.</strong></p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Finance Mindset</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed to Task 2</li>
+        <li>💡 Topics: Cash timing, expense types, metrics, calculations</li>
+    </ul>
 </div>
 `;
 
 const task2Content = `
 <h2>📚 TASK 2: INVOICING EXCELLENCE</h2>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+    <h3 style="color: #10B981; margin-top: 0;">💰 THE INVOICE IS YOUR PAYCHECK</h3>
+    <p style="font-size: 1.2em; text-align: center; margin: 20px 0;">
+        "Work done + Invoice NOT sent = <span style="color: #EF4444;">Work done FOR FREE</span>"
+    </p>
+    <p>An invoice is not just a document—it's a <strong>legal demand for payment</strong>. The faster you send it, the faster you get paid. The more professional it looks, the more seriously clients take it.</p>
+</div>
+
 <div class="content-section">
-    <h3>📋 Invoice Components</h3>
+    <h3>📋 The Anatomy of a Perfect Invoice</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: rgba(99, 102, 241, 0.2);">
-            <th style="padding: 12px;">Must Have</th>
-            <th style="padding: 12px;">Purpose</th>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Invoice Number</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unique tracking</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Date & Due Date</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Payment timeline</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">GST Number</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tax compliance</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Line Items</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What they're paying for</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Payment Details</td>
-            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Bank account, UPI</td>
-        </tr>
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Component</th>
+                <th style="padding: 12px; text-align: left;">Purpose</th>
+                <th style="padding: 12px; text-align: left;">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Invoice Number</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Unique ID for tracking</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">DH-2024-0001</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Invoice Date</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">When invoice was created</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">28-Jan-2024</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Due Date</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Payment deadline</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">12-Feb-2024 (Net 15)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Your GST Number</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Tax compliance</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">27XXXXX1234A1ZX</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Client Details</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Legal billing party</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">ABC Pvt Ltd, GSTIN, Address</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Line Items</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">What they're paying for</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Website Development - ₹1,50,000</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Tax Breakdown</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">GST components</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">CGST 9% + SGST 9% = ₹27,000</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Total Amount</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Final payable</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹1,77,000</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>Payment Details</strong></td>
+                <td style="padding: 10px;">How to pay</td>
+                <td style="padding: 10px;">Bank: HDFC | A/C: XXXX | IFSC: HDFC0001234</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 
 <div class="content-section">
-    <h3>⏰ Invoice Timing</h3>
-    <div class="highlight-box">
-        <strong>The 48-Hour Rule:</strong><br>
-        Invoice within 48 hours of project completion. Delayed invoices = delayed payments.
+    <h3>⏰ The Psychology of Invoice Timing</h3>
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(239, 68, 68, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #EF4444;">
+            <h4 style="color: #EF4444; margin-top: 0;">❌ The "I'll Do It Later" Trap</h4>
+            <ul>
+                <li>Invoice sent 7 days after work → Paid in 45 days</li>
+                <li>Invoice sent 14 days after work → Paid in 60+ days</li>
+                <li>Invoice sent 30 days after work → Often "forgotten" or disputed</li>
+            </ul>
+            <p><strong>Reality:</strong> The longer you wait, the less urgent payment feels to the client.</p>
+        </div>
+        <div style="background: rgba(16, 185, 129, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">✅ The 24-48 Hour Rule</h4>
+            <ul>
+                <li>Invoice sent same day → Client still remembers the value</li>
+                <li>Invoice sent next day → Still in "work mode" mentally</li>
+                <li>Payment terms start immediately → Faster collection</li>
+            </ul>
+            <p><strong>Best Practice:</strong> Invoice within 24 hours of milestone completion. No exceptions.</p>
+        </div>
     </div>
+</div>
+
+<div class="content-section">
+    <h3>📅 Payment Terms Explained</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left;">Term</th>
+                <th style="padding: 12px; text-align: left;">Meaning</th>
+                <th style="padding: 12px; text-align: left;">When to Use</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Due on Receipt</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pay immediately</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">New clients, small amounts</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Net 7</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pay within 7 days</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Retainers, rush projects</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Net 15</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pay within 15 days</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Standard for services</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Net 30</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Pay within 30 days</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Corporate clients only</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>50/50 Split</strong></td>
+                <td style="padding: 10px;">50% advance, 50% on delivery</td>
+                <td style="padding: 10px;">Large projects (recommended)</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="warning-box">
+        <strong>⚠️ Rule:</strong> Never agree to Net 60 or Net 90. These terms are cash flow killers. If a client demands it, they're likely not a good fit.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔄 The Follow-Up Sequence</h3>
+    <p>Most payments aren't late because of bad intent—they're late because of forgotten emails. Use this sequence:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Day</th>
+                <th style="padding: 12px; text-align: left;">Action</th>
+                <th style="padding: 12px; text-align: left;">Tone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background: rgba(16, 185, 129, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Day 0</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Send invoice with clear due date</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Professional</td>
+            </tr>
+            <tr style="background: rgba(245, 158, 11, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Day -3</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">"Friendly reminder: Invoice due in 3 days"</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Friendly</td>
+            </tr>
+            <tr style="background: rgba(245, 158, 11, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Due Date</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">"Invoice due today. Please confirm payment."</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Direct</td>
+            </tr>
+            <tr style="background: rgba(239, 68, 68, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Day +3</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">"Invoice overdue. Please process immediately."</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Firm</td>
+            </tr>
+            <tr style="background: rgba(239, 68, 68, 0.15);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Day +7</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Phone call + email: "Immediate attention required"</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Serious</td>
+            </tr>
+            <tr style="background: rgba(239, 68, 68, 0.2);">
+                <td style="padding: 10px;"><strong>Day +14</strong></td>
+                <td style="padding: 10px;">Escalate to leadership + pause work</td>
+                <td style="padding: 10px;">Final</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>❌ Common Invoice Mistakes</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left;">Mistake</th>
+                <th style="padding: 12px; text-align: left;">Why It's Bad</th>
+                <th style="padding: 12px; text-align: left;">Fix</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Vague descriptions</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Client disputes "what they paid for"</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Itemize every deliverable</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Wrong GST number</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Invoice rejected, delays</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Verify before sending</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Missing due date</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">"We'll pay when we can"</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Always include clear deadline</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">No payment details</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Extra back-and-forth emails</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Include all payment options</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Sending as attachment only</td>
+                <td style="padding: 10px;">Gets lost in inbox</td>
+                <td style="padding: 10px;">PDF + summary in email body</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Invoice Audit</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Exercise: Review Your Last 5 Invoices</h4>
+        <ol>
+            <li>Were they sent within 48 hours of work completion?</li>
+            <li>Did they have all 9 required components?</li>
+            <li>What were the actual payment times vs due dates?</li>
+            <li>Were follow-ups sent on the correct schedule?</li>
+        </ol>
+        <p><strong>Calculate:</strong> How many days of cash flow were lost due to late invoicing?</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Invoicing</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed to Task 3</li>
+        <li>💡 Topics: Invoice components, timing, payment terms, follow-ups</li>
+    </ul>
 </div>
 `;
 
-const task3Content = `<h2>📚 TASK 3: EXPENSE MANAGEMENT</h2>
-<div class="content-section">
-    <h3>📊 Expense Categories</h3>
-    <ul>
-        <li><strong>Fixed:</strong> Rent, salaries, subscriptions</li>
-        <li><strong>Variable:</strong> Ads, commissions, materials</li>
-        <li><strong>One-time:</strong> Equipment, setup costs</li>
-    </ul>
-    <div class="highlight-box">
-        <strong>Golden Rule:</strong> Every expense needs a receipt and category.
-    </div>
-</div>`;
+const task3Content = `
+<h2>📚 TASK 3: EXPENSE MANAGEMENT</h2>
 
-const task4Content = `<h2>📚 TASK 4: CASH FLOW</h2>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+    <h3 style="color: #F59E0B; margin-top: 0;">💸 EVERY RUPEE HAS A PURPOSE</h3>
+    <p style="font-size: 1.2em; text-align: center; margin: 20px 0;">
+        "An expense without a receipt is <span style="color: #EF4444;">money that never existed.</span>"
+    </p>
+    <p>Expense management isn't about saying NO to spending. It's about ensuring every rupee spent has a <strong>clear purpose</strong> and <strong>proper documentation</strong>.</p>
+</div>
+
 <div class="content-section">
-    <h3>💵 Cash Flow Formula</h3>
-    <div class="highlight-box">
-        <strong>Cash In - Cash Out = Net Cash Flow</strong><br><br>
-        Positive = Growing | Negative = Burning | Zero = Surviving
+    <h3>📊 The Three Types of Expenses</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left;">Type</th>
+                <th style="padding: 12px; text-align: left;">Behavior</th>
+                <th style="padding: 12px; text-align: left;">Examples</th>
+                <th style="padding: 12px; text-align: left;">Control Strategy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background: rgba(99, 102, 241, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>🔵 Fixed</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Same every month</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Rent, salaries, insurance, subscriptions</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Negotiate annually, auto-pay</td>
+            </tr>
+            <tr style="background: rgba(16, 185, 129, 0.1);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>🟢 Variable</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Changes with activity</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Ads, freelancers, commissions, travel</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Budget limits, approval workflow</td>
+            </tr>
+            <tr style="background: rgba(245, 158, 11, 0.1);">
+                <td style="padding: 10px;"><strong>🟡 One-Time</strong></td>
+                <td style="padding: 10px;">Happens once</td>
+                <td style="padding: 10px;">Equipment, setup costs, legal fees</td>
+                <td style="padding: 10px;">Leadership approval, ROI analysis</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📋 The Expense Approval Workflow</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Amount</th>
+                <th style="padding: 12px; text-align: left;">Who Approves</th>
+                <th style="padding: 12px; text-align: left;">Documentation Needed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">< ₹5,000</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Team Lead</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Receipt + purpose</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹5,000 - ₹25,000</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Department Head</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Receipt + purpose + budget code</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">₹25,000 - ₹1,00,000</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Finance + Operations</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Formal request + 3 quotes</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">> ₹1,00,000</td>
+                <td style="padding: 10px;">Leadership/Founder</td>
+                <td style="padding: 10px;">Business case + ROI projection</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🧾 Receipt Management: The Golden Rules</h3>
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(16, 185, 129, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">✅ Do This</h4>
+            <ul>
+                <li>Photo/scan receipt immediately after purchase</li>
+                <li>Store in designated folder (Date_Vendor_Amount)</li>
+                <li>Submit within 48 hours of purchase</li>
+                <li>Include GST details for tax credit</li>
+                <li>Link to purchase order if applicable</li>
+            </ul>
+        </div>
+        <div style="background: rgba(239, 68, 68, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #EF4444;">
+            <h4 style="color: #EF4444; margin-top: 0;">❌ Never Do This</h4>
+            <ul>
+                <li>Submit expense without receipt → Rejected</li>
+                <li>Handwritten receipts without GST → No tax credit</li>
+                <li>Combine personal and business expenses → Audit nightmare</li>
+                <li>Submit after 30 days → May be denied</li>
+                <li>Misclassify expenses → Compliance issues</li>
+            </ul>
+        </div>
     </div>
-    <h3>⚡ Cash Flow Killers</h3>
+</div>
+
+<div class="content-section">
+    <h3>🚨 Expense Red Flags</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left;">Red Flag</th>
+                <th style="padding: 12px; text-align: left;">What It Means</th>
+                <th style="padding: 12px; text-align: left;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Expense without prior approval</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Process bypassed</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Escalate to manager</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Round numbers (₹5,000 exactly)</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Potentially fabricated</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Request detailed receipt</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Frequent "cash" expenses</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Harder to verify</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Mandate digital payments</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Expenses just under approval limit</td>
+                <td style="padding: 10px;">Avoiding oversight</td>
+                <td style="padding: 10px;">Review pattern over time</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📈 Monthly Expense Review Checklist</h3>
+    <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 10px;">
+        <ol>
+            <li>Compare actual vs budget by category</li>
+            <li>Identify any category over 10% of budget</li>
+            <li>Review all expenses > ₹10,000</li>
+            <li>Check for unused subscriptions</li>
+            <li>Verify all receipts are filed</li>
+            <li>Flag any anomalies for investigation</li>
+            <li>Calculate cost-per-client and cost-per-project</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Expense Audit</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Exercise: Review Last Month's Expenses</h4>
+        <ol>
+            <li>List all subscriptions - which ones are actually used?</li>
+            <li>Identify the top 5 expense categories</li>
+            <li>Find 3 "vampire" expenses (money spent with no return)</li>
+            <li>Check: Were all expenses properly approved?</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
     <ul>
-        <li>Late client payments</li>
-        <li>Upfront vendor payments</li>
-        <li>Unplanned expenses</li>
-        <li>No payment terms enforcement</li>
+        <li>📝 10 questions about Expense Management</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed to Task 4</li>
     </ul>
-</div>`;
+</div>
+`;
+
+const task4Content = `
+<h2>📚 TASK 4: CASH FLOW MANAGEMENT</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+    <h3 style="color: #10B981; margin-top: 0;">💵 CASH IS THE BLOODSTREAM OF BUSINESS</h3>
+    <p style="font-size: 1.2em; text-align: center; margin: 20px 0;">
+        "Revenue is vanity, profit is sanity, but <span style="color: #EF4444;">CASH is reality.</span>"
+    </p>
+    <p>A company can be profitable on paper and still go bankrupt. Why? Because <strong>profit</strong> is an accounting concept, but <strong>cash</strong> is what pays the bills. Understanding cash flow is the difference between survival and death.</p>
+</div>
+
+<div class="content-section">
+    <h3>🔢 The Cash Flow Formula</h3>
+    <div style="background: rgba(99, 102, 241, 0.15); padding: 25px; border-radius: 12px; text-align: center; margin: 20px 0;">
+        <p style="font-size: 1.5em; font-weight: bold; margin: 0;">
+            Cash In − Cash Out = Net Cash Flow
+        </p>
+    </div>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.3);">
+                <th style="padding: 12px; text-align: left;">Net Cash Flow</th>
+                <th style="padding: 12px; text-align: left;">Status</th>
+                <th style="padding: 12px; text-align: left;">What It Means</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background: rgba(16, 185, 129, 0.15);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong style="color: #10B981;">Positive (+)</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">GROWING ✅</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">More money coming in than going out. Can invest, save, or expand.</td>
+            </tr>
+            <tr style="background: rgba(245, 158, 11, 0.15);">
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong style="color: #F59E0B;">Zero (0)</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">SURVIVING ⚠️</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Breaking even. No buffer for emergencies. Risky.</td>
+            </tr>
+            <tr style="background: rgba(239, 68, 68, 0.15);">
+                <td style="padding: 10px;"><strong style="color: #EF4444;">Negative (−)</strong></td>
+                <td style="padding: 10px;">BURNING 🔥</td>
+                <td style="padding: 10px;">Spending more than earning. Clock is ticking on survival.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>⏰ The Timing Problem: Why Profitable Companies Fail</h3>
+    <div style="background: rgba(239, 68, 68, 0.1); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #EF4444; margin-top: 0;">Real Scenario: The Timing Gap</h4>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">March 1: Win ₹10L project</td>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Client says Net 30</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">March 15: Pay salaries</td>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Need ₹6L (cash out)</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">March 20: Pay vendors/tools</td>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Need ₹2L (cash out)</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">March 31: Project delivered</td>
+                <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Invoice sent</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;"><strong>April 30: Client pays</strong></td>
+                <td style="padding: 8px;"><strong>₹10L received (finally!)</strong></td>
+            </tr>
+        </table>
+        <p style="margin-top: 15px; color: #F87171;"><strong>Problem:</strong> You needed ₹8L in March but didn't get paid until April. Profitable? Yes. Cash flow positive? NO.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚡ The 5 Cash Flow Killers</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(239, 68, 68, 0.3);">
+                <th style="padding: 12px; text-align: left;">Killer</th>
+                <th style="padding: 12px; text-align: left;">How It Hurts</th>
+                <th style="padding: 12px; text-align: left;">Prevention</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Late Client Payments</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Money earned but not in bank</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">50% advance, strict follow-ups</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Upfront Vendor Payments</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Cash goes out before coming in</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Negotiate Net 15/30 with vendors</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Unplanned Expenses</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Drains reserve unexpectedly</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Maintain 3-month emergency fund</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Over-Hiring</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Fixed costs exceed revenue</td>
+                <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Use contractors, hire on retainers</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>Scope Creep (No Change Orders)</strong></td>
+                <td style="padding: 10px;">Working for free</td>
+                <td style="padding: 10px;">Strict change order process</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📊 Weekly Cash Flow Tracking Template</h3>
+    <div style="background: rgba(99, 102, 241, 0.1); padding: 20px; border-radius: 10px;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background: rgba(99, 102, 241, 0.3);">
+                    <th style="padding: 10px; text-align: left;">Category</th>
+                    <th style="padding: 10px; text-align: right;">Week 1</th>
+                    <th style="padding: 10px; text-align: right;">Week 2</th>
+                    <th style="padding: 10px; text-align: right;">Week 3</th>
+                    <th style="padding: 10px; text-align: right;">Week 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td style="padding: 8px;">Opening Balance</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td></tr>
+                <tr style="background: rgba(16, 185, 129, 0.1);"><td style="padding: 8px;"><strong style="color: #10B981;">+ Client Payments Received</strong></td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td></tr>
+                <tr style="background: rgba(239, 68, 68, 0.1);"><td style="padding: 8px;"><strong style="color: #EF4444;">− Salaries</strong></td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td></tr>
+                <tr style="background: rgba(239, 68, 68, 0.1);"><td style="padding: 8px;"><strong style="color: #EF4444;">− Vendors/Tools</strong></td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td></tr>
+                <tr style="background: rgba(239, 68, 68, 0.1);"><td style="padding: 8px;"><strong style="color: #EF4444;">− Other Expenses</strong></td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td><td style="padding: 8px; text-align: right;">₹___</td></tr>
+                <tr style="background: rgba(139, 92, 246, 0.2);"><td style="padding: 8px;"><strong>= Closing Balance</strong></td><td style="padding: 8px; text-align: right;"><strong>₹___</strong></td><td style="padding: 8px; text-align: right;"><strong>₹___</strong></td><td style="padding: 8px; text-align: right;"><strong>₹___</strong></td><td style="padding: 8px; text-align: right;"><strong>₹___</strong></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Cash Flow Improvement Strategies</h3>
+    <div style="display: grid; gap: 15px; margin: 20px 0;">
+        <div style="background: rgba(16, 185, 129, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #10B981;">
+            <h4 style="color: #10B981; margin-top: 0;">✅ Speed Up Cash IN</h4>
+            <ul>
+                <li>Require 50% advance before starting work</li>
+                <li>Send invoices immediately (not end of month)</li>
+                <li>Offer 2% discount for early payment</li>
+                <li>Follow up on Day 1 after due date</li>
+            </ul>
+        </div>
+        <div style="background: rgba(239, 68, 68, 0.15); padding: 20px; border-radius: 10px; border-left: 4px solid #EF4444;">
+            <h4 style="color: #EF4444; margin-top: 0;">⬇️ Slow Down Cash OUT</h4>
+            <ul>
+                <li>Negotiate Net 30 with all vendors</li>
+                <li>Pay on due date, not before</li>
+                <li>Stagger large payments across weeks</li>
+                <li>Use credit cards for 30-day float (pay in full)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: 13-Week Cash Flow Forecast</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #818CF8; margin-top: 0;">Exercise: Build Your Cash Flow Forecast</h4>
+        <ol>
+            <li>List all expected payments for next 13 weeks</li>
+            <li>List all expected expenses for next 13 weeks</li>
+            <li>Calculate opening and closing balance for each week</li>
+            <li>Identify weeks where balance goes negative</li>
+            <li>Create action plan to prevent cash crisis</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 10 questions about Cash Flow</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed to Task 5</li>
+    </ul>
+</div>
+`;
 
 const task5Content = `<h2>📚 TASK 5: PAYROLL BASICS</h2>
 <div class="content-section">
