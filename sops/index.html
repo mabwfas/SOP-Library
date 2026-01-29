@@ -1119,7 +1119,27 @@
             color: var(--kra);
             font-weight: bold;
         }
-    </style>
+            /* Quick Access Cards - Vertical Stack Layout */
+        .role-grid > .role-card {
+            flex-direction: column !important;
+            align-items: stretch !important;
+        }
+        .role-grid > .role-card .role-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            margin-bottom: 12px;
+        }
+        .role-grid > .role-card .role-links {
+            margin-top: auto;
+            width: 100%;
+        }
+        .role-grid > .role-card .role-link {
+            display: block !important;
+            width: 100% !important;
+            text-align: center;
+            padding: 10px 16px;
+        }
+        </style>
 
     <link rel="stylesheet" href="assets/css/copy-button.css">
 </head>
@@ -1860,7 +1880,27 @@
                 opacity: 0;
             }
         }
-    </style>
+            /* Quick Access Cards - Vertical Stack Layout */
+        .role-grid > .role-card {
+            flex-direction: column !important;
+            align-items: stretch !important;
+        }
+        .role-grid > .role-card .role-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            margin-bottom: 12px;
+        }
+        .role-grid > .role-card .role-links {
+            margin-top: auto;
+            width: 100%;
+        }
+        .role-grid > .role-card .role-link {
+            display: block !important;
+            width: 100% !important;
+            text-align: center;
+            padding: 10px 16px;
+        }
+        </style>
     <script>
         const fireCursor = document.getElementById('fire-cursor');
         let lastX = 0, lastY = 0;
