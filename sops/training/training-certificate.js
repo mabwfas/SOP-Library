@@ -144,19 +144,6 @@
         const verifyUrl = `https://library.digitalheroes.co.in/verify?code=${verificationCode}`;
 
         verifySection.innerHTML = `
-            <div style="margin-bottom: 15px;">
-                <span style="
-                    display: inline-block;
-                    background: rgba(16, 185, 129, 0.2);
-                    color: #10B981;
-                    padding: 6px 15px;
-                    border-radius: 20px;
-                    font-size: 0.75em;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    letter-spacing: 0.1em;
-                ">🔐 Blockchain Verified</span>
-            </div>
             <div style="margin-bottom: 20px;">
                 <div style="
                     display: inline-block;
