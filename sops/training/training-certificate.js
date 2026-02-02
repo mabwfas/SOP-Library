@@ -185,8 +185,8 @@
             </div>
         `;
 
-        // Insert before the print area
-        printArea.parentNode.insertBefore(verifySection, printArea);
+        // Insert AFTER the print area (in footer)
+        printArea.parentNode.appendChild(verifySection);
     }
 
     /**
