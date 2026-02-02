@@ -132,6 +132,7 @@
         // Create verification section
         const verifySection = document.createElement('div');
         verifySection.id = 'verificationSection';
+        verifySection.className = 'no-print';
         verifySection.style.cssText = `
             text-align: center;
             margin: 30px 0 20px 0;
