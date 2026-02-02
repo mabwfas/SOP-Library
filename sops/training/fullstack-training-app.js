@@ -342,6 +342,23 @@ function resetProgress() {
     location.reload();
 }
 
+// DEV: Skip to Task 10 (TEMPORARY - for certificate testing)
+function devSkipToTask10() {
+    // Mark tasks 1-9 as complete
+    progress.completedTasks = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    progress.currentTask = 10;
+    localStorage.setItem('fullstackTrainingProgress', JSON.stringify(progress));
+
+    // Update UI
+    renderTasksList();
+    updateProgressBar();
+
+    // Open Task 10
+    openTask(9); // Index 9 = Task 10
+
+    alert('✅ Skipped to Task 10! Complete this quiz to see the certificate.');
+}
+
 // Show Certificate Modal
 function showCertificate() {
     if (window.confetti) {
