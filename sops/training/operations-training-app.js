@@ -458,28 +458,163 @@ function showCertificate() {
             border-radius: 20px;
             padding: 60px;
             position: relative;
-            box-shadow: 0 0 60px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 0 60px rgba(99, 102, 241, 0.3), inset 0 0 60px rgba(99, 102, 241, 0.05);
         ">
-            <button onclick="closeCertificate()" style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: white; font-size: 24px; cursor: pointer;">✕</button>
+            <!-- Close Button -->
+            <button onclick="closeCertificate()" style="
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                background: rgba(0,0,0,0.8);
+                border: 1px solid rgba(255,255,255,0.2);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                color: #F8FAFC;
+                font-size: 20px;
+                cursor: pointer;
+                z-index: 1001;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            " class="no-print">✕</button>
             
-            <div style="text-align: center;">
-                <h1 style="color: #6366F1; font-size: 3em; margin-bottom: 10px;">DIGITAL HEROES</h1>
-                <h2 style="color: white; font-weight: 300;">CERTIFICATE OF COMPLETION</h2>
-                <p style="color: #94A3B8; margin: 30px 0;">This certifies that</p>
-                <h1 style="color: white; border-bottom: 2px solid #6366F1; display: inline-block; padding: 0 40px 10px 40px;">${traineeName}</h1>
-                <p style="color: #94A3B8; margin: 30px 0;">has successfully completed the</p>
-                <h2 style="color: #818CF8;">Operations & Routine Training</h2>
+            <!-- Certificate Header -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <div style="font-size: 3em; margin-bottom: 10px;">🎓</div>
+                <h1 style="
+                    font-size: 2.5em;
+                    font-weight: 800;
+                    background: linear-gradient(135deg, #6366F1, #06B6D4);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin: 0;
+                    letter-spacing: 0.05em;
+                ">DIGITAL HEROES</h1>
+                <div style="
+                    color: #94A3B8;
+                    font-size: 0.9em;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                ">Certification Program</div>
+            </div>
+            
+            <!-- Certificate Body -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="
+                    font-size: 2em;
+                    font-weight: 300;
+                    color: #F8FAFC;
+                    margin-bottom: 30px;
+                    letter-spacing: 0.1em;
+                ">CERTIFICATE OF COMPLETION</h2>
                 
-                <div style="margin-top: 50px; display: flex; justify-content: space-between; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-                    <div>
-                        <div style="color: white; font-weight: bold;">Anurag Singh</div>
-                        <div style="color: #94A3B8; font-size: 0.8em;">Operations Head</div>
-                    </div>
-                    <div>
-                        <div style="color: white; font-weight: bold;">${formattedDate}</div>
-                        <div style="color: #94A3B8; font-size: 0.8em;">Date</div>
-                    </div>
+                <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 10px;">This is to certify that</p>
+                
+                <div id="recipientName" style="
+                    font-size: 2.2em;
+                    font-weight: 700;
+                    color: #F8FAFC;
+                    border-bottom: 2px solid rgba(99, 102, 241, 0.4);
+                    padding: 10px 40px;
+                    display: inline-block;
+                    margin: 15px 0 25px 0;
+                    min-width: 300px;
+                ">
+                    ${traineeName || 'Operations Executive'}
                 </div>
+                
+                <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 25px;">
+                    has successfully completed the
+                </p>
+                
+                <h3 style="
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    color: #6366F1;
+                    margin-bottom: 25px;
+                ">Operations & Routine Training</h3>
+                
+                <p style="color: #CBD5E1; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+                    Demonstrating proficiency in operations management, process automation, documentation systems, task management, and emergency protocols.
+                </p>
+            </div>
+            
+            <!-- Certificate Footer -->
+            <div style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-top: 50px;
+                padding-top: 30px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+            ">
+                <div style="text-align: center;">
+                    <div style="
+                        width: 200px;
+                        border-bottom: 2px solid rgba(99, 102, 241, 0.4);
+                        padding-bottom: 8px;
+                        margin-bottom: 8px;
+                        color: #F8FAFC;
+                        font-weight: 600;
+                    ">Anurag Singh</div>
+                    <div style="color: #94A3B8; font-size: 0.85em;">Operations Head, Digital Heroes</div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="
+                        font-size: 2.5em;
+                        color: rgba(99, 102, 241, 0.3);
+                    ">🏆</div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="
+                        width: 180px;
+                        border-bottom: 2px solid rgba(99, 102, 241, 0.4);
+                        padding-bottom: 8px;
+                        margin-bottom: 8px;
+                        color: #F8FAFC;
+                        font-weight: 600;
+                    ">${formattedDate}</div>
+                    <div style="color: #94A3B8; font-size: 0.85em;">Date of Completion</div>
+                </div>
+            </div>
+            
+            <!-- Certificate Code -->
+            <div style="text-align: center; margin-top: 30px;">
+                <div style="
+                    display: inline-block;
+                    background: rgba(99, 102, 241, 0.1);
+                    border: 1px solid rgba(99, 102, 241, 0.3);
+                    border-radius: 8px;
+                    padding: 12px 25px;
+                ">
+                    <span style="color: #94A3B8; font-size: 0.85em;">Certificate ID: </span>
+                    <span style="color: #6366F1; font-weight: 700; font-family: monospace; letter-spacing: 0.1em;">
+                        DH-OPS-${Date.now().toString(36).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Print Button -->
+            <div style="text-align: center; margin-top: 40px;" class="no-print">
+                <button onclick="printCertificate()" style="
+                    background: linear-gradient(135deg, #6366F1, #06B6D4);
+                    color: #000;
+                    font-weight: 700;
+                    padding: 16px 40px;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1.1em;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(99, 102, 241, 0.4)';"
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                    🖨️ Print Certificate
+                </button>
             </div>
         </div>
     `;
@@ -490,6 +625,11 @@ function showCertificate() {
 function closeCertificate() {
     const modal = document.getElementById('certificateModal');
     if (modal) modal.remove();
+}
+
+// Print Certificate
+function printCertificate() {
+    window.print();
 }
 
 // Show Name Prompt Modal
