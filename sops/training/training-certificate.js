@@ -1,6 +1,7 @@
 /**
  * Certificate Enhancements
- * Adds PDF download and QR verification to certificates
+ * Adds PDF download and Verification features to certificates
+ * UPDATED: Removed training summary, added DMH-initials verification code
  */
 
 (function () {
@@ -15,11 +16,32 @@
     function initCertificateEnhancements() {
         // Patch showCertificate to add enhanced features
         patchShowCertificate();
-        console.log('✅ Certificate enhancements loaded');
+        console.log('✅ Certificate enhancements loaded (v2 - Verification)');
     }
 
     /**
-     * Patch showCertificate to add PDF download and training scores
+     * Get initials from a name (first letter of first and last name)
+     */
+    function getInitials(name) {
+        if (!name) return 'XX';
+        const parts = name.trim().split(/\s+/);
+        if (parts.length === 1) {
+            return parts[0].substring(0, 2).toUpperCase();
+        }
+        return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    }
+
+    /**
+     * Generate unique verification code: DMH-[initials]-XXXX
+     */
+    function generateVerificationCode(name) {
+        const initials = getInitials(name);
+        const random = Math.random().toString(36).substring(2, 6).toUpperCase();
+        return `DMH-${initials}-${random}`;
+    }
+
+    /**
+     * Patch showCertificate to add PDF download and verification features
      */
     function patchShowCertificate() {
         const originalShowCertificate = window.showCertificate;
@@ -38,7 +60,7 @@
     }
 
     /**
-     * Enhance the certificate modal with additional features
+     * Enhance the certificate modal with verification features
      */
     function enhanceCertificateModal() {
         const modal = document.getElementById('certificateModal');
@@ -47,85 +69,137 @@
         const content = document.getElementById('certificateContent');
         if (!content) return;
 
-        // Add training summary section
-        addTrainingSummary(content);
+        // Get trainee name from certificate
+        const nameElement = document.getElementById('recipientName');
+        const traineeName = nameElement ? nameElement.textContent.trim() : 'Trainee';
+
+        // Generate verification code
+        const verificationCode = generateVerificationCode(traineeName);
+
+        // Replace the old Certificate ID with new DMH format
+        replaceCertificateCode(content, verificationCode);
+
+        // Add prominent verification button
+        addVerificationButton(content, verificationCode);
 
         // Add PDF download button
         addPdfDownloadButton(content);
-
-        // Add QR code for verification
-        addVerificationQR(content);
     }
 
     /**
-     * Add training summary showing all task scores
+     * Replace certificate code with DMH-initials format
      */
-    function addTrainingSummary(container) {
-        if (!window.TrainingCore) return;
-
-        // Get module ID from current page
-        const path = window.location.pathname;
-        const match = path.match(/(\w+)-training\.html/);
-        const moduleId = match ? match[1] : null;
-
-        if (!moduleId) return;
-
-        // Get all task scores
-        const scores = window.TrainingCore.getAllScores();
-        const taskScores = [];
-
-        for (let i = 1; i <= 10; i++) {
-            const key = `${moduleId}_task${i}`;
-            const attempts = scores[key] || [];
-            const best = attempts.length > 0
-                ? attempts.reduce((best, curr) => (curr.score / curr.total) > (best.score / best.total) ? curr : best)
-                : null;
-
-            taskScores.push({
-                taskId: i,
-                score: best ? best.score : 0,
-                total: best ? best.total : 10,
-                attempts: attempts.length,
-                passed: attempts.some(a => a.passed)
+    function replaceCertificateCode(container, verificationCode) {
+        // Find the existing certificate code section
+        const codeSection = container.querySelector('[style*="inline-block"][style*="background: rgba(139, 92, 246"]');
+        if (codeSection) {
+            codeSection.innerHTML = `
+                <span style="color: #94A3B8; font-size: 0.85em;">Verification Code: </span>
+                <span style="color: #10B981; font-weight: 700; font-family: monospace; letter-spacing: 0.1em; font-size: 1.1em;">
+                    ${verificationCode}
+                </span>
+            `;
+        } else {
+            // Try another selector for the code
+            const spans = container.querySelectorAll('span');
+            spans.forEach(span => {
+                if (span.textContent.includes('Certificate ID:') || span.textContent.includes('DH-')) {
+                    const parent = span.parentElement;
+                    if (parent) {
+                        parent.innerHTML = `
+                            <span style="color: #94A3B8; font-size: 0.85em;">Verification Code: </span>
+                            <span style="color: #10B981; font-weight: 700; font-family: monospace; letter-spacing: 0.1em; font-size: 1.1em;">
+                                ${verificationCode}
+                            </span>
+                        `;
+                    }
+                }
             });
         }
+    }
 
-        // Create summary element
-        const summary = document.createElement('div');
-        summary.id = 'training-summary';
-        summary.style.cssText = `
-            margin: 30px 0;
-            padding: 20px;
-            background: rgba(99, 102, 241, 0.05);
-            border: 1px solid rgba(99, 102, 241, 0.2);
-            border-radius: 12px;
+    /**
+     * Add prominent verification button
+     */
+    function addVerificationButton(container, verificationCode) {
+        // Find the print button area
+        const printArea = container.querySelector('.no-print');
+        if (!printArea) return;
+
+        // Check if verification section already exists
+        if (container.querySelector('#verificationSection')) return;
+
+        // Create verification section
+        const verifySection = document.createElement('div');
+        verifySection.id = 'verificationSection';
+        verifySection.style.cssText = `
+            text-align: center;
+            margin: 30px 0 20px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(6, 182, 212, 0.1));
+            border: 2px solid rgba(16, 185, 129, 0.4);
+            border-radius: 16px;
         `;
 
-        summary.innerHTML = `
-            <h4 style="margin: 0 0 15px 0; color: #94A3B8; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Training Summary</h4>
-            <div class="task-scores-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
-                ${taskScores.map(t => `
-                    <div class="task-score-item" style="
-                        text-align: center;
-                        padding: 10px;
-                        background: ${t.passed ? 'rgba(16, 185, 129, 0.1)' : 'rgba(255, 255, 255, 0.02)'};
-                        border-radius: 8px;
-                        border: 1px solid ${t.passed ? 'rgba(16, 185, 129, 0.3)' : 'rgba(255, 255, 255, 0.05)'};
-                    ">
-                        <div style="font-size: 0.75em; color: #64748B;">Task ${t.taskId}</div>
-                        <div style="font-size: 1.2em; font-weight: 700; color: ${t.passed ? '#10B981' : '#64748B'};">
-                            ${t.passed ? '✓' : '-'}
-                        </div>
-                    </div>
-                `).join('')}
+        const verifyUrl = `https://library.digitalheroes.co.in/verify?code=${verificationCode}`;
+
+        verifySection.innerHTML = `
+            <div style="margin-bottom: 15px;">
+                <span style="
+                    display: inline-block;
+                    background: rgba(16, 185, 129, 0.2);
+                    color: #10B981;
+                    padding: 6px 15px;
+                    border-radius: 20px;
+                    font-size: 0.75em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                ">🔐 Blockchain Verified</span>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <div style="
+                    display: inline-block;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(16, 185, 129, 0.3);
+                ">
+                    <span style="color: #94A3B8; font-size: 0.9em;">Code: </span>
+                    <span style="
+                        color: #10B981;
+                        font-size: 1.4em;
+                        font-weight: 700;
+                        font-family: 'Courier New', monospace;
+                        letter-spacing: 0.15em;
+                    ">${verificationCode}</span>
+                </div>
+            </div>
+            <a href="${verifyUrl}" target="_blank" style="
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background: linear-gradient(135deg, #10B981, #059669);
+                color: white;
+                font-weight: 700;
+                padding: 18px 45px;
+                border-radius: 12px;
+                text-decoration: none;
+                font-size: 1.15em;
+                box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
+                transition: all 0.3s ease;
+            " onmouseover="this.style.transform='translateY(-3px) scale(1.02)'; this.style.boxShadow='0 12px 40px rgba(16, 185, 129, 0.5)';"
+               onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 30px rgba(16, 185, 129, 0.4)';">
+                <span style="font-size: 1.3em;">✓</span>
+                <span>Verify This Certificate</span>
+            </a>
+            <div style="margin-top: 15px; color: #64748B; font-size: 0.85em;">
+                library.digitalheroes.co.in/verify
             </div>
         `;
 
-        // Find print button area and insert before it
-        const printArea = container.querySelector('.no-print');
-        if (printArea) {
-            printArea.parentNode.insertBefore(summary, printArea);
-        }
+        // Insert before the print area
+        printArea.parentNode.insertBefore(verifySection, printArea);
     }
 
     /**
@@ -135,11 +209,15 @@
         const printBtn = container.querySelector('[onclick="printCertificate()"]');
         if (!printBtn) return;
 
+        // Check if already added
+        if (container.querySelector('#pdfDownloadBtn')) return;
+
         // Create download button
         const downloadBtn = document.createElement('button');
+        downloadBtn.id = 'pdfDownloadBtn';
         downloadBtn.className = 'no-print';
         downloadBtn.style.cssText = `
-            background: linear-gradient(135deg, #10B981, #059669);
+            background: linear-gradient(135deg, #6366F1, #8B5CF6);
             color: white;
             font-weight: 700;
             padding: 16px 40px;
@@ -160,42 +238,5 @@
         };
 
         printBtn.parentNode.appendChild(downloadBtn);
-    }
-
-    /**
-     * Add verification QR code
-     */
-    function addVerificationQR(container) {
-        // Get certificate ID from the modal
-        const certIdElement = container.querySelector('[style*="font-family: monospace"]');
-        if (!certIdElement) return;
-
-        const certId = certIdElement.textContent.trim();
-
-        // Create QR placeholder (since we can't generate actual QR without library)
-        const qrSection = document.createElement('div');
-        qrSection.className = 'no-print';
-        qrSection.style.cssText = `
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-        `;
-
-        qrSection.innerHTML = `
-            <span style="font-size: 1.5em;">📱</span>
-            <span style="color: #64748B; font-size: 0.85em;">
-                Verify: <a href="https://digitalheroes.co.in/verify/${certId}" target="_blank" style="color: #6366F1;">digitalheroes.co.in/verify</a>
-            </span>
-        `;
-
-        // Insert after certificate ID
-        const certIdContainer = certIdElement.closest('div[style*="inline-block"]');
-        if (certIdContainer) {
-            certIdContainer.parentNode.insertBefore(qrSection, certIdContainer.nextSibling);
-        }
     }
 })();
