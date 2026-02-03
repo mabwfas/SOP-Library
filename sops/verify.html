@@ -285,8 +285,8 @@
         <h2>🔍 Verify a Certificate</h2>
 
         <div class="input-group">
-            <label>Enter Certificate ID</label>
-            <input type="text" id="certIdInput" placeholder="e.g. DH-DEV-MKK7G2HO-A9IH" maxlength="25">
+            <label>Enter Certificate Code</label>
+            <input type="text" id="certIdInput" placeholder="e.g. DMH-JS-A7K2 or DH-DEV-MKK7G2HO" maxlength="25">
         </div>
 
         <button class="verify-btn" onclick="verifyCertificate()">
@@ -354,17 +354,57 @@
             document.getElementById('resultBox').style.display = 'none';
 
             // Simulate network delay for realism
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            await new Promise(resolve => setTimeout(resolve, 1200));
 
             document.getElementById('loading').classList.remove('show');
-
-            // Search for certificate
-            const cert = certificates.find(c => c.id.toUpperCase() === certId);
 
             const resultBox = document.getElementById('resultBox');
             const resultTitle = document.getElementById('resultTitle');
             const resultMessage = document.getElementById('resultMessage');
             const certDetails = document.getElementById('certDetails');
+
+            // Check for DMH format (DMH-XX-XXXX or DMH-XXX-XXXX)
+            const dmhPattern = /^DMH-([A-Z]{2,3})-([A-Z0-9]{4})$/;
+            const dmhMatch = certId.match(dmhPattern);
+
+            if (dmhMatch) {
+                // Valid DMH format - auto-verify based on format
+                const initials = dmhMatch[1];
+                const uniqueCode = dmhMatch[2];
+
+                resultBox.className = 'result-box valid';
+                resultBox.style.display = 'block';
+                resultTitle.innerHTML = '✅ Certificate Verified!';
+                resultMessage.innerHTML = 'This is an authentic Digital Heroes training certificate.';
+
+                certDetails.innerHTML = `
+                    <div class="cert-detail">
+                        <span class="label">Certificate Code</span>
+                        <span class="value">${certId}</span>
+                    </div>
+                    <div class="cert-detail">
+                        <span class="label">Holder Initials</span>
+                        <span class="value">${initials}</span>
+                    </div>
+                    <div class="cert-detail">
+                        <span class="label">Unique Identifier</span>
+                        <span class="value">${uniqueCode}</span>
+                    </div>
+                    <div class="cert-detail">
+                        <span class="label">Issuing Organization</span>
+                        <span class="value">Digital Heroes Pvt. Ltd.</span>
+                    </div>
+                    <div class="cert-detail">
+                        <span class="label">Status</span>
+                        <span class="value" style="color: #10B981;">✓ Active & Valid</span>
+                    </div>
+                `;
+                certDetails.style.display = 'block';
+                return;
+            }
+
+            // Search for certificate in database (for legacy DH-XXX format)
+            const cert = certificates.find(c => c.id.toUpperCase() === certId);
 
             if (cert) {
                 resultBox.className = 'result-box valid';
@@ -399,7 +439,7 @@
                 resultBox.className = 'result-box invalid';
                 resultBox.style.display = 'block';
                 resultTitle.innerHTML = '❌ Certificate Not Found';
-                resultMessage.innerHTML = 'This certificate ID does not exist in our database. Please check the ID and try again, or contact support if you believe this is an error.';
+                resultMessage.innerHTML = 'This certificate code is invalid or does not exist. Valid formats: DMH-XX-XXXX (initials-based) or DH-XXX-XXXXXXXX (legacy).';
                 certDetails.style.display = 'none';
             }
         }
@@ -435,8 +475,20 @@
             }
         });
 
-        // Load certificates on page load
-        loadCertificates();
+        // Load certificates on page load and check URL params
+        async function init() {
+            await loadCertificates();
+
+            // Check for code in URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            if (code) {
+                document.getElementById('certIdInput').value = code.toUpperCase();
+                verifyCertificate();
+            }
+        }
+
+        init();
     </script>
 </body>
 
