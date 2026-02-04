@@ -2540,3 +2540,14 @@ const task10Quiz = [
 // Export all quizzes
 const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
 
+
+// Make task content available globally for openTask() function
+window.task2Content = task2Content;
+window.task3Content = typeof task3Content !== 'undefined' ? task3Content : null;
+window.task4Content = typeof task4Content !== 'undefined' ? task4Content : null;
+window.task5Content = typeof task5Content !== 'undefined' ? task5Content : null;
+window.task6Content = typeof task6Content !== 'undefined' ? task6Content : null;
+window.task7Content = typeof task7Content !== 'undefined' ? task7Content : null;
+window.task8Content = typeof task8Content !== 'undefined' ? task8Content : null;
+window.task9Content = typeof task9Content !== 'undefined' ? task9Content : null;
+window.task10Content = typeof task10Content !== 'undefined' ? task10Content : null;
