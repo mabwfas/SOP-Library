@@ -192,7 +192,7 @@ function renderQuestion() {
     const task = trainingTasks[currentTask];
     const quiz = window.currentQuiz;
     const q = quiz[currentQuestion];
-    const totalQuestions = currentTask === 9 ? 20 : 10;
+    const totalQuestions = quiz.length; // Use actual quiz length instead of hardcoding
 
     // Shuffle options with tracking
     const optionsWithIndex = q.o.map((opt, idx) => ({ text: opt, originalIndex: idx }));

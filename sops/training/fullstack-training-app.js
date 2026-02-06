@@ -1,4 +1,4 @@
-﻿// Sales Training Application Logic
+// Sales Training Application Logic
 
 // State Management
 let currentTask = 0;
@@ -42,12 +42,12 @@ function renderTasksList() {
         const card = document.createElement('div');
         card.className = `task-card ${isCompleted ? 'completed' : ''} ${isCurrent ? 'current' : ''} ${isLocked ? 'locked' : ''}`;
         card.innerHTML = `
-            <div class="task-number">${isCompleted ? '✓' : task.id}</div>
+            <div class="task-number">${isCompleted ? '?' : task.id}</div>
             <div class="task-info">
                 <h3>${task.title}</h3>
                 <p>${task.description}</p>
             </div>
-            <div class="task-status">${isCompleted ? '✅' : isLocked ? '🔒' : '→'}</div>
+            <div class="task-status">${isCompleted ? '?' : isLocked ? '??' : '?'}</div>
         `;
 
         if (!isLocked) {
@@ -97,7 +97,7 @@ function openTask(index) {
     if (task.studyGuide && task.studyGuide.length > 0) {
         html += `
             <div class="study-guide">
-                <h4>📚 Before You Begin</h4>
+                <h4>?? Before You Begin</h4>
                 <ul>
                     ${task.studyGuide.map(item => `<li>${item}</li>`).join('')}
                 </ul>
@@ -110,7 +110,7 @@ function openTask(index) {
         html += task1Content;
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (10/10 Required)</button>
+                <button class="nav-btn" onclick="startQuiz(${index})">?? Take Quiz (10/10 Required)</button>
                 
             </div>
         `;
@@ -135,7 +135,7 @@ function openTask(index) {
             html += fullContent;
             html += `
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
+                    <button class="nav-btn" onclick="startQuiz(${index})">?? Take Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
                     
                 </div>
             `;
@@ -143,14 +143,14 @@ function openTask(index) {
             // Placeholder for tasks without full content yet
             html += `
                 <div class="content-section">
-                    <h3>📖 Task ${task.id}: ${task.title}</h3>
+                    <h3>?? Task ${task.id}: ${task.title}</h3>
                     <div class="warning-box">
-                        <strong>⚠️ Content Coming Soon</strong><br>
+                        <strong>?? Content Coming Soon</strong><br>
                         Full teaching content for this task is being developed. For now, study the concepts listed above.
                     </div>
                 </div>
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
+                    <button class="nav-btn" onclick="startQuiz(${index})">?? Start Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
                     
                 </div>
             `;
@@ -192,7 +192,7 @@ function renderQuestion() {
     const task = trainingTasks[currentTask];
     const quiz = window.currentQuiz;
     const q = quiz[currentQuestion];
-    const totalQuestions = currentTask === 9 ? 20 : 10;
+    const totalQuestions = window.currentQuiz ? window.currentQuiz.length : 10;
 
     // Shuffle options with tracking
     const optionsWithIndex = q.o.map((opt, idx) => ({ text: opt, originalIndex: idx }));
@@ -201,7 +201,7 @@ function renderQuestion() {
 
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="openTask(currentTask)">← Exit Quiz</button>
+            <button class="back-btn" onclick="openTask(currentTask)">? Exit Quiz</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
         <div class="quiz-section">
@@ -218,8 +218,8 @@ function renderQuestion() {
                 </div>
             </div>
             <div class="quiz-nav">
-                <button class="nav-btn" ${currentQuestion === 0 ? 'disabled' : ''} onclick="prevQuestion()">← Previous</button>
-                <button class="nav-btn" id="nextBtn" disabled onclick="nextQuestion()">Next →</button>
+                <button class="nav-btn" ${currentQuestion === 0 ? 'disabled' : ''} onclick="prevQuestion()">? Previous</button>
+                <button class="nav-btn" id="nextBtn" disabled onclick="nextQuestion()">Next ?</button>
             </div>
         </div>
     `;
@@ -240,7 +240,7 @@ function selectAnswer(index) {
 
 // Next Question
 function nextQuestion() {
-    const totalQuestions = currentTask === 9 ? 20 : 10;
+    const totalQuestions = window.currentQuiz ? window.currentQuiz.length : 10;
     if (currentQuestion < totalQuestions - 1) {
         currentQuestion++;
         renderQuestion();
@@ -262,7 +262,7 @@ function showResults() {
     const container = document.getElementById('taskView');
     const task = trainingTasks[currentTask];
     const quiz = window.currentQuiz;
-    const totalQuestions = currentTask === 9 ? 20 : 10;
+    const totalQuestions = window.currentQuiz ? window.currentQuiz.length : 10;
 
     // Calculate score
     let correct = 0;
@@ -278,15 +278,15 @@ function showResults() {
 
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="openTask(currentTask)">← content</button>
+            <button class="back-btn" onclick="openTask(currentTask)">? content</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
         <div class="quiz-results">
             <div class="results-score ${passed ? 'passed' : 'failed'}">${correct}/${totalQuestions}</div>
             <div class="results-message">
                 ${passed
-            ? '🎉 Congratulations! You passed!'
-            : '❌ You need 10/10. Review the material and try again.'}
+            ? '?? Congratulations! You passed!'
+            : '? You need 10/10. Review the material and try again.'}
             </div>
     `;
 
@@ -303,16 +303,16 @@ function showResults() {
         if (task.id === 10) {
             html += `
                 <div class="certified-badge">
-                    <h2>🏆 CERTIFIED</h2>
+                    <h2>?? CERTIFIED</h2>
                     <p>You've passed all 10 tasks!</p>
                     <p style="margin-top: 20px; color: #94a3b8;">Next Step: Record your 30-minute video walkthrough</p>
-                    <button class="nav-btn" style="margin-top: 20px;" onclick="showCertificate()">🎓 View Certificate</button>
+                    <button class="nav-btn" style="margin-top: 20px;" onclick="showCertificate()">?? View Certificate</button>
                 </div>
             `;
         } else {
             // Auto-advance to next task after 1.5 seconds
             html += `<div style="text-align: center; margin-top: 30px;">
-                <p style="color: #10B981; font-size: 1.2em; margin-bottom: 15px;">✅ Moving to Task ${task.id + 1}...</p>
+                <p style="color: #10B981; font-size: 1.2em; margin-bottom: 15px;">? Moving to Task ${task.id + 1}...</p>
                 <div style="width: 200px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 10px; margin: 0 auto; overflow: hidden;">
                     <div style="height: 100%; background: linear-gradient(90deg, #10B981, #06B6D4); animation: progressAnim 1.5s ease forwards;"></div>
                 </div>
@@ -326,8 +326,8 @@ function showResults() {
     } else {
         html += `
             <div style="margin-top: 20px;">
-                <button class="nav-btn" style="margin-right: 15px;" onclick="startQuiz(${currentTask})">🔄 Retry Quiz</button>
-                <button class="back-btn" onclick="closeTask()">📖 Review Material</button>
+                <button class="nav-btn" style="margin-right: 15px;" onclick="startQuiz(${currentTask})">?? Retry Quiz</button>
+                <button class="back-btn" onclick="closeTask()">?? Review Material</button>
             </div>
         `;
     }
@@ -356,7 +356,7 @@ function devSkipToTask10() {
     // Open Task 10
     openTask(9); // Index 9 = Task 10
 
-    alert('✅ Skipped to Task 10! Complete this quiz to see the certificate.');
+    alert('? Skipped to Task 10! Complete this quiz to see the certificate.');
 }
 
 // Show Certificate Modal
@@ -419,11 +419,11 @@ function showCertificate() {
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
-            " class="no-print">✕</button>
+            " class="no-print">?</button>
             
             <!-- Certificate Header -->
             <div style="text-align: center; margin-bottom: 40px;">
-                <div style="font-size: 3em; margin-bottom: 10px;">🎓</div>
+                <div style="font-size: 3em; margin-bottom: 10px;">??</div>
                 <h1 style="
                     font-size: 2.5em;
                     font-weight: 800;
@@ -509,7 +509,7 @@ function showCertificate() {
                     <div style="
                         font-size: 2.5em;
                         color: rgba(139, 92, 246, 0.3);
-                    ">🏆</div>
+                    ">??</div>
                 </div>
                 
                 <div style="text-align: center;">
@@ -555,7 +555,7 @@ function showCertificate() {
                     transition: transform 0.2s, box-shadow 0.2s;
                 " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(139, 92, 246, 0.4)';"
                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                    🖨️ Print Certificate
+                    ??? Print Certificate
                 </button>
             </div>
         </div>
@@ -681,7 +681,7 @@ function showNamePrompt() {
             text-align: center;
             box-shadow: 0 0 60px rgba(139, 92, 246, 0.3);
         ">
-            <div style="font-size: 4em; margin-bottom: 20px;">🎓</div>
+            <div style="font-size: 4em; margin-bottom: 20px;">??</div>
             <h1 style="
                 font-size: 1.8em;
                 color: #F8FAFC;
@@ -718,7 +718,7 @@ function showNamePrompt() {
                 font-size: 1.1em;
                 width: 100%;
             ">
-                🚀 Start Training
+                ?? Start Training
             </button>
             
             <p style="color: #64748B; font-size: 0.8em; margin-top: 20px;">
