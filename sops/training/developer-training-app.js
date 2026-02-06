@@ -240,7 +240,7 @@ function selectAnswer(index) {
 
 // Next Question
 function nextQuestion() {
-    const totalQuestions = currentTask === 9 ? 20 : 10;
+    const totalQuestions = window.currentQuiz ? window.currentQuiz.length : 10;
     if (currentQuestion < totalQuestions - 1) {
         currentQuestion++;
         renderQuestion();
@@ -262,7 +262,7 @@ function showResults() {
     const container = document.getElementById('taskView');
     const task = trainingTasks[currentTask];
     const quiz = window.currentQuiz;
-    const totalQuestions = currentTask === 9 ? 20 : 10;
+    const totalQuestions = window.currentQuiz ? window.currentQuiz.length : 10;
 
     // Calculate score
     let correct = 0;
