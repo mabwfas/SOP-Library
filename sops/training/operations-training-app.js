@@ -42,12 +42,12 @@ function renderTasksList() {
         const card = document.createElement('div');
         card.className = `task-card ${isCompleted ? 'completed' : ''} ${isCurrent ? 'current' : ''} ${isLocked ? 'locked' : ''}`;
         card.innerHTML = `
-            <div class="task-number">${isCompleted ? '?' : task.id}</div>
+            <div class="task-number">${isCompleted ? '' : task.id}</div>
             <div class="task-info">
                 <h3>${task.title}</h3>
                 <p>${task.description}</p>
             </div>
-            <div class="task-status">${isCompleted ? '?' : isLocked ? '??' : '?'}</div>
+            <div class="task-status">${isCompleted ? '' : isLocked ? '' : ''}</div>
         `;
 
         if (!isLocked) {
