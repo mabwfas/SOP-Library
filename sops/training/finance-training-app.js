@@ -295,16 +295,16 @@ function showResults() {
         if (!progress.completedTasks.includes(task.id)) {
             progress.completedTasks.push(task.id);
         }
-        if (task.id < 10) {
+        if (task.id < trainingTasks.length) {
             progress.currentTask = task.id + 1;
         }
         localStorage.setItem('financeTrainingProgress', JSON.stringify(progress));
 
-        if (task.id === 10) {
+        if (task.id === trainingTasks.length) {
             html += `
                 <div class="certified-badge">
                     <h2>?? CERTIFIED</h2>
-                    <p>You've passed all 10 tasks!</p>
+                    <p>You've passed all training tasks!</p>
                     <p style="margin-top: 20px; color: #94a3b8;">Next Step: Record your 30-minute video walkthrough</p>
                     <button class="nav-btn" style="margin-top: 20px;" onclick="showCertificate()">?? View Certificate</button>
                 </div>
