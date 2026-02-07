@@ -110,7 +110,7 @@ function openTask(index) {
         html += task1Content;
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="nav-btn" onclick="startQuiz(${index})">?? Take Quiz (10/10 Required)</button>
+                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (10/10 Required)</button>
                 
             </div>
         `;
@@ -135,7 +135,7 @@ function openTask(index) {
             html += fullContent;
             html += `
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button class="nav-btn" onclick="startQuiz(${index})">?? Take Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
+                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
                     
                 </div>
             `;
