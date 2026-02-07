@@ -701,7 +701,7 @@ function showNamePrompt() {
                 font-size: 1.1em;
                 width: 100%;
             ">
-                ?? Start Training
+                 Start Training
             </button>
             
             <p style="color: #64748B; font-size: 0.8em; margin-top: 20px;">
