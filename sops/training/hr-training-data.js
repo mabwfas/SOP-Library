@@ -155,12 +155,95 @@ const task4Content = `
     </table>
 </div>
 
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>⚠️ CAUTIONARY TALE: The Developer Who Quit After 3 Days</h3>
+    <p><strong>What went wrong:</strong></p>
+    <ul>
+        <li>Day 1: No access to any systems. HR said "IT will set it up soon"</li>
+        <li>Day 2: Still waiting. Sat idle, reading documentation</li>
+        <li>Day 3: Got partial access. No mentor assigned. No one checked in</li>
+        <li>Day 4: Sent resignation email: "This isn't well organized. I've accepted another offer."</li>
+    </ul>
+    
+    <p><strong>Cost to company:</strong></p>
+    <ul>
+        <li>₹25,000 wasted on recruitment process</li>
+        <li>₹15,000 3-day salary</li>
+        <li>4 weeks to find replacement</li>
+        <li>Client project delayed by 6 weeks</li>
+        <li>Total impact: <strong>₹2+ lakhs</strong></li>
+    </ul>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>💡 Lesson:</strong> Your new hire's first impression is YOUR responsibility. They should feel wanted, prepared for, and productive from Hour 1 – not abandoned.
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>📖 SUCCESS STORY: The Perfect Onboarding</h3>
+    <p><strong>Situation:</strong> New CS team member, Priya, joining remotely during busy season.</p>
+    
+    <p><strong>Day 1 (What We Did):</strong></p>
+    <ul>
+        <li>9:00 AM - All accounts ready before her first login</li>
+        <li>9:15 AM - Welcome call with manager + team, cameras on, casual introduction</li>
+        <li>10:00 AM - Buddy (Ravi) scheduled to check-in 3x daily</li>
+        <li>11:00 AM - First task assigned: "Review and summarize 10 past support tickets"</li>
+        <li>3:00 PM - Buddy reviewed her work, gave positive feedback</li>
+        <li>5:00 PM - End-of-day call: Manager asked "How was your first day? Any concerns?"</li>
+    </ul>
+    
+    <p><strong>Week 1 Result:</strong> Priya told her buddy: "I've never felt so welcomed at any company before."</p>
+    <p><strong>Month 3 Result:</strong> Priya became the fastest team member to hit 100% CSAT score.</p>
+    <p><strong>Year 1:</strong> Priya referred 2 friends who became great hires.</p>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>💡 ROI of Great Onboarding:</strong> 30 minutes of preparation = 3+ years of retention + referrals.
+    </div>
+</div>
+
 <div class="content-section">
-    <h3>🎯 30-60-90 Day Plan</h3>
+    <h3>🎯 30-60-90 Day Plan with Specific Examples</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
-        <tr style="background: rgba(16, 185, 129, 0.15);"><td style="padding: 15px;"><strong>Days 1-30: LEARN</strong><br>Understand the role, tools, team, and culture. Complete all training modules. Observe workflows.</td></tr>
-        <tr style="background: rgba(99, 102, 241, 0.15);"><td style="padding: 15px;"><strong>Days 31-60: CONTRIBUTE</strong><br>Start handling real work independently. Apply training knowledge. Ask fewer questions.</td></tr>
-        <tr style="background: rgba(139, 92, 246, 0.15);"><td style="padding: 15px;"><strong>Days 61-90: IMPACT</strong><br>Fully independent. Suggest improvements. Train others. Hit performance targets.</td></tr>
+        <tr style="background: rgba(16, 185, 129, 0.15);"><td style="padding: 15px;">
+            <strong>Days 1-30: LEARN</strong><br>
+            Understand the role, tools, team, and culture. Complete all training modules. Observe workflows.
+            <div style="margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px;">
+                <strong>Example Goals (Developer):</strong>
+                <ul style="margin: 5px 0;">
+                    <li>✅ Complete all training modules with 100% quiz scores</li>
+                    <li>✅ Shadow 3 senior developer code reviews</li>
+                    <li>✅ Complete 2 simple bug fixes with mentorship</li>
+                    <li>✅ Document questions to discuss in weekly 1:1</li>
+                </ul>
+            </div>
+        </td></tr>
+        <tr style="background: rgba(99, 102, 241, 0.15);"><td style="padding: 15px;">
+            <strong>Days 31-60: CONTRIBUTE</strong><br>
+            Start handling real work independently. Apply training knowledge. Ask fewer questions.
+            <div style="margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px;">
+                <strong>Example Goals (Developer):</strong>
+                <ul style="margin: 5px 0;">
+                    <li>✅ Complete 5 independent tasks without major revision</li>
+                    <li>✅ Lead 1 client communication with manager backup</li>
+                    <li>✅ Identify 1 improvement to team workflow</li>
+                    <li>✅ Participate actively in team meetings</li>
+                </ul>
+            </div>
+        </td></tr>
+        <tr style="background: rgba(139, 92, 246, 0.15);"><td style="padding: 15px;">
+            <strong>Days 61-90: IMPACT</strong><br>
+            Fully independent. Suggest improvements. Train others. Hit performance targets.
+            <div style="margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px;">
+                <strong>Example Goals (Developer):</strong>
+                <ul style="margin: 5px 0;">
+                    <li>✅ Manage own client project end-to-end</li>
+                    <li>✅ Mentor new joiner during their first week</li>
+                    <li>✅ Hit 90%+ on all KPIs</li>
+                    <li>✅ Contribute 1 process improvement implemented</li>
+                </ul>
+            </div>
+        </td></tr>
     </table>
 </div>
 `;
@@ -193,6 +276,64 @@ const task5Content = `
             <li>Agree on solution: "What can we do differently going forward?"</li>
             <li>Document everything: Send summary email after conversation</li>
         </ul>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 REAL PERFORMANCE CONVERSATION EXAMPLE</h3>
+    <p><em>Handling a developer who has been missing deadlines:</em></p>
+    
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong style="color: #818CF8;">MANAGER:</strong> "Amit, thanks for joining. I wanted to talk about something I've noticed over the past 2 weeks. You've missed the deadline on 3 ticket deliveries. Let's discuss what's happening."</p>
+        
+        <p style="color: #94A3B8; font-style: italic;">[States specific behavior, not vague criticism]</p>
+        
+        <p><strong style="color: #818CF8;">MANAGER:</strong> "I want you to know I'm not here to criticize. I'm here to understand and help. What's been going on?"</p>
+        
+        <p><strong style="color: #F9A8D4;">AMIT:</strong> "I've been struggling because the requirements keep changing mid-task. By the time I finish, there's a new update from the client."</p>
+        
+        <p><strong style="color: #818CF8;">MANAGER:</strong> "That makes sense. Changing requirements can be really frustrating. Here's what I can do - I'll make sure all requirements are confirmed before assignment. And if changes come during the task, we'll adjust the deadline. Does that help?"</p>
+        
+        <p><strong style="color: #F9A8D4;">AMIT:</strong> "Yes, that would help a lot. I also think I need to push back on unclear briefs instead of just guessing."</p>
+        
+        <p><strong style="color: #818CF8;">MANAGER:</strong> "Exactly. Let's commit to this: You flag unclear briefs immediately, and I ensure requirements are locked before you start. Sound fair?"</p>
+        
+        <p><strong style="color: #F9A8D4;">AMIT:</strong> "Yes, thank you for understanding."</p>
+        
+        <p><strong style="color: #818CF8;">MANAGER:</strong> "Great. I'll send you a summary of what we agreed on. Let's check in next week to see if it's working."</p>
+    </div>
+    
+    <div class="highlight-box" style="margin-top: 15px; background: rgba(16, 185, 129, 0.2);">
+        <strong>💡 Key Points:</strong>
+        <ul style="margin: 10px 0;">
+            <li>✅ Started with facts, not accusations</li>
+            <li>✅ Asked for their perspective before judging</li>
+            <li>✅ Identified root cause (changing requirements)</li>
+            <li>✅ Created shared solution with commitments from both sides</li>
+            <li>✅ Planned follow-up accountability</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>⚠️ CAUTIONARY TALE: The Ultimatum That Backfired</h3>
+    <p><strong>What went wrong:</strong> A manager had a performance issue with a designer. Instead of having a proper conversation, they sent an email:</p>
+    
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.5); font-style: italic;">
+        "Your work quality has been declining. You need to improve immediately or face consequences. No more excuses."
+    </div>
+    
+    <p><strong>Result:</strong></p>
+    <ul>
+        <li>Designer felt attacked and demotivated</li>
+        <li>Started looking for new job immediately</li>
+        <li>Quit 2 weeks later without warning</li>
+        <li>Took client knowledge with them</li>
+        <li>Team had to scramble for 4 weeks to cover</li>
+    </ul>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>💡 Lesson:</strong> Ultimatums rarely work. When someone is struggling, they need support, not threats. The goal is to improve performance, not win a confrontation.
     </div>
 </div>
 `;

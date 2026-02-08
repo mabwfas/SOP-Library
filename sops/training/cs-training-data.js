@@ -77,6 +77,57 @@ const task1Content = `
         </tr>
     </table>
 </div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>📖 REAL STORY: The ₹2 Lakh Save</h3>
+    <p><strong>Situation:</strong> A client running a fashion e-commerce site contacted us furious. Their checkout was broken during a festival sale weekend. They'd lost ₹50,000 in sales already and were threatening to leave and demand a refund of their entire project cost (₹2 lakhs).</p>
+    
+    <p><strong>What the CS rep did:</strong></p>
+    <ul>
+        <li>Immediately acknowledged the severity: "I understand this is critical for your business. Let me take full ownership right now."</li>
+        <li>Escalated to dev within 3 minutes (P1 Critical)</li>
+        <li>Kept client updated every 30 minutes with progress</li>
+        <li>Issue fixed in 2 hours (Shopify app conflict)</li>
+        <li>Followed up personally the next day</li>
+        <li>Offered 1 week free support extension as goodwill</li>
+    </ul>
+    
+    <p><strong>Result:</strong> Client stayed, left a 5-star review, and referred 2 new clients worth ₹3.5 lakhs combined.</p>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>💡 Lesson:</strong> That CS rep didn't just "handle a ticket" – they protected ₹5.5 lakhs in revenue (original project + referrals). That's the power of the right mindset.
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>⚠️ CAUTIONARY TALE: The ₹4 Lakh Lost Client</h3>
+    <p><strong>What went wrong:</strong> A premium client (paying ₹80,000/year retainer) had a simple question about updating their product images. The CS rep:</p>
+    <ul>
+        <li>Responded 8 hours late</li>
+        <li>Sent a generic "please see FAQ" response</li>
+        <li>Didn't follow up when client didn't respond</li>
+        <li>When client complained, got defensive: "That's not really a support issue"</li>
+    </ul>
+    
+    <p><strong>Result:</strong> Client cancelled. Left a negative review. Their business partner (another potential client worth ₹1.2 lakh) saw the review and went elsewhere.</p>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>💀 Total damage:</strong> ₹80k (lost retainer) + ₹80k x 4 years (expected retention) + ₹1.2L (lost referral) = <strong>₹4.4 lakhs lost</strong> over a 5-minute question.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔑 The 5 Laws of CS Excellence</h3>
+    <div class="highlight-box">
+        <ol>
+            <li><strong>Speed is Survival:</strong> First response time directly correlates with satisfaction. Under 1 hour = 2x higher retention.</li>
+            <li><strong>Empathy Before Solutions:</strong> Customers want to feel heard before they want to be fixed.</li>
+            <li><strong>Own It Completely:</strong> Never say "that's not my department." YOU are the company to them.</li>
+            <li><strong>Under-Promise, Over-Deliver:</strong> Say it takes 24 hours, fix it in 4. Never the other way around.</li>
+            <li><strong>Every Ticket is a Relationship:</strong> This isn't just a problem – it's a person who trusted us with their business.</li>
+        </ol>
+    </div>
+</div>
 `;
 
 // ============ TASK 2: COMMUNICATION EXCELLENCE ============
@@ -92,6 +143,28 @@ const task2Content = `
         <strong>E</strong> - Empathize with their situation<br>
         <strong>A</strong> - Apologize/Acknowledge the issue<br>
         <strong>T</strong> - Take action and follow through
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 HEAT Method in Action - Real Conversation</h3>
+    
+    <p><strong>❌ BAD Response (No HEAT):</strong></p>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.5);">
+        <strong>Customer:</strong> "My website has been down for 2 hours and I'm losing sales! This is unacceptable!"<br><br>
+        <strong>Bad CS Rep:</strong> "Let me check... looks like there's a server issue. It should be fixed soon. Is there anything else?"
+        <p style="color: #F87171; margin-top: 10px; font-style: italic;">❌ No empathy, no acknowledgment, no ownership, vague timeline</p>
+    </div>
+    
+    <p><strong>✅ GREAT Response (Using HEAT):</strong></p>
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.5);">
+        <strong>Customer:</strong> "My website has been down for 2 hours and I'm losing sales! This is unacceptable!"<br><br>
+        <strong>Great CS Rep:</strong><br>
+        <strong>[HEAR]</strong> "I can see exactly what you're describing - your checkout page is indeed unreachable."<br><br>
+        <strong>[EMPATHIZE]</strong> "I completely understand how stressful this is, especially during what looks like your peak sales period. Losing even an hour of sales is incredibly frustrating."<br><br>
+        <strong>[APOLOGIZE]</strong> "I sincerely apologize that this happened. This is absolutely not the experience you should have."<br><br>
+        <strong>[TAKE ACTION]</strong> "Here's what I'm doing RIGHT NOW: I've already flagged this as P1 Critical and our senior developer is on it. I'll personally update you every 30 minutes until it's resolved. As soon as we fix this, I'll also investigate the root cause to make sure it never happens again."
+        <p style="color: #34D399; margin-top: 10px; font-style: italic;">✅ Shows understanding, takes ownership, specific action plan, proactive follow-up</p>
     </div>
 </div>
 
@@ -154,7 +227,51 @@ const task2Content = `
             <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Happy to help!"</td>
             <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">More positive</td>
         </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Calm down"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I understand this is upsetting"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Never dismiss emotions</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"As I said before..."</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Let me clarify..."</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Avoids condescension</td>
+        </tr>
     </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>📖 REAL STORY: The Tone That Saved a ₹1.5L Contract</h3>
+    <p><strong>Situation:</strong> A jewelry store client was frustrated because their product images weren't displaying correctly on mobile. They sent an angry email at 11 PM demanding answers.</p>
+    
+    <p><strong>The CS rep's response (sent at 7 AM next day):</strong></p>
+    <div class="highlight-box" style="font-style: italic;">
+        "Good morning [Name],<br><br>
+        I saw your message as soon as I started today, and I want you to know this is my TOP priority this morning.<br><br>
+        First, I completely understand your frustration - your jewelry products need to look stunning on mobile because that's where most of your customers shop. A display issue isn't just an inconvenience, it's affecting your sales.<br><br>
+        I've already identified the issue: your images are using a format that some older phones don't display well. Here's what I'm doing:<br>
+        1. Converting all 47 product images to a compatible format (ETA: 2 hours)<br>
+        2. Testing on 5 different mobile devices before confirming<br>
+        3. I'll send you screenshots of the fixed pages by 12 PM<br><br>
+        I apologize this happened at all. Once fixed, I'll also add monitoring so we catch any future image issues instantly.<br><br>
+        Thank you for your patience. Talk soon,<br>
+        [Rep Name]"
+    </div>
+    
+    <p><strong>Result:</strong> Client replied: "This is exactly why we work with you. Thank you for actually caring." They added 2 more stores to their contract (₹1.5L additional revenue).</p>
+</div>
+
+<div class="content-section">
+    <h3>⚡ The 3-Second Rule</h3>
+    <div class="highlight-box">
+        <p>Before hitting send on ANY response, pause for 3 seconds and ask:</p>
+        <ol>
+            <li><strong>Would I feel good receiving this message?</strong></li>
+            <li><strong>Does this sound human or robotic?</strong></li>
+            <li><strong>Am I solving their REAL problem, not just answering their question?</strong></li>
+        </ol>
+        <p style="margin-top: 15px;"><em>If any answer is "no" - rewrite before sending.</em></p>
+    </div>
 </div>
 `;
 
@@ -327,26 +444,128 @@ const task6Content = `
     </div>
 </div>
 
-<div class="content-section">
-    <h3>🗣️ Magic Phrases for Angry Customers</h3>
-    <ul>
-        <li>"I completely understand why you're upset, and I would be too."</li>
-        <li>"You're absolutely right to expect better."</li>
-        <li>"Let me take ownership of this and fix it for you."</li>
-        <li>"Here's exactly what I'm going to do right now..."</li>
-        <li>"I'm not going to rest until this is resolved."</li>
-    </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 REAL DE-ESCALATION CONVERSATION</h3>
+    <p><em>Actual transcript from a saved client relationship:</em></p>
+    
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong style="color: #F87171;">CUSTOMER:</strong> "This is absolutely RIDICULOUS! I've been waiting THREE WEEKS for my website changes. I'm paying you people good money and getting NOTHING. I want to speak to your manager RIGHT NOW or I'm disputing every payment I've ever made to you!"</p>
+        
+        <p style="color: #94A3B8; font-style: italic;">[CS Rep takes a deep breath. Does NOT react defensively.]</p>
+        
+        <p><strong style="color: #34D399;">CS REP [ACKNOWLEDGE]:</strong> "I hear you, and I completely understand your frustration. Three weeks is far too long to wait for changes you're paying for. You have every right to be upset."</p>
+        
+        <p><strong style="color: #F87171;">CUSTOMER:</strong> "Yeah, well, 'understanding' doesn't fix my problem!"</p>
+        
+        <p><strong style="color: #34D399;">CS REP [LISTEN + VALIDATE]:</strong> "You're absolutely right – understanding alone doesn't fix it. Can you tell me exactly which changes were requested? I want to make sure I have the full picture so I can get this resolved TODAY."</p>
+        
+        <p><strong style="color: #F87171;">CUSTOMER:</strong> "I asked for new product images and a homepage banner update. Simple stuff! And I've been ignored!"</p>
+        
+        <p><strong style="color: #34D399;">CS REP [OWN IT]:</strong> "Those ARE simple tasks, and you should not have been waiting three weeks. I sincerely apologize. I don't know what caused this breakdown, but what I DO know is that I'm going to personally make sure it's done by end of day today. Not tomorrow. Today."</p>
+        
+        <p><strong style="color: #F87171;">CUSTOMER:</strong> "...Really? Today?"</p>
+        
+        <p><strong style="color: #34D399;">CS REP [SPECIFIC ACTION]:</strong> "Yes. Here's exactly what I'm doing right now: I'm flagging this as urgent with our design team. I'm going to call them directly – not email, call – and confirm they start immediately. I'll personally send you a preview by 4 PM. And after this is done, I'm going to review what went wrong so it never happens again to any client."</p>
+        
+        <p><strong style="color: #F87171;">CUSTOMER:</strong> "Well... okay. I appreciate you actually taking this seriously."</p>
+        
+        <p><strong style="color: #34D399;">CS REP:</strong> "I take YOUR business seriously. You'll hear from me by 4 PM with updates. Thank you for giving us the chance to make this right."</p>
+    </div>
+    
+    <div class="highlight-box" style="margin-top: 15px; background: rgba(16, 185, 129, 0.2);">
+        <strong>💡 RESULT:</strong> Changes delivered by 3 PM. Client sent a thank-you email. Renewed contract next month with a 20% upgrade.
+    </div>
 </div>
 
 <div class="content-section">
-    <h3>🚫 What NOT to Do</h3>
-    <ul>
-        <li>❌ Don't argue or get defensive</li>
-        <li>❌ Don't take it personally</li>
-        <li>❌ Don't blame other departments</li>
-        <li>❌ Don't make promises you can't keep</li>
-        <li>❌ Don't match their anger with your own</li>
-    </ul>
+    <h3>🗣️ Magic Phrases for Angry Customers</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Situation</th>
+            <th style="padding: 12px;">Magic Phrase</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Customer is venting</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I completely understand why you're upset, and I would be too."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">We made a mistake</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"You're absolutely right to expect better. This is on us."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Showing commitment</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Let me take ownership of this and fix it for you."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Giving confidence</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here's exactly what I'm going to do right now..."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client doubts you</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I'm not going to rest until this is resolved."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Defusing tension</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Thank you for being so patient while I sort this out."</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚫 What NOT to Do (With Real Examples)</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px;">❌ Wrong Response</th>
+            <th style="padding: 12px;">Why It's Bad</th>
+            <th style="padding: 12px;">✅ Better Response</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Calm down please"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dismisses their emotions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I understand this is frustrating"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"That's not my department"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Avoids responsibility</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Let me get the right person on this immediately"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I already explained this"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Condescending</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Let me clarify that for you"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We're very busy right now"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Makes them feel unimportant</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"You're my priority right now"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Well, you should have..."</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Blaming the customer</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Going forward, we can..."</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>📖 REAL STORY: The Legal Threat That Became a Referral</h3>
+    <p><strong>Situation:</strong> A client threatened to "involve lawyers" because their e-commerce site had been showing wrong prices for 2 days, resulting in ₹40,000 of orders at incorrect (lower) prices.</p>
+    
+    <p><strong>What the CS Rep Did:</strong></p>
+    <ol>
+        <li><strong>Didn't panic:</strong> Stayed calm despite the legal threat</li>
+        <li><strong>Validated:</strong> "I understand completely. This is a serious issue that affected your revenue."</li>
+        <li><strong>Took ownership:</strong> "I'm personally going to ensure this is resolved properly."</li>
+        <li><strong>Escalated smartly:</strong> Immediately involved the Operations Manager</li>
+        <li><strong>Offered solution:</strong> Company absorbed the ₹40k loss and honored all orders at wrong prices</li>
+        <li><strong>Prevented future:</strong> Implemented price change verification system</li>
+    </ol>
+    
+    <p><strong>Result:</strong> Client dropped all legal talk, posted a LinkedIn recommendation praising "exceptional crisis handling," and referred 3 new clients over the next 6 months.</p>
+    
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>💡 Lesson:</strong> When customers threaten legal action, they usually want to be HEARD, not to actually sue. Professional de-escalation + real solutions = loyalty.
+    </div>
 </div>
 `;
 
