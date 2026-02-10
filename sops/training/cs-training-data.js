@@ -17,6 +17,52 @@ const trainingTasks = [
 const task1Content = `
 <h2>📚 TASK 1: CS MINDSET - Support = Revenue Protection</h2>
 
+<!-- WELCOME TO DIGITAL HEROES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes - You Are Part of Something Bigger</h3>
+    <p>Before we dive into CS techniques, you need to understand something critical: <strong>You are not just joining a company. You are joining a mission.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now):</strong> ₹9.2 Crores</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027):</strong> ₹75 Crores</td>
+            </tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- THE INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+        <p style="margin: 0;">
+            <strong style="color: #FBBF24;">Sales</strong> → generates enquiries<br>
+            ↓<br>
+            <strong style="color: #60A5FA;">Development</strong> → delivers quality work<br>
+            ↓<br>
+            <strong style="color: #F472B6;">Client Satisfaction</strong> → creates happy customers<br>
+            ↓<br>
+            <strong style="color: #34D399; font-size: 1.1em;">⭐ YOU (CS)</strong> → <strong>PROTECT satisfaction & drive 5-star reviews</strong><br>
+            ↓<br>
+            <strong style="color: #A78BFA;">Better Reviews</strong> → boost algorithm positioning<br>
+            ↓<br>
+            <strong style="color: #FBBF24;">More Enquiries</strong> → the cycle continues
+        </p>
+    </div>
+    
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ Your Critical Role:</strong>
+        <p style="margin: 10px 0 0 0;">As CS, you are the <strong>voice of client satisfaction</strong>. Every interaction you have determines whether a client becomes a raving fan who leaves 5-star reviews and refers others, or a lost opportunity who damages our reputation. Your HEAT responses, your de-escalation skills, your proactive communication—these directly influence reviews, referrals, and our algorithm positioning.</p>
+    </div>
+    
+    <p style="color: #34D399; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">When CS breaks, the entire chain breaks. When you excel, everyone wins.</p>
+</div>
+
 <div class="content-section">
     <h3>💰 The Hidden Revenue Impact</h3>
     <p>Customer Service isn't a cost center. <strong>It's revenue protection.</strong></p>

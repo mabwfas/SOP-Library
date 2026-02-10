@@ -309,7 +309,7 @@
                 margin-top: 56px;
             }
         }
-    
+
         .sidebar-overlay {
             display: none;
             position: fixed;
@@ -320,11 +320,12 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 1999;
         }
+
         .sidebar-overlay.active {
             display: block;
         }
 
-    
+
         /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
         @media (max-width: 768px) {
             .header {
@@ -332,140 +333,155 @@
                 margin-bottom: 20px !important;
                 border-radius: 0 0 15px 15px !important;
             }
+
             .header h1 {
                 font-size: 1.5em !important;
                 margin-bottom: 5px !important;
             }
+
             .header .subtitle {
                 font-size: 0.9em !important;
                 margin-bottom: 10px !important;
             }
+
             .badge-row {
                 gap: 8px !important;
                 margin-top: 12px !important;
             }
+
             .badge {
                 padding: 5px 12px !important;
                 font-size: 0.75em !important;
             }
+
             .container {
                 padding: 10px !important;
             }
+
             .section {
                 padding: 15px !important;
                 margin-bottom: 15px !important;
             }
+
             .section h2 {
                 font-size: 1.2em !important;
             }
         }
+
         /* ===== END MOBILE HEADER SIZE ===== */
 
-    
+
         /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
         @media (max-width: 768px) {
             .sidebar {
                 transform: translateX(-100%) !important;
                 transition: transform 0.3s ease !important;
             }
-            .sidebar.active, .sidebar.open {
+
+            .sidebar.active,
+            .sidebar.open {
                 transform: translateX(0) !important;
             }
         }
+
         /* ===== END SIDEBAR CLOSED ===== */
 
-    
-    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
-    .mobile-header {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 56px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-        z-index: 9999;
-        padding: 0 12px;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 12px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
 
-    .mobile-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: white;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        flex-shrink: 0;
-    }
-
-    .mobile-menu-btn:hover {
-        background: rgba(255, 255, 255, 0.25);
-    }
-
-    .mobile-home-btn {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        color: #10B981;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        padding: 10px 16px;
-        background: rgba(16, 185, 129, 0.15);
-        border-radius: 10px;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        white-space: nowrap;
-    }
-
-    .sidebar-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 9998;
-    }
-
-    .sidebar-overlay.active {
-        display: block;
-    }
-
-    @media (max-width: 768px) {
+        /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
         .mobile-header {
-            display: flex !important;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+            z-index: 9999;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        .sidebar {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            height: 100vh !important;
-            width: 280px !important;
-            z-index: 9999 !important;
-            transform: translateX(-100%) !important;
-            transition: transform 0.3s ease !important;
-        }
-        .sidebar.active, .sidebar.open {
-            transform: translateX(0) !important;
-        }
-        .main-content {
-            margin-left: 0 !important;
-            padding-top: 70px !important;
-            width: 100% !important;
-        }
-    }
-    /* ========== END DEFINITIVE MOBILE FIX ========== */
 
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-menu-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex !important;
+            }
+
+            .sidebar {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100vh !important;
+                width: 280px !important;
+                z-index: 9999 !important;
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0) !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+                padding-top: 70px !important;
+                width: 100% !important;
+            }
+        }
+
+        /* ========== END DEFINITIVE MOBILE FIX ========== */
     </style>
     <link rel="stylesheet" href="../assets/css/hero-cursor.css">
     <link rel="stylesheet" href="../assets/css/mobile-override.css">
@@ -525,6 +541,50 @@
                 <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
                     to become a certified UI/UX Designer.</p>
             </div>
+
+            <!-- WELCOME TO DIGITAL HEROES - CULTURE SECTION -->
+            <div
+                style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 0 0 40px 0;">
+                <h3 style="color: #60A5FA; margin-top: 0; font-size: 1.4em;">🚀 Welcome to Digital Heroes - You Are Part
+                    of Something Bigger</h3>
+                <p style="color: #E2E8F0; margin-bottom: 20px;">Before you begin, understand this: <strong
+                        style="color: white;">You are not just joining a company. You are joining a mission.</strong>
+                </p>
+
+                <div
+                    style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0; border-radius: 8px;">
+                    <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+                    <div style="display: flex; gap: 20px; margin: 15px 0; flex-wrap: wrap;">
+                        <div
+                            style="flex: 1; min-width: 140px; background: rgba(59, 130, 246, 0.2); padding: 15px; border-radius: 8px; text-align: center;">
+                            <strong style="color: #CBD5E1;">Point A (Now)</strong><br>
+                            <span style="color: #60A5FA; font-size: 1.3em; font-weight: bold;">₹9.2 Crores</span>
+                        </div>
+                        <div
+                            style="flex: 1; min-width: 140px; background: rgba(99, 102, 241, 0.2); padding: 15px; border-radius: 8px; text-align: center;">
+                            <strong style="color: #CBD5E1;">Point B (2027)</strong><br>
+                            <span style="color: #A78BFA; font-size: 1.3em; font-weight: bold;">₹75 Crores</span>
+                        </div>
+                    </div>
+                    <p style="color: #CBD5E1; margin: 0;">Every team member contributes to this journey, and every team
+                        member benefits through our equity-sharing model—<strong style="color: white;">even interns from
+                            Day 1</strong>.</p>
+                </div>
+
+                <div
+                    style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(168, 85, 247, 0.4); padding: 20px; border-radius: 12px; margin-top: 20px;">
+                    <h4 style="color: #A78BFA; margin: 0 0 10px 0;">🔗 The Interconnected Chain: Where YOU Fit</h4>
+                    <p style="color: #CBD5E1;">At Digital Heroes, every role is critical:</p>
+                    <p
+                        style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; color: #A78BFA; font-weight: 600; text-align: center; margin: 10px 0;">
+                        ⭐ YOU (Designer) → THE VISUAL ARCHITECT who shapes first impressions
+                    </p>
+                    <p style="color: #CBD5E1; margin: 0;">Your designs are the first thing clients see. Beautiful
+                        mockups win reviews. Great UX prevents 50% of support tickets. <strong
+                            style="color: #A78BFA;">You shape the brand experience.</strong></p>
+                </div>
+            </div>
+            <!-- END CULTURE SECTION -->
 
             <div class="timeline">
                 <!-- Step 1 -->
@@ -600,7 +660,7 @@
     <script>
 , 10);
             } else {
-                document.removeEventListener('click', closeSidebarOutside);
+                doc        EventListener('click', closeSidebarOutside);
             }
         }
 
@@ -610,7 +670,7 @@
 
             if (sidebar && !sidebar.contains(event.target) && (!toggleBtn || !toggleBtn.contains(event.target))) {
                 sidebar.classList.remove('open');
-                document.removeEventListener('click', closeSidebarOutside);
+                document.removeEventListenelidebarOutside);
             }
         }
     </script>
@@ -641,26 +701,22 @@
             }
         }
 
-        // Click outside to close sidebar
+        // Click outside to close si debar
         document.addEventListener('click', function(event) {
             var sidebar = document.querySelector('.sidebar');
             var toggleBtn = document.querySelector('.mobile-menu-btn');
-            var overlay = document.querySelector('.sidebar-overlay');
-            
-            if (!sidebar || !toggleBtn) return;
+            v document.querySelector('.sidebar-overlay');
+             if (!sidebar || !toggleBtn) return;
             
             var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
             var clickedOnSidebar = sidebar.contains(event.target);
-            var clickedOnToggle = toggleBtn.contains(event.target);
+           OnToggle = toggleBtn.contains(event.target);
             
             if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
                 closeSidebar();
-            }
-        });
-        // ===== END SIDEBAR TOGGLE =====
+                       // ===== END SIDEBAR TOGGLE =====
     </script>
 
 </body>
 
 </html>
-

@@ -42,12 +42,12 @@ function renderTasksList() {
         const card = document.createElement('div');
         card.className = `task-card ${isCompleted ? 'completed' : ''} ${isCurrent ? 'current' : ''} ${isLocked ? 'locked' : ''}`;
         card.innerHTML = `
-            <div class="task-number">${isCompleted ? '' : task.id}</div>
+            <div class="task-number">${isCompleted ? '✓' : task.id}</div>
             <div class="task-info">
                 <h3>${task.title}</h3>
                 <p>${task.description}</p>
             </div>
-            <div class="task-status">${isCompleted ? '' : isLocked ? '' : ''}</div>
+            <div class="task-status">${isCompleted ? '✅' : isLocked ? '🔒' : '→'}</div>
         `;
 
         if (!isLocked) {
@@ -101,7 +101,7 @@ function openTask(index) {
     if (task.studyGuide && task.studyGuide.length > 0) {
         html += `
             <div class="study-guide">
-                <h4>?? Before You Begin</h4>
+                <h4>📚 Before You Begin</h4>
                 <ul>
                     ${task.studyGuide.map(item => `<li>${item}</li>`).join('')}
                 </ul>
@@ -139,9 +139,9 @@ function openTask(index) {
     } else {
         html += `
             <div class="content-section">
-                <h3>?? Task ${task.id}: ${task.title}</h3>
+                <h3>📝 Task ${task.id}: ${task.title}</h3>
                 <div class="warning-box">
-                    <strong>?? Error Loading Content</strong><br>
+                    <strong>⚠️ Error Loading Content</strong><br>
                     Content variable not found. Check data file.
                 </div>
             </div>
@@ -282,7 +282,7 @@ function renderQuestion() {
 
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="openTask(currentTask)">? Exit Quiz</button>
+            <button class="back-btn" onclick="openTask(currentTask)">← Exit Quiz</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
         <div class="quiz-section">
@@ -299,8 +299,8 @@ function renderQuestion() {
                 </div>
             </div>
             <div class="quiz-nav">
-                <button class="nav-btn" ${currentQuestion === 0 ? 'disabled' : ''} onclick="prevQuestion()">? Previous</button>
-                <button class="nav-btn" id="nextBtn" disabled onclick="nextQuestion()">Next ?</button>
+                <button class="nav-btn" ${currentQuestion === 0 ? 'disabled' : ''} onclick="prevQuestion()">← Previous</button>
+                <button class="nav-btn" id="nextBtn" disabled onclick="nextQuestion()">Next →</button>
             </div>
         </div>
     `;
@@ -360,14 +360,14 @@ function showResults() {
 
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="openTask(currentTask)">? content</button>
+            <button class="back-btn" onclick="openTask(currentTask)">← Back to Content</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
         <div class="quiz-results">
             <div class="results-score ${passed ? 'passed' : 'failed'}">${correct}/${totalQuestions}</div>
             <div class="results-message">
                 ${passed
-            ? '?? Congratulations! You passed!'
+            ? '🎉 Congratulations! You passed!'
             : `? You need ${totalQuestions}/${totalQuestions}. Review the material and try again.`}
             </div>
     `;
@@ -385,15 +385,15 @@ function showResults() {
         if (task.id === 12) {
             html += `
                 <div class="certified-badge">
-                    <h2>?? CERTIFIED</h2>
+                    <h2>🏆 CERTIFIED</h2>
                     <p>You've passed all 12 tasks!</p>
                     <p style="margin-top: 20px; color: #94a3b8;">Next Step: Report to HQ</p>
-                    <button class="nav-btn" style="margin-top: 20px;" onclick="showCertificate()">?? View Certificate</button>
+                    <button class="nav-btn" style="margin-top: 20px;" onclick="showCertificate()">🎓 View Certificate</button>
                 </div>
             `;
         } else {
             html += `<div style="text-align: center; margin-top: 30px;">
-                <p style="color: #10B981; font-size: 1.2em; margin-bottom: 15px;">? Moving to Task ${task.id + 1}...</p>
+                <p style="color: #10B981; font-size: 1.2em; margin-bottom: 15px;">✅ Moving to Task ${task.id + 1}...</p>
                 <div style="width: 200px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 10px; margin: 0 auto; overflow: hidden;">
                     <div style="height: 100%; background: linear-gradient(90deg, #10B981, #06B6D4); animation: progressAnim 1.5s ease forwards;"></div>
                 </div>
@@ -411,8 +411,8 @@ function showResults() {
     } else {
         html += `
             <div style="margin-top: 20px;">
-                <button class="nav-btn" style="margin-right: 15px;" onclick="startQuiz(${currentTask})">?? Retry Quiz</button>
-                <button class="back-btn" onclick="closeTask()">?? Review Material</button>
+                <button class="nav-btn" style="margin-right: 15px;" onclick="startQuiz(${currentTask})">🔄 Retry Quiz</button>
+                <button class="back-btn" onclick="closeTask()">📖 Review Material</button>
             </div>
         `;
     }
@@ -477,11 +477,11 @@ function showCertificate() {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            " class="no-print">?</button>
+            " class="no-print">✕</button>
             
             <!-- Certificate Header -->
             <div style="text-align: center; margin-bottom: 40px;">
-                <div style="font-size: 3em; margin-bottom: 10px;">??</div>
+                <div style="font-size: 3em; margin-bottom: 10px;">🎓</div>
                 <h1 style="
                     font-size: 2.5em;
                     font-weight: 800;
@@ -567,7 +567,7 @@ function showCertificate() {
                     <div style="
                         font-size: 2.5em;
                         color: rgba(99, 102, 241, 0.3);
-                    ">??</div>
+                    ">🏆</div>
                 </div>
                 
                 <div style="text-align: center;">
@@ -613,7 +613,7 @@ function showCertificate() {
                     transition: transform 0.2s, box-shadow 0.2s;
                 " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 30px rgba(99, 102, 241, 0.4)';"
                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                    ??? Print Certificate
+                    🖨️ Print Certificate
                 </button>
             </div>
         </div>

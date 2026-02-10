@@ -807,98 +807,102 @@
                 margin-top: 56px;
             }
         }
-    
-    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
-    .mobile-header {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 56px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-        z-index: 9999;
-        padding: 0 12px;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 12px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
 
-    .mobile-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: white;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        flex-shrink: 0;
-    }
-
-    .mobile-menu-btn:hover {
-        background: rgba(255, 255, 255, 0.25);
-    }
-
-    .mobile-home-btn {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        color: #10B981;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        padding: 10px 16px;
-        background: rgba(16, 185, 129, 0.15);
-        border-radius: 10px;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        white-space: nowrap;
-    }
-
-    .sidebar-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 9998;
-    }
-
-    .sidebar-overlay.active {
-        display: block;
-    }
-
-    @media (max-width: 768px) {
+        /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
         .mobile-header {
-            display: flex !important;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+            z-index: 9999;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        .sidebar {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            height: 100vh !important;
-            width: 280px !important;
-            z-index: 9999 !important;
-            transform: translateX(-100%) !important;
-            transition: transform 0.3s ease !important;
-        }
-        .sidebar.active, .sidebar.open {
-            transform: translateX(0) !important;
-        }
-        .main-content {
-            margin-left: 0 !important;
-            padding-top: 70px !important;
-            width: 100% !important;
-        }
-    }
-    /* ========== END DEFINITIVE MOBILE FIX ========== */
 
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-menu-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex !important;
+            }
+
+            .sidebar {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100vh !important;
+                width: 280px !important;
+                z-index: 9999 !important;
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0) !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+                padding-top: 70px !important;
+                width: 100% !important;
+            }
+        }
+
+        /* ========== END DEFINITIVE MOBILE FIX ========== */
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
@@ -907,9 +911,10 @@
     <link rel="stylesheet" href="assets/css/mobile-override.css">
     <link rel="stylesheet" href="assets/css/copy-button.css">
 </head>
+
 <body>
     <div class="sidebar-overlay" onclick="closeSidebar()"></div>
-        <div class="mobile-header">
+    <div class="mobile-header">
         <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
         <a href="index.html" class="mobile-home-btn">&#127968;</a>
     </div>
@@ -944,8 +949,6 @@
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
-            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
-                Test</button>
         </div>
         <div class="sidebar-search"><input type="text" id="searchInput" placeholder="🔍 Search..."
                 onkeyup="searchSOP()"></div>
@@ -1028,7 +1031,8 @@
                     <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
                     <div id="resultsList"></div>
                     <button onclick="clearSearch()"
-                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear  Search</button>
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                        Search</button>
                 </div>
 
                 <script>
@@ -1062,7 +1066,8 @@
                 <h3 style="margin-bottom: 15px;">🔍 Search Results (<span id="resultCount">0</span>)</h3>
                 <div id="resultsList"></div>
                 <button onclick="clearSearch()"
-                    style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear  Search</button>
+                    style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                    Search</button>
             </div>
 
             <script>
@@ -1087,6 +1092,69 @@
                 function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section, .critical-alert').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
             </script>
 
+            <!-- CULTURE: WELCOME TO DIGITAL HEROES -->
+            <div class="content-section"
+                style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes — You Are Part of Something
+                    Bigger</h3>
+                <p>Before we dive into design principles, you need to understand something critical: <strong>You are not
+                        just joining a company. You are joining a mission.</strong></p>
+                <div class="highlight-box"
+                    style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+                    <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+                    <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+                        <tr style="background: rgba(59, 130, 246, 0.2);">
+                            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A
+                                    (Now):</strong> ₹9.2 Crores</td>
+                            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B
+                                    (2027):</strong> ₹75 Crores</td>
+                        </tr>
+                    </table>
+                    <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits
+                        from it through our equity-sharing model—<strong>even interns from Day 1</strong>.</p>
+                </div>
+            </div>
+
+            <!-- CULTURE: THE INTERCONNECTED CHAIN -->
+            <div class="content-section"
+                style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(244, 114, 182, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                <h3 style="color: #F472B6; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+                <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is
+                    equally critical:</p>
+                <div
+                    style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+                    <p style="margin: 0;">
+                        <strong style="color: #FBBF24;">Sales</strong> → brings in clients<br>
+                        ↓<br>
+                        <strong style="color: #F472B6; font-size: 1.2em;">⭐ YOU (Design)</strong> → <strong>THE VISUAL
+                            ARCHITECT — create designs that convert visitors into customers</strong><br>
+                        ↓<br>
+                        <strong style="color: #8B5CF6;">Development</strong> → brings designs to life<br>
+                        ↓<br>
+                        <strong style="color: #34D399;">Client Satisfaction</strong> → creates happy customers<br>
+                        ↓<br>
+                        <strong style="color: #60A5FA;">CS Team</strong> → protects satisfaction<br>
+                        ↓<br>
+                        <strong style="color: #A78BFA;">5-Star Reviews</strong> → boost algorithm positioning<br>
+                        ↓<br>
+                        <strong style="color: #FBBF24;">More Organic Enquiries</strong> → the cycle amplifies
+                    </p>
+                </div>
+                <div class="highlight-box"
+                    style="background: rgba(236, 72, 153, 0.15); border-left: 4px solid #EC4899; padding: 15px; margin: 15px 0;">
+                    <strong style="color: #F472B6;">🎨 Your Critical Role:</strong>
+                    <p style="margin: 10px 0 0 0;">As a designer, you are the <strong>VISUAL ARCHITECT</strong> who
+                        shapes the first impression every client's customer will ever have. Your designs don't just look
+                        beautiful — they convert visitors into buyers, build brand credibility, and set Digital Heroes
+                        apart from every template-slapping agency. Without your creative vision, development has nothing
+                        meaningful to build, and clients have nothing that stands out. Every pixel you craft moves us
+                        closer to our ₹75 Crore goal.</p>
+                </div>
+                <p style="color: #F472B6; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">Bad
+                    design = lost conversions = lost revenue = chain breaks. YOUR creativity powers the visual engine.
+                </p>
+            </div>
+
             <!-- Opening Story -->
             <section class="section">
                 <div class="section-header">
@@ -1096,13 +1164,15 @@
 
                 <div class="story-box">
                     <h4>Two Stores, Same Products, Wildly Different Results</h4>
-                    <p>Two skincare brands launched in the same month. Same products. Same prices. Same marketing  budget.
+                    <p>Two skincare brands launched in the same month. Same products. Same prices. Same marketing
+                        budget.
                     </p>
 
-                    <p><strong>Store A:</strong> Basic template, default fonts, stock images, cluttered layout. Looked  like  every other store.</p>
+                    <p><strong>Store A:</strong> Basic template, default fonts, stock images, cluttered layout. Looked
+                        like every other store.</p>
 
                     <p><strong>Store B:</strong> Custom color palette, premium typography, lifestyle photography,
-                        generous  whitespace, trust badges strategically placed.</p>
+                        generous whitespace, trust badges strategically placed.</p>
 
                     <p><strong>Results after 30 days:</strong></p>
                     <ul style="margin: 15px 0 15px 20px;">
@@ -1113,7 +1183,9 @@
                     <p>The ONLY difference? Design quality. Same traffic turned into 4x more revenue.</p>
 
                     <div class="moral">
-                        <strong>🎯 The Lesson:</strong> Design isn't decoration — it's the difference between visitors  leaving or buying. A "pretty" design that doesn't convert is worthless. A conversion-focused  design  that looks premium? That's what generates revenue.
+                        <strong>🎯 The Lesson:</strong> Design isn't decoration — it's the difference between visitors
+                        leaving or buying. A "pretty" design that doesn't convert is worthless. A conversion-focused
+                        design that looks premium? That's what generates revenue.
                     </div>
                 </div>
             </section>
@@ -1145,7 +1217,8 @@
 
                 <div class="highlight-box" style="margin-top: 20px;">
                     <h3 style="margin-bottom: 15px;">5. DESIGN FOR CONVERSION, NOT AWARDS</h3>
-                    <p>A beautiful store that doesn't sell is a failure. Every design decision should answer: "Will this  help visitors buy?"</p>
+                    <p>A beautiful store that doesn't sell is a failure. Every design decision should answer: "Will this
+                        help visitors buy?"</p>
                 </div>
             </section>
 
@@ -1156,7 +1229,8 @@
 
                 <div class="highlight-box" style="background: rgba(255,255,255,0.15);">
                     <h3 style="margin-bottom: 15px;">✅ You Own Your Work 100%</h3>
-                    <p style="font-size: 1.1em;">You are <strong>100% responsible</strong> for the quality of your  designs:</p>
+                    <p style="font-size: 1.1em;">You are <strong>100% responsible</strong> for the quality of your
+                        designs:</p>
                     <ul style="margin-top: 15px; line-height: 1.8;">
                         <li><strong>Colors</strong> — Your choice, your responsibility</li>
                         <li><strong>Typography</strong> — Your choice, your responsibility</li>
@@ -1164,12 +1238,14 @@
                         <li><strong>Imagery</strong> — Your choice, your responsibility</li>
                         <li><strong>Overall aesthetic</strong> — Your choice, your responsibility</li>
                     </ul>
-                    <p style="margin-top: 15px;"><strong>Goal: OVERDELIVER — exceed expectations, don't just meet  them.</strong></p>
+                    <p style="margin-top: 15px;"><strong>Goal: OVERDELIVER — exceed expectations, don't just meet
+                            them.</strong></p>
                 </div>
 
                 <div class="highlight-box" style="margin-top: 20px; background: rgba(220, 38, 38, 0.4);">
                     <h3 style="margin-bottom: 10px;">⚠️ Zero Tolerance Policy</h3>
-                    <p><strong>After 15 days of onboarding:</strong> ONE careless mistake on a live design = potential  removal from client work.</p>
+                    <p><strong>After 15 days of onboarding:</strong> ONE careless mistake on a live design = potential
+                        removal from client work.</p>
                     <ul style="margin-top: 10px; line-height: 1.8;">
                         <li>No typos in hero text</li>
                         <li>No broken images</li>
@@ -1228,10 +1304,11 @@
                 <div class="warning-story">
                     <h4>The Client Who Wanted "MORE"</h4>
                     <p>A client once insisted on adding more elements to their homepage: more colors, more animations,
-                        more  sections, more products. "The more content, the better!" they said.</p>
+                        more sections, more products. "The more content, the better!" they said.</p>
                     <p>We explained: More isn't better. Clarity is better.</p>
                     <p>They insisted. We compromised. The cluttered design launched.</p>
-                    <p>Result: 0.9% conversion rate. Visitors couldn't find what they wanted. Too many choices = no  choice.
+                    <p>Result: 0.9% conversion rate. Visitors couldn't find what they wanted. Too many choices = no
+                        choice.
                     </p>
                     <p>We redesigned with half the elements, double the whitespace. Conversion jumped to 2.8%.</p>
                     <div class="lesson">
@@ -1360,25 +1437,29 @@
                     <div class="font-example">
                         <div class="font-name">LUXURY / HIGH-END</div>
                         <div class="font-sample" style="font-family: Playfair Display, serif;">Playfair Display</div>
-                        <div class="font-sample" style="font-family: Lato, sans-serif; font-size: 1.1em;">+ Lato for  body  text</div>
+                        <div class="font-sample" style="font-family: Lato, sans-serif; font-size: 1.1em;">+ Lato for
+                            body text</div>
                     </div>
 
                     <div class="font-example">
                         <div class="font-name">MODERN / TECH</div>
                         <div class="font-sample" style="font-family: Poppins, sans-serif;">Poppins</div>
-                        <div class="font-sample" style="font-family: Inter, sans-serif; font-size: 1.1em;">+ Inter for  body  text</div>
+                        <div class="font-sample" style="font-family: Inter, sans-serif; font-size: 1.1em;">+ Inter for
+                            body text</div>
                     </div>
 
                     <div class="font-example">
                         <div class="font-name">CLEAN / MINIMAL</div>
                         <div class="font-sample" style="font-family: Outfit, sans-serif;">Outfit</div>
-                        <div class="font-sample" style="font-family: Open Sans, sans-serif; font-size: 1.1em;">+ Open  Sans  for body text</div>
+                        <div class="font-sample" style="font-family: Open Sans, sans-serif; font-size: 1.1em;">+ Open
+                            Sans for body text</div>
                     </div>
 
                     <div class="font-example">
                         <div class="font-name">FRIENDLY / APPROACHABLE</div>
                         <div class="font-sample" style="font-family: Nunito, sans-serif;">Nunito</div>
-                        <div class="font-sample" style="font-family: Roboto, sans-serif; font-size: 1.1em;">+ Roboto for  body text</div>
+                        <div class="font-sample" style="font-family: Roboto, sans-serif; font-size: 1.1em;">+ Roboto for
+                            body text</div>
                     </div>
                 </div>
 
@@ -1546,7 +1627,7 @@
                 <div class="info-box danger">
                     <h4>🚨 70% OF TRAFFIC IS MOBILE</h4>
                     <p>If mobile isn't perfect, you're losing 70% of potential sales. Mobile isn't an afterthought —
-                        it's  the PRIMARY experience.</p>
+                        it's the PRIMARY experience.</p>
                 </div>
 
                 <h3>🎨 Mobile Design Checklist</h3>
@@ -1995,7 +2076,9 @@
                         <li><strong>Tiny fonts (&lt;14px)</strong> — Accessibility issue, loses customers</li>
                         <li><strong>50+ different colors</strong> — No brand consistency</li>
                     </ul>
-                    <p style="margin-top: 15px;"><strong>Script:</strong> "I understand you want that, but our  experience  shows it can actually hurt conversions. Here's a better alternative that achieves the same  goal..."
+                    <p style="margin-top: 15px;"><strong>Script:</strong> "I understand you want that, but our
+                        experience shows it can actually hurt conversions. Here's a better alternative that achieves the
+                        same goal..."
                     </p>
                 </div>
             </section>
@@ -2119,7 +2202,8 @@
 
                 <div class="info-box gold">
                     <h4>💡 Consistent File Structure = Faster Handoffs</h4>
-                    <p>Follow this structure for every project. It helps developers find assets and helps you find old  work.
+                    <p>Follow this structure for every project. It helps developers find assets and helps you find old
+                        work.
                     </p>
                 </div>
 
@@ -2257,7 +2341,8 @@
                         <li><strong>Start with context:</strong> "Based on your brief, here's what I designed..."</li>
                         <li><strong>Explain decisions:</strong> "I chose this layout because..."</li>
                         <li><strong>Show mobile first:</strong> Most clients forget to check mobile</li>
-                        <li><strong>Ask specific questions:</strong> "Does this header feel right?" not "What do you  think?"
+                        <li><strong>Ask specific questions:</strong> "Does this header feel right?" not "What do you
+                            think?"
                         </li>
                         <li><strong>Document feedback:</strong> Write it down during the call, send summary after</li>
                     </ul>
@@ -2265,8 +2350,11 @@
 
                 <div class="info-box warning" style="margin-top: 20px;">
                     <h4>⚠️ When Client Asks for Changes You Disagree With</h4>
-                    <p style="margin-top: 10px;"><strong>Script:</strong> "I understand you want [their request]. I'd  like  to suggest [your alternative] because [reason based on conversions/UX]. Would you like to see a  mockup of both options so we can compare?"</p>
-                    <p style="margin-top: 10px;"><em>This lets you push back professionally while keeping them in  control.</em></p>
+                    <p style="margin-top: 10px;"><strong>Script:</strong> "I understand you want [their request]. I'd
+                        like to suggest [your alternative] because [reason based on conversions/UX]. Would you like to
+                        see a mockup of both options so we can compare?"</p>
+                    <p style="margin-top: 10px;"><em>This lets you push back professionally while keeping them in
+                            control.</em></p>
                 </div>
             </section>
 
@@ -2283,7 +2371,8 @@
                 <div class="info-box success" style="margin-bottom: 30px;">
                     <p><strong>Handle in this order every day:</strong></p>
                     <ol style="margin-top: 15px; line-height: 2;">
-                        <li><strong>🔴 P0 - Revision Requests from Clients</strong> → Active projects waiting on your  changes.</li>
+                        <li><strong>🔴 P0 - Revision Requests from Clients</strong> → Active projects waiting on your
+                            changes.</li>
                         <li><strong>🔴 P0 - Deadline-Day Deliveries</strong> → Designs due TODAY must be completed.</li>
                         <li><strong>🔴 P0 - PM/Client Questions</strong> → Respond within 1 hour. Don't block decisions.
                         </li>
@@ -2296,36 +2385,46 @@
                         <li><strong>⚪ P3 - Inspiration & Learning</strong> → Dribbble, tutorials, skill development.
                         </li>
                     </ol>
-                    <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Client-facing revisions > Deadlines > New  designs > Personal growth.</p>
+                    <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Client-facing revisions > Deadlines > New
+                        designs > Personal growth.</p>
                 </div>
 
                 <h3 id="bad-brief">🔴 Client Says "I'll Know It When I See It"</h3>
                 <div class="info-box danger">
-                    <p><strong>Situation:</strong> Client can't articulate what they want, expects you to read their  mind.
+                    <p><strong>Situation:</strong> Client can't articulate what they want, expects you to read their
+                        mind.
                     </p>
-                    <p><strong>Response:</strong> "Let me show you 3 different directions. Please point to elements you  like  in each one. This will help me understand your vision."</p>
+                    <p><strong>Response:</strong> "Let me show you 3 different directions. Please point to elements you
+                        like in each one. This will help me understand your vision."</p>
                     <p><strong>Rule:</strong> Always use mood boards and examples. Never design blind.</p>
                 </div>
 
                 <h3 id="own-design">🎨 🔴 Client Wants to Use Their Own "Design"</h3>
                 <div class="info-box warning">
-                    <p><strong>Situation:</strong> Client provides a terrible sketch/mockup and wants you to implement  it  exactly.</p>
-                    <p><strong>Response:</strong> "Thank you for sharing your vision! I love [specific element]. I'd  like to  suggest some enhancements that will improve [conversion/usability/mobile experience]. Can I show  you  some options?"</p>
+                    <p><strong>Situation:</strong> Client provides a terrible sketch/mockup and wants you to implement
+                        it exactly.</p>
+                    <p><strong>Response:</strong> "Thank you for sharing your vision! I love [specific element]. I'd
+                        like to suggest some enhancements that will improve [conversion/usability/mobile experience].
+                        Can I show you some options?"</p>
                     <p><strong>Rule:</strong> Educate gently, but document if they insist on bad design.</p>
                 </div>
 
                 <h3 id="too-many-cooks">🔴 Too Many Cooks (Multiple Stakeholders)</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Client has partner/spouse/friend all giving conflicting feedback.</p>
-                    <p><strong>Response:</strong> "I'm receiving different feedback from multiple people. Could you  consolidate into one unified feedback document? This ensures we stay on timeline."</p>
-                    <p><strong>Rule:</strong> One point of contact for design feedback. Escalate to PM if chaos  continues.
+                    <p><strong>Response:</strong> "I'm receiving different feedback from multiple people. Could you
+                        consolidate into one unified feedback document? This ensures we stay on timeline."</p>
+                    <p><strong>Rule:</strong> One point of contact for design feedback. Escalate to PM if chaos
+                        continues.
                     </p>
                 </div>
 
                 <h3 id="wont-convert">🎨 🔴 Client Wants Design That Won't Convert</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client insists on busy design, hidden CTAs, or poor UX choices.</p>
-                    <p><strong>Response:</strong> "I want to share some data: [stat about conversion]. Your current  request  may impact sales negatively. I recommend [alternative]. Would you like me to show you how?"</p>
+                    <p><strong>Response:</strong> "I want to share some data: [stat about conversion]. Your current
+                        request may impact sales negatively. I recommend [alternative]. Would you like me to show you
+                        how?"</p>
                     <p><strong>Rule:</strong> Advise with data. If they insist, document your recommendation.</p>
                 </div>
 
@@ -2333,28 +2432,34 @@
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client keeps asking for "just one more tweak" beyond revision rounds.
                     </p>
-                    <p><strong>Response:</strong> Route through PM: "We've completed the included revisions. I'll check  with  the PM about options for additional design work."</p>
+                    <p><strong>Response:</strong> Route through PM: "We've completed the included revisions. I'll check
+                        with the PM about options for additional design work."</p>
                     <p><strong>Rule:</strong> Track revisions. Additional rounds = additional quote.</p>
                 </div>
 
                 <h3 id="all-disapprove">🔴 Client Disapproves of Everything</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Nothing you show is ever right. Client always negative.</p>
-                    <p><strong>Response:</strong> "Help me understand: What specific elements aren't working? Can you  show  me examples of designs you love?" If continues, escalate to PM.</p>
+                    <p><strong>Response:</strong> "Help me understand: What specific elements aren't working? Can you
+                        show me examples of designs you love?" If continues, escalate to PM.</p>
                     <p><strong>Rule:</strong> Get specifics. Vague criticism = no actionable feedback.</p>
                 </div>
 
                 <h3 id="free-concept">🎨 🔴 Client Wants Free Design Concepts Before Ordering</h3>
                 <div class="info-box danger">
                     <p><strong>Situation:</strong> Prospect asks "Can you show me what you'd design first?"</p>
-                    <p><strong>Response:</strong> Route to Sales: "We don't create custom designs before project  confirmation. Our portfolio demonstrates our quality. Once you order, you'll receive dedicated  design concepts."</p>
+                    <p><strong>Response:</strong> Route to Sales: "We don't create custom designs before project
+                        confirmation. Our portfolio demonstrates our quality. Once you order, you'll receive dedicated
+                        design concepts."</p>
                     <p><strong>Rule:</strong> Never do spec work. Our portfolio speaks for itself.</p>
                 </div>
 
                 <h3 id="bad-assets">🔴 Assets Provided Are Low Quality</h3>
                 <div class="info-box warning">
                     <p><strong>Situation:</strong> Client sends blurry images, screenshots, or low-res logos.</p>
-                    <p><strong>Response:</strong> "To achieve premium results, I need high-resolution assets: Logo in  SVG/PNG (transparent), photos min 2000px wide. Current assets will look pixelated on the final  design."</p>
+                    <p><strong>Response:</strong> "To achieve premium results, I need high-resolution assets: Logo in
+                        SVG/PNG (transparent), photos min 2000px wide. Current assets will look pixelated on the final
+                        design."</p>
                     <p><strong>Rule:</strong> Don't compromise quality. Request proper assets before proceeding.</p>
                 </div>
             </section>
@@ -2369,22 +2474,26 @@
 
                 <div style="text-align: center; padding: 30px 0;">
                     <div style="font-size: 48px; margin-bottom: 20px;">🎨</div>
-                    <blockquote  style="font-size: 24px; font-style: italic; color: #F472B6; margin-bottom: 20px; line-height: 1.6;">
+                    <blockquote
+                        style="font-size: 24px; font-style: italic; color: #F472B6; margin-bottom: 20px; line-height: 1.6;">
                         "Design is not just what it looks like. Design is how it works. And how it CONVERTS."
                     </blockquote>
                     <p style="color: #9CA3AF;">— Inspired by Steve Jobs</p>
                 </div>
 
                 <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin: 30px 0;">
-                    <h3 style="color: #F472B6; margin-bottom: 15px;">🏆 📖 Success Story: The Button That Made $10,000</h3>
+                    <h3 style="color: #F472B6; margin-bottom: 15px;">🏆 📖 Success Story: The Button That Made $10,000
+                    </h3>
                     <p style="color: #E5E7EB; line-height: 1.8;">
-                        A client's "Add to Cart" button was the same color as the background — barely visible. Our  designer  made ONE change: a high-contrast, bold button with subtle animation.
+                        A client's "Add to Cart" button was the same color as the background — barely visible. Our
+                        designer made ONE change: a high-contrast, bold button with subtle animation.
                         <br><br>
                         <strong style="color: #10B981;">The result?</strong> Conversion rate jumped from 1.2% to 2.8%
                         overnight. That single button change generated an extra <strong style="color: #FCD34D;">$10,000
-                            in  revenue that month.</strong>
+                            in revenue that month.</strong>
                         <br><br>
-                        <em>The lesson: Every pixel matters. The smallest design decision can have massive business  impact.</em>
+                        <em>The lesson: Every pixel matters. The smallest design decision can have massive business
+                            impact.</em>
                     </p>
                 </div>
 
@@ -2394,7 +2503,8 @@
                         <li>🎯 <strong>2-Minute Rule:</strong> If a design task takes less than 2 minutes, do it now
                         </li>
                         <li>📁 <strong>Template Everything:</strong> Save time with reusable Figma components</li>
-                        <li>🔄 <strong>Batch Similar Tasks:</strong> Do all wireframes, then all mockups, then all  exports
+                        <li>🔄 <strong>Batch Similar Tasks:</strong> Do all wireframes, then all mockups, then all
+                            exports
                         </li>
                         <li>⏰ <strong>90-Minute Blocks:</strong> Deep design work in focused 90-min sessions, then break
                         </li>
@@ -2402,24 +2512,30 @@
                     </ul>
                 </div>
 
-                <div  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                    <div  style="background: rgba(244, 114, 182, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div
+                        style="background: rgba(244, 114, 182, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                         <div style="font-size: 32px; margin-bottom: 10px;">👁️</div>
                         <p style="color: #FBCFE8; font-weight: 600;">"Simplicity is the ultimate sophistication."</p>
                     </div>
-                    <div  style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                    <div
+                        style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                         <div style="font-size: 32px; margin-bottom: 10px;">💡</div>
                         <p style="color: #A7F3D0; font-weight: 600;">"Good design is good business."</p>
                     </div>
-                    <div  style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                    <div
+                        style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                         <div style="font-size: 32px; margin-bottom: 10px;">🎯</div>
                         <p style="color: #FDE68A; font-weight: 600;">"Design for the user, not for your portfolio."</p>
                     </div>
                 </div>
 
-                <div  style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                <div
+                    style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
                     <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:</p>
-                    <p style="font-size: 20px; color: #F472B6; font-weight: 600;">"Today, I create experiences that  delight  users and drive business results. Every design decision is intentional."</p>
+                    <p style="font-size: 20px; color: #F472B6; font-weight: 600;">"Today, I create experiences that
+                        delight users and drive business results. Every design decision is intentional."</p>
                 </div>
             </section>
 
@@ -2443,7 +2559,8 @@
             <div class="header">
                 <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
                 <h1>🎨 Designer Assets & Training Library</h1>
-                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video  training, scripts, and resources to help you master your role.</p>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
+                    training, scripts, and resources to help you master your role.</p>
             </div>
 
             <div id="videos" class="section-title"
@@ -2456,7 +2573,8 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             15:00</div>
                     </div>
                     <div class="video-content">
@@ -2470,7 +2588,8 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             45:00</div>
                     </div>
                     <div class="video-content">
@@ -2484,7 +2603,8 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             25:00</div>
                     </div>
                     <div class="video-content">
@@ -2527,7 +2647,8 @@
             <div class="header">
                 <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
                 <h1>Your Onboarding Journey</h1>
-                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps  to become a certified UI/UX Designer.</p>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
+                    to become a certified UI/UX Designer.</p>
             </div>
 
             <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
@@ -2541,9 +2662,11 @@
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
-                            understand, and internalize the Standard Operating Procedure. This document defines our  design language.</p>
+                            understand, and internalize the Standard Operating Procedure. This document defines our
+                            design language.</p>
                         <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
-                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go  to Designer SOP</a>
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
+                            to Designer SOP</a>
                     </div>
                 </div>
 
@@ -2555,10 +2678,12 @@
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and  watch the required training videos. These will give you visual context to the written SOPs.
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
+                            watch the required training videos. These will give you visual context to the written SOPs.
                         </p>
                         <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
-                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open  Assets Library</a>
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
+                            Assets Library</a>
                     </div>
                 </div>
 
@@ -2571,10 +2696,13 @@
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
                         </h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by  taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
-                        <p  style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by
+                            taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                        <p
+                            style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
                             ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
-                                onclick="switchView('sop'); return false;" style="color: #3B82F6;">🎨 Designer SOP</a> view  and click the "🎓 Test" button in the sidebar.
+                                onclick="switchView('sop'); return false;" style="color: #3B82F6;">🎨 Designer SOP</a>
+                            view and click the "🎓 Test" button in the sidebar.
                         </p>
                     </div>
                 </div>
@@ -2586,8 +2714,11 @@
                         4</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording  Task</h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final  verification. Record a <strong>30-minute screen sharing video</strong> walking us through  your understanding of the role.</p>
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording
+                            Task</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
+                            verification. Record a <strong>30-minute screen sharing video</strong> walking us through
+                            your understanding of the role.</p>
 
                         <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
                             <strong>What to cover in your video:</strong>
@@ -2595,13 +2726,15 @@
                                 <li>Walk through the SOP sections and explain them in your own words.</li>
                                 <li>Explain your KRA (Key Result Areas) and how you plan to achieve them.</li>
                                 <li>Explain the KPIs (Key Performance Indicators) you are measured on.</li>
-                                <li>Walk through a past design of yours and explain how it aligns (or differs) from our  principles.</li>
+                                <li>Walk through a past design of yours and explain how it aligns (or differs) from our
+                                    principles.</li>
                             </ul>
                         </div>
 
                         <div class="success-box"
                             style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example  Submission</strong>
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
+                                Submission</strong>
                             <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
                                 nailed this task:</p>
                             <div class="video-embed"
@@ -2634,7 +2767,7 @@
                 opacity: 1;
             }
         }
-    
+
         .sidebar-overlay {
             display: none;
             position: fixed;
@@ -2645,11 +2778,12 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 1999;
         }
+
         .sidebar-overlay.active {
             display: block;
         }
 
-    
+
         /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
         @media (max-width: 768px) {
             .header {
@@ -2657,48 +2791,58 @@
                 margin-bottom: 20px !important;
                 border-radius: 0 0 15px 15px !important;
             }
+
             .header h1 {
                 font-size: 1.5em !important;
                 margin-bottom: 5px !important;
             }
+
             .header .subtitle {
                 font-size: 0.9em !important;
                 margin-bottom: 10px !important;
             }
+
             .badge-row {
                 gap: 8px !important;
                 margin-top: 12px !important;
             }
+
             .badge {
                 padding: 5px 12px !important;
                 font-size: 0.75em !important;
             }
+
             .container {
                 padding: 10px !important;
             }
+
             .section {
                 padding: 15px !important;
                 margin-bottom: 15px !important;
             }
+
             .section h2 {
                 font-size: 1.2em !important;
             }
         }
+
         /* ===== END MOBILE HEADER SIZE ===== */
 
-    
+
         /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
         @media (max-width: 768px) {
             .sidebar {
                 transform: translateX(-100%) !important;
                 transition: transform 0.3s ease !important;
             }
-            .sidebar.active, .sidebar.open {
+
+            .sidebar.active,
+            .sidebar.open {
                 transform: translateX(0) !important;
             }
         }
-        /* ===== END SIDEBAR CLOSED ===== */
 
+        /* ===== END SIDEBAR CLOSED ===== */
     </style>
     <script>
         function switchView(viewName) {
@@ -2732,8 +2876,8 @@
     <script>
 , 10);
             } else {
-                document.removeEventListener('click', closeSidebarOutside);
-            }
+            document.removeEventListener('click', closeSidebarOutside);
+        }
         }
 
         function closeSidebarOutside(event) {
@@ -2775,17 +2919,17 @@
         }
 
         // Click outside to close sidebar
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             var sidebar = document.querySelector('.sidebar');
             var toggleBtn = document.querySelector('.mobile-menu-btn');
             var overlay = document.querySelector('.sidebar-overlay');
-            
+
             if (!sidebar || !toggleBtn) return;
-            
+
             var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
             var clickedOnSidebar = sidebar.contains(event.target);
             var clickedOnToggle = toggleBtn.contains(event.target);
-            
+
             if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
                 closeSidebar();
             }
@@ -2794,9 +2938,7 @@
     </script>
 
     <script src="assets/js/copy-button.js"></script>
-<script src="assets/js/sop-features.js"></script></body>
+    <script src="assets/js/sop-features.js"></script>
+</body>
 
 </html>
-
-
-

@@ -781,98 +781,102 @@
                 margin-top: 56px;
             }
         }
-    
-    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
-    .mobile-header {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 56px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-        z-index: 9999;
-        padding: 0 12px;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 12px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
 
-    .mobile-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: white;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        flex-shrink: 0;
-    }
-
-    .mobile-menu-btn:hover {
-        background: rgba(255, 255, 255, 0.25);
-    }
-
-    .mobile-home-btn {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        color: #10B981;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        padding: 10px 16px;
-        background: rgba(16, 185, 129, 0.15);
-        border-radius: 10px;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        white-space: nowrap;
-    }
-
-    .sidebar-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 9998;
-    }
-
-    .sidebar-overlay.active {
-        display: block;
-    }
-
-    @media (max-width: 768px) {
+        /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
         .mobile-header {
-            display: flex !important;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+            z-index: 9999;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-        .sidebar {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            height: 100vh !important;
-            width: 280px !important;
-            z-index: 9999 !important;
-            transform: translateX(-100%) !important;
-            transition: transform 0.3s ease !important;
-        }
-        .sidebar.active, .sidebar.open {
-            transform: translateX(0) !important;
-        }
-        .main-content {
-            margin-left: 0 !important;
-            padding-top: 70px !important;
-            width: 100% !important;
-        }
-    }
-    /* ========== END DEFINITIVE MOBILE FIX ========== */
 
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-menu-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex !important;
+            }
+
+            .sidebar {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100vh !important;
+                width: 280px !important;
+                z-index: 9999 !important;
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0) !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+                padding-top: 70px !important;
+                width: 100% !important;
+            }
+        }
+
+        /* ========== END DEFINITIVE MOBILE FIX ========== */
     </style>
     <link rel="stylesheet" href="assets/css/quiz.css">
     <link rel="stylesheet" href="admin-mode.css">
@@ -881,6 +885,7 @@
     <link rel="stylesheet" href="assets/css/mobile-override.css">
     <link rel="stylesheet" href="assets/css/copy-button.css">
 </head>
+
 <body>
     <div class="sidebar-overlay" onclick="closeSidebar()"></div>
     <div class="mobile-header">
@@ -919,8 +924,6 @@
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
-            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
-                Test</button>
         </div>
         <div class="sidebar-search">
             <input type="text" id="searchInput" placeholder="🔍 Search..." onkeyup="searchSOP()">
@@ -1007,7 +1010,8 @@
                     <h3 style="margin-bottom: 15px;">🔍 Search Results (<span id="resultCount">0</span>)</h3>
                     <div id="resultsList"></div>
                     <button onclick="clearSearch()"
-                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear  Search</button>
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                        Search</button>
                 </div>
 
                 <script>
@@ -1036,6 +1040,70 @@
                     }
                 </script>
 
+                <!-- CULTURE: WELCOME TO DIGITAL HEROES -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes — You Are Part of Something
+                        Bigger</h3>
+                    <p>Before we dive into Shopify development, you need to understand something critical: <strong>You
+                            are not just joining a company. You are joining a mission.</strong></p>
+                    <div class="highlight-box"
+                        style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+                        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+                        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+                            <tr style="background: rgba(59, 130, 246, 0.2);">
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A
+                                        (Now):</strong> ₹9.2 Crores</td>
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B
+                                        (2027):</strong> ₹75 Crores</td>
+                            </tr>
+                        </table>
+                        <p style="margin: 0;">Every team member contributes to this journey, and every team member
+                            benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CULTURE: THE INTERCONNECTED CHAIN -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(96, 165, 250, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #60A5FA; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+                    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link
+                        is equally critical:</p>
+                    <div
+                        style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+                        <p style="margin: 0;">
+                            <strong style="color: #FBBF24;">Sales</strong> → brings in clients<br>
+                            ↓<br>
+                            <strong style="color: #F472B6;">Design</strong> → creates the visuals<br>
+                            ↓<br>
+                            <strong style="color: #60A5FA; font-size: 1.2em;">⭐ YOU (Developer)</strong> → <strong>THE
+                                ENGINE — build, optimize, and perfect every Shopify store</strong><br>
+                            ↓<br>
+                            <strong style="color: #34D399;">Client Satisfaction</strong> → creates happy customers<br>
+                            ↓<br>
+                            <strong style="color: #D97706;">CS Team</strong> → protects satisfaction<br>
+                            ↓<br>
+                            <strong style="color: #A78BFA;">5-Star Reviews</strong> → boost algorithm positioning<br>
+                            ↓<br>
+                            <strong style="color: #FBBF24;">More Organic Enquiries</strong> → the cycle amplifies
+                        </p>
+                    </div>
+                    <div class="highlight-box"
+                        style="background: rgba(59, 130, 246, 0.15); border-left: 4px solid #3B82F6; padding: 15px; margin: 15px 0;">
+                        <strong style="color: #60A5FA;">⚙️ Your Critical Role:</strong>
+                        <p style="margin: 10px 0 0 0;">As a Shopify developer, you are <strong>THE ENGINE</strong> that
+                            powers every client deliverable at Digital Heroes. Your code transforms designs into
+                            revenue-generating stores, your optimizations make sites load in under 2 seconds, and your
+                            attention to detail ensures every pixel matches the design. Without your technical
+                            excellence, sales promises go unfulfilled, designs remain static mockups, and clients have
+                            nothing to show for their investment. Every store you build moves us closer to our ₹75 Crore
+                            goal.</p>
+                    </div>
+                    <p style="color: #60A5FA; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">
+                        No development = No deliverables = No revenue = No company. YOUR code is the product.</p>
+                </div>
+
                 <!-- Opening Story -->
                 <section class="section">
                     <div class="section-header">
@@ -1045,7 +1113,8 @@
 
                     <div class="story-box">
                         <h4>The Store That Lost $50,000/Day</h4>
-                        <p>A client came to us after their "cheap" developer delivered a store. It looked okay on the  surface.
+                        <p>A client came to us after their "cheap" developer delivered a store. It looked okay on the
+                            surface.
                             But hidden underneath:</p>
 
                         <ul style="margin: 15px 0 15px 20px;">
@@ -1055,13 +1124,15 @@
                             <li>10% of add-to-cart clicks didn't work</li>
                         </ul>
 
-                        <p>Result? For every 100 visitors, only 1 completed a purchase. Industry average is 2-3. They  were  losing <strong>$50,000+ per day</strong> in potential sales because of bad code.</p>
+                        <p>Result? For every 100 visitors, only 1 completed a purchase. Industry average is 2-3. They
+                            were losing <strong>$50,000+ per day</strong> in potential sales because of bad code.</p>
 
                         <p>We rebuilt the store. PageSpeed hit 92. Conversion rate tripled.</p>
 
                         <div class="moral">
                             <strong>🎯 The Lesson:</strong> Your code doesn't just need to "work." It needs to SELL. A
-                            1-second  delay in load time = 7% loss in conversions. Your job isn't just development — it's revenue  generation through technical excellence.
+                            1-second delay in load time = 7% loss in conversions. Your job isn't just development — it's
+                            revenue generation through technical excellence.
                         </div>
                     </div>
                 </section>
@@ -1072,7 +1143,8 @@
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">1. NEVER WORK ON LIVE THEME</h3>
-                        <p>Always duplicate theme or work on development store. One mistake = client's live store  broken.
+                        <p>Always duplicate theme or work on development store. One mistake = client's live store
+                            broken.
                         </p>
                     </div>
 
@@ -1084,12 +1156,14 @@
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">3. SPEED IS NOT OPTIONAL</h3>
-                        <p>Mobile PageSpeed target: 85+. Every decision — image size, app choice, custom code — must  consider  speed.</p>
+                        <p>Mobile PageSpeed target: 85+. Every decision — image size, app choice, custom code — must
+                            consider speed.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">4. TEST EVERYTHING</h3>
-                        <p>Before marking any task complete: Test on mobile, test on desktop, test checkout flow, check  console  errors.</p>
+                        <p>Before marking any task complete: Test on mobile, test on desktop, test checkout flow, check
+                            console errors.</p>
                     </div>
                 </section>
 
@@ -1099,7 +1173,8 @@
 
                     <div class="highlight-box" style="background: #C62828;">
                         <h3 style="margin-bottom: 15px;">🚨 CURRENCY CHECK - FIRST STEP</h3>
-                        <p><strong style="font-size: 1.2em;">NEVER keep currency as INR for US/international  clients!</strong></p>
+                        <p><strong style="font-size: 1.2em;">NEVER keep currency as INR for US/international
+                                clients!</strong></p>
                         <ul style="margin-top: 10px;">
                             <li>Verify currency setting IMMEDIATELY after store creation</li>
                             <li>Change to USD (or client's target currency)</li>
@@ -1149,7 +1224,8 @@
                         <h3 style="margin-bottom: 15px;">⏱️ Time Standards</h3>
                         <p><strong>Practice store:</strong> Maximum 2 hours per store</p>
                         <p><strong>Client store speed:</strong> 1 complete store + homepage of 2nd store = 1 day</p>
-                        <p style="margin-top: 10px; opacity: 0.9;">Remember: Shopify is 2x easier than WordPress - speed  should reflect this!</p>
+                        <p style="margin-top: 10px; opacity: 0.9;">Remember: Shopify is 2x easier than WordPress - speed
+                            should reflect this!</p>
                     </div>
                 </section>
 
@@ -1157,7 +1233,8 @@
                 <section class="critical-alert" id="self-qa"
                     style="background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);">
                     <h2>🔍 SELF QA PROTOCOL - MANDATORY</h2>
-                    <p style="font-size: 1.2em; margin-bottom: 20px;"><strong>Review EVERY element 3-5 times before  submission — this is MANDATORY, not optional</strong></p>
+                    <p style="font-size: 1.2em; margin-bottom: 20px;"><strong>Review EVERY element 3-5 times before
+                            submission — this is MANDATORY, not optional</strong></p>
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">Pre-Submission Checklist:</h3>
@@ -1175,7 +1252,8 @@
                     <div style="background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px; margin-top: 20px;">
                         <p style="color: #FBBF24; font-size: 1.1em;">⚠️ <strong>NEVER ask client to check store until
                                 100% complete and self-verified</strong></p>
-                        <p style="margin-top: 10px;">⚠️ <strong>If clients point out preventable mistakes — you are  personally responsible</strong></p>
+                        <p style="margin-top: 10px;">⚠️ <strong>If clients point out preventable mistakes — you are
+                                personally responsible</strong></p>
                     </div>
                 </section>
 
@@ -1200,7 +1278,8 @@
                     <div class="critical-alert"
                         style="margin: 25px 0; background: linear-gradient(135deg, #7C2D12 0%, #9A3412 100%);">
                         <h3>⚠️ Zero Tolerance Policy</h3>
-                        <p style="font-size: 1.1em; margin-bottom: 15px;"><strong>After 15 days of onboarding: ONE  careless mistake = Potential removal</strong></p>
+                        <p style="font-size: 1.1em; margin-bottom: 15px;"><strong>After 15 days of onboarding: ONE
+                                careless mistake = Potential removal</strong></p>
                         <ul>
                             <li>No space for making preventable mistakes in live projects</li>
                             <li>Mistakes that client points out = Personal responsibility</li>
@@ -1229,13 +1308,15 @@
                     <div class="story-box">
                         <h4>1️⃣ The Fresh Eyes Rule 👀</h4>
                         <p>After finishing work, wait 2 hours before reviewing.</p>
-                        <p style="margin-top: 5px;"><em>Your eyes see what they expect. Fresh eyes see what's  there.</em></p>
+                        <p style="margin-top: 5px;"><em>Your eyes see what they expect. Fresh eyes see what's
+                                there.</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>2️⃣ The Client Perspective Check 🤔</h4>
                         <p>Before submitting, ask yourself:</p>
-                        <p  style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                        <p
+                            style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Would I be happy if I paid for this?"</em>
                         </p>
                     </div>
@@ -1305,7 +1386,8 @@
 
                     <div class="info-box success">
                         <h4>📺 Complete Shopify Training (20 Videos)</h4>
-                        <p>Watch these tutorials to master Shopify development. Each video covers essential skills that  will be evaluated during certification.</p>
+                        <p>Watch these tutorials to master Shopify development. Each video covers essential skills that
+                            will be evaluated during certification.</p>
                     </div>
 
                     <style>
@@ -1583,7 +1665,8 @@
 
                     <div class="info-box gold" style="margin-top: 25px;">
                         <h4>🎓 Complete the Full Training Program</h4>
-                        <p>For a structured learning experience with quizzes and implementation tasks, visit the <a  href="training/developer-training.html"
+                        <p>For a structured learning experience with quizzes and implementation tasks, visit the <a
+                                href="training/developer-training.html"
                                 style="color: #8B5CF6; font-weight: 600;">Developer Training Program</a>.</p>
                     </div>
                 </section>
@@ -1597,7 +1680,9 @@
 
                     <div class="info-box danger">
                         <h4>⚠️ NEVER Start Work Without Proper Access</h4>
-                        <p>Before you touch ANY code or settings, you MUST have proper collaborator access to the  client's  Shopify store. Working without official access = security risk and potential account issues.
+                        <p>Before you touch ANY code or settings, you MUST have proper collaborator access to the
+                            client's Shopify store. Working without official access = security risk and potential
+                            account issues.
                         </p>
                     </div>
 
@@ -1685,11 +1770,16 @@
                     <div class="info-box warning">
                         <h4>❌ Common Access Problems & Solutions</h4>
                         <ul class="styled-list">
-                            <li><strong>"I can't find the collaborator code"</strong> → The client needs to be on  Shopify's  paid plan. Trial stores don't have this feature.</li>
-                            <li><strong>"Client wants to share login instead"</strong> → Politely decline. Explain  collaborator access is more secure and trackable.</li>
-                            <li><strong>"Access request not showing for client"</strong> → Make sure you used the  correct  store URL (.myshopify.com, not custom domain).</li>
-                            <li><strong>"Some areas are restricted"</strong> → Ask client to edit your collaborator  permissions in Settings → Users.</li>
-                            <li><strong>"Client is on Shopify Lite"</strong> → Lite plans have limited access. May need  to  work differently or upgrade.</li>
+                            <li><strong>"I can't find the collaborator code"</strong> → The client needs to be on
+                                Shopify's paid plan. Trial stores don't have this feature.</li>
+                            <li><strong>"Client wants to share login instead"</strong> → Politely decline. Explain
+                                collaborator access is more secure and trackable.</li>
+                            <li><strong>"Access request not showing for client"</strong> → Make sure you used the
+                                correct store URL (.myshopify.com, not custom domain).</li>
+                            <li><strong>"Some areas are restricted"</strong> → Ask client to edit your collaborator
+                                permissions in Settings → Users.</li>
+                            <li><strong>"Client is on Shopify Lite"</strong> → Lite plans have limited access. May need
+                                to work differently or upgrade.</li>
                         </ul>
                     </div>
 
@@ -1774,11 +1864,13 @@
                     <div class="warning-story">
                         <h4>The Developer Who Worked on Live Theme</h4>
                         <p>A junior developer was making "quick changes" directly on a client's live theme. No backup.
-                            They  accidentally deleted the header section file.</p>
-                        <p>Result: Client's store showed no navigation for 45 minutes during peak traffic hours. Panic  calls.
+                            They accidentally deleted the header section file.</p>
+                        <p>Result: Client's store showed no navigation for 45 minutes during peak traffic hours. Panic
+                            calls.
                             Lost sales. Angry client.</p>
                         <div class="lesson">
-                            <strong>🎯 The Lesson:</strong> ALWAYS duplicate theme before changes. Those 30 seconds to  duplicate  can save hours of disaster recovery.
+                            <strong>🎯 The Lesson:</strong> ALWAYS duplicate theme before changes. Those 30 seconds to
+                            duplicate can save hours of disaster recovery.
                         </div>
                     </div>
                 </section>
@@ -1792,7 +1884,8 @@
 
                     <div class="info-box gold">
                         <h4>🏆 The Perfect Homepage Flow</h4>
-                        <p>Every section should have a PURPOSE. No section exists just to look pretty — it either builds  trust,
+                        <p>Every section should have a PURPOSE. No section exists just to look pretty — it either builds
+                            trust,
                             showcases products, or drives action.</p>
                     </div>
 
@@ -1818,7 +1911,8 @@
                                 <td>2</td>
                                 <td><strong>Header</strong></td>
                                 <td>Navigation & branding</td>
-                                <td>Logo + Menu: <strong>Home, Catalog, Collections, About Us, Contact Us, FAQ, Track  Your  Order</strong> + search, cart icon</td>
+                                <td>Logo + Menu: <strong>Home, Catalog, Collections, About Us, Contact Us, FAQ, Track
+                                        Your Order</strong> + search, cart icon</td>
                             </tr>
                             <tr>
                                 <td>3</td>
@@ -1889,14 +1983,18 @@
                         <span class="comment">&lt;!-- Hero Section Best Practices --&gt;</span><br><br>
 
                         <span class="tag">&lt;section</span> class="hero"<span class="tag">&gt;</span><br>
-                        &nbsp;&nbsp;<span class="tag">&lt;div</span> class="hero-content"<span  class="tag">&gt;</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span><span class="string">Premium Skincare  for  Glowing Skin</span><span class="tag">&lt;/h1&gt;</span><br>
+                        &nbsp;&nbsp;<span class="tag">&lt;div</span> class="hero-content"<span
+                            class="tag">&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span><span class="string">Premium Skincare
+                            for Glowing Skin</span><span class="tag">&lt;/h1&gt;</span><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- Headline: 7 words max, benefit-focused
                             --&gt;</span><br><br>
 
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span><span  class="string">Dermatologist-formulated.
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span><span
+                            class="string">Dermatologist-formulated.
                             Cruelty-free. Results in 14 days.</span><span class="tag">&lt;/p&gt;</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- Subtext: Address objections, promise  result
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- Subtext: Address objections, promise
+                            result
                             --&gt;</span><br><br>
 
                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> href="/collections/all"
@@ -1919,7 +2017,8 @@
 
                     <div class="info-box danger">
                         <h4>🚨 This Is Where Sales Happen</h4>
-                        <p>A beautiful homepage means nothing if the product page doesn't convert. 90% of your  conversion  optimization effort should be here.</p>
+                        <p>A beautiful homepage means nothing if the product page doesn't convert. 90% of your
+                            conversion optimization effort should be here.</p>
                     </div>
 
                     <h3>Above the Fold (Must Be Visible Without Scrolling)</h3>
@@ -2206,7 +2305,8 @@
 
                     <div class="info-box info">
                         <h4>📋 Required Policy Pages</h4>
-                        <p>Every Shopify store must have these pages. They're linked in checkout automatically when set  up  in  Settings → Policies.</p>
+                        <p>Every Shopify store must have these pages. They're linked in checkout automatically when set
+                            up in Settings → Policies.</p>
                     </div>
 
                     <table class="styled-table">
@@ -2320,7 +2420,8 @@
 
                     <div class="info-box warning">
                         <h4>⚠️ App Rule: Less is More</h4>
-                        <p>Every app you install slows down the store. Only install what's TRULY needed. 5-8 apps is  healthy. 15+ apps = performance issues.</p>
+                        <p>Every app you install slows down the store. Only install what's TRULY needed. 5-8 apps is
+                            healthy. 15+ apps = performance issues.</p>
                     </div>
 
                     <h3>📊 Recommended Apps by Category</h3>
@@ -2454,7 +2555,8 @@
 
                     <div class="info-box danger">
                         <h4>🚨 NEVER deliver without completing this checklist</h4>
-                        <p>Every issue caught before delivery = trust built with client. Every issue found after = trust  destroyed.</p>
+                        <p>Every issue caught before delivery = trust built with client. Every issue found after = trust
+                            destroyed.</p>
                     </div>
 
                     <div class="checklist-grid">
@@ -2602,12 +2704,15 @@
                         <ul class="styled-list">
                             <li><strong>Liquid Basics:</strong> <a href="https://shopify.dev/docs/api/liquid"
                                     target="_blank">shopify.dev/docs/api/liquid</a></li>
-                            <li><strong>Theme Architecture:</strong> <a  href="https://shopify.dev/docs/themes/architecture"
+                            <li><strong>Theme Architecture:</strong> <a
+                                    href="https://shopify.dev/docs/themes/architecture"
                                     target="_blank">shopify.dev/docs/themes/architecture</a></li>
-                            <li><strong>Section Schemas:</strong> <a  href="https://shopify.dev/docs/themes/architecture/sections/section-schema"
+                            <li><strong>Section Schemas:</strong> <a
+                                    href="https://shopify.dev/docs/themes/architecture/sections/section-schema"
                                     target="_blank">shopify.dev/docs/themes/architecture/sections/section-schema</a>
                             </li>
-                            <li><strong>Shopify Dev Tutorials:</strong> <a  href="https://shopify.dev/docs/themes/getting-started"
+                            <li><strong>Shopify Dev Tutorials:</strong> <a
+                                    href="https://shopify.dev/docs/themes/getting-started"
                                     target="_blank">shopify.dev/docs/themes/getting-started</a></li>
                             <li><strong>Dawn Theme Reference:</strong> <a href="https://github.com/Shopify/dawn"
                                     target="_blank">github.com/Shopify/dawn</a></li>
@@ -2624,7 +2729,8 @@
 
                     <div class="info-box gold">
                         <h4>🎨 🔥 CRITICAL: Screenshot Analysis as 7-Figure Designer</h4>
-                        <p>Take a screenshot of your store and have AI analyze it like a $100K/year designer would. This  is  your  secret weapon for catching issues before clients do.</p>
+                        <p>Take a screenshot of your store and have AI analyze it like a $100K/year designer would. This
+                            is your secret weapon for catching issues before clients do.</p>
                     </div>
 
                     <h3>🎨 The 7-Figure Designer Prompt</h3>
@@ -2632,7 +2738,8 @@
                     <div class="code-block">
                         <span class="comment">/* Copy this EXACT prompt and paste with your screenshot */</span><br><br>
 
-                        "You are a 7-figure ecommerce designer who has designed 1000+ high-converting Shopify  stores.<br><br>
+                        "You are a 7-figure ecommerce designer who has designed 1000+ high-converting Shopify
+                        stores.<br><br>
 
                         Analyze this screenshot of my Shopify store. Be brutally honest.<br><br>
 
@@ -2718,7 +2825,8 @@
 
                     <div class="info-box gold">
                         <h4>🎯 Your Code MUST Sell</h4>
-                        <p>A beautiful store that doesn't convert is a failed store. Every development decision should  answer:
+                        <p>A beautiful store that doesn't convert is a failed store. Every development decision should
+                            answer:
                             <strong>"Will this help visitors buy?"</strong>
                         </p>
                         <p>Average ecommerce conversion rate: 2-3%. Premium stores we build: 3.5-5%+</p>
@@ -2798,7 +2906,8 @@
 
                     <div class="info-box danger">
                         <h4>🚨 Users decide in 3-5 seconds</h4>
-                        <p>If they can't understand what you sell and why they should buy — they leave. Everything  important  must be visible WITHOUT scrolling.</p>
+                        <p>If they can't understand what you sell and why they should buy — they leave. Everything
+                            important must be visible WITHOUT scrolling.</p>
                     </div>
 
                     <table class="styled-table">
@@ -2963,14 +3072,17 @@
                     <div class="info-box"
                         style="background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%); border-left: 5px solid #C62828;">
                         <h4>📊 Decision Flow: Site is Slow</h4>
-                        <div  style="font-family: monospace; background: white; padding: 20px; border-radius: 10px; margin-top: 15px; line-height: 2;">
+                        <div
+                            style="font-family: monospace; background: white; padding: 20px; border-radius: 10px; margin-top: 15px; line-height: 2;">
                             <strong>Client reports slow website</strong><br>
                             │<br>
                             ├─► <strong>Step 1:</strong> Run PageSpeed Insights<br>
-                            │ ├─► Score &gt;80 → <span style="color: #2E7D32;"><strong>ACCEPTABLE</strong></span> (minor  tweaks  only)<br>
+                            │ ├─► Score &gt;80 → <span style="color: #2E7D32;"><strong>ACCEPTABLE</strong></span> (minor
+                            tweaks only)<br>
                             │ ├─► Score 50-80 → <span style="color: #E65100;"><strong>OPTIMIZE</strong></span> (images,
                             scripts)<br>
-                            │ └─► Score &lt;50 → <span style="color: #C62828;"><strong>CRITICAL</strong></span> (major  work  needed)<br>
+                            │ └─► Score &lt;50 → <span style="color: #C62828;"><strong>CRITICAL</strong></span> (major
+                            work needed)<br>
                             │<br>
                             ├─► <strong>Step 2:</strong> Identify main culprit<br>
                             │ ├─► LCP high? → Hero image or above-fold content issue<br>
@@ -3048,9 +3160,11 @@
                             <li><strong>Client wants WordPress for complex e-commerce</strong> → WooCommerce has limits,
                                 discuss
                             </li>
-                            <li><strong>Client wants custom code for simple landing page</strong> → Overkill, suggest  Webflow
+                            <li><strong>Client wants custom code for simple landing page</strong> → Overkill, suggest
+                                Webflow
                             </li>
-                            <li><strong>Client insists on Wix/Squarespace</strong> → We don't work with those, politely  decline
+                            <li><strong>Client insists on Wix/Squarespace</strong> → We don't work with those, politely
+                                decline
                             </li>
                         </ul>
                     </div>
@@ -3207,7 +3321,8 @@
 
                     <div class="info-box gold">
                         <h4>💡 Use AI to Speed Up Development</h4>
-                        <p>Use these prompts to debug issues, write code faster, and improve your Shopify development  workflow.</p>
+                        <p>Use these prompts to debug issues, write code faster, and improve your Shopify development
+                            workflow.</p>
                     </div>
 
                     <h3>Debugging & Problem Solving</h3>
@@ -3523,7 +3638,8 @@
 
                     <div class="info-box success">
                         <h4>✅ Work Smarter, Not Harder</h4>
-                        <p>These tools give you an edge. Know them, use them, deliver faster and better than the  competition.</p>
+                        <p>These tools give you an edge. Know them, use them, deliver faster and better than the
+                            competition.</p>
                     </div>
 
                     <h3>Shopify Theme Development</h3>
@@ -3613,7 +3729,8 @@
                             <li><strong>Multi-cursor:</strong> Ctrl+D to select multiple instances, edit all at once
                             </li>
                             <li><strong>Snippet Library:</strong> Save reusable code in VS Code User Snippets</li>
-                            <li><strong>Terminal Aliases:</strong> Create shortcuts like `themedev` for `shopify theme  dev`
+                            <li><strong>Terminal Aliases:</strong> Create shortcuts like `themedev` for `shopify theme
+                                dev`
                             </li>
                             <li><strong>Git Branches:</strong> Always work in a branch, never directly on main</li>
                         </ul>
@@ -3984,9 +4101,11 @@
                     <div class="info-box gold" style="margin-top: 30px;">
                         <h4>⚡ Emergency Commands You Should Know</h4>
                         <ul class="styled-list">
-                            <li><strong>Revert theme changes:</strong> Online Store → Themes → Actions → View theme  versions
+                            <li><strong>Revert theme changes:</strong> Online Store → Themes → Actions → View theme
+                                versions
                             </li>
-                            <li><strong>Disable password protection:</strong> Online Store → Preferences → Password  protection</li>
+                            <li><strong>Disable password protection:</strong> Online Store → Preferences → Password
+                                protection</li>
                             <li><strong>Check site status:</strong> Visit yourstore.myshopify.com/admin/online_store
                             </li>
                             <li><strong>Find broken pages:</strong> Check browser console (F12) for 404 errors</li>
@@ -4022,17 +4141,20 @@
                         <p><strong>Handle in this order every day:</strong></p>
                         <ol style="margin-top: 15px; line-height: 2;">
                             <li><strong>🔴 P0 - Production Bugs/Site Down</strong> → Live site issues are IMMEDIATE.
-                                Drop  everything.</li>
+                                Drop everything.</li>
                             <li><strong>🔴 P0 - Security Issues</strong> → Any vulnerability or breach. Fix first,
-                                explain  later.</li>
-                            <li><strong>🔴 P0 - Deadline-Day Tasks</strong> → Work due TODAY must be completed and  handed  off.</li>
-                            <li><strong>🟡 P1 - PM/Client Questions</strong> → Respond within 1 hour. Don't leave them  waiting.</li>
+                                explain later.</li>
+                            <li><strong>🔴 P0 - Deadline-Day Tasks</strong> → Work due TODAY must be completed and
+                                handed off.</li>
+                            <li><strong>🟡 P1 - PM/Client Questions</strong> → Respond within 1 hour. Don't leave them
+                                waiting.</li>
                             <li><strong>🟡 P1 - Active Project Work</strong> → Tasks with upcoming deadlines (next 2-3
                                 days).</li>
                             <li><strong>🟢 P2 - Code Reviews</strong> → Don't block teammates waiting for your review.
                             </li>
                             <li><strong>🟢 P2 - Testing & QA</strong> → Test your own work before handoff.</li>
-                            <li><strong>⚪ P3 - Learning & Optimization</strong> → Non-urgent improvements, skill  building.
+                            <li><strong>⚪ P3 - Learning & Optimization</strong> → Non-urgent improvements, skill
+                                building.
                             </li>
                         </ol>
                         <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Live site issues > Deadlines >
@@ -4042,14 +4164,17 @@
                     <h3 id="broken-theme">🔴 Client's Theme is Heavily Customized/Broken</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Previous developer left messy code, theme is unstable.</p>
-                        <p><strong>Response:</strong> Document issues found, inform PM of risks. Recommend cleanup  before  new features. If client won't approve cleanup time, document that you advised against  proceeding.</p>
+                        <p><strong>Response:</strong> Document issues found, inform PM of risks. Recommend cleanup
+                            before new features. If client won't approve cleanup time, document that you advised against
+                            proceeding.</p>
                         <p><strong>Rule:</strong> Never promise results on broken foundations. CYA with documentation.
                         </p>
                     </div>
 
                     <h3 id="impossible-feature">🔴 Feature Request is Technically Impossible</h3>
                     <div class="info-box danger">
-                        <p><strong>Situation:</strong> Client wants something Shopify can't do (e.g., real-time  inventory  across platforms).</p>
+                        <p><strong>Situation:</strong> Client wants something Shopify can't do (e.g., real-time
+                            inventory across platforms).</p>
                         <p><strong>Response:</strong> "This isn't natively supported by Shopify. We have two options:
                             [Alternative A] or [Third-party app]. Here are the pros/cons of each."</p>
                         <p><strong>Rule:</strong> Always provide alternatives. Never just say "can't be done."</p>
@@ -4058,23 +4183,28 @@
                     <h3 id="bad-assets">🔴 Client Provides Wrong/Incomplete Assets</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Images are low-res, logos are JPG not SVG, files are missing.</p>
-                        <p><strong>Response:</strong> Create a specific asset checklist: "Please provide: Logo in SVG  format, product images min 2000x2000px, brand colors in HEX codes."</p>
-                        <p><strong>Rule:</strong> Never proceed with bad assets. Timeline pauses until correct assets  received.</p>
+                        <p><strong>Response:</strong> Create a specific asset checklist: "Please provide: Logo in SVG
+                            format, product images min 2000x2000px, brand colors in HEX codes."</p>
+                        <p><strong>Rule:</strong> Never proceed with bad assets. Timeline pauses until correct assets
+                            received.</p>
                     </div>
 
                     <h3 id="production-bug">🔴 Changes Broke Something in Production</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> After deploying, something stopped working on the live site.</p>
-                        <p><strong>Response:</strong> Immediately revert to backup/previous version. Document what  happened.
+                        <p><strong>Response:</strong> Immediately revert to backup/previous version. Document what
+                            happened.
                             Fix in dev environment first, then redeploy carefully.</p>
-                        <p><strong>Rule:</strong> Always have rollback plan. Never debug on live site during business  hours.
+                        <p><strong>Rule:</strong> Always have rollback plan. Never debug on live site during business
+                            hours.
                         </p>
                     </div>
 
                     <h3 id="endless-revisions">🔄 🔴 Client Wants Unlimited Revisions</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client keeps requesting "one more small change" endlessly.</p>
-                        <p><strong>Response:</strong> Route to PM: "This is outside our agreed scope. PM will discuss  options for extending the project."</p>
+                        <p><strong>Response:</strong> Route to PM: "This is outside our agreed scope. PM will discuss
+                            options for extending the project."</p>
                         <p><strong>Rule:</strong> Developers don't negotiate scope. Push to PM for scope discussions.
                         </p>
                     </div>
@@ -4082,7 +4212,8 @@
                     <h3 id="app-conflict">🔴 Third-Party App Causing Conflicts</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client's installed app is breaking your custom code.</p>
-                        <p><strong>Response:</strong> Document the conflict with screenshots. Recommend removing the  conflicting app or finding an alternative. Don't hack around bad apps.</p>
+                        <p><strong>Response:</strong> Document the conflict with screenshots. Recommend removing the
+                            conflicting app or finding an alternative. Don't hack around bad apps.</p>
                         <p><strong>Rule:</strong> We don't support fixing other developers' or apps' broken code.</p>
                     </div>
 
@@ -4090,14 +4221,18 @@
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Client made changes in theme editor that broke your work.</p>
                         <p><strong>Response:</strong> "I see changes were made to the theme since our last delivery.
-                            Fixing  these would be additional work. I recommend we restore to the last working version and  re-apply  your changes properly."</p>
-                        <p><strong>Rule:</strong> Changes made by client = new scope. Not our responsibility to fix for  free.</p>
+                            Fixing these would be additional work. I recommend we restore to the last working version
+                            and re-apply your changes properly."</p>
+                        <p><strong>Rule:</strong> Changes made by client = new scope. Not our responsibility to fix for
+                            free.</p>
                     </div>
 
                     <h3 id="slow-speed">🔴 Site Speed Still Slow After Optimization</h3>
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client unhappy with speed even after your optimization.</p>
-                        <p><strong>Response:</strong> "We've optimized all code within our scope. The remaining issues  are  from [apps/images/third-party scripts]. Here's what else can be done and the associated  costs."
+                        <p><strong>Response:</strong> "We've optimized all code within our scope. The remaining issues
+                            are from [apps/images/third-party scripts]. Here's what else can be done and the associated
+                            costs."
                         </p>
                         <p><strong>Rule:</strong> Set expectations early. Some slowness is out of our control (apps,
                             hosting, images).</p>
@@ -4116,8 +4251,10 @@
 
                     <div style="text-align: center; padding: 30px 0;">
                         <div style="font-size: 48px; margin-bottom: 20px;">💻</div>
-                        <blockquote  style="font-size: 24px; font-style: italic; color: #34D399; margin-bottom: 20px; line-height: 1.6;">
-                            "Every line of code you write powers someone's livelihood. Behind every store is a family, a  dream, a future. Code with purpose."
+                        <blockquote
+                            style="font-size: 24px; font-style: italic; color: #34D399; margin-bottom: 20px; line-height: 1.6;">
+                            "Every line of code you write powers someone's livelihood. Behind every store is a family, a
+                            dream, a future. Code with purpose."
                         </blockquote>
                         <p style="color: #9CA3AF;">— Digital Heroes Philosophy</p>
                     </div>
@@ -4127,40 +4264,52 @@
                             $50,000
                         </h3>
                         <p style="color: #E5E7EB; line-height: 1.8;">
-                            A client's store was loading in 8 seconds on mobile. Their bounce rate was 70%. They were  ready  to give up on their business.
+                            A client's store was loading in 8 seconds on mobile. Their bounce rate was 70%. They were
+                            ready to give up on their business.
                             <br><br>
-                            Our developer spent 4 hours optimizing: lazy loading images, deferring scripts, optimizing  the  theme. The result? <strong style="color: #34D399;">Load time dropped to 2.1
+                            Our developer spent 4 hours optimizing: lazy loading images, deferring scripts, optimizing
+                            the theme. The result? <strong style="color: #34D399;">Load time dropped to 2.1
                                 seconds.</strong>
                             <br><br>
-                            <strong style="color: #10B981;">The impact?</strong> Bounce rate dropped to 35%. Conversion  rate  doubled. The client made an extra <strong style="color: #FCD34D;">$50,000 that  quarter</strong>
+                            <strong style="color: #10B981;">The impact?</strong> Bounce rate dropped to 35%. Conversion
+                            rate doubled. The client made an extra <strong style="color: #FCD34D;">$50,000 that
+                                quarter</strong>
                             — from a single optimization project.
                             <br><br>
-                            <em>The lesson: Technical excellence isn't abstract — it's someone's rent payment, their  kid's  college fund, their retirement. Your work matters.</em>
+                            <em>The lesson: Technical excellence isn't abstract — it's someone's rent payment, their
+                                kid's college fund, their retirement. Your work matters.</em>
                         </p>
                     </div>
 
-                    <div  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                        <div  style="background: rgba(52, 211, 153, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div
+                            style="background: rgba(52, 211, 153, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">🚀</div>
-                            <p style="color: #6EE7B7; font-weight: 600;">"Fast code isn't a flex. It's a  responsibility."
+                            <p style="color: #6EE7B7; font-weight: 600;">"Fast code isn't a flex. It's a
+                                responsibility."
                             </p>
                         </div>
-                        <div  style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div
+                            style="background: rgba(96, 165, 250, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">🧠</div>
                             <p style="color: #93C5FD; font-weight: 600;">"The best developers aren't the fastest coders
                                 —
                                 they're the best problem solvers."</p>
                         </div>
-                        <div  style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
+                        <div
+                            style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">✨</div>
                             <p style="color: #FDE68A; font-weight: 600;">"Your code doesn't just work. It SELLS."</p>
                         </div>
                     </div>
 
-                    <div  style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
+                    <div
+                        style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
                         <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
                         </p>
-                        <p style="font-size: 20px; color: #34D399; font-weight: 600;">"Today, I write code that changes  lives. Every optimization, every fix, every feature makes a difference."</p>
+                        <p style="font-size: 20px; color: #34D399; font-weight: 600;">"Today, I write code that changes
+                            lives. Every optimization, every fix, every feature makes a difference."</p>
                     </div>
                 </section>
 
@@ -4185,7 +4334,8 @@
             <div class="header">
                 <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
                 <h1>Developer Assets & Training Library</h1>
-                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video  training, scripts, and resources to help you master your role.</p>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
+                    training, scripts, and resources to help you master your role.</p>
             </div>
 
             <div id="videos" class="section-title"
@@ -4198,13 +4348,15 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
                             15:00</div>
                     </div>
                     <div class="video-content">
                         <span class="tag">Fundamentals</span>
                         <h3>📝 Role Overview & Expectations</h3>
-                        <p>A deep dive into the daily life of a Shopify Developer, core responsibilities, and coding  standards.</p>
+                        <p>A deep dive into the daily life of a Shopify Developer, core responsibilities, and coding
+                            standards.</p>
                     </div>
                 </div>
 
@@ -4212,7 +4364,8 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
                             30:00</div>
                     </div>
                     <div class="video-content">
@@ -4226,7 +4379,8 @@
                 <div class="video-card">
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
-                        <div  style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
                             25:00</div>
                     </div>
                     <div class="video-content">
@@ -4269,7 +4423,8 @@
             <div class="header">
                 <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
                 <h1>Your Onboarding Journey</h1>
-                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps  to become a certified Shopify Developer.</p>
+                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4 steps
+                    to become a certified Shopify Developer.</p>
             </div>
 
             <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
@@ -4283,9 +4438,11 @@
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
                         <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to read,
-                            understand, and internalize the Standard Operating Procedure. This document provides the  coding standards and workflows.</p>
+                            understand, and internalize the Standard Operating Procedure. This document provides the
+                            coding standards and workflows.</p>
                         <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
-                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go  to Developer SOP</a>
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
+                            to Developer SOP</a>
                     </div>
                 </div>
 
@@ -4297,10 +4454,12 @@
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos</h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and  watch the required training videos. These will give you visual context to the written SOPs.
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library and
+                            watch the required training videos. These will give you visual context to the written SOPs.
                         </p>
                         <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
-                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open  Assets Library</a>
+                            style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
+                            Assets Library</a>
                     </div>
                 </div>
 
@@ -4313,8 +4472,10 @@
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                         <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
                         </h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by  taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
-                        <p  style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding by
+                            taking the role-specific quiz. You need a score of 90% or higher to proceed.</p>
+                        <p
+                            style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
                             ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
                                 onclick="switchView('sop'); return false;" style="color: #3B82F6;">Developer SOP</a>
                             view and click the "🎓 Test" button in the sidebar.
@@ -4329,8 +4490,11 @@
                         4</div>
                     <div class="card"
                         style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
-                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording  Task</h3>
-                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final  verification. Record a <strong>30-minute screen sharing video</strong> walking us through  your understanding of the role.</p>
+                        <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute Recording
+                            Task</h3>
+                        <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
+                            verification. Record a <strong>30-minute screen sharing video</strong> walking us through
+                            your understanding of the role.</p>
 
                         <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
                             <strong>What to cover in your video:</strong>
@@ -4344,7 +4508,8 @@
 
                         <div class="success-box"
                             style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example  Submission</strong>
+                            <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
+                                Submission</strong>
                             <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
                                 nailed this task:</p>
                             <div class="video-embed"
@@ -4377,7 +4542,7 @@
                 opacity: 1;
             }
         }
-    
+
         .sidebar-overlay {
             display: none;
             position: fixed;
@@ -4388,11 +4553,12 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 1999;
         }
+
         .sidebar-overlay.active {
             display: block;
         }
 
-    
+
         /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
         @media (max-width: 768px) {
             .header {
@@ -4400,48 +4566,58 @@
                 margin-bottom: 20px !important;
                 border-radius: 0 0 15px 15px !important;
             }
+
             .header h1 {
                 font-size: 1.5em !important;
                 margin-bottom: 5px !important;
             }
+
             .header .subtitle {
                 font-size: 0.9em !important;
                 margin-bottom: 10px !important;
             }
+
             .badge-row {
                 gap: 8px !important;
                 margin-top: 12px !important;
             }
+
             .badge {
                 padding: 5px 12px !important;
                 font-size: 0.75em !important;
             }
+
             .container {
                 padding: 10px !important;
             }
+
             .section {
                 padding: 15px !important;
                 margin-bottom: 15px !important;
             }
+
             .section h2 {
                 font-size: 1.2em !important;
             }
         }
+
         /* ===== END MOBILE HEADER SIZE ===== */
 
-    
+
         /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
         @media (max-width: 768px) {
             .sidebar {
                 transform: translateX(-100%) !important;
                 transition: transform 0.3s ease !important;
             }
-            .sidebar.active, .sidebar.open {
+
+            .sidebar.active,
+            .sidebar.open {
                 transform: translateX(0) !important;
             }
         }
-        /* ===== END SIDEBAR CLOSED ===== */
 
+        /* ===== END SIDEBAR CLOSED ===== */
     </style>
     <script>
         function switchView(viewName) {
@@ -4506,17 +4682,17 @@
         }
 
         // Click outside to close sidebar
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             var sidebar = document.querySelector('.sidebar');
             var toggleBtn = document.querySelector('.mobile-menu-btn');
             var overlay = document.querySelector('.sidebar-overlay');
-            
+
             if (!sidebar || !toggleBtn) return;
-            
+
             var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
             var clickedOnSidebar = sidebar.contains(event.target);
             var clickedOnToggle = toggleBtn.contains(event.target);
-            
+
             if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
                 closeSidebar();
             }
@@ -4525,9 +4701,7 @@
     </script>
 
     <script src="assets/js/copy-button.js"></script>
-<script src="assets/js/sop-features.js"></script></body>
+    <script src="assets/js/sop-features.js"></script>
+</body>
 
 </html>
-
-
-

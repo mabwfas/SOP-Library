@@ -16,6 +16,50 @@ const trainingTasks = [
 const task1Content = `
 <h2>📚 TASK 1: SOCIAL MEDIA MINDSET</h2>
 
+<!-- WELCOME TO DIGITAL HEROES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes - You Are Part of Something Bigger</h3>
+    <p>Before we dive into social media strategy, you need to understand something critical: <strong>You are not just joining a company. You are joining a mission.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now):</strong> ₹9.2 Crores</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027):</strong> ₹75 Crores</td>
+            </tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- THE INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(219, 39, 119, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #EC4899; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+        <p style="margin: 0;">
+            <strong style="color: #EC4899; font-size: 1.2em;">⭐ YOU (Social Media)</strong> → <strong>THE BRAND AMPLIFIER - build awareness and community</strong><br>
+            ↓<br>
+            <strong style="color: #FBBF24;">Organic Traffic</strong> → brings free visitors<br>
+            ↓<br>
+            <strong style="color: #60A5FA;">Lead Generation</strong> → creates enquiries<br>
+            ↓<br>
+            <strong style="color: #34D399;">Brand Trust</strong> → increases conversion rates<br>
+            ↓<br>
+            <strong style="color: #A78BFA;">Reviews & Referrals</strong> → compound growth
+        </p>
+    </div>
+    
+    <div class="highlight-box" style="background: rgba(236, 72, 153, 0.15); border-left: 4px solid #DB2777; padding: 15px; margin: 15px 0;">
+        <strong style="color: #EC4899;">📱 Your Critical Role:</strong>
+        <p style="margin: 10px 0 0 0;">As a social media professional, you are the <strong>BRAND AMPLIFIER</strong> who builds Digital Heroes' presence and reputation. Every engaging post you create attracts potential clients. Every community interaction builds trust. 54% of social browsers research products there before buying—your content is often their FIRST impression of us. Your work directly influences the enquiry pipeline.</p>
+    </div>
+    
+    <p style="color: #EC4899; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">No social presence = No organic traffic = Paid ads dependency = Growth limited. You expand our reach for free.</p>
+</div>
+
 <div class="content-section">
     <h3>📱 Why Social Media Matters for Business</h3>
     <p>Social media isn't about posting pretty pictures. <strong>It's a revenue channel.</strong></p>

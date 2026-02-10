@@ -152,6 +152,50 @@ const trainingTasks = [
 const task1Content = `
 <h2>📚 TASK 1: OPERATIONS MINDSET - The Machine</h2>
 
+<!-- WELCOME TO DIGITAL HEROES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes - You Are Part of Something Bigger</h3>
+    <p>Before we dive into operations, you need to understand something critical: <strong>You are not just joining a company. You are joining a mission.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now):</strong> ₹9.2 Crores</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027):</strong> ₹75 Crores</td>
+            </tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- THE INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(79, 70, 229, 0.1)); border: 2px solid rgba(99, 102, 241, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #818CF8; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+        <p style="margin: 0;">
+            <strong style="color: #818CF8; font-size: 1.2em;">⭐ YOU (Ops)</strong> → <strong>THE SYSTEMS ARCHITECT - build processes that make everyone efficient</strong><br>
+            ↓<br>
+            <strong style="color: #FBBF24;">Sales</strong> → generates enquiries smoothly<br>
+            ↓<br>
+            <strong style="color: #F472B6;">Development</strong> → delivers on streamlined workflows<br>
+            ↓<br>
+            <strong style="color: #34D399;">Client Satisfaction</strong> → predictable, quality delivery<br>
+            ↓<br>
+            <strong style="color: #A78BFA;">Scale & Growth</strong> → systems enable 8x revenue growth
+        </p>
+    </div>
+    
+    <div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-left: 4px solid #6366F1; padding: 15px; margin: 15px 0;">
+        <strong style="color: #818CF8;">⚙️ Your Critical Role:</strong>
+        <p style="margin: 10px 0 0 0;">As an Operations specialist, you are the <strong>SYSTEMS ARCHITECT</strong> who enables everyone to work at their best. When you automate a task, you free up 10 hours/week for the team. When you document a process, you prevent 100 mistakes. When you optimize a workflow, you shave days off project timelines. Your systems are the invisible force multiplier behind our ₹9.2Cr → ₹75Cr journey.</p>
+    </div>
+    
+    <p style="color: #818CF8; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">No systems = Chaos = Inconsistent delivery = Chain breaks. You build the machine that scales.</p>
+</div>
+
 <div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
     <h3 style="color: #EF4444; margin-top: 0;">🔥 THE OPERATOR'S MISSION</h3>
     <p style="font-size: 1.3em; font-weight: bold; text-align: center; margin: 20px 0;">

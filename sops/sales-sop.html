@@ -972,98 +972,102 @@
                         margin-top: 40px;
                     }
                 }
-    
-    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
-    .mobile-header {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 56px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-        z-index: 9999;
-        padding: 0 12px;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 12px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
 
-    .mobile-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: white;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        flex-shrink: 0;
-    }
+                /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
+                .mobile-header {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 56px;
+                    background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
+                    z-index: 9999;
+                    padding: 0 12px;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+                }
 
-    .mobile-menu-btn:hover {
-        background: rgba(255, 255, 255, 0.25);
-    }
+                .mobile-menu-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    background: rgba(255, 255, 255, 0.15);
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    color: white;
+                    border-radius: 10px;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    flex-shrink: 0;
+                }
 
-    .mobile-home-btn {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        color: #10B981;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        padding: 10px 16px;
-        background: rgba(16, 185, 129, 0.15);
-        border-radius: 10px;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        white-space: nowrap;
-    }
+                .mobile-menu-btn:hover {
+                    background: rgba(255, 255, 255, 0.25);
+                }
 
-    .sidebar-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 9998;
-    }
+                .mobile-home-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    color: #10B981;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    padding: 10px 16px;
+                    background: rgba(16, 185, 129, 0.15);
+                    border-radius: 10px;
+                    border: 1px solid rgba(16, 185, 129, 0.3);
+                    white-space: nowrap;
+                }
 
-    .sidebar-overlay.active {
-        display: block;
-    }
+                .sidebar-overlay {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    z-index: 9998;
+                }
 
-    @media (max-width: 768px) {
-        .mobile-header {
-            display: flex !important;
-        }
-        .sidebar {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            height: 100vh !important;
-            width: 280px !important;
-            z-index: 9999 !important;
-            transform: translateX(-100%) !important;
-            transition: transform 0.3s ease !important;
-        }
-        .sidebar.active, .sidebar.open {
-            transform: translateX(0) !important;
-        }
-        .main-content {
-            margin-left: 0 !important;
-            padding-top: 70px !important;
-            width: 100% !important;
-        }
-    }
-    /* ========== END DEFINITIVE MOBILE FIX ========== */
+                .sidebar-overlay.active {
+                    display: block;
+                }
 
+                @media (max-width: 768px) {
+                    .mobile-header {
+                        display: flex !important;
+                    }
+
+                    .sidebar {
+                        position: fixed !important;
+                        top: 0 !important;
+                        left: 0 !important;
+                        height: 100vh !important;
+                        width: 280px !important;
+                        z-index: 9999 !important;
+                        transform: translateX(-100%) !important;
+                        transition: transform 0.3s ease !important;
+                    }
+
+                    .sidebar.active,
+                    .sidebar.open {
+                        transform: translateX(0) !important;
+                    }
+
+                    .main-content {
+                        margin-left: 0 !important;
+                        padding-top: 70px !important;
+                        width: 100% !important;
+                    }
+                }
+
+                /* ========== END DEFINITIVE MOBILE FIX ========== */
     </style>
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
@@ -1110,8 +1114,6 @@
         <div style="display: flex; gap: 8px; margin: 0 10px 10px 10px;">
             <button class="print-btn" onclick="window.print()" style="margin: 0; flex: 1; font-size: 0.85em;">🖨️
                 Print</button>
-            <button class="sidebar-quiz-btn" onclick="launchQuiz()" style="margin: 0; flex: 1; font-size: 0.85em;">🎓
-                Test</button>
         </div>
 
         <div class="sidebar-search">
@@ -1222,7 +1224,7 @@
                     <div id="resultsList"></div>
                     <button onclick="clearSearch()"
                         style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
-                         Search</button>
+                        Search</button>
                 </div>
 
                 <script>
@@ -1247,6 +1249,67 @@
                     function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section, .critical-alert').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
                 </script>
 
+                <!-- CULTURE: WELCOME TO DIGITAL HEROES -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes — You Are Part of Something
+                        Bigger</h3>
+                    <p>Before we dive into sales techniques, you need to understand something critical: <strong>You are
+                            not just joining a company. You are joining a mission.</strong></p>
+                    <div class="highlight-box"
+                        style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+                        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+                        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+                            <tr style="background: rgba(59, 130, 246, 0.2);">
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A
+                                        (Now):</strong> ₹9.2 Crores</td>
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B
+                                        (2027):</strong> ₹75 Crores</td>
+                            </tr>
+                        </table>
+                        <p style="margin: 0;">Every team member contributes to this journey, and every team member
+                            benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CULTURE: THE INTERCONNECTED CHAIN -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #FBBF24; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+                    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link
+                        is equally critical:</p>
+                    <div
+                        style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+                        <p style="margin: 0;">
+                            <strong style="color: #FBBF24; font-size: 1.2em;">⭐ YOU (Sales)</strong> → <strong>THE FUEL
+                                SYSTEM — generate enquiries that power everything</strong><br>
+                            ↓<br>
+                            <strong style="color: #F472B6;">Development</strong> → delivers quality work<br>
+                            ↓<br>
+                            <strong style="color: #34D399;">Client Satisfaction</strong> → creates happy customers<br>
+                            ↓<br>
+                            <strong style="color: #60A5FA;">CS Team</strong> → protects satisfaction<br>
+                            ↓<br>
+                            <strong style="color: #A78BFA;">5-Star Reviews</strong> → boost algorithm positioning<br>
+                            ↓<br>
+                            <strong style="color: #FBBF24;">More Organic Enquiries</strong> → the cycle amplifies
+                        </p>
+                    </div>
+                    <div class="highlight-box"
+                        style="background: rgba(245, 158, 11, 0.15); border-left: 4px solid #F59E0B; padding: 15px; margin: 15px 0;">
+                        <strong style="color: #FBBF24;">⛽ Your Critical Role:</strong>
+                        <p style="margin: 10px 0 0 0;">As a sales professional, you are the <strong>FUEL SYSTEM</strong>
+                            that powers everything at Digital Heroes. Without your 24/7 efforts converting enquiries
+                            into clients, there would be no development work, no design projects, no reviews, no growth.
+                            You create the opportunities that everyone else depends on. Every deal you close funds
+                            salaries, enables expansion, and moves us closer to our ₹75 Crore goal.</p>
+                    </div>
+                    <p style="color: #FBBF24; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">
+                        No sales = No clients = No work for anyone = Chain doesn't even start. YOU ignite everything.
+                    </p>
+                </div>
+
                 <!-- Opening Story -->
                 <section class="section">
                     <div class="section-header">
@@ -1261,22 +1324,22 @@
                         <p>Old me would've panicked. Offered 10% off. Maybe 15%.</p>
 
                         <p>Instead: "Thanks! Our Premium package is $1,200. That includes [full scope]. Price is firm —
-                            we  don't  discount because we don't cut corners."</p>
+                            we don't discount because we don't cut corners."</p>
 
                         <p>Client replied: "That's a bit high for my budget right now."</p>
 
-                        <p>I said: "Totally understand! When you're ready for quality that grows your business, we're 
+                        <p>I said: "Totally understand! When you're ready for quality that grows your business, we're
                             here."
                         </p>
 
                         <p>Three weeks later, same client came back: "Ready to go with the $1,800 Enterprise package.
-                            Can we  start Monday?"</p>
+                            Can we start Monday?"</p>
 
                         <div class="moral">
                             <strong>🎯 The Lesson:</strong> Holding your price signals confidence and quality. Clients
-                             who  haggle today often return when they're ready to invest in REAL results. The ones
+                            who haggle today often return when they're ready to invest in REAL results. The ones
                             who don't?
-                            They  would've been nightmares anyway.
+                            They would've been nightmares anyway.
                         </div>
                     </div>
                 </section>
@@ -1287,15 +1350,15 @@
 
                     <div class="highlight-box">
                         <h3 style="margin-bottom: 15px;">1. HARD PROBLEMS FIRST, THEN ORDER</h3>
-                        <p>Discuss ONLY hard technical problems before taking order. Once problems are resolved and 
-                            client  is  comfortable, THEN take the order. Routine things (store access, logo,
-                            assets) come AFTER  order  is  placed.</p>
+                        <p>Discuss ONLY hard technical problems before taking order. Once problems are resolved and
+                            client is comfortable, THEN take the order. Routine things (store access, logo,
+                            assets) come AFTER order is placed.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">2. PRICE BASED ON THEIR BUDGET</h3>
                         <p>We charge according to CLIENT'S budget perception, not fixed prices. Understand their budget
-                             range and position accordingly.</p>
+                            range and position accordingly.</p>
                     </div>
 
                     <div class="highlight-box"
@@ -1315,19 +1378,19 @@
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">3. SOLVE IT OR DON'T TAKE IT</h3>
                         <p>Before accepting a project, be 100% SURE you can solve any hard problems. If unsure, escalate
-                             to  senior team before committing.</p>
+                            to senior team before committing.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">4. NO FREE CONSULTING</h3>
                         <p>Discuss hard problems briefly to confirm feasibility. Don't give away solutions before order.
-                            Our  expertise has value.</p>
+                            Our expertise has value.</p>
                     </div>
 
                     <div class="highlight-box" style="margin-top: 20px;">
                         <h3 style="margin-bottom: 15px;">5. FULL PAYMENT UPFRONT</h3>
-                        <p>90% of projects require full payment before work begins. Milestone payments only for large 
-                            enterprise  projects ($2,000+), and even then — first milestone is preview link.</p>
+                        <p>90% of projects require full payment before work begins. Milestone payments only for large
+                            enterprise projects ($2,000+), and even then — first milestone is preview link.</p>
                     </div>
                 </section>
 
@@ -1341,7 +1404,7 @@
                     <div class="info-box danger">
                         <h4>🚨 ACCOUNT HEALTH IS #1 PRIORITY</h4>
                         <p>One bad client can cost you: reviews, mental health, time, money, and reputation.
-                            <strong>It's  better  to say NO to a $2,000 project than deal with a nightmare
+                            <strong>It's better to say NO to a $2,000 project than deal with a nightmare
                                 client.</strong>
                         </p>
                     </div>
@@ -1408,7 +1471,7 @@
                     <div class="info-box"
                         style="background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%); border-left: 5px solid #7B1FA2;">
                         <h4>📊 Decision Flow: Should You Take This Client?</h4>
-                        <div 
+                        <div
                             style="font-family: monospace; background: white; padding: 20px; border-radius: 10px; margin-top: 15px; line-height: 2;">
                             <strong>START: New Inquiry Received</strong><br>
                             │<br>
@@ -1419,9 +1482,9 @@
                             │ └─► Clear requirements → ✅ PROCEED<br>
                             │<br>
                             ├─► <strong>Step 2:</strong> Count red flags in conversation<br>
-                            │ ├─► 2+ Red Flags → <span style="color: #C62828;"><strong>POLITELY 
+                            │ ├─► 2+ Red Flags → <span style="color: #C62828;"><strong>POLITELY
                                     DISQUALIFY</strong></span><br>
-                            │ ├─► 1 Red + 2 Yellow → <span style="color: #E65100;"><strong>PROCEED WITH 
+                            │ ├─► 1 Red + 2 Yellow → <span style="color: #E65100;"><strong>PROCEED WITH
                                     CAUTION</strong></span><br>
                             │ └─► 0-1 Flags → <span style="color: #2E7D32;"><strong>GOOD CLIENT,
                                     PROCEED</strong></span><br>
@@ -1442,45 +1505,45 @@
                         <div class="template-header">📝 Script 1: Budget Mismatch</div>
                         <p><em>When client is clearly looking for cheap work:</em></p>
                         <p style="background: white; padding: 15px; border-radius: 8px; margin-top: 10px;">"Thanks for
-                             reaching  out! Based on what you've described, it sounds like you're looking for
-                            something more  budget-friendly. We specialize in premium website development for
+                            reaching out! Based on what you've described, it sounds like you're looking for
+                            something more budget-friendly. We specialize in premium website development for
                             businesses ready to invest
-                            $1,500+. I'd be happy to recommend some platforms like Fiverr or Upwork that might be a 
-                            better  fit  for your current stage. Best of luck with your project!"</p>
+                            $1,500+. I'd be happy to recommend some platforms like Fiverr or Upwork that might be a
+                            better fit for your current stage. Best of luck with your project!"</p>
                     </div>
 
                     <div class="template-box">
                         <div class="template-header">📝 Script 2: Unrealistic Timeline</div>
                         <p><em>When client wants impossible deadlines:</em></p>
                         <p style="background: white; padding: 15px; border-radius: 8px; margin-top: 10px;">"I appreciate
-                             the  urgency! Unfortunately, quality work takes time. Our fastest turnaround is 14 days
-                            for  standard  projects. Rushing leads to mistakes that hurt your business long-term. If
-                            the timeline is  absolutely  fixed, I'd recommend finding someone who can dedicate
-                            full-time hours to this. We don't  sacrifice  quality for speed."</p>
+                            the urgency! Unfortunately, quality work takes time. Our fastest turnaround is 14 days
+                            for standard projects. Rushing leads to mistakes that hurt your business long-term. If
+                            the timeline is absolutely fixed, I'd recommend finding someone who can dedicate
+                            full-time hours to this. We don't sacrifice quality for speed."</p>
                     </div>
 
                     <div class="template-box">
                         <div class="template-header">📝 Script 3: Bad History Pattern</div>
                         <p><em>When client has complained about "everyone" before:</em></p>
                         <p style="background: white; padding: 15px; border-radius: 8px; margin-top: 10px;">"I'm sorry to
-                             hear  you've had bad experiences before. To make sure we're a good fit, I'd like to
-                            understand  what  specifically went wrong. Could you share: 1) What was the main issue?
-                            2) What would success  look  like for you? 3) How do you prefer to communicate?"</p>
+                            hear you've had bad experiences before. To make sure we're a good fit, I'd like to
+                            understand what specifically went wrong. Could you share: 1) What was the main issue?
+                            2) What would success look like for you? 3) How do you prefer to communicate?"</p>
                         <p style="margin-top: 10px;"><em>→ If answers are vague, blaming, or unrealistic: "I appreciate
-                                 your  time, but I don't think we're the right fit for this project."</em></p>
+                                your time, but I don't think we're the right fit for this project."</em></p>
                     </div>
 
                     <div class="template-box">
                         <div class="template-header">📝 Script 4: Payment Terms Resistance</div>
                         <p><em>When client won't pay upfront:</em></p>
                         <p style="background: white; padding: 15px; border-radius: 8px; margin-top: 10px;">"I understand
-                             the  hesitation — you don't know us yet! Here's why we require payment upfront: it lets
-                            us  dedicate  full  resources to your project from day one. We've delivered 100+
-                            projects with a 4.9★ rating. If  you'd  like, I can share client references or our
+                            the hesitation — you don't know us yet! Here's why we require payment upfront: it lets
+                            us dedicate full resources to your project from day one. We've delivered 100+
+                            projects with a 4.9★ rating. If you'd like, I can share client references or our
                             portfolio. However, our payment terms are firm —
-                            it's  what allows us to guarantee quality."</p>
+                            it's what allows us to guarantee quality."</p>
                         <p style="margin-top: 10px;"><em>→ If they still resist: "I understand. Unfortunately, we can't
-                                 adjust  our payment structure. Best of luck finding the right partner!"</em></p>
+                                adjust our payment structure. Best of luck finding the right partner!"</em></p>
                     </div>
 
                     <h3>⚡ Quick Qualification Questions</h3>
@@ -1488,27 +1551,27 @@
                     <div class="info-box success">
                         <h4>✅ Ask These in First 5 Messages</h4>
                         <ol style="margin-left: 20px;">
-                            <li><strong>"What's your budget range for this project?"</strong> — Reveals if they're 
+                            <li><strong>"What's your budget range for this project?"</strong> — Reveals if they're
                                 serious
                             </li>
-                            <li><strong>"When do you need this completed by?"</strong> — Reveals unrealistic 
+                            <li><strong>"When do you need this completed by?"</strong> — Reveals unrealistic
                                 expectations
                             </li>
                             <li><strong>"Have you worked with developers before? How was that experience?"</strong> —
-                                Reveals  red flags</li>
+                                Reveals red flags</li>
                             <li><strong>"Are you the decision maker, or do others need to approve?"</strong> — Reveals
-                                 delays
+                                delays
                             </li>
-                            <li><strong>"What does success look like for this project?"</strong> — Reveals if 
-                                expectations  are  realistic</li>
+                            <li><strong>"What does success look like for this project?"</strong> — Reveals if
+                                expectations are realistic</li>
                         </ol>
                     </div>
 
                     <div class="info-box gold">
                         <h4>💎 The Golden Rule</h4>
-                        <p><strong>If you feel uncomfortable in the first conversation, it will only get worse during 
-                                the  project.</strong> Trust your gut. A "no" today protects your account health, your
-                            team's  sanity,
+                        <p><strong>If you feel uncomfortable in the first conversation, it will only get worse during
+                                the project.</strong> Trust your gut. A "no" today protects your account health, your
+                            team's sanity,
                             and your reputation.</p>
                     </div>
                 </section>
@@ -1522,8 +1585,8 @@
 
                     <div class="info-box gold">
                         <h4>🎯 Why Psychology Matters</h4>
-                        <p>Sales is not about manipulation — it's about understanding how people make decisions and 
-                            guiding them toward the right choice. These techniques are used by top-performing sales 
+                        <p>Sales is not about manipulation — it's about understanding how people make decisions and
+                            guiding them toward the right choice. These techniques are used by top-performing sales
                             teams worldwide.</p>
                     </div>
 
@@ -1541,7 +1604,7 @@
                         <div class="highlight-box" style="background: rgba(255,255,255,0.15); margin-top: 20px;">
                             <h4 style="margin-bottom: 10px;">❌ What Bad Salespeople Do:</h4>
                             <p>Talk 80%, listen 20%. Pitch features. Push the sale. Interrupt. Focus on what THEY want
-                                 to say.</p>
+                                to say.</p>
                         </div>
 
                         <div class="highlight-box" style="background: rgba(16, 185, 129, 0.3); margin-top: 15px;">
@@ -1556,7 +1619,7 @@
                         </div>
 
                         <p style="text-align: center; margin-top: 20px; font-size: 1.1em;"><strong>💡 "The person asking
-                                 questions controls the conversation. The person talking reveals their
+                                questions controls the conversation. The person talking reveals their
                                 needs."</strong>
                         </p>
                     </div>
@@ -1565,26 +1628,26 @@
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>1️⃣ The 3-Yes Technique ✅</h4>
                         <p><strong>Principle:</strong> Before pitching, get 3 small "yes" responses to put the client in
-                             agreeing mode.</p>
+                            agreeing mode.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Conversation:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #10B981;">You:</span> "You mentioned you want to increase 
+                                <span style="color: #10B981;">You:</span> "You mentioned you want to increase
                                 conversions, right?"<br>
                                 <span style="color: #6366F1;">Client:</span> <strong>"Yes"</strong><br><br>
                                 <span style="color: #10B981;">You:</span> "And you'd like to see results within 2-3
                                 weeks?"<br>
                                 <span style="color: #6366F1;">Client:</span> <strong>"Yes"</strong><br><br>
                                 <span style="color: #10B981;">You:</span> "So having a faster, better-converting store
-                                 is a priority for you?"<br>
+                                is a priority for you?"<br>
                                 <span style="color: #6366F1;">Client:</span> <strong>"Yes, definitely"</strong><br><br>
-                                <span style="color: #10B981;">You:</span> "Great! Here's exactly how we'll get you 
+                                <span style="color: #10B981;">You:</span> "Great! Here's exactly how we'll get you
                                 there..."
                             </p>
                         </div>
 
-                        <p style="color: #C62828; font-weight: bold;">⚠️ Once you get 3 yeses, the probability of 
+                        <p style="color: #C62828; font-weight: bold;">⚠️ Once you get 3 yeses, the probability of
                             closing increases by 50%!</p>
                     </div>
 
@@ -1592,41 +1655,41 @@
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>2️⃣ The Mirror Technique 🪞</h4>
                         <p><strong>Principle:</strong> Repeat the last 3 words the client said as a question. They will
-                             open up and explain more without you asking directly.</p>
+                            open up and explain more without you asking directly.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Conversation:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #6366F1;">Client:</span> "We tried Facebook ads but they didn't 
+                                <span style="color: #6366F1;">Client:</span> "We tried Facebook ads but they didn't
                                 really work for us"<br>
                                 <span style="color: #10B981;">You:</span> "...didn't work for you?"<br>
                                 <span style="color: #6366F1;">Client:</span> "Yeah, we spent $5,000 last month and only
-                                 got 3 sales. The landing page was terrible and our checkout had issues..."<br><br>
-                                <em style="color: #666;">→ Now you know their REAL problems without interrogating 
+                                got 3 sales. The landing page was terrible and our checkout had issues..."<br><br>
+                                <em style="color: #666;">→ Now you know their REAL problems without interrogating
                                     them.</em>
                             </p>
                         </div>
 
                         <p><strong>Why it works:</strong> Makes the client feel heard. They reveal their real problems
-                             without defensive barriers.</p>
+                            without defensive barriers.</p>
                     </div>
 
                     <!-- Technique 3: Pain Calculator -->
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>3️⃣ The Pain Calculator 💸</h4>
-                        <p><strong>Principle:</strong> Convert their problem into a daily/weekly dollar amount. Vague 
+                        <p><strong>Principle:</strong> Convert their problem into a daily/weekly dollar amount. Vague
                             pain is easy to ignore — specific numbers create urgency.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Script:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #10B981;">You:</span> "I ran your site through PageSpeed — you're 
+                                <span style="color: #10B981;">You:</span> "I ran your site through PageSpeed — you're
                                 loading in 4.2 seconds. Industry data shows that's costing you roughly 25% of visitors
-                                 who leave before the page loads."<br><br>
+                                who leave before the page loads."<br><br>
                                 <span style="color: #10B981;">You:</span> "Looking at your traffic of about 10,000
                                 visitors/month, that's 2,500 people bouncing. If even 2% would have purchased at your
                                 $50 average... that's <strong>$2,500/month in lost sales</strong>."<br><br>
-                                <span style="color: #10B981;">You:</span> "That's $30,000 a year walking out the door 
+                                <span style="color: #10B981;">You:</span> "That's $30,000 a year walking out the door
                                 because of page speed alone."
                             </p>
                         </div>
@@ -1638,7 +1701,7 @@
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>4️⃣ The Assumptive Close 📅</h4>
                         <p><strong>Principle:</strong> Don't ask IF they want to proceed. Assume they do and ask about
-                             next steps.</p>
+                            next steps.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">❌ Wrong Way:</p>
@@ -1646,7 +1709,7 @@
 
                             <p style="color: #333; font-weight: bold; margin: 15px 0 10px 0;">✅ Right Way:</p>
                             <p style="color: #10B981;">"Great! Should we start on Monday or would Wednesday work better
-                                 for you?"</p>
+                                for you?"</p>
                             <p style="color: #10B981; margin-top: 10px;">"Perfect. I'll send over the order details —
                                 would you prefer the standard 2-week delivery or the express 7-day option?"</p>
                         </div>
@@ -1658,19 +1721,19 @@
                     <!-- Technique 5: Takeaway Close -->
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>5️⃣ The Takeaway Close 🚪</h4>
-                        <p><strong>Principle:</strong> When someone hesitates, gently remove the option. People want 
+                        <p><strong>Principle:</strong> When someone hesitates, gently remove the option. People want
                             what they can't have.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Script:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #6366F1;">Client:</span> "I'm not sure, let me think about 
+                                <span style="color: #6366F1;">Client:</span> "I'm not sure, let me think about
                                 it..."<br><br>
                                 <span style="color: #10B981;">You:</span> "Actually, looking at your timeline and what
-                                 you need, I'm not sure we'd be the right fit for you right now. We typically work
-                                with  brands who are ready to scale immediately and can move fast. Maybe it makes
-                                sense to  revisit when you're fully ready?"<br><br>
-                                <span style="color: #6366F1;">Client:</span> "Wait, no — I AM ready. I just wanted to 
+                                you need, I'm not sure we'd be the right fit for you right now. We typically work
+                                with brands who are ready to scale immediately and can move fast. Maybe it makes
+                                sense to revisit when you're fully ready?"<br><br>
+                                <span style="color: #6366F1;">Client:</span> "Wait, no — I AM ready. I just wanted to
                                 double-check the budget. Let's do it."
                             </p>
                         </div>
@@ -1682,28 +1745,28 @@
                     <!-- Technique 6: Labeling -->
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>6️⃣ The Labeling Technique 🏷️</h4>
-                        <p><strong>Principle:</strong> Name their emotion before they do. It diffuses objections and 
+                        <p><strong>Principle:</strong> Name their emotion before they do. It diffuses objections and
                             makes them feel understood.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Scripts:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #10B981;">"It sounds like you've been burned by agencies 
+                                <span style="color: #10B981;">"It sounds like you've been burned by agencies
                                     before..."</span><br>
                                 → Client opens up about bad experiences, you address their specific fears<br><br>
 
-                                <span style="color: #10B981;">"It seems like budget is a concern right 
+                                <span style="color: #10B981;">"It seems like budget is a concern right
                                     now..."</span><br>
-                                → Client either confirms (you discuss value) or corrects you (price isn't the real 
+                                → Client either confirms (you discuss value) or corrects you (price isn't the real
                                 issue)<br><br>
 
-                                <span style="color: #10B981;">"I sense there might be some hesitation about the 
+                                <span style="color: #10B981;">"I sense there might be some hesitation about the
                                     timeline..."</span><br>
                                 → Client reveals what's really holding them back
                             </p>
                         </div>
 
-                        <p><strong>Why it works:</strong> When you label their fear, it loses power. They feel 
+                        <p><strong>Why it works:</strong> When you label their fear, it loses power. They feel
                             understood instead of defensive.</p>
                     </div>
 
@@ -1711,12 +1774,12 @@
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>7️⃣ The Silence Technique 🤫</h4>
                         <p><strong>Principle:</strong> After stating your price or ask, STOP TALKING. Wait for them to
-                             respond.</p>
+                            respond.</p>
 
-                        <div 
+                        <div
                             style="background: #FEF2F2; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #EF4444;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">⚠️ THE GOLDEN RULE:</p>
-                            <p style="color: #C62828; font-size: 1.2em; font-weight: bold;">The first person to speak 
+                            <p style="color: #C62828; font-size: 1.2em; font-weight: bold;">The first person to speak
                                 after the price LOSES leverage.</p>
                         </div>
 
@@ -1731,56 +1794,56 @@
                             <p style="color: #10B981; font-style: italic;">*Wait*</p>
                         </div>
 
-                        <p><strong>Why it works:</strong> Silence creates productive tension. Most salespeople fill 
+                        <p><strong>Why it works:</strong> Silence creates productive tension. Most salespeople fill
                             silence with discounts. Don't be most salespeople.</p>
                     </div>
 
                     <!-- Technique 8: Contrast Principle -->
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>8️⃣ The Contrast Principle 📊</h4>
-                        <p><strong>Principle:</strong> Show the expensive option first before your actual 
+                        <p><strong>Principle:</strong> Show the expensive option first before your actual
                             recommendation.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Script:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #10B981;">You:</span> "For what you're describing, a complete 
-                                redesign would run about <strong>$15,000</strong>. That includes new theme, custom 
+                                <span style="color: #10B981;">You:</span> "For what you're describing, a complete
+                                redesign would run about <strong>$15,000</strong>. That includes new theme, custom
                                 development, full migration..."<br><br>
-                                <span style="color: #10B981;">You:</span> "BUT — looking at your current site, I 
-                                actually think we can get you 80% of the results with a <strong>$3,500 conversion 
+                                <span style="color: #10B981;">You:</span> "BUT — looking at your current site, I
+                                actually think we can get you 80% of the results with a <strong>$3,500 conversion
                                     optimization package</strong>. We keep your existing structure but fix the checkout,
                                 speed, and mobile experience."<br><br>
                                 <span style="color: #6366F1;">Client:</span> "$3,500 sounds way more reasonable. Let's
-                                 do that."
+                                do that."
                             </p>
                         </div>
 
-                        <p><strong>Why it works:</strong> $3,500 feels like a bargain compared to $15,000. It's still 
+                        <p><strong>Why it works:</strong> $3,500 feels like a bargain compared to $15,000. It's still
                             your target price — you just framed it better.</p>
                     </div>
 
                     <!-- Technique 9: Future Pacing -->
                     <div class="story-box" style="margin-top: 25px;">
                         <h4>9️⃣ Future Pacing 🔮</h4>
-                        <p><strong>Principle:</strong> Help them visualize their life AFTER working with you. Paint a 
+                        <p><strong>Principle:</strong> Help them visualize their life AFTER working with you. Paint a
                             vivid picture of success.</p>
 
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Script:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #10B981;">You:</span> "Imagine this — it's 3 weeks from now. You 
-                                wake up, check your phone, and you've got 15 new orders overnight. Your site loads in 
+                                <span style="color: #10B981;">You:</span> "Imagine this — it's 3 weeks from now. You
+                                wake up, check your phone, and you've got 15 new orders overnight. Your site loads in
                                 under 2 seconds. Customers are adding to cart without any errors."<br><br>
                                 <span style="color: #10B981;">You:</span> "Your conversion rate has gone from 1% to 3%.
                                 That same ad spend that was barely breaking even is now generating real profit."<br><br>
                                 <span style="color: #10B981;">You:</span> "That's what we're building for you. Ready to
-                                 make it happen?"
+                                make it happen?"
                             </p>
                         </div>
 
                         <p><strong>Why it works:</strong> People don't buy products — they buy the feeling of having the
-                             solution. Make them feel successful BEFORE they buy.</p>
+                            solution. Make them feel successful BEFORE they buy.</p>
                     </div>
 
                     <!-- Technique 10: Success Story Bridge -->
@@ -1792,21 +1855,21 @@
                         <div style="background: white; padding: 20px; border-radius: 10px; margin: 15px 0;">
                             <p style="color: #333; font-weight: bold; margin-bottom: 10px;">💬 Example Script:</p>
                             <p style="color: #333; line-height: 1.8;">
-                                <span style="color: #6366F1;">Client:</span> "I'm not sure if this will work for my 
+                                <span style="color: #6366F1;">Client:</span> "I'm not sure if this will work for my
                                 niche..."<br><br>
-                                <span style="color: #10B981;">You:</span> "I totally understand — actually, we had a 
-                                client last month who said the exact same thing. They sell handmade jewelry, very 
+                                <span style="color: #10B981;">You:</span> "I totally understand — actually, we had a
+                                client last month who said the exact same thing. They sell handmade jewelry, very
                                 specific niche. They were worried their audience was too small."<br><br>
-                                <span style="color: #10B981;">You:</span> "Within 45 days of the redesign, their 
+                                <span style="color: #10B981;">You:</span> "Within 45 days of the redesign, their
                                 conversion rate went from 0.8% to 2.4%. Revenue jumped from $8K/month to
                                 $22K/month."<br><br>
-                                <span style="color: #10B981;">You:</span> "Would results like that be interesting to 
+                                <span style="color: #10B981;">You:</span> "Would results like that be interesting to
                                 you?"
                             </p>
                         </div>
 
                         <p><strong>Why it works:</strong> Stories bypass logical resistance. They see themselves in the
-                             success story.</p>
+                            success story.</p>
                     </div>
 
                     <!-- Quick Reference Card -->
@@ -1888,7 +1951,7 @@
                         <h4>2️⃣ The 10-Second Rule ⏱️</h4>
                         <p><strong>Principle:</strong> If you can't explain your value in 10 seconds, you'll lose them.
                         </p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <strong>Example:</strong> "We build Shopify stores that convert 3x better than templates."
                         </p>
@@ -1899,7 +1962,7 @@
                         <p><strong>Principle:</strong> Start every sales chat with genuine praise about their business.
                         </p>
                         <p style="background: white; padding: 10px; border-radius: 8px; margin-top: 10px; color: #333;">
-                            <em>"I love what you're doing with [their brand]. The [specific thing] is really well 
+                            <em>"I love what you're doing with [their brand]. The [specific thing] is really well
                                 done."</em>
                         </p>
                         <p style="margin-top: 5px;">Lowers their guard, builds instant rapport.</p>
@@ -1917,9 +1980,9 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>5️⃣ The Delay Close ⏰</h4>
-                        <p><strong>Principle:</strong> When they say "I'll think about it," book a follow-up 
+                        <p><strong>Principle:</strong> When they say "I'll think about it," book a follow-up
                             immediately.</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Perfect! When should I follow up — Thursday or Friday?"</em>
                         </p>
@@ -1939,7 +2002,7 @@
                         <h4>7️⃣ The Negative Close 🚫</h4>
                         <p><strong>Principle:</strong> Disqualify yourself first to build trust.</p>
                         <p style="background: white; padding: 10px; border-radius: 8px; margin-top: 10px; color: #333;">
-                            <em>"Honestly, if you just need a basic store, we might not be the right fit. We focus on 
+                            <em>"Honestly, if you just need a basic store, we might not be the right fit. We focus on
                                 premium builds."</em>
                         </p>
                         <p style="margin-top: 5px;">Scarcity creates desire.</p>
@@ -1948,9 +2011,9 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>8️⃣ The "If I Could, Would You" 🤝</h4>
                         <p><strong>Principle:</strong> Test commitment before negotiating.</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
-                            <em>"If I could get this done by Friday instead of Monday, would you be ready to move 
+                            <em>"If I could get this done by Friday instead of Monday, would you be ready to move
                                 forward today?"</em>
                         </p>
                     </div>
@@ -1967,10 +2030,10 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>🔟 The Options Close 🎁</h4>
                         <p><strong>Principle:</strong> Always give 2-3 options, never one.</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"We have the Starter package at $1,500 or the Pro package at $3,000. Which feels right
-                                 for your goals?"</em>
+                                for your goals?"</em>
                         </p>
                     </div>
                 </section>
@@ -1984,7 +2047,7 @@
 
                     <div class="info-box gold">
                         <h4>💡 The Relationship Mindset</h4>
-                        <p>Clients don't just buy services — they buy trust, reliability, and peace of mind. These 
+                        <p>Clients don't just buy services — they buy trust, reliability, and peace of mind. These
                             techniques build long-term partnerships.</p>
                     </div>
 
@@ -1999,7 +2062,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>2️⃣ The 48-Hour Follow-Up ⏰</h4>
                         <p>48 hours after delivery, check in:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"How's everything working? Any questions?"</em>
                         </p>
@@ -2016,7 +2079,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>4️⃣ The Expectation Sync 🎯</h4>
                         <p>At project start, explicitly state:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Here's what I'll deliver. Here's what I won't. Agreed?"</em>
                         </p>
@@ -2033,7 +2096,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>6️⃣ The 3-Touch Rule 📱</h4>
                         <p>Follow up a maximum of 3 times. After that, send a closing email:</p>
-                        <p 
+                        <p
                             style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Haven't heard back. Closing this thread for now. Reach out when ready."</em>
                         </p>
@@ -2042,7 +2105,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>7️⃣ The Referral Ask 🌟</h4>
                         <p>Happy clients are your best marketing. After every 5-star review, ask:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Do you know anyone else who might need similar help?"</em>
                         </p>
@@ -2069,7 +2132,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>🔟 The Exit Interview 📝</h4>
                         <p>At project end, ask:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"What did we do well? What could we improve?"</em>
                         </p>
@@ -2089,7 +2152,7 @@
                         <p style="font-size: 1.3em; text-align: center; margin: 15px 0;">
                             <strong>Conviction × Trust = Sales</strong>
                         </p>
-                        <p>Not scripts. Not rebuttals. Not persuasion tricks. If you <strong>believe</strong>, people 
+                        <p>Not scripts. Not rebuttals. Not persuasion tricks. If you <strong>believe</strong>, people
                             feel it. If you don't, they smell it.</p>
                     </div>
 
@@ -2105,10 +2168,10 @@
                             <li>Case studies: "This brand hit 4.8% CVR"</li>
                             <li>Results: "This ad campaign went 12x ROAS"</li>
                         </ul>
-                        <p 
+                        <p
                             style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <strong>That is gasoline for your conviction.</strong> The more wins you see, the more you
-                             believe, the more you close.
+                            believe, the more you close.
                         </p>
                     </div>
 
@@ -2122,7 +2185,7 @@
                         </div>
                         <p style="margin-top: 10px;">Now the client is explaining to <em>themselves</em>. No pressure.
                             No conflict. Just logic.</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <strong>People convince themselves better than you ever could.</strong>
                         </p>
@@ -2135,34 +2198,34 @@
                             <p><strong>Losers:</strong> React emotionally → Push → Get defensive</p>
                             <p><strong>Winners:</strong> Slow down → Ask → Stay curious</p>
                         </div>
-                        <p 
+                        <p
                             style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
-                            <strong>The calmest rep wins.</strong> When belief is real, your voice changes, speed 
+                            <strong>The calmest rep wins.</strong> When belief is real, your voice changes, speed
                             changes, certainty comes through. People feel it.
                         </p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>⏳ Seasons Mindset = Psychological Freedom</h4>
-                        <p>Most people think commitment = prison. Elite founders use <strong>time-boxed 
+                        <p>Most people think commitment = prison. Elite founders use <strong>time-boxed
                                 seasons.</strong></p>
                         <div style="margin-top: 10px;">
                             <p style="color: #EF4444;">❌ Default thinking: "If I start this, I'm stuck forever"</p>
                             <p style="color: #10B981;">✅ Seasonal reframe: "I'm committing to this for THIS season"</p>
                         </div>
                         <p style="margin-top: 10px;">Just like: Winter ≠ Summer | Launch season ≠ Scaling season | Cash
-                             season ≠ Brand season</p>
+                            season ≠ Brand season</p>
                         <p>This removes: Fear of wrong decisions, overthinking, perfectionism.</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
-                            <strong>You don't quit — you transition seasons.</strong> This is why elite founders move 
+                            <strong>You don't quit — you transition seasons.</strong> This is why elite founders move
                             fast while others freeze.
                         </p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>📞 The Real Sales Framework (Not Features)</h4>
-                        <p>You've had this conversation 10,000 times. They've had it once. <strong>You must guide the 
+                        <p>You've had this conversation 10,000 times. They've had it once. <strong>You must guide the
                                 structure:</strong></p>
                         <ol style="margin-top: 10px;">
                             <li>Why are you here?</li>
@@ -2202,14 +2265,14 @@
 
                     <div class="story-box" style="margin-top: 20px;">
                         <h4>1️⃣ The "Why Now" Question ❓</h4>
-                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"What 
+                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"What
                                 made you reach out today specifically?"</em></p>
                         <p style="margin-top: 5px;">Reveals their urgency level immediately.</p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>2️⃣ The Immediate Audit 🔍</h4>
-                        <p>Run their site through PageSpeed/GTmetrix <strong>while chatting</strong>. Share findings 
+                        <p>Run their site through PageSpeed/GTmetrix <strong>while chatting</strong>. Share findings
                             live.</p>
                         <p style="margin-top: 5px; color: #10B981;">Shows expertise + gives immediate value.</p>
                     </div>
@@ -2217,21 +2280,21 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>3️⃣ The LinkedIn Research 🔗</h4>
                         <p>Check their LinkedIn before responding. Mention their background naturally.</p>
-                        <p style="margin-top: 5px;"><em>"I saw you've been building [brand] for 2 years — amazing 
+                        <p style="margin-top: 5px;"><em>"I saw you've been building [brand] for 2 years — amazing
                                 progress!"</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>4️⃣ The Industry Insider 🎯</h4>
                         <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"I've worked
-                                 with 15+ skincare brands. Here's what works..."</em></p>
+                                with 15+ skincare brands. Here's what works..."</em></p>
                         <p style="margin-top: 5px;">Position yourself as a specialist, not a generalist.</p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>5️⃣ The Competitor Drop 📊</h4>
                         <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"We just
-                                 finished working with [similar brand]. Their conversions jumped 40%."</em></p>
+                                finished working with [similar brand]. Their conversions jumped 40%."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
@@ -2242,7 +2305,7 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>7️⃣ The "You're Not Alone" Opener 🤝</h4>
-                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"Most store 
+                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"Most store
                                 owners struggle with exactly this issue. Here's why..."</em></p>
                         <p style="margin-top: 5px;">Normalizes their problem. Reduces shame.</p>
                     </div>
@@ -2282,7 +2345,7 @@
                     <div class="story-box" style="margin-top: 20px;">
                         <h4>1️⃣ The Budget Range Test 💰</h4>
                         <p>Never ask exact budget. Ask:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Are you thinking $1,000 range or $3,000+ range?"</em>
                         </p>
@@ -2291,19 +2354,19 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>2️⃣ The Decision Timeline ⏰</h4>
                         <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"When were you
-                                 hoping to launch?"</em></p>
+                                hoping to launch?"</em></p>
                         <p style="margin-top: 5px;">Qualifies urgency instantly.</p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>3️⃣ The Decision Maker Check 👤</h4>
                         <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"Are you
-                                 the one making the final call, or does someone else need to approve?"</em></p>
+                                the one making the final call, or does someone else need to approve?"</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>4️⃣ The "Tried Before" Probe 🔍</h4>
-                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"Have you 
+                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"Have you
                                 worked with developers before? What went right/wrong?"</em></p>
                         <p style="margin-top: 5px;">Reveals red flags and expectations.</p>
                     </div>
@@ -2311,7 +2374,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>5️⃣ The Dream Store Question ✨</h4>
                         <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"If your
-                                 store was perfect, what would be different about it?"</em></p>
+                                store was perfect, what would be different about it?"</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
@@ -2321,13 +2384,13 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>7️⃣ The Revenue Impact Question 📈</h4>
-                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"If your 
+                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"If your
                                 conversion rate doubled, what would that mean for your business?"</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>8️⃣ The Competitor Research 🔎</h4>
-                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"Who's 
+                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"Who's
                                 your biggest competitor? What do they do better than you?"</em></p>
                     </div>
 
@@ -2339,7 +2402,7 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>⚠️ 🔟 The "If Money Wasn't an Issue" 💎</h4>
-                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"If budget 
+                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"If budget
                                 wasn't a concern, what would your ideal solution look like?"</em></p>
                         <p style="margin-top: 5px;">Reveals their true desires.</p>
                     </div>
@@ -2354,13 +2417,13 @@
 
                     <div class="critical-alert" style="background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);">
                         <h3>⚠️ The #1 Rule of Objections</h3>
-                        <p style="font-size: 1.1em;">Objections are <strong>buying signals</strong>. If they didn't 
+                        <p style="font-size: 1.1em;">Objections are <strong>buying signals</strong>. If they didn't
                             care, they'd just leave. Handle objections = close deals.</p>
                     </div>
 
                     <div class="story-box" style="margin-top: 20px;">
                         <h4>1️⃣ The "Feel, Felt, Found" Framework 💬</h4>
-                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"I 
+                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"I
                                 understand how you feel. Others felt the same way. What they found was..."</em></p>
                     </div>
 
@@ -2374,7 +2437,7 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>3️⃣ The Cost of Inaction 💸</h4>
-                        <p style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px;"><em>"What 
+                        <p style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px;"><em>"What
                                 happens if you don't fix this? Another 6 months of lost sales?"</em></p>
                     </div>
 
@@ -2385,14 +2448,14 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>5️⃣ The Split Test Offer 🧪</h4>
-                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"Let's 
+                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"Let's
                                 start with one page. If you love it, we continue. Fair?"</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>6️⃣ The Guarantee Frame ✅</h4>
                         <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"If you're not
-                                 happy with the preview, you don't pay. Zero risk."</em></p>
+                                happy with the preview, you don't pay. Zero risk."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
@@ -2403,14 +2466,14 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>8️⃣ The Priority Reset 🎯</h4>
-                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"What's 
+                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"What's
                                 costing you more — the investment in this, or staying where you are?"</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>9️⃣ The "Compared to What?" Reframe 📊</h4>
                         <p>Price objection? Respond:</p>
-                        <p 
+                        <p
                             style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Compared to what? A $500 freelancer who disappears after 2 weeks?"</em>
                         </p>
@@ -2419,7 +2482,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>🔟 The Risk Reversal 🔄</h4>
                         <p>Put the risk on yourself:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"We don't get paid until you approve the preview."</em>
                         </p>
@@ -2456,13 +2519,13 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>3️⃣ The Trade-Off Negotiation ⚖️</h4>
                         <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"I can reduce
-                                 price by $500, but we'd need to remove [feature]. Which matters more?"</em></p>
+                                price by $500, but we'd need to remove [feature]. Which matters more?"</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>4️⃣ The Payment Plan Option 💳</h4>
                         <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"We can
-                                 split this into 2 payments if that helps with cash flow."</em></p>
+                                split this into 2 payments if that helps with cash flow."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
@@ -2475,31 +2538,31 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>6️⃣ The Long-Term Value Frame 📅</h4>
-                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"Think 
+                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"Think
                                 about it over 3 years. That's less than $100/month for a money-making asset."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>7️⃣ The Comparison Frame 📊</h4>
                         <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"This is less
-                                 than what most stores spend on one month of ads that don't convert."</em></p>
+                                than what most stores spend on one month of ads that don't convert."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>8️⃣ The Bundle Discount 🎁</h4>
                         <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"If we do
-                                 both the homepage and product pages, I can discount 15%."</em></p>
+                                both the homepage and product pages, I can discount 15%."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>9️⃣ The Referral Offer 🌟</h4>
-                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"Refer one 
+                        <p style="background: white; padding: 10px; border-radius: 8px; color: #333;"><em>"Refer one
                                 client, get 10% off your next project."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>🔟 The "Invest in Yourself" Frame 💪</h4>
-                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"This 
+                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"This
                                 isn't an expense. It's an investment that generates ongoing revenue."</em></p>
                     </div>
                 </section>
@@ -2513,20 +2576,20 @@
 
                     <div class="critical-alert" style="background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);">
                         <h3>📊 The Fortune is in the Follow-Up</h3>
-                        <p style="font-size: 1.1em;"><strong>80% of sales require 5+ follow-ups.</strong> Most people 
+                        <p style="font-size: 1.1em;"><strong>80% of sales require 5+ follow-ups.</strong> Most people
                             give up after 1 or 2.</p>
                     </div>
 
                     <div class="story-box" style="margin-top: 20px;">
                         <h4>1️⃣ The Urgency Callback ⏰</h4>
                         <p style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px;"><em>"Our next
-                                 slot opens in 3 weeks. If you want the earlier one, let me know by Friday."</em></p>
+                                slot opens in 3 weeks. If you want the earlier one, let me know by Friday."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>2️⃣ The "Just Checking In" Death ☠️</h4>
                         <p>Never say "just checking in." Add value instead:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Saw this article, thought of your situation..."</em>
                         </p>
@@ -2549,13 +2612,13 @@
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>5️⃣ The Deadline Create 📅</h4>
-                        <p style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px;"><em>"I can 
+                        <p style="background: rgba(245, 158, 11, 0.2); padding: 10px; border-radius: 8px;"><em>"I can
                                 hold this price until Friday, then it goes back to standard rate."</em></p>
                     </div>
 
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>6️⃣ The "Meanwhile" Follow-Up 🔍</h4>
-                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"While 
+                        <p style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px;"><em>"While
                                 you're deciding, I analyzed your checkout flow. Found 3 issues..."</em></p>
                     </div>
 
@@ -2570,7 +2633,7 @@
                     <div class="story-box" style="margin-top: 15px;">
                         <h4>🏆 8️⃣ The Success Update 🏆</h4>
                         <p>After closing ANY deal, share a win:</p>
-                        <p 
+                        <p
                             style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
                             <em>"Just helped [store] go from $10K to $35K/month."</em>
                         </p>
@@ -2605,7 +2668,7 @@
                             <li>Understand their budget range first</li>
                             <li>Position your price within their comfort zone</li>
                             <li>Projects above $1,000 = <strong>5% commission</strong> on everything they make from the
-                                 store
+                                store
                             </li>
                         </ul>
                     </div>
@@ -2689,15 +2752,15 @@
                         <div class="message client">
                             <div class="sender">👤 Client</div>
                             "Hi! I need a Shopify store for my jewelry brand. I also need real-time inventory sync with
-                             my  ERP."
+                            my ERP."
                         </div>
 
                         <div class="message sales">
                             <div class="sender">💰 You</div>
                             "Great to hear from you! The ERP integration is an important detail. Can you tell me which
-                             ERP  system you're using? This helps me confirm we can deliver exactly what you need."
+                            ERP system you're using? This helps me confirm we can deliver exactly what you need."
                             <div class="analysis">✅ <strong>Why this works:</strong> You're addressing the HARD problem
-                                 first  before discussing price or collecting assets.</div>
+                                first before discussing price or collecting assets.</div>
                         </div>
 
                         <div class="message client">
@@ -2707,10 +2770,10 @@
 
                         <div class="message sales">
                             <div class="sender">💰 You</div>
-                            "Yes, Zoho integrates well with Shopify! Now that I know this is feasible — what's your 
-                            budget  range  for this project? I want to make sure we create a package that works for
+                            "Yes, Zoho integrates well with Shopify! Now that I know this is feasible — what's your
+                            budget range for this project? I want to make sure we create a package that works for
                             you."
-                            <div class="analysis">✅ <strong>Why this works:</strong> Problem solved → Now discover 
+                            <div class="analysis">✅ <strong>Why this works:</strong> Problem solved → Now discover
                                 budget →
                                 Price accordingly.</div>
                         </div>
@@ -2763,14 +2826,14 @@
                             <tr>
                                 <td><strong>Tight deadlines</strong></td>
                                 <td>May not be achievable</td>
-                                <td>"Your launch date is [date]. Our standard is 14 days. Let me see if we can 
+                                <td>"Your launch date is [date]. Our standard is 14 days. Let me see if we can
                                     accommodate."
                                 </td>
                             </tr>
                             <tr>
                                 <td><strong>Design expectations</strong></td>
                                 <td>Reference store may not be realistic</td>
-                                <td>"I see your reference stores. [X feature] requires [explanation]. Want to discuss 
+                                <td>"I see your reference stores. [X feature] requires [explanation]. Want to discuss
                                     options?"
                                 </td>
                             </tr>
@@ -2804,7 +2867,7 @@
                         <p>This will help us ensure smooth execution without any surprises later.</p>
 
                         <p>Once we align on this, our PM will reach out to officially kick off, and you'll be on track
-                             for  delivery by <span class="placeholder">[Date]</span>!</p>
+                            for delivery by <span class="placeholder">[Date]</span>!</p>
                     </div>
                 </section>
 
@@ -2923,18 +2986,18 @@
                             <tbody>
                                 <tr>
                                     <td>"Can you do it for $800?"</td>
-                                    <td>"Our Premium package is $1,200, and that's the lowest we go. It reflects the 
-                                        quality  we  deliver."</td>
+                                    <td>"Our Premium package is $1,200, and that's the lowest we go. It reflects the
+                                        quality we deliver."</td>
                                 </tr>
                                 <tr>
                                     <td>"I found cheaper on Fiverr"</td>
-                                    <td>"You'll find many options at lower prices. Our clients come to us after those 
+                                    <td>"You'll find many options at lower prices. Our clients come to us after those
                                         experiences. When you're ready for quality, we're here."</td>
                                 </tr>
                                 <tr>
                                     <td>"My budget is only $500"</td>
                                     <td>"I understand. Unfortunately, we can't deliver our standard at that price. I'd
-                                         rather be  honest than deliver something subpar."</td>
+                                        rather be honest than deliver something subpar."</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2961,15 +3024,15 @@
                             "I appreciate you being upfront about budget!
 
                             Here's the thing — our $1,200 Premium package includes speed optimization,
-                            conversion-focused  design, and 30 days of support. These aren't extras; they're what
-                            makes the difference  between a  store that gets visits and a store that gets sales.
+                            conversion-focused design, and 30 days of support. These aren't extras; they're what
+                            makes the difference between a store that gets visits and a store that gets sales.
 
                             We've seen clients who went with cheaper options come back to us 6 months later asking to
                             'fix'
                             their store. They spent $500 twice instead of $1,200 once.
 
                             Would it help if I showed you a before/after of a recent project so you can see exactly what
-                             the  investment delivers?"
+                            the investment delivers?"
                         </div>
                     </div>
 
@@ -2985,12 +3048,12 @@
                             <div class="sender">💰 You</div>
                             "Absolutely! Big decisions deserve thought.
 
-                            Quick question — is there anything specific you're weighing? Sometimes I can provide info 
-                            that  makes  the decision clearer.
+                            Quick question — is there anything specific you're weighing? Sometimes I can provide info
+                            that makes the decision clearer.
 
                             And just so you know: our turnaround is 14 days, so if you're aiming for a specific launch
-                             date,
-                            I  can hold a spot for you if you decide within [X days].
+                            date,
+                            I can hold a spot for you if you decide within [X days].
 
                             No pressure at all. I'm here when you're ready!"
                         </div>
@@ -3012,9 +3075,9 @@
 
                             1. It ensures we can dedicate our best resources to your project immediately
                             2. All work is shown on a password-protected preview before we go live
-                            3. We have 2,000+ completed stores and a 4.9★ rating on Fiverr — we've earned that trust 
+                            3. We have 2,000+ completed stores and a 4.9★ rating on Fiverr — we've earned that trust
                             You'll see the full store before anything goes live. If there's an issue, we fix it. That's
-                             our  guarantee.
+                            our guarantee.
 
                             Does that address your concern?"
                         </div>
@@ -3031,7 +3094,7 @@
                     <div class="info-box"
                         style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-left: 5px solid #2E7D32;">
                         <h4>📊 Decision Flow: When Client Objects to Price</h4>
-                        <div 
+                        <div
                             style="font-family: monospace; background: white; padding: 20px; border-radius: 10px; margin-top: 15px; line-height: 2;">
                             <strong>Client says: "That's more than I expected" / "Too expensive"</strong><br>
                             │<br>
@@ -3042,7 +3105,7 @@
                             │<br>
                             ├─► <strong>For BUDGET ISSUE:</strong><br>
                             │ ├─► Within 20% of your price? → Offer reduced scope (MVP option)<br>
-                            │ ├─► Way below your minimum? → <span style="color: #C62828;"><strong>POLITELY 
+                            │ ├─► Way below your minimum? → <span style="color: #C62828;"><strong>POLITELY
                                     DISQUALIFY</strong></span><br>
                             │ └─► Script: "I understand budget constraints. What if we start with a 3-page site<br>
                             │ at $800 and add more features later?"<br>
@@ -3051,14 +3114,14 @@
                             │ ├─► Show ROI: "A 1% conversion increase = $X extra revenue for you"<br>
                             │ ├─► Show portfolio: "Here's a before/after of a similar client"<br>
                             │ └─► If still resistant → <span style="color: #C62828;"><strong>DISQUALIFY</strong></span>
-                            (they  won't appreciate quality)<br>
+                            (they won't appreciate quality)<br>
                             │<br>
                             └─► <strong>For COMPARISON ISSUE:</strong><br>
                             ├─► "Those cheaper options exist, and they're fine for basic sites.<br>
                             │ But you're here because you want something that CONVERTS."<br>
                             ├─► Ask: "What specifically are you comparing us to?"<br>
                             └─► If they want cheap → <span style="color: #C62828;"><strong>DISQUALIFY</strong></span>
-                            ("We're  not the right fit")
+                            ("We're not the right fit")
                         </div>
                     </div>
 
@@ -3066,8 +3129,8 @@
 
                     <div class="info-box gold">
                         <h4>💡 Never Lower Price — Reduce Scope</h4>
-                        <p><strong>Rule:</strong> If client can't afford full scope, offer a smaller package. NEVER 
-                            discount  your rates.</p>
+                        <p><strong>Rule:</strong> If client can't afford full scope, offer a smaller package. NEVER
+                            discount your rates.</p>
                         <table class="styled-table" style="margin-top: 15px;">
                             <thead>
                                 <tr>
@@ -3095,9 +3158,9 @@
                             </tbody>
                         </table>
                         <p style="margin-top: 15px;"><strong>Script:</strong> "If budget is the constraint, I can create
-                             an  MVP  version that gets you launched. We can always add features later when
+                            an MVP version that gets you launched. We can always add features later when
                             revenue comes in.
-                            Sound  fair?"
+                            Sound fair?"
                         </p>
                     </div>
                 </section>
@@ -3118,9 +3181,9 @@
                         <p>We specialize in high-converting Shopify stores. Here are our packages:</p>
 
                         <p>💎 <strong>Premium ($1,200):</strong> 5-page custom store, 25 products, speed optimized,
-                            30-day  support<br>
+                            30-day support<br>
                             👑 <strong>Enterprise ($1,800):</strong> Everything in Premium + unlimited products,
-                            advanced  features, 90-day support</p>
+                            advanced features, 90-day support</p>
 
                         <p>📊 <strong>Our stats:</strong> 2,000+ stores delivered | 4.9★ rating | 14-day delivery</p>
 
@@ -3132,7 +3195,7 @@
                     <div class="template-box">
                         <div class="template-header">📝 Template: Closing After Discussion</div>
                         <p>Perfect! Sounds like the <span class="placeholder">[Premium/Enterprise]</span> package is the
-                             right  fit for <span class="placeholder">[Brand Name]</span>.</p>
+                            right fit for <span class="placeholder">[Brand Name]</span>.</p>
 
                         <p><strong>Here's how we move forward:</strong></p>
 
@@ -3204,7 +3267,7 @@
 
                     <div class="info-box warning">
                         <h4>⚠️ What's Happening</h4>
-                        <p>They're either comparing options, busy, or lost interest. Don't panic — follow up 
+                        <p>They're either comparing options, busy, or lost interest. Don't panic — follow up
                             strategically.
                         </p>
                     </div>
@@ -3227,21 +3290,21 @@
                                 <td><strong>4-5 days</strong></td>
                                 <td>Add value</td>
                                 <td>"Hi! Saw this [niche] store that reminded me of your project. Thought you might like
-                                     the  design: [link]"</td>
+                                    the design: [link]"</td>
                             </tr>
                             <tr>
                                 <td><strong>7+ days</strong></td>
                                 <td>Create soft urgency</td>
                                 <td>"Hi [Name]! We're filling up slots for [month]. If you're still interested, let me
-                                     know
+                                    know
                                     —
                                     happy to hold a spot if you're planning to move forward soon."</td>
                             </tr>
                             <tr>
                                 <td><strong>14+ days</strong></td>
                                 <td>Final follow-up</td>
-                                <td>"Hey! Just closing the loop — sounds like timing isn't right. Totally okay! If 
-                                    things  change, I'm here. Best of luck with [project]!"</td>
+                                <td>"Hey! Just closing the loop — sounds like timing isn't right. Totally okay! If
+                                    things change, I'm here. Best of luck with [project]!"</td>
                             </tr>
                         </tbody>
                     </table>
@@ -3253,7 +3316,7 @@
 
                         <div class="message client">
                             <div class="sender">👤 Client</div>
-                            "I need a store with 500 products, 20 custom pages, inventory sync with my warehouse, and 
+                            "I need a store with 500 products, 20 custom pages, inventory sync with my warehouse, and
                             multi-language support. Budget is $1,000."
                         </div>
 
@@ -3265,16 +3328,16 @@
                             • 500 products with proper SEO = significant upload time
                             • 20 custom pages goes well beyond our standard packages
                             • Inventory sync requires custom API integration
-                            • Multi-language requires apps + translation setup  I can suggest two options:
+                            • Multi-language requires apps + translation setup I can suggest two options:
 
-                            1️⃣ **MVP Launch ($1,800):** Start with 100 products, 10 key pages, basic inventory. Add 
-                            advanced  features in Phase 2.
+                            1️⃣ **MVP Launch ($1,800):** Start with 100 products, 10 key pages, basic inventory. Add
+                            advanced features in Phase 2.
 
                             2️⃣ **Full Scope ($4,500):** Everything you described, properly done.
 
                             Which approach feels right for where you are now?"
                             <div class="analysis">✅ <strong>Why this works:</strong> You're honest about scope,
-                                demonstrate  expertise, and offer alternatives instead of just saying "no."</div>
+                                demonstrate expertise, and offer alternatives instead of just saying "no."</div>
                         </div>
                     </div>
 
@@ -3285,8 +3348,8 @@
 
                         <div class="message client">
                             <div class="sender">👤 Client</div>
-                            "I hired someone on Fiverr before and they disappeared halfway through. How do I know you 
-                            won't  do  the same?"
+                            "I hired someone on Fiverr before and they disappeared halfway through. How do I know you
+                            won't do the same?"
                         </div>
 
                         <div class="message sales">
@@ -3299,8 +3362,8 @@
                             📅 **Daily Updates:** You'll see progress every single day
                             🔐 **Preview Link:** Full store visible before going live
                             💬 **Real Team:** You talk to real people, not bots
-                            📝 **Written Process:** Everything documented and tracked  Would it help if I showed you
-                            our last 5 completed projects? You can even message those  clients  directly."
+                            📝 **Written Process:** Everything documented and tracked Would it help if I showed you
+                            our last 5 completed projects? You can even message those clients directly."
                         </div>
                     </div>
 
@@ -3328,7 +3391,7 @@
                     <div class="info-box gold">
                         <h4>Remember: Price Based on THEIR Perception</h4>
                         <p>We don't have fixed prices. We price based on client's budget perception and project scope.
-                            The  goal  is to understand their range and position accordingly.</p>
+                            The goal is to understand their range and position accordingly.</p>
                     </div>
 
                     <h3>Ways to Discover Budget</h3>
@@ -3355,7 +3418,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Priority Check</strong></td>
-                                <td>"What's more important for you: staying within a strict budget or getting all 
+                                <td>"What's more important for you: staying within a strict budget or getting all
                                     features?"
                                 </td>
                                 <td>Reveals if they're price-focused or quality-focused</td>
@@ -3377,9 +3440,9 @@
 
                     <div class="info-box success">
                         <h4>✅ How the Commission Works</h4>
-                        <p>For projects above $1,000, we can offer a <strong>5% commission on everything they 
+                        <p>For projects above $1,000, we can offer a <strong>5% commission on everything they
                                 make</strong>
-                            from  the store. This is an alternative to a higher upfront fee.</p>
+                            from the store. This is an alternative to a higher upfront fee.</p>
 
                         <table class="styled-table" style="margin-top: 15px;">
                             <thead>
@@ -3407,7 +3470,7 @@
                         </table>
 
                         <p style="margin-top: 15px;"><strong>Script:</strong> "If you're tight on upfront budget, we can
-                             do
+                            do
                             $1,000 now + 5% of your store revenue. You only pay when you make money. Fair deal?"</p>
                     </div>
 
@@ -3460,7 +3523,7 @@
 
                     <div class="info-box gold">
                         <h4>💡 The Secret: Upsell AFTER Trust is Built</h4>
-                        <p>Never mention add-ons in the first conversation. Wait until they've committed to the base 
+                        <p>Never mention add-ons in the first conversation. Wait until they've committed to the base
                             project, then introduce additional value.</p>
                     </div>
 
@@ -3494,20 +3557,20 @@
                                 <td>$300-700</td>
                                 <td>During project planning</td>
                                 <td>"70% of revenue comes from email. Want us to set up your abandoned cart and welcome
-                                     flows?"</td>
+                                    flows?"</td>
                             </tr>
                             <tr>
                                 <td><strong>SEO Basics Package</strong></td>
                                 <td>$300-500</td>
                                 <td>Content discussion phase</td>
                                 <td>"I noticed your competitors rank for these keywords. Should we optimize your store
-                                     for  search?"</td>
+                                    for search?"</td>
                             </tr>
                             <tr>
                                 <td><strong>Premium Theme Customization</strong></td>
                                 <td>$200-400</td>
                                 <td>Design phase</td>
-                                <td>"The base theme is great, but we can make it truly unique for a small additional 
+                                <td>"The base theme is great, but we can make it truly unique for a small additional
                                     fee."
                                 </td>
                             </tr>
@@ -3529,7 +3592,7 @@
                             <div class="sender">💰 You</div>
                             "Great news — your store is almost ready to launch! 🎉
 
-                            Quick question: After launch, do you have someone in-house to handle updates, security 
+                            Quick question: After launch, do you have someone in-house to handle updates, security
                             patches,
                             and app updates? Most of our clients ask about this."
                             <div class="analysis">✅ <strong>Why this works:</strong> Opens the door without being pushy
@@ -3548,9 +3611,9 @@
                             ✅ All theme and app updates
                             ✅ Security monitoring
                             ✅ Small changes (up to 2 hours of work)
-                            ✅ Priority support within 4 hours  You focus on sales — we keep the tech running smooth.
-                            Most clients find peace of mind is  worth  way more than $150. Want me to add this?"
-                            <div class="analysis">✅ <strong>Why this works:</strong> Shows value, makes it feel like 
+                            ✅ Priority support within 4 hours You focus on sales — we keep the tech running smooth.
+                            Most clients find peace of mind is worth way more than $150. Want me to add this?"
+                            <div class="analysis">✅ <strong>Why this works:</strong> Shows value, makes it feel like
                                 protection</div>
                         </div>
                     </div>
@@ -3604,7 +3667,7 @@
 
                     <div class="info-box gold">
                         <h4>💡 The First Sale is Always to Yourself</h4>
-                        <p>Before you can sell to anyone, you must be 100% convinced that your service is genuinely 
+                        <p>Before you can sell to anyone, you must be 100% convinced that your service is genuinely
                             valuable. If you don't believe it, the customer won't either.</p>
                     </div>
 
@@ -3639,7 +3702,7 @@
 
                     <div class="info-box success" style="margin-top: 20px;">
                         <h4>✅ How This Aligns With Our Vision</h4>
-                        <p>At Digital Heroes, we're not just building stores — we're building businesses. Our 
+                        <p>At Digital Heroes, we're not just building stores — we're building businesses. Our
                             commitment:
                             <strong>premium quality, no shortcuts, results that speak.</strong>
                         </p>
@@ -3656,10 +3719,10 @@
                     <div class="template-box">
                         <div class="template-header">🤝 Building Connection Before Pitching</div>
                         <p style="margin-top: 15px;"><strong>Golden Rule:</strong> People like people who are like them,
-                            or  who they want to be.</p>
+                            or who they want to be.</p>
                         <ul class="styled-list" style="margin-top: 15px;">
                             <li><strong>Find Common Ground:</strong> Industry, location, shared challenges, goals</li>
-                            <li><strong>Mirror Their Energy:</strong> If they're professional, be professional. If 
+                            <li><strong>Mirror Their Energy:</strong> If they're professional, be professional. If
                                 casual,
                                 match it.</li>
                             <li><strong>Ask About THEM First:</strong> Their business, journey, what got them started
@@ -3717,7 +3780,7 @@
 
                     <div class="info-box danger">
                         <h4>🚨 Why LTV is More Important Than One-Time Sales</h4>
-                        <p>It costs <strong>5-7x more</strong> to acquire a new customer than to sell to an existing 
+                        <p>It costs <strong>5-7x more</strong> to acquire a new customer than to sell to an existing
                             one. A
                             $1,500 project client can become a $10,000+ lifetime client with proper nurturing.</p>
                     </div>
@@ -3777,7 +3840,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p style="margin-top: 15px; font-style: italic;">💡 <strong>That's 4.5x the initial 
+                        <p style="margin-top: 15px; font-style: italic;">💡 <strong>That's 4.5x the initial
                                 project!</strong> This is why we nurture relationships, not just close deals.</p>
                     </div>
 
@@ -3807,13 +3870,13 @@
                                 <td>Shopify Store</td>
                                 <td>Email Marketing Setup</td>
                                 <td>"70% of e-commerce revenue comes from email. Want us to set up your abandoned cart
-                                     flows?"</td>
+                                    flows?"</td>
                             </tr>
                             <tr>
                                 <td>Shopify Store</td>
                                 <td>Product Photography Guide</td>
                                 <td>"Your products deserve great photos. We have a guide to shoot like a pro with just
-                                     your  phone."</td>
+                                    your phone."</td>
                             </tr>
                             <tr>
                                 <td>Landing Page</td>
@@ -3829,7 +3892,7 @@
                                 <td>One-Time Project</td>
                                 <td>Retainer Package</td>
                                 <td>"Instead of project-by-project, a monthly retainer saves you 20% and gets priority
-                                     support."</td>
+                                    support."</td>
                             </tr>
                         </tbody>
                     </table>
@@ -3891,9 +3954,9 @@
 
                     <div class="info-box gold">
                         <h4>💡 The 80/20 Rule of Sales</h4>
-                        <p><strong>Let the customer talk 80% of the time.</strong> The amount of money you make is 
-                            directly  proportional to how well you understand customer problems. You close with your
-                            ears, not  your  mouth.</p>
+                        <p><strong>Let the customer talk 80% of the time.</strong> The amount of money you make is
+                            directly proportional to how well you understand customer problems. You close with your
+                            ears, not your mouth.</p>
                     </div>
 
                     <h3>Why People Buy: The 4 Core Motivators</h3>
@@ -3951,10 +4014,10 @@
                     <div class="info-box warning" style="margin-top: 20px;">
                         <h4>⚠️ Brain Pain: Why Customers Reject</h4>
                         <p>The brain releases <strong>cortisol (stress hormone)</strong> when something changes. When a
-                             customer rejects your offer, it's because their brain perceives the change as painful.
+                            customer rejects your offer, it's because their brain perceives the change as painful.
                         </p>
                         <p style="margin-top: 10px;"><strong>Your Job:</strong> Make the pain of NOT buying greater than
-                             the  pain of buying.</p>
+                            the pain of buying.</p>
                     </div>
 
                     <table class="styled-table" style="margin-top: 20px;">
@@ -3969,8 +4032,8 @@
                             <tr>
                                 <td><strong>Fear</strong></td>
                                 <td>Show what happens if they DON'T act</td>
-                                <td>"Cheap Fiverr stores have loopholes that will cost you MORE in fixes later, plus 
-                                    lost  sales every day..."</td>
+                                <td>"Cheap Fiverr stores have loopholes that will cost you MORE in fixes later, plus
+                                    lost sales every day..."</td>
                             </tr>
                             <tr>
                                 <td><strong>Greed</strong></td>
@@ -3985,7 +4048,7 @@
                             <tr>
                                 <td><strong>Pride</strong></td>
                                 <td>Make them feel smart for choosing you</td>
-                                <td>"You clearly understand that quality costs more upfront but saves in the long 
+                                <td>"You clearly understand that quality costs more upfront but saves in the long
                                     run..."
                                 </td>
                             </tr>
@@ -4060,10 +4123,10 @@
                             <li>Once you confirm, we'll set up our kickoff call for [DAY]</li>
                             <li>We'll have your first design preview by [DATE]</li>
                         </ol>
-                        <p style="margin-top: 15px;"><strong>Does [PACKAGE] at $[PRICE] work for you, or should we 
-                                adjust  anything?"</strong></p>
+                        <p style="margin-top: 15px;"><strong>Does [PACKAGE] at $[PRICE] work for you, or should we
+                                adjust anything?"</strong></p>
                         <p style="margin-top: 10px; font-style: italic; color: #666;">Notice: You're not asking IF they
-                             want  to proceed. You're asking about logistics.</p>
+                            want to proceed. You're asking about logistics.</p>
                     </div>
 
                     <div class="info-box danger" style="margin-top: 25px;">
@@ -4073,7 +4136,7 @@
                             <li><strong>Don't offer discounts unprompted</strong> — It signals desperation</li>
                             <li><strong>Don't rush silence</strong> — After your ask, WAIT. Let them respond first.</li>
                             <li><strong>Don't oversell after they say yes</strong> — Stop talking, send the invoice</li>
-                            <li><strong>Don't negotiate against yourself</strong> — "Unless you'd prefer something 
+                            <li><strong>Don't negotiate against yourself</strong> — "Unless you'd prefer something
                                 cheaper..."</li>
                         </ul>
                     </div>
@@ -4088,7 +4151,7 @@
 
                     <div class="info-box gold">
                         <h4>💡 Use AI to Improve Your Sales Process</h4>
-                        <p>Use these prompts to brainstorm, practice objection handling, and improve your sales 
+                        <p>Use these prompts to brainstorm, practice objection handling, and improve your sales
                             conversations. Copy-paste and customize with your specific situation.</p>
                     </div>
 
@@ -4097,7 +4160,7 @@
                     <div class="template-box">
                         <div class="template-header">🤖 Prompt: Qualify a Lead</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                            I'm a sales rep at a Shopify development agency. A potential client reached out with this 
+                            I'm a sales rep at a Shopify development agency. A potential client reached out with this
                             message:<br><br>
                             "[Paste client message here]"<br><br>
                             Based on this message, help me:<br>
@@ -4113,7 +4176,7 @@
                         <div class="template-header">🤖 Prompt: Discover Client's Real Problem</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
                             I'm on a sales call with a potential client. They said they want a "new Shopify store" but I
-                             need to understand the deeper problem.<br><br>
+                            need to understand the deeper problem.<br><br>
                             What they told me: "[Client's initial request]"<br><br>
                             Generate 5 probing questions to uncover:<br>
                             - Their real pain point<br>
@@ -4177,7 +4240,7 @@
                     <div class="template-box" style="margin-top: 20px;">
                         <div class="template-header">🤖 Prompt: Follow-Up Sequence</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                            I sent a proposal 3 days ago and haven't heard back. The client was interested but hasn't 
+                            I sent a proposal 3 days ago and haven't heard back. The client was interested but hasn't
                             responded.<br><br>
                             Client context: [Brief description]<br>
                             Last communication: [What was said]<br><br>
@@ -4195,7 +4258,7 @@
                     <div class="template-box">
                         <div class="template-header">🤖 Prompt: Win Against Competitors</div>
                         <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
-                            A client is comparing us to other Shopify agencies. They mentioned they're also talking 
+                            A client is comparing us to other Shopify agencies. They mentioned they're also talking
                             to:<br><br>
                             - [Competitor name if known]<br>
                             - [Other agencies or freelancers]<br><br>
@@ -4232,8 +4295,8 @@
 
                     <div class="info-box gold">
                         <h4>💡 Negotiation is Not About Winning — It's About Value Exchange</h4>
-                        <p>The goal isn't to "beat" the client. It's to find a deal that works for both. But never 
-                            negotiate  against yourself.</p>
+                        <p>The goal isn't to "beat" the client. It's to find a deal that works for both. But never
+                            negotiate against yourself.</p>
                     </div>
 
                     <h3>5 Proven Negotiation Strategies</h3>
@@ -4250,7 +4313,7 @@
                             <tr>
                                 <td><strong>White Flag</strong></td>
                                 <td>When they REALLY can't afford more</td>
-                                <td>"I understand budget is tight. Let me see what extra value I can add at this 
+                                <td>"I understand budget is tight. Let me see what extra value I can add at this
                                     price..."
                                     (Then add training, extended support)</td>
                             </tr>
@@ -4258,25 +4321,25 @@
                                 <td><strong>Back to the Future</strong></td>
                                 <td>When they're hesitating</td>
                                 <td>"Picture yourself 6 months from now with a store that's converting. Will you regret
-                                     not  investing today?"</td>
+                                    not investing today?"</td>
                             </tr>
                             <tr>
                                 <td><strong>Ground Zero</strong></td>
                                 <td>When they want everything cheap</td>
                                 <td>"Let's strip it down to basics and build up. What's the absolute minimum you need to
-                                     launch?"</td>
+                                    launch?"</td>
                             </tr>
                             <tr>
                                 <td><strong>The Selfish Child</strong></td>
                                 <td>When they keep adding requests</td>
-                                <td>"I want to give you everything you're asking for. To do that fairly, we'd need to 
-                                    adjust  the investment to $X. Does that work?"</td>
+                                <td>"I want to give you everything you're asking for. To do that fairly, we'd need to
+                                    adjust the investment to $X. Does that work?"</td>
                             </tr>
                             <tr>
                                 <td><strong>Genghis Khan</strong></td>
                                 <td>When you have leverage (busy, limited slots)</td>
                                 <td>"This is our best offer. We have 2 other projects waiting. If you'd like to proceed,
-                                    I  need confirmation by Friday."</td>
+                                    I need confirmation by Friday."</td>
                             </tr>
                         </tbody>
                     </table>
@@ -4322,7 +4385,7 @@
                                 <tr>
                                     <td><strong>Day 10</strong></td>
                                     <td>Create urgency</td>
-                                    <td>"I'm finalizing my schedule for next month. Would love to include your 
+                                    <td>"I'm finalizing my schedule for next month. Would love to include your
                                         project..."
                                     </td>
                                 </tr>
@@ -4330,7 +4393,7 @@
                                     <td><strong>Day 14</strong></td>
                                     <td>Break-up email</td>
                                     <td>"It seems like this isn't the right time. I'll close this for now. Feel free to
-                                         reach out when you're ready."</td>
+                                        reach out when you're ready."</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -4464,8 +4527,8 @@
                     <div class="info-box gold" style="margin-top: 25px;">
                         <h4>💡 Sales Hack: The Loom Method</h4>
                         <p>Before reaching out to a prospect, record a 2-minute Loom reviewing their current website.
-                            Point  out 3 specific issues. This shows effort, expertise, and gets 10x higher response
-                            rates than  cold emails.</p>
+                            Point out 3 specific issues. This shows effort, expertise, and gets 10x higher response
+                            rates than cold emails.</p>
                     </div>
                 </section>
 
@@ -4588,7 +4651,7 @@
 
                     <ul class="styled-list cross-list">
                         <li><strong>Sending generic proposals</strong> → Always customize with their business name and
-                             specific needs</li>
+                            specific needs</li>
                         <li><strong>Long text-only emails</strong> → Use bullet points, videos, and visuals</li>
                         <li><strong>Waiting for leads to come to you</strong> → Proactive outreach is key in 2026</li>
                         <li><strong>Ignoring LinkedIn</strong> → Decision makers are active there</li>
@@ -4625,51 +4688,51 @@
                     <!-- Price Objection -->
                     <h3 id="obj-price">💸 "Your Price is Too High"</h3>
                     <div class="story-box">
-                        <p><strong>CLIENT SAYS:</strong> "I got a quote for $500 from someone on Fiverr. Why are you 
+                        <p><strong>CLIENT SAYS:</strong> "I got a quote for $500 from someone on Fiverr. Why are you
                             charging $1,500?"</p>
 
-                        <p style="margin-top: 15px;"><strong>❌ WRONG:</strong> "We can match that price" or "You get 
-                            what  you pay for"</p>
+                        <p style="margin-top: 15px;"><strong>❌ WRONG:</strong> "We can match that price" or "You get
+                            what you pay for"</p>
 
                         <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
-                        <p>"I completely understand comparing prices — it's smart! Let me share what that difference 
-                            buys  you:
+                        <p>"I completely understand comparing prices — it's smart! Let me share what that difference
+                            buys you:
 
-                            The $500 store likely uses a basic template with minimal customization. You'll get a 
-                            functional  store, but probably need to hire someone later to fix conversion issues.
+                            The $500 store likely uses a basic template with minimal customization. You'll get a
+                            functional store, but probably need to hire someone later to fix conversion issues.
 
                             Our $1,500 package includes:
                             ✅ Custom design matched to your brand (not a template)
                             ✅ Mobile optimization (60% of shoppers are on phones)
                             ✅ Speed optimization (slow stores lose 40% of customers)
                             ✅ 1:1 training so you can manage it yourself
-                            ✅ 30 days of free support after launch  Which of these would be okay to skip?"</p>
+                            ✅ 30 days of free support after launch Which of these would be okay to skip?"</p>
 
                         <div class="moral">
                             <strong>KEY:</strong> Never discount. Instead, show value and ask what they'd be willing to
-                             sacrifice.
+                            sacrifice.
                         </div>
                     </div>
 
                     <!-- Timeline Objection -->
                     <h3 id="obj-timeline">⏰ "I Need It Faster"</h3>
                     <div class="story-box">
-                        <p><strong>CLIENT SAYS:</strong> "Can you do this in 3 days instead of 14? I have a product 
-                            launch  coming up."</p>
+                        <p><strong>CLIENT SAYS:</strong> "Can you do this in 3 days instead of 14? I have a product
+                            launch coming up."</p>
 
                         <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
                         <p>"I hear you — timing is critical for a launch! Here's the honest truth:
 
                             We CAN rush, but rushed stores have problems. I've seen 3-day builds need 3 weeks of fixes
-                             afterward.
+                            afterward.
 
                             Let me offer two options:
                             1️⃣ **Rush Delivery (7 days)**: +30% rush fee, focused scope
                             2️⃣ **Phased Approach**: Launch with core pages in 5 days, we add remaining pages after your
-                             launch  Which approach works better for your situation?"</p>
+                            launch Which approach works better for your situation?"</p>
 
                         <div class="moral">
-                            <strong>KEY:</strong> Never promise what you can't deliver. Offer alternatives with clear 
+                            <strong>KEY:</strong> Never promise what you can't deliver. Offer alternatives with clear
                             tradeoffs.
                         </div>
                     </div>
@@ -4678,7 +4741,7 @@
                     <h3 id="obj-trust">🤔 "How Do I Know You're Legit?"</h3>
                     <div class="story-box">
                         <p><strong>CLIENT SAYS:</strong> "I've been burned before by developers who disappeared. How do
-                             I
+                            I
                             know you're different?"</p>
 
                         <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
@@ -4689,7 +4752,7 @@
                             ✅ **4.9-star rating** on Fiverr/Upwork (I can share the link)
                             ✅ **Payment through platform** — You're protected
                             ✅ **Daily updates** — You'll hear from me every single day
-                            ✅ **Video walkthroughs** — You see exactly what we're building  Would it help if I
+                            ✅ **Video walkthroughs** — You see exactly what we're building Would it help if I
                             connected you with 2-3 recent clients who can vouch for our work?"</p>
 
                         <div class="moral">
@@ -4700,7 +4763,7 @@
                     <!-- Competition Objection -->
                     <h3 id="obj-competition">🏆 "I'm Talking to Other Agencies"</h3>
                     <div class="story-box">
-                        <p><strong>CLIENT SAYS:</strong> "I'm comparing a few options. What makes you better than the 
+                        <p><strong>CLIENT SAYS:</strong> "I'm comparing a few options. What makes you better than the
                             others?"</p>
 
                         <p style="margin-top: 15px;"><strong>✅ CORRECT RESPONSE:</strong></p>
@@ -4712,12 +4775,12 @@
                             4. Can I speak to recent clients? (I'll connect you with 3 right now)
                             5. What's your response time? (We reply within 2 hours, always)
 
-                            Honestly, if someone else checks all those boxes AND is cheaper — go with them! But in my 
+                            Honestly, if someone else checks all those boxes AND is cheaper — go with them! But in my
                             experience, the cheapest option ends up being the most expensive after all the fixes."</p>
 
                         <div class="moral">
-                            <strong>KEY:</strong> Don't trash competitors. Give them a framework that makes YOUR 
-                            strengths  obvious.
+                            <strong>KEY:</strong> Don't trash competitors. Give them a framework that makes YOUR
+                            strengths obvious.
                         </div>
                     </div>
 
@@ -4733,24 +4796,24 @@
                             A few options we can explore:
                             1️⃣ **Split payment**: 50% now, 50% before launch
                             2️⃣ **Starter package**: Core pages only for $800, add features later
-                            3️⃣ **Future booking**: Lock in today's price, start next month  Which of these might work
+                            3️⃣ **Future booking**: Lock in today's price, start next month Which of these might work
                             for your situation?"</p>
 
                         <p style="margin-top: 15px;"><strong>⚠️ IF THEY STILL CAN'T AFFORD IT:</strong></p>
                         <p>"I understand! Here's what I'd suggest: Save for 2-3 months and come back when you're ready.
-                            Starting a business on tight budget stress isn't ideal. I'll still be here, and the offer 
+                            Starting a business on tight budget stress isn't ideal. I'll still be here, and the offer
                             stands."</p>
 
                         <div class="moral">
-                            <strong>KEY:</strong> Offer payment flexibility, but don't discount. If they truly can't 
-                            afford  it, let them go gracefully.
+                            <strong>KEY:</strong> Offer payment flexibility, but don't discount. If they truly can't
+                            afford it, let them go gracefully.
                         </div>
                     </div>
 
                     <!-- Need to Think Objection -->
                     <h3 id="obj-thinking">🧠 "I Need to Think About It"</h3>
                     <div class="story-box">
-                        <p><strong>CLIENT SAYS:</strong> "This all sounds good. Let me think about it and get back to 
+                        <p><strong>CLIENT SAYS:</strong> "This all sounds good. Let me think about it and get back to
                             you."
                         </p>
 
@@ -4762,7 +4825,7 @@
                             - Is it the timeline?
                             - Is it checking with someone else?
 
-                            I'm not trying to pressure you — I just want to make sure I've given you all the info you 
+                            I'm not trying to pressure you — I just want to make sure I've given you all the info you
                             need."
                         </p>
 
@@ -4771,8 +4834,8 @@
                             [Tuesday/next week]? I'll put a reminder — and no pressure, just checking in."</p>
 
                         <div class="moral">
-                            <strong>KEY:</strong> "I need to think" often means there's a hidden objection. Gently 
-                            uncover  it. ALWAYS set a specific follow-up date.
+                            <strong>KEY:</strong> "I need to think" often means there's a hidden objection. Gently
+                            uncover it. ALWAYS set a specific follow-up date.
                         </div>
                     </div>
                 </section>
@@ -4790,12 +4853,12 @@
                     <div class="info-box success" style="margin-bottom: 30px;">
                         <p><strong>Handle in this order every day:</strong></p>
                         <ol style="margin-top: 15px; line-height: 2;">
-                            <li><strong>🔴 P0 - Existing Client Messages</strong> → Respond within 1 hour. Active 
-                                clients  always first.</li>
+                            <li><strong>🔴 P0 - Existing Client Messages</strong> → Respond within 1 hour. Active
+                                clients always first.</li>
                             <li><strong>🔴 P0 - Hot Leads Ready to Order</strong> → Close deals before they go cold.
                             </li>
                             <li><strong>🟡 P1 - Follow-ups on Pending Quotes</strong> → People who asked for pricing but
-                                 didn't order yet.</li>
+                                didn't order yet.</li>
                             <li><strong>🟡 P1 - New Inquiries</strong> → First response within 2 hours max.</li>
                             <li><strong>🟢 P2 - Lead Research & Prospecting</strong> → Finding new potential clients.
                             </li>
@@ -4803,16 +4866,16 @@
                             <li><strong>⚪ P3 - Admin Tasks</strong> → Reports, meetings, training.</li>
                         </ol>
                         <p style="margin-top: 15px;"><strong>Golden Rule:</strong> Revenue-generating activities ALWAYS
-                             come  before admin work.</p>
+                            come before admin work.</p>
                     </div>
 
                     <h3>🔴 Client Demanding Discount</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Client says "Your price is too high, can you do it for less?"</p>
-                        <p><strong>Response:</strong> "I understand budget is important. Our pricing reflects the 
-                            quality  and results we deliver. We've built 2000+ stores with a 4.9-star rating because
-                            we don't cut  corners. If budget is a concern, we can discuss a phased approach or a
-                            smaller scope, but we  don't discount our rates."</p>
+                        <p><strong>Response:</strong> "I understand budget is important. Our pricing reflects the
+                            quality and results we deliver. We've built 2000+ stores with a 4.9-star rating because
+                            we don't cut corners. If budget is a concern, we can discuss a phased approach or a
+                            smaller scope, but we don't discount our rates."</p>
                         <p><strong>Rule:</strong> NEVER discount. Offer scope reduction instead.</p>
                     </div>
 
@@ -4820,8 +4883,8 @@
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> "Can you start the work and I'll pay later?"</p>
                         <p><strong>Response:</strong> "We require payment before starting work. This is our policy for
-                             all  clients, including enterprise accounts. It ensures commitment from both sides and
-                            allows us  to  prioritize your project immediately."</p>
+                            all clients, including enterprise accounts. It ensures commitment from both sides and
+                            allows us to prioritize your project immediately."</p>
                         <p><strong>Rule:</strong> No exceptions. If they insist, they're not the right client.</p>
                     </div>
 
@@ -4829,8 +4892,8 @@
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> Client sends 20 questions but hasn't placed an order.</p>
                         <p><strong>Response:</strong> "Great questions! To give you the detailed answers you deserve,
-                            I'd  need to understand your project better. Let's get your order in, and I'll schedule a
-                            kickoff  call where we can go through everything together."</p>
+                            I'd need to understand your project better. Let's get your order in, and I'll schedule a
+                            kickoff call where we can go through everything together."</p>
                         <p><strong>Rule:</strong> Order first, then answer hard questions. Don't give free consulting.
                         </p>
                     </div>
@@ -4839,8 +4902,8 @@
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> "I found someone on Fiverr for $200."</p>
                         <p><strong>Response:</strong> "You'll find all price points on Fiverr. The difference is in the
-                             results. Our stores are built for conversion, speed, and scale. We have 2000+ successful
-                             projects and a 4.9 rating. You get what you pay for."</p>
+                            results. Our stores are built for conversion, speed, and scale. We have 2000+ successful
+                            projects and a 4.9 rating. You get what you pay for."</p>
                         <p><strong>Rule:</strong> Never compete on price. Compete on value and results.</p>
                     </div>
 
@@ -4848,8 +4911,8 @@
                     <div class="info-box warning">
                         <p><strong>Situation:</strong> "What's your hourly rate?"</p>
                         <p><strong>Response:</strong> "We work on project-based pricing, not hourly. This protects you
-                             from  scope creep costs and ensures you know the total investment upfront. Let me
-                            understand your  requirements and I'll provide a fixed quote."</p>
+                            from scope creep costs and ensures you know the total investment upfront. Let me
+                            understand your requirements and I'll provide a fixed quote."</p>
                         <p><strong>Rule:</strong> Always project-based. Hourly undervalues expertise.</p>
                     </div>
 
@@ -4869,74 +4932,74 @@
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> After delivery, client wants major changes for free.</p>
                         <p><strong>Response:</strong> "The revisions we discussed during the project are complete.
-                            Additional changes or new features would be a new scope of work. I'm happy to provide a 
-                            quote  for these additions."</p>
+                            Additional changes or new features would be a new scope of work. I'm happy to provide a
+                            quote for these additions."</p>
                         <p><strong>Rule:</strong> Scope creep gets quoted. Define deliverables clearly upfront.</p>
                     </div>
 
                     <h3>🔴 Client Threatens Bad Review</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Client unhappy and threatening negative feedback.</p>
-                        <p><strong>Response:</strong> "I'm sorry to hear you're frustrated. Let's focus on resolving 
-                            this  professionally. What specific outcome would make this right for you?" Then escalate
-                            to  management if unreasonable.</p>
+                        <p><strong>Response:</strong> "I'm sorry to hear you're frustrated. Let's focus on resolving
+                            this professionally. What specific outcome would make this right for you?" Then escalate
+                            to management if unreasonable.</p>
                         <p><strong>Rule:</strong> Stay calm. Document everything. Escalate if threats continue.</p>
                     </div>
 
                     <h3>💸 🔴 Client Asking for a Refund</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> Client wants money back after work has started or completed.</p>
-                        <p><strong>Response:</strong> "I understand you're not fully satisfied. Let me understand the 
-                            specific concerns so we can address them. Our policy covers [X] revisions, and I want to 
-                            make  sure we've exhausted those before discussing alternatives."</p>
+                        <p><strong>Response:</strong> "I understand you're not fully satisfied. Let me understand the
+                            specific concerns so we can address them. Our policy covers [X] revisions, and I want to
+                            make sure we've exhausted those before discussing alternatives."</p>
                         <p><strong>If they insist:</strong> Escalate to management immediately. Document everything in
-                             writing.</p>
+                            writing.</p>
                         <p><strong>Rule:</strong> Never agree to refunds without manager approval. Exhaust all revision
-                             options first.</p>
+                            options first.</p>
                     </div>
 
                     <h3>🔴 Client's Spouse/Partner Objects</h3>
                     <div class="info-box warning">
-                        <p><strong>Situation:</strong> "My husband/wife/partner doesn't think we should spend this 
+                        <p><strong>Situation:</strong> "My husband/wife/partner doesn't think we should spend this
                             much."
                         </p>
                         <p><strong>Response:</strong> "That's completely understandable — it's a big investment, and you
-                             both should be aligned. Would it help if I prepared a quick overview of the ROI they can
-                             expect?
-                            Or if it's easier, I'm happy to jump on a quick call with both of you to address any 
+                            both should be aligned. Would it help if I prepared a quick overview of the ROI they can
+                            expect?
+                            Or if it's easier, I'm happy to jump on a quick call with both of you to address any
                             concerns."
                         </p>
-                        <p><strong>Rule:</strong> Never pressure. Offer to include the decision-maker in the 
+                        <p><strong>Rule:</strong> Never pressure. Offer to include the decision-maker in the
                             conversation.
                         </p>
                     </div>
 
                     <h3>🔴 Client Wants Custom Features Outside Scope</h3>
                     <div class="info-box warning">
-                        <p><strong>Situation:</strong> "Can you also add a membership area, booking system, and app 
+                        <p><strong>Situation:</strong> "Can you also add a membership area, booking system, and app
                             integration?"</p>
-                        <p><strong>Response:</strong> "Absolutely, we can do that! Those features fall outside the 
-                            current  package scope. Let me quote those separately:
+                        <p><strong>Response:</strong> "Absolutely, we can do that! Those features fall outside the
+                            current package scope. Let me quote those separately:
                             • Membership area: $XXX
                             • Booking system: $XXX
-                            • App integration: $XXX  Would you like to add any of these to your order?"</p>
-                        <p><strong>Rule:</strong> Always quote add-ons. Don't do free work. Scope creep kills 
+                            • App integration: $XXX Would you like to add any of these to your order?"</p>
+                        <p><strong>Rule:</strong> Always quote add-ons. Don't do free work. Scope creep kills
                             profitability.
                         </p>
                     </div>
 
                     <h3>🔴 Client Disappeared Mid-Project</h3>
                     <div class="info-box primary">
-                        <p><strong>Situation:</strong> Client was active but suddenly stopped responding mid-way 
+                        <p><strong>Situation:</strong> Client was active but suddenly stopped responding mid-way
                             through.
                         </p>
                         <p><strong>Follow-up sequence:</strong></p>
                         <ul>
                             <li>Day 3: "Hi, just checking in! Haven't heard from you. Is everything okay?"</li>
                             <li>Day 5: "Following up again — I want to keep your project on track. Please let me know if
-                                 anything changed."</li>
+                                anything changed."</li>
                             <li>Day 7: "Per our policy, projects paused for 7+ days may need re-scheduling. I'm putting
-                                 a
+                                a
                                 hold on your project. We can resume whenever you're ready!"</li>
                         </ul>
                         <p><strong>Rule:</strong> At Day 7, escalate to management. Don't let projects sit indefinitely.
@@ -4946,13 +5009,13 @@
                     <h3>🔴 Client Wants to Negotiate AFTER Placing Order</h3>
                     <div class="info-box danger">
                         <p><strong>Situation:</strong> After payment, client asks: "Can I get a discount since I already
-                             paid?"</p>
-                        <p><strong>Response:</strong> "I appreciate you ordering with us! The price you paid is our 
-                            standard  rate, and it reflects the quality and support you'll receive. What I CAN offer
-                            is [free  speed  optimization / extra revision round / extended support] as a thank-you
+                            paid?"</p>
+                        <p><strong>Response:</strong> "I appreciate you ordering with us! The price you paid is our
+                            standard rate, and it reflects the quality and support you'll receive. What I CAN offer
+                            is [free speed optimization / extra revision round / extended support] as a thank-you
                             for choosing us."</p>
-                        <p><strong>Rule:</strong> Never refund partial amounts. Add value instead. Discounting after 
-                            order  sets a bad precedent.</p>
+                        <p><strong>Rule:</strong> Never refund partial amounts. Add value instead. Discounting after
+                            order sets a bad precedent.</p>
                     </div>
 
                     <h3>🔴 Client Sends Angry Message</h3>
@@ -4961,14 +5024,14 @@
                         <p><strong>Response:</strong></p>
                         <ol>
                             <li><strong>Don't respond immediately</strong> — Wait 15-30 minutes to cool down</li>
-                            <li><strong>Stay professional</strong> — "I can see you're frustrated, and I want to help 
+                            <li><strong>Stay professional</strong> — "I can see you're frustrated, and I want to help
                                 resolve this."</li>
                             <li><strong>Focus on solutions</strong> — "Let's identify the specific issues so we can fix
-                                 them."</li>
+                                them."</li>
                             <li><strong>Never match their energy</strong> — Even if they're wrong, stay calm</li>
                         </ol>
                         <p><strong>Rule:</strong> If messages become abusive or threatening, screenshot everything and
-                             escalate immediately.</p>
+                            escalate immediately.</p>
                     </div>
                 </section>
 
@@ -4984,7 +5047,7 @@
 
                     <div style="text-align: center; padding: 30px 0;">
                         <div style="font-size: 48px; margin-bottom: 20px;">💪</div>
-                        <blockquote 
+                        <blockquote
                             style="font-size: 24px; font-style: italic; color: #A78BFA; margin-bottom: 20px; line-height: 1.6;">
                             "Every sale you make is not just revenue — it's a business owner's dream becoming reality.
                             You're not selling websites, you're selling possibilities."
@@ -4996,15 +5059,15 @@
                         <h3 style="color: #10B981; margin-bottom: 15px;">📖 Success Story: The $300 Lead That Became a
                             $15,000 Client</h3>
                         <p style="color: #E5E7EB; line-height: 1.8;">
-                            A potential client once asked for "just a quick homepage fix." Most would quote $300 and 
-                            move  on. But our salesperson took time to understand the REAL problem — their store
-                            wasn't  converting.
+                            A potential client once asked for "just a quick homepage fix." Most would quote $300 and
+                            move on. But our salesperson took time to understand the REAL problem — their store
+                            wasn't converting.
                             Instead of a quick fix, they proposed a complete conversion optimization package. The client
-                             initially hesitated at the $2,500 quote.
+                            initially hesitated at the $2,500 quote.
                             <br><br>
                             <strong style="color: #10B981;">The result?</strong> That store went from 0.8% to 3.2%
-                            conversion rate in 60 days. The client came back for SEO, then email marketing, then a 
-                            second  store.
+                            conversion rate in 60 days. The client came back for SEO, then email marketing, then a
+                            second store.
                             Total revenue from that "$300 lead"? <strong style="color: #FCD34D;">$15,000+ over 18
                                 months.</strong>
                             <br><br>
@@ -5012,35 +5075,35 @@
                         </p>
                     </div>
 
-                    <div 
+                    <div
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                        <div 
+                        <div
                             style="background: rgba(16, 185, 129, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">🎯</div>
-                            <p style="color: #A7F3D0; font-weight: 600;">"Rejection is redirection. Every 'no' brings 
-                                you  closer to your 'yes'."</p>
+                            <p style="color: #A7F3D0; font-weight: 600;">"Rejection is redirection. Every 'no' brings
+                                you closer to your 'yes'."</p>
                         </div>
-                        <div 
+                        <div
                             style="background: rgba(124, 58, 237, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">🔥</div>
-                            <p style="color: #C4B5FD; font-weight: 600;">"You don't close deals with your mouth. You 
-                                close  them with your ears."</p>
+                            <p style="color: #C4B5FD; font-weight: 600;">"You don't close deals with your mouth. You
+                                close them with your ears."</p>
                         </div>
-                        <div 
+                        <div
                             style="background: rgba(245, 158, 11, 0.2); padding: 20px; border-radius: 12px; text-align: center;">
                             <div style="font-size: 32px; margin-bottom: 10px;">💎</div>
-                            <p style="color: #FDE68A; font-weight: 600;">"We don't compete on price. We compete on 
+                            <p style="color: #FDE68A; font-weight: 600;">"We don't compete on price. We compete on
                                 VALUE."
                             </p>
                         </div>
                     </div>
 
-                    <div 
+                    <div
                         style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px;">
                         <p style="font-size: 18px; color: #E5E7EB; margin-bottom: 10px;">🌅 Start Each Day With This:
                         </p>
-                        <p style="font-size: 20px; color: #FCD34D; font-weight: 600;">"Today, I will help business 
-                            owners  achieve their dreams. Every conversation is an opportunity to create value."</p>
+                        <p style="font-size: 20px; color: #FCD34D; font-weight: 600;">"Today, I will help business
+                            owners achieve their dreams. Every conversation is an opportunity to create value."</p>
                     </div>
                 </section>
 
@@ -5063,7 +5126,7 @@
                 <div class="header">
                     <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
                     <h1>Sales Assets & Training Library</h1>
-                    <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video 
+                    <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
                         training, scripts, and resources to help you master your role.</p>
                 </div>
 
@@ -5077,15 +5140,15 @@
                     <div class="video-card">
                         <div class="video-placeholder">
                             [YouTube Embed Placeholder]
-                            <div 
+                            <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
                                 12:00</div>
                         </div>
                         <div class="video-content">
                             <span class="tag">Fundamentals</span>
                             <h3>📝 Role Overview & Expectations</h3>
-                            <p>A deep dive into the daily life of a Sales Executive, core responsibilities, and what 
-                                success  looks like.</p>
+                            <p>A deep dive into the daily life of a Sales Executive, core responsibilities, and what
+                                success looks like.</p>
                         </div>
                     </div>
 
@@ -5093,7 +5156,7 @@
                     <div class="video-card">
                         <div class="video-placeholder">
                             [YouTube Embed Placeholder]
-                            <div 
+                            <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
                                 25:00</div>
                         </div>
@@ -5101,7 +5164,7 @@
                             <span class="tag">Process</span>
                             <h3>The Sales Workflow Masterclass</h3>
                             <p>Step-by-step walkthrough of our filtering, qualification, and closing process using real
-                                 examples.</p>
+                                examples.</p>
                         </div>
                     </div>
 
@@ -5109,14 +5172,14 @@
                     <div class="video-card">
                         <div class="video-placeholder">
                             [YouTube Embed Placeholder]
-                            <div 
+                            <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: white;">
                                 18:00</div>
                         </div>
                         <div class="video-content">
                             <span class="tag">Skills</span>
                             <h3>Objection Handling 101</h3>
-                            <p>How to handle "It's too expensive" and other common objections without lowering your 
+                            <p>How to handle "It's too expensive" and other common objections without lowering your
                                 price.
                             </p>
                         </div>
@@ -5156,7 +5219,7 @@
                     <div style="font-size: 64px; margin-bottom: 20px;">🚀</div>
                     <h1>Your Onboarding Journey</h1>
                     <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Follow these 4
-                        steps  to become a certified Sales Executive.</p>
+                        steps to become a certified Sales Executive.</p>
                 </div>
 
                 <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 50px; position: relative;">
@@ -5169,13 +5232,13 @@
                         <div class="card"
                             style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #E2E8F0; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">📖 Master the SOP</h3>
-                            <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to 
+                            <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Your first task is to
                                 read,
-                                understand, and internalize the Standard Operating Procedure. This document is your 
-                                bible  for success.</p>
+                                understand, and internalize the Standard Operating Procedure. This document is your
+                                bible for success.</p>
                             <a href="#" onclick="switchView('sop'); return false;" class="action-btn"
                                 style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Go
-                                 to Sales SOP</a>
+                                to Sales SOP</a>
                         </div>
                     </div>
 
@@ -5189,12 +5252,12 @@
                             <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎥 Watch Training Videos
                             </h3>
                             <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Visit the Assets Library
-                                 and  watch the required training videos. These will give you visual context to the
-                                written  SOPs.
+                                and watch the required training videos. These will give you visual context to the
+                                written SOPs.
                             </p>
                             <a href="#" onclick="switchView('assets'); return false;" class="action-btn"
                                 style="display: inline-block; padding: 12px 25px; background: #EC4899; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Open
-                                 Assets Library</a>
+                                Assets Library</a>
                         </div>
                     </div>
 
@@ -5208,13 +5271,13 @@
                             <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎓 Pass the Knowledge Test
                             </h3>
                             <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">Prove your understanding
-                                 by  taking the role-specific quiz. You need a score of 90% or higher to proceed.
+                                by taking the role-specific quiz. You need a score of 90% or higher to proceed.
                             </p>
-                            <p 
+                            <p
                                 style="font-size: 0.9em; color: #64748B; background: #F1F5F9; padding: 10px; border-radius: 6px; display: inline-block;">
                                 ℹ️ <strong>How to take the test:</strong> Switch back to the <a href="#"
                                     onclick="switchView('sop'); return false;" style="color: #3B82F6;">Sales SOP</a>
-                                view  and click the "🎓 Test" button in the sidebar.
+                                view and click the "🎓 Test" button in the sidebar.
                             </p>
                         </div>
                     </div>
@@ -5226,11 +5289,11 @@
                             4</div>
                         <div class="card"
                             style="background: white; padding: 30px; border-radius: 16px; border: 1px solid #EC4899; box-shadow: 0 5px 20px rgba(236, 72, 153, 0.1);">
-                            <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute 
-                                Recording  Task</h3>
-                            <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final 
-                                verification. Record a <strong>30-minute screen sharing video</strong> walking us 
-                                through  your understanding of the role.</p>
+                            <h3 style="margin: 0 0 15px 0; color: #1E3A5F; font-size: 1.5em;">🎙️ The 30-Minute
+                                Recording Task</h3>
+                            <p style="color: #4B5563; line-height: 1.6; margin-bottom: 20px;">This is your final
+                                verification. Record a <strong>30-minute screen sharing video</strong> walking us
+                                through your understanding of the role.</p>
 
                             <div style="margin: 20px 0; background: #F8FAFC; padding: 15px; border-radius: 8px;">
                                 <strong>What to cover in your video:</strong>
@@ -5244,7 +5307,7 @@
 
                             <div class="success-box"
                                 style="background: #ECFDF5; border: 1px solid #A7F3D0; padding: 20px; border-radius: 12px; margin-top: 20px;">
-                                <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example 
+                                <strong style="color: #059669; display: block; margin-bottom: 10px;">🌟 Example
                                     Submission</strong>
                                 <p style="margin: 0; font-size: 0.9em; color: #065F46;">Watch how [Top Performer Name]
                                     nailed this task:</p>
@@ -5296,57 +5359,67 @@
             .sidebar-overlay.active {
                 display: block;
             }
-        
-        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
-        @media (max-width: 768px) {
-            .header {
-                padding: 25px 20px !important;
-                margin-bottom: 20px !important;
-                border-radius: 0 0 15px 15px !important;
-            }
-            .header h1 {
-                font-size: 1.5em !important;
-                margin-bottom: 5px !important;
-            }
-            .header .subtitle {
-                font-size: 0.9em !important;
-                margin-bottom: 10px !important;
-            }
-            .badge-row {
-                gap: 8px !important;
-                margin-top: 12px !important;
-            }
-            .badge {
-                padding: 5px 12px !important;
-                font-size: 0.75em !important;
-            }
-            .container {
-                padding: 10px !important;
-            }
-            .section {
-                padding: 15px !important;
-                margin-bottom: 15px !important;
-            }
-            .section h2 {
-                font-size: 1.2em !important;
-            }
-        }
-        /* ===== END MOBILE HEADER SIZE ===== */
 
-    
-        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%) !important;
-                transition: transform 0.3s ease !important;
-            }
-            .sidebar.active, .sidebar.open {
-                transform: translateX(0) !important;
-            }
-        }
-        /* ===== END SIDEBAR CLOSED ===== */
+            /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+            @media (max-width: 768px) {
+                .header {
+                    padding: 25px 20px !important;
+                    margin-bottom: 20px !important;
+                    border-radius: 0 0 15px 15px !important;
+                }
 
-    </style>
+                .header h1 {
+                    font-size: 1.5em !important;
+                    margin-bottom: 5px !important;
+                }
+
+                .header .subtitle {
+                    font-size: 0.9em !important;
+                    margin-bottom: 10px !important;
+                }
+
+                .badge-row {
+                    gap: 8px !important;
+                    margin-top: 12px !important;
+                }
+
+                .badge {
+                    padding: 5px 12px !important;
+                    font-size: 0.75em !important;
+                }
+
+                .container {
+                    padding: 10px !important;
+                }
+
+                .section {
+                    padding: 15px !important;
+                    margin-bottom: 15px !important;
+                }
+
+                .section h2 {
+                    font-size: 1.2em !important;
+                }
+            }
+
+            /* ===== END MOBILE HEADER SIZE ===== */
+
+
+            /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
+            @media (max-width: 768px) {
+                .sidebar {
+                    transform: translateX(-100%) !important;
+                    transition: transform 0.3s ease !important;
+                }
+
+                .sidebar.active,
+                .sidebar.open {
+                    transform: translateX(0) !important;
+                }
+            }
+
+            /* ===== END SIDEBAR CLOSED ===== */
+        </style>
         <script>
             function switchView(viewName) {
                 // Update URL hash without scrolling  history.pushState(null, null, '#' + viewName);
@@ -5406,55 +5479,53 @@
             });
         </script>
 
-    <script>
-        // ===== SIDEBAR TOGGLE FUNCTIONS =====
-        function toggleSidebar() {
-            var sidebar = document.querySelector('.sidebar');
-            var overlay = document.querySelector('.sidebar-overlay');
-            if (sidebar) {
-                sidebar.classList.toggle('active');
-                sidebar.classList.toggle('open');
+        <script>
+            // ===== SIDEBAR TOGGLE FUNCTIONS =====
+            function toggleSidebar() {
+                var sidebar = document.querySelector('.sidebar');
+                var overlay = document.querySelector('.sidebar-overlay');
+                if (sidebar) {
+                    sidebar.classList.toggle('active');
+                    sidebar.classList.toggle('open');
+                }
+                if (overlay) {
+                    overlay.classList.toggle('active');
+                }
             }
-            if (overlay) {
-                overlay.classList.toggle('active');
-            }
-        }
 
-        function closeSidebar() {
-            var sidebar = document.querySelector('.sidebar');
-            var overlay = document.querySelector('.sidebar-overlay');
-            if (sidebar) {
-                sidebar.classList.remove('active');
-                sidebar.classList.remove('open');
+            function closeSidebar() {
+                var sidebar = document.querySelector('.sidebar');
+                var overlay = document.querySelector('.sidebar-overlay');
+                if (sidebar) {
+                    sidebar.classList.remove('active');
+                    sidebar.classList.remove('open');
+                }
+                if (overlay) {
+                    overlay.classList.remove('active');
+                }
             }
-            if (overlay) {
-                overlay.classList.remove('active');
-            }
-        }
 
-        // Click outside to close sidebar
-        document.addEventListener('click', function(event) {
-            var sidebar = document.querySelector('.sidebar');
-            var toggleBtn = document.querySelector('.mobile-menu-btn');
-            var overlay = document.querySelector('.sidebar-overlay');
-            
-            if (!sidebar || !toggleBtn) return;
-            
-            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
-            var clickedOnSidebar = sidebar.contains(event.target);
-            var clickedOnToggle = toggleBtn.contains(event.target);
-            
-            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
-                closeSidebar();
-            }
-        });
-        // ===== END SIDEBAR TOGGLE =====
-    </script>
+            // Click outside to close sidebar
+            document.addEventListener('click', function (event) {
+                var sidebar = document.querySelector('.sidebar');
+                var toggleBtn = document.querySelector('.mobile-menu-btn');
+                var overlay = document.querySelector('.sidebar-overlay');
 
-    <script src="assets/js/copy-button.js"></script>
-<script src="assets/js/sop-features.js"></script></body>
+                if (!sidebar || !toggleBtn) return;
+
+                var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+                var clickedOnSidebar = sidebar.contains(event.target);
+                var clickedOnToggle = toggleBtn.contains(event.target);
+
+                if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                    closeSidebar();
+                }
+            });
+            // ===== END SIDEBAR TOGGLE =====
+        </script>
+
+        <script src="assets/js/copy-button.js"></script>
+        <script src="assets/js/sop-features.js"></script>
+</body>
 
 </html>
-
-
-

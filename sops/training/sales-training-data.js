@@ -124,14 +124,59 @@ const trainingTasks = [
 
 // Task 1 Content (Content-First) - REORGANIZED & ENHANCED
 const task1Content = `
-<h2>📚 PART 1: THE FOUNDATION</h2>
+<h2>📚 PART 1: THE FOUNDATION - Mindset</h2>
+
+<!-- WELCOME TO DIGITAL HEROES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes - You Are Part of Something Bigger</h3>
+    <p>Before we dive into sales techniques, you need to understand something critical: <strong>You are not just joining a company. You are joining a mission.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now):</strong> ₹9.2 Crores</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027):</strong> ₹75 Crores</td>
+            </tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- THE INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+        <p style="margin: 0;">
+            <strong style="color: #FBBF24; font-size: 1.2em;">⭐ YOU (Sales)</strong> → <strong>THE FUEL SYSTEM - generate enquiries that power everything</strong><br>
+            ↓<br>
+            <strong style="color: #F472B6;">Development</strong> → delivers quality work<br>
+            ↓<br>
+            <strong style="color: #34D399;">Client Satisfaction</strong> → creates happy customers<br>
+            ↓<br>
+            <strong style="color: #60A5FA;">CS Team</strong> → protects satisfaction<br>
+            ↓<br>
+            <strong style="color: #A78BFA;">5-Star Reviews</strong> → boost algorithm positioning<br>
+            ↓<br>
+            <strong style="color: #FBBF24;">More Organic Enquiries</strong> → the cycle amplifies
+        </p>
+    </div>
+    
+    <div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); border-left: 4px solid #F59E0B; padding: 15px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">⛽ Your Critical Role:</strong>
+        <p style="margin: 10px 0 0 0;">As a sales professional, you are the <strong>FUEL SYSTEM</strong> that powers everything at Digital Heroes. Without your 24/7 efforts converting enquiries into clients, there would be no development work, no design projects, no reviews, no growth. You create the opportunities that everyone else depends on. Every deal you close funds salaries, enables expansion, and moves us closer to our ₹75 Crore goal.</p>
+    </div>
+    
+    <p style="color: #FBBF24; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">No sales = No clients = No work for anyone = Chain doesn't even start. YOU ignite everything.</p>
+</div>
 
 <div class="content-section">
 <h3>🎯 Why Are You Here?</h3>
 <div style="margin: 25px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/DsK_904V2Pg?rel=0&modestbranding=1" title="Sales Mindset" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Sales Mindset</strong></div>
-</div>
 <p>You're about to learn a skill that can change your entire financial future. Sales is not just a job — it's the <strong>highest-paid profession in the world</strong> that requires:</p>
 <ul>
 <li>❌ No degree</li>
