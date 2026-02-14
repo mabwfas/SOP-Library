@@ -1,4 +1,4 @@
-// Sales Training Application Logic
+// Social Media Training Application Logic
 
 // State Management
 let currentTask = 0;

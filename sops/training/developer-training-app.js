@@ -1,4 +1,4 @@
-﻿// Sales Training Application Logic
+﻿// Shopify Developer Training Application Logic
 
 // State Management
 let currentTask = 0;
@@ -278,7 +278,7 @@ function showResults() {
 
     let html = `
         <div class="task-view-header">
-            <button class="back-btn" onclick="openTask(currentTask)">← content</button>
+            <button class="back-btn" onclick="openTask(currentTask)">← Back to Content</button>
             <h2>Task ${task.id}: ${task.title}</h2>
         </div>
         <div class="quiz-results">

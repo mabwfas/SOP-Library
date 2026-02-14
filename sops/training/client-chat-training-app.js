@@ -1,4 +1,4 @@
-// Sales Training Application Logic
+// Client Chat Training Application Logic
 
 // State Management
 let currentTask = 0;

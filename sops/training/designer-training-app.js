@@ -1,4 +1,4 @@
-// Sales Training Application Logic
+// Designer Training Application Logic
 
 // State Management
 let currentTask = 0;

@@ -1,4 +1,4 @@
-// Sales Training Application Logic
+// Project Manager Training Application Logic
 
 // State Management
 let currentTask = 0;

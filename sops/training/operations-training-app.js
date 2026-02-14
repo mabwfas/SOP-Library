@@ -368,7 +368,7 @@ function showResults() {
             <div class="results-message">
                 ${passed
             ? '🎉 Congratulations! You passed!'
-            : `? You need ${totalQuestions}/${totalQuestions}. Review the material and try again.`}
+            : `❌ You need ${totalQuestions}/${totalQuestions}. Review the material and try again.`}
             </div>
     `;
 
