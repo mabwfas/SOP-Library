@@ -3,20 +3,20 @@
 // 14 Tasks, 100+ Quiz Questions
 
 const trainingTasks = [
-    {id: 1, title: "HR Mindset", description: "People = Revenue", contentFirst: true, studyGuide: ["Time: 60 min", "Bad hire = 3x salary", "Hire slow, fire fast"]},
-    {id: 2, title: "Job Description Mastery", description: "Writing JDs that attract A-players", contentFirst: true, studyGuide: ["Time: 45 min", "8 essential elements", "Red flag language to avoid"]},
-    {id: 3, title: "Sourcing Candidates", description: "Where to find talent", contentFirst: true, studyGuide: ["Time: 45 min", "LinkedIn, Naukri, referrals", "Building talent pipeline"]},
-    {id: 4, title: "Resume Screening", description: "100 CVs to 15 calls", contentFirst: true, studyGuide: ["Time: 60 min", "Red flags checklist", "Scoring system"]},
-    {id: 5, title: "Phone Screening", description: "15 calls to 5 interviews", contentFirst: true, studyGuide: ["Time: 45 min", "10-min script", "Knockout questions"]},
-    {id: 6, title: "Interview Mastery", description: "The 60-minute deep dive", contentFirst: true, studyGuide: ["Time: 90 min", "STAR method", "Role-specific questions"]},
-    {id: 7, title: "Reference Checks", description: "Verifying before offering", contentFirst: true, studyGuide: ["Time: 30 min", "What to ask", "Red flags"]},
-    {id: 8, title: "Offer & Negotiation", description: "Closing the candidate", contentFirst: true, studyGuide: ["Time: 45 min", "Offer letter template", "Counter-offer handling"]},
-    {id: 9, title: "Onboarding Excellence", description: "First 90 days", contentFirst: true, studyGuide: ["Time: 60 min", "Day 1 checklist", "30-60-90 plan"]},
-    {id: 10, title: "Performance Management", description: "Reviews & PIPs", contentFirst: true, studyGuide: ["Time: 60 min", "1:1 templates", "Difficult conversations"]},
-    {id: 11, title: "Policies & Compliance", description: "Legal essentials", contentFirst: true, studyGuide: ["Time: 60 min", "Leave policy", "Contracts & NDA"]},
-    {id: 12, title: "Employee Relations", description: "Conflict & Culture", contentFirst: true, studyGuide: ["Time: 45 min", "Mediation process", "Building culture"]},
-    {id: 13, title: "Offboarding", description: "Exit protocol", contentFirst: true, studyGuide: ["Time: 30 min", "Exit interview", "Knowledge transfer"]},
-    {id: 14, title: "Final Certification", description: "HR Mastery Exam", contentFirst: false, studyGuide: ["Time: 90 min", "50 questions", "Video submission"]}
+    { id: 1, title: "HR Mindset", description: "People = Revenue", contentFirst: true, studyGuide: ["Time: 60 min", "Bad hire = 3x salary", "Hire slow, fire fast"] },
+    { id: 2, title: "Job Description Mastery", description: "Writing JDs that attract A-players", contentFirst: true, studyGuide: ["Time: 45 min", "8 essential elements", "Red flag language to avoid"] },
+    { id: 3, title: "Sourcing Candidates", description: "Where to find talent", contentFirst: true, studyGuide: ["Time: 45 min", "LinkedIn, Naukri, referrals", "Building talent pipeline"] },
+    { id: 4, title: "Resume Screening", description: "100 CVs to 15 calls", contentFirst: true, studyGuide: ["Time: 60 min", "Red flags checklist", "Scoring system"] },
+    { id: 5, title: "Phone Screening", description: "15 calls to 5 interviews", contentFirst: true, studyGuide: ["Time: 45 min", "10-min script", "Knockout questions"] },
+    { id: 6, title: "Interview Mastery", description: "The 60-minute deep dive", contentFirst: true, studyGuide: ["Time: 90 min", "STAR method", "Role-specific questions"] },
+    { id: 7, title: "Reference Checks", description: "Verifying before offering", contentFirst: true, studyGuide: ["Time: 30 min", "What to ask", "Red flags"] },
+    { id: 8, title: "Offer & Negotiation", description: "Closing the candidate", contentFirst: true, studyGuide: ["Time: 45 min", "Offer letter template", "Counter-offer handling"] },
+    { id: 9, title: "Onboarding Excellence", description: "First 90 days", contentFirst: true, studyGuide: ["Time: 60 min", "Day 1 checklist", "30-60-90 plan"] },
+    { id: 10, title: "Performance Management", description: "Reviews & PIPs", contentFirst: true, studyGuide: ["Time: 60 min", "1:1 templates", "Difficult conversations"] },
+    { id: 11, title: "Policies & Compliance", description: "Legal essentials", contentFirst: true, studyGuide: ["Time: 60 min", "Leave policy", "Contracts & NDA"] },
+    { id: 12, title: "Employee Relations", description: "Conflict & Culture", contentFirst: true, studyGuide: ["Time: 45 min", "Mediation process", "Building culture"] },
+    { id: 13, title: "Offboarding", description: "Exit protocol", contentFirst: true, studyGuide: ["Time: 30 min", "Exit interview", "Knowledge transfer"] },
+    { id: 14, title: "Final Certification", description: "HR Mastery Exam", contentFirst: false, studyGuide: ["Time: 90 min", "50 questions", "Video submission"] }
 ];
 
 const task1Content = `
@@ -943,3 +943,217 @@ const task14Content = `
 <p>Proceed to the quiz to test your knowledge across all HR domains!</p>
 </div>
 `;
+
+// =============================================================================
+// QUIZ QUESTIONS FOR EACH TASK - 10 Questions Each (20 for Final)
+// =============================================================================
+
+const task1Quiz = [
+    { q: "According to the training, a bad hire costs approximately:", o: ["Just their monthly salary amount", "Double their annual compensation", "3x salary plus lost productivity and replacement costs", "Only the recruitment fees paid"], c: 2 },
+    { q: "HR's primary mission at Digital Heroes is to:", o: ["Fill open positions as quickly as possible", "Build a championship team that multiplies output", "Maintain employee records and policies", "Organize company events and activities"], c: 1 },
+    { q: "The WRONG mindset for HR is thinking:", o: ["I need to find someone who multiplies output", "I need to hire someone for this role", "Quality matters more than speed", "Cultural fit is essential"], c: 1 },
+    { q: "The 'Hire Slow, Fire Fast' principle means:", o: ["Take months to hire anyone at all", "Invest time vetting candidates, but act quickly on bad fits", "Hire the first person and fire if wrong", "Never fire anyone, always retrain"], c: 1 },
+    { q: "According to the economics of hiring, what costs ₹1,00,000+?", o: ["Job posting fees", "Interview time investment", "Bad hire replacement", "Training materials"], c: 2 },
+    { q: "In the 6→10 performance equation, you can train:", o: ["Attitude and character", "Skills but not attitude", "Neither skills nor attitude", "Attitude but not skills"], c: 1 },
+    { q: "What demotivates existing team members?", o: ["Hiring exceptionally talented people", "Working alongside a bad hire", "Competitive salary increases", "Challenging project assignments"], c: 1 },
+    { q: "A bad hire creates a cycle of:", o: ["Continuous improvement", "Repeated hiring failures and wasted time", "Team motivation", "Knowledge sharing"], c: 1 },
+    { q: "The key insight from Task 1 is:", o: ["Hire anyone and hope for the best", "People ARE revenue — wrong people break the chain", "Speed of hiring matters most", "Experience always equals quality"], c: 1 },
+    { q: "At Digital Heroes, even interns benefit from:", o: ["Free lunch program", "Equity-sharing model from Day 1", "Unlimited vacation", "Company car"], c: 1 }
+];
+
+const task2Quiz = [
+    { q: "A job description serves as your:", o: ["Legal requirement only", "First filter for candidates", "Marketing brochure", "Internal document nobody reads"], c: 1 },
+    { q: "How many essential JD elements are taught in this task?", o: ["4 elements", "6 elements", "8 elements", "10 elements"], c: 2 },
+    { q: "Using language like 'Rockstar/Ninja' in a JD is:", o: ["Trendy and attractive", "Unprofessional — use proper titles instead", "Required for tech roles", "Preferred by young candidates"], c: 1 },
+    { q: "Instead of 'Competitive salary', a JD should:", o: ["Remove salary information entirely", "Give a specific range like '₹40-60k/month'", "Say 'salary negotiable'", "Promise the highest in market"], c: 1 },
+    { q: "'Fast-paced environment' is a red flag because:", o: ["It attracts overachievers", "It's code for 'chaotic'", "Candidates love it", "It's legally required"], c: 1 },
+    { q: "Must-Have vs Nice-to-Have requirements help:", o: ["Make the JD longer", "Avoid creating impossible requirements", "Scare away all candidates", "Meet legal compliance only"], c: 1 },
+    { q: "Disqualifiers in a JD help by:", o: ["Reducing diversity", "Saving everyone time by stating what you DON'T want", "Making the company look strict", "Increasing application volume"], c: 1 },
+    { q: "Application instructions should include:", o: ["Just 'send resume to email'", "A screening question to filter lazy applicants", "Nothing — let them figure it out", "A long essay requirement"], c: 1 },
+    { q: "Building a talent pipeline means:", o: ["Waiting until you need to hire", "Building relationships with candidates before you need them", "Posting jobs on every platform", "Hiring recruiters only"], c: 1 },
+    { q: "The highest quality sourcing channel according to the data is:", o: ["Naukri job postings", "LinkedIn premium", "Employee referrals", "YouTube community"], c: 2 }
+];
+
+const task3Quiz = [
+    { q: "The best sourcing channel for senior roles is:", o: ["Internshala", "LinkedIn", "Walk-in interviews", "Random cold emails"], c: 1 },
+    { q: "Employee referrals have what advantage?", o: ["Lowest quality candidates", "4x higher retention rate", "Most expensive option", "Slowest hiring process"], c: 1 },
+    { q: "YouTube Community sourcing works because:", o: ["Everyone watches YouTube", "Candidates already know Digital Heroes (pre-filtered)", "It's the cheapest option", "YouTube has a job board"], c: 1 },
+    { q: "Following up quarterly with promising candidates is part of:", o: ["Wasting time", "Building a talent pipeline", "Stalking candidates", "Legal compliance"], c: 1 },
+    { q: "When should you ask your team for referrals?", o: ["Never — keep hiring external", "Always ask team first before posting externally", "Only as a last resort", "Only for executive positions"], c: 1 },
+    { q: "A talent pool should be organized by:", o: ["Alphabetical order only", "Role type for each position", "Random selection", "Date of application only"], c: 1 },
+    { q: "Naukri is best for:", o: ["Senior executive roles", "Volume hiring", "Intern positions only", "International candidates"], c: 1 },
+    { q: "Internshala's candidate quality is rated as:", o: ["Always high", "Variable", "Always low", "Not mentioned"], c: 1 },
+    { q: "Good candidates who weren't right for previous roles should be:", o: ["Deleted from records", "Kept in a database for future opportunities", "Permanently rejected", "Reported to other companies"], c: 1 },
+    { q: "Building relationships before hiring needs arise helps:", o: ["Waste company resources", "Ensure faster quality hires when positions open", "Create legal liability", "Nothing meaningful"], c: 1 }
+];
+
+const task4Quiz = [
+    { q: "The 30-Second Resume Scan first checks:", o: ["Educational institution prestige", "Current/recent role relevance", "Hobbies and interests", "Photo and formatting"], c: 1 },
+    { q: "Job hopping (3+ jobs in 2 years) is a:", o: ["Green flag showing ambition", "Resume red flag — will likely leave quickly", "Neutral observation", "Sign of senior experience"], c: 1 },
+    { q: "No portfolio/GitHub link suggests:", o: ["Privacy-conscious candidate", "Claims skills but has no proof", "Senior-level experience", "Legal concern"], c: 1 },
+    { q: "Typos in a resume indicate:", o: ["English isn't their first language", "Low attention to detail", "They're overqualified", "They applied to many jobs"], c: 1 },
+    { q: "A CV scoring above 70 points means:", o: ["Immediate reject", "Move to phone screen", "Maybe pile only", "Skip straight to offer"], c: 1 },
+    { q: "The CV scoring system awards most points (25) for:", o: ["Portfolio quality", "Relevant experience", "Career progression", "Attention to detail"], c: 1 },
+    { q: "A custom cover letter mentioning Digital Heroes is a:", o: ["Red flag", "Green flag — shows genuine interest", "Neutral signal", "Sign of desperation"], c: 1 },
+    { q: "Employment gaps with no explanation are:", o: ["Perfectly normal", "A red flag worth investigating", "Always disqualifying", "Preferred by employers"], c: 1 },
+    { q: "The target ratio of CVs to phone screens is:", o: ["100 CVs → 50 calls", "100 CVs → 15 calls", "100 CVs → 5 calls", "100 CVs → 100 calls"], c: 1 },
+    { q: "Specific achievements with numbers on a resume are:", o: ["Irrelevant filler", "Green flags showing measurable impact", "Signs of exaggeration", "Only for sales roles"], c: 1 }
+];
+
+const task5Quiz = [
+    { q: "The phone screen should take approximately:", o: ["2 minutes", "10 minutes", "45 minutes", "1 hour"], c: 1 },
+    { q: "If a candidate doesn't own a laptop, the action is:", o: ["Continue screening", "Politely reject — shows dependency", "Offer to buy them one", "Schedule office interview"], c: 1 },
+    { q: "A candidate who uses computer less than 4 hours daily should be:", o: ["Advanced to interview", "Rejected — not tech-comfortable enough", "Given a training program", "Asked to try harder"], c: 1 },
+    { q: "'Take to repair shop' answer for laptop problems means:", o: ["Smart delegation", "Not tech-savvy — reject", "Financial stability", "Professional approach"], c: 1 },
+    { q: "The phone screen scoring threshold for interview is:", o: ["60+", "70+", "80+", "90+"], c: 2 },
+    { q: "Asking 'What do you know about Digital Heroes?' tests:", o: ["Memory skills", "Whether they researched the company", "Their Google skills", "Nothing important"], c: 1 },
+    { q: "The closing of a phone screen should include:", o: ["Immediate offer", "Timeline for next steps (within 3 days)", "Private salary negotiation", "Assignment of first project"], c: 1 },
+    { q: "Communication clarity is scored out of:", o: ["/10", "/15", "/20", "/25"], c: 2 },
+    { q: "Notice period question helps determine:", o: ["Their loyalty", "When they can start if selected", "Their salary expectations", "Their age"], c: 1 },
+    { q: "The target ratio of phone screens to interviews is:", o: ["15 calls → 15 interviews", "15 calls → 5 interviews", "15 calls → 1 interview", "15 calls → 10 interviews"], c: 1 }
+];
+
+const task6Quiz = [
+    { q: "The 60-minute interview has how many phases?", o: ["3 phases", "4 phases", "6 phases", "8 phases"], c: 2 },
+    { q: "The technical assessment phase lasts:", o: ["5 minutes", "10 minutes", "20 minutes", "30 minutes"], c: 2 },
+    { q: "STAR method behavioral questions assess:", o: ["Technical coding skills only", "Past behavior to predict future behavior", "Salary expectations", "Educational background"], c: 1 },
+    { q: "The interview scoring hire threshold is:", o: ["50/90", "60/90", "70/90", "80/90"], c: 2 },
+    { q: "For developer interviews, asking to show a favorite project reveals:", o: ["Their preference in colors", "Technical depth and what they find challenging", "Their salary range", "Nothing useful"], c: 1 },
+    { q: "Red flags in interview scoring deduct:", o: ["5 points each", "10 points each", "15 points each", "20 points each"], c: 1 },
+    { q: "Culture fit assessment takes:", o: ["0 minutes — not important", "5 minutes", "15 minutes", "30 minutes"], c: 1 },
+    { q: "PM interview uses scenario-based questions like:", o: ["Code debugging exercises", "Client anger management situations", "Math puzzles", "Typing speed tests"], c: 1 },
+    { q: "The sales interview technique 'Sell me this pen' tests:", o: ["Product knowledge", "Persuasion and sales instinct", "Honesty level", "Pen quality assessment"], c: 1 },
+    { q: "Warm-up phase at interview start is for:", o: ["Testing under pressure", "Building rapport and setting agenda", "Technical assessment", "Salary negotiation"], c: 1 }
+];
+
+const task7Quiz = [
+    { q: "How many reference checks are MINIMUM required?", o: ["0 — optional", "1 reference", "2 references", "5 references"], c: 2 },
+    { q: "The reference check relates back to preventing:", o: ["The filing system issues", "The ₹15 Lakh hiring mistake", "Employee benefits problems", "Office layout concerns"], c: 1 },
+    { q: "The critical question 'Would you rehire them?' answered with anything other than 'Yes' is:", o: ["Normal variation", "A major red flag", "Unimportant", "Expected behavior"], c: 1 },
+    { q: "Reference being a friend instead of a manager is:", o: ["Better for honest feedback", "A red flag — should be a professional reference", "Preferred option", "Legally required"], c: 1 },
+    { q: "Long pauses before answering reference questions suggest:", o: ["Thoughtful consideration", "The reference is hiding something", "Poor phone connection", "Normal conversation flow"], c: 1 },
+    { q: "'I can only confirm employment dates' from a reference means:", o: ["They're following company policy strictly", "They may have concerns they can't share openly", "They don't remember the person", "Legal requirement"], c: 1 },
+    { q: "Reference check question about pressure/deadlines reveals:", o: ["Nothing useful", "How candidate handles real work stress", "Their vacation preferences", "Their typing speed"], c: 1 },
+    { q: "Making an offer WITHOUT reference checks is:", o: ["Acceptable for urgent hires", "Non-negotiable — never do this", "The standard practice", "Required for senior roles only"], c: 1 },
+    { q: "The reference check opening should identify:", o: ["Your personal opinion of candidate", "Your role, company, and purpose of the call", "Salary being offered", "Other candidates being considered"], c: 1 },
+    { q: "Hesitant references who avoid details are:", o: ["Being professional", "Red flags suggesting performance concerns", "Saving time", "Following best practices"], c: 1 }
+];
+
+const task8Quiz = [
+    { q: "The offer letter must include:", o: ["Just salary amount", "Role, compensation, start date, and reporting structure", "Only job title", "Verbal agreement is enough"], c: 1 },
+    { q: "When a candidate says 'I want 10% more', the response should be:", o: ["Immediately agree", "Discuss performance-based increment after probation", "Reject the candidate", "Ignore the request"], c: 1 },
+    { q: "Probation period mentioned in the offer template is:", o: ["1 month", "2 months", "3 months with monthly reviews", "6 months"], c: 2 },
+    { q: "When a candidate says 'I have another offer', best response is:", o: ["Match their offer immediately", "Ask what attracts them there — compare growth, not just salary", "Tell them to take the other offer", "Panic and increase offer"], c: 1 },
+    { q: "Counter-offer from current employer usually:", o: ["Works out great long-term", "Rarely works out — ask why they wanted to leave", "Should be matched immediately", "Means the candidate is worth more"], c: 1 },
+    { q: "The offer deadline creates:", o: ["Unnecessary pressure", "Urgency for candidate to decide", "Legal obligation", "Nothing useful"], c: 1 },
+    { q: "Performance bonus in the offer is described as:", o: ["Guaranteed monthly", "Up to X% of salary based on performance", "Not included", "Replacing base salary"], c: 1 },
+    { q: "The offer letter closing tone should be:", o: ["Formal and threatening", "Exciting and welcoming", "Neutral and cold", "Demanding and urgent"], c: 1 },
+    { q: "Work arrangement details in the offer letter include:", o: ["Only office location", "Remote/Hybrid/Office and working hours", "Nothing about schedule", "Flexible by default"], c: 1 },
+    { q: "The offer letter should be returned by:", o: ["No deadline needed", "A specified deadline date", "Within 1 hour", "Only after joining"], c: 1 }
+];
+
+const task9Quiz = [
+    { q: "Pre-boarding (before Day 1) includes:", o: ["Nothing — everything starts on Day 1", "System access, documents, buddy assignment, schedule", "Only sending address", "Only salary information"], c: 1 },
+    { q: "The buddy system helps new hires by:", o: ["Creating dependency", "Providing a go-to person for questions and support", "Slowing down onboarding", "Adding more paperwork"], c: 1 },
+    { q: "Day 1 protocol starts at what time?", o: ["Whenever they wake up", "9:00 AM with welcome call from HR", "12:00 PM after lunch", "They choose their own time"], c: 1 },
+    { q: "The 30-60-90 day plan divides into:", o: ["Learn, Contribute, Own", "Rest, Work, Leave", "Train, Test, Teach", "Watch, Do, Lead"], c: 0 },
+    { q: "Days 1-30 success metric is:", o: ["Client-facing without supervision", "Passed training certification", "Mentoring new joiners", "Proposing process improvements"], c: 1 },
+    { q: "Days 61-90 expects the hire to:", o: ["Still be learning basics", "Work independently and mentor newer members", "Decide if they want to stay", "Complete probation paperwork only"], c: 1 },
+    { q: "First task assignment should be on:", o: ["After 1 week of observation", "Day 1 at 4:00 PM", "After 30 days", "Never on the first day"], c: 1 },
+    { q: "End of day check-in on Day 1 is done by:", o: ["CEO", "HR only", "Buddy", "Nobody"], c: 2 },
+    { q: "Probation review meeting happens at:", o: ["Day 30", "Day 60", "Day 90", "Day 180"], c: 2 },
+    { q: "The probation review covers:", o: ["Only attendance records", "Milestone review, performance, concerns, and next quarter goals", "Just salary discussion", "Office furniture requests"], c: 1 }
+];
+
+const task10Quiz = [
+    { q: "Weekly 1:1 meetings should last:", o: ["5 minutes", "15 minutes", "30 minutes", "2 hours"], c: 2 },
+    { q: "The 1:1 meeting starts with:", o: ["Complaints about performance", "WINS — what went well this week", "Salary discussion", "Attendance review"], c: 1 },
+    { q: "PIP is used when:", o: ["Someone is doing great work", "Underperformance persists for 30+ days despite feedback", "A new hire joins", "Annual reviews happen"], c: 1 },
+    { q: "PIP timeline is usually:", o: ["1 week", "2 weeks", "30-60 days", "6 months"], c: 2 },
+    { q: "Performance review rating scale goes:", o: ["1-3", "1-5 (Below Expectations to Outstanding)", "1-10", "Pass/Fail only"], c: 1 },
+    { q: "The difficult conversation script starts with:", o: ["Threats of termination", "Stating specific behavior observed", "Asking about personal life", "Discussing salary cuts"], c: 1 },
+    { q: "After a difficult conversation, the manager should:", o: ["Forget about it", "Send a summary email documenting what was agreed", "Gossip about it", "File for termination"], c: 1 },
+    { q: "The DEVELOPMENT portion of 1:1 asks about:", o: ["Complaints about coworkers", "Skills they want to develop and training needed", "Personal relationship issues", "Their next job plans"], c: 1 },
+    { q: "Performance reviews should be based on:", o: ["Gut feeling only", "Ongoing documented feedback, not surprises", "One bad day observation", "Personal relationship with manager"], c: 1 },
+    { q: "The SUPPORT question in 1:1 reveals:", o: ["Nothing useful", "What the employee needs to be more effective", "Salary expectations", "Who they don't like"], c: 1 }
+];
+
+const task11Quiz = [
+    { q: "Under the POSH Act 2013, ICC is required for organizations with:", o: ["5+ employees", "10+ employees", "50+ employees", "100+ employees"], c: 1 },
+    { q: "ICC must have at minimum what percentage of women members?", o: ["25%", "33%", "50%", "75%"], c: 2 },
+    { q: "POSH inquiry must be completed within:", o: ["30 days", "60 days", "90 days", "180 days"], c: 2 },
+    { q: "The Presiding Officer of ICC must be a:", o: ["Male manager", "Senior woman employee", "External lawyer only", "CEO or founder"], c: 1 },
+    { q: "Leave policy for maternity is:", o: ["30 days", "90 days (13 weeks)", "182 days (26 weeks)", "365 days"], c: 2 },
+    { q: "Casual leave can be carried forward:", o: ["Yes, unlimited", "Yes, up to 30 days", "No, it cannot be carried forward", "Only if manager approves"], c: 2 },
+    { q: "Earned leave carry forward maximum is:", o: ["10 days", "15 days", "30 days", "Unlimited"], c: 2 },
+    { q: "Policy review frequency should be:", o: ["Monthly", "Quarterly", "Annually", "Never — once created is enough"], c: 2 },
+    { q: "Data Protection policy covers:", o: ["Only employee data", "Client and company data security", "Only financial data", "Public information only"], c: 1 },
+    { q: "HR's role in POSH compliance includes:", o: ["Only displaying the policy poster", "Ensuring ICC constitution, annual training, confidentiality, and timely inquiry", "Ignoring complaints", "Delegating everything to external lawyers"], c: 1 }
+];
+
+const task12Quiz = [
+    { q: "The PEACE conflict resolution framework starts with:", o: ["Execute a solution", "Prepare — gather facts and understand perspectives", "Acknowledge feelings", "Collaborate on solutions"], c: 1 },
+    { q: "In mediation, the opening ground rules include:", o: ["Yell louder to win", "One person speaks at a time, focus on behaviors not attacks", "Take sides immediately", "Skip to the solution"], c: 1 },
+    { q: "When an interpersonal clash is detected, the first step is:", o: ["Fire both employees", "Mediation session focusing on behaviors, not personalities", "Ignore and hope it resolves", "Public announcement"], c: 1 },
+    { q: "Manager-employee tension signs include:", o: ["Increased productivity", "Skip-level complaints and disengagement", "More collaboration", "Positive team dynamics"], c: 1 },
+    { q: "Salary/promotion disputes should be resolved with:", o: ["Ignoring the concerns", "Transparent review of criteria and career path discussion", "Immediate promotion", "Transferring the employee"], c: 1 },
+    { q: "Employee engagement initiatives include:", o: ["Only annual parties", "Monthly events, recognition, feedback channels, and wellness", "Nothing — employees should self-motivate", "Only salary increases"], c: 1 },
+    { q: "The 'C' in PEACE stands for:", o: ["Complain", "Collaborate — work together for solutions", "Criticize", "Cancel"], c: 1 },
+    { q: "Anonymous feedback channels serve to:", o: ["Create gossip", "Provide safe space for honest input", "Waste management time", "Identify troublemakers"], c: 1 },
+    { q: "Finding common ground in mediation means:", o: ["Declaring a winner", "Identifying shared goals both parties want", "Forcing agreement", "Avoiding the real issue"], c: 1 },
+    { q: "Follow-up after conflict resolution should happen:", o: ["Never", "In one week to check if resolution holds", "After one year", "Only if someone complains again"], c: 1 }
+];
+
+const task13Quiz = [
+    { q: "Voluntary resignation requires:", o: ["No notice", "Written resignation with notice period as per contract", "Verbal resignation only", "Board approval"], c: 1 },
+    { q: "System access must be revoked:", o: ["Eventually, when convenient", "On the last working day", "One month after departure", "Only if fired"], c: 1 },
+    { q: "Exit interview primary purpose is:", o: ["Making them regret leaving", "Gathering insights to improve retention", "Legal formality only", "Arguing about their decision"], c: 1 },
+    { q: "Full & Final settlement includes:", o: ["Only pending salary", "Salary, leave encashment, bonus, gratuity, minus deductions", "Nothing — they forfeit", "Only experience letter"], c: 1 },
+    { q: "Gratuity is applicable after:", o: ["1 year", "3 years", "5 years of service", "10 years"], c: 2 },
+    { q: "Knowledge transfer during notice period ensures:", o: ["More work for leaving employee", "Ongoing projects and contacts aren't lost", "Punishment for resigning", "Nothing useful"], c: 1 },
+    { q: "Relieving letter should be issued:", o: ["Never", "On the last working day", "After 6 months", "Only if requested"], c: 1 },
+    { q: "If multiple exit interviews cite the same issues, HR should:", o: ["Ignore the pattern", "Escalate to leadership for systemic fix", "Hide the data", "Blame the departing employees"], c: 1 },
+    { q: "Termination for cause requires:", o: ["No documentation", "Documentation, warning, and termination letter", "Just a phone call", "Social media announcement"], c: 1 },
+    { q: "The offboarding checklist has phases for:", o: ["Only the last day", "Day of resignation, during notice, and last working day", "Only paperwork", "Monthly reviews"], c: 1 }
+];
+
+const task14Quiz = [
+    { q: "Time to Fill metric target is:", o: ["<15 days", "<30 days", "<60 days", "<90 days"], c: 1 },
+    { q: "Offer Acceptance Rate target is:", o: [">50%", ">60%", ">70%", ">80%"], c: 3 },
+    { q: "90-Day Retention target is:", o: [">60%", ">70%", ">80%", ">85%"], c: 3 },
+    { q: "Employee Turnover target is:", o: ["<5% annually", "<10% annually", "<15% annually", "<25% annually"], c: 2 },
+    { q: "Employee Satisfaction survey target score is:", o: [">5.0", ">6.0", ">7.5", ">9.0"], c: 2 },
+    { q: "HR certification at Digital Heroes requires:", o: ["Just watching videos", "Quiz score, role play, practical JD, and scenario handling", "Only attending meetings", "Filling out forms"], c: 1 },
+    { q: "After certification, the first real task is:", o: ["Full independent recruitment", "Shadow senior HR for 2 weeks on live recruitment", "Client-facing immediately", "Managing the team"], c: 1 },
+    { q: "How many end-to-end recruitment cycles with guidance?", o: ["1 cycle", "3 cycles", "5 cycles", "10 cycles"], c: 2 },
+    { q: "The practical certification requirement includes:", o: ["Multiple choice test only", "Creating a JD for a given role", "Writing a report", "Nothing practical"], c: 1 },
+    { q: "POSH certification after HR training is:", o: ["Optional", "Required — complete online", "Not mentioned", "Only for senior HR"], c: 1 },
+    { q: "Conflict resolution scenario in certification tests:", o: ["Theoretical knowledge only", "Practical handling of a real conflict case", "Multiple choice about theory", "Nothing about conflicts"], c: 1 },
+    { q: "After certification, you conduct your first solo:", o: ["Hiring decision", "Exit interview", "Board presentation", "Client call"], c: 1 },
+    { q: "The role play component tests:", o: ["Acting skills", "Phone screening call ability", "Singing talent", "Typing speed"], c: 1 },
+    { q: "Time to Fill is calculated from:", o: ["Interview to offer", "JD posting to offer accepted", "Offer to start date", "Resignation to replacement"], c: 1 },
+    { q: "Employee Turnover formula is:", o: ["New hires ÷ total employees", "Departures ÷ average headcount × 100", "Promotions ÷ total staff", "Offers ÷ applications"], c: 1 },
+    { q: "What metric measures new hire quality?", o: ["Time to Fill", "Offer Acceptance Rate", "90-Day Retention Rate", "Employee Satisfaction"], c: 2 },
+    { q: "The quiz for final certification has:", o: ["10 questions", "20 questions", "50 questions", "100 questions"], c: 2 },
+    { q: "Continuous learning after certification is:", o: ["Completely unnecessary", "Expected throughout career", "Only for management", "Discouraged"], c: 1 },
+    { q: "The video walkthrough requirement is:", o: ["10 minutes", "20 minutes", "30 minutes", "60 minutes"], c: 2 },
+    { q: "HR Executive at Digital Heroes is the:", o: ["Admin support role", "Talent Engine that powers every function", "Least important role", "Only recruiter"], c: 1 }
+];
+
+const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz, task11Quiz, task12Quiz, task13Quiz, task14Quiz];
+
+// Make task content available globally for openTask() function
+if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
+if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
+if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
+if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
+if (typeof task6Content !== 'undefined') window.task6Content = task6Content;
+if (typeof task7Content !== 'undefined') window.task7Content = task7Content;
+if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
+if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
+if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
+if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
+if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
+if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
+if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
+

@@ -5,7 +5,7 @@ let currentTask = 0;
 let currentQuestion = 0;
 let userAnswers = [];
 let progress = JSON.parse(localStorage.getItem('wordpressTrainingProgress')) || { completedTasks: [], currentTask: 1 };
-let traineeName = localStorage.getItem('wordpressTraineeName') || '';
+let traineeName = localStorage.getItem('dhTraineeName') || localStorage.getItem('wordpressTraineeName') || '';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -321,7 +321,7 @@ function showCertificate() {
 
     saveCertificate({
         id: certificateId,
-        name: traineeName || 'WordPress Developer',
+        name: traineeName || 'Your Name',
         course: 'WordPress Developer Training',
         issueDate: today.toISOString()
     });
@@ -374,7 +374,7 @@ function showCertificate() {
                     border-bottom: 2px solid rgba(14, 165, 233, 0.4);
                     padding: 10px 40px; display: inline-block;
                     margin: 15px 0 25px 0; min-width: 300px;
-                ">${traineeName || 'WordPress Developer'}</div>
+                ">${traineeName || 'Your Name'}</div>
                 <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 25px;">has successfully completed the</p>
                 <h3 style="font-size: 1.6em; font-weight: 700; color: #0EA5E9; margin-bottom: 25px;">
                     WordPress Developer Training
@@ -570,6 +570,7 @@ function saveTraineeName() {
     if (name) {
         traineeName = name;
         localStorage.setItem('wordpressTraineeName', name);
+        localStorage.setItem('dhTraineeName', name);
         document.getElementById('namePromptModal').remove();
     }
 }

@@ -5,7 +5,7 @@ let currentTask = 0;
 let currentQuestion = 0;
 let userAnswers = [];
 let progress = JSON.parse(localStorage.getItem('opsTrainingProgress')) || { completedTasks: [], currentTask: 1 };
-let traineeName = localStorage.getItem('opsTraineeName') || '';
+let traineeName = localStorage.getItem('dhTraineeName') || localStorage.getItem('opsTraineeName') || '';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -111,20 +111,10 @@ function openTask(index) {
 
     // Dynamic Content Loading
     // Use full content from data file if available, otherwise show placeholder
-    const taskContentVars = {
-        1: typeof task1Content !== 'undefined' ? task1Content : null,
-        2: window['task2Content'] || null,
-        3: window['task3Content'] || null,
-        4: window['task4Content'] || null,
-        5: window['task5Content'] || null,
-        6: window['task6Content'] || null,
-        7: window['task7Content'] || null,
-        8: window['task8Content'] || null,
-        9: window['task9Content'] || null,
-        10: window['task10Content'] || null,
-        11: typeof task11Content !== 'undefined' ? task11Content : null,
-        12: typeof task12Content !== 'undefined' ? task12Content : null
-    };
+    const taskContentVars = {};
+    for (let i = 1; i <= trainingTasks.length; i++) {
+        taskContentVars[i] = window['task' + i + 'Content'] || null;
+    }
 
     const fullContent = taskContentVars[task.id];
 
@@ -523,7 +513,7 @@ function showCertificate() {
                     margin: 15px 0 25px 0;
                     min-width: 300px;
                 ">
-                    ${traineeName || 'Operations Executive'}
+                    ${traineeName || 'Your Name'}
                 </div>
                 
                 <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 25px;">
@@ -693,6 +683,7 @@ function saveTraineeName() {
     if (name) {
         traineeName = name;
         localStorage.setItem('opsTraineeName', name);
+        localStorage.setItem('dhTraineeName', name);
         document.getElementById('namePromptModal').remove();
     }
 }

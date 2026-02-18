@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Fiverr Risk Manager KRA</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    <link rel="stylesheet" href="../admin-mode.css">
+    <style>
+        :root {
+            --primary: #3B82F6;
+            --primary-dark: #2563EB;
+            --kra-accent: #0EA5E9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #0C4A6E 0%, #082F49 100%);
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 0;
+            z-index: 2000;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 2em;
+        }
+
+        .sidebar-header h2 {
+            font-size: 1em;
+            margin-top: 8px;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 10px 20px;
+            margin: 0 15px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .sidebar-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-links {
+            padding: 0 15px;
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 12px 15px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .sidebar-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .sidebar-links a.active {
+            background: var(--kra-accent);
+            color: white;
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 40px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            color: var(--kra-accent);
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .kra-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .kra-card {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(3, 105, 161, 0.05));
+            border: 2px solid rgba(14, 165, 233, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .kra-card h3 {
+            color: var(--kra-accent);
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .kra-card p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .kra-card ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .kra-card li {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .success-criteria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .criteria-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--kra-accent);
+        }
+
+        .criteria-item .metric {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--kra-accent);
+        }
+
+        .criteria-item .label {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+        @media print {
+
+            .sidebar,
+            .print-btn,
+            .admin-floating-btn,
+            .admin-banner,
+            .admin-modal-overlay,
+            .admin-history-panel,
+            .admin-find-panel,
+            .admin-toast-container {
+                display: none !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+            }
+        }
+
+        .print-btn {
+            display: block;
+            padding: 12px;
+            margin: 15px;
+            background: linear-gradient(135deg, #0EA5E9, #0369A1);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Mobile Header */
+        .mobile-header {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #0C4A6E 0%, #082F49 100%);
+            z-index: 9999;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex !important;
+            }
+
+            .sidebar {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100vh !important;
+                width: 280px !important;
+                z-index: 9999 !important;
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0) !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+                padding-top: 70px !important;
+                width: 100% !important;
+            }
+
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+
+            .header h1 {
+                font-size: 1.5em !important;
+            }
+
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="../assets/css/mobile-override.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="../index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">🛡️</div>
+            <h2>Fiverr Risk Manager KRA</h2>
+        </div>
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../fiverr-risk-sop.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">📋
+                SOP</a>
+            <a href="../kpi/fiverr-risk-kpi.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
+                KPI</a>
+        </div>
+        <a href="../index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#overview" class="active">📝 Role Overview</a>
+            <a href="#kras">🎯 Key Result Areas</a>
+            <a href="#success">🏆 Success Criteria</a>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="header">
+            <h1>🛡️ Fiverr Risk Manager KRA</h1>
+            <p class="subtitle">Key Result Areas – What You're Responsible For</p>
+            <div class="badge-row">
+                <span class="badge">💬 Message Response</span>
+                <span class="badge">📦 Delivery Protection</span>
+                <span class="badge">⭐ Review Management</span>
+                <span class="badge">📊 Daily Reporting</span>
+            </div>
+        </header>
+
+        <section class="section" id="overview">
+            <h2>📝 Role Overview</h2>
+            <p style="font-size: 1.1em; color: #444; margin-bottom: 20px;">The Fiverr Account Risk Manager is the
+                <strong>first line of defense</strong> against account penalties, missed messages, late deliveries, and
+                negative reviews. You are responsible for the <strong>daily health and performance</strong> of all 4
+                seller accounts (Sarthak, Navya, Divyansh, Anurag).
+            </p>
+            <div
+                style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(16, 185, 129, 0.1)); padding: 20px; border-radius: 12px;">
+                <strong>🚀 Primary Mission:</strong> Zero missed messages. Zero late deliveries. 100% daily notification
+                clearance. Protect every account from performance drops.
+            </div>
+        </section>
+
+        <section class="section" id="kras">
+            <h2>🎯 Key Result Areas</h2>
+            <div class="kra-grid">
+                <div class="kra-card">
+                    <h3>💬 1. Message Response Coverage</h3>
+                    <p>Ensure every message is replied to within 24 hours</p>
+                    <ul>
+                        <li>Check all 4 accounts daily for unreplied messages</li>
+                        <li>Prioritize clock-icon (expiring) messages immediately</li>
+                        <li>Do not interrupt active ongoing conversations</li>
+                        <li>Escalate stuck conversations to account managers</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📦 2. Delivery Risk Prevention</h3>
+                    <p>Flag and prevent all late deliveries across accounts</p>
+                    <ul>
+                        <li>Monitor all active orders daily</li>
+                        <li>Flag any delivery due within 48 hours</li>
+                        <li>Personally notify account manager via Discord/WhatsApp</li>
+                        <li>Track flagged deliveries until resolved</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🔔 3. Notification Clearance</h3>
+                    <p>100% of notifications cleared and acted upon daily</p>
+                    <ul>
+                        <li>Open notification panel on every account</li>
+                        <li>Act on delivery updates, order changes</li>
+                        <li>Clear all notifications from past 24 hours</li>
+                        <li>Report notification status in daily report</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>⭐ 4. Review & Feedback Management</h3>
+                    <p>Maximize reviews collected and maintain rating quality</p>
+                    <ul>
+                        <li>Respond to all buyer reviews immediately</li>
+                        <li>Flag any 4-star or lower reviews and escalate</li>
+                        <li>Track clients in feedback tracker sheet</li>
+                        <li>Mark 30+ day expired review rows RED</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📊 5. Daily Reporting & Accountability</h3>
+                    <p>Submit detailed per-account report every single day</p>
+                    <ul>
+                        <li>Report to Shreyansh and Delhi Team daily</li>
+                        <li>Break down each account individually</li>
+                        <li>Report even on zero-action days with reasons</li>
+                        <li>Include flagged items, low ratings, delivery risks</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🎫 6. Cancelled Order Recovery</h3>
+                    <p>File support tickets for every cancelled order</p>
+                    <ul>
+                        <li>Create Fiverr support ticket for each cancellation</li>
+                        <li>Request metric removal and compensation</li>
+                        <li>Track ticket status and follow up</li>
+                        <li>Protect seller level from cancellation impact</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🔔 7. Brief & Lead Response</h3>
+                    <p>Convert all matching briefs into potential leads</p>
+                    <ul>
+                        <li>Check Briefs section on all accounts daily</li>
+                        <li>Respond to all matches via "Ask a Question"</li>
+                        <li>Use standard portfolio pitch (under 2000 chars)</li>
+                        <li>Track brief response completion in report</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🚨 8. Escalation & Crisis Management</h3>
+                    <p>Identify and escalate red flags before they cause damage</p>
+                    <ul>
+                        <li>Immediate escalation for cancellation requests</li>
+                        <li>Screenshot and report account warnings</li>
+                        <li>Escalate negative reviews within 15 minutes</li>
+                        <li>Never accept cancellations without management approval</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="success">
+            <h2>🏆 Success Criteria</h2>
+            <div class="success-criteria">
+                <div class="criteria-item">
+                    <div class="metric">0</div>
+                    <div class="label">Missed Messages</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">0</div>
+                    <div class="label">Late Deliveries</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">100%</div>
+                    <div class="label">Notification Clearance</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">100%</div>
+                    <div class="label">Daily Reports Sent</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">100%</div>
+                    <div class="label">Cancelled Order Tickets</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">100%</div>
+                    <div class="label">Briefs Responded</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Digital Heroes | Fiverr Risk Manager KRA | Version 1.0</p>
+        </footer>
+    </div>
+
+    <script src="../admin-mode.js"></script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        document.addEventListener('click', function (event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            if (!sidebar || !toggleBtn) return;
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+    </script>
+</body>
+
+</html>

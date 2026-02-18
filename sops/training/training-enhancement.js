@@ -80,8 +80,27 @@
             // Show timer
             showTimer();
 
-            // Call original
-            originalStartQuiz.call(this, taskIndex);
+            // Call original with error handling
+            try {
+                originalStartQuiz.call(this, taskIndex);
+            } catch (err) {
+                console.error('[TrainingEnhancement] startQuiz failed:', err);
+                // Hide timer on error so user doesn't see a floating timer
+                const timerEl = document.getElementById('quizTimer');
+                if (timerEl) timerEl.remove();
+                // Show error message in main content area
+                const container = document.getElementById('taskView') || document.getElementById('mainContent');
+                if (container) {
+                    container.innerHTML = `
+                        <div style="text-align:center; padding:60px 20px;">
+                            <div style="font-size:3em; margin-bottom:20px;">⚠️</div>
+                            <h2 style="color:#F59E0B;">Quiz Not Available</h2>
+                            <p style="color:#94A3B8; max-width:400px; margin:10px auto;">
+                                Quiz data for this task could not be loaded. Please refresh the page and try again.
+                            </p>
+                        </div>`;
+                }
+            }
         };
     }
 

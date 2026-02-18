@@ -1,11 +1,11 @@
-﻿// Shopify Developer Training Application Logic
+// Shopify Developer Training Application Logic
 
 // State Management
 let currentTask = 0;
 let currentQuestion = 0;
 let userAnswers = [];
 let progress = JSON.parse(localStorage.getItem('developerTrainingProgress')) || { completedTasks: [], currentTask: 1 };
-let traineeName = localStorage.getItem('developerTraineeName') || '';
+let traineeName = localStorage.getItem('dhTraineeName') || localStorage.getItem('developerTraineeName') || '';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -117,17 +117,10 @@ function openTask(index) {
     } else {
         // Use full content from data file if available, otherwise show placeholder
         // Use window[] access to safely check for variables without ReferenceError
-        const taskContentVars = {
-            2: window['task2Content'] || null,
-            3: window['task3Content'] || null,
-            4: window['task4Content'] || null,
-            5: window['task5Content'] || null,
-            6: window['task6Content'] || null,
-            7: window['task7Content'] || null,
-            8: window['task8Content'] || null,
-            9: window['task9Content'] || null,
-            10: window['task10Content'] || null
-        };
+        const taskContentVars = {};
+        for (let i = 2; i <= trainingTasks.length; i++) {
+            taskContentVars[i] = window['task' + i + 'Content'] || null;
+        }
 
         const fullContent = taskContentVars[task.id];
 
@@ -363,7 +356,7 @@ function showCertificate() {
     // Save certificate to localStorage for verification
     saveCertificate({
         id: certificateId,
-        name: traineeName || 'Developer',
+        name: traineeName || 'Your Name',
         course: 'Shopify Developer Training',
         issueDate: today.toISOString()
     });
@@ -460,7 +453,7 @@ function showCertificate() {
                     margin: 15px 0 25px 0;
                     min-width: 300px;
                 ">
-                    ${traineeName || 'Sales Executive'}
+                    ${traineeName || 'Your Name'}
                 </div>
                 
                 <p style="color: #94A3B8; font-size: 1.1em; margin-bottom: 25px;">
@@ -858,6 +851,7 @@ function saveTraineeName() {
 
     traineeName = name;
     localStorage.setItem('developerTraineeName', name);
+    localStorage.setItem('dhTraineeName', name);
 
     const modal = document.getElementById('namePromptModal');
     if (modal) {

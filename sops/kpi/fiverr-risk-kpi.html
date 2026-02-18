@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Fiverr Risk Manager KPI</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    <link rel="stylesheet" href="../admin-mode.css">
+    <style>
+        :root {
+            --primary: #0EA5E9;
+            --kpi-accent: #F59E0B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            background: #f5f7fa;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #0C4A6E 0%, #082F49 100%);
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 0;
+            z-index: 2000;
+        }
+
+        .sidebar-header {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .sidebar-header .emoji {
+            font-size: 2em;
+        }
+
+        .sidebar-header h2 {
+            font-size: 1em;
+            margin-top: 8px;
+        }
+
+        .sidebar-back {
+            display: block;
+            padding: 10px 20px;
+            margin: 0 15px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .sidebar-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-links {
+            padding: 0 15px;
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 12px 15px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .sidebar-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .sidebar-links a.active {
+            background: var(--kpi-accent);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 40px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            color: var(--kpi-accent);
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .kpi-card {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.05));
+            border: 2px solid rgba(245, 158, 11, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .kpi-card h3 {
+            color: var(--kpi-accent);
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .kpi-card .target {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--kpi-accent);
+            margin: 10px 0;
+        }
+
+        .kpi-card .description {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .kpi-card .formula {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 0.85em;
+        }
+
+        .tracking-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .tracking-table th,
+        .tracking-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tracking-table th {
+            background: #f8f9fa;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+        @media print {
+
+            .sidebar,
+            .print-btn,
+            .admin-floating-btn,
+            .admin-banner,
+            .admin-modal-overlay,
+            .admin-history-panel,
+            .admin-find-panel,
+            .admin-toast-container {
+                display: none !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+            }
+        }
+
+        .print-btn {
+            display: block;
+            padding: 12px;
+            margin: 15px;
+            background: linear-gradient(135deg, #F59E0B, #D97706);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Mobile */
+        .mobile-header {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: linear-gradient(135deg, #0C4A6E 0%, #082F49 100%);
+            z-index: 9999;
+            padding: 0 12px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .mobile-home-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 10px 16px;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            white-space: nowrap;
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-header {
+                display: flex !important;
+            }
+
+            .sidebar {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100vh !important;
+                width: 280px !important;
+                z-index: 9999 !important;
+                transform: translateX(-100%) !important;
+                transition: transform 0.3s ease !important;
+            }
+
+            .sidebar.active,
+            .sidebar.open {
+                transform: translateX(0) !important;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+                padding-top: 70px !important;
+                width: 100% !important;
+            }
+
+            .header {
+                padding: 25px 20px !important;
+                margin-bottom: 20px !important;
+                border-radius: 0 0 15px 15px !important;
+            }
+
+            .header h1 {
+                font-size: 1.5em !important;
+            }
+
+            .section {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="../assets/css/mobile-override.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="../index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">🛡️</div>
+            <h2>Fiverr Risk Manager KPI</h2>
+        </div>
+        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
+            <a href="../fiverr-risk-sop.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981;">📋
+                SOP</a>
+            <a href="../kra/fiverr-risk-kra.html" class="sidebar-back"
+                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(14, 165, 233, 0.2); border: 1px solid #0EA5E9;">🎯
+                KRA</a>
+        </div>
+        <a href="../index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#overview" class="active">📝 Overview</a>
+            <a href="#kpis">📊 Key Metrics</a>
+            <a href="#tracking">🛤️ Tracking</a>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="header">
+            <h1>🛡️ Fiverr Risk Manager KPI</h1>
+            <p class="subtitle">Key Performance Indicators – How We Measure Success</p>
+            <div class="badge-row">
+                <span class="badge">📊 Tracked Daily</span>
+                <span class="badge">🎯 Zero-Tolerance Metrics</span>
+                <span class="badge">📈 Weekly Review</span>
+            </div>
+        </header>
+
+        <section class="section" id="overview">
+            <h2>📝 KPI Overview</h2>
+            <p style="font-size: 1.1em; color: #444;">These KPIs measure the effectiveness of the Fiverr Account Risk
+                Manager across all 4 accounts. Performance is tracked <strong>daily</strong> and reviewed
+                <strong>weekly</strong> with Shreyansh and the Delhi Team.
+            </p>
+        </section>
+
+        <section class="section" id="kpis">
+            <h2>🎯 Key Performance Indicators</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <h3>💬 Message Response Rate</h3>
+                    <div class="target">100%</div>
+                    <div class="description">All messages replied within 24 hours across all accounts</div>
+                    <div class="formula">(Replied Messages / Total Received) × 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>📦 On-Time Delivery Rate</h3>
+                    <div class="target">100%</div>
+                    <div class="description">Zero late deliveries — all at-risk deliveries flagged within 48 hrs</div>
+                    <div class="formula">(On-Time Deliveries / Total Deliveries) × 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>🔔 Notification Clearance</h3>
+                    <div class="target">100%</div>
+                    <div class="description">All notifications from past 24 hrs checked and cleared daily</div>
+                    <div class="formula">(Cleared Notifications / Total) × 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>📊 Daily Report Submission</h3>
+                    <div class="target">100%</div>
+                    <div class="description">Report submitted to Shreyansh & Delhi Team every working day</div>
+                    <div class="formula">(Reports Sent / Working Days) × 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>⭐ Review Response Rate</h3>
+                    <div class="target">100%</div>
+                    <div class="description">Reviews given back for every buyer who left a review</div>
+                    <div class="formula">(Responses Given / Reviews Received) × 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>⚠️ Low Rating Escalation</h3>
+                    <div class="target">&lt; 15 min</div>
+                    <div class="description">Time to escalate 4-star or lower reviews to Shreyansh</div>
+                    <div class="formula">Avg time from review detection to escalation</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>🎫 Cancellation Ticket Rate</h3>
+                    <div class="target">100%</div>
+                    <div class="description">Support ticket filed for every cancelled order</div>
+                    <div class="formula">(Tickets Filed / Cancelled Orders) × 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>🔔 Brief Response Rate</h3>
+                    <div class="target">100%</div>
+                    <div class="description">All matching briefs responded to with portfolio pitch</div>
+                    <div class="formula">(Briefs Responded / Total Matches) × 100</div>
+                </div>
+                <div class="kpi-card">
+                    <h3>🚩 Delivery Flag Accuracy</h3>
+                    <div class="target">100%</div>
+                    <div class="description">All deliveries due within 48 hrs flagged and manager notified</div>
+                    <div class="formula">(Flagged At-Risk / Total At-Risk) × 100</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="tracking">
+            <h2>🛤️ Performance Tracking</h2>
+            <table class="tracking-table">
+                <thead>
+                    <tr>
+                        <th>KPI</th>
+                        <th>Target</th>
+                        <th>Measurement Source</th>
+                        <th>Frequency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Message Response Rate</td>
+                        <td>100%</td>
+                        <td>Fiverr Inbox / Daily Report</td>
+                        <td>Daily</td>
+                    </tr>
+                    <tr>
+                        <td>On-Time Delivery Rate</td>
+                        <td>100%</td>
+                        <td>Fiverr Orders Dashboard</td>
+                        <td>Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Notification Clearance</td>
+                        <td>100%</td>
+                        <td>Fiverr Notifications / Daily Report</td>
+                        <td>Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Daily Report Submission</td>
+                        <td>100%</td>
+                        <td>Discord/WhatsApp Logs</td>
+                        <td>Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Review Response Rate</td>
+                        <td>100%</td>
+                        <td>Fiverr Reviews Section</td>
+                        <td>Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Low Rating Escalation</td>
+                        <td>&lt; 15 min</td>
+                        <td>Escalation Timestamps</td>
+                        <td>Per Incident</td>
+                    </tr>
+                    <tr>
+                        <td>Cancellation Ticket Rate</td>
+                        <td>100%</td>
+                        <td>Fiverr Help Center</td>
+                        <td>Per Cancellation</td>
+                    </tr>
+                    <tr>
+                        <td>Brief Response Rate</td>
+                        <td>100%</td>
+                        <td>Fiverr Briefs Dashboard</td>
+                        <td>Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Flag Accuracy</td>
+                        <td>100%</td>
+                        <td>Daily Report Cross-Check</td>
+                        <td>Weekly</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <p>Digital Heroes | Fiverr Risk Manager KPI | Version 1.0</p>
+        </footer>
+    </div>
+
+    <script src="../admin-mode.js"></script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+                sidebar.classList.toggle('open');
+            }
+            if (overlay) {
+                overlay.classList.toggle('active');
+            }
+        }
+
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            var overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) {
+                sidebar.classList.remove('active');
+                sidebar.classList.remove('open');
+            }
+            if (overlay) {
+                overlay.classList.remove('active');
+            }
+        }
+
+        document.addEventListener('click', function (event) {
+            var sidebar = document.querySelector('.sidebar');
+            var toggleBtn = document.querySelector('.mobile-menu-btn');
+            if (!sidebar || !toggleBtn) return;
+            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
+            var clickedOnSidebar = sidebar.contains(event.target);
+            var clickedOnToggle = toggleBtn.contains(event.target);
+            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
+                closeSidebar();
+            }
+        });
+    </script>
+</body>
+
+</html>
