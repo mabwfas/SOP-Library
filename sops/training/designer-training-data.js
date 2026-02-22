@@ -3,8 +3,9 @@
 // 12 Tasks, 150+ Quiz Questions, Premium Design Standard
 
 const trainingTasks = [
+    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
     {
-        id: 1,
+        id: 2,
         title: "Designer Mindset",
         description: "Design that SELLS",
         contentFirst: true,
@@ -16,7 +17,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         title: "The 5 Laws of Premium",
         description: "Whitespace & Hierarchy",
         contentFirst: true,
@@ -28,7 +29,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "Color Psychology",
         description: "Conversions via Color",
         contentFirst: true,
@@ -40,7 +41,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: "Typography Mastery",
         description: "The 2-Font Rule",
         contentFirst: true,
@@ -52,7 +53,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: "Layout & Spacing",
         description: "The 8px Grid System",
         contentFirst: true,
@@ -64,7 +65,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: "Trust & Psychology",
         description: "Elements that Convince",
         contentFirst: true,
@@ -76,7 +77,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         title: "Page-by-Page Guide",
         description: "12 Essential Sections",
         contentFirst: true,
@@ -88,7 +89,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 8,
+        id: 9,
         title: "Mobile-First Deep Dive",
         description: "The Thumb Zone",
         contentFirst: true,
@@ -100,7 +101,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 9,
+        id: 10,
         title: "Design QA & Handoff",
         description: "Dev-Ready Files",
         contentFirst: true,
@@ -112,7 +113,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 10,
+        id: 11,
         title: "Figma Workflow",
         description: "Professional Organization",
         contentFirst: true,
@@ -124,7 +125,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 11,
+        id: 12,
         title: "Difficult Situations",
         description: "Handling Feedback",
         contentFirst: true,
@@ -136,7 +137,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 12,
+        id: 13,
         title: "AI & Tools",
         description: "Workflow Acceleration",
         contentFirst: true,
@@ -149,7 +150,227 @@ const trainingTasks = [
     }
 ];
 
-const task1Content = `
+
+const task0Content = `
+<h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes</h3>
+    <p>You're now part of something bigger than just a job. We are building the <strong>world's best digital agency</strong>. This isn't a typical company—we have high standards because we're building something exceptional. <strong>DISCIPLINE IS YOUR GREATEST INVESTMENT.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Mission: Point A → Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Milestone</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Revenue Target</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹9.2 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2025 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹15-20 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2026 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹40 Crores</td></tr>
+            <tr style="background: rgba(59, 130, 246, 0.2);"><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹75 Crores</strong></td></tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits through our <strong>equity-sharing model—even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- MANIFESTO -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">⚡ The Digital Heroes Manifesto</h3>
+    <ul>
+        <li><strong>Talent is Irrelevant. Volume is Everything.</strong> — We don't care about your degree. We care about your OUTPUT. Need skills? Put in 100 hours learning. Need more? Put in 500.</li>
+        <li><strong>Emotional Intelligence > IQ</strong> — How do you respond under pressure? That's your real test. People with high EQ build real relationships and lead.</li>
+        <li><strong>Instant Reply = Respect</strong> — When you respond quickly, you're saying: "I respect you, I'm reliable, I care."</li>
+        <li><strong>Protect Your Mindset</strong> — Stop thinking negative thoughts. Build character that helps your growth.</li>
+        <li><strong>Clients are Opportunities</strong> — Approach every client like you're personally invested in their success.</li>
+        <li><strong>The 80/20 Principle</strong> — 80% of your time: Productive work. 20%: Everything else.</li>
+        <li><strong>Work = Highest Priority</strong> — Real satisfaction comes from BUILDING something that matters.</li>
+    </ul>
+</div>
+
+<!-- CORE VALUES -->
+<div class="content-section">
+    <h3>⭐ Core Values: The Digital Heroes Way</h3>
+    <ul>
+        <li>⚡ <strong>Work Fast, Work Smart</strong> — Speed without quality is recklessness. Quality without speed is inefficiency.</li>
+        <li>💬 <strong>Communicate Clearly</strong> — Ambiguity is the enemy. Ask clarifying questions. Confirm understanding. Never leave people guessing.</li>
+        <li>💡 <strong>Share Ideas</strong> — Your insights matter. If you see a better way, speak up.</li>
+        <li>🤝 <strong>Help Your Teammates</strong> — We are allies. We win together or we don't win at all.</li>
+        <li>🌟 <strong>Be Useful Beyond Tasks</strong> — Your attitude, proactive problem-solving, and contribution to team culture matter.</li>
+        <li>🚫 <strong>Zero Politics</strong> — Problems go to HR or Delhi Team only. We foster positivity.</li>
+    </ul>
+</div>
+
+<!-- INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔗 The Interconnected Chain</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p style="margin: 0;">
+            <strong style="color: #FBBF24;">Sales</strong> → generates enquiries → <strong style="color: #60A5FA;">Development</strong> → delivers quality → <strong style="color: #F472B6;">Client Satisfaction</strong> → drives reviews → <strong style="color: #A78BFA;">Better Positioning</strong> → more enquiries → 🔄 Cycle continues
+        </p>
+    </div>
+    <p style="color: #F87171; font-weight: 600;">⚠️ If any single link breaks, the entire system is affected. No department is bigger than the process. No one grows alone here.</p>
+</div>
+
+<!-- CRITICAL RULES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 CRITICAL RULES — Zero Tolerance (No Warnings, No Second Chances)</h3>
+    <ol>
+        <li><strong>Ignoring Management Messages</strong> = <span style="color: #EF4444;">IMMEDIATE TERMINATION</span>. This is the #1 termination reason.</li>
+        <li><strong>Data Breach</strong> — Sharing client info, source code, or passwords outside company = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+        <li><strong>Moonlighting</strong> — Working for competitors, taking freelance projects while employed = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Harassment</strong> — Verbal, sexual, or online bullying. One proven incident = <span style="color: #EF4444;">Out</span>.</li>
+        <li><strong>Poor Communication (3 Strikes)</strong> — Rude to client / Lying / Late responses. 1st: ₹500 Penalty → 2nd: ₹1000 → 3rd: Termination.</li>
+        <li><strong>Substance Abuse</strong> — Coming to work under influence = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Conspiracy & Negativity</strong> — Problems regarding any person must be shared ONLY with HR or Delhi Team. Conspiring = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+    </ol>
+</div>
+
+<!-- TEAM HIERARCHY -->
+<div class="content-section">
+    <h3>👥 Team Structure & Hierarchy</h3>
+    <p><strong>Supreme Authority:</strong> The Delhi Team represents the highest level of command. Their decisions override ALL other instructions.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Level</th><th style="padding: 10px; text-align: left;">Role</th><th style="padding: 10px; text-align: left;">Key Persons</th></tr>
+        <tr><td style="padding: 8px;">Level 1 (Top)</td><td style="padding: 8px;">CEO / Leadership</td><td style="padding: 8px;">Prasun Anand (CEO - Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Operations Head</td><td style="padding: 8px;">Anurag Singh (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Managing Director (Lucknow)</td><td style="padding: 8px;">Shreyansh</td></tr>
+        <tr><td style="padding: 8px;">Level 3</td><td style="padding: 8px;">General Manager</td><td style="padding: 8px;">Parth Srivastav (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 4</td><td style="padding: 8px;">HR & Project Managers</td><td style="padding: 8px;">Stuti/Agrima (HR), Navya Singh (Shopify PM)</td></tr>
+        <tr><td style="padding: 8px;">Level 5</td><td style="padding: 8px;">Team Leads / Senior Devs</td><td style="padding: 8px;">Mahira (Lead), Divyansh Singh</td></tr>
+        <tr><td style="padding: 8px;">Level 6</td><td style="padding: 8px;">Execution Teams</td><td style="padding: 8px;">Developers, Designers, QA, Sales, CS</td></tr>
+    </table>
+</div>
+
+<!-- HOURS & ATTENDANCE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⏰ Working Hours & Attendance</h3>
+    <ul>
+        <li><strong>Lucknow Team:</strong> 9:00 AM – 6:00 PM (Morning Shift)</li>
+        <li><strong>Delhi Team:</strong> Night Shift (Handling Foreign Clients)</li>
+        <li><strong>Sunday:</strong> Off | <strong>Lunch:</strong> 1:00 PM – 2:00 PM</li>
+        <li><strong>Fiverr/Sales Team Window:</strong> 9:00 AM – 9:00 PM (flexible shifts)</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ The 9:15 Rule:</strong> Arrive after 9:15 AM = <strong>Half-day salary deduction</strong>. Late arrivals: 3x = Verbal Warning → 5x = Written Warning → 7+ = Termination Review.
+    </div>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Unexplained Absence</strong> (not informing by 9:00 AM): 1st = Written Warning → 3rd = 3 Days Salary Deduction → 5th = Termination.
+    </div>
+</div>
+
+<!-- LEAVE POLICY -->
+<div class="content-section">
+    <h3>🏖️ Leave Policy</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Type</th><th style="padding: 10px; text-align: left;">Days/Year</th><th style="padding: 10px; text-align: left;">Notes</th></tr>
+        <tr><td style="padding: 8px;">Casual Leave (CL)</td><td style="padding: 8px;">12</td><td style="padding: 8px;">Personal use. Max 2/month.</td></tr>
+        <tr><td style="padding: 8px;">Sick Leave (SL)</td><td style="padding: 8px;">6</td><td style="padding: 8px;">Medical use. Certificate for 2+ days.</td></tr>
+        <tr><td style="padding: 8px;">Earned Leave (EL)</td><td style="padding: 8px;">15</td><td style="padding: 8px;">After 1 year only.</td></tr>
+        <tr><td style="padding: 8px;">Holidays</td><td style="padding: 8px;">~10</td><td style="padding: 8px;">Standard National Holidays.</td></tr>
+    </table>
+    <p><strong>Restrictions:</strong></p>
+    <ul>
+        <li>❌ No leave in first 2 months (Probation) unless emergency.</li>
+        <li>❌ No leave during month-end (25th–5th) billing cycle.</li>
+        <li>❌ Max 2 CL per month (unless approved by Senior Management).</li>
+    </ul>
+    <p><strong>How to Apply:</strong> Post in <strong>#ask-hr</strong> or message Manager min <strong>3 days in advance</strong>. Include: Name, Dates, Reason, and who is covering your work.</p>
+</div>
+
+<!-- SALARY & GROWTH -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💰 Salary, Growth & Compensation</h3>
+    <ul>
+        <li><strong>Payment Date:</strong> Before 10th of the following month.</li>
+        <li><strong>Cycle:</strong> 1st to End of Month.</li>
+        <li>🚨 <strong>Confidentiality:</strong> Discussing salary with colleagues = <span style="color: #EF4444;">Immediate Termination</span>.</li>
+    </ul>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">KPI Score</th><th style="padding: 10px; text-align: left;">Outcome</th></tr>
+        <tr><td style="padding: 8px;">90-100% (Exceptional)</td><td style="padding: 8px;">15-20% Increment + Bonus</td></tr>
+        <tr><td style="padding: 8px;">75-89% (Exceeds)</td><td style="padding: 8px;">10-15% Increment</td></tr>
+        <tr><td style="padding: 8px;">60-74% (Meets)</td><td style="padding: 8px;">5-10% Increment</td></tr>
+        <tr><td style="padding: 8px;">&lt;60% (Needs Improvement)</td><td style="padding: 8px;">No Increment + PIP</td></tr>
+    </table>
+    <p><strong>Advance Salary:</strong> Available after 3 months. Max 50% of salary. Recovered in 2 installments. Genuine emergencies only.</p>
+    <p><strong>Growth Formula:</strong> Employee Growth = Company Growth × (Will + Efforts). Income = Happy Clients × Skill × Speed.</p>
+</div>
+
+<!-- COMMUNICATION RULES -->
+<div class="content-section">
+    <h3>💬 Communication Protocol</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Who</th><th style="padding: 10px; text-align: left;">Response Time</th></tr>
+        <tr><td style="padding: 8px;">Clients</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Manager</td><td style="padding: 8px;">&lt; 1 Hour</td></tr>
+        <tr><td style="padding: 8px;">Team</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Emergency</td><td style="padding: 8px;">&lt; 15 Minutes</td></tr>
+    </table>
+    <p><strong>Channels:</strong> Official: Discord/Email. Team: WhatsApp. Clients: Fiverr/Platform. Personal issues → DM. Work questions → Group chat (so everyone learns).</p>
+    <p><strong>Specificity Rule:</strong> Always provide ETAs. Never say "I'll be late" — say "I will be 15 mins late. ETA 9:45 AM." Never say "Okay" — say "Got it. Task A: ETA 2 PM. Task B: ETA 5 PM."</p>
+</div>
+
+<!-- WFH POLICY -->
+<div class="content-section">
+    <h3>🏠 Work From Home Policy</h3>
+    <p><strong>WFH is a PRIVILEGE, Not a Right.</strong></p>
+    <ul>
+        <li>Max 2 days/week. Non-consecutive.</li>
+        <li>Manager can revoke instantly if productivity drops.</li>
+        <li>Requirements: Probation completed (3 months), High speed internet (10+ Mbps), Respond within 30 mins, Camera ON for all meetings.</li>
+    </ul>
+</div>
+
+<!-- CULTURE & PERKS -->
+<div class="content-section">
+    <h3>🎉 Culture, Perks & Exit Process</h3>
+    <ul>
+        <li>🏔️ <strong>Offsite Trips</strong> — Twice a year, company-paid (travel, stay, food).</li>
+        <li>🎬 <strong>Outing Budget</strong> — ₹500-1000/month per person for team activities.</li>
+        <li>🎂 <strong>Birthdays</strong> — Half-day, Cake, and Celebration.</li>
+        <li>🤝 <strong>Buddy System</strong> — New joiners get a Buddy for 2 weeks.</li>
+        <li>📚 <strong>Growth</strong> — 4 hrs/week learning hours. Course reimbursement up to ₹5k/yr.</li>
+    </ul>
+    <h4>Exit Process</h4>
+    <ul>
+        <li><strong>Notice Period:</strong> Probation = 7 Days. Confirmed = 30 Days.</li>
+        <li><strong>Process:</strong> Written resignation → Handover → Exit Interview → Return Assets → F&F within 30 days.</li>
+        <li><strong>Email:</strong> hr@digitalheroes.co.in</li>
+        <li>Experience Certificate: Provided for good standing exits only.</li>
+    </ul>
+</div>
+
+<!-- SOP OBSESSION -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📑 The SOP Obsession</h3>
+    <p><strong>What is an SOP?</strong> Standard Operating Procedure. Here, it's not just a guideline—it is the <strong>Law</strong>. It is the best known way to do a task perfectly.</p>
+    <ul>
+        <li><strong>Why use it?</strong> It removes guessing. It guarantees speed, quality, and consistency. It protects you from mistakes.</li>
+        <li><strong>Your Duty:</strong> You MUST follow your Role's SOP + the Daily SOP every day.</li>
+        <li><strong>Evolve It:</strong> SOPs are not static. Found a better way? Suggest an improvement.</li>
+    </ul>
+</div>
+
+<!-- KEY FAQS -->
+<div class="content-section">
+    <h3>❓ Key Employee FAQs</h3>
+    <ul>
+        <li><strong>Is training period paid?</strong> No. Training Completion Certificate provided after finishing.</li>
+        <li><strong>Is EOD report mandatory?</strong> Yes. Submit EOD + time tracking on Discord daily. Failure = marked absent.</li>
+        <li><strong>Can I take freelance projects?</strong> No. Conflict of interest.</li>
+        <li><strong>Is confidentiality mandatory?</strong> Yes. Client data, strategies, internal info. Breach = termination.</li>
+        <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
+        <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
+        <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
+        <li><strong>Sales incentives?</strong> 5% of sales exceeding USD 5,000/month.</li>
+        <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
+    </ul>
+</div>
+`;
+
+const task2Content = `
 <h2>📚 TASK 1: DESIGNER MINDSET - Design That SELLS</h2>
 
 <!-- WELCOME TO DIGITAL HEROES -->
@@ -419,7 +640,7 @@ const task1Content = `
 </div>
 `;
 
-const task2Content = `
+const task3Content = `
 <h2>📚 TASK 2: THE 5 LAWS OF PREMIUM DESIGN</h2>
 
 <div class="content-section">
@@ -454,7 +675,7 @@ const task2Content = `
 </div>
 `;
 
-const task3Content = `
+const task4Content = `
 <h2>📚 TASK 3: COLOR THEORY FOR ECOMMERCE</h2>
 
 <div class="content-section">
@@ -493,7 +714,7 @@ const task3Content = `
 </div>
 `;
 
-const task4Content = `
+const task5Content = `
 <h2>📚 TASK 4: TYPOGRAPHY MASTERY</h2>
 
 <div class="content-section">
@@ -527,7 +748,7 @@ const task4Content = `
 </div>
 `;
 
-const task5Content = `
+const task6Content = `
 <h2>📚 TASK 5: LAYOUT & SPACING - The Invisible Grid</h2>
 
 <div class="content-section">
@@ -562,7 +783,7 @@ const task5Content = `
 </div>
 `;
 
-const task6Content = `
+const task7Content = `
 <h2>📚 TASK 6: TRUST & PSYCHOLOGY</h2>
 
 <div class="content-section">
@@ -598,7 +819,7 @@ const task6Content = `
 </div>
 `;
 
-const task7Content = `
+const task8Content = `
 <h2>📚 TASK 7: PAGE-BY-PAGE GUIDE</h2>
 
 <div class="content-section">
@@ -638,7 +859,7 @@ const task7Content = `
 </div>
 `;
 
-const task8Content = `
+const task9Content = `
 <h2>📚 TASK 8: MOBILE-FIRST DEEP DIVE</h2>
 
 <div class="content-section">
@@ -673,7 +894,7 @@ const task8Content = `
 </div>
 `;
 
-const task9Content = `
+const task10Content = `
 <h2>📚 TASK 9: DESIGN QA & HANDOFF</h2>
 
 <div class="content-section">
@@ -708,7 +929,7 @@ const task9Content = `
 </div>
 `;
 
-const task10Content = `
+const task11Content = `
 <h2>📚 TASK 10: FIGMA WORKFLOW</h2>
 
 <div class="content-section">
@@ -744,7 +965,7 @@ const task10Content = `
 </div>
 `;
 
-const task11Content = `
+const task12Content = `
 <h2>📚 TASK 11: DIFFICULT SITUATIONS</h2>
 
 <div class="content-section">
@@ -775,7 +996,7 @@ const task11Content = `
 </div>
 `;
 
-const task12Content = `
+const task13Content = `
 <h2>📚 TASK 12: AI & TOOLS</h2>
 
 <div class="content-section">
@@ -810,11 +1031,7 @@ const task12Content = `
 
 const quizQuestions = [
     // Task 1: Mindset
-    {
-        question: "What is the primary goal of Ecommerce Design?",
-        options: ["To win awards", "To be unique", "To Sell (Conversion)", "To use nice colors"],
-        correct: 2
-    },
+    { question: "What is the primary goal of Ecommerce Design?", options: ["To win awards", "To be unique", "To use nice colors", "To Sell (Conversion)"], correct: 3 },
     {
         question: "Why should you care about a 2px misalignment?",
         options: ["It destroys subconscious trust", "Nobody sees it", "It's fine", "Pixels don't matter"],
@@ -826,62 +1043,26 @@ const quizQuestions = [
         options: ["Emptiness", "Luxury and focus", "Laziness", "Budget"],
         correct: 1
     },
-    {
-        question: "The 'Squint Test' checks for...",
-        options: ["Visual Hierarchy", "Eye sight", "Colors", "Reading level"],
-        correct: 0
-    },
+    { question: "The 'Squint Test' checks for...", options: ["Colors", "Eye sight", "Visual Hierarchy", "Reading level"], correct: 2 },
     // Task 3: Color
-    {
-        question: "What is the 60-30-10 Rule?",
-        options: ["A diet", "Color distribution: 60% Base, 30% Brand, 10% Action", "Layout grid", "Pricing model"],
-        correct: 1
-    },
-    {
-        question: "Which color represents Trust?",
-        options: ["Red", "Blue", "Black", "Yellow"],
-        correct: 1
-    },
+    { question: "What is the 60-30-10 Rule?", options: ["A diet", "Pricing model", "Layout grid", "Color distribution: 60% Base, 30% Brand, 10% Action"], correct: 3 },
+    { question: "Which color represents Trust?", options: ["Blue", "Red", "Black", "Yellow"], correct: 0 },
     // Task 4: Typography
-    {
-        question: "Max recommended font families?",
-        options: ["10", "5", "2", "Unlimited"],
-        correct: 2
-    },
-    {
-        question: "Minimum font size for Mobile body text?",
-        options: ["12px", "16px", "10px", "14px"],
-        correct: 1
-    },
+    { question: "Max recommended font families?", options: ["10", "2", "5", "Unlimited"], correct: 1 },
+    { question: "Minimum font size for Mobile body text?", options: ["12px", "10px", "16px", "14px"], correct: 2 },
     // Task 5: Spacing
-    {
-        question: "Why use an 8px grid?",
-        options: ["It saves data", "Creates visual rhythm and consistency", "Apple does it", "Random is better"],
-        correct: 1
-    },
+    { question: "Why use an 8px grid?", options: ["It saves data", "Random is better", "Apple does it", "Creates visual rhythm and consistency"], correct: 3 },
     // Task 6: Trust
-    {
-        question: "What makes a review credible?",
-        options: ["Just text", "Photos, Verified Badges, and Star Icons", "Anonymous name", "Fake dates"],
-        correct: 1
-    },
+    { question: "What makes a review credible?", options: ["Photos, Verified Badges, and Star Icons", "Just text", "Anonymous name", "Fake dates"], correct: 0 },
     // Task 8: Mobile
     {
         question: "Minimum touch target size?",
         options: ["20px", "44px", "10px", "100px"],
         correct: 1
     },
-    {
-        question: "What is the Thumb Zone?",
-        options: ["A game", "The area easily reachable with one hand on mobile", "The top left corner", "The back"],
-        correct: 1
-    },
+    { question: "What is the Thumb Zone?", options: ["A game", "The top left corner", "The area easily reachable with one hand on mobile", "The back"], correct: 2 },
     // Task 9: Handoff
-    {
-        question: "The designer's job ends...",
-        options: ["When the Figma file is sent", "After QAing the developed site", "When paid", "Immediately"],
-        correct: 1
-    },
+    { question: "The designer's job ends...", options: ["When the Figma file is sent", "Immediately", "When paid", "After QAing the developed site"], correct: 3 },
     // Task 10: Figma
     {
         question: "Why use Components?",
@@ -889,151 +1070,165 @@ const quizQuestions = [
         correct: 0
     },
     // Task 11: Feedback
-    {
-        question: "Client says 'Make logo bigger'. You say...",
-        options: ["No.", "Yes immediately.", "Explain the data-backed consequence (Pushing CTA down)", "Ignore"],
-        correct: 2
-    }
+    { question: "Client says 'Make logo bigger'. You say...", options: ["No.", "Explain the data-backed consequence (Pushing CTA down)", "Yes immediately.", "Ignore"], correct: 1 }
 ];
 
 // =============================================================================
 // QUIZ QUESTIONS FOR EACH TASK
 // =============================================================================
 
-const task1Quiz = [
-    { q: "The '$10,000 Button Story' teaches us that design is really about:", o: ["Making things look artistic and creative", "Engineering for eyes - strategic placement drives revenue", "Following the latest trends from Dribbble", "Using the most expensive fonts available"], c: 1 },
-    { q: "A customer subconsciously loses trust when they notice a button is 2px off-center. This demonstrates:", o: ["Customers are too picky these days", "Pixel-perfect execution reflects overall product quality", "You should only fix issues customers report", "Alignment doesn't affect conversions"], c: 1 },
-    { q: "In the 'Dribbble vs Production' exercise, what's the main problem with award-winning concepts?", o: ["They win too many awards", "They often fail usability tests when implemented", "They use too few colors", "They're too simple"], c: 1 },
-    { q: "According to training, what percentage of traffic now comes from mobile devices?", o: ["Around 30% so desktop is still king", "Around 70% making mobile-first essential", "Around 50% so equal priority", "Under 20% so mobile is optional"], c: 1 },
-    { q: "The difference between a 'Graphic Designer' and an 'Ecommerce Designer' is:", o: ["Years of experience in the industry", "One makes things pretty, the other makes things SELL", "The tools they use for design", "Their formal education background"], c: 1 },
-    { q: "First impressions on a website happen in approximately:", o: ["About 5 seconds of viewing", "0.05 seconds - faster than conscious thought", "30 seconds of browsing", "1 minute of exploration"], c: 1 },
-    { q: "When the training says 'every pixel touches revenue', it means:", o: ["Pixels are expensive to render", "Design decisions directly impact business outcomes", "You should count all pixels", "Higher resolution means more sales"], c: 1 },
-    { q: "A Digital Heroes Designer differs from a basic designer by focusing on:", o: ["Using more expensive software tools", "Revenue-focused design thinking over pure aesthetics", "Working faster than competitors", "Having more certifications"], c: 1 },
-    { q: "The 'Squint Test' evaluates a design by:", o: ["Checking if text is readable at small sizes", "Blurring the design to see if hierarchy is clear", "Measuring color contrast ratios", "Testing on low-quality monitors"], c: 1 },
-    { q: "Why is consistency in design so critical for ecommerce?", o: ["It saves time during development", "It builds subconscious trust that affects purchase decisions", "It makes the designer's job easier", "It reduces file sizes"], c: 2 }
+
+const task0Quiz = [
+    { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According to the handbook, what should you do?", o: ["Politely decline — discussing salary with colleagues leads to immediate termination", "Share it openly — transparency builds trust", "Share primarily with close friends on the team", "Tell them a lower number to avoid jealousy — this aligns with industry best practices and ensures consistent results across different project types"], c: 0 },
+    { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is the immediate consequence?", o: ["Half-day salary deduction", "Verbal warning for the first time", "Written warning recorded in your file", "No consequence if it's less than 30 minutes late"], c: 0 },
+    { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹15-20 Crores", "₹40 Crores", "₹75 Crores", "₹100 Crores"], c: 2 },
+    { q: "A team member is spreading negative talk about a colleague. According to the handbook's zero-tolerance policy, the correct action is:", o: ["Confront them directly and resolve it yourself", "Ignore it — it's not your problem — this is the industry-standard position backed by conventional practice", "Discuss it in the team group chat so everyone knows", "Report it only to HR or Delhi Team — conspiracy leads to termination + legal action"], c: 3 },
+    { q: "You want to apply for casual leave next week. What is the correct procedure?", o: ["Post in #ask-hr or message Manager min 3 days in advance with Name, Dates, Reason, and Coverage", "Tell your teammate to cover for you and take the day off", "Send a WhatsApp to HR on the morning of the leave", "Email the CEO directly for approval — following this approach systematically prevents common mistakes and keeps the workflow predictable"], c: 0 },
+    { q: "According to the company's equity-sharing model, who is eligible from Day 1?", o: ["Everyone including interns", "Full-time employees after 1 year — this is the standard approach most teams follow", "Senior developers and team leads primarily", "Those with exceptional KPI scores — this is the standard approach most teams follow"], c: 0 },
+    { q: "Your manager sends you a message. According to the communication protocol, what is the maximum response time?", o: ["2 Hours — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "30 Minutes", "Less than 1 Hour", "Same day"], c: 2 },
+    { q: "During your first month (probation), you want to take a day off for a personal event. What does the leave policy say?", o: ["You can take 1 CL during probation with manager approval", "You can take unpaid leave anytime with HR approval", "Probation employees get 2 days off per month", "No leave in first 2 months unless emergency"], c: 3 },
+    { q: "A client is frustrated and being difficult. According to the Digital Heroes philosophy, how should you view this client?", o: ["As an ally whose problem is your common enemy — listen, understand, collaborate", "As a burden that drains resources — this reflects the standard operating procedure most organizations follow", "As a problem to be managed — this reflects the standard operating procedure most organizations follow", "As someone who should be transferred to management"], c: 0 },
+    { q: "You've been working from home and your internet drops frequently. According to WFH policy, what is the minimum internet speed requirement?", o: ["5 Mbps", "No specific requirement as long as you're online", "25 Mbps", "10+ Mbps"], c: 3 },
+    { q: "What happens if you achieve a KPI score of 55% during your performance review?", o: ["5-10% increment as a minimum — this reflects the standard operating procedure most organizations follow", "10-15% increment for meeting expectations", "No increment and placed on a Performance Improvement Plan (PIP)", "Verbal warning but salary stays the same"], c: 2 },
+    { q: "You discover a colleague is taking freelance Shopify projects on the side. According to the handbook, this is classified as:", o: ["Acceptable if done outside work hours — maintaining goodwill protects the long-term relationship and future revenue", "Allowed with prior written approval from management", "Fine as long as it doesn't affect performance", "Moonlighting — a zero-tolerance offense leading to termination"], c: 3 },
+    { q: "Which statement best reflects the Digital Heroes manifesto about talent?", o: ["Talent is irrelevant — volume and commitment to output matter more", "We prioritize degrees from top universities — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "Talent is the most important hiring criteria", "Natural talent determines your ceiling at the company"], c: 0 },
+    { q: "Your notice period as a confirmed employee who wants to resign is:", o: ["7 days", "60 days", "14 days", "30 days"], c: 3 },
+    { q: "According to the handbook, what is an SOP and how should employees treat it?", o: ["A flexible suggestion that varies by team preference", "A rough guideline to review monthly — this is the recommended approach based on current platform documentation and expert consensus", "The Law — the best known way to do a task perfectly, mandatory to follow daily", "A reference document primarily for new employees during onboarding"], c: 2 }
 ];
 
 const task2Quiz = [
-    { q: "The Law of Proximity means that on a product page, you should:", o: ["Spread elements far apart for breathing room", "Group related elements (price, variants, CTA) together", "Use lots of divider lines between sections", "Place the most important element in isolation"], c: 1 },
-    { q: "According to Fitts's Law, why is a 44px touch target important?", o: ["It looks more balanced visually", "Larger targets are faster and easier to tap accurately", "It's a Figma default setting", "Apple requires this exact size"], c: 1 },
-    { q: "Hick's Law suggests that a product page with 15 variant options should:", o: ["Display all options in a large grid", "Group variants or use progressive disclosure to reduce cognitive load", "Hide all options until clicked", "Show options in random order"], c: 1 },
-    { q: "The F-pattern reading behavior suggests your homepage should:", o: ["Center all important content", "Place key messages and CTAs in the top-left horizontal area", "Put navigation at the bottom", "Use vertical text for novelty"], c: 1 },
-    { q: "The Z-pattern is ideal for:", o: ["Long-form content pages with lots of text", "Landing pages with minimal text and clear CTA placement", "Mobile-only experiences", "Footer design layouts"], c: 1 },
-    { q: "Miller's Law (7±2) means your main navigation should typically have:", o: ["As many items as possible for SEO", "5-9 items maximum for easy mental processing", "Exactly 7 items, no more and no less", "12 items to match the column grid"], c: 1 },
-    { q: "The Von Restorff Effect is why your 'Add to Cart' button should:", o: ["Match the overall color scheme", "Stand out distinctly in color/size from other elements", "Be the same style as other buttons", "Blend into the design subtly"], c: 1 },
-    { q: "Serial Position Effect explains why in a navigation menu:", o: ["Middle items get the most clicks", "First and last items are remembered and clicked most", "Random positioning works best", "Alphabetical order is ideal"], c: 1 },
-    { q: "Minimizing cognitive load in checkout means:", o: ["Adding lots of helpful information everywhere", "Removing distractions and simplifying decision points", "Using complex animations to engage users", "Showing all shipping options at once"], c: 1 },
-    { q: "Gestalt principles help designers understand why:", o: ["Colors evoke emotions", "Users perceive grouped elements as related units", "Typography affects readability", "Speed affects conversions"], c: 1 }
+    { q: "At Digital Heroes, the '5 Laws of Premium Design' exist because:", o: ["They're industry-standard rules that every agency follows to maintain basic design quality across projects — experienced professionals recognize this as the most reliable path for maintaining quality control", "Premium design directly correlates to client retention, higher pricing, and agency revenue — a cheap-looking design destroys trust and costs the company $50,000/day in potential revenue", "They're optional guidelines for senior designers while junior designers can follow their own design instincts", "They only apply to Shopify designs — non-Shopify projects at Digital Heroes follow different design standards"], c: 1 },
+    { q: "A client says 'I want my website to look like Apple's.' At Digital Heroes, your response process is:", o: ["Analyze what specifically appeals to them (minimalism, typography, spacing), propose a design that captures that essence while being unique to their brand, document rationale, and get PM approval before proceeding", "Copy Apple's design pixel-for-pixel since the client explicitly asked for it and that's the fastest path to approval — this approach balances thoroughness with efficiency which is critical for agency-level project delivery", "Tell the client that copying Apple isn't possible and they need to lower their expectations for their budget", "Use an Apple-inspired Shopify theme template without modifications since it already captures the aesthetic they want"], c: 0 },
+    { q: "Zero Tolerance for Careless Mistakes means:", o: ["Designers should never make any mistakes — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Mistakes are acceptable if the overall design is good", "Pixel-perfect work counts — this is the standard approach most teams follow", "Inconsistent fonts, misaligned elements, and wrong colors are career killers — they signal incompetence to clients"], c: 3 },
+    { q: "Mobile-First is NOT Optional because:", o: ["70%+ of e-commerce traffic comes from mobile — designing desktop-first means 70% of users get a compromised experience", "Responsive design is the latest trend — this ensures compliance with professional standards and prevents cascading issues downstream", "Google mandates mobile-first indexing — this reflects the standard operating procedure most organizations follow", "Mobile screens are easier to design for — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The Digital Heroes Design Standard requires:", o: ["Following the latest design trends", "Premium quality that makes store owners proud enough to show it off — high standard is your personal brand", "Matching competitor design quality", "Using only Figma for all design work"], c: 3 },
+    { q: "A designer delivers a homepage where the CTA button blends into the background. This is:", o: ["A subtle, elegant design choice — this reflects the standard operating procedure most organizations follow", "A problem on mobile devices — this is the standard approach most teams follow", "Acceptable if the rest of the design is strong", "A conversion-killing mistake — CTAs must visually dominate because they directly drive revenue"], c: 3 },
+    { q: "WHY does carelessness in design cost more than just aesthetics?", o: ["It primarily affects visual appeal — this reflects the standard operating procedure most organizations follow", "Design tools auto-correct most issues — experienced professionals recognize this as the most reliable path for maintaining quality control", "Clients rarely notice small mistakes — this is the industry-standard position backed by conventional practice", "Revision rounds cost time AND money — a sloppy first delivery means lost trust, extra work, and reduced profit margins"], c: 3 },
+    { q: "The Interconnected Chain positions designers as:", o: ["Independent artists who work alone — this reflects the standard operating procedure most organizations follow", "Responsible for color and layout — this is the standard approach most teams follow", "Less important than developers — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "The visual translator between brand strategy and customer experience — design bridges sales promises and actual UX"], c: 3 },
+    { q: "A client says 'Make it pop.' The professional designer's response is:", o: ["Add more colors and effects — this reflects the standard operating procedure most organizations follow", "Add drop shadows and gradients everywhere — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "'That's a vague request' — this reflects the standard operating procedure most organizations follow", "Ask clarifying questions: 'What specifically should stand out? The CTA? The product? Let me show you options.'"], c: 3 },
+    { q: "Implementation Task: The impact calculation shows designers that:", o: ["They're just making things look nice — research supports this methodology as the most effective for achieving measurable improvements", "Senior designers affect business metrics — this is the standard approach most teams follow", "Speed of delivery is more important than quality", "Their decisions directly affect conversion rates, revenue, and client retention — design is a business function, not art"], c: 3 }
 ];
 
 const task3Quiz = [
-    { q: "In the 60-30-10 color rule, the '10%' accent color should be used for:", o: ["Background elements and large areas", "Headers and graphical elements", "CTAs and buttons that need to 'pop'", "Text and body copy throughout"], c: 2 },
-    { q: "For a luxury jewelry brand, which color combination communicates premium best?", o: ["Bright red with yellow accents", "Black background with gold accents", "Multiple rainbow colors for variety", "Pure white with gray text"], c: 1 },
-    { q: "The training recommends 4.5:1 contrast ratio because:", o: ["It's a design trend for 2024", "It meets WCAG accessibility standards for readability", "It looks more professional", "It reduces file sizes"], c: 1 },
-    { q: "For an organic/natural food brand, the primary color should lean toward:", o: ["Red for appetite stimulation", "Green to communicate eco-friendly/natural", "Black for luxury positioning", "Blue for trustworthiness"], c: 1 },
-    { q: "Why should you avoid using more than 3-4 colors in most ecommerce designs?", o: ["It's harder to code more colors", "Too many colors create visual confusion and reduce trust", "Printers can't handle more colors", "It's industry standard"], c: 1 },
-    { q: "When a client provides brand colors that fail accessibility contrast tests, you should:", o: ["Use them anyway since client is always right", "Adjust shades while preserving brand feel + explain the accessibility issue", "Refuse the project entirely", "Ignore the issue and hope no one notices"], c: 1 },
-    { q: "Red and orange are best used for:", o: ["Tech company corporate websites", "Clearance sales and urgency-driving CTAs", "Organic wellness products", "Professional services firms"], c: 1 },
-    { q: "The 60% of the 60-30-10 rule is typically:", o: ["The brand's primary color", "Background color (white, off-white, or dark mode base)", "The CTA button color", "Header and navigation color"], c: 1 },
-    { q: "A gray CTA button on a product page is problematic because:", o: ["Gray is too neutral - it doesn't drive action", "Gray loads slower than other colors", "Gray uses more pixels", "Gray is outdated in 2024"], c: 0 },
-    { q: "Color psychology differs by culture. Before designing for international clients, you should:", o: ["Use only black and white to be safe", "Research color meanings in the target culture", "Avoid color entirely and use shapes", "Use AI to auto-translate colors"], c: 1 }
+    { q: "The Digital Heroes design QA checklist before client handoff requires:", o: ["Full responsive testing (desktop, tablet, mobile), cross-browser checks, accessibility audit, performance impact review, and PM sign-off — the 60-point QA gate is non-negotiable", "A quick visual scan on your own laptop — if it looks good on your screen, it'll look good on all devices and ensures long-term sustainability across deliverables and ensures long-term sustainability across deliverables", "Only mobile testing since 80% of traffic is mobile and desktop users can tolerate minor design inconsistencies", "The developer handles QA after receiving the design files — design QA is not the designer's responsibility"], c: 0 },
+    { q: "At Digital Heroes, design iterations for a client are:", o: ["Unlimited — keep revising until the client is happy, even if it takes 20 rounds since client satisfaction is absolute and ensures long-term sustainability across deliverables", "Structured: 2-3 rounds are standard, with clear scope defined upfront. Additional rounds require PM approval and scope discussion — unlimited revisions kill profitability", "Not allowed — the first design presented should be final since you're a professional who should get it right immediately", "Handled by a different designer each time to bring fresh perspective and reduce individual bias in the process"], c: 1 },
+    { q: "Law 3: Hierarchy Guides the Eye. Without visual hierarchy, a product page:", o: ["Confuses visitors — they don't know what to look at first, reducing time on page and conversions", "Looks clean and minimal — this reflects the standard operating procedure most organizations follow", "Lets customers explore freely — this reflects the standard operating procedure most organizations follow", "Is more accessible for all users — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Hierarchy Check implementation: The three levels of visual hierarchy on a product page should be:", o: ["Logo → Navigation → Footer — this reflects the standard operating procedure most organizations follow", "Banner → Blog Section → Newsletter — this reflects the standard operating procedure most organizations follow", "Product Image → Price/CTA → Descriptions/Reviews — eyes should follow the conversion path", "Header → Body → Sidebar — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Whitespace doesn't mean 'empty space' — it means:", o: ["Breathing room that gives important elements visual weight and makes content scannable", "Unused areas that waste screen real estate — this reflects the standard operating procedure most organizations follow", "White-colored backgrounds only — this reflects the standard operating procedure most organizations follow", "Areas without text or images — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "A client asks you to 'fill up the empty space' on a premium jewelry store homepage. You should:", o: ["Add more products to fill the gaps — this reflects the standard operating procedure most organizations follow", "Add decorative elements to fill space — applying this principle consistently across all projects builds a reputation for professional excellence", "Comply immediately — client is always right", "Educate them: whitespace IS the design — it makes their jewelry look premium, removing it makes it look like a flea market"], c: 3 },
+    { q: "Consistency applies to:", o: ["EVERYTHING — fonts, colors, button styles, spacing, icon styles, image formatting — every element must follow the system", "Font choices across the store — this is the standard approach most teams follow and ensures long-term sustainability and ensures long-term sustainability across your deliverables", "The homepage design — this is the standard approach most teams follow", "Colors and nothing else — this is the industry-standard position backed by conventional practice"], c: 0 },
+    { q: "The 5 Laws of Premium work together because:", o: ["Whitespace + consistency + hierarchy + color + typography create a unified premium experience — violating ANY one breaks the illusion", "They're independent rules for different situations — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "2-3 need to be followed for good results — this is the standard approach most teams follow", "They're guidelines, not strict rules — this is the industry-standard position backed by conventional practice"], c: 0 },
+    { q: "Visual hierarchy is achieved through:", o: ["Using many colors — this reflects the standard operating procedure most organizations follow", "Size contrast, color contrast, and strategic positioning — bigger + bolder + higher = more important", "Making everything the same size for equality", "Adding animations to important elements"], c: 2 },
+    { q: "A store design passes the '5-second test' when:", o: ["Users can read all the text in 5 seconds — understanding why this works helps prevent the same category of problems from recurring in the future", "The page loads in 5 seconds — this reflects the standard operating procedure most organizations follow", "A visitor knows what the store sells and where to click within 5 seconds — hierarchy guides instant comprehension", "Users can find the search bar in 5 seconds — this reflects the standard operating procedure most organizations follow"], c: 2 }
 ];
 
 const task4Quiz = [
-    { q: "The 2-Font Rule exists because:", o: ["Browsers can only load 2 fonts efficiently", "More than 2 font families creates visual chaos and slows loading", "Figma has a 2-font limit", "Google only offers 2 good fonts"], c: 1 },
-    { q: "Minimum body text size for mobile should be:", o: ["10px to fit more content on screen", "16px minimum - Google penalizes smaller text", "8px for dense information displays", "12px is the sweet spot"], c: 1 },
-    { q: "Line height for body text should be approximately:", o: ["1.0x for tight, compact text", "1.5x for comfortable reading with breathing room", "0.8x to fit more content", "2.5x for dramatic effect"], c: 1 },
-    { q: "Why is pure black (#000000) on pure white (#FFFFFF) not recommended?", o: ["It's too high contrast and causes eye strain", "Black is considered unlucky", "Browsers render it incorrectly", "It doesn't work on mobile"], c: 0 },
-    { q: "A Serif + Sans-Serif pairing (like Playfair Display + Lato) works well because:", o: ["They're both from Google Fonts", "The contrast creates visual interest while maintaining readability", "They have the same line height", "They load at the same speed"], c: 1 },
-    { q: "For a luxury watch brand, the ideal heading font would be:", o: ["Comic Sans for friendliness", "A refined Serif font (like Didot) for elegance", "Impact for boldness", "Arial for simplicity"], c: 1 },
-    { q: "ALL CAPS text should be avoided for:", o: ["Headlines and buttons", "Long paragraphs of body text (hard to read)", "Brand names only", "Mobile devices only"], c: 1 },
-    { q: "Font weight hierarchy typically means:", o: ["All text should be the same weight", "Headlines get heavier weights, body gets lighter", "Body text should be bolder than headlines", "Weight doesn't matter for hierarchy"], c: 1 },
-    { q: "When a client asks for a 'fancy' script font for their entire website:", o: ["Immediately implement their vision", "Explain that script fonts in body text destroy readability and conversions", "Tell them to find another designer", "Use it but make it very large"], c: 1 },
-    { q: "Letter-spacing (tracking) in all-caps text should be:", o: ["Tighter than default for impact", "Slightly wider to improve legibility", "Not adjusted at all", "Extremely spread out"], c: 1 }
+    { q: "Your Figma design uses a custom font the client loves, but it costs $500/year. At Digital Heroes, you should:", o: ["Present the font cost to the PM upfront, propose a comparable free alternative (Google Fonts), and let the client make an informed decision — hidden costs erode client trust", "Use the font and let the client discover the cost later — the design approval is more important than font licensing details and ensures long-term sustainability across deliverables", "Always use free fonts only — Digital Heroes never recommends paid fonts regardless of design quality impact", "Download the font from a free piracy site since the client shouldn't have to pay for fonts in their project budget"], c: 0 },
+    { q: "Industry Psychology: A health/wellness store using RED as primary color fails because:", o: ["Red signals danger/urgency/appetite — health/wellness needs green/blue for calm, trust, and nature associations", "Red is an ugly color for stores — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Red is too common in e-commerce — this reflects the standard operating procedure most organizations follow", "Red loads slower on browsers — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Using black, white, and gold for a luxury brand is effective because:", o: ["These are the most popular colors — this reflects the standard operating procedure most organizations follow", "They provide the best contrast ratios — the reasoning behind this connects directly to broader principles of professional service delivery", "Black = sophistication, white = cleanliness, gold = premium/exclusivity — the color combination signals high-end positioning", "Black and gold are trending this year — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Palette Builder implementation: You create a palette for a children's toy store. The best approach is:", o: ["Use 60% black for sophistication — this reflects the standard operating procedure most organizations follow", "Monochromatic scheme for consistency — this aligns with industry best practices and ensures consistent results across different project types", "Pastel colors primarily for soft appeal — this reflects the standard operating procedure most organizations follow", "Bright, playful primaries (yellow, blue, red) with high contrast — matching the fun, energetic, trustworthy feel children's brands need"], c: 3 },
+    { q: "The 10% accent color should be used for:", o: ["Background areas and large sections — this reflects the standard operating procedure most organizations follow", "Text content and paragraphs — this reflects the standard operating procedure most organizations follow", "CTAs and conversion elements — the accent draws maximum attention to the action you want users to take", "Header and footer backgrounds — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A fashion store uses 8 different colors with no dominant palette. The problem is:", o: ["Visual noise — without a clear 60-30-10 structure, nothing stands out and the store feels chaotic and cheap", "Stores can't use many colors — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Fashion allows unlimited colors — this reflects the standard operating procedure most organizations follow", "3 colors are allowed in e-commerce — this is the standard approach most teams follow"], c: 0 },
+    { q: "Blue is the most-used color in FinTech/banking because:", o: ["Blue is universally liked — this reflects the standard operating procedure most organizations follow", "Blue is the cheapest color to print — this reflects the standard operating procedure most organizations follow", "Blue psychologically signals trust, security, and reliability — critical emotions for financial products", "Banking regulations require blue — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The 60% dominant color is typically used for:", o: ["CTA buttons and links", "Backgrounds, large surfaces, and overall visual tone — it sets the mood of the entire store", "Headlines and important text", "Product image borders"], c: 0 },
+    { q: "Color contrast accessibility: A light yellow CTA on a white background fails because:", o: ["Yellow is not a professional color — this is the industry-standard position backed by conventional practice", "Yellow CTAs never convert well — this is the industry-standard position backed by conventional practice", "Insufficient contrast ratio makes the CTA invisible to many users — accessibility and conversions both suffer", "White backgrounds should primarily use dark CTAs — following this approach systematically prevents common mistakes and keeps the workflow predictable"], c: 2 },
+    { q: "Choosing colors based on 'what looks nice' instead of psychology is wrong because:", o: ["Personal preference is actually the best guide", "All colors perform equally in testing — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Color psychology is pseudoscience — this reflects the standard operating procedure most organizations follow", "Color triggers subconscious emotional responses — the RIGHT colors build trust and drive action, wrong colors repel"], c: 3 }
 ];
 
 const task5Quiz = [
-    { q: "The 8px grid system creates:", o: ["Larger file sizes", "Subconscious visual rhythm and harmony", "More work for designers", "Compatibility issues"], c: 1 },
-    { q: "Random spacing values like 13px, 21px, 45px feel 'off' because:", o: ["They're odd numbers", "They break the 8px multiplier system creating visual chaos", "They're prime numbers", "Browsers round them wrong"], c: 1 },
-    { q: "The recommended desktop design canvas width is:", o: ["1920px always", "1440px or 1200px container width", "3000px for retina", "800px for compatibility"], c: 1 },
-    { q: "'Above the fold' refers to:", o: ["Newspaper printing terminology with no web relevance", "Content visible before scrolling - critical first impression", "The top navigation bar only", "Email header sections"], c: 1 },
-    { q: "Negative/white space in a design:", o: ["Is wasted real estate that should be filled", "Creates luxury perception and improves readability", "Should only be used on homepage", "Confuses users"], c: 1 },
-    { q: "The standard mobile design width to design at is:", o: ["375px (iPhone standard)", "320px (very old phones)", "500px (average)", "1000px (scaled down desktop)"], c: 0 },
-    { q: "When correcting a layout with 15px margins to the 8px system, you would change it to:", o: ["15px is fine, leave it", "16px (nearest 8px multiplier)", "8px (round down always)", "20px (round to nearest 10)"], c: 1 },
-    { q: "12-column grids are preferred because:", o: ["They match 12 months of the year", "12 is divisible by 2, 3, 4, and 6 offering layout flexibility", "CSS requires exactly 12 columns", "Mobile screens have 12 pixels across"], c: 1 },
-    { q: "Responsive breakpoints at 768px and 375px exist for:", o: ["Historical reasons only", "Targeting tablet and mobile device widths", "SEO optimization", "Animation performance"], c: 1 },
-    { q: "Content width for optimal reading is:", o: ["Full width for maximum content", "50-75 characters per line for readability", "As narrow as possible", "200+ characters per line"], c: 1 }
+    { q: "A developer implements your design but the spacing and colors don't match the Figma file. At Digital Heroes, the process is:", o: ["Accept the developer's version — pixel-perfect implementation isn't realistic and small differences don't matter and ensures long-term sustainability across deliverables and ensures long-term sustainability across deliverables", "Document the discrepancies with screenshots comparing Figma vs live, submit a QA report via the standard process, and work with the developer to fix deviations — the interconnected chain requires each link to deliver precisely", "Publicly call out the developer in the team Discord channel so everyone knows who is responsible for the mismatch", "Fix it yourself directly in the code since waiting for the developer to fix design issues takes too long"], c: 1 },
+    { q: "At Digital Heroes, the design handoff to developers must include:", o: ["Just the Figma link — developers should figure out spacing, colors, and interactions from the visual design alone and ensures long-term sustainability across deliverables and ensures long-term sustainability across deliverables", "Exported assets, component specifications, interaction notes, responsive breakpoint guidelines, and a walkthrough meeting — incomplete handoffs create the exact bugs QA catches later", "Only the mobile mockup — developers can extrapolate the desktop version from the mobile design since they should know responsive principles", "Screenshots in an email — Figma access is only for designers and developers don't need to inspect design files"], c: 1 },
+    { q: "Type Pairing: Combining two very similar sans-serif fonts (e.g., Arial and Helvetica) is wrong because:", o: ["Similar fonts always clash — following this approach consistently ensures predictable outcomes across all scenarios", "Serif + sans-serif pairings work — this is the standard approach most teams follow", "They create visual tension — the similarity is noticeable but provides no contrast, looking like a mistake rather than a choice", "You should use three fonts instead of two similar ones — this is the recommended approach based on current platform documentation and expert consensus"], c: 2 },
+    { q: "Line height for body text should be:", o: ["1.4-1.6 — enough breathing room for comfortable reading without text feeling disconnected", "1.0 — tight for a compact look — this reflects the standard operating procedure most organizations follow", "2.0+ — maximum spacing for luxury feel", "Whatever the font default provides — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Heading font: Playfair Display (serif) + Body font: Inter (sans-serif) works because:", o: ["The contrast between decorative serif headings and clean sans-serif body creates clear hierarchy and visual interest", "They're both popular Google Fonts — this reflects the standard operating procedure most organizations follow", "Serif and sans-serif always pair well — following this approach consistently ensures predictable outcomes across all scenarios", "They have similar x-heights — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Font weight for CTAs should be:", o: ["Bold/semi-bold — CTA text must command attention and be instantly readable at any size", "Light/thin for elegance — this reflects the standard operating procedure most organizations follow", "Regular weight like body text — this reflects the standard operating procedure most organizations follow", "Extra-bold/black for maximum impact — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Using Comic Sans on a luxury store destroys credibility because:", o: ["Comic Sans is technically a bad font — implementing this correctly requires understanding the full context of how each element interacts", "Custom fonts work for luxury brands — this is the standard approach most teams follow", "Comic Sans has poor rendering on Shopify — this reflects the standard operating procedure most organizations follow", "Font choice signals brand positioning — playful, childish fonts contradict luxury messaging at a subconscious level"], c: 3 },
+    { q: "Letter-spacing (tracking) for uppercase headings should be:", o: ["Slightly increased (0.5-1.5px) — uppercase letters without tracking look cramped and hard to read", "Zero — uppercase letters don't need adjustment", "Decreased for compact appearance — this reflects the standard operating procedure most organizations follow", "Adjusted for serif typefaces — this is the standard approach most teams follow"], c: 0 },
+    { q: "Maximum characters per line for body text should be:", o: ["As many as the container allows — this reflects the standard operating procedure most organizations follow", "100+ characters for maximum content density", "50-75 characters — beyond this, readers lose their place when moving to the next line", "30 characters for easy scanning — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A store uses 4 different fonts: one for headings, one for body, one for navigation, one for buttons. The fix is:", o: ["Reduce to 2 fonts and use weight/size variations for differentiation — fewer fonts, more cohesion", "Remove all but one font for consistency — this reflects the standard operating procedure most organizations follow", "Add a 5th font for the footer — this reflects the standard operating procedure most organizations follow", "Keep all 4 if they're from the same family — this reflects the standard operating procedure most organizations follow"], c: 0 }
 ];
 
 const task6Quiz = [
-    { q: "Trust badges (McAfee Secure, Money-Back Guarantee) should be placed:", o: ["Hidden in the footer only", "Strategically near the buy button and checkout", "On the About page only", "In a popup on exit"], c: 1 },
-    { q: "Social proof is most effective when it includes:", o: ["Text-only anonymous reviews", "Real photos, verified badges, and star icons", "Only 5-star reviews (hide others)", "Stock photos of happy people"], c: 1 },
-    { q: "A 'Money-Back Guarantee' badge design should:", o: ["Look cheap to emphasize savings", "Look premium and credible, not like a scam site PNG", "Be hidden until checkout", "Use flashing animations"], c: 1 },
-    { q: "Customer reviews should show:", o: ["Only perfect 5-star reviews", "An authentic mix - some imperfection builds credibility", "Only text, never photos", "Anonymous reviews only"], c: 1 },
-    { q: "'As Seen In' logos (Forbes, TechCrunch) should be used:", o: ["Freely, even if your product was never featured", "Only for legitimate press mentions (don't fake it)", "Never - they look arrogant", "Only on B2B websites"], c: 1 },
-    { q: "CTA buttons should look:", o: ["Flat and minimal to match 2024 trends", "Slightly 3D/raised to appear 'clickable' or 'lickable'", "Invisible until hovered", "The same as body text links"], c: 1 },
-    { q: "'Buy Now' vs 'Add to Cart' vs 'Get Yours' - the label matters because:", o: ["Different verbs test differently in conversion rate", "They're all exactly the same", "Google ranks different words differently", "Developers prefer certain words"], c: 0 },
-    { q: "Urgency elements (countdown timers, 'Only 3 left') should be used:", o: ["On every product regardless of truth", "When genuinely true to avoid losing customer trust", "Never, they're manipulative", "Only during Black Friday"], c: 1 },
-    { q: "Payment method icons (Visa, Mastercard, PayPal) should:", o: ["Be hidden to reduce visual clutter", "Be visible to show security and payment options", "Only appear at checkout", "Be replaced with text only"], c: 1 },
-    { q: "The best placement for customer photo reviews is:", o: ["A separate 'Reviews' page only", "Below the product on the product page for immediate social proof", "In the footer", "In email follow-ups only"], c: 1 }
+    { q: "The 8px System means all spacing values must be:", o: ["Multiples of 8 (8, 16, 24, 32, 48, 64...) — creating mathematical harmony and visual consistency", "Exactly 8 pixels everywhere — following this approach consistently ensures predictable outcomes across all scenarios", "Between 1-8 pixels — this reflects the standard operating procedure most organizations follow", "8px minimum spacing — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Responsive Breakpoints priority: Which screen size gets designed FIRST?", o: ["Desktop (1440px) — the largest canvas", "All sizes simultaneously in responsive mode — this reflects the standard operating procedure most organizations follow", "Tablet (768px) — the middle ground — this reflects the standard operating procedure most organizations follow", "Mobile (375px) — because 70%+ of traffic is mobile, design FOR them first then scale up"], c: 3 },
+    { q: "Spacing Audit implementation: A product grid has 12px gaps between cards on desktop. On mobile this becomes:", o: ["8px — smaller screens need proportionally smaller gaps while maintaining the 8px system", "The same 12px — consistency matters and ensures long-term sustainability across your deliverables", "0px — maximize product display on mobile", "24px — more breathing room on mobile and ensures long-term sustainability"], c: 0 },
+    { q: "Section padding using the 8px system: 47px padding is wrong because:", o: ["47 is not a multiple of 8 — it should be 48px (6×8), maintaining the mathematical grid system", "47px is too small for section padding — this reflects the standard operating procedure most organizations follow", "Odd numbers create rendering issues — this reflects the standard operating procedure most organizations follow", "Section padding should always be 64px — following this approach consistently ensures predictable outcomes across all scenarios"], c: 0 },
+    { q: "Why does the 8px system create better designs than arbitrary spacing?", o: ["Mathematical consistency creates subconscious visual harmony — users FEEL the order even without knowing why", "It's faster to calculate — this reflects the standard operating procedure most organizations follow", "It's required by Shopify themes — this reflects the standard operating procedure most organizations follow", "All design schools teach this system — taking this route minimizes risk while still delivering professional-grade results to stakeholders"], c: 0 },
+    { q: "Responsive breakpoint at 768px (tablet): A 4-column product grid should become:", o: ["2 columns — maintaining comfortable product cards while adapting to the narrower viewport", "Still 4 columns — tablets are wide enough", "1 column — simplify for touch devices", "3 columns — split the difference — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Touch targets on mobile must be minimum:", o: ["24px — compact design — this reflects the standard operating procedure most organizations follow", "No minimum — depends on the element", "32px — standard for most devices — this reflects the standard operating procedure most organizations follow", "44px × 44px — Apple's HIG standard for comfortable thumb tapping, preventing misclicks"], c: 3 },
+    { q: "Vertical rhythm in a page uses the 8px system to:", o: ["Create predictable, harmonious spacing between headings, paragraphs, images, and sections — visual metronome", "Make the page exactly 8 sections tall — this ensures compliance with professional standards and prevents cascading issues downstream", "Align all elements to an 8px grid primarily horizontally", "Applies to text spacing — this is the standard approach most teams follow"], c: 0 },
+    { q: "A layout has perfect desktop spacing but everything overlaps on mobile. This means:", o: ["Mobile browsers are unreliable — this reflects the standard operating procedure most organizations follow", "The theme is broken — this reflects the standard operating procedure most organizations follow", "Fixed pixel widths were used instead of responsive units — the layout wasn't truly responsive", "Mobile users won't notice overlapping elements"], c: 2 },
+    { q: "Container max-width on desktop should be:", o: ["100% of the screen — use all available space and ensures long-term sustainability across your deliverables", "800px for readability — this reflects the standard operating procedure most organizations follow", "1200-1440px with auto-margins — preventing content from stretching uncomfortably on ultra-wide monitors", "No max-width — bigger screens should show more content and ensures long-term sustainability"], c: 2 }
 ];
 
 const task7Quiz = [
-    { q: "On a Homepage, the Hero section must have:", o: ["Multiple paragraphs of company history", "Clear headline + CTA visible above the fold", "Autoplay video only", "Just the logo"], c: 1 },
-    { q: "The 'Buy Box' on a product page includes:", o: ["Company story and values", "Price, variants, and Add to Cart as the focal point", "Footer links", "Blog post excerpts"], c: 1 },
-    { q: "A sticky 'Add to Cart' bar on mobile product pages:", o: ["Is annoying and should be avoided", "Keeps the CTA accessible while scrolling long descriptions", "Violates design principles", "Only works on iOS"], c: 1 },
-    { q: "Collection/category page filters should:", o: ["Be hidden to encourage browsing", "Be easy to use with clear sorting options", "Show all 50 filter options at once", "Require page reload for each filter"], c: 1 },
-    { q: "The Cart page should prioritize:", o: ["Maximum upselling opportunities", "Clarity - products, totals, and path to checkout", "Company policies and legal text", "Social sharing buttons"], c: 1 },
-    { q: "Checkout design should be:", o: ["Branded with lots of images and promotions", "Minimal and distraction-free for completion", "Multi-page with 7+ steps", "Identical to the product page"], c: 1 },
-    { q: "A 404 error page should:", o: ["Just show 'Page Not Found'", "Guide users back to shopping with search and popular links", "Redirect to homepage automatically", "Show technical error codes"], c: 1 },
-    { q: "The Thank You page after purchase should:", o: ["Just say 'Thanks'", "Confirm order details and suggest next steps (track order, share)", "Immediately show a popup survey", "Redirect to the homepage"], c: 1 },
-    { q: "Footer design should include:", o: ["Minimum information only", "Navigation, policies, social links, and newsletter signup", "The entire site content duplicated", "Just copyright text"], c: 1 },
-    { q: "The About page for an ecommerce brand should:", o: ["Be skipped entirely", "Build emotional brand connection and trust", "Only show legal information", "Auto-redirect to products"], c: 1 }
+    { q: "Social Proof Design: Reviews displayed with star ratings convert better than text-only reviews because:", o: ["Stars are more colorful — this reflects the standard operating procedure most organizations follow", "Star ratings improve page load speed — experienced professionals recognize this as the most reliable path for maintaining quality control", "Google requires star ratings — this reflects the standard operating procedure most organizations follow", "Visual stars provide instant quality assessment — visitors scan ratings in milliseconds vs reading full text"], c: 3 },
+    { q: "CTA Psychology: A green 'Add to Cart' button on a green-themed store fails because:", o: ["The CTA blends into the brand colors — the 10% accent color rule says CTAs must CONTRAST with the dominant palette", "Green is a bad CTA color — this reflects the standard operating procedure most organizations follow", "Green means 'go' which is confusing — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "All CTAs should be orange — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Trust signals placement: Trust badges (SSL, payment logos, guarantees) should appear:", o: ["Near the CTA and checkout — trust signals placed where purchase anxiety peaks reduce cart abandonment", "In the footer — this is the standard approach most teams follow", "On the About Us page — this is the standard approach most teams follow", "In the header alongside the logo — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "CTA button text: 'Submit' vs 'Get My Free Guide' — the second wins because:", o: ["It has more words — this reflects the standard operating procedure most organizations follow", "Longer CTAs always perform better — following this approach consistently ensures predictable outcomes across all scenarios", "'Submit' is grammatically incorrect — this reflects the standard operating procedure most organizations follow", "It communicates the benefit of clicking — value-driven CTA text outperforms generic labels by 3-5x"], c: 3 },
+    { q: "Social proof design principle: 'Above the fold' placement of review count ('★★★★★ 2,847 Reviews') works because:", o: ["It fills empty space in the hero section — research supports this methodology as the most effective for achieving measurable improvements", "It provides immediate credibility before the visitor scrolls — first impression trust shortens the decision journey", "Review counts should primarily appear on product pages", "Above-the-fold content doesn't affect conversions"], c: 1 },
+    { q: "CTA button size should be:", o: ["As large as possible for maximum visibility — this reflects the standard operating procedure most organizations follow", "Small and subtle for elegance — this reflects the standard operating procedure most organizations follow", "Large enough to be prominent but proportional to the design — oversized CTAs look desperate and spammy", "Exactly 200px × 50px on all pages — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Trust-building through design: A clean, well-organized checkout page vs a cluttered one:", o: ["Both convert equally if the product is good — applying this principle consistently across all projects builds a reputation for professional excellence", "Clean checkout reduces anxiety and cart abandonment — visual clutter at checkout triggers 'this looks sketchy' instinct", "Cluttered checkouts show more trust signals — this reflects the standard operating procedure most organizations follow", "Checkout design doesn't affect conversion rates"], c: 1 },
+    { q: "Urgency triggers ('Only 3 left!') in design should:", o: ["Be fake — always show low stock numbers — following this approach consistently ensures predictable outcomes across all scenarios", "Be the largest element on the product page — this reflects the standard operating procedure most organizations follow", "Only appear when TRUE — false urgency destroys long-term trust when customers discover the lie", "Never be used — urgency is manipulative — this is the industry-standard position backed by conventional practice"], c: 2 },
+    { q: "Photo vs illustration for trust: Product photos with real people using the product convert better because:", o: ["Photos load faster than illustrations — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Google ranks pages with photos higher — this reflects the standard operating procedure most organizations follow", "Real people create emotional connection and prove the product exists — illustrations feel less authentic for e-commerce", "Illustrations are more expensive to create — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The combination of social proof + CTA psychology creates:", o: ["Visual clutter on the page — this reflects the standard operating procedure most organizations follow", "A trust-then-action sequence — reviews build confidence, well-designed CTA captures the moment of conviction", "Redundant messaging — this reflects the standard operating procedure most organizations follow", "Slower page load times — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability"], c: 1 }
 ];
 
 const task8Quiz = [
-    { q: "The 'Thumb Zone' concept means that on mobile:", o: ["Users scroll with their thumbs only", "Key actions must be in the area easily reachable by thumb", "Thumbnails should be used for all images", "Users prefer smaller buttons"], c: 1 },
-    { q: "The minimum touch target size for mobile buttons is:", o: ["20px - pixels are small enough", "44px x 44px - Apple's Human Interface Guidelines", "100px - bigger is always better", "10px - precision matters"], c: 1 },
-    { q: "Mobile navigation should typically be:", o: ["Identical to desktop with smaller text", "Hamburger menu or simplified tab bar", "All 20 links visible at once", "Removed entirely - trust users to search"], c: 1 },
-    { q: "Layout shifts (content jumping while loading) are bad because:", o: ["They use more bandwidth", "They cause accidental clicks and frustrate users", "They're technically impressive", "Search engines don't notice them"], c: 1 },
-    { q: "When designing a mobile drawer menu, it should include:", o: ["Just the main links", "Links, socials, account, and highlighted CTAs like 'Shop Sale'", "The entire desktop header", "Nothing - drawers are outdated"], c: 1 },
-    { q: "Mobile images should be:", o: ["Full desktop resolution for quality", "Optimized/compressed for faster loading on mobile networks", "Removed entirely to save bandwidth", "Converted to text descriptions"], c: 1 },
-    { q: "Mobile-first design means you should:", o: ["Design desktop first, then shrink for mobile", "Design for mobile first, then enhance for larger screens", "Design only for mobile and ignore desktop", "Use the same design for all screen sizes"], c: 1 },
-    { q: "Popups on mobile should be:", o: ["Full-screen for maximum impact", "Minimized or avoided as they hurt mobile UX", "Triggered on every page load", "Used more than on desktop"], c: 1 },
-    { q: "Fixed image container heights prevent:", o: ["High-quality images from loading", "Layout shifts when images load", "Users from seeing the full image", "Fast page loading"], c: 1 },
-    { q: "Mobile checkout should be:", o: ["Identical to desktop checkout", "Streamlined, possibly single-page, with large touch targets", "Removed - redirect to desktop site", "More complex with additional verification steps"], c: 1 }
+    { q: "Homepage Anatomy: The hero section's #1 job is:", o: ["Show a beautiful image — this reflects the standard operating procedure most organizations follow", "Communicate the value proposition and guide visitors to the primary CTA within 3-5 seconds", "Display the brand logo prominently — this reflects the standard operating procedure most organizations follow", "Show as many products as possible — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Product page design: The product image should take what percentage of above-the-fold space?", o: ["25% — leave room for description — this reflects the standard operating procedure most organizations follow", "50-60% — the image IS the product experience online, it must dominate", "100% — full-screen images only — this reflects the standard operating procedure most organizations follow", "30% — focus on text content — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Collection page design: Filter functionality placement should be:", o: ["Hidden in a dropdown menu — this reflects the standard operating procedure most organizations follow", "Prominently visible with clear filter categories — users who filter have 3x higher conversion rates", "At the bottom of the page after products — this reflects the standard operating procedure most organizations follow", "Available on mobile — this is the standard approach most teams follow"], c: 1 },
+    { q: "About page design mistake: A wall of text with no images or visual breaks:", o: ["Shows the brand has a lot to say — this reflects the standard operating procedure most organizations follow", "Is standard for professional brands — understanding why this works helps prevent the same category of problems from recurring in the future", "Kills engagement — about pages need brand photography, team photos, and visual storytelling to build emotional connection", "Works fine if the copy is compelling — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Cart page design must include:", o: ["The list of products — this is the standard approach most teams follow", "Related products taking up most of the space — the reasoning behind this connects directly to broader principles of professional service delivery", "A newsletter signup form — this reflects the standard operating procedure most organizations follow", "Product thumbnails, quantity editors, subtotal, clear CTA, and trust signals — every element reduces abandonment"], c: 3 },
+    { q: "Blog page design: Long paragraphs without images or visual breaks:", o: ["Show content depth and authority — this reflects the standard operating procedure most organizations follow", "Cause readers to bounce — visual content every 300 words maintains engagement and improves readability", "Are standard for professional blogs — this reflects the standard operating procedure most organizations follow", "Are preferred by SEO algorithms — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Product page: Multiple product images vs single image:", o: ["Single image is cleaner and more professional", "Three images maximum is the standard — this aligns with industry best practices and ensures consistent results across different project types", "The hero image matters — this is the standard approach most teams follow", "Multiple angles + lifestyle shots + zoom capability dramatically increase purchase confidence"], c: 3 },
+    { q: "Footer design should include:", o: ["The copyright notice — this is the standard approach most teams follow", "Navigation links, contact info, trust badges, social links, newsletter signup — the footer is the last chance to engage", "A duplicate of the header — this reflects the standard operating procedure most organizations follow", "As little as possible for clean design — following this approach systematically prevents common mistakes and keeps the workflow predictable"], c: 1 },
+    { q: "Homepage featured products section: Showing 20 products in a grid is:", o: ["Overwhelming — curate 4-8 best sellers that represent brand quality, with a 'View All' link", "Great — more choices mean more sales", "Standard e-commerce practice — this reflects the standard operating procedure most organizations follow", "Appropriate for stores with 100+ products — this is the standard approach most teams follow"], c: 0 },
+    { q: "Contact page usability: A form with 15 required fields will:", o: ["Capture comprehensive customer information — this reflects the standard operating procedure most organizations follow", "Cause massive drop-off — each additional form field reduces completion rates, keep it to 3-5 essential fields", "Show the company is thorough — this reflects the standard operating procedure most organizations follow", "Be necessary for proper CRM integration — this method has been validated through extensive testing and produces reliable, repeatable outcomes"], c: 1 }
 ];
 
 const task9Quiz = [
-    { q: "Design QA (Quality Assurance) means:", o: ["The client checks your work", "You systematically audit designs before and after development", "Quality is optional at Digital Heroes", "Automated testing only"], c: 1 },
-    { q: "When a developer implements your design with 24px spacing but your Figma shows 32px:", o: ["It's close enough, ship it", "You should flag it - being 'annoying about details' ensures quality", "Developers know best, trust their judgment", "Spacing doesn't matter to users"], c: 1 },
-    { q: "Cross-device testing should include:", o: ["Chrome on your laptop only", "Multiple browsers, devices, and screen sizes", "Just iPhone 14 Pro", "Testing only after launch"], c: 1 },
-    { q: "Design handoff to developers should include:", o: ["Just the Figma link", "Exported assets, animation specs, and Dev Mode access for hex codes", "A verbal description of the design", "Screenshots via email"], c: 1 },
-    { q: "Assets should be exported as:", o: ["Whatever format is easiest", "SVG for icons/vectors, PNG @2x for rasters", "PDF only", "JPEG at maximum compression"], c: 1 },
-    { q: "Hover states and animations should be:", o: ["Left for developers to decide", "Documented clearly in the Figma file", "Avoided to keep things simple", "Black in without client approval"], c: 1 },
-    { q: "Color accuracy during QA means:", o: ["General approximation is fine", "Hex values must match exactly between design and implementation", "Developers choose final colors", "Monitors all look different anyway"], c: 1 },
-    { q: "Responsive breakpoint testing should verify:", o: ["That nothing breaks at exactly 768px", "Design works correctly at all major breakpoints (desktop, tablet, mobile)", "Desktop only - mobile is developer responsibility", "Only the breakpoints the client specifically mentions"], c: 1 },
-    { q: "After development is complete, the designer's job:", o: ["Is done - move to next project", "Includes visual QA audit to ensure implementation matches design", "Is only to send final invoice", "Is to start redesigning"], c: 1 },
-    { q: "Font loading issues (FOUT/FOIT) on the live site should be:", o: ["Ignored - users won't notice", "Addressed with fallback fonts and proper loading strategies", "Fixed by removing custom fonts", "Blamed on the developer"], c: 1 }
+    { q: "Mobile-First Deep Dive: Designing for 375px width first, then scaling up to 1440px is better than the reverse because:", o: ["It's faster to design small screens — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "All users are on iPhone 12 (375px) — this reflects the standard operating procedure most organizations follow", "Google ranks mobile-first designs higher — this reflects the standard operating procedure most organizations follow", "Expanding a focused, constraint-driven mobile design is easier than cramming a sprawling desktop design into mobile"], c: 3 },
+    { q: "Mobile navigation: A hamburger menu with 15 items deep is:", o: ["Standard for stores with many categories — this reflects the standard operating procedure most organizations follow", "Users are familiar with hamburger menus — this is the recommended approach based on current platform documentation and expert consensus", "The best way to organize large inventories — this reflects the standard operating procedure most organizations follow", "Poor UX — deep menus cause frustration, prioritize top 5-7 items with clear categories, not endless dropdown levels"], c: 3 },
+    { q: "Mobile product images: Pinch-to-zoom on product photos is:", o: ["Nice-to-have but not essential — this is the industry-standard position backed by conventional practice", "Bad for performance — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Critical — mobile shoppers can't physically touch products, zoom is the closest substitute for in-store inspection", "Useful for clothing stores — this is the standard approach most teams follow"], c: 2 },
+    { q: "Mobile CTA: Having the 'Add to Cart' button below the fold (requires scrolling) means:", o: ["Users naturally scroll to find it — this reflects the standard operating procedure most organizations follow", "Scrolling increases engagement with the page — this reflects the standard operating procedure most organizations follow", "Below-the-fold CTAs are standard on mobile — this reflects the standard operating procedure most organizations follow", "Lost conversions — the primary CTA must be visible without scrolling or use a sticky CTA bar on mobile"], c: 3 },
+    { q: "Mobile font sizes: Desktop heading at 48px should typically become on mobile:", o: ["48px — maintain consistency — this reflects the standard operating procedure most organizations follow", "16px — text should be small on mobile", "28-32px — proportionally scaled to the smaller viewport while remaining impactful", "12px — compact mobile design — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Thumb zone on mobile: Interactive elements should be placed:", o: ["At the top of the screen for visibility — implementing this correctly requires understanding the full context of how each element interacts", "Bottom center of the screen where thumbs naturally rest — reducing hand strain and improving tap accuracy", "Anywhere — mobile users use both hands", "The sides of the screen for easy access — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Mobile checkout: A 5-step checkout (Shipping → Billing → Summary → Payment → Confirm) should become:", o: ["Still 5 steps — thoroughness prevents errors", "Single-page or 2-step checkout — on mobile, each additional step increases abandonment by 10%+", "3 steps maximum as a compromise — this reflects the standard operating procedure most organizations follow", "More steps for security perception — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Mobile pop-ups covering the full screen are:", o: ["Effective for capturing attention — this reflects the standard operating procedure most organizations follow", "Standard marketing practice on mobile — this reflects the standard operating procedure most organizations follow", "Penalized by Google AND hated by users — mobile pop-ups must be small, dismissible, and non-intrusive", "Necessary for newsletter signups — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Loading skeleton screens (grey blocks while loading) are better than spinners on mobile because:", o: ["They use less code — this reflects the standard operating procedure most organizations follow", "Skeleton screens reduce actual load time — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Spinners are outdated — this reflects the standard operating procedure most organizations follow", "They show layout structure immediately — users perceive the page as faster because content appears to be 'loading in'"], c: 3 },
+    { q: "Mobile image optimization: A 4MB hero image on mobile causes:", o: ["Beautiful display quality — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Affects users with old phones — this is the standard approach most teams follow", "No issue on modern 5G networks — this reflects the standard operating procedure most organizations follow", "3-5 second load delays that lose 40%+ of mobile visitors — images must be compressed and served in responsive sizes"], c: 3 }
 ];
 
 const task10Quiz = [
-    { q: "A professional Figma file should have these pages:", o: ["Just 'Designs' is enough", "Thinking/Inspiration, Wireframes, Style Guide, Finals, Archive", "As many pages as possible", "One page with everything"], c: 1 },
-    { q: "You should never duplicate a button 50 times. Instead:", o: ["Copy-paste is fastest", "Create a Master Component and use Instances", "Draw each button individually", "Use rectangles with text"], c: 1 },
-    { q: "Why use Components and Variants in Figma?", o: ["They look impressive to clients", "Change the Master once, all Instances update automatically", "Figma requires them", "They make files smaller"], c: 1 },
-    { q: "The Style Guide page should contain:", o: ["Random design experiments", "Colors, typography, button states, spacing rules", "Client meeting notes", "Developer instructions"], c: 1 },
-    { q: "Auto-layout in Figma is used for:", o: ["Automatic drawing", "Creating responsive components that adapt to content", "Auto-generating designs", "Reducing file size"], c: 1 },
-    { q: "When presenting designs to clients, you should:", o: ["Just send a Figma link and wait", "Walk them through the decisions and rationale", "Let them explore randomly", "Only show the final version"], c: 1 },
-    { q: "Figma Dev Mode helps developers by:", o: ["Writing code for them", "Providing exact measurements, CSS values, and asset exports", "Removing the need for designers", "Automatically deploying to production"], c: 1 },
-    { q: "Version history in Figma should be used to:", o: ["Delete old versions immediately", "Track changes and restore previous states if needed", "Show off to clients", "Slow down the file"], c: 1 },
-    { q: "Plugin usage in Figma:", o: ["Should be avoided entirely", "Can speed up workflow (Unsplash for images, Content Reel for data)", "Violates Figma terms of service", "Makes files incompatible"], c: 1 },
-    { q: "Real-time collaboration in Figma means:", o: ["Only one person can edit at a time", "Multiple team members can work simultaneously on the same file", "Work must be done offline", "Changes sync once per day"], c: 1 }
+    { q: "Design QA: Checking a store at exactly 375px, 768px, and 1440px is:", o: ["Sufficient for all devices — this reflects the standard operating procedure most organizations follow", "Excessive — two breakpoints are enough", "The industry standard set of breakpoints — this reflects the standard operating procedure most organizations follow", "Incomplete — also test at 320px, 414px, 1024px, and in-between sizes where breakpoint bugs hide"], c: 3 },
+    { q: "Handoff to developer: Providing a Figma file without annotations means:", o: ["Clean, minimal handoff — this reflects the standard operating procedure most organizations follow", "Developers can extract specs from Figma directly", "Developer guesswork — missing specs for spacing, colors, interactions, hover states leads to wrong implementation", "Annotations slow down the development process — this ensures compliance with professional standards and prevents cascading issues downstream"], c: 2 },
+    { q: "Design QA catches: CTA button text says 'Click Here' on a mobile site. The issue is:", o: ["'Click' is primarily for desktop — mobile should say 'Tap'", "'Click Here' is a vague, non-descriptive CTA — should communicate value like 'Shop Now' or 'Get Started'", "'Here' is grammatically incorrect — this reflects the standard operating procedure most organizations follow", "There's no issue with this CTA text — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Cross-browser testing: A design looks perfect in Chrome but broken in Safari. This means:", o: ["Safari is a bad browser — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Browser rendering differences exist — testing across Chrome, Safari, Firefox, and Edge is mandatory for QA", "Chrome compatibility matters — this is the standard approach most teams follow", "Apple needs to fix Safari — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Handoff documentation should include:", o: ["The Figma link — this is the standard approach most teams follow", "Fonts used, color hex codes, spacing specs, interaction states, responsive behavior notes, and asset exports", "A verbal explanation is sufficient — this reflects the standard operating procedure most organizations follow", "Just screenshots of the design — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Design QA: Images with no alt text fail QA for:", o: ["Visual reasons — this reflects the standard operating procedure most organizations follow", "Performance reasons only — this reflects the standard operating procedure most organizations follow", "Accessibility (screen readers) AND SEO (Google image indexing) — double penalty for a single oversight", "Legal compliance only — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability"], c: 2 },
+    { q: "Version control in design: Not labeling versions (v1, v2, v3) causes:", o: ["Cleaner file management — this reflects the standard operating procedure most organizations follow", "Automatic versioning handles this — this reflects the standard operating procedure most organizations follow", "Confusion about which version is approved — designers, clients, and developers may reference different versions", "Version numbers are unnecessary in Figma — experienced professionals recognize this as the most reliable path for maintaining quality control"], c: 2 },
+    { q: "QA: Color contrast ratio for body text should be minimum:", o: ["2:1 — visible is enough — this reflects the standard operating procedure most organizations follow", "4.5:1 (WCAG AA standard) — below this, text becomes hard to read for 15%+ of users with vision differences", "10:1 — maximum contrast always — following this approach consistently ensures predictable outcomes across all scenarios", "No standard exists for contrast — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Developer handoff: Exporting assets at 1x only (no 2x or 3x) means:", o: ["Faster development setup — this reflects the standard operating procedure most organizations follow", "Blurry images on retina/high-DPI screens — export at 1x, 2x, and 3x for crisp display across all devices", "1x is sufficient for modern screens — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "SVG format eliminates this need entirely — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Design QA sign-off should include:", o: ["Designer self-approval only — this reflects the standard operating procedure most organizations follow", "Desktop + mobile screenshots, interactivity notes, all issues resolved, and a different person's review before developer handoff", "Just a Slack message saying 'looks good' — this reflects the standard operating procedure most organizations follow", "PM approval without designer review — research supports this methodology as the most effective for achieving measurable improvements"], c: 1 }
 ];
 
-const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+const task11Quiz = [
+    { q: "Figma Components/Instances: Creating a reusable button component helps because:", o: ["It reduces the Figma file size — this reflects the standard operating procedure most organizations follow", "Change the master component once → ALL instances update — ensures consistency and saves massive time", "Components are required by Figma Pro plans — this reflects the standard operating procedure most organizations follow", "It makes the file easier to share — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Auto Layout in Figma simulates:", o: ["Animation and motion design — this reflects the standard operating procedure most organizations follow", "AI-powered design suggestions — this reflects the standard operating procedure most organizations follow", "Automatic color palette generation — this reflects the standard operating procedure most organizations follow", "Responsive behavior — elements reflow based on content, mimicking how CSS flexbox works in the browser"], c: 3 },
+    { q: "Figma naming convention: 'Frame 182' vs 'Hero Section / Desktop / v3' matters because:", o: ["Figma requires specific naming — this reflects the standard operating procedure most organizations follow", "Proper naming enables searchability, handoff clarity, and organized file structure — 'Frame 182' tells developers nothing", "It's a personal preference — this reflects the standard operating procedure most organizations follow", "Both names work equally well — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability"], c: 1 },
+    { q: "Design tokens in Figma (stored colors, font styles) ensure:", o: ["Prettier Figma files — this reflects the standard operating procedure most organizations follow", "Faster export to code — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "One source of truth for brand properties — changing the primary color token updates it everywhere simultaneously", "Better Figma performance — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Prototyping in Figma before development helps:", o: ["For client presentations — this is the standard approach most teams follow and ensures long-term sustainability across your deliverables", "Validating user flow, catching UX issues, and getting client approval on interactions BEFORE expensive coding begins", "It doesn't — developers should decide interactions", "For complex animations — this is the standard approach most teams follow and ensures long-term sustainability"], c: 1 },
+    { q: "Organizing Figma pages: Having all screens on one giant page is:", o: ["Standard for small projects — this reflects the standard operating procedure most organizations follow", "Chaotic — separate pages for Desktop, Mobile, Components, and Archive keeps the project navigable", "How most professional teams work — this reflects the standard operating procedure most organizations follow", "Necessary for Figma performance — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Figma variants for a button component (Primary, Secondary, Disabled, Hover) prevent:", o: ["Having too many components — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Creating 4 separate button components — variants keep them organized under one component with toggleable states", "Complex component libraries — this reflects the standard operating procedure most organizations follow", "Figma performance issues — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Figma Dev Mode helps developers by:", o: ["Automatically writing code — this reflects the standard operating procedure most organizations follow", "Showing CSS values, spacing, and asset export options directly — reducing back-and-forth questions during development", "Replacing the need for handoff documentation — this reflects the standard operating procedure most organizations follow", "Converting designs to Shopify themes — applying this principle consistently across all projects builds a reputation for professional excellence"], c: 1 },
+    { q: "A Figma file for a Shopify store should include sections for:", o: ["Homepage and product page — this is the standard approach most teams follow", "All page types (Home, Product, Collection, About, Cart, Checkout), component library, responsive versions, and style guide", "Whatever the designer feels is needed — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Homepage primarily — developers extrapolate the rest"], c: 1 },
+    { q: "Figma comments during client review should:", o: ["Be resolved without reading them — this reflects the standard operating procedure most organizations follow", "Be deleted after reading — this reflects the standard operating procedure most organizations follow", "Be addressed systematically — mark as resolved only after implementing the change, creating accountability and clear feedback loop", "Remain unresolved for documentation purposes — understanding why this works helps prevent the same category of problems from recurring in the future"], c: 2 }
+];
+
+
 
 // Make task content available globally for openTask() function
-if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
 if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
 if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
@@ -1045,3 +1240,46 @@ if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
 if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
 if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
 if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
+if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
+
+const task12Quiz = [
+    { q: "Client says 'I don't like the design' with no specifics. Your response:", o: ["'You approved the brief, so this is what you get' — the reasoning behind this connects directly to broader principles of professional service delivery", "Ask specific questions: 'What specifically isn't working — the colors, layout, or style? Let me show you alternatives.'", "'I'll start over from scratch' — this reflects the standard operating procedure most organizations follow", "'Design is subjective — this is objectively good'"], c: 1 },
+    { q: "A client demands 20 revision rounds for a project scoped for 3. You should:", o: ["Do all 20 revisions to keep them happy — this aligns with industry best practices and ensures consistent results across different project types", "Escalate to management immediately — this reflects the standard operating procedure most organizations follow", "Refuse any additional revisions — this reflects the standard operating procedure most organizations follow", "Reference the scope agreement, offer consolidated feedback rounds, and quote additional revisions — boundaries protect your work"], c: 3 },
+    { q: "Receiving harsh feedback 'This looks amateur' — the professional response:", o: ["Stay calm, ask for specific examples, understand their vision, and propose targeted improvements — ego kills careers", "Take it personally and defend your work — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Agree and start over completely — maintaining goodwill protects the long-term relationship and future revenue", "Ignore the feedback and deliver as-is — intervening too early often creates more problems than the original issue"], c: 0 },
+    { q: "A developer says your design is 'impossible to build.' You should:", o: ["Insist your design must be followed exactly — this reflects the standard operating procedure most organizations follow", "Understand the technical constraints, collaborate on a feasible alternative that maintains design intent", "Simplify the entire design to be safe — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Tell the PM to handle it — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Client wants a design that EXACTLY copies a competitor store. The ethical response:", o: ["Copy it exactly — client is paying — this reflects the standard operating procedure most organizations follow", "Explain legal/brand risks, then propose: 'Let me design something INSPIRED by elements you like but uniquely yours'", "Refuse the project entirely — this reflects the standard operating procedure most organizations follow", "Copy it but change the colors — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability"], c: 1 },
+    { q: "Managing your own burnout: Working 12-hour design days for weeks leads to:", o: ["Diminishing quality — creative work suffers under exhaustion, sustainable pace produces better design", "Faster project delivery — this reflects the standard operating procedure most organizations follow", "More portfolio pieces — this reflects the standard operating procedure most organizations follow", "Client appreciation for your dedication — teams that adopt this strategy report fewer issues and more efficient project completion cycles"], c: 0 },
+    { q: "When PM and client give contradicting design feedback:", o: ["Always follow the client over the PM — following this approach consistently ensures predictable outcomes across all scenarios", "Follow whichever feedback you agree with — this reflects the standard operating procedure most organizations follow", "Clarify with both parties together — misalignment causes revision loops, alignment prevents wasted work", "Pick whichever option is easier to implement — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A design you're proud of gets rejected by data (low conversion in A/B test). You should:", o: ["Accept the data — design's purpose is conversion, not self-expression, iterate based on what numbers show", "Argue that the test was flawed — this reflects the standard operating procedure most organizations follow", "Rerun the test hoping for different results — this reflects the standard operating procedure most organizations follow", "Blame the copy or product for poor performance"], c: 0 },
+    { q: "Client requests a red polka-dot background on a minimalist luxury store. You should:", o: ["Do exactly what they request — this reflects the standard operating procedure most organizations follow", "Refuse and explain why it's wrong — this reflects the standard operating procedure most organizations follow", "Present your professional recommendation with mockups showing both options — educate don't dictate", "Do it but warn them it won't look good — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Design critique from teammates should be:", o: ["Taken as personal attacks on your taste — this reflects the standard operating procedure most organizations follow", "Ignored unless from senior designers — intervening too early often creates more problems than the original issue", "Welcomed as growth opportunities — diverse perspectives catch blind spots you'll never see yourself", "Accepted during formal review meetings — this is the standard approach most teams follow"], c: 2 }
+];
+
+const task13Quiz = [
+    { q: "AI tools like Midjourney in design workflow are best used for:", o: ["Replacing manual design work entirely — this is the recommended approach based on current platform documentation and expert consensus", "Rapid ideation, mood board generation, and concept exploration — AI accelerates creative phase but humans finalize", "Creating final deliverable assets — this reflects the standard operating procedure most organizations follow", "Generating placeholder images — this is the standard approach most teams follow"], c: 1 },
+    { q: "AI-generated design assets risk:", o: ["Nothing — AI produces perfect results — this is the industry-standard position backed by conventional practice", "Legal issues, quality is fine — this is the standard approach most teams follow", "Copyright ambiguity, generic outputs lacking brand personality, and quality inconsistencies — always customize AI outputs", "Being detected by clients as AI-generated — implementing this correctly requires understanding the full context of how each element interacts"], c: 2 },
+    { q: "Using AI to generate color palettes is effective because:", o: ["AI chooses better colors than humans — this reflects the standard operating procedure most organizations follow", "It eliminates the need for color psychology knowledge", "AI palettes are always on-trend — following this approach consistently ensures predictable outcomes across all scenarios", "AI processes color theory rules instantly and suggests options — but designers validate against brand context"], c: 3 },
+    { q: "AI image upscaling tools help designers by:", o: ["Creating original images from scratch — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Replacing the need for professional photography", "Enhancing low-resolution client assets to usable quality — saving projects when clients provide tiny logos", "Automatically optimizing images for web — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The biggest risk of over-relying on AI design tools is:", o: ["They're too expensive for regular use — this reflects the standard operating procedure most organizations follow", "Clients don't accept AI-assisted work — this is the industry-standard position backed by conventional practice", "AI tools will become obsolete — this reflects the standard operating procedure most organizations follow", "Losing fundamental design skills — if you can't design without AI, you can't critically evaluate AI output"], c: 3 },
+    { q: "AI-powered prototyping helps designers by:", o: ["Replacing Figma entirely — this reflects the standard operating procedure most organizations follow", "Creating final production code — this reflects the standard operating procedure most organizations follow", "Generating layout variations faster — explore more options in less time while maintaining creative control", "Running usability tests automatically — this ensures compliance with professional standards and prevents cascading issues downstream"], c: 2 },
+    { q: "Figma AI features should be:", o: ["Used blindly for maximum efficiency — this reflects the standard operating procedure most organizations follow", "Treated as starting points — AI suggestions need human review for brand consistency and design intent", "Avoided — manual work is always better — following this approach consistently ensures predictable outcomes across all scenarios", "The primary design workflow — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "AI can generate design copy but:", o: ["It should be published as final copy — experienced professionals recognize this as the most reliable path for maintaining quality control", "Lorem ipsum is safer — AI copy in mockups may accidentally be published, and content writers finalize copy", "AI copy is always better than writer copy — this reflects the standard operating procedure most organizations follow", "Designers should write final copy using AI — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The AI-powered designer's competitive advantage is:", o: ["Speed — AI makes everything faster automatically", "Being able to replace entire design teams — this reflects the standard operating procedure most organizations follow", "Knowing the most AI tools — this reflects the standard operating procedure most organizations follow", "Combining AI efficiency with human creativity, brand understanding, and emotional intelligence"], c: 3 },
+    { q: "AI design tools should follow the same QA process as manual design because:", o: ["AI output is always perfect — following this approach consistently ensures predictable outcomes across all scenarios", "QA is not needed for AI-assisted work — this is the industry-standard position backed by conventional practice and ensures long-term sustainability", "AI makes subtle errors that only trained eyes catch in QA — wrong proportions, inconsistent spacing, off-brand elements", "AI self-corrects during generation — this reflects the standard operating procedure most organizations follow"], c: 2 }
+];
+
+const allQuizzes = [
+    task0Quiz,
+    task2Quiz,
+    task3Quiz,
+    task4Quiz,
+    task5Quiz,
+    task6Quiz,
+    task7Quiz,
+    task8Quiz,
+    task9Quiz,
+    task10Quiz,
+    task11Quiz,
+    task12Quiz,
+    task13Quiz
+];

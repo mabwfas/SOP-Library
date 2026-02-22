@@ -2,20 +2,241 @@
 // Based on Digital Heroes PM Mega-Prompt Framework
 
 const trainingTasks = [
-    { id: 1, title: "PM Mindset & Philosophy", description: "Ownership, accountability, elite habits", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🎯 The bridge between client & team", "📖 Read pm-sop.html completely"] },
-    { id: 2, title: "Client Communication Mastery", description: "8 Non-Negotiable Rules", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "💬 Response standards", "📖 Master all templates"] },
-    { id: 3, title: "Project Lifecycle", description: "14-Day Timeline Deep Dive", contentFirst: true, studyGuide: ["⏱️ Time: 75 min", "📋 Phase-by-phase breakdown", "📖 Study milestones"] },
-    { id: 4, title: "Team Coordination", description: "Leadership & Delegation", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "👥 Work with devs & designers", "📖 Shield mentality"] },
-    { id: 5, title: "Scope Management", description: "Change Control Mastery", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🎯 Scope creep prevention", "📖 Change request flowchart"] },
-    { id: 6, title: "Quality Assurance", description: "60-Point QA Protocol", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "✅ Complete QA checklist", "📖 Delivery standards"] },
-    { id: 7, title: "Tools & Systems", description: "PM Software Mastery", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🖥️ Essential tools", "📖 Automation workflows"] },
-    { id: 8, title: "Difficult Situations", description: "15 Crisis Scenarios", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "🔥 De-escalation scripts", "📖 Crisis management"] },
-    { id: 9, title: "Metrics & Performance", description: "KPIs & Self-Assessment", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "📊 Track what matters", "📖 Weekly reviews"] },
-    { id: 10, title: "Final Certification", description: "Comprehensive PM Exam", contentFirst: false, studyGuide: ["⏱️ Time: 90 min", "📝 30 Questions + Video", "🎓 Pass to certify"] }
+    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
+    { id: 2, title: "PM Mindset & Philosophy", description: "Ownership, accountability, elite habits", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🎯 The bridge between client & team", "📖 Read pm-sop.html completely"] },
+    { id: 3, title: "Client Communication Mastery", description: "8 Non-Negotiable Rules", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "💬 Response standards", "📖 Master all templates"] },
+    { id: 4, title: "Project Lifecycle", description: "14-Day Timeline Deep Dive", contentFirst: true, studyGuide: ["⏱️ Time: 75 min", "📋 Phase-by-phase breakdown", "📖 Study milestones"] },
+    { id: 5, title: "Team Coordination", description: "Leadership & Delegation", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "👥 Work with devs & designers", "📖 Shield mentality"] },
+    { id: 6, title: "Scope Management", description: "Change Control Mastery", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🎯 Scope creep prevention", "📖 Change request flowchart"] },
+    { id: 7, title: "Quality Assurance", description: "60-Point QA Protocol", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "✅ Complete QA checklist", "📖 Delivery standards"] },
+    { id: 8, title: "Tools & Systems", description: "PM Software Mastery", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🖥️ Essential tools", "📖 Automation workflows"] },
+    { id: 9, title: "Difficult Situations", description: "15 Crisis Scenarios", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "🔥 De-escalation scripts", "📖 Crisis management"] },
+    { id: 10, title: "Metrics & Performance", description: "KPIs & Self-Assessment", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "📊 Track what matters", "📖 Weekly reviews"] },
+    { id: 11, title: "Final Certification", description: "Comprehensive PM Exam", contentFirst: false, studyGuide: ["⏱️ Time: 90 min", "📝 30 Questions + Video", "🎓 Pass to certify"] }
 ];
 
+
+const task0Content = `
+<h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes</h3>
+    <p>You're now part of something bigger than just a job. We are building the <strong>world's best digital agency</strong>. This isn't a typical company—we have high standards because we're building something exceptional. <strong>DISCIPLINE IS YOUR GREATEST INVESTMENT.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Mission: Point A → Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Milestone</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Revenue Target</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹9.2 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2025 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹15-20 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2026 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹40 Crores</td></tr>
+            <tr style="background: rgba(59, 130, 246, 0.2);"><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹75 Crores</strong></td></tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits through our <strong>equity-sharing model—even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- MANIFESTO -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">⚡ The Digital Heroes Manifesto</h3>
+    <ul>
+        <li><strong>Talent is Irrelevant. Volume is Everything.</strong> — We don't care about your degree. We care about your OUTPUT. Need skills? Put in 100 hours learning. Need more? Put in 500.</li>
+        <li><strong>Emotional Intelligence > IQ</strong> — How do you respond under pressure? That's your real test. People with high EQ build real relationships and lead.</li>
+        <li><strong>Instant Reply = Respect</strong> — When you respond quickly, you're saying: "I respect you, I'm reliable, I care."</li>
+        <li><strong>Protect Your Mindset</strong> — Stop thinking negative thoughts. Build character that helps your growth.</li>
+        <li><strong>Clients are Opportunities</strong> — Approach every client like you're personally invested in their success.</li>
+        <li><strong>The 80/20 Principle</strong> — 80% of your time: Productive work. 20%: Everything else.</li>
+        <li><strong>Work = Highest Priority</strong> — Real satisfaction comes from BUILDING something that matters.</li>
+    </ul>
+</div>
+
+<!-- CORE VALUES -->
+<div class="content-section">
+    <h3>⭐ Core Values: The Digital Heroes Way</h3>
+    <ul>
+        <li>⚡ <strong>Work Fast, Work Smart</strong> — Speed without quality is recklessness. Quality without speed is inefficiency.</li>
+        <li>💬 <strong>Communicate Clearly</strong> — Ambiguity is the enemy. Ask clarifying questions. Confirm understanding. Never leave people guessing.</li>
+        <li>💡 <strong>Share Ideas</strong> — Your insights matter. If you see a better way, speak up.</li>
+        <li>🤝 <strong>Help Your Teammates</strong> — We are allies. We win together or we don't win at all.</li>
+        <li>🌟 <strong>Be Useful Beyond Tasks</strong> — Your attitude, proactive problem-solving, and contribution to team culture matter.</li>
+        <li>🚫 <strong>Zero Politics</strong> — Problems go to HR or Delhi Team only. We foster positivity.</li>
+    </ul>
+</div>
+
+<!-- INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔗 The Interconnected Chain</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p style="margin: 0;">
+            <strong style="color: #FBBF24;">Sales</strong> → generates enquiries → <strong style="color: #60A5FA;">Development</strong> → delivers quality → <strong style="color: #F472B6;">Client Satisfaction</strong> → drives reviews → <strong style="color: #A78BFA;">Better Positioning</strong> → more enquiries → 🔄 Cycle continues
+        </p>
+    </div>
+    <p style="color: #F87171; font-weight: 600;">⚠️ If any single link breaks, the entire system is affected. No department is bigger than the process. No one grows alone here.</p>
+</div>
+
+<!-- CRITICAL RULES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 CRITICAL RULES — Zero Tolerance (No Warnings, No Second Chances)</h3>
+    <ol>
+        <li><strong>Ignoring Management Messages</strong> = <span style="color: #EF4444;">IMMEDIATE TERMINATION</span>. This is the #1 termination reason.</li>
+        <li><strong>Data Breach</strong> — Sharing client info, source code, or passwords outside company = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+        <li><strong>Moonlighting</strong> — Working for competitors, taking freelance projects while employed = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Harassment</strong> — Verbal, sexual, or online bullying. One proven incident = <span style="color: #EF4444;">Out</span>.</li>
+        <li><strong>Poor Communication (3 Strikes)</strong> — Rude to client / Lying / Late responses. 1st: ₹500 Penalty → 2nd: ₹1000 → 3rd: Termination.</li>
+        <li><strong>Substance Abuse</strong> — Coming to work under influence = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Conspiracy & Negativity</strong> — Problems regarding any person must be shared ONLY with HR or Delhi Team. Conspiring = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+    </ol>
+</div>
+
+<!-- TEAM HIERARCHY -->
+<div class="content-section">
+    <h3>👥 Team Structure & Hierarchy</h3>
+    <p><strong>Supreme Authority:</strong> The Delhi Team represents the highest level of command. Their decisions override ALL other instructions.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Level</th><th style="padding: 10px; text-align: left;">Role</th><th style="padding: 10px; text-align: left;">Key Persons</th></tr>
+        <tr><td style="padding: 8px;">Level 1 (Top)</td><td style="padding: 8px;">CEO / Leadership</td><td style="padding: 8px;">Prasun Anand (CEO - Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Operations Head</td><td style="padding: 8px;">Anurag Singh (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Managing Director (Lucknow)</td><td style="padding: 8px;">Shreyansh</td></tr>
+        <tr><td style="padding: 8px;">Level 3</td><td style="padding: 8px;">General Manager</td><td style="padding: 8px;">Parth Srivastav (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 4</td><td style="padding: 8px;">HR & Project Managers</td><td style="padding: 8px;">Stuti/Agrima (HR), Navya Singh (Shopify PM)</td></tr>
+        <tr><td style="padding: 8px;">Level 5</td><td style="padding: 8px;">Team Leads / Senior Devs</td><td style="padding: 8px;">Mahira (Lead), Divyansh Singh</td></tr>
+        <tr><td style="padding: 8px;">Level 6</td><td style="padding: 8px;">Execution Teams</td><td style="padding: 8px;">Developers, Designers, QA, Sales, CS</td></tr>
+    </table>
+</div>
+
+<!-- HOURS & ATTENDANCE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⏰ Working Hours & Attendance</h3>
+    <ul>
+        <li><strong>Lucknow Team:</strong> 9:00 AM – 6:00 PM (Morning Shift)</li>
+        <li><strong>Delhi Team:</strong> Night Shift (Handling Foreign Clients)</li>
+        <li><strong>Sunday:</strong> Off | <strong>Lunch:</strong> 1:00 PM – 2:00 PM</li>
+        <li><strong>Fiverr/Sales Team Window:</strong> 9:00 AM – 9:00 PM (flexible shifts)</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ The 9:15 Rule:</strong> Arrive after 9:15 AM = <strong>Half-day salary deduction</strong>. Late arrivals: 3x = Verbal Warning → 5x = Written Warning → 7+ = Termination Review.
+    </div>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Unexplained Absence</strong> (not informing by 9:00 AM): 1st = Written Warning → 3rd = 3 Days Salary Deduction → 5th = Termination.
+    </div>
+</div>
+
+<!-- LEAVE POLICY -->
+<div class="content-section">
+    <h3>🏖️ Leave Policy</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Type</th><th style="padding: 10px; text-align: left;">Days/Year</th><th style="padding: 10px; text-align: left;">Notes</th></tr>
+        <tr><td style="padding: 8px;">Casual Leave (CL)</td><td style="padding: 8px;">12</td><td style="padding: 8px;">Personal use. Max 2/month.</td></tr>
+        <tr><td style="padding: 8px;">Sick Leave (SL)</td><td style="padding: 8px;">6</td><td style="padding: 8px;">Medical use. Certificate for 2+ days.</td></tr>
+        <tr><td style="padding: 8px;">Earned Leave (EL)</td><td style="padding: 8px;">15</td><td style="padding: 8px;">After 1 year only.</td></tr>
+        <tr><td style="padding: 8px;">Holidays</td><td style="padding: 8px;">~10</td><td style="padding: 8px;">Standard National Holidays.</td></tr>
+    </table>
+    <p><strong>Restrictions:</strong></p>
+    <ul>
+        <li>❌ No leave in first 2 months (Probation) unless emergency.</li>
+        <li>❌ No leave during month-end (25th–5th) billing cycle.</li>
+        <li>❌ Max 2 CL per month (unless approved by Senior Management).</li>
+    </ul>
+    <p><strong>How to Apply:</strong> Post in <strong>#ask-hr</strong> or message Manager min <strong>3 days in advance</strong>. Include: Name, Dates, Reason, and who is covering your work.</p>
+</div>
+
+<!-- SALARY & GROWTH -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💰 Salary, Growth & Compensation</h3>
+    <ul>
+        <li><strong>Payment Date:</strong> Before 10th of the following month.</li>
+        <li><strong>Cycle:</strong> 1st to End of Month.</li>
+        <li>🚨 <strong>Confidentiality:</strong> Discussing salary with colleagues = <span style="color: #EF4444;">Immediate Termination</span>.</li>
+    </ul>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">KPI Score</th><th style="padding: 10px; text-align: left;">Outcome</th></tr>
+        <tr><td style="padding: 8px;">90-100% (Exceptional)</td><td style="padding: 8px;">15-20% Increment + Bonus</td></tr>
+        <tr><td style="padding: 8px;">75-89% (Exceeds)</td><td style="padding: 8px;">10-15% Increment</td></tr>
+        <tr><td style="padding: 8px;">60-74% (Meets)</td><td style="padding: 8px;">5-10% Increment</td></tr>
+        <tr><td style="padding: 8px;">&lt;60% (Needs Improvement)</td><td style="padding: 8px;">No Increment + PIP</td></tr>
+    </table>
+    <p><strong>Advance Salary:</strong> Available after 3 months. Max 50% of salary. Recovered in 2 installments. Genuine emergencies only.</p>
+    <p><strong>Growth Formula:</strong> Employee Growth = Company Growth × (Will + Efforts). Income = Happy Clients × Skill × Speed.</p>
+</div>
+
+<!-- COMMUNICATION RULES -->
+<div class="content-section">
+    <h3>💬 Communication Protocol</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Who</th><th style="padding: 10px; text-align: left;">Response Time</th></tr>
+        <tr><td style="padding: 8px;">Clients</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Manager</td><td style="padding: 8px;">&lt; 1 Hour</td></tr>
+        <tr><td style="padding: 8px;">Team</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Emergency</td><td style="padding: 8px;">&lt; 15 Minutes</td></tr>
+    </table>
+    <p><strong>Channels:</strong> Official: Discord/Email. Team: WhatsApp. Clients: Fiverr/Platform. Personal issues → DM. Work questions → Group chat (so everyone learns).</p>
+    <p><strong>Specificity Rule:</strong> Always provide ETAs. Never say "I'll be late" — say "I will be 15 mins late. ETA 9:45 AM." Never say "Okay" — say "Got it. Task A: ETA 2 PM. Task B: ETA 5 PM."</p>
+</div>
+
+<!-- WFH POLICY -->
+<div class="content-section">
+    <h3>🏠 Work From Home Policy</h3>
+    <p><strong>WFH is a PRIVILEGE, Not a Right.</strong></p>
+    <ul>
+        <li>Max 2 days/week. Non-consecutive.</li>
+        <li>Manager can revoke instantly if productivity drops.</li>
+        <li>Requirements: Probation completed (3 months), High speed internet (10+ Mbps), Respond within 30 mins, Camera ON for all meetings.</li>
+    </ul>
+</div>
+
+<!-- CULTURE & PERKS -->
+<div class="content-section">
+    <h3>🎉 Culture, Perks & Exit Process</h3>
+    <ul>
+        <li>🏔️ <strong>Offsite Trips</strong> — Twice a year, company-paid (travel, stay, food).</li>
+        <li>🎬 <strong>Outing Budget</strong> — ₹500-1000/month per person for team activities.</li>
+        <li>🎂 <strong>Birthdays</strong> — Half-day, Cake, and Celebration.</li>
+        <li>🤝 <strong>Buddy System</strong> — New joiners get a Buddy for 2 weeks.</li>
+        <li>📚 <strong>Growth</strong> — 4 hrs/week learning hours. Course reimbursement up to ₹5k/yr.</li>
+    </ul>
+    <h4>Exit Process</h4>
+    <ul>
+        <li><strong>Notice Period:</strong> Probation = 7 Days. Confirmed = 30 Days.</li>
+        <li><strong>Process:</strong> Written resignation → Handover → Exit Interview → Return Assets → F&F within 30 days.</li>
+        <li><strong>Email:</strong> hr@digitalheroes.co.in</li>
+        <li>Experience Certificate: Provided for good standing exits only.</li>
+    </ul>
+</div>
+
+<!-- SOP OBSESSION -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📑 The SOP Obsession</h3>
+    <p><strong>What is an SOP?</strong> Standard Operating Procedure. Here, it's not just a guideline—it is the <strong>Law</strong>. It is the best known way to do a task perfectly.</p>
+    <ul>
+        <li><strong>Why use it?</strong> It removes guessing. It guarantees speed, quality, and consistency. It protects you from mistakes.</li>
+        <li><strong>Your Duty:</strong> You MUST follow your Role's SOP + the Daily SOP every day.</li>
+        <li><strong>Evolve It:</strong> SOPs are not static. Found a better way? Suggest an improvement.</li>
+    </ul>
+</div>
+
+<!-- KEY FAQS -->
+<div class="content-section">
+    <h3>❓ Key Employee FAQs</h3>
+    <ul>
+        <li><strong>Is training period paid?</strong> No. Training Completion Certificate provided after finishing.</li>
+        <li><strong>Is EOD report mandatory?</strong> Yes. Submit EOD + time tracking on Discord daily. Failure = marked absent.</li>
+        <li><strong>Can I take freelance projects?</strong> No. Conflict of interest.</li>
+        <li><strong>Is confidentiality mandatory?</strong> Yes. Client data, strategies, internal info. Breach = termination.</li>
+        <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
+        <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
+        <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
+        <li><strong>Sales incentives?</strong> 5% of sales exceeding USD 5,000/month.</li>
+        <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
+    </ul>
+</div>
+`;
+
 // TASK 1: PM MINDSET & PHILOSOPHY
-const task1Content = `
+const task2Content = `
 <h2>📚 TASK 1: PM MINDSET & PHILOSOPHY</h2>
 
 <!-- WELCOME TO DIGITAL HEROES -->
@@ -176,7 +397,7 @@ A PM once assumed the developer understood the requirements. No documentation. N
 `;
 
 // TASK 2: CLIENT COMMUNICATION MASTERY
-const task2Content = `
+const task3Content = `
 <h2>📚 TASK 2: CLIENT COMMUNICATION MASTERY</h2>
 
 <div class="content-section">
@@ -303,7 +524,7 @@ Questions? I'm here.<br>
 `;
 
 // TASK 3: PROJECT LIFECYCLE
-const task3Content = `
+const task4Content = `
 <h2>📚 TASK 3: PROJECT LIFECYCLE - 14-DAY TIMELINE</h2>
 
 <div class="content-section">
@@ -356,7 +577,7 @@ Always build 20-30% buffer into your timelines. If development estimate is 5 day
 `;
 
 // Continuing with remaining tasks...
-const task4Content = `
+const task5Content = `
 <h2>📚 TASK 4: TEAM COORDINATION & LEADERSHIP</h2>
 
 <div class="content-section">
@@ -423,7 +644,7 @@ Each team member answers:
 </div>
 `;
 
-const task5Content = `
+const task6Content = `
 <h2>📚 TASK 5: SCOPE MANAGEMENT & CHANGE CONTROL</h2>
 
 <div class="content-section">
@@ -470,7 +691,7 @@ Our original agreement covered [X, Y, Z]. This request is additional work. Happy
 </div>
 `;
 
-const task6Content = `
+const task7Content = `
 <h2>📚 TASK 6: QUALITY ASSURANCE & DELIVERY</h2>
 
 <div class="content-section">
@@ -558,7 +779,7 @@ Excited to see this go live! 🚀<br>
 </div>
 `;
 
-const task7Content = `
+const task8Content = `
 <h2>📚 TASK 7: TOOLS & SYSTEMS</h2>
 
 <div class="content-section">
@@ -577,7 +798,7 @@ const task7Content = `
 </div>
 `;
 
-const task8Content = `
+const task9Content = `
 <h2>📚 TASK 8: DIFFICULT SITUATIONS & CRISIS MANAGEMENT</h2>
 
 <div class="content-section">
@@ -660,7 +881,7 @@ const task8Content = `
 </div>
 `;
 
-const task9Content = `
+const task10Content = `
 <h2>📚 TASK 9: METRICS & PERFORMANCE</h2>
 
 <div class="content-section">
@@ -692,7 +913,7 @@ const task9Content = `
 </div>
 `;
 
-const task10Content = `
+const task11Content = `
 <h2>📚 TASK 10: FINAL PM CERTIFICATION</h2>
 
 <div class="content-section">
@@ -736,186 +957,242 @@ const task10Content = `
 // QUIZ: 30 Comprehensive Questions
 const quizQuestions = [
     // PM Mindset (6 questions)
-    { question: "PM core responsibility is:", options: ["Track tasks only", "Ownership of project success", "Blame team for failures", "Just coordinate meetings"], correct: 1 },
-    { question: "'Plan twice, execute once' means:", options: ["Skip planning", "Plan thoroughly before work", "Plan during development", "No planning needed"], correct: 1 },
-    { question: "When developer is late, professional PM says:", options: ["Developer's fault", "Not my problem", "I didn't catch delay early", "Ignore it"], correct: 2 },
-    { question: "The Project Triangle constraints are:", options: ["Speed, Quality, Price", "Scope, Time, Cost", "Team, Tools, Tech", "Design, Dev, Deploy"], correct: 1 },
-    { question: "How many triangle constraints can you optimize?", options: ["All 3", "2 out of 3", "Only 1", "None"], correct: 1 },
-    { question: "Fast + Cheap equals:", options: ["High Quality", "Low Quality", "Perfect", "Impossible"], correct: 1 },
+    { question: "PM core responsibility is:", options: ["Track tasks only", "Just coordinate meetings", "Blame team for failures", "Ownership of project success"], correct: 3 },
+    { question: "'Plan twice, execute once' means:", options: ["Plan thoroughly before work", "Skip planning", "Plan during development", "No planning needed"], correct: 0 },
+    { question: "When developer is late, professional PM says:", options: ["Developer's fault", "I didn't catch delay early", "Not my problem", "Ignore it"], correct: 1 },
+    { question: "The Project Triangle constraints are:", options: ["Speed, Quality, Price", "Team, Tools, Tech", "Scope, Time, Cost", "Design, Dev, Deploy"], correct: 2 },
+    { question: "How many triangle constraints can you optimize?", options: ["All 3", "None", "Only 1", "2 out of 3"], correct: 3 },
+    { question: "Fast + Cheap equals:", options: ["Low Quality", "High Quality", "Perfect", "Impossible"], correct: 0 },
 
     // Communication (6 questions)
     { question: "Client response time standard:", options: ["24 hours", "< 2 hours work hours", "1 week", "When convenient"], correct: 1 },
-    { question: "Weekly updates should include:", options: ["Just completed work", "Progress + blockers + next steps", "Only timeline", "Nothing"], correct: 1 },
-    { question: "When delivering bad news:", options: ["Hide it", "Wait until last minute", "Tell client immediately with solution", "Blame team"], correct: 2 },
-    { question: "For micromanager client:", options: ["Ignore them", "Over-communicate proactively", "Reduce updates", "Avoid them"], correct: 1 },
+    { question: "Weekly updates should include:", options: ["Just completed work", "Only timeline", "Progress + blockers + next steps", "Nothing"], correct: 2 },
+    { question: "When delivering bad news:", options: ["Hide it", "Wait until last minute", "Blame team", "Tell client immediately with solution"], correct: 3 },
+    { question: "For micromanager client:", options: ["Over-communicate proactively", "Ignore them", "Reduce updates", "Avoid them"], correct: 0 },
     { question: "Every message should end with:", options: ["Emoji only", "Clear next action item", "Question", "Nothing"], correct: 1 },
-    { question: "SPEAR method is for:", options: ["Budget planning", "Delivering bad news", "Design feedback", "Hiring"], correct: 1 },
+    { question: "SPEAR method is for:", options: ["Budget planning", "Design feedback", "Delivering bad news", "Hiring"], correct: 2 },
 
     // Lifecycle & Timeline (5 questions)
-    { question: "Standard project delivery time:", options: ["1 day", "7 days", "14 days", "30 days"], correct: 2 },
-    { question: "Buffer rule for complex tasks:", options: ["+10%", "+30%", "+100% (2x)", "+200%"], correct: 2 },
-    { question: "Internal QA happens on day:", options: ["1", "5", "11", "14"], correct: 2 },
-    { question: "Project kickoff must include:", options: ["Just start coding", "Scope document signed off", "Nothing documented", "Verbal agreement only"], correct: 1 },
-    { question: "Buffer management rule:", options: ["No buffer needed", "20-30% buffer always", "50% buffer", "100% buffer"], correct: 1 },
+    { question: "Standard project delivery time:", options: ["1 day", "7 days", "30 days", "14 days"], correct: 3 },
+    { question: "Buffer rule for complex tasks:", options: ["+100% (2x)", "+30%", "+10%", "+200%"], correct: 0 },
+    { question: "Internal QA happens on day:", options: ["1", "11", "5", "14"], correct: 1 },
+    { question: "Project kickoff must include:", options: ["Just start coding", "Nothing documented", "Scope document signed off", "Verbal agreement only"], correct: 2 },
+    { question: "Buffer management rule:", options: ["No buffer needed", "100% buffer", "50% buffer", "20-30% buffer always"], correct: 3 },
 
     // Team & Scope (5 questions)
-    { question: "Shield mentality means:", options: ["Hide from clients", "PM absorbs pressure for team", "Team handles everything", "No protection needed"], correct: 1 },
-    { question: "Standup duration max:", options: ["30 min", "1 hour", "15 min", "No limit"], correct: 2 },
-    { question: "When client requests new feature:", options: ["Do it free", "Document + estimate + get approval", "Refuse", "Ignore"], correct: 1 },
-    { question: "Scope creep prevention needs:", options: ["Nothing", "Written change request", "Verbal yes", "Ignore changes"], correct: 1 },
-    { question: "Developers need from PM:", options: ["Verbal instructions", "Clear written requirements + assets", "Just deadlines", "Nothing"], correct: 1 },
+    { question: "Shield mentality means:", options: ["PM absorbs pressure for team", "Hide from clients", "Team handles everything", "No protection needed"], correct: 0 },
+    { question: "Standup duration max:", options: ["30 min", "15 min", "1 hour", "No limit"], correct: 1 },
+    { question: "When client requests new feature:", options: ["Do it free", "Refuse", "Document + estimate + get approval", "Ignore"], correct: 2 },
+    { question: "Scope creep prevention needs:", options: ["Nothing", "Ignore changes", "Verbal yes", "Written change request"], correct: 3 },
+    { question: "Developers need from PM:", options: ["Clear written requirements + assets", "Verbal instructions", "Just deadlines", "Nothing"], correct: 0 },
 
     // QA & Delivery (4 questions)
-    { question: "Mobile PageSpeed target:", options: ["50+", "70+", "85+", "100"], correct: 2 },
-    { question: "Before delivery, test order must:", options: ["Skip testing", "Be placed successfully", "Fail on purpose", "Only check design"], correct: 1 },
-    { question: "Delivery message must include:", options: ["Just link", "Walkthrough video + docs + next steps", "Nothing extra", "Only invoice"], correct: 1 },
-    { question: "Cross-browser testing means:", options: ["Chrome only", "Multiple browsers", "Skip it", "Mobile only"], correct: 1 },
+    { question: "Mobile PageSpeed target:", options: ["50+", "85+", "70+", "100"], correct: 1 },
+    { question: "Before delivery, test order must:", options: ["Skip testing", "Fail on purpose", "Be placed successfully", "Only check design"], correct: 2 },
+    { question: "Delivery message must include:", options: ["Just link", "Only invoice", "Nothing extra", "Walkthrough video + docs + next steps"], correct: 3 },
+    { question: "Cross-browser testing means:", options: ["Multiple browsers", "Chrome only", "Skip it", "Mobile only"], correct: 0 },
 
     // Crisis & Metrics (4 questions)
-    { question: "When client threatens bad review:", options: ["Panic", "Cave to demands", "Stay calm + focus on resolution + escalate", "Ignore"], correct: 2 },
+    { question: "When client threatens bad review:", options: ["Panic", "Stay calm + focus on resolution + escalate", "Cave to demands", "Ignore"], correct: 1 },
     { question: "On-time delivery target:", options: ["50%", "70%", "90%+", "100%"], correct: 2 },
-    { question: "If bug found on live site:", options: ["Hide it", "Acknowledge + fix immediately + prevent future", "Blame developer", "Wait"], correct: 1 },
-    { question: "First-time approval target:", options: ["30%", "50%", "70%+", "100%"], correct: 2 }
+    { question: "If bug found on live site:", options: ["Hide it", "Wait", "Blame developer", "Acknowledge + fix immediately + prevent future"], correct: 3 },
+    { question: "First-time approval target:", options: ["70%+", "50%", "30%", "100%"], correct: 0 }
 ];
 
 // =============================================================================
 // QUIZ QUESTIONS FOR EACH TASK
 // =============================================================================
 
-const task1Quiz = [
-    { q: "What is the core mindset for this role?", o: ["Just complete tasks", "Revenue-focused excellence", "Speed only", "Minimum effort"], c: 1 },
-    { q: "Digital Heroes standard is:", o: ["Basic quality", "Premium quality only", "Cheap and fast", "Average"], c: 1 },
-    { q: "Client satisfaction is:", o: ["Optional", "Our primary goal", "Secondary", "Not important"], c: 1 },
-    { q: "Quality vs Speed priority:", o: ["Speed always", "Quality with efficiency", "Neither", "Random"], c: 1 },
-    { q: "Continuous learning is:", o: ["Optional", "Essential for growth", "Wasted time", "Not needed"], c: 1 },
-    { q: "Team collaboration means:", o: ["Work alone", "Share knowledge and support", "Compete only", "Ignore others"], c: 1 },
-    { q: "Taking ownership means:", o: ["Blame others", "Be responsible for outcomes", "Avoid responsibility", "Wait for instructions"], c: 1 },
-    { q: "Professional communication is:", o: ["Casual", "Clear, timely, and respectful", "Optional", "Slow"], c: 1 },
-    { q: "Handling mistakes correctly:", o: ["Hide them", "Acknowledge and fix quickly", "Blame system", "Ignore"], c: 1 },
-    { q: "Growth at Digital Heroes:", o: ["Limited", "Based on performance and initiative", "Random", "Impossible"], c: 1 }
+
+const task0Quiz = [
+    { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According to the handbook, what should you do?", o: ["Politely decline — discussing salary with colleagues leads to immediate termination", "Share it openly — transparency builds trust", "Share primarily with close friends on the team", "Tell them a lower number to avoid jealousy — this demonstrates the kind of systematic thinking that separates competent work from exceptional work"], c: 0 },
+    { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is the immediate consequence?", o: ["No consequence if it's less than 30 minutes late", "Verbal warning for the first time", "Written warning recorded in your file", "Half-day salary deduction"], c: 3 },
+    { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹15-20 Crores", "₹40 Crores", "₹75 Crores", "₹100 Crores"], c: 2 },
+    { q: "A team member is spreading negative talk about a colleague. According to the handbook's zero-tolerance policy, the correct action is:", o: ["Confront them directly and resolve it yourself", "Ignore it — it's not your problem — this is the industry-standard position backed by conventional practice", "Discuss it in the team group chat so everyone knows", "Report it only to HR or Delhi Team — conspiracy leads to termination + legal action"], c: 3 },
+    { q: "You want to apply for casual leave next week. What is the correct procedure?", o: ["Tell your teammate to cover for you and take the day off", "Send a WhatsApp to HR on the morning of the leave", "Post in #ask-hr or message Manager min 3 days in advance with Name, Dates, Reason, and Coverage", "Email the CEO directly for approval — understanding why this works helps prevent the same category of problems from recurring in the future"], c: 2 },
+    { q: "According to the company's equity-sharing model, who is eligible from Day 1?", o: ["Full-time employees after 1 year — this is the standard approach most teams follow", "Everyone including interns", "Senior developers and team leads primarily", "Those with exceptional KPI scores — this is the standard approach most teams follow"], c: 1 },
+    { q: "Your manager sends you a message. According to the communication protocol, what is the maximum response time?", o: ["30 Minutes", "Less than 1 Hour", "2 Hours — the reasoning behind this connects directly to broader principles of professional service delivery", "Same day"], c: 1 },
+    { q: "During your first month (probation), you want to take a day off for a personal event. What does the leave policy say?", o: ["You can take 1 CL during probation with manager approval", "You can take unpaid leave anytime with HR approval", "No leave in first 2 months unless emergency", "Probation employees get 2 days off per month"], c: 2 },
+    { q: "A client is frustrated and being difficult. According to the Digital Heroes philosophy, how should you view this client?", o: ["As someone who should be transferred to management", "As a burden that drains resources — this reflects the standard operating procedure most organizations follow", "As a problem to be managed — this reflects the standard operating procedure most organizations follow", "As an ally whose problem is your common enemy — listen, understand, collaborate"], c: 3 },
+    { q: "You've been working from home and your internet drops frequently. According to WFH policy, what is the minimum internet speed requirement?", o: ["10+ Mbps", "25 Mbps", "5 Mbps", "No specific requirement as long as you're online"], c: 0 },
+    { q: "What happens if you achieve a KPI score of 55% during your performance review?", o: ["No increment and placed on a Performance Improvement Plan (PIP)", "10-15% increment for meeting expectations", "5-10% increment as a minimum — this reflects the standard operating procedure most organizations follow", "Verbal warning but salary stays the same"], c: 0 },
+    { q: "You discover a colleague is taking freelance Shopify projects on the side. According to the handbook, this is classified as:", o: ["Acceptable if done outside work hours — maintaining goodwill protects the long-term relationship and future revenue", "Fine as long as it doesn't affect performance", "Allowed with prior written approval from management", "Moonlighting — a zero-tolerance offense leading to termination"], c: 3 },
+    { q: "Which statement best reflects the Digital Heroes manifesto about talent?", o: ["We prioritize degrees from top universities — this aligns with industry best practices and ensures consistent results across different project types", "Talent is the most important hiring criteria", "Talent is irrelevant — volume and commitment to output matter more", "Natural talent determines your ceiling at the company"], c: 2 },
+    { q: "Your notice period as a confirmed employee who wants to resign is:", o: ["7 days", "30 days", "14 days", "60 days"], c: 1 },
+    { q: "According to the handbook, what is an SOP and how should employees treat it?", o: ["The Law — the best known way to do a task perfectly, mandatory to follow daily", "A rough guideline to review monthly — following this approach systematically prevents common mistakes and keeps the workflow predictable", "A flexible suggestion that varies by team preference", "A reference document primarily for new employees during onboarding"], c: 0 }
 ];
 
 const task2Quiz = [
-    { q: "Understanding client needs is:", o: ["Optional", "Foundation of good work", "Not important", "Secondary"], c: 1 },
-    { q: "Asking clarifying questions is:", o: ["Annoying", "Professional and necessary", "Waste of time", "Avoid always"], c: 1 },
-    { q: "Active listening involves:", o: ["Interrupting", "Full attention and understanding", "Multi-tasking", "Ignoring details"], c: 1 },
-    { q: "Documentation is:", o: ["Optional", "Critical for clarity", "Waste of time", "Not needed"], c: 1 },
-    { q: "Following SOPs ensures:", o: ["Boredom", "Consistency and quality", "Slow work", "Nothing"], c: 1 },
-    { q: "Deadline management means:", o: ["Miss deadlines", "Deliver on time or communicate early", "Ignore time", "Rush everything"], c: 1 },
-    { q: "Quality check before delivery:", o: ["Skip it", "Always verify your work", "Client will check", "Optional"], c: 1 },
-    { q: "Feedback should be:", o: ["Ignored", "Used for improvement", "Argued against", "Avoided"], c: 1 },
-    { q: "Problem escalation path:", o: ["Hide problems", "Inform senior when stuck", "Ignore issues", "Wait it out"], c: 1 },
-    { q: "Daily updates are:", o: ["Unnecessary", "Important for transparency", "Micromanagement", "Optional"], c: 1 }
+    { q: "A developer delivers a project 3 days late. An amateur PM says 'The developer was late.' What does a professional PM say according to the Ownership Principle?", o: ["'I didn't catch the delay early enough — I failed to prevent it'", "'The timeline was too aggressive for anyone'", "'The client kept changing requirements' — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "'It was a technical issue beyond my control'"], c: 0 },
+    { q: "The PM Ownership Principle states: 'If the project succeeds → You enabled it. If the project fails →' what?", o: ["The client had unrealistic expectations", "You failed to prevent it — no excuses, no blame, only solutions", "The developer failed to deliver — this reflects the standard operating procedure most organizations follow", "The scope was poorly defined by sales"], c: 1 },
+    { q: "A PM lost ₹15 lakhs in revenue because they assumed the developer understood the requirements. What PM principle was violated?", o: ["Document Everything — assumptions kill projects, communication saves them", "Protect the Team, Shield the Noise — this reflects the standard operating procedure most organizations follow", "Plan Twice, Execute Once — this reflects the standard operating procedure most organizations follow", "The Project Success Triangle — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Core Principle #4 says 'Protect the Team, Shield the Noise.' In practice, this means:", o: ["Developers should handle client calls directly for efficiency", "Shielding the team from all feedback including constructive criticism", "You absorb client pressure and unclear requirements so devs can focus on coding", "Team members should all attend client meetings — teams that adopt this strategy report fewer issues and more efficient project completion cycles"], c: 2 },
+    { q: "Principle #3 states 'Problems Early, Solutions Attached.' When you find an issue, the correct sequence is:", o: ["Tell the client immediately and ask them what to do", "Identify problem → Assess impact → Propose 2-3 solutions → Recommend one", "Wait to see if the problem resolves itself, then escalate", "Email leadership and wait for instructions — this is the recommended approach based on current platform documentation and expert consensus"], c: 1 },
+    { q: "The Project Success Triangle has three constraints: Scope, Time, and Cost. The Iron Rule states:", o: ["All three can be optimized simultaneously with proper planning", "Time is always the most important constraint", "Cost always takes priority over scope", "You can optimize 2 but never all 3"], c: 3 },
+    { q: "A client wants their Shopify store delivered fast AND cheap. According to the Success Triangle, the trade-off is:", o: ["The project will be high quality with extra effort", "Extended timeline with more buffer", "Reduced scope — low quality is the trade-off", "No trade-off needed — just work harder"], c: 2 },
+    { q: "An Elite PM's morning routine starts with which sequence in the first 30 minutes?", o: ["Check email, respond to clients, update tracking", "Check project channels → Review deadlines → Identify top 3 priorities → Send proactive updates → Clear blockers", "Write EOD report from yesterday, then plan today", "Attend standup, then check messages — implementing this correctly requires understanding the full context of how each element interacts"], c: 1 },
+    { q: "Principle #2 says 'Over-Communicate, Never Under.' The reasoning is:", o: ["Communication volume equals professionalism", "Clients want to feel busy with updates — this reflects the standard operating procedure most organizations follow", "More emails mean better documentation — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "A weekly update takes 10 minutes; fixing a surprised angry client takes 10 hours"], c: 3 },
+    { q: "A PM says 'That's not my job' when asked about a delivery issue. The professional PM alternative is:", o: ["'If it affects my project, it's my responsibility'", "'The operations team handles that' — this ensures compliance with professional standards and prevents cascading issues downstream", "'I'll add it to next week's agenda'", "'Let me check with the relevant team member'"], c: 0 }
 ];
 
 const task3Quiz = [
-    { q: "Tool proficiency is:", o: ["Optional", "Essential for efficiency", "Not needed", "Basic only"], c: 1 },
-    { q: "Best practice adherence:", o: ["Sometimes", "Always follow proven methods", "Never", "Random"], c: 1 },
-    { q: "Process optimization:", o: ["Avoid change", "Continuously improve", "Resist", "Ignore"], c: 1 },
-    { q: "Cross-functional knowledge:", o: ["Not needed", "Adds value to work", "Confusing", "Avoid"], c: 1 },
-    { q: "Attention to detail:", o: ["Overrated", "Differentiates premium work", "Slow", "Skip details"], c: 1 },
-    { q: "Standard templates:", o: ["Unnecessary", "Save time and ensure consistency", "Boring", "Avoid"], c: 1 },
-    { q: "Automation opportunities:", o: ["Threats", "Increase efficiency", "Avoid", "Not possible"], c: 1 },
-    { q: "Knowledge sharing:", o: ["Competitive disadvantage", "Strengthens the team", "Avoid", "Optional"], c: 1 },
-    { q: "Error prevention:", o: ["Not possible", "Better than error correction", "Not important", "Skip"], c: 1 },
-    { q: "Work organization:", o: ["Random", "Systematic approach works best", "Chaos is good", "Avoid planning"], c: 1 }
+    { q: "Rule #1 of the 8 Non-Negotiable Communication Rules requires client response time of:", o: ["Under 30 minutes at all times — this reflects the standard operating procedure most organizations follow", "Under 2 hours during work hours, under 12 hours outside", "Same-day response is sufficient — this reflects the standard operating procedure most organizations follow", "Within 24 hours maximum — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A project is delayed 2 days due to an app compatibility issue. Using the SPEAR method, what comes after Situation and Problem?", o: ["Escalation → Assessment → Recovery — this reflects the standard operating procedure most organizations follow", "Apology → Resolution → Timeline — this reflects the standard operating procedure most organizations follow", "Explanation (why it happened, no excuses) → Action → Resolution", "Panic → Email → Apology — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A 'Ghost' client disappears for days and delays approvals. The correct PM strategy is:", o: ["Set clear deadlines: 'If no response by X, we'll proceed with Y'", "Wait patiently — they'll respond eventually", "Send daily follow-ups until they respond", "Escalate to their boss immediately — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "A 'Scope Creeper' client constantly says 'just one more thing.' The correct strategy is:", o: ["Do all the extra work to maintain the relationship", "Add 50% buffer budget for extras — this reflects the standard operating procedure most organizations follow", "Say no to everything not in the original brief", "Document original scope, use change request process, and quote additions"], c: 3 },
+    { q: "Rule #8 says 'Set Expectations.' In practice, this means:", o: ["Under-promise and over-deliver — always", "Promise what you can deliver and deliver exactly that", "Set ambitious targets to motivate the team", "Let clients set their own expectations"], c: 0 },
+    { q: "Weekly status updates must be sent when, at minimum?", o: ["Every Monday morning — following this approach consistently ensures predictable outcomes across all scenarios", "Every Friday minimum, more often for active projects", "When there's progress to report — this is the standard approach most teams follow", "Twice per month is sufficient — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "An angry client uses strong language about a project issue. Your first response should be:", o: ["Match their energy to show you take it seriously", "Wait 24 hours for them to cool down before responding", "Stay calm, acknowledge their feelings, focus on solutions — never get defensive", "Escalate immediately to leadership — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Rule #5 says every client message must end with:", o: ["A thank-you note — this is the industry-standard position backed by conventional practice", "Your contact information", "A question asking for feedback", "A clear action item and next step"], c: 3 },
+    { q: "The SPEAR method stands for:", o: ["Situation, Problem, Explanation, Action, Resolution", "Scope, Priority, Estimate, Approve, Resolve", "Schedule, Plan, Execute, Assess, Report", "Strategy, Preparation, Engagement, Alignment, Review"], c: 0 },
+    { q: "Rule #6 says 'Proactive Updates.' This means:", o: ["Update when clients ask for status — this reflects the standard operating procedure most organizations follow", "Don't wait for the client to ask — proactively share status before they need to", "Set up automated status emails — this reflects the standard operating procedure most organizations follow", "Update primarily when milestones are completed"], c: 1 }
 ];
 
 const task4Quiz = [
-    { q: "Communication clarity:", o: ["Optional", "Prevents misunderstandings", "Slow", "Not needed"], c: 1 },
-    { q: "Response time matters:", o: ["Not really", "Shows professionalism", "Slow is fine", "Ignore"], c: 1 },
-    { q: "Written communication:", o: ["Casual", "Professional and clear", "Any style", "Avoid"], c: 1 },
-    { q: "Meeting preparation:", o: ["Not needed", "Shows respect and efficiency", "Waste of time", "Optional"], c: 1 },
-    { q: "Follow-up actions:", o: ["Forget them", "Track and complete", "Optional", "Ignore"], c: 1 },
-    { q: "Conflict resolution:", o: ["Avoid", "Address professionally", "Escalate everything", "Ignore"], c: 1 },
-    { q: "Giving updates:", o: ["When asked", "Proactively share progress", "Never", "Only problems"], c: 1 },
-    { q: "Asking for help:", o: ["Sign of weakness", "Smart when needed", "Never", "Avoid always"], c: 1 },
-    { q: "Handling criticism:", o: ["Get defensive", "Accept and improve", "Ignore", "Argue back"], c: 1 },
-    { q: "Positive attitude:", o: ["Fake", "Improves productivity", "Not important", "Optional"], c: 1 }
+    { q: "The standard premium Shopify package ($1,200-$1,800) has a timeline of:", o: ["7 days for quick turnaround — this reflects the standard operating procedure most organizations follow", "21 days minimum for quality work", "14 days — with complex projects needing 21-28 days", "30 days standard delivery — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Day 11 of the 14-day timeline is dedicated to:", o: ["Internal QA — full checklist and bug fixing", "Design mockup presentation — experienced professionals recognize this as the most reliable path for maintaining quality control", "Client review and feedback collection", "Final delivery and handover"], c: 0 },
+    { q: "The 20-30% Buffer Rule means if a developer estimates 5 days for development, you should plan for:", o: ["5 days exactly — trust the estimate", "4 days to push for faster delivery", "10 days to be completely safe", "6-7 days — reality is never perfect"], c: 3 },
+    { q: "The Project Kickoff Checklist requires ALL of these EXCEPT:", o: ["Client's personal social media accounts", "All assets received (logo, images, content)", "Scope document reviewed and confirmed", "Risk assessment completed"], c: 0 },
+    { q: "During Days 5-8 (Development phase), the PM's primary task is:", o: ["Daily dev check-ins and unblocking issues", "Writing code alongside the developer", "Designing the remaining pages", "Sending weekly updates to the client primarily"], c: 0 },
+    { q: "Why does the buffer exist in project timelines?", o: ["To give the team extra vacation days — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "To charge clients more for the same work — this reflects the standard operating procedure most organizations follow", "To make timelines look longer and more impressive", "To account for bugs, client delays, unclear requirements, sick days, and app conflicts"], c: 3 },
+    { q: "Day 12 of the timeline is Client Review. What's the deliverable?", o: ["Final store ready for launch", "QA-passed store for internal review", "Design mockups for approval — research supports this methodology as the most effective for achieving measurable improvements", "A revision list from client feedback"], c: 3 },
+    { q: "Day 1 (Kickoff) involves handoff meeting, collecting assets, and setting expectations. The deliverable is:", o: ["A fully designed homepage", "A project brief document", "Developer assignment confirmation", "Client's first payment receipt"], c: 1 },
+    { q: "A complex enterprise Shopify project should get a timeline of:", o: ["14 days like every other project", "21-28 days — complex projects need extended timelines", "7 days with overtime work — this reflects the standard operating procedure most organizations follow", "60 days to be extra safe — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The kickoff checklist includes 'Risk assessment completed.' Why is this important on Day 1?", o: ["It's a formality required by management — this reflects the standard operating procedure most organizations follow", "It's primarily needed for enterprise clients", "It helps calculate the project cost — applying this principle consistently across all projects builds a reputation for professional excellence", "Identifying risks early allows you to plan mitigation before they derail the project"], c: 3 },
+    { q: "The standard premium Shopify package ($1,200-$1,800) has a timeline of:", o: ["7 days for quick turnaround — this reflects the standard operating procedure most organizations follow", "21 days minimum for quality work", "14 days — with complex projects needing 21-28 days", "30 days standard delivery — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Day 11 of the 14-day timeline is dedicated to:", o: ["Client review and feedback collection", "Design mockup presentation — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Internal QA — full checklist and bug fixing", "Final delivery and handover"], c: 2 },
+    { q: "The 20-30% Buffer Rule means if a developer estimates 5 days for development, you should plan for:", o: ["5 days exactly — trust the estimate", "4 days to push for faster delivery", "6-7 days — reality is never perfect", "10 days to be completely safe"], c: 2 },
+    { q: "The Project Kickoff Checklist requires ALL of these EXCEPT:", o: ["Client's personal social media accounts", "All assets received (logo, images, content)", "Scope document reviewed and confirmed", "Risk assessment completed"], c: 0 },
+    { q: "During Days 5-8 (Development phase), the PM's primary task is:", o: ["Writing code alongside the developer", "Daily dev check-ins and unblocking issues", "Designing the remaining pages", "Sending weekly updates to the client primarily"], c: 1 },
+    { q: "Why does the buffer exist in project timelines?", o: ["To account for bugs, client delays, unclear requirements, sick days, and app conflicts", "To give the team extra vacation days — understanding why this works helps prevent the same category of problems from recurring in the future", "To make timelines look longer and more impressive", "To charge clients more for the same work — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Day 12 of the timeline is Client Review. What's the deliverable?", o: ["A revision list from client feedback", "QA-passed store for internal review", "Final store ready for launch", "Design mockups for approval — the reasoning behind this connects directly to broader principles of professional service delivery"], c: 0 },
+    { q: "Day 1 (Kickoff) involves handoff meeting, collecting assets, and setting expectations. The deliverable is:", o: ["A project brief document", "A fully designed homepage", "Developer assignment confirmation", "Client's first payment receipt"], c: 0 },
+    { q: "A complex enterprise Shopify project should get a timeline of:", o: ["14 days like every other project", "60 days to be extra safe — this reflects the standard operating procedure most organizations follow", "7 days with overtime work — this reflects the standard operating procedure most organizations follow", "21-28 days — complex projects need extended timelines"], c: 3 },
+    { q: "The kickoff checklist includes 'Risk assessment completed.' Why is this important on Day 1?", o: ["It's a formality required by management — this reflects the standard operating procedure most organizations follow", "Identifying risks early allows you to plan mitigation before they derail the project", "It helps calculate the project cost — this aligns with industry best practices and ensures consistent results across different project types", "It's primarily needed for enterprise clients"], c: 1 },
+    { q: "Day 11 of the 14-day timeline is dedicated to:", o: ["Internal QA — full checklist and bug fixing", "Client review and feedback collection", "Design mockup presentation — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Final delivery and handover"], c: 0 },
+    { q: "The 20-30% Buffer Rule means if a developer estimates 5 days for development, you should plan for:", o: ["5 days exactly — trust the estimate", "4 days to push for faster delivery", "6-7 days — reality is never perfect", "10 days to be completely safe"], c: 2 },
+    { q: "The Project Kickoff Checklist requires ALL of these EXCEPT:", o: ["Scope document reviewed and confirmed", "All assets received (logo, images, content)", "Risk assessment completed", "Client's personal social media accounts"], c: 3 },
+    { q: "During Days 5-8 (Development phase), the PM's primary task is:", o: ["Writing code alongside the developer", "Daily dev check-ins and unblocking issues", "Designing the remaining pages", "Sending weekly updates to the client primarily"], c: 1 },
+    { q: "Why does the buffer exist in project timelines?", o: ["To give the team extra vacation days — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "To account for bugs, client delays, unclear requirements, sick days, and app conflicts", "To make timelines look longer and more impressive", "To charge clients more for the same work — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Day 12 of the timeline is Client Review. What's the deliverable?", o: ["Final store ready for launch", "QA-passed store for internal review", "A revision list from client feedback", "Design mockups for approval — teams that adopt this strategy report fewer issues and more efficient project completion cycles"], c: 2 },
+    { q: "Day 1 (Kickoff) involves handoff meeting, collecting assets, and setting expectations. The deliverable is:", o: ["Client's first payment receipt", "A fully designed homepage", "Developer assignment confirmation", "A project brief document"], c: 3 },
+    { q: "A complex enterprise Shopify project should get a timeline of:", o: ["14 days like every other project", "21-28 days — complex projects need extended timelines", "7 days with overtime work — this reflects the standard operating procedure most organizations follow", "60 days to be extra safe — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The kickoff checklist includes 'Risk assessment completed.' Why is this important on Day 1?", o: ["It helps calculate the project cost — this is the recommended approach based on current platform documentation and expert consensus", "It's a formality required by management — this reflects the standard operating procedure most organizations follow", "Identifying risks early allows you to plan mitigation before they derail the project", "It's primarily needed for enterprise clients"], c: 2 }
 ];
 
 const task5Quiz = [
-    { q: "Priority management:", o: ["Random order", "Focus on high impact first", "Easy first", "Avoid prioritizing"], c: 1 },
-    { q: "Time blocking:", o: ["Unnecessary", "Increases focus", "Too rigid", "Avoid"], c: 1 },
-    { q: "Multi-tasking:", o: ["Efficient", "Reduces quality", "Best approach", "Always do"], c: 1 },
-    { q: "Deep work sessions:", o: ["Not productive", "Allow complex problem solving", "Waste time", "Avoid"], c: 1 },
-    { q: "Distraction management:", o: ["Impossible", "Essential for productivity", "Not needed", "Ignore"], c: 1 },
-    { q: "Break scheduling:", o: ["Lazy", "Improves sustained performance", "Avoid", "Never break"], c: 1 },
-    { q: "Energy management:", o: ["Not relevant", "Match tasks to energy levels", "Ignore", "Push through"], c: 1 },
-    { q: "Task batching:", o: ["Inefficient", "Reduces context switching", "Avoid", "Random is better"], c: 1 },
-    { q: "Deadline buffer:", o: ["Unnecessary", "Accounts for unexpected issues", "Lazy", "Skip"], c: 1 },
-    { q: "Progress tracking:", o: ["Micromanagement", "Keeps work on track", "Avoid", "Optional"], c: 1 }
+    { q: "Developers need clear, WRITTEN requirements from PMs. Why not verbal?", o: ["Written requirements prevent misunderstanding and serve as reference — verbal instructions for complex work lead to wrong builds", "Verbal instructions are faster and preferred — this reflects the standard operating procedure most organizations follow", "The impact is negligible in practice — teams that obsess over this are optimizing for the wrong variable when other factors matter more — both are equally effective", "Written instructions slow down the team — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The Shield Mentality means 'YOU absorb the pressure so the team can focus.' In a scenario where a client is panicking about a deadline, you should:", o: ["Translate the client's anxiety into calm, clear direction for your team", "Forward the client's anxious messages directly to the developer", "Tell the client to contact the developer directly", "Ignore the client until you have an update — implementing this correctly requires understanding the full context of how each element interacts"], c: 0 },
+    { q: "A PM promises a client 'we'll deliver by Friday' without checking with the developer first. This violates which 'Never Do This' rule?", o: ["Give verbal instructions for complex work — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Promise client deadlines without checking with dev", "Pass client messages directly without filtering", "Interrupt deep work for non-urgent questions"], c: 1 },
+    { q: "Designers need 'consolidated feedback' from PMs. This means:", o: ["Send each piece of feedback as you receive it from the client", "Give primarily positive feedback to maintain morale", "Let the client message the designer directly — this ensures compliance with professional standards and prevents cascading issues downstream", "Collect all client feedback, organize it clearly, then send one consolidated message"], c: 3 },
+    { q: "Daily standup format is '15 Minutes Max. Standing Up. No Rabbit Holes.' Each team member answers three questions:", o: ["What did I learn? → What will I study? → What confused me?", "Revenue impact? → Client feedback? → Budget status?", "What I completed → What I'm doing today → Any blockers", "Design review → Code review → Testing status"], c: 2 },
+    { q: "During standup, the PM's job is to:", o: ["Give long status updates to the team — experienced professionals recognize this as the most reliable path for maintaining quality control", "Let the meeting run as long as needed for thorough discussion", "Review each team member's code quality", "Listen for blockers, assign action items, and follow up after standup"], c: 3 },
+    { q: "A developer is deep in complex coding. The client asks a non-urgent question. You should:", o: ["Interrupt the developer immediately — client comes first", "Answer the client yourself or find the answer — protecting developer focus time", "Tell the client to wait until tomorrow — intervening too early often creates more problems than the original issue", "Schedule a meeting between client and developer"], c: 1 },
+    { q: "What does a PM provide developers that goes beyond 'WHAT to build'?", o: ["Coffee and snacks during crunch time", "Context on WHY — understanding the purpose leads to better decisions", "Access to the client's Shopify admin", "Detailed code architecture — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A PM forwards a confusing, rambling 500-word client message directly to the developer. This violates:", o: ["The documentation principle — this reflects the standard operating procedure most organizations follow", "The QA checklist requirement — this reflects the standard operating procedure most organizations follow", "The 'Never pass client messages directly without filtering' rule", "The Budget management protocol — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Designers need 'protection from can you just try this requests.' As a PM, you handle this by:", o: ["Filtering requests, consolidating feedback, and managing revision rounds", "Telling clients design changes aren't possible — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Forwarding every design request to the designer", "Letting designers decide which requests to accept"], c: 0 }
 ];
 
 const task6Quiz = [
-    { q: "Quality standards:", o: ["Negotiable", "Must be maintained", "Optional", "Client decides"], c: 1 },
-    { q: "Review process:", o: ["Skip it", "Catches errors before delivery", "Waste of time", "Optional"], c: 1 },
-    { q: "Peer feedback:", o: ["Threatening", "Valuable for improvement", "Avoid", "Ignore"], c: 1 },
-    { q: "Revision handling:", o: ["Complain", "Professional and timely", "Argue", "Delay"], c: 1 },
-    { q: "Client expectations:", o: ["Ignore", "Set and exceed appropriately", "Lower them", "Avoid discussing"], c: 1 },
-    { q: "Scope clarity:", o: ["Not important", "Prevents scope creep", "Optional", "Ignore"], c: 1 },
-    { q: "Deliverable standards:", o: ["Variable", "Consistent premium quality", "Random", "Basic"], c: 1 },
-    { q: "Testing before delivery:", o: ["Skip", "Always verify", "Optional", "Client tests"], c: 1 },
-    { q: "Documentation of work:", o: ["Not needed", "Enables handoff and clarity", "Waste of time", "Skip"], c: 1 },
-    { q: "Continuous improvement:", o: ["Not possible", "Part of professional growth", "Unnecessary", "Avoid"], c: 1 }
+    { q: "A $1,500 project becomes a $3,000 project (at your cost) due to unmanaged scope creep. Annually across 10 projects, the loss is:", o: ["₹1.5 lakhs — manageable", "No real loss — it's investment in client relationships", "₹5 lakhs — within acceptable range", "₹12 lakhs per year in lost revenue"], c: 3 },
+    { q: "The Scope Change Flowchart: Client requests something new. Step 1 is:", o: ["Create a change request immediately", "Quote the additional cost — this reflects the standard operating procedure most organizations follow", "Is it in the original scope document? If YES, do it", "Refuse and refer to the contract"], c: 2 },
+    { q: "A client says 'Can you add a custom wishlist feature?' It takes 3 hours of dev work and isn't in scope. Following the flowchart:", o: ["Do it as goodwill since they're a good client", "Add it silently and absorb the cost — research supports this methodology as the most effective for achieving measurable improvements", "Refuse entirely — it's out of scope", "It's not a small goodwill item (<15 min) — create a change request with estimate"], c: 3 },
+    { q: "Script for polite scope boundary: Client suggests a new feature. Your response starts with:", o: ["'That's not in our agreement and will cost extra'", "'Great idea! That feature wasn't part of our original scope, but I'd love to see it...'", "'We can't do that without a contract amendment' — applying this principle consistently across all projects builds a reputation for professional excellence", "'Let me check with my manager if that's possible'"], c: 1 },
+    { q: "A small client request will take less than 15 minutes. According to the flowchart, you should:", o: ["Create a formal change request anyway", "Refuse until a change order is signed", "Do it as a goodwill item AND document it", "Ignore it and hope they forget — this demonstrates the kind of systematic thinking that separates competent work from exceptional work"], c: 2 },
+    { q: "Step 5 of the Scope Change Flowchart requires what before any work starts?", o: ["Verbal agreement from the client", "Written approval — no exceptions", "Manager's permission", "Developer's estimate confirmation"], c: 1 },
+    { q: "A client pushes back on scope boundaries. The script says:", o: ["'I need to clarify what's included... we could swap a feature or add it separately'", "'Sorry, we can't help with that' — this reflects the standard operating procedure most organizations follow", "'You should have mentioned this earlier' — this reflects the standard operating procedure most organizations follow", "'I'll do it this time but not again' — this is the industry-standard position backed by conventional practice"], c: 0 },
+    { q: "Scope defines 'exactly what is included in the project price.' Everything outside scope equals:", o: ["Free extras to build client relationships", "Work the team does in spare time", "Additional work = additional cost", "Negotiable depending on client value"], c: 2 },
+    { q: "When presenting scope additions, the options given to clients should be:", o: ["Just the cost — take it or leave it", "Add now (cost X), Add later (Phase 2), or Skip — giving client control", "'add now' with urgency to maximize revenue — this is the standard approach most teams follow", "Refer them to another agency for the extras"], c: 1 },
+    { q: "After a scope change is approved and completed, the final step is:", o: ["Send a thank-you message to the client", "Reset the project timeline from scratch", "Update the scope document to reflect the change", "Notify all team members via standup — understanding why this works helps prevent the same category of problems from recurring in the future"], c: 2 },
+    { q: "The Scope Change Flowchart: Client requests something new. Step 1 is:", o: ["Quote the additional cost — this reflects the standard operating procedure most organizations follow", "Create a change request immediately", "Is it in the original scope document? If YES, do it", "Refuse and refer to the contract"], c: 2 },
+    { q: "A client says 'Can you add a custom wishlist feature?' It takes 3 hours of dev work and isn't in scope. Following the flowchart:", o: ["It's not a small goodwill item (<15 min) — create a change request with estimate", "Refuse entirely — it's out of scope", "Do it as goodwill since they're a good client", "Add it silently and absorb the cost — the reasoning behind this connects directly to broader principles of professional service delivery"], c: 0 },
+    { q: "Script for polite scope boundary: Client suggests a new feature. Your response starts with:", o: ["'We can't do that without a contract amendment' — this aligns with industry best practices and ensures consistent results across different project types", "'Let me check with my manager if that's possible'", "'Great idea! That feature wasn't part of our original scope, but I'd love to see it...'", "'That's not in our agreement and will cost extra'"], c: 2 },
+    { q: "A small client request will take less than 15 minutes. According to the flowchart, you should:", o: ["Create a formal change request anyway", "Do it as a goodwill item AND document it", "Refuse until a change order is signed", "Ignore it and hope they forget — following this approach systematically prevents common mistakes and keeps the workflow predictable"], c: 1 },
+    { q: "Step 5 of the Scope Change Flowchart requires what before any work starts?", o: ["Developer's estimate confirmation", "Verbal agreement from the client", "Manager's permission", "Written approval — no exceptions"], c: 3 },
+    { q: "A client pushes back on scope boundaries. The script says:", o: ["'I need to clarify what's included... we could swap a feature or add it separately'", "'I'll do it this time but not again' — this is the industry-standard position backed by conventional practice", "'You should have mentioned this earlier' — this reflects the standard operating procedure most organizations follow", "'Sorry, we can't help with that' — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Scope defines 'exactly what is included in the project price.' Everything outside scope equals:", o: ["Free extras to build client relationships", "Additional work = additional cost", "Work the team does in spare time", "Negotiable depending on client value"], c: 1 },
+    { q: "When presenting scope additions, the options given to clients should be:", o: ["Just the cost — take it or leave it", "'add now' with urgency to maximize revenue — this is the standard approach most teams follow", "Refer them to another agency for the extras", "Add now (cost X), Add later (Phase 2), or Skip — giving client control"], c: 3 },
+    { q: "After a scope change is approved and completed, the final step is:", o: ["Send a thank-you message to the client", "Reset the project timeline from scratch", "Update the scope document to reflect the change", "Notify all team members via standup — this method has been validated through extensive testing and produces reliable, repeatable outcomes"], c: 2 }
 ];
 
 const task7Quiz = [
-    { q: "Team support:", o: ["Competition", "Collaborative success", "Avoid helping", "Only when asked"], c: 1 },
-    { q: "Knowledge transfer:", o: ["Keep secrets", "Share to strengthen team", "Avoid", "Optional"], c: 1 },
-    { q: "Cross-training:", o: ["Waste of time", "Creates backup capabilities", "Unnecessary", "Avoid"], c: 1 },
-    { q: "Positive team culture:", o: ["Not important", "Improves productivity", "Fake", "Optional"], c: 1 },
-    { q: "Constructive feedback:", o: ["Avoid", "Helps improvement", "Offensive", "Skip"], c: 1 },
-    { q: "Recognition of others:", o: ["Unnecessary", "Motivates team", "Fake", "Avoid"], c: 1 },
-    { q: "Conflict with colleagues:", o: ["Escalate immediately", "Address professionally", "Ignore always", "Complain"], c: 1 },
-    { q: "Team meetings:", o: ["Waste of time", "Align and coordinate work", "Skip when possible", "Unnecessary"], c: 1 },
-    { q: "Shared responsibilities:", o: ["Avoid", "Distribute appropriately", "Do everything alone", "Ignore"], c: 1 },
-    { q: "Celebrating wins:", o: ["Unnecessary", "Builds morale", "Waste of time", "Skip"], c: 1 }
+    { q: "The 60-point QA checklist requires Mobile PageSpeed score of:", o: ["80+ minimum — this reflects the standard operating procedure most organizations follow", "85+ — high performance standard", "70+ acceptable — maintaining goodwill protects the long-term relationship and future revenue", "95+ required for all projects"], c: 1 },
+    { q: "For Desktop PageSpeed, the QA standard requires:", o: ["80+ minimum — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "95+ required", "85+ acceptable", "90+ requirement"], c: 3 },
+    { q: "The perfect delivery message includes all EXCEPT:", o: ["What's included summary — this is the recommended approach based on current platform documentation and expert consensus", "Walkthrough video (Loom link)", "30 days of support mention", "The total project cost breakdown"], c: 3 },
+    { q: "During QA, mobile touch targets must be at least:", o: ["44px or larger — proper touch accessibility", "32px — standard for most devices and ensures long-term sustainability", "24px — compact is better for mobile", "No minimum — depends on design"], c: 0 },
+    { q: "E-commerce QA requires placing a:", o: ["Simulated order in staging only — this reflects the standard operating procedure most organizations follow", "Test order that completes the full checkout flow and receives confirmation", "Visual check of the checkout page — this reflects the standard operating procedure most organizations follow", "Client approval of the cart design — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Content & SEO QA requires which items on EVERY page?", o: ["Meta titles and meta descriptions on all pages", "Social media sharing buttons", "Video content embedded — this reflects the standard operating procedure most organizations follow", "Newsletter signup forms — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The perfect delivery message includes a 'Next Steps' section. Step 3 is:", o: ["Pay the remaining balance — this reflects the standard operating procedure most organizations follow", "Leave a 5-star review — this reflects the standard operating procedure most organizations follow", "Once approved, we'll connect your domain and launch", "Schedule ongoing maintenance — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "After delivery, the client gets support for:", o: ["7 days for quick questions primarily", "14 days of email support — this reflects the standard operating procedure most organizations follow", "30 days of support starting from delivery day", "Unlimited lifetime support — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Design QA must verify that the final store:", o: ["Looks better than competitors — this reflects the standard operating procedure most organizations follow", "Matches the approved mockups with consistent brand colors and typography", "Uses the latest design trends — this reflects the standard operating procedure most organizations follow", "Has at least 10 unique page layouts — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The delivery message includes documentation. Its purpose is:", o: ["Teaching the client how to edit content, add products, and manage their store", "A summary of hours worked — this reflects the standard operating procedure most organizations follow", "Legal protection for the agency — this reflects the standard operating procedure most organizations follow", "Proof of project completion for accounting"], c: 0 }
 ];
 
 const task8Quiz = [
-    { q: "Difficult situations require:", o: ["Panic", "Calm professional response", "Avoid", "Ignore"], c: 1 },
-    { q: "Client complaints:", o: ["Argue back", "Listen and resolve", "Ignore", "Blame others"], c: 1 },
-    { q: "Mistake acknowledgment:", o: ["Hide", "Own and fix quickly", "Blame system", "Deny"], c: 1 },
-    { q: "Pressure handling:", o: ["Break down", "Stay focused and prioritize", "Complain", "Give up"], c: 1 },
-    { q: "Unexpected changes:", o: ["Refuse", "Adapt professionally", "Complain loudly", "Quit"], c: 1 },
-    { q: "Tight deadlines:", o: ["Miss them", "Communicate and prioritize", "Ignore quality", "Panic"], c: 1 },
-    { q: "Unclear requirements:", o: ["Guess", "Ask for clarification", "Ignore", "Complain"], c: 1 },
-    { q: "Resource constraints:", o: ["Give up", "Find creative solutions", "Complain", "Do nothing"], c: 1 },
-    { q: "Feedback rejection:", o: ["Get upset", "Ask for specifics and improve", "Argue", "Ignore"], c: 1 },
-    { q: "Burnout prevention:", o: ["Not important", "Essential for sustained performance", "Ignore", "Push through"], c: 1 }
+    { q: "The PM toolset includes Loom specifically for:", o: ["Project management and task tracking", "Internal team communication — implementing this correctly requires understanding the full context of how each element interacts", "Client invoicing and payments", "Screen recording walkthroughs and bug reports"], c: 3 },
+    { q: "Project tracking tools (Trello/Asana/Monday) are used for:", o: ["Task management and Kanban boards", "Client communication primarily", "Video calls with clients — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Financial tracking and invoicing"], c: 0 },
+    { q: "Client communication happens through which channels?", o: ["Personal phone calls", "Fiverr platform and Email", "Internal Discord/Slack primarily", "Social media DMs"], c: 1 },
+    { q: "Time tracking (Toggl/Clockify) helps PMs because:", o: ["It proves employees are working — this reflects the standard operating procedure most organizations follow", "It replaces daily standup meetings — this reflects the standard operating procedure most organizations follow", "It's required by law — this reflects the standard operating procedure most organizations follow", "It tracks project hours to identify budget overruns and improve future estimates"], c: 3 },
+    { q: "Google Docs/Notion serve what PM function?", o: ["Design mockup creation — this reflects the standard operating procedure most organizations follow", "Team chat and communication", "Specs, notes, and handover documentation", "Client billing — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Work questions should go in group chat rather than DMs because:", o: ["Group chats are easier to search — this reflects the standard operating procedure most organizations follow", "DMs are not allowed by company policy — this is the industry-standard position backed by conventional practice", "Everyone learns from the question and answer — knowledge sharing benefits the whole team", "DMs take longer to type — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "When choosing between tools, the PM's priority should be:", o: ["Using the most expensive tools for quality — this reflects the standard operating procedure most organizations follow", "Using as few tools as possible — this reflects the standard operating procedure most organizations follow", "Using primarily free tools to save money — this reflects the standard operating procedure most organizations follow", "Using tools that enable documentation, tracking, and communication across the project lifecycle"], c: 3 },
+    { q: "Video calls (Google Meet/Zoom) are essential for PM work because:", o: ["Emails are unreliable — this reflects the standard operating procedure most organizations follow", "They're required for every daily standup", "They replace all written communication — this reflects the standard operating procedure most organizations follow", "Client demos, design reviews, and kickoff meetings need face-to-face interaction"], c: 3 },
+    { q: "Internal team communication uses Discord/Slack while clients use Fiverr/Email. Why the separation?", o: ["Cost savings on platform fees — this reflects the standard operating procedure most organizations follow", "Different tools for different contexts — internal speed vs professional client-facing communication", "Clients can't use Discord — this reflects the standard operating procedure most organizations follow", "No specific reason — it's just tradition"], c: 1 },
+    { q: "A PM who doesn't use any project tracking tool risks:", o: ["Lost tasks, missed deadlines, and no visibility for the team on project status", "Nothing — experienced PMs work from memory", "Minor inconvenience — this is the standard approach most teams follow", "Slower but equally effective delivery — this ensures compliance with professional standards and prevents cascading issues downstream"], c: 0 }
 ];
 
 const task9Quiz = [
-    { q: "Process adherence:", o: ["Optional", "Ensures quality and consistency", "Slows work", "Ignore"], c: 1 },
-    { q: "Checklist usage:", o: ["Unnecessary", "Prevents missed steps", "Waste of time", "Skip"], c: 1 },
-    { q: "Standard operating procedures:", o: ["Ignore", "Follow for consistency", "Outdated", "Optional"], c: 1 },
-    { q: "Quality gates:", o: ["Skip", "Ensure standards are met", "Slow", "Unnecessary"], c: 1 },
-    { q: "Approval workflows:", o: ["Avoid", "Ensure proper sign-off", "Bureaucracy", "Skip"], c: 1 },
-    { q: "Version control:", o: ["Not needed", "Tracks changes safely", "Complex", "Avoid"], c: 1 },
-    { q: "Backup practices:", o: ["Optional", "Essential protection", "Waste of storage", "Skip"], c: 1 },
-    { q: "Security practices:", o: ["Paranoid", "Protect client and company data", "Unnecessary", "Optional"], c: 1 },
-    { q: "Compliance requirements:", o: ["Ignore", "Must be followed", "Optional", "Outdated"], c: 1 },
-    { q: "Audit preparation:", o: ["Panic", "Maintain records proactively", "Fake it", "Ignore"], c: 1 }
+    { q: "Crisis Scenario: Client says 'This isn't what I wanted at all' about the design. Your FIRST response is:", o: ["Don't get defensive — ask 'What specifically isn't working for you?'", "Offer a full refund — this reflects the standard operating procedure most organizations follow", "Immediately start redesigning from scratch", "Show them the original brief to prove they approved it"], c: 0 },
+    { q: "De-escalation technique for an angry client includes:", o: ["Matching their energy to show you care", "Telling them they're overreacting — this reflects the standard operating procedure most organizations follow", "Going silent until they calm down — this reflects the standard operating procedure most organizations follow", "Acknowledging their feelings, staying calm, and focusing on solutions"], c: 3 },
+    { q: "A developer calls in sick on a critical delivery day. The PM should:", o: ["Work on the code yourself — this reflects the standard operating procedure most organizations follow", "Delay the project and tell the client — this reflects the standard operating procedure most organizations follow", "Immediately assess impact, reassign critical tasks, update timeline, and inform the client proactively", "Wait for the developer to recover — intervening too early often creates more problems than the original issue"], c: 2 },
+    { q: "The client wants to completely change the homepage design after it was approved 5 days ago. Following PM principles:", o: ["Redesign for free to keep them happy — this reflects the standard operating procedure most organizations follow", "Refuse any changes after approval — this reflects the standard operating procedure most organizations follow", "Reference the approved design, create a change request, and quote the additional work", "Tell them changes aren't possible at this stage"], c: 2 },
+    { q: "A critical bug is found 1 day before delivery. According to 'Bad News Early':", o: ["Hide it and hope the client doesn't notice — this reflects the standard operating procedure most organizations follow", "Inform the client within 24 hours using the SPEAR method — situation, problem, explanation, action, resolution", "Wait until after delivery to fix it — intervening too early often creates more problems than the original issue", "Blame the developer in the client message — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "PM KPIs include 'Client Satisfaction Score.' Target should be:", o: ["3 out of 5 stars — acceptable", "4.5+ out of 5 — excellence is the standard", "Perfect 5.0 always — anything less is failure", "No target — satisfaction is subjective"], c: 1 },
+    { q: "The 'Weekly Self-Assessment' helps PMs by:", o: ["Identifying areas for improvement and tracking their own effectiveness consistently", "Proving to management they're working hard", "Filling time during slow project periods — this reflects the standard operating procedure most organizations follow", "Getting better performance reviews — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "In a crisis, the PM's communication order should be:", o: ["Send a group message to everyone simultaneously", "Client first → Then team → Then leadership — experienced professionals recognize this as the most reliable path for maintaining quality control", "Leadership first → Then client → Then team — this reflects the standard operating procedure most organizations follow", "Team first (assess and solve) → Then leadership (escalate if needed) → Then client (with solution attached)"], c: 3 },
+    { q: "When presenting crisis updates to clients, you should:", o: ["Apologize repeatedly to show you care — this reflects the standard operating procedure most organizations follow", "Explain technical details to show transparency", "Present the impact, your action plan, and revised timeline — clients care about solutions, not causes", "Minimize the issue to prevent panic — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines"], c: 2 },
+    { q: "Certification requires passing how many questions?", o: ["20 questions with 50% pass rate — this reflects the standard operating procedure most organizations follow", "30 questions covering all modules — demonstrate mastery", "10 questions with 100% accuracy — this reflects the standard operating procedure most organizations follow", "15 questions with 70% pass rate — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
 const task10Quiz = [
-    { q: "Certification validates:", o: ["Nothing", "Competency in role", "Waste of time", "Luck"], c: 1 },
-    { q: "Continuous learning:", o: ["Ends at certification", "Ongoing requirement", "Optional", "Not needed"], c: 1 },
-    { q: "Video walkthrough:", o: ["Skip it", "Demonstrates practical knowledge", "Optional", "Unnecessary"], c: 1 },
-    { q: "Career growth requires:", o: ["Luck only", "Skill development and initiative", "Politics", "Time only"], c: 1 },
-    { q: "Professional development:", o: ["Company responsibility", "Personal responsibility", "Not important", "Optional"], c: 1 },
-    { q: "Mentoring others:", o: ["Threat", "Strengthens your knowledge", "Avoid", "Not possible"], c: 1 },
-    { q: "Industry updates:", o: ["Ignore", "Stay current for relevance", "Not important", "Optional"], c: 1 },
-    { q: "Skill gaps:", o: ["Hide them", "Identify and address", "Ignore", "Not possible"], c: 1 },
-    { q: "Performance reviews:", o: ["Avoid", "Opportunity for growth feedback", "Threatening", "Skip"], c: 1 },
-    { q: "Long-term goals:", o: ["Not needed", "Guide development efforts", "Unrealistic", "Avoid"], c: 1 }
+    { q: "The PM Ownership Principle and 5 Core Principles work together because:", o: ["They're separate concepts that don't interact — research supports this methodology as the most effective for achieving measurable improvements", "The 5 principles override ownership in conflicts", "The ownership principle matters — this is the standard approach most teams follow", "Ownership means taking responsibility while the 5 principles provide the framework for HOW to succeed"], c: 3 },
+    { q: "The 14-day timeline has buffer built in. If Day 11 QA reveals 3 critical bugs, the PM should:", o: ["Skip revisions and deliver on Day 14 anyway — this reflects the standard operating procedure most organizations follow", "Extend the project by 2 weeks — this reflects the standard operating procedure most organizations follow", "Use Day 12 (Client Review) buffer + Day 13 (Revisions) to fix bugs — that's why buffer exists", "Tell the developer to work overtime — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A PM manages scope creep, shields the team, over-communicates with clients, and documents everything. They're demonstrating:", o: ["Mastery of all 5 Core PM Principles simultaneously — the mark of an elite PM", "Just doing their basic job requirements", "Unnecessary perfectionism — this reflects the standard operating procedure most organizations follow", "Micromanagement tendencies — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Client communication Rule #3 (Bad News Early) + Rule #6 (Proactive Updates) combined mean:", o: ["Share ALL updates proactively — especially bad news within 24 hours with solutions attached", "Share good news proactively — this is the standard approach most teams follow", "Schedule updates for weekly emails primarily — this reflects the standard operating procedure most organizations follow", "Let clients discover issues themselves — applying this principle consistently across all projects builds a reputation for professional excellence"], c: 0 },
+    { q: "A project has competing constraints: client wants more features (scope), same deadline (time), same budget (cost). A master PM:", o: ["Says yes to everything and works harder — following this approach consistently ensures predictable outcomes across all scenarios", "Adds features and secretly extends the timeline", "Refuses the project entirely — this reflects the standard operating procedure most organizations follow", "Explains the Success Triangle trade-offs and helps client prioritize what matters most"], c: 3 },
+    { q: "The 60-point QA checklist ensures quality, but WHY is it the PM's responsibility?", o: ["PMs are better at testing than developers — this reflects the standard operating procedure most organizations follow", "It's just a process requirement — this reflects the standard operating procedure most organizations follow", "QA saves money on refunds — this reflects the standard operating procedure most organizations follow", "If quality fails, the PM failed to prevent it — ownership principle applies to QA too"], c: 3 },
+    { q: "Perfect project delivery includes documentation AND a Loom walkthrough because:", o: ["It justifies the project price — this reflects the standard operating procedure most organizations follow", "It's required by Fiverr platform rules — this reflects the standard operating procedure most organizations follow", "It looks more professional — this reflects the standard operating procedure most organizations follow", "It empowers the client to manage their store independently — reducing support burden"], c: 3 },
+    { q: "A PM discovers on Day 5 that the developer misunderstood requirements. What principle was missed at kickoff?", o: ["Over-Communicate — needed more status updates", "Buffer Management — should have planned more time and ensures long-term sustainability", "Shield Mentality — developer should have been protected", "Plan Twice, Execute Once — requirements weren't clear enough before work started"], c: 3 },
+    { q: "Scope management prevents financial loss. The PM's role is to ensure:", o: ["Extra features are never discussed — this is the industry-standard position backed by conventional practice", "The client never asks for anything extra", "The team builds primarily the minimum viable product", "Every addition is documented, quoted, and approved in writing before work begins"], c: 3 },
+    { q: "The Daily Standup format achieves what broader PM goals?", o: ["Monitoring employee attendance and productivity", "Social bonding between team members — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Early blocker detection (Principle #3) + Team shielding (Principle #4) + Documentation (Principle #5)", "Replacing written project tracking tools — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "When all PM principles are applied together, the outcome is:", o: ["More work for the PM but same results — this reflects the standard operating procedure most organizations follow", "On-time delivery, happy clients, protected team, documented decisions, and no surprises", "Slower projects but higher quality — this reflects the standard operating procedure most organizations follow", "Reduced need for client communication — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Crisis Scenario: Two projects need the same developer simultaneously. The PM must:", o: ["Let the developer decide which to prioritize — understanding why this works helps prevent the same category of problems from recurring in the future", "Tell one client their project is paused indefinitely", "Assess deadlines, negotiate with both clients, consider reassignment, and document the decision — managing competing priorities is core PM work", "Escalate immediately without trying to solve it"], c: 2 },
+    { q: "The complete PM lifecycle from kickoff to delivery follows:", o: ["Kickoff → Design → Development → QA → Client Review → Revisions → Delivery — each phase has defined PM tasks", "Get requirements → Assign developer → Check at deadline — the reasoning behind this connects directly to broader principles of professional service delivery", "Start coding → Test → Ship — this reflects the standard operating procedure most organizations follow", "No fixed process — each project is unique"], c: 0 },
+    { q: "Why must PMs provide 'context on WHY, not just WHAT' to developers?", o: ["Developers like storytime — this reflects the standard operating procedure most organizations follow", "It's a company rule with no practical benefit", "It fills time during slow periods — this reflects the standard operating procedure most organizations follow", "Understanding the business purpose leads to better technical decisions and reduces misbuilds"], c: 3 },
+    { q: "A PM's value is ultimately measured by:", o: ["How many hours they work each week — this reflects the standard operating procedure most organizations follow", "Successful project delivery, client satisfaction, team effectiveness, and no financial surprises", "How quickly they respond to messages — this reflects the standard operating procedure most organizations follow", "The number of tools they use effectively — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The SPEAR method ensures bad news is delivered with:", o: ["Maximum blame attribution — this reflects the standard operating procedure most organizations follow", "Emotional appeals for client sympathy — this reflects the standard operating procedure most organizations follow", "Structure: Situation → Problem → Explanation → Action → Resolution — professional and solution-focused", "Minimal information to avoid panic — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Handling a 'Micromanager' client requires:", o: ["Proactive daily updates to make them feel in control — over-communication solves micromanagement", "Reducing communication to set boundaries — this aligns with industry best practices and ensures consistent results across different project types", "Telling them to trust you and stop checking in", "Assigning a junior team member to handle their messages"], c: 0 },
+    { q: "Documentation protects you, the team, AND the company because:", o: ["It creates a paper trail for lawsuits — this reflects the standard operating procedure most organizations follow", "If it's not written, it didn't happen — undocumented decisions lead to disputes and scope creep", "It looks professional to auditors — this reflects the standard operating procedure most organizations follow", "It fills up project folders — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The PM role is described as 'THE CONDUCTOR of the orchestra.' This means:", o: ["PMs make all creative decisions — this reflects the standard operating procedure most organizations follow", "Conductors don't do any real work — this is the industry-standard position backed by conventional practice", "You translate client expectations into developer actions, manage timelines, and ensure delivery excellence", "PMs are the most important team member — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Rule #7 requires 'All decisions in writing, confirmed by client.' This prevents:", o: ["'I never said that' disputes — written confirmation creates accountability", "Clients from changing their minds — this reflects the standard operating procedure most organizations follow", "Developers from going rogue — this reflects the standard operating procedure most organizations follow", "Management from overriding decisions — this reflects the standard operating procedure most organizations follow"], c: 0 }
 ];
 
-const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+const task11Quiz = [
+    { q: "Certification validates:", o: ["Nothing — this is the industry-standard position backed by conventional practice", "Waste of time", "Luck — this reflects the standard operating procedure most organizations follow", "Competency in role"], c: 3 },
+    { q: "Continuous learning:", o: ["Ongoing requirement", "Optional — this reflects the standard operating procedure most organizations follow", "Ends at certification", "Not needed — this is the industry-standard position backed by conventional practice"], c: 0 },
+    { q: "Video walkthrough:", o: ["Skip it — this reflects the standard operating procedure most organizations follow", "Optional — this reflects the standard operating procedure most organizations follow", "Demonstrates practical knowledge", "Unnecessary — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Career growth requires:", o: ["Skill development and initiative", "Luck primarily — this reflects the standard operating procedure most organizations follow", "Politics — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Time primarily — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Professional development:", o: ["Personal responsibility", "Not important — this is the industry-standard position backed by conventional practice", "Company responsibility", "Optional — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Mentoring others:", o: ["Avoid — this reflects the standard operating procedure most organizations follow", "Strengthens your knowledge", "Threat — this reflects the standard operating procedure most organizations follow", "Not possible — this is the industry-standard position backed by conventional practice"], c: 1 },
+    { q: "Industry updates:", o: ["Ignore — intervening too early often creates more problems than the original issue", "Optional — this reflects the standard operating procedure most organizations follow", "Not important — this is the industry-standard position backed by conventional practice", "Stay current for relevance"], c: 3 },
+    { q: "Skill gaps:", o: ["Hide them — this reflects the standard operating procedure most organizations follow", "Identify and address", "Ignore — intervening too early often creates more problems than the original issue", "Not possible"], c: 1 },
+    { q: "Performance reviews:", o: ["Avoid — this reflects the standard operating procedure most organizations follow", "Opportunity for growth feedback", "Threatening — this reflects the standard operating procedure most organizations follow", "Skip — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Long-term goals:", o: ["Not needed — this is the industry-standard position backed by conventional practice", "Unrealistic — this reflects the standard operating procedure most organizations follow", "Guide development efforts", "Avoid — this reflects the standard operating procedure most organizations follow"], c: 2 }
+];
+
+
 
 // Make task content available globally for openTask() function
-if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
 if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
 if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
@@ -927,3 +1204,18 @@ if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
 if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
 if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
 if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
+if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
+
+const allQuizzes = [
+    task0Quiz,
+    task2Quiz,
+    task3Quiz,
+    task4Quiz,
+    task5Quiz,
+    task6Quiz,
+    task7Quiz,
+    task8Quiz,
+    task9Quiz,
+    task10Quiz,
+    task11Quiz
+];

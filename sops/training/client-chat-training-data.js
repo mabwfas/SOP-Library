@@ -3,8 +3,9 @@
 // 10 Tasks, 100+ Quiz Questions, Speed & Empathy Mastery
 
 const trainingTasks = [
+    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
     {
-        id: 1,
+        id: 2,
         title: "Chat Chat Mindset",
         description: "Speed Wins",
         contentFirst: true,
@@ -16,7 +17,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         title: "Company Knowledge",
         description: "Know Your Product",
         contentFirst: true,
@@ -28,7 +29,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "Tonality Mastery",
         description: "Reading the Room",
         contentFirst: true,
@@ -40,7 +41,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: "Objection Handling",
         description: "Turning No into Yes",
         contentFirst: true,
@@ -52,7 +53,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: "Speed Tools",
         description: "TextExpander",
         contentFirst: true,
@@ -64,7 +65,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: "The Perfect Close",
         description: "Asking for the Sale",
         contentFirst: true,
@@ -76,7 +77,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         title: "System Hygiene",
         description: "CRM Taggng",
         contentFirst: true,
@@ -88,7 +89,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 8,
+        id: 9,
         title: "Firefighter Training",
         description: "De-escalation",
         contentFirst: true,
@@ -100,7 +101,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 9,
+        id: 10,
         title: "Role Play",
         description: "Simulated Scenarios",
         contentFirst: true,
@@ -112,7 +113,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 10,
+        id: 11,
         title: "Live Chat Simulation",
         description: "The Final Test",
         contentFirst: true,
@@ -125,7 +126,227 @@ const trainingTasks = [
     }
 ];
 
-const task1Content = `
+
+const task0Content = `
+<h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes</h3>
+    <p>You're now part of something bigger than just a job. We are building the <strong>world's best digital agency</strong>. This isn't a typical company—we have high standards because we're building something exceptional. <strong>DISCIPLINE IS YOUR GREATEST INVESTMENT.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Mission: Point A → Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Milestone</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Revenue Target</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹9.2 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2025 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹15-20 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2026 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹40 Crores</td></tr>
+            <tr style="background: rgba(59, 130, 246, 0.2);"><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹75 Crores</strong></td></tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits through our <strong>equity-sharing model—even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- MANIFESTO -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">⚡ The Digital Heroes Manifesto</h3>
+    <ul>
+        <li><strong>Talent is Irrelevant. Volume is Everything.</strong> — We don't care about your degree. We care about your OUTPUT. Need skills? Put in 100 hours learning. Need more? Put in 500.</li>
+        <li><strong>Emotional Intelligence > IQ</strong> — How do you respond under pressure? That's your real test. People with high EQ build real relationships and lead.</li>
+        <li><strong>Instant Reply = Respect</strong> — When you respond quickly, you're saying: "I respect you, I'm reliable, I care."</li>
+        <li><strong>Protect Your Mindset</strong> — Stop thinking negative thoughts. Build character that helps your growth.</li>
+        <li><strong>Clients are Opportunities</strong> — Approach every client like you're personally invested in their success.</li>
+        <li><strong>The 80/20 Principle</strong> — 80% of your time: Productive work. 20%: Everything else.</li>
+        <li><strong>Work = Highest Priority</strong> — Real satisfaction comes from BUILDING something that matters.</li>
+    </ul>
+</div>
+
+<!-- CORE VALUES -->
+<div class="content-section">
+    <h3>⭐ Core Values: The Digital Heroes Way</h3>
+    <ul>
+        <li>⚡ <strong>Work Fast, Work Smart</strong> — Speed without quality is recklessness. Quality without speed is inefficiency.</li>
+        <li>💬 <strong>Communicate Clearly</strong> — Ambiguity is the enemy. Ask clarifying questions. Confirm understanding. Never leave people guessing.</li>
+        <li>💡 <strong>Share Ideas</strong> — Your insights matter. If you see a better way, speak up.</li>
+        <li>🤝 <strong>Help Your Teammates</strong> — We are allies. We win together or we don't win at all.</li>
+        <li>🌟 <strong>Be Useful Beyond Tasks</strong> — Your attitude, proactive problem-solving, and contribution to team culture matter.</li>
+        <li>🚫 <strong>Zero Politics</strong> — Problems go to HR or Delhi Team only. We foster positivity.</li>
+    </ul>
+</div>
+
+<!-- INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔗 The Interconnected Chain</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p style="margin: 0;">
+            <strong style="color: #FBBF24;">Sales</strong> → generates enquiries → <strong style="color: #60A5FA;">Development</strong> → delivers quality → <strong style="color: #F472B6;">Client Satisfaction</strong> → drives reviews → <strong style="color: #A78BFA;">Better Positioning</strong> → more enquiries → 🔄 Cycle continues
+        </p>
+    </div>
+    <p style="color: #F87171; font-weight: 600;">⚠️ If any single link breaks, the entire system is affected. No department is bigger than the process. No one grows alone here.</p>
+</div>
+
+<!-- CRITICAL RULES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 CRITICAL RULES — Zero Tolerance (No Warnings, No Second Chances)</h3>
+    <ol>
+        <li><strong>Ignoring Management Messages</strong> = <span style="color: #EF4444;">IMMEDIATE TERMINATION</span>. This is the #1 termination reason.</li>
+        <li><strong>Data Breach</strong> — Sharing client info, source code, or passwords outside company = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+        <li><strong>Moonlighting</strong> — Working for competitors, taking freelance projects while employed = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Harassment</strong> — Verbal, sexual, or online bullying. One proven incident = <span style="color: #EF4444;">Out</span>.</li>
+        <li><strong>Poor Communication (3 Strikes)</strong> — Rude to client / Lying / Late responses. 1st: ₹500 Penalty → 2nd: ₹1000 → 3rd: Termination.</li>
+        <li><strong>Substance Abuse</strong> — Coming to work under influence = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Conspiracy & Negativity</strong> — Problems regarding any person must be shared ONLY with HR or Delhi Team. Conspiring = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+    </ol>
+</div>
+
+<!-- TEAM HIERARCHY -->
+<div class="content-section">
+    <h3>👥 Team Structure & Hierarchy</h3>
+    <p><strong>Supreme Authority:</strong> The Delhi Team represents the highest level of command. Their decisions override ALL other instructions.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Level</th><th style="padding: 10px; text-align: left;">Role</th><th style="padding: 10px; text-align: left;">Key Persons</th></tr>
+        <tr><td style="padding: 8px;">Level 1 (Top)</td><td style="padding: 8px;">CEO / Leadership</td><td style="padding: 8px;">Prasun Anand (CEO - Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Operations Head</td><td style="padding: 8px;">Anurag Singh (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Managing Director (Lucknow)</td><td style="padding: 8px;">Shreyansh</td></tr>
+        <tr><td style="padding: 8px;">Level 3</td><td style="padding: 8px;">General Manager</td><td style="padding: 8px;">Parth Srivastav (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 4</td><td style="padding: 8px;">HR & Project Managers</td><td style="padding: 8px;">Stuti/Agrima (HR), Navya Singh (Shopify PM)</td></tr>
+        <tr><td style="padding: 8px;">Level 5</td><td style="padding: 8px;">Team Leads / Senior Devs</td><td style="padding: 8px;">Mahira (Lead), Divyansh Singh</td></tr>
+        <tr><td style="padding: 8px;">Level 6</td><td style="padding: 8px;">Execution Teams</td><td style="padding: 8px;">Developers, Designers, QA, Sales, CS</td></tr>
+    </table>
+</div>
+
+<!-- HOURS & ATTENDANCE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⏰ Working Hours & Attendance</h3>
+    <ul>
+        <li><strong>Lucknow Team:</strong> 9:00 AM – 6:00 PM (Morning Shift)</li>
+        <li><strong>Delhi Team:</strong> Night Shift (Handling Foreign Clients)</li>
+        <li><strong>Sunday:</strong> Off | <strong>Lunch:</strong> 1:00 PM – 2:00 PM</li>
+        <li><strong>Fiverr/Sales Team Window:</strong> 9:00 AM – 9:00 PM (flexible shifts)</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ The 9:15 Rule:</strong> Arrive after 9:15 AM = <strong>Half-day salary deduction</strong>. Late arrivals: 3x = Verbal Warning → 5x = Written Warning → 7+ = Termination Review.
+    </div>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Unexplained Absence</strong> (not informing by 9:00 AM): 1st = Written Warning → 3rd = 3 Days Salary Deduction → 5th = Termination.
+    </div>
+</div>
+
+<!-- LEAVE POLICY -->
+<div class="content-section">
+    <h3>🏖️ Leave Policy</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Type</th><th style="padding: 10px; text-align: left;">Days/Year</th><th style="padding: 10px; text-align: left;">Notes</th></tr>
+        <tr><td style="padding: 8px;">Casual Leave (CL)</td><td style="padding: 8px;">12</td><td style="padding: 8px;">Personal use. Max 2/month.</td></tr>
+        <tr><td style="padding: 8px;">Sick Leave (SL)</td><td style="padding: 8px;">6</td><td style="padding: 8px;">Medical use. Certificate for 2+ days.</td></tr>
+        <tr><td style="padding: 8px;">Earned Leave (EL)</td><td style="padding: 8px;">15</td><td style="padding: 8px;">After 1 year only.</td></tr>
+        <tr><td style="padding: 8px;">Holidays</td><td style="padding: 8px;">~10</td><td style="padding: 8px;">Standard National Holidays.</td></tr>
+    </table>
+    <p><strong>Restrictions:</strong></p>
+    <ul>
+        <li>❌ No leave in first 2 months (Probation) unless emergency.</li>
+        <li>❌ No leave during month-end (25th–5th) billing cycle.</li>
+        <li>❌ Max 2 CL per month (unless approved by Senior Management).</li>
+    </ul>
+    <p><strong>How to Apply:</strong> Post in <strong>#ask-hr</strong> or message Manager min <strong>3 days in advance</strong>. Include: Name, Dates, Reason, and who is covering your work.</p>
+</div>
+
+<!-- SALARY & GROWTH -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💰 Salary, Growth & Compensation</h3>
+    <ul>
+        <li><strong>Payment Date:</strong> Before 10th of the following month.</li>
+        <li><strong>Cycle:</strong> 1st to End of Month.</li>
+        <li>🚨 <strong>Confidentiality:</strong> Discussing salary with colleagues = <span style="color: #EF4444;">Immediate Termination</span>.</li>
+    </ul>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">KPI Score</th><th style="padding: 10px; text-align: left;">Outcome</th></tr>
+        <tr><td style="padding: 8px;">90-100% (Exceptional)</td><td style="padding: 8px;">15-20% Increment + Bonus</td></tr>
+        <tr><td style="padding: 8px;">75-89% (Exceeds)</td><td style="padding: 8px;">10-15% Increment</td></tr>
+        <tr><td style="padding: 8px;">60-74% (Meets)</td><td style="padding: 8px;">5-10% Increment</td></tr>
+        <tr><td style="padding: 8px;">&lt;60% (Needs Improvement)</td><td style="padding: 8px;">No Increment + PIP</td></tr>
+    </table>
+    <p><strong>Advance Salary:</strong> Available after 3 months. Max 50% of salary. Recovered in 2 installments. Genuine emergencies only.</p>
+    <p><strong>Growth Formula:</strong> Employee Growth = Company Growth × (Will + Efforts). Income = Happy Clients × Skill × Speed.</p>
+</div>
+
+<!-- COMMUNICATION RULES -->
+<div class="content-section">
+    <h3>💬 Communication Protocol</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Who</th><th style="padding: 10px; text-align: left;">Response Time</th></tr>
+        <tr><td style="padding: 8px;">Clients</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Manager</td><td style="padding: 8px;">&lt; 1 Hour</td></tr>
+        <tr><td style="padding: 8px;">Team</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Emergency</td><td style="padding: 8px;">&lt; 15 Minutes</td></tr>
+    </table>
+    <p><strong>Channels:</strong> Official: Discord/Email. Team: WhatsApp. Clients: Fiverr/Platform. Personal issues → DM. Work questions → Group chat (so everyone learns).</p>
+    <p><strong>Specificity Rule:</strong> Always provide ETAs. Never say "I'll be late" — say "I will be 15 mins late. ETA 9:45 AM." Never say "Okay" — say "Got it. Task A: ETA 2 PM. Task B: ETA 5 PM."</p>
+</div>
+
+<!-- WFH POLICY -->
+<div class="content-section">
+    <h3>🏠 Work From Home Policy</h3>
+    <p><strong>WFH is a PRIVILEGE, Not a Right.</strong></p>
+    <ul>
+        <li>Max 2 days/week. Non-consecutive.</li>
+        <li>Manager can revoke instantly if productivity drops.</li>
+        <li>Requirements: Probation completed (3 months), High speed internet (10+ Mbps), Respond within 30 mins, Camera ON for all meetings.</li>
+    </ul>
+</div>
+
+<!-- CULTURE & PERKS -->
+<div class="content-section">
+    <h3>🎉 Culture, Perks & Exit Process</h3>
+    <ul>
+        <li>🏔️ <strong>Offsite Trips</strong> — Twice a year, company-paid (travel, stay, food).</li>
+        <li>🎬 <strong>Outing Budget</strong> — ₹500-1000/month per person for team activities.</li>
+        <li>🎂 <strong>Birthdays</strong> — Half-day, Cake, and Celebration.</li>
+        <li>🤝 <strong>Buddy System</strong> — New joiners get a Buddy for 2 weeks.</li>
+        <li>📚 <strong>Growth</strong> — 4 hrs/week learning hours. Course reimbursement up to ₹5k/yr.</li>
+    </ul>
+    <h4>Exit Process</h4>
+    <ul>
+        <li><strong>Notice Period:</strong> Probation = 7 Days. Confirmed = 30 Days.</li>
+        <li><strong>Process:</strong> Written resignation → Handover → Exit Interview → Return Assets → F&F within 30 days.</li>
+        <li><strong>Email:</strong> hr@digitalheroes.co.in</li>
+        <li>Experience Certificate: Provided for good standing exits only.</li>
+    </ul>
+</div>
+
+<!-- SOP OBSESSION -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📑 The SOP Obsession</h3>
+    <p><strong>What is an SOP?</strong> Standard Operating Procedure. Here, it's not just a guideline—it is the <strong>Law</strong>. It is the best known way to do a task perfectly.</p>
+    <ul>
+        <li><strong>Why use it?</strong> It removes guessing. It guarantees speed, quality, and consistency. It protects you from mistakes.</li>
+        <li><strong>Your Duty:</strong> You MUST follow your Role's SOP + the Daily SOP every day.</li>
+        <li><strong>Evolve It:</strong> SOPs are not static. Found a better way? Suggest an improvement.</li>
+    </ul>
+</div>
+
+<!-- KEY FAQS -->
+<div class="content-section">
+    <h3>❓ Key Employee FAQs</h3>
+    <ul>
+        <li><strong>Is training period paid?</strong> No. Training Completion Certificate provided after finishing.</li>
+        <li><strong>Is EOD report mandatory?</strong> Yes. Submit EOD + time tracking on Discord daily. Failure = marked absent.</li>
+        <li><strong>Can I take freelance projects?</strong> No. Conflict of interest.</li>
+        <li><strong>Is confidentiality mandatory?</strong> Yes. Client data, strategies, internal info. Breach = termination.</li>
+        <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
+        <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
+        <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
+        <li><strong>Sales incentives?</strong> 5% of sales exceeding USD 5,000/month.</li>
+        <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
+    </ul>
+</div>
+`;
+
+const task2Content = `
 <h2>📚 TASK 1: CLIENT CHAT MINDSET - Speed Wins</h2>
 
 <!-- WELCOME TO DIGITAL HEROES -->
@@ -365,7 +586,7 @@ const task1Content = `
 </div>
 `;
 
-const task2Content = `
+const task3Content = `
 <h2>📚 TASK 2: COMPANY KNOWLEDGE</h2>
 
 <div class="content-section">
@@ -395,7 +616,7 @@ const task2Content = `
 </div>
 `;
 
-const task3Content = `
+const task4Content = `
 <h2>📚 TASK 3: TONALITY MASTERY</h2>
 
 <div class="content-section">
@@ -425,7 +646,7 @@ const task3Content = `
 </div>
 `;
 
-const task4Content = `
+const task5Content = `
 <h2>📚 TASK 4: OBJECTION HANDLING</h2>
 
 <div class="content-section">
@@ -455,7 +676,7 @@ const task4Content = `
 </div>
 `;
 
-const task5Content = `
+const task6Content = `
 <h2>📚 TASK 5: SPEED TOOLS</h2>
 
 <div class="content-section">
@@ -485,7 +706,7 @@ const task5Content = `
 </div>
 `;
 
-const task6Content = `
+const task7Content = `
 <h2>📚 TASK 6: THE PERFECT CLOSE</h2>
 
 <div class="content-section">
@@ -515,7 +736,7 @@ const task6Content = `
 </div>
 `;
 
-const task7Content = `
+const task8Content = `
 <h2>📚 TASK 7: SYSTEM HYGIENE</h2>
 
 <div class="content-section">
@@ -545,7 +766,7 @@ const task7Content = `
 </div>
 `;
 
-const task8Content = `
+const task9Content = `
 <h2>📚 TASK 8: FIREFIGHTER TRAINING</h2>
 
 <div class="content-section">
@@ -575,7 +796,7 @@ const task8Content = `
 </div>
 `;
 
-const task9Content = `
+const task10Content = `
 <h2>📚 TASK 9: ROLE PLAY</h2>
 
 <div class="content-section">
@@ -600,7 +821,7 @@ const task9Content = `
 </div>
 `;
 
-const task10Content = `
+const task11Content = `
 <h2>📚 TASK 10: LIVE CHAT SIMULATION</h2>
 
 <div class="content-section">
@@ -632,81 +853,37 @@ const task10Content = `
 
 const quizQuestions = [
     // Task 1 - Speed & Mindset
-    {
-        question: "A customer has been waiting 45 seconds for your response. According to the 60-second rule, what is the PRIMARY risk?",
-        options: ["They might send a follow-up message", "They're likely switching to a competitor tab right now", "They will appreciate your thorough response", "They're probably still reading your product page"],
-        correct: 1
-    },
-    {
-        question: "Customer asks 'Does this come in red?' - they're most likely a:",
-        options: ["Cold lead just browsing for fun", "Warm lead who needs more education", "Hot lead ready to buy if you answer quickly", "Someone looking to waste your time"],
-        correct: 2
-    },
-    {
-        question: "Your response says 'Dear Valued Customer, Your inquiry has been received.' What's wrong?",
-        options: ["Nothing, this is professional", "It's too short", "It sounds robotic and impersonal - kills conversion", "It doesn't include your name"],
-        correct: 2
-    },
+    { question: "A customer has been waiting 45 seconds for your response. According to the 60-second rule, what is the PRIMARY risk?", options: ["They might send a follow-up message", "They're probably still reading your product page", "They will appreciate your thorough response", "They're likely switching to a competitor tab right now"], correct: 3 },
+    { question: "Customer asks 'Does this come in red?' - they're most likely a:", options: ["Hot lead ready to buy if you answer quickly", "Warm lead who needs more education", "Cold lead just browsing for fun", "Someone looking to waste your time"], correct: 0 },
+    { question: "Your response says 'Dear Valued Customer, Your inquiry has been received.' What's wrong?", options: ["Nothing, this is professional", "It sounds robotic and impersonal - kills conversion", "It's too short", "It doesn't include your name"], correct: 1 },
     {
         question: "The CHAT method's 'A' stands for:",
         options: ["Ask questions", "Apologize always", "Add Value beyond their question", "Address concerns"],
         correct: 2
     },
-    {
-        question: "Response time under 30 seconds typically results in:",
-        options: ["Customer annoyance at being rushed", "3x higher conversion rate", "Lower quality responses", "No significant difference"],
-        correct: 1
-    },
+    { question: "Response time under 30 seconds typically results in:", options: ["Customer annoyance at being rushed", "No significant difference", "Lower quality responses", "3x higher conversion rate"], correct: 3 },
     // Task 2 - Company Knowledge
-    {
-        question: "Customer asks 'What's your shipping time?' You don't know. Best response?",
-        options: ["'I don't know'", "'Let me check our policy page and get right back to you - one moment!'", "Ignore and change subject", "'Usually pretty fast'"],
-        correct: 1
-    },
+    { question: "Customer asks 'What's your shipping time?' You don't know. Best response?", options: ["'Let me check our policy page and get right back to you - one moment!'", "'I don't know'", "Ignore and change subject", "'Usually pretty fast'"], correct: 0 },
     {
         question: "When should you look up pricing during a chat?",
         options: ["Every time - always verify", "Never - you should have it memorized", "Only for complex products", "Only when the customer seems suspicious"],
         correct: 1
     },
     // Task 3 - Tonality
-    {
-        question: "Customer writes 'hey! super excited about this product 🎉' - your response should:",
-        options: ["Remain formal: 'Dear Customer, thank you for your interest'", "Match their energy with warmth and an appropriate emoji", "Be completely neutral with no personality", "Tell them to calm down"],
-        correct: 1
-    },
-    {
-        question: "For a luxury jewelry brand, emoji usage should be:",
-        options: ["Heavy use to seem friendly", "Sparingly or elegant ones like ✨ only", "Never use any", "Use the same as casual brands"],
-        correct: 1
-    },
+    { question: "Customer writes 'hey! super excited about this product 🎉' - your response should:", options: ["Remain formal: 'Dear Customer, thank you for your interest'", "Be completely neutral with no personality", "Match their energy with warmth and an appropriate emoji", "Tell them to calm down"], correct: 2 },
+    { question: "For a luxury jewelry brand, emoji usage should be:", options: ["Heavy use to seem friendly", "Use the same as casual brands", "Never use any", "Sparingly or elegant ones like ✨ only"], correct: 3 },
     // Task 4 - Objection Handling
-    {
-        question: "Customer says 'This is way too expensive.' Best approach?",
-        options: ["Immediately offer a discount", "Agree with them that it's pricey", "Highlight value and ROI - what they GET for that price", "Tell them to buy a cheaper competitor product"],
-        correct: 2
-    },
+    { question: "Customer says 'This is way too expensive.' Best approach?", options: ["Highlight value and ROI - what they GET for that price", "Agree with them that it's pricey", "Immediately offer a discount", "Tell them to buy a cheaper competitor product"], correct: 0 },
     {
         question: "Customer says 'I need to think about it.' This usually means:",
         options: ["They're definitely not buying", "They have an unaddressed concern - ask what's holding them back", "You should end the chat immediately", "They want you to pressure them more"],
         correct: 1
     },
     // Task 5 - Tools & Speed
-    {
-        question: "What's the most effective way to improve response speed?",
-        options: ["Type faster", "Use pre-written canned responses as templates", "Skip greetings entirely", "Keep responses to just 2 words"],
-        correct: 1
-    },
-    {
-        question: "Professional chat agents should type at minimum:",
-        options: ["20 WPM", "40 WPM", "60 WPM", "100 WPM"],
-        correct: 2
-    },
+    { question: "What's the most effective way to improve response speed?", options: ["Type faster", "Skip greetings entirely", "Use pre-written canned responses as templates", "Keep responses to just 2 words"], correct: 2 },
+    { question: "Professional chat agents should type at minimum:", options: ["20 WPM", "40 WPM", "100 WPM", "60 WPM"], correct: 3 },
     // Task 6 - Closing Techniques
-    {
-        question: "'Would you prefer the blue or the black one?' is an example of:",
-        options: ["Open-ended question", "Alternative close (assumes the sale)", "Pressure tactic to avoid", "Poor sales technique"],
-        correct: 1
-    },
+    { question: "'Would you prefer the blue or the black one?' is an example of:", options: ["Alternative close (assumes the sale)", "Open-ended question", "Pressure tactic to avoid", "Poor sales technique"], correct: 0 },
     // Task 7 - Ticket Hygiene
     {
         question: "Why is proper ticket tagging critical?",
@@ -714,172 +891,171 @@ const quizQuestions = [
         correct: 1
     },
     // Task 8 - Firefighting
-    {
-        question: "Customer is typing in ALL CAPS saying 'YOU CHARGED ME TWICE!!!'. First step?",
-        options: ["Explain it wasn't your fault", "Empathize and let them vent before offering solution", "Disconnect the chat immediately", "Ask them to calm down before you'll help"],
-        correct: 1
-    },
-    {
-        question: "After resolving an angry customer's issue, what extra step creates loyalty?",
-        options: ["Nothing extra needed - just close the chat", "Offer a small bonus/discount as goodwill gesture", "Tell them not to make the mistake again", "Transfer to your manager for an apology"],
-        correct: 1
-    },
+    { question: "Customer is typing in ALL CAPS saying 'YOU CHARGED ME TWICE!!!'. First step?", options: ["Explain it wasn't your fault", "Disconnect the chat immediately", "Empathize and let them vent before offering solution", "Ask them to calm down before you'll help"], correct: 2 },
+    { question: "After resolving an angry customer's issue, what extra step creates loyalty?", options: ["Nothing extra needed - just close the chat", "Transfer to your manager for an apology", "Tell them not to make the mistake again", "Offer a small bonus/discount as goodwill gesture"], correct: 3 },
     // Task 9 & 10 - Advanced
-    {
-        question: "A customer says 'Your competitor has 24-hour support.' Best response?",
-        options: ["'Go to them then'", "Acknowledge and pivot to YOUR unique value", "'We're cheaper though'", "Ignore and change subject"],
-        correct: 1
-    },
+    { question: "A customer says 'Your competitor has 24-hour support.' Best response?", options: ["Acknowledge and pivot to YOUR unique value", "'Go to them then'", "'We're cheaper though'", "Ignore and change subject"], correct: 0 },
     {
         question: "CSAT scores measure:",
         options: ["Chat Speed And Timing", "Customer Satisfaction rating", "Chat Sentiment Analysis Tracking", "Customer Service Action Time"],
         correct: 1
     },
-    {
-        question: "The goal of chat role-play training is to:",
-        options: ["Embarrass new agents", "Practice handling difficult scenarios in a safe environment", "Waste time between real chats", "Test who's the fastest typer"],
-        correct: 1
-    }
+    { question: "The goal of chat role-play training is to:", options: ["Embarrass new agents", "Waste time between real chats", "Practice handling difficult scenarios in a safe environment", "Test who's the fastest typer"], correct: 2 }
 ];
 
 // =============================================================================
 // QUIZ QUESTIONS FOR EACH TASK
 // =============================================================================
 
-const task1Quiz = [
-    { q: "What is the core mindset for this role?", o: ["Just complete tasks", "Revenue-focused excellence", "Speed only", "Minimum effort"], c: 1 },
-    { q: "Digital Heroes standard is:", o: ["Basic quality", "Premium quality only", "Cheap and fast", "Average"], c: 1 },
-    { q: "Client satisfaction is:", o: ["Optional", "Our primary goal", "Secondary", "Not important"], c: 1 },
-    { q: "Quality vs Speed priority:", o: ["Speed always", "Quality with efficiency", "Neither", "Random"], c: 1 },
-    { q: "Continuous learning is:", o: ["Optional", "Essential for growth", "Wasted time", "Not needed"], c: 1 },
-    { q: "Team collaboration means:", o: ["Work alone", "Share knowledge and support", "Compete only", "Ignore others"], c: 1 },
-    { q: "Taking ownership means:", o: ["Blame others", "Be responsible for outcomes", "Avoid responsibility", "Wait for instructions"], c: 1 },
-    { q: "Professional communication is:", o: ["Casual", "Clear, timely, and respectful", "Optional", "Slow"], c: 1 },
-    { q: "Handling mistakes correctly:", o: ["Hide them", "Acknowledge and fix quickly", "Blame system", "Ignore"], c: 1 },
-    { q: "Growth at Digital Heroes:", o: ["Limited", "Based on performance and initiative", "Random", "Impossible"], c: 1 }
+
+const task0Quiz = [
+    { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According to the handbook, what should you do?", o: ["Share primarily with close friends on the team", "Share it openly — transparency builds trust", "Politely decline — discussing salary with colleagues leads to immediate termination", "Tell them a lower number to avoid jealousy — following this approach systematically prevents common mistakes and keeps the workflow predictable"], c: 2 },
+    { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is the immediate consequence?", o: ["Verbal warning for the first time", "Written warning recorded in your file", "Half-day salary deduction", "No consequence if it's less than 30 minutes late"], c: 2 },
+    { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹75 Crores", "₹40 Crores", "₹15-20 Crores", "₹100 Crores"], c: 0 },
+    { q: "A team member is spreading negative talk about a colleague. According to the handbook's zero-tolerance policy, the correct action is:", o: ["Confront them directly and resolve it yourself and ensures long-term sustainability across your deliverables", "Report it only to HR or Delhi Team — conspiracy leads to termination + legal action", "Discuss it in the team group chat so everyone knows", "Ignore it — it's not your problem"], c: 1 },
+    { q: "You want to apply for casual leave next week. What is the correct procedure?", o: ["Tell your teammate to cover for you and take the day off", "Post in #ask-hr or message Manager min 3 days in advance with Name, Dates, Reason, and Coverage", "Send a WhatsApp to HR on the morning of the leave", "Email the CEO directly for approval — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "According to the company's equity-sharing model, who is eligible from Day 1?", o: ["Full-time employees after 1 year — this is the standard approach most teams follow", "Those with exceptional KPI scores — this is the standard approach most teams follow", "Senior developers and team leads primarily", "Everyone including interns"], c: 3 },
+    { q: "Your manager sends you a message. According to the communication protocol, what is the maximum response time?", o: ["2 Hours — this reflects the standard operating procedure most organizations follow", "30 Minutes", "Less than 1 Hour", "Same day"], c: 2 },
+    { q: "During your first month (probation), you want to take a day off for a personal event. What does the leave policy say?", o: ["You can take 1 CL during probation with manager approval", "No leave in first 2 months unless emergency", "Probation employees get 2 days off per month", "You can take unpaid leave anytime with HR approval"], c: 1 },
+    { q: "A client is frustrated and being difficult. According to the Digital Heroes philosophy, how should you view this client?", o: ["As a problem to be managed — this reflects the standard operating procedure most organizations follow", "As a burden that drains resources — this reflects the standard operating procedure most organizations follow", "As an ally whose problem is your common enemy — listen, understand, collaborate", "As someone who should be transferred to management"], c: 2 },
+    { q: "You've been working from home and your internet drops frequently. According to WFH policy, what is the minimum internet speed requirement?", o: ["5 Mbps", "No specific requirement as long as you're online", "25 Mbps", "10+ Mbps"], c: 3 },
+    { q: "What happens if you achieve a KPI score of 55% during your performance review?", o: ["Verbal warning but salary stays the same", "10-15% increment for meeting expectations", "5-10% increment as a minimum — this reflects the standard operating procedure most organizations follow", "No increment and placed on a Performance Improvement Plan (PIP)"], c: 3 },
+    { q: "You discover a colleague is taking freelance Shopify projects on the side. According to the handbook, this is classified as:", o: ["Acceptable if done outside work hours — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Allowed with prior written approval from management", "Fine as long as it doesn't affect performance", "Moonlighting — a zero-tolerance offense leading to termination"], c: 3 },
+    { q: "Which statement best reflects the Digital Heroes manifesto about talent?", o: ["Talent is the most important hiring criteria", "We prioritize degrees from top universities — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "Talent is irrelevant — volume and commitment to output matter more", "Natural talent determines your ceiling at the company"], c: 2 },
+    { q: "Your notice period as a confirmed employee who wants to resign is:", o: ["7 days", "60 days", "14 days", "30 days"], c: 3 },
+    { q: "According to the handbook, what is an SOP and how should employees treat it?", o: ["A flexible suggestion that varies by team preference", "The Law — the best known way to do a task perfectly, mandatory to follow daily", "A rough guideline to review monthly — this reflects the standard operating procedure most organizations follow", "A reference document only for new employees during onboarding"], c: 1 }
 ];
 
 const task2Quiz = [
-    { q: "Understanding client needs is:", o: ["Optional", "Foundation of good work", "Not important", "Secondary"], c: 1 },
-    { q: "Asking clarifying questions is:", o: ["Annoying", "Professional and necessary", "Waste of time", "Avoid always"], c: 1 },
-    { q: "Active listening involves:", o: ["Interrupting", "Full attention and understanding", "Multi-tasking", "Ignoring details"], c: 1 },
-    { q: "Documentation is:", o: ["Optional", "Critical for clarity", "Waste of time", "Not needed"], c: 1 },
-    { q: "Following SOPs ensures:", o: ["Boredom", "Consistency and quality", "Slow work", "Nothing"], c: 1 },
-    { q: "Deadline management means:", o: ["Miss deadlines", "Deliver on time or communicate early", "Ignore time", "Rush everything"], c: 1 },
-    { q: "Quality check before delivery:", o: ["Skip it", "Always verify your work", "Client will check", "Optional"], c: 1 },
-    { q: "Feedback should be:", o: ["Ignored", "Used for improvement", "Argued against", "Avoided"], c: 1 },
-    { q: "Problem escalation path:", o: ["Hide problems", "Inform senior when stuck", "Ignore issues", "Wait it out"], c: 1 },
-    { q: "Daily updates are:", o: ["Unnecessary", "Important for transparency", "Micromanagement", "Optional"], c: 1 }
+    { q: "THE 60-SECOND RULE states that every incoming chat must be responded to within:", o: ["5 minutes — reasonable response time and ensures long-term sustainability across your deliverables", "2 minutes — fast but not rushed", "60 seconds — speed is the difference between a sale and a lost customer", "Response time doesn't matter if the answer is good"], c: 2 },
+    { q: "Psychology of Live Chat: The customer's emotional state is 'I want help NOW.' If you respond in 3 minutes:", o: ["You've already lost them — their urgency has either turned to frustration or they've gone to a competitor", "3 minutes is still fast enough — this reflects the standard operating procedure most organizations follow", "Most customers wait patiently for 5+ minutes — this reflects the standard operating procedure most organizations follow", "Amazon-level companies need sub-60s responses — this is the standard approach most teams follow"], c: 0 },
+    { q: "Robot vs Human: A customer asks 'Do you ship to Germany?' The robot answer is 'Yes.' The human answer is:", o: ["'Yes! We ship to Germany. Delivery usually takes 7-10 days and shipping is free over €50. Want me to help you get started?'", "'Affirmative, we ship internationally' — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "'Check our shipping policy page for details' — this reflects the standard operating procedure most organizations follow", "'Yes we do. Anything else?' — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The Conversion Framework teaches that live chat's #1 goal is:", o: ["Answering questions accurately — this reflects the standard operating procedure most organizations follow", "Reducing phone call volume — this reflects the standard operating procedure most organizations follow", "Resolving complaints quickly — this reflects the standard operating procedure most organizations follow", "Converting browsers into buyers — every chat is a sales opportunity, not just customer service"], c: 3 },
+    { q: "Speed Optimization: Why is typing speed critical for chat agents?", o: ["It makes the job easier — this reflects the standard operating procedure most organizations follow", "Slow typers lose customers — speed + accuracy = more conversations handled = more conversions per hour", "Typing speed doesn't affect chat quality — this reflects the standard operating procedure most organizations follow", "AI handles most of the typing now — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A customer says 'I'm just browsing.' An amateur agent responds 'Let me know if you need help.' The professional response is:", o: ["'Okay, take your time!' — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "'Would you like to see our catalog?' — this reflects the standard operating procedure most organizations follow", "'I'm here when you're ready' — this reflects the standard operating procedure most organizations follow", "'Great taste! Those items are our bestsellers — anything catch your eye? I can tell you about our current deals'"], c: 3 },
+    { q: "Chat psychology: Using the customer's first name in conversation:", o: ["Creates personal connection and trust — people respond positively when addressed by name", "Is too informal and unprofessional — this reflects the standard operating procedure most organizations follow", "Works for returning customers — this is the standard approach most teams follow", "Violates privacy concerns — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The difference between a €500 and €5,000 monthly revenue from chat depends on:", o: ["Having more staff on chat — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Better chat software — this reflects the standard operating procedure most organizations follow", "Conversion skills — proactive selling, objection handling, and closing instead of just answering questions", "Longer operating hours — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Implementation Task: Speed optimization requires practice because:", o: ["Muscle memory develops over time — this reflects the standard operating procedure most organizations follow", "Fast, accurate, personalized responses are a trainable skill — chat agents who practice close 3x more sales", "It's just part of the job training — this reflects the standard operating procedure most organizations follow", "Speed optimization is a one-time activity — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The single biggest chat mistake that kills conversions is:", o: ["Grammatical errors in responses — this reflects the standard operating procedure most organizations follow", "Responding like a FAQ robot instead of a human who actually cares about helping the customer buy", "Using too many emojis — this reflects the standard operating procedure most organizations follow", "Not having a profile picture — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
 const task3Quiz = [
-    { q: "Tool proficiency is:", o: ["Optional", "Essential for efficiency", "Not needed", "Basic only"], c: 1 },
-    { q: "Best practice adherence:", o: ["Sometimes", "Always follow proven methods", "Never", "Random"], c: 1 },
-    { q: "Process optimization:", o: ["Avoid change", "Continuously improve", "Resist", "Ignore"], c: 1 },
-    { q: "Cross-functional knowledge:", o: ["Not needed", "Adds value to work", "Confusing", "Avoid"], c: 1 },
-    { q: "Attention to detail:", o: ["Overrated", "Differentiates premium work", "Slow", "Skip details"], c: 1 },
-    { q: "Standard templates:", o: ["Unnecessary", "Save time and ensure consistency", "Boring", "Avoid"], c: 1 },
-    { q: "Automation opportunities:", o: ["Threats", "Increase efficiency", "Avoid", "Not possible"], c: 1 },
-    { q: "Knowledge sharing:", o: ["Competitive disadvantage", "Strengthens the team", "Avoid", "Optional"], c: 1 },
-    { q: "Error prevention:", o: ["Not possible", "Better than error correction", "Not important", "Skip"], c: 1 },
-    { q: "Work organization:", o: ["Random", "Systematic approach works best", "Chaos is good", "Avoid planning"], c: 1 }
+    { q: "Company Knowledge: When a customer asks about a product's shipping time, you must answer:", o: ["'I'll check and get back to you via email' — this reflects the standard operating procedure most organizations follow", "Instantly with accurate details — hesitation or 'let me check' signals incompetence and kills trust", "With a link to the FAQ page — this reflects the standard operating procedure most organizations follow", "'It depends on many factors' — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Shipping policy memorization matters because:", o: ["Shipping questions are the #1 pre-purchase query — instant confident answers prevent cart abandonment", "Customers rarely ask about shipping — this reflects the standard operating procedure most organizations follow", "You can always look it up during chat — this reflects the standard operating procedure most organizations follow", "The logistics team needs this knowledge — this is the standard approach most teams follow"], c: 0 },
+    { q: "Return policy knowledge helps in chat because:", o: ["Returns are rare so it's not important — this reflects the standard operating procedure most organizations follow", "Proactively mentioning hassle-free returns removes purchase anxiety: 'And you have 30 days to return if it's not perfect'", "Returns should primarily be discussed after purchase — this is the recommended approach based on current platform documentation and expert consensus", "You should discourage customers from thinking about returns"], c: 1 },
+    { q: "Memory implementation task: The goal of memorizing company info is:", o: ["Passing the quiz with a high score — this reflects the standard operating procedure most organizations follow", "Impressing your manager during evaluations — this reflects the standard operating procedure most organizations follow", "Zero-delay responses that build customer confidence — the faster you answer, the more expert you appear", "Replacing the need for a knowledge base — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Product knowledge should include 'use cases' because:", o: ["Customers buy solutions to problems — explaining HOW the product helps THEIR situation converts better than listing features", "It fills time during slow chats — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Use cases are required for compliance — this reflects the standard operating procedure most organizations follow", "Technical products need use case knowledge — this is the standard approach most teams follow"], c: 0 },
+    { q: "When a customer asks a question not in your knowledge base:", o: ["Say 'I don't know' and move on — this reflects the standard operating procedure most organizations follow", "Transfer them to another department — this reflects the standard operating procedure most organizations follow", "Give your best guess to maintain speed — this reflects the standard operating procedure most organizations follow", "Own it: 'That's a great question — let me get you the exact answer in 2 minutes' then follow up fast"], c: 3 },
+    { q: "The implementation task for company knowledge requires testing yourself because:", o: ["Tests are standard training procedure — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "It's required for certification — this reflects the standard operating procedure most organizations follow", "Self-testing reveals knowledge gaps BEFORE a customer exposes them — failing in training is better than failing in a live chat", "Managers review test scores for promotions — this reflects the standard operating procedure most organizations follow"], c: 2 }
 ];
 
 const task4Quiz = [
-    { q: "Communication clarity:", o: ["Optional", "Prevents misunderstandings", "Slow", "Not needed"], c: 1 },
-    { q: "Response time matters:", o: ["Not really", "Shows professionalism", "Slow is fine", "Ignore"], c: 1 },
-    { q: "Written communication:", o: ["Casual", "Professional and clear", "Any style", "Avoid"], c: 1 },
-    { q: "Meeting preparation:", o: ["Not needed", "Shows respect and efficiency", "Waste of time", "Optional"], c: 1 },
-    { q: "Follow-up actions:", o: ["Forget them", "Track and complete", "Optional", "Ignore"], c: 1 },
-    { q: "Conflict resolution:", o: ["Avoid", "Address professionally", "Escalate everything", "Ignore"], c: 1 },
-    { q: "Giving updates:", o: ["When asked", "Proactively share progress", "Never", "Only problems"], c: 1 },
-    { q: "Asking for help:", o: ["Sign of weakness", "Smart when needed", "Never", "Avoid always"], c: 1 },
-    { q: "Handling criticism:", o: ["Get defensive", "Accept and improve", "Ignore", "Argue back"], c: 1 },
-    { q: "Positive attitude:", o: ["Fake", "Improves productivity", "Not important", "Optional"], c: 1 }
+    { q: "Mirroring in chat tonality means:", o: ["Copying the customer's exact words back to them", "Matching the customer's energy level — casual customer gets casual response, formal gets formal", "Using a mirror emoji in responses — this reflects the standard operating procedure most organizations follow", "Repeating what the customer said to confirm understanding"], c: 1 },
+    { q: "NEGATIVE words to NEVER use in chat: 'Unfortunately' should be replaced with:", o: ["'Sadly' — this reflects the standard operating procedure most organizations follow", "'What I CAN do for you is...' — reframe negatives as positive alternatives", "'Regrettably' — this reflects the standard operating procedure most organizations follow", "'I'm sorry but...' — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A customer writes: 'omg sooo excited about this!! 😍' Your response should be:", o: ["'Thank you for your interest. How may I assist you?'", "'Thank you. Would you like to purchase?' — this reflects the standard operating procedure most organizations follow", "'Please let me know if you have any questions.'", "'I LOVE your excitement!! 😍 You're going to absolutely love it!! Here's something that'll make it even better...'"], c: 3 },
+    { q: "'I'll have to check with my manager' sounds bad because:", o: ["Managers don't like being mentioned — this reflects the standard operating procedure most organizations follow", "It's too formal for chat — this reflects the standard operating procedure most organizations follow", "It signals lack of authority and competence — customers want to deal with someone who can help them NOW", "It makes the manager look bad — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The word 'policy' should be avoided because:", o: ["'Policy' sounds rigid and corporate — instead say 'what we love to do for our customers is...'", "Customers don't care about policies — this reflects the standard operating procedure most organizations follow", "It's a legal liability to mention policies — this reflects the standard operating procedure most organizations follow", "The word is too long for chat — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "A frustrated customer writes 'this is ridiculous.' Your tone should be:", o: ["Calm, empathetic, solution-focused: 'I completely understand your frustration — let me fix this right now'", "Match their frustration to show empathy — this reflects the standard operating procedure most organizations follow", "Defensive to protect the company — this reflects the standard operating procedure most organizations follow", "Ignore the emotion and provide facts primarily"], c: 0 },
+    { q: "Using exclamation points (!) in chat is:", o: ["Always unprofessional — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Should be used in every sentence — this reflects the standard operating procedure most organizations follow", "Appropriate when matching enthusiastic customers — adds energy and warmth, but avoid with frustrated customers", "Acceptable in casual conversations — this is the standard approach most teams follow"], c: 2 },
+    { q: "The rewrite implementation task trains you to:", o: ["Write longer responses — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Follow a script word for word — this reflects the standard operating procedure most organizations follow", "Use more complex vocabulary — this reflects the standard operating procedure most organizations follow", "Transform negative, robotic phrases into positive, human alternatives automatically — until it becomes your natural style"], c: 3 }
 ];
 
 const task5Quiz = [
-    { q: "Priority management:", o: ["Random order", "Focus on high impact first", "Easy first", "Avoid prioritizing"], c: 1 },
-    { q: "Time blocking:", o: ["Unnecessary", "Increases focus", "Too rigid", "Avoid"], c: 1 },
-    { q: "Multi-tasking:", o: ["Efficient", "Reduces quality", "Best approach", "Always do"], c: 1 },
-    { q: "Deep work sessions:", o: ["Not productive", "Allow complex problem solving", "Waste time", "Avoid"], c: 1 },
-    { q: "Distraction management:", o: ["Impossible", "Essential for productivity", "Not needed", "Ignore"], c: 1 },
-    { q: "Break scheduling:", o: ["Lazy", "Improves sustained performance", "Avoid", "Never break"], c: 1 },
-    { q: "Energy management:", o: ["Not relevant", "Match tasks to energy levels", "Ignore", "Push through"], c: 1 },
-    { q: "Task batching:", o: ["Inefficient", "Reduces context switching", "Avoid", "Random is better"], c: 1 },
-    { q: "Deadline buffer:", o: ["Unnecessary", "Accounts for unexpected issues", "Lazy", "Skip"], c: 1 },
-    { q: "Progress tracking:", o: ["Micromanagement", "Keeps work on track", "Avoid", "Optional"], c: 1 }
+    { q: "'Too Expensive' objection: The FIRST response should NOT be:", o: ["Immediately offering a discount — it devalues the product and trains customers to always negotiate", "'I understand — can I show you what's INCLUDED in that price?'", "Acknowledging the concern — this reflects the standard operating procedure most organizations follow", "'Value is what you get for what you pay — let me break it down'"], c: 0 },
+    { q: "'Just Looking' is not a rejection — it's an opportunity because:", o: ["Everyone who says this eventually buys — this reflects the standard operating procedure most organizations follow", "Data shows 'just looking' customers never convert — implementing this correctly requires understanding the full context of how each element interacts", "You should let them browse in peace — this reflects the standard operating procedure most organizations follow", "They're already ON your site/chat — curiosity brought them there, and the right question can convert browsing to buying"], c: 3 },
+    { q: "The Pivot technique for objections means:", o: ["Changing the subject entirely — this reflects the standard operating procedure most organizations follow", "Acknowledging the objection, then redirecting to value: 'I hear you on price — AND here's what makes it worth every penny...'", "Arguing against the customer's concern — this reflects the standard operating procedure most organizations follow", "Offering a lower-priced alternative immediately — taking this route minimizes risk while still delivering professional-grade results to stakeholders"], c: 1 },
+    { q: "'I need to think about it' really means:", o: ["They genuinely need time to decide — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "They're not interested at all — this reflects the standard operating procedure most organizations follow", "They have an unresolved objection — ask: 'Of course! What's the main thing you're weighing up? Maybe I can help clarify'", "You should end the conversation politely — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Never respond to the price objection with a discount first because:", o: ["Discounts reduce profit margin — this reflects the standard operating procedure most organizations follow", "Company policy prohibits discounts — this reflects the standard operating procedure most organizations follow", "It sets the precedent that your price is negotiable, devalues the product, and the customer will always expect lower", "Discounts don't influence purchase decisions — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The implementation task for objection handling requires practicing the Pivot because:", o: ["Pivoting is the hardest sales technique — this reflects the standard operating procedure most organizations follow", "Under pressure, untrained agents default to discounts or giving up — practiced pivots become automatic responses", "It's scored in performance reviews — this reflects the standard operating procedure most organizations follow", "The pivot technique works for objections — this is the standard approach most teams follow"], c: 1 },
+    { q: "All objection handling starts with:", o: ["ACKNOWLEDGING the concern genuinely — 'I totally get that' — before pivoting to value", "Presenting counter-arguments immediately — this reflects the standard operating procedure most organizations follow", "Offering a solution right away — this reflects the standard operating procedure most organizations follow", "Asking the customer to explain further — this reflects the standard operating procedure most organizations follow"], c: 0 }
 ];
 
 const task6Quiz = [
-    { q: "Quality standards:", o: ["Negotiable", "Must be maintained", "Optional", "Client decides"], c: 1 },
-    { q: "Review process:", o: ["Skip it", "Catches errors before delivery", "Waste of time", "Optional"], c: 1 },
-    { q: "Peer feedback:", o: ["Threatening", "Valuable for improvement", "Avoid", "Ignore"], c: 1 },
-    { q: "Revision handling:", o: ["Complain", "Professional and timely", "Argue", "Delay"], c: 1 },
-    { q: "Client expectations:", o: ["Ignore", "Set and exceed appropriately", "Lower them", "Avoid discussing"], c: 1 },
-    { q: "Scope clarity:", o: ["Not important", "Prevents scope creep", "Optional", "Ignore"], c: 1 },
-    { q: "Deliverable standards:", o: ["Variable", "Consistent premium quality", "Random", "Basic"], c: 1 },
-    { q: "Testing before delivery:", o: ["Skip", "Always verify", "Optional", "Client tests"], c: 1 },
-    { q: "Documentation of work:", o: ["Not needed", "Enables handoff and clarity", "Waste of time", "Skip"], c: 1 },
-    { q: "Continuous improvement:", o: ["Not possible", "Part of professional growth", "Unnecessary", "Avoid"], c: 1 }
+    { q: "Shortcuts (text expanders) save time by:", o: ["Turning typed abbreviations into full responses instantly — '/ship' becomes your full shipping answer, saving 30+ seconds per chat", "Replacing creative responses with templates — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Making all responses identical — this reflects the standard operating procedure most organizations follow", "Eliminating the need to personalize — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The DANGER of saved replies is:", o: ["They don't save enough time — this reflects the standard operating procedure most organizations follow", "Over-reliance makes responses feel robotic — macros must be personalized for each customer, NEVER sent as-is", "They take too long to set up — this reflects the standard operating procedure most organizations follow", "Customers can detect when macros are used — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Macro Creation implementation: You should create macros for:", o: ["Technical support issues primarily — this reflects the standard operating procedure most organizations follow", "Every possible customer question — this reflects the standard operating procedure most organizations follow", "Greeting messages — this is the standard approach most teams follow", "The 20 most frequently asked questions — covering 80% of chats while leaving room for human personalization"], c: 3 },
+    { q: "A speed tool responds instantly with 'Thank you for reaching out! We appreciate your interest.' This feels:", o: ["Professional and welcoming — this reflects the standard operating procedure most organizations follow", "Perfect for a first response — this reflects the standard operating procedure most organizations follow", "Generic and robotic — it adds no value and the customer knows it's automated, decreasing trust", "Warm and personal — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The ideal saved reply structure includes:", o: ["Answer + Extra Value + Next Step: answer their question, add something helpful they didn't ask, and suggest the next action", "A formal greeting and sign-off — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Just the answer to the question — this reflects the standard operating procedure most organizations follow", "A disclaimer about response accuracy — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Speed tools help agents handle MORE simultaneous chats by:", o: ["Making conversations shorter — this reflects the standard operating procedure most organizations follow", "Reducing typing time on common answers — freeing mental energy to personalize and handle multiple windows", "Automating entire conversations — this reflects the standard operating procedure most organizations follow", "Limiting response length — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A macro should NEVER be used for:", o: ["Shipping questions — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Product availability — this reflects the standard operating procedure most organizations follow", "Pricing inquiries — this reflects the standard operating procedure most organizations follow", "Emotional situations — complaints, frustrations, and sensitive issues require genuine human responses, not templates"], c: 3 },
+    { q: "Updating macros monthly is necessary because:", o: ["macros expire after 30 days — this reflects the standard operating procedure most organizations follow", "It's a required management checkpoint — this reflects the standard operating procedure most organizations follow", "Products, policies, and promotions change — outdated macros provide wrong info that damages credibility", "Monthly updates improve typing speed — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The balance between speed (macros) and personalization is:", o: ["Speed always wins — faster is better", "Let the customer decide which they prefer — this reflects the standard operating procedure most organizations follow", "Personalization always wins — never use macros", "Use macros for the factual core, then add personalized opening/closing and context-specific details"], c: 3 }
 ];
 
 const task7Quiz = [
-    { q: "Team support:", o: ["Competition", "Collaborative success", "Avoid helping", "Only when asked"], c: 1 },
-    { q: "Knowledge transfer:", o: ["Keep secrets", "Share to strengthen team", "Avoid", "Optional"], c: 1 },
-    { q: "Cross-training:", o: ["Waste of time", "Creates backup capabilities", "Unnecessary", "Avoid"], c: 1 },
-    { q: "Positive team culture:", o: ["Not important", "Improves productivity", "Fake", "Optional"], c: 1 },
-    { q: "Constructive feedback:", o: ["Avoid", "Helps improvement", "Offensive", "Skip"], c: 1 },
-    { q: "Recognition of others:", o: ["Unnecessary", "Motivates team", "Fake", "Avoid"], c: 1 },
-    { q: "Conflict with colleagues:", o: ["Escalate immediately", "Address professionally", "Ignore always", "Complain"], c: 1 },
-    { q: "Team meetings:", o: ["Waste of time", "Align and coordinate work", "Skip when possible", "Unnecessary"], c: 1 },
-    { q: "Shared responsibilities:", o: ["Avoid", "Distribute appropriately", "Do everything alone", "Ignore"], c: 1 },
-    { q: "Celebrating wins:", o: ["Unnecessary", "Builds morale", "Waste of time", "Skip"], c: 1 }
+    { q: "The Assumptive Close works by:", o: ["Asking 'Do you want to buy?' — this reflects the standard operating procedure most organizations follow", "Assuming the sale: 'Which color would you like — the midnight black or ocean blue?' — bypassing the yes/no decision", "Offering discounts to push the sale — this reflects the standard operating procedure most organizations follow", "Waiting for the customer to say 'I want to buy' — this ensures compliance with professional standards and prevents cascading issues downstream"], c: 1 },
+    { q: "The Alternative Close asks:", o: ["'Do you want this or not?' — this reflects the standard operating procedure most organizations follow", "'Can I place the order for you?' — this reflects the standard operating procedure most organizations follow", "'Would you prefer the standard package or the premium with free shipping?' — every option leads to a sale", "'Would you like to continue browsing?' — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A customer shows buying signals ('How long does shipping take to Mumbai?') — the best response includes:", o: ["The shipping answer PLUS a closing push: 'We ship to Mumbai in 3-5 days! Want me to add it to your cart while stock is available?'", "Just the shipping time — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "'Check our shipping page' — this reflects the standard operating procedure most organizations follow", "'Are you in Mumbai? Let me check' — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Why is 'Would you like to place an order?' a WEAK close?", o: ["It's too direct and aggressive — this reflects the standard operating procedure most organizations follow", "It's a yes/no question — the answer is often 'no.' Assumptive closes guide them past the decision point", "Closing should never be done in chat — this reflects the standard operating procedure most organizations follow", "It's actually the strongest close — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Creating urgency ethically: 'This promotion ends tonight' works when:", o: ["It's TRUE and verifiable — fake urgency destroys trust when customers discover the lie", "Even if the promotion doesn't actually end — this reflects the standard operating procedure most organizations follow", "Urgency always increases conversions — this reflects the standard operating procedure most organizations follow", "During holiday sales — this is the standard approach most teams follow"], c: 0 },
+    { q: "A customer says 'I love it!' but doesn't proceed to purchase. You should:", o: ["Close immediately: 'I'm so glad! 😍 Shall I have it on its way to you? I can guide you through checkout right now!'", "Wait for them to add to cart — this reflects the standard operating procedure most organizations follow", "'Great! Let me know if you need anything else' — experienced professionals recognize this as the most reliable path for maintaining quality control", "Send them the product link again — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The implementation task for closing requires practice because:", o: ["Closing is the easiest part of chat — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Management requires documented practice — this reflects the standard operating procedure most organizations follow", "Practice makes perfect in any skill — this reflects the standard operating procedure most organizations follow", "Most agents are afraid to close — they answer questions but never ask for the sale, leaving conversions on the table"], c: 3 },
+    { q: "Asking 'Is there anything else I can help with?' at the end is:", o: ["Professional and complete — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "The standard industry practice — this reflects the standard operating procedure most organizations follow", "A missed closing opportunity — instead ask 'Want me to get that ordered for you?' if they haven't bought yet", "Required by chat guidelines — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Building rapport before closing increases conversions because:", o: ["Longer conversations always convert better — this reflects the standard operating procedure most organizations follow", "It gives time for the customer to find their credit card", "Rapport is required by company policy — this reflects the standard operating procedure most organizations follow", "People buy from people they like and trust — genuine connection makes the close feel natural, not pushy"], c: 3 }
 ];
 
 const task8Quiz = [
-    { q: "Difficult situations require:", o: ["Panic", "Calm professional response", "Avoid", "Ignore"], c: 1 },
-    { q: "Client complaints:", o: ["Argue back", "Listen and resolve", "Ignore", "Blame others"], c: 1 },
-    { q: "Mistake acknowledgment:", o: ["Hide", "Own and fix quickly", "Blame system", "Deny"], c: 1 },
-    { q: "Pressure handling:", o: ["Break down", "Stay focused and prioritize", "Complain", "Give up"], c: 1 },
-    { q: "Unexpected changes:", o: ["Refuse", "Adapt professionally", "Complain loudly", "Quit"], c: 1 },
-    { q: "Tight deadlines:", o: ["Miss them", "Communicate and prioritize", "Ignore quality", "Panic"], c: 1 },
-    { q: "Unclear requirements:", o: ["Guess", "Ask for clarification", "Ignore", "Complain"], c: 1 },
-    { q: "Resource constraints:", o: ["Give up", "Find creative solutions", "Complain", "Do nothing"], c: 1 },
-    { q: "Feedback rejection:", o: ["Get upset", "Ask for specifics and improve", "Argue", "Ignore"], c: 1 },
-    { q: "Burnout prevention:", o: ["Not important", "Essential for sustained performance", "Ignore", "Push through"], c: 1 }
+    { q: "Tagging conversations properly helps because:", o: ["It satisfies management reporting requirements — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Tags are primarily for organizing old conversations", "Tags reveal patterns — which products get most questions, common objections, FAQ gaps — informing business strategy", "It has no practical business value — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Closing tickets properly means:", o: ["Just ending the conversation — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Adding resolution notes, appropriate tags, and ensuring the customer's issue was FULLY resolved — not just acknowledged", "Clicking the 'close' button — this reflects the standard operating procedure most organizations follow", "Transferring to another agent — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A ticket tagged 'shipping-delay' appears 50 times in one month. This data helps the business by:", o: ["Nothing — it's just a number", "Justifying the need for more staff — this reflects the standard operating procedure most organizations follow", "Showing that chat agents are handling volume — this reflects the standard operating procedure most organizations follow", "Identifying a systemic shipping problem that needs operational attention — patterns drive improvement"], c: 3 },
+    { q: "System hygiene: Leaving tickets open after resolution causes:", o: ["No issues — they auto-close eventually", "Inflated queue metrics, missed SLAs on real tickets, and confusion about what needs attention", "Better response time statistics — this reflects the standard operating procedure most organizations follow", "Improved customer satisfaction scores — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Ticket escalation should include:", o: ["Full context: customer name, issue summary, steps taken, what they expect, and urgency level — so the next person doesn't start from zero", "Just the customer's name — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "The ticket number — this is the standard approach most teams follow", "A request for someone else to handle it — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Internal notes on tickets serve:", o: ["Context for future interactions: if the same customer returns, any agent can see history and provide personalized service", "No purpose — notes are never read and ensures long-term sustainability across your deliverables", "Legal documentation requirements — this reflects the standard operating procedure most organizations follow", "Manager performance reviews primarily — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Customer satisfaction (CSAT) survey timing: When should it be sent?", o: ["Immediately when the chat starts — this reflects the standard operating procedure most organizations follow", "Never — surveys annoy customers", "After the ticket is resolved — when the customer can evaluate the full experience", "After purchases — this is the standard approach most teams follow"], c: 2 },
+    { q: "A clean ticket queue means:", o: ["Only truly unresolved tickets remain open, with proper tags and notes — enabling focus on priorities", "All tickets are deleted at end of day — this reflects the standard operating procedure most organizations follow", "Zero tickets in the system — this reflects the standard operating procedure most organizations follow", "Every ticket is answered within 1 minute — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Why should personal notes like 'Customer's daughter's birthday next week' be saved?", o: ["It's stalking customer personal information — this reflects the standard operating procedure most organizations follow", "Personalization gold — mentioning it next time creates an unforgettable experience that builds extreme loyalty", "It's required for CRM compliance — this reflects the standard operating procedure most organizations follow", "Personal notes have no business value — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "System hygiene implementation ensures:", o: ["Agents have less work to do — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Management has positive reports to share — this reflects the standard operating procedure most organizations follow", "Perfect ticket queue aesthetics — this reflects the standard operating procedure most organizations follow", "Data integrity — accurate reporting, smooth handoffs, and consistent service quality regardless of which agent handles the chat"], c: 3 }
 ];
 
 const task9Quiz = [
-    { q: "Process adherence:", o: ["Optional", "Ensures quality and consistency", "Slows work", "Ignore"], c: 1 },
-    { q: "Checklist usage:", o: ["Unnecessary", "Prevents missed steps", "Waste of time", "Skip"], c: 1 },
-    { q: "Standard operating procedures:", o: ["Ignore", "Follow for consistency", "Outdated", "Optional"], c: 1 },
-    { q: "Quality gates:", o: ["Skip", "Ensure standards are met", "Slow", "Unnecessary"], c: 1 },
-    { q: "Approval workflows:", o: ["Avoid", "Ensure proper sign-off", "Bureaucracy", "Skip"], c: 1 },
-    { q: "Version control:", o: ["Not needed", "Tracks changes safely", "Complex", "Avoid"], c: 1 },
-    { q: "Backup practices:", o: ["Optional", "Essential protection", "Waste of storage", "Skip"], c: 1 },
-    { q: "Security practices:", o: ["Paranoid", "Protect client and company data", "Unnecessary", "Optional"], c: 1 },
-    { q: "Compliance requirements:", o: ["Ignore", "Must be followed", "Optional", "Outdated"], c: 1 },
-    { q: "Audit preparation:", o: ["Panic", "Maintain records proactively", "Fake it", "Ignore"], c: 1 }
+    { q: "A VIP customer threatens to leave: 'I'm switching to your competitor!' Your first move:", o: ["Let them go — difficult customers aren't worth it and ensures long-term sustainability across your deliverables", "Transfer to manager immediately — this reflects the standard operating procedure most organizations follow", "Immediately offer maximum discount — this reflects the standard operating procedure most organizations follow", "Acknowledge their frustration genuinely, ask what went wrong, and offer a concrete solution — retaining existing customers is 5x cheaper than acquiring new ones"], c: 3 },
+    { q: "Firefighter Training: A product arrives damaged. The correct sequence:", o: ["Apologize and wait for customer to ship it back — research supports this methodology as the most effective for achieving measurable improvements", "Blame the shipping company — this reflects the standard operating procedure most organizations follow", "Apologize sincerely → Ask for photo evidence → Offer immediate replacement OR refund → Follow up to confirm resolution", "'Please contact our returns department' — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "An angry customer uses capital letters and exclamation marks: 'THIS IS UNACCEPTABLE!!!' You should:", o: ["Match their energy to show you take it seriously — applying this principle consistently across all projects builds a reputation for professional excellence", "Tell them to calm down — this reflects the standard operating procedure most organizations follow", "Stay calm, validate their feelings ('I completely understand your frustration'), then focus ONLY on solving the problem", "End the chat — you don't need to tolerate rudeness"], c: 2 },
+    { q: "Crisis in chat: Website is down and customers are flooding chat. The protocol is:", o: ["Ignore messages until the site is back up — this reflects the standard operating procedure most organizations follow", "Close the chat widget until the issue is fixed", "Tell customers 'it's working fine on our end'", "Acknowledge the outage proactively, give an ETA if possible, offer alternatives, and update frequently"], c: 3 },
+    { q: "A customer wants something AGAINST company policy. The correct approach:", o: ["Explain WHY the policy exists with empathy, then offer the closest acceptable alternative: 'What I CAN do is...'", "Just say 'It's against our policy, sorry' — this reflects the standard operating procedure most organizations follow", "Make an exception every time to avoid conflict", "Transfer to management for policy decisions — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "De-escalation in chat: NEVER use phrases like:", o: ["'I understand your frustration' — this reflects the standard operating procedure most organizations follow", "'Calm down' or 'It's not that big of a deal' — minimizing their emotions makes everything worse", "'Let me help fix this right now' — this reflects the standard operating procedure most organizations follow", "'What would make this right for you?' — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Multiple complaints about the same issue in one day means:", o: ["Each case should be handled individually with no pattern recognition", "ESCALATE to leadership — a systemic problem is occurring that needs immediate operational attention", "It's normal busy-day volume — this reflects the standard operating procedure most organizations follow", "Close tickets faster to reduce the queue — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "When you've made a mistake that affected a customer:", o: ["Own it immediately, apologize genuinely, fix it fast, and add a goodwill gesture — honesty builds more trust than perfection", "Cover it up and hope they don't notice — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Blame the system or another department — this reflects the standard operating procedure most organizations follow", "Wait to see if they complain — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The hardest firefighting skill to develop is:", o: ["Typing fast under pressure — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Using the ticketing system efficiently — this reflects the standard operating procedure most organizations follow", "Knowing company policies — this reflects the standard operating procedure most organizations follow", "Emotional regulation — staying calm and professional when customers are at their angriest takes deliberate practice"], c: 3 }
 ];
 
 const task10Quiz = [
-    { q: "Certification validates:", o: ["Nothing", "Competency in role", "Waste of time", "Luck"], c: 1 },
-    { q: "Continuous learning:", o: ["Ends at certification", "Ongoing requirement", "Optional", "Not needed"], c: 1 },
-    { q: "Video walkthrough:", o: ["Skip it", "Demonstrates practical knowledge", "Optional", "Unnecessary"], c: 1 },
-    { q: "Career growth requires:", o: ["Luck only", "Skill development and initiative", "Politics", "Time only"], c: 1 },
-    { q: "Professional development:", o: ["Company responsibility", "Personal responsibility", "Not important", "Optional"], c: 1 },
-    { q: "Mentoring others:", o: ["Threat", "Strengthens your knowledge", "Avoid", "Not possible"], c: 1 },
-    { q: "Industry updates:", o: ["Ignore", "Stay current for relevance", "Not important", "Optional"], c: 1 },
-    { q: "Skill gaps:", o: ["Hide them", "Identify and address", "Ignore", "Not possible"], c: 1 },
-    { q: "Performance reviews:", o: ["Avoid", "Opportunity for growth feedback", "Threatening", "Skip"], c: 1 },
-    { q: "Long-term goals:", o: ["Not needed", "Guide development efforts", "Unrealistic", "Avoid"], c: 1 }
+    { q: "Role Play training serves what purpose?", o: ["It's fun team-building exercise time — this reflects the standard operating procedure most organizations follow", "Testing product knowledge primarily — this reflects the standard operating procedure most organizations follow", "It's a management requirement with no real benefit — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Practicing scenarios in a safe environment so that real customer interactions feel familiar — muscle memory for conversations"], c: 3 },
+    { q: "In a role play, your 'customer' gives a complex objection you've never heard before. You should:", o: ["Apply the Pivot framework: acknowledge → ask clarifying questions → redirect to value — the principle works even for unknown objections", "Pause the role play and ask for the answer — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Skip to the next scenario — this reflects the standard operating procedure most organizations follow", "Guess and move on quickly — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Role play scenario: Customer wants a refund on a non-refundable item. Best approach:", o: ["'Sorry, it's non-refundable. Company policy' — this reflects the standard operating procedure most organizations follow", "Give the refund to avoid conflict — this reflects the standard operating procedure most organizations follow", "Empathize, explain why, then offer alternatives: 'I understand your concern. While this item is final-sale, I can offer store credit/exchange — what works best?'", "Transfer to manager without trying to resolve — understanding why this works helps prevent the same category of problems from recurring in the future"], c: 2 },
+    { q: "Role play reveals that an agent takes 5 seconds to respond to 'how much does shipping cost?' This means:", o: ["5 seconds is a fast response time — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Shipping info is too complex to memorize — this reflects the standard operating procedure most organizations follow", "The system was slow — this reflects the standard operating procedure most organizations follow", "Product knowledge gap — shipping costs should be instant recall, and the agent needs to review their speed tools and knowledge base"], c: 3 },
+    { q: "Practicing upselling in role play helps because:", o: ["It makes upselling feel natural in real chats — agents who practice suggest complementary products smoothly instead of awkwardly", "Upselling is manipulative and shouldn't be practiced — the reasoning behind this connects directly to broader principles of professional service delivery", "Role play upsells don't translate to real performance", "Sales teams need upselling practice — this is the standard approach most teams follow"], c: 0 },
+    { q: "After a role play session, the review should focus on:", o: ["Whether the agent won or lost the scenario — this reflects the standard operating procedure most organizations follow", "General praise to maintain morale — this reflects the standard operating procedure most organizations follow", "Specific improvement areas: response speed, objection handling technique, tone matching, closing confidence", "Technical product knowledge gaps — this is the standard approach most teams follow"], c: 2 },
+    { q: "Multi-chat role play (handling 3 customers simultaneously) trains:", o: ["Multitasking for its own sake — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Prioritization, speed-tool usage, and maintaining quality across multiple conversations — the real-world daily challenge", "Chat agents to work harder — this reflects the standard operating procedure most organizations follow", "Computer screen management — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Role play: Customer says 'Your website is confusing.' The professional response:", o: ["'I'm sorry about that! Let me personally walk you through it — what are you looking for? I'll make this super easy for you'", "'Our website is actually very user-friendly' — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "'Which part is confusing?' — this reflects the standard operating procedure most organizations follow", "'We're redesigning the website soon' — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The best agents do role play even after years of experience because:", o: ["Management requires it quarterly — this reflects the standard operating procedure most organizations follow", "Every scenario sharpens skills — elite performers practice continuously, not just beginners", "They haven't mastered the basics yet — this reflects the standard operating procedure most organizations follow", "Role play is mandatory for all company employees"], c: 1 }
 ];
 
-const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+const task11Quiz = [
+    { q: "Live Chat Simulation differs from role play because:", o: ["Simulations use real chat platforms with realistic timing pressure and surprise scenarios — it's the closest to live conditions", "There's no difference — they're the same and ensures long-term sustainability across your deliverables", "Simulations are easier — this reflects the standard operating procedure most organizations follow", "Role play is more advanced — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The 60-second rule combined with the Conversion Framework means:", o: ["Respond fast with any answer — this reflects the standard operating procedure most organizations follow", "The framework replaces the speed rule — this reflects the standard operating procedure most organizations follow", "Focus on speed primarily, conversion comes later", "Respond within 60 seconds AND make every response move the customer closer to a purchase — speed + selling"], c: 3 },
+    { q: "A customer in simulation asks 3 questions rapidly. The priority is:", o: ["Answer the buying-signal question first (the one closest to purchase decision), then handle the others", "Answer all 3 in one giant message — this reflects the standard operating procedure most organizations follow", "Answer in the order they were asked — this reflects the standard operating procedure most organizations follow", "Ask them to slow down and ask one at a time — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Simulation reveals that agents use 'Unfortunately' an average of 4 times per conversation. The fix is:", o: ["It's a professional word that should be used — this reflects the standard operating procedure most organizations follow", "'Unfortunately' is primarily bad when overused — this aligns with industry best practices and ensures consistent results across different project types", "Replace with positive reframes from Tonality training: 'What I CAN do is...' — eliminating the word entirely from vocabulary", "Add more positive words without removing 'unfortunately'"], c: 2 },
+    { q: "In simulation, handling a customer who is BOTH browsing AND has a complaint about a previous order:", o: ["Address the complaint with empathy first (priority), resolve it, THEN transition to helping them shop — turn the negative into a new sale", "Handle the complaint first, then ignore the browsing — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Focus primarily on the new sale opportunity — this reflects the standard operating procedure most organizations follow", "Transfer the complaint to support and handle the sale"], c: 0 },
+    { q: "The certification simulation tests all skills simultaneously:", o: ["One skill per scenario — this is the standard approach most teams follow", "Written test replaces simulation — this reflects the standard operating procedure most organizations follow", "Chat speed matters for certification — this is the standard approach most teams follow", "60-second response, mirroring, objection handling, closing, system hygiene — proving mastery under pressure"], c: 3 },
+    { q: "KPI: Chat conversion rate measures:", o: ["How many chats you handle per hour — this reflects the standard operating procedure most organizations follow", "Customer satisfaction scores — this reflects the standard operating procedure most organizations follow", "Percentage of chats that result in a sale — THE critical metric for chat agent effectiveness", "Average response time across all chats — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Speed tools + Tonality + Closing combined create:", o: ["A robotic but fast agent — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "An agent who responds instantly (macros), sounds human (tonality), and converts browsers to buyers (closing) — the complete package", "An average performer — this reflects the standard operating procedure most organizations follow", "An agent who talks too much — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "System hygiene during simulation (tagging, notes, ticket closure) tests:", o: ["Administrative skills primarily — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Typing speed under pressure — this reflects the standard operating procedure most organizations follow", "Whether agents maintain data quality WHILE handling live customers — the real-world challenge of doing both simultaneously", "That agents know where the close button is — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "An agent with perfect product knowledge but no closing skills will:", o: ["Become a free FAQ service — answering every question perfectly but never converting the chat into a sale", "Perform well because knowledge is power — this reflects the standard operating procedure most organizations follow", "Eventually develop closing skills naturally — this reflects the standard operating procedure most organizations follow", "Be equally valuable as an agent who closes — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The most important metric for live chat success is:", o: ["Customer satisfaction score alone — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Number of chats handled per day — this reflects the standard operating procedure most organizations follow", "Response time alone — this reflects the standard operating procedure most organizations follow", "Revenue per chat — combining conversion rate, average order value, and upsell rate into one business impact number"], c: 3 },
+    { q: "Firefighting + Closing: When a crisis is resolved, the next move is:", o: ["End the conversation — they've been through enough", "Offer a permanent discount for the inconvenience — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Send a survey to rate the experience — this reflects the standard operating procedure most organizations follow", "Leverage the goodwill: 'I'm glad we fixed that! Since you're here, can I help you find something amazing today?'"], c: 3 },
+    { q: "Assumptive Close: 'Which size works best for you — the M or L?' is better than 'Would you like to buy?' because:", o: ["It skips the buy/don't-buy decision entirely — the customer is choosing WHICH to buy, not WHETHER to buy", "It's more confusing so customers say yes — this reflects the standard operating procedure most organizations follow", "Assumptive closes always work perfectly — this reflects the standard operating procedure most organizations follow", "Size questions aren't really closes — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The Interconnected Chain shows Chat Agents connecting:", o: ["To the customer — this is the standard approach most teams follow and ensures long-term sustainability across your deliverables", "Sales pipeline to customer experience — the agent is the human bridge between marketing that brought them in and the conversion that generates revenue", "To other agents — this is the standard approach most teams follow", "To the website backend systems — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "After completing all training modules, the Elite Chat Agent is defined by:", o: ["Perfect typing speed and grammar — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Years of experience in customer service — this reflects the standard operating procedure most organizations follow", "The combination: lightning response time, human tonality, objection mastery, confident closing, clean systems, and crisis composure", "The highest customer satisfaction scores — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The #1 revenue killer in live chat is:", o: ["Slow response times — this reflects the standard operating procedure most organizations follow", "Poor product knowledge — this reflects the standard operating procedure most organizations follow", "Answering questions without ever attempting to close the sale — the 'helpful FAQ bot' trap", "Bad grammar in messages — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Building long-term customer relationships through chat means:", o: ["Having the longest conversations possible — this reflects the standard operating procedure most organizations follow", "Creating memorable experiences that make customers return — every chat is a brand impression that lasts", "Sending follow-up emails daily — this reflects the standard operating procedure most organizations follow", "Offering discounts on every purchase — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Negative word replacement ('Unfortunately' → 'What I CAN do') reflects:", o: ["Corporate language polishing — this reflects the standard operating procedure most organizations follow", "Following a script without understanding why — this reflects the standard operating procedure most organizations follow", "Superficial word changes with no real impact — this reflects the standard operating procedure most organizations follow", "A fundamental mindset shift — from telling customers what's impossible to showing them what IS possible"], c: 3 },
+    { q: "The training certification proves you can:", o: ["Pass a written exam about company policies — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Handle any live chat scenario with speed, empathy, salesmanship, and professionalism — a complete revenue-generating chat agent", "Type 80 words per minute — this reflects the standard operating procedure most organizations follow", "Memorize saved replies accurately — this reflects the standard operating procedure most organizations follow"], c: 1 }
+];
+
+
 
 // Make task content available globally for openTask() function
-if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
 if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
 if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
@@ -891,3 +1067,18 @@ if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
 if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
 if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
 if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
+if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
+
+const allQuizzes = [
+    task0Quiz,
+    task2Quiz,
+    task3Quiz,
+    task4Quiz,
+    task5Quiz,
+    task6Quiz,
+    task7Quiz,
+    task8Quiz,
+    task9Quiz,
+    task10Quiz,
+    task11Quiz
+];

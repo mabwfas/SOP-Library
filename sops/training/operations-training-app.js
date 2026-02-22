@@ -63,7 +63,7 @@ function updateProgressBar() {
     const percent = progress.completedTasks.length * 10; // 12 tasks, this logic caps at 100% implicitly if length is 10. Wait, 12 tasks * 10 is 120%. Ops has 12 tasks. Logic needs fix.
     // Ops has 12 tasks. 100/12 = 8.33. 
     // Actually, let's keep it simple. If count >= 12, 100%.
-    const realPercent = Math.min(100, Math.round((progress.completedTasks.length / 12) * 100));
+    const realPercent = Math.min(100, Math.round((progress.completedTasks.length / trainingTasks.length) * 100));
 
     document.getElementById('progressPercent').textContent = `${realPercent}%`;
     document.getElementById('progressFill').style.width = `${realPercent}%`;
@@ -71,7 +71,7 @@ function updateProgressBar() {
     // Show/hide certificate button based on completion
     const certBtn = document.getElementById('certificateBtn');
     if (certBtn) {
-        certBtn.style.display = progress.completedTasks.length >= 12 ? 'block' : 'none';
+        certBtn.style.display = progress.completedTasks.length >= trainingTasks.length ? 'block' : 'none';
     }
 }
 
@@ -112,7 +112,7 @@ function openTask(index) {
     // Dynamic Content Loading
     // Use full content from data file if available, otherwise show placeholder
     const taskContentVars = {};
-    for (let i = 1; i <= trainingTasks.length; i++) {
+    for (let i = 0; i <= trainingTasks.length + 1; i++) {
         taskContentVars[i] = window['task' + i + 'Content'] || null;
     }
 
@@ -122,7 +122,7 @@ function openTask(index) {
         html += fullContent;
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === 11 ? '20/20' : '10/10'} Required)</button>
+                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === trainingTasks.length - 1 ? '20/20' : '10/10'} Required)</button>
                 
             </div>
         `;
@@ -154,7 +154,7 @@ function devSkipTask(taskIndex) {
     if (!progress.completedTasks.includes(task.id)) {
         progress.completedTasks.push(task.id);
     }
-    if (task.id < 12) {
+    if (task.id < trainingTasks.length) {
         progress.currentTask = task.id + 1;
     }
     localStorage.setItem('opsTrainingProgress', JSON.stringify(progress));
@@ -184,67 +184,23 @@ function startQuiz(taskIndex) {
     currentQuestion = 0;
     userAnswers = [];
 
-    // Filter questions for this task
-    // We only have one big `quizQuestions` array in the data file.
-    // Logic: 10 questions per task (except last one). 
-    // Ops has 12 tasks. 150 questions total? Check data file.
-    // The data file I wrote sets `quizQuestions` as a single array with ALL questions. 
-    // And I only put ~10 example questions in the artifact.
-    // Wait, the data file I wrote ONLY has the example array `quizQuestions` with 10 items total. 
-    // I need to be careful here. The previous modules relied on `allQuizzes[taskIndex]` or similar structure?
-    // Let's check `pm-training-app.js` line 206: `const quiz = allQuizzes[taskIndex];`
-    // My WRITTEN file for `ops` has `quizQuestions` array. 
-    // I should probably fix the DATA file to have `allQuizzes` or update APP to use `quizQuestions` filtered.
-    // Since I only wrote a small subset of questions in the data file for brevity in the artifact, I will assume for now I should use what is there.
-    // Actually, to make it work "Robustly", I should simulate `allQuizzes` in the logic or just pick random questions if the structure doesn't match.
-    // Let's assume the data file follows the pattern.
-    // Re-reading `pm-training-app.js`: it uses `allQuizzes`.
-    // Re-reading `pm-training-data.js` (implied): it must define `allQuizzes`.
-    // My `operations-training-data.js` defined `quizQuestions`. 
-    // I will simplisticly map the `quizQuestions` to `allQuizzes` here in the app to prevent crash, 
-    // OR just use a subset.
-
-    // Hack: Create dummy quizzes if they don't exist to prevent crash.
-    let quiz = [];
-    if (typeof allQuizzes !== 'undefined') {
-        quiz = allQuizzes[taskIndex];
-    } else {
-        // Fallback or use local defined
-        quiz = [
-            { q: "Placeholder Question 1", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 2", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 3", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 4", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 5", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 6", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 7", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 8", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 9", o: ["A", "B", "C", "D"], c: 0 },
-            { q: "Placeholder Question 10", o: ["A", "B", "C", "D"], c: 0 }
-        ];
-        // If I defined `quizQuestions` in data, maybe I can use that?
-        if (typeof quizQuestions !== 'undefined') {
-            // In my written data file, quizQuestions is a flat array. I need to filter it.
-            // But my written data file only has ~10 questions total.
-            // I will use the `quizQuestions` array and just cycle it for now to avoid breaking.
-            quiz = quizQuestions;
-        }
-    }
+    // Get quiz questions for this task from allQuizzes (defined in data file)
+    const quiz = allQuizzes[taskIndex] || [];
 
     // Shuffle questions
     const shuffled = [...quiz].sort(() => Math.random() - 0.5);
-    // Tak only 10 (or 20 for final)
-    const count = taskIndex === 11 ? 20 : 10;
-    // If not enough questions, repeat them? Or just key fewer.
-    // For this demo, let's just use what we have.
+    // Take 10 questions (or 20 for final certification task)
+    const count = taskIndex === 12 ? 20 : 10;
     window.currentQuiz = shuffled.slice(0, count);
-    // If we have less than required, we duplicate
-    while (window.currentQuiz.length < count) {
-        window.currentQuiz.push(window.currentQuiz[0]);
+
+    // If we have fewer questions than required, pad with available ones
+    while (window.currentQuiz.length < count && quiz.length > 0) {
+        window.currentQuiz.push(quiz[window.currentQuiz.length % quiz.length]);
     }
 
     renderQuestion();
 }
+
 
 // Render Question
 function renderQuestion() {

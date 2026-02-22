@@ -100,7 +100,7 @@ function openTask(index) {
     }
 
     const taskContentVars = {};
-    for (let i = 1; i <= trainingTasks.length; i++) {
+    for (let i = 0; i <= trainingTasks.length + 1; i++) {
         taskContentVars[i] = window['task' + i + 'Content'] || null;
     }
 

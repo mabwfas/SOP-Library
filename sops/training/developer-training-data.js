@@ -3,8 +3,9 @@
 // 13 Tasks, 150+ Quiz Questions, Deep Content
 
 const trainingTasks = [
+    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
     {
-        id: 1,
+        id: 2,
         title: "Developer Mindset",
         description: "Code that SELLS - Your work touches money",
         contentFirst: true,
@@ -16,7 +17,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         title: "Platform Fundamentals",
         description: "Shopify Architecture Deep Dive",
         contentFirst: true,
@@ -28,7 +29,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "Theme Architecture",
         description: "Dawn/Prestige Mastery",
         contentFirst: true,
@@ -40,7 +41,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: "Liquid Programming",
         description: "Deep Dive into Shopify's Language",
         contentFirst: true,
@@ -52,7 +53,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: "Product Page Optimization",
         description: "High-Conversion PDPs",
         contentFirst: true,
@@ -64,7 +65,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: "Speed Optimization",
         description: "Core Web Vitals Mastery",
         contentFirst: true,
@@ -76,7 +77,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         title: "Apps & Integrations",
         description: "The Healthy App Stack",
         contentFirst: true,
@@ -88,7 +89,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 8,
+        id: 9,
         title: "Checkout & Policies",
         description: "Trust & Transaction Setup",
         contentFirst: true,
@@ -100,7 +101,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 9,
+        id: 10,
         title: "QA & Testing",
         description: "The 60-Point Quality Gate",
         contentFirst: true,
@@ -112,7 +113,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 10,
+        id: 11,
         title: "Troubleshooting",
         description: "Debugging Mastery",
         contentFirst: true,
@@ -124,7 +125,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 11,
+        id: 12,
         title: "Crisis Management",
         description: "Handling Dev Emergencies",
         contentFirst: true,
@@ -136,7 +137,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 12,
+        id: 13,
         title: "AI-Powered Development",
         description: "Coding with AI Copilots",
         contentFirst: true,
@@ -148,7 +149,7 @@ const trainingTasks = [
         ]
     },
     {
-        id: 13,
+        id: 14,
         title: "Career Growth & Final Exam",
         description: "Junior to Expert Path",
         contentFirst: true,
@@ -162,9 +163,229 @@ const trainingTasks = [
 ];
 
 // =============================================================================
+
+const task0Content = `
+<h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes</h3>
+    <p>You're now part of something bigger than just a job. We are building the <strong>world's best digital agency</strong>. This isn't a typical company—we have high standards because we're building something exceptional. <strong>DISCIPLINE IS YOUR GREATEST INVESTMENT.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Mission: Point A → Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Milestone</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Revenue Target</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹9.2 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2025 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹15-20 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2026 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹40 Crores</td></tr>
+            <tr style="background: rgba(59, 130, 246, 0.2);"><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹75 Crores</strong></td></tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits through our <strong>equity-sharing model—even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- MANIFESTO -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">⚡ The Digital Heroes Manifesto</h3>
+    <ul>
+        <li><strong>Talent is Irrelevant. Volume is Everything.</strong> — We don't care about your degree. We care about your OUTPUT. Need skills? Put in 100 hours learning. Need more? Put in 500.</li>
+        <li><strong>Emotional Intelligence > IQ</strong> — How do you respond under pressure? That's your real test. People with high EQ build real relationships and lead.</li>
+        <li><strong>Instant Reply = Respect</strong> — When you respond quickly, you're saying: "I respect you, I'm reliable, I care."</li>
+        <li><strong>Protect Your Mindset</strong> — Stop thinking negative thoughts. Build character that helps your growth.</li>
+        <li><strong>Clients are Opportunities</strong> — Approach every client like you're personally invested in their success.</li>
+        <li><strong>The 80/20 Principle</strong> — 80% of your time: Productive work. 20%: Everything else.</li>
+        <li><strong>Work = Highest Priority</strong> — Real satisfaction comes from BUILDING something that matters.</li>
+    </ul>
+</div>
+
+<!-- CORE VALUES -->
+<div class="content-section">
+    <h3>⭐ Core Values: The Digital Heroes Way</h3>
+    <ul>
+        <li>⚡ <strong>Work Fast, Work Smart</strong> — Speed without quality is recklessness. Quality without speed is inefficiency.</li>
+        <li>💬 <strong>Communicate Clearly</strong> — Ambiguity is the enemy. Ask clarifying questions. Confirm understanding. Never leave people guessing.</li>
+        <li>💡 <strong>Share Ideas</strong> — Your insights matter. If you see a better way, speak up.</li>
+        <li>🤝 <strong>Help Your Teammates</strong> — We are allies. We win together or we don't win at all.</li>
+        <li>🌟 <strong>Be Useful Beyond Tasks</strong> — Your attitude, proactive problem-solving, and contribution to team culture matter.</li>
+        <li>🚫 <strong>Zero Politics</strong> — Problems go to HR or Delhi Team only. We foster positivity.</li>
+    </ul>
+</div>
+
+<!-- INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔗 The Interconnected Chain</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p style="margin: 0;">
+            <strong style="color: #FBBF24;">Sales</strong> → generates enquiries → <strong style="color: #60A5FA;">Development</strong> → delivers quality → <strong style="color: #F472B6;">Client Satisfaction</strong> → drives reviews → <strong style="color: #A78BFA;">Better Positioning</strong> → more enquiries → 🔄 Cycle continues
+        </p>
+    </div>
+    <p style="color: #F87171; font-weight: 600;">⚠️ If any single link breaks, the entire system is affected. No department is bigger than the process. No one grows alone here.</p>
+</div>
+
+<!-- CRITICAL RULES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 CRITICAL RULES — Zero Tolerance (No Warnings, No Second Chances)</h3>
+    <ol>
+        <li><strong>Ignoring Management Messages</strong> = <span style="color: #EF4444;">IMMEDIATE TERMINATION</span>. This is the #1 termination reason.</li>
+        <li><strong>Data Breach</strong> — Sharing client info, source code, or passwords outside company = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+        <li><strong>Moonlighting</strong> — Working for competitors, taking freelance projects while employed = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Harassment</strong> — Verbal, sexual, or online bullying. One proven incident = <span style="color: #EF4444;">Out</span>.</li>
+        <li><strong>Poor Communication (3 Strikes)</strong> — Rude to client / Lying / Late responses. 1st: ₹500 Penalty → 2nd: ₹1000 → 3rd: Termination.</li>
+        <li><strong>Substance Abuse</strong> — Coming to work under influence = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Conspiracy & Negativity</strong> — Problems regarding any person must be shared ONLY with HR or Delhi Team. Conspiring = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+    </ol>
+</div>
+
+<!-- TEAM HIERARCHY -->
+<div class="content-section">
+    <h3>👥 Team Structure & Hierarchy</h3>
+    <p><strong>Supreme Authority:</strong> The Delhi Team represents the highest level of command. Their decisions override ALL other instructions.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Level</th><th style="padding: 10px; text-align: left;">Role</th><th style="padding: 10px; text-align: left;">Key Persons</th></tr>
+        <tr><td style="padding: 8px;">Level 1 (Top)</td><td style="padding: 8px;">CEO / Leadership</td><td style="padding: 8px;">Prasun Anand (CEO - Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Operations Head</td><td style="padding: 8px;">Anurag Singh (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Managing Director (Lucknow)</td><td style="padding: 8px;">Shreyansh</td></tr>
+        <tr><td style="padding: 8px;">Level 3</td><td style="padding: 8px;">General Manager</td><td style="padding: 8px;">Parth Srivastav (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 4</td><td style="padding: 8px;">HR & Project Managers</td><td style="padding: 8px;">Stuti/Agrima (HR), Navya Singh (Shopify PM)</td></tr>
+        <tr><td style="padding: 8px;">Level 5</td><td style="padding: 8px;">Team Leads / Senior Devs</td><td style="padding: 8px;">Mahira (Lead), Divyansh Singh</td></tr>
+        <tr><td style="padding: 8px;">Level 6</td><td style="padding: 8px;">Execution Teams</td><td style="padding: 8px;">Developers, Designers, QA, Sales, CS</td></tr>
+    </table>
+</div>
+
+<!-- HOURS & ATTENDANCE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⏰ Working Hours & Attendance</h3>
+    <ul>
+        <li><strong>Lucknow Team:</strong> 9:00 AM – 6:00 PM (Morning Shift)</li>
+        <li><strong>Delhi Team:</strong> Night Shift (Handling Foreign Clients)</li>
+        <li><strong>Sunday:</strong> Off | <strong>Lunch:</strong> 1:00 PM – 2:00 PM</li>
+        <li><strong>Fiverr/Sales Team Window:</strong> 9:00 AM – 9:00 PM (flexible shifts)</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ The 9:15 Rule:</strong> Arrive after 9:15 AM = <strong>Half-day salary deduction</strong>. Late arrivals: 3x = Verbal Warning → 5x = Written Warning → 7+ = Termination Review.
+    </div>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Unexplained Absence</strong> (not informing by 9:00 AM): 1st = Written Warning → 3rd = 3 Days Salary Deduction → 5th = Termination.
+    </div>
+</div>
+
+<!-- LEAVE POLICY -->
+<div class="content-section">
+    <h3>🏖️ Leave Policy</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Type</th><th style="padding: 10px; text-align: left;">Days/Year</th><th style="padding: 10px; text-align: left;">Notes</th></tr>
+        <tr><td style="padding: 8px;">Casual Leave (CL)</td><td style="padding: 8px;">12</td><td style="padding: 8px;">Personal use. Max 2/month.</td></tr>
+        <tr><td style="padding: 8px;">Sick Leave (SL)</td><td style="padding: 8px;">6</td><td style="padding: 8px;">Medical use. Certificate for 2+ days.</td></tr>
+        <tr><td style="padding: 8px;">Earned Leave (EL)</td><td style="padding: 8px;">15</td><td style="padding: 8px;">After 1 year only.</td></tr>
+        <tr><td style="padding: 8px;">Holidays</td><td style="padding: 8px;">~10</td><td style="padding: 8px;">Standard National Holidays.</td></tr>
+    </table>
+    <p><strong>Restrictions:</strong></p>
+    <ul>
+        <li>❌ No leave in first 2 months (Probation) unless emergency.</li>
+        <li>❌ No leave during month-end (25th–5th) billing cycle.</li>
+        <li>❌ Max 2 CL per month (unless approved by Senior Management).</li>
+    </ul>
+    <p><strong>How to Apply:</strong> Post in <strong>#ask-hr</strong> or message Manager min <strong>3 days in advance</strong>. Include: Name, Dates, Reason, and who is covering your work.</p>
+</div>
+
+<!-- SALARY & GROWTH -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💰 Salary, Growth & Compensation</h3>
+    <ul>
+        <li><strong>Payment Date:</strong> Before 10th of the following month.</li>
+        <li><strong>Cycle:</strong> 1st to End of Month.</li>
+        <li>🚨 <strong>Confidentiality:</strong> Discussing salary with colleagues = <span style="color: #EF4444;">Immediate Termination</span>.</li>
+    </ul>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">KPI Score</th><th style="padding: 10px; text-align: left;">Outcome</th></tr>
+        <tr><td style="padding: 8px;">90-100% (Exceptional)</td><td style="padding: 8px;">15-20% Increment + Bonus</td></tr>
+        <tr><td style="padding: 8px;">75-89% (Exceeds)</td><td style="padding: 8px;">10-15% Increment</td></tr>
+        <tr><td style="padding: 8px;">60-74% (Meets)</td><td style="padding: 8px;">5-10% Increment</td></tr>
+        <tr><td style="padding: 8px;">&lt;60% (Needs Improvement)</td><td style="padding: 8px;">No Increment + PIP</td></tr>
+    </table>
+    <p><strong>Advance Salary:</strong> Available after 3 months. Max 50% of salary. Recovered in 2 installments. Genuine emergencies only.</p>
+    <p><strong>Growth Formula:</strong> Employee Growth = Company Growth × (Will + Efforts). Income = Happy Clients × Skill × Speed.</p>
+</div>
+
+<!-- COMMUNICATION RULES -->
+<div class="content-section">
+    <h3>💬 Communication Protocol</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Who</th><th style="padding: 10px; text-align: left;">Response Time</th></tr>
+        <tr><td style="padding: 8px;">Clients</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Manager</td><td style="padding: 8px;">&lt; 1 Hour</td></tr>
+        <tr><td style="padding: 8px;">Team</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Emergency</td><td style="padding: 8px;">&lt; 15 Minutes</td></tr>
+    </table>
+    <p><strong>Channels:</strong> Official: Discord/Email. Team: WhatsApp. Clients: Fiverr/Platform. Personal issues → DM. Work questions → Group chat (so everyone learns).</p>
+    <p><strong>Specificity Rule:</strong> Always provide ETAs. Never say "I'll be late" — say "I will be 15 mins late. ETA 9:45 AM." Never say "Okay" — say "Got it. Task A: ETA 2 PM. Task B: ETA 5 PM."</p>
+</div>
+
+<!-- WFH POLICY -->
+<div class="content-section">
+    <h3>🏠 Work From Home Policy</h3>
+    <p><strong>WFH is a PRIVILEGE, Not a Right.</strong></p>
+    <ul>
+        <li>Max 2 days/week. Non-consecutive.</li>
+        <li>Manager can revoke instantly if productivity drops.</li>
+        <li>Requirements: Probation completed (3 months), High speed internet (10+ Mbps), Respond within 30 mins, Camera ON for all meetings.</li>
+    </ul>
+</div>
+
+<!-- CULTURE & PERKS -->
+<div class="content-section">
+    <h3>🎉 Culture, Perks & Exit Process</h3>
+    <ul>
+        <li>🏔️ <strong>Offsite Trips</strong> — Twice a year, company-paid (travel, stay, food).</li>
+        <li>🎬 <strong>Outing Budget</strong> — ₹500-1000/month per person for team activities.</li>
+        <li>🎂 <strong>Birthdays</strong> — Half-day, Cake, and Celebration.</li>
+        <li>🤝 <strong>Buddy System</strong> — New joiners get a Buddy for 2 weeks.</li>
+        <li>📚 <strong>Growth</strong> — 4 hrs/week learning hours. Course reimbursement up to ₹5k/yr.</li>
+    </ul>
+    <h4>Exit Process</h4>
+    <ul>
+        <li><strong>Notice Period:</strong> Probation = 7 Days. Confirmed = 30 Days.</li>
+        <li><strong>Process:</strong> Written resignation → Handover → Exit Interview → Return Assets → F&F within 30 days.</li>
+        <li><strong>Email:</strong> hr@digitalheroes.co.in</li>
+        <li>Experience Certificate: Provided for good standing exits only.</li>
+    </ul>
+</div>
+
+<!-- SOP OBSESSION -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📑 The SOP Obsession</h3>
+    <p><strong>What is an SOP?</strong> Standard Operating Procedure. Here, it's not just a guideline—it is the <strong>Law</strong>. It is the best known way to do a task perfectly.</p>
+    <ul>
+        <li><strong>Why use it?</strong> It removes guessing. It guarantees speed, quality, and consistency. It protects you from mistakes.</li>
+        <li><strong>Your Duty:</strong> You MUST follow your Role's SOP + the Daily SOP every day.</li>
+        <li><strong>Evolve It:</strong> SOPs are not static. Found a better way? Suggest an improvement.</li>
+    </ul>
+</div>
+
+<!-- KEY FAQS -->
+<div class="content-section">
+    <h3>❓ Key Employee FAQs</h3>
+    <ul>
+        <li><strong>Is training period paid?</strong> No. Training Completion Certificate provided after finishing.</li>
+        <li><strong>Is EOD report mandatory?</strong> Yes. Submit EOD + time tracking on Discord daily. Failure = marked absent.</li>
+        <li><strong>Can I take freelance projects?</strong> No. Conflict of interest.</li>
+        <li><strong>Is confidentiality mandatory?</strong> Yes. Client data, strategies, internal info. Breach = termination.</li>
+        <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
+        <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
+        <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
+        <li><strong>Sales incentives?</strong> 5% of sales exceeding USD 5,000/month.</li>
+        <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
+    </ul>
+</div>
+`;
+
 // TASK 1: DEVELOPER MINDSET - THE $50,000/DAY REALITY
 // =============================================================================
-const task1Content = `
+const task2Content = `
 <h2>📚 PART 1: THE FOUNDATION - Code That SELLS</h2>
 
 <!-- WELCOME TO DIGITAL HEROES -->
@@ -424,7 +645,7 @@ const task1Content = `
 // =============================================================================
 // TASK 2: SHOPIFY PLATFORM FUNDAMENTALS
 // =============================================================================
-const task2Content = `
+const task3Content = `
 <h2>📚 TASK 2: SHOPIFY PLATFORM FUNDAMENTALS</h2>
 
 <div class="content-section">
@@ -563,7 +784,7 @@ const task2Content = `
 // Continue with more tasks...
 // (Tasks 3-13 follow the same deep pattern)
 
-const task3Content = `
+const task4Content = `
 <h2>📚 TASK 3: THEME ARCHITECTURE - The Digital Heroes Standard</h2>
 
 <div class="content-section">
@@ -632,7 +853,7 @@ const task3Content = `
 `;
 
 // Tasks 4-13 content - EXPANDED WITH FULL DEPTH
-const task4Content = `
+const task5Content = `
 <h2>📚 TASK 4: LIQUID PROGRAMMING - The Heart of Shopify Development</h2>
 
 <div class="content-section">
@@ -870,7 +1091,7 @@ const task4Content = `
 </div>
 `;
 
-const task5Content = `
+const task6Content = `
 <h2>📚 TASK 5: PRODUCT PAGE (PDP) OPTIMIZATION - Converting Visitors to Buyers</h2>
 
 <div class="content-section">
@@ -1047,7 +1268,7 @@ const task5Content = `
 </div>
 `;
 
-const task6Content = `
+const task7Content = `
 <h2>📚 TASK 6: SPEED OPTIMIZATION - Every Second Costs Money</h2>
 
 <div class="content-section">
@@ -1140,7 +1361,7 @@ const task6Content = `
 </div>
 `;
 
-const task7Content = `
+const task8Content = `
 <h2>📚 TASK 7: APPS & INTEGRATIONS - The Healthy App Stack</h2>
 
 <div class="content-section">
@@ -1187,7 +1408,7 @@ const task7Content = `
 </div>
 `;
 
-const task8Content = `
+const task9Content = `
 <h2>📚 TASK 8: CHECKOUT & POLICIES - Trust & Legal Compliance</h2>
 
 <div class="content-section">
@@ -1223,7 +1444,7 @@ const task8Content = `
 </div>
 `;
 
-const task9Content = `
+const task10Content = `
 <h2>📚 TASK 9: QA & TESTING - The 60-Point Quality Gate</h2>
 
 <div class="content-section">
@@ -1282,7 +1503,7 @@ const task9Content = `
 </div>
 `;
 
-const task10Content = `
+const task11Content = `
 <h2>📚 TASK 10: TROUBLESHOOTING - The Debugging Master</h2>
 
 <div class="content-section">
@@ -1326,7 +1547,7 @@ const task10Content = `
 </div>
 `;
 
-const task11Content = `
+const task12Content = `
 <h2>📚 TASK 11: CRISIS MANAGEMENT - Handling Dev Emergencies</h2>
 
 <div class="content-section">
@@ -1382,7 +1603,7 @@ const task11Content = `
 </div>
 `;
 
-const task12Content = `
+const task13Content = `
 <h2>📚 TASK 12: AI-POWERED DEVELOPMENT - Using AI Copilots Effectively</h2>
 
 <div class="content-section">
@@ -1542,7 +1763,7 @@ const task12Content = `
 </div>
 `;
 
-const task13Content = `
+const task14Content = `
 <h2>📚 TASK 13: CAREER GROWTH & FINAL EXAM - Your Path to Senior Developer</h2>
 
 <div class="content-section">
@@ -1618,184 +1839,184 @@ const task13Content = `
 // Quiz Questions (expanded to 130+ questions)
 const quizQuestions = [
     // Task 1: Mindset (15 questions)
-    { question: "A store losing sales due to slow load time is losing _______ monthly?", options: ["Thousands", "Hundreds of thousands annually", "Nothing", "Unknown"], correct: 1 },
-    { question: "What is the primary goal of your code?", options: ["To be clever", "To drive revenue", "To follow tutorials", "To impress"], correct: 1 },
+    { question: "A store losing sales due to slow load time is losing _______ monthly?", options: ["Thousands", "Unknown", "Nothing", "Hundreds of thousands annually"], correct: 3 },
+    { question: "What is the primary goal of your code?", options: ["To drive revenue", "To be clever", "To follow tutorials", "To impress"], correct: 0 },
     { question: "A bug on production costing $50k - who is responsible?", options: ["Client", "Developer", "Shopify", "No one"], correct: 1 },
-    { question: "'Plan Twice, Code Once' prevents what?", options: ["Innovation", "Wasted hours and bugs", "Fun", "Nothing"], correct: 1 },
-    { question: "Should you use clients as beta testers?", options: ["Yes", "No - Zero Tolerance for bugs", "Sometimes", "Often"], correct: 1 },
-    { question: "What makes a '10x developer' effective?", options: ["Being smarter", "Being systematic", "Working alone", "Coding faster"], correct: 1 },
+    { question: "'Plan Twice, Code Once' prevents what?", options: ["Innovation", "Fun", "Wasted hours and bugs", "Nothing"], correct: 2 },
+    { question: "Should you use clients as beta testers?", options: ["Yes", "Often", "Sometimes", "No - Zero Tolerance for bugs"], correct: 3 },
+    { question: "What makes a '10x developer' effective?", options: ["Being systematic", "Being smarter", "Working alone", "Coding faster"], correct: 0 },
     { question: "Every 1 second of load time equals what conversion drop?", options: ["1%", "7%", "20%", "50%"], correct: 1 },
-    { question: "The Digital Heroes standard for console errors is?", options: ["Some allowed", "Zero errors", "Only warnings", "Ignore them"], correct: 1 },
-    { question: "What percentage of traffic is mobile?", options: ["30%", "50%", "70%+", "10%"], correct: 2 },
-    { question: "A $10,000/day store with 1 sec delay loses _____ annually?", options: ["$25,000", "$255,500", "$1M", "$500"], correct: 1 },
+    { question: "The Digital Heroes standard for console errors is?", options: ["Some allowed", "Only warnings", "Zero errors", "Ignore them"], correct: 2 },
+    { question: "What percentage of traffic is mobile?", options: ["30%", "50%", "10%", "70%+"], correct: 3 },
+    { question: "A $10,000/day store with 1 sec delay loses _____ annually?", options: ["$255,500", "$25,000", "$1M", "$500"], correct: 0 },
     { question: "What browser should ALWAYS be tested for e-commerce?", options: ["Internet Explorer", "Safari on iPhone", "Netscape", "Opera Mini"], correct: 1 },
     { question: "The Digital Heroes QA Standard requires testing on:", options: ["Just Chrome", "Chrome and Firefox only", "Chrome, Safari, Firefox, Edge + real mobile", "Only desktop"], correct: 2 },
-    { question: "What should you ALWAYS check before marking a task complete?", options: ["Email", "Console for errors", "Social media", "Weather"], correct: 1 },
-    { question: "A 'Script Kid' developer does what?", options: ["Writes systematic code", "Copy-pastes from tutorials", "Tests thoroughly", "Documents code"], correct: 1 },
+    { question: "What should you ALWAYS check before marking a task complete?", options: ["Email", "Weather", "Social media", "Console for errors"], correct: 3 },
+    { question: "A 'Script Kid' developer does what?", options: ["Copy-pastes from tutorials", "Writes systematic code", "Tests thoroughly", "Documents code"], correct: 0 },
     { question: "What's the difference between a coder and a Digital Heroes Developer?", options: ["Nothing", "DH developers write code that SELLS", "Coders are better", "DH developers work less"], correct: 1 },
 
     // Task 2: Platform (15 questions)
-    { question: "Shopify uses what templating language?", options: ["PHP", "Liquid", "Python", "JavaScript"], correct: 1 },
-    { question: "Maximum variants per product?", options: ["50", "100", "200", "Unlimited"], correct: 1 },
-    { question: "To output a currency properly, use what filter?", options: ["| currency", "| money", "| dollar", "| price"], correct: 1 },
+    { question: "Shopify uses what templating language?", options: ["PHP", "Python", "Liquid", "JavaScript"], correct: 2 },
+    { question: "Maximum variants per product?", options: ["50", "Unlimited", "200", "100"], correct: 3 },
+    { question: "To output a currency properly, use what filter?", options: ["| money", "| currency", "| dollar", "| price"], correct: 0 },
     { question: "Online Store 2.0 uses what for page templates?", options: ["PHP", "JSON", "XML", "YAML"], correct: 1 },
-    { question: "What's the correct hierarchy?", options: ["Variant > Product", "Product > Variant", "Both same level", "Collection > Variant"], correct: 1 },
-    { question: "What is a metafield namespace?", options: ["Product name", "Category for metafield like custom.ingredients", "HTML tag", "CSS class"], correct: 1 },
-    { question: "Maximum product images allowed?", options: ["50", "100", "250", "Unlimited"], correct: 2 },
+    { question: "What's the correct hierarchy?", options: ["Variant > Product", "Both same level", "Product > Variant", "Collection > Variant"], correct: 2 },
+    { question: "What is a metafield namespace?", options: ["Product name", "CSS class", "HTML tag", "Category for metafield like custom.ingredients"], correct: 3 },
+    { question: "Maximum product images allowed?", options: ["250", "100", "50", "Unlimited"], correct: 0 },
     { question: "Where is shop currency accessed?", options: ["settings.currency", "shop.currency", "cart.currency", "checkout.currency"], correct: 1 },
     { question: "What's the limit for products in a for loop?", options: ["50", "100", "1000", "Unlimited"], correct: 2 },
     { question: "Shopify is hosted where?", options: ["Self-hosted", "AWS", "Google Cloud", "Shopify's own infrastructure (SaaS)"], correct: 3 },
-    { question: "What does OS 2.0 stand for?", options: ["Operating System 2.0", "Online Store 2.0", "Open Source 2.0", "Old Standard 2.0"], correct: 1 },
+    { question: "What does OS 2.0 stand for?", options: ["Online Store 2.0", "Operating System 2.0", "Open Source 2.0", "Old Standard 2.0"], correct: 0 },
     { question: "Can you directly access Shopify's database?", options: ["Yes", "No - API only", "Sometimes", "With permission"], correct: 1 },
-    { question: "What is an App Block in OS 2.0?", options: ["Block for apps", "Apps can inject content into sections", "App settings", "App dashboard"], correct: 1 },
-    { question: "How do sections work in OS 2.0?", options: ["Only on homepage", "Sections everywhere - any page type", "Only on product pages", "Not supported"], correct: 1 },
-    { question: "What's the customer object in Liquid?", options: ["All customers", "Current logged-in customer", "Guest customer", "Admin"], correct: 1 },
+    { question: "What is an App Block in OS 2.0?", options: ["Block for apps", "App settings", "Apps can inject content into sections", "App dashboard"], correct: 2 },
+    { question: "How do sections work in OS 2.0?", options: ["Only on homepage", "Not supported", "Only on product pages", "Sections everywhere - any page type"], correct: 3 },
+    { question: "What's the customer object in Liquid?", options: ["Current logged-in customer", "All customers", "Guest customer", "Admin"], correct: 0 },
 
     // Task 3: Theme (10 questions)
     { question: "Should you edit the live theme directly?", options: ["Yes", "No - duplicate first", "Only CSS", "If urgent"], correct: 1 },
-    { question: "What is Dawn?", options: ["A plugin", "Shopify's OS 2.0 reference theme", "An app", "A framework"], correct: 1 },
-    { question: "Minimum touch target size for mobile?", options: ["20px", "44px", "60px", "100px"], correct: 1 },
-    { question: "Theme duplicate naming convention?", options: ["Copy 1", "[Dev] Feature - Date", "Backup", "New Theme"], correct: 1 },
-    { question: "How many essential homepage sections?", options: ["5", "8", "12", "20"], correct: 2 },
-    { question: "What section builds trust with 'As seen in...'?", options: ["Hero", "Logo Bar", "Products", "Footer"], correct: 1 },
-    { question: "First section on a homepage should be?", options: ["Footer", "Hero Banner", "FAQ", "Newsletter"], correct: 1 },
-    { question: "Mobile-first development means?", options: ["Design desktop first", "Design mobile first, then desktop", "Only mobile", "Ignore mobile"], correct: 1 },
+    { question: "What is Dawn?", options: ["A plugin", "An app", "Shopify's OS 2.0 reference theme", "A framework"], correct: 2 },
+    { question: "Minimum touch target size for mobile?", options: ["20px", "100px", "60px", "44px"], correct: 3 },
+    { question: "Theme duplicate naming convention?", options: ["[Dev] Feature - Date", "Copy 1", "Backup", "New Theme"], correct: 0 },
+    { question: "How many essential homepage sections?", options: ["5", "12", "8", "20"], correct: 1 },
+    { question: "What section builds trust with 'As seen in...'?", options: ["Hero", "Products", "Logo Bar", "Footer"], correct: 2 },
+    { question: "First section on a homepage should be?", options: ["Footer", "Newsletter", "FAQ", "Hero Banner"], correct: 3 },
+    { question: "Mobile-first development means?", options: ["Design mobile first, then desktop", "Design desktop first", "Only mobile", "Ignore mobile"], correct: 0 },
     { question: "What's a sticky Add to Cart?", options: ["Glue on button", "Button stays visible when scrolling", "Slow button", "Hidden button"], correct: 1 },
-    { question: "Prestige and Impulse are?", options: ["Free themes", "Premium themes we use", "Old themes", "App names"], correct: 1 },
+    { question: "Prestige and Impulse are?", options: ["Free themes", "Old themes", "Premium themes we use", "App names"], correct: 2 },
 
     // Task 4: Liquid (20 questions)
-    { question: "Which outputs data?", options: ["{% tag %}", "{{ object }}", "[[ object ]]", "( object )"], correct: 1 },
-    { question: "Correct loop syntax?", options: ["foreach", "{% for x in y %}", "loop x", "for x in y"], correct: 1 },
-    { question: "Check product availability with?", options: ["{% if product.available %}", "{{ product.stock }}", "{% check stock %}", "product.quantity > 0"], correct: 0 },
-    { question: "What is a metafield?", options: ["Standard field", "Custom data on resources", "An app", "Database table"], correct: 1 },
-    { question: "Deprecated tag to avoid?", options: ["render", "include", "assign", "capture"], correct: 1 },
-    { question: "What filter makes 'My Product' into 'my-product'?", options: ["| lowercase", "| handleize", "| slugify", "| url"], correct: 1 },
-    { question: "Access first item in for loop with?", options: ["forloop.first", "forloop.index == 0", "for.start", "loop.begin"], correct: 0 },
-    { question: "What's forloop.index?", options: ["0-based counter", "1-based counter", "Array length", "Loop name"], correct: 1 },
-    { question: "Combine conditions with?", options: ["and / or", "&& / ||", "plus / minus", "combine"], correct: 0 },
-    { question: "Filter to truncate text?", options: ["| shorten", "| truncate: 100", "| cut", "| limit"], correct: 1 },
+    { question: "Which outputs data?", options: ["{% tag %}", "( object )", "[[ object ]]", "{{ object }}"], correct: 3 },
+    { question: "Correct loop syntax?", options: ["{% for x in y %}", "foreach", "loop x", "for x in y"], correct: 0 },
+    { question: "Check product availability with?", options: ["{{ product.stock }}", "{% if product.available %}", "{% check stock %}", "product.quantity > 0"], correct: 1 },
+    { question: "What is a metafield?", options: ["Standard field", "An app", "Custom data on resources", "Database table"], correct: 2 },
+    { question: "Deprecated tag to avoid?", options: ["render", "capture", "assign", "include"], correct: 3 },
+    { question: "What filter makes 'My Product' into 'my-product'?", options: ["| handleize", "| lowercase", "| slugify", "| url"], correct: 0 },
+    { question: "Access first item in for loop with?", options: ["forloop.index == 0", "forloop.first", "for.start", "loop.begin"], correct: 1 },
+    { question: "What's forloop.index?", options: ["0-based counter", "Array length", "1-based counter", "Loop name"], correct: 2 },
+    { question: "Combine conditions with?", options: ["combine", "&& / ||", "plus / minus", "and / or"], correct: 3 },
+    { question: "Filter to truncate text?", options: ["| truncate: 100", "| shorten", "| cut", "| limit"], correct: 0 },
     { question: "Remove HTML from string?", options: ["| no_html", "| strip_html", "| clean", "| text_only"], correct: 1 },
-    { question: "Provide default value with?", options: ["| fallback", "| default: 'N/A'", "| or", "| else"], correct: 1 },
-    { question: "What replaces img_url in OS 2.0?", options: ["image_tag", "image_url", "picture_url", "media_url"], correct: 1 },
-    { question: "Schema goes inside what tags?", options: ["{% script %}", "{% schema %}", "{% config %}", "{% settings %}"], correct: 1 },
+    { question: "Provide default value with?", options: ["| fallback", "| or", "| default: 'N/A'", "| else"], correct: 2 },
+    { question: "What replaces img_url in OS 2.0?", options: ["image_tag", "media_url", "picture_url", "image_url"], correct: 3 },
+    { question: "Schema goes inside what tags?", options: ["{% schema %}", "{% script %}", "{% config %}", "{% settings %}"], correct: 0 },
     { question: "What creates a Theme Customizer option?", options: ["CSS", "Section schema settings", "JavaScript", "HTML"], correct: 1 },
-    { question: "Access section setting with?", options: ["settings.x", "section.settings.x", "block.x", "config.x"], correct: 1 },
-    { question: "What's a preset in schema?", options: ["Default values for section", "CSS preset", "Theme color", "Font preset"], correct: 0 },
-    { question: "Contains operator checks?", options: ["If number is greater", "If string/array contains value", "If file exists", "If page loaded"], correct: 1 },
+    { question: "Access section setting with?", options: ["settings.x", "block.x", "section.settings.x", "config.x"], correct: 2 },
+    { question: "What's a preset in schema?", options: ["Font preset", "CSS preset", "Theme color", "Default values for section"], correct: 3 },
+    { question: "Contains operator checks?", options: ["If string/array contains value", "If number is greater", "If file exists", "If page loaded"], correct: 0 },
     { question: "Correct date filter syntax?", options: ["| format_date", "| date: '%B %d, %Y'", "| toDate", "| dateFormat"], correct: 1 },
-    { question: "What does capture do?", options: ["Takes screenshot", "Stores output in variable", "Captures form", "Records video"], correct: 1 },
+    { question: "What does capture do?", options: ["Takes screenshot", "Captures form", "Stores output in variable", "Records video"], correct: 2 },
 
     // Task 5: PDP (10 questions)
-    { question: "Above the fold must include?", options: ["Footer", "Add to Cart button", "Blog link", "Map"], correct: 1 },
-    { question: "Where to store product specs?", options: ["Description only", "Metafields", "Title", "Tags"], correct: 1 },
+    { question: "Above the fold must include?", options: ["Footer", "Map", "Blog link", "Add to Cart button"], correct: 3 },
+    { question: "Where to store product specs?", options: ["Metafields", "Description only", "Title", "Tags"], correct: 0 },
     { question: "Image gallery should be?", options: ["Static", "Swipeable on mobile", "Hidden", "Text only"], correct: 1 },
-    { question: "First product image should be?", options: ["Lifestyle shot", "Product on white/clean background", "Text only", "Video thumbnail"], correct: 1 },
-    { question: "Why use sticky Add to Cart on mobile?", options: ["Looks cool", "Keeps CTA visible while scrolling", "Saves space", "Required by Shopify"], correct: 1 },
-    { question: "Review stars provide what?", options: ["Decoration", "Social proof (trust)", "Speed boost", "SEO only"], correct: 1 },
+    { question: "First product image should be?", options: ["Lifestyle shot", "Text only", "Product on white/clean background", "Video thumbnail"], correct: 2 },
+    { question: "Why use sticky Add to Cart on mobile?", options: ["Looks cool", "Required by Shopify", "Saves space", "Keeps CTA visible while scrolling"], correct: 3 },
+    { question: "Review stars provide what?", options: ["Social proof (trust)", "Decoration", "Speed boost", "SEO only"], correct: 0 },
     { question: "Image width filter for thumbnails?", options: ["width: 800", "width: 100", "width: 1200", "width: 50"], correct: 1 },
-    { question: "loading='lazy' should be used on?", options: ["All images", "Below-fold images", "Hero images", "No images"], correct: 1 },
-    { question: "Variant selector lets user choose?", options: ["Shipping method", "Size/color", "Payment method", "Pickup location"], correct: 1 },
-    { question: "Trust badges should be placed?", options: ["In footer only", "Below Add to Cart button", "On contact page", "Hidden"], correct: 1 },
+    { question: "loading='lazy' should be used on?", options: ["All images", "Hero images", "Below-fold images", "No images"], correct: 2 },
+    { question: "Variant selector lets user choose?", options: ["Shipping method", "Pickup location", "Payment method", "Size/color"], correct: 3 },
+    { question: "Trust badges should be placed?", options: ["Below Add to Cart button", "In footer only", "On contact page", "Hidden"], correct: 0 },
 
     // Task 6: Speed (15 questions)
     { question: "Target mobile PageSpeed score?", options: ["50", "85+", "10", "100"], correct: 1 },
-    { question: "LCP target?", options: ["< 5s", "< 2.5s", "< 10s", "< 1s"], correct: 1 },
-    { question: "What hurts speed most?", options: ["Text", "Too many apps/scripts", "Colors", "Fonts"], correct: 1 },
-    { question: "Off-screen images should load how?", options: ["Eager", "Lazy", "Never", "Immediately"], correct: 1 },
+    { question: "LCP target?", options: ["< 5s", "< 10s", "< 2.5s", "< 1s"], correct: 2 },
+    { question: "What hurts speed most?", options: ["Text", "Fonts", "Colors", "Too many apps/scripts"], correct: 3 },
+    { question: "Off-screen images should load how?", options: ["Lazy", "Eager", "Never", "Immediately"], correct: 0 },
     { question: "CLS target?", options: ["< 1", "< 0.1", "< 5", "< 0.5"], correct: 1 },
-    { question: "What is LCP?", options: ["Largest Content Paint", "Last Content Placed", "Loading Complete Point", "Liquid Code Parser"], correct: 0 },
-    { question: "TBT stands for?", options: ["Total Block Time", "Total Blocking Time", "Theme Build Time", "Test Browser Time"], correct: 1 },
-    { question: "TBT target?", options: ["< 500ms", "< 200ms", "< 1s", "< 50ms"], correct: 1 },
+    { question: "What is LCP?", options: ["Loading Complete Point", "Last Content Placed", "Largest Content Paint", "Liquid Code Parser"], correct: 2 },
+    { question: "TBT stands for?", options: ["Total Block Time", "Test Browser Time", "Theme Build Time", "Total Blocking Time"], correct: 3 },
+    { question: "TBT target?", options: ["< 200ms", "< 500ms", "< 1s", "< 50ms"], correct: 0 },
     { question: "What causes CLS (layout shift)?", options: ["Slow server", "Images without width/height", "Too much text", "Dark colors"], correct: 1 },
-    { question: "Defer attribute does what?", options: ["Deletes script", "Loads script after HTML", "Speeds up script", "Disables script"], correct: 1 },
-    { question: "WebP format is used for?", options: ["Audio", "Optimized images", "Documents", "Videos"], correct: 1 },
-    { question: "Best tool to test speed?", options: ["Google Docs", "PageSpeed Insights", "Excel", "Photoshop"], correct: 1 },
+    { question: "Defer attribute does what?", options: ["Deletes script", "Speeds up script", "Loads script after HTML", "Disables script"], correct: 2 },
+    { question: "WebP format is used for?", options: ["Audio", "Videos", "Documents", "Optimized images"], correct: 3 },
+    { question: "Best tool to test speed?", options: ["PageSpeed Insights", "Google Docs", "Excel", "Photoshop"], correct: 0 },
     { question: "Target desktop PageSpeed score?", options: ["70", "90+", "50", "100"], correct: 1 },
-    { question: "Scripts should go where?", options: ["In head tag", "Before </body> or use defer", "In footer", "In header section"], correct: 1 },
-    { question: "How to fix slow LCP?", options: ["Add more scripts", "Optimize hero images", "Use more apps", "Increase file size"], correct: 1 },
+    { question: "Scripts should go where?", options: ["In head tag", "In footer", "Before </body> or use defer", "In header section"], correct: 2 },
+    { question: "How to fix slow LCP?", options: ["Add more scripts", "Increase file size", "Use more apps", "Optimize hero images"], correct: 3 },
 
     // Task 7: Apps (10 questions)
-    { question: "Max recommended apps?", options: ["20", "5-8", "0", "50"], correct: 1 },
+    { question: "Max recommended apps?", options: ["5-8", "20", "0", "50"], correct: 0 },
     { question: "Deleting app removes code from theme?", options: ["Yes", "No - manual cleanup often needed", "Usually", "Always"], correct: 1 },
-    { question: "App conflicts cause?", options: ["Better speed", "JS errors", "More sales", "Nothing"], correct: 1 },
-    { question: "First step to diagnose app conflict?", options: ["Email Shopify", "Open Console (F12)", "Delete all apps", "Ignore it"], correct: 1 },
-    { question: "Klaviyo is used for?", options: ["Reviews", "Email marketing automation", "Speed", "SEO"], correct: 1 },
-    { question: "Judge.me helps with?", options: ["Reviews/social proof", "Speed", "Email", "Shipping"], correct: 0 },
-    { question: "After uninstalling app, check theme for?", options: ["New features", "Leftover snippets/code", "Speed increase", "Nothing"], correct: 1 },
-    { question: "More apps generally means?", options: ["Faster site", "Slower site + conflicts", "Better SEO", "More sales"], correct: 1 },
-    { question: "jQuery version conflicts cause?", options: ["Better compatibility", "JS errors between apps", "Faster loading", "Nothing"], correct: 1 },
+    { question: "App conflicts cause?", options: ["Better speed", "More sales", "JS errors", "Nothing"], correct: 2 },
+    { question: "First step to diagnose app conflict?", options: ["Email Shopify", "Ignore it", "Delete all apps", "Open Console (F12)"], correct: 3 },
+    { question: "Klaviyo is used for?", options: ["Email marketing automation", "Reviews", "Speed", "SEO"], correct: 0 },
+    { question: "Judge.me helps with?", options: ["Speed", "Reviews/social proof", "Email", "Shipping"], correct: 1 },
+    { question: "After uninstalling app, check theme for?", options: ["New features", "Speed increase", "Leftover snippets/code", "Nothing"], correct: 2 },
+    { question: "More apps generally means?", options: ["Faster site", "More sales", "Better SEO", "Slower site + conflicts"], correct: 3 },
+    { question: "jQuery version conflicts cause?", options: ["JS errors between apps", "Better compatibility", "Faster loading", "Nothing"], correct: 0 },
     { question: "Before installing app, consider?", options: ["Only price", "Speed impact + alternatives", "Just install it", "Color scheme"], correct: 1 },
 
     // Task 8: Checkout (10 questions)
     { question: "Which policy page is NOT required?", options: ["Privacy", "Returns", "Blog Guidelines", "Shipping"], correct: 2 },
-    { question: "Missing policies can cause?", options: ["Nothing", "Ad account bans", "More sales", "Faster site"], correct: 1 },
-    { question: "Where are policies configured?", options: ["Theme editor", "Settings > Policies", "Apps", "Code editor"], correct: 1 },
+    { question: "Missing policies can cause?", options: ["Nothing", "Faster site", "More sales", "Ad account bans"], correct: 3 },
+    { question: "Where are policies configured?", options: ["Settings > Policies", "Theme editor", "Apps", "Code editor"], correct: 0 },
     { question: "GDPR requires what page?", options: ["About Us", "Privacy Policy", "Blog", "FAQ"], correct: 1 },
-    { question: "Shopify Payments offers?", options: ["Highest fees", "Lowest transaction fees", "No payment support", "Only PayPal"], correct: 1 },
-    { question: "Before going live, test checkout in?", options: ["Live mode", "Test mode", "Don't test", "Production"], correct: 1 },
-    { question: "Contact page builds what?", options: ["Speed", "Trust + Ad approval", "SEO only", "Nothing"], correct: 1 },
+    { question: "Shopify Payments offers?", options: ["Highest fees", "No payment support", "Lowest transaction fees", "Only PayPal"], correct: 2 },
+    { question: "Before going live, test checkout in?", options: ["Live mode", "Production", "Don't test", "Test mode"], correct: 3 },
+    { question: "Contact page builds what?", options: ["Trust + Ad approval", "Speed", "SEO only", "Nothing"], correct: 0 },
     { question: "Refund Policy is required for?", options: ["Nothing", "FB/Google Ads approval", "Theme installation", "App installation"], correct: 1 },
-    { question: "Apple Pay / Google Pay should be?", options: ["Disabled", "Enabled for faster checkout", "Only on desktop", "Only on mobile"], correct: 1 },
-    { question: "Policies auto-link in?", options: ["Header", "Checkout footer", "Product pages", "Cart"], correct: 1 },
+    { question: "Apple Pay / Google Pay should be?", options: ["Disabled", "Only on desktop", "Enabled for faster checkout", "Only on mobile"], correct: 2 },
+    { question: "Policies auto-link in?", options: ["Header", "Cart", "Product pages", "Checkout footer"], correct: 3 },
 
     // Task 9: QA (12 questions)
-    { question: "Where to test iOS issues?", options: ["Windows Chrome", "Real iPhone/BrowserStack", "DevTools only", "Don't test"], correct: 1 },
+    { question: "Where to test iOS issues?", options: ["Real iPhone/BrowserStack", "Windows Chrome", "DevTools only", "Don't test"], correct: 0 },
     { question: "Console red errors mean?", options: ["Ignore", "Fix them - Zero Tolerance", "It's fine", "Normal"], correct: 1 },
-    { question: "Test checkout with?", options: ["Real payment", "Test mode order", "Skip it", "Trust it works"], correct: 1 },
-    { question: "Chrome DevTools is enough for mobile testing?", options: ["Yes", "No - need real devices", "Sometimes", "Always"], correct: 1 },
-    { question: "Minimum touch target size?", options: ["20px", "44x44px", "10px", "100px"], correct: 1 },
+    { question: "Test checkout with?", options: ["Real payment", "Skip it", "Test mode order", "Trust it works"], correct: 2 },
+    { question: "Chrome DevTools is enough for mobile testing?", options: ["Yes", "Always", "Sometimes", "No - need real devices"], correct: 3 },
+    { question: "Minimum touch target size?", options: ["44x44px", "20px", "10px", "100px"], correct: 0 },
     { question: "Which browsers must be tested?", options: ["Just Chrome", "Chrome, Safari, Firefox, Edge", "Only Safari", "None"], correct: 1 },
-    { question: "BrowserStack is used for?", options: ["Speed testing", "Testing on devices you don't own", "Email", "SEO"], correct: 1 },
-    { question: "Cart drawer should be tested for?", options: ["Add/remove items", "Just display", "Colors only", "Nothing"], correct: 0 },
-    { question: "Slow 3G simulation tests?", options: ["Desktop speed", "Site on slow connections", "Server speed", "Nothing"], correct: 1 },
+    { question: "BrowserStack is used for?", options: ["Speed testing", "Email", "Testing on devices you don't own", "SEO"], correct: 2 },
+    { question: "Cart drawer should be tested for?", options: ["Nothing", "Just display", "Colors only", "Add/remove items"], correct: 3 },
+    { question: "Slow 3G simulation tests?", options: ["Site on slow connections", "Desktop speed", "Server speed", "Nothing"], correct: 0 },
     { question: "What should work on mobile menu?", options: ["Nothing", "Open and close properly", "Only colors", "Just logo"], correct: 1 },
-    { question: "Forms should be tested for?", options: ["Colors", "Correct submission", "Font size", "Nothing"], correct: 1 },
-    { question: "Email notifications should be?", options: ["Ignored", "Tested to ensure they work", "Deleted", "Hidden"], correct: 1 },
+    { question: "Forms should be tested for?", options: ["Colors", "Font size", "Correct submission", "Nothing"], correct: 2 },
+    { question: "Email notifications should be?", options: ["Ignored", "Hidden", "Deleted", "Tested to ensure they work"], correct: 3 },
 
     // Task 10: Debug (10 questions)
-    { question: "First debug step?", options: ["Panic", "Test on fresh Dawn", "Email Shopify", "Delete code"], correct: 1 },
+    { question: "First debug step?", options: ["Test on fresh Dawn", "Panic", "Email Shopify", "Delete code"], correct: 0 },
     { question: "Cache test method?", options: ["Reload", "Incognito window", "Wait", "Reboot"], correct: 1 },
-    { question: "Theme Inspector Chrome Extension shows?", options: ["Colors", "Which file renders what", "Speed", "SEO"], correct: 1 },
-    { question: "Network tab in DevTools shows?", options: ["Colors", "API calls and load times", "Fonts", "Nothing"], correct: 1 },
-    { question: "status.shopify.com shows?", options: ["Your store status", "Shopify platform status", "Theme status", "App status"], correct: 1 },
+    { question: "Theme Inspector Chrome Extension shows?", options: ["Colors", "Speed", "Which file renders what", "SEO"], correct: 2 },
+    { question: "Network tab in DevTools shows?", options: ["Colors", "Nothing", "Fonts", "API calls and load times"], correct: 3 },
+    { question: "status.shopify.com shows?", options: ["Shopify platform status", "Your store status", "Theme status", "App status"], correct: 0 },
     { question: "'Cannot read property of null' means?", options: ["Code works", "Trying to access something that doesn't exist", "Server error", "Network issue"], correct: 1 },
-    { question: "If bug only on one product, it's likely?", options: ["Theme issue", "Data issue", "Server issue", "Shopify bug"], correct: 1 },
-    { question: "Theme version history helps find?", options: ["Best design", "Recent changes that caused bugs", "Speed issues", "SEO problems"], correct: 1 },
-    { question: "Elements tab in DevTools inspects?", options: ["Network calls", "HTML/CSS live", "Server logs", "Database"], correct: 1 },
+    { question: "If bug only on one product, it's likely?", options: ["Theme issue", "Server issue", "Data issue", "Shopify bug"], correct: 2 },
+    { question: "Theme version history helps find?", options: ["Best design", "SEO problems", "Speed issues", "Recent changes that caused bugs"], correct: 3 },
+    { question: "Elements tab in DevTools inspects?", options: ["HTML/CSS live", "Network calls", "Server logs", "Database"], correct: 0 },
     { question: "After all debugging fails, ask?", options: ["No one", "ChatGPT, Community, PM", "Random person", "Delete everything"], correct: 1 },
 
     // Task 11: Crisis (8 questions)
-    { question: "Site down first action?", options: ["Panic", "Check status.shopify.com", "Delete theme", "Email client"], correct: 1 },
-    { question: "Data loss recovery?", options: ["Cry", "Check backups/CSV exports", "Start over", "Blame client"], correct: 1 },
-    { question: "Checkout broken - priority level?", options: ["Low", "$$$ Emergency - highest priority", "Medium", "Ignore"], correct: 1 },
+    { question: "Site down first action?", options: ["Panic", "Delete theme", "Check status.shopify.com", "Email client"], correct: 2 },
+    { question: "Data loss recovery?", options: ["Cry", "Blame client", "Start over", "Check backups/CSV exports"], correct: 3 },
+    { question: "Checkout broken - priority level?", options: ["$$$ Emergency - highest priority", "Low", "Medium", "Ignore"], correct: 0 },
     { question: "Angry client - first response?", options: ["Make excuses", "Acknowledge the issue immediately", "Ignore", "Blame Shopify"], correct: 1 },
-    { question: "Inform PM of site down within?", options: ["1 hour", "5 minutes", "Next day", "Never"], correct: 1 },
-    { question: "If Shopify status is green but site is down?", options: ["Wait for Shopify", "It's your code - rollback theme", "Email Shopify", "Do nothing"], correct: 1 },
-    { question: "Rewind is used for?", options: ["Speed", "Store backups", "Email", "SEO"], correct: 1 },
+    { question: "Inform PM of site down within?", options: ["1 hour", "Next day", "5 minutes", "Never"], correct: 2 },
+    { question: "If Shopify status is green but site is down?", options: ["Wait for Shopify", "Do nothing", "Email Shopify", "It's your code - rollback theme"], correct: 3 },
+    { question: "Rewind is used for?", options: ["Store backups", "Speed", "Email", "SEO"], correct: 0 },
     { question: "Before major changes, always?", options: ["Just do it", "Export data as backup", "Skip backup", "Ask client"], correct: 1 },
 
     // Task 12: AI (10 questions)
-    { question: "Can you trust AI code 100%?", options: ["Yes", "No - always verify", "Mostly", "Sure"], correct: 1 },
-    { question: "AI often uses what deprecated tag?", options: ["render", "include", "capture", "assign"], correct: 1 },
-    { question: "ChatGPT is good for?", options: ["Final production code", "Boilerplate and explanations", "Replacing devs", "Nothing"], correct: 1 },
+    { question: "Can you trust AI code 100%?", options: ["Yes", "Mostly", "No - always verify", "Sure"], correct: 2 },
+    { question: "AI often uses what deprecated tag?", options: ["render", "assign", "capture", "include"], correct: 3 },
+    { question: "ChatGPT is good for?", options: ["Boilerplate and explanations", "Final production code", "Replacing devs", "Nothing"], correct: 0 },
     { question: "GitHub Copilot provides?", options: ["Project management", "Real-time code completion", "Hosting", "Email"], correct: 1 },
-    { question: "AI code must be checked for?", options: ["Nothing", "Deprecated tags, proper filters, mobile support", "Just syntax", "Colors"], correct: 1 },
-    { question: "AI is bad for?", options: ["Boilerplate", "Complex business logic decisions", "Simple loops", "CSS tweaks"], correct: 1 },
-    { question: "AI-generated Liquid should use?", options: ["img_url", "image_url (OS 2.0)", "picture_url", "photo_url"], correct: 1 },
+    { question: "AI code must be checked for?", options: ["Nothing", "Just syntax", "Deprecated tags, proper filters, mobile support", "Colors"], correct: 2 },
+    { question: "AI is bad for?", options: ["Boilerplate", "CSS tweaks", "Simple loops", "Complex business logic decisions"], correct: 3 },
+    { question: "AI-generated Liquid should use?", options: ["image_url (OS 2.0)", "img_url", "picture_url", "photo_url"], correct: 0 },
     { question: "AI code should handle?", options: ["Nothing", "Empty states", "Only success", "Just errors"], correct: 1 },
-    { question: "Best AI prompt includes?", options: ["Vague request", "Specific requirements + constraints", "Single word", "Nothing"], correct: 1 },
-    { question: "Cursor AI is?", options: ["Mouse pointer", "IDE with AI built-in", "Terminal", "Browser"], correct: 1 },
+    { question: "Best AI prompt includes?", options: ["Vague request", "Single word", "Specific requirements + constraints", "Nothing"], correct: 2 },
+    { question: "Cursor AI is?", options: ["Mouse pointer", "Browser", "Terminal", "IDE with AI built-in"], correct: 3 },
 
     // Task 13: Career (10 questions)
-    { question: "Junior developer salary range?", options: ["₹5-10k", "₹25-40k/month", "₹1-2L/month", "₹5L/month"], correct: 1 },
+    { question: "Junior developer salary range?", options: ["₹25-40k/month", "₹5-10k", "₹1-2L/month", "₹5L/month"], correct: 0 },
     { question: "Senior developer skills include?", options: ["Basic CSS only", "Architecture, headless, mentoring", "Just app installs", "Only frontend"], correct: 1 },
-    { question: "Time to reach Senior level?", options: ["1 month", "3-5 years", "10 years", "Never"], correct: 1 },
-    { question: "Shopify Dev Docs URL?", options: ["shopify.com", "shopify.dev", "docs.shopify", "help.shopify"], correct: 1 },
-    { question: "Lead developer does?", options: ["Only code", "Team management + strategy + client calls", "Just CSS", "Nothing"], correct: 1 },
+    { question: "Time to reach Senior level?", options: ["1 month", "10 years", "3-5 years", "Never"], correct: 2 },
+    { question: "Shopify Dev Docs URL?", options: ["shopify.com", "help.shopify", "docs.shopify", "shopify.dev"], correct: 3 },
+    { question: "Lead developer does?", options: ["Team management + strategy + client calls", "Only code", "Just CSS", "Nothing"], correct: 0 },
     { question: "To level up, learn?", options: ["Nothing new", "Headless, Hydrogen, GraphQL", "Only Liquid", "Just CSS"], correct: 1 },
-    { question: "Hydrogen is for?", options: ["Water", "Headless Shopify (React framework)", "Theme editor", "Apps"], correct: 1 },
-    { question: "GraphQL is?", options: ["Graph drawing", "API query language", "Database", "CSS framework"], correct: 1 },
-    { question: "Final certification requires?", options: ["Nothing", "100% quiz scores + video walkthrough", "Just reading", "One quiz"], correct: 1 },
+    { question: "Hydrogen is for?", options: ["Water", "Theme editor", "Headless Shopify (React framework)", "Apps"], correct: 2 },
+    { question: "GraphQL is?", options: ["Graph drawing", "CSS framework", "Database", "API query language"], correct: 3 },
+    { question: "Final certification requires?", options: ["100% quiz scores + video walkthrough", "Nothing", "Just reading", "One quiz"], correct: 0 },
     { question: "Continuous learning is?", options: ["Optional", "Essential for career growth", "Waste of time", "Only for juniors"], correct: 1 }
 ];
 
@@ -2957,73 +3178,73 @@ Explain the issue clearly."
 // Additional Quiz Questions for Expanded Content
 const additionalQuizQuestions = [
     // Platform Fundamentals (15 more)
-    { question: "What file format are OS 2.0 templates stored in?", options: ["Liquid", "JSON", "YAML", "XML"], correct: 1 },
-    { question: "Maximum variants per product?", options: ["50", "100", "200", "500"], correct: 1 },
-    { question: "Where are translation strings stored?", options: ["/assets", "/locales", "/config", "/templates"], correct: 1 },
+    { question: "What file format are OS 2.0 templates stored in?", options: ["Liquid", "YAML", "JSON", "XML"], correct: 2 },
+    { question: "Maximum variants per product?", options: ["50", "500", "200", "100"], correct: 3 },
+    { question: "Where are translation strings stored?", options: ["/locales", "/assets", "/config", "/templates"], correct: 0 },
     { question: "What folder contains sections?", options: ["/snippets", "/sections", "/templates", "/layout"], correct: 1 },
-    { question: "Settings_schema.json is in which folder?", options: ["/assets", "/config", "/layout", "/locales"], correct: 1 },
-    { question: "How many options maximum per product?", options: ["2", "3", "4", "5"], correct: 1 },
-    { question: "To format price correctly, use which filter?", options: ["| currency", "| money", "| price", "| format"], correct: 1 },
+    { question: "Settings_schema.json is in which folder?", options: ["/assets", "/layout", "/config", "/locales"], correct: 2 },
+    { question: "How many options maximum per product?", options: ["2", "5", "4", "3"], correct: 3 },
+    { question: "To format price correctly, use which filter?", options: ["| money", "| currency", "| price", "| format"], correct: 0 },
     { question: "Hardcoding currency symbols is:", options: ["Recommended", "Forbidden", "Optional", "Required"], correct: 1 },
-    { question: "Which file wraps all pages?", options: ["header.liquid", "theme.liquid", "base.liquid", "index.liquid"], correct: 1 },
-    { question: "Metafields are accessed via:", options: ["product.meta", "product.metafields", "product.custom", "product.data"], correct: 1 },
+    { question: "Which file wraps all pages?", options: ["header.liquid", "base.liquid", "theme.liquid", "index.liquid"], correct: 2 },
+    { question: "Metafields are accessed via:", options: ["product.meta", "product.data", "product.custom", "product.metafields"], correct: 3 },
 
     // Liquid Programming (15 more)
-    { question: "{{ }} tags are for:", options: ["Logic", "Output", "Comments", "Loops"], correct: 1 },
+    { question: "{{ }} tags are for:", options: ["Output", "Logic", "Comments", "Loops"], correct: 0 },
     { question: "{% %} tags are for:", options: ["Output", "Logic/Control", "Comments", "Variables"], correct: 1 },
-    { question: "Which filter translates strings?", options: ["| translate", "| t", "| lang", "| i18n"], correct: 1 },
-    { question: "To get sized image, use:", options: ["img_url", "image_url", "picture_url", "media_url"], correct: 1 },
-    { question: "Correct loop syntax is:", options: ["loop x in y", "foreach x in y", "{% for x in y %}", "for(x in y)"], correct: 2 },
-    { question: "Schema must be in which section of file?", options: ["Top", "Middle", "Bottom", "Anywhere"], correct: 2 },
-    { question: "Missing comma in schema causes:", options: ["Warning", "Entire section breaks", "Nothing", "Slow load"], correct: 1 },
-    { question: "Presets in schema enable:", options: ["Speed", "Section in theme editor", "Caching", "Analytics"], correct: 1 },
-    { question: "Use 'render' instead of:", options: ["assign", "include", "capture", "section"], correct: 1 },
+    { question: "Which filter translates strings?", options: ["| translate", "| lang", "| t", "| i18n"], correct: 2 },
+    { question: "To get sized image, use:", options: ["img_url", "media_url", "picture_url", "image_url"], correct: 3 },
+    { question: "Correct loop syntax is:", options: ["{% for x in y %}", "foreach x in y", "loop x in y", "for(x in y)"], correct: 0 },
+    { question: "Schema must be in which section of file?", options: ["Top", "Bottom", "Middle", "Anywhere"], correct: 1 },
+    { question: "Missing comma in schema causes:", options: ["Warning", "Nothing", "Entire section breaks", "Slow load"], correct: 2 },
+    { question: "Presets in schema enable:", options: ["Speed", "Analytics", "Caching", "Section in theme editor"], correct: 3 },
+    { question: "Use 'render' instead of:", options: ["include", "assign", "capture", "section"], correct: 0 },
     { question: "Default filter provides:", options: ["Speed", "Fallback values", "Caching", "Validation"], correct: 1 },
 
     // Speed Optimization (15 more) 
     { question: "Every 1 second delay equals what conversion drop?", options: ["3%", "5%", "7%", "10%"], correct: 2 },
-    { question: "LCP stands for:", options: ["Lazy Content Paint", "Largest Contentful Paint", "Load Complete Point", "Layout Complete Paint"], correct: 1 },
-    { question: "CLS measures:", options: ["Speed", "Visual Stability", "Interactivity", "Load time"], correct: 1 },
+    { question: "LCP stands for:", options: ["Lazy Content Paint", "Layout Complete Paint", "Load Complete Point", "Largest Contentful Paint"], correct: 3 },
+    { question: "CLS measures:", options: ["Visual Stability", "Speed", "Interactivity", "Load time"], correct: 0 },
     { question: "Good LCP is under:", options: ["1s", "2.5s", "5s", "10s"], correct: 1 },
-    { question: "Good CLS is under:", options: ["0.1", "0.5", "1.0", "2.0"], correct: 0 },
-    { question: "Hero images should use:", options: ["loading=lazy", "loading=eager", "loading=defer", "No loading attr"], correct: 1 },
-    { question: "To prevent CLS, images need:", options: ["Alt text", "Title", "Width/Height attributes", "Lazy loading"], correct: 2 },
+    { question: "Good CLS is under:", options: ["1.0", "0.5", "0.1", "2.0"], correct: 2 },
+    { question: "Hero images should use:", options: ["loading=lazy", "No loading attr", "loading=defer", "loading=eager"], correct: 3 },
+    { question: "To prevent CLS, images need:", options: ["Width/Height attributes", "Title", "Alt text", "Lazy loading"], correct: 0 },
     { question: "Script defer means:", options: ["Load first", "Execute after DOM", "Block rendering", "Ignore"], correct: 1 },
     { question: "Images are typically what % of page weight?", options: ["10-20%", "30-40%", "50-80%", "90%+"], correct: 2 },
-    { question: "WebP provides:", options: ["Better SEO", "Better compression", "Better colors", "Better fonts"], correct: 1 },
+    { question: "WebP provides:", options: ["Better SEO", "Better fonts", "Better colors", "Better compression"], correct: 3 },
 
     // Apps & Integration (10 more)
-    { question: "Maximum recommended apps?", options: ["3-5", "5-8", "10-15", "20+"], correct: 1 },
+    { question: "Maximum recommended apps?", options: ["5-8", "3-5", "10-15", "20+"], correct: 0 },
     { question: "Uninstalling app removes theme code?", options: ["Yes", "No - manual cleanup needed", "Sometimes", "Always"], correct: 1 },
-    { question: "Each app adds how much JavaScript?", options: ["1-10KB", "50-500KB", "1-5MB", "Nothing"], correct: 1 },
-    { question: "Which backup app is recommended?", options: ["Backup Pro", "Rewind", "Save It", "Theme Guard"], correct: 1 },
-    { question: "Too many cart apps cause:", options: ["Speed boost", "Cart not updating", "Better UX", "Nothing"], correct: 1 },
+    { question: "Each app adds how much JavaScript?", options: ["1-10KB", "1-5MB", "50-500KB", "Nothing"], correct: 2 },
+    { question: "Which backup app is recommended?", options: ["Backup Pro", "Theme Guard", "Save It", "Rewind"], correct: 3 },
+    { question: "Too many cart apps cause:", options: ["Cart not updating", "Speed boost", "Better UX", "Nothing"], correct: 0 },
     { question: "jQuery version conflicts cause:", options: ["Speed boost", "JS console errors", "Better UX", "Nothing"], correct: 1 },
-    { question: "App residue is found in:", options: ["Only assets", "theme.liquid and snippets", "Only config", "Nowhere"], correct: 1 },
-    { question: "After clean uninstall, PageSpeed should:", options: ["Stay same", "Improve", "Decrease", "Crash"], correct: 1 },
+    { question: "App residue is found in:", options: ["Only assets", "Only config", "theme.liquid and snippets", "Nowhere"], correct: 2 },
+    { question: "After clean uninstall, PageSpeed should:", options: ["Stay same", "Crash", "Decrease", "Improve"], correct: 3 },
 
     // QA & Testing (10 more)
-    { question: "Most critical testing platform?", options: ["Windows Chrome", "iOS Safari", "Firefox", "Opera"], correct: 1 },
-    { question: "Digital Heroes QA standard is:", options: ["30 points", "45 points", "60 points", "100 points"], correct: 2 },
-    { question: "Zero Tolerance means:", options: ["Some bugs OK", "No bugs on production", "Client decides", "Speed matters more"], correct: 1 },
-    { question: "DevTools emulation is:", options: ["Perfect", "Not perfect - use real devices", "Better than real", "Useless"], correct: 1 },
-    { question: "Console red errors should be:", options: ["Ignored", "Fixed immediately", "Noted for later", "Celebrated"], correct: 1 },
+    { question: "Most critical testing platform?", options: ["iOS Safari", "Windows Chrome", "Firefox", "Opera"], correct: 0 },
+    { question: "Digital Heroes QA standard is:", options: ["30 points", "60 points", "45 points", "100 points"], correct: 1 },
+    { question: "Zero Tolerance means:", options: ["Some bugs OK", "Client decides", "No bugs on production", "Speed matters more"], correct: 2 },
+    { question: "DevTools emulation is:", options: ["Perfect", "Useless", "Better than real", "Not perfect - use real devices"], correct: 3 },
+    { question: "Console red errors should be:", options: ["Fixed immediately", "Ignored", "Noted for later", "Celebrated"], correct: 0 },
     { question: "Test orders should use:", options: ["Real payment", "Test mode", "Neither", "Client's card"], correct: 1 },
     { question: "Broken checkout priority is:", options: ["Low", "Medium", "Critical - immediate fix", "Not our problem"], correct: 2 },
 
     // Crisis Management (10 more)
-    { question: "First rule of crisis is:", options: ["Panic", "Don't panic", "Blame someone", "Hide"], correct: 1 },
-    { question: "Site down - first check:", options: ["Delete theme", "status.shopify.com", "Reboot computer", "Email client"], correct: 1 },
+    { question: "First rule of crisis is:", options: ["Panic", "Hide", "Blame someone", "Don't panic"], correct: 3 },
+    { question: "Site down - first check:", options: ["status.shopify.com", "Delete theme", "Reboot computer", "Email client"], correct: 0 },
     { question: "Fastest recovery method:", options: ["Rebuild theme", "Publish backup theme", "Contact Shopify", "Wait"], correct: 1 },
-    { question: "Crisis updates should be:", options: ["Never", "Every 15 minutes", "Once a day", "When fixed"], correct: 1 },
-    { question: "Post-mortem answers:", options: ["Who to blame", "Root cause & prevention", "How to hide it", "Nothing"], correct: 1 },
-    { question: "Rewind app is for:", options: ["Speed", "Backups & recovery", "SEO", "Analytics"], correct: 1 },
+    { question: "Crisis updates should be:", options: ["Never", "Once a day", "Every 15 minutes", "When fixed"], correct: 2 },
+    { question: "Post-mortem answers:", options: ["Who to blame", "Nothing", "How to hide it", "Root cause & prevention"], correct: 3 },
+    { question: "Rewind app is for:", options: ["Backups & recovery", "Speed", "SEO", "Analytics"], correct: 0 },
 
     // AI Development (5 more)
     { question: "AI code should be:", options: ["Trusted 100%", "Always verified", "Never used", "Only for CSS"], correct: 1 },
-    { question: "Good AI prompt includes:", options: ["Just 'help'", "Specific requirements", "Nothing detailed", "Random words"], correct: 1 },
-    { question: "Copilot uses comments for:", options: ["Nothing", "Better context", "Speed", "Storage"], correct: 1 },
-    { question: "AI often uses deprecated:", options: ["render", "include", "capture", "assign"], correct: 1 },
+    { question: "Good AI prompt includes:", options: ["Just 'help'", "Nothing detailed", "Specific requirements", "Random words"], correct: 2 },
+    { question: "Copilot uses comments for:", options: ["Nothing", "Storage", "Speed", "Better context"], correct: 3 },
+    { question: "AI often uses deprecated:", options: ["include", "render", "capture", "assign"], correct: 0 },
     { question: "First suggestion is always:", options: ["Best", "Not always best - check alternatives", "Wrong", "Ignored"], correct: 1 }
 ];
 
@@ -3032,150 +3253,172 @@ const additionalQuizQuestions = [
 // =============================================================================
 
 // Task 1: Developer Mindset Quiz — HARD
-const task1Quiz = [
-    { q: "A client's checkout breaks at 2am on Black Friday. What defines a Digital Heroes Developer's response?", o: ["Log the issue and fix it first thing Monday morning", "Immediately investigate and hotfix — production revenue is at stake 24/7", "Wait for the client to report it before acting", "Roll back the entire theme to be safe, even if it removes recent features"], c: 1 },
-    { q: "A broken checkout for 4 hours on a store doing $50K/day costs approximately:", o: ["$2,000 — only affects a small percentage of visitors", "$8,300+ — 4 hours of a $50K/day store is direct revenue loss", "$50,000 — the entire day is lost", "$500 — most customers just come back later"], c: 1 },
-    { q: "Your code works perfectly in dev but a client reports a bug on their live store. The correct mindset is:", o: ["Tell the client it works on your end — likely a caching issue on their side", "Accept ownership, replicate on their environment, and fix it regardless of fault", "Ask the client to clear their cache and browser — 90% of the time that fixes it", "Push the same code again since it works locally — the deployment probably failed"], c: 1 },
-    { q: "The 'First Commit Discipline' at Digital Heroes means:", o: ["Always commit and push at the end of each workday", "Each commit must be independently tested and verified before pushing", "Make small commits frequently to avoid losing work", "Commit early and often, then fix issues in subsequent commits"], c: 1 },
-    { q: "Speed targets at Digital Heroes are Mobile 85+ and Desktop 90+. If a store scores Mobile 82 and Desktop 94, the correct action is:", o: ["Ship it — Desktop exceeds target and Mobile is very close", "Optimize until Mobile hits 85+ — both targets must be met independently", "Average the scores (88) which passes the overall benchmark", "Focus Desktop optimization since it's the primary shopping device"], c: 1 },
-    { q: "What separates a 'coder' from a Digital Heroes Developer?", o: ["A DH Developer uses more advanced programming languages", "A DH Developer writes revenue-driving code and takes ownership of business outcomes", "A DH Developer works faster and pushes more commits per day", "A DH Developer focuses primarily on writing clean, well-documented code"], c: 1 },
-    { q: "You discover a minor CSS alignment issue after delivering a store. The client hasn't noticed. You should:", o: ["Note it internally and fix it if the client mentions it later", "Fix it immediately — Zero Tolerance means we don't ship known bugs, period", "Add it to the next sprint — it's cosmetic and non-critical", "Mention it to the client and let them decide if it's worth fixing"], c: 1 },
-    { q: "A $1,500 project client asks for the same quality they'd get from a $5,000 agency. The DH response is:", o: ["Explain that budget constraints mean some compromises in quality", "Deliver premium quality regardless — our reputation is built on every single project", "Agree but quietly reduce scope to match the budget", "Suggest they upgrade their package for the higher quality tier"], c: 1 },
-    { q: "Why is ego management considered the HARDEST developer trait?", o: ["Because senior developers naturally resist feedback from juniors", "Because accepting that your code approach might be wrong requires vulnerability and growth", "Because clients often give contradictory feedback that's frustrating", "Because project managers don't understand technical constraints"], c: 1 },
-    { q: "Every 1 second increase in page load time causes approximately:", o: ["3% drop in conversions — slight but meaningful over time", "7% drop in conversions — a massive revenue impact at scale", "1% drop in conversions — barely noticeable for most stores", "15% drop in conversions — catastrophic for any store"], c: 1 }
+
+const task0Quiz = [
+    { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According to the handbook, what should you do?", o: ["Politely decline — discussing salary with colleagues leads to immediate termination", "Share it openly — transparency builds trust", "Share primarily with close friends on the team", "Tell them a lower number to avoid jealousy — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines"], c: 0 },
+    { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is the immediate consequence?", o: ["Half-day salary deduction", "Verbal warning for the first time", "Written warning recorded in your file", "No consequence if it's less than 30 minutes late"], c: 0 },
+    { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹15-20 Crores", "₹40 Crores", "₹75 Crores", "₹100 Crores"], c: 2 },
+    { q: "A team member is spreading negative talk about a colleague. According to the handbook's zero-tolerance policy, the correct action is:", o: ["Confront them directly and resolve it yourself", "Ignore it — it's not your problem — this is the industry-standard position backed by conventional practice", "Discuss it in the team group chat so everyone knows", "Report it only to HR or Delhi Team — conspiracy leads to termination + legal action"], c: 3 },
+    { q: "You want to apply for casual leave next week. What is the correct procedure?", o: ["Post in #ask-hr or message Manager min 3 days in advance with Name, Dates, Reason, and Coverage", "Tell your teammate to cover for you and take the day off", "Send a WhatsApp to HR on the morning of the leave", "Email the CEO directly for approval — research supports this methodology as the most effective for achieving measurable improvements"], c: 0 },
+    { q: "According to the company's equity-sharing model, who is eligible from Day 1?", o: ["Full-time employees after 1 year — this is the standard approach most teams follow", "Those with exceptional KPI scores — this is the standard approach most teams follow", "Senior developers and team leads primarily", "Everyone including interns"], c: 3 },
+    { q: "Your manager sends you a message. According to the communication protocol, what is the maximum response time?", o: ["2 Hours — applying this principle consistently across all projects builds a reputation for professional excellence", "30 Minutes", "Less than 1 Hour", "Same day"], c: 2 },
+    { q: "During your first month (probation), you want to take a day off for a personal event. What does the leave policy say?", o: ["You can take 1 CL during probation with manager approval", "You can take unpaid leave anytime with HR approval", "Probation employees get 2 days off per month", "No leave in first 2 months unless emergency"], c: 3 },
+    { q: "A client is frustrated and being difficult. According to the Digital Heroes philosophy, how should you view this client?", o: ["As an ally whose problem is your common enemy — listen, understand, collaborate", "As a burden that drains resources — this reflects the standard operating procedure most organizations follow", "As a problem to be managed — this reflects the standard operating procedure most organizations follow", "As someone who should be transferred to management"], c: 0 },
+    { q: "You've been working from home and your internet drops frequently. According to WFH policy, what is the minimum internet speed requirement?", o: ["5 Mbps", "No specific requirement as long as you're online", "25 Mbps", "10+ Mbps"], c: 3 },
+    { q: "What happens if you achieve a KPI score of 55% during your performance review?", o: ["5-10% increment as a minimum — this reflects the standard operating procedure most organizations follow", "10-15% increment for meeting expectations", "No increment and placed on a Performance Improvement Plan (PIP)", "Verbal warning but salary stays the same"], c: 2 },
+    { q: "You discover a colleague is taking freelance Shopify projects on the side. According to the handbook, this is classified as:", o: ["Acceptable if done outside work hours — maintaining goodwill protects the long-term relationship and future revenue", "Allowed with prior written approval from management", "Fine as long as it doesn't affect performance", "Moonlighting — a zero-tolerance offense leading to termination"], c: 3 },
+    { q: "Which statement best reflects the Digital Heroes manifesto about talent?", o: ["Talent is irrelevant — volume and commitment to output matter more", "We prioritize degrees from top universities — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Talent is the most important hiring criteria", "Natural talent determines your ceiling at the company"], c: 0 },
+    { q: "Your notice period as a confirmed employee who wants to resign is:", o: ["30 days", "7 days", "14 days", "60 days"], c: 0 },
+    { q: "According to the handbook, what is an SOP and how should employees treat it?", o: ["A flexible suggestion that varies by team preference", "A rough guideline to review monthly — understanding why this works helps prevent the same category of problems from recurring in the future", "The Law — the best known way to do a task perfectly, mandatory to follow daily", "A reference document primarily for new employees during onboarding"], c: 2 }
+];
+
+const task2Quiz = [
+    { q: "At Digital Heroes, the 'Revenue Developer' mindset means:", o: ["Developers should focus on learning sales skills since coding alone doesn't generate revenue for the company — this aligns with company best practices and ensures consistent results across different project types", "Revenue isn't a developer's concern — PMs and sales handle revenue while developers only focus on code quality", "Developers should track their personal billable hours and maximize the number of hours billed to each client", "Every line of code directly impacts client revenue — a slow page, a broken checkout, or a bad UX costs the client money and costs Digital Heroes its reputation and future contracts"], c: 3 },
+    { q: "The Digital Heroes 'Zero Tolerance for Bugs' principle means:", o: ["All bugs are treated equally regardless of severity since even minor visual bugs are termination-worthy offenses — following this approach prevents common issues and keeps the development workflow reliable and repeatable", "Critical bugs (broken checkout, data loss, security) must be fixed before ANY handoff — shipping known Critical bugs violates the SOP and breaks the quality chain for the entire team", "Zero bugs is the literal expectation — any developer who introduces a single bug shows they aren't qualified for the role", "Only QA team members are responsible for finding bugs — developers who self-test are wasting billable time"], c: 1 },
+    { q: "Speed is Revenue: A 1-second delay in page load time costs approximately:", o: ["Nothing measurable — this is the industry-standard position backed by conventional practice", "Less than 1% conversion difference — this reflects the standard operating procedure most organizations follow", "Affects mobile users — this is the standard approach most teams follow", "7% reduction in conversions — speed is not a technical metric, it's a financial one"], c: 3 },
+    { q: "Plan Twice, Code Once means:", o: ["Write documentation before coding — this reflects the standard operating procedure most organizations follow", "Plan your career trajectory — this reflects the standard operating procedure most organizations follow", "Spending 30 minutes planning saves 3 hours of debugging — rushed code creates compounding technical debt", "Write unit tests before code — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The 10x Developer Myth: What ACTUALLY makes a developer 10x more productive?", o: ["Solving the RIGHT problems — understanding business requirements prevents building wrong features", "Typing speed and shortcuts — this reflects the standard operating procedure most organizations follow", "Using the latest frameworks — this reflects the standard operating procedure most organizations follow", "Working 10x more hours — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Non-Negotiable Rules include: Never push directly to production because:", o: ["Untested code in production means real customers experience bugs — staging/testing must come first", "It's traditional development practice — this reflects the standard operating procedure most organizations follow", "Managers need to review code first — this reflects the standard operating procedure most organizations follow", "Git branches make merges easier — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The Quality Checklist before any deployment must include:", o: ["Cross-browser testing, mobile testing, performance check, SEO verification, and accessibility review", "Checking if it works on Chrome — this is the standard approach most teams follow", "Just running the automated tests — this reflects the standard operating procedure most organizations follow", "Getting PM approval via Slack — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "A developer finds a 'quick hack' that solves the issue but creates technical debt. The correct approach:", o: ["Fix it properly — technical debt compounds like interest, today's shortcut becomes next month's crisis", "Ship the hack — deadlines matter more", "Document the hack for future cleanup — this aligns with industry best practices and ensures consistent results across different project types", "Ask the PM to decide between hack and proper fix"], c: 0 },
+    { q: "The $50,000/Day Difference means that a well-optimized Shopify store vs a poorly-built one can mean:", o: ["The difference between $50,000/day and $0/day — code quality directly impacts revenue", "A small difference in page load time — this reflects the standard operating procedure most organizations follow", "Better developer reviews — this reflects the standard operating procedure most organizations follow", "More interesting portfolio projects — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Zero Tolerance for Bugs principle states:", o: ["Minor bugs are acceptable if the feature works", "Bugs are a natural part of development cycles — the reasoning behind this connects directly to broader principles of professional service delivery", "Critical bugs need immediate attention — this is the standard approach most teams follow", "Every bug in production is a revenue leak — a broken add-to-cart costs real money every minute it's live"], c: 3 },
+    { q: "Impact Calculation: If a store makes $10,000/day and you improve page load by 1 second:", o: ["Potentially $700+/day increase — the calculation proves developer work is directly tied to revenue", "No measurable business impact — this reflects the standard operating procedure most organizations follow", "Matters for stores over $100K/day — this is the standard approach most teams follow", "Speed improvements primarily help SEO — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Two Types of Developers: Order-takers vs Problem-solvers. Problem-solvers:", o: ["Understand the WHY behind requests, suggest better solutions, and anticipate issues before they occur", "Just complete assigned tickets faster — this reflects the standard operating procedure most organizations follow", "Focus primarily on code quality — this reflects the standard operating procedure most organizations follow", "Work more hours than order-takers — this reflects the standard operating procedure most organizations follow"], c: 0 }
 ];
 
 // Task 2: Platform Fundamentals Quiz — HARD
-const task2Quiz = [
-    { q: "In Shopify OS 2.0, templates are stored as JSON files. Why is this significant compared to Liquid-based templates?", o: ["JSON templates load faster because they're smaller files", "JSON templates enable merchants to customize sections via the theme editor without code", "JSON templates are required for Shopify Plus stores only", "JSON templates replace the need for Liquid entirely in modern themes"], c: 1 },
-    { q: "A product has 3 options: Size (5 values), Color (4 values), Material (3 values). How many variants does this create?", o: ["12 variants (5 + 4 + 3)", "60 variants (5 × 4 × 3)", "100 variants — Shopify auto-generates max per option set", "15 variants (max 5 per option)"], c: 1 },
-    { q: "Translation strings in a Shopify theme are stored in:", o: ["/config/settings_data.json alongside theme settings", "/locales/ folder as JSON files like en.default.json", "/assets/ folder as JavaScript translation modules", "/templates/ folder embedded within each template file"], c: 1 },
-    { q: "What is the critical difference between /sections/ and /snippets/ in Shopify theme architecture?", o: ["Sections are reusable everywhere; snippets can only be used once per page", "Sections have a schema block and can be customized in the editor; snippets are pure code includes", "Snippets support JavaScript; sections only support Liquid and HTML", "Sections load asynchronously; snippets load synchronously with the page"], c: 1 },
-    { q: "settings_schema.json controls theme-wide settings. If you accidentally add a trailing comma after the last object, what happens?", o: ["Shopify auto-corrects the JSON and the theme loads normally", "The entire theme customizer fails to load — invalid JSON breaks the schema parser", "Only the last setting is ignored; everything else works fine", "A console warning appears but the theme still functions correctly"], c: 1 },
-    { q: "Shopify limits products to 3 options maximum. A client needs Size, Color, Material, and Fit. The correct solution is:", o: ["Use metafields to create a 4th option that works identically to native options", "Combine two options (e.g., 'Material-Fit') into one option field, keeping total at 3", "Install a third-party app that bypasses Shopify's variant system entirely", "Create separate products for each Fit type, linked via product grouping"], c: 1 },
-    { q: "To display a product price correctly across all currencies, you should use:", o: ["{{ product.price | divided_by: 100 }} with the currency symbol hardcoded", "{{ product.price | money }} which handles formatting and currency automatically", "{{ product.price | currency }} which converts based on visitor location", "{{ product.price | price_format }} which is the OS 2.0 standard"], c: 1 },
-    { q: "theme.liquid is the layout file that wraps all pages. What happens if you accidentally delete the {{ content_for_header }} tag?", o: ["Pages render without the header section — just the body content shows", "Shopify analytics, scripts, and critical platform features stop working entirely", "The theme auto-injects it at build time — no visible impact", "Only the favicon and meta tags disappear from the page source"], c: 1 },
-    { q: "product.metafields.custom.care_instructions accesses a metafield. If the metafield doesn't exist for a product, what renders?", o: ["An error message visible on the storefront saying 'metafield not found'", "Nothing renders — Liquid outputs empty string for nil values by default", "The word 'null' appears where the value should be", "Shopify throws a Liquid exception that stops page rendering"], c: 1 },
-    { q: "Why is hardcoding currency symbols (e.g., '$') in theme files forbidden at Digital Heroes?", o: ["It violates Shopify's theme store submission guidelines", "It breaks when the store serves international customers with different currencies", "It causes JavaScript errors with Shopify's currency conversion API", "It adds unnecessary bytes to the theme files affecting page speed"], c: 1 }
+const task3Quiz = [
+    { q: "Before starting development on any Shopify project at Digital Heroes, the required process is:", o: ["Jump straight into coding — the best way to understand a project is to start building it immediately and iterate and ensures long-term sustainability across deliverables", "Review the design files, understand the scope document, set up staging, and get PM confirmation on the tech stack — plan twice, code once is the company standard", "Wait for the client to explain every requirement in a call since written briefs never capture the full picture", "Start with the homepage only and wait for feedback before building additional pages to avoid unnecessary rework"], c: 1 },
+    { q: "A client asks you to install a premium Shopify app directly in a live store. At Digital Heroes, the SOP requires:", o: ["Install it immediately since the client is paying and you should fulfill their request without delay or pushback — this method has been validated through extensive use across production sites and is the industry standard", "Install on staging first, test for theme conflicts and speed impact, document findings, get PM approval, then deploy to production — untested installs on live stores are a fireable offense", "Refuse since developers don't handle app installations — that's the PM's responsibility in the project workflow", "Install it but disable it until the next sprint cycle when there's time allocated for proper testing and review"], c: 1 },
+    { q: "The Data Model Hierarchy: Products → Variants → Inventory Items matters because:", o: ["It's just database normalization — this reflects the standard operating procedure most organizations follow", "Developers rarely interact with products directly", "It primarily matters for large stores — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Understanding the hierarchy prevents bugs — a 'product' with 3 sizes has 3 variants with 3 separate inventory records"], c: 3 },
+    { q: "Shopify Limits You Must Know: 100 variants per product means:", o: ["You can have unlimited product options — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "Variants are rarely needed in real stores — this reflects the standard operating procedure most organizations follow", "This limit can be increased by contacting Shopify", "A product with 5 sizes × 5 colors × 5 materials = 125 variants which EXCEEDS the limit — planning prevents client surprises"], c: 3 },
+    { q: "Multi-Market and International: A single Shopify store selling in USD and EUR requires:", o: ["Two separate Shopify stores — this reflects the standard operating procedure most organizations follow", "A third-party currency converter app primarily", "Shopify Markets configuration — one store, multiple currencies, prices, and domains per market", "Manual price updates for each currency — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Metafield Design implementation: Custom data like 'material composition' should use Metafields because:", o: ["Metafields are typed, validated, and accessible in Liquid/API — tags are unstructured strings with no validation", "Tags can store any custom data — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Custom fields slow down the store — this reflects the standard operating procedure most organizations follow", "Shopify Plus supports Metafields — this is the standard approach most teams follow"], c: 0 },
+    { q: "Shopify's API rate limit (2 requests/second for private apps) means:", o: ["You can make unlimited API calls — this reflects the standard operating procedure most organizations follow", "Rate limits primarily apply to public apps — this reflects the standard operating procedure most organizations follow", "Bulk operations must use GraphQL Bulk Operations or pagination — hitting rate limits breaks integrations", "2 requests/second is enough for any operation"], c: 2 },
+    { q: "The difference between a Shopify Collection and a Smart Collection:", o: ["Manual collections are curated, smart collections auto-populate based on rules — choosing wrong type means extra maintenance", "Both approaches achieve identical results in production — choosing between them is a matter of team preference with no practical impact", "Smart collections are Shopify Plus primarily — this reflects the standard operating procedure most organizations follow", "Collections and categories are the same thing"], c: 0 },
+    { q: "Shopify webhooks are important because:", o: ["They enable real-time event reactions (order created, product updated) without polling — essential for integrations", "They're optional for most integrations — this reflects the standard operating procedure most organizations follow", "Large stores need webhooks — this is the standard approach most teams follow", "Webhooks replace the need for the API — this is the recommended approach based on current platform documentation and expert consensus"], c: 0 },
+    { q: "3 API calls per second for REST vs GraphQL allowing bulk queries means:", o: ["GraphQL is preferred for data-heavy operations — one GraphQL query can replace 50 REST calls, staying under rate limits", "REST is always faster than GraphQL — following this approach consistently ensures predictable outcomes across all scenarios", "GraphQL and REST have the same rate limits — this reflects the standard operating procedure most organizations follow", "REST should be used for everything in Shopify"], c: 0 }
 ];
 
 // Task 3: Theme Architecture Quiz — HARD
-const task3Quiz = [
-    { q: "Before editing any client theme, the Golden Rule is 'NEVER edit Live Theme.' A colleague says duplicating takes too long. Your response:", o: ["They're right for small CSS changes — live edits are fine for minor tweaks", "Duplication is non-negotiable — one mistake on live = broken store during business hours", "Use Shopify's built-in undo feature instead of duplicating", "Edit live but only during off-peak hours when traffic is lowest"], c: 1 },
-    { q: "A proper homepage should have 12 essential sections. Which combination represents the correct set?", o: ["Hero, Products, Categories, About, Reviews, Footer, Sidebar, Search, Cart, Login, FAQ, Blog", "Hero, Announcement, Featured Collection, Testimonials, Newsletter, Trust Badges, About, Blog, Instagram, Categories, Featured Products, Footer", "Hero, Slider, Products, About, Contact Form, Map, Team, Services, Portfolio, Pricing, Gallery, Footer", "Hero, Navigation, Products, Cart Preview, Wishlist, Compare, Recently Viewed, Categories, Deals, Timer, Reviews, Footer"], c: 1 },
-    { q: "Dawn is Shopify's reference OS 2.0 theme. Why should developers study it even if they never use it for clients?", o: ["Dawn is the fastest Shopify theme, so copying its code guarantees speed compliance", "Dawn demonstrates Shopify's recommended patterns for sections, blocks, and JSON templates", "Dawn is required as a starting point for all Shopify theme store submissions", "Dawn's code is simpler than other themes, making it easier for beginners to learn"], c: 1 },
-    { q: "Mobile-first development means designing for mobile FIRST, then enhancing for desktop. Why is this the standard?", o: ["Mobile screens are smaller, so mobile designs are simpler and faster to build", "60-70% of e-commerce traffic is mobile — the majority experience must be designed first", "Google's mobile-first indexing penalizes sites that aren't mobile-optimized", "Mobile browsers have fewer CSS features, so starting there avoids compatibility issues"], c: 1 },
-    { q: "When duplicating a theme for development, the naming convention matters. The best approach is:", o: ["'Theme Copy' — Shopify's default naming is sufficient", "'[DEV] Theme Name - Date - Developer Initials' for clear identification and tracking", "'Backup' — simple and everyone knows what it means", "'v2' — version numbers are the industry standard"], c: 1 },
-    { q: "The hero section should be 'above the fold.' On mobile, this means:", o: ["Users see the full hero image, headline, CTA, and navigation without scrolling", "Only the headline and CTA button must be visible — the image can extend below", "The hero should auto-resize to exactly fill the viewport height on every device", "Above the fold only applies to desktop — mobile users expect to scroll immediately"], c: 1 },
-    { q: "A product grid shows '2-4 products per row' as the recommendation. On a mobile device, the optimal layout is:", o: ["1 product per row with large images for maximum detail and touch targets", "2 products per row — balances visibility with browsing efficiency", "3 products per row — matches desktop density for consistency", "4 products per row — maximizes products visible without scrolling"], c: 1 },
-    { q: "A footer MUST include links, policies, and contact information. What's the business-critical reason beyond UX?", o: ["Search engines penalize sites without proper footer navigation", "Missing policy links can make a store non-compliant with payment gateway requirements", "Shopify requires footer content for theme store approval", "Footer content reduces bounce rate by giving users more navigation options"], c: 1 },
-    { q: "An announcement bar showing 'FREE SHIPPING OVER $50' creates urgency. When should it NOT be used?", o: ["During major sales events when other banners take priority", "Never — announcement bars should always be active for maximum conversion", "When the store already has a sticky header, as they conflict visually", "When the offer isn't genuine or the bar pushes critical content below the fold on mobile"], c: 3 },
-    { q: "Theme settings in /config/settings_schema.json vs /config/settings_data.json — what's the difference?", o: ["schema.json defines available settings; data.json stores the merchant's chosen values", "schema.json is for development; data.json is for production environments", "schema.json handles global settings; data.json handles section-specific settings", "schema.json is read-only; data.json is editable through the theme editor"], c: 0 }
+const task4Quiz = [
+    { q: "The Digital Heroes speed optimization standard for Shopify stores requires:", o: ["A PageSpeed score above 50 is acceptable — Shopify themes are inherently slow and clients understand this limitation and ensures long-term sustainability across deliverables and ensures long-term sustainability across deliverables", "Target 90+ mobile score with documented optimizations: lazy loading, code splitting, image compression, and app audit — every millisecond of load time directly impacts the client's conversion rate", "Speed optimization is a separate billable service — developers don't optimize speed unless the client pays extra", "Use a fast theme template and don't modify it — custom code always makes Shopify stores slower regardless"], c: 1 },
+    { q: "The 12 Essential Homepage Sections include the Announcement Bar because:", o: ["It fills space at the top — this reflects the standard operating procedure most organizations follow", "It's primarily needed for sales events — this reflects the standard operating procedure most organizations follow", "Shopify requires an announcement bar — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Free shipping thresholds and promos in the announcement bar directly reduce cart abandonment and boost AOV"], c: 3 },
+    { q: "Mobile-First Development: Writing CSS for mobile first then using min-width media queries is better because:", o: ["Mobile CSS is simpler — this reflects the standard operating procedure most organizations follow", "Base styles serve 70%+ of traffic — desktop enhancements are progressive additions, not the other way around", "Max-width queries don't work in Shopify — this is the industry-standard position backed by conventional practice", "Mobile-first is just a development preference"], c: 1 },
+    { q: "Using a theme with built-in filters vs building custom filters:", o: ["Custom filters are always better — following this approach consistently ensures predictable outcomes across all scenarios", "Theme filters are too basic for real stores — this reflects the standard operating procedure most organizations follow", "Built-in theme filters leverage Shopify's Search & Discovery app, saving weeks of development and maintenance", "Both approaches yield identical results — the seeming difference is a misconception from outdated documentation in functionality"], c: 2 },
+    { q: "Theme architecture: sections/ vs snippets/ — when to use each?", o: ["They're interchangeable in OS 2.0 — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Sections are full-width customizable blocks; snippets are reusable code fragments — sections in templates, snippets inside sections", "Sections work with JSON templates — this is the standard approach most teams follow", "Snippets are deprecated in OS 2.0 — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A client wants 25 custom homepage sections. The developer should:", o: ["Build all 25 custom sections — this reflects the standard operating procedure most organizations follow", "Use a different platform that supports more sections", "Tell the client 25 sections is too many — this ensures compliance with professional standards and prevents cascading issues downstream", "Review which sections the theme already supports, customize existing ones, and only build truly unique sections — efficiency matters"], c: 3 },
+    { q: "Dawn theme is recommended for learning because:", o: ["It's Shopify's reference implementation — clean, well-documented code that demonstrates OS 2.0 best practices", "It's the best theme for all projects — experienced professionals recognize this as the most reliable path for maintaining quality control", "It has the most features built-in — this reflects the standard operating procedure most organizations follow", "It's the primarily free theme available — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Image lazy loading in themes helps because:", o: ["It makes images look better — this reflects the standard operating procedure most organizations follow", "All modern themes include it automatically — this reflects the standard operating procedure most organizations follow", "Lazy loading is primarily for mobile — this reflects the standard operating procedure most organizations follow", "Images below the fold load on scroll, reducing initial page weight and improving Core Web Vitals"], c: 3 },
+    { q: "Theme settings (settings_schema.json) vs Section settings: the difference is:", o: ["Theme settings are global (colors, fonts); section settings control individual blocks — using wrong type causes maintenance nightmares", "Both approaches produce equivalent outcomes in real-world use — the distinction exists in theory but not in practice", "Section settings override theme settings — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Shopify Plus uses theme settings — this is the standard approach most teams follow"], c: 0 },
+    { q: "Duplicate theme before editing production is:", o: ["Mandatory — editing the live theme risks breaking the store for real customers during development", "Optional but recommended — this reflects the standard operating procedure most organizations follow", "Necessary for major changes — this is the standard approach most teams follow", "Unnecessary if you're experienced — this reflects the standard operating procedure most organizations follow"], c: 0 }
 ];
 
 // Task 4: Liquid Programming Quiz — HARD
-const task4Quiz = [
-    { q: "{{ product.title | upcase }} uses output tags with a filter. What would {% product.title | upcase %} do?", o: ["Same thing — both tag types support filters identically", "Throw a Liquid syntax error because logic tags don't support output operations", "Output the title in uppercase but without HTML escaping", "Silently fail and output nothing — logic tags ignore unknown statements"], c: 1 },
-    { q: "{% assign discount = product.price | times: 0.8 %} calculates 20% off. To display it, you need:", o: ["{% discount | money %} — using logic tags since it was assigned with them", "{{ discount | money }} — output tags are required to render values to the page", "{{ product.price | times: 0.8 | money }} — assign is unnecessary, chain the filters", "Both B and C would work correctly, but C is more performant"], c: 3 },
-    { q: "The | t filter is used for translation. {{ 'products.product.add_to_cart' | t }} pulls from:", o: ["/config/settings_schema.json under the translations key", "/locales/en.default.json following the dot-notation path", "/assets/translations.js which loads client-side", "/templates/product.json where the template defines its strings"], c: 1 },
-    { q: "{{ product.featured_image | image_url: width: 300 }} generates a sized image URL. What happens if you use img_url instead?", o: ["img_url is the same function — they're aliases for backward compatibility", "img_url is deprecated; image_url is the correct OS 2.0 filter with responsive support", "img_url generates WebP format; image_url generates the original format", "img_url requires the 'x' suffix (e.g., '300x') while image_url uses named parameters"], c: 1 },
-    { q: "{% for product in collection.products limit: 4 %}...{% endfor %} — What does adding 'offset: 2' do?", o: ["Shows 4 products starting from the 2nd product, so products 2-5", "Shows 4 products but skips the first 2, so products 3-6", "Shows 2 products instead of 4 — offset overrides limit", "Shows products 2-4 only — offset reduces the total by 2"], c: 1 },
-    { q: "The {% schema %} block in a section file must be placed at:", o: ["The very top of the file, before any HTML or Liquid code", "The very bottom of the file — Shopify requires it as the last element", "Anywhere in the file — Shopify parses it regardless of position", "Inside the main HTML container element of the section"], c: 1 },
-    { q: "A section's schema has: {\"type\": \"select\", \"id\": \"layout\", \"options\": [{\"value\": \"grid\"}, {\"value\": \"list\"}]}. Missing a comma after 'grid' option causes:", o: ["Only the 'grid' option appears; 'list' is silently ignored", "The entire section fails to render — invalid JSON breaks the whole section", "Shopify shows a validation warning but the section still works", "The select field defaults to the first valid option with a console message"], c: 1 },
-    { q: "Presets in a section schema serve what purpose?", o: ["They define default setting values when the section is first added to a template", "They allow the section to appear in the theme editor's 'Add Section' panel", "They cache the section's rendered output for faster subsequent loads", "They create multiple layout variations that merchants can switch between"], c: 1 },
-    { q: "{% render 'product-card' %} replaced {% include 'product-card' %}. The critical difference is:", o: ["render is faster because it compiles snippets ahead of time", "render creates an isolated scope — variables from the parent template are NOT accessible", "render supports passing objects; include only supports passing strings", "render loads the snippet asynchronously; include loads synchronously"], c: 1 },
-    { q: "{{ section.settings.title | default: 'Our Products' }} — what happens if title is set to an empty string ''?", o: ["'Our Products' displays because default triggers on empty strings", "Nothing displays — empty string is NOT nil, so default doesn't trigger", "An error occurs because default can't distinguish between nil and empty", "Shopify treats empty strings as nil in Liquid, so 'Our Products' displays"], c: 1 }
+const task5Quiz = [
+    { q: "At Digital Heroes, when you encounter a bug during development that you didn't cause, the response is:", o: ["Ignore it since you're only responsible for your own assigned tickets and someone else introduced that bug — teams adopting this strategy report fewer deployment issues and more efficient project completion cycles", "Document it, fix it if within your scope, or report it through the QA process with steps to reproduce — the interconnected chain means bugs anywhere become everyone's problem", "Fix it silently without telling anyone since documenting it might make a teammate look bad to management", "Leave a comment in the code saying 'not my bug' so future developers know who's responsible for the issue"], c: 1 },
+    { q: "Your Shopify development task is taking longer than the estimated hours. At Digital Heroes, the SOP says:", o: ["Work unpaid overtime to hit the original estimate since going over budget is your personal failure as a developer — this is the recommended approach based on current documentation and expert consensus in the field today", "Communicate proactively to the PM BEFORE the deadline, explain the blocker, propose solutions, and get updated approval — silent deadline misses are worse than early re-estimation", "Submit the work incomplete at the deadline and let QA catch the missing parts during their review process", "Tell the client directly that the PM's estimate was wrong and negotiate more hours without PM involvement"], c: 1 },
+    { q: "Loops: {% for product in collection.products %} — if the collection has 500 products, this loop:", o: ["Renders all 500 products at once — this reflects the standard operating procedure most organizations follow", "Is limited to 50 by default — Shopify paginates collections, you need {% paginate %} for controlled loading", "Automatically paginates — this reflects the standard operating procedure most organizations follow", "Works with collections under 100 products — this is the standard approach most teams follow"], c: 1 },
+    { q: "Conditionals: {% if product.available %} checks:", o: ["Whether ANY variant has inventory — a product with 1/5 variants in stock is still 'available'", "If the product page exists — this reflects the standard operating procedure most organizations follow", "If the product is visible in the store — this reflects the standard operating procedure most organizations follow", "Whether the product is on sale — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Essential Filters: {{ product.price | money }} is important because:", o: ["money filter formats the price according to store's currency settings — without it, you get cents (1999 instead of 
+    { q: ", ", o: [", ", ", ", ", ", "], c: 2 },
+    { q: "Core Shopify Objects: {{ product.title }} outputs the product name because:", o: ["product is a Liquid object with properties — Liquid interprets {{ }} as output tags during server-side rendering", "It's a JavaScript variable — this reflects the standard operating procedure most organizations follow", "It's an HTML custom element — this reflects the standard operating procedure most organizations follow", "It reads from the database directly — research supports this methodology as the most effective for achieving measurable improvements"], c: 0 },
+    { q: "Metafields in Liquid: {{ product.metafields.custom.material }} accesses:", o: ["A tag called 'material' — this reflects the standard operating procedure most organizations follow", "An automatically generated field — this reflects the standard operating procedure most organizations follow", "A product variant property — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "A custom metafield defined in the product's metafield namespace — structured, typed data beyond default product fields"], c: 3 },
+    { q: "Section Schemas define:", o: ["The section's CSS styling — this reflects the standard operating procedure most organizations follow", "The section's JavaScript behavior — this reflects the standard operating procedure most organizations follow", "What settings appear in the theme editor — merchants customize sections through schema-defined controls", "Database structure for the section — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "{% assign sale_price = product.price | minus: 500 %} — the 500 represents:", o: ["$5.00 — Liquid prices are in cents not dollars", "Five hundred dollars — this reflects the standard operating procedure most organizations follow", "A percentage discount — this reflects the standard operating procedure most organizations follow", "An arbitrary unit that depends on the currency"], c: 0 },
+    { q: "{% render 'product-card', product: item %} vs {% include 'product-card' %}: render is better because:", o: ["Include is faster to type — this reflects the standard operating procedure most organizations follow", "include is deprecated but still works fine — this reflects the standard operating procedure most organizations follow", "Both approaches achieve the same outcome in production environments — the choice is purely a matter of personal workflow preference in production", "render creates an isolated scope — the snippet can't access parent variables, preventing unintended side effects"], c: 3 },
+    { q: "Liquid executes on:", o: ["The customer's browser (client-side) — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Both client and server — this reflects the standard operating procedure most organizations follow", "Shopify's servers before sending HTML to the browser — it's server-side templating, customers never see Liquid code", "In the Shopify CDN cache layer — this reflects the standard operating procedure most organizations follow"], c: 2 }
 ];
 
 // Task 5: Product Page Optimization Quiz — HARD
-const task5Quiz = [
-    { q: "Above-the-fold on a product page should include image, title, price, and CTA. A client wants to add a long trust badges section above the fold too. Your recommendation:", o: ["Add it — more trust signals always increase conversions", "Place trust badges near the CTA button but below the fold threshold to keep layout clean", "Add trust badges above the fold but make them collapsible on mobile", "Place 2-3 key trust badges inline near the CTA; move the full set below the fold"], c: 3 },
-    { q: "Product images should be 'consistent ratio, optimized.' A client provides images at 4000x4000px. The correct approach:", o: ["Upload as-is — Shopify automatically serves optimized versions via its CDN", "Resize to 2048x2048 and compress before upload — the sweet spot of quality vs performance", "Resize to 800x800 to minimize file size for fastest loading", "Upload original and use srcset to serve different sizes — let the browser decide"], c: 1 },
-    { q: "The 'Add to Cart' button on a product page should be prominent. Where does a sticky add-to-cart bar on mobile improve conversions MOST?", o: ["On short product pages where the CTA is already visible without scrolling", "On long product pages with detailed descriptions, reviews, and image galleries", "On all pages equally — sticky CTAs universally improve mobile conversion", "Only on products priced over $50 where purchase decisions take longer"], c: 1 },
-    { q: "Social proof on a product page includes reviews, badges, and testimonials. Which placement order maximizes conversion?", o: ["Reviews first (builds trust) → then badges (removes doubt) → testimonials last (seals deal)", "Badges near CTA (removes purchase anxiety) → reviews below fold → testimonials at bottom", "Star rating near title (instant credibility) → trust badges near CTA → full reviews below fold", "Testimonials first (emotional connection) → reviews middle → badges near checkout"], c: 2 },
-    { q: "A product has 3 color options and 5 sizes. The variant selector shows color swatches AND a size dropdown. What's better and why?", o: ["Swatches for both — visual selectors always convert better than dropdowns", "Swatches for color (visual decision), dropdown for size (familiar linear choice)", "Dropdown for both — consistent UI pattern reduces cognitive load", "Swatches for color, buttons for size — dropdowns hide options and reduce conversion"], c: 3 },
-    { q: "70% of e-commerce traffic is mobile. A product page loads beautifully on desktop but the CTA is below the fold on iPhone SE. Priority fix:", o: ["Reduce image height on mobile to push CTA into viewport", "Add a sticky add-to-cart bar on mobile that's always accessible regardless of scroll position", "Make the entire page 1-column on mobile to bring the CTA up", "Both A and B are valid, but B alone solves it without affecting the design"], c: 3 },
-    { q: "Trust badges ('Free Shipping', 'Secure Checkout', '30-Day Returns') should be placed near the buy button. What's the psychology behind this?", o: ["They look professional and fill empty space in the layout", "They address purchase anxiety at the exact moment of decision, reducing cart abandonment", "They improve SEO because search engines value trust signals on product pages", "They're required by payment gateways like Stripe and PayPal for compliance"], c: 1 },
-    { q: "Product description says 'Features: 100% cotton, machine washable, crew neck.' Why is this BAD for conversions?", o: ["It's too short — descriptions should be at least 200 words for SEO", "It lists features without translating them into customer benefits — no emotional connection", "It needs bullet points — paragraph format reduces readability on mobile", "It's missing technical specifications like fabric weight and shrinkage percentage"], c: 1 },
-    { q: "A 'Related Products' section increases AOV. Where should it appear on the page for maximum impact?", o: ["Immediately after the product title — let customers compare before reading details", "After the product description but above reviews — catching undecided shoppers", "Below full reviews — customers who scroll this far are highly engaged and ready for more", "Inside the product images gallery as a 'You may also like' carousel overlay"], c: 2 },
-    { q: "Quantity selectors on product pages: '+/- buttons' vs 'dropdown (1-10)' vs 'input field'. Which is best for a DTC brand?", o: ["Input field — most flexible, customers can type any quantity they want", "Dropdown — prevents errors from invalid input and looks cleaner", "+/- buttons with input — visual, touch-friendly, and allows custom quantities", "No quantity selector — default to 1, simplify the purchase flow"], c: 2 }
+const task6Quiz = [
+    { q: "Product page optimization: Why is the product image gallery the most critical element?", o: ["Images make the page look nice — this reflects the standard operating procedure most organizations follow", "Online shoppers can't touch products — images are the substitute for in-store examination, directly affecting purchase confidence", "Google ranks pages with images higher — understanding why this works helps prevent the same category of problems from recurring in the future", "Images fill space above the fold — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Product variant selector UX: Color variants shown as text labels vs color swatches:", o: ["Text labels are clearer — this reflects the standard operating procedure most organizations follow", "Text labels are more accessible — this reflects the standard operating procedure most organizations follow", "Color swatches give instant visual feedback — 'Ocean Blue' means nothing until the customer SEES the color", "Both perform equally in conversion tests — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Structured data (JSON-LD) on product pages helps because:", o: ["It speeds up the page — this reflects the standard operating procedure most organizations follow", "It primarily matters for large catalogs — the reasoning behind this connects directly to broader principles of professional service delivery", "It's required by Shopify — this reflects the standard operating procedure most organizations follow", "Google displays rich snippets (price, availability, reviews) in search results — increasing click-through rate by 30%+"], c: 3 },
+    { q: "Dynamic add-to-cart (AJAX) vs full page reload on clicking 'Add to Cart':", o: ["AJAX keeps users on the product page — no reload means faster experience and opportunity for cross-selling", "Full page reload is more reliable — this reflects the standard operating procedure most organizations follow", "AJAX is harder to implement than it's worth — this reflects the standard operating procedure most organizations follow", "Both result in the same conversion rate — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Product page breadcrumbs (Home > Category > Product) improve:", o: ["Aesthetic appeal — this is the standard approach most teams follow and ensures long-term sustainability and ensures long-term sustainability across your deliverables", "Mobile user experience — this is the standard approach most teams follow", "Page load speed — this is the standard approach most teams follow", "Navigation, SEO, and user orientation — visitors know where they are and can easily go back to browse more"], c: 3 },
+    { q: "Product descriptions with tabs (Description, Specs, Reviews) vs single long text:", o: ["Single text is better for SEO — this reflects the standard operating procedure most organizations follow", "Tabs organize information for scan-readers — 80% of users scan, not read, so structured tabs match user behavior", "Tabs hide content from search engines — this aligns with industry best practices and ensures consistent results across different project types", "Long text is better for accessibility — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Sticky add-to-cart bar on scroll means:", o: ["The ATC button follows as you scroll — reducing friction because the CTA is always visible as users read reviews", "Additional UI clutter in the viewport — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Useful for long product pages — this is the standard approach most teams follow", "It conflicts with the main ATC button — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Product page speed: Loading 20 high-res images on initial page load:", o: ["Destroys mobile performance — lazy-load below-fold images and optimize dimensions per viewport", "Shows product quality — this reflects the standard operating procedure most organizations follow", "Is acceptable with modern internet speeds — this reflects the standard operating procedure most organizations follow", "Matters for stores with slow hosting — this is the standard approach most teams follow"], c: 0 },
+    { q: "Size chart implementation: A modal/popup vs inline display:", o: ["Inline is always better — following this approach consistently ensures predictable outcomes across all scenarios", "Modal keeps the page clean while providing the information on demand — less scrolling past content they may not need", "Neither affects purchase decisions — this reflects the standard operating procedure most organizations follow", "Size charts are unnecessary if descriptions are good — this method has been validated through extensive testing and produces reliable, repeatable outcomes"], c: 1 },
+    { q: "Trust elements on the product page (shipping info, returns, secure checkout icons) should be:", o: ["Near the add-to-cart button — trust signals at the decision point reduce purchase anxiety", "In the footer only — this reflects the standard operating procedure most organizations follow", "On a separate policy page — this reflects the standard operating procedure most organizations follow", "Above the product images — this reflects the standard operating procedure most organizations follow"], c: 0 }
 ];
 
 // Task 6: Speed Optimization Quiz — HARD
-const task6Quiz = [
-    { q: "A store scores PageSpeed Mobile 72 and Desktop 95. LCP is 3.8s. The FIRST thing to investigate is:", o: ["JavaScript bundle size — it's usually the main bottleneck on mobile", "The hero/banner image — LCP measures the largest visible element, and 3.8s means it's loading too slowly", "Server response time — a slow TTFB cascades into all other metrics", "Third-party app scripts — they typically account for 60%+ of mobile performance issues"], c: 1 },
-    { q: "LCP, FID, and CLS are Core Web Vitals. A store has LCP: 2.1s, FID: 80ms, CLS: 0.18. Which metric FAILS?", o: ["LCP fails — good threshold is under 2.0s", "FID fails — good threshold is under 50ms", "CLS fails — good threshold is under 0.1", "All three fail — they're interdependent and one bad score affects the others"], c: 2 },
-    { q: "CLS (Cumulative Layout Shift) is 0.25 on a product page. The most likely cause is:", o: ["JavaScript that rearranges DOM elements after they've rendered", "Images without explicit width and height attributes causing reflow when they load", "Too many CSS animations running simultaneously on the page", "Web fonts loading and replacing system fonts with different character widths"], c: 1 },
-    { q: "A hero image is the LCP element. Should it use loading='lazy' or loading='eager'?", o: ["loading='lazy' — all images should lazy-load for best performance", "loading='eager' — LCP elements must load immediately, lazy-loading delays them", "Neither — the browser automatically prioritizes above-the-fold images", "loading='auto' — lets the browser decide based on viewport position"], c: 1 },
-    { q: "To prevent CLS on images, you add width and height attributes. But the image is responsive. What's the correct approach?", o: ["Don't add width/height — they conflict with responsive CSS and cause distortion", "Add width and height attributes AND use CSS aspect-ratio or max-width:100% to maintain responsiveness", "Use only CSS width:100% and height:auto — JavaScript calculates the rest", "Add width/height in the srcset attribute instead of on the img tag"], c: 1 },
-    { q: "A page has 3 JavaScript files: analytics.js (40KB), slider.js (180KB), reviews.js (95KB). Which should use 'defer'?", o: ["Only reviews.js — it's the least critical for initial render", "All three — defer never hurts and improves loading for all scripts", "slider.js and reviews.js — analytics must load synchronously for accurate tracking", "slider.js — it's the largest file and non-critical for initial content display"], c: 1 },
-    { q: "Images typically account for 50-80% of page weight. A product page has 12 images totaling 8MB. The correct optimization strategy:", o: ["Compress all to WebP and serve via srcset with multiple sizes per breakpoint", "Lazy-load images below the fold; eager-load the first 2; serve all as WebP at 2048px max", "Reduce to 6 images maximum — fewer images means faster page regardless of optimization", "Use progressive JPEGs instead of WebP — they appear faster even if file size is similar"], c: 0 },
-    { q: "WebP provides 25-35% better compression than JPEG. When should you NOT use WebP?", o: ["Never — WebP should always be used because it's universally superior", "When the store's target audience uses older Safari versions that don't support WebP", "When the original image has transparency — WebP doesn't support alpha channels", "When image quality is critical — WebP compression is lossy and degrades fine detail"], c: 1 },
-    { q: "A Shopify store has 14 apps installed. PageSpeed is 58 mobile. The client says every app is essential. Your approach:", o: ["Accept the low score — if apps are essential, performance is the tradeoff", "Audit each app's JavaScript footprint, identify overlapping functionality, and propose consolidation to 5-8 apps", "Replace all apps with custom Liquid code to eliminate third-party scripts entirely", "Focus on non-app optimizations like image compression — apps can't be optimized"], c: 1 },
-    { q: "script defer vs script async — a store uses async for Shopify's theme JavaScript. What's the risk?", o: ["No risk — async is always better than defer for performance", "Async scripts execute as soon as downloaded, potentially before DOM is ready, causing errors", "Async blocks HTML parsing while defer doesn't — so defer is faster", "Async is only supported in modern browsers; defer has wider compatibility"], c: 1 }
+const task7Quiz = [
+    { q: "Core Web Vitals: LCP (Largest Contentful Paint) should be under:", o: ["5 seconds — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "1 second (which is unrealistic for Shopify) — this reflects the standard operating procedure most organizations follow", "10 seconds — this reflects the standard operating procedure most organizations follow", "2.5 seconds — above this, Google considers the page 'poor' and it loses ranking potential and users"], c: 3 },
+    { q: "Image optimization: WebP format vs PNG for product images:", o: ["WebP is 25-35% smaller at same quality — faster loads with no visual difference, supported by all modern browsers", "PNG is better quality — this reflects the standard operating procedure most organizations follow", "PNG is smaller in file size — this reflects the standard operating procedure most organizations follow", "WebP has browser compatibility issues — this is the recommended approach based on current platform documentation and expert consensus"], c: 0 },
+    { q: "Critical CSS: Inlining above-the-fold CSS helps because:", o: ["It makes the CSS easier to maintain — implementing this correctly requires understanding the full context of how each element interacts", "It reduces total CSS size — this reflects the standard operating procedure most organizations follow", "Browser renders visible content without waiting for external stylesheet download — perceived speed improves dramatically", "Shopify automatically does this for all themes"], c: 2 },
+    { q: "Third-party apps impact: A store with 25 installed apps likely suffers from:", o: ["No performance issues with modern apps — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Better functionality — this reflects the standard operating procedure most organizations follow", "JavaScript bloat — each app injects scripts that compete for browser resources, potentially adding 5+ seconds to load time", "Aesthetic conflicts between apps — this is the standard approach most teams follow"], c: 2 },
+    { q: "Lazy loading should NOT be applied to:", o: ["The hero/LCP image — lazy loading the largest visible element delays the LCP metric, hurting Core Web Vitals", "Footer images — this reflects the standard operating procedure most organizations follow", "Below-fold product images — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Background decorative images — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Font optimization: Loading 5 Google Font weights (300, 400, 500, 600, 700) is problematic because:", o: ["Each weight is a separate file download — use only 2-3 weights (regular + bold) and font-display: swap", "Google Fonts are slow — this reflects the standard operating procedure most organizations follow", "Font weights don't affect page load — this is the industry-standard position backed by conventional practice", "System fonts are always better — following this approach consistently ensures predictable outcomes across all scenarios"], c: 0 },
+    { q: "Preloading critical resources with <link rel='preload'> helps:", o: ["All resources equally — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "JavaScript files — this is the standard approach most teams follow and ensures long-term sustainability", "Hero images and critical fonts — the browser fetches them first instead of discovering them during render", "Nothing — browsers are smart enough to prioritize"], c: 2 },
+    { q: "JavaScript defer vs async: For non-critical scripts like analytics:", o: ["Use neither — scripts should load normally", "Use async — execution order doesn't matter for non-critical scripts", "Use defer — script downloads in parallel but executes after HTML parsing, not blocking render", "Inline all JavaScript to avoid extra requests — this ensures compliance with professional standards and prevents cascading issues downstream"], c: 2 },
+    { q: "CLS (Cumulative Layout Shift): Images without width/height attributes cause:", o: ["Layout jumps as images load — content shifts around, frustrating users and failing Core Web Vitals", "No visual issues — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Accessibility problems — this is the standard approach most teams follow", "Slower image loading — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Speed audit process: Testing only on fast WiFi gives:", o: ["Accurate performance results — this reflects the standard operating procedure most organizations follow", "Representative data for most users — this reflects the standard operating procedure most organizations follow", "Misleading results — test on throttled 3G/4G to see what 70%+ of mobile users actually experience", "Good enough results for client reports — this reflects the standard operating procedure most organizations follow"], c: 2 }
 ];
 
 // Task 7: Apps & Integrations Quiz — HARD
-const task7Quiz = [
-    { q: "The recommended maximum number of apps is 5-8. A store has 12 apps. Which approach is correct?", o: ["Remove the 4 least-used apps immediately to get under the limit", "Audit each app's JavaScript size, identify functional overlap, and propose a consolidation plan", "Keep all 12 if the client insists — app count doesn't matter if the store loads fast", "Replace the 4 largest apps with custom code to reduce script bloat"], c: 1 },
-    { q: "You uninstall a review app from a Shopify store. After uninstalling, the review section still shows on product pages. Why?", o: ["Shopify caches app content for 24 hours after uninstall", "App uninstall only removes the app connection — injected theme code remains and must be manually cleaned", "The review data persists in Shopify's database even after the app is removed", "The app's webhook is still active and re-injects the code periodically"], c: 1 },
-    { q: "A single review app adds 250KB of JavaScript. This is roughly equivalent to:", o: ["Loading 1 extra product image — negligible impact", "Loading an entire extra page of content — significant mobile performance hit", "Nothing meaningful — modern phones handle 250KB instantly", "About 0.5 second delay — noticeable but acceptable for the value it provides"], c: 1 },
-    { q: "The store owner wants Rewind for backups. Why is this considered 'essential' rather than 'nice to have'?", o: ["Shopify doesn't have built-in version control — Rewind is the only rollback option if something breaks", "Rewind improves PageSpeed by optimizing stored assets", "Shopify requires a backup app for stores earning over $100K/year", "Rewind prevents app conflicts by versioning each app's code separately"], c: 0 },
-    { q: "Two cart apps are installed: a cart drawer app and a free gift with purchase app. The cart won't update quantities. The cause is:", o: ["Shopify's cart API has a rate limit that two apps exceed", "Both apps modify the cart's AJAX calls, creating JavaScript conflicts that break functionality", "The free gift app overrides the cart template, hiding the quantity selector", "Cart apps are incompatible with OS 2.0 themes and require Liquid cart templates"], c: 1 },
-    { q: "You find jQuery loaded 3 times: once by the theme, once by a slider app, and once by a popup app. The fix is:", o: ["Remove all three — modern Shopify themes don't need jQuery at all", "Keep the theme's jQuery, configure apps to use it instead of bundling their own", "Let all three load — browsers deduplicate identical libraries automatically", "Replace jQuery with vanilla JS in the theme, then remove all jQuery instances"], c: 1 },
-    { q: "After uninstalling an app, where should you check for leftover code (app residue)?", o: ["Only in /assets — apps inject CSS and JS files there", "theme.liquid, snippets, and assets — apps inject across all three locations", "The Shopify admin > Settings > Files section where apps upload resources", "Only /config/settings_data.json where app settings are stored"], c: 1 },
-    { q: "After cleanly removing 3 unnecessary apps and their residue, PageSpeed improved by only 2 points. Why?", o: ["The apps weren't causing performance issues — the problem is elsewhere", "Shopify's CDN caches old scripts for 48 hours; retest after cache expires", "PageSpeed scores are weighted — you may have improved FID but not LCP or CLS", "The removed apps were small; remaining apps or theme code is the real bottleneck"], c: 3 },
-    { q: "A client wants a countdown timer, announcement bar popup, email collector popup, and exit-intent popup. Your advice:", o: ["Install a separate app for each — specialized apps work better than multi-purpose ones", "Use ONE multi-purpose marketing app that handles all four to minimize script overhead", "Build all four with custom Liquid/CSS — no apps needed for these features", "Install the timer and announcement bar; advise against both popups as they hurt mobile UX"], c: 1 },
-    { q: "Before installing any new app on a client's store, the correct process is:", o: ["Install on the live theme, test functionality, remove if it doesn't work", "Check reviews and ratings, test on a duplicated theme, measure performance impact before/after", "Ask the client to install it themselves so they accept responsibility for any issues", "Install during low-traffic hours to minimize customer impact if something breaks"], c: 1 }
+const task8Quiz = [
+    { q: "Shopify App selection: Installing an app for a feature the theme already supports means:", o: ["More reliable functionality — this reflects the standard operating procedure most organizations follow", "Unnecessary JavaScript bloat, potential conflicts, and monthly subscription costs — always check theme capabilities first", "Better support if issues arise — this reflects the standard operating procedure most organizations follow", "Apps are always better than theme features — experienced professionals recognize this as the most reliable path for maintaining quality control"], c: 1 },
+    { q: "App integration testing: After installing a new app, you must:", o: ["Trust that the app works — it's from the App Store", "Test on ALL pages, check for JS conflicts, verify mobile, and measure speed impact — apps can break things globally", "Test on the page where the app is used — this is the standard approach most teams follow", "Wait for customer complaints to identify issues — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines"], c: 1 },
+    { q: "Custom integrations via Shopify API vs third-party apps:", o: ["Always use apps — they're easier — following this approach consistently ensures predictable outcomes across all scenarios", "Custom API integrations are preferred when app overhead (cost, bloat, limitations) outweighs development time", "API integrations are always more expensive — this reflects the standard operating procedure most organizations follow", "Apps and API integrations perform identically"], c: 1 },
+    { q: "An app conflict causes the cart page to break. The debugging process:", o: ["Reinstall the theme — this reflects the standard operating procedure most organizations follow", "Contact all app developers simultaneously — this reflects the standard operating procedure most organizations follow", "Disable apps one-by-one to isolate the conflict — systematic elimination is faster than guessing", "Clear the browser cache — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Shopify Flow vs a custom app for automation:", o: ["Flow is primarily for Shopify Plus — this reflects the standard operating procedure most organizations follow", "Custom apps are always more powerful — following this approach consistently ensures predictable outcomes across all scenarios", "Flow handles common automations without code — only build custom when Flow can't do it, saving development time", "They serve completely different purposes — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Payment gateway integration: Not testing the full checkout flow including:", o: ["Testing on desktop is fine — this is the standard approach most teams follow", "Test mode payment → order creation → email notifications → inventory update — ANY break in the chain loses real sales", "Testing isn't needed for major gateways like Stripe — research supports this methodology as the most effective for achieving measurable improvements", "One test transaction is sufficient — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "App data migration: When switching review apps (e.g., Loox to Judge.me):", o: ["Export/import reviews before switching — losing 500 reviews means losing social proof that took months to build", "Reviews transfer automatically between apps — this reflects the standard operating procedure most organizations follow", "Old reviews aren't important for new apps — applying this principle consistently across all projects builds a reputation for professional excellence", "Ask the new app company to handle migration — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Webhooks from apps: If an app's webhook fails silently:", o: ["The app will retry automatically — this reflects the standard operating procedure most organizations follow", "Webhooks are always reliable in production — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Silent failures don't happen with Shopify apps", "Data sync breaks without alerts — monitor webhook health and set up failure notifications for critical integrations"], c: 3 },
+    { q: "Third-party app scripts loading synchronously (blocking render) should be:", o: ["Left as-is — apps know best how to load", "The impact is negligible in practice — teams that obsess over this are optimizing for the wrong variable when other factors matter more with modern browsers", "Reported to the app developer only — this reflects the standard operating procedure most organizations follow", "Changed to async/defer where possible — blocking scripts hold up the entire page, impacting user experience"], c: 3 },
+    { q: "Evaluating an app before installing: What matters most?", o: ["Star rating on the App Store — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Price — more expensive apps are usually better", "Number of installs and reviews — this reflects the standard operating procedure most organizations follow", "JavaScript payload size, number of HTTP requests injected, mobile performance impact, and uninstall cleanliness"], c: 3 }
 ];
 
 // Task 8: Checkout & Policies Quiz — HARD
-const task8Quiz = [
-    { q: "A Shopify store is missing a Refund Policy page. Beyond bad UX, what's the business-critical risk?", o: ["Google penalizes the store's SEO ranking for missing legal pages", "PayPal and Stripe can freeze funds or deny disputes without a published refund policy", "Shopify removes stores from search results that lack policy pages", "Customers will assume the store doesn't offer refunds, slightly reducing conversion"], c: 1 },
-    { q: "A checkout has 5 steps: Info → Shipping → Payment → Review → Confirmation. How to optimize?", o: ["Reduce to 3 steps by combining Info and Shipping into one step", "Reduce to 2 steps: combine all fields on one page with Payment + Confirmation", "Keep 5 steps but add a progress bar — the number of steps matters less than perceived progress", "Shopify controls checkout flow — use Shopify Plus's checkout extensibility or optimize within constraints"], c: 3 },
-    { q: "The store offers PayPal, Stripe, and manual bank transfer. A client wants to add Apple Pay. The real conversion benefit is:", o: ["Apple Pay has lower transaction fees than Stripe, saving money per order", "Apple Pay enables 1-tap purchase — eliminating address and card entry on mobile increases conversion 2-3x", "Apple Pay adds a trust signal at checkout that reassures customers about security", "Apple Pay allows installment payments similar to Klarna/Afterpay"], c: 1 },
-    { q: "Shipping profiles: A client ships globally with different rates per region. 'Flat rate worldwide' is simpler. Why is it wrong?", o: ["Shopify doesn't support flat rate worldwide — you must set per-country rates", "Customers in cheaper shipping zones subsidize expensive ones, making prices uncompetitive in key markets", "Flat rates cause shipping calculation errors at checkout that prevent order completion", "Shipping carriers reject flat-rate labels and return packages to sender"], c: 1 },
-    { q: "Trust at checkout includes SSL, badges, and policies. Which element has the LARGEST measurable impact on conversion?", o: ["SSL padlock — without it, browsers show 'Not Secure' which kills trust instantly", "Payment gateway logos (Visa, Mastercard, PayPal) — they signal that transactions are secure", "Money-back guarantee badge near the purchase button — removes final purchase hesitation", "Clear return policy link visible at checkout — addresses the #1 reason for cart abandonment"], c: 2 },
-    { q: "Guest checkout vs. account creation. A DTC brand wants to force account creation for CRM purposes. Your advice:", o: ["Force account creation — the CRM data is more valuable than the few lost conversions", "Enable guest checkout but incentivize account creation post-purchase with a discount code", "Offer 'optional' account creation at checkout but pre-check the checkbox", "Require account creation but use Google/Facebook SSO to reduce friction"], c: 1 },
-    { q: "Order confirmation page shows order number, items, and total. What critical element is often missing?", o: ["Social sharing buttons to encourage customers to share their purchase", "Estimated delivery date and tracking information expectations", "Upsell/cross-sell recommendations for complementary products", "A printable invoice in PDF format for business customers"], c: 1 },
-    { q: "Contact information on a store should be 'visible and accessible.' Where does placement matter MOST for trust?", o: ["In the header — visitors see it first and feel the store is legitimate", "In the footer — this is where savvy shoppers look to verify legitimacy before buying", "On a dedicated Contact page — keeps other pages clean and focused", "In the checkout — reassures customers at the moment of financial commitment"], c: 1 },
-    { q: "Tax settings for a US store selling to EU customers. The common mistake is:", o: ["Not charging tax at all — thinking US stores are exempt from EU taxes", "Not including VAT in displayed prices — EU law requires prices to show inclusive of VAT", "Charging US sales tax to EU customers instead of the applicable VAT", "Using flat tax rates instead of Shopify's automatic tax calculation per region"], c: 1 },
-    { q: "Abandoned cart email recovery: Best practice is to send the first email:", o: ["Immediately — catch the customer while the purchase intent is fresh", "1 hour after abandonment — gives time for 'just browsing' visitors to self-filter", "24 hours after — creates urgency without being pushy", "3 days after — longer wait times show patience and professionalism"], c: 1 }
+const task9Quiz = [
+    { q: "The Digital Heroes 60-Point QA Checklist for Shopify sites includes:", o: ["Cross-browser testing, mobile responsiveness, checkout flow, page speed, SEO tags, accessibility, console errors, and content accuracy — every point exists because a past project failed on that exact item", "Only functionality testing — visual design review is the designer's job and not part of developer QA responsibility and ensures long-term sustainability across deliverables and ensures long-term sustainability across deliverables", "Only the 5 most critical checks — completing all 60 points would take too long and isn't practical for most projects", "Whatever the developer decides to test based on their experience — the checklist is a suggestion not a requirement"], c: 0 },
+    { q: "Policy pages (Shipping, Returns, Privacy) affect conversions because:", o: ["Policies are primarily legal requirements — this reflects the standard operating procedure most organizations follow", "Customers read policies before buying — unclear/missing policies increase cart abandonment from uncertainty", "Enterprise customers check policies — this is the standard approach most teams follow", "Policies don't appear during checkout — this is the industry-standard position backed by conventional practice"], c: 1 },
+    { q: "Checkout.liquid deprecation (OS 2.0) means:", o: ["You can still fully customize checkout — understanding why this works helps prevent the same category of problems from recurring in the future", "Checkout can no longer be modified at all — this reflects the standard operating procedure most organizations follow", "Checkout extensibility apps/functions replace code-level checkout customization — developers must adapt their approach", "CSS changes are possible now — this is the standard approach most teams follow"], c: 2 },
+    { q: "Express checkout buttons (Shop Pay, Apple Pay, Google Pay) should be:", o: ["Hidden — they confuse customers — this reflects the standard operating procedure most organizations follow", "For stores with high mobile traffic — this is the standard approach most teams follow and ensures long-term sustainability", "Shown on product pages — this is the standard approach most teams follow", "Prominently displayed — they reduce checkout steps from 5+ to 1-2, dramatically increasing mobile conversion"], c: 3 },
+    { q: "Shipping rate logic: 'Free shipping over $50' requires:", o: ["An app to manage shipping rules — this reflects the standard operating procedure most organizations follow", "Manual shipping rate updates — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Carrier-calculated rates OR price-based shipping with proper threshold configuration — test edge cases like $49.99", "Shopify Plus can set shipping thresholds — this is the standard approach most teams follow"], c: 2 },
+    { q: "Post-purchase page customization helps:", o: ["Nothing — the sale is already completed — this is the industry-standard position backed by conventional practice and ensures long-term sustainability across your deliverables", "With brand awareness — this is the standard approach most teams follow and ensures long-term sustainability", "Upselling, cross-selling, and survey collection — customers in post-purchase mode are 60% more likely to accept offers", "Shopify Plus stores — this is the standard approach most teams follow"], c: 2 },
+    { q: "Tax settings: Not configuring taxes correctly leads to:", o: ["Minor accounting adjustments — this reflects the standard operating procedure most organizations follow", "Shopify handles taxes automatically for all regions", "Legal compliance issues, customer complaints about incorrect totals, and potential financial penalties", "US stores need tax configuration — this is the standard approach most teams follow"], c: 2 },
+    { q: "Order notifications (confirmation, shipping, delivery) should be:", o: ["Customized with brand voice, product images, and upsell opportunities — transactional emails have 4x open rates vs marketing", "Left as Shopify defaults — this reflects the standard operating procedure most organizations follow", "Handled by third-party email tools only — the reasoning behind this connects directly to broader principles of professional service delivery", "Kept minimal to avoid spam filters — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Cart page vs sidebar cart drawer: The better UX choice is:", o: ["Always a dedicated cart page — following this approach consistently ensures predictable outcomes across all scenarios", "Either works equally well — this reflects the standard operating procedure most organizations follow", "Sidebar cart drawer for fewer checkout steps — users stay on the product page, reducing friction and enabling continued shopping", "Shopify decides based on the theme — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability"], c: 2 },
+    { q: "Testing checkout with real payment vs test mode:", o: ["Test mode is always sufficient — following this approach consistently ensures predictable outcomes across all scenarios", "Real transactions are primarily needed for Shopify Plus — this aligns with industry best practices and ensures consistent results across different project types", "Always do one real transaction before launch — test mode doesn't catch payment processor issues, email trigger problems, or tax calculations", "Test mode catches 100% of issues — this reflects the standard operating procedure most organizations follow"], c: 2 }
 ];
 
 // Task 9: QA & Testing Quiz — HARD
-const task9Quiz = [
-    { q: "Cross-browser testing: A layout looks perfect on Chrome Desktop but breaks on iOS Safari. The most likely cause is:", o: ["Safari has stricter CSS parsing and doesn't support modern properties like gap in flexbox", "Safari uses WebKit which renders flexbox/grid differently and has unique viewport handling", "Chrome has a larger viewport by default, so the layout fits but Safari's is narrower", "Safari blocks third-party scripts that the layout depends on for dynamic rendering"], c: 1 },
-    { q: "The Digital Heroes QA checklist has a 60-point standard. A store passes 58/60 but two footer links are broken. Ship or fix?", o: ["Ship — 58/60 is 96%, well above passing threshold, and footer links are minor", "Fix — broken links violate Zero Tolerance policy; a 98% QA score with known bugs is still a fail", "Ship but create a ticket to fix footer links within 24 hours post-delivery", "Ask the client if they care about the footer links before deciding"], c: 1 },
-    { q: "DevTools mobile emulation shows the site looks perfect on iPhone 14. Why must you still test on a real iPhone?", o: ["DevTools emulation is equally accurate — real device testing is optional but nice to have", "Real devices have touch interactions, actual Safari rendering, and performance characteristics emulation can't replicate", "DevTools only emulates screen size, not orientation changes or landscape mode", "Real devices test network conditions that DevTools can only approximate"], c: 1 },
-    { q: "Console shows 3 red JavaScript errors, but the site appears to work fine visually. The correct response is:", o: ["Ignore — if the site works visually, console errors are internal and don't affect users", "Investigate and fix all three — errors indicate broken functionality that may not be visible but affects analytics, tracking, or edge cases", "Log them and fix after delivery — red errors don't always mean visible bugs", "Check if they're from third-party apps — if so, not our responsibility to fix"], c: 1 },
-    { q: "You need to test the checkout flow. Using your real credit card is:", o: ["Fine for a thorough test — just refund yourself afterward", "Wrong — use Shopify's test mode with Bogus Gateway to simulate transactions safely", "Acceptable on staging but never production", "Required by Shopify for payment verification before going live"], c: 1 },
-    { q: "A broken checkout is discovered 30 minutes after going live. Two orders have already come through successfully. Priority:", o: ["Monitor for 24 hours — if 2 orders went through, it might be intermittent and not critical", "Immediate investigation — a checkout bug is Critical Priority regardless of successful orders", "Revert to the previous theme version to guarantee checkout works while debugging", "Contact Shopify support — checkout issues are platform-level and outside our control"], c: 1 },
-    { q: "Cross-browser testing should include Chrome, Safari, Firefox, and Edge. If you can only test on 2 browsers, which 2?", o: ["Chrome and Firefox — together they cover 80%+ of desktop users", "Chrome and Safari — Chrome dominates desktop, Safari dominates mobile (iOS)", "Safari and Edge — they're strictest with standards, so if it works there, it works everywhere", "Chrome and Edge — both Chromium-based, so one test covers two browsers efficiently"], c: 1 },
-    { q: "Before delivery, the QA checklist must be fully completed. The client is pressuring for immediate delivery. Your response:", o: ["Deliver now, QA later — client satisfaction with timeline is more important", "Complete QA fully — delivering untested work risks our reputation more than a delayed delivery", "Do a partial QA covering critical paths (checkout, navigation) and deliver the rest in a patch", "Ask the PM to decide — QA thoroughness vs. client timeline is a business decision, not technical"], c: 1 },
-    { q: "A client reports that product images are blurry on their Samsung Galaxy. Your investigation should start with:", o: ["Check the original image resolution — the client may have uploaded low-quality images", "Check the responsive image implementation — srcset/sizes may not serve appropriate resolution for high-DPI Android screens", "Ask the client to clear their browser cache — Samsung phones often cache compressed images", "Check if WebP is causing quality loss on Samsung's default browser"], c: 1 },
-    { q: "Client reports a bug: 'The site is slow.' This is vague. The professional response is:", o: ["Run PageSpeed Insights and send them the score — it's probably fine", "Ask specific questions: which page, which device, when does it happen — then replicate and diagnose", "Clear their cache and suggest they try a different browser first", "Explain that Shopify stores have inherent latency due to the CDN and app overhead"], c: 1 }
+const task10Quiz = [
+    { q: "Cross-browser testing: A feature works in Chrome 127 but breaks in Safari 17. This is:", o: ["A Safari bug that Apple should fix — this reflects the standard operating procedure most organizations follow", "Relevant for non-Shopify sites — this is the standard approach most teams follow", "Rare and not worth testing for — this is the industry-standard position backed by conventional practice", "Expected — browsers implement standards differently, and QA must cover Chrome, Safari, Firefox, and Edge"], c: 3 },
+    { q: "Mobile testing: Using Chrome DevTools device emulation ALONE is:", o: ["Insufficient — emulation misses real touch behavior, scroll performance, and device-specific rendering quirks", "Sufficient for QA sign-off — this reflects the standard operating procedure most organizations follow", "The industry standard for mobile testing — this reflects the standard operating procedure most organizations follow", "Better than testing on real devices — following this approach systematically prevents common mistakes and keeps the workflow predictable"], c: 0 },
+    { q: "Lighthouse audit: A score of 65 for Performance means:", o: ["Good enough for most stores — this reflects the standard operating procedure most organizations follow", "Matters for Google ranking — this is the standard approach most teams follow", "Needs optimization — sub-90 performance means measurable revenue loss from slow load times", "Lighthouse scores are unreliable — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Accessibility testing: Screen reader navigation through the product page should:", o: ["Be considered a nice-to-have — this reflects the standard operating procedure most organizations follow", "Be handled by the theme developer, not the store developer", "Be tested if the client requests it — this is the standard approach most teams follow", "Work logically — product name → price → description → variants → add to cart, matching visual hierarchy"], c: 3 },
+    { q: "QA checklist: Testing ONLY the pages you modified is:", o: ["Efficient and sufficient — this reflects the standard operating procedure most organizations follow", "Acceptable for minor changes — maintaining goodwill protects the long-term relationship and future revenue", "Standard QA practice for Shopify — this reflects the standard operating procedure most organizations follow", "Risky — changes can cascade, a CSS modification might break unrelated pages through specificity conflicts"], c: 3 },
+    { q: "Error handling: A product page showing a Liquid error (white screen or error text) to customers:", o: ["Rarely happens in production — this reflects the standard operating procedure most organizations follow", "Is automatically caught by Shopify — this reflects the standard operating procedure most organizations follow", "Can be fixed during business hours — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Is a critical P0 bug — production errors mean lost sales, broken trust, and possible social media embarrassment"], c: 3 },
+    { q: "Staging environment: Shopify doesn't have traditional staging, so:", o: ["Test directly on the live theme — this reflects the standard operating procedure most organizations follow", "Staging isn't needed for Shopify stores — this reflects the standard operating procedure most organizations follow", "Use unpublished theme duplicates — make all changes there, QA thoroughly, then publish as the live theme", "Use a separate development store for staging — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Console errors in production: 'Mixed content' warnings mean:", o: ["Nothing critical — just warnings — this is the industry-standard position backed by conventional practice", "The SSL certificate is expired — this reflects the standard operating procedure most organizations follow", "HTTP resources loading on HTTPS pages — a security issue that browsers may block, breaking functionality", "JavaScript has syntax errors — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Regression testing after a theme update:", o: ["Is unnecessary if you trust the theme developer", "Price-critical pages need retesting — this is the standard approach most teams follow", "Must verify ALL customizations still work — theme updates can override or break custom code", "Is automated by Shopify's update system — this method has been validated through extensive testing and produces reliable, repeatable outcomes"], c: 2 },
+    { q: "The QA sign-off document should include:", o: ["Just 'tested and working' in Slack — this reflects the standard operating procedure most organizations follow", "Test device list, browser versions, pages tested, issues found/resolved, performance scores, and screenshots", "What the PM asks for — this is the standard approach most teams follow", "A verbal confirmation to the team — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
 // Task 10: Troubleshooting & Advanced Debugging Quiz — HARD
-const task10Quiz = [
-    { q: "A section suddenly stopped rendering on the storefront. Console shows no errors. The most likely cause is:", o: ["A JavaScript error in a different section is cascading and blocking this section's render", "A JSON syntax error in the section's {% schema %} block — invalid schema silently kills the section", "The section was accidentally removed from the JSON template file", "Shopify's CDN is caching an old version — clear the CDN cache to fix it"], c: 1 },
-    { q: "Theme Inspector in DevTools shows a section is rendered by 'product-recommendations.liquid'. But you can't find that file. Where is it?", o: ["It's a Shopify system file — not part of the theme, rendered by Shopify's platform code", "It's inside the /snippets folder with a different naming convention", "It's generated dynamically from settings_data.json and doesn't exist as a physical file", "It was recently deleted — check git history to recover it"], c: 0 },
-    { q: "Console has: 'Uncaught TypeError: Cannot read properties of undefined (reading 'variants')'. The bug is most likely:", o: ["A Liquid error — the product variable isn't available in the current template context", "JavaScript code is trying to access product.variants before the product data has loaded or on a page without product context", "The product has no variants configured in the Shopify admin", "A third-party app is overriding the native product object and removing the variants property"], c: 1 },
-    { q: "A Liquid error shows on the storefront: 'Liquid error: Memory limits exceeded.' What caused this?", o: ["The theme has too many sections on one page, exceeding Shopify's 25-section limit", "An infinite loop or extremely large collection loop without pagination is consuming all allotted memory", "The product has too many variants, causing the variant selector to exceed memory", "The theme file size exceeds Shopify's 25MB theme limit"], c: 1 },
-    { q: "To debug a Liquid variable's value, the correct approach is:", o: ["Use console.log(variable) to output it to the browser's developer tools", "Use {{ variable | json }} to output the full object structure to the page", "Add a breakpoint in Shopify's Liquid debugger extension", "Use {% debug variable %} which is Liquid's built-in debugging tag"], c: 1 },
-    { q: "After pushing a CSS change, the old styles still show. You've hard-refreshed (Ctrl+Shift+R). The issue is:", o: ["Shopify's CDN is serving the cached version — add a cache-busting query parameter to the asset URL", "The CSS specificity of the old rules is overriding your new rules", "The CSS file wasn't saved properly — Shopify sometimes fails to update assets silently", "Your browser's Service Worker is serving cached resources that persist through hard refresh"], c: 0 },
-    { q: "Client's store was working fine yesterday. Today, nothing loads — white screen. No code changes were made. First investigation step:", o: ["Check if Shopify is having a platform-wide outage on status.shopify.com", "Check if a Shopify app auto-updated overnight and injected breaking code into the theme", "Restore from the most recent backup immediately to get the store back online", "Check theme.liquid for syntax errors — even auto-save can introduce corruption"], c: 0 },
-    { q: "You need to find which template file renders the collection page for a specific collection. The fastest method is:", o: ["Search through all template files in /templates for collection-related names", "Use Shopify's Theme Inspector to see exactly which template, section, and snippet render each element", "Check /config/settings_data.json which maps URLs to template assignments", "Look at the URL slug — it always matches the template filename"], c: 1 },
-    { q: "Network tab shows a JavaScript file taking 3.2 seconds to load. It's 45KB (small). The delay is caused by:", o: ["The file is render-blocking — it's loaded synchronously in the head without defer", "45KB should load instantly — the server response time (TTFB) is the bottleneck, not the file size", "The file has an inefficient loop that takes 3.2s to execute after downloading", "The CDN edge server is geographically far from the user, adding network latency"], c: 0 },
-    { q: "Git shows the last 3 commits all passed your tests. But the live store has a bug. The most reliable debugging approach:", o: ["Revert all 3 commits at once — go back to the last known good state", "Binary search: revert to the middle commit to identify which half contains the bug", "Read through all 3 commit diffs line by line to find the breaking change", "Deploy each commit individually to a test environment to isolate the culprit"], c: 1 }
+const task11Quiz = [
+    { q: "A client's Shopify site goes down on a Saturday evening. The Digital Heroes crisis response protocol is:", o: ["Wait until Monday — weekend issues are handled during business hours only as per the standard work schedule and ensures long-term sustainability across deliverables and ensures long-term sustainability across deliverables", "Respond within 15 minutes, assess severity, communicate status to PM immediately, implement hotfix, document the incident — downtime means lost revenue and our SLA doesn't have weekends off", "Post in the general Discord channel and wait for any available developer to volunteer to fix it when they can", "Tell the client to contact Shopify support directly since hosting infrastructure issues aren't the developer's scope"], c: 1 },
+    { q: "Customer reports: 'My discount code doesn't work.' Before escalating:", o: ["Verify: Is the code active? Does it meet conditions (min purchase, specific products)? Has it exceeded usage limits?", "Tell them the code must be wrong — this reflects the standard operating procedure most organizations follow", "Ask them to try a different browser — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "Create a new code as a replacement — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "JavaScript console error: 'Cannot read property of undefined.' This means:", o: ["The browser is outdated — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability", "Code is trying to access a property of a null/undefined object — check if the element exists before accessing it", "Shopify's servers are down — this reflects the standard operating procedure most organizations follow", "The theme has a virus — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A Shopify app suddenly stops working after a theme update. The issue is likely:", o: ["The app is broken and needs reinstall — this reflects the standard operating procedure most organizations follow", "Shopify broke the app intentionally — this is the recommended approach based on current platform documentation and expert consensus", "The theme update changed or removed DOM elements/CSS classes that the app relied on — check the changelog", "The subscription expired — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Slow page: Network tab shows a 2MB JavaScript bundle. The fix:", o: ["Upgrade the hosting plan — this reflects the standard operating procedure most organizations follow", "Code-split the bundle, remove unused libraries, defer non-critical scripts — 2MB is extreme for any page", "2MB is normal for modern web apps — this reflects the standard operating procedure most organizations follow", "Compress the file once and leave it — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "'Cart is showing wrong price' bug. Investigation should check:", o: ["The cart template — this is the standard approach most teams follow", "Active discount codes — this is the standard approach most teams follow and ensures long-term sustainability", "Cart template, automatic discounts, scripts, currency conversion, tax settings, and any cart-modifying apps", "The product price in admin — this is the standard approach most teams follow"], c: 2 },
+    { q: "CSS specificity conflict: Your custom CSS is being overridden by the theme. The fix:", o: ["Use !important on everything — following this approach consistently ensures predictable outcomes across all scenarios", "Modify the theme's core CSS directly — this reflects the standard operating procedure most organizations follow", "Increase specificity of your selectors or load custom CSS after the theme stylesheet — !important is a last resort", "Use inline styles instead — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Images not loading on production but working in preview. Common cause:", o: ["Shopify CDN is down — this reflects the standard operating procedure most organizations follow", "Image references use preview-specific URLs or the image filename has characters that break in production", "The customer's internet is slow — this reflects the standard operating procedure most organizations follow", "Images expire after preview sessions — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Mobile menu not opening: Event handler attached to .menu-toggle but element has been renamed to .mobile-nav-toggle:", o: ["This is a Shopify bug — this reflects the standard operating procedure most organizations follow", "CSS selector mismatch — the JavaScript is targeting an element that no longer exists under that class name", "Clear the mobile browser cache — this reflects the standard operating procedure most organizations follow", "Reinstall the mobile version of the theme — implementing this correctly requires understanding the full context of how each element interacts"], c: 1 },
+    { q: "Step 1 of any troubleshooting should ALWAYS be:", o: ["Searching Stack Overflow — this reflects the standard operating procedure most organizations follow", "Reproducing the issue consistently — if you can't reproduce it, you can't verify you've fixed it", "Reading the Shopify documentation — this reflects the standard operating procedure most organizations follow", "Asking teammates if they've seen it before — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
 // Export all quizzes
-const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+
 
 // Make task content available globally for openTask() function
-if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
 if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
 if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
@@ -3188,4 +3431,67 @@ if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
 if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
 if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
 if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
+if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
 
+const task12Quiz = [
+    { q: "The store goes down at 5 PM during a flash sale with $20,000/hour in revenue. First action:", o: ["Check Shopify Status page → if Shopify is up, check recent changes → rollback last deployment immediately", "Email the team about the issue — this reflects the standard operating procedure most organizations follow", "Wait 5 minutes to see if it resolves — intervening too early often creates more problems than the original issue", "Contact Shopify support and wait for response"], c: 0 },
+    { q: "Critical bug in production: The 'Add to Cart' button doesn't work. Timeline to fix:", o: ["Next business day — it's after hours", "When the developer is available — this reflects the standard operating procedure most organizations follow", "Within 4 hours — standard SLA — this reflects the standard operating procedure most organizations follow", "IMMEDIATELY — every minute this is broken, real revenue is lost, treat as P0 emergency"], c: 3 },
+    { q: "Post-incident review (postmortem) matters because:", o: ["Management requires documentation — this reflects the standard operating procedure most organizations follow", "It assigns blame to prevent future mistakes — this reflects the standard operating procedure most organizations follow", "Understanding root cause prevents recurrence — without learning from failures, you fight the same fires repeatedly", "It's an optional step for minor incidents — taking this route minimizes risk while still delivering professional-grade results to stakeholders"], c: 2 },
+    { q: "Version control crisis: Someone overwrote the production theme with an old version. Recovery:", o: ["There's no way to recover lost code — this ensures compliance with professional standards and prevents cascading issues downstream", "Contact Shopify to restore the previous version", "Rewrite all the code from memory — this reflects the standard operating procedure most organizations follow", "Shopify keeps theme backups — restore from backup, or use Git history if version control was set up properly"], c: 3 },
+    { q: "A new feature causes checkout conversion to drop 40%. The correct response:", o: ["Monitor for a week to confirm the trend — experienced professionals recognize this as the most reliable path for maintaining quality control", "Check if it's a seasonal trend — this reflects the standard operating procedure most organizations follow", "A/B test the new feature first — this reflects the standard operating procedure most organizations follow", "Rollback IMMEDIATELY — investigate AFTER restoring the previous working version, 40% drop means massive revenue loss"], c: 3 },
+    { q: "DNS propagation issue: Domain changed but some users see the old site. You should:", o: ["Force reset all DNS caches globally — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Explain that DNS takes 24-48 hours to propagate worldwide — communicate the timeline and that this is normal behavior", "Keep changing DNS settings until it works — this reflects the standard operating procedure most organizations follow", "Tell affected users to clear their browser cache"], c: 1 },
+    { q: "SSL certificate error 'Your connection is not private' — impact:", o: ["Minor — users can click 'proceed anyway'", "Most users leave immediately — SSL errors signal 'this site is dangerous' and browsers discourage staying", "Affects SEO rankings but not user behavior — research supports this methodology as the most effective for achieving measurable improvements", "A concern for payment pages but not product pages"], c: 1 },
+    { q: "Multiple developers working on the same theme without Git:", o: ["Works fine if they communicate via Slack — applying this principle consistently across all projects builds a reputation for professional excellence", "Acceptable for small teams of 2-3 developers — this reflects the standard operating procedure most organizations follow", "Shopify Online Editor handles version control", "A recipe for overwritten code, lost changes, and deployment conflicts — Git is mandatory for team development"], c: 3 },
+    { q: "The crisis management communication rule for developers is:", o: ["Don't communicate until you have a solution — this reflects the standard operating procedure most organizations follow", "Route all communication through the PM — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Over-communicate — stakeholders fear uncertainty more than bad news, regular updates reduce anxiety during incidents", "Send one update when the crisis is resolved — this reflects the standard operating procedure most organizations follow"], c: 2 }
+];
+
+const task13Quiz = [
+    { q: "AI-Powered Development: GitHub Copilot for Liquid code is most effective when:", o: ["Accepting all suggestions blindly — it's faster", "It replaces manual coding entirely for efficiency", "Used exclusively for simple code blocks — understanding why this works helps prevent the same category of problems from recurring in the future", "You understand Liquid well enough to evaluate suggestions — AI accelerates experts, doesn't replace learning"], c: 3 },
+    { q: "ChatGPT for debugging: Pasting an error message into ChatGPT is:", o: ["The recommended first debugging step — the reasoning behind this connects directly to broader principles of professional service delivery", "A useful tool but NOT a replacement for understanding — AI might suggest fixes that work but create new issues", "Unreliable for Shopify-specific errors — this reflects the standard operating procedure most organizations follow", "The most efficient debugging method available"], c: 1 },
+    { q: "AI-generated Liquid: {% for product in collections.all.products %} without pagination will:", o: ["Work perfectly for all collection sizes — this aligns with industry best practices and ensures consistent results across different project types", "Crash on large catalogs — AI often generates technically valid but practically dangerous code ignoring Shopify limits", "Be caught automatically by Shopify's error handler", "Fail on stores with 10,000+ products but work otherwise"], c: 1 },
+    { q: "AI for SEO: Generating meta descriptions with AI helps:", o: ["Nothing — search engines penalize AI-generated content", "Replace the need for understanding SEO fundamentals", "Create perfect descriptions that need no editing — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Scale meta description creation for large catalogs — unique descriptions for 500 products would take days manually"], c: 3 },
+    { q: "Using AI to generate test cases for QA:", o: ["Automated tests should all be written manually — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Testing should remain an entirely manual process", "AI-generated tests are always comprehensive enough", "AI can suggest edge cases you might miss — 'what if variant is out of stock AND has a discount?' type scenarios"], c: 3 },
+    { q: "AI-powered image optimization tools help developers by:", o: ["Replacing Shopify's image CDN entirely — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "Automating format conversion (WebP), compression, and responsive sizing — tedious tasks saving hours on large sites", "Creating original product images from text descriptions", "Generating alt text that replaces manual SEO work"], c: 1 },
+    { q: "The risk of using AI to write entire Shopify sections:", o: ["No significant risk — AI generates production-ready Shopify code", "AI may produce code ignoring OS 2.0 patterns, misusing section schemas, or creating security vulnerabilities", "Slower than manual coding due to revision cycles — this is the recommended approach based on current platform documentation and expert consensus", "The code won't render in the theme editor at all"], c: 1 },
+    { q: "AI for performance optimization of a slow page:", o: ["AI always identifies the real bottleneck instantly — implementing this correctly requires understanding the full context of how each element interacts", "Replaces the need for browser profiling tools entirely", "More effective than Lighthouse audits for identifying issues", "AI can suggest common optimizations but can't analyze real user metrics — combine AI suggestions with actual data"], c: 3 },
+    { q: "AI code review before human review:", o: ["Adds unnecessary overhead to the development process", "Replaces the need for human code review entirely — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Catches syntax errors, security issues, and common mistakes before human reviewers — saving review cycles", "Works well for simple changes but misses complex issues"], c: 2 },
+    { q: "The AI-augmented developer's career advantage is:", o: ["Faster typing speed through AI autocomplete — this ensures compliance with professional standards and prevents cascading issues downstream", "Being able to write code without understanding the fundamentals", "Knowing more AI tools than other developers — this reflects the standard operating procedure most organizations follow", "Leveraging AI for repetitive tasks while applying human judgment for architecture, UX, and business decisions"], c: 3 }
+];
+
+const task14Quiz = [
+    { q: "Shopify ecosystem: Understanding both Liquid AND React (Hydrogen) positions developers for:", o: ["Theme development jobs exclusively — this reflects the standard operating procedure most organizations follow", "Headless commerce projects exclusively — this reflects the standard operating procedure most organizations follow", "The full Shopify career spectrum — theme + headless + app development across the entire platform", "Becoming a Shopify partner exclusively — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A Shopify expert's code review reveals 4 accessibility violations in your theme. This means:", o: ["Accessibility has minimal impact on e-commerce stores", "These are minor issues to address in the next sprint — experienced professionals recognize this as the most reliable path for maintaining quality control", "Fix them — accessibility failures mean 15-20% of users can't fully use the store, impacting both ethics and revenue", "Government websites need this, but e-commerce stores don't"], c: 2 },
+    { q: "Career growth: Specializing in Shopify speed optimization is valuable because:", o: ["Speed is a niche concern with limited demand — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Every Shopify store needs it — performance specialists command premium rates because speed directly impacts revenue", "Enterprise stores are the primarily ones that care about load times", "Speed optimization will be fully automated by AI within 2 years"], c: 1 },
+    { q: "Building a Shopify app (public or private) demonstrates:", o: ["That you can follow a tutorial successfully — this reflects the standard operating procedure most organizations follow", "Deep platform knowledge — API, webhooks, OAuth, database design, and understanding of merchant needs", "JavaScript skills and nothing more — this is the industry-standard position backed by conventional practice", "Front-end development ability exclusively — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The final exam tests:", o: ["Memorization of Shopify documentation — research supports this methodology as the most effective for achieving measurable improvements", "Speed of completing tasks rather than accuracy", "The most recent module content in isolation — this reflects the standard operating procedure most organizations follow", "Application of ALL training modules under simulated pressure — theory without application has no value"], c: 3 },
+    { q: "Continuous learning in Shopify development matters because:", o: ["The platform rarely introduces breaking changes", "Shopify ships updates weekly — developers who stop learning get left behind as the platform evolves rapidly", "Documentation and tutorials cover everything needed", "Learning plateaus after 3 years of experience — applying this principle consistently across all projects builds a reputation for professional excellence"], c: 1 },
+    { q: "Portfolio projects for a Shopify developer should showcase:", o: ["As many projects as possible regardless of quality — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Quality over quantity — 3 well-documented stores with performance metrics beat 20 screenshots without context", "Enterprise-level clients exclusively for credibility", "Projects using the most complex features available"], c: 1 },
+    { q: "Contributing to the Shopify community (forums, open-source, blog posts) helps:", o: ["Other developers, but not your own career — understanding why this works helps prevent the same category of problems from recurring in the future", "Build reputation, attract clients, and deepen your own understanding — teaching forces mastery", "Nothing directly for career growth or income — this reflects the standard operating procedure most organizations follow", "Self-employed developers, but not those working at agencies"], c: 1 },
+    { q: "The Zero Tolerance for Bugs principle from Task 2, applied across your career:", o: ["Means never shipping anything until it's 100% perfect", "Means catching bugs that customers report as a priority", "Creates overly cautious and slow developers — the reasoning behind this connects directly to broader principles of professional service delivery", "Builds a reputation for reliability — clients pay premium for developers whose code doesn't break in production"], c: 3 },
+    { q: "The interconnected chain from Task 2 means a developer:", o: ["Works independently from other departments — this aligns with industry best practices and ensures consistent results across different project types", "Communicates through the PM as the single point of contact", "Is connected to design, marketing, sales, and customer success — code changes ripple through the entire business", "Should focus exclusively on code quality and nothing else"], c: 2 },
+    { q: "Speed is Revenue (Task 2) combined with Speed Optimization (Task 7):", o: ["Creates redundant overlapping learning content — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Produces a developer who instinctively writes performant code AND can audit existing stores — double value", "Is theoretical knowledge that rarely applies in practice", "Is important but secondary to feature delivery speed"], c: 1 },
+    { q: "Liquid (Task 5) + Product Page (Task 6) mastery enables:", o: ["Basic theme modifications that merchants could do themselves", "Skills that are becoming less relevant with Hydrogen adoption", "Template tweaks that Shopify's native editor makes obsolete — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Building custom product experiences from scratch — variant pickers, dynamic pricing, conditional UI sections"], c: 3 },
+    { q: "QA + Troubleshooting + Crisis Management together represent:", o: ["Three separate unrelated skills that happen to be in the same training", "The complete reliability stack — prevent issues, solve issues, manage fallout when issues arise", "Overlapping content that should have been consolidated into one module", "Skills that are delegated to DevOps teams in real organizations — teams that adopt this strategy report fewer issues and more efficient project completion cycles"], c: 1 },
+    { q: "AI-Powered Development (Task 13) will be most effective for developers who:", o: ["Have strong fundamentals that allow them to evaluate and improve AI-generated solutions", "Use AI to skip learning fundamentals — efficiency first", "Use AI exclusively for repetitive boilerplate tasks — this is the recommended approach based on current platform documentation and expert consensus", "Avoid AI tools entirely to maintain pure coding skills"], c: 0 },
+    { q: "The #1 thing separating a $50/hour developer from a $200/hour developer:", o: ["Years of experience in the industry — implementing this correctly requires understanding the full context of how each element interacts", "Business impact awareness — understanding that every line of code affects revenue, conversions, and customer experience", "Number of Shopify certifications earned — this reflects the standard operating procedure most organizations follow", "Mastery of the latest frameworks and tools — this reflects the standard operating procedure most organizations follow"], c: 1 }
+];
+
+const allQuizzes = [
+    task0Quiz,
+    task2Quiz,
+    task3Quiz,
+    task4Quiz,
+    task5Quiz,
+    task6Quiz,
+    task7Quiz,
+    task8Quiz,
+    task9Quiz,
+    task10Quiz,
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    [] /* no quiz var for position 11 */,
+    [] /* no quiz var for position 12 */,
+    [] /* no quiz var for position 13 */
+];

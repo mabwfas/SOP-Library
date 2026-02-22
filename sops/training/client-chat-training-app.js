@@ -107,7 +107,7 @@ function openTask(index) {
 
     // Content First (Task 1 only)
     if (task.contentFirst && index === 0) {
-        html += task1Content;
+        html += (typeof task0Content !== 'undefined') ? task0Content : '';
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (10/10 Required)</button>
@@ -117,7 +117,7 @@ function openTask(index) {
     } else {
         // Use full content from data file if available, otherwise show placeholder
         const taskContentVars = {};
-        for (let i = 2; i <= trainingTasks.length; i++) {
+        for (let i = 0; i <= trainingTasks.length + 1; i++) {
             taskContentVars[i] = window['task' + i + 'Content'] || null;
         }
 
@@ -128,7 +128,7 @@ function openTask(index) {
             html += fullContent;
             html += `
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
+                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === trainingTasks.length - 1 ? '20/20' : '10/10'} Required)</button>
                     
                 </div>
             `;
@@ -143,7 +143,7 @@ function openTask(index) {
                     </div>
                 </div>
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${index === 9 ? '20/20' : '10/10'} Required)</button>
+                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${index === trainingTasks.length - 1 ? '20/20' : '10/10'} Required)</button>
                     
                 </div>
             `;

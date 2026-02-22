@@ -1,19 +1,240 @@
 // Finance Training - SALES-LEVEL DEPTH ENHANCED
 
 const trainingTasks = [
-    { id: 1, title: "Finance Mindset", description: "Money is Business Oxygen", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "💰 Why finance matters", "📖 Read finance-sop.html"] },
-    { id: 2, title: "Invoicing Excellence", description: "Get Paid On Time", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Invoice best practices", "📖 Study invoice templates"] },
-    { id: 3, title: "Expense Management", description: "Track Every Rupee", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📊 Expense categories", "📖 Study expense protocols"] },
-    { id: 4, title: "Cash Flow", description: "Timing is Everything", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "💵 Cash flow management", "📖 Study cash flow reports"] },
-    { id: 5, title: "Payroll Basics", description: "Pay People Right", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "👥 Payroll processing", "📖 Study payroll checklist"] },
-    { id: 6, title: "Tax Compliance", description: "GST & TDS", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📑 Tax requirements", "📖 Study compliance calendar"] },
-    { id: 7, title: "Financial Reports", description: "P&L, Balance Sheet", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📈 Key reports", "📖 Study report templates"] },
-    { id: 8, title: "Budgeting", description: "Plan Spend Wisely", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🎯 Budget creation", "📖 Study budget templates"] },
-    { id: 9, title: "Vendor Management", description: "Pay & Negotiate", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "🤝 Vendor relations", "📖 Study payment terms"] },
-    { id: 10, title: "Final Certification", description: "Finance Mastery", contentFirst: false, studyGuide: ["⏱️ Time: 60 min", "📝 30 Questions"] }
+    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
+    { id: 2, title: "Finance Mindset", description: "Money is Business Oxygen", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "💰 Why finance matters", "📖 Read finance-sop.html"] },
+    { id: 3, title: "Invoicing Excellence", description: "Get Paid On Time", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Invoice best practices", "📖 Study invoice templates"] },
+    { id: 4, title: "Expense Management", description: "Track Every Rupee", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📊 Expense categories", "📖 Study expense protocols"] },
+    { id: 5, title: "Cash Flow", description: "Timing is Everything", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "💵 Cash flow management", "📖 Study cash flow reports"] },
+    { id: 6, title: "Payroll Basics", description: "Pay People Right", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "👥 Payroll processing", "📖 Study payroll checklist"] },
+    { id: 7, title: "Tax Compliance", description: "GST & TDS", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📑 Tax requirements", "📖 Study compliance calendar"] },
+    { id: 8, title: "Financial Reports", description: "P&L, Balance Sheet", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📈 Key reports", "📖 Study report templates"] },
+    { id: 9, title: "Budgeting", description: "Plan Spend Wisely", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🎯 Budget creation", "📖 Study budget templates"] },
+    { id: 10, title: "Vendor Management", description: "Pay & Negotiate", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "🤝 Vendor relations", "📖 Study payment terms"] },
+    { id: 11, title: "Final Certification", description: "Finance Mastery", contentFirst: false, studyGuide: ["⏱️ Time: 60 min", "📝 30 Questions"] }
 ];
 
-const task1Content = `
+
+const task0Content = `
+<h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes</h3>
+    <p>You're now part of something bigger than just a job. We are building the <strong>world's best digital agency</strong>. This isn't a typical company—we have high standards because we're building something exceptional. <strong>DISCIPLINE IS YOUR GREATEST INVESTMENT.</strong></p>
+    
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 Our Mission: Point A → Point B</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Milestone</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Revenue Target</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A (Now)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹9.2 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2025 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹15-20 Crores</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2026 Goal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">₹40 Crores</td></tr>
+            <tr style="background: rgba(59, 130, 246, 0.2);"><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B (2027)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹75 Crores</strong></td></tr>
+        </table>
+        <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits through our <strong>equity-sharing model—even interns from Day 1</strong>.</p>
+    </div>
+</div>
+
+<!-- MANIFESTO -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">⚡ The Digital Heroes Manifesto</h3>
+    <ul>
+        <li><strong>Talent is Irrelevant. Volume is Everything.</strong> — We don't care about your degree. We care about your OUTPUT. Need skills? Put in 100 hours learning. Need more? Put in 500.</li>
+        <li><strong>Emotional Intelligence > IQ</strong> — How do you respond under pressure? That's your real test. People with high EQ build real relationships and lead.</li>
+        <li><strong>Instant Reply = Respect</strong> — When you respond quickly, you're saying: "I respect you, I'm reliable, I care."</li>
+        <li><strong>Protect Your Mindset</strong> — Stop thinking negative thoughts. Build character that helps your growth.</li>
+        <li><strong>Clients are Opportunities</strong> — Approach every client like you're personally invested in their success.</li>
+        <li><strong>The 80/20 Principle</strong> — 80% of your time: Productive work. 20%: Everything else.</li>
+        <li><strong>Work = Highest Priority</strong> — Real satisfaction comes from BUILDING something that matters.</li>
+    </ul>
+</div>
+
+<!-- CORE VALUES -->
+<div class="content-section">
+    <h3>⭐ Core Values: The Digital Heroes Way</h3>
+    <ul>
+        <li>⚡ <strong>Work Fast, Work Smart</strong> — Speed without quality is recklessness. Quality without speed is inefficiency.</li>
+        <li>💬 <strong>Communicate Clearly</strong> — Ambiguity is the enemy. Ask clarifying questions. Confirm understanding. Never leave people guessing.</li>
+        <li>💡 <strong>Share Ideas</strong> — Your insights matter. If you see a better way, speak up.</li>
+        <li>🤝 <strong>Help Your Teammates</strong> — We are allies. We win together or we don't win at all.</li>
+        <li>🌟 <strong>Be Useful Beyond Tasks</strong> — Your attitude, proactive problem-solving, and contribution to team culture matter.</li>
+        <li>🚫 <strong>Zero Politics</strong> — Problems go to HR or Delhi Team only. We foster positivity.</li>
+    </ul>
+</div>
+
+<!-- INTERCONNECTED CHAIN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔗 The Interconnected Chain</h3>
+    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is equally critical:</p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p style="margin: 0;">
+            <strong style="color: #FBBF24;">Sales</strong> → generates enquiries → <strong style="color: #60A5FA;">Development</strong> → delivers quality → <strong style="color: #F472B6;">Client Satisfaction</strong> → drives reviews → <strong style="color: #A78BFA;">Better Positioning</strong> → more enquiries → 🔄 Cycle continues
+        </p>
+    </div>
+    <p style="color: #F87171; font-weight: 600;">⚠️ If any single link breaks, the entire system is affected. No department is bigger than the process. No one grows alone here.</p>
+</div>
+
+<!-- CRITICAL RULES -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 CRITICAL RULES — Zero Tolerance (No Warnings, No Second Chances)</h3>
+    <ol>
+        <li><strong>Ignoring Management Messages</strong> = <span style="color: #EF4444;">IMMEDIATE TERMINATION</span>. This is the #1 termination reason.</li>
+        <li><strong>Data Breach</strong> — Sharing client info, source code, or passwords outside company = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+        <li><strong>Moonlighting</strong> — Working for competitors, taking freelance projects while employed = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Harassment</strong> — Verbal, sexual, or online bullying. One proven incident = <span style="color: #EF4444;">Out</span>.</li>
+        <li><strong>Poor Communication (3 Strikes)</strong> — Rude to client / Lying / Late responses. 1st: ₹500 Penalty → 2nd: ₹1000 → 3rd: Termination.</li>
+        <li><strong>Substance Abuse</strong> — Coming to work under influence = <span style="color: #EF4444;">Termination</span>.</li>
+        <li><strong>Conspiracy & Negativity</strong> — Problems regarding any person must be shared ONLY with HR or Delhi Team. Conspiring = <span style="color: #EF4444;">Termination + Legal Action</span>.</li>
+    </ol>
+</div>
+
+<!-- TEAM HIERARCHY -->
+<div class="content-section">
+    <h3>👥 Team Structure & Hierarchy</h3>
+    <p><strong>Supreme Authority:</strong> The Delhi Team represents the highest level of command. Their decisions override ALL other instructions.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Level</th><th style="padding: 10px; text-align: left;">Role</th><th style="padding: 10px; text-align: left;">Key Persons</th></tr>
+        <tr><td style="padding: 8px;">Level 1 (Top)</td><td style="padding: 8px;">CEO / Leadership</td><td style="padding: 8px;">Prasun Anand (CEO - Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Operations Head</td><td style="padding: 8px;">Anurag Singh (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 2</td><td style="padding: 8px;">Managing Director (Lucknow)</td><td style="padding: 8px;">Shreyansh</td></tr>
+        <tr><td style="padding: 8px;">Level 3</td><td style="padding: 8px;">General Manager</td><td style="padding: 8px;">Parth Srivastav (Delhi Team)</td></tr>
+        <tr><td style="padding: 8px;">Level 4</td><td style="padding: 8px;">HR & Project Managers</td><td style="padding: 8px;">Stuti/Agrima (HR), Navya Singh (Shopify PM)</td></tr>
+        <tr><td style="padding: 8px;">Level 5</td><td style="padding: 8px;">Team Leads / Senior Devs</td><td style="padding: 8px;">Mahira (Lead), Divyansh Singh</td></tr>
+        <tr><td style="padding: 8px;">Level 6</td><td style="padding: 8px;">Execution Teams</td><td style="padding: 8px;">Developers, Designers, QA, Sales, CS</td></tr>
+    </table>
+</div>
+
+<!-- HOURS & ATTENDANCE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⏰ Working Hours & Attendance</h3>
+    <ul>
+        <li><strong>Lucknow Team:</strong> 9:00 AM – 6:00 PM (Morning Shift)</li>
+        <li><strong>Delhi Team:</strong> Night Shift (Handling Foreign Clients)</li>
+        <li><strong>Sunday:</strong> Off | <strong>Lunch:</strong> 1:00 PM – 2:00 PM</li>
+        <li><strong>Fiverr/Sales Team Window:</strong> 9:00 AM – 9:00 PM (flexible shifts)</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ The 9:15 Rule:</strong> Arrive after 9:15 AM = <strong>Half-day salary deduction</strong>. Late arrivals: 3x = Verbal Warning → 5x = Written Warning → 7+ = Termination Review.
+    </div>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Unexplained Absence</strong> (not informing by 9:00 AM): 1st = Written Warning → 3rd = 3 Days Salary Deduction → 5th = Termination.
+    </div>
+</div>
+
+<!-- LEAVE POLICY -->
+<div class="content-section">
+    <h3>🏖️ Leave Policy</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Type</th><th style="padding: 10px; text-align: left;">Days/Year</th><th style="padding: 10px; text-align: left;">Notes</th></tr>
+        <tr><td style="padding: 8px;">Casual Leave (CL)</td><td style="padding: 8px;">12</td><td style="padding: 8px;">Personal use. Max 2/month.</td></tr>
+        <tr><td style="padding: 8px;">Sick Leave (SL)</td><td style="padding: 8px;">6</td><td style="padding: 8px;">Medical use. Certificate for 2+ days.</td></tr>
+        <tr><td style="padding: 8px;">Earned Leave (EL)</td><td style="padding: 8px;">15</td><td style="padding: 8px;">After 1 year only.</td></tr>
+        <tr><td style="padding: 8px;">Holidays</td><td style="padding: 8px;">~10</td><td style="padding: 8px;">Standard National Holidays.</td></tr>
+    </table>
+    <p><strong>Restrictions:</strong></p>
+    <ul>
+        <li>❌ No leave in first 2 months (Probation) unless emergency.</li>
+        <li>❌ No leave during month-end (25th–5th) billing cycle.</li>
+        <li>❌ Max 2 CL per month (unless approved by Senior Management).</li>
+    </ul>
+    <p><strong>How to Apply:</strong> Post in <strong>#ask-hr</strong> or message Manager min <strong>3 days in advance</strong>. Include: Name, Dates, Reason, and who is covering your work.</p>
+</div>
+
+<!-- SALARY & GROWTH -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💰 Salary, Growth & Compensation</h3>
+    <ul>
+        <li><strong>Payment Date:</strong> Before 10th of the following month.</li>
+        <li><strong>Cycle:</strong> 1st to End of Month.</li>
+        <li>🚨 <strong>Confidentiality:</strong> Discussing salary with colleagues = <span style="color: #EF4444;">Immediate Termination</span>.</li>
+    </ul>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">KPI Score</th><th style="padding: 10px; text-align: left;">Outcome</th></tr>
+        <tr><td style="padding: 8px;">90-100% (Exceptional)</td><td style="padding: 8px;">15-20% Increment + Bonus</td></tr>
+        <tr><td style="padding: 8px;">75-89% (Exceeds)</td><td style="padding: 8px;">10-15% Increment</td></tr>
+        <tr><td style="padding: 8px;">60-74% (Meets)</td><td style="padding: 8px;">5-10% Increment</td></tr>
+        <tr><td style="padding: 8px;">&lt;60% (Needs Improvement)</td><td style="padding: 8px;">No Increment + PIP</td></tr>
+    </table>
+    <p><strong>Advance Salary:</strong> Available after 3 months. Max 50% of salary. Recovered in 2 installments. Genuine emergencies only.</p>
+    <p><strong>Growth Formula:</strong> Employee Growth = Company Growth × (Will + Efforts). Income = Happy Clients × Skill × Speed.</p>
+</div>
+
+<!-- COMMUNICATION RULES -->
+<div class="content-section">
+    <h3>💬 Communication Protocol</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Who</th><th style="padding: 10px; text-align: left;">Response Time</th></tr>
+        <tr><td style="padding: 8px;">Clients</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Manager</td><td style="padding: 8px;">&lt; 1 Hour</td></tr>
+        <tr><td style="padding: 8px;">Team</td><td style="padding: 8px;">&lt; 2 Hours</td></tr>
+        <tr><td style="padding: 8px;">Emergency</td><td style="padding: 8px;">&lt; 15 Minutes</td></tr>
+    </table>
+    <p><strong>Channels:</strong> Official: Discord/Email. Team: WhatsApp. Clients: Fiverr/Platform. Personal issues → DM. Work questions → Group chat (so everyone learns).</p>
+    <p><strong>Specificity Rule:</strong> Always provide ETAs. Never say "I'll be late" — say "I will be 15 mins late. ETA 9:45 AM." Never say "Okay" — say "Got it. Task A: ETA 2 PM. Task B: ETA 5 PM."</p>
+</div>
+
+<!-- WFH POLICY -->
+<div class="content-section">
+    <h3>🏠 Work From Home Policy</h3>
+    <p><strong>WFH is a PRIVILEGE, Not a Right.</strong></p>
+    <ul>
+        <li>Max 2 days/week. Non-consecutive.</li>
+        <li>Manager can revoke instantly if productivity drops.</li>
+        <li>Requirements: Probation completed (3 months), High speed internet (10+ Mbps), Respond within 30 mins, Camera ON for all meetings.</li>
+    </ul>
+</div>
+
+<!-- CULTURE & PERKS -->
+<div class="content-section">
+    <h3>🎉 Culture, Perks & Exit Process</h3>
+    <ul>
+        <li>🏔️ <strong>Offsite Trips</strong> — Twice a year, company-paid (travel, stay, food).</li>
+        <li>🎬 <strong>Outing Budget</strong> — ₹500-1000/month per person for team activities.</li>
+        <li>🎂 <strong>Birthdays</strong> — Half-day, Cake, and Celebration.</li>
+        <li>🤝 <strong>Buddy System</strong> — New joiners get a Buddy for 2 weeks.</li>
+        <li>📚 <strong>Growth</strong> — 4 hrs/week learning hours. Course reimbursement up to ₹5k/yr.</li>
+    </ul>
+    <h4>Exit Process</h4>
+    <ul>
+        <li><strong>Notice Period:</strong> Probation = 7 Days. Confirmed = 30 Days.</li>
+        <li><strong>Process:</strong> Written resignation → Handover → Exit Interview → Return Assets → F&F within 30 days.</li>
+        <li><strong>Email:</strong> hr@digitalheroes.co.in</li>
+        <li>Experience Certificate: Provided for good standing exits only.</li>
+    </ul>
+</div>
+
+<!-- SOP OBSESSION -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📑 The SOP Obsession</h3>
+    <p><strong>What is an SOP?</strong> Standard Operating Procedure. Here, it's not just a guideline—it is the <strong>Law</strong>. It is the best known way to do a task perfectly.</p>
+    <ul>
+        <li><strong>Why use it?</strong> It removes guessing. It guarantees speed, quality, and consistency. It protects you from mistakes.</li>
+        <li><strong>Your Duty:</strong> You MUST follow your Role's SOP + the Daily SOP every day.</li>
+        <li><strong>Evolve It:</strong> SOPs are not static. Found a better way? Suggest an improvement.</li>
+    </ul>
+</div>
+
+<!-- KEY FAQS -->
+<div class="content-section">
+    <h3>❓ Key Employee FAQs</h3>
+    <ul>
+        <li><strong>Is training period paid?</strong> No. Training Completion Certificate provided after finishing.</li>
+        <li><strong>Is EOD report mandatory?</strong> Yes. Submit EOD + time tracking on Discord daily. Failure = marked absent.</li>
+        <li><strong>Can I take freelance projects?</strong> No. Conflict of interest.</li>
+        <li><strong>Is confidentiality mandatory?</strong> Yes. Client data, strategies, internal info. Breach = termination.</li>
+        <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
+        <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
+        <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
+        <li><strong>Sales incentives?</strong> 5% of sales exceeding USD 5,000/month.</li>
+        <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
+    </ul>
+</div>
+`;
+
+const task2Content = `
 <h2>📚 PART 1: THE FINANCE FOUNDATION</h2>
 
 <!-- WELCOME TO DIGITAL HEROES -->
@@ -339,7 +560,7 @@ const task1Content = `
 </div>
 `;
 
-const task2Content = `
+const task3Content = `
 <h2>📚 TASK 2: INVOICING EXCELLENCE</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
@@ -587,7 +808,7 @@ const task2Content = `
 </div>
 `;
 
-const task3Content = `
+const task4Content = `
 <h2>📚 TASK 3: EXPENSE MANAGEMENT</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
@@ -765,7 +986,7 @@ const task3Content = `
 </div>
 `;
 
-const task4Content = `
+const task5Content = `
 <h2>📚 TASK 4: CASH FLOW MANAGEMENT</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
@@ -953,7 +1174,7 @@ const task4Content = `
 </div>
 `;
 
-const task5Content = `
+const task6Content = `
 <h2>📚 TASK 5: PAYROLL MASTERY</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(109, 40, 217, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
@@ -1166,7 +1387,7 @@ const task5Content = `
 </div>
 `;
 
-const task6Content = `
+const task7Content = `
 <h2>📚 TASK 6: TAX COMPLIANCE MASTERY</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(185, 28, 28, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); padding: 25px; border-radius: 12px; margin-bottom: 25px;">
@@ -1330,7 +1551,7 @@ const task6Content = `
 </div>
 `;
 
-const task7Content = `<h2>📚 TASK 7: FINANCIAL REPORTS</h2>
+const task8Content = `<h2>📚 TASK 7: FINANCIAL REPORTS</h2>
 <div class="content-section">
     <h3>📈 Key Reports</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
@@ -1345,7 +1566,7 @@ const task7Content = `<h2>📚 TASK 7: FINANCIAL REPORTS</h2>
     </table>
 </div>`;
 
-const task8Content = `<h2>📚 TASK 8: BUDGETING</h2>
+const task9Content = `<h2>📚 TASK 8: BUDGETING</h2>
 <div class="content-section">
     <h3>🎯 Budget Creation</h3>
     <ol>
@@ -1360,7 +1581,7 @@ const task8Content = `<h2>📚 TASK 8: BUDGETING</h2>
     </div>
 </div>`;
 
-const task9Content = `<h2>📚 TASK 9: VENDOR MANAGEMENT</h2>
+const task10Content = `<h2>📚 TASK 9: VENDOR MANAGEMENT</h2>
 <div class="content-section">
     <h3>🤝 Payment Terms</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
@@ -1374,7 +1595,7 @@ const task9Content = `<h2>📚 TASK 9: VENDOR MANAGEMENT</h2>
     </table>
 </div>`;
 
-const task10Content = `<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
+const task11Content = `<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
 <div class="content-section">
     <h3>🎓 Requirements</h3>
     <ul>
@@ -1385,176 +1606,204 @@ const task10Content = `<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
 </div>`;
 
 const quizQuestions = [
-    { question: "A company is profitable but can't pay salaries. This is likely a:", options: ["Revenue problem", "Cash flow timing problem", "Marketing problem", "Hiring problem"], correct: 1 },
-    { question: "82% of businesses fail due to:", options: ["Bad products", "Poor marketing", "Cash flow problems", "Competitor pressure"], correct: 2 },
+    { question: "A company is profitable but can't pay salaries. This is likely a:", options: ["Revenue problem", "Hiring problem", "Marketing problem", "Cash flow timing problem"], correct: 3 },
+    { question: "82% of businesses fail due to:", options: ["Cash flow problems", "Poor marketing", "Bad products", "Competitor pressure"], correct: 0 },
     { question: "Invoice sent 2 weeks after project completion - likely outcome:", options: ["Client pays faster out of guilt", "Delayed payment or forgotten", "No difference in payment timing", "Client appreciates the flexibility"], correct: 1 },
-    { question: "Net Profit Margin of 8% for a service business is:", options: ["Excellent - above target", "Below target - needs improvement to >15%", "Industry standard", "Dangerously low"], correct: 1 },
-    { question: "Client owes ₹5 lakhs. DSO of 45 days means:", options: ["They're paying ahead of schedule", "They're paying slower than 30-day target", "They need a discount", "Payment is overdue for legal action"], correct: 1 },
-    { question: "A Mumbai client buys from a Delhi vendor. GST applied is:", options: ["CGST + SGST (split between states)", "IGST (single tax to central)", "No GST applies to inter-state", "Client chooses which tax"], correct: 1 },
+    { question: "Net Profit Margin of 8% for a service business is:", options: ["Excellent - above target", "Industry standard", "Below target - needs improvement to >15%", "Dangerously low"], correct: 2 },
+    { question: "Client owes ₹5 lakhs. DSO of 45 days means:", options: ["They're paying ahead of schedule", "Payment is overdue for legal action", "They need a discount", "They're paying slower than 30-day target"], correct: 3 },
+    { question: "A Mumbai client buys from a Delhi vendor. GST applied is:", options: ["IGST (single tax to central)", "CGST + SGST (split between states)", "No GST applies to inter-state", "Client chooses which tax"], correct: 0 },
     { question: "₹50,000 paid to a freelancer. TDS to deduct at 10% is:", options: ["₹500", "₹5,000", "₹10,000", "No TDS on freelancers"], correct: 1 },
-    { question: "TDS deducted in January must be deposited by:", options: ["January 31st", "February 7th", "March 31st", "April 15th"], correct: 1 },
-    { question: "Monthly burn rate ₹10 lakhs, bank balance ₹45 lakhs. Cash runway is:", options: ["Dangerously low at 4.5 months", "Above 3-month target but monitor", "Excellent position", "Need immediate funding"], correct: 1 },
-    { question: "'Net 30' payment terms mean:", options: ["30% upfront payment required", "Full payment due within 30 days", "30-day money back guarantee", "Payment in 30 installments"], correct: 1 },
-    { question: "P&L shows ₹50L revenue, ₹35L expenses. Net profit is:", options: ["₹50 lakhs", "₹35 lakhs", "₹15 lakhs", "₹85 lakhs"], correct: 2 },
+    { question: "TDS deducted in January must be deposited by:", options: ["January 31st", "March 31st", "February 7th", "April 15th"], correct: 2 },
+    { question: "Monthly burn rate ₹10 lakhs, bank balance ₹45 lakhs. Cash runway is:", options: ["Dangerously low at 4.5 months", "Need immediate funding", "Excellent position", "Above 3-month target but monitor"], correct: 3 },
+    { question: "'Net 30' payment terms mean:", options: ["Full payment due within 30 days", "30% upfront payment required", "30-day money back guarantee", "Payment in 30 installments"], correct: 0 },
+    { question: "P&L shows ₹50L revenue, ₹35L expenses. Net profit is:", options: ["₹50 lakhs", "₹15 lakhs", "₹35 lakhs", "₹85 lakhs"], correct: 1 },
     { question: "Cash flow should be reviewed:", options: ["Only during tax season", "Annually during audit", "Weekly for active management", "When problems arise"], correct: 2 },
-    { question: "Budget shows 10% buffer. Actual spend hits 95% of budget. This means:", options: ["Critical overspend warning", "Within acceptable range using buffer", "Need to cut all expenses", "Budget was set too high"], correct: 1 },
-    { question: "Invoice missing GST number but has correct amount. This is:", options: ["Acceptable for small amounts", "Non-compliant - client can't claim input credit", "Only a problem for exports", "Fine if client doesn't ask"], correct: 1 },
+    { question: "Budget shows 10% buffer. Actual spend hits 95% of budget. This means:", options: ["Critical overspend warning", "Budget was set too high", "Need to cut all expenses", "Within acceptable range using buffer"], correct: 3 },
+    { question: "Invoice missing GST number but has correct amount. This is:", options: ["Non-compliant - client can't claim input credit", "Acceptable for small amounts", "Only a problem for exports", "Fine if client doesn't ask"], correct: 0 },
     { question: "Gross Profit 60%, Net Profit 10%. Operating expenses are:", options: ["10% of revenue", "50% of revenue", "60% of revenue", "Impossible to calculate"], correct: 1 },
     { question: "IGST collected from inter-state sale goes to:", options: ["Only seller's state", "Only buyer's state", "Central government (redistributed)", "Split 50-50 between states"], correct: 2 },
-    { question: "50/30/20 budget rule allocates 50% to:", options: ["Growth initiatives", "Operations and salaries", "Emergency reserves", "Tax payments"], correct: 1 },
-    { question: "Office rent is classified as:", options: ["Variable expense (changes monthly)", "Fixed expense (predictable)", "Growth investment", "One-time cost"], correct: 1 },
-    { question: "Assets = Liabilities + ___:", options: ["Revenue", "Expenses", "Equity", "Profit"], correct: 2 },
-    { question: "GSTR-3B filing deadline is typically:", options: ["7th of next month", "20th of next month", "End of quarter", "End of financial year"], correct: 1 },
-    { question: "Employee PF deducted but not deposited by employer is:", options: ["Acceptable if done eventually", "Illegal - employer obligations", "Only a problem if employee complains", "Standard practice for cash flow"], correct: 1 },
-    { question: "'2/10 Net 30' means pay within 10 days for:", options: ["10% discount", "2% discount", "Free shipping", "Extended warranty"], correct: 1 },
+    { question: "50/30/20 budget rule allocates 50% to:", options: ["Growth initiatives", "Tax payments", "Emergency reserves", "Operations and salaries"], correct: 3 },
+    { question: "Office rent is classified as:", options: ["Fixed expense (predictable)", "Variable expense (changes monthly)", "Growth investment", "One-time cost"], correct: 0 },
+    { question: "Assets = Liabilities + ___:", options: ["Revenue", "Equity", "Expenses", "Profit"], correct: 1 },
+    { question: "GSTR-3B filing deadline is typically:", options: ["7th of next month", "End of quarter", "20th of next month", "End of financial year"], correct: 2 },
+    { question: "Employee PF deducted but not deposited by employer is:", options: ["Acceptable if done eventually", "Standard practice for cash flow", "Only a problem if employee complains", "Illegal - employer obligations"], correct: 3 },
+    { question: "'2/10 Net 30' means pay within 10 days for:", options: ["2% discount", "10% discount", "Free shipping", "Extended warranty"], correct: 0 },
     { question: "Positive cash flow but negative profit indicates:", options: ["Healthy business growth", "Selling assets or collecting receivables", "Normal operations", "Accounting error"], correct: 1 },
-    { question: "Client pays 60 days late consistently. Best action:", options: ["Accept it silently", "Require upfront payment or deposits", "Refuse future work", "Sue immediately"], correct: 1 },
-    { question: "Expense ₹500 with no receipt can be:", options: ["Claimed in full with no issue", "Problematic for tax compliance and audit", "Only an issue above ₹5,000", "Claimed if manager approves verbally"], correct: 1 },
-    { question: "Negative cash flow for 3 months straight means:", options: ["Normal business cycle", "Business is burning cash reserves", "Time to celebrate growth", "Accounting needs audit"], correct: 1 },
+    { question: "Client pays 60 days late consistently. Best action:", options: ["Accept it silently", "Refuse future work", "Require upfront payment or deposits", "Sue immediately"], correct: 2 },
+    { question: "Expense ₹500 with no receipt can be:", options: ["Claimed in full with no issue", "Claimed if manager approves verbally", "Only an issue above ₹5,000", "Problematic for tax compliance and audit"], correct: 3 },
+    { question: "Negative cash flow for 3 months straight means:", options: ["Business is burning cash reserves", "Normal business cycle", "Time to celebrate growth", "Accounting needs audit"], correct: 0 },
     { question: "HRA is:", options: ["Holiday Relief Amount", "House Rent Allowance in salary", "Health Risk Assessment", "Human Resource Audit"], correct: 1 },
-    { question: "Google Ads spending is classified as:", options: ["Fixed expense", "Variable expense", "Capital expenditure", "Liability"], correct: 1 },
-    { question: "Client consistently pays 15 days late. This is a:", options: ["Cash flow helper", "Cash flow killer", "Non-issue if profitable", "Marketing problem"], correct: 1 },
-    { question: "Finance team's role in growth is:", options: ["Cost center to minimize", "Growth enabler through smart allocation", "Only for compliance", "Optional overhead"], correct: 1 }
+    { question: "Google Ads spending is classified as:", options: ["Fixed expense", "Capital expenditure", "Variable expense", "Liability"], correct: 2 },
+    { question: "Client consistently pays 15 days late. This is a:", options: ["Cash flow helper", "Marketing problem", "Non-issue if profitable", "Cash flow killer"], correct: 3 },
+    { question: "Finance team's role in growth is:", options: ["Growth enabler through smart allocation", "Cost center to minimize", "Only for compliance", "Optional overhead"], correct: 0 }
 ];
 
 // =============================================================================
 // QUIZ QUESTIONS FOR EACH TASK
 // =============================================================================
 
-const task1Quiz = [
-    { q: "What is the core mindset for this role?", o: ["Just complete tasks", "Revenue-focused excellence", "Speed only", "Minimum effort"], c: 1 },
-    { q: "Digital Heroes standard is:", o: ["Basic quality", "Premium quality only", "Cheap and fast", "Average"], c: 1 },
-    { q: "Client satisfaction is:", o: ["Optional", "Our primary goal", "Secondary", "Not important"], c: 1 },
-    { q: "Quality vs Speed priority:", o: ["Speed always", "Quality with efficiency", "Neither", "Random"], c: 1 },
-    { q: "Continuous learning is:", o: ["Optional", "Essential for growth", "Wasted time", "Not needed"], c: 1 },
-    { q: "Team collaboration means:", o: ["Work alone", "Share knowledge and support", "Compete only", "Ignore others"], c: 1 },
-    { q: "Taking ownership means:", o: ["Blame others", "Be responsible for outcomes", "Avoid responsibility", "Wait for instructions"], c: 1 },
-    { q: "Professional communication is:", o: ["Casual", "Clear, timely, and respectful", "Optional", "Slow"], c: 1 },
-    { q: "Handling mistakes correctly:", o: ["Hide them", "Acknowledge and fix quickly", "Blame system", "Ignore"], c: 1 },
-    { q: "Growth at Digital Heroes:", o: ["Limited", "Based on performance and initiative", "Random", "Impossible"], c: 1 }
+
+const task0Quiz = [
+    { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According to the handbook, what should you do?", o: ["Politely decline — discussing salary with colleagues leads to immediate termination", "Share it openly — transparency builds trust", "Share primarily with close friends on the team", "Tell them a lower number to avoid jealousy — this is the recommended approach based on current platform documentation and expert consensus"], c: 0 },
+    { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is the immediate consequence?", o: ["Verbal warning for the first time", "No consequence if it's less than 30 minutes late", "Written warning recorded in your file", "Half-day salary deduction"], c: 3 },
+    { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹15-20 Crores", "₹40 Crores", "₹75 Crores", "₹100 Crores"], c: 2 },
+    { q: "A team member is spreading negative talk about a colleague. According to the handbook's zero-tolerance policy, the correct action is:", o: ["Confront them directly and resolve it yourself", "Ignore it — it's not your problem — this is the industry-standard position backed by conventional practice", "Discuss it in the team group chat so everyone knows", "Report it only to HR or Delhi Team — conspiracy leads to termination + legal action"], c: 3 },
+    { q: "You want to apply for casual leave next week. What is the correct procedure?", o: ["Send a WhatsApp to HR on the morning of the leave", "Tell your teammate to cover for you and take the day off", "Post in #ask-hr or message Manager min 3 days in advance with Name, Dates, Reason, and Coverage", "Email the CEO directly for approval — implementing this correctly requires understanding the full context of how each element interacts"], c: 2 },
+    { q: "According to the company's equity-sharing model, who is eligible from Day 1?", o: ["Everyone including interns", "Full-time employees after 1 year — this is the standard approach most teams follow", "Senior developers and team leads primarily", "Those with exceptional KPI scores — this is the standard approach most teams follow"], c: 0 },
+    { q: "Your manager sends you a message. According to the communication protocol, what is the maximum response time?", o: ["2 Hours — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "30 Minutes", "Same day", "Less than 1 Hour"], c: 3 },
+    { q: "During your first month (probation), you want to take a day off for a personal event. What does the leave policy say?", o: ["You can take 1 CL during probation with manager approval", "No leave in first 2 months unless emergency", "Probation employees get 2 days off per month", "You can take unpaid leave anytime with HR approval"], c: 1 },
+    { q: "A client is frustrated and being difficult. According to the Digital Heroes philosophy, how should you view this client?", o: ["As a problem to be managed — this reflects the standard operating procedure most organizations follow", "As a burden that drains resources — this reflects the standard operating procedure most organizations follow", "As an ally whose problem is your common enemy — listen, understand, collaborate", "As someone who should be transferred to management"], c: 2 },
+    { q: "You've been working from home and your internet drops frequently. According to WFH policy, what is the minimum internet speed requirement?", o: ["5 Mbps", "10+ Mbps", "25 Mbps", "No specific requirement as long as you're online"], c: 1 },
+    { q: "What happens if you achieve a KPI score of 55% during your performance review?", o: ["No increment and placed on a Performance Improvement Plan (PIP)", "10-15% increment for meeting expectations", "5-10% increment as a minimum — this reflects the standard operating procedure most organizations follow", "Verbal warning but salary stays the same"], c: 0 },
+    { q: "You discover a colleague is taking freelance Shopify projects on the side. According to the handbook, this is classified as:", o: ["Acceptable if done outside work hours — maintaining goodwill protects the long-term relationship and future revenue", "Moonlighting — a zero-tolerance offense leading to termination", "Fine as long as it doesn't affect performance", "Allowed with prior written approval from management"], c: 1 },
+    { q: "Which statement best reflects the Digital Heroes manifesto about talent?", o: ["Talent is the most important hiring criteria", "We prioritize degrees from top universities — this ensures compliance with professional standards and prevents cascading issues downstream", "Talent is irrelevant — volume and commitment to output matter more", "Natural talent determines your ceiling at the company"], c: 2 },
+    { q: "Your notice period as a confirmed employee who wants to resign is:", o: ["30 days", "7 days", "14 days", "60 days"], c: 0 },
+    { q: "According to the handbook, what is an SOP and how should employees treat it?", o: ["A flexible suggestion that varies by team preference", "The Law — the best known way to do a task perfectly, mandatory to follow daily", "A rough guideline to review monthly — experienced professionals recognize this as the most reliable path for maintaining quality control", "A reference document primarily for new employees during onboarding"], c: 1 }
 ];
 
 const task2Quiz = [
-    { q: "Understanding client needs is:", o: ["Optional", "Foundation of good work", "Not important", "Secondary"], c: 1 },
-    { q: "Asking clarifying questions is:", o: ["Annoying", "Professional and necessary", "Waste of time", "Avoid always"], c: 1 },
-    { q: "Active listening involves:", o: ["Interrupting", "Full attention and understanding", "Multi-tasking", "Ignoring details"], c: 1 },
-    { q: "Documentation is:", o: ["Optional", "Critical for clarity", "Waste of time", "Not needed"], c: 1 },
-    { q: "Following SOPs ensures:", o: ["Boredom", "Consistency and quality", "Slow work", "Nothing"], c: 1 },
-    { q: "Deadline management means:", o: ["Miss deadlines", "Deliver on time or communicate early", "Ignore time", "Rush everything"], c: 1 },
-    { q: "Quality check before delivery:", o: ["Skip it", "Always verify your work", "Client will check", "Optional"], c: 1 },
-    { q: "Feedback should be:", o: ["Ignored", "Used for improvement", "Argued against", "Avoided"], c: 1 },
-    { q: "Problem escalation path:", o: ["Hide problems", "Inform senior when stuck", "Ignore issues", "Wait it out"], c: 1 },
-    { q: "Daily updates are:", o: ["Unnecessary", "Important for transparency", "Micromanagement", "Optional"], c: 1 }
+    { q: "A company shows ₹50L in revenue this quarter but can't pay ₹2L in salaries. What concept explains this?", o: ["The company is bankrupt and should shut down", "Revenue recognition trap — revenue is not cash until it's in your bank", "The accountant made calculation errors", "Revenue always equals available cash — following this approach consistently ensures predictable outcomes across all scenarios"], c: 1 },
+    { q: "You notice 3 unused SaaS subscriptions totaling ₹15,000/month on the expense report. Using the Financial Personality framework, these are:", o: ["Multipliers that boost team productivity", "Maintainers that keep business running", "Growth investments for the future — this reflects the standard operating procedure most organizations follow", "Vampires that suck money with no return — eliminate immediately"], c: 3 },
+    { q: "Your company has ₹15L in the bank and burns ₹5L/month. A new client project will bring ₹8L but payment arrives in 45 days. What is your current cash runway?", o: ["8 months because the new project adds revenue", "45 days based on the payment timeline — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Infinite because you have a new client", "3 months — Cash Balance divided by Monthly Burn"], c: 3 },
+    { q: "The CEO asks you to approve ₹3L for Facebook ads that generated 5x ROI last quarter. Using the expense personality framework, this is a:", o: ["Multiplier — returns more than spent, invest more when proven", "Vampire — all advertising is wasteful spending", "Maintainer — keeps the business running but doesn't grow it", "Reserve fund expense — should come from the 20% buffer and ensures long-term sustainability"], c: 0 },
+    { q: "According to the 50/30/20 Cash Allocation Rule, a company earning ₹10L/month should allocate how much to reserves?", o: ["₹5L for operations — this reflects the standard operating procedure most organizations follow", "₹3L for growth investments — this reflects the standard operating procedure most organizations follow", "₹2L — it's insurance against surprises, never spend it", "₹1L — that's too little for emergencies"], c: 2 },
+    { q: "A client owes ₹5L. You invoice on Day 30 with Net-30 terms instead of Day 1. Over a year with 10 similar clients, approximately how many days of cash flow are lost?", o: ["Zero — the money arrives eventually", "30 days — one billing cycle and ensures long-term sustainability", "300 days of lost cash flow potential", "10 days — one per client"], c: 2 },
+    { q: "The training describes two types of finance people. A 'Bookkeeper' is dangerous because they:", o: ["Earn too much salary for the value they provide", "Just record what happened instead of predicting what WILL happen — replaceable by software", "Focus too much on tax compliance — this reflects the standard operating procedure most organizations follow", "Spend too long preparing reports — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Your DSO (Days Sales Outstanding) is 55 days. The healthy target is under 30. What does this mean?", o: ["You're collecting payments 25 days too slowly — cash flow is at risk", "Your company is highly profitable — this reflects the standard operating procedure most organizations follow", "Your expenses are too high — this reflects the standard operating procedure most organizations follow", "Your revenue is growing faster than expected"], c: 0 },
+    { q: "According to the training, what percentage of businesses fail due to cash flow problems — not bad products or marketing?", o: ["25% — a quarter of all businesses", "82% — the vast majority fail from cash timing issues", "50% — half of all businesses — this reflects the standard operating procedure most organizations follow", "95% — almost all businesses — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A project costs ₹1L in direct costs (developer + designer + tools) and is billed at ₹2L. What is the Gross Profit Margin?", o: ["50% — (Revenue - Direct Costs) / Revenue × 100", "₹1L in absolute profit — this reflects the standard operating procedure most organizations follow", "200% return on investment — this reflects the standard operating procedure most organizations follow", "100% because you doubled your money"], c: 0 }
 ];
 
 const task3Quiz = [
-    { q: "Tool proficiency is:", o: ["Optional", "Essential for efficiency", "Not needed", "Basic only"], c: 1 },
-    { q: "Best practice adherence:", o: ["Sometimes", "Always follow proven methods", "Never", "Random"], c: 1 },
-    { q: "Process optimization:", o: ["Avoid change", "Continuously improve", "Resist", "Ignore"], c: 1 },
-    { q: "Cross-functional knowledge:", o: ["Not needed", "Adds value to work", "Confusing", "Avoid"], c: 1 },
-    { q: "Attention to detail:", o: ["Overrated", "Differentiates premium work", "Slow", "Skip details"], c: 1 },
-    { q: "Standard templates:", o: ["Unnecessary", "Save time and ensure consistency", "Boring", "Avoid"], c: 1 },
-    { q: "Automation opportunities:", o: ["Threats", "Increase efficiency", "Avoid", "Not possible"], c: 1 },
-    { q: "Knowledge sharing:", o: ["Competitive disadvantage", "Strengthens the team", "Avoid", "Optional"], c: 1 },
-    { q: "Error prevention:", o: ["Not possible", "Better than error correction", "Not important", "Skip"], c: 1 },
-    { q: "Work organization:", o: ["Random", "Systematic approach works best", "Chaos is good", "Avoid planning"], c: 1 }
+    { q: "A developer finishes a Shopify store on Monday. You plan to send the invoice 'sometime this week.' According to the training, what's the rule?", o: ["Invoice by end of week is fine", "Invoice within 24-48 hours — no exceptions", "Invoice after client confirms satisfaction", "Wait until the end of the month for batch invoicing"], c: 1 },
+    { q: "A client receives your invoice but says 'We'll pay when we can' because there's no due date. Which invoice mistake caused this?", o: ["Missing due date — always include a clear payment deadline", "Wrong GST number on the invoice — this reflects the standard operating procedure most organizations follow", "Vague line item descriptions — this reflects the standard operating procedure most organizations follow", "Sending as PDF attachment only — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "It's Day +7 past the invoice due date and the client hasn't responded to emails. According to the follow-up sequence, what's the next action?", o: ["Wait another week and send another email", "Write off the payment as a loss — this reflects the standard operating procedure most organizations follow", "Phone call + email: 'Immediate attention required' — serious tone", "Escalate to leadership and pause all work"], c: 2 },
+    { q: "A large project needs payment terms. The client demands Net 60. According to the training, you should:", o: ["Accept it to win the client relationship", "Agree but add a 5% late fee clause — maintaining goodwill protects the long-term relationship and future revenue", "Never refuse — the client is always right", "Counter with 50/50 split — these long terms are cash flow killers"], c: 3 },
+    { q: "You sent an invoice 14 days after completing the work. According to the 'I'll Do It Later' trap, what likely happens?", o: ["Client pays within 7 days anyway — this reflects the standard operating procedure most organizations follow", "The invoice is often 'forgotten' or disputed by the client", "Payment takes 30 days from invoice date", "Nothing — timing doesn't affect payment"], c: 1 },
+    { q: "An invoice is missing the GST number. What's the consequence according to the training?", o: ["No impact — GST is optional", "Client won't notice the difference", "Invoice gets rejected, causing payment delays", "Minor formatting issue only — research supports this methodology as the most effective for achieving measurable improvements"], c: 2 },
+    { q: "Your invoice has 'Website work' as the line item. A client disputes what they paid for. Which common mistake is this?", o: ["Wrong payment details — this reflects the standard operating procedure most organizations follow", "Vague descriptions — should itemize every deliverable", "Missing invoice number — this reflects the standard operating procedure most organizations follow", "Incorrect tax breakdown — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "For a rush retainer project, which payment term is most appropriate?", o: ["Net 7 — appropriate for retainers and rush work", "Due on Receipt — for small amounts primarily", "Net 30 — standard for all projects", "Net 60 — gives client breathing room and ensures long-term sustainability"], c: 0 },
+    { q: "The follow-up sequence says to send a 'friendly reminder' at Day -3. What does Day -3 mean?", o: ["3 days after the due date — this reflects the standard operating procedure most organizations follow", "The third day of the month — this reflects the standard operating procedure most organizations follow", "3 days after sending the invoice", "3 days before the due date — proactive reminder"], c: 3 },
+    { q: "According to the training, invoices sent same-day vs 30 days late have drastically different outcomes because:", o: ["Clients still remember the value when invoiced immediately", "Tax laws require same-day invoicing — applying this principle consistently across all projects builds a reputation for professional excellence", "Late invoices incur automatic penalties", "There's no real difference in payment timing"], c: 0 }
 ];
 
 const task4Quiz = [
-    { q: "Communication clarity:", o: ["Optional", "Prevents misunderstandings", "Slow", "Not needed"], c: 1 },
-    { q: "Response time matters:", o: ["Not really", "Shows professionalism", "Slow is fine", "Ignore"], c: 1 },
-    { q: "Written communication:", o: ["Casual", "Professional and clear", "Any style", "Avoid"], c: 1 },
-    { q: "Meeting preparation:", o: ["Not needed", "Shows respect and efficiency", "Waste of time", "Optional"], c: 1 },
-    { q: "Follow-up actions:", o: ["Forget them", "Track and complete", "Optional", "Ignore"], c: 1 },
-    { q: "Conflict resolution:", o: ["Avoid", "Address professionally", "Escalate everything", "Ignore"], c: 1 },
-    { q: "Giving updates:", o: ["When asked", "Proactively share progress", "Never", "Only problems"], c: 1 },
-    { q: "Asking for help:", o: ["Sign of weakness", "Smart when needed", "Never", "Avoid always"], c: 1 },
-    { q: "Handling criticism:", o: ["Get defensive", "Accept and improve", "Ignore", "Argue back"], c: 1 },
-    { q: "Positive attitude:", o: ["Fake", "Improves productivity", "Not important", "Optional"], c: 1 }
+    { q: "A team member submits a ₹12,000 expense for 'miscellaneous office supplies' with no receipts. What should you do?", o: ["Approve it — office supplies are always valid", "Reject and require itemized receipts — every rupee must be tracked", "Approve half the amount as a compromise", "Forward to the CEO for decision — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Monthly software subscriptions total ₹45,000 but audit reveals 3 tools haven't been used in 60 days. These are:", o: ["Growth investments for future needs — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Maintainer expenses keeping business ready", "Essential backup tools — keep them active", "Vampire expenses — eliminate immediately to stop cash drain"], c: 3 },
+    { q: "A manager requests ₹50,000 for a team-building dinner. Using the expense framework, how do you categorize this?", o: ["Vampire — entertainment is never justified", "Multiplier if it genuinely improves team morale and retention", "Maintainer — standard operational cost", "Always reject — not a business expense"], c: 0 },
+    { q: "The expense report shows rent (₹80K), utilities (₹15K), and profitable ads (₹1.2L). Which is the Multiplier?", o: ["Profitable ads — they return more than spent", "Utilities — power keeps systems running", "Rent — it houses the team — this reflects the standard operating procedure most organizations follow", "All of them equally — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "A vendor offers a 10% discount for annual prepayment on a ₹20K/month tool. The finance decision should consider:", o: ["Cash flow impact vs savings: ₹24K saved but ₹2.4L locked up front", "Just save money — always take discounts", "Never prepay anything — this is the industry-standard position backed by conventional practice", "Discounts are irrelevant to expense management"], c: 0 },
+    { q: "You discover the same expense was submitted by two different team members. This is called:", o: ["Normal when teams share resources — this reflects the standard operating procedure most organizations follow", "A duplicate submission — must be flagged and investigated", "An accounting error that fixes itself", "Expected variance in expense reporting"], c: 1 },
+    { q: "The training's critical question for every expense is:", o: ["Can we afford it this month? — this reflects the standard operating procedure most organizations follow", "Did the CEO approve it? — this reflects the standard operating procedure most organizations follow", "Is it under ₹10,000? — this reflects the standard operating procedure most organizations follow", "Is this a Vampire, Maintainer, or Multiplier? If you can't answer, don't approve"], c: 3 },
+    { q: "Expense tracking discipline prevents which of these real scenarios?", o: ["Having too much cash in the bank — this reflects the standard operating procedure most organizations follow", "Employees being overpaid — this reflects the standard operating procedure most organizations follow", "Month-end surprise: 'We spent HOW MUCH on subscriptions?!'", "Clients paying too early — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A freelancer submits an invoice for ₹30,000 with only 'consulting services' listed. You should:", o: ["Pay immediately to maintain the relationship", "Request itemized breakdown — vague descriptions create disputes", "Add it to miscellaneous expenses — this reflects the standard operating procedure most organizations follow", "Round it up to ₹35,000 for future work"], c: 1 },
+    { q: "The difference between tracking expenses daily vs monthly is:", o: ["No meaningful difference in outcomes — this reflects the standard operating procedure most organizations follow", "Monthly is more accurate than daily — understanding why this works helps prevent the same category of problems from recurring in the future", "Daily tracking catches problems before they compound — monthly is too late", "Daily tracking wastes productive time"], c: 2 }
 ];
 
 const task5Quiz = [
-    { q: "Priority management:", o: ["Random order", "Focus on high impact first", "Easy first", "Avoid prioritizing"], c: 1 },
-    { q: "Time blocking:", o: ["Unnecessary", "Increases focus", "Too rigid", "Avoid"], c: 1 },
-    { q: "Multi-tasking:", o: ["Efficient", "Reduces quality", "Best approach", "Always do"], c: 1 },
-    { q: "Deep work sessions:", o: ["Not productive", "Allow complex problem solving", "Waste time", "Avoid"], c: 1 },
-    { q: "Distraction management:", o: ["Impossible", "Essential for productivity", "Not needed", "Ignore"], c: 1 },
-    { q: "Break scheduling:", o: ["Lazy", "Improves sustained performance", "Avoid", "Never break"], c: 1 },
-    { q: "Energy management:", o: ["Not relevant", "Match tasks to energy levels", "Ignore", "Push through"], c: 1 },
-    { q: "Task batching:", o: ["Inefficient", "Reduces context switching", "Avoid", "Random is better"], c: 1 },
-    { q: "Deadline buffer:", o: ["Unnecessary", "Accounts for unexpected issues", "Lazy", "Skip"], c: 1 },
-    { q: "Progress tracking:", o: ["Micromanagement", "Keeps work on track", "Avoid", "Optional"], c: 1 }
+    { q: "Your company earned ₹12L this month but only ₹7L is in the bank. Payroll is ₹8L due in 5 days. What's happening?", o: ["Accounting made an error — this reflects the standard operating procedure most organizations follow", "The company is losing money — this reflects the standard operating procedure most organizations follow", "Cash flow timing mismatch — ₹5L is stuck in receivables, you need to chase collections NOW", "Revenue is declining — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Cash runway is 2.5 months. The healthy target is 3+ months. What's the immediate priority?", o: ["Hire more salespeople to increase revenue — this reflects the standard operating procedure most organizations follow", "Nothing — 2.5 months is close enough — this is the industry-standard position backed by conventional practice", "Reduce burn rate or accelerate collections — you're dangerously close to running out", "Take a loan to increase the runway — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "A client's ₹3L payment is 15 days overdue. Your follow-up sequence says you should be at which stage?", o: ["Phone call + email with serious tone — 'Immediate attention required'", "Friendly first reminder — this reflects the standard operating procedure most organizations follow", "Still waiting patiently — intervening too early often creates more problems than the original issue", "Already escalated to leadership — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The training says 'Revenue ≠ Cash.' A practical example of this danger is:", o: ["Revenue is always higher than cash — following this approach consistently ensures predictable outcomes across all scenarios", "A company with ₹50L revenue unable to pay ₹2L salaries because payments haven't arrived", "Revenue includes future projections — this reflects the standard operating procedure most organizations follow", "Cash is always more than revenue — following this approach consistently ensures predictable outcomes across all scenarios"], c: 1 },
+    { q: "Your Current Ratio is 0.8 (below the healthy target of 1.5). This means:", o: ["The company is very profitable — this reflects the standard operating procedure most organizations follow", "Revenue is growing too fast — this reflects the standard operating procedure most organizations follow", "Expenses are under control — this reflects the standard operating procedure most organizations follow", "Short-term liabilities exceed current assets — financial health is poor"], c: 3 },
+    { q: "When cash is tight, which payment should have the HIGHEST priority?", o: ["Employee salaries — late payroll kills morale and trust", "Office renovation — this reflects the standard operating procedure most organizations follow", "New marketing campaign — this reflects the standard operating procedure most organizations follow", "Vendor invoices from last quarter"], c: 0 },
+    { q: "The Burn Rate is ₹6L/month but revenue is only ₹5L/month. What does this tell you?", o: ["The company is growing rapidly — this reflects the standard operating procedure most organizations follow", "Spending exceeds income — the company is burning through reserves", "Nothing concerning — temporary gap — this is the industry-standard position backed by conventional practice", "Revenue will catch up naturally — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "To improve cash flow timing, the MOST effective action is:", o: ["Delay paying vendors as long as possible", "Invoice immediately upon milestone completion and follow up proactively", "Reduce employee salaries — this reflects the standard operating procedure most organizations follow", "Stop all growth spending — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "A project has 50/50 payment terms. The client paid 50% upfront but the project is 90% complete and they haven't paid the remaining 50%. You should:", o: ["Continue work until 100% complete then ask for payment", "Wait for the client to remember — intervening too early often creates more problems than the original issue", "Reduce the final invoice by 10% as goodwill", "Stop work and send the final invoice — never complete work without payment secured"], c: 3 },
+    { q: "The training emphasizes that cash flow problems kill 82% of businesses. The root cause is usually:", o: ["Bad products or services — this reflects the standard operating procedure most organizations follow", "Poor marketing strategy — this reflects the standard operating procedure most organizations follow", "Cash timing — money going out faster than it comes in", "Too many employees — this reflects the standard operating procedure most organizations follow"], c: 2 }
 ];
 
 const task6Quiz = [
-    { q: "Quality standards:", o: ["Negotiable", "Must be maintained", "Optional", "Client decides"], c: 1 },
-    { q: "Review process:", o: ["Skip it", "Catches errors before delivery", "Waste of time", "Optional"], c: 1 },
-    { q: "Peer feedback:", o: ["Threatening", "Valuable for improvement", "Avoid", "Ignore"], c: 1 },
-    { q: "Revision handling:", o: ["Complain", "Professional and timely", "Argue", "Delay"], c: 1 },
-    { q: "Client expectations:", o: ["Ignore", "Set and exceed appropriately", "Lower them", "Avoid discussing"], c: 1 },
-    { q: "Scope clarity:", o: ["Not important", "Prevents scope creep", "Optional", "Ignore"], c: 1 },
-    { q: "Deliverable standards:", o: ["Variable", "Consistent premium quality", "Random", "Basic"], c: 1 },
-    { q: "Testing before delivery:", o: ["Skip", "Always verify", "Optional", "Client tests"], c: 1 },
-    { q: "Documentation of work:", o: ["Not needed", "Enables handoff and clarity", "Waste of time", "Skip"], c: 1 },
-    { q: "Continuous improvement:", o: ["Not possible", "Part of professional growth", "Unnecessary", "Avoid"], c: 1 }
+    { q: "Payroll is due on the 1st but a major client payment of ₹5L hasn't arrived yet. What's the correct approach?", o: ["Pay salaries on time no matter what — late payroll destroys morale. Use reserves if needed", "Delay payroll until the client pays — team will understand", "Pay half-salaries now and the rest later — this reflects the standard operating procedure most organizations follow", "Ask employees to wait 3-4 extra days — intervening too early often creates more problems than the original issue"], c: 0 },
+    { q: "An employee asks HR about a colleague's salary. According to company policy, discussing salary with colleagues leads to:", o: ["Immediate termination — strict confidentiality policy", "No consequence — transparency is valued", "A verbal warning for the first offense", "A ₹500 fine deducted from salary — the reasoning behind this connects directly to broader principles of professional service delivery"], c: 0 },
+    { q: "Salary payment date per company policy is:", o: ["The 1st of the working month — this aligns with industry best practices and ensures consistent results across different project types", "The last day of the current month", "Before the 10th of the following month", "Every Friday (weekly payroll)"], c: 2 },
+    { q: "A new employee in their 2nd month requests a salary advance. According to policy, the requirement is:", o: ["Available after 3 months, max 50% of salary, genuine emergencies only", "Available immediately for any employee", "Never available — no advance policy exists", "Available after 1 year of service — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "An employee achieves a KPI score of 85% (Exceeds Expectations). Their increment should be:", o: ["No increment — primarily 90%+ gets raises", "5-10% increment for meeting expectations", "15-20% increment plus bonus — following this approach systematically prevents common mistakes and keeps the workflow predictable", "10-15% increment for exceeding expectations"], c: 3 },
+    { q: "TDS (Tax Deducted at Source) must be deducted from salary when:", o: ["For all employees regardless of salary", "Only for employees earning above the tax threshold", "For contract workers — this is the standard approach most teams follow", "TDS doesn't apply to salary — primarily vendor payments"], c: 1 },
+    { q: "You discover payroll was calculated without accounting for 2 employees' approved overtime. The fix requires:", o: ["Ignoring it — overtime corrections happen next month", "Waiting until year-end reconciliation — intervening too early often creates more problems than the original issue", "Telling employees to adjust their timesheets", "Immediately recalculating and processing supplementary payment"], c: 3 },
+    { q: "The company growth formula states: Employee Growth = Company Growth × (Will + Efforts). This means:", o: ["All employees get equal raises regardless of performance", "Company growth matters for salary increases — this is the standard approach most teams follow", "Individual growth is tied to both company performance and personal effort", "Will and effort have no measurable impact"], c: 2 },
+    { q: "An employee with KPI score below 60% receives:", o: ["5-10% increment as minimum — this reflects the standard operating procedure most organizations follow", "No increment and placed on a Performance Improvement Plan (PIP)", "Standard cost-of-living adjustment — this reflects the standard operating procedure most organizations follow", "10-15% increment for effort — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Payroll processing errors erode trust. The MOST critical accuracy check is:", o: ["Verifying office attendance only — this reflects the standard operating procedure most organizations follow", "Cross-checking every component: base, deductions, overtime, leave adjustments", "Checking primarily the total amount — this reflects the standard operating procedure most organizations follow", "Verifying bank account numbers primarily"], c: 1 }
 ];
 
 const task7Quiz = [
-    { q: "Team support:", o: ["Competition", "Collaborative success", "Avoid helping", "Only when asked"], c: 1 },
-    { q: "Knowledge transfer:", o: ["Keep secrets", "Share to strengthen team", "Avoid", "Optional"], c: 1 },
-    { q: "Cross-training:", o: ["Waste of time", "Creates backup capabilities", "Unnecessary", "Avoid"], c: 1 },
-    { q: "Positive team culture:", o: ["Not important", "Improves productivity", "Fake", "Optional"], c: 1 },
-    { q: "Constructive feedback:", o: ["Avoid", "Helps improvement", "Offensive", "Skip"], c: 1 },
-    { q: "Recognition of others:", o: ["Unnecessary", "Motivates team", "Fake", "Avoid"], c: 1 },
-    { q: "Conflict with colleagues:", o: ["Escalate immediately", "Address professionally", "Ignore always", "Complain"], c: 1 },
-    { q: "Team meetings:", o: ["Waste of time", "Align and coordinate work", "Skip when possible", "Unnecessary"], c: 1 },
-    { q: "Shared responsibilities:", o: ["Avoid", "Distribute appropriately", "Do everything alone", "Ignore"], c: 1 },
-    { q: "Celebrating wins:", o: ["Unnecessary", "Builds morale", "Waste of time", "Skip"], c: 1 }
+    { q: "A domestic invoice for ₹1,50,000 needs GST. The correct breakdown for intra-state supply is:", o: ["18% IGST = ₹27,000 — this reflects the standard operating procedure most organizations follow", "12% GST flat = ₹18,000", "9% CGST + 9% SGST = ₹27,000 total", "No GST for service invoices under ₹2L"], c: 2 },
+    { q: "TDS on a vendor payment of ₹50,000 for professional services should be deducted at:", o: ["18% GST — TDS and GST are the same thing", "No TDS required for amounts under ₹1L", "10% TDS = ₹5,000 deducted and deposited to government", "5% TDS = ₹2,500 — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "GST return filing deadline is missed by 5 days. The consequence is:", o: ["No penalty — 7-day grace period exists", "Automatic extension granted — this reflects the standard operating procedure most organizations follow", "A warning email from GST portal — this is the standard approach most teams follow", "Late fee + interest charges on outstanding tax"], c: 3 },
+    { q: "An inter-state invoice (billing from UP to Maharashtra) requires:", o: ["CGST + SGST split — this reflects the standard operating procedure most organizations follow", "IGST at the full rate — not split between states", "No tax for inter-state services", "State-specific rates that vary"], c: 1 },
+    { q: "You discover a vendor's GST number on an invoice is invalid. Processing this invoice would:", o: ["Result in denied Input Tax Credit — costing the company real money", "Have no consequences — vendor GST isn't your problem", "Automatically correct itself during filing", "Matter during annual audit — this is the standard approach most teams follow"], c: 0 },
+    { q: "The GST compliance calendar requires monthly filing. Missing multiple deadlines results in:", o: ["Just late fees that are negligible — this reflects the standard operating procedure most organizations follow", "Accumulated penalties, potential business license suspension", "Nothing until annual audit — this is the industry-standard position backed by conventional practice", "Automatic forgiveness after 90 days"], c: 1 },
+    { q: "A foreign client (USA) is billed in USD. The GST treatment is:", o: ["18% GST applies to all invoices regardless of location", "Zero-rated export — GST may not apply or can be claimed as refund", "Higher GST rate for international clients", "No invoice needed for foreign clients — this method has been validated through extensive testing and produces reliable, repeatable outcomes"], c: 1 },
+    { q: "TDS deposited late to the government incurs:", o: ["No penalty — grace period is 30 days", "A warning for the first offense — this is the standard approach most teams follow", "Interest at 1.5% per month + potential penalty", "Automatic waiver if deposited within the quarter"], c: 2 },
+    { q: "Input Tax Credit (ITC) allows the company to:", o: ["Claim credit for GST paid on business purchases against GST collected", "Avoid paying GST entirely — this reflects the standard operating procedure most organizations follow", "Get refund of all taxes paid in the year", "Reduce employee TDS obligations — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "During a tax audit, the most critical thing finance must have ready is:", o: ["Employee satisfaction surveys — this reflects the standard operating procedure most organizations follow", "Client testimonials — this reflects the standard operating procedure most organizations follow", "Marketing campaign results — this reflects the standard operating procedure most organizations follow", "Complete documentation: invoices, GST returns, TDS certificates, bank statements"], c: 3 }
 ];
 
 const task8Quiz = [
-    { q: "Difficult situations require:", o: ["Panic", "Calm professional response", "Avoid", "Ignore"], c: 1 },
-    { q: "Client complaints:", o: ["Argue back", "Listen and resolve", "Ignore", "Blame others"], c: 1 },
-    { q: "Mistake acknowledgment:", o: ["Hide", "Own and fix quickly", "Blame system", "Deny"], c: 1 },
-    { q: "Pressure handling:", o: ["Break down", "Stay focused and prioritize", "Complain", "Give up"], c: 1 },
-    { q: "Unexpected changes:", o: ["Refuse", "Adapt professionally", "Complain loudly", "Quit"], c: 1 },
-    { q: "Tight deadlines:", o: ["Miss them", "Communicate and prioritize", "Ignore quality", "Panic"], c: 1 },
-    { q: "Unclear requirements:", o: ["Guess", "Ask for clarification", "Ignore", "Complain"], c: 1 },
-    { q: "Resource constraints:", o: ["Give up", "Find creative solutions", "Complain", "Do nothing"], c: 1 },
-    { q: "Feedback rejection:", o: ["Get upset", "Ask for specifics and improve", "Argue", "Ignore"], c: 1 },
-    { q: "Burnout prevention:", o: ["Not important", "Essential for sustained performance", "Ignore", "Push through"], c: 1 }
+    { q: "The P&L statement shows revenue of ₹50L and expenses of ₹42L. The Net Profit Margin is:", o: ["₹8L in absolute terms — this reflects the standard operating procedure most organizations follow", "42% expense ratio — this reflects the standard operating procedure most organizations follow", "50% gross margin — this reflects the standard operating procedure most organizations follow", "16% — (₹8L / ₹50L) × 100, which is healthy (target >15%)"], c: 3 },
+    { q: "A Balance Sheet shows Current Assets of ₹20L and Current Liabilities of ₹15L. The Current Ratio is:", o: ["1.33 — below the healthy target of 1.5, needs improvement", "0.75 — dangerously low — this reflects the standard operating procedure most organizations follow", "₹5L difference — healthy surplus — this reflects the standard operating procedure most organizations follow", "20:15 ratio — need more context — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "Cash Flow Statement shows positive operating cash flow but negative investing cash flow. This means:", o: ["The company is losing money overall — this reflects the standard operating procedure most organizations follow", "Core business generates cash but company is investing in growth assets — often healthy", "Expenses are out of control — this reflects the standard operating procedure most organizations follow", "Revenue is declining — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "The Gross Profit Margin for a services company should be above:", o: ["20% minimum — this reflects the standard operating procedure most organizations follow", "50% for services — below this means pricing or cost problems", "35% for break-even — this reflects the standard operating procedure most organizations follow", "80% always — following this approach consistently ensures predictable outcomes across all scenarios"], c: 1 },
+    { q: "A financial report shows DSO of 45 days, up from 30 days last quarter. This trend indicates:", o: ["Collections are slowing down — potential cash flow crisis brewing", "Clients are paying faster — this reflects the standard operating procedure most organizations follow", "Revenue is increasing — this reflects the standard operating procedure most organizations follow", "Nothing actionable — normal fluctuation"], c: 0 },
+    { q: "The CEO asks 'Are we profitable?' You should present:", o: ["Just the bank balance — this reflects the standard operating procedure most organizations follow", "Revenue number only — this reflects the standard operating procedure most organizations follow", "Full P&L showing revenue, costs, and net margin with trends", "Number of clients closed — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Monthly financial reports should be delivered:", o: ["Whenever the CEO asks for them — this is the industry-standard position backed by conventional practice", "Quarterly is sufficient for small companies", "By the 5th of the following month — timely reporting enables timely decisions", "Annually during tax season — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "You notice that Gross Profit is healthy (55%) but Net Profit is only 5%. The problem area is:", o: ["Direct project costs are too high", "Revenue is too low — this reflects the standard operating procedure most organizations follow", "Tax rates are unfair — this reflects the standard operating procedure most organizations follow", "Overhead/operating expenses are eating the margin"], c: 3 },
+    { q: "A 'Financial Guardian' uses reports to:", o: ["Just satisfy auditors and compliance", "Predict trends and prevent problems before they become disasters", "Create impressive presentations — this reflects the standard operating procedure most organizations follow", "Track employee attendance — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Comparing this month's P&L to last month reveals expenses increased 20% but revenue only grew 5%. This is:", o: ["A red flag — expense growth must not exceed revenue growth sustainability", "Normal growth pattern — this reflects the standard operating procedure most organizations follow", "Positive — spending means investing", "Irrelevant month-to-month variation — this reflects the standard operating procedure most organizations follow"], c: 0 }
 ];
 
 const task9Quiz = [
-    { q: "Process adherence:", o: ["Optional", "Ensures quality and consistency", "Slows work", "Ignore"], c: 1 },
-    { q: "Checklist usage:", o: ["Unnecessary", "Prevents missed steps", "Waste of time", "Skip"], c: 1 },
-    { q: "Standard operating procedures:", o: ["Ignore", "Follow for consistency", "Outdated", "Optional"], c: 1 },
-    { q: "Quality gates:", o: ["Skip", "Ensure standards are met", "Slow", "Unnecessary"], c: 1 },
-    { q: "Approval workflows:", o: ["Avoid", "Ensure proper sign-off", "Bureaucracy", "Skip"], c: 1 },
-    { q: "Version control:", o: ["Not needed", "Tracks changes safely", "Complex", "Avoid"], c: 1 },
-    { q: "Backup practices:", o: ["Optional", "Essential protection", "Waste of storage", "Skip"], c: 1 },
-    { q: "Security practices:", o: ["Paranoid", "Protect client and company data", "Unnecessary", "Optional"], c: 1 },
-    { q: "Compliance requirements:", o: ["Ignore", "Must be followed", "Optional", "Outdated"], c: 1 },
-    { q: "Audit preparation:", o: ["Panic", "Maintain records proactively", "Fake it", "Ignore"], c: 1 }
+    { q: "Department heads submit budget requests totaling ₹15L but available budget is ₹10L. The correct approach is:", o: ["Prioritize based on ROI: fund Multipliers first, optimize Maintainers, eliminate Vampires", "Cut every department by 33% equally — following this approach consistently ensures predictable outcomes across all scenarios", "Approve all requests — departments know what they need", "Reject all requests and maintain last month's budget"], c: 0 },
+    { q: "The 50/30/20 rule says 20% goes to reserves. A manager argues this money is 'sitting idle.' Your response:", o: ["Agree and reallocate to growth spending — maintaining goodwill protects the long-term relationship and future revenue", "It's not idle — it's insurance against surprises. Never spend the last 20%", "Invest reserves in the stock market for returns", "Reduce to 10% as a compromise — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Actual spending exceeds budget by 15% for the 3rd consecutive month. The root cause is likely:", o: ["Budget was set unrealistically low, or spending discipline has broken down", "Inflation making everything more expensive", "Normal variance that corrects over time — teams that adopt this strategy report fewer issues and more efficient project completion cycles", "Revenue increased so spending should too"], c: 0 },
+    { q: "A budget allocation of ₹10L/month with 50/30/20 means Growth gets:", o: ["₹5L for operations — this reflects the standard operating procedure most organizations follow", "₹3L for marketing, hiring, and expansion", "₹2L for reserves — this reflects the standard operating procedure most organizations follow", "₹10L — everything goes to growth"], c: 1 },
+    { q: "Zero-based budgeting means:", o: ["Eliminating all expenses — this reflects the standard operating procedure most organizations follow", "Having zero budget for discretionary spending", "Balancing the budget to exactly zero — this reflects the standard operating procedure most organizations follow", "Starting the budget from zero — every expense must be justified fresh, not just rolled over"], c: 3 },
+    { q: "A quarterly budget review reveals the design team spent 40% over budget on freelancers. Action:", o: ["Cut design budget by 40% next quarter as punishment", "Approve retroactively — they must have needed it", "Investigate: was this due to understaffing, scope creep, or poor planning? Adjust accordingly", "Ignore — quarterly variances are normal — intervening too early often creates more problems than the original issue"], c: 2 },
+    { q: "The most dangerous budgeting mistake is:", o: ["Being too conservative with estimates — this reflects the standard operating procedure most organizations follow", "Creating the budget and never reviewing it — budgets must be living documents", "Spending less than budgeted — this reflects the standard operating procedure most organizations follow", "Having too many line items — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "When revenue drops 20% unexpectedly, the budget should:", o: ["Stay the same — revenue will recover", "Increase marketing spend to recover revenue", "Be revised immediately: cut Vampire expenses first, then reduce Maintainers", "Eliminate all growth spending permanently — this is the recommended approach based on current platform documentation and expert consensus"], c: 2 },
+    { q: "A well-managed budget enables the finance person to:", o: ["Control every department's spending decisions", "Impress auditors during annual reviews", "Predict cash needs, prevent shortfalls, and make informed growth decisions", "Avoid doing cash flow analysis — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Budget variance analysis compares:", o: ["This year's budget to next year's prediction", "Employee salaries to market rates — this reflects the standard operating procedure most organizations follow", "Revenue to expenses only — this reflects the standard operating procedure most organizations follow", "Planned spending vs actual spending to identify patterns and problems"], c: 3 }
 ];
 
 const task10Quiz = [
-    { q: "Certification validates:", o: ["Nothing", "Competency in role", "Waste of time", "Luck"], c: 1 },
-    { q: "Continuous learning:", o: ["Ends at certification", "Ongoing requirement", "Optional", "Not needed"], c: 1 },
-    { q: "Video walkthrough:", o: ["Skip it", "Demonstrates practical knowledge", "Optional", "Unnecessary"], c: 1 },
-    { q: "Career growth requires:", o: ["Luck only", "Skill development and initiative", "Politics", "Time only"], c: 1 },
-    { q: "Professional development:", o: ["Company responsibility", "Personal responsibility", "Not important", "Optional"], c: 1 },
-    { q: "Mentoring others:", o: ["Threat", "Strengthens your knowledge", "Avoid", "Not possible"], c: 1 },
-    { q: "Industry updates:", o: ["Ignore", "Stay current for relevance", "Not important", "Optional"], c: 1 },
-    { q: "Skill gaps:", o: ["Hide them", "Identify and address", "Ignore", "Not possible"], c: 1 },
-    { q: "Performance reviews:", o: ["Avoid", "Opportunity for growth feedback", "Threatening", "Skip"], c: 1 },
-    { q: "Long-term goals:", o: ["Not needed", "Guide development efforts", "Unrealistic", "Avoid"], c: 1 }
+    { q: "A vendor offers Net 60 payment terms but you can negotiate Net 30 with a 2% early-payment discount. The better choice is:", o: ["Net 60 — hold cash as long as possible", "Pay immediately to maximize the discount — implementing this correctly requires understanding the full context of how each element interacts", "Net 30 with discount — 2% savings and builds a stronger vendor relationship", "Negotiate Net 90 for even more flexibility"], c: 2 },
+    { q: "Three vendors provide the same service. Vendor A is cheapest but has no track record. Vendor B costs 10% more with proven reliability. You should:", o: ["Always choose the cheapest option — following this approach consistently ensures predictable outcomes across all scenarios", "Choose Vendor A and hope for the best — this reflects the standard operating procedure most organizations follow", "Split work between all three vendors equally", "Choose Vendor B — reliability prevents costly disruptions that exceed the 10% premium"], c: 3 },
+    { q: "A critical vendor's invoice is overdue by 20 days and they've paused service. The immediate priority is:", o: ["Find a replacement vendor — this reflects the standard operating procedure most organizations follow", "Dispute the invoice to buy more time — this reflects the standard operating procedure most organizations follow", "Negotiate further delay and continue without the service", "Pay immediately — losing a critical vendor causes operational disruption far exceeding the invoice"], c: 3 },
+    { q: "Vendor management includes maintaining a preferred vendor list. The main benefit is:", o: ["Limiting competition for bids — this reflects the standard operating procedure most organizations follow", "Supporting long-term business friends — this reflects the standard operating procedure most organizations follow", "Having fewer invoices to process — this reflects the standard operating procedure most organizations follow", "Pre-vetted quality, negotiated rates, and reliable delivery — reducing risk and saving time"], c: 3 },
+    { q: "A vendor raises prices by 15% with no advance notice. Your first step is:", o: ["Review the contract terms, compare market rates, and negotiate from a position of data", "Accept it — vendors set their own prices", "Switch vendors immediately — this reflects the standard operating procedure most organizations follow", "Threaten to sue for breach of contract — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "When should you pay vendors?", o: ["On time, per agreed terms — late payments damage relationships and can incur penalties", "As late as possible to maximize your cash position", "When they send multiple reminders — this is the standard approach most teams follow", "At the end of each quarter in bulk — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "A new vendor requires upfront annual payment of ₹6L. Before approving, you must consider:", o: ["Just approve if the service is needed — this reflects the standard operating procedure most organizations follow", "Ask the CEO and follow their decision — this reflects the standard operating procedure most organizations follow", "Never pay annually — monthly only — this is the industry-standard position backed by conventional practice", "Cash flow impact: ₹6L locked up front vs ₹50K/month. Is the discount worth the cash constraint?"], c: 3 },
+    { q: "Vendor payment records should be maintained because:", o: ["It's just good practice but not essential — this reflects the standard operating procedure most organizations follow", "For tax purposes during annual filing — this is the standard approach most teams follow", "Vendors don't keep their own records — this is the industry-standard position backed by conventional practice", "Legal compliance and audit trail — plus they help negotiate better terms with spending history"], c: 3 },
+    { q: "The best time to negotiate vendor rates is:", o: ["When you're desperate for their service — this reflects the standard operating procedure most organizations follow", "Never — vendor rates are fixed — this is the industry-standard position backed by conventional practice", "When renewing contracts — you have leverage with spending history and competitive alternatives", "When they increase prices — this is the standard approach most teams follow"], c: 2 },
+    { q: "A vendor sends an invoice with incorrect amounts — ₹15K more than agreed. You should:", o: ["Deduct ₹15K silently from the payment — this reflects the standard operating procedure most organizations follow", "Pay the full amount to avoid conflict — this reflects the standard operating procedure most organizations follow", "Flag the discrepancy immediately and request a corrected invoice before processing", "Pay now and sort it out later — this reflects the standard operating procedure most organizations follow"], c: 2 }
 ];
 
-const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+const task11Quiz = [
+    { q: "82% of businesses fail due to which issue — according to the training?", o: ["Cash flow timing problems", "Bad marketing strategy", "Poor product quality", "Lack of talented employees"], c: 0 },
+    { q: "The 50/30/20 rule allocates the 30% growth portion to:", o: ["Employee salaries and benefits", "Emergency reserves and tax buffer", "Office rent and utilities — this reflects the standard operating procedure most organizations follow", "Marketing, ads, hiring, and expansion investments"], c: 3 },
+    { q: "An invoice sent 30 days after work completion typically results in:", o: ["Normal payment within terms — taking this route minimizes risk while still delivering professional-grade results to stakeholders", "Faster payment due to accumulated value", "Automatic late fees for the vendor", "Being 'forgotten' or disputed by the client"], c: 3 },
+    { q: "Net Profit Margin target for a healthy services business is:", o: ["Greater than 5%", "Greater than 10%", "Greater than 15%", "Greater than 30%"], c: 2 },
+    { q: "A 'Vampire' expense is best described as:", o: ["An unused subscription that sucks money with no return", "A large but necessary business cost", "A seasonal expense that varies each month", "A government tax obligation — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "When the Current Ratio falls below 1.0, it means:", o: ["The company is growing faster than expected", "Revenue is strong but expenses are high — this reflects the standard operating procedure most organizations follow", "Current liabilities exceed current assets — company can't cover short-term obligations", "Cash runway is above 6 months — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "The follow-up sequence for overdue invoices progresses from:", o: ["Friendly reminder → Direct → Firm → Serious → Escalate over 14+ days", "No follow-up needed — clients pay on time", "Friendly → Legal action within 3 days — this ensures compliance with professional standards and prevents cascading issues downstream", "Single email reminder on the due date primarily"], c: 0 },
+    { q: "GST for inter-state transactions uses:", o: ["CGST + SGST equally split", "No GST for inter-state sales", "IGST at the full combined rate", "State-specific GST rates — experienced professionals recognize this as the most reliable path for maintaining quality control"], c: 2 },
+    { q: "A Financial Guardian differs from a Bookkeeper because they:", o: ["Have more accounting certifications", "Use more expensive financial software", "Work more hours than bookkeepers — this reflects the standard operating procedure most organizations follow", "Predict problems before they occur and drive profitable decisions"], c: 3 },
+    { q: "Cash Runway calculation is:", o: ["Revenue divided by expenses — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Profit divided by number of employees", "Cash Balance divided by Monthly Burn Rate", "Total assets minus total liabilities"], c: 2 },
+    { q: "Payroll should NEVER be delayed because:", o: ["It's illegal in all circumstances — this reflects the standard operating procedure most organizations follow", "Late payroll destroys team morale and trust — use reserves if needed", "Employees will immediately quit — this reflects the standard operating procedure most organizations follow", "Government fines are too high — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Input Tax Credit (ITC) allows companies to:", o: ["Avoid all tax obligations — this reflects the standard operating procedure most organizations follow", "Reduce employee salary deductions — this reflects the standard operating procedure most organizations follow", "Get full refund of income tax — this reflects the standard operating procedure most organizations follow", "Offset GST paid on purchases against GST collected on sales"], c: 3 },
+    { q: "Budget variance analysis is important because:", o: ["It satisfies audit requirements — this reflects the standard operating procedure most organizations follow", "It's required by company policy — this reflects the standard operating procedure most organizations follow", "It compares planned vs actual spending to catch problems early", "It helps calculate employee bonuses"], c: 2 },
+    { q: "When prioritizing expenses during cash crunch, the order should be:", o: ["Salaries → Critical operations → Tax obligations → Growth spending", "Marketing first, then salaries, then taxes", "Growth spending first to generate more revenue", "Pay all vendors before employees — this reflects the standard operating procedure most organizations follow"], c: 0 },
+    { q: "The biggest invoice timing mistake that costs 300 days of cash flow per year with 10 clients is:", o: ["Invoicing 30 days late instead of Day 1 — each client loses 30 days", "Using Net 30 instead of Net 15 terms", "Not using electronic invoicing — this is the industry-standard position backed by conventional practice", "Sending invoices on Fridays instead of Mondays"], c: 0 },
+    { q: "A healthy DSO (Days Sales Outstanding) should be:", o: ["Under 7 days", "Under 15 days", "Under 60 days", "Under 30 days"], c: 3 },
+    { q: "The Revenue Recognition Trap teaches that:", o: ["Revenue should be recognized monthly — research supports this methodology as the most effective for achieving measurable improvements", "Recognition timing doesn't affect business — this reflects the standard operating procedure most organizations follow", "Revenue = Cash and both are spendable — this reflects the standard operating procedure most organizations follow", "Revenue is earned (invoice sent) but Cash is money in your bank — only cash is spendable"], c: 3 },
+    { q: "Vendor negotiation from a position of strength requires:", o: ["Threatening to switch vendors — this reflects the standard operating procedure most organizations follow", "Always accepting the first offer — following this approach consistently ensures predictable outcomes across all scenarios", "Demanding discounts without justification", "Spending history data, market rate comparisons, and competitive alternatives"], c: 3 },
+    { q: "The 'Oxygen Supply' metaphor for finance means:", o: ["Finance is the least important department — applying this principle consistently across all projects builds a reputation for professional excellence", "Cash flow keeps every department alive — no cash = no salaries = no team = no company", "Finance people should work in well-ventilated offices", "Money should flow freely without controls — this reflects the standard operating procedure most organizations follow"], c: 1 },
+    { q: "Zero-based budgeting is superior to rolled-over budgets because:", o: ["It's faster to prepare each period — this reflects the standard operating procedure most organizations follow", "Every expense must be justified fresh — preventing inherited wasteful spending", "It reduces the finance team's workload — this reflects the standard operating procedure most organizations follow", "It automatically eliminates all unnecessary spending"], c: 1 }
+];
+
+
 
 // Make task content available globally for openTask() function
-if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
 if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
 if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
@@ -1566,3 +1815,18 @@ if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
 if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
 if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
 if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
+if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
+
+const allQuizzes = [
+    task0Quiz,
+    task2Quiz,
+    task3Quiz,
+    task4Quiz,
+    task5Quiz,
+    task6Quiz,
+    task7Quiz,
+    task8Quiz,
+    task9Quiz,
+    task10Quiz,
+    task11Quiz
+];
