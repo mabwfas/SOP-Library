@@ -1,0 +1,18 @@
+✅ cs-training-data.js                    115q | longest= 0% | scn=73% | sop=87% | A:29 B:29 C:29 D:28
+✅ sales-training-data.js                 125q | longest= 5% | scn=34% | sop=70% | A:31 B:35 C:29 D:30
+✅ operations-training-data.js            142q | longest= 0% | scn=60% | sop=96% | A:37 B:35 C:34 D:36
+✅ finance-training-data.js               125q | longest= 0% | scn=38% | sop=55% | A:32 B:31 C:31 D:31
+✅ pm-training-data.js                    153q | longest= 0% | scn=42% | sop=88% | A:39 B:38 C:38 D:38
+✅ content-training-data.js               130q | longest= 0% | scn=17% | sop=60% | A:33 B:33 C:32 D:32
+✅ social-media-training-data.js          125q | longest= 0% | scn=18% | sop=57% | A:32 B:31 C:31 D:31
+✅ client-chat-training-data.js           111q | longest= 0% | scn=28% | sop=68% | A:28 B:28 C:28 D:27
+✅ designer-training-data.js              135q | longest= 0% | scn=22% | sop=49% | A:34 B:34 C:34 D:33
+✅ developer-training-data.js             152q | longest= 0% | scn=19% | sop=70% | A:38 B:38 C:38 D:38
+✅ fiverr-risk-training-data.js           120q | longest= 3% | scn=42% | sop=93% | A:30 B:30 C:30 D:30
+✅ hr-training-data-new.js                140q | longest= 0% | scn=53% | sop=79% | A:35 B:35 C:35 D:35
+✅ hr-training-data.js                    115q | longest= 0% | scn=15% | sop=44% | A:29 B:29 C:29 D:28
+✅ wordpress-training-data.js             114q | longest= 0% | scn=24% | sop=62% | A:29 B:29 C:28 D:28
+✅ fullstack-training-data.js              15q | longest= 0% | scn=47% | sop=80% | A:4 B:4 C:4 D:3
+✅ fullstack-training-data-part2.js       107q | longest= 0% | scn= 7% | sop=41% | A:27 B:27 C:27 D:26
+
+Total: 1924 questions

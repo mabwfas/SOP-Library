@@ -1,0 +1,6 @@
+finance: 125q | longest=0 (0%) | only=6
+pm: 153q | longest=0 (0%) | only=1
+content: 164q | longest=0 (0%) | only=3
+designer: 135q | longest=0 (0%) | only=5
+developer: 154q | longest=0 (0%) | only=3
+fiverr-risk: 120q | longest=4 (3%) | only=0

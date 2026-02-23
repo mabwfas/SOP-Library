@@ -1,0 +1,8 @@
+social-media: 125q | longest=1(1%) | only=1 | A:36 B:36 C:27 D:26 | fixes: p1=221 p2=31 only=61
+client-chat: 112q | longest=5(4%) | only=1 | A:33 B:29 C:27 D:23 | fixes: p1=235 p2=51 only=30
+finance: 125q | longest=0(0%) | only=6 | A:36 B:36 C:27 D:26 | fixes: p1=24 p2=0 only=4
+pm: 153q | longest=0(0%) | only=1 | A:43 B:42 C:35 D:33 | fixes: p1=50 p2=0 only=10
+content: 164q | longest=0(0%) | only=3 | A:46 B:45 C:37 D:36 | fixes: p1=93 p2=0 only=7
+designer: 135q | longest=0(0%) | only=5 | A:7 B:113 C:9 D:6 | fixes: p1=55 p2=4 only=1
+developer: 154q | longest=0(0%) | only=3 | A:6 B:141 C:4 D:3 | fixes: p1=60 p2=4 only=3
+fiverr-risk: 120q | longest=4(3%) | only=0 | A:4 B:108 C:5 D:3 | fixes: p1=52 p2=11 only=1

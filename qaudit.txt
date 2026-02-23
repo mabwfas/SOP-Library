@@ -1,0 +1,14 @@
+cs:10
+sales:10
+hr:10
+finance:10
+pm:10
+content:10
+social-media:10
+client-chat:10
+designer:10
+developer:10
+wordpress:0
+fiverr-risk:10
+operations:12
+fullstack:0

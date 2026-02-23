@@ -1,0 +1,137 @@
+
+=== designer ===
+  Task 0: Intro to Company
+  Task 2: Designer Mindset
+  Task 3: The 5 Laws of Premium
+  Task 4: Color Psychology
+  Task 5: Typography Mastery
+  Task 6: Layout & Spacing
+  Task 7: Trust & Psychology
+  Task 8: Page-by-Page Guide
+  Task 9: Mobile-First Deep Dive
+  Task 10: Design QA & Handoff
+  Task 11: Figma Workflow
+  Task 12: Difficult Situations
+  Task 13: AI & Tools
+    🚀 Welcome to Digital Heroes - You Are Part of Something Bigger
+    🔗 The Interconnected Chain: Where YOU Fit
+    💰 THE $10,000 BUTTON STORY
+    🧠 PART 1: THE FUNDAMENTAL DIFFERENCE
+    🛡️ PART 2: ZERO TOLERANCE FOR CARELESS MISTAKES
+    📱 PART 3: MOBILE-FIRST IS NOT OPTIONAL
+    🎯 PART 4: THE DIGITAL HEROES DESIGN STANDARD
+    ✅ IMPLEMENTATION TASKS
+    🚀 Ready for the Quiz?
+    1. Whitespace = Luxury
+    2. Consistency is King
+    3. Hierarchy Guides the Eye
+    ✅ IMPLEMENTATION TASK: Hierarchy Check
+    🚀 Ready for the Quiz?
+    🎨 The 60-30-10 Rule
+    🧠 Industry Psychology
+    ✅ IMPLEMENTATION TASK: Palette Builder
+    🚀 Ready for the Quiz?
+    🔤 The 2-Font Rule
+    📏 Specs that Convert
+    ✅ IMPLEMENTATION TASK: Type Pairing
+    🚀 Ready for the Quiz?
+    📐 The 8px System
+    📱 Responsive Breakpoints
+    ✅ IMPLEMENTATION TASK: Spacing Audit
+    🚀 Ready for the Quiz?
+    ⭐ Social Proof Design
+    🖱️ CTA Psychology
+    ✅ IMPLEMENTATION TASK: Trust Signals
+    🚀 Ready for the Quiz?
+    🏠 Homepage Anatomy
+
+=== developer ===
+  Task 0: Intro to Company
+  Task 2: Developer Mindset
+  Task 3: Platform Fundamentals
+  Task 4: Theme Architecture
+  Task 5: Liquid Programming
+  Task 6: Product Page Optimization
+  Task 7: Speed Optimization
+  Task 8: Apps & Integrations
+  Task 9: Checkout & Policies
+  Task 10: QA & Testing
+  Task 11: Troubleshooting
+  Task 12: Crisis Management
+  Task 13: AI-Powered Development
+  Task 14: Career Growth & Final Exam
+    🚀 Welcome to Digital Heroes - You Are Part of Something Bigger
+    🔗 The Interconnected Chain: Where YOU Fit
+    🎯 Why Are You Here?
+    💰 The $50,000/Day Difference
+    👤 The Two Types of Developers
+    🛡️ Principle 1: Zero Tolerance for Bugs
+    ⚡ Principle 2: Speed is Revenue
+    📝 Principle 3: Plan Twice, Code Once
+    🔧 Principle 4: The 10x Developer Myth
+    📋 The Non-Negotiable Rules
+    ✅ The Quality Checklist
+    ✅ IMPLEMENTATION TASK: The Impact Calculation
+    🚀 Ready for the Quiz?
+    🏗️ Shopify is NOT WordPress
+    🏠 Online Store 2.0 Architecture
+    📦 The Data Model Hierarchy
+    🌍 Multi-Market & International
+    🔧 Shopify Limits You Must Know
+    ✅ IMPLEMENTATION TASK: Metafield Design
+    🚀 Ready for the Quiz?
+    🎨 Theme Selection Philosophy
+    🏠 The 12 Essential Homepage Sections
+    📱 Mobile-First Development
+    🚀 Ready for the Quiz?
+    💧 The Three Pillars of Liquid
+    📦 Core Shopify Objects
+    🔄 Loops & Iteration
+    🔀 Conditionals
+    🔧 Essential Filters
+    🧱 Metafields - Custom Data
+    📝 Section Schemas
+
+=== fiverr-risk ===
+  Task 0: Intro to Company
+  Task 2: Risk Manager Role
+  Task 3: Daily Health Check
+  Task 4: Daily Reporting
+  Task 5: Feedback Tracker
+  Task 6: Bonus Messages
+  Task 7: Cancelled Orders
+  Task 8: Cancellation Strategy
+  Task 9: Brief Response
+  Task 10: Delivery Risk
+  Task 11: Final Assessment
+    Welcome to Digital Heroes — You Are the Shield
+    THE RISK MANAGER'S MISSION
+    Primary Objectives
+    Accounts Under Management
+    CRITICAL: Daily Reporting is MANDATORY
+    Ready for the Quiz?
+    When to Perform
+    Per-Account Checklist (7 Items)
+    Pro Tip: The Order Matters
+    Ready for the Quiz?
+    MANDATORY: Report Every Single Day
+    Report Format — Per Account Breakdown
+    Good Report Example
+    Bad Report Example
+    Ready for the Quiz?
+    Centralized Google Sheet
+    The 30-Day Rule
+    Merge All Sheets
+    Ready for the Quiz?
+    When to Send Bonus Messages
+    When NOT to Send
+    Review Follow-Up Protocol
+    Even If Zero Messages Sent — REPORT IT
+    Ready for the Quiz?
+    RULE: EVERY Cancellation Gets a Support Ticket
+    5-Step Ticket Filing Process
+    What to Request in Every Ticket
+    48-Hour Follow-Up Rule
+    Ready for the Quiz?
+    GOLDEN RULE: NEVER Accept a Client-Initiated Cancellation
+    The 3-Step Cancellation Defense

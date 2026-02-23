@@ -1,0 +1,32 @@
+﻿
+=== QUIZ QUALITY AUDIT ===
+
+Module          Status          Qs    Scenario%   Generic%    Distribution
+------------------------------------------------------------------------------------------
+cs              GOOD            100   71%         0%          A=25 B=25 C=25 D=25
+sales           GOOD            110   32%         30%         A=28 B=27 C=27 D=28
+hr              GENERIC_BAD     100   1%          69%         A=25 B=25 C=25 D=25
+finance         GENERIC_BAD     100   6%          99%         A=25 B=25 C=25 D=25
+pm              GENERIC_BAD     100   6%          99%         A=25 B=25 C=25 D=25
+content         GENERIC_BAD     100   6%          99%         A=25 B=25 C=25 D=25
+social-media    GENERIC_BAD     100   6%          99%         A=25 B=25 C=25 D=25
+client-chat     GENERIC_BAD     100   6%          99%         A=25 B=25 C=25 D=25
+designer        GENERIC_BAD     100   8%          32%         A=25 B=25 C=25 D=25
+developer       LOW_SCENARIO    100   21%         0%          A=25 B=25 C=25 D=25
+wordpress       NO_ROLE_QUIZZES
+fiverr-risk     GENERIC_BAD     100   44%         44%         A=25 B=25 C=25 D=25
+operations      GOOD            130   45%         0%          A=33 B=32 C=32 D=33
+fullstack       NO_ROLE_QUIZZES
+
+=== MODULES NEEDING WORK ===
+  hr: GENERIC_BAD
+  finance: GENERIC_BAD
+  pm: GENERIC_BAD
+  content: GENERIC_BAD
+  social-media: GENERIC_BAD
+  client-chat: GENERIC_BAD
+  designer: GENERIC_BAD
+  developer: LOW_SCENARIO
+  wordpress: NO_ROLE_QUIZZES
+  fiverr-risk: GENERIC_BAD
+  fullstack: NO_ROLE_QUIZZES

@@ -1,0 +1,116 @@
+
+=== content ===
+  Task 0: Intro to Company
+  Task 2: Content Mindset
+  Task 3: SEO Fundamentals
+  Task 4: Product Descriptions
+  Task 5: Blog Strategy
+  Task 6: Email Copy
+  Task 7: Ad Copy
+  Task 8: Brand Voice & Style
+  Task 9: AI Content Tools
+  Task 10: Content QA
+  Task 11: Final Certification
+    🚀 Welcome to Digital Heroes - You Are Part of Something Bigger
+    🔗 The Interconnected Chain: Where YOU Fit
+    💰 The $10,000 Headline
+    🎯 The Writer's Responsibility
+    📊 Features vs Benefits - The Core Skill
+    🧠 The Psychology of Words
+    🔍 Why SEO Matters for Writers
+    📋 The Complete On-Page SEO Checklist
+    🎯 Keyword Intent Types
+    🛒 The PAS Formula (Problem-Agitate-Solve)
+    📝 The AIDA Formula
+    ⚡ Product Description Template
+    📝 The Perfect Blog Structure
+    🎯 Blog Title Formulas That Work
+    📊 Blog Content Checklist
+    ✉️ The Email Equation
+    📧 Subject Line Formulas
+    📊 Email Metrics to Track
+    📢 The Facebook/Meta Ad Structure
+    🎯 Ad Copy Best Practices
+    📊 Google Ads Headlines
+    🎯 What is Brand Voice?
+    📋 Brand Voice Components
+    🤖 The AI Content Renaissance
+    📝 ChatGPT Prompt Templates
+    ⚠️ AI Content Rules
+    ✅ The Content QA Checklist
+    🔧 Tools for QA
+    🎓 Certification Requirements
+    🏆 What You've Learned
+
+=== social-media ===
+  Task 0: Intro to Company
+  Task 2: Social Media Mindset
+  Task 3: Platform Mastery
+  Task 4: Content Creation
+  Task 5: Visual Design
+  Task 6: Hashtag Strategy
+  Task 7: Community Management
+  Task 8: Analytics & Insights
+  Task 9: Content Scheduling
+  Task 10: Trend Riding
+  Task 11: Final Certification
+    🚀 Welcome to Digital Heroes - You Are Part of Something Bigger
+    🔗 The Interconnected Chain: Where YOU Fit
+    📱 Why Social Media Matters for Business
+    🎯 The Social Media Professional's Role
+    📊 The Content Pillars
+    📱 Platform Comparison
+    📸 Instagram Algorithm 2024
+    📝 Content Types & Performance
+    🎯 Caption Formula
+    🎨 Design Principles
+    #️⃣ Hashtag Mix Formula
+    💬 Engagement Rules
+    📊 Metrics That Matter
+    📅 Posting Frequency
+    🔥 How to Ride Trends
+    🎓 Requirements
+
+=== client-chat ===
+  Task 0: Intro to Company
+  Task 2: Chat Chat Mindset
+  Task 3: Company Knowledge
+  Task 4: Tonality Mastery
+  Task 5: Objection Handling
+  Task 6: Speed Tools
+  Task 7: The Perfect Close
+  Task 8: System Hygiene
+  Task 9: Firefighter Training
+  Task 10: Role Play
+  Task 11: Live Chat Simulation
+    🚀 Welcome to Digital Heroes - You Are Part of Something Bigger
+    🔗 The Interconnected Chain: Where YOU Fit
+    ⚡ THE 60-SECOND RULE
+    🧠 PART 1: PSYCHOLOGY OF LIVE CHAT
+    🤖 PART 2: ROBOT VS HUMAN
+    🎯 PART 3: THE CONVERSION FRAMEWORK
+    ⚡ PART 4: SPEED OPTIMIZATION
+    ✅ IMPLEMENTATION TASKS
+    🚀 Ready for the Quiz?
+    💰 Pricing
+    🚚 Shipping
+    ✅ IMPLEMENTATION TASK: Memory
+    🚀 Ready for the Quiz?
+    🎭 Mirroring
+    🚫 Negative Words
+    ✅ IMPLEMENTATION TASK: Rewrite
+    🚀 Ready for the Quiz?
+    🛡️ "Too Expensive"
+    🛡️ "Just Looking"
+    ✅ IMPLEMENTATION TASK: The Pivot
+    🚀 Ready for the Quiz?
+    ⚡ Saved Replies
+    ⚡ Shortcuts
+    ✅ IMPLEMENTATION TASK: Macro Creation
+    🚀 Ready for the Quiz?
+    🤝 Assumptive Close
+    🤝 Alternative Close
+    ✅ IMPLEMENTATION TASK: Closing
+    🚀 Ready for the Quiz?
+    🏷️ Tagging
+    ✅ Closing Tickets

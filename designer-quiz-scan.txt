@@ -1,0 +1,154 @@
+3: // 12 Tasks, 150+ Quiz Questions, Premium Design Standard
+634: <h3>🚀 Ready for the Quiz?</h3>
+670: <h3>🚀 Ready for the Quiz?</h3>
+709: <h3>🚀 Ready for the Quiz?</h3>
+743: <h3>🚀 Ready for the Quiz?</h3>
+778: <h3>🚀 Ready for the Quiz?</h3>
+814: <h3>🚀 Ready for the Quiz?</h3>
+854: <h3>🚀 Ready for the Quiz?</h3>
+889: <h3>🚀 Ready for the Quiz?</h3>
+924: <h3>🚀 Ready for the Quiz?</h3>
+960: <h3>🚀 Ready for the Quiz?</h3>
+991: <h3>🚀 Ready for the Quiz?</h3>
+1032: const quizQuestions = [
+1077: // QUIZ QUESTIONS FOR EACH TASK
+1081: const task0Quiz = [
+1082: { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According
+1083: { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is
+1084: { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹15-20 Crores", "₹40 Crores", 
+1085: { q: "A team member is spreading negative talk about a colleague. According to the handbook's zero-t
+1086: { q: "You want to apply for casual leave next week. What is the correct procedure?", o: ["Post in #a
+1087: { q: "According to the company's equity-sharing model, who is eligible from Day 1?", o: ["Only full-
+1088: { q: "Your manager sends you a message. According to the communication protocol, what is the maximum
+1089: { q: "During your first month (probation), you want to take a day off for a personal event. What doe
+1090: { q: "A client is frustrated and being difficult. According to the Digital Heroes philosophy, how sh
+1091: { q: "You've been working from home and your internet drops frequently. According to WFH policy, wha
+1092: { q: "What happens if you achieve a KPI score of 55% during your performance review?", o: ["5-10% in
+1093: { q: "You discover a colleague is taking freelance Shopify projects on the side. According to the ha
+1094: { q: "Which statement best reflects the Digital Heroes manifesto about talent?", o: ["Talent is irre
+1095: { q: "Your notice period as a confirmed employee who wants to resign is:", o: ["7 days", "30 days", 
+1096: { q: "According to the handbook, what is an SOP and how should employees treat it?", o: ["A flexible
+1099: const task2Quiz = [
+1100: { q: "The $10,000 Button Story teaches that a simple button color change increased revenue by $10,00
+1101: { q: "The Fundamental Difference between amateur and professional designers is:", o: ["Professional 
+1102: { q: "Zero Tolerance for Careless Mistakes means:", o: ["Designers should never make any mistakes", 
+1103: { q: "Mobile-First is NOT Optional because:", o: ["Responsive design is the latest trend", "70%+ of 
+1104: { q: "The Digital Heroes Design Standard requires:", o: ["Following the latest design trends", "Prem
+1105: { q: "A designer delivers a homepage where the CTA button blends into the background. This is:", o: 
+1106: { q: "WHY does carelessness in design cost more than just aesthetics?", o: ["It only affects visual 
+1107: { q: "The Interconnected Chain positions designers as:", o: ["Independent artists who work alone", "
+1108: { q: "A client says 'Make it pop.' The professional designer's response is:", o: ["Add more colors a
+1109: { q: "Implementation Task: The impact calculation shows designers that:", o: ["They're just making t
+1112: const task3Quiz = [
+1113: { q: "Law 1: Whitespace = Luxury. A crowded Shopify homepage with zero whitespace signals:", o: ["Ef
+1114: { q: "Law 2: Consistency is King. Using 5 different fonts across a store means:", o: ["Creative vari
+1115: { q: "Law 3: Hierarchy Guides the Eye. Without visual hierarchy, a product page:", o: ["Looks clean 
+1116: { q: "Hierarchy Check implementation: The three levels of visual hierarchy on a product page should 
+1117: { q: "Whitespace doesn't mean 'empty space' — it means:", o: ["Unused areas that waste screen real e
+1118: { q: "A client asks you to 'fill up the empty space' on a premium jewelry store homepage. You should
+1119: { q: "Consistency applies to:", o: ["Only font choices across the store", "EVERYTHING — fonts, color
+1120: { q: "The 5 Laws of Premium work together because:", o: ["They're independent rules for different si
+1121: { q: "Visual hierarchy is achieved through:", o: ["Using many colors", "Size contrast, color contras
+1122: { q: "A store design passes the '5-second test' when:", o: ["Users can read all the text in 5 second
+1125: const task4Quiz = [
+1126: { q: "The 60-30-10 Rule means:", o: ["60% of colors should be warm tones", "60% dominant color, 30% 
+1127: { q: "Industry Psychology: A health/wellness store using RED as primary color fails because:", o: ["
+1128: { q: "Using black, white, and gold for a luxury brand is effective because:", o: ["These are the mos
+1129: { q: "Palette Builder implementation: You create a palette for a children's toy store. The best appr
+1130: { q: "The 10% accent color should be used for:", o: ["Background areas and large sections", "CTAs an
+1131: { q: "A fashion store uses 8 different colors with no dominant palette. The problem is:", o: ["Store
+1132: { q: "Blue is the most-used color in FinTech/banking because:", o: ["Blue is universally liked", "Bl
+1133: { q: "The 60% dominant color is typically used for:", o: ["CTA buttons and links", "Backgrounds, lar
+1134: { q: "Color contrast accessibility: A light yellow CTA on a white background fails because:", o: ["Y
+1135: { q: "Choosing colors based on 'what looks nice' instead of psychology is wrong because:", o: ["Pers
+1138: const task5Quiz = [
+1139: { q: "The 2-Font Rule means:", o: ["Use exactly 2 fonts from the same family", "Maximum 2 font famil
+1140: { q: "Specs that Convert: Body text below 16px on mobile is:", o: ["Standard and acceptable", "Too s
+1141: { q: "Type Pairing: Combining two very similar sans-serif fonts (e.g., Arial and Helvetica) is wrong
+1142: { q: "Line height for body text should be:", o: ["1.0 — tight for a compact look", "1.4-1.6 — enough
+1143: { q: "Heading font: Playfair Display (serif) + Body font: Inter (sans-serif) works because:", o: ["T
+1144: { q: "Font weight for CTAs should be:", o: ["Light/thin for elegance", "Bold/semi-bold — CTA text mu
+1145: { q: "Using Comic Sans on a luxury store destroys credibility because:", o: ["Comic Sans is technica
+1146: { q: "Letter-spacing (tracking) for uppercase headings should be:", o: ["Zero — uppercase letters do
+1147: { q: "Maximum characters per line for body text should be:", o: ["As many as the container allows", 
+1148: { q: "A store uses 4 different fonts: one for headings, one for body, one for navigation, one for bu
+1151: const task6Quiz = [
+1152: { q: "The 8px System means all spacing values must be:", o: ["Exactly 8 pixels everywhere", "Multipl
+1153: { q: "Responsive Breakpoints priority: Which screen size gets designed FIRST?", o: ["Desktop (1440px
+1154: { q: "Spacing Audit implementation: A product grid has 12px gaps between cards on desktop. On mobile
+1155: { q: "Section padding using the 8px system: 47px padding is wrong because:", o: ["47px is too small 
+1156: { q: "Why does the 8px system create better designs than arbitrary spacing?", o: ["It's faster to ca
+1157: { q: "Responsive breakpoint at 768px (tablet): A 4-column product grid should become:", o: ["Still 4
+1158: { q: "Touch targets on mobile must be minimum:", o: ["24px — compact design", "44px × 44px — Apple's
+1159: { q: "Vertical rhythm in a page uses the 8px system to:", o: ["Make the page exactly 8 sections tall
+1160: { q: "A layout has perfect desktop spacing but everything overlaps on mobile. This means:", o: ["Mob
+1161: { q: "Container max-width on desktop should be:", o: ["100% of the screen — use all available space"
+1164: const task7Quiz = [
+1165: { q: "Social Proof Design: Reviews displayed with star ratings convert better than text-only reviews
+1166: { q: "CTA Psychology: A green 'Add to Cart' button on a green-themed store fails because:", o: ["Gre
+1167: { q: "Trust signals placement: Trust badges (SSL, payment logos, guarantees) should appear:", o: ["O
+1168: { q: "CTA button text: 'Submit' vs 'Get My Free Guide' — the second wins because:", o: ["It has more
+1169: { q: "Social proof design principle: 'Above the fold' placement of review count ('★★★★★ 2,847 Review
+1170: { q: "CTA button size should be:", o: ["As large as possible for maximum visibility", "Large enough 
+1171: { q: "Trust-building through design: A clean, well-organized checkout page vs a cluttered one:", o: 
+1172: { q: "Urgency triggers ('Only 3 left!') in design should:", o: ["Be fake — always show low stock num
+1173: { q: "Photo vs illustration for trust: Product photos with real people using the product convert bet
+1174: { q: "The combination of social proof + CTA psychology creates:", o: ["Visual clutter on the page", 
+1177: const task8Quiz = [
+1178: { q: "Homepage Anatomy: The hero section's #1 job is:", o: ["Show a beautiful image", "Communicate t
+1179: { q: "Product page design: The product image should take what percentage of above-the-fold space?", 
+1180: { q: "Collection page design: Filter functionality placement should be:", o: ["Hidden in a dropdown 
+1181: { q: "About page design mistake: A wall of text with no images or visual breaks:", o: ["Shows the br
+1182: { q: "Cart page design must include:", o: ["Only the list of products", "Product thumbnails, quantit
+1183: { q: "Blog page design: Long paragraphs without images or visual breaks:", o: ["Show content depth a
+1184: { q: "Product page: Multiple product images vs single image:", o: ["Single image is cleaner and more
+1185: { q: "Footer design should include:", o: ["Only the copyright notice", "Navigation links, contact in
+1186: { q: "Homepage featured products section: Showing 20 products in a grid is:", o: ["Great — more choi
+1187: { q: "Contact page usability: A form with 15 required fields will:", o: ["Capture comprehensive cust
+1190: const task9Quiz = [
+1191: { q: "Mobile-First Deep Dive: Designing for 375px width first, then scaling up to 1440px is better t
+1192: { q: "Mobile navigation: A hamburger menu with 15 items deep is:", o: ["Standard for stores with man
+1193: { q: "Mobile product images: Pinch-to-zoom on product photos is:", o: ["Nice-to-have but not essenti
+1194: { q: "Mobile CTA: Having the 'Add to Cart' button below the fold (requires scrolling) means:", o: ["
+1195: { q: "Mobile font sizes: Desktop heading at 48px should typically become on mobile:", o: ["48px — ma
+1196: { q: "Thumb zone on mobile: Interactive elements should be placed:", o: ["At the top of the screen f
+1197: { q: "Mobile checkout: A 5-step checkout (Shipping → Billing → Summary → Payment → Confirm) should b
+1198: { q: "Mobile pop-ups covering the full screen are:", o: ["Effective for capturing attention", "Penal
+1199: { q: "Loading skeleton screens (grey blocks while loading) are better than spinners on mobile becaus
+1200: { q: "Mobile image optimization: A 4MB hero image on mobile causes:", o: ["Beautiful display quality
+1203: const task10Quiz = [
+1204: { q: "Design QA: Checking a store at exactly 375px, 768px, and 1440px is:", o: ["Sufficient for all 
+1205: { q: "Handoff to developer: Providing a Figma file without annotations means:", o: ["Clean, minimal 
+1206: { q: "Design QA catches: CTA button text says 'Click Here' on a mobile site. The issue is:", o: ["'C
+1207: { q: "Cross-browser testing: A design looks perfect in Chrome but broken in Safari. This means:", o:
+1208: { q: "Handoff documentation should include:", o: ["Only the Figma link", "Fonts used, color hex code
+1209: { q: "Design QA: Images with no alt text fail QA for:", o: ["Visual reasons", "Accessibility (screen
+1210: { q: "Version control in design: Not labeling versions (v1, v2, v3) causes:", o: ["Cleaner file mana
+1211: { q: "QA: Color contrast ratio for body text should be minimum:", o: ["2:1 — visible is enough", "4.
+1212: { q: "Developer handoff: Exporting assets at 1x only (no 2x or 3x) means:", o: ["Faster development 
+1213: { q: "Design QA sign-off should include:", o: ["Designer self-approval only", "Desktop + mobile scre
+1216: const task11Quiz = [
+1217: { q: "Figma Components/Instances: Creating a reusable button component helps because:", o: ["It redu
+1218: { q: "Auto Layout in Figma simulates:", o: ["Animation and motion design", "Responsive behavior — el
+1219: { q: "Figma naming convention: 'Frame 182' vs 'Hero Section / Desktop / v3' matters because:", o: ["
+1220: { q: "Design tokens in Figma (stored colors, font styles) ensure:", o: ["Prettier Figma files", "One
+1221: { q: "Prototyping in Figma before development helps:", o: ["Only for client presentations", "Validat
+1222: { q: "Organizing Figma pages: Having all screens on one giant page is:", o: ["Standard for small pro
+1223: { q: "Figma variants for a button component (Primary, Secondary, Disabled, Hover) prevent:", o: ["Ha
+1224: { q: "Figma Dev Mode helps developers by:", o: ["Automatically writing code", "Showing CSS values, s
+1225: { q: "A Figma file for a Shopify store should include sections for:", o: ["Only homepage and product
+1226: { q: "Figma comments during client review should:", o: ["Be resolved without reading them", "Be addr
+1245: const allQuizzes = [
+1246: task0Quiz,
+1247: task2Quiz,
+1248: task3Quiz,
+1249: task4Quiz,
+1250: task5Quiz,
+1251: task6Quiz,
+1252: task7Quiz,
+1253: task8Quiz,
+1254: task9Quiz,
+1255: task10Quiz,
+1256: task11Quiz,
+1257: [] /* no quiz var for position 11 */,
+1258: [] /* no quiz var for position 12 */

@@ -1,0 +1,40 @@
+﻿
+=== FINANCE ===
+  Q: What is the core mindset for this role?
+  Q: Digital Heroes standard is:
+  Tasks: 11
+
+=== PM ===
+  Q: What is the core mindset for this role?
+  Q: Digital Heroes standard is:
+  Tasks: 11
+
+=== CONTENT ===
+  Q: What is the core mindset for this role?
+  Q: Digital Heroes standard is:
+  Tasks: 11
+
+=== SOCIAL-MEDIA ===
+  Q: What is the core mindset for this role?
+  Q: Digital Heroes standard is:
+  Tasks: 11
+
+=== CLIENT-CHAT ===
+  Q: What is the core mindset for this role?
+  Q: Digital Heroes standard is:
+  Tasks: 11
+
+=== DESIGNER ===
+  Q: The '$10,000 Button Story' teaches us that design is really about:
+  Q: A customer subconsciously loses trust when they notice a button is 2px off-cente
+  Tasks: 13
+
+=== DEVELOPER ===
+  Q: A client's checkout breaks at 2am on Black Friday. What defines a Digital Heroes
+  Q: A broken checkout for 4 hours on a store doing $50K/day costs approximately:
+  Tasks: 14
+
+=== FIVERR-RISK ===
+  Q: How many Fiverr accounts does the Risk Manager monitor?
+  Q: What is the PRIMARY mission of the Risk Manager?
+  Tasks: 11

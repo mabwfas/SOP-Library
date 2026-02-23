@@ -1,0 +1,328 @@
+[
+  {
+    "file": "client-chat-training-data.js",
+    "tot": 112,
+    "cl": 5,
+    "longestPct": 4,
+    "ow": 1,
+    "scenario": 31,
+    "scenarioPct": 28,
+    "dist": {
+      "0": 28,
+      "1": 28,
+      "2": 28,
+      "3": 28
+    },
+    "status": "✅",
+    "issues": [],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "content-training-data.js",
+    "tot": 164,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 3,
+    "scenario": 17,
+    "scenarioPct": 10,
+    "dist": {
+      "0": 41,
+      "1": 41,
+      "2": 41,
+      "3": 41
+    },
+    "status": "✅",
+    "issues": [
+      "low-scenario=10%"
+    ],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "cs-training-data.js",
+    "tot": 115,
+    "cl": 92,
+    "longestPct": 80,
+    "ow": 30,
+    "scenario": 84,
+    "scenarioPct": 73,
+    "dist": {
+      "0": 29,
+      "1": 29,
+      "2": 29,
+      "3": 28
+    },
+    "status": "⚠️",
+    "issues": [
+      "longest=80%"
+    ],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "designer-training-data.js",
+    "tot": 135,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 5,
+    "scenario": 25,
+    "scenarioPct": 19,
+    "dist": {
+      "0": 34,
+      "1": 34,
+      "2": 34,
+      "3": 33
+    },
+    "status": "✅",
+    "issues": [
+      "low-scenario=19%"
+    ],
+    "quizVars": 13,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "developer-training-data.js",
+    "tot": 154,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 3,
+    "scenario": 29,
+    "scenarioPct": 19,
+    "dist": {
+      "0": 39,
+      "1": 39,
+      "2": 38,
+      "3": 38
+    },
+    "status": "✅",
+    "issues": [
+      "low-scenario=19%"
+    ],
+    "quizVars": 14,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "finance-training-data.js",
+    "tot": 125,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 6,
+    "scenario": 48,
+    "scenarioPct": 38,
+    "dist": {
+      "0": 32,
+      "1": 31,
+      "2": 31,
+      "3": 31
+    },
+    "status": "✅",
+    "issues": [],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "fiverr-risk-training-data.js",
+    "tot": 120,
+    "cl": 4,
+    "longestPct": 3,
+    "ow": 0,
+    "scenario": 50,
+    "scenarioPct": 42,
+    "dist": {
+      "0": 30,
+      "1": 30,
+      "2": 30,
+      "3": 30
+    },
+    "status": "✅",
+    "issues": [],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "fullstack-training-data-part2.js",
+    "tot": 100,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 13,
+    "scenario": 5,
+    "scenarioPct": 5,
+    "dist": {
+      "0": 25,
+      "1": 25,
+      "2": 25,
+      "3": 25
+    },
+    "status": "✅",
+    "issues": [
+      "low-scenario=5%"
+    ],
+    "quizVars": 10,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "fullstack-training-data.js",
+    "tot": 15,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 1,
+    "scenario": 8,
+    "scenarioPct": 53,
+    "dist": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 3
+    },
+    "status": "✅",
+    "issues": [],
+    "quizVars": 1,
+    "hasAllQuizzes": false
+  },
+  {
+    "file": "hr-training-data-new.js",
+    "tot": 140,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 15,
+    "scenario": 75,
+    "scenarioPct": 54,
+    "dist": {
+      "0": 35,
+      "1": 35,
+      "2": 35,
+      "3": 35
+    },
+    "status": "✅",
+    "issues": [],
+    "quizVars": 14,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "hr-training-data.js",
+    "tot": 115,
+    "cl": 79,
+    "longestPct": 69,
+    "ow": 59,
+    "scenario": 17,
+    "scenarioPct": 15,
+    "dist": {
+      "0": 29,
+      "1": 29,
+      "2": 29,
+      "3": 28
+    },
+    "status": "⚠️",
+    "issues": [
+      "longest=69%",
+      "only=59",
+      "low-scenario=15%"
+    ],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "operations-training-data.js",
+    "tot": 142,
+    "cl": 123,
+    "longestPct": 87,
+    "ow": 38,
+    "scenario": 86,
+    "scenarioPct": 61,
+    "dist": {
+      "0": 37,
+      "1": 35,
+      "2": 34,
+      "3": 36
+    },
+    "status": "⚠️",
+    "issues": [
+      "longest=87%"
+    ],
+    "quizVars": 13,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "pm-training-data.js",
+    "tot": 153,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 1,
+    "scenario": 64,
+    "scenarioPct": 42,
+    "dist": {
+      "0": 39,
+      "1": 38,
+      "2": 38,
+      "3": 38
+    },
+    "status": "✅",
+    "issues": [],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "sales-training-data.js",
+    "tot": 125,
+    "cl": 101,
+    "longestPct": 81,
+    "ow": 19,
+    "scenario": 41,
+    "scenarioPct": 33,
+    "dist": {
+      "0": 32,
+      "1": 31,
+      "2": 31,
+      "3": 31
+    },
+    "status": "⚠️",
+    "issues": [
+      "longest=81%"
+    ],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "social-media-training-data.js",
+    "tot": 125,
+    "cl": 1,
+    "longestPct": 1,
+    "ow": 1,
+    "scenario": 21,
+    "scenarioPct": 17,
+    "dist": {
+      "0": 32,
+      "1": 31,
+      "2": 31,
+      "3": 31
+    },
+    "status": "✅",
+    "issues": [
+      "low-scenario=17%"
+    ],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  },
+  {
+    "file": "wordpress-training-data.js",
+    "tot": 114,
+    "cl": 0,
+    "longestPct": 0,
+    "ow": 36,
+    "scenario": 28,
+    "scenarioPct": 25,
+    "dist": {
+      "0": 29,
+      "1": 29,
+      "2": 28,
+      "3": 28
+    },
+    "status": "⚠️",
+    "issues": [
+      "only=36"
+    ],
+    "quizVars": 11,
+    "hasAllQuizzes": true
+  }
+]
