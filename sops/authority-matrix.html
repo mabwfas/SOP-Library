@@ -253,13 +253,147 @@
             font-size: 0.85rem;
         }
 
+        /* ========== MOBILE OPTIMIZATION ========== */
         @media (max-width: 768px) {
+            .container {
+                padding: 15px 10px;
+            }
+
+            .back-btn {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+            }
+
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+                border-radius: 14px;
+            }
+
             .header h1 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+
+            .header p {
+                font-size: 0.9rem;
+            }
+
+            .purpose-box {
+                padding: 18px 14px;
+                margin-bottom: 20px;
+                border-radius: 12px;
+            }
+
+            .purpose-box h2 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+
+            .purpose-box p {
+                font-size: 0.9rem;
+            }
+
+            /* Legend grid */
+            .legend {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+
+            .legend-item {
+                padding: 10px;
+                gap: 8px;
+            }
+
+            .legend-dot {
+                width: 14px;
+                height: 14px;
+            }
+
+            .legend-text {
+                font-size: 0.75rem;
+            }
+
+            /* Sections */
+            .section {
+                padding: 16px 12px;
+                margin-bottom: 16px;
+                border-radius: 12px;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+                margin-bottom: 16px;
+                padding-bottom: 10px;
+                flex-wrap: wrap;
+                line-height: 1.4;
+            }
+
+            /* Decision cards */
+            .decision-card {
+                padding: 14px 12px;
+                margin-bottom: 14px;
+                border-radius: 10px;
+            }
+
+            .decision-header {
+                margin-bottom: 12px;
+            }
+
+            .decision-title {
+                font-size: 0.95rem;
+            }
+
+            .decision-badge {
+                font-size: 0.65rem;
+                padding: 3px 8px;
             }
 
             .decision-row {
                 grid-template-columns: 1fr;
+                gap: 2px;
+                margin-bottom: 10px;
+            }
+
+            .decision-label {
+                font-size: 0.7rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: #A78BFA;
+            }
+
+            .decision-value {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+            .footer {
+                padding: 20px 10px;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            .section-title {
+                font-size: 1rem;
+            }
+
+            .legend {
+                grid-template-columns: 1fr;
+            }
+
+            .decision-title {
+                font-size: 0.9rem;
+            }
+
+            .decision-value {
+                font-size: 0.8rem;
             }
         }
     </style>
