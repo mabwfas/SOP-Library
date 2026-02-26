@@ -3,7 +3,7 @@
 // 13 Tasks, 150+ Quiz Questions, Tech Stack Mastery
 
 const trainingTasks = [
-    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
+    { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
     {
         id: 2,
         title: "Full Stack Mindset",
@@ -163,7 +163,7 @@ const trainingTasks = [
 ];
 
 
-const task0Content = `
+const task1Content = `
 <h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
@@ -1418,7 +1418,7 @@ const quizQuestions = [
 ];
 
 // Make task content available globally for openTask() function
-if (typeof task0Content !== 'undefined') window.task0Content = task0Content;
+if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
 if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
 if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
@@ -1433,7 +1433,7 @@ if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
 if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
 
 
-const task0Quiz = [
+const task1Quiz = [
     { q: "You just joined Digital Heroes. A colleague asks about your salary during lunch. What should you do?", o: ["Politely decline - discussing salary leads to immediate termination", "Share it openly — this reflects the standard operating procedure most development teams follow", "Share primarily with close friends", "Tell them a lower number — this reflects the standard operating procedure most development teams follow"], c: 0 },
     { q: "You arrive at the office at 9:20 AM without prior notice. What is the immediate consequence?", o: ["Verbal warning", "Half-day salary deduction", "Written warning recorded", "No consequence if less than 30 mins late"], c: 1 },
     { q: "What is Digital Heroes Point B revenue target for 2027?", o: ["15-20 Crores", "40 Crores", "75 Crores", "100 Crores"], c: 2 },

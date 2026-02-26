@@ -3,7 +3,7 @@
 // 10 Tasks, 100+ Quiz Questions, Speed & Empathy Mastery
 
 const trainingTasks = [
-    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
+    { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
     {
         id: 2,
         title: "Chat Chat Mindset",
@@ -127,7 +127,7 @@ const trainingTasks = [
 ];
 
 
-const task0Content = `
+const task1Content = `
 <h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
@@ -908,7 +908,7 @@ const quizQuestions = [
 // =============================================================================
 
 
-const task0Quiz = [
+const task1Quiz = [
     { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According to the handbook, what should you do?", o: ["Share primarily with close friends on the team", "Share it openly — transparency builds trust", "Politely decline — discussing salary with colleagues leads to immediate termination", "Tell them a lower number to avoid jealousy — following this approach systematically prevents common mistakes and keeps the workflow predictable"], c: 2 },
     { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is the immediate consequence?", o: ["Verbal warning for the first time", "Written warning recorded in your file", "Half-day salary deduction", "No consequence if it's less than 30 minutes late"], c: 2 },
     { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹75 Crores", "₹40 Crores", "₹15-20 Crores", "₹100 Crores"], c: 0 },
@@ -1070,7 +1070,7 @@ if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
 if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
 
 const allQuizzes = [
-    task0Quiz,
+    task1Quiz,
     task2Quiz,
     task3Quiz,
     task4Quiz,

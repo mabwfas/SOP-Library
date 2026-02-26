@@ -3,7 +3,7 @@
 // 10 Tasks, 100+ Quiz Questions, Deep Content
 
 const trainingTasks = [
-    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
+    { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
     {
         id: 2,
         title: "WordPress Developer Mindset",
@@ -130,7 +130,7 @@ const trainingTasks = [
 // TASK 1: WORDPRESS DEVELOPER MINDSET
 // =============================================================================
 
-const task0Content = `
+const task1Content = `
 <h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
@@ -1190,7 +1190,7 @@ const task11Content = `
 console.log("WordPress Developer Training Data Loaded!");
 
 
-const task0Quiz = [
+const task1Quiz = [
     { q: "You just joined Digital Heroes. A colleague asks about your salary during lunch. What should you do?", o: ["Politely decline - discussing salary leads to immediate termination", "Share it openly — this reflects the standard operating procedure most WordPress teams follow", "Share only with close friends — this reflects the standard operating procedure most WordPress teams follow", "Tell them a lower number — this reflects the standard operating procedure most WordPress teams follow"], c: 0 },
     { q: "You arrive at the office at 9:20 AM without prior notice. What is the immediate consequence?", o: ["Verbal warning", "Half-day salary deduction", "Written warning recorded", "No consequence if less than 30 mins late"], c: 1 },
     { q: "What is Digital Heroes Point B revenue target for 2027?", o: ["15-20 Crores", "40 Crores", "75 Crores", "100 Crores"], c: 2 },
@@ -1339,7 +1339,7 @@ const task11Quiz = [
 ];
 
 const allQuizzes = [
-    task0Quiz,
+    task1Quiz,
     task2Quiz,
     task3Quiz,
     task4Quiz,

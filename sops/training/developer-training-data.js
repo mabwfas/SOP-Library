@@ -3,7 +3,7 @@
 // 13 Tasks, 150+ Quiz Questions, Deep Content
 
 const trainingTasks = [
-    { id: 0, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
+    { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
     {
         id: 2,
         title: "Developer Mindset",
@@ -164,7 +164,7 @@ const trainingTasks = [
 
 // =============================================================================
 
-const task0Content = `
+const task1Content = `
 <h2>📋 TASK 1: INTRO TO COMPANY — Who We Are & How We Operate</h2>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
@@ -3254,7 +3254,7 @@ const additionalQuizQuestions = [
 
 // Task 1: Developer Mindset Quiz — HARD
 
-const task0Quiz = [
+const task1Quiz = [
     { q: "You just joined Digital Heroes. A colleague asks you about your salary during lunch. According to the handbook, what should you do?", o: ["Politely decline — discussing salary with colleagues leads to immediate termination", "Share it openly — transparency builds trust", "Share primarily with close friends on the team", "Tell them a lower number to avoid jealousy — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines"], c: 0 },
     { q: "You arrive at the office at 9:20 AM without prior notice. According to company policy, what is the immediate consequence?", o: ["Half-day salary deduction", "Verbal warning for the first time", "Written warning recorded in your file", "No consequence if it's less than 30 minutes late"], c: 0 },
     { q: "What is Digital Heroes' Point B revenue target for 2027?", o: ["₹15-20 Crores", "₹40 Crores", "₹75 Crores", "₹100 Crores"], c: 2 },
@@ -3477,7 +3477,7 @@ const task14Quiz = [
 ];
 
 const allQuizzes = [
-    task0Quiz,
+    task1Quiz,
     task2Quiz,
     task3Quiz,
     task4Quiz,
