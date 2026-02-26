@@ -61,7 +61,7 @@ const pdps = {
         <table class="styled-table">
             <tr><th>Level</th><th>Monthly Target</th><th>Skills Required</th><th>Commission</th></tr>
             <tr><td><strong>Trainee</strong></td><td>$5,000</td><td>Basic qualifying, Response templates</td><td>3%</td></tr>
-            <tr><td><strong>Sales Rep</strong></td><td>$15,000</td><td>Full qualification, Objection handling</td><td>5%</td></tr>
+            <tr><td><strong>Sales Rep</strong></td><td>$15,000</td><td>Full qualification, Objection handling</td><td>As per I&P Framework</td></tr>
             <tr><td><strong>Senior Rep</strong></td><td>$30,000</td><td>Enterprise deals, Upselling</td><td>7%</td></tr>
             <tr><td><strong>Sales Lead</strong></td><td>$50,000+</td><td>Team mentoring, Process optimization</td><td>10%</td></tr>
         </table>

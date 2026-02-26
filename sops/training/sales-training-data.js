@@ -338,7 +338,7 @@ const task0Content = `
         <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
         <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
         <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
-        <li><strong>Sales incentives?</strong> 5% of sales exceeding USD 5,000/month.</li>
+        <li><strong>Sales incentives?</strong> Commission-based structure as per the Incentive & Penalty Framework. Refer to the latest incentive-penalty page for current rates and tiers.</li>
         <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
     </ul>
 </div>
@@ -821,43 +821,22 @@ const task3Content = `
 <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
         <div>
-            <h3 style="color: #10B981; border: none; margin: 0;">5% Commission</h3>
-            <p style="margin: 5px 0 0 0; color: #CBD5E1;">On all projects above $5,000</p>
+            <h3 style="color: #10B981; border: none; margin: 0;">Commission Structure</h3>
+            <p style="margin: 5px 0 0 0; color: #CBD5E1;">Tiered rates based on deal value</p>
         </div>
         <div style="text-align: right;">
-            <div style="font-size: 1.5em; font-weight: 700; color: #FFF;">Passive Income</div>
-            <div style="color: #94A3B8; font-size: 0.9em;">(Paid on Milestone Completion)</div>
+            <div style="font-size: 1.5em; font-weight: 700; color: #FFF;">Performance-Based</div>
+            <div style="color: #94A3B8; font-size: 0.9em;">(As per Incentive & Penalty Framework)</div>
         </div>
     </div>
 </div>
 
-<table style="width: 100%; margin: 25px 0; border-collapse: separate; border-spacing: 0 10px;">
-    <thead>
-        <tr style="color: #94A3B8; text-align: left;">
-            <th style="padding: 10px;">Project Value</th>
-            <th style="padding: 10px;">Your Commission</th>
-            <th style="padding: 10px;">Example Check</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr style="background: rgba(255,255,255,0.03);">
-            <td style="padding: 15px; border-radius: 8px 0 0 8px;"><strong>Under $5,000</strong></td>
-            <td style="padding: 15px;">0% (Base Salary Only)</td>
-            <td style="padding: 15px; border-radius: 0 8px 8px 0; color: #94A3B8;">$0</td>
-        </tr>
-        <tr style="background: rgba(16, 185, 129, 0.1);">
-            <td style="padding: 15px; border-radius: 8px 0 0 8px;"><strong>$6,000 Project</strong></td>
-            <td style="padding: 15px; color: #10B981; font-weight: bold;">5% Flat</td>
-            <td style="padding: 15px; border-radius: 0 8px 8px 0; color: #10B981; font-weight: bold;">$300</td>
-        </tr>
-        <tr style="background: rgba(16, 185, 129, 0.2);">
-            <td style="padding: 15px; border-radius: 8px 0 0 8px;"><strong>$10,000 Project</strong></td>
-            <td style="padding: 15px; color: #10B981; font-weight: bold;">5% Flat</td>
-            <td style="padding: 15px; border-radius: 0 8px 8px 0; color: #10B981; font-weight: bold;">$500</td>
-        </tr>
-    </tbody>
-</table>
-<p style="font-size: 0.9em; opacity: 0.7;">*Note: Commission is paid 7 days after the client's final payment clears. No commission on "MVP" or discounted packages (which we shouldn't be selling anyway).</p>
+<div class="highlight-box">
+    <strong>📋 Commission Details:</strong><br><br>
+    Sales commissions are structured in tiers based on deal value — including Starter, Standard, and High-Value closure rates, plus target overachievement bonuses and enterprise acquisition bonuses.<br><br>
+    <strong>👉 Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for the latest commission rates, tiers, and bonus structures.</strong><br><br>
+    <em style="color: #94A3B8;">The I&P page is the single source of truth for all current incentive rates.</em>
+</div>
 </div>
 
 <div class="content-section">

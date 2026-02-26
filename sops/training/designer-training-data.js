@@ -364,7 +364,7 @@ const task0Content = `
         <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
         <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
         <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
-        <li><strong>Sales incentives?</strong> 5% of sales exceeding USD 5,000/month.</li>
+        <li><strong>Sales incentives?</strong> Commission-based structure as per the Incentive & Penalty Framework. Refer to the latest incentive-penalty page for current rates and tiers.</li>
         <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
     </ul>
 </div>
