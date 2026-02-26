@@ -2806,6 +2806,8 @@ const task11Quiz = [
 
 
 // Make task content available globally for openTask() function
+if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
+if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
 window.task3Content = task3Content;
 window.task4Content = typeof task4Content !== 'undefined' ? task4Content : null;
 window.task5Content = typeof task5Content !== 'undefined' ? task5Content : null;

@@ -820,6 +820,7 @@ const task11Quiz = [
 
 
 // Make content available globally
+if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
 if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
 if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
