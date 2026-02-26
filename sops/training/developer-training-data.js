@@ -2019,8 +2019,6 @@ const quizQuestions = [
     { question: "Final certification requires?", options: ["100% quiz scores + video walkthrough", "Nothing", "Just reading", "One quiz"], correct: 0 },
     { question: "Continuous learning is?", options: ["Optional", "Essential for career growth", "Waste of time", "Only for juniors"], correct: 1 }
 ];
-
-// Export all
 console.log("Enhanced Developer Training File Generated!");
 
 // =============================================================================
@@ -3415,24 +3413,6 @@ const task11Quiz = [
     { q: "Step 1 of any troubleshooting should ALWAYS be:", o: ["Searching Stack Overflow — this reflects the standard operating procedure most organizations follow", "Reproducing the issue consistently — if you can't reproduce it, you can't verify you've fixed it", "Reading the Shopify documentation — this reflects the standard operating procedure most organizations follow", "Asking teammates if they've seen it before — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
-// Export all quizzes
-
-
-// Make task content available globally for openTask() function
-if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
-if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
-if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
-if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
-if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
-if (typeof task6Content !== 'undefined') window.task6Content = task6Content;
-if (typeof task7Content !== 'undefined') window.task7Content = task7Content;
-if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
-if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
-if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
-if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
-if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
-if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
-if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
 
 const task12Quiz = [
     { q: "The store goes down at 5 PM during a flash sale with $20,000/hour in revenue. First action:", o: ["Check Shopify Status page → if Shopify is up, check recent changes → rollback last deployment immediately", "Email the team about the issue — this reflects the standard operating procedure most organizations follow", "Wait 5 minutes to see if it resolves — intervening too early often creates more problems than the original issue", "Contact Shopify support and wait for response"], c: 0 },
@@ -3477,22 +3457,35 @@ const task14Quiz = [
     { q: "The #1 thing separating a $50/hour developer from a $200/hour developer:", o: ["Years of experience in the industry — implementing this correctly requires understanding the full context of how each element interacts", "Business impact awareness — understanding that every line of code affects revenue, conversions, and customer experience", "Number of Shopify certifications earned — this reflects the standard operating procedure most organizations follow", "Mastery of the latest frameworks and tools — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
-
-// Expose content and quiz variables to window for app lookup
-if (typeof task1Quiz !== 'undefined') window.task1Quiz = task1Quiz;
-if (typeof task2Quiz !== 'undefined') window.task2Quiz = task2Quiz;
-if (typeof task3Quiz !== 'undefined') window.task3Quiz = task3Quiz;
-if (typeof task4Quiz !== 'undefined') window.task4Quiz = task4Quiz;
-if (typeof task5Quiz !== 'undefined') window.task5Quiz = task5Quiz;
-if (typeof task6Quiz !== 'undefined') window.task6Quiz = task6Quiz;
-if (typeof task7Quiz !== 'undefined') window.task7Quiz = task7Quiz;
-if (typeof task8Quiz !== 'undefined') window.task8Quiz = task8Quiz;
-if (typeof task9Quiz !== 'undefined') window.task9Quiz = task9Quiz;
-if (typeof task10Quiz !== 'undefined') window.task10Quiz = task10Quiz;
-if (typeof task11Quiz !== 'undefined') window.task11Quiz = task11Quiz;
-if (typeof task12Quiz !== 'undefined') window.task12Quiz = task12Quiz;
-if (typeof task13Quiz !== 'undefined') window.task13Quiz = task13Quiz;
-if (typeof task14Quiz !== 'undefined') window.task14Quiz = task14Quiz;
+// Expose all content and quiz variables to window for app lookup
+window.task1Content = task1Content;
+window.task2Content = task2Content;
+window.task3Content = task3Content;
+window.task4Content = task4Content;
+window.task5Content = task5Content;
+window.task6Content = task6Content;
+window.task7Content = task7Content;
+window.task8Content = task8Content;
+window.task9Content = task9Content;
+window.task10Content = task10Content;
+window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task1Quiz = task1Quiz;
+window.task2Quiz = task2Quiz;
+window.task3Quiz = task3Quiz;
+window.task4Quiz = task4Quiz;
+window.task5Quiz = task5Quiz;
+window.task6Quiz = task6Quiz;
+window.task7Quiz = task7Quiz;
+window.task8Quiz = task8Quiz;
+window.task9Quiz = task9Quiz;
+window.task10Quiz = task10Quiz;
+window.task11Quiz = task11Quiz;
+window.task12Quiz = task12Quiz;
+window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
 
 const allQuizzes = [
     task1Quiz,

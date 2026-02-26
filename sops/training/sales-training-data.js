@@ -2801,44 +2801,8 @@ const task11Quiz = [
     { q: "Happy client post-delivery. Smart move:", o: ["Thank, ask for review, ask for referral", "End immediately — this reflects standard operating procedure for most professional teams", "Sell 3 more stores immediately", "Ignore message — this reflects standard operating procedure for most professional teams"], c: 0 }
 ];
 
-// Export all quizzes
+// Expose all content and quiz variables to window for app lookup
 
-
-
-// Make task content available globally for openTask() function
-if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
-if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
-window.task3Content = task3Content;
-window.task4Content = typeof task4Content !== 'undefined' ? task4Content : null;
-window.task5Content = typeof task5Content !== 'undefined' ? task5Content : null;
-window.task6Content = typeof task6Content !== 'undefined' ? task6Content : null;
-window.task7Content = typeof task7Content !== 'undefined' ? task7Content : null;
-window.task8Content = typeof task8Content !== 'undefined' ? task8Content : null;
-window.task9Content = typeof task9Content !== 'undefined' ? task9Content : null;
-window.task10Content = typeof task10Content !== 'undefined' ? task10Content : null;
-window.task11Content = typeof task11Content !== 'undefined' ? task11Content : null;
-
-
-// Expose content and quiz variables to window for app lookup
-if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
-if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
-if (typeof task6Content !== 'undefined') window.task6Content = task6Content;
-if (typeof task7Content !== 'undefined') window.task7Content = task7Content;
-if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
-if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
-if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
-if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
-if (typeof task1Quiz !== 'undefined') window.task1Quiz = task1Quiz;
-if (typeof task2Quiz !== 'undefined') window.task2Quiz = task2Quiz;
-if (typeof task3Quiz !== 'undefined') window.task3Quiz = task3Quiz;
-if (typeof task4Quiz !== 'undefined') window.task4Quiz = task4Quiz;
-if (typeof task5Quiz !== 'undefined') window.task5Quiz = task5Quiz;
-if (typeof task6Quiz !== 'undefined') window.task6Quiz = task6Quiz;
-if (typeof task7Quiz !== 'undefined') window.task7Quiz = task7Quiz;
-if (typeof task8Quiz !== 'undefined') window.task8Quiz = task8Quiz;
-if (typeof task9Quiz !== 'undefined') window.task9Quiz = task9Quiz;
-if (typeof task10Quiz !== 'undefined') window.task10Quiz = task10Quiz;
-if (typeof task11Quiz !== 'undefined') window.task11Quiz = task11Quiz;
 
 const allQuizzes = [
     task1Quiz,

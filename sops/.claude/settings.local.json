@@ -5,7 +5,10 @@
       "Bash(xargs ls -lh)",
       "Bash(du -sh /c/Users/reals/.gemini/antigravity/playground/shimmering-einstein/sops/*)",
       "Bash(wc -l /c/Users/reals/.gemini/antigravity/playground/shimmering-einstein/sops/*.html)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(node -e \":*)",
+      "Bash(git add training/client-chat-training-data.js training/content-training-data.js training/cs-training-data.js training/designer-training-data.js training/developer-training-data.js training/finance-training-data.js training/fiverr-risk-training-data.js training/fullstack-training-data.js training/hr-training-data.js training/operations-training-data.js training/pm-training-data.js training/sales-training-data.js training/social-media-training-data.js training/wordpress-training-data.js)",
+      "Bash(git commit:*)"
     ]
   }
 }

@@ -1418,20 +1418,6 @@ const quizQuestions = [
 ];
 
 // Make task content available globally for openTask() function
-if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
-if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
-if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
-if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
-if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
-if (typeof task6Content !== 'undefined') window.task6Content = task6Content;
-if (typeof task7Content !== 'undefined') window.task7Content = task7Content;
-if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
-if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
-if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
-if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
-if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
-if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
-if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
 
 
 
@@ -1463,4 +1449,21 @@ const task1Quiz = [
 ];
 
 // Expose content and quiz variables to window for app lookup
-if (typeof task1Quiz !== 'undefined') window.task1Quiz = task1Quiz;
+
+// Expose all content and quiz variables to window for app lookup
+window.task1Content = task1Content;
+window.task2Content = task2Content;
+window.task3Content = task3Content;
+window.task4Content = task4Content;
+window.task5Content = task5Content;
+window.task6Content = task6Content;
+window.task7Content = task7Content;
+window.task8Content = task8Content;
+window.task9Content = task9Content;
+window.task10Content = task10Content;
+window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task1Quiz = task1Quiz;
+
