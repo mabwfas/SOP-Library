@@ -4,7 +4,8 @@
       "Bash(wc -l /c/Users/reals/.gemini/antigravity/playground/shimmering-einstein/sops/training/*-training-data.js)",
       "Bash(xargs ls -lh)",
       "Bash(du -sh /c/Users/reals/.gemini/antigravity/playground/shimmering-einstein/sops/*)",
-      "Bash(wc -l /c/Users/reals/.gemini/antigravity/playground/shimmering-einstein/sops/*.html)"
+      "Bash(wc -l /c/Users/reals/.gemini/antigravity/playground/shimmering-einstein/sops/*.html)",
+      "Bash(git push)"
     ]
   }
 }

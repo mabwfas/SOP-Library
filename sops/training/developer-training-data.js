@@ -3419,19 +3419,12 @@ const task11Quiz = [
 
 
 // Make task content available globally for openTask() function
-if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
 if (typeof task2Content !== 'undefined') window.task2Content = task2Content;
-if (typeof task3Content !== 'undefined') window.task3Content = task3Content;
 if (typeof task4Content !== 'undefined') window.task4Content = task4Content;
-if (typeof task5Content !== 'undefined') window.task5Content = task5Content;
 if (typeof task6Content !== 'undefined') window.task6Content = task6Content;
-if (typeof task7Content !== 'undefined') window.task7Content = task7Content;
 if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
-if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
 if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
-if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
 if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
-if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
 if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
 
 const task12Quiz = [
@@ -3476,6 +3469,23 @@ const task14Quiz = [
     { q: "AI-Powered Development (Task 13) will be most effective for developers who:", o: ["Have strong fundamentals that allow them to evaluate and improve AI-generated solutions", "Use AI to skip learning fundamentals — efficiency first", "Use AI exclusively for repetitive boilerplate tasks — this is the recommended approach based on current platform documentation and expert consensus", "Avoid AI tools entirely to maintain pure coding skills"], c: 0 },
     { q: "The #1 thing separating a $50/hour developer from a $200/hour developer:", o: ["Years of experience in the industry — implementing this correctly requires understanding the full context of how each element interacts", "Business impact awareness — understanding that every line of code affects revenue, conversions, and customer experience", "Number of Shopify certifications earned — this reflects the standard operating procedure most organizations follow", "Mastery of the latest frameworks and tools — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
+
+
+// Expose content and quiz variables to window for app lookup
+if (typeof task1Quiz !== 'undefined') window.task1Quiz = task1Quiz;
+if (typeof task2Quiz !== 'undefined') window.task2Quiz = task2Quiz;
+if (typeof task3Quiz !== 'undefined') window.task3Quiz = task3Quiz;
+if (typeof task4Quiz !== 'undefined') window.task4Quiz = task4Quiz;
+if (typeof task5Quiz !== 'undefined') window.task5Quiz = task5Quiz;
+if (typeof task6Quiz !== 'undefined') window.task6Quiz = task6Quiz;
+if (typeof task7Quiz !== 'undefined') window.task7Quiz = task7Quiz;
+if (typeof task8Quiz !== 'undefined') window.task8Quiz = task8Quiz;
+if (typeof task9Quiz !== 'undefined') window.task9Quiz = task9Quiz;
+if (typeof task10Quiz !== 'undefined') window.task10Quiz = task10Quiz;
+if (typeof task11Quiz !== 'undefined') window.task11Quiz = task11Quiz;
+if (typeof task12Quiz !== 'undefined') window.task12Quiz = task12Quiz;
+if (typeof task13Quiz !== 'undefined') window.task13Quiz = task13Quiz;
+if (typeof task14Quiz !== 'undefined') window.task14Quiz = task14Quiz;
 
 const allQuizzes = [
     task1Quiz,

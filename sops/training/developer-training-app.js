@@ -105,16 +105,7 @@ function openTask(index) {
         `;
     }
 
-    // Content First (Task 1 only)
-    if (task.contentFirst && index === 0) {
-        html += (typeof task1Content !== 'undefined') ? task1Content : '';
-        html += `
-            <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (10/10 Required)</button>
-                
-            </div>
-        `;
-    } else {
+    {
         // Use full content from data file if available, otherwise show placeholder
         // Use window[] access to safely check for variables without ReferenceError
         const taskContentVars = {};
