@@ -324,32 +324,223 @@
             transform: translateX(5px);
         }
 
+        /* ========== MOBILE OPTIMIZATION ========== */
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8rem;
+            .container {
+                padding: 15px 10px;
             }
 
-            .section {
+            .back-btn {
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+            }
+
+            .header {
                 padding: 20px 15px;
+                margin-bottom: 20px;
+                border-radius: 14px;
             }
 
+            .header h1 {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+
+            .header p {
+                font-size: 0.9rem;
+            }
+
+            /* TOC single column on mobile */
+            .toc {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .toc h3 {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+
+            .toc a {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+            }
+
+            /* Section spacing */
+            .section {
+                padding: 16px 12px;
+                margin-bottom: 16px;
+                border-radius: 12px;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+                padding-bottom: 10px;
+                margin-bottom: 14px;
+                flex-wrap: wrap;
+                line-height: 1.4;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin: 18px 0 10px;
+            }
+
+            /* Tables → Stacked Cards on Mobile */
             table {
-                font-size: 0.8rem;
                 display: block;
-                overflow-x: auto;
+                overflow: visible;
+                background: none;
+                border-radius: 0;
             }
 
-            th,
+            thead {
+                display: none;
+            }
+
+            tbody {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            tr {
+                display: flex;
+                flex-direction: column;
+                background: rgba(30, 41, 59, 0.6);
+                border-radius: 10px;
+                border: 1px solid rgba(139, 92, 246, 0.15);
+                padding: 12px;
+                gap: 6px;
+            }
+
+            tr:hover td {
+                background: none;
+            }
+
             td {
-                padding: 10px 8px;
+                display: block;
+                padding: 4px 0;
+                border-bottom: none;
+                font-size: 0.85rem;
+                line-height: 1.5;
             }
 
+            /* Label each cell with its header */
+            td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.7rem;
+                font-weight: 600;
+                color: #A78BFA;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 2px;
+            }
+
+            td:first-child {
+                font-weight: 600;
+                color: #fff;
+                font-size: 0.9rem;
+                padding-bottom: 4px;
+                border-bottom: 1px solid rgba(139, 92, 246, 0.15);
+            }
+
+            /* Notes box */
+            .notes-box {
+                padding: 14px;
+                margin: 14px 0;
+            }
+
+            .notes-box h4 {
+                font-size: 0.95rem;
+            }
+
+            .notes-box li {
+                font-size: 0.83rem;
+                margin-bottom: 8px;
+                line-height: 1.5;
+            }
+
+            /* Process ladder */
             .ladder {
                 flex-direction: column;
+                gap: 8px;
             }
 
             .step {
                 min-width: auto;
+                padding: 12px;
+                text-align: left;
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .step-num {
+                font-size: 1.1rem;
+                min-width: 28px;
+            }
+
+            .step-title {
+                font-size: 0.8rem;
+            }
+
+            /* FAQ */
+            details summary {
+                padding: 12px !important;
+                font-size: 0.9rem !important;
+                line-height: 1.4 !important;
+            }
+
+            details>div {
+                padding: 12px !important;
+                font-size: 0.85rem !important;
+                line-height: 1.6 !important;
+            }
+
+            /* Quick Reference cards */
+            .quick-ref {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .ref-card {
+                padding: 14px;
+            }
+
+            .ref-card h4 {
+                font-size: 0.9rem;
+            }
+
+            .footer {
+                padding: 20px 10px;
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 400px) {
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            .section-title {
+                font-size: 1rem;
+            }
+
+            td {
+                font-size: 0.8rem;
+            }
+
+            td:first-child {
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -390,78 +581,94 @@
 
             <h3 class="incentive">🏆 Universal Incentives</h3>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Frequency</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>Perfect Attendance Bonus</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Monthly</td>
-                    <td>Zero unplanned leaves, zero late arrivals for entire month</td>
-                </tr>
-                <tr>
-                    <td>KPI Achievement Bonus</td>
-                    <td class="reward">10% of Base Salary</td>
-                    <td>Monthly</td>
-                    <td>Monthly performance review score of 8.5/10 or higher</td>
-                </tr>
-                <tr>
-                    <td>Employee of the Month</td>
-                    <td class="reward">₹2,000 + Certificate</td>
-                    <td>Monthly</td>
-                    <td>Highest performance score + public recognition</td>
-                </tr>
-                <tr>
-                    <td>Consistency Promotion Track</td>
-                    <td class="reward">15-25% Salary Increase</td>
-                    <td>Yearly</td>
-                    <td>1 year of consistent performance with score ≥ 7.0 = role upgrade consideration</td>
-                </tr>
-                <tr>
-                    <td>Successful Training Bonus</td>
-                    <td class="reward">₹500 per trainee</td>
-                    <td>Quarterly</td>
-                    <td>Training a new team member who passes probation with score ≥ 7.0. Credited quarterly.</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Frequency</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">Perfect Attendance Bonus</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Frequency">Monthly</td>
+                        <td data-label="Criteria">Zero unplanned leaves, zero late arrivals for entire month</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">KPI Achievement Bonus</td>
+                        <td class="reward" data-label="Reward">10% of Base Salary</td>
+                        <td data-label="Frequency">Monthly</td>
+                        <td data-label="Criteria">Monthly performance review score of 8.5/10 or higher</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Employee of the Month</td>
+                        <td class="reward" data-label="Reward">₹2,000 + Certificate</td>
+                        <td data-label="Frequency">Monthly</td>
+                        <td data-label="Criteria">Highest performance score + public recognition</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Consistency Promotion Track</td>
+                        <td class="reward" data-label="Reward">15-25% Salary Increase</td>
+                        <td data-label="Frequency">Yearly</td>
+                        <td data-label="Criteria">1 year of consistent performance with score ≥ 7.0 = role upgrade
+                            consideration</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Successful Training Bonus</td>
+                        <td class="reward" data-label="Reward">₹500 per trainee</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">Training a new team member who passes probation with score ≥ 7.0.
+                            Credited quarterly.</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ Universal Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>Late to Work Without Notice</td>
-                    <td class="penalty">1st: Verbal warning → 2nd: ₹200 → 3rd: ₹500 → 4th+: Full day's pay</td>
-                </tr>
-                <tr>
-                    <td>Unplanned Leave Without Notice</td>
-                    <td class="penalty">1 day's salary deducted + written warning (Exception: Medical emergency with
-                        documentation)</td>
-                </tr>
-                <tr>
-                    <td>Breach of Confidentiality</td>
-                    <td class="termination">IMMEDIATE TERMINATION - Sharing client data, credentials, or proprietary
-                        information</td>
-                </tr>
-                <tr>
-                    <td>Dishonesty or Fake Reporting</td>
-                    <td class="termination">IMMEDIATE TERMINATION - Logging hours not worked, reporting false progress
-                    </td>
-                </tr>
-                <tr>
-                    <td>Consistent Underperformance</td>
-                    <td class="penalty">3 consecutive months with score below 5.0 = Termination</td>
-                </tr>
-                <tr>
-                    <td>Failed Training</td>
-                    <td class="penalty">-₹500 per person - Trainee fails probation or scores below 5.0 due to inadequate
-                        training</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">Late to Work Without Notice</td>
+                        <td class="penalty" data-label="Consequence">1st: Verbal warning → 2nd: ₹200 → 3rd: ₹500 → 4th+:
+                            Full day's pay</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Unplanned Leave Without Notice</td>
+                        <td class="penalty" data-label="Consequence">1 day's salary deducted + written warning
+                            (Exception: Medical emergency with
+                            documentation)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Breach of Confidentiality</td>
+                        <td class="termination" data-label="Consequence">IMMEDIATE TERMINATION - Sharing client data,
+                            credentials, or proprietary
+                            information</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Dishonesty or Fake Reporting</td>
+                        <td class="termination" data-label="Consequence">IMMEDIATE TERMINATION - Logging hours not
+                            worked, reporting false progress
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Consistent Underperformance</td>
+                        <td class="penalty" data-label="Consequence">3 consecutive months with score below 5.0 =
+                            Termination</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Failed Training</td>
+                        <td class="penalty" data-label="Consequence">-₹500 per person - Trainee fails probation or
+                            scores below 5.0 due to inadequate
+                            training</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -471,85 +678,103 @@
 
             <h3 class="incentive">🏆 Developer Incentives</h3>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>5-Star Project (First 5 Projects)</td>
-                    <td class="reward">₹500 per project</td>
-                    <td>5-star review with on-time delivery and bug-free work (applies to first 5 completed projects)
-                    </td>
-                </tr>
-                <tr>
-                    <td>5-Star Project (After 5 Projects)</td>
-                    <td class="reward">₹1,000 per project</td>
-                    <td>5-star review with on-time delivery (after completing first 5 projects)</td>
-                </tr>
-                <tr>
-                    <td>4-Star Project</td>
-                    <td>₹0 — No Incentive</td>
-                    <td>Your goal is to deliver the best possible work with innovation and high efficiency. Every client
-                        must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews indicate
-                        a performance gap and can lead to PIP and ultimately termination. Do not limit your quality —
-                        always exceed expectations.</td>
-                </tr>
-                <tr>
-                    <td>Bigger Projects (Custom Development)</td>
-                    <td class="reward">Case-by-case</td>
-                    <td>Projects related to custom development can grant more incentives but not guaranteed. *Will be
-                        based on each candidate’s performance and efforts</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">5-Star Project (First 5 Projects)</td>
+                        <td class="reward" data-label="Reward">₹500 per project</td>
+                        <td data-label="Criteria">5-star review with on-time delivery and bug-free work (applies to
+                            first 5 completed projects)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">5-Star Project (After 5 Projects)</td>
+                        <td class="reward" data-label="Reward">₹1,000 per project</td>
+                        <td data-label="Criteria">5-star review with on-time delivery (after completing first 5
+                            projects)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">4-Star Project</td>
+                        <td data-label="Reward">₹0 — No Incentive</td>
+                        <td data-label="Criteria">Your goal is to deliver the best possible work with innovation and
+                            high efficiency. Every client
+                            must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews
+                            indicate
+                            a performance gap and can lead to PIP and ultimately termination. Do not limit your quality
+                            —
+                            always exceed expectations.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Bigger Projects (Custom Development)</td>
+                        <td class="reward" data-label="Reward">Case-by-case</td>
+                        <td data-label="Criteria">Projects related to custom development can grant more incentives but
+                            not guaranteed. *Will be
+                            based on each candidate’s performance and efforts</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ Developer Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>1-Star Review</td>
-                    <td class="penalty">-₹2,000 deduction from salary</td>
-                </tr>
-                <tr>
-                    <td>2-Star Review</td>
-                    <td class="penalty">-₹1,500 deduction from salary</td>
-                </tr>
-                <tr>
-                    <td>3-Star Review</td>
-                    <td class="penalty">-₹500 deduction + mandatory review meeting</td>
-                </tr>
-                <tr>
-                    <td>4-Star Review</td>
-                    <td>₹0 (No bonus, no penalty)</td>
-                </tr>
-                <tr>
-                    <td>Below Minimum Speed (Less than 5 Projects/Month)</td>
-                    <td class="penalty">-₹1,000 per project shortfall. Minimum criteria of 5 projects per month must be
-                        met.</td>
-                </tr>
-                <tr>
-                    <td>Missed Deadline Without Communication</td>
-                    <td class="penalty">1st: Written warning → 2nd in quarter: Bonus forfeited → 3rd: PIP initiated</td>
-                </tr>
-                <tr>
-                    <td>Code Quality Below 70%</td>
-                    <td class="penalty">Must fix on own time + mandatory training session</td>
-                </tr>
-                <tr>
-                    <td>Repeated QA Failures</td>
-                    <td class="penalty">3 failures in month = -₹1,000 + performance review</td>
-                </tr>
-                <tr>
-                    <td>Client Escalation to Delhi Team</td>
-                    <td class="penalty">-₹1,500 per escalation</td>
-                </tr>
-                <tr>
-                    <td>Breaking Live Store</td>
-                    <td class="penalty">-₹3,000 + incident report + mandatory training</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">1-Star Review</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 deduction from salary</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">2-Star Review</td>
+                        <td class="penalty" data-label="Consequence">-₹1,500 deduction from salary</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">3-Star Review</td>
+                        <td class="penalty" data-label="Consequence">-₹500 deduction + mandatory review meeting</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">4-Star Review</td>
+                        <td data-label="Consequence">₹0 (No bonus, no penalty)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Below Minimum Speed (Less than 5 Projects/Month)</td>
+                        <td class="penalty" data-label="Consequence">-₹1,000 per project shortfall. Minimum criteria of
+                            5 projects per month must be
+                            met.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Missed Deadline Without Communication</td>
+                        <td class="penalty" data-label="Consequence">1st: Written warning → 2nd in quarter: Bonus
+                            forfeited → 3rd: PIP initiated</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Code Quality Below 70%</td>
+                        <td class="penalty" data-label="Consequence">Must fix on own time + mandatory training session
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Repeated QA Failures</td>
+                        <td class="penalty" data-label="Consequence">3 failures in month = -₹1,000 + performance review
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Client Escalation to Delhi Team</td>
+                        <td class="penalty" data-label="Consequence">-₹1,500 per escalation</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Breaking Live Store</td>
+                        <td class="penalty" data-label="Consequence">-₹3,000 + incident report + mandatory training</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -562,96 +787,109 @@
                 commissions apply below $5,000 in total sales. Commissions only kick in once cumulative deal value
                 crosses $5,000.</p>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>High-Value Closure</td>
-                    <td class="reward">3% of Closed Amount</td>
-                    <td>Closing deals above $5,000 <em>(calculated per individual order, not cumulative)</em></td>
-                </tr>
-                <tr>
-                    <td>Standard Closure Bonus</td>
-                    <td class="reward">2% of Closed Amount</td>
-                    <td>Closing deals $2,000 - $4,999</td>
-                </tr>
-                <tr>
-                    <td>Starter Closure Bonus</td>
-                    <td class="reward">1% of Closed Amount</td>
-                    <td>Closing deals $500 - $1,999</td>
-                </tr>
-                <tr>
-                    <td>Monthly Target Achievement</td>
-                    <td class="reward">₹2,000</td>
-                    <td>Achieving monthly sales target of $20,000</td>
-                </tr>
-                <tr>
-                    <td>Target Overachievement</td>
-                    <td class="reward">1% Extra Commission</td>
-                    <td>1% bonus on amount exceeding $20,000 monthly target. <em>Example: If cumulative monthly sales =
-                            $30,000, then bonus = ($30,000 − $20,000) × 1% = $100</em></td>
-                </tr>
-                <tr>
-                    <td>Enterprise Client Acquisition</td>
-                    <td class="reward">₹30,000</td>
-                    <td>Closing ₹10L+ single project</td>
-                </tr>
-                <tr>
-                    <td>Referral to Vivek</td>
-                    <td class="reward">₹500</td>
-                    <td>Referring a lead to Vivek that gets closed/converted</td>
-                </tr>
-                <tr>
-                    <td>Fastest Response Award</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Highest lead response speed for the month (under 5 min avg)</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">High-Value Closure</td>
+                        <td class="reward" data-label="Reward">3% of Closed Amount</td>
+                        <td data-label="Criteria">Closing deals above $5,000 <em>(calculated per individual order, not
+                                cumulative)</em></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Standard Closure Bonus</td>
+                        <td class="reward" data-label="Reward">2% of Closed Amount</td>
+                        <td data-label="Criteria">Closing deals $2,000 - $4,999</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Starter Closure Bonus</td>
+                        <td class="reward" data-label="Reward">1% of Closed Amount</td>
+                        <td data-label="Criteria">Closing deals $500 - $1,999</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Monthly Target Achievement</td>
+                        <td class="reward" data-label="Reward">₹2,000</td>
+                        <td data-label="Criteria">Achieving monthly sales target of $20,000</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Target Overachievement</td>
+                        <td class="reward" data-label="Reward">1% Extra Commission</td>
+                        <td data-label="Criteria">1% bonus on amount exceeding $20,000 monthly target. <em>Example: If
+                                cumulative monthly sales =
+                                $30,000, then bonus = ($30,000 − $20,000) × 1% = $100</em></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Enterprise Client Acquisition</td>
+                        <td class="reward" data-label="Reward">₹30,000</td>
+                        <td data-label="Criteria">Closing ₹10L+ single project</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Referral to Vivek</td>
+                        <td class="reward" data-label="Reward">₹500</td>
+                        <td data-label="Criteria">Referring a lead to Vivek that gets closed/converted</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Fastest Response Award</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Criteria">Highest lead response speed for the month (under 5 min avg)</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ Sales Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>Lost Lead Due to Poor Handling</td>
-                    <td class="penalty">-₹1,000 per qualified lead pushed away/not converted due to negligence</td>
-                </tr>
-                <tr>
-                    <td>Slow Response to Hot Lead</td>
-                    <td class="penalty">-₹500 per lead (response over 1 hour during business hours)</td>
-                </tr>
-                <tr>
-                    <td>Below 60% Target</td>
-                    <td class="penalty">Written warning + sales coaching required</td>
-                </tr>
-                <tr>
-                    <td>Below 50% Target (2 consecutive months)</td>
-                    <td class="penalty">PIP initiated</td>
-                </tr>
-                <tr>
-                    <td>Misquoting/Overpromising</td>
-                    <td class="penalty">-₹2,000 + mandatory re-training (causing project scope issues)</td>
-                </tr>
-                <tr>
-                    <td>Missing Lead Follow-up</td>
-                    <td class="penalty">-₹300 per missed follow-up in CRM</td>
-                </tr>
-                <tr>
-                    <td>Inaccurate CRM Updates</td>
-                    <td class="penalty">-₹200 per occurrence</td>
-                </tr>
-                <tr>
-                    <td>Client Complaint About Sales Process</td>
-                    <td class="penalty">-₹500 + review meeting</td>
-                </tr>
-                <tr>
-                    <td>Project Cancellation</td>
-                    <td class="penalty">-₹1,500 per project cancellation</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">Lost Lead Due to Poor Handling</td>
+                        <td class="penalty" data-label="Consequence">-₹1,000 per qualified lead pushed away/not
+                            converted due to negligence</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Slow Response to Hot Lead</td>
+                        <td class="penalty" data-label="Consequence">-₹500 per lead (response over 1 hour during
+                            business hours)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Below 60% Target</td>
+                        <td class="penalty" data-label="Consequence">Written warning + sales coaching required</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Below 50% Target (2 consecutive months)</td>
+                        <td class="penalty" data-label="Consequence">PIP initiated</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Misquoting/Overpromising</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 + mandatory re-training (causing project
+                            scope issues)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Missing Lead Follow-up</td>
+                        <td class="penalty" data-label="Consequence">-₹300 per missed follow-up in CRM</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Inaccurate CRM Updates</td>
+                        <td class="penalty" data-label="Consequence">-₹200 per occurrence</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Client Complaint About Sales Process</td>
+                        <td class="penalty" data-label="Consequence">-₹500 + review meeting</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Project Cancellation</td>
+                        <td class="penalty" data-label="Consequence">-₹1,500 per project cancellation</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -661,90 +899,103 @@
 
             <h3 class="incentive">🏆 PM Incentives</h3>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Frequency</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>5-Star Project Completion</td>
-                    <td class="reward">₹500 per project</td>
-                    <td>Monthly</td>
-                    <td>Project managed receives 5-star review</td>
-                </tr>
-                <tr>
-                    <td>4-Star Project</td>
-                    <td>₹0 — No Incentive</td>
-                    <td>—</td>
-                    <td>Your goal is to deliver the best possible work with innovation and high efficiency. Every client
-                        must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews indicate
-                        a performance gap and can lead to PIP and ultimately termination.</td>
-                </tr>
-                <tr>
-                    <td>Zero Escalation Quarter</td>
-                    <td class="reward">₹6,000</td>
-                    <td>Quarterly</td>
-                    <td>Zero Delhi Team escalations for entire quarter (min 8 projects)</td>
-                </tr>
-                <tr>
-                    <td>Resource Optimization Bonus</td>
-                    <td class="reward">₹2,500</td>
-                    <td>Quarterly</td>
-                    <td>Consistently delivering projects under estimated hours for the quarter</td>
-                </tr>
-                <tr>
-                    <td>Multi-Project Excellence</td>
-                    <td class="reward">₹2,500</td>
-                    <td>Quarterly</td>
-                    <td>Managing 10+ concurrent projects with zero delays across the quarter</td>
-                </tr>
-                <tr>
-                    <td>Process Improvement Bonus</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Quarterly</td>
-                    <td>Implementing approved SOP improvement that increases team efficiency</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Frequency</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">5-Star Project Completion</td>
+                        <td class="reward" data-label="Reward">₹500 per project</td>
+                        <td data-label="Frequency">Monthly</td>
+                        <td data-label="Criteria">Project managed receives 5-star review</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">4-Star Project</td>
+                        <td data-label="Reward">₹0 — No Incentive</td>
+                        <td data-label="Frequency">—</td>
+                        <td data-label="Criteria">Your goal is to deliver the best possible work with innovation and
+                            high efficiency. Every client
+                            must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews
+                            indicate
+                            a performance gap and can lead to PIP and ultimately termination.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Zero Escalation Quarter</td>
+                        <td class="reward" data-label="Reward">₹6,000</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">Zero Delhi Team escalations for entire quarter (min 8 projects)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Resource Optimization Bonus</td>
+                        <td class="reward" data-label="Reward">₹2,500</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">Consistently delivering projects under estimated hours for the quarter
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Multi-Project Excellence</td>
+                        <td class="reward" data-label="Reward">₹2,500</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">Managing 10+ concurrent projects with zero delays across the quarter
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Process Improvement Bonus</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">Implementing approved SOP improvement that increases team efficiency
+                        </td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ PM Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>1-3 Star Review on Managed Project</td>
-                    <td class="penalty">-₹2,000 per project</td>
-                </tr>
-                <tr>
-                    <td>4-Star Review</td>
-                    <td>₹0 (No bonus, no penalty)</td>
-                </tr>
-                <tr>
-                    <td>Project Deadline Miss</td>
-                    <td class="penalty">-₹1,000 per project (without valid escalation)</td>
-                </tr>
-                <tr>
-                    <td>Scope Creep Without Approval</td>
-                    <td class="penalty">-₹1,500 per occurrence</td>
-                </tr>
-                <tr>
-                    <td>Resource Misallocation</td>
-                    <td class="penalty">-₹500 + incident review</td>
-                </tr>
-                <tr>
-                    <td>Missing Status Reports</td>
-                    <td class="penalty">-₹300 per missed report</td>
-                </tr>
-                <tr>
-                    <td>Client Escalation Due to Mismanagement</td>
-                    <td class="penalty">-₹2,000 + performance review</td>
-                </tr>
-                <tr>
-                    <td>Team Conflict Mishandling</td>
-                    <td class="penalty">-₹500 + HR documentation</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">1-3 Star Review on Managed Project</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 per project</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">4-Star Review</td>
+                        <td data-label="Consequence">₹0 (No bonus, no penalty)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Project Deadline Miss</td>
+                        <td class="penalty" data-label="Consequence">-₹1,000 per project (without valid escalation)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Scope Creep Without Approval</td>
+                        <td class="penalty" data-label="Consequence">-₹1,500 per occurrence</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Resource Misallocation</td>
+                        <td class="penalty" data-label="Consequence">-₹500 + incident review</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Missing Status Reports</td>
+                        <td class="penalty" data-label="Consequence">-₹300 per missed report</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Client Escalation Due to Mismanagement</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 + performance review</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Team Conflict Mishandling</td>
+                        <td class="penalty" data-label="Consequence">-₹500 + HR documentation</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -754,84 +1005,95 @@
 
             <h3 class="incentive">🏆 CSM Incentives</h3>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>5-Star Project (First 5 Projects)</td>
-                    <td class="reward">₹500 per project</td>
-                    <td>Client leaves 5-star review (first 5 projects managed)</td>
-                </tr>
-                <tr>
-                    <td>5-Star Project (After 5 Projects)</td>
-                    <td class="reward">₹1,000 per project</td>
-                    <td>Client leaves 5-star review (after completing first 5 projects)</td>
-                </tr>
-                <tr>
-                    <td>4-Star Project</td>
-                    <td>₹0 — No Incentive</td>
-                    <td>Your goal is to deliver the best possible work with innovation and high efficiency. Every client
-                        must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews indicate
-                        a performance gap and can lead to PIP and ultimately termination.</td>
-                </tr>
-                <tr>
-                    <td>Zero Client Complaints</td>
-                    <td class="reward">₹5,000</td>
-                    <td>Zero escalations to Delhi Team level for entire quarter (min 6 projects)</td>
-                </tr>
-                <tr>
-                    <td>Upsell Commission</td>
-                    <td class="reward">10% of Upsell Value</td>
-                    <td>Client purchases additional service within 90 days</td>
-                </tr>
-                <tr>
-                    <td>Client Retention Bonus</td>
-                    <td class="reward">₹3,000</td>
-                    <td>Client returns for 3rd+ project due to relationship management</td>
-                </tr>
-                <tr>
-                    <td>Response Time Excellence</td>
-                    <td class="reward">₹1,500</td>
-                    <td>Average response time under 30 minutes for entire month</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">5-Star Project (First 5 Projects)</td>
+                        <td class="reward" data-label="Reward">₹500 per project</td>
+                        <td data-label="Criteria">Client leaves 5-star review (first 5 projects managed)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">5-Star Project (After 5 Projects)</td>
+                        <td class="reward" data-label="Reward">₹1,000 per project</td>
+                        <td data-label="Criteria">Client leaves 5-star review (after completing first 5 projects)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">4-Star Project</td>
+                        <td data-label="Reward">₹0 — No Incentive</td>
+                        <td data-label="Criteria">Your goal is to deliver the best possible work with innovation and
+                            high efficiency. Every client
+                            must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews
+                            indicate
+                            a performance gap and can lead to PIP and ultimately termination.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Zero Client Complaints</td>
+                        <td class="reward" data-label="Reward">₹5,000</td>
+                        <td data-label="Criteria">Zero escalations to Delhi Team level for entire quarter (min 6
+                            projects)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Upsell Commission</td>
+                        <td class="reward" data-label="Reward">10% of Upsell Value</td>
+                        <td data-label="Criteria">Client purchases additional service within 90 days</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Client Retention Bonus</td>
+                        <td class="reward" data-label="Reward">₹3,000</td>
+                        <td data-label="Criteria">Client returns for 3rd+ project due to relationship management</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Response Time Excellence</td>
+                        <td class="reward" data-label="Reward">₹1,500</td>
+                        <td data-label="Criteria">Average response time under 30 minutes for entire month</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ CSM Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>1-3 Star Review</td>
-                    <td class="penalty">-₹2,000 per project</td>
-                </tr>
-                <tr>
-                    <td>4-Star Review</td>
-                    <td>₹0 (No bonus, no penalty)</td>
-                </tr>
-                <tr>
-                    <td>Client Escalation to Delhi</td>
-                    <td class="penalty">-₹1,000 per escalation</td>
-                </tr>
-                <tr>
-                    <td>Response Time Over 2 Hours</td>
-                    <td class="penalty">-₹200 per occurrence (business hours)</td>
-                </tr>
-                <tr>
-                    <td>Miscommunication Causing Rework</td>
-                    <td class="penalty">-₹500 + incident documentation</td>
-                </tr>
-                <tr>
-                    <td>Lost Client Due to Poor Communication</td>
-                    <td class="penalty">-₹2,500 + performance review</td>
-                </tr>
-                <tr>
-                    <td>Missing Project Updates</td>
-                    <td class="penalty">-₹300 per missed daily/weekly update</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">1-3 Star Review</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 per project</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">4-Star Review</td>
+                        <td data-label="Consequence">₹0 (No bonus, no penalty)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Client Escalation to Delhi</td>
+                        <td class="penalty" data-label="Consequence">-₹1,000 per escalation</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Response Time Over 2 Hours</td>
+                        <td class="penalty" data-label="Consequence">-₹200 per occurrence (business hours)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Miscommunication Causing Rework</td>
+                        <td class="penalty" data-label="Consequence">-₹500 + incident documentation</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Lost Client Due to Poor Communication</td>
+                        <td class="penalty" data-label="Consequence">-₹2,500 + performance review</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Missing Project Updates</td>
+                        <td class="penalty" data-label="Consequence">-₹300 per missed daily/weekly update</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -841,76 +1103,86 @@
 
             <h3 class="incentive">🏆 HR Incentives</h3>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Frequency</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>Quality Hire Bonus</td>
-                    <td class="reward">₹1,500</td>
-                    <td>Quarterly</td>
-                    <td>New hire passes probation with score ≥ 7.5</td>
-                </tr>
-                <tr>
-                    <td>Retention Excellence</td>
-                    <td class="reward">₹3,000</td>
-                    <td>Quarterly</td>
-                    <td>Zero voluntary attrition in quarter</td>
-                </tr>
-                <tr>
-                    <td>Training Completion Rate</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Quarterly</td>
-                    <td>100% team training completion for the quarter</td>
-                </tr>
-                <tr>
-                    <td>Onboarding & Compliance</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Quarterly</td>
-                    <td>All new hires onboarded with complete documentation and policy compliance</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Frequency</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">Quality Hire Bonus</td>
+                        <td class="reward" data-label="Reward">₹1,500</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">New hire passes probation with score ≥ 7.5</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Retention Excellence</td>
+                        <td class="reward" data-label="Reward">₹3,000</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">Zero voluntary attrition in quarter</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Training Completion Rate</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">100% team training completion for the quarter</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Onboarding & Compliance</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Frequency">Quarterly</td>
+                        <td data-label="Criteria">All new hires onboarded with complete documentation and policy
+                            compliance</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ HR Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>Bad Hire</td>
-                    <td class="penalty">-₹2,000 if new hire terminated within probation for performance</td>
-                </tr>
-                <tr>
-                    <td>Hiring Delay</td>
-                    <td class="penalty">-₹500 per week beyond 14-day target</td>
-                </tr>
-                <tr>
-                    <td>Missed Payroll Processing</td>
-                    <td class="penalty">-₹1,000 per occurrence</td>
-                </tr>
-                <tr>
-                    <td>Incomplete Documentation</td>
-                    <td class="penalty">-₹300 per missing employee document</td>
-                </tr>
-                <tr>
-                    <td>Training Not Scheduled</td>
-                    <td class="penalty">-₹500 per missed mandatory training</td>
-                </tr>
-                <tr>
-                    <td>Employee Complaint Mishandling</td>
-                    <td class="penalty">-₹1,000 + mandatory HR training</td>
-                </tr>
-                <tr>
-                    <td>Confidentiality Breach</td>
-                    <td class="termination">IMMEDIATE TERMINATION</td>
-                </tr>
-                <tr>
-                    <td>Compliance Violation</td>
-                    <td class="penalty">-₹2,000 + corrective action plan</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">Bad Hire</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 if new hire terminated within probation for
+                            performance</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Hiring Delay</td>
+                        <td class="penalty" data-label="Consequence">-₹500 per week beyond 14-day target</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Missed Payroll Processing</td>
+                        <td class="penalty" data-label="Consequence">-₹1,000 per occurrence</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Incomplete Documentation</td>
+                        <td class="penalty" data-label="Consequence">-₹300 per missing employee document</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Training Not Scheduled</td>
+                        <td class="penalty" data-label="Consequence">-₹500 per missed mandatory training</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Employee Complaint Mishandling</td>
+                        <td class="penalty" data-label="Consequence">-₹1,000 + mandatory HR training</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Confidentiality Breach</td>
+                        <td class="termination" data-label="Consequence">IMMEDIATE TERMINATION</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Compliance Violation</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 + corrective action plan</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -920,65 +1192,77 @@
 
             <h3 class="incentive">🏆 Designer Incentives</h3>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>Social Media Graphics Delivery</td>
-                    <td class="reward">₹500 per batch</td>
-                    <td>Completing weekly batch of social media graphics (Instagram posts, stories, YouTube thumbnails)
-                        on time and approved</td>
-                </tr>
-                <tr>
-                    <td>YouTube Thumbnail Excellence</td>
-                    <td class="reward">₹300 per video</td>
-                    <td>Thumbnails approved on first submission for company YouTube channel</td>
-                </tr>
-                <tr>
-                    <td>Brand Asset Completion</td>
-                    <td class="reward">₹1,500</td>
-                    <td>Complete brand asset set (logos, templates, style guide) delivered on time</td>
-                </tr>
-                <tr>
-                    <td>Content Calendar Design Consistency</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Full month of social media designs delivered ahead of schedule with consistent branding</td>
-                </tr>
-                <tr>
-                    <td>AI Innovation Bonus</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Creating new AI workflow that improves design team efficiency</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">Social Media Graphics Delivery</td>
+                        <td class="reward" data-label="Reward">₹500 per batch</td>
+                        <td data-label="Criteria">Completing weekly batch of social media graphics (Instagram posts,
+                            stories, YouTube thumbnails)
+                            on time and approved</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">YouTube Thumbnail Excellence</td>
+                        <td class="reward" data-label="Reward">₹300 per video</td>
+                        <td data-label="Criteria">Thumbnails approved on first submission for company YouTube channel
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Brand Asset Completion</td>
+                        <td class="reward" data-label="Reward">₹1,500</td>
+                        <td data-label="Criteria">Complete brand asset set (logos, templates, style guide) delivered on
+                            time</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Content Calendar Design Consistency</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Criteria">Full month of social media designs delivered ahead of schedule with
+                            consistent branding</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">AI Innovation Bonus</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Criteria">Creating new AI workflow that improves design team efficiency</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ Designer Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>3+ Revision Rounds</td>
-                    <td class="penalty">-₹500 per project exceeding 3 rounds</td>
-                </tr>
-                <tr>
-                    <td>Brand Inconsistency</td>
-                    <td class="penalty">-₹300 per occurrence</td>
-                </tr>
-                <tr>
-                    <td>Missed Design Deadline</td>
-                    <td class="penalty">-₹500 per day late</td>
-                </tr>
-                <tr>
-                    <td>Using Unlicensed Assets</td>
-                    <td class="penalty">-₹1,000 + legal documentation + training</td>
-                </tr>
-                <tr>
-                    <td>Quality Below Standard</td>
-                    <td class="penalty">Must redo on own time + -₹300</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">3+ Revision Rounds</td>
+                        <td class="penalty" data-label="Consequence">-₹500 per project exceeding 3 rounds</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Brand Inconsistency</td>
+                        <td class="penalty" data-label="Consequence">-₹300 per occurrence</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Missed Design Deadline</td>
+                        <td class="penalty" data-label="Consequence">-₹500 per day late</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Using Unlicensed Assets</td>
+                        <td class="penalty" data-label="Consequence">-₹1,000 + legal documentation + training</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Quality Below Standard</td>
+                        <td class="penalty" data-label="Consequence">Must redo on own time + -₹300</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -988,66 +1272,79 @@
 
             <h3 class="incentive">🏆 Content Incentives</h3>
             <table>
-                <tr>
-                    <th>Incentive</th>
-                    <th>Reward</th>
-                    <th>Criteria</th>
-                </tr>
-                <tr>
-                    <td>YouTube Video Production</td>
-                    <td class="reward">₹500 per video</td>
-                    <td>Creating and publishing quality video for company YouTube channel (scripting, editing,
-                        publishing)</td>
-                </tr>
-                <tr>
-                    <td>Instagram Posting Consistency</td>
-                    <td class="reward">₹1,000</td>
-                    <td>Meeting weekly Instagram posting targets consistently for entire month (posts, reels, stories)
-                    </td>
-                </tr>
-                <tr>
-                    <td>Viral Content Bonus</td>
-                    <td class="reward">₹2,000</td>
-                    <td>Any company channel content exceeds 10x average engagement</td>
-                </tr>
-                <tr>
-                    <td>Content Calendar On-Time Delivery</td>
-                    <td class="reward">₹500</td>
-                    <td>Full month content calendar submitted and approved before deadline</td>
-                </tr>
-                <tr>
-                    <td>Channel Growth Bonus</td>
-                    <td class="reward">₹1,500</td>
-                    <td>Company YouTube/Instagram grows 25%+ subscribers/followers in a month</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Incentive</th>
+                        <th>Reward</th>
+                        <th>Criteria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Incentive">YouTube Video Production</td>
+                        <td class="reward" data-label="Reward">₹500 per video</td>
+                        <td data-label="Criteria">Creating and publishing quality video for company YouTube channel
+                            (scripting, editing,
+                            publishing)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Instagram Posting Consistency</td>
+                        <td class="reward" data-label="Reward">₹1,000</td>
+                        <td data-label="Criteria">Meeting weekly Instagram posting targets consistently for entire month
+                            (posts, reels, stories)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Viral Content Bonus</td>
+                        <td class="reward" data-label="Reward">₹2,000</td>
+                        <td data-label="Criteria">Any company channel content exceeds 10x average engagement</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Content Calendar On-Time Delivery</td>
+                        <td class="reward" data-label="Reward">₹500</td>
+                        <td data-label="Criteria">Full month content calendar submitted and approved before deadline
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Incentive">Channel Growth Bonus</td>
+                        <td class="reward" data-label="Reward">₹1,500</td>
+                        <td data-label="Criteria">Company YouTube/Instagram grows 25%+ subscribers/followers in a month
+                        </td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 class="penalty">⚠️ Content Penalties</h3>
             <table>
-                <tr>
-                    <th>Violation</th>
-                    <th>Consequence</th>
-                </tr>
-                <tr>
-                    <td>Missed Posting Schedule</td>
-                    <td class="penalty">-₹500 per missed post (YouTube/Instagram)</td>
-                </tr>
-                <tr>
-                    <td>Grammatical/Spelling Errors</td>
-                    <td class="penalty">-₹200 per published error</td>
-                </tr>
-                <tr>
-                    <td>Plagiarized Content</td>
-                    <td class="penalty">-₹2,000 + written warning (2nd offense: Termination)</td>
-                </tr>
-                <tr>
-                    <td>Brand Voice Inconsistency</td>
-                    <td class="penalty">-₹300 per occurrence</td>
-                </tr>
-                <tr>
-                    <td>Engagement Drop (Negligence)</td>
-                    <td class="penalty">-₹500 + performance review</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Violation</th>
+                        <th>Consequence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Violation">Missed Posting Schedule</td>
+                        <td class="penalty" data-label="Consequence">-₹500 per missed post (YouTube/Instagram)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Grammatical/Spelling Errors</td>
+                        <td class="penalty" data-label="Consequence">-₹200 per published error</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Plagiarized Content</td>
+                        <td class="penalty" data-label="Consequence">-₹2,000 + written warning (2nd offense:
+                            Termination)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Brand Voice Inconsistency</td>
+                        <td class="penalty" data-label="Consequence">-₹300 per occurrence</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Violation">Engagement Drop (Negligence)</td>
+                        <td class="penalty" data-label="Consequence">-₹500 + performance review</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -1057,55 +1354,63 @@
 
             <h3>⭐ Star Rating Impact (Developers / CSM)</h3>
             <table>
-                <tr>
-                    <th>Star Rating</th>
-                    <th>Reward/Penalty</th>
-                    <th>Action Required</th>
-                </tr>
-                <tr>
-                    <td>⭐⭐⭐⭐⭐ 5-Star (First 5 Projects)</td>
-                    <td class="reward">+₹500/project</td>
-                    <td>On-time, bug-free delivery</td>
-                </tr>
-                <tr>
-                    <td>⭐⭐⭐⭐⭐ 5-Star (After 5 Projects)</td>
-                    <td class="reward">+₹1,000/project</td>
-                    <td>On-time delivery</td>
-                </tr>
-                <tr>
-                    <td>⭐⭐⭐⭐ 4-Star</td>
-                    <td>₹0</td>
-                    <td>No incentive — multiple 4-stars can lead to PIP</td>
-                </tr>
-                <tr>
-                    <td>⭐⭐⭐ 1-3 Star</td>
-                    <td class="penalty">-₹2,000/project</td>
-                    <td>Penalty + review meeting</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Star Rating</th>
+                        <th>Reward/Penalty</th>
+                        <th>Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Star Rating">⭐⭐⭐⭐⭐ 5-Star (First 5 Projects)</td>
+                        <td class="reward" data-label="Reward/Penalty">+₹500/project</td>
+                        <td data-label="Action Required">On-time, bug-free delivery</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Star Rating">⭐⭐⭐⭐⭐ 5-Star (After 5 Projects)</td>
+                        <td class="reward" data-label="Reward/Penalty">+₹1,000/project</td>
+                        <td data-label="Action Required">On-time delivery</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Star Rating">⭐⭐⭐⭐ 4-Star</td>
+                        <td data-label="Reward/Penalty">₹0</td>
+                        <td data-label="Action Required">No incentive — multiple 4-stars can lead to PIP</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Star Rating">⭐⭐⭐ 1-3 Star</td>
+                        <td class="penalty" data-label="Reward/Penalty">-₹2,000/project</td>
+                        <td data-label="Action Required">Penalty + review meeting</td>
+                    </tr>
+                </tbody>
             </table>
 
             <h3 style="margin-top: 20px;">⭐ Star Rating Impact (PM)</h3>
             <table>
-                <tr>
-                    <th>Star Rating</th>
-                    <th>Reward/Penalty</th>
-                    <th>Action Required</th>
-                </tr>
-                <tr>
-                    <td>⭐⭐⭐⭐⭐ 5-Star</td>
-                    <td class="reward">+₹500/project</td>
-                    <td>Consistent bonus for all 5-star projects managed</td>
-                </tr>
-                <tr>
-                    <td>⭐⭐⭐⭐ 4-Star</td>
-                    <td>₹0</td>
-                    <td>No incentive — multiple 4-stars can lead to PIP</td>
-                </tr>
-                <tr>
-                    <td>⭐⭐⭐ 1-3 Star</td>
-                    <td class="penalty">-₹2,000/project</td>
-                    <td>Penalty + review meeting</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Star Rating</th>
+                        <th>Reward/Penalty</th>
+                        <th>Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Star Rating">⭐⭐⭐⭐⭐ 5-Star</td>
+                        <td class="reward" data-label="Reward/Penalty">+₹500/project</td>
+                        <td data-label="Action Required">Consistent bonus for all 5-star projects managed</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Star Rating">⭐⭐⭐⭐ 4-Star</td>
+                        <td data-label="Reward/Penalty">₹0</td>
+                        <td data-label="Action Required">No incentive — multiple 4-stars can lead to PIP</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Star Rating">⭐⭐⭐ 1-3 Star</td>
+                        <td class="penalty" data-label="Reward/Penalty">-₹2,000/project</td>
+                        <td data-label="Action Required">Penalty + review meeting</td>
+                    </tr>
+                </tbody>
             </table>
             <p style="color: #94A3B8; font-size: 0.85rem; margin-top: 10px;"><strong>Note:</strong> For projects
                 involving multiple team members, the penalty/reward is split based on responsibility assessment by Delhi
@@ -1114,31 +1419,35 @@
 
             <h3 style="margin-top: 30px;">💰 Sales Commission Structure</h3>
             <table>
-                <tr>
-                    <th>Deal Value</th>
-                    <th>Commission</th>
-                    <th>Example</th>
-                </tr>
-                <tr>
-                    <td>$5,000+</td>
-                    <td class="reward">3%</td>
-                    <td>$6,000 deal = ₹15,000+ commission</td>
-                </tr>
-                <tr>
-                    <td>$2,000 - $4,999</td>
-                    <td class="reward">2%</td>
-                    <td>$3,000 deal = ₹5,000+ commission</td>
-                </tr>
-                <tr>
-                    <td>$500 - $1,999</td>
-                    <td class="reward">1%</td>
-                    <td>$1,000 deal = ₹830+ commission</td>
-                </tr>
-                <tr>
-                    <td>Lost qualified lead</td>
-                    <td class="penalty">-₹1,000</td>
-                    <td>Per lead pushed away</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Deal Value</th>
+                        <th>Commission</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Deal Value">$5,000+</td>
+                        <td class="reward" data-label="Commission">3%</td>
+                        <td data-label="Example">$6,000 deal = ₹15,000+ commission</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Deal Value">$2,000 - $4,999</td>
+                        <td class="reward" data-label="Commission">2%</td>
+                        <td data-label="Example">$3,000 deal = ₹5,000+ commission</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Deal Value">$500 - $1,999</td>
+                        <td class="reward" data-label="Commission">1%</td>
+                        <td data-label="Example">$1,000 deal = ₹830+ commission</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Deal Value">Lost qualified lead</td>
+                        <td class="penalty" data-label="Commission">-₹1,000</td>
+                        <td data-label="Example">Per lead pushed away</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -1154,6 +1463,8 @@
                 <li>All incentives/penalties are documented in employee file</li>
                 <li>Disputes must be raised within 48 hours of notification</li>
                 <li><strong>Delhi Team decision is final</strong> on all incentive/penalty matters</li>
+                <li><strong>Delhi Team reserves the right</strong> to deny incentives or forgive penalties at any time
+                    based on situational circumstances and time-to-time evaluation</li>
                 <li>HR representative must be informed of all incentive/penalty decisions</li>
                 <li>Review split calculation: When multiple team members are involved, responsibility % is determined by
                     PM assessment</li>
