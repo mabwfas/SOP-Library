@@ -1,3 +1,5 @@
+const QA_MODE = true; // TEMPORARY - Remove after QA
+
 // Shopify Developer Training Application Logic
 
 // State Management
@@ -37,7 +39,7 @@ function renderTasksList() {
     trainingTasks.forEach((task, index) => {
         const isCompleted = progress.completedTasks.includes(task.id);
         const isCurrent = task.id === progress.currentTask;
-        const isLocked = task.id > progress.currentTask;
+        const isLocked = QA_MODE ? false : task.id > progress.currentTask;
 
         const card = document.createElement('div');
         card.className = `task-card ${isCompleted ? 'completed' : ''} ${isCurrent ? 'current' : ''} ${isLocked ? 'locked' : ''}`;
@@ -114,14 +116,15 @@ function openTask(index) {
         }
 
         const fullContent = taskContentVars[task.id];
+        const quizLength = (typeof allQuizzes !== 'undefined' && allQuizzes[index]) ? allQuizzes[index].length : 10;
 
         if (fullContent) {
             // Show full teaching content (like Task 1)
-            html += fullContent;
+            html += fullContent.replace(/<h2>([^<]*?)TASK \d+:/, '<h2>$1TASK ' + task.id + ':');
             html += `
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === trainingTasks.length - 1 ? '20/20' : '10/10'} Required)</button>
-                    
+                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${quizLength}/${quizLength} Required)</button>
+                    ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
                 </div>
             `;
         } else {
@@ -135,8 +138,8 @@ function openTask(index) {
                     </div>
                 </div>
                 <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${index === trainingTasks.length - 1 ? '20/20' : '10/10'} Required)</button>
-                    
+                    <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${quizLength}/${quizLength} Required)</button>
+                    ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
                 </div>
             `;
         }
@@ -154,6 +157,21 @@ function openTask(index) {
 function closeTask() {
     document.getElementById('taskView').style.display = 'none';
     document.getElementById('welcomeScreen').style.display = 'flex';
+}
+
+// QA Mode: Skip task without quiz
+function skipTask(taskIndex) {
+    const task = trainingTasks[taskIndex];
+    if (!progress.completedTasks.includes(task.id)) {
+        progress.completedTasks.push(task.id);
+    }
+    progress.currentTask = Math.max(progress.currentTask, task.id + 1);
+    localStorage.setItem('developerTrainingProgress', JSON.stringify(progress));
+    renderTasksList();
+    updateProgressBar();
+    if (taskIndex + 1 < trainingTasks.length) {
+        openTask(taskIndex + 1);
+    }
 }
 
 // Start Quiz
@@ -191,7 +209,7 @@ function renderQuestion() {
         <div class="quiz-section">
             <div class="quiz-header">
                 <h3>Question ${currentQuestion + 1} of ${totalQuestions}</h3>
-                <p class="quiz-progress">Score 10/10 to unlock next task</p>
+                <p class="quiz-progress">Score ${totalQuestions}/${totalQuestions} to unlock next task</p>
             </div>
             <div class="question-container">
                 <div class="question-text">${q.q}</div>
@@ -270,7 +288,7 @@ function showResults() {
             <div class="results-message">
                 ${passed
             ? '🎉 Congratulations! You passed!'
-            : '❌ You need 10/10. Review the material and try again.'}
+            : '❌ You need ${totalQuestions}/${totalQuestions}. Review the material and try again.'}
             </div>
     `;
 
@@ -311,7 +329,7 @@ function showResults() {
         html += `
             <div style="margin-top: 20px;">
                 <button class="nav-btn" style="margin-right: 15px;" onclick="startQuiz(${currentTask})">🔄 Retry Quiz</button>
-                <button class="back-btn" onclick="closeTask()">📖 Review Material</button>
+                <button class="back-btn" onclick="openTask(${currentTask})">📖 Review Material</button>
             </div>
         `;
     }

@@ -905,6 +905,254 @@ const task3Content = `
 </div>
 </div>
 
+<div class="content-section">
+<h3>📋 The Sales Process Flow</h3>
+<p>Understanding the correct sequence of the sales process is <strong>critical</strong>. Getting this wrong is the #1 mistake new salespeople make.</p>
+
+<div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
+<h4 style="color: #F59E0B; margin-top: 0;">💰 PRICING PHILOSOPHY</h4>
+<p><strong>We price based on the CLIENT'S perception of value, not fixed rates.</strong></p>
+<ul style="margin-bottom: 0;">
+<li>Understand their budget range first</li>
+<li>Position your price within their comfort zone</li>
+<li>Projects above threshold = commission as per the Incentive &amp; Penalty Framework</li>
+</ul>
+</div>
+
+<h4>The Correct Process Flow (5 Steps)</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Step</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>What Happens</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Response</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>1. Lead Inquiry</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client messages wanting a store</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Understand their needs, identify any HARD PROBLEMS</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>2. Hard Problems Discussion</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client has complex requirements</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Discuss and resolve ONLY technical challenges BEFORE order</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>3. Budget Discovery</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Understand their budget perception</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Price according to THEIR budget, not fixed rates</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>4. Order Placed</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client pays after problems are resolved</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">NOW collect routine items (store access, logo, assets)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>5. Routine Handover</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Post-order collection</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hand off to PM for onboarding</td>
+</tr>
+</table>
+
+<h4>What Goes BEFORE vs AFTER Order</h4>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>🚨 CRITICAL DISTINCTION: Getting this wrong loses deals and causes project chaos!</strong>
+</div>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>BEFORE Order (Discuss First)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>AFTER Order (Collect Later)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom functionality requirements</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Store access (Shopify login)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complex integrations (ERPs, APIs)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Logo and brand assets</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unusual product types or variants</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product images and descriptions</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timeline constraints</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content for pages</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Technical feasibility questions</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Payment/shipping details</td>
+</tr>
+</table>
+
+<div class="warning-box">
+<strong>⚠️ NEVER discuss routine items (logo, store access, brand colors) BEFORE the order is placed.</strong> These are post-order collection items. Discussing them too early makes you look like a cheap freelancer and kills the premium feel. Hard problems come first, routine details come after payment.
+</div>
+
+<div class="highlight-box">
+<strong>Example of the Correct Flow:</strong><br><br>
+<strong>Client:</strong> "I need a Shopify store for my jewelry brand. I also need real-time inventory sync with my ERP."<br><br>
+<strong>You:</strong> "Great to hear from you! The ERP integration is an important detail. Can you tell me which ERP system you are using? This helps me confirm we can deliver exactly what you need."<br><br>
+<em style="color: #10B981;">You addressed the HARD problem (ERP integration) first. You did NOT ask about their logo, colors, or store access. That comes after the order is placed.</em>
+</div>
+</div>
+
+<div class="content-section">
+<h3>👋 Opening &amp; Engagement Mastery</h3>
+<div class="warning-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
+<h4 style="margin-top: 0;">⚡ The First 7 Seconds Rule</h4>
+<p>Your first message determines everything. Lead with VALUE, not "Hi, can I help you?" The first 7 seconds decide whether the client sees you as an expert or just another freelancer.</p>
+</div>
+
+<h4>7 Proven Opening Techniques</h4>
+<p>Master these openers and you will immediately stand out from 99% of competitors who send generic copy-paste messages.</p>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">1. The "Why Now" Question</h4>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #10B981;">
+"What made you reach out today specifically?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why it works:</strong> Reveals their urgency level immediately. Clients who have a specific trigger (bad experience, upcoming launch, seasonal deadline) are more likely to buy fast.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<h4 style="color: #6366F1; margin-top: 0;">2. The Immediate Audit</h4>
+<p>Run their site through PageSpeed or GTmetrix <strong>while you are chatting with them</strong>. Share findings live.</p>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #6366F1;">
+"I just ran your site through PageSpeed and noticed your mobile score is 34. That means you are losing about 40% of visitors before they even see your products. Want me to show you the quick wins?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why it works:</strong> Shows expertise and gives immediate value before you even mention price. They now see you as a consultant, not a vendor.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<h4 style="color: #F59E0B; margin-top: 0;">3. The LinkedIn Research</h4>
+<p>Check their LinkedIn before responding. Mention their background naturally.</p>
+<div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #F59E0B;">
+"I saw you have been building [brand] for 2 years -- amazing progress! Based on where you are now, here is what I would focus on next..."
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why it works:</strong> Shows you did your homework. Clients feel special and respected. This alone puts you ahead of 95% of sellers.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<h4 style="color: #EC4899; margin-top: 0;">4. The Industry Insider</h4>
+<div style="background: rgba(236, 72, 153, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #EC4899;">
+"I have worked with 15+ skincare brands this year. Here is what the top performers all have in common..."
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why it works:</strong> Positions you as a specialist, not a generalist. The client immediately thinks "this person understands MY industry."</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">5. The Competitor Drop</h4>
+<div style="background: rgba(6, 182, 212, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #06B6D4;">
+"We just finished working with a similar brand in your niche. Their conversions jumped 40% in the first month after launch."
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why it works:</strong> Social proof + relevance. They now believe you can deliver results because you already did it for someone like them.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">6. The Screenshot Opener</h4>
+<p>Send a screenshot of their current site with <strong>3 quick observations</strong> annotated BEFORE you pitch anything.</p>
+<div style="background: rgba(139, 92, 246, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #8B5CF6;">
+"I took a quick look at your store and spotted 3 things: (1) Your hero section has no clear CTA, (2) Product images are not optimized for mobile, (3) No trust badges above the fold. Want me to explain how fixing these could increase your conversions?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why it works:</strong> Value first, pitch later. The client now sees you as someone who genuinely cares about their success.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">7. The Personalized Video</h4>
+<p>Record a <strong>45-second Loom video</strong> walking through their site with 3 observations.</p>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #10B981;">
+<strong>5x higher response rate than text messages.</strong> A 45-second personalized video showing their own site makes them feel like you already started working on their project.
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why it works:</strong> Nobody else does this. The effort alone shows you are serious, and seeing their own site analyzed on video creates an emotional connection.</p>
+</div>
+
+<h4>Opening Mistakes vs Professional Alternatives</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Opening Mistake</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Professional Alternative</strong></td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.05);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Hi, how can I help you?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I checked your store and found 3 conversion killers. Want me to walk you through them?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We build Shopify stores."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We help brands like yours increase their online revenue by optimizing every step of the customer journey."</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.05);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What is your budget?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What made you reach out today? I want to understand your goals first before we talk numbers."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here are our packages..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Before I recommend anything, tell me about your biggest challenge with your current store."</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.05);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Copy-paste generic intro</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Personalized Loom video or screenshot analysis of their specific store</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🔥 The Emotional Control Advantage</h3>
+<p>Before scripts, before frameworks, before closing techniques -- there is one thing that separates elite closers from average salespeople: <strong>emotional control.</strong></p>
+
+<div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<h4 style="color: #EF4444; margin-top: 0;">The Ultimate Sales Equation</h4>
+<p style="font-size: 1.3em; text-align: center; margin: 15px 0;"><strong>Conviction x Trust = Sales</strong></p>
+<p>Not scripts. Not rebuttals. Not persuasion tricks. If you <strong>believe</strong> in what you are selling, people feel it. If you do not believe, they smell it instantly.</p>
+</div>
+
+<h4>Conviction is a Slider, Not a Switch</h4>
+<p>Most people think conviction is binary: "I believe or I do not." <strong>Wrong.</strong> Conviction is a slider that moves from 40% to 70% to 100%.</p>
+<div class="highlight-box">
+<strong>What increases conviction fastest?</strong> Seeing proof:
+<ul style="margin-bottom: 0;">
+<li>Testimonials from happy clients</li>
+<li>Client wins: "This client made $40k revenue after our store build"</li>
+<li>Case studies: "This brand hit 4.8% conversion rate"</li>
+<li>Results: "This ad campaign went 12x ROAS"</li>
+</ul>
+<p style="margin-top: 10px;"><strong>That is gasoline for your conviction.</strong> The more wins you see, the more you believe, the more you close.</p>
+</div>
+
+<h4>Childlike Curiosity Beats Confrontation</h4>
+<p>Most sales reps argue with objections. <strong>Elite closers ask curious questions instead.</strong></p>
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin: 15px 0;">
+<p><strong>Client:</strong> "My husband will not approve this."</p>
+<p style="color: #EF4444;">Bad rep: "He is wrong. This is a great investment."</p>
+<p style="color: #10B981;">Elite rep: "That is interesting -- why would he not approve?"</p>
+<p style="margin-top: 10px; color: #94A3B8;">Now the client is explaining to <em>themselves</em> why the objection might not hold. No pressure. No conflict. Just logic. <strong>People convince themselves better than you ever could.</strong></p>
+</div>
+
+<h4>The Real Sales Framework (7 Steps)</h4>
+<p>You have had this conversation 10,000 times. They have had it once. <strong>You must guide the structure:</strong></p>
+<div class="highlight-box">
+<ol style="margin-bottom: 0; line-height: 2;">
+<li><strong>Why are you here?</strong> -- Understand their trigger</li>
+<li><strong>What problem do you have?</strong> -- Identify the real pain</li>
+<li><strong>What have you tried?</strong> -- Learn their history</li>
+<li><strong>Why did it not work?</strong> -- Find the root cause</li>
+<li><strong>Why is this different?</strong> -- Position your solution</li>
+<li><strong>What experience will you have?</strong> -- Paint the transformation</li>
+<li><strong>Close</strong> -- Ask for the commitment</li>
+</ol>
+<p style="margin-top: 15px;"><strong>Not features. Not tech specs. Outcomes and transformation.</strong></p>
+</div>
+
+<div class="warning-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
+<h4 style="margin-top: 0;">Emotional Control in Practice</h4>
+<p>Sales is like fighting. Under pressure: heart rate goes up, breathing gets fast, fight-or-flight kicks in.</p>
+<ul style="margin-bottom: 0;">
+<li><strong>Losers:</strong> React emotionally, push harder, get defensive</li>
+<li><strong>Winners:</strong> Slow down, ask questions, stay curious</li>
+</ul>
+<p style="margin-top: 10px;"><strong>The calmest rep wins.</strong> When belief is real, your voice changes, your speed changes, certainty comes through. People feel it.</p>
+</div>
+</div>
+
 
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
@@ -1209,6 +1457,290 @@ Product mastery gives you:
 <p style="margin-top: 15px;">Always mention future services during closing: <em>"After support period ends, we offer monthly maintenance if you want ongoing help."</em></p>
 </div>
 
+<div class="content-section">
+<h3>📄 The Proposal PDF Framework</h3>
+<p>For high-value leads, enterprise clients, or situations involving multiple stakeholders, we send a <strong>professional Proposal PDF</strong> that looks official and premium. This alone increases close rate significantly.</p>
+
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ NEVER send a proposal without having a qualifying conversation first.</strong> The proposal is a closing tool, not a lead generation tool. If you send it to unqualified leads, you are wasting your time and devaluing the document.
+</div>
+
+<h4>When to Use a Formal Proposal</h4>
+<ul>
+<li><strong>High-value leads:</strong> Clients discussing $2,800+ projects</li>
+<li><strong>Enterprise clients:</strong> Established brands with complex needs</li>
+<li><strong>Multiple stakeholders:</strong> When the decision maker needs to share with partners, investors, or team members</li>
+<li><strong>Competitive situations:</strong> When you know they are comparing multiple agencies</li>
+</ul>
+
+<h4>Proposal Structure (Required)</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Page</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Content</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Details</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Page 1</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cover Page</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Title, client name, prepared by, date, "Confidential" tag</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Page 2</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Executive Summary</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client goals (2-3 lines), our approach (3 steps), target results (conversion + growth)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Page 3</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Plan 1 -- $2,800</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete store setup (detailed feature breakdown)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>New Page</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Plan 2 -- $5,400</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Store + 1-month marketing (detailed feature breakdown)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>New Page</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Plan 3 -- $9,800</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full growth system (detailed feature breakdown)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Final Page</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Next Steps</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timeline, what we need from client, how to get started</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>Title Format:</strong> "[Client Brand Name] -- Growth &amp; Store Build Proposal"<br><br>
+<strong>Results Section Must Include:</strong>
+<ul style="margin-bottom: 0;">
+<li>Target conversion rate improvement (e.g., "Aim for 3-5% CVR")</li>
+<li>Growth targets tied to their specific niche</li>
+<li>ROI projection based on their current traffic and average order value</li>
+</ul>
+</div>
+
+<div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
+<strong>Pro Tips for Proposal PDFs:</strong>
+<ul style="margin-bottom: 0;">
+<li>Clean page breaks between each plan -- looks professional</li>
+<li>Generate each plan separately using GPT so it gets full detail and personalization</li>
+<li>For each feature, include: what it is, why it matters, and what deliverable the client gets</li>
+<li>Always send with a pre-price message: "I have prepared a professional proposal with plan options so you can choose based on how fast you want to scale."</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📦 Expanded Package Plans (High-Ticket)</h3>
+<p>Beyond our standard Premium/Enterprise packages, we offer <strong>three proposal-tier plans</strong> for clients who need comprehensive solutions. These are used in formal Proposal PDFs.</p>
+
+<div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.02)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 15px; padding: 25px; margin: 20px 0;">
+<h4 style="color: #10B981; margin-top: 0;">PLAN 1 -- $2,800 USD: Complete Store Setup</h4>
+<p>Everything needed to launch a professional, conversion-optimized Shopify store.</p>
+<ul>
+<li>Full Shopify setup from scratch (or rebuild existing store)</li>
+<li>Theme installation + professional configuration</li>
+<li>Premium UI/UX design (mobile-first, high-end layout)</li>
+<li>Full page structure: Homepage, Collections, Product, Cart, About, Contact, FAQ, Policies</li>
+<li>Product catalog organization + collection structure + navigation menus</li>
+<li>CRO build-in: strong hero CTAs, trust sections, social proof, sticky add-to-cart</li>
+<li>SEO foundation: meta titles, descriptions, clean URLs, internal linking</li>
+<li>Email automation: Welcome Series, Abandoned Cart, Post-Purchase flows</li>
+<li>Tracking setup: GA4, Meta Pixel, TikTok Pixel</li>
+<li>Speed optimization + mobile performance pass</li>
+<li>Revisions included + full QA testing + post-launch support</li>
+</ul>
+</div>
+
+<div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.02)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 15px; padding: 25px; margin: 20px 0;">
+<h4 style="color: #3B82F6; margin-top: 0;">PLAN 2 -- $5,400 USD: Store + 1-Month Marketing</h4>
+<p>Everything in Plan 1, PLUS a full month of marketing execution to drive early traction.</p>
+<ul>
+<li>Everything from Plan 1 ($2,800)</li>
+<li>1-month content calendar with posting + scheduling</li>
+<li>5 high-quality social media posts (designed images + captions)</li>
+<li>Content management: bio optimization, highlights strategy, profile cleanup</li>
+<li>Organic growth actions: engagement strategy + weekly optimization</li>
+<li>Marketing strategy for 10 selected products (positioning, angles, content concepts)</li>
+<li>Marketing research foundation: competitor snapshot, target audience clarity, funnel strategy</li>
+<li>LLM SEO registration for up to 10 products</li>
+<li>Paid marketing starter setup: campaign foundation, targeting, ad copy, budget caps</li>
+</ul>
+<p style="font-size: 0.9em; color: #94A3B8;"><em>Ad spend paid by client directly. We manage planning, setup, and optimization.</em></p>
+</div>
+
+<div style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.02)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 15px; padding: 25px; margin: 20px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">PLAN 3 -- $9,800 USD: Full Growth System (3 Months)</h4>
+<p>Everything in Plan 2, PLUS a complete 3-month marketing execution with SEO, paid ads, and content.</p>
+<ul>
+<li>Everything from Plan 2 ($5,400)</li>
+<li>3-month content strategy + 90-day content calendar</li>
+<li>15 social media posts over 3 months (video, static, carousel mix)</li>
+<li>UGC-style content direction: hooks, storyboards, scripts, shot lists</li>
+<li>Full 3-month marketing package: research refresh, messaging framework, offer strategy</li>
+<li>SEO growth program: 30 SEO blogs, keyword targeting, internal linking, daily improvements</li>
+<li>LLM SEO registration for up to 50 products</li>
+<li>Full paid marketing execution: Meta + Google + TikTok Ads, 3-month optimization</li>
+<li>Cross-platform funnel: cold audience to retargeting to retention</li>
+<li>Monthly reporting + next-step roadmap after month 3</li>
+</ul>
+</div>
+
+<h4>Plan Comparison Table</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Feature</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Plan 1 ($2,800)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Plan 2 ($5,400)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Plan 3 ($9,800)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full Store Build</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CRO + SEO Foundation</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email Automation</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Yes</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social Media Marketing</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1 Month</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3 Months</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Paid Ads Management</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Starter Setup</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full 3-Month Execution</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO Blogs</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30 Blogs</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">LLM SEO Products</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Up to 10</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Up to 50</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>When to Recommend Each Plan:</strong>
+<ul style="margin-bottom: 0;">
+<li><strong>Plan 1:</strong> Client just needs a store. They will handle their own marketing or already have a team.</li>
+<li><strong>Plan 2:</strong> Client needs a store AND wants to start building their online presence. Good for clients who say "I also need help with social media."</li>
+<li><strong>Plan 3:</strong> Client wants the full package -- store, marketing, SEO, ads. Best for serious brands ready to invest in rapid growth. This is where the biggest commissions are.</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>⚔️ Competitive Positioning</h3>
+<p>You will encounter 4 types of competitors. Here is how to position against each one.</p>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2); margin: 15px 0;">
+<h4 style="color: #EF4444; margin-top: 0;">1. Cheap Fiverr Sellers ($200-500)</h4>
+<p><strong>Their pitch:</strong> "I will build your Shopify store for $300 in 3 days!"</p>
+<p><strong>Their weakness:</strong> Template swappers with zero strategy. They change a logo and colors on a free theme and call it "custom." No CRO, no SEO, no speed optimization, no support after delivery. The store looks like every other generic store on the internet.</p>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin-top: 10px; border-left: 3px solid #10B981;">
+<strong>Your counter-pitch:</strong> "Those $300 stores use free templates with a logo swap. No conversion optimization, no speed work, no SEO. Our clients get stores built for revenue -- not just to exist. The difference shows in sales numbers within the first month."
+</div>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.2); margin: 15px 0;">
+<h4 style="color: #F59E0B; margin-top: 0;">2. Solo Freelancers ($800-1,500)</h4>
+<p><strong>Their pitch:</strong> "I am a senior Shopify developer with 5 years experience."</p>
+<p><strong>Their weakness:</strong> One person doing everything -- design, development, SEO, copy. Limited capacity means delays. When they get sick or busy, your project stops. No team backup, no QA process, and they often disappear after delivery.</p>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin-top: 10px; border-left: 3px solid #10B981;">
+<strong>Your counter-pitch:</strong> "With a solo freelancer, you are dependent on one person. If they get busy, sick, or disappear -- your project dies. We have a team of 40+ specialists, dedicated project managers, and 30-90 days of guaranteed support. Your project never stops."
+</div>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(139, 92, 246, 0.2); margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">3. Big Agencies ($5K-15K)</h4>
+<p><strong>Their pitch:</strong> "We are a full-service digital agency with Fortune 500 clients."</p>
+<p><strong>Their weakness:</strong> Overpriced, slow, bureaucratic. You are just a number to them. Your project gets assigned to a junior developer while they charge senior rates. 6-8 week timelines for work we do in 14 days. Communication goes through account managers who do not understand the technical details.</p>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin-top: 10px; border-left: 3px solid #10B981;">
+<strong>Your counter-pitch:</strong> "Big agencies charge $10,000-15,000 for what we deliver at a fraction of the cost -- with faster delivery and more personal attention. You will not be passed around between account managers. You get direct access to the team building your store."
+</div>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(6, 182, 212, 0.2); margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">4. DIY Platforms (Wix, Squarespace)</h4>
+<p><strong>Their pitch:</strong> "Build your own website for $20/month! No coding needed!"</p>
+<p><strong>Their weakness:</strong> Limited customization, poor performance, no conversion optimization. Business owners spend 100+ hours trying to build something that still looks amateur. No SEO strategy, no CRO, and they end up with a site that does not convert.</p>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin-top: 10px; border-left: 3px solid #10B981;">
+<strong>Your counter-pitch:</strong> "DIY sounds cheap until you count the hours spent struggling with templates, the sales lost from a slow site, and the frustration of a store that does not convert. Our clients get a professional, revenue-optimized store in 14 days while they focus on their actual business."
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💰 Price Anchoring Deep Dive</h3>
+<p>Price anchoring is one of the most powerful psychological tools in sales. It is about <strong>controlling the frame of reference</strong> before you ever state your price.</p>
+
+<h4>Anchor Against US Agency Prices</h4>
+<div class="highlight-box">
+<p>Most US-based agencies charge <strong>$10,000-15,000</strong> for what we deliver. When you anchor against this, your price suddenly feels like a steal:</p>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #10B981;">
+"Most US agencies charge $10,000-15,000 for a store of this caliber. We deliver the same quality -- same CRO principles, same speed optimization, same design standards -- at $1,800. The only difference is our team is global, so we pass the savings to you."
+</div>
+</div>
+
+<h4>Anchor Against the Cost of NOT Having a Good Store</h4>
+<div class="highlight-box">
+<p>Calculate what a bad store costs them in lost sales:</p>
+<div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #F59E0B;">
+"If your store gets 1,000 visitors/month and converts at 1% instead of 3%, that is 20 lost sales every month. At a $50 average order value, that is $1,000/month in lost revenue -- $12,000/year. Our $1,800 investment pays for itself in less than 2 months."
+</div>
+</div>
+
+<h4>The "Investment vs Expense" Reframe</h4>
+<div class="highlight-box">
+<p>Never let the client think of your price as an <strong>expense</strong>. Reframe it as an <strong>investment with measurable ROI</strong>:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Expense Framing (Bad)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Investment Framing (Good)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"It costs $1,800"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your investment is $1,800, and here is how it pays for itself..."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"The price is..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"For a complete revenue-optimized store with 90 days of support, the investment is..."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We charge $1,200"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Clients typically see ROI within 60-90 days at the $1,200 level"</td>
+</tr>
+</table>
+</div>
+
+<div class="warning-box" style="background: rgba(16, 185, 129, 0.15); border-color: #10B981;">
+<strong>The Full Anchoring Script:</strong><br><br>
+"Most US agencies charge $10,000-15,000 for what we deliver at $1,800. And consider this: if your current store is losing even 20 extra sales per month due to poor design and speed, that is $1,000+ in lost revenue every month. Our $1,800 investment does not just build you a store -- it builds you a revenue machine that pays for itself within 60 days."
+</div>
+</div>
+
 
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
@@ -1511,6 +2043,323 @@ graph TD
 <p><strong>It's better to say NO to a bad $2,000 project than suffer through a nightmare.</strong></p>
 </div>
 
+<div class="content-section">
+<h3>🔍 Advanced Discovery Questions</h3>
+<p>Beyond the basic M.T.N.D. framework, these <strong>10 discovery questions</strong> help you deeply understand each lead and make smarter qualification decisions.</p>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.2); margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">1. The Budget Range Test</h4>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #10B981;">
+"Are you thinking $1,000 range or $3,000+ range?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Never ask exact budget -- it puts them on the defensive. Giving a range lets them self-select. If they say "$1,000 range," you know Premium. If "$3,000+," you know Enterprise or proposal-tier.</p>
+<p style="font-size: 0.9em;"><strong>Good answer:</strong> "I am comfortable in the $1,500-2,000 range for quality work."<br><strong>Bad answer:</strong> "What is your cheapest option?" or "I have $200 to spend."</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.2); margin: 15px 0;">
+<h4 style="color: #6366F1; margin-top: 0;">2. The Decision Timeline</h4>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #6366F1;">
+"When were you hoping to launch?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Qualifies urgency instantly. Clients with a real deadline buy faster.</p>
+<p style="font-size: 0.9em;"><strong>Good answer:</strong> "Within the next 2-4 weeks" or "Next month for a product launch."<br><strong>Bad answer:</strong> "Sometime this year maybe" or "No rush, just exploring."</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.2); margin: 15px 0;">
+<h4 style="color: #F59E0B; margin-top: 0;">3. The Decision Maker Check</h4>
+<div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #F59E0B;">
+"Are you the one making the final call, or does someone else need to approve?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> If they need to check with a partner, spouse, or team, your closing timeline doubles. You need to know early so you can plan accordingly.</p>
+<p style="font-size: 0.9em;"><strong>Good answer:</strong> "I am the owner, I make all decisions."<br><strong>Bad answer:</strong> "I need to run this by my business partner and our accountant."</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(236, 72, 153, 0.2); margin: 15px 0;">
+<h4 style="color: #EC4899; margin-top: 0;">4. The "Tried Before" Probe</h4>
+<div style="background: rgba(236, 72, 153, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #EC4899;">
+"Have you worked with developers before? What went right/wrong?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Reveals red flags (history of firing developers) and expectations. Also helps you position yourself against their past bad experiences.</p>
+<p style="font-size: 0.9em;"><strong>Good answer:</strong> "Yes, good experience but they did not specialize in ecommerce."<br><strong>Bad answer:</strong> "My last 4 developers were all terrible." (The common factor is THEM.)</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.2); margin: 15px 0;">
+<h4 style="color: #10B981; margin-top: 0;">5. The Dream Store Question</h4>
+<div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #10B981;">
+"If your store was perfect, what would be different about it?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Reveals their vision and true desires. Their answer tells you exactly what to emphasize in your pitch.</p>
+<p style="font-size: 0.9em;"><strong>Good answer:</strong> Specific details about design, speed, conversion, brand feel.<br><strong>Bad answer:</strong> Vague answers like "I just want it to look nice."</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(139, 92, 246, 0.2); margin: 15px 0;">
+<h4 style="color: #8B5CF6; margin-top: 0;">6. "What Keeps You Up at Night"</h4>
+<p>Ask about their deepest business pain points. Let them talk. Do not interrupt.</p>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Reveals their deepest pain points and emotional triggers. These become your closing ammunition. When you present your solution, tie it directly back to what keeps them up at night.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(6, 182, 212, 0.2); margin: 15px 0;">
+<h4 style="color: #06B6D4; margin-top: 0;">7. The Revenue Impact Question</h4>
+<div style="background: rgba(6, 182, 212, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #06B6D4;">
+"If your conversion rate doubled, what would that mean for your business?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Makes them calculate the value of your work themselves. If they say "That would be an extra $5,000/month," your $1,800 price feels like nothing.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2); margin: 15px 0;">
+<h4 style="color: #EF4444; margin-top: 0;">8. The Competitor Research</h4>
+<div style="background: rgba(239, 68, 68, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #EF4444;">
+"Who is your biggest competitor? What do they do better than you?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Reveals their competitive landscape and insecurities. You can then position your store build as the tool to close the gap.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.2); margin: 15px 0;">
+<h4 style="color: #F59E0B; margin-top: 0;">9. The Growth Stage Check</h4>
+<div style="background: rgba(245, 158, 11, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #F59E0B;">
+"Are you at $0-10K/month, $10-50K, or $50K+ in revenue?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Adjusts your entire pitch. A $0/month startup needs different messaging than a $50K/month brand wanting to scale. Also qualifies budget indirectly.</p>
+</div>
+
+<div style="background: rgba(30, 41, 59, 0.6); padding: 20px; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.2); margin: 15px 0;">
+<h4 style="color: #6366F1; margin-top: 0;">10. "If Money Was Not an Issue"</h4>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #6366F1;">
+"If budget was not a concern, what would your ideal solution look like?"
+</div>
+<p style="font-size: 0.9em; color: #94A3B8;"><strong>Why you ask:</strong> Reveals their true desires without budget constraints. Often their dream solution is exactly what your Enterprise or Plan 3 offers. Now you know what they WANT; your job is to show why it is worth the investment.</p>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 Lead Scoring System</h3>
+<p>Turn your M.T.N.D. qualification into a <strong>numerical score</strong> for faster, more consistent decisions.</p>
+
+<h4>Scoring Table</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Criterion</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>0 Points</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>1 Point</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>2 Points</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>3 Points</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>M (Money)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Wants cheapest option</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Budget under $800</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Budget $800-1,500</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Budget $1,500+ or "not an issue"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>T (Timeline)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Just exploring"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3+ months away</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Within 1-2 months</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ready this week/next week</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>N (Need)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No clear problem</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Vague need</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clear need, has a store</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Urgent need + losing money</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>D (Decision)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Researching for someone else</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Needs multiple approvals</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Needs 1 other person</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sole decision maker</td>
+</tr>
+</table>
+
+<h4>Score Interpretation</h4>
+<div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>0-4 Points: COLD LEAD</strong> -- Low priority. Send a polite response but do not invest significant time. Check back in 30 days if they seem like they could warm up.
+</div>
+<div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B; margin-top: 10px;">
+<strong>5-8 Points: WARM LEAD</strong> -- Proceed with caution. Worth investing time in discovery but set clear expectations. May need nurturing over 1-2 weeks before closing.
+</div>
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-color: #10B981; margin-top: 10px;">
+<strong>9-12 Points: HOT LEAD</strong> -- Top priority. Move fast. These leads are ready to buy and every hour you delay increases the chance they go elsewhere. Respond within 5 minutes. Get on a call ASAP.
+</div>
+
+<h4>Lead Prioritization Matrix</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Priority</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Score</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Response Time</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Action</strong></td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.1);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">P1 (Hot)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">9-12</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 5 minutes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full discovery + pitch immediately</td>
+</tr>
+<tr style="background: rgba(245, 158, 11, 0.1);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">P2 (Warm)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5-8</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 30 minutes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ask qualifying questions, nurture</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.1);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">P3 (Cold)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">0-4</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Within 24 hours</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brief response, low effort, follow up later</td>
+</tr>
+</table>
+
+<div class="highlight-box">
+<strong>Daily Lead Review Process:</strong>
+<ol style="margin-bottom: 0;">
+<li>Score every new lead that came in overnight</li>
+<li>Prioritize P1 leads -- respond immediately</li>
+<li>Move to P2 leads -- send qualifying questions</li>
+<li>P3 leads get a polite template response</li>
+<li>Review warm leads from yesterday -- any updates? Follow up</li>
+</ol>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💬 Qualification Conversation Flow</h3>
+<p>Here are three example conversations showing how qualification plays out in practice.</p>
+
+<div style="background: rgba(16, 185, 129, 0.1); border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 15px; padding: 25px; margin: 20px 0;">
+<h4 style="color: #10B981; margin-top: 0;">HOT LEAD Example (Score: 11/12 -- All Green Flags)</h4>
+<p><strong>Lead:</strong> "Hi! I run a skincare brand doing $30K/month. My current Shopify store loads slowly and our conversion rate is 1.2%. I need a complete redesign. I am the owner and I am ready to invest in quality. Budget is $1,500-2,000. When can we start?"</p>
+<p><strong>Analysis:</strong> Money (3), Timeline (3), Need (3), Decision (2) = <strong>11 points</strong></p>
+<p><strong>Your move:</strong> Drop everything. Respond in under 5 minutes. Run a quick PageSpeed audit. Send a personalized video or screenshot analysis. Move to pitch within the first conversation. This lead is ready to buy TODAY.</p>
+</div>
+
+<div style="background: rgba(245, 158, 11, 0.1); border: 2px solid rgba(245, 158, 11, 0.3); border-radius: 15px; padding: 25px; margin: 20px 0;">
+<h4 style="color: #F59E0B; margin-top: 0;">WARM LEAD Example (Score: 7/12 -- One Red Flag)</h4>
+<p><strong>Lead:</strong> "Hi, I am launching a clothing brand and need a Shopify store. Not sure about budget yet but I want it to look professional. My business partner also needs to agree. We are hoping to launch in about 2 months."</p>
+<p><strong>Analysis:</strong> Money (1 - unclear), Timeline (2), Need (2), Decision (2 - needs partner) = <strong>7 points</strong></p>
+<p><strong>Your move:</strong> Proceed with caution. Ask the Budget Range Test question next: "Are you thinking $1,000 range or $3,000+?" Also ask: "Would your partner be available for a quick call so we can address both of your questions at once?" Nurture this lead but do not spend hours on it until budget and decision-maker are clarified.</p>
+</div>
+
+<div style="background: rgba(239, 68, 68, 0.1); border: 2px solid rgba(239, 68, 68, 0.3); border-radius: 15px; padding: 25px; margin: 20px 0;">
+<h4 style="color: #EF4444; margin-top: 0;">COLD LEAD Example (Score: 3/12 -- Multiple Red Flags)</h4>
+<p><strong>Lead:</strong> "Hey, what is your cheapest option? I need a store built in 2 days. My last 3 developers all messed up. Can you match this $300 quote I got from Fiverr?"</p>
+<p><strong>Analysis:</strong> Money (0 - wants cheapest), Timeline (0 - unrealistic), Need (2 - has need), Decision (1 - unclear) = <strong>3 points</strong></p>
+<p><strong>Your move:</strong> Politely disqualify. Do not invest time trying to convert this lead. Send a brief, professional response: "Based on what you are describing, it sounds like you are looking for something more budget-friendly. We specialize in premium development for businesses ready to invest $1,200+. I would recommend checking Fiverr for options in your range. Best of luck!"</p>
+</div>
+
+<h4>Decision Flow Diagram</h4>
+<div class="mermaid">
+graph TD
+    Start[New Lead Arrives] --> Score[Score with M.T.N.D.]
+    Score --> Hot{Score 9-12?}
+    Hot -- Yes --> Pitch[Immediate Pitch + Discovery]
+    Hot -- No --> Warm{Score 5-8?}
+    Warm -- Yes --> Qualify[Ask Discovery Questions]
+    Warm -- No --> Cold[Polite Template Response]
+    Pitch --> Close{Ready to Close?}
+    Close -- Yes --> Order[Send Proposal / Place Order]
+    Close -- No --> Followup[Schedule Follow-up]
+    Qualify --> Improved{Score Improved?}
+    Improved -- Yes --> Pitch
+    Improved -- No --> Nurture[Nurture or Disqualify]
+    style Hot fill:#10B981,stroke:#059669
+    style Warm fill:#F59E0B,stroke:#D97706
+    style Cold fill:#EF4444,stroke:#DC2626
+    style Order fill:#10B981,stroke:#059669
+</div>
+</div>
+
+<div class="content-section">
+<h3>⚠️ The "Hard Problems" Protocol</h3>
+<p>One of the most critical concepts in our sales process: <strong>identifying and resolving "hard problems" BEFORE the order is placed.</strong></p>
+
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>🚨 CRITICAL RULE: Hard problems MUST be discussed and resolved BEFORE the client places an order. If you skip this step, the project will blow up later and everyone loses.</strong>
+</div>
+
+<h4>What Qualifies as a "Hard Problem"?</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Hard Problem</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why It Matters</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>How to Address</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom functionality</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">May require app or custom code</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"You mentioned [feature]. Let me confirm we can implement this. Give me 24 hours."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Complex integrations</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Third-party systems, ERPs, custom APIs</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What system needs to connect? I will verify compatibility."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Unusual product types</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Subscriptions, digital goods, complex variants</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your product type may need special handling. Let me check the best approach."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Tight deadlines</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">May not be achievable</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your launch date is [date]. Our standard is 14 days. Let me see if we can accommodate."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Design expectations</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reference store may not be realistic</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I see your reference stores. [X feature] requires [explanation]. Want to discuss options?"</td>
+</tr>
+</table>
+
+<h4>Hard Problems vs Routine Items</h4>
+<div class="highlight-box">
+<table style="width: 100%; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>HARD PROBLEMS (Discuss BEFORE Order)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>ROUTINE ITEMS (Collect AFTER Order)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ERP integration requirement</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Logo file</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Subscription box with custom logic</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand colors and fonts</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Multi-currency with specific tax rules</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product images</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom product configurator</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Store login credentials</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Needs delivery in 5 days (feasibility?)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">About page copy</td>
+</tr>
+</table>
+</div>
+
+<h4>The 100% Rule</h4>
+<div class="warning-box" style="background: rgba(16, 185, 129, 0.15); border-color: #10B981;">
+<strong>Before accepting ANY project, be 100% SURE you can solve every identified hard problem:</strong>
+<ul style="margin-bottom: 0;">
+<li><strong>If YES:</strong> Proceed with confidence. Place the order.</li>
+<li><strong>If UNSURE:</strong> Escalate to senior developer or founder BEFORE committing. Say: "Let me confirm this with our technical team -- I will get back to you within 24 hours."</li>
+<li><strong>If NO:</strong> Be honest: "This specific feature is outside our scope. Here is what we CAN do instead."</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong>Why This Matters for Qualification:</strong><br><br>
+Hard problem identification is part of qualification because it determines whether you can actually deliver what the client needs. A lead might pass M.T.N.D. perfectly (money, timeline, need, decision-maker) but if they need something technically impossible, the project will fail. <strong>Always identify hard problems during your qualification conversation, not after the order.</strong>
+</div>
+</div>
+
 
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
@@ -1571,9 +2420,33 @@ const task6Content = `
     <div style="background: rgba(30, 41, 59, 0.8); padding: 12px 15px; font-size: 0.9em; color: #94A3B8;">🎬 <strong>Client Centric Research for Effective Sales</strong></div>
 </div>
 
+<!-- WHY TEMPLATES MATTER -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+<h3 style="color: #60A5FA; margin-top: 0;">🎯 Why Templates Matter</h3>
+<p>Consistency equals professionalism. The top closers in sales never wing it &mdash; they have <strong>battle-tested scripts</strong> for every situation they encounter. Templates do two critical things simultaneously:</p>
+<ul>
+<li><strong>Save time:</strong> You do not have to think of the perfect response from scratch every single time. You already have one ready.</li>
+<li><strong>Increase conversion:</strong> Every template has been refined through hundreds of conversations. The wording, the structure, the flow &mdash; all optimized for results.</li>
+</ul>
+<div class="highlight-box">
+<h4>The Template Mindset</h4>
+<p>Think of templates like a chef&rsquo;s recipe book. A great chef does not memorize recipes word for word &mdash; they understand the <strong>principles</strong> behind each dish and adapt based on the ingredients available. Your templates work the same way: learn the structure, understand the psychology behind each line, then personalize for every lead.</p>
+</div>
+<div class="warning-box">
+<h4>⚠️ Templates Are NOT Copy-Paste</h4>
+<p>If you send the exact same message to every lead without personalizing, you will sound robotic and lose deals. Templates are <strong>frameworks</strong> &mdash; you must customize the name, niche, specific details, and tone for each conversation.</p>
+</div>
+</div>
+
+<!-- SPEED TO LEAD -->
 <div class="content-section">
-<h3>⚡ Impact of Speed on Sales</h3>
-<p>The probability of qualifying a lead drops by <strong>400%</strong> if you wait just 10 minutes vs 1 minute.</p>
+<h3>⚡ Speed to Lead: The #1 Factor in Closing</h3>
+<p>The probability of qualifying a lead drops by <strong>400%</strong> if you wait just 10 minutes vs responding in 1 minute. On Fiverr and freelance platforms, <strong>first to respond wins 40% more conversions.</strong></p>
+<p>Why? Two reasons:</p>
+<ul>
+<li><strong>Algorithm boost:</strong> Platforms prioritize fast responders in search rankings and badge systems</li>
+<li><strong>Buyer psychology:</strong> Clients are impatient. They message 3-5 sellers and go with whoever answers first. By the time you respond 30 minutes later, they have already placed an order with someone else.</li>
+</ul>
 <div class="mermaid">
 pie title Conversion Probability by Response Time
     "0-30 Mins (High)" : 65
@@ -1581,130 +2454,435 @@ pie title Conversion Probability by Response Time
     "1-4 Hours (Low)" : 8
     "24+ Hours (Zero)" : 2
 </div>
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(6, 182, 212, 0.2)); border: none; text-align: center; padding: 25px;">
+<div style="font-size: 1.5em; font-weight: 700;">80% of leads are lost if you take more than 5 minutes to respond</div>
+<p style="margin-bottom: 0; margin-top: 10px;">Speed is not optional. It is your single biggest competitive advantage.</p>
+</div>
 </div>
 
+<!-- RESPONSE TIME STANDARDS -->
 <div class="content-section">
-<h3>⚡ Speed Wins Deals</h3>
-<p>On Fiverr and freelance platforms, <strong>first to respond wins 40% more conversions.</strong></p>
-<p>Why? Two reasons:</p>
-<ul>
-<li><strong>Algorithm boost:</strong> Platforms prioritize fast responders</li>
-<li><strong>Buyer psychology:</strong> Clients are impatient. They message 3-5 sellers and go with whoever answers first</li>
-</ul>
+<h3>⏱️ Response Time Standards</h3>
 <div class="warning-box">
-<strong>Response Time Standards:</strong>
-<ul style="margin-bottom: 0;">
-<li>🎯 <strong>Ideal:</strong> Under 5 minutes</li>
-<li>✅ <strong>Acceptable:</strong> Under 15 minutes</li>
-<li>⚠️ <strong>Risky:</strong> 30+ minutes (they have likely ordered elsewhere)</li>
-<li>❌ <strong>Dead:</strong> 1+ hour (they've definitely moved on)</li>
-</ul>
+<h4>⚠️ Mandatory Response Time Rules</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Scenario</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Maximum Time</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Status</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New lead inquiry</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Under 5 minutes</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">🎯 Ideal</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Active conversation reply</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Under 1 hour</strong> (during business hours)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ Acceptable</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Proposal/quote delivery</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Within 24 hours</strong> of discovery</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ Acceptable</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scheduled follow-ups</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>On schedule, never forgotten</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">📅 Mandatory</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response after 30+ minutes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They likely ordered elsewhere</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">⚠️ Risky</td>
+</tr>
+<tr style="background: rgba(239, 68, 68, 0.25);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response after 1+ hour</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They have definitely moved on</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Dead</td>
+</tr>
+</table>
 </div>
 </div>
 
+<!-- THE 4 RESPONSE TYPES -->
 <div class="content-section">
 <h3>📝 The 4 Response Types</h3>
-<p>Every inquiry falls into one of four categories. Use the right template:</p>
+<p>Every inquiry falls into one of four categories. Master the right template for each:</p>
 
-<h4 style="color: #10B981;">Type 1: General Inquiry</h4>
+<h4 style="color: #10B981;">Type 1: Initial Lead Response (General Inquiry)</h4>
 <p><em>"Hi, I need a Shopify store for my business."</em></p>
+<p>This is your most common response type. The goal is to qualify the lead quickly while showing enthusiasm and credibility. You must respond within 5 minutes.</p>
 <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-color: #10B981;">
 <strong>Template Structure:</strong>
 <ol style="margin-bottom: 0;">
-<li>Greeting + enthusiasm</li>
+<li>Warm greeting + genuine enthusiasm</li>
 <li>5 Qualifying questions (products, count, branding, features, timeline)</li>
-<li>Share relevant portfolio piece</li>
-<li>Mention credibility (stores built, rating)</li>
-<li>Promise custom offer soon</li>
+<li>Share a relevant portfolio piece from their niche</li>
+<li>Mention credibility (2000+ stores built, 4.9 star rating)</li>
+<li>Promise a custom offer within a specific timeframe</li>
 </ol>
 </div>
+
 <div class="highlight-box" style="margin-top: 10px;">
-<strong>Example:</strong><br>
+<strong>WhatsApp/Chat Script (Informal, Friendly):</strong><br>
 "Hi [Name]! 👋 Thanks for reaching out about your store!<br><br>
-Quick questions to create the perfect solution:<br>
+Quick questions to create the perfect solution for you:<br>
 1️⃣ What products will you sell?<br>
 2️⃣ How many products for launch?<br>
-3️⃣ Logo, brand colors, photos ready?<br>
-4️⃣ Any specific features needed?<br>
-5️⃣ Ideal timeline?<br><br>
-Built 2000+ stores with 4.9★ rating. Here's one in your niche: [link]<br><br>
-Custom offer coming within 2-3 hours! 🚀"
+3️⃣ Do you have your logo, brand colors, and product photos ready?<br>
+4️⃣ Any specific features needed (subscriptions, custom checkout, multi-currency)?<br>
+5️⃣ What is your ideal timeline?<br><br>
+We have built 2000+ stores with a 4.9★ rating. Here is one in your niche: [link]<br><br>
+I will send you a custom offer within 2-3 hours! 🚀"
 </div>
 
-<h4 style="color: #6366F1; margin-top: 25px;">Type 2: Price-Focused</h4>
-<p><em>"How much do you charge?"</em></p>
-<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
-<strong>Key Rule:</strong> Never give exact price without understanding needs first.
-</div>
 <div class="highlight-box" style="margin-top: 10px;">
-<strong>Example:</strong><br>
-"Great question! My pricing depends on what you need.<br><br>
-Before I quote, quick questions:<br>
-1️⃣ Simple store or complex features?<br>
-2️⃣ How many products?<br>
-3️⃣ Any specific functionality?<br><br>
-Packages range from $800-1,800 depending on scope. Once I understand your needs, I'll send exact pricing with what's included!"
+<strong>Email Script (Professional, Value-Focused):</strong><br>
+"Subject: Re: Your Shopify Store Project<br><br>
+Hi [Name],<br><br>
+Thank you for reaching out! I reviewed your inquiry and I am excited about your [niche] business.<br><br>
+To put together the best solution for you, I have a few quick questions:<br>
+- What products will you be selling, and approximately how many for launch?<br>
+- Do you have branding assets ready (logo, colors, product photography)?<br>
+- Are there any specific features or integrations you need?<br>
+- What is your ideal launch timeline?<br><br>
+We specialize in high-converting Shopify stores and have delivered 2,000+ projects with a 4.9-star rating. Here is a recent project in a similar niche: [portfolio link]<br><br>
+I will have a tailored proposal ready for you within 24 hours.<br><br>
+Looking forward to working together!<br>
+[Your Name]"
 </div>
 
-<h4 style="color: #F59E0B; margin-top: 25px;">Type 3: Urgent Timeline</h4>
-<p><em>"I need this by next week, can you help?"</em></p>
-<div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
-<strong>Key Rule:</strong> Confirm you can help with rush, but list YOUR requirements.
-</div>
-<div class="highlight-box" style="margin-top: 10px;">
-<strong>Example:</strong><br>
-"Yes, rush delivery is possible! 🚀<br><br>
-For 7-day delivery, I need from YOU:<br>
-✅ Logo and branding ready<br>
-✅ All product photos/descriptions<br>
-✅ Quick responses (within hours, not days)<br><br>
-Do you have all this ready? If yes, we can start today!"
-</div>
-
-<h4 style="color: #EC4899; margin-top: 25px;">Type 4: Comparison</h4>
-<p><em>"I'm talking to other developers. What makes you different?"</em></p>
-<div class="highlight-box" style="background: rgba(236, 72, 153, 0.15); border-color: #EC4899;">
-<strong>Key Rule:</strong> Focus on YOUR value. Never trash competitors.
-</div>
-<div class="highlight-box" style="margin-top: 10px;">
-<strong>Example:</strong><br>
-"Smart to compare! Here's what sets us apart:<br><br>
-✅ 2000+ stores completed, 4.9★ rating<br>
-✅ Speed optimization (85+ PageSpeed) included<br>
-✅ 30-90 days of post-delivery support<br>
-✅ Unlimited revisions within scope<br>
-✅ Training walkthrough so you can manage your store<br><br>
-What matters most to YOU in choosing a developer?"
-</div>
-</div>
-
-<div class="content-section">
-<h3>🔄 The Follow-Up Sequence</h3>
-<p>Not everyone responds immediately. Here's when and how to follow up:</p>
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(99, 102, 241, 0.2);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Timing</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Message Focus</strong></td>
+<div class="highlight-box" style="margin-top: 15px; background: rgba(139, 92, 246, 0.15); border-color: #8B5CF6;">
+<strong>Variation by Lead Source:</strong>
+<table style="width: 100%; margin: 10px 0; border-collapse: collapse;">
+<tr style="background: rgba(139, 92, 246, 0.15);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Source</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Opening Line Adjustment</strong></td>
 </tr>
 <tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>+24 hours</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Did you get my offer? Any questions I can answer?"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Website form</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Thanks for filling out our form! I saw you are interested in [service]..."</td>
 </tr>
 <tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>+48 hours</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My schedule is filling up. Want me to reserve a slot for you?"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Social media DM</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Hey! Loved checking out your [Instagram/TikTok]. Your brand has great potential..."</td>
 </tr>
 <tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>+72 hours</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"No pressure! Closing this for now. Reach out when you're ready. Best of luck!"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Referral</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"[Referrer Name] mentioned you are looking for a Shopify expert. They are one of our favorite clients..."</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Fiverr/Upwork</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Hi! Thanks for your message. I checked your current site &mdash; I have some great ideas for you..."</td>
 </tr>
 </table>
+</div>
+
+<h4 style="color: #6366F1; margin-top: 25px;">Type 2: Discovery Response (Qualification)</h4>
+<p><em>After initial contact &mdash; gathering information to qualify the lead</em></p>
+<p>The discovery phase is where you transition from friendly chat to understanding their actual needs. Use the <strong>M.T.N.D. qualification framework</strong> (Money, Timeline, Need, Decision-maker) to determine if this is a real opportunity.</p>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>M.T.N.D. Framework Integration:</strong>
+<table style="width: 100%; margin: 10px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Factor</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Question to Ask</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why It Matters</strong></td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Money</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"What budget range are you working with for this project?"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Determines if they can afford your packages</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Timeline</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"When do you need the store live by? Any specific launch date?"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Urgency signals buying intent</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Need</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"What is the main problem you are trying to solve with this store?"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Understanding pain points helps you position value</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Decision-maker</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Are you the one making the final decision, or is there someone else involved?"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Avoids wasting time pitching non-decision-makers</td>
+</tr>
+</table>
+</div>
+
+<div class="highlight-box" style="margin-top: 10px;">
+<strong>Discovery Script &mdash; Transitioning from Chat to Qualification:</strong><br>
+"Thanks for the details, [Name]! Your [niche] brand sounds really exciting.<br><br>
+To give you the most accurate recommendation, I need to understand a few things:<br><br>
+About your business:<br>
+- What is your current monthly revenue (or is this a brand new venture)?<br>
+- Who is your target customer?<br>
+- Do you have an existing website or are we starting from scratch?<br><br>
+About this project:<br>
+- What is the most important thing this store needs to do for you?<br>
+- What budget range did you have in mind?<br>
+- Is there a specific launch date you are working toward?<br><br>
+Once I understand these, I can recommend the exact right package and timeline for you."
+</div>
+
+<div class="highlight-box" style="margin-top: 10px; background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
+<strong>How to Ask About Budget Without Being Pushy:</strong><br>
+<ul>
+<li>❌ "What is your budget?" (Too direct, makes them defensive)</li>
+<li>❌ "How much can you spend?" (Sounds like you are trying to maximize price)</li>
+<li>✅ "What budget range are you comfortable with? This helps me recommend the right package." (Positions it as helpful)</li>
+<li>✅ "Our packages range from $800 to $1,800. Which range aligns with what you had in mind?" (Anchors them in your pricing)</li>
+</ul>
+</div>
+
+<h4 style="color: #F59E0B; margin-top: 25px;">Type 3: Proposal/Pitch Response</h4>
+<p><em>Presenting the solution after you understand their needs</em></p>
+<p>This is where you present your recommendation. Structure matters &mdash; follow the RECAP method:</p>
+<div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
+<strong>The RECAP Pitch Structure:</strong>
+<ol>
+<li><strong>Recap their need:</strong> "Based on what you shared, you need a [specific type] store that [solves their problem]"</li>
+<li><strong>Present the solution:</strong> "Here is what I recommend &mdash; our [Package Name] includes..."</li>
+<li><strong>Show portfolio proof:</strong> "Here is a store we built for a similar [niche] brand: [link]"</li>
+<li><strong>Quote the price:</strong> "The investment for this is $[price], which includes [key deliverables]"</li>
+<li><strong>Handle questions:</strong> "What questions do you have about this?"</li>
+</ol>
+</div>
+
+<div class="highlight-box" style="margin-top: 10px;">
+<strong>Chat-Based Proposal Script:</strong><br>
+"[Name], based on what you shared about your [niche] brand, here is what I recommend:<br><br>
+💎 <strong>Premium Package ($1,200)</strong><br>
+- 5-page custom design matched to your brand<br>
+- Up to 25 products uploaded and optimized<br>
+- Speed optimization (85+ PageSpeed score)<br>
+- Mobile-responsive design<br>
+- 30 days of post-launch support<br>
+- Training walkthrough so you can manage it yourself<br><br>
+Here is a store we built for a similar brand: [portfolio link]<br><br>
+Timeline: 14 business days from project kickoff<br><br>
+Ready to get started? I can send you the order link right now! 🚀"
+</div>
+
+<div class="highlight-box" style="margin-top: 10px; background: rgba(139, 92, 246, 0.15); border-color: #8B5CF6;">
+<strong>Good/Better/Best Package Presentation:</strong><br>
+"For your [niche] store, we have three options:<br><br>
+⭐ <strong>Starter ($800)</strong> &mdash; 3-page store, 15 products, premium theme, 14-day support<br>
+💎 <strong>Premium ($1,200)</strong> &mdash; 5-page custom store, 25 products, speed optimized, 30-day support <em>(Most Popular)</em><br>
+👑 <strong>Enterprise ($1,800)</strong> &mdash; Everything in Premium + unlimited products, advanced features, custom functionality, 90-day support<br><br>
+Based on what you told me about [their specific need], I would recommend the <strong>[Package Name]</strong> because [specific reason tied to their goals].<br><br>
+Which one speaks to you?"
+</div>
+
+<div class="highlight-box" style="margin-top: 10px;">
+<strong>Voice Message Template (60 seconds):</strong><br>
+"Hey [Name]! I just put together your proposal and wanted to walk you through it quickly. Based on what you shared about [their business], I recommend our [Package] at [$price]. This includes [top 3 deliverables]. I have also attached a link to a similar store we built &mdash; check it out and let me know what you think! I am excited about this project."
+</div>
+
+<div class="highlight-box" style="margin-top: 10px;">
+<strong>Video Call Pitch Structure (15-Minute Format):</strong>
+<table style="width: 100%; margin: 10px 0; border-collapse: collapse;">
+<tr style="background: rgba(245, 158, 11, 0.2);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Time</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Activity</strong></td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">0-2 min</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Small talk + recap their goals</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2-5 min</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Show portfolio examples in their niche</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">5-8 min</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Present recommended package + deliverables</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">8-10 min</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Quote price + explain timeline</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">10-13 min</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Handle questions and objections</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">13-15 min</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Close: "Ready to get started? I will send the order link."</td>
+</tr>
+</table>
+</div>
+
+<h4 style="color: #EC4899; margin-top: 25px;">Type 4: Follow-Up Response (After Proposal, No Reply)</h4>
+<p><em>The fortune is in the follow-up. 80% of sales require 5+ follow-ups, but most salespeople give up after 1 or 2.</em></p>
+<p>When a lead goes silent after your proposal, do NOT panic. They are busy, distracted, or still deciding. Your job is to stay top of mind without being annoying. Each follow-up must add NEW value &mdash; never send a bare "just checking in" message.</p>
+
+<div class="highlight-box" style="background: rgba(236, 72, 153, 0.15); border-color: #EC4899;">
+<strong>Day 1 Follow-Up (Soft Nudge):</strong><br>
+"Hi [Name]! Just wanted to make sure you received the proposal I sent yesterday. Did you get a chance to look it over? Happy to answer any questions! 😊"
+</div>
+
+<div class="highlight-box" style="margin-top: 10px; background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Day 3 Follow-Up (Add Value):</strong><br>
+"Hey [Name]! While you are reviewing the proposal, I came across this case study of a [similar niche] brand that increased their revenue by 40% after their store redesign. Thought you might find it interesting: [link]. Let me know if you have any questions about your project!"
+</div>
+
+<div class="highlight-box" style="margin-top: 10px; background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
+<strong>Day 7 Follow-Up (Urgency):</strong><br>
+"Hi [Name]! My schedule is filling up for this month and I wanted to check if you are still interested in moving forward. If we start by [date], I can have your store live by [date]. Would love to reserve a spot for you!"
+</div>
+
+<div class="highlight-box" style="margin-top: 10px; background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>Day 14 Follow-Up (Breakup Message):</strong><br>
+"Hey [Name], I have not heard back so I am going to close out this project file for now. No hard feelings at all &mdash; I completely understand priorities shift. If you decide to move forward in the future, just reach out and I will take care of you. Wishing you the best with your [niche] business! 🙏"
+</div>
+
+<div class="highlight-box" style="margin-top: 10px; background: rgba(16, 185, 129, 0.15); border-color: #10B981;">
+<strong>Day 30 Follow-Up (Re-engagement):</strong><br>
+"Hey [Name]! It has been a while since we chatted. Just wanted to share &mdash; we just finished a beautiful [niche] store that reminded me of your project. Here is the link: [portfolio link]. Are you still thinking about launching your store? I would love to help when you are ready."
+</div>
+</div>
+
+<!-- FOLLOW-UP SEQUENCE FRAMEWORK -->
+<div class="content-section">
+<h3>🔄 The Complete Follow-Up Sequence Framework</h3>
+<p>Getting a lead is easy. Converting them takes persistence. People are like popcorn &mdash; they pop at different times. Here is your complete cadence:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Action</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Channel</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Template Focus</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 0</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Send proposal/quote</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chat + Email</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full RECAP pitch with portfolio link</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 1</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Soft check-in</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chat</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Did you get a chance to review?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 3</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add value</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chat or Email</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Share a case study or resource relevant to their niche</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 5</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Video follow-up</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Loom video</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-second Loom: "Analyzed your site, found 3 quick wins"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 7</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Create urgency</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chat</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Schedule filling up &mdash; want me to reserve a slot?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 10</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social proof drop</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chat</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Just delivered another [niche] store &mdash; want to see?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 14</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Breakup message</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Closing file &mdash; reach out when ready"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 30</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Re-engagement</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chat or Email</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Share a new portfolio piece, check if still interested</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 60</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Long-term nurture</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Saw something that reminded me of your brand..."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Day 90+</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Quarterly check-in</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Still here if you need help. We just launched [feature]."</td>
+</tr>
+</table>
+
 <div class="warning-box">
-<strong>Maximum 3 follow-ups.</strong> After the +72 hour message, stop. More than 3 feels desperate and damages your professional image.
+<h4>⚠️ The "Just Checking In" Death</h4>
+<p>NEVER send a message that says "just checking in" or "just following up." These messages add zero value and make you look desperate. <strong>Every follow-up must contain NEW value</strong> &mdash; a case study, a portfolio piece, an insight about their business, or a time-sensitive offer.</p>
+</div>
+
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>The Video Follow-Up Hack:</strong>
+<p>Send a 30-second Loom video thanking them and asking if they have questions. Video follow-ups get a <strong>3x higher response rate</strong> than text messages. This is your secret weapon for re-engaging cold leads.</p>
 </div>
 </div>
 
+<!-- PERSONALIZATION RULES -->
+<div class="content-section">
+<h3>✨ Personalization Rules</h3>
+<p>Every template must be customized before sending. Here are the non-negotiable personalization rules:</p>
+<ol>
+<li><strong>Always use their name</strong> &mdash; Never send a message without addressing them by name</li>
+<li><strong>Reference their specific business or niche</strong> &mdash; "Your skincare brand" not "your business"</li>
+<li><strong>Mention something specific from their inquiry</strong> &mdash; Prove you read their message</li>
+<li><strong>Include a relevant portfolio example</strong> &mdash; From their niche if possible</li>
+<li><strong>Adapt your tone to match theirs</strong> &mdash; If they are casual, be casual. If they are formal, be formal.</li>
+<li><strong>Reference their platform</strong> &mdash; "I saw your Fiverr message" or "Thanks for the Instagram DM"</li>
+</ol>
 
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Generic (Never Do This)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Personalized (Always Do This)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Hi, thanks for reaching out about your store."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Hi Sarah! Thanks for reaching out about your organic skincare store."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here is our portfolio."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Here is a beauty brand store we recently built that has a similar vibe to what you described."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Let me know if you are interested."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Ready to make your organic skincare brand look as premium as it deserves?"</td>
+</tr>
+</table>
+</div>
+
+<!-- COMMON RESPONSE MISTAKES -->
+<div class="content-section">
+<h3>🚫 Common Response Mistakes</h3>
+<div class="warning-box">
+<h4>⚠️ Avoid These Deal-Killing Errors</h4>
+<ul>
+<li><strong>Sending long essays:</strong> Keep chat messages under 3 sentences. Long walls of text get ignored. Break information into multiple messages if needed.</li>
+<li><strong>Talking about yourself instead of their problem:</strong> "We have been in business for 5 years and we use the latest technology and..." &mdash; Nobody cares. Talk about THEIR business, THEIR goals, THEIR problems.</li>
+<li><strong>Pitching too early before understanding needs:</strong> If you send pricing before asking a single question, you look desperate. Always qualify first, then pitch.</li>
+<li><strong>Forgetting to follow up:</strong> 80% of sales happen after 5+ touchpoints. If you send one message and give up, you are leaving money on the table.</li>
+<li><strong>Using jargon the client does not understand:</strong> "We will implement a headless commerce architecture with serverless functions" &mdash; they just want a store that sells products.</li>
+<li><strong>Not setting the next step:</strong> Every message should end with a clear next action. "I will send you the proposal by 5pm" or "When works for a quick call?"</li>
+<li><strong>Responding with just "Hi" or "Hello":</strong> If your first message does not provide value or ask a question, you have wasted a touchpoint.</li>
+<li><strong>Sending voice messages without context:</strong> Always send a text summary before or after a voice message so they know what it is about.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEOS SECTION -->
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
 <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
@@ -1738,17 +2916,35 @@ What matters most to YOU in choosing a developer?"
 <div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
 <strong>✅ Key Takeaways to Note:</strong>
 <ul style="margin-bottom: 0;">
-<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
-<li>Never give discounts - reduce scope instead</li>
+<li>Conviction x Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts &mdash; reduce scope instead</li>
 <li>Ask curious questions instead of arguing</li>
 <li>Emotional control is your superpower</li>
 <li>Volume beats perfection every time</li>
 </ul>
 </div>
 </div>
+
+<!-- PRACTICE EXERCISE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+<h3 style="color: #34D399; margin-top: 0;">🔧 Practice Exercise</h3>
+<p>Complete these exercises to master your response templates:</p>
+<ol>
+<li><strong>Write initial responses for 3 different lead scenarios:</strong>
+<ul>
+<li>Scenario A: A fitness clothing brand owner messages you on Fiverr saying "I need a Shopify store for my activewear brand"</li>
+<li>Scenario B: Someone DMs you on Instagram asking "How much for a basic Shopify store?"</li>
+<li>Scenario C: A referral from an existing client emails saying "My friend [name] recommended you. I sell handmade candles and need an online store."</li>
+</ul>
+</li>
+<li><strong>Create a 5-day follow-up sequence</strong> for a lead who received your proposal for a $1,200 Premium package but has not responded in 24 hours. Write out each message word for word.</li>
+<li><strong>Role-play exercise:</strong> Record a 60-second voice message pitch for a coffee subscription brand. Include their name, acknowledge their business, and present a package recommendation.</li>
+</ol>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
-<p>You know the templates and follow-up sequence. Prove it.</p>
+<p>You know the templates, follow-up sequences, and personalization rules. Prove it.</p>
 <ul>
 <li>📝 10 questions about response templates</li>
 <li>🎯 Score <strong>10/10</strong> to proceed to Task 6</li>
@@ -1760,149 +2956,408 @@ What matters most to YOU in choosing a developer?"
 const task7Content = `
 <h2>📚 TASK 6: SALES PSYCHOLOGY</h2>
 
+<!-- WHY PSYCHOLOGY MATTERS -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+<h3 style="color: #A78BFA; margin-top: 0;">🧠 Why Sales Psychology Matters</h3>
+<p>Sales is not about manipulation &mdash; it is about understanding how people make decisions and guiding them toward the right choice. These techniques are used by top-performing sales teams worldwide. The difference between a struggling salesperson and a top closer is not talent &mdash; it is understanding human behavior.</p>
+<div class="highlight-box">
+<h4>The Doctor Analogy</h4>
+<p>Think of yourself as a <strong>doctor, not a salesperson</strong>. A good doctor does not walk into the room and immediately prescribe medication. They ask questions, listen carefully, run diagnostics, and THEN recommend a treatment plan based on the patient&rsquo;s specific condition.</p>
+<p>Your sales process works the same way:</p>
+<ol>
+<li><strong>Ask questions</strong> &mdash; "What brings you in today?" (What do you need?)</li>
+<li><strong>Listen carefully</strong> &mdash; Let them describe their symptoms (problems)</li>
+<li><strong>Diagnose</strong> &mdash; Identify the real issue behind what they are telling you</li>
+<li><strong>Prescribe</strong> &mdash; Recommend the right solution (package) for their specific situation</li>
+</ol>
+<p><strong>Never push &mdash; guide.</strong> When you position yourself as the expert diagnosing their problem, they trust your recommendation. When you push a sale, they resist.</p>
+</div>
+</div>
+
+<!-- THE 80/20 RULE -->
 <div class="content-section">
-<h3>🧠 The Golden Ratio of Sales</h3>
-<p>This is the single most violated rule in sales. Visualized:</p>
+<h3>🧠 The 80/20 Rule of Sales &mdash; The Foundation of Everything</h3>
+<p>This is the single most violated rule in sales, and the most important principle you will ever learn:</p>
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(16, 185, 129, 0.3)); border: none; text-align: center; padding: 30px;">
+<div style="font-size: 2em; font-weight: 700;">LISTEN 80% | SPEAK 20%</div>
+<p style="margin-bottom: 0; margin-top: 15px;">The best salespeople ask questions and listen. Whoever talks less, wins.</p>
+</div>
 <div class="mermaid">
 pie title Who Should Be Talking?
     "Client (Listening Phase)" : 80
     "You (Asking/Closing)" : 20
 </div>
-</div>
 
-<div class="content-section">
-<h3>🧠 The Foundation: 80/20 Rule</h3>
-<p>The most important rule in sales:</p>
-<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(16, 185, 129, 0.3)); border: none; text-align: center; padding: 30px;">
-<div style="font-size: 2em; font-weight: 700;">LISTEN 80% | SPEAK 20%</div>
-<p style="margin-bottom: 0; margin-top: 15px;">Let the client reveal their problems. Say the RIGHT things at the RIGHT time.</p>
-</div>
-<p style="margin-top: 15px;">Why this works:</p>
+<p style="margin-top: 15px;"><strong>Why this works:</strong></p>
 <ul>
-<li>People love talking about themselves</li>
-<li>They reveal their real pain points</li>
-<li>They feel understood, not sold to</li>
-<li>When you speak, they actually listen</li>
+<li>People love talking about themselves and their business</li>
+<li>They reveal their real pain points when they feel heard</li>
+<li>They feel understood, not sold to &mdash; which builds trust</li>
+<li>When you finally speak, they actually listen because you have earned their attention</li>
+<li>The client should feel like THEY made the decision, not that you pushed them</li>
 </ul>
-</div>
 
-<div class="content-section">
-<h3>🎯 The 10 Psychology Techniques</h3>
-
-<h4>1. The 3-Yes Technique</h4>
-<p>Get small agreements before your main pitch. It puts them in "agreeing mode."</p>
-<div class="highlight-box">
-<strong>Example:</strong><br>
-"You want your store to convert visitors into buyers, right?" (Yes)<br>
-"And you want it done professionally?" (Yes)<br>
-"Quality matters to you more than finding the cheapest option?" (Yes)<br><br>
-→ Now they're primed to say yes to your offer.
-</div>
-
-<h4>2. The Mirror Technique</h4>
-<p>Repeat their last few words as a question. Makes them elaborate without direct questioning.</p>
-<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
-<tr style="background: rgba(99, 102, 241, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Client says</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We tried Facebook ads but they didn't work for us."</td>
-</tr>
-<tr style="background: rgba(16, 185, 129, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>You respond</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"...didn't work for you?"</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>They reveal</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Yeah, we spent $5,000 and got almost no sales..."</td>
-</tr>
-</table>
-
-<h4>3. The Pain Calculator</h4>
-<p>Convert their problem into specific dollar amounts. Creates urgency.</p>
-<div class="highlight-box">
-<strong>Example:</strong><br>
-"Your 4-second load time costs you ~25% of visitors.<br>
-With 10,000 monthly visitors, that's 2,500 bounces.<br>
-At 2% conversion and $50 average order, that's $2,500/month in lost sales.<br><br>
-<strong>The $1,200 store pays for itself in 2 weeks.</strong>"
-</div>
-
-<h4>4. The Silence Technique</h4>
-<p>After stating price: <strong>STOP TALKING.</strong></p>
-<div class="warning-box">
-<strong>The first person to speak after the price LOSES leverage.</strong><br><br>
-Most salespeople fill silence with discounts or justifications. Don't. State your price confidently and WAIT for them to respond.
-</div>
-
-<h4>5. The Contrast Principle</h4>
-<p>Show an expensive option first. Your actual price feels like a bargain by comparison.</p>
-<div class="highlight-box">
-<strong>Example:</strong><br>
-"For the full scope you described, we're looking at $15,000."<br><br>
-(pause)<br><br>
-"BUT, I think we can get 80% of the results with our $1,800 Enterprise package. Most clients find that's the sweet spot."
-</div>
-
-<h4>6. The Future Pacing Technique</h4>
-<p>Help them visualize success. Paint the picture of life AFTER they buy.</p>
-<div class="highlight-box">
-"Imagine 3 months from now: your store is live, converting at 3%, and you're getting 20 orders a day. You're working ON your business, not struggling with tech issues..."
-</div>
-
-<h4>7. The Labeling Technique</h4>
-<p>Name their emotion before they do. It defuses the emotion.</p>
 <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
 <tr style="background: rgba(239, 68, 68, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They seem worried about price</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"It sounds like budget is a concern..."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ What Bad Salespeople Do</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ What Top Salespeople Do</strong></td>
 </tr>
-<tr style="background: rgba(16, 185, 129, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They mention past failures</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"It seems like you've been burned by agencies before..."</td>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Talk 80%, listen 20%</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ask questions and WAIT for answers</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pitch features endlessly</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Let the client tell you exactly how to sell to them</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Push the sale aggressively</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Take notes on their exact words and use their language back</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Interrupt to make their point</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Only speak to ask clarifying questions or to close</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Focus on what THEY want to say</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Focus on what the CLIENT needs to hear</td>
 </tr>
 </table>
 
-<h4>8. The Success Story Bridge</h4>
-<p>Connect their situation to a past client's success.</p>
-<div class="highlight-box">
-"We had a client in the exact same position — hesitant about the investment, worried about timeline. Two months after launch, they were doing $15K/month. The store paid for itself in the first week."
-</div>
-
-<h4>9. The Assumptive Close (Preview)</h4>
-<p>Skip "do you want to buy?" and ask about logistics.</p>
-<div class="highlight-box">
-❌ "Would you like to proceed?"<br>
-✅ "Should we start Monday or would Wednesday work better?"
-</div>
-
-<h4>10. The Takeaway Close (Preview)</h4>
-<p>Gently remove the option. People want what they might lose.</p>
-<div class="highlight-box">
-"Actually, looking at your timeline, I'm not sure we'd be the right fit right now. We typically work with brands ready to move fast..."<br><br>
-→ Often triggers: "Wait, no — I AM ready!"
+<div class="highlight-box" style="text-align: center; padding: 20px; margin-top: 15px;">
+<p style="font-size: 1.1em; margin: 0;"><strong>"The person asking questions controls the conversation. The person talking reveals their needs."</strong></p>
 </div>
 </div>
 
+<!-- THE 10 PSYCHOLOGY TECHNIQUES -->
+<div class="content-section">
+<h3>🎯 The 10 Psychology Techniques</h3>
+<p>Master these 10 techniques and you will close more deals than 90% of salespeople. For each technique, understand <strong>what it is</strong>, <strong>why it works</strong>, and <strong>how to use it</strong> in a real conversation.</p>
+
+<h4>1. Social Proof &mdash; "We have built 2000+ Shopify stores across 20 countries"</h4>
+<p><strong>What it is:</strong> Showing evidence that other people (especially similar people) have chosen you and been satisfied. Humans are herd animals &mdash; when uncertain, we look at what others are doing.</p>
+<p><strong>Why it works:</strong> The brain uses social proof as a mental shortcut. If 2,000 other people trusted this company, it must be safe. It reduces perceived risk.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"We have built over 2,000 Shopify stores with a 4.9-star rating. Just last week, we delivered a [niche] store that is already getting 15 orders a day. Want me to send you the link so you can see the quality?"
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Using generic social proof like "We are highly rated." Be SPECIFIC with numbers, niches, and results. "2,000+ stores, 4.9 stars, clients in 20 countries" is powerful. "We are good at what we do" is worthless.
+</div>
+
+<h4>2. Scarcity and Urgency &mdash; "We only take on 5 new clients per month"</h4>
+<p><strong>What it is:</strong> Creating a legitimate sense of limited availability or time-sensitive opportunity. When something is scarce, people value it more.</p>
+<p><strong>Why it works:</strong> The brain is wired to avoid loss. The pain of missing an opportunity is psychologically twice as strong as the pleasure of gaining something equivalent.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"We have 2 slots left for this month. If you want to get your store live before [date], I would need to confirm your project by [deadline]. After that, the next available start date is [3 weeks out]."
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Fake urgency. Do NOT say "This offer expires in 24 hours!" if it does not. Clients can tell when urgency is manufactured, and it destroys trust. Only use scarcity that is real &mdash; actual capacity limits, actual schedule constraints.
+</div>
+
+<h4>3. Authority &mdash; "Our team includes certified Shopify experts"</h4>
+<p><strong>What it is:</strong> Establishing yourself as a recognized expert in your field. People defer to authority figures when making decisions in areas they do not fully understand.</p>
+<p><strong>Why it works:</strong> Clients cannot evaluate the quality of Shopify development themselves. They rely on signals of expertise &mdash; certifications, experience, results, and confident communication.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"Our team includes certified Shopify Partners who have been doing this for over 5 years. We are ranked in the top 1% of sellers on Fiverr, and our work has been featured by several Shopify-related blogs. You are in expert hands."
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Over-claiming. Saying "We are the best agency in the world" without proof makes you look like an amateur. Let your credentials, numbers, and results speak for you.
+</div>
+
+<h4>4. Reciprocity &mdash; Give free value first</h4>
+<p><strong>What it is:</strong> Providing something valuable for free before asking for anything in return. When someone gives us something, we feel psychologically compelled to give something back.</p>
+<p><strong>Why it works:</strong> The rule of reciprocity is one of the strongest psychological forces. A mini audit, a free tip, or a resource creates a sense of obligation and goodwill.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"Before we even talk about a project, I ran your current site through PageSpeed Insights. Here are 3 quick wins that could improve your conversion rate right now &mdash; no charge, no strings attached:<br>
+1. Your images are not compressed &mdash; fixing this alone could cut load time by 2 seconds<br>
+2. Your checkout has 6 steps &mdash; reducing to 3 could boost completion by 20%<br>
+3. You have no trust badges on your product pages &mdash; adding them typically increases conversions by 15%<br><br>
+If you want, I can fix all of these and more as part of a full store build. But those 3 tips are yours to keep either way."
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Giving away TOO much value. A free 2-minute Loom reviewing their site is perfect. A free 2-hour consultation devalues your time. Give enough to demonstrate expertise, not enough to solve the entire problem.
+</div>
+
+<h4>5. Anchoring &mdash; Present the highest package first</h4>
+<p><strong>What it is:</strong> The first number someone hears becomes their reference point (anchor) for all subsequent numbers. Show the expensive option first, and your actual target price feels like a bargain.</p>
+<p><strong>Why it works:</strong> When you say "$15,000" first, the brain anchors to that number. When you then say "$1,800," it feels dramatically cheaper &mdash; even though $1,800 is still a significant investment.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"For the full scope you described &mdash; custom design, advanced features, integrations, and ongoing support &mdash; we are looking at around $15,000."<br><br>
+(pause for 3 seconds)<br><br>
+"BUT, looking at your current situation, I actually think we can get you 80% of the results with our $1,800 Enterprise package. We keep the custom design and speed optimization, but use a premium theme as the base instead of building from scratch. Most of our clients find this is the sweet spot."
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Presenting your cheapest option first. If the first number they hear is $800, then $1,200 feels expensive. If the first number is $15,000, then $1,200 feels like a steal. Always present Good/Better/Best from top to bottom.
+</div>
+
+<h4>6. Loss Aversion &mdash; "Every day without a proper store, you are losing potential customers"</h4>
+<p><strong>What it is:</strong> Framing the conversation around what they are losing by NOT taking action, rather than what they gain by taking action. The pain of loss is psychologically twice as powerful as the pleasure of gain.</p>
+<p><strong>Why it works:</strong> People are more motivated to avoid pain than to pursue pleasure. "You are losing $2,500/month" is more compelling than "You could gain $2,500/month."</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"Based on your traffic numbers, your current site speed and conversion rate are costing you roughly $2,500 in lost sales every month. That is $30,000 a year. Every week you wait is another $625 walking out the door. The store investment pays for itself in the first 2-3 weeks."
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Being too aggressive with fear tactics. Loss aversion should feel like a genuine observation, not a scare tactic. Back it up with real data &mdash; their PageSpeed score, industry conversion rates, their traffic numbers.
+</div>
+
+<h4>7. The Contrast Principle &mdash; Compare your service to expensive alternatives</h4>
+<p><strong>What it is:</strong> Placing your offer next to something more expensive to make it look like better value. This is different from anchoring &mdash; contrast compares your service to competitor alternatives.</p>
+<p><strong>Why it works:</strong> Value is relative, not absolute. $1,200 feels expensive in isolation. But compared to hiring a freelancer at $50/hour for 100+ hours ($5,000+), or hiring a US agency at $10,000+, it feels like incredible value.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"Let me put this in perspective. A US-based Shopify agency charges $8,000-$15,000 for the same scope. A freelancer on Upwork at $50/hour would take 80-100 hours, so $4,000-$5,000 with unpredictable quality. Our $1,200 Premium package delivers agency-level quality at a fraction of the cost, with a proven track record of 2,000+ stores."
+</div>
+
+<h4>8. Commitment and Consistency &mdash; Get small &ldquo;yes&rdquo; answers leading to the big &ldquo;yes&rdquo;</h4>
+<p><strong>What it is:</strong> Also known as the 3-Yes Technique. Once people commit to a position (even a small one), they feel psychologically compelled to remain consistent with that commitment.</p>
+<p><strong>Why it works:</strong> Each small "yes" activates the brain&rsquo;s desire for consistency. After saying yes three times, saying "no" to the final question creates cognitive dissonance.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"You mentioned you want your store to convert visitors into buyers, right?" (Yes)<br>
+"And having it done professionally matters to you?" (Yes)<br>
+"Quality is more important to you than finding the cheapest option?" (Yes)<br><br>
+"Great &mdash; then our Premium package is exactly what you need. Here is what is included..."<br><br>
+<em>After 3 yeses, the probability of closing increases by 50%.</em>
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Asking manipulative questions that make the client feel trapped. The questions should be genuine reflections of what they have told you, not tricks. If they said quality matters, ask about quality. Do not manufacture false agreement.
+</div>
+
+<h4>9. Storytelling &mdash; "One of our clients was in your exact position..."</h4>
+<p><strong>What it is:</strong> Using real client success stories to illustrate outcomes instead of making abstract promises. Stories bypass logical resistance because the brain processes them as experiences, not sales pitches.</p>
+<p><strong>Why it works:</strong> When you tell a story, the listener&rsquo;s brain activates the same regions as if they were experiencing it themselves. They see themselves in the success story.</p>
+<div class="highlight-box">
+<strong>Script:</strong><br>
+"We had a client last month in the exact same position as you. She ran a handmade jewelry brand, was worried the investment would not pay off, and was comparing several agencies. We built her a Premium store, and within 45 days of launching, her conversion rate went from 0.8% to 2.4%. Revenue jumped from $8K per month to $22K per month. The store paid for itself in the first week. Would results like that be interesting to you?"
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Using vague stories without specific details. "We helped someone make more money" is weak. "We helped Sarah from GlowSkin Organics go from $3K to $18K per month in 60 days" is powerful. Include the niche, the problem, the numbers, and the timeline.
+</div>
+
+<h4>10. Mirror and Match &mdash; Match their communication style, pace, and energy</h4>
+<p><strong>What it is:</strong> Subtly adapting your communication style to match the client&rsquo;s. If they are casual and use emojis, be casual. If they are formal and use proper grammar, be formal. Repeat their exact words back when quoting or summarizing.</p>
+<p><strong>Why it works:</strong> People trust and like people who are similar to themselves. Matching their style creates subconscious rapport.</p>
+<div class="highlight-box">
+<strong>Examples:</strong>
+<table style="width: 100%; margin: 10px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.15);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Client Style</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Response Style</strong></td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"hey! need a store asap lol"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Hey! We can definitely help with that! Let me ask a few quick q's..."</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Good morning. I am inquiring about your Shopify development services."</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Good morning! Thank you for your inquiry. I would be happy to discuss our services in detail."</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">They say: "I need a store that looks premium"</td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">You say: "We will build you a store that looks premium..." (parrot their exact words)</td>
+</tr>
+</table>
+</div>
+<div class="warning-box">
+<strong>Common mistake:</strong> Being too obvious about mirroring. If they send one-word answers and you suddenly start sending one-word answers, it feels mocking. Mirror the overall tone and energy level, not every specific behavior.
+</div>
+</div>
+
+<!-- QUICK REFERENCE TABLE -->
+<div class="content-section">
+<h3>⚡ Quick Reference: When to Use Each Technique</h3>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Situation</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Best Technique</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Building initial credibility</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Social Proof + Authority</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They do not see urgency to act</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Loss Aversion + Scarcity</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Opening a cold lead conversation</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Reciprocity</strong> (give a free audit/tip)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Price seems high to them</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Anchoring + Contrast Principle</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Starting any upsell conversation</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Commitment and Consistency</strong> (3-Yes)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client has objections about their niche</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Storytelling</strong> (Success Story Bridge)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client seems worried or frustrated</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mirror and Match</strong> + Labeling</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client needs motivation to decide</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Future Pacing</strong> (paint the picture)</td>
+</tr>
+</table>
+</div>
+
+<!-- EMOTIONAL VS LOGICAL BUYING -->
+<div class="content-section">
+<h3>💡 Emotional vs Logical Buying</h3>
+<p>This is a foundational truth of sales: <strong>People buy emotionally, then justify logically.</strong> The decision to purchase is made in the emotional brain first. The logical brain kicks in afterward to rationalize why it was a good decision.</p>
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(139, 92, 246, 0.15)); border: none; padding: 25px;">
+<h4>Sell the Outcome, Not the Features</h4>
+<p><strong>"Imagine your store generating $10K/month"</strong> hits harder than <strong>"We will build you a Shopify store."</strong></p>
+<p>Features are logical. Benefits are emotional. Outcomes are transformational. Always sell the transformation.</p>
+</div>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(139, 92, 246, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Feature (Logical)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Benefit (Emotional)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Outcome (Transformational)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Speed optimization included</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Your store loads in under 2 seconds</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Customers stay instead of bouncing &mdash; more sales for you</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile-responsive design</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Looks beautiful on every device</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Capture the 60% of shoppers buying on their phones</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-day post-launch support</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Peace of mind after launch</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Focus on growing your business while we handle the tech</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Conversion-focused layout</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Designed to make people buy</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Turn your traffic into revenue &mdash; 3-5% conversion rate</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Store training walkthrough</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">You can manage it yourself</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Never pay a developer again for basic updates</td>
+</tr>
+</table>
+</div>
+
+<!-- BRAIN RULES IN SALES -->
 <div class="content-section">
 <h3>🧠 Brain Rules in Sales</h3>
 <div class="warning-box">
 <strong>Why do people reject good offers?</strong><br><br>
-The brain releases <strong>cortisol (stress hormone)</strong> when facing change. The status quo feels safer — even when it's not.<br><br>
+The brain releases <strong>cortisol (stress hormone)</strong> when facing change or spending money. The status quo feels safer &mdash; even when it is clearly holding them back. This is why clients say "I need to think about it" even when they know they need your service.<br><br>
 Your job: Make the <strong>pain of NOT buying</strong> greater than the <strong>pain of buying.</strong>
 </div>
-<p><strong>People buy based on:</strong></p>
+<p><strong>People buy based on two core motivators:</strong></p>
 <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
 <tr style="background: rgba(239, 68, 68, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>😨 Fear</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Of missing out, of staying stuck, of competitors winning</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>😨 Fear (Away From Pain)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fear of missing out, fear of staying stuck, fear of competitors winning, fear of losing money every day</td>
 </tr>
 <tr style="background: rgba(16, 185, 129, 0.15);">
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🤑 Greed</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Of making more money, of growth, of success</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🤑 Desire (Toward Pleasure)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Desire for more money, for growth, for success, for freedom, for a beautiful brand they are proud of</td>
+</tr>
+</table>
+<p><strong>The Pain-Agitate-Solve Framework:</strong> This is one of the most powerful frameworks for structuring any sales conversation or message:</p>
+<div class="highlight-box" style="margin-top: 10px;">
+<strong>1. PAIN:</strong> Identify and name their current problem<br>
+"Your current website is not converting visitors into customers. Your bounce rate is high and your checkout process is confusing."<br><br>
+<strong>2. AGITATE:</strong> Make the problem feel urgent and costly<br>
+"Every day that continues, you are losing money to competitors who have better stores. With your traffic levels, that is roughly $2,500 per month in lost revenue &mdash; $30,000 a year."<br><br>
+<strong>3. SOLVE:</strong> Present your solution as the clear answer<br>
+"We build premium Shopify stores that convert at 3-5%. Here is how we fix your specific issues and turn your traffic into revenue..."
+</div>
+</div>
+
+<!-- READING BUYER SIGNALS -->
+<div class="content-section">
+<h3>🔥 Reading Buyer Signals</h3>
+<p>Not every client tells you directly where they are in the buying process. Learn to read the signals:</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🔥 HOT Signals (Ready to Buy)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Response</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asking about pricing and packages</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Move to close. Present packages and ask which one fits.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asking about timelines ("How soon can you start?")</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lock in a start date. "We can start Monday if you place the order today."</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asking about the process ("What happens after I order?")</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Walk them through the process and send the order link.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asking about payment options</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They are ready. Explain payment and close immediately.</td>
+</tr>
+</table>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(245, 158, 11, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🟡 WARM Signals (Interested, Need Nurturing)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Response</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asking detailed questions about features</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Answer thoroughly, then steer toward next step.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sharing their vision and ideas</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mirror their excitement. Show portfolio examples that match.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asking to see more portfolio examples</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Send 2-3 curated examples. Follow up with a package recommendation.</td>
+</tr>
+</table>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>🧊 COLD Signals (Not Ready / Low Interest)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Your Response</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Short, one-word answers ("ok", "cool")</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ask an open-ended question to re-engage. If they stay cold, move on.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delayed responses (days between replies)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow up once with value. If still cold, put in nurture pipeline.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I will think about it" / "Not right now"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Uncover the real objection. If genuine, set a follow-up date.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Only asking about price (nothing else)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They are price shopping. Qualify budget before investing more time.</td>
 </tr>
 </table>
 </div>
 
-
+<!-- VIDEOS SECTION -->
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
 <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
@@ -1936,17 +3391,43 @@ Your job: Make the <strong>pain of NOT buying</strong> greater than the <strong>
 <div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
 <strong>✅ Key Takeaways to Note:</strong>
 <ul style="margin-bottom: 0;">
-<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
-<li>Never give discounts - reduce scope instead</li>
+<li>Conviction x Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts &mdash; reduce scope instead</li>
 <li>Ask curious questions instead of arguing</li>
 <li>Emotional control is your superpower</li>
 <li>Volume beats perfection every time</li>
 </ul>
 </div>
 </div>
+
+<!-- PRACTICE EXERCISE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+<h3 style="color: #34D399; margin-top: 0;">🔧 Practice Exercise</h3>
+<p>Complete these exercises to internalize the psychology techniques:</p>
+<ol>
+<li><strong>Write a Pain-Agitate-Solve script for 3 different client niches:</strong>
+<ul>
+<li>Niche A: A skincare brand with an existing Shopify store that converts at only 0.5%</li>
+<li>Niche B: A fitness equipment brand launching their first online store</li>
+<li>Niche C: A coffee subscription company with a slow, outdated website</li>
+</ul>
+</li>
+<li><strong>Identify which psychology technique to use for 5 different lead scenarios:</strong>
+<ul>
+<li>A lead who says "I am not sure if this will work for my niche"</li>
+<li>A lead who seems interested but hesitant about the price</li>
+<li>A lead who is comparing you to 3 other agencies</li>
+<li>A lead who has been burned by a bad developer before</li>
+<li>A lead who says "I will think about it and get back to you"</li>
+</ul>
+</li>
+<li><strong>Create a "Story Bank"</strong> of 5 client success stories you can reference in conversations. For each story, include: the client niche, their initial problem, what you built, and the measurable result they achieved.</li>
+</ol>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
-<p>You've learned the psychology of influence. Prove you understand it.</p>
+<p>You have learned the psychology of influence and how to read buyer signals. Prove you understand it.</p>
 <ul>
 <li>📝 10 questions about sales psychology</li>
 <li>🎯 Score <strong>10/10</strong> to proceed to Task 7</li>
@@ -1958,12 +3439,47 @@ Your job: Make the <strong>pain of NOT buying</strong> greater than the <strong>
 const task8Content = `
 <h2>📚 TASK 7: OBJECTION HANDLING</h2>
 
+<!-- THE ACE FRAMEWORK -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+<h3 style="color: #60A5FA; margin-top: 0;">🛡️ The A.C.E. Framework for Handling ANY Objection</h3>
+<p>Before we dive into the specific objections, learn this universal framework. It works for <strong>every single objection</strong> you will ever face. Memorize it. Practice it until it becomes instinct.</p>
+<div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<tr>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); width: 15%; text-align: center; font-size: 1.5em; font-weight: bold; color: #60A5FA;">A</td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Acknowledge</strong> &mdash; "I totally understand your concern..." / "That is a great question..." / "I completely hear you..."<br><em>This shows empathy and prevents them from feeling attacked or dismissed.</em></td>
+</tr>
+<tr>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 1.5em; font-weight: bold; color: #60A5FA;">C</td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Clarify</strong> &mdash; "Just so I understand, is it the price / timeline / scope that concerns you?" / "What specifically is holding you back?"<br><em>This uncovers the REAL objection behind their words. Often what they say is not what they mean.</em></td>
+</tr>
+<tr>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 1.5em; font-weight: bold; color: #60A5FA;">E</td>
+<td style="padding: 15px; border: 1px solid rgba(255,255,255,0.1);"><strong>Educate</strong> &mdash; Provide information that addresses their specific concern with data, proof, or a story.<br><em>This is where you present evidence: ROI calculations, portfolio examples, social proof, testimonials, or success stories.</em></td>
+</tr>
+</table>
+</div>
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>A.C.E. in Action:</strong><br>
+Client: "Your price is too high."<br><br>
+<strong>A:</strong> "I completely understand &mdash; price is always an important factor."<br>
+<strong>C:</strong> "Can I ask &mdash; is it the total amount, or is it that you are not sure about the return you will get?"<br>
+<strong>E:</strong> "Our clients typically see the store pay for itself within 60-90 days. Let me show you a quick ROI calculation based on your specific numbers..."
+</div>
+</div>
+
+<!-- THE TRUTH ABOUT OBJECTIONS -->
 <div class="content-section">
-<h3>🔄 The Objection Loop</h3>
-<p>Visualize objection handling not as a fight, but as a loop to bring them back to value:</p>
+<h3>🎯 The Truth About Objections</h3>
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(6, 182, 212, 0.3)); border: none; text-align: center; padding: 25px;">
+<div style="font-size: 1.5em; font-weight: 700;">Objections = Buying Signals</div>
+<p style="margin-bottom: 0; margin-top: 10px;">If they did not care, they would just leave. Objections mean they ARE considering it but need more information or reassurance.</p>
+</div>
+<p style="margin-top: 15px;">An objection is <strong>NOT</strong> a rejection. It is a request for more information, more proof, or more reassurance. The worst thing that can happen in a sales conversation is not an objection &mdash; it is silence. When they object, they are engaged. When they disappear, they are gone.</p>
+
 <div class="mermaid">
 graph LR
-    Obj[Objection] --> Listen[👂 Listen 80/20]
+    Obj[Objection] --> Listen[Listen 80/20]
     Listen --> Identify{Identify Type}
     Identify --> Price[Price]
     Identify --> Trust[Trust]
@@ -1974,132 +3490,382 @@ graph LR
     ROI --> Resolve{Resolved?}
     Proof --> Resolve
     Urgency --> Resolve
-    Resolve -- Yes --> Close[💰 Close]
+    Resolve -- Yes --> Close[Close]
     Resolve -- No --> Loop[Loop Back]
     style Obj fill:#EF4444,stroke:#DC2626
     style Close fill:#10B981,stroke:#059669
 </div>
 </div>
 
-<div class="content-section">
-<h3>🎯 The Truth About Objections</h3>
-<div class="highlight-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(6, 182, 212, 0.3)); border: none; text-align: center; padding: 25px;">
-<div style="font-size: 1.5em; font-weight: 700;">Objections = Buying Signals</div>
-<p style="margin-bottom: 0; margin-top: 10px;">If they didn't care, they would just leave. Objections mean they're considering it.</p>
-</div>
-<p style="margin-top: 15px;">An objection is NOT a rejection. It's a request for more information or reassurance.</p>
-</div>
-
+<!-- THE 6 CORE OBJECTIONS -->
 <div class="content-section">
 <h3>🛠️ The 6 Core Objections</h3>
+<p>These are the objections you will hear in 95% of your conversations. Master the response to each one and you will close significantly more deals.</p>
 
-<h4>1. "Your price is too high"</h4>
+<h4 style="color: #EF4444;">Objection 1: "Your price is too high" / "It is too expensive"</h4>
+<p><strong>What they SAY:</strong> "I like your work, but $1,200 is a lot. Can you do something around $700?"</p>
+<p><strong>What they REALLY MEAN:</strong> Either "I do not see enough value yet to justify the price" OR "I genuinely cannot afford it at this amount." These are two completely different problems requiring different solutions.</p>
+<p><strong>Why they are saying it:</strong> Price is the easiest objection to voice. Even when the real issue is trust, timeline, or uncertainty, people default to "it costs too much" because it feels like a safe, rational objection.</p>
+
 <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
-<strong>Script:</strong><br>
-"I understand comparing prices. Let me share what that investment includes: [list deliverables]. Our clients find the store pays for itself within 60-90 days through increased conversions. Which of these features is least important to you?"
+<strong>Response A (Short &mdash; For Chat):</strong><br>
+"I understand &mdash; can I ask what budget you had in mind? I want to find the best solution that works for you."
 </div>
-<p><strong>If they still resist:</strong> Don't lower price — offer scope reduction.</p>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(239, 68, 68, 0.1); border-color: #EF4444;">
+<strong>Response B (Medium &mdash; ROI Focus):</strong><br>
+"I hear you on the price. Let me share a quick ROI calculation. If your store generates even 10 orders per month at your average order value of $50, that is $500/month in revenue. The $1,200 investment pays for itself in less than 3 months &mdash; and then it is pure profit. Our clients typically see the store pay for itself within 60-90 days."
+</div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(239, 68, 68, 0.1); border-color: #EF4444;">
+<strong>Response C (Detailed &mdash; Comparison Approach):</strong><br>
+"I appreciate you being upfront about budget! Here is the thing &mdash; our $1,200 Premium package includes speed optimization, conversion-focused design, and 30 days of support. These are not extras &mdash; they are what make the difference between a store that gets visits and a store that gets sales.<br><br>
+Compared to hiring a freelancer at $50/hour for 100+ hours, our package actually saves you money. And we have seen clients who went with cheaper options come back to us 6 months later asking to &lsquo;fix&rsquo; their store. They spent $500 twice instead of $1,200 once.<br><br>
+Would it help if I showed you a before/after of a recent project so you can see exactly what the investment delivers?"
+</div>
+<p><strong>Follow-up question to keep the conversation going:</strong> "Which of the features I mentioned matters most to your business? That helps me recommend the right package."</p>
 
-<h4>2. "I need to think about it"</h4>
+<h4 style="color: #F59E0B; margin-top: 30px;">Objection 2: "I need to think about it"</h4>
+<p><strong>What they SAY:</strong> "This looks great, but I need some time to think it over."</p>
+<p><strong>What they REALLY MEAN:</strong> Either "I am not fully convinced yet," "I need to discuss with my partner/team," or "There is a hidden concern I have not voiced." This is almost NEVER about literally needing time to think.</p>
+<p><strong>Why they are saying it:</strong> It is the polite way to pause or exit a conversation without confrontation. Your job is to gently uncover the real reason.</p>
+
 <div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); border-color: #F59E0B;">
-<strong>Script:</strong><br>
-"Absolutely! What specifically would help you decide? Is it the price, timing, or something else? I want to make sure you have all the info you need."<br><br>
-→ This uncovers the REAL hidden objection.
+<strong>Response A (Short):</strong><br>
+"Absolutely! What specifically would you like to think about? I want to make sure I have given you all the information you need."
+</div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(245, 158, 11, 0.1); border-color: #F59E0B;">
+<strong>Response B (Medium &mdash; Uncover the Real Objection):</strong><br>
+"Absolutely &mdash; big decisions deserve thought. Quick question: is there anything specific you are weighing? Sometimes I can provide info that makes the decision clearer.<br><br>
+Is it the price, the timeline, or do you need to check with someone else? No pressure at all &mdash; I just want to make sure you have everything you need."
+</div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(245, 158, 11, 0.1); border-color: #F59E0B;">
+<strong>Response C (Detailed &mdash; With Urgency and Follow-Up):</strong><br>
+"I totally respect that. Big decisions should not be rushed. Let me ask &mdash; what specifically do you need to think about?<br>
+- Is it the price?<br>
+- Is it the timeline?<br>
+- Is it checking with someone else?<br><br>
+I am not trying to pressure you &mdash; I just want to make sure I have given you all the info you need. And just so you know: our turnaround is 14 days, so if you are aiming for a specific launch date, I can hold a spot for you if you decide within the next few days.<br><br>
+When would be a good time for me to check back? How about I message you on Tuesday? I will put a reminder &mdash; and no pressure, just checking in."
+</div>
+<p><strong>Follow-up question:</strong> "When would be a good time for me to follow up? I would rather set a specific date than leave things open-ended."</p>
+<div class="warning-box">
+<strong>⚠️ ALWAYS set a specific follow-up date.</strong> "I need to think about it" is the #1 deal-killer in sales. If you let them walk away without a follow-up date, the chances of them coming back drop to under 10%.
 </div>
 
-<h4>3. "How do I know you're legit?"</h4>
+<h4 style="color: #6366F1; margin-top: 30px;">Objection 3: "I found someone cheaper" / "X charges less"</h4>
+<p><strong>What they SAY:</strong> "I got a quote for $500 from someone on Fiverr. Why are you charging $1,500?"</p>
+<p><strong>What they REALLY MEAN:</strong> "Convince me your quality is worth the premium. I need to understand the difference."</p>
+<p><strong>Why they are saying it:</strong> They are comparison shopping, which is completely normal. They want to make sure they are getting the best value, not necessarily the cheapest price.</p>
+
 <div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
-<strong>Script:</strong><br>
-"Totally fair question. We've completed 2000+ stores with a 4.9★ rating. You'll get daily updates, see everything on a preview link before going live, and I can connect you with recent clients if that helps."
+<strong>Response A (Short):</strong><br>
+"Smart to compare! Can I ask &mdash; what specifically are they including in the $500? I want to make sure you are comparing apples to apples."
 </div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(99, 102, 241, 0.1); border-color: #6366F1;">
+<strong>Response B (Medium &mdash; Value Comparison):</strong><br>
+"I completely understand comparing prices &mdash; it is smart! Let me share what that difference buys you. The $500 store likely uses a basic template with minimal customization. You will get a functional store, but probably need to hire someone later to fix conversion issues.<br><br>
+Our $1,500 package includes custom design matched to your brand, mobile optimization, speed optimization, 1:1 training so you can manage it yourself, and 30 days of free support. Which of these would be okay to skip?"
+</div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(99, 102, 241, 0.1); border-color: #6366F1;">
+<strong>Response C (Detailed &mdash; Framework Approach):</strong><br>
+"Great &mdash; you should compare! Here is what I would suggest asking every agency or freelancer:<br><br>
+1. How many Shopify stores have you built? (We have done 2,000+)<br>
+2. What is your revision policy? (We do unlimited revisions within scope)<br>
+3. What happens after launch? (We include 30 days of free support)<br>
+4. Can I speak to recent clients? (I will connect you with 3 right now)<br>
+5. What is your response time? (We reply within 2 hours, always)<br><br>
+Honestly, if someone else checks all those boxes AND is cheaper &mdash; go with them! But in my experience, the cheapest option ends up being the most expensive after all the fixes."
+</div>
+<p><strong>Follow-up question:</strong> "What matters most to you in choosing a developer? I want to focus on what is important to YOU."</p>
 
-<h4>4. "I'm comparing other options"</h4>
+<h4 style="color: #10B981; margin-top: 30px;">Objection 4: "I can do it myself" / "I will use a template"</h4>
+<p><strong>What they SAY:</strong> "I think I can just buy a Shopify theme and set it up myself."</p>
+<p><strong>What they REALLY MEAN:</strong> "I am not sure the investment is worth it when there are DIY options available."</p>
+<p><strong>Why they are saying it:</strong> They underestimate the complexity and time investment required to build a high-converting store. They see YouTube tutorials and think it looks easy.</p>
+
 <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-color: #10B981;">
-<strong>Script:</strong><br>
-"Smart approach! Here's what to compare: revisions policy, support period, what's included in base price, and track record. What matters most to you in choosing?"
+<strong>Response A (Short):</strong><br>
+"Totally valid! Many of our clients started that way. Can I ask &mdash; how much is your time worth per hour? Most DIY stores take 80-100 hours to build properly."
 </div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
+<strong>Response B (Medium):</strong><br>
+"I completely respect that approach. You definitely CAN do it yourself &mdash; Shopify makes it possible. Here is what I have seen though: most DIY stores convert at 0.5-1%, while professionally built stores convert at 2-4%. On 10,000 monthly visitors, that is the difference between 50 sales and 400 sales.<br><br>
+Plus, the time factor: a proper store build takes 80-100 hours of focused work. That is 2-3 weeks of full-time effort that could be spent growing your business instead. When you factor in your time value, the math usually favors hiring a specialist."
+</div>
+<p><strong>Follow-up question:</strong> "What is your biggest concern about hiring someone to do it &mdash; the cost, the control, or something else?"</p>
 
-<h4>5. "I don't have budget right now"</h4>
+<h4 style="color: #EC4899; margin-top: 30px;">Objection 5: "I am not ready yet" / "Maybe next month"</h4>
+<p><strong>What they SAY:</strong> "I love this but I am not quite ready. Maybe in a month or two."</p>
+<p><strong>What they REALLY MEAN:</strong> Either genuinely not ready (legitimate timeline issue) or using it as a polite exit.</p>
+<p><strong>Why they are saying it:</strong> They may be waiting on funding, on another project to finish, or they may simply be procrastinating. Your job is to understand which one it is.</p>
+
 <div class="highlight-box" style="background: rgba(236, 72, 153, 0.15); border-color: #EC4899;">
-<strong>Script:</strong><br>
-"I understand cash flow challenges. Few options: we can start with an MVP version at lower scope, or lock in this price and start next month when budget frees up. Which works better for you?"
+<strong>Response A (Short):</strong><br>
+"Totally understand! Can I ask &mdash; what needs to happen before you are ready? I want to make sure we are aligned on timing."
 </div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(236, 72, 153, 0.1); border-color: #EC4899;">
+<strong>Response B (Medium &mdash; Offer to Start Planning):</strong><br>
+"No problem at all! Let me suggest something: we can start the planning and design discovery now, while you finalize things on your end. That way, when you ARE ready to go, we can hit the ground running instead of starting from scratch. No payment required until you are ready to start the build. Would that work?"
+</div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(236, 72, 153, 0.1); border-color: #EC4899;">
+<strong>Response C (Detailed &mdash; Cost of Waiting):</strong><br>
+"I hear you. Let me share one thing to consider: every month without a proper store is a month of lost revenue. Based on your niche and traffic potential, even a conservative estimate of 50 orders per month at $50 average means $2,500/month in revenue you are NOT collecting. Over 2 months of waiting, that is $5,000 in missed opportunity &mdash; more than the cost of the entire project.<br><br>
+Would it make sense to at least lock in the current pricing and start planning? We can schedule the build for whenever works for you."
+</div>
+<p><strong>Follow-up question:</strong> "What specifically needs to change in the next month for you to be ready? Let me know and I will check back at the right time."</p>
 
-<h4>6. "Can I pay after delivery?"</h4>
+<h4 style="color: #06B6D4; margin-top: 30px;">Objection 6: "I had a bad experience before" / "How do I know you are legit?"</h4>
+<p><strong>What they SAY:</strong> "I have been burned before by developers who disappeared. How do I know you are different?"</p>
+<p><strong>What they REALLY MEAN:</strong> "I am scared of getting hurt again. I need reassurance and proof before I trust you with my money."</p>
+<p><strong>Why they are saying it:</strong> They have genuine trauma from a previous bad experience. This is actually one of the BEST objections to handle because you can differentiate yourself significantly from the bad actors who burned them.</p>
+
 <div class="highlight-box" style="background: rgba(6, 182, 212, 0.15); border-color: #06B6D4;">
-<strong>Script:</strong><br>
-"I understand wanting to minimize risk. Our process: you see complete preview before anything goes live. Payment upfront lets us prioritize your project fully. With 2000+ completed projects and 4.9★ rating, we've earned that trust."
+<strong>Response A (Short):</strong><br>
+"I am really sorry you had that experience. That is unfortunately too common in this industry. Would it help if I connected you with 2-3 recent clients who can share their experience working with us?"
 </div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(6, 182, 212, 0.1); border-color: #06B6D4;">
+<strong>Response B (Medium &mdash; Proof Stack):</strong><br>
+"Totally fair question. I am sorry you went through that &mdash; it happens way too often with freelancers who disappear. Here is what makes us different:<br><br>
+- 2,000+ stores built &mdash; we are not going anywhere<br>
+- 4.9-star rating on Fiverr and Upwork (I can share the links)<br>
+- Payment through the platform &mdash; you are protected<br>
+- Daily updates &mdash; you will hear from me every single day<br>
+- Video walkthroughs &mdash; you see exactly what we are building<br><br>
+Would it help if I connected you with 2-3 recent clients who can vouch for our work?"
+</div>
+<div class="highlight-box" style="margin-top: 10px; background: rgba(6, 182, 212, 0.1); border-color: #06B6D4;">
+<strong>Response C (Detailed &mdash; With Guarantee Frame):</strong><br>
+"I am truly sorry about that experience. Let me tell you exactly how we prevent that from happening:<br><br>
+1. You see a complete preview before anything goes live &mdash; if you are not happy, we fix it<br>
+2. We send daily progress updates with screenshots so you always know where things stand<br>
+3. All work is done on a password-protected preview link you can check anytime<br>
+4. We have a 30-day support guarantee after launch<br>
+5. Our 4.9-star rating across 2,000+ projects is our reputation &mdash; we cannot afford to let anyone down<br><br>
+Essentially, you do not pay until you see the preview, and you do not go live until you approve everything. Zero risk on your end. Does that address your concern?"
+</div>
+<p><strong>Follow-up question:</strong> "What specifically went wrong with the last developer? I want to make sure we avoid exactly that."</p>
 </div>
 
+<!-- PRICE OBJECTION DEEP DIVE -->
 <div class="content-section">
-<h3>📊 The Price Objection Flowchart</h3>
-<p>"Too expensive" can mean three different things:</p>
+<h3>📊 Price Objection Deep Dive (The Most Common Objection)</h3>
+<p>"Too expensive" is the #1 objection you will face. It can mean three completely different things, and each requires a different approach:</p>
 <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
 <tr style="background: rgba(239, 68, 68, 0.2);">
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Type</strong></td>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>They Say</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Real Meaning</strong></td>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Solution</strong></td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Budget Issue</strong></td>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I only have $700"</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scope reduction or MVP</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They want to buy but literally cannot afford it</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scope reduction, MVP package, or payment plan</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Value Issue</strong></td>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Why so much for a website?"</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Show ROI, portfolio proof</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They do not understand the value or ROI</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Show ROI calculation, portfolio proof, success stories</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Comparison Issue</strong></td>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"X charges less"</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Highlight differentiators</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They found a cheaper alternative and want you to match it</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Highlight differentiators, do not trash competitors</td>
 </tr>
 </table>
+
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>The ROI Calculator Script:</strong><br>
+"Let me put this in simple numbers. If your store generates just $5,000 per month in revenue (which is conservative for a well-built Shopify store), here is the math:<br><br>
+- Year 1 revenue: $60,000<br>
+- Your investment: $1,200<br>
+- <strong>ROI: 50x in year one</strong><br><br>
+Even if the store only generates $1,000/month, your ROI is still 10x. The store is not a cost &mdash; it is a revenue-generating asset that keeps working for you 24/7."
 </div>
 
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>The Payment Plan Option:</strong><br>
+"If the total amount is a concern, we can explore a split payment: 50% now to start, 50% before launch. This reduces the upfront commitment while still allowing us to prioritize your project. Would that help?"
+</div>
+
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>The Alternative Comparison:</strong><br>
+"Let me put our pricing in context:<br>
+- US agency: $8,000-$20,000 for similar scope<br>
+- Freelancer at $50/hr x 100 hours: $5,000 with unpredictable quality<br>
+- DIY: 80-100 hours of YOUR time (what is your hourly rate?)<br>
+- Our Premium package: $1,200 with proven 4.9-star quality and 30 days support<br><br>
+We are not the cheapest option and we are not the most expensive. We are the best value."
+</div>
+</div>
+
+<!-- OBJECTION PREVENTION -->
+<div class="content-section">
+<h3>💡 Objection Prevention: The Inoculation Technique</h3>
+<p>The best objection handling is <strong>preventing objections before they come up</strong>. This is called "inoculation" &mdash; like a vaccine that prevents the disease.</p>
+<div class="highlight-box">
+<strong>How it works:</strong> Bring up the common concern yourself, BEFORE the client raises it. By addressing it proactively, you defuse it before it becomes a wall.<br><br>
+<strong>Price inoculation:</strong><br>
+"You might be wondering about the investment. Let me share why our clients find it pays for itself: on average, our stores see 20-40% conversion improvements. At 100 orders per month, that means $2,000-4,000 in extra revenue in month one alone."<br><br>
+<strong>Trust inoculation:</strong><br>
+"I know trust is huge when you are working with someone online. That is why we work through [platform], have 2,000+ stores with a 4.9-star rating, and send daily progress updates so you always know exactly where your project stands."<br><br>
+<strong>Timeline inoculation:</strong><br>
+"I want to be transparent about timeline &mdash; we deliver in 14 business days. We could rush it faster, but quality matters more than speed. That said, if you have a specific deadline, let me know and we will plan accordingly."
+</div>
+<p>By bringing up the concern yourself, the client thinks: "Oh, they already addressed that. They must be confident about it." It builds trust and removes barriers.</p>
+</div>
+
+<!-- FEEL FELT FOUND -->
 <div class="content-section">
 <h3>🎯 The Feel-Felt-Found Framework</h3>
-<p>Classic objection handling structure:</p>
+<p>This is the classic objection handling structure that works in any situation:</p>
 <div class="highlight-box">
-<strong>"I understand how you FEEL.</strong> (Empathy)<br><br>
-<strong>Other clients FELT the same way.</strong> (Normalize)<br><br>
-<strong>What they FOUND was...</strong> (Resolution)"
+<strong>"I understand how you FEEL."</strong> (Empathy &mdash; show you hear them)<br><br>
+<strong>"Other clients FELT the same way."</strong> (Normalize &mdash; they are not alone)<br><br>
+<strong>"What they FOUND was..."</strong> (Resolution &mdash; give them the outcome)
 </div>
 <div class="highlight-box" style="margin-top: 15px;">
-<strong>Example:</strong><br>
-"I understand how you feel about the investment. Other clients felt the same way initially. What they found was that the store paid for itself in 60-90 days through increased conversions — and they wished they'd started sooner."
+<strong>Example for Price Objection:</strong><br>
+"I understand how you feel about the investment. Other clients felt the same way initially. What they found was that the store paid for itself in 60-90 days through increased conversions &mdash; and they wished they had started sooner."
+</div>
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>Example for Trust Objection:</strong><br>
+"I understand how you feel about working with someone online &mdash; trust is everything. Other clients felt the same hesitation. What they found was that after seeing their first progress update within 24 hours of starting, all those concerns disappeared."
 </div>
 </div>
 
+<!-- SCOPE REDUCTION -->
 <div class="content-section">
 <h3>🛡️ The Scope Reduction Technique</h3>
 <div class="warning-box">
-<strong>NEVER lower price for the same work. Reduce SCOPE instead.</strong>
+<h4>⚠️ NEVER lower price for the same work. Reduce SCOPE instead.</h4>
+<p>This is a non-negotiable rule. If you discount your price without changing the scope, you are telling the client your work was overpriced. It destroys your credibility and sets a precedent for future negotiations.</p>
 </div>
 <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
 <tr style="background: rgba(239, 68, 68, 0.15);">
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>❌ Wrong</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I can do it for $900 instead of $1,200"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Okay, I can do it for $900 instead of $1,200" (same scope, lower price)</td>
 </tr>
 <tr style="background: rgba(16, 185, 129, 0.15);">
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>✅ Right</strong></td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"For $900, we can do 3 pages instead of 5, 15 products instead of 25. You can expand later."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"For $900, we can do 3 pages instead of 5, and 15 products instead of 25. You can always expand later as revenue comes in."</td>
+</tr>
+</table>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Full Package ($1,500)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>MVP Package ($800)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5-page custom design</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3-page starter design</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">50 products uploaded</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15 products uploaded</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom theme development</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Premium theme customization</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">60-day support</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">14-day support</td>
+</tr>
+</table>
+<div class="highlight-box">
+<strong>Script:</strong> "If budget is the constraint, I can create an MVP version that gets you launched quickly. We start with the essentials and can always add more features later when revenue comes in. Sound fair?"
+</div>
+</div>
+
+<!-- THE TURNAROUND TABLE -->
+<div class="content-section">
+<h3>⚡ The Turnaround Table &mdash; Quick Reference</h3>
+<p>Keep this table bookmarked. When you hear any of these objections, you have an instant response ready:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Objection</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Quick Response</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Follow-Up Question</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Too expensive"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What budget did you have in mind? Let me find the right fit."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Which features matter most to you?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Need to think"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Absolutely! What specifically are you weighing?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"When should I follow up?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Found cheaper"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What is included in their quote? Let me compare apples to apples."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What matters most to you in choosing?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I can DIY it"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"How much is your time worth per hour? DIY takes 80-100 hours."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What is your biggest concern about hiring someone?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Not ready yet"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What needs to happen before you are ready?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can we start planning now so you are ready to launch sooner?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Been burned before"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I am sorry to hear that. Want to speak with recent clients?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What specifically went wrong last time?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Pay after delivery?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"You see a full preview before going live. Zero risk."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Does seeing a preview before launch address your concern?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Need faster delivery"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Rush is possible with 30% premium. Or we phase the launch."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What is your hard deadline?"</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can you do it for free as a test?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We do not work for free, but you can see our 2,000+ portfolio."</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">(Consider disqualifying this lead)</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My friend can build it"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can they guarantee 2-4% conversion rates and ongoing support?"</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What happens if something goes wrong after launch?"</td>
 </tr>
 </table>
 </div>
 
+<!-- WHEN TO WALK AWAY -->
 <div class="content-section">
-<h3>💡 The Inoculation Technique</h3>
-<p>Address objections BEFORE they're raised:</p>
-<div class="highlight-box">
-"You might be thinking $1,200 is a lot for a website. Here's why it pays for itself: our clients see 20-40% conversion improvements, which at 100 orders means $2,000-4,000 extra revenue in month one."
+<h3>🚪 When to Walk Away</h3>
+<p>Not every lead deserves your time. Some leads are red flags that will cost you more than they are worth. Knowing when to walk away is just as important as knowing how to close.</p>
+<div class="warning-box">
+<h4>⚠️ Walk Away When You See These Red Flags:</h4>
+<ul>
+<li><strong>"Can you do it for free as a test?"</strong> &mdash; This person does not value your work and never will. Politely decline and move on.</li>
+<li><strong>They disrespect your time or pricing</strong> &mdash; "Your prices are ridiculous" or consistently rude messages. Do not work with disrespectful clients.</li>
+<li><strong>They want unlimited revisions for minimal pay</strong> &mdash; If they are already negotiating unlimited changes before the project starts, it will only get worse.</li>
+<li><strong>Their budget is less than 50% of your minimum</strong> &mdash; If your cheapest package is $800 and they have $200, no amount of scope reduction will work.</li>
+<li><strong>They refuse to answer qualification questions</strong> &mdash; If they will not tell you their budget, timeline, or needs, they are not serious buyers.</li>
+<li><strong>They keep comparing you to the cheapest option</strong> &mdash; "But I can get it for $100 on Fiverr..." These clients are looking for cheap, not quality. Let them go.</li>
+</ul>
 </div>
-<p>By bringing up the concern yourself, you defuse it before it becomes a wall.</p>
+<div class="highlight-box" style="margin-top: 15px;">
+<strong>How to Walk Away with Class:</strong><br>
+"I appreciate your interest, but based on what you have described, I do not think we are the right fit for this project. I want to make sure you find someone whose pricing and approach aligns with your needs. I wish you the best of luck with your store!"<br><br>
+<em>Walking away with professionalism maintains your authority and sometimes actually brings them back at your full price later.</em>
+</div>
 </div>
 
-
+<!-- VIDEOS SECTION -->
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
 <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
@@ -2133,17 +3899,36 @@ graph LR
 <div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
 <strong>✅ Key Takeaways to Note:</strong>
 <ul style="margin-bottom: 0;">
-<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
-<li>Never give discounts - reduce scope instead</li>
+<li>Conviction x Trust = Sales (The Ultimate Equation)</li>
+<li>Never give discounts &mdash; reduce scope instead</li>
 <li>Ask curious questions instead of arguing</li>
 <li>Emotional control is your superpower</li>
 <li>Volume beats perfection every time</li>
 </ul>
 </div>
 </div>
+
+<!-- PRACTICE EXERCISE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+<h3 style="color: #34D399; margin-top: 0;">🔧 Practice Exercise</h3>
+<p>Complete these exercises to master objection handling:</p>
+<ol>
+<li><strong>Role-play: Handle each of the 6 core objections out loud.</strong> Say the client objection, then respond with the A.C.E. framework. Record yourself and listen back. Do you sound confident? Empathetic? Knowledgeable?</li>
+<li><strong>Write personalized responses for 3 objections using a skincare brand scenario:</strong>
+<ul>
+<li>The skincare brand owner says: "Your price is too high &mdash; I found someone for $400."</li>
+<li>They say: "I need to discuss this with my business partner first."</li>
+<li>They say: "I tried Shopify before and it did not work. How is this different?"</li>
+</ul>
+</li>
+<li><strong>Create your own "Objection Cheat Sheet"</strong> &mdash; Write a one-liner response for each of the 10 objections in the Turnaround Table above. Keep it in your notes so you can reference it quickly during live conversations.</li>
+<li><strong>Practice the scope reduction conversation:</strong> A client loves your $1,500 package but can only spend $900. Write out the conversation where you reduce scope without reducing your value or quality.</li>
+</ol>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
-<p>You've learned to handle every major objection. Prove it.</p>
+<p>You have learned to handle every major objection with confidence and class. Prove it.</p>
 <ul>
 <li>📝 10 questions about objection handling</li>
 <li>🎯 Score <strong>10/10</strong> to proceed to Task 8</li>
@@ -2156,19 +3941,35 @@ const task9Content = `
 <h2>📚 TASK 8: CLOSING TECHNIQUES</h2>
 
 <div class="content-section">
-<h3>🎯 The Truth About Closing</h3>
-<p>Here's what most people get wrong about closing:</p>
+<h3>🧠 The Science of Closing</h3>
+<p>Here is a statistic that should shock you: <strong>63% of all sales conversations end without the salesperson ever asking for the sale.</strong> Not because the prospect said no. Not because the product was wrong. Simply because the salesperson never asked.</p>
+
 <div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(236, 72, 153, 0.3)); border: none; text-align: center; padding: 25px;">
 <div style="font-size: 1.3em; font-weight: 700;">"The close is not a single moment — it's the natural conclusion of a well-handled conversation."</div>
 </div>
-<p style="margin-top: 15px;">If you've qualified properly, handled objections, and demonstrated value — closing feels easy, not pushy.</p>
+
+<p style="margin-top: 15px;"><strong>Why do salespeople fear asking?</strong></p>
+<ul>
+<li><strong>Fear of rejection:</strong> They take "no" personally. But "no" means "not yet" or "not like this" — it does not mean "never" and it does not mean you are a failure.</li>
+<li><strong>Fear of being pushy:</strong> They confuse helping someone make a decision with pressuring them. If your product solves their problem and you have qualified them properly, NOT asking is actually doing them a disservice.</li>
+<li><strong>Fear of losing the relationship:</strong> They enjoy the rapport so much they avoid the "awkward" money conversation. But a prospect who never becomes a client is not a relationship — it is a pen pal.</li>
+<li><strong>Lack of a system:</strong> They do not have a reliable closing framework, so they wing it, fumble, and default to "let me know if you have questions."</li>
+</ul>
+
+<div class="warning-box">
+<strong>Let us be crystal clear:</strong> Closing is NOT manipulation. Closing is helping people who have a real problem make a decision to solve it. If you have qualified them (M.T.N.D.), handled objections honestly, and demonstrated genuine value — the close is the most helpful thing you can do. You are not taking their money. You are exchanging their money for something worth more to them than the money itself.
+</div>
+
+<p>If you have done everything right up to this point — qualified properly, handled objections, and demonstrated value — closing feels easy, not pushy. Think of it this way: a doctor who diagnoses an illness and then never prescribes treatment is not being "polite." They are being negligent. The same applies to sales.</p>
 </div>
 
 <div class="content-section">
-<h3>🛠️ The 10 Closing Techniques</h3>
+<h3>🛠️ The 10 Core Closing Techniques</h3>
+<p>Master these 10 techniques and you will be able to close in any situation. Each one has a specific use case. The key is knowing WHEN to deploy each one.</p>
 
 <h4>1. The Assumptive Close</h4>
-<p>Skip "do you want to buy?" — ask about logistics instead.</p>
+<p><strong>What it is:</strong> Skip "do you want to buy?" — instead, ask about logistics as if the decision is already made.</p>
+<p><strong>When to use it:</strong> When the prospect has shown clear buying signals — they are asking about timelines, specific features, or how the process works. They have mentally decided; they just need you to move them forward.</p>
 <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
 <tr style="background: rgba(239, 68, 68, 0.15);">
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Wrong</td>
@@ -2179,33 +3980,111 @@ const task9Content = `
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Should we start Monday or would Wednesday work better?"</td>
 </tr>
 </table>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"Great, so based on everything we have discussed, the Premium package at $1,200 covers exactly what you need — the custom 5-page design, speed optimization, SEO, and 30 days of support. I have an opening on Monday and another on Wednesday. Which works better for your timeline?"
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Using it too early before the prospect has shown buying signals — comes across as presumptuous</li>
+<li>Phrasing it as a yes/no question instead of an either/or — "Can we start Monday?" is weaker than "Monday or Wednesday?"</li>
+<li>Backing down if they hesitate — hold your ground and wait for their response</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> Write down 5 different assumptive close phrases for these scenarios: (1) Scheduling a start date, (2) Choosing a package, (3) Confirming payment method, (4) Deciding on features, (5) Setting a delivery date. Practice saying each one out loud until it sounds natural.
+</div>
 
 <h4>2. The Price Sandwich</h4>
-<p>Never say price alone. Wrap it in value.</p>
+<p><strong>What it is:</strong> Never say the price alone. Always wrap it between layers of value — features before, benefits after.</p>
+<p><strong>When to use it:</strong> Every single time you present pricing. There is no exception. A naked price triggers the brain's pain center. A sandwiched price feels justified.</p>
 <div class="highlight-box">
-"For a complete 5-page custom store with speed optimization, SEO setup, mobile-first design, and 30 days of support — <strong>$1,200</strong>."
+"For a complete 5-page custom store with speed optimization, SEO setup, mobile-first design, and 30 days of support — <strong>$1,200</strong>. That includes unlimited revisions during the build, a full training walkthrough so you can manage your store independently, and our conversion-focused design approach that our clients report increases their sales by 20-40%."
+</div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"So here is what you are getting with the Premium package. We build you a fully custom 5-page Shopify store — homepage, collection page, product pages, about page, and contact page. Every page is designed mobile-first because 70% of your customers will be shopping on their phones. We include speed optimization to keep load times under 3 seconds, full SEO setup so Google can find you, and 30 days of priority support after launch. The investment is $1,200. And that comes with unlimited revisions during the design phase plus a one-on-one training session so you are never dependent on a developer for day-to-day changes. Most of our clients launch within 14 days and start seeing orders within the first week."
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Saying the price first — "It is $1,200 for a store" gives them nothing to anchor the value to</li>
+<li>Rushing through features — slow down and let each feature register</li>
+<li>Apologizing for the price — never say "I know it is expensive but..." That frames your price as a problem</li>
+<li>Listing features without translating to benefits — "SEO setup" means nothing to most clients. "Google can find your store" does.</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> Take each package tier (MVP, Premium, Enterprise) and write a complete Price Sandwich script. Time yourself — aim for 30-45 seconds of smooth delivery per package. Record yourself and listen back.
 </div>
 
 <h4>3. The Options Close</h4>
-<p>Give 2-3 choices. Shifts from "should I buy?" to "which should I buy?"</p>
+<p><strong>What it is:</strong> Give 2-3 choices. This shifts the mental frame from "should I buy?" to "which should I buy?"</p>
+<p><strong>When to use it:</strong> When you know they want to move forward but need help deciding on the scope. Also excellent for clients who feel overwhelmed by a single big price.</p>
 <div class="highlight-box">
-"We have Premium at $1,200 or Enterprise at $1,800. Which fits your goals better?"
+"We have Premium at $1,200 or Enterprise at $1,800. Premium gives you everything you need to launch strong. Enterprise adds advanced features like custom functionality and 90 days of support. Which fits your goals better?"
+</div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"Based on what you have told me about your brand and your goals, I think two options make the most sense for you. Option one is the Premium package at $1,200 — it gives you the full custom store, speed optimization, SEO, and 30 days of support. That is perfect for launching and getting your first sales rolling. Option two is the Enterprise package at $1,800 — it includes everything in Premium plus custom functionality like advanced filtering, loyalty programs, or whatever specific features you need, plus 90 days of extended support. Which one feels right for where you are right now?"
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Offering too many options (4+) — causes decision paralysis</li>
+<li>Making one option obviously bad — the prospect feels manipulated</li>
+<li>Not clearly differentiating the options — they need to understand WHY one costs more</li>
+<li>Forgetting to ask the closing question after presenting — you must end with "Which fits your goals?"</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> Create an Options Close presentation for three different client types: (1) A budget-conscious startup, (2) A growing brand ready to invest, (3) An enterprise client with complex needs. Present each one to a colleague and get feedback.
 </div>
 
 <h4>4. The Good-Better-Best</h4>
-<p>Present 3 tiers. Most choose the middle option.</p>
+<p><strong>What it is:</strong> Present 3 tiers. Psychological research shows most people choose the middle option — it feels "safe."</p>
+<p><strong>When to use it:</strong> When you want to anchor the client to the middle tier. The top tier makes the middle look reasonable. The bottom tier makes the middle look like the smart choice.</p>
 <div class="highlight-box">
-"We have MVP at $800, Premium at $1,200, or Enterprise at $1,800. Most clients go with Premium — it has everything you need."
+"We have three options. MVP at $800 — that is a clean, functional store to get you started. Premium at $1,200 — that is the full package with everything you need to launch and grow. Or Enterprise at $1,800 — that is our white-glove experience with custom features and 90-day support. Most of our clients go with Premium — it hits the sweet spot of value and investment."
+</div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"I have put together three options based on our conversation. Let me walk you through each one so you can decide what makes sense.<br><br>
+Option A is the MVP at $800. This gives you a solid 3-page store — homepage, product page, and contact page — with up to 15 products, basic speed optimization, and 14 days of support. It is perfect if you want to test the market first before going all in.<br><br>
+Option B is Premium at $1,200. This is our most popular package. You get a full 5-page custom store, up to 50 products, advanced speed optimization, full SEO setup, mobile-first design, unlimited revisions, and 30 days of priority support. This is what I recommend for brands that are serious about launching right.<br><br>
+Option C is Enterprise at $1,800. Everything in Premium plus unlimited products, custom functionality like advanced filtering or loyalty programs, 90 days of extended support, and priority scheduling. This is for brands that need something more complex or want the extra peace of mind.<br><br>
+Most of our clients go with Premium — it covers everything you need without over-investing. But I want you to pick whichever feels right. Which one resonates with you?"
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Making the bottom tier too attractive — everyone picks the cheapest</li>
+<li>Making the top tier too expensive — it looks fake and damages trust</li>
+<li>Not recommending the middle tier — your recommendation gives them permission to choose it</li>
+<li>Skipping the walkthrough — do not just list prices. Explain what each tier delivers.</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> Present the Good-Better-Best framework to a friend or family member (about any topic — even restaurants or phone plans). Watch how they gravitate to the middle. Practice your delivery until recommending the middle option sounds natural, not scripted.
 </div>
 
 <h4>5. The Upfront Contract</h4>
-<p>Set expectations at the START of the conversation.</p>
+<p><strong>What it is:</strong> Set expectations at the START of the conversation so the close feels natural.</p>
+<p><strong>When to use it:</strong> At the very beginning of every sales conversation. It removes the awkwardness of transitioning to the close later because both parties already agreed to the framework.</p>
 <div class="highlight-box">
 "By the end of our chat, we'll know if we're a good fit. If yes, I'll share next steps and pricing. If not, no pressure at all. Sound fair?"
 </div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"Before we dive in, I want to set expectations so we are both on the same page. I am going to ask you some questions about your business and what you are looking for. Then I will share some ideas on how we can help. By the end of our conversation, one of two things will happen — either we will both feel like this is a great fit and I will share next steps and pricing with you, or we will realize it is not the right match and that is perfectly okay too. No pressure either way. Does that sound fair?"
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Forgetting to do it — this technique only works at the START, not retroactively</li>
+<li>Making it too formal or stiff — keep it conversational</li>
+<li>Not getting their verbal agreement — you need them to say "yes, sounds fair"</li>
+<li>Breaking the contract yourself by being pushy later</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> Open your next 5 conversations (even personal ones) with an upfront contract variation. Notice how it changes the dynamic of the entire interaction when both parties agree to the rules upfront.
+</div>
 
 <h4>6. The Delay Close</h4>
-<p>If they need time, book a SPECIFIC follow-up.</p>
+<p><strong>What it is:</strong> If they need time, book a SPECIFIC follow-up. Never leave the next step vague.</p>
+<p><strong>When to use it:</strong> When the prospect says "I need to think about it" or "let me check with my partner" and you have already tried to uncover the real objection. Sometimes people genuinely need time — the key is locking down a specific follow-up.</p>
 <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
 <tr style="background: rgba(239, 68, 68, 0.15);">
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Wrong</td>
@@ -2216,54 +4095,424 @@ const task9Content = `
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Perfect! When should I follow up — Thursday or Friday?"</td>
 </tr>
 </table>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"I totally understand wanting to take some time. This is an important decision for your business and I want you to feel 100% confident. Let me do this — I will put together a quick summary of everything we discussed so you have it in writing. And let us lock in a time to reconnect. Would Thursday afternoon or Friday morning work better for a quick follow-up? That way I can also hold your slot in our schedule while you decide."
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Accepting "I will get back to you" without a specific date — 80% of these never return</li>
+<li>Being too aggressive about following up — there is a line between persistent and pestering</li>
+<li>Not sending a recap after the conversation — they forget details and talk themselves out of it</li>
+<li>Not creating any urgency around the follow-up — "I can hold your slot" gives them a reason to commit to a date</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> The next time someone tells you "let me think about it" in any context, practice booking a specific follow-up time instead of leaving it open. Track how many actually follow through versus open-ended delays.
+</div>
 
 <h4>7. The Takeaway Close</h4>
-<p>Gently remove the option. Creates scarcity.</p>
+<p><strong>What it is:</strong> Gently remove the option. Creates scarcity and reverses the dynamic — now THEY are pursuing YOU.</p>
+<p><strong>When to use it:</strong> When a qualified prospect is dragging their feet, when you sense they are using you for free information, or when they need a push to commit. Works best with prospects who have shown genuine interest but cannot seem to pull the trigger.</p>
 <div class="highlight-box">
 "Actually, looking at your timeline and requirements, I'm not sure we're the right fit. We typically work with brands ready to invest $1,500+ and move fast..."<br><br>
-→ Often triggers: "Wait, I AM ready!"
+--> Often triggers: "Wait, I AM ready!"
+</div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"You know what, I want to be honest with you. Based on what you have described — the timeline, the budget, and the scope — I am not sure we are the best fit for your project right now. We specialize in premium builds for brands that are ready to invest in quality and move forward quickly. If you are still in the early exploration phase, that is totally fine — but I would not want to rush you into something you are not ready for. Maybe it makes sense to reconnect in a month or two when you have a clearer picture?"
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Using it with cold leads who will just say "okay, bye" — this is for warm-to-hot leads only</li>
+<li>Sounding arrogant instead of genuine — the tone must be helpful, not dismissive</li>
+<li>Not being prepared for them to actually walk away — sometimes they will, and that is okay</li>
+<li>Overusing it — if you use it in every conversation, it loses its power</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> Role-play with a colleague: they play a prospect who keeps saying "I need to think about it." Practice the Takeaway Close 3 times with different wording until you find a version that feels authentic to your personality.
 </div>
 
 <h4>8. The "If I Could, Would You" Close</h4>
-<p>Test if the stated concern is real or an excuse.</p>
+<p><strong>What it is:</strong> Test if the stated concern is real or an excuse. This isolates the objection.</p>
+<p><strong>When to use it:</strong> When a prospect gives you a specific objection (price, timeline, features) and you want to confirm it is their ONLY concern before solving it.</p>
 <div class="highlight-box">
 "If I could get delivery by Friday instead of Monday, would you be ready to move forward today?"<br><br>
-→ If yes, you know the real concern. If no, there's a hidden objection.
+--> If yes, you know the real concern. If no, there's a hidden objection.
+</div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"I hear you — the timeline is important for your launch date. Let me ask you this: if I could guarantee delivery by Friday instead of the standard Monday timeline, would you be comfortable moving forward today? ... [If yes:] Great, let me see what I can do on our end. We can prioritize your project for a $200 rush fee. [If no:] Okay, so the timeline is not the only concern. What else is holding you back? I want to make sure we address everything."
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Not following through — if you ask "if I could" and they say yes, you MUST deliver on it</li>
+<li>Using it for unreasonable requests — do not promise things you cannot control</li>
+<li>Ignoring the "no" path — when they say "no, that is not the only issue," you MUST dig deeper</li>
+<li>Asking multiple "if I could" questions in a row — one at a time</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> List the 5 most common objections you hear. For each one, write an "If I Could, Would You" question. Then prepare for both the "yes" path and the "no" path.
 </div>
 
 <h4>9. The Summary Close</h4>
-<p>Recap all value before asking.</p>
+<p><strong>What it is:</strong> Recap all value before asking for the close. This reminds them of everything they are getting.</p>
+<p><strong>When to use it:</strong> After a long conversation where many features and benefits have been discussed. The prospect may have forgotten the early points. Summarize everything into a compelling package before asking.</p>
 <div class="highlight-box">
 "So you're getting: 5-page custom design, speed optimization, SEO setup, mobile-first, 30-day support, and unlimited revisions. Ready to get started?"
 </div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"Let me recap everything so we are both clear on what you are getting. With the Premium package, you get: a fully custom 5-page Shopify store designed specifically for your fashion brand, mobile-first responsive design, speed optimization for fast load times, complete SEO setup so you rank on Google, up to 50 product uploads with variant management, unlimited revisions during the build phase, a one-on-one training walkthrough, and 30 days of priority support after launch. All of that for $1,200 with a 14-day delivery timeline. You mentioned you wanted to launch by the 15th — if we start this week, we will have you live with plenty of time to spare. Want me to send over the invoice so we can get started?"
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Summarizing too briefly — "So you get a store for $1,200" loses all the value stacking</li>
+<li>Forgetting to tie features to THEIR specific needs — "designed specifically for your fashion brand" is powerful</li>
+<li>Not ending with a clear call to action — always finish with "Want me to send the invoice?"</li>
+<li>Reading from a list mechanically — it should flow naturally like a conversation</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> After your next 3 sales conversations, practice delivering a Summary Close from memory. Time yourself — aim for 45-60 seconds that captures all value points without sounding rushed.
+</div>
 
 <h4>10. The Urgency Close</h4>
-<p>Use REAL scarcity — never fake it.</p>
+<p><strong>What it is:</strong> Use REAL scarcity — never fake it. Manufactured urgency destroys trust.</p>
+<p><strong>When to use it:</strong> When there is genuine time pressure — limited availability, upcoming price changes, seasonal timing, or the client's own deadlines.</p>
 <div class="highlight-box">
 <strong>Real urgency examples:</strong>
 <ul style="margin-bottom: 0;">
 <li>"I have 2 slots left this month before I'm fully booked"</li>
 <li>"I can hold this price until Friday"</li>
 <li>"We're raising prices next quarter"</li>
+<li>"You mentioned wanting to launch before Black Friday — we need to start this week to hit that date"</li>
 </ul>
+</div>
+<p><strong>Full Script:</strong></p>
+<div class="highlight-box">
+"I want to be transparent with you about timing. Right now I have two openings this month — one starting Monday and one starting next Wednesday. After that, I am booked through the end of the month and the next available slot is three weeks out. You mentioned wanting to be live for your product launch on the 20th, so if we lock in the Monday slot, we have you live with a few days to spare. Shall I reserve that Monday slot for you?"
+</div>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Faking scarcity — "This offer expires in 24 hours!" when it does not. Clients see through this and it destroys trust permanently.</li>
+<li>Using urgency as the ONLY closing technique — it should complement other techniques, not replace them</li>
+<li>Not connecting urgency to THEIR timeline — "I am busy" is about you. "You need to launch by the 20th" is about them.</li>
+<li>Panicking if urgency does not work — sometimes the timing just is not right, and that is okay</li>
+</ul>
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); border-color: #6366F1;">
+<strong>Practice Drill:</strong> Track your actual availability each week. Practice phrasing your real schedule constraints as urgency statements. Make it a habit to always know your availability so urgency close opportunities happen naturally.
 </div>
 </div>
 
 <div class="content-section">
-<h3>⚠️ After They Say YES</h3>
-<div class="warning-box">
-<strong>STOP SELLING IMMEDIATELY.</strong><br><br>
-Many salespeople lose deals by continuing to talk after the close. Don't explain why they made a good decision. Don't offer more discounts.
+<h3>🚀 Advanced Closing Techniques from the SOP</h3>
+<p>These five additional techniques come directly from the Digital Heroes SOP. They are subtle, powerful, and work in specific situations where the core 10 may not be enough.</p>
+
+<h4>11. The Parrot Technique</h4>
+<p><strong>What it is:</strong> Repeat their exact words back to them. This shows you are listening, validates their feelings, and encourages them to elaborate.</p>
+<p><strong>When to use it:</strong> When a prospect shares a concern or desire. Parroting their words builds rapport and often leads them to clarify their real need — which makes your close more targeted.</p>
+<div class="highlight-box">
+<strong>Client:</strong> "I really need something that looks professional and makes my brand stand out."<br><br>
+<strong>You (Parrot):</strong> "You need something that looks professional and makes your brand stand out?"<br><br>
+<strong>Client:</strong> "Yeah, exactly. My current site looks like a template and I am losing credibility..."<br><br>
+<strong>You:</strong> "That makes total sense. Professional credibility is exactly what we deliver. Every store we build is 100% custom — no templates, no cookie-cutter designs. Let me show you what we did for a brand similar to yours..."
 </div>
-<p><strong>After "Yes":</strong></p>
-<ol>
-<li>Thank them genuinely</li>
-<li>Send invoice immediately</li>
-<li>Confirm timeline and next steps</li>
-<li>END the sales conversation</li>
-</ol>
+<p><strong>Key Rule:</strong> Use their EXACT words. Do not paraphrase. If they say "stand out," you say "stand out" — not "differentiate" or "be unique."</p>
+
+<h4>12. The 10-Second Rule</h4>
+<p><strong>What it is:</strong> You should be able to deliver your entire value proposition in 10 seconds or less. If you cannot explain why they should choose you in 10 seconds, your pitch is too complicated.</p>
+<p><strong>When to use it:</strong> In the first 30 seconds of any conversation, in follow-up messages, and whenever you need to recapture a wandering conversation.</p>
+<div class="highlight-box">
+<strong>10-Second Value Prop Examples:</strong><br><br>
+"We build premium Shopify stores that are custom-designed, conversion-optimized, and delivered in 14 days — backed by 2,000+ stores and a 4.9-star rating."<br><br>
+"We help e-commerce brands launch professional stores that actually convert visitors into buyers — with full support for 30 days after delivery."
+</div>
+<p><strong>Practice:</strong> Time yourself. If your value prop takes more than 10 seconds to say out loud, cut words until it fits. Every word must earn its place.</p>
+
+<h4>13. The Compliment Opener</h4>
+<p><strong>What it is:</strong> Start with a genuine, specific compliment about their business or brand. This lowers their guard and establishes you as someone who pays attention.</p>
+<p><strong>When to use it:</strong> At the opening of your first interaction, especially with prospects who seem guarded or skeptical.</p>
+<div class="highlight-box">
+<strong>Examples:</strong><br><br>
+"I checked out your Instagram before our call — your product photography is incredible. The lifestyle shots with the natural lighting really stand out. Your store should match that level of quality."<br><br>
+"I saw your Etsy shop has 500+ reviews and a 4.8 rating — that is impressive. You have clearly built something people love. A Shopify store would give you full control over that customer experience."
+</div>
+<p><strong>Key Rule:</strong> The compliment MUST be specific and genuine. Generic praise like "nice business" feels hollow. Research them for 2 minutes before the conversation.</p>
+
+<h4>14. The Negative Close / Takeaway</h4>
+<p><strong>What it is:</strong> Disqualify YOURSELF first. Tell them why they might NOT want to work with you. This reverses the sales dynamic — instead of you chasing them, they are convincing you.</p>
+<p><strong>When to use it:</strong> With price-sensitive prospects, when you sense hesitation, or when you want to position yourself as a premium option that not everyone qualifies for.</p>
+<div class="highlight-box">
+"Honestly, we are not the cheapest option out there — not even close. We are a premium service and our prices reflect that. If budget is the primary concern and you are looking for the lowest price, we are probably not the right fit. But if you want a store that is actually built to convert and backed by real support... that is exactly what we do."
+</div>
+<p><strong>Why it works:</strong> People want what they cannot have. When you suggest they might not qualify, their natural instinct is to prove they DO qualify. This also filters out price-shoppers who would have been problem clients anyway.</p>
+
+<h4>15. The Hypothetical Future</h4>
+<p><strong>What it is:</strong> Use "when" instead of "if." This presupposes the sale and paints a picture of their future success.</p>
+<p><strong>When to use it:</strong> Throughout the conversation to build positive momentum, and especially right before the close.</p>
+<div class="highlight-box">
+<strong>Instead of:</strong> "If you decide to go with us, we would build you a custom store."<br><br>
+<strong>Say:</strong> "When we build your store, the first thing your customers will notice is how fast it loads and how professional it looks. When you launch and start getting orders in that first week, you will see exactly why our clients stick with us."
+</div>
+<p><strong>Key Rule:</strong> "When" is confident. "If" is uncertain. Confident language creates confident decisions. Replace every "if" with "when" in your sales vocabulary.</p>
 </div>
 
+<div class="content-section">
+<h3>💰 Negotiation and Pricing Mastery</h3>
+<p>Pricing conversations are where most salespeople lose. They panic, discount too fast, or avoid the topic altogether. This section gives you a complete framework for handling every pricing situation with confidence.</p>
+
+<h4>Good-Better-Best Pricing Presentation</h4>
+<p>This is your default pricing structure. Always present 3 tiers.</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Feature</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>MVP ($800)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Premium ($1,200)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Enterprise ($1,800)</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pages</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3 pages</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5 pages</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">8+ pages</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Products</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Up to 15</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Up to 50</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unlimited</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom Design</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Basic custom</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full custom</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full custom + custom features</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Speed Optimization</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Basic</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Advanced</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Advanced</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO Setup</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Basic</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full + advanced</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Support</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">14 days</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30 days</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90 days</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Training</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Video guide</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-on-1 session</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2 sessions + ongoing</td>
+</tr>
+</table>
+
+<h4>"That is My Best Price" Close with Silence</h4>
+<p>When a client pushes hard for a discount after you have already presented fair pricing:</p>
+<div class="highlight-box">
+<strong>You:</strong> "I hear you. I want to work something out. The $1,200 price already reflects the best value I can offer for this scope of work. This is my best price."<br><br>
+<strong>Then: SILENCE.</strong> Do not say another word. Wait. The first person to speak after a price statement loses leverage. Count to 10 in your head if you have to. Let them process. They will either accept, counter, or reveal their real concern.
+</div>
+<div class="warning-box">
+<strong>The Silence Rule:</strong> After stating your price, STOP TALKING. Do not justify. Do not apologize. Do not fill the silence with "but if that is too much..." The silence creates space for them to process and respond. 90% of the time, they will accept or negotiate reasonably.
+</div>
+
+<h4>The Trade-Off Negotiation</h4>
+<p>Never reduce price without reducing scope. This is the Golden Rule of Digital Heroes pricing.</p>
+<div class="highlight-box">
+<strong>Client:</strong> "Can you do it for $500 less?"<br><br>
+<strong>You:</strong> "I want to make this work for your budget. Here is what I can do — if we reduce the scope to 3 pages instead of 5 and adjust support from 30 days to 14 days, I can bring it down to $700. That gives you a solid launch platform, and you can always add more pages later. Would that work?"
+</div>
+<p><strong>Key Principle:</strong> Every dollar removed from the price must be matched by removing a deliverable. This protects your margins AND trains clients to value your work properly.</p>
+
+<h4>The Payment Plan Option</h4>
+<p>For qualified leads who genuinely want premium service but have cash flow constraints:</p>
+<div class="highlight-box">
+<strong>You:</strong> "I understand budget timing can be tricky, especially when you are investing in your business. We do offer a payment option on select packages — you can split it into two payments: $600 upfront to get started and $600 before delivery. That way you are not putting it all on one month. Would that make it easier to move forward?"
+</div>
+<p><strong>Important:</strong> Only offer payment plans to GREEN FLAG leads who have passed M.T.N.D. qualification. Never offer payment plans to price-shoppers or leads with multiple red flags.</p>
+
+<h4>The Rush Fee Framework</h4>
+<p>When clients need faster delivery than standard 14 days:</p>
+<div class="highlight-box">
+<strong>Rush Fee Structure:</strong>
+<ul style="margin-bottom: 0;">
+<li>Standard delivery (14 days): Base price</li>
+<li>Priority delivery (10 days): +10% rush fee</li>
+<li>Express delivery (7 days): +20% rush fee</li>
+<li>Emergency delivery (5 days): +30% rush fee (subject to availability)</li>
+</ul>
+</div>
+<div class="highlight-box">
+<strong>Script:</strong> "We can absolutely prioritize your project. For a 7-day turnaround instead of the standard 14 days, there is a 20% priority fee — that brings the Premium package to $1,440. That covers the overtime our design and development team puts in to get you live faster. Want me to check if we have a priority slot available this week?"
+</div>
+
+<h4>The Long-Term Value Frame</h4>
+<p>When $1,200 sounds like a lot, break it down to show the real daily cost:</p>
+<div class="highlight-box">
+"Think about it this way — $1,200 spread over 3 years is about $1.10 per day. That is less than a cup of coffee for a professional store that is bringing in revenue 24/7. Most of our clients make back their investment within the first month of orders. It is not an expense — it is the foundation of your online business."
+</div>
+
+<h4>The Bundle Discount</h4>
+<p>For clients who need multiple services:</p>
+<div class="highlight-box">
+"Since you need the store build AND the marketing setup, here is what I can do — individually those would be $1,200 and $500, so $1,700 total. If we bundle them together, I can do $1,500. You save $200 and we handle everything as one cohesive project. That way your marketing is designed to match your store from day one."
+</div>
+
+<h4>The Referral Offer</h4>
+<p>Use after closing to generate future business at zero acquisition cost:</p>
+<div class="highlight-box">
+"One more thing — we have a referral program. If you send us someone who becomes a client, you get $100 credit toward any future service — maintenance, redesign, marketing, whatever you need. Just have them mention your name when they reach out."
+</div>
+</div>
+
+<div class="content-section">
+<h3>🔄 The Close Sequence — Combining Techniques</h3>
+<p>Individual closing techniques are powerful. Combining them in the right sequence is unstoppable. Here is the optimal close sequence:</p>
+
+<div class="mermaid">
+graph LR
+    A[Summary Close] --> B[Options Close]
+    B --> C[Assumptive Close]
+    C --> D[Silence]
+    D --> E{Response?}
+    E -->|Yes| F[Stop Selling!]
+    E -->|Objection| G[Handle + Re-Close]
+    E -->|Need Time| H[Delay Close]
+</div>
+
+<h4>Full Conversation Flow: Qualification to Close</h4>
+<p>Here is a complete example showing how a real conversation flows from first contact to close:</p>
+
+<div class="highlight-box">
+<strong>PHASE 1: Opening (Upfront Contract)</strong><br>
+"Hi Sarah! Thanks for reaching out about your skincare brand. Before we dive in, let me set expectations — I will ask you a few questions about your business to make sure we can actually help. By the end of our chat, we will either know this is a great fit and I will share options and pricing, or we will realize it is not the right match. No pressure either way. Sound good?"<br><br>
+
+<strong>PHASE 2: Qualification (M.T.N.D.)</strong><br>
+"Great! So tell me about your skincare line — how many products are you launching with? ... And what is your timeline looking like — when do you need to be live? ... Have you worked with a developer before? ... And are you the one making the final call on this, or is there a business partner involved?"<br><br>
+
+<strong>PHASE 3: Value Building (Compliment + Parrot)</strong><br>
+"I checked out your Instagram before our chat — the product photography is stunning. You clearly have a premium brand. (Compliment) ... You mentioned you want something that 'matches the quality of your products' (Parrot) — that is exactly what we do. Let me show you a skincare brand we built last month..."<br><br>
+
+<strong>PHASE 4: Presentation (Good-Better-Best + Price Sandwich)</strong><br>
+"Based on everything you have told me, I have three options. [Present MVP, Premium, Enterprise with full Price Sandwich on each]. Most of our skincare clients go with Premium — it gives you everything you need for a strong launch."<br><br>
+
+<strong>PHASE 5: Close (Summary + Assumptive + Silence)</strong><br>
+"So to recap — you are getting a custom 5-page store designed specifically for your skincare brand, mobile-first, speed-optimized, full SEO, 30-day support, and unlimited revisions. $1,200 with delivery in 14 days. I have a slot opening on Monday. Want me to send the invoice so we can lock that in?"<br><br>
+[SILENCE — wait for response]
+</div>
+</div>
+
+<div class="content-section">
+<h3>⚠️ After They Say YES — The Critical 60 Seconds</h3>
+<div class="warning-box">
+<strong>STOP SELLING IMMEDIATELY.</strong><br><br>
+This is the single biggest mistake new salespeople make. The deal is done. Every additional word you say risks un-selling them. Do NOT explain why they made a good decision. Do NOT offer more discounts. Do NOT mention extra features they are not getting. They said yes. The conversation is over.
+</div>
+
+<h4>What to Say in the First 60 Seconds After "Yes"</h4>
+<div class="highlight-box">
+<strong>Step 1 (0-10 seconds):</strong> "Awesome, Sarah! Great choice. You are going to love your new store."<br><br>
+<strong>Step 2 (10-20 seconds):</strong> "I am sending over the invoice right now. You will see it in your inbox within the next 5 minutes."<br><br>
+<strong>Step 3 (20-40 seconds):</strong> "Once payment is confirmed, our design team starts within 24 hours. I will send you a welcome email with everything you need to know — what we need from you, the timeline, and your dedicated point of contact."<br><br>
+<strong>Step 4 (40-60 seconds):</strong> "Any last questions before I get everything set up on our end? ... Perfect. Welcome aboard! Talk soon."
+</div>
+
+<h4>The Invoice Workflow (Step by Step)</h4>
+<ol>
+<li><strong>Within 5 minutes of "yes":</strong> Generate and send invoice via your platform (Fiverr order, PayPal invoice, or Stripe link)</li>
+<li><strong>Include in the invoice:</strong> Client name, package name, itemized features, total amount, payment terms</li>
+<li><strong>Follow up if not paid within 2 hours:</strong> "Just checking — did the invoice come through okay? Let me know if you need me to resend."</li>
+<li><strong>Once paid:</strong> Send confirmation message and welcome/onboarding email</li>
+</ol>
+
+<h4>The Onboarding Email Template</h4>
+<div class="highlight-box">
+<strong>Subject: Welcome to Digital Heroes! Here is what happens next</strong><br><br>
+Hi [Name],<br><br>
+Welcome aboard! We are excited to build your [niche] store. Here is everything you need to know:<br><br>
+<strong>What we need from you:</strong><br>
+- Your logo files (PNG or SVG preferred)<br>
+- Brand colors (hex codes if you have them)<br>
+- Product images and descriptions<br>
+- Any reference sites you like the look of<br>
+- Your Shopify account login (we will send setup instructions if you do not have one yet)<br><br>
+<strong>Timeline:</strong><br>
+- Design mockup: 5-7 days<br>
+- Revisions and build: 5-7 days<br>
+- Total delivery: ~14 days from receiving your assets<br><br>
+<strong>Communication:</strong><br>
+- Your project manager is [Name]<br>
+- Updates every 3-4 days during the build<br>
+- Unlimited revisions during the design phase<br><br>
+Looking forward to creating something amazing for you!<br>
+Best, [Your Name] | Digital Heroes
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 Closing Metrics — Track Your Numbers</h3>
+<p>What gets measured gets improved. Track these metrics weekly to identify where you are strong and where you need work.</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Metric</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Target</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>How to Track</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Close Rate (qualified leads)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30%+</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Closed deals / Qualified leads presented to</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Close Rate by Technique</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Varies</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Log which technique you used for each close</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Average Deal Size</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$1,200+</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Total revenue / Number of deals</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Time to Close</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 48 hours</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First contact to payment received</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow-Up Conversion</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%+</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deals closed on follow-up vs first call</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Discount Rate</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 5%</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deals with scope reduction / Total deals</td>
+</tr>
+</table>
+
+<h4>Weekly Pipeline Review Template</h4>
+<div class="highlight-box">
+<strong>Every Friday, review:</strong>
+<ul style="margin-bottom: 0;">
+<li><strong>New leads this week:</strong> How many? From which channels?</li>
+<li><strong>Qualified leads:</strong> How many passed M.T.N.D.?</li>
+<li><strong>Proposals sent:</strong> How many received pricing?</li>
+<li><strong>Closes this week:</strong> How many? Total revenue?</li>
+<li><strong>Lost deals:</strong> Why? What objection? What technique failed?</li>
+<li><strong>Follow-ups due next week:</strong> Who needs a follow-up?</li>
+<li><strong>Technique analysis:</strong> Which techniques worked best this week?</li>
+<li><strong>Lesson learned:</strong> One thing to improve next week</li>
+</ul>
+</div>
+</div>
 
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
@@ -2298,7 +4547,7 @@ Many salespeople lose deals by continuing to talk after the close. Don't explain
 <div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
 <strong>✅ Key Takeaways to Note:</strong>
 <ul style="margin-bottom: 0;">
-<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Conviction x Trust = Sales (The Ultimate Equation)</li>
 <li>Never give discounts - reduce scope instead</li>
 <li>Ask curious questions instead of arguing</li>
 <li>Emotional control is your superpower</li>
@@ -2306,6 +4555,44 @@ Many salespeople lose deals by continuing to talk after the close. Don't explain
 </ul>
 </div>
 </div>
+
+<div class="content-section">
+<h3>🎭 Practice Exercises</h3>
+
+<h4>Exercise 1: Role-Play Scenarios</h4>
+<p>Practice each scenario with a partner. One person plays the client, the other plays the salesperson. Switch roles after each round.</p>
+
+<p><strong>Scenario A — The Price Shopper:</strong> Client wants a Shopify store for a candle brand. They have gotten quotes from 3 other developers ($200, $400, $600). They ask you: "Why should I pay $1,200 when I can get the same thing for $400?" Use: Price Sandwich + Contrast Principle + Options Close.</p>
+
+<p><strong>Scenario B — The Hesitant Entrepreneur:</strong> First-time business owner launching a jewelry brand. They are excited but scared to invest $1,200 in a store before making their first sale. They say: "What if I build the store and nobody buys?" Use: Pain Calculator + Hypothetical Future + Summary Close.</p>
+
+<p><strong>Scenario C — The Busy Executive:</strong> Owner of a successful brick-and-mortar clothing boutique expanding online. They are interested but "too busy" to make a decision right now. They say: "Can you send me the details and I will look at it when I have time?" Use: Upfront Contract + Delay Close + Urgency Close.</p>
+
+<p><strong>Scenario D — The Comparison Shopper:</strong> E-commerce brand already has a Shopify store built by another developer but is unhappy with the quality. They say: "My current developer built my store for $300. Why should I pay you 4x more to rebuild it?" Use: Parrot Technique + Feel-Felt-Found + If I Could Would You.</p>
+
+<p><strong>Scenario E — The Big Fish:</strong> Marketing agency looking for a white-label Shopify partner for their clients. They have 5 projects per month with budgets of $2,000-$5,000 each. They say: "We need volume pricing since we will be sending consistent work." Use: Bundle Discount + Good-Better-Best + Assumptive Close.</p>
+
+<h4>Exercise 2: Negotiation Simulation</h4>
+<p>Client has been quoted $1,800 for Enterprise. They counter with $1,200. Practice the negotiation using these steps:</p>
+<ol>
+<li>Acknowledge their budget concern (do not dismiss it)</li>
+<li>Ask what their target budget actually is</li>
+<li>Present a Trade-Off: reduce scope to match budget, OR offer payment plan for full scope</li>
+<li>Use "That is my best price" + Silence</li>
+<li>Close with Assumptive Close or Delay Close depending on response</li>
+</ol>
+
+<h4>Exercise 3: Price Presentation Drill</h4>
+<p>Practice presenting each package tier using the Price Sandwich technique. Record yourself and review:</p>
+<ul>
+<li>Did you lead with value before stating the price?</li>
+<li>Did you add benefits after the price?</li>
+<li>Did your voice stay confident when stating the number?</li>
+<li>Did you pause after the price (silence technique)?</li>
+<li>Did you end with a clear call to action?</li>
+</ul>
+</div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
 <p>You've learned the art of closing. Prove your mastery.</p>
@@ -2328,22 +4615,22 @@ sequenceDiagram
     participant C as Client
     participant S as You (Sales)
     participant T as Dev Team
-    
+
     C->>S: 1. Inquiry (Msg)
     S->>S: 2. Qualify (M.T.N.D.)
-    
+
     alt Disqualified
         S-->>C: Polite Decline
     else Qualified
         S->>C: 3. Response & Questions
         C->>S: Answers
         S->>C: 4. Presentation (Package)
-        
+
         opt Objections
             C-->>S: "Too expensive"
             S->>C: 5. Handle Objection
         end
-        
+
         S->>C: 6. Close (Assumptive)
         C->>S: "Yes, let's do it"
         S->>C: Invoice & Onboarding
@@ -2357,10 +4644,10 @@ sequenceDiagram
 
 <div class="content-section">
 <h3>🎯 Putting It All Together</h3>
-<p>You've learned mindset, products, qualification, psychology, objection handling, and closing. Now you combine them.</p>
+<p>You have learned mindset, products, qualification, psychology, objection handling, and closing. Now you combine them all into real scenarios. This is where theory meets reality.</p>
 <div class="warning-box">
 <strong>This quiz tests EVERYTHING from Tasks 1-8.</strong><br>
-You'll face realistic scenarios and choose the best response. Review all previous material if needed.
+You will face realistic scenarios and choose the best response. Review all previous material if needed. These scenarios represent the real conversations you will have every single day on the job.
 </div>
 </div>
 
@@ -2369,95 +4656,568 @@ You'll face realistic scenarios and choose the best response. Review all previou
 <div class="highlight-box">
 <strong>STAGE 1: FIRST CONTACT</strong>
 <ul style="margin-bottom: 10px;">
-<li>Respond within 1 hour (ideally 30 min)</li>
-<li>Use correct template type</li>
-<li>Ask qualifying questions</li>
-<li>Share relevant portfolio</li>
+<li>Respond within 1 hour (ideally 30 min, Fiverr under 5 min)</li>
+<li>Use correct template type (General, Price-Focused, Urgent, Comparison)</li>
+<li>Ask qualifying questions (M.T.N.D.)</li>
+<li>Share relevant portfolio examples in their niche</li>
 </ul>
 
 <strong>STAGE 2: QUALIFICATION</strong>
 <ul style="margin-bottom: 10px;">
-<li>Score using M.T.N.D.</li>
-<li>Identify red flags</li>
-<li>Proceed or disqualify</li>
+<li>Score using M.T.N.D. (Money, Timeline, Need, Decision-maker)</li>
+<li>Identify red flags (2+ = disqualify)</li>
+<li>Identify green flags (proceed with confidence)</li>
+<li>Proceed or politely disqualify</li>
 </ul>
 
 <strong>STAGE 3: PRESENTATION</strong>
 <ul style="margin-bottom: 10px;">
-<li>Present appropriate package</li>
-<li>Use Price Sandwich</li>
-<li>Offer Good-Better-Best options</li>
+<li>Present appropriate package using Good-Better-Best</li>
+<li>Use Price Sandwich (value-price-value)</li>
+<li>Recommend the middle tier for most clients</li>
+<li>Tie features to THEIR specific needs</li>
 </ul>
 
 <strong>STAGE 4: OBJECTION HANDLING</strong>
 <ul style="margin-bottom: 10px;">
-<li>Listen (80/20 rule)</li>
-<li>Identify objection type</li>
-<li>Use appropriate script</li>
+<li>Listen (80/20 rule — they talk 80%)</li>
+<li>Identify objection type (price, trust, timing, authority)</li>
+<li>Use appropriate framework (A.C.E., Feel-Felt-Found, Scope Reduction)</li>
+<li>Never argue — ask curious questions instead</li>
 </ul>
 
 <strong>STAGE 5: CLOSING</strong>
 <ul style="margin-bottom: 10px;">
-<li>Summarize value</li>
-<li>Use Assumptive/Options close</li>
-<li>Stop selling after "yes"</li>
+<li>Summarize all value (Summary Close)</li>
+<li>Present options (Options/Assumptive Close)</li>
+<li>Use Silence after stating price</li>
+<li>STOP selling immediately after "yes"</li>
 </ul>
 
 <strong>STAGE 6: HANDOFF</strong>
 <ul style="margin-bottom: 10px;">
-<li>Document EVERYTHING</li>
-<li>Send to dev team</li>
+<li>Document EVERYTHING in handoff template</li>
+<li>Send complete package to dev team</li>
 <li>Confirm timeline with client</li>
+<li>Send onboarding email with asset checklist</li>
 </ul>
 
 <strong>STAGE 7: POST-DELIVERY</strong>
 <ul style="margin-bottom: 0;">
-<li>Check in 48 hours after</li>
-<li>Ask for review</li>
+<li>Check in 48 hours after delivery</li>
+<li>Ask for review on relevant platform</li>
 <li>Ask for referral</li>
+<li>Mention maintenance plans and future services</li>
 </ul>
 </div>
 </div>
 
 <div class="content-section">
-<h3>📝 Handoff Documentation</h3>
-<p>When passing a closed deal to the development team, include:</p>
+<h3>🎭 8 Full Practice Scenarios</h3>
+<p>Each scenario below is a complete, realistic sales conversation. Study how each one applies the techniques from previous tasks. These are the exact types of conversations you will have daily.</p>
+
+<h4>Scenario A: The Budget Shopper</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> Maya runs a small fashion brand selling handmade jewelry on Instagram. She has 2,000 followers and makes about 10 sales per month through DMs. She has gotten quotes from 3 Fiverr sellers ranging from $150-$400. Budget: $300-500.
+</div>
+<p><strong>Opening Message:</strong> "Hi! I need a Shopify store for my jewelry brand. How much do you charge? I have gotten quotes from other sellers for $200-400."</p>
+
+<p><strong>Exchange 1 — Qualify (do not quote price yet):</strong></p>
+<div class="highlight-box">
+<strong>You:</strong> "Hi Maya! Thanks for reaching out. Love seeing handmade jewelry brands — there is so much demand right now. Before I can give you accurate pricing, I need to understand your project better. Can you tell me: how many products are you launching with? Do you have your logo and product photos ready? And what is your timeline — when do you need to be live?"<br><br>
+<strong>Technique:</strong> Price-Focused Template — never quote price first, ask qualifying questions.
+</div>
+
+<p><strong>Exchange 2 — She pushes for price:</strong></p>
+<div class="highlight-box">
+<strong>Maya:</strong> "I have about 25 products, photos are ready, and I want to launch in 2 weeks. But I really need to know the price range before we go further. My budget is around $300-400."<br><br>
+<strong>You:</strong> "I appreciate you sharing that, Maya. I want to be upfront with you — our pricing starts at $800 for a basic custom store. I know that is higher than some of the quotes you have received, and I want to explain why. Can I show you two stores we recently built for jewelry brands? Then you can decide if the difference in quality is worth it for your brand."<br><br>
+<strong>Technique:</strong> Honesty + Contrast Principle — show do not tell.
+</div>
+
+<p><strong>Exchange 3 — The objection:</strong></p>
+<div class="highlight-box">
+<strong>Maya:</strong> "Those stores look amazing, honestly. But $800 is double my budget. The other seller said they can do the same thing for $200."<br><br>
+<strong>You:</strong> "I totally understand. Let me ask you this — the $200 store, did they mention speed optimization? SEO setup? Mobile-first design? Unlimited revisions? 14 days of support after launch? ... Those are not add-ons for us — they are standard. The $200 store will look like a template because it IS a template with your logo slapped on it. Your handmade jewelry deserves better than that. Here is what I can do for your budget: an MVP package at $800 with 3 pages, 25 products, speed optimization, and 14 days support. Or if you can stretch to $1,200, you get the full 5-page custom store with SEO and 30-day support. Which sounds more realistic for you?"<br><br>
+<strong>Technique:</strong> Scope Reduction + Good-Better-Best + Options Close
+</div>
+
+<p><strong>Exchange 4 — The close:</strong></p>
+<div class="highlight-box">
+<strong>Maya:</strong> "I think the $800 MVP makes sense. I can always upgrade later, right?"<br><br>
+<strong>You:</strong> "Absolutely — that is exactly how most of our successful clients start. They launch with the MVP, get sales rolling, and then upgrade with revenue. Smart move. I have a slot opening Monday — want me to send the invoice so we can lock that in?"<br><br>
+<strong>Maya:</strong> "Yes, let us do it!"<br><br>
+<strong>You:</strong> "Awesome! Great choice, Maya. Sending the invoice now. You will see it in your inbox in 5 minutes."<br><br>
+<strong>Technique:</strong> Assumptive Close + Stop Selling Immediately
+</div>
+
+<h4>Scenario B: The Indecisive Partner</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> David and his wife Sarah are launching a home decor brand. David handles the business decisions but "always checks with Sarah first." They have a $2,000 budget and a solid product line of 40+ items. David is genuinely interested but cannot commit without Sarah.
+</div>
+<p><strong>Opening Message:</strong> "Hey! We are launching a home decor store and looking for someone to build it. Love your portfolio. What are your packages?"</p>
+
+<p><strong>Exchange 1 — Qualify + Upfront Contract:</strong></p>
+<div class="highlight-box">
+<strong>You:</strong> "Hi David! Great to hear about the home decor brand — that is a booming market right now. Before I walk you through our options, let me set expectations. I will ask a few questions to understand your project, then share options and pricing. By the end, we will know if this is a fit. If yes, great — I will share next steps. If not, no pressure. Sound fair?"<br><br>
+<strong>Technique:</strong> Upfront Contract — set the framework early.
+</div>
+
+<p><strong>Exchange 2 — He reveals the decision-maker issue:</strong></p>
+<div class="highlight-box">
+<strong>David:</strong> "Sounds great. So we have about 40 products, logo is ready, and we want to launch in 3 weeks. Budget is around $2,000. But I should mention — I will need to run everything by my wife Sarah. She is the creative director."<br><br>
+<strong>You:</strong> "That makes total sense — it is great that you are building this together. Is there any way Sarah could join our next chat? That way she can see the portfolio and ask questions directly. It will save you from playing the middleman and we can all get aligned in one conversation."<br><br>
+<strong>Technique:</strong> Identify Decision-Maker gap — try to get both on the call.
+</div>
+
+<p><strong>Exchange 3 — He says "let me check with Sarah":</strong></p>
+<div class="highlight-box">
+<strong>David:</strong> "The Premium at $1,200 sounds perfect honestly. But I need to run this by Sarah tonight. I will get back to you."<br><br>
+<strong>You:</strong> "Absolutely, David. I want you both to feel great about this. Let me send you a summary of everything we discussed — the package details, timeline, and portfolio examples — so Sarah has all the info. Would it work to reconnect Thursday or Friday after you two have talked it through? I want to make sure I can hold your slot in our schedule."<br><br>
+<strong>Technique:</strong> Delay Close — lock in specific follow-up + send recap materials.
+</div>
+
+<p><strong>Exchange 4 — Follow-up and close:</strong></p>
+<div class="highlight-box">
+<strong>You (Thursday):</strong> "Hi David! Just following up from our conversation. Were you and Sarah able to review the package details? Any questions I can answer for either of you?"<br><br>
+<strong>David:</strong> "Yes! Sarah loved the portfolio examples. We are ready to go with Premium."<br><br>
+<strong>You:</strong> "Fantastic! Great decision. Sending the invoice right now. Welcome aboard, David!"<br><br>
+<strong>Technique:</strong> Follow-up at agreed time + Stop selling after yes.
+</div>
+
+<h4>Scenario C: The DIY-er</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> Rachel spent 3 months trying to build her own Shopify store for her fitness apparel brand. She watched 50+ YouTube tutorials, bought a $180 theme, and the result still looks unprofessional. She is frustrated, embarrassed, and skeptical that paying someone else will actually be different.
+</div>
+<p><strong>Opening Message:</strong> "I tried building my own store and it looks terrible. I have already wasted $180 on a theme and months of time. Not sure if hiring someone is worth it either. What can you actually do that I cannot do myself?"</p>
+
+<p><strong>Exchange 1 — Empathize, do not sell:</strong></p>
+<div class="highlight-box">
+<strong>You:</strong> "Rachel, I hear that frustration and I respect that you tried building it yourself. That actually tells me a lot about your drive — most people give up before they even start. The reality is that Shopify LOOKS simple from the outside, but getting a store that actually converts visitors into buyers requires design expertise, speed optimization, and technical knowledge that takes years to develop. You are not bad at it — it is just not your skill set, the same way I could not design fitness apparel. Can you share the link to what you have built? I would love to see what you are working with."<br><br>
+<strong>Technique:</strong> Compliment Opener + Empathy (Feel-Felt-Found setup)
+</div>
+
+<p><strong>Exchange 2 — Build trust through honesty:</strong></p>
+<div class="highlight-box">
+<strong>Rachel:</strong> "[Shares link] See? It is a mess. The homepage looks cluttered and the product pages load so slowly."<br><br>
+<strong>You:</strong> "Okay, I see what is happening here. Your product photography is actually really good — that is half the battle. The issues are structural: the theme is not optimized for speed, the layout is not following conversion best practices, and the mobile experience needs work. These are exactly the things we specialize in. Let me show you a before-and-after from a fitness brand we rebuilt last month — similar situation to yours."<br><br>
+<strong>Technique:</strong> Parrot Technique + specific diagnosis + social proof
+</div>
+
+<p><strong>Exchange 3 — Address skepticism directly:</strong></p>
+<div class="highlight-box">
+<strong>Rachel:</strong> "That before-and-after is impressive. But how do I know you will not just deliver another theme with my logo on it? I have already wasted money once."<br><br>
+<strong>You:</strong> "That is a fair question and I am glad you asked it. Here is what makes us different: every store we build is 100% custom — no templates. We have built 2,000+ stores with a 4.9-star rating. You get unlimited revisions during the build, so if something does not look right, we fix it until you love it. And you get 30 days of support after launch. If I could show you the mockup design before we build anything — so you see exactly what your store will look like before a single line of code is written — would that make you feel more confident?"<br><br>
+<strong>Technique:</strong> Trust building + "If I Could, Would You" Close
+</div>
+
+<p><strong>Exchange 4 — Close:</strong></p>
+<div class="highlight-box">
+<strong>Rachel:</strong> "Yes, seeing a mockup first would make a huge difference. Okay, I am interested. What are the options?"<br><br>
+<strong>You:</strong> "[Present Good-Better-Best with Price Sandwich] ... Most fitness brands go with Premium at $1,200. You already have your products and photos — so we are in a great position to move fast. I have a slot opening Wednesday. Want me to reserve it?"<br><br>
+<strong>Rachel:</strong> "Let us do Premium. I have wasted enough time doing this myself."<br><br>
+<strong>You:</strong> "Smart decision, Rachel. Sending invoice now. Welcome aboard!"<br><br>
+<strong>Technique:</strong> Good-Better-Best + Assumptive Close + Stop Selling
+</div>
+
+<h4>Scenario D: The High-Value Enterprise</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> James is the marketing director for a mid-size supplement company doing $500K/year in revenue. They have 200+ SKUs, need custom features (subscription boxes, loyalty program, advanced filtering), and have a budget of $5,000-$8,000. Multiple stakeholders need to approve. Long sales cycle expected.
+</div>
+<p><strong>Opening Message:</strong> "Hi, we are a supplement brand looking to migrate from WooCommerce to Shopify. We have 200+ products and need custom functionality. This is a significant project. Can you handle enterprise-level builds?"</p>
+
+<p><strong>The Approach:</strong> Enterprise clients require patience, detailed proposals, and multiple touchpoints. Do NOT rush the close. Instead: (1) Qualify thoroughly, (2) Request a call or detailed brief, (3) Prepare a custom proposal, (4) Present to all stakeholders, (5) Follow up methodically. Use the Upfront Contract, Summary Close, and Delay Close. Enterprise deals close in 1-4 weeks, not 1 conversation.</p>
+
+<div class="highlight-box">
+<strong>Key Response:</strong> "Hi James! Great to hear from you. Migration projects from WooCommerce to Shopify are one of our specialties — we have handled several 200+ SKU migrations. This sounds like a project that deserves a proper conversation rather than back-and-forth messages. Would you be open to a 20-minute call this week? I can walk your team through our process, show relevant case studies, and put together a detailed proposal based on your specific requirements. Would Tuesday or Thursday work better?"
+</div>
+
+<h4>Scenario E: The Rush Job</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> Kevin is launching a limited-edition sneaker brand in partnership with a celebrity influencer. The influencer is posting about it on Friday — 5 days from now. Kevin needs a store live before the post goes up. He has budget and is willing to pay a premium for speed.
+</div>
+<p><strong>Opening Message:</strong> "URGENT — I need a Shopify store live by Friday. Money is not the issue. Can you do it?"</p>
+
+<p><strong>The Approach:</strong> This is a green flag lead IF you can deliver. Key steps: (1) Confirm you can actually meet the deadline, (2) Apply rush fee framework (30% for 5-day delivery), (3) Get ALL assets upfront immediately, (4) Close fast — they are ready to buy.</p>
+
+<div class="highlight-box">
+<strong>Key Response:</strong> "Kevin, I love the energy. Yes, we can do a 5-day build — we have done it before for product drops and launches. Here is what I need from you: a 30% priority fee applies for 5-day delivery (standard is 14 days). That brings the Premium package to $1,560 or Enterprise to $2,340. I will also need ALL your assets — logo, product photos, descriptions, and Shopify access — by tonight so our team can start first thing tomorrow morning. No delays on assets = no delays on delivery. Can you get everything to me by 8 PM tonight?"
+</div>
+
+<h4>Scenario F: The Bad Experience</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> Priya has been burned by 3 previous Shopify developers. Developer 1 disappeared mid-project. Developer 2 delivered a template and called it "custom." Developer 3 missed the deadline by 3 weeks. She has trust issues and is extremely cautious. She has a great product (organic skincare) and a $1,500 budget.
+</div>
+<p><strong>Opening Message:</strong> "I have been burned by 3 developers already. Why should I trust you? Honestly starting to think all Shopify developers are the same."</p>
+
+<p><strong>The Approach:</strong> Lead with empathy. Do NOT be defensive. Acknowledge her pain. Let her vent. Then differentiate through specifics, not claims.</p>
+
+<div class="highlight-box">
+<strong>Key Response:</strong> "Priya, I completely understand your frustration. After 3 bad experiences, I would be skeptical too. You have every right to be cautious. Here is what I can offer that is different — not just words, but evidence: we have completed 2,000+ stores with a 4.9-star rating on Fiverr. You can read hundreds of reviews from real clients. We provide unlimited revisions — meaning you see the mockup BEFORE we build, and we do not stop until you are happy. We include 30 days of post-launch support — I am not disappearing after delivery. And you get a dedicated project manager who updates you every 3-4 days. I am not asking you to trust me based on my words. I am asking you to trust our track record. Would you like me to share 2-3 reviews from clients who had similar experiences before working with us?"
+</div>
+
+<h4>Scenario G: The Scope Creeper</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> Tom started by asking for a simple 3-page store for his coffee brand. During the conversation, he keeps adding: "Oh, and I need a blog," "Can you add a subscription feature?", "What about a loyalty program?", "I also need email marketing integration." Each new feature is mentioned casually, as if it should be included in the base price.
+</div>
+<p><strong>Opening Message:</strong> "Hi! I need a simple Shopify store for my coffee brand. Just 3 pages, nothing fancy. How much?"</p>
+
+<p><strong>The Approach:</strong> Document every feature request. When they add scope, acknowledge it positively but immediately connect it to pricing. Use the Trade-Off technique.</p>
+
+<div class="highlight-box">
+<strong>Key Response (when scope creep starts):</strong> "Tom, I love that you are thinking big — a blog, subscriptions, and a loyalty program would definitely set your coffee brand apart. Here is the thing though — each of those features adds complexity and development time. The simple 3-page store you originally described is the MVP at $800. With the blog and subscriptions, we are looking at Enterprise territory at $1,800. I want to make sure you get exactly what you need without overpaying. Let me suggest this: we start with the MVP at $800, get your store live and selling, and then we add the subscription feature and loyalty program as a Phase 2 project once you are generating revenue. That way you are not paying for features before you know which ones your customers actually want. What do you think?"
+</div>
+
+<h4>Scenario H: The Ghost</h4>
+<div class="highlight-box">
+<strong>Client Background:</strong> Lisa was extremely enthusiastic during the initial conversation. She loved the portfolio, said "this is exactly what I need," asked detailed questions about features, and seemed ready to buy. You sent the proposal. Then... silence. It has been 48 hours with no response.
+</div>
+<p><strong>Opening Message:</strong> (She was enthusiastic, then went silent after receiving the proposal)</p>
+
+<p><strong>The Approach:</strong> Follow the 3-touch follow-up sequence. Do NOT take it personally. People get busy, distracted, or scared. Your job is to make it easy for them to re-engage.</p>
+
+<div class="highlight-box">
+<strong>Follow-Up 1 (+24 hours):</strong> "Hi Lisa! Just checking in — did you get the proposal I sent? Happy to answer any questions or walk you through the details. No rush!"<br><br>
+<strong>Follow-Up 2 (+48 hours):</strong> "Hi Lisa! I wanted to follow up since our schedule is filling up for this month. If you are still thinking it over, I totally understand. I can hold your slot through Friday. Just let me know either way!"<br><br>
+<strong>Follow-Up 3 (+72 hours — Final):</strong> "Hi Lisa! No pressure at all — I know things get busy. I am going to close out this conversation for now, but if you want to revisit later, my door is always open. Wishing you all the best with your launch. Take care!"<br><br>
+<strong>Technique:</strong> 3-Touch Rule — gentle, professional, and always leave the door open.
+</div>
+</div>
+
+<div class="content-section">
+<h3>🤝 Client Relations Mastery</h3>
+<p>Closing the deal is only the beginning. How you manage the relationship AFTER the sale determines whether you get reviews, referrals, and repeat business. These 9 techniques from the SOP will make you a client relations expert.</p>
+
+<h4>1. The Thank You Note</h4>
+<p>After every closed deal, send a personalized thank you message within 1 hour. Not a template — a genuine note referencing something specific from your conversation.</p>
+<div class="highlight-box">
+"Hey Maya! Just wanted to say thank you again for choosing us for your jewelry store. I am genuinely excited about this project — your product photos are going to look incredible on a properly designed store. Our team starts tomorrow and I will personally make sure everything is perfect. Talk soon!"
+</div>
+
+<h4>2. The 48-Hour Follow-Up</h4>
+<p>48 hours after delivery, check in. This is the most critical touchpoint for reviews and referrals.</p>
+<div class="highlight-box">
+"Hi [Name]! It has been 2 days since we launched your store — how is everything going? Have you had any orders come in yet? Any questions or adjustments I can help with? I am here for the next [X] days of your support period."
+</div>
+
+<h4>3. The "I Don't Know" Recovery</h4>
+<p>When a client asks something you do not know the answer to, NEVER guess or make things up. Say this instead:</p>
+<div class="highlight-box">
+"That is a great question and I want to give you the right answer, not a guess. Let me check with our technical team and get back to you within [timeframe]. I will message you by [specific time] with the answer."
+</div>
+<p><strong>Then actually follow up when you said you would.</strong> This builds more trust than having all the answers.</p>
+
+<h4>4. The Expectation Sync</h4>
+<p>At the start of every project, align expectations explicitly. This prevents 90% of post-delivery complaints.</p>
+<div class="highlight-box">
+"Before we start building, I want to make sure we are 100% aligned. Here is what we are delivering: [list every feature]. The design mockup will be ready by [date]. You will have unlimited revisions on the mockup. Once you approve the design, the full build takes about [X] days. Your support period starts on delivery day. Does all of that match your understanding?"
+</div>
+
+<h4>5. The 3-Touch Rule</h4>
+<p>For unresponsive clients at any stage (pre-sale, during project, post-delivery), follow up a maximum of 3 times with increasing urgency:</p>
+<ul>
+<li><strong>Touch 1 (+24 hours):</strong> Gentle check-in, no pressure</li>
+<li><strong>Touch 2 (+48 hours):</strong> Light urgency, mention timeline impact</li>
+<li><strong>Touch 3 (+72 hours):</strong> Final attempt, leave door open, close conversation gracefully</li>
+</ul>
+<p>After 3 touches with no response, move on. Your time is valuable.</p>
+
+<h4>6. The Referral Ask</h4>
+<p>Timing is everything. Ask for referrals ONLY after the client has expressed satisfaction — never before.</p>
+<div class="highlight-box">
+"I am so glad you love the store! Quick question — do you know anyone else in your network who is thinking about launching an online store? We have a referral program where you get $100 credit toward any future service for every successful referral. Just have them mention your name!"
+</div>
+
+<h4>7. The "What Would Make This 10/10?"</h4>
+<p>Ask this before the project is "done" — during the revision phase:</p>
+<div class="highlight-box">
+"On a scale of 1-10, how are you feeling about the store so far? ... Great! What would it take to make it a solid 10 out of 10 for you?"
+</div>
+<p>This gives them permission to share any lingering concerns AND positions you as someone who genuinely cares about quality.</p>
+
+<h4>8. The No-Blame Response</h4>
+<p>When something goes wrong (and it will eventually), never blame the client, the dev team, or circumstances. Take ownership and offer a solution:</p>
+<div class="highlight-box">
+"I apologize for the delay on the mockup. That is on us. Here is what we are doing to fix it — our senior designer is prioritizing your project and you will have the mockup by tomorrow at noon. I will personally follow up to make sure it is ready. Thank you for your patience."
+</div>
+
+<h4>9. The Exit Interview</h4>
+<p>For clients who decide not to proceed (lost deals), always ask why. This is invaluable data:</p>
+<div class="highlight-box">
+"No problem at all, [Name]. I completely respect your decision. If you do not mind me asking — what was the main factor? Was it timing, budget, or something else? I ask because your feedback genuinely helps us improve. Either way, I wish you the best with your launch and my door is always open if you need help down the road."
+</div>
+</div>
+
+<div class="content-section">
+<h3>🏆 Post-Sale Actions — The Complete Playbook</h3>
+<p>The sale does not end at payment. How you handle the post-sale experience determines your review rating, referral pipeline, and repeat business. Follow this timeline exactly.</p>
+
+<h4>Day 1: After Payment Received</h4>
 <div class="highlight-box">
 <ul style="margin-bottom: 0;">
-<li>🏢 <strong>Client info:</strong> Name, business name, contact details</li>
-<li>🎯 <strong>Niche:</strong> What they sell, target audience</li>
-<li>📦 <strong>Products:</strong> How many, categories, special needs</li>
-<li>🎨 <strong>Branding:</strong> Logo ready? Colors? Assets provided?</li>
-<li>✨ <strong>Features:</strong> ALL agreed features listed clearly</li>
-<li>⏰ <strong>Timeline:</strong> What was promised, any rush fees</li>
-<li>📝 <strong>Special requests:</strong> Anything unusual mentioned</li>
-<li>⚠️ <strong>Notes:</strong> Any concerns or red flags observed</li>
+<li>Send thank you note (personalized, not template)</li>
+<li>Send onboarding email with asset checklist</li>
+<li>Complete handoff documentation for dev team</li>
+<li>Confirm start date with client</li>
+<li>Add client to your CRM/tracking system</li>
 </ul>
 </div>
-<div class="warning-box" style="margin-top: 15px;">
-The dev team should NOT need to ask the client for information you already discussed. Complete handoff = smooth project = happy client = good review.
+
+<h4>Day 2: Project Kickoff</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Confirm dev team has received and reviewed handoff</li>
+<li>Follow up with client if assets have not been received</li>
+<li>Send brief update: "Your project is officially underway!"</li>
+</ul>
+</div>
+
+<h4>Day 7: Mid-Project Check-in</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Share mockup or progress update with client</li>
+<li>Ask for feedback: "What would make this 10/10?"</li>
+<li>Address any revision requests immediately</li>
+<li>Confirm timeline is on track</li>
+</ul>
+</div>
+
+<h4>Day 14: Delivery Day</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Final quality check before delivery</li>
+<li>Deliver with a walkthrough message explaining everything</li>
+<li>Remind them of support period start date</li>
+<li>Schedule 48-hour follow-up</li>
+</ul>
+</div>
+
+<h4>Day 16: 48-Hour Follow-Up</h4>
+<div class="highlight-box">
+"Hi [Name]! It has been 2 days since your store launched — how is everything going? Any questions or adjustments needed? I am here for your entire 30-day support period."
+</div>
+
+<h4>Day 30: End of Support Period</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Check in one final time</li>
+<li>Ask for review (see templates below)</li>
+<li>Ask for referral</li>
+<li>Mention maintenance plans and future services</li>
+<li>Thank them and close the project formally</li>
+</ul>
+</div>
+
+<h4>Day 90: Long-Term Follow-Up</h4>
+<div class="highlight-box">
+"Hi [Name]! It has been 3 months since we launched your store — how is business going? If you are ready to take things to the next level, we offer redesign packages, marketing services, and ongoing maintenance. No pressure — just wanted to check in and see how you are doing!"
+</div>
+
+<h4>Review Request Templates</h4>
+<p><strong>For Fiverr:</strong></p>
+<div class="highlight-box">
+"So glad you are happy with the store! If you have a moment, I would really appreciate a 5-star review on the order. Your feedback helps us reach more clients like you. Thank you so much!"
+</div>
+<p><strong>For Google:</strong></p>
+<div class="highlight-box">
+"We are so glad you love your new store! If you have 30 seconds, would you mind leaving us a quick Google review? Here is the link: [link]. Your words really help other business owners find us. Thank you!"
+</div>
+<p><strong>For Trustpilot:</strong></p>
+<div class="highlight-box">
+"Your feedback means the world to us! If you would be open to sharing your experience on Trustpilot, here is our profile: [link]. A quick review helps other entrepreneurs make informed decisions. Thank you!"
+</div>
+
+<h4>Upsell Timing and Scripts</h4>
+<p><strong>Maintenance Plan (Day 30):</strong></p>
+<div class="highlight-box">
+"Your 30-day support period is wrapping up this week. Just a heads up — we offer monthly maintenance plans starting at $99/month that cover ongoing updates, speed monitoring, security patches, and priority support. It is like having a developer on retainer without the full-time cost. Want me to send you the details?"
+</div>
+<p><strong>Marketing Package (Day 60):</strong></p>
+<div class="highlight-box">
+"Hi [Name]! How are sales going? A lot of our clients see a big jump in revenue when they pair their new store with a proper marketing setup — email sequences, social media optimization, and Google Shopping integration. We offer marketing packages starting at $500. Worth exploring if you want to accelerate growth. Interested?"
+</div>
+<p><strong>Redesign (Day 180):</strong></p>
+<div class="highlight-box">
+"Hi [Name]! Your store has been live for 6 months — congrats on everything you have achieved! A lot of brands at your stage do a refresh — updated design, new features based on customer feedback, and conversion optimization based on your actual sales data. We offer redesign packages for existing clients at a preferred rate. Want to chat about it?"
 </div>
 </div>
 
 <div class="content-section">
-<h3>🏆 Post-Sale Actions</h3>
-<p>The sale doesn't end at payment.</p>
-<h4>48 Hours After Delivery:</h4>
+<h3>📋 Sales Pipeline Management</h3>
+
+<h4>Lead Tracking Structure</h4>
+<p>Every lead you interact with should be tracked. Use a spreadsheet or CRM with these columns:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Column</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Example</strong></td>
+</tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Date</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2026-02-15</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Name</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Maya Thompson</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Source</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fiverr / Instagram / Referral</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Niche</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Jewelry / Fashion</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">M.T.N.D. Score</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3/4 Green (Budget yellow)</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Status</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Qualified / Proposal Sent / Closed / Lost</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Package</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Premium $1,200</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow-Up Date</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2026-02-18</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Notes</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Needs to check with partner. Send recap email.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Outcome</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Won / Lost / Pending</td></tr>
+</table>
+
+<h4>Daily Pipeline Review (5 minutes, every morning)</h4>
 <div class="highlight-box">
-"Hi [Name]! Just checking in — how's everything going with your new store? Any questions I can help with?"
+<ul style="margin-bottom: 0;">
+<li>Check for new inquiries — respond to any unanswered within 5 minutes (Fiverr) or 1 hour (other channels)</li>
+<li>Review follow-up schedule — who is due for a follow-up today?</li>
+<li>Update statuses — move leads through the pipeline based on yesterday's interactions</li>
+<li>Prioritize hot leads — anyone who is close to closing gets your first attention</li>
+</ul>
 </div>
 
-<h4>If They're Happy:</h4>
+<h4>Weekly Sales Meeting Agenda (30 minutes, every Friday)</h4>
 <div class="highlight-box">
-"So glad you love it! Would you mind leaving a quick review? It really helps us grow. And if you know anyone else planning to launch a store, we'd love to help them too!"
+<ul style="margin-bottom: 0;">
+<li><strong>Pipeline Review (10 min):</strong> Total leads, qualified leads, proposals sent, deals closed this week</li>
+<li><strong>Win/Loss Analysis (10 min):</strong> What worked? What objections came up? Which techniques succeeded?</li>
+<li><strong>Revenue Report (5 min):</strong> Total closed revenue, average deal size, close rate</li>
+<li><strong>Next Week Plan (5 min):</strong> Follow-ups due, new strategies to try, personal development focus</li>
+</ul>
 </div>
 
-<h4>Mention Future Services:</h4>
+<h4>Monthly Goal-Setting Framework</h4>
 <div class="highlight-box">
-"After your 30-day support period, we offer monthly maintenance plans if you want ongoing help. No pressure — just letting you know it's available!"
+<ul style="margin-bottom: 0;">
+<li><strong>Revenue target:</strong> How much total revenue this month?</li>
+<li><strong>Deal count target:</strong> How many closed deals needed to hit revenue?</li>
+<li><strong>Lead volume target:</strong> Based on 30% close rate, how many qualified leads needed?</li>
+<li><strong>Activity target:</strong> How many conversations per day to hit lead volume?</li>
+<li><strong>Skill focus:</strong> Which technique or skill are you improving this month?</li>
+</ul>
 </div>
 </div>
 
+<div class="content-section">
+<h3>📝 Handoff Documentation — The Complete Template</h3>
+<p>When passing a closed deal to the development team, use this complete handoff template. The dev team should NOT need to contact the client for any information you already discussed.</p>
+
+<div class="highlight-box">
+<strong>PROJECT HANDOFF DOCUMENT</strong><br><br>
+<strong>Section 1: Client Information</strong><br>
+- Client Name: ___<br>
+- Business Name: ___<br>
+- Email: ___<br>
+- Phone/WhatsApp: ___<br>
+- Preferred communication channel: ___<br>
+- Time zone: ___<br><br>
+
+<strong>Section 2: Project Details</strong><br>
+- Niche/Industry: ___<br>
+- Target audience: ___<br>
+- Package sold: MVP / Premium / Enterprise / Custom<br>
+- Total price: $___<br>
+- Rush fee applied: Yes/No (amount: $___)<br>
+- Payment status: Paid / Partial / Pending<br>
+- Promised delivery date: ___<br><br>
+
+<strong>Section 3: Store Requirements</strong><br>
+- Number of pages: ___<br>
+- Number of products: ___<br>
+- Product categories: ___<br>
+- Custom features requested: ___<br>
+- Integrations needed (email, analytics, etc.): ___<br>
+- Reference sites client likes: ___<br><br>
+
+<strong>Section 4: Branding Assets</strong><br>
+- Logo provided: Yes/No (format: ___)<br>
+- Brand colors: ___<br>
+- Fonts specified: ___<br>
+- Product photos provided: Yes/No (quantity: ___)<br>
+- Brand guidelines document: Yes/No<br>
+- Shopify account created: Yes/No<br><br>
+
+<strong>Section 5: Special Notes</strong><br>
+- Special requests mentioned: ___<br>
+- Red flags observed: ___<br>
+- Client personality notes: ___<br>
+- Promises made during sale: ___<br>
+- Things to be extra careful about: ___
+</div>
+
+<div class="warning-box" style="margin-top: 15px;">
+<strong>What Dev Team NEEDS (non-negotiable):</strong> Client contact info, package details, number of products, delivery date, all promised features, branding assets status.<br><br>
+<strong>What is Nice to Have:</strong> Reference sites, personality notes, detailed conversation history.<br><br>
+<strong>Red Flag Documentation:</strong> If you noticed ANY red flags during the sale (even if you proceeded), document them so the dev team is prepared. Example: "Client changed requirements 3 times during our conversation — expect revision requests."
+</div>
+</div>
+
+<div class="content-section">
+<h3>💡 Sales Conviction and Mastery Philosophy</h3>
+<p>This section covers the mindset principles that separate top performers from average salespeople. These come directly from the Digital Heroes SOP.</p>
+
+<h4>The Sales Equation</h4>
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(236, 72, 153, 0.3)); border: none; text-align: center; padding: 25px;">
+<div style="font-size: 1.5em; font-weight: 700;">Conviction x Trust = Sales</div>
+<p style="margin: 15px 0 0 0;">If either is zero, the sale is zero. Both must be high.</p>
+</div>
+<p><strong>Conviction</strong> means YOU believe in the product. If you do not genuinely believe Digital Heroes delivers exceptional value, your prospects will sense it. Conviction is not faked — it comes from seeing real results, reading real reviews, and knowing your product inside and out.</p>
+<p><strong>Trust</strong> means THEY believe in you. Trust is built through competence (knowing your stuff), consistency (doing what you say), and character (being honest even when it costs you).</p>
+
+<h4>The Conviction Slider</h4>
+<p>Think of your conviction as a slider from 0% to 100%:</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>40% Conviction</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">You hesitate when stating the price. You offer discounts before being asked. You apologize for premium pricing. Clients sense your doubt and lose confidence.</td>
+</tr>
+<tr style="background: rgba(245, 158, 11, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>70% Conviction</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">You present pricing confidently but wobble under pressure. You can handle easy objections but crumble when they push hard. You are getting there but not yet unshakeable.</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>100% Conviction</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">You state the price with zero hesitation. You handle objections calmly because you KNOW the value exceeds the price. You do not chase — you attract. Clients trust your confidence because it is real.</td>
+</tr>
+</table>
+
+<h4>Childlike Curiosity > Confrontation</h4>
+<p>When a client pushes back, most salespeople get defensive. Top performers get curious. Instead of arguing, they ask questions.</p>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Confrontation (Bad)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Our price is fair and here is why you should pay it..."</td>
+</tr>
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Curiosity (Good)</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"That is interesting — what specifically about the pricing does not feel right? Help me understand what you were expecting."</td>
+</tr>
+</table>
+
+<h4>Emotional Control = Closing Power</h4>
+<p>The salesperson who controls their emotions controls the conversation. When a client is rude, dismissive, or unreasonable — your calm response is your superpower.</p>
+<div class="warning-box">
+<strong>Rules of Emotional Control:</strong>
+<ul style="margin-bottom: 0;">
+<li>Never match a client's anger with your own anger</li>
+<li>Never take price objections personally</li>
+<li>Never celebrate a close in front of the client</li>
+<li>Never show frustration when they ghost you</li>
+<li>Always respond 10% calmer than the situation requires</li>
+</ul>
+</div>
+
+<h4>The Real Sales Framework (7 Steps)</h4>
+<p>Every successful sale follows this sequence:</p>
+<ol>
+<li><strong>Rapport:</strong> Build genuine connection in the first 60 seconds</li>
+<li><strong>Qualify:</strong> Ask M.T.N.D. questions to confirm fit</li>
+<li><strong>Diagnose:</strong> Understand their REAL problem (not just what they say)</li>
+<li><strong>Prescribe:</strong> Present the right solution (not the most expensive)</li>
+<li><strong>Address Concerns:</strong> Handle objections with empathy and evidence</li>
+<li><strong>Close:</strong> Ask for the business using the right technique</li>
+<li><strong>Serve:</strong> Deliver exceptional post-sale experience</li>
+</ol>
+<p>Miss any step and the sale weakens. Skip a step and the sale dies.</p>
+</div>
 
 <div class="content-section">
 <h3>🎬 ALEX HORMOZI MASTERCLASS - REQUIRED VIEWING</h3>
@@ -2492,7 +5252,7 @@ The dev team should NOT need to ask the client for information you already discu
 <div class="highlight-box" style="background: rgba(16, 185, 129, 0.2); border-color: #10B981;">
 <strong>✅ Key Takeaways to Note:</strong>
 <ul style="margin-bottom: 0;">
-<li>Conviction × Trust = Sales (The Ultimate Equation)</li>
+<li>Conviction x Trust = Sales (The Ultimate Equation)</li>
 <li>Never give discounts - reduce scope instead</li>
 <li>Ask curious questions instead of arguing</li>
 <li>Emotional control is your superpower</li>
@@ -2500,9 +5260,10 @@ The dev team should NOT need to ask the client for information you already discu
 </ul>
 </div>
 </div>
+
 <div class="content-section">
 <h3>🚀 Ready for the Quiz?</h3>
-<p>This quiz tests realistic scenarios combining everything you've learned.</p>
+<p>This quiz tests realistic scenarios combining everything you have learned.</p>
 <ul>
 <li>📝 10 scenario-based questions</li>
 <li>🎯 Score <strong>10/10</strong> to proceed to Final Certification</li>
@@ -2517,7 +5278,7 @@ const task11Content = `
 <div class="content-section" style="text-align: center;">
 <div class="highlight-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(99, 102, 241, 0.3)); border: none; padding: 40px;">
 <div style="font-size: 2em; font-weight: 700;">🎓 THE FINAL TEST</div>
-<p style="margin: 20px 0 0 0; font-size: 1.2em;">Prove you're ready to represent Digital Heroes.</p>
+<p style="margin: 20px 0 0 0; font-size: 1.2em;">Prove you are ready to represent Digital Heroes.</p>
 </div>
 </div>
 
@@ -2570,13 +5331,420 @@ const task11Content = `
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 8</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Closing techniques, after "yes" actions</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Closing techniques, negotiation, after "yes" actions</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 9</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete sales flow, handoff, post-sale</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete sales flow, scenarios, handoff, post-sale</td>
 </tr>
 </table>
+</div>
+
+<div class="content-section">
+<h3>📖 Complete Knowledge Review</h3>
+<p>Before taking the final exam, review the key concepts from every task. This is your comprehensive refresher — use it to identify any gaps in your knowledge.</p>
+
+<h4>Task 1: Sales Mindset and Discipline</h4>
+<div class="highlight-box">
+<strong>5 Key Principles:</strong>
+<ol style="margin-bottom: 0;">
+<li><strong>Discipline beats motivation:</strong> Work the process regardless of how you feel. Motivation fades; discipline delivers.</li>
+<li><strong>Rejection is information, not insult:</strong> Every "no" teaches you something. Analyze why, adjust, and improve.</li>
+<li><strong>Volume beats perfection:</strong> 50 imperfect conversations teach you more than 5 "perfect" ones. Get the reps in.</li>
+<li><strong>Deliberate practice over experience:</strong> 10,000 hours of mindless repetition is not the same as 10,000 hours of intentional improvement with feedback.</li>
+<li><strong>You are solving, not selling:</strong> Your job is to find people with problems and offer solutions. If they have no problem, move on.</li>
+</ol>
+</div>
+
+<h4>Task 2: Company Knowledge</h4>
+<div class="highlight-box">
+<strong>Key Facts:</strong>
+<ul style="margin-bottom: 0;">
+<li>Digital Heroes: Premium Shopify development company</li>
+<li>Track record: 2,000+ stores, 4.9-star Fiverr rating</li>
+<li>Payment policy: Full payment upfront before work begins (90% of projects)</li>
+<li>No free consulting before order — our expertise has value</li>
+<li>Premium positioning: higher prices attract better clients</li>
+<li>Interconnected chain: every promise in sales becomes a deliverable for the team</li>
+<li>Never discuss salary with colleagues (termination offense)</li>
+<li>SOPs are "The Law" — follow them daily</li>
+</ul>
+</div>
+
+<h4>Task 3: Products and Pricing</h4>
+<div class="highlight-box">
+<strong>Package Structure:</strong>
+<table style="width: 100%; margin: 10px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.15);">
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><strong>Package</strong></td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><strong>Price</strong></td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><strong>Key Features</strong></td>
+</tr>
+<tr>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">MVP</td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">$800</td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">3 pages, 15 products, basic optimization, 14-day support</td>
+</tr>
+<tr>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Premium</td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">$1,200</td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">5 pages, 50 products, full SEO, 30-day support</td>
+</tr>
+<tr>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Enterprise</td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">$1,800</td>
+<td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">8+ pages, unlimited products, custom features, 90-day support</td>
+</tr>
+</table>
+<strong>Key Rules:</strong> Standard delivery 14 days. Present 2-3 options always. Never discount — reduce scope instead. Scope reduction for budget clients: fewer pages, fewer products, shorter support.
+</div>
+
+<h4>Task 4: Lead Qualification (M.T.N.D.)</h4>
+<div class="highlight-box">
+<strong>The Framework:</strong>
+<ul style="margin-bottom: 0;">
+<li><strong>M — Money:</strong> Do they have the budget? Green: "budget not an issue for quality." Red: "what is cheapest?"</li>
+<li><strong>T — Timeline:</strong> Is the timeline realistic? Green: 2-4 weeks. Red: "need it tomorrow."</li>
+<li><strong>N — Need:</strong> Is there a clear, urgent need? Green: "launching next month." Red: "just exploring."</li>
+<li><strong>D — Decision-maker:</strong> Can they say yes? Green: "I make the decisions." Red: "need to check with partner, wife, and investor."</li>
+</ul>
+<strong>Rule:</strong> 2+ red flags = polite disqualification. Bad History Pattern ("last 4 developers failed") = the common factor is THEM.
+</div>
+
+<h4>Task 5: Lead Management and Response Templates</h4>
+<div class="highlight-box">
+<strong>Response Times:</strong>
+<ul style="margin-bottom: 0;">
+<li>Fiverr: Under 5 minutes during business hours</li>
+<li>Other channels: Within 1 hour (ideally 30 minutes)</li>
+</ul>
+<strong>4 Template Types:</strong>
+<ol style="margin-bottom: 0;">
+<li><strong>General Inquiry:</strong> Thank + qualify + portfolio + stats</li>
+<li><strong>Price-Focused:</strong> Do NOT give price. Ask qualifying questions first.</li>
+<li><strong>Urgent Timeline:</strong> Confirm capability, list what YOU need from THEM, ask if ready</li>
+<li><strong>Comparison Shopper:</strong> List differentiators, ask what matters to THEM</li>
+</ol>
+<strong>Follow-Up Rules:</strong> Maximum 3 follow-ups. +24h gentle check-in, +48h light urgency, +72h graceful close. Share portfolio examples in SIMILAR niche.
+</div>
+
+<h4>Task 6: Response Templates (Personalization)</h4>
+<div class="highlight-box">
+<strong>Personalization Rules:</strong>
+<ul style="margin-bottom: 0;">
+<li>Always use their name</li>
+<li>Reference their specific niche or product</li>
+<li>Share portfolio examples relevant to their industry</li>
+<li>Mention specific stats (2,000+ stores, 4.9 rating)</li>
+<li>Never send generic copy-paste messages</li>
+</ul>
+</div>
+
+<h4>Task 7: Sales Psychology</h4>
+<div class="highlight-box">
+<strong>10 Techniques Quick Reference:</strong>
+<ol style="margin-bottom: 0;">
+<li><strong>80/20 Rule:</strong> Listen 80%, talk 20%</li>
+<li><strong>3-Yes Technique:</strong> Get 3 small agreements before the pitch</li>
+<li><strong>Mirror Technique:</strong> Repeat their last words as a question</li>
+<li><strong>Pain Calculator:</strong> Convert problem into dollar amounts lost per day/week/month</li>
+<li><strong>Assumptive Language:</strong> "When" not "if" — presuppose the sale</li>
+<li><strong>Silence Technique:</strong> After stating price, stop talking. First to speak loses.</li>
+<li><strong>Contrast Principle:</strong> Show expensive option first, then your price feels like a bargain</li>
+<li><strong>Labeling Technique:</strong> Name their emotion before they do</li>
+<li><strong>Takeaway:</strong> Suggest you might not be the right fit — triggers pursuit</li>
+<li><strong>Brain Pain (Cortisol):</strong> Change triggers stress. Reduce friction to make buying feel safe.</li>
+</ol>
+</div>
+
+<h4>Task 8: Objection Handling</h4>
+<div class="highlight-box">
+<strong>A.C.E. Framework:</strong>
+<ul style="margin-bottom: 0;">
+<li><strong>A — Acknowledge:</strong> "I completely understand that concern."</li>
+<li><strong>C — Clarify:</strong> "Help me understand — is it the total amount or the timing?"</li>
+<li><strong>E — Engage:</strong> "Here is how we can address that..." (present solution)</li>
+</ul>
+<strong>6 Core Objections:</strong>
+<ol style="margin-bottom: 0;">
+<li><strong>"Too expensive":</strong> Break down value, show ROI, offer scope reduction</li>
+<li><strong>"Need to think about it":</strong> Ask what specifically — uncover real objection</li>
+<li><strong>"Found someone cheaper":</strong> Ask what is included, highlight differentiators</li>
+<li><strong>"Not sure it will work":</strong> Social proof (2,000+ stores, 4.9 rating, reviews)</li>
+<li><strong>"Bad past experience":</strong> Empathize, differentiate with specifics, offer guarantees</li>
+<li><strong>"Need to ask partner":</strong> Offer to include partner in conversation, set specific follow-up</li>
+</ol>
+<strong>Feel-Felt-Found:</strong> "I understand how you FEEL. Other clients FELT the same way. What they FOUND was..." + success story.
+</div>
+
+<h4>Task 9: Closing Techniques and Negotiation</h4>
+<div class="highlight-box">
+<strong>10 Core Closing Techniques:</strong>
+<ol style="margin-bottom: 0;">
+<li><strong>Assumptive:</strong> "Monday or Wednesday?" (skip "do you want to buy")</li>
+<li><strong>Price Sandwich:</strong> Value-Price-Value (never naked price)</li>
+<li><strong>Options:</strong> 2-3 choices shifts "should I?" to "which?"</li>
+<li><strong>Good-Better-Best:</strong> 3 tiers, recommend middle</li>
+<li><strong>Upfront Contract:</strong> Set expectations at START</li>
+<li><strong>Delay:</strong> Book SPECIFIC follow-up date</li>
+<li><strong>Takeaway:</strong> Remove option to create pursuit</li>
+<li><strong>If I Could, Would You:</strong> Isolate real objection</li>
+<li><strong>Summary:</strong> Recap all value before asking</li>
+<li><strong>Urgency:</strong> REAL scarcity only (never fake)</li>
+</ol>
+<strong>Negotiation Rules:</strong> Never reduce price without reducing scope. Silence after price. Payment plans for green-flag leads only. Rush fees: +10% (10-day), +20% (7-day), +30% (5-day).
+</div>
+
+<h4>Task 10: Practice Scenarios, Handoff, and Post-Sale</h4>
+<div class="highlight-box">
+<strong>Key Concepts:</strong>
+<ul style="margin-bottom: 0;">
+<li>Complete sales flow: 7 stages from first contact to post-delivery</li>
+<li>Handoff must include ALL client details (dev team should NEVER need to ask the client)</li>
+<li>Post-sale timeline: Day 1 onboarding, Day 16 follow-up, Day 30 review/referral, Day 90 upsell</li>
+<li>3-Touch Rule for unresponsive leads: +24h, +48h, +72h then close</li>
+<li>Conviction x Trust = Sales (The Ultimate Equation)</li>
+<li>Emotional Control = Closing Power (never match anger with anger)</li>
+<li>Stop selling IMMEDIATELY after "yes"</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📋 Quick Reference Cards</h3>
+<p>These condensed cheat sheets cover the most tested concepts. Review them before each exam attempt.</p>
+
+<h4>Card 1: Response Protocol</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Situation</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Response</strong></td>
+</tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Fiverr inquiry</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Under 5 minutes</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"How much?"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Ask qualifying questions FIRST, never quote blind</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Need it ASAP"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Confirm + rush fee + get assets immediately</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Comparing options"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Differentiate on value, ask what matters to THEM</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">No response after proposal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3-Touch sequence then graceful close</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Client says "yes"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">STOP selling. Invoice within 5 min. Confirm timeline.</td></tr>
+</table>
+
+<h4>Card 2: Red Flags vs Green Flags</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.15);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Red Flags (2+ = disqualify)</strong></td>
+</tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"What is the cheapest option?" / "Can you match $200?"</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Need it in 2 days" (unrealistic timeline)</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"My last 3-4 developers were terrible" (Bad History Pattern)</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"I need to check with partner, wife, and investor"</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Just exploring options for someday"</td></tr>
+</table>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(16, 185, 129, 0.15);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Green Flags (proceed with confidence)</strong></td>
+</tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Budget is not an issue for quality work"</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Realistic timeline (2-4 weeks)</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Clear need with specific launch date</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"I make the decisions"</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Has logo, photos, and product details ready</td></tr>
+</table>
+
+<h4>Card 3: Pricing Rules</h4>
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Rule</strong></td>
+<td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Application</strong></td>
+</tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Never discount</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Reduce scope instead of reducing price</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Always Price Sandwich</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Value-Price-Value on every quote</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Present 2-3 options</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Good-Better-Best, recommend middle</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Silence after price</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">First to speak loses leverage</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Full payment upfront</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">90% of projects. Payment plans for green-flag only.</td></tr>
+<tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Rush fees</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">+10% (10-day), +20% (7-day), +30% (5-day)</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>⚠️ Common Exam Mistakes — Top 10</h3>
+<p>These are the most common errors people make on the certification exam. Study these to avoid losing points.</p>
+
+<div class="warning-box">
+<ol style="margin-bottom: 0;">
+<li><strong>Giving price before qualifying:</strong> The #1 mistake. ALWAYS ask M.T.N.D. questions before presenting any pricing.</li>
+<li><strong>Choosing "offer a discount" answers:</strong> Digital Heroes NEVER discounts. We reduce scope. Every "offer discount" answer is wrong.</li>
+<li><strong>Ignoring red flags because they have money:</strong> A client with budget but 3+ red flags is STILL a disqualify. Red flags matter regardless of money.</li>
+<li><strong>Continuing to sell after "yes":</strong> The moment they say yes, STOP. Send invoice. Confirm timeline. Do not explain why they made a good decision.</li>
+<li><strong>Leaving follow-ups open-ended:</strong> "Get back to me whenever" is always wrong. ALWAYS set a specific date: "Thursday or Friday?"</li>
+<li><strong>Confusing the 80/20 rule:</strong> It means listen 80%, talk 20%. NOT 80% of revenue from 20% of clients (that is a different business concept).</li>
+<li><strong>Not documenting the handoff:</strong> "Just name and email" is always wrong. Complete handoff includes ALL client details, niche, products, branding, features, timeline, and special requests.</li>
+<li><strong>Matching competitor prices:</strong> If a client says "other developer charges $400," you NEVER match. You differentiate on value.</li>
+<li><strong>Arguing with objections:</strong> Confrontation is always wrong. Curiosity is always right. Ask questions, do not argue.</li>
+<li><strong>Forgetting post-sale actions:</strong> After delivery: 48-hour check-in, ask for review, ask for referral. These are not optional.</li>
+</ol>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 Sales KPIs and Success Metrics</h3>
+<p>Once certified, you will be measured on these key performance indicators. Understanding them now will help you hit the ground running.</p>
+
+<table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.2);">
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>KPI</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Target</strong></td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Why It Matters</strong></td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response Time (Fiverr)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 5 minutes</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fiverr algorithm rewards fast responders. Slow response = lost leads.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response Time (Other)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 1 hour</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Prospects contact multiple sellers. First responder wins 50%+ of the time.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Close Rate (qualified)</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30%+</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">From qualified leads (passed M.T.N.D.), you should close at least 3 in 10.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Average Deal Size</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$1,200+</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Most clients should land on Premium. If average is below $1,000, you are underselling.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Monthly Revenue</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Varies by level</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Junior: $5K+/mo. Senior: $15K+/mo. Lead: $30K+/mo.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Satisfaction</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4.8+ stars</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Your sales promises must match delivery reality. Overselling kills ratings.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Review Collection Rate</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">70%+</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">7 out of 10 happy clients should leave a review when asked properly.</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Referral Rate</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%+</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1 in 5 clients should refer at least one new lead.</td>
+</tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🚀 Career Growth Path</h3>
+<p>Your certification is not the end — it is the beginning. Here is how your career progresses at Digital Heroes.</p>
+
+<h4>Level 1: Junior Sales Executive (Month 1-3)</h4>
+<div class="highlight-box">
+<strong>What you do:</strong> Handle inbound Fiverr leads with senior supervision. Focus on learning the rhythm of real conversations.<br>
+<strong>Skills to develop:</strong> Response speed, qualification accuracy, template mastery<br>
+<strong>Targets:</strong> 5+ closes per month, $5,000+ revenue<br>
+<strong>Supervision:</strong> Senior reviews every conversation for the first 10 orders. Feedback after each close and each lost deal.
+</div>
+
+<h4>Level 2: Sales Executive (Month 3-6)</h4>
+<div class="highlight-box">
+<strong>What you do:</strong> Handle all inbound leads independently. Begin handling multi-channel inquiries (Fiverr, Instagram, direct).<br>
+<strong>Skills to develop:</strong> Objection handling under pressure, closing consistency, pipeline management<br>
+<strong>Targets:</strong> 10+ closes per month, $12,000+ revenue<br>
+<strong>Supervision:</strong> Weekly pipeline review with sales lead. Independent on day-to-day conversations.
+</div>
+
+<h4>Level 3: Senior Sales Executive (Month 6-12)</h4>
+<div class="highlight-box">
+<strong>What you do:</strong> Handle enterprise clients, complex negotiations, and high-value deals. Begin mentoring junior team members.<br>
+<strong>Skills to develop:</strong> Enterprise selling, multi-stakeholder navigation, upselling, team leadership<br>
+<strong>Targets:</strong> 15+ closes per month, $20,000+ revenue, 1-2 enterprise deals per month<br>
+<strong>Supervision:</strong> Monthly strategy sessions. Full autonomy on all deals.
+</div>
+
+<h4>Level 4: Sales Lead (Year 1+)</h4>
+<div class="highlight-box">
+<strong>What you do:</strong> Lead the sales team. Set strategy, train new hires, manage key accounts, and drive revenue growth.<br>
+<strong>Skills to develop:</strong> Team management, sales strategy, process optimization, hiring<br>
+<strong>Targets:</strong> Team revenue targets, close rate improvement, team development<br>
+<strong>Earning potential:</strong> Base salary + commission + equity participation
+</div>
+
+<h4>Building Your Personal Brand</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li><strong>Document your wins:</strong> Track every successful project, every 5-star review, every happy client message</li>
+<li><strong>Build expertise:</strong> Become the go-to person for a specific niche (fashion, food, fitness)</li>
+<li><strong>Share knowledge:</strong> Help junior team members — teaching reinforces your own mastery</li>
+<li><strong>Stay current:</strong> Follow e-commerce trends, Shopify updates, and sales methodology developments</li>
+<li><strong>Network:</strong> Build relationships with clients that transcend individual projects</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📅 Your First Week Action Plan</h3>
+<p>After certification and video approval, here is exactly what your first week looks like.</p>
+
+<h4>Day 1: Orientation and Observation</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Shadow a senior salesperson for the full day</li>
+<li>Read all response templates out loud 3 times each</li>
+<li>Review the last 10 closed deals in the team CRM</li>
+<li>Set up your Fiverr account access with your supervisor</li>
+<li>Write down 5 questions to ask your mentor</li>
+</ul>
+</div>
+
+<h4>Day 2: Practice and Preparation</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Role-play 5 scenarios with a team member (they play the client)</li>
+<li>Practice Price Sandwich delivery for all 3 tiers (record yourself)</li>
+<li>Practice handling "too expensive" and "need to think about it" objections</li>
+<li>Review the handoff template and fill in a practice one from a past deal</li>
+<li>Memorize your 10-second value proposition</li>
+</ul>
+</div>
+
+<h4>Day 3: First Real Lead (Supervised)</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Handle your first real Fiverr inquiry with your senior watching</li>
+<li>Senior provides real-time guidance if needed (they can see your messages)</li>
+<li>Debrief after the conversation: what went well, what to improve</li>
+<li>Handle 2-3 more leads with decreasing supervision</li>
+<li>Complete your first EOD (End of Day) report</li>
+</ul>
+</div>
+
+<h4>Day 4-5: Increasing Independence</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Handle all incoming leads independently</li>
+<li>Senior reviews conversations at end of day (not real-time)</li>
+<li>Complete full pipeline tracking for every lead</li>
+<li>Aim for your first close by Day 5</li>
+<li>Complete handoff documentation for any closed deal</li>
+<li>Daily debrief with mentor: wins, losses, lessons</li>
+</ul>
+</div>
+
+<h4>Day 6-7: Full Autonomy with Review</h4>
+<div class="highlight-box">
+<ul style="margin-bottom: 0;">
+<li>Handle all leads independently without real-time supervision</li>
+<li>Weekly pipeline review with sales lead</li>
+<li>Review your metrics: response time, qualification accuracy, close rate</li>
+<li>Set goals for Week 2 based on Week 1 performance</li>
+<li>Continue until 10 successful orders = full independence</li>
+</ul>
+</div>
 </div>
 
 <div class="content-section">
@@ -2585,10 +5753,10 @@ const task11Content = `
 <div class="highlight-box">
 <strong>Video Structure (30 minutes):</strong>
 <ul style="margin-bottom: 0;">
-<li><strong>Introduction (2 min):</strong> Your name, why you want this role</li>
-<li><strong>Knowledge Demo (10 min):</strong> Walk through key concepts in YOUR words</li>
-<li><strong>Scenario Handling (15 min):</strong> Handle price objection, "let me think", comparison, and demonstrate a close</li>
-<li><strong>Closing (3 min):</strong> What will make you successful, any questions</li>
+<li><strong>Introduction (2 min):</strong> Your name, why you want this role, what excites you about sales</li>
+<li><strong>Knowledge Demo (10 min):</strong> Walk through key concepts in YOUR words — M.T.N.D., package tiers, qualification, the sales flow</li>
+<li><strong>Scenario Handling (15 min):</strong> Handle a price objection, "let me think about it," a competitor comparison, and demonstrate a full close sequence</li>
+<li><strong>Closing (3 min):</strong> What will make you successful in this role, any questions for the team</li>
 </ul>
 </div>
 <div class="warning-box" style="margin-top: 15px;">
@@ -2596,8 +5764,10 @@ const task11Content = `
 <ul style="margin-bottom: 0;">
 <li>25-35 minutes total</li>
 <li>Screen share + face visible (Loom or similar)</li>
-<li>Clear audio</li>
+<li>Clear audio — no background noise</li>
 <li>Demonstrates genuine understanding (not reading notes)</li>
+<li>Shows confidence in pricing conversations</li>
+<li>Uses actual techniques by name (not generic responses)</li>
 </ul>
 </div>
 </div>
@@ -2618,6 +5788,25 @@ const task11Content = `
 </div>
 
 <div class="content-section">
+<h3>🏅 The Sales Professional's Creed</h3>
+<p>You have completed the most comprehensive sales training program in the digital services industry. You are no longer just someone who "does sales." You are a <strong>Digital Heroes Sales Professional.</strong></p>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(236, 72, 153, 0.3)); border: none; padding: 30px;">
+<p style="font-size: 1.1em; line-height: 1.8;"><strong>I commit to excellence</strong> — not because someone is watching, but because that is who I am. I do not cut corners. I do not take shortcuts. I follow the SOP because it works.</p>
+
+<p style="font-size: 1.1em; line-height: 1.8;"><strong>I take pride in premium service</strong> — I will never apologize for our pricing because I know the value we deliver. I will never discount because I respect our work and our team. I will present our packages with conviction because I have seen the results.</p>
+
+<p style="font-size: 1.1em; line-height: 1.8;"><strong>I am dedicated to genuine client success</strong> — I do not sell people things they do not need. I qualify honestly, I recommend honestly, and I deliver honestly. My clients succeed because I set them up for success from the first conversation.</p>
+
+<p style="font-size: 1.1em; line-height: 1.8;"><strong>I commit to ongoing learning</strong> — This certification is not the end. I will review my conversations weekly. I will study new techniques. I will ask for feedback. I will push past my comfort zone because that is where growth lives.</p>
+
+<p style="font-size: 1.1em; line-height: 1.8;"><strong>I am disciplined when motivation fails</strong> — I show up every day. I respond fast. I follow up consistently. I track my numbers. I do the work when it is hard because that is what separates professionals from amateurs.</p>
+
+<p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 0;"><strong>I am a Digital Heroes Sales Professional.</strong> And I am just getting started.</p>
+</div>
+</div>
+
+<div class="content-section">
 <h3>🚀 Ready for the Final Exam?</h3>
 <p>This is the culmination of everything. 20 questions. 20/20 required.</p>
 <ul>
@@ -2627,7 +5816,7 @@ const task11Content = `
 </ul>
 <div class="warning-box" style="margin-top: 15px;">
 <strong>Remember:</strong> "Skills can be trained, but attitude cannot. A person at level 6 can become 10, but level 3 cannot become 6."<br><br>
-You've come this far. Finish strong.
+You have come this far. Finish strong.
 </div>
 </div>
 `;

@@ -1,3 +1,5 @@
+const QA_MODE = true; // TEMPORARY - Remove after QA
+
 // WordPress Developer Training Application Logic
 
 // State Management
@@ -34,7 +36,7 @@ function renderTasksList() {
     trainingTasks.forEach((task, index) => {
         const isCompleted = progress.completedTasks.includes(task.id);
         const isCurrent = task.id === progress.currentTask;
-        const isLocked = task.id > progress.currentTask;
+        const isLocked = QA_MODE ? false : task.id > progress.currentTask;
 
         const card = document.createElement('div');
         card.className = `task-card ${isCompleted ? 'completed' : ''} ${isCurrent ? 'current' : ''} ${isLocked ? 'locked' : ''}`;
@@ -105,12 +107,14 @@ function openTask(index) {
     }
 
     const fullContent = taskContentVars[task.id];
+    const quizLength = (typeof allQuizzes !== 'undefined' && allQuizzes[index]) ? allQuizzes[index].length : 10;
 
     if (fullContent) {
-        html += fullContent;
+        html += fullContent.replace(/<h2>([^<]*?)TASK \d+:/, '<h2>$1TASK ' + task.id + ':');
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${index === totalTasks - 1 ? '20/20' : '10/10'} Required)</button>
+                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${quizLength}/${quizLength} Required)</button>
+                ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
             </div>
         `;
     } else {
@@ -123,7 +127,8 @@ function openTask(index) {
                 </div>
             </div>
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${index === totalTasks - 1 ? '20/20' : '10/10'} Required)</button>
+                <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${quizLength}/${quizLength} Required)</button>
+                ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
             </div>
         `;
     }
@@ -136,6 +141,22 @@ function openTask(index) {
 function closeTask() {
     document.getElementById('taskView').style.display = 'none';
     document.getElementById('welcomeScreen').style.display = 'flex';
+}
+
+// QA Mode: Skip task without quiz
+function skipTask(taskIndex) {
+    const tasks = typeof trainingTasks !== 'undefined' ? trainingTasks : Array.from({length: totalTasks}, (_, i) => ({id: i + 1}));
+    const task = tasks[taskIndex];
+    if (!progress.completedTasks.includes(task.id)) {
+        progress.completedTasks.push(task.id);
+    }
+    progress.currentTask = Math.max(progress.currentTask, task.id + 1);
+    localStorage.setItem('wordpressTrainingProgress', JSON.stringify(progress));
+    renderTasksList();
+    updateProgressBar();
+    if (taskIndex + 1 < tasks.length) {
+        openTask(taskIndex + 1);
+    }
 }
 
 // Start Quiz
@@ -287,7 +308,7 @@ function showResults() {
         html += `
             <div style="margin-top: 20px;">
                 <button class="nav-btn" style="margin-right: 15px;" onclick="startQuiz(${currentTask})">🔄 Retry Quiz</button>
-                <button class="back-btn" onclick="closeTask()">📖 Review Material</button>
+                <button class="back-btn" onclick="openTask(${currentTask})">📖 Review Material</button>
             </div>
         `;
     }

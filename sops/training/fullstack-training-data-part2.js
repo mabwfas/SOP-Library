@@ -341,7 +341,6 @@ const task1Quiz = [
 const task2Quiz = [
     { q: "The Digital Heroes staging environment process for full-stack projects requires:", o: ["Deploy directly to production — staging is optional for experienced full-stack developers who rarely make mistakes and ensures long-term sustainability across deliverables and ensures long-term sustainability across deliverables", "Separate staging environment that mirrors production → all features tested and PM-approved on staging → only then deploy to production — untested production deploys are a termination-level offense", "Use the client's live site as staging since creating a separate environment doubles the hosting costs unnecessarily", "Staging is only needed for frontend changes — backend and API changes can go directly to production safely"], c: 1 },
     { q: "Business Context phase captures:", o: ["Technical requirements — this is the standard approach", "Problem being solved, users, business goal", "Just the budget — this reflects the standard operating procedure most development teams follow", "Design preferences only"], c: 1 },
-    { q: "Discovery for complex projects is:", o: ["A paid service (
     { q: "Discovery meeting duration should be:", o: ["15 minutes — this method has been validated through extensive testing and produces reliable repeatable outcomes", "5 hours", "Not needed", "60-90 minutes"], c: 3 },
     { q: "Business Context phase captures:", o: ["Technical requirements — this is the standard approach", "Problem being solved, users, business goal", "Just the budget — this reflects the standard operating procedure most development teams follow", "Design preferences only"], c: 1 },
     { q: "\"What happens when [edge case]?\" helps find:", o: ["Budget", "Design preferences", "Hidden complexity", "Timeline"], c: 2 },
@@ -351,8 +350,7 @@ const task2Quiz = [
     { q: "Integration phase covers:", o: ["Frontend — this is the standard approach", "Database only — this reflects the standard operating procedure most development teams follow", "Nothing technical — this reflects the standard operating procedure most development teams follow", "Payment gateway, email service, third-party APIs"], c: 3 },
     { q: "Feature Walkthrough duration:", o: ["5 minutes", "2 hours", "10 seconds", "30 minutes"], c: 3 },
     { q: "Discovery deliverable is:", o: ["Technical Specification Document", "Working code — this reflects the standard operating procedure most development teams follow", "Final design — this reflects the standard operating procedure most development teams follow", "Database — this reflects the standard operating procedure most development teams follow"], c: 0 },
-    { q: "Timeline & Budget discussion ensures:", o: ["Maximum profit", "Cheap delivery", "Skip planning — this reflects the standard operating procedure most development teams follow", "Alignment before work begins"], c: 3 }
-5,000 - $50,000)", "Optional — this reflects the standard operating procedure most development teams follow", "Free — this reflects the standard operating procedure most development teams follow", "Done by client — this reflects the standard operating procedure most development teams follow"], c: 0 },
+    { q: "Timeline & Budget discussion ensures:", o: ["Maximum profit", "Cheap delivery", "Skip planning — this reflects the standard operating procedure most development teams follow", "Alignment before work begins"], c: 3 },
     { q: "User Roles phase identifies:", o: ["Who uses the system and what each role can do", "Admin users — this is the standard approach", "Technical stack — this reflects the standard operating procedure most development teams follow", "Budget — this reflects the standard operating procedure most development teams follow"], c: 0 },
     { q: "Integration phase covers:", o: ["Frontend — this is the standard approach", "Database only — this reflects the standard operating procedure most development teams follow", "Nothing technical — this reflects the standard operating procedure most development teams follow", "Payment gateway, email service, third-party APIs"], c: 3 },
     { q: "Feature Walkthrough duration:", o: ["5 minutes", "2 hours", "10 seconds", "30 minutes"], c: 3 },
@@ -480,6 +478,58 @@ if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
 if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
 if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
 
+// Task 11 Quiz: Deployment & DevOps (10 Questions)
+const task11Quiz = [
+    { q: "Best hosting platform for Next.js frontend:", o: ["AWS EC2", "Vercel", "GoDaddy shared hosting", "FTP to server"], c: 1 },
+    { q: "CI/CD pipeline should run tests on:", o: ["Only main branch", "Every Pull Request", "Once a month", "Only when deploying"], c: 1 },
+    { q: "You accidentally pushed .env with production keys to GitHub. First step:", o: ["Delete the file and push again", "Rotate ALL credentials immediately", "Hope nobody noticed", "Make the repo private"], c: 1 },
+    { q: "Best platform for database and background workers:", o: ["Vercel", "GitHub Pages", "Railway or Render", "Wordpress hosting"], c: 2 },
+    { q: "Environment variables should be stored:", o: ["Hardcoded in source code", "In .env files committed to git", "In secure environment config on hosting platform", "In comments in the code"], c: 2 },
+    { q: "What is the purpose of a staging environment:", o: ["Save hosting costs", "Test changes before they reach production", "Store old code versions", "Run development only"], c: 1 },
+    { q: "Docker containers help with:", o: ["Making code run faster", "Consistent environments across dev and production", "Replacing version control", "Avoiding testing"], c: 1 },
+    { q: "GitHub Actions is used for:", o: ["Writing code", "Designing UI", "Automated CI/CD workflows", "Database management"], c: 2 },
+    { q: "After deploying, you should:", o: ["Close your laptop immediately", "Monitor logs and verify the deployment works", "Delete the staging environment", "Push more changes right away"], c: 1 },
+    { q: "SSL certificate expired in production. Priority level:", o: ["Low - fix next week", "Medium - fix within 24 hours", "P0 - fix immediately, site is insecure", "Not important for internal tools"], c: 2 }
+];
+
+// Task 12 Quiz: Client Handover (10 Questions)
+const task12Quiz = [
+    { q: "The handover package must include:", o: ["Just the live URL", "Source code, admin credentials, architecture diagram, and README", "Only a Slack message saying 'it is done'", "Invoice only"], c: 1 },
+    { q: "README.md should contain:", o: ["Just the project name", "How to run locally, Node version, install command, env setup", "Marketing copy about the product", "Nothing - clients do not read it"], c: 1 },
+    { q: "Client training should be delivered via:", o: ["Long text documents only", "Loom videos showing how to change text, ban users, view analytics", "Verbal instructions with no recording", "A link to Stack Overflow"], c: 1 },
+    { q: "Architecture diagram purpose:", o: ["To look professional", "Help client understand system components and how they connect", "Required by law", "Only for enterprise clients"], c: 1 },
+    { q: "Source code delivery format:", o: ["Screenshot of code", "Zip file AND repository invite", "Printed on paper", "Email with code pasted in body"], c: 1 },
+    { q: "Admin credentials should be shared:", o: ["In a public Slack channel", "Via secure method like 1Password or encrypted share", "Pasted in the README on GitHub", "Via text message"], c: 1 },
+    { q: "When should handover happen:", o: ["6 months after project end", "Before final payment", "After client requests it multiple times", "As part of the delivery process before support period begins"], c: 3 },
+    { q: "If client cannot run the project locally:", o: ["Not your problem after delivery", "Your documentation is incomplete - improve the README", "Tell them to hire another developer", "Blame their computer"], c: 1 },
+    { q: "Video training should cover:", o: ["How you built the entire app from scratch", "Common tasks: editing content, managing users, viewing analytics", "Your personal development workflow", "Only error messages and how to Google them"], c: 1 },
+    { q: "Post-handover support means:", o: ["Unlimited free work forever", "Answering questions and fixing bugs within the agreed support period", "Ignoring all client messages", "Charging for every single question"], c: 1 }
+];
+
+// Task 13 Quiz: Difficult Situations & AI Development (20 Questions - Final Certification)
+const task13Quiz = [
+    { q: "Server is down in production. First action:", o: ["Wait for client to report it", "Check logs, check host status, check database connection", "Rewrite the entire application", "Blame the hosting provider"], c: 1 },
+    { q: "Client says 'the app is slow'. Your response:", o: ["It works fine on my machine", "Profile the app with data (Lighthouse/NewRelic) to identify the bottleneck", "Tell them to upgrade their internet", "Ignore until they complain again"], c: 1 },
+    { q: "During a crisis, how often should you communicate updates:", o: ["Only when fully fixed", "Every 30 minutes", "Once a day", "Never - just fix it silently"], c: 1 },
+    { q: "An incident report should include:", o: ["Just 'it is fixed now'", "Root cause, fix applied, and prevention measures", "Who to blame", "Nothing - incidents happen"], c: 1 },
+    { q: "Expired SSL certificate is what priority:", o: ["Low", "Medium", "P0 - immediate fix required", "Not a real problem"], c: 2 },
+    { q: "Good AI prompt for code generation:", o: ["Make a user page", "Create a Next.js page using Tailwind that fetches from /api/user, displays in Card component, handles loading and error states", "Do something cool", "Write code"], c: 1 },
+    { q: "AI hallucinations in code means:", o: ["The AI is dreaming", "AI makes up packages/functions that do not exist - always verify imports", "AI writes perfect code every time", "AI refuses to help"], c: 1 },
+    { q: "When using AI-generated code you should:", o: ["Copy-paste without reading", "Trust it completely", "Review, test, and verify every line before using", "Never use AI code"], c: 2 },
+    { q: "Best practice for prompt engineering:", o: ["Be as vague as possible", "Write one word prompts", "Be specific about tech stack, requirements, edge cases, and expected output", "Let AI decide everything"], c: 2 },
+    { q: "Refactoring spaghetti code with AI:", o: ["Ask AI to rewrite everything at once", "Break into small testable functions, verify each one works", "Delete all code and start over", "Leave spaghetti code as is"], c: 1 },
+    { q: "TypeScript 'any' type should be used:", o: ["Everywhere for flexibility", "Never - type safety is non-negotiable at Digital Heroes", "Only in production code", "Only on Fridays"], c: 1 },
+    { q: "Before merging code, peer review is:", o: ["Optional for senior devs", "Required - no exceptions at Digital Heroes", "Only for new hires", "Wasting time"], c: 1 },
+    { q: "Schema design should happen:", o: ["After all code is written", "Before writing any code - plan twice code once", "Never - just create tables as needed", "Only if database is complex"], c: 1 },
+    { q: "API keys in frontend code:", o: ["Acceptable if minified", "Never expose - use server-side proxy", "Fine for development", "Required for authentication"], c: 1 },
+    { q: "Page load target for web applications:", o: ["Under 10 seconds", "Under 30 seconds", "Under 3 seconds", "Does not matter"], c: 2 },
+    { q: "RESTful API endpoint for getting users:", o: ["/getUsers", "/fetchAllUsers", "/user_list_endpoint", "/api/users"], c: 3 },
+    { q: "Soft delete implementation uses:", o: ["DROP TABLE command", "deletedAt timestamp field", "Permanent removal from database", "Moving to a different database"], c: 1 },
+    { q: "Branch naming for new features:", o: ["main", "feature/description-of-work", "my-stuff", "branch1"], c: 1 },
+    { q: "Production database should be:", o: ["Same as development", "Backed up regularly with automated snapshots", "Never backed up to save costs", "Manually copied weekly"], c: 1 },
+    { q: "Code quality at Digital Heroes is:", o: ["Nice to have", "Only for client-facing code", "Non-negotiable across all projects", "Depends on project budget"], c: 2 }
+];
+
 // Export all quizzes
 const allQuizzes = [
-    task0Quiz,task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
+    task0Quiz, task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz, task11Quiz, task12Quiz, task13Quiz];

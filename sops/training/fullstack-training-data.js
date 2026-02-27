@@ -731,7 +731,7 @@ const task3Content = `
     <h3>✅ IMPLEMENTATION TASK: ER Diagram</h3>
     <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
         <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Schema Planning</h4>
-        <p>Client wants a "Course Platform". Define the relations between `User`, `Course`, `Lesson`, and `Enrollment`. Write the Prisma Schema pseudo-code.</p>
+        <p>Client wants a "Course Platform". Define the relations between User, Course, Lesson, and Enrollment. Write the Prisma Schema pseudo-code.</p>
     </div>
 </div>
 
@@ -807,7 +807,7 @@ const task5Content = `
     <h3>✅ IMPLEMENTATION TASK: Git Flow</h3>
     <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
         <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Merge Resolve</h4>
-        <p>You and a teammate edited the same `UserButton.tsx`. Git says "CONFLICT". Describe the steps to resolve it manually.</p>
+        <p>You and a teammate edited the same UserButton.tsx. Git says "CONFLICT". Describe the steps to resolve it manually.</p>
     </div>
 </div>
 
@@ -820,175 +820,7 @@ const task5Content = `
 </div>
 `;
 
-const task6Content = `
-<h2>📚 TASK 5: DEVELOPMENT PHASES (6 Weeks)</h2>
-
-<div class="content-section">
-    <h3>Phase 1: Foundation (Wk 1-2)</h3>
-    <p>Auth setup, DB schema locked, UI Kit installed. The "Skeleton" of the app.</p>
-</div>
-
-<div class="content-section">
-    <h3>Phase 3: Integrations (Wk 4-5)</h3>
-    <p>Stripe, SendGrid, Twilio. This is where bugs happen. Buffer time here.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Planning</h3>
-    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Gantt Chart</h4>
-        <p>Create a 6-week roadmap for a "Real Estate Listing Platform". When do you build the "Map View" vs the "Admin Dashboard"?</p>
-    </div>
-</div>
-
-<div class="content-section">
-    <h3>🚀 Ready for the Quiz?</h3>
-    <ul>
-        <li>📝 10 questions about Phases</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
-    </ul>
-</div>
-`;
-
-const task7Content = `
-<h2>📚 TASK 6: DATABASE DESIGN</h2>
-
-<div class="content-section">
-    <h3>📐 Normalization</h3>
-    <p>Don't store "User Address" inside the "Orders" table repeatedly. Create an <code>Address</code> table and relate it.</p>
-</div>
-
-<div class="content-section">
-    <h3>⚡ Indexing</h3>
-    <p>If you search by <code>email</code> frequently, you MUST add an index. <code>@@index([email])</code>. Otherwise, the DB scans every row.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Optimization</h3>
-    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: The Slow Query</h4>
-        <p>A query taking 5 seconds: <code>SELECT * FROM logs WHERE status = 'ERROR'</code>. The logs table has 1M rows. How do you fix it?</p>
-    </div>
-</div>
-
-<div class="content-section">
-    <h3>🚀 Ready for the Quiz?</h3>
-    <ul>
-        <li>📝 10 questions about Databases</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
-    </ul>
-</div>
-`;
-
-const task8Content = `
-<h2>📚 TASK 7: API DEVELOPMENT - The Connector</h2>
-
-<div class="content-section">
-    <h3>🌐 REST Standards</h3>
-    <ul>
-        <li><strong>GET:</strong> Retrieve (Idempotent).</li>
-        <li><strong>POST:</strong> Create.</li>
-        <li><strong>PUT:</strong> Replace fully.</li>
-        <li><strong>PATCH:</strong> Update partially.</li>
-        <li><strong>DELETE:</strong> Remove.</li>
-    </ul>
-</div>
-
-<div class="content-section">
-    <h3>🛡️ Validation (Zod)</h3>
-    <div class="code-block" style="background: #1e1e1e; padding: 10px; font-family: monospace;">
-        const schema = z.object({<br>
-        &nbsp;&nbsp;email: z.string().email(),<br>
-        &nbsp;&nbsp;age: z.number().min(18)<br>
-        });
-    </div>
-    <p>Validate INPUT and OUTPUT.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Endpoint Build</h3>
-    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Error Handling</h4>
-        <p>Write a Try/Catch block for an API route. If the DB fails, what status code do you return? What message? (Don't leak stack traces!)</p>
-    </div>
-</div>
-
-<div class="content-section">
-    <h3>🚀 Ready for the Quiz?</h3>
-    <ul>
-        <li>📝 10 questions about APIs</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
-    </ul>
-</div>
-`;
-
-const task9Content = `
-<h2>📚 TASK 8: SECURITY ESSENTIALS</h2>
-
-<div class="content-section">
-    <h3>🚫 OWASP Top 10</h3>
-    <ol>
-        <li><strong>Broken Access Control:</strong> Can I see Admin pages as a user?</li>
-        <li><strong>Injection:</strong> SQL/Command injection.</li>
-        <li><strong>Cryptographic Faclure:</strong> Storing passwords as plain text? (Use bcrypt/argon2).</li>
-    </ol>
-</div>
-
-<div class="content-section">
-    <h3>🔑 JWT vs Sessions</h3>
-    <p>Using NextAuth? Understand the tradeoff. JWT is stateless but hard to revoke. Sessions are database-heavy but secure.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Sec Audit</h3>
-    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: XSS Prevention</h4>
-        <p>A user inputs <code>&lt;script&gt;alert('hacked')&lt;/script&gt;</code> into their bio. How does React handle this? When is it dangerous?</p>
-    </div>
-</div>
-
-<div class="content-section">
-    <h3>🚀 Ready for the Quiz?</h3>
-    <ul>
-        <li>📝 10 questions about Security</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
-    </ul>
-</div>
-`;
-
-const task10Content = `
-<h2>📚 TASK 9: QA & TESTING</h2>
-
-<div class="content-section">
-    <h3>🧪 Testing Pyramid</h3>
-    <ul>
-        <li><strong>Unit Tests (Jest):</strong> Test individual functions. (Fast)</li>
-        <li><strong>Integration Tests:</strong> Test modules working together.</li>
-        <li><strong>E2E Tests (Playwright):</strong> Test the full browser flow. (Slow but critical).</li>
-    </ul>
-</div>
-
-<div class="content-section">
-    <h3>✅ Pre-Merge Checklist</h3>
-    <p>Linting passed? Build passed? No console logs left?</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: E2E</h3>
-    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Playwright Script</h4>
-        <p>Write pseudo-code for a Playwright test that: 1. Goes to login. 2. Types credentials. 3. Clicks submit. 4. Expects URL to be /dashboard.</p>
-    </div>
-</div>
-
-<div class="content-section">
-    <h3>🚀 Ready for the Quiz?</h3>
-    <ul>
-        <li>📝 10 questions about Testing</li>
-        <li>🎯 Score <strong>10/10</strong> to proceed</li>
-    </ul>
-</div>
-`;
+// task6Content through task10Content are defined in fullstack-training-data-part2.js
 
 const task11Content = `
 <h2>📚 TASK 10: DEPLOYMENT & DEVOPS</h2>
@@ -1430,7 +1262,7 @@ const quizQuestions = [
 
 
 
-const task1Quiz = [
+const task0Quiz = [
     { q: "You just joined Digital Heroes. A colleague asks about your salary during lunch. What should you do?", o: ["Politely decline - discussing salary leads to immediate termination", "Share it openly — this reflects the standard operating procedure most development teams follow", "Share primarily with close friends", "Tell them a lower number — this reflects the standard operating procedure most development teams follow"], c: 0 },
     { q: "You arrive at the office at 9:20 AM without prior notice. What is the immediate consequence?", o: ["Verbal warning", "Half-day salary deduction", "Written warning recorded", "No consequence if less than 30 mins late"], c: 1 },
     { q: "What is Digital Heroes Point B revenue target for 2027?", o: ["15-20 Crores", "40 Crores", "75 Crores", "100 Crores"], c: 2 },
@@ -1456,11 +1288,7 @@ window.task2Content = task2Content;
 window.task3Content = task3Content;
 window.task4Content = task4Content;
 window.task5Content = task5Content;
-window.task6Content = task6Content;
-window.task7Content = task7Content;
-window.task8Content = task8Content;
-window.task9Content = task9Content;
-window.task10Content = task10Content;
+// task6-10 registered in fullstack-training-data-part2.js
 window.task11Content = task11Content;
 window.task12Content = task12Content;
 window.task13Content = task13Content;

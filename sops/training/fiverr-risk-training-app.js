@@ -1,3 +1,5 @@
+const QA_MODE = true; // TEMPORARY - Remove after QA
+
 // Fiverr Risk Training Application Logic
 
 // State Management
@@ -36,7 +38,7 @@ function renderTasksList() {
     trainingTasks.forEach((task, index) => {
         const isCompleted = progress.completedTasks.includes(task.id);
         const isCurrent = task.id === progress.currentTask;
-        const isLocked = task.id > progress.currentTask;
+        const isLocked = QA_MODE ? false : task.id > progress.currentTask;
 
         const card = document.createElement('div');
         card.className = `task-card ${isCompleted ? 'completed' : ''} ${isCurrent ? 'current' : ''} ${isLocked ? 'locked' : ''}`;
@@ -105,12 +107,14 @@ function openTask(index) {
     }
 
     const fullContent = taskContentVars[task.id];
+    const quizLength = (typeof allQuizzes !== 'undefined' && allQuizzes[index]) ? allQuizzes[index].length : 10;
 
     if (fullContent) {
-        html += fullContent;
+        html += fullContent.replace(/<h2>([^<]*?)TASK \d+:/, '<h2>$1TASK ' + task.id + ':');
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (10/10 Required)</button>
+                <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${quizLength}/${quizLength} Required)</button>
+                ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
             </div>
         `;
     } else {
@@ -129,6 +133,21 @@ function openTask(index) {
 
     if (window.renderMermaid) {
         window.renderMermaid();
+    }
+}
+
+// QA Mode: Skip task without quiz
+function skipTask(taskIndex) {
+    const task = trainingTasks[taskIndex];
+    if (!progress.completedTasks.includes(task.id)) {
+        progress.completedTasks.push(task.id);
+    }
+    progress.currentTask = Math.max(progress.currentTask, task.id + 1);
+    localStorage.setItem('fiverrRiskTrainingProgress', JSON.stringify(progress));
+    renderTasksList();
+    updateProgressBar();
+    if (taskIndex + 1 < trainingTasks.length) {
+        openTask(taskIndex + 1);
     }
 }
 
@@ -214,7 +233,7 @@ function showResults() {
             <div class="results-icon">${passed ? '🎉' : '❌'}</div>
             <h3>${passed ? 'Perfect Score!' : 'Not Quite — Try Again'}</h3>
             <div class="results-score">${correct}/${quiz.length}</div>
-            <p>${passed ? 'You passed! Move on to the next task.' : 'You need 10/10 to pass. Review the material and try again.'}</p>
+            <p>${passed ? 'You passed! Move on to the next task.' : 'You need ${quiz.length}/${quiz.length} to pass. Review the material and try again.'}</p>
             
             <div class="results-breakdown">
                 ${quiz.map((q, i) => `
@@ -247,9 +266,63 @@ function showNamePrompt() {
 
 // Certificate
 function showCertificate() {
-    if (typeof window.showTrainingCertificate === 'function') {
-        window.showTrainingCertificate(traineeName, 'Fiverr Risk Manager', progress.completedTasks.length, TOTAL_TASKS);
-    } else {
-        alert(`🎓 Certificate for: ${traineeName}\nRole: Fiverr Risk Manager\nTasks Completed: ${progress.completedTasks.length}/${TOTAL_TASKS}`);
+    if (window.confetti) {
+        window.confetti.burst(window.innerWidth / 2, window.innerHeight / 2);
     }
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+    const modal = document.createElement('div');
+    modal.id = 'certificateModal';
+    modal.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;';
+
+    modal.innerHTML = `
+        <div id="certificateContent" style="width:900px;max-width:100%;background:linear-gradient(145deg,#0f172a,#1e293b);border:3px solid #6366F1;border-radius:20px;padding:60px;position:relative;box-shadow:0 0 60px rgba(99,102,241,0.3),inset 0 0 60px rgba(99,102,241,0.05);">
+            <button onclick="closeCertificate()" style="position:fixed;top:30px;right:30px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,255,255,0.2);border-radius:50%;width:40px;height:40px;color:#F8FAFC;font-size:20px;cursor:pointer;z-index:1001;display:flex;align-items:center;justify-content:center;" class="no-print">&#10005;</button>
+            <div style="text-align:center;margin-bottom:40px;">
+                <div style="font-size:3em;margin-bottom:10px;">&#127891;</div>
+                <h1 style="font-size:2.5em;font-weight:800;background:linear-gradient(135deg,#6366F1,#06B6D4);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin:0;letter-spacing:0.05em;">DIGITAL HEROES</h1>
+                <div style="color:#94A3B8;font-size:0.9em;letter-spacing:0.2em;text-transform:uppercase;margin-top:5px;">Certification Program</div>
+            </div>
+            <div style="text-align:center;margin-bottom:40px;">
+                <h2 style="font-size:2em;font-weight:300;color:#F8FAFC;margin-bottom:30px;letter-spacing:0.1em;">CERTIFICATE OF COMPLETION</h2>
+                <p style="color:#94A3B8;font-size:1.1em;margin-bottom:10px;">This is to certify that</p>
+                <div id="recipientName" style="font-size:2.2em;font-weight:700;color:#F8FAFC;border-bottom:2px solid rgba(99,102,241,0.4);padding:10px 40px;display:inline-block;margin:15px 0 25px 0;min-width:300px;">${traineeName || 'Your Name'}</div>
+                <p style="color:#94A3B8;font-size:1.1em;margin-bottom:25px;">has successfully completed the</p>
+                <h3 style="font-size:1.6em;font-weight:700;color:#6366F1;margin-bottom:25px;">Fiverr Risk Manager Training</h3>
+                <p style="color:#CBD5E1;font-size:1em;line-height:1.6;max-width:600px;margin:0 auto;">Demonstrating proficiency in Fiverr platform risk management, ToS compliance, account security, order dispute resolution, and marketplace fraud prevention.</p>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:50px;padding-top:30px;border-top:1px solid rgba(255,255,255,0.1);">
+                <div style="text-align:center;">
+                    <div style="width:200px;border-bottom:2px solid rgba(99,102,241,0.4);padding-bottom:8px;margin-bottom:8px;color:#F8FAFC;font-weight:600;">Anurag Singh</div>
+                    <div style="color:#94A3B8;font-size:0.85em;">Director, Digital Heroes</div>
+                </div>
+                <div style="text-align:center;"><div style="font-size:2.5em;color:rgba(99,102,241,0.3);">&#127942;</div></div>
+                <div style="text-align:center;">
+                    <div style="width:180px;border-bottom:2px solid rgba(99,102,241,0.4);padding-bottom:8px;margin-bottom:8px;color:#F8FAFC;font-weight:600;">${formattedDate}</div>
+                    <div style="color:#94A3B8;font-size:0.85em;">Date of Completion</div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:30px;">
+                <div style="display:inline-block;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.3);border-radius:8px;padding:12px 25px;">
+                    <span style="color:#94A3B8;font-size:0.85em;">Certificate ID: </span>
+                    <span style="color:#6366F1;font-weight:700;font-family:monospace;letter-spacing:0.1em;">DH-FR-${Date.now().toString(36).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}</span>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:40px;" class="no-print">
+                <button onclick="printCertificate()" style="background:linear-gradient(135deg,#6366F1,#06B6D4);color:#000;font-weight:700;padding:16px 40px;border-radius:10px;border:none;cursor:pointer;font-size:1.1em;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 10px 30px rgba(99,102,241,0.4)';" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='none';">&#128424; Print Certificate</button>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+}
+
+function closeCertificate() {
+    const modal = document.getElementById('certificateModal');
+    if (modal) modal.remove();
+}
+
+function printCertificate() {
+    window.print();
 }

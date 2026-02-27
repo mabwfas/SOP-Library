@@ -148,6 +148,15 @@
             border: 2px solid #EF4444;
         }
 
+        .result-box.legacy {
+            background: rgba(245, 158, 11, 0.15);
+            border: 2px solid #F59E0B;
+        }
+
+        .result-box.legacy h3 {
+            color: #F59E0B;
+        }
+
         .result-box h3 {
             display: flex;
             align-items: center;
@@ -286,7 +295,7 @@
 
         <div class="input-group">
             <label>Enter Certificate Code</label>
-            <input type="text" id="certIdInput" placeholder="e.g. DMH-JS-A7K2 or DH-DEV-MKK7G2HO" maxlength="25">
+            <input type="text" id="certIdInput" placeholder="e.g. DMH-SL-JS-A7K2-X3M9" maxlength="30">
         </div>
 
         <button class="verify-btn" onclick="verifyCertificate()">
@@ -319,7 +328,51 @@
     </div>
 
     <script>
-        // Certificate storage (loaded from JSON)
+        // ═══════════════════════════════════════════════════════════
+        // CHECKSUM CONSTANTS — MUST MATCH training-certificate.js EXACTLY
+        // ═══════════════════════════════════════════════════════════
+        const CERT_SECRET = 'dh_cert_2026_v3_salt';
+
+        const COURSE_NAMES = {
+            'SL': 'Technical Sales Executive Training',
+            'CS': 'Customer Success Training',
+            'FN': 'Finance Executive Training',
+            'CW': 'Content Writer Training',
+            'CC': 'Client Chat Support Training',
+            'HR': 'HR Executive Training',
+            'SM': 'Social Media Manager Training',
+            'PM': 'Project Manager Training',
+            'DS': 'UI/UX Designer Training',
+            'FS': 'Full-Stack Developer Training',
+            'DV': 'Shopify Developer Training',
+            'OP': 'Operations & Routine Training',
+            'WP': 'WordPress Developer Training',
+            'FR': 'Fiverr Risk Manager Training'
+        };
+
+        /**
+         * Compute 4-char checksum (cyrb53-variant hash)
+         * MUST BE IDENTICAL to the copy in training-certificate.js
+         */
+        function computeChecksum(courseCode, initials, nonce, secret) {
+            var payload = secret + '|' + courseCode + '|' + initials + '|' + nonce;
+            var h1 = 0xDEADBEEF;
+            var h2 = 0x41C6CE57;
+            for (var i = 0; i < payload.length; i++) {
+                var ch = payload.charCodeAt(i);
+                h1 = Math.imul(h1 ^ ch, 2654435761);
+                h2 = Math.imul(h2 ^ ch, 1597334677);
+            }
+            h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
+            h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+            h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
+            h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+            var combined = (h2 >>> 0) * 4294967296 + (h1 >>> 0);
+            return combined.toString(36).substring(0, 4).toUpperCase().padEnd(4, '0');
+        }
+        // ═══════════════════════════════════════════════════════════
+
+        // Certificate storage (loaded from JSON — for legacy DH format)
         let certificates = [];
 
         // Load certificates from JSON file
@@ -331,7 +384,6 @@
                 renderRecentCerts();
             } catch (error) {
                 console.log('No certificates file found, using localStorage fallback');
-                // Fallback to localStorage
                 certificates = JSON.parse(localStorage.getItem('issuedCertificates') || '[]');
                 renderRecentCerts();
             }
@@ -363,54 +415,117 @@
             const resultMessage = document.getElementById('resultMessage');
             const certDetails = document.getElementById('certDetails');
 
-            // Check for DMH format (DMH-XX-XXXX or DMH-XXX-XXXX)
-            const dmhPattern = /^DMH-([A-Z]{2,3})-([A-Z0-9]{4})$/;
-            const dmhMatch = certId.match(dmhPattern);
+            // ─── TIER 1: New checksum format (DMH-CC-II-NNNN-KKKK) ───
+            const newDmhPattern = /^DMH-([A-Z]{2})-([A-Z]{2,3})-([A-Z0-9]{4})-([A-Z0-9]{4})$/;
+            const newMatch = certId.match(newDmhPattern);
 
-            if (dmhMatch) {
-                // Valid DMH format - auto-verify based on format
-                const initials = dmhMatch[1];
-                const uniqueCode = dmhMatch[2];
+            if (newMatch) {
+                const courseCode = newMatch[1];
+                const initials = newMatch[2];
+                const nonce = newMatch[3];
+                const providedChecksum = newMatch[4];
 
-                resultBox.className = 'result-box valid';
+                // Recompute checksum and compare
+                const expectedChecksum = computeChecksum(courseCode, initials, nonce, CERT_SECRET);
+                const courseName = COURSE_NAMES[courseCode];
+
+                if (providedChecksum === expectedChecksum && courseName) {
+                    // ✅ VALID — checksum matches
+                    resultBox.className = 'result-box valid';
+                    resultBox.style.display = 'block';
+                    resultTitle.innerHTML = '✅ Certificate Verified!';
+                    resultMessage.innerHTML = 'This certificate has been <strong>cryptographically verified</strong> as an authentic Digital Heroes training certificate.';
+
+                    certDetails.innerHTML = `
+                        <div class="cert-detail">
+                            <span class="label">Certificate Code</span>
+                            <span class="value" style="font-family: monospace; letter-spacing: 0.05em;">${certId}</span>
+                        </div>
+                        <div class="cert-detail">
+                            <span class="label">Holder Initials</span>
+                            <span class="value">${initials}</span>
+                        </div>
+                        <div class="cert-detail">
+                            <span class="label">Course Completed</span>
+                            <span class="value">${courseName}</span>
+                        </div>
+                        <div class="cert-detail">
+                            <span class="label">Issuing Organization</span>
+                            <span class="value">Digital Heroes Pvt. Ltd.</span>
+                        </div>
+                        <div class="cert-detail">
+                            <span class="label">Checksum</span>
+                            <span class="value" style="color: #10B981;">✓ Verified (${providedChecksum})</span>
+                        </div>
+                        <div class="cert-detail">
+                            <span class="label">Status</span>
+                            <span class="value" style="color: #10B981;">✓ Active & Valid</span>
+                        </div>
+                    `;
+                    certDetails.style.display = 'block';
+                } else {
+                    // ❌ Checksum mismatch — FORGED or INVALID
+                    resultBox.className = 'result-box invalid';
+                    resultBox.style.display = 'block';
+                    resultTitle.innerHTML = '❌ Invalid Certificate';
+                    resultMessage.innerHTML = 'The checksum verification <strong>failed</strong>. This certificate code is invalid, tampered with, or forged.';
+                    certDetails.innerHTML = `
+                        <div class="cert-detail">
+                            <span class="label">Entered Code</span>
+                            <span class="value" style="font-family: monospace;">${certId}</span>
+                        </div>
+                        <div class="cert-detail">
+                            <span class="label">Checksum</span>
+                            <span class="value" style="color: #EF4444;">✗ Failed</span>
+                        </div>
+                    `;
+                    certDetails.style.display = 'block';
+                }
+                return;
+            }
+
+            // ─── TIER 2: Legacy DMH format (DMH-XX-XXXX — no checksum) ───
+            const oldDmhPattern = /^DMH-([A-Z]{2,3})-([A-Z0-9]{4})$/;
+            const oldMatch = certId.match(oldDmhPattern);
+
+            if (oldMatch) {
+                const initials = oldMatch[1];
+
+                resultBox.className = 'result-box legacy';
                 resultBox.style.display = 'block';
-                resultTitle.innerHTML = '✅ Certificate Verified!';
-                resultMessage.innerHTML = 'This is an authentic Digital Heroes training certificate.';
+                resultTitle.innerHTML = '⚠️ Legacy Certificate';
+                resultMessage.innerHTML = 'This certificate was issued before the checksum verification system was implemented. It cannot be cryptographically verified.';
 
                 certDetails.innerHTML = `
                     <div class="cert-detail">
                         <span class="label">Certificate Code</span>
-                        <span class="value">${certId}</span>
+                        <span class="value" style="font-family: monospace;">${certId}</span>
                     </div>
                     <div class="cert-detail">
                         <span class="label">Holder Initials</span>
                         <span class="value">${initials}</span>
                     </div>
                     <div class="cert-detail">
-                        <span class="label">Unique Identifier</span>
-                        <span class="value">${uniqueCode}</span>
-                    </div>
-                    <div class="cert-detail">
-                        <span class="label">Issuing Organization</span>
-                        <span class="value">Digital Heroes Pvt. Ltd.</span>
+                        <span class="label">Format</span>
+                        <span class="value">Legacy (pre-checksum)</span>
                     </div>
                     <div class="cert-detail">
                         <span class="label">Status</span>
-                        <span class="value" style="color: #10B981;">✓ Active & Valid</span>
+                        <span class="value" style="color: #F59E0B;">⚠ Unverifiable</span>
                     </div>
                 `;
                 certDetails.style.display = 'block';
                 return;
             }
 
-            // Search for certificate in database (for legacy DH-XXX format)
+            // ─── TIER 3: Legacy DH-XXX format (database lookup) ───
             const cert = certificates.find(c => c.id.toUpperCase() === certId);
 
             if (cert) {
                 resultBox.className = 'result-box valid';
                 resultBox.style.display = 'block';
                 resultTitle.innerHTML = '✅ Certificate Verified!';
-                resultMessage.innerHTML = 'This is an authentic Digital Heroes certificate.';
+                resultMessage.innerHTML = 'This is an authentic Digital Heroes certificate (database record).';
 
                 certDetails.innerHTML = `
                     <div class="cert-detail">
@@ -436,10 +551,11 @@
                 `;
                 certDetails.style.display = 'block';
             } else {
+                // ─── TIER 4: Not found ───
                 resultBox.className = 'result-box invalid';
                 resultBox.style.display = 'block';
                 resultTitle.innerHTML = '❌ Certificate Not Found';
-                resultMessage.innerHTML = 'This certificate code is invalid or does not exist. Valid formats: DMH-XX-XXXX (initials-based) or DH-XXX-XXXXXXXX (legacy).';
+                resultMessage.innerHTML = 'This certificate code is invalid or does not exist.<br><small style="color: #94A3B8;">Valid format: DMH-CC-II-NNNN-KKKK (e.g. DMH-SL-JS-A7K2-X3M9)</small>';
                 certDetails.style.display = 'none';
             }
         }
@@ -454,7 +570,6 @@
                 return;
             }
 
-            // Show last 5 certificates
             const recent = certificates.slice(-5).reverse();
 
             recentList.innerHTML = recent.map(cert => `
@@ -479,7 +594,6 @@
         async function init() {
             await loadCertificates();
 
-            // Check for code in URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             const code = urlParams.get('code');
             if (code) {

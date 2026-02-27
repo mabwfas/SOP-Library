@@ -1,11 +1,64 @@
 /**
  * Certificate Enhancements
  * Adds PDF download and Verification features to certificates
- * UPDATED: Removed training summary, added DMH-initials verification code
+ * UPDATED v3: Checksum-based verification codes (DMH-CC-II-NNNN-KKKK)
  */
 
 (function () {
     'use strict';
+
+    // ═══════════════════════════════════════════════════════════
+    // CHECKSUM CONSTANTS — MUST MATCH verify.html EXACTLY
+    // ═══════════════════════════════════════════════════════════
+    const CERT_SECRET = 'dh_cert_2026_v3_salt';
+
+    const COURSE_MAP = {
+        'sales-training':        'SL',
+        'cs-training':           'CS',
+        'finance-training':      'FN',
+        'content-training':      'CW',
+        'client-chat-training':  'CC',
+        'hr-training':           'HR',
+        'social-media-training': 'SM',
+        'pm-training':           'PM',
+        'designer-training':     'DS',
+        'fullstack-training':    'FS',
+        'developer-training':    'DV',
+        'operations-training':   'OP',
+        'wordpress-training':    'WP',
+        'fiverr-risk-training':  'FR'
+    };
+
+    /**
+     * Detect course code from current page URL
+     */
+    function detectCourseCode() {
+        var path = window.location.pathname;
+        var filename = path.split('/').pop().replace('.html', '').replace(/\?.*$/, '');
+        return COURSE_MAP[filename] || 'XX';
+    }
+
+    /**
+     * Compute 4-char checksum (cyrb53-variant hash)
+     * MUST BE IDENTICAL to the copy in verify.html
+     */
+    function computeChecksum(courseCode, initials, nonce, secret) {
+        var payload = secret + '|' + courseCode + '|' + initials + '|' + nonce;
+        var h1 = 0xDEADBEEF;
+        var h2 = 0x41C6CE57;
+        for (var i = 0; i < payload.length; i++) {
+            var ch = payload.charCodeAt(i);
+            h1 = Math.imul(h1 ^ ch, 2654435761);
+            h2 = Math.imul(h2 ^ ch, 1597334677);
+        }
+        h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
+        h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+        h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
+        h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+        var combined = (h2 >>> 0) * 4294967296 + (h1 >>> 0);
+        return combined.toString(36).substring(0, 4).toUpperCase().padEnd(4, '0');
+    }
+    // ═══════════════════════════════════════════════════════════
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initCertificateEnhancements);
@@ -16,7 +69,7 @@
     function initCertificateEnhancements() {
         // Patch showCertificate to add enhanced features
         patchShowCertificate();
-        console.log('✅ Certificate enhancements loaded (v2 - Verification)');
+        console.log('✅ Certificate enhancements loaded (v3 - Checksum Verification)');
     }
 
     /**
@@ -32,12 +85,15 @@
     }
 
     /**
-     * Generate unique verification code: DMH-[initials]-XXXX
+     * Generate verification code with checksum: DMH-CC-II-NNNN-KKKK
+     * CC = course code, II = initials, NNNN = random nonce, KKKK = checksum
      */
     function generateVerificationCode(name) {
         const initials = getInitials(name);
-        const random = Math.random().toString(36).substring(2, 6).toUpperCase();
-        return `DMH-${initials}-${random}`;
+        const courseCode = detectCourseCode();
+        const nonce = Math.random().toString(36).substring(2, 6).toUpperCase();
+        const checksum = computeChecksum(courseCode, initials, nonce, CERT_SECRET);
+        return 'DMH-' + courseCode + '-' + initials + '-' + nonce + '-' + checksum;
     }
 
     /**
