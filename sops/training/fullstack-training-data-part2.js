@@ -473,6 +473,13 @@ const task10Quiz = [
     { q: "Code quality is:", o: ["Optional", "Junior's job", "Non-negotiable", "Client's problem"], c: 2 }
 ];
 
+// Register task content on window for dynamic access
+if (typeof task6Content !== 'undefined') window.task6Content = task6Content;
+if (typeof task7Content !== 'undefined') window.task7Content = task7Content;
+if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
+if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
+if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
+
 // Export all quizzes
 const allQuizzes = [
     task0Quiz,task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz];
