@@ -125,9 +125,65 @@
         const content = document.getElementById('certificateContent');
         if (!content) return;
 
-        // Get trainee name from certificate
+        // ── FIX 1: Enable scrolling on the modal ──
+        modal.style.overflowY = 'auto';
+        modal.style.alignItems = 'flex-start';
+        modal.style.paddingTop = '40px';
+        modal.style.paddingBottom = '40px';
+
+        // ── FIX 2: Responsive certificate styles ──
+        addCertificateResponsiveStyles();
+
+        // ── FIX 3: Name prompt — ask for name if not set or is default ──
         const nameElement = document.getElementById('recipientName');
-        const traineeName = nameElement ? nameElement.textContent.trim() : 'Trainee';
+        let traineeName = nameElement ? nameElement.textContent.trim() : '';
+
+        // Check if name is missing, default, or "QA Tester"
+        const badNames = ['your name', 'qa tester', 'trainee', ''];
+        if (badNames.includes(traineeName.toLowerCase())) {
+            // Try to get from any localStorage key
+            const savedName = localStorage.getItem('dhTraineeName')
+                || localStorage.getItem('salesTraineeName')
+                || localStorage.getItem('developerTraineeName')
+                || localStorage.getItem('csTraineeName')
+                || '';
+
+            if (savedName && !badNames.includes(savedName.toLowerCase())) {
+                traineeName = savedName;
+                if (nameElement) nameElement.textContent = traineeName;
+            } else {
+                // Prompt the user for their name
+                const enteredName = prompt('Enter your full name for the certificate:');
+                if (enteredName && enteredName.trim()) {
+                    traineeName = enteredName.trim();
+                    if (nameElement) nameElement.textContent = traineeName;
+                    // Save for future use
+                    localStorage.setItem('dhTraineeName', traineeName);
+                } else {
+                    traineeName = 'Trainee';
+                    if (nameElement) nameElement.textContent = traineeName;
+                }
+            }
+        }
+
+        // Make name editable on click
+        if (nameElement) {
+            nameElement.style.cursor = 'pointer';
+            nameElement.title = 'Click to edit name';
+            nameElement.onclick = function () {
+                const newName = prompt('Enter your full name:', this.textContent.trim());
+                if (newName && newName.trim()) {
+                    this.textContent = newName.trim();
+                    localStorage.setItem('dhTraineeName', newName.trim());
+                    // Regenerate verification code with new name
+                    const newCode = generateVerificationCode(newName.trim());
+                    replaceCertificateCode(content, newCode);
+                    const verifySection = document.getElementById('verificationSection');
+                    if (verifySection) verifySection.remove();
+                    addVerificationButton(content, newCode);
+                }
+            };
+        }
 
         // Generate verification code
         const verificationCode = generateVerificationCode(traineeName);
@@ -140,6 +196,73 @@
 
         // Add PDF download button
         addPdfDownloadButton(content);
+    }
+
+    /**
+     * Add responsive styles for certificate on mobile and desktop
+     */
+    function addCertificateResponsiveStyles() {
+        if (document.getElementById('cert-responsive-styles')) return;
+
+        const style = document.createElement('style');
+        style.id = 'cert-responsive-styles';
+        style.textContent = `
+            #certificateModal {
+                overflow-y: auto !important;
+                -webkit-overflow-scrolling: touch;
+            }
+            @media (max-width: 768px) {
+                #certificateContent {
+                    padding: 25px 15px !important;
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    border-radius: 12px !important;
+                    margin: 10px !important;
+                }
+                #certificateContent h1 {
+                    font-size: 1.6em !important;
+                }
+                #certificateContent h2 {
+                    font-size: 1.3em !important;
+                }
+                #certificateContent h3 {
+                    font-size: 1.2em !important;
+                }
+                #recipientName {
+                    font-size: 1.4em !important;
+                    padding: 8px 15px !important;
+                    min-width: unset !important;
+                }
+                #certificateContent > div:last-of-type {
+                    flex-direction: column !important;
+                    align-items: center !important;
+                    gap: 20px !important;
+                }
+                #verificationSection {
+                    padding: 15px !important;
+                    margin: 15px 0 !important;
+                }
+                #verificationSection a {
+                    padding: 14px 25px !important;
+                    font-size: 1em !important;
+                }
+                .no-print button, .no-print a {
+                    margin: 5px !important;
+                }
+            }
+            @media (max-width: 480px) {
+                #certificateContent {
+                    padding: 20px 12px !important;
+                }
+                #certificateContent h1 {
+                    font-size: 1.3em !important;
+                }
+                #recipientName {
+                    font-size: 1.2em !important;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     }
 
     /**

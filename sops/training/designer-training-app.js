@@ -171,6 +171,8 @@ function skipTask(taskIndex) {
     updateProgressBar();
     if (taskIndex + 1 < trainingTasks.length) {
         openTask(taskIndex + 1);
+    } else {
+        showCertificate();
     }
 }
 
@@ -288,7 +290,7 @@ function showResults() {
             <div class="results-message">
                 ${passed
             ? '🎉 Congratulations! You passed!'
-            : '❌ You need ${totalQuestions}/${totalQuestions}. Review the material and try again.'}
+            : `❌ You need ${totalQuestions}/${totalQuestions}. Review the material and try again.`}
             </div>
     `;
 

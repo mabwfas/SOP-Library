@@ -112,51 +112,57 @@
         if (!originalShowResults) return;
 
         window.showResults = function () {
+            // ALWAYS stop the timer first — before anything that might error
+            hideTimer();
+
             // Calculate time taken
             const timeTaken = window._quizStartTime
                 ? Math.round((Date.now() - window._quizStartTime) / 1000)
                 : 0;
 
-            // Get score from current state
-            const quiz = window.currentQuiz;
-            const userAnswers = window.userAnswers || [];
-            const currentTask = window.currentTask;
-            const trainingTasks = window.trainingTasks || [];
-            const totalQuestions = currentTask === 9 ? 20 : 10;
+            try {
+                // Get score from current state
+                const quiz = window.currentQuiz;
+                const userAnswers = window.userAnswers || [];
+                const currentTask = window.currentTask;
+                const trainingTasks = window.trainingTasks || [];
+                const totalQuestions = quiz ? quiz.length : 10;
 
-            let correct = 0;
-            if (quiz) {
-                quiz.forEach((q, idx) => {
-                    if (userAnswers[idx] === q.c) correct++;
+                let correct = 0;
+                if (quiz) {
+                    quiz.forEach((q, idx) => {
+                        if (userAnswers[idx] === q.c) correct++;
+                    });
+                }
+
+                const passed = correct === totalQuestions;
+                const taskId = trainingTasks[currentTask]?.id || (currentTask + 1);
+
+                // Save to TrainingCore
+                const result = window.TrainingCore.saveQuizResult(moduleId, taskId, {
+                    score: correct,
+                    total: totalQuestions,
+                    passed: passed,
+                    timeTaken: timeTaken
                 });
+
+                // Store for display
+                window._lastQuizResult = {
+                    ...result,
+                    moduleId,
+                    taskId
+                };
+
+                // Call original
+                originalShowResults.call(this);
+
+                // Enhance results display
+                setTimeout(() => enhanceResultsDisplay(result, moduleId, taskId), 100);
+            } catch (err) {
+                console.error('[TrainingEnhancement] showResults error:', err);
+                // Still call original so the quiz results show
+                originalShowResults.call(this);
             }
-
-            const passed = correct === totalQuestions;
-            const taskId = trainingTasks[currentTask]?.id || (currentTask + 1);
-
-            // Save to TrainingCore
-            const result = window.TrainingCore.saveQuizResult(moduleId, taskId, {
-                score: correct,
-                total: totalQuestions,
-                passed: passed,
-                timeTaken: timeTaken
-            });
-
-            // Store for display
-            window._lastQuizResult = {
-                ...result,
-                moduleId,
-                taskId
-            };
-
-            // Hide timer
-            hideTimer();
-
-            // Call original
-            originalShowResults.call(this);
-
-            // Enhance results display
-            setTimeout(() => enhanceResultsDisplay(result, moduleId, taskId), 100);
         };
     }
 

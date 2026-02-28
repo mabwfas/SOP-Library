@@ -156,6 +156,8 @@ function skipTask(taskIndex) {
     updateProgressBar();
     if (taskIndex + 1 < tasks.length) {
         openTask(taskIndex + 1);
+    } else {
+        showCertificate();
     }
 }
 

@@ -62,14 +62,15 @@ function renderTasksList() {
 
 // Update Progress Bar
 function updateProgressBar() {
-    const percent = progress.completedTasks.length * 10;
+    const totalTasks = trainingTasks.length;
+    const percent = Math.round((progress.completedTasks.length / totalTasks) * 100);
     document.getElementById('progressPercent').textContent = `${percent}%`;
     document.getElementById('progressFill').style.width = `${percent}%`;
 
     // Show/hide certificate button based on completion
     const certBtn = document.getElementById('certificateBtn');
     if (certBtn) {
-        certBtn.style.display = progress.completedTasks.length === 10 ? 'block' : 'none';
+        certBtn.style.display = progress.completedTasks.length === totalTasks ? 'block' : 'none';
     }
 }
 
@@ -171,6 +172,8 @@ function skipTask(taskIndex) {
     updateProgressBar();
     if (taskIndex + 1 < trainingTasks.length) {
         openTask(taskIndex + 1);
+    } else {
+        showCertificate();
     }
 }
 
@@ -288,7 +291,7 @@ function showResults() {
             <div class="results-message">
                 ${passed
             ? '🎉 Congratulations! You passed!'
-            : '❌ You need ${totalQuestions}/${totalQuestions}. Review the material and try again.'}
+            : `❌ You need ${totalQuestions}/${totalQuestions}. Review the material and try again.`}
             </div>
     `;
 

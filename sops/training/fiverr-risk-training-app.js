@@ -148,6 +148,8 @@ function skipTask(taskIndex) {
     updateProgressBar();
     if (taskIndex + 1 < trainingTasks.length) {
         openTask(taskIndex + 1);
+    } else {
+        showCertificate();
     }
 }
 

@@ -150,6 +150,54 @@ const trainingTasks = [
     },
     {
         id: 14,
+        title: "Store Design Fundamentals",
+        description: "Color, Typography & Visual Hierarchy",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Estimated Time: 60-90 minutes",
+            "🎨 Master: Color Theory for E-Commerce",
+            "🔤 Learn: Typography & Font Pairing Rules",
+            "👁️ Visual Hierarchy: F-Pattern & Z-Pattern"
+        ]
+    },
+    {
+        id: 15,
+        title: "Custom Sections & Page Design",
+        description: "Building Sections from Scratch",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Estimated Time: 90-120 minutes",
+            "🧱 Build: Custom Sections with JSON Schemas",
+            "🏠 Design: Complete Homepage Layout",
+            "📦 Master: Product Page Design Elements"
+        ]
+    },
+    {
+        id: 16,
+        title: "Full Store Customization",
+        description: "Header, Footer, Mobile & Accessibility",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Estimated Time: 90-120 minutes",
+            "📱 Master: Mobile-First Design Patterns",
+            "♿ Accessibility: WCAG Compliance",
+            "🎯 Conversion-Focused Design Patterns"
+        ]
+    },
+    {
+        id: 17,
+        title: "CRO, Psychology & Copywriting",
+        description: "The Science of Making People Buy",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Estimated Time: 90-120 minutes",
+            "🧠 Master: Cialdini's 6 Persuasion Principles",
+            "✍️ Learn: Copywriting Frameworks (AIDA, PAS)",
+            "📈 Apply: CRO Audit Checklist"
+        ]
+    },
+    {
+        id: 18,
         title: "Career Growth & Final Exam",
         description: "Junior to Expert Path",
         contentFirst: true,
@@ -5516,8 +5564,8 @@ git push</code></pre>
 </div>
 `;
 
-const task14Content = `
-<h2>📚 TASK 14: CAREER GROWTH &amp; FINAL EXAM - Your Path to Senior Developer</h2>
+const task18Content = `
+<h2>📚 TASK 18: CAREER GROWTH &amp; FINAL EXAM - Your Path to Senior Developer</h2>
 
 <div class="content-section">
     <h3>📊 Developer KPIs — How We Measure Your Performance</h3>
@@ -6150,7 +6198,7 @@ const task13Quiz = [
     { q: "The AI-augmented developer's career advantage is:", o: ["Faster typing speed through AI autocomplete — this ensures compliance with professional standards and prevents cascading issues downstream", "Being able to write code without understanding the fundamentals", "Knowing more AI tools than other developers — this reflects the standard operating procedure most organizations follow", "Leveraging AI for repetitive tasks while applying human judgment for architecture, UX, and business decisions"], c: 3 }
 ];
 
-const task14Quiz = [
+const task18Quiz = [
     { q: "Shopify ecosystem: Understanding both Liquid AND React (Hydrogen) positions developers for:", o: ["Theme development jobs exclusively — this reflects the standard operating procedure most organizations follow", "Headless commerce projects exclusively — this reflects the standard operating procedure most organizations follow", "The full Shopify career spectrum — theme + headless + app development across the entire platform", "Becoming a Shopify partner exclusively — this reflects the standard operating procedure most organizations follow"], c: 2 },
     { q: "A Shopify expert's code review reveals 4 accessibility violations in your theme. This means:", o: ["Accessibility has minimal impact on e-commerce stores", "These are minor issues to address in the next sprint — experienced professionals recognize this as the most reliable path for maintaining quality control", "Fix them — accessibility failures mean 15-20% of users can't fully use the store, impacting both ethics and revenue", "Government websites need this, but e-commerce stores don't"], c: 2 },
     { q: "Career growth: Specializing in Shopify speed optimization is valuable because:", o: ["Speed is a niche concern with limited demand — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Every Shopify store needs it — performance specialists command premium rates because speed directly impacts revenue", "Enterprise stores are the primarily ones that care about load times", "Speed optimization will be fully automated by AI within 2 years"], c: 1 },
@@ -6168,6 +6216,2791 @@ const task14Quiz = [
     { q: "The #1 thing separating a $50/hour developer from a $200/hour developer:", o: ["Years of experience in the industry — implementing this correctly requires understanding the full context of how each element interacts", "Business impact awareness — understanding that every line of code affects revenue, conversions, and customer experience", "Number of Shopify certifications earned — this reflects the standard operating procedure most organizations follow", "Mastery of the latest frameworks and tools — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
+
+
+// =============================================================================
+// TASKS 14-16: STORE DESIGN & CUSTOMIZATION (NEW)
+// =============================================================================
+
+// Shopify Developer Training - Design & Customization Tasks (14, 15, 16)
+
+
+const task14Content = `
+<h2>🎨 TASK 14: STORE DESIGN FUNDAMENTALS — Color, Typography & Visual Hierarchy</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F472B6; margin-top: 0;">🚀 Why Design Is YOUR Responsibility</h3>
+    <p>As a Shopify developer at Digital Heroes, you are NOT just writing code. You are building <strong>revenue machines</strong>. And design is the single biggest factor that determines whether a visitor stays or bounces.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F472B6;">📊 The Data That Should Scare You:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li><strong>94%</strong> of first impressions are design-related (not content, not price — DESIGN)</li>
+            <li><strong>75%</strong> of users judge a company's credibility based on visual design alone</li>
+            <li><strong>38%</strong> of visitors will stop engaging if the layout or content is unattractive</li>
+            <li><strong>88%</strong> of online consumers are less likely to return after a bad experience</li>
+            <li>It takes <strong>0.05 seconds</strong> (50 milliseconds) for users to form an opinion about your site</li>
+        </ul>
+    </div>
+
+    <div class="warning-box">
+        <strong>⚠️ The DH Standard:</strong><br>
+        Every store we deliver must look like it was designed by a premium agency — because it WAS. If a client could have done it themselves with the Shopify customizer, we have failed. Our stores must feel <strong>custom, polished, and conversion-focused</strong> from the first pixel.
+    </div>
+</div>
+
+<!-- COLOR THEORY FOR E-COMMERCE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🎨 Color Theory for E-Commerce</h3>
+    <p>Color is not decoration — it is a <strong>psychological weapon</strong>. Every color triggers emotional responses that directly influence buying decisions. Understanding color theory is not optional for a DH developer.</p>
+
+    <h4 style="color: #93C5FD;">Psychology of Colors in E-Commerce</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Color</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Emotion / Association</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Best For</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example Brands</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">&#9632;</span> <strong>Red</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Urgency, excitement, passion, energy</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sale buttons, clearance, food & beverage, impulse buys</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Coca-Cola, Netflix, YouTube</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><span style="color: #3B82F6;">&#9632;</span> <strong>Blue</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Trust, security, professionalism, calm</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tech, finance, healthcare, B2B, supplements</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PayPal, Samsung, Facebook</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><span style="color: #22C55E;">&#9632;</span> <strong>Green</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Nature, health, growth, money, sustainability</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Organic products, wellness, eco-friendly brands</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Whole Foods, Shopify, Starbucks</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><span style="color: #F59E0B;">&#9632;</span> <strong>Orange</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Warmth, confidence, friendliness, action</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CTAs, Add to Cart buttons, kids' products</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Amazon (Buy button), Etsy, Fanta</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><span style="color: #8B5CF6;">&#9632;</span> <strong>Purple</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Luxury, creativity, royalty, spirituality</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Premium brands, beauty, creative services</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cadbury, Hallmark, Twitch</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><span style="color: #111827;">&#9632;</span> <strong>Black</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Elegance, power, sophistication, exclusivity</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Luxury fashion, high-end products, minimalist brands</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Chanel, Nike, Apple</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><span style="color: #F472B6;">&#9632;</span> <strong>Pink</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Femininity, romance, playfulness, youth</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Beauty, skincare, women-focused brands</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Victoria's Secret, Barbie, Glossier</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #93C5FD;">Building a Color Palette for Any Shopify Store</h4>
+    <p>Every store needs exactly <strong>5 color roles</strong>. This is non-negotiable:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Role</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Usage %</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example (Luxury Skincare)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Primary</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand identity color — header, footer, key elements</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">60%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>#1A1A2E</code> (Deep Navy)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Accent</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Supporting brand color — highlights, hover states</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">10%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>#C9A96E</code> (Warm Gold)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Neutral</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Backgrounds, borders, subtle UI</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">25%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>#F5F5F0</code> (Warm White)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CTA</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Buttons that SELL — Add to Cart, Shop Now, Buy</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>#D4A574</code> (Rose Gold CTA)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Text</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Body text, headings</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">N/A</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>#333333</code> (Dark Gray — never pure black)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <strong>⚠️ CRITICAL COLOR RULES:</strong>
+        <ul>
+            <li><strong>Never use pure black (#000000) for body text.</strong> Use #333333 or #1A1A1A — pure black creates harsh contrast that causes eye strain.</li>
+            <li><strong>CTA color must be DIFFERENT from the primary brand color.</strong> If the brand is blue, the Add to Cart button cannot be blue — it blends in. Use orange, green, or a contrasting color.</li>
+            <li><strong>Never use more than 3-4 colors maximum.</strong> More colors = amateur, chaotic look.</li>
+            <li><strong>Test colors on MOBILE.</strong> Colors render differently on phone screens vs monitors.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- DH STANDARD COLOR SYSTEM -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🏢 DH Standard Color System for Client Projects</h3>
+    <p>When a client does NOT have existing brand guidelines, or their brand colors are poorly defined, Digital Heroes uses a systematic approach to create a professional palette:</p>
+
+    <h4 style="color: #C4B5FD;">Step 1: Ask the Client These 3 Questions</h4>
+    <ol>
+        <li><strong>"What 3 words describe your brand?"</strong> (e.g., luxurious, natural, bold)</li>
+        <li><strong>"Who is your target customer?"</strong> (age, gender, lifestyle)</li>
+        <li><strong>"Name 2-3 competitor brands you admire visually."</strong></li>
+    </ol>
+
+    <h4 style="color: #C4B5FD;">Step 2: Apply the DH Palette Formula</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand Personality</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Primary</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Accent</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CTA</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Background</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Luxury / Premium</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#1A1A2E or #0D0D0D</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#C9A96E (Gold)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#C9A96E or #FFFFFF</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#FAFAFA</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Natural / Organic</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#2D5016 (Forest)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#A8C686 (Sage)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#D4772C (Warm Amber)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#F5F1EB (Warm Cream)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Modern / Tech</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#0F172A (Slate)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#3B82F6 (Bright Blue)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#22C55E (Green)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#FFFFFF</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Playful / Youth</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#7C3AED (Violet)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#F472B6 (Pink)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#FBBF24 (Yellow)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#FFF7ED (Warm White)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Bold / Athletic</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#111111 (Near Black)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#EF4444 (Red)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#F97316 (Orange)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#FAFAFA</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">💡 Pro Tip — The Contrast Ratio Test:</strong>
+        <p style="margin: 10px 0 0 0;">Every color combination must pass <strong>WCAG AA contrast ratio (4.5:1 for text, 3:1 for large text)</strong>. Use <code>webaim.org/resources/contrastchecker</code> to verify. If a client insists on light gray text on white background, show them the data: low contrast = unreadable = lost sales.</p>
+    </div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔤 Typography — The Silent Salesperson</h3>
+    <p>Typography accounts for <strong>95% of web design</strong>. The right font pairing makes a store feel premium. The wrong one makes it feel like a scam site from 2005.</p>
+
+    <h4 style="color: #6EE7B7;">Font Pairing Rules (DH Standard)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(16, 185, 129, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rule</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Max 2 fonts per store</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">One for headings, one for body. NEVER use 3+ fonts — it looks chaotic and hurts load speed.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Contrast in style</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pair a serif heading with a sans-serif body (or vice versa). Never pair two similar fonts.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Body font: 16px minimum</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Anything below 16px is unreadable on mobile. Our standard is 16-18px body text.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Line height: 1.5-1.7</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">For body text. Headings can use 1.1-1.3. Tight line height = wall of text = no one reads.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Letter spacing for headings</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Uppercase headings need <code>letter-spacing: 0.05em-0.1em</code>. Without it, letters feel cramped.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #6EE7B7;">DH Approved Font Pairings</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(16, 185, 129, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand Style</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Heading Font</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Body Font</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Luxury</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Playfair Display</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Assistant / Work Sans</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Classic serif + clean sans-serif. Timeless.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Modern</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Inter / Poppins</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Inter / DM Sans</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">All sans-serif for tech/modern feel.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Organic / Natural</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cormorant Garamond</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lato / Nunito Sans</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Elegant serif + soft, rounded sans-serif.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Bold / Athletic</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Oswald / Bebas Neue</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Source Sans Pro</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Condensed heading + readable body.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Minimalist</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Helvetica Neue / Arial</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Helvetica Neue / Arial</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">System fonts = zero load time. Use for speed-critical stores.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <strong>⚠️ Google Fonts vs Shopify Fonts — SPEED WARNING:</strong>
+        <ul>
+            <li><strong>Shopify's built-in font library</strong> is loaded from Shopify CDN — fast and reliable. Always prefer these.</li>
+            <li><strong>Google Fonts</strong> add an external HTTP request that can add 200-500ms to load time. If you MUST use Google Fonts, self-host them using <code>@font-face</code> declarations in <code>base.css</code>.</li>
+            <li><strong>Never load more than 2 font weights per font.</strong> e.g., Regular (400) + Bold (700) for body. Adding Light, Medium, SemiBold, ExtraBold kills page speed.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- SPACING & LAYOUT -->
+<div class="content-section">
+    <h3>📐 Spacing & Layout — The 8px Grid System</h3>
+    <p>Spacing is what separates amateur design from professional design. Inconsistent spacing is the #1 sign of a rushed build. At Digital Heroes, we use the <strong>8px grid system</strong> universally.</p>
+
+    <h4>The 8px Grid System</h4>
+    <p>All spacing values must be multiples of 8. This creates a mathematical rhythm that the human eye subconsciously perceives as "clean" and "professional".</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Token</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Value</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-xs</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tight gaps — icon to text, badge padding</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-sm</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">8px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Small gaps — between form fields, list items</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-md</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">16px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standard padding — card padding, element gaps</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-lg</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">24px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Section internal padding</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-xl</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">32px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Between content blocks</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-2xl</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">48px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Section top/bottom padding (desktop)</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-3xl</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">64px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Major section separators</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>--space-4xl</code></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">80px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hero section padding, large separators</td></tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">💡 Whitespace Is NOT Wasted Space:</strong>
+        <p style="margin: 10px 0 0 0;">Clients will often say "there is too much empty space — fill it with something." Your job is to educate them: whitespace <strong>increases readability by 20%</strong>, makes the brand look premium, and directs the eye to CTAs. Apple's entire brand identity is built on whitespace. Show the client the Apple website. They will understand.</p>
+    </div>
+
+    <h4>Section Padding Standards (DH Rule)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Element</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Desktop</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Section vertical padding</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">60-80px top/bottom</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">40-48px top/bottom</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Container max-width</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1200px (standard) / 1400px (wide)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">100% with 16px side padding</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Card internal padding</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">24-32px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">16-24px</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Grid gap (product cards)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">24-32px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">16px</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- VISUAL HIERARCHY -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">👁️ Visual Hierarchy — Directing the Eye to the Sale</h3>
+    <p>Visual hierarchy is the art of controlling <strong>what the visitor looks at first, second, and third</strong>. Without it, your page is visual noise. With it, every element leads toward the CTA.</p>
+
+    <h4 style="color: #FCD34D;">The F-Pattern (Content-Heavy Pages)</h4>
+    <p>Eye-tracking studies show users scan content-heavy pages in an <strong>F-shaped pattern</strong>:</p>
+    <ol>
+        <li><strong>First scan:</strong> Horizontal across the top (announcement bar, navigation, hero headline)</li>
+        <li><strong>Second scan:</strong> Slightly lower horizontal sweep (subheadline, trust bar)</li>
+        <li><strong>Third scan:</strong> Vertical sweep down the left side (scanning for interesting elements)</li>
+    </ol>
+    <p><strong>Application:</strong> Place your most critical content (headlines, CTAs, trust badges) along these scan paths. Use it for collection pages, blog pages, and content-heavy product descriptions.</p>
+
+    <h4 style="color: #FCD34D;">The Z-Pattern (Landing Pages & Homepages)</h4>
+    <p>For pages with minimal text and strong visuals, eyes follow a <strong>Z-shaped pattern</strong>:</p>
+    <ol>
+        <li><strong>Top-left:</strong> Logo / brand name (establishes identity)</li>
+        <li><strong>Top-right:</strong> Navigation / cart icon / search</li>
+        <li><strong>Diagonal:</strong> Sweeps across hero image or main visual</li>
+        <li><strong>Bottom-left to bottom-right:</strong> CTA button or key message</li>
+    </ol>
+    <p><strong>Application:</strong> Place your Shop Now button at the natural ending point of the Z. This is why hero sections with left-aligned text and a right-side CTA convert well.</p>
+
+    <h4 style="color: #FCD34D;">Above-the-Fold Content (The 3-Second Rule)</h4>
+    <div class="warning-box">
+        <strong>⚠️ THE 3-SECOND RULE:</strong><br>
+        A visitor must understand <strong>WHAT you sell, WHO it is for, and WHY they should buy</strong> within 3 seconds of landing on the page — WITHOUT scrolling. Everything above the fold must answer these 3 questions instantly. If it does not, the visitor bounces.
+    </div>
+
+    <p><strong>Above-the-fold checklist for every DH store:</strong></p>
+    <ul>
+        <li>&#9745; Announcement bar with current offer or free shipping threshold</li>
+        <li>&#9745; Clean navigation with max 6-7 top-level items</li>
+        <li>&#9745; Hero headline (7 words or fewer) stating the value proposition</li>
+        <li>&#9745; Hero subheadline explaining the benefit in one sentence</li>
+        <li>&#9745; One prominent CTA button in contrasting color</li>
+        <li>&#9745; High-quality hero image or video showing product in context</li>
+        <li>&#9745; Trust indicators visible (star rating, customer count, "as seen in")</li>
+    </ul>
+</div>
+
+<!-- BRAND IDENTITY INTEGRATION -->
+<div class="content-section">
+    <h3>🏷️ Brand Identity Integration — From Client Brief to Shopify Store</h3>
+    <p>Most clients come to us with some version of brand guidelines — ranging from a full brand book to just "I like blue and I have this logo." Your job is to systematically translate whatever they give you into a cohesive Shopify store.</p>
+
+    <h4>The DH Brand Translation Process</h4>
+    <ol>
+        <li><strong>Extract Brand Colors:</strong> Pull the hex codes from their logo using a color picker (Chrome DevTools eyedropper or coolors.co). Create primary, accent, neutral, CTA, and text colors.</li>
+        <li><strong>Match Typography:</strong> If they have brand fonts, check Shopify's font library first. If not available, find the closest match. If they do NOT have brand fonts, apply DH Approved Font Pairings from above.</li>
+        <li><strong>Define Visual Tone:</strong> Is the brand playful or serious? Minimal or rich? This determines spacing density, border-radius values, and animation style.</li>
+        <li><strong>Create the Design Token File:</strong> Set up CSS variables BEFORE building anything. This ensures every element is consistent from day one.</li>
+    </ol>
+
+    <h4>Border Radius Guidelines (Often Overlooked)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand Style</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Border Radius</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Applies To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sharp / Professional</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">0px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Buttons, cards, images — everything square</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Modern / Clean</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4-8px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Slightly rounded — most common. Buttons 8px, cards 12px.</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Soft / Friendly</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">12-16px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Noticeably rounded. Good for kids, pets, wellness brands.</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pill / Playful</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">999px</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fully rounded buttons. Used sparingly — badges, tags, pill buttons.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- DESIGN TOKEN SYSTEM -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🔧 Design Token System — CSS Variables for Consistency</h3>
+    <p>Before you touch a SINGLE section in the theme customizer, set up your design tokens. This is the foundation that ensures every element across the store is consistent. Add this to your theme's <code>base.css</code> or <code>custom.css</code>:</p>
+
+    <pre><code>/* ============================================
+   DH DESIGN TOKENS — Set these FIRST
+   ============================================ */
+:root {
+  /* Brand Colors */
+  --color-primary: #1A1A2E;
+  --color-accent: #C9A96E;
+  --color-neutral: #F5F5F0;
+  --color-cta: #D4A574;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-border: #E5E5E5;
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #FAFAF8;
+  --color-success: #22C55E;
+  --color-error: #EF4444;
+  --color-sale: #EF4444;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Assistant', sans-serif;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+  --font-size-h1: clamp(32px, 5vw, 56px);
+  --font-size-h2: clamp(24px, 4vw, 40px);
+  --font-size-h3: clamp(20px, 3vw, 28px);
+  --line-height-body: 1.6;
+  --line-height-heading: 1.2;
+  --letter-spacing-heading: 0.02em;
+
+  /* Spacing (8px grid) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-wide: 1400px;
+  --grid-gap: 24px;
+
+  /* Borders */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --border-width: 1px;
+  --border-color: var(--color-border);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* Usage Examples */
+.section-padding {
+  padding: var(--space-3xl) 0;
+}
+@media (max-width: 749px) {
+  .section-padding {
+    padding: var(--space-2xl) 0;
+  }
+}
+.page-width {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+.btn-primary {
+  background: var(--color-cta);
+  color: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-xl);
+  transition: opacity var(--transition-fast);
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}</code></pre>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">💡 Shopify Theme Customizer Integration:</strong>
+        <p style="margin: 10px 0 0 0;">Shopify Dawn theme already uses CSS variables defined in <code>settings_schema.json</code>. The colors from the theme customizer are output as variables like <code>--color-base-text</code>, <code>--color-base-background-1</code>, etc. Your design tokens should <strong>extend</strong> these, not conflict with them. Override specific Dawn variables in your custom CSS when needed: <code>:root { --color-base-accent-1: var(--color-cta); }</code></p>
+    </div>
+</div>
+
+<!-- PRACTICAL EXAMPLES -->
+<div class="content-section">
+    <h3>🛠️ Practical Application — Theme Customizer Design Setup</h3>
+    <p>Here is the exact workflow for applying design fundamentals to a new Shopify store using the theme customizer:</p>
+
+    <h4>Step-by-Step: Setting Up Design in Shopify Admin</h4>
+    <ol>
+        <li><strong>Theme Settings > Colors:</strong> Set all color scheme values. Shopify Dawn supports up to 5 color schemes — use Scheme 1 for primary sections, Scheme 2 for alternate/contrast sections, Scheme 3 for accent highlights.</li>
+        <li><strong>Theme Settings > Typography:</strong> Select heading font and body font. Set heading scale (100-150%) and body scale (100-130%). Apply letter spacing to headings.</li>
+        <li><strong>Theme Settings > Buttons:</strong> Set border radius, shadow, and hover behavior. CTA buttons should be solid fill. Secondary buttons should be outline style.</li>
+        <li><strong>Theme Settings > Layout:</strong> Set max page width (1200px standard), section spacing, and grid gap.</li>
+        <li><strong>Add Custom CSS:</strong> Add your design token overrides in Theme Settings > Custom CSS for global styles that the customizer does not cover.</li>
+    </ol>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #22C55E; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">✅ TASK 14 KEY TAKEAWAYS:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>94% of first impressions are design-related — design IS your job, not just code.</li>
+            <li>Every store needs exactly 5 color roles: Primary, Accent, Neutral, CTA, Text.</li>
+            <li>CTA color MUST contrast with the primary brand color — never match.</li>
+            <li>Max 2 fonts, 2 weights each. Body text minimum 16px. Line height 1.5-1.7.</li>
+            <li>All spacing follows the 8px grid system. No random pixel values.</li>
+            <li>Set up CSS design tokens BEFORE building any sections.</li>
+            <li>F-pattern for content pages, Z-pattern for landing pages.</li>
+            <li>Above-the-fold must answer WHAT, WHO, WHY in 3 seconds.</li>
+        </ul>
+    </div>
+</div>
+`;
+
+
+const task15Content = `
+<h2>🏗️ TASK 15: CUSTOM SECTION BUILDING & PAGE DESIGN</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Why Custom Sections Are Your Superpower</h3>
+    <p>Any junior developer can drag and drop sections in the Shopify theme customizer. But a <strong>Digital Heroes developer</strong> can build <strong>custom sections from scratch</strong> that do exactly what the client needs — no app required, no bloat, no speed penalty.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">💰 The Business Case:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Each third-party app adds <strong>100-500ms</strong> to page load time and costs $5-$50/month</li>
+            <li>A custom section that replaces an app saves the client money AND speeds up the store</li>
+            <li>Clients pay <strong>premium rates</strong> for custom sections because they look unique and perform better</li>
+            <li>Custom sections are the #1 skill that separates a $15/hour freelancer from a $50+/hour agency developer</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ANATOMY OF A SECTION -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🧬 Anatomy of a Shopify Section</h3>
+    <p>Every Shopify section file lives in <code>sections/</code> directory and has <strong>4 parts</strong> in a single <code>.liquid</code> file:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Part</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tag</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>1. Liquid/HTML</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">(top of file)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">The markup and Liquid logic that renders on the page</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>2. CSS</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>&lt;style&gt;</code></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scoped styles for this section only</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>3. JavaScript</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>&lt;script&gt;</code></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Interactive behavior (optional — only add if needed)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>4. Schema JSON</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><code>{% schema %}</code></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Defines settings that appear in the theme customizer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #C4B5FD;">Complete Section Template (Copy This Starting Point)</h4>
+    <pre><code>&lt;!-- sections/custom-hero-banner.liquid --&gt;
+
+{%- comment -%} SECTION: Custom Hero Banner {%- endcomment -%}
+
+&lt;div
+  class="custom-hero"
+  id="Section-{{ section.id }}"
+  style="
+    --hero-bg: {{ section.settings.background_color }};
+    --hero-text: {{ section.settings.text_color }};
+    --hero-height: {{ section.settings.height }}vh;
+  "
+&gt;
+  &lt;div class="custom-hero__container page-width"&gt;
+    {%- if section.settings.heading != blank -%}
+      &lt;h2 class="custom-hero__heading h1"&gt;
+        {{ section.settings.heading }}
+      &lt;/h2&gt;
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      &lt;p class="custom-hero__subheading"&gt;
+        {{ section.settings.subheading }}
+      &lt;/p&gt;
+    {%- endif -%}
+
+    {%- if section.settings.button_text != blank -%}
+      &lt;a
+        href="{{ section.settings.button_link }}"
+        class="button button--primary"
+      &gt;
+        {{ section.settings.button_text }}
+      &lt;/a&gt;
+    {%- endif -%}
+  &lt;/div&gt;
+
+  {%- if section.settings.image != blank -%}
+    &lt;div class="custom-hero__image"&gt;
+      {{ section.settings.image
+        | image_url: width: 1920
+        | image_tag:
+          loading: 'lazy',
+          widths: '375, 750, 1100, 1500, 1920',
+          sizes: '100vw',
+          class: 'custom-hero__img'
+      }}
+    &lt;/div&gt;
+  {%- endif -%}
+&lt;/div&gt;
+
+&lt;style&gt;
+  #Section-{{ section.id }} {
+    position: relative;
+    min-height: var(--hero-height, 60vh);
+    display: flex;
+    align-items: center;
+    background-color: var(--hero-bg, #1a1a2e);
+    color: var(--hero-text, #ffffff);
+    overflow: hidden;
+  }
+  #Section-{{ section.id }} .custom-hero__container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: var(--space-2xl) var(--space-md);
+  }
+  #Section-{{ section.id }} .custom-hero__heading {
+    font-size: var(--font-size-h1);
+    margin-bottom: var(--space-md);
+  }
+  #Section-{{ section.id }} .custom-hero__subheading {
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto var(--space-lg);
+    opacity: 0.9;
+  }
+  #Section-{{ section.id }} .custom-hero__image {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  #Section-{{ section.id }} .custom-hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+&lt;/style&gt;
+
+{% schema %}
+{
+  "name": "Custom Hero Banner",
+  "tag": "section",
+  "class": "section-hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Welcome to Our Store"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Discover our premium collection"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#1a1a2e"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "label": "Section Height",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero Banner"
+    }
+  ]
+}
+{% endschema %}</code></pre>
+</div>
+
+<!-- JSON SCHEMA DEEP DIVE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📋 JSON Schema Deep Dive — Every Input Type</h3>
+    <p>The schema defines what the client sees in the theme customizer. Mastering every input type means you can build ANY customizer UI without touching code later.</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(16, 185, 129, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Type</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Returns</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Common Use</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>text</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">String</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Headlines, button text, short text</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Heading, CTA label</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>textarea</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">String (multiline)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Descriptions, paragraphs</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Section description</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>richtext</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">HTML string</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Formatted text with bold, italic, links</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">About Us text</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>html</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Raw HTML string</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Embed codes, custom HTML snippets</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Embed a widget</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>image_picker</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Image object</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Hero images, icons, logos, backgrounds</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Section background</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>video_url</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">URL string (YouTube/Vimeo)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Video hero, product video, testimonials</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Hero background video</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>color</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Hex color string</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Background colors, text colors, overlays</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Section background</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>range</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Number</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Opacity, height, column count, speed</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Section height in vh</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>select</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">String (selected value)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Layout options, alignment, style choices</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Text alignment picker</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>checkbox</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Boolean</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Show/hide elements, enable features</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Show overlay toggle</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>url</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">URL string</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Button links, redirects</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">CTA destination</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>collection</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Collection object</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Featured collection picker</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Featured products grid</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>product</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Product object</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Featured product, product spotlight</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Hero featured product</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>blog</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Blog object</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Blog post feed on homepage</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Latest posts section</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>page</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Page object</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Embed page content in section</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">FAQ content from a page</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>font_picker</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Font object</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Section-specific font override</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Custom heading font</td></tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <strong>⚠️ COMMON SCHEMA MISTAKES:</strong>
+        <ul>
+            <li><strong>Forgetting the "default" value</strong> — Without defaults, sections appear blank when first added. ALWAYS provide sensible defaults for text, colors, and ranges.</li>
+            <li><strong>Using "html" type when "richtext" works</strong> — richtext is safer (sanitized) and easier for clients. Only use html for embed codes.</li>
+            <li><strong>Not adding "info" descriptions</strong> — Every setting should have an <code>"info": "Recommended: 1920x800px"</code> to guide the client.</li>
+            <li><strong>Missing presets</strong> — Without a <code>"presets"</code> array, the section cannot be added from the customizer. Only omit presets for sections that should only appear in specific templates.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- BLOCK TYPES -->
+<div class="content-section">
+    <h3>🧱 Block Types — Repeatable Content Within Sections</h3>
+    <p>Blocks allow clients to add, remove, and reorder items within a section — like testimonial cards, feature icons, or FAQ items. This is what makes sections truly dynamic.</p>
+
+    <pre><code>&lt;!-- sections/custom-testimonials.liquid --&gt;
+
+&lt;div class="testimonials section-padding" id="Section-{{ section.id }}"&gt;
+  &lt;div class="page-width"&gt;
+    &lt;h2 class="testimonials__heading h2"&gt;
+      {{ section.settings.heading | default: "What Our Customers Say" }}
+    &lt;/h2&gt;
+
+    &lt;div class="testimonials__grid"&gt;
+      {%- for block in section.blocks -%}
+        &lt;div class="testimonial-card" {{ block.shopify_attributes }}&gt;
+          &lt;div class="testimonial-card__stars"&gt;
+            {%- for i in (1..block.settings.stars) -%}
+              &#9733;
+            {%- endfor -%}
+          &lt;/div&gt;
+          &lt;blockquote class="testimonial-card__quote"&gt;
+            {{ block.settings.quote }}
+          &lt;/blockquote&gt;
+          &lt;div class="testimonial-card__author"&gt;
+            {%- if block.settings.avatar != blank -%}
+              {{ block.settings.avatar
+                | image_url: width: 80
+                | image_tag: class: 'testimonial-card__avatar',
+                  loading: 'lazy', width: 40, height: 40
+              }}
+            {%- endif -%}
+            &lt;div&gt;
+              &lt;strong&gt;{{ block.settings.author }}&lt;/strong&gt;
+              {%- if block.settings.location != blank -%}
+                &lt;span&gt;{{ block.settings.location }}&lt;/span&gt;
+              {%- endif -%}
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      {%- endfor -%}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "section",
+  "class": "section-testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "What Our Customers Say"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "range",
+          "id": "stars",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Star Rating",
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Customer Quote",
+          "default": "This product changed my life! Highly recommended."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Customer Name",
+          "default": "Happy Customer"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location (optional)"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Customer Photo (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        { "type": "testimonial" },
+        { "type": "testimonial" },
+        { "type": "testimonial" }
+      ]
+    }
+  ]
+}
+{% endschema %}</code></pre>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">💡 Key Block Concepts:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li><code>block.shopify_attributes</code> — ALWAYS include this. It enables the customizer to highlight the block when clicked.</li>
+            <li><code>"limit": 6</code> — Set maximum blocks to prevent clients from adding 50 testimonials that break the layout.</li>
+            <li><strong>Presets with blocks</strong> — Pre-populate the section with sample blocks so it does not appear empty when first added.</li>
+            <li><strong>Multiple block types</strong> — A section can have different block types (e.g., "text_block", "image_block", "video_block") to create flexible layouts.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- BUILDING A COMPLETE HOMEPAGE -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🏠 Building a Complete Homepage — The DH Standard Layout</h3>
+    <p>Every DH homepage follows this proven structure. The order matters — it is designed based on conversion psychology and eye-tracking data:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(245, 158, 11, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Section</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Purpose</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Customizer Section Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Announcement Bar</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Current offer, free shipping threshold</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">announcement-bar</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Hero Banner</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Value proposition + primary CTA</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">image-banner / slideshow</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trust Bar</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Free shipping, easy returns, secure payment icons</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Custom section or multicolumn</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Featured Collection</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Bestsellers or hero products</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">featured-collection</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Brand Story / About</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Emotional connection with the brand</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">image-with-text</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">6</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Social Proof / Testimonials</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Build trust with real customer reviews</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Custom testimonials section</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">7</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Second Collection / Categories</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Browse by category or see more products</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">collection-list</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">8</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>"As Seen In" / Press Logos</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Authority and credibility</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Custom logo bar section</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">9</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Instagram / UGC Feed</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Social proof + visual appeal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Custom or app section</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">10</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Newsletter Signup</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Capture emails with incentive</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">newsletter</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">11</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>FAQ (optional)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Reduce pre-purchase anxiety</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">collapsible-content</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- PRODUCT PAGE DESIGN -->
+<div class="content-section">
+    <h3>🛒 Product Page Design Elements</h3>
+    <p>The product page is where money changes hands. Every element must be intentionally placed to reduce friction and increase confidence.</p>
+
+    <h4>DH Product Page Blueprint</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Element</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Implementation</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why It Converts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Media Gallery</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Thumbnails left/bottom, main image right. Support zoom, video, 3D.</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Customers who view 3+ images are 2x more likely to buy</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trust Strip</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Icons below Add to Cart: Free Shipping, Money-Back, Secure Checkout</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Reduces purchase anxiety at the decision point</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Product Tabs</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Description, Ingredients/Specs, Shipping, Reviews as tabs or accordions</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Organizes info without overwhelming the page</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Sticky Add to Cart</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Mobile: fixed bar at bottom. Desktop: sticky sidebar or top bar on scroll.</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">CTA is always visible no matter how far they scroll</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Related Products</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4-column grid below main content, powered by Shopify recommendations API</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Increases average order value by 10-30%</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Upsell Blocks</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Complete the look" or "Frequently bought together" above footer</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Cross-sell opportunity at peak purchase intent</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- METAFIELDS FOR DESIGN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F472B6; margin-top: 0;">🗄️ Metafields & Metaobjects for Dynamic Design</h3>
+    <p>Metafields allow you to add custom data to products, collections, and pages — then render that data dynamically in your sections. This is how you create truly flexible, client-manageable stores.</p>
+
+    <h4 style="color: #F9A8D4;">Common Design-Related Metafields</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(236, 72, 153, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metafield</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Namespace.Key</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Type</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Usage in Liquid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Product subtitle</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.subtitle</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">single_line_text</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ product.metafields.custom.subtitle }}</code></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Product badge</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.badge_text</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">single_line_text</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Renders "Bestseller", "New", "Limited"</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Size chart image</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.size_chart</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">file_reference</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Shows size guide in product tabs</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Ingredients list</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.ingredients</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">multi_line_text</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Dedicated tab content</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Collection banner</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>custom.banner_image</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">file_reference</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Custom hero per collection page</td></tr>
+        </tbody>
+    </table>
+
+    <pre><code>&lt;!-- Using metafields in a product card --&gt;
+{%- if product.metafields.custom.badge_text != blank -%}
+  &lt;span class="product-badge"
+    style="background: var(--color-sale); color: #fff;
+    padding: 4px 12px; font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.05em;
+    position: absolute; top: 12px; left: 12px;
+    border-radius: var(--radius-sm);"
+  &gt;
+    {{ product.metafields.custom.badge_text }}
+  &lt;/span&gt;
+{%- endif -%}</code></pre>
+</div>
+
+<!-- DAWN CUSTOMIZATION COOKBOOK -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">📖 Dawn Theme Customization Cookbook — Top 10 Client Requests</h3>
+    <p>These are the customizations clients request most frequently. Master these and you can handle 80% of all Shopify projects:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Request</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">File to Edit</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Approach</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom announcement bar</strong> with multiple rotating messages</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>sections/announcement-bar.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add blocks for multiple messages + JS rotation</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Product badges</strong> (Sale, New, Bestseller)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>snippets/card-product.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add metafield check + badge HTML/CSS</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trust badges below Add to Cart</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>sections/main-product.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Add custom block type "trust_badge" in schema</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Color swatches on collection page</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>snippets/card-product.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Loop product.options, render color circles</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom product tabs</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>sections/main-product.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Replace collapsible rows with tabbed UI + metafield content</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">6</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Sticky Add to Cart bar</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>sections/main-product.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">IntersectionObserver on ATC button + fixed bar</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">7</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom collection filters</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>sections/main-collection-product-grid.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Storefront Filtering API + custom UI</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">8</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Image hover swap on product cards</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>snippets/card-product.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Show second image on hover with CSS transition</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">9</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom FAQ accordion section</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>sections/custom-faq.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Blocks with question/answer + JS toggle</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">10</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mega menu with images</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>sections/header.liquid</code></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Override default dropdown with custom mega menu</td></tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #22C55E; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">✅ TASK 15 KEY TAKEAWAYS:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Every section has 4 parts: Liquid/HTML, CSS, JavaScript (optional), Schema JSON.</li>
+            <li>ALWAYS include <code>block.shopify_attributes</code> on block elements for customizer interactivity.</li>
+            <li>Set sensible defaults for ALL schema settings — never leave sections blank on first add.</li>
+            <li>Use blocks for repeatable content — testimonials, features, FAQs, team members.</li>
+            <li>Presets make sections available in the theme customizer "Add section" panel.</li>
+            <li>The DH homepage follows a 10-11 section standard layout for maximum conversion.</li>
+            <li>Use metafields and metaobjects for client-manageable dynamic content like badges, subtitles, and custom fields.</li>
+            <li>Master the Dawn Customization Cookbook — these 10 requests cover 80% of all client work.</li>
+        </ul>
+    </div>
+</div>
+`;
+
+
+const task16Content = `
+<h2>🏆 TASK 16: FULL STORE CUSTOMIZATION MASTERY</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🎯 The Final Piece — From Good to Launch-Ready</h3>
+    <p>You now understand design fundamentals (Task 14) and can build custom sections (Task 15). This task takes you to <strong>full-store mastery</strong> — the ability to take a blank Shopify theme and deliver a complete, polished, conversion-optimized store that is ready for real traffic and real money.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">💰 What This Task Is Worth:</strong>
+        <p style="margin: 10px 0 0 0;">A developer who can only build individual sections gets assigned piece-work. A developer who can <strong>own an entire store build from blank to launch</strong> becomes the lead on $3,000-$10,000+ projects. This is the difference between being a worker and being the go-to person who gets the high-value projects.</p>
+    </div>
+</div>
+
+<!-- HEADER & NAVIGATION DESIGN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🧭 Header & Navigation Design</h3>
+    <p>The header is the first thing every visitor interacts with. A confusing or cluttered header kills conversion before the visitor even sees your hero section.</p>
+
+    <h4 style="color: #93C5FD;">Navigation Rules (DH Standard)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rule</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Max 6-7 top-level items</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">More than 7 items creates decision paralysis. Use dropdowns for subcategories.</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mega menu for 20+ products</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Stores with many categories need mega menus with images, not plain dropdowns.</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Sticky header on scroll</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Header should stick to top on scroll but use a compact version (smaller logo, no announcement bar).</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Search must be prominent</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Users who search convert 2-3x higher. Search icon must be visible in header — not hidden.</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cart icon with count badge</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Always show item count. Visual reminder that they have items waiting.</td></tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #93C5FD;">Mega Menu Implementation Pattern</h4>
+    <pre><code>&lt;!-- Mega menu structure in header.liquid --&gt;
+&lt;nav class="mega-menu"&gt;
+  {%- for link in section.settings.menu.links -%}
+    &lt;div class="mega-menu__item"&gt;
+      &lt;a href="{{ link.url }}" class="mega-menu__link"&gt;
+        {{ link.title }}
+      &lt;/a&gt;
+
+      {%- if link.links.size &gt; 0 -%}
+        &lt;div class="mega-menu__dropdown"&gt;
+          &lt;div class="mega-menu__columns page-width"&gt;
+            {%- for childlink in link.links -%}
+              &lt;div class="mega-menu__column"&gt;
+                &lt;h4 class="mega-menu__column-title"&gt;
+                  {{ childlink.title }}
+                &lt;/h4&gt;
+                {%- if childlink.links.size &gt; 0 -%}
+                  &lt;ul class="mega-menu__sublinks"&gt;
+                    {%- for grandchild in childlink.links -%}
+                      &lt;li&gt;&lt;a href="{{ grandchild.url }}"&gt;
+                        {{ grandchild.title }}
+                      &lt;/a&gt;&lt;/li&gt;
+                    {%- endfor -%}
+                  &lt;/ul&gt;
+                {%- endif -%}
+              &lt;/div&gt;
+            {%- endfor -%}
+          &lt;/div&gt;
+        &lt;/div&gt;
+      {%- endif -%}
+    &lt;/div&gt;
+  {%- endfor -%}
+&lt;/nav&gt;
+
+&lt;style&gt;
+  .mega-menu__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-xl) 0;
+    z-index: 100;
+  }
+  .mega-menu__item:hover .mega-menu__dropdown {
+    display: block;
+  }
+  .mega-menu__columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+&lt;/style&gt;</code></pre>
+
+    <h4 style="color: #93C5FD;">Announcement Bar Best Practices</h4>
+    <ul>
+        <li>Keep text under 60 characters — it must be readable in 1 second</li>
+        <li>Use contrasting background color (dark bar on light theme, or accent color)</li>
+        <li>Include urgency: "Free shipping on orders over $50 — Today Only"</li>
+        <li>If rotating multiple messages, use 4-5 second intervals — faster is unreadable</li>
+        <li>Add a close/dismiss button on mobile — announcement bars eat precious vertical space</li>
+    </ul>
+</div>
+
+<!-- FOOTER DESIGN -->
+<div class="content-section">
+    <h3>🦶 Footer Design — The Overlooked Conversion Tool</h3>
+    <p>Many developers treat the footer as an afterthought. But <strong>30-40% of visitors scroll to the footer</strong> looking for trust signals, policies, and navigation they could not find above.</p>
+
+    <h4>DH Standard Footer Layout (4 Columns Desktop)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Column</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Contents</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Column 1: Brand</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Logo, 1-2 sentence brand description, social media icons</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Column 2: Quick Links</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shop All, Collections, About Us, Contact, Blog</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Column 3: Help & Info</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">FAQ, Shipping Policy, Returns, Privacy Policy, Terms of Service</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Column 4: Newsletter</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email signup with incentive ("Get 10% off"), email input + submit button</td></tr>
+        </tbody>
+    </table>
+    <p><strong>Below columns:</strong> Payment icons (Visa, Mastercard, PayPal, Shop Pay, Apple Pay, Google Pay) + Copyright text.</p>
+
+    <div class="warning-box">
+        <strong>⚠️ FOOTER MUST-HAVES (Non-Negotiable):</strong>
+        <ul>
+            <li>Privacy Policy link — <strong>legally required</strong> in most jurisdictions</li>
+            <li>Terms of Service link — required for payment processors</li>
+            <li>Payment icons — visual trust signal that directly impacts checkout conversion</li>
+            <li>Contact information — email at minimum, phone number if the client has one</li>
+        </ul>
+    </div>
+</div>
+
+<!-- MOBILE-FIRST DESIGN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F472B6; margin-top: 0;">📱 Mobile-First Design — Where the Money Is</h3>
+    <p><strong>70-80% of Shopify traffic is mobile.</strong> If your store looks perfect on desktop but mediocre on mobile, you have failed 80% of your visitors. At DH, we design mobile-first and enhance for desktop — NEVER the other way around.</p>
+
+    <h4 style="color: #F9A8D4;">Mobile Breakpoints (DH Standard)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(236, 72, 153, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Breakpoint</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Width</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Devices</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Columns</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile Small</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">0 - 374px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">iPhone SE, older small phones</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1-2 columns</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">375 - 749px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">iPhone, Android phones</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2 columns for products</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Tablet</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">750 - 989px</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">iPad, Android tablets</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3 columns for products</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Desktop</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">990px+</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Laptops, monitors</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4 columns for products</td></tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #F9A8D4;">Mobile Design Rules</h4>
+    <ul>
+        <li><strong>Touch targets: minimum 44x44px.</strong> Buttons, links, and interactive elements must be at least 44px in both dimensions. This is Apple's Human Interface Guidelines standard. Anything smaller = frustrating misclicks.</li>
+        <li><strong>Hamburger menu:</strong> Mobile navigation must collapse into a hamburger icon. Full-screen overlay menu with large touch targets for each link.</li>
+        <li><strong>Product grid: 2 columns on mobile.</strong> Single column wastes space. 3 columns makes product images too small. 2 is the sweet spot.</li>
+        <li><strong>Thumb zone:</strong> Critical CTAs (Add to Cart, Checkout) should be in the bottom third of the screen — where thumbs naturally rest.</li>
+        <li><strong>No horizontal scrolling — EVER.</strong> If any element causes horizontal scroll on mobile, it is a bug. Test at 320px width minimum.</li>
+    </ul>
+
+    <pre><code>/* Mobile-first responsive pattern */
+/* Start with mobile styles (no media query) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+/* Tablet: 3 columns */
+@media (min-width: 750px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+/* Desktop: 4 columns */
+@media (min-width: 990px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+/* Touch target minimum */
+.mobile-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: var(--space-md) var(--space-lg);
+}</code></pre>
+</div>
+
+<!-- CONVERSION-FOCUSED DESIGN PATTERNS -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💸 Conversion-Focused Design Patterns</h3>
+    <p>Every design decision must answer one question: <strong>"Does this help the visitor buy?"</strong> If a design element is purely decorative and does not serve conversion, it should not exist.</p>
+
+    <h4 style="color: #6EE7B7;">Trust Badge Placement (Proven Positions)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(16, 185, 129, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Location</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Badge Type</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Below hero section</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Free Shipping, Money-Back, Secure Checkout</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Establishes trust within first 5 seconds</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Below Add to Cart button</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Payment icons, SSL badge, guarantee</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Reduces anxiety at the decision moment</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Cart drawer / cart page</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Secure checkout, free shipping progress</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Final reassurance before checkout</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Footer</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Payment method logos</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Universal trust signal for scrollers</td></tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #6EE7B7;">CTA Button Optimization Rules</h4>
+    <ul>
+        <li><strong>Color:</strong> CTA buttons must be the highest-contrast element on the page. If the page is mostly white/light, the CTA should be dark or bold. If the page is dark, the CTA should be bright.</li>
+        <li><strong>Size:</strong> Desktop minimum 48px height, mobile minimum 52px height. Full-width on mobile product pages.</li>
+        <li><strong>Text:</strong> Action-oriented. "Add to Cart" beats "Submit". "Shop Now" beats "Click Here". "Get 20% Off" beats "Learn More".</li>
+        <li><strong>Only ONE primary CTA per viewport.</strong> Multiple primary buttons compete and reduce conversions. Use outline/ghost buttons for secondary actions.</li>
+        <li><strong>Hover state:</strong> Always add a hover effect (darken by 10%, slight scale, or shadow). No hover state = the button feels broken.</li>
+    </ul>
+</div>
+
+<!-- ADVANCED CSS FOR SHOPIFY -->
+<div class="content-section">
+    <h3>🎨 Advanced CSS for Shopify</h3>
+    <p>Shopify themes use their own CSS architecture. Knowing how to work with (not against) the theme's CSS is critical for clean, maintainable customizations.</p>
+
+    <h4>Overriding Theme CSS Safely</h4>
+    <pre><code>/* BAD: Using !important everywhere */
+.product-card .card__heading {
+  font-size: 18px !important;  /* AVOID THIS */
+  color: red !important;        /* AVOID THIS */
+}
+
+/* GOOD: Using specificity correctly */
+/* Increase specificity with the section ID */
+#shopify-section-template--product .card__heading {
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+/* Or use the :is() selector for maintainable specificity */
+:is(.section-template) .card__heading {
+  font-size: 1.125rem;
+}
+
+/* BEST: Use CSS custom properties from the schema */
+#Section-{{ section.id }} .card__heading {
+  font-size: var(--card-heading-size, 1rem);
+  color: var(--card-heading-color, var(--color-text));
+}</code></pre>
+
+    <div class="warning-box">
+        <strong>⚠️ CSS RULES FOR SHOPIFY DEVELOPMENT:</strong>
+        <ul>
+            <li><strong>Never use !important</strong> unless overriding third-party app CSS that cannot be modified any other way. Every !important creates a specificity nightmare for future developers.</li>
+            <li><strong>Always scope styles to the section ID</strong> using <code>#Section-{{ section.id }}</code>. This prevents your styles from leaking to other sections.</li>
+            <li><strong>Use CSS custom properties</strong> for any value that might change per section instance. This allows the customizer to control styles without code changes.</li>
+            <li><strong>Never modify theme core CSS files directly.</strong> Always add overrides in <code>custom.css</code> or in the section's own style tag.</li>
+        </ul>
+    </div>
+
+    <h4>Shopify-Specific CSS Patterns</h4>
+    <pre><code>/* Responsive image containers (Shopify pattern) */
+.media {
+  position: relative;
+  overflow: hidden;
+}
+.media > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Shopify uses aspect-ratio padding trick for older browsers */
+.media::before {
+  content: '';
+  display: block;
+  padding-bottom: calc(1 / var(--ratio-image) * 100%);
+}
+
+/* Hide elements only in the customizer (theme editor) */
+.shopify-design-mode .preview-only {
+  display: block;
+}
+
+/* Color scheme utility classes (Dawn pattern) */
+.color-scheme-1 { /* Light scheme */ }
+.color-scheme-2 { /* Accent scheme */ }
+.color-inverse { /* Dark scheme */ }
+
+/* Accessibility: Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-cta);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}</code></pre>
+</div>
+
+<!-- ANIMATION & MICRO-INTERACTIONS -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">✨ Animation & Micro-Interactions</h3>
+    <p>Subtle animations make a store feel alive and premium. Overdone animations make it feel like a PowerPoint presentation from 2005. The line between the two is thin.</p>
+
+    <h4 style="color: #C4B5FD;">DH Animation Rules</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(139, 92, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Animation</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">When to Use</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Fade in on scroll</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Sections entering viewport — premium feel</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>opacity 0 to 1 + translateY(20px to 0)</code></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Hover scale on cards</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Product cards, category images</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>transform: scale(1.03) on hover</code></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Image hover zoom</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Product card images — reveal detail</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>img transform: scale(1.08) on card hover</code></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Button hover darken</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">All buttons — feedback that it is clickable</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>filter: brightness(0.9) or opacity: 0.85</code></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cart drawer slide-in</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">After Add to Cart — confirm action</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>transform: translateX(100% to 0)</code></td></tr>
+        </tbody>
+    </table>
+
+    <pre><code>/* Scroll reveal animation (use IntersectionObserver) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CRITICAL: Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}</code></pre>
+
+    <div class="warning-box">
+        <strong>⚠️ ANIMATION ANTI-PATTERNS (Never Do These):</strong>
+        <ul>
+            <li><strong>No parallax scrolling</strong> — It causes motion sickness for many users and tanks mobile performance.</li>
+            <li><strong>No auto-playing carousels</strong> — Studies show carousels reduce conversion. Use static heroes or let users control slides.</li>
+            <li><strong>No bouncing/flashing elements</strong> — These trigger seizure warnings and look unprofessional.</li>
+            <li><strong>Keep durations under 600ms</strong> — Anything longer feels sluggish. 300ms is the sweet spot.</li>
+            <li><strong>ALWAYS respect <code>prefers-reduced-motion</code></strong> — This is an accessibility requirement, not optional.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ACCESSIBILITY IN DESIGN -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">♿ Accessibility in Design — WCAG Compliance</h3>
+    <p>Accessibility is not a nice-to-have — it is a <strong>legal requirement</strong> in many markets (ADA in the US, EAA in the EU). Shopify stores that are not accessible can face lawsuits. Beyond legality, 15-20% of the population has some form of disability. Ignoring accessibility means ignoring 15-20% of your potential revenue.</p>
+
+    <h4 style="color: #6EE7B7;">Accessibility Checklist (DH Mandatory)</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(16, 185, 129, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Requirement</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standard</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How to Test</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Color contrast (text)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4.5:1 ratio minimum (AA standard)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">WebAIM Contrast Checker or Chrome DevTools</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Color contrast (large text)</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3:1 ratio minimum (text 18px+ or 14px bold)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Same tools — large text has lower threshold</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Alt text on ALL images</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Descriptive alt text, not "image1.jpg"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Check with screen reader (VoiceOver / NVDA)</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Keyboard navigation</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Every interactive element reachable via Tab key</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Tab through entire page — can you reach everything?</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Focus states visible</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Clear outline or highlight on focused element</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Tab through — can you SEE where you are?</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>ARIA labels on icons</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Cart icon, search icon, social icons need labels</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>aria-label="Open cart"</code> on icon buttons</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Semantic HTML</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Use &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;button&gt;</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Do not use &lt;div&gt; for clickable elements</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Reduced motion support</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Animations disabled for users who prefer it</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><code>@media (prefers-reduced-motion: reduce)</code></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- DESIGN QA CHECKLIST -->
+<div class="content-section">
+    <h3>✅ Design QA Checklist — Before Handing Off ANY Store</h3>
+    <p>This checklist must be completed before you mark ANY project as "ready for review". No exceptions.</p>
+
+    <h4>Cross-Browser Testing</h4>
+    <ul>
+        <li>&#9744; Chrome (latest) — primary browser for 65% of users</li>
+        <li>&#9744; Safari (latest) — critical for iOS users (ALL iPhone browsers use Safari engine)</li>
+        <li>&#9744; Firefox (latest) — secondary but important for European markets</li>
+        <li>&#9744; Edge (latest) — important for enterprise/corporate buyers</li>
+    </ul>
+
+    <h4>Mobile Testing (Real Devices)</h4>
+    <ul>
+        <li>&#9744; iPhone (Safari) — test on actual device, not just Chrome DevTools</li>
+        <li>&#9744; Android (Chrome) — Samsung Galaxy or Google Pixel</li>
+        <li>&#9744; iPad (Safari) — tablet layout verification</li>
+        <li>&#9744; Test at 320px width — smallest common viewport</li>
+        <li>&#9744; No horizontal scrolling on any page at any viewport</li>
+    </ul>
+
+    <h4>Design Consistency Audit</h4>
+    <ul>
+        <li>&#9744; All headings use the same font family throughout</li>
+        <li>&#9744; All body text uses the same font family and size</li>
+        <li>&#9744; Section padding is consistent across all sections</li>
+        <li>&#9744; Button styles are consistent (same radius, padding, font size)</li>
+        <li>&#9744; Color palette is applied consistently — no random colors</li>
+        <li>&#9744; Image aspect ratios are consistent within grids</li>
+        <li>&#9744; Hover states work on all interactive elements</li>
+        <li>&#9744; No placeholder text or lorem ipsum anywhere</li>
+        <li>&#9744; All links work — no broken links or 404s</li>
+        <li>&#9744; Favicon is set and displays correctly</li>
+    </ul>
+</div>
+
+<!-- CLIENT DESIGN HANDOFF -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🎨 Client Design Handoff — Figma/XD to Shopify</h3>
+    <p>Many projects come with design mockups from Figma or Adobe XD. Your job is to implement them <strong>pixel-perfect</strong>. Here is the DH process:</p>
+
+    <h4 style="color: #FCD34D;">The 5-Step Figma-to-Shopify Workflow</h4>
+    <ol>
+        <li><strong>Inspect the Design System:</strong> Extract all colors, fonts, spacing values, and border-radius from the Figma file. Create your CSS design tokens to match exactly.</li>
+        <li><strong>Identify Standard vs Custom Sections:</strong> What can be done with Dawn's built-in sections? What requires custom sections? Build a list before coding anything.</li>
+        <li><strong>Build Mobile and Desktop Side-by-Side:</strong> Never build the entire desktop version then "make it responsive" afterward. Build each section responsive from the start.</li>
+        <li><strong>Use Figma's Inspect Panel:</strong> Right-click any element in Figma > Inspect to see exact CSS values. Copy padding, margins, font sizes directly.</li>
+        <li><strong>Pixel-Perfect Verification:</strong> Use browser extensions like PerfectPixel to overlay the Figma design on top of your live Shopify preview. Maximum 2-3px deviation allowed.</li>
+    </ol>
+
+    <div class="warning-box">
+        <strong>⚠️ COMMON FIGMA-TO-SHOPIFY MISTAKES:</strong>
+        <ul>
+            <li><strong>Not accounting for dynamic content.</strong> The Figma mockup has 3 words in the heading — but the client types 15. Does your layout still work? Always test with varying content lengths.</li>
+            <li><strong>Ignoring Shopify's fluid width.</strong> Figma designs are fixed width (1440px). Shopify stores are fluid. Test at 990px, 1200px, 1440px, and 1920px.</li>
+            <li><strong>Forgetting hover/active states.</strong> If the designer did not provide hover states, ask before guessing. Never ship buttons without hover feedback.</li>
+            <li><strong>Hardcoding content.</strong> Everything the client might want to change must be in the schema — text, images, colors, links. Never hardcode content in Liquid.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- REAL PROJECT WALKTHROUGH -->
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Real Project Walkthrough — Blank Theme to Launch-Ready</h3>
+    <p>Here is the exact step-by-step process for building a complete store from scratch. This is how a DH developer approaches every project:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Phase</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Steps</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phase 1: Foundation</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    1. Duplicate the theme (NEVER edit live theme)<br>
+                    2. Set up design tokens (CSS variables)<br>
+                    3. Configure Theme Settings (colors, fonts, layout)<br>
+                    4. Set up navigation structure
+                </td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-2 hours</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phase 2: Header & Footer</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    5. Customize header (logo, navigation, mega menu if needed)<br>
+                    6. Build announcement bar<br>
+                    7. Customize footer (4 columns, newsletter, payment icons)<br>
+                    8. Test header/footer on all breakpoints
+                </td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-3 hours</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phase 3: Homepage</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    9. Build hero banner section<br>
+                    10. Add trust bar / feature icons<br>
+                    11. Configure featured collection<br>
+                    12. Build brand story section<br>
+                    13. Add testimonials section<br>
+                    14. Add collection list, newsletter, FAQ
+                </td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4-6 hours</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phase 4: Product Page</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    15. Configure media gallery layout<br>
+                    16. Add trust badges below ATC<br>
+                    17. Build product tabs (description, specs, shipping)<br>
+                    18. Add related products<br>
+                    19. Add sticky ATC for mobile
+                </td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3-4 hours</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phase 5: Collection Pages</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    20. Configure grid layout and card design<br>
+                    21. Add product badges (sale, new, bestseller)<br>
+                    22. Set up filtering and sorting<br>
+                    23. Add collection banner/description
+                </td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-3 hours</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phase 6: Essential Pages</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    24. About Us page<br>
+                    25. Contact page<br>
+                    26. FAQ page<br>
+                    27. Policy pages (privacy, terms, returns, shipping)
+                </td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-3 hours</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phase 7: QA & Polish</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    28. Complete design QA checklist (above)<br>
+                    29. Cross-browser testing<br>
+                    30. Mobile testing on real devices<br>
+                    31. Speed optimization<br>
+                    32. Accessibility audit
+                </td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3-4 hours</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #22C55E; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">✅ TASK 16 KEY TAKEAWAYS:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Max 6-7 top-level navigation items. Use mega menus for large catalogs.</li>
+            <li>Footer is a conversion tool — it must include policies, payment icons, and newsletter signup.</li>
+            <li>Mobile-first: 70-80% of Shopify traffic is mobile. Touch targets minimum 44x44px.</li>
+            <li>Trust badges at 3 key locations: below hero, below ATC, in cart.</li>
+            <li>Never use !important — scope CSS with section IDs and CSS custom properties.</li>
+            <li>Animations must be subtle (under 600ms) and respect prefers-reduced-motion.</li>
+            <li>Accessibility is a legal requirement: 4.5:1 contrast, keyboard navigation, alt text, ARIA labels.</li>
+            <li>Complete store build follows 7 phases: Foundation, Header/Footer, Homepage, Product, Collection, Pages, QA.</li>
+            <li>Figma-to-Shopify: Extract design tokens first, build responsive from the start, test with dynamic content.</li>
+        </ul>
+    </div>
+</div>
+`;
+
+
+const task14Quiz = [
+    { q: "A client's brand color is blue (#3B82F6). They want their 'Add to Cart' button to also be blue to match the brand. What is the correct response?", o: ["Use the same blue — brand consistency is the top priority", "Use a slightly darker shade of blue — close enough to match while adding subtle contrast", "Use a contrasting color like orange or green — the CTA must stand out from the primary brand color to draw attention", "Let the client decide — it's their store and their brand guidelines take precedence over conversion principles"], c: 2 },
+    { q: "You are setting up body text for a new Shopify store. Which combination follows DH standards?", o: ["Font size: 14px, line-height: 1.3, color: #000000", "Font size: 16px, line-height: 1.6, color: #333333", "Font size: 18px, line-height: 1.0, color: #666666", "Font size: 12px, line-height: 2.0, color: #1A1A1A"], c: 1 },
+    { q: "A visitor lands on a Shopify store homepage. According to the 3-second rule, what must they understand WITHOUT scrolling?", o: ["The company's full history, mission statement, and founding story", "The store's return policy, shipping rates, and payment options", "WHAT the store sells, WHO it is for, and WHY they should buy", "The product catalog, pricing structure, and available discounts"], c: 2 },
+    { q: "You need to add a custom Google Font to a Shopify store. What is the DH-recommended approach for performance?", o: ["Link the Google Fonts CDN URL in the theme.liquid head section for easy setup", "Self-host the font files using @font-face declarations in base.css to avoid external HTTP requests", "Use a Google Fonts app from the Shopify App Store for convenience", "Load all available weights (100-900) so the client has flexibility for future design changes"], c: 1 },
+    { q: "What is the correct spacing value for section vertical padding on desktop according to the 8px grid system?", o: ["50px — it looks about right visually", "60-80px — using multiples of 8 (64px or 80px)", "100px — more whitespace is always better", "45px — close enough to a multiple of 8"], c: 1 },
+    { q: "A client says 'There is too much empty space on the homepage — fill it with more products.' What should you do?", o: ["Immediately add more product grids to fill the space — the client knows their customers best", "Remove all whitespace to maximize content density and show more products above the fold", "Educate the client that whitespace increases readability by 20%, makes the brand look premium, and directs the eye to CTAs — show them the Apple website as an example", "Compromise by reducing whitespace by exactly 50% to meet the client halfway"], c: 2 },
+    { q: "You are building a store for a luxury skincare brand. Which font pairing is most appropriate?", o: ["Oswald (heading) + Source Sans Pro (body) — bold and athletic feel", "Comic Sans (heading) + Arial (body) — friendly and approachable", "Playfair Display (heading) + Assistant (body) — classic serif with clean sans-serif", "Bebas Neue (heading) + Roboto (body) — condensed modern headers"], c: 2 },
+    { q: "For the DH Design Token System, where should CSS custom properties be set up and when?", o: ["In each individual section's style tag, after building all sections", "In base.css or custom.css as :root variables, BEFORE building any sections", "In the theme.liquid file inline styles, during the QA phase", "In the Shopify theme customizer only, using built-in settings"], c: 1 },
+    { q: "Eye-tracking studies show content-heavy pages (collection pages, blog posts) are scanned in which pattern?", o: ["Z-pattern — eyes move diagonally across the page", "F-pattern — horizontal scan at top, second horizontal scan below, then vertical sweep down the left", "Circular pattern — eyes spiral inward toward the center of the page", "Random pattern — there is no predictable scanning behavior for web pages"], c: 1 },
+    { q: "A store's color palette has 8 different colors used across various sections. What is wrong?", o: ["Nothing — more colors create a vibrant and engaging visual experience", "Too many colors. Maximum 3-4 colors should be used. More creates an amateur, chaotic look.", "It depends on the brand — fashion brands can use unlimited colors", "8 colors is fine as long as they are all from the same color family"], c: 1 }
+];
+
+
+const task15Quiz = [
+    { q: "A Shopify section file has 4 parts. Which is the correct order and what defines the customizer settings?", o: ["HTML, CSS, JS, Schema — the CSS file defines customizer settings", "Liquid/HTML, Style tag, Script tag, {% schema %} — the schema JSON defines customizer settings", "Schema, HTML, CSS, JS — the schema must come first in the file", "Template, Layout, Snippet, Config — the config.json defines settings"], c: 1 },
+    { q: "You built a custom testimonials section with blocks, but when the client adds it from the customizer, it appears completely blank. What did you likely forget?", o: ["The CSS styles for the testimonial cards", "The JavaScript initialization code", "The 'presets' array in the schema with pre-populated blocks and default values for settings", "The Liquid for loop to render the blocks"], c: 2 },
+    { q: "What does block.shopify_attributes do, and should you include it?", o: ["It adds animation classes — include it only on animated blocks", "It enables the theme customizer to highlight and select the block when clicked — ALWAYS include it on block elements", "It adds SEO meta tags to each block — optional for performance", "It tracks block analytics — include it only if the client uses Shopify analytics"], c: 1 },
+    { q: "A client wants custom product badges ('Bestseller', 'New Arrival', 'Limited Edition') that they can manage themselves. What is the best approach?", o: ["Hardcode badge text in the product card Liquid template with conditional logic based on product tags", "Create a product metafield (custom.badge_text) so the client can set badge text per product from the Shopify admin", "Install a third-party badge app from the Shopify App Store for $15/month", "Add badge text as a product variant option so it appears in the variant selector"], c: 1 },
+    { q: "Which schema input type should you use for a section setting where the client needs to write formatted text with bold, italic, and links?", o: ["text — it supports basic formatting by default", "textarea — multiline text handles all formatting needs", "richtext — it provides a WYSIWYG editor with bold, italic, and link support while sanitizing the output", "html — raw HTML gives the client maximum flexibility for any formatting"], c: 2 },
+    { q: "You are adding an image to a custom section. Which Liquid code follows Shopify best practices for responsive images?", o: ["<img src='{{ section.settings.image | image_url: width: 1920 }}' /> with a fixed width", "{{ section.settings.image | image_url: width: 1920 | image_tag: loading: 'lazy', widths: '375, 750, 1100, 1500, 1920', sizes: '100vw' }}", "{{ section.settings.image }} directly outputs the image with no optimization needed", "<img src='{{ section.settings.image.src }}' width='100%' height='auto' />"], c: 1 },
+    { q: "The DH Standard Homepage has 10-11 sections in a specific order. What comes immediately AFTER the Hero Banner?", o: ["Featured Collection — show products immediately", "Trust Bar — free shipping, easy returns, secure payment icons to establish trust within the first 5 seconds", "Brand Story — emotional connection comes first before showing products", "Testimonials — social proof should be the second thing visitors see"], c: 1 },
+    { q: "A client wants a custom FAQ section with expandable questions. What is the best architecture?", o: ["Build a single section with hardcoded questions in the Liquid template", "Build a section with 'faq_item' block types — each block has a question (text) and answer (richtext) setting, allowing the client to add/remove/reorder questions", "Use Shopify's built-in collapsible-content section without any customization", "Create a separate Liquid snippet for each FAQ question and include them manually"], c: 1 },
+    { q: "You need to let the client choose between 'left', 'center', and 'right' text alignment for a section heading. Which schema type is correct?", o: ["text — the client can type 'left', 'center', or 'right'", "checkbox — one for each alignment option", "select — with options array containing value/label pairs for each alignment", "radio_button — for mutually exclusive choices like alignment"], c: 2 },
+    { q: "What is the purpose of the 'limit' property on a block type in the schema?", o: ["It limits the character count of text inputs within the block", "It sets the maximum number of instances of that block type to prevent clients from adding too many blocks that break the layout", "It limits the file size of images uploaded to the block", "It restricts which pages the section can be added to"], c: 1 }
+];
+
+
+const task16Quiz = [
+    { q: "A Shopify store header has 12 top-level navigation items. What is wrong and what should you do?", o: ["Nothing is wrong — more navigation items help users find products faster", "12 items causes decision paralysis. Reduce to maximum 6-7 top-level items and use dropdown submenus or a mega menu for subcategories.", "Remove all navigation items and rely on the search function exclusively", "Keep 12 items but make the font smaller so they all fit in one line"], c: 1 },
+    { q: "You are building a product grid for mobile. Which column layout is correct for phones (375px viewport)?", o: ["1 column — single column is cleanest and easiest to scroll", "2 columns — optimal balance between image size and product visibility per screen", "3 columns — fit more products to reduce scrolling", "4 columns — match the desktop layout for consistency across devices"], c: 1 },
+    { q: "A button on the product page is 32x28px on mobile. What is the problem?", o: ["The button is fine — it is large enough to be visible", "The button is below the 44x44px minimum touch target size, causing frustrating misclicks on mobile devices", "The button should be exactly 48x48px — no more, no less", "Only the width matters for touch targets — 32px width is acceptable"], c: 1 },
+    { q: "You need to override a theme CSS rule but the theme uses high specificity. What is the correct approach?", o: ["Add !important to your override — it guarantees your style wins", "Increase specificity using the section ID selector like #Section-{{ section.id }} and CSS custom properties", "Edit the theme's core CSS file directly to change the original rule", "Use inline styles on every HTML element to override everything"], c: 1 },
+    { q: "A client wants scroll animations on their homepage. Which implementation follows DH standards?", o: ["Add parallax scrolling to all images and bouncing entrance animations to every section", "Use subtle fade-in with translateY(20px to 0) at 300-600ms duration, and include @media (prefers-reduced-motion: reduce) to disable animations for users who need it", "Skip all animations — they always hurt performance and provide no value", "Use CSS animation libraries like Animate.css and apply 5+ different animation types across the page for variety"], c: 1 },
+    { q: "The WCAG AA standard requires a minimum color contrast ratio of what for normal body text?", o: ["2:1 — any noticeable contrast is sufficient for readability", "3:1 — the standard for large text applies to all text sizes", "4.5:1 — the minimum for normal-sized text to ensure readability for users with visual impairments", "7:1 — maximum contrast is always preferred regardless of context"], c: 2 },
+    { q: "During the design QA phase, you discover the store looks perfect in Chrome but the header layout is broken in Safari on iPhone. What should you remember?", o: ["Safari bugs are Apple's problem — most users are on Chrome anyway", "ALL iPhone browsers (Chrome, Firefox, Edge on iOS) use the Safari/WebKit engine, so this bug affects 100% of iPhone users — it must be fixed immediately", "Only test the store in Chrome since it has 65% market share", "Ask the client to tell their customers to use Chrome instead"], c: 1 },
+    { q: "A designer sends you a Figma mockup at 1440px width. The headings look great at that width. What must you verify?", o: ["Nothing — if it looks good at 1440px, it will look good at all sizes", "Test at 990px, 1200px, 1440px, and 1920px since Shopify stores are fluid width, and test with varying content lengths since the mockup may have short placeholder text", "Only test at mobile (375px) and the design width (1440px) — two sizes is sufficient", "Scale everything proportionally using viewport units so it automatically matches at every width"], c: 1 },
+    { q: "Which of these is a MANDATORY footer element for legal and conversion reasons?", o: ["Instagram feed — social proof is legally required in most jurisdictions", "Privacy Policy link — legally required by GDPR, CCPA, and most payment processors", "Blog post preview — required for SEO compliance", "Team member photos — builds trust and is required by e-commerce regulations"], c: 1 },
+    { q: "You are building a complete Shopify store from a blank Dawn theme. According to the DH 7-phase process, what is Phase 1?", o: ["Build the homepage hero section first — it makes the biggest visual impact", "Foundation: Duplicate the theme, set up design tokens (CSS variables), configure Theme Settings (colors, fonts, layout), and set up navigation structure", "Install all required apps first so the sections have data to display", "Build the product page first — it is where the money is made"], c: 1 }
+];
+
+// =============================================================================
+// TASK 17: CRO, PSYCHOLOGY & COPYWRITING (NEW)
+// =============================================================================
+
+// The Science of Making People Buy
+
+
+const task17Content = `
+<h2>🧠 TASK 17: CRO, PSYCHOLOGY & COPYWRITING — The Science of Making People Buy</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(251, 146, 60, 0.15)); border: 2px solid rgba(234, 88, 12, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FB923C; margin-top: 0;">🚀 Why This Is the MOST Important Task in Your Training</h3>
+    <p>Every task before this taught you HOW to build a Shopify store. This task teaches you HOW TO MAKE THAT STORE <strong>PRINT MONEY</strong>.</p>
+    <p>A developer who understands CRO, psychology, and copywriting is worth <strong>5x more</strong> than a developer who just writes clean code. Because clean code that nobody converts on is just an expensive art project.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FB923C; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FB923C;">💰 The Numbers That Should Rewire Your Brain:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>The average Shopify store converts at <strong>1.4%</strong>. That means <strong>98.6%</strong> of visitors leave without buying.</li>
+            <li>Improving conversion from 1.4% to 2.8% <strong>DOUBLES revenue</strong> — with ZERO extra ad spend.</li>
+            <li>A store doing ₹50 Lakhs/year at 1.4% CR could do ₹1 Crore/year at 2.8% CR — same traffic, same products, same price.</li>
+            <li>The difference between 1.4% and 2.8%? <strong>Psychology. Copy. CRO.</strong> The exact things you'll learn in this task.</li>
+            <li>DH clients pay ₹50,000–₹3,00,000 for CRO audits alone. Developers who can DO this work get the premium projects.</li>
+        </ul>
+    </div>
+
+    <div class="warning-box">
+        <strong>⚠️ The DH Standard:</strong><br>
+        Every store we deliver must be <strong>conversion-optimized by default</strong>. We do not ship stores that look pretty but don't sell. Every headline, every button, every section placement must have a psychological reason behind it. If you can't explain WHY something is where it is, you haven't done your job.
+    </div>
+</div>
+
+<!-- =================================================================== -->
+<!-- SECTION 1: CRO FUNDAMENTALS -->
+<!-- =================================================================== -->
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">📊 SECTION 1: CRO Fundamentals — What It Is and Why You MUST Understand It</h3>
+
+    <h4 style="color: #93C5FD;">What Is CRO?</h4>
+    <p><strong>Conversion Rate Optimization (CRO)</strong> is the systematic process of increasing the percentage of website visitors who take a desired action — buying a product, signing up for a newsletter, adding to cart, or any other goal.</p>
+    <p>It is NOT guesswork. It is NOT "making things look nicer." It is a <strong>data-driven, psychology-backed discipline</strong> that treats your store like a science experiment. You hypothesize, test, measure, and iterate.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 The CRO Formula:</strong>
+        <p style="margin: 10px 0 0 0; font-size: 1.2em; text-align: center;">
+            <strong>Conversion Rate = (Number of Conversions / Total Visitors) x 100</strong>
+        </p>
+        <p style="margin: 10px 0 0 0;">Example: 100 purchases from 5,000 visitors = <strong>2.0% Conversion Rate</strong></p>
+    </div>
+
+    <h4 style="color: #93C5FD;">The Conversion Funnel — Where Money Leaks Out</h4>
+    <p>Every visitor goes through a funnel. At each stage, people drop off. Your job as a CRO-aware developer is to <strong>plug the leaks</strong> at every stage.</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Funnel Stage</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What Happens</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Typical Drop-off</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Your CRO Focus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>1. Visit</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">User lands on site</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">—</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Page speed, first impression, hero section</td>
+            </tr>
+            <tr style="background: rgba(59, 130, 246, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>2. Browse</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">User explores products</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">40-60% bounce</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Navigation, collection pages, search, filtering</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>3. Add to Cart</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">User adds item</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Only 8-12% of visitors add</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PDP copy, images, trust signals, pricing</td>
+            </tr>
+            <tr style="background: rgba(59, 130, 246, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>4. Checkout</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">User enters checkout</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-40% abandon cart</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Checkout UX, trust badges, shipping clarity</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>5. Purchase</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">User completes payment</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">~70% of checkouts convert</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Payment options, final trust, order confirmation</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #93C5FD;">Key Metrics Every DH Developer Must Know</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What It Measures</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shopify Average</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">DH Target</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Conversion Rate (CR)</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">% of visitors who purchase</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1.4%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #4ADE80;">3%+ (Good) / 5%+ (Excellent)</strong></td>
+            </tr>
+            <tr style="background: rgba(59, 130, 246, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>AOV (Average Order Value)</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Average $ per order</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">$85-$100</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #4ADE80;">15-25% above niche average</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Bounce Rate</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">% who leave after 1 page</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">45-55%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #4ADE80;">Under 40%</strong></td>
+            </tr>
+            <tr style="background: rgba(59, 130, 246, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cart Abandonment Rate</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">% who add but don't buy</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">69-70%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #4ADE80;">Under 60%</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Add-to-Cart Rate</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">% of visitors who add to cart</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">8-10%</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #4ADE80;">12%+</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #4ADE80; padding: 20px; margin: 15px 0;">
+        <strong style="color: #4ADE80;">💡 The 1% Improvement Math — This Will Blow Your Mind:</strong>
+        <p style="margin: 10px 0 0 0;">Take a client doing ₹50 Lakhs/year with 1,00,000 annual visitors and a 1.4% conversion rate.</p>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <tr style="background: rgba(74, 222, 128, 0.1);">
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Current:</strong> 1.4% CR</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1,400 orders</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹50,00,000/year</strong></td>
+            </tr>
+            <tr style="background: rgba(74, 222, 128, 0.15);">
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>+1%:</strong> 2.4% CR</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2,400 orders</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹85,71,000/year (+₹35.7L)</strong></td>
+            </tr>
+            <tr style="background: rgba(74, 222, 128, 0.2);">
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>+2%:</strong> 3.4% CR</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3,400 orders</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>₹1,21,43,000/year (+₹71.4L)</strong></td>
+            </tr>
+        </table>
+        <p style="margin: 10px 0 0 0;">A <strong>1% improvement</strong> = ₹35+ Lakhs extra revenue per year. <strong>With zero extra ad spend.</strong> This is why CRO-capable developers command premium rates. You are literally printing money for clients.</p>
+    </div>
+</div>
+
+<!-- =================================================================== -->
+<!-- SECTION 2: PSYCHOLOGY PRINCIPLES FOR E-COMMERCE -->
+<!-- =================================================================== -->
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(139, 92, 246, 0.1)); border: 2px solid rgba(168, 85, 247, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🧠 SECTION 2: Psychology Principles for E-Commerce — The 6 Weapons of Influence</h3>
+    <p>In 1984, Dr. Robert Cialdini published <em>Influence: The Psychology of Persuasion</em> — a book that has shaped every successful e-commerce store since. These are the 6 principles that make people say "yes." Every single one applies directly to the Shopify stores you build.</p>
+
+    <h4 style="color: #C4B5FD;">1. Reciprocity — Give First, Sell Later</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong>The Principle:</strong> When someone gives us something, we feel compelled to give something back. This is hardwired into human psychology — we hate feeling indebted.
+        <p style="margin: 10px 0 0 0;"><strong style="color: #C4B5FD;">Shopify Implementation:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>Free shipping thresholds:</strong> "Free shipping on orders over ₹999" — the "gift" of free shipping triggers reciprocity AND increases AOV</li>
+            <li><strong>Free gift with purchase:</strong> "Get a free travel pouch with orders over ₹2,000" — adds perceived value, customer feels they got something extra</li>
+            <li><strong>Free samples:</strong> Include samples of other products in every order — next-order conversion rates jump 20-30%</li>
+            <li><strong>Free content:</strong> Skincare brand offering a "Free Skin Assessment Quiz" — you give value first, then recommend products</li>
+            <li><strong>Discount on first order:</strong> "10% off your first order" — the gift creates obligation to use it</li>
+        </ul>
+    </div>
+
+    <h4 style="color: #C4B5FD;">2. Scarcity — Less = More Desirable</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong>The Principle:</strong> We value things more when they are rare or running out. The fear of missing out is stronger than the desire to gain. A study by Worchel (1975) showed that cookies in a nearly empty jar were rated as tastier and more desirable than identical cookies in a full jar.
+        <p style="margin: 10px 0 0 0;"><strong style="color: #FCA5A5;">Shopify Implementation:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>Low stock badges:</strong> "Only 3 left in stock" — triggers urgency when inventory is genuinely low</li>
+            <li><strong>Countdown timers:</strong> "Sale ends in 02:14:33" — for genuine time-limited offers only</li>
+            <li><strong>Limited editions:</strong> "Limited Run — Only 200 Made" — exclusivity increases perceived value</li>
+            <li><strong>Seasonal messaging:</strong> "Last chance for Diwali delivery" — real deadline creates real urgency</li>
+        </ul>
+        <p style="margin: 10px 0 0 0;"><strong>Liquid code for dynamic low stock badge:</strong></p>
+        <pre style="background: #1E293B; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.85em; margin: 10px 0;">
+&lt;!-- Low stock urgency badge --&gt;
+{%- if product.selected_or_first_available_variant.inventory_quantity &lt;= 5
+    and product.selected_or_first_available_variant.inventory_quantity &gt; 0
+    and product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
+  &lt;div class="low-stock-badge" style="
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #EF4444; padding: 6px 12px; border-radius: 6px;
+    font-size: 0.85em; font-weight: 600;"&gt;
+    &lt;span style="animation: pulse 1.5s infinite;"&gt;🔥&lt;/span&gt;
+    Only {{ product.selected_or_first_available_variant.inventory_quantity }} left in stock
+  &lt;/div&gt;
+{%- endif -%}</pre>
+    </div>
+
+    <h4 style="color: #C4B5FD;">3. Authority — People Follow Experts</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F59E0B; padding: 20px; margin: 15px 0;">
+        <strong>The Principle:</strong> We trust and follow people or brands that demonstrate expertise, credentials, or endorsements from recognized sources. Milgram's famous experiment showed people would obey authority figures even against their own judgment.
+        <p style="margin: 10px 0 0 0;"><strong style="color: #FCD34D;">Shopify Implementation:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>"As seen on" press logos:</strong> Display media logos (Vogue, Forbes, Times of India) — instantly elevates brand credibility</li>
+            <li><strong>Certifications and badges:</strong> "Certified Organic", "Dermatologist Tested", "ISO 9001" — third-party validation</li>
+            <li><strong>Expert endorsements:</strong> "Recommended by Dr. Sharma, Dermatologist" — medical/expert authority</li>
+            <li><strong>Awards and recognition:</strong> "Winner — Best Skincare Brand 2025" — competitive authority</li>
+            <li><strong>Founding story with credentials:</strong> "Founded by a MIT-trained chemist" — origin-based authority</li>
+        </ul>
+        <p style="margin: 10px 0 0 0;"><strong>Liquid code for trust/authority bar:</strong></p>
+        <pre style="background: #1E293B; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.85em; margin: 10px 0;">
+&lt;!-- Authority/trust bar section --&gt;
+&lt;div class="trust-bar" style="
+  display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
+  padding: 20px; background: var(--color-background-secondary, #F8F8F8);
+  border-top: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);"&gt;
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'trust_item' -%}
+      &lt;div class="trust-item" style="
+        display: flex; align-items: center; gap: 8px;
+        font-size: 0.85em; color: var(--color-foreground-muted, #666);"
+        {{ block.shopify_attributes }}&gt;
+        {%- if block.settings.icon != blank -%}
+          {{ block.settings.icon | image_url: width: 24 | image_tag: loading: 'lazy' }}
+        {%- endif -%}
+        &lt;span&gt;{{ block.settings.text }}&lt;/span&gt;
+      &lt;/div&gt;
+    {%- endif -%}
+  {%- endfor -%}
+&lt;/div&gt;</pre>
+    </div>
+
+    <h4 style="color: #C4B5FD;">4. Social Proof — We Do What Others Do</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #06B6D4; padding: 20px; margin: 15px 0;">
+        <strong>The Principle:</strong> When uncertain, we look at what other people are doing to guide our decisions. This is why restaurants with queues get more customers — the queue IS the marketing.
+        <p style="margin: 10px 0 0 0;"><strong style="color: #67E8F9;">Shopify Implementation:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>Product reviews with photos:</strong> "4.8 stars from 1,847 reviews" — quantified social proof is most powerful</li>
+            <li><strong>Real-time activity notifications:</strong> "Priya from Mumbai just purchased this" — creates FOMO and social proof simultaneously</li>
+            <li><strong>User-generated content (UGC):</strong> Customer photos wearing/using the product — 10x more trusted than brand photos</li>
+            <li><strong>Bestseller badges:</strong> "Bestseller — 10,000+ sold" — popularity as proof of quality</li>
+            <li><strong>"People also bought" sections:</strong> Cross-sell with social proof — "Customers who bought X also bought Y"</li>
+            <li><strong>Review count on collection pages:</strong> Show star rating + review count below each product card — helps users compare and choose</li>
+        </ul>
+        <p style="margin: 10px 0 0 0;"><strong>Liquid code for review snippet on product cards:</strong></p>
+        <pre style="background: #1E293B; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.85em; margin: 10px 0;">
+&lt;!-- Star rating snippet for product cards --&gt;
+{%- if product.metafields.reviews.rating.value != blank -%}
+  {%- assign rating = product.metafields.reviews.rating.value -%}
+  {%- assign count = product.metafields.reviews.rating_count.value -%}
+  &lt;div class="product-card__rating" style="
+    display: flex; align-items: center; gap: 4px;
+    font-size: 0.8em; margin-top: 6px;"&gt;
+    &lt;div style="color: #F59E0B; letter-spacing: 1px;"&gt;
+      {%- for i in (1..5) -%}
+        {%- if i &lt;= rating -%}&#9733;
+        {%- else -%}&#9734;
+        {%- endif -%}
+      {%- endfor -%}
+    &lt;/div&gt;
+    &lt;span style="color: #94A3B8;"&gt;({{ count }}){&lt;/span&gt;
+  &lt;/div&gt;
+{%- endif -%}</pre>
+    </div>
+
+    <h4 style="color: #C4B5FD;">5. Liking — We Buy From People We Like</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <strong>The Principle:</strong> We prefer to say yes to people we like. Liking comes from similarity, compliments, familiarity, and association with positive things.
+        <p style="margin: 10px 0 0 0;"><strong style="color: #F9A8D4;">Shopify Implementation:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>Brand personality in copy:</strong> Write like a friend, not a corporation. "Hey, we get it — finding the right moisturizer is hard" vs "Our moisturizer is formulated with..."</li>
+            <li><strong>Lifestyle imagery:</strong> Show REAL people using products in relatable settings — not just white-background product shots</li>
+            <li><strong>Founder story:</strong> "I struggled with acne for 10 years before creating this..." — relatability builds connection</li>
+            <li><strong>Consistent brand voice:</strong> If the brand is playful, EVERY touchpoint should be playful — product descriptions, emails, checkout, even 404 pages</li>
+            <li><strong>Values alignment:</strong> "1% of every sale goes to ocean cleanup" — shared values create liking</li>
+        </ul>
+    </div>
+
+    <h4 style="color: #C4B5FD;">6. Commitment & Consistency — Small Yes Leads to Big Yes</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong>The Principle:</strong> Once people commit to something (even something small), they feel psychologically compelled to remain consistent with that commitment. The Foot-in-the-Door technique is one of the most well-documented persuasion phenomena in psychology.
+        <p style="margin: 10px 0 0 0;"><strong style="color: #6EE7B7;">Shopify Implementation:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>Quiz funnels:</strong> "Find your perfect shade" quiz — user invests 2 minutes answering questions, feels committed to the recommended product</li>
+            <li><strong>Wishlists:</strong> Adding to wishlist is a micro-commitment. Follow up with "Your wishlist items are almost gone!" emails</li>
+            <li><strong>Free trial / samples:</strong> "Try it for 7 days" — once they commit to trying, most keep buying</li>
+            <li><strong>Account creation nudge:</strong> "Save your cart for later" requires email — a micro-commitment that feeds remarketing</li>
+            <li><strong>Multi-step checkout:</strong> Each step is a small commitment. By step 3, abandoning feels like wasted effort</li>
+        </ul>
+    </div>
+
+    <h4 style="color: #C4B5FD;">Beyond Cialdini — Advanced Psychology Principles</h4>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(168, 85, 247, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Principle</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What It Means</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shopify Application</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Loss Aversion</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pain of losing is 2x stronger than pleasure of gaining (Kahneman & Tversky)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Don't miss out on 40% off" outperforms "Get 40% off." Frame benefits as potential losses.</td>
+            </tr>
+            <tr style="background: rgba(168, 85, 247, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Anchoring</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First number we see becomes the reference point for all subsequent judgments</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Always show the ORIGINAL price first (struck through), then the sale price. ₹2,999 → ₹1,499 feels like a steal. ₹1,499 alone feels expensive.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>The Decoy Effect</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Adding a third "decoy" option makes one of the other two look like the obvious best choice</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3 pricing tiers: Basic (₹999), Pro (₹1,999), Premium (₹2,499). The Premium makes Pro look like the best value. Most people pick Pro — which is what you wanted.</td>
+            </tr>
+            <tr style="background: rgba(168, 85, 247, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Paradox of Choice</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Too many options causes decision paralysis and reduces conversion (Schwartz, 2004)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Limit product variants. Use "Recommended" badges. Simplify filtering. The famous jam study: 6 options got 30% conversion, 24 options got 3%.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>FOMO</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fear of Missing Out — anxiety that others are having experiences you're not</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Show real-time purchase notifications. "47 people viewing this right now." But ONLY use real data — fake FOMO destroys trust.</td>
+            </tr>
+            <tr style="background: rgba(168, 85, 247, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Endowment Effect</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">We value things more once we feel we own them (even psychologically)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Items in YOUR cart" — possessive language. Cart page copy: "Your items are reserved." Makes abandonment feel like losing something you already have.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <strong>⚠️ DH Ethics Line — Where Persuasion Becomes Manipulation:</strong><br>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <tr style="background: rgba(74, 222, 128, 0.1);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); color: #4ADE80;">✅ Ethical (DH Approved)</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;">❌ Dark Pattern (NEVER at DH)</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Real low-stock alerts based on actual inventory</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Fake "Only 2 left!" on products with 500+ stock</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Genuine countdown for a real sale ending date</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Countdown timer that resets when it hits zero</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Real purchase notifications from actual orders</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Fake "Someone from Delhi just bought..." messages</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Real reviews (including negative ones)</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Fake reviews or hiding all negative reviews</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Clear pricing with no hidden fees</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Surprise fees at checkout that weren't shown on PDP</td>
+            </tr>
+        </table>
+        <p style="margin: 10px 0 0 0;"><strong>The DH Rule:</strong> If the tactic requires lying to the customer, we do NOT use it. Period. Persuasion based on truth builds long-term brands. Manipulation based on lies kills them.</p>
+    </div>
+</div>
+
+<!-- =================================================================== -->
+<!-- SECTION 3: COPYWRITING FOR SHOPIFY STORES -->
+<!-- =================================================================== -->
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(244, 114, 182, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F472B6; margin-top: 0;">✍️ SECTION 3: Copywriting for Shopify Stores — Words That Sell</h3>
+    <p>Great copy is the difference between a visitor thinking "interesting" and "I NEED this." As a DH developer, you write copy for placeholder sections, you advise clients on copy, and you build sections that FRAME copy for maximum impact. You MUST understand how words convert.</p>
+
+    <h4 style="color: #F9A8D4;">The AIDA Formula — Every Headline Must Follow This</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); width: 30%;"><strong style="color: #F472B6; font-size: 1.1em;">A — Attention</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Stop the scroll. Use surprising stats, bold claims, or direct questions. "Your skin is aging 3x faster than it should."</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #F472B6; font-size: 1.1em;">I — Interest</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Build curiosity. Explain the problem or opportunity. "UV exposure, pollution, and stress are attacking your collagen every single day."</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #F472B6; font-size: 1.1em;">D — Desire</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Show the solution and paint the outcome. "Our Vitamin C serum rebuilds collagen in 14 days — customers see visible results by week 2."</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #F472B6; font-size: 1.1em;">A — Action</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Tell them exactly what to do next. "Try it risk-free — 30-day money-back guarantee."</td>
+            </tr>
+        </table>
+    </div>
+
+    <h4 style="color: #F9A8D4;">Product Titles — Benefit-First, Searchable, Emotional</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(236, 72, 153, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Before (Bad)</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ After (Good)</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why It Works</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Moisturizer 50ml</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deep Hydration Daily Moisturizer — 72-Hour Moisture Lock</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Benefit + specific claim + SEO keyword</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Blue T-Shirt</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Everyday Essential Crew Tee — Midnight Blue</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lifestyle positioning + evocative color name</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Protein Powder Chocolate 1kg</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lean Muscle Whey Protein — Rich Chocolate (30 Servings)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Benefit (lean muscle) + sensory language + practical info</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #F9A8D4;">Product Descriptions — The Features → Benefits → Emotions Framework</h4>
+    <p>Most developers write features. Mediocre copywriters write benefits. The best write <strong>emotions</strong>. Here is the hierarchy:</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); width: 20%;"><strong>Feature</strong> (What it IS)</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Contains 20% Vitamin C"</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); color: #94A3B8;">Informational — low conversion</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Benefit</strong> (What it DOES)</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Brightens dark spots in 14 days"</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); color: #FCD34D;">Practical — medium conversion</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Emotion</strong> (How it FEELS)</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Wake up to skin so radiant your friends ask what you changed"</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); color: #4ADE80;">Aspirational — HIGH conversion</td>
+            </tr>
+        </table>
+        <p style="margin: 15px 0 0 0;"><strong>The perfect product description uses ALL THREE:</strong></p>
+        <p style="margin: 5px 0 0 0; padding: 15px; background: rgba(236, 72, 153, 0.1); border-radius: 8px;">
+            <em>"Infused with 20% stabilized Vitamin C</em> <span style="color: #94A3B8;">[Feature]</span>, <em>this lightweight serum visibly brightens dark spots and evens skin tone in just 14 days</em> <span style="color: #FCD34D;">[Benefit]</span>. <em>Wake up to the kind of glow that makes you skip the foundation and let your skin do the talking.</em> <span style="color: #4ADE80;">[Emotion]</span>"
+        </p>
+    </div>
+
+    <h4 style="color: #F9A8D4;">The PAS Formula — Problem, Agitate, Solution</h4>
+    <p>PAS is the most powerful copywriting framework for products that solve a pain point. It works because it mirrors how people make buying decisions: they recognize a problem, feel the pain of that problem, then seek relief.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <p><strong style="color: #F472B6;">Example — Mattress Store:</strong></p>
+        <p style="margin: 5px 0;"><strong>Problem:</strong> "Waking up with back pain every morning?"</p>
+        <p style="margin: 5px 0;"><strong>Agitate:</strong> "That dull ache that follows you through meetings, makes you snap at your kids, and ruins every weekend plan. Bad sleep doesn't just wreck your mornings — it wrecks your life."</p>
+        <p style="margin: 5px 0;"><strong>Solution:</strong> "The CloudRest Ortho Mattress uses 7-zone memory foam that maps to your spine's natural curve. 93% of our customers report zero back pain within 2 weeks. Try it for 100 nights — if you don't wake up feeling 10 years younger, we'll pick it up for free."</p>
+    </div>
+
+    <h4 style="color: #F9A8D4;">CTA Button Copy — Every Word Counts</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(236, 72, 153, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CTA Text</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Psychology Behind It</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Best Used For</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"Add to Cart"</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Low commitment — just adding, not buying yet</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">High-consideration products, multi-item stores</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"Buy Now"</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Direct, decisive — skips cart, goes to checkout</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Single-product stores, impulse buys, flash sales</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"Get Yours Now"</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ownership language (endowment effect) + urgency</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Limited edition, exclusive products</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"Start My 30-Day Trial"</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Risk reversal + commitment (first-person "My")</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Subscription products, high-ticket items</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>"Yes, I Want Glowing Skin!"</strong></td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Benefit-focused + self-affirmation + enthusiasm</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Beauty, wellness, transformation products</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #F9A8D4;">Homepage Copy Architecture</h4>
+    <p>The homepage is NOT about your brand. It is about your CUSTOMER. Every section must answer the visitor's unspoken question: "Is this for me, and can I trust it?"</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background: rgba(236, 72, 153, 0.1);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Section</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Copy Purpose</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Hero Headline</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Communicate the #1 value prop in under 8 words</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Skincare That Actually Works"</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Hero Subheadline</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Expand with specificity and credibility</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Dermatologist-formulated. 50,000+ happy customers. Results in 14 days."</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trust Bar</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Remove risk instantly</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Free Shipping | 30-Day Returns | Cruelty-Free"</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Value Props (3 Icons)</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Differentiate from competitors</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Clean Ingredients | Backed by Science | Made in India"</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Social Proof</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Let customers sell for you</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"'I've tried everything — this is the ONLY serum that cleared my acne.' — Ananya K."</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Primary CTA</strong></td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Direct next action</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Shop Bestsellers" or "Take the Skin Quiz"</td>
+            </tr>
+        </table>
+    </div>
+
+    <h4 style="color: #F9A8D4;">Collection Page Copy — SEO + Conversion</h4>
+    <p>Collection page descriptions are the most underused CRO opportunity on Shopify. Most stores leave them blank. DH stores use them for SEO ranking AND to guide purchase decisions.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <p><strong>Before (most stores):</strong></p>
+        <p style="color: #94A3B8; margin: 5px 0;"><em>"Browse our collection of face serums."</em></p>
+        <p style="margin: 15px 0 5px 0;"><strong>After (DH standard):</strong></p>
+        <p style="margin: 5px 0;"><em>"Find the face serum your skin has been begging for. Whether you are fighting dark spots, dehydration, or fine lines — our dermatologist-formulated serums deliver visible results in 14 days or your money back. Each serum is made with 95%+ natural ingredients and zero parabens. Not sure which one? Take our 60-second Skin Quiz."</em></p>
+        <p style="margin: 10px 0 0 0; color: #4ADE80;"><strong>This description: 1) Ranks for "face serum" keywords, 2) Addresses common pain points, 3) Adds trust signals, 4) Provides a CTA for undecided visitors.</strong></p>
+    </div>
+
+    <h4 style="color: #F9A8D4;">Email Capture Popup Copy — 5%+ Conversion Formulas</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(236, 72, 153, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Low Converting (1-2%)</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ High Converting (5%+)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Subscribe to our newsletter"</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Get 15% Off Your First Order"</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Stay updated with our latest news"</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Unlock Free Shipping + Exclusive Access"</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Join our mailing list"</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Want 500 OFF your first order? Just one thing..."</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Enter your email"</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Join 25,000+ people who get our skincare secrets first"</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Why the right column works:</strong> Each one offers a specific, tangible value (discount, access, community membership). No one cares about your "newsletter." They care about what they GET.</p>
+
+    <h4 style="color: #F9A8D4;">Trust Copy — Return Policy, Guarantees & FAQ</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <p><strong style="color: #6EE7B7;">Return Policy — Before vs After:</strong></p>
+        <p style="color: #94A3B8;"><strong>Before:</strong> "Returns accepted within 30 days. Product must be unused and in original packaging. Customer pays return shipping. Refund processing takes 7-10 business days."</p>
+        <p style="margin: 10px 0 0 0;"><strong>After:</strong> "Not 100% in love? No worries. Send it back within 30 days — we will pay for return shipping AND refund you within 48 hours. No questions asked. We would rather lose a sale than have an unhappy customer."</p>
+        <p style="margin: 10px 0 0 0; color: #4ADE80;"><strong>Why:</strong> The "After" version removes risk, shows empathy, and adds specific timelines. It makes the reader FEEL safe — which is what converts browsers into buyers.</p>
+
+        <p style="margin: 20px 0 5px 0;"><strong style="color: #6EE7B7;">Guarantee Statement Template:</strong></p>
+        <p style="padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 8px; margin: 5px 0;"><em>"We're so confident you'll love [Product Name] that we back every purchase with our [X]-Day Happiness Guarantee. If it doesn't [specific promise], we'll refund every rupee — and you keep the product. That's how much we believe in what we make."</em></p>
+
+        <p style="margin: 20px 0 5px 0;"><strong style="color: #6EE7B7;">FAQ Answer Pattern — Address the REAL Question:</strong></p>
+        <p style="color: #94A3B8;"><strong>Surface question:</strong> "What is your shipping time?"</p>
+        <p><strong>Real question:</strong> "Am I going to wait forever and regret ordering?"</p>
+        <p><strong>DH-style answer:</strong> "Most orders ship within 24 hours and reach you in 3-5 business days. You will get a tracking link via email + WhatsApp the moment your package leaves our warehouse. Over 96% of our orders arrive on time — and if yours doesn't, we'll make it right."</p>
+    </div>
+
+    <h4 style="color: #F9A8D4;">Urgency Copy — Ethical vs Dark Patterns</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(236, 72, 153, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">✅ Ethical Urgency (DH Standard)</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">❌ Dark Pattern Urgency (BANNED at DH)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Order by 2 PM for same-day dispatch" (real operational deadline)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"HURRY! This deal expires in 10:00 minutes!" (resets on refresh)</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Diwali Sale ends November 12" (real end date)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"LAST CHANCE!" displayed permanently on every page</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Only 3 left — restocking in 4 weeks" (real inventory data)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Almost gone!" on a product with 500+ units</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Early-bird pricing ends when we hit 100 orders" (real milestone)</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Today only!" shown to every visitor every day</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- =================================================================== -->
+<!-- SECTION 4: PRACTICAL IMPLEMENTATION ON SHOPIFY -->
+<!-- =================================================================== -->
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(56, 189, 248, 0.1)); border: 2px solid rgba(14, 165, 233, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #38BDF8; margin-top: 0;">🔧 SECTION 4: Practical Implementation — Where to Put Each Principle on Shopify</h3>
+
+    <h4 style="color: #7DD3FC;">CRO Principle Placement Map</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(14, 165, 233, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Psychology Principle</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Where on Shopify</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Liquid File / Section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Trust/Authority</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Below header (trust bar), below ATC button, footer</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">sections/trust-bar.liquid, snippets/trust-badges.liquid</td>
+            </tr>
+            <tr style="background: rgba(14, 165, 233, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social Proof</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Below product title, homepage section, collection cards</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">snippets/product-rating.liquid, sections/testimonials.liquid</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scarcity</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Above ATC button, product card badges</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">snippets/low-stock-badge.liquid, sections/main-product.liquid</td>
+            </tr>
+            <tr style="background: rgba(14, 165, 233, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reciprocity</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Announcement bar, cart drawer, popup</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">sections/announcement-bar.liquid, snippets/free-shipping-bar.liquid</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Anchoring</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product price display, compare-at price</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">snippets/price.liquid (show compare_at_price FIRST, crossed out)</td>
+            </tr>
+            <tr style="background: rgba(14, 165, 233, 0.05);">
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Loss Aversion</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cart page, abandoned cart emails, popup exit-intent</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">sections/main-cart.liquid, templates/cart.liquid</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Endowment Effect</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cart drawer language, wishlist page</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">snippets/cart-drawer.liquid ("Your items", "Reserved for you")</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #7DD3FC;">A/B Testing Basics for Shopify</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #38BDF8; padding: 20px; margin: 15px 0;">
+        <p><strong>What to A/B Test (in priority order):</strong></p>
+        <ol style="margin: 5px 0 0 0;">
+            <li><strong>CTA button text and color</strong> — highest ROI test, easiest to run</li>
+            <li><strong>Hero headline copy</strong> — first thing visitors see, biggest impact on bounce rate</li>
+            <li><strong>Product image order</strong> — lifestyle first vs product-only first</li>
+            <li><strong>Price display format</strong> — with or without compare-at price anchor</li>
+            <li><strong>Social proof placement</strong> — above fold vs below description</li>
+            <li><strong>Free shipping threshold</strong> — ₹499 vs ₹799 vs ₹999</li>
+        </ol>
+        <p style="margin: 15px 0 5px 0;"><strong>Minimum Sample Size Rules:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li>You need at least <strong>1,000 visitors per variation</strong> (so 2,000 total for an A/B test)</li>
+            <li>Run tests for a minimum of <strong>2 full weeks</strong> (to account for day-of-week variation)</li>
+            <li>Look for <strong>95% statistical significance</strong> before declaring a winner</li>
+            <li>For stores with less than 5,000 monthly visitors, focus on <strong>big changes</strong> (not micro-optimizations) — you won't have enough data for subtle differences</li>
+        </ul>
+        <p style="margin: 15px 0 5px 0;"><strong>DH-Approved A/B Testing Tools:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>Google Optimize (free):</strong> Basic A/B tests with Google Analytics integration</li>
+            <li><strong>Shopify native A/B (themes):</strong> Use duplicate themes and split traffic via Cloudflare</li>
+            <li><strong>Neat A/B Testing (Shopify app):</strong> Lightweight, built for Shopify themes</li>
+        </ul>
+    </div>
+
+    <h4 style="color: #7DD3FC;">Heatmap Analysis — Hotjar/Clarity Setup</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #38BDF8; padding: 20px; margin: 15px 0;">
+        <p><strong>Microsoft Clarity (FREE — DH default for all stores):</strong></p>
+        <pre style="background: #1E293B; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.85em; margin: 10px 0;">
+&lt;!-- Add to theme.liquid before &lt;/head&gt; --&gt;
+&lt;script type="text/javascript"&gt;
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","YOUR_CLARITY_ID");
+&lt;/script&gt;</pre>
+        <p style="margin: 10px 0 5px 0;"><strong>What to look for in heatmaps:</strong></p>
+        <ul style="margin: 5px 0 0 0;">
+            <li><strong>Dead clicks:</strong> Users clicking on non-clickable elements — they expect it to be a link or button. Fix: make it clickable or change styling.</li>
+            <li><strong>Rage clicks:</strong> Users clicking the same spot repeatedly — something is broken or confusing. Fix: investigate the element immediately.</li>
+            <li><strong>Scroll depth:</strong> If 70% of users never see your CTA, it is too far down the page. Fix: move it above the fold.</li>
+            <li><strong>Ignored areas:</strong> Sections getting zero attention — remove them or redesign them. Wasted space = wasted opportunity.</li>
+            <li><strong>Form abandonment:</strong> Which field do users drop off at? Fix: simplify or remove that field.</li>
+        </ul>
+    </div>
+
+    <h4 style="color: #7DD3FC;">The DH CRO Audit Checklist — 25 Points Every Store Must Pass</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <p><strong style="color: #FBBF24;">Run this checklist on EVERY store before launch:</strong></p>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.9em;">
+            <thead>
+                <tr style="background: rgba(251, 191, 36, 0.15);">
+                    <th style="padding: 8px; border: 1px solid rgba(255,255,255,0.1); width: 5%;">#</th>
+                    <th style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Check Item</th>
+                    <th style="padding: 8px; border: 1px solid rgba(255,255,255,0.1); width: 15%;">Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Hero headline communicates #1 value prop in under 8 words</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Copy</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Trust bar visible within first viewport (free shipping, returns, guarantee)</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Trust</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">CTA button is above the fold on both mobile and desktop</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">CTA</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Product descriptions use Feature → Benefit → Emotion framework</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Copy</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Reviews/ratings visible on product page and collection cards</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Social Proof</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">6</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Compare-at price shown (with strikethrough) when applicable</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Anchoring</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">7</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Low stock indicators connected to real inventory data</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Scarcity</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">8</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Free shipping threshold clearly displayed in announcement bar + cart</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Reciprocity</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">9</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Mobile page speed above 85 on PageSpeed Insights</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Technical</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">10</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Cart page shows order summary, shipping estimate, trust badges</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Checkout</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">11</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Return/refund policy linked on product page AND cart page</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Trust</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">12</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Payment method icons displayed below ATC button or in footer</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Trust</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">13</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Email capture popup offers tangible value (discount/free shipping), not "subscribe to newsletter"</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Lead Gen</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">14</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Collection pages have SEO-optimized descriptions with CTA</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">SEO + Copy</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">15</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Product images include lifestyle shots (not just white backgrounds)</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Liking</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">16</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">FAQ section addresses top 5 pre-purchase concerns</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Trust</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">17</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Cross-sell/upsell section on product page and cart page</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">AOV</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">18</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">404 page has search bar and popular product links (not dead end)</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Recovery</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">19</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Sticky ATC button on mobile product pages</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Mobile CRO</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">20</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Heatmap tool installed (Clarity/Hotjar) and recording data</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Analytics</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">21</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Checkout page has no unexpected extra costs (shipping visible from PDP)</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Checkout</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">22</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Search returns relevant results (test 10 common product queries)</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Navigation</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">23</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">No fake urgency or fake scarcity elements on the store</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Ethics</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">24</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">All CTA buttons use action-oriented, benefit-driven copy</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Copy</td></tr>
+                <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">25</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Out-of-stock products have "Notify Me" + alternative recommendations</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Recovery</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 style="color: #7DD3FC;">Common CRO Mistakes Developers Make</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(14, 165, 233, 0.2);">
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mistake</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why It Happens</th>
+                <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">The Fix</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CTA button buried below the fold</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Focused on design aesthetics over conversion</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ATC must be visible within first viewport on all devices. Use sticky ATC on mobile.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Using generic placeholder copy</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Client will provide copy later" — they never do</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Write conversion-focused placeholder copy using the DH templates. Never launch with Lorem ipsum.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No trust signals on PDP</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Thinks trust badges are tacky or unnecessary</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ALWAYS include trust icons below ATC: secure checkout, return policy, shipping info. Data shows 17% CR increase.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Too many navigation options</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Trying to showcase everything at once</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Max 6-7 top-level nav items. Use mega menus for depth. Paradox of Choice applies to navigation too.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ignoring mobile cart experience</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Testing only on desktop during development</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">75%+ of Shopify traffic is mobile. Cart drawer must be smooth, fast, and show trust + upsell on mobile.</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hiding shipping costs until checkout</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Following the default Shopify flow</td>
+                <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unexpected costs are the #1 reason for cart abandonment (48%). Show shipping cost or free shipping threshold on PDP.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 style="color: #7DD3FC;">Before / After — Real Copy Changes and Their Impact</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #38BDF8; padding: 20px; margin: 15px 0;">
+        <p><strong style="color: #38BDF8;">Example 1: Product Description</strong></p>
+        <p style="color: #EF4444;"><strong>Before:</strong> "Organic cotton t-shirt. Available in 5 colors. Machine washable. 100% cotton."</p>
+        <p style="color: #4ADE80;"><strong>After:</strong> "The t-shirt you'll reach for every single morning. Made from butter-soft 100% organic cotton that gets softer with every wash. No shrinking, no fading, no regrets. Available in 5 timeless colors that pair with literally everything in your closet."</p>
+        <p style="color: #FCD34D;"><strong>Result:</strong> Add-to-cart rate increased from 4.2% to 7.8% (+85%)</p>
+
+        <p style="margin-top: 20px;"><strong style="color: #38BDF8;">Example 2: CTA Button</strong></p>
+        <p style="color: #EF4444;"><strong>Before:</strong> "Submit" (on a quiz funnel)</p>
+        <p style="color: #4ADE80;"><strong>After:</strong> "Show Me My Perfect Match"</p>
+        <p style="color: #FCD34D;"><strong>Result:</strong> Quiz completion rate increased from 34% to 62% (+82%)</p>
+
+        <p style="margin-top: 20px;"><strong style="color: #38BDF8;">Example 3: Email Popup Headline</strong></p>
+        <p style="color: #EF4444;"><strong>Before:</strong> "Subscribe to our newsletter for updates"</p>
+        <p style="color: #4ADE80;"><strong>After:</strong> "Wait — before you go. 15% off is yours."</p>
+        <p style="color: #FCD34D;"><strong>Result:</strong> Popup conversion jumped from 1.8% to 6.3% (+250%)</p>
+    </div>
+</div>
+
+<!-- =================================================================== -->
+<!-- SECTION 5: DH COPYWRITING TEMPLATES -->
+<!-- =================================================================== -->
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(52, 211, 153, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📝 SECTION 5: The DH Copywriting Templates — Copy/Paste & Customize</h3>
+    <p>These templates are your starting point. NEVER launch a store with Lorem ipsum or blank sections. Use these, customize for the brand, and you will already be ahead of 90% of Shopify stores.</p>
+
+    <h4 style="color: #6EE7B7;">Product Description Template</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <pre style="background: #1E293B; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.85em; white-space: pre-wrap;">
+[OPENING HOOK — 1 sentence that speaks to the customer's desire or pain point]
+"Tired of [common problem]? Meet the [Product Name]."
+
+[BENEFIT PARAGRAPH — 2-3 sentences explaining what the product DOES for them]
+"[Product Name] [primary benefit statement]. [Secondary benefit].
+[Emotional outcome — how they'll FEEL]."
+
+[FEATURES LIST — 4-6 bullet points, each starting with a benefit]
+- [Benefit]: [Feature explanation]
+- [Benefit]: [Feature explanation]
+- [Benefit]: [Feature explanation]
+- [Benefit]: [Feature explanation]
+
+[SOCIAL PROOF — 1 short customer quote or stat]
+"Join [number]+ customers who [achieved result]."
+
+[TRUST + CTA]
+"[Guarantee statement]. [Urgency if applicable]. [Call to action]."</pre>
+    </div>
+
+    <h4 style="color: #6EE7B7;">Homepage Headline Formulas — 10 Proven Templates</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
+            <thead>
+                <tr style="background: rgba(16, 185, 129, 0.15);">
+                    <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">#</th>
+                    <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Formula</th>
+                    <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">[Product Category] That Actually [Desired Result]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Skincare That Actually Works"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">The [Adjective] Way to [Desired Outcome]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"The Effortless Way to Look Put Together"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Say Goodbye to [Pain Point]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Say Goodbye to Back Pain Mornings"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">[Number]+ [People] Trust [Brand] for [Benefit]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"50,000+ Athletes Trust FuelFit for Recovery"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Built for [Specific Audience] Who [Characteristic]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Built for Moms Who Refuse to Compromise on Style"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">6</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Your [Routine/Life] Deserves [Better/The Best]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Your Morning Routine Deserves Better"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">7</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Not Just [Product] — [Elevated Positioning]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Not Just Coffee — A Daily Ritual"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">8</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">[Result] in [Timeframe] — Guaranteed</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Clearer Skin in 14 Days — Guaranteed"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">9</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Finally, [Category] Made for [Real Need]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Finally, Supplements Made for Indian Bodies"</td></tr>
+                <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">10</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">[Do Something You Love] Without [Common Tradeoff]</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Eat Dessert Without the Guilt"</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 style="color: #6EE7B7;">Email Popup Templates</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <p><strong>Template 1 — The Discount Hook:</strong></p>
+        <p style="padding: 10px; background: rgba(16, 185, 129, 0.1); border-radius: 6px;"><strong>Headline:</strong> "Get [X]% Off — Just Because You're Here"<br><strong>Subtext:</strong> "Join [number]+ insiders who get first access to drops, deals, and surprises."<br><strong>Button:</strong> "Claim My Discount"<br><strong>Dismiss:</strong> "No thanks, I'll pay full price"</p>
+
+        <p style="margin-top: 15px;"><strong>Template 2 — The Curiosity Hook:</strong></p>
+        <p style="padding: 10px; background: rgba(16, 185, 129, 0.1); border-radius: 6px;"><strong>Headline:</strong> "Psst... Want the Insider Price?"<br><strong>Subtext:</strong> "Our email list gets exclusive deals you won't find anywhere else."<br><strong>Button:</strong> "Show Me the Deals"<br><strong>Dismiss:</strong> "I prefer to pay more"</p>
+
+        <p style="margin-top: 15px;"><strong>Template 3 — The Free Shipping Hook:</strong></p>
+        <p style="padding: 10px; background: rgba(16, 185, 129, 0.1); border-radius: 6px;"><strong>Headline:</strong> "Free Shipping on Your First Order"<br><strong>Subtext:</strong> "No minimum. No catch. Just enter your email."<br><strong>Button:</strong> "Unlock Free Shipping"<br><strong>Dismiss:</strong> "I'll pay for shipping"</p>
+    </div>
+
+    <h4 style="color: #6EE7B7;">Cart Abandonment Messaging Templates</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <p><strong>Exit-Intent Popup (on cart/checkout page):</strong></p>
+        <p style="padding: 10px; background: rgba(16, 185, 129, 0.1); border-radius: 6px;">"Wait! Your [Product Name] is almost yours."<br>"Complete your order in the next 15 minutes and get free shipping."<br>Button: "Complete My Order"</p>
+
+        <p style="margin-top: 15px;"><strong>Abandoned Cart Email #1 (sent 1 hour later):</strong></p>
+        <p style="padding: 10px; background: rgba(16, 185, 129, 0.1); border-radius: 6px;"><strong>Subject:</strong> "Did you forget something?"<br><strong>Body:</strong> "Hey [Name], looks like you left [Product] behind. Good news — it's still in your cart. But at the rate it's selling, we can't hold it forever."<br><strong>CTA:</strong> "Return to My Cart"</p>
+
+        <p style="margin-top: 15px;"><strong>Abandoned Cart Email #2 (sent 24 hours later):</strong></p>
+        <p style="padding: 10px; background: rgba(16, 185, 129, 0.1); border-radius: 6px;"><strong>Subject:</strong> "Still thinking about it? Here's 10% off."<br><strong>Body:</strong> "We get it — decisions are hard. Here's a little nudge: use code COMEBACK10 for 10% off your cart. Valid for 48 hours only."<br><strong>CTA:</strong> "Claim My 10% Off"</p>
+    </div>
+
+    <h4 style="color: #6EE7B7;">Out-of-Stock Messaging Templates</h4>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <p><strong>On Product Page (replaces disabled ATC button):</strong></p>
+        <pre style="background: #1E293B; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.85em; margin: 10px 0;">
+&lt;!-- Out-of-stock section with email capture --&gt;
+{%- if product.available == false -%}
+  &lt;div class="oos-section" style="
+    background: rgba(251, 146, 60, 0.1); border: 1px solid rgba(251, 146, 60, 0.3);
+    border-radius: 10px; padding: 20px; text-align: center; margin: 15px 0;"&gt;
+    &lt;p style="font-weight: 600; color: #FB923C; margin: 0 0 5px 0;"&gt;
+      Sold Out — This Went Fast! 🔥
+    &lt;/p&gt;
+    &lt;p style="font-size: 0.9em; margin: 0 0 15px 0;"&gt;
+      Enter your email and we'll notify you the SECOND it's back.
+    &lt;/p&gt;
+    &lt;form class="oos-notify-form" style="display: flex; gap: 8px; max-width: 400px; margin: 0 auto;"&gt;
+      &lt;input type="email" placeholder="your@email.com" required
+        style="flex: 1; padding: 10px 14px; border-radius: 6px;
+               border: 1px solid rgba(255,255,255,0.2);" /&gt;
+      &lt;button type="submit" style="
+        padding: 10px 20px; background: #FB923C; color: #fff;
+        border: none; border-radius: 6px; font-weight: 600; cursor: pointer;"&gt;
+        Notify Me
+      &lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+{%- endif -%}</pre>
+        <p style="margin: 10px 0 0 0;"><strong>Key copy principles:</strong> The messaging reframes "out of stock" (negative) as "sold out — this went fast" (social proof + scarcity). It gives the user an action to take (enter email) instead of a dead end. This recovers 8-15% of would-be-lost customers as email leads.</p>
+    </div>
+</div>
+
+<!-- =================================================================== -->
+<!-- FINAL SUMMARY -->
+<!-- =================================================================== -->
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(251, 146, 60, 0.15)); border: 2px solid rgba(234, 88, 12, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FB923C; margin-top: 0;">🎯 Summary — What You Must Remember</h3>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FB923C; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FB923C;">The 10 CRO Commandments for DH Developers:</strong>
+        <ol style="margin: 10px 0 0 0;">
+            <li><strong>Every design decision must have a conversion reason.</strong> If you can't explain why, rethink it.</li>
+            <li><strong>Copy is not filler.</strong> It is the #1 conversion lever. Write it like revenue depends on it — because it does.</li>
+            <li><strong>Trust is not optional.</strong> Trust bar, reviews, guarantees, and payment icons on every store.</li>
+            <li><strong>Mobile first, always.</strong> 75%+ of Shopify traffic is mobile. If it doesn't convert on mobile, it doesn't convert.</li>
+            <li><strong>Speed is CRO.</strong> Every 1-second delay in load time drops conversion by 7%.</li>
+            <li><strong>Use psychology ethically.</strong> Persuasion based on truth builds brands. Dark patterns destroy them.</li>
+            <li><strong>Test, don't guess.</strong> Install Clarity on every store. Watch 10 session recordings before any CRO changes.</li>
+            <li><strong>The ATC button is sacred.</strong> Always visible, always above the fold on mobile, always benefit-driven copy.</li>
+            <li><strong>Price anchoring is free money.</strong> Always show compare-at price when applicable.</li>
+            <li><strong>Run the 25-point CRO checklist on every single store.</strong> No exceptions.</li>
+        </ol>
+    </div>
+
+    <div class="warning-box">
+        <strong>⚠️ Your Challenge After This Task:</strong><br>
+        Pick any live Shopify store (competitor or client). Run the 25-point DH CRO Audit Checklist on it. Document every failure. Write a 1-page CRO improvement plan with specific copy suggestions. This exercise alone will teach you more about CRO than any course ever could — because you'll be analyzing REAL stores with REAL problems.
+    </div>
+</div>
+`;
+
+
+const task17Quiz = [
+    {
+        q: "A Shopify store gets 80,000 visitors/month and converts at 1.4% with an AOV of ₹2,500. If you improve the conversion rate to 2.4% (a 1% increase), what is the approximate additional MONTHLY revenue?",
+        o: [
+            "₹50,000 — a small improvement with minimal business impact",
+            "₹2,00,000 — the additional 800 monthly orders at ₹2,500 AOV generate significant revenue",
+            "₹10,00,000 — every percentage point multiplies revenue tenfold",
+            "₹25,000 — CRO improvements rarely have meaningful revenue impact"
+        ],
+        c: 1
+    },
+    {
+        q: "A skincare product page shows the price as '₹1,499' with no other price reference. A competitor shows '₹2,999' crossed out, then '₹1,499' next to it. Which psychology principle explains why the competitor's approach converts better, and why?",
+        o: [
+            "Social Proof — seeing a higher price proves other people valued the product more",
+            "Anchoring — the crossed-out ₹2,999 becomes the mental reference point, making ₹1,499 feel like a steal by comparison",
+            "Reciprocity — the customer feels the brand is giving them a discount gift, so they feel obligated to purchase",
+            "Scarcity — showing two prices implies the lower price is temporary and about to disappear"
+        ],
+        c: 1
+    },
+    {
+        q: "You are writing a product description for an organic face serum. Which of these follows the Feature → Benefit → Emotion framework correctly?",
+        o: [
+            "'Contains Vitamin C, Hyaluronic Acid, and Niacinamide. Organic formula. 30ml bottle.' — lists features clearly for informed buyers",
+            "'Our serum brightens skin. It reduces dark spots. It hydrates deeply. Buy now for better skin.' — focuses on benefits without unnecessary details",
+            "'Infused with 20% Vitamin C and Hyaluronic Acid, this serum fades dark spots in 14 days. Wake up to the kind of glow that makes you skip foundation entirely.' — Feature, then Benefit, then Emotion",
+            "'You deserve beautiful skin. Love yourself. Treat yourself to our premium organic serum today.' — emotion-first copy creates the strongest connection"
+        ],
+        c: 2
+    },
+    {
+        q: "A client's store has a popup that says 'Subscribe to our newsletter for updates.' It converts at 1.2%. You need to improve it. Which replacement headline would likely achieve 5%+ conversion and why?",
+        o: [
+            "'Enter your email below' — simple and direct copy always wins over clever copy",
+            "'SIGN UP NOW! DON'T MISS OUT! HURRY!!!' — urgency and capitalization demand attention",
+            "'Get 15% Off Your First Order' — offers specific, tangible value in exchange for the email, making the trade feel worth it",
+            "'We have a newsletter' — honest and transparent copy builds trust better than sales tactics"
+        ],
+        c: 2
+    },
+    {
+        q: "A Shopify store has a countdown timer that resets to '2 hours left' every time a customer refreshes the page. There is no actual sale ending. What is the correct DH position on this?",
+        o: [
+            "This is fine — urgency increases conversions regardless of whether the deadline is real",
+            "This is a dark pattern that DH strictly prohibits. Fake urgency destroys customer trust, can violate consumer protection laws, and damages the brand long-term. Only use countdowns tied to real deadlines.",
+            "This is acceptable if the product is high-margin since the revenue gain justifies the approach",
+            "This is fine as long as you disclose somewhere in the fine print that the timer is for motivational purposes"
+        ],
+        c: 1
+    },
+    {
+        q: "You are running a CRO audit and notice the ATC (Add to Cart) button on mobile requires scrolling past 3 screens of product description to reach. Heatmap data shows 68% of mobile users never scroll that far. What should you do?",
+        o: [
+            "Nothing — users who really want the product will find the button regardless of where it is",
+            "Move the entire product description below the ATC button AND implement a sticky ATC button that stays fixed at the bottom of the mobile viewport during scroll",
+            "Remove the product description to make the ATC button appear higher on the page",
+            "Add an arrow animation pointing downward to encourage users to scroll to the button"
+        ],
+        c: 1
+    },
+    {
+        q: "A store with 25 product variants per product (5 sizes x 5 colors) has a 2.1% conversion rate. After reducing to 3 curated color options per size (15 total variants) with a 'More Colors' expandable option, conversion jumps to 3.4%. Which psychological principle explains this?",
+        o: [
+            "Scarcity — fewer visible options makes each one seem more limited and valuable",
+            "Anchoring — the initial 3 options anchor expectations before revealing more choices",
+            "Paradox of Choice — too many options causes decision paralysis. Reducing visible choices simplifies the decision and increases action.",
+            "Social Proof — fewer options implies the remaining ones are the most popular choices"
+        ],
+        c: 2
+    },
+    {
+        q: "A client asks you to add 'Only 2 left in stock!' badges to ALL products, even those with 500+ inventory. They say it will increase urgency and sales. How should you respond?",
+        o: [
+            "Implement it — the client is paying and knows their business better than you do",
+            "Implement it but use 'Only 5 left' instead of 'Only 2 left' to make it slightly more believable",
+            "Refuse and explain: DH policy prohibits fake scarcity. Instead, offer to implement REAL low-stock badges that trigger only when actual inventory drops below a threshold (e.g., 5 units), which builds genuine trust and avoids legal risk.",
+            "Implement it but add a tiny disclaimer at the bottom of the page saying 'Stock levels are approximate'"
+        ],
+        c: 2
+    },
+    {
+        q: "You are writing CTA button copy for a premium mattress brand (₹45,000 product). The current button says 'Buy Now.' Which alternative would likely convert better for this high-consideration purchase, and why?",
+        o: [
+            "'ADD TO CART NOW!!!' — urgency and capitalization create excitement for expensive purchases",
+            "'Start My 100-Night Free Trial' — reduces perceived risk with trial language, uses first-person 'My' for ownership (Endowment Effect), and reframes ₹45,000 as a risk-free trial rather than a purchase",
+            "'Purchase' — clean, professional, and unambiguous for luxury buyers",
+            "'Click Here' — simple and universally understood across all demographics"
+        ],
+        c: 1
+    },
+    {
+        q: "From the DH 25-Point CRO Audit Checklist, which combination represents the THREE most critical items that address the #1 cause of cart abandonment?",
+        o: [
+            "Reviews visible, email popup offers value, FAQ addresses concerns — social proof and information reduce cart abandonment",
+            "Free shipping threshold displayed, checkout has no unexpected costs, shipping shown on PDP — unexpected costs are the #1 abandonment reason (48%), and all three items ensure pricing transparency throughout the funnel",
+            "Hero headline under 8 words, CTA above fold, collection pages have descriptions — these optimize the top of funnel where most visitors drop",
+            "Low stock badges connected to real data, compare-at price shown, cross-sell sections added — urgency and value perception drive checkout completion"
+        ],
+        c: 1
+    }
+];
+
+// Expose to window for app lookup
+
 // Expose all content and quiz variables to window for app lookup
 window.task1Content = task1Content;
 window.task2Content = task2Content;
@@ -6182,7 +9015,7 @@ window.task10Content = task10Content;
 window.task11Content = task11Content;
 window.task12Content = task12Content;
 window.task13Content = task13Content;
-window.task14Content = task14Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -6196,7 +9029,15 @@ window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
 window.task12Quiz = task12Quiz;
 window.task13Quiz = task13Quiz;
+window.task18Quiz = task18Quiz;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
 window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -6213,7 +9054,8 @@ const allQuizzes = [
     task12Quiz,
     task13Quiz,
     task14Quiz,
-    [] /* no quiz var for position 11 */,
-    [] /* no quiz var for position 12 */,
-    [] /* no quiz var for position 13 */
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];
