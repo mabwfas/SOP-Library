@@ -174,8 +174,9 @@
                 streaks.current++;
                 streaks.best = Math.max(streaks.best, streaks.current);
             } else {
-                // Streak broken, start new
+                // Streak broken or first day, start new
                 streaks.current = 1;
+                streaks.best = Math.max(streaks.best, streaks.current);
             }
 
             streaks.lastDate = today;

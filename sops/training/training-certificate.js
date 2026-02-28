@@ -107,6 +107,14 @@
         }
 
         window.showCertificate = function () {
+            // Guard: Only allow certificate if ALL tasks are completed
+            const _progress = (typeof progress !== 'undefined') ? progress : null;
+            const _tasks = (typeof trainingTasks !== 'undefined') ? trainingTasks : [];
+            if (_progress && _tasks.length > 0 && _progress.completedTasks.length < _tasks.length) {
+                alert('Complete all ' + _tasks.length + ' tasks to unlock your certificate!');
+                return;
+            }
+
             // Call original first
             originalShowCertificate.call(this);
 

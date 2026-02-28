@@ -32,6 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Render Tasks List
+// Show locked task feedback
+function showLockedMessage(taskId) {
+    const existing = document.getElementById('lockedToast');
+    if (existing) existing.remove();
+    const toast = document.createElement('div');
+    toast.id = 'lockedToast';
+    toast.style.cssText = 'position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#1E293B;border:1px solid #F59E0B;color:#F59E0B;padding:12px 24px;border-radius:10px;font-size:0.95em;z-index:10000;box-shadow:0 4px 20px rgba(0,0,0,0.3);';
+    toast.textContent = '\u{1F512} Complete Task ' + (taskId - 1) + ' first to unlock this task';
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2500);
+}
+
 function renderTasksList() {
     const container = document.getElementById('tasksList');
     container.innerHTML = '';
@@ -47,13 +59,15 @@ function renderTasksList() {
             <div class="task-number">${isCompleted ? '✓' : task.id}</div>
             <div class="task-info">
                 <h3>${task.title}</h3>
-                <p>${task.description}</p>
+                <p title="${task.description}">${task.description}</p>
             </div>
             <div class="task-status">${isCompleted ? '' : isLocked ? '🔒' : '→'}</div>
         `;
 
         if (!isLocked) {
             card.onclick = () => openTask(index);
+        } else {
+            card.onclick = () => showLockedMessage(task.id);
         }
 
         container.appendChild(card);

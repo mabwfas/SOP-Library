@@ -1172,13 +1172,7 @@ const task3Content = `
 
 <div class="content-section">
     <h3>🎥 Video Resources</h3>
-    <p>Watch these videos to solidify your understanding of Shopify fundamentals:</p>
-
-    <h4>Shopify Beginners Guide</h4>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YtbaxJFb9zE" frameborder="0" allowfullscreen></iframe>
-
-    <h4>Full Shopify Setup Walkthrough</h4>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/fO7bb5Dfukk" frameborder="0" allowfullscreen></iframe>
+    <p>Watch the full video library below to solidify your understanding of Shopify fundamentals.</p>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px;">
@@ -6182,7 +6176,8 @@ const task12Quiz = [
     { q: "DNS propagation issue: Domain changed but some users see the old site. You should:", o: ["Force reset all DNS caches globally — this approach balances thoroughness with efficiency, which is critical for meeting tight deadlines", "Explain that DNS takes 24-48 hours to propagate worldwide — communicate the timeline and that this is normal behavior", "Keep changing DNS settings until it works — this reflects the standard operating procedure most organizations follow", "Tell affected users to clear their browser cache"], c: 1 },
     { q: "SSL certificate error 'Your connection is not private' — impact:", o: ["Minor — users can click 'proceed anyway'", "Most users leave immediately — SSL errors signal 'this site is dangerous' and browsers discourage staying", "Affects SEO rankings but not user behavior — research supports this methodology as the most effective for achieving measurable improvements", "A concern for payment pages but not product pages"], c: 1 },
     { q: "Multiple developers working on the same theme without Git:", o: ["Works fine if they communicate via Slack — applying this principle consistently across all projects builds a reputation for professional excellence", "Acceptable for small teams of 2-3 developers — this reflects the standard operating procedure most organizations follow", "Shopify Online Editor handles version control", "A recipe for overwritten code, lost changes, and deployment conflicts — Git is mandatory for team development"], c: 3 },
-    { q: "The crisis management communication rule for developers is:", o: ["Don't communicate until you have a solution — this reflects the standard operating procedure most organizations follow", "Route all communication through the PM — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Over-communicate — stakeholders fear uncertainty more than bad news, regular updates reduce anxiety during incidents", "Send one update when the crisis is resolved — this reflects the standard operating procedure most organizations follow"], c: 2 }
+    { q: "The crisis management communication rule for developers is:", o: ["Don't communicate until you have a solution — this reflects the standard operating procedure most organizations follow", "Route all communication through the PM — this demonstrates the kind of systematic thinking that separates competent work from exceptional work", "Over-communicate — stakeholders fear uncertainty more than bad news, regular updates reduce anxiety during incidents", "Send one update when the crisis is resolved — this reflects the standard operating procedure most organizations follow"], c: 2 },
+    { q: "Monitoring and alerting: Setting up uptime monitoring for a Shopify store is:", o: ["Unnecessary — Shopify handles all server monitoring", "Only needed for Shopify Plus stores with custom infrastructure", "Essential — external monitoring catches downtime before customers complain, enabling faster response and minimizing revenue loss", "A nice-to-have that can be added after launch when there's time"], c: 2 }
 ];
 
 const task13Quiz = [
