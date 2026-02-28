@@ -20,7 +20,7 @@ const trainingTasks = [
         contentFirst: false,
         studyGuide: [
             "⏱️ Estimated Time: 20-30 minutes",
-            "📖 Read SOP: sales-sop.html - All sections about Digital Heroes",
+            "📖 Read SOP: All sections about Digital Heroes from the employee handbook",
             "📖 Study 'Non-Negotiable Sales Rules' section completely",
             "🔍 YouTube: Watch Digital Marketing Heroes channel videos"
         ]
@@ -116,8 +116,8 @@ const trainingTasks = [
         contentFirst: false,
         studyGuide: [
             "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Full SOP Review: Re-read entire sales-sop.html",
-            "✅ Complete Tasks 1-9 with 10/10 on all quizzes",
+            "📖 Full SOP Review: Re-read all training materials from Tasks 1-10",
+            "✅ Complete Tasks 1-10 with perfect scores on all quizzes (15/15 on Task 1, 10/10 on Tasks 2-10)",
             "🎥 Prepare 30-minute video walkthrough"
         ]
     }
@@ -5273,7 +5273,7 @@ You will face realistic scenarios and choose the best response. Review all previ
 
 // Task 10 Content: Final Certification
 const task11Content = `
-<h2>🏆 TASK 10: FINAL CERTIFICATION EXAM</h2>
+<h2>🏆 TASK 11: FINAL CERTIFICATION EXAM</h2>
 
 <div class="content-section" style="text-align: center;">
 <div class="highlight-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(99, 102, 241, 0.3)); border: none; padding: 40px;">
@@ -5286,7 +5286,7 @@ const task11Content = `
 <h3>📋 Exam Details</h3>
 <div class="highlight-box">
 <ul style="margin-bottom: 0;">
-<li>📝 <strong>20 questions</strong> covering ALL topics from Tasks 1-9</li>
+<li>📝 <strong>20 questions</strong> covering ALL topics from Tasks 1-10</li>
 <li>🎯 <strong>20/20 required</strong> — no exceptions</li>
 <li>⏱️ Questions are randomized each attempt</li>
 <li>🔄 Unlimited retries (but you must study between attempts)</li>
@@ -5303,38 +5303,42 @@ const task11Content = `
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 1</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mindset, discipline, rejection, deliberate practice</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Company culture, policies, values, equity model, daily rules</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 2</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Company knowledge, premium positioning, rules</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mindset, discipline, rejection, deliberate practice</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 3</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Packages, pricing, timelines, presentations</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Company knowledge, premium positioning, rules</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 4</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">M.T.N.D. framework, red flags, disqualification</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Packages, pricing, timelines, presentations</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 5</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response templates, follow-up sequence</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">M.T.N.D. framework, red flags, disqualification</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 6</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Psychology techniques, brain rules</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response templates, follow-up sequence</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 7</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Objection handling, Feel-Felt-Found, scope reduction</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Psychology techniques, brain rules</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 8</td>
-<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Closing techniques, negotiation, after "yes" actions</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Objection handling, Feel-Felt-Found, scope reduction</td>
 </tr>
 <tr>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 9</td>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Closing techniques, negotiation, after "yes" actions</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task 10</td>
 <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete sales flow, scenarios, handoff, post-sale</td>
 </tr>
 </table>

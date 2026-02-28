@@ -37,8 +37,11 @@
         // Patch the startQuiz function
         patchStartQuiz(moduleId);
 
-        // Patch the showResults function  
+        // Patch the showResults function
         patchShowResults(moduleId);
+
+        // Patch openTask to stop timer when exiting quiz
+        patchOpenTask();
 
         // Add styles
         addEnhancementStyles();
@@ -163,6 +166,20 @@
                 // Still call original so the quiz results show
                 originalShowResults.call(this);
             }
+        };
+    }
+
+    /**
+     * Patch openTask to stop timer when exiting quiz
+     */
+    function patchOpenTask() {
+        const originalOpenTask = window.openTask;
+        if (!originalOpenTask) return;
+
+        window.openTask = function(index) {
+            // Always stop timer when navigating away from quiz
+            hideTimer();
+            originalOpenTask.call(this, index);
         };
     }
 

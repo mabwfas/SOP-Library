@@ -1,4 +1,4 @@
-const QA_MODE = true; // TEMPORARY - Remove after QA
+const QA_MODE = false; // TEMPORARY - Remove after QA
 
 // Fiverr Risk Training Application Logic
 
@@ -8,8 +8,6 @@ let currentQuestion = 0;
 let userAnswers = [];
 let progress = JSON.parse(localStorage.getItem('fiverrRiskTrainingProgress')) || { completedTasks: [], currentTask: 1 };
 let traineeName = localStorage.getItem('dhTraineeName') || localStorage.getItem('fiverrRiskTraineeName') || '';
-
-const TOTAL_TASKS = 10;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -48,7 +46,7 @@ function renderTasksList() {
                 <h3>${task.title}</h3>
                 <p>${task.description}</p>
             </div>
-            <div class="task-status">${isCompleted ? '✅' : isLocked ? '🔒' : '→'}</div>
+            <div class="task-status">${isCompleted ? '' : isLocked ? '🔒' : '→'}</div>
         `;
 
         if (!isLocked) {
@@ -61,13 +59,14 @@ function renderTasksList() {
 
 // Update Progress Bar
 function updateProgressBar() {
-    const realPercent = Math.min(100, Math.round((progress.completedTasks.length / TOTAL_TASKS) * 100));
-    document.getElementById('progressPercent').textContent = `${realPercent}%`;
-    document.getElementById('progressFill').style.width = `${realPercent}%`;
+    const totalTasks = trainingTasks.length;
+    const percent = Math.min(Math.round((progress.completedTasks.length / totalTasks) * 100), 100);
+    document.getElementById('progressPercent').textContent = `${percent}%`;
+    document.getElementById('progressFill').style.width = `${percent}%`;
 
     const certBtn = document.getElementById('certificateBtn');
     if (certBtn) {
-        certBtn.style.display = progress.completedTasks.length >= TOTAL_TASKS ? 'block' : 'none';
+        certBtn.style.display = progress.completedTasks.length === totalTasks ? 'block' : 'none';
     }
 }
 
@@ -114,7 +113,6 @@ function openTask(index) {
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${quizLength}/${quizLength} Required)</button>
-                ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
             </div>
         `;
     } else {
@@ -276,6 +274,9 @@ function showCertificate() {
 
     const modal = document.createElement('div');
     modal.id = 'certificateModal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-label', 'Certificate of Completion');
     modal.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;';
 
     modal.innerHTML = `

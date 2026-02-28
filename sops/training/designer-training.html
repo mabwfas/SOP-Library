@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI/UX Designer Training | Digital Heroes</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
     <link rel="stylesheet" href="../assets/css/sales-styles.css">
 
 </head>
@@ -27,6 +28,7 @@
         <div class="layout-container">
             <!-- Left Sidebar -->
             <aside class="sidebar">
+                <button class="sidebar-close-btn" onclick="toggleSidebar()" style="display:none; position:absolute; top:12px; right:12px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:50%; width:32px; height:32px; color:#F8FAFC; font-size:16px; cursor:pointer; align-items:center; justify-content:center; z-index:10;">✕</button>
 
                 <!-- Home Button -->
                 <a href="../training-hub.html" style="
@@ -90,7 +92,7 @@
                 <div class="welcome-screen" id="welcomeScreen">
                     <div class="welcome-icon">🎨</div>
                     <h2>Welcome to UI/UX Designer Training</h2>
-                    <p>Select Task 1 from the sidebar to begin your training.</p>
+                    <p>Your training is loading...</p>
                 </div>
 
                 <!-- Helper container for renders -->
@@ -113,6 +115,7 @@
             fontFamily: 'Inter, sans-serif'
         });
         window.renderMermaid = async () => {
+            if (!document.querySelector('.mermaid')) return;
             try {
                 await mermaid.run({
                     querySelector: '.mermaid'

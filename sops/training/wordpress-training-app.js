@@ -1,4 +1,4 @@
-const QA_MODE = true; // TEMPORARY - Remove after QA
+const QA_MODE = false; // TEMPORARY - Remove after QA
 
 // WordPress Developer Training Application Logic
 
@@ -46,7 +46,7 @@ function renderTasksList() {
                 <h3>${task.title}</h3>
                 <p>${task.description}</p>
             </div>
-            <div class="task-status">${isCompleted ? '✅' : isLocked ? '🔒' : '→'}</div>
+            <div class="task-status">${isCompleted ? '' : isLocked ? '🔒' : '→'}</div>
         `;
 
         if (!isLocked) {
@@ -66,7 +66,7 @@ function updateProgressBar() {
 
     const certBtn = document.getElementById('certificateBtn');
     if (certBtn) {
-        certBtn.style.display = progress.completedTasks.length >= totalTasks ? 'block' : 'none';
+        certBtn.style.display = progress.completedTasks.length === totalTasks ? 'block' : 'none';
     }
 }
 
@@ -114,7 +114,6 @@ function openTask(index) {
         html += `
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Take Quiz (${quizLength}/${quizLength} Required)</button>
-                ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
             </div>
         `;
     } else {
@@ -128,7 +127,6 @@ function openTask(index) {
             </div>
             <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="nav-btn" onclick="startQuiz(${index})">📝 Start Quiz (${quizLength}/${quizLength} Required)</button>
-                ${QA_MODE ? '<button class="nav-btn" onclick="skipTask(' + index + ')" style="background:#ff6600;border-color:#ff6600;">⏭️ Skip (QA)</button>' : ''}
             </div>
         `;
     }
@@ -205,9 +203,10 @@ function renderQuestion() {
                 </div>
             </div>
             <div class="quiz-nav">
-                <button class="nav-btn" ${currentQuestion === 0 ? 'disabled' : ''} onclick="prevQuestion()">← Previous</button>
-                <button class="nav-btn" id="nextBtn" disabled onclick="nextQuestion()">Next →</button>
+                <button class="nav-btn" ${currentQuestion === 0 ? 'style="visibility:hidden"' : ''} onclick="prevQuestion()">← Previous</button>
+                <button class="nav-btn" id="nextBtn" onclick="nextQuestion()">Next →</button>
             </div>
+            <div id="quizValidation" style="text-align: center; color: #F59E0B; font-size: 0.9em; margin-top: 10px; opacity: 0; transition: opacity 0.3s;">Please select an answer before proceeding</div>
         </div>
     `;
 
@@ -226,6 +225,11 @@ function selectAnswer(index) {
 // Next Question
 function nextQuestion() {
     const totalQuestions = window.currentQuiz ? window.currentQuiz.length : 10;
+    if (userAnswers[currentQuestion] === undefined) {
+        const msg = document.getElementById('quizValidation');
+        if (msg) { msg.style.opacity = '1'; setTimeout(() => msg.style.opacity = '0', 2000); }
+        return;
+    }
     if (currentQuestion < totalQuestions - 1) {
         currentQuestion++;
         renderQuestion();
@@ -351,6 +355,9 @@ function showCertificate() {
 
     const modal = document.createElement('div');
     modal.id = 'certificateModal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-label', 'Certificate of Completion');
     modal.style.cssText = `
         position: fixed; top: 0; left: 0; width: 100%; height: 100%;
         background: rgba(0, 0, 0, 0.9); z-index: 1000;

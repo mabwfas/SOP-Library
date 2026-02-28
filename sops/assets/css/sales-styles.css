@@ -573,3 +573,98 @@ img {
         display: none;
     }
 }
+
+/* ==================== */
+/* QA BUG FIXES         */
+/* ==================== */
+
+/* Issue #21: Progress bar overflow guard */
+.progress-fill {
+    max-width: 100%;
+}
+
+/* Issue #11/#25: Responsive YouTube iframes */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Fallback: Make bare iframes responsive even without wrapper */
+iframe[src*="youtube"] {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Issue #22: Header text overflow protection */
+.header-right p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Issue #26: Mobile sidebar close button */
+@media (max-width: 900px) {
+    .sidebar-close-btn {
+        display: flex !important;
+    }
+
+    .sidebar {
+        padding-top: 50px;
+    }
+}
+
+/* Issue #24: Timer mobile positioning */
+@media (max-width: 900px) {
+    #quizTimer {
+        top: 70px !important;
+        right: 10px !important;
+        font-size: 0.9em !important;
+        padding: 6px 12px !important;
+        z-index: 10001 !important;
+    }
+}
+
+/* Issue #27: Table mobile improvements */
+@media (max-width: 600px) {
+    table {
+        font-size: 0.85em;
+    }
+
+    th, td {
+        padding: 8px 6px;
+        min-width: 80px;
+    }
+}
+
+/* Issue #13: Quiz validation feedback animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Issue #35: Certificate modal focus styles */
+#certificateModal:focus {
+    outline: 2px solid #2DD4BF;
+    outline-offset: -2px;
+}
+
+/* Welcome screen - auto-hide when task loads */
+.welcome-screen {
+    transition: opacity 0.3s;
+}
