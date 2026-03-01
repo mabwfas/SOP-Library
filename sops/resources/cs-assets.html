@@ -1,115 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Success - Assets & Resources</title>
+    <title>Digital Heroes | Customer Success - Assets & Resources</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦸</text></svg>">
+    <link rel="stylesheet" href="../assets/css/shared-layout.css">
+    <link rel="stylesheet" href="../admin-mode.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0f172a;
-            color: white;
-            font-family: 'Inter', sans-serif;
-            display: flex;
-        }
-
-        .sidebar {
-            width: 280px;
-            background: #1e293b;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            overflow-y: auto;
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 20px;
-            z-index: 2000;
-        }
-
-        .sidebar-header {
-            padding: 25px 20px 15px 20px;
-            text-align: center;
-        }
-
-        .sidebar-header .emoji {
-            font-size: 48px;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .sidebar-header h2 {
-            margin: 0;
-            font-size: 1.2em;
-            color: white;
-            font-weight: 600;
-        }
-
-        .sidebar-back {
-            display: block;
-            padding: 12px 20px;
-            color: #94a3b8;
-            text-decoration: none;
-            transition: 0.2s;
-            border-radius: 8px;
-            margin: 0 10px;
-            font-size: 0.9em;
-        }
-
-        .sidebar-back:hover {
-            background: rgba(255, 255, 255, 0.05);
-            color: white;
-        }
-
-        .sidebar-section-title {
-            padding: 20px 20px 10px 20px;
-            font-size: 0.75em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #64748b;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-
-        .sidebar-nav-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            padding: 0 15px;
-        }
-
-        .sidebar-nav-grid a {
-            padding: 8px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 6px;
-            color: #cbd5e1;
-            text-decoration: none;
-            font-size: 0.85em;
-            text-align: center;
-            transition: all 0.2s;
-            border: 1px solid transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        .sidebar-nav-grid a:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-2px);
-            border-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .main-content {
-            margin-left: 280px;
-            flex: 1;
-            padding: 0;
-            min-height: 100vh;
-            width: calc(100% - 280px);
-        }
-
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -117,30 +16,22 @@
         }
 
         .header {
+            background: linear-gradient(135deg, #3B82F6, #1D4ED8);
             text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin: 0;
-            background: linear-gradient(45deg, #3B82F6, #60A5FA);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
         .video-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             border-radius: 16px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s;
         }
 
@@ -151,11 +42,11 @@
 
         .video-placeholder {
             aspect-ratio: 16/9;
-            background: #000;
+            background: #1f2937;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #666;
+            color: #9ca3af;
             font-size: 1.2em;
             position: relative;
         }
@@ -166,12 +57,12 @@
 
         .video-content h3 {
             margin: 0 0 10px 0;
-            color: #60A5FA;
+            color: #1E40AF;
         }
 
         .video-content p {
             margin: 0;
-            color: #9CA3AF;
+            color: #64748B;
             font-size: 0.9em;
             line-height: 1.5;
         }
@@ -179,248 +70,73 @@
         .tag {
             display: inline-block;
             padding: 4px 10px;
-            background: rgba(59, 130, 246, 0.2);
-            color: #93C5FD;
+            background: #DBEAFE;
+            color: #1D4ED8;
             font-size: 0.8em;
             border-radius: 20px;
             margin-bottom: 10px;
-        }
-
-        @media (max-width: 1024px) {
-            .sidebar {
-                transform: translateX(-100%);
-                transition: transform 0.3s;
-            }
-
-            .main-content {
-                margin-left: 0;
-                width: 100%;
-            }
-        }
-    
-        /* Mobile Header - Fixed Collision */
-        .mobile-header {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 56px;
-            background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-            z-index: 3000;
-            padding: 0 12px;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .mobile-menu-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: white;
-            border-radius: 10px;
-            font-size: 1.4rem;
-            cursor: pointer;
-            flex-shrink: 0;
-        }
-
-        .mobile-home-btn {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #10B981;
-            text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
-            padding: 10px 16px;
-            background: rgba(16, 185, 129, 0.15);
-            border-radius: 10px;
-            border: 1px solid rgba(16, 185, 129, 0.3);
-            white-space: nowrap;
         }
 
-        @media (max-width: 768px) {
-            .mobile-header {
-                display: flex;
-            }
-            .sidebar {
-                transform: translateX(-100%);
-                transition: transform 0.3s ease;
-            }
-            .sidebar.open {
-                transform: translateX(0);
-            }
-            .main-content {
-                margin-left: 0;
-                padding-top: 70px !important;
-                width: 100%;
-            }
+        .section-title {
+            color: #1E293B;
+            margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3em;
         }
 
-    
-        .sidebar-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1999;
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
-        .sidebar-overlay.active {
+
+        .resource-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #1E293B;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s;
+        }
+
+        .resource-card:hover {
+            border-color: #3B82F6;
+            transform: translateY(-2px);
+        }
+
+        .resource-card .icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+
+        .resource-card strong {
             display: block;
+            font-size: 1.1em;
+            color: #1E293B;
         }
 
-    
-        /* ===== MOBILE HEADER SIZE OPTIMIZATION ===== */
+        .resource-card .desc {
+            color: #64748B;
+            font-size: 0.9em;
+        }
+
         @media (max-width: 768px) {
-            .header {
-                padding: 25px 20px !important;
-                margin-bottom: 20px !important;
-                border-radius: 0 0 15px 15px !important;
-            }
-            .header h1 {
-                font-size: 1.5em !important;
-                margin-bottom: 5px !important;
-            }
-            .header .subtitle {
-                font-size: 0.9em !important;
-                margin-bottom: 10px !important;
-            }
-            .badge-row {
-                gap: 8px !important;
-                margin-top: 12px !important;
-            }
-            .badge {
-                padding: 5px 12px !important;
-                font-size: 0.75em !important;
-            }
             .container {
                 padding: 10px !important;
             }
-            .section {
-                padding: 15px !important;
-                margin-bottom: 15px !important;
-            }
-            .section h2 {
-                font-size: 1.2em !important;
+            .video-grid {
+                grid-template-columns: 1fr;
             }
         }
-        /* ===== END MOBILE HEADER SIZE ===== */
-
-    
-        /* ===== SIDEBAR CLOSED BY DEFAULT ON MOBILE ===== */
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%) !important;
-                transition: transform 0.3s ease !important;
-            }
-            .sidebar.active, .sidebar.open {
-                transform: translateX(0) !important;
-            }
-        }
-        /* ===== END SIDEBAR CLOSED ===== */
-
-    
-    /* ========== DEFINITIVE MOBILE FIX - ROOT LEVEL ========== */
-    .mobile-header {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 56px;
-        background: linear-gradient(135deg, #1E3A5F 0%, #0F2439 100%);
-        z-index: 9999;
-        padding: 0 12px;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 12px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .mobile-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: white;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        flex-shrink: 0;
-    }
-
-    .mobile-menu-btn:hover {
-        background: rgba(255, 255, 255, 0.25);
-    }
-
-    .mobile-home-btn {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        color: #10B981;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        padding: 10px 16px;
-        background: rgba(16, 185, 129, 0.15);
-        border-radius: 10px;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        white-space: nowrap;
-    }
-
-    .sidebar-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 9998;
-    }
-
-    .sidebar-overlay.active {
-        display: block;
-    }
-
-    @media (max-width: 768px) {
-        .mobile-header {
-            display: flex !important;
-        }
-        .sidebar {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            height: 100vh !important;
-            width: 280px !important;
-            z-index: 9999 !important;
-            transform: translateX(-100%) !important;
-            transition: transform 0.3s ease !important;
-        }
-        .sidebar.active, .sidebar.open {
-            transform: translateX(0) !important;
-        }
-        .main-content {
-            margin-left: 0 !important;
-            padding-top: 70px !important;
-            width: 100% !important;
-        }
-    }
-    /* ========== END DEFINITIVE MOBILE FIX ========== */
-
     </style>
+    <link rel="stylesheet" href="../assets/css/hero-cursor.css">
     <link rel="stylesheet" href="../assets/css/mobile-override.css">
 </head>
 
@@ -439,30 +155,18 @@
             <h2>CS Assets</h2>
         </div>
 
-        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
-            <a href="../kra/cs-kra.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6;">📋
-                KRA</a>
-            <a href="../kpi/cs-kpi.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(245, 158, 11, 0.2); border: 1px solid #F59E0B;">📊
-                KPI</a>
+        <div class="sidebar-nav-grid">
+            <a href="../cs-sop.html" class="nav-sop">📋 SOP</a>
+            <a href="../kra/cs-kra.html" class="nav-kra">🎯 KRA</a>
+            <a href="../kpi/cs-kpi.html" class="nav-kpi">📊 KPI</a>
+            <a href="../training/cs-training.html" class="nav-training">🎓 Training</a>
         </div>
-
-        <div style="display: flex; gap: 5px; padding: 0 15px; margin-bottom: 5px;">
-            <a href="#" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(59, 130, 246, 0.2); border: 1px solid #3B82F6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);">📚
-                Assets</a>
-            <a href="../onboarding/cs-onboarding.html" class="sidebar-back"
-                style="flex: 1; text-align: center; margin: 0; padding: 8px; font-size: 0.8em; background: rgba(236, 72, 153, 0.2); border: 1px solid #EC4899;">🚀
-                Start</a>
-        </div>
-
-        <a href="../cs-sop.html" class="sidebar-back"
-            style="background: rgba(255,255,255,0.05); margin-top: 10px; text-align: center;">← Back to CS SOP</a>
+        <a href="../index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
 
         <div class="sidebar-section-title">Sections</div>
-        <div class="sidebar-nav-grid">
-            <a href="#videos">📹 Videos</a>
+        <div class="sidebar-links">
+            <a href="#videos">📹 Video Training</a>
             <a href="#resources">📄 Resources</a>
         </div>
     </aside>
@@ -473,8 +177,7 @@
             <div class="header">
                 <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
                 <h1>CS Assets & Training Library</h1>
-                <p style="color: #9CA3AF; font-size: 1.2em; max-width: 600px; margin: 10px auto;">Curated video
-                    training, scripts, and resources to help you master your role.</p>
+                <p class="subtitle">Curated video training, scripts, and resources to help you master your role.</p>
             </div>
 
             <div id="videos" class="section-title"
@@ -488,7 +191,7 @@
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
                         <div
-                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             15:00</div>
                     </div>
                     <div class="video-content">
@@ -504,7 +207,7 @@
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
                         <div
-                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             25:00</div>
                     </div>
                     <div class="video-content">
@@ -519,7 +222,7 @@
                     <div class="video-placeholder">
                         [YouTube Embed Placeholder]
                         <div
-                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">
                             20:00</div>
                     </div>
                     <div class="video-content">
@@ -535,92 +238,29 @@
                 <h2 style="margin: 0;">📄 Downloadable Resources</h2>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                <a href="#"
-                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
-                    <span style="font-size: 2em; margin-right: 15px;">💬</span>
+            <div class="resource-grid">
+                <a href="#" class="resource-card">
+                    <span class="icon">💬</span>
                     <div>
-                        <strong style="display: block; font-size: 1.1em;">Master Script Library</strong>
-                        <span style="color: #9CA3AF; font-size: 0.9em;">Copy-paste responses for every scenario</span>
+                        <strong>Master Script Library</strong>
+                        <span class="desc">Copy-paste responses for every scenario</span>
                     </div>
                 </a>
-                <a href="#"
-                    style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s;">
-                    <span style="font-size: 2em; margin-right: 15px;">📧</span>
+                <a href="#" class="resource-card">
+                    <span class="icon">📧</span>
                     <div>
-                        <strong style="display: block; font-size: 1.1em;">Client Onboarding Checklist</strong>
-                        <span style="color: #9CA3AF; font-size: 0.9em;">Ensure perfect kickoff every time</span>
+                        <strong>Client Onboarding Checklist</strong>
+                        <span class="desc">Ensure perfect kickoff every time</span>
                     </div>
                 </a>
             </div>
         </div>
+
+        <div class="footer">Digital Heroes &copy; 2026. All rights reserved.</div>
     </div>
 
-    <script>
-, 10);
-            } else {
-                document.removeEventListener('click', closeSidebarOutside);
-            }
-        }
-
-        function closeSidebarOutside(event) {
-            const sidebar = document.querySelector('.sidebar');
-            const toggleBtn = document.querySelector('.mobile-menu-btn');
-            if (sidebar && !sidebar.contains(event.target) && (!toggleBtn || !toggleBtn.contains(event.target))) {
-                sidebar.classList.remove('open');
-                sidebar.classList.remove('active');
-                document.removeEventListener('click', closeSidebarOutside);
-            }
-        }
-    </script>
-
-
-    <script>
-        // ===== SIDEBAR TOGGLE FUNCTIONS =====
-        function toggleSidebar() {
-            var sidebar = document.querySelector('.sidebar');
-            var overlay = document.querySelector('.sidebar-overlay');
-            if (sidebar) {
-                sidebar.classList.toggle('active');
-                sidebar.classList.toggle('open');
-            }
-            if (overlay) {
-                overlay.classList.toggle('active');
-            }
-        }
-
-        function closeSidebar() {
-            var sidebar = document.querySelector('.sidebar');
-            var overlay = document.querySelector('.sidebar-overlay');
-            if (sidebar) {
-                sidebar.classList.remove('active');
-                sidebar.classList.remove('open');
-            }
-            if (overlay) {
-                overlay.classList.remove('active');
-            }
-        }
-
-        // Click outside to close sidebar
-        document.addEventListener('click', function(event) {
-            var sidebar = document.querySelector('.sidebar');
-            var toggleBtn = document.querySelector('.mobile-menu-btn');
-            var overlay = document.querySelector('.sidebar-overlay');
-            
-            if (!sidebar || !toggleBtn) return;
-            
-            var isOpen = sidebar.classList.contains('active') || sidebar.classList.contains('open');
-            var clickedOnSidebar = sidebar.contains(event.target);
-            var clickedOnToggle = toggleBtn.contains(event.target);
-            
-            if (isOpen && !clickedOnSidebar && !clickedOnToggle) {
-                closeSidebar();
-            }
-        });
-        // ===== END SIDEBAR TOGGLE =====
-    </script>
-
+    <script src="../admin-mode.js"></script>
+    <script src="../assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>
-

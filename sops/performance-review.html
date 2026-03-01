@@ -8,72 +8,95 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
     <link rel="stylesheet" href="admin-mode.css">
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
     <link rel="stylesheet" href="assets/css/copy-button.css">
     <style>
         :root { --primary: #0F172A; --accent: #8B5CF6; --success: #10B981; --warning: #F59E0B; --danger: #EF4444; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.7; color: #334155; background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); min-height: 100vh; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        .header { text-align: center; margin-bottom: 40px; padding: 40px; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px solid rgba(139,92,246,0.3); }
-        .header h1 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; }
-        .header p { color: #94A3B8; font-size: 1.1rem; }
-        .back-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(139,92,246,0.2); color: #A78BFA; text-decoration: none; border-radius: 8px; margin-bottom: 20px; transition: all 0.3s; }
-        .back-btn:hover { background: var(--accent); color: #fff; }
 
-        .info-box { background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(59,130,246,0.2)); border: 1px solid rgba(139,92,246,0.4); border-radius: 16px; padding: 25px; margin-bottom: 30px; }
-        .info-box h2 { color: #A78BFA; font-size: 1.2rem; margin-bottom: 15px; }
-        .info-box p, .info-box li { color: #E2E8F0; }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+            color: white;
+        }
+        .header h1 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; }
+        .header p { color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; }
+
+        .info-box { background: linear-gradient(135deg, #F5F3FF, #EDE9FE); border: 1px solid #DDD6FE; border-radius: 16px; padding: 25px; margin-bottom: 30px; }
+        .info-box h2 { color: #7C3AED; font-size: 1.2rem; margin-bottom: 15px; }
+        .info-box p, .info-box li { color: #1E293B; }
         .info-box ul { padding-left: 20px; }
 
-        .section { background: rgba(255,255,255,0.05); border: 1px solid rgba(139,92,246,0.3); border-radius: 16px; padding: 30px; margin-bottom: 30px; }
-        .section-title { color: #fff; font-size: 1.4rem; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid rgba(139,92,246,0.3); }
+        .section-title { color: #1E293B; font-size: 1.4rem; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #E2E8F0; }
 
         .score-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 30px; }
         .score-card { padding: 15px; border-radius: 10px; text-align: center; }
-        .score-card.exceptional { background: rgba(16,185,129,0.2); border: 1px solid #10B981; }
-        .score-card.exceeds { background: rgba(59,130,246,0.2); border: 1px solid #3B82F6; }
-        .score-card.meets { background: rgba(139,92,246,0.2); border: 1px solid #8B5CF6; }
-        .score-card.below { background: rgba(245,158,11,0.2); border: 1px solid #F59E0B; }
-        .score-card.poor { background: rgba(239,68,68,0.2); border: 1px solid #EF4444; }
-        .score-range { color: #fff; font-weight: 700; font-size: 1.1rem; }
-        .score-label { color: #94A3B8; font-size: 0.75rem; text-transform: uppercase; }
+        .score-card.exceptional { background: rgba(16,185,129,0.1); border: 1px solid #10B981; }
+        .score-card.exceeds { background: rgba(59,130,246,0.1); border: 1px solid #3B82F6; }
+        .score-card.meets { background: rgba(139,92,246,0.1); border: 1px solid #8B5CF6; }
+        .score-card.below { background: rgba(245,158,11,0.1); border: 1px solid #F59E0B; }
+        .score-card.poor { background: rgba(239,68,68,0.1); border: 1px solid #EF4444; }
+        .score-range { color: #1E293B; font-weight: 700; font-size: 1.1rem; }
+        .score-label { color: #64748B; font-size: 0.75rem; text-transform: uppercase; }
 
         .metric-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        .metric-table th, .metric-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid rgba(139,92,246,0.2); }
-        .metric-table th { color: #A78BFA; font-size: 0.85rem; text-transform: uppercase; background: rgba(139,92,246,0.1); }
-        .metric-table td { color: #CBD5E1; font-size: 0.9rem; }
-        .metric-table tr:hover { background: rgba(139,92,246,0.05); }
+        .metric-table th, .metric-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #E2E8F0; }
+        .metric-table th { color: #475569; font-size: 0.85rem; text-transform: uppercase; background: #F8FAFC; }
+        .metric-table td { color: #475569; font-size: 0.9rem; }
+        .metric-table tr:hover { background: #F8FAFC; }
 
-        .weight-badge { background: rgba(59,130,246,0.2); color: #60A5FA; padding: 3px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: 600; }
+        .weight-badge { background: rgba(59,130,246,0.1); color: #2563EB; padding: 3px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: 600; }
 
-        .outcome-card { background: rgba(30,41,59,0.5); border-radius: 12px; padding: 20px; margin-bottom: 15px; border-left: 4px solid var(--accent); }
+        .outcome-card { background: #F8FAFC; border-radius: 12px; padding: 20px; margin-bottom: 15px; border-left: 4px solid var(--accent); }
         .outcome-card.exceptional { border-left-color: #10B981; }
         .outcome-card.exceeds { border-left-color: #3B82F6; }
         .outcome-card.meets { border-left-color: #8B5CF6; }
         .outcome-card.below { border-left-color: #F59E0B; }
         .outcome-card.poor { border-left-color: #EF4444; }
-        .outcome-title { color: #fff; font-size: 1rem; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
-        .outcome-details { color: #CBD5E1; font-size: 0.9rem; }
+        .outcome-title { color: #1E293B; font-size: 1rem; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .outcome-details { color: #475569; font-size: 0.9rem; }
         .outcome-details span { display: block; margin-bottom: 5px; }
 
         .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 20px; }
-        .step { background: rgba(139,92,246,0.1); border-radius: 10px; padding: 15px; text-align: center; }
-        .step-num { color: #A78BFA; font-size: 1.5rem; font-weight: 700; }
-        .step-title { color: #fff; font-size: 0.85rem; font-weight: 600; margin-top: 5px; }
-        .step-desc { color: #94A3B8; font-size: 0.75rem; margin-top: 5px; }
+        .step { background: #F5F3FF; border-radius: 10px; padding: 15px; text-align: center; }
+        .step-num { color: #7C3AED; font-size: 1.5rem; font-weight: 700; }
+        .step-title { color: #1E293B; font-size: 0.85rem; font-weight: 600; margin-top: 5px; }
+        .step-desc { color: #64748B; font-size: 0.75rem; margin-top: 5px; }
 
-        .footer { text-align: center; padding: 30px; color: #64748B; font-size: 0.85rem; }
-        @media (max-width: 768px) { .header h1 { font-size: 1.8rem; } .score-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) { .score-grid { grid-template-columns: repeat(2, 1fr); } }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <a href="index.html" class="back-btn">← Back to Library</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">📊</div>
+            <h2>Performance Review</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="employee-handbook.html" class="nav-sop">📖 Handbook</a>
+            <a href="training-hub.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#scoring">📈 Scoring System</a>
+            <a href="#developer">💻 Developer Criteria</a>
+            <a href="#designer">🎨 Designer Criteria</a>
+            <a href="#pm">📋 PM Criteria</a>
+            <a href="#outcomes">🎯 Rating Outcomes</a>
+            <a href="#process">📅 Monthly Process</a>
+        </div>
+    </aside>
 
+    <div class="main-content">
         <div class="header">
             <h1>📊 Performance Review System</h1>
             <p>Make promotions and warnings objective, not emotional. No favoritism.</p>
@@ -90,7 +113,7 @@
         </div>
 
         <!-- Scoring System -->
-        <div class="section">
+        <div class="section" id="scoring">
             <h2 class="section-title">📈 Scoring System (1-10 Scale)</h2>
             <div class="score-grid">
                 <div class="score-card exceptional">
@@ -117,7 +140,7 @@
         </div>
 
         <!-- Developer Criteria -->
-        <div class="section">
+        <div class="section" id="developer">
             <h2 class="section-title">💻 Developer Review Criteria</h2>
             <table class="metric-table">
                 <tr><th>Metric</th><th>Weight</th><th>How Measured</th></tr>
@@ -134,7 +157,7 @@
         </div>
 
         <!-- Designer Criteria -->
-        <div class="section">
+        <div class="section" id="designer">
             <h2 class="section-title">🎨 Designer Review Criteria</h2>
             <table class="metric-table">
                 <tr><th>Metric</th><th>Weight</th><th>How Measured</th></tr>
@@ -149,7 +172,7 @@
         </div>
 
         <!-- PM Criteria -->
-        <div class="section">
+        <div class="section" id="pm">
             <h2 class="section-title">📋 PM Review Criteria</h2>
             <table class="metric-table">
                 <tr><th>Metric</th><th>Weight</th><th>How Measured</th></tr>
@@ -164,7 +187,7 @@
         </div>
 
         <!-- Rating Outcomes -->
-        <div class="section">
+        <div class="section" id="outcomes">
             <h2 class="section-title">🎯 Rating Outcomes</h2>
 
             <div class="outcome-card exceptional">
@@ -214,7 +237,7 @@
         </div>
 
         <!-- Monthly Process -->
-        <div class="section">
+        <div class="section" id="process">
             <h2 class="section-title">📅 Monthly Review Process</h2>
             <div class="process-steps">
                 <div class="step">
@@ -256,6 +279,8 @@
     </div>
 
     <script src="assets/js/sop-features.js"></script>
+    <script src="admin-mode.js"></script>
+    <script src="assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>

@@ -8,70 +8,16 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/shared-layout.css">
+    <link rel="stylesheet" href="../admin-mode.css">
     <style>
         :root {
             --primary: #0F172A;
-            --accent: #8B5CF6;
-            --accent-light: rgba(139, 92, 246, 0.1);
+            --accent: #6366F1;
+            --accent-light: rgba(99, 102, 241, 0.1);
             --text: #334155;
             --bg: #F8FAFC;
             --card: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            background: linear-gradient(135deg, var(--accent), #7C3AED);
-            color: white;
-            padding: 40px 30px;
-            border-radius: 16px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2em;
-            margin-bottom: 8px;
-        }
-
-        .header p {
-            opacity: 0.9;
-            font-size: 1.1em;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 15px;
-            transition: background 0.2s;
-        }
-
-        .back-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
         }
 
         .time-block {
@@ -141,38 +87,62 @@
             font-size: 0.95em;
         }
 
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #94A3B8;
-            font-size: 0.85em;
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.2s;
         }
 
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-
-            .header {
-                padding: 30px 20px;
-            }
-
-            .header h1 {
-                font-size: 1.5em;
-            }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
     </style>
+    <link rel="stylesheet" href="../assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="../assets/css/mobile-override.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="../index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">📋</div>
+            <h2>Project Manager Daily Tasks</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="../pm-sop.html" class="nav-sop">📋 SOP</a>
+            <a href="../kra/pm-kra.html" class="nav-kra">🎯 KRA</a>
+            <a href="../kpi/pm-kpi.html" class="nav-kpi">📊 KPI</a>
+            <a href="../training/pm-training.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="../index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#morning">☀️ Morning Block</a>
+            <a href="#afternoon">🌤️ Afternoon Block</a>
+            <a href="#evening">🌙 Evening Block</a>
+            <a href="#weekly">📊 Weekly Tasks</a>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="header" style="background: linear-gradient(135deg, #6366F1, #4F46E5);">
             <h1>📋 PM Daily Task Sheet</h1>
-            <p>Your daily checklist for project excellence</p>
-            <a href="../index.html" class="back-btn">← Back to Library</a>
+            <p class="subtitle">Your daily checklist for project excellence</p>
         </header>
 
-        <div class="time-block">
+        <div class="time-block" id="morning">
             <h3>🌅 Morning Block (9:00 AM - 12:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Check all client messages</strong> - Fiverr, Upwork, Slack, Email -
@@ -187,7 +157,7 @@
             </ul>
         </div>
 
-        <div class="time-block">
+        <div class="time-block" id="afternoon">
             <h3>☀️ Afternoon Block (12:00 PM - 4:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Internal QA</strong> - Review completed work before client delivery
@@ -201,7 +171,7 @@
             </ul>
         </div>
 
-        <div class="time-block">
+        <div class="time-block" id="evening">
             <h3>🌆 Evening Block (4:00 PM - 6:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Client deliveries</strong> - Send completed work with proper
@@ -215,7 +185,7 @@
             </ul>
         </div>
 
-        <div class="time-block">
+        <div class="time-block" id="weekly">
             <h3>📊 Weekly Tasks</h3>
             <ul class="task-list">
                 <li><strong>Weekly project review</strong> - Status of all active projects</li>
@@ -236,6 +206,9 @@
             <p>Digital Heroes | Project Management Excellence</p>
         </footer>
     </div>
+
+    <script src="../admin-mode.js"></script>
+    <script src="../assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>

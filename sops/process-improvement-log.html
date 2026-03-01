@@ -8,6 +8,7 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
     <link rel="stylesheet" href="admin-mode.css">
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
@@ -20,32 +21,10 @@
             --warning: #F59E0B;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            line-height: 1.7;
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            border: 1px solid rgba(139, 92, 246, 0.3);
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+            color: white;
         }
 
         .header h1 {
@@ -55,90 +34,70 @@
         }
 
         .header p {
-            color: #94A3B8;
+            color: rgba(255, 255, 255, 0.9);
             font-size: 1.1rem;
         }
 
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: rgba(139, 92, 246, 0.2);
-            color: #A78BFA;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
         .info-box {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
-            border: 1px solid rgba(139, 92, 246, 0.4);
+            background: linear-gradient(135deg, #F5F3FF, #EDE9FE);
+            border: 1px solid #DDD6FE;
             border-radius: 16px;
             padding: 25px;
             margin-bottom: 30px;
         }
 
         .info-box h2 {
-            color: #A78BFA;
+            color: #7C3AED;
             font-size: 1.2rem;
             margin-bottom: 10px;
         }
 
         .info-box p,
         .info-box li {
-            color: #E2E8F0;
+            color: #1E293B;
         }
 
         .info-box ul {
             padding-left: 20px;
         }
 
-        .section {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(139, 92, 246, 0.3);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-
         .section-title {
-            color: #fff;
+            color: #1E293B;
             font-size: 1.4rem;
             margin-bottom: 20px;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            border-bottom: 1px solid #E2E8F0;
             padding-bottom: 15px;
         }
 
         .template-box {
-            background: rgba(30, 41, 59, 0.5);
+            background: #F8FAFC;
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 15px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
+            border: 1px solid #E2E8F0;
         }
 
         .template-box h4 {
-            color: #A78BFA;
+            color: #7C3AED;
             margin-bottom: 10px;
         }
 
         .template-box p {
-            color: #CBD5E1;
+            color: #475569;
             font-size: 0.9rem;
             margin-bottom: 5px;
         }
 
         .template-box code {
-            background: rgba(139, 92, 246, 0.1);
-            color: #A78BFA;
+            background: #F5F3FF;
+            color: #7C3AED;
             padding: 2px 6px;
             border-radius: 4px;
             font-size: 0.85rem;
         }
 
         .log-entry {
-            background: rgba(30, 41, 59, 0.5);
+            background: #F8FAFC;
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 15px;
@@ -163,7 +122,7 @@
         }
 
         .log-id {
-            color: #A78BFA;
+            color: #7C3AED;
             font-weight: 600;
         }
 
@@ -175,29 +134,29 @@
         }
 
         .log-status.approved {
-            background: rgba(16, 185, 129, 0.2);
-            color: #34D399;
+            background: rgba(16, 185, 129, 0.1);
+            color: #059669;
         }
 
         .log-status.pending {
-            background: rgba(245, 158, 11, 0.2);
-            color: #FBBF24;
+            background: rgba(245, 158, 11, 0.1);
+            color: #D97706;
         }
 
         .log-title {
-            color: #fff;
+            color: #1E293B;
             font-size: 1rem;
             margin-bottom: 10px;
         }
 
         .log-meta {
-            color: #94A3B8;
+            color: #64748B;
             font-size: 0.8rem;
             margin-bottom: 8px;
         }
 
         .log-desc {
-            color: #CBD5E1;
+            color: #475569;
             font-size: 0.9rem;
         }
 
@@ -209,43 +168,59 @@
         }
 
         .flow-step {
-            background: rgba(139, 92, 246, 0.1);
+            background: #F5F3FF;
             border-radius: 10px;
             padding: 15px;
             text-align: center;
         }
 
         .flow-num {
-            color: #A78BFA;
+            color: #7C3AED;
             font-size: 1.3rem;
             font-weight: 700;
         }
 
         .flow-title {
-            color: #fff;
+            color: #1E293B;
             font-size: 0.85rem;
             font-weight: 600;
             margin-top: 5px;
         }
 
         .flow-desc {
-            color: #94A3B8;
+            color: #64748B;
             font-size: 0.75rem;
             margin-top: 5px;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #64748B;
-            font-size: 0.85rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <a href="index.html" class="back-btn">← Back to Library</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">📝</div>
+            <h2>Process Improvement</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="employee-handbook.html" class="nav-sop">📖 Handbook</a>
+            <a href="training-hub.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#how-to-submit">📋 How to Submit</a>
+            <a href="#review-process">🔄 Review Process</a>
+            <a href="#sample-log">📊 Sample Entries</a>
+            <a href="#recognition">🏆 Recognition</a>
+        </div>
+    </aside>
+
+    <div class="main-content">
         <div class="header">
             <h1>📝 Process Improvement Log</h1>
             <p>If you see a problem, propose a fix. Track Kaizen thinking continuously.</p>
@@ -258,7 +233,7 @@
         </div>
 
         <!-- How to Submit -->
-        <div class="section">
+        <div class="section" id="how-to-submit">
             <h2 class="section-title">📋 How to Submit an Improvement</h2>
             <div class="template-box">
                 <h4>Submission Template</h4>
@@ -277,7 +252,7 @@
         </div>
 
         <!-- Review Process -->
-        <div class="section">
+        <div class="section" id="review-process">
             <h2 class="section-title">🔄 Review Process Flow</h2>
             <div class="process-flow">
                 <div class="flow-step">
@@ -314,7 +289,7 @@
         </div>
 
         <!-- Sample Log Entries -->
-        <div class="section">
+        <div class="section" id="sample-log">
             <h2 class="section-title">📊 Sample Log Entries</h2>
 
             <div class="log-entry">
@@ -367,7 +342,7 @@
         </div>
 
         <!-- Recognition -->
-        <div class="section">
+        <div class="section" id="recognition">
             <h2 class="section-title">🏆 Recognition for Improvements</h2>
             <div class="template-box">
                 <h4>Improvement Champion Bonus</h4>
@@ -382,7 +357,10 @@
             <p>Digital Heroes | Process Improvement Log v1.0 | Last Updated: January 2026</p>
         </div>
     </div>
+
     <script src="assets/js/sop-features.js"></script>
+    <script src="admin-mode.js"></script>
+    <script src="assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>

@@ -6,61 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Stack Developer Daily Task Sheet | Digital Heroes</title>
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/shared-layout.css">
+    <link rel="stylesheet" href="../admin-mode.css">
     <style>
         :root {
             --primary: #0F172A;
-            --accent: #3B82F6;
-            --accent-light: rgba(59, 130, 246, 0.1);
+            --accent: #06B6D4;
+            --accent-light: rgba(6, 182, 212, 0.1);
             --text: #334155;
             --bg: #F8FAFC;
             --card: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            background: linear-gradient(135deg, var(--accent), #2563EB);
-            color: white;
-            padding: 40px 30px;
-            border-radius: 16px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2em;
-            margin-bottom: 8px;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 15px;
         }
 
         .time-block {
@@ -98,35 +55,68 @@
         }
 
         .tip-box {
-            background: linear-gradient(135deg, #DBEAFE, #BFDBFE);
+            background: linear-gradient(135deg, #CFFAFE, #A5F3FC);
             padding: 20px;
             border-radius: 12px;
             margin-top: 30px;
         }
 
         .tip-box h4 {
-            color: #1E40AF;
+            color: #0E7490;
             margin-bottom: 10px;
         }
 
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #94A3B8;
-            font-size: 0.85em;
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
         }
     </style>
+    <link rel="stylesheet" href="../assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="../assets/css/mobile-override.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Full Stack Developer Daily Task Sheet</h1>
-            <p>Your daily checklist for full stack excellence</p>
-            <a href="../index.html" class="back-btn">Back to Library</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="../index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">💻</div>
+            <h2>Full Stack Developer Daily Tasks</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="../fullstack-sop.html" class="nav-sop">📋 SOP</a>
+            <a href="../kra/fullstack-kra.html" class="nav-kra">🎯 KRA</a>
+            <a href="../kpi/fullstack-kpi.html" class="nav-kpi">📊 KPI</a>
+            <a href="../training/fullstack-training.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="../index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#morning">☀️ Morning Block</a>
+            <a href="#afternoon">🌤️ Afternoon Block</a>
+            <a href="#evening">🌙 Evening Block</a>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="header" style="background: linear-gradient(135deg, #06B6D4, #0891B2);">
+            <h1>💻 Full Stack Developer Daily Task Sheet</h1>
+            <p class="subtitle">Your daily checklist for full stack excellence</p>
         </header>
-        <div class="time-block">
-            <h3>Morning Block (9:00 AM - 12:00 PM)</h3>
+
+        <div class="time-block" id="morning">
+            <h3>☀️ Morning Block (9:00 AM - 12:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Check project management tool</strong> - Review assigned tasks and
                     priorities</li>
@@ -136,8 +126,9 @@
                 <li><strong>Database migrations</strong> - Run and test any pending migrations</li>
             </ul>
         </div>
-        <div class="time-block">
-            <h3>Afternoon Block (12:00 PM - 4:00 PM)</h3>
+
+        <div class="time-block" id="afternoon">
+            <h3>🌤️ Afternoon Block (12:00 PM - 4:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Feature development</strong> - Deep work on assigned features</li>
                 <li><strong>API testing</strong> - Test endpoints with Postman/Insomnia</li>
@@ -146,8 +137,9 @@
                 <li><strong>Security check</strong> - Review for vulnerabilities in new code</li>
             </ul>
         </div>
-        <div class="time-block">
-            <h3>Evening Block (4:00 PM - 6:00 PM)</h3>
+
+        <div class="time-block" id="evening">
+            <h3>🌙 Evening Block (4:00 PM - 6:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Create PR</strong> - Submit clean, reviewed pull request</li>
                 <li><strong>Deploy to staging</strong> - Test in staging environment</li>
@@ -155,15 +147,20 @@
                 <li><strong>Plan tomorrow</strong> - Review upcoming tasks</li>
             </ul>
         </div>
+
         <div class="tip-box">
-            <h4>Pro Tip</h4>
+            <h4>💡 Pro Tip</h4>
             <p><strong>Always test on staging before production.</strong> One untested deployment can bring down the
                 entire application and cost hours of firefighting.</p>
         </div>
+
         <footer class="footer">
             <p>Digital Heroes | Full Stack Excellence</p>
         </footer>
     </div>
+
+    <script src="../admin-mode.js"></script>
+    <script src="../assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>

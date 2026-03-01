@@ -8,6 +8,7 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
     <link rel="stylesheet" href="admin-mode.css">
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
@@ -18,40 +19,18 @@
             --accent: #8B5CF6;
             --warning: #F59E0B;
             --danger: #EF4444;
-            --bg-dark: #0F172A;
-            --bg-card: #1E293B;
-            --text: #E2E8F0;
-            --text-muted: #94A3B8;
-            --border: rgba(255, 255, 255, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --text: #334155;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text);
-            line-height: 1.7;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 30px 20px;
         }
 
         /* Header */
         .header {
             text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            border-radius: 20px;
-            margin-bottom: 30px;
         }
 
         .header h1 {
@@ -81,29 +60,14 @@
             color: white;
         }
 
-        /* Back Button */
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-muted);
-            text-decoration: none;
-            margin-bottom: 20px;
-            font-size: 0.9em;
-            transition: color 0.2s;
-        }
-
-        .back-btn:hover {
-            color: var(--primary);
-        }
-
         /* Section */
         .section {
-            background: var(--bg-card);
+            background: white;
             border-radius: 16px;
             padding: 25px;
             margin-bottom: 20px;
-            border: 1px solid var(--border);
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
         }
 
         .section h2 {
@@ -112,7 +76,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            color: white;
+            color: #1E293B;
         }
 
         .section h3 {
@@ -143,13 +107,13 @@
         }
 
         th {
-            background: rgba(59, 130, 246, 0.2);
+            background: rgba(59, 130, 246, 0.1);
             color: var(--primary);
             font-weight: 600;
         }
 
         tr:nth-child(even) {
-            background: rgba(255, 255, 255, 0.02);
+            background: #F8FAFC;
         }
 
         /* Checklists */
@@ -161,7 +125,7 @@
         .checklist li {
             padding: 8px 0 8px 30px;
             position: relative;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid #E2E8F0;
         }
 
         .checklist li:last-child {
@@ -177,7 +141,7 @@
 
         /* Code blocks */
         .code-block {
-            background: rgba(0, 0, 0, 0.3);
+            background: #F1F5F9;
             border-radius: 10px;
             padding: 15px;
             margin: 15px 0;
@@ -269,8 +233,8 @@
             align-items: center;
             gap: 12px;
             padding: 15px;
-            background: var(--bg-dark);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid #E2E8F0;
             border-radius: 10px;
             text-decoration: none;
             color: var(--text);
@@ -289,7 +253,7 @@
 
         .link-card .title {
             font-weight: 600;
-            color: white;
+            color: #1E293B;
         }
 
         .link-card .desc {
@@ -307,8 +271,8 @@
 
         .sop-card {
             padding: 15px;
-            background: var(--bg-dark);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid #E2E8F0;
             border-radius: 10px;
             text-align: center;
             text-decoration: none;
@@ -362,7 +326,7 @@
             height: 12px;
             background: var(--primary);
             border-radius: 50%;
-            border: 3px solid var(--bg-card);
+            border: 3px solid white;
         }
 
         .timeline-time {
@@ -380,8 +344,8 @@
 
         .day-tab {
             padding: 12px 24px;
-            background: var(--bg-card);
-            border: 2px solid var(--border);
+            background: white;
+            border: 2px solid #E2E8F0;
             border-radius: 10px;
             color: var(--text-muted);
             text-decoration: none;
@@ -443,10 +407,33 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="index.html" class="back-btn">← Back to Dashboard</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">🚀</div>
+            <h2>New Employee Onboarding</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="employee-handbook.html" class="nav-sop">📖 Handbook</a>
+            <a href="training-hub.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#pre-joining">✅ Pre-Joining</a>
+            <a href="#day1">📅 Day 1</a>
+            <a href="#day2">📅 Day 2</a>
+            <a href="#day3">📅 Day 3</a>
+            <a href="#next-steps">🚀 Next Steps</a>
+        </div>
+    </aside>
 
-        <header class="header">
+    <div class="main-content">
+        <header class="header" style="background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);">
             <h1>🎯 NEW EMPLOYEE ONBOARDING</h1>
             <p>Your First 3 Days: Everything You Need to Do</p>
             <div class="subtitle">
@@ -1136,10 +1123,10 @@
             <p style="margin-top: 10px;">Onboarding Guide v1.0 | January 2026</p>
         </footer>
     </div>
+
+    <script src="admin-mode.js"></script>
+    <script src="assets/js/shared-sidebar.js"></script>
     <script src="assets/js/copy-button.js"></script>
 </body>
 
 </html>
-
-
-

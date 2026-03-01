@@ -8,6 +8,7 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
     <link rel="stylesheet" href="admin-mode.css">
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
@@ -24,33 +25,10 @@
             --pink: #EC4899;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            line-height: 1.7;
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-            min-height: 100vh;
-            color: #E2E8F0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            border: 1px solid rgba(139, 92, 246, 0.3);
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+            color: white;
         }
 
         .header h1 {
@@ -60,40 +38,15 @@
         }
 
         .header p {
-            color: #94A3B8;
+            color: rgba(255, 255, 255, 0.9);
             font-size: 1.1rem;
         }
 
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: rgba(139, 92, 246, 0.2);
-            color: #A78BFA;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            transition: all 0.2s;
-        }
-
-        .back-btn:hover {
-            background: rgba(139, 92, 246, 0.3);
-        }
-
-        .section {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(139, 92, 246, 0.3);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-
         .section-title {
-            color: #fff;
+            color: #1E293B;
             font-size: 1.5rem;
             margin-bottom: 20px;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            border-bottom: 1px solid #E2E8F0;
             padding-bottom: 15px;
             display: flex;
             align-items: center;
@@ -137,21 +90,22 @@
             width: 100%;
             border-collapse: collapse;
             margin: 15px 0 25px;
-            background: rgba(30, 41, 59, 0.5);
+            background: white;
             border-radius: 12px;
             overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
         th,
         td {
             padding: 14px 16px;
             text-align: left;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+            border-bottom: 1px solid #E2E8F0;
         }
 
         th {
-            background: rgba(139, 92, 246, 0.15);
-            color: #A78BFA;
+            background: #F8FAFC;
+            color: #475569;
             font-weight: 600;
             font-size: 0.85rem;
             text-transform: uppercase;
@@ -159,7 +113,7 @@
         }
 
         td {
-            color: #CBD5E1;
+            color: #475569;
             font-size: 0.9rem;
         }
 
@@ -168,16 +122,16 @@
         }
 
         tr:hover td {
-            background: rgba(139, 92, 246, 0.05);
+            background: #F8FAFC;
         }
 
         .reward {
-            color: #34D399;
+            color: #059669;
             font-weight: 600;
         }
 
         .penalty {
-            color: #F87171;
+            color: #DC2626;
             font-weight: 600;
         }
 
@@ -189,7 +143,7 @@
 
         /* Sub-section headers */
         h3 {
-            color: #fff;
+            color: #1E293B;
             font-size: 1.2rem;
             margin: 25px 0 15px;
             display: flex;
@@ -198,11 +152,11 @@
         }
 
         h3.incentive {
-            color: #34D399;
+            color: #059669;
         }
 
         h3.penalty {
-            color: #F87171;
+            color: #DC2626;
         }
 
         /* Quick Reference Cards */
@@ -214,14 +168,14 @@
         }
 
         .ref-card {
-            background: rgba(30, 41, 59, 0.7);
+            background: #F8FAFC;
             border-radius: 12px;
             padding: 20px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
+            border: 1px solid #E2E8F0;
         }
 
         .ref-card h4 {
-            color: #fff;
+            color: #1E293B;
             margin-bottom: 10px;
             font-size: 1rem;
         }
@@ -235,15 +189,15 @@
 
         /* Notes Box */
         .notes-box {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            background: #EFF6FF;
+            border: 1px solid #BFDBFE;
             border-radius: 12px;
             padding: 20px;
             margin: 20px 0;
         }
 
         .notes-box h4 {
-            color: #60A5FA;
+            color: #2563EB;
             margin-bottom: 12px;
         }
 
@@ -252,7 +206,7 @@
         }
 
         .notes-box li {
-            color: #94A3B8;
+            color: #475569;
             margin-bottom: 8px;
         }
 
@@ -265,43 +219,37 @@
         }
 
         .step {
-            background: rgba(139, 92, 246, 0.1);
+            background: #F5F3FF;
             border-radius: 10px;
             padding: 15px;
             text-align: center;
             flex: 1;
             min-width: 100px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
+            border: 1px solid #DDD6FE;
         }
 
         .step-num {
-            color: #A78BFA;
+            color: #7C3AED;
             font-size: 1.3rem;
             font-weight: 700;
         }
 
         .step-title {
-            color: #fff;
+            color: #1E293B;
             font-size: 0.8rem;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #64748B;
-            font-size: 0.85rem;
         }
 
         /* TOC */
         .toc {
-            background: rgba(30, 41, 59, 0.7);
+            background: white;
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
         .toc h3 {
-            color: #fff;
+            color: #1E293B;
             margin-bottom: 15px;
         }
 
@@ -314,8 +262,8 @@
         .toc a {
             display: block;
             padding: 10px 15px;
-            background: rgba(139, 92, 246, 0.1);
-            color: #A78BFA;
+            background: #F5F3FF;
+            color: #7C3AED;
             text-decoration: none;
             border-radius: 8px;
             font-size: 0.9rem;
@@ -323,37 +271,33 @@
         }
 
         .toc a:hover {
-            background: rgba(139, 92, 246, 0.2);
+            background: #EDE9FE;
             transform: translateX(5px);
+        }
+
+        /* FAQ Details */
+        details {
+            background: #F8FAFC;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #E2E8F0;
+        }
+
+        details summary {
+            padding: 15px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #1E293B;
+        }
+
+        details > div {
+            padding: 15px;
+            color: #475569;
+            border-top: 1px solid #E2E8F0;
         }
 
         /* ========== MOBILE OPTIMIZATION ========== */
         @media (max-width: 768px) {
-            .container {
-                padding: 15px 10px;
-            }
-
-            .back-btn {
-                padding: 8px 14px;
-                font-size: 0.85rem;
-                margin-bottom: 12px;
-            }
-
-            .header {
-                padding: 20px 15px;
-                margin-bottom: 20px;
-                border-radius: 14px;
-            }
-
-            .header h1 {
-                font-size: 1.5rem;
-                line-height: 1.3;
-            }
-
-            .header p {
-                font-size: 0.9rem;
-            }
-
             /* TOC single column on mobile */
             .toc {
                 padding: 15px;
@@ -376,12 +320,6 @@
             }
 
             /* Section spacing */
-            .section {
-                padding: 16px 12px;
-                margin-bottom: 16px;
-                border-radius: 12px;
-            }
-
             .section-title {
                 font-size: 1.1rem;
                 padding-bottom: 10px;
@@ -395,12 +333,13 @@
                 margin: 18px 0 10px;
             }
 
-            /* Tables → Stacked Cards on Mobile */
+            /* Tables - Stacked Cards on Mobile */
             table {
                 display: block;
                 overflow: visible;
                 background: none;
                 border-radius: 0;
+                box-shadow: none;
             }
 
             thead {
@@ -416,9 +355,9 @@
             tr {
                 display: flex;
                 flex-direction: column;
-                background: rgba(30, 41, 59, 0.6);
+                background: #F8FAFC;
                 border-radius: 10px;
-                border: 1px solid rgba(139, 92, 246, 0.15);
+                border: 1px solid #E2E8F0;
                 padding: 12px;
                 gap: 6px;
             }
@@ -441,7 +380,7 @@
                 display: block;
                 font-size: 0.7rem;
                 font-weight: 600;
-                color: #A78BFA;
+                color: #7C3AED;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
                 margin-bottom: 2px;
@@ -449,10 +388,10 @@
 
             td:first-child {
                 font-weight: 600;
-                color: #fff;
+                color: #1E293B;
                 font-size: 0.9rem;
                 padding-bottom: 4px;
-                border-bottom: 1px solid rgba(139, 92, 246, 0.15);
+                border-bottom: 1px solid #E2E8F0;
             }
 
             /* Notes box */
@@ -502,7 +441,7 @@
                 line-height: 1.4 !important;
             }
 
-            details>div {
+            details > div {
                 padding: 12px !important;
                 font-size: 0.85rem !important;
                 line-height: 1.6 !important;
@@ -521,19 +460,10 @@
             .ref-card h4 {
                 font-size: 0.9rem;
             }
-
-            .footer {
-                padding: 20px 10px;
-                font-size: 0.75rem;
-            }
         }
 
         /* Extra small screens */
         @media (max-width: 400px) {
-            .header h1 {
-                font-size: 1.25rem;
-            }
-
             .section-title {
                 font-size: 1rem;
             }
@@ -550,13 +480,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="index.html" class="back-btn">← Back to Library</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">💰</div>
+            <h2>Incentive & Penalty</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="employee-handbook.html" class="nav-sop">📖 Handbook</a>
+            <a href="training-hub.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#universal">📋 Universal Rules</a>
+            <a href="#shopify">💻 Developers / Designers</a>
+            <a href="#sales">💼 Technical Sales</a>
+            <a href="#pm">📊 Project Manager</a>
+            <a href="#csm">🤝 Client Success Managers</a>
+            <a href="#hr">👥 HR Specialist</a>
+            <a href="#designer">🎨 Graphic Designer</a>
+            <a href="#content">📱 Social Media/Content</a>
+            <a href="#quick-ref">📊 Quick Reference</a>
+            <a href="#notes">📝 Important Notes</a>
+            <a href="#faq">❓ FAQ</a>
+        </div>
+    </aside>
 
+    <div class="main-content">
         <div class="header">
             <h1>🎯 Incentive & Penalty Framework</h1>
             <p>Digital Marketing Heroes</p>
-            <p style="margin-top: 10px; font-weight: 600; color: #A78BFA;">Clear rules, fair measurement, consistent
+            <p style="margin-top: 10px; font-weight: 600; color: rgba(255,255,255,0.9);">Clear rules, fair measurement, consistent
                 rewards and consequences.</p>
         </div>
 
@@ -718,7 +677,7 @@
                         <td class="reward" data-label="Reward">Case-by-case</td>
                         <td data-label="Criteria">Projects related to custom development can grant more incentives but
                             not guaranteed. *Will be
-                            based on each candidate’s performance and efforts</td>
+                            based on each candidate's performance and efforts</td>
                     </tr>
                 </tbody>
             </table>
@@ -786,7 +745,7 @@
             <h2 class="section-title">💼 TECHNICAL SALES SPECIALIST</h2>
 
             <h3 class="incentive">🏆 Sales Incentives</h3>
-            <p style="color: #F59E0B; font-size: 0.9rem; margin-bottom: 10px;"><strong>⚠️ Note:</strong> No base
+            <p style="color: #D97706; font-size: 0.9rem; margin-bottom: 10px;"><strong>⚠️ Note:</strong> No base
                 commissions apply below $5,000 in total sales. Commissions only kick in once cumulative deal value
                 crosses $5,000.</p>
             <table>
@@ -1415,7 +1374,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p style="color: #94A3B8; font-size: 0.85rem; margin-top: 10px;"><strong>Note:</strong> For projects
+            <p style="color: #64748B; font-size: 0.85rem; margin-top: 10px;"><strong>Note:</strong> For projects
                 involving multiple team members, the penalty/reward is split based on responsibility assessment by Delhi
                 Team. Bigger custom development projects can grant more incentives (case-by-case based on performance).
             </p>
@@ -1487,36 +1446,36 @@
             <div class="ladder">
                 <div class="step">
                     <div class="step-num">1</div>
-                    <div class="step-title">Weekly Check-in<br><small style="color:#94A3B8;">Ongoing — PM/Manager tracks
+                    <div class="step-title">Weekly Check-in<br><small style="color:#64748B;">Ongoing — PM/Manager tracks
                             project progress, SOP adherence, and client feedback</small>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-num">2</div>
-                    <div class="step-title">Monthly Review<br><small style="color:#94A3B8;">By 5th of next month — star
+                    <div class="step-title">Monthly Review<br><small style="color:#64748B;">By 5th of next month — star
                             ratings, project count, penalties/incentives calculated</small>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-num">3</div>
-                    <div class="step-title">Appeal Window<br><small style="color:#94A3B8;">48 hours to submit written
+                    <div class="step-title">Appeal Window<br><small style="color:#64748B;">48 hours to submit written
                             appeal with supporting evidence to HR</small></div>
                 </div>
                 <div class="step">
                     <div class="step-num">4</div>
-                    <div class="step-title">Committee Review<br><small style="color:#94A3B8;">3 working days — HR +
+                    <div class="step-title">Committee Review<br><small style="color:#64748B;">3 working days — HR +
                             Delhi Team reviews appeal and evidence</small>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-num">5</div>
-                    <div class="step-title">PIP Trigger<br><small style="color:#94A3B8;">If score below 5.0 for 2+
+                    <div class="step-title">PIP Trigger<br><small style="color:#64748B;">If score below 5.0 for 2+
                             months, or multiple 4-star reviews, or consistent SOP violations</small>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-num">6</div>
-                    <div class="step-title">Documentation & Action<br><small style="color:#94A3B8;">All decisions
+                    <div class="step-title">Documentation & Action<br><small style="color:#64748B;">All decisions
                             documented in performance file — promotion track reviewed at 1-year mark</small>
                     </div>
                 </div>
@@ -1527,11 +1486,9 @@
         <div class="section" id="faq">
             <h2 class="section-title">❓ Frequently Asked Questions</h2>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">When are bonuses paid?
-                </summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>When are bonuses paid?</summary>
+                <div>
                     Monthly incentives are paid in the same month's salary. For example, January incentives are included
                     in January salary, which is processed before 10th of February. Similarly, February incentives are
                     paid in February salary (processed before 10th March), and so on for every month. Quarterly bonuses
@@ -1539,32 +1496,26 @@
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">What if a project has
-                    multiple team members? How is the penalty/reward split?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>What if a project has multiple team members? How is the penalty/reward split?</summary>
+                <div>
                     The Project Manager assesses the responsibility percentage for each team member based on their
                     contribution. For example, if a project gets a 1-star review due to code issues, the developer may
                     receive 70% of the penalty while CSM receives 30%. Delhi Team makes the final decision on splits.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">Can penalties exceed my
-                    salary?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>Can penalties exceed my salary?</summary>
+                <div>
                     <strong>No.</strong> All penalties are capped at 50% of monthly salary. The only exceptions are
                     termination offenses like confidentiality breaches or dishonesty.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">How do I appeal a
-                    penalty decision?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>How do I appeal a penalty decision?</summary>
+                <div>
                     You have 48 hours from notification to submit a written appeal. Send your appeal to HR with
                     supporting evidence. The HR representative must be informed, and the Review Committee will review
                     within 3 working
@@ -1572,11 +1523,9 @@
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">What happens if I get
-                    multiple bad reviews in one month?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>What happens if I get multiple bad reviews in one month?</summary>
+                <div>
                     Each review is counted separately. For example, two 1-star reviews in a month = -₹4,000 total
                     (-₹2,000 each). The 50% salary cap still applies. Patterns of poor reviews (multiple projects below
                     4-star) will immediately trigger a Performance Improvement Plan (PIP). Three consecutive months with
@@ -1584,11 +1533,9 @@
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">Does a 4-star review
-                    mean I failed?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>Does a 4-star review mean I failed?</summary>
+                <div>
                     <strong>A 4-star is a warning sign, not a pass.</strong> While there's no direct monetary penalty,
                     it means the client was not extremely satisfied. Your goal is to ensure every client is excited
                     about your work, not just content. Multiple 4-star reviews will trigger a performance review and can
@@ -1597,54 +1544,44 @@
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">What qualifies as a
-                    "medical emergency" for unplanned leave?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>What qualifies as a "medical emergency" for unplanned leave?</summary>
+                <div>
                     Medical emergencies require documentation (doctor's note, hospital receipt, etc.). This includes
                     sudden illness, accidents, or family medical emergencies. HR will review documentation for validity.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">How is "response time"
-                    calculated for CSM bonuses?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>How is "response time" calculated for CSM bonuses?</summary>
+                <div>
                     Response time is measured from when a client sends a message to when you acknowledge/respond (during
                     business hours only: 10 AM - 7 PM IST). Automated responses don't count. We track this through
                     communication tools.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">Can I get both
-                    incentives and penalties in the same month?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>Can I get both incentives and penalties in the same month?</summary>
+                <div>
                     <strong>Yes.</strong> They are calculated separately. For example, you might earn ₹2,000 for a
                     5-star review on one project but get -₹500 for missing a deadline on another. Your net bonus would
                     be ₹1,500.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">What is a PIP
-                    (Performance Improvement Plan)?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>What is a PIP (Performance Improvement Plan)?</summary>
+                <div>
                     A PIP is a formal 30-day improvement plan with specific goals. You'll work closely with your manager
                     to address performance issues. Successfully completing a PIP removes termination risk. Failing to
                     improve may result in termination.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">How do sales commissions
-                    work with team deals?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>How do sales commissions work with team deals?</summary>
+                <div>
                     Commission goes to the person who closed the deal (final conversion). No commissions apply below
                     $5,000 in total cumulative sales. Rates are: 1% ($500-$1,999), 2% ($2,000-$4,999), 3% ($5,000+). If
                     multiple salespeople worked on a lead, the split is decided by management based on contribution.
@@ -1652,43 +1589,35 @@
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">What counts as "breaking
-                    a live store"?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>What counts as "breaking a live store"?</summary>
+                <div>
                     Any code change that causes: store downtime, checkout failures, data loss, visual breaks visible to
                     customers, or performance issues affecting sales. Always test on staging first and follow deployment
                     protocols.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">Can I earn the Employee
-                    of the Month award multiple times?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>Can I earn the Employee of the Month award multiple times?</summary>
+                <div>
                     <strong>Yes!</strong> There's no limit. If you consistently have the highest performance score, you
                     can win every month. This also fast-tracks you for promotions and salary increases.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">What if a client gives a
-                    bad review unfairly?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>What if a client gives a bad review unfairly?</summary>
+                <div>
                     Document everything and submit an appeal within 48 hours. Include chat logs, delivered work,
                     timeline evidence, and any documentation showing the issue was outside your control. The Review
                     Committee will investigate fairly.
                 </div>
             </details>
 
-            <details
-                style="background: rgba(30, 41, 59, 0.5); border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                <summary style="padding: 15px; cursor: pointer; font-weight: 600; color: #fff;">How do I track my
-                    incentive progress during the month?</summary>
-                <div style="padding: 15px; color: #CBD5E1; border-top: 1px solid rgba(139, 92, 246, 0.2);">
+            <details>
+                <summary>How do I track my incentive progress during the month?</summary>
+                <div>
                     Check your performance dashboard weekly. Project completions, reviews, and metrics are tracked in
                     real-time. Monthly summary is shared by 5th of the following month. Ask your manager for updates
                     anytime.
@@ -1700,7 +1629,10 @@
             <p>Digital Heroes | Incentive & Penalty Framework v3.0 | Last Updated: February 2026</p>
         </div>
     </div>
+
     <script src="assets/js/sop-features.js"></script>
+    <script src="admin-mode.js"></script>
+    <script src="assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>

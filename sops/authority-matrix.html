@@ -8,6 +8,7 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
     <link rel="stylesheet" href="admin-mode.css">
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
@@ -22,33 +23,10 @@
             --info: #3B82F6;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            line-height: 1.7;
-            color: #334155;
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            border: 1px solid rgba(139, 92, 246, 0.3);
+            background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+            color: white;
         }
 
         .header h1 {
@@ -58,45 +36,27 @@
         }
 
         .header p {
-            color: #94A3B8;
+            color: rgba(255, 255, 255, 0.9);
             font-size: 1.1rem;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: rgba(139, 92, 246, 0.2);
-            color: #A78BFA;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            transition: all 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--accent);
-            color: #fff;
         }
 
         /* Purpose Box */
         .purpose-box {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
-            border: 1px solid rgba(139, 92, 246, 0.4);
+            background: linear-gradient(135deg, #F5F3FF, #EDE9FE);
+            border: 1px solid #DDD6FE;
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 30px;
         }
 
         .purpose-box h2 {
-            color: #A78BFA;
+            color: #7C3AED;
             font-size: 1.3rem;
             margin-bottom: 15px;
         }
 
         .purpose-box p {
-            color: #E2E8F0;
+            color: #1E293B;
         }
 
         /* Authority Levels Legend */
@@ -112,8 +72,9 @@
             align-items: center;
             gap: 12px;
             padding: 15px;
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
         .legend-dot {
@@ -139,26 +100,18 @@
         }
 
         .legend-text {
-            color: #E2E8F0;
+            color: #1E293B;
             font-weight: 500;
             font-size: 0.9rem;
         }
 
         /* Section */
-        .section {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(139, 92, 246, 0.3);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-
         .section-title {
-            color: #fff;
+            color: #1E293B;
             font-size: 1.4rem;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            border-bottom: 1px solid #E2E8F0;
             display: flex;
             align-items: center;
             gap: 12px;
@@ -166,7 +119,7 @@
 
         /* Decision Card */
         .decision-card {
-            background: rgba(30, 41, 59, 0.5);
+            background: #F8FAFC;
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 20px;
@@ -199,7 +152,7 @@
         }
 
         .decision-title {
-            color: #fff;
+            color: #1E293B;
             font-size: 1.1rem;
             font-weight: 600;
         }
@@ -213,23 +166,23 @@
         }
 
         .decision-badge.delhi {
-            background: rgba(239, 68, 68, 0.2);
-            color: #F87171;
+            background: rgba(239, 68, 68, 0.1);
+            color: #DC2626;
         }
 
         .decision-badge.pm {
-            background: rgba(59, 130, 246, 0.2);
-            color: #60A5FA;
+            background: rgba(59, 130, 246, 0.1);
+            color: #2563EB;
         }
 
         .decision-badge.lead {
-            background: rgba(16, 185, 129, 0.2);
-            color: #34D399;
+            background: rgba(16, 185, 129, 0.1);
+            color: #059669;
         }
 
         .decision-badge.team {
-            background: rgba(245, 158, 11, 0.2);
-            color: #FBBF24;
+            background: rgba(245, 158, 11, 0.1);
+            color: #D97706;
         }
 
         .decision-row {
@@ -240,50 +193,18 @@
         }
 
         .decision-label {
-            color: #94A3B8;
+            color: #64748B;
             font-size: 0.85rem;
             font-weight: 500;
         }
 
         .decision-value {
-            color: #CBD5E1;
+            color: #475569;
             font-size: 0.9rem;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #64748B;
-            font-size: 0.85rem;
         }
 
         /* ========== MOBILE OPTIMIZATION ========== */
         @media (max-width: 768px) {
-            .container {
-                padding: 15px 10px;
-            }
-
-            .back-btn {
-                padding: 8px 14px;
-                font-size: 0.85rem;
-                margin-bottom: 12px;
-            }
-
-            .header {
-                padding: 20px 15px;
-                margin-bottom: 20px;
-                border-radius: 14px;
-            }
-
-            .header h1 {
-                font-size: 1.5rem;
-                line-height: 1.3;
-            }
-
-            .header p {
-                font-size: 0.9rem;
-            }
-
             .purpose-box {
                 padding: 18px 14px;
                 margin-bottom: 20px;
@@ -321,12 +242,6 @@
             }
 
             /* Sections */
-            .section {
-                padding: 16px 12px;
-                margin-bottom: 16px;
-                border-radius: 12px;
-            }
-
             .section-title {
                 font-size: 1.1rem;
                 margin-bottom: 16px;
@@ -365,25 +280,16 @@
                 font-size: 0.7rem;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
-                color: #A78BFA;
+                color: #7C3AED;
             }
 
             .decision-value {
                 font-size: 0.85rem;
                 line-height: 1.5;
             }
-
-            .footer {
-                padding: 20px 10px;
-                font-size: 0.75rem;
-            }
         }
 
         @media (max-width: 400px) {
-            .header h1 {
-                font-size: 1.25rem;
-            }
-
             .section-title {
                 font-size: 1rem;
             }
@@ -404,9 +310,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="index.html" class="back-btn">← Back to Library</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">🔐</div>
+            <h2>Authority Matrix</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="employee-handbook.html" class="nav-sop">📖 Handbook</a>
+            <a href="training-hub.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#financial">💰 Financial Decisions</a>
+            <a href="#client">🤝 Client Decisions</a>
+            <a href="#technical">⚙️ Technical Decisions</a>
+            <a href="#people">👥 People Decisions</a>
+        </div>
+    </aside>
 
+    <div class="main-content">
         <div class="header">
             <h1>🔐 Authority Matrix</h1>
             <p>Stop decision chaos. Make decisions fast. Everyone knows exactly what they can decide.</p>
@@ -439,7 +367,7 @@
         </div>
 
         <!-- SECTION 1: FINANCIAL DECISIONS -->
-        <div class="section">
+        <div class="section" id="financial">
             <h2 class="section-title">💰 Section 1: Financial Decisions</h2>
 
             <div class="decision-card delhi">
@@ -566,7 +494,7 @@
         </div>
 
         <!-- SECTION 2: CLIENT DECISIONS -->
-        <div class="section">
+        <div class="section" id="client">
             <h2 class="section-title">🤝 Section 2: Client Decisions</h2>
 
             <div class="decision-card pm">
@@ -675,7 +603,7 @@
         </div>
 
         <!-- SECTION 3: TECHNICAL DECISIONS -->
-        <div class="section">
+        <div class="section" id="technical">
             <h2 class="section-title">⚙️ Section 3: Technical Decisions</h2>
 
             <div class="decision-card lead">
@@ -764,7 +692,7 @@
         </div>
 
         <!-- SECTION 4: PEOPLE DECISIONS -->
-        <div class="section">
+        <div class="section" id="people">
             <h2 class="section-title">👥 Section 4: People Decisions</h2>
 
             <div class="decision-card delhi">
@@ -879,6 +807,8 @@
     </div>
 
     <script src="assets/js/sop-features.js"></script>
+    <script src="admin-mode.js"></script>
+    <script src="assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>

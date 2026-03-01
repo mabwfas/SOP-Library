@@ -5,58 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Daily Task Sheet | Digital Heroes</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦸</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/shared-layout.css">
+    <link rel="stylesheet" href="../admin-mode.css">
     <style>
         :root {
-            --accent: #E11D48;
-            --accent-light: rgba(225, 29, 72, 0.1);
+            --accent: #8B5CF6;
+            --accent-light: rgba(139, 92, 246, 0.1);
             --text: #334155;
             --bg: #F8FAFC;
             --card: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            background: linear-gradient(135deg, var(--accent), #BE123C);
-            color: white;
-            padding: 40px 30px;
-            border-radius: 16px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2em;
-            margin-bottom: 8px;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 15px;
         }
 
         .time-block {
@@ -94,35 +53,66 @@
         }
 
         .tip-box {
-            background: linear-gradient(135deg, #FFE4E6, #FECDD3);
+            background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
             padding: 20px;
             border-radius: 12px;
             margin-top: 30px;
         }
 
         .tip-box h4 {
-            color: #9F1239;
+            color: #5B21B6;
             margin-bottom: 10px;
         }
 
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #94A3B8;
-            font-size: 0.85em;
+        .back-btn {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
         }
     </style>
+    <link rel="stylesheet" href="../assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="../assets/css/mobile-override.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Social Media Daily Task Sheet</h1>
-            <p>Your daily checklist for social media excellence</p>
-            <a href="../index.html" class="back-btn">Back to Library</a>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="../index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">📱</div>
+            <h2>Social Media Daily Tasks</h2>
+        </div>
+        <div class="sidebar-nav-grid">
+            <a href="../social-media-sop.html" class="nav-sop">📋 SOP</a>
+            <a href="../kra/social-media-kra.html" class="nav-kra">🎯 KRA</a>
+            <a href="../kpi/social-media-kpi.html" class="nav-kpi">📊 KPI</a>
+            <a href="../training/social-media-training.html" class="nav-training">🎓 Training</a>
+        </div>
+        <a href="../index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#morning">☀️ Morning Block</a>
+            <a href="#afternoon">🌤️ Afternoon Block</a>
+            <a href="#evening">🌙 Evening Block</a>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="header" style="background: linear-gradient(135deg, #8B5CF6, #7C3AED);">
+            <h1>📱 Social Media Daily Task Sheet</h1>
+            <p class="subtitle">Your daily checklist for social media excellence</p>
         </header>
-        <div class="time-block">
-            <h3>Morning Block (9:00 AM - 12:00 PM)</h3>
+
+        <div class="time-block" id="morning">
+            <h3>☀️ Morning Block (9:00 AM - 12:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Check all platforms</strong> - IG, LinkedIn, YouTube, Twitter</li>
                 <li class="priority-high"><strong>Respond to comments/DMs</strong> - Engage with audience</li>
@@ -131,8 +121,9 @@
                 <li><strong>Trend research</strong> - Check trending topics/hashtags</li>
             </ul>
         </div>
-        <div class="time-block">
-            <h3>Afternoon Block (12:00 PM - 4:00 PM)</h3>
+
+        <div class="time-block" id="afternoon">
+            <h3>🌤️ Afternoon Block (12:00 PM - 4:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Content creation</strong> - Create posts for upcoming days</li>
                 <li><strong>Write captions</strong> - Engaging copy with CTAs</li>
@@ -141,8 +132,9 @@
                 <li><strong>Community engagement</strong> - Comment on relevant accounts</li>
             </ul>
         </div>
-        <div class="time-block">
-            <h3>Evening Block (4:00 PM - 6:00 PM)</h3>
+
+        <div class="time-block" id="evening">
+            <h3>🌙 Evening Block (4:00 PM - 6:00 PM)</h3>
             <ul class="task-list">
                 <li class="priority-high"><strong>Post engagement check</strong> - Respond to new interactions</li>
                 <li><strong>Analytics review</strong> - Check daily performance</li>
@@ -150,15 +142,20 @@
                 <li><strong>Content ideas</strong> - Brainstorm for upcoming content</li>
             </ul>
         </div>
+
         <div class="tip-box">
-            <h4>Pro Tip</h4>
+            <h4>💡 Pro Tip</h4>
             <p><strong>Consistency beats virality.</strong> Regular, quality content builds more lasting engagement than
                 chasing viral moments.</p>
         </div>
+
         <footer class="footer">
             <p>Digital Heroes | Social Media Excellence</p>
         </footer>
     </div>
+
+    <script src="../admin-mode.js"></script>
+    <script src="../assets/js/shared-sidebar.js"></script>
 </body>
 
 </html>
