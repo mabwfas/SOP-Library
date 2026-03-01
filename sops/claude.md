@@ -1,11 +1,24 @@
 # Claude Code Changelog
 
 All changes made by Claude Code to the SOP Library project.
-**Total impact:** 116 files changed, 18,498 insertions, 5,274 deletions across 20 commits.
+**Total impact:** 139 files changed, 18,669 insertions, 5,344 deletions across 22 commits.
 
 ---
 
 ## Session 4: QA Report Fixes (Mar 1, 2026)
+
+### Commit `e527cfd` — Sidebar Nav, Cursor, Footer, Coming Soon (23 files)
+**Scope:** Navigation consistency, accessibility, footer UX
+
+**Sidebar navigation (#7):**
+- Added DTS + Training buttons to all 11 KRA pages and all 11 KPI pages
+- Fiverr Risk pages get Training only (no DTS page exists for this role)
+- Buttons use 2x2 flex-wrap grid matching existing nav button styles
+
+**Homepage (index.html):**
+- Made fire cursor desktop-only with `@media (hover: hover) and (pointer: fine)` media query — touch devices now keep default cursor (#22)
+- Added footer navigation links: Training Hub, Employee Handbook, Portfolio (#20)
+- Added DTS "Coming Soon" button to Daily Routine and Chat Sim role cards (#10)
 
 ### Commit `323a67f` — QA Report Fixes (6 files)
 **Scope:** 10 issues from full QA report — UX, accessibility, navigation
