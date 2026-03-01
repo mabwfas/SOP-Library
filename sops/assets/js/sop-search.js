@@ -10,7 +10,7 @@
     const CONFIG = {
         debounceMs: 200,
         minSearchLength: 2,
-        maxResults: 15,
+        maxResults: 50,
         highlightClass: 'search-highlight'
     };
 
@@ -137,16 +137,20 @@
             return;
         }
 
-        const results = searchIndex.filter(item => {
+        const allResults = searchIndex.filter(item => {
             const searchText = (item.title + ' ' + item.content).toLowerCase();
             return searchText.includes(query.toLowerCase());
-        }).slice(0, CONFIG.maxResults);
+        });
+        const results = allResults.slice(0, CONFIG.maxResults);
 
-        if (results.length === 0) {
+        if (allResults.length === 0) {
             dropdown.innerHTML = '<div class="search-no-results">No results found</div>';
         } else {
+            const countText = allResults.length > results.length
+                ? `${allResults.length} results (showing ${results.length})`
+                : `${allResults.length} result${allResults.length > 1 ? 's' : ''}`;
             dropdown.innerHTML = `
-                <div class="search-result-count">${results.length} result${results.length > 1 ? 's' : ''}</div>
+                <div class="search-result-count">${countText}</div>
                 ${results.map((r, i) => `
                     <a href="#${r.id}" class="search-result-item" data-index="${i}">
                         <div class="result-title">${highlightText(r.title, query)}</div>

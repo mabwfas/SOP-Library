@@ -422,6 +422,7 @@
             padding: 12px;
             transition: all 0.2s;
             position: relative;
+            z-index: 1;
             display: grid;
             grid-template-columns: 1fr auto;
             grid-template-rows: auto 1fr;
@@ -1341,7 +1342,7 @@
                 <div class="role-content">
                     <ul class="role-details">
                         <li>Wireframing</li>
-                        <li>High-fi Prototypes</li>
+                        <li>Hi-fi Prototypes</li>
                         <li>User Research</li>
                         <li>Design Systems</li>
                     </ul>
@@ -1461,9 +1462,9 @@
                     </ul>
                 </div>
                 <div class="role-links">
-                    <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;">KRA</a>
+                    <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KRA</a>
                     <a href="daily-sop.html" class="role-link sop">SOP</a>
-                    <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;">KPI</a>
+                    <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KPI</a>
                 </div>
             </div>
             <!-- Client Chat -->
@@ -1478,9 +1479,9 @@
                     </ul>
                 </div>
                 <div class="role-links">
-                    <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;">KRA</a>
+                    <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KRA</a>
                     <a href="client-chat-sop.html" class="role-link sop">SOP</a>
-                    <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;">KPI</a>
+                    <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KPI</a>
                 </div>
             </div>
             <!-- Fiverr Risk Manager -->
@@ -1499,6 +1500,21 @@
                     <a href="kra/fiverr-risk-kra.html" class="role-link kra">KRA</a>
                     <a href="fiverr-risk-sop.html" class="role-link sop">SOP</a>
                     <a href="kpi/fiverr-risk-kpi.html" class="role-link kpi">KPI</a>
+                </div>
+            </div>
+            <!-- Operations -->
+            <div class="role-card">
+                <div class="role-header"><span class="role-icon">🔄</span><span class="role-title">Operations</span></div>
+                <div class="role-content">
+                    <ul class="role-details">
+                        <li>Workflow Systems</li>
+                        <li>Process Optimization</li>
+                        <li>Quality Control</li>
+                        <li>Routine Mgmt</li>
+                    </ul>
+                </div>
+                <div class="role-links">
+                    <a href="training/operations-training.html" class="role-link" style="background: linear-gradient(135deg, #6366F1, #06B6D4); color: #000; font-weight: 700;">Training</a>
                 </div>
             </div>
         </div>
@@ -1833,10 +1849,9 @@
             }
         }
 
-        // Hook into interactions for XP 
+        // Hook into interactions for XP (click only — no hover XP to prevent inflation)
         document.querySelectorAll('a, button, .path-card, .role-card').forEach(el => {
-            el.addEventListener('mouseenter', () => addXP(5));
-            el.addEventListener('click', () => addXP(20));
+            el.addEventListener('click', () => addXP(10));
         });
 
         // Konami Code 
@@ -1858,10 +1873,11 @@
         function activateGodMode() {
             log('GOD MODE ACTIVATED', 'error');
             document.body.style.filter = 'hue-rotate(90deg)';
-            document.querySelectorAll('*').forEach(el => {
-                el.style.fontFamily = '"Courier New", monospace';
-            });
-            alert('🎮 GOD MODE ACTIVATED! 🎮');
+            document.body.style.transition = 'filter 0.5s ease';
+            // Auto-revert after 3 seconds (no disruptive alert)
+            setTimeout(() => {
+                document.body.style.filter = 'none';
+            }, 3000);
         }
     </script>
 

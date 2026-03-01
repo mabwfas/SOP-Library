@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Digital Heroes</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦸</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+            min-height: 100vh;
+            color: #F8FAFC;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #6366F1, #06B6D4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .error-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #F8FAFC;
+        }
+
+        .error-message {
+            font-size: 1.05em;
+            color: #94A3B8;
+            max-width: 500px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #6366F1, #06B6D4);
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #F8FAFC;
+        }
+
+        .btn-secondary:hover {
+            border-color: #6366F1;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 60px;
+            color: #64748B;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-message">
+        The page you're looking for doesn't exist or has been moved.
+        Let's get you back on track.
+    </p>
+    <div class="actions">
+        <a href="index.html" class="btn btn-primary">Back to Library</a>
+        <a href="training-hub.html" class="btn btn-secondary">Training Hub</a>
+    </div>
+    <div class="footer">
+        <p>Digital Heroes Library | v2.0</p>
+    </div>
+</body>
+
+</html>

@@ -85,6 +85,14 @@
             body.light-mode td {
                 color: #475569 !important;
             }
+
+            /* Preserve white text on colored backgrounds */
+            body.light-mode .keep-light-text,
+            body.light-mode .keep-light-text h3,
+            body.light-mode .keep-light-text p,
+            body.light-mode .keep-light-text a {
+                color: white !important;
+            }
             
             body.light-mode .main-content {
                 background: #F1F5F9 !important;
