@@ -259,8 +259,15 @@ function showResults() {
                 `).join('')}
             </div>
             
+            ${passed && progress.completedTasks.length === trainingTasks.length ? `
+            <div class="certified-badge" style="text-align: center; margin-top: 20px; padding: 20px; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 12px;">
+                <h2 style="color: #6366F1; margin-bottom: 10px;">🏆 CERTIFIED</h2>
+                <p style="color: #94A3B8;">You've passed all training tasks!</p>
+                <button class="nav-btn" style="margin-top: 15px;" onclick="showCertificate()">🎓 View Certificate</button>
+            </div>
+            ` : ''}
             <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                ${passed ? `<button class="nav-btn" onclick="openTask(${currentTask + 1 < trainingTasks.length ? currentTask + 1 : currentTask})">Next Task →</button>` : ''}
+                ${passed && currentTask + 1 < trainingTasks.length ? `<button class="nav-btn" onclick="openTask(${currentTask + 1})">Next Task →</button>` : ''}
                 <button class="nav-btn secondary" onclick="openTask(${currentTask})">📖 Review Material</button>
                 ${!passed ? `<button class="nav-btn" onclick="startQuiz(${currentTask})">🔄 Retry Quiz</button>` : ''}
             </div>
