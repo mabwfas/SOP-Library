@@ -1465,6 +1465,7 @@
                     <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KRA</a>
                     <a href="daily-sop.html" class="role-link sop">SOP</a>
                     <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KPI</a>
+                    <a href="#" class="role-link dts" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">DTS</a>
                 </div>
             </div>
             <!-- Client Chat -->
@@ -1482,6 +1483,7 @@
                     <a href="#" class="role-link kra" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KRA</a>
                     <a href="client-chat-sop.html" class="role-link sop">SOP</a>
                     <a href="#" class="role-link kpi" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">KPI</a>
+                    <a href="#" class="role-link dts" style="opacity: 0.3; cursor: default;" title="Coming Soon" onclick="event.preventDefault()">DTS</a>
                 </div>
             </div>
             <!-- Fiverr Risk Manager -->
@@ -1661,6 +1663,11 @@
         </section>
 
         <footer class="footer">
+            <div style="margin-bottom: 8px;">
+                <a href="training-hub.html" style="color: var(--kra); text-decoration: none; margin: 0 8px;">Training Hub</a> |
+                <a href="employee-handbook.html" style="color: var(--kpi); text-decoration: none; margin: 0 8px;">Employee Handbook</a> |
+                <a href="https://Portfolio.digitalheroes.co.in" target="_blank" style="color: var(--sop); text-decoration: none; margin: 0 8px;">Portfolio</a>
+            </div>
             Digital Heroes Library | v2.0 | © 2026
         </footer>
     </div>
@@ -1881,12 +1888,14 @@
         }
     </script>
 
-    <!-- FIRE CURSOR EFFECT -->
+    <!-- FIRE CURSOR EFFECT (desktop only — preserves default cursor on touch devices) -->
     <div id="fire-cursor"></div>
     <style>
-        body,
-        * {
-            cursor: none !important;
+        @media (hover: hover) and (pointer: fine) {
+            body,
+            * {
+                cursor: none !important;
+            }
         }
 
         #fire-cursor {
