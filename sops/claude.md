@@ -1,7 +1,28 @@
 # Claude Code Changelog
 
 All changes made by Claude Code to the SOP Library project.
-**Total impact:** 110 files changed, 18,277 insertions, 5,253 deletions across 18 commits.
+**Total impact:** 116 files changed, 18,498 insertions, 5,274 deletions across 20 commits.
+
+---
+
+## Session 4: QA Report Fixes (Mar 1, 2026)
+
+### Commit `323a67f` — QA Report Fixes (6 files)
+**Scope:** 10 issues from full QA report — UX, accessibility, navigation
+
+**Homepage (index.html):**
+- Fixed XP hover inflation: removed `mouseenter` +5 XP listener, kept click-only +10 (#5)
+- Fixed matrix rain bleeding through role cards: added `z-index: 1` to `.role-card` (#9)
+- Fixed God Mode: removed disruptive `alert()` popup, auto-reverts hue-rotate after 3 seconds (#21)
+- Fixed placeholder `#` links: added `title="Coming Soon"` tooltip and `onclick="event.preventDefault()"` to Daily Routine & Chat Sim KRA/KPI buttons (#2)
+- Fixed typo "High-fi Prototypes" → "Hi-fi Prototypes" on UI/UX Designer card (#12)
+- Added Operations role card with Training link — was previously unreachable from homepage (#11)
+
+**Other files:**
+- Created branded `404.html` page with Back to Library + Training Hub links (#1)
+- Fixed search result count mismatch: increased `maxResults` from 15→50 in `sop-search.js`, show total count when results exceed display limit (#4)
+- Fixed light mode contrast on purple "Deep Dive" banner in `employee-handbook.html`: added `.keep-light-text` class and CSS rule in `sop-theme.js` to preserve white text on colored backgrounds (#15)
+- Fixed double emoji on Designer KRA badge: `💰 🎨 Conversion Design` → `🎨 Conversion Design` (#13)
 
 ---
 
