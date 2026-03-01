@@ -217,7 +217,9 @@ summary {
     th,
     td {
         padding: 8px 6px !important;
-        white-space: nowrap !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
     }
 
     /* Lists */
