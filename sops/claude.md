@@ -1,7 +1,60 @@
 # Claude Code Changelog
 
 All changes made by Claude Code to the SOP Library project.
-**Total impact:** 139 files changed, 18,669 insertions, 5,344 deletions across 22 commits.
+**Total impact:** 216 files changed, 21,806 insertions, 34,759 deletions across 23 commits.
+
+---
+
+## Session 5: Full Visual Overhaul — Unified Page Design (Mar 1, 2026)
+
+### Commit `79648e6` — Unify page design (77 files, -26,278 net lines)
+**Scope:** Extract shared CSS/JS, convert all 75 non-training pages to unified sidebar + light content layout
+
+**New shared files (Phase 0):**
+- Created `assets/css/shared-layout.css` — single source of truth for sidebar, mobile header, overlay, sections, footer, print, and mobile responsive styles
+- Created `assets/js/shared-sidebar.js` — shared sidebar toggle/close functions with click-outside handler
+
+**DTS pages (Phase 1 — 10 files):**
+- Converted 8 old-style DTS pages from centered `.container` layout to sidebar layout (cs, content, pm, finance, social-media, hr, developer, fullstack)
+- Retrofitted 2 new-style DTS pages (sales, designer) to use shared CSS/JS instead of inline duplicates
+
+**SOP pages (Phase 2 — 13 files):**
+- Converted all 13 SOP pages: replaced sticky `.nav-section` with proper sidebar, added nav-grid with role-specific KRA/KPI/DTS/Training links
+- Changed `<nav class="sidebar">` to semantic `<aside class="sidebar">`
+- Replaced inline-styled nav buttons with CSS classes (`.nav-kra`, `.nav-kpi`, `.nav-dts`, `.nav-training`)
+- Total savings: ~243KB of duplicate CSS removed
+- `sop-features.js` (search, TOC, bookmarks, theme toggle) continues working — position:fixed elements unaffected
+
+**Onboarding pages (Phase 3 — 11 files):**
+- Converted all 11 onboarding pages from dark theme (`#0f172a`) to light theme
+- Stripped duplicated inline CSS (DEFINITIVE MOBILE FIX, SIDEBAR CLOSED BY DEFAULT blocks)
+- Updated sidebar HTML to use shared-layout.css classes
+
+**Resources pages (Phase 4 — 11 files):**
+- Converted all 11 resources/assets pages from dark to light theme
+- Cards: `rgba(255,255,255,0.05)` -> `white` with `#E2E8F0` borders
+- Text: `#9CA3AF` -> `#64748B`, headings `white` -> `#1E293B`
+
+**Handbook + Onboarding Hub (Phase 5 — 2 files):**
+- `employee-handbook.html`: removed duplicated CSS/JS, added shared files
+- `onboarding.html`: converted from dark centered layout to sidebar + light theme
+
+**HR Matrix pages (Phase 5b — 6 files):**
+- Converted authority-matrix, escalation-matrix, performance-review, process-improvement-log, rnr, incentive-penalty
+- Dark gradient backgrounds -> light `#f5f7fa`, dark cards -> white with shadows
+- Added sidebar with Handbook + Training nav links
+
+**KRA/KPI retrofit (Phase 6 — 22 files):**
+- All 11 KRA + 11 KPI files: added shared-layout.css, removed ~280KB of duplicated inline CSS
+- Added shared-sidebar.js, removed inline toggle functions
+- Kept page-specific accent colors and content styles
+
+**Verification (Phase 7):**
+- 75/75 files reference shared-layout.css and shared-sidebar.js
+- 0 files with inline toggleSidebar functions (all moved to shared-sidebar.js)
+- 0 DTS/onboarding files with old dark backgrounds
+- Desktop + mobile visual spot-check passed for all 8 page types
+- Mobile hamburger toggle verified working
 
 ---
 
