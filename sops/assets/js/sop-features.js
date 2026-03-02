@@ -66,11 +66,11 @@
         return 'assets/js/';
     }
 
-    // Load a script dynamically
+    // Load a script dynamically (with cache-bust)
     function loadScript(path) {
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            script.src = path;
+            script.src = path + '?v=6';
             script.async = true;
             script.onload = resolve;
             script.onerror = reject;
