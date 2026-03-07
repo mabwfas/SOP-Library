@@ -403,7 +403,7 @@ const task1Content = `
         <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
         <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
         <li><strong>Developer incentives?</strong> Upon achieving targets set by the company, incentives may go up to 200% of base salary.</li>
-        <li><strong>Sales incentives?</strong> You must reach your minimum sales targets as set by the company. Upon exceeding your targets, you will receive incentives which may go up to 200% of your base salary. Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for current rates and tiers.</li>
+        <li><strong>Sales incentives?</strong> You must reach your minimum sales target of $15,000/month per person. Upon exceeding your target, you will receive incentives which may go up to 200% of your base salary. Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for current rates and tiers.</li>
         <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
     </ul>
 </div>
@@ -898,7 +898,7 @@ const task3Content = `
 
 <div class="highlight-box">
     <strong>📋 How Incentives Work:</strong><br><br>
-    You must reach your <strong>minimum sales targets</strong> as set by the company. Upon achieving sales <strong>more than your target</strong>, you will receive incentives which may go <strong>up to 200% of your base salary</strong>.<br><br>
+    You must reach your <strong>minimum sales target of $15,000/month</strong> per person. Upon achieving sales <strong>more than your target</strong>, you will receive incentives which may go <strong>up to 200% of your base salary</strong>.<br><br>
     <strong>👉 Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for the latest incentive rates, tiers, and bonus structures.</strong><br><br>
     <em style="color: #94A3B8;">The I&P page is the single source of truth for all current incentive rates.</em>
 </div>
@@ -980,7 +980,7 @@ const task3Content = `
 <ul style="margin-bottom: 0;">
 <li>Understand their budget range first</li>
 <li>Position your price within their comfort zone</li>
-<li>Reach your minimum targets as set by the company &mdash; incentives up to 200% of base salary upon exceeding targets</li>
+<li>Reach your minimum target of $15,000/month per person &mdash; incentives up to 200% of base salary upon exceeding targets</li>
 </ul>
 </div>
 
