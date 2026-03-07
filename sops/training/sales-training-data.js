@@ -402,8 +402,8 @@ const task1Content = `
         <li><strong>Is confidentiality mandatory?</strong> Yes. Client data, strategies, internal info. Breach = termination.</li>
         <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
         <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
-        <li><strong>Developer incentives?</strong> Upon achieving targets set by the company, incentives apply. Incentives are not fixed and are subject to Delhi team's decision.</li>
-        <li><strong>Sales incentives?</strong> Minimum target is $20,000/month per person. Failing to meet this results in penalties. Incentives (not fixed, subject to Delhi team's decision) kick in when you achieve 30%+ above target ($26,000+). Credited 1 month after order delivery and finalization. Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for details.</li>
+        <li><strong>Developer incentives?</strong> Upon achieving targets set by the company, incentives apply. Subject to Delhi team's decision.</li>
+        <li><strong>Sales incentives?</strong> Minimum target is $20,000/month per person. Failing to meet this results in penalties. Incentives (subject to Delhi team's decision) kick in when you achieve 30%+ above target ($26,000+). Credited 1 month after order delivery and finalization. Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for details.</li>
         <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
     </ul>
 </div>
@@ -890,7 +890,7 @@ const task3Content = `
             <p style="margin: 5px 0 0 0; color: #CBD5E1;">Performance-based rewards tied to targets</p>
         </div>
         <div style="text-align: right;">
-            <div style="font-size: 1.5em; font-weight: 700; color: #FFF;">Performance-Based (Not Fixed)</div>
+            <div style="font-size: 1.5em; font-weight: 700; color: #FFF;">Performance-Based</div>
             <div style="color: #94A3B8; font-size: 0.9em;">(As per Incentive & Penalty Framework)</div>
         </div>
     </div>
@@ -898,7 +898,7 @@ const task3Content = `
 
 <div class="highlight-box">
     <strong>📋 How Incentives Work:</strong><br><br>
-    Your minimum sales target is <strong>$20,000/month per person</strong>. Failing to meet this target will result in <strong>penalties</strong>. Incentives kick in when you achieve <strong>30% or more above target ($26,000+)</strong>. Incentives are <strong>not fixed</strong> and are <strong>subject to Delhi team's decision</strong>. Incentives are credited <strong>1 month after order delivery and finalization</strong>.<br><br>
+    Your minimum sales target is <strong>$20,000/month per person</strong>. Failing to meet this target will result in <strong>penalties</strong>. Incentives kick in when you achieve <strong>30% or more above target ($26,000+)</strong> and are <strong>subject to Delhi team's decision</strong>. Incentives are credited <strong>1 month after order delivery and finalization</strong>.<br><br>
     <strong>👉 Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for the latest incentive rates, tiers, and bonus structures.</strong><br><br>
     <em style="color: #94A3B8;">The I&P page is the single source of truth for all current incentive rates.</em>
 </div>
@@ -980,7 +980,7 @@ const task3Content = `
 <ul style="margin-bottom: 0;">
 <li>Understand their budget range first</li>
 <li>Position your price within their comfort zone</li>
-<li>Target: $20,000/month per person. Below target = penalties. 30%+ above target ($26,000+) = incentives (not fixed, subject to Delhi team). Credited 1 month after delivery.</li>
+<li>Target: $20,000/month per person. Below target = penalties. 30%+ above target ($26,000+) = incentives (subject to Delhi team). Credited 1 month after delivery.</li>
 </ul>
 </div>
 
@@ -7180,7 +7180,7 @@ const task16Content = `
 <strong>What you do:</strong> Lead the sales team. Set strategy, train new hires, manage key accounts, and drive revenue growth.<br>
 <strong>Skills to develop:</strong> Team management, sales strategy, process optimization, hiring<br>
 <strong>Targets:</strong> Team revenue targets, close rate improvement, team development<br>
-<strong>Earning potential:</strong> Base salary + performance incentives (not fixed, subject to Delhi team's decision) + equity participation
+<strong>Earning potential:</strong> Base salary + performance incentives (subject to Delhi team's decision) + equity participation
 </div>
 
 <h4>Building Your Personal Brand</h4>

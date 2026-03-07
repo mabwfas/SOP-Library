@@ -63,7 +63,7 @@
 
 5. **Pricing & Incentives (5 min)**
    - How pricing works
-   - $20,000/month target per person. Below = penalties. 30%+ above = incentives (not fixed, subject to Delhi team). Credited 1 month after delivery.
+   - $20,000/month target per person. Below = penalties. 30%+ above = incentives (subject to Delhi team). Credited 1 month after delivery.
    - *Show the pricing calculator if available*
 
 6. **Difficult Situations (5 min)**
