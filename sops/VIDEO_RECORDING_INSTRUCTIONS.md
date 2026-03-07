@@ -63,7 +63,7 @@
 
 5. **Pricing & Incentives (5 min)**
    - How pricing works
-   - Minimum targets set by the company — incentives up to 200% of base salary upon exceeding targets
+   - $20,000/month target per person. Below = penalties. 30%+ above = incentives (not fixed, subject to Delhi team). Credited 1 month after delivery.
    - *Show the pricing calculator if available*
 
 6. **Difficult Situations (5 min)**
