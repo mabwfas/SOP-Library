@@ -61,9 +61,9 @@
    - When to say NO to a client
    - *Show the disqualification script*
 
-5. **Pricing & Commission (5 min)**
+5. **Pricing & Incentives (5 min)**
    - How pricing works
-   - 5% commission on projects above $5,000
+   - Minimum targets set by the company — incentives up to 200% of base salary upon exceeding targets
    - *Show the pricing calculator if available*
 
 6. **Difficult Situations (5 min)**

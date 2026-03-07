@@ -402,8 +402,8 @@ const task1Content = `
         <li><strong>Is confidentiality mandatory?</strong> Yes. Client data, strategies, internal info. Breach = termination.</li>
         <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
         <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
-        <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
-        <li><strong>Sales incentives?</strong> Commission-based structure as per the Incentive & Penalty Framework. Refer to the latest incentive-penalty page for current rates and tiers.</li>
+        <li><strong>Developer incentives?</strong> Upon achieving targets set by the company, incentives may go up to 200% of base salary.</li>
+        <li><strong>Sales incentives?</strong> You must reach your minimum sales targets as set by the company. Upon exceeding your targets, you will receive incentives which may go up to 200% of your base salary. Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for current rates and tiers.</li>
         <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
     </ul>
 </div>
@@ -880,26 +880,26 @@ const task3Content = `
 </div>
 
 <div class="content-section">
-<h3>💰 Your Commission Structure</h3>
-<p>We believe in sharing the wealth. This is high-ticket sales, and you are paid for closing high-ticket deals.</p>
+<h3>💰 Your Incentive Structure</h3>
+<p>We believe in rewarding performance. High-ticket sales earn high rewards — but first, you must reach your targets.</p>
 
 <div class="warning-box" style="background: rgba(16, 185, 129, 0.1); border-color: #10B981;">
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
         <div>
-            <h3 style="color: #10B981; border: none; margin: 0;">Commission Structure</h3>
-            <p style="margin: 5px 0 0 0; color: #CBD5E1;">Tiered rates based on deal value</p>
+            <h3 style="color: #10B981; border: none; margin: 0;">Incentive Structure</h3>
+            <p style="margin: 5px 0 0 0; color: #CBD5E1;">Performance-based rewards tied to targets</p>
         </div>
         <div style="text-align: right;">
-            <div style="font-size: 1.5em; font-weight: 700; color: #FFF;">Performance-Based</div>
+            <div style="font-size: 1.5em; font-weight: 700; color: #FFF;">Up to 200% of Base Salary</div>
             <div style="color: #94A3B8; font-size: 0.9em;">(As per Incentive & Penalty Framework)</div>
         </div>
     </div>
 </div>
 
 <div class="highlight-box">
-    <strong>📋 Commission Details:</strong><br><br>
-    Sales commissions are structured in tiers based on deal value — including Starter, Standard, and High-Value closure rates, plus target overachievement bonuses and enterprise acquisition bonuses.<br><br>
-    <strong>👉 Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for the latest commission rates, tiers, and bonus structures.</strong><br><br>
+    <strong>📋 How Incentives Work:</strong><br><br>
+    You must reach your <strong>minimum sales targets</strong> as set by the company. Upon achieving sales <strong>more than your target</strong>, you will receive incentives which may go <strong>up to 200% of your base salary</strong>.<br><br>
+    <strong>👉 Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for the latest incentive rates, tiers, and bonus structures.</strong><br><br>
     <em style="color: #94A3B8;">The I&P page is the single source of truth for all current incentive rates.</em>
 </div>
 </div>
@@ -980,7 +980,7 @@ const task3Content = `
 <ul style="margin-bottom: 0;">
 <li>Understand their budget range first</li>
 <li>Position your price within their comfort zone</li>
-<li>Projects above threshold = commission as per the Incentive &amp; Penalty Framework</li>
+<li>Reach your minimum targets as set by the company &mdash; incentives up to 200% of base salary upon exceeding targets</li>
 </ul>
 </div>
 
@@ -1711,7 +1711,7 @@ Product mastery gives you:
 <ul style="margin-bottom: 0;">
 <li><strong>Plan 1:</strong> Client just needs a store. They will handle their own marketing or already have a team.</li>
 <li><strong>Plan 2:</strong> Client needs a store AND wants to start building their online presence. Good for clients who say "I also need help with social media."</li>
-<li><strong>Plan 3:</strong> Client wants the full package -- store, marketing, SEO, ads. Best for serious brands ready to invest in rapid growth. This is where the biggest commissions are.</li>
+<li><strong>Plan 3:</strong> Client wants the full package -- store, marketing, SEO, ads. Best for serious brands ready to invest in rapid growth. These high-value deals help you exceed your targets and earn the highest incentives.</li>
 </ul>
 </div>
 </div>
@@ -7180,7 +7180,7 @@ const task16Content = `
 <strong>What you do:</strong> Lead the sales team. Set strategy, train new hires, manage key accounts, and drive revenue growth.<br>
 <strong>Skills to develop:</strong> Team management, sales strategy, process optimization, hiring<br>
 <strong>Targets:</strong> Team revenue targets, close rate improvement, team development<br>
-<strong>Earning potential:</strong> Base salary + commission + equity participation
+<strong>Earning potential:</strong> Base salary + performance incentives (up to 200% of base salary) + equity participation
 </div>
 
 <h4>Building Your Personal Brand</h4>
