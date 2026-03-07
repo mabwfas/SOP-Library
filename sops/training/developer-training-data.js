@@ -207,6 +207,18 @@ const trainingTasks = [
             "📚 Learn: Continuous Learning Strategy",
             "🎓 Complete: Final Certification Exam"
         ]
+    },
+    {
+        id: 19,
+        title: "Practical Task — Beauty Brand Store",
+        description: "48-Hour Shopify Build & Submit",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Deadline: 48 hours from assignment",
+            "🛍️ Build: Complete Shopify beauty brand store",
+            "🎯 Apply: CRO, custom code, mobile-first design",
+            "📝 Submit: Fill the task submission form"
+        ]
     }
 ];
 
@@ -8994,6 +9006,326 @@ const task17Quiz = [
     }
 ];
 
+// =============================================================================
+// TASK 19: Practical Task — Beauty Brand Store (48-Hour Build & Submit)
+// =============================================================================
+
+const task19Content = `
+<h2>🛍️ TASK 19: PRACTICAL TASK — Beauty Brand Shopify Store (48-Hour Build)</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #EC4899; margin-top: 0;">🎯 Your Hiring Task: Build a Complete Shopify Store</h3>
+    <p>This is your <strong>practical assessment</strong>. Everything you have learned across Tasks 1-18 will be applied here. You have <strong>48 hours</strong> to build a fully functional Shopify store for a beauty brand and submit your deliverables through the official form.</p>
+    <p style="color: #F59E0B; font-weight: 700; font-size: 1.1em;">⚠️ This task is MANDATORY. You must complete and submit the form to finish your training.</p>
+</div>
+
+<div class="content-section">
+<h3>📋 The Brief: Beauty Brand — 2-Day Client Project Simulation</h3>
+<p>You are building a Shopify store for a <strong>beauty brand</strong>. Think of this as a real client project with a tight deadline — exactly the kind of work you will do at Digital Heroes every day.</p>
+
+<div class="highlight-box" style="background: rgba(236, 72, 153, 0.1); border-color: #EC4899;">
+    <strong>🎨 Brand Profile:</strong>
+    <ul style="margin-bottom: 0;">
+        <li><strong>Industry:</strong> Beauty / Skincare / Cosmetics</li>
+        <li><strong>Vibe:</strong> Modern, clean, premium yet accessible</li>
+        <li><strong>Target Audience:</strong> Young women (18-35) who value aesthetics, wellness, and clean beauty</li>
+        <li><strong>Products:</strong> Skincare sets, serums, cleansers, beauty tools, bundles</li>
+        <li><strong>Deadline:</strong> 48 hours from when you receive this task</li>
+    </ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>✅ Deliverables Checklist</h3>
+<p>Your store must include ALL of the following. Each item will be evaluated during review:</p>
+
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+    <thead>
+        <tr style="background: rgba(236, 72, 153, 0.2);">
+            <th style="padding: 12px; text-align: left; border: 1px solid rgba(255,255,255,0.1);">#</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid rgba(255,255,255,0.1);">Deliverable</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid rgba(255,255,255,0.1);">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Homepage</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hero banner with CTA, featured collections, brand story section, testimonials</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Product Pages</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Minimum 5 products with descriptions, images, variants, and pricing</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Collection Pages</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Organized product collections with descriptions and proper filtering</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Navigation</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Header menu, footer menu, mobile hamburger — clean and intuitive</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CRO Elements</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Trust badges, urgency elements, social proof, clear CTAs, compare-at pricing</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">6</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom Code</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">At least 2-3 custom code additions (CSS/Liquid/JS) — document what you added</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">7</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile Responsive</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Store must look great on mobile — test on phone before submitting</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">8</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Collaborator Access</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Send collaborator invite to HR for review access</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🎯 CRO Elements to Implement</h3>
+<p>Apply everything from Tasks 14-17. Your store will be evaluated on these CRO fundamentals:</p>
+
+<div class="highlight-box">
+    <ul style="margin-bottom: 0;">
+        <li><strong>Above the fold:</strong> Hero headline under 8 words, clear CTA button, value proposition visible immediately</li>
+        <li><strong>Trust signals:</strong> Trust badges (secure checkout, free shipping, money-back guarantee), customer reviews/testimonials</li>
+        <li><strong>Urgency & scarcity:</strong> Low stock badges, limited-time offers, countdown timers (if applicable)</li>
+        <li><strong>Compare-at pricing:</strong> Show original vs sale price on products to highlight savings</li>
+        <li><strong>Cross-sell / upsell:</strong> "You may also like" sections, bundle offers, related products</li>
+        <li><strong>Social proof:</strong> Customer testimonials, review stars, "X people bought this" indicators</li>
+        <li><strong>Mobile-first:</strong> Touch-friendly buttons, readable text, fast load times on mobile</li>
+    </ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💻 Custom Code Requirements</h3>
+<p>You must add <strong>at least 2-3 custom code modifications</strong>. These can include:</p>
+
+<div class="highlight-box" style="background: rgba(99, 102, 241, 0.1); border-color: #6366F1;">
+    <ul style="margin-bottom: 0;">
+        <li><strong>Custom CSS:</strong> Styling overrides, animations, hover effects, custom section spacing</li>
+        <li><strong>Custom Liquid:</strong> Dynamic sections, custom metafield displays, conditional content</li>
+        <li><strong>Custom JavaScript:</strong> Interactive elements, scroll animations, dynamic cart updates</li>
+        <li><strong>Theme modifications:</strong> Schema changes, custom section templates, snippet additions</li>
+    </ul>
+</div>
+
+<div class="warning-box">
+    <strong>⚠️ Document Everything:</strong> In the submission form, you must list exactly what custom code you added, what it does, and which file you modified. Example: "Added custom CSS in theme.liquid for sticky add-to-cart bar on product pages."
+</div>
+</div>
+
+<div class="content-section">
+<h3>📝 Submission Process</h3>
+<p>Once your store is complete, submit your work through the official Google Form:</p>
+
+<div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border: 2px solid #10B981; padding: 25px; text-align: center;">
+    <h3 style="color: #10B981; margin-top: 0;">📋 Task Submission Form</h3>
+    <p style="margin-bottom: 15px;">Click below to open the submission form and fill in all required fields:</p>
+    <a href="https://forms.gle/1iU8f1Ep1ZexmCbH7" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #10B981, #059669); color: white; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1em; transition: transform 0.2s;">
+        📝 Open Submission Form →
+    </a>
+</div>
+
+<h4>What You Need to Fill In:</h4>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+    <thead>
+        <tr style="background: rgba(16, 185, 129, 0.2);">
+            <th style="padding: 12px; text-align: left; border: 1px solid rgba(255,255,255,0.1);">Field</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid rgba(255,255,255,0.1);">What to Enter</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Full Name</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Your complete name</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Phone Number</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Your contact number (for WhatsApp communication)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Email Address</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Your email for review updates</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Shopify Store Preview URL</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Your store's .myshopify.com URL (preview link)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Store Password</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Found in Settings → Preferences → Password Protection</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Collaborator Invite</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Confirm you sent collaborator invite to HR</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>CRO Elements List</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">List all CRO elements you implemented (trust badges, urgency, social proof, etc.)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Self-Review</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">What would you improve with more time? What was the hardest part?</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom Code List</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">What custom code you added, what it does, and which file</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Task Difficulty</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Rate 1 (Very Easy) to 5 (Very Hard)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Collaborator Code</strong></td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Found in Shopify Settings → your collaborator request code</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="content-section">
+<h3>⚡ Evaluation Criteria</h3>
+<p>Your submission will be reviewed within 48 hours. Here is exactly what we look for:</p>
+
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+    <thead>
+        <tr style="background: rgba(245, 158, 11, 0.2);">
+            <th style="padding: 12px; text-align: left; border: 1px solid rgba(255,255,255,0.1);">Criteria</th>
+            <th style="padding: 12px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">Weight</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid rgba(255,255,255,0.1);">What We Check</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Design & UX</strong></td>
+            <td style="padding: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">30%</td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Visual consistency, brand alignment, typography, spacing, color palette</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>CRO Implementation</strong></td>
+            <td style="padding: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">25%</td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Trust badges, urgency, social proof, CTAs, compare-at pricing</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Custom Code</strong></td>
+            <td style="padding: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">20%</td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Quality and relevance of custom CSS/Liquid/JS additions</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile Responsiveness</strong></td>
+            <td style="padding: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">15%</td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Works perfectly on mobile, touch-friendly, fast loading</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Completeness</strong></td>
+            <td style="padding: 10px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">10%</td>
+            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">All deliverables submitted, form fields complete, collaborator invite sent</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="content-section">
+<h3>💡 Pro Tips for a Standout Submission</h3>
+<div class="highlight-box">
+    <ul style="margin-bottom: 0;">
+        <li><strong>Start with the homepage</strong> — it is the first thing reviewers see. Make it count.</li>
+        <li><strong>Use high-quality images</strong> — free stock from Pexels, Unsplash, or Burst by Shopify</li>
+        <li><strong>Test on mobile FIRST</strong> — 70%+ of beauty brand traffic is mobile</li>
+        <li><strong>Speed matters</strong> — compress images, minimize custom code, test with Lighthouse</li>
+        <li><strong>Be honest in self-review</strong> — we value self-awareness. Mention what you would improve with more time.</li>
+        <li><strong>Document your custom code</strong> — clean code with comments shows professionalism</li>
+        <li><strong>Double-check the preview URL</strong> — make sure it works before submitting</li>
+        <li><strong>Send the collaborator invite</strong> — without it, we cannot review your store backend</li>
+    </ul>
+</div>
+</div>
+
+<div class="content-section" style="background: rgba(236, 72, 153, 0.1); border: 2px solid rgba(236, 72, 153, 0.3); border-radius: 12px; padding: 25px; text-align: center;">
+    <h3 style="color: #EC4899; margin-top: 0;">🚀 Ready to Submit?</h3>
+    <p>Make sure you have completed all deliverables, tested on mobile, and documented your custom code.</p>
+    <a href="https://forms.gle/1iU8f1Ep1ZexmCbH7" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #EC4899, #A855F7); color: white; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1em; margin-top: 10px;">
+        📝 Submit Your Task →
+    </a>
+    <p style="margin-top: 15px; color: #94A3B8; font-size: 0.9em;">Your submission will be reviewed within 48 hours. Good luck! 🍀</p>
+</div>
+
+<div class="quiz-intro">
+    <h3>📝 Quick Knowledge Check</h3>
+    <p>Before submitting, take this quick quiz to make sure you have covered all the essentials.</p>
+    <ul>
+        <li>🎯 Score <strong>8/10</strong> to complete this task</li>
+        <li>💡 Questions cover store-building best practices and submission requirements</li>
+    </ul>
+</div>
+`;
+
+const task19Quiz = [
+    {
+        q: "What is the deadline for completing the beauty brand Shopify store task?",
+        o: ["24 hours", "48 hours", "72 hours", "1 week"],
+        c: 1
+    },
+    {
+        q: "Which CRO element should be visible ABOVE THE FOLD on the homepage?",
+        o: ["Footer navigation links", "Customer complaint form", "Hero headline under 8 words with a clear CTA", "Full product catalog grid"],
+        c: 2
+    },
+    {
+        q: "How many custom code modifications are required at minimum?",
+        o: ["None — theme defaults are sufficient", "1 modification", "2-3 modifications", "10+ modifications"],
+        c: 2
+    },
+    {
+        q: "Where do you find the store password to submit in the form?",
+        o: ["In the theme code editor", "Settings → Preferences → Password Protection", "Products → Inventory section", "Apps → Password Manager"],
+        c: 1
+    },
+    {
+        q: "Why is sending a collaborator invite to HR essential?",
+        o: ["It is optional and does not affect the review", "It allows HR to review the store backend and admin panel", "It automatically publishes the store", "It generates the store preview URL"],
+        c: 1
+    },
+    {
+        q: "What percentage of the evaluation is weighted towards Design & UX?",
+        o: ["10%", "20%", "30%", "50%"],
+        c: 2
+    },
+    {
+        q: "For a beauty brand, what percentage of traffic typically comes from mobile?",
+        o: ["20-30%", "40-50%", "70%+", "Less than 10%"],
+        c: 2
+    },
+    {
+        q: "What must you include in the 'Custom Code List' field of the submission form?",
+        o: ["Just the programming language used", "Only the file names you modified", "What custom code you added, what it does, and which file you modified", "A screenshot of the code editor"],
+        c: 2
+    },
+    {
+        q: "Which of these is NOT one of the required deliverables?",
+        o: ["Homepage with hero banner and CTA", "Mobile responsive design", "Payment gateway configuration with real transactions", "Collection pages with proper filtering"],
+        c: 2
+    },
+    {
+        q: "What should you focus on in the self-review section of the form?",
+        o: ["Only list your strengths and how great the store is", "What you would improve with more time and what was the hardest part", "Copy-paste the task brief as your answer", "Write that everything was easy and you had no challenges"],
+        c: 1
+    }
+];
+
 // Expose to window for app lookup
 
 // Expose all content and quiz variables to window for app lookup
@@ -9033,6 +9365,8 @@ window.task14Quiz = task14Quiz;
 window.task15Quiz = task15Quiz;
 window.task16Quiz = task16Quiz;
 window.task17Quiz = task17Quiz;
+window.task19Content = task19Content;
+window.task19Quiz = task19Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -9052,5 +9386,6 @@ const allQuizzes = [
     task15Quiz,
     task16Quiz,
     task17Quiz,
-    task18Quiz
+    task18Quiz,
+    task19Quiz
 ];
