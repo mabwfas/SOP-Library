@@ -111,13 +111,78 @@ const trainingTasks = [
     },
     {
         id: 11,
+        title: "First Contact — Opening Messages",
+        description: "First impressions, greetings & hooking buyers in chat",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 30-40 minutes",
+            "📖 Study all 10 conversation examples and analyse WHY each response works",
+            "📖 Memorise the 5 First Message Templates — you'll need them on quizzes",
+            "📖 Study Red Flag Messages section — know what to disqualify",
+            "🔍 Practice: Open Fiverr inbox, draft responses to 3 recent enquiries using templates"
+        ]
+    },
+    {
+        id: 12,
+        title: "Discovery & Impress Order",
+        description: "Qualifying buyers & impressing them before pricing — the SOP method",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 35-45 minutes",
+            "📖 Memorise the 5-Step Impress Order sequence — quiz tests exact order",
+            "📖 Study all conversation examples — focus on buyer signal analysis",
+            "📖 Understand the difference between features and outcomes",
+            "📖 Study 'Reading Buyer Signals' section — each signal maps to a strategy"
+        ]
+    },
+    {
+        id: 13,
+        title: "Proposals, Pricing & Plans",
+        description: "Our 3-tier pricing, Proposal PDF structure & presenting plans in chat",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 30-40 minutes",
+            "📖 Memorise the 3 Plan tiers: $2,800 / $5,400 / $9,800 with deliverables",
+            "📖 Study the Proposal PDF structure — Cover Page to Next Steps",
+            "📖 Know what's included at EACH tier — quiz tests specific deliverables",
+            "📖 Study qualification questions for Plan 2 & 3 upsells"
+        ]
+    },
+    {
+        id: 14,
+        title: "Objection Handling & Closing",
+        description: "Price objections, lean budget closing & the Pretend Favour method",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 35-45 minutes",
+            "📖 Memorise the Pretend Favour script word-for-word — quiz tests exact phrasing",
+            "📖 Study Lean Budget Tiers: $1,000-$1,300 / $1,400-$1,900 / $2,000-$2,700",
+            "📖 Study the $1,000+ Rule and the below-threshold referral process",
+            "📖 Memorise the Follow-Up Sequence — timing and exact messages"
+        ]
+    },
+    {
+        id: 15,
+        title: "AI-Powered Selling",
+        description: "Using Claude, ChatGPT & AI tools to craft replies, QA test stores & generate proposals",
+        contentFirst: false,
+        studyGuide: [
+            "⏱️ Estimated Time: 25-35 minutes",
+            "📖 Study the Problem Solver mindset — you diagnose, not sell",
+            "📖 Learn when to use each AI tool: Sales Rep GPT vs Claude Extension vs manual",
+            "📖 Study the GPT Proposal workflow — one plan at a time, never all at once",
+            "📖 Practice: Run a Claude QA test on a live client website and review the report"
+        ]
+    },
+    {
+        id: 16,
         title: "Final Certification",
         description: "Comprehensive exam + video",
         contentFirst: false,
         studyGuide: [
             "⏱️ Estimated Time: 45-60 minutes",
-            "📖 Full SOP Review: Re-read all training materials from Tasks 1-10",
-            "✅ Complete Tasks 1-10 with perfect scores on all quizzes (15/15 on Task 1, 10/10 on Tasks 2-10)",
+            "📖 Full SOP Review: Re-read all training materials from Tasks 1-15",
+            "✅ Complete Tasks 1-15 with perfect scores on all quizzes",
             "🎥 Prepare 30-minute video walkthrough"
         ]
     }
@@ -5266,14 +5331,1454 @@ You will face realistic scenarios and choose the best response. Review all previ
 <p>This quiz tests realistic scenarios combining everything you have learned.</p>
 <ul>
 <li>📝 10 scenario-based questions</li>
-<li>🎯 Score <strong>10/10</strong> to proceed to Final Certification</li>
+<li>🎯 Score <strong>10/10</strong> to unlock Task 11</li>
 </ul>
 </div>
 `;
 
-// Task 10 Content: Final Certification
+// =====================================================
+// TASK 11: First Contact — Opening Messages That Win on Fiverr
+// =====================================================
 const task11Content = `
-<h2>🏆 TASK 11: FINAL CERTIFICATION EXAM</h2>
+<h2>💬 TASK 11: FIRST CONTACT — Opening Messages That Win on Fiverr</h2>
+
+<div class="content-section">
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(16, 185, 129, 0.15)); border-left: 4px solid #6366f1; padding: 25px;">
+<strong>Why This Module Matters:</strong> On Fiverr, buyers message 3-5 sellers before choosing one. The seller who responds fastest with the most thoughtful reply wins. Your first message is your audition — not a sales pitch. This module teaches you exactly how to respond to every type of buyer opening message using real conversations from Digital Heroes clients.
+</div>
+</div>
+
+<div class="content-section">
+<h3>1. Why First Messages Matter on Fiverr</h3>
+<p>Most sellers lose deals before they even start — not because of pricing or portfolio, but because of a bad first reply. Here is what happens when a buyer messages you on Fiverr:</p>
+<ul>
+<li><strong>They have already messaged 3-5 other sellers.</strong> You are competing from the first word.</li>
+<li><strong>Response time affects Fiverr ranking.</strong> Faster responses = higher visibility in search results.</li>
+<li><strong>Buyers decide within the first 2-3 messages</strong> whether you are worth continuing a conversation with.</li>
+<li><strong>The fastest COMPETENT reply wins.</strong> Not just fast — fast AND smart.</li>
+</ul>
+<div class="analysis">Real example: Client 23 (Luke) sent his detailed brief to 5 developers and said "Im sending this to 5 developers, i hope you get the job." The seller who responded with the most detailed, personalised reply won the project. Speed + quality = close.</div>
+</div>
+
+<div class="content-section">
+<h3>2. The Golden Rule: Start a Conversation, Not a Sales Pitch</h3>
+<p>The biggest mistake new sales reps make is dumping their full package list, portfolio, and pricing in the first message. This overwhelms the buyer and shows you did not read their message. Instead:</p>
+<ul>
+<li><strong>Ask a question</strong> — show you are interested in THEIR project, not just selling yours</li>
+<li><strong>Keep it short</strong> — 3-5 sentences maximum in your first reply</li>
+<li><strong>Mirror their energy</strong> — if they are casual, be casual. If they are detailed, be detailed.</li>
+<li><strong>Never mention price in Message 1</strong> — you do not have enough information yet</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>3. Conversation: The Generic Opener — "Hi I need to design my website"</h3>
+<p><em>Based on a real Digital Heroes client conversation</em></p>
+
+<div class="conversation">
+<h4>How to Handle a Vague First Message</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"Hi I need to design my website"
+</div>
+<div class="message sales">
+<div class="sender">You (WRONG Way)</div>
+"Hey! I'm Shreyansh from Digital Marketing Heroes with 2.5M+ YouTube subscribers. Here are 8 portfolio links. Our Enterprise Package is $1,800. Here is everything included..."
+</div>
+<div class="analysis">Why this is WRONG: You dumped your entire pitch without knowing anything about them. The client did not ask for your portfolio or pricing. You look like you copy-paste this to everyone.</div>
+<div class="message sales">
+<div class="sender">You (RIGHT Way)</div>
+"Hi! How are you? Do you have a reference website you like — something that matches the look and feel you are going for?"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"Yes, I want to create a classy design for my Shopify store. Something elegant."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Great taste! Do you have product pictures ready, or do you need us to help with visuals too?"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"Not yet, but I want to start on the design part first."
+</div>
+<div class="analysis">Why the RIGHT way works: You asked simple questions. The client came back with detailed context — their style preference (classy, elegant), their platform (Shopify), and their asset status (no photos yet). You learned more in 2 messages than the WRONG way learned in 200 words. Now you can give a relevant, personalised response.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>4. Conversation: The Price-First Buyer — "How much would the total project cost?"</h3>
+<p><em>Based on Client 6 (joyderez) — baby products brand with competitor reference</em></p>
+
+<div class="conversation">
+<h4>When They Ask for Price Before You Have Context</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"Hello, we are building our Shopify store. We have already started using a free theme but we are not really happy with what we currently have. So we need someone to build the site from scratch again. See here — purebabybliss.com. Please advise the cost. This is our competitor keababies.com and we would like something as professional as theirs."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"We can absolutely design your whole store from scratch. We use our fully customised premium theme which is very user friendly. If you can provide a list of features you want, that will be great so we can focus on those specifically."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Do you have a brand book? Logos, product photos, banner photos, theme colour palette — or do you want us to build these on our own?"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"So how much would the total project cost? We want the website to have most of the features of the competitor website."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Yes we can have all the features, I am sure of it — but if you can provide a list of them, that will be great so we can focus on those features specially."
+</div>
+<div class="analysis">Key lesson: Even when they push for price TWICE, redirect to scope. "Yes we can do it — but can you list the features?" Then ask about assets (brand book, photos, colours). You NEVER quote without the full picture. The client eventually provided everything needed for an accurate, justified quote.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>5. Conversation: The Ultra-Detailed Buyer</h3>
+<p><em>Based on Client 23 (Luke) — Full Throttle Therapy, motorcycle streetwear brand</em></p>
+
+<div class="conversation">
+<h4>When a Buyer Sends a Massive Brief</h4>
+<div class="message client">
+<div class="sender">Client (Luke)</div>
+"I need a Shopify store for a motorcycle streetwear brand. 5 products (hoodies, tees, jerseys) XS-XXL. AUD + USD currencies. Auto-email manufacturer per order. Klaviyo email flows. Meta Pixel + CAPI. GA4 + GTM. Instagram feed. Photo reviews. Bundles and upsells. Size guides. Im sending this to 5 developers, i hope you get the job. 2-week deadline."
+</div>
+<div class="message sales">
+<div class="sender">You (RIGHT Way)</div>
+"You want branded dropshipping with a premium theme, 5 products (XS-XXL) with size guides, AUD + USD currency, bundles and upsells, auto-email to manufacturer per order, Klaviyo flows, Meta Pixel + CAPI, GA4 + GTM, Instagram feed, and photo reviews — all in two weeks. I can deliver this."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Two quick questions: Do you have reference sites for the design style? And for the auto-email to manufacturer — do you prefer a Gmail workflow or Zapier automation?"
+</div>
+<div class="analysis">Why MIRRORING wins: You repeated EVERY requirement back. This proves you actually read the entire brief — unlike the other 4 developers who probably skimmed it. Then you asked 2 expert-level questions the other sellers will not ask. This is how you compete on DEPTH OF UNDERSTANDING, not on being cheapest. Luke chose this seller over 4 competitors.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>6. Conversation: The Urgent Buyer</h3>
+<p><em>Based on Client 25 (londonfilmpro) — House of Ran, luxury brand</em></p>
+
+<div class="conversation">
+<h4>When Speed Is Their Priority</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"I need the website done ASAP. Only 5 products to start. I am hoping to launch in the next week."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Noted — launch target within the next week. With only 5 products this is absolutely doable. A few quick questions: Do you have a reference site for the design style? And do you have your logo and branding ready?"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"We have our logo and branding, but no physical store. Just online."
+</div>
+<div class="analysis">Key insight: Urgent buyers = higher willingness to pay. They need SPEED, not discounts. Do NOT negotiate down with urgent buyers. Acknowledge the urgency, confirm feasibility, then qualify. Every minute you waste asking unnecessary questions is a minute closer to them choosing another seller.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>7. Conversation: The Vague Buyer — "Hey can you setup a store for me"</h3>
+<p><em>Based on Client 5 (itsalllove221) — gamer/anime store</em></p>
+
+<div class="conversation">
+<h4>Extracting Vision From a Vague Message</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"Hey can you setup a store for me"
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Hey! Thanks for reaching out. I would be happy to help you set up your store. What category does your store fall into? And do you have any inspiration store — a beautiful competitor store you would want yours to look like?"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"What I want to do is set up a gamer/anime store because that stays popular — like controller mods, parts, headsets, chairs."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"A gamer/anime store is a great niche since it is consistently popular and has strong demand! Do you have any reference website in mind?"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"No I don't but I trust you"
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"That is awesome, thank you for trusting me! I will design the store with a sleek gamer/anime-inspired look — dark mode, neon highlights, and bold visuals to really capture the vibe. Do you already have a product list? Also how many products do you want me to add?"
+</div>
+<div class="analysis">Guided discovery: Vague buyers are NOT bad buyers — they just need direction. Do not overwhelm them with packages. Extract their vision step by step: category first, then reference, then design direction, then products. Notice how each question builds on the previous answer. By the end, you know: niche (gaming/anime), style (sleek/dark), and next step (product list).</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>8. Conversation: Competitive Pressure — "Im sending this to 5 developers"</h3>
+<p><em>Based on Client 23 (Luke) — this line appeared in his actual message</em></p>
+
+<div class="conversation">
+<h4>When a Buyer Tells You They Are Comparing Sellers</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"Im sending this to 5 developers, i hope you get the job."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+[Mirror EVERY requirement in their brief. Ask 1-2 expert questions that prove deep understanding. Show you are the premium choice through SPECIFICITY, not through lower pricing.]
+</div>
+<div class="analysis">When a buyer tells you they are comparing sellers, your response must do 3 things: (1) Address every single requirement they listed — prove you read the whole brief, (2) Ask expert-level questions the other 4 developers will NOT ask, (3) Show you are the premium choice through understanding, not by being cheapest. The other sellers will send generic replies and portfolio links. You send a detailed mirror + smart questions. That is how you win.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>9. Response Time Strategy</h3>
+<p><strong>Target: Under 5 minutes during business hours.</strong></p>
+<p><em>Real example: Client 10 (cliffnetwork786) messaged 3 times within 2 hours:</em></p>
+<ul>
+<li>"have you started yet?"</li>
+<li>"please let me know"</li>
+<li>"when can I get an update?"</li>
+</ul>
+<p>Buyers interpret silence as disinterest. Even if you cannot give a detailed reply immediately, acknowledge the message:</p>
+<div class="highlight-box">
+<strong>Quick Acknowledge Template:</strong><br>
+"Hi! Just give me a few minutes — I am reviewing your requirements and will get back to you shortly with a detailed response."
+</div>
+<p><strong>How to stay fast:</strong></p>
+<ul>
+<li>Use the Fiverr mobile app — get push notifications for new messages</li>
+<li>Set your online status to Active during working hours</li>
+<li>Have Quick Reply templates saved for common opener types</li>
+<li>During peak hours, check inbox every 10-15 minutes</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>10. First Message Templates (Copy-Paste Ready)</h3>
+<p>Save these 5 templates as Quick Replies in Fiverr. Customise the brackets before sending:</p>
+
+<div class="highlight-box">
+<strong>Template 1: Generic "Hi" or "I need a store"</strong><br>
+"Hey! Thanks for reaching out. I would be happy to help you with your store. Quick questions to understand your vision better: What category/niche is your store? And do you have any reference website — a store you love the look of?"
+</div>
+
+<div class="highlight-box">
+<strong>Template 2: Detailed Brief (Mirror + Expert Question)</strong><br>
+"Thanks for the detailed brief! So to confirm — you need [mirror every key requirement they listed]. I can deliver this. Quick question: [1 expert-level question specific to their setup, e.g., 'For the email automation, do you prefer Klaviyo or Omnisend?']"
+</div>
+
+<div class="highlight-box">
+<strong>Template 3: "How much?" / Price-First Buyer</strong><br>
+"Great question! To give you an accurate quote, I need to understand the full scope. Could you share: (1) How many products at launch? (2) Do you have a reference site you like? (3) Do you have your logo and brand assets ready? Once I know the scope, I can present tailored plan options."
+</div>
+
+<div class="highlight-box">
+<strong>Template 4: "I already have a store but it is not working"</strong><br>
+"I would love to take a look! Can you share your store URL? I will review it and identify the specific areas where you are losing conversions. Most stores have 3-5 fixable issues that make a huge difference."
+</div>
+
+<div class="highlight-box">
+<strong>Template 5: Returning Buyer</strong><br>
+"Hey [Name]! Great to hear from you again. What are you looking to add or improve this time? Since I already know your store and brand, we can move fast."
+</div>
+</div>
+
+<div class="content-section">
+<h3>11. Red Flag Messages and Disqualification</h3>
+<p>Not every buyer is worth your time. Learn to spot red flags early:</p>
+
+<div class="conversation">
+<h4>Red Flag 1: Below-Minimum Budget</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"You have the budget of $50?"
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Hi — we do not do projects under our minimum. Our builds start at $420 because we use professional-grade tools and techniques. If your budget is lower, I can refer you to some expert friends on Fiverr who deliver quality work at lower price points."
+</div>
+<div class="analysis">Based on Client 5 (itsalllove221): They said $50 budget for a full store. Politely explain your minimum and offer a referral. Never devalue your service to match a budget that cannot support quality work.</div>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #ef4444;">
+<strong>Other Red Flags to Watch For:</strong>
+<ul>
+<li><strong>"Can we talk on WhatsApp/email?"</strong> — Off-platform communication violates Fiverr ToS. Decline politely: "I prefer keeping our communication on Fiverr so everything is documented and protected for both of us."</li>
+<li><strong>"Can you do a free sample/test?"</strong> — Offer your portfolio as proof, or a paid mini-project: "I do not do free samples, but here are 8 stores I have built — you can see the quality firsthand."</li>
+<li><strong>"I want to BUY products from you"</strong> — They misunderstood your service. Redirect: "We build Shopify stores — we do not sell products. Would you like us to build a store for YOUR products?"</li>
+<li><strong>"Last 3 developers failed me"</strong> — The Bad History Pattern. If THEY are the common factor in every failed project, proceed with extreme caution or disqualify.</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>This quiz tests your ability to handle real Fiverr opening messages. Every question is scenario-based — no memorisation, pure judgement.</p>
+<ul>
+<li>📝 10 scenario-based questions</li>
+<li>🎯 Score <strong>10/10</strong> to unlock Task 12</li>
+</ul>
+</div>
+`;
+
+// Task 11 Quiz: First Contact — Opening Messages (10 Questions)
+const task11Quiz = [
+    { q: "A buyer messages: 'Hi I need to design my website.' What is your best first response?", o: ["Send your full package list with pricing so they can choose a plan immediately", "Ask what type of store they want and if they have a reference website they like", "Quote $1,800 Enterprise and explain all features included in the build", "Send 8 portfolio links and your YouTube subscriber count to build credibility"], c: 1 },
+    { q: "A buyer says: 'So how much would the total project cost?' but has not shared their product count, niche, or brand assets. What do you do?", o: ["Give a range — 'anywhere from $420 to $1,800 depending on what you need'", "Say 'It depends' and wait for them to provide more information on their own", "Tell them your pricing starts at $2,800 for the foundation build package", "Redirect to scope — 'Yes we can do it all, but can you list the features you want so I can give you an accurate quote?'"], c: 3 },
+    { q: "A buyer sends a massive detailed brief with 15 specific requirements and says 'Im sending this to 5 developers.' How do you stand out?", o: ["Offer the lowest price to beat the other 4 developers competing for this project", "Mirror every single requirement back to them, then ask 1-2 expert-level follow-up questions", "Send your portfolio and let the work speak for itself without addressing their specific requirements", "Reply quickly with 'Yes I can do all of this' and ask them to place the order right away"], c: 1 },
+    { q: "An urgent buyer says 'I need the website done ASAP, only 5 products, hoping to launch next week.' What should you NOT do?", o: ["Acknowledge the urgency and confirm the timeline is feasible for 5 products", "Qualify them quickly — ask about reference site, logo, and branding assets", "Offer a discount because they are in a rush and might choose a cheaper seller", "Confirm you can deliver within their timeline and move to discovery questions"], c: 2 },
+    { q: "A vague buyer messages: 'Hey can you setup a store for me.' They share no other details. What is the correct approach?", o: ["Send your full Enterprise package details since they clearly need a complete build", "Ask two guided questions: what category/niche is the store, and do they have an inspiration site", "Tell them you need a detailed brief before you can respond to their enquiry", "Ask them their budget first so you know which package to recommend to them"], c: 1 },
+    { q: "Client 10 (cliffnetwork786) messaged 3 times in 2 hours asking for updates. What does this teach about Fiverr buyers?", o: ["Some buyers are too needy and should be disqualified as red flag clients immediately", "Buyers interpret silence as disinterest — you must respond quickly even if just to acknowledge", "You should set up auto-replies to handle impatient buyers without manual intervention needed", "Ignore repeat messages — responding to pressure sets a bad precedent for the working relationship"], c: 1 },
+    { q: "A buyer asks 'Can we continue this conversation on WhatsApp? It is easier for me.' What do you do?", o: ["Agree — WhatsApp is faster and more convenient for detailed project discussions anyway", "Decline politely — explain you prefer keeping communication on Fiverr so everything is documented and protected", "Report them to Fiverr immediately for attempting to move communication off-platform", "Say yes but only for voice calls, keep text communication on the Fiverr platform"], c: 1 },
+    { q: "A buyer says their budget is $50 for a full Shopify store build. What is the correct response?", o: ["Accept the project — any revenue is better than no revenue and it builds your review count", "Politely explain your minimum and offer to refer them to trusted colleagues at lower price points", "Negotiate to meet in the middle at $250 which is still below your standard pricing", "Ignore the message entirely — $50 buyers are not worth your time to respond to"], c: 1 },
+    { q: "When should you mention your pricing in a Fiverr conversation with a new buyer?", o: ["In your first message — buyers want to know if they can afford you before wasting time", "Never mention pricing — wait for them to ask about it and then redirect to scope", "Only after you understand their niche, product count, timeline, and asset status", "After sending your portfolio — let them see the quality before seeing the price tag"], c: 2 },
+    { q: "A buyer sends: 'I have an existing store but sales are low and I think the design is the problem.' Which template should you use?", o: ["Template 1: Generic qualifying questions about niche and reference site preferences", "Template 3: Redirect to scope and ask about product count and brand assets", "Template 4: Ask for their store URL so you can review it and identify conversion issues", "Template 5: Treat them as a returning buyer and skip the introductory qualification step"], c: 2 }
+];
+
+// =====================================================
+// TASK 12: Discovery & the "Impress Order"
+// =====================================================
+const task12Content = `
+<h2>🔍 TASK 12: DISCOVERY & THE "IMPRESS ORDER" — Win the Client Before You Mention Price</h2>
+
+<div class="content-section">
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(99, 102, 241, 0.15)); border-left: 4px solid #10b981; padding: 25px;">
+<strong>Core Rule:</strong> Before you EVER mention price, the buyer must feel three things: (1) You understood their business better than anyone else, (2) You have a clear plan for them, (3) You are premium and professional. If you skip this step and jump to pricing, you are just another freelancer listing numbers. This module teaches you the exact discovery process and the 5-Step Impress Order that Digital Heroes uses to close premium deals.
+</div>
+</div>
+
+<div class="content-section">
+<h3>1. The Discovery Framework — 5 Questions Every Conversation Needs</h3>
+<p>Before you can quote, recommend plans, or send a proposal, you MUST gather these 5 pieces of information:</p>
+<ol>
+<li><strong>What niche or category?</strong> — "What type of products do you sell?"</li>
+<li><strong>How many products at launch?</strong> — "How many products are you initially planning to launch with?"</li>
+<li><strong>Timeline?</strong> — "When do you need the store live?"</li>
+<li><strong>Budget range?</strong> — Read signals from context. Do not always ask directly — let them reveal it.</li>
+<li><strong>Reference stores?</strong> — "Do you have a reference site you like — something that matches the look you are going for?"</li>
+</ol>
+<div class="analysis">These exact questions were used with real clients: Client 9 (coffee accessories, 100 products), Client 6 (baby products, competitor reference keababies.com), Client 17 (Dutch supplement, 1 product), Client 19 (matcha brand, bundles + subscriptions). The questions work for EVERY niche because they extract the scope, urgency, and expectations in the simplest way.</div>
+</div>
+
+<div class="content-section">
+<h3>2. The "Impress Order" (SOP Method) — The 5-Step Sequence</h3>
+<p>This is the core methodology of Digital Heroes sales. Follow these 5 steps IN ORDER, every single time:</p>
+
+<div class="highlight-box" style="border-left: 4px solid #6366f1;">
+<strong>Step 1: MIRROR their goals</strong><br>
+"You want a premium store that looks professional, loads fast, and converts visitors into paying customers."<br>
+<em>→ Show you understood what they want.</em>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #8b5cf6;">
+<strong>Step 2: CALL OUT 3-5 specific opportunities</strong><br>
+Based on their niche, identify gaps they have not thought of: product page trust gaps, mobile conversion issues, weak homepage flow, missing email automations, poor collection structure.<br>
+<em>→ Show you see things they cannot see.</em>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #a855f7;">
+<strong>Step 3: EXPLAIN OUTCOMES, not features</strong><br>
+NOT "GA4 setup" → Instead: "We will track add-to-cart, checkout, and purchase events so you know exactly what is making you money and what is leaking sales."<br>
+NOT "Email automation" → Instead: "Automated sequences that recover abandoned carts and bring back first-time buyers for repeat purchases."<br>
+<em>→ Speak their language — results, not tech jargon.</em>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #d946ef;">
+<strong>Step 4: PROPOSE a clear plan</strong><br>
+"We will rebuild the store foundation first — design, trust elements, speed, and checkout flow. Then we layer in marketing automation based on what actually sells."<br>
+<em>→ Give them a roadmap so they feel confident.</em>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #ec4899;">
+<strong>Step 5: ONLY THEN introduce price</strong><br>
+Present 3 plan options, or 1 plan if budget is already clear from context.<br>
+<em>→ By this point, the price feels JUSTIFIED because they already trust your understanding and plan.</em>
+</div>
+
+<div class="analysis">This is how you make price feel justified BEFORE it is even shown. When you skip to Step 5 without doing Steps 1-4, you are just a number on a screen. When you do all 5 steps, you are a PARTNER with a plan. Buyers pay premium for partners.</div>
+</div>
+
+<div class="content-section">
+<h3>3. Conversation: Full Discovery — Matcha Brand</h3>
+<p><em>Based on Client 19 (Amy) — The Matcha Company, premium matcha brand</em></p>
+
+<div class="conversation">
+<h4>The Impress Order in Action</h4>
+<div class="message client">
+<div class="sender">Client (Amy)</div>
+"I am looking to build a Shopify website for my brand, The Matcha Company. We are a modern matcha brand targeted toward matcha lovers, especially a younger audience that values aesthetics, wellness, and a clean, intentional lifestyle. Products include ceremonial-grade matcha, accessories, bundles, and a subscription option. I want the site to feel both premium and accessible."
+</div>
+<div class="message sales">
+<div class="sender">You — Step 1: Mirror</div>
+"We can definitely build a minimalist, lifestyle-focused branded Shopify store."
+</div>
+<div class="message sales">
+<div class="sender">You — Discovery Questions</div>
+"How many accessories and flavours will you be selling in the initial phase? Do you have a reference store you really like that matches your vision?"
+</div>
+<div class="message sales">
+<div class="sender">You — Step 2: Call Out Opportunities</div>
+"Hero sections that tell the story of matcha as ritual — calm, wellness, intention, but with a fresh modern feel for younger buyers. Bundle logic so customers are nudged toward kits for higher average order value. Subscribe and save on product pages to push recurring orders."
+</div>
+<div class="message sales">
+<div class="sender">You — Step 3: Outcomes</div>
+"Education blocks like 'What is ceremonial matcha?' and 'Why matcha over coffee?' reduce purchase friction for newer customers. Reviews with UGC photos build massive trust for a younger audience that relies on social proof."
+</div>
+<div class="message sales">
+<div class="sender">You — Step 4: Propose Plan</div>
+"Full breakdown: brand-first aesthetic design, structured product catalogue, bundle and kit logic, subscription integration, CRO-focused homepage funnel, app integrations for reviews and email, SEO-ready structure for collections and blog."
+</div>
+<div class="message sales">
+<div class="sender">You — Step 5: Introduce Price</div>
+"Let me know if you are available for a Google Meet — I can walk you through the plan options and we can pick the right one for your launch timeline."
+</div>
+<div class="analysis">Notice the sequence: Mirror → Discovery → Opportunities → Outcomes → Plan → Price. Amy was so impressed she agreed to take a call. For detailed buyers, respond with EQUALLY detailed plans. Match their energy and depth.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>4. Conversation: Discovery With Brand Creation</h3>
+<p><em>Based on Client 17 (firobio) — Dutch supplement brand, 1 product</em></p>
+
+<div class="conversation">
+<h4>When the Buyer Has NO Assets</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"We want a complete website like primalherbs.nl. We only have 1 product — a black jar with no label. We need a logo, label design, and the site in 4 languages."
+</div>
+<div class="message sales">
+<div class="sender">You — Discovery</div>
+"Can you share your product image?"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"We only have a plain black jar — it is a sample."
+</div>
+<div class="message sales">
+<div class="sender">You — Opportunity (Step 2)</div>
+"Since you only have plain jar samples, I can create the full branding package — professional logo, custom product label, and website banners. Have you decided your brand name?"
+</div>
+<div class="message sales">
+<div class="sender">You — Price (Step 5)</div>
+"$625 Premium (7 days support) / $800 Premium + Extended (1 month support) / $1,200 Premium + Long-Term (3 months support)"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"What do you recommend as a starter? But we want it professional."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"I would recommend the $800 package — it gives you the professional build plus 1 month of support to handle any adjustments after launch."
+</div>
+<div class="analysis">When a buyer has NO assets (no logo, no photos, no label), discovery reveals they need 3x more than they initially thought. This is not upselling — it is IDENTIFYING REAL NEEDS they did not know they had. The $625 initial ask became an $800 close because discovery showed the true scope.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>5. Conversation: The Long-Term Partner Buyer</h3>
+<p><em>Based on Client 29 (Chris) — Chillstrip, WordPress + Shopify integration</em></p>
+
+<div class="conversation">
+<h4>When They Value Relationship Over Price</h4>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"I am still waiting on your quote. I have some competing bids."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Here is the detailed scope at $1,500: consumer portal, pro portal, compliance pages, subscription system, and full Shopify backend. Just know my scope already includes subscriptions, compliance, and the pro portal — so you will not need a rebuild later."
+</div>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"Honestly, I am not looking for price alone. I know we will keep using whoever builds our site as we expand, so I want someone really responsive that will do good quality work so we can retain them through the years."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"That makes total sense. We can offer 3 months support within this package so you feel comfortable."
+</div>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"Ok, we will go with you. Let me know what assets you need."
+</div>
+<div class="analysis">Chris revealed what he valued most: RELATIONSHIP. When buyers say "I am not looking for price alone" — stop selling features and sell the PARTNERSHIP. "3 months support" was the signal that sealed it. Long-term value beats lowest bid every time.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>6. Reading Buyer Signals in Chat</h3>
+<p>Every message a buyer sends contains signals about their budget, urgency, and buying behaviour. Learn to read them:</p>
+
+<table style="width:100%; border-collapse: collapse;">
+<tr style="background: rgba(99, 102, 241, 0.1);"><th style="padding: 12px; text-align: left; border-bottom: 2px solid #6366f1;">What They Say</th><th style="padding: 12px; text-align: left; border-bottom: 2px solid #6366f1;">What It Means</th><th style="padding: 12px; text-align: left; border-bottom: 2px solid #6366f1;">Your Strategy</th></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"I lost my job"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Low budget, handle with care</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Assess if above $1,000 threshold. If below, refer with dignity.</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"premium lifestyle brand"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Higher budget, quality-focused</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Full Impress Order. Present Enterprise or custom plans.</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"start lean and cost-effective"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Standard package buyer</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Present lean build with upgrade path.</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"I am not looking for price alone"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Relationship buyer, high close potential</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Sell the partnership. Offer extended support.</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"sending to 5 developers"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Competitive, needs differentiation</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Mirror everything. Ask expert questions others will not.</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"I need it ASAP" / "by Friday"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Urgency, willing to pay premium</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Do NOT discount. Charge for speed. Confirm feasibility.</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>7. Conversation: Upsell During Discovery</h3>
+<p><em>Based on Client 1 (Eric) — Water Trampolines, WordPress to Shopify migration</em></p>
+
+<div class="conversation">
+<h4>How Discovery Naturally Expands Scope</h4>
+<div class="message client">
+<div class="sender">Client (Eric)</div>
+[Shared detailed document about WordPress to Shopify migration with specific requirements for product pages, collections, and checkout.]
+</div>
+<div class="message sales">
+<div class="sender">You — Mirror + Add Value</div>
+"I have reviewed your document thoroughly. Here is your full migration scope covered. Additionally, here are my growth suggestions: affiliate and influencer program, customer review and UGC gallery, email and retargeting automation, warranty page, loyalty program, and chat support."
+</div>
+<div class="message client">
+<div class="sender">Client (Eric)</div>
+"Great. Time frame and price?"
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"$1,200 Professional (4-5 weeks) or $1,800 Enterprise (6-8 weeks + 3 months VIP support). I recommend Enterprise — your brand relies on seasonal launches and affiliate marketing, which the Enterprise plan is specifically built for."
+</div>
+<div class="analysis">Discovery IS selling. By calling out opportunities Eric had not considered (affiliate program, UGC, loyalty), you naturally expanded scope from a basic migration to a full enterprise build. The price went from "$1,200 maybe" to "$1,800 recommended" — not by being pushy, but by SHOWING VALUE during discovery.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>8. Conversation: Diagnosing an Existing Store</h3>
+<p><em>Based on Client 13 (Dina) — ProjecTee.net, existing store with conversion problems</em></p>
+
+<div class="conversation">
+<h4>The Problem-Solver Approach</h4>
+<div class="message client">
+<div class="sender">Client (Dina)</div>
+"Our Shopify store seems to be having issues. Our marketing person sent these notes — 30-day stats show abandoned carts, email automations not working, and low conversions."
+</div>
+<div class="message sales">
+<div class="sender">You — Diagnose First</div>
+"Can you share the website URL? Let me review it."
+</div>
+<div class="message sales">
+<div class="sender">You — After Review</div>
+"I have reviewed the store. The website is not professionally done — that may be the reason for no conversions. Specifically, I can see issues with the homepage layout, product page trust elements, mobile experience, and checkout flow."
+</div>
+<div class="analysis">When a buyer has an existing store with problems, DIAGNOSE FIRST. Check their site, identify specific issues, then present yourself as the solution. This is the "problem solver" approach — you are not selling a service, you are solving a problem they can see. When you point out real issues, the buyer trusts your expertise immediately.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>9. The Bridge to Pricing — Priming Messages</h3>
+<p>After discovery is complete and BEFORE sharing your price or proposal, send one of these priming messages:</p>
+
+<div class="highlight-box">
+<strong>Priming Message Options:</strong>
+<ul>
+<li>"Based on what you have shared, I have prepared a professional proposal for [Brand Name] with plan options so you can choose based on how fast you want to scale."</li>
+<li>"I reviewed your store and I can already see the exact areas where conversions are leaking. Here is what we would fix."</li>
+<li>"We will fix the store foundation first — design, trust, speed, and checkout flow — then scale marketing only after the funnel is ready."</li>
+</ul>
+</div>
+<div class="analysis">These priming messages make premium pricing feel justified BEFORE the buyer even sees the number. By the time they see $2,800, they already feel you UNDERSTAND their problem and have a PLAN to solve it. This is the difference between a $500 freelancer and a $5,000 partner.</div>
+</div>
+
+<div class="content-section">
+<h3>10. Features vs Outcomes — The Language Switch</h3>
+<p>Step 3 of the Impress Order says "Explain outcomes, not features." Here is what that means in practice:</p>
+
+<table style="width:100%; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.1);"><th style="padding: 12px; text-align: left; border-bottom: 2px solid #ef4444;">Feature Language (WRONG)</th><th style="padding: 12px; text-align: left; border-bottom: 2px solid #10b981;">Outcome Language (RIGHT)</th></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"GA4 setup"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Track add-to-cart, checkout, and purchase so you know what is making you money"</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Email automation"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Recover abandoned carts automatically — most stores lose 70% of sales at checkout"</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Speed optimization"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"90+ speed score means 20% fewer customers abandoning your site before it loads"</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Premium theme"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"A design that builds trust in the first 3 seconds so visitors stay and buy"</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"SEO setup"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Free organic traffic from Google so you are not 100% dependent on paid ads"</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Meta Pixel integration"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Track exactly which ads drive sales so every dollar you spend on Facebook works harder"</td></tr>
+</table>
+<div class="analysis">Buyers do not care about "GA4 setup." They care about knowing what is making them money. Translate every feature into the RESULT it produces for their business. This is Step 3 of the Impress Order.</div>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>This quiz tests your understanding of the discovery process and the 5-Step Impress Order. You must know the exact sequence, buyer signals, and when to transition from discovery to pricing.</p>
+<ul>
+<li>📝 10 scenario-based questions</li>
+<li>🎯 Score <strong>10/10</strong> to unlock Task 13</li>
+</ul>
+</div>
+`;
+
+// Task 12 Quiz: Discovery & Impress Order (10 Questions)
+const task12Quiz = [
+    { q: "What are the 5 discovery questions you must ask in every Fiverr conversation?", o: ["Name, email, phone, address, payment method", "Budget, timeline, competitor, revenue goals, team size", "Niche/category, product count at launch, timeline, budget range, reference stores", "Platform preference, hosting provider, domain name, colour scheme, font choice"], c: 2 },
+    { q: "What is the CORRECT order of the 5-Step Impress Order?", o: ["Price → Features → Plan → Mirror → Close", "Mirror goals → Call out opportunities → Explain outcomes → Propose plan → Introduce price", "Introduce price → Mirror goals → Explain features → Call out problems → Propose plan", "Propose plan → Explain outcomes → Call out opportunities → Mirror goals → Introduce price"], c: 1 },
+    { q: "Step 3 of the Impress Order says 'Explain outcomes, not features.' Which is the correct OUTCOME version of 'GA4 setup'?", o: ["We install Google Analytics 4 on your Shopify store with enhanced ecommerce tracking", "GA4 is the latest version of Google Analytics and it tracks user behaviour across devices", "We will track add-to-cart, checkout, and purchase events so you know exactly what is making you money and what is leaking sales", "Google Analytics setup takes about 2 hours and includes event tracking and conversion goals"], c: 2 },
+    { q: "A buyer says: 'I lost my job and I am starting a baby clothing brand.' What buyer signal does this indicate?", o: ["High budget — they are starting a new business and will invest heavily in it", "Low budget — handle with care, assess if they meet the $1,000 minimum threshold", "Urgent timeline — they need income fast so the store must launch immediately", "Disqualify immediately — unemployed buyers never have enough budget for premium services"], c: 1 },
+    { q: "Client 29 (Chris) said: 'I am not looking for price alone. I want someone responsive that will do good quality work so we can retain them through the years.' What should you sell?", o: ["Offer the lowest price to match his other competing bids and win on value", "Sell the partnership — emphasise long-term support, responsiveness, and reliability", "List every feature in your Enterprise package to justify the premium pricing", "Tell him you are the best and other developers cannot match your quality level"], c: 1 },
+    { q: "When a buyer has an existing store with low conversions, what is your FIRST step before quoting?", o: ["Send your package list with pricing tiers so they can choose a rebuild option", "Ask for their store URL, review it, and diagnose specific issues before proposing solutions", "Tell them their store needs a complete rebuild and quote your Enterprise package price", "Ask about their budget first to determine which plan tier to recommend for the rebuild"], c: 1 },
+    { q: "Client 1 (Eric) shared a WordPress-to-Shopify migration document. You mirrored his requirements, then added growth suggestions (affiliate program, UGC, loyalty). What did this accomplish?", o: ["It confused the client by adding scope he did not ask for in his original requirements", "It naturally expanded scope from basic migration to enterprise build — discovery IS selling", "It showed off your knowledge but had no impact on the final price Eric agreed to", "It delayed the project because now Eric needed to approve additional features he did not want"], c: 1 },
+    { q: "Before sharing price or a proposal, you should send a 'priming message.' Which of these is a correct priming message?", o: ["Our prices are very competitive and we offer the best value on Fiverr right now", "I reviewed your store and I can already see the exact areas where conversions are leaking", "Here are our 3 packages — pick the one that fits your budget and we can start", "Most sellers on Fiverr charge much more than we do for the same quality of work"], c: 1 },
+    { q: "A buyer says 'I need it ASAP — can you deliver this week?' What is the WRONG response?", o: ["Acknowledge the urgency, confirm feasibility, then proceed with quick qualification questions", "Offer a rushed-delivery discount to secure the deal since they are under time pressure", "Charge premium for speed — urgent buyers have higher willingness to pay for fast turnaround", "Ask about reference sites and branding assets to qualify the project scope efficiently"], c: 1 },
+    { q: "Client 17 (firobio) had no logo, no product photos, and no label — just a plain black jar. What did discovery reveal?", o: ["The project was too small to be profitable and should have been declined entirely", "They needed 3x more than they initially thought — full branding package on top of website", "They should find a graphic designer first and come back when branding assets were ready", "A $420 starter build would be sufficient since they only had 1 product to sell"], c: 1 }
+];
+
+// =====================================================
+// TASK 13: Proposals, Pricing & Plans
+// =====================================================
+const task13Content = `
+<h2>💰 TASK 13: PROPOSALS, PRICING & PLANS — The Proposal PDF Method</h2>
+
+<div class="content-section">
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(239, 68, 68, 0.15)); border-left: 4px solid #f59e0b; padding: 25px;">
+<strong>Core Principle:</strong> We send clients a Proposal PDF that looks official and premium. This alone increases close rate. A polished PDF with their brand name on the cover makes them feel like they are hiring a professional agency, not a Fiverr freelancer. This module teaches you our exact 3-tier pricing, the Proposal PDF format, and how to present plans in chat.
+</div>
+</div>
+
+<div class="content-section">
+<h3>1. The 3 Plans Overview — Our Standard Pricing Tiers</h3>
+<p>Every client gets presented with 3 plan options. Choose plan names that match the client personality and brand vibe:</p>
+
+<div class="highlight-box" style="border-left: 4px solid #10b981;">
+<strong>Plan 1 — $2,800 (Foundation Build / Launch Luxe / Conversion Engine)</strong><br>
+Complete Shopify store setup with premium design, CRO, and conversion systems. This is the starting tier for serious brands.
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #6366f1;">
+<strong>Plan 2 — $5,400 (Growth Sprint / Brand Momentum / Conversion + Organic Growth)</strong><br>
+Everything in Plan 1 PLUS 1-month marketing execution. Store build + marketing strategy + social media management.
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #8b5cf6;">
+<strong>Plan 3 — $9,800 (Scale Partner / Market Dominance / Full-Funnel Growth System)</strong><br>
+Everything in Plan 2 PLUS 3-month marketing execution. Full business launch partner with paid ads, SEO, content, and ongoing optimisation.
+</div>
+
+<div class="analysis">Choose plan names that match the client: "Launch Luxe" for fashion/beauty brands, "Conversion Engine" for data-driven founders, "Market Dominance" for competitive niches. The name should feel like it was made for THEM.</div>
+</div>
+
+<div class="content-section">
+<h3>2. Proposal PDF Structure (Required Format)</h3>
+<p>Every proposal follows this exact structure:</p>
+
+<div class="highlight-box">
+<strong>Page 1: Cover Page</strong>
+<ul>
+<li>"[Brand Name] — Growth & Store Build Proposal"</li>
+<li>Prepared for: [Client Name]</li>
+<li>Prepared by: Shreyansh Singh</li>
+<li>Date: [Current Date]</li>
+<li>"Confidential"</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong>Page 2: Executive Summary</strong>
+<ul>
+<li>Client goals — 2-3 lines summarising what they want to achieve</li>
+<li>Our approach — 3 clear steps showing how we will get them there</li>
+<li>Results we are building toward — the outcomes they can expect</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong>Pages 3-5: Plan Pages (One Plan Per Page)</strong>
+<ul>
+<li>Each plan gets its own full page — clean, detailed, no cramming</li>
+<li>Plan name + price at the top</li>
+<li>Full deliverables list with descriptions</li>
+<li>Timeline for that specific plan</li>
+<li>What makes this tier different from the others</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong>Final Page: Next Steps</strong>
+<ul>
+<li>Timeline overview</li>
+<li>"What we need from you" checklist</li>
+<li>How to proceed (place order, schedule call, etc.)</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>3. Plan 1 — $2,800 Foundation Build (Full Deliverables)</h3>
+<p>What is included at the $2,800 tier:</p>
+<ul>
+<li>Full Shopify store setup — premium UI/UX, mobile-first design</li>
+<li>10+ pages: homepage, collections, product pages, about, contact, FAQ, policies</li>
+<li>Product setup and catalogue organisation</li>
+<li>CRO build-in: trust badges, social proof, urgency elements, optimised checkout</li>
+<li>SEO foundation: meta titles, descriptions, alt tags, sitemap, schema markup</li>
+<li>3 email automations: Welcome Series, Abandoned Cart Recovery, Post-Purchase Follow-up</li>
+<li>GA4 + Meta Pixel + TikTok Pixel integration</li>
+<li>Speed optimisation (target 90+ Lighthouse score)</li>
+<li>A/B testing ready setup</li>
+<li>Revisions + support</li>
+</ul>
+<p><strong>Timeline:</strong> 3-5 weeks</p>
+</div>
+
+<div class="content-section">
+<h3>4. Plan 2 — $5,400 Growth Sprint (Full Deliverables)</h3>
+<p>Everything in Plan 1 PLUS:</p>
+<ul>
+<li>1-month social media management: content calendar, 5 posts, content management, engagement strategy</li>
+<li>Marketing strategy for 10 selected products</li>
+<li>Brand story framework development</li>
+<li>Market and competitor research</li>
+<li>LLM SEO optimisation for 10 products (AI-enhanced product descriptions and meta content)</li>
+<li>Limited-budget paid marketing test setup (Meta/Google)</li>
+</ul>
+<p><strong>Timeline:</strong> Store build 3-5 weeks + 30-day marketing execution</p>
+</div>
+
+<div class="content-section">
+<h3>5. Plan 3 — $9,800 Scale Partner (Full Deliverables)</h3>
+<p>Everything in Plan 2 PLUS:</p>
+<ul>
+<li>3-month social media: 90-day content calendar, 15 posts, UGC content direction</li>
+<li>Full marketing execution across all channels</li>
+<li>Daily SEO improvement + 30 blog articles</li>
+<li>LLM SEO for 50 products</li>
+<li>Cross-platform paid ad strategy: Meta + Google + TikTok with 3-month campaign optimisation</li>
+</ul>
+<p><strong>Timeline:</strong> Store build + 3-month program</p>
+</div>
+
+<div class="content-section">
+<h3>6. Presenting Plans in Fiverr Chat</h3>
+<p>Not every buyer needs the full Proposal PDF. Here are 3 formats for presenting plans in chat:</p>
+
+<div class="conversation">
+<h4>Format 1: Quick Buyer (Wants Options Fast)</h4>
+<div class="message sales">
+<div class="sender">You</div>
+"Based on your requirements, here are 3 plan options:<br><br>
+Plan 1 — $2,800: Full Shopify store build with CRO, SEO, and 3 email automations. 3-5 weeks.<br><br>
+Plan 2 — $5,400: Everything above PLUS 1-month marketing (social media, strategy, LLM SEO). Great for brands launching fresh.<br><br>
+Plan 3 — $9,800: Full build + 3-month marketing partner. Paid ads, daily SEO, 30 blogs, UGC direction. For brands ready to scale.<br><br>
+Which tier aligns best with where you are right now?"
+</div>
+</div>
+
+<div class="conversation">
+<h4>Format 2: Detailed Buyer (Wants Full Breakdown)</h4>
+<div class="message sales">
+<div class="sender">You</div>
+"I have prepared a professional proposal for [Brand Name] with detailed plan options. Sending it over now as a PDF — it includes your specific requirements, our approach, and 3 plan tiers so you can choose based on how fast you want to scale."
+</div>
+<div class="analysis">For enterprise buyers or anyone who sent a detailed brief, always send the full Proposal PDF. It separates you from every other seller on Fiverr.</div>
+</div>
+
+<div class="conversation">
+<h4>Format 3: Hesitant Buyer (Needs Nudging)</h4>
+<div class="message sales">
+<div class="sender">You</div>
+"I have reviewed everything you shared and prepared plan options. Most brands in your niche start with Plan 1 ($2,800) to build the foundation, then upgrade to marketing once the store is converting. Want me to walk you through the options?"
+</div>
+<div class="analysis">For hesitant buyers, recommend a specific starting point. Do not just throw 3 options at them — guide their decision.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>7. Conversation: "Tell Me Your Packages"</h3>
+<p><em>Based on real client interactions</em></p>
+
+<div class="conversation">
+<h4>When They Ask for Packages Directly</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"Can you tell me your packages and pricing?"
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Of course! Here is what we offer:<br><br>
+<strong>$2,800 — Foundation Build</strong><br>
+Complete Shopify store: premium design, 10+ pages, CRO, SEO, 3 email automations, GA4 + Pixel, speed optimisation. Timeline: 3-5 weeks.<br><br>
+<strong>$5,400 — Growth Sprint</strong><br>
+Everything above + 1-month marketing: social media, content strategy, LLM SEO for 10 products, paid marketing test setup. Timeline: store + 30-day marketing.<br><br>
+<strong>$9,800 — Scale Partner</strong><br>
+Full build + 3-month marketing execution: 90-day content, 30 blogs, paid ads (Meta + Google + TikTok), daily SEO. Timeline: store + 3-month program.<br><br>
+Which tier aligns best with your brand goals? Happy to tailor if you have a specific scope in mind."
+</div>
+<div class="analysis">Always end with a question — not just a price list. "Which tier aligns best?" or "What scope are you looking for?" keeps the conversation going and helps you guide them to the right plan.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>8. Conversation: Client Asks for Customisation</h3>
+
+<div class="conversation">
+<h4>Mix-and-Match Requests</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"I like Plan 1 but I also want the social media management from Plan 2. Can we do a custom package?"
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Absolutely! We can create a custom scope. The store build from Plan 1 is $2,800, and adding 1-month social media management would bring it to approximately $3,800. I will prepare a tailored proposal with the exact breakdown for your brand."
+</div>
+<div class="analysis">Flexibility within structure. You CAN mix-and-match, but always maintain your margins. Never reduce the store build price — add the marketing component at its standalone value. Custom scopes should feel like a privilege, not a negotiation.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>9. Qualification Questions Before Closing</h3>
+<p>Before a client commits to Plan 2 or Plan 3, ask these qualification questions to ensure the marketing scope is clear:</p>
+<ul>
+<li>Which social media platforms do you want us to manage? (Instagram, TikTok, Facebook, Pinterest?)</li>
+<li>Who is your target customer? (Age, location, interests, buying behaviour)</li>
+<li>Which 10 products should we focus the marketing strategy on?</li>
+<li>Do you want us to handle comment and DM management or just posting?</li>
+<li>What is your paid advertising budget on top of our fee?</li>
+<li>Do you have UGC creators available, or do you need us to direct content creation?</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>10. "What We Need From You" Checklist</h3>
+<p>Send this checklist AFTER the client chooses a plan and places their order:</p>
+
+<div class="highlight-box">
+<strong>Post-Order Asset Checklist:</strong>
+<ul>
+<li>Logo files (PNG + SVG preferred)</li>
+<li>Brand colours (hex codes or colour palette)</li>
+<li>Product images (high resolution, white background preferred)</li>
+<li>Product descriptions, prices, and variants</li>
+<li>Domain access or domain name to connect</li>
+<li>Shopify admin access (we will request collaborator access)</li>
+<li>Reference websites you love (2-3 examples)</li>
+<li>Any existing brand guidelines or style documents</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>This quiz tests your knowledge of the 3 plans, Proposal PDF format, pricing details, and how to present options in chat.</p>
+<ul>
+<li>📝 10 scenario-based questions</li>
+<li>🎯 Score <strong>10/10</strong> to unlock Task 14</li>
+</ul>
+</div>
+`;
+
+// Task 13 Quiz: Proposals, Pricing & Plans (10 Questions)
+const task13Quiz = [
+    { q: "What are the 3 standard pricing tiers at Digital Heroes?", o: ["$420 / $625 / $1,200 — Starter, Premium, and Premium Extended packages", "$1,200 / $1,800 / $2,400 — Professional, Enterprise, and Enterprise Plus plans", "$2,800 / $5,400 / $9,800 — Foundation Build, Growth Sprint, and Scale Partner", "$500 / $1,000 / $2,000 — Basic, Standard, and Premium store build options"], c: 2 },
+    { q: "What is included in Plan 2 ($5,400) that is NOT in Plan 1 ($2,800)?", o: ["Premium theme, CRO, and speed optimisation — these are Plan 2 exclusives", "1-month social media, marketing strategy for 10 products, LLM SEO, and paid marketing test setup", "3-month marketing execution with 30 blogs, daily SEO, and cross-platform paid ads", "GA4 + Meta Pixel integration and 3 email automations for cart recovery"], c: 1 },
+    { q: "What is the CORRECT structure of the Proposal PDF?", o: ["Pricing page → Features list → Portfolio → Contact information → Terms and conditions", "Cover page → Executive summary → Each plan on its own page → Next steps and timeline", "Introduction → About us → All 3 plans on one page → Testimonials → Order form", "Portfolio → Case studies → Single recommended plan → Payment terms → Guarantee"], c: 1 },
+    { q: "A client says 'Can you tell me your packages?' You send the 3 tiers. What should you ALWAYS include at the end?", o: ["Your YouTube subscriber count and years of experience to build more credibility", "A question that keeps the conversation going — like 'Which tier aligns with your goals?'", "A countdown timer warning that prices will increase next week if they do not order now", "A list of 5 competitor sellers and why your packages are better value than theirs"], c: 1 },
+    { q: "A client wants Plan 1 features but also wants social media management from Plan 2. How do you handle this?", o: ["Tell them they must choose either Plan 1 or Plan 2 — no mixing is allowed", "Create a custom scope: $2,800 store build + social media at standalone rate, maintaining margins", "Offer them Plan 2 at a discounted rate of $4,000 since they do not need everything", "Give them the social media management for free as a bonus to close the deal faster"], c: 1 },
+    { q: "For hesitant buyers who cannot decide between plans, what is the best presentation approach?", o: ["Send all 3 plans with full details and let them figure out which one works best", "Recommend a specific starting point — most brands start with Plan 1 then upgrade later", "Only show Plan 3 because it has the highest margin and you should always aim high", "Tell them to take their time and come back when they have made a decision on budget"], c: 1 },
+    { q: "What goes on Page 2 of the Proposal PDF?", o: ["All 3 plans with pricing side by side for easy comparison between options", "Executive summary: client goals (2-3 lines), our approach (3 steps), results we are building toward", "Your portfolio with links to previous stores you have built for similar brands", "Terms and conditions including payment schedule, revision policy, and timeline"], c: 1 },
+    { q: "Plan 3 ($9,800) includes '30 blog articles' and 'daily SEO improvement.' What plan tier do these belong to?", o: ["These are included in Plan 1 ($2,800) as part of the SEO foundation setup", "These are Plan 2 ($5,400) features included in the 1-month marketing package", "These are Plan 3 ($9,800) exclusive features — part of the 3-month marketing execution", "These are add-on features available at any tier for an additional $1,500 charge"], c: 2 },
+    { q: "When should you send a full Proposal PDF instead of just listing plans in chat?", o: ["Always send a PDF for every single enquiry regardless of the buyer type or scope", "For enterprise buyers or anyone who sent a detailed brief — the PDF sets you apart", "Only when the client specifically requests a PDF document with formal proposal details", "Never — Fiverr chat is faster and PDFs feel too formal for the Fiverr platform"], c: 1 },
+    { q: "After a client chooses a plan and orders, what do you send them immediately?", o: ["A thank you message and tell them you will start working right away on their project", "Your Calendly link to schedule a kickoff meeting before any work begins on the store", "The 'What We Need From You' checklist: logo, brand colours, product images, domain access, references", "An invoice with payment terms and a contract for them to sign before work begins"], c: 2 }
+];
+
+// =====================================================
+// TASK 14: Objection Handling & Closing
+// =====================================================
+const task14Content = `
+<h2>🎯 TASK 14: OBJECTION HANDLING & CLOSING — From "Too Expensive" to "Let's Do It"</h2>
+
+<div class="content-section">
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(245, 158, 11, 0.15)); border-left: 4px solid #ef4444; padding: 25px;">
+<strong>The $1,000+ Rule:</strong> Anyone with a budget above $1,000 is closable. We NEVER lose a client who has $1,000+. We close them with a Lean Plan. Anyone below $1,000 gets referred with dignity — never devalue your service to match a budget that cannot support quality work. This module teaches you exactly how to handle every objection and close every closable deal.
+</div>
+</div>
+
+<div class="content-section">
+<h3>1. The 5 Fiverr Objections You Will Hear Daily</h3>
+<p>Every objection falls into one of these 5 categories. Learn to recognise them instantly:</p>
+<ol>
+<li><strong>"Too expensive"</strong> — Price objection (most common). They want the work but feel the price is too high.</li>
+<li><strong>"Timeline too long"</strong> — They need it faster. Usually solvable with scope adjustment.</li>
+<li><strong>"I will think about it"</strong> — Stalling. They are either comparing sellers or unsure about the value.</li>
+<li><strong>"Another seller quoted less"</strong> — Competitor comparison. They want you to justify or match.</li>
+<li><strong>"How do I know you are good?"</strong> — Trust concern. They want proof of quality before committing.</li>
+</ol>
+</div>
+
+<div class="content-section">
+<h3>2. Conversation: Below $1,000 Threshold — The Compassionate Referral</h3>
+<p><em>Based on Client 15 (Milla) — used baby clothing, lost her job</em></p>
+
+<div class="conversation">
+<h4>When Budget Is Below Your Minimum</h4>
+<div class="message client">
+<div class="sender">Client (Milla)</div>
+"I do not know my budget. I lost my job and since it had been hard to find a new job at my age, I decided to start this shop. I have 300-600 used baby clothes. I could pay for the Fiverr best package with 10 pages and 10 plugins. Do you think you could satisfy my needs with max $500?"
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Give us some time and we will let you know."
+</div>
+<div class="message sales">
+<div class="sender">You — After Assessment</div>
+[Assessed her needs: 300-600 products, 8+ filter categories, multi-country shipping, size variations. Scope far exceeds $500.]<br><br>
+"Based on your requirements, I would recommend connecting with [trusted team member name] — they specialise in builds at this budget range and can deliver quality work for your store. I will send you their profile."
+</div>
+<div class="analysis">Below $1,000 = refer with dignity. Never feel bad about your pricing — feel bad about delivering subpar work. Milla needed a complex store (300-600 products with filters, sizes, multi-country) that genuinely cannot be built properly at $500. Referring her to a trusted colleague is the RIGHT thing to do — for her AND for your brand. Never say "you cannot afford us." Say "I know someone who specialises in this range."</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>3. Conversation: "Waiting on one more bid"</h3>
+<p><em>Based on Client 29 (Chris) — Chillstrip, closed at $1,500</em></p>
+
+<div class="conversation">
+<h4>When They Are Comparing You to Competitors</h4>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"Ok thanks, just waiting on one more bid and will see if their scope compares to yours."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Absolutely Chris — I will wait for your final decision. Just know my scope already includes subscriptions, compliance, and the pro portal so you will not need a rebuild later."
+</div>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"Honestly, I am not looking for price alone. I know we will keep using whoever builds our site as we expand so I want someone really responsive that will do good quality work so we can retain them through the years."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"That makes total sense. You are not just looking for a one-time setup — you want a long-term Shopify partner who is responsive, reliable, and delivers at a standard you can keep building on. We can offer 3 months support within this package so you feel comfortable."
+</div>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"Ok, we will go with you. Let me know what assets you need."
+</div>
+<div class="analysis">When they are comparing bids, DO NOT panic-discount. Instead, highlight what is INCLUDED that competitors will charge extra for later. "You will not need a rebuild later" is a powerful fear-based close — buyers hate paying twice. The "rebuild later" warning sealed this deal.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>4. Lean Budget Tiers (Internal Reference)</h3>
+<p>For clients with $1,000-$2,700 budgets, use these Lean Build tiers. These are NOT on the website — they are internal tools for closing deals that fall between the minimum and Plan 1:</p>
+
+<div class="highlight-box" style="border-left: 4px solid #f59e0b;">
+<strong>$1,000-$1,300 — Lean Build</strong>
+<ul>
+<li>Premium homepage design</li>
+<li>Core pages (about, contact, FAQ, policies)</li>
+<li>15-25 products setup</li>
+<li>CRO basics (trust badges, social proof)</li>
+<li>Basic SEO setup</li>
+<li>GA4 + Meta Pixel</li>
+<li>1 email automation (Abandoned Cart)</li>
+<li>1-2 weeks post-launch support</li>
+</ul>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #f97316;">
+<strong>$1,400-$1,900 — Lean Plus</strong>
+<ul>
+<li>Everything in Lean Build PLUS:</li>
+<li>Better section design and layout</li>
+<li>30-60 products setup</li>
+<li>2 email automations (Abandoned Cart + Welcome)</li>
+<li>Speed optimisation pass</li>
+<li>Cart optimisation</li>
+<li>2-3 weeks post-launch support</li>
+</ul>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #ef4444;">
+<strong>$2,000-$2,700 — Near-Full Build</strong>
+<ul>
+<li>Everything in Lean Plus PLUS:</li>
+<li>80-100 products setup</li>
+<li>3 email automations (Abandoned Cart + Welcome + Post-Purchase)</li>
+<li>Stronger SEO foundation</li>
+<li>Full tracking setup</li>
+<li>Priority QA testing</li>
+<li>1 month post-launch support</li>
+</ul>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #10b981;">
+<strong>Non-Negotiables (included in EVERY lean build):</strong>
+<ul>
+<li>Premium homepage design</li>
+<li>Product page optimisation</li>
+<li>CRO layer (trust elements, urgency, social proof)</li>
+<li>SEO foundation</li>
+<li>GA4 + Meta Pixel</li>
+<li>At least 1 email automation</li>
+<li>Launch QA testing</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>5. The "Pretend Favour" Close — Exact Script</h3>
+<p>This is the most powerful closing technique at Digital Heroes. Memorise this script:</p>
+
+<div class="conversation">
+<h4>The Pretend Favour Script</h4>
+<div class="message sales">
+<div class="sender">You — Step 1</div>
+"Normally this is a $2,800 build because it includes the full store setup and conversion system."
+</div>
+<div class="message sales">
+<div class="sender">You — Step 2</div>
+"But since you are ready to move now, we can tailor a leaner scope inside $[their budget] — and still deliver a premium, conversion-focused store."
+</div>
+<div class="message sales">
+<div class="sender">You — Step 3</div>
+"We will keep the quality the same, we will just limit the number of products and sections and keep the build focused on what drives sales first."
+</div>
+<div class="message sales">
+<div class="sender">You — Step 4</div>
+"Once the store starts converting, you can upgrade and we expand the rest."
+</div>
+</div>
+
+<div class="analysis"><strong>Critical rules:</strong>
+<ul>
+<li>NEVER say the word "discount." Always say "tailored scope" or "leaner scope as a favour."</li>
+<li>You are NOT reducing price for the same work. You are reducing SCOPE to match their budget.</li>
+<li>Always anchor to the $2,800 full price first so the lean price feels like a deal.</li>
+<li>Position it as a favour: "since you are ready to move now" implies this is special treatment.</li>
+<li>The upgrade path ("once the store starts converting") plants the seed for future revenue.</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>6. Conversation: Presenting Tiered Options</h3>
+<p><em>Based on Client 17 (firobio) and Client 1 (Eric)</em></p>
+
+<div class="conversation">
+<h4>Supplement Brand — 1 Product, No Assets</h4>
+<div class="message sales">
+<div class="sender">You</div>
+"$625 Premium (7 days support) / $800 Premium + Extended (1 month support) / $1,200 Premium + Long-Term (3 months support)"
+</div>
+<div class="message client">
+<div class="sender">Client</div>
+"What do you recommend as a starter? But we want it professional."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"I would recommend the $800 package — it gives you the professional build plus 1 month of support to handle any adjustments after launch. It is the sweet spot between getting everything right and having backup while you are learning the platform."
+</div>
+</div>
+
+<div class="conversation">
+<h4>Water Trampolines — Enterprise Recommendation</h4>
+<div class="message sales">
+<div class="sender">You</div>
+"$1,200 Professional (4-5 weeks) or $1,800 Enterprise (6-8 weeks + 3 months VIP support)."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"I recommend going with the $1,800 Enterprise — your brand relies on seasonal launches and affiliate marketing, and the Enterprise plan is specifically built for brands that need ongoing strategic support through their first launch cycles."
+</div>
+<div class="analysis">Always have a recommendation. Do not just list prices — tell them which one fits THEIR situation and WHY. Your recommendation shows expertise and makes their decision easier.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>7. The Relationship Close</h3>
+<p><em>Based on Client 29 (Chris) — the exact exchange that closed a $1,500 deal</em></p>
+
+<div class="conversation">
+<h4>When They Value Partnership Over Price</h4>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"I want someone really responsive that will do good quality work so we can retain them through the years and go to them if we run into problems."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"That makes total sense. You are not just looking for a one-time setup — you want a long-term Shopify partner who is responsive, reliable, and delivers at a standard you can keep building on."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"We can offer 3 months support within this package so you feel comfortable."
+</div>
+<div class="message client">
+<div class="sender">Client (Chris)</div>
+"Ok, we will go with you."
+</div>
+<div class="analysis">The Relationship Close: Mirror their values back to them. Chris said "responsive, quality, retain through the years." You responded with "responsive, reliable, standard you can keep building on." Then added "3 months support" as the tangible proof. Buyers who value relationship > price are your HIGHEST close-potential leads.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>8. The Follow-Up Sequence</h3>
+<p>When buyers go silent after receiving your proposal or quote, use this exact sequence:</p>
+
+<div class="highlight-box" style="border-left: 4px solid #6366f1;">
+<strong>24-Hour Follow-Up:</strong><br>
+"Hey! Just checking in — did you have any questions about the proposal?"
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #8b5cf6;">
+<strong>48-Hour Follow-Up:</strong><br>
+"Hello! I hope I am not disturbing you. Just wanted to do a friendly follow-up. Would really appreciate your response."
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #a855f7;">
+<strong>72-Hour Final Follow-Up (with opt-out):</strong><br>
+"Hi! Just a final check-in on the proposal. PS: If you have already booked with someone else or are not interested, you can just reply 'NO' — I will not bother you again."
+</div>
+
+<div class="analysis">The opt-out line ("just reply NO") shows confidence and OFTEN triggers a response. Based on Client 29: this exact follow-up strategy triggered Chris's "waiting on one more bid" response, which led to closing the deal at $1,500. Persistence without desperation. Maximum 3 follow-ups, then move on.</div>
+</div>
+
+<div class="content-section">
+<h3>9. Post-Close: First Message After Order</h3>
+<p><em>Based on Client 1 (Eric) and Client 29 (Chris)</em></p>
+
+<div class="conversation">
+<h4>Setting Expectations Immediately</h4>
+<div class="message sales">
+<div class="sender">You — After Eric Ordered</div>
+"Hey Eric, here is what I will be doing for your store: (1) Image banner section (2) Product categories on top menu (3) Cart drawer feature (4) Tracking app (5) Email system for order confirmations. Here is a clear breakdown of everything we will be building..."
+</div>
+<div class="message sales">
+<div class="sender">You — After Chris Ordered</div>
+"Thrilled to be your long-term Shopify partner for Chillstrip! You have got WordPress handling the front end — I will own the Shopify backend. Here is what I need from you: [brand assets, product list, access credentials]"
+</div>
+<div class="analysis">Immediately after the order is placed, send a message that: (1) Confirms exactly what you are building, (2) Sets the timeline, (3) Lists what you need from them. This prevents buyer's remorse and shows professionalism. Professional handoff = confident client.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>10. Pricing Rule: Charge as Close to Their Maximum as Possible</h3>
+<p>When a client reveals their budget (directly or through signals), your goal is to price as close to their maximum as possible while delivering genuine value at that price point:</p>
+<ul>
+<li><strong>Client says "$1,200 max"</strong> → Price at $1,200 using the Lean Plus tier</li>
+<li><strong>Client says "budget is not an issue"</strong> → Present $2,800 / $5,400 / $9,800 plans</li>
+<li><strong>Client says "start lean"</strong> → Present $1,000-$1,300 Lean Build</li>
+<li><strong>Client reveals competing bid at $800</strong> → Present $1,200 with clear scope comparison showing why yours is worth more</li>
+</ul>
+<div class="analysis">Never quote BELOW their budget. If they say $1,500, do not quote $1,000 — quote $1,500 and deliver $1,500 worth of value. Pricing below budget leaves money on the table and makes you look less premium. You are not a discount shop — you are a premium partner who tailors scope to fit budgets.</div>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>This quiz tests your ability to handle real objections, use the Pretend Favour script, and close deals across different budget levels.</p>
+<ul>
+<li>📝 10 scenario-based questions</li>
+<li>🎯 Score <strong>10/10</strong> to unlock Task 15</li>
+</ul>
+</div>
+`;
+
+// Task 14 Quiz: Objection Handling & Closing (10 Questions)
+const task14Quiz = [
+    { q: "A buyer says: 'I lost my job and have max $500 budget. I need a store for 300 used baby clothes.' What is the correct approach?", o: ["Offer a $500 lean plan with reduced features but still try to make it work somehow", "Tell them $500 is too low for any store and decline the project without alternatives", "Refer them to a trusted team member who works at lower price points — with dignity", "Offer a steep discount on your $1,200 plan to help someone who is struggling financially"], c: 2 },
+    { q: "What is the Pretend Favour script? Complete the sentence: 'Normally this is a $2,800 build. But since you are ready to move now, we can...'", o: ["...offer you a 40% discount bringing it down to $1,680 as a special one-time deal", "...tailor a leaner scope inside your budget and still deliver a premium, conversion-focused store", "...do the full $2,800 build but let you pay in 3 monthly instalments of $933 each", "...remove the CRO and SEO features to bring the price down to match your budget exactly"], c: 1 },
+    { q: "A buyer says 'waiting on one more bid and will see if their scope compares.' What do you emphasise?", o: ["Offer to match or beat whatever the other seller quotes to guarantee you win the project", "Highlight what is already INCLUDED that competitors will charge extra for — prevent a 'rebuild later'", "Tell them the other seller is probably cheaper but lower quality and they will regret choosing them", "Send more portfolio links to remind them of your work quality and past project success"], c: 1 },
+    { q: "Client budget is $1,200. Which Lean tier do you use and what does it include?", o: ["$1,000-$1,300 Lean Build: premium homepage, core pages, 15-25 products, CRO basics, 1 automation", "Any standard plan at a 50% discount — just reduce your margins to match their budget", "No lean tier exists — your minimum is $2,800 and anyone below that should be referred", "Custom plan with everything from Plan 1 but at a reduced quality level to save time"], c: 0 },
+    { q: "What do you NEVER say when offering a leaner plan to fit a client's budget?", o: ["Tailored scope", "Discount", "Favour", "Focused build"], c: 1 },
+    { q: "A client goes silent for 48 hours after receiving your proposal. What is the correct follow-up message?", o: ["Send a new lower-priced proposal assuming the original was too expensive for them", "A friendly follow-up: 'Hello! Just wanted to do a friendly follow-up. Would appreciate your response.'", "Send them a message saying the price will increase next week if they do not order by Friday", "Message them 5 times in 24 hours to show urgency and dedication to winning the project"], c: 1 },
+    { q: "The $1,000+ Rule states that anyone with budget above $1,000 is closable. How do you close them?", o: ["Give them Plan 1 at $2,800 and tell them to find the extra budget somewhere else", "Use the Pretend Favour close — tailor a lean scope within their budget, never reduce price for same work", "Offer a payment plan where they pay $500 now and $500 after the store launches successfully", "Tell them to save up and come back when they can afford the full $2,800 foundation build"], c: 1 },
+    { q: "After a client places their order, what should your FIRST message contain?", o: ["A thank you and then silence until you have something to show them in a few days", "Exact list of what you are building, the timeline, and what you need from them — set expectations immediately", "A request for a 5-star review since the project has not started yet but you want early reviews", "A message telling them not to message you for the next 2 weeks while you work on the build"], c: 1 },
+    { q: "The 72-hour final follow-up includes an opt-out line: 'If not interested, just reply NO.' Why is this effective?", o: ["It guilt-trips the buyer into responding because they feel bad about ignoring your messages", "It shows confidence and often triggers a response — buyers respect the professionalism of giving them an exit", "It makes the buyer think you have other clients lined up and do not need their business at all", "It is a passive-aggressive way to pressure them into making a decision they are not ready for"], c: 1 },
+    { q: "A client reveals their max budget is $1,500. You should quote:", o: ["$1,000 to leave room for upsells and additional features later during the project build", "$1,500 using the Lean Plus tier — price as close to their maximum as possible with genuine value", "$2,800 because your minimum standard plan price should never be lowered for any reason", "$750 to undercut any competing bids and guarantee you win the project over other sellers"], c: 1 }
+];
+
+// =====================================================
+// TASK 15: AI-Powered Selling
+// =====================================================
+const task15Content = `
+<h2>🤖 TASK 15: AI-POWERED SELLING — Using AI Tools to Win Fiverr Chats Faster</h2>
+
+<div class="content-section">
+<div class="highlight-box" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(245, 158, 11, 0.15)); border-left: 4px solid #6366f1; padding: 25px;">
+<strong>Core Mindset Shift:</strong> You are a PROBLEM SOLVER, not a salesman. Stop selling — start diagnosing. Every buyer who messages you has a PROBLEM. Your job is to find that problem, diagnose it, and present the solution. AI tools make you 10x faster at this than any competitor. This module teaches you our exact AI workflow.
+</div>
+</div>
+
+<div class="content-section">
+<h3>1. You Are a Problem Solver, Not a Salesman</h3>
+<p>The difference between a $500 freelancer and a $5,000+ partner is not skill — it is approach:</p>
+
+<table style="width:100%; border-collapse: collapse;">
+<tr style="background: rgba(239, 68, 68, 0.1);"><th style="padding: 12px; text-align: left; border-bottom: 2px solid #ef4444;">Salesman Approach (WRONG)</th><th style="padding: 12px; text-align: left; border-bottom: 2px solid #10b981;">Problem Solver Approach (RIGHT)</th></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Here are my packages, pick one"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"I reviewed your store and found 8 issues. Here is how we fix them."</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"My price is $2,800"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Based on your niche and goals, here is the exact build plan and why each element matters."</td></tr>
+<tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Check my portfolio"</td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">"Your homepage has no trust signals, your product pages lack social proof, and your checkout has 3 friction points. We fix all of this."</td></tr>
+</table>
+<div class="analysis">Problem solvers DIAGNOSE before they prescribe. Salesmen prescribe without diagnosing. AI tools help you diagnose 10x faster — that is why they are game-changers for Fiverr sales.</div>
+</div>
+
+<div class="content-section">
+<h3>2. Tool #1: Digital Heroes Sales Rep GPT</h3>
+<p>Our custom ChatGPT is trained on our sales methodology, pricing, and conversation style. It generates multiple response options for any buyer message.</p>
+
+<div class="highlight-box">
+<strong>Access Link:</strong> chatgpt.com/g/g-6961854e56d08191a137afb0b3fbf3d9-digital-heroes-sales-rep<br><br>
+<strong>How to use:</strong>
+<ol>
+<li>Copy the buyer's Fiverr message</li>
+<li>Paste it into the Sales Rep GPT</li>
+<li>Get 3-5 professional response options</li>
+<li>Pick the best one, personalise it, and send</li>
+</ol>
+</div>
+</div>
+
+<div class="content-section">
+<h3>3. Live Demo #1: Buyer Says "Hi"</h3>
+
+<div class="conversation">
+<h4>GPT Generates 5 Options for a 1-Word Message</h4>
+<div class="message client">
+<div class="sender">Buyer Input to GPT</div>
+"Hi"
+</div>
+<div class="message sales">
+<div class="sender">GPT Response — Option 1 (Qualification)</div>
+"Hey! Thanks for reaching out. I would love to help you with your Shopify store. To get started, could you share what type of products you are selling and if you have any reference sites you like?"
+</div>
+<div class="message sales">
+<div class="sender">GPT Response — Option 2 (M.T.N.D.)</div>
+"Hi there! Great to connect. Before I share our approach, I would love to understand your project — what niche are you in, how many products are you planning, and what is your ideal launch timeline?"
+</div>
+<div class="message sales">
+<div class="sender">GPT Response — Option 3 (Premium Positioning)</div>
+"Hello! I am Shreyansh from Digital Marketing Heroes. We specialise in high-converting Shopify stores. What brings you here today — new store build or improving an existing one?"
+</div>
+<div class="analysis">Even for a 1-word message, the GPT gives you professional, strategy-aligned options. Pick the one that matches the context (new vs returning buyer, their profile info, etc.), personalise it, and send. You should NEVER send a GPT response without reading and adjusting it first.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>4. Live Demo #2: Off-Topic Buyer — Redirect</h3>
+
+<div class="conversation">
+<h4>When Someone Wants to BUY Products Instead of a Store</h4>
+<div class="message client">
+<div class="sender">Buyer Input to GPT</div>
+"I need to buy small package with 3 branded products of shilajit"
+</div>
+<div class="message sales">
+<div class="sender">GPT Response — Redirect</div>
+"Hey! Just to clarify — we build Shopify stores, we do not sell physical products. But if you are looking to SELL shilajit products, we can build your entire branded Shopify store. Are you interested in launching your own shilajit brand?"
+</div>
+<div class="analysis">The GPT catches mismatched intent and redirects elegantly. Instead of saying "wrong place," it turns a dead lead into a potential client. This is the problem-solver mindset in action.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>5. Live Demo #3: "Tell Me Your Packages"</h3>
+
+<div class="conversation">
+<h4>GPT Generates 3 Presentation Formats</h4>
+<div class="message client">
+<div class="sender">Buyer Input to GPT</div>
+"tell me your packages"
+</div>
+<div class="message sales">
+<div class="sender">GPT Response — Format 1 (Detailed)</div>
+"Here are our 3 plans with full breakdowns:<br>
+$2,800 Foundation Build — [full deliverables list]<br>
+$5,400 Growth Sprint — [full deliverables list]<br>
+$9,800 Scale Partner — [full deliverables list]<br>
+Which tier aligns best with your current goals?"
+</div>
+<div class="message sales">
+<div class="sender">GPT Response — Format 2 (Short)</div>
+"Quick overview: $2,800 (store build), $5,400 (store + 1mo marketing), $9,800 (store + 3mo full marketing). Want the detailed breakdown for any specific tier?"
+</div>
+<div class="message sales">
+<div class="sender">GPT Response — Format 3 (Curiosity Close)</div>
+"Before I share pricing, can I ask what you are looking to achieve? A simple store launch, or are you thinking store + marketing from day one? That way I can recommend the right plan instead of just listing everything."
+</div>
+<div class="analysis">3 different formats for 3 different buyer types. Detailed for thorough buyers, Short for impatient ones, Curiosity Close for hesitant ones. You pick what fits — the GPT gives you options, not orders.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>6. Tool #2: Claude Extension — QA Testing Client Websites</h3>
+<p>The Claude browser extension can read and analyse any live website. This is your secret weapon for winning clients who have EXISTING stores with problems.</p>
+
+<div class="highlight-box" style="border-left: 4px solid #10b981;">
+<strong>How to use Claude for QA Testing:</strong>
+<ol>
+<li>Open the buyer's website URL in your browser</li>
+<li>Activate the Claude extension</li>
+<li>Ask Claude to QA test the site: "Analyse this Shopify store for conversion, speed, mobile, SEO, and UX issues"</li>
+<li>Claude generates a detailed report of real problems</li>
+<li>Send this report to the buyer as proof of issues</li>
+<li>Propose your solutions with pricing</li>
+</ol>
+</div>
+
+<p><strong>What Claude QA Tests Can Find:</strong></p>
+<ul>
+<li>Page speed issues (slow loading = lost customers)</li>
+<li>Missing SEO elements (meta titles, descriptions, alt tags, schema)</li>
+<li>Mobile responsiveness problems (broken layouts on phones)</li>
+<li>CRO gaps (no trust badges, missing social proof, weak CTAs)</li>
+<li>Broken links and navigation issues</li>
+<li>Missing email capture or automation setup</li>
+<li>Accessibility concerns</li>
+<li>Checkout friction points</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>7. Conversation: Sending a QA Report to Win the Client</h3>
+<p><em>Based on the approach used with Client 13 (Dina) — existing store with low conversions</em></p>
+
+<div class="conversation">
+<h4>The QA Report Close</h4>
+<div class="message client">
+<div class="sender">Client</div>
+"Our store is not converting. Sales are low and we do not know what is wrong."
+</div>
+<div class="message sales">
+<div class="sender">You</div>
+"Can you share your store URL? I will run a quick analysis."
+</div>
+<div class="message sales">
+<div class="sender">You — After Running Claude QA</div>
+"I ran a detailed analysis of your store. Here are the issues I found:<br><br>
+1. Homepage loads in 6.2 seconds (should be under 3s) — you are losing 40% of visitors before they see your products<br>
+2. No trust badges anywhere — new visitors have no reason to trust you<br>
+3. Product pages have no reviews or social proof<br>
+4. Mobile layout is broken on the collection page — buttons overlap on iPhone<br>
+5. No abandoned cart email automation — you are losing 70% of add-to-carts<br>
+6. Meta titles are all 'Home' — Google cannot find your products<br>
+7. No GA4 tracking — you cannot measure what is working<br>
+8. Checkout has 5 steps — industry best practice is 1-2 steps<br><br>
+These are the exact reasons your conversions are low. I can fix all of this."
+</div>
+<div class="analysis">THIS is what separates a $1,200 seller from a $5,000+ partner. You showed them SPECIFIC problems with their store — not generic advice, but actual issues on THEIR site. When a buyer sees 8 real problems they did not know existed, the close becomes effortless. They are not buying a "Shopify store build" — they are buying a FIX for problems they can now see.</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>8. Tool #3: GPT for Proposal PDF Generation</h3>
+<p>Use ChatGPT to generate each plan in your Proposal PDF. The critical rule: generate each plan ONE AT A TIME, not all at once.</p>
+
+<div class="highlight-box" style="border-left: 4px solid #ef4444;">
+<strong>Why One Plan at a Time?</strong><br>
+When you ask GPT to generate all 3 plans in one prompt, it shortcuts and shortens each plan. When you generate each plan separately, GPT gives you long, detailed, personalised content for each tier. One-at-a-time = premium proposals. All-at-once = generic proposals.
+</div>
+
+<div class="highlight-box">
+<strong>Prompt Sequence:</strong>
+<ol>
+<li><strong>First prompt:</strong> "Generate the Cover Page and Executive Summary for a Shopify store proposal for [Brand Name]. Client details: [paste everything from chat — niche, products, goals, reference sites, timeline, budget signals]"</li>
+<li><strong>Second prompt:</strong> "Now generate Plan 1 ($2,800 Foundation Build) specifically for this client. Include all deliverables tailored to their niche, products, and goals. Make it detailed and specific."</li>
+<li><strong>Third prompt:</strong> "Now generate Plan 2 ($5,400 Growth Sprint) for the same client. Include everything from Plan 1 plus 1-month marketing specifics. Tailor the marketing strategy to their niche."</li>
+<li><strong>Fourth prompt:</strong> "Now generate Plan 3 ($9,800 Scale Partner). Full 3-month marketing execution with specific strategies for [their niche]. Make this the most detailed and compelling tier."</li>
+</ol>
+</div>
+
+<div class="highlight-box">
+<strong>Input Pack — What to Paste Into Each Prompt:</strong>
+<ul>
+<li>Client's website URL (if they have one)</li>
+<li>Their niche and product types</li>
+<li>Number of products</li>
+<li>Their goals and reference sites</li>
+<li>Any specific requirements from the chat</li>
+<li>Budget signals you have picked up</li>
+<li>Timeline they mentioned</li>
+<li>Notes from your chat conversation</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>9. Using AI to Analyse Pricing for Complex Projects</h3>
+<p>For complex, non-standard projects, use AI + senior team input to determine pricing:</p>
+
+<div class="highlight-box">
+<strong>When to use AI for pricing analysis:</strong>
+<ul>
+<li>Multi-language stores (4+ languages = extra complexity)</li>
+<li>Custom integrations (Zapier automations, API connections, warehouse sync)</li>
+<li>B2B + B2C hybrid stores</li>
+<li>Product personalisation features (engraving, custom printing)</li>
+<li>Migration projects (WordPress to Shopify, WooCommerce to Shopify)</li>
+</ul>
+</div>
+
+<p><strong>The process:</strong></p>
+<ol>
+<li>Paste the full requirements into ChatGPT: "Given this scope [paste requirements], what should I price this at? Consider complexity, timeline, number of products, custom features, and ongoing support needs."</li>
+<li>Review GPT's suggested range</li>
+<li>Discuss with seniors or team leads for validation</li>
+<li>Combine AI analysis + senior experience for final price</li>
+</ol>
+
+<p>For simpler projects, use AI to brainstorm feature lists and scope options you might have missed — it often catches opportunities for upsell that you overlooked.</p>
+</div>
+
+<div class="content-section">
+<h3>10. The AI-Powered Daily Workflow</h3>
+<p>Here is the complete workflow for handling Fiverr messages using AI tools:</p>
+
+<div class="highlight-box" style="border-left: 4px solid #6366f1;">
+<strong>Step-by-Step Daily Workflow:</strong>
+<ol>
+<li><strong>New message arrives</strong> — Read it carefully</li>
+<li><strong>Identify the buyer's PROBLEM</strong> — What do they actually need?</li>
+<li><strong>Paste into Sales Rep GPT</strong> — Get 3-5 response options</li>
+<li><strong>For existing stores:</strong> Run Claude QA test on their URL → Generate issues report → Send to buyer</li>
+<li><strong>After discovery is complete:</strong> Use GPT to generate Proposal PDF plans — one plan at a time</li>
+<li><strong>For complex pricing:</strong> Use AI analysis + consult with seniors</li>
+<li><strong>Personalise</strong> — Never send an AI response without reading and adjusting it first</li>
+<li><strong>Send</strong> — Always end with a question to keep the conversation going</li>
+</ol>
+</div>
+
+<div class="highlight-box" style="border-left: 4px solid #10b981;">
+<strong>Quality Checklist Before Sending Any AI-Assisted Response:</strong>
+<ul>
+<li>Does it solve their PROBLEM — not just list your services?</li>
+<li>Is the pricing accurate for the scope they described?</li>
+<li>Does it sound human — not robotic or templated?</li>
+<li>Did you personalise it with their brand name, niche, or specific details?</li>
+<li>Does it end with a question to keep the conversation moving?</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚀 Ready for the Quiz?</h3>
+<p>This quiz tests your understanding of AI tools, the problem-solver mindset, and when to use each tool in your workflow.</p>
+<ul>
+<li>📝 10 scenario-based questions</li>
+<li>🎯 Score <strong>10/10</strong> to unlock the Final Certification Exam</li>
+</ul>
+</div>
+`;
+
+// Task 15 Quiz: AI-Powered Selling (10 Questions)
+const task15Quiz = [
+    { q: "What is the core mindset difference between a salesman and a problem solver?", o: ["A salesman works harder, a problem solver works smarter and uses automation tools", "A salesman lists packages and prices. A problem solver diagnoses specific issues and presents solutions.", "A salesman uses AI tools, a problem solver does everything manually for authenticity", "A salesman focuses on new clients, a problem solver only works with existing store owners"], c: 1 },
+    { q: "A buyer says 'Our store is not converting and sales are low.' What AI tool should you use FIRST?", o: ["Sales Rep GPT — to generate a response explaining your packages and pricing tiers", "Claude Extension — QA test their website to find specific conversion issues and send them a report", "ChatGPT — to generate a full Proposal PDF with 3 plan tiers immediately", "No AI tool needed — just send them your portfolio and let them decide if you can help"], c: 1 },
+    { q: "Why should you generate Proposal PDF plans ONE AT A TIME in ChatGPT instead of all at once?", o: ["ChatGPT has a character limit and cannot fit all 3 plans in a single response output", "One-at-a-time produces long, detailed, personalised content. All-at-once makes GPT shortcut and shorten each plan.", "It does not matter — both approaches produce identical quality proposals for clients", "Generating one at a time is slower and there is no actual benefit to the extra time spent"], c: 1 },
+    { q: "You ran a Claude QA test on a buyer's existing store and found 8 issues. What do you do with the report?", o: ["Save it for internal reference only — sharing a QA report might insult the buyer about their store", "Send the full report to the buyer as proof of specific problems, then propose your solutions with pricing", "Post the report publicly on your Fiverr profile as a case study to attract more clients", "Use it to negotiate a lower price with the buyer since their store clearly has many problems"], c: 1 },
+    { q: "The Sales Rep GPT generates 5 response options for a buyer message. What should you do?", o: ["Copy the longest option exactly and paste it into Fiverr chat without any changes needed", "Pick the best option, personalise it with the buyer's details, then send — never send AI responses unedited", "Send all 5 options to the buyer and let them choose which tone they prefer you to use", "Ignore the GPT suggestions and write your own response from scratch every single time"], c: 1 },
+    { q: "A buyer sends a 1-word message: 'Hi'. You paste it into the Sales Rep GPT. What types of response options will it generate?", o: ["Only one generic template since there is not enough context for multiple response variations", "Multiple options: qualification-focused, premium positioning, curiosity-based, and niche-exploration responses", "A request to ask the buyer for more information before it can generate any meaningful response", "An automated reply that sends your full Enterprise package details without any questions"], c: 1 },
+    { q: "What is the correct INPUT PACK to paste into ChatGPT when generating a Proposal PDF?", o: ["Just the buyer's name and budget — ChatGPT will generate appropriate content based on niche", "Client website, niche, products, goals, references, requirements, chat notes, budget signals, and timeline", "Your portfolio links and YouTube subscriber count so GPT can incorporate your credentials", "Only the buyer's first message — keep the input minimal so GPT has creative freedom"], c: 1 },
+    { q: "For a complex multi-language store project with custom integrations, how should you determine pricing?", o: ["Use your standard 3-tier pricing ($2,800/$5,400/$9,800) regardless of project complexity", "Paste requirements into ChatGPT for analysis, review the suggested range, then discuss with seniors for validation", "Ask the buyer what they want to pay and match that number exactly without further analysis", "Double your standard pricing automatically for any project that involves custom integrations"], c: 1 },
+    { q: "Before sending ANY AI-assisted response, you must check the Quality Checklist. Which is NOT on the checklist?", o: ["Does it solve their problem?", "Is the pricing accurate?", "Does it mention your YouTube subscriber count?", "Does it sound human and not robotic?"], c: 2 },
+    { q: "A buyer messages asking to buy physical shilajit products. The Sales Rep GPT redirects with: 'We build stores, not sell products. Want to SELL shilajit? We can build your brand.' What mindset does this demonstrate?", o: ["Aggressive upselling — turning every conversation into a sales opportunity no matter what", "Problem-solver mindset — catching mismatched intent and redirecting toward a genuine opportunity", "Dishonest selling — misleading the buyer about what services you actually provide", "Desperation — trying to convert every single message into a paying project at any cost"], c: 1 }
+];
+
+// =====================================================
+// TASK 16: Final Certification (renumbered from Task 11)
+// =====================================================
+// Task 16 Content: Final Certification
+const task16Content = `
+<h2>🏆 TASK 16: FINAL CERTIFICATION EXAM</h2>
 
 <div class="content-section" style="text-align: center;">
 <div class="highlight-box" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(99, 102, 241, 0.3)); border: none; padding: 40px;">
@@ -5286,7 +6791,7 @@ const task11Content = `
 <h3>📋 Exam Details</h3>
 <div class="highlight-box">
 <ul style="margin-bottom: 0;">
-<li>📝 <strong>20 questions</strong> covering ALL topics from Tasks 1-10</li>
+<li>📝 <strong>20 questions</strong> covering ALL topics from Tasks 1-15</li>
 <li>🎯 <strong>20/20 required</strong> — no exceptions</li>
 <li>⏱️ Questions are randomized each attempt</li>
 <li>🔄 Unlimited retries (but you must study between attempts)</li>
@@ -5970,8 +7475,8 @@ const task10Quiz = [
     { q: "Week after delivery, client: 'Love the store! You guys are amazing!' Smart sales move:", o: ["Thank, ask for review, then referral: 'Know anyone else launching a store?'", "Ignore — project done", "Just say 'Thanks!' and close — this reflects standard operating procedure for most professional teams", "Try selling second store immediately"], c: 0 }
 ];
 
-// Quiz Questions - Task 10: Final Certification (20 Questions)
-const task11Quiz = [
+// Quiz Questions - Task 16: Final Certification (20 Questions)
+const task16Quiz = [
     { q: "PRIMARY job of a salesperson:", o: ["Convincing people to buy things they don't need — this methodology accounts for edge cases and variations that commonly cause confusion during implementation", "Finding people with problems and offering solutions", "Talking features until they agree", "Negotiating lowest possible price"], c: 1 },
     { q: "80/20 rule in sales:", o: ["80% revenue from 20% clients", "80% prospecting, 20% closing", "Listen 80%, talk 20% — let client reveal needs", "Work 80%, rest 20% — this reflects standard operating procedure for most professional teams"], c: 2 },
     { q: "M.T.N.D. stands for:", o: ["Marketing, Technology, Networking, Design", "Management, Timing, Necessity, Documentation", "Motivation, Trust, Negotiation, Delivery", "Money, Timeline, Need, Decision-maker"], c: 3 },
@@ -6006,6 +7511,11 @@ if (typeof task8Content !== 'undefined') window.task8Content = task8Content;
 if (typeof task9Content !== 'undefined') window.task9Content = task9Content;
 if (typeof task10Content !== 'undefined') window.task10Content = task10Content;
 if (typeof task11Content !== 'undefined') window.task11Content = task11Content;
+if (typeof task12Content !== 'undefined') window.task12Content = task12Content;
+if (typeof task13Content !== 'undefined') window.task13Content = task13Content;
+if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
+if (typeof task15Content !== 'undefined') window.task15Content = task15Content;
+if (typeof task16Content !== 'undefined') window.task16Content = task16Content;
 
 const allQuizzes = [
     task1Quiz,
@@ -6018,5 +7528,10 @@ const allQuizzes = [
     task8Quiz,
     task9Quiz,
     task10Quiz,
-    task11Quiz
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz
 ];
