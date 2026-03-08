@@ -1,22 +1,7 @@
 /* Digital Heroes SOP & Training Styles - Classic Sales Edition */
 
-/* Light theme (default) */
+/* Dark theme (default) */
 :root {
-    --primary: #0F766E;
-    --primary-dark: #0D5F58;
-    --secondary: #0891B2;
-    --background: #F8FAFC;
-    --surface: #FFFFFF;
-    --surface-hover: #E2E8F0;
-    --text: #1E293B;
-    --text-muted: #64748B;
-    --danger: #EF4444;
-    --success: #22C55E;
-    --warning: #F59E0B;
-}
-
-/* Dark theme (toggle) */
-body.dark-mode {
     --primary: #14B8A6;
     --primary-dark: #0F766E;
     --secondary: #06B6D4;
@@ -25,6 +10,21 @@ body.dark-mode {
     --surface-hover: #334155;
     --text: #F8FAFC;
     --text-muted: #94A3B8;
+    --danger: #EF4444;
+    --success: #22C55E;
+    --warning: #F59E0B;
+}
+
+/* Light theme (toggle) */
+body.light-mode {
+    --primary: #0F766E;
+    --primary-dark: #0D5F58;
+    --secondary: #0891B2;
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+    --surface-hover: #E2E8F0;
+    --text: #1E293B;
+    --text-muted: #64748B;
 }
 
 /* Animation for auto-advance progress */
@@ -122,8 +122,12 @@ li {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
 }
 
-body.dark-mode .content-section {
+.content-section {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .content-section {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
 }
 
 /* Feature Boxes */
@@ -215,11 +219,11 @@ img {
 }
 
 .option-btn:hover {
-    background: #CBD5E1;
+    background: #475569;
 }
 
-body.dark-mode .option-btn:hover {
-    background: #475569;
+body.light-mode .option-btn:hover {
+    background: #CBD5E1;
 }
 
 .option-btn.selected {
@@ -230,15 +234,15 @@ body.dark-mode .option-btn:hover {
 
 /* Study Guide */
 .study-guide {
-    background: linear-gradient(to right, #F1F5F9, #E2E8F0);
+    background: linear-gradient(to right, rgba(15, 23, 42, 1), rgba(30, 41, 59, 1));
     border: 1px solid var(--surface-hover);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 2rem;
 }
 
-body.dark-mode .study-guide {
-    background: linear-gradient(to right, rgba(15, 23, 42, 1), rgba(30, 41, 59, 1));
+body.light-mode .study-guide {
+    background: linear-gradient(to right, #F1F5F9, #E2E8F0);
 }
 
 .study-guide h4 {
@@ -378,14 +382,14 @@ body.dark-mode .study-guide {
 
 /* Progress Bar */
 .progress-container {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.2);
     border: 1px solid var(--surface-hover);
     border-radius: 12px;
     padding: 16px;
 }
 
-body.dark-mode .progress-container {
-    background: rgba(0, 0, 0, 0.2);
+body.light-mode .progress-container {
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .progress-header {
@@ -399,13 +403,13 @@ body.dark-mode .progress-container {
 
 .progress-bar {
     height: 8px;
-    background: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     overflow: hidden;
 }
 
-body.dark-mode .progress-bar {
-    background: rgba(255, 255, 255, 0.1);
+body.light-mode .progress-bar {
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .progress-fill {
@@ -435,16 +439,16 @@ body.dark-mode .progress-bar {
 }
 
 .task-card:hover:not(.locked) {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.05);
     border-color: var(--surface-hover);
 }
 
-body.dark-mode .task-card {
-    background: rgba(255, 255, 255, 0.02);
+body.light-mode .task-card {
+    background: rgba(0, 0, 0, 0.02);
 }
 
-body.dark-mode .task-card:hover:not(.locked) {
-    background: rgba(255, 255, 255, 0.05);
+body.light-mode .task-card:hover:not(.locked) {
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .task-card.current {
