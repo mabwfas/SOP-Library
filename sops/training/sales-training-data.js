@@ -7517,6 +7517,23 @@ if (typeof task14Content !== 'undefined') window.task14Content = task14Content;
 if (typeof task15Content !== 'undefined') window.task15Content = task15Content;
 if (typeof task16Content !== 'undefined') window.task16Content = task16Content;
 
+if (typeof task1Quiz !== 'undefined') window.task1Quiz = task1Quiz;
+if (typeof task2Quiz !== 'undefined') window.task2Quiz = task2Quiz;
+if (typeof task3Quiz !== 'undefined') window.task3Quiz = task3Quiz;
+if (typeof task4Quiz !== 'undefined') window.task4Quiz = task4Quiz;
+if (typeof task5Quiz !== 'undefined') window.task5Quiz = task5Quiz;
+if (typeof task6Quiz !== 'undefined') window.task6Quiz = task6Quiz;
+if (typeof task7Quiz !== 'undefined') window.task7Quiz = task7Quiz;
+if (typeof task8Quiz !== 'undefined') window.task8Quiz = task8Quiz;
+if (typeof task9Quiz !== 'undefined') window.task9Quiz = task9Quiz;
+if (typeof task10Quiz !== 'undefined') window.task10Quiz = task10Quiz;
+if (typeof task11Quiz !== 'undefined') window.task11Quiz = task11Quiz;
+if (typeof task12Quiz !== 'undefined') window.task12Quiz = task12Quiz;
+if (typeof task13Quiz !== 'undefined') window.task13Quiz = task13Quiz;
+if (typeof task14Quiz !== 'undefined') window.task14Quiz = task14Quiz;
+if (typeof task15Quiz !== 'undefined') window.task15Quiz = task15Quiz;
+if (typeof task16Quiz !== 'undefined') window.task16Quiz = task16Quiz;
+
 const allQuizzes = [
     task1Quiz,
     task2Quiz,
