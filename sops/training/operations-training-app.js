@@ -223,20 +223,12 @@ function renderQuestion() {
     const q = quiz[currentQuestion];
     const totalQuestions = window.currentQuiz.length;
 
-    // Shuffle options with tracking
-    const optionsWithIndex = q.options.map((opt, idx) => ({ text: opt, originalIndex: idx })); // My data used 'options', PM used 'o'.
-    // Adjust for format differences if needed.
-    // My data: { question: "", options: [], correct: 0 }
-    // PM data: { q: "", o: [], c: 0 }
-    // I will standardize on my data format or PM format.
-    // My written `operations-training-data.js` used `options` and `correct`.
-
-    // Let's normalize
+    // Normalize quiz data format (supports both { q, o, c } and { question, options, correct })
     let normalizedOptions = q.options || q.o;
     let normalizedQuestion = q.question || q.q;
 
-    const optionsWithIndexFixed = normalizedOptions.map((opt, idx) => ({ text: opt, originalIndex: idx }));
-    const shuffledOptions = [...optionsWithIndexFixed].sort(() => Math.random() - 0.5);
+    const optionsWithIndex = normalizedOptions.map((opt, idx) => ({ text: opt, originalIndex: idx }));
+    const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
     window.currentOptions = shuffledOptions;
 
     let html = `
