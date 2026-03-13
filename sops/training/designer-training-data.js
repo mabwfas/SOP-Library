@@ -1,6 +1,6 @@
 // UI/UX Designer Training Data - COMPLETE OVERHAUL
 // Digital Heroes Certification Program
-// 12 Tasks, 150+ Quiz Questions, Premium Design Standard
+// 18 Tasks, 200+ Quiz Questions, Premium Design Standard
 
 const trainingTasks = [
     { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
@@ -138,6 +138,66 @@ const trainingTasks = [
     },
     {
         id: 13,
+        title: "Shopify Store Design",
+        description: "Theme Customization & E-Commerce Patterns",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 60 min",
+            "🎨 Dawn Theme Architecture & Sections",
+            "🛍️ E-Commerce Design Patterns",
+            "🎯 Color Psychology for Store Conversions"
+        ]
+    },
+    {
+        id: 14,
+        title: "Client Revisions",
+        description: "Feedback & Scope Management",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "💬 Handling Vague & Harsh Feedback",
+            "📋 Scope Creep Prevention",
+            "🎨 Presenting Design Options Effectively"
+        ]
+    },
+    {
+        id: 15,
+        title: "Design Systems",
+        description: "Component Libraries & Style Guides",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 60 min",
+            "🧩 Building Reusable Components",
+            "📖 Creating Living Style Guides",
+            "🤝 Developer Handoff Best Practices"
+        ]
+    },
+    {
+        id: 16,
+        title: "Motion & Micro-interactions",
+        description: "Animation & Delight",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "✨ Hover Effects & Loading Animations",
+            "📜 Scroll Animations & Parallax",
+            "🎬 Lottie & Performance Optimization"
+        ]
+    },
+    {
+        id: 17,
+        title: "Career Growth",
+        description: "Portfolio & Certification Path",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "📈 Design Career Progression",
+            "💼 Portfolio Building Strategies",
+            "🏆 Industry Certifications & Growth"
+        ]
+    },
+    {
+        id: 18,
         title: "AI & Tools",
         description: "Workflow Acceleration",
         contentFirst: true,
@@ -4255,7 +4315,706 @@ const task12Content = `
 `;
 
 const task13Content = `
-<h2>📚 TASK 13: AI &amp; TOOLS FOR BRANDING</h2>
+<h2>🛍️ TASK 13: SHOPIFY STORE DESIGN &amp; THEME CUSTOMIZATION</h2>
+<p><em>You have been assigned to design and customize a Shopify store for a DTC skincare brand. This task covers Shopify-specific design patterns, Dawn theme architecture, section-based design, and color psychology tailored for e-commerce conversion. Every design decision must drive revenue.</em></p>
+
+<div class="highlight-box">
+    <h4>Why Shopify Design Matters at Digital Heroes</h4>
+    <p>Shopify powers over 4 million online stores worldwide. As a DH designer, the majority of your client projects will involve Shopify store design or redesign. Understanding Shopify's unique architecture &mdash; sections, blocks, metafields, and theme settings &mdash; separates a generic web designer from a high-value e-commerce designer. <strong>A well-designed Shopify store can increase conversion rates by 30-50%.</strong></p>
+</div>
+
+<div class="content-section">
+    <h3>🏗️ Part 1: Shopify Theme Architecture</h3>
+    <p>Shopify themes are built on a section-based architecture. Unlike traditional websites where every page is custom-coded, Shopify uses reusable, configurable sections that merchants can rearrange through the theme editor. As a designer, you must design WITH this architecture, not against it.</p>
+
+    <h4>Dawn Theme: The Foundation</h4>
+    <p>Dawn is Shopify's default reference theme, built with performance and flexibility in mind. It uses semantic HTML, minimal JavaScript, and CSS custom properties. Most custom themes at DH are either built on Dawn or heavily inspired by its patterns.</p>
+
+    <table>
+        <thead><tr><th>Dawn Feature</th><th>Design Implication</th><th>Designer Action</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Section-based layout</strong></td><td>Every page is assembled from reusable sections</td><td>Design sections as self-contained modules, not page-specific layouts</td></tr>
+            <tr><td><strong>Blocks within sections</strong></td><td>Sections contain configurable blocks (text, image, button)</td><td>Design block variations that work in any combination</td></tr>
+            <tr><td><strong>Theme settings</strong></td><td>Global colors, fonts, spacing controlled by merchant</td><td>Use design tokens &mdash; never hardcode colors in section designs</td></tr>
+            <tr><td><strong>Predictive search</strong></td><td>Real-time search results as user types</td><td>Design the search dropdown with product thumbnails and categories</td></tr>
+            <tr><td><strong>Media with aspect ratios</strong></td><td>Images must work at multiple aspect ratios</td><td>Test designs with square, portrait, and landscape product images</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Section Types You Must Design</h4>
+    <table>
+        <thead><tr><th>Section</th><th>Purpose</th><th>Key Design Elements</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Announcement bar</strong></td><td>Promotions, shipping thresholds</td><td>Dismissible, auto-rotate messages, contrasting background</td></tr>
+            <tr><td><strong>Header</strong></td><td>Navigation, logo, cart, search</td><td>Sticky behavior, mega menu for collections, mobile hamburger</td></tr>
+            <tr><td><strong>Slideshow / Hero</strong></td><td>Brand story, seasonal campaigns</td><td>Full-bleed imagery, overlay text with CTA, mobile-optimized</td></tr>
+            <tr><td><strong>Featured collection</strong></td><td>Showcase best sellers</td><td>4-8 products, quick-add button, hover states with second image</td></tr>
+            <tr><td><strong>Rich text</strong></td><td>Brand story, value propositions</td><td>Centered layout, icon + text pairs, background color options</td></tr>
+            <tr><td><strong>Image with text</strong></td><td>Feature highlights, testimonials</td><td>50/50 split, alternating image side, mobile stack order</td></tr>
+            <tr><td><strong>Product page</strong></td><td>The conversion page</td><td>Gallery, variant selector, buy box, trust badges, reviews</td></tr>
+            <tr><td><strong>Collection page</strong></td><td>Browsing and filtering</td><td>Grid/list toggle, sidebar filters, sort options, pagination</td></tr>
+            <tr><td><strong>Cart drawer</strong></td><td>Side-sliding cart</td><td>Upsell section, quantity editor, free shipping progress bar</td></tr>
+            <tr><td><strong>Footer</strong></td><td>Secondary navigation, trust</td><td>Newsletter signup, payment icons, social links, legal links</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🎨 Part 2: Color Psychology for E-Commerce</h3>
+    <p>Color choices in e-commerce directly impact purchasing behavior. This goes beyond aesthetics &mdash; specific colors trigger specific psychological responses that either encourage or discourage buying.</p>
+
+    <h4>Industry-Specific Color Strategies</h4>
+    <table>
+        <thead><tr><th>Industry</th><th>Primary Palette</th><th>CTA Color</th><th>Psychology</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Skincare / Beauty</strong></td><td>Soft pinks, sage greens, cream</td><td>Warm coral or deep green</td><td>Natural, gentle, trustworthy</td></tr>
+            <tr><td><strong>Fashion / Luxury</strong></td><td>Black, white, gold accents</td><td>Black or dark contrast</td><td>Exclusivity, sophistication</td></tr>
+            <tr><td><strong>Health / Wellness</strong></td><td>Blues, greens, white</td><td>Vibrant green or teal</td><td>Calm, healing, professional</td></tr>
+            <tr><td><strong>Tech / Electronics</strong></td><td>Dark grays, electric blue</td><td>Bright blue or orange</td><td>Innovation, precision, trust</td></tr>
+            <tr><td><strong>Food / Beverage</strong></td><td>Warm earth tones, reds</td><td>Red or warm orange</td><td>Appetite, warmth, energy</td></tr>
+            <tr><td><strong>Kids / Toys</strong></td><td>Bright primaries, pastels</td><td>Bright yellow or red</td><td>Fun, playful, energetic</td></tr>
+        </tbody>
+    </table>
+
+    <h4>The CTA Color Rule</h4>
+    <div class="warning-box">
+        <h4>Critical: CTA Contrast</h4>
+        <p>Your primary CTA (Add to Cart, Buy Now, Shop Now) must have the <strong>highest visual contrast</strong> on the page. It should be the first thing a user's eye is drawn to. Common mistake: using a CTA color that blends with the brand palette. The CTA should <strong>break the palette</strong> &mdash; if your brand is pastel, your CTA should be bold. If your brand is dark, your CTA should be bright. Test: squint at your page. Can you still see the CTA? If not, it needs more contrast.</p>
+    </div>
+
+    <h4>Shopify Theme Settings Color Architecture</h4>
+    <p>When designing for Shopify, organize colors into a systematic hierarchy that maps to theme settings:</p>
+    <ul>
+        <li><strong>Background colors:</strong> Primary background, secondary background (for alternating sections), overlay background</li>
+        <li><strong>Text colors:</strong> Heading color, body text color, muted text color, link color</li>
+        <li><strong>Accent colors:</strong> Primary accent (CTAs, active states), secondary accent (badges, tags)</li>
+        <li><strong>Functional colors:</strong> Success (green), error (red), warning (amber), info (blue)</li>
+        <li><strong>Border and divider:</strong> Subtle borders for cards, dividers between sections</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🧩 Part 3: Designing Sections as Modules</h3>
+    <p>The key mindset shift for Shopify design: you are not designing pages. You are designing a <strong>library of configurable sections</strong> that merchants assemble into pages. Each section must work independently, look great in any order, and support merchant customization.</p>
+
+    <h4>Section Design Checklist</h4>
+    <ul>
+        <li>Does this section work on its own, without the sections above and below it?</li>
+        <li>Have I designed variants for different content lengths (short headline vs. long headline)?</li>
+        <li>Does the section support optional elements (hide the button, hide the subtitle)?</li>
+        <li>Have I tested with real product images of different aspect ratios?</li>
+        <li>Does the mobile version maintain visual hierarchy and readability?</li>
+        <li>Have I defined the color scheme options (light background, dark background, accent background)?</li>
+        <li>Does the section have enough vertical padding (minimum 60px desktop, 40px mobile)?</li>
+    </ul>
+
+    <h4>Common Shopify Design Mistakes</h4>
+    <div class="warning-box">
+        <h4>Avoid These Pitfalls</h4>
+        <ul>
+            <li><strong>Designing only for perfect content:</strong> Real stores have products with 3-word titles and 30-word titles. Test both.</li>
+            <li><strong>Ignoring empty states:</strong> What happens when a collection has zero products? When the cart is empty?</li>
+            <li><strong>Forgetting sale prices:</strong> Product cards need a compare-at-price design (strikethrough + sale price).</li>
+            <li><strong>Fixed image ratios:</strong> Products come in all shapes &mdash; design for square, portrait, and landscape.</li>
+            <li><strong>Not designing the cart drawer:</strong> 60%+ of stores use a slide-out cart. This is a high-conversion touchpoint.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #10B981; margin-top: 0;">🎯 Task 13 Quiz</h3>
+    <p>Test your understanding of Shopify store design, theme architecture, and color psychology for e-commerce.</p>
+    <ul>
+        <li>📝 12 questions about Shopify Design &amp; Theme Customization</li>
+        <li>🎯 Score <strong>10/12</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task13Quiz = [
+    { q: "Shopify's Dawn theme uses a section-based architecture. What does this mean for designers?", o: ["Design each page as a unique layout from scratch", "Design reusable, self-contained modules that merchants can rearrange through the theme editor", "Only design the homepage and let Shopify auto-generate other pages", "Design only mobile versions since Dawn is mobile-only"], c: 1 },
+    { q: "When designing a featured collection section for Shopify, the product card hover state should:", o: ["Display a pop-up modal with full product details for maximum information", "Show a second product image and a quick-add button — increasing engagement without leaving the page", "Remove the product image to show only text details", "Navigate immediately to the product page without any hover indication"], c: 1 },
+    { q: "In Shopify theme settings, why should designers use design tokens (color variables) instead of hardcoded hex values?", o: ["Hardcoded values load faster than variables", "Design tokens create a single source of truth — changing the primary color updates it everywhere simultaneously", "Shopify requires tokens for theme store approval only", "Tokens are only useful for developers, not designers"], c: 1 },
+    { q: "A skincare brand's CTA button uses the same soft pink as the brand palette. The problem is:", o: ["Pink is unprofessional for CTAs in the beauty industry", "The CTA blends with the palette instead of breaking it — primary CTAs need the highest visual contrast on the page", "Skincare brands should always use green CTAs for natural association", "There is no problem — matching CTAs to brand colors is best practice"], c: 1 },
+    { q: "When designing Shopify sections as modules, which of these is most important?", o: ["Each section should only work on the homepage for consistency", "Each section must work independently, look great in any order, and support merchant customization", "Sections should share visual dependencies with adjacent sections for flow", "Sections should be fixed-width to prevent layout issues"], c: 1 },
+    { q: "A Shopify product page design that only accounts for products with square images will fail because:", o: ["Square images load slower than other aspect ratios", "Real stores have products in square, portrait, and landscape — the design must handle all aspect ratios gracefully", "Shopify only supports landscape images natively", "Square images reduce conversion rates compared to portrait"], c: 1 },
+    { q: "The 60-30-10 color rule applied to an e-commerce store means:", o: ["60% text, 30% images, 10% whitespace on every page", "60% dominant color (background), 30% secondary color (cards/sections), 10% accent color (CTAs/highlights)", "60% above the fold, 30% product section, 10% footer content", "60% dark mode, 30% light mode, 10% brand colors"], c: 1 },
+    { q: "Designing a Shopify cart drawer (slide-out cart) is critical because:", o: ["Cart drawers are required by Shopify theme guidelines", "60%+ of stores use slide-out carts — it is a high-conversion touchpoint where upsells and free shipping thresholds increase AOV", "Cart drawers replace the need for a dedicated cart page entirely", "Slide-out carts are only needed for mobile experiences"], c: 1 },
+    { q: "An announcement bar section should be designed with:", o: ["A fixed height that cannot be dismissed by the user", "Dismissible behavior, auto-rotating messages, and a contrasting background that stands out from the header", "The same background color as the header for seamless appearance", "Only text content with no close button since promotions should always be visible"], c: 1 },
+    { q: "When testing a Shopify section design, which content variation is most commonly overlooked?", o: ["Products with sale/compare-at prices showing strikethrough plus sale price styling", "Products with blue-toned imagery", "Products that are in stock versus backordered", "Products with exactly four reviews"], c: 0 },
+    { q: "The Shopify predictive search dropdown should be designed to include:", o: ["Only a text list of matching product names for simplicity", "Product thumbnails, category labels, and suggested results — giving users visual confirmation of matches", "A full-page overlay replacing the current page content", "Autocomplete text only without any visual product previews"], c: 1 },
+    { q: "Shopify mega menu navigation for a store with 50+ products across 8 collections should:", o: ["List all 50 products in the dropdown for maximum visibility", "Organize collections with clear categories, featured images, and promotional banners — reducing clicks to find products", "Use only a simple text dropdown since images slow navigation", "Hide collections behind a search-only interface"], c: 1 }
+];
+
+const task14Content = `
+<h2>💬 TASK 14: CLIENT REVISION MANAGEMENT</h2>
+<p><em>You have delivered the first round of mockups for a client's Shopify store redesign. The client responds with vague feedback, conflicting stakeholder opinions, and requests that expand beyond the original scope. How you handle this moment determines whether the project succeeds or spirals. This task teaches you the professional framework for managing revisions at Digital Heroes.</em></p>
+
+<div class="highlight-box">
+    <h4>Why Revision Management is a Core Skill</h4>
+    <p>Design talent gets you hired. <strong>Revision management keeps you employed.</strong> At DH, designers who handle feedback gracefully, set clear boundaries, and guide clients toward better decisions are the ones who earn repeat projects and advance fastest. Poor revision management leads to endless loops, scope creep, team burnout, and unprofitable projects.</p>
+</div>
+
+<div class="content-section">
+    <h3>📋 Part 1: The DH Revision Framework</h3>
+    <p>Every project at Digital Heroes follows a structured revision process. Understanding this framework prevents the chaos that comes from ad-hoc feedback loops.</p>
+
+    <h4>Standard Revision Allocation</h4>
+    <table>
+        <thead><tr><th>Project Type</th><th>Included Revisions</th><th>Revision Scope</th><th>Additional Rounds</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Store Design (Full)</strong></td><td>3 rounds</td><td>Layout, color, typography, imagery</td><td>Quoted separately per round</td></tr>
+            <tr><td><strong>Landing Page</strong></td><td>2 rounds</td><td>Layout, content, CTA placement</td><td>Quoted per round</td></tr>
+            <tr><td><strong>Banner / Asset</strong></td><td>2 rounds</td><td>Visual adjustments</td><td>Quoted per asset</td></tr>
+            <tr><td><strong>Logo / Branding</strong></td><td>3 rounds</td><td>Concept, refinement, finalization</td><td>New concept quoted separately</td></tr>
+        </tbody>
+    </table>
+
+    <h4>The Feedback Collection Process</h4>
+    <ol>
+        <li><strong>Present &mdash; Never Just Send:</strong> Walk the client through the design with a brief explanation of WHY you made each decision. Context prevents knee-jerk reactions.</li>
+        <li><strong>Consolidate Feedback:</strong> Request ALL feedback from ALL stakeholders in ONE document. Never accept drip-fed feedback over days.</li>
+        <li><strong>Clarify Vague Requests:</strong> "I don't like the colors" becomes "Which specific colors feel wrong? What colors do you associate with your brand?"</li>
+        <li><strong>Categorize Changes:</strong> Sort feedback into Must-Do (affects conversion), Nice-to-Have (aesthetic preference), and Out-of-Scope (new features).</li>
+        <li><strong>Confirm Understanding:</strong> Send a summary of planned changes back to the client for approval BEFORE starting revisions.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>🛡️ Part 2: Handling Scope Creep</h3>
+    <p>Scope creep is the silent project killer. It happens when clients gradually expand requirements beyond the original agreement. Left unchecked, it transforms a profitable project into an unprofitable nightmare.</p>
+
+    <h4>Scope Creep vs. Legitimate Revision</h4>
+    <table>
+        <thead><tr><th>Legitimate Revision</th><th>Scope Creep</th></tr></thead>
+        <tbody>
+            <tr><td>"Change the hero banner color from blue to green"</td><td>"Add a custom mega menu we didn't discuss"</td></tr>
+            <tr><td>"Swap this product image for a different one"</td><td>"Design 5 additional pages not in the brief"</td></tr>
+            <tr><td>"Adjust the font size on mobile"</td><td>"Build a custom calculator widget"</td></tr>
+            <tr><td>"Move the CTA button above the fold"</td><td>"Redesign the logo while we're at it"</td></tr>
+        </tbody>
+    </table>
+
+    <h4>The Scope Creep Response Template</h4>
+    <div class="highlight-box">
+        <h4>Professional Response Formula</h4>
+        <p><strong>Step 1 &mdash; Acknowledge:</strong> "Great idea &mdash; I can see how [feature] would add value to the store."</p>
+        <p><strong>Step 2 &mdash; Clarify Scope:</strong> "This falls outside our current project scope, which covers [list original deliverables]."</p>
+        <p><strong>Step 3 &mdash; Offer Options:</strong> "I can include this as an add-on for [estimated time/cost], or we can add it to Phase 2."</p>
+        <p><strong>Step 4 &mdash; Document:</strong> Log the request and client decision in the project tracker.</p>
+    </div>
+
+    <div class="warning-box">
+        <h4>Never Say "No" &mdash; Say "Yes, And..."</h4>
+        <p>Refusing a client request creates friction. Instead, redirect: "Yes, we can do that &mdash; and here is what it would take." This positions you as collaborative while protecting project boundaries. The client feels heard, and the agency's profitability is maintained.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎨 Part 3: Presenting Design Options</h3>
+    <p>How you present design options to clients dramatically impacts their response. The delivery method matters as much as the design itself.</p>
+
+    <h4>The 3-Option Presentation Strategy</h4>
+    <table>
+        <thead><tr><th>Option</th><th>Purpose</th><th>Description</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Option A (Safe)</strong></td><td>Closest to client's brief</td><td>Follows instructions literally. Client sees their vision executed.</td></tr>
+            <tr><td><strong>Option B (Recommended)</strong></td><td>Your professional recommendation</td><td>Elevates the brief with design expertise. Mark as "Recommended."</td></tr>
+            <tr><td><strong>Option C (Bold)</strong></td><td>Creative stretch</td><td>Pushes boundaries. Shows what is possible. Often wins the client over.</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Presentation Do's and Don'ts</h4>
+    <ul>
+        <li><strong>DO</strong> present on a video call or screen share, not just a link dump.</li>
+        <li><strong>DO</strong> explain the business rationale behind design decisions.</li>
+        <li><strong>DO</strong> show mockups in context (browser frame, device mockup).</li>
+        <li><strong>DO</strong> share a clickable Figma prototype when possible.</li>
+        <li><strong>DON'T</strong> ask "Do you like it?" &mdash; ask "Does this achieve your goals?"</li>
+        <li><strong>DON'T</strong> present more than 3 options (decision paralysis).</li>
+        <li><strong>DON'T</strong> present work you are not proud of as filler.</li>
+        <li><strong>DON'T</strong> apologize for your design before presenting it.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📦 Part 4: Mockup Delivery Standards</h3>
+    <p>At DH, every design delivery follows a consistent format. This professionalism builds trust and reduces back-and-forth questions.</p>
+
+    <h4>Delivery Package Contents</h4>
+    <ul>
+        <li><strong>Figma Link:</strong> View-only for client, edit access for team.</li>
+        <li><strong>Presentation Deck:</strong> Key screens in device mockups with annotations.</li>
+        <li><strong>Change Log:</strong> What changed since the last version (v1 &rarr; v2 &rarr; v3).</li>
+        <li><strong>Questions for Client:</strong> Any decisions that need client input before proceeding.</li>
+        <li><strong>Timeline Update:</strong> Where we are in the project timeline, next milestones.</li>
+    </ul>
+
+    <h4>Version Naming Convention</h4>
+    <table>
+        <thead><tr><th>Stage</th><th>Naming</th><th>Example</th></tr></thead>
+        <tbody>
+            <tr><td>First draft</td><td>v1.0</td><td>Homepage_v1.0</td></tr>
+            <tr><td>After round 1 feedback</td><td>v1.1</td><td>Homepage_v1.1</td></tr>
+            <tr><td>Major revision</td><td>v2.0</td><td>Homepage_v2.0</td></tr>
+            <tr><td>Final approved</td><td>FINAL</td><td>Homepage_FINAL</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #10B981; margin-top: 0;">🎯 Task 14 Quiz</h3>
+    <p>Test your understanding of client revision management, scope handling, and professional design delivery.</p>
+    <ul>
+        <li>📝 10 questions about Client Revision Management</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task14Quiz = [
+    { q: "A client says 'I don't like the design' with zero specifics. Your first response should be:", o: ["Start over from scratch to show you are flexible", "Ask targeted questions: 'What specifically isn't working — the colors, layout, typography, or overall style?'", "Defend your design with data on why it is objectively good", "Send three completely new concepts within 24 hours"], c: 1 },
+    { q: "A client has sent you 15 individual Slack messages with feedback over 3 days. The correct approach is:", o: ["Address each message individually as it arrives to show responsiveness", "Request consolidated feedback in one document from all stakeholders before starting any revisions", "Ignore the messages until the client sends a formal email", "Implement only the most recent message since it reflects their latest thinking"], c: 1 },
+    { q: "During revision round 2 of 3, the client asks you to redesign the logo — which was not in the original scope. You should:", o: ["Do it for free to keep the client happy since logo design is quick", "Acknowledge the idea's value, clarify it is outside scope, and offer it as a quoted add-on or Phase 2 item", "Refuse the request outright and cite the contract", "Ask the PM to handle it since scope management is not your responsibility"], c: 1 },
+    { q: "The 3-option presentation strategy recommends presenting a Safe, Recommended, and Bold option because:", o: ["More options always lead to faster decisions from clients", "It gives the client a sense of control while guiding them toward your professional recommendation", "Three is the minimum number required by DH policy", "It triples your billable design hours"], c: 1 },
+    { q: "When presenting design mockups to a client, asking 'Do you like it?' is wrong because:", o: ["Clients should never be asked questions about their own project", "'Like' is subjective — instead ask 'Does this achieve your business goals?' to ground feedback in measurable outcomes", "You should only ask yes-or-no questions in client meetings", "Asking for feedback shows lack of confidence in your work"], c: 1 },
+    { q: "A project has used all 3 included revision rounds, and the client requests a 4th. You should:", o: ["Do the extra round for free since refusing will lose the client", "Reference the project scope, explain that additional rounds are quoted separately, and provide a cost estimate", "Tell the client to approve the current version as-is", "Ask a junior designer to handle the extra round to save time"], c: 1 },
+    { q: "Client feedback says 'Make it pop more.' The professional response is:", o: ["Add drop shadows, gradients, and bright colors everywhere", "Clarify by asking: 'Should I increase color contrast, add animation, change the typography weight, or adjust the imagery?'", "Ignore vague feedback and wait for something actionable", "Increase the font size on all elements by 20%"], c: 1 },
+    { q: "Before starting any revision work, you should always:", o: ["Jump straight into Figma to show fast turnaround", "Send a summary of planned changes back to the client for approval to prevent misinterpretation", "Wait at least 48 hours for additional feedback to trickle in", "Redesign the entire page since partial changes create inconsistency"], c: 1 },
+    { q: "A version naming convention (v1.0, v1.1, v2.0, FINAL) prevents:", o: ["Figma performance issues from too many frames", "Confusion about which version is approved — ensuring designers, clients, and developers reference the same file", "Clients requesting too many revisions by seeing the version count", "Legal issues related to file naming standards"], c: 1 },
+    { q: "When PM and client give contradicting revision feedback, you should:", o: ["Follow the client since they are paying for the project", "Follow the PM since they represent the agency's interests", "Clarify with both parties together — misalignment causes revision loops, alignment prevents wasted work", "Pick whichever direction is faster to implement"], c: 2 }
+];
+
+const task15Content = `
+<h2>🧩 TASK 15: DESIGN SYSTEMS &amp; COMPONENT LIBRARIES</h2>
+<p><em>Your DH team is scaling, and multiple designers are working on the same client brand across web, mobile, and marketing assets. Without a shared design system, each designer makes slightly different buttons, cards, and color choices. This task teaches you to build and maintain design systems that enforce brand consistency and accelerate production.</em></p>
+
+<div class="highlight-box">
+    <h4>Design Systems: The Multiplier Effect</h4>
+    <p>A well-built design system is the single highest-leverage investment a design team can make. It eliminates redundant decision-making, enforces consistency across projects, reduces onboarding time for new designers, and creates a shared language between design and development. <strong>Teams with mature design systems ship 3-5x faster than teams without one.</strong></p>
+</div>
+
+<div class="content-section">
+    <h3>📐 Part 1: Anatomy of a Design System</h3>
+    <p>A design system is more than a component library. It is a comprehensive collection of reusable elements, guidelines, and principles that govern how a brand appears across all touchpoints.</p>
+
+    <h4>Design System Layers</h4>
+    <table>
+        <thead><tr><th>Layer</th><th>Contains</th><th>Example</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Design Tokens</strong></td><td>Primitive values: colors, spacing, typography, shadows</td><td>Primary: #2563EB, Spacing-md: 16px, Font-heading: Inter Bold</td></tr>
+            <tr><td><strong>Foundation</strong></td><td>Grid, breakpoints, elevation, iconography rules</td><td>12-column grid, 1440/768/375 breakpoints, 3 shadow levels</td></tr>
+            <tr><td><strong>Components</strong></td><td>Reusable UI elements with states and variants</td><td>Button (primary/secondary/ghost), Card, Input, Badge</td></tr>
+            <tr><td><strong>Patterns</strong></td><td>Combinations of components solving specific problems</td><td>Product card, navigation bar, checkout form, modal dialog</td></tr>
+            <tr><td><strong>Templates</strong></td><td>Full page layouts using patterns and components</td><td>Homepage template, PDP template, collection template</td></tr>
+            <tr><td><strong>Documentation</strong></td><td>Usage guidelines, do/don't examples, accessibility notes</td><td>"Use primary button for one main action per screen"</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Design Tokens: The Foundation</h4>
+    <p>Design tokens are the smallest unit of a design system. They store visual design decisions as named variables that can be shared between design tools and code.</p>
+    <table>
+        <thead><tr><th>Token Category</th><th>Naming Convention</th><th>Examples</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Color</strong></td><td>color-{role}-{variant}</td><td>color-primary-500, color-text-muted, color-bg-surface</td></tr>
+            <tr><td><strong>Spacing</strong></td><td>space-{size}</td><td>space-xs (4px), space-sm (8px), space-md (16px), space-lg (24px)</td></tr>
+            <tr><td><strong>Typography</strong></td><td>font-{role}-{property}</td><td>font-heading-size (32px), font-body-weight (400)</td></tr>
+            <tr><td><strong>Border Radius</strong></td><td>radius-{size}</td><td>radius-sm (4px), radius-md (8px), radius-full (9999px)</td></tr>
+            <tr><td><strong>Shadow</strong></td><td>shadow-{level}</td><td>shadow-sm, shadow-md, shadow-lg</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🧱 Part 2: Building Components in Figma</h3>
+    <p>Components are the building blocks of your design system. Every component must be built with variants, auto-layout, and proper constraints to handle real-world content.</p>
+
+    <h4>Component Anatomy</h4>
+    <p>Every well-built component includes these properties:</p>
+    <ul>
+        <li><strong>Variants:</strong> Size (sm/md/lg), type (primary/secondary/ghost), state (default/hover/active/disabled/loading)</li>
+        <li><strong>Auto Layout:</strong> Responsive padding, gap, alignment rules built in</li>
+        <li><strong>Slot Pattern:</strong> Swappable icon/image slots using component instances</li>
+        <li><strong>Text Overrides:</strong> All text layers should be overridable without breaking layout</li>
+        <li><strong>Boolean Properties:</strong> Show/hide optional elements (icon, badge, subtitle)</li>
+    </ul>
+
+    <h4>Essential Component Library</h4>
+    <table>
+        <thead><tr><th>Component</th><th>Variants Needed</th><th>States Required</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Button</strong></td><td>Primary, Secondary, Ghost, Destructive / Sm, Md, Lg</td><td>Default, Hover, Active, Disabled, Loading</td></tr>
+            <tr><td><strong>Input Field</strong></td><td>Text, Password, Search, Textarea / With/Without label</td><td>Default, Focus, Error, Disabled, Filled</td></tr>
+            <tr><td><strong>Card</strong></td><td>Product, Content, Testimonial, Feature</td><td>Default, Hover, Selected</td></tr>
+            <tr><td><strong>Badge</strong></td><td>Status, Category, Count / Color variants</td><td>Default only</td></tr>
+            <tr><td><strong>Navigation</strong></td><td>Desktop header, Mobile header, Sidebar, Breadcrumb</td><td>Default, Active, Expanded</td></tr>
+            <tr><td><strong>Modal</strong></td><td>Small, Medium, Large / With/Without footer</td><td>Open, Closing animation</td></tr>
+            <tr><td><strong>Toast/Alert</strong></td><td>Success, Error, Warning, Info</td><td>Entering, Visible, Exiting</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📖 Part 3: Creating a Living Style Guide</h3>
+    <p>A style guide documents how to use the design system correctly. It is a living document that evolves with the brand and is shared with designers, developers, and stakeholders.</p>
+
+    <h4>Style Guide Sections</h4>
+    <ul>
+        <li><strong>Brand Overview:</strong> Mission statement, brand personality attributes, tone of voice</li>
+        <li><strong>Color Palette:</strong> Primary, secondary, accent, neutral, and functional colors with hex values, RGB, and usage guidelines</li>
+        <li><strong>Typography Scale:</strong> Font families, weight hierarchy, size scale for headings (H1-H6), body, captions, and buttons</li>
+        <li><strong>Spacing System:</strong> The base unit (e.g., 8px), scale, and rules for when to use each size</li>
+        <li><strong>Iconography:</strong> Icon style (outlined/filled/duotone), grid size, stroke width, corner radius</li>
+        <li><strong>Photography Style:</strong> Lighting, subject matter, color treatment, do/don't examples</li>
+        <li><strong>Component Usage:</strong> When to use each component, acceptable combinations, accessibility notes</li>
+    </ul>
+
+    <div class="warning-box">
+        <h4>Style Guide Anti-Patterns</h4>
+        <ul>
+            <li><strong>PDF style guides:</strong> Static PDFs become outdated immediately. Use Figma, Notion, or Zeroheight for living documentation.</li>
+            <li><strong>No do/don't examples:</strong> Rules without visual examples are ignored. Show correct AND incorrect usage.</li>
+            <li><strong>Missing accessibility notes:</strong> Every color combination must note its WCAG contrast ratio.</li>
+            <li><strong>Incomplete states:</strong> Showing only the default state of a button is useless. Show all interaction states.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🤝 Part 4: Developer Handoff from Design Systems</h3>
+    <p>The ultimate measure of a design system is how smoothly it translates to code. A great design system makes developer handoff nearly frictionless.</p>
+
+    <h4>Handoff Checklist</h4>
+    <table>
+        <thead><tr><th>Handoff Element</th><th>Designer Delivers</th><th>Developer Receives</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Design Tokens</strong></td><td>Named colors, spacing, typography in Figma</td><td>CSS custom properties or JSON token file</td></tr>
+            <tr><td><strong>Components</strong></td><td>Figma components with all variants and states</td><td>Component specs with props, variants, and behavior</td></tr>
+            <tr><td><strong>Responsive Rules</strong></td><td>Breakpoint-specific layouts in Figma</td><td>Breakpoint values and layout change descriptions</td></tr>
+            <tr><td><strong>Interaction Specs</strong></td><td>Figma prototypes showing transitions</td><td>Animation timing, easing, and trigger descriptions</td></tr>
+            <tr><td><strong>Assets</strong></td><td>Exported icons (SVG), images (WebP/PNG at 1x/2x)</td><td>Organized asset folder with naming convention</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #10B981; margin-top: 0;">🎯 Task 15 Quiz</h3>
+    <p>Test your understanding of design systems, component libraries, style guides, and developer handoff.</p>
+    <ul>
+        <li>📝 12 questions about Design Systems &amp; Component Libraries</li>
+        <li>🎯 Score <strong>10/12</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task15Quiz = [
+    { q: "A design system differs from a component library because:", o: ["They are the same thing — the terms are interchangeable", "A design system includes tokens, foundations, components, patterns, templates, AND documentation — a component library is just one layer", "A component library is more comprehensive than a design system", "Design systems are only for enterprise companies with 50+ designers"], c: 1 },
+    { q: "Design tokens are the smallest unit of a design system. They store:", o: ["Component layouts and page templates", "Visual design decisions as named variables (colors, spacing, typography) shared between design tools and code", "Only color values since other properties cannot be tokenized", "Developer code snippets for each component"], c: 1 },
+    { q: "A Figma button component should include which variants and states?", o: ["Just Primary and Secondary in Default state — developers add the other states", "Size (sm/md/lg), type (primary/secondary/ghost/destructive), and states (default/hover/active/disabled/loading)", "Only color variants since size and state are code concerns", "Primary Default and Primary Hover — all other combinations are unnecessary"], c: 1 },
+    { q: "Using a static PDF as a style guide is an anti-pattern because:", o: ["PDFs load too slowly in modern browsers", "PDFs become outdated immediately — living documentation in Figma, Notion, or Zeroheight stays current", "PDF format cannot display colors accurately", "PDFs are not compatible with developer workflows"], c: 1 },
+    { q: "The naming convention 'color-primary-500' is better than '#2563EB' in a design system because:", o: ["Named tokens create a semantic layer — changing the value updates everywhere, and the name communicates purpose", "Hex values are harder to type than token names", "Named tokens compress to smaller file sizes", "Hex values are deprecated in modern CSS"], c: 0 },
+    { q: "When building a Card component in Figma, boolean properties should be used for:", o: ["Toggling the card between horizontal and vertical layouts", "Show/hide optional elements like icons, badges, and subtitles without needing separate component variants", "Switching between dark mode and light mode", "Controlling the card's grid position on the page"], c: 1 },
+    { q: "A style guide that shows only the default state of a button is problematic because:", o: ["Designers only need to see default states for reference", "Developers need all interaction states (hover, active, disabled, loading) — incomplete states force developers to guess", "Showing all states makes the style guide too long to read", "Button states are automatically generated by Shopify themes"], c: 1 },
+    { q: "The slot pattern in Figma components refers to:", o: ["Fixed placeholder text that cannot be changed", "Swappable icon or image slots using nested component instances — allowing flexible content without breaking layout", "A specific Figma plugin for component management", "The order in which components appear on a page"], c: 1 },
+    { q: "For developer handoff, design tokens should be delivered as:", o: ["Screenshots of the token values from Figma", "CSS custom properties or a JSON token file that developers can integrate directly into code", "A verbal explanation during the handoff meeting", "An email listing all hex codes and font names"], c: 1 },
+    { q: "Teams with mature design systems ship 3-5x faster primarily because:", o: ["Design systems eliminate the need for design reviews", "Design systems reduce redundant decisions — designers reuse tested components instead of redesigning from scratch each time", "Design systems allow skipping the QA process", "Design systems replace the need for client feedback"], c: 1 },
+    { q: "Every color combination in a style guide must note its WCAG contrast ratio to:", o: ["Satisfy legal compliance requirements only", "Ensure text remains readable for users with vision differences — 15%+ of users are affected by low contrast", "Make the style guide appear more professional", "Allow developers to adjust colors automatically"], c: 1 },
+    { q: "An 8px spacing scale (4, 8, 16, 24, 32, 48, 64) in a design system creates:", o: ["Spacing that only works on desktop breakpoints", "Visual rhythm and mathematical consistency — every spacing value relates to the base unit, creating harmonious layouts", "Unnecessary constraints that limit creative freedom", "Problems with Shopify themes that use different spacing"], c: 1 }
+];
+
+const task16Content = `
+<h2>✨ TASK 16: MOTION DESIGN &amp; MICRO-INTERACTIONS</h2>
+<p><em>The static mockups are approved. Now it is time to bring the store to life. This task covers the art and science of motion design for e-commerce — from subtle hover effects that guide users to scroll-triggered animations that create engagement. You will learn when motion helps, when it hurts, and how to spec animations for developers.</em></p>
+
+<div class="highlight-box">
+    <h4>Motion is Communication</h4>
+    <p>Animation in UI is not decoration &mdash; it is communication. Every motion should serve a purpose: guiding attention, providing feedback, establishing spatial relationships, or creating delight. <strong>If you cannot explain WHY something moves, it should not move.</strong> Motion without purpose is distraction, and distraction kills conversions.</p>
+</div>
+
+<div class="content-section">
+    <h3>🖱️ Part 1: Hover Effects &amp; Micro-interactions</h3>
+    <p>Micro-interactions are the small, contained animations triggered by user actions. They are the difference between a store that feels static and dead versus one that feels alive and responsive.</p>
+
+    <h4>Essential E-Commerce Hover Effects</h4>
+    <table>
+        <thead><tr><th>Element</th><th>Hover Effect</th><th>Purpose</th><th>Duration</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Product card</strong></td><td>Image swap to second photo + subtle lift shadow</td><td>Shows product from another angle, indicates interactivity</td><td>200-300ms</td></tr>
+            <tr><td><strong>CTA button</strong></td><td>Background color shift + slight scale (1.02)</td><td>Confirms clickability, creates anticipation</td><td>150-200ms</td></tr>
+            <tr><td><strong>Navigation link</strong></td><td>Underline slide-in from left + color change</td><td>Indicates current hover target in dense nav</td><td>200ms</td></tr>
+            <tr><td><strong>Icon button</strong></td><td>Background circle appears + color shift</td><td>Increases target visibility for small icons</td><td>150ms</td></tr>
+            <tr><td><strong>Card container</strong></td><td>Subtle border color change + shadow elevation</td><td>Creates depth hierarchy, indicates selection</td><td>200ms</td></tr>
+            <tr><td><strong>Image gallery</strong></td><td>Zoom on hover (scale 1.05) with overflow hidden</td><td>Invites exploration, adds visual interest</td><td>300ms</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Micro-interaction Patterns</h4>
+    <ul>
+        <li><strong>Add to Cart:</strong> Button text changes to "Added!" with a checkmark icon &rarr; reverts after 2 seconds. Cart icon in header shows a +1 badge animation.</li>
+        <li><strong>Wishlist Heart:</strong> Heart fills with a scale-up bounce (1.0 &rarr; 1.3 &rarr; 1.0) and color fills from outline to solid red.</li>
+        <li><strong>Quantity Stepper:</strong> Number transitions with a vertical slide (old number slides up, new number slides in from below).</li>
+        <li><strong>Form Validation:</strong> Green checkmark fades in next to valid fields. Red shake animation (3px horizontal oscillation) for errors.</li>
+        <li><strong>Toggle Switch:</strong> Thumb slides with an elastic ease, track color transitions smoothly.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>⏳ Part 2: Loading Animations &amp; Skeleton Screens</h3>
+    <p>Perceived performance is as important as actual performance. Well-designed loading states make a 3-second load feel like 1 second.</p>
+
+    <h4>Loading State Hierarchy</h4>
+    <table>
+        <thead><tr><th>Load Time</th><th>Recommended Approach</th><th>User Perception</th></tr></thead>
+        <tbody>
+            <tr><td><strong>0-200ms</strong></td><td>No indicator needed — instant response</td><td>"It just works"</td></tr>
+            <tr><td><strong>200ms-1s</strong></td><td>Skeleton screen with shimmer animation</td><td>"Content is loading"</td></tr>
+            <tr><td><strong>1s-5s</strong></td><td>Skeleton + progress indication or status text</td><td>"It's working on it"</td></tr>
+            <tr><td><strong>5s+</strong></td><td>Branded loading animation with estimated time</td><td>"Something complex is happening"</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Skeleton Screen Design Rules</h4>
+    <ul>
+        <li>Match the actual content layout — skeleton shapes should mirror where text, images, and buttons will appear.</li>
+        <li>Use a shimmer animation (left-to-right gradient sweep) at 1.5-2 second intervals.</li>
+        <li>Skeleton color should be slightly lighter than the background (e.g., #E2E8F0 on #F8FAFC).</li>
+        <li>Never use spinning icons for content loads — spinners indicate uncertainty, skeletons indicate structure.</li>
+        <li>Transition from skeleton to real content with a subtle fade (200ms opacity transition).</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📜 Part 3: Scroll Animations &amp; Parallax</h3>
+    <p>Scroll-triggered animations create engagement as users move through a page. Used correctly, they guide attention and create narrative flow. Used incorrectly, they create jank, confusion, and accessibility issues.</p>
+
+    <h4>Scroll Animation Types</h4>
+    <table>
+        <thead><tr><th>Type</th><th>Effect</th><th>Best For</th><th>Performance Impact</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Fade In</strong></td><td>Elements appear with opacity 0 &rarr; 1 as they enter viewport</td><td>Content sections, testimonials, feature blocks</td><td>Low</td></tr>
+            <tr><td><strong>Slide Up</strong></td><td>Elements move upward 20-40px while fading in</td><td>Cards, product grids, statistics</td><td>Low</td></tr>
+            <tr><td><strong>Stagger</strong></td><td>Multiple elements animate in sequence with 50-100ms delays</td><td>Grid items, feature lists, team members</td><td>Medium</td></tr>
+            <tr><td><strong>Parallax</strong></td><td>Background moves slower than foreground during scroll</td><td>Hero sections, brand story pages</td><td>High</td></tr>
+            <tr><td><strong>Counter</strong></td><td>Numbers count up from 0 to target value</td><td>Statistics, achievements, social proof</td><td>Low</td></tr>
+            <tr><td><strong>Progress bar</strong></td><td>Bar fills as user scrolls through page section</td><td>Reading progress, form completion</td><td>Low</td></tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <h4>Scroll Animation Rules</h4>
+        <ul>
+            <li><strong>Never animate on every scroll pixel:</strong> Use Intersection Observer to trigger once when elements enter the viewport.</li>
+            <li><strong>Respect prefers-reduced-motion:</strong> Always provide a CSS media query that disables animations for users who have opted out.</li>
+            <li><strong>Keep scroll animations under 600ms:</strong> Longer animations block content reading and feel sluggish.</li>
+            <li><strong>Do not animate critical content:</strong> Product prices, Add to Cart buttons, and navigation should never animate on scroll.</li>
+            <li><strong>Test on low-end devices:</strong> Animations that run smoothly on your MacBook may stutter on budget phones.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎬 Part 4: Lottie Animations &amp; Performance</h3>
+    <p>Lottie is a JSON-based animation format that renders After Effects animations natively in browsers at a fraction of the file size of GIFs or videos.</p>
+
+    <h4>When to Use Lottie</h4>
+    <table>
+        <thead><tr><th>Use Case</th><th>Why Lottie</th><th>Alternative</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Loading spinners</strong></td><td>Smooth, scalable, tiny file size (&lt;5KB)</td><td>CSS animation for simple spinners</td></tr>
+            <tr><td><strong>Success confirmations</strong></td><td>Checkmark animation with personality</td><td>CSS transitions for basic check</td></tr>
+            <tr><td><strong>Onboarding illustrations</strong></td><td>Complex multi-step animations</td><td>Static illustrations if budget is tight</td></tr>
+            <tr><td><strong>Empty states</strong></td><td>Engaging "no results" or "empty cart" animations</td><td>Static SVG illustrations</td></tr>
+            <tr><td><strong>Brand moments</strong></td><td>Logo animations, scroll-triggered brand stories</td><td>CSS for simple transforms</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Performance Guidelines</h4>
+    <ul>
+        <li><strong>File size budget:</strong> Keep individual Lottie files under 50KB. Total page animation budget: under 200KB.</li>
+        <li><strong>Lazy load:</strong> Load Lottie files only when they enter the viewport — not on page load.</li>
+        <li><strong>Reduce complexity:</strong> Simplify After Effects compositions before export. Fewer layers = better performance.</li>
+        <li><strong>Provide fallback:</strong> Always include a static SVG fallback for browsers that do not support Lottie.</li>
+        <li><strong>Test FPS:</strong> Animation should maintain 60fps. If it drops below 30fps on mobile, simplify or replace.</li>
+    </ul>
+
+    <h4>Animation Specification for Developers</h4>
+    <p>When handing off motion specs to developers, provide:</p>
+    <table>
+        <thead><tr><th>Spec</th><th>Format</th><th>Example</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Duration</strong></td><td>Milliseconds</td><td>300ms</td></tr>
+            <tr><td><strong>Easing</strong></td><td>CSS cubic-bezier or named</td><td>ease-out or cubic-bezier(0.25, 0.1, 0.25, 1.0)</td></tr>
+            <tr><td><strong>Delay</strong></td><td>Milliseconds</td><td>100ms (for stagger: element-index * 100ms)</td></tr>
+            <tr><td><strong>Trigger</strong></td><td>Event description</td><td>On viewport entry (50% visible)</td></tr>
+            <tr><td><strong>Properties</strong></td><td>CSS properties to animate</td><td>opacity, transform (translateY, scale)</td></tr>
+            <tr><td><strong>Fill mode</strong></td><td>CSS animation-fill-mode</td><td>forwards (stay at end state)</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #10B981; margin-top: 0;">🎯 Task 16 Quiz</h3>
+    <p>Test your understanding of motion design, micro-interactions, scroll animations, and performance optimization.</p>
+    <ul>
+        <li>📝 12 questions about Motion Design &amp; Micro-interactions</li>
+        <li>🎯 Score <strong>10/12</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task16Quiz = [
+    { q: "The most important rule of motion design in UI is:", o: ["Every element on the page should have an animation for visual richness", "If you cannot explain WHY something moves, it should not move — motion without purpose is distraction", "Longer animations create more user engagement and delight", "Animations should always run continuously to keep the page feeling alive"], c: 1 },
+    { q: "A product card hover effect should include an image swap to a second photo because:", o: ["It demonstrates advanced CSS skills to clients", "It shows the product from another angle — increasing purchase confidence without requiring a click", "Secondary images load faster than primary images", "Shopify themes require a second image for product cards"], c: 1 },
+    { q: "The recommended duration for a CTA button hover effect is:", o: ["500-800ms for a smooth, noticeable transition", "150-200ms — fast enough to feel responsive, slow enough to be perceived", "50ms — hover effects should be instantaneous", "1000ms+ for a luxurious, premium feel"], c: 1 },
+    { q: "Skeleton screens are preferred over loading spinners for content loads because:", o: ["Skeleton screens reduce actual load time by pre-rendering content", "Skeletons show layout structure immediately — users perceive the page as faster because content appears to be loading in", "Spinners are deprecated in modern web standards", "Skeleton screens require less code than spinner animations"], c: 1 },
+    { q: "When implementing scroll-triggered animations, 'prefers-reduced-motion' must be respected because:", o: ["It is a legal requirement in all countries", "Some users experience motion sickness, vestibular disorders, or seizures from animations — the CSS media query disables motion for those users", "Reduced motion improves SEO rankings for all users", "It prevents animations from running on Internet Explorer"], c: 1 },
+    { q: "A scroll animation on an 'Add to Cart' button that delays its visibility is problematic because:", o: ["Add to Cart buttons should use Lottie instead of scroll animations", "Critical conversion elements (prices, CTAs, navigation) should never animate on scroll — they must be immediately usable", "Scroll animations on buttons cause JavaScript errors", "Add to Cart animations slow down Shopify's checkout process"], c: 1 },
+    { q: "Lottie animations are preferred over GIFs for UI animations because:", o: ["GIFs support transparency while Lottie does not", "Lottie renders as vector (scalable, crisp at any size), supports interactivity, and has tiny file sizes compared to GIFs", "Lottie animations play automatically while GIFs require user interaction", "GIF format has been deprecated by all modern browsers"], c: 1 },
+    { q: "The stagger animation pattern (elements animate in sequence with 50-100ms delays) is best for:", o: ["Hero section headlines that need immediate attention", "Grid items, feature lists, or team member cards — creating a rhythmic reveal that guides the eye through content", "Single CTA buttons that need emphasis", "Background images that need parallax depth"], c: 1 },
+    { q: "When specifying animation handoff to developers, 'easing: ease-out' means:", o: ["The animation maintains constant speed throughout", "The animation starts fast and decelerates — creating a natural, physics-based deceleration feel", "The animation starts slow and accelerates to the end", "The animation bounces at the end of the transition"], c: 1 },
+    { q: "A Lottie file exceeding 200KB on a single page indicates:", o: ["Normal file size for a high-quality animation", "The animation is too complex — simplify the After Effects composition, reduce layers, and optimize paths", "The Lottie library needs to be updated", "The animation should be converted to a GIF instead"], c: 1 },
+    { q: "The shimmer animation on skeleton screens should cycle at:", o: ["Every 200ms for rapid visual feedback", "1.5-2 second intervals — slow enough to feel intentional, fast enough to indicate activity", "Every 5 seconds to minimize performance impact", "Continuously without pause for maximum perceived speed"], c: 1 },
+    { q: "Parallax scroll effects have 'High' performance impact because:", o: ["They require large image files that slow page loading", "Background repositioning on every scroll event triggers expensive repaints — must be GPU-accelerated with transform instead of top/left", "Parallax effects increase the total page weight by 50%", "They are not supported by Safari without polyfills"], c: 1 }
+];
+
+const task17Content = `
+<h2>📈 TASK 17: CAREER GROWTH &amp; CERTIFICATION</h2>
+<p><em>You have built technical skills across 16 tasks. Now it is time to think about your trajectory. This task covers the design career path at Digital Heroes, portfolio strategies that win client projects, industry certifications worth pursuing, and the soft skills that separate senior designers from juniors.</em></p>
+
+<div class="highlight-box">
+    <h4>Your Career is Your Responsibility</h4>
+    <p>Digital Heroes provides the training, mentorship, and opportunities. But your career trajectory is determined by YOUR initiative. The designers who advance fastest are the ones who proactively build their portfolio, seek feedback, learn adjacent skills, and position themselves as indispensable. <strong>Talent gets you in the door. Consistency and growth keep you climbing.</strong></p>
+</div>
+
+<div class="content-section">
+    <h3>🪜 Part 1: The DH Design Career Path</h3>
+    <p>Digital Heroes has a structured progression path for designers. Each level has clear expectations, responsibilities, and compensation benchmarks.</p>
+
+    <h4>Career Progression Ladder</h4>
+    <table>
+        <thead><tr><th>Level</th><th>Title</th><th>Key Responsibilities</th><th>Timeline</th></tr></thead>
+        <tbody>
+            <tr><td><strong>L1</strong></td><td>Junior Designer</td><td>Execute designs from briefs, follow style guides, learn tools and processes</td><td>0-6 months</td></tr>
+            <tr><td><strong>L2</strong></td><td>Designer</td><td>Own full page designs, handle client revisions, contribute to design system</td><td>6-18 months</td></tr>
+            <tr><td><strong>L3</strong></td><td>Senior Designer</td><td>Lead store designs end-to-end, mentor juniors, drive design QA standards</td><td>18-36 months</td></tr>
+            <tr><td><strong>L4</strong></td><td>Lead Designer</td><td>Define design direction for major accounts, build team processes, client strategy</td><td>3-5 years</td></tr>
+            <tr><td><strong>L5</strong></td><td>Design Director</td><td>Set agency design vision, hire and grow team, represent DH at industry level</td><td>5+ years</td></tr>
+        </tbody>
+    </table>
+
+    <h4>What Gets You Promoted</h4>
+    <ul>
+        <li><strong>Consistency:</strong> Delivering quality work on time, every time. Not occasional brilliance followed by missed deadlines.</li>
+        <li><strong>Initiative:</strong> Suggesting improvements before being asked. Volunteering for challenging projects.</li>
+        <li><strong>Mentorship:</strong> Helping teammates grow. The best way to prove you are senior is to make others better.</li>
+        <li><strong>Business Impact:</strong> Connecting your design decisions to revenue outcomes. "This layout change increased conversions by 15%."</li>
+        <li><strong>Cross-functional Skills:</strong> Understanding development constraints, content strategy, and marketing goals.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>💼 Part 2: Portfolio Building Strategies</h3>
+    <p>Your portfolio is your resume. Clients and hiring managers spend an average of 30 seconds on a portfolio before deciding if they want to learn more. Every project must communicate value quickly.</p>
+
+    <h4>Portfolio Project Structure</h4>
+    <table>
+        <thead><tr><th>Section</th><th>What to Include</th><th>Why It Matters</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Hero Shot</strong></td><td>High-impact mockup showing the best screen in context</td><td>First impression — determines if viewer scrolls down</td></tr>
+            <tr><td><strong>Challenge</strong></td><td>The business problem or client goal (2-3 sentences)</td><td>Shows you understand context, not just pixels</td></tr>
+            <tr><td><strong>Process</strong></td><td>Research, wireframes, iterations, key decisions</td><td>Demonstrates design thinking, not just output</td></tr>
+            <tr><td><strong>Solution</strong></td><td>Final designs with annotations explaining rationale</td><td>Connects design choices to business goals</td></tr>
+            <tr><td><strong>Results</strong></td><td>Metrics: conversion rate, revenue impact, client feedback</td><td>Proves designs deliver business value</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Portfolio Do's and Don'ts</h4>
+    <ul>
+        <li><strong>DO</strong> show 4-6 best projects, not 20 mediocre ones. Quality over quantity.</li>
+        <li><strong>DO</strong> include before/after comparisons for redesign projects.</li>
+        <li><strong>DO</strong> show responsive versions (desktop + mobile side by side).</li>
+        <li><strong>DO</strong> present in device mockups (laptop, phone frames) for professional context.</li>
+        <li><strong>DON'T</strong> include work you are not proud of just to fill space.</li>
+        <li><strong>DON'T</strong> show only screenshots without context or explanation.</li>
+        <li><strong>DON'T</strong> use placeholder text ("Lorem ipsum") in portfolio pieces.</li>
+        <li><strong>DON'T</strong> include tutorial or course projects unless they are exceptional.</li>
+    </ul>
+
+    <div class="warning-box">
+        <h4>The "No Real Projects" Problem</h4>
+        <p>If you are early in your career and lack client projects, create <strong>concept projects</strong> — redesign a well-known store (explain what you would improve and why) or design a fictional brand from scratch. Treat concept projects with the same rigor as real client work. Include research, personas, wireframes, and mockups. Quality concept work is better than mediocre real work.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🏆 Part 3: Certifications &amp; Continuous Learning</h3>
+    <p>Formal certifications add credibility, but they are only valuable if paired with practical skills. Here are the certifications worth pursuing as a DH designer.</p>
+
+    <h4>Recommended Certifications</h4>
+    <table>
+        <thead><tr><th>Certification</th><th>Provider</th><th>Focus Area</th><th>Value for DH</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Google UX Design Certificate</strong></td><td>Google / Coursera</td><td>UX fundamentals, research, prototyping, usability testing</td><td>High &mdash; validates UX methodology</td></tr>
+            <tr><td><strong>Baymard UX Audit</strong></td><td>Baymard Institute</td><td>E-commerce UX research, checkout optimization</td><td>Very High &mdash; directly applicable to Shopify work</td></tr>
+            <tr><td><strong>Interaction Design Foundation</strong></td><td>IxDF</td><td>Broad design theory, accessibility, information architecture</td><td>Medium &mdash; strong theoretical foundation</td></tr>
+            <tr><td><strong>Figma certification</strong></td><td>Figma</td><td>Tool proficiency, advanced features, collaboration</td><td>Medium &mdash; validates tool expertise</td></tr>
+            <tr><td><strong>WCAG / Accessibility</strong></td><td>W3C / Deque</td><td>Accessibility standards, inclusive design</td><td>High &mdash; client differentiator</td></tr>
+        </tbody>
+    </table>
+
+    <h4>Continuous Learning Habits</h4>
+    <ul>
+        <li><strong>Weekly:</strong> Review 3-5 new Shopify store designs on Dribbble, Behance, or the Shopify Store Examples gallery.</li>
+        <li><strong>Bi-weekly:</strong> Read one design article from Nielsen Norman Group, Baymard, or Smashing Magazine.</li>
+        <li><strong>Monthly:</strong> Complete one design exercise or concept project to practice new techniques.</li>
+        <li><strong>Quarterly:</strong> Attend a virtual design conference, webinar, or workshop.</li>
+        <li><strong>Annually:</strong> Update your portfolio with your best recent work and remove older pieces.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🧠 Part 4: Soft Skills That Separate Senior from Junior</h3>
+    <p>Technical skills are table stakes. Soft skills determine your ceiling. Here are the skills that DH values at the senior level.</p>
+
+    <h4>Critical Soft Skills</h4>
+    <table>
+        <thead><tr><th>Skill</th><th>Junior Behavior</th><th>Senior Behavior</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Communication</strong></td><td>"Here's the design"</td><td>"Here's the design, and here's why this layout drives 20% more engagement based on heatmap data"</td></tr>
+            <tr><td><strong>Feedback</strong></td><td>Takes criticism personally</td><td>Asks for feedback proactively and uses it as growth fuel</td></tr>
+            <tr><td><strong>Estimation</strong></td><td>"It'll take a few hours"</td><td>"This will take 6 hours: 2 for research, 2 for wireframes, 2 for high-fidelity mockups"</td></tr>
+            <tr><td><strong>Problem-solving</strong></td><td>Asks for help immediately</td><td>Researches 3 solutions, presents the best option with trade-offs</td></tr>
+            <tr><td><strong>Ownership</strong></td><td>Waits for instructions</td><td>Identifies problems and proposes solutions before being asked</td></tr>
+            <tr><td><strong>Stakeholder Management</strong></td><td>Agrees with everyone</td><td>Balances stakeholder needs while advocating for the user</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #10B981; margin-top: 0;">🎯 Task 17 Quiz</h3>
+    <p>Test your understanding of career growth, portfolio strategies, certifications, and professional development.</p>
+    <ul>
+        <li>📝 10 questions about Career Growth &amp; Certification</li>
+        <li>🎯 Score <strong>10/10</strong> to proceed</li>
+    </ul>
+</div>
+`;
+
+const task17Quiz = [
+    { q: "At Digital Heroes, the primary factor that gets designers promoted is:", o: ["Working the longest hours on the team", "Consistent quality delivery, initiative, mentorship, and connecting design decisions to business impact", "Having the most certifications listed on LinkedIn", "Being the most technically skilled designer on the team"], c: 1 },
+    { q: "A portfolio project should follow the structure: Hero Shot, Challenge, Process, Solution, Results because:", o: ["This format is required by all design job applications", "It tells a story that connects design decisions to business outcomes — showing you think beyond pixels", "Shorter portfolios get more views than detailed case studies", "This format was invented by a famous designer and is industry-standard"], c: 1 },
+    { q: "Including 20 projects in your portfolio instead of 4-6 best projects is a mistake because:", o: ["Portfolio hosting platforms charge per project", "Viewers spend 30 seconds on average — quality over quantity, and weak projects dilute the impact of strong ones", "More projects increase page load time", "Industry standard requires exactly 5 portfolio pieces"], c: 1 },
+    { q: "The difference between a junior designer's communication and a senior designer's is:", o: ["Seniors use more design jargon to sound professional", "Seniors connect design decisions to business metrics — 'this layout drives 20% more engagement' vs. just 'here's the design'", "Seniors write longer emails with more detail", "Seniors only communicate through formal presentations"], c: 1 },
+    { q: "When you have no real client projects for your portfolio, the best approach is:", o: ["Wait until you get real projects before building a portfolio", "Create concept projects — redesign a known store or build a fictional brand with the same rigor as real client work", "Copy designs from Dribbble and present them as your own", "Only show screenshots of tutorial projects with course certificates"], c: 1 },
+    { q: "The Baymard UX Audit certification is rated 'Very High' value for DH designers because:", o: ["It is the most expensive certification available", "It focuses specifically on e-commerce UX research and checkout optimization — directly applicable to Shopify store work", "Baymard is owned by Shopify and provides official themes", "It replaces the need for all other design certifications"], c: 1 },
+    { q: "A senior designer's approach to problem-solving differs from a junior's because:", o: ["Seniors never ask for help since it shows weakness", "Seniors research 3 solutions and present the best option with trade-offs — instead of asking for help immediately", "Seniors always follow the first solution that comes to mind", "Seniors delegate problem-solving to junior designers"], c: 1 },
+    { q: "Portfolio pieces should show responsive versions (desktop + mobile side by side) because:", o: ["It doubles the number of images, making the portfolio look more substantial", "70%+ of e-commerce traffic is mobile — showing responsive design proves you design for real-world usage", "Desktop-only portfolios are rejected by Shopify theme stores", "Responsive designs take twice as long to create, showing dedication"], c: 1 },
+    { q: "The recommended weekly learning habit for DH designers is:", o: ["Complete one full certification course per week", "Review 3-5 new Shopify store designs on platforms like Dribbble or Behance to stay current with trends", "Redesign one major website from scratch every week", "Read every article published on design blogs daily"], c: 1 },
+    { q: "At Level 3 (Senior Designer) at DH, the key responsibility shift is:", o: ["You stop doing design work and only manage projects", "You lead store designs end-to-end, mentor juniors, and drive design QA standards — becoming a team multiplier", "You focus exclusively on client presentations and sales", "You only work on the largest revenue accounts"], c: 1 }
+];
+
+const task18Content = `
+<h2>📚 TASK 18: AI &amp; TOOLS FOR BRANDING</h2>
 <p><em>Narrative: The Luxe Botanica Figma designs are nearly complete, but the client does not have professional photography or polished copy yet. Rather than waiting weeks for a photoshoot, you will use AI tools to generate stunning product shots, compelling copy, and brand assets. AI is your superpower &mdash; not your replacement.</em></p>
 
 <div class="highlight-box">
@@ -4755,7 +5514,7 @@ const task12Quiz = [
     { q: "Design critique from teammates should be:", o: ["Taken as personal attacks on your taste — this reflects the standard operating procedure most organizations follow", "Ignored unless from senior designers — intervening too early often creates more problems than the original issue", "Welcomed as growth opportunities — diverse perspectives catch blind spots you'll never see yourself", "Accepted during formal review meetings — this is the standard approach most teams follow"], c: 2 }
 ];
 
-const task13Quiz = [
+const task18Quiz = [
     { q: "AI tools like Midjourney in design workflow are best used for:", o: ["Replacing manual design work entirely — this is the recommended approach based on current platform documentation and expert consensus", "Rapid ideation, mood board generation, and concept exploration — AI accelerates creative phase but humans finalize", "Creating final deliverable assets — this reflects the standard operating procedure most organizations follow", "Generating placeholder images — this is the standard approach most teams follow"], c: 1 },
     { q: "AI-generated design assets risk:", o: ["Nothing — AI produces perfect results — this is the industry-standard position backed by conventional practice", "Legal issues, quality is fine — this is the standard approach most teams follow", "Copyright ambiguity, generic outputs lacking brand personality, and quality inconsistencies — always customize AI outputs", "Being detected by clients as AI-generated — implementing this correctly requires understanding the full context of how each element interacts"], c: 2 },
     { q: "Using AI to generate color palettes is effective because:", o: ["AI chooses better colors than humans — this reflects the standard operating procedure most organizations follow", "It eliminates the need for color psychology knowledge", "AI palettes are always on-trend — following this approach consistently ensures predictable outcomes across all scenarios", "AI processes color theory rules instantly and suggests options — but designers validate against brand context"], c: 3 },
@@ -4782,6 +5541,11 @@ window.task10Content = task10Content;
 window.task11Content = task11Content;
 window.task12Content = task12Content;
 window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -4795,6 +5559,11 @@ window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
 window.task12Quiz = task12Quiz;
 window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -4809,5 +5578,10 @@ const allQuizzes = [
     task10Quiz,
     task11Quiz,
     task12Quiz,
-    task13Quiz
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];

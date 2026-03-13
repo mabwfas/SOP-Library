@@ -11,7 +11,14 @@ const trainingTasks = [
     { id: 8, title: "Brand Voice & Style", description: "Consistency Across Channels", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "🎯 Guidelines: Tone, Style", "📖 Study brand voice templates"] },
     { id: 9, title: "AI Content Tools", description: "ChatGPT Mastery", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🤖 Prompts: Product, Blog, Email", "📖 Master AI prompting techniques"] },
     { id: 10, title: "Content QA", description: "Proofreading Protocol", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "✅ Checklist: Grammar, SEO, CTA", "📖 Study QA checklist"] },
-    { id: 11, title: "Final Certification", description: "Content Mastery Exam", contentFirst: false, studyGuide: ["⏱️ Time: 60 min", "📝 30 Questions", "🎥 Submit portfolio"] }
+    { id: 11, title: "Final Certification", description: "Content Mastery Exam", contentFirst: false, studyGuide: ["⏱️ Time: 60 min", "📝 30 Questions", "🎥 Submit portfolio"] },
+    { id: 12, title: "SEO Content Strategy", description: "Advanced Keyword Research & Topic Clusters", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🔍 Pillar pages & topic clusters", "📖 Advanced keyword research techniques"] },
+    { id: 13, title: "E-Commerce Product Copy", description: "Shopify & WordPress Conversion Copy", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🛒 Platform-specific product writing", "📖 Conversion-focused descriptions"] },
+    { id: 14, title: "Client Communication", description: "Briefs, Feedback & Revision Management", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "💬 Understanding client requirements", "📖 Managing revisions professionally"] },
+    { id: 15, title: "Marketplace Delivery", description: "Writing for Client Orders & Turnaround", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📦 Delivery message templates", "📖 Turnaround management strategies"] },
+    { id: 16, title: "Advanced Copywriting & CRO", description: "AIDA, PAS, Headlines & A/B Testing", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "✍️ Advanced headline formulas", "📖 Conversion Rate Optimization copy"] },
+    { id: 17, title: "Career Growth", description: "Portfolio Building & Specialization", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🚀 DH career ladder for writers", "📖 Building a standout portfolio"] },
+    { id: 18, title: "Portfolio Build", description: "Practical Content Portfolio & Final Exam", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "📝 Hands-on writing exercises", "🎥 Build your content portfolio"] }
 ];
 
 
@@ -1112,6 +1119,1166 @@ const task11Quiz = [
     { q: "Alt text on images should:", o: ["Describe the image accurately while naturally including relevant keywords — serving both accessibility and SEO", "Be left empty for decorative images — this reflects the standard operating procedure most organizations follow", "Repeat the page's main keyword 5 times — this reflects the standard operating procedure most organizations follow", "Always be exactly 10 words long — following this approach consistently ensures predictable outcomes across all scenarios"], c: 0 }
 ];
 
+// ============ TASK 12: SEO CONTENT STRATEGY & KEYWORD RESEARCH ============
+const task12Content = `
+<h2>🔍 TASK 12: SEO CONTENT STRATEGY & KEYWORD RESEARCH</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Beyond Basic SEO: Strategic Content Architecture</h3>
+    <p>In Task 3, you learned the fundamentals of writing for search engines. Now it is time to level up. Advanced SEO content strategy is about building an <strong>entire content ecosystem</strong> that dominates search results — not just optimizing individual pages.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 The Content Strategist's Goal:</strong>
+        <p style="margin: 10px 0 0 0;">Move from writing <strong>individual pages that rank</strong> to building <strong>content ecosystems that dominate entire topic areas</strong>. At Digital Heroes, a content writer who understands strategy is 5x more valuable than one who only writes well.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Pillar Pages & Topic Clusters</h3>
+    <p>The most effective SEO content strategy today is the <strong>pillar-cluster model</strong>. Instead of writing random blog posts, you build a structured web of interlinked content:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Component</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Description</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Pillar Page</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Comprehensive guide (3,000-5,000 words) covering a broad topic</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"The Complete Guide to Shopify Store Design"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cluster Content</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Focused articles (1,500-2,000 words) covering subtopics in depth</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"How to Choose Shopify Theme Colors for Your Niche"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Internal Links</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Every cluster links to the pillar and vice versa</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Bidirectional linking between all related pages</td>
+        </tr>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #34D399;">Why This Works:</strong>
+        <p style="margin: 10px 0 0 0;">Google sees your site as a <strong>topical authority</strong> when you have a comprehensive pillar page linked to multiple detailed cluster pages. This signals expertise on the entire topic, boosting rankings for ALL pages in the cluster.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔬 Advanced Keyword Research Process</h3>
+    <p>Professional keyword research goes far beyond typing a word into Google Keyword Planner. Here is the DH process:</p>
+
+    <div class="highlight-box">
+        <strong>Step 1: Seed Keyword Brainstorm</strong>
+        <ul>
+            <li>List 10-20 seed keywords from the client's niche</li>
+            <li>Use Google Autocomplete to find variations</li>
+            <li>Check "People Also Ask" sections for question-based keywords</li>
+            <li>Review competitor sites for keywords they target</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Step 2: Keyword Qualification Matrix</strong>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <tr style="background: rgba(99, 102, 241, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Factor</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">High Priority</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Low Priority</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Search Volume</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">500+ monthly searches</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Under 50 searches/month</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Competition</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Low-medium difficulty</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Dominated by major brands</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Intent Match</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Aligns with client's offering</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Purely informational, no conversion path</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Business Value</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Leads to purchase or inquiry</td>
+                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">No commercial connection</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Step 3: SERP Analysis</strong>
+        <p style="margin: 10px 0;">Before writing, analyze the top 10 results for your target keyword:</p>
+        <ul>
+            <li>What content format ranks? (listicle, guide, comparison, video)</li>
+            <li>What word count do top results have?</li>
+            <li>What subtopics do they cover that you can cover better?</li>
+            <li>What questions remain unanswered that you can address?</li>
+            <li>What is the content gap you can fill?</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🗺️ Content Calendar & Mapping</h3>
+    <p>A content calendar is not just a schedule — it is a strategic map connecting keywords, topics, and business goals:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content Type</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target Keyword</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Business Goal</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week 1</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pillar Page</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify store optimization"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Build topical authority</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week 2</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cluster Blog</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify speed optimization tips"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Drive traffic to pillar</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week 3</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cluster Blog</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify SEO checklist 2026"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Capture seasonal search</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Week 4</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Comparison Post</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Shopify vs WooCommerce speed"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Capture commercial intent</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 Common SEO Strategy Mistakes</h3>
+    <ul>
+        <li><strong>Keyword Cannibalization:</strong> Writing multiple posts targeting the same keyword. Your pages compete against each other instead of against competitors.</li>
+        <li><strong>Ignoring Search Intent:</strong> Writing an educational blog when the keyword has transactional intent (or vice versa). Always match content format to searcher expectations.</li>
+        <li><strong>Thin Content:</strong> Publishing short, surface-level posts that add no unique value. Google rewards depth and expertise.</li>
+        <li><strong>No Content Refresh Strategy:</strong> Publishing and forgetting. Top-performing pages need quarterly updates with fresh data and expanded sections.</li>
+        <li><strong>Neglecting Long-Tail Keywords:</strong> Chasing only high-volume terms. Long-tail keywords (4+ words) have lower competition and higher conversion rates.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📈 Content Performance Tracking</h3>
+    <p>Every content piece should be tracked against measurable KPIs:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tool</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Organic Traffic</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Google Analytics</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month-over-month growth</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Keyword Ranking</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ahrefs / SEMrush</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Page 1 within 3-6 months</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Bounce Rate</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Google Analytics</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 60%</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Time on Page</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Google Analytics</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3+ minutes for long-form</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Conversion Rate</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Platform Analytics</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-5% for commercial content</td>
+        </tr>
+    </table>
+</div>
+`;
+
+// ============ TASK 13: E-COMMERCE PRODUCT DESCRIPTIONS ============
+const task13Content = `
+<h2>🛒 TASK 13: E-COMMERCE PRODUCT DESCRIPTIONS — Shopify & WordPress Conversion Copy</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💰 Product Copy That Sells — The DH Standard</h3>
+    <p>At Digital Heroes, we build Shopify and WordPress stores for clients across the globe. The <strong>product description is the silent salesperson</strong> — it works 24/7 to convert visitors into buyers. A mediocre description loses sales. A great one can increase revenue by 30-50% without any design changes.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">🎯 The DH Product Copy Standard:</strong>
+        <p style="margin: 10px 0 0 0;">Every product description we deliver must be: <strong>SEO-optimized</strong> (keyword in title and first sentence), <strong>benefit-driven</strong> (not feature-listing), <strong>brand-consistent</strong> (matching client tone), and <strong>conversion-focused</strong> (clear CTA with urgency).</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🏪 Shopify Product Description Anatomy</h3>
+    <p>Shopify product pages have specific requirements different from general web copy:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Element</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Best Practice</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Common Mistake</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Product Title</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Descriptive + keyword-rich (60 chars max)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Vague names like "Style A" or "Product #123"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Opening Line</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hero benefit that hooks the reader immediately</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Starting with dimensions or materials</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Body Copy</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-3 short paragraphs addressing pain points + outcomes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Walls of text or manufacturer-copied specs</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Bullet Points</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5-7 benefit-led bullets (benefit first, then feature)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Feature-only bullets with no emotional hook</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Meta Description</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unique per product, 150-160 chars with CTA</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Auto-generated or duplicate across products</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📝 Collection Page Descriptions</h3>
+    <p>Collection pages are SEO goldmines that most stores neglect entirely. At DH, we treat them as landing pages:</p>
+
+    <div class="highlight-box">
+        <strong>Collection Description Template:</strong>
+        <ol>
+            <li><strong>Hook (1 sentence):</strong> Address the buyer's intent for browsing this category</li>
+            <li><strong>Value Prop (2-3 sentences):</strong> Why this collection stands out from competitors</li>
+            <li><strong>Key Benefits (3-5 bullets):</strong> What makes products in this category special</li>
+            <li><strong>Trust Signal:</strong> Reviews count, warranty info, or satisfaction guarantee</li>
+            <li><strong>SEO Keywords:</strong> Natural placement of category-level keywords</li>
+        </ol>
+    </div>
+
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Example (Pet Store — "Organic Dog Food" collection):</strong></p>
+        <p><em>"Give your dog the nutrition nature intended. Our organic dog food collection features vet-approved recipes made with farm-fresh ingredients — no fillers, no artificial preservatives, no compromise. Trusted by 2,000+ pet parents across North America."</em></p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔄 WordPress / WooCommerce Product Copy</h3>
+    <p>WordPress product copy follows similar principles but has platform-specific considerations:</p>
+    <ul>
+        <li><strong>Short Description:</strong> Appears next to the product image. Keep it to 2-3 sentences — the hook + main benefit + CTA.</li>
+        <li><strong>Long Description:</strong> Below the fold. Full PAS/AIDA structure with detailed benefits, specifications, and social proof.</li>
+        <li><strong>Category Descriptions:</strong> Like Shopify collections — SEO-rich content that establishes topical relevance.</li>
+        <li><strong>Additional Information Tab:</strong> Technical specs in structured format (weight, dimensions, materials).</li>
+        <li><strong>Yoast/RankMath SEO:</strong> Always fill in the SEO title, meta description, and focus keyword for every product.</li>
+    </ul>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ Never Copy Manufacturer Descriptions:</strong>
+        <p style="margin: 10px 0 0 0;">Duplicate content from manufacturer websites creates SEO penalties. Every description must be <strong>100% original</strong>. If the client provides manufacturer specs, use them as raw material and rewrite entirely in the brand voice.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Niche-Specific Product Copy Strategies</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Niche</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Focus On</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Avoid</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fashion / Apparel</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lifestyle imagery, how it makes them feel, styling tips</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Only listing fabric specs without context</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Health & Wellness</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ingredient benefits, certifications, clinical backing</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unverified health claims (legal risk)</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tech / Electronics</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Problem-solution framing, performance outcomes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pure spec sheets without real-world context</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Home & Garden</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Transformation story (before/after), ease of use</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Generic "high quality materials" phrasing</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Luxury / Premium</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Craftsmanship story, exclusivity, heritage</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Words like "cheap," "affordable," "bargain"</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📊 Product Copy Conversion Checklist</h3>
+    <ul>
+        <li>☐ Product title includes primary keyword and is under 60 characters</li>
+        <li>☐ Opening line leads with the hero benefit, not a feature</li>
+        <li>☐ At least 5 bullet points converting features to benefits</li>
+        <li>☐ Social proof element included (reviews, testimonials, trust badges)</li>
+        <li>☐ Urgency or scarcity element present when appropriate</li>
+        <li>☐ Clear CTA that tells the customer exactly what to do</li>
+        <li>☐ Meta description unique and under 160 characters</li>
+        <li>☐ Alt text on all product images (descriptive + keyword)</li>
+        <li>☐ Content passes Grammarly and readability checks</li>
+        <li>☐ Brand voice consistent with client style guide</li>
+    </ul>
+</div>
+`;
+
+// ============ TASK 14: CLIENT COMMUNICATION & BRIEF HANDLING ============
+const task14Content = `
+<h2>💬 TASK 14: CLIENT COMMUNICATION & BRIEF HANDLING</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🤝 The Writer-Client Relationship</h3>
+    <p>At Digital Heroes, content writers do not work in isolation. You are part of a delivery chain that directly affects client satisfaction, reviews, and repeat orders. <strong>How you communicate is as important as what you write.</strong></p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #8B5CF6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">🎯 The DH Communication Standard:</strong>
+        <p style="margin: 10px 0 0 0;">Every client interaction must be <strong>professional, specific, and proactive</strong>. Never say "I will try." Say "I will deliver X by Y time." Never say "I am not sure." Say "Let me confirm with the team and get back to you within 2 hours."</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Decoding Client Briefs</h3>
+    <p>Most revision cycles happen because the writer misunderstood the brief. Here is how to decode briefs like a professional:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Says</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What They Mean</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What to Ask</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Make it catchy"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">They want engaging copy that stands out</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can you share 2-3 examples of copy you consider catchy?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Keep it simple"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No jargon, short sentences, clear structure</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Target reading level? Grade 6 or Grade 10?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Make it professional"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Formal tone, no slang, corporate voice</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Should it be formal-corporate or professional-friendly?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I want it to sell"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Conversion-focused copy with CTAs</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"What is the primary conversion action? Add to cart, sign up, or contact?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Something like Apple"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Minimalist, aspirational, premium feel</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Which Apple elements? The minimal text or the lifestyle imagery approach?"</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📝 The DH Content Brief Template</h3>
+    <p>When clients do not provide a structured brief, use this template to gather the information you need BEFORE writing:</p>
+
+    <div class="highlight-box">
+        <strong>Content Brief Essentials:</strong>
+        <ol>
+            <li><strong>Project Type:</strong> Product descriptions, blog posts, landing page, email sequence?</li>
+            <li><strong>Target Audience:</strong> Who are the customers? Demographics, interests, pain points.</li>
+            <li><strong>Brand Voice:</strong> Formal? Casual? Playful? Authoritative? (Ask for examples)</li>
+            <li><strong>Competitors:</strong> Who do they consider competitors? What do they like/dislike about competitor copy?</li>
+            <li><strong>Key Messages:</strong> What 3 things must every piece communicate?</li>
+            <li><strong>SEO Requirements:</strong> Target keywords? Is there an existing SEO strategy?</li>
+            <li><strong>Deliverables:</strong> Number of pieces, word count range, format requirements.</li>
+            <li><strong>Timeline:</strong> When do they need the first draft? Final delivery?</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Managing Revisions Professionally</h3>
+    <p>Revisions are normal. <strong>How you handle them defines your professionalism.</strong></p>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #34D399;">The 3-Step Revision Process:</strong>
+        <ol>
+            <li><strong>Acknowledge:</strong> Thank the client for their feedback within 2 hours. Never get defensive.</li>
+            <li><strong>Clarify:</strong> If feedback is vague ("I don't like it"), ask specific questions: "Which section needs changes? Is it the tone, the structure, or specific wording?"</li>
+            <li><strong>Deliver:</strong> Implement changes and send back with a summary of what was updated and why.</li>
+        </ol>
+    </div>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ Revision Red Flags to Escalate to PM:</strong>
+        <ul>
+            <li>Client requesting more than 3 revision rounds (scope creep)</li>
+            <li>Client changing the brief fundamentally after first draft</li>
+            <li>Client asking for work outside the original order scope</li>
+            <li>Client requesting changes that go against SEO best practices</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📧 Communication Templates</h3>
+
+    <div class="highlight-box">
+        <strong>First Draft Delivery Template:</strong>
+        <p style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin: 10px 0; font-style: italic;">"Hi [Name], here is the first draft of [deliverable]. I have structured it to [key decisions made]. Please review and share your feedback. I am available for up to 2 revision rounds to make sure it is exactly what you need. ETA for revisions: 24 hours after feedback."</p>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Handling Unclear Feedback Template:</strong>
+        <p style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin: 10px 0; font-style: italic;">"Thank you for your feedback! To make sure I get this right, could you clarify: (1) Which specific sections need changes? (2) Is it the tone, structure, or specific wording that needs adjustment? (3) Do you have any examples of what you are looking for? This will help me deliver exactly what you need."</p>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Scope Creep Response Template:</strong>
+        <p style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin: 10px 0; font-style: italic;">"Great idea! That falls slightly outside the current project scope. I would love to help with that. Let me check with my team lead on how we can add this as an additional deliverable so we can give it the attention it deserves."</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⏰ Response Time Standards at DH</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Situation</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response Time</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client message</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 2 hours</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Acknowledge receipt even if you need time to respond fully</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revision request</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">24 hours delivery</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Acknowledge immediately, deliver next business day</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM/Manager message</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 1 hour</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full response or ETA for when you can respond</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Urgent/escalation</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 15 minutes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Drop everything and respond with status update</td>
+        </tr>
+    </table>
+</div>
+`;
+
+// ============ TASK 15: CONTENT FOR MARKETPLACE DELIVERY ============
+const task15Content = `
+<h2>📦 TASK 15: CONTENT FOR MARKETPLACE DELIVERY</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🌐 Writing for Client Orders on Marketplaces</h3>
+    <p>Digital Heroes delivers professional web content services through online marketplace platforms. As a content writer, you will write copy that gets <strong>delivered to clients as part of paid orders</strong>. This is not casual blogging — this is professional service delivery where every word reflects on the agency's reputation.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F59E0B; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">🎯 Marketplace Delivery = Revenue:</strong>
+        <p style="margin: 10px 0 0 0;">Every order you deliver well leads to: <strong>5-star reviews</strong> (more visibility) → <strong>higher profile ranking</strong> (more orders) → <strong>ability to charge premium prices</strong> → <strong>more revenue for the team</strong>. One bad delivery can tank a profile rating that took months to build.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Order Lifecycle for Content Writers</h3>
+    <p>Understanding where you fit in the order process ensures smooth delivery:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Stage</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Who</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Your Role</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1. Order Received</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sales / Account Manager</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Review requirements when assigned</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2. Brief Review</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content Writer (You)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clarify requirements within 2 hours of assignment</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3. Content Creation</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content Writer (You)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Write, self-QA, submit for internal review</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4. Internal QA</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">QA / Team Lead</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Address any feedback before client delivery</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5. Client Delivery</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM / Account Manager</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Be available for revision requests</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📝 Delivery Message Templates</h3>
+    <p>Professional delivery messages increase client satisfaction and reduce revision requests:</p>
+
+    <div class="highlight-box">
+        <strong>Standard Delivery Message:</strong>
+        <p style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin: 10px 0; font-style: italic;">"Hello [Client Name], thank you for choosing Digital Heroes for your content needs! Here is your delivery: [List deliverables]. Key highlights: [2-3 strategic decisions you made]. I have optimized all content for SEO and ensured it aligns with your brand voice. Please review and let me know if you would like any adjustments. I am happy to make revisions to ensure everything is perfect."</p>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Delivery with Extras (Upsell Opportunity):</strong>
+        <p style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin: 10px 0; font-style: italic;">"In addition to your [ordered items], I have also included: (1) SEO meta descriptions for each product, (2) A keyword map for your top 10 products. These extras should help maximize the value of the content. If you would like me to develop a full content strategy for your store, I would be happy to discuss that as a follow-up project."</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⏱️ Turnaround Management</h3>
+    <p>Meeting deadlines is non-negotiable. Here is how to manage your pipeline:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content Type</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standard Turnaround</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Express Turnaround</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product Descriptions (10)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-3 business days</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1 business day</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Blog Post (1,500 words)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2 business days</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1 business day</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Landing Page Copy</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-3 business days</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-2 business days</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full Website Copy</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5-7 business days</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3-4 business days</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email Sequence (3-5 emails)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3 business days</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-2 business days</td>
+        </tr>
+    </table>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ If You Cannot Meet a Deadline:</strong>
+        <p style="margin: 10px 0 0 0;">Inform the PM <strong>immediately</strong> — not 1 hour before the deadline. Say: "Current ETA for [Order X] is [new date]. Reason: [specific reason]. Proposed solution: [what you will do]." Late delivery without communication is a serious performance issue.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⭐ Quality Standards for Marketplace Delivery</h3>
+    <ul>
+        <li><strong>Zero Tolerance for Typos:</strong> One typo in a delivered order = unprofessional. Triple-check everything.</li>
+        <li><strong>Formatting Matters:</strong> Deliver content in the format the client expects (Google Docs, Word, plain text, or directly in their CMS).</li>
+        <li><strong>Include What Was Promised:</strong> If the order includes 10 product descriptions, deliver exactly 10 — not 9.</li>
+        <li><strong>Over-Deliver When Possible:</strong> A free bonus (keyword list, meta descriptions, content calendar suggestion) creates delight.</li>
+        <li><strong>Follow-Up Message:</strong> After delivery, check back in 24-48 hours: "How is everything looking? Any adjustments needed?"</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Handling Marketplace Reviews & Ratings</h3>
+    <p>Your content quality directly affects the team's marketplace profile:</p>
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #34D399;">The Rating Impact Chain:</strong>
+        <p style="margin: 10px 0;">5-star content → Positive review → Better profile ranking → More orders → More revenue → Better team incentives</p>
+        <p style="margin: 0;">3-star content → Mediocre review → Profile drops → Fewer orders → Less revenue → Team suffers</p>
+    </div>
+</div>
+`;
+
+// ============ TASK 16: ADVANCED COPYWRITING & CRO ============
+const task16Content = `
+<h2>✍️ TASK 16: ADVANCED COPYWRITING & CRO</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(244, 114, 182, 0.15)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F472B6; margin-top: 0;">🧠 The Psychology of Conversion Copy</h3>
+    <p>Basic copywriting gets people to read. <strong>Advanced copywriting gets people to act.</strong> Conversion Rate Optimization (CRO) copy is the difference between a store that gets traffic and one that makes money. At Digital Heroes, mastering CRO copy makes you indispensable.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F472B6;">💡 CRO Copy Reality:</strong>
+        <p style="margin: 10px 0 0 0;">A 1% improvement in conversion rate on a store doing $100,000/month = <strong>$1,000 extra revenue per month from words alone</strong>. That is $12,000/year from a headline change, a button text update, or a trust badge addition.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📐 Advanced Copywriting Frameworks</h3>
+    <p>You learned PAS and AIDA in earlier tasks. Here are advanced frameworks used by professional conversion copywriters:</p>
+
+    <div class="highlight-box">
+        <strong>BAB (Before-After-Bridge):</strong>
+        <ul>
+            <li><strong>Before:</strong> Paint a picture of the reader's current painful situation</li>
+            <li><strong>After:</strong> Show them what life looks like after the solution</li>
+            <li><strong>Bridge:</strong> Your product/service is the bridge between the two</li>
+        </ul>
+        <p style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin: 10px 0;"><em>Before: "Spending 3 hours a day managing inventory spreadsheets."</em><br><em>After: "Inventory that syncs automatically across all your sales channels in real time."</em><br><em>Bridge: "InventorySync integrates with Shopify, Amazon, and eBay — set it up in 10 minutes."</em></p>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>4 Ps (Promise-Picture-Proof-Push):</strong>
+        <ul>
+            <li><strong>Promise:</strong> Make a bold, specific claim</li>
+            <li><strong>Picture:</strong> Help them visualize the result</li>
+            <li><strong>Proof:</strong> Back it up with evidence</li>
+            <li><strong>Push:</strong> Tell them what to do next</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>PASTOR (Problem-Amplify-Story-Transformation-Offer-Response):</strong>
+        <p style="margin: 10px 0 0 0;">The most comprehensive framework for long-form sales pages and landing pages. Each element builds on the previous to create an irresistible narrative that guides the reader from awareness to action.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📝 Headline Formulas That Convert</h3>
+    <p>Headlines are responsible for 80% of your content's success. Master these formulas:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Formula</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why It Works</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Specific Number + Adjective + Keyword + Promise</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"7 Proven Shopify Hacks That Double Sales in 30 Days"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Specificity builds trust</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>How to + Desired Outcome + Without + Pain Point</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"How to Grow Store Revenue Without Increasing Ad Spend"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Removes objection upfront</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Warning/Mistake Format</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"5 Product Description Mistakes Killing Your Shopify Sales"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Loss aversion drives clicks</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Question That Implies a Problem</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Is Your Store Losing Sales Because of Slow Load Times?"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Engages reader's self-interest</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>The Secret/Little-Known Method</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"The Pricing Strategy Top Shopify Stores Use (That Nobody Talks About)"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Exclusivity + curiosity</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🔬 A/B Testing Copy Elements</h3>
+    <p>Professional CRO writers test, not guess. Here is what to A/B test on client projects:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Element</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Test Example A</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Test Example B</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Impact</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CTA Button</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Buy Now"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Get Yours Today"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Up to 30% click difference</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Headline</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Premium Leather Wallet"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"The Last Wallet You Will Ever Buy"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Up to 50% engagement difference</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social Proof</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Trusted by customers"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Trusted by 2,847 store owners"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Specific numbers build credibility</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Urgency</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Limited time offer"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Sale ends in 4 hours 23 minutes"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Specific deadlines outperform vague ones</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🧲 Cialdini's 6 Principles in Copywriting</h3>
+    <p>Robert Cialdini's principles of persuasion are the foundation of all conversion copy:</p>
+    <ul>
+        <li><strong>Reciprocity:</strong> Give value first (free guide, tips) before asking for the sale</li>
+        <li><strong>Commitment/Consistency:</strong> Small yeses lead to big yeses (free trial → paid plan)</li>
+        <li><strong>Social Proof:</strong> "Join 10,000+ happy customers" — humans follow the crowd</li>
+        <li><strong>Authority:</strong> Expert endorsements, certifications, "as featured in" logos</li>
+        <li><strong>Liking:</strong> Relatable brand voice, personal stories, shared values</li>
+        <li><strong>Scarcity:</strong> "Only 3 left" or "Offer expires midnight" — fear of missing out</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Landing Page Copy Structure</h3>
+    <p>The high-converting landing page follows this proven sequence:</p>
+    <ol>
+        <li><strong>Hero Section:</strong> Headline (benefit) + Subheadline (how) + CTA + Hero Image</li>
+        <li><strong>Problem Section:</strong> Agitate the pain they are experiencing</li>
+        <li><strong>Solution Section:</strong> Introduce your offering as the answer</li>
+        <li><strong>Benefits (not features):</strong> 3-5 key benefits with icons and short descriptions</li>
+        <li><strong>Social Proof:</strong> Testimonials, logos, review scores, case study snippets</li>
+        <li><strong>How It Works:</strong> 3-step process that makes it feel easy</li>
+        <li><strong>Objection Handling:</strong> FAQ section addressing common concerns</li>
+        <li><strong>Final CTA:</strong> Restate the main benefit + urgency + prominent button</li>
+    </ol>
+</div>
+`;
+
+// ============ TASK 17: CAREER GROWTH & CERTIFICATION ============
+const task17Content = `
+<h2>🚀 TASK 17: CAREER GROWTH & CERTIFICATION</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">📈 Your Content Career at Digital Heroes</h3>
+    <p>Content writing at DH is not a dead-end role. It is the <strong>launchpad for multiple high-value career paths</strong>. Writers who master their craft and demonstrate business impact become some of the most valued team members. Here is how your career can grow.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 The DH Career Philosophy:</strong>
+        <p style="margin: 10px 0 0 0;">Growth = Skill Development + Consistent Output + Business Impact. Every level up requires demonstrated mastery of the previous level, not just time served. A writer who delivers exceptional work for 6 months will advance faster than one who does average work for 2 years.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🪜 The DH Content Writer Career Ladder</h3>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Level</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Title</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Requirements</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Responsibilities</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">L1</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trainee Writer</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete training certification</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Execute assigned content tasks, follow SOPs</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">L2</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Junior Content Writer</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3 months + consistent quality output</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Independent content creation, self-QA</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">L3</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Content Writer</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">6 months + SEO results + 5-star client feedback</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client-facing communication, content strategy input</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">L4</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Senior Content Writer</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">12 months + proven conversion impact</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lead content projects, QA junior writers, develop content strategy</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">L5</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Content Lead / Strategist</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">18+ months + team leadership + business impact</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content strategy, team management, client relationships</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🔀 Specialization Paths</h3>
+    <p>After reaching L3, you can specialize in one of these high-demand areas:</p>
+
+    <div class="highlight-box">
+        <strong>Path 1: SEO Content Specialist</strong>
+        <ul>
+            <li>Deep expertise in keyword research, topic clusters, and content optimization</li>
+            <li>Manage content calendars and SEO strategy for multiple clients</li>
+            <li>Track and report on organic traffic growth and keyword rankings</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Path 2: Conversion Copywriter</strong>
+        <ul>
+            <li>Master of sales pages, product descriptions, and ad copy</li>
+            <li>A/B testing expertise and data-driven copy decisions</li>
+            <li>Direct impact on client revenue through conversion optimization</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Path 3: Content Strategist / Manager</strong>
+        <ul>
+            <li>Develop content roadmaps aligned with business objectives</li>
+            <li>Manage a team of writers, set quality standards</li>
+            <li>Client relationship management and strategic consultation</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>Path 4: Brand Voice & UX Writer</strong>
+        <ul>
+            <li>Develop brand voice guides for client stores</li>
+            <li>Write microcopy (button text, error messages, tooltips) that improves UX</li>
+            <li>Cross-functional work with design and development teams</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📁 Building Your Portfolio</h3>
+    <p>Your portfolio is your career accelerator. Every content writer at DH should maintain a portfolio that demonstrates range and impact:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Portfolio Piece</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What to Include</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why It Matters</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Product Descriptions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3-5 examples across different niches</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shows versatility in tone and audience</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Blog Posts</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-3 SEO-optimized articles with keyword targets</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Demonstrates SEO knowledge + writing skill</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Email Campaigns</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-2 complete sequences (welcome, launch, promo)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shows strategic thinking beyond single pieces</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Results/Impact</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Before/after metrics where available</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Proves business impact, not just writing ability</td>
+        </tr>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #34D399;">Portfolio Pro Tip:</strong>
+        <p style="margin: 10px 0 0 0;">For each portfolio piece, include: (1) The brief/objective, (2) Your strategic approach, (3) The final content, (4) Results if available. This shows you think strategically, not just execute tasks.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📚 Continuous Learning Resources</h3>
+    <ul>
+        <li><strong>Daily:</strong> Read 1 well-performing product page or blog post and analyze WHY it works</li>
+        <li><strong>Weekly:</strong> Study one competitor's content strategy for your current client niche</li>
+        <li><strong>Monthly:</strong> Complete one online course module (Copyblogger, HubSpot Content Marketing, Google Analytics)</li>
+        <li><strong>Quarterly:</strong> Update your portfolio with your best recent work</li>
+    </ul>
+    <p><strong>DH Learning Budget:</strong> Up to Rs 5,000/year for approved courses and certifications. Use it!</p>
+</div>
+`;
+
+// ============ TASK 18: PRACTICAL TASK — CONTENT PORTFOLIO BUILD ============
+const task18Content = `
+<h2>📝 TASK 18: PRACTICAL TASK — CONTENT PORTFOLIO BUILD & FINAL EXAM</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🏆 Final Certification — Prove Your Skills</h3>
+    <p>This is your <strong>graduation task</strong>. You will complete a series of hands-on writing exercises that test every skill covered in Tasks 1-17. Each exercise has a model answer so you can compare your work against the DH standard. <strong>This is the task that proves you are ready for live client work.</strong></p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F59E0B; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">🎯 Certification Requirements:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Complete all 5 exercises below</li>
+            <li>Pass the final certification quiz (Task 18 Quiz)</li>
+            <li>Submit your portfolio to your team lead for review</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Exercise 1: Product Description (Shopify Store)</h3>
+    <p><strong>Brief:</strong> Write a product description for a premium bamboo cutting board sold on a Shopify kitchen store. Target audience: health-conscious home cooks aged 25-45. Brand voice: warm, knowledgeable, premium but approachable.</p>
+
+    <div class="highlight-box">
+        <strong>Requirements:</strong>
+        <ul>
+            <li>Benefit-focused headline (under 60 chars)</li>
+            <li>Opening paragraph using PAS formula</li>
+            <li>5 benefit-driven bullet points</li>
+            <li>Social proof element</li>
+            <li>CTA with urgency</li>
+            <li>Meta description (under 160 chars)</li>
+        </ul>
+    </div>
+
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; margin: 15px 0;">
+        <strong>Model Answer — Headline:</strong> "Cook with Confidence on Nature's Finest Cutting Board"<br><br>
+        <strong>Opening (PAS):</strong> <em>"Tired of plastic cutting boards that warp, stain, and harbor bacteria? (Problem) Every time you chop on a warped board, you risk uneven cuts and cross-contamination — putting your family's health at stake. (Agitate) Our premium bamboo cutting board is naturally antimicrobial, knife-friendly, and built to last a lifetime. (Solve)"</em><br><br>
+        <strong>Bullet Points:</strong>
+        <ul>
+            <li>Naturally antimicrobial surface — your family eats safer without harsh chemicals</li>
+            <li>Knife-gentle bamboo — keeps your blades sharper 3x longer than plastic boards</li>
+            <li>Deep juice groove — catches liquids so your countertop stays spotless</li>
+            <li>Sustainably harvested bamboo — cook guilt-free knowing your board is eco-friendly</li>
+            <li>Built to last — backed by our 5-year warranty because we stand behind quality</li>
+        </ul>
+        <strong>Social Proof:</strong> <em>"Loved by 1,200+ home chefs — rated 4.8 stars"</em><br>
+        <strong>CTA:</strong> <em>"Add to Cart — Free shipping on orders over $50 (ends Sunday)"</em><br>
+        <strong>Meta:</strong> <em>"Premium bamboo cutting board — antimicrobial, knife-friendly, eco-conscious. Trusted by 1,200+ home chefs. Free shipping over $50."</em>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Exercise 2: Blog Post Outline (SEO-Focused)</h3>
+    <p><strong>Brief:</strong> Create a detailed blog post outline targeting the keyword "how to start a Shopify store in 2026." Target audience: first-time e-commerce entrepreneurs. Goal: drive traffic and convert to store setup service inquiries.</p>
+
+    <div class="highlight-box">
+        <strong>Requirements:</strong>
+        <ul>
+            <li>SEO-optimized title (under 60 chars, keyword included)</li>
+            <li>Meta description with CTA</li>
+            <li>5-6 H2 sections with 3-4 bullet points each</li>
+            <li>Internal linking opportunities noted</li>
+            <li>CTA at conclusion</li>
+        </ul>
+    </div>
+
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; margin: 15px 0;">
+        <strong>Model Answer:</strong><br><br>
+        <strong>Title:</strong> "How to Start a Shopify Store in 2026: Step-by-Step Guide"<br>
+        <strong>Meta:</strong> "Learn how to start a Shopify store in 2026 with our proven step-by-step guide. From niche selection to first sale. Need help? Get a free store audit."<br><br>
+        <strong>H2 Sections:</strong>
+        <ol>
+            <li><strong>Why Shopify Is the Best Platform for New Stores in 2026</strong> — Market share data, ease of use, scalability, app ecosystem</li>
+            <li><strong>Step 1: Choose Your Niche and Validate Demand</strong> — Market research tools, competitor analysis, demand validation, profitability assessment</li>
+            <li><strong>Step 2: Set Up Your Store (Technical Foundations)</strong> — Account setup, theme selection, domain connection, payment gateways</li>
+            <li><strong>Step 3: Write Product Descriptions That Sell</strong> — PAS formula, SEO optimization, benefit-focused copy (link to: product description service page)</li>
+            <li><strong>Step 4: Launch Your Marketing Strategy</strong> — SEO basics, social media, email collection, launch sequence</li>
+            <li><strong>Step 5: Optimize for Conversions After Launch</strong> — Analytics setup, A/B testing, conversion rate optimization (link to: CRO service page)</li>
+        </ol>
+        <strong>CTA:</strong> "Ready to launch but want expert help? Get a free Shopify store audit from our team."
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Exercise 3: Email Welcome Sequence</h3>
+    <p><strong>Brief:</strong> Write subject lines and opening paragraphs for a 3-email welcome sequence for a new skincare brand's Shopify store. Tone: friendly expert. Goal: convert subscribers into first-time buyers.</p>
+
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; margin: 15px 0;">
+        <strong>Model Answer:</strong><br><br>
+        <strong>Email 1 (Immediate): Welcome + Value</strong><br>
+        Subject: "Welcome to GlowUp — here is your 15% off"<br>
+        <em>Opening: "Welcome to the GlowUp family! We believe everyone deserves skincare that actually works — no gimmicks, no 47-step routines, no mystery ingredients. Just clean, clinically-tested formulas that deliver real results. As a thank you for joining, here is your exclusive 15% off code: GLOW15."</em><br><br>
+
+        <strong>Email 2 (Day 2): Education + Trust</strong><br>
+        Subject: "The 3 skincare mistakes most people make (and how to avoid them)"<br>
+        <em>Opening: "Did you know that 78% of people use their skincare products in the wrong order? It sounds small, but the sequence you apply your products determines whether they actually work. Here are the 3 most common mistakes we see..."</em><br><br>
+
+        <strong>Email 3 (Day 4): Social Proof + Soft Sell</strong><br>
+        Subject: "What 2,000+ customers say about their skin transformation"<br>
+        <em>Opening: "We love hearing from our customers — and this month alone, we received over 200 five-star reviews. Here is what real GlowUp users are saying about their results after just 30 days..."</em>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Exercise 4: Collection Page Description</h3>
+    <p><strong>Brief:</strong> Write a collection page description for "Men's Casual Shoes" on a WordPress/WooCommerce fashion store. Target keyword: "men's casual shoes online." Brand voice: modern, confident, minimal.</p>
+
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; margin: 15px 0;">
+        <strong>Model Answer:</strong><br><br>
+        <em>"Step out in style with our curated collection of men's casual shoes. From classic sneakers to modern loafers, each pair is designed for all-day comfort without compromising on looks. Crafted with premium materials and built to last, our casual shoes transition effortlessly from weekend brunches to office Fridays. Free shipping on orders over $75. Free returns within 30 days — because the perfect fit should be risk-free."</em><br><br>
+        <strong>Key elements:</strong> Target keyword in first sentence, benefit-focused language (comfort, versatility), trust signals (free shipping, free returns), lifestyle framing.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Exercise 5: Ad Copy (Meta/Facebook)</h3>
+    <p><strong>Brief:</strong> Write a Facebook ad for a Shopify development service targeting small business owners who want to launch an online store. Goal: Book a free consultation call.</p>
+
+    <div style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 10px; margin: 15px 0;">
+        <strong>Model Answer:</strong><br><br>
+        <strong>Hook:</strong> <em>"Your competitors are selling online 24/7. Are you?"</em><br>
+        <strong>Body:</strong> <em>"Launching a Shopify store does not have to be overwhelming. We have helped 200+ businesses go from zero to selling online in under 14 days. Custom design. SEO-optimized content. Mobile-ready. Everything you need to start making sales — without the technical headache."</em><br>
+        <strong>CTA:</strong> <em>"Book Your Free 15-Minute Strategy Call"</em><br>
+        <strong>Urgency:</strong> <em>"Only 5 spots available this week."</em>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🎓 Certification Checklist</h3>
+    <ul>
+        <li>☐ Exercise 1: Product Description — completed and reviewed</li>
+        <li>☐ Exercise 2: Blog Post Outline — completed and reviewed</li>
+        <li>☐ Exercise 3: Email Welcome Sequence — completed and reviewed</li>
+        <li>☐ Exercise 4: Collection Page Description — completed and reviewed</li>
+        <li>☐ Exercise 5: Ad Copy — completed and reviewed</li>
+        <li>☐ Final Quiz passed with 80%+ score</li>
+        <li>☐ Portfolio submitted to team lead for approval</li>
+    </ul>
+    <p style="color: #34D399; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">Once all items are checked, you are certified as a Digital Heroes Content Writer!</p>
+</div>
+`;
+
+// ============ QUIZ: TASK 12 ============
+const task12Quiz = [
+    { q: "A pillar page is:", o: ["A short blog post targeting one long-tail keyword", "A comprehensive guide (3,000-5,000 words) covering a broad topic with links to related cluster content", "The homepage of the website", "An about us page that establishes credibility"], c: 1 },
+    { q: "Topic clusters improve SEO because:", o: ["They increase the total word count on the site", "They allow you to publish more frequently", "Google recognizes topical authority when a pillar page links to multiple detailed subtopic pages", "They reduce the need for backlinks from external sites"], c: 2 },
+    { q: "Keyword cannibalization occurs when:", o: ["You use too many keywords on one page", "Multiple pages on your site compete for the same keyword, diluting each other's rankings", "A competitor targets your brand keywords", "Your keyword density exceeds 3%"], c: 1 },
+    { q: "Long-tail keywords (4+ words) are valuable because:", o: ["They have higher search volume than short keywords", "They are easier to spell correctly", "They have lower competition and higher conversion rates since the searcher has specific intent", "Google gives them bonus ranking points"], c: 2 },
+    { q: "SERP analysis before writing involves:", o: ["Only checking the number of search results", "Analyzing the top 10 results for content format, word count, subtopics covered, and content gaps you can fill", "Looking at Google Ads only to understand competition", "Checking if your domain already ranks for the keyword"], c: 1 },
+    { q: "A content calendar maps:", o: ["Only publishing dates for blog posts", "Keywords, topics, content types, and business goals over a strategic timeline", "Social media posts exclusively", "Employee vacation schedules for the content team"], c: 1 },
+    { q: "Content refresh strategy means:", o: ["Deleting old content and writing new posts", "Quarterly updates to top-performing pages with fresh data, expanded sections, and current information", "Changing the publish date to make content look recent", "Republishing the same content on different URLs"], c: 1 },
+    { q: "The Keyword Qualification Matrix evaluates keywords on:", o: ["Only search volume — higher is always better", "Search volume, competition level, intent match with the client offering, and business value", "Only competition level — lower is always better", "Only the number of words in the keyword phrase"], c: 1 },
+    { q: "A blog post ranks on page 3 after 2 months. The correct strategy is:", o: ["Delete it and write a completely new post on the same topic", "Wait — SEO takes 12+ months and there is nothing to do until then", "Analyze search console data, update content with better keyword targeting, improve internal linking, and add fresh sections", "Give up on that keyword since page 3 means the content is fundamentally flawed"], c: 2 },
+    { q: "Bounce rate of 85% on a blog post indicates:", o: ["The post is performing perfectly well for an informational query", "Readers are leaving quickly — likely the content does not match search intent or fails to engage", "The page is loading too fast", "The meta description is too long"], c: 1 },
+    { q: "When building a topic cluster for 'Shopify store design,' cluster content might include:", o: ["Only product descriptions for the store", "Posts like 'How to Choose Shopify Theme Colors,' 'Mobile-First Shopify Design Tips,' and 'Shopify Homepage Layout Best Practices'", "Unrelated posts about WordPress and Wix to cover all platforms", "A single FAQ page answering all subtopics at once"], c: 1 },
+    { q: "Content performance should be tracked against:", o: ["Only the number of words published per week", "Measurable KPIs including organic traffic, keyword ranking, bounce rate, time on page, and conversion rate", "Social media likes and shares exclusively", "Writer productivity metrics only — words per hour"], c: 1 }
+];
+
+// ============ QUIZ: TASK 13 ============
+const task13Quiz = [
+    { q: "At DH, every Shopify product description must be:", o: ["Copied from the manufacturer website to save time and ensure accuracy", "SEO-optimized, benefit-driven, brand-consistent, and conversion-focused with a clear CTA", "Under 50 words to match mobile browsing habits", "Written in formal academic English to appear professional"], c: 1 },
+    { q: "Collection page descriptions are important because:", o: ["Shopify requires them for the store to function properly", "They are SEO goldmines that establish category-level keyword relevance and guide browsing customers", "They replace the need for individual product descriptions", "Customers always read them before viewing products"], c: 1 },
+    { q: "A product title on Shopify should:", o: ["Include every possible keyword variation for maximum SEO coverage", "Be descriptive and keyword-rich, under 60 characters, clearly identifying the product", "Use only the brand name with no product details", "Be as creative and poetic as possible to stand out"], c: 1 },
+    { q: "Manufacturer descriptions should never be used directly because:", o: ["They are always poorly written and inaccurate", "Duplicate content from manufacturer sites creates SEO penalties — every description must be 100% original", "Manufacturers do not allow their descriptions to be used online", "They are too long for Shopify product pages"], c: 1 },
+    { q: "For a luxury skincare Shopify store, the product copy should focus on:", o: ["Low prices and budget-friendly messaging to attract more customers", "Craftsmanship story, ingredient quality, clinical results, and aspirational lifestyle language", "Technical ingredient lists and chemical formulas for informed buyers", "Comparison tables showing the product is cheaper than competitors"], c: 1 },
+    { q: "The WordPress/WooCommerce 'Short Description' field should contain:", o: ["The full product story with all benefits and specifications detailed thoroughly", "2-3 sentences — the hook, main benefit, and CTA — appearing next to the product image", "Only the product price and shipping information", "A duplicate of the long description for SEO purposes"], c: 1 },
+    { q: "Product bullet points should lead with:", o: ["The technical specification followed by the feature name", "The benefit first, then support with the feature — 'Never wait again (loads in 1.8s)'", "The price point of each feature as a standalone line item", "Marketing jargon to sound professional and impressive"], c: 1 },
+    { q: "Niche-specific copy strategy for Health & Wellness products requires:", o: ["Making bold medical claims to convince buyers of effectiveness", "Focusing on ingredient benefits, certifications, and clinical backing while avoiding unverified health claims", "Using the same approach as fashion or tech products since copywriting principles are universal", "Ignoring certifications since customers do not check them before purchasing"], c: 1 },
+    { q: "A product description passes QA but has no social proof element. This is a problem because:", o: ["Social proof is only needed on landing pages, not product pages", "Customers buy based on trust — reviews, ratings, and 'trusted by X customers' reduce purchase anxiety", "Social proof only matters for products over $100 in price", "Adding social proof makes the description too long for mobile viewing"], c: 1 },
+    { q: "Alt text on Shopify product images should:", o: ["Be left empty since Shopify auto-generates alt text for all product images", "Describe the image accurately while naturally including relevant keywords — serving both accessibility and SEO", "Repeat the product title exactly for every image on the page", "Include the product price and shipping information for screen readers"], c: 1 },
+    { q: "The difference between a product description that gets 2% conversion vs 5% conversion is usually:", o: ["The length — longer descriptions always convert better than shorter ones", "Transformation storytelling vs feature listing — the higher-converting version sells the outcome, not just the product", "The font size and color scheme used in the description formatting", "Whether the description uses bullet points or paragraphs exclusively"], c: 1 }
+];
+
+// ============ QUIZ: TASK 14 ============
+const task14Quiz = [
+    { q: "When a client says 'make it catchy,' your first step should be:", o: ["Start writing immediately using your own interpretation of catchy", "Ask for 2-3 examples of copy they consider catchy to align expectations before writing", "Use the most casual and humorous tone possible since catchy means funny", "Look at competitor sites and copy their style since the client probably wants something similar"], c: 1 },
+    { q: "The DH Content Brief Template should be used when:", o: ["Only when working with new clients who have never ordered before", "When clients do not provide a structured brief — gather all necessary information BEFORE writing", "Only for blog posts — product descriptions do not need briefs", "After the first draft is written — to check if it matches the brief"], c: 1 },
+    { q: "Client feedback says 'I don't like it.' The professional response is:", o: ["Argue that the content follows best practices and educate the client on why they are wrong", "Get defensive and point out that you followed the brief exactly as written", "Acknowledge the gap, ask specific clarifying questions about which sections need changes and why, then revise", "Immediately rewrite everything from scratch without asking any questions"], c: 2 },
+    { q: "A client requests a 4th round of revisions with new requirements not in the original brief. This is:", o: ["Normal client behavior that should be accommodated without question every time", "Scope creep — escalate to the PM and suggest framing additional work as a follow-up order", "A sign that the writer did a poor job and needs to improve their skills", "An opportunity to show flexibility by doing unlimited revisions for free"], c: 1 },
+    { q: "The first draft delivery message should include:", o: ["Only the files with no context or explanation of the work", "The deliverables, key strategic decisions made, revision expectations, and availability for changes", "An apology for any potential issues with the content quality", "A request for a 5-star review before the client has reviewed the content"], c: 1 },
+    { q: "Response time for a client message at DH is:", o: ["Same day — respond by end of business hours whenever convenient", "Under 2 hours — acknowledge receipt even if you need more time for a full response", "Within 1 week — clients understand that quality takes time to deliver", "Only during scheduled client meetings — avoid ad hoc communication"], c: 1 },
+    { q: "When a client asks for changes that go against SEO best practices, you should:", o: ["Follow their instructions without question since the client is always right", "Ignore their request and implement what you know is correct instead", "Explain the SEO impact professionally, offer an alternative approach, and let them decide with full information", "Escalate to the CEO immediately since SEO is non-negotiable"], c: 2 },
+    { q: "The scope creep response template suggests:", o: ["Saying no directly and firmly to any additional requests beyond the original order", "Framing extra work positively as an additional project that deserves dedicated attention and resources", "Accepting all extra work without mentioning scope to maintain client happiness", "Ignoring the extra request and hoping the client forgets about it"], c: 1 },
+    { q: "Handling unclear feedback effectively requires:", o: ["Guessing what the client wants based on your experience with similar projects", "Asking specific questions: which sections need changes, is it tone/structure/wording, and do they have examples", "Waiting for the client to provide more detailed feedback on their own timeline", "Implementing the most common interpretation and hoping it matches their vision"], c: 1 },
+    { q: "An urgent client escalation requires a response within:", o: ["24 hours — escalations are treated like standard revision requests", "Under 15 minutes — drop everything and respond with a status update", "1 hour — same as a manager message", "By the next business day — urgency does not change response protocols"], c: 1 },
+    { q: "The DH communication standard requires writers to be:", o: ["Professional, specific, and proactive — with concrete ETAs instead of vague promises", "Casual and friendly — matching the client's communication style always", "Brief and minimal — only respond when absolutely necessary", "Formal and corporate — never use contractions or informal language"], c: 0 }
+];
+
+// ============ QUIZ: TASK 15 ============
+const task15Quiz = [
+    { q: "At Digital Heroes, marketplace delivery quality matters because:", o: ["Marketplace profiles have no impact on order volume or pricing", "5-star reviews lead to higher profile ranking, more orders, and premium pricing — one bad delivery can tank months of progress", "Only the first 3 orders matter for profile ranking after that it stabilizes", "Marketplace algorithms only look at delivery speed, not content quality"], c: 1 },
+    { q: "When assigned a new order, your first action as a content writer should be:", o: ["Start writing immediately to impress with speed of delivery", "Review requirements and clarify any questions within 2 hours of assignment", "Wait for the PM to provide detailed instructions before doing anything", "Forward the order to a senior writer for initial review and guidance"], c: 1 },
+    { q: "A professional delivery message should include:", o: ["Only the files — no explanation needed since the work speaks for itself", "List of deliverables, key strategic decisions, SEO/brand alignment confirmation, and openness to revisions", "An apology for not delivering sooner along with excuses for the timeline", "A request for a tip and a 5-star review before the client opens the files"], c: 1 },
+    { q: "Standard turnaround for 10 product descriptions is:", o: ["Same day — product descriptions are quick to write", "2-3 business days standard, 1 business day for express orders", "1-2 weeks since quality content requires extensive research", "There is no standard — it depends entirely on the writer's mood and schedule"], c: 1 },
+    { q: "If you cannot meet a delivery deadline, the correct action is:", o: ["Inform the PM immediately with the new ETA, reason, and proposed solution — never wait until the last minute", "Submit whatever you have finished even if it is incomplete or unpolished", "Wait until the deadline passes and then apologize with an explanation", "Ask a teammate to finish your work without telling the PM about the issue"], c: 0 },
+    { q: "Over-delivering on marketplace orders means:", o: ["Writing 50% more words than ordered to show effort and dedication", "Including thoughtful bonus value like a keyword list or content calendar suggestion that creates client delight", "Delivering a day early even if the quality suffers from rushing", "Adding personal opinions and recommendations the client did not ask for"], c: 1 },
+    { q: "Content should be delivered in:", o: ["Whatever format is easiest for the writer to export from their tools", "The format the client expects — Google Docs, Word, plain text, or directly in their CMS", "PDF only since it preserves formatting across all devices perfectly", "Only as a screenshot of the content for the client to type up themselves"], c: 1 },
+    { q: "Follow-up after delivery should happen:", o: ["Only if the client complains about something specific", "Never — following up makes you look insecure about the quality of your work", "24-48 hours after delivery to check if adjustments are needed", "Immediately after delivery — within 5 minutes to show attentiveness"], c: 2 },
+    { q: "The order lifecycle for content writers includes:", o: ["Only the writing phase — everything else is handled by other team members", "Order received, brief review, content creation, internal QA, and client delivery with revision availability", "Order received and immediate delivery with no review steps in between", "Only writing and client delivery — internal QA slows down the process unnecessarily"], c: 1 },
+    { q: "Zero tolerance for typos in delivered orders exists because:", o: ["Clients rarely notice typos so it does not actually matter for ratings", "One typo in a delivered order signals unprofessionalism and can lead to negative reviews damaging the profile", "Grammar perfection is the only metric clients evaluate content on", "Typos are acceptable if the overall message is clear and compelling"], c: 1 },
+    { q: "A delivery with extras (upsell opportunity) might include:", o: ["Random content the client never asked for to pad the delivery", "Free bonus items like SEO meta descriptions and a keyword map, with a suggestion for a follow-up project", "An invoice for additional work the client did not order or approve", "Links to your personal portfolio and social media profiles"], c: 1 }
+];
+
+// ============ QUIZ: TASK 16 ============
+const task16Quiz = [
+    { q: "The BAB (Before-After-Bridge) framework works by:", o: ["Listing product features in alphabetical order for easy scanning", "Painting the reader's current pain (Before), showing the desired outcome (After), and positioning your product as the connection (Bridge)", "Starting with the price and ending with a discount code", "Using only questions throughout the entire copy to engage curiosity"], c: 1 },
+    { q: "A/B testing in copywriting means:", o: ["Writing two completely different pieces and publishing both simultaneously", "Testing one variable at a time (headline, CTA, or social proof) with the same audience to measure which performs better", "Alternating between two different writing styles every week", "Having two writers create competing versions and choosing the longer one"], c: 1 },
+    { q: "Cialdini's 'Scarcity' principle in copy looks like:", o: ["Hiding the product price until the checkout page to create suspense", "'Only 3 left in stock' or 'Offer expires midnight' — creating fear of missing out drives action", "Making the product difficult to find on the website so it feels exclusive", "Never mentioning the product quantity since it reduces buyer confidence"], c: 1 },
+    { q: "The 4 Ps framework stands for:", o: ["Price, Product, Place, Promotion — the marketing mix", "Promise, Picture, Proof, Push — a conversion copy structure", "Plan, Prepare, Produce, Publish — a content workflow", "Problem, Process, People, Performance — a management framework"], c: 1 },
+    { q: "CTA button text 'Get Yours Today' outperforms 'Buy Now' because:", o: ["It uses more words which makes it more visible on the page", "'Get Yours' creates ownership psychology and 'Today' adds urgency — while 'Buy' emphasizes spending money", "Google ranks pages higher when CTA buttons have longer text", "There is no difference — both perform equally well in all contexts"], c: 1 },
+    { q: "Headline formula: 'How to [Desired Outcome] Without [Pain Point]' works because:", o: ["It is the longest headline format which gets more clicks in search results", "It addresses the reader's goal AND removes their main objection simultaneously", "The word 'How' is the highest-performing first word in all headlines", "Without the pain point the headline would be too short to rank well"], c: 1 },
+    { q: "Social proof using specific numbers ('Trusted by 2,847 store owners') outperforms vague claims ('Trusted by many customers') because:", o: ["Odd numbers are psychologically more trustworthy than round numbers", "Specific numbers demonstrate precision and credibility — vague claims feel unsubstantiated", "Google gives higher rankings to pages with specific numbers in the copy", "Customers count the reviews to verify the exact number is accurate"], c: 1 },
+    { q: "A landing page should handle objections by:", o: ["Ignoring them — addressing objections makes customers think of reasons not to buy", "Including a FAQ section that proactively addresses common concerns and doubts", "Listing all possible negatives about the product for full transparency", "Redirecting objections to a separate page so they do not distract from the main offer"], c: 1 },
+    { q: "The high-converting landing page structure starts with:", o: ["A detailed company history section establishing credibility and background", "A hero section with benefit headline, subheadline explaining how, CTA button, and hero image", "A price comparison table showing how you beat all competitors", "A long testimonial section before any product information is shown"], c: 1 },
+    { q: "A 1% conversion rate improvement on a store doing $100,000/month equals:", o: ["$100 extra per month — negligible impact on the business", "$1,000 extra per month — $12,000/year from copy changes alone", "$10,000 extra per month — transformative for any business", "No financial impact — conversion rate does not affect revenue directly"], c: 1 },
+    { q: "The PASTOR framework is best suited for:", o: ["Short social media captions under 280 characters", "Product bullet points on e-commerce pages", "Long-form sales pages and landing pages that guide readers from awareness to action", "Email subject lines that need to be concise and punchy"], c: 2 },
+    { q: "Cialdini's 'Reciprocity' principle in content marketing means:", o: ["Always matching the competitor's pricing to be fair to customers", "Giving value first (free guide, tips, resources) before asking for the sale — people feel obligated to reciprocate", "Requiring customers to leave a review before they can purchase again", "Copying the competitor's strategy exactly since they were first to market"], c: 1 }
+];
+
+// ============ QUIZ: TASK 17 ============
+const task17Quiz = [
+    { q: "The DH Career Philosophy states that growth equals:", o: ["Time served — the longer you work, the higher your position", "Skill Development + Consistent Output + Business Impact — demonstrated mastery, not tenure", "Networking with management and attending company events regularly", "Publishing the most content per week regardless of quality or impact"], c: 1 },
+    { q: "At Level 3 (Content Writer), writers are expected to:", o: ["Only execute assigned tasks without client interaction", "Handle client-facing communication, content strategy input, and independent quality work", "Manage a team of junior writers and set quality standards", "Focus exclusively on blog post writing with no other content types"], c: 1 },
+    { q: "The Conversion Copywriter specialization path focuses on:", o: ["Only writing blog posts optimized for SEO and organic traffic", "Sales pages, product descriptions, ad copy, A/B testing, and data-driven conversion optimization", "Managing other writers and setting team schedules and deadlines", "Brand voice guide development and UX microcopy exclusively"], c: 1 },
+    { q: "A portfolio piece should include:", o: ["Only the final content with no context about the project or results", "The brief/objective, strategic approach, final content, and results if available", "A screenshot of the published content with no additional information", "Only pieces that received positive client feedback — hide anything that needed revisions"], c: 1 },
+    { q: "The recommended daily learning habit for content writers is:", o: ["Spending 4 hours on online courses to maximize skill development speed", "Reading 1 well-performing product page or blog post and analyzing WHY it works", "Writing practice content that will never be published or reviewed by anyone", "No daily learning is needed — training ends after certification is complete"], c: 1 },
+    { q: "DH provides a learning budget of:", o: ["No learning budget — professional development is the employee's responsibility", "Up to Rs 5,000 per year for approved courses and certifications", "Unlimited budget for any course the writer wants to take", "Rs 50,000 per month for mandatory training programs"], c: 1 },
+    { q: "A Senior Content Writer (L4) requires:", o: ["Only 3 months of employment — time in role is the primary factor", "12 months of experience plus proven conversion impact and ability to QA junior writers", "A degree in English or Journalism from an accredited university", "Management approval only — no specific skill requirements beyond basic writing"], c: 1 },
+    { q: "The Brand Voice & UX Writer specialization involves:", o: ["Only writing long-form blog posts about branding topics for client websites", "Developing brand voice guides, writing microcopy (buttons, error messages), and cross-functional work with design teams", "Managing the company social media accounts and responding to comments", "Exclusively editing other writers' work without creating original content"], c: 1 },
+    { q: "Quarterly portfolio updates are important because:", o: ["HR requires them for compliance and record-keeping purposes", "They keep your best recent work visible, showing growth and current skill level to management", "They are only needed when applying for external jobs outside of DH", "Portfolio updates only matter for freelancers, not agency employees"], c: 1 },
+    { q: "The Content Lead / Strategist (L5) role involves:", o: ["Only writing content at a higher volume than junior writers", "Content strategy development, team management, and client relationship building", "Exclusively reviewing other writers' work without any strategic responsibilities", "Only working with the highest-paying clients while ignoring smaller accounts"], c: 1 },
+    { q: "A writer who delivers exceptional work for 6 months vs average work for 2 years:", o: ["The 2-year writer advances first since seniority determines promotions at DH", "The 6-month exceptional writer advances faster — demonstrated mastery trumps tenure", "Both advance at the same rate since DH uses a time-based promotion system", "Neither advances — promotions only happen during annual review cycles"], c: 1 }
+];
+
+// ============ QUIZ: TASK 18 ============
+const task18Quiz = [
+    { q: "Exercise 1 requires a product description using the PAS formula. The correct PAS order is:", o: ["Promise, Action, Sale — make a promise then push for the purchase immediately", "Problem, Agitate, Solve — identify the pain, intensify it, then present the product as the solution", "Product, Advantage, Summary — describe the product, list advantages, then summarize", "Persuade, Attract, Sell — persuade the reader, attract attention, then close the sale"], c: 1 },
+    { q: "A benefit-focused headline for a bamboo cutting board should emphasize:", o: ["The exact dimensions and weight of the cutting board in the headline", "The transformation or outcome — like 'Cook with Confidence' rather than '12x8 inch bamboo board'", "The manufacturing process and supply chain details", "The price point compared to competitor bamboo cutting boards"], c: 1 },
+    { q: "An SEO-optimized blog post title must:", o: ["Be as long as possible to include every keyword variation for the topic", "Include the target keyword, be under 60 characters, and promise specific value to the reader", "Use only questions since question-format titles always rank higher than statements", "Start with the brand name followed by the topic for brand recognition"], c: 1 },
+    { q: "In the email welcome sequence model, Email 1 should:", o: ["Immediately push a hard sell with product links and discount pressure", "Welcome the subscriber, provide immediate value (discount code), and set expectations", "Ask the subscriber to fill out a detailed survey about their preferences", "Include a list of all products available in the store sorted by price"], c: 1 },
+    { q: "A collection page description for 'Men's Casual Shoes' should include:", o: ["A 500-word essay about the history of men's footwear from ancient times to today", "Target keyword in the first sentence, benefit-focused language, trust signals, and lifestyle framing", "Only the brand name and a link to the size chart for the collection", "Technical specifications of every shoe material used across all products"], c: 1 },
+    { q: "A Facebook ad for a Shopify development service should follow:", o: ["Hook (stop the scroll), Problem, Solution, CTA, Urgency — with specific numbers and clear next steps", "A 1,000-word detailed explanation of every service offered by the company", "Only an image with no text since Meta penalizes text-heavy advertisements", "A formal business letter format addressing the reader as 'Dear Valued Customer'"], c: 0 },
+    { q: "The model answer for Exercise 1 bullet points demonstrates:", o: ["Feature-only listing with technical specifications and measurements", "Benefit-led format — stating the outcome first, then supporting with the feature in parentheses", "Only emotional language with no factual product information whatsoever", "Manufacturer specifications copied directly from the product packaging"], c: 1 },
+    { q: "Exercise 2 blog outline requires internal linking opportunities because:", o: ["Google requires a minimum of 10 internal links for any blog post to be indexed", "Internal links drive readers deeper into the site to discover products and services — converting traffic into leads", "Internal links are only for navigation purposes and have no SEO impact", "Clients always request internal links even though they serve no business purpose"], c: 1 },
+    { q: "Email 3 in the welcome sequence uses social proof because:", o: ["Social proof is the only persuasion technique that works in email marketing", "At the soft-sell stage, showing real customer results reduces purchase anxiety and builds trust", "Subscribers cannot be sold to without showing exactly 200 five-star reviews", "Social proof replaces the need for any product description or value proposition"], c: 1 },
+    { q: "The certification checklist requires all 5 exercises plus:", o: ["Only exercise completion — no quiz or portfolio submission is needed for certification", "Passing the final quiz with 80%+ and submitting the portfolio to a team lead for approval", "Writing an additional 10 blog posts on any topic of your choice", "Completing a 30-day internship project before receiving the certification"], c: 1 },
+    { q: "A meta description for a product page should:", o: ["Be auto-generated by the CMS to save time and maintain consistency", "Be unique per product, under 160 characters, include the target keyword, and end with a CTA or trust signal", "Repeat the product title three times for maximum keyword density impact", "Be identical across all products in the same collection for brand consistency"], c: 1 },
+    { q: "The model ad copy for Exercise 5 includes '200+ businesses' and '14 days' because:", o: ["Round numbers are always more trustworthy than specific odd numbers", "Specific numbers (social proof + timeline) build credibility and set concrete expectations", "Meta requires specific numbers in all ad copy for approval", "Smaller numbers perform better than larger ones in advertising copy"], c: 1 }
+];
+
 // Expose all content and quiz variables to window for app lookup
 window.task1Content = task1Content;
 window.task2Content = task2Content;
@@ -1124,6 +2291,13 @@ window.task8Content = task8Content;
 window.task9Content = task9Content;
 window.task10Content = task10Content;
 window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -1135,6 +2309,13 @@ window.task8Quiz = task8Quiz;
 window.task9Quiz = task9Quiz;
 window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
+window.task12Quiz = task12Quiz;
+window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -1147,5 +2328,12 @@ const allQuizzes = [
     task8Quiz,
     task9Quiz,
     task10Quiz,
-    task11Quiz
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];

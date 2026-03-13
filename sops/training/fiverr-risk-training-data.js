@@ -1,5 +1,5 @@
-// Fiverr Risk Manager Training Data - Digital Heroes
-// 10 Tasks, 100 Quiz Questions
+// Marketplace Risk Manager Training Data - Digital Heroes
+// 18 Tasks, 200+ Quiz Questions
 
 const trainingTasks = [
     { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
@@ -10,9 +10,16 @@ const trainingTasks = [
     { id: 6, title: "Bonus Messages", description: "Review Follow-Up", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🎁 When: After order completion", "🚫 When NOT: Work in progress", "⭐ Goal: Maximize 5-star reviews"] },
     { id: 7, title: "Cancelled Orders", description: "Ticket Management", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🎫 Rule: EVERY cancellation = ticket", "🛡️ Request: Metric removal + compensation", "📋 Process: 5-step filing"] },
     { id: 8, title: "Cancellation Strategy", description: "Defense Playbook", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🚨 Rule: NEVER accept cancellations", "💬 Skill: Client conversation templates", "📨 Template: Support ticket"] },
-    { id: 9, title: "Brief Response", description: "Lead Conversion", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🔔 Source: Fiverr Briefs/Matches", "📋 Pitch: Portfolio message", "⏰ Rule: Respond to ALL"] },
+    { id: 9, title: "Brief Response", description: "Lead Conversion", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🔔 Source: Platform Briefs/Matches", "📋 Pitch: Portfolio message", "⏰ Rule: Respond to ALL"] },
     { id: 10, title: "Delivery Risk", description: "Escalation Protocol", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "⚠️ Flag: Due within 48 hours", "🚨 Escalation: Red flags", "📞 Chain: Who to notify"] },
-    { id: 11, title: "Final Assessment", description: "Certification Exam", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "📝 Exam: 10 questions, ALL modules", "🎯 Score: 10/10 required", "🎓 Reward: Risk Manager Certificate"] }
+    { id: 11, title: "Platform Policies", description: "ToS & Compliance Rules", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📜 ToS: Prohibited actions & violations", "💬 Communication: On-platform rules", "🔒 Content: Guidelines & restrictions"] },
+    { id: 12, title: "Dispute Resolution", description: "Order Disputes & Escalation", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🔄 Cancellation: Mutual vs forced", "📋 Evidence: Documentation standards", "🎫 Escalation: Support ticket workflow"] },
+    { id: 13, title: "Account Health", description: "Metrics & Level System", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📊 Metrics: Response, delivery, completion rates", "⭐ Ratings: Order rating impact", "🏆 Levels: Progression & demotion triggers"] },
+    { id: 14, title: "Chargeback Protection", description: "Payment Risk Management", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "💳 Chargebacks: Identification & prevention", "📄 Documentation: Proof of delivery", "🚨 Escalation: Platform support workflow"] },
+    { id: 15, title: "Multi-Account Compliance", description: "Agency & Team Management", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "👥 Agency: Account structure & access", "🔐 Compliance: Portfolio & identity rules", "📋 Team: Member access management"] },
+    { id: 16, title: "Career Growth", description: "Risk Management Career Path", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🚀 Path: Junior to Senior Risk Manager", "📈 Skills: Advanced risk competencies", "🎯 Goals: KPI targets & leadership"] },
+    { id: 17, title: "Risk Scenarios", description: "Practical Assessment", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "🎯 Scenarios: 8 real-world situations", "📝 Responses: Model answers & reasoning", "🧠 Apply: All modules combined"] },
+    { id: 18, title: "Final Assessment", description: "Certification Exam", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "📝 Exam: 10 questions, ALL modules", "🎯 Score: 10/10 required", "🎓 Reward: Risk Manager Certificate"] }
 ];
 
 
@@ -620,33 +627,602 @@ const task10Content = `
 `;
 
 const task11Content = `
-<h2> TASK 10: FINAL ASSESSMENT — Certification Exam</h2>
+<h2>📚 TASK 11: PLATFORM POLICY DEEP DIVE — Terms of Service & Compliance</h2>
 
-<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15)); border: 2px solid rgba(99, 102, 241, 0.4); padding: 30px; border-radius: 16px;">
-    <h3 style="color: #A78BFA; margin-top: 0;"> Congratulations — You've Reached the Final Exam!</h3>
-    <p>This assessment covers ALL modules you've studied. You must score <strong>10/10</strong> to earn your Fiverr Risk Manager Certificate.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(99, 102, 241, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📜 Why Platform Policies Matter</h3>
+    <p>Understanding the marketplace platform's Terms of Service (ToS) is <strong>non-negotiable</strong> for a Risk Manager. A single policy violation can result in account suspension, revenue loss, or permanent bans. You are the first line of defense against policy breaches.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">Key Principle:</strong> Ignorance of platform rules is NEVER an excuse. Every team member who touches a seller account must understand what is and is not allowed.
+    </div>
 </div>
 
 <div class="content-section">
-    <h3> Review Checklist</h3>
+    <h3>🚫 Prohibited Actions — Zero Tolerance</h3>
+    <p>The following actions will trigger immediate penalties from the platform's Trust & Safety team:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(239, 68, 68, 0.3);"><th style="padding: 12px; text-align: left;">Violation</th><th style="padding: 12px; text-align: left;">Consequence</th><th style="padding: 12px; text-align: left;">Recovery</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Off-platform communication</strong> — sharing email, phone, Skype, WhatsApp</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">Account warning or suspension</span></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Appeal with context; rarely reversed on repeat offense</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Payment outside platform</strong> — accepting PayPal, crypto, bank transfer</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">Permanent ban</span></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">No recovery — account permanently terminated</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Fake reviews / review manipulation</strong> — buying reviews, review exchanges</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">Permanent ban</span></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">No recovery</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Duplicate accounts</strong> — creating multiple accounts per individual</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">All accounts banned</span></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">No recovery — IP flagged</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Spam / unsolicited offers</strong> — mass messaging buyers</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">Warning then suspension</span></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Appeal possible for first offense</td></tr>
+            <tr><td style="padding: 10px;"><strong>Misleading gig descriptions</strong> — fake portfolios, stolen work</td><td style="padding: 10px;"><span style="color: #EF4444;">Gig removal + account warning</span></td><td style="padding: 10px;">Replace with original work; appeal possible</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">💬 Communication Rules — What You Can and Cannot Say</h3>
     <ul>
-        <li> Task 1: Risk Manager Role — mission, accounts, objectives</li>
-        <li> Task 2: Daily Health Check — 7-item per-account checklist</li>
-        <li> Task 3: Daily Reporting — per-account format, mandatory rules</li>
-        <li> Task 4: Feedback Tracker — Google Sheet, 30-day rule</li>
-        <li> Task 5: Bonus Messages — when to send, when NOT to send</li>
-        <li> Task 6: Cancelled Orders — 5-step ticket filing, metric removal</li>
-        <li> Task 7: Cancellation Strategy — 3-step defense, conversation templates</li>
-        <li> Task 8: Brief Response — respond to ALL, portfolio pitch</li>
-        <li> Task 9: Delivery Risk — 48-hour window, escalation levels</li>
+        <li><strong>NEVER</strong> share personal contact information (email, phone, social media handles) in messages</li>
+        <li><strong>NEVER</strong> mention competing platforms by name in conversations</li>
+        <li><strong>NEVER</strong> discuss payment arrangements outside the platform's order system</li>
+        <li><strong>ALWAYS</strong> keep all project communication within the platform messaging system</li>
+        <li><strong>ALWAYS</strong> use professional, respectful language — threats or harassment trigger instant review</li>
+        <li><strong>ALLOWED:</strong> Sharing portfolio links, Google Drive links for deliverables, Loom videos for walkthroughs</li>
+    </ul>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Warning:</strong> The platform uses automated keyword scanning on messages. Words like "PayPal," "email me at," "WhatsApp," or "pay directly" trigger automatic flags even in innocent contexts.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Content Guidelines for Gig Listings</h3>
+    <ul>
+        <li><strong>Original work only</strong> — all portfolio samples must be work you actually created</li>
+        <li><strong>Accurate descriptions</strong> — deliverables, timelines, and revision counts must match what you deliver</li>
+        <li><strong>No misleading pricing</strong> — do not advertise low prices then upsell essential features as extras</li>
+        <li><strong>Appropriate imagery</strong> — no copyrighted images, stock photos without license, or misleading before/after comparisons</li>
+        <li><strong>Category accuracy</strong> — gigs must be listed in the correct category and subcategory</li>
     </ul>
 </div>
 
 <div class="content-section" style="background: rgba(16, 185, 129, 0.1); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
-    <h3 style="color: #10B981;"> What You'll Earn</h3>
+    <h3 style="color: #10B981;">🛡️ Proactive Compliance — Risk Manager's Checklist</h3>
+    <ol>
+        <li><strong>Weekly gig audit</strong> — review all active gig descriptions for accuracy and policy compliance</li>
+        <li><strong>Message scan</strong> — ensure no team member has shared off-platform contact info</li>
+        <li><strong>Portfolio verification</strong> — confirm all samples are genuine DH work, not client work reused without permission</li>
+        <li><strong>Policy update monitoring</strong> — check for platform policy changes monthly and brief the team</li>
+        <li><strong>Incident log</strong> — maintain a record of any warnings or flags received with resolution steps taken</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>📝 Ready for the Quiz?</h3>
+    <ul><li>📋 10 questions about Platform Policies & Compliance</li><li>🎯 Score <strong>10/10</strong> to proceed</li></ul>
+</div>
+`;
+
+const task12Content = `
+<h2>📚 TASK 12: ORDER DISPUTE RESOLUTION — Handling Conflicts Professionally</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(3, 105, 161, 0.15)); border: 2px solid rgba(14, 165, 233, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #38BDF8; margin-top: 0;">⚖️ Disputes Are Inevitable — Your Response Defines the Outcome</h3>
+    <p>Even with perfect work, disputes happen. Miscommunication, scope creep, buyer remorse, and unmet expectations all lead to conflicts. A Risk Manager's job is to <strong>resolve disputes in a way that protects account health while maintaining client relationships</strong>.</p>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Types of Order Disputes</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(14, 165, 233, 0.3);"><th style="padding: 12px; text-align: left;">Type</th><th style="padding: 12px; text-align: left;">Description</th><th style="padding: 12px; text-align: left;">Frequency</th><th style="padding: 12px; text-align: left;">Risk Level</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Scope Dispute</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Client expects more than what was agreed</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Most common</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #F59E0B;">MEDIUM</span></td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Quality Dispute</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Client claims work quality is below standard</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Common</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">HIGH</span></td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Timeline Dispute</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Late delivery or revision delays</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Moderate</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #EF4444;">HIGH</span></td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Communication Dispute</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Buyer feels ignored or misunderstood</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Common</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span style="color: #F59E0B;">MEDIUM</span></td></tr>
+            <tr><td style="padding: 10px;"><strong>Fraudulent Dispute</strong></td><td style="padding: 10px;">Buyer attempts to get work for free</td><td style="padding: 10px;">Rare</td><td style="padding: 10px;"><span style="color: #EF4444;">CRITICAL</span></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔧 The 5-Step Dispute Resolution Framework</h3>
+    <ol>
+        <li><strong>ACKNOWLEDGE</strong> — Respond within 2 hours. Show empathy: "I understand your concern and want to make this right."</li>
+        <li><strong>INVESTIGATE</strong> — Review the original brief, all messages, deliverables, and the gig description. Identify where expectations diverged.</li>
+        <li><strong>DOCUMENT</strong> — Screenshot everything: the original order requirements, your delivery, all communication. Evidence is your shield.</li>
+        <li><strong>PROPOSE</strong> — Offer a concrete solution: revision, partial scope adjustment, or timeline extension. Never jump to cancellation.</li>
+        <li><strong>ESCALATE</strong> — If mutual resolution fails, file a support ticket with full documentation. Let the platform mediate.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>📋 Evidence Documentation Standards</h3>
+    <p>When a dispute arises, gather these items <strong>immediately</strong> (before any data is lost):</p>
     <ul>
-        <li> <strong>Fiverr Risk Manager Certificate</strong> — printable and downloadable</li>
-        <li> <strong>Official certification</strong> recognized by Digital Heroes</li>
+        <li>Screenshot of the <strong>original order requirements</strong> and gig description at time of purchase</li>
+        <li>Screenshot of <strong>all messages</strong> between you and the buyer — sorted chronologically</li>
+        <li>Screenshot of <strong>delivery files</strong> — timestamps showing on-time delivery</li>
+        <li>Screenshot of <strong>revision history</strong> — what was requested, what was delivered</li>
+        <li>Any <strong>third-party evidence</strong> — Loom recordings, Google Doc edit history, version control logs</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: rgba(14, 165, 233, 0.1); border-left: 4px solid #0EA5E9; padding: 20px; border-radius: 8px;">
+    <h3 style="color: #38BDF8;">💬 Dispute Response Template</h3>
+    <p><em>"Hi [Client], I appreciate you sharing your concerns. I take your feedback seriously and want to ensure you're completely satisfied. After reviewing the order details, I'd like to propose [specific solution]. I'm committed to delivering quality work that meets your expectations. Could we discuss the best path forward?"</em></p>
+</div>
+
+<div class="content-section" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 20px; border-radius: 8px;">
+    <h3 style="color: #F87171;">🚨 When to Escalate to Platform Support</h3>
+    <ul>
+        <li>Buyer is using <strong>threatening or abusive language</strong></li>
+        <li>Buyer is attempting to <strong>extort</strong> (threatening bad review for free work)</li>
+        <li>Buyer has <strong>used the delivered work</strong> and still requests cancellation</li>
+        <li>Mutual resolution attempts have failed after <strong>3 back-and-forth messages</strong></li>
+        <li>The dispute involves <strong>intellectual property claims</strong></li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📝 Ready for the Quiz?</h3>
+    <ul><li>📋 10 questions about Order Dispute Resolution</li><li>🎯 Score <strong>10/10</strong> to proceed</li></ul>
+</div>
+`;
+
+const task13Content = `
+<h2>📚 TASK 13: ACCOUNT HEALTH & METRICS MANAGEMENT</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📊 Your Account Health IS Your Business Health</h3>
+    <p>On freelance marketplace platforms, your seller level determines your <strong>search visibility, badge display, and earning potential</strong>. A demotion can cut incoming orders by 40-60%. As a Risk Manager, you must understand every metric and how to protect them.</p>
+</div>
+
+<div class="content-section">
+    <h3>📈 The Five Critical Metrics</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(16, 185, 129, 0.3);"><th style="padding: 12px; text-align: left;">Metric</th><th style="padding: 12px; text-align: left;">Target</th><th style="padding: 12px; text-align: left;">Danger Zone</th><th style="padding: 12px; text-align: left;">Impact</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Response Rate</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">90%+</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Below 90%</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Gig visibility drops, level demotion risk</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>On-Time Delivery</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">90%+</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Below 90%</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Direct level demotion trigger</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Order Completion</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">90%+</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Below 90%</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Cancellations crush this metric</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Order Rating</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">4.7+</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Below 4.7</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Affects search ranking and buyer trust</td></tr>
+            <tr><td style="padding: 10px;"><strong>Unique Clients</strong></td><td style="padding: 10px;">Growing month-over-month</td><td style="padding: 10px;">Stagnant or declining</td><td style="padding: 10px;">Indicates market position health</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🏆 Seller Level System</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(139, 92, 246, 0.3);"><th style="padding: 12px; text-align: left;">Level</th><th style="padding: 12px; text-align: left;">Requirements</th><th style="padding: 12px; text-align: left;">Benefits</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>New Seller</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Starting level</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Basic visibility, limited gig extras</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Level 1</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">60 days active, 10+ orders, $400+ earned, 4.7+ rating, all metrics above 90%</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">More gig extras, priority support</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Level 2</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">120 days active, 50+ orders, $2000+ earned, 4.7+ rating, all metrics above 90%</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Featured gigs, higher pricing, custom offers</td></tr>
+            <tr><td style="padding: 10px;"><strong>Top Rated</strong></td><td style="padding: 10px;">180 days active, $20,000+ earned, 100+ orders, exceptional metrics</td><td style="padding: 10px;">Maximum visibility, TRS badge, VIP support, early feature access</td></tr>
+        </tbody>
+    </table>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Demotion Warning:</strong> Levels are evaluated every 30 days. If ANY metric drops below threshold during the evaluation period, you are demoted. Climbing back takes another full evaluation cycle.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔧 Metric Recovery Strategies</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(14, 165, 233, 0.3);"><th style="padding: 12px; text-align: left;">Metric in Danger</th><th style="padding: 12px; text-align: left;">Recovery Action</th><th style="padding: 12px; text-align: left;">Timeline</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Response Rate low</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Reply to ALL messages within 24 hours including spam; use the platform app for instant mobile replies</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">60 days rolling window</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>On-Time Delivery low</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Extend delivery times in gigs, request extensions BEFORE deadline, deliver early when possible</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">60 days rolling window</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Completion Rate low</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Prevent ALL cancellations (use defense playbook), file tickets for metric removal on unavoidable ones</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">60 days rolling window</td></tr>
+            <tr><td style="padding: 10px;"><strong>Rating low</strong></td><td style="padding: 10px;">Over-deliver on every order, use bonus message strategy, respond to private feedback constructively</td><td style="padding: 10px;">Gradual improvement with each new order</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid #F59E0B; padding: 20px; border-radius: 8px;">
+    <h3 style="color: #FBBF24;">📊 Daily Metrics Dashboard Routine</h3>
+    <p>Every morning as part of your health check, record these numbers for each account:</p>
+    <ol>
+        <li>Response Rate percentage</li>
+        <li>On-Time Delivery percentage</li>
+        <li>Order Completion percentage</li>
+        <li>Overall Rating (public + private)</li>
+        <li>Current Seller Level</li>
+        <li>Days until next evaluation</li>
+    </ol>
+    <p><strong>Track trends week-over-week.</strong> A 1% drop today is a 5% drop next week if the root cause is not addressed.</p>
+</div>
+
+<div class="content-section">
+    <h3>📝 Ready for the Quiz?</h3>
+    <ul><li>📋 10 questions about Account Health & Metrics</li><li>🎯 Score <strong>10/10</strong> to proceed</li></ul>
+</div>
+`;
+
+const task14Content = `
+<h2>📚 TASK 14: CHARGEBACK & PAYMENT PROTECTION</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.15)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">💳 Chargebacks — The Silent Account Killer</h3>
+    <p>A chargeback occurs when a buyer disputes a payment through their bank or credit card company, <strong>bypassing the platform entirely</strong>. Unlike cancellations, chargebacks are resolved by financial institutions, not the marketplace. They can result in <strong>funds being forcibly withdrawn from your account, warnings, and even permanent suspension</strong>.</p>
+</div>
+
+<div class="content-section">
+    <h3>🔍 How Chargebacks Happen</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(239, 68, 68, 0.3);"><th style="padding: 12px; text-align: left;">Scenario</th><th style="padding: 12px; text-align: left;">Buyer Action</th><th style="padding: 12px; text-align: left;">Impact on Seller</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Buyer Remorse</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Buyer disputes charge with bank after receiving work</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Funds withdrawn, account flagged</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Stolen Credit Card</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Card owner disputes unauthorized transaction</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Funds withdrawn, no fault but still impacted</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Friendly Fraud</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Buyer deliberately gets work AND refund via bank</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Funds withdrawn, buyer may be banned</td></tr>
+            <tr><td style="padding: 10px;"><strong>Misunderstanding</strong></td><td style="padding: 10px;">Buyer does not recognize charge on bank statement</td><td style="padding: 10px;">Temporary hold, usually resolved</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🚩 Red Flags — Identifying Chargeback Risk Before It Happens</h3>
+    <ul>
+        <li><strong>New buyer, high-value order, no communication</strong> — potential stolen card user who wants work fast</li>
+        <li><strong>Buyer asks to rush delivery</strong> then goes completely silent — may intend to chargeback after receiving files</li>
+        <li><strong>Buyer asks for deliverables in unusual formats</strong> — extracting source files they can use after disputing payment</li>
+        <li><strong>Multiple small orders from the same new buyer</strong> — testing if chargebacks work before placing larger orders</li>
+        <li><strong>Buyer mentions financial difficulties</strong> or asks about refund policies before order starts</li>
+        <li><strong>Buyer creates account and orders immediately</strong> — no browsing history, no profile completion</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🛡️ Chargeback Prevention Protocol</h3>
+    <ol>
+        <li><strong>Document EVERYTHING</strong> — keep screenshots of all communication, delivery confirmations, and buyer acknowledgments</li>
+        <li><strong>Watermark previews</strong> — never send final source files until the buyer confirms satisfaction within the order</li>
+        <li><strong>Deliver through the platform</strong> — never use external file-sharing for final deliverables (this is your proof of delivery)</li>
+        <li><strong>Get written confirmation</strong> — always ask the buyer to confirm satisfaction in the message thread before marking complete</li>
+        <li><strong>Be wary of large first orders</strong> — for new buyers with $500+ orders, deliver in phases and get approval at each stage</li>
+        <li><strong>Report suspicious accounts</strong> — if a buyer exhibits red flags, report to Trust & Safety proactively</li>
+    </ol>
+</div>
+
+<div class="content-section" style="background: rgba(14, 165, 233, 0.1); border: 2px solid rgba(14, 165, 233, 0.3); padding: 25px; border-radius: 12px;">
+    <h3 style="color: #38BDF8;">📋 Chargeback Response Procedure</h3>
+    <p>When the platform notifies you of a chargeback:</p>
+    <ol>
+        <li><strong>Do NOT panic</strong> — you have time to respond with evidence</li>
+        <li><strong>Gather all evidence immediately</strong> — order details, communication log, delivery proof, buyer confirmation messages</li>
+        <li><strong>Submit evidence through the platform's dispute system</strong> — the platform fights the chargeback on your behalf if evidence is strong</li>
+        <li><strong>Document the timeline</strong> — when was the order placed, delivered, accepted, and when did the chargeback occur</li>
+        <li><strong>Report to DH management</strong> — include all evidence and the platform's response in your daily report</li>
+    </ol>
+</div>
+
+<div class="content-section" style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10B981; padding: 20px; border-radius: 8px;">
+    <h3 style="color: #10B981;">💡 Pro Tip: The Confirmation Message</h3>
+    <p>After every delivery, send this type of message: <em>"Hi [Client], I've delivered the final files as discussed. Could you please review and confirm everything looks good? If any adjustments are needed, I'm happy to help!"</em></p>
+    <p>This creates a <strong>written record</strong> of buyer acknowledgment that is powerful evidence against chargebacks.</p>
+</div>
+
+<div class="content-section">
+    <h3>📝 Ready for the Quiz?</h3>
+    <ul><li>📋 10 questions about Chargeback & Payment Protection</li><li>🎯 Score <strong>10/10</strong> to proceed</li></ul>
+</div>
+`;
+
+const task15Content = `
+<h2>📚 TASK 15: MULTI-ACCOUNT & COMPLIANCE MANAGEMENT</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15)); border: 2px solid rgba(99, 102, 241, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">👥 Managing Multiple Seller Accounts — The DH Agency Model</h3>
+    <p>Digital Heroes manages <strong>multiple seller accounts</strong> across the marketplace platform. This is permitted under the platform's <strong>agency/team account policies</strong>, but only when done correctly. A single compliance mistake can trigger a review of ALL linked accounts, risking everything.</p>
+</div>
+
+<div class="content-section">
+    <h3>🔐 Platform Rules for Multi-Account Operations</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(99, 102, 241, 0.3);"><th style="padding: 12px; text-align: left;">Rule</th><th style="padding: 12px; text-align: left;">Details</th><th style="padding: 12px; text-align: left;">Violation Consequence</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Unique Identity</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Each account must represent a distinct real person</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">All accounts permanently banned</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Distinct Portfolios</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">No duplicate gig descriptions, images, or portfolio pieces across accounts</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Gig removal + account warning</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Separate Devices/IPs</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Use unique browser profiles (e.g., Dolphin) with separate IP fingerprints per account</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Account linking detection + suspension</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>No Cross-Referencing</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Never reference or link to other DH accounts in messages or gigs</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Accounts flagged and reviewed</td></tr>
+            <tr><td style="padding: 10px;"><strong>Independent Communication</strong></td><td style="padding: 10px;">Each account communicates with its own voice and style</td><td style="padding: 10px;">Pattern detection may flag identical messaging</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: rgba(239, 68, 68, 0.1); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
+    <h3 style="color: #EF4444;">🚨 Common Compliance Mistakes That Trigger Account Reviews</h3>
+    <ul>
+        <li><strong>Logging into multiple accounts from the same browser</strong> — always use Dolphin or equivalent with separate profiles</li>
+        <li><strong>Copy-pasting the same gig description</strong> across accounts — rewrite each one uniquely</li>
+        <li><strong>Using the same portfolio images</strong> — each account needs its own set of work samples</li>
+        <li><strong>Replying to the same buyer from two accounts</strong> — if a buyer contacts multiple DH accounts, only ONE responds</li>
+        <li><strong>Using the same payment withdrawal method</strong> across accounts owned by different people</li>
+        <li><strong>Sending identical message templates</strong> — vary wording even for standard responses</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>👥 Team Member Access Management</h3>
+    <p>When multiple team members access seller accounts, follow these protocols:</p>
+    <ol>
+        <li><strong>Access logs</strong> — maintain a record of who accessed which account and when</li>
+        <li><strong>Password management</strong> — use a secure password manager; never share passwords via chat</li>
+        <li><strong>Role-based access</strong> — not everyone needs full account access; limit permissions by role</li>
+        <li><strong>Handover protocol</strong> — when a team member leaves, change all account passwords immediately</li>
+        <li><strong>Activity monitoring</strong> — review account activity logs weekly for unauthorized or unusual actions</li>
+    </ol>
+</div>
+
+<div class="content-section" style="background: rgba(16, 185, 129, 0.1); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3 style="color: #10B981;">🛡️ Monthly Compliance Audit Checklist</h3>
+    <ol>
+        <li>Verify all account profiles have <strong>unique photos, bios, and descriptions</strong></li>
+        <li>Confirm <strong>no duplicate gig content</strong> exists across any accounts</li>
+        <li>Check <strong>browser profiles</strong> — each account uses its dedicated profile</li>
+        <li>Review <strong>message templates</strong> — ensure sufficient variation between accounts</li>
+        <li>Audit <strong>portfolio pieces</strong> — no shared images or videos across accounts</li>
+        <li>Verify <strong>team access</strong> — remove inactive members, update passwords</li>
+        <li>Review <strong>withdrawal methods</strong> — confirm each account uses the correct, distinct method</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>📝 Ready for the Quiz?</h3>
+    <ul><li>📋 10 questions about Multi-Account Compliance</li><li>🎯 Score <strong>10/10</strong> to proceed</li></ul>
+</div>
+`;
+
+const task16Content = `
+<h2>📚 TASK 16: CAREER GROWTH & CERTIFICATION — Risk Management Career Path at DH</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🚀 Your Career Path at Digital Heroes</h3>
+    <p>Risk Management is not a dead-end role — it is a <strong>launchpad</strong>. The skills you build here — systematic thinking, crisis management, data analysis, client psychology — are the exact skills that define leaders in digital agencies.</p>
+</div>
+
+<div class="content-section">
+    <h3>📈 The Risk Management Career Ladder</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(245, 158, 11, 0.3);"><th style="padding: 12px; text-align: left;">Level</th><th style="padding: 12px; text-align: left;">Title</th><th style="padding: 12px; text-align: left;">Responsibilities</th><th style="padding: 12px; text-align: left;">Timeline</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>L1</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Junior Risk Manager</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Daily health checks, reporting, basic dispute handling</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Month 1-3</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>L2</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Risk Manager</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Independent account management, cancellation defense, metric optimization</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Month 3-6</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>L3</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Senior Risk Manager</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Multi-account strategy, chargeback management, compliance audits, mentoring juniors</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Month 6-12</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>L4</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Risk Operations Lead</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Team leadership, SOP development, cross-department risk strategy</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Year 1-2</td></tr>
+            <tr><td style="padding: 10px;"><strong>L5</strong></td><td style="padding: 10px;">Head of Platform Risk</td><td style="padding: 10px;">Organization-wide risk policy, executive reporting, platform relationship management</td><td style="padding: 10px;">Year 2+</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🎯 Skills That Accelerate Your Growth</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead><tr style="background: rgba(16, 185, 129, 0.3);"><th style="padding: 12px; text-align: left;">Skill Area</th><th style="padding: 12px; text-align: left;">Why It Matters</th><th style="padding: 12px; text-align: left;">How to Develop</th></tr></thead>
+        <tbody>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Data Analysis</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Turning metrics into actionable insights</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Practice with Google Sheets, learn pivot tables, study trends</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Crisis Communication</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">De-escalating tense client situations</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Study dispute resolution templates, practice empathetic writing</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Platform Expertise</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Deep knowledge of marketplace algorithms and policies</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Read platform updates weekly, join seller communities</td></tr>
+            <tr><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>Process Design</strong></td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Creating SOPs that prevent recurring issues</td><td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">Document every new scenario, refine processes monthly</td></tr>
+            <tr><td style="padding: 10px;"><strong>Leadership</strong></td><td style="padding: 10px;">Mentoring new team members and driving team performance</td><td style="padding: 10px;">Volunteer to onboard new hires, lead team meetings</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📊 KPI Targets by Level</h3>
+    <ul>
+        <li><strong>L1 (Junior):</strong> Zero missed daily reports, all health checks completed, 90%+ metric maintenance</li>
+        <li><strong>L2 (Manager):</strong> 80%+ cancellation defense success rate, zero policy violations, week-over-week metric improvement</li>
+        <li><strong>L3 (Senior):</strong> All accounts at Level 2+ seller status, chargeback rate below 0.5%, compliance audit pass rate 100%</li>
+        <li><strong>L4 (Lead):</strong> Team KPI achievement 90%+, SOP documentation complete, zero critical incidents per quarter</li>
+        <li><strong>L5 (Head):</strong> Revenue protection rate 95%+, platform relationship score excellent, cross-department risk integration</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: rgba(139, 92, 246, 0.1); border-left: 4px solid #A855F7; padding: 20px; border-radius: 8px;">
+    <h3 style="color: #C084FC;">🎓 Continuing Education</h3>
+    <ul>
+        <li>DH provides <strong>4 hours/week</strong> of dedicated learning time — use it for platform policy study, data analysis courses, or communication skills</li>
+        <li>Course reimbursement up to <strong>Rs. 5,000/year</strong> for relevant certifications</li>
+        <li>Join the <strong>#risk-management</strong> channel on Discord for case studies, playbook updates, and peer learning</li>
+        <li>Monthly <strong>Risk Review meetings</strong> — present your insights, learn from other team members' experiences</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📝 Ready for the Quiz?</h3>
+    <ul><li>📋 10 questions about Career Growth & Certification</li><li>🎯 Score <strong>10/10</strong> to proceed</li></ul>
+</div>
+`;
+
+const task17Content = `
+<h2>📚 TASK 17: PRACTICAL RISK ASSESSMENT SCENARIOS</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.15)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🎯 Apply Everything You Have Learned</h3>
+    <p>This task presents <strong>8 real-world platform risk scenarios</strong>. For each scenario, study the situation, the correct response, and the reasoning behind it. These scenarios combine knowledge from ALL previous modules.</p>
+</div>
+
+<!-- SCENARIO 1 -->
+<div class="content-section" style="background: rgba(14, 165, 233, 0.1); border: 2px solid rgba(14, 165, 233, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #38BDF8;">Scenario 1: The Disappearing Client</h3>
+    <p><strong>Situation:</strong> A buyer placed a $800 Shopify store order 5 days ago. They provided a brief but have not responded to 3 follow-up messages. The delivery deadline is in 48 hours. You have started work based on the brief but need client approval on the homepage design before proceeding.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>Send a polite but firm message explaining the deadline impact: "I want to deliver your project on time. I need your homepage approval to proceed."</li>
+            <li>Request a deadline extension through the order system BEFORE the deadline hits</li>
+            <li>Escalate to the account manager immediately — this is a HIGH-risk delivery situation</li>
+            <li>Document all attempted communication with timestamps</li>
+            <li>Continue work on non-dependent elements to show progress</li>
+        </ol>
+    </div>
+</div>
+
+<!-- SCENARIO 2 -->
+<div class="content-section" style="background: rgba(139, 92, 246, 0.1); border: 2px solid rgba(139, 92, 246, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #A78BFA;">Scenario 2: The Review Extortionist</h3>
+    <p><strong>Situation:</strong> After delivering a completed Shopify store, the buyer messages: "Give me 3 extra pages for free or I will leave a 1-star review and report your account." The original order was for 5 pages and all 5 were delivered as agreed.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>Screenshot the threatening message IMMEDIATELY — this is your primary evidence</li>
+            <li>Do NOT agree to the demand — this sets a precedent and rewards extortion</li>
+            <li>Respond professionally: "I have delivered all 5 pages as agreed. I would be happy to discuss additional pages as a new order."</li>
+            <li>Report the buyer to Trust & Safety with the screenshot — review extortion violates platform ToS</li>
+            <li>File a preemptive support ticket explaining the situation before the buyer leaves a review</li>
+        </ol>
+    </div>
+</div>
+
+<!-- SCENARIO 3 -->
+<div class="content-section" style="background: rgba(16, 185, 129, 0.1); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #34D399;">Scenario 3: The Metric Cascade</h3>
+    <p><strong>Situation:</strong> During your morning health check, you discover Account B's completion rate dropped from 92% to 87% overnight. Two cancellations happened while you were offline. Account B is currently Level 2 and the next evaluation is in 5 days.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>IMMEDIATE: File support tickets for BOTH cancellations requesting metric removal</li>
+            <li>Investigate: What caused the cancellations? Were they preventable? Who was managing the account?</li>
+            <li>Calculate: How many successful completions are needed in 5 days to recover above 90%</li>
+            <li>Prioritize: Ensure ALL pending orders on Account B are delivered on time and at highest quality</li>
+            <li>Report: Flag this as CRITICAL in your daily report with full action plan</li>
+            <li>Prevent: Review all other accounts for similar risks immediately</li>
+        </ol>
+    </div>
+</div>
+
+<!-- SCENARIO 4 -->
+<div class="content-section" style="background: rgba(245, 158, 11, 0.1); border: 2px solid rgba(245, 158, 11, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #FBBF24;">Scenario 4: The Cross-Account Contamination</h3>
+    <p><strong>Situation:</strong> A buyer has contacted 3 DH seller accounts about the same project. They are comparing quotes. Two of the accounts have already responded with similar templates. The buyer notices: "Are you the same company? Your messages look identical."</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>IMMEDIATELY stop the second and third accounts from responding — only ONE account should handle this buyer</li>
+            <li>The account that responded first continues the conversation; others decline politely</li>
+            <li>Review message templates across all accounts — if templates are too similar, rewrite them to be distinct</li>
+            <li>Report this incident internally so the team is aware of the cross-account risk</li>
+            <li>Add this buyer to a "contacted by multiple accounts" list to prevent future overlap</li>
+        </ol>
+    </div>
+</div>
+
+<!-- SCENARIO 5 -->
+<div class="content-section" style="background: rgba(239, 68, 68, 0.1); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #F87171;">Scenario 5: The Chargeback Alert</h3>
+    <p><strong>Situation:</strong> You receive a platform notification that a $1,200 order completed 3 weeks ago has been disputed by the buyer's bank. The buyer has already downloaded all source files and has not been in contact since order completion.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>Gather ALL evidence: original order, message history, delivery confirmation, buyer acceptance</li>
+            <li>Submit evidence through the platform's chargeback dispute system within 24 hours</li>
+            <li>Include proof that the buyer downloaded files and confirmed satisfaction (if available)</li>
+            <li>Report to DH management with full details — this is a CRITICAL financial event</li>
+            <li>Flag the buyer's profile for Trust & Safety — potential friendly fraud</li>
+            <li>Review all other orders from this buyer across all DH accounts</li>
+        </ol>
+    </div>
+</div>
+
+<!-- SCENARIO 6 -->
+<div class="content-section" style="background: rgba(99, 102, 241, 0.1); border: 2px solid rgba(99, 102, 241, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #818CF8;">Scenario 6: The Policy Violation Warning</h3>
+    <p><strong>Situation:</strong> Account C receives a warning from Trust & Safety: "Your account has been flagged for sharing off-platform contact information." Upon investigation, you find a team member shared a WhatsApp number with a buyer 2 weeks ago "to make communication easier."</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>Respond to the warning immediately with a professional appeal: acknowledge the violation, explain it was a team member error, outline corrective steps taken</li>
+            <li>Brief the team member on platform communication policies — this is a serious training gap</li>
+            <li>Audit ALL accounts for similar violations — if one team member did it, others might have too</li>
+            <li>Implement a mandatory review process for first-time messages to new buyers</li>
+            <li>Document the incident in the compliance log with resolution steps</li>
+        </ol>
+    </div>
+</div>
+
+<!-- SCENARIO 7 -->
+<div class="content-section" style="background: rgba(16, 185, 129, 0.1); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #34D399;">Scenario 7: The Multi-Metric Emergency</h3>
+    <p><strong>Situation:</strong> It is evaluation day for Account A. Current metrics: Response Rate 89%, On-Time Delivery 91%, Completion Rate 88%, Rating 4.6. The account is Level 2 but will be demoted if ANY metric stays below 90% or rating below 4.7.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>Accept that demotion is likely given 3 out of 4 metrics are below threshold — prepare for damage control</li>
+            <li>File support tickets for any cancellations that impacted completion rate — even partial recovery helps</li>
+            <li>Ensure 100% response rate going forward — respond to every single message immediately</li>
+            <li>Create a 30-day recovery plan with daily metric targets</li>
+            <li>Prioritize high-satisfaction, quick-turnaround orders to rebuild rating quickly</li>
+            <li>Report the situation to management with an honest assessment and recovery timeline</li>
+        </ol>
+    </div>
+</div>
+
+<!-- SCENARIO 8 -->
+<div class="content-section" style="background: rgba(245, 158, 11, 0.1); border: 2px solid rgba(245, 158, 11, 0.3); padding: 25px; border-radius: 12px; margin: 20px 0;">
+    <h3 style="color: #FBBF24;">Scenario 8: The Weekend Crisis</h3>
+    <p><strong>Situation:</strong> It is Saturday evening. You are doing your daily health check and discover: Account D has 2 orders due Monday morning, the assigned developer is unreachable, and one of the buyers just sent an angry message about "not receiving any progress updates in 3 days."</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 15px; margin: 15px 0;">
+        <strong style="color: #10B981;">Model Response:</strong>
+        <ol>
+            <li>IMMEDIATELY respond to the angry buyer: acknowledge the communication gap, provide a progress update based on what you know, set expectations for Monday delivery</li>
+            <li>Escalate to the account manager via WhatsApp — this is weekend-level urgency</li>
+            <li>If the developer remains unreachable, escalate to senior management for reassignment</li>
+            <li>Request a delivery extension from both buyers if Monday delivery looks at risk</li>
+            <li>Document everything: the timeline of events, your escalation attempts, buyer communication</li>
+            <li>Include this as a CRITICAL item in your weekend report with full action trail</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section" style="background: rgba(139, 92, 246, 0.1); border: 2px solid rgba(139, 92, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3 style="color: #A78BFA;">🧠 Key Takeaways from All Scenarios</h3>
+    <ul>
+        <li><strong>Speed matters</strong> — in every scenario, the first 2 hours of response determine the outcome</li>
+        <li><strong>Documentation is your shield</strong> — screenshots, timestamps, and written records protect you in every dispute</li>
+        <li><strong>Escalation is not weakness</strong> — knowing when to involve management separates good from great Risk Managers</li>
+        <li><strong>Prevention beats cure</strong> — most of these scenarios could have been avoided with proactive daily checks</li>
+        <li><strong>Never panic, always plan</strong> — every crisis has a framework; follow the steps systematically</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📝 Ready for the Quiz?</h3>
+    <ul><li>📋 12 questions about Risk Assessment Scenarios</li><li>🎯 Score <strong>10/10</strong> to proceed</li></ul>
+</div>
+`;
+
+const task18Content = `
+<h2>📚 TASK 18: FINAL ASSESSMENT — Certification Exam</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15)); border: 2px solid rgba(99, 102, 241, 0.4); padding: 30px; border-radius: 16px;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🎓 Congratulations — You've Reached the Final Exam!</h3>
+    <p>This assessment covers ALL modules you've studied. You must score <strong>10/10</strong> to earn your Marketplace Risk Manager Certificate.</p>
+</div>
+
+<div class="content-section">
+    <h3>📋 Review Checklist</h3>
+    <ul>
+        <li>Task 1: Risk Manager Role — mission, accounts, objectives</li>
+        <li>Task 2: Daily Health Check — 7-item per-account checklist</li>
+        <li>Task 3: Daily Reporting — per-account format, mandatory rules</li>
+        <li>Task 4: Feedback Tracker — Google Sheet, 30-day rule</li>
+        <li>Task 5: Bonus Messages — when to send, when NOT to send</li>
+        <li>Task 6: Cancelled Orders — 5-step ticket filing, metric removal</li>
+        <li>Task 7: Cancellation Strategy — 3-step defense, conversation templates</li>
+        <li>Task 8: Brief Response — respond to ALL, portfolio pitch</li>
+        <li>Task 9: Delivery Risk — 48-hour window, escalation levels</li>
+        <li>Task 10: Platform Policies — ToS, prohibited actions, communication rules</li>
+        <li>Task 11: Dispute Resolution — 5-step framework, evidence documentation</li>
+        <li>Task 12: Account Health — metrics, seller levels, recovery strategies</li>
+        <li>Task 13: Chargeback Protection — identification, prevention, response</li>
+        <li>Task 14: Multi-Account Compliance — agency rules, audits, team access</li>
+        <li>Task 15: Career Growth — career ladder, KPIs, skill development</li>
+        <li>Task 16: Risk Scenarios — practical application of all modules</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: rgba(16, 185, 129, 0.1); border: 2px solid rgba(16, 185, 129, 0.3); padding: 25px; border-radius: 12px;">
+    <h3 style="color: #10B981;">🏆 What You'll Earn</h3>
+    <ul>
+        <li>🎓 <strong>Marketplace Risk Manager Certificate</strong> — printable and downloadable</li>
+        <li>📋 <strong>Official certification</strong> recognized by Digital Heroes</li>
         <li> <strong>Competency validation</strong> across all risk management domains</li>
     </ul>
 </div>
@@ -795,6 +1371,99 @@ const task10Quiz = [
 ];
 
 const task11Quiz = [
+    { q: "Which of the following is a PERMANENT ban offense on marketplace platforms?", o: ["Delivering an order 2 hours late", "Accepting payment outside the platform's order system — this bypasses their revenue model and violates ToS fundamentally", "Sending a portfolio link in a message to a buyer", "Getting a 3-star review from a dissatisfied client"], c: 1 },
+    { q: "A team member wants to share their WhatsApp number with a buyer 'to communicate faster.' Your response:", o: ["Allow it if the buyer requests it first — buyer-initiated contact sharing is acceptable", "Allow it since WhatsApp is more convenient for both parties", "BLOCK IT — sharing off-platform contact information triggers automated detection and can result in account warnings or suspension", "Allow it but ask them to delete the message after the buyer saves the number"], c: 2 },
+    { q: "Platform keyword scanning flags your message containing 'email me at.' What happens next?", o: ["Nothing — the platform only scans for payment-related keywords", "The message is automatically deleted and the buyer never sees it", "The message may be flagged for manual review by Trust & Safety, potentially leading to an account warning", "Your account is immediately suspended pending review"], c: 2 },
+    { q: "A gig listing uses portfolio images from a previous client's project. This is:", o: ["Acceptable if the client gave verbal permission during the project", "Fine as long as you watermark the images with your logo", "A compliance risk — you need explicit written permission to use client work as portfolio pieces, and the images must be original to THIS account", "Standard practice on all freelance platforms"], c: 2 },
+    { q: "How often should a Risk Manager audit gig descriptions for policy compliance?", o: ["Only when the platform sends a warning about a specific gig", "Monthly — but only for the highest-revenue gigs", "Weekly — review all active gig descriptions across all accounts for accuracy, originality, and policy compliance", "Annually during the team performance review cycle"], c: 2 },
+    { q: "A buyer asks you to recommend your services on another competing platform. The correct response:", o: ["Share your profile link on the other platform since the buyer initiated", "Politely decline and redirect: keep all communication and transactions on this platform per ToS requirements", "Ignore the message entirely to avoid any risk", "Report the buyer to Trust & Safety for attempting to take you off-platform"], c: 1 },
+    { q: "Which of these is ALLOWED in platform messages?", o: ["Sharing your personal email for 'faster file delivery'", "Mentioning competing platforms by name for comparison", "Sharing a Google Drive link for delivering project files that are too large for the platform", "Asking the buyer to pay via PayPal for a 'discount'"], c: 2 },
+    { q: "The platform updates its Terms of Service. As a Risk Manager, your FIRST action is:", o: ["Wait for the team to discuss it in the next weekly meeting", "Read the full update, identify changes that affect DH operations, and brief the team within 24 hours", "Assume changes are minor and continue normal operations", "Ask management to review the changes and provide guidance"], c: 1 },
+    { q: "A gig description says 'We are a team of 50 designers' on an individual seller account. The risk is:", o: ["No risk — buyers like knowing the team is large", "The platform may flag this as misrepresentation since the account is registered as an individual, not an agency", "Only a risk if the team actually has fewer than 50 members", "This violates content guidelines about exaggerated claims"], c: 1 },
+    { q: "Review manipulation includes which of the following?", o: ["Sending a bonus message asking for 'honest feedback'", "Asking friends to create buyer accounts and purchase your gig to leave positive reviews — this is fake review fraud", "Responding professionally to a negative review", "Following up with a buyer 5 days after delivery to check satisfaction"], c: 1 }
+];
+
+const task12Quiz = [
+    { q: "The FIRST step in the 5-Step Dispute Resolution Framework is:", o: ["File a support ticket with full documentation immediately", "ACKNOWLEDGE — respond within 2 hours with empathy, showing the buyer you take their concern seriously", "Investigate the original order requirements to find who is at fault", "Offer a full refund to de-escalate the situation quickly"], c: 1 },
+    { q: "A buyer claims the Shopify store design 'is not what they expected.' Your investigation should start with:", o: ["Asking the buyer what they expected — their answer determines your next steps", "Reviewing the ORIGINAL order requirements, gig description, and all pre-delivery messages to identify where expectations diverged", "Checking if similar complaints exist from other buyers on this account", "Offering a revision immediately to resolve the issue quickly"], c: 1 },
+    { q: "Evidence documentation should happen:", o: ["When the platform's support team requests it during the dispute process", "After consulting with management about the best approach to the dispute", "IMMEDIATELY when a dispute arises — some data (messages, order details) may become inaccessible after a period", "Within the same business week to ensure accuracy and completeness"], c: 2 },
+    { q: "A scope dispute occurs when:", o: ["The delivery files are in the wrong format", "The client expects more deliverables than what was originally agreed in the order requirements — misaligned expectations", "The client wants a refund because they changed their mind about the project", "The delivery is late by more than 24 hours without extension"], c: 1 },
+    { q: "When should you escalate a dispute to platform support instead of resolving mutually?", o: ["After the first disagreement with the buyer — let the platform decide immediately", "When the buyer uses threatening language, attempts extortion, or mutual resolution fails after 3 back-and-forth messages", "Only when management instructs you to escalate the dispute", "When the order value exceeds $500 — high-value disputes always need platform intervention"], c: 1 },
+    { q: "A buyer has used your delivered Shopify store (it is live and generating sales) but requests a cancellation. Your response:", o: ["Accept the cancellation since the buyer wants out of the order", "Document that the deliverables are LIVE and in use, decline the cancellation, and if they push, escalate to support with evidence of usage", "Offer a 50% refund as a compromise to keep the order open", "Report the buyer for fraud immediately without communicating further"], c: 1 },
+    { q: "The dispute response template emphasizes which tone?", o: ["Firm and assertive — clearly stating your position and defending your work", "Professional, empathetic, and solution-oriented — showing you care about the buyer's satisfaction while proposing a concrete path forward", "Casual and friendly — making the buyer feel like you are on their side", "Formal and legal — referencing platform policies and terms of service"], c: 1 },
+    { q: "A communication dispute (buyer feels ignored) is best prevented by:", o: ["Sending daily updates even when there is no progress to report", "Setting clear communication expectations upfront: response times, update schedule, and preferred communication style", "Always responding within 5 minutes regardless of the time of day", "Sending longer, more detailed messages to show thorough attention"], c: 1 },
+    { q: "A fraudulent dispute (buyer trying to get work for free) requires:", o: ["Offering the buyer additional work to change their mind about the dispute", "Accepting the loss and focusing on new orders to recover revenue", "Immediate evidence preservation, support ticket with proof of delivery and buyer acceptance, and Trust & Safety report", "Confronting the buyer directly about their fraudulent intentions"], c: 2 },
+    { q: "After a dispute is resolved in your favor, the NEXT step is:", o: ["Move on and forget about it — the crisis is over", "Document the resolution, analyze what caused the dispute, and update SOPs to prevent similar disputes in the future", "Send the buyer a message expressing disappointment about the dispute", "File a complaint about the buyer to prevent them from ordering again"], c: 1 }
+];
+
+const task13Quiz = [
+    { q: "The five critical seller metrics are:", o: ["Response Rate, On-Time Delivery, Order Completion, Order Rating, and Revenue Growth", "Response Rate, On-Time Delivery, Order Completion, Order Rating, and Unique Clients — each affects visibility, level status, and earning potential", "Response Time, Delivery Speed, Cancellation Rate, Review Score, and Profile Views", "Message Volume, Order Volume, Revenue, Rating, and Repeat Buyers"], c: 1 },
+    { q: "A seller account's Response Rate drops to 88%. The immediate impact is:", o: ["No impact — 88% is still above the acceptable threshold for most seller levels", "Gig visibility drops in search results and the account risks level demotion at the next evaluation — 90% is the threshold", "The account receives a temporary 24-hour messaging restriction", "The platform sends a warning email but takes no other action"], c: 1 },
+    { q: "Seller levels are evaluated:", o: ["Weekly with instant feedback on current standing", "Every 30 days — if ANY metric drops below threshold during the evaluation period, demotion occurs", "Quarterly with a comprehensive performance review from the platform", "Continuously in real-time with automatic adjustments"], c: 1 },
+    { q: "To reach Level 2 seller status, an account needs:", o: ["30 days active, 5 orders, $200 earned, and 4.5+ rating", "120 days active, 50+ orders, $2000+ earned, 4.7+ rating, and all metrics above 90% — this is a significant milestone", "90 days active, 25 orders, $1000 earned, and 4.7+ rating", "180 days active, 100 orders, $5000 earned, and no cancellations"], c: 1 },
+    { q: "On-Time Delivery rate is calculated over a:", o: ["30-day rolling window — recent deliveries matter most", "60-day rolling window — giving you time to recover but also meaning one late delivery impacts the metric for 2 months", "90-day rolling window — providing a stable long-term view", "Calendar month — resetting on the 1st of each month"], c: 1 },
+    { q: "An account has 91% completion rate. One more cancellation would drop it to:", o: ["90% — still safe but dangerously close to the threshold", "Below 90% — this is a CRITICAL situation because crossing the 90% threshold triggers demotion review", "89% — concerning but recoverable within the evaluation period", "The exact drop depends on total order volume — with fewer orders, each cancellation has greater impact"], c: 3 },
+    { q: "The daily metrics dashboard routine includes recording:", o: ["Only the metrics that have changed since yesterday", "Response Rate, On-Time Delivery, Completion Rate, Overall Rating, Current Level, and Days Until Next Evaluation — for EVERY account", "Total revenue and number of active orders per account", "Only metrics that are below the safety threshold"], c: 1 },
+    { q: "A metric recovery strategy for low Response Rate includes:", o: ["Sending automated replies to all messages using a bot — this ensures 100% response rate", "Replying to ALL messages within 24 hours including spam, using the platform's mobile app for instant replies during off-hours", "Deleting old unread messages to reset the calculation", "Asking buyers to resend messages so you can respond to the new ones"], c: 1 },
+    { q: "Rating dropped from 4.8 to 4.6 after one 2-star review. Recovery requires:", o: ["Filing a support ticket to remove the bad review automatically", "Over-delivering on subsequent orders, using the bonus message strategy to encourage positive reviews, and addressing any quality issues that caused the low rating", "Asking the buyer to change their review to a higher rating", "Completing many small, quick orders to dilute the bad review mathematically"], c: 1 },
+    { q: "Week-over-week metric tracking matters because:", o: ["It creates nice-looking charts for management presentations", "A 1% drop today signals a trend that could become a 5% drop next week if the root cause is not identified and addressed — early detection prevents crises", "The platform requires sellers to track their own metrics weekly", "It helps predict when the next evaluation will occur"], c: 1 }
+];
+
+const task14Quiz = [
+    { q: "A chargeback differs from a cancellation because:", o: ["Chargebacks are just another word for cancellation on marketplace platforms", "Chargebacks bypass the platform entirely — the buyer disputes payment through their bank, and funds can be forcibly withdrawn regardless of order status", "Chargebacks only happen on orders over $1000 in value", "Chargebacks are initiated by the platform when they detect fraud"], c: 1 },
+    { q: "Which of these is a RED FLAG for potential chargeback fraud?", o: ["A buyer who asks detailed questions about the project before ordering", "A returning buyer who places their 5th order with you", "A new buyer placing a high-value order with no communication, rushing delivery, then going completely silent after receiving files", "A buyer who requests 2 revisions before accepting the delivery"], c: 2 },
+    { q: "The most important chargeback prevention step is:", o: ["Only accepting orders from buyers with verified payment methods", "Delivering through the platform and getting written buyer confirmation of satisfaction in the message thread — this creates irrefutable evidence", "Setting high prices to discourage fraudulent buyers", "Requiring buyers to sign a contract before starting work"], c: 1 },
+    { q: "When the platform notifies you of a chargeback, your FIRST action is:", o: ["Contact the buyer directly to ask why they disputed the payment", "Accept the loss and focus on new orders — fighting chargebacks is rarely successful", "Gather ALL evidence immediately: order details, communication log, delivery proof, buyer confirmation messages", "Wait for the platform to investigate and resolve it automatically"], c: 2 },
+    { q: "Watermarking previews before final delivery protects against chargebacks by:", o: ["Making the previews look more professional and trustworthy", "Ensuring the buyer cannot use final deliverables until they confirm satisfaction within the order — preventing receive-then-chargeback fraud", "Adding your brand identity to all deliverables for marketing purposes", "Making it harder for buyers to share your work with competitors"], c: 1 },
+    { q: "'Friendly fraud' in the chargeback context means:", o: ["A buyer who is friendly in messages but disputes the charge later", "A buyer who deliberately receives the work AND gets a refund by disputing the charge with their bank — they keep both the deliverables and the money", "A buyer who accidentally disputes a charge they did not recognize", "A buyer who leaves a positive review but then requests a refund"], c: 1 },
+    { q: "For a $500+ order from a new buyer, the recommended approach is:", o: ["Decline the order — high-value first orders are always risky", "Deliver in phases and get buyer approval at each stage — this creates a trail of acceptance and limits exposure if fraud occurs", "Request upfront payment through the platform's tip feature before starting", "Complete the entire order quickly to minimize the chargeback window"], c: 1 },
+    { q: "The confirmation message after delivery ('Could you please review and confirm everything looks good?') serves:", o: ["As a polite courtesy that buyers appreciate", "As a LEGAL EVIDENCE tool — written buyer acknowledgment of satisfaction is powerful evidence against chargeback disputes", "As a reminder for the buyer to leave a review", "As a way to extend the delivery timeline in case revisions are needed"], c: 1 },
+    { q: "A buyer who creates an account and orders immediately with no profile completion is:", o: ["An eager buyer who knows exactly what they want — great customer", "A potential risk — new accounts with no history may indicate a buyer testing the platform for chargeback vulnerability", "A normal buyer behavior pattern on all marketplace platforms", "Only a concern if the order value exceeds $200"], c: 1 },
+    { q: "After a chargeback is resolved (whether won or lost), the Risk Manager should:", o: ["Move on — the incident is closed and no further action is needed", "Document the entire incident, identify prevention gaps, update the chargeback prevention checklist, and brief the team on lessons learned", "File a complaint against the buyer on every platform they have accounts on", "Refuse all future orders from buyers with similar profiles"], c: 1 }
+];
+
+const task15Quiz = [
+    { q: "Digital Heroes manages multiple seller accounts. This is permitted because:", o: ["Multiple accounts are always allowed on marketplace platforms", "Each account represents a distinct real person with unique identity, portfolio, and communication style — operating within the platform's agency policies", "The accounts use different email addresses which is sufficient for compliance", "DH has a special agreement with the platform for unlimited accounts"], c: 1 },
+    { q: "Logging into two DH seller accounts from the same browser is:", o: ["Acceptable if done at different times during the day", "Fine as long as you clear cookies between sessions", "A compliance violation — the platform detects shared browser fingerprints, which can link accounts and trigger a review of ALL associated accounts", "Only a problem if you accidentally send a message to the wrong buyer"], c: 2 },
+    { q: "A buyer contacts 3 DH seller accounts about the same project. The correct protocol is:", o: ["All 3 accounts respond to maximize chances of winning the order", "The first account that responded continues, the other two politely decline — responding from multiple linked accounts to the same buyer risks detection", "Let the buyer choose which account they prefer after all 3 respond", "Report the buyer for spam since they contacted multiple accounts"], c: 1 },
+    { q: "Copy-pasting the same gig description across multiple DH accounts results in:", o: ["Efficient use of proven gig copy that converts well", "Duplicate content detection by the platform — gigs may be removed and accounts flagged for review", "No issues as long as the gig images are different", "A warning email for the first offense only"], c: 1 },
+    { q: "Team member access management requires:", o: ["Sharing one master password for all accounts to simplify access", "Maintaining access logs, using secure password management, role-based permissions, and immediate password changes when team members leave", "Giving full access to all team members so they can help in emergencies", "Only changing passwords during quarterly security reviews"], c: 1 },
+    { q: "The monthly compliance audit should verify:", o: ["Only that all accounts have different names", "Unique profiles, distinct gig content, separate browser profiles, varied message templates, independent portfolio pieces, current team access, and distinct withdrawal methods", "That each account has earned revenue in the past 30 days", "Only the highest-revenue accounts need compliance audits"], c: 1 },
+    { q: "Using the same message template word-for-word across accounts risks:", o: ["Nothing — templates are standard business practice", "Pattern detection algorithms may identify identical messaging patterns across accounts, flagging them as potentially linked or operated by the same entity", "Only a risk if the template mentions the other accounts by name", "Template matching only applies to gig descriptions, not messages"], c: 1 },
+    { q: "When a team member leaves DH, the IMMEDIATE action for account security is:", o: ["Ask them to forget the passwords they had access to", "Change ALL account passwords that the departing team member had access to, revoke any shared access, and update the access log", "Wait until their last working day to change passwords", "Only change passwords if they were terminated rather than resigned voluntarily"], c: 1 },
+    { q: "Portfolio pieces used across DH accounts must be:", o: ["High-quality images regardless of which account they appear on", "Completely unique to each account — no shared images, videos, or work samples across any DH seller profiles", "Similar in style but with different watermarks per account", "Original to DH but can be shared across accounts within the same niche"], c: 1 },
+    { q: "The biggest multi-account compliance risk at DH is:", o: ["Not having enough unique portfolio pieces for each account", "Account linking detection — if the platform determines multiple accounts are operated by the same entity improperly, ALL accounts face suspension", "Buyers leaving reviews on the wrong account", "Running out of unique gig ideas for each account"], c: 1 }
+];
+
+const task16Quiz = [
+    { q: "The Risk Management career path at DH starts at:", o: ["Senior Risk Manager — juniors handle other roles first", "L1 Junior Risk Manager — focusing on daily health checks, reporting, and basic dispute handling during months 1-3", "L2 Risk Manager — there is no junior level for this role", "Intern level — risk management requires a 6-month internship first"], c: 1 },
+    { q: "To advance from L2 (Risk Manager) to L3 (Senior Risk Manager), you need:", o: ["6+ months of employment and a management recommendation", "Demonstrated multi-account strategy skills, chargeback management capability, compliance audit proficiency, and proven ability to mentor junior team members", "Completion of an external certification program approved by DH", "Consistently being the first to arrive at work each morning"], c: 1 },
+    { q: "The KPI target for a Junior Risk Manager (L1) includes:", o: ["Maintaining 95%+ metrics across all accounts from day one", "Zero missed daily reports, all health checks completed, and 90%+ metric maintenance across assigned accounts", "Filing at least 5 support tickets per week to show proactivity", "Generating new leads through brief responses as the primary focus"], c: 1 },
+    { q: "Data analysis skills help Risk Managers because:", o: ["They look good on a resume for future job applications", "They enable turning raw metrics into actionable insights — identifying patterns, predicting risks, and making evidence-based decisions about account strategy", "Data analysis is only relevant for the finance team at DH", "The platform requires sellers to submit data analysis reports monthly"], c: 1 },
+    { q: "DH provides learning time for professional development. How much per week?", o: ["1 hour during lunch breaks only", "4 hours per week of dedicated learning time — use it for platform policy study, data analysis courses, or communication skills development", "8 hours per week but only during slow business periods", "No dedicated time — learning must happen outside work hours"], c: 1 },
+    { q: "The L4 Risk Operations Lead role differs from L3 because it adds:", o: ["Managing more accounts than L3 — quantity over quality", "Team leadership, SOP development, and cross-department risk strategy — transitioning from individual contribution to organizational impact", "Only a title change with the same responsibilities as L3", "Direct client communication instead of working through the team"], c: 1 },
+    { q: "Crisis communication is a key skill for career advancement because:", o: ["Managers need to write long emails about every issue", "De-escalating tense client situations, writing empathetic responses, and turning disputes into positive outcomes are skills that directly protect revenue and build trust", "It is only important for the customer support team", "The platform measures communication quality as a seller metric"], c: 1 },
+    { q: "The course reimbursement policy at DH for Risk Managers is:", o: ["No reimbursement — all learning materials are provided internally", "Up to Rs. 5,000 per year for relevant certifications — investing in your skills is encouraged and supported", "Unlimited reimbursement for any online course or certification", "Reimbursement only for platform-specific courses endorsed by the marketplace"], c: 1 },
+    { q: "Monthly Risk Review meetings serve the purpose of:", o: ["Checking attendance and ensuring all team members are present", "Presenting insights, learning from other team members' experiences, discussing case studies, and refining the team's collective playbook", "Reviewing each team member's KPI scores for potential termination", "Only reporting issues that occurred during the month"], c: 1 },
+    { q: "What separates a certified Risk Manager from someone who just manages seller accounts?", o: ["The certification badge displayed on their LinkedIn profile", "SYSTEMATIZED thinking — certified managers have frameworks for every scenario, follow documented SOPs, and apply data-driven decision making rather than ad-hoc reactions", "Certified managers earn a higher base salary from day one", "Certified managers only handle high-value accounts"], c: 1 }
+];
+
+const task17Quiz = [
+    { q: "In Scenario 1 (The Disappearing Client), the MOST critical action is:", o: ["Continue working without client input and deliver whatever you have completed", "Wait for the client to respond — they might be busy and will check in soon", "Request a deadline extension through the order system BEFORE the deadline hits — buying time while maintaining communication attempts", "Cancel the order since the client is unresponsive and clearly not interested"], c: 2 },
+    { q: "Scenario 2 (The Review Extortionist): Why should you NOT agree to the buyer's demand for 3 free pages?", o: ["Because the extra pages would take too much time to complete", "Agreeing rewards extortion behavior, sets a precedent for future manipulation, and the buyer will likely demand more — instead, report the threat to Trust & Safety", "Because company policy prohibits free work under any circumstances", "Because 3 extra pages would reduce your hourly rate below minimum"], c: 1 },
+    { q: "In Scenario 3 (The Metric Cascade), the completion rate dropped from 92% to 87%. Why is this CRITICAL?", o: ["87% is only slightly below the target and will recover naturally", "A 5-point drop means exactly 5 cancellations occurred overnight", "Below 90% triggers the platform's demotion review system, and with evaluation in 5 days, there is almost no time to recover through organic order completion", "The drop only matters if other metrics are also below threshold"], c: 2 },
+    { q: "Scenario 4 (Cross-Account Contamination): The buyer says 'your messages look identical.' The FIRST priority is:", o: ["Delete all similar messages across accounts before the buyer reports it", "Stop additional accounts from responding — only ONE account handles this buyer going forward, then review all templates for uniqueness", "Create a cover story explaining why the messages look similar", "Report the buyer for contacting multiple accounts about the same project"], c: 1 },
+    { q: "Scenario 5 (The Chargeback Alert): The $1,200 order was completed 3 weeks ago. Why is the timing relevant?", o: ["Chargebacks cannot occur after 2 weeks so this must be an error", "3 weeks means the buyer had ample time to verify satisfaction — a chargeback this late with source files already downloaded suggests deliberate friendly fraud", "The timing does not matter — all chargebacks are handled the same way", "3 weeks is within the normal chargeback window so this is routine"], c: 1 },
+    { q: "Scenario 6 (Policy Violation Warning): A team member shared WhatsApp details. The response includes:", o: ["Firing the team member immediately for the policy violation", "Responding to the warning with a professional appeal, briefing the team member, auditing ALL accounts for similar violations, and implementing a review process", "Ignoring the warning since it was only a first offense", "Asking the buyer to delete the WhatsApp message from their end"], c: 1 },
+    { q: "Scenario 7 (Multi-Metric Emergency): Three metrics are below threshold on evaluation day. The most realistic assessment is:", o: ["All metrics can be recovered before the end of the evaluation day", "Demotion is likely — focus on damage control, file support tickets, and create a 30-day recovery plan for the next evaluation cycle", "Request the platform to postpone the evaluation by one week", "The evaluation will average the metrics across all DH accounts"], c: 1 },
+    { q: "Scenario 8 (Weekend Crisis): The developer is unreachable on Saturday evening. The escalation order is:", o: ["Wait until Monday morning when normal working hours resume", "Send an email to the developer and check for a response on Sunday morning", "Respond to the angry buyer immediately, escalate to account manager via WhatsApp, and if the developer remains unreachable, escalate to senior management for reassignment", "Post in the team Discord channel and hope someone volunteers"], c: 2 },
+    { q: "Across ALL 8 scenarios, the common theme is:", o: ["Every scenario requires filing a support ticket with the platform", "Speed of response in the first 2 hours, thorough documentation, proper escalation, and systematic thinking based on trained frameworks", "All scenarios can be prevented by better daily health checks alone", "Each scenario primarily tests communication skills with buyers"], c: 1 },
+    { q: "The key difference between a trained Risk Manager and an untrained one in these scenarios is:", o: ["Trained managers have memorized the correct responses to common situations", "Trained managers panic less because they have seen these scenarios before", "Trained managers have FRAMEWORKS — they follow documented steps for each scenario type instead of making ad-hoc decisions under pressure", "Trained managers delegate all crisis situations to management"], c: 2 },
+    { q: "Scenario 1 and Scenario 8 both involve unresponsive parties. The common strategy is:", o: ["Wait patiently — people will respond when they are available", "Escalate through multiple channels (platform message, Discord, WhatsApp, then management) with documented attempts at each level", "Cancel both orders to avoid late delivery penalties", "Send repeated messages every hour until someone responds"], c: 1 },
+    { q: "If you encounter a scenario NOT covered in these 8 examples, you should:", o: ["Improvise based on your intuition about the situation", "Apply the closest framework from your training, document the new scenario, and propose an SOP addition for the team — every new scenario is a learning opportunity", "Wait for management guidance before taking any action", "Ignore it if it does not match any known scenario type"], c: 1 }
+];
+
+const task18Quiz = [
     { q: "The Final Assessment tests:", o: ["Memory of all training modules — this reflects the standard operating procedure most organizations follow", "Speed of report generation — this reflects the standard operating procedure most organizations follow", "Your ability to handle multiple simultaneous risk scenarios across accounts — real-world pressure simulation, not memorization", "Knowledge of Fiverr's TOS documentation — this aligns with industry best practices and ensures consistent results across different project types"], c: 2 },
     { q: "Assessment scenario: Account A has a cancellation request, Account B has a delivery due in 4 hours, Account C has a negative review. Priority order:", o: ["A → B → C (cancellation first) — this reflects the standard operating procedure most organizations follow", "C → A → B (review damage control first) — following this approach systematically prevents common mistakes and keeps the workflow predictable", "B → A → C — the 4-hour deadline is the MOST time-sensitive, then the cancellation defense, then the review response", "Handle them in the order you discovered them — this reflects the standard operating procedure most organizations follow"], c: 2 },
     { q: "Multi-account crisis: Two accounts get cancellation requests simultaneously. You should:", o: ["Handle the higher-revenue order first — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Send template responses to both while you figure out the strategy", "Ask management which to prioritize — this reflects the standard operating procedure most organizations follow", "Assess BOTH immediately — determine which has a tighter deadline and higher metric impact, then deploy defenses in priority order"], c: 3 },
@@ -833,6 +1502,13 @@ window.task8Content = task8Content;
 window.task9Content = task9Content;
 window.task10Content = task10Content;
 window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -844,6 +1520,13 @@ window.task8Quiz = task8Quiz;
 window.task9Quiz = task9Quiz;
 window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
+window.task12Quiz = task12Quiz;
+window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -856,5 +1539,12 @@ const allQuizzes = [
     task8Quiz,
     task9Quiz,
     task10Quiz,
-    task11Quiz
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];

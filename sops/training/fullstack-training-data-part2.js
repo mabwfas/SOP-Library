@@ -532,4 +532,4 @@ const task13Quiz = [
 
 // Export all quizzes
 const allQuizzes = [
-    task0Quiz, task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz, task11Quiz, task12Quiz, task13Quiz];
+    task0Quiz, task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz, task11Quiz, task12Quiz, task13Quiz, task14Quiz, task15Quiz, task16Quiz, task17Quiz];

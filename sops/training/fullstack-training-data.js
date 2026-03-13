@@ -1,6 +1,6 @@
 // Full Stack Developer Training Data - COMPLETE OVERHAUL
 // Digital Heroes Certification Program
-// 13 Tasks, 150+ Quiz Questions, Tech Stack Mastery
+// 18 Tasks, 210+ Quiz Questions, Tech Stack Mastery
 
 const trainingTasks = [
     { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
@@ -158,6 +158,54 @@ const trainingTasks = [
             "🤖 Prompt: Refactoring Legacy Code",
             "🤖 Prompt: Generating Types",
             "⚠️ Warn: AI Hallucinations"
+        ]
+    },
+    {
+        id: 15,
+        title: "Shopify App & Theme Dev",
+        description: "Liquid, CLI & Extensions",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 90 min",
+            "🎨 Topic: Liquid Templating Language",
+            "🛠️ Tool: Shopify CLI & Theme Kit",
+            "🧩 Concept: App Extensions & Metafields"
+        ]
+    },
+    {
+        id: 16,
+        title: "Client Project Delivery",
+        description: "Handoff, Staging & Deployment",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 60 min",
+            "📦 Phase: Project Handoff Workflow",
+            "🌐 Phase: Staging Environments",
+            "✅ Check: Deployment Checklist"
+        ]
+    },
+    {
+        id: 17,
+        title: "Performance & DevOps",
+        description: "Speed, Security & CI/CD",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 75 min",
+            "⚡ Topic: Core Web Vitals & PageSpeed",
+            "🔒 Topic: SSL, Headers & OWASP",
+            "🚀 Topic: CI/CD Pipelines & Hosting"
+        ]
+    },
+    {
+        id: 18,
+        title: "Career & Final Project",
+        description: "Growth Path & Practical Build",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 90 min",
+            "📈 Path: Full-Stack Career Growth",
+            "🎯 Specialization: Tracks & Certifications",
+            "🏗️ Project: End-to-End Build Exercise"
         ]
     }
 ];
@@ -922,32 +970,421 @@ const task13Content = `
 `;
 
 const task14Content = `
-<h2>📚 TASK 13: AI DEVELOPMENT</h2>
+<h2>📚 TASK 14: AI-ASSISTED DEVELOPMENT — Copilot, Prompting & Refactoring</h2>
 
-<div class="content-section">
-    <h3>🤖 Prompt Engineering for Code</h3>
-    <p>Don't say "Make a user page". Say "Create a Next.js Page using Tailwind that fetches user data from /api/user and displays it in a Card component. Handle loading and error states."</p>
-</div>
-
-<div class="content-section">
-    <h3>⚠️ AI Hallucinations</h3>
-    <p>ChatGPT makes up packages that don't exist. Always verify imports.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Refactoring</h3>
-    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: The Prompt</h4>
-        <p>Write a prompt to convert a 500-line "Spaghetti Code" function into small, testable helper functions.</p>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🤖 AI-Assisted Development at Digital Heroes</h3>
+    <p>AI coding assistants (GitHub Copilot, Claude, ChatGPT) are powerful tools when used correctly. At DH, we treat AI as a <strong>pair programmer, not a replacement</strong>. You are always responsible for the output — AI does not write production-ready code on its own.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">🎯 The DH AI Development Rule</strong>
+        <p style="margin: 10px 0 0;">AI-generated code MUST be reviewed, tested, and understood before committing. If you cannot explain every line the AI wrote, you do not commit it.</p>
     </div>
 </div>
 
 <div class="content-section">
-    <h3>🚀 Ready for the Final Exam?</h3>
+    <h3>🧠 Prompt Engineering for Code</h3>
+    <p>The quality of AI output depends entirely on your prompt. Vague prompts produce vague code.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);"><th style="padding: 10px; text-align: left;">Bad Prompt</th><th style="padding: 10px; text-align: left;">Good Prompt</th></tr>
+        <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">"Make a user page"</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">"Create a Next.js 14 Server Component at /app/users/page.tsx that fetches user data from /api/users using fetch, renders a Tailwind card grid, handles loading with Suspense, and error states with error.tsx"</td></tr>
+        <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">"Fix this bug"</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">"The login form at /components/LoginForm.tsx submits but returns 401. The API expects email+password in JSON body. Find why the request payload is malformed"</td></tr>
+        <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">"Write tests"</td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">"Write Jest unit tests for calculateDiscount(price, tier) in /lib/pricing.ts. Cover: regular tier (10%), premium (20%), edge cases (negative price, unknown tier), and return type validation"</td></tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">⚠️ AI Hallucinations — The Silent Danger</h3>
+    <p>AI models confidently suggest packages, APIs, and methods that <strong>do not exist</strong>. This is called hallucination and is the #1 risk of AI-assisted development.</p>
     <ul>
-        <li>📝 20 questions covering all modules</li>
-        <li>🎯 Score <strong>20/20</strong> to receive Full Stack Certification</li>
+        <li><strong>Fake packages:</strong> AI invents npm packages that sound real but do not exist. Always run <code>npm info package-name</code> before installing.</li>
+        <li><strong>Deprecated APIs:</strong> AI often generates code using old React class components, deprecated Express methods, or outdated Prisma syntax.</li>
+        <li><strong>Wrong signatures:</strong> Method parameters, return types, and function signatures may be subtly wrong. Verify against official docs.</li>
+        <li><strong>Security blind spots:</strong> AI may skip input validation, use weak encryption, or expose secrets in client code.</li>
     </ul>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">DH Policy:</strong> If a production bug is traced to unverified AI-generated code, the developer who committed it bears full responsibility. AI is a tool — you are the engineer.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔧 AI for Refactoring Legacy Code</h3>
+    <p>One of the best uses of AI is refactoring messy, hard-to-read code into clean, testable modules.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">Refactoring Prompt Template:</strong>
+        <p style="margin: 10px 0 0;">1. Describe the current code structure and what it does<br>
+        2. Identify what is wrong (too long, duplicated, untestable)<br>
+        3. Specify target architecture (small functions, TypeScript types, error handling)<br>
+        4. Request test suggestions for the refactored code</p>
+    </div>
+    <h4>AI Use Cases at DH:</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.2);"><th style="padding: 10px; text-align: left;">Use Case</th><th style="padding: 10px; text-align: left;">AI Value</th></tr>
+        <tr><td style="padding: 8px;">Generating TypeScript types from JSON</td><td style="padding: 8px;">High — saves time, verify output</td></tr>
+        <tr><td style="padding: 8px;">Writing boilerplate CRUD endpoints</td><td style="padding: 8px;">High — customize after generation</td></tr>
+        <tr><td style="padding: 8px;">Explaining unfamiliar code</td><td style="padding: 8px;">High — great for onboarding</td></tr>
+        <tr><td style="padding: 8px;">Writing Prisma schema from requirements</td><td style="padding: 8px;">Medium — verify relations carefully</td></tr>
+        <tr><td style="padding: 8px;">Complex business logic</td><td style="padding: 8px;">Low — requires deep domain knowledge</td></tr>
+        <tr><td style="padding: 8px;">Security-critical code</td><td style="padding: 8px;">Low — always write and review manually</td></tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: AI-Assisted Refactoring</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Refactor with AI</h4>
+        <p>You have a 500-line function that handles user registration, email validation, password hashing, database insert, welcome email sending, and analytics tracking — all in one function.</p>
+        <ol>
+            <li>Write a detailed AI prompt to break this into small, testable helper functions</li>
+            <li>Review the AI output for hallucinated imports or deprecated APIs</li>
+            <li>Write 3 unit test cases for one of the extracted functions</li>
+        </ol>
+    </div>
+</div>
+`;
+
+const task15Content = `
+<h2>📚 TASK 15: SHOPIFY APP & THEME DEVELOPMENT — Liquid, CLI & Extensions</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🏪 Shopify Development at Digital Heroes</h3>
+    <p>Shopify is the core platform for the majority of our client projects. As a full-stack developer at DH, you must master Shopify theme development, the Liquid templating language, Shopify CLI workflows, and app extensions. This is not optional — <strong>Shopify expertise is a core requirement</strong>.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #34D399; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">🎯 DH Shopify Stack</strong>
+        <p style="margin: 10px 0 0;">Theme Development: Liquid + JSON Templates + CSS/JS | Custom Apps: Node.js + Shopify API | Storefront: Hydrogen (React) for headless builds</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💧 Liquid Templating Language — The Foundation</h3>
+    <p>Liquid is Shopify's templating language. Every theme file uses it. You must understand its three core constructs:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Construct</th><th style="padding: 10px; text-align: left;">Syntax</th><th style="padding: 10px; text-align: left;">Purpose</th></tr>
+        <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><strong>Objects</strong></td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ product.title }}</code></td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Output dynamic content</td></tr>
+        <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><strong>Tags</strong></td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><code>{% if product.available %}</code></td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Logic and control flow</td></tr>
+        <tr><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><strong>Filters</strong></td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);"><code>{{ price | money }}</code></td><td style="padding: 8px; border: 1px solid rgba(255,255,255,0.1);">Transform output values</td></tr>
+    </table>
+    <h4>Key Liquid Objects:</h4>
+    <ul>
+        <li><strong>product</strong> — title, description, variants, images, price, compare_at_price, tags, metafields</li>
+        <li><strong>collection</strong> — products array, title, description, sort_by, filters</li>
+        <li><strong>cart</strong> — items, item_count, total_price, note, attributes</li>
+        <li><strong>customer</strong> — name, email, orders, addresses, tags</li>
+        <li><strong>shop</strong> — name, domain, currency, locale</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🏗️ Theme Architecture — Online Store 2.0</h3>
+    <p>Modern Shopify themes follow the Online Store 2.0 architecture with JSON templates and sections everywhere.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Directory</th><th style="padding: 10px; text-align: left;">Purpose</th></tr>
+        <tr><td style="padding: 8px;"><code>/layout/</code></td><td style="padding: 8px;">Theme wrapper (theme.liquid) — includes header, footer, content_for_layout</td></tr>
+        <tr><td style="padding: 8px;"><code>/templates/</code></td><td style="padding: 8px;">JSON templates defining which sections appear on each page type</td></tr>
+        <tr><td style="padding: 8px;"><code>/sections/</code></td><td style="padding: 8px;">Reusable, customizable content blocks with schema settings</td></tr>
+        <tr><td style="padding: 8px;"><code>/snippets/</code></td><td style="padding: 8px;">Partial templates included via {% render 'snippet-name' %}</td></tr>
+        <tr><td style="padding: 8px;"><code>/assets/</code></td><td style="padding: 8px;">CSS, JS, images — referenced via {{ 'file.css' | asset_url }}</td></tr>
+        <tr><td style="padding: 8px;"><code>/config/</code></td><td style="padding: 8px;">settings_schema.json (theme settings) and settings_data.json (values)</td></tr>
+        <tr><td style="padding: 8px;"><code>/locales/</code></td><td style="padding: 8px;">Translation files for multi-language stores</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🛠️ Shopify CLI & Development Workflow</h3>
+    <p>All Shopify development at DH uses the Shopify CLI. Never edit themes through the admin code editor in production.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.2);"><th style="padding: 10px; text-align: left;">Command</th><th style="padding: 10px; text-align: left;">Purpose</th></tr>
+        <tr><td style="padding: 8px;"><code>shopify theme dev</code></td><td style="padding: 8px;">Start local development server with hot reload</td></tr>
+        <tr><td style="padding: 8px;"><code>shopify theme push</code></td><td style="padding: 8px;">Deploy theme to store (staging first, never directly to live)</td></tr>
+        <tr><td style="padding: 8px;"><code>shopify theme pull</code></td><td style="padding: 8px;">Download current theme from store</td></tr>
+        <tr><td style="padding: 8px;"><code>shopify theme check</code></td><td style="padding: 8px;">Lint theme for errors and best practices</td></tr>
+        <tr><td style="padding: 8px;"><code>shopify app dev</code></td><td style="padding: 8px;">Start app development with tunneling</td></tr>
+    </table>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">DH Rule:</strong> NEVER run <code>shopify theme push</code> to the live/published theme without PM approval. Always push to a staging/development theme first, get QA sign-off, then publish.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🧩 Metafields & App Extensions</h3>
+    <p>Metafields allow you to store custom data on products, collections, customers, and orders. They power dynamic content that goes beyond standard Shopify fields.</p>
+    <ul>
+        <li><strong>Product metafields:</strong> Specifications, care instructions, sizing charts, warranty info</li>
+        <li><strong>Collection metafields:</strong> Banner images, SEO descriptions, featured products</li>
+        <li><strong>Customer metafields:</strong> Loyalty points, preferences, custom tags</li>
+        <li><strong>App extensions:</strong> Theme app extensions inject UI into the storefront without editing theme code</li>
+    </ul>
+    <h4>Section Schema Example:</h4>
+    <p>Every section must define a <code>{% schema %}</code> block that configures its settings for the theme customizer. This includes the section name, settings inputs (text, image_picker, range, select), blocks for repeatable elements, and presets for default configurations.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Theme Section</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Build a Custom Section</h4>
+        <p>Create a "Featured Collection" section that:</p>
+        <ol>
+            <li>Lets the merchant select a collection from the theme customizer</li>
+            <li>Displays up to 8 products in a responsive grid</li>
+            <li>Shows product image, title, price, and "Add to Cart" button</li>
+            <li>Includes a schema with settings for heading text, products_per_row, and show_vendor toggle</li>
+        </ol>
+    </div>
+</div>
+`;
+
+const task16Content = `
+<h2>📚 TASK 16: CLIENT PROJECT DELIVERY WORKFLOW — Handoff, Staging & Deployment</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">📦 The DH Delivery Workflow</h3>
+    <p>At Digital Heroes, every client project follows a strict delivery pipeline. Skipping steps leads to client dissatisfaction, refund requests, and negative reviews on the marketplace. Our delivery process is designed to ensure <strong>zero surprises for the client</strong>.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">🔄 The 6-Step Delivery Pipeline</strong>
+        <p style="margin: 10px 0 0;">Development → Internal QA → Staging Deploy → Client Demo → Revision Cycle → Production Deploy</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🌐 Staging Environments — The Safety Net</h3>
+    <p>Every project gets a staging environment that mirrors production. No code ever goes directly from development to the live site.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Platform</th><th style="padding: 10px; text-align: left;">Staging Approach</th></tr>
+        <tr><td style="padding: 8px;">Shopify</td><td style="padding: 8px;">Unpublished development theme — use Theme ID to push, preview via share link</td></tr>
+        <tr><td style="padding: 8px;">WordPress</td><td style="padding: 8px;">Separate staging subdomain (staging.clientsite.com) or WP Engine staging environment</td></tr>
+        <tr><td style="padding: 8px;">Custom Apps (Next.js)</td><td style="padding: 8px;">Vercel preview deployments per branch, or Railway staging instance</td></tr>
+        <tr><td style="padding: 8px;">Headless Shopify</td><td style="padding: 8px;">Hydrogen preview deployment connected to dev store</td></tr>
+    </table>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Untested production deploys are a termination-level offense at DH.</strong> Every change must be verified on staging before touching the live site.
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🎥 Client Demo Protocol</h3>
+    <p>Before marking any milestone as complete, you must conduct a client demo. This is non-negotiable.</p>
+    <ol>
+        <li><strong>Pre-Demo Prep (30 min):</strong> Test every feature on staging yourself. Check all forms, buttons, links, mobile view, and edge cases.</li>
+        <li><strong>Record Loom Video:</strong> Walk through all completed features. Show desktop AND mobile. Narrate what each section does. Keep it under 10 minutes.</li>
+        <li><strong>Share on Platform:</strong> Post the Loom link in the client's order chat with a clear summary of what was built.</li>
+        <li><strong>Revision Window:</strong> Give client 48 hours to review and provide feedback. Track all revision requests in a checklist.</li>
+        <li><strong>Approval Gate:</strong> Client must explicitly approve the milestone before you proceed to the next phase.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>✅ The Pre-Launch Checklist</h3>
+    <p>Before ANY production deployment, every item on this checklist must be verified:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.2);"><th style="padding: 10px; text-align: left;">Category</th><th style="padding: 10px; text-align: left;">Checks</th></tr>
+        <tr><td style="padding: 8px;"><strong>Functionality</strong></td><td style="padding: 8px;">All features work as specified. Forms submit correctly. Cart and checkout flow tested end-to-end.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Responsiveness</strong></td><td style="padding: 8px;">Tested on mobile (375px), tablet (768px), desktop (1280px+). No overflow, no broken layouts.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Performance</strong></td><td style="padding: 8px;">Lighthouse score 90+. Images optimized (WebP). No render-blocking scripts.</td></tr>
+        <tr><td style="padding: 8px;"><strong>SEO</strong></td><td style="padding: 8px;">Meta titles, descriptions set. Alt tags on images. Sitemap submitted. Robots.txt correct.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Security</strong></td><td style="padding: 8px;">SSL active. No exposed API keys. Form validation on server-side. CORS configured.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Analytics</strong></td><td style="padding: 8px;">Google Analytics / Tag Manager installed. Conversion tracking set up. Facebook Pixel if needed.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Legal</strong></td><td style="padding: 8px;">Privacy policy, terms of service, cookie consent banner in place.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Backup</strong></td><td style="padding: 8px;">Full backup of existing site taken before deployment. Rollback plan documented.</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📋 Post-Launch Handover Package</h3>
+    <p>After successful launch, deliver the complete handover package to the client:</p>
+    <ul>
+        <li><strong>Documentation:</strong> README with setup instructions, architecture diagram, environment variables list</li>
+        <li><strong>Training Videos:</strong> Loom library showing how to update content, manage products, process orders</li>
+        <li><strong>Credentials:</strong> Secure transfer of all login credentials via password manager (never plain text in chat)</li>
+        <li><strong>Repository Access:</strong> Invite client to private GitHub repo with their project code</li>
+        <li><strong>Support Terms:</strong> Define warranty period (typically 14-30 days) for bug fixes. New features are new quotes.</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Delivery Workflow</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Create a Delivery Plan</h4>
+        <p>A client has ordered a custom Shopify store with 5 pages, product catalog, and custom checkout flow. Create:</p>
+        <ol>
+            <li>A milestone breakdown (3-4 milestones with specific deliverables)</li>
+            <li>A pre-launch checklist customized for this project</li>
+            <li>A Loom video script outline for the client demo</li>
+        </ol>
+    </div>
+</div>
+`;
+
+const task17Content = `
+<h2>📚 TASK 17: PERFORMANCE, SECURITY & DEVOPS — Speed, Protection & Automation</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.15)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">⚡ Performance is Not Optional</h3>
+    <p>At Digital Heroes, a slow website is a broken website. Every 100ms of additional load time costs our clients conversions. Google uses Core Web Vitals as ranking signals. Performance directly affects revenue and SEO.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F87171; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">🎯 DH Performance Standard</strong>
+        <p style="margin: 10px 0 0;">Every project must achieve a Lighthouse Performance score of 90+ on mobile before deployment. Scores below 80 are unacceptable and must be fixed before client delivery.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Core Web Vitals — The Three Metrics That Matter</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Metric</th><th style="padding: 10px; text-align: left;">What It Measures</th><th style="padding: 10px; text-align: left;">Good Target</th><th style="padding: 10px; text-align: left;">How to Optimize</th></tr>
+        <tr><td style="padding: 8px;"><strong>LCP</strong> (Largest Contentful Paint)</td><td style="padding: 8px;">Time for largest visible element to render</td><td style="padding: 8px;">&lt; 2.5 seconds</td><td style="padding: 8px;">Optimize hero images, preload fonts, reduce server response time</td></tr>
+        <tr><td style="padding: 8px;"><strong>INP</strong> (Interaction to Next Paint)</td><td style="padding: 8px;">Responsiveness to user interactions</td><td style="padding: 8px;">&lt; 200ms</td><td style="padding: 8px;">Reduce JavaScript execution, break long tasks, use web workers</td></tr>
+        <tr><td style="padding: 8px;"><strong>CLS</strong> (Cumulative Layout Shift)</td><td style="padding: 8px;">Visual stability — elements jumping around</td><td style="padding: 8px;">&lt; 0.1</td><td style="padding: 8px;">Set explicit image dimensions, reserve space for dynamic content</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🖼️ Image Optimization — The Biggest Performance Win</h3>
+    <p>Images account for 50-70% of page weight on most e-commerce sites. Optimizing them gives the largest performance improvement.</p>
+    <ul>
+        <li><strong>Format:</strong> Use WebP (40% smaller than JPEG). Shopify auto-converts via CDN. For custom apps, use next/image.</li>
+        <li><strong>Sizing:</strong> Never serve a 4000px image in a 400px container. Use srcset and sizes attributes.</li>
+        <li><strong>Loading:</strong> Lazy load below-fold images. Eager load above-fold hero images.</li>
+        <li><strong>Compression:</strong> Target quality 80-85% for product images. Use lossless for logos and icons.</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔒 Security Hardening — Beyond OWASP</h3>
+    <p>Security at DH goes beyond knowing OWASP Top 10. You must actively implement security measures on every project.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.2);"><th style="padding: 10px; text-align: left;">Layer</th><th style="padding: 10px; text-align: left;">Implementation</th></tr>
+        <tr><td style="padding: 8px;"><strong>SSL/TLS</strong></td><td style="padding: 8px;">Force HTTPS everywhere. HSTS headers. Auto-renew certificates.</td></tr>
+        <tr><td style="padding: 8px;"><strong>HTTP Headers</strong></td><td style="padding: 8px;">Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy</td></tr>
+        <tr><td style="padding: 8px;"><strong>Input Validation</strong></td><td style="padding: 8px;">Server-side validation with Zod on every endpoint. Never trust client input.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Authentication</strong></td><td style="padding: 8px;">bcrypt/argon2 for passwords. Secure HTTP-only cookies. Rate limiting on login.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Dependencies</strong></td><td style="padding: 8px;">Run npm audit weekly. Update packages monthly. Remove unused dependencies.</td></tr>
+        <tr><td style="padding: 8px;"><strong>Secrets Management</strong></td><td style="padding: 8px;">.env files never committed. Use platform-level env vars. Rotate keys quarterly.</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚀 CI/CD Pipeline — Automated Quality Gates</h3>
+    <p>Every DH project must have a CI/CD pipeline that prevents broken code from reaching production.</p>
+    <h4>Standard DH Pipeline (GitHub Actions):</h4>
+    <ol>
+        <li><strong>Lint Check:</strong> ESLint runs on every push. Warnings are acceptable; errors block the build.</li>
+        <li><strong>Type Check:</strong> TypeScript compiler runs with strict mode. No type errors allowed.</li>
+        <li><strong>Unit Tests:</strong> Jest runs all test files. Coverage must not decrease.</li>
+        <li><strong>Build:</strong> Production build must succeed. No build warnings ignored.</li>
+        <li><strong>E2E Tests:</strong> Playwright runs critical path tests (signup, checkout, core features).</li>
+        <li><strong>Preview Deploy:</strong> Automatic preview deployment for every PR.</li>
+        <li><strong>Production Deploy:</strong> Only after PR approval + all checks pass + PM sign-off.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>☁️ Hosting & Infrastructure Decision Matrix</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Platform</th><th style="padding: 10px; text-align: left;">Best For</th><th style="padding: 10px; text-align: left;">Avoid When</th></tr>
+        <tr><td style="padding: 8px;"><strong>Vercel</strong></td><td style="padding: 8px;">Next.js apps, static sites, JAMstack</td><td style="padding: 8px;">Background workers, WebSockets, heavy computation</td></tr>
+        <tr><td style="padding: 8px;"><strong>Railway</strong></td><td style="padding: 8px;">Node.js APIs, PostgreSQL, Redis, background jobs</td><td style="padding: 8px;">Static frontend hosting, CDN-heavy sites</td></tr>
+        <tr><td style="padding: 8px;"><strong>AWS</strong></td><td style="padding: 8px;">Enterprise clients, complex infra, specific compliance needs</td><td style="padding: 8px;">Simple projects — overhead is not justified</td></tr>
+        <tr><td style="padding: 8px;"><strong>Shopify</strong></td><td style="padding: 8px;">Theme-based stores, standard e-commerce</td><td style="padding: 8px;">Headless builds needing custom server</td></tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>✅ IMPLEMENTATION TASK: Performance Audit</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">Exercise: Optimize a Slow Page</h4>
+        <p>You receive a client complaint that their product page takes 6 seconds to load on mobile. Lighthouse shows Performance score of 45. Create:</p>
+        <ol>
+            <li>An audit report listing the top 5 performance issues (with metrics)</li>
+            <li>A prioritized fix plan (what to fix first for maximum impact)</li>
+            <li>A GitHub Actions workflow YAML that runs Lighthouse CI on every PR</li>
+        </ol>
+    </div>
+</div>
+`;
+
+const task18Content = `
+<h2>📚 TASK 18: CAREER GROWTH & PRACTICAL PROJECT BUILD</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📈 Full-Stack Career Growth at Digital Heroes</h3>
+    <p>Your career at DH is not linear — it is <strong>exponential if you put in the work</strong>. We promote based on impact and skill, not tenure. Every developer has a clear growth path with defined milestones.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">🎯 The DH Developer Career Ladder</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(139, 92, 246, 0.2);"><th style="padding: 10px; text-align: left;">Level</th><th style="padding: 10px; text-align: left;">Role</th><th style="padding: 10px; text-align: left;">Key Requirements</th></tr>
+            <tr><td style="padding: 8px;">L1</td><td style="padding: 8px;">Junior Developer</td><td style="padding: 8px;">Completes tasks with guidance. Follows SOPs. Learning the stack.</td></tr>
+            <tr><td style="padding: 8px;">L2</td><td style="padding: 8px;">Developer</td><td style="padding: 8px;">Independently delivers features. Reviews peer code. Handles client communication.</td></tr>
+            <tr><td style="padding: 8px;">L3</td><td style="padding: 8px;">Senior Developer</td><td style="padding: 8px;">Leads projects end-to-end. Writes TSDs. Mentors juniors. Makes architecture decisions.</td></tr>
+            <tr><td style="padding: 8px;">L4</td><td style="padding: 8px;">Tech Lead</td><td style="padding: 8px;">Manages team of developers. Owns technical quality. Drives process improvements.</td></tr>
+            <tr><td style="padding: 8px;">L5</td><td style="padding: 8px;">Engineering Manager</td><td style="padding: 8px;">Cross-team leadership. Strategic technical decisions. Client relationship management.</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Specialization Tracks</h3>
+    <p>After reaching L2, you can choose a specialization track. Specialists earn more and handle higher-value projects.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Track</th><th style="padding: 10px; text-align: left;">Focus Areas</th><th style="padding: 10px; text-align: left;">Client Value</th></tr>
+        <tr><td style="padding: 8px;"><strong>Shopify Expert</strong></td><td style="padding: 8px;">Theme development, app development, Shopify Plus, Hydrogen</td><td style="padding: 8px;">Premium custom stores, migrations, complex integrations</td></tr>
+        <tr><td style="padding: 8px;"><strong>Full-Stack App Builder</strong></td><td style="padding: 8px;">Next.js, Node.js, PostgreSQL, real-time features</td><td style="padding: 8px;">Custom SaaS, dashboards, portals, marketplaces</td></tr>
+        <tr><td style="padding: 8px;"><strong>WordPress Engineer</strong></td><td style="padding: 8px;">Custom themes, WooCommerce, headless WP, plugin development</td><td style="padding: 8px;">Content sites, blogs, WooCommerce stores</td></tr>
+        <tr><td style="padding: 8px;"><strong>DevOps & Performance</strong></td><td style="padding: 8px;">CI/CD, cloud infrastructure, monitoring, optimization</td><td style="padding: 8px;">Enterprise clients, high-traffic stores, performance audits</td></tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📜 Certification & Skill Validation</h3>
+    <p>DH values certifications as proof of structured learning. These are recommended but not required:</p>
+    <ul>
+        <li><strong>Shopify Partner Academy:</strong> Free. Covers theme development, app development, and store setup. Complete within first 3 months.</li>
+        <li><strong>AWS Cloud Practitioner:</strong> Foundation-level cloud knowledge. Useful for custom project hosting.</li>
+        <li><strong>Meta Front-End Developer Certificate:</strong> React, testing, responsive design. Good for portfolio.</li>
+        <li><strong>Google UX Design Certificate:</strong> Useful for developers who want to bridge design and development.</li>
+    </ul>
+    <p><strong>DH Reimbursement:</strong> Up to Rs.5,000/year for approved course fees. Must complete and share certificate.</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🏗️ PRACTICAL PROJECT: End-to-End Full-Stack Build</h3>
+    <p>This is your capstone exercise. Complete this project to demonstrate mastery of everything covered in this training program.</p>
+
+    <h4>Project Brief: "QuickCart" — A Custom Shopify Store with Admin Dashboard</h4>
+    <p>Build a complete e-commerce solution for a fictional client "QuickCart" who sells artisan coffee online.</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.2);"><th style="padding: 10px; text-align: left;">Phase</th><th style="padding: 10px; text-align: left;">Deliverables</th><th style="padding: 10px; text-align: left;">Skills Tested</th></tr>
+        <tr><td style="padding: 8px;"><strong>Phase 1: Planning</strong></td><td style="padding: 8px;">Technical Spec Document with ER diagram, API endpoints, technology stack, timeline</td><td style="padding: 8px;">Task 3 (Planning), Task 7 (DB Design)</td></tr>
+        <tr><td style="padding: 8px;"><strong>Phase 2: Shopify Store</strong></td><td style="padding: 8px;">Custom theme with homepage, collection page, product page, cart, and checkout</td><td style="padding: 8px;">Task 15 (Shopify), Task 5 (Architecture)</td></tr>
+        <tr><td style="padding: 8px;"><strong>Phase 3: Admin Dashboard</strong></td><td style="padding: 8px;">Next.js dashboard with order management, customer analytics, inventory tracking</td><td style="padding: 8px;">Task 4 (Tech Stack), Task 8 (API), Task 9 (Security)</td></tr>
+        <tr><td style="padding: 8px;"><strong>Phase 4: Integration</strong></td><td style="padding: 8px;">Connect Shopify to dashboard via API. Sync orders, products, customers in real-time.</td><td style="padding: 8px;">Task 6 (Dev Phases), Task 8 (API)</td></tr>
+        <tr><td style="padding: 8px;"><strong>Phase 5: QA & Launch</strong></td><td style="padding: 8px;">Lighthouse 90+. Unit tests. E2E tests. Pre-launch checklist complete. Client demo video.</td><td style="padding: 8px;">Task 10 (QA), Task 16 (Delivery), Task 17 (Performance)</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📋 Project Evaluation Criteria</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; text-align: left;">Criteria</th><th style="padding: 10px; text-align: left;">Weight</th><th style="padding: 10px; text-align: left;">What We Look For</th></tr>
+        <tr><td style="padding: 8px;">Code Quality</td><td style="padding: 8px;">25%</td><td style="padding: 8px;">Clean code, TypeScript, proper naming, no "any" types, DRY principles</td></tr>
+        <tr><td style="padding: 8px;">Functionality</td><td style="padding: 8px;">25%</td><td style="padding: 8px;">All features work as specified. Edge cases handled. Error states present.</td></tr>
+        <tr><td style="padding: 8px;">Performance</td><td style="padding: 8px;">15%</td><td style="padding: 8px;">Lighthouse 90+, optimized images, lazy loading, minimal JS bundle</td></tr>
+        <tr><td style="padding: 8px;">Security</td><td style="padding: 8px;">15%</td><td style="padding: 8px;">Input validation, authentication, no exposed secrets, proper headers</td></tr>
+        <tr><td style="padding: 8px;">Documentation</td><td style="padding: 8px;">10%</td><td style="padding: 8px;">README, TSD, API docs, architecture diagram</td></tr>
+        <tr><td style="padding: 8px;">Delivery Process</td><td style="padding: 8px;">10%</td><td style="padding: 8px;">Staging setup, client demo video, pre-launch checklist, handover package</td></tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(59, 130, 246, 0.3); padding: 25px; border-radius: 12px;">
+    <h3>🏆 Final Certification</h3>
+    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <h4 style="color: #60A5FA; margin-top: 0;">How to Earn Your Full Stack Developer Certificate</h4>
+        <ol>
+            <li>Complete all 18 tasks in this training program</li>
+            <li>Pass all quizzes with a minimum score of 80%</li>
+            <li>Submit the QuickCart capstone project for review</li>
+            <li>Receive sign-off from your Tech Lead or PM</li>
+        </ol>
+        <p style="color: #34D399; font-weight: 600;">Upon certification, you are eligible for client project assignments and the DH developer incentive program.</p>
+    </div>
 </div>
 `;
 
@@ -1280,6 +1717,78 @@ const task0Quiz = [
     { q: "What is an SOP and how should employees treat it?", o: ["Flexible suggestion by team — this reflects the standard operating procedure most development teams follow", "Rough guideline reviewed monthly", "The Law - best known way to do a task perfectly mandatory daily", "Reference primarily for new employees"], c: 2 }
 ];
 
+// =====================================================
+// TASK 15: SHOPIFY APP & THEME DEVELOPMENT QUIZ (12 Questions)
+// =====================================================
+const task14Quiz = [
+    { q: "In Shopify Liquid, the syntax {{ product.title }} is an example of:", o: ["A Liquid tag for control flow", "A Liquid object that outputs dynamic content", "A Liquid filter for transformation", "A JavaScript template literal"], c: 1 },
+    { q: "Online Store 2.0 theme architecture uses JSON templates primarily for:", o: ["Storing customer data in the browser", "Defining which sections appear on each page type", "Replacing Liquid entirely with JSON", "Serving API responses to the storefront"], c: 1 },
+    { q: "The Shopify CLI command to start local development with hot reload is:", o: ["shopify theme push", "shopify theme pull", "shopify theme dev", "shopify app deploy"], c: 2 },
+    { q: "At DH, running 'shopify theme push' to the live/published theme requires:", o: ["No special permission — any developer can push anytime", "PM approval after QA sign-off on staging", "Client email confirmation only", "Only the CEO can authorize live pushes"], c: 1 },
+    { q: "Shopify sections differ from snippets because sections:", o: ["Cannot contain HTML or CSS", "Have a schema block that makes them customizable in the theme editor", "Are only used in the header and footer", "Cannot accept dynamic data from Liquid objects"], c: 1 },
+    { q: "The /assets/ directory in a Shopify theme is referenced in Liquid using:", o: ["A direct file path like /assets/style.css", "The asset_url filter: {{ 'file.css' | asset_url }}", "A JavaScript import statement", "The require() function from Node.js"], c: 1 },
+    { q: "Metafields in Shopify are used to:", o: ["Store custom data beyond standard fields on products, collections, and customers", "Override Shopify's payment processing system", "Replace the Liquid templating engine", "Manage DNS settings for the store domain"], c: 0 },
+    { q: "In Liquid, {% if product.available %} is an example of:", o: ["An object outputting content", "A filter transforming data", "A tag providing logic and control flow", "A comment block for documentation"], c: 2 },
+    { q: "Theme app extensions allow developers to:", o: ["Directly edit the client's theme.liquid file in production", "Inject UI into the storefront without editing theme code", "Replace Shopify's checkout with a custom solution", "Bypass Shopify's API rate limits"], c: 1 },
+    { q: "The {{ price | money }} syntax uses a Liquid:", o: ["Object to create a new variable", "Tag to implement conditional logic", "Filter to transform the output value", "Schema to define theme settings"], c: 2 },
+    { q: "Shopify Hydrogen is used for:", o: ["Standard theme-based stores with no customization", "Headless Shopify builds using React", "Email marketing automation for Shopify stores", "Database management for Shopify Plus stores"], c: 1 },
+    { q: "A section schema block configures:", o: ["The server-side database schema for Shopify", "Settings inputs for the theme customizer (text, image_picker, range, select)", "JavaScript build configuration for the storefront", "API rate limiting rules for the Shopify Admin"], c: 1 }
+];
+
+// =====================================================
+// TASK 16: CLIENT PROJECT DELIVERY WORKFLOW QUIZ (12 Questions)
+// =====================================================
+const task15Quiz = [
+    { q: "The DH 6-Step Delivery Pipeline starts with Development and ends with:", o: ["Client Demo", "Internal QA", "Production Deploy", "Revision Cycle"], c: 2 },
+    { q: "Untested production deploys at Digital Heroes are classified as:", o: ["Acceptable for small changes under 10 lines of code", "A termination-level offense", "Permissible with verbal PM approval", "Normal practice for hotfixes during off-hours"], c: 1 },
+    { q: "For Shopify projects, the staging environment is:", o: ["The live published theme with careful edits", "An unpublished development theme previewed via share link", "A local-only environment that cannot be shared with clients", "A separate Shopify store on a different plan"], c: 1 },
+    { q: "Client demo Loom videos should be kept under:", o: ["30 minutes with detailed code walkthrough", "2 minutes showing only the homepage", "10 minutes covering desktop AND mobile features", "60 minutes for comprehensive coverage"], c: 2 },
+    { q: "After sharing a demo with the client, the revision window is:", o: ["24 hours — respond faster to win more projects", "No specific window — client responds when ready", "48 hours to review and provide feedback", "1 week minimum for thorough review"], c: 2 },
+    { q: "The pre-launch checklist category 'Responsiveness' requires testing on:", o: ["Desktop only since most users browse on computers", "Mobile (375px), tablet (768px), and desktop (1280px+)", "Only the devices the client specifically mentions", "Any single device as long as it looks acceptable"], c: 1 },
+    { q: "Client credentials during handover should be transferred via:", o: ["Plain text in the marketplace chat for convenience", "A password manager (never plain text in chat)", "Email with the subject line containing the password", "A shared Google Doc visible to the whole team"], c: 1 },
+    { q: "The warranty period after project launch typically covers:", o: ["Unlimited free changes for life", "Bug fixes only (14-30 days). New features are new quotes.", "Only issues reported in the first 24 hours", "Six months of free development and feature additions"], c: 1 },
+    { q: "Before marking a milestone as complete, the developer must:", o: ["Just update the project tracker and move on", "Conduct a client demo showing all completed features", "Wait for the client to discover the changes themselves", "Only inform the PM via internal chat"], c: 1 },
+    { q: "The handover package includes all EXCEPT:", o: ["README with setup instructions", "Training Loom videos for the client", "Developer's personal GitHub credentials", "Repository access and architecture diagram"], c: 2 },
+    { q: "For custom Next.js apps, staging is achieved through:", o: ["Editing files directly on the production server", "Vercel preview deployments per branch or Railway staging instance", "Sending screenshots to the client for approval", "Running the app locally and sharing the localhost URL"], c: 1 },
+    { q: "The pre-launch 'Backup' check requires:", o: ["Full backup of the existing site taken before deployment with rollback plan", "No backup needed if the changes are minor", "Client is responsible for their own backups", "Only database backup, no code backup needed"], c: 0 }
+];
+
+// =====================================================
+// TASK 17: PERFORMANCE, SECURITY & DEVOPS QUIZ (12 Questions)
+// =====================================================
+const task16Quiz = [
+    { q: "The DH Performance Standard requires a Lighthouse Performance score of at least:", o: ["70 on desktop only", "60 on any device", "90+ on mobile before deployment", "50 is acceptable for e-commerce sites"], c: 2 },
+    { q: "LCP (Largest Contentful Paint) measures:", o: ["How fast JavaScript executes on the page", "Time for the largest visible element to render — target under 2.5 seconds", "The total number of network requests made by the page", "How many CSS files are loaded by the browser"], c: 1 },
+    { q: "CLS (Cumulative Layout Shift) is caused by:", o: ["Too many API calls to the server", "Elements jumping around due to missing image dimensions or dynamic content", "Slow JavaScript execution blocking the main thread", "Using too many CSS animations on the page"], c: 1 },
+    { q: "Images account for what percentage of page weight on most e-commerce sites?", o: ["10-20%", "30-40%", "50-70%", "Less than 5%"], c: 2 },
+    { q: "The recommended image format for web that is 40% smaller than JPEG is:", o: ["PNG", "GIF", "SVG", "WebP"], c: 3 },
+    { q: "HTTP security headers that should be set on every project include:", o: ["Only Content-Type and nothing else", "Content-Security-Policy, X-Frame-Options, X-Content-Type-Options", "Headers are optional and only needed for banking sites", "Only the Server header identifying the tech stack"], c: 1 },
+    { q: "In the DH CI/CD pipeline, which step blocks the merge if it fails?", o: ["Marketing review of the landing page", "All steps — lint, type check, unit tests, build, and E2E tests", "Only the final production deploy step", "None — all checks are advisory and can be overridden"], c: 1 },
+    { q: "After accidentally pushing .env to GitHub, the FIRST action is:", o: ["Delete the commit from history and hope nobody saw it", "Ignore it since the repo is private", "Rotate all exposed credentials immediately", "Ask the client if they noticed anything suspicious"], c: 2 },
+    { q: "Vercel is best suited for hosting:", o: ["PostgreSQL databases and background workers", "Next.js frontend apps and static sites", "WebSocket servers with persistent connections", "Heavy computation and machine learning models"], c: 1 },
+    { q: "INP (Interaction to Next Paint) measures:", o: ["Initial page load time before any content appears", "Responsiveness to user interactions — target under 200ms", "Network latency between the browser and CDN server", "Time to download all JavaScript bundles for the page"], c: 1 },
+    { q: "For lazy loading images, the correct approach is:", o: ["Lazy load ALL images including above-fold hero images", "Eager load above-fold images, lazy load below-fold images", "Never lazy load since it hurts SEO rankings", "Use JavaScript setTimeout to delay all image loading by 5 seconds"], c: 1 },
+    { q: "AWS should be used for DH projects:", o: ["For all projects by default since it is the industry standard", "Only if necessary — the complexity overhead is not justified for simple projects", "Never — DH exclusively uses Vercel for everything", "Only for Shopify theme hosting and nothing else"], c: 1 }
+];
+
+// =====================================================
+// TASK 18: CAREER GROWTH & FINAL PROJECT QUIZ (12 Questions)
+// =====================================================
+const task17Quiz = [
+    { q: "At DH, promotions are based on:", o: ["Tenure — longest-serving employees get promoted first", "Impact and skill, not tenure", "Personal relationships with management", "Number of certifications earned regardless of job performance"], c: 1 },
+    { q: "The L3 (Senior Developer) role requires:", o: ["Only writing code faster than other developers", "Leading projects end-to-end, writing TSDs, mentoring juniors, and making architecture decisions", "Managing the company's finances and HR operations", "Exclusively working on client communication without coding"], c: 1 },
+    { q: "Specialization tracks become available at which career level?", o: ["L1 (Junior Developer) from day one", "L2 (Developer) after demonstrating independent capability", "L5 (Engineering Manager) only", "Specialization is not offered at DH"], c: 1 },
+    { q: "The Shopify Expert specialization track focuses on:", o: ["Only basic theme color changes and font swaps", "Theme development, app development, Shopify Plus, and Hydrogen", "Server infrastructure and DevOps exclusively", "WordPress plugin development for WooCommerce"], c: 1 },
+    { q: "DH reimburses approved course fees up to:", o: ["Rs. 50,000/year with no restrictions", "Rs. 5,000/year — must complete and share certificate", "No reimbursement is available for any courses", "Rs. 1,00,000/year for any online course without completion requirement"], c: 1 },
+    { q: "In the QuickCart capstone project, Phase 1 (Planning) deliverable is:", o: ["A fully functional Shopify store ready for launch", "A Technical Spec Document with ER diagram, API endpoints, tech stack, and timeline", "Only a one-paragraph project summary via chat", "A marketing campaign for the coffee brand"], c: 1 },
+    { q: "The project evaluation criteria assigns the highest weight (25%) to:", o: ["Documentation and delivery process combined", "Performance optimization alone", "Code Quality and Functionality (25% each)", "Security implementation exclusively"], c: 2 },
+    { q: "To earn the Full Stack Developer Certificate, you must:", o: ["Only complete task 1 and pass one quiz", "Complete all 18 tasks, pass quizzes at 80%+, submit capstone, and get Tech Lead sign-off", "Watch all training videos without taking any quizzes", "Submit a resume and wait for automatic approval"], c: 1 },
+    { q: "The DevOps & Performance specialization track handles:", o: ["Only frontend CSS styling and animation work", "CI/CD, cloud infrastructure, monitoring, and optimization", "Sales and client acquisition exclusively", "Graphic design and brand identity creation"], c: 1 },
+    { q: "Phase 4 (Integration) of the QuickCart project requires:", o: ["Designing a logo for the QuickCart brand", "Connecting Shopify to the dashboard via API with real-time sync of orders, products, and customers", "Writing marketing emails for the coffee products", "Setting up social media accounts for the fictional client"], c: 1 },
+    { q: "The Full-Stack App Builder specialization focuses on:", o: ["Only WordPress blog setup and maintenance", "Next.js, Node.js, PostgreSQL, and real-time features for SaaS, dashboards, and marketplaces", "Shopify theme color changes exclusively", "Print design and physical marketing materials"], c: 1 },
+    { q: "The project evaluation criterion 'Delivery Process' (10%) looks for:", o: ["Speed of coding without any documentation", "Staging setup, client demo video, pre-launch checklist, and handover package", "Number of commits made to the repository", "How quickly the developer can type code"], c: 1 }
+];
+
 // Expose content and quiz variables to window for app lookup
 
 // Expose all content and quiz variables to window for app lookup
@@ -1293,5 +1802,14 @@ window.task11Content = task11Content;
 window.task12Content = task12Content;
 window.task13Content = task13Content;
 window.task14Content = task14Content;
-window.task1Quiz = task1Quiz;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
+// Quiz window registrations (task14Quiz-task17Quiz defined in this file)
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+// task0Quiz-task13Quiz registered in fullstack-training-data-part2.js
 

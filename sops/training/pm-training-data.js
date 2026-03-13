@@ -12,7 +12,14 @@ const trainingTasks = [
     { id: 8, title: "Tools & Systems", description: "PM Software Mastery", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🖥️ Essential tools", "📖 Automation workflows"] },
     { id: 9, title: "Difficult Situations", description: "15 Crisis Scenarios", contentFirst: true, studyGuide: ["⏱️ Time: 90 min", "🔥 De-escalation scripts", "📖 Crisis management"] },
     { id: 10, title: "Metrics & Performance", description: "KPIs & Self-Assessment", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "📊 Track what matters", "📖 Weekly reviews"] },
-    { id: 11, title: "Final Certification", description: "Comprehensive PM Exam", contentFirst: false, studyGuide: ["⏱️ Time: 90 min", "📝 30 Questions + Video", "🎓 Pass to certify"] }
+    { id: 11, title: "Fiverr Project Management", description: "Order Lifecycle, Metrics & Templates", contentFirst: true, studyGuide: ["⏱️ Time: 90-120 min", "📦 Master: Fiverr order lifecycle", "📊 Learn: Seller metrics that matter", "💬 Understand: Template messages for PM scenarios"] },
+    { id: 12, title: "Multi-Project Handling", description: "Juggling 5-10 Active Projects", contentFirst: true, studyGuide: ["⏱️ Time: 90-120 min", "🎯 Master: Priority matrix & time blocking", "📊 Learn: Red/Yellow/Green status tracking", "🧠 Understand: Context switching costs"] },
+    { id: 13, title: "Developer Coordination", description: "Technical Literacy for PMs", contentFirst: true, studyGuide: ["⏱️ Time: 60-90 min", "🔧 Understand: Shopify dev workflow", "📋 Learn: How to write dev briefs", "⏱️ Master: Understanding dev time estimates"] },
+    { id: 14, title: "Client Handoff & Delivery", description: "QA, Loom Walkthroughs & Reviews", contentFirst: true, studyGuide: ["⏱️ Time: 60-90 min", "📦 Master: Fiverr delivery formatting", "🎥 Learn: Loom walkthrough best practices", "⭐ Understand: Review request timing & scripts"] },
+    { id: 15, title: "Upselling & Revenue Growth", description: "PM as Revenue Driver", contentFirst: true, studyGuide: ["⏱️ Time: 60-75 min", "💰 Master: Identifying upsell opportunities", "📝 Learn: 5 upsell conversation scripts", "📈 Understand: Client lifetime value"] },
+    { id: 16, title: "Meeting Mastery & Client Calls", description: "Kickoffs, Reviews & Handovers", contentFirst: true, studyGuide: ["⏱️ Time: 60-75 min", "📞 Master: Live Revision Call process", "📋 Learn: Meeting agendas & documentation", "🌍 Understand: Time zone management"] },
+    { id: 17, title: "Career Growth & Certification", description: "PM Career Path & Final Exam", contentFirst: true, studyGuide: ["⏱️ Time: 60-90 min", "📈 Understand: Junior PM → Head of PM path", "📊 Learn: PM KPIs at DH", "🎓 Complete: Final Certification Exam"] },
+    { id: 18, title: "Practical Task — Project Simulation", description: "72-Hour PM Challenge", contentFirst: true, studyGuide: ["⏱️ Time: 72 hours", "🏗️ Manage: Full Shopify project simulation", "📋 Deliver: Project plan, client updates, QA checklist", "📤 Submit: Via Google Form"] }
 ];
 
 
@@ -914,43 +921,90 @@ const task10Content = `
 `;
 
 const task11Content = `
-<h2>📚 TASK 10: FINAL PM CERTIFICATION</h2>
+<h2>📦 TASK 11: FIVERR PROJECT MANAGEMENT</h2>
 
-<div class="content-section">
-<h3>🎓 Certification Requirements</h3>
-<div class="highlight-box">
-<strong>To become a Certified Digital Heroes PM:</strong>
-<ol>
-<li>✅ Complete all 9 training modules (10/10 each quiz)</li>
-<li>✅ Score 28/30 on final comprehensive exam</li>
-<li>✅ Create sample project plan document</li>
-<li>✅ Pass scenario-based live assessment</li>
-<li>✅ Shadow a senior PM for 1 week</li>
-</ol>
-</div>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(249, 115, 22, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">Fiverr Is Your Battlefield</h3>
+    <p>Everything you learned in Tasks 1-10 applies, but Fiverr adds its own layer: <strong>order deadlines, revision policies, seller metrics, and buyer expectations</strong>. Master Fiverr PM or lose orders.</p>
 </div>
 
 <div class="content-section">
-<h3>📋 Final Exam Covers</h3>
-<ul>
-<li>PM mindset and ownership principles</li>
-<li>Client communication standards and templates</li>
-<li>Project lifecycle and timeline management</li>
-<li>Team coordination and leadership</li>
-<li>Scope management and change control</li>
-<li>QA processes and delivery standards</li>
-<li>Tools and systems proficiency</li>
-<li>Crisis management and de-escalation</li>
-<li>Metrics and performance tracking</li>
-</ul>
+    <h3>📋 Fiverr Order Lifecycle</h3>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong style="color: #FBBF24;">1. Inquiry</strong> → Buyer messages asking about services → Sales team qualifies and creates custom offer</p>
+        <p><strong style="color: #60A5FA;">2. Custom Offer</strong> → Pricing, timeline, milestones defined → Buyer accepts and pays</p>
+        <p><strong style="color: #34D399;">3. Active Order</strong> → Clock starts ticking → PM manages delivery within deadline</p>
+        <p><strong style="color: #A78BFA;">4. Delivery</strong> → PM submits deliverables on Fiverr → Buyer has 3 days to accept or request revision</p>
+        <p><strong style="color: #F472B6;">5. Completion</strong> → Buyer accepts → Funds released → Review requested</p>
+    </div>
 </div>
 
 <div class="content-section">
-<h3>🚀 You're Ready!</h3>
-<p>You've learned everything needed to be an exceptional PM at Digital Heroes. Now prove it.</p>
-<div style="background: rgba(16, 185, 129, 0.2); padding: 25px; border-radius: 12px; text-align: center;">
-<h4 style="color: #10B981; margin-top: 0;">Complete the Final Quiz to Earn Your PM Certification 🎓</h4>
+    <h3>💬 Dual Communication Channels</h3>
+    <p>Fiverr has TWO communication channels — you must use BOTH:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Channel</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use For</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM Rule</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Fiverr Inbox</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">General communication, discussions, sharing links, asset requests</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Daily updates here + order chat</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Order Page Chat</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order-specific updates, delivery, revision requests</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">All project milestones documented here</td></tr>
+    </table>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #EF4444;">
+        <strong>DH Rule:</strong> Send daily updates in BOTH channels. The order page is your legal record. If a dispute happens, Fiverr only sees order page chat.
+    </div>
 </div>
+
+<div class="content-section">
+    <h3>📊 Fiverr Seller Metrics That PMs Affect</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM Impact</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response Time</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><1 hour</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Respond to ALL buyer messages quickly — affects Fiverr search ranking</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">On-Time Delivery</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90%+</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deliver before deadline or request extension BEFORE it expires</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order Completion</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90%+</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Minimize cancellations — every cancel hurts the account</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rating</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4.8+</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client satisfaction = positive reviews = more orders</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Revision vs Scope Creep on Fiverr</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revision (Included)</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scope Creep (Extra Cost)</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Change the header color to blue"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Add a blog section we didn't discuss"</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Move the CTA button higher"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Build a custom calculator tool"</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Use a different font for headlines"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Add 50 more products not in original scope"</td></tr>
+    </table>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong>The Script:</strong> "Great suggestion! That's outside the original scope, but I can add it as a gig extra for $X. Want me to send you a custom offer for it?"
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⏰ Extension Requests & Cancellation Prevention</h3>
+    <ul>
+        <li><strong>Extension requests:</strong> ALWAYS request an extension BEFORE the deadline expires. Fiverr allows mutual extensions. Message: "Hi [Name], to ensure the best quality, I'd like to request a [X-day] extension. We're making great progress — here's what's done so far: [preview link]."</li>
+        <li><strong>Cancellation prevention:</strong> If a buyer wants to cancel, ask WHY first. Often it's a misunderstanding. Offer solutions before accepting cancellation. Every cancellation drops your completion rate.</li>
+        <li><strong>Dispute Resolution:</strong> If a buyer opens a dispute, respond within 24 hours with evidence (screenshots, chat history from order page). Stay professional — Fiverr CS reviews everything.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📝 PM Template Messages for Fiverr</h3>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Order Start:</strong> "Hi [Name]! Thank you for your order. I'm [PM Name], your project manager. Here's our plan: [timeline]. First, I need: [credentials/assets]. You'll receive your first preview within 48 hours!"</p>
+        <p><strong>Daily Update:</strong> "Quick update on your project: Today we completed [X]. Tomorrow we're working on [Y]. Preview: [link]. Any feedback?"</p>
+        <p><strong>Revision Request:</strong> "Thanks for the feedback! I've noted: [list changes]. We'll have the revisions ready by [date]. Is there anything else you'd like adjusted?"</p>
+        <p><strong>Extension Request:</strong> "Hi [Name], to deliver the best quality, I'd like to extend by [X days]. Here's our progress: [preview]. We want to make sure everything is perfect before delivery."</p>
+        <p><strong>Delivery:</strong> "Your project is complete! Please review the deliverables. I've included a Loom walkthrough: [link]. Let me know if you'd like any adjustments!"</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🏆 Fiverr Level System & PM Impact</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Level</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Requirements</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM's Role</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New Seller</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Starting level</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deliver quality to build initial reviews</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Level 1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">10 orders, $400+ earned, 4.7+ rating</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Maintain on-time delivery and high ratings</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Level 2</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">50 orders, $2,000+ earned, 4.7+ rating</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scale operations without dropping quality</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Top Rated</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">100 orders, $20,000+ earned, 4.7+, 90%+ completion</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Zero cancellations, exceptional client experience</td></tr>
+    </table>
 </div>
 `;
 
@@ -1178,16 +1232,536 @@ const task10Quiz = [
 ];
 
 const task11Quiz = [
-    { q: "Certification validates:", o: ["Nothing — this is the industry-standard position backed by conventional practice", "Waste of time", "Luck — this reflects the standard operating procedure most organizations follow", "Competency in role"], c: 3 },
-    { q: "Continuous learning:", o: ["Ongoing requirement", "Optional — this reflects the standard operating procedure most organizations follow", "Ends at certification", "Not needed — this is the industry-standard position backed by conventional practice"], c: 0 },
-    { q: "Video walkthrough:", o: ["Skip it — this reflects the standard operating procedure most organizations follow", "Optional — this reflects the standard operating procedure most organizations follow", "Demonstrates practical knowledge", "Unnecessary — this reflects the standard operating procedure most organizations follow"], c: 2 },
-    { q: "Career growth requires:", o: ["Skill development and initiative", "Luck primarily — this reflects the standard operating procedure most organizations follow", "Politics — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Time primarily — this reflects the standard operating procedure most organizations follow"], c: 0 },
-    { q: "Professional development:", o: ["Personal responsibility", "Not important — this is the industry-standard position backed by conventional practice", "Company responsibility", "Optional — this reflects the standard operating procedure most organizations follow"], c: 0 },
-    { q: "Mentoring others:", o: ["Avoid — this reflects the standard operating procedure most organizations follow", "Strengthens your knowledge", "Threat — this reflects the standard operating procedure most organizations follow", "Not possible — this is the industry-standard position backed by conventional practice"], c: 1 },
-    { q: "Industry updates:", o: ["Ignore — intervening too early often creates more problems than the original issue", "Optional — this reflects the standard operating procedure most organizations follow", "Not important — this is the industry-standard position backed by conventional practice", "Stay current for relevance"], c: 3 },
-    { q: "Skill gaps:", o: ["Hide them — this reflects the standard operating procedure most organizations follow", "Identify and address", "Ignore — intervening too early often creates more problems than the original issue", "Not possible"], c: 1 },
-    { q: "Performance reviews:", o: ["Avoid — this reflects the standard operating procedure most organizations follow", "Opportunity for growth feedback", "Threatening — this reflects the standard operating procedure most organizations follow", "Skip — this reflects the standard operating procedure most organizations follow"], c: 1 },
-    { q: "Long-term goals:", o: ["Not needed — this is the industry-standard position backed by conventional practice", "Unrealistic — this reflects the standard operating procedure most organizations follow", "Guide development efforts", "Avoid — this reflects the standard operating procedure most organizations follow"], c: 2 }
+    { q: "Fiverr has TWO communication channels. Daily updates should be sent:", o: ["Only in Fiverr inbox — the order page is for delivery only", "Only in order page chat — the inbox is for pre-order communication only", "In BOTH inbox AND order page chat — the order page is your legal record in disputes", "Neither — Fiverr automatically notifies buyers of progress without PM communication"], c: 2 },
+    { q: "A Fiverr buyer wants to cancel an active order. Your FIRST action as PM is:", o: ["Accept the cancellation immediately — fighting it will result in a negative review and damage the account", "Ask WHY they want to cancel and offer solutions — often it's a misunderstanding that can be resolved", "Ignore the request — Fiverr doesn't force cancellations if the seller doesn't agree to cancel the order", "Escalate to Fiverr Customer Support immediately — cancellation requests are always handled by the platform"], c: 1 },
+    { q: "The Fiverr order deadline is in 2 days but the project needs 4 more days. The PM should:", o: ["Deliver whatever is ready and hope the buyer accepts it as-is without requesting revisions or changes", "Request a mutual extension BEFORE the deadline expires — explain progress and attach a preview link", "Let the deadline pass — Fiverr gives a grace period and late delivery doesn't affect seller metrics", "Cancel the order — it's better to cancel than deliver late because cancellations don't affect seller levels"], c: 1 },
+    { q: "A buyer asks 'Can you also add a blog section?' which wasn't in the original scope. Your response:", o: ["Add it for free — keeping clients happy is more important than scope boundaries on Fiverr", "Tell them it's not included and refuse to discuss it further to maintain firm scope boundaries", "Say: 'Great suggestion! That's outside the original scope, but I can add it as a gig extra for $X. Want me to send a custom offer?'", "Ignore the message — if you don't respond to scope creep requests the buyer will forget about it"], c: 2 },
+    { q: "Fiverr On-Time Delivery rate target for maintaining seller level is:", o: ["50% — Fiverr is lenient on delivery timing as long as the quality is high and buyers are satisfied", "90%+ — on-time delivery directly affects seller level evaluation and search ranking visibility", "100% — any late delivery results in automatic demotion regardless of all other seller metrics", "70% — this is the standard threshold that most successful sellers maintain on the platform"], c: 1 },
+    { q: "When delivering a project on Fiverr, the PM should include:", o: ["Just the files — Fiverr buyers don't read delivery messages and only care about the actual deliverables", "Deliverables + Loom walkthrough + summary of what was built + invitation to request adjustments", "A long apology for any delays — starting the delivery message with an apology shows professionalism", "Only a link to the staging site — buyers prefer to explore the site themselves without any guidance"], c: 1 },
+    { q: "Response time on Fiverr should be:", o: ["Under 24 hours — Fiverr measures response time on a 24-hour basis for seller level evaluation", "Under 1 hour — response time affects Fiverr search ranking and buyer first impression significantly", "Under 1 week — Fiverr only flags response times longer than 7 days as problematic for the account", "Doesn't matter — Fiverr response time metric only applies to the first message not ongoing conversation"], c: 1 },
+    { q: "A buyer opens a Fiverr dispute. The PM should respond within:", o: ["1 week — disputes have a 14-day resolution window so there's no rush to respond immediately", "24 hours with evidence (screenshots, chat history from order page) — stay professional, Fiverr CS reviews everything", "Don't respond — accepting the dispute silently is better than arguing with the buyer publicly", "30 days — Fiverr gives sellers a full month to prepare their response to any buyer dispute"], c: 1 },
+    { q: "The difference between a revision and scope creep on Fiverr is:", o: ["There is no difference — all buyer requests after delivery are revisions included in the original order price", "Revisions are changes to existing work (color, font, layout), scope creep is NEW work not in the original brief", "Scope creep doesn't exist on Fiverr — all requested changes must be completed for free to maintain ratings", "Revisions cost extra and scope changes are free — the opposite of traditional freelancing agreements"], c: 1 },
+    { q: "To reach Fiverr Top Rated Seller status, the account needs:", o: ["10 completed orders and a 4.0+ rating — Top Rated is achievable within the first month of selling", "100 orders, $20,000+ earned, 4.7+ rating, and 90%+ order completion — PM quality directly affects this", "Just a high rating — order volume and earnings don't factor into Top Rated Seller evaluation", "500 orders minimum — Top Rated is only achievable after several years of consistent selling activity"], c: 1 },
+    { q: "Custom offers on Fiverr should be created by:", o: ["The developer — they know the technical scope and can price accurately without PM involvement", "The PM in collaboration with sales — pricing, timeline, and milestone structure must be strategic", "The buyer — they should define the price and timeline based on their budget and expectations", "Fiverr automatically — the platform generates custom offers based on the buyer's requirements message"], c: 1 },
+    { q: "Fiverr seller level evaluation happens:", o: ["Daily — metrics are recalculated every 24 hours and levels can change at any time without notice", "Every 30 days based on the last 60 days of performance — on-time delivery and completion rate matter most", "Annually — Fiverr reviews seller performance once per year and adjusts levels during the annual review", "Never automatically — sellers must apply for level upgrades by submitting a portfolio review request"], c: 1 }
+];
+
+// =============================================================================
+// TASK 12: MULTI-PROJECT HANDLING
+// =============================================================================
+
+const task12Content = `
+<h2>🎯 TASK 12: MULTI-PROJECT HANDLING</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">5-10 Projects. Simultaneously. No Excuses.</h3>
+    <p>At Digital Heroes, a PM manages <strong>5-10 active projects at once</strong>. This isn't optional — it's the baseline. Your job is to ensure EVERY project delivers on time while NONE of them feel neglected.</p>
+</div>
+
+<div class="content-section">
+    <h3>🎯 The Priority Matrix</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Priority</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Examples</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Action</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>P0 — Fire</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Urgent + Important</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deadline TODAY, client escalation, blocked developer</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Drop everything. Handle NOW.</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #FBBF24;"><strong>P1 — Plan</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Important + Not Urgent</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delivery in 3 days, QA review, client check-in</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Schedule in today's blocks.</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #60A5FA;"><strong>P2 — Batch</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Urgent + Not Important</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client "any update?" messages, asset follow-ups</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Batch process twice daily.</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #9CA3AF;"><strong>P3 — Defer</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Not Urgent + Not Important</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Process improvements, docs cleanup, learning</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Weekly or when capacity allows.</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>⏰ Time Blocking for PM Daily Schedule</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Time</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Block</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Activities</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">9:00-9:30</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Morning Scan</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check ALL project channels, identify P0s, scan overnight messages</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">9:30-10:00</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standup</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dev standup — what they did yesterday, what they're doing today, blockers</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">10:00-12:00</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deep Work</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">P0 and P1 tasks — QA reviews, client calls, deliveries</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">12:00-12:30</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Batch Comms</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reply to all P2 messages at once — client updates, asset follow-ups</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1:00-4:00</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Execution</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Project work — briefs, documentation, QA, revision management</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4:00-4:30</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Batch Comms</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Second batch — daily updates to all active clients</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4:30-5:30</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Plan Tomorrow</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Review all project statuses, update dashboard, prep for next day</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚦 Red/Yellow/Green Status Dashboard</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Status</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meaning</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM Action</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #10B981;"><strong>GREEN</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">On track, no blockers, client happy</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Maintain momentum, send updates</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #FBBF24;"><strong>YELLOW</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">At risk — waiting on assets, dev behind, unclear feedback</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Follow up today, unblock, escalate if not resolved in 24h</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>RED</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Behind schedule, client unhappy, deadline at risk</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Escalate to GM, create recovery plan, communicate to client with solution</td></tr>
+    </table>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong>Weekly Review:</strong> Every Friday, review ALL projects. Update the dashboard. Identify which projects are moving from Green → Yellow. Address BEFORE they turn Red.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🧠 Context Switching — The Silent Killer</h3>
+    <p>Every time you switch between projects, your brain needs <strong>15-25 minutes</strong> to fully re-engage. If you switch 10 times a day, you lose 2-4 hours to context switching alone.</p>
+    <ul>
+        <li><strong>Batch similar tasks:</strong> All daily updates in one 30-min block. All QA reviews in one block. All client calls in one block.</li>
+        <li><strong>Use templates:</strong> Don't type each update from scratch. Copy, customize, send.</li>
+        <li><strong>Notes per project:</strong> Keep a running doc per project with latest status, next action, blockers. When you switch back, read the doc first — 2 min to re-engage instead of 20.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🆘 Recognizing Capacity Limits</h3>
+    <p>Signs you're overloaded:</p>
+    <ul>
+        <li>Multiple projects turning Yellow/Red simultaneously</li>
+        <li>Client messages going unanswered for 4+ hours</li>
+        <li>You're sending daily updates only to 3 out of 8 active projects</li>
+        <li>QA reviews are getting rushed or skipped</li>
+        <li>You're working past 8 PM regularly</li>
+    </ul>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #EF4444;">
+        <strong>When this happens:</strong> Escalate to your Team Lead / GM IMMEDIATELY. "I'm managing 12 active projects and 3 are at risk. I need help prioritizing or redistributing." Asking for help is NOT weakness — it's professional maturity.
+    </div>
+</div>
+`;
+
+const task12Quiz = [
+    { q: "A PM manages 8 active projects. 3 have deliveries due today, 1 has a client escalation. What gets handled FIRST?", o: ["The 3 deliveries — meeting deadlines is always the top priority regardless of any other project issues", "The client escalation (P0) — drop everything, handle the fire first, then manage today's deliveries", "Whichever project has the highest revenue — money determines priority in all multi-project decisions", "Handle them in alphabetical order by client name — consistent process prevents any project from being forgotten"], c: 1 },
+    { q: "Context switching between projects wastes how much time per switch?", o: ["0-2 minutes — switching between projects is instant for an experienced PM who knows their portfolio", "15-25 minutes to fully re-engage — 10 switches per day can waste 2-4 hours of productive time", "Exactly 1 hour per switch — this is a scientifically proven fixed cost that cannot be reduced", "No time at all — PMs are trained to context-switch instantly and it doesn't affect productivity"], c: 1 },
+    { q: "The Red/Yellow/Green dashboard should be reviewed:", o: ["Monthly — weekly reviews are too frequent and create unnecessary administrative overhead for the PM", "Every Friday — update all project statuses, identify Yellow trends before they turn Red", "Only when a problem occurs — the dashboard is a reactive tool used to track existing issues", "Daily — the PM should update the status of every project every single morning without exception"], c: 1 },
+    { q: "Batch processing for PM communications means:", o: ["Responding to every message immediately as it arrives — batch processing doesn't apply to PM communication", "Grouping similar tasks (all updates, all QA reviews) into dedicated time blocks to minimize context switching", "Sending one mass message to all clients with the same generic status update to save time", "Delaying all responses until end of day — batching means responding to everything at 5 PM only"], c: 1 },
+    { q: "A PM is managing 12 active projects and 3 are turning Red. The correct action is:", o: ["Work harder — stay until midnight to catch up on all projects without involving anyone else", "Hide the Red projects — if you don't report them, management won't add more pressure to your workload", "Escalate to Team Lead/GM immediately: 'I need help prioritizing or redistributing' — asking for help is professional maturity", "Cancel the 3 Red projects — reducing workload is the only way to save the remaining 9 projects"], c: 2 },
+    { q: "Time blocking shows 'Morning Scan' at 9:00-9:30 AM. The purpose is to:", o: ["Check personal emails and social media before starting work for the day at the office", "Scan ALL project channels, identify P0 priorities, and review overnight messages before anything else", "Write the EOD report from yesterday — morning is the best time for reflective documentation", "Attend the team standup meeting — morning scan and standup are the same activity at DH"], c: 1 },
+    { q: "P2 tasks ('Urgent + Not Important') like 'any update?' messages should be:", o: ["Answered immediately every time — all client messages deserve instant responses regardless of priority level", "Batch processed twice daily (12:00 and 4:00) — respond to all at once instead of one-by-one throughout the day", "Ignored — if it's not important, the client doesn't need a response and will understand the PM is busy", "Delegated to a junior team member — P2 tasks are too low-priority for the PM to handle personally"], c: 1 },
+    { q: "Running notes per project (latest status, next action, blockers) help because:", o: ["They're required by Fiverr for seller verification — without them your account can be flagged or suspended", "When switching back to a project, 2 minutes reading the notes re-engages you instead of 20 minutes figuring out where you left off", "Notes are only useful for new PMs — experienced PMs remember all project details without documentation", "They replace daily client updates — sending the PM's internal notes to clients counts as a status update"], c: 1 },
+    { q: "A project turns Yellow (waiting on client assets for 3 days). PM action:", o: ["Wait another week — clients are busy and 3 days is not long enough to follow up on asset requests", "Send a specific follow-up today with consequences: 'Assets needed by [date] or delivery timeline shifts to [new date]'", "Cancel the project — if a client can't provide assets within 3 days they're not serious about the project", "Start building without assets — use placeholder content and replace it later when assets eventually arrive"], c: 1 },
+    { q: "Signs you're over capacity include all EXCEPT:", o: ["Client messages going unanswered for 4+ hours regularly across multiple projects simultaneously", "QA reviews getting rushed or skipped due to time pressure from too many concurrent deadlines", "All 8 projects are Green and running smoothly with daily updates sent to every client on time", "Working past 8 PM regularly just to keep up with basic PM tasks like updates and status reports"], c: 2 },
+    { q: "Weekly portfolio review on Friday should answer:", o: ["Only 'which projects made money this week' — revenue is the only metric that matters for PM evaluation", "Which projects are Green/Yellow/Red, what's the plan for each Yellow, and what needs attention next week", "Nothing specific — Friday reviews are informal and the PM should just relax before the weekend", "Only 'how many hours did I work' — time tracking is the primary purpose of the weekly review"], c: 1 },
+    { q: "Dev standup (9:30-10:00) is scheduled AFTER Morning Scan because:", o: ["There's no specific reason — the order doesn't matter and standup could happen at any time", "You need to know the project status FIRST so you can ask the right questions during standup and identify blockers", "Developers prefer morning meetings — it has nothing to do with the PM's preparation or project knowledge", "Standup is optional — Morning Scan replaces the need for developer standup in the time-blocked schedule"], c: 1 }
+];
+
+// =============================================================================
+// TASK 13-18: REMAINING PM EXPANSION TASKS
+// =============================================================================
+
+const task13Content = `
+<h2>🔧 TASK 13: DEVELOPER COORDINATION & TECHNICAL LITERACY</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">You Don't Need to Code. You Need to UNDERSTAND Code.</h3>
+    <p>A PM who can't speak the developer's language creates miscommunication, missed deadlines, and scope disasters. You don't need to write Liquid — but you need to know what it is and why "just change the button color" sometimes takes 2 hours.</p>
+</div>
+
+<div class="content-section">
+    <h3>🏗️ Shopify Dev Workflow (PM Primer)</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Step</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What Happens</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM Needs to Know</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Theme Selection</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dev picks Dawn/Prestige/custom theme</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Theme choice affects timeline + cost</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Customizer Setup</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Colors, fonts, sections via Shopify editor</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">This is "no code" — fast changes</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Liquid Coding</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Custom sections, logic, dynamic content</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">This takes TIME — custom code is slow</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">App Integration</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Install reviews, email, analytics apps</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Apps can conflict — dev needs testing time</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">QA & Testing</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Test across browsers, devices, checkout flow</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">NEVER skip QA to save time</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📝 Writing Clear Dev Briefs</h3>
+    <p>A good dev brief prevents 80% of misbuilds. Include:</p>
+    <ul>
+        <li><strong>Client requirements</strong> (exact quotes from client, not your interpretation)</li>
+        <li><strong>Reference sites</strong> (specific URLs + what to copy from each)</li>
+        <li><strong>Assets</strong> (logo, brand colors hex codes, fonts, product images — link to where they are)</li>
+        <li><strong>Priority order</strong> (homepage first → product pages → about → contact → blog)</li>
+        <li><strong>Deadline + milestones</strong> (Day 1-2 preview, Day 7 midpoint, Day 11 QA, Day 14 delivery)</li>
+        <li><strong>What NOT to build</strong> (features discussed but NOT approved — prevents scope creep from dev side)</li>
+    </ul>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #EF4444;">
+        <strong>Common PM mistake:</strong> Sending a brief that says "make it look good." This is useless. Be SPECIFIC: "Hero section: full-width image, left-aligned headline in 48px bold, green CTA button below."
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⏱️ Why "Just Change the Color" Takes 2 Hours</h3>
+    <p>Clients (and inexperienced PMs) think visual changes are instant. Here's reality:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Says</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What Dev Actually Does</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Real Time</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Change button color"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Find all button instances in CSS/Liquid, change, test on all pages, check mobile, check hover/active states</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-60 min</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Add a new section"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Design layout, write Liquid/HTML/CSS, make responsive, connect to CMS settings</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2-4 hours</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Make it faster"</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Audit all images, lazy load, remove unused code, optimize Liquid, test results</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4-8 hours</td></tr>
+    </table>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong>PM Rule:</strong> Never tell a client "that's a quick change" without checking with the dev first. What looks simple may have hidden complexity.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🤝 Dev Standup — What to Ask, What to Listen For</h3>
+    <ul>
+        <li><strong>Ask:</strong> "What did you complete yesterday?" → Compare to the plan</li>
+        <li><strong>Ask:</strong> "What are you working on today?" → Does it match priority?</li>
+        <li><strong>Ask:</strong> "Any blockers?" → This is the MOST important question. Unblock them immediately.</li>
+        <li><strong>Listen for:</strong> Vague answers ("working on it") = warning sign. Push for specifics.</li>
+        <li><strong>Listen for:</strong> "I'm waiting on..." = something YOU need to unblock (assets, client decision, access).</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>⚡ Unblocking Developers</h3>
+    <p>The #1 reason projects go Yellow/Red: <strong>the developer is blocked and the PM doesn't know or hasn't acted</strong>.</p>
+    <ul>
+        <li><strong>Missing assets:</strong> Chase the client IMMEDIATELY. "We need your product images by tomorrow or the timeline shifts."</li>
+        <li><strong>Unclear requirements:</strong> Don't ask the client vague questions. Be specific: "The homepage hero — should it be a static image or a video? And do you want the headline left-aligned or centered?"</li>
+        <li><strong>Scope ambiguity:</strong> Document what IS included and get client sign-off before dev starts building.</li>
+        <li><strong>Technical decision:</strong> If the dev needs to choose between two approaches, help them decide by asking "which is faster?" and "which does the client care about more?"</li>
+    </ul>
+</div>
+`;
+
+const task13Quiz = [
+    { q: "A developer says 'I'm blocked — waiting on product images from the client.' The PM's immediate action:", o: ["Tell the developer to use placeholder images and continue — assets can be swapped later without any impact", "Message the client immediately with a specific request and deadline: 'Product images needed by tomorrow or delivery timeline shifts'", "Wait 3 more days — the client is probably busy and will send assets when they're ready without a follow-up", "Escalate to GM — asset delays are a management issue that PMs shouldn't handle directly with clients"], c: 1 },
+    { q: "A dev brief that says 'make the homepage look good' is problematic because:", o: ["It's too short — dev briefs should be minimum 5 pages to be effective for Shopify development projects", "It's subjective and vague — the dev needs specifics like layout structure, CTA text, image placement, and colors", "It's offensive to developers — saying 'make it look good' implies the dev doesn't normally deliver quality work", "It's fine — developers are creative professionals who should interpret design direction independently"], c: 1 },
+    { q: "A client says 'Just change the button color — that should take 5 minutes.' Reality is:", o: ["They're correct — button color is a single CSS property change that takes under 5 minutes to implement", "It takes 30-60 minutes: find all button instances, change CSS, test on all pages, check mobile, verify hover states", "It takes a full day — any visual change requires complete regression testing of the entire website", "The PM should agree with the client's estimate — arguing about development time damages the relationship"], c: 1 },
+    { q: "In dev standup, the MOST important question to ask is:", o: ["'How many hours did you work yesterday?' — time tracking is the primary purpose of standup meetings", "'Any blockers?' — identifying what's preventing progress so the PM can unblock the developer immediately", "'Are you happy with the project?' — developer satisfaction determines project quality and delivery speed", "'When will you be done?' — the only thing that matters is the delivery date not what was done yesterday"], c: 1 },
+    { q: "A developer's answer in standup is vague: 'I'm working on it.' The PM should:", o: ["Accept the answer — developers don't need to give detailed explanations to PMs about their work", "Push for specifics: 'Working on which page? What specifically? When will it be ready for me to review?'", "Report the developer to management for being uncooperative during standup meetings", "Skip standup with this developer going forward — some developers work better without oversight"], c: 1 },
+    { q: "Theme choice affects the project because:", o: ["All Shopify themes are identical — theme choice is purely aesthetic and has no impact on timeline or cost", "Free themes (Dawn) need more customization time than premium themes with built-in features — affecting timeline and cost", "Theme choice only affects the design — it has no impact on development time or project budget", "PMs should never be involved in theme selection — it's a purely technical decision for the developer"], c: 1 },
+    { q: "A dev brief should include 'What NOT to build' because:", o: ["It's unnecessary negativity — briefs should focus on what to build, not what to avoid during development", "It prevents scope creep from the dev side — features discussed but NOT approved shouldn't be built accidentally", "Developers always build exactly what's in the brief — there's no risk of them adding unrequested features", "It's only needed for junior developers — experienced developers know what's in scope without being told"], c: 1 },
+    { q: "The #1 reason projects go Yellow/Red is:", o: ["Bad developers who don't meet their deadlines despite having everything they need to complete the work", "The developer is blocked and the PM doesn't know or hasn't acted — unresolved blockers compound daily", "Clients who change requirements every day — scope creep is always the primary cause of project delays", "Technical bugs that appear unexpectedly — software development is unpredictable and delays are inevitable"], c: 1 },
+    { q: "Liquid coding in Shopify means:", o: ["Writing Python code that integrates with Shopify's backend database for custom business logic", "Writing custom template code (HTML + Liquid syntax) for sections, logic, and dynamic content — this takes TIME", "Using Shopify's drag-and-drop editor — Liquid is Shopify's brand name for their visual page builder", "Installing apps from the Shopify App Store — Liquid refers to the process of adding third-party functionality"], c: 1 },
+    { q: "When a dev says 'I need to choose between two approaches,' the PM helps by asking:", o: ["'Which approach will the client find most impressive?' — always choose the option that looks best to the buyer", "'Which is faster?' and 'Which does the client care about more?' — help decide based on timeline and client priorities", "'Which approach has the most elegant code?' — code quality should always be the deciding factor for technical decisions", "'Just pick one — technical decisions are not the PM's responsibility and shouldn't involve PM input'"], c: 1 }
+];
+
+const task14Content = `
+<h2>📦 TASK 14: CLIENT HANDOFF & DELIVERY EXCELLENCE</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(20, 184, 166, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">Delivery Is Where Reviews Are Won or Lost</h3>
+    <p>A perfect build delivered poorly = average review. An average build delivered excellently = 5 stars. The <strong>delivery experience</strong> is as important as the work itself.</p>
+</div>
+
+<div class="content-section">
+    <h3>✅ Pre-Delivery QA Execution</h3>
+    <p>Before ANY delivery, run the 60-point QA checklist (Task 7). Key highlights:</p>
+    <ul>
+        <li>Test a complete order: add to cart → checkout → payment → confirmation email</li>
+        <li>Check all pages on mobile (phone + tablet)</li>
+        <li>No placeholder content — every image, text, and link must be real</li>
+        <li>PageSpeed: Mobile 75+, Desktop 85+</li>
+        <li>All forms submit and send notifications correctly</li>
+        <li>Browser check: Chrome, Firefox, Safari, Edge</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🎥 Loom Walkthrough (Required for Every Delivery)</h3>
+    <p>Record a <strong>3-5 minute Loom video</strong> showing:</p>
+    <ol>
+        <li><strong>Homepage tour:</strong> Walk through the design, highlight key sections, show mobile responsiveness</li>
+        <li><strong>Key pages:</strong> Show About, Shop/Collection, a Product page, Contact — point out features</li>
+        <li><strong>Admin tutorial:</strong> Show Shopify admin — how to edit pages, add products, update images, change text</li>
+        <li><strong>What was delivered:</strong> Summarize the deliverables list from the original scope</li>
+        <li><strong>Next steps:</strong> "Review the site, let me know if you'd like adjustments. Here to help!"</li>
+    </ol>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #34D399; padding: 20px; margin: 15px 0;">
+        <strong>Why Loom matters:</strong> Clients who receive a walkthrough video are 3x more likely to leave a 5-star review. It shows professionalism and care.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📬 Post-Delivery Follow-Up Sequence</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">When</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Message</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Day 1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Hi! Just checking if you had a chance to review. Happy to make any adjustments!"</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Day 3</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Following up — any feedback on the store? We want to make sure everything is perfect."</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Day 7</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Hope your store is going well! If you're happy, we'd really appreciate a review. Also happy to discuss ongoing support."</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>⭐ Requesting Reviews — Timing & Script</h3>
+    <p><strong>When:</strong> After the buyer accepts the delivery AND expresses satisfaction. Never before acceptance.</p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>The Script:</strong> "Thank you so much for working with us! It was a pleasure building [Brand Name]'s store. If you're happy with the result, we'd truly appreciate a review — it helps us grow and serve more clients like you. If there's anything else you need in the future, we're always here!"</p>
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 4px solid #EF4444;">
+        <strong>Never:</strong> Ask for a review before the buyer is satisfied. Never offer discounts/bribes for reviews. Never ask them to change a review. Fiverr bans accounts for review manipulation.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>😱 Handling "I Want to Change Everything" Post-Delivery</h3>
+    <p>Sometimes a buyer accepts delivery, then comes back wanting major changes. The process:</p>
+    <ol>
+        <li><strong>Stay calm.</strong> Don't get defensive. "I understand — let's go through each point."</li>
+        <li><strong>Categorize:</strong> Which changes are revisions (included) and which are new scope (extra cost)?</li>
+        <li><strong>Quote:</strong> For scope changes, send a custom offer on Fiverr for the additional work.</li>
+        <li><strong>Document:</strong> All changes agreed in writing on the Fiverr order page before starting.</li>
+    </ol>
+</div>
+`;
+
+const task14Quiz = [
+    { q: "Before delivering a Shopify store on Fiverr, the PM must ensure:", o: ["Only that the homepage looks good — inner pages can be finished after delivery if needed", "A complete test order works end-to-end, all pages are mobile responsive, and PageSpeed meets targets", "That the developer confirms it's done — PMs don't need to personally verify QA on delivered projects", "Nothing specific — Fiverr doesn't require QA and the buyer will report issues if anything is broken"], c: 1 },
+    { q: "Loom walkthrough for every delivery is required because:", o: ["Fiverr mandates video walkthroughs — deliveries without video are automatically flagged as incomplete", "Clients who receive walkthroughs are 3x more likely to leave 5-star reviews — it shows professionalism and care", "It replaces the need for written delivery notes — video is the only acceptable format for delivery documentation", "Loom is a DH sponsor — using their tool is part of the company's partnership agreement"], c: 1 },
+    { q: "The review request script should be sent:", o: ["Before delivery — request the review in advance so the buyer knows to leave one immediately after accepting", "After the buyer accepts delivery AND expresses satisfaction — never before acceptance or when they're unhappy", "Along with the delivery itself — include 'Please leave us a 5-star review' in every delivery message", "Never — asking for reviews is unprofessional and buyers will leave reviews naturally if they're happy"], c: 1 },
+    { q: "A buyer accepts delivery then wants major redesign changes 5 days later. The PM should:", o: ["Do everything for free — post-delivery changes are always included to maintain the client relationship", "Stay calm, categorize changes as revisions (included) vs new scope (extra cost), quote additional work via custom offer", "Refuse all changes — once delivery is accepted the project is complete and no further work is required", "Ignore the messages — the buyer already accepted so the PM has no obligation to respond further"], c: 1 },
+    { q: "Post-delivery follow-up sequence is: Day 1, Day 3, Day 7. The Day 7 message should include:", o: ["A threat to close communication — if they haven't responded by Day 7 the PM moves on", "Check on store progress + request for review if they're happy + offer for ongoing support", "Only a review request — Day 7 is exclusively for collecting the client's star rating", "Nothing — 3 follow-up messages is excessive and Day 7 should be skipped"], c: 1 },
+    { q: "The Loom walkthrough should cover all EXCEPT:", o: ["Homepage design tour and mobile responsiveness demonstration", "How to edit pages and add products in Shopify admin", "The PM's personal opinions about the client's business strategy and marketing", "Summary of deliverables and invitation for the client to request adjustments"], c: 2 },
+    { q: "A buyer says 'I'm not happy with the design' after accepting delivery. FIRST action:", o: ["Offer a full refund immediately — unhappy clients should always get their money back without question", "Ask specific questions: 'What exactly doesn't match your expectations? Can you share reference examples?' — then categorize and respond", "Blame the developer — explain that the design team didn't follow instructions and you'll have it fixed", "Tell the buyer it's too late — they accepted the delivery so no changes can be made at this point"], c: 1 },
+    { q: "Offering discounts or incentives for reviews on Fiverr:", o: ["Is a smart strategy — most successful sellers use incentives to build their review count quickly", "Is prohibited — Fiverr bans accounts for review manipulation including offering discounts for positive reviews", "Is required — Fiverr's algorithm rewards sellers who proactively incentivize buyer reviews with discounts", "Only applies to negative reviews — you can offer discounts to change a negative review to positive"], c: 1 },
+    { q: "Admin tutorial in the Loom walkthrough should show:", o: ["Advanced Liquid coding — clients need to understand the technical implementation to manage their store", "How to edit pages, add products, update images, and change text — empower the client to manage basic updates", "Nothing — clients should contact the PM for all changes and should not be editing their own store", "Only payment settings — the admin tutorial should focus exclusively on financial configuration"], c: 1 },
+    { q: "Client handoff includes transitioning to ongoing support because:", o: ["It's required by Fiverr's seller terms — all projects must include a mandatory 1-month support period", "Ongoing support/maintenance packages create recurring revenue and strengthen the long-term client relationship", "DH requires all clients to purchase support — it's not optional and should be pushed aggressively after delivery", "Support transition is only for enterprise clients — standard Fiverr orders don't include post-delivery support"], c: 1 }
+];
+
+const task15Content = `
+<h2>💰 TASK 15: UPSELLING & REVENUE GROWTH</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(249, 115, 22, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">PM = Revenue Driver, Not Just Coordinator</h3>
+    <p>The best PMs don't just deliver projects — they <strong>grow accounts</strong>. Every project is an opportunity to identify what else the client needs and present it at the right time.</p>
+</div>
+
+<div class="content-section">
+    <h3>🔍 Identifying Upsell Opportunities During Projects</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What You Notice</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Upsell Opportunity</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How to Present</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No email marketing setup</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Klaviyo/Mailchimp email automation</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I noticed you don't have email automations. Want us to add Welcome + Abandoned Cart flows?"</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Low PageSpeed score</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Speed optimization package</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your current score is 45. We can optimize to 85+ which directly improves conversion rate."</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No SEO on product pages</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO setup package</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your products aren't appearing on Google. We can add SEO for $X to drive organic traffic."</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client mentions new products</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Additional product upload</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Launching new products? We can upload and optimize them with descriptions and images."</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client loves the work</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Monthly retainer / maintenance</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Would you like ongoing support? We offer monthly maintenance packages starting at $X/month."</td></tr>
+    </table>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong>Timing Rule:</strong> Present upsells AFTER the client is happy with current work, never during problems. The best time: post-delivery follow-up, after positive feedback, or when they mention future plans.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📝 5 Upsell Conversation Scripts</h3>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Script 1 — Email Automation:</strong> "By the way, I noticed your store doesn't have email automations. A Welcome series + Abandoned Cart flow typically recovers 10-15% of lost sales. Want me to set this up as an add-on?"</p>
+        <p><strong>Script 2 — Speed Optimization:</strong> "Your store loads in 5 seconds on mobile. We can cut that to under 2 seconds, which Google rewards with better rankings and your visitors are more likely to purchase. It's $X as a standalone package."</p>
+        <p><strong>Script 3 — Monthly Maintenance:</strong> "Now that your store is live, would you like ongoing support? We handle updates, speed monitoring, and any changes you need. Starts at $X/month."</p>
+        <p><strong>Script 4 — Additional Pages:</strong> "Some of our clients also add a FAQ page and a sizing guide — both reduce customer support questions. Want me to include those?"</p>
+        <p><strong>Script 5 — Marketing:</strong> "Your store design is strong. If you want help driving traffic, we offer a marketing package: social media + paid ads. Want to discuss?"</p>
+    </div>
+</div>
+`;
+
+const task15Quiz = [
+    { q: "The best time to present an upsell to a Fiverr client is:", o: ["During a problem — urgency increases their willingness to invest in additional services immediately", "After the client is happy with current work — post-delivery follow-up or after positive feedback", "Before the project starts — present all possible add-ons upfront so the client knows the full price", "Never — upselling is pushy and damages client relationships on Fiverr marketplaces"], c: 1 },
+    { q: "You notice the client's store has no email automations. The value-first approach is:", o: ["Ignore it — you were hired for store design, not email marketing, so it's outside your responsibility", "'I noticed you don't have email automations. A Welcome + Abandoned Cart flow typically recovers 10-15% of lost sales. Want me to set this up?'", "Build it for free — adding unrequested features shows initiative and the client will appreciate the bonus", "Tell the client their store will fail without email marketing — create urgency so they purchase immediately"], c: 1 },
+    { q: "Monthly retainer packages benefit Digital Heroes because:", o: ["They lock clients into contracts they can't exit — recurring revenue depends on making cancellation difficult", "They create recurring revenue, strengthen long-term relationships, and reduce client acquisition costs", "They're Fiverr's preferred revenue model — the platform gives higher rankings to sellers with retainer clients", "They replace project-based work entirely — DH should transition to only retainer clients for stable income"], c: 1 },
+    { q: "A PM identifies that a client's store PageSpeed is 45. The upsell approach is:", o: ["Tell the client their store is broken — PageSpeed 45 means the site barely functions and needs emergency repair", "'Your current score is 45. We can optimize to 85+ which improves conversion rate and Google rankings. It's $X as a standalone package.'", "Fix it for free — speed optimization should be included in every store build regardless of the original scope", "Don't mention it — clients don't care about technical metrics like PageSpeed and won't pay for optimization"], c: 1 },
+    { q: "Cross-selling between WordPress and Shopify means:", o: ["Convincing WordPress clients to switch to Shopify — Shopify is always better and WP clients should migrate", "Offering both platform services to clients — a WooCommerce client might need Shopify for a second brand, and vice versa", "Only selling Shopify — WordPress is not profitable enough and DH should stop offering WordPress services", "Building one site on both platforms simultaneously — all stores should have both WP and Shopify versions"], c: 1 },
+    { q: "Upselling is different from pushy selling because:", o: ["There's no difference — all upselling is pushy and makes clients uncomfortable regardless of how it's presented", "Upselling presents genuine value the client needs at the right time — not pushing unnecessary services for profit", "Upselling uses aggressive discounts — offering 50% off makes the client feel like they're getting a deal", "Upselling only happens once — pushy selling involves multiple attempts, upselling is always a single offer"], c: 1 },
+    { q: "Client says 'I'm launching new products next month.' This is an opportunity for:", o: ["Nothing — product launches are the client's responsibility and don't involve the PM or development team", "Product upload service: 'Launching new products? We can upload, optimize descriptions, and add professional images for $X'", "Telling the client to do it themselves — Shopify's interface is easy enough that they don't need help", "Offering a full store redesign — new products always require a completely new store design from scratch"], c: 1 },
+    { q: "PM as revenue driver means:", o: ["PMs should spend most of their time on sales calls rather than managing projects — revenue is the top priority", "PMs identify natural upsell opportunities during projects and present them as value to the client at the right time", "PMs should set sales targets and be compensated primarily through commission on upsold services", "Every PM conversation with a client should include at least 3 upsell pitches regardless of context"], c: 1 },
+    { q: "A Fiverr gig extra for additional work should be:", o: ["Offered as a free bonus — never charge existing clients for additional work that improves their store", "Sent as a Fiverr custom offer with clear scope, timeline, and price — keeping everything on-platform and documented", "Handled off-platform — direct the client to pay via PayPal to avoid Fiverr's commission on the additional work", "Never offered — scope should be fixed and PMs should refuse all requests for work beyond the original order"], c: 1 },
+    { q: "Client lifetime value (CLV) increases when:", o: ["The initial project is priced as high as possible — CLV is solely determined by the first transaction amount", "The PM builds a long-term relationship with ongoing support, upsells, and recurring retainer packages", "The client is locked into an annual contract with heavy cancellation penalties to prevent them from leaving", "CLV is not a PM metric — only the sales team is responsible for client lifetime value and retention"], c: 1 }
+];
+
+const task16Content = `
+<h2>📞 TASK 16: MEETING MASTERY & CLIENT CALLS</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(244, 114, 182, 0.15)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F472B6; margin-top: 0;">What Takes 3 Days of Messages Takes 1 Hour on a Call</h3>
+    <p>Fiverr PMs often avoid calls because "everything is in chat." Wrong. A single well-run call can resolve a week of back-and-forth messages and build deeper client trust.</p>
+</div>
+
+<div class="content-section">
+    <h3>📋 Meeting Types & When to Use Them</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(236, 72, 153, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meeting Type</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Duration</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">When</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Agenda</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Kickoff Call</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-45 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Day 1-2</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scope confirmation, timeline, access, assets needed, design direction</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Weekly Check-In</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15-20 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Weekly</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Progress demo, blockers, upcoming milestones</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Live Revision Call</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-2 hours</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">After review</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Screen-share, fix text/color/spacing live, note complex changes for later</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Handover Call</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-45 min</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">At delivery</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Final walkthrough, admin training, support details, review request</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🎥 Live Revision Calls — The DH Secret Weapon</h3>
+    <p>Live Revision Calls save <strong>days of back-and-forth</strong>:</p>
+    <ul>
+        <li><strong>Setup:</strong> Google Meet with screen sharing. Have the Shopify admin open and ready.</li>
+        <li><strong>Fix LIVE:</strong> Text changes, color adjustments, spacing fixes, font sizes — do them while the client watches.</li>
+        <li><strong>Note complex changes:</strong> "This needs custom code — I'll note it and have the dev implement by [date]."</li>
+        <li><strong>After call:</strong> Send a written summary: "We fixed X, Y, Z live. We'll complete A, B by [date]."</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🌍 Time Zone Management</h3>
+    <ul>
+        <li><strong>Use client's timezone:</strong> When proposing times, write "3 PM your time (1:30 AM IST for us)" — shows respect.</li>
+        <li><strong>Overlap windows:</strong> DH is IST (UTC+5:30). Good overlap: US morning = India evening (8 PM IST = 9:30 AM EST).</li>
+        <li><strong>Calendar:</strong> Always send Google Calendar invite with correct timezone. Never rely on "let's meet at 3" without timezone.</li>
+        <li><strong>Async for non-urgent:</strong> If timezone difference is 10+ hours, prefer Loom videos over live calls for status updates.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>📝 Call Notes & Action Items</h3>
+    <p>After EVERY call, send a written summary within 1 hour:</p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Template:</strong></p>
+        <p><em>Hi [Name], here's a summary of our call:</em></p>
+        <p><em><strong>Discussed:</strong> [topic 1], [topic 2], [topic 3]</em></p>
+        <p><em><strong>Decided:</strong> [decision 1], [decision 2]</em></p>
+        <p><em><strong>Action Items:</strong></em></p>
+        <ul><li><em>[Action] — Owner: [who] — Due: [date]</em></li></ul>
+        <p><em><strong>Next call:</strong> [date/time if scheduled]</em></p>
+    </div>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F472B6; padding: 20px; margin: 15px 0;">
+        <strong>Why this matters:</strong> Written summaries prevent "I never said that" disputes. They're your legal protection and the client's reference point.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📞 Calls vs Messages — Decision Framework</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use a Call When</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use Messages When</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Multiple revision items (10+)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1-3 revision items</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client is confused or frustrated</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Simple status update</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Design direction is unclear</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sharing links/files</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scope discussion / change request</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Confirming a single detail</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Project kickoff</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Daily progress update</td></tr>
+    </table>
+</div>
+`;
+
+const task16Quiz = [
+    { q: "A client has 15 revision items after reviewing their Shopify store. Best approach:", o: ["Handle each item via separate Fiverr messages — writing everything down ensures accuracy and documentation", "Schedule a Live Revision Call — fix text/color/spacing live on screen-share, note complex items for later", "Tell the client to prioritize their top 3 — 15 revision items is too many to handle in one round", "Implement all 15 silently and send the updated site — no need to discuss or confirm each change"], c: 1 },
+    { q: "After every client call, the PM must send a written summary within:", o: ["1 week — summaries are important but not urgent and can be written when the PM has free time", "1 hour — prevents 'I never said that' disputes and serves as the client's reference point for decisions", "Never — call summaries are unnecessary overhead that slows down project progress without adding value", "24 hours — same-day summaries are sufficient and there's no need to rush immediately after the call"], c: 1 },
+    { q: "DH is in IST (UTC+5:30). For a US EST client, good meeting overlap is:", o: ["2 PM IST (3:30 AM EST) — this is the only available window for IST-EST meetings to work efficiently", "8 PM IST (9:30 AM EST) — India evening = US morning provides the best overlap for both time zones", "12 PM IST (1:30 AM EST) — midday India time is ideal because the PM is most alert and productive", "There's no good overlap — IST and EST are too far apart and all meetings should be replaced by Loom videos"], c: 1 },
+    { q: "When proposing meeting times to international clients, the PM should:", o: ["Always use IST — the client should adapt to the PM's timezone since DH is the service provider", "Write in client's timezone first: '3 PM your time (1:30 AM IST for us)' — shows respect and prevents confusion", "Use UTC only — universal time is the standard for all international business communication worldwide", "Don't specify timezone — just say '3 PM' and the client will figure out the conversion themselves"], c: 1 },
+    { q: "Live Revision Calls on Google Meet should fix LIVE:", o: ["Custom code changes — writing Liquid templates during a live call impresses the client with technical skill", "Text changes, color adjustments, spacing fixes, font sizes — quick visual changes the client can approve instantly", "Nothing — the call should only be used for discussion, all changes should be implemented after the call ends", "Everything including app integrations — the entire revision list should be completed during a single call"], c: 1 },
+    { q: "The written summary after a call must include all EXCEPT:", o: ["Topics discussed during the meeting", "Decisions made during the call", "The PM's personal feelings about the client's feedback", "Action items with owners and due dates"], c: 2 },
+    { q: "Use messages instead of calls when:", o: ["The client has 15 revision items to discuss in detail with visual references for each change", "Simple status update, sharing links/files, or confirming a single detail — quick, no discussion needed", "The client is confused about the project direction and needs detailed clarification on scope and timeline", "The project is in a crisis situation and needs immediate escalation and resolution with the client"], c: 1 },
+    { q: "Kickoff call on Day 1-2 should cover:", o: ["Only payment confirmation — the kickoff call is primarily about confirming the client has paid for the order", "Scope confirmation, timeline walkthrough, access/credentials, assets needed, and design direction", "Only the PM's introduction — the first call should be a casual get-to-know-you conversation with no agenda", "Technical architecture decisions — the kickoff call should focus on server setup and theme selection details"], c: 1 },
+    { q: "For clients in a timezone 10+ hours different from IST:", o: ["Schedule calls at 3 AM IST — the PM should sacrifice sleep for client convenience without exception", "Prefer Loom videos over live calls for status updates — async communication works better for large timezone gaps", "Never communicate — timezone differences larger than 10 hours make projects unmanageable and should be declined", "Schedule all meetings at noon IST — this splits the timezone difference evenly between both parties"], c: 1 },
+    { q: "Weekly check-in calls should be:", o: ["2+ hours — thorough reviews require extended meeting time to cover everything properly each week", "15-20 minutes — focused on progress demo, blockers, and upcoming milestones without unnecessary discussion", "Skipped if the project is going well — weekly check-ins are only needed when problems exist", "Replaced entirely by daily written updates — weekly calls are outdated and modern PM uses text-only communication"], c: 1 }
+];
+
+const task17Content = `
+<h2>🎓 TASK 17: CAREER GROWTH & CERTIFICATION</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">Your PM Career at Digital Heroes</h3>
+    <p>You've mastered the skills. Now learn the path from <strong>Junior PM to Head of PM</strong>. This is also your <strong>Final Certification Exam</strong> covering all Tasks 1-16.</p>
+</div>
+
+<div class="content-section">
+    <h3>📈 PM Career Path at DH</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Level</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timeline</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Responsibilities</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Junior PM</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 1-6</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Manage 3-5 projects under supervision, follow SOPs exactly, learn Fiverr PM</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>PM</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 6-18</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Manage 5-10 projects independently, handle escalations, upsell</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Senior PM</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 18-36</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lead complex projects, mentor juniors, process improvement, client strategy</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Head of PM</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 36+</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Manage PM team, hire PMs, define processes, revenue ownership, strategic planning</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📊 PM KPIs at Digital Heroes</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">KPI</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">On-Time Delivery</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90%+</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Satisfaction</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4.8+ / 5.0</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">First-Approval Rate</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">70%+</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Upsell Revenue Generated</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%+ of managed projects get upsold</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Zero Refund Rate</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">0% — no refunds under your management</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📝 Final Certification Exam</h3>
+    <p>This exam covers <strong>ALL topics from Tasks 1-16</strong>:</p>
+    <ul>
+        <li>Tasks 1-5: Company culture, PM mindset, client communication, project lifecycle, team coordination</li>
+        <li>Tasks 6-10: Scope management, QA, tools, crisis management, metrics</li>
+        <li>Tasks 11-16: Fiverr PM, multi-project, dev coordination, handoff, upselling, meetings</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong>Score 100% to earn your PM Certification.</strong> This certifies you're ready to manage Digital Heroes projects independently.
+    </div>
+</div>
+`;
+
+const task17Quiz = [
+    { q: "A Junior PM at DH manages how many projects?", o: ["10-15 projects from Day 1 — learning happens through volume and pressure", "3-5 projects under supervision — building competence before taking full responsibility", "0 projects — Junior PMs only observe Senior PMs for the first 6 months without managing anything", "1 project — each Junior PM focuses on a single project until they complete their first delivery successfully"], c: 1 },
+    { q: "On-Time Delivery KPI target is:", o: ["50% — meeting half of deadlines is acceptable during the first year as a PM at Digital Heroes", "90%+ — on-time delivery directly affects Fiverr seller level and client satisfaction scores", "100% always — any single late delivery results in termination regardless of circumstances", "No specific target — delivery timing is flexible and depends on each project's unique circumstances"], c: 1 },
+    { q: "First-Approval Rate KPI means:", o: ["The percentage of clients who approve the FIRST delivery without requesting major revisions — target 70%+", "How quickly the PM responds to the first client message — measured in minutes from initial contact", "The percentage of proposals that get accepted by clients — a sales metric not a PM delivery metric", "Whether the PM approves the developer's work on first review — internal quality gate not client-facing"], c: 0 },
+    { q: "The PM career path from Junior to Head typically takes:", o: ["6 months — DH promotes quickly and career progression is accelerated for high performers", "36+ months — Junior (1-6mo), PM (6-18mo), Senior PM (18-36mo), Head of PM (36+mo)", "10+ years — traditional corporate timeline applies to all PM career progression at Digital Heroes", "There is no defined path — PM promotions are random and based on company needs not individual growth"], c: 1 },
+    { q: "Upsell Revenue KPI target means:", o: ["Every project must generate upsell revenue — projects without upsells are considered failures", "20%+ of managed projects result in additional revenue through upselling — identifying client needs naturally", "The PM keeps 20% commission on all upsell revenue — financial incentive drives upselling behavior", "Upselling is optional — it's a bonus metric that doesn't affect PM evaluation or career progression"], c: 1 },
+    { q: "Zero Refund Rate means:", o: ["Refunds are impossible on Fiverr — the platform doesn't allow sellers to issue refunds to buyers", "No refunds should occur under your management — proper QA, communication, and delivery prevents them", "One refund per quarter is acceptable — zero is an aspirational target not a realistic expectation", "Only applies to Senior PMs — Junior and Mid-Level PMs are expected to have some refund rate"], c: 1 },
+    { q: "Cross-training (understanding sales, dev, CS) helps a PM because:", o: ["PMs should replace sales, dev, and CS roles — understanding all functions means doing all functions personally", "Understanding how each department works helps the PM coordinate effectively across the entire project pipeline", "Cross-training is only for Junior PMs — Senior PMs specialize in PM and don't need cross-functional knowledge", "It's not helpful — PMs should focus exclusively on project management and ignore other department operations"], c: 1 },
+    { q: "Senior PM (Month 18-36) responsibilities include:", o: ["Same as Junior PM but with more projects — there's no difference in responsibility type at the Senior level", "Lead complex projects, mentor Junior PMs, improve processes, develop client strategy — leadership responsibilities", "Only hiring new PMs — Senior PMs transition fully into recruitment and stop managing projects entirely", "Managing the company's finances — Senior PMs are responsible for P&L management at the company level"], c: 1 },
+    { q: "Head of PM (Month 36+) is responsible for:", o: ["Managing projects directly — the Head of PM title is cosmetic with no change in actual daily responsibilities", "Managing the PM team, hiring PMs, defining processes, owning revenue targets, and strategic planning", "Only attending leadership meetings — the Head of PM delegates all actual work to Senior and Junior PMs", "Sales — at the Head level, the PM transitions into a sales role and stops all project management activities"], c: 1 },
+    { q: "Client Satisfaction KPI target of 4.8+/5.0 is measured through:", o: ["Internal surveys sent to clients by HR — the PM has no visibility into satisfaction scores", "Fiverr buyer reviews and ratings — directly affected by PM communication, delivery quality, and follow-up", "Annual client interviews conducted by the CEO — satisfaction is measured once per year only", "There's no formal measurement — client satisfaction is a subjective feeling that can't be quantified"], c: 1 },
+    { q: "The Final Certification Exam covers:", o: ["Only Tasks 11-16 (Fiverr-specific content) — the exam focuses on new material not previously tested", "ALL topics from Tasks 1-16 — company culture, PM mindset, communication, lifecycle, scope, QA, tools, crisis, metrics, Fiverr PM, multi-project, dev coordination, handoff, upselling, and meetings", "Only Tasks 1-5 (foundational PM content) — the certification validates basic PM knowledge only", "Random topics selected by the system — the exam content is different for every trainee"], c: 1 },
+    { q: "Moving from 'managing projects' to 'managing PMs' requires:", o: ["No additional skills — if you can manage projects you can automatically manage people who manage projects", "Leadership development: delegation, mentoring, process design, team development, and strategic thinking", "Only technical expertise — the Head of PM needs to be the most technically skilled person on the team", "MBA degree — Digital Heroes requires formal education for all leadership-level promotions"], c: 1 },
+    { q: "A PM achieving all KPIs (90%+ on-time, 4.8+ CSAT, 70%+ first-approval, upsells, zero refunds) is:", o: ["Meeting minimum expectations — all PMs are expected to hit every KPI from Day 1 without exception", "Performing at an elite level — demonstrating mastery of PM skills and readiness for promotion to the next level", "Over-performing and should reduce effort — hitting all KPIs means working too hard and risking burnout", "Cheating the metrics — it's statistically impossible to achieve all KPIs simultaneously in real projects"], c: 1 },
+    { q: "This certification proves you're ready to:", o: ["Start learning PM — the certification is just the beginning of a long learning journey before managing projects", "Manage Digital Heroes projects independently — applying all skills from client communication to Fiverr delivery", "Replace the Head of PM immediately — certification qualifies you for the highest PM position at DH", "Leave Digital Heroes — the certification's primary value is for external job applications at other companies"], c: 1 },
+    { q: "The most valuable skill for long-term PM career growth is:", o: ["Speed — the fastest PM always gets promoted first regardless of quality or client satisfaction scores", "Continuous learning and adaptability — tools change, platforms evolve, client expectations shift over time", "Memorizing SOPs — perfect recall of every procedure guarantees career progression at Digital Heroes", "Working maximum hours — career growth is directly proportional to hours worked per week"], c: 1 }
+];
+
+const task18Content = `
+<h2>🏗️ TASK 18: PRACTICAL TASK — PROJECT SIMULATION (72 Hours)</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(249, 115, 22, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">Prove It — 72-Hour PM Challenge</h3>
+    <p>Everything from Tasks 1-17 comes together here. Manage a <strong>simulated Shopify store build</strong> from kickoff to delivery. This is your final practical assessment.</p>
+</div>
+
+<div class="content-section">
+    <h3>📋 The Simulation Brief</h3>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Client:</strong> "Fresh Roots" — an organic skincare brand launching their first online store</p>
+        <p><strong>Platform:</strong> Shopify</p>
+        <p><strong>Products:</strong> 15 skincare products (face, body, hair care)</p>
+        <p><strong>Budget:</strong> $1,800 (Enterprise tier)</p>
+        <p><strong>Timeline:</strong> 14 days</p>
+        <p><strong>Reference:</strong> herbivore.com, truebotanicals.com</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>✅ Deliverables (5 Required Documents)</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deliverable</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Details</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Project Plan Document</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">14-day timeline with milestones, risk register, resource allocation</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Client Communication Log</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5 daily updates, 1 kickoff message, 1 delivery message (written as if to real client)</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Developer Brief</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full dev brief with requirements, references, assets, priorities, timeline</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>QA Checklist</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Completed 60-point QA checklist (fill it out as if you tested a real store)</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Loom Delivery Video</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3-5 min "delivery to client" simulation (can use any live Shopify store as reference)</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📤 Submission</h3>
+    <p>Submit all 5 deliverables via Google Form: <a href="https://forms.gle/digitalheroes-pm-practical" target="_blank" style="color: #60A5FA;">PM Practical Submission Form</a></p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong>Deadline:</strong> 72 hours from when you start this task. Quality over speed — but prove you can work under real project pressure.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Evaluation Rubric</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Criteria</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Weight</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What We Evaluate</th></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Project Plan Quality</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">25%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Realistic timeline, proper milestones, risk identification</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Communication</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">25%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Professional tone, clear updates, proactive communication</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Developer Brief</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Specificity, completeness, actionable instructions</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">QA Thoroughness</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">60-point checklist properly filled, attention to detail</td></tr>
+        <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delivery Presentation</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Loom quality, confidence, completeness, professionalism</td></tr>
+    </table>
+</div>
+`;
+
+const task18Quiz = [
+    { q: "The practical task requires how many deliverables?", o: ["2 — project plan and client communication log are the only required submissions", "5 — project plan, client communication log, developer brief, QA checklist, and Loom delivery video", "10 — each phase of the 14-day timeline requires a separate deliverable document submission", "1 — only the Loom delivery video is required since it demonstrates all PM skills visually"], c: 1 },
+    { q: "The client communication log must include:", o: ["1 message total — a single delivery message is sufficient to demonstrate PM communication skills", "5 daily updates, 1 kickoff message, and 1 delivery message — written as if communicating with a real client", "Only the kickoff message — daily updates and delivery messages are generated automatically by Fiverr", "50 messages covering every possible client interaction scenario across the entire project lifecycle"], c: 1 },
+    { q: "Project Plan Quality is weighted at what percentage?", o: ["5% — the project plan is a minor component and the Loom video carries most of the evaluation weight", "25% — realistic timeline, proper milestones, and risk identification are critical PM competencies", "50% — the project plan is the most important deliverable and everything else is secondary", "0% — project plans are not evaluated since the practical task focuses only on communication skills"], c: 1 },
+    { q: "The Loom delivery video should be:", o: ["30+ minutes covering every page in extreme detail with technical code explanations", "3-5 minutes — a 'delivery to client' simulation showing the store walkthrough professionally", "Not required — written delivery notes are accepted as a substitute for the video", "15-20 minutes focusing on the PM's personal reflection on what they learned during the simulation"], c: 1 },
+    { q: "The developer brief must be:", o: ["A one-line instruction: 'Build a skincare store' — developers should figure out the details themselves", "Specific and complete: requirements, references, assets, priorities, timeline — everything a dev needs to build without questions", "Only a timeline — developers don't need written requirements if the PM is available for questions", "A copy of the client's original message — the PM should pass through client requests without interpretation"], c: 1 }
 ];
 
 // Expose all content and quiz variables to window for app lookup
@@ -1202,6 +1776,13 @@ window.task8Content = task8Content;
 window.task9Content = task9Content;
 window.task10Content = task10Content;
 window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -1213,6 +1794,13 @@ window.task8Quiz = task8Quiz;
 window.task9Quiz = task9Quiz;
 window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
+window.task12Quiz = task12Quiz;
+window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -1225,5 +1813,12 @@ const allQuizzes = [
     task8Quiz,
     task9Quiz,
     task10Quiz,
-    task11Quiz
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];

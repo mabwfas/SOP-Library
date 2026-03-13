@@ -1,6 +1,6 @@
 const QA_MODE = false;
 
-// Sales Training Application Logic
+// Sales Associate Training Application Logic
 
 // State Management
 let currentTask = 0;
@@ -482,7 +482,7 @@ function showCertificate() {
                     font-weight: 700;
                     color: #2DD4BF;
                     margin-bottom: 25px;
-                ">Sales Executive Training</h3>
+                ">Sales Associate Training</h3>
                 
                 <p style="color: #CBD5E1; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 0 auto;">
                     Demonstrating proficiency in sales mindset, company knowledge, product mastery, lead qualification, response templates, sales psychology, objection handling, closing techniques, and practice scenarios.
@@ -691,7 +691,7 @@ function showNamePrompt() {
                 font-size: 1.8em;
                 color: #F8FAFC;
                 margin-bottom: 10px;
-            ">Welcome to Sales Training</h1>
+            ">Welcome to Sales Associate Training</h1>
             <p style="color: #94A3B8; margin-bottom: 30px;">
                 Digital Heroes Certification Program
             </p>

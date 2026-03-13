@@ -1,6 +1,6 @@
 // Client Chat Simulator Training Data - COMPLETE OVERHAUL
 // Digital Heroes Certification Program
-// 10 Tasks, 100+ Quiz Questions, Speed & Empathy Mastery
+// 18 Tasks, 200+ Quiz Questions, Speed & Empathy Mastery
 
 const trainingTasks = [
     { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
@@ -112,16 +112,100 @@ const trainingTasks = [
             "🎭 Sim: Bug Report"
         ]
     },
-    {
+{
         id: 11,
-        title: "Live Chat Simulation",
-        description: "The Final Test",
+        title: "Pre-Sale Communication",
+        description: "Inquiry Handling & Custom Offers",
         contentFirst: true,
         studyGuide: [
             "⏱️ Time: 60 min",
-            "🤖 Bot: You will chat with an AI Customer",
-            "🎯 Goal: Solve the issue + Get a 5-star rating",
-            "⚠️ Fail: Taking > 2 mins to reply"
+            "📩 Handling marketplace inquiries",
+            "📋 Requirement gathering frameworks",
+            "💰 Creating custom offer proposals"
+        ]
+    },
+    {
+        id: 12,
+        title: "Order Communication",
+        description: "Milestone Updates & Expectations",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "📊 Proactive milestone updates",
+            "🤝 Setting clear expectations",
+            "📝 Status update templates"
+        ]
+    },
+    {
+        id: 13,
+        title: "Revisions & Scope Creep",
+        description: "Managing Boundaries Professionally",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 60 min",
+            "🔄 Revision policy communication",
+            "🚨 Scope creep detection signals",
+            "🛡️ Polite pushback templates"
+        ]
+    },
+    {
+        id: 14,
+        title: "Delivery Messages",
+        description: "Presenting Work & Requesting Reviews",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "🎁 Compelling delivery message writing",
+            "✨ Showcasing work effectively",
+            "⭐ Review solicitation strategies"
+        ]
+    },
+    {
+        id: 15,
+        title: "Difficult Conversations",
+        description: "Late Deliveries, Refunds & Complaints",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 60 min",
+            "⏰ Handling late delivery communication",
+            "💸 Refund request management",
+            "🧯 De-escalation advanced techniques"
+        ]
+    },
+    {
+        id: 16,
+        title: "Review Management",
+        description: "Reputation & Seller Rating",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "⭐ Soliciting positive reviews",
+            "🛠️ Handling negative feedback",
+            "📈 Maintaining seller rating"
+        ]
+    },
+    {
+        id: 17,
+        title: "Career Growth",
+        description: "Chat Specialist Path at DH",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "🚀 Chat specialist career ladder",
+            "📊 KPIs and performance metrics",
+            "🎯 Certification and advancement"
+        ]
+    },
+    {
+        id: 18,
+        title: "Chat Scenario Simulations",
+        description: "The Final Test",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 90 min",
+            "🤖 10 real conversation scenarios",
+            "🎯 Goal: Model responses for each",
+            "⚠️ Covers all modules 1-17"
         ]
     }
 ];
@@ -822,34 +906,433 @@ const task10Content = `
 `;
 
 const task11Content = `
-<h2>📚 TASK 10: LIVE CHAT SIMULATION</h2>
+<h2>📩 TASK 11: PRE-SALE COMMUNICATION — Inquiry Handling & Custom Offers</h2>
 
-<div class="content-section">
-    <h3>🤖 The Final Boss</h3>
-    <p>You are about to enter the Simulator. You will face 5 random customers. You must maintain < 2 min response time.</p>
-</div>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🎯 Why Pre-Sale Communication Matters</h3>
+    <p>The first message a potential client receives from you determines whether they hire Digital Heroes or move on to someone else. On marketplace platforms, clients often send the same inquiry to 5-10 sellers simultaneously. <strong>Your response speed, professionalism, and perceived expertise in the first message wins the order.</strong></p>
 
-<div class="content-section">
-    <h3>🎯 The Goal</h3>
-    <p>100% CSAT (Customer Satisfaction). 100% Resolution.</p>
-</div>
-
-<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 2px solid rgba(239, 68, 68, 0.3); padding: 25px; border-radius: 12px;">
-    <h3>✅ IMPLEMENTATION TASK: Final Prep</h3>
-    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; margin: 15px 0;">
-        <h4 style="color: #F87171; margin-top: 0;">Exercise: Deep Breath</h4>
-        <p>Review your cheat sheet (Macros, Pricing, Policy). You are ready.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">📊 The Pre-Sale Funnel</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Stage</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Action</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Goal</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">1. Inquiry Received</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Acknowledge within 5 minutes</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Show responsiveness</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">2. Requirement Gathering</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Ask targeted questions</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Understand scope</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3. Custom Offer</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Create tailored proposal</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Win the order</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4. Follow-Up</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Gentle nudge if no response</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Close the deal</td></tr>
+        </table>
     </div>
+</div>
+
+<div class="content-section">
+    <h3>📨 PART 1: THE PERFECT FIRST RESPONSE</h3>
+    <p>Your initial reply to a client inquiry must accomplish three things simultaneously: <strong>demonstrate expertise, show enthusiasm, and ask smart questions</strong>.</p>
+    <h4>1.1 The GREET Framework</h4>
+    <div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); padding: 20px; border-radius: 10px;">
+        <p style="font-size: 1.1em;"><strong>G</strong> - Greet warmly and use their name</p>
+        <p style="font-size: 1.1em;"><strong>R</strong> - Reference their specific project/need</p>
+        <p style="font-size: 1.1em;"><strong>E</strong> - Expertise signal (mention relevant experience)</p>
+        <p style="font-size: 1.1em;"><strong>E</strong> - Engage with a clarifying question</p>
+        <p style="font-size: 1.1em;"><strong>T</strong> - Timeline and next steps</p>
+    </div>
+    <h4>1.2 Reading Between the Lines</h4>
+    <div class="highlight-box">
+        <strong>Client signals and what they really mean:</strong>
+        <ul>
+            <li><strong>"I need this ASAP"</strong> = They are ready to pay more for speed. Offer a rush delivery option.</li>
+            <li><strong>"Budget is tight"</strong> = They want value, not cheap. Show them your best work and justify the investment.</li>
+            <li><strong>"I have tried other sellers"</strong> = Previous bad experience. Emphasize your communication and revision process.</li>
+            <li><strong>"Can you do everything?"</strong> = They want a one-stop solution. Position DH as a full-service agency.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💰 PART 2: CREATING CUSTOM OFFERS</h3>
+    <h4>Custom Offer Structure</h4>
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); padding: 20px; border-radius: 10px;">
+        <ol>
+            <li><strong>Project Understanding</strong> - Paraphrase what they asked for (shows you listened)</li>
+            <li><strong>Proposed Solution</strong> - What you will deliver, broken into phases</li>
+            <li><strong>Timeline</strong> - Realistic delivery dates with milestones</li>
+            <li><strong>What is Included</strong> - Explicit list so there is no ambiguity</li>
+            <li><strong>What is NOT Included</strong> - Prevents scope creep later</li>
+            <li><strong>Price</strong> - Clear pricing with any package options</li>
+            <li><strong>Why Us</strong> - Brief differentiator (portfolio links, reviews, guarantees)</li>
+        </ol>
+    </div>
+    <h4>Follow-Up Strategy</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Timing</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Message</th></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">After 24 hours</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Hi [Name], just checking in - did you get a chance to review the proposal?"</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">After 3 days</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Hey [Name], I have some additional ideas for your project. Shall I share them?"</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">After 7 days</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Hi [Name], the offer is still available. If requirements have changed, I am happy to adjust."</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 <strong>12 questions</strong> testing pre-sale communication skills</li>
+        <li>🎯 Score <strong>12/12</strong> to proceed to Task 12</li>
+    </ul>
+</div>
+`;
+
+const task12Content = `
+<h2>📊 TASK 12: ORDER COMMUNICATION — Milestone Updates & Setting Expectations</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(20, 184, 166, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🎯 Why Proactive Communication Wins</h3>
+    <p>Once a client places an order, the real relationship begins. The number one reason clients leave negative reviews is NOT poor quality work, it is <strong>poor communication during the project</strong>. Clients who feel informed and in control throughout the process become repeat buyers and leave glowing reviews.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">📈 The Communication Impact</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(16, 185, 129, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Communication Level</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Client Experience</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Result</th></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Silent until delivery</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Anxious, sends "any update?" messages</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3-4 star review even if work is great</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Responds only when asked</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Feels like chasing you</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4 star review, unlikely to return</td></tr>
+            <tr style="background: rgba(16, 185, 129, 0.15);"><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Proactive updates</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Feels cared for, trusts the process</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>5 stars + repeat orders + referrals</strong></td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📅 The Milestone Update System</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Milestone</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">When</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">What to Send</th></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Order Confirmation</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Within 2 hours</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Thank them, confirm scope, share timeline</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Work Started</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Day 1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Brief update that work has begun</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Progress Preview</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">30-50% complete</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Share WIP screenshots or partial delivery</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Final Review</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Before delivery</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Preview of completed work, ask for feedback</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Delivery</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">On time or early</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Full delivery with detailed delivery message</td></tr>
+    </table>
+    <h3>🎯 Setting and Managing Expectations</h3>
+    <div class="highlight-box">
+        <strong>At the start of every order, confirm:</strong>
+        <ul>
+            <li><strong>Deliverables:</strong> Exactly what they will receive</li>
+            <li><strong>Timeline:</strong> Specific dates, not vague "a few days"</li>
+            <li><strong>Revisions:</strong> How many rounds are included</li>
+            <li><strong>Communication:</strong> How and when you will send updates</li>
+            <li><strong>What you need from them:</strong> Content, access, feedback deadlines</li>
+        </ul>
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Never Do These:</strong>
+        <ul>
+            <li>Promise a delivery date you cannot meet just to win the order</li>
+            <li>Go silent for more than 24 hours without an update</li>
+            <li>Say "no problem" to a request that IS a problem</li>
+            <li>Assume the client knows what is happening behind the scenes</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 <strong>12 questions</strong> testing order communication skills</li>
+        <li>🎯 Score <strong>12/12</strong> to proceed to Task 13</li>
+    </ul>
+</div>
+`;
+
+const task13Content = `
+<h2>🔄 TASK 13: HANDLING REVISIONS & SCOPE CREEP</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F59E0B; margin-top: 0;">⚠️ The Scope Creep Problem</h3>
+    <p>Scope creep is the silent profit killer. It happens when a client gradually asks for more work than what was originally agreed upon, without additional compensation. At Digital Heroes, <strong>scope creep is the #1 cause of project delays and team burnout</strong>.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F59E0B; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F59E0B;">🚨 Scope Creep vs Legitimate Revision</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(245, 158, 11, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Legitimate Revision</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Scope Creep</th></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Can you change the header color?"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Can you also add a blog section?"</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"The font is too small on mobile"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Can you design a logo too?"</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Adjusting what was agreed</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Adding work that was never agreed</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🛡️ Revision Policy Communication</h3>
+    <div class="highlight-box">
+        <strong>Define clearly for the client:</strong>
+        <ul>
+            <li><strong>One round</strong> = Client sends all feedback at once, you implement all changes</li>
+            <li><strong>NOT</strong> one round per individual change request</li>
+            <li>Bug fixes are NOT revisions (fixing something broken is your responsibility)</li>
+            <li>Adding NEW features is NOT a revision (it is scope expansion)</li>
+        </ul>
+    </div>
+    <h3>✋ The ACKNOWLEDGE-REDIRECT-OFFER Framework</h3>
+    <div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); padding: 20px; border-radius: 10px;">
+        <p><strong>ACKNOWLEDGE:</strong> "That is a great idea! I can see why you would want that."</p>
+        <p><strong>REDIRECT:</strong> "That feature was not part of our original scope for this order."</p>
+        <p><strong>OFFER:</strong> "I would love to add it! I can create a separate order for [feature] at [price]. What works best for you?"</p>
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">When to Escalate to PM:</strong>
+        <ul>
+            <li>Client becomes aggressive about scope additions</li>
+            <li>Client threatens negative review to get free work</li>
+            <li>Scope creep exceeds 30% of original order value</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 <strong>12 questions</strong> testing revision and scope management</li>
+        <li>🎯 Score <strong>12/12</strong> to proceed to Task 14</li>
+    </ul>
+</div>
+`;
+
+const task14Content = `
+<h2>📦 TASK 14: DELIVERY MESSAGES & PRESENTING YOUR WORK</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🎁 The Delivery Message is Your Grand Finale</h3>
+    <p>The delivery message is the LAST impression before the client decides your rating. A lazy "Here you go" delivery wastes all the great work you did. A compelling delivery message <strong>reminds the client of the value they received, showcases your work beautifully, and plants the seed for repeat business and a 5-star review</strong>.</p>
+</div>
+
+<div class="content-section">
+    <h3>📝 The Perfect Delivery Message Structure</h3>
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); padding: 20px; border-radius: 10px;">
+        <ol>
+            <li><strong>Warm Opening</strong> - Express excitement about the completed work</li>
+            <li><strong>Summary of What Was Done</strong> - Bullet list of completed items</li>
+            <li><strong>How to Access/Use</strong> - Clear instructions for the client</li>
+            <li><strong>Highlights</strong> - Point out 2-3 things you are especially proud of</li>
+            <li><strong>Next Steps</strong> - What happens after they review</li>
+            <li><strong>Future Value</strong> - Mention availability for future work</li>
+            <li><strong>Review Request</strong> - Polite, non-pushy ask for feedback</li>
+        </ol>
+    </div>
+    <h3>⭐ Requesting Reviews</h3>
+    <div class="highlight-box">
+        <ul>
+            <li><strong>Best time:</strong> Immediately after the client expresses satisfaction</li>
+            <li><strong>Good time:</strong> In your delivery message (subtle mention)</li>
+            <li><strong>Bad time:</strong> When there are unresolved issues or pending revisions</li>
+            <li><strong>Never:</strong> Pressure or incentivize reviews (violates platform terms)</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 <strong>12 questions</strong> testing delivery and review skills</li>
+        <li>🎯 Score <strong>12/12</strong> to proceed to Task 15</li>
+    </ul>
+</div>
+`;
+
+const task15Content = `
+<h2>😤 TASK 15: DIFFICULT CONVERSATIONS — Late Deliveries, Refunds & Complaints</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.15)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🔥 Difficult Conversations Define Your Career</h3>
+    <p>What separates elite chat specialists from average ones is how they handle problems. At Digital Heroes, <strong>a well-handled complaint often creates a more loyal client than one who never had a problem at all</strong>. This is called the Service Recovery Paradox.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">🧠 The Service Recovery Paradox</strong>
+        <p>Customers who experience a problem that is resolved exceptionally well become MORE loyal than customers who never had a problem.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⏰ Late Delivery Communication</h3>
+    <div class="highlight-box" style="background: rgba(245, 158, 11, 0.15); padding: 20px; border-radius: 10px;">
+        <p><strong>Rule:</strong> Notify the client BEFORE the deadline, not after.</p>
+        <ol>
+            <li><strong>Acknowledge:</strong> "I want to be transparent with you about the timeline."</li>
+            <li><strong>Explain briefly:</strong> "I ran into [specific issue] that needs extra attention."</li>
+            <li><strong>New timeline:</strong> "I will have everything completed by [specific date/time]."</li>
+            <li><strong>Compensate:</strong> "To make up for the delay, I am including [bonus/extra] at no charge."</li>
+        </ol>
+    </div>
+    <h3>💸 Refund Requests</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Situation</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Recommended Action</th></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Client unhappy (our fault)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Offer to redo the work first. If still unhappy, partial or full refund.</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Client changed their mind</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Offer alternatives first. Refund if no work has started.</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Scope disagreement</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Refer to original agreement. Offer to complete missing items.</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Trying to get free work</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Stand firm politely. Document everything. Escalate to PM.</td></tr>
+    </table>
+    <h3>🧯 The HEARD Method for Complaints</h3>
+    <div class="highlight-box" style="background: rgba(99, 102, 241, 0.15); padding: 20px; border-radius: 10px;">
+        <p style="font-size: 1.1em;"><strong>H</strong> - Hear them out completely (do not interrupt)</p>
+        <p style="font-size: 1.1em;"><strong>E</strong> - Empathize genuinely ("I would feel the same way")</p>
+        <p style="font-size: 1.1em;"><strong>A</strong> - Apologize specifically (not generic "sorry for the inconvenience")</p>
+        <p style="font-size: 1.1em;"><strong>R</strong> - Resolve with a concrete action</p>
+        <p style="font-size: 1.1em;"><strong>D</strong> - Delight with something extra</p>
+    </div>
+    <h3>De-Escalating vs Escalating Phrases</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Escalating (AVOID)</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">De-Escalating (USE)</th></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"That is not what you ordered"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Let me review the original requirements with you"</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"Calm down"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"I completely understand your frustration"</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"It is against our policy"</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">"What I can do for you is..."</td></tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 <strong>12 questions</strong> testing difficult conversation handling</li>
+        <li>🎯 Score <strong>12/12</strong> to proceed to Task 16</li>
+    </ul>
+</div>
+`;
+
+const task16Content = `
+<h2>⭐ TASK 16: REVIEW MANAGEMENT & REPUTATION</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F59E0B; margin-top: 0;">🏆 Your Rating IS Your Resume</h3>
+    <p>On marketplace platforms, your seller rating determines your search ranking, conversion rate, and client trust. At Digital Heroes, <strong>maintaining a 4.8+ average rating is a non-negotiable KPI</strong>.</p>
+</div>
+
+<div class="content-section">
+    <h3>⭐ Earning 5-Star Reviews: The Over-Delivery Strategy</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Order Type</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Over-Delivery Ideas</th></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Shopify Store</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Free speed optimization, extra social media banner, SEO checklist</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Design Work</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Extra color variation, social media mockup, source files</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Development</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Code documentation, how-to video, maintenance tips</td></tr>
+    </table>
+    <h3>🛡️ Handling Negative Reviews</h3>
+    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.15); padding: 20px; border-radius: 10px;">
+        <strong>The PUBLIC Response Formula:</strong>
+        <ol>
+            <li><strong>Thank them</strong> for their feedback</li>
+            <li><strong>Acknowledge</strong> the issue without being defensive</li>
+            <li><strong>Explain briefly</strong> what happened</li>
+            <li><strong>State what you improved</strong></li>
+            <li><strong>Invite them back</strong></li>
+        </ol>
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong style="color: #F87171;">Never:</strong>
+        <ul>
+            <li>Argue publicly with a client in review responses</li>
+            <li>Blame the client (even if they were wrong)</li>
+            <li>Ask clients to remove negative reviews</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 <strong>12 questions</strong> testing review management skills</li>
+        <li>🎯 Score <strong>12/12</strong> to proceed to Task 17</li>
+    </ul>
+</div>
+`;
+
+const task17Content = `
+<h2>🚀 TASK 17: CAREER GROWTH — Chat Specialist Career Path at Digital Heroes</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(20, 184, 166, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📈 Your Growth Path at DH</h3>
+    <p>At Digital Heroes, client chat is not a dead-end role. It is a launchpad for a career in client success, account management, and team leadership.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">🪜 The DH Chat Career Ladder</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(16, 185, 129, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Level</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Role</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Requirements</th></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Chat Trainee</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Complete this training certification</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L2</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Chat Specialist</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">3 months, 4.8+ rating, 80%+ resolution</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L3</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Senior Chat Specialist</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">6 months, mentors new agents, handles escalations</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L4</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Client Success Lead</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">12 months, manages client relationships end-to-end</td></tr>
+            <tr style="background: rgba(16, 185, 129, 0.15);"><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L5</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Account Manager / Team Lead</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">18+ months, proven leadership</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 KPIs That Drive Your Growth</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">KPI</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Target</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Why It Matters</th></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">First Response Time</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Under 60 seconds</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Correlates with conversion rate</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Conversion Rate</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">20%+</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Revenue per chat interaction</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Client Satisfaction</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">4.8+ stars</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Ranking and repeat business</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Resolution Rate</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">85%+</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">First-contact resolution</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Repeat Client Rate</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">30%+</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Relationship-building ability</td></tr>
+    </table>
+    <h3>🎯 Specialization Tracks</h3>
+    <div class="highlight-box">
+        <ul>
+            <li><strong>Pre-Sales Specialist:</strong> Focus on converting inquiries to orders.</li>
+            <li><strong>Client Success Manager:</strong> Own client relationships end-to-end.</li>
+            <li><strong>Escalation Expert:</strong> Handle the hardest conversations and crises.</li>
+            <li><strong>Training Lead:</strong> Develop and deliver training for new chat agents.</li>
+            <li><strong>Quality Assurance:</strong> Review transcripts and maintain quality standards.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚀 Ready for the Quiz?</h3>
+    <ul>
+        <li>📝 <strong>15 questions</strong> testing career growth knowledge</li>
+        <li>🎯 Score <strong>15/15</strong> to proceed to Task 18</li>
+    </ul>
+</div>
+`;
+
+const task18Content = `
+<h2>🏆 TASK 18: FINAL CERTIFICATION — Client Chat Mastery Exam</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🏆 Final Certification — Prove Your Mastery</h3>
+    <p>This comprehensive exam covers ALL 17 previous modules. Demonstrate mastery across every area of client chat communication to earn your <strong>Digital Heroes Client Chat Certification</strong>.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">📋 Exam Coverage</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(245, 158, 11, 0.2);"><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Module Group</th><th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Topics</th></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Foundation (1-4)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Company culture, chat mindset, knowledge, tonality</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Core Skills (5-8)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Objections, speed tools, closing, system hygiene</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Advanced (9-10)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">De-escalation, role play</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Marketplace (11-14)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Pre-sale, order comms, revisions, delivery</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Mastery (15-17)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Difficult conversations, reviews, career growth</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🎯 What Certification Means</h3>
+    <ul>
+        <li>Lightning-fast response times with human warmth</li>
+        <li>Converting browsers into buyers using proven frameworks</li>
+        <li>Professional pre-sale communication and custom offer creation</li>
+        <li>Proactive order communication with milestone updates</li>
+        <li>Managing revisions and scope boundaries professionally</li>
+        <li>Delivering work with impact and soliciting genuine reviews</li>
+        <li>Handling difficult conversations with empathy and resolution</li>
+        <li>Building and protecting your seller reputation</li>
+        <li>Planning your career growth at Digital Heroes</li>
+    </ul>
+    <p style="font-weight: bold; font-size: 1.1em;">You are now a certified Digital Heroes Client Chat Specialist!</p>
 </div>
 
 <div class="content-section">
     <h3>🚀 Ready for the Final Exam?</h3>
     <ul>
-        <li>📝 20 questions covering ALL modules</li>
-        <li>🎯 Score <strong>20/20</strong> to receive Chat Certification</li>
+        <li>📝 <strong>10 comprehensive questions</strong> covering ALL modules 1-17</li>
+        <li>🎯 Score <strong>10/10</strong> to receive your Client Chat Certification</li>
+        <li>🏆 Your certificate will be generated upon passing</li>
     </ul>
 </div>
 `;
+
 
 const quizQuestions = [
     // Task 1 - Speed & Mindset
@@ -1032,25 +1515,124 @@ const task10Quiz = [
 ];
 
 const task11Quiz = [
-    { q: "Live Chat Simulation differs from role play because:", o: ["Simulations use real chat platforms with realistic timing pressure and surprise scenarios — it's the closest to live conditions", "There's no difference — they're the same and ensures long-term sustainability across your deliverables and ensures sustainable long-term client relationship outcomes", "Simulations are easier — this reflects the standard operating procedure most organizations follow", "Role play is more advanced — this reflects the standard operating procedure most organizations follow"], c: 0 },
-    { q: "The 60-second rule combined with the Conversion Framework means:", o: ["Respond fast with any answer — this reflects the standard operating procedure most organizations follow", "The framework replaces the speed rule — this reflects the standard operating procedure most organizations follow", "Focus on speed primarily, conversion comes later", "Respond within 60 seconds AND make every response move the customer closer to a purchase — speed + selling"], c: 3 },
-    { q: "A customer in simulation asks 3 questions rapidly. The priority is:", o: ["Answer the buying-signal question first (the one closest to purchase decision), then handle the others", "Answer all 3 in one giant message — this reflects the standard operating procedure most organizations follow", "Answer in the order they were asked — this reflects the standard operating procedure most organizations follow", "Ask them to slow down and ask one at a time — this reflects the standard operating procedure most organizations follow"], c: 0 },
-    { q: "Simulation reveals that agents use 'Unfortunately' an average of 4 times per conversation. The fix is:", o: ["It's a professional word that should be used — this reflects the standard operating procedure most organizations follow", "'Unfortunately' is primarily bad when overused — this aligns with industry best practices and ensures consistent results across different project types", "Replace with positive reframes from Tonality training: 'What I CAN do is...' — eliminating the word entirely from vocabulary", "Add more positive words without removing 'unfortunately'"], c: 2 },
-    { q: "In simulation, handling a customer who is BOTH browsing AND has a complaint about a previous order:", o: ["Address the complaint with empathy first (priority), resolve it, THEN transition to helping them shop — turn the negative into a new sale", "Handle the complaint first, then ignore the browsing — following this approach systematically prevents common mistakes and keeps the workflow predictable", "Focus primarily on the new sale opportunity — this reflects the standard operating procedure most organizations follow", "Transfer the complaint to support and handle the sale"], c: 0 },
-    { q: "The certification simulation tests all skills simultaneously:", o: ["One skill per scenario — this is the standard approach most teams follow", "Written test replaces simulation — this reflects the standard operating procedure most organizations follow", "Chat speed matters for certification — this is the standard approach most teams follow", "60-second response, mirroring, objection handling, closing, system hygiene — proving mastery under pressure"], c: 3 },
-    { q: "KPI: Chat conversion rate measures:", o: ["How many chats you handle per hour — this reflects the standard operating procedure most organizations follow", "Customer satisfaction scores — this reflects the standard operating procedure most organizations follow", "Percentage of chats that result in a sale — THE critical metric for chat agent effectiveness", "Average response time across all chats — this reflects the standard operating procedure most organizations follow"], c: 2 },
-    { q: "Speed tools + Tonality + Closing combined create:", o: ["A robotic but fast agent — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "An agent who responds instantly (macros), sounds human (tonality), and converts browsers to buyers (closing) — the complete package", "An average performer — this reflects the standard operating procedure most organizations follow", "An agent who talks too much — this reflects the standard operating procedure most organizations follow"], c: 1 },
-    { q: "System hygiene during simulation (tagging, notes, ticket closure) tests:", o: ["Administrative skills primarily — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Typing speed under pressure — this reflects the standard operating procedure most organizations follow", "Whether agents maintain data quality WHILE handling live customers — the real-world challenge of doing both simultaneously", "That agents know where the close button is — this reflects the standard operating procedure most organizations follow"], c: 2 },
-    { q: "An agent with perfect product knowledge but no closing skills will:", o: ["Become a free FAQ service — answering every question perfectly but never converting the chat into a sale", "Perform well because knowledge is power — this reflects the standard operating procedure most organizations follow", "Eventually develop closing skills naturally — this reflects the standard operating procedure most organizations follow", "Be equally valuable as an agent who closes — this reflects the standard operating procedure most organizations follow"], c: 0 },
-    { q: "The most important metric for live chat success is:", o: ["Customer satisfaction score alone — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Number of chats handled per day — this reflects the standard operating procedure most organizations follow", "Response time alone — this reflects the standard operating procedure most organizations follow", "Revenue per chat — combining conversion rate, average order value, and upsell rate into one business impact number"], c: 3 },
-    { q: "Firefighting + Closing: When a crisis is resolved, the next move is:", o: ["End the conversation — they've been through enough", "Offer a permanent discount for the inconvenience — this method has been validated through extensive testing and produces reliable, repeatable outcomes", "Send a survey to rate the experience — this reflects the standard operating procedure most organizations follow", "Leverage the goodwill: 'I'm glad we fixed that! Since you're here, can I help you find something amazing today?'"], c: 3 },
-    { q: "Assumptive Close: 'Which size works best for you — the M or L?' is better than 'Would you like to buy?' because:", o: ["It skips the buy/don't-buy decision entirely — the customer is choosing WHICH to buy, not WHETHER to buy", "It's more confusing so customers say yes — this reflects the standard operating procedure most organizations follow", "Assumptive closes always work perfectly — this reflects the standard operating procedure most organizations follow", "Size questions aren't really closes — this reflects the standard operating procedure most organizations follow"], c: 0 },
-    { q: "The Interconnected Chain shows Chat Agents connecting:", o: ["To the customer — this is the standard approach most teams follow and ensures long-term sustainability across your deliverables and ensures sustainable long-term client relationship outcomes", "Sales pipeline to customer experience — the agent is the human bridge between marketing that brought them in and the conversion that generates revenue", "To other agents — this is the standard approach most teams follow", "To the website backend systems — this reflects the standard operating procedure most organizations follow"], c: 1 },
-    { q: "After completing all training modules, the Elite Chat Agent is defined by:", o: ["Perfect typing speed and grammar — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Years of experience in customer service — this reflects the standard operating procedure most organizations follow", "The combination: lightning response time, human tonality, objection mastery, confident closing, clean systems, and crisis composure", "The highest customer satisfaction scores — this reflects the standard operating procedure most organizations follow"], c: 2 },
-    { q: "The #1 revenue killer in live chat is:", o: ["Slow response times — this reflects the standard operating procedure most organizations follow", "Poor product knowledge — this reflects the standard operating procedure most organizations follow", "Answering questions without ever attempting to close the sale — the 'helpful FAQ bot' trap", "Bad grammar in messages — this reflects the standard operating procedure most organizations follow"], c: 2 },
-    { q: "Building long-term customer relationships through chat means:", o: ["Having the longest conversations possible — this reflects the standard operating procedure most organizations follow", "Creating memorable experiences that make customers return — every chat is a brand impression that lasts", "Sending follow-up emails daily — this reflects the standard operating procedure most organizations follow", "Offering discounts on every purchase — this reflects the standard operating procedure most organizations follow"], c: 1 },
-    { q: "Negative word replacement ('Unfortunately' → 'What I CAN do') reflects:", o: ["Corporate language polishing — this reflects the standard operating procedure most organizations follow", "Following a script without understanding why — this reflects the standard operating procedure most organizations follow", "Superficial word changes with no real impact — this reflects the standard operating procedure most organizations follow", "A fundamental mindset shift — from telling customers what's impossible to showing them what IS possible"], c: 3 },
-    { q: "The training certification proves you can:", o: ["Pass a written exam about company policies — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Handle any live chat scenario with speed, empathy, salesmanship, and professionalism — a complete revenue-generating chat agent", "Type 80 words per minute — this reflects the standard operating procedure most organizations follow", "Memorize saved replies accurately — this reflects the standard operating procedure most organizations follow"], c: 1 }
+    { q: "A potential client sends an inquiry: 'I need a Shopify store for my brand.' What should your FIRST response accomplish?", o: ["Quote a price immediately so they know what to expect", "Demonstrate expertise, reference their specific need, and ask a clarifying question using the GREET framework", "Send your full portfolio and let the work speak for itself", "Ask them what their budget is before providing any information"], c: 1 },
+    { q: "The GREET framework stands for:", o: ["Greet, Reference, Expertise, Engage, Timeline — a structured first response that builds trust and moves toward a sale", "Good, Responsive, Efficient, Effective, Thorough — a quality checklist for chat agents", "Gather, Research, Evaluate, Execute, Track — a project management methodology", "Greet, Redirect, Empathize, Apologize, Transfer — a complaint handling framework"], c: 0 },
+    { q: "A client asks the same inquiry to 5 sellers. What determines who wins the order?", o: ["The lowest price always wins on marketplace platforms", "Response speed, demonstrated expertise in the first message, and asking smart clarifying questions", "Portfolio size is the only factor clients consider", "Whoever has the most reviews automatically gets chosen"], c: 1 },
+    { q: "When gathering requirements, what is the maximum number of questions per message?", o: ["Ask all questions at once to save time", "2-3 targeted questions — too many overwhelms the client and reduces response rates", "Only 1 question per message", "As many as needed — the client expects detailed questioning"], c: 1 },
+    { q: "A client says 'Budget is tight' during pre-sale. This really means:", o: ["They cannot afford your services and you should move on", "They want a discount and you should immediately lower your price", "They want value justification — show them your best work and explain the ROI of quality", "They are testing you to see if you will work for free"], c: 2 },
+    { q: "A custom offer should include an 'Exclusions' section because:", o: ["It makes the offer look more professional", "It prevents scope creep by clearly stating what is NOT included — protecting both you and the client", "Clients do not read inclusion lists so exclusions matter more", "It is required by all marketplace platforms"], c: 1 },
+    { q: "The ideal follow-up schedule after sending a custom offer is:", o: ["Follow up every hour until they respond", "24 hours, 3 days, 7 days — with increasingly gentle messages that add value", "Never follow up — if interested they will respond", "Wait exactly 48 hours then send a final ultimatum"], c: 1 },
+    { q: "When a client says 'I have tried other sellers,' your approach should be:", o: ["Criticize those sellers to make yourself look better", "Emphasize your communication process and revision policy — showing how you are different", "Offer a lower price to compensate for their bad luck", "Ask them to name the other sellers so you can report them"], c: 1 },
+    { q: "The biggest mistake in a first response to a client inquiry is:", o: ["Being too friendly", "Sending a generic copy-paste response that ignores their specific project details", "Responding too quickly", "Asking any questions at all"], c: 1 },
+    { q: "A client who says 'Can you do everything?' is signaling:", o: ["They are unreasonable and will be a problem client", "They want a one-stop solution — position Digital Heroes as a full-service agency", "They do not know what they need and should be turned away", "They want the cheapest possible option"], c: 1 },
+    { q: "The pre-sale funnel has 4 stages. The correct order is:", o: ["Price Quote, Negotiation, Order, Delivery", "Inquiry Received, Requirement Gathering, Custom Offer, Follow-Up", "Introduction, Portfolio Sharing, Contract Signing, Payment", "Cold Outreach, Warm-Up, Pitch, Close"], c: 1 },
+    { q: "A client has not responded after 7 days. Your final follow-up should:", o: ["Send an aggressive message demanding a response", "Gracefully close the loop: acknowledge the offer is still available, wish them well, leave the door open", "Keep following up daily until they respond or block you", "Report them to the platform for wasting your time"], c: 1 }
+];
+
+const task12Quiz = [
+    { q: "The #1 reason clients leave negative reviews is:", o: ["Poor quality work", "High prices compared to competitors", "Poor communication during the project — feeling uninformed and ignored", "Slow delivery times"], c: 2 },
+    { q: "The milestone update system includes these stages in order:", o: ["Order Confirmation, Work Started, Progress Preview, Final Review, Delivery", "Start, Middle, End — three updates are sufficient", "Only send updates when the client asks", "Delivery message only"], c: 0 },
+    { q: "An order confirmation message should be sent:", o: ["Within 24 hours of the order", "Only after you have started working", "Within a week of the order", "Within 2 hours of the order — thanking them, confirming scope, and sharing timeline"], c: 3 },
+    { q: "A progress preview message should include:", o: ["Just text saying 'working on it'", "WIP screenshots or partial delivery along with status and timeline confirmation", "A request for additional payment before showing work", "An apology for not being done yet"], c: 1 },
+    { q: "Going silent for more than 24 hours without an update is:", o: ["A major red flag that damages trust and can lead to cancellation or negative reviews", "Acceptable if you are busy", "Normal practice — clients understand sellers are busy", "Only a problem if the client asked for daily updates"], c: 0 },
+    { q: "Setting expectations at order start should include:", o: ["Only the delivery date", "Just the price and a vague delivery estimate", "Deliverables, timeline, revision rounds, communication schedule, and what you need from the client", "A legal contract with terms and conditions"], c: 2 },
+    { q: "Under-promise and over-deliver means:", o: ["Always quote double the time you need", "Set realistic expectations you can consistently exceed — never promise what you cannot guarantee", "Promise less so the client pays less", "Deliberately set low expectations to make average work look better"], c: 1 },
+    { q: "If a client sends 'Any update?' before you proactively updated them, it means:", o: ["They are being impatient", "The client is micromanaging", "This is normal and expected", "You failed at proactive communication — they should never have to chase you"], c: 3 },
+    { q: "Reactive vs proactive communication:", o: ["Proactive means sending updates before the client asks — it builds trust. Reactive means only responding when asked — it creates frustration.", "Reactive is better because you only communicate when necessary", "There is no meaningful difference", "Proactive is only needed for high-value orders"], c: 0 },
+    { q: "Saying 'No problem' to a request that IS a problem is dangerous because:", o: ["It is unprofessional language", "The phrase sounds too casual", "It only applies to face-to-face conversations", "It sets false expectations — if you cannot deliver, the client will be disappointed and scope creep follows"], c: 3 },
+    { q: "The expectation agreement should be confirmed:", o: ["Verbally during a call", "In writing within the order messages at the START of every project", "Only for orders above a certain dollar amount", "After the project is complete"], c: 1 },
+    { q: "A well-communicated project with average work quality will typically receive:", o: ["A 1-2 star review because quality is all that matters", "The same review as a poorly communicated project", "A 4-5 star review because communication makes clients feel valued and respected throughout the process", "No review at all"], c: 2 }
+];
+
+const task13Quiz = [
+    { q: "Scope creep is defined as:", o: ["When a client gradually requests work beyond what was originally agreed, without additional compensation", "Any client feedback or revision request", "When a project takes longer than expected", "When a client asks questions about progress"], c: 0 },
+    { q: "'Can you also add a blog section?' on a 5-page store order is:", o: ["A legitimate revision", "Neither — it depends on the mood of the seller", "Scope creep — a blog section was never part of the original agreement and represents new work", "A reasonable request that should always be free"], c: 2 },
+    { q: "The ACKNOWLEDGE-REDIRECT-OFFER framework works by:", o: ["Immediately saying no and explaining why", "Acknowledging the idea positively, redirecting to the original scope, then offering a paid solution", "Ignoring the request and hoping the client forgets", "Agreeing to do the extra work for free"], c: 1 },
+    { q: "Bug fixes vs revisions: if a feature does not work as specified, fixing it is:", o: ["A revision that counts toward the limit", "Extra work that should be charged separately", "Only your responsibility if the client can prove it", "Your responsibility — bug fixes are NOT revisions. A revision is changing something that works as agreed."], c: 3 },
+    { q: "A client on their 4th revision round when only 2 were included should be told:", o: ["'Sorry, your revisions are used up. No more changes.'", "Using ACKNOWLEDGE-REDIRECT-OFFER: acknowledge their desire for perfection, note the limit, offer additional rounds at a fair price", "Nothing — just do the revisions to avoid a bad review", "'You should have given better feedback the first time'"], c: 1 },
+    { q: "Communicating revision limits BEFORE work begins is important because:", o: ["It makes you look strict", "Clients always try to take advantage without limits", "It is required by marketplace platform policies", "It sets clear expectations preventing frustration and disputes later in the project"], c: 3 },
+    { q: "One revision round means:", o: ["The client sends ALL feedback consolidated, and you implement everything in one batch", "One individual change request", "A maximum of 30 minutes of additional work", "Any change that takes less than 5 minutes"], c: 0 },
+    { q: "When to escalate scope creep to your Project Manager:", o: ["For any scope creep, no matter how small", "Never — chat specialists handle everything themselves", "When the client becomes aggressive, threatens reviews for free work, or additions exceed 30% of order value", "Only when the client asks to speak to a manager"], c: 2 },
+    { q: "'This should be included' from a client requesting extra work should be handled by:", o: ["Agreeing immediately to avoid argument", "Telling them they are wrong", "Giving in to avoid a negative review", "Checking the original agreement together, clarifying what was included, then offering extras as a paid addition"], c: 3 },
+    { q: "The best prevention for scope creep is:", o: ["Never including revision rounds in offers", "A detailed original agreement that explicitly lists both inclusions AND exclusions", "Charging extremely high prices", "Only working with clients who have positive reviews"], c: 1 },
+    { q: "A client says 'While you are at it, can you also redesign the About Us page?' which was not in scope. The correct response is:", o: ["'Sure, I will add it since it is a small page and should not take long'", "'No, that is not included.' and leave it at that", "Use ACKNOWLEDGE-REDIRECT-OFFER: 'Great idea! That was not part of our current project, but I can create a separate order for the About Us redesign. Want me to send you a quote?'", "'I will do it this time, but next time it will cost extra'"], c: 2 },
+    { q: "Which of the following is NOT a sign of scope creep?", o: ["Client asking to change the header color from blue to green", "Client requesting a custom app integration not in the original brief", "Client asking for a new product page type not discussed", "Client wanting a loyalty program feature added to their store"], c: 0 }
+];
+
+const task14Quiz = [
+    { q: "A delivery message that says 'Here is your order' is problematic because:", o: ["It is grammatically correct and fine", "It is too short but otherwise acceptable", "It is lazy and wastes the opportunity to remind the client of the value — reducing the chance of a 5-star review", "Delivery messages do not matter — only work quality counts"], c: 2 },
+    { q: "The delivery message structure should include:", o: ["Warm opening, summary, access instructions, highlights, next steps, future availability, and a polite review request", "Just the files and a download link", "A request for a tip and a 5-star review", "Only technical documentation"], c: 0 },
+    { q: "When is the BEST time to ask for a review?", o: ["In the very first message before work is done", "After sending an invoice for additional work", "Three months after the project is complete", "Immediately after the client expresses genuine satisfaction"], c: 3 },
+    { q: "Highlighting things you are proud of in the delivery message serves to:", o: ["Show off your skills", "Guide the client's attention to the value and quality details they might overlook — framing the work positively", "Fill up space in the message", "Justify your pricing"], c: 1 },
+    { q: "A client says 'Looks good but can you change the font?' Should you ask for a review now?", o: ["Yes — they said it looks good", "Yes — but mention the font change is a revision", "Never ask for reviews", "No — there is an outstanding revision. Complete the change first, confirm full satisfaction, THEN ask"], c: 3 },
+    { q: "Review solicitation that violates platform policies includes:", o: ["Politely asking after the client is satisfied", "Mentioning you would appreciate feedback", "Incentivizing reviews with discounts, threatening consequences, or asking for a specific star rating", "Thanking them and hoping they share their experience"], c: 2 },
+    { q: "A well-crafted delivery message impacts reviews because:", o: ["It creates a final positive impression that shapes how the client remembers the entire experience", "Clients feel obligated to leave a good review if the message is long", "Delivery messages are the only thing clients read before reviewing", "It has no impact"], c: 0 },
+    { q: "The 'Future Value' section of a delivery message should:", o: ["Pressure the client to place another order", "Mention your availability for future work — planting a seed for repeat business without being pushy", "List all your services with full pricing", "Ask the client to refer you to friends"], c: 1 },
+    { q: "When a repeat client does not leave reviews, you should:", o: ["Stop doing good work for them", "Refuse future orders until they review", "Gently mention it without pressure while continuing to over-deliver", "Report them to the platform"], c: 2 },
+    { q: "Including clear access instructions prevents:", o: ["Confusion, follow-up questions, delays in acceptance, and frustration that could affect the review", "Nothing — clients always know how to access deliverables", "The client from accessing files too quickly", "Future communication with the client"], c: 0 },
+    { q: "Which of the following is the WORST way to present a Shopify store delivery?", o: ["Including a video walkthrough showing each page and feature", "Sending only the store URL with no explanation, no walkthrough, and no highlight of what was built", "Providing a checklist of completed features with screenshots", "Writing a summary of the design decisions and why they benefit the client"], c: 1 },
+    { q: "A client receives your delivery and responds with 'This is amazing, exactly what I wanted!' Your next action should be:", o: ["Say 'Thanks!' and close the conversation", "Immediately send an invoice for additional services", "Wait a few days before responding to seem professional", "Thank them warmly, ask if they need anything else, and then politely request a review while the positive feeling is fresh"], c: 3 }
+];
+
+const task15Quiz = [
+    { q: "The Service Recovery Paradox means:", o: ["Problems always result in lost clients", "You should create problems so you can resolve them heroically", "Customers with a well-resolved problem become MORE loyal than those who never had a problem", "Service recovery is impossible once a client is upset"], c: 2 },
+    { q: "When a delivery is going to be late, you should:", o: ["Notify the client BEFORE the deadline with explanation, new timeline, and compensation offer", "Wait until after the deadline to notify", "Deliver silently late and hope they do not notice", "Cancel the order to avoid a negative review"], c: 0 },
+    { q: "The HEARD method stands for:", o: ["Help, Evaluate, Assign, Resolve, Document", "Hear them out, Empathize genuinely, Apologize specifically, Resolve with action, Delight with extra", "Handle, Escalate, Approve, Return, Dismiss", "Halt, Examine, Analyze, Respond, Deliver"], c: 1 },
+    { q: "Saying 'I was busy with other orders' when explaining a delay is bad because:", o: ["It is honest and clients appreciate honesty", "Clients do not care about reasons", "It reveals confidential business information", "It makes the client feel unimportant — like they are just one of many"], c: 3 },
+    { q: "A client demands a FULL refund but significant work was completed. The best first step is:", o: ["Process the full refund immediately", "Offer to make things right first — ask what specifically is not meeting expectations and commit to fixing it", "Refuse any refund since work was completed", "Threaten to report them for trying to get free work"], c: 1 },
+    { q: "'Calm down' is a de-escalation phrase that:", o: ["Works well because it addresses their emotional state", "Is appropriate only in written chat", "Should be used sparingly with difficult clients", "Should NEVER be used — it minimizes feelings, sounds condescending, and escalates the situation"], c: 3 },
+    { q: "'What I CAN do for you is...' is powerful because:", o: ["It shifts from limitations to solutions — showing what IS possible instead of what is not", "It sounds corporate and professional", "It avoids the word 'unfortunately'", "It is required by the DH communication SOP"], c: 0 },
+    { q: "When you made a mistake affecting a client, the correct sequence is:", o: ["Blame the system, apologize vaguely, hope they do not escalate", "Cover it up and handle it behind the scenes", "Own it immediately, apologize genuinely, fix it fast, add a goodwill gesture", "Wait to see if they notice"], c: 2 },
+    { q: "A client says 'THIS IS NOT WHAT I ASKED FOR.' Before responding, you should:", o: ["Immediately defend your work", "Ask the client to calm down", "Offer a full refund without discussion", "Review the original requirements, compare with delivery, then respond using the HEARD method — leading with empathy"], c: 3 },
+    { q: "Multiple de-escalation techniques combined in one response creates:", o: ["A powerful resolution addressing emotions, acknowledging the problem, proposing solutions, and adding a bonus", "A confusing and overly long message", "An insincere-sounding script", "Too much effort for a single complaint"], c: 0 },
+    { q: "A refund request where the client seems to want free work should be:", o: ["Granted immediately to avoid confrontation", "Ignored until the client gives up", "Handled by standing firm politely, documenting everything, and escalating to PM if needed", "Responded to with an accusation of fraud"], c: 2 },
+    { q: "The proactive delay notification should include all EXCEPT:", o: ["An acknowledgment of the timeline change", "Blaming the client for causing the delay — even if true, blame damages the relationship", "A specific new delivery date", "A compensation offer for the inconvenience"], c: 1 }
+];
+
+const task16Quiz = [
+    { q: "At Digital Heroes, the minimum acceptable average seller rating is:", o: ["3.5 stars", "4.0 stars", "4.8+ stars — a non-negotiable KPI affecting search ranking, conversion, and platform trust", "5.0 stars"], c: 2 },
+    { q: "The over-delivery strategy works because:", o: ["Clients expect bonuses and will be disappointed without them", "Small unexpected extras create disproportionate goodwill — generating enthusiastic reviews and repeat business", "Over-delivering is required by marketplace platforms", "It justifies charging higher prices"], c: 1 },
+    { q: "When responding publicly to a negative review, you should:", o: ["Thank them, acknowledge the issue, explain briefly, state what you improved, and invite them back", "Argue your side forcefully", "Ignore it — responding draws more attention", "Ask the client to remove the review"], c: 0 },
+    { q: "The best defense against negative reviews is:", o: ["Only accepting orders from clients with positive histories", "Offering discounts in exchange for not leaving reviews", "Working only on small, low-risk projects", "Proactive communication throughout — catching and resolving issues before they become reviews"], c: 3 },
+    { q: "Asking a client to remove a negative review is:", o: ["Standard practice", "Acceptable if you offer a free revision", "Against most platform policies and can result in penalties", "The only way to maintain a high rating"], c: 2 },
+    { q: "The review earning checklist requires confirming BEFORE asking:", o: ["Only that the order was delivered on time", "All deliverables complete, client satisfied, no outstanding issues, on-time delivery, proactive communication, and extra value", "That the client has purchased from you twice before", "Only that the client seems happy"], c: 1 },
+    { q: "When you sense client dissatisfaction during a project, you should:", o: ["Wait and see if it resolves after delivery", "Speed up delivery to get it over with", "Lower your expectations for the review", "Proactively ask 'I want to make sure you are 100% happy. What can I improve?'"], c: 3 },
+    { q: "A 3-star review saying 'Communication was slow' — your public response should:", o: ["Thank them, acknowledge communication gaps, explain improvements made, invite them to experience the change", "Defend yourself with message timestamps", "Argue that 3 stars is unfair for the quality", "Ignore it — 3 stars is not bad enough"], c: 0 },
+    { q: "Over-delivery examples for a Shopify store include:", o: ["Delivering 2 days late but with extra pages", "Charging less than quoted", "Free speed optimization, extra social media banner, SEO checklist — small bonuses that delight", "Sending links to competitor websites"], c: 2 },
+    { q: "A seller rating dropping below 4.5 results in:", o: ["No significant impact", "Severe drop in orders, reduced visibility, possible platform demotion — recovery takes months", "Temporary reduced visibility for one week", "Automatic account suspension"], c: 1 },
+    { q: "A client leaves a 4-star review saying 'Great work, just wish there were more revisions included.' Which response is best?", o: ["'We include a generous number of revisions in every package.'", "'If you wanted more revisions, you should have purchased a higher tier.'", "'Thank you for the kind words! We appreciate your feedback and have expanded our revision options. We would love to work with you again!'", "'4 stars is unfair when you rated the work as great.'"], c: 2 },
+    { q: "Which of the following is NOT an effective over-delivery strategy?", o: ["Including a quick how-to video showing the client how to update their store", "Providing a free SEO audit checklist with the delivery", "Delivering the project 3 days late but adding an unrequested feature as compensation", "Adding a mobile-responsive social media banner at no charge"], c: 2 }
+];
+
+const task17Quiz = [
+    { q: "The DH Chat Career Ladder goes up to:", o: ["L3 — Senior Chat Specialist is the highest", "L10 — there are 10 levels", "L2 — Chat Specialist is the only promotion", "L5 — Account Manager / Team Lead, requiring 18+ months and proven leadership"], c: 3 },
+    { q: "The target First Response Time KPI is:", o: ["Under 60 seconds — directly correlates with conversion rate", "Under 5 minutes", "Under 30 minutes", "Under 10 seconds"], c: 0 },
+    { q: "A Repeat Client Rate of 30%+ indicates:", o: ["You are giving too many discounts", "You are not attracting enough new clients", "Strong relationship-building ability — clients trust you enough to return", "Average performance"], c: 2 },
+    { q: "The Pre-Sales Specialist track focuses on:", o: ["Handling the most difficult complaints", "Converting inquiries into orders — a high-value skill that generates revenue", "Reviewing chat transcripts for QA", "Training new chat agents"], c: 1 },
+    { q: "The 4 hrs/week learning hours should be used for:", o: ["Catching up on work tasks", "Browsing social media", "Only company-assigned training modules", "Courses on negotiation, communication psychology, and client management"], c: 3 },
+    { q: "A 'win journal' helps career growth by:", o: ["Documenting best interactions and what made them work — creating a personal playbook of proven techniques", "Providing evidence for salary negotiations only", "Tracking the number of chats per day", "Recording client complaints for legal protection"], c: 0 },
+    { q: "Volunteering for difficult cases accelerates growth because:", o: ["It makes you look good to management without developing skills", "It increases chat volume numbers", "Difficult cases force you to apply multiple skills under pressure — where growth happens fastest", "Difficult cases pay more money"], c: 2 },
+    { q: "The Resolution Rate KPI target of 85%+ measures:", o: ["How many chats you close within 60 seconds", "First-contact resolution — solving the issue without needing to escalate or follow up", "Percentage of orders delivered on time", "How many clients you convert from inquiry to purchase"], c: 1 },
+    { q: "To advance from L2 to L3, you need:", o: ["1 month of experience and passing the certification", "Management recommendation only", "A perfect 5.0 star rating", "6 months experience, ability to mentor new agents, and handling escalations"], c: 3 },
+    { q: "Building a personal brand within DH means:", o: ["Consistent excellence, mentoring others, studying communication psychology — your reputation opens doors", "Marketing yourself on social media separately from the company", "Having a personal website with chat statistics", "Negotiating a unique title"], c: 0 },
+    { q: "The Conversion Rate KPI target of 20%+ measures:", o: ["How many chats you respond to within 20 seconds", "The percentage of chat inquiries that result in a placed order — a direct revenue metric", "How quickly you close conversations", "The percentage of clients who leave 5-star reviews"], c: 1 },
+    { q: "The Client Success Manager specialization track is best suited for someone who:", o: ["Prefers handling only pre-sale inquiries and avoids post-sale support", "Wants to own entire client relationships from first contact through delivery, reviews, and repeat business", "Is only interested in technical troubleshooting", "Wants to avoid client-facing work and focus on analytics"], c: 1 },
+    { q: "Which of the following is NOT one of the DH Chat specialization tracks?", o: ["Pre-Sales Specialist", "Escalation Expert", "Social Media Marketing Manager", "Quality Assurance"], c: 2 },
+    { q: "The L4 Client Success Lead role requires approximately how many months of experience?", o: ["3 months", "6 months", "12 months with end-to-end client relationship management skills", "24 months minimum"], c: 2 },
+    { q: "A chat specialist who consistently hits all KPI targets but never mentors others or volunteers for escalations is MOST likely stuck at:", o: ["L1 — they have not completed certification", "L2 — strong individual performance but lacking the leadership and mentoring required for L3 and above", "L4 — they are already at a senior level", "L5 — individual performance is all that matters for advancement"], c: 1 }
+];
+
+const task18Quiz = [
+    { q: "Applying Tasks 4 and 11: A client sends 'I need a Shopify store but not sure what I need.' Your response should:", o: ["Send a generic portfolio link", "Quote your cheapest package", "Match their uncertain tone with warmth (tonality), use the GREET framework, ask discovery questions — combining multiple modules", "Tell them to figure it out and come back later"], c: 2 },
+    { q: "Applying Tasks 12 and 13: Mid-project, a client asks for 5 extra pages not in scope. You should:", o: ["Acknowledge positively, reference original scope (Task 12), use ACKNOWLEDGE-REDIRECT-OFFER (Task 13) to offer a paid solution", "Add them for free to protect your review", "Tell them 'that is not included' and refuse", "Silently add them and hope for a tip"], c: 0 },
+    { q: "Applying Tasks 12 and 15: Delivery will be 2 days late. You should:", o: ["Deliver silently late and apologize if noticed", "Request a deadline extension through the platform only", "Rush and deliver poor quality on time", "Proactively notify BEFORE deadline (Task 12) using delay notification framework (Task 15) with explanation, new date, and compensation"], c: 3 },
+    { q: "Applying Tasks 9 and 15: Client says 'THIS IS NOT WHAT I ASKED FOR! Refund NOW!' You should:", o: ["Process the refund immediately", "Apply HEARD method (Task 15) with empathy and de-escalation (Task 9): hear out, empathize, apologize, propose fixes, offer bonus", "Defend your work by listing everything delivered", "Tell them to calm down and review the agreement"], c: 1 },
+    { q: "Applying Tasks 7 and 16: After resolving a complaint successfully, you should:", o: ["End the conversation immediately", "Send a review request before the conversation ends", "Offer a permanent discount on all future orders", "Leverage goodwill with a closing opportunity (Task 7) and work toward protecting the review (Task 16)"], c: 3 },
+    { q: "Combining all 17 modules, the elite DH Chat Specialist is defined by:", o: ["Lightning response, human warmth, requirement gathering, expectation management, scope boundaries, compelling deliveries, crisis composure, review management, and career leadership", "Perfect typing speed and grammar above all", "Years of experience only", "Highest chat volume numbers"], c: 0 },
+    { q: "Scope creep (Task 13) combined with difficult conversations (Task 15) is handled by:", o: ["Always giving in to avoid conflict", "Refusing all changes and escalating every dispute", "Using ACKNOWLEDGE-REDIRECT-OFFER for scope issues and HEARD method if client becomes upset — boundaries while preserving relationship", "Canceling the order to avoid stress"], c: 2 },
+    { q: "The DH Client Chat Certification proves mastery of:", o: ["Basic typing skills and product knowledge only", "Chat platform technical skills only", "Company policies and attendance rules only", "The complete client communication lifecycle — from first inquiry through delivery, review management, and career planning"], c: 3 },
+    { q: "After earning certification, your most important next step (Task 17) is:", o: ["Relax and coast on the credential", "Create a development plan with KPI targets, choose a specialization, start mentoring — certification is the beginning, not the end", "Immediately apply for management", "Stop learning since training is complete"], c: 1 },
+    { q: "The #1 revenue killer in client chat, combining insights from all modules, is:", o: ["Slow response times alone", "Poor product knowledge alone", "Answering questions without closing, poor communication during orders, and failing to manage reviews — the complete chain of missed opportunities", "Bad grammar in messages"], c: 2 }
 ];
 
 // Expose all content and quiz variables to window for app lookup
@@ -1065,6 +1647,13 @@ window.task8Content = task8Content;
 window.task9Content = task9Content;
 window.task10Content = task10Content;
 window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -1076,6 +1665,13 @@ window.task8Quiz = task8Quiz;
 window.task9Quiz = task9Quiz;
 window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
+window.task12Quiz = task12Quiz;
+window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -1088,5 +1684,12 @@ const allQuizzes = [
     task8Quiz,
     task9Quiz,
     task10Quiz,
-    task11Quiz
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];

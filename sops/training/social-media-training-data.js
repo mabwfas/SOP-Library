@@ -11,7 +11,14 @@ const trainingTasks = [
     { id: 8, title: "Analytics & Insights", description: "Data-Driven Decisions", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📊 Metrics that matter", "📖 Study analytics tools"] },
     { id: 9, title: "Content Scheduling", description: "Consistency is Key", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "📅 Scheduling tools", "📖 Study posting times"] },
     { id: 10, title: "Trend Riding", description: "Viral Opportunities", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "🔥 Trend spotting", "📖 Study trend examples"] },
-    { id: 11, title: "Final Certification", description: "Social Media Mastery", contentFirst: false, studyGuide: ["⏱️ Time: 60 min", "📝 30 Questions"] }
+    { id: 11, title: "Crisis Management", description: "Handling PR & Negative Feedback", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🚨 Crisis response protocols", "📖 Study reputation management"] },
+    { id: 12, title: "Agency Brand Building", description: "LinkedIn, Instagram & Employer Branding", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🏢 Agency brand strategy", "📖 Study portfolio showcasing"] },
+    { id: 13, title: "Paid Advertising", description: "Facebook Ads, Google Ads & ROAS", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "💰 Ad campaign management", "📖 Study budget optimization"] },
+    { id: 14, title: "Client SM Delivery", description: "Managing Client Accounts & Workflows", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🤝 Client content calendars", "📖 Study approval workflows"] },
+    { id: 15, title: "Analytics & ROI", description: "UTM Tracking & Conversion Reports", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📈 ROI reporting", "📖 Study attribution models"] },
+    { id: 16, title: "Video & Reels Strategy", description: "Short-Form Video & Hooks", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🎬 Video content creation", "📖 Study trending formats"] },
+    { id: 17, title: "Career Growth", description: "SM Career Path & Specialization", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🚀 Career advancement", "📖 Study certification paths"] },
+    { id: 18, title: "Final Certification", description: "Social Media Mastery Exam", contentFirst: false, studyGuide: ["⏱️ Time: 60 min", "📝 30 Questions"] }
 ];
 
 
@@ -536,13 +543,52 @@ const task10Content = `<h2>📚 TASK 9: TREND RIDING</h2>
     </div>
 </div>`;
 
-const task11Content = `<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
+const task18Content = `<h2>🎓 TASK 18: FINAL CERTIFICATION — Social Media Mastery Exam</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🏆 Congratulations — You Have Reached the Final Exam</h3>
+    <p>You have completed all 17 training modules covering social media strategy, content creation, paid advertising, client delivery, analytics, video strategy, and career growth. This final certification exam tests your comprehensive understanding across ALL modules.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">📋 Exam Structure:</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(245, 158, 11, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Component</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Details</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Total Questions</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">30 comprehensive questions</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Topics Covered</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">All 17 modules — mindset through career growth</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Passing Score</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">90% (27/30 correct)</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Certificate</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Digital Heroes Social Media Certification</td></tr>
+        </table>
+    </div>
+</div>
+
 <div class="content-section">
-    <h3>🎓 Requirements</h3>
+    <h3>📝 Review Checklist Before Starting</h3>
     <ul>
-        <li>✅ Score 28/30 on quiz</li>
-        <li>✅ Create 1-week content calendar</li>
-        <li>✅ Design 3 sample posts (different formats)</li>
+        <li>✅ <strong>Task 1-2:</strong> Company culture, social media mindset, content pillars, 80/20 rule</li>
+        <li>✅ <strong>Task 3-4:</strong> Platform mastery (Instagram, Facebook, LinkedIn, YouTube), content types and caption formulas</li>
+        <li>✅ <strong>Task 5-6:</strong> Visual design principles, hashtag strategy and mix formula</li>
+        <li>✅ <strong>Task 7-8:</strong> Community management, engagement rules, analytics metrics</li>
+        <li>✅ <strong>Task 9-10:</strong> Content scheduling, posting frequency, trend riding</li>
+        <li>✅ <strong>Task 11:</strong> Crisis management and reputation recovery</li>
+        <li>✅ <strong>Task 12:</strong> Agency brand building on LinkedIn and Instagram</li>
+        <li>✅ <strong>Task 13:</strong> Paid advertising, Facebook Ads, Google Ads, ROAS</li>
+        <li>✅ <strong>Task 14:</strong> Client social media delivery and approval workflows</li>
+        <li>✅ <strong>Task 15:</strong> Analytics, UTM tracking, ROI reporting</li>
+        <li>✅ <strong>Task 16:</strong> Video content, Reels strategy, hooks and trending formats</li>
+        <li>✅ <strong>Task 17:</strong> Career growth, specialization, and professional development</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">⚠️ Important Notes</h3>
+    <ul>
+        <li>You must pass with <strong>90% or higher</strong> to receive your certification</li>
+        <li>Failed attempts can be retried after reviewing the relevant modules</li>
+        <li>Your certificate includes a unique verification code linked to your name</li>
+        <li>This certification is recognized within Digital Heroes and can be added to your portfolio</li>
     </ul>
 </div>`;
 
@@ -719,7 +765,1112 @@ const task10Quiz = [
     { q: "When a trend doesn't fit your brand at all, the best decision is:", o: ["Force it to work because FOMO — this reflects the standard operating procedure most organizations follow", "Skip it confidently — not every trend deserves your participation, authenticity matters more than chasing every hype", "Create a minimum-effort version anyway — this reflects the standard operating procedure most organizations follow", "Criticize the trend publicly to stand out — this reflects the standard operating procedure most organizations follow"], c: 1 }
 ];
 
+// =============================================================================
+// TASK 11: CRISIS MANAGEMENT & REPUTATION RECOVERY
+// =============================================================================
+
+const task11Content = `<h2>🚨 TASK 11: CRISIS MANAGEMENT — Handling PR Issues & Negative Feedback</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.15)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 Why Crisis Management Matters</h3>
+    <p>In social media, a single negative comment can snowball into a full-blown PR crisis within hours. As a social media professional at Digital Heroes, you are the <strong>first line of defense</strong> against brand reputation damage. How you respond in the first 60 minutes determines whether a situation is resolved or escalates.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ The Golden Hour Rule:</strong>
+        <p style="margin: 10px 0 0 0;">You have <strong>60 minutes</strong> from the first negative mention to acknowledge and begin responding. After that, the narrative is shaped by others, not you. Every hour of silence doubles the reputational risk.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Crisis Severity Levels</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Level</th>
+            <th style="padding: 12px;">Description</th>
+            <th style="padding: 12px;">Examples</th>
+            <th style="padding: 12px;">Response Time</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #34D399;">Level 1 — Low</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Individual complaint, minor error</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Typo in post, wrong link, minor customer complaint</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Within 1 hour</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #FBBF24;">Level 2 — Medium</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Multiple complaints, negative trend forming</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Service outage complaints, negative review thread, insensitive content backlash</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Within 30 minutes</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong style="color: #EF4444;">Level 3 — High</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Viral negative attention, media pickup</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Data breach rumor, offensive post going viral, influencer calling out brand</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Within 15 minutes — escalate to management immediately</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🛡️ The 5-Step Crisis Response Framework</h3>
+    <ol>
+        <li><strong>ACKNOWLEDGE</strong> — Respond publicly within the Golden Hour. Show you are aware and taking it seriously. Never ignore or delete legitimate complaints.</li>
+        <li><strong>ASSESS</strong> — Determine severity level. Is it a single complaint or a pattern? Is it factually accurate? Gather all information before making statements.</li>
+        <li><strong>ALIGN</strong> — Loop in your manager/PM immediately for Level 2+. Get approval on the response before posting. Never go rogue on crisis communication.</li>
+        <li><strong>ADDRESS</strong> — Provide a genuine, empathetic response. Own mistakes if they happened. Offer a concrete resolution. Move detailed conversations to DMs.</li>
+        <li><strong>ANALYZE</strong> — After resolution, document what happened, what was done, and how to prevent it. Update the crisis playbook with lessons learned.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>💬 Response Templates by Scenario</h3>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">Negative Review:</strong>
+        <p style="margin: 10px 0 0 0;">"Thank you for sharing your experience, [Name]. We take this feedback seriously and want to make this right. Could you DM us the details so we can look into this personally?"</p>
+    </div>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">Service Complaint:</strong>
+        <p style="margin: 10px 0 0 0;">"We hear you, [Name], and we apologize for the inconvenience. Our team is actively working on resolving this. We will update you within [timeframe]."</p>
+    </div>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">Brand Mistake:</strong>
+        <p style="margin: 10px 0 0 0;">"We made an error and we own it. [Brief explanation]. We have taken immediate steps to correct this and ensure it does not happen again. We appreciate your patience."</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🚫 What NEVER to Do During a Crisis</h3>
+    <ul>
+        <li><strong>Never delete legitimate negative comments</strong> — This makes the situation worse and signals guilt. Only delete spam, profanity, or hate speech.</li>
+        <li><strong>Never argue publicly</strong> — Stay professional. Take heated conversations to private messages.</li>
+        <li><strong>Never blame the customer</strong> — Even if they are wrong, empathize first. "We understand your frustration" goes a long way.</li>
+        <li><strong>Never go silent</strong> — Silence is interpreted as not caring. Acknowledge even if you do not have a solution yet.</li>
+        <li><strong>Never make promises you cannot keep</strong> — Only commit to what you can deliver. Overpromising damages trust further.</li>
+        <li><strong>Never post unrelated content during a crisis</strong> — Pause scheduled posts until the situation is resolved.</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔄 Reputation Recovery Strategy</h3>
+    <p>After a crisis is resolved, rebuilding trust requires consistent, deliberate effort over 4-8 weeks:</p>
+    <ul>
+        <li><strong>Week 1-2:</strong> Increase positive content frequency. Share testimonials and success stories. Respond to every single comment with extra care.</li>
+        <li><strong>Week 3-4:</strong> Launch a community engagement campaign. Ask for user-generated content. Feature client wins prominently.</li>
+        <li><strong>Week 5-8:</strong> Monitor sentiment metrics. Gradually return to normal posting cadence. Conduct a full post-mortem review.</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">Pro Tip:</strong> A well-handled crisis often builds MORE trust than no crisis at all. Audiences respect brands that own mistakes and fix them transparently.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Monitoring Tools & Setup</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Tool</th>
+            <th style="padding: 12px;">Purpose</th>
+            <th style="padding: 12px;">Setup</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Google Alerts</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand mention monitoring</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Set alerts for brand name, common misspellings, key personnel names</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Social Listening</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Real-time sentiment tracking</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Monitor brand hashtags, @mentions, keywords across platforms</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Review Platforms</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client satisfaction tracking</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check marketplace reviews, Google Reviews, Trustpilot daily</td>
+        </tr>
+    </table>
+</div>`;
+
 const task11Quiz = [
+    { q: "The 'Golden Hour Rule' in crisis management states that you should respond within:", o: ["24 hours to allow time for a thorough investigation", "60 minutes — after that, the narrative is shaped by others", "1 week, ensuring legal review of the response", "Only after management approves — timing does not matter"], c: 1 },
+    { q: "A client leaves a negative review on the marketplace accusing Digital Heroes of poor work quality. The correct first step is:", o: ["Delete the review immediately to protect the brand", "Argue publicly with facts proving the client is wrong", "Acknowledge the feedback publicly, empathize, and invite them to DM for resolution", "Ignore it — one bad review does not matter"], c: 2 },
+    { q: "During a Level 3 crisis (viral negative attention), what should you do FIRST?", o: ["Draft a detailed public statement and post it immediately", "Escalate to management within 15 minutes and pause scheduled content", "Delete all social media posts until the situation calms down", "Post positive content to drown out the negative attention"], c: 1 },
+    { q: "A scheduled promotional post is queued during an active crisis. You should:", o: ["Let it post as scheduled — consistency matters", "Add a disclaimer to the promotional post", "Pause ALL scheduled posts until the crisis is resolved", "Speed up the posting schedule to distract from the crisis"], c: 2 },
+    { q: "Someone posts hateful slurs in your comment section. According to crisis management guidelines, you should:", o: ["Respond publicly explaining why the comment is wrong", "Delete it — hate speech, spam, and profanity are the exceptions to the no-delete rule", "Ignore it and let followers defend the brand", "Screenshot it and post about it for sympathy engagement"], c: 1 },
+    { q: "The 5-Step Crisis Response Framework begins with:", o: ["Address — immediately provide a detailed public response", "Analyze — conduct a full investigation before any communication", "Acknowledge — respond publicly to show you are aware and taking it seriously", "Align — get legal approval before any public acknowledgment"], c: 2 },
+    { q: "After a crisis is resolved, reputation recovery typically requires:", o: ["No special action — audiences forget quickly", "4-8 weeks of consistent positive content, testimonials, and community engagement", "A single apology post is sufficient", "Changing the brand name and starting fresh on social media"], c: 1 },
+    { q: "A well-handled crisis can actually result in:", o: ["Permanent brand damage regardless of the response quality", "MORE trust than no crisis at all — audiences respect transparency and accountability", "No measurable difference in brand perception", "Immediate follower growth due to viral attention"], c: 1 },
+    { q: "Which monitoring tool should be set up for brand mention tracking?", o: ["Only Instagram Insights — other tools are unnecessary", "Google Alerts with brand name, misspellings, and key personnel names", "Facebook Page likes tracker only", "No tools needed — negative mentions will be reported by followers"], c: 1 },
+    { q: "When responding to a negative review, the phrase 'We understand your frustration' is used because:", o: ["It is a required legal disclaimer for public responses", "Empathy diffuses tension — even if the customer is wrong, acknowledging feelings first builds rapport", "It avoids admitting fault legally", "It buys time while you prepare the real response"], c: 1 },
+    { q: "Multiple customers are complaining about the same issue on social media. This is classified as:", o: ["Level 1 — Low (treat each complaint individually)", "Level 2 — Medium (negative trend forming, respond within 30 minutes)", "Not a crisis — customer complaints are normal", "Level 3 — High (only if media picks it up)"], c: 1 },
+    { q: "Deleting legitimate negative comments during a crisis will:", o: ["Quickly resolve the situation by removing evidence", "Make the situation worse — it signals guilt and often triggers screenshots and backlash", "Only affect that one comment without broader impact", "Be acceptable if you replace it with a positive review"], c: 1 }
+];
+
+// =============================================================================
+// TASK 12: AGENCY BRAND BUILDING
+// =============================================================================
+
+const task12Content = `<h2>🏢 TASK 12: AGENCY BRAND BUILDING — LinkedIn, Instagram & Employer Branding</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Why Agency Branding is Your Superpower</h3>
+    <p>Digital Heroes is not just another agency — we are building a <strong>world-class digital brand</strong>. Your social media work directly impacts how potential clients, partners, and future team members perceive us. Strong agency branding reduces client acquisition costs, attracts top talent, and commands premium pricing.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">📊 The Brand Impact Numbers:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Companies with strong employer brands see <strong>50% more qualified applicants</strong></li>
+            <li>B2B buyers are <strong>5x more likely</strong> to engage with a company that has a robust LinkedIn presence</li>
+            <li>Agency portfolio posts generate <strong>3x more inbound inquiries</strong> than generic promotional content</li>
+            <li>Employee advocacy posts get <strong>8x more engagement</strong> than brand page posts</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💼 LinkedIn Strategy for Digital Heroes</h3>
+    <p>LinkedIn is the primary B2B channel for Digital Heroes. Here is the content strategy breakdown:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Content Type</th>
+            <th style="padding: 12px;">Frequency</th>
+            <th style="padding: 12px;">Purpose</th>
+            <th style="padding: 12px;">Example</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Case Studies</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2x/month</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Demonstrate expertise</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"How we increased a Shopify store revenue by 340% in 90 days"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Team Spotlights</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Weekly</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Employer branding</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Meet [Name], our Shopify expert who just completed her 50th store launch"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Industry Insights</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3x/week</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Thought leadership</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"5 Shopify trends that will define e-commerce in 2026"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Culture Posts</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2x/week</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Attract talent</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Team outing photos, birthday celebrations, learning sessions</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(219, 39, 119, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #EC4899; margin-top: 0;">📸 Instagram Brand Strategy</h3>
+    <p>Instagram for Digital Heroes serves two purposes: <strong>attracting clients</strong> through portfolio work and <strong>attracting talent</strong> through culture content.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <strong style="color: #EC4899;">Instagram Content Split:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li><strong>40% Portfolio</strong> — Before/after store designs, Shopify store showcases, WordPress builds, design work</li>
+            <li><strong>25% Education</strong> — Tips, carousels on e-commerce topics, Shopify hacks</li>
+            <li><strong>20% Culture</strong> — Team photos, behind-the-scenes, office life, offsites</li>
+            <li><strong>15% Engagement</strong> — Polls, Q&As, memes, interactive content</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Portfolio Showcasing Best Practices</h3>
+    <ul>
+        <li><strong>Before/After Format:</strong> Show the client's old site vs. the Digital Heroes redesign — this is the highest-performing portfolio content format</li>
+        <li><strong>Process Stories:</strong> Document the design and development process from wireframe to launch using Instagram Stories</li>
+        <li><strong>Client Testimonial Videos:</strong> Short video clips of clients sharing their experience — more credible than text reviews</li>
+        <li><strong>Results-Focused Captions:</strong> Always include measurable outcomes: revenue increase, conversion rate improvement, traffic growth</li>
+        <li><strong>Consistent Template:</strong> Use branded templates for portfolio posts so they are instantly recognizable in the feed</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>👥 Employer Branding Framework</h3>
+    <p>Employer branding is about making Digital Heroes the place top talent WANTS to work. This is critical for scaling the team:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Pillar</th>
+            <th style="padding: 12px;">Content Ideas</th>
+            <th style="padding: 12px;">Platform</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Growth Culture</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Learning sessions, certifications achieved, promotion stories</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">LinkedIn + Instagram</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Team Bonding</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offsite trips, celebrations, team lunches, birthday posts</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Instagram Stories + Reels</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Innovation</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New tools adopted, process improvements, tech stack highlights</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">LinkedIn Articles</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Values in Action</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Equity model explanation, client success stories, community work</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">LinkedIn + Instagram Carousels</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🔑 Employee Advocacy Program</h3>
+    <p>Employee advocacy amplifies reach by 561% compared to brand channels alone. Here is how to implement it at Digital Heroes:</p>
+    <ol>
+        <li><strong>Content Library:</strong> Create a shared folder of pre-approved posts team members can share on their personal LinkedIn</li>
+        <li><strong>Engagement Pods:</strong> Team members like and comment on company posts within 30 minutes of publishing</li>
+        <li><strong>Personal Branding Coaching:</strong> Help team members build their own LinkedIn presence — their growth reflects on Digital Heroes</li>
+        <li><strong>Recognition Program:</strong> Feature team members who actively share and engage with company content</li>
+    </ol>
+</div>`;
+
+const task12Quiz = [
+    { q: "What percentage of a Digital Heroes Instagram feed should be portfolio content?", o: ["40% — showcasing Shopify stores, WordPress builds, and design work", "80% — portfolio should dominate to attract clients", "10% — most content should be engagement-focused", "Only post portfolio content on LinkedIn, never Instagram"], c: 0 },
+    { q: "Employee advocacy posts get how much more engagement compared to brand page posts?", o: ["2x more engagement", "Same engagement as brand posts", "8x more engagement — personal profiles have stronger reach", "Less engagement because personal profiles have fewer followers"], c: 2 },
+    { q: "The most effective portfolio content format on Instagram is:", o: ["A text-only post describing the project outcomes", "Before/after format showing the client's old site vs. Digital Heroes redesign", "A link to the live website without any visuals", "A long video walkthrough of every single page"], c: 1 },
+    { q: "LinkedIn content for a B2B agency like Digital Heroes should prioritize:", o: ["Dance Reels and trending audio for maximum engagement", "Case studies, team spotlights, industry insights, and culture posts", "Only job postings and hiring announcements", "Personal opinions on politics and current events"], c: 1 },
+    { q: "How often should case studies be posted on LinkedIn for Digital Heroes?", o: ["Daily — one case study per day for maximum visibility", "2x per month — quality case studies with measurable results", "Once per quarter — case studies take too long to produce", "Never — case studies reveal client secrets"], c: 1 },
+    { q: "Strong employer branding results in:", o: ["50% more qualified job applicants and lower talent acquisition costs", "No measurable impact on hiring quality", "Only benefiting large corporations, not agencies", "Higher salary expectations from candidates making it counterproductive"], c: 0 },
+    { q: "When posting portfolio work, captions should always include:", o: ["Only the client's name and industry", "Measurable outcomes like revenue increase, conversion improvement, and traffic growth", "The exact price the client paid for the project", "Generic statements like 'Another great project completed'"], c: 1 },
+    { q: "The employer branding content pillar 'Values in Action' includes:", o: ["Only posting the company mission statement repeatedly", "Equity model explanation, client success stories, and community work showing company values", "Criticizing competitors who have worse values", "Sharing internal salary information publicly"], c: 1 },
+    { q: "An engagement pod at Digital Heroes means:", o: ["Buying fake engagement through paid services", "Team members like and comment on company posts within 30 minutes of publishing", "Only executives are allowed to engage with company content", "Automated bots commenting on all posts"], c: 1 },
+    { q: "For Instagram Stories showcasing agency culture, the best approach is:", o: ["Only post perfectly polished, professionally shot content", "Share authentic behind-the-scenes moments — team outings, office life, celebrations", "Post the same culture content as LinkedIn word-for-word", "Never show team members' faces due to privacy concerns"], c: 1 },
+    { q: "Client testimonial videos are more effective than text reviews because:", o: ["Videos get more likes than text posts", "Video testimonials feel more credible and authentic — viewers can see real emotion and sincerity", "Text reviews are no longer supported on social media platforms", "Videos are easier to produce than writing text reviews"], c: 1 },
+    { q: "B2B buyers are how much more likely to engage with a company that has a robust LinkedIn presence?", o: ["2x more likely", "No difference — B2B buyers do not use LinkedIn for research", "5x more likely to engage with companies that have strong LinkedIn presence", "10x more likely but only for tech companies"], c: 2 }
+];
+
+// =============================================================================
+// TASK 13: PAID ADVERTISING & CAMPAIGN MANAGEMENT
+// =============================================================================
+
+const task13Content = `<h2>💰 TASK 13: PAID ADVERTISING — Facebook Ads, Google Ads & Budget Optimization</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">💰 Why Paid Advertising Matters for Digital Heroes</h3>
+    <p>Organic reach alone will not scale Digital Heroes to its Point B target of ₹75 Crores by 2027. Paid advertising is the <strong>accelerator</strong> that amplifies organic efforts. As a social media professional, understanding paid advertising allows you to offer a complete service — both to Digital Heroes and to clients who need social media management.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F59E0B; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">📊 Key Terms You Must Know:</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(245, 158, 11, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Term</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Definition</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>ROAS</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Return on Ad Spend — Revenue generated per rupee/dollar spent on ads</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>CPC</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Cost Per Click — What you pay each time someone clicks your ad</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>CPM</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Cost Per Mille — Cost per 1,000 impressions</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>CTR</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Click-Through Rate — Percentage of people who click after seeing the ad</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>CPA</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Cost Per Acquisition — Total cost to acquire one customer</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Conversion Rate</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Percentage of clickers who complete the desired action</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📱 Facebook & Instagram Ads (Meta Ads Manager)</h3>
+    <p>Meta Ads Manager powers both Facebook and Instagram advertising. Here is the campaign structure you need to master:</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">Campaign Structure Hierarchy:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li><strong>Campaign Level:</strong> Set your objective (Awareness, Traffic, Engagement, Leads, Conversions)</li>
+            <li><strong>Ad Set Level:</strong> Define audience, placement, budget, and schedule</li>
+            <li><strong>Ad Level:</strong> Create the actual creative — image/video, copy, CTA button</li>
+        </ul>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Objective</th>
+            <th style="padding: 12px;">Best For</th>
+            <th style="padding: 12px;">KPI</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Awareness</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New brand launch, reaching new audiences</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reach, Impressions, CPM</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Traffic</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Driving visitors to website or landing page</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CPC, CTR, Landing Page Views</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Leads</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Collecting contact info, form submissions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cost Per Lead, Lead Quality Score</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Conversions</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sales, sign-ups, purchases</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ROAS, CPA, Conversion Rate</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🎯 Audience Targeting Strategies</h3>
+    <ul>
+        <li><strong>Custom Audiences:</strong> Upload customer email lists, website visitors (via Meta Pixel), or app users. These are your warmest audiences.</li>
+        <li><strong>Lookalike Audiences:</strong> Meta finds users similar to your best customers. Start with 1% lookalike (most similar) and expand to 3-5% for scale.</li>
+        <li><strong>Interest-Based Targeting:</strong> Target by interests (e.g., "Shopify," "e-commerce," "online store") and behaviors (e.g., "engaged shoppers," "small business owners").</li>
+        <li><strong>Retargeting:</strong> Show ads to people who visited the website but did not convert. Retargeting ads have 10x higher CTR than cold ads.</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🔍 Google Ads Essentials</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Ad Type</th>
+            <th style="padding: 12px;">Where It Shows</th>
+            <th style="padding: 12px;">Best For</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Search Ads</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Google search results page</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">High-intent searches like "hire Shopify developer" or "best e-commerce agency"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Display Ads</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Banner ads across websites in Google network</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Brand awareness and retargeting</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>YouTube Ads</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Before/during YouTube videos</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Video content promotion, brand awareness</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Performance Max</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">All Google properties (Search, Display, YouTube, Gmail, Maps)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Automated full-funnel campaigns with machine learning</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>💸 Budget Optimization Framework</h3>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">The 70/20/10 Budget Split:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li><strong>70%</strong> — Proven campaigns with consistent ROAS. Scale what works.</li>
+            <li><strong>20%</strong> — Testing new audiences, creatives, or placements. Always be testing.</li>
+            <li><strong>10%</strong> — Experimental campaigns. Completely new ideas, platforms, or formats.</li>
+        </ul>
+    </div>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ Common Budget Mistakes:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Spending the entire budget on a single ad set without testing variations</li>
+            <li>Not setting daily or lifetime budget caps — runaway ad spend is real</li>
+            <li>Killing ads too early — Meta needs 50+ conversions per ad set per week for optimization (the "learning phase")</li>
+            <li>Not tracking conversions properly — spending without knowing what is working</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📐 A/B Testing for Ads</h3>
+    <p>Never assume. Always test. Here is what to A/B test and in what order of impact:</p>
+    <ol>
+        <li><strong>Audience:</strong> Different interests, lookalikes, age ranges (highest impact)</li>
+        <li><strong>Creative:</strong> Image vs. video, carousel vs. single, different visual styles</li>
+        <li><strong>Copy:</strong> Different hooks, long vs. short copy, different CTAs</li>
+        <li><strong>Placement:</strong> Feed vs. Stories vs. Reels, automatic vs. manual placement</li>
+        <li><strong>Offer/CTA:</strong> Different lead magnets, discount amounts, urgency tactics</li>
+    </ol>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">Testing Rule:</strong> Change only ONE variable at a time. If you change the audience AND the creative simultaneously, you will not know which change drove the result difference. Run tests for at least 3-5 days with sufficient budget before drawing conclusions.
+    </div>
+</div>`;
+
+const task13Quiz = [
+    { q: "ROAS stands for:", o: ["Rate of Ad Sales — measures how fast ads sell", "Return on Ad Spend — revenue generated per unit spent on ads", "Reach of Audience Segments — how many people see the ad", "Revenue of All Sources — total company revenue"], c: 1 },
+    { q: "The Meta Ads campaign structure hierarchy from top to bottom is:", o: ["Ad → Ad Set → Campaign", "Campaign → Ad → Ad Set", "Campaign → Ad Set → Ad (objective → audience/budget → creative)", "Ad Set → Campaign → Ad"], c: 2 },
+    { q: "Retargeting ads have approximately what CTR compared to cold audience ads?", o: ["Same CTR — audience temperature does not affect click rates", "2x higher CTR", "10x higher CTR — website visitors are already familiar with the brand", "Lower CTR because people are annoyed by repeated ads"], c: 2 },
+    { q: "The 70/20/10 budget split allocates 70% to:", o: ["Experimental new campaigns and unproven ideas", "Testing new audiences and creatives", "Proven campaigns with consistent ROAS — scale what works", "Brand awareness campaigns that cannot be measured"], c: 2 },
+    { q: "During the Meta Ads 'learning phase,' each ad set needs approximately how many conversions per week to optimize?", o: ["5 conversions per week is sufficient", "50+ conversions per ad set per week for proper optimization", "500 conversions minimum before any optimization occurs", "No minimum — Meta optimizes immediately"], c: 1 },
+    { q: "A Lookalike Audience at 1% means:", o: ["Only 1% of your budget goes to this audience", "Meta finds users most similar to your source audience — the most precise match", "1% of your followers will see the ad", "The audience is 1% of the total population"], c: 1 },
+    { q: "When A/B testing ads, the most important rule is:", o: ["Test as many variables as possible simultaneously to save time", "Change only ONE variable at a time so you know which change drove the result", "Always test creative first since it has the highest visual impact", "Never test — trust your instincts about what will work"], c: 1 },
+    { q: "CPA (Cost Per Acquisition) measures:", o: ["The cost of creating the ad creative", "How much the advertising platform charges per day", "The total cost to acquire one customer through advertising", "The cost of running the campaign for one month"], c: 2 },
+    { q: "Google Search Ads are best for:", o: ["Brand awareness with audiences who have never heard of you", "High-intent searches like 'hire Shopify developer' where users are actively looking", "Retargeting website visitors with display banners", "Video content promotion on YouTube"], c: 1 },
+    { q: "A common budget mistake in paid advertising is:", o: ["Setting daily budget caps to control spending", "Running A/B tests on different audiences", "Killing ads too early before they exit the learning phase", "Tracking conversions with Meta Pixel"], c: 2 },
+    { q: "Performance Max campaigns on Google are unique because they:", o: ["Only run on Google Search results", "Run across ALL Google properties with machine learning optimization", "Are the cheapest campaign type available", "Do not require any creative assets"], c: 1 },
+    { q: "For a Shopify agency like Digital Heroes, the most valuable Meta Ads objective is typically:", o: ["Awareness — getting the brand name in front of as many people as possible", "Engagement — getting likes and comments on posts", "Leads or Conversions — generating inquiries from businesses needing Shopify services", "Traffic — driving any visitors to the website regardless of intent"], c: 2 }
+];
+
+// =============================================================================
+// TASK 14: CLIENT SOCIAL MEDIA DELIVERY
+// =============================================================================
+
+const task14Content = `<h2>🤝 TASK 14: CLIENT SOCIAL MEDIA DELIVERY — Managing Client Accounts & Workflows</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🤝 Managing Social Media for Clients</h3>
+    <p>Digital Heroes offers social media management as a service through marketplace platforms and direct client relationships. This means you will be managing <strong>multiple client accounts simultaneously</strong>, each with unique brand voices, audiences, and goals. This task teaches you the professional delivery framework that ensures consistent, high-quality work across all client accounts.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">⚠️ Critical Rule:</strong>
+        <p style="margin: 10px 0 0 0;">Posting on a client's social media without proper approval is a <strong>zero-tolerance violation</strong>. Every post must go through the approval workflow. A wrong post on a client's account can damage their business and Digital Heroes' reputation permanently.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Client Onboarding Checklist</h3>
+    <p>Before creating ANY content for a new client, complete this onboarding process:</p>
+    <ol>
+        <li><strong>Brand Brief Collection:</strong> Brand colors, fonts, tone of voice, target audience, competitors, do's and don'ts</li>
+        <li><strong>Access Setup:</strong> Get added as admin/editor on client social accounts (never ask for passwords — use platform role-based access)</li>
+        <li><strong>Content Audit:</strong> Review the last 3 months of the client's existing content. Identify what performed well and what did not.</li>
+        <li><strong>Goal Alignment:</strong> Document the client's primary KPIs. Is it followers? Website traffic? Leads? Sales? Engagement?</li>
+        <li><strong>Content Calendar Template:</strong> Set up the monthly calendar template with approval workflow</li>
+        <li><strong>Communication Channel:</strong> Establish how the client prefers to communicate — marketplace messaging, email, WhatsApp, Slack</li>
+        <li><strong>Reporting Schedule:</strong> Agree on monthly/biweekly reporting cadence and format</li>
+    </ol>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📅 Content Calendar & Approval Workflow</h3>
+    <p>The content calendar is the backbone of client social media delivery. Here is the standard Digital Heroes workflow:</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #8B5CF6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">Weekly Workflow:</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(139, 92, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Day</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Activity</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Monday</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Plan next week's content calendar. Research trends and themes.</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Tuesday-Wednesday</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Create content batch — graphics, copy, hashtags, captions for all posts</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Thursday</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Internal QA review by PM. Submit to client for approval with revisions if needed.</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Friday</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Client feedback incorporated. Final content scheduled. Analytics review of current week.</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Daily</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Community management — respond to comments, DMs, mentions. Monitor scheduled posts.</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>✅ Quality Checklist Before Submission</h3>
+    <p>Every piece of content must pass this checklist before going to the client:</p>
+    <ul>
+        <li>☐ <strong>Brand Voice:</strong> Does it match the client's tone? (Professional? Casual? Playful?)</li>
+        <li>☐ <strong>Visual Consistency:</strong> Correct brand colors, fonts, logo placement?</li>
+        <li>☐ <strong>Spelling & Grammar:</strong> Zero errors. Use Grammarly or similar tools.</li>
+        <li>☐ <strong>Hashtags:</strong> Relevant, correctly researched, correct count per platform?</li>
+        <li>☐ <strong>CTA:</strong> Does each post have a clear call-to-action?</li>
+        <li>☐ <strong>Image Specs:</strong> Correct dimensions for the platform (1080x1080 for feed, 1080x1920 for Stories/Reels)?</li>
+        <li>☐ <strong>Links:</strong> All links working and UTM-tagged for tracking?</li>
+        <li>☐ <strong>Timing:</strong> Scheduled for optimal posting time based on audience analytics?</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Managing Multiple Client Accounts</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Challenge</th>
+            <th style="padding: 12px;">Solution</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Brand Voice Confusion</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Create a 1-page brand voice guide per client. Review it before creating any content for that client.</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Posting on Wrong Account</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Always double-check which account is active before posting. Use scheduling tools that show the account name prominently.</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Deadline Overlap</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use a master calendar showing all clients. Stagger content creation days. Never batch for all clients on the same day.</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Inconsistent Reporting</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use a standardized report template. Same metrics, same format, same schedule for every client.</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">⭐ Client Communication Best Practices</h3>
+    <ul>
+        <li><strong>Set Expectations Early:</strong> During onboarding, clearly explain what is included and what is not. Prevent scope creep.</li>
+        <li><strong>Proactive Updates:</strong> Do not wait for clients to ask. Send weekly mini-updates: "This week we posted X content, got Y engagement, and Z new followers."</li>
+        <li><strong>Handle Revision Requests Professionally:</strong> Never say "But I already made it." Say "Sure, I will update that. Just to confirm — you would like [specific change], correct?"</li>
+        <li><strong>Underpromise, Overdeliver:</strong> If you can deliver in 2 days, say 3. Delivering early builds trust. Missing deadlines destroys it.</li>
+        <li><strong>Document Everything:</strong> All approvals, feedback, and changes must be in writing (messaging platform, email). Verbal approvals are not sufficient.</li>
+    </ul>
+</div>`;
+
+const task14Quiz = [
+    { q: "Before creating ANY content for a new social media client, the FIRST step is:", o: ["Start posting immediately to show fast results", "Complete the client onboarding checklist — brand brief, access setup, content audit, goal alignment", "Copy the competitor's social media strategy", "Ask the client to send you their old posts so you can repost them"], c: 1 },
+    { q: "Posting on a client's social media without proper approval is classified at Digital Heroes as:", o: ["Acceptable if the content is obviously good quality", "A minor issue that can be fixed by deleting the post", "A zero-tolerance violation — wrong posts can damage the client's business permanently", "Only an issue if the client complains about it"], c: 2 },
+    { q: "The standard Digital Heroes content approval workflow order is:", o: ["Create content → Post immediately → Get client feedback after", "Create content → Internal QA review → PM sign-off → Client approval → Schedule posting", "Create content → Client approval → No internal review needed", "PM creates content → Social media manager posts → Client reviews later"], c: 1 },
+    { q: "When managing multiple client accounts, the biggest risk is:", o: ["Running out of content ideas across accounts", "Posting on the wrong client account — always double-check which account is active", "Having too many scheduling tools open", "Clients requesting content at the same time"], c: 1 },
+    { q: "When a client requests revisions to content, the professional response is:", o: ["Explain why the original version is better and push back", "Agree immediately without confirming exactly what they want changed", "Confirm the specific changes requested, make revisions, and resubmit for approval", "Tell them revision is outside the scope of work"], c: 2 },
+    { q: "The quality checklist before submitting content to a client includes all EXCEPT:", o: ["Brand voice alignment and visual consistency", "Spelling, grammar, hashtag relevance, and CTA presence", "Correct image dimensions and UTM-tagged links", "Comparing the content to what competitors posted today"], c: 3 },
+    { q: "Client communication should follow the principle of:", o: ["Overpromise to win the client's confidence, then negotiate later", "Underpromise and overdeliver — delivering early builds trust", "Only communicate when the client reaches out first", "Avoid written communication to maintain flexibility"], c: 1 },
+    { q: "For client access to social media accounts, the correct approach is:", o: ["Ask the client for their username and password via email", "Use platform role-based access — get added as admin/editor without needing passwords", "Create a new account and transfer followers manually", "Use a shared password manager for all client accounts"], c: 1 },
+    { q: "A master calendar for managing multiple clients should:", o: ["Only track posting dates without content details", "Show all clients, stagger content creation days, and prevent deadline overlaps", "Be updated once a month at the beginning of each billing cycle", "Only be accessible to the project manager, not the social media team"], c: 1 },
+    { q: "Verbal client approval (e.g., 'Yeah that looks good' on a call) is:", o: ["Sufficient — the client said they approved it", "Not sufficient — all approvals must be documented in writing via messaging or email", "Only valid if the PM was on the call too", "Better than written approval because it is faster"], c: 1 },
+    { q: "When a client's brand voice is very different from Digital Heroes' brand voice, you should:", o: ["Use Digital Heroes' voice since you are more experienced", "Create a 1-page brand voice guide for that client and review it before creating any content", "Blend both brand voices for a unique style", "Let the client write all their own copy and you just post it"], c: 1 },
+    { q: "Weekly proactive client updates should include:", o: ["Only negative news — clients do not need to hear about things going well", "Content posted, engagement metrics, follower changes — do not wait for clients to ask", "Only financial billing information", "A list of excuses for why metrics did not improve"], c: 1 }
+];
+
+// =============================================================================
+// TASK 15: ANALYTICS & ROI REPORTING
+// =============================================================================
+
+const task15Content = `<h2>📈 TASK 15: ANALYTICS & ROI REPORTING — UTM Tracking, Conversion Attribution & Monthly Reports</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(20, 184, 166, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📊 Why Analytics is Non-Negotiable</h3>
+    <p>Social media without analytics is like driving blindfolded. You might be creating beautiful content, but if you are not measuring results, you have no idea whether it is working. At Digital Heroes, <strong>every social media decision must be data-informed</strong>. Analytics separates professionals from hobbyists.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">The Analytics Hierarchy:</strong>
+        <ol style="margin: 10px 0 0 0;">
+            <li><strong>Vanity Metrics:</strong> Likes, followers, impressions — easy to see, hard to tie to revenue</li>
+            <li><strong>Engagement Metrics:</strong> Comments, saves, shares, DMs — show audience quality</li>
+            <li><strong>Conversion Metrics:</strong> Website clicks, leads generated, sales attributed — prove ROI</li>
+            <li><strong>Revenue Metrics:</strong> ROAS, customer acquisition cost, lifetime value — the final measure</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔗 UTM Tracking Explained</h3>
+    <p>UTM (Urchin Tracking Module) parameters are tags added to URLs that let you track EXACTLY where website traffic comes from. Without UTM tracking, you cannot prove social media is driving results.</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Parameter</th>
+            <th style="padding: 12px;">Purpose</th>
+            <th style="padding: 12px;">Example</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>utm_source</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Which platform sent the traffic</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">instagram, facebook, linkedin</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>utm_medium</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Type of traffic</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">social, paid, email, referral</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>utm_campaign</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Specific campaign or promotion</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">spring_sale_2026, portfolio_launch</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>utm_content</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Which specific post or ad variation</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">carousel_v1, reel_testimonial</td>
+        </tr>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">Example UTM URL:</strong>
+        <p style="margin: 10px 0 0 0; font-family: monospace; word-break: break-all;">https://digitalheroes.co.in/services?utm_source=instagram&utm_medium=social&utm_campaign=portfolio_showcase&utm_content=carousel_shopify_case_study</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🎯 Conversion Attribution Models</h3>
+    <p>Attribution answers the question: "Which touchpoint gets credit for the conversion?" Understanding this is critical for accurate ROI reporting.</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px;">Model</th>
+            <th style="padding: 12px;">How It Works</th>
+            <th style="padding: 12px;">Best For</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Last Click</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">100% credit to the last touchpoint before conversion</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Simple reporting, direct response campaigns</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>First Click</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">100% credit to the first touchpoint</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Understanding which channels drive awareness</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Linear</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Equal credit to all touchpoints in the journey</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Long sales cycles with multiple touchpoints</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Data-Driven</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">AI assigns credit based on actual data patterns</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mature campaigns with enough conversion data</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📄 Monthly Report Structure</h3>
+    <p>Every client and the DH internal team receives a monthly social media performance report. Here is the standard template:</p>
+
+    <ol>
+        <li><strong>Executive Summary</strong> — 3-5 bullet points of key wins and areas for improvement</li>
+        <li><strong>KPI Dashboard</strong> — Followers, engagement rate, reach, website clicks, leads generated (with month-over-month comparison)</li>
+        <li><strong>Top Performing Content</strong> — Top 3-5 posts with screenshots and analysis of WHY they performed</li>
+        <li><strong>Underperforming Content</strong> — Bottom 3 posts with analysis and lessons learned</li>
+        <li><strong>Platform Breakdown</strong> — Performance by platform (Instagram, LinkedIn, Facebook separately)</li>
+        <li><strong>Traffic & Conversions</strong> — Google Analytics data showing social media traffic, UTM campaign performance, conversion metrics</li>
+        <li><strong>Competitor Insights</strong> — Brief overview of competitor activity and positioning</li>
+        <li><strong>Next Month Strategy</strong> — Content themes, campaigns planned, tests to run, goals to hit</li>
+    </ol>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">⚠️ Report Mistakes to Avoid:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Reporting only vanity metrics (follower count) without tying to business outcomes</li>
+            <li>Not comparing to previous period — data without context is meaningless</li>
+            <li>Hiding underperforming content — transparency builds client trust</li>
+            <li>No actionable next steps — every report must end with what you will do differently next month</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🛠️ Analytics Tools Stack</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Tool</th>
+            <th style="padding: 12px;">Purpose</th>
+            <th style="padding: 12px;">Key Feature</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Google Analytics 4</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Website traffic and conversion tracking</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">UTM campaign tracking, conversion paths, audience demographics</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Meta Business Suite</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Instagram + Facebook analytics</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Post performance, audience insights, ad metrics</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>LinkedIn Analytics</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">LinkedIn page and post performance</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Visitor demographics, content performance by type</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Google Looker Studio</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Automated dashboard and reporting</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Connect multiple data sources into one visual report</td>
+        </tr>
+    </table>
+</div>`;
+
+const task15Quiz = [
+    { q: "The analytics hierarchy from least to most valuable is:", o: ["Revenue → Conversion → Engagement → Vanity", "Vanity metrics → Engagement metrics → Conversion metrics → Revenue metrics", "All metrics are equally valuable and should be weighted the same", "Conversion metrics are the only ones that matter"], c: 1 },
+    { q: "UTM parameters are used to:", o: ["Improve SEO rankings on search engines", "Track EXACTLY where website traffic comes from by tagging URLs with source, medium, and campaign data", "Speed up website loading times", "Block spam traffic from reaching the website"], c: 1 },
+    { q: "The utm_source parameter identifies:", o: ["Which specific post or ad variation was clicked", "The type of traffic (social, paid, email)", "Which platform sent the traffic (e.g., instagram, facebook, linkedin)", "The name of the specific campaign"], c: 2 },
+    { q: "Last Click attribution gives 100% credit to:", o: ["The first touchpoint that introduced the customer to the brand", "All touchpoints equally throughout the customer journey", "The last touchpoint before the customer converted", "Whichever touchpoint had the highest engagement"], c: 2 },
+    { q: "A monthly social media report should always include:", o: ["Only the top performing content to keep the client happy", "KPI dashboard with month-over-month comparison, top AND underperforming content, and next month strategy", "Just the follower count growth and a congratulations message", "Only the data the client specifically requests — nothing more"], c: 1 },
+    { q: "Reporting only vanity metrics like follower count without business outcomes is problematic because:", o: ["Follower count is the only metric clients understand", "It does not prove social media is driving business value — data without business context is meaningless", "Vanity metrics are always inaccurate", "Clients prefer hearing about followers over revenue impact"], c: 1 },
+    { q: "Google Analytics 4 (GA4) is essential for social media reporting because:", o: ["It replaces the need for platform-specific analytics", "It tracks website traffic from social media, UTM campaigns, and conversion paths", "It automatically posts content at optimal times", "It only works with Google Ads, not social media traffic"], c: 1 },
+    { q: "The 'Data-Driven' attribution model works by:", o: ["Giving all credit to the cheapest marketing channel", "Using AI to assign credit based on actual conversion data patterns", "Only tracking the last click before purchase", "Randomly distributing credit across all touchpoints"], c: 1 },
+    { q: "When a client's social media metrics decline month-over-month, the correct approach is:", o: ["Hide the decline and focus only on positive metrics", "Be transparent about the decline, explain possible causes, and present an action plan", "Blame the platform algorithm changes and take no further action", "Stop reporting until metrics improve naturally"], c: 1 },
+    { q: "Google Looker Studio (formerly Data Studio) is used in social media reporting for:", o: ["Creating social media posts with templates", "Connecting multiple data sources into one automated visual dashboard", "Running paid advertising campaigns on Google", "Managing client social media accounts"], c: 1 },
+    { q: "The utm_campaign parameter is used to identify:", o: ["Which social media platform sent the visitor", "The type of traffic source (organic vs paid)", "The specific campaign or promotion being tracked (e.g., spring_sale_2026)", "The browser the visitor is using"], c: 2 },
+    { q: "Every monthly report must end with:", o: ["A request for the client to increase the budget", "Actionable next steps — what will be done differently next month based on the data", "A generic 'Thank you for choosing Digital Heroes' message", "No conclusion needed — the data speaks for itself"], c: 1 }
+];
+
+// =============================================================================
+// TASK 16: VIDEO CONTENT & REELS STRATEGY
+// =============================================================================
+
+const task16Content = `<h2>🎬 TASK 16: VIDEO CONTENT & REELS STRATEGY — Short-Form Video, Hooks & Trending Formats</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(219, 39, 119, 0.15)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #EC4899; margin-top: 0;">🎬 Video is the Future — And the Present</h3>
+    <p>Short-form video (Reels, Shorts, TikTok) dominates social media in 2026. Instagram Reels get <strong>67% more engagement</strong> than static posts, and video content is favored by every major platform algorithm. If you are not creating video content, you are falling behind. This task covers the complete framework for producing scroll-stopping video content for both Digital Heroes and clients.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EC4899; padding: 20px; margin: 15px 0;">
+        <strong style="color: #EC4899;">📊 Video Performance Stats:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li>Reels get <strong>67% more engagement</strong> than static images on Instagram</li>
+            <li>Video posts on LinkedIn get <strong>5x more engagement</strong> than text posts</li>
+            <li>Short-form video has the <strong>highest ROI</strong> of any content format</li>
+            <li>The average attention span for social media video is <strong>8 seconds</strong> — your hook must hit instantly</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎣 The Hook Framework — First 3 Seconds</h3>
+    <p>The first 3 seconds determine whether someone watches or scrolls. Here are proven hook formats:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Hook Type</th>
+            <th style="padding: 12px;">Format</th>
+            <th style="padding: 12px;">Example for Agency</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Bold Claim</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"This [thing] made us [result]"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"This one Shopify trick doubled our client's sales"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Pattern Interrupt</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unexpected visual or statement</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Stop hiring web developers until you watch this"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Question Hook</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Did you know that...?"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Did you know 73% of Shopify stores fail because of this?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Listicle</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"X things you need to know about..."</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"5 design mistakes killing your online store conversions"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Before/After</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Show transformation visually</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We transformed this store from 0 to 500 orders/month"</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">📐 Video Content Formats for Agencies</h3>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">High-Performing Video Types:</strong>
+        <ul style="margin: 10px 0 0 0;">
+            <li><strong>Store Reveal:</strong> Before/after Shopify store transformations set to trending audio (15-30 seconds)</li>
+            <li><strong>Quick Tips:</strong> "One thing your Shopify store NEEDS" — educational micro-content (15-30 seconds)</li>
+            <li><strong>Day in the Life:</strong> Behind-the-scenes of an agency workday — humanizes the brand (30-60 seconds)</li>
+            <li><strong>Client Testimonial:</strong> Short clip of a client sharing their success story (15-30 seconds)</li>
+            <li><strong>Process Walkthrough:</strong> How a Shopify store gets built from concept to launch (30-60 seconds)</li>
+            <li><strong>Trending Format Adaptation:</strong> Take a trending Reel format and adapt it to agency/e-commerce context</li>
+            <li><strong>Tutorial/How-To:</strong> Step-by-step guides on Shopify features, design tips, or e-commerce strategies (30-90 seconds)</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🛠️ Video Production Tools</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Tool</th>
+            <th style="padding: 12px;">Type</th>
+            <th style="padding: 12px;">Best For</th>
+            <th style="padding: 12px;">Cost</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CapCut</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile + Desktop editing</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Quick Reels editing, auto-captions, trending effects</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Canva Video</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Browser-based</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Branded video templates, text overlays, simple animations</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free / Pro</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>InShot</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mobile editing</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">On-the-go editing, filters, music</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free / Pro</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Adobe Premiere Rush</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Desktop + Mobile</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Professional-grade editing, color correction, multi-track</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Paid</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📏 Video Specs by Platform</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Platform</th>
+            <th style="padding: 12px;">Aspect Ratio</th>
+            <th style="padding: 12px;">Max Duration</th>
+            <th style="padding: 12px;">Sweet Spot</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Instagram Reels</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">9:16 (vertical)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90 seconds</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15-30 seconds</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">YouTube Shorts</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">9:16 (vertical)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">60 seconds</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-45 seconds</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">LinkedIn Video</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1:1 or 16:9</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">10 minutes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30-90 seconds</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Facebook Reels</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">9:16 (vertical)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90 seconds</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15-30 seconds</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">✅ Video Content Best Practices</h3>
+    <ul>
+        <li><strong>Always Add Captions:</strong> 85% of social media video is watched without sound. Captions are mandatory, not optional.</li>
+        <li><strong>Vertical First:</strong> Shoot in 9:16 aspect ratio. Horizontal video wastes screen space on mobile feeds.</li>
+        <li><strong>Start with the Hook:</strong> Never begin with a logo animation or intro. Start with the most engaging moment.</li>
+        <li><strong>Use Trending Audio:</strong> Instagram's algorithm boosts Reels that use trending audio. Check the audio library weekly.</li>
+        <li><strong>End with a CTA:</strong> "Follow for more," "Save this for later," "DM us to learn more" — always tell viewers what to do next.</li>
+        <li><strong>Repurpose Across Platforms:</strong> One video can be posted as an Instagram Reel, YouTube Short, Facebook Reel, and LinkedIn video (adjust captions and hashtags per platform).</li>
+        <li><strong>Batch Produce:</strong> Shoot 5-10 videos in one session. Edit throughout the week. This is far more efficient than daily shooting.</li>
+    </ul>
+</div>`;
+
+const task16Quiz = [
+    { q: "Instagram Reels get approximately how much more engagement than static image posts?", o: ["10% more engagement — a marginal difference", "Same engagement — content quality matters more than format", "67% more engagement — video is strongly favored by the algorithm", "500% more engagement — static images get zero reach"], c: 2 },
+    { q: "The first 3 seconds of a video are critical because:", o: ["Platform algorithms only analyze the first 3 seconds", "The average attention span is 8 seconds — the hook must hit instantly to prevent scrolling", "Videos shorter than 3 seconds get more reach", "Advertisers only pay for the first 3 seconds of watch time"], c: 1 },
+    { q: "Which hook type starts with an unexpected visual or statement to stop scrolling?", o: ["Listicle hook — numbers always work", "Bold Claim hook — making a big promise", "Pattern Interrupt — something unexpected catches attention", "Question hook — asking viewers a question"], c: 2 },
+    { q: "85% of social media video is watched without sound. This means:", o: ["Audio quality does not matter at all for social videos", "Captions are mandatory on every video — not optional", "Only add captions if the client requests them", "Music should be louder to force viewers to turn on sound"], c: 1 },
+    { q: "The optimal aspect ratio for Instagram Reels and YouTube Shorts is:", o: ["16:9 horizontal for cinematic quality", "1:1 square for universal compatibility", "9:16 vertical — maximizes screen space on mobile", "4:3 standard for professional appearance"], c: 2 },
+    { q: "For a Shopify agency, the highest-performing Reel format is typically:", o: ["Random dance trends with no agency connection", "Before/after store transformations set to trending audio", "Long talking-head explanations of technical features", "Unedited raw footage of the office"], c: 1 },
+    { q: "The sweet spot duration for Instagram Reels is:", o: ["90 seconds — use the full available time", "15-30 seconds — short enough to maintain attention, long enough to deliver value", "Under 5 seconds — the shorter the better", "3-5 minutes — longer content performs better"], c: 1 },
+    { q: "CapCut is recommended for Reels editing because:", o: ["It is the only tool that works with Instagram", "It offers quick editing, auto-captions, and trending effects for free", "It is required by Instagram's algorithm for maximum reach", "It replaces the need for professional video production entirely"], c: 1 },
+    { q: "Video content repurposing means:", o: ["Posting the exact same video file on every platform without changes", "Adapting one video for multiple platforms — same core content with adjusted captions, hashtags, and specs per platform", "Only creating video for one platform and ignoring others", "Recording separate videos for each platform from scratch"], c: 1 },
+    { q: "Starting a Reel with a logo animation or generic intro is:", o: ["Professional and recommended for brand consistency", "Ineffective — start with the hook immediately as viewers will scroll past intros", "Required by Instagram for business accounts", "Only acceptable for brands with over 100K followers"], c: 1 },
+    { q: "Batch producing video content (shooting 5-10 videos in one session) is better than daily shooting because:", o: ["Daily shooting is actually more efficient", "Batch production maintains consistent quality and frees daily time for engagement and strategy", "It is impossible to shoot more than one video per day", "Batch production only works for large teams with dedicated videographers"], c: 1 },
+    { q: "LinkedIn video performs best at which aspect ratio and duration?", o: ["9:16 vertical, 15 seconds", "1:1 or 16:9, 30-90 seconds — professional format for a professional platform", "Only 16:9 horizontal, 10+ minutes for long-form content", "LinkedIn does not support native video content"], c: 1 }
+];
+
+// =============================================================================
+// TASK 17: CAREER GROWTH & CERTIFICATION
+// =============================================================================
+
+const task17Content = `<h2>🚀 TASK 17: CAREER GROWTH — SM Career Path, Specialization & Professional Development</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🚀 Your Social Media Career at Digital Heroes</h3>
+    <p>Social media management is one of the fastest-growing career fields globally. At Digital Heroes, your growth is directly tied to your skills, output, and impact. This task maps your career progression from entry-level to leadership, with clear milestones and specialization options.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #8B5CF6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">💰 Career Growth = Company Growth x (Will + Efforts)</strong>
+        <p style="margin: 10px 0 0 0;">Remember: Income = Happy Clients x Skill x Speed. Every skill you build, every client you serve well, and every efficiency you create compounds your value to the agency and your earning potential.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Social Media Career Ladder at Digital Heroes</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Level</th>
+            <th style="padding: 12px;">Title</th>
+            <th style="padding: 12px;">Responsibilities</th>
+            <th style="padding: 12px;">Timeline</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L1</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SM Trainee</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete training, assist with content creation, learn tools and workflows</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 1-3</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L2</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SM Executive</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Manage 2-3 client accounts, create content independently, run basic ad campaigns</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 3-9</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L3</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Senior SM Executive</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Handle 4-6 accounts, develop strategies, manage paid campaigns, mentor juniors</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 9-18</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L4</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SM Team Lead</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lead SM team, client relationship management, cross-department collaboration</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 18-30</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L5</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SM Manager / Head of SM</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Department strategy, hiring, P&L responsibility, agency-level SM direction</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 30+</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(219, 39, 119, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #EC4899; margin-top: 0;">🎯 Specialization Paths</h3>
+    <p>After reaching L2-L3, you can specialize in one or more of these high-demand areas:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(236, 72, 153, 0.2);">
+            <th style="padding: 12px;">Specialization</th>
+            <th style="padding: 12px;">Focus</th>
+            <th style="padding: 12px;">Key Skills</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Paid Social Specialist</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Facebook/Google Ads, budget optimization, ROAS</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meta Ads Manager, Google Ads, analytics, A/B testing</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Content Strategist</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content planning, brand voice, editorial calendars</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Copywriting, SEO for social, trend analysis, storytelling</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Video Content Creator</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Short-form video production, Reels, YouTube</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Video editing, scripting, trending formats, on-camera presence</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Analytics & Reporting Specialist</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Data analysis, ROI measurement, dashboards</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">GA4, Looker Studio, SQL basics, data visualization</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Community & Influencer Manager</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Community building, influencer partnerships</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Relationship management, negotiation, UGC campaigns</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📜 Industry Certifications to Pursue</h3>
+    <p>These certifications strengthen your expertise and are recognized across the industry:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px;">Certification</th>
+            <th style="padding: 12px;">Provider</th>
+            <th style="padding: 12px;">Cost</th>
+            <th style="padding: 12px;">Relevance</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Meta Blueprint</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Meta (Facebook)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free courses / Paid exam</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Essential for Meta Ads specialists</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Google Ads Certification</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Google Skillshop</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Required for paid search and display advertising</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>HubSpot Social Media</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">HubSpot Academy</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Comprehensive social media strategy and inbound marketing</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Google Analytics (GA4)</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Google Skillshop</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Essential for proving social media ROI with data</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Hootsuite Social Marketing</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hootsuite Academy</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Free course / Paid cert</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Industry-standard social media management certification</td>
+        </tr>
+    </table>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">💡 DH Learning Benefit:</strong> Digital Heroes provides 4 hours/week of learning time and up to Rs 5,000/year course reimbursement. Use this for certification exams and advanced training.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📈 Building Your Personal Brand</h3>
+    <p>The best social media professionals practice what they preach. Building your own personal brand demonstrates your expertise and attracts opportunities:</p>
+    <ul>
+        <li><strong>LinkedIn Profile:</strong> Optimize your headline (e.g., "Social Media Strategist | Helping brands grow through data-driven content"). Post 3x/week about your learnings and industry insights.</li>
+        <li><strong>Portfolio:</strong> Document case studies from client work (with permission). Show measurable results: "Grew Instagram from 500 to 5,000 followers in 6 months with 4.2% engagement rate."</li>
+        <li><strong>Content Sharing:</strong> Share industry articles, add your commentary. Position yourself as a knowledgeable voice in the social media space.</li>
+        <li><strong>Networking:</strong> Engage with other social media professionals. Join LinkedIn groups, attend webinars, and participate in industry discussions.</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⭐ Performance Review KPIs for SM Professionals</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.2);">
+            <th style="padding: 12px;">KPI</th>
+            <th style="padding: 12px;">Target</th>
+            <th style="padding: 12px;">Weight</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content Quality & Consistency</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">All posts on-brand, on-time, zero errors</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">25%</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Engagement Growth</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Engagement rate above 3%, month-over-month growth</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lead Generation / Traffic</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Measurable website traffic and inquiries from social</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Satisfaction</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client retention, positive feedback, 5-star reviews</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Professional Development</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Certifications completed, skills learned, team contribution</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15%</td>
+        </tr>
+    </table>
+</div>`;
+
+const task17Quiz = [
+    { q: "The career ladder at Digital Heroes for social media progresses from:", o: ["SM Manager → SM Trainee → SM Executive (reverse order)", "SM Trainee → SM Executive → Senior SM Executive → SM Team Lead → SM Manager/Head of SM", "There is no formal career ladder — promotions are random", "SM Executive → SM Trainee → Team Lead (skip Senior level)"], c: 1 },
+    { q: "An L2 SM Executive at Digital Heroes is expected to:", o: ["Only observe and learn without managing any accounts", "Manage 2-3 client accounts, create content independently, and run basic ad campaigns", "Lead the entire social media department", "Only focus on personal brand building without client work"], c: 1 },
+    { q: "Specializing as a 'Paid Social Specialist' requires mastery of:", o: ["Only organic content creation and hashtag strategies", "Meta Ads Manager, Google Ads, analytics, and A/B testing", "Copywriting and SEO exclusively", "Community management and influencer outreach only"], c: 1 },
+    { q: "Meta Blueprint certification is:", o: ["A general business management certification", "Essential for Meta Ads specialists — covers Facebook and Instagram advertising", "Only available to Meta employees", "No longer relevant since Meta changes algorithms frequently"], c: 1 },
+    { q: "Digital Heroes provides how many hours per week of dedicated learning time?", o: ["0 hours — learning is done on personal time only", "1 hour per week on Fridays", "4 hours per week for professional development", "Unlimited — there is no cap on learning hours"], c: 2 },
+    { q: "Building a personal brand as a social media professional is important because:", o: ["It directly competes with the agency's brand and should be avoided", "It demonstrates expertise, attracts opportunities, and practices what you preach", "Personal brands are only relevant for influencers, not agency professionals", "It is required by Digital Heroes policy but has no practical benefit"], c: 1 },
+    { q: "The SM Executive performance review KPI with the highest weight (25%) is:", o: ["Professional Development and certifications completed", "Content Quality and Consistency — all posts on-brand, on-time, zero errors", "Lead Generation from social media channels", "Engagement Growth rate improvements"], c: 1 },
+    { q: "A LinkedIn profile headline for a social media professional should:", o: ["Simply say 'Social Media Manager' with no additional context", "Include specific value proposition like 'Social Media Strategist | Helping brands grow through data-driven content'", "List all previous job titles and companies", "Be left blank for a mysterious professional appeal"], c: 1 },
+    { q: "Google Analytics (GA4) certification is important for social media professionals because:", o: ["It is only needed for SEO specialists, not social media managers", "It proves you can measure social media ROI with data — connecting social activity to business outcomes", "GA4 replaces the need for platform-specific analytics entirely", "It is a mandatory certification to use Google products"], c: 1 },
+    { q: "The transition from L3 Senior SM Executive to L4 SM Team Lead typically happens at:", o: ["Month 3 — leadership is based on seniority not skill", "Month 9 — after completing training certification", "Month 18-30 — requires demonstrated leadership, client management, and cross-department collaboration", "It never happens — L3 is the highest achievable level"], c: 2 },
+    { q: "Digital Heroes' course reimbursement for professional development is up to:", o: ["Rs 1,000 per year — enough for basic online courses only", "Rs 5,000 per year for certification exams and advanced training", "Rs 50,000 per year — covering all industry conferences", "No reimbursement is available — all learning costs are personal"], c: 1 },
+    { q: "Portfolio documentation for career growth should include:", o: ["Only the final deliverable without any context or metrics", "Case studies with measurable results — follower growth, engagement rates, revenue impact", "Screenshots of every single post ever created", "Only projects where everything went perfectly — never mention challenges"], c: 1 }
+];
+
+const task18Quiz = [
     { q: "Content Pillars ensure:", o: ["Every post is about the same topic — this reflects the standard operating procedure most organizations follow", "Promotional content is posted — this is the standard approach most teams follow", "Strategic content variety within defined themes — consistency without repetition", "Content creation takes maximum effort — this reflects the standard operating procedure most organizations follow"], c: 2 },
     { q: "Instagram Algorithm 2024 values saves and shares over likes because:", o: ["Likes are being removed from the platform — this reflects the standard operating procedure most organizations follow", "It's a temporary change that will revert — this reflects the standard operating procedure most organizations follow", "Saves and shares generate more ad revenue — this reflects the standard operating procedure most organizations follow", "Saves and shares require more effort — indicating higher content value and relevance"], c: 3 },
     { q: "Hashtag Mix Formula combines branded, niche, community, and trending hashtags because:", o: ["More categories = more hashtags = more reach — this reflects the standard operating procedure most organizations follow and ensures long-term sustainability across your deliverables", "Each category serves a different purpose — branded for identity, niche for targeting, community for belonging, trending for discovery", "It's an arbitrary industry standard — this reflects the standard operating procedure most organizations follow", "Platforms rank posts using hashtag variety — this reflects the standard operating procedure most organizations follow"], c: 1 },
@@ -754,6 +1905,13 @@ window.task8Content = task8Content;
 window.task9Content = task9Content;
 window.task10Content = task10Content;
 window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -765,6 +1923,13 @@ window.task8Quiz = task8Quiz;
 window.task9Quiz = task9Quiz;
 window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
+window.task12Quiz = task12Quiz;
+window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -777,5 +1942,12 @@ const allQuizzes = [
     task8Quiz,
     task9Quiz,
     task10Quiz,
-    task11Quiz
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];

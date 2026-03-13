@@ -11,7 +11,14 @@ const trainingTasks = [
     { id: 8, title: "Proactive Support", description: "Preventing Issues", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "🛡️ Proactive communication", "📖 Study check-in templates"] },
     { id: 9, title: "Tools & Systems", description: "Help Desk Mastery", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "🖥️ Tool proficiency", "📖 Study system guides"] },
     { id: 10, title: "Metrics & Performance", description: "CSAT, FRT, Resolution", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "📊 KPI understanding", "📖 Study performance benchmarks"] },
-    { id: 11, title: "Final Certification", description: "CS Mastery Exam", contentFirst: false, studyGuide: ["⏱️ Time: 60 min", "📝 30 Questions", "🎥 Submit role-play recording"] }
+    { id: 11, title: "Advanced CS Review", description: "Comprehensive Knowledge Check", contentFirst: false, studyGuide: ["⏱️ Time: 45 min", "📝 Review all core concepts", "📖 Prepare for advanced modules"] },
+    { id: 12, title: "Difficult Clients & De-escalation", description: "Refunds, Revision Abuse & Angry Clients", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "😤 Advanced de-escalation tactics", "📖 Refund & revision policies"] },
+    { id: 13, title: "Upselling & Cross-selling", description: "Grow Client Accounts", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "💰 Identifying upsell opportunities", "📖 Add-on service strategies"] },
+    { id: 14, title: "Marketplace Platform Mastery", description: "Order Lifecycle & Seller Metrics", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "🏪 Platform order system", "📖 Reviews & metrics impact"] },
+    { id: 15, title: "Multi-Channel Support", description: "Concurrent Conversations & Prioritization", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "📱 Managing multiple channels", "📖 Response time strategies"] },
+    { id: 16, title: "QA & Client Satisfaction", description: "Pre-Delivery Review & Feedback Loops", contentFirst: true, studyGuide: ["⏱️ Time: 45 min", "✅ QA checklists", "📖 Client satisfaction frameworks"] },
+    { id: 17, title: "Career Growth", description: "CS Career Path & Specialization", contentFirst: true, studyGuide: ["⏱️ Time: 30 min", "🚀 DH growth ladder", "📖 Specialization tracks"] },
+    { id: 18, title: "Final Certification", description: "CS Mastery Exam & Scenario Simulations", contentFirst: false, studyGuide: ["⏱️ Time: 90 min", "📝 Comprehensive exam", "🎭 8 real-world scenario simulations"] }
 ];
 
 
@@ -943,31 +950,80 @@ const task10Content = `
 </div>
 `;
 
-// ============ TASK 10: CERTIFICATION ============
+// ============ TASK 11: ADVANCED CS REVIEW ============
 const task11Content = `
-<h2>📚 TASK 10: FINAL CERTIFICATION</h2>
+<h2>📚 TASK 11: ADVANCED CS REVIEW — Comprehensive Knowledge Check</h2>
 
-<div class="content-section">
-    <h3>🎓 Requirements</h3>
-    <ul>
-        <li>✅ Score 28/30 or higher on quiz</li>
-        <li>✅ Submit role-play recording (handle angry customer scenario)</li>
-        <li>✅ Pass communication quality review</li>
-    </ul>
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🎓 Review Checkpoint</h3>
+    <p>Before advancing to the specialized modules, this task reviews and tests your mastery of all core CS concepts covered in Tasks 1-10. You must demonstrate solid understanding of every framework, method, and protocol before proceeding.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">📋 What You Should Know By Now:</strong>
+        <ul>
+            <li>Company culture, values, and critical rules (Task 1)</li>
+            <li>CS Mindset: Support = Revenue Protection (Task 2)</li>
+            <li>Communication Excellence: HEAT method, 3-Second Rule (Task 3)</li>
+            <li>Ticket Management: Priority Matrix, SLA targets (Task 4)</li>
+            <li>Technical Troubleshooting: 5-Step Fix Method (Task 5)</li>
+            <li>Escalation Protocol: When and how to escalate (Task 6)</li>
+            <li>De-escalation: CALM method, magic phrases (Task 7)</li>
+            <li>Proactive Support: Prevention over cure (Task 8)</li>
+            <li>Tools & Systems: Help desk, CRM, knowledge base (Task 9)</li>
+            <li>Metrics & Performance: CSAT, FRT, FCR, Resolution Time (Task 10)</li>
+        </ul>
+    </div>
 </div>
 
 <div class="content-section">
-    <h3>🏆 Skills Mastered</h3>
-    <ul>
-        <li>💰 CS Mindset: Support = Revenue Protection</li>
-        <li>🗣️ Communication Excellence: HEAT method</li>
-        <li>📋 Ticket Management: Priority matrix</li>
-        <li>🔧 Troubleshooting: 5-Step Fix Method</li>
-        <li>⬆️ Escalation Protocol</li>
-        <li>😤 De-escalation: CALM method</li>
-        <li>🛡️ Proactive Support</li>
-        <li>📊 Metrics & Performance</li>
-    </ul>
+    <h3>🏆 Core Frameworks Quick Reference</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Framework</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Components</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">When to Use</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>HEAT</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Hear, Empathize, Apologize, Take Action</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Every client interaction requiring empathy</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CALM</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Control, Acknowledge, Listen, Move to solution</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Angry or difficult client situations</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Priority Matrix</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">P1 Critical, P2 High, P3 Medium, P4 Low</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ticket triage and prioritization</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>5-Step Fix</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Identify, Reproduce, Isolate, Fix, Verify</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Technical troubleshooting</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>3-Second Rule</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pause, Review, Send</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Before sending any client message</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📊 Key Metrics Targets</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target</th>
+        </tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">CSAT</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">&gt;90%</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">First Response Time (FRT)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">&lt;1 Hour</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">First Contact Resolution (FCR)</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">&gt;70%</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Resolution Time</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">&lt;24 Hours</td></tr>
+    </table>
+    <p style="margin-top: 15px;"><strong>Pass the quiz below to unlock the advanced modules.</strong> The remaining tasks cover specialized skills: advanced de-escalation, upselling, marketplace mastery, multi-channel support, QA processes, career growth, and your final certification with real-world scenario simulations.</p>
 </div>
 `;
 
@@ -1158,6 +1214,1264 @@ const task11Quiz = [
     { q: "The CS training emphasizes that CS is 'Revenue Protection, not a cost center.' If your team handles 100 tickets/month, achieves 95% CSAT, and clients average ₹80K/year in retainer value, what is the approximate revenue you're PROTECTING monthly?", o: ["₹80,000 per client only — this reflects standard operating procedure for most professional teams", "Impossible to calculate without knowing profit margins", "Approximately ₹80L (₹80K × 100 clients) in annual retainer value, plus referral potential", "Revenue protection primarily applies to enterprise clients"], c: 2 }
 ];
 
+// ============ TASK 12: HANDLING DIFFICULT CLIENTS & DE-ESCALATION ============
+const task12Content = `
+<h2>📚 TASK 12: HANDLING DIFFICULT CLIENTS & DE-ESCALATION</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(245, 158, 11, 0.15)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🔥 Advanced De-escalation: Beyond the Basics</h3>
+    <p>Task 7 introduced the CALM method. Now we go deeper into the hardest situations you will face at Digital Heroes: <strong>refund demands, revision abuse, scope creep arguments, and clients who threaten to leave negative reviews.</strong></p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">Core Principle:</strong> Every angry client is a client who CARED enough to complain. Silent clients just leave. The ones who yell are the ones you can still save.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💰 Refund Request Decision Framework</h3>
+    <p>At DH, refunds follow a strict decision tree. You never approve or deny on your own — but you must know how to <strong>gather information, set expectations, and de-escalate</strong> while the decision is made.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Refund Type</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Who Decides</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CS Role</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Full refund (no work delivered)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Operations Manager</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Escalate immediately with order details</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Partial refund (work partially delivered)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM + Operations Manager</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Document what was delivered vs. promised, escalate</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revision-based complaint</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">PM reviews scope</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clarify what revisions are included, offer alternatives</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Platform dispute / chargeback</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delhi Team</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Immediately escalate — do NOT respond to dispute directly</td>
+        </tr>
+    </table>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>NEVER say:</strong> "We can give you a refund" or "We cannot give you a refund." Always say: "Let me escalate this to the right team member who can review this properly and get back to you within [timeframe]."
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🔄 Revision Abuse: Identifying & Handling</h3>
+    <p>DH projects typically include 2-3 revision rounds. Revision abuse happens when clients request unlimited changes beyond scope. Here is how to identify and handle it:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Red Flag</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response Strategy</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Changing original requirements</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Actually, I want a completely different homepage layout"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Refer to original brief, offer as paid add-on</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Adding new features as "revisions"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can you also add a blog section? That should be included"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Acknowledge enthusiasm, clarify scope, offer quote</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Repeated subjective changes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Try blue... no, red... actually green... maybe blue again"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offer 2-3 options upfront, get written approval before proceeding</td>
+        </tr>
+    </table>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">The Golden Script for Scope Creep:</strong><br>
+        "I love that you have so many ideas for your site! The current order covers [list deliverables]. The changes you are requesting go beyond the original scope, but we would love to help. I can get you a quick quote for these additions — would you like me to do that?"
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎭 The LASER De-escalation Method (Advanced)</h3>
+    <p>Building on CALM, the LASER method handles the most extreme situations:</p>
+    <div class="highlight-box">
+        <strong>L</strong> — <strong>Listen</strong> without interrupting (let them vent completely)<br>
+        <strong>A</strong> — <strong>Acknowledge</strong> their specific pain point (not generic empathy)<br>
+        <strong>S</strong> — <strong>Summarize</strong> what you heard back to them (proves you listened)<br>
+        <strong>E</strong> — <strong>Explain</strong> what you CAN do (not what you cannot)<br>
+        <strong>R</strong> — <strong>Resolve</strong> with a concrete next step and timeline
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>📖 CASE STUDY: The Review Threat</h3>
+    <p><strong>Situation:</strong> A client whose Shopify store was delivered on time messages: "The design looks NOTHING like what I asked for. Fix it in 24 hours or I am leaving a 1-star review and filing a dispute."</p>
+    <p><strong>What the CS rep did (LASER method):</strong></p>
+    <ol>
+        <li><strong>Listen:</strong> Let the client describe every issue without interrupting</li>
+        <li><strong>Acknowledge:</strong> "I can see why you are frustrated — the color scheme and banner layout do not match your mood board"</li>
+        <li><strong>Summarize:</strong> "So the three main concerns are: header color, product grid spacing, and the missing testimonial section"</li>
+        <li><strong>Explain:</strong> "Here is what I can do right now — I am flagging this as priority with our design lead"</li>
+        <li><strong>Resolve:</strong> "You will receive updated mockups by 2 PM tomorrow. I will personally follow up at 3 PM to walk you through the changes"</li>
+    </ol>
+    <p><strong>Result:</strong> Revisions delivered in 18 hours. Client updated to a 5-star review praising "incredible customer service recovery."</p>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🎯 Emotional Triggers & Response Strategies</h3>
+    <p>Different client emotions require different approaches. Recognizing the trigger helps you choose the right de-escalation path:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Emotional Trigger</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Says</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Your Strategy</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Fear (Revenue Loss)</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My store is losing money every minute!"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Validate urgency, provide immediate action plan with ETA</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Frustration (Repeated Issues)</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"This is the THIRD time I am reporting this!"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Acknowledge pattern, take personal ownership, escalate</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Betrayal (Unmet Expectations)</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"You promised this would be done by Monday!"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Do not deflect blame, acknowledge the broken commitment, offer recovery plan</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Contempt (Lost Trust)</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your team clearly does not know what they are doing."</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Stay calm, ask for specifics, demonstrate competence through action</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🛡️ Scripts for the 5 Hardest Situations</h3>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #60A5FA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">1. Client Demands Immediate Refund:</strong><br>
+        "I completely understand your frustration and I take this very seriously. I want to make sure this gets the proper attention it deserves, so I am escalating this to our Operations Manager who has the authority to review refund requests. You will hear back within [timeframe]. In the meantime, is there anything specific I can address right now?"
+    </div>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">2. Client Threatens Negative Review:</strong><br>
+        "I hear you and I understand why you feel that way. My goal right now is to make sure you are completely satisfied with the outcome. Let me focus on resolving [specific issue] for you. Can you walk me through exactly what needs to change so I can get this right?"
+    </div>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #34D399; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">3. Client Accuses Team of Incompetence:</strong><br>
+        "I appreciate you being direct about your concerns. I want to understand the specific issues so we can fix them properly. Can you share 2-3 examples of what went wrong? I will personally review each one and get back to you with a detailed action plan."
+    </div>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F472B6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F472B6;">4. Client Wants to Cancel Mid-Project:</strong><br>
+        "I understand you are considering this and I respect that. Before we proceed with any cancellation, I would love to understand what has led to this decision. Often we can address the root concern and get things back on track. Would you be open to a quick conversation about what we can do differently?"
+    </div>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #EF4444;">5. Client Uses Abusive Language:</strong><br>
+        "I want to help resolve this for you and I am committed to finding a solution. I do ask that we keep our communication professional so I can focus fully on fixing the problem. Let us work through this together — what is the most urgent issue I should tackle first?"
+    </div>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>NEVER DO:</strong> Match the client's emotional tone, make promises you cannot keep, blame colleagues, use dismissive language ("calm down", "it is not that bad"), or go silent hoping the problem resolves itself.
+    </div>
+</div>
+`;
+
+const task12Quiz = [
+    { q: "A client demands a full refund for a Shopify store that was 80% completed. As a CS rep, what is your correct action?", o: ["Approve the refund immediately to avoid a negative review", "Deny the refund and explain that work was already done", "Document what was delivered vs. promised, then escalate to PM + Operations Manager for a decision", "Tell the client to file a dispute through the marketplace platform"], c: 2 },
+    { q: "What does the LASER de-escalation method stand for?", o: ["Listen, Apologize, Solve, Empathize, Respond", "Listen, Acknowledge, Summarize, Explain, Resolve", "Lead, Ask, Support, Elevate, Review", "Learn, Adapt, Strategize, Execute, Report"], c: 1 },
+    { q: "A client says: 'I want you to also add a blog and membership area — that should be part of the revisions.' The original order was for a 5-page Shopify store. What do you do?", o: ["Add the blog and membership area — client satisfaction comes first", "Refuse and say those features were never discussed", "Acknowledge their enthusiasm, clarify the original scope, and offer to quote the additions as a paid add-on", "Tell them to place a new order for those features"], c: 2 },
+    { q: "A client threatens to leave a 1-star review unless you give them free extra work. According to DH training, what is the correct response?", o: ["Do the free work to protect the profile rating", "Report them to the platform for extortion", "Stay professional, acknowledge their frustration, clarify what is included in the scope, offer alternatives, and escalate if needed", "Ignore the threat and close the ticket"], c: 2 },
+    { q: "When a client requests a refund, which phrase should you NEVER use?", o: ["Let me escalate this to the appropriate team member", "I understand your frustration and want to help resolve this", "We cannot give you a refund — that is our policy", "Let me review the details and get back to you within 24 hours"], c: 2 },
+    { q: "A client has requested color changes 6 times on the same homepage banner, going back to the original color. This is an example of:", o: ["Thorough client engagement that should be encouraged", "Revision abuse — repeated subjective changes that exceed reasonable scope", "Normal revision process for design projects", "A sign that the designer needs better training"], c: 1 },
+    { q: "In the LASER method, what is the purpose of the 'Summarize' step?", o: ["To create a written record for legal protection", "To prove to the client that you listened and understood their specific concerns", "To buy time while you think of a solution", "To show the client how many problems they reported"], c: 1 },
+    { q: "A platform dispute is filed against a DH order. As CS, your immediate action should be:", o: ["Respond to the dispute with your side of the story", "Contact the client and try to resolve it before the platform reviews it", "Immediately escalate to Delhi Team — do NOT respond to the dispute directly", "Accept the dispute to avoid further conflict"], c: 2 },
+    { q: "A client says: 'Your developer is incompetent. I want someone else assigned immediately.' The correct CS response is:", o: ["Agree with the client and promise a new developer", "Defend the developer and explain they are highly skilled", "Acknowledge the frustration, ask for specific issues, document the concerns, and escalate to the PM for team review", "Transfer the client to the developer to sort it out directly"], c: 2 },
+    { q: "Which scenario is NOT considered revision abuse?", o: ["Client requests a completely different homepage layout after approving the original", "Client asks for a blog section to be added as a 'revision'", "Client requests fixing a broken contact form that was part of the original deliverables", "Client changes the color scheme for the 5th time with no clear direction"], c: 2 },
+    { q: "A client is calm but firm: 'I have been waiting 5 days for a simple fix. If this is not resolved by tomorrow, I am moving to another agency.' Using the LASER method, your FIRST step is:", o: ["Immediately promise the fix will be done tonight to prevent churn", "Listen without interrupting — let them express the full extent of their frustration and timeline concern before responding", "Explain that 5 days is within the normal turnaround for complex fixes", "Summarize the issue and ask if they can wait 2 more days"], c: 1 },
+    { q: "A WordPress client demands 10 rounds of design revisions on a project that includes 3 rounds. After round 4, the CS rep should:", o: ["Continue doing revisions to keep the client happy — client satisfaction is the top priority at all costs", "Stop all work and refuse further changes until they pay more", "Politely reference the original scope (3 rounds included), summarize what has been delivered, and offer a paid add-on package for additional revision rounds", "Tell the client they are being unreasonable and escalate to management"], c: 2 }
+];
+
+// ============ TASK 13: UPSELLING & CROSS-SELLING ============
+const task13Content = `
+<h2>📚 TASK 13: UPSELLING & CROSS-SELLING — Growing Client Accounts</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">💰 CS as a Revenue Driver</h3>
+    <p>Most people think CS is about solving problems. At DH, CS is also about <strong>identifying opportunities</strong>. Every support interaction is a window into what the client needs next. You are not being pushy — you are being <strong>helpful by anticipating needs</strong>.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #34D399; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">The Numbers:</strong>
+        <ul>
+            <li>Selling to an existing client has a <strong>60-70% success rate</strong> vs. 5-20% for new prospects</li>
+            <li>Existing clients spend <strong>67% more</strong> on average than new ones</li>
+            <li>A well-timed upsell recommendation from CS converts at <strong>3x the rate</strong> of cold outreach</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Upsell vs. Cross-sell: Know the Difference</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Type</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Definition</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">DH Example</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Upsell</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Upgrade existing service to a higher tier</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5-page store client upgrades to 15-page premium store</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Cross-sell</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add complementary services</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Shopify store client adds SEO package or logo design</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🔍 Spotting Upsell Triggers in Support Conversations</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Says</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Opportunity</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Suggested Response</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I wish my store had a blog"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content / blog setup add-on</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Great idea! A blog can boost your SEO significantly. We offer a blog setup package — would you like me to get you pricing?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My site is not showing up on Google"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO optimization service</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"That is a common concern! We have an SEO package that can help improve your rankings. Want me to share details?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I need to update products regularly"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Monthly maintenance retainer</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"We offer monthly maintenance plans so you never have to worry about updates. Shall I send you the options?"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Can you make my logo bigger?"</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Logo redesign / branding package</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"If you are looking to refresh your branding, we also do professional logo design and brand identity packages."</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📋 The RIGHT Way to Upsell (The SERVE Method)</h3>
+    <div class="highlight-box">
+        <strong>S</strong> — <strong>Solve</strong> their current problem FIRST (never upsell before resolving)<br>
+        <strong>E</strong> — <strong>Educate</strong> about how the add-on helps their business goals<br>
+        <strong>R</strong> — <strong>Recommend</strong> based on their specific situation (not generic)<br>
+        <strong>V</strong> — <strong>Value</strong> — frame in terms of ROI, not cost<br>
+        <strong>E</strong> — <strong>Easy</strong> — make the next step simple ("Want me to get you a quote?")
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>NEVER upsell when:</strong>
+        <ul>
+            <li>The client is angry or frustrated (solve first!)</li>
+            <li>The client just filed a complaint</li>
+            <li>The current order has unresolved issues</li>
+            <li>It feels forced or irrelevant to their needs</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📊 DH Service Add-ons You Should Know</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(139, 92, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Service</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Best For</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Typical Trigger</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SEO Optimization</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clients wanting more traffic</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Not getting enough visitors"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Speed Optimization</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Slow-loading stores</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My site takes forever to load"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Monthly Maintenance</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clients with ongoing needs</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I keep needing small changes"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Content Writing</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clients with poor product descriptions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"My product pages do not convert"</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Logo / Branding</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New businesses or rebrands</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"I do not have a proper logo yet"</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📈 Revenue Impact of CS-Driven Upsells</h3>
+    <p>CS-driven upsells are not just a nice-to-have — they are a critical revenue stream for DH:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(16, 185, 129, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Industry Average</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">DH Target</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Upsell Conversion Rate</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">10-12%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15%+</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Avg Add-On Value per Client</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15-20% of original order</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">25%+ of original order</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Repeat Order Rate</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20-25%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">30%+</td>
+        </tr>
+    </table>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>The 3 Upsell Killers — NEVER Do These:</strong>
+        <ol>
+            <li><strong>Hard-selling during a complaint:</strong> The client is frustrated and you pitch a paid service — instant trust destruction</li>
+            <li><strong>Recommending irrelevant services:</strong> Suggesting SEO to a client who only needs a logo — shows you are not listening</li>
+            <li><strong>Pushing price before value:</strong> "This costs $200" vs. "This typically increases conversion rates by 25-40%" — always lead with benefit</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Upsell Tracking & Accountability</h3>
+    <p>Every CS rep should track their upsell efforts:</p>
+    <ul>
+        <li><strong>Log every opportunity identified</strong> — even if the client declines, it shows initiative</li>
+        <li><strong>Track conversion rate</strong> — how many suggestions turned into actual orders</li>
+        <li><strong>Report monthly</strong> — share upsell wins and learnings in team meetings</li>
+        <li><strong>Celebrate team wins</strong> — upsells contribute to company revenue targets and your growth reviews</li>
+    </ul>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">Pro Tip:</strong> The best upsell opportunities come from active listening during support conversations. When a client mentions a pain point that one of DH's services solves, that is your moment — but only AFTER their current issue is resolved.
+    </div>
+</div>
+`;
+
+const task13Quiz = [
+    { q: "What is the difference between upselling and cross-selling?", o: ["Upselling is for new clients, cross-selling is for existing clients", "Upselling means upgrading to a higher tier service, cross-selling means adding complementary services", "They are the same thing with different names", "Upselling is done by sales, cross-selling is done by CS"], c: 1 },
+    { q: "A client says 'My site is not showing up on Google at all.' After resolving their current support issue, what is the appropriate upsell opportunity?", o: ["Suggest they rebuild their entire site", "Recommend DH's SEO optimization service since it directly addresses their concern", "Tell them Google takes time and do nothing", "Suggest they run paid ads instead"], c: 1 },
+    { q: "According to the SERVE method, what must you do BEFORE making any upsell recommendation?", o: ["Get manager approval for the upsell", "Check the client's budget first", "Solve their current problem first — never upsell before resolving", "Send them a catalog of all available services"], c: 2 },
+    { q: "A client just filed an angry complaint about a delayed delivery. During the conversation, they mention wanting a blog. Should you upsell the blog setup?", o: ["Yes — strike while the iron is hot", "Yes — but only if they seem to be calming down", "No — never upsell when the client is frustrated or has an unresolved complaint", "No — only the sales team can suggest add-ons"], c: 2 },
+    { q: "What does the 'V' in the SERVE upsell method stand for?", o: ["Verify the client's interest first", "Value — frame the recommendation in terms of ROI, not cost", "Volume — suggest multiple services at once", "Validate — confirm with your manager before suggesting"], c: 1 },
+    { q: "Selling to an existing client has approximately what success rate compared to new prospects?", o: ["The same rate — about 20%", "60-70% vs. 5-20% for new prospects", "30-40% vs. 10-15% for new prospects", "90% vs. 50% for new prospects"], c: 1 },
+    { q: "A client with a basic 5-page Shopify store says: 'I keep needing small changes every week and it is getting expensive placing new orders.' What is the best cross-sell opportunity?", o: ["Suggest they learn to do changes themselves", "Recommend a monthly maintenance retainer plan", "Tell them to batch their change requests", "Suggest they hire a freelancer for small changes"], c: 1 },
+    { q: "Which of these is the WRONG way to frame an upsell?", o: ["'A blog can boost your SEO and bring more organic traffic to your store'", "'We have this add-on that costs extra — do you want it?'", "'Based on your goal of increasing conversions, product photography could help showcase your items better'", "'Many clients in your industry see great results with our speed optimization package'"], c: 1 },
+    { q: "After successfully resolving a client's checkout bug, they mention poor product descriptions. Using the SERVE method, what is your next step?", o: ["Immediately offer content writing services", "Educate them on how professional product copy can improve conversion rates, then recommend DH's content writing service", "Send them a link to a copywriting course", "Tell the sales team to follow up later"], c: 1 },
+    { q: "A CS rep notices a client's store loads in 8 seconds (very slow). The client has not mentioned speed as a concern. What should the CS rep do?", o: ["Do nothing — the client did not ask about speed", "Proactively mention that page speed affects conversions and suggest DH's speed optimization service", "Secretly fix the speed issue for free", "Report the speed issue to the dev team and let them handle it"], c: 1 },
+    { q: "A long-term client orders a Shopify store redesign. During requirements discussion, they mention they also need product photography. The SERVE method says your next step is:", o: ["Immediately send them a quote for photography services", "Wait until the redesign is complete before mentioning photography", "Solve the redesign scope first, then Educate them on how professional product images increase conversions by 30-40%, and Recommend DH's photography add-on", "Tell the sales team to contact them about photography separately"], c: 2 },
+    { q: "Your team's monthly upsell conversion rate is 8%. The target is 15%. Which strategy would MOST effectively improve this metric?", o: ["Send bulk promotional emails to all existing clients offering discounts on add-ons", "Train the CS team to identify natural upsell opportunities during support conversations and use the SERVE framework consistently", "Lower the prices of all add-on services to make them more attractive", "Have the sales team take over all upsell conversations from CS"], c: 1 }
+];
+
+// ============ TASK 14: MARKETPLACE PLATFORM MASTERY ============
+const task14Content = `
+<h2>📚 TASK 14: MARKETPLACE PLATFORM MASTERY — Order Lifecycle & Seller Metrics</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🏪 Understanding the Marketplace Ecosystem</h3>
+    <p>Digital Heroes delivers services through online marketplace platforms. As a CS rep, you MUST understand how the platform works — from order placement to delivery to reviews. <strong>Your actions directly impact our seller profile metrics, which determine our visibility and success.</strong></p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">Why This Matters:</strong> Platform algorithms rank sellers based on performance metrics. Better metrics = higher visibility = more orders = more revenue. One bad interaction can damage metrics that took months to build.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📦 The Order Lifecycle</h3>
+    <p>Every order follows this lifecycle on the marketplace platform. CS must understand each stage:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Stage</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What Happens</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CS Responsibility</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>1. Order Placed</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client places order through platform</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Send welcome message within 30 minutes, clarify requirements</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>2. Requirements Gathering</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Collect all needed info from client</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use requirement checklist, confirm scope in writing</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>3. In Progress</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Development team works on the project</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Send progress updates, manage timeline expectations</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>4. Delivery</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Work submitted to client for review</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deliver with walkthrough message, highlight key features</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>5. Revision (if needed)</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client requests changes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clarify revision scope, manage expectations, track revision count</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>6. Completion</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client accepts and order closes</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Thank client, request review, offer future assistance</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⭐ Seller Metrics That Matter</h3>
+    <p>These metrics determine DH's ranking and visibility on the platform:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Impact of Poor Performance</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Response Time</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 1 hour average</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Drops search ranking, loses "fast responder" badge</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Order Completion Rate</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Above 90%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cancellations hurt ranking severely</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>On-Time Delivery</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Above 90%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Late deliveries trigger warnings and rank drops</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Review Rating</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4.8+ stars average</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Below 4.7 significantly reduces new order volume</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Dispute Rate</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Below 2%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">High dispute rates can lead to account restrictions</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>⭐ The Art of Getting 5-Star Reviews</h3>
+    <p>Reviews are the lifeblood of our marketplace presence. Here is how CS drives positive reviews:</p>
+    <div class="highlight-box">
+        <strong>The Review Generation Framework:</strong>
+        <ol>
+            <li><strong>Deliver excellence:</strong> Exceed expectations during the entire order</li>
+            <li><strong>Personal touch:</strong> Send a personalized thank-you message at delivery</li>
+            <li><strong>Timing:</strong> Request the review right after a positive interaction, not during problems</li>
+            <li><strong>Make it easy:</strong> "If you are happy with the work, we would love a review — it really helps our team!"</li>
+            <li><strong>Never pressure:</strong> One polite ask is enough. Never beg or offer incentives for reviews.</li>
+        </ol>
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>Platform Policy Alert:</strong> NEVER offer discounts, free work, or any incentive in exchange for positive reviews. This violates platform terms and can result in account suspension.
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F87171; margin-top: 0;">🚨 Handling Negative Reviews</h3>
+    <p>When a client leaves a negative review, follow this protocol:</p>
+    <ol>
+        <li><strong>Do NOT respond emotionally.</strong> Wait at least 30 minutes before drafting a response.</li>
+        <li><strong>Acknowledge:</strong> "Thank you for your feedback. We take this seriously."</li>
+        <li><strong>Offer resolution:</strong> "We would like to make this right. Can we discuss how to address your concerns?"</li>
+        <li><strong>Escalate internally:</strong> Alert PM and Operations Manager immediately.</li>
+        <li><strong>Follow up:</strong> If the issue is resolved, politely ask if they would consider updating their review.</li>
+    </ol>
+</div>
+
+<div class="content-section">
+    <h3>📋 Order Communication Timeline</h3>
+    <p>Every marketplace order should follow this communication schedule. Missing any step risks losing the client or damaging metrics:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timing</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Action</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Template</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Within 30 min of order</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Welcome + Requirements</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Thank you for choosing DH! Let us gather your requirements to get started."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Day 1 of development</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Work Started confirmation</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your project is now in progress. You will receive a first draft by [date]."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">50% completion</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Progress update</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Quick update — we are halfway through. Here is a preview of the progress."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Before delivery</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CS QA check</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Internal — verify against requirements before client sees it</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delivery day</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delivery message</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Your project is complete! Please review and let us know if anything needs adjustment."</td>
+        </tr>
+    </table>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>Late Delivery Protocol:</strong> If a delivery will be late, you MUST inform the client BEFORE the deadline — never after. Request a deadline extension through the platform when possible. Late deliveries without proactive communication are the #1 cause of negative reviews.
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🏆 Seller Level Benefits</h3>
+    <p>Higher seller levels mean more visibility, more orders, and better commission structures:</p>
+    <ul>
+        <li><strong>New Seller:</strong> Limited visibility, building initial review base</li>
+        <li><strong>Level 1:</strong> Moderate visibility, access to basic promoted listings</li>
+        <li><strong>Level 2:</strong> High visibility, priority in search results, access to premium features</li>
+        <li><strong>Top Rated:</strong> Maximum visibility, featured placements, highest client trust</li>
+    </ul>
+    <p>Every metric you maintain — response time, completion rate, review score — contributes to climbing these levels. <strong>One bad month can drop you a level that took 6 months to earn.</strong></p>
+</div>
+`;
+
+const task14Quiz = [
+    { q: "A new order is placed on the marketplace platform. What should CS do within the first 30 minutes?", o: ["Wait for the client to message first", "Send a welcome message and begin clarifying requirements", "Assign the order to a developer immediately", "Send the client a list of all DH services"], c: 1 },
+    { q: "Which seller metric, if it drops below target, can lead to account restrictions on the marketplace platform?", o: ["Response Time", "Review Rating", "Dispute Rate — high dispute rates can lead to account restrictions", "On-Time Delivery"], c: 2 },
+    { q: "A client just accepted their completed Shopify store and seems very happy. When is the best time to ask for a review?", o: ["Wait a week so they can test the site thoroughly", "Right now — immediately after the positive completion interaction", "Never ask — let them review on their own", "Ask during the next order they place"], c: 1 },
+    { q: "What is the correct order of the marketplace order lifecycle?", o: ["Requirements → Order Placed → In Progress → Delivery → Completion", "Order Placed → Requirements Gathering → In Progress → Delivery → Revision (if needed) → Completion", "Order Placed → Delivery → Requirements → Revision → Completion", "In Progress → Order Placed → Delivery → Completion → Review"], c: 1 },
+    { q: "A client leaves a 2-star review saying 'Communication was poor.' What is your FIRST action?", o: ["Respond immediately defending the team's communication", "Wait at least 30 minutes, then respond professionally acknowledging the feedback and offering to make it right", "Report the review as unfair to the platform", "Ignore it — one bad review will not matter"], c: 1 },
+    { q: "Why should you NEVER offer discounts or free work in exchange for positive reviews?", o: ["Because it is too expensive for the company", "Because clients do not respond to such offers", "Because it violates marketplace platform terms and can result in account suspension", "Because the sales team handles all discount approvals"], c: 2 },
+    { q: "The target order completion rate on the marketplace platform should be:", o: ["Above 70%", "Above 80%", "Above 90%", "100% — no cancellations ever"], c: 2 },
+    { q: "During the 'In Progress' stage of an order, what is the CS rep's primary responsibility?", o: ["Writing the code for the project", "Sending progress updates and managing timeline expectations with the client", "Waiting until the developer finishes to contact the client", "Collecting payment from the client"], c: 1 },
+    { q: "A delivery is going to be 2 days late due to a developer being sick. What should CS do?", o: ["Deliver whatever is ready and fix the rest later", "Wait until the deadline passes and then inform the client", "Proactively inform the client BEFORE the deadline, explain the situation, provide a new timeline, and request a deadline extension if possible", "Cancel the order to avoid a late delivery metric hit"], c: 2 },
+    { q: "DH's target review rating on the marketplace platform is:", o: ["4.0+ stars", "4.5+ stars", "4.8+ stars", "5.0 stars only"], c: 2 },
+    { q: "A client requests a cancellation on the marketplace platform after requirements were gathered but before development started. What is the CS rep's FIRST priority?", o: ["Accept the cancellation immediately to maintain good client relations", "Refuse the cancellation since requirements gathering counts as work delivered", "Try to save the order by understanding the client's concerns, offer solutions, and only escalate to Operations Manager if the client insists", "Tell the client cancellations are not allowed on the platform"], c: 2 },
+    { q: "Your marketplace platform response time metric has dropped to 3 hours average (target is under 1 hour). What is the most likely root cause and solution?", o: ["The platform is slow — file a support ticket with the marketplace", "You are not checking platform messages frequently enough — set up notifications and check at least every 30 minutes during working hours", "Response time metrics are inaccurate and should be ignored", "Ask management to reduce your workload so you can respond faster"], c: 1 }
+];
+
+// ============ TASK 15: MULTI-CHANNEL SUPPORT ============
+const task15Content = `
+<h2>📚 TASK 15: MULTI-CHANNEL SUPPORT — Concurrent Conversations & Prioritization</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">📱 The Multi-Channel Reality</h3>
+    <p>At Digital Heroes, client communication happens across multiple channels simultaneously. You will manage conversations on the <strong>marketplace platform inbox, Discord, WhatsApp, email, and live chat</strong> — often all at the same time. Mastering multi-channel support is the difference between a good CS rep and a great one.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">Key Stat:</strong> The average DH CS rep handles 8-12 concurrent conversations during peak hours. Without a system, quality drops fast.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Channel Priority Matrix</h3>
+    <p>Not all channels carry equal urgency. Use this matrix:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Channel</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Response Target</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Priority Level</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Marketplace Platform</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 30 min</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">HIGHEST</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Impacts seller metrics and platform ranking directly</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Live Chat</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 2 min</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">HIGHEST</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client is waiting in real-time</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>WhatsApp</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 30 min</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">HIGH</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clients expect quick replies on messaging apps</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Discord (Internal)</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 1 hour</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">MEDIUM</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Internal coordination, not client-facing</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Email</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Under 2 hours</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">MEDIUM</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asynchronous, clients expect slower response</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">🧠 The BATCH Method for Managing Concurrent Conversations</h3>
+    <div class="highlight-box">
+        <strong>B</strong> — <strong>Block</strong> your time: Dedicate 15-minute blocks to each channel rotation<br>
+        <strong>A</strong> — <strong>Acknowledge</strong> every message quickly, even if you cannot resolve immediately<br>
+        <strong>T</strong> — <strong>Triage</strong> by urgency: P1 first, then platform messages, then others<br>
+        <strong>C</strong> — <strong>Consolidate</strong> related conversations (same client, same issue across channels)<br>
+        <strong>H</strong> — <strong>Handoff</strong> cleanly when shifting to a colleague (full context transfer)
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚡ Quick Acknowledgment Templates</h3>
+    <p>When you cannot resolve immediately but need to respond fast:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Situation</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Quick Acknowledgment</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complex technical issue</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Thanks for reaching out! I am looking into this right now and will have an update for you within [timeframe]."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Need to check with team</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Great question! Let me check with our team and get back to you within the hour."</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">After hours message</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Hi! I received your message and will address this first thing in the morning. Thank you for your patience!"</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🚫 Common Multi-Channel Mistakes</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(239, 68, 68, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mistake</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Why It Happens</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How to Avoid</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sending the wrong info to the wrong client</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Juggling too many conversations</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Always verify client name before sending</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Forgetting to follow up</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No tracking system</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use a follow-up tracker or set reminders</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Giving different answers on different channels</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Not checking previous conversations</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Consolidate all client interactions in one thread</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Ignoring lower-priority channels</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tunnel vision on urgent tickets</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use the BATCH rotation to cover all channels</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">⏱️ Response Time Management</h3>
+    <p>Response time is the #1 metric that affects both client satisfaction and platform ranking. Use these strategies:</p>
+    <ul>
+        <li><strong>Set up notifications</strong> for all channels — never miss a message</li>
+        <li><strong>Use canned responses</strong> for common questions (but personalize them!)</li>
+        <li><strong>Acknowledge first, resolve second</strong> — a quick "I am on it" buys goodwill</li>
+        <li><strong>Track your own FRT</strong> — aim to beat your personal best each week</li>
+        <li><strong>Escalate early</strong> — if you cannot respond in time, hand off to a teammate</li>
+    </ul>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Shift Handoff Protocol</h3>
+    <p>When your shift ends and conversations are still active, a proper handoff prevents dropped balls:</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #60A5FA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">Handoff Checklist (Required for Every Active Conversation):</strong>
+        <ol>
+            <li><strong>Client Name:</strong> Who are you handing off</li>
+            <li><strong>Issue Summary:</strong> What is the problem in 1-2 sentences</li>
+            <li><strong>Current Status:</strong> Where does it stand right now</li>
+            <li><strong>Commitments Made:</strong> Any promises you gave (callbacks, deadlines, ETAs)</li>
+            <li><strong>Next Steps:</strong> What needs to happen next</li>
+            <li><strong>Priority Level:</strong> P1/P2/P3/P4 classification</li>
+        </ol>
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>Critical Rule:</strong> If you promised a client a callback at 4 PM and your shift ends at 3:30 PM, you MUST either stay for the callback or explicitly hand it off with the exact commitment. A missed callback is a broken promise — and broken promises destroy trust.
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>📖 CASE STUDY: The Multi-Channel Save</h3>
+    <p><strong>Situation:</strong> A VIP client sent the same complaint on WhatsApp, email, and the marketplace platform within 10 minutes. The previous CS rep responded on WhatsApp with "we are looking into it" but never followed up. Two hours later, the client escalated on the marketplace platform threatening a dispute.</p>
+    <p><strong>What the experienced CS rep did:</strong></p>
+    <ol>
+        <li>Identified all three messages as the same client and same issue</li>
+        <li>Responded on the marketplace platform FIRST (highest priority channel)</li>
+        <li>Referenced the WhatsApp conversation to show continuity</li>
+        <li>Provided a concrete resolution plan with 2-hour ETA</li>
+        <li>Resolved the issue within 90 minutes and followed up on all channels</li>
+    </ol>
+    <p><strong>Result:</strong> Dispute avoided. Client left a 5-star review mentioning "responsive across all channels."</p>
+</div>
+`;
+
+const task15Quiz = [
+    { q: "Which communication channel has the HIGHEST priority at DH due to its direct impact on seller metrics?", o: ["Email", "Discord", "Marketplace platform inbox and live chat", "WhatsApp"], c: 2 },
+    { q: "What does the 'A' in the BATCH method stand for?", o: ["Assign tasks to team members", "Acknowledge every message quickly, even if you cannot resolve immediately", "Automate responses for common questions", "Analyze conversation patterns"], c: 1 },
+    { q: "You are handling 10 concurrent conversations and a new marketplace platform message comes in. You cannot resolve it immediately. What should you do?", o: ["Ignore it until you finish your current conversations", "Send a quick acknowledgment within the response target and provide an ETA for resolution", "Forward it to another team member without context", "Mark it as read and come back to it later"], c: 1 },
+    { q: "The target response time for marketplace platform messages is:", o: ["Under 2 hours", "Under 1 hour", "Under 30 minutes", "Under 5 minutes"], c: 2 },
+    { q: "A client messages you on WhatsApp about an issue, then sends the same message on the marketplace platform. What should you do?", o: ["Respond on both channels with different information", "Only respond on WhatsApp since they messaged there first", "Consolidate — respond on the marketplace platform (higher priority) and reference the WhatsApp message", "Tell the client to only use one channel"], c: 2 },
+    { q: "What is the most common reason CS reps send wrong information to a wrong client?", o: ["They are not trained well enough", "They are juggling too many conversations without verifying the client name before sending", "The CRM system is confusing", "Clients have similar names"], c: 1 },
+    { q: "You receive a complex technical question at 5:45 PM and your shift ends at 6:00 PM. What is the correct action?", o: ["Ignore it — your shift is ending", "Send a quick reply with whatever you think the answer might be", "Acknowledge the message, provide an ETA, and hand off to the next shift with full context", "Tell the client you are off duty and to message back tomorrow"], c: 2 },
+    { q: "How often should you rotate through channels when using the BATCH method?", o: ["Every hour", "Every 15-minute blocks", "Only when you finish all conversations on one channel", "Every 5 minutes"], c: 1 },
+    { q: "What is the biggest risk of ignoring lower-priority channels like email?", o: ["Emails are not important", "Clients will switch to higher-priority channels, increasing your load there, and issues may escalate from simple requests to complaints", "There is no real risk — focus on urgent channels only", "Lower-priority channels do not affect metrics"], c: 1 },
+    { q: "A colleague is going on break and hands off 3 conversations to you. What information do you need from them?", o: ["Just the client names", "Full context: client name, issue summary, current status, any commitments made, and expected next steps", "Only the ticket numbers", "Nothing — you can read the conversation history yourself"], c: 1 },
+    { q: "You are handling 6 marketplace conversations, 2 WhatsApp messages, and 4 emails. A marketplace client sends an urgent message about a broken checkout on their live store. Using channel priority, what do you do?", o: ["Finish your current email reply first since you already started it", "Respond to the WhatsApp messages first since they came in earlier", "Drop everything and respond to the urgent marketplace message immediately — marketplace is highest priority and a broken checkout is P1 Critical", "Send a quick auto-reply on the marketplace and continue with your current task"], c: 2 },
+    { q: "During a shift handoff, you forget to mention that you promised Client X a callback at 4 PM. The next shift CS rep does not call. Client X messages angrily at 5 PM. Who is primarily responsible?", o: ["The next shift CS rep — they should have checked all open conversations", "Client X — they should have called us instead of waiting", "You — failing to include commitments made in the handoff context directly caused the broken promise", "Management — they should have a better handoff system in place"], c: 2 }
+];
+
+// ============ TASK 16: QA & CLIENT SATISFACTION ============
+const task16Content = `
+<h2>📚 TASK 16: QUALITY ASSURANCE & CLIENT SATISFACTION</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">✅ QA Is Your Responsibility Too</h3>
+    <p>Most CS reps think QA is only for developers. At DH, <strong>CS is the last line of defense before the client sees the work</strong>. If you catch a problem before delivery, you save the company a complaint, a revision round, and potential reputation damage.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #34D399; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">The Cost of Skipping QA:</strong>
+        <ul>
+            <li>A bug caught before delivery costs <strong>5 minutes</strong> to fix</li>
+            <li>The same bug caught by the client costs <strong>2 hours</strong> (revision + communication + trust repair)</li>
+            <li>That same bug turning into a negative review costs <strong>weeks of lost revenue</strong></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 The CS Pre-Delivery QA Checklist</h3>
+    <p>Before ANY delivery goes to a client, CS should verify:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Category</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Check Items</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Visual Match</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Does the delivery match the client's requirements/brief? Check colors, fonts, layout against original request.</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Functionality</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Click every link, test every button, fill every form. Does the contact form work? Do product pages load?</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Mobile Responsiveness</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Open on phone or use browser dev tools. Is text readable? Do images resize? Is navigation usable?</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Content Accuracy</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No placeholder text (Lorem Ipsum). Correct spelling. Right phone numbers, addresses, emails.</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Speed</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Does the site load in under 3 seconds? Are images optimized?</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Scope Completeness</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Every deliverable listed in the order is included. No missing pages or features.</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🔄 The Feedback Loop System</h3>
+    <p>Client satisfaction does not end at delivery. DH uses a structured feedback loop:</p>
+    <ol>
+        <li><strong>Post-Delivery Check-in (Day 1):</strong> "Everything look good? Any questions about any features?"</li>
+        <li><strong>Follow-up (Day 3):</strong> "Just checking in — have you had a chance to explore the site? Any adjustments needed?"</li>
+        <li><strong>Satisfaction Survey (Day 7):</strong> "On a scale of 1-10, how satisfied are you with the final result?"</li>
+        <li><strong>Review Request (Day 7-10):</strong> If satisfaction is 8+, politely request a review</li>
+        <li><strong>Long-term Follow-up (Day 30):</strong> "How is your site performing? Need any help with updates?"</li>
+    </ol>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>Critical:</strong> If the Day 7 satisfaction score is below 7, do NOT request a review. Instead, immediately ask what can be improved and escalate to PM.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Client Satisfaction Metrics CS Should Track</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How to Measure</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Target</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Repeat Client Rate</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">% of clients who place a second order</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&gt;30%</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Revision Request Rate</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">% of deliveries requiring revisions</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&lt;30%</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">NPS (Net Promoter Score)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Would clients recommend DH? (0-10 scale)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&gt;50</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Escalation Rate</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">% of tickets escalated to management</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&lt;10%</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">📝 Review Request Strategy</h3>
+    <p>Reviews are the lifeblood of marketplace visibility. But asking at the wrong time or in the wrong way can backfire. Follow these rules:</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #34D399; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">When to Ask for a Review:</strong>
+        <ul>
+            <li>Client has explicitly expressed satisfaction (score 8+ or positive message)</li>
+            <li>All deliverables have been completed and accepted</li>
+            <li>No outstanding issues or pending revisions</li>
+            <li>Day 7-10 after delivery (enough time to test, not so long they forget)</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F87171;">When NOT to Ask:</strong>
+        <ul>
+            <li>Client satisfaction score is below 7</li>
+            <li>There are unresolved complaints or pending revisions</li>
+            <li>The client has expressed any frustration in the last 48 hours</li>
+            <li>Immediately after resolving a complaint (wait at least 3 days)</li>
+        </ul>
+    </div>
+
+    <p><strong>Review Request Template:</strong></p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #60A5FA; padding: 20px; margin: 15px 0;">
+        "Hi [Client Name], it has been a pleasure working with you on this project! We are so glad you are happy with the results. If you have a moment, a review would mean the world to our team — it helps other businesses find us and keeps us motivated to deliver our best work. Thank you for choosing Digital Heroes!"
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔍 Common QA Failures & Prevention</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Failure Type</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Example</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Prevention Step</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Broken Links</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Social media icons link to example.com</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Click every external link before delivery</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Missing Pages</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client ordered 5 pages, only 4 were built</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cross-reference delivery with order requirements</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Wrong Brand Colors</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client provided navy blue, developer used royal blue</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Compare hex codes from brief to live site</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Checkout Bugs</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Add to cart button does not work on product pages</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete a test purchase flow before delivery</td>
+        </tr>
+    </table>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>Rule:</strong> If you find ANY issue during QA, the delivery does NOT go to the client until it is fixed. No exceptions. A 30-minute delay for a fix is always better than a 2-hour complaint recovery cycle.
+    </div>
+</div>
+`;
+
+const task16Quiz = [
+    { q: "According to DH training, when should CS perform a QA check?", o: ["Only when the client requests it", "After the client reports a problem", "Before ANY delivery goes to a client — CS is the last line of defense", "Only for high-value orders"], c: 2 },
+    { q: "A bug caught before delivery costs 5 minutes to fix. The same bug caught by the client after delivery costs approximately:", o: ["10 minutes", "30 minutes", "2 hours including revision, communication, and trust repair", "The same amount of time"], c: 2 },
+    { q: "You are reviewing a Shopify store delivery and notice the contact form does not submit. What should you do?", o: ["Deliver it anyway — the client might not notice", "Flag it to the developer immediately before delivery, requesting a fix", "Add a note to the delivery that the form needs fixing", "Wait for the client to report it"], c: 1 },
+    { q: "At what point in the feedback loop should you request a review from the client?", o: ["Immediately after delivery", "On Day 3 follow-up", "On Day 7-10, but only if their satisfaction score is 8 or higher", "Never — let them review on their own"], c: 2 },
+    { q: "A client rates their satisfaction as 5/10 on the Day 7 survey. What is the correct action?", o: ["Request a review anyway — some feedback is better than none", "Ignore it — they will come around eventually", "Do NOT request a review. Ask what can be improved and escalate to PM immediately", "Tell them that 5/10 is actually average and they should be happy"], c: 2 },
+    { q: "Which of these is NOT part of the CS pre-delivery QA checklist?", o: ["Visual match against client requirements", "Mobile responsiveness testing", "Checking the developer's code quality and structure", "Content accuracy — no placeholder text or wrong information"], c: 2 },
+    { q: "The target repeat client rate at DH is:", o: ["Greater than 10%", "Greater than 20%", "Greater than 30%", "Greater than 50%"], c: 2 },
+    { q: "During a pre-delivery check, you notice the site has Lorem Ipsum placeholder text on the About page. This falls under which QA category?", o: ["Visual Match", "Functionality", "Content Accuracy", "Speed"], c: 2 },
+    { q: "The long-term follow-up in the feedback loop happens on Day 30. What is its primary purpose?", o: ["To ask for another review", "To check how the site is performing and offer help with updates — building long-term relationships", "To remind the client to pay for maintenance", "To close the ticket permanently"], c: 1 },
+    { q: "What is the target revision request rate at DH?", o: ["Less than 10%", "Less than 20%", "Less than 30%", "Less than 50%"], c: 2 },
+    { q: "You are doing a pre-delivery QA check on a Shopify store. The homepage looks great on desktop but the navigation menu overlaps the hero banner on mobile. What category does this fall under and what do you do?", o: ["Speed — report it as a performance issue to the dev team", "Visual Match — it looks different from the mockup so ask the designer to fix it", "Mobile Responsiveness — flag it to the developer immediately and do NOT deliver until the mobile layout is fixed", "Functionality — the navigation still works so it can be delivered with a note to the client"], c: 2 },
+    { q: "A client rates their experience 9/10 on the Day 7 satisfaction survey and says: 'Everything is great, just one small tweak I would love.' What is the optimal response sequence?", o: ["Request the review immediately before they change their mind, then address the tweak", "Address the tweak first, then request the review once it is completed — resolving the remaining concern maximizes the chance of a 5-star review", "Tell them to submit the tweak as a new order", "Ask what the tweak is, but wait until Day 10 to request the review regardless"], c: 1 }
+];
+
+// ============ TASK 17: CAREER GROWTH & CERTIFICATION ============
+const task17Content = `
+<h2>📚 TASK 17: CAREER GROWTH & CERTIFICATION — CS Career Path at DH</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🚀 Your Growth Path at Digital Heroes</h3>
+    <p>CS at DH is not a dead-end role — it is a <strong>launchpad</strong>. The skills you build here (communication, problem-solving, client management, product knowledge) are the foundation for leadership roles across the company.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">DH Philosophy:</strong> We promote from within. Every manager, team lead, and PM at DH started in an execution role. Your CS position is Step 1 on the growth ladder.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📈 The DH CS Growth Ladder</h3>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(99, 102, 241, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Level</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Role</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Timeline</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Requirements</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CS Trainee</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 1-3</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complete training, pass certification, shadow senior reps</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CS Representative</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 3-9</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Handle tickets independently, CSAT &gt;85%, FRT &lt;1hr</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Senior CS Rep</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 9-18</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">CSAT &gt;92%, mentor juniors, handle VIP clients, upsell conversions</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CS Team Lead</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Month 18+</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Lead a team of 3-5 reps, own team metrics, train new hires</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>CS Manager / Account Manager</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Year 2+</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Own client relationships end-to-end, drive retention, strategic planning</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🔀 Specialization Tracks</h3>
+    <p>After reaching Senior CS Rep level, you can specialize:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(59, 130, 246, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Track</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Focus Area</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Skills Needed</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Technical CS</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Handling complex technical issues, working with dev team</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Basic Shopify/WordPress knowledge, debugging skills</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Account Management</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Owning VIP client relationships, retention, upselling</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Sales aptitude, relationship building, strategic thinking</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>QA & Process</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Building QA checklists, improving CS processes, training</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Detail-oriented, documentation skills, teaching ability</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Operations</strong></td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cross-functional coordination, project oversight</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Leadership, multi-tasking, decision-making under pressure</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🎯 What Gets You Promoted</h3>
+    <div class="highlight-box">
+        <strong>The Promotion Formula at DH:</strong>
+        <ul>
+            <li><strong>Consistent metrics:</strong> CSAT &gt;90%, FRT &lt;1hr for 3+ consecutive months</li>
+            <li><strong>Initiative:</strong> Suggest process improvements, create templates, help teammates</li>
+            <li><strong>Upsell contributions:</strong> Identify and convert add-on opportunities</li>
+            <li><strong>Zero escalation failures:</strong> Never let a situation get worse because you did not escalate</li>
+            <li><strong>Learning:</strong> Complete advanced training modules, learn Shopify basics, study client industries</li>
+            <li><strong>Attitude:</strong> Positive, reliable, proactive — the person others want to work with</li>
+        </ul>
+    </div>
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 15px; margin: 15px 0;">
+        <strong>What Blocks Promotion:</strong>
+        <ul>
+            <li>Inconsistent metrics (high peaks, low valleys)</li>
+            <li>Not following SOPs even after training</li>
+            <li>Negative attitude or blaming others</li>
+            <li>Avoiding difficult conversations with clients</li>
+            <li>Not investing in self-improvement</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #34D399; margin-top: 0;">📚 Continuous Learning Expectations</h3>
+    <p>DH provides 4 hours per week for learning. Use them wisely:</p>
+    <ul>
+        <li><strong>Shopify fundamentals:</strong> Every CS rep should understand basic store setup, themes, apps</li>
+        <li><strong>WordPress basics:</strong> Navigation, pages, plugins, common issues</li>
+        <li><strong>Industry trends:</strong> Follow e-commerce trends, new platform features</li>
+        <li><strong>Communication skills:</strong> Practice writing, study negotiation, learn conflict resolution</li>
+        <li><strong>DH SOPs:</strong> Re-read SOPs quarterly — they evolve and so should your knowledge</li>
+    </ul>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">📊 Performance Review Preparation</h3>
+    <p>DH conducts quarterly performance reviews. Here is how to prepare and maximize your review outcome:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <tr style="background: rgba(245, 158, 11, 0.2);">
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Review Component</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Weight</th>
+            <th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">How to Excel</th>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Core Metrics (CSAT, FRT, FCR)</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">40%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Consistent performance above targets for 3+ months</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Feedback & Reviews</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">25%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Positive client mentions, low complaint rate, review generation</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Initiative & Growth</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">20%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Process improvements, upsell efforts, learning new skills</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Team Contribution</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">15%</td>
+            <td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Mentoring, knowledge sharing, positive attitude, helping teammates</td>
+        </tr>
+    </table>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">Pro Tip:</strong> Keep a weekly log of wins, upsell attempts, difficult situations handled well, and process improvements suggested. When review time comes, you will have concrete examples instead of vague claims.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🌟 Success Stories: DH CS Career Paths</h3>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #34D399; padding: 20px; margin: 15px 0;">
+        <strong style="color: #34D399;">Path 1 — CS to Account Manager:</strong><br>
+        Started as CS Trainee. Within 6 months, handled VIP clients exclusively. By Month 12, converted 3 support clients into long-term retainer accounts worth 5L+ annually. Now manages the top 20 client relationships at DH.
+    </div>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #60A5FA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">Path 2 — CS to QA Lead:</strong><br>
+        Started as CS Rep. Created a pre-delivery QA checklist that reduced revision requests by 40%. Built training documentation for new hires. Now leads the QA process across all departments and trains every new CS rep.
+    </div>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #A78BFA; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">Path 3 — CS to Operations:</strong><br>
+        Started as CS Trainee. Excelled at multi-channel management and shift coordination. By Month 18, was coordinating between CS, dev, and design teams. Now handles cross-functional operations and project oversight.
+    </div>
+</div>
+`;
+
+const task17Quiz = [
+    { q: "What is the first level on the DH CS Growth Ladder?", o: ["CS Representative", "CS Intern", "CS Trainee — Month 1-3, complete training and pass certification", "Junior CS Agent"], c: 2 },
+    { q: "To move from CS Representative to Senior CS Rep, you need CSAT of:", o: ["Greater than 80%", "Greater than 85%", "Greater than 92%", "Greater than 95%"], c: 2 },
+    { q: "After reaching Senior CS Rep, which is NOT one of the specialization tracks?", o: ["Technical CS", "Account Management", "Software Development", "QA and Process"], c: 2 },
+    { q: "How many hours per week does DH allocate for learning and development?", o: ["1 hour", "2 hours", "4 hours", "8 hours"], c: 2 },
+    { q: "Which of these is a factor that BLOCKS promotion at DH?", o: ["Taking initiative to suggest process improvements", "Having consistent metrics above target", "Avoiding difficult conversations with clients", "Helping teammates and mentoring juniors"], c: 2 },
+    { q: "The CS Team Lead role typically becomes available at approximately:", o: ["Month 6", "Month 12", "Month 18+", "Year 3+"], c: 2 },
+    { q: "DH's philosophy on internal promotion is:", o: ["They hire managers from outside the company", "They promote from within — every manager started in an execution role", "Only CS reps with degrees get promoted", "Promotion is based on tenure, not performance"], c: 1 },
+    { q: "What does the Account Management specialization track focus on?", o: ["Writing code and debugging technical issues", "Owning VIP client relationships, retention, and upselling", "Building internal tools and processes", "Managing the help desk software"], c: 1 },
+    { q: "Why should CS reps learn Shopify and WordPress basics even though they are not developers?", o: ["Because DH might ask them to build websites", "Because understanding the products helps them support clients better, troubleshoot basic issues, and communicate with the dev team", "Because it looks good on a resume", "Because developers do not have time to answer questions"], c: 1 },
+    { q: "Which of these is part of the promotion formula at DH?", o: ["Working the most overtime hours", "Consistent metrics, initiative, upsell contributions, and positive attitude", "Having the most tickets closed regardless of quality", "Being the longest-serving team member"], c: 1 },
+    { q: "A CS rep has been at DH for 8 months with consistent CSAT above 90%, but they avoid taking on new challenges and only handle easy tickets. According to the promotion criteria, this rep is:", o: ["On track for promotion due to strong metrics", "Likely to be promoted for reliability and consistency", "Not promotable — avoiding difficult conversations and initiative are promotion blockers", "Ready for a Team Lead position based on tenure"], c: 2 },
+    { q: "The Technical CS specialization track is best suited for someone who:", o: ["Prefers to avoid talking to clients", "Enjoys debugging, understanding platform features, and becoming the go-to expert for complex technical support", "Wants to move into sales as quickly as possible", "Only wants to manage people and delegate tasks"], c: 1 },
+    { q: "How often does DH recommend re-reading SOPs to stay current?", o: ["Once during onboarding only", "Annually during performance reviews", "Quarterly — SOPs evolve and your knowledge should too", "Only when a process change is announced"], c: 2 },
+    { q: "A CS Trainee (Month 1-3) is struggling with response quality but has excellent FRT. Their mentor should advise:", o: ["Speed is the most important metric — keep focusing on fast responses", "Slow down slightly and invest in the 3-Second Rule before sending every message — quality and speed must both meet targets for certification", "Stop focusing on speed entirely and only work on quality", "Wait until Month 4 to address the issue since they are still training"], c: 1 },
+    { q: "The CS Growth Ladder shows that the Account Management track leads to which role?", o: ["Chief Technology Officer", "Senior Developer", "Client Success Manager — owning VIP relationships, retention strategies, and revenue growth", "HR Manager"], c: 2 }
+];
+
+// ============ TASK 18: FINAL CERTIFICATION — CLIENT SCENARIO SIMULATIONS ============
+const task18Content = `
+<h2>📚 TASK 18: FINAL CERTIFICATION — Client Scenario Simulations</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #FBBF24; margin-top: 0;">🎓 Final Certification Exam</h3>
+    <p>This is your final assessment. Below are <strong>8 real-world scenarios</strong> based on actual DH client interactions. Study each scenario and the model response carefully. The quiz will test your ability to apply ALL frameworks learned across Tasks 1-17.</p>
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #FBBF24; padding: 20px; margin: 15px 0;">
+        <strong style="color: #FBBF24;">Certification Requirements:</strong>
+        <ul>
+            <li>Score 80% or higher on the final quiz</li>
+            <li>Demonstrate mastery of HEAT, CALM, LASER, SERVE, and BATCH methods</li>
+            <li>Show understanding of marketplace metrics, QA processes, and career growth</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1)); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 1: The Midnight Emergency</h3>
+    <p><strong>Situation:</strong> At 11:30 PM, a VIP client messages on the marketplace platform: "My entire store is showing a blank white page. I have a product launch in 6 hours. FIX THIS NOW."</p>
+    <p><strong>Model Response:</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong style="color: #34D399;">Step 1 (CALM):</strong> Do not panic. This is a P1 Critical.</p>
+        <p><strong style="color: #34D399;">Step 2 (Acknowledge):</strong> "I completely understand the urgency. I am taking immediate action."</p>
+        <p><strong style="color: #34D399;">Step 3 (Escalate):</strong> Immediately contact the on-call developer and Operations Manager.</p>
+        <p><strong style="color: #34D399;">Step 4 (Update):</strong> "I have our senior developer looking at this right now. I will update you every 15 minutes until it is resolved."</p>
+        <p><strong style="color: #34D399;">Step 5 (Follow-up):</strong> After fix, confirm site is live. Follow up in the morning to ensure launch went smoothly.</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 2: The Scope Creep Artist</h3>
+    <p><strong>Situation:</strong> A client who ordered a 5-page Shopify store says on revision round 3: "I also need a custom app for loyalty points, a blog with 20 articles, and a complete redesign of the homepage."</p>
+    <p><strong>Model Response:</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p>"I love your vision for the store! Let me clarify what is included in the current order: [list deliverables]. The loyalty app, blog articles, and homepage redesign are additional services. I would be happy to get you a quote — would you like me to bundle them for a better rate?"</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 3: The Silent Client</h3>
+    <p><strong>Situation:</strong> A client placed an order 5 days ago but has not responded to any messages asking for requirements. Delivery deadline is in 3 days.</p>
+    <p><strong>Model Response:</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Day 3:</strong> "Hi [Name]! Just following up on your project requirements. Could you share the details at your earliest convenience?"</p>
+        <p><strong>Day 5:</strong> "We have 3 days until the deadline and still need your requirements. If we do not hear back, we may need to request a deadline extension to ensure quality."</p>
+        <p><strong>Action:</strong> Alert PM. Request deadline extension if needed.</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 4: The Competitor Comparison</h3>
+    <p><strong>Situation:</strong> A client says: "Another seller offered the same thing for half the price. Why should I stay with you?"</p>
+    <p><strong>Model Response:</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p>"That is a fair question. Here is what makes DH different: we are a full team with dedicated developers, designers, QA testers, and CS reps. Our 4.8+ star rating and repeat client rate speak to the value we deliver. Would you like me to show you some recent examples?"</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1)); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 5: The Review Hostage</h3>
+    <p><strong>Situation:</strong> A client says: "Give me 3 extra pages for free or I will leave a 1-star review."</p>
+    <p><strong>Model Response:</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p>"I understand you want more from your project. Unfortunately, I am not able to add extra deliverables outside the order scope for free. However, I CAN offer you a discounted add-on order for the 3 additional pages. Would you like me to get you a special rate?"</p>
+        <p><strong>Internal action:</strong> Document the conversation. Escalate to Operations Manager. Do NOT give in to the threat.</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 6: The Multi-Platform Chaos</h3>
+    <p><strong>Situation:</strong> A client messages the same urgent issue on marketplace inbox, WhatsApp, AND email simultaneously. Three different team members start giving different responses.</p>
+    <p><strong>Model Response:</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Action:</strong> Identify the duplicate. Claim ownership on the marketplace platform. Alert teammates on Discord.</p>
+        <p><strong>Client message:</strong> "Hi [Name]! I see your messages across all channels. To keep things clear, let me handle everything through our marketplace inbox. I am on it right now."</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 7: The Upsell Golden Opportunity</h3>
+    <p><strong>Situation:</strong> You just resolved a client's slow loading issue. They mention: "I really wish more people could find my store online."</p>
+    <p><strong>Model Response (SERVE method):</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>Solve:</strong> Confirm speed issue is fully resolved.</p>
+        <p><strong>Educate:</strong> "Now that your site loads faster, that helps with search rankings! But there is more we can do."</p>
+        <p><strong>Recommend:</strong> "Our SEO optimization package helps your store rank higher on Google."</p>
+        <p><strong>Value:</strong> "Most clients see a 40-60% increase in organic traffic within 3 months."</p>
+        <p><strong>Easy:</strong> "Would you like me to send you details and pricing? No pressure!"</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1)); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
+    <h3>🎭 Scenario 8: The QA Save</h3>
+    <p><strong>Situation:</strong> During pre-delivery QA, you find: contact form does not submit, one product page has Lorem ipsum text, and the mobile menu is broken.</p>
+    <p><strong>Model Response:</strong></p>
+    <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0;">
+        <p><strong>DO NOT deliver.</strong> Document all issues with screenshots. Send to developer for fixes. Re-check ALL pages after fixes. Only deliver after full QA pass.</p>
+        <p><strong>Result:</strong> You prevented a complaint, a revision round, and a potential negative review — all in 10 minutes of QA work.</p>
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">🏆 Skills Mastered Across All 18 Tasks</h3>
+    <ul>
+        <li>📋 Company culture, values, and critical rules</li>
+        <li>💰 CS Mindset: Support = Revenue Protection</li>
+        <li>🗣️ Communication Excellence: HEAT method, 3-Second Rule</li>
+        <li>📋 Ticket Management: Priority Matrix, SLAs</li>
+        <li>🔧 Technical Troubleshooting: 5-Step Fix Method</li>
+        <li>⬆️ Escalation Protocol</li>
+        <li>😤 De-escalation: CALM + LASER methods</li>
+        <li>🛡️ Proactive Support</li>
+        <li>🖥️ Tools and Systems mastery</li>
+        <li>📊 Metrics and Performance</li>
+        <li>🔥 Advanced De-escalation: Refunds, revision abuse</li>
+        <li>💰 Upselling and Cross-selling: SERVE method</li>
+        <li>🏪 Marketplace Platform Mastery</li>
+        <li>📱 Multi-Channel Support: BATCH method</li>
+        <li>✅ Quality Assurance and Client Satisfaction</li>
+        <li>🚀 Career Growth and Specialization</li>
+    </ul>
+    <p style="text-align: center; font-size: 1.1em; color: #A78BFA; font-weight: 700; margin-top: 20px;">Pass the quiz below to earn your CS Mastery Certificate!</p>
+</div>
+`;
+
+const task18Quiz = [
+    { q: "In Scenario 1 (Midnight Emergency), the FIRST thing you should do when a VIP client reports their entire store is down is:", o: ["Tell them to wait until morning when the dev team is available", "Stay calm (CALM method), acknowledge the urgency, and immediately escalate to the on-call developer as a P1 Critical", "Try to fix it yourself by checking the Shopify admin", "Ask the client to clear their browser cache first"], c: 1 },
+    { q: "In Scenario 2 (Scope Creep), a client wants a custom app, 20 blog articles, and a homepage redesign added to their 5-page store order. The correct approach is:", o: ["Add everything — client satisfaction comes first", "Refuse and tell them they are being unreasonable", "Acknowledge their vision, clarify what the current order includes, and offer to quote the additions as separate or bundled add-ons", "Escalate to Delhi Team immediately"], c: 2 },
+    { q: "In Scenario 3 (Silent Client), the client has not responded for 5 days and the deadline is in 3 days. Which action is WRONG?", o: ["Send a follow-up message asking for requirements", "Alert the PM about the non-responsive client", "Start building the project based on your own assumptions about what they want", "Request a deadline extension through the platform if needed"], c: 2 },
+    { q: "In Scenario 5 (Review Hostage), a client threatens a 1-star review unless they get free extra work. What should you NEVER do?", o: ["Document the conversation and escalate to Operations Manager", "Offer a discounted add-on order as an alternative", "Give in to the threat and deliver free work — this sets a dangerous precedent", "Stay professional and explain what is included in the scope"], c: 2 },
+    { q: "In Scenario 6 (Multi-Platform Chaos), when a client messages the same issue on 3 different channels, your FIRST action is:", o: ["Respond on all three channels simultaneously", "Identify the duplicate, claim ownership on the marketplace platform (highest priority), and alert teammates to avoid duplicate work", "Tell the client they are being difficult by messaging everywhere", "Ignore the other channels and only respond on email"], c: 1 },
+    { q: "In Scenario 7 (Upsell Opportunity), which step of the SERVE method says you must confirm the current issue is fully resolved BEFORE mentioning any add-on services?", o: ["Educate", "Recommend", "Solve — always solve the current problem first", "Easy"], c: 2 },
+    { q: "In Scenario 8 (QA Save), you find 3 issues during pre-delivery QA. What is the CORRECT action?", o: ["Deliver with a note listing the known issues", "Do NOT deliver — document the issues, send to developer for fixes, re-check after fixes, then deliver only after a full QA pass", "Fix the issues yourself even though you are not a developer", "Deliver the working pages and fix the broken ones later"], c: 1 },
+    { q: "Across all 18 tasks, which combination of methods would you use for an angry VIP client whose store has a critical bug?", o: ["HEAT only", "CALM + Priority Matrix (P1) + HEAT + 5-Step Fix + Escalation Protocol + Proactive follow-up", "Just escalate and let someone else handle it", "SERVE method for upselling while fixing the issue"], c: 1 },
+    { q: "What are ALL the major frameworks and methods taught across the CS training program?", o: ["HEAT, CALM, Priority Matrix, 5-Step Fix, 3-Second Rule, SERVE", "HEAT, CALM, LASER, SERVE, BATCH, and Priority Matrix", "Only HEAT and CALM — everything else is optional", "HEAT, CALM, LASER, SERVE, BATCH, Feedback Loop, Priority Matrix, 5-Step Fix, and 3-Second Rule"], c: 3 },
+    { q: "You have completed all 18 tasks. According to the DH CS Growth Ladder, what is your next milestone?", o: ["You are now a CS Manager", "You are now a Senior CS Rep", "You are now a certified CS Trainee ready to become a CS Representative by maintaining CSAT above 85% and FRT under 1 hour", "You should apply to a different company"], c: 2 },
+    { q: "The fundamental principle behind ALL CS training at Digital Heroes is:", o: ["CS is a cost center that should be minimized", "Speed is the only metric that matters", "CS is revenue protection — every interaction protects client relationships, drives reviews, and fuels the interconnected chain of company growth", "CS reps should always agree with the client no matter what"], c: 2 },
+    { q: "Which scenario demonstrates the BATCH method for multi-channel support?", o: ["Scenario 1 (Midnight Emergency)", "Scenario 5 (Review Hostage)", "Scenario 6 (Multi-Platform Chaos) — consolidating duplicate conversations across channels", "Scenario 8 (QA Save)"], c: 2 }
+];
+
 // Expose all content and quiz variables to window for app lookup
 window.task1Content = task1Content;
 window.task2Content = task2Content;
@@ -1170,6 +2484,13 @@ window.task8Content = task8Content;
 window.task9Content = task9Content;
 window.task10Content = task10Content;
 window.task11Content = task11Content;
+window.task12Content = task12Content;
+window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -1181,6 +2502,13 @@ window.task8Quiz = task8Quiz;
 window.task9Quiz = task9Quiz;
 window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
+window.task12Quiz = task12Quiz;
+window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -1193,5 +2521,12 @@ const allQuizzes = [
     task8Quiz,
     task9Quiz,
     task10Quiz,
-    task11Quiz
+    task11Quiz,
+    task12Quiz,
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];

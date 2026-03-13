@@ -1,6 +1,6 @@
 // Operations & Routine Training Data - COMPANY SOP ALIGNED
 // Digital Heroes Certification Program
-// 12 Tasks, Deep Concept Training, SOP-Specific Quizzes
+// 18 Tasks, Deep Concept Training, SOP-Specific Quizzes
 
 const trainingTasks = [
     { id: 1, title: "Intro to Company", description: "Employee Handbook & Company Culture", contentFirst: true, studyGuide: ["⏱️ Time: 60 min", "📋 Read Employee Handbook completely", "📖 Company values, policies & rules"] },
@@ -138,14 +138,74 @@ const trainingTasks = [
     },
     {
         id: 13,
-        title: "Final Certification",
-        description: "Prove You're Ready",
-        contentFirst: false,
+        title: "Order Pipeline",
+        description: "Intake, Assignment & Tracking",
+        contentFirst: true,
         studyGuide: [
             "⏱️ Time: 60 min",
-            "📖 Review ALL previous 11 tasks",
-            "📝 30-question comprehensive exam",
-            "🎥 Submit video walkthrough of your daily routine"
+            "📋 Order lifecycle from intake to delivery",
+            "🔄 Assignment workflow and tracking systems",
+            "🚧 Bottleneck identification and resolution"
+        ]
+    },
+    {
+        id: 14,
+        title: "Resource Allocation",
+        description: "Capacity Planning & Workload Balancing",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 60 min",
+            "👥 Matching skills to orders",
+            "⚖️ Workload balancing across teams",
+            "📈 Surge handling and contingency planning"
+        ]
+    },
+    {
+        id: 15,
+        title: "Process Automation",
+        description: "SOPs, Checklists & Reducing Manual Work",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 60 min",
+            "📝 Documenting repeatable processes",
+            "✅ Checklist design principles",
+            "🤖 Automation tools and workflow triggers"
+        ]
+    },
+    {
+        id: 16,
+        title: "Vendor & Tools",
+        description: "Subscriptions, Licenses & Cost Optimization",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "🛠️ Third-party tool evaluation",
+            "💳 License and subscription management",
+            "💰 Cost optimization strategies"
+        ]
+    },
+    {
+        id: 17,
+        title: "Career Growth",
+        description: "Operations Career Path at DH",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 45 min",
+            "🚀 Operations career ladder",
+            "📖 Specialization tracks",
+            "🎯 Building your ops portfolio"
+        ]
+    },
+    {
+        id: 18,
+        title: "Final Certification",
+        description: "Dashboard Setup & Comprehensive Exam",
+        contentFirst: true,
+        studyGuide: [
+            "⏱️ Time: 90 min",
+            "📊 Build an operations dashboard",
+            "📝 Comprehensive exam covering all 17 tasks",
+            "🎥 Submit video walkthrough of your dashboard"
         ]
     }
 ];
@@ -1115,24 +1175,594 @@ const task12Content = `
 </div>
 `;
 
-// ============ TASK 12: FINAL CERTIFICATION ============
+// ============ TASK 13: ORDER PIPELINE MANAGEMENT ============
+
 const task13Content = `
-<h2>📚 TASK 12: FINAL CERTIFICATION — Prove You're Ready</h2>
+<h2>📋 TASK 13: ORDER PIPELINE MANAGEMENT — Intake, Assignment & Tracking</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Why Order Pipeline Management Matters</h3>
+    <p>At Digital Heroes, every order that comes through the marketplace is a promise to a client. The operations team is the engine that converts incoming orders into delivered projects. A broken pipeline means missed deadlines, frustrated clients, and lost revenue. <strong>Your job is to make the pipeline invisible — so smooth that nobody notices it working.</strong></p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">🎯 The Order Lifecycle at DH</strong>
+        <p>Every order follows this path:</p>
+        <ol>
+            <li><strong>Intake</strong> — Order arrives on the client platform. Requirements captured.</li>
+            <li><strong>Qualification</strong> — Scope verified, complexity assessed, timeline estimated.</li>
+            <li><strong>Assignment</strong> — Matched to the right team member based on skills and availability.</li>
+            <li><strong>Kickoff</strong> — Team member confirms receipt, reviews brief, asks clarifying questions within 2 hours.</li>
+            <li><strong>Execution</strong> — Daily progress tracked via EOD reports and task tracker updates.</li>
+            <li><strong>Quality Check</strong> — Internal review before client delivery.</li>
+            <li><strong>Delivery</strong> — Client receives final work. Revisions handled per scope.</li>
+            <li><strong>Closure</strong> — Order marked complete. Post-delivery review logged.</li>
+        </ol>
+    </div>
+</div>
 
 <div class="content-section">
-    <h3>🎯 What This Exam Covers</h3>
-    <p>This is a comprehensive 30-question exam pulling from ALL 11 previous tasks. You need to score <strong>100% (30/30)</strong> to pass. If you've truly understood the material, this should be challenging but achievable.</p>
+    <h3>📥 Phase 1: Order Intake & Qualification</h3>
+    <p>When a new order lands on the marketplace, the operations coordinator must capture <strong>all critical information</strong> within the first 30 minutes:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Information</th>
+                <th style="padding: 12px; text-align: left;">Why It Matters</th>
+                <th style="padding: 12px; text-align: left;">Where to Log</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client name & platform username</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Identifies repeat clients and priority accounts</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ClickUp + Order Sheet</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Service type (design, dev, content, etc.)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Determines which team handles the order</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ClickUp task type</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Delivery deadline</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Drives priority and assignment decisions</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ClickUp due date</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Scope & requirements (pages, features, word count)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Prevents scope creep and misquoted timelines</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order brief doc</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Budget / order value</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Affects resource allocation priority</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Finance sheet</td></tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong>⚠️ The 30-Minute Rule:</strong> If an order sits unprocessed for more than 30 minutes, it risks late delivery from the start. The client's deadline clock is already ticking the moment they place the order. Every minute of intake delay is a minute stolen from execution.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Phase 2: Assignment & Kickoff</h3>
+    <p>Assignment is where most pipelines break. The wrong person on the wrong order creates a cascade of delays, revisions, and client frustration.</p>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong>✅ Assignment Checklist:</strong>
+        <ul>
+            <li><strong>Skill match</strong> — Does the team member have the specific skills this order requires?</li>
+            <li><strong>Availability</strong> — Can they start within 2 hours? Check their current workload in ClickUp.</li>
+            <li><strong>Track record</strong> — Have they delivered similar orders successfully before?</li>
+            <li><strong>Deadline feasibility</strong> — Given their current load, can they deliver on time?</li>
+            <li><strong>Confirmation</strong> — Team member must acknowledge the assignment within 30 minutes.</li>
+        </ul>
+    </div>
+
+    <p><strong>The Kickoff Message Format:</strong> When assigning an order, send a structured message in the team channel:</p>
+    <div class="highlight-box" style="padding: 15px; margin: 10px 0;">
+        <code>
+        NEW ORDER ASSIGNED<br>
+        Client: [Name]<br>
+        Service: [Type]<br>
+        Deadline: [Date + Time]<br>
+        Brief: [Link to doc]<br>
+        Assigned to: @[TeamMember]<br>
+        Priority: [High/Medium/Low]<br>
+        Notes: [Any special requirements]
+        </code>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔍 Phase 3: Tracking & Bottleneck Identification</h3>
+    <p>An order in progress without daily tracking is an order headed for trouble. The operations coordinator must check every active order <strong>at least twice daily</strong>:</p>
+    <ul>
+        <li><strong>Morning check (10:30 AM)</strong> — Review all active orders. Flag any without updates from the previous day.</li>
+        <li><strong>Afternoon check (3:00 PM)</strong> — Check progress against deadlines. Identify orders at risk of being late.</li>
+    </ul>
+
+    <div class="warning-box" style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid #F59E0B; padding: 20px; margin: 15px 0;">
+        <strong>🚧 Common Bottlenecks & Solutions:</strong>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <tr style="background: rgba(245, 158, 11, 0.2);"><th style="padding: 10px; text-align: left;">Bottleneck</th><th style="padding: 10px; text-align: left;">Root Cause</th><th style="padding: 10px; text-align: left;">Solution</th></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Order sits unassigned for 2+ hours</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">No one available or unclear ownership</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Escalate to Team Lead immediately</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Team member not acknowledging assignment</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Missed notification or overloaded</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">DM + phone call after 30 min</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Waiting on client for requirements</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Unclear brief or missing assets</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Send structured requirements checklist</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Revision loop exceeding 3 rounds</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Scope creep or quality miss</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Escalate to Team Lead for scope review</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Pipeline Metrics That Matter</h3>
+    <p>Operations managers track these KPIs daily:</p>
+    <ul>
+        <li><strong>Intake-to-Assignment Time</strong> — Target: under 30 minutes</li>
+        <li><strong>Assignment-to-Kickoff Time</strong> — Target: under 2 hours</li>
+        <li><strong>On-Time Delivery Rate</strong> — Target: 95%+</li>
+        <li><strong>Revision Rate</strong> — Target: under 15% of orders need major revisions</li>
+        <li><strong>Client Satisfaction Score</strong> — Target: 4.8+ average</li>
+        <li><strong>Orders in Pipeline</strong> — Active count by stage (intake, execution, QC, delivery)</li>
+    </ul>
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>🧠 KEY INSIGHT:</strong> If your on-time delivery rate drops below 90%, look at intake-to-assignment time first. Almost always, late deliveries start with slow assignments, not slow execution.
+    </div>
+</div>
+`;
+
+// ============ TASK 14: RESOURCE ALLOCATION & CAPACITY PLANNING ============
+
+const task14Content = `
+<h2>⚖️ TASK 14: RESOURCE ALLOCATION & CAPACITY PLANNING</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #A78BFA; margin-top: 0;">👥 The Resource Allocation Challenge</h3>
+    <p>Digital Heroes operates with a lean team delivering high-volume orders across multiple service lines. Resource allocation is the art of putting the <strong>right person on the right order at the right time</strong>. Get it wrong, and you get burned-out team members, missed deadlines, and unhappy clients. Get it right, and the agency runs like a machine.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #8B5CF6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #A78BFA;">🎯 The Three Pillars of Resource Allocation</strong>
+        <ol>
+            <li><strong>Skills Matching</strong> — Assign based on capability, not just availability</li>
+            <li><strong>Workload Balancing</strong> — No one should be at 120% while someone else is at 40%</li>
+            <li><strong>Capacity Forecasting</strong> — Predict demand before it arrives</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Skills-to-Order Matching Matrix</h3>
+    <p>Every team member has a skill profile that defines what orders they can handle. Operations maintains a <strong>Skills Matrix</strong> — a living document that maps each person to their capabilities:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Skill Level</th>
+                <th style="padding: 12px; text-align: left;">Definition</th>
+                <th style="padding: 12px; text-align: left;">Can Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L1 — Junior</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Can execute with guidance, needs review</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Simple orders, product uploads, basic pages</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L2 — Mid</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Can execute independently, minimal review</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standard builds, customizations, content creation</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L3 — Senior</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Can handle complexity, mentors others</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Complex builds, migrations, custom development</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>L4 — Lead</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Owns the domain, sets standards</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Architecture decisions, escalations, VIP clients</td></tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong>⚠️ The Cardinal Sin of Assignment:</strong> Never assign an L1 to a complex order just because they are available. A junior developer spending 3 days on something a senior could finish in 4 hours costs the company 2.5 days of lost productivity AND risks client dissatisfaction. Availability is important, but skill fit comes first.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>⚖️ Workload Balancing Framework</h3>
+    <p>Each team member has a <strong>capacity score</strong> measured in hours per day available for order work (after meetings, admin, and breaks):</p>
+    <ul>
+        <li><strong>Full capacity:</strong> 5-6 productive hours/day</li>
+        <li><strong>Healthy load:</strong> 70-85% capacity utilization</li>
+        <li><strong>Overloaded:</strong> 90%+ capacity — risk of burnout and quality drops</li>
+        <li><strong>Underloaded:</strong> Below 50% — opportunity to take on more or upskill</li>
+    </ul>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong>✅ Daily Capacity Check Process:</strong>
+        <ol>
+            <li>Open the team workload view in ClickUp every morning at 10:15 AM</li>
+            <li>Check each team member's active order count and estimated hours remaining</li>
+            <li>Flag anyone above 90% or below 50% utilization</li>
+            <li>Redistribute upcoming orders to balance the load</li>
+            <li>Post the daily capacity snapshot in the ops channel</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📈 Surge Handling & Contingency Planning</h3>
+    <p>Order volume is not constant. Seasonal spikes, promotions, and marketplace algorithm changes can cause sudden surges. Operations must be prepared:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(245, 158, 11, 0.3);">
+                <th style="padding: 12px; text-align: left;">Surge Level</th>
+                <th style="padding: 12px; text-align: left;">Indicator</th>
+                <th style="padding: 12px; text-align: left;">Response Protocol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Level 1 — Moderate</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order volume 20-30% above normal</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Redistribute non-urgent work, extend non-critical deadlines internally</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Level 2 — High</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order volume 30-50% above normal</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Activate cross-trained team members, extend work hours with approval</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Level 3 — Critical</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order volume 50%+ above normal or key member absent</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Escalate to management, temporary contractor activation, negotiate deadlines with clients</td></tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>🧠 KEY INSIGHT:</strong> The best operations teams never feel surge pressure because they plan for it. Maintain a bench of cross-trained team members who can flex between service lines. If everyone can only do one thing, a single absence creates a crisis.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🔄 Cross-Training Strategy</h3>
+    <p>Every team member should be cross-trained in at least <strong>one adjacent skill</strong>. This creates redundancy and flexibility:</p>
+    <ul>
+        <li><strong>Developers</strong> should know basic design (wireframing, UI review)</li>
+        <li><strong>Designers</strong> should know basic front-end (HTML/CSS, theme customization)</li>
+        <li><strong>Content writers</strong> should know basic SEO setup and product upload workflows</li>
+        <li><strong>CS reps</strong> should know basic project management to track deliverables</li>
+    </ul>
+    <p>Operations tracks cross-training progress quarterly. The goal: <strong>no single point of failure</strong> in any service line.</p>
+</div>
+`;
+
+// ============ TASK 15: PROCESS AUTOMATION & SOPs ============
+
+const task15Content = `
+<h2>🤖 TASK 15: PROCESS AUTOMATION & SOPs — Reducing Manual Work</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(6, 182, 212, 0.15)); border: 2px solid rgba(16, 185, 129, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #10B981; margin-top: 0;">⚡ The Automation Mindset</h3>
+    <p>Every time you do something manually more than three times, you should ask: <strong>"Can this be automated, templated, or eliminated?"</strong> Operations excellence means building systems that run themselves so you can focus on judgment calls that actually require a human brain.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong style="color: #10B981;">🎯 The Automation Hierarchy</strong>
+        <ol>
+            <li><strong>Eliminate</strong> — Can we stop doing this entirely? (Best option)</li>
+            <li><strong>Automate</strong> — Can a tool do this without human input?</li>
+            <li><strong>Template</strong> — Can we pre-build 80% and only customize 20%?</li>
+            <li><strong>Checklist</strong> — Can we at least ensure it's done the same way every time?</li>
+            <li><strong>Manual</strong> — Only if none of the above apply (worst option)</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📝 SOP Documentation Standards</h3>
+    <p>A well-written SOP is the foundation of process automation. Before you can automate anything, you must document exactly how it works today. Every DH SOP follows this structure:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Section</th>
+                <th style="padding: 12px; text-align: left;">Purpose</th>
+                <th style="padding: 12px; text-align: left;">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Title & Version</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Identifies the process and tracks changes</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Order Intake SOP v2.3 — Updated Feb 2026"</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Trigger</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What event starts this process?</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"New order received on marketplace"</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Steps</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Numbered actions with expected outcomes</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"1. Open order → 2. Verify scope → 3. Log in ClickUp"</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Decision Points</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">If/then logic for branching scenarios</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"If budget > 50K, escalate to Team Lead"</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Output</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What the completed process produces</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"ClickUp task created, team member assigned"</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Owner</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Who is responsible for this process</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">"Operations Coordinator"</td></tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong>⚠️ The SOP Decay Problem:</strong> An SOP that hasn't been updated in 6 months is probably wrong. Processes evolve, tools change, team members rotate. Operations must audit every SOP quarterly and update anything that no longer matches reality. An outdated SOP is worse than no SOP — it teaches people the wrong process.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>✅ Checklist Design Principles</h3>
+    <p>Checklists are the simplest and most powerful process tool. Surgeons use them. Pilots use them. Operations coordinators must use them.</p>
+    <ul>
+        <li><strong>Keep it under 10 items</strong> — More than 10 items and people start skipping. Split into sub-checklists if needed.</li>
+        <li><strong>Use action verbs</strong> — "Verify client email" not "Client email". Each item is a specific action.</li>
+        <li><strong>Include verification steps</strong> — "Confirm task appears in ClickUp" not just "Add to ClickUp".</li>
+        <li><strong>Put critical items first</strong> — The most important checks go at the top when attention is highest.</li>
+        <li><strong>Date-stamp every use</strong> — Track when checklists are completed for accountability.</li>
+    </ul>
+
+    <div class="highlight-box" style="background: rgba(139, 92, 246, 0.15); border-left: 4px solid #8B5CF6; padding: 20px; margin: 15px 0;">
+        <strong>📋 Example: Order Handoff Checklist</strong>
+        <ol>
+            <li>☐ Verify all client requirements are documented in the brief</li>
+            <li>☐ Confirm delivery deadline is set in ClickUp</li>
+            <li>☐ Verify assigned team member has acknowledged the order</li>
+            <li>☐ Confirm client credentials are in the password manager</li>
+            <li>☐ Send kickoff message in team channel using the template</li>
+            <li>☐ Set reminder for first progress check (24 hours from assignment)</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🤖 Automation Tools at DH</h3>
+    <p>Digital Heroes uses several tools that support process automation:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Tool</th>
+                <th style="padding: 12px; text-align: left;">Automation Use</th>
+                <th style="padding: 12px; text-align: left;">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>ClickUp Automations</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task status triggers, auto-assignments</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">When status = "Ready for QC" → assign to QC reviewer</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Google Sheets + Apps Script</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order tracking, auto-calculations</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Auto-calculate team utilization from hours logged</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Discord Bots</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reminders, status updates</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Daily EOD reminder at 9:00 PM in team channel</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Loom</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Process documentation, training videos</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Record SOP walkthroughs for new hires</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Template Libraries</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Standardized messages, briefs, reports</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Pre-built client onboarding message template</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📊 Measuring Automation Impact</h3>
+    <p>Every automation should be measured by the time it saves. Track these metrics:</p>
+    <ul>
+        <li><strong>Time saved per occurrence</strong> — How many minutes does the automation save each time it runs?</li>
+        <li><strong>Frequency</strong> — How often does this process run per week?</li>
+        <li><strong>Total weekly savings</strong> — Time saved x frequency = hours recovered per week</li>
+        <li><strong>Error reduction</strong> — How many manual errors has the automation prevented?</li>
+    </ul>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>🧠 KEY INSIGHT:</strong> A 5-minute automation that runs 20 times per week saves 100 minutes weekly. That is over 86 hours per year — more than two full work weeks. Small automations compound into massive time savings.
+    </div>
+</div>
+`;
+
+// ============ TASK 16: VENDOR & TOOL MANAGEMENT ============
+
+const task16Content = `
+<h2>🛠️ TASK 16: VENDOR & TOOL MANAGEMENT — Subscriptions, Licenses & Cost Optimization</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(234, 88, 12, 0.15)); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #F59E0B; margin-top: 0;">💳 Why Vendor Management Matters</h3>
+    <p>Digital Heroes uses dozens of third-party tools, subscriptions, and services to deliver client work. Without proper management, these costs spiral out of control — unused licenses pile up, redundant tools overlap, and the company bleeds money on autopilot. <strong>Operations owns the tool stack.</strong></p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #F59E0B; padding: 20px; margin: 15px 0;">
+        <strong style="color: #F59E0B;">💰 The Cost of Tool Neglect</strong>
+        <p>A single unused subscription at $49/month = $588/year wasted. Multiply by 10 forgotten tools, and that is nearly $6,000 per year going to tools nobody uses. Operations audits prevent this.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📋 Tool Stack Inventory</h3>
+    <p>Operations maintains a <strong>Master Tool Registry</strong> — a single document listing every tool the company pays for:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Category</th>
+                <th style="padding: 12px; text-align: left;">Tools</th>
+                <th style="padding: 12px; text-align: left;">Purpose</th>
+                <th style="padding: 12px; text-align: left;">Review Frequency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Communication</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Discord, Google Meet, Loom</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Team chat, calls, async video</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Quarterly</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Project Management</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">ClickUp</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Task tracking, workload management</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Quarterly</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Design</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Figma, Canva, Adobe CC</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">UI/UX design, graphics</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Semi-annually</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Development</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">GitHub, VS Code, hosting</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Code repos, deployment</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Semi-annually</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Security</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1Password/LastPass, 2FA tools</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Credential management</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Monthly</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Analytics</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Google Analytics, Sheets</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Reporting, data analysis</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Quarterly</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>🔍 Vendor Evaluation Framework</h3>
+    <p>Before adding any new tool to the stack, evaluate it against these criteria:</p>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong>✅ The 5-Point Vendor Evaluation:</strong>
+        <ol>
+            <li><strong>Problem Fit</strong> — Does it solve a real, documented problem? Or is it a solution looking for a problem?</li>
+            <li><strong>Integration</strong> — Does it work with our existing tools (ClickUp, Discord, Google Workspace)?</li>
+            <li><strong>Cost vs. Value</strong> — Is the monthly cost justified by the time or quality improvement?</li>
+            <li><strong>Team Adoption</strong> — Will the team actually use it? The best tool unused is a waste of money.</li>
+            <li><strong>Exit Strategy</strong> — Can we export our data if we switch vendors? Avoid vendor lock-in.</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>💰 License Management & Cost Optimization</h3>
+    <p>Operations runs a monthly license audit to prevent waste:</p>
+    <ul>
+        <li><strong>Usage tracking</strong> — Check login frequency for each tool. If a license holder has not logged in for 30 days, flag for review.</li>
+        <li><strong>Seat optimization</strong> — Downgrade or remove unused seats. Switch from per-seat to team plans when it saves money.</li>
+        <li><strong>Annual vs. monthly billing</strong> — Annual plans typically save 15-20%. Switch when the tool is confirmed essential.</li>
+        <li><strong>Duplicate elimination</strong> — Check for tools with overlapping features. One tool doing 80% of two tools' work is better than paying for both.</li>
+        <li><strong>Negotiation schedule</strong> — Before any renewal, check competitor pricing. Vendors often offer discounts to retain customers.</li>
+    </ul>
+
+    <div class="warning-box" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid #EF4444; padding: 20px; margin: 15px 0;">
+        <strong>⚠️ Auto-Renewal Traps:</strong> Many SaaS tools auto-renew annually without notification. Operations maintains a renewal calendar with alerts 30 days before each renewal date. This gives time to evaluate, negotiate, or cancel. Never let a tool auto-renew without a conscious decision to keep it.
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Quarterly Tool Stack Review</h3>
+    <p>Every quarter, Operations presents a <strong>Tool Stack Report</strong> to management covering:</p>
+    <ul>
+        <li>Total monthly tool spend and trend (increasing/decreasing)</li>
+        <li>Tools added and removed since last review</li>
+        <li>Utilization rates for each tool (percentage of licensed users who are active)</li>
+        <li>Cost-saving opportunities identified</li>
+        <li>New tools proposed with business case justification</li>
+    </ul>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>🧠 KEY INSIGHT:</strong> The goal is not to minimize tools — it is to maximize value per dollar spent. A $200/month tool that saves 40 hours of work is a bargain. A $20/month tool that nobody uses is a waste. Focus on ROI, not raw cost.
+    </div>
+</div>
+`;
+
+// ============ TASK 17: CAREER GROWTH & CERTIFICATION ============
+
+const task17Content = `
+<h2>🚀 TASK 17: CAREER GROWTH & CERTIFICATION — Your Operations Career Path at DH</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🎯 The Operations Career Ladder at Digital Heroes</h3>
+    <p>Operations is not a dead-end role — it is the backbone of the entire agency. As DH scales from current revenue toward the ₹75 Crore goal, operations leaders become some of the most valuable people in the company. <strong>Your growth path is clear, measurable, and directly tied to the company's success.</strong></p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">📈 The DH Operations Career Ladder</strong>
+        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+            <tr style="background: rgba(59, 130, 246, 0.2);">
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Level</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Role</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Key Responsibilities</th>
+                <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: left;">Timeline</th>
+            </tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L1</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Operations Trainee</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Follow SOPs, process orders, daily tracking</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Month 1-3</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L2</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Operations Coordinator</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Pipeline management, resource allocation, reporting</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Month 3-9</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L3</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Operations Manager</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Process optimization, team oversight, vendor management</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Month 9-18</td></tr>
+            <tr><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">L4</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Head of Operations</strong></td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Strategic planning, scaling systems, cross-department leadership</td><td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Month 18+</td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎯 Specialization Tracks</h3>
+    <p>As you grow, you can specialize in areas that align with your strengths:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Track</th>
+                <th style="padding: 12px; text-align: left;">Focus Areas</th>
+                <th style="padding: 12px; text-align: left;">Skills to Develop</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Process Excellence</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">SOP design, automation, quality systems</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Six Sigma basics, workflow automation, documentation</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>People Operations</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Team coordination, onboarding, performance tracking</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">HR basics, conflict resolution, training design</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Client Operations</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order management, delivery coordination, client communication</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Project management, stakeholder management, analytics</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Systems & Tools</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tool stack management, integrations, data analysis</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Technical aptitude, vendor management, cost analysis</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📊 Building Your Operations Portfolio</h3>
+    <p>At DH, promotions are based on <strong>documented impact</strong>, not tenure. Your operations portfolio should include:</p>
+    <ul>
+        <li><strong>Process Improvements</strong> — Document every SOP you created, updated, or optimized. Include before/after metrics.</li>
+        <li><strong>Automation Wins</strong> — List every automation you built and the time it saved per week.</li>
+        <li><strong>Pipeline Metrics</strong> — Show your on-time delivery rate, intake-to-assignment time, and quality scores over time.</li>
+        <li><strong>Cost Savings</strong> — Quantify every dollar saved through vendor negotiations, license optimization, or process elimination.</li>
+        <li><strong>Team Impact</strong> — Document how your work made other people's jobs easier or faster.</li>
+    </ul>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong>✅ Monthly Portfolio Update Ritual:</strong>
+        <p>On the last Friday of every month, spend 30 minutes updating your ops portfolio. Add new achievements, update metrics, and reflect on what you learned. This habit means you always have a current, impressive record of your impact when review time comes.</p>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>🎓 Recommended Certifications & Learning</h3>
+    <p>These external certifications complement your DH operations training:</p>
+    <ul>
+        <li><strong>Google Project Management Certificate</strong> — Free on Coursera, covers fundamentals of project lifecycle management</li>
+        <li><strong>ClickUp Expert Certification</strong> — Free from ClickUp University, directly applicable to daily work</li>
+        <li><strong>Lean Six Sigma White/Yellow Belt</strong> — Process improvement methodology used by world-class operations teams</li>
+        <li><strong>HubSpot Operations Hub Certification</strong> — Free, covers operations automation and data quality</li>
+    </ul>
+
+    <div class="highlight-box" style="margin-top: 15px;">
+        <strong>🧠 KEY INSIGHT:</strong> The best operations professionals are T-shaped — deep expertise in one area (your specialization track) with broad knowledge across all operations functions. DH training gives you the breadth. Your specialization gives you the depth. External certifications validate both.
+    </div>
+</div>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin-top: 20px;">
+    <h3 style="color: #10B981;">🏆 The DH Equity Advantage</h3>
+    <p>Remember: as an equity participant from Day 1, your career growth at DH has a direct financial multiplier. As the company grows toward ₹75 Crores, your equity stake grows with it. The operations team that builds the systems enabling that growth is literally building their own wealth. <strong>Every process you optimize, every automation you build, every hour you save — it compounds.</strong></p>
+</div>
+`;
+
+// ============ TASK 18: FINAL CERTIFICATION — DASHBOARD SETUP & COMPREHENSIVE EXAM ============
+const task18Content = `
+<h2>📊 TASK 18: OPERATIONS DASHBOARD SETUP & FINAL CERTIFICATION</h2>
+
+<div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+    <h3 style="color: #60A5FA; margin-top: 0;">🎯 Practical Exercise: Build Your Operations Dashboard</h3>
+    <p>This final task combines a <strong>hands-on practical exercise</strong> with a comprehensive certification exam covering all 17 previous tasks. First, you will build an operations dashboard. Then, you will complete the final exam to earn your certification.</p>
+
+    <div class="highlight-box" style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+        <strong style="color: #60A5FA;">📋 Dashboard Requirements:</strong>
+        <p>Using Google Sheets (or ClickUp Dashboard), build an operations dashboard that tracks:</p>
+        <ol>
+            <li><strong>Active Order Pipeline</strong> — All orders by stage (Intake, In Progress, QC, Delivered)</li>
+            <li><strong>Team Capacity View</strong> — Each team member's utilization percentage</li>
+            <li><strong>Deadline Tracker</strong> — Orders due today, tomorrow, and this week with status indicators</li>
+            <li><strong>Key Metrics Summary</strong> — On-time delivery rate, average intake-to-assignment time, revision rate</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📊 Exercise 1: Order Pipeline Tracker</h3>
+    <p>Create a sheet with columns for tracking every active order:</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+        <thead>
+            <tr style="background: rgba(99, 102, 241, 0.3);">
+                <th style="padding: 12px; text-align: left;">Column</th>
+                <th style="padding: 12px; text-align: left;">Data Type</th>
+                <th style="padding: 12px; text-align: left;">Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Order ID</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Auto-increment number</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Unique identifier</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client Name</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Text</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client identification</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Service Type</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dropdown</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Design / Dev / Content / Other</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Assigned To</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dropdown</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Team member name</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Status</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Dropdown</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Intake / In Progress / QC / Delivered</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Deadline</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Date</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client delivery date</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Days Remaining</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Formula</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Auto-calculate from deadline</td></tr>
+            <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Risk Flag</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Conditional formatting</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Red if overdue, yellow if due within 24 hours</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="content-section">
+    <h3>📊 Exercise 2: Team Capacity Dashboard</h3>
+    <p>Create a second sheet tracking team utilization:</p>
+    <ul>
+        <li><strong>Row per team member</strong> — Name, role, skill level (L1-L4)</li>
+        <li><strong>Active orders count</strong> — Number of orders currently assigned</li>
+        <li><strong>Estimated hours remaining</strong> — Total hours of work in queue</li>
+        <li><strong>Utilization %</strong> — Formula: (estimated hours / available hours) x 100</li>
+        <li><strong>Status indicator</strong> — Conditional formatting: Green (50-85%), Yellow (85-95%), Red (95%+)</li>
+    </ul>
+
+    <div class="highlight-box" style="background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10B981; padding: 20px; margin: 15px 0;">
+        <strong>✅ Submission Checklist:</strong>
+        <ol>
+            <li>☐ Order pipeline tracker with at least 5 sample orders populated</li>
+            <li>☐ Team capacity view with at least 4 team members</li>
+            <li>☐ Conditional formatting working (red/yellow/green indicators)</li>
+            <li>☐ Formulas calculating days remaining and utilization automatically</li>
+            <li>☐ Dashboard summary section with key metrics</li>
+            <li>☐ 3-5 minute Loom video walking through your dashboard</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content-section">
+    <h3>📝 Final Certification Exam</h3>
+    <p>After completing the dashboard exercise, take the comprehensive exam below. This exam pulls questions from <strong>ALL 17 previous tasks</strong> covering company culture, daily routines, communication, security, pipeline management, resource allocation, process automation, vendor management, and career growth.</p>
 
     <div class="highlight-box" style="background: rgba(139, 92, 246, 0.15); border-left: 4px solid #8B5CF6; padding: 20px; margin: 15px 0;">
         <strong>📋 What's Being Tested:</strong>
         <ul>
-            <li>Exact response time SLAs for different people and situations</li>
-            <li>EOD report format and specificity requirements</li>
-            <li>Leave protocol edge cases and rules</li>
-            <li>Communication escalation paths and priorities</li>
-            <li>Security rules and reasoning behind them</li>
-            <li>Time management principles and the daily schedule</li>
-            <li>SOP usage, roles, and living document philosophy</li>
+            <li>Company culture, values, and the Digital Heroes manifesto</li>
+            <li>Daily routine, time management, and deep work principles</li>
+            <li>Communication rules, response SLAs, and escalation paths</li>
+            <li>EOD reporting standards and specificity requirements</li>
+            <li>Security protocols and credential management</li>
+            <li>Order pipeline management and bottleneck resolution</li>
+            <li>Resource allocation and capacity planning</li>
+            <li>Process automation and SOP design</li>
+            <li>Vendor and tool management</li>
             <li>Scenario-based judgment questions (the hardest part)</li>
         </ul>
     </div>
@@ -1140,24 +1770,24 @@ const task13Content = `
 
 <div class="content-section">
     <h3>📹 Video Walkthrough Requirement</h3>
-    <p>After passing the written exam, record a <strong>3-5 minute Loom video</strong> walking through your planned daily routine at Digital Heroes. Cover:</p>
+    <p>After passing the written exam, record a <strong>5-7 minute Loom video</strong> covering:</p>
     <ol>
-        <li>Your morning startup process (7 steps)</li>
-        <li>How you structure your deep work blocks</li>
-        <li>How you handle a message from your manager during deep work</li>
-        <li>What your EOD report looks like</li>
-        <li>What you do if you need to take leave unexpectedly</li>
+        <li>Walk through your operations dashboard and explain each section</li>
+        <li>Show how you would process a new incoming order from intake to assignment</li>
+        <li>Demonstrate how you would identify and resolve a workload bottleneck</li>
+        <li>Explain your approach to the morning capacity check</li>
+        <li>Describe one process you would automate and why</li>
     </ol>
 
     <div class="highlight-box" style="margin-top: 15px;">
-        <strong>💡 WHY a video walkthrough?</strong> Anyone can memorize answers for a quiz. The video proves you can actually APPLY the knowledge. It also gives your manager confidence that you understand the daily rhythm before you start real work.
+        <strong>💡 WHY a video walkthrough?</strong> Anyone can memorize answers for a quiz. The dashboard and video prove you can actually APPLY the knowledge. They give your manager confidence that you understand operations deeply enough to manage real orders, real teams, and real deadlines.
     </div>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 25px; margin-top: 20px;">
     <h3 style="color: #10B981;">🏆 You're Almost There!</h3>
-    <p>Once you pass this certification, you'll have proven that you understand how Digital Heroes operates at its core. Every other role-specific training builds on this foundation. The daily rhythm, communication rules, and accountability systems you've learned here are the bedrock that makes everything else work.</p>
-    <p><strong>Good luck — and remember: the system rewards consistency, documentation, and overcommunication. Be the person who follows the SOP better than anyone else, and you'll grow faster than you ever imagined.</strong></p>
+    <p>Once you pass this certification, you will have proven that you understand how Digital Heroes operates at its core — from daily routines to pipeline management, from resource allocation to process automation. You are ready to be the operational backbone of the agency.</p>
+    <p><strong>Good luck — and remember: the system rewards consistency, documentation, and overcommunication. Be the person who builds the systems that make the company run, and your career growth will be unstoppable.</strong></p>
 </div>
 `;
 
@@ -1340,8 +1970,84 @@ const task12Quiz = [
     { q: "Why should you look at your weekly retrospective answers BEFORE planning next week?", o: ["Because your past patterns reveal what works and what doesn't — planning without reflecting means repeating the same mistakes", "Because it's a required part of the Monday morning checklist — this aligns with industry best practices and ensures consistent results across different project contexts", "Because your manager will ask you about your retrospective in the weekly meeting", "Because the company tracks retrospective completion rates"], c: 0 }
 ];
 
-// TASK 12 QUIZ: FINAL CERTIFICATION (20 questions pulling from all tasks)
+// TASK 13 QUIZ: ORDER PIPELINE MANAGEMENT
 const task13Quiz = [
+    { q: "A new order arrives on the marketplace at 2:15 PM. According to the 30-Minute Rule, by what time must the intake process be complete?", o: ["2:45 PM — the intake must be completed within 30 minutes to avoid stealing execution time from the delivery deadline", "3:15 PM — one hour is acceptable for complex orders", "End of day — as long as it's processed before tomorrow", "Immediately — all orders must be processed within 5 minutes"], c: 0 },
+    { q: "During the order intake phase, which piece of information is MOST critical for determining the assignment?", o: ["The client's marketplace username and account history", "The service type and scope — this determines which team and skill level is required to handle the order correctly", "The order value — higher-value orders always get priority", "The client's timezone — this affects communication scheduling"], c: 1 },
+    { q: "An order has been assigned to a developer, but they haven't acknowledged it after 45 minutes. According to the pipeline protocol, what should you do?", o: ["Wait until the 1-hour mark — the SOP allows 60 minutes for acknowledgment", "Reassign the order to someone else immediately without contacting the original assignee", "Send a direct message AND call the developer — after 30 minutes without acknowledgment, escalation is required", "Post in the general channel asking if anyone else can take the order"], c: 2 },
+    { q: "The operations coordinator checks active orders at 3 PM and finds one order with no EOD update from the previous day. This order should be classified as:", o: ["Low priority — the team member probably just forgot to update", "Normal — not every order needs daily updates during the execution phase", "Medium risk — send a reminder and check again tomorrow", "High risk — an order without daily updates is an order headed for trouble. Flag it and contact the assigned team member immediately."], c: 3 },
+    { q: "What are the two daily pipeline check times for operations coordinators?", o: ["Morning at 10:30 AM and afternoon at 3:00 PM — reviewing all active orders for status and risk", "Start of day at 9:00 AM and end of day at 6:30 PM", "Before lunch at 12:00 PM and after lunch at 2:00 PM", "Every hour throughout the day — continuous monitoring is required"], c: 0 },
+    { q: "A client's order has gone through 4 rounds of revisions. According to the bottleneck resolution protocol, this should trigger:", o: ["A discount offer to the client for the inconvenience", "Escalation to the Team Lead for scope review — revision loops exceeding 3 rounds indicate scope creep or a fundamental quality miss that needs senior intervention", "Reassignment to a more experienced team member", "Direct communication with the client to set expectations"], c: 1 },
+    { q: "The Kickoff Message Format includes 7 fields. Which field is MOST often forgotten but causes the biggest downstream problems?", o: ["Client name — team members sometimes work on the wrong client's order", "Assigned team member — unclear ownership creates confusion", "Priority level and special requirements notes — without these, the team member may deprioritize a high-priority order or miss critical client preferences", "Deadline — team members estimate their own deadlines instead"], c: 2 },
+    { q: "Your on-time delivery rate has dropped from 95% to 87% over the past month. Based on the training, what should you investigate FIRST?", o: ["Whether team members are taking too many breaks during the day", "Whether the client requirements have become more complex recently", "Whether the quality check process is creating unnecessary delays", "Intake-to-assignment time — late deliveries almost always start with slow assignments, not slow execution"], c: 3 },
+    { q: "The order lifecycle at DH has 8 phases. Which phase creates the most value for preventing client complaints?", o: ["Quality Check (Phase 6) — catching issues before the client sees them prevents complaints, revision loops, and damage to the agency's reputation", "Delivery (Phase 7) — the moment of truth when the client receives their work", "Kickoff (Phase 4) — getting clarifying questions answered early prevents misunderstandings", "Closure (Phase 8) — the post-delivery review identifies what went wrong"], c: 0 },
+    { q: "An order is marked 'Waiting on client for requirements' and has been stuck for 3 days. What is the correct operations response?", o: ["Close the order and tell the client to resubmit when they have requirements ready", "Send a structured requirements checklist to the client with specific questions. If no response within 24 hours, escalate through the client success team. Never let an order sit idle without active follow-up.", "Wait patiently — rushing clients leads to bad reviews on the marketplace", "Assign a team member to start working based on assumptions while waiting for clarification"], c: 1 },
+    { q: "The pipeline metric 'Orders in Pipeline by Stage' shows 15 orders in Execution but only 1 in QC. What does this pattern suggest?", o: ["The team is working efficiently and orders are moving through quickly", "The QC team is doing a great job clearing their queue", "A bottleneck is forming — orders will pile up at QC when they all finish execution around the same time. Proactively add QC capacity or stagger delivery timelines.", "This is the normal distribution — most orders spend the longest time in execution"], c: 2 },
+    { q: "Why does the training emphasize that the operations pipeline should be 'invisible'?", o: ["Because clients should not know about DH's internal processes for competitive reasons", "Because team members should not need to think about the pipeline — they just receive assignments and work", "Because management prefers automated systems that require no human oversight", "A smooth pipeline means no one notices it working — no bottlenecks, no missed deadlines, no scrambling. The moment people start noticing the pipeline, something is broken."], c: 3 }
+];
+
+// TASK 14 QUIZ: RESOURCE ALLOCATION & CAPACITY PLANNING
+const task14Quiz = [
+    { q: "A complex custom development order arrives. An L1 developer is available immediately, but an L3 developer can start in 4 hours. According to the Skills Matching principle, who should get the assignment?", o: ["The L3 developer — skill fit comes first over availability. An L1 spending 3 days on something an L3 finishes in 4 hours wastes 2.5 days of productivity and risks client dissatisfaction.", "The L1 developer — availability matters more than skill level for meeting deadlines", "Split the order between both developers to balance the workload", "The L1 developer with L3 oversight — this trains the junior while meeting the deadline"], c: 0 },
+    { q: "A team member is at 95% capacity utilization. According to the workload balancing framework, this means:", o: ["They are performing optimally and should maintain this pace throughout the week", "They are overloaded — at 90%+ capacity, they risk burnout, quality drops, and missed deadlines. Redistribute upcoming orders to balance their load.", "They should work overtime to clear their queue before taking new orders", "They are slightly above the ideal range but can handle one more small order"], c: 1 },
+    { q: "The healthy workload utilization range for a team member is:", o: ["50-70% — leaving buffer for unexpected work and meetings", "85-100% — maximizing productivity means keeping everyone fully loaded", "70-85% — enough buffer for meetings, admin, unexpected work, and quality without being idle or burned out", "90-95% — pushing capacity ensures maximum output from the team"], c: 2 },
+    { q: "Order volume suddenly increases by 40% due to a marketplace promotion. According to the Surge Handling Protocol, this is a Level 2 surge. The correct response is:", o: ["Negotiate extended deadlines with all new clients to manage expectations", "Cancel low-priority internal projects to free up capacity", "Continue normal operations — the team can handle temporary spikes through extra effort", "Activate cross-trained team members who can flex into the high-demand service line, and extend work hours with management approval"], c: 3 },
+    { q: "The Daily Capacity Check Process starts at 10:15 AM. What is the FINAL step of this process?", o: ["Post the daily capacity snapshot in the ops channel — this gives the entire team visibility into workload distribution and any imbalances that need attention", "Send a private report to management about team utilization", "Update the ClickUp workload view with current assignments", "Flag anyone above 90% utilization for immediate reassignment"], c: 0 },
+    { q: "Cross-training serves a critical operations purpose. What is the primary strategic benefit?", o: ["It keeps team members engaged by learning new skills and prevents boredom", "It eliminates single points of failure — if every skill is held by only one person, a single absence creates a crisis. Cross-training creates redundancy.", "It reduces the need to hire specialized contractors during busy periods", "It allows operations to assign any order to any team member regardless of skill match"], c: 1 },
+    { q: "A developer calls in sick and has 3 active orders due this week. The correct resource allocation response is:", o: ["Extend all 3 deadlines and inform the clients about the delay", "Ask the developer to work remotely despite being sick since the deadlines are critical", "Check the Skills Matrix for cross-trained developers who can take over. Redistribute the orders based on skill match and current capacity. Communicate the reassignment to all stakeholders.", "Wait one day to see if the developer recovers before taking action"], c: 2 },
+    { q: "The Skills Matrix uses 4 levels (L1-L4). An L2 team member is described as someone who:", o: ["Can execute with guidance and needs review on all work before delivery", "Can handle architecture decisions and train other team members on best practices", "Owns the domain and sets quality standards for the entire service line", "Can execute independently with minimal review — they handle standard builds, customizations, and content creation without constant oversight"], c: 3 },
+    { q: "When forecasting capacity for next week, what data sources should operations check?", o: ["Current pipeline (orders in progress), known incoming orders, team availability (leaves, meetings), and historical volume patterns — combining these gives an accurate demand picture", "Only the current ClickUp task list — everything else is speculation until orders actually arrive", "Last week's order volume — next week will likely be similar", "Management's revenue targets — capacity should match the company's growth goals"], c: 0 },
+    { q: "A team member at 40% utilization has been underloaded for two weeks. Beyond assigning them more orders, what should operations also consider?", o: ["This is normal during slow periods and requires no additional action", "Assigning them cross-training tasks to build skills in adjacent service areas — underloaded periods are the ideal time for skill development that strengthens future capacity", "Reducing their work hours proportionally to match the lower demand", "Moving them to a different team permanently since their current team clearly doesn't need them"], c: 1 },
+    { q: "The 'Cardinal Sin of Assignment' refers to which specific mistake?", o: ["Assigning an order to someone who is on leave without checking the calendar first", "Assigning an order without sending the proper Kickoff Message in the team channel", "Assigning an L1 (junior) to a complex order just because they are available — the skill mismatch wastes more time and money than waiting for a qualified person", "Assigning the same team member to more than 5 orders simultaneously"], c: 2 }
+];
+
+// TASK 15 QUIZ: PROCESS AUTOMATION & SOPs
+const task15Quiz = [
+    { q: "The Automation Hierarchy lists 5 levels. What is the BEST (most desirable) level?", o: ["Eliminate — if a task can be removed entirely, that is the best outcome. Zero time spent is always better than reduced time spent.", "Automate — having a tool do the work without human input is the ideal solution", "Template — pre-building 80% of the work and customizing 20% is the most practical approach", "Checklist — ensuring consistency is more important than saving time"], c: 0 },
+    { q: "An SOP that hasn't been updated in 8 months is described in the training as:", o: ["Still valid — SOPs are foundational documents that don't change frequently", "Worse than having no SOP at all — an outdated SOP teaches people the wrong process, creating errors that wouldn't happen if they used their judgment instead", "Acceptable as long as the core process hasn't changed significantly", "Fine as long as team members know which parts to ignore"], c: 1 },
+    { q: "The SOP documentation standard requires 6 sections. Which section describes the if/then logic for branching scenarios?", o: ["Steps — numbered actions with expected outcomes for each process stage", "Trigger — the event that initiates the process in the first place", "Decision Points — if/then logic that handles different scenarios, such as escalating high-budget orders to Team Lead", "Output — what the completed process produces and who receives it"], c: 2 },
+    { q: "A 5-minute automation runs 20 times per week. The training calculates the annual time savings as:", o: ["About 40 hours — substantial but not transformative in the grand scheme of operations", "About 50 hours — roughly one full work week saved per year from this single automation", "About 65 hours — equivalent to about 8 work days saved per year", "Over 86 hours — more than two full work weeks per year. Small automations compound into massive savings."], c: 3 },
+    { q: "The checklist design principle 'Keep it under 10 items' exists because:", o: ["More than 10 items causes people to start skipping steps — attention drops with length. Split long checklists into sub-checklists if needed.", "ClickUp's checklist feature only supports 10 items per task by default", "10 items is the maximum that fits on a single printed page for reference", "Managers don't have time to review checklists longer than 10 items"], c: 0 },
+    { q: "Which ClickUp automation example is given in the training?", o: ["When a task is created, automatically assign it to the operations coordinator for initial review", "When task status changes to 'Ready for QC', automatically assign the task to the QC reviewer — this removes manual handoff and prevents orders from sitting between stages", "When a task is overdue, automatically send a notification to the team lead and the CEO", "When a new team member is added, automatically create their onboarding checklist"], c: 1 },
+    { q: "Before you can automate any process, you must first:", o: ["Get approval from management for the automation budget and implementation timeline", "Build a prototype in Google Sheets to test the automation logic before moving to production", "Document exactly how the process works today in an SOP — you cannot automate what you don't fully understand. The SOP is the blueprint for automation.", "Survey the team to understand their pain points and preferences for the new automated workflow"], c: 2 },
+    { q: "The Order Handoff Checklist example includes 6 items. What is the purpose of the final item ('Set reminder for first progress check')?", o: ["It ensures the team member starts working on the order within 24 hours of receiving it", "It creates a paper trail proving the operations coordinator did their job correctly", "It helps the operations coordinator remember to check on the order the next day", "It creates a proactive follow-up loop — without it, an order could silently stall for days. The 24-hour check catches problems early when they're cheapest to fix."], c: 3 },
+    { q: "Measuring automation impact requires tracking 4 metrics. Which metric best indicates whether an automation is PREVENTING ERRORS?", o: ["Error reduction — tracking how many manual errors the automation has prevented compared to the previous manual process", "Time saved per occurrence — showing the efficiency gain from each automation run", "Frequency — demonstrating how often the automation fires per week", "Total weekly savings — combining time and frequency into a single productivity number"], c: 0 },
+    { q: "The SOP Decay Problem is most effectively solved by:", o: ["Assigning a dedicated SOP manager who owns all documentation company-wide", "Quarterly audits where operations reviews every SOP and updates anything that no longer matches reality — processes evolve, tools change, and outdated SOPs teach wrong methods", "Requiring team members to report SOP inaccuracies whenever they notice them", "Rewriting all SOPs from scratch every 6 months to ensure freshness"], c: 1 },
+    { q: "A team member says 'I prefer doing things my own way rather than following the checklist.' Based on the training, what is the fundamental problem with this approach?", o: ["They will be fired for insubordination and refusal to follow company procedures", "Their personal preference is irrelevant — they are required to follow all company procedures without question", "Inconsistency creates unpredictable outcomes — checklists ensure the same quality every time regardless of who performs the task. Personal methods may work sometimes but fail under pressure.", "They should be allowed to develop their own method as long as the output quality is equivalent"], c: 2 }
+];
+
+// TASK 16 QUIZ: VENDOR & TOOL MANAGEMENT
+const task16Quiz = [
+    { q: "A single unused subscription at $49/month costs the company how much per year?", o: ["$588 per year — and multiply by 10 forgotten tools, that is nearly $6,000 annually going to tools nobody uses", "About $500 per year — significant but manageable for most companies", "Approximately $600 per year — equivalent to about half a month of one employee's salary", "Nearly $1,000 per year when you include tax and transaction fees"], c: 0 },
+    { q: "The 5-Point Vendor Evaluation framework starts with 'Problem Fit.' Why is this the first criterion?", o: ["Because management requires a documented business case before approving any new tool purchase", "Because if the tool doesn't solve a real, documented problem, nothing else matters — a solution looking for a problem is always a waste of money regardless of how good the tool is", "Because problem fit is the easiest criterion to evaluate and saves time by filtering out unsuitable tools early", "Because the company has a strict policy against adopting tools without a formal problem statement"], c: 1 },
+    { q: "Operations discovers a tool license holder hasn't logged in for 35 days. According to the license management protocol, this license should be:", o: ["Automatically revoked — any unused license wastes company resources without exception", "Kept active for another month in case they need it for an upcoming project", "Flagged for review — the 30-day threshold triggers investigation. Maybe they need retraining, maybe the license should be reassigned. But it must not be ignored.", "Transferred to a new hire who might benefit from the tool"], c: 2 },
+    { q: "When evaluating whether to switch from monthly to annual billing for a tool, the key consideration is:", o: ["Annual plans always save money, so the switch should be automatic for every tool in the stack", "Monthly billing is always better because it provides flexibility to cancel anytime without financial loss", "The savings typically don't justify the commitment risk for newer tools still being evaluated", "Annual plans save 15-20%, but only switch when the tool is confirmed essential — locking into an annual plan for a tool you might stop using is worse than paying the monthly premium"], c: 3 },
+    { q: "The Quarterly Tool Stack Review presents which information to management?", o: ["Total monthly spend and trend, tools added/removed, utilization rates, cost-saving opportunities, and new tool proposals with business cases — this gives management a complete view of the tool stack health", "A list of all tools currently in use with their monthly costs and the number of users per tool", "Recommendations for new tools to adopt based on industry trends and competitor analysis", "A comparison of DH's tool stack against industry benchmarks and best practices from similar agencies"], c: 0 },
+    { q: "The 'Exit Strategy' criterion in vendor evaluation protects against which specific risk?", o: ["The risk of the vendor increasing prices after you become dependent on their platform", "Vendor lock-in — if you cannot export your data when switching vendors, you are trapped even if a better or cheaper alternative appears. Always verify data portability before committing.", "The risk of the vendor going out of business and losing your data permanently", "The risk of security breaches at the vendor's data centers affecting your client information"], c: 1 },
+    { q: "Two tools in the stack have overlapping features. Tool A costs $30/month and does tasks X, Y, Z. Tool B costs $25/month and does tasks Y, Z, W. If one tool doing 80% of both tools' work is acceptable, what is the recommended approach?", o: ["Keep both tools — the unique features (X and W) justify the combined $55/month cost since each tool serves a specific need", "Cancel both and find a single tool that does X, Y, Z, and W — complete coverage is the goal", "Evaluate which unique feature (X vs W) is more critical, keep that tool, and cancel the other — one tool doing 80% of both is better than paying for duplicate functionality", "Keep both but negotiate lower prices for each since neither is being used to full capacity"], c: 2 },
+    { q: "Auto-renewal traps are prevented by which specific operations practice?", o: ["Setting all subscriptions to manual renewal by default when first subscribing to the service", "Requiring two levels of management approval for any subscription that costs more than $100/month", "Using a company credit card with spending limits that block charges above a certain threshold", "Maintaining a renewal calendar with alerts 30 days before each renewal date — this gives time to evaluate, negotiate, or cancel before the charge hits"], c: 3 },
+    { q: "The training says the goal of vendor management is NOT to minimize tools but to:", o: ["Maximize value per dollar spent — a $200/month tool saving 40 hours is a bargain, while a $20/month tool nobody uses is waste. Focus on ROI, not raw cost.", "Ensure every team member has access to every tool they might possibly need for any task", "Keep the total tool count under a specific number defined by the company's IT policy", "Standardize on a single vendor ecosystem to simplify integration and reduce administrative overhead"], c: 0 },
+    { q: "Before any vendor renewal, operations should:", o: ["Automatically approve the renewal if the tool has been used in the past quarter", "Check competitor pricing — vendors often offer discounts to retain customers. Never renew without at least checking if a better deal is available.", "Survey all users of the tool to confirm they want to keep using it for the next billing cycle", "Require the vendor to provide an updated feature roadmap before committing to renewal"], c: 1 },
+    { q: "The Master Tool Registry maintained by operations should include which critical detail that is MOST often overlooked?", o: ["The name of the person who originally requested the tool and the date it was added to the stack", "The specific use cases and workflows that depend on each tool in the daily operations process", "Review frequency — each tool category has a defined review cadence (monthly for security, quarterly for most, semi-annually for specialized). Without scheduled reviews, tools drift into irrelevance unchecked.", "The vendor's customer support contact information and escalation paths for critical issues"], c: 2 }
+];
+
+// TASK 17 QUIZ: CAREER GROWTH & CERTIFICATION
+const task17Quiz = [
+    { q: "The DH Operations Career Ladder has 4 levels. An Operations Coordinator (L2) is expected to handle which responsibilities?", o: ["Pipeline management, resource allocation, and reporting — this is the stage where you move from executing processes to managing them across the team", "Following SOPs and processing individual orders with daily tracking and status updates", "Process optimization, team oversight, and vendor management at a strategic level", "Strategic planning, scaling systems, and cross-department leadership for the entire operations function"], c: 0 },
+    { q: "The monthly portfolio update ritual recommends spending how much time, and on which specific day?", o: ["15 minutes every Monday morning before the weekly planning session begins", "30 minutes on the last Friday of every month — this ensures your portfolio is always current with recent achievements, metrics, and learnings when review time comes", "1 hour at the end of each quarter during the formal performance review preparation period", "20 minutes every Sunday evening as part of weekly planning and reflection time"], c: 1 },
+    { q: "Your operations portfolio should include 5 categories of documented impact. Which category MOST directly demonstrates leadership potential?", o: ["Process improvements with before/after metrics showing measurable operational gains", "Cost savings quantified in dollars through vendor negotiations and license optimization", "Team Impact — documenting how your work made other people's jobs easier or faster shows you think beyond your own role and create value for the entire organization", "Pipeline metrics showing consistent on-time delivery rates and quality scores over time"], c: 2 },
+    { q: "The training describes operations professionals as 'T-shaped.' What does this mean?", o: ["They follow a strict career path shaped like the letter T — one direction up (management) or across (specialization)", "They spend most of their time on one task (the vertical bar) and briefly touch many others (the horizontal bar) each day", "They should switch between specialization tracks every few months to maintain breadth across all areas", "Deep expertise in one specialization track (the vertical bar) with broad knowledge across all operations functions (the horizontal bar) — DH training provides breadth, specialization provides depth"], c: 3 },
+    { q: "Which external certification is described as 'directly applicable to daily work' at DH?", o: ["ClickUp Expert Certification — free from ClickUp University, it covers the project management tool DH uses every day for task tracking and workload management", "Google Project Management Certificate — covers lifecycle management fundamentals", "Lean Six Sigma White Belt — teaches process improvement methodology", "HubSpot Operations Hub Certification — covers operations automation"], c: 0 },
+    { q: "The equity advantage section connects career growth to company growth. The key insight is:", o: ["Operations managers receive a higher equity percentage than other roles due to their strategic importance", "As the company grows toward the revenue target, your equity stake grows with it — every process you optimize, every automation you build, compounds into personal wealth", "Equity is only meaningful if you stay at the company for more than 5 years and reach the Head of Operations level", "The equity model replaces traditional bonuses and salary increases for operations team members"], c: 1 },
+    { q: "The Process Excellence specialization track focuses on which skills?", o: ["HR basics, conflict resolution, and training design for people-focused operations roles", "Project management, stakeholder management, and analytics for client-facing coordination", "SOP design, workflow automation, and documentation — using methodologies like Six Sigma to build and optimize processes", "Technical aptitude, vendor management, and cost analysis for systems-focused operations"], c: 2 },
+    { q: "At DH, promotions are based on which primary criterion?", o: ["Years of tenure with the company and consistent attendance records over time", "Manager recommendations based on attitude, teamwork, and cultural fit assessments", "Scores on the quarterly performance review surveys completed by peers and managers", "Documented impact — your operations portfolio showing measurable improvements, not just time spent in the role"], c: 3 },
+    { q: "The Operations Trainee (L1) role is expected to span which timeline?", o: ["Month 1-3 — this is the learning phase where you follow SOPs, process orders, and build daily tracking habits before progressing to coordination responsibilities", "Month 1-6 — the first six months are entirely dedicated to learning the systems before taking ownership", "Month 1-2 — high-performing trainees can progress to coordinator within 8 weeks", "The timeline varies entirely based on individual performance and has no standard benchmark"], c: 0 },
+    { q: "The People Operations specialization track would be ideal for someone who excels at:", o: ["Building automated workflows and integrating third-party tools with existing systems", "Writing detailed SOPs and designing process improvement frameworks for the team", "Team coordination, onboarding new hires, and performance tracking — they enjoy working with people and building team effectiveness", "Analyzing data, managing vendor relationships, and optimizing the tool stack for cost efficiency"], c: 2 },
+    { q: "How does the training connect DH's revenue journey (₹9.2 Crores to ₹75 Crores) to operations career growth?", o: ["Operations roles will be automated away as the company grows, so career growth means transitioning to other departments", "Revenue growth means more operations staff will be hired, creating promotion opportunities through expanded team size", "As the company scales, the operations team that builds the systems enabling that growth becomes indispensable — your skills and equity grow proportionally with the company's success", "The revenue target is aspirational and does not directly affect individual career trajectories or compensation"], c: 2 }
+];
+
+// TASK 18 QUIZ: FINAL CERTIFICATION (20 questions pulling from all tasks)
+const task18Quiz = [
     { q: "It's 10:50 AM. You're sick and won't work today. You haven't posted anything yet. What's the correct action?", o: ["Post your start time first, then post a leave request", "Post a leave request ASAP — you need to post BEFORE 11 AM start time deadline AND before 12 PM leave deadline. Format: 'Leave - [today's date] - Reason: Not feeling well'", "Message your manager directly on Discord — formal leave requests aren't needed for sick days", "Wait until you feel better to decide if you need the whole day off"], c: 1 },
     { q: "Your response time SLA changes based on WHO messaged you. Put these in correct order from FASTEST required response to SLOWEST:", o: ["CEO (immediate) → Client (15min) → Lead (30min) → Colleague (1hr)", "Client (immediate) → CEO (5min) → Lead (10min) → Colleague (30min)", "CEO (5min) → Lead (10min) → Colleague (30min) → Client (1hr)", "All messages have the same 30-minute response SLA regardless of sender"], c: 2 },
     { q: "Your colleague shares a client's store password via Discord DM to save time. You know the step they missed. What's the FULL correct procedure they should have followed?", o: ["It's fine for one-time sharing between trusted colleagues — just delete the message after and ensures long-term operational sustainability — teams that adopt this strategy report fewer i", "Share via encrypted email, confirm receipt, enable 2FA — this is the recommended approach based on current documentation and expert consensus in the field today", "Delete the message, pretend it didn't happen, and reshare via password manager — implementing this correctly requires understanding the full context of how each operational element inter", "Share via password manager's secure sharing feature. Since they already shared via insecure method: change the password, share the new one securely, enable 2FA if not set."], c: 3 },
@@ -1385,6 +2091,11 @@ window.task10Content = task10Content;
 window.task11Content = task11Content;
 window.task12Content = task12Content;
 window.task13Content = task13Content;
+window.task14Content = task14Content;
+window.task15Content = task15Content;
+window.task16Content = task16Content;
+window.task17Content = task17Content;
+window.task18Content = task18Content;
 window.task1Quiz = task1Quiz;
 window.task2Quiz = task2Quiz;
 window.task3Quiz = task3Quiz;
@@ -1398,6 +2109,11 @@ window.task10Quiz = task10Quiz;
 window.task11Quiz = task11Quiz;
 window.task12Quiz = task12Quiz;
 window.task13Quiz = task13Quiz;
+window.task14Quiz = task14Quiz;
+window.task15Quiz = task15Quiz;
+window.task16Quiz = task16Quiz;
+window.task17Quiz = task17Quiz;
+window.task18Quiz = task18Quiz;
 
 const allQuizzes = [
     task1Quiz,
@@ -1412,10 +2128,13 @@ const allQuizzes = [
     task10Quiz,
     task11Quiz,
     task12Quiz,
-    task13Quiz
+    task13Quiz,
+    task14Quiz,
+    task15Quiz,
+    task16Quiz,
+    task17Quiz,
+    task18Quiz
 ];
-
-// Register task content on window for dynamic access
 
 
 
