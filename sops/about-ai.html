@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | About AI — Our AI Playbook</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
+    <link rel="stylesheet" href="admin-mode.css">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --primary-light: #1E293B;
+            --secondary: #334155;
+            --accent: #8B5CF6;
+            --accent-glow: rgba(139, 92, 246, 0.5);
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --light: #F8FAFC;
+            --dark: #020617;
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fa;
+            color: #1E293B;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 50%, #A78BFA 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header-banner h1 {
+            font-size: 2em;
+            margin: 0 0 10px;
+        }
+
+        .header-banner p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin: 4px;
+        }
+
+        .badge.dark { background: rgba(0,0,0,0.2); color: white; }
+        .badge.accent { background: rgba(255,255,255,0.2); color: white; }
+
+        .content-section {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .content-section h2 {
+            margin-top: 0;
+            color: #1E293B;
+            font-size: 1.5em;
+            border-bottom: 2px solid #8B5CF6;
+            padding-bottom: 12px;
+        }
+
+        .content-section h3 {
+            color: #7C3AED;
+            margin-top: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        th {
+            background: #7C3AED;
+            color: white;
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+        td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #E2E8F0;
+            font-size: 0.9em;
+        }
+
+        tr:hover { background: rgba(139, 92, 246, 0.04); }
+
+        .tool-card {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.06), rgba(168, 85, 247, 0.06));
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 12px 0;
+        }
+
+        .tool-card h4 {
+            color: #7C3AED;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+
+        .rule-box {
+            background: #FEF2F2;
+            border: 1px solid #FECACA;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 12px 0;
+        }
+
+        .rule-box h4 {
+            color: #DC2626;
+            margin-top: 0;
+        }
+
+        .tip-box {
+            background: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 12px 0;
+        }
+
+        .tip-box h4 {
+            color: #16A34A;
+            margin-top: 0;
+        }
+
+        code {
+            background: rgba(139, 92, 246, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #7C3AED;
+        }
+
+        .prompt-box {
+            background: #1E293B;
+            color: #E2E8F0;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 12px 0;
+            font-family: monospace;
+            font-size: 0.88em;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+
+        .nav-link.active {
+            background: var(--accent);
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="assets/css/mobile-override.css">
+    <link rel="stylesheet" href="assets/css/copy-button.css">
+</head>
+
+<body>
+
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>AI at Digital Heroes</h2>
+        </div>
+        <div class="back-link" style="margin-top: 0; border-top: none; padding: 0 24px 20px; text-align: left;">
+            <a href="index.html"
+                style="display: flex; align-items: center; gap: 8px; color: #94A3B8; font-weight: 500; font-size: 0.9rem;">
+                <span>&larr;</span> Back to Dashboard
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#philosophy" class="nav-link active"><span class="nav-icon">🎯</span> AI Philosophy</a></li>
+            <li class="nav-item"><a href="#models" class="nav-link"><span class="nav-icon">🧠</span> AI Models</a></li>
+            <li class="nav-item"><a href="#prompting" class="nav-link"><span class="nav-icon">✍️</span> Prompt Engineering</a></li>
+            <li class="nav-item"><a href="#claude-code" class="nav-link"><span class="nav-icon">💻</span> Claude Code</a></li>
+            <li class="nav-item"><a href="#antigravity" class="nav-link"><span class="nav-icon">🚀</span> Antigravity & MCP</a></li>
+            <li class="nav-item"><a href="#custom-gpts" class="nav-link"><span class="nav-icon">🛠️</span> Custom GPTs</a></li>
+            <li class="nav-item"><a href="#shopify-ai" class="nav-link"><span class="nav-icon">🛒</span> Shopify + AI</a></li>
+            <li class="nav-item"><a href="#design-ai" class="nav-link"><span class="nav-icon">🎨</span> AI for Design</a></li>
+            <li class="nav-item"><a href="#content-ai" class="nav-link"><span class="nav-icon">📝</span> AI for Content</a></li>
+            <li class="nav-item"><a href="#pm-ai" class="nav-link"><span class="nav-icon">📋</span> AI for PM & Ops</a></li>
+            <li class="nav-item"><a href="#security" class="nav-link"><span class="nav-icon">🔒</span> Security & Ethics</a></li>
+            <li class="nav-item"><a href="#role-guide" class="nav-link"><span class="nav-icon">👤</span> AI by Role</a></li>
+        </ul>
+        <div style="padding: 20px 24px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 10px;">
+            <a href="training/ai-training.html" style="display: block; text-align: center; background: #8B5CF6; color: white; padding: 12px; border-radius: 10px; font-weight: 600; text-decoration: none;">🎓 Start AI Training</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <div class="header-banner">
+            <h1>🤖 About AI at Digital Heroes</h1>
+            <p>Your complete reference guide to every AI tool, workflow, and policy we use.</p>
+            <div style="margin-top: 16px;">
+                <span class="badge dark">Last Updated: March 2026</span>
+                <span class="badge accent">Mandatory Reading</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: PHILOSOPHY -->
+        <section id="philosophy" class="content-section">
+            <h2>🎯 The DH AI Philosophy</h2>
+            <p>AI is not the future &mdash; it's the <strong>present</strong>. At Digital Heroes, every team member is expected to use AI tools daily to <strong>10x their output</strong>. This isn't optional. If you're not using AI, you're working at 10% capacity.</p>
+
+            <div class="tool-card">
+                <h4>The Core Principle</h4>
+                <p>AI doesn't replace you &mdash; it <strong>amplifies</strong> you. You are the <strong>human-in-the-loop</strong> who directs AI to produce exceptional work. Every task you do &mdash; writing emails, creating designs, coding, managing projects &mdash; can and should be enhanced with AI.</p>
+            </div>
+
+            <h3>The Non-Negotiable Rules</h3>
+            <div class="rule-box">
+                <h4>&#9888;&#65039; Three Absolute Rules</h4>
+                <ol>
+                    <li><strong>NEVER submit AI output to a client without human review.</strong> You are responsible for every deliverable, not the AI.</li>
+                    <li><strong>NEVER feed client credentials or customer PII to AI tools.</strong> No API keys, passwords, or real customer data in prompts.</li>
+                    <li><strong>ALWAYS verify AI-generated facts, code, and statistics.</strong> AI hallucinates &mdash; confidently stating things that are wrong.</li>
+                </ol>
+            </div>
+
+            <h3>What AI Can & Cannot Do</h3>
+            <div class="grid-2">
+                <div class="tip-box">
+                    <h4>&#9989; AI Excels At</h4>
+                    <ul>
+                        <li>Drafting content, emails, and descriptions</li>
+                        <li>Generating code from clear specifications</li>
+                        <li>Analyzing data and identifying patterns</li>
+                        <li>Brainstorming and ideation</li>
+                        <li>Repetitive tasks at scale (bulk descriptions, alt text)</li>
+                        <li>Summarizing long documents and meetings</li>
+                    </ul>
+                </div>
+                <div class="rule-box">
+                    <h4>&#10060; AI Struggles With</h4>
+                    <ul>
+                        <li>Recent information (knowledge cutoff dates)</li>
+                        <li>100% factual accuracy (hallucinations)</li>
+                        <li>True creative originality</li>
+                        <li>Understanding context without explicit instructions</li>
+                        <li>Complex multi-step reasoning without guidance</li>
+                        <li>Accessing private systems or live data</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: AI MODELS -->
+        <section id="models" class="content-section">
+            <h2>🧠 AI Models We Use</h2>
+            <p>Different models have different strengths. Use the right tool for the job.</p>
+
+            <table>
+                <tr><th>Model</th><th>Best For</th><th>DH Use Case</th><th>Access</th></tr>
+                <tr><td><strong>Claude Opus</strong></td><td>Complex reasoning, long documents, coding</td><td>Claude Code, architecture decisions, deep analysis</td><td>Claude.ai / CLI</td></tr>
+                <tr><td><strong>Claude Sonnet</strong></td><td>Balanced speed + quality</td><td>Daily tasks, content drafts, quick analysis</td><td>Claude.ai</td></tr>
+                <tr><td><strong>GPT-4o</strong></td><td>Custom GPTs, multimodal (images + text)</td><td>Custom GPTs for client workflows, image analysis</td><td>ChatGPT</td></tr>
+                <tr><td><strong>Gemini</strong></td><td>Google integration, very large context</td><td>Research, Google Workspace tasks</td><td>Gemini</td></tr>
+            </table>
+
+            <h3>Key Concepts</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>Tokens</h4>
+                    <p>AI breaks text into tokens (~4 characters = 1 token). Tokens are the billing and processing unit. More tokens = more cost and more context used.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Context Window</h4>
+                    <p>The total tokens an AI can "see" at once. Claude Opus: 200K tokens (~500 pages). GPT-4o: 128K tokens. Bigger window = can process larger documents.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Temperature</h4>
+                    <p>Controls randomness. <strong>Low (0)</strong> = deterministic, same answer every time (use for code). <strong>High (1)</strong> = creative, varied answers (use for brainstorming).</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Hallucinations</h4>
+                    <p>AI confidently generates wrong information &mdash; fake APIs, fictional statistics, non-existent functions. <strong>Always verify critical facts and code.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PROMPT ENGINEERING -->
+        <section id="prompting" class="content-section">
+            <h2>&#9997;&#65039; Prompt Engineering</h2>
+            <p>The difference between a junior and senior AI user isn't the model they use &mdash; it's <strong>how they prompt</strong>.</p>
+
+            <h3>The RCFC Framework</h3>
+            <table>
+                <tr><th>Component</th><th>Purpose</th><th>Example</th></tr>
+                <tr><td><strong>Role</strong></td><td>Who the AI should be</td><td>"You are a senior Shopify developer with 10 years of experience"</td></tr>
+                <tr><td><strong>Context</strong></td><td>Background information</td><td>"We're building a luxury watch e-commerce store"</td></tr>
+                <tr><td><strong>Format</strong></td><td>Desired output structure</td><td>"Provide as a numbered checklist with code snippets"</td></tr>
+                <tr><td><strong>Constraints</strong></td><td>Rules and boundaries</td><td>"Use only Dawn theme APIs. No external JS. Max 50 lines."</td></tr>
+            </table>
+
+            <h3>Techniques</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>Zero-Shot</h4>
+                    <p>Ask directly with no examples. Works for simple, standard tasks.</p>
+                    <div class="prompt-box">"Write a product description for a blue silk scarf."</div>
+                </div>
+                <div class="tool-card">
+                    <h4>Few-Shot</h4>
+                    <p>Give 2-3 examples first. Works for specific styles and brand voices.</p>
+                    <div class="prompt-box">"Here are examples of our brand voice:
+Product A: 'Crafted for those who dare.'
+Product B: 'Where elegance meets everyday.'
+Now write one for Product C (leather wallet):"</div>
+                </div>
+                <div class="tool-card">
+                    <h4>Chain-of-Thought</h4>
+                    <p>Ask AI to think step-by-step. Essential for complex reasoning and analysis.</p>
+                    <div class="prompt-box">"Think step by step: A client's conversion rate dropped from 3.2% to 1.8%. Analyze possible causes."</div>
+                </div>
+                <div class="tool-card">
+                    <h4>Iterative Refinement</h4>
+                    <p>Start broad, then narrow with follow-ups. Don't expect perfection in one prompt.</p>
+                    <div class="prompt-box">Prompt 1: "Draft a homepage hero section."
+Prompt 2: "Make it more playful. Add CTA."
+Prompt 3: "Convert to Shopify Liquid."</div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>&#128161; Pro Tip: Prompt Template for Product Descriptions</h4>
+                <div class="prompt-box">Role: You are an e-commerce copywriter for [brand type]
+Context: Product is [name], [features], [price point], [target audience]
+Format: 150 words with: hook line, 3 benefit bullets, specs, CTA
+Constraints: Match this brand voice: [example]. Include keywords: [kw1, kw2]</div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: CLAUDE CODE -->
+        <section id="claude-code" class="content-section">
+            <h2>&#128187; Claude Code</h2>
+            <p>Claude Code is an <strong>agentic CLI tool</strong> that lives in your terminal. It directly reads your files, writes code, runs commands, and manages your entire codebase.</p>
+
+            <h3>Getting Started</h3>
+            <div class="prompt-box">npm install -g @anthropic-ai/claude-code
+cd my-shopify-theme
+claude</div>
+
+            <h3>Essential Commands</h3>
+            <table>
+                <tr><th>Command</th><th>Purpose</th></tr>
+                <tr><td><code>/init</code></td><td>Create a CLAUDE.md project file with codebase context</td></tr>
+                <tr><td><code>/compact</code></td><td>Summarize conversation to free up context window</td></tr>
+                <tr><td><code>/clear</code></td><td>Start fresh conversation while keeping project context</td></tr>
+                <tr><td><code>/cost</code></td><td>Show token usage and cost for current session</td></tr>
+            </table>
+
+            <h3>CLAUDE.md &mdash; Your Project's AI Brain</h3>
+            <p>A markdown file at the root of your project that gives Claude Code persistent context between sessions. Include:</p>
+            <ul>
+                <li><strong>Project overview:</strong> Tech stack, architecture</li>
+                <li><strong>File structure:</strong> Key directories and purposes</li>
+                <li><strong>Coding conventions:</strong> Naming patterns, style preferences</li>
+                <li><strong>Common commands:</strong> Build, test, deploy scripts</li>
+                <li><strong>Known issues:</strong> Gotchas and workarounds</li>
+            </ul>
+
+            <h3>DH Workflow</h3>
+            <ol>
+                <li><strong>Navigate to project:</strong> <code>cd my-shopify-theme</code></li>
+                <li><strong>Start Claude Code:</strong> <code>claude</code></li>
+                <li><strong>Give clear instructions:</strong> Describe what you need with full context</li>
+                <li><strong>Review generated code:</strong> Claude shows diffs before applying</li>
+                <li><strong>Accept or modify:</strong> Approve changes or ask for adjustments</li>
+                <li><strong>Test:</strong> <code>shopify theme dev</code> to preview</li>
+                <li><strong>Commit:</strong> Claude handles git add, commit, push</li>
+            </ol>
+
+            <div class="tip-box">
+                <h4>&#128161; Why Claude Code Over ChatGPT for Coding?</h4>
+                <p>Claude Code reads your entire project for context, writes directly to files, runs terminal commands, and understands your architecture. It's not a chat interface &mdash; it's an AI colleague that works inside your codebase.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 5: ANTIGRAVITY & MCP -->
+        <section id="antigravity" class="content-section">
+            <h2>&#128640; Antigravity & MCP</h2>
+
+            <h3>Antigravity Platform</h3>
+            <p><strong>Antigravity</strong> is DH's internal platform connecting AI tools, automation workflows, and team processes into one unified system. Think of it as mission control for all DH AI operations.</p>
+            <ul>
+                <li><strong>AI Workspace:</strong> Centralized environment for running Claude Code with project templates</li>
+                <li><strong>Workflow Automation:</strong> Trigger AI tasks on schedules or events</li>
+                <li><strong>Knowledge Base:</strong> SOPs, brand guides, and training materials accessible to AI</li>
+                <li><strong>Team Collaboration:</strong> Share AI sessions, prompts, and outputs</li>
+            </ul>
+
+            <h3>Claude in Chrome</h3>
+            <p>A browser extension that lets Claude interact directly with your browser tabs &mdash; read pages, fill forms, click buttons, take screenshots, and automate workflows.</p>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>QA Testing</h4>
+                    <p>Claude reads a live store and identifies UX issues, broken links, and missing alt text.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Competitor Analysis</h4>
+                    <p>Open a competitor site and ask Claude to analyze pricing, design, and features.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Data Extraction</h4>
+                    <p>Extract product info, reviews, or pricing from pages into structured data.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Form Automation</h4>
+                    <p>Fill out repetitive forms with structured data across tools.</p>
+                </div>
+            </div>
+
+            <h3>MCP &mdash; Model Context Protocol</h3>
+            <p>MCP lets AI models connect to external tools and data sources. Think of it as <strong>USB ports for AI</strong>.</p>
+            <table>
+                <tr><th>MCP Server</th><th>What It Does</th><th>DH Use Case</th></tr>
+                <tr><td><strong>Scheduled Tasks</strong></td><td>Run AI tasks on a cron schedule</td><td>Daily QA scans, automated reports</td></tr>
+                <tr><td><strong>Registry Connectors</strong></td><td>Connect to apps (Asana, Jira, Slack)</td><td>Sync tasks, send notifications</td></tr>
+                <tr><td><strong>Preview Server</strong></td><td>Live preview of web development</td><td>Real-time Shopify theme preview</td></tr>
+                <tr><td><strong>Browser Automation</strong></td><td>Control Chrome programmatically</td><td>QA testing, competitor analysis</td></tr>
+            </table>
+        </section>
+
+        <!-- SECTION 6: CUSTOM GPTs -->
+        <section id="custom-gpts" class="content-section">
+            <h2>&#128736;&#65039; Custom GPTs & Claude Projects</h2>
+            <p>Custom GPTs are <strong>pre-configured AI assistants</strong> with specific instructions, knowledge, and capabilities baked in. Build it once, reuse it forever.</p>
+
+            <h3>DH Custom GPTs</h3>
+            <table>
+                <tr><th>GPT Name</th><th>Purpose</th><th>Who Uses It</th></tr>
+                <tr><td><strong>Client Comms Bot</strong></td><td>Draft professional client messages, handle objections, upsell templates</td><td>Sales, PM, CS</td></tr>
+                <tr><td><strong>QA Review Bot</strong></td><td>Check deliverables against DH standards</td><td>QA, Developers</td></tr>
+                <tr><td><strong>SOP Assistant</strong></td><td>Answer questions about DH processes</td><td>All Roles</td></tr>
+                <tr><td><strong>Content Writer</strong></td><td>Blog posts, product descriptions, social captions</td><td>Content, Social Media</td></tr>
+            </table>
+
+            <h3>Custom GPTs vs Claude Projects</h3>
+            <table>
+                <tr><th>Feature</th><th>Custom GPTs (ChatGPT)</th><th>Claude Projects</th></tr>
+                <tr><td>Best For</td><td>Repeatable, shareable team-wide tools</td><td>Deep, ongoing work with codebases</td></tr>
+                <tr><td>Knowledge</td><td>File uploads (PDFs, docs)</td><td>Project knowledge + files</td></tr>
+                <tr><td>Sharing</td><td>Public GPT Store or link</td><td>Team workspace</td></tr>
+            </table>
+
+            <div class="tip-box">
+                <h4>&#128161; When to Build a Custom GPT</h4>
+                <p>If you find yourself writing the same long prompt more than 3 times, build a Custom GPT. Package the instructions, knowledge files, and examples into a reusable tool the whole team can use.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 7: SHOPIFY + AI -->
+        <section id="shopify-ai" class="content-section">
+            <h2>&#128722; Shopify CLI + AI</h2>
+            <p>The magic happens when you combine Shopify CLI with Claude Code.</p>
+
+            <h3>The Workflow</h3>
+            <ol>
+                <li><code>shopify theme pull --store mystore.myshopify.com</code></li>
+                <li><code>claude</code> &mdash; start Claude Code in the theme directory</li>
+                <li>Describe what you need: sections, schemas, metafields</li>
+                <li><code>shopify theme dev</code> &mdash; preview changes live</li>
+                <li>Iterate with AI: fix bugs, adjust mobile, refine design</li>
+                <li><code>shopify theme check</code> &mdash; lint for best practices</li>
+                <li><code>shopify theme push</code> &mdash; deploy</li>
+            </ol>
+
+            <h3>What AI Can Generate</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>Liquid Sections</h4>
+                    <p>Hero banners, product grids, testimonial carousels, FAQ accordions &mdash; complete with schema JSON.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Section Schemas</h4>
+                    <p>Describe settings in plain English and get complete JSON schemas with types, defaults, and labels.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>Metafield Definitions</h4>
+                    <p>Material, gemstone, ring size, care instructions &mdash; AI generates proper Shopify metafield types.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>CSS &amp; Responsive Design</h4>
+                    <p>Mobile-first layouts, grid systems, scroll-snap carousels &mdash; all using Dawn CSS variables.</p>
+                </div>
+            </div>
+
+            <div class="rule-box">
+                <h4>&#9888;&#65039; DH Rule: No External JS Libraries</h4>
+                <p>AI-generated Shopify sections must use native CSS/JS and Dawn theme utilities only. External CDN dependencies make stores slower and can break with Shopify updates.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 8: AI FOR DESIGN -->
+        <section id="design-ai" class="content-section">
+            <h2>&#127912; AI for Design & Branding</h2>
+
+            <h3>Image Generation Tools</h3>
+            <table>
+                <tr><th>Tool</th><th>Strength</th><th>DH Use Case</th></tr>
+                <tr><td><strong>Midjourney</strong></td><td>Photorealistic, artistic quality</td><td>Hero banners, lifestyle mockups, brand concepts</td></tr>
+                <tr><td><strong>DALL-E 3</strong></td><td>Text rendering, prompt adherence</td><td>Social graphics, icons, illustrations</td></tr>
+                <tr><td><strong>Stable Diffusion</strong></td><td>Customizable, local control</td><td>Product backgrounds, patterns</td></tr>
+            </table>
+
+            <h3>DH Design Tools</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#129525; Stitch</h4>
+                    <p>AI-powered e-commerce design: product photo enhancement, background removal, brand-consistent templates, bulk product image processing.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#127959;&#65039; 21st.dev</h4>
+                    <p>Generate production-ready UI components from natural language. Describe a pricing table or hero section and get clean code instantly.</p>
+                </div>
+            </div>
+
+            <h3>Design Workflows</h3>
+            <ul>
+                <li><strong>Logo concepts:</strong> Generate 20 with Midjourney &rarr; refine top 5 in Figma &rarr; present 3 to client</li>
+                <li><strong>Color palettes:</strong> AI generates palettes with hex codes, emotional associations, and usage rules</li>
+                <li><strong>Product photography:</strong> AI places products in lifestyle settings &mdash; $10 image looks like $500 shoot</li>
+                <li><strong>A/B variants:</strong> Generate multiple design versions quickly for conversion testing</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 9: AI FOR CONTENT -->
+        <section id="content-ai" class="content-section">
+            <h2>&#128221; AI for Content & SEO</h2>
+
+            <h3>Content Types</h3>
+            <table>
+                <tr><th>Content</th><th>AI Approach</th></tr>
+                <tr><td>Product descriptions</td><td>Few-shot template with brand voice examples, batch process entire catalogs</td></tr>
+                <tr><td>Blog posts</td><td>AI generates SEO outlines (H2/H3 structure), you write and refine</td></tr>
+                <tr><td>Email sequences</td><td>Define each email's purpose and funnel stage, AI drafts the series</td></tr>
+                <tr><td>Social captions</td><td>Specify platform, tone, hashtag count, and CTA for each post</td></tr>
+                <tr><td>Ad copy</td><td>Character-limited variants (headline < 40, text < 125 chars)</td></tr>
+            </table>
+
+            <h3>SEO with AI</h3>
+            <table>
+                <tr><th>Task</th><th>Prompt Approach</th></tr>
+                <tr><td>Meta titles</td><td>"Generate 5 meta titles (under 60 chars) targeting keyword [X]"</td></tr>
+                <tr><td>Meta descriptions</td><td>"Write 3 meta descriptions (under 155 chars) with CTA"</td></tr>
+                <tr><td>Alt text</td><td>"Write SEO alt text for 20 product images &mdash; under 125 chars each"</td></tr>
+                <tr><td>FAQ schema</td><td>"Generate 10 FAQ Q&As for [topic] &mdash; format as JSON-LD"</td></tr>
+            </table>
+        </section>
+
+        <!-- SECTION 10: AI FOR PM -->
+        <section id="pm-ai" class="content-section">
+            <h2>&#128203; AI for PM & Operations</h2>
+
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#128202; Project Estimation</h4>
+                    <p>Describe scope &rarr; AI generates task breakdown with hours, roles, dependencies, and risk factors. Use as baseline, validate with tech lead.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128221; Meeting Summaries</h4>
+                    <p>Paste raw notes &rarr; AI structures into: decisions, action items (who/what/deadline), open questions, next meeting.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128172; Client Communication</h4>
+                    <p>AI drafts weekly updates, scope change messages, delay notifications, and upsell proposals. Always review before sending.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#9889; Automation with MCP</h4>
+                    <p>Scheduled tasks for daily standups, QA checklists, risk identification, and retrospective analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 11: SECURITY -->
+        <section id="security" class="content-section">
+            <h2>&#128274; Security & Ethics</h2>
+
+            <div class="rule-box">
+                <h4>&#128680; Data Security &mdash; Zero Tolerance</h4>
+                <ul>
+                    <li><strong>NEVER</strong> feed client credentials to AI (API keys, passwords, admin URLs)</li>
+                    <li><strong>NEVER</strong> share customer PII (real names, emails, phone numbers, addresses)</li>
+                    <li><strong>NEVER</strong> paste proprietary client code without PM authorization</li>
+                    <li><strong>ALWAYS</strong> use anonymized data ("Client A", "user@example.com")</li>
+                    <li><strong>ALWAYS</strong> check if your AI tool stores conversations for training</li>
+                </ul>
+                <p><strong>Violation = termination. No exceptions.</strong></p>
+            </div>
+
+            <h3>AI Bias Awareness</h3>
+            <ul>
+                <li><strong>Cultural bias:</strong> AI may not resonate with diverse audiences &mdash; review for inclusivity</li>
+                <li><strong>Visual bias:</strong> Image generation may default to stereotypes &mdash; use explicit diversity requirements</li>
+                <li><strong>Language bias:</strong> AI may favor formal English over your audience's regional expressions</li>
+            </ul>
+
+            <h3>Hallucination Detection</h3>
+            <ol>
+                <li>Verify all statistics and data &mdash; find the actual source or remove the claim</li>
+                <li>Test all generated code &mdash; verify API functions actually exist in official docs</li>
+                <li>Check links and references &mdash; AI may generate plausible but fake URLs</li>
+                <li>Question extreme confidence &mdash; that's often when AI hallucinations sound most believable</li>
+            </ol>
+
+            <h3>IP & Disclosure</h3>
+            <ul>
+                <li><strong>AI-assisted work is YOUR work:</strong> You directed, reviewed, and refined it</li>
+                <li><strong>Be transparent:</strong> If a client asks, be honest about AI-assisted workflows</li>
+                <li><strong>Copyright caution:</strong> For logos and brand identity, always refine AI concepts with human tools</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 12: ROLE GUIDE -->
+        <section id="role-guide" class="content-section">
+            <h2>&#128100; AI Quick Guide by Role</h2>
+            <p>Every role at DH benefits from AI. Here's your starting point:</p>
+
+            <table>
+                <tr><th>Role</th><th>Top AI Tools</th><th>Daily Use Cases</th></tr>
+                <tr><td><strong>Developer</strong></td><td>Claude Code, Shopify CLI, 21st.dev</td><td>Generate Liquid sections, debug code, write schemas, git workflow</td></tr>
+                <tr><td><strong>Designer</strong></td><td>Midjourney, Stitch, DALL-E, Figma AI</td><td>Mood boards, product photos, color palettes, UI components</td></tr>
+                <tr><td><strong>Content Writer</strong></td><td>Claude/ChatGPT, SEO tools</td><td>Product descriptions, blog outlines, meta tags, email sequences</td></tr>
+                <tr><td><strong>Social Media</strong></td><td>ChatGPT, DALL-E, Canva AI</td><td>Captions, hashtags, content calendars, ad copy variants</td></tr>
+                <tr><td><strong>Sales</strong></td><td>Client Comms GPT, Claude</td><td>Proposal drafts, objection handling, upsell suggestions</td></tr>
+                <tr><td><strong>PM</strong></td><td>Claude, MCP Scheduled Tasks</td><td>Estimation, meeting summaries, client updates, risk analysis</td></tr>
+                <tr><td><strong>CS</strong></td><td>Client Comms GPT, Claude</td><td>Response templates, escalation analysis, satisfaction reports</td></tr>
+                <tr><td><strong>HR</strong></td><td>ChatGPT, Claude</td><td>JD drafts, interview questions, policy documentation</td></tr>
+                <tr><td><strong>Finance</strong></td><td>Claude, spreadsheet AI</td><td>Invoice analysis, report generation, forecasting</td></tr>
+                <tr><td><strong>Operations</strong></td><td>MCP, Claude Code</td><td>Process automation, QA workflows, system monitoring</td></tr>
+            </table>
+
+            <div class="tip-box" style="text-align: center; margin-top: 24px;">
+                <h4>&#127891; Ready to Master AI?</h4>
+                <p>Complete the full <strong>AI Training Module</strong> &mdash; 10 tasks, 119 quiz questions, and hands-on vibe coding exercises.</p>
+                <a href="training/ai-training.html" style="display: inline-block; background: #8B5CF6; color: white; padding: 12px 32px; border-radius: 10px; font-weight: 700; text-decoration: none; margin-top: 8px;">Start AI Training &rarr;</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assets/js/shared-sidebar.js"></script>
+    <script src="admin-mode.js"></script>
+</body>
+</html>
