@@ -180,9 +180,96 @@
             line-height: 1.6;
         }
 
+        .nav-menu {
+            list-style: none;
+            padding: 0 12px;
+            flex: 1;
+        }
+
+        .nav-item {
+            margin-bottom: 4px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+            color: #94A3B8;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+            font-weight: 500;
+            gap: 12px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
         .nav-link.active {
             background: var(--accent);
             box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .nav-icon {
+            width: 20px;
+            text-align: center;
+        }
+
+        .step-card {
+            background: white;
+            border: 2px solid #E2E8F0;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 16px;
+            position: relative;
+            transition: border-color 0.2s;
+        }
+        .step-card:hover { border-color: #8B5CF6; }
+        .step-card h4 {
+            color: #7C3AED;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1em;
+        }
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #8B5CF6;
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.85em;
+            flex-shrink: 0;
+        }
+        .checklist-box {
+            background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
+            border: 2px solid #10B981;
+            border-radius: 14px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+        .checklist-box h4 { color: #059669; margin-top: 0; }
+        .checklist-box label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 0.95em;
+            cursor: pointer;
+        }
+        .checklist-box input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #10B981;
         }
     </style>
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
@@ -208,7 +295,8 @@
             </a>
         </div>
         <ul class="nav-menu">
-            <li class="nav-item"><a href="#philosophy" class="nav-link active"><span class="nav-icon">🎯</span> AI Philosophy</a></li>
+            <li class="nav-item"><a href="#setup" class="nav-link active"><span class="nav-icon">⚙️</span> Setup Guide</a></li>
+            <li class="nav-item"><a href="#philosophy" class="nav-link"><span class="nav-icon">🎯</span> AI Philosophy</a></li>
             <li class="nav-item"><a href="#models" class="nav-link"><span class="nav-icon">🧠</span> AI Models</a></li>
             <li class="nav-item"><a href="#prompting" class="nav-link"><span class="nav-icon">✍️</span> Prompt Engineering</a></li>
             <li class="nav-item"><a href="#claude-code" class="nav-link"><span class="nav-icon">💻</span> Claude Code</a></li>
@@ -241,6 +329,217 @@
                 <span class="badge accent">Mandatory Reading</span>
             </div>
         </div>
+
+        <!-- SECTION 0: MANDATORY SETUP GUIDE -->
+        <section id="setup" class="content-section">
+            <h2>&#9881;&#65039; Company-Wide Mandatory Setup</h2>
+            <div class="rule-box" style="background: #FEF3C7; border-color: #F59E0B;">
+                <h4 style="color: #D97706;">&#9888;&#65039; Mandatory for ALL Employees &mdash; Deadline: Within 24 Hours</h4>
+                <p>Every team member must complete the setup below. Use your <strong>personal account</strong> for now &mdash; the company billing/API plan will be shared within 3 days. Individual verification will be done after 24 hours.</p>
+            </div>
+
+            <!-- STEP 1 -->
+            <div class="step-card">
+                <h4><span class="step-number">1</span> Install Claude Code (Desktop)</h4>
+                <p>Claude Code is our primary AI coding tool. It lives in your terminal and works directly with your project files.</p>
+                <ol>
+                    <li>Go to the official quickstart: <a href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank">Claude Code Documentation</a></li>
+                    <li>Open your terminal (Command Prompt / PowerShell / Terminal)</li>
+                    <li>Install via npm:
+                        <div class="prompt-box">npm install -g @anthropic-ai/claude-code</div>
+                    </li>
+                    <li>Navigate to any project folder and start Claude:
+                        <div class="prompt-box">cd your-project-folder
+claude</div>
+                    </li>
+                    <li>Sign in with your personal Anthropic/Claude account (create one at <a href="https://claude.ai" target="_blank">claude.ai</a> if needed)</li>
+                    <li>Verify Claude Code launches successfully &mdash; you should see the Claude prompt in your terminal</li>
+                </ol>
+                <div class="tip-box">
+                    <h4>&#128161; Why Claude Code?</h4>
+                    <p>Unlike ChatGPT, Claude Code reads your entire project, writes directly to files, runs terminal commands, and handles git. It's not a chat box &mdash; it's an AI colleague working inside your codebase. Every developer, PM, and operations member will use this daily.</p>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step-card">
+                <h4><span class="step-number">2</span> Install the Claude Chrome Extension</h4>
+                <p>The Chrome extension connects Claude directly to your browser. It can see what you see &mdash; read pages, fill forms, click buttons, take screenshots, and automate tasks.</p>
+                <ol>
+                    <li>Open <strong>Google Chrome</strong> browser</li>
+                    <li>Go to the Chrome Web Store and search for <strong>"Claude" by Anthropic</strong></li>
+                    <li>Click <strong>"Add to Chrome"</strong> &rarr; confirm by clicking <strong>"Add Extension"</strong></li>
+                    <li>The Claude icon will appear in your Chrome toolbar (top-right corner)</li>
+                    <li>Click the icon and sign in with your Claude/Anthropic account</li>
+                    <li>Test it: Open any webpage, click the Claude icon, and ask it to summarize the page</li>
+                </ol>
+                <div class="tip-box">
+                    <h4>&#128161; What Can It Do?</h4>
+                    <table>
+                        <tr><th>Capability</th><th>Example</th></tr>
+                        <tr><td>Read any page</td><td>"Read this product page and list every SEO issue"</td></tr>
+                        <tr><td>Fill forms</td><td>Fill Shopify product fields from a spreadsheet</td></tr>
+                        <tr><td>Take screenshots</td><td>Screenshot every page for a client QA report</td></tr>
+                        <tr><td>Click &amp; navigate</td><td>Navigate through a checkout flow testing each step</td></tr>
+                        <tr><td>Compare pages</td><td>"Compare our store vs competitor: pricing, design, UX"</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step-card">
+                <h4><span class="step-number">3</span> Clone the Anthropic Skills Repository</h4>
+                <p>Skills are pre-built AI capabilities that supercharge Claude Code. The official Anthropic repo contains dozens of ready-to-use skills.</p>
+                <ol>
+                    <li>Make sure <strong>Git</strong> is installed. If not: <a href="https://git-scm.com" target="_blank">git-scm.com</a></li>
+                    <li>Open your terminal and clone:
+                        <div class="prompt-box">git clone https://github.com/anthropics/skills.git
+cd skills</div>
+                    </li>
+                    <li>Review the contents &mdash; each folder is a skill with a <code>SKILL.md</code> file</li>
+                    <li>Skills include: PDF generation, spreadsheet manipulation, document creation, scheduled tasks, and more</li>
+                </ol>
+                <div class="tool-card">
+                    <h4>Key Skills for DH Roles</h4>
+                    <table>
+                        <tr><th>Skill</th><th>What It Does</th><th>Best For</th></tr>
+                        <tr><td><code>pdf</code></td><td>Read, merge, split, watermark PDFs</td><td>Finance, PM, Operations</td></tr>
+                        <tr><td><code>xlsx</code></td><td>Create/edit spreadsheets, charts, formulas</td><td>Finance, Sales, PM</td></tr>
+                        <tr><td><code>docx</code></td><td>Generate Word documents with formatting</td><td>HR, PM, Content</td></tr>
+                        <tr><td><code>pptx</code></td><td>Create presentation slide decks</td><td>Sales, PM, Designer</td></tr>
+                        <tr><td><code>schedule</code></td><td>Automate recurring tasks on a cron</td><td>Operations, PM, All</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="step-card">
+                <h4><span class="step-number">4</span> Clone the Marketing Skills Repository</h4>
+                <p>36 specialized AI skills for every marketing task &mdash; CRO, copywriting, SEO, paid ads, and strategy.</p>
+                <ol>
+                    <li>In your terminal:
+                        <div class="prompt-box">git clone https://github.com/coreyhaines31/marketingskills.git
+cd marketingskills</div>
+                    </li>
+                    <li>Or install directly into any project:
+                        <div class="prompt-box">npx skills add coreyhaines31/marketingskills</div>
+                    </li>
+                    <li>Each skill gives Claude deep domain expertise in a specific marketing area</li>
+                </ol>
+                <div class="tool-card">
+                    <h4>Skill Categories (36 Total)</h4>
+                    <table>
+                        <tr><th>Category</th><th>Count</th><th>Examples</th></tr>
+                        <tr><td>Conversion &amp; CRO</td><td>6</td><td>page-cro, signup-flow-cro, form-cro, popup-cro</td></tr>
+                        <tr><td>Content &amp; Copy</td><td>5</td><td>blog-post, landing-page-copy, email-sequence, social-post</td></tr>
+                        <tr><td>SEO &amp; Discovery</td><td>6</td><td>seo-audit, keyword-research, content-seo, technical-seo</td></tr>
+                        <tr><td>Paid Ads &amp; Growth</td><td>5</td><td>google-ads, meta-ads, retargeting, growth-loops</td></tr>
+                        <tr><td>Strategy &amp; Analytics</td><td>6</td><td>positioning, competitor-analysis, pricing-strategy, analytics</td></tr>
+                        <tr><td>Other</td><td>8</td><td>product-launch, referral-program, community, partnerships</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="step-card">
+                <h4><span class="step-number">5</span> Integrate Skills Into Daily Work</h4>
+                <p>Now connect everything together so AI becomes part of your daily workflow.</p>
+                <ol>
+                    <li><strong>Open Claude Code Desktop</strong> (installed in Step 1)</li>
+                    <li><strong>Point Claude Code to your project folder:</strong>
+                        <div class="prompt-box">cd your-shopify-project
+claude</div>
+                    </li>
+                    <li><strong>Create a CLAUDE.md</strong> in your project root &mdash; this tells Claude about your project context:
+                        <div class="prompt-box"># Project: [Client Name] Shopify Store
+## Tech Stack: Shopify Dawn theme, Liquid, JavaScript
+## Key Files: sections/, snippets/, assets/
+## Brand Voice: Luxury, minimal, warm
+## Common Tasks: Section builds, bug fixes, product descriptions</div>
+                    </li>
+                    <li><strong>Use skills from both repos</strong> in your prompts:
+                        <div class="prompt-box">"Run a CRO audit on this landing page"
+"Generate a PDF report of this week's sales data"
+"Create a slide deck for the client presentation"
+"Write SEO-optimized product descriptions for all items"</div>
+                    </li>
+                    <li><strong>Use the Chrome Extension</strong> alongside Claude Code for browser-based tasks</li>
+                </ol>
+                <div class="grid-2">
+                    <div class="tip-box">
+                        <h4>&#9989; Do This Every Day</h4>
+                        <ul>
+                            <li>Start every coding session with <code>claude</code> in your project folder</li>
+                            <li>Use the Chrome extension for QA checks and competitor research</li>
+                            <li>Draft all client communications through AI first</li>
+                            <li>Generate bulk content (descriptions, alt text, meta tags) with skills</li>
+                        </ul>
+                    </div>
+                    <div class="rule-box">
+                        <h4>&#10060; Never Do This</h4>
+                        <ul>
+                            <li>Never submit AI output directly without human review</li>
+                            <li>Never paste client passwords or API keys into AI prompts</li>
+                            <li>Never skip verification of AI-generated facts and code</li>
+                            <li>Never use AI as an excuse to avoid understanding the work</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 6 -->
+            <div class="step-card">
+                <h4><span class="step-number">6</span> Learn MCP (Model Context Protocol)</h4>
+                <p>MCP is the bridge between Claude and your local tools &mdash; files, databases, APIs, and services. It's what makes Claude truly powerful.</p>
+                <ol>
+                    <li>Read the MCP documentation: <a href="https://modelcontextprotocol.io/" target="_blank">modelcontextprotocol.io</a></li>
+                    <li>Understand the concept: MCP lets Claude Code access external data sources securely</li>
+                    <li>Practice connecting Claude Code to local tools:
+                        <div class="prompt-box"># Example: Connect Claude to a local filesystem MCP server
+# Claude can then read/write files, run commands, access databases
+# MCP servers can be configured in Claude Code settings</div>
+                    </li>
+                    <li>Experiment with different MCP configurations:
+                        <ul>
+                            <li><strong>File System MCP:</strong> Let Claude read/write project files beyond the current directory</li>
+                            <li><strong>Database MCP:</strong> Connect Claude to local databases for queries</li>
+                            <li><strong>Browser MCP:</strong> The Chrome extension uses MCP to control your browser</li>
+                            <li><strong>Scheduled Tasks MCP:</strong> Set up automated recurring AI tasks</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="tool-card">
+                    <h4>MCP at DH &mdash; How We Use It</h4>
+                    <table>
+                        <tr><th>MCP Server</th><th>Purpose</th><th>Who Uses It</th></tr>
+                        <tr><td>Claude in Chrome</td><td>Browser automation, QA, research</td><td>Everyone</td></tr>
+                        <tr><td>Preview Server</td><td>Live preview of local dev servers</td><td>Developers</td></tr>
+                        <tr><td>Scheduled Tasks</td><td>Automated daily/weekly AI tasks</td><td>Operations, PM</td></tr>
+                        <tr><td>File System</td><td>Cross-project file access</td><td>Developers, Content</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- CHECKLIST -->
+            <div class="checklist-box">
+                <h4>&#128203; Setup Verification Checklist</h4>
+                <p>Tick each off before your individual verification:</p>
+                <label><input type="checkbox"> Claude Code Desktop installed &amp; signed in</label>
+                <label><input type="checkbox"> Claude Chrome Extension installed &amp; signed in</label>
+                <label><input type="checkbox"> <code>anthropics/skills</code> repo cloned locally</label>
+                <label><input type="checkbox"> <code>coreyhaines31/marketingskills</code> repo cloned locally</label>
+                <label><input type="checkbox"> Skills integrated into at least one daily task</label>
+                <label><input type="checkbox"> MCP features explored &amp; tested</label>
+                <label><input type="checkbox"> CLAUDE.md created in your main project</label>
+            </div>
+
+            <div class="rule-box" style="background: #EFF6FF; border-color: #3B82F6; text-align: center;">
+                <h4 style="color: #2563EB;">&#9200; Important Reminders</h4>
+                <p><strong>Use your personal account for now</strong> &mdash; company billing API plan will be shared within 3 days.<br>
+                All features must be tested before the API plan is distributed.<br>
+                For any issues during setup, contact your team lead or the Delhi team.</p>
+            </div>
+        </section>
 
         <!-- SECTION 1: PHILOSOPHY -->
         <section id="philosophy" class="content-section">
@@ -378,46 +677,99 @@ Constraints: Match this brand voice: [example]. Include keywords: [kw1, kw2]</di
         <!-- SECTION 4: CLAUDE CODE -->
         <section id="claude-code" class="content-section">
             <h2>&#128187; Claude Code</h2>
-            <p>Claude Code is an <strong>agentic CLI tool</strong> that lives in your terminal. It directly reads your files, writes code, runs commands, and manages your entire codebase.</p>
+            <p>Claude Code is an <strong>agentic CLI tool</strong> that lives in your terminal. It directly reads your files, writes code, runs commands, and manages your entire codebase. This is the single most important AI tool at DH.</p>
 
-            <h3>Getting Started</h3>
-            <div class="prompt-box">npm install -g @anthropic-ai/claude-code
-cd my-shopify-theme
+            <h3>Installation &amp; First Run</h3>
+            <ol>
+                <li>Make sure <strong>Node.js 18+</strong> is installed: <a href="https://nodejs.org" target="_blank">nodejs.org</a></li>
+                <li>Install globally:
+                    <div class="prompt-box">npm install -g @anthropic-ai/claude-code</div>
+                </li>
+                <li>Navigate to your project and start:
+                    <div class="prompt-box">cd my-shopify-theme
 claude</div>
+                </li>
+                <li>First run will ask you to sign in &mdash; use your Anthropic account</li>
+                <li>Run <code>/init</code> to auto-generate a CLAUDE.md for your project</li>
+            </ol>
 
             <h3>Essential Commands</h3>
             <table>
-                <tr><th>Command</th><th>Purpose</th></tr>
-                <tr><td><code>/init</code></td><td>Create a CLAUDE.md project file with codebase context</td></tr>
-                <tr><td><code>/compact</code></td><td>Summarize conversation to free up context window</td></tr>
-                <tr><td><code>/clear</code></td><td>Start fresh conversation while keeping project context</td></tr>
-                <tr><td><code>/cost</code></td><td>Show token usage and cost for current session</td></tr>
+                <tr><th>Command</th><th>Purpose</th><th>When to Use</th></tr>
+                <tr><td><code>/init</code></td><td>Create a CLAUDE.md project file</td><td>First time in any new project</td></tr>
+                <tr><td><code>/compact</code></td><td>Summarize conversation to free context</td><td>When conversation gets long</td></tr>
+                <tr><td><code>/clear</code></td><td>Start fresh, keep project context</td><td>Switching tasks in same project</td></tr>
+                <tr><td><code>/cost</code></td><td>Show token usage and cost</td><td>Monitor spending</td></tr>
+                <tr><td><code>/review</code></td><td>Review code changes like a PR</td><td>Before committing code</td></tr>
+                <tr><td><code>/commit</code></td><td>Stage changes and create a commit</td><td>After completing a task</td></tr>
             </table>
 
-            <h3>CLAUDE.md &mdash; Your Project's AI Brain</h3>
-            <p>A markdown file at the root of your project that gives Claude Code persistent context between sessions. Include:</p>
-            <ul>
-                <li><strong>Project overview:</strong> Tech stack, architecture</li>
-                <li><strong>File structure:</strong> Key directories and purposes</li>
-                <li><strong>Coding conventions:</strong> Naming patterns, style preferences</li>
-                <li><strong>Common commands:</strong> Build, test, deploy scripts</li>
-                <li><strong>Known issues:</strong> Gotchas and workarounds</li>
-            </ul>
+            <h3>Power User Tips</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>Headless Mode</h4>
+                    <p>Run Claude without interactive mode for scripting:</p>
+                    <div class="prompt-box">claude -p "Fix all TypeScript errors" --allowedTools Edit,Read,Bash</div>
+                </div>
+                <div class="tool-card">
+                    <h4>Multi-File Edits</h4>
+                    <p>Claude can edit dozens of files in one pass:</p>
+                    <div class="prompt-box">"Update all product cards to use the new pricing format. Check every .liquid file in sections/"</div>
+                </div>
+                <div class="tool-card">
+                    <h4>Git Workflow</h4>
+                    <p>Claude handles your entire git workflow:</p>
+                    <div class="prompt-box">"Create a new branch, make the changes, commit with a descriptive message, and push"</div>
+                </div>
+                <div class="tool-card">
+                    <h4>Code Review</h4>
+                    <p>Use Claude to review before you ship:</p>
+                    <div class="prompt-box">"Review my staged changes. Check for bugs, edge cases, and suggest improvements"</div>
+                </div>
+            </div>
 
-            <h3>DH Workflow</h3>
+            <h3>CLAUDE.md &mdash; Your Project's AI Brain</h3>
+            <p>A markdown file at the root of your project that gives Claude Code persistent context between sessions.</p>
+            <div class="prompt-box"># Project: [Client Name] Shopify Store
+## Tech Stack
+- Theme: Dawn 15.0
+- Languages: Liquid, JavaScript, CSS
+- Build: Shopify CLI 3.x
+
+## File Structure
+- sections/ &mdash; Custom sections (main revenue drivers)
+- snippets/ &mdash; Reusable components
+- assets/ &mdash; CSS/JS files
+- templates/ &mdash; Page templates
+
+## Coding Conventions
+- BEM naming for CSS classes
+- No jQuery &mdash; vanilla JS only
+- Mobile-first responsive design
+- All sections must have schema settings
+
+## Common Commands
+- shopify theme dev &mdash; Start local development
+- shopify theme push &mdash; Deploy to store
+
+## Known Issues
+- Dawn's cart drawer conflicts with custom modals
+- Use section groups for header/footer customization</div>
+
+            <h3>DH Daily Workflow</h3>
             <ol>
                 <li><strong>Navigate to project:</strong> <code>cd my-shopify-theme</code></li>
                 <li><strong>Start Claude Code:</strong> <code>claude</code></li>
-                <li><strong>Give clear instructions:</strong> Describe what you need with full context</li>
-                <li><strong>Review generated code:</strong> Claude shows diffs before applying</li>
+                <li><strong>Give clear instructions:</strong> Use the RCFC framework (Role, Context, Format, Constraints)</li>
+                <li><strong>Review generated code:</strong> Claude shows diffs before applying &mdash; always review</li>
                 <li><strong>Accept or modify:</strong> Approve changes or ask for adjustments</li>
-                <li><strong>Test:</strong> <code>shopify theme dev</code> to preview</li>
-                <li><strong>Commit:</strong> Claude handles git add, commit, push</li>
+                <li><strong>Test locally:</strong> <code>shopify theme dev</code> to preview</li>
+                <li><strong>Commit:</strong> <code>/commit</code> or ask Claude to handle git</li>
             </ol>
 
             <div class="tip-box">
                 <h4>&#128161; Why Claude Code Over ChatGPT for Coding?</h4>
-                <p>Claude Code reads your entire project for context, writes directly to files, runs terminal commands, and understands your architecture. It's not a chat interface &mdash; it's an AI colleague that works inside your codebase.</p>
+                <p>Claude Code reads your <strong>entire project</strong> for context, writes directly to files, runs terminal commands, and understands your architecture. It handles 200K tokens of context (500+ pages). ChatGPT copies code to a chat box &mdash; Claude Code writes it directly into your files.</p>
             </div>
         </section>
 
