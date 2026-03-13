@@ -218,6 +218,11 @@
             <li class="nav-item"><a href="#design-ai" class="nav-link"><span class="nav-icon">🎨</span> AI for Design</a></li>
             <li class="nav-item"><a href="#content-ai" class="nav-link"><span class="nav-icon">📝</span> AI for Content</a></li>
             <li class="nav-item"><a href="#pm-ai" class="nav-link"><span class="nav-icon">📋</span> AI for PM & Ops</a></li>
+            <li class="nav-item"><a href="#advanced-prompts" class="nav-link"><span class="nav-icon">🧪</span> Advanced Prompts</a></li>
+            <li class="nav-item"><a href="#speed-hacks" class="nav-link"><span class="nav-icon">⚡</span> 10x Speed Hacks</a></li>
+            <li class="nav-item"><a href="#chrome-ext" class="nav-link"><span class="nav-icon">🌐</span> Chrome Extension</a></li>
+            <li class="nav-item"><a href="#marketing-skills" class="nav-link"><span class="nav-icon">📈</span> Marketing Skills</a></li>
+            <li class="nav-item"><a href="#image-gen" class="nav-link"><span class="nav-icon">🖼️</span> Image Generation</a></li>
             <li class="nav-item"><a href="#security" class="nav-link"><span class="nav-icon">🔒</span> Security & Ethics</a></li>
             <li class="nav-item"><a href="#role-guide" class="nav-link"><span class="nav-icon">👤</span> AI by Role</a></li>
         </ul>
@@ -612,7 +617,357 @@ claude</div>
             </div>
         </section>
 
-        <!-- SECTION 11: SECURITY -->
+        <!-- SECTION 11: ADVANCED PROMPTS -->
+        <section id="advanced-prompts" class="content-section">
+            <h2>&#129514; Advanced Prompt Tricks & Hacks</h2>
+            <p>These are the <strong>power-user techniques</strong> that separate a basic AI user from someone who 10x's their output. Master these and you'll produce better results in half the time.</p>
+
+            <h3>1. Mega-Prompt Architecture</h3>
+            <p>Instead of a simple prompt, build a <strong>mega-prompt</strong> that includes everything the AI needs in one shot:</p>
+            <div class="prompt-box">## ROLE
+You are a senior Shopify conversion specialist with 10 years of e-commerce experience.
+
+## CONTEXT
+Client: Luxury candle brand "Ember &amp; Oak" | Store: Shopify Dawn theme
+Problem: Product pages have 1.2% conversion rate (industry avg is 2.8%)
+Audience: Women 28-45, household income $80K+, value aesthetics and self-care
+
+## TASK
+Audit the product page structure and give me a redesign plan.
+
+## FORMAT
+1. Top 5 conversion killers (with severity: Critical/Major/Minor)
+2. Redesigned page wireframe (describe each section top to bottom)
+3. Specific copy recommendations for CTA buttons
+4. Social proof placement strategy
+5. Mobile-specific optimizations
+
+## CONSTRAINTS
+- Dawn theme only, no external JS libraries
+- Must load in under 3 seconds
+- Keep existing color scheme (#1a1a1a, #d4a574, #f5f5f0)
+- All recommendations must be implementable in Liquid</div>
+
+            <h3>2. The &ldquo;Act As + Teach Me&rdquo; Pattern</h3>
+            <p>When you need to learn something fast, combine a role with a teaching request:</p>
+            <div class="prompt-box">"You are a Google Ads specialist who manages $500K/month in ad spend. I'm a complete beginner. Teach me how to set up a search campaign for a Shopify store selling handmade jewelry. Explain every step like I'm 10 years old. Include exact settings, bid strategies, and budget allocation for a $50/day budget."</div>
+
+            <h3>3. Constraint Stacking</h3>
+            <p>The more specific your constraints, the better the output. Stack multiple constraints:</p>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#10060; Weak Constraints</h4>
+                    <p>"Write a product description."</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#9989; Stacked Constraints</h4>
+                    <p>"Write a product description. Max 120 words. Start with an emotional hook. Include 3 benefit bullets. End with urgency CTA. Keywords: organic, handmade, sustainable. Brand voice: warm, artisanal, NOT corporate. Reading level: 8th grade."</p>
+                </div>
+            </div>
+
+            <h3>4. Output Formatting Hacks</h3>
+            <table>
+                <tr><th>Hack</th><th>Prompt Addition</th><th>Why It Works</th></tr>
+                <tr><td>Force structure</td><td>"Use this exact format: [template]"</td><td>AI follows explicit templates perfectly</td></tr>
+                <tr><td>Limit verbosity</td><td>"Answer in exactly 3 bullet points"</td><td>Prevents rambling; forces prioritization</td></tr>
+                <tr><td>Get alternatives</td><td>"Give me 5 options ranked from safest to boldest"</td><td>Forces creative range instead of one safe answer</td></tr>
+                <tr><td>Force honesty</td><td>"If you're unsure, say 'I'm not sure' instead of guessing"</td><td>Reduces hallucinations significantly</td></tr>
+                <tr><td>Chain outputs</td><td>"First analyze, then recommend, then write the code"</td><td>Step-by-step produces better reasoning</td></tr>
+                <tr><td>Negative prompting</td><td>"Do NOT use generic phrases like 'in today's world' or 'it's important to note'"</td><td>Eliminates AI clich&eacute;s from output</td></tr>
+            </table>
+
+            <h3>5. The &ldquo;Reverse Prompt&rdquo; Technique</h3>
+            <p>Give AI an example of great output and ask it to write the prompt that would produce it:</p>
+            <div class="prompt-box">"Here is a product description I love: [paste example]. Write me a detailed prompt template that would produce descriptions in this exact style for any product I give you. Include role, context, format, and constraints."</div>
+            <div class="tip-box">
+                <h4>&#128161; Why This Is Powerful</h4>
+                <p>You get a reusable mega-prompt template built by AI from your best examples. Use it for batch processing 100+ products with consistent quality.</p>
+            </div>
+
+            <h3>6. Multi-Pass Refinement</h3>
+            <p>Use AI to critique its own output, then improve it:</p>
+            <div class="prompt-box">Pass 1: "Write a homepage hero headline for a luxury candle brand."
+Pass 2: "Now critique that headline. What's weak? Score it 1-10 for: emotional impact, clarity, brand fit."
+Pass 3: "Based on your critique, write 5 improved versions that score 9+ on all criteria."</div>
+
+            <h3>7. Persona Stacking for Client Work</h3>
+            <p>For client stores, create detailed personas and reference them:</p>
+            <div class="prompt-box">"Before writing anything, create 3 buyer personas for this luxury candle brand:
+- Persona 1: The self-care enthusiast
+- Persona 2: The gift buyer
+- Persona 3: The home decor obsessed
+
+Include: age, income, pain points, buying triggers, objections, preferred language style.
+
+Now write 3 versions of the product page hero copy — one optimized for each persona."</div>
+        </section>
+
+        <!-- SECTION 12: 10x SPEED HACKS -->
+        <section id="speed-hacks" class="content-section">
+            <h2>&#9889; 10x Speed Hacks — Work Faster With AI</h2>
+            <p>Every team member at DH should use these techniques to <strong>dramatically speed up</strong> their daily work across clients, stores, and content.</p>
+
+            <h3>For Client Work</h3>
+            <table>
+                <tr><th>Task</th><th>Without AI</th><th>With AI</th><th>Prompt Template</th></tr>
+                <tr><td>Client proposal</td><td>3-4 hours</td><td>30 min</td><td>"Draft a proposal for [client type] wanting [scope]. Include: executive summary, deliverables, timeline, pricing. Professional but warm tone."</td></tr>
+                <tr><td>Weekly status email</td><td>30 min</td><td>3 min</td><td>"Draft weekly update for [client]. Done: [X]. In progress: [Y]. Blockers: [Z]. Next week: [W]. Professional, solution-focused."</td></tr>
+                <tr><td>Scope change message</td><td>45 min</td><td>5 min</td><td>"Client wants to add [feature]. Draft tactful message explaining: additional [X] hours, [Y] cost, [Z] timeline impact. Offer alternatives."</td></tr>
+                <tr><td>Client onboarding doc</td><td>2 hours</td><td>20 min</td><td>"Create onboarding document for [client type] Shopify project. Include: project timeline, team contacts, communication protocol, asset requirements, milestone schedule."</td></tr>
+                <tr><td>QA report</td><td>2 hours</td><td>15 min</td><td>Use Claude Chrome extension to scan live store. "Read this page and list all UX, SEO, accessibility, and performance issues as a prioritized checklist."</td></tr>
+            </table>
+
+            <h3>For Shopify Stores</h3>
+            <table>
+                <tr><th>Task</th><th>Without AI</th><th>With AI</th><th>How</th></tr>
+                <tr><td>Custom section</td><td>2-4 hours</td><td>15-30 min</td><td>Claude Code: describe section with all requirements, schema settings, and responsive rules</td></tr>
+                <tr><td>50 product descriptions</td><td>2 days</td><td>3 hours</td><td>Few-shot template with 3 brand voice examples, then batch process in groups of 10</td></tr>
+                <tr><td>SEO meta tags (all pages)</td><td>4 hours</td><td>30 min</td><td>"Generate meta title (&lt;60 chars) + description (&lt;155 chars) for each: [page list]. Target keywords: [list]"</td></tr>
+                <tr><td>200 alt texts</td><td>3 hours</td><td>20 min</td><td>"Write SEO alt text (&lt;125 chars) for these product images: [name, description]. Keyword-rich, descriptive."</td></tr>
+                <tr><td>Collection page copy</td><td>1 hour each</td><td>10 min each</td><td>"Write collection page description for [collection]. 100 words, SEO keywords: [X]. Brand voice: [example]."</td></tr>
+                <tr><td>Theme customization</td><td>1-2 days</td><td>2-4 hours</td><td>Claude Code reads entire theme, generates matching sections following existing patterns</td></tr>
+            </table>
+
+            <h3>For YouTube Channel</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#127909; Video Script Generation</h4>
+                    <div class="prompt-box">"Write a YouTube video script for our agency channel. Topic: [X]. Duration: 8-10 minutes. Structure: Hook (15 sec), Problem (1 min), Solution (5 min), CTA (30 sec). Tone: educational but energetic. Include B-roll suggestions and on-screen text overlays."</div>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128204; Title &amp; Thumbnail Ideas</h4>
+                    <div class="prompt-box">"Generate 10 YouTube title options for a video about [topic]. Each title must: be under 60 chars, include a number or power word, create curiosity gap. Also suggest 3 thumbnail concepts with text overlay, color scheme, and emotion to convey."</div>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128196; Description &amp; Tags</h4>
+                    <div class="prompt-box">"Write a YouTube description for: [video title]. Include: 2-line hook, timestamps for key sections, 3 relevant links, CTA to subscribe, and 30 SEO tags (mix of broad + long-tail keywords)."</div>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128172; Community Posts &amp; Shorts</h4>
+                    <div class="prompt-box">"Create 7 YouTube Community posts (one per day) promoting our latest video [title]. Each post should: use a different hook angle, include a question to drive comments, and vary between text-only and poll formats."</div>
+                </div>
+            </div>
+
+            <h3>Universal Speed Tips</h3>
+            <div class="tip-box">
+                <h4>&#128161; The 5 Habits of 10x AI Users</h4>
+                <ol>
+                    <li><strong>Template everything:</strong> Save your best prompts. Reuse them. Build a personal prompt library.</li>
+                    <li><strong>Batch process:</strong> Don't write 1 description at a time. Write 20 with one prompt template.</li>
+                    <li><strong>Start with AI, finish with human:</strong> AI drafts in 2 minutes; you polish in 5. Total: 7 min vs 45 min manual.</li>
+                    <li><strong>Use Claude Chrome for live analysis:</strong> Don't manually check stores &mdash; let AI read the page and report.</li>
+                    <li><strong>Automate recurring tasks:</strong> Weekly reports, daily standup summaries, QA checklists &mdash; MCP scheduled tasks.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- SECTION 13: CHROME EXTENSION -->
+        <section id="chrome-ext" class="content-section">
+            <h2>&#127760; Claude Chrome Extension</h2>
+            <p>The Claude Chrome extension connects Claude directly to your browser. It can <strong>see what you see</strong> &mdash; read pages, click buttons, fill forms, take screenshots, and automate entire workflows.</p>
+
+            <h3>What It Can Do</h3>
+            <table>
+                <tr><th>Capability</th><th>How It Helps You</th><th>Example</th></tr>
+                <tr><td><strong>Read any page</strong></td><td>Analyze content, extract data, find issues</td><td>"Read this product page and list every SEO issue"</td></tr>
+                <tr><td><strong>Fill forms</strong></td><td>Automate repetitive data entry</td><td>Fill Shopify product fields from a spreadsheet</td></tr>
+                <tr><td><strong>Take screenshots</strong></td><td>Visual QA and documentation</td><td>Screenshot every page for a client QA report</td></tr>
+                <tr><td><strong>Click &amp; navigate</strong></td><td>Automate multi-step browser tasks</td><td>Navigate through a checkout flow testing each step</td></tr>
+                <tr><td><strong>Compare pages</strong></td><td>Competitive analysis across tabs</td><td>"Compare our store vs competitor: pricing, design, UX"</td></tr>
+            </table>
+
+            <h3>Tasks Every Role Can Automate</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#128269; QA &amp; Store Audits</h4>
+                    <p>Open any Shopify store and ask: "Scan this page for broken links, missing alt text, slow-loading images, accessibility issues, and SEO problems. Output as a prioritized checklist."</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128202; Competitor Analysis</h4>
+                    <p>Open 3 competitor stores and ask: "Compare these stores. For each, note: pricing strategy, unique features, design strengths, and weaknesses. Create a comparison matrix."</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128221; Content Extraction</h4>
+                    <p>Open a client's old website and ask: "Extract all product names, descriptions, and prices into a structured table I can import to Shopify."</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128231; Email &amp; Comms</h4>
+                    <p>Open an email thread and ask: "Summarize this email chain. List: key decisions made, action items with owners, and questions that still need answers."</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#127912; Design Feedback</h4>
+                    <p>Open a Figma prototype or live page and ask: "Review this design for visual hierarchy, whitespace usage, CTA visibility, mobile considerations, and brand consistency."</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128200; Analytics Review</h4>
+                    <p>Open Google Analytics and ask: "Look at this dashboard. What are the top 3 insights? What actions should we take based on this data?"</p>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>&#128161; Pro Tip: Chain Actions</h4>
+                <p>Claude Chrome can do multi-step workflows: "Go to our Shopify admin &rarr; open the first 5 products &rarr; check if meta descriptions are filled &rarr; list any that are missing." This saves 30+ minutes of manual clicking.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 14: MARKETING SKILLS -->
+        <section id="marketing-skills" class="content-section">
+            <h2>&#128200; Marketing Skills Framework</h2>
+            <p>DH uses the open-source <a href="https://github.com/coreyhaines31/marketingskills" target="_blank" style="color: #8B5CF6; font-weight: 600;">Marketing Skills</a> framework &mdash; 36 specialized AI skills for every marketing task. These can be installed as Claude Code skills for instant, expert-level assistance.</p>
+
+            <h3>Install</h3>
+            <div class="prompt-box">npx skills add coreyhaines31/marketingskills</div>
+            <p>This adds 36 marketing skill files to your project. Each skill gives Claude deep domain expertise in a specific marketing area.</p>
+
+            <h3>Conversion &amp; CRO (6 Skills)</h3>
+            <table>
+                <tr><th>Skill</th><th>What It Does</th><th>When to Use</th></tr>
+                <tr><td><code>page-cro</code></td><td>Audit and optimize any marketing page for conversions</td><td>Client landing pages, homepage optimization</td></tr>
+                <tr><td><code>signup-flow-cro</code></td><td>Optimize registration and signup flows</td><td>Client app signups, email opt-ins</td></tr>
+                <tr><td><code>onboarding-cro</code></td><td>Improve post-signup user activation</td><td>SaaS client onboarding flows</td></tr>
+                <tr><td><code>form-cro</code></td><td>Optimize lead capture forms</td><td>Contact forms, quote request forms</td></tr>
+                <tr><td><code>popup-cro</code></td><td>Design high-converting popups and modals</td><td>Email capture popups, exit-intent offers</td></tr>
+                <tr><td><code>paywall-upgrade-cro</code></td><td>Optimize in-app upsell and upgrade flows</td><td>Subscription upgrade pages</td></tr>
+            </table>
+
+            <h3>Content &amp; Copywriting (5 Skills)</h3>
+            <table>
+                <tr><th>Skill</th><th>What It Does</th><th>When to Use</th></tr>
+                <tr><td><code>copywriting</code></td><td>Write marketing page copy that converts</td><td>Client websites, landing pages, Shopify stores</td></tr>
+                <tr><td><code>copy-editing</code></td><td>Refine and polish existing copy</td><td>QA pass on any client content before delivery</td></tr>
+                <tr><td><code>cold-email</code></td><td>Write B2B outreach email sequences</td><td>Sales outreach, lead gen campaigns</td></tr>
+                <tr><td><code>email-sequence</code></td><td>Design automated email flows</td><td>Welcome series, abandoned cart, win-back</td></tr>
+                <tr><td><code>social-content</code></td><td>Create social media content strategies</td><td>Client social calendars, agency brand posts</td></tr>
+            </table>
+
+            <h3>SEO &amp; Discovery (6 Skills)</h3>
+            <table>
+                <tr><th>Skill</th><th>What It Does</th><th>When to Use</th></tr>
+                <tr><td><code>seo-audit</code></td><td>Technical SEO analysis and recommendations</td><td>Client store SEO audits, pre-launch checks</td></tr>
+                <tr><td><code>ai-seo</code></td><td>Optimize for AI search engines (Perplexity, ChatGPT)</td><td>Future-proofing client visibility</td></tr>
+                <tr><td><code>programmatic-seo</code></td><td>Generate SEO pages at scale</td><td>Collection pages, location pages, comparison pages</td></tr>
+                <tr><td><code>site-architecture</code></td><td>Plan information architecture and navigation</td><td>New store structure, redesign projects</td></tr>
+                <tr><td><code>schema-markup</code></td><td>Implement structured data (JSON-LD)</td><td>Product schema, FAQ schema, review schema</td></tr>
+                <tr><td><code>competitor-alternatives</code></td><td>Build comparison and alternative pages</td><td>Client competitive positioning</td></tr>
+            </table>
+
+            <h3>Paid Ads &amp; Growth (5 Skills)</h3>
+            <table>
+                <tr><th>Skill</th><th>What It Does</th><th>When to Use</th></tr>
+                <tr><td><code>paid-ads</code></td><td>Campaign management (Google, Meta, LinkedIn)</td><td>Client ad campaigns, budget optimization</td></tr>
+                <tr><td><code>ad-creative</code></td><td>Generate ad copy and creative concepts</td><td>Facebook ads, Google ads, display banners</td></tr>
+                <tr><td><code>free-tool-strategy</code></td><td>Plan free marketing tools for lead gen</td><td>Client lead magnets, calculators, quizzes</td></tr>
+                <tr><td><code>referral-program</code></td><td>Design referral and affiliate programs</td><td>Client loyalty programs, ambassador programs</td></tr>
+                <tr><td><code>launch-strategy</code></td><td>Plan product launches and releases</td><td>New store launches, product drops</td></tr>
+            </table>
+
+            <h3>Strategy &amp; Analytics (6 Skills)</h3>
+            <table>
+                <tr><th>Skill</th><th>What It Does</th><th>When to Use</th></tr>
+                <tr><td><code>marketing-ideas</code></td><td>140+ SaaS/e-commerce marketing ideas</td><td>Client strategy brainstorms</td></tr>
+                <tr><td><code>marketing-psychology</code></td><td>Apply behavioral science to marketing</td><td>CRO, copy, pricing, UX decisions</td></tr>
+                <tr><td><code>pricing-strategy</code></td><td>Pricing and packaging decisions</td><td>Client product pricing, tier design</td></tr>
+                <tr><td><code>analytics-tracking</code></td><td>Event tracking and measurement setup</td><td>GA4 setup, conversion tracking</td></tr>
+                <tr><td><code>ab-test-setup</code></td><td>Design A/B experiments properly</td><td>Landing page tests, email subject lines</td></tr>
+                <tr><td><code>churn-prevention</code></td><td>Cancellation flows and payment recovery</td><td>Subscription-based client stores</td></tr>
+            </table>
+
+            <div class="tip-box">
+                <h4>&#128161; How to Use These Skills</h4>
+                <p>After installing, just tell Claude Code what you need: "Use the seo-audit skill to analyze this Shopify store" or "Use the copywriting skill to write product page copy for this luxury brand." Claude Code activates the relevant skill automatically.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 15: IMAGE GENERATION -->
+        <section id="image-gen" class="content-section">
+            <h2>&#128444;&#65039; Image Generation Guide</h2>
+            <p>AI image generation is a game-changer for design work. Here's how to use each tool effectively for client stores, branding, and marketing.</p>
+
+            <h3>Midjourney &mdash; Best for Photorealistic &amp; Artistic</h3>
+            <div class="tool-card">
+                <h4>Prompt Structure</h4>
+                <div class="prompt-box">[Subject], [Style], [Lighting], [Composition], [Mood], [Technical] --ar [ratio] --v 6</div>
+                <h4>DH Examples</h4>
+                <table>
+                    <tr><th>Use Case</th><th>Prompt</th></tr>
+                    <tr><td>Hero banner</td><td>"Luxury candle on marble table, warm amber glow, soft bokeh background, overhead angle, cozy evening mood, product photography, 8K --ar 16:9 --v 6"</td></tr>
+                    <tr><td>Lifestyle shot</td><td>"Woman relaxing in modern apartment with scented candle, natural window light, minimalist interior, warm tones, editorial style --ar 4:5 --v 6"</td></tr>
+                    <tr><td>Brand mood board</td><td>"Flat lay of luxury brand elements: gold foil, dried flowers, cream linen, amber glass, serif typography sample, overhead shot --ar 1:1 --v 6"</td></tr>
+                </table>
+            </div>
+
+            <h3>DALL-E 3 &mdash; Best for Text &amp; Precision</h3>
+            <div class="tool-card">
+                <h4>Strengths</h4>
+                <ul>
+                    <li>Renders text in images accurately (logos, social posts with overlay text)</li>
+                    <li>Follows complex instructions precisely</li>
+                    <li>Built into ChatGPT &mdash; easy to iterate</li>
+                </ul>
+                <h4>DH Examples</h4>
+                <table>
+                    <tr><th>Use Case</th><th>Prompt</th></tr>
+                    <tr><td>Social graphic</td><td>"Instagram post for luxury candle brand. Clean white background, product photo center, text overlay 'Self-Care Sunday' in gold serif font, minimalist design"</td></tr>
+                    <tr><td>Ad creative</td><td>"Facebook ad for jewelry sale. Split layout: left side product photo, right side '40% OFF' in large bold text, red accent, white background, professional e-commerce style"</td></tr>
+                </table>
+            </div>
+
+            <h3>AI Product Photography Workflow</h3>
+            <ol>
+                <li><strong>Remove background:</strong> Use Stitch or remove.bg to isolate the product</li>
+                <li><strong>Generate lifestyle scene:</strong> Midjourney creates the environment (kitchen counter, bedroom shelf, garden table)</li>
+                <li><strong>Composite:</strong> Place product into scene using Photoshop or Canva</li>
+                <li><strong>Enhance:</strong> AI upscaling for print-quality resolution</li>
+            </ol>
+            <div class="tip-box">
+                <h4>&#128161; Cost Comparison</h4>
+                <p><strong>Traditional product shoot:</strong> $500-2,000 per product (photographer, studio, styling).<br>
+                <strong>AI-generated:</strong> $5-10 per product (subscription cost / images generated). Same or better quality for e-commerce use.</p>
+            </div>
+
+            <h3>Image Generation for Marketing</h3>
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#128241; Social Media</h4>
+                    <ul>
+                        <li>Generate 30 days of social graphics in one session</li>
+                        <li>Create consistent brand aesthetics across platforms</li>
+                        <li>A/B test different visual styles for engagement</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128231; Email Marketing</h4>
+                    <ul>
+                        <li>Custom hero images for each email campaign</li>
+                        <li>Seasonal and promotional banner variations</li>
+                        <li>Product collection lifestyle headers</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h4>&#127909; YouTube Thumbnails</h4>
+                    <ul>
+                        <li>Generate eye-catching backgrounds and scenes</li>
+                        <li>Create consistent thumbnail style for channel branding</li>
+                        <li>Test multiple thumbnail concepts before publishing</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128717;&#65039; Store Banners</h4>
+                    <ul>
+                        <li>Homepage hero images without photo shoots</li>
+                        <li>Collection page headers matching brand aesthetic</li>
+                        <li>Seasonal promotions (holiday, summer, back-to-school)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rule-box">
+                <h4>&#9888;&#65039; Copyright Warning</h4>
+                <p>AI-generated images have evolving copyright status. For <strong>client logos and brand identity</strong>, always refine AI concepts with human design tools (Figma, Illustrator). Use AI images freely for social media, internal mockups, and product photography backgrounds.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 16: SECURITY -->
         <section id="security" class="content-section">
             <h2>&#128274; Security & Ethics</h2>
 
