@@ -21,7 +21,13 @@ const trainingTasks = [
     { id: 16, title: "HR Data & Metrics", description: "Analytics, Dashboards & Reporting", contentFirst: true, studyGuide: ["Time: 60-75 min", "Key HR metrics", "Building dashboards", "Predicting attrition"] },
     { id: 17, title: "Practical HR Exercises", description: "8 Real-World Scenarios", contentFirst: true, studyGuide: ["Time: 90-120 min", "Draft JDs, PIPs, exit reports", "Screen sample resumes", "Handle difficult scenarios"] },
     { id: 18, title: "Digital Heroes HR Deep Dive", description: "DH Policies, Matrices & Frameworks", contentFirst: true, studyGuide: ["Time: 60-90 min", "Authority & escalation matrices", "Incentive-penalty framework", "Cross-city coordination"] },
-    { id: 19, title: "Final Certification", description: "HR Mastery Exam", contentFirst: false, studyGuide: ["Time: 90 min", "Covers tasks 1-18", "Score 100% to certify"] }
+    { id: 19, title: "Employee Handbook Mastery", description: "DH Manifesto, Critical Rules & Culture", contentFirst: true, studyGuide: ["Time: 60-90 min", "7 DH Manifesto principles", "Zero-tolerance rules", "Growth Formula"] },
+    { id: 20, title: "Salary & Compensation", description: "Pay Structure, Incentives & Advances", contentFirst: true, studyGuide: ["Time: 45-60 min", "Salary cycle & payments", "Increment policy", "Incentive framework"] },
+    { id: 21, title: "Communication & Response Policy", description: "Response Times, Channels & Penalties", contentFirst: true, studyGuide: ["Time: 30-45 min", "Response time SLAs", "Client communication rules", "₹500/₹1000 penalties"] },
+    { id: 22, title: "AI Tools for HR", description: "ChatGPT Prompts & AI Workflows", contentFirst: true, studyGuide: ["Time: 45-60 min", "ChatGPT HR prompts", "AI App Challenge process", "AI-powered screening"] },
+    { id: 23, title: "HR FAQ Mastery", description: "50+ Employee Questions You Must Answer", contentFirst: true, studyGuide: ["Time: 60-90 min", "Salary FAQs", "Leave FAQs", "WFH FAQs", "Exit FAQs"] },
+    { id: 24, title: "Joining Documents & Formalities", description: "What to Collect, Give & File", contentFirst: true, studyGuide: ["Time: 30-45 min", "Document checklist", "Agreements & NDAs", "Filing system"] },
+    { id: 25, title: "Final Certification", description: "HR Mastery Exam", contentFirst: false, studyGuide: ["Time: 90 min", "Covers tasks 1-24", "Score 100% to certify"] }
 ];
 
 const task1Content = `
@@ -1598,11 +1604,599 @@ const task18Content = `
 `;
 
 const task19Content = `
-<h2>📚 TASK 19: FINAL CERTIFICATION EXAM</h2>
+<h2>📚 TASK 19: EMPLOYEE HANDBOOK MASTERY — DH Manifesto, Critical Rules & Culture</h2>
+
+<div class="content-section">
+<h3>📜 The Digital Heroes Manifesto — 7 Non-Negotiable Principles</h3>
+<p>Every employee at Digital Heroes lives by these principles. As HR, you are the <strong>guardian of this culture</strong>. If someone violates these, YOU must act.</p>
+
+<div style="display: grid; gap: 12px; margin: 20px 0;">
+<div style="background: rgba(99, 102, 241, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">1. Talent is Irrelevant. Volume is Everything.</h4>
+<p>Skills develop through commitment, not innate ability. We judge on OUTPUT, not degrees. Investment = 100+ hours of learning.</p>
+</div>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">2. Emotional Intelligence > IQ</h4>
+<p>Collaboration trumps raw intelligence. A brilliant developer who destroys team morale is a net negative.</p>
+</div>
+<div style="background: rgba(239, 68, 68, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #EF4444;">
+<h4 style="color: #EF4444; margin-top: 0;">3. Instant Reply = Respect</h4>
+<p>Responsiveness shows respect and reliability. Start typing within 1 second of seeing a message. "I saw it, I'm on it."</p>
+</div>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">4. Protect Your Mindset</h4>
+<p>Mental health and focus are priorities. No negativity, no conspiracy, no blame games.</p>
+</div>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">5. Clients Aren't a Burden</h4>
+<p>Client satisfaction is our core value. We serve global clients — reliability is everything.</p>
+</div>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">6. The 80/20 Principle</h4>
+<p>Focus on high-impact activities. 20% of work drives 80% of results.</p>
+</div>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">7. Work = Highest Priority</h4>
+<p>Dedication to delivering results. Discipline is your greatest investment.</p>
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚨 7 ZERO-TOLERANCE RULES — Immediate Termination</h3>
+<p>As HR, you MUST enforce these. No exceptions, no second chances for these offenses:</p>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(239, 68, 68, 0.2);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">#</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offense</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Consequence</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Ignoring Management Messages</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>IMMEDIATE TERMINATION</strong> — #1 termination reason at DH</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Data Breach</strong> — Sharing client info, source code, passwords</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>TERMINATION + LEGAL ACTION</strong></td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Moonlighting</strong> — Working for competitors, freelancing while employed</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>TERMINATION</strong></td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Harassment</strong> — Verbal, sexual, or online bullying</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>ONE incident = OUT</strong></td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Poor Client Communication</strong> — Rude, lying, or late responses</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹500 → ₹1,000 → TERMINATION (3 strikes)</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">6</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Substance Abuse</strong> — Coming to work drunk or under influence</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>TERMINATION</strong></td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">7</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Conspiracy & Negativity</strong> — Conspiring against team, public disrespect</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>TERMINATION + LEGAL ACTION</strong></td></tr>
+</table>
+<div class="highlight-box"><strong>HR's Role:</strong> Document EVERY violation. Enforce consistently. No favoritism. Problems must be shared ONLY with HR or Delhi Team.</div>
+</div>
+
+<div class="content-section">
+<h3>📈 The Growth Formula</h3>
+<div class="highlight-box" style="text-align: center; padding: 25px;">
+<h4 style="margin-top: 0; color: #10B981; font-size: 1.3em;">Employee Growth = Company Growth × HIGH WILL × HIGH SKILL</h4>
+<p><strong>HIGH WILL:</strong> Hunger to learn, discipline to execute, relentless drive<br>
+<strong>HIGH SKILL:</strong> Constant uplevelling through training, innovation, mastering new tools<br><br>
+<strong>Income = Happy Clients × Skill × Speed</strong></p>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📋 The SOP Obsession</h3>
+<p>At DH, SOPs are <strong>LAW, not guidelines</strong>. Every employee follows their Role SOP + Daily SOP every day.</p>
+<ul>
+<li><strong>SOPs guarantee:</strong> Speed, quality, and consistency</li>
+<li><strong>HR's job:</strong> Ensure every new hire knows their SOP within Week 1</li>
+<li><strong>Violations:</strong> Not following SOPs = Performance issue → PIP → Termination</li>
+<li><strong>Improvement:</strong> Employees should suggest SOP improvements — that's encouraged</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>🎯 Culture, Perks & Belonging</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Perk</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Details</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offsite Trips</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Twice/year — hill stations, beaches, Goa. Company pays travel, stay, food</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Outing Budget</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹500-1000/month per person for team bonding (movies, dinner, bowling)</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Birthday Leave</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Half-day off + cake + celebration</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Buddy System</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">New joiners get a "Buddy" for 2 weeks</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Learning Hours</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">4 hrs/week + course reimbursement up to ₹5k/year</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Emergency Support</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Medical emergency assistance, flexible hours during emergencies</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Assets</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Laptops for Lucknow in-office team. Damage: 50/50 accidental, 100% employee if negligent</td></tr>
+</table>
+<div class="highlight-box"><strong>Remember:</strong> Perks exist BECAUSE of performance. Company celebrates wins.</div>
+</div>
+`;
+
+const task20Content = `
+<h2>📚 TASK 20: SALARY & COMPENSATION — Pay Structure, Incentives & Advances</h2>
+
+<div class="content-section">
+<h3>💰 Salary Payment Details</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Item</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Policy</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Payment Date</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Before 10th of following month (bank transfer)</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cycle</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Monthly</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Salary Error</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Report to HR immediately — corrected in next cycle</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Overtime</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Not separately paid — salary covers reasonable work requirements</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Tax</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Salary is taxable as per income tax regulations</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>📊 Performance-Based Increments</h3>
+<p>Salary increases are based on <strong>PERFORMANCE, not time served</strong>. Quarterly reviews determine increment eligibility.</p>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">KPI Score</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Rating</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Increment</th></tr>
+<tr style="background: rgba(16, 185, 129, 0.15);"><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90-100%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Exceptional</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>15-20% + Bonus</strong></td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">75-89%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Strong</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">10-15%</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">60-74%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Average</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">5-10%</td></tr>
+<tr style="background: rgba(245, 158, 11, 0.15);"><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">40-59%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Below Average</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No increment → PIP</td></tr>
+<tr style="background: rgba(239, 68, 68, 0.15);"><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">&lt;40%</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Poor</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>Termination/Demotion</strong></td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🏆 Incentive Structure</h3>
+<div style="display: grid; gap: 15px; margin: 15px 0;">
+<div style="background: rgba(16, 185, 129, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #10B981;">
+<h4 style="color: #10B981; margin-top: 0;">Developer Incentives</h4>
+<p>Per-client basis after successful delivery + 5-star rating from the client. Direct correlation between quality delivery and bonus.</p>
+</div>
+<div style="background: rgba(99, 102, 241, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #6366F1;">
+<h4 style="color: #6366F1; margin-top: 0;">Sales Incentives</h4>
+<p>5% of sales exceeding USD 5,000/month. Overachievement bonus of 1% after USD 20,000 threshold. Per-order clarification applies.</p>
+</div>
+<div style="background: rgba(245, 158, 11, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #F59E0B;">
+<h4 style="color: #F59E0B; margin-top: 0;">Diwali Bonuses</h4>
+<p>Annual Diwali bonuses based on overall company performance and individual contribution. Details announced before the festival.</p>
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💵 Advance Salary Policy</h3>
+<ul>
+<li><strong>Eligibility:</strong> After 3 months of service</li>
+<li><strong>Maximum:</strong> 50% of monthly salary</li>
+<li><strong>Recovery:</strong> Deducted equally over next 2 months</li>
+<li><strong>Limit:</strong> Max 2 advances per year</li>
+<li><strong>Reason:</strong> Genuine emergencies only (medical, family, housing)</li>
+</ul>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ HR Must Verify:</strong> Every advance request needs a genuine reason. Don't rubber-stamp — verify the need. Track all advances in the employee file. If someone requests a 3rd advance, escalate to Delhi Team.
+</div>
+</div>
+
+<div class="content-section">
+<h3>📊 Stipend-Performance Connection</h3>
+<p>Stipends directly reflect quality, consistency, and discipline of work. Operations Manager tracks performance and provides stipend feedback.</p>
+<ul>
+<li>Performance issues trigger deductions (specific amounts based on severity)</li>
+<li>Performance Improvement Warnings issued when performance warrants deduction review</li>
+<li>Clear accountability link between performance and compensation</li>
+</ul>
+<div class="highlight-box"><strong>Key Principle:</strong> Salary discussion with colleagues is allowed — DH encourages transparent compensation discussions.</div>
+</div>
+`;
+
+const task21Content = `
+<h2>📚 TASK 21: COMMUNICATION & RESPONSE POLICY</h2>
+
+<div class="content-section">
+<h3>⏰ Response Time SLAs — Non-Negotiable</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ CRITICAL: IGNORING MESSAGES = IMMEDIATE TERMINATION</strong><br>
+This is the #1 reason for termination at Digital Heroes. No exceptions. No second chances.
+</div>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(239, 68, 68, 0.2);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Message From</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Max Response Time</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Channel</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client (Fiverr/WhatsApp)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>&lt; 2 Hours</strong> (business hours)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Fiverr / WhatsApp</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Manager</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>&lt; 1 Hour</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Discord / Slack</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Team Member</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>&lt; 2 Hours</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Discord / Slack</td></tr>
+<tr style="background: rgba(239, 68, 68, 0.15);"><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Emergency</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>&lt; 15 Minutes</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Any channel</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>💸 Poor Client Communication Penalties</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(245, 158, 11, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Strike</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Penalty</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">1st Offense</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹500 deduction + Written Warning</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2nd Offense</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">₹1,000 deduction + Final Warning</td></tr>
+<tr style="background: rgba(239, 68, 68, 0.15);"><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">3rd Offense</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); color: #EF4444;"><strong>Immediate Termination</strong></td></tr>
+</table>
+<p><strong>HR tracks all communication violations.</strong> Document each incident with date, context, and evidence.</p>
+</div>
+
+<div class="content-section">
+<h3>📱 Communication Channels & Protocols</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Channel</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Use For</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Discord/Slack</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Official team communication, daily announcements, quick questions</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Email</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Formal communication, contracts, offer letters, policy updates</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Google Meet</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Video calls, interviews, 1:1s, meetings, onboarding</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>WhatsApp</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Interview scheduling, urgent updates (backup only)</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Fiverr</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Client communication (Sales & Client Success teams)</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>✅ Communication DOs and DON'Ts</h3>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0;">
+<div style="background: rgba(16, 185, 129, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #10B981;">
+<h4 style="color: #10B981; margin-top: 0;">✅ DO</h4>
+<ul>
+<li>Use proper grammar</li>
+<li>Confirm understanding: "Got it, doing X by Y"</li>
+<li>Update proactively</li>
+<li>Be specific — "Task X will be done by 3 PM"</li>
+</ul>
+</div>
+<div style="background: rgba(239, 68, 68, 0.1); padding: 18px; border-radius: 12px; border-left: 4px solid #EF4444;">
+<h4 style="color: #EF4444; margin-top: 0;">❌ DON'T</h4>
+<ul>
+<li>Use slang with clients</li>
+<li>Argue with clients</li>
+<li>Make promises you can't keep</li>
+<li>Leave people hanging without updates</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🔒 Confidentiality in Communication</h3>
+<p>The following are CONFIDENTIAL and must NEVER be shared:</p>
+<ul>
+<li>Client data (contact info, business details, store access)</li>
+<li>Company financials and revenue</li>
+<li>Internal SOPs and processes</li>
+<li>Upcoming launches and strategies</li>
+<li>Source code and designs</li>
+</ul>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>⚠️ Data Breach = IMMEDIATE TERMINATION + LEGAL ACTION</strong><br>
+No sharing client passwords outside work tools. No client discussion on social media. No internal doc screenshots without permission.
+</div>
+</div>
+`;
+
+const task22Content = `
+<h2>📚 TASK 22: AI TOOLS FOR HR — ChatGPT Prompts & AI Workflows</h2>
+
+<div class="content-section">
+<h3>🤖 Why HR Must Use AI</h3>
+<p>AI isn't replacing HR — it's making HR 10x faster. At Digital Heroes, we expect HR professionals to use AI tools for:</p>
+<ul>
+<li><strong>Faster JD creation</strong> — Generate role-specific JDs in minutes</li>
+<li><strong>Smarter screening</strong> — AI-powered resume analysis</li>
+<li><strong>Better interviews</strong> — AI-generated role-specific questions</li>
+<li><strong>Policy writing</strong> — Draft policies with proper legal language</li>
+<li><strong>Difficult conversations</strong> — Practice scripts before real meetings</li>
+<li><strong>Performance feedback</strong> — Structured, balanced review writing</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>💬 ChatGPT Prompts for HR Workflows</h3>
+<p>Copy-paste these prompts directly into ChatGPT or Claude:</p>
+
+<h4>1. Create Interview Questions</h4>
+<div class="prompt-box" style="background: #1E293B; color: #E2E8F0; border-radius: 10px; padding: 16px; margin: 10px 0; font-family: monospace; font-size: 0.88em; white-space: pre-wrap;">You are an HR expert at a Shopify development agency.
+Create 10 interview questions for a [ROLE] position.
+Include: 3 technical, 3 behavioral (STAR), 2 cultural fit, 2 problem-solving.
+For each question, provide: the question, what to look for in answers, and red flags.</div>
+
+<h4>2. Evaluate a Candidate</h4>
+<div class="prompt-box" style="background: #1E293B; color: #E2E8F0; border-radius: 10px; padding: 16px; margin: 10px 0; font-family: monospace; font-size: 0.88em; white-space: pre-wrap;">I interviewed a candidate for [ROLE]. Here are my notes: [PASTE NOTES]
+Analyze: Strengths, gaps, red flags, recommended reference check questions.
+Give a hire/no-hire recommendation with confidence level (1-10).</div>
+
+<h4>3. Write Performance Feedback</h4>
+<div class="prompt-box" style="background: #1E293B; color: #E2E8F0; border-radius: 10px; padding: 16px; margin: 10px 0; font-family: monospace; font-size: 0.88em; white-space: pre-wrap;">Write a quarterly performance review for an employee who [SITUATION].
+Include: 3 specific positives with examples, 2 areas for improvement with actionable steps,
+clear expectations for next quarter, and overall rating recommendation.</div>
+
+<h4>4. Handle a Difficult Conversation</h4>
+<div class="prompt-box" style="background: #1E293B; color: #E2E8F0; border-radius: 10px; padding: 16px; margin: 10px 0; font-family: monospace; font-size: 0.88em; white-space: pre-wrap;">I need to have a difficult conversation with an employee about [ISSUE].
+Prepare: Opening script, talking points, likely objections with responses,
+constructive approach, and next steps. Keep it professional but direct.</div>
+
+<h4>5. Draft a Policy</h4>
+<div class="prompt-box" style="background: #1E293B; color: #E2E8F0; border-radius: 10px; padding: 16px; margin: 10px 0; font-family: monospace; font-size: 0.88em; white-space: pre-wrap;">Create a [POLICY TYPE] policy for a 50-person Shopify development agency in India.
+Include: Clear scope, simple rules, helpful examples, violation consequences,
+and effective date. Use professional but accessible language.</div>
+
+<h4>6. Onboarding Checklist</h4>
+<div class="prompt-box" style="background: #1E293B; color: #E2E8F0; border-radius: 10px; padding: 16px; margin: 10px 0; font-family: monospace; font-size: 0.88em; white-space: pre-wrap;">Create a 30-60-90 day onboarding plan for a [ROLE] joining a Shopify agency.
+Include: Day 1 essentials, Week 1 goals, Month 1 milestones,
+check-in schedule, and success criteria for probation review.</div>
+</div>
+
+<div class="content-section">
+<h3>🎯 The DH AI App Challenge (Hiring Step 3)</h3>
+<p>In the DH 6-step hiring pipeline, Step 3 is the <strong>AI App Task</strong>:</p>
+<ul>
+<li><strong>Duration:</strong> 2 hours</li>
+<li><strong>Format:</strong> Digital Heroes branded AI challenge</li>
+<li><strong>Minimum Score:</strong> 10+ to proceed to HR interview</li>
+<li><strong>Purpose:</strong> Tests actual ability, not just interview skills</li>
+<li><strong>HR's Role:</strong> Send the challenge link, track completion, verify scores</li>
+</ul>
+<div class="highlight-box"><strong>Why AI App Before Interview?</strong> It saves HR 30 minutes per unqualified candidate. If they can't score 10+ on a structured task, they won't perform on real projects.</div>
+</div>
+
+<div class="content-section">
+<h3>⚠️ AI Safety Rules for HR</h3>
+<div class="warning-box" style="background: rgba(239, 68, 68, 0.15); border-color: #EF4444;">
+<strong>NEVER put these into AI tools:</strong>
+<ul>
+<li>Employee names with personal problems or health issues</li>
+<li>Salary details with identifying information</li>
+<li>Client passwords or access credentials</li>
+<li>Legal cases or harassment complaints with names</li>
+</ul>
+<p><strong>Rule:</strong> Use AI for templates and frameworks. Remove all personal/identifying details before pasting into any AI tool.</p>
+</div>
+</div>
+`;
+
+const task23Content = `
+<h2>📚 TASK 23: HR FAQ MASTERY — 50+ Questions Every HR Must Answer</h2>
+
+<div class="content-section">
+<h3>💰 Salary & Payment FAQs</h3>
+<div style="display: grid; gap: 10px; margin: 15px 0;">
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: When does salary get credited?</strong><br>
+A: Before the 10th of the following month via bank transfer.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I discuss my salary with colleagues?</strong><br>
+A: Yes — DH encourages transparent salary discussions.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: How do I get a raise?</strong><br>
+A: Raises are performance-based, not time-based. Score 75%+ on KPIs = increment. Quarterly reviews.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Is there a Diwali bonus?</strong><br>
+A: Yes — annual Diwali bonuses based on company performance and individual contribution.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I get an advance on my salary?</strong><br>
+A: After 3 months. Max 50% of salary. Recovered in 2 installments. Genuine emergencies only. Max 2/year.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Do I get paid for overtime?</strong><br>
+A: No separate overtime pay — salary covers reasonable work requirements.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: What if there's an error in my salary?</strong><br>
+A: Report to HR immediately. Correction processed in next pay cycle.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Is training period paid?</strong><br>
+A: Internship training is unpaid. A Training Completion Certificate is provided after finishing.
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>📅 Attendance & Leave FAQs</h3>
+<div style="display: grid; gap: 10px; margin: 15px 0;">
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: What happens if I'm late?</strong><br>
+A: After 9:15 AM = HALF-DAY SALARY DEDUCTION. 3 late = verbal warning. 6 late = written warning. 9 late = termination risk.
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I take leave during probation?</strong><br>
+A: NO leave in first 2 months unless genuine emergency (requires Delhi Team approval).
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: How many leaves do I get per year?</strong><br>
+A: Casual Leave: 12/year (max 2/month). Sick Leave: 6/year. Earned Leave: accrues after 1 year. Public Holidays: ~10/year.
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Do unused leaves carry forward?</strong><br>
+A: NO — Casual and Sick Leaves lapse at end of year. Use them or lose them.
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I take leave between 25th-5th?</strong><br>
+A: NO — Month-end/start is billing cycle blackout. No leaves allowed during this period.
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: How do I apply for leave?</strong><br>
+A: Post in #ask-hr or message Manager. Minimum 3 days advance for planned leave. Sick leave: inform by 9 AM via WhatsApp/Discord. Valid only after HR approval.
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: What counts as unexplained absence?</strong><br>
+A: Not informing by 9 AM. Penalties: 1st = written warning, 3rd = 3 days salary deduction, 5th = termination.
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Do I get birthday leave?</strong><br>
+A: Yes — half-day off + cake + celebration on your birthday.
+</div>
+<div style="background: rgba(245, 158, 11, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I get more than 2 CLs in a month?</strong><br>
+A: Only with Delhi Team/senior management approval AND available balance.
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🏠 Work From Home FAQs</h3>
+<div style="display: grid; gap: 10px; margin: 15px 0;">
+<div style="background: rgba(16, 185, 129, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: When can I work from home?</strong><br>
+A: After 3-month probation + good performance. Manager approval required.
+</div>
+<div style="background: rgba(16, 185, 129, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: How many WFH days per week?</strong><br>
+A: Max 2 days/week (non-consecutive). Pre-approved by manager.
+</div>
+<div style="background: rgba(16, 185, 129, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I WFH from a cafe?</strong><br>
+A: NO — Cannot work from public places. Stable internet (10+ Mbps) required. Respond within 30 minutes.
+</div>
+<div style="background: rgba(16, 185, 129, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: What if my internet goes down during WFH?</strong><br>
+A: Your responsibility. Come to office or use mobile hotspot. Unresponsiveness due to internet is NOT an excuse.
+</div>
+<div style="background: rgba(16, 185, 129, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can my manager refuse my WFH request?</strong><br>
+A: YES — WFH is a PRIVILEGE, not a right. Manager can reject without explanation. Abuse = permanent revocation.
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🚪 Exit & Resignation FAQs</h3>
+<div style="display: grid; gap: 10px; margin: 15px 0;">
+<div style="background: rgba(239, 68, 68, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: What's the notice period?</strong><br>
+A: Probation (0-3 months): 7 days. After confirmation: 30 days.
+</div>
+<div style="background: rgba(239, 68, 68, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I buy out my notice period?</strong><br>
+A: Subject to management approval. Usually company needs time for proper handover.
+</div>
+<div style="background: rgba(239, 68, 68, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Will I get an experience letter?</strong><br>
+A: Yes, for good standing exits. Burning bridges = no certificate.
+</div>
+<div style="background: rgba(239, 68, 68, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I be rehired after resigning?</strong><br>
+A: Yes, if departure was amicable. Post-exit: NDA continues 6 months, Non-Compete 6 months.
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>🏢 Daily Operations FAQs</h3>
+<div style="display: grid; gap: 10px; margin: 15px 0;">
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: What are the working hours?</strong><br>
+A: Lucknow: 9 AM - 6 PM (Mon-Sat). Delhi: Night shift (foreign clients). Fiverr Sales: 9 AM - 9 PM window. Sunday off.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Is there a dress code?</strong><br>
+A: Smart casual. Be presentable for video calls. No formal suits required.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I switch departments?</strong><br>
+A: Discuss with HR and current manager. Subject to business needs and your skill fit.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Does the company pay for courses?</strong><br>
+A: Yes — up to ₹5k/year for courses + 4 hours/week learning hours.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: What if I have a personal emergency?</strong><br>
+A: Inform HR/manager immediately. Flexible hours during genuine emergencies. Advance salary available for needs.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: How do I become a Team Lead?</strong><br>
+A: Consistent excellence over 6+ months. Demonstrate leadership, help teammates, exceed KPIs.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I do freelance work on the side?</strong><br>
+A: NO — Moonlighting is grounds for IMMEDIATE TERMINATION. No competitor work, no side projects without approval.
+</div>
+</div>
+</div>
+
+<div class="content-section">
+<h3>💻 Tech & Assets FAQs</h3>
+<div style="display: grid; gap: 10px; margin: 15px 0;">
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Who pays for laptop damage?</strong><br>
+A: Accidental: 50% company / 50% employee. Negligence (left in car, dropped): 100% employee.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Can I install personal software/games?</strong><br>
+A: Only work-related software. Personal games/apps are not allowed on company equipment.
+</div>
+<div style="background: rgba(99, 102, 241, 0.08); padding: 15px; border-radius: 10px;">
+<strong>Q: Do I get a laptop for WFH?</strong><br>
+A: Laptops are for Lucknow in-office team only during probation. Not for WFH employees.
+</div>
+</div>
+</div>
+
+<div class="highlight-box"><strong>📌 HR Pro Tip:</strong> Memorize these FAQs. When an employee asks, you should answer within seconds — not "let me check and get back to you." Confidence in policy knowledge = credibility as HR.</div>
+`;
+
+const task24Content = `
+<h2>📚 TASK 24: JOINING DOCUMENTS & FORMALITIES</h2>
+
+<div class="content-section">
+<h3>📋 Documents to COLLECT from New Hire</h3>
+<h4>Identity Proofs</h4>
+<ul>
+<li>Aadhar Card (photocopy)</li>
+<li>PAN Card (photocopy)</li>
+<li>Address Proof (utility bill / rental agreement)</li>
+<li>Passport-size photographs (4 copies)</li>
+</ul>
+
+<h4>Educational Documents</h4>
+<ul>
+<li>10th Marksheet</li>
+<li>12th Marksheet</li>
+<li>Graduation Degree / Provisional Certificate</li>
+<li>All semester marksheets</li>
+<li>Professional certifications (if any)</li>
+</ul>
+
+<h4>Employment Documents (for experienced hires)</h4>
+<ul>
+<li>Experience letters from all previous employers</li>
+<li>Relieving letter from last employer</li>
+<li>NOC (No Objection Certificate) if applicable</li>
+<li>Last 6 months salary slips</li>
+</ul>
+
+<h4>Financial Documents</h4>
+<ul>
+<li>Cancelled cheque / Bank passbook first page</li>
+<li>Bank account details (Account number, IFSC, Branch)</li>
+</ul>
+</div>
+
+<div class="content-section">
+<h3>📄 Documents to GIVE to New Hire</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Document</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Details</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Signed Offer Letter</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">2 copies — 1 for employee, 1 for company file</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Joining/Appointment Letter</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Confirms employment terms and start date</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Employee Agreement</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Terms of employment, probation period, work expectations</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">NDA (Non-Disclosure Agreement)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cannot share client info, processes, salary</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Asset Agreement</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">If laptop/phone provided — damage responsibility</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Company Policy Handbook</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Link to Employee Handbook — must acknowledge reading</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>📝 Employee Agreement Key Clauses</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+<tr style="background: rgba(239, 68, 68, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Clause</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">What It Means</th></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>NDA</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Cannot share client info, processes, or salary details. Legal action for breach.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Non-Compete</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">No competitor work, no moonlighting without written approval.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Termination Grounds</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Data breach, poor performance, misconduct = immediate dismissal.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>Notice Period</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">7 days during probation; 30 days after confirmation.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);"><strong>IP Ownership</strong></td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">All code, designs, and work product are company property.</td></tr>
+</table>
+</div>
+
+<div class="content-section">
+<h3>🗂️ Employee Filing System</h3>
+<ul>
+<li><strong>Folder naming:</strong> [Employee Name] - [Employee ID]</li>
+<li><strong>Physical storage:</strong> Locked cabinet (office only)</li>
+<li><strong>Digital storage:</strong> Password-protected Google Drive</li>
+<li><strong>Backup:</strong> Monthly backup to separate drive</li>
+<li><strong>Active employees:</strong> Review quarterly</li>
+<li><strong>Ex-employees:</strong> Retain for 7 years (legal requirement)</li>
+</ul>
+<div class="highlight-box"><strong>HR Tool:</strong> Use <a href="https://hrm.digitalheroes.co.in" target="_blank" style="color: #6366F1;">hrm.digitalheroes.co.in</a> to generate offer letters, salary slips, and contracts.</div>
+</div>
+`;
+
+const task25Content = `
+<h2>📚 TASK 25: FINAL CERTIFICATION EXAM</h2>
 
 <div class="content-section">
 <h3>🏆 Congratulations on Reaching the Final Stage!</h3>
-<p>You've completed 18 comprehensive tasks covering every aspect of HR at Digital Heroes. Before certification, let's review everything you've mastered:</p>
+<p>You've completed 24 comprehensive tasks covering every aspect of HR at Digital Heroes. Before certification, let's review everything you've mastered:</p>
 
 <div class="highlight-box">
 <strong>Core Competencies Mastered:</strong>
@@ -1620,6 +2214,12 @@ const task19Content = `
 <li>✅ <strong>HR Analytics:</strong> Metrics, dashboards, data-driven decisions (Task 16)</li>
 <li>✅ <strong>Practical Application:</strong> 8 real-world scenarios with model answers (Task 17)</li>
 <li>✅ <strong>DH Deep Dive:</strong> Authority matrix, escalation, incentive-penalty system (Task 18)</li>
+<li>✅ <strong>Employee Handbook:</strong> DH Manifesto, 7 Critical Rules, Growth Formula (Task 19)</li>
+<li>✅ <strong>Compensation:</strong> Salary structure, increments, incentive framework (Task 20)</li>
+<li>✅ <strong>Communication:</strong> Response SLAs, channels, penalty structure (Task 21)</li>
+<li>✅ <strong>AI for HR:</strong> ChatGPT prompts, AI workflows, AI App Challenge (Task 22)</li>
+<li>✅ <strong>FAQ Mastery:</strong> 50+ employee questions with instant answers (Task 23)</li>
+<li>✅ <strong>Joining Documents:</strong> Collection, agreements, filing system (Task 24)</li>
 </ul>
 </div>
 </div>
@@ -1629,11 +2229,11 @@ const task19Content = `
 <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
 <tr style="background: rgba(99, 102, 241, 0.15);"><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Metric</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Formula</th><th style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">DH Target</th></tr>
 <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Time to Fill</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Days from JD posting to offer accepted</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≤25 days</td></tr>
-<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offer Acceptance Rate</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offers accepted ÷ Total offers × 100</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≥80%</td></tr>
-<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90-Day Retention</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Retained past 90 days ÷ Total new hires</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≥85%</td></tr>
-<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Annual Attrition</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Departures ÷ Average headcount × 100</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≤20%</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offer Acceptance Rate</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Offers accepted / Total offers × 100</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≥80%</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">90-Day Retention</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Retained past 90 days / Total new hires</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≥85%</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Annual Attrition</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Departures / Average headcount × 100</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≤20%</td></tr>
 <tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Employee Satisfaction (eNPS)</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Promoters - Detractors</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">≥30</td></tr>
-<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Training Completion</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Completed ÷ Assigned modules</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">100% in 30 days</td></tr>
+<tr><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Training Completion</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">Completed / Assigned modules</td><td style="padding: 12px; border: 1px solid rgba(255,255,255,0.1);">100% in 30 days</td></tr>
 </table>
 </div>
 
@@ -1641,7 +2241,7 @@ const task19Content = `
 <h3>🎯 Certification Requirements</h3>
 <ol>
 <li><strong>Quiz Score:</strong> 100% on the final certification exam (this quiz)</li>
-<li><strong>All 18 previous tasks:</strong> Must be completed with passing scores</li>
+<li><strong>All 24 previous tasks:</strong> Must be completed with passing scores</li>
 <li><strong>Practical Competence:</strong> Ready to handle live HR operations independently</li>
 </ol>
 
@@ -1660,7 +2260,7 @@ const task19Content = `
 
 <div class="content-section">
 <h3>📚 Ready for the Final Exam?</h3>
-<p>This exam covers ALL 18 tasks. You need 100% to earn your HR Professional certification. Good luck!</p>
+<p>This exam covers ALL 24 tasks. You need 100% to earn your HR Professional certification. Good luck!</p>
 </div>
 `;
 
@@ -1907,19 +2507,97 @@ const task18Quiz = [
 ];
 
 const task19Quiz = [
-    { q: "A company with 200 employees has 45% annual attrition. The HR team of 3 says they're 'too busy hiring to do anything else.' The root cause analysis should reveal:", o: ["HR is understaffed — the company needs to hire additional recruiters to handle the recruitment volume demand", "The company is trapped in a hire-replace cycle — fixing retention (onboarding, culture, management) would reduce hiring load", "45% attrition is normal for a growing company and the HR team simply needs better recruitment tools and automation", "The business model requires high turnover — some industries naturally have high attrition and HR should accept this"], c: 1 },
-    { q: "An employee scores 95% on their training certification exam but their on-the-job performance is poor after 3 months. This disconnect suggests:", o: ["The training was ineffective — scoring well didn't translate to practical competence, indicating a curriculum design flaw", "The employee is capable but unmotivated — high test scores prove ability, so the issue is engagement not competence", "The exam was too easy and didn't adequately test applied knowledge — revise the exam to include practical scenarios", "All of these are possible — the correct diagnosis requires investigating training design, management support, and role fit simultaneously"], c: 3 },
-    { q: "Across all HR functions covered in tasks 1-18, which single metric BEST represents overall HR effectiveness?", o: ["Time-to-fill — faster hiring demonstrates efficient talent acquisition and strong employer brand in the market", "Offer acceptance rate — high acceptance rates prove the company's value proposition resonates with target candidates", "Cost-per-hire — keeping recruitment costs low while maintaining quality demonstrates efficient resource utilization", "Employee engagement score — it captures the cumulative impact of hiring quality, onboarding, culture, and management effectiveness"], c: 3 },
-    { q: "You inherit an HR department with zero documentation — no policies, no templates, no exit records. Priority order for building from scratch:", o: ["Engagement surveys → Policies → Templates → Process documentation, since you need to understand sentiment first", "Everything simultaneously — each area is equally critical and delays in any area creates organizational risk", "Core policies (leave, conduct, POSH) → Hiring templates → Onboarding SOP → Performance framework → Exit process", "Templates → Policies → Performance reviews → Recruitment, since templates are fastest to create and show immediate results"], c: 2 },
-    { q: "A Board member asks 'What's the ROI of our HR department?' The STRONGEST answer uses:", o: ["Total recruitment cost savings from in-house hiring versus external agency fees for all positions filled this year", "Comparison of HR headcount ratio versus industry benchmarks showing the department operates lean and efficiently", "List of all HR programs implemented, training sessions conducted, and policies created during the reporting period", "Revenue-per-employee growth, attrition cost reduction, time-to-productivity improvement, and engagement-to-performance correlation data"], c: 3 },
-    { q: "You notice that hiring managers across 3 departments are each using different interview processes, scoring methods, and offer structures. This creates:", o: ["Healthy diversity in approach — different departments have different needs and standardization would be counterproductive", "Minor inefficiency that HR should address gradually over 12-18 months to avoid disrupting departmental workflows currently", "Compliance risk, inconsistent candidate experience, impossible-to-compare data, and potential discrimination exposure across the organization", "No real issue — as long as each department fills their roles successfully, the process variations are inconsequential"], c: 2 },
-    { q: "A remote employee has been flagged by their manager for potential WFH abuse: irregular response times, camera always off, and declining quality. Applying tasks 10, 14, and 18, the correct sequence is:", o: ["Immediate termination — the evidence is sufficient to justify exit without further investigation or documentation", "Document patterns (Task 14) → Informal 1:1 check-in → Formal meeting with manager (Task 10) → PIP if needed → Escalate to Delhi Team per authority matrix (Task 18)", "Revoke WFH immediately and mandate office attendance — this is simpler than a lengthy investigation process", "Wait 30 days for more evidence — acting on preliminary flags without a month of data is premature and unfair"], c: 1 },
-    { q: "After completing all 18 tasks of this training, what DEFINES an HR professional vs an HR administrator?", o: ["An HR administrator follows processes — an HR professional anticipates needs, influences decisions, and drives business outcomes through data-driven strategic action", "The difference is primarily seniority and title — both roles perform the same fundamental functions at different organizational scales", "HR professionals focus on strategy while administrators handle execution — the two roles should operate as separate functions", "An HR professional has an MBA or HR certification while an administrator may have only a bachelor's degree or equivalent"], c: 0 },
-    { q: "A startup founder says 'HR is overhead — we don't need it until we're 50+ people.' Your evidence-based refutation integrating agency-specific HR knowledge (Task 15):", o: ["HR overhead concern is valid — startups should outsource HR functions until the cost of a full-time hire is justified financially", "Without HR from early stage, especially at a fast-paced agency, you build culture accidentally, hire inconsistently, and create legal exposure that compounds — agency scaling makes this even more urgent", "Agree partially — startups under 20 employees can rely on the founder for HR functions with occasional legal consultation", "HR is a compliance requirement — labor law mandates HR functions at any company size regardless of the founder's preference"], c: 1 },
-    { q: "The ultimate measure of whether this HR training succeeded is:", o: ["Your exam score — a high percentage demonstrates strong theoretical understanding of all 18 tasks and HR concepts covered", "Completing all 18 tasks and receiving the certification that verifies you've absorbed the full training curriculum systematically", "Whether you can handle a real hiring pipeline, remote team management, employee conflict, agency-specific challenges, and compliance audit independently", "Positive feedback from your manager about improved performance in HR-related tasks after completing the entire program"], c: 2 }
+    { q: "How many non-negotiable principles are in the DH Manifesto?", o: ["5 — the core values that every employee must memorize and follow from Day 1 of joining the organization", "7 — the complete Manifesto covers talent, EQ, responsiveness, mindset, clients, 80/20, and work priority", "10 — the full Manifesto includes additional principles about innovation, teamwork, and continuous learning", "3 — the Manifesto is intentionally kept short with just talent, responsiveness, and client focus as core pillars"], c: 1 },
+    { q: "Which DH Manifesto principle states 'Start typing within 1 second of seeing a message'?", o: ["Talent is Irrelevant — this principle emphasizes speed and volume of output over natural ability or credentials", "Work = Highest Priority — this principle requires immediate action on all work-related communications received", "Instant Reply = Respect — responsiveness shows respect and reliability, and delayed responses signal disrespect", "Emotional Intelligence > IQ — quick responses demonstrate high emotional awareness and interpersonal skills"], c: 2 },
+    { q: "An employee is caught sharing client source code on their personal GitHub. Per DH zero-tolerance rules:", o: ["Written warning + remove the code — first offense for data sharing receives a formal warning and corrective action", "PIP for 30 days — performance improvement plan to address the data handling violation with clear improvement goals", "TERMINATION + LEGAL ACTION — data breach involving client info, source code, or passwords is immediate termination", "Suspension for 1 week — temporary removal while HR investigates the full scope of the data breach incident"], c: 2 },
+    { q: "The Growth Formula at DH states: Employee Growth = Company Growth ×", o: ["HIGH SALARY × HIGH PERKS — compensation and benefits drive employee growth and retention at any organization", "HIGH WILL × HIGH SKILL — hunger to learn plus constant skill upgrading equals growth for both employee and company", "HIGH IQ × HIGH OUTPUT — intelligence combined with productivity metrics determines career growth trajectory", "HIGH ATTENDANCE × HIGH TENURE — consistent presence over time automatically leads to growth and promotions"], c: 1 },
+    { q: "At DH, SOPs are considered:", o: ["Guidelines — helpful frameworks that employees can adapt based on their personal working style and preferences", "LAW — every employee follows their Role SOP + Daily SOP every day, violations lead to PIP then termination", "Suggestions — SOPs exist as reference documents but enforcement varies by team and manager discretion level", "Training tools — SOPs are used during onboarding only and become less relevant as employees gain work experience"], c: 1 },
+    { q: "How many zero-tolerance offenses can lead to immediate termination at DH?", o: ["3 — data breach, harassment, and moonlighting are the only grounds for immediate dismissal without warning", "5 — the policy covers the most critical offenses while allowing corrective action for lesser violations", "7 — ignoring messages, data breach, moonlighting, harassment, poor client comms, substance abuse, conspiracy", "10 — DH has a comprehensive list covering every possible workplace violation with zero tolerance applied"], c: 2 },
+    { q: "The #1 reason for termination at Digital Heroes is:", o: ["Poor code quality — technical incompetence is the primary reason developers get terminated at a Shopify agency", "Ignoring management messages — unresponsiveness is treated as the most serious violation at DH above all others", "Attendance issues — chronic tardiness and absenteeism account for the majority of terminations company-wide", "Client complaints — negative client feedback triggers immediate review and termination in most cases at DH"], c: 1 },
+    { q: "The company outing budget per person per month is:", o: ["₹200-500 — a modest amount for occasional team snacks and coffee outings during lunch breaks at the office", "₹500-1000 — allocated for team bonding activities like movies, dinner, bowling, and similar group activities", "₹2000-5000 — a generous entertainment allowance that covers premium team experiences and weekend activities", "No fixed budget — team leads request funds for outings as needed and finance approves on a case-by-case basis"], c: 1 },
+    { q: "New joiners at DH get a 'Buddy' for how long?", o: ["1 week — enough time to learn the basics of the office, tools, and daily routines before becoming independent", "2 weeks — the Buddy system pairs new hires with experienced team members for initial support and guidance", "1 month — the full probation period is covered by the buddy system to ensure smooth transition into the role", "3 months — buddies stay assigned until probation is complete and the new hire is officially confirmed as employee"], c: 1 },
+    { q: "Per DH policy, who should HR share employee problems with?", o: ["The employee's entire team — transparency means everyone should know about issues affecting their colleague", "HR or Delhi Team ONLY — problems must be shared only with HR or Delhi Team, not discussed with other employees", "The employee's direct manager — managers need full context about their team member's issues to manage effectively", "Nobody — all employee problems are strictly confidential and HR should handle everything independently without sharing"], c: 1 }
 ];
 
-const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz, task11Quiz, task12Quiz, task13Quiz, task14Quiz, task15Quiz, task16Quiz, task17Quiz, task18Quiz, task19Quiz];
+const task20Quiz = [
+    { q: "An employee asks 'When will I get my salary?' The correct answer per DH policy is:", o: ["End of the current month — salary is paid on the last working day of the month for that month's work", "Before the 10th of the following month — salary cycle processes monthly via bank transfer", "15th of the following month — standard two-week processing delay for payroll verification and approval", "It varies by department — each team has its own payment schedule based on project billing cycles and client payments"], c: 1 },
+    { q: "A developer with 85% KPI scores asks for a raise. Per DH increment policy, they're eligible for:", o: ["No increment — raises are only given at the annual review cycle regardless of quarterly KPI performance scores", "5-10% increment — average performers get smaller raises to incentivize improvement toward exceptional category", "10-15% increment — scoring 75-89% qualifies for the 'Strong' category increment range at quarterly review", "15-20% + bonus — any KPI score above 80% automatically qualifies for the highest increment tier available"], c: 2 },
+    { q: "An employee requests their 3rd salary advance this year. Their previous two were legitimate emergencies. HR should:", o: ["Approve it — genuine emergencies don't follow annual limits and penalizing genuine need creates resentment", "Reject immediately — policy is max 2 advances per year with no exceptions regardless of circumstances", "Escalate to Delhi Team — the 3rd advance exceeds HR's approval authority and needs senior management sign-off", "Approve but deduct from 3 months instead of 2 — extending recovery period reduces monthly financial burden"], c: 2 },
+    { q: "A sales rep earned USD 8,000 in a month. Their incentive per DH policy is:", o: ["₹0 — sales incentives only apply after 12 months of employment as per the standard vesting schedule", "5% of the full USD 8,000 — the incentive applies to total monthly sales regardless of the threshold amount", "5% of USD 3,000 (the amount exceeding USD 5,000 threshold) — incentives apply only to sales above the base target", "10% of USD 8,000 — high performers earn double the standard incentive rate as an overachievement bonus recognition"], c: 2 },
+    { q: "An employee's salary has an error — they were underpaid by ₹5,000. The correct process is:", o: ["Employee reports to HR → HR verifies → Correction processed in the next pay cycle with the shortfall amount added", "Employee must submit a formal written complaint → Finance investigates → Correction within 60 business days", "HR automatically detects all errors through payroll software — employee reporting is not required for corrections", "The underpayment is accumulated and paid as a lump sum at the end of the financial year during tax settlement"], c: 0 },
+    { q: "A new intern asks 'Will I get paid during the training period?' The correct answer is:", o: ["Yes — all employees including interns receive full salary from Day 1 as per Indian labor law requirements", "Internship training period is unpaid. A Training Completion Certificate is provided after finishing the program", "Partial payment — interns receive 50% of the role salary during training and full salary upon confirmation", "It depends on performance — interns who show exceptional progress may receive an early stipend at manager discretion"], c: 1 },
+    { q: "Stipend deductions at DH are triggered by:", o: ["Random audits conducted by the finance team to ensure all employees are meeting minimum performance thresholds", "Performance issues — Operations Manager tracks performance and deductions reflect quality, consistency, and discipline", "Manager personal discretion — team leads can deduct stipends without documentation or formal process requirements", "Attendance only — stipend deductions are exclusively linked to late arrivals and unexplained absences during the month"], c: 1 },
+    { q: "DH policy on salary discussions between employees is:", o: ["Strictly prohibited — discussing salary with colleagues violates confidentiality and is grounds for written warning", "Encouraged — DH supports transparent salary discussions between employees to maintain fairness and trust", "Only allowed during performance review periods — salary discussions at other times are considered unprofessional", "Permitted only with HR present — employees can discuss compensation but only in mediated, structured conversations"], c: 1 },
+    { q: "An employee who scored below 40% on KPI review faces:", o: ["A mandatory 30-day Performance Improvement Plan with weekly check-ins and clear measurable goals to achieve", "No consequence — low KPI scores are coaching opportunities, not punitive situations, in a growth-oriented company", "Termination or demotion — below 40% represents fundamental performance failure that cannot be recovered from", "Salary reduction of 10% for the next quarter as a financial incentive to improve performance score urgently"], c: 2 },
+    { q: "The DH advance salary policy requires 'genuine reason only.' Which of these would HR likely REJECT?", o: ["Employee's parent needs surgery — medical emergency requiring immediate funds for hospital deposit payment", "Employee wants to buy a new phone because their current one is slow — convenience upgrade, not emergency need", "Employee's rental deposit is due and they'll be evicted without payment — housing emergency requiring urgent funds", "Employee's child's school fees are due this week and they don't have savings to cover the full amount needed"], c: 1 }
+];
+
+const task21Quiz = [
+    { q: "An employee responds to their manager's message 3 hours after it was sent during business hours. Per DH policy:", o: ["No issue — 3 hours is within acceptable limits for most business communication in professional environments", "This violates the <1 hour manager response SLA — document the incident and issue a verbal warning first time", "Only a problem if the manager escalates — response time policies are enforced reactively, not proactively tracked", "Acceptable if the employee was in a meeting — context matters more than rigid time thresholds for internal messages"], c: 1 },
+    { q: "A client messages on Fiverr at 2 PM. The sales rep responds at 5 PM. This is:", o: ["Acceptable — the response was within the same business day which meets most client service level agreements", "A violation — client messages must be responded to within 2 hours during business hours per DH communication policy", "Only problematic if the client complains — response time policies exist as guidelines, not strict enforcement rules", "Fine for Fiverr — the 2-hour SLA only applies to WhatsApp client messages, not to platform-based communications"], c: 1 },
+    { q: "An employee's 2nd communication offense (being rude to a client) results in:", o: ["Verbal warning — second offenses still qualify for informal corrective action in most progressive discipline frameworks", "₹500 deduction — all communication offenses carry the same base penalty regardless of whether it's first or repeat", "₹1,000 deduction + Final Warning — second strike per the 3-strike policy with escalating penalties and consequences", "Immediate termination — two communication offenses demonstrate a pattern that cannot be corrected through penalties"], c: 2 },
+    { q: "The MOST important reason DH treats 'ignoring messages' as grounds for immediate termination is:", o: ["It's a symbolic policy — the actual enforcement is flexible and managers use discretion for genuine circumstances", "DH serves global clients and reliability in responsiveness is foundational to the company's service delivery model", "It prevents employees from using non-response as a passive-aggressive conflict avoidance strategy in the workplace", "Legal compliance requires all companies to have strict communication policies for client-facing employees specifically"], c: 1 },
+    { q: "An employee shares a screenshot of their Slack conversation with a client on their personal Instagram story. This violates:", o: ["Nothing — sharing work accomplishments on social media is encouraged for employer brand building and recruitment", "Social media policy only — a verbal reminder is sufficient since no confidential data was visibly compromised", "Both confidentiality policy AND social media policy — internal screenshots and client discussions must never be shared externally", "Only NDA if the client's name or business details are visible in the screenshot — generic work screenshots are permitted"], c: 2 },
+    { q: "Emergency messages require response within:", o: ["1 hour — same as manager messages during standard business hours across all communication channels at the company", "30 minutes — emergency response time is twice as fast as standard manager message requirements per policy", "15 minutes — emergencies require near-immediate acknowledgment regardless of what the employee is currently doing", "Immediately — there is no specific time limit for emergencies; employees must respond the instant they see the message"], c: 2 },
+    { q: "An employee says 'I didn't see the message' as defense for not responding for 6 hours. HR should:", o: ["Accept the explanation — message delivery issues happen and employees shouldn't be penalized for technology failures", "Document it regardless — 'didn't see it' is the most common excuse and DH expects employees to check messages regularly", "Verify by checking if the message was read/delivered before deciding whether the excuse is valid or not", "Dismiss it immediately — at DH, not checking messages for 6 hours IS the violation, regardless of whether they saw it"], c: 3 },
+    { q: "Which communication channel should be used for sending a formal offer letter to a candidate?", o: ["WhatsApp — it's faster and candidates respond more quickly to WhatsApp messages than formal email communications", "Email — formal communications like offer letters, contracts, and policy updates require email for documentation purposes", "Discord — since it's the primary team communication channel, all HR-related communications should flow through it", "Google Meet — verbal offers with screen-sharing of the document are more personal and create better candidate experience"], c: 1 },
+    { q: "Data breach at DH results in:", o: ["Written warning for first offense — data breaches are serious but one incident deserves a chance for correction", "₹1,000 deduction and mandatory data security training refresher course within 7 days of the incident", "PIP (Performance Improvement Plan) with specific data handling improvement goals over a 30-day period", "IMMEDIATE TERMINATION + LEGAL ACTION — no exceptions, no second chances for sharing client data externally"], c: 3 },
+    { q: "The correct response format when acknowledging a task from your manager is:", o: ["'OK' — brief acknowledgment is sufficient and managers prefer concise communication over verbose responses", "'Got it, doing X by Y' — confirm understanding with specific deliverable and timeline to prevent miscommunication", "'Will try to get it done' — setting reasonable expectations while being honest about potential completion challenges", "No response needed — if you start working on it, the manager will see progress and knows you received the message"], c: 1 }
+];
+
+const task22Quiz = [
+    { q: "An HR manager refuses to use ChatGPT for drafting JDs, saying 'I've been writing JDs for 10 years.' The problem with this stance is:", o: ["There is no problem — experienced HR professionals produce better JDs than AI tools based on years of domain expertise", "AI can generate role-specific, bias-checked, market-calibrated JDs in minutes that experienced professionals can then refine and improve", "ChatGPT is unreliable for HR tasks — the HR manager is correct to rely on their experience over uncertain AI outputs", "AI-generated JDs lack the personal touch that candidates expect — human-written JDs consistently outperform AI versions"], c: 1 },
+    { q: "Before pasting interview notes into ChatGPT for candidate evaluation, HR MUST:", o: ["Get the candidate's written consent — GDPR and Indian data protection laws require explicit permission for AI processing", "Remove all personal and identifying details — use role titles and anonymized descriptions instead of names and specifics", "Nothing special — ChatGPT conversations are private and don't pose any data security risks for candidate information", "Only use the company's enterprise ChatGPT account — personal accounts are prohibited but enterprise versions are secure"], c: 1 },
+    { q: "The DH AI App Challenge in the hiring pipeline is Step 3. It comes AFTER phone screen and BEFORE:", o: ["Job posting — the AI challenge is used as a pre-screening tool before applications are even reviewed by HR", "HR Video Interview — candidates must score 10+ on the 2-hour AI challenge before being invited to the formal interview", "Reference checks — the AI challenge replaces traditional reference verification in the DH hiring pipeline", "Offer negotiation — the AI challenge is the final assessment before compensation discussions begin with the candidate"], c: 1 },
+    { q: "Which ChatGPT prompt would help HR handle a difficult termination conversation?", o: ["'Write a termination letter for [employee name] who has been underperforming for 3 months'", "'I need to have a difficult conversation about [ISSUE]. Prepare: opening script, talking points, likely objections with responses'", "'Tell me if I should fire this employee based on their performance data: [paste full performance review with name]'", "'Generate a legal defense document for terminating [name] to protect the company from wrongful termination claims'"], c: 1 },
+    { q: "The minimum score required to pass the DH AI App Challenge and proceed to HR interview is:", o: ["5 out of 20 — the challenge is designed to be accessible and the passing threshold reflects minimum baseline capability", "10+ — candidates scoring below 10 on the 2-hour challenge are automatically filtered out before the interview stage", "15 out of 20 — DH maintains high standards and only candidates in the top quartile proceed to formal interviews", "There's no minimum — all candidates who complete the challenge are advanced regardless of their score achievement"], c: 1 },
+    { q: "An HR professional uses ChatGPT to draft a company policy. The correct next step before implementation is:", o: ["Publish immediately — AI-generated policies are comprehensive and don't require additional review or modification", "Have the policy reviewed by management and legal before implementing — AI drafts need human validation and customization", "Run the policy through 3 different AI tools and use the best version — multiple AI opinions improve policy quality", "Send the AI draft to all employees for feedback — democratic policy creation ensures buy-in from the entire team"], c: 1 },
+    { q: "AI can help HR with all of these EXCEPT:", o: ["Drafting job descriptions optimized for specific roles and industries with appropriate skill requirements and language", "Making final hiring decisions — AI should inform but never replace human judgment on hiring and termination calls", "Writing performance review templates with balanced feedback and actionable improvement steps for employees", "Creating onboarding checklists with role-specific milestones and success criteria for new hire 30-60-90 plans"], c: 1 },
+    { q: "The DH 6-step hiring pipeline in correct order is:", o: ["Job Posting → Resume Screen → Interview → Reference Check → Offer → Onboarding — the standard industry pipeline", "Application Filter → Phone Screen → AI App Task → HR Video Interview → Shopify Trial Task → Joining Formalities", "LinkedIn Sourcing → Technical Test → Culture Interview → Panel Interview → Background Check → Contract Signing", "Referral → Resume Review → Phone Screen → In-Person Interview → Salary Negotiation → Joining Day preparation"], c: 1 },
+    { q: "When using AI to evaluate a candidate, the prompt includes 'Give a hire/no-hire recommendation with confidence level (1-10).' This is valuable because:", o: ["It replaces the need for human interview assessment — AI evaluation is more objective and consistent than panel opinions", "It provides a structured framework for discussion — the confidence level forces consideration of uncertainty in the assessment", "AI recommendations are 95% accurate — the confidence level helps HR calibrate expectations for the candidate's performance", "It creates legal documentation — AI hire recommendations carry more weight than human opinions in employment disputes"], c: 1 },
+    { q: "An HR team member pastes a harassment complaint with full employee names into ChatGPT for advice. This is:", o: ["Acceptable — ChatGPT provides better legal guidance when given full context including names and specific details", "A serious violation — personal details, names, and sensitive complaints must NEVER be entered into external AI tools", "Permitted if using the company's paid ChatGPT account — enterprise versions have data protection guarantees", "Fine as long as the employee whose complaint it is has given verbal consent for AI-assisted processing"], c: 1 }
+];
+
+const task23Quiz = [
+    { q: "An employee asks 'Can I take leave on March 28th?' (within the 25th-5th billing cycle blackout). The correct HR response is:", o: ["Approve it — individual leave requests shouldn't be restricted by billing cycle policies that primarily affect finance teams", "Deny — the 25th-5th is a billing cycle blackout period. No leaves allowed. They can take leave before 25th or after 5th", "Approve with conditions — they can take the leave if they complete all pending work and handover tasks before leaving", "Escalate to manager — billing cycle blackout decisions are made by direct managers, not HR, based on workload assessment"], c: 1 },
+    { q: "A new hire in their first month asks for 3 days casual leave for a family wedding. Per DH policy:", o: ["Approve — family weddings are important occasions and denying leave creates negative first impressions with new employees", "Deny — NO leave in first 2 months of joining. They can apply for leave after completing the initial probation restriction", "Approve 1 day only — compromise between policy compliance and reasonable accommodation for significant family events", "Escalate to Delhi Team — only senior management can approve leave exceptions during the first 2 months for emergencies"], c: 1 },
+    { q: "An employee arrives at 9:20 AM. Per the 9:15 Rule, this means:", o: ["No penalty — a 5-minute grace period after 9:15 is standard practice and accommodates minor travel delays for employees", "Half-day salary deduction — arriving after 9:15 AM triggers automatic half-day pay cut regardless of the reason given", "Verbal warning only — first late arrival of the month receives a warning rather than an immediate financial penalty", "The employee must make up the time by staying 20 minutes late — DH uses a flexible time-banking system for lateness"], c: 1 },
+    { q: "An employee's unused Casual Leaves at year-end:", o: ["Carry forward to next year — accumulated leave balance transfers and can be used or encashed in the following period", "Get encashed — unused CLs are paid out at the daily rate equivalent during the final salary of the financial year", "Lapse entirely — CLs and SLs do NOT carry forward. Use them or lose them per DH leave policy rules strictly", "Convert to Earned Leave — unused CLs automatically become EL at a 2:1 ratio for the following year's balance"], c: 2 },
+    { q: "An employee asks about WFH: 'It's been 2 months since I joined. Can I WFH tomorrow?' Your answer:", o: ["Yes — 2 months is sufficient to establish work patterns and WFH eligibility begins after the first month is complete", "No — WFH requires completing 3-month probation + demonstrated good performance + manager approval before eligibility", "Maybe — check with their manager first since WFH eligibility during probation is decided on a case-by-case basis", "Yes, but only for 1 day — new employees can take 1 WFH day per month after their first month as a gradual transition"], c: 1 },
+    { q: "An employee wants to do freelance web design on weekends. Per DH policy:", o: ["Allowed — weekends are personal time and employees can pursue any activities including freelance work during off-hours", "NOT allowed — moonlighting is grounds for IMMEDIATE TERMINATION regardless of whether it's during work hours or weekends", "Allowed with written approval — employees must disclose and get formal permission before taking any outside work", "Allowed if not competing — freelance work is permitted as long as it's not for a direct competitor in the same industry"], c: 1 },
+    { q: "Employee's laptop screen cracks after they dropped it while rushing to a meeting. Who pays?", o: ["100% company — accidental damage during work activities is covered by the company's equipment insurance policy", "50/50 — DH's standard split for accidental damage means employee pays half and company absorbs the other half", "100% employee — dropping the laptop qualifies as negligence under DH's asset policy, making employee fully responsible", "Depends on investigation — an incident report determines whether the damage was truly accidental or due to negligence"], c: 2 },
+    { q: "An employee asks 'How do I apply for leave?' The correct process per DH policy is:", o: ["Email HR with the dates and reason — HR processes all leave requests through the formal email communication channel", "Post in #ask-hr or message Manager with 3 days advance notice. Sick leave: inform by 9 AM. Valid only after HR approval", "Submit through the company's leave management software portal — manual applications are not accepted or processed", "Tell your team lead verbally — verbal leave requests are accepted as long as someone on the team acknowledges them"], c: 1 },
+    { q: "An employee asks if they get an LOR (Letter of Recommendation). Per DH policy:", o: ["Everyone gets an LOR automatically as part of the standard exit documentation package regardless of performance", "LOR is provided for employees who demonstrated good performance and maintained professional standards during tenure", "LOR is never provided — DH only issues Experience Letters and Relieving Letters as standard exit documents", "LOR must be requested within 7 days of resignation — late requests are automatically denied per documentation policy"], c: 1 },
+    { q: "Working hours for the Fiverr/Sales team differ from standard. They are:", o: ["Same as everyone: 9 AM - 6 PM Monday through Saturday with standard lunch break at 1 PM for all team members", "9 AM - 9 PM window — must be responsive to messages during this extended window with flexible shifts within it", "24/7 availability — sales team must respond to Fiverr inquiries at all times including weekends and public holidays", "Night shift only — Fiverr sales team handles foreign clients exclusively during evening and overnight hours remotely"], c: 1 }
+];
+
+const task24Quiz = [
+    { q: "A new hire arrives on Day 1 without their PAN card. They say 'I'll bring it next week.' HR should:", o: ["Accept them without it — PAN card can be collected later since it's not critical for the first day of employment", "Note it and set a firm 3-day deadline — document the missing item and follow up, but don't delay the onboarding process", "Send them home — incomplete documentation means they cannot start work until ALL required documents are submitted", "Process everything else and escalate to the Delhi Team since incomplete documentation requires senior management awareness"], c: 1 },
+    { q: "The NDA clause in the employee agreement covers all of these EXCEPT:", o: ["Client contact information and business details that the employee accesses during their role at the company", "The employee's own personal opinion about their work experience posted on Glassdoor after they leave the company", "Company processes, SOPs, and internal documentation that are proprietary to Digital Heroes operations", "Source code, designs, and proprietary work products created during the employee's tenure at the organization"], c: 1 },
+    { q: "An employee's file must be retained for how long after they leave the company?", o: ["1 year — after that, all records should be securely destroyed to minimize data storage costs and privacy exposure", "3 years — standard retention period for most Indian companies handling employee records and documentation", "7 years — legal requirement for retaining ex-employee files for compliance, audit, and potential dispute resolution", "Indefinitely — employee records should never be destroyed as they may be needed for future reference or legal matters"], c: 2 },
+    { q: "The IP Ownership clause in the employee agreement means:", o: ["Employees retain ownership of code and designs but grant the company a license to use them during employment", "All code, designs, and work product created during employment are company property — employee has no ownership claim", "IP ownership applies only to work done during office hours — personal projects done at home belong to the employee", "IP ownership is negotiable — senior employees can negotiate to retain ownership of specific innovations they create"], c: 1 },
+    { q: "How many copies of the offer letter should HR prepare?", o: ["1 copy — digital copies serve as backup and printing multiple physical copies wastes resources unnecessarily", "2 copies — one for the employee to keep and one signed copy for the company's employee file records", "3 copies — employee, company file, and a third copy for the employee's personal bank loan documentation", "4 copies — employee, company, legal department, and the employee's previous employer for verification purposes"], c: 1 },
+    { q: "The correct folder naming convention for employee files at DH is:", o: ["[Employee ID] - [Department] — organizing by department makes it easier to find files when restructuring teams", "[Employee Name] - [Employee ID] — standardized naming convention for both physical cabinet and digital Drive storage", "[Join Date] - [Employee Name] — chronological organization helps track hiring patterns and employee tenure easily", "[Department] / [Role] / [Employee Name] — hierarchical folder structure mirrors the organizational chart effectively"], c: 1 },
+    { q: "During joining formalities, which document requires the new hire to acknowledge potential LEGAL ACTION for breach?", o: ["The offer letter — it outlines all employment terms including legal consequences for any contract violations", "The NDA (Non-Disclosure Agreement) — breach of confidentiality regarding client info, processes, or salary triggers legal action", "The asset agreement — damage to company property beyond normal wear and tear results in legal proceedings against employee", "The joining letter — it's the primary legal document that covers all terms including breach consequences for any violations"], c: 1 },
+    { q: "Notice period during probation at DH is:", o: ["0 days — employees in probation can leave immediately without serving any notice period per company policy", "7 days — probation period notice is shorter than confirmed employees who must serve 30 days before departure", "15 days — a middle ground between immediate departure and the full 30-day notice for confirmed employees", "30 days — same as confirmed employees, the notice period doesn't change based on probation or confirmation status"], c: 1 },
+    { q: "A new hire asks 'Where can I generate my salary slip?' HR should direct them to:", o: ["The payroll software portal — salary slips are automatically generated and accessible through the HRMS dashboard", "hrm.digitalheroes.co.in — the DH HR Docs Editor for generating offer letters, salary slips, and contracts", "Google Sheets — salary slips are maintained in a shared spreadsheet that employees can access with their company email", "They should email HR each month — salary slips are generated manually by HR and distributed individually to employees"], c: 1 },
+    { q: "The employee agreement's Non-Compete clause means:", o: ["Employees cannot apply to any job in the same industry for 2 years after leaving the company under any circumstances", "No competitor work and no moonlighting without written approval — applies during employment and 6 months post-exit", "Non-compete only applies to senior management — junior employees are free to join competitors immediately after leaving", "Non-compete is unenforceable in India — it's included in the agreement as a deterrent but has no legal standing"], c: 1 }
+];
+
+const task25Quiz = [
+    { q: "A company with 200 employees has 45% annual attrition. The HR team of 3 says they're 'too busy hiring to do anything else.' The root cause analysis should reveal:", o: ["HR is understaffed — the company needs to hire additional recruiters to handle the recruitment volume demand", "The company is trapped in a hire-replace cycle — fixing retention (onboarding, culture, management) would reduce hiring load", "45% attrition is normal for a growing company and the HR team simply needs better recruitment tools and automation", "The business model requires high turnover — some industries naturally have high attrition and HR should accept this"], c: 1 },
+    { q: "An employee scores 95% on their training certification exam but their on-the-job performance is poor after 3 months. This disconnect suggests:", o: ["The training was ineffective — scoring well didn't translate to practical competence, indicating a curriculum design flaw", "The employee is capable but unmotivated — high test scores prove ability, so the issue is engagement not competence", "The exam was too easy and didn't adequately test applied knowledge — revise the exam to include practical scenarios", "All of these are possible — the correct diagnosis requires investigating training design, management support, and role fit simultaneously"], c: 3 },
+    { q: "Across all HR functions covered in tasks 1-24, which single metric BEST represents overall HR effectiveness?", o: ["Time-to-fill — faster hiring demonstrates efficient talent acquisition and strong employer brand in the market", "Offer acceptance rate — high acceptance rates prove the company's value proposition resonates with target candidates", "Cost-per-hire — keeping recruitment costs low while maintaining quality demonstrates efficient resource utilization", "Employee engagement score — it captures the cumulative impact of hiring quality, onboarding, culture, and management effectiveness"], c: 3 },
+    { q: "You inherit an HR department with zero documentation — no policies, no templates, no exit records. Priority order for building from scratch:", o: ["Engagement surveys → Policies → Templates → Process documentation, since you need to understand sentiment first", "Everything simultaneously — each area is equally critical and delays in any area creates organizational risk", "Core policies (leave, conduct, POSH) → Hiring templates → Onboarding SOP → Performance framework → Exit process", "Templates → Policies → Performance reviews → Recruitment, since templates are fastest to create and show immediate results"], c: 2 },
+    { q: "A Board member asks 'What's the ROI of our HR department?' The STRONGEST answer uses:", o: ["Total recruitment cost savings from in-house hiring versus external agency fees for all positions filled this year", "Comparison of HR headcount ratio versus industry benchmarks showing the department operates lean and efficiently", "List of all HR programs implemented, training sessions conducted, and policies created during the reporting period", "Revenue-per-employee growth, attrition cost reduction, time-to-productivity improvement, and engagement-to-performance correlation data"], c: 3 },
+    { q: "Which DH Manifesto principle MOST directly affects how HR should evaluate candidates during interviews?", o: ["80/20 Principle — focus interview time on the 20% of questions that reveal 80% of the candidate's true capability", "Talent is Irrelevant, Volume is Everything — judge on OUTPUT potential and commitment, not degrees or innate talent", "Work = Highest Priority — candidates who demonstrate dedication and discipline should be prioritized over pure skills", "Instant Reply = Respect — test candidate responsiveness during the hiring process as a predictor of future behavior"], c: 1 },
+    { q: "A remote employee has been flagged by their manager for potential WFH abuse: irregular response times, camera always off, and declining quality. Applying knowledge from across the training, the correct sequence is:", o: ["Immediate termination — the evidence is sufficient to justify exit without further investigation or documentation", "Document patterns → Informal 1:1 check-in → Formal meeting with manager → PIP if needed → Escalate per authority matrix", "Revoke WFH immediately and mandate office attendance — this is simpler than a lengthy investigation process", "Wait 30 days for more evidence — acting on preliminary flags without a month of data is premature and unfair"], c: 1 },
+    { q: "After completing all 24 tasks of this training, what DEFINES an HR professional vs an HR administrator?", o: ["An HR administrator follows processes — an HR professional anticipates needs, influences decisions, and drives business outcomes through strategic action", "The difference is primarily seniority and title — both roles perform the same fundamental functions at different scales", "HR professionals focus on strategy while administrators handle execution — the two roles should operate as separate functions", "An HR professional has an MBA or HR certification while an administrator may have only a bachelor's degree equivalent"], c: 0 },
+    { q: "The ultimate measure of whether this HR training succeeded is:", o: ["Your exam score — a high percentage demonstrates strong theoretical understanding of all concepts covered in training", "Completing all 24 tasks and receiving the certification that verifies you've absorbed the full training curriculum", "Whether you can handle a real hiring pipeline, enforce DH policies, answer employee FAQs, and manage HR operations independently", "Positive feedback from your manager about improved performance in HR-related tasks after completing the program"], c: 2 },
+    { q: "You're creating an onboarding plan for a new HR hire at DH. Which combination of training tasks should they complete FIRST?", o: ["Tasks 1-8 (recruitment pipeline) — new HR hires should start by learning to fill open positions immediately", "Tasks 19, 21, 23 (Handbook, Communication Policy, FAQs) — they must know DH rules and be able to answer employee questions on Day 1", "Tasks 16-17 (analytics and exercises) — data literacy and practical scenarios prepare them for real-world HR challenges", "Tasks 14-15 (remote teams and agency HR) — understanding DH's distributed model is the most critical starting knowledge"], c: 1 }
+];
+
+const allQuizzes = [task1Quiz, task2Quiz, task3Quiz, task4Quiz, task5Quiz, task6Quiz, task7Quiz, task8Quiz, task9Quiz, task10Quiz, task11Quiz, task12Quiz, task13Quiz, task14Quiz, task15Quiz, task16Quiz, task17Quiz, task18Quiz, task19Quiz, task20Quiz, task21Quiz, task22Quiz, task23Quiz, task24Quiz, task25Quiz];
 
 // Make task content available globally for openTask() function
 if (typeof task1Content !== 'undefined') window.task1Content = task1Content;
@@ -1941,4 +2619,10 @@ if (typeof task16Content !== 'undefined') window.task16Content = task16Content;
 if (typeof task17Content !== 'undefined') window.task17Content = task17Content;
 if (typeof task18Content !== 'undefined') window.task18Content = task18Content;
 if (typeof task19Content !== 'undefined') window.task19Content = task19Content;
+if (typeof task20Content !== 'undefined') window.task20Content = task20Content;
+if (typeof task21Content !== 'undefined') window.task21Content = task21Content;
+if (typeof task22Content !== 'undefined') window.task22Content = task22Content;
+if (typeof task23Content !== 'undefined') window.task23Content = task23Content;
+if (typeof task24Content !== 'undefined') window.task24Content = task24Content;
+if (typeof task25Content !== 'undefined') window.task25Content = task25Content;
 
