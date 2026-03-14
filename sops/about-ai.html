@@ -299,6 +299,75 @@
             border-color: #10B981;
             color: #6EE7B7;
         }
+
+        /* Link cards for All Links section */
+        .link-card {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .link-card:hover {
+            border-color: #8B5CF6;
+            box-shadow: 0 4px 16px rgba(139, 92, 246, 0.08);
+        }
+        .link-card-icon {
+            font-size: 1.5em;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .link-card-body {
+            flex: 1;
+            min-width: 0;
+        }
+        .link-card-body strong {
+            font-size: 1em;
+            color: #1E293B;
+        }
+        .link-card-desc {
+            font-size: 0.84em;
+            color: #64748B;
+            margin: 4px 0 8px;
+            line-height: 1.5;
+        }
+        .link-card-url {
+            font-size: 0.75em;
+            color: #94A3B8;
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+        }
+        .link-card-btn {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.82em;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: all 0.2s;
+            margin-top: 4px;
+        }
+        .link-card-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .link-card-btn.purple { background: #7C3AED; }
+        .link-card-btn.blue { background: #2563EB; }
+        .link-card-btn.dark { background: #1E293B; }
+        @media (max-width: 768px) {
+            .link-card { flex-direction: column; gap: 8px; padding: 14px 16px; }
+            .link-card-btn { align-self: flex-start; }
+        }
     </style>
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
@@ -366,58 +435,134 @@
             <h2>&#128279; All Links &amp; Resources</h2>
             <p>Everything you need in one place &mdash; click to open, or clone using the instructions below.</p>
 
-            <!-- All links table with visible URLs -->
-            <table style="margin-top: 16px;">
-                <tr><th style="width:30%;">Resource</th><th>URL</th></tr>
-                <tr>
-                    <td><strong>&#128172; Sales Rep GPT</strong></td>
-                    <td><a href="https://chatgpt.com/g/g-6961854e56d08191a137afb0b3fbf3d9-digital-heroes-sales-rep" target="_blank" style="color:#7C3AED;word-break:break-all;">https://chatgpt.com/g/g-6961854e56d08191a137afb0b3fbf3d9-digital-heroes-sales-rep</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#9997;&#65039; Instruction Generator</strong></td>
-                    <td><a href="https://chatgpt.com/g/g-2VxwgpMMk-custom-instruction-generator" target="_blank" style="color:#7C3AED;word-break:break-all;">https://chatgpt.com/g/g-2VxwgpMMk-custom-instruction-generator</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#128142; Fiverr Client Chat</strong></td>
-                    <td><a href="https://chatgpt.com/g/g-68bfdb067bf8819199a3a68e3534cdbf-website-development-fiv" target="_blank" style="color:#7C3AED;word-break:break-all;">https://chatgpt.com/g/g-68bfdb067bf8819199a3a68e3534cdbf-website-development-fiv</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#127760; Chrome Extension</strong></td>
-                    <td><a href="https://chromewebstore.google.com/detail/claude/danfohhogaflcadcoaeknhcbkpeanpga" target="_blank" style="color:#2563EB;word-break:break-all;">https://chromewebstore.google.com/detail/claude/danfohhogaflcadcoaeknhcbkpeanpga</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#128100; Claude.ai</strong></td>
-                    <td><a href="https://claude.ai" target="_blank" style="color:#2563EB;">https://claude.ai</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#128268; MCP Docs</strong></td>
-                    <td><a href="https://modelcontextprotocol.io/" target="_blank" style="color:#2563EB;">https://modelcontextprotocol.io</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#128230; Anthropic Skills Repo</strong></td>
-                    <td><a href="https://github.com/anthropics/skills" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/anthropics/skills</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#128200; Marketing Skills Repo</strong></td>
-                    <td><a href="https://github.com/coreyhaines31/marketingskills" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/coreyhaines31/marketingskills</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#127912; UI UX Pro Max Skill</strong></td>
-                    <td><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/nextlevelbuilder/ui-ux-pro-max-skill</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#128268; n8n MCP Server</strong></td>
-                    <td><a href="https://github.com/czlonkowski/n8n-mcp" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/czlonkowski/n8n-mcp</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#127912; Frontend Design Skill</strong></td>
-                    <td><a href="https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design</a></td>
-                </tr>
-                <tr>
-                    <td><strong>&#128218; Anthropic Prompt Courses</strong></td>
-                    <td><a href="https://github.com/anthropics/courses/blob/master/real_world_prompting" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/anthropics/courses/blob/master/real_world_prompting</a></td>
-                </tr>
-            </table>
+            <!-- CUSTOM GPTs -->
+            <h3 style="margin-top:8px;">&#128172; Custom GPTs</h3>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128172;</span>
+                <div class="link-card-body">
+                    <strong>Sales Rep GPT</strong>
+                    <p class="link-card-desc">AI sales assistant trained on DH services, pricing, and objection handling. Draft client pitches, qualify leads, and prep sales call scripts instantly.</p>
+                    <div class="link-card-url">https://chatgpt.com/g/g-6961854e56d08191a137afb0b3fbf3d9-digital-heroes-sales-rep</div>
+                </div>
+                <a href="https://chatgpt.com/g/g-6961854e56d08191a137afb0b3fbf3d9-digital-heroes-sales-rep" target="_blank" class="link-card-btn purple">&#128640; Open GPT</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#9997;&#65039;</span>
+                <div class="link-card-body">
+                    <strong>Custom Instruction Generator</strong>
+                    <p class="link-card-desc">Generates optimized system prompts and custom instructions for any AI tool. Create role-specific instructions for ChatGPT, Claude Projects, or custom bots in seconds.</p>
+                    <div class="link-card-url">https://chatgpt.com/g/g-2VxwgpMMk-custom-instruction-generator</div>
+                </div>
+                <a href="https://chatgpt.com/g/g-2VxwgpMMk-custom-instruction-generator" target="_blank" class="link-card-btn purple">&#128640; Open GPT</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128142;</span>
+                <div class="link-card-body">
+                    <strong>Fiverr Client Chat GPT</strong>
+                    <p class="link-card-desc">Handles freelance client inquiries, scope negotiation, proposal writing, and requirement gathering for Fiverr/Upwork web development projects.</p>
+                    <div class="link-card-url">https://chatgpt.com/g/g-68bfdb067bf8819199a3a68e3534cdbf-website-development-fiv</div>
+                </div>
+                <a href="https://chatgpt.com/g/g-68bfdb067bf8819199a3a68e3534cdbf-website-development-fiv" target="_blank" class="link-card-btn purple">&#128640; Open GPT</a>
+            </div>
+
+            <!-- TOOLS & PLATFORMS -->
+            <h3 style="margin-top:24px;">&#128295; Tools &amp; Platforms</h3>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#127760;</span>
+                <div class="link-card-body">
+                    <strong>Claude in Chrome Extension</strong>
+                    <p class="link-card-desc">Use Claude directly in your browser. Analyze any web page, fill forms, automate tasks, take screenshots, and run QA on live client sites without leaving Chrome.</p>
+                    <div class="link-card-url">https://chromewebstore.google.com/detail/claude/danfohhogaflcadcoaeknhcbkpeanpga</div>
+                </div>
+                <a href="https://chromewebstore.google.com/detail/claude/danfohhogaflcadcoaeknhcbkpeanpga" target="_blank" class="link-card-btn blue">&#128229; Install</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128100;</span>
+                <div class="link-card-body">
+                    <strong>Claude.ai</strong>
+                    <p class="link-card-desc">Anthropic's AI assistant web app. Brainstorm, write, analyze, and review code. Create Projects to save context and custom instructions across conversations.</p>
+                    <div class="link-card-url">https://claude.ai</div>
+                </div>
+                <a href="https://claude.ai" target="_blank" class="link-card-btn blue">&#128100; Sign In</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128268;</span>
+                <div class="link-card-body">
+                    <strong>MCP Documentation</strong>
+                    <p class="link-card-desc">Model Context Protocol &mdash; the standard for connecting AI to external tools. Learn how MCP servers let Claude talk to databases, APIs, browsers, and automation platforms.</p>
+                    <div class="link-card-url">https://modelcontextprotocol.io</div>
+                </div>
+                <a href="https://modelcontextprotocol.io/" target="_blank" class="link-card-btn blue">&#128214; Docs</a>
+            </div>
+
+            <!-- SKILLS & PLUGINS -->
+            <h3 style="margin-top:24px;">&#128230; Skills &amp; Plugins (GitHub)</h3>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128230;</span>
+                <div class="link-card-body">
+                    <strong>Anthropic Skills Repo</strong>
+                    <p class="link-card-desc">Official skill templates from Anthropic &mdash; PDF, XLSX, DOCX, PPTX generation, scheduled tasks, and more. Plug-and-play packages Claude auto-discovers in your project.</p>
+                    <div class="link-card-url">https://github.com/anthropics/skills</div>
+                </div>
+                <a href="https://github.com/anthropics/skills" target="_blank" class="link-card-btn dark">&#128187; Repo</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#127912;</span>
+                <div class="link-card-body">
+                    <strong>Frontend Design Skill (Official)</strong>
+                    <p class="link-card-desc">Forces Claude to think like a designer before writing code. Eliminates generic fonts, purple gradients, and AI slop. Produces bold, distinctive, production-grade interfaces.</p>
+                    <div class="link-card-url">https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design</div>
+                </div>
+                <a href="https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design" target="_blank" class="link-card-btn dark">&#128187; Repo</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#127912;</span>
+                <div class="link-card-body">
+                    <strong>UI UX Pro Max Skill</strong>
+                    <p class="link-card-desc">67 UI styles, 96 color palettes, 57 font pairings, 100 industry reasoning rules. Stack with Frontend Design Skill for premium SaaS pages and beautiful interfaces.</p>
+                    <div class="link-card-url">https://github.com/nextlevelbuilder/ui-ux-pro-max-skill</div>
+                </div>
+                <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" class="link-card-btn dark">&#128187; Repo</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128200;</span>
+                <div class="link-card-body">
+                    <strong>Marketing Skills (34 Skills)</strong>
+                    <p class="link-card-desc">Complete marketing toolkit &mdash; copywriting frameworks (PAS, AIDA), CRO analysis, SEO strategy, ad copy for Google/Meta/LinkedIn, brand positioning, and conversion optimization.</p>
+                    <div class="link-card-url">https://github.com/coreyhaines31/marketingskills</div>
+                </div>
+                <a href="https://github.com/coreyhaines31/marketingskills" target="_blank" class="link-card-btn dark">&#128187; Repo</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128268;</span>
+                <div class="link-card-body">
+                    <strong>n8n MCP Server</strong>
+                    <p class="link-card-desc">Connect Claude to n8n workflow automations via MCP. Build, trigger, and manage n8n workflows directly from Claude Code &mdash; automate onboarding, notifications, and data syncs.</p>
+                    <div class="link-card-url">https://github.com/czlonkowski/n8n-mcp</div>
+                </div>
+                <a href="https://github.com/czlonkowski/n8n-mcp" target="_blank" class="link-card-btn dark">&#128187; Repo</a>
+            </div>
+
+            <div class="link-card">
+                <span class="link-card-icon">&#128218;</span>
+                <div class="link-card-body">
+                    <strong>Anthropic Prompting Course</strong>
+                    <p class="link-card-desc">Official course on real-world prompt engineering from the team that built Claude. Practical patterns, techniques, and strategies for mastering AI output quality.</p>
+                    <div class="link-card-url">https://github.com/anthropics/courses/blob/master/real_world_prompting</div>
+                </div>
+                <a href="https://github.com/anthropics/courses/blob/master/real_world_prompting" target="_blank" class="link-card-btn dark">&#128187; Repo</a>
+            </div>
 
             <!-- GitHub Repos with Clone Instructions -->
             <h3 style="margin-top: 28px;">&#128187; GitHub Repositories &mdash; How to Clone &amp; Use</h3>
