@@ -271,6 +271,34 @@
             height: 18px;
             accent-color: #10B981;
         }
+
+        /* Copy button for prompt boxes */
+        .prompt-box {
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: #E2E8F0;
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.2s;
+            z-index: 1;
+        }
+        .copy-btn:hover {
+            background: rgba(255,255,255,0.3);
+            color: white;
+        }
+        .copy-btn.copied {
+            background: rgba(16,185,129,0.3);
+            border-color: #10B981;
+            color: #6EE7B7;
+        }
     </style>
     <link rel="stylesheet" href="assets/css/hero-cursor.css">
     <link rel="stylesheet" href="assets/css/mobile-override.css">
@@ -825,12 +853,23 @@ claude</div>
 
             <h3>DH Custom GPTs</h3>
             <table>
-                <tr><th>GPT Name</th><th>Purpose</th><th>Who Uses It</th></tr>
-                <tr><td><strong>Client Comms Bot</strong></td><td>Draft professional client messages, handle objections, upsell templates</td><td>Sales, PM, CS</td></tr>
-                <tr><td><strong>QA Review Bot</strong></td><td>Check deliverables against DH standards</td><td>QA, Developers</td></tr>
-                <tr><td><strong>SOP Assistant</strong></td><td>Answer questions about DH processes</td><td>All Roles</td></tr>
-                <tr><td><strong>Content Writer</strong></td><td>Blog posts, product descriptions, social captions</td><td>Content, Social Media</td></tr>
+                <tr><th>GPT Name</th><th>Purpose</th><th>Who Uses It</th><th>Link</th></tr>
+                <tr><td><strong>Sales Rep Assistant</strong></td><td>Speed up client comms &mdash; provide entire chat as input, get professional responses until lead is closed</td><td>Sales, PM, CS</td><td><a href="https://chatgpt.com/g/g-6961854e56d08191a137afb0b3fbf3d9-digital-heroes-sales-rep" target="_blank" style="color:#8B5CF6;font-weight:600;">&#128279; Open GPT</a></td></tr>
+                <tr><td><strong>Custom Instruction Generator</strong></td><td>Transforms basic prompts into detailed AI training instructions &mdash; turn any idea into a structured prompt</td><td>All Roles</td><td><a href="https://chatgpt.com/g/g-2VxwgpMMk-custom-instruction-generator" target="_blank" style="color:#8B5CF6;font-weight:600;">&#128279; Open GPT</a></td></tr>
+                <tr><td><strong>Fiverr Client Chat</strong></td><td>Premium Shopify replies with updated 4-tier packages + CTA &mdash; close Fiverr leads faster</td><td>Sales, CS</td><td><a href="https://chatgpt.com/g/g-68bfdb067bf8819199a3a68e3534cdbf-website-development-fiv" target="_blank" style="color:#8B5CF6;font-weight:600;">&#128279; Open GPT</a></td></tr>
+                <tr><td><strong>QA Review Bot</strong></td><td>Check deliverables against DH standards</td><td>QA, Developers</td><td><span style="color:#94A3B8;">Coming Soon</span></td></tr>
+                <tr><td><strong>SOP Assistant</strong></td><td>Answer questions about DH processes</td><td>All Roles</td><td><span style="color:#94A3B8;">Coming Soon</span></td></tr>
+                <tr><td><strong>Content Writer</strong></td><td>Blog posts, product descriptions, social captions</td><td>Content, Social Media</td><td><span style="color:#94A3B8;">Coming Soon</span></td></tr>
             </table>
+
+            <div class="tip-box" style="margin-top: 16px;">
+                <h4>&#128279; Quick Access Links</h4>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
+                    <a href="https://chatgpt.com/g/g-6961854e56d08191a137afb0b3fbf3d9-digital-heroes-sales-rep" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#8B5CF6;color:white;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.9em;">&#128172; Sales Rep GPT</a>
+                    <a href="https://chatgpt.com/g/g-2VxwgpMMk-custom-instruction-generator" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#7C3AED;color:white;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.9em;">&#9997;&#65039; Instruction Generator</a>
+                    <a href="https://chatgpt.com/g/g-68bfdb067bf8819199a3a68e3534cdbf-website-development-fiv" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#6D28D9;color:white;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.9em;">&#128142; Fiverr Chat GPT</a>
+                </div>
+            </div>
 
             <h3>Custom GPTs vs Claude Projects</h3>
             <table>
@@ -1118,6 +1157,11 @@ Now write 3 versions of the product page hero copy — one optimized for each pe
             <h2>&#127760; Claude Chrome Extension</h2>
             <p>The Claude Chrome extension connects Claude directly to your browser. It can <strong>see what you see</strong> &mdash; read pages, click buttons, fill forms, take screenshots, and automate entire workflows.</p>
 
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin:16px 0;">
+                <a href="https://chromewebstore.google.com/detail/claude/danfohhogaflcadcoaeknhcbkpeanpga" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:linear-gradient(135deg,#8B5CF6,#7C3AED);color:white;border-radius:10px;text-decoration:none;font-weight:700;font-size:0.95em;">&#127760; Install Chrome Extension</a>
+                <a href="https://claude.ai" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:rgba(139,92,246,0.1);color:#7C3AED;border:2px solid #8B5CF6;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.95em;">&#128100; Sign in at Claude.ai</a>
+            </div>
+
             <h3>What It Can Do</h3>
             <table>
                 <tr><th>Capability</th><th>How It Helps You</th><th>Example</th></tr>
@@ -1388,5 +1432,50 @@ Now write 3 versions of the product page hero copy — one optimized for each pe
 
     <script src="assets/js/shared-sidebar.js"></script>
     <script src="admin-mode.js"></script>
+    <script>
+    // Inject 📋 copy button into every prompt-box
+    (function() {
+        document.querySelectorAll('.prompt-box').forEach(function(box) {
+            var btn = document.createElement('button');
+            btn.className = 'copy-btn';
+            btn.innerHTML = '&#128203; Copy';
+            btn.title = 'Copy to clipboard';
+            btn.addEventListener('click', function() {
+                var text = box.textContent.replace(btn.textContent, '').trim();
+                navigator.clipboard.writeText(text).then(function() {
+                    btn.innerHTML = '&#9989; Copied!';
+                    btn.classList.add('copied');
+                    setTimeout(function() {
+                        btn.innerHTML = '&#128203; Copy';
+                        btn.classList.remove('copied');
+                    }, 2000);
+                });
+            });
+            box.appendChild(btn);
+        });
+
+        // Sidebar active link highlighting on scroll
+        var links = document.querySelectorAll('.nav-link');
+        var sections = [];
+        links.forEach(function(link) {
+            var id = link.getAttribute('href');
+            if (id && id.startsWith('#')) {
+                var section = document.querySelector(id);
+                if (section) sections.push({ el: section, link: link });
+            }
+        });
+        window.addEventListener('scroll', function() {
+            var scrollPos = window.scrollY + 120;
+            var current = null;
+            sections.forEach(function(s) {
+                if (s.el.offsetTop <= scrollPos) current = s;
+            });
+            if (current) {
+                links.forEach(function(l) { l.classList.remove('active'); });
+                current.link.classList.add('active');
+            }
+        });
+    })();
+    </script>
 </body>
 </html>
