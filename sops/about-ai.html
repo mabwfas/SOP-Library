@@ -335,6 +335,8 @@
             <li class="nav-item"><a href="#design-ai" class="nav-link"><span class="nav-icon">🎨</span> AI for Design</a></li>
             <li class="nav-item"><a href="#content-ai" class="nav-link"><span class="nav-icon">📝</span> AI for Content</a></li>
             <li class="nav-item"><a href="#pm-ai" class="nav-link"><span class="nav-icon">📋</span> AI for PM & Ops</a></li>
+            <li class="nav-item"><a href="#custom-commands" class="nav-link"><span class="nav-icon">&#9889;</span> Custom Commands</a></li>
+            <li class="nav-item"><a href="#design-playbook" class="nav-link"><span class="nav-icon">&#127912;</span> Designer's Playbook</a></li>
             <li class="nav-item"><a href="#advanced-prompts" class="nav-link"><span class="nav-icon">🧪</span> Advanced Prompts</a></li>
             <li class="nav-item"><a href="#speed-hacks" class="nav-link"><span class="nav-icon">⚡</span> 10x Speed Hacks</a></li>
             <li class="nav-item"><a href="#chrome-ext" class="nav-link"><span class="nav-icon">🌐</span> Chrome Extension</a></li>
@@ -402,6 +404,18 @@
                 <tr>
                     <td><strong>&#127912; UI UX Pro Max Skill</strong></td>
                     <td><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/nextlevelbuilder/ui-ux-pro-max-skill</a></td>
+                </tr>
+                <tr>
+                    <td><strong>&#128268; n8n MCP Server</strong></td>
+                    <td><a href="https://github.com/czlonkowski/n8n-mcp" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/czlonkowski/n8n-mcp</a></td>
+                </tr>
+                <tr>
+                    <td><strong>&#127912; Frontend Design Skill</strong></td>
+                    <td><a href="https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design</a></td>
+                </tr>
+                <tr>
+                    <td><strong>&#128218; Anthropic Prompt Courses</strong></td>
+                    <td><a href="https://github.com/anthropics/courses/blob/master/real_world_prompting" target="_blank" style="color:#1E293B;font-weight:600;">https://github.com/anthropics/courses/blob/master/real_world_prompting</a></td>
                 </tr>
             </table>
 
@@ -505,6 +519,41 @@ uipro init --ai all  # Install for ALL AI assistants at once</div>
                         <tr><td>Frameworks</td><td>React, Next.js, Flutter, Tailwind, shadcn/ui +</td></tr>
                     </table>
                 </div>
+            </div>
+
+            <div class="step-card">
+                <h4><span class="step-number">4</span> <a href="https://github.com/czlonkowski/n8n-mcp" target="_blank" style="color:#7C3AED;text-decoration:none;">n8n MCP Server</a></h4>
+                <p>Connect Claude Code to n8n workflows via MCP &mdash; trigger automations, manage workflows, and execute nodes directly from Claude.</p>
+                <p style="font-size:0.85em;color:#64748B;margin:4px 0;">&#128279; <code>https://github.com/czlonkowski/n8n-mcp</code></p>
+                <p style="font-weight:600;margin-top:12px;">How to clone &amp; use:</p>
+                <div class="prompt-box">git clone https://github.com/czlonkowski/n8n-mcp.git
+cd n8n-mcp
+npm install</div>
+                <p style="margin-top:10px;">Then configure it as an MCP server in Claude Code to let Claude interact with your n8n automations directly.</p>
+            </div>
+
+            <div class="step-card">
+                <h4><span class="step-number">5</span> <a href="https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design" target="_blank" style="color:#7C3AED;text-decoration:none;">Anthropic Frontend Design Skill</a></h4>
+                <p>Anthropic's official design skill &mdash; forces Claude to think like a designer before writing code. Eliminates generic fonts, layouts, and AI slop.</p>
+                <p style="font-size:0.85em;color:#64748B;margin:4px 0;">&#128279; <code>https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design</code></p>
+                <p style="font-weight:600;margin-top:12px;">How to install:</p>
+                <div class="prompt-box"># Option A: Install via plugin command (easiest)
+/install-plugin frontend-design
+
+# Option B: Clone and copy manually
+git clone https://github.com/anthropics/claudecode.git
+cp -r claudecode/plugins/frontend-design/.claude/skills/ your-project/.claude/skills/</div>
+                <p style="margin-top:10px;">Once installed, just chat normally &mdash; Claude auto-activates the design skill for any UI request. <strong>Stack this with UI/UX Pro Max for maximum impact.</strong></p>
+            </div>
+
+            <div class="step-card">
+                <h4><span class="step-number">6</span> <a href="https://github.com/anthropics/courses/blob/master/real_world_prompting" target="_blank" style="color:#7C3AED;text-decoration:none;">Anthropic Real-World Prompting Course</a></h4>
+                <p>Official Anthropic course on real-world prompt engineering &mdash; practical patterns, techniques, and strategies from the team that built Claude.</p>
+                <p style="font-size:0.85em;color:#64748B;margin:4px 0;">&#128279; <code>https://github.com/anthropics/courses/blob/master/real_world_prompting</code></p>
+                <p style="font-weight:600;margin-top:12px;">How to access:</p>
+                <div class="prompt-box">git clone https://github.com/anthropics/courses.git
+cd courses/real_world_prompting</div>
+                <p style="margin-top:10px;">Open the notebooks to study prompting patterns. Use alongside our Prompt Engineering section above for a complete mastery path.</p>
             </div>
         </section>
 
@@ -1166,6 +1215,367 @@ claude</div>
                     <h4>&#9889; Automation with MCP</h4>
                     <p>Scheduled tasks for daily standups, QA checklists, risk identification, and retrospective analysis.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- DH CUSTOM COMMANDS -->
+        <section id="custom-commands" class="content-section">
+            <h2>&#9889; DH Custom Claude Commands</h2>
+            <p>These are pre-built slash commands you can install in Claude Code. Save them to <code>.claude/commands/</code> in your project and use them as <code>/command-name</code>.</p>
+
+            <div class="tip-box">
+                <h4>&#128161; How to Install a Custom Command</h4>
+                <p>Copy the command file to your project's <code>.claude/commands/</code> directory. Claude auto-discovers it and you can run it as a slash command.</p>
+                <div class="prompt-box">mkdir -p .claude/commands
+# Save the command markdown file into this folder
+# Then in Claude Code, use: /command-name</div>
+            </div>
+
+            <!-- Agent Builder -->
+            <div class="step-card">
+                <h4>&#128295; Agent Builder Pro</h4>
+                <p>Create custom AI agents using a standardized framework. Provide a name and purpose, and it generates a complete agent file with Constitution, Constraints, Processing Instructions, and Output Format.</p>
+                <table>
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Command</td><td><code>/agent-builder</code></td></tr>
+                    <tr><td>Tools Needed</td><td>Write, Read</td></tr>
+                    <tr><td>Output</td><td>Complete agent <code>.md</code> file in <code>.claude/commands/</code></td></tr>
+                </table>
+                <p style="margin-top:12px;"><strong>What it does:</strong></p>
+                <ol>
+                    <li>Gathers requirements (name, purpose, inputs, outputs, tools, restrictions)</li>
+                    <li>Defines Constitution (3-6 principles + 3-5 anti-principles)</li>
+                    <li>Sets Constraints (role, optimization targets, must/must-not rules)</li>
+                    <li>Designs 3-6 processing phases</li>
+                    <li>Creates structured output format</li>
+                    <li>Writes the complete agent file</li>
+                </ol>
+                <div class="prompt-box"># Usage in Claude Code:
+/agent-builder "Customer onboarding assistant for Shopify stores"</div>
+            </div>
+
+            <!-- Content Strategist -->
+            <div class="step-card">
+                <h4>&#128640; Content Strategist Pro</h4>
+                <p>Transform automation projects and technical ideas into viral-worthy content using proven psychology principles. Generates 3-5 content angles with hooks, titles, and visual concepts.</p>
+                <table>
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Command</td><td><code>/content-strategist</code></td></tr>
+                    <tr><td>Tools Needed</td><td>Write, Read</td></tr>
+                    <tr><td>Output</td><td>Content Strategy Package with multiple angles</td></tr>
+                </table>
+                <p style="margin-top:12px;"><strong>Frameworks included:</strong></p>
+                <ul>
+                    <li><strong>Pain Point Categories:</strong> Money, Time, Health, Access</li>
+                    <li><strong>Hook Quality Standards:</strong> No Delay, No Confusion, No Irrelevance, No Disinterest</li>
+                    <li><strong>Title Formulas:</strong> "How I [result] by [method]", "Why [thing] fails", "[#] [Things] That [Result]"</li>
+                    <li><strong>Spoken Hook Structure:</strong> Context Lean-in &rarr; Interjection &rarr; Snapback</li>
+                    <li><strong>Contrast Formula:</strong> Common Belief A vs Contrarian Take B</li>
+                </ul>
+                <div class="prompt-box"># Usage in Claude Code:
+/content-strategist "n8n workflow that automates donor research"</div>
+                <p style="margin-top:10px;">Generates a full Content Strategy Package with project analysis, 3-5 unique angles (each with hook, title options, visual concept, proof element), and recommendations.</p>
+            </div>
+
+            <!-- Video Thumbnail -->
+            <div class="step-card">
+                <h4>&#127916; Video Thumbnail Generator</h4>
+                <p>YouTube thumbnail &amp; title packaging consultant. CTR-focused with the Four C's framework: Composition, Color, Clean Assets, Curiosity. Scores thumbnails out of 10 &mdash; below 8 means revise.</p>
+                <table>
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Command</td><td><code>/thumbnail</code></td></tr>
+                    <tr><td>Tools Needed</td><td>Read, WebFetch, WebSearch</td></tr>
+                    <tr><td>Output</td><td>3 packaging concepts + image prompts + scoring</td></tr>
+                </table>
+                <p style="margin-top:12px;"><strong>Four C's Framework:</strong></p>
+                <div class="grid-2">
+                    <div class="tool-card">
+                        <h4>&#127912; Composition</h4>
+                        <p>Focal point, leading lines, scale. 1 subject + 1 object + 1 context MAX.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>&#127912; Color</h4>
+                        <p>Contrast strategy, color meaning. Subject must pop at 120px (mobile).</p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>&#127912; Clean Assets</h4>
+                        <p>Quality specs, cutout requirements. Sources: Google Images, Freepik, AI gen.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>&#127912; Curiosity</h4>
+                        <p>Question / Shock / Cliffhanger / Unknown Knowledge. Title + Thumbnail = one unit.</p>
+                    </div>
+                </div>
+                <p style="margin-top:12px;"><strong>Scoring Rubric:</strong></p>
+                <table>
+                    <tr><th>Score</th><th>Meaning</th></tr>
+                    <tr><td>9-10</td><td>Exceptional. Strong curiosity, perfect clarity, pro-level</td></tr>
+                    <tr><td>8</td><td>Passing. Solid CTR potential, minor polish optional</td></tr>
+                    <tr><td>6-7</td><td>Needs work. Weak in 1-2 C's. Revise before posting</td></tr>
+                    <tr><td>5 or below</td><td>Start over. Concept or execution fundamentally flawed</td></tr>
+                </table>
+                <div class="prompt-box"># Usage in Claude Code:
+/thumbnail "Video about automating client onboarding with n8n"</div>
+            </div>
+        </section>
+
+        <!-- DESIGNER'S PLAYBOOK — STOP BUILDING AI SLOP -->
+        <section id="design-playbook" class="content-section">
+            <h2>&#127912; Designer's Playbook &mdash; Stop Building AI Slop</h2>
+            <div class="rule-box" style="background: #FEF2F2; border-color: #EF4444;">
+                <h4 style="color: #DC2626;">&#128683; The Problem: AI Slop Is Everywhere</h4>
+                <p>Every AI-generated website looks the same: Inter/Roboto on everything, purple-to-blue gradient hero, cookie-cutter card grids, no animation, no texture, no personality. <strong>Clients can spot AI slop instantly.</strong> The issue isn't Claude &mdash; it's that Claude doesn't know YOUR design standards. The fix? Give Claude a design brain.</p>
+            </div>
+
+            <!-- STEP 1: Install the Design Skills Stack -->
+            <h3>Step 1: Install the Design Skills Stack</h3>
+            <p>Three tools, stacked together, turn Claude from generic to premium. Install all three.</p>
+
+            <div class="step-card">
+                <h4><span class="step-number">A</span> Anthropic Frontend Design Skill (Official)</h4>
+                <p>Anthropic's official skill that forces Claude to think like a designer BEFORE writing any code. Eliminates generic patterns and AI slop.</p>
+                <p style="font-size:0.85em;color:#64748B;">&#128279; <code>https://github.com/anthropics/claudecode/tree/main/plugins/frontend-design</code></p>
+                <div class="prompt-box"># Install directly in Claude Code:
+/install-plugin frontend-design
+
+# Or clone manually:
+git clone https://github.com/anthropics/claudecode.git
+cp -r claudecode/plugins/frontend-design/.claude/skills/ your-project/.claude/skills/</div>
+                <p style="margin-top:10px;"><strong>What it does:</strong> Forces bold aesthetic direction, eliminates generic fonts/colors/layouts, adds animation and texture, produces production-grade distinctive interfaces. Works with React, HTML/CSS, Next.js, Svelte, and more.</p>
+            </div>
+
+            <div class="step-card">
+                <h4><span class="step-number">B</span> UI/UX Pro Max Skill</h4>
+                <p>67 UI styles, 96 color palettes, 57 font pairings, and 100 industry-specific reasoning rules. Creates beautiful SaaS landing pages and premium interfaces.</p>
+                <p style="font-size:0.85em;color:#64748B;">&#128279; <code>https://github.com/nextlevelbuilder/ui-ux-pro-max-skill</code></p>
+                <div class="prompt-box"># Install via CLI:
+npx uipro init --ai claude
+
+# Or clone:
+git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+cp -r ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max ~/.claude/skills/</div>
+                <p style="margin-top:10px;"><strong>Stack with Frontend Design for maximum impact.</strong> Design Skill = how Claude thinks. Pro Max = the design vocabulary it pulls from.</p>
+            </div>
+
+            <div class="step-card">
+                <h4><span class="step-number">C</span> Marketing Skills (34 Skills)</h4>
+                <p>Copywriting, CRO, SEO, ad strategy, positioning &mdash; so your pages don't just look premium, they convert.</p>
+                <p style="font-size:0.85em;color:#64748B;">&#128279; <code>https://github.com/coreyhaines31/marketingskills</code></p>
+                <div class="prompt-box">npx skills add coreyhaines31/marketingskills</div>
+                <p style="margin-top:10px;"><strong>Design skill = how it looks. Marketing skills = what it says. Use both every time.</strong></p>
+            </div>
+
+            <div class="tip-box">
+                <h4>&#128161; The Power Stack</h4>
+                <table>
+                    <tr><th>Skill</th><th>Handles</th><th>Install</th></tr>
+                    <tr><td><strong>Frontend Design</strong></td><td>Typography, layout, motion, bold aesthetics</td><td><code>/install-plugin frontend-design</code></td></tr>
+                    <tr><td><strong>UI/UX Pro Max</strong></td><td>67 styles, 96 palettes, 57 font pairings</td><td><code>npx uipro init --ai claude</code></td></tr>
+                    <tr><td><strong>Marketing Skills</strong></td><td>Copy, CRO, SEO, ad strategy, positioning</td><td><code>npx skills add coreyhaines31/marketingskills</code></td></tr>
+                </table>
+            </div>
+
+            <!-- STEP 2: The 5 Design Pillars -->
+            <h3>Step 2: The 5 Design Pillars</h3>
+            <p>Every website Claude builds gets evaluated against these five areas. This is what separates premium from generic.</p>
+
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#9997;&#65039; 1. Typography</h4>
+                    <p>Choose distinctive, characterful fonts. No more Inter on everything. Pair a bold display font with a refined body font. Make unexpected choices that match the brand tone.</p>
+                    <div class="prompt-box" style="font-size:0.8em;">BAD: Inter for everything
+GOOD: "Cabinet Grotesk" display + "Satoshi" body
+GREAT: Match font personality to brand tone</div>
+                </div>
+                <div class="tool-card">
+                    <h4>&#127912; 2. Color &amp; Theme</h4>
+                    <p>Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid palettes. No more purple-gradient-on-white.</p>
+                    <div class="prompt-box" style="font-size:0.8em;">BAD: Purple-to-blue gradient on white
+GOOD: Deep navy #0F172A + amber accent #F59E0B
+GREAT: Full CSS variable system with theme tokens</div>
+                </div>
+                <div class="tool-card">
+                    <h4>&#127916; 3. Motion &amp; Animation</h4>
+                    <p>Orchestrated page load with staggered reveals. Scroll-triggered animations. Hover states that surprise. CSS-only for HTML, Motion library for React.</p>
+                    <div class="prompt-box" style="font-size:0.8em;">BAD: Static, zero motion, lifeless
+GOOD: Fade-in on scroll, hover transitions
+GREAT: Orchestrated load sequence + scroll-triggered reveals</div>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128200; 4. Spatial Composition</h4>
+                    <p>Break the grid. Use asymmetry, overlap, diagonal flow. Generous negative space OR controlled density. No more cookie-cutter centered layouts.</p>
+                    <div class="prompt-box" style="font-size:0.8em;">BAD: Centered content, 3 cards in a row
+GOOD: Asymmetric hero, overlapping elements
+GREAT: Full spatial narrative with visual flow</div>
+                </div>
+            </div>
+            <div class="tool-card" style="margin-top:0;">
+                <h4>&#127756; 5. Backgrounds &amp; Details</h4>
+                <p>Create atmosphere. Gradient meshes, noise textures, geometric patterns. Layered transparencies, dramatic shadows, grain overlays. Never just a flat white background.</p>
+                <div class="prompt-box" style="font-size:0.8em;">BAD: Flat white background, no texture
+GOOD: Subtle gradient mesh + noise overlay
+GREAT: Layered transparencies, grain, geometric patterns, depth</div>
+            </div>
+
+            <!-- STEP 3: Aesthetic Directions Cheat Sheet -->
+            <h3>Step 3: Pick Your Aesthetic Direction</h3>
+            <p>When prompting Claude, pick one of these directions. Being specific about the aesthetic is what separates premium from slop.</p>
+
+            <table>
+                <tr><th style="width:25%;">Direction</th><th>Description</th><th style="width:30%;">Perfect For</th></tr>
+                <tr>
+                    <td><strong>&#128296; Brutally Minimal</strong></td>
+                    <td>Maximum whitespace, one accent color, stark typography. Think Dieter Rams.</td>
+                    <td>SaaS, developer tools, fintech</td>
+                </tr>
+                <tr>
+                    <td><strong>&#128142; Luxury / Refined</strong></td>
+                    <td>Serif fonts, muted gold accents, generous spacing, subtle animations. Think Apple or Aesop.</td>
+                    <td>Premium brands, consulting firms</td>
+                </tr>
+                <tr>
+                    <td><strong>&#128240; Editorial / Magazine</strong></td>
+                    <td>Bold headlines, asymmetric layouts, rich photography, text overlaps. Think Bloomberg or Monocle.</td>
+                    <td>Media, content platforms</td>
+                </tr>
+                <tr>
+                    <td><strong>&#128302; Retro-Futuristic</strong></td>
+                    <td>Monospace fonts, neon accents on dark backgrounds, scanline effects, terminal aesthetics.</td>
+                    <td>AI/tech startups, crypto</td>
+                </tr>
+                <tr>
+                    <td><strong>&#127880; Playful / Toy-Like</strong></td>
+                    <td>Rounded shapes, bright colors, bouncy animations, hand-drawn elements.</td>
+                    <td>Consumer apps, education, kids products</td>
+                </tr>
+                <tr>
+                    <td><strong>&#128679; Brutalist / Raw</strong></td>
+                    <td>Exposed structure, harsh contrast, no decoration, system fonts at large sizes.</td>
+                    <td>Creative agencies, portfolios, galleries</td>
+                </tr>
+            </table>
+
+            <div class="tip-box">
+                <h4>&#128161; Pro Tip: Go Bolder</h4>
+                <p>It's easier to tone down a strong direction than to add personality to a generic one. When in doubt, pick a stronger aesthetic.</p>
+            </div>
+
+            <!-- STEP 4: Better Prompts = Better Results -->
+            <h3>Step 4: Prompt Like a Designer, Not a Developer</h3>
+            <p>Once the skills are installed, just describe what you want. The more specific your aesthetic direction, the more distinctive the result.</p>
+
+            <div class="grid-2">
+                <div class="tool-card" style="border-color:#EF4444;">
+                    <h4 style="color:#DC2626;">&#10060; Generic Prompt (AI Slop)</h4>
+                    <div class="prompt-box">"Build a landing page for a watch brand."</div>
+                    <p style="margin-top:8px;color:#DC2626;font-size:0.85em;">Result: Purple gradient, Inter font, 3 cards, boring.</p>
+                </div>
+                <div class="tool-card" style="border-color:#10B981;">
+                    <h4 style="color:#16A34A;">&#9989; Premium Prompt</h4>
+                    <div class="prompt-box">"Build a landing page for a luxury watchmaker. Think Hodinkee meets Apple. Dark theme, editorial typography, subtle scroll animations, hero with full-bleed product photography."</div>
+                    <p style="margin-top:8px;color:#16A34A;font-size:0.85em;">Result: Distinctive, premium, client-ready.</p>
+                </div>
+            </div>
+
+            <p><strong>More designer-level prompts:</strong></p>
+            <div class="prompt-box">"Build a SaaS dashboard with a brutally minimal aesthetic. Think Linear meets Raycast.
+Monospace headings, muted grayscale palette with one electric blue accent,
+dense information layout, keyboard-first navigation indicators."</div>
+            <div class="prompt-box">"Design a portfolio site for a photographer. Editorial magazine layout.
+Large full-bleed images, Playfair Display headings, asymmetric grid,
+scroll-triggered parallax, minimal UI chrome. Think Kinfolk magazine."</div>
+            <div class="prompt-box">"Create a landing page for an AI startup. Retro-futuristic aesthetic.
+Dark background with CRT scanline overlay, JetBrains Mono font,
+neon green terminal-style text reveals, command-line inspired navigation."</div>
+
+            <!-- STEP 5: AI Slop Red Flags -->
+            <h3>Step 5: AI Slop Red Flags &mdash; What to Reject</h3>
+            <p>Even with skills installed, watch for these patterns. If you see any of them, push back and iterate.</p>
+
+            <div class="grid-2">
+                <div class="rule-box">
+                    <h4>&#128683; Generic Fonts</h4>
+                    <p>Inter, Roboto, Arial, or system fonts on EVERYTHING. Fine for body text, deadly for headings and hero sections.</p>
+                </div>
+                <div class="rule-box">
+                    <h4>&#128683; Purple Gradients</h4>
+                    <p>Purple-to-blue gradients on white backgrounds. This is the #1 marker of AI-generated design. Avoid at all costs.</p>
+                </div>
+                <div class="rule-box">
+                    <h4>&#128683; Card Grid Clones</h4>
+                    <p>3 cards in a row, same border radius, same shadow. Every AI does this. Break the pattern with asymmetry.</p>
+                </div>
+                <div class="rule-box">
+                    <h4>&#128683; Zero Motion</h4>
+                    <p>Flat, static pages with no animation. Add scroll-triggered reveals, hover states, orchestrated page load.</p>
+                </div>
+            </div>
+
+            <div class="rule-box" style="background: #FEF3C7; border-color: #F59E0B; text-align: center;">
+                <h4 style="color: #D97706;">&#128270; The AI Slop Test</h4>
+                <p>Show your page to someone and ask &ldquo;did AI make this?&rdquo; If they say yes, you need to iterate. Premium design should be indistinguishable from a human designer's work.</p>
+            </div>
+
+            <!-- STEP 6: Build Custom Skills Per Client -->
+            <h3>Step 6: Build Custom Skills Per Client</h3>
+            <p>Want every site to match a specific brand? Create a custom <code>SKILL.md</code> file and Claude follows it every time.</p>
+
+            <div class="prompt-box"><!-- Create this file: your-project/.claude/skills/brand/SKILL.md -->
+
+---
+name: client-brand-design
+description: Client-specific design standards
+---
+
+# Client Brand Design Skill
+
+## Color Palette
+- Primary: #1E40AF (deep blue)
+- Accent: #F59E0B (amber)
+- Background: #0F172A (dark navy)
+
+## Typography
+- Display: "Cabinet Grotesk"
+- Body: "Satoshi"
+
+## Rules
+- Always use dark themes
+- Animate hero sections on load
+- Use noise texture overlays
+- No generic card grids &mdash; use asymmetric layouts
+- All CTAs must have hover micro-animations</div>
+
+            <p style="margin-top:12px;"><strong>One SKILL.md file = consistent design across every project, every time.</strong></p>
+
+            <!-- STEP 7: Brand Kit + CLAUDE.md Lock -->
+            <h3>Step 7: Lock Into CLAUDE.md for Every Session</h3>
+            <p>Generate a brand kit PDF and reference it from CLAUDE.md so it's automatically loaded every session.</p>
+
+            <div class="prompt-box">"Create a brand kit PDF for my client using fpdf2.
+Include brand colors, fonts, logo path, tone of voice,
+target audience, and messaging guidelines.
+Save it as .claude/brand-kit.pdf"</div>
+
+            <p style="margin-top:12px;">Then add to your CLAUDE.md:</p>
+            <div class="prompt-box">## Brand Kit
+Always reference .claude/brand-kit.pdf before
+generating any client-facing pages or assets.
+
+## Design Rules
+- Use the Frontend Design skill for all UI work
+- Follow the 5 Design Pillars (typography, color, motion, spatial, backgrounds)
+- Never output AI slop: no Inter-on-everything, no purple gradients, no 3-card grids
+- Use brand colors and fonts from the kit
+- All pages must pass the "did AI make this?" test</div>
+
+            <div class="tip-box">
+                <h4>&#128161; Global vs Project CLAUDE.md</h4>
+                <p>Use <code>~/.claude/CLAUDE.md</code> (global) for agency-wide design standards. Use <code>your-project/CLAUDE.md</code> for client-specific rules.</p>
+            </div>
+
+            <div class="rule-box" style="background: #EFF6FF; border-color: #3B82F6; text-align: center;">
+                <h4 style="color: #2563EB;">&#128640; Premium Design = Premium Pricing</h4>
+                <p>&#9989; 3 design skills stacked &bull; &#9989; 5 pillars enforced &bull; &#9989; Aesthetic direction locked &bull; &#9989; Brand kit per client &bull; &#9989; CLAUDE.md loaded every session &bull; &#9989; AI slop eliminated</p>
             </div>
         </section>
 
