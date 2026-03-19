@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Search Library</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
+    <style>
+        :root {
+            --primary: #3B82F6;
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
+        }
+
+        body { font-family: 'Inter', sans-serif; }
+
+        .search-header {
+            background: linear-gradient(135deg, #0F172A, #1E293B);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .search-header h1 { font-size: 2em; margin: 0 0 20px; }
+
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 16px 20px 16px 50px;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 1.1em;
+            font-family: inherit;
+            outline: none;
+            transition: all 0.2s;
+            box-sizing: border-box;
+        }
+
+        .search-box input::placeholder { color: #94A3B8; }
+        .search-box input:focus { border-color: #3B82F6; background: rgba(255,255,255,0.15); }
+
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+        }
+
+        .results-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px 60px;
+        }
+
+        .results-count {
+            color: #64748B;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .result-card {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            display: block;
+            color: #1E293B;
+            transition: all 0.2s;
+        }
+
+        .result-card:hover {
+            border-color: #3B82F6;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+            transform: translateY(-1px);
+        }
+
+        .result-title {
+            font-weight: 700;
+            font-size: 1.05em;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .result-category {
+            font-size: 0.75em;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .result-path { color: #3B82F6; font-size: 0.8em; margin-bottom: 6px; }
+        .result-snippet { color: #64748B; font-size: 0.9em; line-height: 1.5; }
+        .result-snippet mark { background: #FEF3C7; color: #92400E; padding: 1px 3px; border-radius: 3px; }
+
+        .category-filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 6px 14px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            background: transparent;
+            color: #94A3B8;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: rgba(59, 130, 246, 0.3);
+            border-color: #3B82F6;
+            color: white;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #94A3B8;
+        }
+
+        .empty-state .icon { font-size: 3em; margin-bottom: 12px; }
+
+        .shortcut-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .shortcut-card {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 10px;
+            padding: 16px;
+            text-decoration: none;
+            color: #1E293B;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .shortcut-card:hover {
+            border-color: #3B82F6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .shortcut-card .sc-icon { font-size: 1.5em; }
+        .shortcut-card .sc-title { font-weight: 600; font-size: 0.9em; }
+        .shortcut-card .sc-desc { font-size: 0.75em; color: #64748B; }
+
+        @media (max-width: 640px) {
+            .search-header { padding: 24px 16px; }
+            .search-header h1 { font-size: 1.5em; }
+            .results-container { padding: 20px 16px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-header">
+        <a href="index.html" style="color:#94A3B8;text-decoration:none;font-weight:600;font-size:0.9em;">⬅️ Back to Library</a>
+        <h1>🔍 Search the SOP Library</h1>
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search SOPs, training, handbook, KRAs..." autofocus>
+        </div>
+        <div class="category-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="sop">SOPs</button>
+            <button class="filter-btn" data-filter="training">Training</button>
+            <button class="filter-btn" data-filter="kra">KRA</button>
+            <button class="filter-btn" data-filter="kpi">KPI</button>
+            <button class="filter-btn" data-filter="dts">DTS</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+    </div>
+
+    <div class="results-container">
+        <div id="resultsCount" class="results-count" style="display:none;"></div>
+        <div id="results"></div>
+        <div id="emptyState" class="empty-state">
+            <div class="icon">🔍</div>
+            <h2 style="color:#1E293B;margin-bottom:8px;">Search across everything</h2>
+            <p>Type to search all SOPs, training modules, KRAs, KPIs, handbook, and more.</p>
+            <h3 style="color:#1E293B;margin-top:30px;margin-bottom:12px;">Quick Shortcuts</h3>
+            <div class="shortcut-grid">
+                <a href="employee-handbook.html" class="shortcut-card"><span class="sc-icon">📖</span><div><div class="sc-title">Employee Handbook</div><div class="sc-desc">Policies, FAQ, WFH rules</div></div></a>
+                <a href="training-hub.html" class="shortcut-card"><span class="sc-icon">🎓</span><div><div class="sc-title">Training Hub</div><div class="sc-desc">15 role trainings</div></div></a>
+                <a href="start-here.html" class="shortcut-card"><span class="sc-icon">🚀</span><div><div class="sc-title">Start Here</div><div class="sc-desc">New joiner guide</div></div></a>
+                <a href="about-ai.html" class="shortcut-card"><span class="sc-icon">🤖</span><div><div class="sc-title">AI Guide</div><div class="sc-desc">Claude Code, MCP, Skills</div></div></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const PAGES = [
+        // SOPs
+        { title: 'Shopify Developer SOP', url: 'developer-sop.html', category: 'sop', icon: '💻', keywords: 'shopify liquid theme dawn sections cli code css javascript developer' },
+        { title: 'Full Stack Developer SOP', url: 'fullstack-sop.html', category: 'sop', icon: '🔧', keywords: 'fullstack react node api backend frontend typescript database' },
+        { title: 'Sales Associate SOP', url: 'sales-sop.html', category: 'sop', icon: '💰', keywords: 'sales fiverr client lead proposal pricing commission associate' },
+        { title: 'Project Manager SOP', url: 'pm-sop.html', category: 'sop', icon: '📊', keywords: 'project manager timeline scope deliverables sprint planning' },
+        { title: 'UI/UX Designer SOP', url: 'designer-sop.html', category: 'sop', icon: '🎨', keywords: 'design figma ui ux wireframe prototype mockup branding' },
+        { title: 'Customer Success SOP', url: 'cs-sop.html', category: 'sop', icon: '💬', keywords: 'customer success support client satisfaction tickets' },
+        { title: 'HR & People Ops SOP', url: 'hr-sop.html', category: 'sop', icon: '👥', keywords: 'hr hiring onboarding interview offer joining leave salary' },
+        { title: 'Content Writer SOP', url: 'content-sop.html', category: 'sop', icon: '✍️', keywords: 'content writing blog seo copywriting product descriptions' },
+        { title: 'Social Media Manager SOP', url: 'social-media-sop.html', category: 'sop', icon: '📱', keywords: 'social media instagram reels content calendar hashtag engagement' },
+        { title: 'Finance SOP', url: 'finance-sop.html', category: 'sop', icon: '💰', keywords: 'finance accounting invoice payment gst reconciliation' },
+        { title: 'Daily Routine SOP', url: 'daily-sop.html', category: 'sop', icon: '📋', keywords: 'daily routine standup tasks workflow schedule productivity' },
+        { title: 'Client Chat Simulation', url: 'client-chat-sop.html', category: 'sop', icon: '💬', keywords: 'client chat simulation growth conversation handling' },
+        { title: 'Fiverr Risk Manager SOP', url: 'fiverr-risk-sop.html', category: 'sop', icon: '⚠️', keywords: 'fiverr risk compliance dispute resolution account safety' },
+
+        // Training
+        { title: 'AI Training', url: 'training/ai-training.html', category: 'training', icon: '🤖', keywords: 'ai claude code mcp skills gpt prompt engineering' },
+        { title: 'Sales Associate Training', url: 'training/sales-training.html', category: 'training', icon: '💰', keywords: 'sales training fiverr client handling' },
+        { title: 'Shopify Developer Training', url: 'training/developer-training.html', category: 'training', icon: '💻', keywords: 'shopify developer liquid theme training' },
+        { title: 'WordPress Developer Training', url: 'training/wordpress-training.html', category: 'training', icon: '🌐', keywords: 'wordpress developer php theme plugin training' },
+        { title: 'Content Writer Training', url: 'training/content-training.html', category: 'training', icon: '✍️', keywords: 'content writing seo blog training' },
+        { title: 'Customer Success Training', url: 'training/cs-training.html', category: 'training', icon: '💬', keywords: 'customer success support training' },
+        { title: 'UI/UX Designer Training', url: 'training/designer-training.html', category: 'training', icon: '🎨', keywords: 'designer figma ui ux training' },
+        { title: 'Full Stack Developer Training', url: 'training/fullstack-training.html', category: 'training', icon: '🔧', keywords: 'fullstack react node training' },
+        { title: 'Project Manager Training', url: 'training/pm-training.html', category: 'training', icon: '📊', keywords: 'project manager training' },
+        { title: 'Finance Executive Training', url: 'training/finance-training.html', category: 'training', icon: '💰', keywords: 'finance accounting training' },
+        { title: 'Social Media Training', url: 'training/social-media-training.html', category: 'training', icon: '📱', keywords: 'social media training' },
+        { title: 'HR Executive Training', url: 'training/hr-training.html', category: 'training', icon: '👥', keywords: 'hr hiring onboarding training' },
+        { title: 'Client Chat Training', url: 'training/client-chat-training.html', category: 'training', icon: '💬', keywords: 'client chat training' },
+        { title: 'Operations Training', url: 'training/operations-training.html', category: 'training', icon: '⚙️', keywords: 'operations routine training' },
+        { title: 'Fiverr Risk Training', url: 'training/fiverr-risk-training.html', category: 'training', icon: '⚠️', keywords: 'fiverr risk compliance training' },
+
+        // KRAs
+        { title: 'Developer KRA', url: 'kra/developer-kra.html', category: 'kra', icon: '🎯', keywords: 'developer kra key result areas targets' },
+        { title: 'Full Stack KRA', url: 'kra/fullstack-kra.html', category: 'kra', icon: '🎯', keywords: 'fullstack kra targets' },
+        { title: 'Designer KRA', url: 'kra/designer-kra.html', category: 'kra', icon: '🎯', keywords: 'designer kra targets figma' },
+        { title: 'Sales KRA', url: 'kra/sales-kra.html', category: 'kra', icon: '🎯', keywords: 'sales kra targets revenue' },
+        { title: 'PM KRA', url: 'kra/pm-kra.html', category: 'kra', icon: '🎯', keywords: 'project manager kra targets' },
+        { title: 'CS KRA', url: 'kra/cs-kra.html', category: 'kra', icon: '🎯', keywords: 'customer success kra targets' },
+        { title: 'Content KRA', url: 'kra/content-kra.html', category: 'kra', icon: '🎯', keywords: 'content writer kra targets' },
+        { title: 'Social Media KRA', url: 'kra/social-media-kra.html', category: 'kra', icon: '🎯', keywords: 'social media kra targets' },
+        { title: 'Finance KRA', url: 'kra/finance-kra.html', category: 'kra', icon: '🎯', keywords: 'finance kra targets' },
+        { title: 'HR KRA', url: 'kra/hr-kra.html', category: 'kra', icon: '🎯', keywords: 'hr kra targets hiring' },
+        { title: 'Fiverr Risk KRA', url: 'kra/fiverr-risk-kra.html', category: 'kra', icon: '🎯', keywords: 'fiverr risk kra targets' },
+
+        // KPIs
+        { title: 'Developer KPI', url: 'kpi/developer-kpi.html', category: 'kpi', icon: '📈', keywords: 'developer kpi performance metrics' },
+        { title: 'Full Stack KPI', url: 'kpi/fullstack-kpi.html', category: 'kpi', icon: '📈', keywords: 'fullstack kpi metrics' },
+        { title: 'Designer KPI', url: 'kpi/designer-kpi.html', category: 'kpi', icon: '📈', keywords: 'designer kpi metrics' },
+        { title: 'Sales KPI', url: 'kpi/sales-kpi.html', category: 'kpi', icon: '📈', keywords: 'sales kpi metrics revenue' },
+        { title: 'PM KPI', url: 'kpi/pm-kpi.html', category: 'kpi', icon: '📈', keywords: 'project manager kpi metrics' },
+        { title: 'CS KPI', url: 'kpi/cs-kpi.html', category: 'kpi', icon: '📈', keywords: 'customer success kpi metrics' },
+        { title: 'Content KPI', url: 'kpi/content-kpi.html', category: 'kpi', icon: '📈', keywords: 'content writer kpi metrics' },
+        { title: 'Social Media KPI', url: 'kpi/social-media-kpi.html', category: 'kpi', icon: '📈', keywords: 'social media kpi metrics' },
+        { title: 'Finance KPI', url: 'kpi/finance-kpi.html', category: 'kpi', icon: '📈', keywords: 'finance kpi metrics' },
+        { title: 'HR KPI', url: 'kpi/hr-kpi.html', category: 'kpi', icon: '📈', keywords: 'hr kpi metrics hiring' },
+        { title: 'Fiverr Risk KPI', url: 'kpi/fiverr-risk-kpi.html', category: 'kpi', icon: '📈', keywords: 'fiverr risk kpi metrics' },
+
+        // DTS
+        { title: 'Developer DTS', url: 'dts/developer-dts.html', category: 'dts', icon: '📅', keywords: 'developer daily task schedule' },
+        { title: 'Full Stack DTS', url: 'dts/fullstack-dts.html', category: 'dts', icon: '📅', keywords: 'fullstack daily task schedule' },
+        { title: 'Designer DTS', url: 'dts/designer-dts.html', category: 'dts', icon: '📅', keywords: 'designer daily task schedule' },
+        { title: 'Sales DTS', url: 'dts/sales-dts.html', category: 'dts', icon: '📅', keywords: 'sales daily task schedule' },
+        { title: 'PM DTS', url: 'dts/pm-dts.html', category: 'dts', icon: '📅', keywords: 'project manager daily task schedule' },
+        { title: 'CS DTS', url: 'dts/cs-dts.html', category: 'dts', icon: '📅', keywords: 'customer success daily task schedule' },
+        { title: 'Content DTS', url: 'dts/content-dts.html', category: 'dts', icon: '📅', keywords: 'content daily task schedule' },
+        { title: 'Social Media DTS', url: 'dts/social-media-dts.html', category: 'dts', icon: '📅', keywords: 'social media daily task schedule' },
+        { title: 'Finance DTS', url: 'dts/finance-dts.html', category: 'dts', icon: '📅', keywords: 'finance daily task schedule' },
+        { title: 'HR DTS', url: 'dts/hr-dts.html', category: 'dts', icon: '📅', keywords: 'hr daily task schedule' },
+
+        // Other
+        { title: 'Employee Handbook', url: 'employee-handbook.html', category: 'other', icon: '📖', keywords: 'handbook policies leave wfh salary attendance culture faq' },
+        { title: 'Start Here (New Joiners)', url: 'start-here.html', category: 'other', icon: '🚀', keywords: 'start here onboarding new joiner guide steps' },
+        { title: 'Onboarding Hub', url: 'onboarding.html', category: 'other', icon: '🎯', keywords: 'onboarding day 1 setup tools access' },
+        { title: 'About AI', url: 'about-ai.html', category: 'other', icon: '🤖', keywords: 'ai claude code mcp skills prompt engineering shopify' },
+        { title: 'Training Hub', url: 'training-hub.html', category: 'other', icon: '🎓', keywords: 'training hub all modules certifications' },
+        { title: 'Certificate Verification', url: 'verify.html', category: 'other', icon: '✅', keywords: 'certificate verify validation checksum' },
+        { title: 'Authority Matrix', url: 'authority-matrix.html', category: 'other', icon: '🏛️', keywords: 'authority matrix roles permissions approvals' },
+        { title: 'Escalation Matrix', url: 'escalation-matrix.html', category: 'other', icon: '📞', keywords: 'escalation matrix emergency contacts' },
+        { title: 'Roles & Responsibilities', url: 'rnr.html', category: 'other', icon: '📋', keywords: 'roles responsibilities team structure' },
+        { title: 'Incentive & Penalty', url: 'incentive-penalty.html', category: 'other', icon: '💎', keywords: 'incentive penalty commission bonus' },
+        { title: 'Performance Review', url: 'performance-review.html', category: 'other', icon: '📊', keywords: 'performance review appraisal' },
+    ];
+
+    const CATEGORY_COLORS = {
+        sop: { bg: '#DBEAFE', color: '#1E40AF', label: 'SOP' },
+        training: { bg: '#D1FAE5', color: '#065F46', label: 'Training' },
+        kra: { bg: '#FEF3C7', color: '#92400E', label: 'KRA' },
+        kpi: { bg: '#EDE9FE', color: '#5B21B6', label: 'KPI' },
+        dts: { bg: '#FCE7F3', color: '#9D174D', label: 'DTS' },
+        other: { bg: '#F1F5F9', color: '#475569', label: 'Resource' },
+    };
+
+    let activeFilter = 'all';
+
+    document.getElementById('searchInput').addEventListener('input', debounce(doSearch, 200));
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeFilter = btn.dataset.filter;
+            doSearch();
+        });
+    });
+
+    function doSearch() {
+        const query = document.getElementById('searchInput').value.trim().toLowerCase();
+        const resultsEl = document.getElementById('results');
+        const countEl = document.getElementById('resultsCount');
+        const emptyEl = document.getElementById('emptyState');
+
+        if (!query) {
+            resultsEl.innerHTML = '';
+            countEl.style.display = 'none';
+            emptyEl.style.display = 'block';
+            return;
+        }
+
+        emptyEl.style.display = 'none';
+        const terms = query.split(/\s+/);
+
+        let matches = PAGES.filter(page => {
+            if (activeFilter !== 'all' && page.category !== activeFilter) return false;
+            const searchText = (page.title + ' ' + page.keywords + ' ' + page.category).toLowerCase();
+            return terms.every(term => searchText.includes(term));
+        });
+
+        // Sort: exact title match first, then keyword match
+        matches.sort((a, b) => {
+            const aTitle = a.title.toLowerCase().includes(query) ? 0 : 1;
+            const bTitle = b.title.toLowerCase().includes(query) ? 0 : 1;
+            return aTitle - bTitle;
+        });
+
+        countEl.style.display = 'block';
+        countEl.textContent = `${matches.length} result${matches.length !== 1 ? 's' : ''} for "${query}"`;
+
+        if (matches.length === 0) {
+            resultsEl.innerHTML = '<div style="text-align:center;padding:40px;color:#94A3B8;"><div style="font-size:2em;margin-bottom:8px;">😕</div><p>No results found. Try different keywords.</p></div>';
+            return;
+        }
+
+        resultsEl.innerHTML = matches.map(page => {
+            const cat = CATEGORY_COLORS[page.category];
+            const highlightedTitle = highlightTerms(page.title, terms);
+            const snippet = generateSnippet(page.keywords, terms);
+            return `<a href="${page.url}" class="result-card">
+                <div class="result-title">
+                    <span>${page.icon}</span>
+                    <span>${highlightedTitle}</span>
+                    <span class="result-category" style="background:${cat.bg};color:${cat.color};">${cat.label}</span>
+                </div>
+                <div class="result-path">${page.url}</div>
+                <div class="result-snippet">${snippet}</div>
+            </a>`;
+        }).join('');
+    }
+
+    function highlightTerms(text, terms) {
+        let result = text;
+        terms.forEach(term => {
+            const regex = new RegExp(`(${escapeRegex(term)})`, 'gi');
+            result = result.replace(regex, '<mark>$1</mark>');
+        });
+        return result;
+    }
+
+    function generateSnippet(keywords, terms) {
+        const words = keywords.split(/[\s,]+/);
+        const matched = words.filter(w => terms.some(t => w.toLowerCase().includes(t)));
+        const display = matched.length > 0 ? matched.join(', ') : words.slice(0, 8).join(', ');
+        return highlightTerms(display, terms);
+    }
+
+    function escapeRegex(str) {
+        return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function debounce(fn, delay) {
+        let timer;
+        return function() {
+            clearTimeout(timer);
+            timer = setTimeout(() => fn.apply(this, arguments), delay);
+        };
+    }
+
+    // Handle URL search param
+    const urlParams = new URLSearchParams(window.location.search);
+    const q = urlParams.get('q');
+    if (q) {
+        document.getElementById('searchInput').value = q;
+        doSearch();
+    }
+    </script>
+</body>
+
+</html>
