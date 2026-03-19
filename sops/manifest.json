@@ -1,0 +1,19 @@
+{
+  "name": "Digital Heroes SOP Library",
+  "short_name": "DH Library",
+  "description": "SOPs, Training, KRAs, KPIs, and Onboarding for all Digital Heroes roles.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0a0a12",
+  "theme_color": "#8B5CF6",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "education", "productivity"]
+}

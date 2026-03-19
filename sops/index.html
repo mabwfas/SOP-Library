@@ -10,6 +10,12 @@
     <meta property="og:description" content="Centralized SOP library with role-based training, KRAs, KPIs, and onboarding documentation.">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦸</text></svg>">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#8B5CF6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="DH Library">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="admin-mode.css">
     <style>
         :root {
@@ -2068,6 +2074,11 @@
         });
     </script>
     <script src="assets/js/copy-button.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').catch(function () { });
+        }
+    </script>
 </body>
 
 </html>
