@@ -1229,6 +1229,46 @@
 
 
 
+        <!-- What's New Banner -->
+        <div id="whatsNewBanner" style="background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(234,88,12,0.08));border:1px solid rgba(245,158,11,0.25);border-radius:12px;padding:14px 20px;margin-bottom:16px;cursor:pointer;transition:all 0.2s;" onclick="document.getElementById('whatsNewContent').style.display=document.getElementById('whatsNewContent').style.display==='none'?'block':'none';this.querySelector('.wn-arrow').textContent=document.getElementById('whatsNewContent').style.display==='none'?'▸':'▾'">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <span style="font-size:1.1em;">🆕</span>
+                    <span style="color:#F59E0B;font-weight:700;font-size:0.9em;">WHAT'S NEW</span>
+                    <span style="color:#94A3B8;font-size:0.85em;">— March 2026 Updates</span>
+                </div>
+                <span class="wn-arrow" style="color:#F59E0B;font-size:0.9em;">▸</span>
+            </div>
+            <div id="whatsNewContent" style="display:none;margin-top:14px;padding-top:14px;border-top:1px solid rgba(245,158,11,0.15);" onclick="event.stopPropagation()">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;">
+                    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:8px;">
+                        <span>🤖</span>
+                        <div><div style="color:#E2E8F0;font-weight:600;font-size:0.85em;">AI Training — 15 Tasks</div><div style="color:#64748B;font-size:0.75em;">Claude Code, Antigravity, MCP, Custom GPTs, Prompt Engineering</div></div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:8px;">
+                        <span>👥</span>
+                        <div><div style="color:#E2E8F0;font-weight:600;font-size:0.85em;">HR Training — Expanded to 25 Tasks</div><div style="color:#64748B;font-size:0.75em;">Handbook, Salary Structure, Communication, AI Tools, FAQ</div></div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:8px;">
+                        <span>🚀</span>
+                        <div><div style="color:#E2E8F0;font-weight:600;font-size:0.85em;">Start Here — New Joiner Guide</div><div style="color:#64748B;font-size:0.75em;">5-step onboarding path from Day 1 to full team member</div></div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:8px;">
+                        <span>🔍</span>
+                        <div><div style="color:#E2E8F0;font-weight:600;font-size:0.85em;">Global Search</div><div style="color:#64748B;font-size:0.75em;">Search across 70+ pages — SOPs, Training, KRAs, KPIs, Handbook</div></div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:8px;">
+                        <span>📊</span>
+                        <div><div style="color:#E2E8F0;font-weight:600;font-size:0.85em;">My Progress Dashboard</div><div style="color:#64748B;font-size:0.75em;">Track completion, certificates, and stats across all 15 modules</div></div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:8px;padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:8px;">
+                        <span>🌙</span>
+                        <div><div style="color:#E2E8F0;font-weight:600;font-size:0.85em;">Dark Mode + PWA Support</div><div style="color:#64748B;font-size:0.75em;">Dark mode toggle on every page, install as app on mobile</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Global Search + Progress Bar -->
         <div style="display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap;">
             <a href="search.html" style="flex:1;min-width:200px;display:flex;align-items:center;gap:12px;padding:14px 20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:12px;color:#94A3B8;text-decoration:none;font-size:0.95em;transition:all 0.2s;" onmouseover="this.style.borderColor='#3B82F6';this.style.background='rgba(59,130,246,0.1)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.background='rgba(255,255,255,0.05)'">
