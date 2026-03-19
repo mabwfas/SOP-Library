@@ -158,6 +158,9 @@
                     taskId
                 };
 
+                // Track quiz analytics (which questions were wrong)
+                trackQuizAnalytics(moduleId, taskId, quiz, _userAnswers);
+
                 // Call original
                 originalShowResults.call(this);
 
@@ -367,5 +370,34 @@
             }
         `;
         document.head.appendChild(style);
+    }
+
+    /**
+     * Track quiz analytics — records which questions were answered wrong
+     * Stores in localStorage as dhQuizAnalytics = { module: { taskId: { qIndex: { wrong: N, total: N } } } }
+     */
+    function trackQuizAnalytics(moduleId, taskId, quiz, answers) {
+        if (!quiz || !answers) return;
+        try {
+            var analytics = JSON.parse(localStorage.getItem('dhQuizAnalytics') || '{}');
+            if (!analytics[moduleId]) analytics[moduleId] = {};
+            if (!analytics[moduleId][taskId]) analytics[moduleId][taskId] = {};
+
+            quiz.forEach(function(q, idx) {
+                var key = 'q' + idx;
+                if (!analytics[moduleId][taskId][key]) {
+                    analytics[moduleId][taskId][key] = { wrong: 0, total: 0, text: '' };
+                }
+                analytics[moduleId][taskId][key].total++;
+                analytics[moduleId][taskId][key].text = (q.q || q.question || '').substring(0, 80);
+                if (answers[idx] !== q.c) {
+                    analytics[moduleId][taskId][key].wrong++;
+                }
+            });
+
+            localStorage.setItem('dhQuizAnalytics', JSON.stringify(analytics));
+        } catch (e) {
+            // Silently fail — analytics is non-critical
+        }
     }
 })();

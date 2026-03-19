@@ -242,6 +242,12 @@
         <div class="section-title">⬜ Not Started</div>
         <div class="module-grid" id="notStartedGrid"></div>
 
+        <!-- Tough Questions -->
+        <div class="section-title">🧠 Tough Questions</div>
+        <div id="toughQuestionsGrid" style="margin-bottom:30px;">
+            <div style="color:#94A3B8;font-size:0.9em;padding:20px;">Take some quizzes to see which questions trip you up most.</div>
+        </div>
+
         <div class="reset-btn">
             <button onclick="if(confirm('Reset ALL training progress? This cannot be undone.')){Object.keys(localStorage).forEach(k=>{if(k.includes('Training')||k.includes('Progress'))localStorage.removeItem(k)});location.reload();}">🗑️ Reset All Progress</button>
         </div>
@@ -342,6 +348,48 @@
     }
 
     loadProgress();
+    loadToughQuestions();
+
+    function loadToughQuestions() {
+        var raw = localStorage.getItem('dhQuizAnalytics');
+        if (!raw) return;
+        try {
+            var analytics = JSON.parse(raw);
+            var tough = [];
+            // Collect all questions with wrong answers
+            Object.keys(analytics).forEach(function(mod) {
+                Object.keys(analytics[mod]).forEach(function(task) {
+                    Object.keys(analytics[mod][task]).forEach(function(qKey) {
+                        var q = analytics[mod][task][qKey];
+                        if (q.wrong > 0 && q.text) {
+                            tough.push({ module: mod, task: task, text: q.text, wrong: q.wrong, total: q.total, rate: Math.round((q.wrong / q.total) * 100) });
+                        }
+                    });
+                });
+            });
+            // Sort by fail rate descending
+            tough.sort(function(a, b) { return b.rate - a.rate || b.wrong - a.wrong; });
+            // Show top 10
+            tough = tough.slice(0, 10);
+            var el = document.getElementById('toughQuestionsGrid');
+            if (tough.length === 0) return;
+
+            // Module name lookup
+            var modNames = {};
+            MODULES.forEach(function(m) { modNames[m.key.replace('TrainingProgress', '')] = m.name; });
+
+            el.innerHTML = tough.map(function(q, i) {
+                var modName = modNames[q.module] || q.module;
+                return '<div style="background:white;border:1px solid #E2E8F0;border-radius:10px;padding:14px 18px;margin-bottom:8px;display:flex;align-items:flex-start;gap:12px;">' +
+                    '<div style="background:#FEE2E2;color:#991B1B;font-weight:800;font-size:0.8em;padding:4px 10px;border-radius:6px;white-space:nowrap;">' + q.rate + '% fail</div>' +
+                    '<div style="flex:1;">' +
+                        '<div style="font-size:0.9em;color:#1E293B;font-weight:600;">' + q.text + (q.text.length >= 80 ? '...' : '') + '</div>' +
+                        '<div style="font-size:0.75em;color:#94A3B8;margin-top:4px;">' + modName + ' &bull; Task ' + q.task + ' &bull; Wrong ' + q.wrong + '/' + q.total + ' attempts</div>' +
+                    '</div>' +
+                '</div>';
+            }).join('');
+        } catch (e) {}
+    }
     </script>
 </body>
 
