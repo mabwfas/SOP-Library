@@ -1156,6 +1156,39 @@
     </style>
 
     <link rel="stylesheet" href="assets/css/copy-button.css">
+    <style>
+        /* Role Personalization */
+        .welcome-banner {
+            display: none;
+            background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(59,130,246,0.15));
+            border: 1px solid rgba(139,92,246,0.3);
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin-bottom: 20px;
+            animation: fadeSlideIn 0.4s ease;
+        }
+        .welcome-banner.show { display: block; }
+        .welcome-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .welcome-title { color: #E2E8F0; font-weight: 700; font-size: 1.05em; }
+        .welcome-change { background: none; border: 1px solid rgba(255,255,255,0.15); color: #94A3B8; padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 0.8em; }
+        .welcome-change:hover { border-color: #8B5CF6; color: #A78BFA; }
+        .welcome-links { display: flex; gap: 10px; flex-wrap: wrap; }
+        .welcome-links a {
+            display: flex; align-items: center; gap: 6px; padding: 8px 16px;
+            border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.85em;
+            transition: all 0.2s;
+        }
+        .welcome-links a:hover { transform: translateY(-1px); filter: brightness(1.1); }
+        .role-card.my-role { border-color: #8B5CF6 !important; box-shadow: 0 0 20px rgba(139,92,246,0.3) !important; }
+        .role-card.my-role::before {
+            content: '⭐ Your Role';
+            position: absolute; top: -10px; right: 12px;
+            background: #8B5CF6; color: white; font-size: 0.65em; font-weight: 700;
+            padding: 2px 10px; border-radius: 10px;
+        }
+        .role-card { position: relative; }
+        @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
 </head>
 
 <body>
@@ -1206,6 +1239,15 @@
                 <span>📊</span>
                 <span>My Progress</span>
             </a>
+        </div>
+
+        <!-- Welcome Banner (role personalization) -->
+        <div class="welcome-banner" id="welcomeBanner">
+            <div class="welcome-top">
+                <div class="welcome-title" id="welcomeTitle"></div>
+                <button class="welcome-change" onclick="clearMyRole()">Change Role</button>
+            </div>
+            <div class="welcome-links" id="welcomeLinks"></div>
         </div>
 
         <!-- Quick Access Cards -->
@@ -1313,7 +1355,7 @@
 
         <div class="role-grid">
             <!-- Sales -->
-            <div class="role-card">
+            <div class="role-card" data-role="sales">
                 <div class="role-header"><span class="role-icon">💰</span><span class="role-title">Sales</span></div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1331,7 +1373,7 @@
                 </div>
             </div>
             <!-- PM -->
-            <div class="role-card">
+            <div class="role-card" data-role="pm">
                 <div class="role-header"><span class="role-icon">📋</span><span class="role-title">Project
                         Manager</span></div>
                 <div class="role-content">
@@ -1350,7 +1392,7 @@
                 </div>
             </div>
             <!-- Shopify Dev -->
-            <div class="role-card">
+            <div class="role-card" data-role="developer">
                 <div class="role-header"><span class="role-icon">💻</span><span class="role-title">Shopify Dev</span>
                 </div>
                 <div class="role-content">
@@ -1369,7 +1411,7 @@
                 </div>
             </div>
             <!-- Full Stack -->
-            <div class="role-card">
+            <div class="role-card" data-role="fullstack">
                 <div class="role-header"><span class="role-icon">🖥️</span><span class="role-title">Full Stack</span>
                 </div>
                 <div class="role-content">
@@ -1388,7 +1430,7 @@
                 </div>
             </div>
             <!-- Designer -->
-            <div class="role-card">
+            <div class="role-card" data-role="designer">
                 <div class="role-header"><span class="role-icon">🎨</span><span class="role-title">UI/UX Designer</span>
                 </div>
                 <div class="role-content">
@@ -1407,7 +1449,7 @@
                 </div>
             </div>
             <!-- CS -->
-            <div class="role-card">
+            <div class="role-card" data-role="cs">
                 <div class="role-header"><span class="role-icon">🌟</span><span class="role-title">Client Success</span>
                 </div>
                 <div class="role-content">
@@ -1426,7 +1468,7 @@
                 </div>
             </div>
             <!-- HR -->
-            <div class="role-card">
+            <div class="role-card" data-role="hr">
                 <div class="role-header"><span class="role-icon">👥</span><span class="role-title">HR & People</span>
                 </div>
                 <div class="role-content">
@@ -1445,7 +1487,7 @@
                 </div>
             </div>
             <!-- Content -->
-            <div class="role-card">
+            <div class="role-card" data-role="content">
                 <div class="role-header"><span class="role-icon">✍️</span><span class="role-title">Content Writer</span>
                 </div>
                 <div class="role-content">
@@ -1464,7 +1506,7 @@
                 </div>
             </div>
             <!-- Social Media -->
-            <div class="role-card">
+            <div class="role-card" data-role="social-media">
                 <div class="role-header"><span class="role-icon">📱</span><span class="role-title">Social Media</span>
                 </div>
                 <div class="role-content">
@@ -1483,7 +1525,7 @@
                 </div>
             </div>
             <!-- Finance -->
-            <div class="role-card">
+            <div class="role-card" data-role="finance">
                 <div class="role-header"><span class="role-icon">💵</span><span class="role-title">Finance</span></div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1502,7 +1544,7 @@
             </div>
 
             <!-- Daily Routine -->
-            <div class="role-card">
+            <div class="role-card" data-role="daily">
                 <div class="role-header"><span class="role-icon">☀️</span><span class="role-title">Daily Routine</span>
                 </div>
                 <div class="role-content">
@@ -1521,7 +1563,7 @@
                 </div>
             </div>
             <!-- Client Chat -->
-            <div class="role-card">
+            <div class="role-card" data-role="client-chat">
                 <div class="role-header"><span class="role-icon">💬</span><span class="role-title">Chat Sim</span></div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -1539,7 +1581,7 @@
                 </div>
             </div>
             <!-- Fiverr Risk Manager -->
-            <div class="role-card">
+            <div class="role-card" data-role="fiverr-risk">
                 <div class="role-header"><span class="role-icon">🛡️</span><span class="role-title">Fiverr Risk
                         Mgr</span></div>
                 <div class="role-content">
@@ -1557,7 +1599,7 @@
                 </div>
             </div>
             <!-- Operations -->
-            <div class="role-card">
+            <div class="role-card" data-role="operations">
                 <div class="role-header"><span class="role-icon">🔄</span><span class="role-title">Operations</span></div>
                 <div class="role-content">
                     <ul class="role-details">
@@ -2078,6 +2120,69 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js').catch(function () { });
         }
+    </script>
+    <script>
+    /* Role-based homepage personalization */
+    (function() {
+        var ROLES = {
+            sales:        { title: 'Sales Associate',     icon: '💰', sop: 'sales-sop.html', kra: 'kra/sales-kra.html', kpi: 'kpi/sales-kpi.html', dts: 'dts/sales-dts.html', training: 'training/sales-training.html' },
+            pm:           { title: 'Project Manager',     icon: '📋', sop: 'pm-sop.html', kra: 'kra/pm-kra.html', kpi: 'kpi/pm-kpi.html', dts: 'dts/pm-dts.html', training: 'training/pm-training.html' },
+            developer:    { title: 'Shopify Developer',   icon: '💻', sop: 'developer-sop.html', kra: 'kra/developer-kra.html', kpi: 'kpi/developer-kpi.html', dts: 'dts/developer-dts.html', training: 'training/developer-training.html' },
+            fullstack:    { title: 'Full Stack Developer', icon: '🖥️', sop: 'fullstack-sop.html', kra: 'kra/fullstack-kra.html', kpi: 'kpi/fullstack-kpi.html', dts: 'dts/fullstack-dts.html', training: 'training/fullstack-training.html' },
+            designer:     { title: 'UI/UX Designer',      icon: '🎨', sop: 'designer-sop.html', kra: 'kra/designer-kra.html', kpi: 'kpi/designer-kpi.html', dts: 'dts/designer-dts.html', training: 'training/designer-training.html' },
+            cs:           { title: 'Client Success',      icon: '🌟', sop: 'cs-sop.html', kra: 'kra/cs-kra.html', kpi: 'kpi/cs-kpi.html', dts: 'dts/cs-dts.html', training: 'training/cs-training.html' },
+            hr:           { title: 'HR & People',         icon: '👥', sop: 'hr-sop.html', kra: 'kra/hr-kra.html', kpi: 'kpi/hr-kpi.html', dts: 'dts/hr-dts.html', training: 'training/hr-training.html' },
+            content:      { title: 'Content Writer',      icon: '✍️', sop: 'content-sop.html', kra: 'kra/content-kra.html', kpi: 'kpi/content-kpi.html', dts: 'dts/content-dts.html', training: 'training/content-training.html' },
+            'social-media': { title: 'Social Media',      icon: '📱', sop: 'social-media-sop.html', kra: 'kra/social-media-kra.html', kpi: 'kpi/social-media-kpi.html', dts: 'dts/social-media-dts.html', training: 'training/social-media-training.html' },
+            finance:      { title: 'Finance',             icon: '💵', sop: 'finance-sop.html', kra: 'kra/finance-kra.html', kpi: 'kpi/finance-kpi.html', dts: 'dts/finance-dts.html', training: 'training/finance-training.html' },
+            'fiverr-risk': { title: 'Fiverr Risk Manager', icon: '🛡️', sop: 'fiverr-risk-sop.html', kra: 'kra/fiverr-risk-kra.html', kpi: 'kpi/fiverr-risk-kpi.html', training: 'training/fiverr-risk-training.html' },
+            'client-chat': { title: 'Client Chat',        icon: '💬', sop: 'client-chat-sop.html', training: 'training/client-chat-training.html' },
+            operations:   { title: 'Operations',          icon: '🔄', training: 'training/operations-training.html' }
+        };
+
+        function applyRole(role) {
+            var info = ROLES[role];
+            if (!info) return;
+            // Show welcome banner
+            var banner = document.getElementById('welcomeBanner');
+            var title = document.getElementById('welcomeTitle');
+            var links = document.getElementById('welcomeLinks');
+            title.textContent = info.icon + ' Welcome back, ' + info.title + '!';
+            var html = '';
+            if (info.sop) html += '<a href="' + info.sop + '" style="background:rgba(16,185,129,0.15);color:#10B981;border:1px solid rgba(16,185,129,0.3);">📋 My SOP</a>';
+            if (info.kra) html += '<a href="' + info.kra + '" style="background:rgba(139,92,246,0.15);color:#A78BFA;border:1px solid rgba(139,92,246,0.3);">🎯 My KRA</a>';
+            if (info.kpi) html += '<a href="' + info.kpi + '" style="background:rgba(245,158,11,0.15);color:#F59E0B;border:1px solid rgba(245,158,11,0.3);">📊 My KPI</a>';
+            if (info.dts) html += '<a href="' + info.dts + '" style="background:rgba(239,68,68,0.15);color:#EF4444;border:1px solid rgba(239,68,68,0.3);">📅 My DTS</a>';
+            if (info.training) html += '<a href="' + info.training + '" style="background:rgba(59,130,246,0.15);color:#3B82F6;border:1px solid rgba(59,130,246,0.3);">🎓 My Training</a>';
+            links.innerHTML = html;
+            banner.classList.add('show');
+            // Highlight role card
+            document.querySelectorAll('.role-card[data-role]').forEach(function(c) { c.classList.remove('my-role'); });
+            var card = document.querySelector('.role-card[data-role="' + role + '"]');
+            if (card) card.classList.add('my-role');
+        }
+
+        window.clearMyRole = function() {
+            localStorage.removeItem('dhMyRole');
+            document.getElementById('welcomeBanner').classList.remove('show');
+            document.querySelectorAll('.role-card[data-role]').forEach(function(c) { c.classList.remove('my-role'); });
+        };
+
+        // Click on role card to save preference
+        document.querySelectorAll('.role-card[data-role]').forEach(function(card) {
+            card.addEventListener('click', function(e) {
+                // Don't intercept actual link clicks
+                if (e.target.tagName === 'A' || e.target.closest('a')) return;
+                var role = card.getAttribute('data-role');
+                localStorage.setItem('dhMyRole', role);
+                applyRole(role);
+            });
+        });
+
+        // Load saved role on page load
+        var saved = localStorage.getItem('dhMyRole');
+        if (saved && ROLES[saved]) applyRole(saved);
+    })();
     </script>
 </body>
 
