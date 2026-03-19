@@ -31,6 +31,33 @@
         }
     };
 
+    // Dark mode toggle
+    window.toggleDarkMode = function () {
+        var isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('dhDarkMode', isDark ? '1' : '0');
+        var btn = document.getElementById('darkModeBtn');
+        if (btn) btn.textContent = isDark ? '☀️ Light' : '🌙 Dark';
+    };
+
+    // Apply saved dark mode preference
+    if (localStorage.getItem('dhDarkMode') === '1') {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Auto-inject dark mode button into sidebar print button area
+    document.addEventListener('DOMContentLoaded', function () {
+        var printBtn = document.querySelector('.print-btn');
+        if (printBtn && !document.getElementById('darkModeBtn')) {
+            var btn = document.createElement('button');
+            btn.id = 'darkModeBtn';
+            btn.className = 'print-btn';
+            btn.onclick = window.toggleDarkMode;
+            btn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light' : '🌙 Dark';
+            btn.style.marginTop = '-5px';
+            printBtn.parentNode.insertBefore(btn, printBtn.nextSibling);
+        }
+    });
+
     // Click outside to close sidebar on mobile
     document.addEventListener('click', function (event) {
         var sidebar = document.querySelector('.sidebar');
