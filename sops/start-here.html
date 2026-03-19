@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Start Here</title>
+    <meta name="description" content="Your first 5 steps at Digital Heroes — from welcome videos to becoming a full team member.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shared-layout.css">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #F59E0B;
+            --accent-glow: rgba(245, 158, 11, 0.4);
+            --bg-sidebar: #0F172A;
+            --text-sidebar: #E2E8F0;
+            --border: #E2E8F0;
+        }
+
+        body {
+            background: #f5f7fa;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            color: #1E293B;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            padding: 50px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .page-header h1 {
+            font-size: 2.5em;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+        }
+
+        .page-header p {
+            color: #94A3B8;
+            font-size: 1.15em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .steps-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .step-card {
+            background: white;
+            border-radius: 16px;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            padding: 35px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .step-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85em;
+            margin-bottom: 16px;
+        }
+
+        .step-card h2 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            color: #0F172A;
+        }
+
+        .step-card > p {
+            color: #475569;
+            line-height: 1.7;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid #F1F5F9;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+
+        .checklist li::before {
+            content: '';
+            display: none;
+        }
+
+        .check-icon {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7em;
+            margin-top: 2px;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95em;
+            color: white;
+            transition: all 0.2s;
+            margin-right: 10px;
+            margin-bottom: 8px;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .video-slot {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #0F172A;
+        }
+
+        .video-slot iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-label {
+            text-align: center;
+            font-size: 0.85em;
+            color: #64748B;
+            margin-top: 6px;
+        }
+
+        .tip-box {
+            background: #FFFBEB;
+            border: 1px solid #FDE68A;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+            color: #92400E;
+        }
+
+        .info-box {
+            background: #EFF6FF;
+            border: 1px solid #BFDBFE;
+            border-radius: 10px;
+            padding: 16px 20px;
+            font-size: 0.9em;
+            color: #1E40AF;
+        }
+
+        .step-connector {
+            width: 3px;
+            height: 30px;
+            background: linear-gradient(to bottom, #E2E8F0, #CBD5E1);
+            margin: 0 auto;
+        }
+
+        .final-message {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #0F172A, #1E293B);
+            border-radius: 16px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .final-message h2 {
+            color: #F59E0B;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .final-message p {
+            color: #94A3B8;
+            font-size: 1.1em;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #94A3B8;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+
+        .back-link:hover {
+            color: white;
+        }
+
+        @media (max-width: 640px) {
+            .page-header h1 { font-size: 1.8em; }
+            .step-card { padding: 24px; }
+            .video-grid { grid-template-columns: 1fr; }
+            .steps-container { padding: 24px 16px 40px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-header">
+        <a href="index.html" class="back-link">⬅️ Back to Library</a>
+        <div style="font-size: 3em; margin-bottom: 12px;">🚀</div>
+        <h1>Start Here</h1>
+        <p>Welcome to Digital Heroes! Follow these 5 steps to go from new joiner to full team member.</p>
+    </div>
+
+    <div class="steps-container">
+
+        <!-- STEP 1 -->
+        <div class="step-card">
+            <div class="step-badge" style="background: #FEF3C7; color: #92400E;">🎬 Step 1</div>
+            <h2>Watch, Read & Explore</h2>
+            <p>Get to know Digital Heroes — who we are, how we work, and where everything lives. These two videos walk you through the company, the Employee Handbook, and how to navigate the SOP Library.</p>
+
+            <div class="video-grid">
+                <div>
+                    <div class="video-slot">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER_VIDEO_1" title="Welcome to Digital Heroes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-label">🎥 Welcome to Digital Heroes</div>
+                </div>
+                <div>
+                    <div class="video-slot">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER_VIDEO_2" title="Navigating the SOP Library" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-label">🎥 Navigating the SOP Library</div>
+                </div>
+            </div>
+
+            <ul class="checklist">
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">✓</span>
+                    <span>Watch both welcome videos above to understand our company culture and values</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">✓</span>
+                    <span>Read the <a href="employee-handbook.html" style="color: #F59E0B; font-weight: 600;">Employee Handbook</a> — covers work culture, leave policies, WFH rules, and 60+ FAQs</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">✓</span>
+                    <span>Explore the <a href="index.html" style="color: #F59E0B; font-weight: 600;">SOP Library</a> — find your role's SOP, KRA, KPI, and DTS pages</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">✓</span>
+                    <span>Browse the <a href="onboarding.html" style="color: #F59E0B; font-weight: 600;">Onboarding Hub</a> — role-specific Day 1 guides and tool setup</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">✓</span>
+                    <span>Go through <a href="training/ai-training.html" style="color: #F59E0B; font-weight: 600;">AI Training</a> — learn Claude Code, MCP servers, and AI tools we use every day</span>
+                </li>
+            </ul>
+
+            <div class="tip-box">
+                <strong>💡 Tip:</strong> Don't rush this step. Spend a full day reading through your role's SOP and the handbook. The better you understand how DH works, the faster you'll start contributing.
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- STEP 2 -->
+        <div class="step-card">
+            <div class="step-badge" style="background: #DBEAFE; color: #1E40AF;">🎓 Step 2</div>
+            <h2>Complete Your Role Training & Get Certified</h2>
+            <p>Every role at DH has a dedicated training program with lessons, quizzes, and a certificate. You must score 100% on every quiz to unlock your certificate — this proves you've mastered the fundamentals.</p>
+
+            <ul class="checklist">
+                <li>
+                    <span class="check-icon" style="background: #DBEAFE; color: #1E40AF;">✓</span>
+                    <span>Go to the <a href="https://library.digitalheroes.co.in/training-hub.html" style="color: #3B82F6; font-weight: 600;">Training Hub</a> and find your role's training module</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #DBEAFE; color: #1E40AF;">✓</span>
+                    <span>Complete all tasks and pass every quiz with a perfect score</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #DBEAFE; color: #1E40AF;">✓</span>
+                    <span>Download your certificate once all tasks are complete</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #DBEAFE; color: #1E40AF;">✓</span>
+                    <span>Share your certificate with us — email it to <strong>hr@digitalheroes.co.in</strong></span>
+                </li>
+            </ul>
+
+            <a href="https://library.digitalheroes.co.in/training-hub.html" class="action-btn" style="background: linear-gradient(135deg, #3B82F6, #2563EB);">🎓 Open Training Hub</a>
+
+            <div class="info-box" style="margin-top: 16px;">
+                <strong>ℹ️ Note:</strong> If you fail a quiz, review the material and retry. There's no limit on attempts — take your time and learn the content properly.
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- STEP 3 -->
+        <div class="step-card">
+            <div class="step-badge" style="background: #D1FAE5; color: #065F46;">📝 Step 3</div>
+            <h2>Complete Your Practical Assignment</h2>
+            <p>Now it's time to prove your skills with a hands-on task. Every role has a practical assignment that simulates real DH work — complete it and submit through the form.</p>
+
+            <ul class="checklist">
+                <li>
+                    <span class="check-icon" style="background: #D1FAE5; color: #065F46;">✓</span>
+                    <span>Check with your reporting manager or HR for your role-specific practical assignment</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #D1FAE5; color: #065F46;">✓</span>
+                    <span>Complete the assignment within the given deadline (usually 24–72 hours)</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #D1FAE5; color: #065F46;">✓</span>
+                    <span>Submit your work through the submission form provided with the assignment</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #D1FAE5; color: #065F46;">✓</span>
+                    <span>Your submission will be reviewed and scored — top performers get priority for higher stipend brackets</span>
+                </li>
+            </ul>
+
+            <div class="tip-box">
+                <strong>💡 Tip:</strong> Treat this like a real client project. Attention to detail, meeting the deadline, and going the extra mile will set you apart from other candidates.
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- STEP 4 -->
+        <div class="step-card">
+            <div class="step-badge" style="background: #EDE9FE; color: #5B21B6;">📄 Step 4</div>
+            <h2>Submit Your Documents & Stipend Details</h2>
+            <p>Almost there! Fill out the stipend form, attach your training certificate, and submit all required joining documents to HR.</p>
+
+            <ul class="checklist">
+                <li>
+                    <span class="check-icon" style="background: #EDE9FE; color: #5B21B6;">✓</span>
+                    <span>Fill out the stipend details form (bank account, PAN, Aadhaar details)</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #EDE9FE; color: #5B21B6;">✓</span>
+                    <span>Attach your training certificate (downloaded in Step 2)</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #EDE9FE; color: #5B21B6;">✓</span>
+                    <span>Email everything to <a href="mailto:hr@digitalheroes.co.in" style="color: #7C3AED; font-weight: 600;">hr@digitalheroes.co.in</a> with subject: <strong>"Joining Docs — [Your Name] — [Role]"</strong></span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #EDE9FE; color: #5B21B6;">✓</span>
+                    <span>HR will confirm receipt and share your official start date and team assignments</span>
+                </li>
+            </ul>
+
+            <div class="info-box" style="background: #F5F3FF; border-color: #C4B5FD; color: #5B21B6;">
+                <strong>📋 Documents Checklist:</strong> Resume, Aadhaar Card (front & back), PAN Card, Bank passbook/cancelled cheque, Passport-size photo, Training certificate, Signed offer letter.
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- STEP 5 -->
+        <div class="step-card" style="border-color: #F59E0B; border-width: 2px;">
+            <div class="step-badge" style="background: linear-gradient(135deg, #F59E0B, #D97706); color: white;">🤝 Step 5</div>
+            <h2>Join the Mission — You're One of Us Now</h2>
+            <p>You're not just an employee — you're a Digital Hero. We're a team of builders, creators, and problem-solvers working toward one goal: <strong>helping businesses grow through world-class digital experiences.</strong></p>
+
+            <ul class="checklist">
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">🔥</span>
+                    <span><strong>Join your team's daily standup</strong> — share what you're working on, ask questions, and stay aligned with the team</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">💬</span>
+                    <span><strong>Introduce yourself on the team group</strong> — tell everyone who you are, your role, and one fun fact about yourself</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">🎯</span>
+                    <span><strong>Set your first week goals</strong> with your reporting manager — know exactly what success looks like in Week 1</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">🤝</span>
+                    <span><strong>Find your buddy</strong> — every new joiner gets paired with an experienced team member who'll help you get up to speed</span>
+                </li>
+                <li>
+                    <span class="check-icon" style="background: #FEF3C7; color: #92400E;">🚀</span>
+                    <span><strong>Start shipping</strong> — pick up your first task, deliver quality work, and earn your stripes. At DH, we respect people who execute.</span>
+                </li>
+            </ul>
+
+            <div class="final-message" style="margin-top: 24px;">
+                <div style="font-size: 2.5em; margin-bottom: 12px;">🦸</div>
+                <h2>Welcome to Digital Heroes</h2>
+                <p>Every person on this team started exactly where you are right now. The people who grow the fastest are the ones who ask questions, ship work, and treat every task like it matters — because it does.</p>
+                <p style="margin-top: 16px; color: #F59E0B; font-weight: 700; font-size: 1.2em;">"We don't just build websites. We build careers."</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; padding: 30px; color: #94A3B8; font-size: 0.85em;">
+        <p><a href="index.html" style="color: #F59E0B; text-decoration: none; font-weight: 600;">← Back to SOP Library</a></p>
+        <p style="margin-top: 8px;">Digital Heroes — Internal Use Only</p>
+    </div>
+</body>
+
+</html>
