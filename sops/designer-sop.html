@@ -573,8 +573,458 @@
                 style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
 
-        <!-- ONBOARDING SIDEBAR LINKS -->
-        
+    </aside>
+
+    <div class="main-content">
+        <div id="content-sop" class="view-section">
+            <div class="container">
+                <header class="header">
+                    <h1>🎨 UI/UX Designer SOP</h1>
+                    <p class="subtitle">Premium Design, Brand Styling & Conversion Optimization</p>
+                    <div class="badge-row">
+                        <span class="badge">✨ Premium Aesthetics</span>
+                        <span class="badge">📱 Mobile-First</span>
+                        <span class="badge">💰 🎯 Conversion-Focused</span>
+                        <span class="badge">⭐ 4.9★ Client Satisfaction</span>
+                    </div>
+                </header>
+
+                <div id="searchResults"
+                    style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                    <div id="resultsList"></div>
+                    <button onclick="clearSearch()"
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                        Search</button>
+                </div>
+
+                <script>
+                    function searchSOP() {
+                        const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                        const sections = document.querySelectorAll('.section, .critical-alert');
+                        const resultsDiv = document.getElementById('searchResults');
+                        if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
+                        let matches = [];
+                        sections.forEach(section => {
+                            const text = section.textContent.toLowerCase();
+                            if (text.includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--pink)'; matches.push(section); }
+                            else { section.style.display = 'none'; section.style.border = 'none'; }
+                        });
+                        document.getElementById('resultCount').textContent = matches.length;
+                        resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+                    }
+                    function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
+                </script>
+
+                <nav class="nav-section" style="display:none;">
+                    <a href="#trust">Trust Elements</a>
+                    <a href="#mobile">🎨 Mobile Design</a>
+                    <a href="#checklist">QA Checklist</a>
+                    <a href="#chatgpt">ChatGPT Guide</a>
+            </div>
+            </nav>
+
+            <div id="searchResults"
+                style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                <h3 style="margin-bottom: 15px;">🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                <div id="resultsList"></div>
+                <button onclick="clearSearch()"
+                    style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                    Search</button>
+            </div>
+
+            <script>
+                function searchSOP() {
+                    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                    const sections = document.querySelectorAll('.section, .critical-alert');
+                    const resultsDiv = document.getElementById('searchResults');
+                    const resultsList = document.getElementById('resultsList');
+                    const resultCount = document.getElementById('resultCount');
+                    if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
+                    let matches = [];
+                    sections.forEach(section => {
+                        const text = section.textContent.toLowerCase();
+                        const header = section.querySelector('h2, h3');
+                        if (text.includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--pink)'; if (header) matches.push({ title: header.textContent.substring(0, 50), element: section }); }
+                        else { section.style.display = 'none'; section.style.border = 'none'; }
+                    });
+                    resultCount.textContent = matches.length;
+                    resultsList.innerHTML = matches.map((m, i) => `<div style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 8px; cursor: pointer;" onclick="document.querySelectorAll('.section, .critical-alert')[${i}].scrollIntoView({behavior:'smooth'})">${m.title}</div>`).join('');
+                    resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+                }
+                function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section, .critical-alert').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
+            </script>
+
+            <!-- CULTURE: WELCOME TO DIGITAL HEROES -->
+            <div class="content-section"
+                style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes — You Are Part of Something
+                    Bigger</h3>
+                <p>Before we dive into design principles, you need to understand something critical: <strong>You are not
+                        just joining a company. You are joining a mission.</strong></p>
+                <div class="highlight-box"
+                    style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+                    <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+                    <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+                        <tr style="background: rgba(59, 130, 246, 0.2);">
+                            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A
+                                    (Now):</strong> ₹9.2 Crores</td>
+                            <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B
+                                    (2027):</strong> ₹75 Crores</td>
+                        </tr>
+                    </table>
+                    <p style="margin: 0;">Every team member contributes to this journey, and every team member benefits
+                        from it through our equity-sharing model—<strong>even interns from Day 1</strong>.</p>
+                </div>
+            </div>
+
+            <!-- CULTURE: THE INTERCONNECTED CHAIN -->
+            <div class="content-section"
+                style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(244, 114, 182, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                <h3 style="color: #F472B6; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+                <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link is
+                    equally critical:</p>
+                <div
+                    style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+                    <p style="margin: 0;">
+                        <strong style="color: #FBBF24;">Sales</strong> → brings in clients<br>
+                        ↓<br>
+                        <strong style="color: #F472B6; font-size: 1.2em;">⭐ YOU (Design)</strong> → <strong>THE VISUAL
+                            ARCHITECT — create designs that convert visitors into customers</strong><br>
+                        ↓<br>
+                        <strong style="color: #8B5CF6;">Development</strong> → brings designs to life<br>
+                        ↓<br>
+                        <strong style="color: #34D399;">Client Satisfaction</strong> → creates happy customers<br>
+                        ↓<br>
+                        <strong style="color: #60A5FA;">CS Team</strong> → protects satisfaction<br>
+                        ↓<br>
+                        <strong style="color: #A78BFA;">5-Star Reviews</strong> → boost algorithm positioning<br>
+                        ↓<br>
+                        <strong style="color: #FBBF24;">More Organic Enquiries</strong> → the cycle amplifies
+                    </p>
+                </div>
+                <div class="highlight-box"
+                    style="background: rgba(236, 72, 153, 0.15); border-left: 4px solid #EC4899; padding: 15px; margin: 15px 0;">
+                    <strong style="color: #F472B6;">🎨 Your Critical Role:</strong>
+                    <p style="margin: 10px 0 0 0;">As a designer, you are the <strong>VISUAL ARCHITECT</strong> who
+                        shapes the first impression every client's customer will ever have. Your designs don't just look
+                        beautiful — they convert visitors into buyers, build brand credibility, and set Digital Heroes
+                        apart from every template-slapping agency. Without your creative vision, development has nothing
+                        meaningful to build, and clients have nothing that stands out. Every pixel you craft moves us
+                        closer to our ₹75 Crore goal.</p>
+                </div>
+                <p style="color: #F472B6; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">Bad
+                    design = lost conversions = lost revenue = chain breaks. YOUR creativity powers the visual engine.
+                </p>
+            </div>
+
+            <!-- Opening Story -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">📖</div>
+                    <h2>🎨 The $50,000 Difference in Design</h2>
+                </div>
+
+                <div class="story-box">
+                    <h4>Two Stores, Same Products, Wildly Different Results</h4>
+                    <p>Two skincare brands launched in the same month. Same products. Same prices. Same marketing
+                        budget.
+                    </p>
+
+                    <p><strong>Store A:</strong> Basic template, default fonts, stock images, cluttered layout. Looked
+                        like every other store.</p>
+
+                    <p><strong>Store B:</strong> Custom color palette, premium typography, lifestyle photography,
+                        generous whitespace, trust badges strategically placed.</p>
+
+                    <p><strong>Results after 30 days:</strong></p>
+                    <ul style="margin: 15px 0 15px 20px;">
+                        <li>Store A: 0.8% conversion rate, $2,50,000 revenue</li>
+                        <li>Store B: 3.2% conversion rate, $10,50,000 revenue</li>
+                    </ul>
+
+                    <p>The ONLY difference? Design quality. Same traffic turned into 4x more revenue.</p>
+
+                    <div class="moral">
+                        <strong>🎯 The Lesson:</strong> Design isn't decoration — it's the difference between visitors
+                        leaving or buying. A "pretty" design that doesn't convert is worthless. A conversion-focused
+                        design that looks premium? That's what generates revenue.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Principles -->
+            <section class="critical-alert" id="principles">
+                <h2>🎨 THE 5 LAWS OF PREMIUM DESIGN</h2>
+
+                <div class="highlight-box">
+                    <h3 style="margin-bottom: 15px;">1. WHITESPACE = LUXURY</h3>
+                    <p>Crowded = cheap. Breathing room = premium. When in doubt, add more space.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">2. CONSISTENCY IS KING</h3>
+                    <p>Same fonts, same colors, same button styles, same spacing — EVERYWHERE. Inconsistency = amateur.
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">3. HIERARCHY GUIDES THE EYE</h3>
+                    <p>Most important = biggest and first. Guide users to what matters. Don't make them think.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">4. MOBILE FIRST, ALWAYS</h3>
+                    <p>70% of traffic is mobile. Design for 375px width FIRST, then scale up to desktop.</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 15px;">5. DESIGN FOR CONVERSION, NOT AWARDS</h3>
+                    <p>A beautiful store that doesn't sell is a failure. Every design decision should answer: "Will this
+                        help visitors buy?"</p>
+                </div>
+            </section>
+
+            <!-- QUALITY STANDARDS & CREATIVE OWNERSHIP -->
+            <section class="critical-alert" id="quality"
+                style="background: linear-gradient(135deg, #BE185D 0%, #9D174D 100%);">
+                <h2>🎨 CREATIVE OWNERSHIP & QUALITY STANDARDS</h2>
+
+                <div class="highlight-box" style="background: rgba(255,255,255,0.15);">
+                    <h3 style="margin-bottom: 15px;">✅ You Own Your Work 100%</h3>
+                    <p style="font-size: 1.1em;">You are <strong>100% responsible</strong> for the quality of your
+                        designs:</p>
+                    <ul style="margin-top: 15px; line-height: 1.8;">
+                        <li><strong>Colors</strong> — Your choice, your responsibility</li>
+                        <li><strong>Typography</strong> — Your choice, your responsibility</li>
+                        <li><strong>Layouts</strong> — Your choice, your responsibility</li>
+                        <li><strong>Imagery</strong> — Your choice, your responsibility</li>
+                        <li><strong>Overall aesthetic</strong> — Your choice, your responsibility</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Goal: OVERDELIVER — exceed expectations, don't just meet
+                            them.</strong></p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px; background: rgba(220, 38, 38, 0.4);">
+                    <h3 style="margin-bottom: 10px;">⚠️ Zero Tolerance Policy</h3>
+                    <p><strong>After 15 days of onboarding:</strong> ONE careless mistake on a live design = potential
+                        removal from client work.</p>
+                    <ul style="margin-top: 10px; line-height: 1.8;">
+                        <li>No typos in hero text</li>
+                        <li>No broken images</li>
+                        <li>No misaligned elements</li>
+                        <li>No inconsistent spacing</li>
+                        <li>Check your work <strong>10x</strong> before delivery</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h3 style="margin-bottom: 10px;">👥 Peer Review Process</h3>
+                    <p>Before major deliveries, get <strong>another designer</strong> to review:</p>
+                    <ul style="margin-top: 10px;">
+                        <li>Fresh eyes catch what you missed</li>
+                        <li>Share design feedback across team</li>
+                        <li>Two designers are better than one</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- What Premium Looks Like -->
+            <section class="section">
+                <div class="section-header">
+                    <div class="section-number">⭐</div>
+                    <h2>🎨 What Makes Design "Premium"</h2>
+                </div>
+
+                <div class="comparison-grid">
+                    <div class="comparison-card bad">
+                        <h4>🎨 ❌ Cheap / Amateur Design</h4>
+                        <ul class="styled-list cross-list">
+                            <li>Crowded layouts with no breathing room</li>
+                            <li>Inconsistent fonts (3+ font families)</li>
+                            <li>Bright, clashing colors</li>
+                            <li>Stock images that look generic</li>
+                            <li>Tiny text that's hard to read</li>
+                            <li>Buttons that look like 2005</li>
+                            <li>No visual hierarchy</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-card good">
+                        <h4>🎨 ✅ Premium Design</h4>
+                        <ul class="styled-list check-list">
+                            <li>Generous whitespace between elements</li>
+                            <li>2 font families maximum (heading + body)</li>
+                            <li>Curated, harmonious color palette</li>
+                            <li>High-quality lifestyle/product imagery</li>
+                            <li>Readable text (16px+ body minimum)</li>
+                            <li>Modern buttons with hover states</li>
+                            <li>Clear visual hierarchy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="warning-story">
+                    <h4>The Client Who Wanted "MORE"</h4>
+                    <p>A client once insisted on adding more elements to their homepage: more colors, more animations,
+                        more sections, more products. "The more content, the better!" they said.</p>
+                    <p>We explained: More isn't better. Clarity is better.</p>
+                    <p>They insisted. We compromised. The cluttered design launched.</p>
+                    <p>Result: 0.9% conversion rate. Visitors couldn't find what they wanted. Too many choices = no
+                        choice.
+                    </p>
+                    <p>We redesigned with half the elements, double the whitespace. Conversion jumped to 2.8%.</p>
+                    <div class="lesson">
+                        <strong>🎯 The Lesson:</strong> Your job is to guide the client to what WORKS, not what they
+                        "feel"
+                        like. Data beats opinions. Less almost always converts more.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brand Styling -->
+            <section class="section" id="brand-styling">
+                <div class="section-header">
+                    <div class="section-number">1</div>
+                    <h2>Brand Styling Process</h2>
+                </div>
+
+                <h3>Step 1: Gather Brand Assets</h3>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Asset</th>
+                            <th>What to Request</th>
+                            <th>If Not Provided</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Logo</strong></td>
+                            <td>PNG with transparency, SVG if available</td>
+                            <td>Flag to PM — cannot proceed without logo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Brand Colors</strong></td>
+                            <td>Hex codes for primary, secondary, accent</td>
+                            <td>Extract from logo or create complementary palette</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fonts</strong></td>
+                            <td>Font names or brand guidelines</td>
+                            <td>Suggest Google Fonts based on brand vibe</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reference Stores</strong></td>
+                            <td>3 stores they love (and why)</td>
+                            <td>Ask what "vibe" they want (minimal, bold, playful)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Product Images</strong></td>
+                            <td>High-res, consistent style, lifestyle shots</td>
+                            <td>Use best available, recommend AI enhancement</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Step 2: Create Color Scheme</h3>
+
+                <div class="info-box pink">
+                    <h4>🎨 Color Psychology in E-commerce</h4>
+                    <ul class="styled-list">
+                        <li><strong>Black/White/Gold:</strong> Luxury, premium, high-end products</li>
+                        <li><strong>Blue:</strong> Trust, reliability, technology, healthcare</li>
+                        <li><strong>Green:</strong> Natural, organic, wellness, sustainability</li>
+                        <li><strong>Pink/Purple:</strong> Beauty, feminine, creative, wellness</li>
+                        <li><strong>Orange/Red:</strong> Energy, urgency, sales, food</li>
+                    </ul>
+                </div>
+
+                <h4>Standard Color Structure</h4>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Color Role</th>
+                            <th>Usage</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Primary</strong></td>
+                            <td>Buttons, links, key CTAs</td>
+                            <td>#1E3A5F (Deep blue)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secondary</strong></td>
+                            <td>Accents, hover states, secondary buttons</td>
+                            <td>#3D6B99 (Lighter blue)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Background</strong></td>
+                            <td>Page background, cards</td>
+                            <td>#FFFFFF or #F8F9FA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Text</strong></td>
+                            <td>Body text, headings</td>
+                            <td>#212529 (Not pure black)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Muted</strong></td>
+                            <td>Borders, dividers, disabled states</td>
+                            <td>#E0E0E0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Typography -->
+            <section class="section" id="typography">
+                <div class="section-header">
+                    <div class="section-number">2</div>
+                    <h2>Typography System</h2>
+                </div>
+
+                <div class="info-box gold">
+                    <h4>🔤 The 2-Font Rule</h4>
+                    <p>Maximum 2 font families per store. More = amateur, slower load times, visual chaos.</p>
+                    <p><strong>Formula:</strong> 1 distinctive heading font + 1 clean body font</p>
+                </div>
+
+                <h3>Recommended Font Pairings</h3>
+
+                <div class="font-showcase">
+                    <div class="font-example">
+                        <div class="font-name">LUXURY / HIGH-END</div>
+                        <div class="font-sample" style="font-family: Playfair Display, serif;">Playfair Display</div>
+                        <div class="font-sample" style="font-family: Lato, sans-serif; font-size: 1.1em;">+ Lato for
+                            body text</div>
+                    </div>
+
+                    <div class="font-example">
+                        <div class="font-name">MODERN / TECH</div>
+                        <div class="font-sample" style="font-family: Poppins, sans-serif;">Poppins</div>
+                        <div class="font-sample" style="font-family: Inter, sans-serif; font-size: 1.1em;">+ Inter for
+                            body text</div>
+                    </div>
+
+                    <div class="font-example">
+                        <div class="font-name">CLEAN / MINIMAL</div>
+                        <div class="font-sample" style="font-family: Outfit, sans-serif;">Outfit</div>
+                        <div class="font-sample" style="font-family: Open Sans, sans-serif; font-size: 1.1em;">+ Open
+                            Sans for body text</div>
+                    </div>
+
+                    <div class="font-example">
+                        <div class="font-name">FRIENDLY / APPROACHABLE</div>
+                        <div class="font-sample" style="font-family: Nunito, sans-serif;">Nunito</div>
+                        <div class="font-sample" style="font-family: Roboto, sans-serif; font-size: 1.1em;">+ Roboto for
+                            body text</div>
+                    </div>
+                </div>
 
                 <h3>Font Size Hierarchy</h3>
 
@@ -1753,25 +2203,21 @@
             </div>
         </div>
     </div>
+    </div> <!-- End main-content -->
     <script src="admin-mode.js"></script>
 
     
     <script>
         function switchView(viewName) {
-            history.pushState(null, null, '#' + viewName);
-            const sections = ['sop', 'assets'];
-            sections.forEach(section => {
-                const contentEl = document.getElementById('content-' + section);
-                const sidebarEl = document.getElementById('sidebar-' + section + '-links');
-                if (contentEl) contentEl.classList.toggle('hidden', section !== viewName);
-                if (sidebarEl) sidebarEl.classList.toggle('hidden', section !== viewName);
+            var sections = ['sop', 'assets'];
+            sections.forEach(function(section) {
+                var contentEl = document.getElementById('content-' + section);
+                var sidebarEl = document.getElementById('sidebar-' + section + '-links');
+                if (contentEl) { contentEl.classList.toggle('hidden', section !== viewName); }
+                if (sidebarEl) { sidebarEl.classList.toggle('hidden', section !== viewName); }
             });
         }
-        window.addEventListener('DOMContentLoaded', () => {
-            const hash = window.location.hash.replace('#', '');
-            if (hash === 'assets') switchView('assets');
-            else switchView('sop');
-        });
+        switchView('sop');
     </script>
 
 

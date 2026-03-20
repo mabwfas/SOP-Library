@@ -382,8 +382,893 @@
                 style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
 
-        <!-- ONBOARDING SIDEBAR LINKS -->
-        
+    </aside>
+
+    <div class="main-content">
+        <div id="content-sop" class="view-section">
+            <div class="container">
+                <header class="header">
+                    <h1>📱 Social Media Manager SOP</h1>
+                    <p class="subtitle">Content Creation, Scheduling & Community Engagement</p>
+                    <div class="badge-row">
+                        <span class="badge">📈 Growth Focused</span>
+                        <span class="badge">❤️ 🎯 Engagement First</span>
+                        <span class="badge">📅 Consistent Posting</span>
+                        <span class="badge">↩️ ⚡ Fast Response</span>
+                    </div>
+                </header>
+
+                <div id="searchResults"
+                    style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                    <div id="resultsList"></div>
+                    <button onclick="clearSearch()"
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                        Search</button>
+                </div>
+
+                <script>
+                    function searchSOP() {
+                        const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                        const sections = document.querySelectorAll('.section, .critical-alert');
+                        const resultsDiv = document.getElementById('searchResults');
+                        if (query.length < 2) { resultsDiv.style.display = 'none'; sections.forEach(s => s.style.display = 'block'); return; }
+                        let matches = [];
+                        sections.forEach(section => {
+                            if (section.textContent.toLowerCase().includes(query)) { section.style.display = 'block'; section.style.border = '3px solid var(--rose)'; matches.push(section); }
+                            else { section.style.display = 'none'; section.style.border = 'none'; }
+                        });
+                        document.getElementById('resultCount').textContent = matches.length;
+                        resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+                    }
+                    function clearSearch() { document.getElementById('searchInput').value = ''; document.getElementById('searchResults').style.display = 'none'; document.querySelectorAll('.section').forEach(s => { s.style.display = 'block'; s.style.border = 'none'; }); }
+                </script>
+
+                <!-- What is This SOP For -->
+                <section class="section">
+                    <div class="section-header">
+                        <div class="section-number">❓</div>
+                        <h2>What is This SOP For?</h2>
+                    </div>
+
+                    <div class="info-box rose">
+                        <h4>📝 📱 Your Role as Social Media Manager</h4>
+                        <p>As a social media manager, you're responsible for building and engaging the brand's online
+                            community.
+                            Your job includes:</p>
+                        <ul class="styled-list" style="margin-top: 15px;">
+                            <li><strong>Content creation</strong> — Creating posts, reels, stories that attract and
+                                engage
+                            </li>
+                            <li><strong>Scheduling</strong> — Planning and posting content consistently</li>
+                            <li><strong>Community management</strong> — Responding to comments, DMs, and mentions</li>
+                            <li><strong>Analytics</strong> — Tracking what works and optimizing</li>
+                            <li><strong>Growth</strong> — Building followers who actually buy</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- CULTURE: WELCOME TO DIGITAL HEROES -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes — You Are Part of Something
+                        Bigger</h3>
+                    <p>Before we dive into social media management, you need to understand something critical:
+                        <strong>You are not just joining a company. You are joining a mission.</strong></p>
+                    <div class="highlight-box"
+                        style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+                        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+                        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+                            <tr style="background: rgba(59, 130, 246, 0.2);">
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A
+                                        (Now):</strong> ₹9.2 Crores</td>
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B
+                                        (2027):</strong> ₹75 Crores</td>
+                            </tr>
+                        </table>
+                        <p style="margin: 0;">Every team member contributes to this journey, and every team member
+                            benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CULTURE: THE INTERCONNECTED CHAIN -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(244, 114, 182, 0.1)); border: 2px solid rgba(236, 72, 153, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #F472B6; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+                    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link
+                        is equally critical:</p>
+                    <div
+                        style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+                        <p style="margin: 0;">
+                            <strong style="color: #FBBF24;">Sales</strong> → brings in clients<br>
+                            ↓<br>
+                            <strong style="color: #F472B6;">Design</strong> → creates the visuals<br>
+                            ↓<br>
+                            <strong style="color: #8B5CF6;">Development</strong> → builds it all<br>
+                            ↓<br>
+                            <strong style="color: #EC4899; font-size: 1.2em;">⭐ YOU (Social Media)</strong> →
+                            <strong>THE BRAND AMPLIFIER — grow reach, engagement, and brand awareness</strong><br>
+                            ↓<br>
+                            <strong style="color: #34D399;">Client Satisfaction</strong> → creates happy customers<br>
+                            ↓<br>
+                            <strong style="color: #A78BFA;">5-Star Reviews</strong> → boost algorithm positioning<br>
+                            ↓<br>
+                            <strong style="color: #FBBF24;">More Organic Enquiries</strong> → the cycle amplifies
+                        </p>
+                    </div>
+                    <div class="highlight-box"
+                        style="background: rgba(236, 72, 153, 0.15); border-left: 4px solid #EC4899; padding: 15px; margin: 15px 0;">
+                        <strong style="color: #EC4899;">📱 Your Critical Role:</strong>
+                        <p style="margin: 10px 0 0 0;">As a social media manager, you are <strong>THE BRAND
+                                AMPLIFIER</strong> for Digital Heroes and every client brand we manage. Your posts,
+                            reels, stories, and campaigns put brands in front of thousands of potential customers every
+                            single day. Without your consistent content and creative engagement, brands become
+                            invisible, follower growth stalls, and marketing budgets go to waste. Every viral post,
+                            every engaged follower, and every successful campaign you run moves us closer to our ₹75
+                            Crore goal.</p>
+                    </div>
+                    <p style="color: #EC4899; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">
+                        No social presence = No brand awareness = No organic traffic = Chain weakens. YOU amplify the
+                        brand.</p>
+                </div>
+
+                <!-- Opening Story -->
+                <section class="section">
+                    <div class="section-header">
+                        <div class="section-number">📖</div>
+                        <h2>The Instagram Account That Made $0</h2>
+                    </div>
+
+                    <div class="story-box">
+                        <h4>Why Followers Mean Nothing Without Strategy</h4>
+                        <p>A client came to us with an Instagram account. 50,000 followers. Looks impressive, right?</p>
+
+                        <p>But here's the problem:</p>
+                        <ul style="margin: 15px 0 15px 20px;">
+                            <li>Posts got 50-100 likes (0.1% engagement rate)</li>
+                            <li>Zero DMs asking about products</li>
+                            <li>Website traffic from Instagram: almost nothing</li>
+                            <li>Sales from Instagram: $0</li>
+                        </ul>
+
+                        <p>The previous manager had been buying followers and posting generic content with no strategy.
+                        </p>
+
+                        <p><strong>What we did differently:</strong></p>
+                        <ul style="margin: 15px 0 15px 20px;">
+                            <li>Stopped chasing followers, started chasing engagement</li>
+                            <li>Posted content that answers customer questions</li>
+                            <li>Replied to every comment within 1 hour</li>
+                            <li>Started Instagram Stories showing behind-the-scenes</li>
+                        </ul>
+
+                        <p><strong>Result after 3 months:</strong> Followers dropped to 35K (fake ones unfollowed), but
+                            engagement hit 5%. Sales from Instagram: $2.4 lakhs.</p>
+
+                        <div class="moral">
+                            <strong>🎯 The Lesson:</strong> 1,000 engaged followers > 100,000 dead followers. Your job
+                            isn't to grow vanity metrics — it's to grow SALES.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Critical Principles -->
+                <section class="critical-alert">
+                    <h2>📱 SOCIAL MEDIA PRINCIPLES</h2>
+
+                    <div class="highlight-box">
+                        <h3 style="margin-bottom: 15px;">1. ENGAGEMENT OVER FOLLOWERS</h3>
+                        <p>A small, engaged audience beats a large, dead audience. Focus on people who actually interact
+                            with content.</p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">2. CONSISTENCY IS KING</h3>
+                        <p>Posting 3x/week consistently beats posting daily for a month then disappearing. Build a
+                            sustainable rhythm.</p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">3. RESPOND WITHIN 1 HOUR</h3>
+                        <p>Social media is SOCIAL. If someone comments or DMs, respond fast. Slow responses = lost
+                            sales.
+                        </p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">4. VALUE FIRST, SELL SECOND</h3>
+                        <p>80% of content should provide value (education, entertainment, inspiration). 20% can be
+                            promotional.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Platform Strategy -->
+                <section class="section" id="platforms">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2>Platform Strategy</h2>
+                    </div>
+
+                    <div class="info-box gold">
+                        <h4>💡 Platform Rule</h4>
+                        <p>Don't try to be everywhere. Master 2-3 platforms where your audience actually is before
+                            expanding.
+                        </p>
+                    </div>
+
+                    <div class="platform-grid">
+                        <div class="platform-card">
+                            <h4>📸 Instagram</h4>
+                            <p><strong>Best for:</strong> Visual products, lifestyle brands, fashion, beauty, food</p>
+                            <p><strong>Content mix:</strong></p>
+                            <ul class="styled-list check-list">
+                                <li>Reels (highest reach)</li>
+                                <li>Stories (daily engagement)</li>
+                                <li>Carousels (education)</li>
+                                <li>Static posts (brand aesthetic)</li>
+                            </ul>
+                            <p><strong>Post frequency:</strong> 3-5x/week minimum</p>
+                        </div>
+
+                        <div class="platform-card">
+                            <h4>🎵 TikTok</h4>
+                            <p><strong>Best for:</strong> Gen Z audience, viral potential, trends</p>
+                            <p><strong>Content mix:</strong></p>
+                            <ul class="styled-list check-list">
+                                <li>Trending audio (ride the wave)</li>
+                                <li>Behind-the-scenes</li>
+                                <li>Product demos</li>
+                                <li>Quick tips</li>
+                            </ul>
+                            <p><strong>Post frequency:</strong> 1-3x/day for growth</p>
+                        </div>
+
+                        <div class="platform-card">
+                            <h4>📘 Facebook</h4>
+                            <p><strong>Best for:</strong> 35+ audience, community groups, local business</p>
+                            <p><strong>Content mix:</strong></p>
+                            <ul class="styled-list check-list">
+                                <li>Long-form posts (stories)</li>
+                                <li>Video content</li>
+                                <li>Event promotion</li>
+                                <li>Community engagement</li>
+                            </ul>
+                            <p><strong>Post frequency:</strong> 3-5x/week</p>
+                        </div>
+
+                        <div class="platform-card">
+                            <h4>Pinterest</h4>
+                            <p><strong>Best for:</strong> Home decor, fashion, DIY, food, inspiration</p>
+                            <p><strong>Content mix:</strong></p>
+                            <ul class="styled-list check-list">
+                                <li>Product pins with rich descriptions</li>
+                                <li>Lifestyle inspiration</li>
+                                <li>How-to guides</li>
+                                <li>Infographics</li>
+                            </ul>
+                            <p><strong>Post frequency:</strong> 5-10 pins/day</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Content Creation -->
+                <section class="section" id="content">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2>Content Creation</h2>
+                    </div>
+
+                    <h3>The 80/20 Content Rule</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Content Type</th>
+                                <th>% of Posts</th>
+                                <th>Examples</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Value Content</strong></td>
+                                <td>40%</td>
+                                <td>Tips, how-tos, education, answers to FAQs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Engagement Content</strong></td>
+                                <td>20%</td>
+                                <td>Questions, polls, "this or that", user-generated content</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Brand Content</strong></td>
+                                <td>20%</td>
+                                <td>Behind-the-scenes, team, story, values</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Promotional</strong></td>
+                                <td>20%</td>
+                                <td>Product features, sales, launches, offers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Content Pillars (Define 4-5)</h3>
+
+                    <div class="info-box info">
+                        <h4>What Are Content Pillars?</h4>
+                        <p>Content pillars are the main themes you post about. They keep your content focused and
+                            on-brand.
+                        </p>
+                        <p style="margin-top: 15px;"><strong>Example for a skincare brand:</strong></p>
+                        <ul class="styled-list" style="margin-top: 10px;">
+                            <li><strong>Pillar 1:</strong> Skincare education (ingredients, routines)</li>
+                            <li><strong>Pillar 2:</strong> Product showcases (features, benefits)</li>
+                            <li><strong>Pillar 3:</strong> Customer results (before/after, testimonials)</li>
+                            <li><strong>Pillar 4:</strong> Behind-the-scenes (brand story, team)</li>
+                            <li><strong>Pillar 5:</strong> Lifestyle (self-care, confidence)</li>
+                        </ul>
+                    </div>
+
+                    <h3>Caption Writing Formula</h3>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Caption Formula: Hook → Value → CTA</div>
+                        <p><strong>Line 1 (Hook):</strong> Stop the scroll. Ask a question or make a bold statement.</p>
+                        <p>"The skincare mistake 90% of people make…"</p>
+
+                        <p style="margin-top: 20px;"><strong>Lines 2-5 (Value):</strong> Deliver the promise. Give them
+                            something useful.</p>
+                        <p>"Most people apply products in the wrong order. This is why your $2000 serum isn't
+                            working..."
+                        </p>
+
+                        <p style="margin-top: 20px;"><strong>Last Line (CTA):</strong> Tell them what to do next.</p>
+                        <p>"Save this post | Drop a 💧 if you've been doing it wrong!"</p>
+                    </div>
+                </section>
+
+                <!-- Scheduling -->
+                <section class="section" id="scheduling">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2>Content Scheduling</h2>
+                    </div>
+
+                    <h3>Best Posting Times (India)</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Platform</th>
+                                <th>Best Days</th>
+                                <th>Best Times (IST)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Instagram</strong></td>
+                                <td>Tue, Wed, Thu</td>
+                                <td>11 AM - 1 PM, 7 PM - 9 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Facebook</strong></td>
+                                <td>Wed, Thu, Fri</td>
+                                <td>1 PM - 4 PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LinkedIn</strong></td>
+                                <td>Tue, Wed, Thu</td>
+                                <td>8 AM - 10 AM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Twitter</strong></td>
+                                <td>Weekdays</td>
+                                <td>8 AM - 10 AM, 12 PM - 1 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ These Are Starting Points</h4>
+                        <p>Always check your OWN analytics. Your audience might be different. Test different times and
+                            track what works.</p>
+                    </div>
+
+                    <h3>Weekly Content Calendar Template</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Instagram</th>
+                                <th>Stories</th>
+                                <th>Other</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Monday</strong></td>
+                                <td>Value post (tip/education)</td>
+                                <td>Motivation/quote</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tuesday</strong></td>
+                                <td>Product feature</td>
+                                <td>BTS/process</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wednesday</strong></td>
+                                <td>Reel (trending)</td>
+                                <td>Poll/question</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thursday</strong></td>
+                                <td>Customer testimonial</td>
+                                <td>User repost</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Friday</strong></td>
+                                <td>Carousel (education)</td>
+                                <td>Weekend vibes</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sat/Sun</strong></td>
+                                <td>Lifestyle/brand story</td>
+                                <td>Casual/fun</td>
+                                <td>—</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Engagement -->
+                <section class="section" id="engagement">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2>❤️ Community Engagement</h2>
+                    </div>
+
+                    <div class="info-box danger">
+                        <h4>🚨 The 1-Hour Rule</h4>
+                        <p>Respond to ALL comments and DMs within 1 hour during business hours. Social media is SOCIAL.
+                            Slow responses kill engagement and lose sales.</p>
+                    </div>
+
+                    <h3>↩️ DM Response Guidelines</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Message Type</th>
+                                <th>Response Time</th>
+                                <th>Response Style</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Product inquiry</strong></td>
+                                <td>&lt;1 hour</td>
+                                <td>Detailed, helpful, link to product</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Complaint</strong></td>
+                                <td>&lt;30 min</td>
+                                <td>Empathetic, solution-focused, take offline if needed</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Compliment</strong></td>
+                                <td>&lt;2 hours</td>
+                                <td>Grateful, genuine, encourage review</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Collaboration request</strong></td>
+                                <td>&lt;24 hours</td>
+                                <td>Professional, interest if relevant, redirect if not</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Product Inquiry Response</div>
+                        <p>Hey [Name]! 👋</p>
+
+                        <p>Thanks for reaching out! Great question about [product].</p>
+
+                        <p>[Answer their specific question]</p>
+
+                        <p>Here's the link to check it out: [link]</p>
+
+                        <p>Let me know if you have any other questions — happy to help! 💜</p>
+                    </div>
+                </section>
+
+                <!-- Analytics -->
+                <section class="section" id="analytics">
+                    <div class="section-header">
+                        <div class="section-number">5</div>
+                        <h2>🛤️ Analytics & Tracking</h2>
+                    </div>
+
+                    <h3>📊 Key Metrics to Track</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>What It Means</th>
+                                <th>Target</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Engagement Rate</strong></td>
+                                <td>(Likes + Comments + Shares) / Followers × 100</td>
+                                <td>3-5%+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reach</strong></td>
+                                <td>Unique accounts who saw content</td>
+                                <td>Growing month over month</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Website Clicks</strong></td>
+                                <td>Clicks to website from profile/posts</td>
+                                <td>Track with UTM links</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Saves</strong></td>
+                                <td>How many saved your post</td>
+                                <td>Higher = valuable content</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Follower Growth</strong></td>
+                                <td>Net new followers</td>
+                                <td>Quality > Quantity</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Tools -->
+                <section class="section" id="tools">
+                    <div class="section-header">
+                        <div class="section-number">🛠️</div>
+                        <h2>Recommended Tools</h2>
+                    </div>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Tool</th>
+                                <th>What It Does</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Scheduling</strong></td>
+                                <td>Later, Buffer, Hootsuite</td>
+                                <td>Plan and auto-post content</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Design</strong></td>
+                                <td>Canva, Adobe Express</td>
+                                <td>Create graphics and videos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Video Editing</strong></td>
+                                <td>CapCut, InShot</td>
+                                <td>Edit reels and TikToks</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Analytics</strong></td>
+                                <td>Native + Sprout Social</td>
+                                <td>Track performance</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hashtag Research</strong></td>
+                                <td>Flick, Display Purposes</td>
+                                <td>Find relevant hashtags</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Link in Bio</strong></td>
+                                <td>Linktree, Stan Store</td>
+                                <td>Multiple links from one URL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- LinkedIn Strategy Section -->
+                <section class="section" id="linkedin">
+                    <div class="section-header">
+                        <div class="section-number">🔗</div>
+                        <h2>LinkedIn Growth Strategy</h2>
+                    </div>
+
+                    <div class="info-box gold">
+                        <h4>💡 Why LinkedIn for Digital Heroes?</h4>
+                        <p><strong>LinkedIn is the #1 platform for B2B clients and high-value leads.</strong>
+                            Decision-makers, business owners, and marketing managers are all on LinkedIn looking for
+                            help.
+                            This is where we showcase our premium work and attract $10K+ projects.</p>
+                    </div>
+
+                    <h3>Content Types That Work on LinkedIn</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Content Type</th>
+                                <th>Frequency</th>
+                                <th>Goal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>🏆 Portfolio Showcases</strong></td>
+                                <td>2x/week</td>
+                                <td>Show transformation stories: before/after of stores we built</td>
+                            </tr>
+                            <tr>
+                                <td><strong>💬 Client Testimonials</strong></td>
+                                <td>1x/week</td>
+                                <td>Social proof from happy clients with real numbers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>📚 Educational Content</strong></td>
+                                <td>3x/week</td>
+                                <td>Share tips (Shopify, design, conversions) — position as experts</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🎯 Results/Case Studies</strong></td>
+                                <td>1x/week</td>
+                                <td>"We increased conversion rate by 47%" — numbers sell</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🧠 Thought Leadership</strong></td>
+                                <td>2x/week</td>
+                                <td>Opinions on industry trends, lessons learned</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Real LinkedIn Post Examples</h3>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Example 1: Portfolio Showcase Post</div>
+                        <p><strong>Hook:</strong> This store went from $0 to $2.4 lakh/month in 90 days. 🚀</p>
+                        <p style="margin-top: 15px;">Here's what we did:</p>
+                        <p>✅ Redesigned the entire homepage with conversion-focused layout<br>
+                            ✅ Optimized mobile experience (78% of their traffic is mobile)<br>
+                            ✅ Added trust badges, reviews, and urgency elements<br>
+                            ✅ Fixed PageSpeed — went from 34 to 89</p>
+                        <p style="margin-top: 15px;"><strong>Result:</strong> Conversion rate jumped from 0.8% to 2.4%
+                        </p>
+                        <p style="margin-top: 15px;">The before/after is crazy. Swipe to see 👇</p>
+                        <p style="margin-top: 15px;">[Attach carousel: Before screenshot → After screenshot → Metrics]
+                        </p>
+                        <p style="margin-top: 15px;">#ShopifyDevelopment #EcommerceDesign #ConversionOptimization</p>
+                    </div>
+
+                    <div class="template-box" style="margin-top: 20px;">
+                        <div class="template-header">📝 Example 2: Client Testimonial Post</div>
+                        <p><strong>Hook:</strong> "I wish I found Digital Heroes 6 months earlier."</p>
+                        <p style="margin-top: 15px;">That's what <span class="placeholder">[Client Name]</span> told us
+                            last week.</p>
+                        <p style="margin-top: 15px;">When they came to us, their store was:</p>
+                        <p>❌ Loading in 6+ seconds<br>
+                            ❌ Looking "cheap" (their words)<br>
+                            ❌ Converting at 0.5%</p>
+                        <p style="margin-top: 15px;">60 days later:</p>
+                        <p>✅ PageSpeed 92<br>
+                            ✅ Premium design that matches their brand<br>
+                            ✅ 2.8% conversion rate</p>
+                        <p style="margin-top: 15px;">Sometimes it's not about getting more traffic — it's about
+                            converting the traffic you already have.</p>
+                        <p style="margin-top: 15px;">DM me "STORE" if you want the same transformation.</p>
+                    </div>
+
+                    <div class="template-box" style="margin-top: 20px;">
+                        <div class="template-header">📝 Example 3: Educational Value Post</div>
+                        <p><strong>Hook:</strong> 90% of Shopify stores make this homepage mistake.</p>
+                        <p style="margin-top: 15px;">I've reviewed 200+ stores this year. Here's what I keep seeing:</p>
+                        <p style="margin-top: 15px;"><strong>❌ The mistake:</strong> Putting a slideshow as the hero
+                            section.</p>
+                        <p style="margin-top: 15px;">Why it kills conversions:</p>
+                        <p>• Slows down page load by 2-3 seconds<br>
+                            • People don't wait — they scroll past<br>
+                            • Dilutes your main message</p>
+                        <p style="margin-top: 15px;"><strong>✅ Do this instead:</strong></p>
+                        <p>• Single static image with ONE clear message<br>
+                            • Strong headline + subheadline<br>
+                            • One CTA button (Shop Now, not "Learn More")</p>
+                        <p style="margin-top: 15px;">Simple change. Massive impact.</p>
+                        <p style="margin-top: 15px;">Save this | Agree? ↓</p>
+                    </div>
+
+                    <h3>Complete LinkedIn Posting Process</h3>
+
+                    <div class="info-box info">
+                        <h4>📋 Step-by-Step: From Idea to Published Post</h4>
+                        <ol style="margin-top: 15px; margin-left: 20px;">
+                            <li><strong>Identify the goal</strong> — What do we want? (leads, followers, authority)</li>
+                            <li><strong>Choose content type</strong> — Portfolio, testimonial, educational, or
+                                behind-scenes
+                            </li>
+                            <li><strong>Use ChatGPT to brainstorm</strong> — (see prompts below)</li>
+                            <li><strong>Write the hook</strong> — First line must stop the scroll</li>
+                            <li><strong>Create visuals</strong> — Canva carousel or screenshot + metrics</li>
+                            <li><strong>Add hashtags</strong> — 3-5 relevant hashtags</li>
+                            <li><strong>Schedule post</strong> — Best times: Tue-Thu, 8-10 AM IST</li>
+                            <li><strong>Engage for 30 min</strong> — Reply to comments immediately</li>
+                        </ol>
+                    </div>
+
+                    <h3 id="chatgpt-prompts">ChatGPT Prompts for LinkedIn Content</h3>
+
+                    <div class="template-box">
+                        <div class="template-header">🤖 Prompt 1: Generate Portfolio Post Ideas</div>
+                        <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                            I run a Shopify development agency called Digital Heroes. We've built [X] stores this month
+                            with impressive results.<br><br>
+                            Project details:<br>
+                            - Client: [Brand name, industry]<br>
+                            - Before: [problems - slow speed, poor design, low conversion]<br>
+                            - After: [improvements - PageSpeed, conversion rate, revenue]<br><br>
+                            Write 3 different LinkedIn post hooks for this case study. Make them attention-grabbing, use
+                            numbers, and create curiosity. Format: Hook only (one line each).
+                        </p>
+                    </div>
+
+                    <div class="template-box" style="margin-top: 20px;">
+                        <div class="template-header">🤖 Prompt 2: Create Full LinkedIn Post</div>
+                        <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                            Write a LinkedIn post for my Shopify development agency showcasing a client success
+                            story.<br><br>
+                            Details:<br>
+                            - Store niche: [e.g., skincare, fashion, tech]<br>
+                            - Result: [e.g., "3x conversion rate in 60 days"]<br>
+                            - What we did: [e.g., redesign, speed optimization, mobile UX]<br><br>
+                            Format:<br>
+                            - Attention-grabbing first line (hook)<br>
+                            - Problem they had (2-3 bullet points)<br>
+                            - Solution we provided (2-3 bullet points)<br>
+                            - Result with specific numbers<br>
+                            - Call-to-action for readers<br>
+                            - 3-5 relevant hashtags<br><br>
+                            Tone: Professional but conversational. Use emojis sparingly.
+                        </p>
+                    </div>
+
+                    <div class="template-box" style="margin-top: 20px;">
+                        <div class="template-header">🤖 Prompt 3: Brainstorm Content Ideas</div>
+                        <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                            I'm a social media manager for Digital Heroes, a Shopify development agency.<br><br>
+                            Our services: Custom Shopify stores, speed optimization, conversion rate optimization, theme
+                            customization.<br><br>
+                            Target audience: D2C brand owners, ecommerce entrepreneurs, marketing managers.<br><br>
+                            Generate 10 LinkedIn post ideas for this week covering:<br>
+                            - 2 portfolio showcases<br>
+                            - 2 educational tips<br>
+                            - 2 behind-the-scenes<br>
+                            - 2 industry opinions<br>
+                            - 2 client testimonial formats<br><br>
+                            For each idea, give me: Topic, Hook (first line), and Content angle (1 sentence).
+                        </p>
+                    </div>
+
+                    <div class="template-box" style="margin-top: 20px;">
+                        <div class="template-header">🤖 Prompt 4: Repurpose Content</div>
+                        <p style="font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;">
+                            I have this Instagram caption that performed well:<br><br>
+                            "[Paste Instagram caption here]"<br><br>
+                            Rewrite this for LinkedIn. Make it:<br>
+                            - More professional tone<br>
+                            - Longer (LinkedIn favors 150-300 words)<br>
+                            - Add a thought leadership angle<br>
+                            - Include a question at the end to drive comments<br>
+                            - Add relevant B2B hashtags
+                        </p>
+                    </div>
+
+                    <h3>Showcasing Our Work (Portfolio Content)</h3>
+
+                    <div class="info-box success">
+                        <h4>✅ What to Screenshot & Share</h4>
+                        <ul class="styled-list check-list">
+                            <li><strong>Before/After homepage designs</strong> — Side by side comparison</li>
+                            <li><strong>PageSpeed scores</strong> — Screenshot of 85+ scores</li>
+                            <li><strong>Shopify dashboard metrics</strong> — Revenue increase (blur sensitive data)</li>
+                            <li><strong>Mobile vs Desktop views</strong> — Show responsive design</li>
+                            <li><strong>Client reviews/testimonials</strong> — Quote graphics with their photo</li>
+                            <li><strong>Process shots</strong> — Figma designs, wireframes, development</li>
+                        </ul>
+                    </div>
+
+                    <h3>Weekly LinkedIn Content Calendar</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Post Type</th>
+                                <th>Example Hook</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Monday</strong></td>
+                                <td>Educational tip</td>
+                                <td>"3 things killing your Shopify conversion rate..."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tuesday</strong></td>
+                                <td>Portfolio showcase</td>
+                                <td>"This store went from 0.5% to 2.8% CR. Here's what we did..."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wednesday</strong></td>
+                                <td>Behind-the-scenes</td>
+                                <td>"Just finished a 48-hour sprint rebuild. Why rush? Because..."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thursday</strong></td>
+                                <td>Client testimonial</td>
+                                <td>"'Best decision for my business.' — Client DM this morning."</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Friday</strong></td>
+                                <td>Industry opinion</td>
+                                <td>"Unpopular opinion: Most 'premium' themes are overpriced garbage."</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ LinkedIn Algorithm Tips</h4>
+                        <ul class="styled-list">
+                            <li><strong>No external links in posts</strong> — Put link in first comment instead</li>
+                            <li><strong>Reply to every comment</strong> — Especially in first 30 minutes</li>
+                            <li><strong>Engage before posting</strong> — Comment on 5-10 posts before your own</li>
+                            <li><strong>Carousels outperform text</strong> — Use PDF carousels for education</li>
+                            <li><strong>Tag people (sparingly)</strong> — Only tag clients who agree</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- KPIs -->
+                <section class="section" id="kpis">
+                    <div class="section-header">
+                        <div class="section-number">📊</div>
+                        <h2>Social Media KPIs</h2>
+                    </div>
+
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="label">Engagement Rate</div>
+                            <div class="metric">3%+</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Response Time</div>
+                            <div class="metric">&lt;1 hr</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Post Consistency</div>
+                            <div class="metric">100%</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="label">Monthly Growth</div>
+                            <div class="metric">5%+</div>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Difficult Situations Section -->
@@ -782,6 +1667,8 @@
                     </p>
                 </footer>
             </div>
+        </div> <!-- End content-sop -->
+    </div> <!-- End main-content -->
             <script src="admin-mode.js"></script>
 
             <!-- Quiz System -->

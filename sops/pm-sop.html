@@ -689,8 +689,906 @@
                 style="margin-top:20px; text-align:center;">⬅️ ← Back to SOP</a>
         </div>
 
-        <!-- ONBOARDING SIDEBAR LINKS -->
-        
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div id="content-sop" class="view-section">
+            <div class="container">
+                <!-- Header -->
+                <header class="header">
+                    <h1>📋 Project Manager SOP</h1>
+                    <p class="subtitle">Client Communication, Timeline Management & Delivery Excellence</p>
+                    <p class="tagline">"A project is only as good as the process that delivers it"</p>
+                    <div class="badge-row">
+                        <span class="badge">⏱️ 7-14 Day Delivery</span>
+                        <span class="badge">📊 95% On-Time Rate</span>
+                        <span class="badge">⭐ 4.9★ Client Satisfaction</span>
+                        <span class="badge">🤝 Clear Communication</span>
+                    </div>
+                </header>
+
+                <div id="searchResults"
+                    style="display: none; background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <h3 style="margin-bottom: 15px;">🔍 Search Results (<span id="resultCount">0</span>)</h3>
+                    <div id="resultsList"></div>
+                    <button onclick="clearSearch()"
+                        style="margin-top: 15px; padding: 10px 20px; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer;">Clear
+                        Search</button>
+                </div>
+
+                <script>
+                    function searchSOP() {
+                        const query = document.getElementById('searchInput').value.toLowerCase().trim();
+                        const sections = document.querySelectorAll('.section, .critical-alert');
+                        const resultsDiv = document.getElementById('searchResults');
+                        const resultsList = document.getElementById('resultsList');
+                        const resultCount = document.getElementById('resultCount');
+
+                        if (query.length < 2) {
+                            resultsDiv.style.display = 'none';
+                            sections.forEach(s => s.style.display = 'block');
+                            return;
+                        }
+
+                        let matches = [];
+                        sections.forEach(section => {
+                            const text = section.textContent.toLowerCase();
+                            const header = section.querySelector('h2, h3');
+                            if (text.includes(query)) {
+                                section.style.display = 'block';
+                                section.style.border = '3px solid var(--primary)';
+                                if (header) {
+                                    matches.push({ title: header.textContent.substring(0, 50), element: section });
+                                }
+                            } else {
+                                section.style.display = 'none';
+                                section.style.border = 'none';
+                            }
+                        });
+
+                        resultCount.textContent = matches.length;
+                        resultsList.innerHTML = matches.map((m, i) =>
+                            `<div style="padding: 10px; background: #f8f9fa; margin: 5px 0; border-radius: 8px; cursor: pointer;" onclick="document.querySelectorAll('.section, .critical-alert')[${i}].scrollIntoView({behavior:'smooth'})">${m.title}</div>`
+                        ).join('');
+
+                        resultsDiv.style.display = matches.length > 0 ? 'block' : 'none';
+                    }
+
+                    function clearSearch() {
+                        document.getElementById('searchInput').value = '';
+                        document.getElementById('searchResults').style.display = 'none';
+                        document.querySelectorAll('.section, .critical-alert').forEach(s => {
+                            s.style.display = 'block';
+                            s.style.border = 'none';
+                        });
+                    }
+                </script>
+
+                <!-- CULTURE: WELCOME TO DIGITAL HEROES -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #60A5FA; margin-top: 0;">🚀 Welcome to Digital Heroes — You Are Part of Something
+                        Bigger</h3>
+                    <p>Before we dive into project management, you need to understand something critical: <strong>You
+                            are not just joining a company. You are joining a mission.</strong></p>
+                    <div class="highlight-box"
+                        style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3B82F6; padding: 20px; margin: 15px 0;">
+                        <strong style="color: #60A5FA;">🎯 Our Journey: Point A to Point B</strong>
+                        <table style="width: 100%; margin: 15px 0; border-collapse: collapse;">
+                            <tr style="background: rgba(59, 130, 246, 0.2);">
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point A
+                                        (Now):</strong> ₹9.2 Crores</td>
+                                <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);"><strong>Point B
+                                        (2027):</strong> ₹75 Crores</td>
+                            </tr>
+                        </table>
+                        <p style="margin: 0;">Every team member contributes to this journey, and every team member
+                            benefits from it through our equity-sharing model—<strong>even interns from Day 1</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CULTURE: THE INTERCONNECTED CHAIN -->
+                <div class="content-section"
+                    style="background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(6, 182, 212, 0.1)); border: 2px solid rgba(34, 211, 238, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
+                    <h3 style="color: #22D3EE; margin-top: 0;">🔗 The Interconnected Chain: Where YOU Fit</h3>
+                    <p>At Digital Heroes, we operate as a <strong>single, interconnected chain</strong> where every link
+                        is equally critical:</p>
+                    <div
+                        style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; margin: 15px 0; font-size: 0.95em;">
+                        <p style="margin: 0;">
+                            <strong style="color: #FBBF24;">Sales</strong> → brings in clients<br>
+                            ↓<br>
+                            <strong style="color: #22D3EE; font-size: 1.2em;">⭐ YOU (PM)</strong> → <strong>THE
+                                ORCHESTRATOR — coordinate all moving parts and deliver on time</strong><br>
+                            ↓<br>
+                            <strong style="color: #F472B6;">Development</strong> → delivers quality work<br>
+                            ↓<br>
+                            <strong style="color: #34D399;">Client Satisfaction</strong> → creates happy customers<br>
+                            ↓<br>
+                            <strong style="color: #60A5FA;">CS Team</strong> → protects satisfaction<br>
+                            ↓<br>
+                            <strong style="color: #A78BFA;">5-Star Reviews</strong> → boost algorithm positioning<br>
+                            ↓<br>
+                            <strong style="color: #FBBF24;">More Organic Enquiries</strong> → the cycle amplifies
+                        </p>
+                    </div>
+                    <div class="highlight-box"
+                        style="background: rgba(34, 211, 238, 0.15); border-left: 4px solid #22D3EE; padding: 15px; margin: 15px 0;">
+                        <strong style="color: #22D3EE;">📋 Your Critical Role:</strong>
+                        <p style="margin: 10px 0 0 0;">As a project manager, you are <strong>THE ORCHESTRATOR</strong>
+                            who ensures every project runs like a well-oiled machine. You coordinate between sales,
+                            design, development, and client success. Without your planning, timelines slip,
+                            communication breaks down, and clients lose confidence. Your ability to keep every project
+                            on track, every team member aligned, and every deadline met is what separates Digital Heroes
+                            from chaotic agencies. Every successful delivery you orchestrate moves us closer to our ₹75
+                            Crore goal.</p>
+                    </div>
+                    <p style="color: #22D3EE; font-weight: 700; text-align: center; margin: 20px 0; font-size: 1.1em;">
+                        No coordination = Missed deadlines = Unhappy clients = Chain breaks. YOU keep everything in
+                        sync.</p>
+                </div>
+
+                <!-- Opening Story -->
+                <section class="section">
+                    <div class="section-header">
+                        <div class="section-number">📖</div>
+                        <h2>The Tale of Two Projects</h2>
+                    </div>
+
+                    <div class="story-box">
+                        <h4>Why Process Matters More Than Talent</h4>
+                        <p>Let me tell you about two projects that started the same day.</p>
+
+                        <p><strong>Project A (No Process):</strong> Client messaged requirements on WhatsApp. PM said
+                            "okay,
+                            we'll start." No questionnaire, no kickoff call. Day 5: Developer asks "what's the brand
+                            color?"
+                            PM messages client. No response for 2 days. Day 10: Client sees progress and says "This
+                            isn't what I
+                            wanted." Day 21: Project finally delivered. 3-star review. "Communication was poor."</p>
+
+                        <p><strong>Project B (Our Process):</strong> Client completed onboarding questionnaire within 24
+                            hours.
+                            Kickoff call scheduled. All assets received Day 1. Daily progress updates sent. Day 7:
+                            Client approves design direction. Day 14: Delivered on time. 5-star review. "Best agency
+                            I've worked with.
+                            Communication was exceptional."</p>
+
+                        <div class="moral">
+                            <strong>🎯 The Lesson:</strong> Both projects had the same client budget, same team, same
+                            timeline.
+                            The ONLY difference was the process. As PM, YOUR process determines whether a project
+                            succeeds or fails. The developer builds the store — YOU build the experience.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Critical Principles -->
+                <section class="critical-alert" id="principles">
+                    <h2>🚨 NON-NEGOTIABLE PM PRINCIPLES</h2>
+
+                    <div class="highlight-box">
+                        <h3 style="margin-bottom: 15px;">1. CLIENT NEVER WAITS FOR UPDATE</h3>
+                        <p>You update them BEFORE they ask. If a client has to message "Any update?" — you've already
+                            failed.
+                        </p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">2. DAILY UPDATES ARE MANDATORY</h3>
+                        <p><strong>Send updates in BOTH places:</strong></p>
+                        <ul style="margin: 10px 0 10px 20px;">
+                            <li>📩 <strong>Inbox/Messages</strong> — Direct message to client</li>
+                            <li>📋 <strong>Order Update Chat</strong> — In the order page comments</li>
+                        </ul>
+                        <p>Even if NO progress was made, send an update. "Working on X today, will share preview
+                            tomorrow."
+                        </p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">3. PROBLEMS ARE COMMUNICATED IMMEDIATELY</h3>
+                        <p>Bad news doesn't get better with time. If there's a delay, tell client within 2 hours of
+                            knowing.
+                            NEVER surprise them on delivery day.</p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">4. EVERY REQUEST IS DOCUMENTED</h3>
+                        <p>Verbal agreements mean nothing. Everything in writing. "As discussed, you've approved X.
+                            Confirming in writing."</p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">5. SCOPE IS SACRED</h3>
+                        <p>What's in the proposal is what's delivered. NEW requests = NEW quote. No exceptions. No "just
+                            this one thing."</p>
+                    </div>
+
+                    <div class="highlight-box"
+                        style="margin-top: 20px; background: rgba(239, 68, 68, 0.2); border-left: 4px solid #EF4444;">
+                        <h3 style="margin-bottom: 15px;">🔴 6. EARLY CANCELLATION FOR TOXIC CLIENTS</h3>
+                        <p><strong>Even after payment, we can cancel orders for problem clients.</strong> Red flags
+                            after onboarding:</p>
+                        <ul style="margin: 10px 0 10px 20px;">
+                            <li>Excessive demands outside scope</li>
+                            <li>Rude/aggressive communication</li>
+                            <li>Unrealistic expectations despite explanation</li>
+                            <li>Signs they will drain resources for minimal outcome</li>
+                            <li>Previous bad experiences with other agencies</li>
+                        </ul>
+                        <p><strong>Script:</strong> "I'm really sorry, but due to some unexpected personal/health
+                            matters, I won't be able to continue with this project. I'm issuing a full refund. I
+                            apologize for any inconvenience."</p>
+                        <p style="margin-top: 10px; color: #FCA5A5;"><strong>Better to lose a project than your sanity.
+                                We don't work with clients who give us PTSD.</strong></p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">7. UNRESPONSIVE CLIENTS = KEEP WORKING</h3>
+                        <p>If client stops responding, <strong>DO NOT pause the project.</strong></p>
+                        <ul style="margin: 10px 0 10px 20px;">
+                            <li>Complete the project to YOUR best expectations</li>
+                            <li>Make design/content decisions based on industry standards</li>
+                            <li>Send daily updates documenting what you've done</li>
+                            <li>When client returns, adjust based on their feedback</li>
+                        </ul>
+                        <p><strong>Rule:</strong> We deliver on time, not when the client finally responds.</p>
+                    </div>
+
+                    <div class="highlight-box"
+                        style="margin-top: 20px; background: rgba(16, 185, 129, 0.2); border-left: 4px solid #10B981;">
+                        <h3 style="margin-bottom: 15px;">✅ 8. MEETING FORMAT</h3>
+                        <p><strong>For all client calls, use the 1+1+C format:</strong></p>
+                        <ul style="margin: 10px 0 10px 20px;">
+                            <li>👨‍💼 <strong>1 Project Manager</strong> — Leads call, handles communication</li>
+                            <li>👨‍💻 <strong>1 Developer</strong> — Answers technical questions</li>
+                            <li>🧑‍💼 <strong>Client</strong> — Decision maker present</li>
+                        </ul>
+                        <p>Schedule immediately after request. Don't delay meetings — they show we're serious and
+                            engaged.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- NEW: Team Lead Responsibilities -->
+                <section class="critical-alert" id="team-lead"
+                    style="background: linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%);">
+                    <h2>👔 TEAM LEAD RESPONSIBILITIES</h2>
+                    <p style="font-size: 1.1em; margin-bottom: 20px;">If you are a Team Lead, these are your ADDITIONAL
+                        duties.</p>
+
+                    <div class="highlight-box" style="background: rgba(220, 38, 38, 0.3);">
+                        <h3 style="margin-bottom: 15px;">⚠️ Communication Accountability</h3>
+                        <p><strong>You are RESPONSIBLE if team members don't respond to messages.</strong></p>
+                        <ul style="margin-top: 10px;">
+                            <li>Ensure team responds within SLA during work hours</li>
+                            <li>If someone isn't available, YOU respond on their behalf</li>
+                            <li>Call team members individually if not responding in group</li>
+                            <li>Inform management immediately if team members not responding after 3 attempts</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">💬 Client Communication Shifts</h3>
+                        <table class="styled-table" style="background: rgba(255,255,255,0.1);">
+                            <tbody style="color: white;">
+                                <tr>
+                                    <td>Morning Shift</td>
+                                    <td><strong>7:00 AM - 10:00 AM</strong> — Fiverr chat monitoring</td>
+                                </tr>
+                                <tr>
+                                    <td>Evening Shift</td>
+                                    <td><strong>7:00 PM - 10:00 PM</strong> — Fiverr chat monitoring</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="margin-top: 10px;">If Reporting Manager on leave, Team Lead takes additional shift.
+                        </p>
+                        <p>Use ChatGPT Custom GPT for Fiverr chat responses.</p>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">🆕 New Member Onboarding</h3>
+                        <ul>
+                            <li>Pair new member with experienced team member for <strong>first week</strong></li>
+                            <li>Guide through all SOPs and rules within <strong>first day</strong></li>
+                            <li>Explain hierarchy and reporting structure</li>
+                            <li>Schedule <strong>15-minute daily check-ins</strong> for first 2 weeks</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">✅ Quality Gate Responsibility</h3>
+                        <ul>
+                            <li>Review <strong>ALL store submissions</strong> before client delivery</li>
+                            <li>Get work checked by peers before sending to client — teamwork approach</li>
+                            <li>Return work with specific feedback if issues found</li>
+                            <li>Only approve for client delivery after <strong>personal verification</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px;">📋 Daily Team Lead Checklist</h3>
+                        <ul>
+                            <li>Post daily: "Team working today: [Name1, Name2, Name3...]"</li>
+                            <li>Post daily: "On Leave: [Name - Reason]"</li>
+                            <li>Call individual members who haven't posted by 11:00 AM</li>
+                            <li>Submit consolidated attendance to management</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- PROJECT MANAGEMENT BEST PRACTICES -->
+                <section class="section" id="pm-best-practices">
+                    <div class="section-header">
+                        <div class="section-number">📊</div>
+                        <h2>Project Management Best Practices</h2>
+                    </div>
+
+                    <div class="info-box gold">
+                        <h4>💡 The PM Mindset</h4>
+                        <p>Your job is to make chaos disappear. Clients should feel calm and confident, never stressed
+                            or confused.</p>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 20px;">
+                        <h4>1️⃣ The Definition of Done ✅</h4>
+                        <p>A task isn't "done" until:</p>
+                        <ul style="margin-top: 10px;">
+                            <li>Tested on multiple devices</li>
+                            <li>Reviewed by someone else</li>
+                            <li>Client can use it without asking questions</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>2️⃣ The 90% Rule ⚠️</h4>
+                        <p>Projects feel nearly done at 90%. <strong>The last 10% takes 50% of the time.</strong></p>
+                        <p style="margin-top: 5px;">Budget accordingly and set client expectations.</p>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>3️⃣ The Buffer Principle 🛡️</h4>
+                        <p>Always add 20-30% buffer to time estimates.</p>
+                        <div style="margin-top: 10px;">
+                            <p>If you think 5 days → <strong>Quote 7 days</strong></p>
+                            <p style="color: #10B981;"><em>Under-promise, over-deliver.</em></p>
+                        </div>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>4️⃣ The "What Could Go Wrong" Check 🔮</h4>
+                        <p>Before starting any project, list 3 things that could go wrong.</p>
+                        <p style="margin-top: 5px;"><strong>Then plan for them.</strong></p>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>5️⃣ The Single Point of Contact 👤</h4>
+                        <p>Every project has ONE decision maker on client side.</p>
+                        <p style="margin-top: 5px;">If multiple people give conflicting feedback, escalate to the
+                            designated contact.</p>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>6️⃣ The Scope Lock 🔒</h4>
+                        <p>After sign-off, scope changes = new quote.</p>
+                        <p
+                            style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                            <em>"That's a great idea! That would be an additional [X]. Want me to add it to the
+                                project?"</em>
+                        </p>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>7️⃣ The Daily 3-Question Check 📋</h4>
+                        <p>Every morning, answer:</p>
+                        <ol style="margin-top: 10px; margin-left: 20px;">
+                            <li>What did I do yesterday?</li>
+                            <li>What will I do today?</li>
+                            <li>What's blocking me?</li>
+                        </ol>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>8️⃣ Urgent vs Important ⚡</h4>
+                        <p>Classify every task:</p>
+                        <ul style="margin-top: 10px;">
+                            <li><strong>Urgent</strong> → Do now</li>
+                            <li><strong>Important (not urgent)</strong> → Schedule</li>
+                            <li><strong>Neither</strong> → Delete or delegate</li>
+                        </ul>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>9️⃣ The 30-60-90 Check-In 📍</h4>
+                        <p>For long projects, check alignment at 30%, 60%, and 90% completion.</p>
+                        <p style="margin-top: 5px;"><strong>Catch drift early before it becomes expensive.</strong></p>
+                    </div>
+
+                    <div class="story-box" style="margin-top: 15px;">
+                        <h4>🔟 The "No Meeting Day" 🧘</h4>
+                        <p>Block one day per week for deep work with zero meetings/calls.</p>
+                        <p style="margin-top: 5px;">Protect focus time — it's your most valuable resource.</p>
+                    </div>
+                </section>
+
+
+                <!-- Client Onboarding -->
+                <section class="section" id="onboarding">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2>Client Onboarding (First 24 Hours)</h2>
+                    </div>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ The 24-Hour Rule</h4>
+                        <p>The first 24 hours set the tone for the entire project. A smooth start = smooth project. A
+                            chaotic start = problem project.</p>
+                    </div>
+
+                    <h3>Onboarding Checklist</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">Within 1 Hour of Payment</div>
+                            <p><strong>Send Welcome Message</strong> — Introduce yourself, share questionnaire link,
+                                explain next steps</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">Within 4 Hours</div>
+                            <p><strong>Request Shopify Collaborator Code</strong></p>
+                            <div
+                                style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px; font-size: 0.9em;">
+                                <strong>Send this message to client:</strong><br><br>
+                                <em>"To give our developer access to your store, please share your Shopify collaborator
+                                    code:<br>
+                                    1. Log into Shopify admin<br>
+                                    2. Go to Settings → Users and permissions<br>
+                                    3. Scroll to 'Collaborators' section<br>
+                                    4. Copy the 4-digit code and send it to us<br><br>
+                                    This is the secure way to grant access without sharing passwords."</em><br><br>
+                                <strong>Once received:</strong> Developer will request access using the code, then
+                                client must approve the request in their Shopify admin.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">Within 24 Hours</div>
+                            <p><strong>Schedule Kickoff Call</strong> — 15-30 minutes to align on vision and
+                                expectations
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">Before Work Starts</div>
+                            <p><strong>Confirm ALL Assets Received</strong> — Logo, brand colors, product images,
+                                content
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Welcome Message</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>! 🎉</p>
+                        <p>Welcome to Digital Heroes! I'm <span class="placeholder">[Your Name]</span>, your dedicated
+                            Project Manager. I'll be your single point of contact throughout this journey.</p>
+
+                        <p><strong>Here's what happens next:</strong></p>
+                        <p>1️⃣ Please complete this onboarding questionnaire (5 min): <span
+                                class="placeholder">[Link]</span><br>
+                            2️⃣ Grant us Shopify access: Settings → Users → Add Staff → <span
+                                class="placeholder">[email]</span><br>
+                            3️⃣ Share your brand assets (logo, colors, product images) via <span
+                                class="placeholder">[Google Drive/Dropbox link]</span></p>
+
+                        <p><strong>Your Timeline:</strong><br>
+                            📅 Expected Delivery: <span class="placeholder">[Date - 14 days from now]</span><br>
+                            📊 Daily Progress Updates: Every evening by 6 PM<br>
+                            🔄 Revision Rounds: 2 included (consolidated feedback requested)</p>
+
+                        <p>I'll schedule a 15-minute kickoff call once you've completed the questionnaire.</p>
+                        <p>Questions? I'm here! 🚀</p>
+                    </div>
+
+                    <h3>Onboarding Questionnaire (Must-Have Questions)</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Questions</th>
+                                <th>Why It Matters</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Brand Identity</strong></td>
+                                <td>Brand name, tagline, logo files (PNG/SVG), brand colors (hex codes)</td>
+                                <td>Without this, design can't start</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reference Stores</strong></td>
+                                <td>3 stores you love (and why), 1 store you hate (and why)</td>
+                                <td>Shows their taste and expectations</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Products</strong></td>
+                                <td>Number of products, product images ready?, descriptions ready?</td>
+                                <td>Determines timeline accuracy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Functionality</strong></td>
+                                <td>Any specific apps needed? Payment methods? Shipping zones?</td>
+                                <td>Prevents scope surprises</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Content</strong></td>
+                                <td>About Us story, contact info, social media links</td>
+                                <td>Required for complete delivery</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Policies</strong></td>
+                                <td>Shipping times, return policy details, warranty info</td>
+                                <td>Legal pages need this info</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- 14-Day Timeline -->
+                <section class="section" id="timeline">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2>The 14-Day Shopify Store Build Timeline</h2>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>Why 14 Days is Our Standard</h4>
+                        <p>Clients often ask "Why 14 days? Can't you do it in 3 days?"</p>
+                        <p>Here's the truth: We COULD rush. But rushed stores have bugs, poor conversions, and require
+                            endless revisions. A 14-day timeline allows for proper QA, client feedback, and polish that
+                            makes the difference between a "website" and a "brand."</p>
+                        <p><strong>Our data shows:</strong> Stores delivered in 14 days have 40% fewer revision requests
+                            than stores rushed in 7 days.</p>
+                    </div>
+
+                    <div class="info-box danger" style="margin-bottom: 25px;">
+                        <h4>🚨 CRITICAL: Early Homepage Preview (Days 1-2)</h4>
+                        <p><strong>The first homepage preview MUST be sent to the client within 1-2 days.</strong></p>
+                        <p>This is NON-NEGOTIABLE. Why?</p>
+                        <ul style="margin-top: 10px; line-height: 1.8;">
+                            <li><strong>Get direction early:</strong> Make sure client likes the design direction before
+                                investing more time</li>
+                            <li><strong>Avoid wasted development:</strong> Building 10 days of work without feedback =
+                                potential rework disaster</li>
+                            <li><strong>Protect timeline:</strong> Early feedback = time to adjust. Late feedback =
+                                missed deadlines</li>
+                            <li><strong>Build trust:</strong> Client sees immediate progress and feels engaged</li>
+                        </ul>
+                        <p
+                            style="margin-top: 15px; padding: 10px; background: rgba(255,255,255,0.8); border-radius: 8px;">
+                            <strong>📋 Day 1-2 Preview Must Include:</strong><br>
+                            ✅ Theme installed with brand colors/fonts<br>
+                            ✅ Header with logo and basic navigation<br>
+                            ✅ Hero section with placeholder or real content<br>
+                            ✅ 1-2 homepage sections to show design direction<br><br>
+                            <em>Send Loom video + preview link → Ask: "Does this direction match your vision?"</em>
+                        </p>
+                    </div>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Phase</th>
+                                <th>Deliverables</th>
+                                <th>Client Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="day1-3" style="background: #FEF3C7;">
+                                <td><strong>1-2</strong></td>
+                                <td>🚨 Foundation + EARLY PREVIEW</td>
+                                <td>Theme installed, brand colors/fonts, header, hero section → <strong>SEND PREVIEW TO
+                                        CLIENT</strong></td>
+                                <td><strong>MUST approve design direction before proceeding</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>3-5</strong></td>
+                                <td>Homepage & Core</td>
+                                <td>Full homepage complete, About page, Contact page</td>
+                                <td>Review homepage design direction</td>
+                            </tr>
+                            <tr id="day4-7">
+                                <td><strong>6-8</strong></td>
+                                <td>Products & Collections</td>
+                                <td>Products uploaded, collections created, product page optimized</td>
+                                <td>Review product pages</td>
+                            </tr>
+                            <tr>
+                                <td><strong>9-10</strong></td>
+                                <td>Policies & Checkout</td>
+                                <td>All policy pages, payment setup, shipping configured</td>
+                                <td>Confirm policy details</td>
+                            </tr>
+                            <tr id="day8-14">
+                                <td><strong>11-12</strong></td>
+                                <td>Optimization</td>
+                                <td>Speed optimization, mobile testing, SEO basics</td>
+                                <td>Final review & consolidated feedback</td>
+                            </tr>
+                            <tr>
+                                <td><strong>13-14</strong></td>
+                                <td>QA & Delivery</td>
+                                <td>Full QA, revisions, test order, handover</td>
+                                <td>Final approval</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="warning-story">
+                        <h4>The Client Who Wanted It in 3 Days</h4>
+                        <p>A client once insisted on 3-day delivery for a 50-product store. We explained the risks. They
+                            insisted. We delivered in 3 days.</p>
+                        <p>Result: 47 revision requests over the next 2 weeks. Checkout had a bug we missed. Products
+                            had wrong prices. Client was frustrated. We were frustrated. The "3-day delivery" actually
+                            took 17
+                            days to fully resolve.</p>
+                        <div class="lesson">
+                            <strong>🎯 The Lesson:</strong> Fast delivery that creates problems is SLOWER than proper
+                            delivery.
+                            Never compromise timeline to please a client. You're protecting THEM from a bad experience.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Live Revision Calls -->
+                <section class="section" id="live-calls">
+                    <div class="section-header">
+                        <div class="section-number">📞</div>
+                        <h2>🔄 Live Revision Calls (Google Meet)</h2>
+                    </div>
+
+                    <div class="info-box success">
+                        <h4>🔄 🎯 Why Live Revision Calls Work</h4>
+                        <p>Instead of endless back-and-forth messages, schedule a <strong>1-2 hour Google Meet
+                                call</strong>
+                            where the client guides the developer through corrections in real-time.</p>
+                        <ul style="margin-top: 10px; line-height: 1.8;">
+                            <li><strong>Small fixes done LIVE:</strong> Color changes, text updates, spacing adjustments
+                                —
+                                fixed while client watches</li>
+                            <li><strong>Big fixes noted:</strong> Complex changes are documented and done after the call
+                            </li>
+                            <li><strong>Faster turnaround:</strong> What takes 3 days of messages = 1 hour on a call
+                            </li>
+                            <li><strong>Client feels heard:</strong> They see their feedback implemented immediately
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3>🔄 📋 Live Revision Call Process</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>Action</th>
+                                <th>Who</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. Schedule</strong></td>
+                                <td>Book 1-2 hour slot on Google Meet. Send calendar invite with meeting link.</td>
+                                <td>PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. Prepare</strong></td>
+                                <td>Developer has store open in editor, PM has notes ready, client has their feedback
+                                    list.
+                                </td>
+                                <td>All</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. Share Screen</strong></td>
+                                <td>Developer shares screen showing the live store/editor.</td>
+                                <td>Developer</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. Client Reviews</strong></td>
+                                <td>Client goes through the site page by page, pointing out issues.</td>
+                                <td>Client</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5. Fix Small Things LIVE</strong></td>
+                                <td>Developer fixes immediately: colors, text, spacing, images, small layout tweaks.
+                                </td>
+                                <td>Developer</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6. Note Big Things</strong></td>
+                                <td>PM documents complex changes that need more time (functionality, major redesigns).
+                                </td>
+                                <td>PM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>7. Confirm & Summarize</strong></td>
+                                <td>End call with summary: "We fixed X, Y, Z live. We'll complete A, B by [date]."</td>
+                                <td>PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ What to Fix LIVE vs. LATER</h4>
+                        <table class="styled-table" style="margin-top: 15px;">
+                            <thead>
+                                <tr>
+                                    <th>✅ Fix LIVE on Call</th>
+                                    <th>📝 Note for LATER</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Text changes (headings, descriptions)</td>
+                                    <td>New sections or page layouts</td>
+                                </tr>
+                                <tr>
+                                    <td>Color adjustments</td>
+                                    <td>Complex functionality changes</td>
+                                </tr>
+                                <tr>
+                                    <td>Image swaps (if image is ready)</td>
+                                    <td>App integrations</td>
+                                </tr>
+                                <tr>
+                                    <td>Spacing/padding tweaks</td>
+                                    <td>Custom code development</td>
+                                </tr>
+                                <tr>
+                                    <td>Font size changes</td>
+                                    <td>New product uploads</td>
+                                </tr>
+                                <tr>
+                                    <td>Button text/color</td>
+                                    <td>Checkout flow changes</td>
+                                </tr>
+                                <tr>
+                                    <td>Show/hide elements</td>
+                                    <td>Third-party tool setup</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Scheduling Live Revision Call</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>! 👋</p>
+
+                        <p>Great news — your store is ready for your review!</p>
+
+                        <p>I'd like to schedule a <strong>Live Revision Call</strong> where we can go through the store
+                            together. Our developer will be on the call and will fix small things in real-time while you
+                            watch!</p>
+
+                        <p><strong>What to expect:</strong><br>
+                            📍 Platform: Google Meet<br>
+                            ⏱️ Duration: 1-2 hours<br>
+                            👀 You review, we fix live<br>
+                            📝 Complex items noted for later</p>
+
+                        <p>Available times:<br>
+                            • <span class="placeholder">[Option 1]</span><br>
+                            • <span class="placeholder">[Option 2]</span><br>
+                            • <span class="placeholder">[Option 3]</span></p>
+
+                        <p>Let me know what works best!</p>
+                    </div>
+                </section>
+
+                <!-- Communication -->
+                <section class="section" id="communication">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2>Communication Protocol</h2>
+                    </div>
+
+                    <div class="info-box info">
+                        <h4>📱 The Communication Golden Rule</h4>
+                        <p><strong>Client should NEVER have to ask "Any update?"</strong></p>
+                        <p>If they're asking, you've already failed at communication. You update them before they even
+                            think to ask.</p>
+                    </div>
+
+                    <h3>Daily Update Structure</h3>
+
+                    <div class="template-box">
+                        <div class="template-header">📝 Template: Daily Progress Update</div>
+                        <p>Hi <span class="placeholder">[Client Name]</span>! 👋</p>
+
+                        <p><strong>Today's Progress:</strong><br>
+                            ✅ <span class="placeholder">[What was completed]</span><br>
+                            ✅ <span class="placeholder">[Second item completed]</span></p>
+
+                        <p><strong>Tomorrow's Plan:</strong><br>
+                            🔄 <span class="placeholder">[What will be done next]</span></p>
+
+                        <p><strong>Preview:</strong> <span class="placeholder">[Loom video link or screenshot]</span>
+                        </p>
+
+                        <p><strong>Need From You:</strong> <span class="placeholder">[Any pending items, or "Nothing
+                                needed right now!"]</span></p>
+
+                        <p>Timeline Status: ✅ On Track for <span class="placeholder">[Delivery Date]</span></p>
+                    </div>
+
+                    <h3>↩️ Response Time Requirements</h3>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Message Type</th>
+                                <th>Response Time</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Urgent (blocking work)</strong></td>
+                                <td>Within 30 minutes</td>
+                                <td>"Site is broken", "Can't access store"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Standard question</strong></td>
+                                <td>Within 4 hours</td>
+                                <td>"Can we change the font?", "How do I add a product?"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revision request</strong></td>
+                                <td>Acknowledge within 2 hours, complete within 24-48 hours</td>
+                                <td>"Please change header color to X"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>After hours (past 8 PM)</strong></td>
+                                <td>Next morning by 10 AM</td>
+                                <td>Any non-urgent message</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="conversation">
+                        <h4>💬 Example: Handling "Where's my update?"</h4>
+
+                        <div class="message client">
+                            <div class="sender">👤 Client</div>
+                            "Hi, it's been 2 days and I haven't heard anything. What's the status?"
+                        </div>
+
+                        <div class="message pm">
+                            <div class="sender">📋 You (Wrong Response ❌)</div>
+                            "Sorry, been busy. Will send update soon."
+                            <div class="analysis">❌ <strong>Why this fails:</strong> Vague, dismissive, no
+                                accountability.
+                                Client loses trust.</div>
+                        </div>
+
+                        <div class="message pm">
+                            <div class="sender">📋 You (Right Response ✅)</div>
+                            "Hi [Name]! Apologies for the gap in updates — that's on me. Here's where we are:
+
+                            ✅ Homepage complete
+                            ✅ Product pages 80% done
+                            🔄 Collections being finalized today I'm attaching a preview link. You'll receive daily
+                            updates at 6 PM from now on.
+
+                            Your delivery date (March 15) is still on track. Any questions?"
+                            <div class="analysis">✅ <strong>Why this works:</strong> Ownership, immediate status, visual
+                                proof,
+                                commitment to improve, timeline reassurance.</div>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Asset Collection -->
@@ -2230,6 +3128,7 @@
             </div>
         </div>
     </div>
+    </div> <!-- End main-content -->
     <script src="admin-mode.js"></script>
 
     <!-- Quiz System -->
@@ -2244,20 +3143,15 @@
     
     <script>
         function switchView(viewName) {
-            history.pushState(null, null, '#' + viewName);
-            const sections = ['sop', 'assets'];
-            sections.forEach(section => {
-                const contentEl = document.getElementById('content-' + section);
-                const sidebarEl = document.getElementById('sidebar-' + section + '-links');
-                if (contentEl) contentEl.classList.toggle('hidden', section !== viewName);
-                if (sidebarEl) sidebarEl.classList.toggle('hidden', section !== viewName);
+            var sections = ['sop', 'assets'];
+            sections.forEach(function(section) {
+                var contentEl = document.getElementById('content-' + section);
+                var sidebarEl = document.getElementById('sidebar-' + section + '-links');
+                if (contentEl) { contentEl.classList.toggle('hidden', section !== viewName); }
+                if (sidebarEl) { sidebarEl.classList.toggle('hidden', section !== viewName); }
             });
         }
-        window.addEventListener('DOMContentLoaded', () => {
-            const hash = window.location.hash.replace('#', '');
-            if (hash === 'assets') switchView('assets');
-            else switchView('sop');
-        });
+        switchView('sop');
     </script>
 
     
