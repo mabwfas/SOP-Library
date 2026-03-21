@@ -329,7 +329,7 @@
             border-radius: 16px;
         `;
 
-        const verifyUrl = `https://library.digitalheroes.co.in/verify?code=${verificationCode}`;
+        const verifyUrl = `https://library.digitalheroes.co.in/verify.html?code=${verificationCode}`;
 
         verifySection.innerHTML = `
             <div style="margin-bottom: 20px;">
@@ -369,7 +369,7 @@
                 <span>Verify This Certificate</span>
             </a>
             <div style="margin-top: 15px; color: #64748B; font-size: 0.85em;">
-                library.digitalheroes.co.in/verify
+                library.digitalheroes.co.in/verify.html
             </div>
         `;
 

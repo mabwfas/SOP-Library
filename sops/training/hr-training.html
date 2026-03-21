@@ -8,17 +8,30 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
     <link rel="stylesheet" href="../assets/css/sales-styles.css">
     <style>
-        /* Force all content to have proper contrast in dark training theme */
+        /* ========================================
+           COMPREHENSIVE CONTRAST FIX
+           Dark training theme + light content boxes
+           ======================================== */
 
-        /* Tables: transparent bg with white text by default */
+        /* DEFAULT: All content text is light (for dark background) */
+        #taskView {
+            color: #E2E8F0;
+        }
+
+        /* Tables on dark background: transparent with light text */
+        #taskView table {
+            border-collapse: collapse;
+            width: 100%;
+        }
         #taskView table,
         #taskView td,
-        #taskView tr {
+        #taskView tr,
+        #taskView th {
             background: transparent !important;
             color: #E2E8F0 !important;
             border-color: rgba(255,255,255,0.15) !important;
         }
-        /* Table headers: keep dark bg with white text */
+        /* Table headers: dark bg with white text */
         #taskView thead,
         #taskView thead tr,
         #taskView thead th {
@@ -26,51 +39,151 @@
             color: #fff !important;
         }
 
-        /* Light-background boxes: force black text on everything inside */
-        #taskView [style*="background: #FEF3C7"],
-        #taskView [style*="background: #D1FAE5"],
-        #taskView [style*="background: #FEE2E2"],
-        #taskView [style*="background: #EFF6FF"],
-        #taskView [style*="background: #F0FDF4"],
-        #taskView [style*="background: #FFFBEB"],
-        #taskView [style*="background: #FFF7ED"],
-        #taskView [style*="background: #F8FAFC"],
-        #taskView [style*="background: #ECFDF5"],
-        #taskView [style*="background: #F1F5F9"],
-        #taskView [style*="background: white"],
-        #taskView [style*="background:#FEF3C7"],
-        #taskView [style*="background:#D1FAE5"],
-        #taskView [style*="background:#FEE2E2"],
-        #taskView [style*="background:#EFF6FF"],
-        #taskView [style*="background:#F0FDF4"] {
+        /* ========================================
+           LIGHT BACKGROUND BOXES → BLACK TEXT
+           Catches ALL variations: with/without spaces,
+           hex colors, named colors, rgb values
+           ======================================== */
+        #taskView [style*="background:"] {
+            /* We use a JS-based approach below instead */
+        }
+
+        /* Light pastel backgrounds — force black text on container AND all children */
+        #taskView [style*="#FEF3C7"], #taskView [style*="#fef3c7"],
+        #taskView [style*="#D1FAE5"], #taskView [style*="#d1fae5"],
+        #taskView [style*="#FEE2E2"], #taskView [style*="#fee2e2"],
+        #taskView [style*="#EFF6FF"], #taskView [style*="#eff6ff"],
+        #taskView [style*="#F0FDF4"], #taskView [style*="#f0fdf4"],
+        #taskView [style*="#FFFBEB"], #taskView [style*="#fffbeb"],
+        #taskView [style*="#FFF7ED"], #taskView [style*="#fff7ed"],
+        #taskView [style*="#F8FAFC"], #taskView [style*="#f8fafc"],
+        #taskView [style*="#ECFDF5"], #taskView [style*="#ecfdf5"],
+        #taskView [style*="#F1F5F9"], #taskView [style*="#f1f5f9"],
+        #taskView [style*="#E0F2FE"], #taskView [style*="#e0f2fe"],
+        #taskView [style*="#FEF9C3"], #taskView [style*="#fef9c3"],
+        #taskView [style*="#FCE7F3"], #taskView [style*="#fce7f3"],
+        #taskView [style*="#F3E8FF"], #taskView [style*="#f3e8ff"],
+        #taskView [style*="#DBEAFE"], #taskView [style*="#dbeafe"],
+        #taskView [style*="#FED7AA"], #taskView [style*="#fed7aa"],
+        #taskView [style*="background: white"], #taskView [style*="background:white"],
+        #taskView [style*="background: #fff"], #taskView [style*="background:#fff"] {
             color: #000 !important;
         }
-        #taskView [style*="background: #FEF3C7"] *,
-        #taskView [style*="background: #D1FAE5"] *,
-        #taskView [style*="background: #FEE2E2"] *,
-        #taskView [style*="background: #EFF6FF"] *,
-        #taskView [style*="background: #F0FDF4"] *,
-        #taskView [style*="background: #FFFBEB"] *,
-        #taskView [style*="background: #FFF7ED"] *,
-        #taskView [style*="background: #F8FAFC"] *,
-        #taskView [style*="background: #ECFDF5"] *,
-        #taskView [style*="background: #F1F5F9"] *,
-        #taskView [style*="background: white"] *,
-        #taskView [style*="background:#FEF3C7"] *,
-        #taskView [style*="background:#D1FAE5"] *,
-        #taskView [style*="background:#FEE2E2"] *,
-        #taskView [style*="background:#EFF6FF"] *,
-        #taskView [style*="background:#F0FDF4"] * {
+
+        /* ALL children inside light boxes get black text */
+        #taskView [style*="#FEF3C7"] *, #taskView [style*="#fef3c7"] *,
+        #taskView [style*="#D1FAE5"] *, #taskView [style*="#d1fae5"] *,
+        #taskView [style*="#FEE2E2"] *, #taskView [style*="#fee2e2"] *,
+        #taskView [style*="#EFF6FF"] *, #taskView [style*="#eff6ff"] *,
+        #taskView [style*="#F0FDF4"] *, #taskView [style*="#f0fdf4"] *,
+        #taskView [style*="#FFFBEB"] *, #taskView [style*="#fffbeb"] *,
+        #taskView [style*="#FFF7ED"] *, #taskView [style*="#fff7ed"] *,
+        #taskView [style*="#F8FAFC"] *, #taskView [style*="#f8fafc"] *,
+        #taskView [style*="#ECFDF5"] *, #taskView [style*="#ecfdf5"] *,
+        #taskView [style*="#F1F5F9"] *, #taskView [style*="#f1f5f9"] *,
+        #taskView [style*="#E0F2FE"] *, #taskView [style*="#e0f2fe"] *,
+        #taskView [style*="#FEF9C3"] *, #taskView [style*="#fef9c3"] *,
+        #taskView [style*="#FCE7F3"] *, #taskView [style*="#fce7f3"] *,
+        #taskView [style*="#F3E8FF"] *, #taskView [style*="#f3e8ff"] *,
+        #taskView [style*="#DBEAFE"] *, #taskView [style*="#dbeafe"] *,
+        #taskView [style*="#FED7AA"] *, #taskView [style*="#fed7aa"] *,
+        #taskView [style*="background: white"] *, #taskView [style*="background:white"] *,
+        #taskView [style*="background: #fff"] *, #taskView [style*="background:#fff"] * {
             color: #000 !important;
         }
-        /* Tables inside light boxes also get black text */
-        #taskView [style*="background: #FEF3C7"] td,
-        #taskView [style*="background: #D1FAE5"] td,
-        #taskView [style*="background: #FEE2E2"] td,
-        #taskView [style*="background: #EFF6FF"] td,
-        #taskView [style*="background: white"] td {
+
+        /* Tables inside light boxes: black text + transparent bg */
+        #taskView [style*="#FEF3C7"] td, #taskView [style*="#FEF3C7"] th,
+        #taskView [style*="#D1FAE5"] td, #taskView [style*="#D1FAE5"] th,
+        #taskView [style*="#FEE2E2"] td, #taskView [style*="#FEE2E2"] th,
+        #taskView [style*="#EFF6FF"] td, #taskView [style*="#EFF6FF"] th,
+        #taskView [style*="#F0FDF4"] td, #taskView [style*="#F0FDF4"] th,
+        #taskView [style*="#FFFBEB"] td, #taskView [style*="#FFFBEB"] th,
+        #taskView [style*="#F8FAFC"] td, #taskView [style*="#F8FAFC"] th,
+        #taskView [style*="background: white"] td, #taskView [style*="background: white"] th {
             color: #000 !important;
             background: transparent !important;
+            border-color: #CBD5E1 !important;
+        }
+
+        /* Table headers inside light boxes: dark bg with white text */
+        #taskView [style*="#FEF3C7"] thead th,
+        #taskView [style*="#D1FAE5"] thead th,
+        #taskView [style*="#FEE2E2"] thead th,
+        #taskView [style*="#EFF6FF"] thead th,
+        #taskView [style*="#F0FDF4"] thead th,
+        #taskView [style*="#FFFBEB"] thead th,
+        #taskView [style*="#F8FAFC"] thead th,
+        #taskView [style*="background: white"] thead th {
+            background: #334155 !important;
+            color: #fff !important;
+            border-color: #475569 !important;
+        }
+
+        /* CRITICAL: Table rows with dark inline backgrounds inside light boxes
+           must keep white text — override the wildcard * rule above */
+        #taskView [style*="background"] tr[style*="#1E293B"],
+        #taskView [style*="background"] tr[style*="#1E293B"] th,
+        #taskView [style*="background"] tr[style*="#1E293B"] td,
+        #taskView [style*="background"] tr[style*="#334155"],
+        #taskView [style*="background"] tr[style*="#334155"] th,
+        #taskView [style*="background"] tr[style*="#334155"] td,
+        #taskView [style*="background"] thead tr,
+        #taskView [style*="background"] thead th {
+            color: #fff !important;
+            background: #334155 !important;
+            border-color: #475569 !important;
+        }
+
+        /* Code/pre blocks inside light boxes: keep dark bg + light text */
+        #taskView [style*="background"] [style*="#1E293B"],
+        #taskView [style*="background"] [style*="#1E293B"] * {
+            color: #E2E8F0 !important;
+        }
+
+        /* Ensure strong/bold text is also black inside light boxes */
+        #taskView [style*="#FEF3C7"] strong,
+        #taskView [style*="#D1FAE5"] strong,
+        #taskView [style*="#FEE2E2"] strong,
+        #taskView [style*="#EFF6FF"] strong,
+        #taskView [style*="#F0FDF4"] strong,
+        #taskView [style*="#FFFBEB"] strong,
+        #taskView [style*="#F8FAFC"] strong,
+        #taskView [style*="background: white"] strong {
+            color: #000 !important;
+        }
+
+        /* Links inside light boxes */
+        #taskView [style*="#FEF3C7"] a,
+        #taskView [style*="#D1FAE5"] a,
+        #taskView [style*="#FEE2E2"] a,
+        #taskView [style*="#EFF6FF"] a,
+        #taskView [style*="#F0FDF4"] a,
+        #taskView [style*="background: white"] a {
+            color: #1D4ED8 !important;
+        }
+
+        /* Responsive tables — prevent overflow */
+        #taskView table {
+            table-layout: fixed;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        #taskView td, #taskView th {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        @media (max-width: 768px) {
+            #taskView table {
+                font-size: 0.85em;
+            }
+            #taskView td, #taskView th {
+                padding: 8px !important;
+            }
+            /* Stack grid layouts on mobile */
+            #taskView [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
         }
     </style>
 </head>
@@ -169,7 +282,7 @@
     </div>
 
     <!-- Quiz Data Script -->
-    <script src="hr-training-data-new.js?v=2"></script>
+    <script src="hr-training-data-new.js?v=3"></script>
     <script src="hr-training-app.js"></script>
 
     <!-- Mermaid.js for Diagrams -->
@@ -205,6 +318,91 @@
     <script src="training-quiz-enhance.js"></script>
     <script src="training-certificate.js?v=3"></script>
     <script src="../assets/js/training-theme.js"></script>
+    <script>
+        // Dynamic contrast fix: detect light backgrounds and force black text
+        function fixContrast() {
+            document.querySelectorAll('#taskView [style]').forEach(el => {
+                const style = el.getAttribute('style') || '';
+                const bgMatch = style.match(/background(?:-color)?:\s*(#[A-Fa-f0-9]{3,8}|white|rgb\([^)]+\))/i);
+                if (!bgMatch) return;
+
+                const color = bgMatch[1].toLowerCase();
+                let isLight = false;
+                if (color === 'white' || color === '#fff' || color === '#ffffff') {
+                    isLight = true;
+                } else if (color.startsWith('rgb')) {
+                    const rgbM = color.match(/\d+/g);
+                    if (rgbM && rgbM.length >= 3) {
+                        const lum = 0.299*rgbM[0] + 0.587*rgbM[1] + 0.114*rgbM[2];
+                        if (lum > 170) isLight = true;
+                    }
+                } else if (color.startsWith('#')) {
+                    let hex = color.replace('#', '');
+                    if (hex.length === 3) hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+                    if (hex.length >= 6) {
+                        const r = parseInt(hex.substring(0,2), 16);
+                        const g = parseInt(hex.substring(2,4), 16);
+                        const b = parseInt(hex.substring(4,6), 16);
+                        if ((0.299*r + 0.587*g + 0.114*b) > 170) isLight = true;
+                    }
+                }
+                if (!isLight) return;
+
+                // Force black text on this light-bg element
+                el.style.setProperty('color', '#000', 'important');
+
+                // Force black text on ALL children, with smart exceptions
+                el.querySelectorAll('*').forEach(child => {
+                    // Skip children that have their own dark background
+                    const cs = child.getAttribute('style') || '';
+
+                    // Check if child or any ancestor (up to el) has a dark bg
+                    let hasDarkBg = false;
+                    let check = child;
+                    while (check && check !== el) {
+                        const s = check.getAttribute('style') || '';
+                        const m = s.match(/background(?:-color)?:\s*(#[A-Fa-f0-9]{3,8}|rgb\([^)]+\))/i);
+                        if (m) {
+                            const c = m[1].toLowerCase();
+                            let lum = 999;
+                            if (c.startsWith('#')) {
+                                let h = c.replace('#','');
+                                if (h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+                                if (h.length >= 6) lum = 0.299*parseInt(h.substring(0,2),16) + 0.587*parseInt(h.substring(2,4),16) + 0.114*parseInt(h.substring(4,6),16);
+                            } else if (c.startsWith('rgb')) {
+                                const rm = c.match(/\d+/g);
+                                if (rm) lum = 0.299*rm[0] + 0.587*rm[1] + 0.114*rm[2];
+                            }
+                            if (lum < 128) { hasDarkBg = true; break; }
+                        }
+                        check = check.parentElement;
+                    }
+
+                    if (hasDarkBg) {
+                        // Dark sub-element: force WHITE text instead
+                        child.style.setProperty('color', '#E2E8F0', 'important');
+                    } else {
+                        // Light context: force BLACK text
+                        child.style.setProperty('color', '#000', 'important');
+                    }
+                });
+            });
+        }
+        // Run on mutations AND after each task load
+        const contrastObserver = new MutationObserver(() => { setTimeout(fixContrast, 50); });
+        contrastObserver.observe(document.getElementById('taskView') || document.body, {
+            childList: true, subtree: true
+        });
+        // Also hook into openTask to run after content renders
+        const origOpenTask = window.openTask;
+        if (origOpenTask) {
+            window.openTask = function() {
+                origOpenTask.apply(this, arguments);
+                setTimeout(fixContrast, 100);
+                setTimeout(fixContrast, 500);
+            };
+        }
+    </script>
 </body>
 
 </html>
