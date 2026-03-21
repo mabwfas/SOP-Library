@@ -14,6 +14,7 @@
 
     const COURSE_MAP = {
         'sales-training':        'SL',
+        'ai-training':           'AT',
         'cs-training':           'CS',
         'finance-training':      'FN',
         'content-training':      'CW',
