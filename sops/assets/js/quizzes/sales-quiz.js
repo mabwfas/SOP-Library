@@ -3,8 +3,8 @@ const salesQuestions = [
     { q: "What is the #1 rule regarding client updates?", options: ["Update only when asked", "Client NEVER waits for an update", "Update once a week", "Update only on delivery"], correct: 1 },
     { q: "What should you discuss BEFORE taking an order?", options: ["Color schemes", "Hard technical problems", "Logo design", "Font choices"], correct: 1 },
     { q: "How do we price projects?", options: ["Fixed rate card", "Based on Client's Budget Perception", "Lowest market rate", "Randomly"], correct: 1 },
-    { q: "What is the commission for a $6,000 project?", options: ["$0", "$300 (5%)", "$600 (10%)", "$100"], correct: 1 },
-    { q: "What is the commission for a $2,000 project?", options: ["$100", "$0 (No commission under $5k)", "$50", "$200"], correct: 1 },
+    { q: "What is the commission rate for a $6,000 project?", options: ["1%", "2%", "3%", "5%"], correct: 2 },
+    { q: "What is the commission rate for a $2,000 project?", options: ["1%", "2%", "3%", "No commission"], correct: 1 },
 
     // 6-10: Red Flags & Filtering
     { q: "If a client asks 'What's your lowest price?', they are a:", options: ["High value client", "Price Shopper (Red Flag)", "Strategic partner", "Good negotiator"], correct: 1 },
