@@ -414,6 +414,7 @@
             <li class="nav-item"><a href="#marketing-skills" class="nav-link"><span class="nav-icon">📈</span> Marketing Skills</a></li>
             <li class="nav-item"><a href="#image-gen" class="nav-link"><span class="nav-icon">🖼️</span> Image Generation</a></li>
             <li class="nav-item"><a href="#security" class="nav-link"><span class="nav-icon">🔒</span> Security & Ethics</a></li>
+            <li class="nav-item"><a href="#claude-skills" class="nav-link"><span class="nav-icon">🧩</span> Claude Skills & MCP</a></li>
             <li class="nav-item"><a href="#role-guide" class="nav-link"><span class="nav-icon">👤</span> AI by Role</a></li>
         </ul>
         <div style="padding: 20px 24px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 10px;">
@@ -2588,6 +2589,193 @@ Now write 3 versions of the product page hero copy — one optimized for each pe
                 <li><strong>Be transparent:</strong> If a client asks, be honest about AI-assisted workflows</li>
                 <li><strong>Copyright caution:</strong> For logos and brand identity, always refine AI concepts with human tools</li>
             </ul>
+        </section>
+
+        <!-- SECTION: CLAUDE SKILLS & MCP -->
+        <section id="claude-skills" class="content-section">
+            <h2>&#129513; Claude Skills &amp; MCP &mdash; Supercharge Your AI Output</h2>
+            <p>Out of the box, Claude is powerful. But with <strong>Skills</strong> and <strong>MCP (Model Context Protocol)</strong>, it becomes an expert-level assistant that knows your exact workflows, tools, and preferences. This is the difference between generic AI output and production-ready work.</p>
+
+            <h3>What Are Claude Skills?</h3>
+            <p>Skills are <strong>reusable instruction sets</strong> that teach Claude how to perform specific tasks the way YOU want them done. Think of them as specialized training modules for Claude &mdash; each skill gives Claude deep domain knowledge and step-by-step procedures for a particular job.</p>
+
+            <p>Without skills, you get generic output. With skills, you get output that matches your exact brand voice, coding standards, file formats, and quality bar.</p>
+
+            <table>
+                <tr><th>Without Skills</th><th>With Skills</th></tr>
+                <tr><td>Generic blog post that sounds like every other AI article</td><td>SEO-optimized post matching your brand voice, internal linking strategy, and CTA format</td></tr>
+                <tr><td>Basic code that works but doesn't follow your patterns</td><td>Code that follows your architecture, naming conventions, error handling, and test patterns</td></tr>
+                <tr><td>Simple commit message</td><td>Conventional Commit with proper scope, body, and co-author tag following your git governance rules</td></tr>
+                <tr><td>Vague project plan</td><td>Detailed implementation plan with file-level changes, risk analysis, and architecture trade-offs</td></tr>
+            </table>
+
+            <h3>How Skills Work</h3>
+            <p>Every skill is a <strong>Markdown file</strong> (SKILL.md) stored in your project's <code>.claude/skills/</code> directory or your global <code>~/.claude/skills/</code> folder. When you invoke a skill (using <code>/skillname</code> or it triggers automatically), Claude reads the instructions and follows them precisely.</p>
+
+            <p>A skill file has two parts:</p>
+            <ol>
+                <li><strong>Frontmatter</strong> &mdash; Metadata that tells Claude WHEN to trigger the skill (description, trigger patterns, allowed tools)</li>
+                <li><strong>Body</strong> &mdash; The actual instructions Claude follows (step-by-step procedures, rules, examples, output format)</li>
+            </ol>
+
+            <div class="prompt-box">
+# Example skill file: .claude/skills/commit/SKILL.md
+
+---
+description: "Stage working tree changes and create a Conventional Commit (no push)."
+allowed-tools: ["Bash", "Read", "Glob", "Grep"]
+---
+
+## Instructions
+1. Run git status to see all changes
+2. Run git diff to understand what changed
+3. Draft a commit message following Conventional Commits format
+4. Stage specific files (never use git add -A)
+5. Create the commit with Co-Authored-By tag
+            </div>
+
+            <h3>Skills We Use at DH</h3>
+            <table>
+                <tr><th>Skill</th><th>Trigger</th><th>What It Does</th></tr>
+                <tr><td><strong>git:cm</strong></td><td><code>/commit</code></td><td>Stage changes and create a Conventional Commit with proper format, no push</td></tr>
+                <tr><td><strong>git:cp</strong></td><td><code>/cp</code></td><td>Stage, commit, AND push following git governance rules</td></tr>
+                <tr><td><strong>git:pr</strong></td><td><code>/pr</code></td><td>Create a pull request from the current branch with summary and test plan</td></tr>
+                <tr><td><strong>review</strong></td><td><code>/review</code></td><td>Run local code review gate before pushing &mdash; checks quality, patterns, bugs</td></tr>
+                <tr><td><strong>security-scan</strong></td><td><code>/security-scan</code></td><td>Scan code for vulnerabilities, secrets, injection risks before pushing</td></tr>
+                <tr><td><strong>simplify</strong></td><td><code>/simplify</code></td><td>Review changed code for reuse opportunities, quality, and efficiency</td></tr>
+                <tr><td><strong>frontend-design</strong></td><td>Auto (when building UI)</td><td>Creates distinctive, production-grade frontend interfaces &mdash; avoids generic AI aesthetics</td></tr>
+                <tr><td><strong>marketing-skill</strong></td><td>Auto (marketing tasks)</td><td>42 specialist marketing skills covering content, SEO, CRO, channels, growth</td></tr>
+                <tr><td><strong>docx</strong></td><td>Auto (.docx files)</td><td>Create, read, edit Word documents with formatting, headers, page numbers</td></tr>
+                <tr><td><strong>xlsx</strong></td><td>Auto (.xlsx files)</td><td>Create and edit spreadsheets with formulas, charts, formatting</td></tr>
+                <tr><td><strong>pdf</strong></td><td>Auto (.pdf files)</td><td>Read, merge, split, watermark, OCR, fill forms in PDF files</td></tr>
+                <tr><td><strong>pptx</strong></td><td>Auto (.pptx files)</td><td>Create and edit PowerPoint presentations with layouts and speaker notes</td></tr>
+                <tr><td><strong>schedule</strong></td><td><code>/schedule</code></td><td>Create scheduled tasks that run on intervals or at specific times</td></tr>
+                <tr><td><strong>c-level-advisor</strong></td><td>Auto (strategy questions)</td><td>Virtual board of directors &mdash; 28 skills covering 10 C-level roles</td></tr>
+                <tr><td><strong>skill-creator</strong></td><td><code>/skill-creator</code></td><td>Create new custom skills, run evals, benchmark performance</td></tr>
+            </table>
+
+            <h3>How to Add Skills</h3>
+            <p>There are three ways to add skills to Claude:</p>
+
+            <h4>Method 1: Install from npm (Community Skills)</h4>
+            <div class="prompt-box">npx skills add coreyhaines31/marketingskills</div>
+            <p>This downloads the skill files into your project's <code>.claude/skills/</code> directory. Community skills are open-source and peer-reviewed.</p>
+
+            <h4>Method 2: Create Your Own Skill</h4>
+            <div class="prompt-box">
+# Step 1: Create the directory
+mkdir -p .claude/skills/my-custom-skill
+
+# Step 2: Create the skill file
+# Write your SKILL.md with frontmatter + instructions
+
+# Step 3: Use it
+# Type /my-custom-skill in Claude Code, or it auto-triggers based on description
+            </div>
+
+            <h4>Method 3: Use the Skill Creator</h4>
+            <p>Ask Claude Code: <code>/skill-creator</code> and describe what you want. It will generate the skill file, test it, and optimize the trigger description for accuracy.</p>
+
+            <div class="tip-box">
+                <h4>&#128161; Pro Tip: Global vs Project Skills</h4>
+                <p><strong>Project skills</strong> (<code>.claude/skills/</code>) are specific to one repo &mdash; use for project-specific coding standards, deploy procedures, etc.<br>
+                <strong>Global skills</strong> (<code>~/.claude/skills/</code>) work everywhere &mdash; use for personal preferences, commit style, review checklist, etc.</p>
+            </div>
+
+            <h3>What Is MCP (Model Context Protocol)?</h3>
+            <p>MCP is an <strong>open protocol</strong> that lets Claude connect to external tools and services. If Skills teach Claude WHAT to do, MCP gives Claude the TOOLS to do it. MCP servers act as bridges &mdash; each one gives Claude new capabilities.</p>
+
+            <table>
+                <tr><th>MCP Server</th><th>What It Gives Claude</th><th>Use Case</th></tr>
+                <tr><td><strong>Gemini MCP</strong></td><td>Google Gemini AI &mdash; image generation, video, web search, document analysis, text-to-speech</td><td>Generate product images, research competitors, analyze PDFs, create audio</td></tr>
+                <tr><td><strong>21st.dev MCP</strong></td><td>UI component library &mdash; search, build, and refine React components</td><td>Instantly find and integrate production-ready UI components</td></tr>
+                <tr><td><strong>Chrome Extension MCP</strong></td><td>Browser control &mdash; navigate, click, screenshot, read pages</td><td>QA audits, competitor analysis, form automation, visual testing</td></tr>
+                <tr><td><strong>n8n MCP</strong></td><td>Workflow automation &mdash; search nodes, build workflows, validate configs</td><td>Create automated pipelines connecting 400+ apps</td></tr>
+                <tr><td><strong>Scheduled Tasks MCP</strong></td><td>Cron-based task scheduling &mdash; create, update, list recurring jobs</td><td>Automated daily reports, recurring checks, reminder systems</td></tr>
+                <tr><td><strong>Claude Flow MCP</strong></td><td>Multi-agent orchestration &mdash; spawn agents, manage tasks, coordinate work</td><td>Parallel code reviews, distributed research, swarm intelligence</td></tr>
+                <tr><td><strong>Preview MCP</strong></td><td>Live dev server preview &mdash; screenshot, inspect, click, fill forms in browser</td><td>Visual QA, responsive testing, interaction testing without leaving Claude</td></tr>
+            </table>
+
+            <h3>How to Add MCP Servers</h3>
+            <p>MCP servers are configured in your <strong>Claude settings file</strong>. There are two levels:</p>
+
+            <h4>Project-Level (recommended for team consistency)</h4>
+            <p>Add to <code>.claude/settings.json</code> in your project root:</p>
+            <div class="prompt-box">
+{
+  "mcpServers": {
+    "gemini": {
+      "command": "npx",
+      "args": ["-y", "gemini-mcp"],
+      "env": {
+        "GEMINI_API_KEY": "your-api-key-here"
+      }
+    },
+    "magic": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/21st-mcp"],
+      "env": {
+        "TWENTY_FIRST_API_KEY": "your-key-here"
+      }
+    }
+  }
+}
+            </div>
+
+            <h4>Global-Level (works across all projects)</h4>
+            <p>Add to <code>~/.claude/settings.json</code> in your home directory. Same format as above but applies everywhere.</p>
+
+            <h4>Adding via Antigravity (Easiest)</h4>
+            <p>If you use <strong>Antigravity</strong> (our recommended Claude Code launcher), it manages MCP servers automatically through its GUI. Just enable/disable servers from the settings panel.</p>
+
+            <h3>Skills + MCP Together = 10x Output</h3>
+            <p>The real power comes from combining Skills with MCP. Here is how they work together:</p>
+
+            <div class="grid-2">
+                <div class="tool-card">
+                    <h4>&#128187; Developer Workflow</h4>
+                    <p><strong>Skills:</strong> git:cm, review, security-scan, frontend-design<br>
+                    <strong>MCP:</strong> 21st.dev (UI components), Preview (visual QA), Chrome (browser testing)<br>
+                    <strong>Result:</strong> Build a feature, get UI components, preview it live, run review gate, commit with proper format, all without leaving the terminal.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128200; Marketing Workflow</h4>
+                    <p><strong>Skills:</strong> marketing-skill (42 sub-skills), content creation<br>
+                    <strong>MCP:</strong> Gemini (image gen + web search), Chrome (competitor analysis)<br>
+                    <strong>Result:</strong> Research keywords, analyze competitors live in browser, generate SEO content, create matching images, all in one session.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128203; HR Workflow</h4>
+                    <p><strong>Skills:</strong> docx, pdf, xlsx<br>
+                    <strong>MCP:</strong> Gemini (signature generation), Scheduled Tasks (recurring reports)<br>
+                    <strong>Result:</strong> Generate offer letters as Word docs, create salary reports in Excel, merge documents into PDF, schedule weekly payroll reports.</p>
+                </div>
+                <div class="tool-card">
+                    <h4>&#128736; PM Workflow</h4>
+                    <p><strong>Skills:</strong> c-level-advisor, pptx, schedule<br>
+                    <strong>MCP:</strong> Chrome (Jira/Trello reading), n8n (workflow automation)<br>
+                    <strong>Result:</strong> Read project boards, generate status deck, schedule daily standup summaries, get strategic advice on roadmap decisions.</p>
+                </div>
+            </div>
+
+            <h3>Quick Start Checklist</h3>
+            <table>
+                <tr><th>Step</th><th>Action</th><th>Command / Location</th></tr>
+                <tr><td>1</td><td>Install Claude Code</td><td><code>npm install -g @anthropic-ai/claude-code</code></td></tr>
+                <tr><td>2</td><td>Add marketing skills</td><td><code>npx skills add coreyhaines31/marketingskills</code></td></tr>
+                <tr><td>3</td><td>Configure MCP servers</td><td>Edit <code>.claude/settings.json</code> or use Antigravity GUI</td></tr>
+                <tr><td>4</td><td>Get API keys</td><td>Gemini: <a href="https://aistudio.google.com/apikey" target="_blank" style="color:#8B5CF6;">aistudio.google.com</a> &mdash; 21st.dev: <a href="https://21st.dev" target="_blank" style="color:#8B5CF6;">21st.dev</a></td></tr>
+                <tr><td>5</td><td>Test it</td><td>Type <code>/commit</code> or <code>/review</code> in Claude Code to verify skills work</td></tr>
+                <tr><td>6</td><td>Create your own skill</td><td>Use <code>/skill-creator</code> or manually create <code>.claude/skills/my-skill/SKILL.md</code></td></tr>
+            </table>
+
+            <div class="tip-box">
+                <h4>&#128293; Bottom Line</h4>
+                <p><strong>Skills</strong> = teach Claude your exact processes and standards<br>
+                <strong>MCP</strong> = give Claude access to external tools (browsers, APIs, databases, AI models)<br>
+                <strong>Together</strong> = Claude becomes a specialized team member who knows your tools, follows your rules, and delivers production-ready work every time.</p>
+                <p style="margin-top:12px;">Every DH team member should have at minimum: <strong>git skills</strong> (commit, review) + <strong>Gemini MCP</strong> (image gen, search) + <strong>Chrome MCP</strong> (browser automation) configured. This is the baseline for 10x productivity.</p>
+            </div>
         </section>
 
         <!-- SECTION 12: ROLE GUIDE -->
