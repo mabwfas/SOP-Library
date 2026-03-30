@@ -625,6 +625,158 @@ After creating CLAUDE.md, show me what you wrote so I can review it.</pre>
             <div style="margin-top: 16px; background: #FEF2F2; border: 1px solid #FECACA; border-radius: 10px; padding: 16px;">
                 <p style="margin: 0; color: #991B1B; font-weight: 600; font-size: 0.92em;">&#128680; Common Mistake: Don't confuse "installing 2,449 skills" with productivity. Claude only loads 1-2 skills per session based on what you're doing. Having them installed is good for coverage, but the real gain comes from CLAUDE.md + MCP servers + knowing which skill to ask for.</p>
             </div>
+
+            <!-- ADDITIONAL 10x WINS -->
+            <div style="margin-top: 20px; background: white; border: 2px solid #8B5CF6; border-radius: 12px; padding: 24px;">
+                <h3 style="margin: 0 0 16px; color: #5B21B6; font-size: 1.15em;">&#9889; Additional 10x Wins (Easy to Set Up)</h3>
+
+                <!-- 1. CUSTOM SLASH COMMANDS -->
+                <div style="background: #F8FAFC; border-radius: 10px; padding: 18px; margin-bottom: 14px; border-left: 4px solid #8B5CF6;">
+                    <p style="margin: 0 0 8px; font-weight: 700; color: #1E293B; font-size: 0.95em;">1. Custom Slash Commands Per Role</p>
+                    <p style="margin: 0 0 10px; color: #475569; font-size: 0.88em; line-height: 1.6;">Create reusable commands for your team's most repetitive tasks. Each command lives as a markdown file in <code style="background: #1E293B; color: #E2E8F0; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">.claude/commands/</code> in your project.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div style="background: white; border-radius: 8px; padding: 12px; border: 1px solid #E2E8F0;">
+                            <p style="margin: 0 0 4px; font-weight: 600; color: #7C3AED; font-size: 0.85em;">Developer Commands</p>
+                            <ul style="margin: 0; padding-left: 16px; color: #475569; font-size: 0.82em; line-height: 1.7;">
+                                <li><code>/shopify-section</code> &mdash; Generate a Shopify section with schema</li>
+                                <li><code>/speed-audit</code> &mdash; Run Lighthouse + fix performance issues</li>
+                                <li><code>/debug</code> &mdash; Systematic debugging with logs and root cause</li>
+                            </ul>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 12px; border: 1px solid #E2E8F0;">
+                            <p style="margin: 0 0 4px; font-weight: 600; color: #7C3AED; font-size: 0.85em;">Non-Dev Commands</p>
+                            <ul style="margin: 0; padding-left: 16px; color: #475569; font-size: 0.82em; line-height: 1.7;">
+                                <li><code>/client-email</code> &mdash; Draft professional client response</li>
+                                <li><code>/seo-audit</code> &mdash; Full SEO analysis of a page/site</li>
+                                <li><code>/proposal</code> &mdash; Generate client proposal from brief</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <p style="margin: 0 0 4px; font-weight: 600; color: #1E293B; font-size: 0.85em;">How to create:</p>
+                        <pre style="background: #1E293B; color: #E2E8F0; border-radius: 6px; padding: 10px; margin: 0; font-family: 'Courier New', monospace; font-size: 0.8em; white-space: pre-wrap; line-height: 1.5;"># Create in your project:
+mkdir -p .claude/commands
+
+# Example: .claude/commands/shopify-section.md
+# Write the prompt template inside the file.
+# Claude reads it when you type /shopify-section</pre>
+                    </div>
+                </div>
+
+                <!-- 2. HOOKS -->
+                <div style="background: #F8FAFC; border-radius: 10px; padding: 18px; margin-bottom: 14px; border-left: 4px solid #10B981;">
+                    <p style="margin: 0 0 8px; font-weight: 700; color: #1E293B; font-size: 0.95em;">2. Hooks (Auto-Quality on Every Action)</p>
+                    <p style="margin: 0 0 10px; color: #475569; font-size: 0.88em; line-height: 1.6;">Hooks run shell commands automatically before/after Claude's actions. They catch mistakes before they happen. Configure in <code style="background: #1E293B; color: #E2E8F0; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">.claude/settings.json</code>.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div style="background: #D1FAE5; border-radius: 8px; padding: 12px;">
+                            <p style="margin: 0 0 4px; font-weight: 600; color: #065F46; font-size: 0.85em;">What Hooks Can Do</p>
+                            <ul style="margin: 0; padding-left: 16px; color: #064E3B; font-size: 0.82em; line-height: 1.7;">
+                                <li>Auto-lint after every file edit</li>
+                                <li>Auto-run tests before committing</li>
+                                <li>Block commits with failing tests</li>
+                                <li>Auto-format code on save</li>
+                            </ul>
+                        </div>
+                        <div style="background: #FEF2F2; border-radius: 8px; padding: 12px;">
+                            <p style="margin: 0 0 4px; font-weight: 600; color: #991B1B; font-size: 0.85em;">Without Hooks</p>
+                            <ul style="margin: 0; padding-left: 16px; color: #7F1D1D; font-size: 0.82em; line-height: 1.7;">
+                                <li>Bugs slip through to commits</li>
+                                <li>Inconsistent code formatting</li>
+                                <li>Tests forgotten before push</li>
+                                <li>Manual checking every time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. SHARED CLAUDE.MD TEMPLATES -->
+                <div style="background: #F8FAFC; border-radius: 10px; padding: 18px; margin-bottom: 14px; border-left: 4px solid #F59E0B;">
+                    <p style="margin: 0 0 8px; font-weight: 700; color: #1E293B; font-size: 0.95em;">3. Shared CLAUDE.md Templates Per Project Type</p>
+                    <p style="margin: 0 0 10px; color: #475569; font-size: 0.88em; line-height: 1.6;">Don't let every team member write their own CLAUDE.md from scratch. Create starter templates for each project type we commonly build.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;">
+                        <div style="background: white; border-radius: 8px; padding: 10px; border: 1px solid #E2E8F0; text-align: center;">
+                            <p style="margin: 0 0 4px; font-size: 1.2em;">&#128722;</p>
+                            <p style="margin: 0; font-weight: 600; color: #1E293B; font-size: 0.82em;">Shopify Store</p>
+                            <p style="margin: 4px 0 0; color: #475569; font-size: 0.75em;">Theme dev, Liquid, sections, speed optimization</p>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 10px; border: 1px solid #E2E8F0; text-align: center;">
+                            <p style="margin: 0 0 4px; font-size: 1.2em;">&#127760;</p>
+                            <p style="margin: 0; font-weight: 600; color: #1E293B; font-size: 0.82em;">WordPress Site</p>
+                            <p style="margin: 4px 0 0; color: #475569; font-size: 0.75em;">Theme, plugins, ACF, WooCommerce</p>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 10px; border: 1px solid #E2E8F0; text-align: center;">
+                            <p style="margin: 0 0 4px; font-size: 1.2em;">&#9889;</p>
+                            <p style="margin: 0; font-weight: 600; color: #1E293B; font-size: 0.82em;">Next.js / React App</p>
+                            <p style="margin: 4px 0 0; color: #475569; font-size: 0.75em;">Components, API routes, Supabase, Vercel</p>
+                        </div>
+                    </div>
+                    <p style="margin: 10px 0 0; color: #92400E; font-size: 0.82em; font-weight: 600;">Ask management for the starter templates, or run the Team Prompt above &mdash; it generates one tailored to your current project.</p>
+                </div>
+
+                <!-- 4. MCP SERVER SETUP -->
+                <div style="background: #F8FAFC; border-radius: 10px; padding: 18px; margin-bottom: 14px; border-left: 4px solid #EF4444;">
+                    <p style="margin: 0 0 8px; font-weight: 700; color: #1E293B; font-size: 0.95em;">4. MCP Servers &mdash; The Biggest Multiplier</p>
+                    <p style="margin: 0 0 10px; color: #475569; font-size: 0.88em; line-height: 1.6;">MCP (Model Context Protocol) servers let Claude directly interact with external tools. Instead of copy-pasting between Claude and Supabase, Claude queries your database directly. This is the single biggest productivity unlock after CLAUDE.md.</p>
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-top: 8px;">
+                        <tr style="background: #EF4444;">
+                            <th style="padding: 8px 12px; color: white; text-align: left;">MCP Server</th>
+                            <th style="padding: 8px 12px; color: white; text-align: left;">What It Does</th>
+                            <th style="padding: 8px 12px; color: white; text-align: left;">Who Needs It</th>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; font-weight: 600;">Supabase MCP</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Claude reads/writes your database, manages auth, runs migrations</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Developers</td>
+                        </tr>
+                        <tr style="background: #FEF2F2;">
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; font-weight: 600;">GitHub MCP</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Claude creates PRs, reviews code, manages issues directly</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Developers, PMs</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; font-weight: 600;">Browser MCP</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Claude clicks, types, screenshots &mdash; automates browser tasks</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Everyone</td>
+                        </tr>
+                        <tr style="background: #FEF2F2;">
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; font-weight: 600;">Slack MCP</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Claude reads channels, sends messages, searches conversations</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">PMs, Sales, CS</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; font-weight: 600;">Filesystem MCP</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Claude reads/writes files outside the project directory</td>
+                            <td style="padding: 8px 12px; border: 1px solid #FECACA; color: #475569;">Everyone</td>
+                        </tr>
+                    </table>
+                    <p style="margin: 10px 0 0; color: #991B1B; font-size: 0.85em; font-weight: 600;">See the <a href="#antigravity" style="color: #7C3AED;">Antigravity &amp; MCP section</a> below for full setup instructions. Management will provide API keys for shared services.</p>
+                </div>
+
+                <!-- 5. PROMPT LIBRARY -->
+                <div style="background: #F8FAFC; border-radius: 10px; padding: 18px; border-left: 4px solid #6366F1;">
+                    <p style="margin: 0 0 8px; font-weight: 700; color: #1E293B; font-size: 0.95em;">5. Team Prompt Library (Proven Prompts Per Role)</p>
+                    <p style="margin: 0 0 10px; color: #475569; font-size: 0.88em; line-height: 1.6;">Stop reinventing prompts. These are battle-tested prompts that work for DH's specific workflows. Copy them, use them, improve them.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div style="background: white; border-radius: 8px; padding: 12px; border: 1px solid #E2E8F0;">
+                            <p style="margin: 0 0 6px; font-weight: 600; color: #6366F1; font-size: 0.85em;">Developer Prompts</p>
+                            <ul style="margin: 0; padding-left: 16px; color: #475569; font-size: 0.82em; line-height: 1.7;">
+                                <li>"Build a Shopify section for [X] with schema settings for [Y]. Follow Dawn theme patterns."</li>
+                                <li>"Audit this page for Core Web Vitals. Fix LCP, CLS, and FID issues. Show before/after."</li>
+                                <li>"Review this PR for bugs, security issues, and DH coding standards."</li>
+                            </ul>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 12px; border: 1px solid #E2E8F0;">
+                            <p style="margin: 0 0 6px; font-weight: 600; color: #6366F1; font-size: 0.85em;">Sales / CS / Content Prompts</p>
+                            <ul style="margin: 0; padding-left: 16px; color: #475569; font-size: 0.82em; line-height: 1.7;">
+                                <li>"Write a Fiverr gig description for [service]. Use DH pricing tiers. Include FAQ section."</li>
+                                <li>"Draft a client delivery email for [project]. Professional tone. Include next steps and review request."</li>
+                                <li>"Write 5 SEO-optimized product descriptions for [store]. Match their brand voice from [URL]."</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="margin: 10px 0 0; color: #475569; font-size: 0.82em;">Found a prompt that works great? Share it in the #ai-prompts Slack channel so the whole team benefits.</p>
+                </div>
+            </div>
         </section>
 
         <!-- WHY AI MATTERS -->
