@@ -436,141 +436,194 @@
 
         <!-- TEAM CLAUDE CODE PROMPT -->
         <section id="team-prompt" class="content-section" style="background: linear-gradient(135deg, #EDE9FE, #DDD6FE); border: 2px solid #7C3AED;">
-            <h2 style="color: #5B21B6; border-bottom-color: #7C3AED;">&#128161; Team — THIS IS A PROMPT. Directly copy paste in Claude Code.</h2>
+            <h2 style="color: #5B21B6; border-bottom-color: #7C3AED;">&#128161; Team Setup &mdash; Claude Code Supercharge Prompt</h2>
+
+            <!-- REALITY CHECK -->
+            <div style="background: #FEF3C7; border-radius: 12px; padding: 20px; margin-bottom: 20px; border-left: 5px solid #F59E0B;">
+                <p style="font-size: 1.05em; font-weight: 700; color: #92400E; margin: 0 0 10px;">&#9888;&#65039; What Actually Makes Claude Code 10x (Honest Assessment)</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+                    <div>
+                        <p style="font-weight: 700; color: #065F46; margin: 0 0 6px; font-size: 0.92em;">&#9989; HIGH IMPACT (Do These First)</p>
+                        <ul style="color: #1E293B; margin: 0; padding-left: 18px; font-size: 0.88em; line-height: 1.8;">
+                            <li><strong>CLAUDE.md per project</strong> &mdash; #1 boost. Claude reads it every session, knows your project instantly</li>
+                            <li><strong>MCP Servers</strong> &mdash; Connect Claude to Supabase, GitHub, browser, Slack. This is the real 10x</li>
+                            <li><strong>Skills (right ones for your role)</strong> &mdash; PDF, DOCX, UI design, marketing skills are genuinely useful</li>
+                            <li><strong>Plan mode for complex tasks</strong> &mdash; Prevents Claude going in circles</li>
+                            <li><strong>Subagents for parallel work</strong> &mdash; Research + build simultaneously</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="font-weight: 700; color: #991B1B; margin: 0 0 6px; font-size: 0.92em;">&#10060; LOW IMPACT (Don't Waste Time On)</p>
+                        <ul style="color: #1E293B; margin: 0; padding-left: 18px; font-size: 0.88em; line-height: 1.8;">
+                            <li><strong>Installing 2,449 skills</strong> &mdash; Claude only loads 1-2 per session. Quantity doesn't help</li>
+                            <li><strong>Routing rules in CLAUDE.md</strong> &mdash; Claude already knows which skill to use from descriptions</li>
+                            <li><strong>"Self-improvement loops"</strong> &mdash; Claude doesn't persist memory between sessions via files like tasks/lessons.md</li>
+                            <li><strong>"Demand elegance" rules</strong> &mdash; Motivational text, not functional instructions</li>
+                            <li><strong>Overly long CLAUDE.md</strong> &mdash; Keep it under 500 lines. Longer = Claude skims it</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <div style="background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; border-left: 5px solid #7C3AED;">
-                <p style="font-size: 1.1em; font-weight: 700; color: #1E293B; margin: 0 0 8px;">&#128073; You all need to get this done</p>
+                <p style="font-size: 1.1em; font-weight: 700; color: #1E293B; margin: 0 0 8px;">&#128073; 3-Step Setup (One Command Install)</p>
                 <ol style="color: #475569; margin: 0; padding-left: 20px; line-height: 1.8;">
-                    <li>Open whatever project you are working on in <strong>Claude Code</strong></li>
-                    <li>Paste the prompt below directly into Claude Code</li>
-                    <li>That's it. <strong>Claude does everything after this — 10x Better</strong></li>
+                    <li><strong>Install skills</strong> &mdash; One repo replaces 14 separate clones (2,449 skills)</li>
+                    <li><strong>Paste the prompt</strong> in your project's Claude Code session</li>
+                    <li>Claude creates your project brain (CLAUDE.md) and you're ready</li>
                 </ol>
             </div>
 
+            <!-- STEP 1: INSTALL -->
+            <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 10px; padding: 16px; margin-bottom: 16px;">
+                <p style="margin: 0 0 8px; color: #166534; font-weight: 700; font-size: 0.95em;">STEP 1 &mdash; Install All Skills (One Command)</p>
+                <div style="position: relative;">
+                    <button onclick="copyStep1()" id="copy-step1-btn" style="position: absolute; top: 6px; right: 8px; background: #10B981; color: white; border: none; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 0.8em; font-weight: 600; z-index: 2;">Copy</button>
+                    <pre id="step1-text" style="background: #1E293B; color: #E2E8F0; border-radius: 8px; padding: 14px; margin: 0; font-family: 'Courier New', monospace; font-size: 0.82em; white-space: pre-wrap; line-height: 1.6;">mkdir -p ~/.claude/skills && cd ~/.claude/skills && git clone https://github.com/mabwfas/my-claude-skills-public.git my-claude-skills</pre>
+                </div>
+                <p style="margin: 8px 0 0; color: #475569; font-size: 0.85em;">This installs 2,449+ skills from 14 consolidated repos in one shot. Sources: Anthropic, Superpowers, MiniMax, Composio, UI/UX Pro Max, Marketing, Stitch, Vercel, WordPress, n8n, VoltAgent, Supermemory, Ruflo, Antigravity.</p>
+            </div>
+
+            <!-- STEP 2: PROMPT -->
             <div style="position: relative;">
                 <div style="display: flex; justify-content: space-between; align-items: center; background: #334155; padding: 10px 16px; border-radius: 10px 10px 0 0;">
-                    <span style="color: #94A3B8; font-size: 0.85em; font-weight: 600; font-family: monospace;">CLAUDE CODE PROMPT — COPY &amp; PASTE THIS</span>
+                    <span style="color: #94A3B8; font-size: 0.85em; font-weight: 600; font-family: monospace;">STEP 2 &mdash; PASTE THIS IN CLAUDE CODE (in your project folder)</span>
                     <button onclick="copyTeamPrompt()" id="copy-team-btn" style="background: #7C3AED; color: white; border: none; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 0.85em; font-weight: 600; transition: background 0.2s;">&#128203; Copy Prompt</button>
                 </div>
-                <pre id="team-prompt-text" style="background: #1E293B; color: #E2E8F0; border-radius: 0 0 10px 10px; padding: 20px; margin: 0; font-family: 'Courier New', monospace; font-size: 0.82em; white-space: pre-wrap; line-height: 1.7; overflow-x: auto;">First, install these skills globally on this machine by running the following in terminal:
+                <pre id="team-prompt-text" style="background: #1E293B; color: #E2E8F0; border-radius: 0 0 10px 10px; padding: 20px; margin: 0; font-family: 'Courier New', monospace; font-size: 0.82em; white-space: pre-wrap; line-height: 1.7; overflow-x: auto;">Look at every file in this project. Understand the codebase, stack, purpose, and patterns. Then create a CLAUDE.md file in the root.
 
-mkdir -p ~/.claude/skills && cd ~/.claude/skills
-git clone https://github.com/anthropics/skills.git
-git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
-git clone https://github.com/coreyhaines31/marketingskills.git
-git clone https://github.com/ComposioHQ/awesome-claude-skills.git
-git clone https://github.com/supermemoryai/claude-supermemory.git
-git clone https://github.com/obra/superpowers.git
-git clone https://github.com/VoltAgent/awesome-agent-skills.git
-git clone https://github.com/MiniMax-AI/skills.git
-git clone https://github.com/vercel-labs/agent-skills.git
-git clone https://github.com/WordPress/agent-skills.git
-git clone https://github.com/czlonkowski/n8n-mcp.git
-git clone https://github.com/google-labs-code/stitch-skills.git
+CLAUDE.md is your project brain. Keep it under 500 lines. Include:
 
-Once installed, look at every file in this project. Understand the codebase, stack, purpose, and patterns. Then create a claude.md file in the root.
+## Project Context
+- Project name, purpose, and who uses it
+- Tech stack and key dependencies
+- Folder structure (top-level only, not every file)
+- How to run/build/test/deploy
 
-claude.md is your brain 🧠. Every Claude Code session must read this file before processing any prompt — no exceptions. It is the first thing you check, every single time.
+## Coding Standards
+- Language and framework conventions this project follows
+- Naming patterns, file organization rules
+- Error handling approach
+- What NOT to do (common mistakes in this codebase)
 
-Include:
-- Project overview, goal, and context
-- Tech stack and folder structure
-- Coding rules and conventions
-- Tone and communication style
-- A rule at the top that says: "Always read claude.md before processing any prompt. This is mandatory."
+## Skills Available
+Skills are installed at ~/.claude/skills/my-claude-skills/skills/. Key ones for this project:
 
-Then add a full Skills Reference section. These skills are installed globally at ~/.claude/skills/ and available in every project. List each one with its path, what it does, and when to load it:
+For file generation (PDF, DOCX, XLSX, PPTX):
+  ~/.claude/skills/my-claude-skills/skills/anthropic/
 
-📦 ~/.claude/skills/skills — Official Anthropic skills. Use for any file generation: PDF, DOCX, XLSX, PPTX.
-🎨 ~/.claude/skills/ui-ux-pro-max-skill — 67 UI styles, 96 palettes, 57 font pairings. Use for any UI, design, or frontend task.
-📊 ~/.claude/skills/marketingskills — 34 marketing skills: copywriting, SEO, ads, CRO. Use for any content or marketing task.
-🔌 ~/.claude/skills/awesome-claude-skills — Composio integrations. Use when connecting to external APIs or services.
-🧠 ~/.claude/skills/claude-supermemory — Persistent memory. Use to retain context across sessions.
-⚡ ~/.claude/skills/superpowers — Extended Claude capabilities. Use for advanced agent and power tasks.
-🤖 ~/.claude/skills/awesome-agent-skills — VoltAgent skills. Use for autonomous and multi-step tasks.
-🌟 ~/.claude/skills/skills (MiniMax) — AI-powered generation tasks.
-🚀 ~/.claude/skills/agent-skills (Vercel) — Use for deployment, Next.js, and frontend tasks.
-📝 ~/.claude/skills/agent-skills (WordPress) — Use for WordPress and CMS tasks.
-🔄 ~/.claude/skills/n8n-mcp — n8n workflow automation. Use for automations and workflow triggers.
-🧵 ~/.claude/skills/stitch-skills — Google Stitch skills. Use for AI-powered UI design, prototyping, and Google-integrated design tasks.
+For UI, design, and frontend work:
+  ~/.claude/skills/my-claude-skills/skills/ui-ux-pro-max/
+  ~/.claude/skills/my-claude-skills/skills/stitch/
 
-Then write a conditional routing rule:
-- UI, design, or frontend → load ui-ux-pro-max-skill + stitch-skills
-- Writing, copy, or marketing → load marketingskills
-- File output (PDF, Word, Excel, slides) → load anthropics/skills
-- Automation or workflows → load n8n-mcp
-- External API or service → load awesome-claude-skills
-- Memory or past session context → load claude-supermemory
-- All other tasks → check superpowers and agent-skills first
+For marketing, copywriting, SEO, and ads:
+  ~/.claude/skills/my-claude-skills/skills/marketing/
 
-Then add this exact Workflow Guidelines section:
+For external API integrations:
+  ~/.claude/skills/my-claude-skills/skills/composio/
 
-## Workflow Guidelines
+For advanced agent workflows (TDD, debugging, planning):
+  ~/.claude/skills/my-claude-skills/skills/superpowers/
 
-### 1. Plan Mode Default
-- Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
-- If something goes sideways, STOP and re-plan immediately — don't keep pushing
-- Use plan mode for verification steps, not just building
-- Write detailed specs upfront to reduce ambiguity
+For mobile/fullstack dev (Flutter, React Native, iOS, Android):
+  ~/.claude/skills/my-claude-skills/skills/minimax/
 
-### 2. Subagent Strategy
-- Use subagents liberally to keep main context window clean
-- Offload research, exploration, and parallel analysis to subagents
-- For complex problems, throw more compute at it via subagents
-- One task per subagent for focused execution
+For deployment and Next.js:
+  ~/.claude/skills/my-claude-skills/skills/vercel/
 
-### 3. Self-Improvement Loop
-- After ANY correction from the user, update tasks/lessons.md with the pattern
-- Write rules for yourself that prevent the same mistake
-- Ruthlessly iterate on these lessons until mistake rate drops
-- Review lessons at session start for relevant project
+For WordPress/CMS:
+  ~/.claude/skills/my-claude-skills/skills/wordpress/
 
-### 4. Verification Before Done
-- Never mark a task complete without proving it works
-- Diff behavior between main and your changes when relevant
-- Ask yourself: "Would a staff engineer approve this?"
-- Run tests, check logs, demonstrate correctness
+For workflow automation:
+  ~/.claude/skills/my-claude-skills/skills/n8n-mcp/
 
-### 5. Demand Elegance (Balanced)
-- For non-trivial changes: pause and ask "is there a more elegant way?"
-- If a fix feels hacky: "Knowing everything I know now, implement the elegant solution"
-- Skip this for simple, obvious fixes — don't over-engineer
-- Challenge your own work before presenting it
+Only list skills relevant to THIS project. Don't list all 2,449.
 
-### 6. Autonomous Bug Fixing
-- When given a bug report: just fix it. Don't ask for hand-holding
-- Point at logs, errors, failing tests — then resolve them
-- Zero context switching required from the user
-- Go fix failing CI tests without being told how
+## Workflow Rules
+1. Plan before building: Use plan mode for any task with 3+ steps
+2. Verify before claiming done: Run tests, check output, prove it works
+3. Fix bugs autonomously: Read logs, find root cause, resolve without asking
+4. Use subagents: Offload research and parallel tasks to keep context clean
+5. Keep changes minimal: Only touch what's necessary. No unnecessary refactors
 
-## Task Management
-1. Plan First: Write plan to tasks/todo.md with checkable items
-2. Verify Plans: Check in before starting implementation
-3. Track Progress: Mark items complete as you go
-4. Explain Changes: High-level summary at each step
-5. Document Results: Add review section to tasks/todo.md
-6. Capture Lessons: Update tasks/lessons.md after corrections
-
-## Core Principles
-- Simplicity First: Make every change as simple as possible. Impact minimal code.
-- No Laziness: Find root causes. No temporary fixes. Senior developer standards.
-- Minimal Impact: Changes should only touch what's necessary. Avoid introducing bugs.
-
-Make it detailed enough that any future Claude session can open this project cold, read the brain first, and immediately know what to do, how to behave, and which skill to load.
+## Project-Specific Notes
+- Add any quirks, gotchas, or domain knowledge unique to this project
+- Known issues or technical debt
+- Deployment notes or environment variables needed
 
 ---
 
-Guide me on setting up these below as well after this:
-
-🎨 21st.dev — AI component library for UI generation. Install via: npx @21st-dev/cli@latest init. Create a free account at 21st.dev, grab your API key, and add it to your .env as TWENTYFIRST_API_KEY. (FREE KEY — USE YOUR OWN)
-
-🧵 Stitch by Google — AI-powered UI design tool. Go to stitch.withgoogle.com, sign in with your Google account, and connect it to your project. (FREE KEY — USE YOUR OWN)
-
-🔑 Gemini API Key — Go to aistudio.google.com, sign in, and create a new API key. Add it to your .env as GEMINI_API_KEY. This unlocks Gemini models across tools that support it. (MANAGEMENT WILL PROVIDE IT)</pre>
+After creating CLAUDE.md, show me what you wrote so I can review it.</pre>
             </div>
 
-            <div style="margin-top: 16px; background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 10px; padding: 16px;">
-                <p style="margin: 0; color: #166534; font-weight: 600;">&#9989; After pasting, Claude will automatically: set up your project brain (claude.md), install all 12 skill libraries, configure routing rules, and guide you through 21st.dev, Stitch &amp; Gemini API setup.</p>
+            <!-- STEP 3: OPTIONAL EXTRAS -->
+            <div style="margin-top: 16px; background: white; border: 1px solid #E2E8F0; border-radius: 10px; padding: 20px;">
+                <p style="margin: 0 0 12px; color: #1E293B; font-weight: 700; font-size: 1em;">STEP 3 &mdash; Optional Power-Ups (Setup Once Per Machine)</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                    <div style="background: #F8FAFC; border-radius: 8px; padding: 14px; border: 1px solid #E2E8F0;">
+                        <p style="margin: 0 0 6px; font-weight: 700; color: #7C3AED; font-size: 0.9em;">&#127912; 21st.dev (Free)</p>
+                        <p style="margin: 0; color: #475569; font-size: 0.82em; line-height: 1.5;">AI component library for instant UI generation. Run: <code style="background: #1E293B; color: #E2E8F0; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">npx @21st-dev/cli@latest init</code>. Get your free API key at 21st.dev and add to .env as TWENTYFIRST_API_KEY.</p>
+                    </div>
+                    <div style="background: #F8FAFC; border-radius: 8px; padding: 14px; border: 1px solid #E2E8F0;">
+                        <p style="margin: 0 0 6px; font-weight: 700; color: #7C3AED; font-size: 0.9em;">&#129525; Stitch by Google (Free)</p>
+                        <p style="margin: 0; color: #475569; font-size: 0.82em; line-height: 1.5;">AI-powered UI design tool. Sign in at stitch.withgoogle.com with your Google account and connect to your project.</p>
+                    </div>
+                    <div style="background: #F8FAFC; border-radius: 8px; padding: 14px; border: 1px solid #E2E8F0;">
+                        <p style="margin: 0 0 6px; font-weight: 700; color: #7C3AED; font-size: 0.9em;">&#128273; Gemini API (Management Provides)</p>
+                        <p style="margin: 0; color: #475569; font-size: 0.82em; line-height: 1.5;">Go to aistudio.google.com, create API key, add to .env as GEMINI_API_KEY. Unlocks Gemini models across tools.</p>
+                    </div>
+                    <div style="background: #F8FAFC; border-radius: 8px; padding: 14px; border: 1px solid #E2E8F0;">
+                        <p style="margin: 0 0 6px; font-weight: 700; color: #EF4444; font-size: 0.9em;">&#9889; MCP Servers (THE Real 10x)</p>
+                        <p style="margin: 0; color: #475569; font-size: 0.82em; line-height: 1.5;">Connect Claude to external tools: Supabase, GitHub, Slack, Browser automation. See the <a href="#antigravity" style="color: #7C3AED;">Antigravity &amp; MCP section</a> below for setup.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHAT ACTUALLY 10X'S YOU -->
+            <div style="margin-top: 16px; background: linear-gradient(135deg, #ECFDF5, #D1FAE5); border: 2px solid #10B981; border-radius: 10px; padding: 20px;">
+                <p style="margin: 0 0 12px; color: #065F46; font-weight: 700; font-size: 1.05em;">&#128640; The Real 10x Stack (In Order of Impact)</p>
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+                    <tr style="background: #065F46;">
+                        <th style="padding: 10px 12px; color: white; text-align: left; width: 5%;">#</th>
+                        <th style="padding: 10px 12px; color: white; text-align: left; width: 25%;">What</th>
+                        <th style="padding: 10px 12px; color: white; text-align: left; width: 45%;">Why It Matters</th>
+                        <th style="padding: 10px 12px; color: white; text-align: left; width: 25%;">Impact</th>
+                    </tr>
+                    <tr style="background: white;">
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 700;">1</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 600;">CLAUDE.md per project</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #475569;">Claude reads this first every session. It knows your entire project context, stack, and rules instantly. No re-explaining.</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #10B981; font-weight: 700;">Massive &mdash; saves 5-10 min per session</td>
+                    </tr>
+                    <tr style="background: #F0FDF4;">
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 700;">2</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 600;">MCP Servers</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #475569;">Claude can directly query Supabase, create GitHub PRs, read Slack messages, automate browser actions. This turns Claude from "helper" into "teammate."</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #10B981; font-weight: 700;">Massive &mdash; eliminates copy-paste workflows</td>
+                    </tr>
+                    <tr style="background: white;">
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 700;">3</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 600;">Right skills for your role</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #475569;">A designer needs UI/UX skills. A content writer needs marketing skills. A developer needs superpowers (TDD, debugging). Load the 3-5 that matter.</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #10B981; font-weight: 700;">High &mdash; better output quality</td>
+                    </tr>
+                    <tr style="background: #F0FDF4;">
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 700;">4</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 600;">Plan mode + subagents</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #475569;">Plan before building complex features. Use subagents for parallel research. Prevents Claude going in circles on hard problems.</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #F59E0B; font-weight: 700;">Medium &mdash; fewer failed attempts</td>
+                    </tr>
+                    <tr style="background: white;">
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 700;">5</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; font-weight: 600;">Good prompting habits</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #475569;">Be specific about what you want. Give context. Say "build X with Y using Z" not just "build X." The better your prompt, the fewer rounds needed.</td>
+                        <td style="padding: 10px 12px; border: 1px solid #D1FAE5; color: #F59E0B; font-weight: 700;">Medium &mdash; better first-try results</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="margin-top: 16px; background: #FEF2F2; border: 1px solid #FECACA; border-radius: 10px; padding: 16px;">
+                <p style="margin: 0; color: #991B1B; font-weight: 600; font-size: 0.92em;">&#128680; Common Mistake: Don't confuse "installing 2,449 skills" with productivity. Claude only loads 1-2 skills per session based on what you're doing. Having them installed is good for coverage, but the real gain comes from CLAUDE.md + MCP servers + knowing which skill to ask for.</p>
             </div>
         </section>
 
@@ -2950,6 +3003,19 @@ mkdir -p .claude/skills/my-custom-skill
     <script src="assets/js/shared-sidebar.js"></script>
     <script src="admin-mode.js"></script>
     <script>
+    function copyStep1() {
+        var text = document.getElementById('step1-text').textContent;
+        var btn = document.getElementById('copy-step1-btn');
+        navigator.clipboard.writeText(text).then(function() {
+            btn.innerHTML = '&#9989; Copied!';
+            btn.style.background = '#065F46';
+            setTimeout(function() {
+                btn.innerHTML = 'Copy';
+                btn.style.background = '#10B981';
+            }, 2500);
+        });
+    }
+
     function copyTeamPrompt() {
         var text = document.getElementById('team-prompt-text').textContent;
         var btn = document.getElementById('copy-team-btn');
