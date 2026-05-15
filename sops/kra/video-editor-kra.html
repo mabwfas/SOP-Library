@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Video Editor KRA</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+    <link rel="stylesheet" href="../assets/css/shared-layout.css">
+    <link rel="stylesheet" href="../admin-mode.css">
+    <style>
+        :root {
+            --primary: #8B5CF6;
+            --kra-accent: #8B5CF6;
+        }
+
+        .sidebar-links a.active { background: var(--kra-accent); }
+        .header { background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%); }
+        .section h2 { color: var(--kra-accent); }
+
+        .dh-switcher {
+            position: sticky;
+            top: 0;
+            z-index: 60;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.97);
+            backdrop-filter: blur(8px);
+            padding: 12px 18px;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
+            margin: 0 0 26px 0;
+        }
+        .dh-switcher .dh-role {
+            color: #94A3B8;
+            font-weight: 800;
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-right: 8px;
+        }
+        .dh-switcher a {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 9px 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #E2E8F0;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.18s ease;
+        }
+        .dh-switcher a:hover {
+            background: rgba(139, 92, 246, 0.25);
+            border-color: rgba(139, 92, 246, 0.5);
+            transform: translateY(-1px);
+        }
+        .dh-switcher a.active {
+            background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+            border-color: transparent;
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(139, 92, 246, 0.5);
+        }
+        @media (max-width: 768px) {
+            .dh-switcher { padding: 10px 12px; }
+            .dh-switcher a { padding: 8px 13px; font-size: 0.82rem; }
+        }
+
+        .kra-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .kra-card {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(109, 40, 217, 0.05));
+            border: 2px solid rgba(139, 92, 246, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .kra-card h3 { color: var(--kra-accent); font-size: 1.1em; margin-bottom: 10px; }
+        .kra-card ul { margin-top: 10px; padding-left: 20px; }
+        .kra-card li { color: #666; font-size: 0.9em; margin-bottom: 5px; }
+
+        .success-criteria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+        .criteria-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--kra-accent);
+        }
+        .criteria-item .metric { font-size: 1.8em; font-weight: bold; color: var(--kra-accent); }
+        .criteria-item .label { color: #666; font-size: 0.85em; }
+    </style>
+    <link rel="stylesheet" href="../assets/css/hero-cursor.css">
+    <link rel="stylesheet" href="../assets/css/mobile-override.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">&#9776;</button>
+        <a href="../index.html" class="mobile-home-btn">&#127968;</a>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="emoji">🎬</div>
+            <h2>Video Editor KRA</h2>
+        </div>
+        <a href="../index.html" class="sidebar-back">⬅️ Back to Library</a>
+        <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
+        <div class="sidebar-links">
+            <a href="#overview" class="active">📝 Role Overview</a>
+            <a href="#kras">🎯 Key Result Areas</a>
+            <a href="#success">🏆 Success Criteria</a>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <div class="dh-switcher">
+            <span class="dh-role">🎬 Video Editor</span>
+            <a href="../video-editor-sop.html">📋 SOP</a>
+            <a href="video-editor-kra.html" class="active">🎯 KRA</a>
+            <a href="../kpi/video-editor-kpi.html">📊 KPI</a>
+            <a href="../dts/video-editor-dts.html">📅 DTS</a>
+            <a href="../training/video-editor-training.html">🎓 Training</a>
+        </div>
+
+        <header class="header">
+            <h1>🎬 Video Editor KRA</h1>
+            <p class="subtitle">Key Result Areas – What You're Responsible For</p>
+            <div class="badge-row">
+                <span class="badge">🎯 Viral Recreation</span>
+                <span class="badge">⚡ 3-Sec Hook</span>
+                <span class="badge">📅 Daily Output</span>
+            </div>
+        </header>
+
+        <section class="section" id="overview">
+            <h2>📝 Role Overview</h2>
+            <p style="font-size: 1.1em; color: #444; margin-bottom: 20px;">The Video Editor recreates
+                <strong>proven viral videos using our own avatar</strong> (HeyGen / Avatar Video) and edits them
+                <strong>better than the original creator</strong>. You own the hook, the animation, the psychology,
+                and the daily output.
+            </p>
+            <div
+                style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(109, 40, 217, 0.1)); padding: 20px; border-radius: 12px;">
+                <strong>🚀 Primary Mission:</strong> Turn pre-validated viral concepts into top-notch avatar shorts
+                that stop the scroll in 3 seconds — every single day.
+            </div>
+        </section>
+
+        <section class="section" id="kras">
+            <h2>🎯 Key Result Areas</h2>
+            <div class="kra-grid">
+                <div class="kra-card">
+                    <h3>🔬 1. Viral Research</h3>
+                    <ul>
+                        <li>Track creators' Instagram profiles</li>
+                        <li>Identify average vs. viral-outlier views</li>
+                        <li>Pick only proven 100k+ outliers</li>
+                        <li>Same concept, same script</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>🎬 2. Avatar Recreation</h3>
+                    <ul>
+                        <li>Generate our avatar on HeyGen</li>
+                        <li>Reuse the exact winning script</li>
+                        <li>Pull scripts via ChatGPT / NotebookLM</li>
+                        <li>Download &amp; prep for edit</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>✂️ 3. Editing Excellence</h3>
+                    <ul>
+                        <li>Better than the original — always</li>
+                        <li>Heavy animation &amp; motion</li>
+                        <li>Top-notch audio, captions, color</li>
+                        <li>Nothing left lacking</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>⚡ 4. Hook &amp; Psychology</h3>
+                    <ul>
+                        <li>3-second scroll-stopping hook</li>
+                        <li>Curiosity loops &amp; pattern interrupts</li>
+                        <li>Highly relatable to the viewer</li>
+                        <li>Retention-driven structure</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📅 5. Daily Output</h3>
+                    <ul>
+                        <li>1 short video per day (minimum)</li>
+                        <li>Long video = 1 every 3 days</li>
+                        <li>Report progress daily</li>
+                        <li>No silent zero-output days</li>
+                    </ul>
+                </div>
+                <div class="kra-card">
+                    <h3>📊 6. Logging &amp; Reporting</h3>
+                    <ul>
+                        <li>Log each video + source viral link</li>
+                        <li>Track in the Daily Task Sheet</li>
+                        <li>Flag blockers early</li>
+                        <li>Maintain a delivery trail</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="success">
+            <h2>🏆 Success Criteria</h2>
+            <div class="success-criteria">
+                <div class="criteria-item">
+                    <div class="metric">1/day</div>
+                    <div class="label">Short Videos</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">3 sec</div>
+                    <div class="label">Hook Window</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">100%</div>
+                    <div class="label">Better Than Original</div>
+                </div>
+                <div class="criteria-item">
+                    <div class="metric">Viral</div>
+                    <div class="label">Source Only</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Digital Heroes | Video Editor KRA | Version 1.0</p>
+        </footer>
+    </div>
+
+    <script src="../admin-mode.js"></script>
+    <script src="../assets/js/shared-sidebar.js"></script>
+</body>
+
+</html>
