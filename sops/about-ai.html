@@ -417,6 +417,7 @@
             <li class="nav-item"><a href="#security" class="nav-link"><span class="nav-icon">🔒</span> Security & Ethics</a></li>
             <li class="nav-item"><a href="#claude-skills" class="nav-link"><span class="nav-icon">🧩</span> Claude Skills & MCP</a></li>
             <li class="nav-item"><a href="#role-guide" class="nav-link"><span class="nav-icon">👤</span> AI by Role</a></li>
+            <li class="nav-item"><a href="#session-migration" class="nav-link"><span class="nav-icon">🔄</span> Session Migration</a></li>
         </ul>
         <div style="padding: 20px 24px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 10px;">
             <a href="training/ai-training.html" style="display: block; text-align: center; background: #8B5CF6; color: white; padding: 12px; border-radius: 10px; font-weight: 600; text-decoration: none;">🎓 Start AI Training</a>
@@ -3148,6 +3149,80 @@ mkdir -p .claude/skills/my-custom-skill
                 <p>Complete the full <strong>AI Training Module</strong> &mdash; 10 tasks, 119 quiz questions, and hands-on vibe coding exercises.</p>
                 <a href="training/ai-training.html" style="display: inline-block; background: #8B5CF6; color: white; padding: 12px 32px; border-radius: 10px; font-weight: 700; text-decoration: none; margin-top: 8px;">Start AI Training &rarr;</a>
             </div>
+        </section>
+
+        <section id="session-migration" class="content-section">
+            <h2 style="color: #5B21B6;">🔄 Migration of Sessions Across Different Claude Code Accounts</h2>
+            <p>When you switch laptops or Claude Code accounts, you lose session memory. To continue a project on
+                another machine/account <strong>without repeating context</strong>, generate a single consolidated
+                <strong>handoff / continuity document</strong> from the current session and carry it over. Paste the
+                prompt below into the session you are leaving; save its output; open it in the new session.</p>
+
+            <div class="tip-box" style="margin: 16px 0;">
+                <h4>⚠️ System Limitation (state this honestly)</h4>
+                <p>Claude Code <strong>cannot</strong> automatically read other sessions, other devices,
+                    account-wide memory, or past conversations. If multi-session/account-wide history is not
+                    accessible, the session must explicitly say: <em>"It is not possible to automatically access and
+                    merge historical sessions across the account. Separate handoff exports must be generated within
+                    each session and manually merged afterward."</em> Only include genuinely accessible context —
+                    never invent missing context.</p>
+            </div>
+
+            <h3>📋 The Master Handoff Prompt (copy-paste into the session you are leaving)</h3>
+            <pre
+                style="background: #1a1a2e; color: #e0e0e0; padding: 20px; border-radius: 12px; font-family: 'Consolas','Monaco',monospace; font-size: 0.82em; line-height: 1.6; white-space: pre-wrap; max-height: 480px; overflow: auto; border-left: 4px solid #8B5CF6;">You are an AI coding assistant responsible for generating a complete project continuity and session handoff document for another Claude Code session running on another laptop/account.
+
+PRIMARY OBJECTIVE:
+Create a highly detailed, structured, consolidated handoff document that preserves all relevant project context, implementation history, debugging history, workflows, architecture decisions, reasoning, constraints, and next steps so another Claude Code session can continue immediately without the user repeating information.
+
+CORE REQUIREMENT:
+The output should function as a persistent project memory and continuity document. It must:
+- Consolidate all accessible session info into ONE unified text file
+- Preserve continuity between sessions
+- Avoid duplicated concepts / repeated explanations (merge overlapping ideas)
+- Preserve implementation reasoning and technical decisions
+- Preserve workflows, debugging history, project evolution
+- Preserve unfinished tasks and future priorities
+- Be organized and easy for another AI session to consume
+
+MULTI-SESSION EXPORT:
+If possible, merge MULTIPLE related sessions into ONE master file (chronological + logical continuity; combine implementation, debugging, architecture, workflows, open tasks; remove duplicates). If account-wide history is NOT possible, explicitly state that and that separate exports must be merged manually.
+
+SYSTEM LIMITATION:
+Only include genuinely accessible information. Do not invent missing context. The system may NOT have access to other Claude Code/ChatGPT sessions, hidden account memory, previous devices, repo history unless shared, terminal history unless pasted, external files unless uploaded, or historical conversations unless accessible.
+
+OUTPUT FORMAT — generate these sections:
+ 1. PROJECT OVERVIEW (summary, goals, intended outcomes, business/technical purpose)
+ 2. CURRENT PROJECT STATUS (completed, in-progress, blocked, pending validation)
+ 3. IMPLEMENTATION HISTORY (features, integrations, refactors, dependencies, major changes)
+ 4. TECHNICAL ARCHITECTURE (frameworks, FE/BE structure, APIs, DB, infra/deploy, auth)
+ 5. FILE/FOLDER STRUCTURE (important dirs, critical files, entry points, config, shared modules)
+ 6. DEVELOPMENT WORKFLOW (dev, build, deploy, test, debug, conventions)
+ 7. COMMAND HISTORY (setup, build, migration, deploy, debug, frequent workflows)
+ 8. BUGS, ISSUES, AND FIXES (errors, root causes, successful fixes, failed attempts, remaining risks)
+ 9. DECISION LOG (decisions, tradeoffs, why, rejected alternatives, perf/security)
+10. ENVIRONMENT DETAILS (OS, runtime versions, package managers, env vars, services, local setup)
+11. OPEN TASKS + NEXT STEPS (immediate priorities, TODOs, recommended order, validation, long-term)
+12. CONTEXT PRESERVATION NOTES (assumptions, user/coding preferences, constraints, conventions, direction)
+13. AI SESSION CONTINUITY INSTRUCTIONS (continue from latest confirmed state; don't repeat done setup/debug; preserve architecture/workflow unless improvement justified; ask only for genuinely missing info; minimize repeated work; stay consistent with prior decisions)
+
+FILESYSTEM + PROJECT-STRUCTURE PRESERVATION:
+Also preserve, as far as accessible:
+- PROJECT LOCATIONS: absolute/relative paths, workspace roots, repo locations, monorepo structure, active working dirs, multiple project locations
+- FOLDER STRUCTURE: purpose of important folders (source, FE/BE, shared, config, scripts, build/output, deploy, db/migrations, docs, tests)
+- IMPORTANT FILES: entry files, config, env, build/deploy config, routing, API/service, DB schema, auth, shared utils, frequently edited, integration points
+- ACTIVE DEVELOPMENT CONTEXT: recently edited files, modules/features in progress, most-important folders, incomplete/unstable files, cautioned areas
+- WORKSPACE ORGANIZATION: IDE assumptions, multi-project relationships, symlink/workspace packages, dependency relationships, local tooling
+- FILE NAVIGATION GUIDANCE: where to start reading, where core business logic lives, app startup, env config, deploy logic, where to begin debugging known issues, where active development is focused
+
+If filesystem/project-location access is unavailable, clearly state that direct filesystem visibility is not accessible unless paths/files are explicitly shared in the session.
+
+FINAL REQUIREMENT:
+The output must behave like a persistent AI project-memory document that transfers the full operational and technical state into another Claude Code session with minimal onboarding friction and minimal user repetition.</pre>
+            <p style="margin-top: 12px;"><strong>How to use:</strong> run this in the old session → save the
+                generated handoff as <code>HANDOFF.md</code> in the repo → in the new session/account, open the repo
+                and read <code>HANDOFF.md</code> first before doing anything else. If you have several sessions,
+                generate one export each and merge them into a single master <code>HANDOFF.md</code>.</p>
         </section>
 
     </main>
