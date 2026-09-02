@@ -492,7 +492,7 @@ const task8Content = `
 
 <div class="content-section" style="border: 2px solid rgba(139, 92, 246, 0.3); border-radius: 16px; padding: 30px; margin: 20px 0;">
     <h3 style="color: #A78BFA; margin-top: 0;">🏢 WHO WE ARE</h3>
-    <p><strong>Digital Marketing Heroes</strong> — a premium Shopify agency. We close deals on Fiverr, Upwork, and through direct outreach. We're hiring <strong>Sales Executives</strong> at <strong>₹12,000 – ₹25,000/month + commission</strong> based on closing ability &amp; communication.</p>
+    <p><strong>Digital Marketing Heroes</strong> — a premium Shopify agency. We close deals on Fiverr, Upwork, and through direct outreach. We're hiring <strong>Sales Executives</strong> at <strong>₹12,000 – ₹25,000/month + performance incentive</strong> based on closing ability &amp; communication.</p>
 </div>
 
 <div class="content-section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.15)); border: 2px solid rgba(59, 130, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
@@ -756,7 +756,7 @@ const task8Quiz = [
     { q: "The competitor objection is:", o: ["'Your work is slow'", "'Your competitor quoted $300'", "'I found a better agency'", "'I don't need a website anymore'"], c: 1 },
     { q: "Client has how many products?", o: ["10", "25", "50", "100"], c: 2 },
     { q: "Client's timeline requirement:", o: ["1 week", "2 weeks", "1 month", "3 months"], c: 1 },
-    { q: "Sales stipend includes:", o: ["Stipend only", "Stipend + commission", "Commission only", "Project-based pay"], c: 1 },
+    { q: "Sales compensation at DH includes:", o: ["Stipend only", "Stipend + performance incentive (no fixed percentage, approx. 2% above $20,000)", "Commission only", "Project-based pay"], c: 1 },
     { q: "The reply must be:", o: ["Casual and brief", "Professional, warm, specific", "Formal and lengthy", "Template copy-paste"], c: 1 },
     { q: "You must write qualifying questions because:", o: ["It's optional", "You need info before quoting accurately", "The client asked for them", "It's a formality"], c: 1 }
 ];

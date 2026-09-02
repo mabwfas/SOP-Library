@@ -424,7 +424,7 @@ const task1Content = `
         <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
         <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
         <li><strong>Developer incentives?</strong> Per-client basis after successful delivery + 5-star rating.</li>
-        <li><strong>Sales incentives?</strong> Commission-based structure as per the Incentive & Penalty Framework. Refer to the latest incentive-penalty page for current rates and tiers.</li>
+        <li><strong>Sales incentives?</strong> Eligibility opens on crossing $20,000/month (individual target $21,000; Sales Manager bonus needs combined team sales above $80,000). There is no fixed percentage — approximately 2% as a guide, decided on employee and company performance. See the Incentive &amp; Penalty page.</li>
         <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
     </ul>
 </div>
