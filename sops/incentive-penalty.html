@@ -188,6 +188,60 @@
         }
 
         /* Notes Box */
+        .formula-box {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            border-radius: 16px;
+            padding: 26px 28px;
+            margin: 0 0 24px;
+            color: #E2E8F0;
+            box-shadow: 0 8px 26px rgba(15, 23, 42, 0.28);
+        }
+        .formula-box h2 { color: #fff; margin: 0 0 4px; font-size: 1.4rem; }
+        .formula-box .fb-sub { color: #94A3B8; font-size: 0.92rem; margin-bottom: 18px; }
+        .formula-line {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(148,163,184,0.28);
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+        .formula-line .fx { color: #34D399; }
+        .formula-line .fy { color: #60A5FA; }
+        .fb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        @media (max-width: 720px) { .fb-grid { grid-template-columns: 1fr; } }
+        .fb-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(148,163,184,0.22);
+            border-radius: 12px;
+            padding: 16px 18px;
+        }
+        .fb-card h4 { color: #fff; margin: 0 0 10px; font-size: 0.98rem; }
+        .fb-card ul { margin: 0; padding-left: 18px; }
+        .fb-card li { margin-bottom: 6px; line-height: 1.6; color: #CBD5E1; font-size: 0.9rem; }
+        .fb-card strong { color: #fff; }
+        .fb-num { color: #34D399; font-weight: 800; }
+        .fb-foot {
+            margin-top: 16px; padding: 12px 16px;
+            background: rgba(251,191,36,0.12);
+            border: 1px solid rgba(251,191,36,0.4);
+            border-radius: 10px; font-size: 0.88rem; color: #FDE68A;
+        }
+        .no-fixed-note {
+            background: #F1F5F9;
+            border: 1px dashed #94A3B8;
+            border-radius: 10px;
+            padding: 16px 18px;
+            margin: 10px 0 18px;
+            font-size: 0.92rem;
+            color: #334155;
+            line-height: 1.7;
+        }
+        .no-fixed-note strong { color: #0F172A; }
         .policy-update {
             background: linear-gradient(135deg, #ECFDF5 0%, #F0FDFA 100%);
             border: 2px solid #10B981;
@@ -558,7 +612,9 @@
         <a href="index.html" class="sidebar-back">⬅️ Back to Library</a>
         <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
         <div class="sidebar-links">
-            <a href="#current-policy">📢 Current Policy (Latest)</a>
+            <a href="#formula">🧮 How Incentives Work</a>
+                <a href="#current-policy">📢 Current Policy (Latest)</a>
+                <a href="#earning-incentives">🚀 How to Earn an Incentive</a>
                 <a href="#universal">📋 Universal Rules</a>
             <a href="#shopify">💻 Developers / Designers</a>
             <a href="#sales">💼 Technical Sales</a>
@@ -579,6 +635,47 @@
             <p>Digital Marketing Heroes</p>
             <p style="margin-top: 10px; font-weight: 600; color: rgba(255,255,255,0.9);">Clear rules, fair measurement, consistent
                 rewards and consequences.</p>
+        </div>
+
+        <!-- ===== HOW INCENTIVES ARE CALCULATED (top of page) ===== -->
+        <div class="formula-box" id="formula">
+            <h2>🧮 How Incentives Work</h2>
+            <p class="fb-sub">One rule for the whole company. Read this before anything else on this page.</p>
+
+            <div class="formula-line">
+                Incentive = <span class="fx">Company Performance</span> &times; <span class="fy">Employee Performance</span>
+                <br><span style="font-weight:500;font-size:0.9rem;color:#94A3B8;">as decided under company policy &mdash; there are no fixed per-project or per-task amounts</span>
+            </div>
+
+            <div class="fb-grid">
+                <div class="fb-card">
+                    <h4>💼 Sales Team &mdash; the only target-based incentive</h4>
+                    <ul>
+                        <li>Incentive eligibility begins only on <strong>crossing <span class="fb-num">$20,000</span></strong> in a month.</li>
+                        <li>Individual target per salesperson: <strong><span class="fb-num">$21,000</span></strong>.</li>
+                        <li>Below $20,000 &rarr; <strong>no incentive</strong> for that cycle.</li>
+                        <li>Sales Manager is eligible for a bonus only when the <strong>combined team sales exceed <span class="fb-num">$80,000</span></strong>.</li>
+                        <li>Queries on sales incentives &rarr; <strong>Vaishnavi</strong>.</li>
+                    </ul>
+                </div>
+                <div class="fb-card">
+                    <h4>💻 All Other Teams &mdash; no fixed amounts</h4>
+                    <ul>
+                        <li>There is <strong>no fixed incentive</strong> per project, per review or per task.</li>
+                        <li>Incentives are granted <strong>as per company policy</strong> and the decision of the leading team.</li>
+                        <li>The amount depends on <strong>the employee's performance</strong> and <strong>the company's performance</strong> in that period.</li>
+                        <li>For Shopify / WordPress / Full-Stack, eligibility opens at <strong>5 five-star reviews</strong> or <strong>5 projects delivered</strong> in a month.</li>
+                        <li>Top performers in each team may receive an additional bonus.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fb-foot">
+                📅 <strong>Monthly cycle:</strong> 23rd of one month to the 23rd of the next. Anything delivered after the 23rd
+                counts toward the next cycle. &nbsp;|&nbsp; Nothing on this page is a guaranteed or contractual entitlement.
+                <br>🚀 <strong>To earn one:</strong> keep improving, make your impact visible to management, and push
+                innovation &mdash; we reward people who make themselves super-valuable to the company.
+            </div>
         </div>
 
         <!-- ===== CURRENT INCENTIVE POLICY (supersedes the role tables below) ===== -->
@@ -622,7 +719,35 @@
                 quality delivery, client satisfaction and overall team growth. 🚀</p>
         </div>
 
-        <!-- Table of Contents -->
+        
+        <!-- How to become eligible -->
+        <div class="section" id="earning-incentives">
+            <h2 class="section-title">🚀 How to Actually Earn an Incentive</h2>
+            <div class="no-fixed-note" style="background:#ECFDF5;border-color:#6EE7B7;">
+                <p style="margin:0 0 10px;"><strong>An incentive is earned, not scheduled.</strong> Because there is
+                    no fixed amount attached to a project or a task, what decides your incentive is the value you
+                    visibly create &mdash; and whether management can see it.</p>
+                <ul style="margin:0;padding-left:20px;">
+                    <li style="margin-bottom:7px;"><strong>Keep improving.</strong> Standing still is not neutral.
+                        Show measurable growth in your craft cycle over cycle.</li>
+                    <li style="margin-bottom:7px;"><strong>Make your impact visible to management.</strong> Do not
+                        assume good work speaks for itself. Tell your manager what you achieved, what you improved,
+                        and what it saved or earned the company.</li>
+                    <li style="margin-bottom:7px;"><strong>Show what you can achieve in day-to-day work.</strong>
+                        Consistent, dependable delivery is what makes a person <strong>super-valuable</strong> to
+                        the company &mdash; not one good month.</li>
+                    <li style="margin-bottom:7px;"><strong>Push innovation.</strong> We are always looking for
+                        people who bring new ideas, better ways of working, and improvements nobody asked for.
+                        That is the single strongest case for a higher incentive.</li>
+                    <li style="margin-bottom:0;"><strong>Own outcomes, not tasks.</strong> Take responsibility for
+                        the result the client actually gets.</li>
+                </ul>
+                <p style="margin:12px 0 0;">In short: <strong>be someone the company cannot afford to lose</strong>,
+                    make sure that is known, and the incentive follows.</p>
+            </div>
+        </div>
+
+<!-- Table of Contents -->
         <div class="toc">
             <h3>📑 Quick Navigation</h3>
             <div class="toc-grid">
@@ -645,48 +770,22 @@
             <h2 class="section-title">📋 Universal Rules (All Roles)</h2>
 
             <h3 class="incentive">🏆 Universal Incentives</h3>
+            <div class="no-fixed-note">
+                <strong>No fixed incentive amounts.</strong> Company-wide recognitions (attendance, KPI achievement,
+                employee of the month, training a new joiner, promotion track) are still recognised, but they carry
+                <strong>no fixed rupee value</strong>. What is awarded is decided <strong>as per company policy and the
+                leading team's decision</strong>, based on <strong>the employee's performance and the company's overall
+                performance</strong> in that period. See <a href="#formula">How Incentives Work</a>.
+            </div>
             <table>
-                <thead>
-                    <tr>
-                        <th>Incentive</th>
-                        <th>Reward</th>
-                        <th>Frequency</th>
-                        <th>Criteria</th>
-                    </tr>
-                </thead>
+                <thead><tr><th>Recognition</th><th>Award</th><th>Basis</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td data-label="Incentive">Perfect Attendance Bonus</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Frequency">Monthly</td>
-                        <td data-label="Criteria">Zero unplanned leaves, zero late arrivals for entire month</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">KPI Achievement Bonus</td>
-                        <td class="reward" data-label="Reward">10% of Base Salary</td>
-                        <td data-label="Frequency">Monthly</td>
-                        <td data-label="Criteria">Monthly performance review score of 8.5/10 or higher</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Employee of the Month</td>
-                        <td class="reward" data-label="Reward">₹2,000 + Certificate</td>
-                        <td data-label="Frequency">Monthly</td>
-                        <td data-label="Criteria">Highest performance score + public recognition</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Consistency Promotion Track</td>
-                        <td class="reward" data-label="Reward">15-25% Salary Increase</td>
-                        <td data-label="Frequency">Yearly</td>
-                        <td data-label="Criteria">1 year of consistent performance with score ≥ 7.0 = role upgrade
-                            consideration</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Successful Training Bonus</td>
-                        <td class="reward" data-label="Reward">₹500 per trainee</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">Training a new team member who passes probation with score ≥ 7.0.
-                            Credited quarterly.</td>
-                    </tr>
+                    <tr><td>Perfect Attendance</td><td>As per company policy</td><td>Zero unplanned leaves and zero late arrivals for the full month</td></tr>
+                    <tr><td>KPI Achievement</td><td>As per company policy</td><td>Monthly performance review score of 8.5/10 or higher</td></tr>
+                    <tr><td>Employee of the Month</td><td>Recognition + as per company policy</td><td>Highest performance score, with public recognition</td></tr>
+                    <tr><td>Top Performer Bonus</td><td>As per company policy</td><td>Top performers in each team, on overall performance and contribution</td></tr>
+                    <tr><td>Consistency / Promotion Track</td><td>Salary revision considered</td><td>A year of consistent performance with score &ge; 7.0</td></tr>
+                    <tr><td>Successful Training</td><td>As per company policy</td><td>Training a new team member who clears probation with score &ge; 7.0</td></tr>
                 </tbody>
             </table>
 
@@ -743,48 +842,14 @@
 
             <h3 class="incentive">🏆 Developer Incentives</h3>
             <div class="superseded-note"><strong>Superseded by the current policy.</strong> Shopify, WordPress and Full-Stack incentives are now <strong>performance-based with no fixed amount</strong> &mdash; eligibility starts at 5 five-star reviews or 5 projects delivered in a month (cycle: 23rd&ndash;23rd). The figures in the table below are kept for reference only. See <a href="#current-policy">Current Policy</a>.</div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Incentive</th>
-                        <th>Reward</th>
-                        <th>Criteria</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Incentive">5-Star Project (First 5 Projects)</td>
-                        <td class="reward" data-label="Reward">₹500 per project</td>
-                        <td data-label="Criteria">5-star review with on-time delivery and bug-free work (applies to
-                            first 5 completed projects)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">5-Star Project (After 5 Projects)</td>
-                        <td class="reward" data-label="Reward">₹1,000 per project</td>
-                        <td data-label="Criteria">5-star review with on-time delivery (after completing first 5
-                            projects)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">4-Star Project</td>
-                        <td data-label="Reward">₹0 — No Incentive</td>
-                        <td data-label="Criteria">Your goal is to deliver the best possible work with innovation and
-                            high efficiency. Every client
-                            must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews
-                            indicate
-                            a performance gap and can lead to PIP and ultimately termination. Do not limit your quality
-                            —
-                            always exceed expectations.</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Bigger Projects (Custom Development)</td>
-                        <td class="reward" data-label="Reward">Case-by-case</td>
-                        <td data-label="Criteria">Projects related to custom development can grant more incentives but
-                            not guaranteed. *Will be
-                            based on each candidate's performance and efforts</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="no-fixed-note">
+                <strong>No fixed incentive amounts.</strong> Incentives for this role are not paid per project, per review
+                or per task. They are granted <strong>as per company policy and the decision of the leading team</strong>,
+                and the amount depends on <strong>the employee's performance and the company's overall performance</strong>
+                in that period. Eligibility for Shopify / WordPress / Full-Stack opens at 5 five-star reviews or 5 projects
+                delivered within a cycle (23rd&ndash;23rd). Top performers in each team may receive an additional bonus.
+                Nothing here is a guaranteed or contractual entitlement. See <a href="#formula">How Incentives Work</a>.
+            </div>
 
             <h3 class="penalty">⚠️ Developer Penalties</h3>
             <table>
@@ -852,51 +917,47 @@
             <div class="superseded-note"><strong>Check against the current policy.</strong> Sales incentives now run on <strong>team targets and performance</strong>. For anything specific, speak to <strong>Vaishnavi</strong>. See <a href="#current-policy">Current Policy</a>.</div>
             <p style="color: #D97706; font-size: 0.9rem; margin-bottom: 10px;"><strong>⚠️ Note:</strong> Minimum
                 sales target is <strong>$20,000/month per person</strong>. Failing to meet this target will result in
-                <strong>penalties</strong>. Incentives start when monthly sales exceed <strong>$20,000</strong>. Per-order commission rates apply based on order value.
+                <strong>penalties</strong>. Incentive eligibility opens on crossing $20,000/month. Individual target $21,000/month per person. Sales Manager bonus requires combined team sales above $80,000. No fixed commission slabs — amount as per company policy, based on employee and company performance.
                 Incentives are <strong>subject to Delhi team's decision</strong>.</p>
             <p style="color: #065F46; font-size: 0.9rem; margin-bottom: 10px; background: #ECFDF5; padding: 10px; border-radius: 8px; border-left: 4px solid #10B981;">
                 <strong>💰 Payout:</strong> Sales commission is counted when the <strong>order is delivered</strong> (not when booked). Payouts are processed and credited to employees in the following month's salary cycle.</p>
+            <div class="no-fixed-note">
+                <strong>Sales is the only role with a target-based incentive.</strong> There are no per-order commission
+                slabs or fixed award amounts any more &mdash; the single rule is the threshold below.
+            </div>
             <table>
                 <thead>
-                    <tr>
-                        <th>Order Value</th>
-                        <th>Commission Rate</th>
-                        <th>Example</th>
-                    </tr>
+                    <tr><th>Rule</th><th>Figure</th><th>Detail</th></tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="Order Value">Under $1,999</td>
-                        <td class="reward" data-label="Commission Rate">1%</td>
-                        <td data-label="Example">$1,500 order → approx ₹1,250</td>
+                        <td><strong>Incentive eligibility</strong></td>
+                        <td><strong>Cross $20,000 / month</strong></td>
+                        <td>Incentive applies only once monthly sales cross $20,000. Below this, no incentive is payable for that cycle.</td>
                     </tr>
                     <tr>
-                        <td data-label="Order Value">$2,000–$4,999</td>
-                        <td class="reward" data-label="Commission Rate">2%</td>
-                        <td data-label="Example">$3,000 order → approx ₹5,000</td>
+                        <td><strong>Individual target</strong></td>
+                        <td><strong>$21,000 / month</strong></td>
+                        <td>Target for each person in the sales team.</td>
                     </tr>
                     <tr>
-                        <td data-label="Order Value">$5,000+</td>
-                        <td class="reward" data-label="Commission Rate">3%</td>
-                        <td data-label="Example">$6,000 order → approx ₹15,000</td>
+                        <td><strong>Sales Manager bonus</strong></td>
+                        <td><strong>Combined &gt; $80,000</strong></td>
+                        <td>The Manager becomes eligible for a bonus only when the team's combined sales exceed $80,000 in the cycle.</td>
                     </tr>
                     <tr>
-                        <td data-label="Incentive">Enterprise Client Acquisition</td>
-                        <td class="reward" data-label="Reward">₹30,000</td>
-                        <td data-label="Criteria">Closing ₹10L+ single project</td>
+                        <td><strong>Amount payable</strong></td>
+                        <td>As per company policy</td>
+                        <td>No fixed slab. Decided on the employee's performance and the company's performance, per the leading team's decision.</td>
                     </tr>
                     <tr>
-                        <td data-label="Incentive">Referral to Vivek</td>
-                        <td class="reward" data-label="Reward">₹500</td>
-                        <td data-label="Criteria">Referring a lead to Vivek that gets closed/converted</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Fastest Response Award</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Criteria">Highest lead response speed for the month (under 5 min avg)</td>
+                        <td><strong>When counted</strong></td>
+                        <td>On delivery</td>
+                        <td>Sales are counted when the order is <strong>delivered</strong>, not when booked. Cycle runs 23rd&ndash;23rd; anything after the 23rd rolls to the next cycle.</td>
                     </tr>
                 </tbody>
             </table>
+            <p style="font-size:0.88rem;color:#475569;margin-top:10px;">Queries on sales incentives &rarr; <strong>Vaishnavi</strong>.</p>
 
             <h3 class="penalty">⚠️ Sales Penalties</h3>
             <table>
@@ -960,61 +1021,14 @@
 
             <h3 class="incentive">🏆 PM Incentives</h3>
             <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Incentive</th>
-                        <th>Reward</th>
-                        <th>Frequency</th>
-                        <th>Criteria</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Incentive">5-Star Project Completion</td>
-                        <td class="reward" data-label="Reward">₹500 per project</td>
-                        <td data-label="Frequency">Monthly</td>
-                        <td data-label="Criteria">Project managed receives 5-star review</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">4-Star Project</td>
-                        <td data-label="Reward">₹0 — No Incentive</td>
-                        <td data-label="Frequency">—</td>
-                        <td data-label="Criteria">Your goal is to deliver the best possible work with innovation and
-                            high efficiency. Every client
-                            must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews
-                            indicate
-                            a performance gap and can lead to PIP and ultimately termination.</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Zero Escalation Quarter</td>
-                        <td class="reward" data-label="Reward">₹6,000</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">Zero Delhi Team escalations for entire quarter (min 8 projects)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Resource Optimization Bonus</td>
-                        <td class="reward" data-label="Reward">₹2,500</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">Consistently delivering projects under estimated hours for the quarter
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Multi-Project Excellence</td>
-                        <td class="reward" data-label="Reward">₹2,500</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">Managing 10+ concurrent projects with zero delays across the quarter
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Process Improvement Bonus</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">Implementing approved SOP improvement that increases team efficiency
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="no-fixed-note">
+                <strong>No fixed incentive amounts.</strong> Incentives for this role are not paid per project, per review
+                or per task. They are granted <strong>as per company policy and the decision of the leading team</strong>,
+                and the amount depends on <strong>the employee's performance and the company's overall performance</strong>
+                in that period. Eligibility for Shopify / WordPress / Full-Stack opens at 5 five-star reviews or 5 projects
+                delivered within a cycle (23rd&ndash;23rd). Top performers in each team may receive an additional bonus.
+                Nothing here is a guaranteed or contractual entitlement. See <a href="#formula">How Incentives Work</a>.
+            </div>
 
             <h3 class="penalty">⚠️ PM Penalties</h3>
             <table>
@@ -1067,57 +1081,14 @@
 
             <h3 class="incentive">🏆 CSM Incentives</h3>
             <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Incentive</th>
-                        <th>Reward</th>
-                        <th>Criteria</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Incentive">5-Star Project (First 5 Projects)</td>
-                        <td class="reward" data-label="Reward">₹500 per project</td>
-                        <td data-label="Criteria">Client leaves 5-star review (first 5 projects managed)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">5-Star Project (After 5 Projects)</td>
-                        <td class="reward" data-label="Reward">₹1,000 per project</td>
-                        <td data-label="Criteria">Client leaves 5-star review (after completing first 5 projects)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">4-Star Project</td>
-                        <td data-label="Reward">₹0 — No Incentive</td>
-                        <td data-label="Criteria">Your goal is to deliver the best possible work with innovation and
-                            high efficiency. Every client
-                            must be <strong>extremely satisfied</strong>, not just content. Multiple 4-star reviews
-                            indicate
-                            a performance gap and can lead to PIP and ultimately termination.</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Zero Client Complaints</td>
-                        <td class="reward" data-label="Reward">₹5,000</td>
-                        <td data-label="Criteria">Zero escalations to Delhi Team level for entire quarter (min 6
-                            projects)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Upsell Incentive</td>
-                        <td class="reward" data-label="Reward">10% of Upsell Value</td>
-                        <td data-label="Criteria">Client purchases additional service within 90 days</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Client Retention Bonus</td>
-                        <td class="reward" data-label="Reward">₹3,000</td>
-                        <td data-label="Criteria">Client returns for 3rd+ project due to relationship management</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Response Time Excellence</td>
-                        <td class="reward" data-label="Reward">₹1,500</td>
-                        <td data-label="Criteria">Average response time under 30 minutes for entire month</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="no-fixed-note">
+                <strong>No fixed incentive amounts.</strong> Incentives for this role are not paid per project, per review
+                or per task. They are granted <strong>as per company policy and the decision of the leading team</strong>,
+                and the amount depends on <strong>the employee's performance and the company's overall performance</strong>
+                in that period. Eligibility for Shopify / WordPress / Full-Stack opens at 5 five-star reviews or 5 projects
+                delivered within a cycle (23rd&ndash;23rd). Top performers in each team may receive an additional bonus.
+                Nothing here is a guaranteed or contractual entitlement. See <a href="#formula">How Incentives Work</a>.
+            </div>
 
             <h3 class="penalty">⚠️ CSM Penalties</h3>
             <table>
@@ -1166,43 +1137,14 @@
 
             <h3 class="incentive">🏆 HR Incentives</h3>
             <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Incentive</th>
-                        <th>Reward</th>
-                        <th>Frequency</th>
-                        <th>Criteria</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Incentive">Quality Hire Bonus</td>
-                        <td class="reward" data-label="Reward">₹1,500</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">New hire passes probation with score ≥ 7.5</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Retention Excellence</td>
-                        <td class="reward" data-label="Reward">₹3,000</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">Zero voluntary attrition in quarter</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Training Completion Rate</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">100% team training completion for the quarter</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Onboarding & Compliance</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Frequency">Quarterly</td>
-                        <td data-label="Criteria">All new hires onboarded with complete documentation and policy
-                            compliance</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="no-fixed-note">
+                <strong>No fixed incentive amounts.</strong> Incentives for this role are not paid per project, per review
+                or per task. They are granted <strong>as per company policy and the decision of the leading team</strong>,
+                and the amount depends on <strong>the employee's performance and the company's overall performance</strong>
+                in that period. Eligibility for Shopify / WordPress / Full-Stack opens at 5 five-star reviews or 5 projects
+                delivered within a cycle (23rd&ndash;23rd). Top performers in each team may receive an additional bonus.
+                Nothing here is a guaranteed or contractual entitlement. See <a href="#formula">How Incentives Work</a>.
+            </div>
 
             <h3 class="penalty">⚠️ HR Penalties</h3>
             <table>
@@ -1256,47 +1198,14 @@
 
             <h3 class="incentive">🏆 Designer Incentives</h3>
             <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Incentive</th>
-                        <th>Reward</th>
-                        <th>Criteria</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Incentive">Social Media Graphics Delivery</td>
-                        <td class="reward" data-label="Reward">₹500 per batch</td>
-                        <td data-label="Criteria">Completing weekly batch of social media graphics (Instagram posts,
-                            stories, YouTube thumbnails)
-                            on time and approved</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">YouTube Thumbnail Excellence</td>
-                        <td class="reward" data-label="Reward">₹300 per video</td>
-                        <td data-label="Criteria">Thumbnails approved on first submission for company YouTube channel
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Brand Asset Completion</td>
-                        <td class="reward" data-label="Reward">₹1,500</td>
-                        <td data-label="Criteria">Complete brand asset set (logos, templates, style guide) delivered on
-                            time</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Content Calendar Design Consistency</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Criteria">Full month of social media designs delivered ahead of schedule with
-                            consistent branding</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">AI Innovation Bonus</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Criteria">Creating new AI workflow that improves design team efficiency</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="no-fixed-note">
+                <strong>No fixed incentive amounts.</strong> Incentives for this role are not paid per project, per review
+                or per task. They are granted <strong>as per company policy and the decision of the leading team</strong>,
+                and the amount depends on <strong>the employee's performance and the company's overall performance</strong>
+                in that period. Eligibility for Shopify / WordPress / Full-Stack opens at 5 five-star reviews or 5 projects
+                delivered within a cycle (23rd&ndash;23rd). Top performers in each team may receive an additional bonus.
+                Nothing here is a guaranteed or contractual entitlement. See <a href="#formula">How Incentives Work</a>.
+            </div>
 
             <h3 class="penalty">⚠️ Designer Penalties</h3>
             <table>
@@ -1337,48 +1246,14 @@
 
             <h3 class="incentive">🏆 Content Incentives</h3>
             <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Incentive</th>
-                        <th>Reward</th>
-                        <th>Criteria</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Incentive">YouTube Video Production</td>
-                        <td class="reward" data-label="Reward">₹500 per video</td>
-                        <td data-label="Criteria">Creating and publishing quality video for company YouTube channel
-                            (scripting, editing,
-                            publishing)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Instagram Posting Consistency</td>
-                        <td class="reward" data-label="Reward">₹1,000</td>
-                        <td data-label="Criteria">Meeting weekly Instagram posting targets consistently for entire month
-                            (posts, reels, stories)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Viral Content Bonus</td>
-                        <td class="reward" data-label="Reward">₹2,000</td>
-                        <td data-label="Criteria">Any company channel content exceeds 10x average engagement</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Content Calendar On-Time Delivery</td>
-                        <td class="reward" data-label="Reward">₹500</td>
-                        <td data-label="Criteria">Full month content calendar submitted and approved before deadline
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Incentive">Channel Growth Bonus</td>
-                        <td class="reward" data-label="Reward">₹1,500</td>
-                        <td data-label="Criteria">Company YouTube/Instagram grows 25%+ subscribers/followers in a month
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="no-fixed-note">
+                <strong>No fixed incentive amounts.</strong> Incentives for this role are not paid per project, per review
+                or per task. They are granted <strong>as per company policy and the decision of the leading team</strong>,
+                and the amount depends on <strong>the employee's performance and the company's overall performance</strong>
+                in that period. Eligibility for Shopify / WordPress / Full-Stack opens at 5 five-star reviews or 5 projects
+                delivered within a cycle (23rd&ndash;23rd). Top performers in each team may receive an additional bonus.
+                Nothing here is a guaranteed or contractual entitlement. See <a href="#formula">How Incentives Work</a>.
+            </div>
 
             <h3 class="penalty">⚠️ Content Penalties</h3>
             <table>
@@ -1430,12 +1305,12 @@
                 <tbody>
                     <tr>
                         <td data-label="Star Rating">⭐⭐⭐⭐⭐ 5-Star (First 5 Projects)</td>
-                        <td class="reward" data-label="Reward/Penalty">+₹500/project</td>
+                        <td class="reward" data-label="Reward/Penalty">As per company policy</td>
                         <td data-label="Action Required">On-time, bug-free delivery</td>
                     </tr>
                     <tr>
                         <td data-label="Star Rating">⭐⭐⭐⭐⭐ 5-Star (After 5 Projects)</td>
-                        <td class="reward" data-label="Reward/Penalty">+₹1,000/project</td>
+                        <td class="reward" data-label="Reward/Penalty">As per company policy</td>
                         <td data-label="Action Required">On-time delivery</td>
                     </tr>
                     <tr>
@@ -1463,7 +1338,7 @@
                 <tbody>
                     <tr>
                         <td data-label="Star Rating">⭐⭐⭐⭐⭐ 5-Star</td>
-                        <td class="reward" data-label="Reward/Penalty">+₹500/project</td>
+                        <td class="reward" data-label="Reward/Penalty">As per company policy</td>
                         <td data-label="Action Required">Consistent bonus for all 5-star projects managed</td>
                     </tr>
                     <tr>
@@ -1485,34 +1360,13 @@
 
             <h3 style="margin-top: 30px;">💰 Sales Incentive Structure</h3>
             <table>
-                <thead>
-                    <tr>
-                        <th>Performance Level</th>
-                        <th>Incentive</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
+                <thead><tr><th>Performance Level</th><th>Outcome</th><th>Details</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td data-label="Performance Level">Below Target</td>
-                        <td class="penalty" data-label="Incentive">Penalties Apply</td>
-                        <td data-label="Details">Below $20,000/month — penalties based on shortfall severity</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Performance Level">At Target</td>
-                        <td data-label="Incentive">Base Salary</td>
-                        <td data-label="Details">Meeting the $20,000/month target — no penalties, no incentives</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Performance Level">$20,000+ (Incentive Zone)</td>
-                        <td class="reward" data-label="Incentive">Per-order commission: 1% (&lt;$2k), 2% ($2k–$5k), 3% ($5k+)</td>
-                        <td data-label="Details">Commission on each order based on order value — subject to Delhi team's decision</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Performance Level">Lost qualified lead</td>
-                        <td class="penalty" data-label="Incentive">-₹1,000</td>
-                        <td data-label="Details">Per lead pushed away</td>
-                    </tr>
+                    <tr><td>Below $20,000</td><td>Penalties apply</td><td>Below the eligibility threshold &mdash; penalties based on shortfall severity. No incentive.</td></tr>
+                    <tr><td>Crosses $20,000</td><td><strong>Incentive zone opens</strong></td><td>Incentive becomes payable only once monthly sales cross $20,000.</td></tr>
+                    <tr><td>Individual target: $21,000</td><td>Target met</td><td>The monthly target for each person in the sales team.</td></tr>
+                    <tr><td>Manager &mdash; combined &gt; $80,000</td><td><strong>Manager bonus eligible</strong></td><td>The Sales Manager qualifies for a bonus only when the team's combined sales exceed $80,000.</td></tr>
+                    <tr><td>Amount payable</td><td>As per company policy</td><td>No commission slabs. Decided on employee performance and company performance, per the leading team.</td></tr>
                 </tbody>
             </table>
         </div>
@@ -1523,8 +1377,7 @@
             <ul>
                 <li><strong>All penalties are capped at 50% of monthly salary</strong> (except termination offenses)
                 </li>
-                <li>Monthly incentives are paid in the same month's salary (e.g., January incentives are included in
-                    January salary, processed before 10th February)</li>
+                <li>Incentives, where awarded, follow the monthly cycle (23rd&ndash;23rd) and are processed with the next salary run</li>
                 <li>Quarterly bonuses (HR, PM process bonuses, training bonus) are paid at quarter-end</li>
                 <li>All incentives/penalties are documented in employee file</li>
                 <li>Disputes must be raised within 48 hours of notification</li>
@@ -1540,7 +1393,7 @@
                     performance gap and can trigger PIP</li>
                 <li>All team members must follow their respective role SOPs — SOP violations may result in additional
                     penalties</li>
-                <li>Sales target is $20,000/month per person — failure to meet target results in penalties. Incentives start from $20,000+ monthly sales with per-order commission: 1% (under $2k), 2% ($2k–$5k), 3% ($5k+). Subject to Delhi team's decision. Credited 1 month after order delivery and finalization.</li>
+                <li>Sales target is $20,000/month per person — failure to meet target results in penalties. Incentive eligibility opens on crossing $20,000/month. Individual target $21,000/month per person. Sales Manager bonus requires combined team sales above $80,000. No fixed commission slabs — amount as per company policy, based on employee and company performance. Credited 1 month after order delivery and finalization.</li>
             </ul>
         </div>
 
@@ -1593,10 +1446,12 @@
             <details>
                 <summary>When are bonuses paid?</summary>
                 <div>
-                    Monthly incentives are paid in the same month's salary. For example, January incentives are included
-                    in January salary, which is processed before 10th of February. Similarly, February incentives are
-                    paid in February salary (processed before 10th March), and so on for every month. Quarterly bonuses
-                    are paid at the end of each quarter.
+                    There are no fixed incentive amounts. Where an incentive is awarded, it follows the monthly cycle
+                    (23rd of one month to the 23rd of the next) and is processed with the next salary run. The amount is
+                    decided as per company policy, based on your performance and the company's performance in that
+                    period &mdash; it is not a fixed or guaranteed figure. Sales is the only role with a target-based
+                    rule: incentive eligibility opens on crossing $20,000, the individual target is $21,000, and the
+                    Sales Manager qualifies for a bonus only when combined team sales exceed $80,000.
                 </div>
             </details>
 
@@ -1688,7 +1543,7 @@
                 <div>
                     Incentive credit goes to the person who closed the deal (final conversion). You must reach your
                     minimum sales target of $20,000/month per person. Failing to meet this target results in penalties.
-                    Incentives start when monthly sales exceed $20,000. Per-order commission rates: 1% (under $2k), 2% ($2k–$5k), 3% ($5k+).
+                    Incentive eligibility opens on crossing $20,000/month. Individual target $21,000/month per person. Sales Manager bonus requires combined team sales above $80,000. No fixed commission slabs — amount as per company policy, based on employee and company performance.
                     Subject to Delhi team's decision. Credited 1 month after the order is delivered and finalized. If multiple
                     salespeople worked on a lead, the split is decided by management based on contribution. Referral bonuses
                     (to Vivek) are separate from sales incentives.

@@ -403,7 +403,7 @@ const task1Content = `
         <li><strong>Is Shopify knowledge mandatory?</strong> Yes. Shopify-exclusive agency. Compulsory for all.</li>
         <li><strong>Is time tracking compulsory?</strong> Yes. Daily on Discord with EOD.</li>
         <li><strong>Developer incentives?</strong> Upon achieving targets set by the company, incentives apply. Subject to Delhi team's decision.</li>
-        <li><strong>Sales incentives?</strong> Minimum target is $20,000/month per person. Failing to meet this results in penalties. Incentives start from $20k+ monthly sales — per-order commission: 1% (under $2k), 2% ($2k–$5k), 3% ($5k+). Subject to Delhi team's decision. Credited 1 month after order delivery and finalization. Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for details.</li>
+        <li><strong>Sales incentives?</strong> Minimum target is $20,000/month per person. Failing to meet this results in penalties. Incentive eligibility starts on crossing $20,000/month. Individual target: $21,000/month per person. Below $20,000 = penalties, no incentive. Sales Manager bonus requires combined team sales above $80,000. No fixed commission slabs — amount is as per company policy, based on employee and company performance.<a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for details.</li>
         <li><strong>LOR (Letter of Recommendation)?</strong> Yes, after internship completion. Only for top 10% performers.</li>
     </ul>
 </div>
@@ -898,7 +898,7 @@ const task3Content = `
 
 <div class="highlight-box">
     <strong>📋 How Incentives Work:</strong><br><br>
-    Your minimum sales target is <strong>$20,000/month per person</strong>. Failing to meet this target will result in <strong>penalties</strong>. Incentives start when monthly sales exceed <strong>$20,000</strong>. Per-order commission: <strong>1%</strong> (under $2k), <strong>2%</strong> ($2k–$5k), <strong>3%</strong> ($5k+). All incentives are <strong>subject to Delhi team's decision</strong>. Credited <strong>1 month after order delivery and finalization</strong>.<br><br>
+    Your minimum sales target is <strong>$20,000/month per person</strong>. Failing to meet this target will result in <strong>penalties</strong>. Incentive eligibility starts on crossing $20,000/month. Individual target: $21,000/month per person. Below $20,000 = penalties, no incentive. Sales Manager bonus requires combined team sales above $80,000. No fixed commission slabs — amount is as per company policy, based on employee and company performance.<br><br>
     <strong>👉 Refer to the <a href="incentive-penalty.html" style="color: #A78BFA;">Incentive & Penalty Framework</a> for the latest incentive rates, tiers, and bonus structures.</strong><br><br>
     <em style="color: #94A3B8;">The I&P page is the single source of truth for all current incentive rates.</em>
 </div>
@@ -980,7 +980,7 @@ const task3Content = `
 <ul style="margin-bottom: 0;">
 <li>Understand their budget range first</li>
 <li>Position your price within their comfort zone</li>
-<li>Target: $20,000/month per person. Below target = penalties. Incentives from $20k+ monthly sales — per-order: 1% (under $2k), 2% ($2k–$5k), 3% ($5k+). Subject to Delhi team. Credited 1 month after delivery.</li>
+<li>Target: $20,000/month per person. Below target = penalties. Incentives from $20k+ monthly sales — no fixed slabs — amount as per company policy. Manager bonus needs combined team sales above $80,000.</li>
 </ul>
 </div>
 

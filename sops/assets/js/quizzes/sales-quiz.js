@@ -3,8 +3,8 @@ const salesQuestions = [
     { q: "What is the #1 rule regarding client updates?", options: ["Update only when asked", "Client NEVER waits for an update", "Update once a week", "Update only on delivery"], correct: 1 },
     { q: "What should you discuss BEFORE taking an order?", options: ["Color schemes", "Hard technical problems", "Logo design", "Font choices"], correct: 1 },
     { q: "How do we price projects?", options: ["Fixed rate card", "Based on Client's Budget Perception", "Lowest market rate", "Randomly"], correct: 1 },
-    { q: "What is the commission rate for a $6,000 project?", options: ["1%", "2%", "3%", "5%"], correct: 2 },
-    { q: "What is the commission rate for a $2,000 project?", options: ["1%", "2%", "3%", "No commission"], correct: 1 },
+    { q: "When does a salesperson become eligible for an incentive?", options: ["On crossing $20,000 in monthly sales", "On the first order of the month", "On crossing $5,000 in monthly sales", "Automatically every month"], correct: 0 },
+    { q: "What is the monthly sales target for each person in the sales team?", options: ["$15,000", "$20,000", "$21,000", "$80,000"], correct: 2 },
 
     // 6-10: Red Flags & Filtering
     { q: "If a client asks 'What's your lowest price?', they are a:", options: ["High value client", "Price Shopper (Red Flag)", "Strategic partner", "Good negotiator"], correct: 1 },

@@ -315,7 +315,7 @@ The AI App Task is sent before the video interview. This is intentional and coun
 
 <div style="background: #EFF6FF; border-left: 4px solid #3B82F6; padding: 15px; border-radius: 8px; margin: 15px 0;">
 <strong>Bad Hire Cost = (Monthly Salary × Months Employed) + (Senior's Time × Hours Spent × Hourly Rate) + (Client Revenue Lost) + (Re-hiring Cost) + (New Hire Training Cost)</strong><br><br>
-<strong>Example for a ₹15,000/month intern:</strong><br>
+<strong>Detail for a ₹15,000/month intern:</strong><br>
 = (₹15,000 × 3) + (₹500/hr × 40 hrs) + (₹50,000) + (₹15,000) + (₹20,000)<br>
 = ₹45,000 + ₹20,000 + ₹50,000 + ₹15,000 + ₹20,000<br>
 = <strong style="color:#EF4444;">₹1,50,000 minimum</strong><br><br>
@@ -546,7 +546,7 @@ You will own 2-3 client stores from day 1. CTC: ₹4-8 LPA based on experience. 
 <p>Every JD you write at DH must include these 7 components. Missing even one will reduce application quality significantly.</p>
 
 <table style="width:100%; border-collapse:collapse; margin:15px 0;">
-<thead><tr style="background:#1E293B;color:white;"><th style="padding:12px;text-align:left;">#</th><th style="padding:12px;text-align:left;">Component</th><th style="padding:12px;text-align:left;">Purpose</th><th style="padding:12px;text-align:left;">Example</th></tr></thead>
+<thead><tr style="background:#1E293B;color:white;"><th style="padding:12px;text-align:left;">#</th><th style="padding:12px;text-align:left;">Component</th><th style="padding:12px;text-align:left;">Purpose</th><th style="padding:12px;text-align:left;">Detail</th></tr></thead>
 <tbody>
 <tr><td style="padding:10px;border:1px solid #E2E8F0;">1</td><td style="padding:10px;border:1px solid #E2E8F0;"><strong>Job Title</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Searchability — must include keywords candidates actually search for</td><td style="padding:10px;border:1px solid #E2E8F0;">"Shopify Developer (Liquid + Theme Customization)" — NOT "Web Developer"</td></tr>
 <tr><td style="padding:10px;border:1px solid #E2E8F0;">2</td><td style="padding:10px;border:1px solid #E2E8F0;"><strong>Company Intro</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Context — who you are, what you do, why you matter</td><td style="padding:10px;border:1px solid #E2E8F0;">"Digital Heroes is a Shopify Plus agency serving 200+ global D2C brands"</td></tr>
@@ -1760,7 +1760,7 @@ const task4Content = `
 </tbody>
 </table>
 
-<h4>Example CTC Calculation — ₹20,000/month</h4>
+<h4>Detail CTC Calculation — ₹20,000/month</h4>
 <div style="background: #EFF6FF; border-left: 4px solid #3B82F6; padding: 15px; border-radius: 8px; margin: 15px 0;">
 <table style="width:100%; border-collapse:collapse; margin:10px 0;">
 <thead><tr style="background:#334155;color:white;"><th style="padding:10px;text-align:left;">Component</th><th style="padding:10px;text-align:left;">Monthly</th><th style="padding:10px;text-align:left;">Annual</th></tr></thead>
@@ -1774,7 +1774,7 @@ const task4Content = `
 <em>In-hand: approximately ₹18,500-19,500/month after minor deductions.</em>
 </div>
 
-<h4>Example CTC Calculation — ₹35,000/month</h4>
+<h4>Detail CTC Calculation — ₹35,000/month</h4>
 <div style="background: #EFF6FF; border-left: 4px solid #3B82F6; padding: 15px; border-radius: 8px; margin: 15px 0;">
 <table style="width:100%; border-collapse:collapse; margin:10px 0;">
 <thead><tr style="background:#334155;color:white;"><th style="padding:10px;text-align:left;">Component</th><th style="padding:10px;text-align:left;">Monthly</th><th style="padding:10px;text-align:left;">Annual</th></tr></thead>
@@ -3075,7 +3075,7 @@ When Amit left without proper knowledge transfer, we lost 2 weeks on his client 
 </tbody>
 </table>
 
-<h4>Example F&F Calculation</h4>
+<h4>Detail F&F Calculation</h4>
 <div style="background: #EFF6FF; border-left: 4px solid #3B82F6; padding: 15px; border-radius: 8px; margin: 15px 0;">
 <strong>Employee: Priya Patel | Salary: ₹25,000/month | LWD: March 15 (mid-month) | Earned Leave Balance: 5 days</strong><br><br>
 
@@ -3385,7 +3385,7 @@ The goal is that NO single person's departure should cause more than 1 week of d
 <thead><tr style="background:#1E293B;color:white;">
 <th style="padding:12px;text-align:left;">Scenario</th>
 <th style="padding:12px;text-align:left;">Liability Split</th>
-<th style="padding:12px;text-align:left;">Example</th>
+<th style="padding:12px;text-align:left;">Detail</th>
 </tr></thead>
 <tbody>
 <tr><td style="padding:10px;border:1px solid #E2E8F0;"><strong>Accidental Damage</strong></td><td style="padding:10px;border:1px solid #E2E8F0;"><strong>50/50 split</strong> — company and employee share the repair/replacement cost equally</td><td style="padding:10px;border:1px solid #E2E8F0;">Coffee spill on laptop keyboard, screen crack from a fall</td></tr>
@@ -3535,8 +3535,8 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 <li>Nobody is "born talented" — talent is just accumulated volume of practice</li>
 <li>A person who puts in 10 hours/day for 6 months will beat a "talented" person who coasts on natural ability</li>
 </ul>
-<p><strong>DH Example:</strong> We hired a developer who knew absolutely zero Liquid (Shopify's templating language) when he joined. He had never built a Shopify store. But he committed to volume — 3 months of building stores every single day, watching tutorials, breaking things, fixing things. By month 4, he was outperforming developers with 2+ years of "experience." His secret? Not talent. Volume.</p>
-<p><strong>Another Example:</strong> A content writer joined with no e-commerce experience. She wrote 300+ product descriptions in her first 2 months — terrible ones at first, decent ones by week 3, excellent ones by month 2. Volume turned her from a zero into a content machine.</p>
+<p><strong>DH Detail:</strong> We hired a developer who knew absolutely zero Liquid (Shopify's templating language) when he joined. He had never built a Shopify store. But he committed to volume — 3 months of building stores every single day, watching tutorials, breaking things, fixing things. By month 4, he was outperforming developers with 2+ years of "experience." His secret? Not talent. Volume.</p>
+<p><strong>Another Detail:</strong> A content writer joined with no e-commerce experience. She wrote 300+ product descriptions in her first 2 months — terrible ones at first, decent ones by week 3, excellent ones by month 2. Volume turned her from a zero into a content machine.</p>
 <p><strong>HR Implication:</strong></p>
 <ul>
 <li>Don't reject candidates for lack of a specific skill if they show learning ability and drive</li>
@@ -3555,7 +3555,7 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 <li>A brilliant developer who blows up at clients when they request changes is WORSE than an average developer who handles feedback gracefully</li>
 <li>EQ includes: self-awareness, self-regulation, empathy, social skills, and motivation</li>
 </ul>
-<p><strong>DH Example:</strong> Two candidates for a CSM position. Candidate A had 4 years of experience, knew Shopify inside-out, but during the interview said "Clients don't understand tech, you just have to educate them" with visible frustration. Candidate B had 1 year of experience but said "I love the challenge of translating technical concepts into language clients can understand — it's like being a bridge." We hired B. Six months later, B had a 4.9-star rating. A (whom a competitor hired) was fired for arguing with clients.</p>
+<p><strong>DH Detail:</strong> Two candidates for a CSM position. Candidate A had 4 years of experience, knew Shopify inside-out, but during the interview said "Clients don't understand tech, you just have to educate them" with visible frustration. Candidate B had 1 year of experience but said "I love the challenge of translating technical concepts into language clients can understand — it's like being a bridge." We hired B. Six months later, B had a 4.9-star rating. A (whom a competitor hired) was fired for arguing with clients.</p>
 <p><strong>HR Implication:</strong></p>
 <ul>
 <li>Test EQ in interviews, not just technical skill — use scenario-based questions</li>
@@ -3577,8 +3577,8 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 </ul>
 <p><strong>Client message SLA:</strong> Within <strong>5 minutes</strong> during work hours. This is non-negotiable. A client who waits 30 minutes for a reply will go to a competitor who replies in 2 minutes.</p>
 <p><strong>Internal SLA:</strong> Within <strong>15 minutes</strong> during work hours. Your teammate is blocked waiting for your response — every minute you delay, you're burning their productivity too.</p>
-<p><strong>DH Example:</strong> One of our top sales executives had a simple habit — he replied to every client message within 90 seconds. Not with answers, but with acknowledgments: "Great question, let me check with the dev team and get back to you in 30 mins." Clients LOVED him. His conversion rate was 40% higher than the team average. Why? Because speed = trust.</p>
-<p><strong>Counter-Example:</strong> A developer consistently took 2-3 hours to reply to PM messages. The PM couldn't update the client, the client got anxious, the client escalated to Delhi. All because one person was "too busy coding" to type "Noted, will check." That developer is no longer with us.</p>
+<p><strong>DH Detail:</strong> One of our top sales executives had a simple habit — he replied to every client message within 90 seconds. Not with answers, but with acknowledgments: "Great question, let me check with the dev team and get back to you in 30 mins." Clients LOVED him. His conversion rate was 40% higher than the team average. Why? Because speed = trust.</p>
+<p><strong>Counter-Detail:</strong> A developer consistently took 2-3 hours to reply to PM messages. The PM couldn't update the client, the client got anxious, the client escalated to Delhi. All because one person was "too busy coding" to type "Noted, will check." That developer is no longer with us.</p>
 <p><strong>HR Implication:</strong></p>
 <ul>
 <li>Test response speed during the hiring process itself — send a follow-up email or message and see how quickly they reply</li>
@@ -3597,8 +3597,8 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 <li>Zero tolerance for a defeatist "I can't" attitude</li>
 <li>Your mindset is contagious — negativity from one person infects the entire team</li>
 </ul>
-<p><strong>DH Example:</strong> A junior designer was given a complex landing page project. Instead of saying "I've never done this," she said "Let me study 20 examples first, then attempt it." Her first attempt was 60% there. By her third revision (with feedback), it was client-ready. The mindset of "let me try" made all the difference.</p>
-<p><strong>Counter-Example:</strong> A content writer received feedback that his blog post needed restructuring. His response: "Well, if you wanted it written differently, you should have told me before." That's a fixed mindset. That writer was on PIP within a month.</p>
+<p><strong>DH Detail:</strong> A junior designer was given a complex landing page project. Instead of saying "I've never done this," she said "Let me study 20 examples first, then attempt it." Her first attempt was 60% there. By her third revision (with feedback), it was client-ready. The mindset of "let me try" made all the difference.</p>
+<p><strong>Counter-Detail:</strong> A content writer received feedback that his blog post needed restructuring. His response: "Well, if you wanted it written differently, you should have told me before." That's a fixed mindset. That writer was on PIP within a month.</p>
 <p><strong>HR Role:</strong></p>
 <ul>
 <li>Foster positive culture by recognizing effort, not just results</li>
@@ -3617,7 +3617,7 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 <li>A demanding client is a client who CARES about results — they're pushing for excellence, which is what we should want too</li>
 <li>"Difficult" clients often become the most loyal clients when handled well</li>
 </ul>
-<p><strong>DH Example:</strong> We had a client who sent 47 revision requests on a single homepage design. The designer was frustrated. But the PM reframed it: "This client is investing $8,000 — of course they want it perfect." After 47 revisions, the client was ecstatic, left a 5-star review, and ordered 3 more projects worth $22,000. That "difficult" client became our 2nd biggest account.</p>
+<p><strong>DH Detail:</strong> We had a client who sent 47 revision requests on a single homepage design. The designer was frustrated. But the PM reframed it: "This client is investing $8,000 — of course they want it perfect." After 47 revisions, the client was ecstatic, left a 5-star review, and ordered 3 more projects worth $22,000. That "difficult" client became our 2nd biggest account.</p>
 <p><strong>HR Implication:</strong></p>
 <ul>
 <li>Screen for customer service attitude in EVERY role, not just CSM</li>
@@ -3637,7 +3637,7 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 <li>Self-accountability is required — DH doesn't believe in micromanagement</li>
 <li>If you need someone watching over your shoulder to be productive, you're not DH material</li>
 </ul>
-<p><strong>DH Example:</strong> We don't track bathroom breaks or count your coffee runs. But we DO track output. A developer who produces 3 quality pages per day is performing — we don't care if they took a 30-minute walk in the middle. A developer who sits at their desk for 10 hours but only produces 1 sloppy page is NOT performing — the hours don't matter, the output does.</p>
+<p><strong>DH Detail:</strong> We don't track bathroom breaks or count your coffee runs. But we DO track output. A developer who produces 3 quality pages per day is performing — we don't care if they took a 30-minute walk in the middle. A developer who sits at their desk for 10 hours but only produces 1 sloppy page is NOT performing — the hours don't matter, the output does.</p>
 <p><strong>HR Implication:</strong></p>
 <ul>
 <li>Set expectations about productivity standards from Day 1 during onboarding</li>
@@ -3656,7 +3656,7 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 <li>This doesn't mean working 16-hour days — it means making your work hours COUNT</li>
 <li>It's not about hours — it's about IMPACT. Someone who delivers exceptional work in 8 hours is more valuable than someone who delivers mediocre work in 12 hours</li>
 </ul>
-<p><strong>DH Example:</strong> The team members who grow fastest at DH aren't the ones who work the longest hours. They're the ones who are genuinely passionate about their craft. A developer who spends weekends building side projects isn't "overworking" — they're investing in themselves because they LOVE what they do.</p>
+<p><strong>DH Detail:</strong> The team members who grow fastest at DH aren't the ones who work the longest hours. They're the ones who are genuinely passionate about their craft. A developer who spends weekends building side projects isn't "overworking" — they're investing in themselves because they LOVE what they do.</p>
 <p><strong>HR Implication:</strong></p>
 <ul>
 <li>Hire people who are passionate about their craft — not people looking for "just a job"</li>
@@ -3729,7 +3729,7 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 </div>
 
 <div style="background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 15px; border-radius: 8px; margin: 15px 0;">
-<strong>⚠️ Real Examples (Anonymized) — Zero-Tolerance Violations at DH:</strong><br><br>
+<strong>⚠️ Real Details (Anonymized) — Zero-Tolerance Violations at DH:</strong><br><br>
 <strong>Case 1 — "The Screenshot Leak":</strong> A developer took screenshots of our internal pricing sheet and Shopify workflow documentation and shared them with a friend at a competing agency "just to show them how we do things." A competitor started using our exact pricing structure within 2 weeks. The developer was terminated immediately, and legal notice was served. The damage? We lost competitive pricing advantage for 3 months until we restructured.<br><br>
 <strong>Case 2 — "The Secret Freelancer":</strong> A designer was delivering excellent work at DH but started missing deadlines. When the PM investigated, they found the designer had active Fiverr and 99designs profiles, taking on 5-6 freelance projects while on DH payroll. She was using DH's Figma account and design templates for freelance work. Terminated same day. She'd been doing it for 4 months — meaning DH effectively subsidized her freelance business.<br><br>
 <strong>Case 3 — "The Salary Gossip":</strong> An HR intern, during a casual lunch conversation, revealed to a group of developers what another developer was earning. Within 24 hours, 3 team members demanded salary renegotiations, 1 threatened to quit, and team morale dropped significantly. The intern was terminated immediately. Even "innocent" information sharing by HR can cause massive damage. HR handles the most sensitive data in the company — one slip can destroy team trust.
@@ -3904,17 +3904,17 @@ You can teach someone to write a JD or screen a resume. You <strong>cannot</stro
 
 <h4>📈 Sales Incentives</h4>
 <div style="background: #D1FAE5; border-left: 4px solid #10B981; padding: 15px; border-radius: 8px; margin: 15px 0;">
-<strong>💰 Per-Order Commission (kicks in when monthly sales exceed $20,000):</strong>
+<strong>💰 Sales Incentive (eligibility opens when monthly sales cross $20,000):</strong>
 <table style="width:100%; border-collapse:collapse; margin:10px 0;">
 <thead><tr style="background:#065F46;color:white;">
-<th style="padding:10px;text-align:left;">Order Value</th>
-<th style="padding:10px;text-align:left;">Commission Rate</th>
-<th style="padding:10px;text-align:left;">Example</th>
+<th style="padding:10px;text-align:left;">Rule</th>
+<th style="padding:10px;text-align:left;">Figure</th>
+<th style="padding:10px;text-align:left;">Detail</th>
 </tr></thead>
 <tbody>
-<tr><td style="padding:10px;border:1px solid #A7F3D0;">Under $2,000</td><td style="padding:10px;border:1px solid #A7F3D0;">1% per order</td><td style="padding:10px;border:1px solid #A7F3D0;">$1,500 order = $15 commission</td></tr>
-<tr style="background:#ECFDF5;"><td style="padding:10px;border:1px solid #A7F3D0;">$2,000 - $5,000</td><td style="padding:10px;border:1px solid #A7F3D0;">2% per order</td><td style="padding:10px;border:1px solid #A7F3D0;">$3,000 order = $60 commission</td></tr>
-<tr><td style="padding:10px;border:1px solid #A7F3D0;">$5,000+</td><td style="padding:10px;border:1px solid #A7F3D0;">3% per order</td><td style="padding:10px;border:1px solid #A7F3D0;">$8,000 order = $240 commission</td></tr>
+<tr><td style="padding:10px;border:1px solid #A7F3D0;">Crossing $20,000/month</td><td style="padding:10px;border:1px solid #A7F3D0;">Incentive eligibility opens</td><td style="padding:10px;border:1px solid #A7F3D0;">Below this, no incentive for the cycle</td></tr>
+<tr style="background:#ECFDF5;"><td style="padding:10px;border:1px solid #A7F3D0;">Individual target</td><td style="padding:10px;border:1px solid #A7F3D0;">$21,000/month per person</td><td style="padding:10px;border:1px solid #A7F3D0;">Target for each salesperson</td></tr>
+<tr><td style="padding:10px;border:1px solid #A7F3D0;">Sales Manager bonus</td><td style="padding:10px;border:1px solid #A7F3D0;">Combined team sales above $80,000</td><td style="padding:10px;border:1px solid #A7F3D0;">$8,000 order = $240 commission</td></tr>
 </tbody>
 </table>
 <p><strong>Important Rules:</strong></p>
@@ -4299,8 +4299,8 @@ const task7Quiz = [
     { q: "What is a zero-tolerance violation that results in IMMEDIATE TERMINATION + LEGAL ACTION at DH?", o: ["Sharing client store credentials with someone outside DH", "Missing 3 EOD reports in a week", "Getting a 3-star client review", "Being late to work 5 times in a month"], c: 0 },
     { q: "In the Authority Matrix, who has the power to approve discounts on DH packages?", o: ["CSM for up to 10%", "PM for up to 15%", "Sales Lead for up to 20%", "DELHI TEAM ONLY — but DH NEVER gives discounts (premium positioning)"], c: 3 },
     { q: "A live Shopify store breaks and checkout stops working. According to the Escalation Matrix, what is the maximum resolution time?", o: ["30 minutes", "2 hours", "4 hours", "24 hours"], c: 1 },
-    { q: "When do sales per-order commissions kick in at DH?", o: ["When monthly sales exceed $20,000", "From the first order of the month", "When monthly sales exceed $10,000", "When monthly sales exceed $50,000"], c: 0 },
-    { q: "What commission rate applies to a single order worth $3,500 (when monthly sales are above $20K)?", o: ["1% per order", "3% per order", "5% per order", "2% per order"], c: 3 },
+    { q: "When does a salesperson become eligible for an incentive at DH?", o: ["When monthly sales cross $20,000", "From the first order of the month", "When monthly sales exceed $10,000", "When monthly sales exceed $50,000"], c: 0 },
+    { q: "What commission rate applies to a single order worth $3,500 (when monthly sales are above $20K)?", o: ["Incentive eligibility opens", "Combined team sales above $80,000", "5% per order", "$21,000/month per person"], c: 3 },
     { q: "What is the HR-specific penalty for a 'bad hire' (new employee terminated during probation)?", o: ["Verbal warning only", "-₹500", "-₹2,000", "-₹5,000"], c: 2 },
     { q: "What is the response SLA for internal messages at DH?", o: ["Within 5 minutes", "Within 15 minutes", "Within 30 minutes", "Within 1 hour"], c: 1 },
     { q: "What is the CSM-specific penalty for a client being lost (client churns)?", o: ["-₹2,500 + mandatory review", "-₹500 + verbal warning", "-₹1,000 + coaching", "-₹5,000 + PIP"], c: 0 },
@@ -4379,7 +4379,7 @@ const task8Content = `
 <tr><td style="padding:10px;border:1px solid #E2E8F0;">Recruitment Agencies</td><td style="padding:10px;border:1px solid #E2E8F0;">₹25,000-50,000+</td><td style="padding:10px;border:1px solid #E2E8F0;">Variable (only for niche/urgent roles)</td></tr>
 </tbody>
 </table>
-<strong>Example Calculation:</strong> Last quarter — Internshala premium ₹15,000, LinkedIn posting ₹8,000, HR time (80 hours x ₹300/hr) = ₹24,000, interviewer time (40 hours x ₹500/hr) = ₹20,000. Total hires: 6. Cost per hire = (₹15,000 + ₹8,000 + ₹24,000 + ₹20,000) / 6 = <strong>₹11,167 per hire</strong>. This is above the ₹10K target — investigate which channel to optimize.
+<strong>Detail Calculation:</strong> Last quarter — Internshala premium ₹15,000, LinkedIn posting ₹8,000, HR time (80 hours x ₹300/hr) = ₹24,000, interviewer time (40 hours x ₹500/hr) = ₹20,000. Total hires: 6. Cost per hire = (₹15,000 + ₹8,000 + ₹24,000 + ₹20,000) / 6 = <strong>₹11,167 per hire</strong>. This is above the ₹10K target — investigate which channel to optimize.
 </div>
 
 <h4>3. Offer Acceptance Rate</h4>
@@ -5005,12 +5005,12 @@ const task9Content = `
 <th style="padding:12px;text-align:left;">DH Answer</th>
 </tr></thead>
 <tbody>
-<tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"When is salary paid?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Pay period is 1st–30th/31st. Salary is credited <strong>by the 10th of the next month</strong> via bank transfer. Example: January salary arrives by February 10th.</td></tr>
+<tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"When is salary paid?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Pay period is 1st–30th/31st. Salary is credited <strong>by the 10th of the next month</strong> via bank transfer. Detail: January salary arrives by February 10th.</td></tr>
 <tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"Can I get a salary advance?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Yes, after <strong>3 months tenure</strong>. Maximum <strong>50% of monthly salary</strong>. Only for genuine reasons (medical emergency, family emergency). Once per quarter maximum. HR reviews and decides on a case-by-case basis. Recovered in 2 equal installments from next 2 months.</td></tr>
 <tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"How often are salary reviews?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;"><strong>Quarterly reviews</strong> for compensation adjustments. There are no automatic increments based on tenure — your work quality, KRA achievement, and client feedback determine raises. Delhi Team makes the final call.</td></tr>
 <tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"What is the CTC structure?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">CTC = <strong>Basic + HRA + Special Allowance + PF (employer contribution)</strong>. Basic is typically 40-50% of CTC. HRA depends on city. PF: employer contributes 12% of basic. Your in-hand salary = CTC minus PF (employee share), professional tax, and TDS (if applicable).</td></tr>
 <tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"Do interns get equity-sharing?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Yes, DH has an <strong>equity-sharing model from Day 1</strong>. All team members, including interns, participate. Details are covered during onboarding by the Delhi Team.</td></tr>
-<tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"How are bonuses calculated?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Based on your <strong>monthly performance score</strong> (Module 5). Score 8.0+ = full bonus eligibility. Score 6.0-7.9 = partial bonus. Below 6.0 = no bonus. Sales roles also get per-order commissions (1%/2%/3% tiered).</td></tr>
+<tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"How are bonuses calculated?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">Based on your <strong>monthly performance score</strong> (Module 5). Score 8.0+ = full bonus eligibility. Score 6.0-7.9 = partial bonus. Below 6.0 = no bonus. Sales incentive eligibility opens on crossing $20,000/month (individual target $21,000); no fixed slabs.</td></tr>
 <tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"What if my salary is delayed?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;">This should <strong>never happen</strong>. If salary is not credited by the 10th, immediately email HR with your bank statement showing non-receipt. If HR doesn't resolve within 24 hours, escalate to Delhi Team directly.</td></tr>
 <tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"Is there overtime pay?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;"><strong>No formal overtime pay</strong>. Standard work hours are 9 AM–6 PM. However, exceptional effort during crunch periods is recognized through performance bonuses and higher monthly scores.</td></tr>
 <tr style="border-bottom:1px solid #E2E8F0;"><td style="padding:10px;border:1px solid #E2E8F0;"><strong>"What deductions are made from salary?"</strong></td><td style="padding:10px;border:1px solid #E2E8F0;"><strong>PF (12% of basic)</strong>, professional tax (state-dependent, ~₹200/month), <strong>TDS</strong> (if annual income exceeds taxable limit), and any <strong>penalty deductions</strong> (late attendance, SLA breaches — see Module 5).</td></tr>
@@ -5913,7 +5913,7 @@ const task10Quiz = [
     { q: "A client leaves a 4-star review on Fiverr. According to the DH Manifesto, how is this treated?", o: ["Celebrated as a positive review", "Treated as a failure — Quality Is Non-Negotiable means 5 stars is the only acceptable standard", "Ignored unless it drops below 3 stars", "Reviewed only if the client complains"], c: 1 },
     // Module 7 continued
     { q: "A team member receives a client message during work hours. What is the maximum allowed response time?", o: ["Within 5 minutes", "Within 1 minute", "Within 15 minutes", "Within 30 minutes"], c: 0 },
-    { q: "Sales incentives at DH use a tiered per-order commission structure. For orders over $5,000 (when monthly sales exceed $20K), what commission rate applies?", o: ["1% per order", "2% per order", "5% per order", "3% per order"], c: 3 },
+    { q: "What must combined team sales exceed for the Sales Manager to be eligible for a bonus?", o: ["$20,000", "$50,000", "$80,000", "$100,000"], a: 2, exp: "The Sales Manager qualifies for a bonus only when the team's combined sales exceed $80,000 in the cycle." },
     // Module 8: Analytics & AI (1 question)
     { q: "An HR manager uses ChatGPT to draft a PIP document. What is the CRITICAL rule before sending it?", o: ["Send it directly — AI output is always accurate", "Always review, fact-check, and customize AI output before using it for any HR decision", "Only use AI for emails, never for formal documents", "Have another AI tool verify the first AI's output"], c: 1 },
     // Module 9: FAQ & Joining Docs (3 questions)
