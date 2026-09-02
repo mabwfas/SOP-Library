@@ -188,6 +188,67 @@
         }
 
         /* Notes Box */
+        .policy-update {
+            background: linear-gradient(135deg, #ECFDF5 0%, #F0FDFA 100%);
+            border: 2px solid #10B981;
+            border-left: 8px solid #10B981;
+            border-radius: 14px;
+            padding: 26px 28px;
+            margin: 0 0 28px;
+            box-shadow: 0 4px 18px rgba(16, 185, 129, 0.10);
+        }
+        .policy-update .pu-flag {
+            display: inline-block;
+            background: #10B981;
+            color: #fff;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+        .policy-update h2 {
+            color: #065F46;
+            margin: 0 0 6px;
+            font-size: 1.45rem;
+        }
+        .policy-update .pu-sub { color: #047857; font-weight: 600; margin-bottom: 18px; }
+        .policy-update h4 {
+            color: #065F46;
+            margin: 18px 0 8px;
+            font-size: 1.02rem;
+        }
+        .policy-update ul { padding-left: 22px; margin: 0; }
+        .policy-update li { margin-bottom: 7px; line-height: 1.6; }
+        .policy-update .pu-cycle {
+            background: #fff;
+            border: 1px dashed #10B981;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-top: 16px;
+        }
+        .policy-update .pu-cycle strong { color: #065F46; }
+        .policy-update .pu-pending {
+            margin-top: 16px;
+            font-size: 0.9rem;
+            color: #475569;
+            background: #F8FAFC;
+            border-radius: 8px;
+            padding: 12px 16px;
+        }
+        .superseded-note {
+            background: #FEF3C7;
+            border: 1px solid #FCD34D;
+            border-left: 5px solid #F59E0B;
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin: 10px 0 18px;
+            font-size: 0.9rem;
+            color: #78350F;
+        }
+        .superseded-note strong { color: #92400E; }
         .notes-box {
             background: #EFF6FF;
             border: 1px solid #BFDBFE;
@@ -497,7 +558,8 @@
         <a href="index.html" class="sidebar-back">⬅️ Back to Library</a>
         <button class="print-btn" onclick="window.print()">🖨️ Print as PDF</button>
         <div class="sidebar-links">
-            <a href="#universal">📋 Universal Rules</a>
+            <a href="#current-policy">📢 Current Policy (Latest)</a>
+                <a href="#universal">📋 Universal Rules</a>
             <a href="#shopify">💻 Developers / Designers</a>
             <a href="#sales">💼 Technical Sales</a>
             <a href="#pm">📊 Project Manager</a>
@@ -517,6 +579,47 @@
             <p>Digital Marketing Heroes</p>
             <p style="margin-top: 10px; font-weight: 600; color: rgba(255,255,255,0.9);">Clear rules, fair measurement, consistent
                 rewards and consequences.</p>
+        </div>
+
+        <!-- ===== CURRENT INCENTIVE POLICY (supersedes the role tables below) ===== -->
+        <div class="policy-update" id="current-policy">
+            <span class="pu-flag">📢 Current policy &middot; supersedes earlier incentive amounts</span>
+            <h2>Incentive &amp; Performance Update</h2>
+            <p class="pu-sub">This is the incentive structure now in force for all teams. Where it differs from
+                the role-by-role tables further down this page, <strong>this section applies</strong>.</p>
+
+            <h4>🔹 Sales Team</h4>
+            <ul>
+                <li>Incentives are applicable <strong>only to the Sales Team</strong>, based on their respective
+                    team targets and performance.</li>
+                <li>For any questions or doubts regarding sales incentives, please connect with
+                    <strong>Vaishnavi</strong>.</li>
+            </ul>
+
+            <h4>🔹 Shopify, WordPress &amp; Full-Stack Teams</h4>
+            <ul>
+                <li>Incentives are <strong>performance-based</strong>.</li>
+                <li>You become eligible after achieving either <strong>5 five-star reviews</strong> or delivering
+                    <strong>at least 5 projects in a month</strong>.</li>
+                <li>There is <strong>no fixed incentive amount</strong>. The incentive depends on the company's
+                    growth and the employee's overall performance.</li>
+            </ul>
+
+            <h4>🏆 Bonus for Top Performers</h4>
+            <ul>
+                <li>Additional bonuses are given to the <strong>top performers from each team</strong>, based on
+                    overall performance and contribution.</li>
+            </ul>
+
+            <div class="pu-cycle">
+                <strong>📅 Monthly performance cycle:</strong> the project-delivery cycle runs from the
+                <strong>23rd of one month to the 23rd of the next</strong>. Any project delivered after the 23rd
+                is counted toward the <strong>next</strong> monthly cycle.
+            </div>
+
+            <p class="pu-pending">The detailed rules and criteria will be posted on <strong>Discord</strong>
+                shortly &mdash; please go through them once they are up. Focus stays on consistent performance,
+                quality delivery, client satisfaction and overall team growth. 🚀</p>
         </div>
 
         <!-- Table of Contents -->
@@ -639,6 +742,7 @@
             <h2 class="section-title">💻 FULL STACK WEB DEVELOPERS / UI UX DESIGNERS / SHOPIFY DEVELOPERS</h2>
 
             <h3 class="incentive">🏆 Developer Incentives</h3>
+            <div class="superseded-note"><strong>Superseded by the current policy.</strong> Shopify, WordPress and Full-Stack incentives are now <strong>performance-based with no fixed amount</strong> &mdash; eligibility starts at 5 five-star reviews or 5 projects delivered in a month (cycle: 23rd&ndash;23rd). The figures in the table below are kept for reference only. See <a href="#current-policy">Current Policy</a>.</div>
             <table>
                 <thead>
                     <tr>
@@ -745,6 +849,7 @@
             <h2 class="section-title">💼 TECHNICAL SALES SPECIALIST</h2>
 
             <h3 class="incentive">🏆 Sales Incentives</h3>
+            <div class="superseded-note"><strong>Check against the current policy.</strong> Sales incentives now run on <strong>team targets and performance</strong>. For anything specific, speak to <strong>Vaishnavi</strong>. See <a href="#current-policy">Current Policy</a>.</div>
             <p style="color: #D97706; font-size: 0.9rem; margin-bottom: 10px;"><strong>⚠️ Note:</strong> Minimum
                 sales target is <strong>$20,000/month per person</strong>. Failing to meet this target will result in
                 <strong>penalties</strong>. Incentives start when monthly sales exceed <strong>$20,000</strong>. Per-order commission rates apply based on order value.
@@ -854,6 +959,7 @@
             <h2 class="section-title">📊 PROJECT MANAGER</h2>
 
             <h3 class="incentive">🏆 PM Incentives</h3>
+            <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
             <table>
                 <thead>
                     <tr>
@@ -960,6 +1066,7 @@
             <h2 class="section-title">🤝 CLIENT SUCCESS MANAGERS (CSM)</h2>
 
             <h3 class="incentive">🏆 CSM Incentives</h3>
+            <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
             <table>
                 <thead>
                     <tr>
@@ -1058,6 +1165,7 @@
             <h2 class="section-title">👥 HR SPECIALIST</h2>
 
             <h3 class="incentive">🏆 HR Incentives</h3>
+            <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
             <table>
                 <thead>
                     <tr>
@@ -1147,6 +1255,7 @@
             <h2 class="section-title">🎨 GRAPHIC DESIGNER / AI VISUAL SPECIALIST</h2>
 
             <h3 class="incentive">🏆 Designer Incentives</h3>
+            <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
             <table>
                 <thead>
                     <tr>
@@ -1227,6 +1336,7 @@
             <h2 class="section-title">📱 SOCIAL MEDIA / CONTENT SPECIALIST</h2>
 
             <h3 class="incentive">🏆 Content Incentives</h3>
+            <div class="superseded-note"><strong>Superseded by the current policy.</strong> The latest update lists incentives for the <strong>Sales Team</strong> and the <strong>Shopify / WordPress / Full-Stack</strong> teams only; top performers in every team remain eligible for a bonus. The table below is kept for reference &mdash; confirm with HR before relying on these amounts. See <a href="#current-policy">Current Policy</a>.</div>
             <table>
                 <thead>
                     <tr>
@@ -1622,7 +1732,7 @@
         </div>
 
         <div class="footer">
-            <p>Digital Heroes | Incentive & Penalty Framework v3.0 | Last Updated: February 2026</p>
+            <p>Digital Heroes | Incentive &amp; Penalty Framework v3.1 | Last Updated: September 2026</p>
         </div>
     </div>
 
