@@ -238,6 +238,12 @@ const task1Content = `
 <!-- MANIFESTO -->
 <div class="content-section" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1)); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 16px; padding: 30px; margin: 20px 0;">
     <h3 style="color: #A78BFA; margin-top: 0;">⚡ The Digital Heroes Manifesto</h3>
+    <div style="background: rgba(220,38,38,0.14); border: 1px solid rgba(248,113,113,0.5); border-radius: 10px; padding: 16px 18px; margin: 0 0 18px 0;">
+        <div style="font-weight: 800; color: #FCA5A5; margin-bottom: 8px;">⚖️ Respect Is Non-Negotiable — applies to every team, no exceptions</div>
+        <p style="margin: 0 0 8px 0; line-height: 1.65;">We need two things from you: <strong>Skill</strong> (the quality of work in your 6–8 hour shift) and <strong>Behaviour &amp; Attitude</strong> (how you deal with teammates, seniors and management). Skill is half ours to build — we will train, guide and correct. Attitude is yours; it is built over years and we cannot rebuild it for you.</p>
+        <p style="margin: 0 0 8px 0; line-height: 1.65;"><strong>Before disrespecting anyone from management or your seniors, consider yourself unfit for the job and prepare your resignation for HR in advance.</strong> Disrespect is treated as a serious culture and employment issue, not a misunderstanding to be ignored. People with skill but bad behaviour are already out, and that door does not reopen. Once trust and respect are broken, skill alone will not protect your position.</p>
+        <p style="margin: 0; line-height: 1.65;">We would rather <strong>bleed $100K in revenue</strong> than keep a toxic team. What we want is simple: <strong>Humbleness + Remarkable Teamwork + Skilled Players</strong> — all three. Bring all three and you will have enormous space to grow here.</p>
+    </div>
     <ul>
         <li><strong>Talent is Irrelevant. Volume is Everything.</strong> — We don't care about your degree. We care about your OUTPUT. Need skills? Put in 100 hours learning. Need more? Put in 500.</li>
         <li><strong>Emotional Intelligence > IQ</strong> — How do you respond under pressure? That's your real test. People with high EQ build real relationships and lead.</li>
